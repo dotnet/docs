@@ -14,12 +14,12 @@
     <summary>Defines the basic functionality that represents the personalization data for a page.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from this base class contain the actual implementation for managing, applying, and extracting personalization data. The <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class makes use of personalization state with a reference to <xref:System.Web.UI.WebControls.WebParts.PersonalizationState>.  
-  
- If a developer writes a custom <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> implementation, a custom <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider> must also be written. <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider> instances are responsible for creating and consuming <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> instances.  
-  
+Classes that derive from this base class contain the actual implementation for managing, applying, and extracting personalization data. The <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class makes use of personalization state with a reference to <xref:System.Web.UI.WebControls.WebParts.PersonalizationState>.  
+ 
+If a developer writes a custom <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> implementation, a custom <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider> must also be written. <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider> instances are responsible for creating and consuming <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> instances.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -44,10 +44,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationState" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The object created by this constructor manages the state for Web Parts controls that are managed by the specified <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control.  
-  
+The object created by this constructor manages the state for Web Parts controls that are managed by the specified <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="webPartManager" /> parameter is <see langword="null" />.</exception>
@@ -73,10 +73,10 @@
         <summary>When overridden, applies personalization data to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control associated with the personalization state instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The associated <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control was a parameter in the constructor that created the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> object.  
-  
+The associated <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control was a parameter in the constructor that created the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,10 +101,10 @@
         <summary>When overridden, applies personalization data to the specified Web Parts control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the abstract definition of the method used to apply personalization data to a Web Parts control.  
-  
+This is the abstract definition of the method used to apply personalization data to a Web Parts control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,10 +126,10 @@
         <summary>When overridden, extracts personalization information from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control associated with the current personalization state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the abstract definition of a method used to extract personalization information from the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control associated with the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> object. The associated <xref:System.Web.UI.WebControls.WebParts.WebPartManager> was a parameter in the constructor that was used to create the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> object.  
-  
+This is the abstract definition of a method used to extract personalization information from the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control associated with the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> object. The associated <xref:System.Web.UI.WebControls.WebParts.WebPartManager> was a parameter in the constructor that was used to create the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,10 +154,10 @@
         <summary>When overridden, extracts personalization data from the specified Web Parts control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the abstract definition of the method used to extract personalization data from a Web Parts control.  
-  
+This is the abstract definition of the method used to extract personalization data from a Web Parts control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,12 +183,12 @@
         <returns>The authorization filter string for a Web Parts control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> string for a <xref:System.Web.UI.WebControls.WebParts.WebPart> control before an instance of it is created. This method should return `null` if there is no personalized value for the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property.  
-  
- The Web Parts control set does not implement any default behavior for the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property. The property is provided so that a developer can assign an arbitrary string value to a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control; this property can be checked by subscribing to the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart> event on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control on a page to determine whether the control can be added to the page.  
-  
+This method returns the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> string for a <xref:System.Web.UI.WebControls.WebParts.WebPart> control before an instance of it is created. This method should return `null` if there is no personalized value for the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property.  
+ 
+The Web Parts control set does not implement any default behavior for the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property. The property is provided so that a developer can assign an arbitrary string value to a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control; this property can be checked by subscribing to the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart> event on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control on a page to determine whether the control can be added to the page.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,10 +211,10 @@
           <see langword="true" /> if any personalization state instance has changed (is "dirty"); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class checks this property to determine whether the personalization state needs to be written back to the underlying data store.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class checks this property to determine whether the personalization state needs to be written back to the underlying data store.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,10 +237,10 @@
           <see langword="true" /> if any personalization state was extracted by a state instance; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is an abstract definition of a property that can be called to determine whether any personalization state was extracted by a state instance.  
-  
+This property is an abstract definition of a property that can be called to determine whether any personalization state was extracted by a state instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -262,10 +262,10 @@
         <summary>Marks the current personalization state as having changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that inherit from <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> can use this method to mark themselves as having changed (or being "dirty"), thus indicating the need to reserialize and save personalization state.  
-  
+Classes that inherit from <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> can use this method to mark themselves as having changed (or being "dirty"), thus indicating the need to reserialize and save personalization state.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -290,10 +290,10 @@
         <summary>When overridden, marks a Web Parts control as having changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an abstract definition of the method used to indicate that a Web Parts control has changed (is "dirty"). The <xref:System.Web.UI.WebControls.WebParts.WebPart> class exposes methods (which in turn call this method) that can be used by developers to mark a Web Parts control as "dirty," thus indicating the need to reserialize and save personalization state.  
-  
+This is an abstract definition of the method used to indicate that a Web Parts control has changed (is "dirty"). The <xref:System.Web.UI.WebControls.WebParts.WebPart> class exposes methods (which in turn call this method) that can be used by developers to mark a Web Parts control as "dirty," thus indicating the need to reserialize and save personalization state.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -315,12 +315,12 @@
         <summary>When overridden, marks the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control as having changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the abstract definition of the method used to indicate that the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> instance associated with the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> instance is now considered to have changed (is "dirty").  
-  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class exposes a protected method (which in turn calls this method) that can be used by developers to mark the associated <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control as "dirty," thus indicating the need to reserialize and save personalization state.  
-  
+This is the abstract definition of the method used to indicate that the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> instance associated with the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> instance is now considered to have changed (is "dirty").  
+ 
+The <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class exposes a protected method (which in turn calls this method) that can be used by developers to mark the associated <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control as "dirty," thus indicating the need to reserialize and save personalization state.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,12 +345,12 @@
         <summary>Verifies that the specified Web Parts control is valid.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method verifies that `webPart` is a valid Web Parts control. The base class verifies that `webPart` is not `null` and is managed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control associated with the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> object.  
-  
- Classes that derive from <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> should validate Web Parts controls inside of any methods that work with <xref:System.Web.UI.WebControls.WebParts.WebPart> instances. This ensures that standalone <xref:System.Web.UI.WebControls.WebParts.WebPart> instances do not have state changes accidentally written into the personalization data for a page.  
-  
+This method verifies that `webPart` is a valid Web Parts control. The base class verifies that `webPart` is not `null` and is managed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control associated with the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> object.  
+ 
+Classes that derive from <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> should validate Web Parts controls inside of any methods that work with <xref:System.Web.UI.WebControls.WebParts.WebPart> instances. This ensures that standalone <xref:System.Web.UI.WebControls.WebParts.WebPart> instances do not have state changes accidentally written into the personalization data for a page.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -376,10 +376,10 @@
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> associated with the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationState" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control is the object used as a parameter for the constructor that creates the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> object.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control is the object used as a parameter for the constructor that creates the <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

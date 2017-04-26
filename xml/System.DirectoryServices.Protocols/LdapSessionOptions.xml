@@ -227,10 +227,10 @@
         <value>A <see cref="T:System.DirectoryServices.Protocols.QueryClientCertificateCallback" /> object that specifies the default callback function used to specify client certificates when establishing an SSL connection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates%2A> property on the <xref:System.DirectoryServices.Protocols.LdapConnection> object is also set, the certificate specified in the <xref:System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates%2A> property is ignored.  
-  
+If the <xref:System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates%2A> property on the <xref:System.DirectoryServices.Protocols.LdapConnection> object is also set, the certificate specified in the <xref:System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates%2A> property is ignored.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>

@@ -19,10 +19,10 @@
     <summary>Indicates that a property is read by a <see cref="T:System.Workflow.Activities.Rules.Rule" />. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This attribute is used to support a forward chaining model that causes the re-evaluation of rules based on state change. The <xref:System.Workflow.Activities.Rules.RuleReadAttribute>, <xref:System.Workflow.Activities.Rules.RuleInvokeAttribute>, and <xref:System.Workflow.Activities.Rules.RuleWriteAttribute> classes each indicate the properties used to read a condition, write an action, and invoke a method. These attributes enable the workflow to only reevaluate rules that change the final output.  
-  
+This attribute is used to support a forward chaining model that causes the re-evaluation of rules based on state change. The <xref:System.Workflow.Activities.Rules.RuleReadAttribute>, <xref:System.Workflow.Activities.Rules.RuleInvokeAttribute>, and <xref:System.Workflow.Activities.Rules.RuleWriteAttribute> classes each indicate the properties used to read a condition, write an action, and invoke a method. These attributes enable the workflow to only reevaluate rules that change the final output.  
+ 
  ]]></format>
     </remarks>
   </Docs>

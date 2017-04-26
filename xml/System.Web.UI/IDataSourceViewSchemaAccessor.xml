@@ -11,10 +11,10 @@
     <summary>Allows a type converter to access schema information stored on an object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface is implemented by the <xref:System.Web.UI.WebControls.TreeNodeBinding>, <xref:System.Web.UI.WebControls.MenuItemBinding>, and <xref:System.Web.UI.WebControls.DataControlField> classes. These implementations are used by the .NET Framework and are not intended for use in your code.  
-  
+This interface is implemented by the <xref:System.Web.UI.WebControls.TreeNodeBinding>, <xref:System.Web.UI.WebControls.MenuItemBinding>, and <xref:System.Web.UI.WebControls.DataControlField> classes. These implementations are used by the .NET Framework and are not intended for use in your code.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <value>An <see cref="T:System.Object" /> that represents the schema.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface is implemented by the <xref:System.Web.UI.WebControls.TreeNodeBinding>, <xref:System.Web.UI.WebControls.MenuItemBinding>, and <xref:System.Web.UI.WebControls.DataControlField> classes. These implementations are used by the .NET Framework and are not intended for use in your code.  
-  
+This interface is implemented by the <xref:System.Web.UI.WebControls.TreeNodeBinding>, <xref:System.Web.UI.WebControls.MenuItemBinding>, and <xref:System.Web.UI.WebControls.DataControlField> classes. These implementations are used by the .NET Framework and are not intended for use in your code.  
+ 
  ]]></format>
         </remarks>
       </Docs>

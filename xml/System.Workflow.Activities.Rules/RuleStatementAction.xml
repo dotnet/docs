@@ -229,10 +229,10 @@
           <see langword="true" /> if the <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> had no errors; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Workflow.Activities.Rules.RuleStatementAction> contains errors (the Validate method returns false), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=fullName> will contain the list of errors encountered.  
-  
+If the <xref:System.Workflow.Activities.Rules.RuleStatementAction> contains errors (the Validate method returns false), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=fullName> will contain the list of errors encountered.  
+ 
  ]]></format>
         </remarks>
       </Docs>

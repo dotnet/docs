@@ -14,10 +14,10 @@
     <summary>Arguments for the <see cref="T:System.Windows.DataObject" />.<see cref="E:System.Windows.DataObject.Copying" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.DataObject.Copying> event occurs when a copy operation has finished converting the selected content into all specified data formats, has stored all data formats in the associated data object, and is ready to put the data object on the system clipboard or to begin a drag operation.  
-  
+The <xref:System.Windows.DataObject.Copying> event occurs when a copy operation has finished converting the selected content into all specified data formats, has stored all data formats in the associated data object, and is ready to put the data object on the system clipboard or to begin a drag operation.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Windows.DataObjectCopyingEventArgs" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.DataObjectCopyingEventArgs> object is typically created by the application that is initiating the copy operation.  
-  
+A <xref:System.Windows.DataObjectCopyingEventArgs> object is typically created by the application that is initiating the copy operation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="dataObject" /> is **null**.</exception>

@@ -21,10 +21,10 @@
     <summary>Contains a collection of <see cref="T:System.Configuration.SettingsProperty" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.SettingsPropertyCollection> collection contains a collection of <xref:System.Configuration.SettingsProperty> objects. A <xref:System.Configuration.SettingsProperty> object is used internally as the class that represents metadata about an individual configuration property.  
-  
+The <xref:System.Configuration.SettingsPropertyCollection> collection contains a collection of <xref:System.Configuration.SettingsProperty> objects. A <xref:System.Configuration.SettingsProperty> object is used internally as the class that represents metadata about an individual configuration property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -364,10 +364,10 @@
         <summary>Sets the collection to be read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After the collection has been set to read-only, it can no longer be modified.  
-  
+After the collection has been set to read-only, it can no longer be modified.  
+ 
  ]]></format>
         </remarks>
       </Docs>

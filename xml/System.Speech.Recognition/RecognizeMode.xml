@@ -13,15 +13,15 @@
     <summary>Enumerates values of the recognition mode.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used as an argument to <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%28System.Speech.Recognition.RecognizeMode%29>.  
+This enumeration is used as an argument to <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%28System.Speech.Recognition.RecognizeMode%29>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the implementation of a start/stop button for an application that has a graphical user interface and uses <xref:System.Speech.Recognition.SpeechRecognitionEngine>. Depending on the state of the application, <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%28System.Speech.Recognition.RecognizeMode%29> is called with either Single or Multiple when the button is clicked.  
-  
+The following example shows the implementation of a start/stop button for an application that has a graphical user interface and uses <xref:System.Speech.Recognition.SpeechRecognitionEngine>. Depending on the state of the application, <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%28System.Speech.Recognition.RecognizeMode%29> is called with either Single or Multiple when the button is clicked.  
+ 
 ```  
 private void _startRecogButton_Click(object sender, EventArgs eventArgs)   
 {  
@@ -59,7 +59,7 @@ private void _startRecogButton_Click(object sender, EventArgs eventArgs)
   }  
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,12 +14,12 @@
     <summary>Provides qualifying information to a callback method when a <see cref="E:System.Net.PeerToPeer.Collaboration.PeerObject.ObjectChanged" /> event occurs.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- PeerObjects are run-time data items associated with an application, such as certificates, pictures, avatars, or specific descriptions. They may also be referred to as a host peer's registered applications, objects and presence information.  When a <xref:System.Net.PeerToPeer.Collaboration.PeerObject> is changed, an event is raised.  
-  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration> session begins.  
-  
+PeerObjects are run-time data items associated with an application, such as certificates, pictures, avatars, or specific descriptions. They may also be referred to as a host peer's registered applications, objects and presence information.  When a <xref:System.Net.PeerToPeer.Collaboration.PeerObject> is changed, an event is raised.  
+ 
+Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration> session begins.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -42,10 +42,10 @@
           <see cref="T:System.Net.PeerToPeer.Collaboration.PeerChangeType" /> that specifies the type of change that has occurred.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unless specified, the default value for this property is `null`.  
-  
+Unless specified, the default value for this property is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,10 +85,10 @@
         <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> on which <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> information has changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unless specified, the default value for this property is `null`.  
-  
+Unless specified, the default value for this property is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
         <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> that has been added, deleted, or updated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unless specified, the default value for this property is `null`.  
-  
+Unless specified, the default value for this property is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

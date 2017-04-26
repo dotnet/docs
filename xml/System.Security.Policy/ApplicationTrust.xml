@@ -24,10 +24,10 @@
     <summary>Encapsulates security decisions about an application. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Security.Policy.ApplicationTrust> object is returned by a trust manager's <xref:System.Security.Policy.IApplicationTrustManager.DetermineApplicationTrust%2A> method.  
-  
+An <xref:System.Security.Policy.ApplicationTrust> object is returned by a trust manager's <xref:System.Security.Policy.IApplicationTrustManager.DetermineApplicationTrust%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,10 +47,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.ApplicationTrust" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates an empty <xref:System.Security.Policy.ApplicationTrust> object.  
-  
+This constructor creates an empty <xref:System.Security.Policy.ApplicationTrust> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,10 +73,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.ApplicationTrust" /> class with an <see cref="T:System.ApplicationIdentity" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An application identity contains the full name of the application and the location of its code base.  
-  
+An application identity contains the full name of the application and the location of its code base.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,10 +101,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.ApplicationTrust" /> class using the provided grant set and collection of full-trust assemblies.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `fullTrustAssemblies` identifies strong-named assemblies within the <xref:System.AppDomain> that are to be granted full trust. This constructor is called by the <xref:System.AppDomain.CreateDomain%2A?displayProperty=fullName> method to create an <xref:System.AppDomain> that will be used as a sandbox. For more information about running an application in a sandbox, see [How to: Run Partially Trusted Code in a Sandbox](~/docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md).  
-  
+`fullTrustAssemblies` identifies strong-named assemblies within the <xref:System.AppDomain> that are to be granted full trust. This constructor is called by the <xref:System.AppDomain.CreateDomain%2A?displayProperty=fullName> method to create an <xref:System.AppDomain> that will be used as a sandbox. For more information about running an application in a sandbox, see [How to: Run Partially Trusted Code in a Sandbox](~/docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -131,10 +131,10 @@
         <value>An <see cref="T:System.ApplicationIdentity" /> for the application trust object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Policy.ApplicationTrust.ApplicationIdentity%2A> property uniquely identifies a manifest-based application to be activated in a new domain.  
-  
+The <xref:System.Security.Policy.ApplicationTrust.ApplicationIdentity%2A> property uniquely identifies a manifest-based application to be activated in a new domain.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -183,12 +183,12 @@
         <value>A <see cref="T:System.Security.Policy.PolicyStatement" /> describing the default grants.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Policy.ApplicationTrust.DefaultGrantSet%2A> property represents the permissions that are granted to the application.  
-  
- The <xref:System.Security.Policy.PolicyStatement> representing the default grants is initialized using a <xref:System.Security.PermissionSet> and optional attributes.  
-  
+The <xref:System.Security.Policy.ApplicationTrust.DefaultGrantSet%2A> property represents the permissions that are granted to the application.  
+ 
+The <xref:System.Security.Policy.PolicyStatement> representing the default grants is initialized using a <xref:System.Security.PermissionSet> and optional attributes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,10 +233,10 @@
         <summary>Reconstructs an <see cref="T:System.Security.Policy.ApplicationTrust" /> object with a given state from an XML encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.ISecurityPolicyEncodable.ToXml%2A> and <xref:System.Security.ISecurityPolicyEncodable.FromXml%2A> methods are implemented to make <xref:System.Security.Policy.ApplicationTrust> objects XML-encodable for security policy use.  
-  
+The <xref:System.Security.ISecurityPolicyEncodable.ToXml%2A> and <xref:System.Security.ISecurityPolicyEncodable.FromXml%2A> methods are implemented to make <xref:System.Security.Policy.ApplicationTrust> objects XML-encodable for security policy use.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -262,10 +262,10 @@
         <value>A list of full-trust assemblies.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The list identifies assemblies that are to be granted full trust within the <xref:System.AppDomain> that is associated with this <xref:System.Security.Policy.ApplicationTrust> instance. The assemblies are identified by their strong names.  
-  
+The list identifies assemblies that are to be granted full trust within the <xref:System.AppDomain> that is associated with this <xref:System.Security.Policy.ApplicationTrust> instance. The assemblies are identified by their strong names.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -289,10 +289,10 @@
           <see langword="true" /> if the application is trusted to run; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A trust manager sets the <xref:System.Security.Policy.ApplicationTrust.IsApplicationTrustedToRun%2A> property to `true` when an application has been approved to execute.  
-  
+A trust manager sets the <xref:System.Security.Policy.ApplicationTrust.IsApplicationTrustedToRun%2A> property to `true` when an application has been approved to execute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -316,10 +316,10 @@
           <see langword="true" /> if application trust information is persisted; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Security.Policy.ApplicationTrust.Persist%2A> property is `true`, application trust information is saved to the ClickOnce application store.  
-  
+When the <xref:System.Security.Policy.ApplicationTrust.Persist%2A> property is `true`, application trust information is saved to the ClickOnce application store.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -343,10 +343,10 @@
         <returns>An XML encoding of the security object, including any state information.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.ISecurityPolicyEncodable.ToXml%2A> and <xref:System.Security.ISecurityPolicyEncodable.FromXml%2A> methods are implemented to make <xref:System.Security.Policy.ApplicationTrust> objects XML-encodable for security policy use.  
-  
+The <xref:System.Security.ISecurityPolicyEncodable.ToXml%2A> and <xref:System.Security.ISecurityPolicyEncodable.FromXml%2A> methods are implemented to make <xref:System.Security.Policy.ApplicationTrust> objects XML-encodable for security policy use.  
+ 
  ]]></format>
         </remarks>
       </Docs>

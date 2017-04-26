@@ -34,12 +34,12 @@
         <summary>Initializes a new instance of the <see cref="P:System.Windows.Automation.StructureChangedEventArgs.StructureChangeType" /> class, specifying the type of change and the [!INCLUDE[TLA#tla_id](~/includes/tlasharptla-id-md.md)] of the element whose structure changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values that can be returned in `structureChangeType` depend on the implementation of the UI Automation provider. For example, when items are added to or removed from a [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] list box, if the provider is not able to determine the number of items added or removed, it might specify <xref:System.Windows.Automation.StructureChangeType> and not <xref:System.Windows.Automation.StructureChangeType> or <xref:System.Windows.Automation.StructureChangeType>.  
-  
- The following table describes the information in the event received by the <xref:System.Windows.Automation.StructureChangedEventHandler> for different structure changes.  
-  
+The values that can be returned in `structureChangeType` depend on the implementation of the UI Automation provider. For example, when items are added to or removed from a [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] list box, if the provider is not able to determine the number of items added or removed, it might specify <xref:System.Windows.Automation.StructureChangeType> and not <xref:System.Windows.Automation.StructureChangeType> or <xref:System.Windows.Automation.StructureChangeType>.  
+ 
+The following table describes the information in the event received by the <xref:System.Windows.Automation.StructureChangedEventHandler> for different structure changes.  
+ 
 |`structureChangeType`|Event source|`runtimeId`|  
 |---------------------------|------------------|-----------------|  
 |<xref:System.Windows.Automation.StructureChangeType>|The child that was added.|The child that was added.|  
@@ -47,17 +47,17 @@
 |<xref:System.Windows.Automation.StructureChangeType>|The parent of the children that were added.|The parent of the children that were added.|  
 |<xref:System.Windows.Automation.StructureChangeType>|The parent of the children that were removed.|The parent of the children that were removed.|  
 |<xref:System.Windows.Automation.StructureChangeType>|The parent of the children that were invalidated.|The parent of the children that were invalidated|  
+ 
+Custom controls might not be able to provide a meaningful value in `runtimeId`. For more information, see <xref:System.Windows.Automation.Provider.AutomationInteropProvider.RaiseStructureChangedEvent%2A>.  
+ 
   
- Custom controls might not be able to provide a meaningful value in `runtimeId`. For more information, see <xref:System.Windows.Automation.Provider.AutomationInteropProvider.RaiseStructureChangedEvent%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to construct and raise an event when children are added to, or removed from, a custom list box.  
-  
- [!code-csharp[FragmentProvider#101](~/samples/snippets/csharp/VS_Snippets_Wpf/FragmentProvider/CSharp/ListFragment.cs#101)]
- [!code-vb[FragmentProvider#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FragmentProvider/VisualBasic/ListFragment.vb#101)]  
-  
+The following example shows how to construct and raise an event when children are added to, or removed from, a custom list box.  
+ 
+[!code-csharp[FragmentProvider#101](~/samples/snippets/csharp/VS_Snippets_Wpf/FragmentProvider/CSharp/ListFragment.cs#101)]
+[!code-vb[FragmentProvider#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FragmentProvider/VisualBasic/ListFragment.vb#101)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,12 +80,12 @@
         <returns>The runtime [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] of the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element whose structure changed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value may be the identifier of the child that was added or removed or, in the case of many children being added, removed, or invalidated, the identifier of the parent. For more information, see <xref:System.Windows.Automation.StructureChangedEventArgs.%23ctor%2A>.  
-  
- Custom controls might not provide a valid runtime identifier.  
-  
+The return value may be the identifier of the child that was added or removed or, in the case of many children being added, removed, or invalidated, the identifier of the parent. For more information, see <xref:System.Windows.Automation.StructureChangedEventArgs.%23ctor%2A>.  
+ 
+Custom controls might not provide a valid runtime identifier.  
+ 
  ]]></format>
         </remarks>
       </Docs>

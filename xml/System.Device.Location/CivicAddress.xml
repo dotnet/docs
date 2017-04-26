@@ -14,27 +14,27 @@
     <summary>Represents a civic address. A civic address can include fields such as street address, postal code, state/province, and country or region.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A civic address for a location can be obtained from a <xref:System.Device.Location.GeoCoordinate> by using a class that implements <xref:System.Device.Location.ICivicAddressResolver>.  
+A civic address for a location can be obtained from a <xref:System.Device.Location.GeoCoordinate> by using a class that implements <xref:System.Device.Location.ICivicAddressResolver>.  
+ 
+The <xref:System.Device.Location.CivicAddressResolver> class provides a default implementation that returns the civic address that corresponds to a <xref:System.Device.Location.GeoCoordinate>, if the location source provides both coordinate data as well as civic address data.  
+ 
+<xref:System.Device.Location.CivicAddressResolver.ResolveAddress%2A> returns a <xref:System.Device.Location.CivicAddress> for the current location.  If the location source is unable to resolve the coordinate position to a civic address, <xref:System.Device.Location.CivicAddress.Unknown> is returned.  
+ 
   
- The <xref:System.Device.Location.CivicAddressResolver> class provides a default implementation that returns the civic address that corresponds to a <xref:System.Device.Location.GeoCoordinate>, if the location source provides both coordinate data as well as civic address data.  
-  
- <xref:System.Device.Location.CivicAddressResolver.ResolveAddress%2A> returns a <xref:System.Device.Location.CivicAddress> for the current location.  If the location source is unable to resolve the coordinate position to a civic address, <xref:System.Device.Location.CivicAddress.Unknown> is returned.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to resolve a <xref:System.Device.Location.CivicAddress> from a <xref:System.Device.Location.GeoCoordinate> location synchronously.  
-  
- [!code-csharp[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#1)]
- [!code-vb[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#1)]  
-  
- The following example shows how to resolve a <xref:System.Device.Location.CivicAddress> from a <xref:System.Device.Location.GeoCoordinate> location asynchronously.  
-  
- [!code-csharp[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/cs/resolvecivicaddressasync.cs#1)]
- [!code-vb[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/vb/resolvecivicaddressasync.vb#1)]  
-  
+The following example shows how to resolve a <xref:System.Device.Location.CivicAddress> from a <xref:System.Device.Location.GeoCoordinate> location synchronously.  
+ 
+[!code-csharp[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#1)]
+[!code-vb[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#1)]  
+ 
+The following example shows how to resolve a <xref:System.Device.Location.CivicAddress> from a <xref:System.Device.Location.GeoCoordinate> location asynchronously.  
+ 
+[!code-csharp[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/cs/resolvecivicaddressasync.cs#1)]
+[!code-vb[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/vb/resolvecivicaddressasync.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,10 +53,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Device.Location.CivicAddress" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All fields are initialized to <xref:System.String.Empty>.  
-  
+All fields are initialized to <xref:System.String.Empty>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,10 +183,10 @@
         <value>Returns the country or region code. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The country or region is typically represented by a two-letter ISO-3166 country code.  
-  
+The country or region is typically represented by a two-letter ISO-3166 country code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,13 +227,13 @@
           <see langword="true" /> if the <see cref="T:System.Device.Location.CivicAddress" /> is equal to <see cref="F:System.Device.Location.CivicAddress.Unknown" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses <xref:System.Device.Location.CivicAddress.IsUnknown%2A> to check the <xref:System.Device.Location.CivicAddress> that is returned from <xref:System.Device.Location.CivicAddressResolver.ResolveAddress%2A> before the civic address is printed out.  
-  
- [!code-csharp[System.Device.Location.ResolveCivicAddressSync#2](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#2)]
- [!code-vb[System.Device.Location.ResolveCivicAddressSync#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#2)]  
-  
+The following example uses <xref:System.Device.Location.CivicAddress.IsUnknown%2A> to check the <xref:System.Device.Location.CivicAddress> that is returned from <xref:System.Device.Location.CivicAddressResolver.ResolveAddress%2A> before the civic address is printed out.  
+ 
+[!code-csharp[System.Device.Location.ResolveCivicAddressSync#2](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#2)]
+[!code-vb[System.Device.Location.ResolveCivicAddressSync#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -290,18 +290,18 @@
         <summary>Represents a <see cref="T:System.Device.Location.CivicAddress" /> that contains no data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Device.Location.CivicAddress.IsUnknown%2A> to verify whether a <xref:System.Device.Location.CivicAddress> contains data.  
+Use <xref:System.Device.Location.CivicAddress.IsUnknown%2A> to verify whether a <xref:System.Device.Location.CivicAddress> contains data.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses <xref:System.Device.Location.CivicAddress.IsUnknown%2A> to check the <xref:System.Device.Location.CivicAddress> that is returned from <xref:System.Device.Location.CivicAddressResolver.ResolveAddress%2A> before the civic address is printed out.  
-  
- [!code-csharp[System.Device.Location.ResolveCivicAddressSync#2](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#2)]
- [!code-vb[System.Device.Location.ResolveCivicAddressSync#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#2)]  
-  
+The following example uses <xref:System.Device.Location.CivicAddress.IsUnknown%2A> to check the <xref:System.Device.Location.CivicAddress> that is returned from <xref:System.Device.Location.CivicAddressResolver.ResolveAddress%2A> before the civic address is printed out.  
+ 
+[!code-csharp[System.Device.Location.ResolveCivicAddressSync#2](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#2)]
+[!code-vb[System.Device.Location.ResolveCivicAddressSync#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

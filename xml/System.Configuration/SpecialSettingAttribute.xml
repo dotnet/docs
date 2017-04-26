@@ -19,14 +19,14 @@
     <summary>Indicates that an application settings property has a special significance. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Certain application settings properties have a special significance that alters the way in which their associated settings provider should process them. The <xref:System.Configuration.SpecialSettingAttribute> is used to identify such properties. This class uses the <xref:System.Configuration.SpecialSetting?displayProperty=fullName> enumeration to indicate what special category the property belongs to.  
-  
- <xref:System.Configuration.SpecialSettingAttribute> can only be applied to the settings class or to the individual settings property.  
-  
- For an example of how a settings provider deals with the <xref:System.Configuration.SpecialSettingAttribute>, see the <xref:System.Configuration.LocalFileSettingsProvider.GetPropertyValues%2A> method of the <xref:System.Configuration.LocalFileSettingsProvider> class.  
-  
+Certain application settings properties have a special significance that alters the way in which their associated settings provider should process them. The <xref:System.Configuration.SpecialSettingAttribute> is used to identify such properties. This class uses the <xref:System.Configuration.SpecialSetting?displayProperty=fullName> enumeration to indicate what special category the property belongs to.  
+ 
+<xref:System.Configuration.SpecialSettingAttribute> can only be applied to the settings class or to the individual settings property.  
+ 
+For an example of how a settings provider deals with the <xref:System.Configuration.SpecialSettingAttribute>, see the <xref:System.Configuration.LocalFileSettingsProvider.GetPropertyValues%2A> method of the <xref:System.Configuration.LocalFileSettingsProvider> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
         <value>A <see cref="T:System.Configuration.SpecialSetting" /> enumeration value defining the category of the application settings property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.SpecialSettingAttribute.SpecialSetting%2A> property is set in the <xref:System.Configuration.SpecialSettingAttribute.%23ctor%2A> constructor of this class.  
-  
+The <xref:System.Configuration.SpecialSettingAttribute.SpecialSetting%2A> property is set in the <xref:System.Configuration.SpecialSettingAttribute.%23ctor%2A> constructor of this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

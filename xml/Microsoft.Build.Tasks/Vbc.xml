@@ -92,10 +92,10 @@
           <see langword="true" /> if compilation succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will get called during execution if a host object was passed to the `Vbc` task.  
-  
+This method will get called during execution if a host object was passed to the `Vbc` task.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -118,10 +118,10 @@
         <value>The warnings to suppress that are specified by the numeric part of the warning identifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Multiple warnings are separated by semicolons.  
-  
+Multiple warnings are separated by semicolons.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -144,10 +144,10 @@
         <value>The output documentation XML file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property overrides the <xref:Microsoft.Build.Tasks.Vbc.GenerateDocumentation%2A> property.  
-  
+This property overrides the <xref:Microsoft.Build.Tasks.Vbc.GenerateDocumentation%2A> property.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -170,22 +170,22 @@
         <value>A string value that specifies how the task will report internal compiler errors.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can have the following values:  
-  
+This property can have the following values:  
+ 
 -   `prompt`  
-  
+ 
 -   `send`  
-  
+ 
 -   `none`  
-  
- If `prompt` is specified and an internal compiler error occurs, the user is prompted with an option of whether to send the error data to Microsoft.  
-  
- If `send` is specified and an internal compiler error occurs, the task sends the error data to Microsoft.  
-  
- The default value is `none`, which reports errors in text output only.  
-  
+ 
+If `prompt` is specified and an internal compiler error occurs, the user is prompted with an option of whether to send the error data to Microsoft.  
+ 
+If `send` is specified and an internal compiler error occurs, the task sends the error data to Microsoft.  
+ 
+The default value is `none`, which reports errors in text output only.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -229,10 +229,10 @@
           <see langword="true" /> if the <c>Vbc</c> task processes documentation comments to a XML file; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of the output XML file is the name of the executable file or the library that the task is creating.  
-  
+The name of the output XML file is the name of the executable file or the library that the task is creating.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -295,10 +295,10 @@
         <returns>A host object initialization status value that indicates what the next action should be.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will get called during execution of this task if a host object was passed to the `Vbc` task.  
-  
+This method will get called during execution of this task if a host object was passed to the `Vbc` task.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -345,10 +345,10 @@
         <summary>This method intercepts the lines to be logged coming from STDOUT from VBC.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once we see a standard vb warning or error, then we capture it and grab the next 3 lines so we can transform the string form the form of FileName.vb(line) to FileName.vb(line,column) which will allow us to report the line and column to the IDE, and thus filter the error in the duplicate case for multi-targeting, or just squiggle the appropriate token instead of the entire line.  
-  
+Once we see a standard vb warning or error, then we capture it and grab the next 3 lines so we can transform the string form the form of FileName.vb(line) to FileName.vb(line,column) which will allow us to report the line and column to the IDE, and thus filter the error in the duplicate case for multi-targeting, or just squiggle the appropriate token instead of the entire line.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -450,16 +450,16 @@
         <value>A string value that specifies how string comparisons are made.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can have the following values:  
-  
+This property can have the following values:  
+ 
 -   `binary`  
-  
+ 
 -   `text`  
-  
- The value `binary` specifies that the task uses binary string comparisons. The value `text` specifies that the task uses text string comparisons. The default value is `binary`.  
-  
+ 
+The value `binary` specifies that the task uses binary string comparisons. The value `text` specifies that the task uses text string comparisons. The default value is `binary`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -581,10 +581,10 @@
           <see langword="true" /> if the <c>Vbc</c> task will disable integer overflow error checks; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `false`.  
-  
+The default value is `false`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -763,10 +763,10 @@
         <value>The verbosity of the compiler’s output.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default verbosity is `Normal`.  
-  
+The default verbosity is `Normal`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

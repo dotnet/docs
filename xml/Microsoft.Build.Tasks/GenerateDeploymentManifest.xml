@@ -69,10 +69,10 @@
         <value>The update location for the application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not specified, no update location is defined for the application. However, if the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateEnabled%2A> property is `true`, an update location must be specified. The specified value should be a fully qualified URL or UNC path.  
-  
+If this property is not specified, no update location is defined for the application. However, if the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateEnabled%2A> property is `true`, an update location must be specified. The specified value should be a fully qualified URL or UNC path.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -96,10 +96,10 @@
           <see langword="true" /> if the application can only be started from the **Start** menu; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `false`. This property applies only when the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> property value is `true`.  
-  
+The default value is `false`. This property applies only when the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> property value is `true`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -122,10 +122,10 @@
         <value>A string that represents the URL of a Web page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specifies a Web page to be displayed in dialog boxes that are displayed during ClickOnce installations.  
-  
+Specifies a Web page to be displayed in dialog boxes that are displayed during ClickOnce installations.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -168,10 +168,10 @@
           <see langword="true" /> if the application is to be installed on the local computer and can be removed by using the **Add or Remove Programs** dialog box; <see langword="false" /> if the application is for online use from a Web page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `true`.  
-  
+The default value is `true`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -195,10 +195,10 @@
           <see langword="true" /> if every program file is published with a .deploy file name extension; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this option for Web server security to limit the number of file name extensions that must be unblocked to enable [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application deployment. The default value is `false`.  
-  
+Use this option for Web server security to limit the number of file name extensions that must be unblocked to enable [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application deployment. The default value is `false`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -222,10 +222,10 @@
           <see langword="true" /> if the user can skip the update; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a user has a version that is earlier than the minimum requirement, he cannot skip the update. This input only applies when the value of the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> property is `true`.  
-  
+If a user has a version that is earlier than the minimum requirement, he cannot skip the update. This input only applies when the value of the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -292,10 +292,10 @@
         <value>The name of the application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not specified, the name is inferred from the identity of the generated manifest. This name is used for the shortcut name on the **Start** menu and is part of the name that appears in the **Add or Remove Programs** dialog box.  
-  
+If this property is not specified, the name is inferred from the identity of the generated manifest. This name is used for the shortcut name on the **Start** menu and is part of the name that appears in the **Add or Remove Programs** dialog box.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -318,10 +318,10 @@
         <value>The publisher of the application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not specified, the name is inferred from the registered user, or the identity of the generated manifest. This name is used for the folder name on the **Start** menu and is part of the name that appears in the **Uninstall or change a program** dialog box.  
-  
+If this property is not specified, the name is inferred from the registered user, or the identity of the generated manifest. This name is used for the folder name on the **Start** menu and is part of the name that appears in the **Uninstall or change a program** dialog box.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -383,10 +383,10 @@
           <see langword="true" /> if URL query-string parameters should be made available to the application; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `false`, which indicates that parameters will not be available to the application.  
-  
+The default value is `false`, which indicates that parameters will not be available to the application.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -410,10 +410,10 @@
           <see langword="true" /> if the application is enabled for updates; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `false`. This property only applies when the value of the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> property is `true`.  
-  
+The default value is `false`. This property only applies when the value of the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -436,10 +436,10 @@
         <value>The update interval for the application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is zero. This property only applies when the values of the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> and <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateEnabled%2A> properties are both `true`.  
-  
+The default value is zero. This property only applies when the values of the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> and <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateEnabled%2A> properties are both `true`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -463,16 +463,16 @@
           <see langword="true" /> if updates should be checked; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can have the following values:  
-  
+This property can have the following values:  
+ 
 -   `Foreground` (before the application is started)  
-  
+ 
 -   `Background` (when the application is running)  
-  
- The default value is `Background`. This property only applies when the values of the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> and <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateEnabled%2A> properties are both `true`.  
-  
+ 
+The default value is `Background`. This property only applies when the values of the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> and <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateEnabled%2A> properties are both `true`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -495,18 +495,18 @@
         <value>The time unit for the <see cref="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateInterval" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This parameter can have the following values:  
-  
+This parameter can have the following values:  
+ 
 -   `Hours`  
-  
+ 
 -   `Days`  
-  
+ 
 -   `Weeks`  
-  
- This property only applies when the values of the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> and <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateEnabled%2A> properties are both `true`.  
-  
+ 
+This property only applies when the values of the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> and <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateEnabled%2A> properties are both `true`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

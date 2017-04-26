@@ -18,24 +18,24 @@
     <summary>Reads a forward-only stream of rows from a data source.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Combines the functionality of the <xref:System.Data.Common.DbDataReader> class and the <xref:System.Data.IExtendedDataRecord> interface.  
-  
- An <xref:System.Data.EntityClient.EntityDataReader> has no public constructor. It can only be obtained through one of the `EntityCommand.ExecuteReader` method overloads.  
-  
- [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the <xref:System.Data.EntityClient.EntityDataReader> (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
-  
- <xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
-  
+Combines the functionality of the <xref:System.Data.Common.DbDataReader> class and the <xref:System.Data.IExtendedDataRecord> interface.  
+ 
+An <xref:System.Data.EntityClient.EntityDataReader> has no public constructor. It can only be obtained through one of the `EntityCommand.ExecuteReader` method overloads.  
+ 
+[!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the <xref:System.Data.EntityClient.EntityDataReader> (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
+ 
+<xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
+ 
 -   <xref:System.Data.EntityClient.EntityDataReader> calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=fullName> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> throws an exeption, the <xref:System.Data.EntityClient.EntityDataReader> will wrap it in an <xref:System.Data.EntityException> (or a derived exception).  
-  
+ 
 -   <xref:System.Data.EntityClient.EntityDataReader.Close%2A> only closes the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
-  
+ 
 -   <xref:System.Data.EntityClient.EntityDataReader.Dispose%2A> only disposes of the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
-  
- For code examples, see [Working with EntityClient](http://msdn.microsoft.com/en-us/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
-  
+ 
+For code examples, see [Working with EntityClient](http://msdn.microsoft.com/en-us/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,18 +57,18 @@
         <summary>Closes the <see cref="T:System.Data.EntityClient.EntityDataReader" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the <xref:System.Data.EntityClient.EntityDataReader> (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
-  
- <xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
-  
+[!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the <xref:System.Data.EntityClient.EntityDataReader> (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
+ 
+<xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
+ 
 -   <xref:System.Data.EntityClient.EntityDataReader> calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=fullName> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> throws an exception, <xref:System.Data.EntityClient.EntityDataReader> will wrap it in <xref:System.Data.EntityException> (or a derived exception).  
-  
+ 
 -   <xref:System.Data.EntityClient.EntityDataReader.Close%2A> only closes the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
-  
+ 
 -   <xref:System.Data.EntityClient.EntityDataReader.Dispose%2A> only disposes of the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,10 +108,10 @@
         <value>The depth of nesting for the current row.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The outermost table has a depth of zero.  
-  
+The outermost table has a depth of zero.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,18 +137,18 @@
         <summary>Releases the resources consumed by this <see cref="T:System.Data.EntityClient.EntityDataReader" /> and calls <see cref="M:System.Data.EntityClient.EntityDataReader.Close" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the <xref:System.Data.EntityClient.EntityDataReader> (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
-  
- <xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
-  
+[!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] puts output parameters from stored procedures at the end of the result stream, after all the result sets. Therefore, to get output parameter values, an application must consume all the records in all the result sets. If the application closes the <xref:System.Data.EntityClient.EntityDataReader> (which would also close the <xref:System.Data.Common.DbDataReader>), output parameters might not be populated.  
+ 
+<xref:System.Data.EntityClient.EntityDataReader> does not implicitly consume result sets to make output parameters available. Therefore, note the following:  
+ 
 -   <xref:System.Data.EntityClient.EntityDataReader> calls the <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> only when <xref:System.Data.EntityClient.EntityDataReader.NextResult%2A?displayProperty=fullName> is explicitly called. If <xref:System.Data.Common.DbDataReader.NextResult%2A?displayProperty=fullName> throws an exception, the <xref:System.Data.EntityClient.EntityDataReader> will wrap it in an <xref:System.Data.EntityException> (or a derived exception).  
-  
+ 
 -   <xref:System.Data.EntityClient.EntityDataReader.Close%2A> only closes the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
-  
+ 
 -   <xref:System.Data.EntityClient.EntityDataReader.Dispose%2A> only disposes of the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
         <value>The number of columns in the current row.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Includes hidden fields. Use <xref:System.Data.EntityClient.EntityDataReaderr.VisibleFieldCount%2A> to exclude hidden fields.  
-  
+Includes hidden fields. Use <xref:System.Data.EntityClient.EntityDataReaderr.VisibleFieldCount%2A> to exclude hidden fields.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -944,10 +944,10 @@
           <see langword="true" /> if there are more result sets; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method allows you to process multiple result sets returned when a batch is submitted to the data provider.  
-  
+This method allows you to process multiple result sets returned when a batch is submitted to the data provider.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -971,10 +971,10 @@
           <see langword="true" /> if there are more rows; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default position of a data reader is before the first record. Therefore, you must call `Read` to begin accessing data.  
-  
+The default position of a data reader is before the first record. Therefore, you must call `Read` to begin accessing data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -996,10 +996,10 @@
         <value>The number of rows changed, inserted, or deleted. Returns -1 for SELECT statements; 0 if no rows were affected or the statement failed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `RecordsAffected` property is not set until all rows are read and you close the `DataReader`.  
-  
+The `RecordsAffected` property is not set until all rows are read and you close the `DataReader`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1021,10 +1021,10 @@
         <value>The number of fields that are not hidden.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is used to determine how many fields in the <xref:System.Data.EntityClient.EntityDataReader> are visible. For example, a SELECT on a partial primary key returns the remaining parts of the key as hidden fields. The hidden fields are always appended behind the visible fields.  
-  
+This value is used to determine how many fields in the <xref:System.Data.EntityClient.EntityDataReader> are visible. For example, a SELECT on a partial primary key returns the remaining parts of the key as hidden fields. The hidden fields are always appended behind the visible fields.  
+ 
  ]]></format>
         </remarks>
       </Docs>

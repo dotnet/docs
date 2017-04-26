@@ -211,10 +211,10 @@
         <returns>The transformed final accumulator value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload is specific to parallelized queries. A parallelized query may partition the data source sequence into several sub-sequences (partitions). The `updateAccumulatorFunc` is invoked on each element within partitions. Each partition then yields a single accumulated result. The `combineAccumulatorsFunc` is then invoked on the results of each partition to yield a single element. This element is then transformed by the `resultSelector` function.  
-  
+This overload is specific to parallelized queries. A parallelized query may partition the data source sequence into several sub-sequences (partitions). The `updateAccumulatorFunc` is invoked on each element within partitions. Each partition then yields a single accumulated result. The `combineAccumulatorsFunc` is then invoked on the results of each partition to yield a single element. This element is then transformed by the `resultSelector` function.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
@@ -271,10 +271,10 @@
         <returns>The transformed final accumulator value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload is specific to processing a parallelized query. A parallelized query may partition the data source sequence into several sub-sequences (partitions). The `updateAccumulatorFunc` is invoked on each element within partitions. Each partition then yields a single accumulated result. The `combineAccumulatorsFunc` is then invoked on the results of each partition to yield a single element. This element is then transformed by the `resultSelector` function.  
-  
+This overload is specific to processing a parallelized query. A parallelized query may partition the data source sequence into several sub-sequences (partitions). The `updateAccumulatorFunc` is invoked on each element within partitions. Each partition then yields a single accumulated result. The `combineAccumulatorsFunc` is then invoked on the results of each partition to yield a single element. This element is then transformed by the `resultSelector` function.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
@@ -360,10 +360,10 @@
         <returns>true if the source sequence contains any elements; otherwise, false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload of the Any method causes a fully-buffered merge to be performed before the result is returned. The merge behavior can impact performance or cause an out of memory exception in large enumerables. To avoid the merge behavior, use the overload of Any that takes a Func parameter, or else use an alternative method such as FirstOrDefault.  
-  
+This overload of the Any method causes a fully-buffered merge to be performed before the result is returned. The merge behavior can impact performance or cause an out of memory exception in large enumerables. To avoid the merge behavior, use the overload of Any that takes a Func parameter, or else use an alternative method such as FirstOrDefault.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
@@ -480,10 +480,10 @@
         <returns>The source sequence which will maintain the original ordering in the subsequent query operators.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A natural tension exists between performance and preserving order in parallel processing. By default, a parallelized query behaves as if the ordering of the results is arbitrary unless AsOrdered is applied or there is an explicit OrderBy operator in the query. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
-  
+A natural tension exists between performance and preserving order in parallel processing. By default, a parallelized query behaves as if the ordering of the results is arbitrary unless AsOrdered is applied or there is an explicit OrderBy operator in the query. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -529,10 +529,10 @@
         <returns>The source sequence which will maintain the original ordering in the subsequent query operators.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A natural tension exists between performance and preserving order in parallel processing. By default, a parallelized query behaves as if the ordering of the results is arbitrary unless AsOrdered is applied or there is an explicit OrderBy operator in the query. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
-  
+A natural tension exists between performance and preserving order in parallel processing. By default, a parallelized query behaves as if the ordering of the results is arbitrary unless AsOrdered is applied or there is an explicit OrderBy operator in the query. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -574,10 +574,10 @@
         <returns>The source as a ParallelQuery to bind to ParallelEnumerable extension methods.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Linq.ParallelEnumerable.Cast%2A> operator can be used to convert a ParallelQuery to a ParallelQuery(T).  
-  
+The <xref:System.Linq.ParallelEnumerable.Cast%2A> operator can be used to convert a ParallelQuery to a ParallelQuery(T).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -618,10 +618,10 @@
         <returns>The <paramref name="source" /> as a ParallelQuery to bind to ParallelEnumerable extension methods.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source partitioner's GetOrderedPartitions method is used when ordering is enabled, whereas the partitioner's GetPartitions is used if ordering is not enabled (the default). The source partitioner's GetDynamicPartitions and GetDynamicOrderedPartitions are not used. For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+The source partitioner's GetOrderedPartitions method is used when ordering is enabled, whereas the partitioner's GetPartitions is used if ordering is not enabled (the default). The source partitioner's GetDynamicPartitions and GetDynamicOrderedPartitions are not used. For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -699,10 +699,10 @@
         <returns>The source as an <see cref="T:System.Collections.Generic.IEnumerable`1" /> to bind to sequential extension methods.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md) and [How to: Control Ordering in a PLINQ Query](~/docs/standard/parallel-programming/how-to-control-ordering-in-a-plinq-query.md).  
-  
+For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md) and [How to: Control Ordering in a PLINQ Query](~/docs/standard/parallel-programming/how-to-control-ordering-in-a-plinq-query.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -743,10 +743,10 @@
         <returns>The source sequence with arbitrary order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- AsUnordered may provide performance benefits when ordering is not required in a portion of a query. By default, PLINQ treats an input sequence as unordered unless OrderBy or AsOrdered is specified. However, if ordering was turned on and is no longer needed, then AsUnordered can be used to turn it off in mid-query, and this may result in performance benefits.The AsUnordered operator itself does not shuffle the source sequence; it simply removes the ordering requirement for subsequent operators. If the source is ordered, subsequent operators might keep that ordering if it is more efficient to do so. AsUnordered can be called anywhere in the query; it does not need to be called immediately after AsParallel. For more information, see [Understanding Speedup in PLINQ](~/docs/standard/parallel-programming/understanding-speedup-in-plinq.md) and [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
-  
+AsUnordered may provide performance benefits when ordering is not required in a portion of a query. By default, PLINQ treats an input sequence as unordered unless OrderBy or AsOrdered is specified. However, if ordering was turned on and is no longer needed, then AsUnordered can be used to turn it off in mid-query, and this may result in performance benefits.The AsUnordered operator itself does not shuffle the source sequence; it simply removes the ordering requirement for subsequent operators. If the source is ordered, subsequent operators might keep that ordering if it is more efficient to do so. AsUnordered can be called anywhere in the query; it does not need to be called immediately after AsParallel. For more information, see [Understanding Speedup in PLINQ](~/docs/standard/parallel-programming/understanding-speedup-in-plinq.md) and [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1641,10 +1641,10 @@
         <returns>This overload always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload exists to disallow usage of Concat with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Concat operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
-  
+This overload exists to disallow usage of Concat with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Concat operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The exception that occurs when this method is called.</exception>
@@ -2169,10 +2169,10 @@
         <returns>This overload always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload exists to disallow usage of Except with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Except operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
-  
+This overload exists to disallow usage of Except with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Except operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The exception that occurs when this method is called.</exception>
@@ -2262,10 +2262,10 @@
         <returns>This overload always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload exists to disallow usage of Except with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Except operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
-  
+This overload exists to disallow usage of Except with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Except operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The exception that occurs when this method is called.</exception>
@@ -2349,10 +2349,10 @@
         <returns>The first element in the specified sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
-  
+If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
@@ -2399,10 +2399,10 @@
         <returns>The first element in the sequence that passes the test in the specified predicate function.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
-  
+If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
@@ -2446,10 +2446,10 @@
         <returns>default(TSource) if <paramref name="source" /> is empty; otherwise, the first element in <paramref name="source" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
-  
+If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
@@ -2494,10 +2494,10 @@
         <returns>default(TSource) if <paramref name="source" /> is empty or if no element passes the test specified by predicate; otherwise, the first element in <paramref name="source" /> that passes the test specified by predicate.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
-  
+If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
@@ -2541,10 +2541,10 @@
         <summary>Invokes in parallel the specified action for each element in the <paramref name="source" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an efficient way to process the output from a parallelized query because it does not require a merge step at the end. For more information, see [Merge Options in PLINQ](~/docs/standard/parallel-programming/merge-options-in-plinq.md) or [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md). Because this method produces a side-effect, it can be used to observe the actual order of execution in a parallel query.  
-  
+This is an efficient way to process the output from a parallelized query because it does not require a merge step at the end. For more information, see [Merge Options in PLINQ](~/docs/standard/parallel-programming/merge-options-in-plinq.md) or [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md). Because this method produces a side-effect, it can be used to observe the actual order of execution in a parallel query.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
@@ -2990,10 +2990,10 @@
         <returns>This overload always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload exists to disallow usage of GroupJoin with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the GroupJoin operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
-  
+This overload exists to disallow usage of GroupJoin with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the GroupJoin operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
@@ -3110,10 +3110,10 @@
         <returns>This overload always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload exists to disallow usage of GroupJoin with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the GroupJoin operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
-  
+This overload exists to disallow usage of GroupJoin with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the GroupJoin operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The exception that occurs when this method is called.</exception>
@@ -3215,10 +3215,10 @@
         <returns>This overload always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload exists to disallow usage of Intersect with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Intersect operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
-  
+This overload exists to disallow usage of Intersect with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Intersect operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The exception that occurs when this method is called.</exception>
@@ -3308,10 +3308,10 @@
         <returns>This overload always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload exists to disallow usage of Intersect with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Intersect operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
-  
+This overload exists to disallow usage of Intersect with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Intersect operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The exception that occurs when this method is called.</exception>
@@ -3413,10 +3413,10 @@
         <returns>This overload always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload exists to disallow usage Join with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Join operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
-  
+This overload exists to disallow usage Join with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Join operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
@@ -3533,10 +3533,10 @@
         <returns>This overload always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload exists to disallow usage of Join with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Join operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
-  
+This overload exists to disallow usage of Join with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Join operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The exception that occurs when this method is called.</exception>
@@ -3631,10 +3631,10 @@
         <returns>The value at the last position in the source sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
-  
+If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
@@ -3681,10 +3681,10 @@
         <returns>The last element in the sequence that passes the test in the specified predicate function.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
-  
+If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
@@ -3728,10 +3728,10 @@
         <returns>default() if the source sequence is empty; otherwise, the last element in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
-  
+If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
@@ -3776,10 +3776,10 @@
         <returns>default() if the sequence is empty or if no elements pass the test in the predicate function; otherwise, the last element that passes the test in the predicate function.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
-  
+If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
@@ -5719,10 +5719,10 @@
         <returns>An OrderedParallelQuery{TSource} whose elements are sorted according to a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In contrast to the sequential implementation, this is not a stable sort. To achieve a stable sort, change a query of the form: var ordered = source.Select((e,i) => new { E=e, I=i }).OrderBy((v) => v.e).ThenBy(v => v.i).Select((v) => v.e);  
-  
+In contrast to the sequential implementation, this is not a stable sort. To achieve a stable sort, change a query of the form: var ordered = source.Select((e,i) => new { E=e, I=i }).OrderBy((v) => v.e).ThenBy(v => v.i).Select((v) => v.e);  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -5771,10 +5771,10 @@
         <returns>An OrderedParallelQuery{TSource} whose elements are sorted according to a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In contrast to the sequential implementation, this is not a stable sort. See the remarks for <xref:System.Linq.ParallelEnumerable.OrderBy%2A> for an approach to implementing a stable sort.  
-  
+In contrast to the sequential implementation, this is not a stable sort. See the remarks for <xref:System.Linq.ParallelEnumerable.OrderBy%2A> for an approach to implementing a stable sort.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -5821,10 +5821,10 @@
         <returns>An OrderedParallelQuery{TSource} whose elements are sorted descending according to a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In contrast to the sequential implementation, this is not a stable sort. See the remarks for <xref:System.Linq.ParallelEnumerable.OrderBy%2A> for an approach to implementing a stable sort.  
-  
+In contrast to the sequential implementation, this is not a stable sort. See the remarks for <xref:System.Linq.ParallelEnumerable.OrderBy%2A> for an approach to implementing a stable sort.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -5873,10 +5873,10 @@
         <returns>An OrderedParallelQuery{TSource} whose elements are sorted descending according to a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In contrast to the sequential implementation, this is not a stable sort. See the remarks for <xref:System.Linq.ParallelEnumerable.OrderBy%2A> for an approach to implementing a stable sort.  
-  
+In contrast to the sequential implementation, this is not a stable sort. See the remarks for <xref:System.Linq.ParallelEnumerable.OrderBy%2A> for an approach to implementing a stable sort.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -6309,10 +6309,10 @@
         <returns>This overload always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload exists to disallow usage of SequenceEqual with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the SequenceEqual operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
-  
+This overload exists to disallow usage of SequenceEqual with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the SequenceEqual operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Thrown every time this method is called.</exception>
@@ -6402,10 +6402,10 @@
         <returns>This overload always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload exists to disallow usage of SequenceEqual with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the SequenceEqual operator would appear to be binding to the parallel implementation, but would in reality bind to sequential implementation.  
-  
+This overload exists to disallow usage of SequenceEqual with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the SequenceEqual operator would appear to be binding to the parallel implementation, but would in reality bind to sequential implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Thrown every time this method is called.</exception>
@@ -6654,10 +6654,10 @@
         <returns>A sequence that contains the elements that occur after the specified index in the input sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If count > source.Count(), no elements are returned.  
-  
+If count > source.Count(), no elements are returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -7672,10 +7672,10 @@
         <returns>An OrderedParallelQuery{TSource} whose elements are sorted according to a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In contrast to the sequential implementation, this is not a stable sort. See the remarks for <xref:System.Linq.ParallelEnumerable.OrderBy%2A> for an approach to implementing a stable sort.  
-  
+In contrast to the sequential implementation, this is not a stable sort. See the remarks for <xref:System.Linq.ParallelEnumerable.OrderBy%2A> for an approach to implementing a stable sort.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -7724,10 +7724,10 @@
         <returns>An OrderedParallelQuery{TSource} whose elements are sorted according to a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In contrast to the sequential implementation, this is not a stable sort. See the remarks for <xref:System.Linq.ParallelEnumerable.OrderBy%2A> for an approach to implementing a stable sort.  
-  
+In contrast to the sequential implementation, this is not a stable sort. See the remarks for <xref:System.Linq.ParallelEnumerable.OrderBy%2A> for an approach to implementing a stable sort.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -7774,10 +7774,10 @@
         <returns>A sequence whose elements are sorted descending according to a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In contrast to the sequential implementation, this is not a stable sort. See the remarks for <xref:System.Linq.ParallelEnumerable.OrderBy%2A> for an approach to implementing a stable sort.  
-  
+In contrast to the sequential implementation, this is not a stable sort. See the remarks for <xref:System.Linq.ParallelEnumerable.OrderBy%2A> for an approach to implementing a stable sort.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -7826,10 +7826,10 @@
         <returns>A sequence whose elements are sorted descending according to a key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In contrast to the sequential implementation, this is not a stable sort. See the remarks for <xref:System.Linq.ParallelEnumerable.OrderBy%2A> for an approach to implementing a stable sort.  
-  
+In contrast to the sequential implementation, this is not a stable sort. See the remarks for <xref:System.Linq.ParallelEnumerable.OrderBy%2A> for an approach to implementing a stable sort.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -8329,10 +8329,10 @@
         <returns>This overload always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload exists to disallow usage of Union with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Union operator would appear to be binding to the parallel implementation, but would in reality bind to sequential implementation.  
-  
+This overload exists to disallow usage of Union with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Union operator would appear to be binding to the parallel implementation, but would in reality bind to sequential implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The exception that occurs when this method is called.</exception>
@@ -8424,10 +8424,10 @@
         <returns>This overload always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload exists to disallow usage of Union with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Union operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
-  
+This overload exists to disallow usage of Union with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Union operator would appear to be binding to the parallel implementation, but would in reality bind to the sequential implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The exception that occurs when this method is called.</exception>
@@ -8681,10 +8681,10 @@
         <returns>ParallelQuery representing the same query as source, but with the registered execution mode.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The execution mode specifies whether PLINQ will attempt to fall back to sequential execution if it detects certain query shapes. For more information and examples, see [How to: Specify the Execution Mode in PLINQ](~/docs/standard/parallel-programming/how-to-specify-the-execution-mode-in-plinq.md).  
-  
+The execution mode specifies whether PLINQ will attempt to fall back to sequential execution if it detects certain query shapes. For more information and examples, see [How to: Specify the Execution Mode in PLINQ](~/docs/standard/parallel-programming/how-to-specify-the-execution-mode-in-plinq.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -8784,10 +8784,10 @@
         <returns>This overload always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload exists to disallow usage of Zip with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Zip operator would appear to be bind to the parallel implementation, but would in reality bind to the sequential implementation.  
-  
+This overload exists to disallow usage of Zip with a left data source of type <xref:System.Linq.ParallelQuery%601> and a right data source of type <xref:System.Collections.Generic.IEnumerable%601>. Otherwise, the Zip operator would appear to be bind to the parallel implementation, but would in reality bind to the sequential implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The exception that occurs when this method is called.</exception>
@@ -8849,10 +8849,10 @@
         <summary>Enables parallelization of a query.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method binds the query to PLINQ. For more information, see [Parallel LINQ (PLINQ)](~/docs/standard/parallel-programming/parallel-linq-plinq.md).  
-  
+This method binds the query to PLINQ. For more information, see [Parallel LINQ (PLINQ)](~/docs/standard/parallel-programming/parallel-linq-plinq.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

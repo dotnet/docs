@@ -47,10 +47,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.NTAccount" /> class by using the specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified name is not required to correspond to an existing account or group, but translation into other <xref:System.Security.Principal.IdentityReference>-derived types will not be possible unless the account or group does exist.  
-  
+The specified name is not required to correspond to an existing account or group, but translation into other <xref:System.Security.Principal.IdentityReference>-derived types will not be possible unless the account or group does exist.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -87,10 +87,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.NTAccount" /> class by using the specified domain name and account name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified domain and account names are not required to correspond to an existing account or group, but translation into other <xref:System.Security.Principal.IdentityReference>-derived types will not be possible unless the account or group does exist.  
-  
+The specified domain and account names are not required to correspond to an existing account or group, but translation into other <xref:System.Security.Principal.IdentityReference>-derived types will not be possible unless the account or group does exist.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

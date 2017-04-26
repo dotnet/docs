@@ -21,22 +21,22 @@
     <summary>Specifies constants that define actions performed by the mouse.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.MouseAction> enumeration specifies constants which correspond to actions performed by the mouse, such as RightClick and RightDoubleClick.  
+The <xref:System.Windows.Input.MouseAction> enumeration specifies constants which correspond to actions performed by the mouse, such as RightClick and RightDoubleClick.  
+ 
+<xref:System.Windows.Input.MouseAction> can be used with a <xref:System.Windows.Input.MouseGesture> to create a input gesture which can be bound to a command using a <xref:System.Windows.Input.MouseBinding>.  For more information about commanding, see the [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md).  
+ 
   
- <xref:System.Windows.Input.MouseAction> can be used with a <xref:System.Windows.Input.MouseGesture> to create a input gesture which can be bound to a command using a <xref:System.Windows.Input.MouseBinding>.  For more information about commanding, see the [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to construct a <xref:System.Windows.Input.MouseGesture> using a <xref:System.Windows.Input.MouseAction> and how to bind the gesture to a <xref:System.Windows.Input.RoutedCommand> using a <xref:System.Windows.Input.MouseBinding>.  
-  
- [!code-xml[commandlibrarysnippets#MouseBindingMouseActionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml#mousebindingmouseactionxaml)]  
-  
- [!code-csharp[commandlibrarysnippets#MouseBindingMouseAction](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#mousebindingmouseaction)]
- [!code-vb[commandlibrarysnippets#MouseBindingMouseAction](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#mousebindingmouseaction)]  
-  
+The following example shows how to construct a <xref:System.Windows.Input.MouseGesture> using a <xref:System.Windows.Input.MouseAction> and how to bind the gesture to a <xref:System.Windows.Input.RoutedCommand> using a <xref:System.Windows.Input.MouseBinding>.  
+ 
+[!code-xml[commandlibrarysnippets#MouseBindingMouseActionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml#mousebindingmouseactionxaml)]  
+ 
+[!code-csharp[commandlibrarysnippets#MouseBindingMouseAction](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#mousebindingmouseaction)]
+[!code-vb[commandlibrarysnippets#MouseBindingMouseAction](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#mousebindingmouseaction)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

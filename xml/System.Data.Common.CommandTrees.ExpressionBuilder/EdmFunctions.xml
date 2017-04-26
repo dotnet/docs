@@ -1037,10 +1037,10 @@
         <returns>A new DbFunctionExpression that returns the first index of **stringToFind** in **searchString**.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The index returned by IndexOf is \<b>1-based\</b>.  
-  
+The index returned by IndexOf is \<b>1-based\</b>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">**searchString** **stringToFind**</exception>
@@ -1535,10 +1535,10 @@
         <returns>A new DbFunctionExpression that returns the substring of length **length** from **stringArgument** starting at **start**.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Substring requires that the index specified by **start** be \<b>1-based\</b>.  
-  
+Substring requires that the index specified by **start** be \<b>1-based\</b>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">**stringArgument** **start** **length**</exception>

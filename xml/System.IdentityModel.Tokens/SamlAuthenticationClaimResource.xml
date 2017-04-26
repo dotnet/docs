@@ -19,12 +19,12 @@
     <summary>Represents the resource type for a claim that is created from a <see cref="T:System.IdentityModel.Tokens.SamlAuthenticationStatement" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource> class to create a <xref:System.IdentityModel.Claims.Claim> instance for a <xref:System.IdentityModel.Tokens.SamlSecurityToken> authentication claim. The <xref:System.IdentityModel.Claims.Claim> class has a constructor that takes a resource, which this class can be passed to.  
-  
- <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify when the subject was authenticated. The claims in a SAML assertion are represented by SAML statements. The SAML specification defines a set of SAML statement types and one of them is a <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement>. A <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement> asserts that the statement's subject is authenticated by a particular means at a particular time. The <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource> class represents a claim resource for the <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement>.  
-  
+Use the <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource> class to create a <xref:System.IdentityModel.Claims.Claim> instance for a <xref:System.IdentityModel.Tokens.SamlSecurityToken> authentication claim. The <xref:System.IdentityModel.Claims.Claim> class has a constructor that takes a resource, which this class can be passed to.  
+ 
+<xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify when the subject was authenticated. The claims in a SAML assertion are represented by SAML statements. The SAML specification defines a set of SAML statement types and one of them is a <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement>. A <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement> asserts that the statement's subject is authenticated by a particular means at a particular time. The <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource> class represents a claim resource for the <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,10 +52,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthenticationClaimResource" /> class using the specified instant in time, authentication method, DNS domain name, and IP address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The set of authentication methods is extensible; however the following table contains the set of authentication methods defined in the SAML specification.  
-  
+The set of authentication methods is extensible; however the following table contains the set of authentication methods defined in the SAML specification.  
+ 
 |Authentication method|URI|  
 |---------------------------|---------|  
 |Password|urn:oasis:names:tc:SAML:1.0:am:password|  
@@ -68,7 +68,7 @@
 |XKMS Public Key|urn:oasis:names:tc:SAML:1.0:am:XKMS|  
 |XML Digital Signature|urn:ietf:rfc:3075|  
 |Unspecified|urn:oasis:names:tc:SAML:1.0:am:unspecified|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthenticationClaimResource" /> class using the specified instant in time, authentication method, DNS domain name, IP address, and reference to additional information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The set of authentication methods is extensible; however the following table contains the set of authentication methods defined in the SAML specification.  
-  
+The set of authentication methods is extensible; however the following table contains the set of authentication methods defined in the SAML specification.  
+ 
 |Authentication method|URI|  
 |---------------------------|---------|  
 |Password|urn:oasis:names:tc:SAML:1.0:am:password|  
@@ -114,7 +114,7 @@
 |XKMS Public Key|urn:oasis:names:tc:SAML:1.0:am:XKMS|  
 |XML Digital Signature|urn:ietf:rfc:3075|  
 |Unspecified|urn:oasis:names:tc:SAML:1.0:am:unspecified|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -146,10 +146,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthenticationClaimResource" /> class using the specified instant in time, authentication method, DNS domain name, IP address, and reference to additional information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The set of authentication methods is extensible; however the following table contains the set of authentication methods defined in the SAML specification.  
-  
+The set of authentication methods is extensible; however the following table contains the set of authentication methods defined in the SAML specification.  
+ 
 |Authentication method|URI|  
 |---------------------------|---------|  
 |Password|urn:oasis:names:tc:SAML:1.0:am:password|  
@@ -162,7 +162,7 @@
 |XKMS Public Key|urn:oasis:names:tc:SAML:1.0:am:XKMS|  
 |XML Digital Signature|urn:ietf:rfc:3075|  
 |Unspecified|urn:oasis:names:tc:SAML:1.0:am:unspecified|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -186,10 +186,10 @@
         <value>A <see cref="T:System.DateTime" /> that specifies the instant in time at which the subject was authenticated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthenticationInstant%2A> property corresponds to the `AuthenticationInstant` attribute of the `<AuthenticationStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthenticationInstant%2A> property corresponds to the `AuthenticationInstant` attribute of the `<AuthenticationStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,10 +211,10 @@
         <value>The method that was used to authenticate the subject.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The set of authentication methods is extensible; however the following table contains the set of authentication methods defined in the SAML specification.  
-  
+The set of authentication methods is extensible; however the following table contains the set of authentication methods defined in the SAML specification.  
+ 
 |Authentication method|URI|  
 |---------------------------|---------|  
 |Password|urn:oasis:names:tc:SAML:1.0:am:password|  
@@ -227,9 +227,9 @@
 |XKMS Public Key|urn:oasis:names:tc:SAML:1.0:am:XKMS|  
 |XML Digital Signature|urn:ietf:rfc:3075|  
 |Unspecified|urn:oasis:names:tc:SAML:1.0:am:unspecified|  
-  
- The <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement.AuthenticationMethod%2A> property corresponds to the `AuthenticationMethod` attribute of the `<AuthenticationStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+ 
+The <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement.AuthenticationMethod%2A> property corresponds to the `AuthenticationMethod` attribute of the `<AuthenticationStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,10 +251,10 @@
         <value>An <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Tokens.SamlAuthorityBinding" /> that contains additional information about the subject.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthorityBindings%2A> property corresponds to a set of `<AuthorityBinding>` child elements for an `<AuthenticationStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.AuthorityBindings%2A> property corresponds to a set of `<AuthorityBinding>` child elements for an `<AuthenticationStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -276,10 +276,10 @@
         <value>The DNS domain name in which the computer that authenticated the subject resides.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.DnsAddress%2A> property corresponds to the `DNSAddress` attribute of the `<SubjectLocality>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.DnsAddress%2A> property corresponds to the `DNSAddress` attribute of the `<SubjectLocality>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -343,10 +343,10 @@
         <value>The IP address of the computer that authenticated the subject.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.IPAddress%2A> property corresponds to the `IPAddress` attribute of the `<SubjectLocality>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthenticationClaimResource.IPAddress%2A> property corresponds to the `IPAddress` attribute of the `<SubjectLocality>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>

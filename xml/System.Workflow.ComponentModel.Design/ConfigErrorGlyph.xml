@@ -19,14 +19,14 @@
     <summary>Provides a glyph for an <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to display when a user has not performed required designer actions at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- Activity designers use <xref:System.Workflow.ComponentModel.Design.ConfigErrorGlyph> to display actions associated with smart tags on the designer surface. For example, if an activity requires users to set a property, the activity designer displays <xref:System.Workflow.ComponentModel.Design.ConfigErrorGlyph> to help notify them that they are required to set the property.  
-  
+ 
+Activity designers use <xref:System.Workflow.ComponentModel.Design.ConfigErrorGlyph> to display actions associated with smart tags on the designer surface. For example, if an activity requires users to set a property, the activity designer displays <xref:System.Workflow.ComponentModel.Design.ConfigErrorGlyph> to help notify them that they are required to set the property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -112,10 +112,10 @@
         <summary>Notifies the glyph that an action has been performed which has activated the glyph.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.Workflow.ComponentModel.Design.ConfigErrorGlyph.OnActivate%2A> is called, the designer verbs associated with the glyph are displayed on the activity designer surface.  
-  
+When <xref:System.Workflow.ComponentModel.Design.ConfigErrorGlyph.OnActivate%2A> is called, the designer verbs associated with the glyph are displayed on the activity designer surface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

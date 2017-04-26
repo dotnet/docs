@@ -14,10 +14,10 @@
     <summary>Converts a <see cref="T:System.Windows.Input.Cursor" /> object to and from other types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Input.CursorConverter> works for two modes: specifying a standard cursor (one of the static constant names of <xref:System.Windows.Input.Cursors>) or specifying a file name. The named file must be a `.cur` or `.ani` file identified by extension. See [How to: Change the Cursor Type](~/docs/framework/wpf/advanced/how-to-change-the-cursor-type.md).  
-  
+<xref:System.Windows.Input.CursorConverter> works for two modes: specifying a standard cursor (one of the static constant names of <xref:System.Windows.Input.Cursors>) or specifying a file name. The named file must be a `.cur` or `.ani` file identified by extension. See [How to: Change the Cursor Type](~/docs/framework/wpf/advanced/how-to-change-the-cursor-type.md).  
+ 
 <a name="xamlTextUsage_CursorConverter"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -144,10 +144,10 @@
         <returns>The converted object, or an empty string if <paramref name="value" /> is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `destinationType` must be <xref:System.String>.  
-  
+`destinationType` must be <xref:System.String>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -177,10 +177,10 @@
         <returns>A collection that holds a standard set of valid values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a list of the public static properties of <xref:System.Windows.Input.Cursors>.  
-  
+This method returns a list of the public static properties of <xref:System.Windows.Input.Cursors>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

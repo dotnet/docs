@@ -18,15 +18,15 @@
     <summary>Represents a wrapper used to establish link between an actual <see cref="T:System.Drawing.Presentation.ToolboxItem" /> instance and the tool representation, as well as add support for categorization of toolbox items. This class is <see langword="sealed" />, so it cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This wrapper class provides support for the categorization of toolbox items when re-hosting the [!INCLUDE[wfd1](~/includes/wfd1-md.md)]outside of [!INCLUDE[vs2010](~/includes/vs2010-md.md)].  
+This wrapper class provides support for the categorization of toolbox items when re-hosting the [!INCLUDE[wfd1](~/includes/wfd1-md.md)]outside of [!INCLUDE[vs2010](~/includes/vs2010-md.md)].  
+ 
   
-   
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_ToolboxItemWrapper#0](WFD_ToolboxItemWrapper#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor initializes the <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName%2A>, <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName%2A>, <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName%2A>, and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.DisplayName%2A> properties with an empty `string`.  
-  
+The default constructor initializes the <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName%2A>, <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName%2A>, <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName%2A>, and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.DisplayName%2A> properties with an empty `string`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -70,10 +70,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> class with the type of the tool.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName%2A> properties can be extracted from the `toolType` parameter. The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.DisplayName%2A> properties are each initialized with an empty `string`.  
-  
+The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName%2A> properties can be extracted from the `toolType` parameter. The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.DisplayName%2A> properties are each initialized with an empty `string`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,10 +97,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> class with the type of the tool and a specified display name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName%2A> properties can be extracted from the `toolType` parameter. The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName%2A> property is initialized with an empty `string`.  
-  
+The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName%2A> properties can be extracted from the `toolType` parameter. The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName%2A> property is initialized with an empty `string`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,10 +126,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> class with the type of the tool and specified names for the bitmap and display.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName%2A> properties can be extracted from the `toolType` parameter.  
-  
+The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName%2A> properties can be extracted from the `toolType` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,10 +175,10 @@
         <value>The assembly name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the assembly name is changed, an event is raised to indicate that the property value has been changed. The set operation is idempotent: if the assembly name is set to a value that it already has, there is no change.  
-  
+If the assembly name is changed, an event is raised to indicate that the property value has been changed. The set operation is idempotent: if the assembly name is set to a value that it already has, there is no change.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The assembly name has already been specified and cannot be changed after the corresponding <see cref="T:System.Drawing.Desigen.ToolboxItem" /> has been initialized.</exception>
@@ -219,10 +219,10 @@
         <value>The bitmap name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the bitmap name is changed, an event is raised to indicate that the property value has been changed. The set operation is idempotent: if the assembly name is set to a value that it already has, there is no change.  
-  
+If the bitmap name is changed, an event is raised to indicate that the property value has been changed. The set operation is idempotent: if the assembly name is set to a value that it already has, there is no change.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,10 +244,10 @@
         <value>The display name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the display name is changed, an event is raised to indicate that the property has been changed. The set operation is idempotent: if the assembly name is set to a value that it already has, there is no change.  
-  
+If the display name is changed, an event is raised to indicate that the property has been changed. The set operation is idempotent: if the assembly name is set to a value that it already has, there is no change.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,10 +270,10 @@
           <see langword="true" /> if the <see cref="T:System.Drawing.Design.ToolboxItem" /> is valid; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.Design.ToolboxItem> is valid if it is not `null`.  
-  
+The <xref:System.Drawing.Design.ToolboxItem> is valid if it is not `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -294,10 +294,10 @@
         <summary>An event that occurs when a property is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.PropertyChanged> property is defined by the <xref:System.ComponentModel.INotifyPropertyChanged> interface that is implemented by the <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper> class.  
-  
+The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.PropertyChanged> property is defined by the <xref:System.ComponentModel.INotifyPropertyChanged> interface that is implemented by the <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -319,10 +319,10 @@
         <value>The tool name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the name of the tool is changed, an event is raised to indicate that the property value has been changed. The set operation is idempotent: if the assembly name is set to a value that it already has, there is no change.  
-  
+If the name of the tool is changed, an event is raised to indicate that the property value has been changed. The set operation is idempotent: if the assembly name is set to a value that it already has, there is no change.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationException">The name of the tool cannot be changed after the corresponding <see cref="T:System.Drawing.Desigen.ToolboxItem" /> has been initialized.</exception>

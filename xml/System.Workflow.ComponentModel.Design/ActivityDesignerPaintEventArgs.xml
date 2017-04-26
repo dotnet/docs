@@ -19,14 +19,14 @@
     <summary>Provides data for the <see cref="M:System.Workflow.ComponentModel.Design.ActivityDesigner.OnPaint(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs)" />, <see cref="M:System.Workflow.ComponentModel.Design.ConnectionPoint.OnPaint(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs,System.Boolean)" />, <see cref="M:System.Workflow.ComponentModel.Design.Connector.OnPaint(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs)" />, and <see cref="M:System.Workflow.ComponentModel.Design.DesignerGlyph.OnPaint(System.Drawing.Graphics,System.Boolean,System.Workflow.ComponentModel.Design.AmbientTheme,System.Workflow.ComponentModel.Design.ActivityDesigner)" /> methods and any overridden versions of <see langword="OnPaint" /> in classes that derive from them, when they are drawn on a workflow design surface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- `OnPaint` method calls occur when an activity designer, glyph, or connector is redrawn on a workflow design surface. <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs> specifies the graphics to use to draw the object and the clipping rectangle in which to draw it.  
-  
+ 
+`OnPaint` method calls occur when an activity designer, glyph, or connector is redrawn on a workflow design surface. <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs> specifies the graphics to use to draw the object and the clipping rectangle in which to draw it.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,10 +72,10 @@
         <value>An <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> that contains theme information for the workflow.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.ComponentModel.Design.AmbientTheme> is used to describe workflow look and feel properties, such as colors, styles and backgrounds.  
-  
+The <xref:System.Workflow.ComponentModel.Design.AmbientTheme> is used to describe workflow look and feel properties, such as colors, styles and backgrounds.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,10 +97,10 @@
         <value>A <see cref="T:System.Drawing.Rectangle" /> that describes the area to draw.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The area described by the clipping rectangle is the area on the screen that will be redrawn using the <xref:System.Drawing.Graphics> supplied by <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs>.  
-  
+The area described by the clipping rectangle is the area on the screen that will be redrawn using the <xref:System.Drawing.Graphics> supplied by <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,10 +122,10 @@
         <value>An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" /> that describes the designer look and feel.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a designer has an <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> associated with it, the designer will use the look and feel properties described by the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> to paint itself. If no <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> is associated with the designer, the designer will use the <xref:System.Workflow.ComponentModel.Design.AmbientTheme> to repaint its look and feel properties.  
-  
+If a designer has an <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> associated with it, the designer will use the look and feel properties described by the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> to paint itself. If no <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> is associated with the designer, the designer will use the <xref:System.Workflow.ComponentModel.Design.AmbientTheme> to repaint its look and feel properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,10 +147,10 @@
         <value>The <see cref="T:System.Drawing.Graphics" /> used to draw the item on the workflow design surface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Drawing.Graphics> provides methods for drawing objects on the workflow design surface.  
-  
+<xref:System.Drawing.Graphics> provides methods for drawing objects on the workflow design surface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

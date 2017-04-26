@@ -16,19 +16,19 @@
     <summary>Enables interaction with the user interface of the development environment object that is hosting the designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.Design.IUIService> can display error messages, show dialog boxes, and get ambient properties of the host, such as the font for dialog boxes and color schemes, through the <xref:System.Windows.Forms.Design.IUIService.Styles%2A> dictionary property.  
+<xref:System.Windows.Forms.Design.IUIService> can display error messages, show dialog boxes, and get ambient properties of the host, such as the font for dialog boxes and color schemes, through the <xref:System.Windows.Forms.Design.IUIService.Styles%2A> dictionary property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a designer that provides designer verb menu commands that call methods of the <xref:System.Windows.Forms.Design.IUIService>. To use the example, compile the sample code to an assembly, and add a reference to the assembly in a Windows Forms application. If you are using [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], the `IUIServiceExampleControl` is automatically added to the **Toolbox**. Add an instance of the `IUIServiceExampleControl` to a <xref:System.Windows.Forms.Form>. To access the designer verb commands that invoke <xref:System.Windows.Forms.Design.IUIService> methods, either right-click on the control's surface or click on the control's smart tag glyph and select an item from the smart tag panel.  
-  
- [!code-cpp[IUIServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#1)]
- [!code-csharp[IUIServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#1)]
- [!code-vb[IUIServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#1)]  
-  
+The following code example creates a designer that provides designer verb menu commands that call methods of the <xref:System.Windows.Forms.Design.IUIService>. To use the example, compile the sample code to an assembly, and add a reference to the assembly in a Windows Forms application. If you are using [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], the `IUIServiceExampleControl` is automatically added to the **Toolbox**. Add an instance of the `IUIServiceExampleControl` to a <xref:System.Windows.Forms.Form>. To access the designer verb commands that invoke <xref:System.Windows.Forms.Design.IUIService> methods, either right-click on the control's surface or click on the control's smart tag glyph and select an item from the smart tag panel.  
+ 
+[!code-cpp[IUIServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#1)]
+[!code-csharp[IUIServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#1)]
+[!code-vb[IUIServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,12 +55,12 @@
           <see langword="true" /> if the specified component can display a component editor form; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Component editors can display a component editor form that is similar to a property page from the Component Object Model (COM).  
-  
- This method checks to determine whether the specified component has a <xref:System.ComponentModel.ComponentEditor> that can display a <xref:System.Windows.Forms.Design.ComponentEditorForm>.  
-  
+Component editors can display a component editor form that is similar to a property page from the Component Object Model (COM).  
+ 
+This method checks to determine whether the specified component has a <xref:System.ComponentModel.ComponentEditor> that can display a <xref:System.Windows.Forms.Design.ComponentEditorForm>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
         <returns>An <see cref="T:System.Windows.Forms.IWin32Window" /> that indicates the window to own any child dialog boxes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some dialog boxes are parented to an owner application and are not visible in the task list. This method returns an <xref:System.Windows.Forms.IWin32Window> that indicates the window that should be the owner for dialog boxes of this sort that are spawned from an integrated development environment.  
-  
+Some dialog boxes are parented to an owner application and are not visible in the task list. This method returns an <xref:System.Windows.Forms.IWin32Window> that indicates the window that should be the owner for dialog boxes of this sort that are spawned from an integrated development environment.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,10 +108,10 @@
         <summary>Sets a flag indicating the UI has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method indicates that the UI has been changed and should be refreshed. It is important to indicate the need for a refresh whenever a toolbar or menu item's status changes. Most development environments cache the status of these elements for speed, and need to know when they need to be updated. This method is called, for example, after objects have been selected within designer view to enable the cut and copy menu items.  
-  
+This method indicates that the UI has been changed and should be refreshed. It is important to indicate the need for a refresh whenever a toolbar or menu item's status changes. Most development environments cache the status of these elements for speed, and need to know when they need to be updated. This method is called, for example, after objects have been selected within designer view to enable the cut and copy menu items.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,12 +140,12 @@
           <see langword="true" /> if the attempt is successful; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Forms.Design.ComponentEditorForm> is similar to a property page from the Component Object Model (COM).  
-  
- If the component does not support component editors, an <xref:System.ArgumentException> is thrown. To avoid this, be sure to call <xref:System.Windows.Forms.Design.IUIService.CanShowComponentEditor%2A> first.  
-  
+A <xref:System.Windows.Forms.Design.ComponentEditorForm> is similar to a property page from the Component Object Model (COM).  
+ 
+If the component does not support component editors, an <xref:System.ArgumentException> is thrown. To avoid this, be sure to call <xref:System.Windows.Forms.Design.IUIService.CanShowComponentEditor%2A> first.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The component does not support component editors.</exception>
@@ -172,14 +172,14 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values indicating the result code returned by the dialog box.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example attempts to obtain an instance of the <xref:System.Windows.Forms.Design.IUIService> class and invoke the service's <xref:System.Windows.Forms.Design.IUIService.ShowDialog%2A> method.  
-  
- [!code-cpp[IUIServiceExample#4](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#4)]
- [!code-csharp[IUIServiceExample#4](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#4)]
- [!code-vb[IUIServiceExample#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#4)]  
-  
+The following code example attempts to obtain an instance of the <xref:System.Windows.Forms.Design.IUIService> class and invoke the service's <xref:System.Windows.Forms.Design.IUIService.ShowDialog%2A> method.  
+ 
+[!code-cpp[IUIServiceExample#4](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#4)]
+[!code-csharp[IUIServiceExample#4](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#4)]
+[!code-vb[IUIServiceExample#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,10 +204,10 @@
         <summary>Displays the specified exception and information about the exception in a message box.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using this method enables the message box display to be properly integrated with the development environment.  
-  
+Using this method enables the message box display to be properly integrated with the development environment.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,10 +232,10 @@
         <summary>Displays the specified error message in a message box.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using this method enables the message box display to be properly integrated with the development environment.  
-  
+Using this method enables the message box display to be properly integrated with the development environment.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -262,19 +262,19 @@
         <summary>Displays the specified exception and information about the exception in a message box.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using this method enables the message box display to be properly integrated with the development environment.  
+Using this method enables the message box display to be properly integrated with the development environment.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example attempts to obtain an instance of the <xref:System.Windows.Forms.Design.IUIService> and invoke the service's <xref:System.Windows.Forms.Design.IUIService.ShowError%2A> method.  
-  
- [!code-cpp[IUIServiceExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#3)]
- [!code-csharp[IUIServiceExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#3)]
- [!code-vb[IUIServiceExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#3)]  
-  
+The following code example attempts to obtain an instance of the <xref:System.Windows.Forms.Design.IUIService> and invoke the service's <xref:System.Windows.Forms.Design.IUIService.ShowError%2A> method.  
+ 
+[!code-cpp[IUIServiceExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#3)]
+[!code-csharp[IUIServiceExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#3)]
+[!code-vb[IUIServiceExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,19 +299,19 @@
         <summary>Displays the specified message in a message box.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method ensures that the display of the message box is properly integrated with the development environment.  
+This method ensures that the display of the message box is properly integrated with the development environment.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.Design.IUIService.ShowMessage%2A> method to display a message box.  
-  
- [!code-cpp[IUIServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#2)]
- [!code-csharp[IUIServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#2)]
- [!code-vb[IUIServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#2)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.Design.IUIService.ShowMessage%2A> method to display a message box.  
+ 
+[!code-cpp[IUIServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#2)]
+[!code-csharp[IUIServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#2)]
+[!code-vb[IUIServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,19 +338,19 @@
         <summary>Displays the specified message in a message box with the specified caption.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method ensures that the display of the message box is properly integrated with the development environment.  
+This method ensures that the display of the message box is properly integrated with the development environment.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example attempts to obtain an instance of the <xref:System.Windows.Forms.Design.IUIService> and invoke the service's <xref:System.Windows.Forms.Design.IUIService.ShowMessage%2A> method.  
-  
- [!code-cpp[IUIServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#2)]
- [!code-csharp[IUIServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#2)]
- [!code-vb[IUIServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#2)]  
-  
+The following code example attempts to obtain an instance of the <xref:System.Windows.Forms.Design.IUIService> and invoke the service's <xref:System.Windows.Forms.Design.IUIService.ShowMessage%2A> method.  
+ 
+[!code-cpp[IUIServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#2)]
+[!code-csharp[IUIServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#2)]
+[!code-vb[IUIServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -380,19 +380,19 @@
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values indicating the result code returned by the dialog box.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method ensures that the display of the message box is properly integrated with the development environment.  
+This method ensures that the display of the message box is properly integrated with the development environment.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.Design.IUIService.ShowMessage%2A> method to display a message box.  
-  
- [!code-cpp[IUIServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#2)]
- [!code-csharp[IUIServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#2)]
- [!code-vb[IUIServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#2)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.Design.IUIService.ShowMessage%2A> method to display a message box.  
+ 
+[!code-cpp[IUIServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#2)]
+[!code-csharp[IUIServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#2)]
+[!code-vb[IUIServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -419,14 +419,14 @@
           <see langword="true" /> if the tool window was successfully shown; <see langword="false" /> if it could not be shown or found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example attempts to obtain an instance of the <xref:System.Windows.Forms.Design.IUIService> and invoke the service's <xref:System.Windows.Forms.Design.IUIService.ShowToolWindow%2A> method.  
-  
- [!code-cpp[IUIServiceExample#5](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#5)]
- [!code-csharp[IUIServiceExample#5](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#5)]
- [!code-vb[IUIServiceExample#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#5)]  
-  
+The following code example attempts to obtain an instance of the <xref:System.Windows.Forms.Design.IUIService> and invoke the service's <xref:System.Windows.Forms.Design.IUIService.ShowToolWindow%2A> method.  
+ 
+[!code-cpp[IUIServiceExample#5](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#5)]
+[!code-csharp[IUIServiceExample#5](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#5)]
+[!code-vb[IUIServiceExample#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -448,21 +448,21 @@
         <value>An <see cref="T:System.Collections.IDictionary" /> containing style settings.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The dictionary can provide information from the host environment. At a minimum, this consists of the font that should be used for standard UI text, and the color to use for highlighting. These required styles are "DialogFont" and "HighlightColor".  
+The dictionary can provide information from the host environment. At a minimum, this consists of the font that should be used for standard UI text, and the color to use for highlighting. These required styles are "DialogFont" and "HighlightColor".  
+ 
+The values for these styles may be retrieved by using the style as a key for the dictionary, accessing the dictionary using the key as an indexer. For example: (object implementing <xref:System.Windows.Forms.Design.IUIService>).Styles[(style name string in quotes)].  
+ 
   
- The values for these styles may be retrieved by using the style as a key for the dictionary, accessing the dictionary using the key as an indexer. For example: (object implementing <xref:System.Windows.Forms.Design.IUIService>).Styles[(style name string in quotes)].  
-  
-   
-  
+ 
 ## Examples  
- The following code example gets the dialog box font from the host environment.  
-  
- [!code-cpp[Classic IUIService.Styles Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic IUIService.Styles Example/CPP/source.cpp#1)]
- [!code-csharp[Classic IUIService.Styles Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic IUIService.Styles Example/CS/source.cs#1)]
- [!code-vb[Classic IUIService.Styles Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic IUIService.Styles Example/VB/source.vb#1)]  
-  
+The following code example gets the dialog box font from the host environment.  
+ 
+[!code-cpp[Classic IUIService.Styles Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic IUIService.Styles Example/CPP/source.cpp#1)]
+[!code-csharp[Classic IUIService.Styles Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic IUIService.Styles Example/CS/source.cs#1)]
+[!code-vb[Classic IUIService.Styles Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic IUIService.Styles Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

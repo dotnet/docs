@@ -11,10 +11,10 @@
     <summary>Defines the method a class must implement to return a control's type for a specified tag prefix and tag name.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Page developers and control authors do not use the <xref:System.Web.UI.IUserControlTypeResolutionService> interface. The <xref:System.Web.UI.IUserControlTypeResolutionService> interface is implemented by tool developers to return the <xref:System.Type> of a control identified by a tag prefix and tag name.  
-  
+Page developers and control authors do not use the <xref:System.Web.UI.IUserControlTypeResolutionService> interface. The <xref:System.Web.UI.IUserControlTypeResolutionService> interface is implemented by tool developers to return the <xref:System.Type> of a control identified by a tag prefix and tag name.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -42,10 +42,10 @@
         <returns>A <see cref="T:System.Type" /> that represents the type of control the prefix and tag identify.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Designer environments implement this method to provide a way for ASP.NET parsers and designers to resolve user control types at design time.  
-  
+Designer environments implement this method to provide a way for ASP.NET parsers and designers to resolve user control types at design time.  
+ 
  ]]></format>
         </remarks>
       </Docs>

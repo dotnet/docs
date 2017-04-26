@@ -19,14 +19,14 @@
     <summary>Defines an attribute that specifies the scope where a build provider will be applied when a resource is located. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Compilation.BuildProvider> class will parse and generate code during compilation for a resource with a specific file extension. The <xref:System.Web.Compilation.BuildProviderAppliesToAttribute> attribute defines the location scope for which the <xref:System.Web.Compilation.BuildProvider> object will be called.  
-  
- By setting the <xref:System.Web.Compilation.BuildProviderAppliesToAttribute> attribute, you can limit a <xref:System.Web.Compilation.BuildProvider> object to certain reserved ASP.NET directories, such as \App_Code.  
-  
- If you do not apply a <xref:System.Web.Compilation.BuildProviderAppliesToAttribute> attribute to a <xref:System.Web.Compilation.BuildProvider> class, the default is <xref:System.Web.Compilation.BuildProviderAppliesTo>.  
-  
+The <xref:System.Web.Compilation.BuildProvider> class will parse and generate code during compilation for a resource with a specific file extension. The <xref:System.Web.Compilation.BuildProviderAppliesToAttribute> attribute defines the location scope for which the <xref:System.Web.Compilation.BuildProvider> object will be called.  
+ 
+By setting the <xref:System.Web.Compilation.BuildProviderAppliesToAttribute> attribute, you can limit a <xref:System.Web.Compilation.BuildProvider> object to certain reserved ASP.NET directories, such as \App_Code.  
+ 
+If you do not apply a <xref:System.Web.Compilation.BuildProviderAppliesToAttribute> attribute to a <xref:System.Web.Compilation.BuildProvider> class, the default is <xref:System.Web.Compilation.BuildProviderAppliesTo>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,17 +14,17 @@
     <summary>Provides a user interface for selecting an XML file using a standard <see cref="T:System.Windows.Forms.OpenFileDialog" /> box.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.Design.XmlFileEditor> is a <xref:System.Drawing.Design.UITypeEditor> that provides a dialog for selecting an XML file for a file name property.  
+<xref:System.Web.UI.Design.XmlFileEditor> is a <xref:System.Drawing.Design.UITypeEditor> that provides a dialog for selecting an XML file for a file name property.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[WebUITypeEditorsExample#2](~/samples/snippets/cpp/VS_Snippets_WebNet/WebUITypeEditorsExample/CPP/webcustomcontrol1.cpp#2)]
- [!code-csharp[WebUITypeEditorsExample#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebUITypeEditorsExample/CS/webcustomcontrol1.cs#2)]
- [!code-vb[WebUITypeEditorsExample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebUITypeEditorsExample/VB/webcustomcontrol1.vb#2)]  
-  
+[!code-cpp[WebUITypeEditorsExample#2](~/samples/snippets/cpp/VS_Snippets_WebNet/WebUITypeEditorsExample/CPP/webcustomcontrol1.cpp#2)]
+[!code-csharp[WebUITypeEditorsExample#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebUITypeEditorsExample/CS/webcustomcontrol1.cs#2)]
+[!code-vb[WebUITypeEditorsExample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebUITypeEditorsExample/VB/webcustomcontrol1.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,10 +69,10 @@
         <returns>The new value of the object. If the value of the object has not changed, this method should return the same object it was passed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A service provider is provided so that any required editing services can be obtained.  
-  
+A service provider is provided so that any required editing services can be obtained.  
+ 
  ]]></format>
         </remarks>
       </Docs>

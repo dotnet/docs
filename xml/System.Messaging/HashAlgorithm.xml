@@ -13,14 +13,14 @@
     <summary>Specifies the hash algorithm used by Message Queuing when authenticating messages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message authentication provides two services. It provides a way to ensure message integrity and a way to verify who sent the message. To request authentication, the sending application must set the authentication level of the message to be authenticated and attach a security certificate to the message.  
-  
- To authenticate messages, the Message Queuing run-time DLL on the source computer uses a hashing algorithm when creating a digital signature for a message. The target Queue Manager then uses the same hashing algorithm to authenticate the message when it is received.  
-  
- For more information about the authentication process, see the Message Queuing authentication topics in the MSDN Library.  
-  
+Message authentication provides two services. It provides a way to ensure message integrity and a way to verify who sent the message. To request authentication, the sending application must set the authentication level of the message to be authenticated and attach a security certificate to the message.  
+ 
+To authenticate messages, the Message Queuing run-time DLL on the source computer uses a hashing algorithm when creating a digital signature for a message. The target Queue Manager then uses the same hashing algorithm to authenticate the message when it is received.  
+ 
+For more information about the authentication process, see the Message Queuing authentication topics in the MSDN Library.  
+ 
  ]]></format>
     </remarks>
   </Docs>

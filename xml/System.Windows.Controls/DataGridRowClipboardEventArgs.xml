@@ -56,10 +56,10 @@
         <value>A list of <see cref="T:System.Windows.Controls.DataGridClipboardCellContent" /> values that represent the text values of the cells being copied.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the cell values before they are copied to the Clipboard. You can modify the list or its values in order to customize what gets copied to the Clipboard.  
-  
+This property represents the cell values before they are copied to the Clipboard. You can modify the list or its values in order to customize what gets copied to the Clipboard.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,18 +103,18 @@
         <returns>The formatted string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.DataGrid> uses this method to format cell values before copying them to the Clipboard. This method supports the following data formats:  
-  
+The <xref:System.Windows.Controls.DataGrid> uses this method to format cell values before copying them to the Clipboard. This method supports the following data formats:  
+ 
 -   <xref:System.Windows.DataFormats.CommaSeparatedValue>  
-  
+ 
 -   <xref:System.Windows.DataFormats.Text>  
-  
+ 
 -   <xref:System.Windows.DataFormats.UnicodeText>  
-  
+ 
 -   <xref:System.Windows.DataFormats.Html>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

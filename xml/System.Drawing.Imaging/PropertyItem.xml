@@ -14,25 +14,25 @@
     <summary>Encapsulates a metadata property to be included in an image file. Not inheritable.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The data consists of: an identifier, the length (in bytes) of the property, the property type, and a pointer to the property value.  
+The data consists of: an identifier, the length (in bytes) of the property, the property type, and a pointer to the property value.  
+ 
+A <xref:System.Drawing.Imaging.PropertyItem> is not intended to be used as a stand-alone object. A <xref:System.Drawing.Imaging.PropertyItem> object is intended to be used by classes that are derived from <xref:System.Drawing.Image>. A <xref:System.Drawing.Imaging.PropertyItem> object is used to retrieve and to change the metadata of existing image files, not to create the metadata. Therefore, the <xref:System.Drawing.Imaging.PropertyItem> class does not have a defined `Public` constructor, and you cannot create an instance of a <xref:System.Drawing.Imaging.PropertyItem> object.  
+ 
+To work around the absence of a `Public` constructor, use an existing <xref:System.Drawing.Imaging.PropertyItem> object instead of creating a new instance of the <xref:System.Drawing.Imaging.PropertyItem> class. For more information, see <xref:System.Drawing.Image.GetPropertyItem%2A?displayProperty=fullName>.  
+ 
   
- A <xref:System.Drawing.Imaging.PropertyItem> is not intended to be used as a stand-alone object. A <xref:System.Drawing.Imaging.PropertyItem> object is intended to be used by classes that are derived from <xref:System.Drawing.Image>. A <xref:System.Drawing.Imaging.PropertyItem> object is used to retrieve and to change the metadata of existing image files, not to create the metadata. Therefore, the <xref:System.Drawing.Imaging.PropertyItem> class does not have a defined `Public` constructor, and you cannot create an instance of a <xref:System.Drawing.Imaging.PropertyItem> object.  
-  
- To work around the absence of a `Public` constructor, use an existing <xref:System.Drawing.Imaging.PropertyItem> object instead of creating a new instance of the <xref:System.Drawing.Imaging.PropertyItem> class. For more information, see <xref:System.Drawing.Image.GetPropertyItem%2A?displayProperty=fullName>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to read and display the metadata in an image file using the <xref:System.Drawing.Imaging.PropertyItem> class and the <xref:System.Drawing.Image.PropertyItems%2A?displayProperty=fullName> property.  
-  
- This example is designed to be used in a Windows Form that imports the <xref:System.Drawing.Imaging?displayProperty=fullName> namespace. Paste the code into the form and change the path to `fakePhoto.jpg` to point to an image file on your system. Call the `ExtractMetaData` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.ImageExample#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#6)]
- [!code-csharp[System.Drawing.ImageExample#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#6)]
- [!code-vb[System.Drawing.ImageExample#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#6)]  
-  
+The following code example demonstrates how to read and display the metadata in an image file using the <xref:System.Drawing.Imaging.PropertyItem> class and the <xref:System.Drawing.Image.PropertyItems%2A?displayProperty=fullName> property.  
+ 
+This example is designed to be used in a Windows Form that imports the <xref:System.Drawing.Imaging?displayProperty=fullName> namespace. Paste the code into the form and change the path to `fakePhoto.jpg` to point to an image file on your system. Call the `ExtractMetaData` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.ImageExample#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#6)]
+[!code-csharp[System.Drawing.ImageExample#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#6)]
+[!code-vb[System.Drawing.ImageExample#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#6)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <value>The integer that represents the ID of the property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the property tags and their IDs. For more information about property tags, see [Image Property Tag Constants](http://go.microsoft.com/fwlink/?LinkId=145387). For a description of each property tag, see [Property Item Descriptions](http://go.microsoft.com/fwlink/?LinkId=145383).  
-  
+The following table shows the property tags and their IDs. For more information about property tags, see [Image Property Tag Constants](http://go.microsoft.com/fwlink/?LinkId=145387). For a description of each property tag, see [Property Item Descriptions](http://go.microsoft.com/fwlink/?LinkId=145383).  
+ 
 |ID|Property tag|  
 |--------|------------------|  
 |0x0000|PropertyTagGpsVer|  
@@ -277,7 +277,7 @@
 |0xA300|PropertyTagExifFileSource|  
 |0xA301|PropertyTagExifSceneType|  
 |0xA302|PropertyTagExifCfaPattern|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -317,10 +317,10 @@
         <value>An integer that defines the type of data contained in <see cref="P:System.Drawing.Imaging.PropertyItem.Value" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows integers and the types they represent.  
-  
+The following table shows integers and the types they represent.  
+ 
 |Integer|Represented Type|  
 |-------------|----------------------|  
 |1|Specifies that <xref:System.Drawing.Imaging.PropertyItem.Value%2A> is an array of bytes.|  
@@ -331,9 +331,9 @@
 |6|Specifies that <xref:System.Drawing.Imaging.PropertyItem.Value%2A> is an array of bytes that can hold values of any data type.|  
 |7|Specifies that <xref:System.Drawing.Imaging.PropertyItem.Value%2A> is an array of signed long (32-bit) integers.|  
 |10|Specifies that <xref:System.Drawing.Imaging.PropertyItem.Value%2A> is an array of pairs of signed long integers. Each pair represents a fraction; the first integer is the numerator and the second integer is the denominator.|  
-  
- For more information about property tags, see "Image Property Tag Constants" in the MSDN library at http://msdn.microsoft.com/library.  
-  
+ 
+For more information about property tags, see "Image Property Tag Constants" in the MSDN library at http://msdn.microsoft.com/library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -355,10 +355,10 @@
         <value>A byte array that represents the value of the property item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The byte array returned by the <xref:System.Drawing.Imaging.PropertyItem.Value%2A> property contains data in one of several different primitive types. To use the data, determine the data type using the <xref:System.Drawing.Imaging.PropertyItem.Type%2A> property and convert the byte array accordingly.  
-  
+The byte array returned by the <xref:System.Drawing.Imaging.PropertyItem.Value%2A> property contains data in one of several different primitive types. To use the data, determine the data type using the <xref:System.Drawing.Imaging.PropertyItem.Type%2A> property and convert the byte array accordingly.  
+ 
  ]]></format>
         </remarks>
       </Docs>

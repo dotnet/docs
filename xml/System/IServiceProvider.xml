@@ -20,14 +20,14 @@
     <summary>Defines a mechanism for retrieving a service object; that is, an object that provides custom support to other objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface is implemented by a class or value type that provides a service to other objects.  
-  
- The <xref:System.IServiceProvider.GetService%2A> method of this interface obtains the object that provides the service.  
-  
- The<xref:System.IServiceProvider> interface is implemented by a number of types, including <xref:System.Web.HttpContext?displayProperty=fullName>, <xref:System.ComponentModel.LicenseContext?displayProperty=fullName>, <xref:System.ComponentModel.MarshalByValueComponent?displayProperty=fullName>, and <xref:System.ComponentModel.Design.ServiceContainer?displayProperty=fullName>.  
-  
+This interface is implemented by a class or value type that provides a service to other objects.  
+ 
+The <xref:System.IServiceProvider.GetService%2A> method of this interface obtains the object that provides the service.  
+ 
+The<xref:System.IServiceProvider> interface is implemented by a number of types, including <xref:System.Web.HttpContext?displayProperty=fullName>, <xref:System.ComponentModel.LicenseContext?displayProperty=fullName>, <xref:System.ComponentModel.MarshalByValueComponent?displayProperty=fullName>, and <xref:System.ComponentModel.Design.ServiceContainer?displayProperty=fullName>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

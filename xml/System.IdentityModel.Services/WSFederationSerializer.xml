@@ -29,10 +29,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.WSFederationSerializer" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new instance serializes WS-Federation messages into WS-Trust Feb 2005 protocol messages; an instance of the <xref:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005RequestSerializer> class is used to serialize requests and an instance of the <xref:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer> class is used to serialize responses.  
-  
+The new instance serializes WS-Federation messages into WS-Trust Feb 2005 protocol messages; an instance of the <xref:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005RequestSerializer> class is used to serialize requests and an instance of the <xref:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer> class is used to serialize responses.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -54,10 +54,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.WSFederationSerializer" /> class based on the namespace of the response XML.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The request and response messages are serialized based on the namespace of the response XML (the appropriate WS-Trust serializers are used based on the namespace).  
-  
+The request and response messages are serialized based on the namespace of the response XML (the appropriate WS-Trust serializers are used based on the namespace).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -227,10 +227,10 @@
         <returns>The request data from the URL.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override this method to get the wreq string from a reference URL. The default implementation throws a <xref:System.NotSupportedException>.  
-  
+Override this method to get the wreq string from a reference URL. The default implementation throws a <xref:System.NotSupportedException>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Thrown by the default implementation.</exception>
@@ -257,10 +257,10 @@
         <returns>The request data from the URL.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override this method to get the wresult string from a reference URL. The default implementation throws a <xref:System.NotSupportedException>.  
-  
+Override this method to get the wresult string from a reference URL. The default implementation throws a <xref:System.NotSupportedException>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Thrown by the default implementation.</exception>

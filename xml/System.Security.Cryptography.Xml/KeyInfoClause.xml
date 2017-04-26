@@ -14,12 +14,12 @@
     <summary>Represents the abstract base class from which all implementations of <see cref="T:System.Security.Cryptography.Xml.KeyInfo" /> subelements inherit.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use <xref:System.Security.Cryptography.Xml.KeyInfoClause> objects to build a <xref:System.Security.Cryptography.Xml.KeyInfo> object for a specific digital signature or encrypted XML document. <xref:System.Security.Cryptography.Xml.KeyInfo> allows recipients of XML digital signatures and encrypted XML documents to determine which signing method and key values should be used for validation and decryption.  
-  
- For more information about the <xref:System.Security.Cryptography.Xml.KeyInfo> element and its subelements, see the XMLDSIG specification, which is available from the W3C at www.w3.org/TR/xmldsig-core/, or see the XML encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
-  
+You can use <xref:System.Security.Cryptography.Xml.KeyInfoClause> objects to build a <xref:System.Security.Cryptography.Xml.KeyInfo> object for a specific digital signature or encrypted XML document. <xref:System.Security.Cryptography.Xml.KeyInfo> allows recipients of XML digital signatures and encrypted XML documents to determine which signing method and key values should be used for validation and decryption.  
+ 
+For more information about the <xref:System.Security.Cryptography.Xml.KeyInfo> element and its subelements, see the XMLDSIG specification, which is available from the W3C at www.w3.org/TR/xmldsig-core/, or see the XML encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,10 +38,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Security.Cryptography.Xml.KeyInfoClause" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot create an instance of an abstract class. Application code creates a new instance of a derived class.  
-  
+You cannot create an instance of an abstract class. Application code creates a new instance of a derived class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -64,10 +64,10 @@
         <returns>An XML representation of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoClause" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlElement> returned by this method is suitable for use as a subelement of an XMLDSIG or encrypted XML `<KeyInfo>` element.  
-  
+The <xref:System.Xml.XmlElement> returned by this method is suitable for use as a subelement of an XMLDSIG or encrypted XML `<KeyInfo>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,10 +92,10 @@
         <summary>When overridden in a derived class, parses the input <see cref="T:System.Xml.XmlElement" /> and configures the internal state of the <see cref="T:System.Security.Cryptography.Xml.KeyInfoClause" /> to match.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is typically used to process a subelement of a `<KeyInfo>` element.  
-  
+This method is typically used to process a subelement of a `<KeyInfo>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

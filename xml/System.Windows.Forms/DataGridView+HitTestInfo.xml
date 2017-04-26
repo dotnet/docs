@@ -14,18 +14,18 @@
     <summary>Contains information, such as the row and column indexes, about a specific coordinate pair in the <see cref="T:System.Windows.Forms.DataGridView" /> control. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView.HitTest%2A> method of the <xref:System.Windows.Forms.DataGridView> class returns a <xref:System.Windows.Forms.DataGridView.HitTestInfo>. You can use this method to determine which part of the <xref:System.Windows.Forms.DataGridView> control is located at the specified coordinates. For example, you can call this method specifying the coordinates of a mouse click to determine the row and column indexes of the clicked cell or whether a header cell or scroll bar was clicked.  
+The <xref:System.Windows.Forms.DataGridView.HitTest%2A> method of the <xref:System.Windows.Forms.DataGridView> class returns a <xref:System.Windows.Forms.DataGridView.HitTestInfo>. You can use this method to determine which part of the <xref:System.Windows.Forms.DataGridView> control is located at the specified coordinates. For example, you can call this method specifying the coordinates of a mouse click to determine the row and column indexes of the clicked cell or whether a header cell or scroll bar was clicked.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates the use of this type. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName> property reference topic.  
-  
- [!code-csharp[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/CS/form1.cs#4)]
- [!code-vb[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/VB/form1.vb#4)]  
-  
+The following code example illustrates the use of this type. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName> property reference topic.  
+ 
+[!code-csharp[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/CS/form1.cs#4)]
+[!code-vb[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/VB/form1.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,13 +47,13 @@
         <value>The index of the column in the <see cref="T:System.Windows.Forms.DataGridView" /> that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates the use of this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName> property reference topic.  
-  
- [!code-csharp[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/CS/form1.cs#4)]
- [!code-vb[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/VB/form1.vb#4)]  
-  
+The following code example illustrates the use of this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName> property reference topic.  
+ 
+[!code-csharp[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/CS/form1.cs#4)]
+[!code-vb[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/VB/form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -134,10 +134,10 @@
         <summary>Specifies that the point is not on a cell or cell header. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView.HitTest%2A> method returns <xref:System.Windows.Forms.DataGridView.HitTestInfo.Nowhere> when the specified point is at an empty area of the <xref:System.Windows.Forms.DataGridView>.  
-  
+The <xref:System.Windows.Forms.DataGridView.HitTest%2A> method returns <xref:System.Windows.Forms.DataGridView.HitTestInfo.Nowhere> when the specified point is at an empty area of the <xref:System.Windows.Forms.DataGridView>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,13 +159,13 @@
         <value>The index of the row in the <see cref="T:System.Windows.Forms.DataGridView" /> that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates the use of this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName> property reference topic.  
-  
- [!code-csharp[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/CS/form1.cs#4)]
- [!code-vb[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/VB/form1.vb#4)]  
-  
+The following code example illustrates the use of this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName> property reference topic.  
+ 
+[!code-csharp[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/CS/form1.cs#4)]
+[!code-vb[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/VB/form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@
         <returns>A string that represents a <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView.HitTestInfo.ToString%2A> method returns a string that includes the value of the <xref:System.Windows.Forms.DataGridView.HitTestInfo.Type%2A>, <xref:System.Windows.Forms.DataGridView.HitTestInfo.ColumnIndex%2A>, and <xref:System.Windows.Forms.DataGridView.HitTestInfo.RowIndex%2A> properties.  
-  
+The <xref:System.Windows.Forms.DataGridView.HitTestInfo.ToString%2A> method returns a string that includes the value of the <xref:System.Windows.Forms.DataGridView.HitTestInfo.Type%2A>, <xref:System.Windows.Forms.DataGridView.HitTestInfo.ColumnIndex%2A>, and <xref:System.Windows.Forms.DataGridView.HitTestInfo.RowIndex%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -231,13 +231,13 @@
         <value>A <see cref="T:System.Windows.Forms.DataGridViewHitTestType" /> value that indicates the control part at the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates the use of this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName> property reference topic.  
-  
- [!code-csharp[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/CS/form1.cs#4)]
- [!code-vb[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/VB/form1.vb#4)]  
-  
+The following code example illustrates the use of this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName> property reference topic.  
+ 
+[!code-csharp[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/CS/form1.cs#4)]
+[!code-vb[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/VB/form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

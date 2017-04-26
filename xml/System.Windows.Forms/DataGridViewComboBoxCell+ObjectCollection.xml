@@ -23,10 +23,10 @@
     <summary>Represents the collection of selection choices in a <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can retrieve <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> objects from the <xref:System.Windows.Forms.DataGridViewComboBoxCell.Items%2A?displayProperty=fullName> property or the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.Items%2A?displayProperty=fullName> property.  
-  
+You can retrieve <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> objects from the <xref:System.Windows.Forms.DataGridViewComboBoxCell.Items%2A?displayProperty=fullName> property or the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.Items%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -296,10 +296,10 @@
         <summary>Inserts an item into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Forms.DataGridViewComboBoxCell.Sorted%2A> is `false`, then the `index` value represents the position at which the `item` value is inserted. If <xref:System.Windows.Forms.DataGridViewComboBoxCell.Sorted%2A> is `true`, then `index` is ignored and `item` is placed in the collection in a position determined by the sorting order.  
-  
+If <xref:System.Windows.Forms.DataGridViewComboBoxCell.Sorted%2A> is `false`, then the `index` value represents the position at which the `item` value is inserted. If <xref:System.Windows.Forms.DataGridViewComboBoxCell.Sorted%2A> is `true`, then `index` is ignored and `item` is placed in the collection in a position determined by the sorting order.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -376,10 +376,10 @@
         <summary>Removes the specified object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `value` parameter is not in the collection, this method does nothing.  
-  
+If the `value` parameter is not in the collection, this method does nothing.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The cell's <see cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DataSource" /> property value is not <see langword="null" />.</exception>
@@ -433,10 +433,10 @@
         <summary>Copies the elements of the collection to the specified array, starting at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -469,10 +469,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -494,10 +494,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -523,10 +523,10 @@
         <returns>The position in which to insert the new element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -553,10 +553,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

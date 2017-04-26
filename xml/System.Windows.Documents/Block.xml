@@ -14,10 +14,10 @@
     <summary>An abstract class that provides a base for all block-level flow content elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Elements that inherit from the <xref:System.Windows.Documents.Block> class (such as <xref:System.Windows.Documents.Section>) can be used to group elements under a common parent or to apply common attributes to a group. Conceptually, this is similar to how you might use the \<DIV> tag in [!INCLUDE[TLA#tla_html](~/includes/tlasharptla-html-md.md)].  
-  
+Elements that inherit from the <xref:System.Windows.Documents.Block> class (such as <xref:System.Windows.Documents.Section>) can be used to group elements under a common parent or to apply common attributes to a group. Conceptually, this is similar to how you might use the \<DIV> tag in [!INCLUDE[TLA#tla_html](~/includes/tlasharptla-html-md.md)].  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,34 +54,34 @@
         <value>The brush used to apply to the element's border. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a table of swatches that show the available predefined brush colors, see <xref:System.Windows.Media.Brushes>.  
-  
+For a table of swatches that show the available predefined brush colors, see <xref:System.Windows.Media.Brushes>.  
+ 
 <a name="dependencyPropertyInfo_BorderBrush"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Block.BorderBrushProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Documents.Block.BorderBrush%2A> attribute of a <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
-  
- [!code-xml[BlockSnippets#_Block_BordersXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_bordersxaml)]  
-  
- The following figure shows how the preceding example renders.  
-  
- ![Screenshot: Blue, 1&#47;4inch border around Block](~/add/media/block-borders.png "Screenshot: Blue, 1/4inch border around Block")  
-  
- The following example shows how to set the <xref:System.Windows.Documents.Block.BorderBrush%2A> property programmatically.  
-  
- [!code-csharp[BlockSnippets#_Block_Borders](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_borders)]
- [!code-vb[BlockSnippets#_Block_Borders](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_borders)]  
-  
+The following example shows how to set the <xref:System.Windows.Documents.Block.BorderBrush%2A> attribute of a <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
+ 
+[!code-xml[BlockSnippets#_Block_BordersXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_bordersxaml)]  
+ 
+The following figure shows how the preceding example renders.  
+ 
+![Screenshot: Blue, 1&#47;4inch border around Block](~/add/media/block-borders.png "Screenshot: Blue, 1/4inch border around Block")  
+ 
+The following example shows how to set the <xref:System.Windows.Documents.Block.BorderBrush%2A> property programmatically.  
+ 
+[!code-csharp[BlockSnippets#_Block_Borders](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_borders)]
+[!code-vb[BlockSnippets#_Block_Borders](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_borders)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,12 +120,12 @@
         <value>A <see cref="T:System.Windows.Thickness" /> structure specifying the amount of border to apply, in device independent pixels. The default is a uniform thickness of zero (0.0).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_BorderThickness"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object BorderThickness="uniformThickness"/>  
 - or -  
@@ -135,57 +135,57 @@
 - or -  
 <object BorderThickness="qualifiedIndependentThickness"/>  
 ```  
-  
+ 
 <a name="xamlValues_BorderThickness"></a>   
 ## XAML Values  
- *uniformThickness*  
- String representation of a single <xref:System.Double> value to apply uniformly to all four thickness dimensions.  For example, a value of `"10"` is equivalent to a value of `"10,10,10,10"`.  An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
-  
- *independentThickness*  
- String representation of four ordered <xref:System.Double> values corresponding to independent thickness dimensions for left, top, right, and bottom, in this order.  The four values must be separated with commas; spaces are not allowed.  For example, "5,10,15,20" results in 5 pixels of border to the left of content, 10 pixels of border above content, 15 pixels of border to the right of content, and 20 pixels of border below the content.  
-  
- *qualifiedUniformThickness*  
- A value described by *uniformThickness* followed by one of the following unit specifiers: `px`, `in`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- For example, `"1in"` provides uniform border of 1 inch in all directions.  
-  
- *qualifiedIndependentThickness*  
- A value described by *independentThickness*, with each independent value followed by one of the following unit specifiers: `px`, `in`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- For example, `"1.5in,0.8in,1.5in,0.8in"`.  Unit specifiers may be mixed or omitted from one or more values.  
-  
+*uniformThickness*  
+String representation of a single <xref:System.Double> value to apply uniformly to all four thickness dimensions.  For example, a value of `"10"` is equivalent to a value of `"10,10,10,10"`.  An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ 
+*independentThickness*  
+String representation of four ordered <xref:System.Double> values corresponding to independent thickness dimensions for left, top, right, and bottom, in this order.  The four values must be separated with commas; spaces are not allowed.  For example, "5,10,15,20" results in 5 pixels of border to the left of content, 10 pixels of border above content, 15 pixels of border to the right of content, and 20 pixels of border below the content.  
+ 
+*qualifiedUniformThickness*  
+A value described by *uniformThickness* followed by one of the following unit specifiers: `px`, `in`.  
+ 
+`px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+ 
+`in` is inches; 1in==96px  
+ 
+For example, `"1in"` provides uniform border of 1 inch in all directions.  
+ 
+*qualifiedIndependentThickness*  
+A value described by *independentThickness*, with each independent value followed by one of the following unit specifiers: `px`, `in`.  
+ 
+`px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+ 
+`in` is inches; 1in==96px  
+ 
+For example, `"1.5in,0.8in,1.5in,0.8in"`.  Unit specifiers may be mixed or omitted from one or more values.  
+ 
 <a name="dependencyPropertyInfo_BorderThickness"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Block.BorderThicknessProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Documents.Block.BorderThickness%2A> attribute of a <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
-  
- [!code-xml[BlockSnippets#_Block_BordersXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_bordersxaml)]  
-  
- The following figure shows how the preceding example renders.  
-  
- ![Screenshot: Blue, 1&#47;4inch border around Block](~/add/media/block-borders.png "Screenshot: Blue, 1/4inch border around Block")  
-  
- The following example shows how to set the <xref:System.Windows.Documents.Block.BorderThickness%2A> property programmatically.  
-  
- [!code-csharp[BlockSnippets#_Block_Borders](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_borders)]
- [!code-vb[BlockSnippets#_Block_Borders](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_borders)]  
-  
+The following example shows how to set the <xref:System.Windows.Documents.Block.BorderThickness%2A> attribute of a <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
+ 
+[!code-xml[BlockSnippets#_Block_BordersXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_bordersxaml)]  
+ 
+The following figure shows how the preceding example renders.  
+ 
+![Screenshot: Blue, 1&#47;4inch border around Block](~/add/media/block-borders.png "Screenshot: Blue, 1/4inch border around Block")  
+ 
+The following example shows how to set the <xref:System.Windows.Documents.Block.BorderThickness%2A> property programmatically.  
+ 
+[!code-csharp[BlockSnippets#_Block_Borders](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_borders)]
+[!code-vb[BlockSnippets#_Block_Borders](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_borders)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,17 +225,17 @@
           <see langword="true" /> to automatically insert a column-break before this element; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_BreakColumnBefore"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Block.BreakColumnBeforeProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,17 +275,17 @@
           <see langword="true" /> to automatically insert a page-break before this element; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_BreakPageBefore"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Block.BreakColumnBeforeProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -324,18 +324,18 @@
         <value>One of the <see cref="T:System.Windows.WrapDirection" /> values that specifies the direction in which to separate any <see cref="T:System.Windows.Documents.Floater" /> elements from other content contained in the <see cref="T:System.Windows.Documents.Block" /> element. The default is <see cref="F:System.Windows.WrapDirection.None" />, which indicates that floaters should be rendered in place.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.Block.ClearFloaters%2A> property affects how content is laid out within a <xref:System.Windows.Documents.Block> and is intended to be used to prevent <xref:System.Windows.Documents.Floater> elements from congesting the contents of a <xref:System.Windows.Documents.Block> element.  Specifying a direction for this property causes floaters to be repositioned in a uniform direction within the <xref:System.Windows.Documents.Block> content.  Floaters are not repositioned outside of their parent <xref:System.Windows.Documents.Block>.  
-  
+The <xref:System.Windows.Documents.Block.ClearFloaters%2A> property affects how content is laid out within a <xref:System.Windows.Documents.Block> and is intended to be used to prevent <xref:System.Windows.Documents.Floater> elements from congesting the contents of a <xref:System.Windows.Documents.Block> element.  Specifying a direction for this property causes floaters to be repositioned in a uniform direction within the <xref:System.Windows.Documents.Block> content.  Floaters are not repositioned outside of their parent <xref:System.Windows.Documents.Block>.  
+ 
 <a name="dependencyPropertyInfo_ClearFloaters"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Block>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -374,35 +374,35 @@
         <value>One of the <see cref="T:System.Windows.FlowDirection" /> values that specifies the relative flow direction. The default is <see cref="F:System.Windows.FlowDirection.LeftToRight" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Getting this property returns the currently effective flow direction.  Setting this property causes the contents of the <xref:System.Windows.Documents.Block> element to re-flow in the indicated direction.  
-  
- The flow direction of content typically corresponds to the innate flow direction of the language being represented.  Hebrew and Arabic are examples of languages that naturally flow from right to left.  English, German, and Russian are examples of languages that naturally flow from left to right.  
-  
+Getting this property returns the currently effective flow direction.  Setting this property causes the contents of the <xref:System.Windows.Documents.Block> element to re-flow in the indicated direction.  
+ 
+The flow direction of content typically corresponds to the innate flow direction of the language being represented.  Hebrew and Arabic are examples of languages that naturally flow from right to left.  English, German, and Russian are examples of languages that naturally flow from left to right.  
+ 
 > [!NOTE]
 >  **The value of this property is not automatically changed to match the language used by the operating system. If you need to use a different value th**a**n the default of** <xref:System.Windows.FlowDirection>**, you must specify it yourself.**  
-  
+ 
 <a name="dependencyPropertyInfo_FlowDirection"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Block>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Documents.Block.FlowDirection%2A> attribute of a <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
-  
- [!code-xml[BlockSnippets#_Block_FlowDirectionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_flowdirectionxaml)]  
-  
- The following example shows how to set the <xref:System.Windows.Documents.Block.FlowDirection%2A> property programmatically.  
-  
- [!code-csharp[BlockSnippets#_Block_FlowDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_flowdirection)]
- [!code-vb[BlockSnippets#_Block_FlowDirection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_flowdirection)]  
-  
+The following example shows how to set the <xref:System.Windows.Documents.Block.FlowDirection%2A> attribute of a <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
+ 
+[!code-xml[BlockSnippets#_Block_FlowDirectionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_flowdirectionxaml)]  
+ 
+The following example shows how to set the <xref:System.Windows.Documents.Block.FlowDirection%2A> property programmatically.  
+ 
+[!code-csharp[BlockSnippets#_Block_FlowDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_flowdirection)]
+[!code-vb[BlockSnippets#_Block_FlowDirection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_flowdirection)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -543,38 +543,38 @@
           <see langword="true" /> if automatic breaking and hyphenation of words is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The automatic word hyphenation feature enables a <xref:System.Windows.Documents.Block> element to automatically break and hyphenate words, based on current layout conditions.  This enables long words to begin on one line and continue on this next, and tends to achieve a more even distribution of white space in justified text.  Words are broken and hyphenated according to standard grammar rules.  
-  
+The automatic word hyphenation feature enables a <xref:System.Windows.Documents.Block> element to automatically break and hyphenate words, based on current layout conditions.  This enables long words to begin on one line and continue on this next, and tends to achieve a more even distribution of white space in justified text.  Words are broken and hyphenated according to standard grammar rules.  
+ 
 <a name="dependencyPropertyInfo_IsHyphenationEnabled"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Block.IsHyphenationEnabledProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Documents.Block.IsHyphenationEnabled%2A> attribute of a <xref:System.Windows.Documents.Block> element.  
-  
- [!code-xml[BlockSnippets#_Block_HyphenateXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_hyphenatexaml)]  
-  
- The following figure shows how the preceding example renders.  
-  
- ![Screenshot: FlowDocument hyphen enabled](~/add/media/flowdoc-hyphenenabled.png "Screenshot: FlowDocument hyphen enabled")  
-  
- The following figure shows how the same example renders with the default setting of <xref:System.Windows.Documents.Block.IsHyphenationEnabled%2A>=`false`.  
-  
- ![Screenshot: FlowDocument with disabled hyphens](~/add/media/flowdoc-hyphendisabled.png "Screenshot: FlowDocument with disabled hyphens")  
-  
- The following example shows how to set the <xref:System.Windows.Documents.Block.IsHyphenationEnabled%2A> property programmatically.  
-  
- [!code-csharp[BlockSnippets#_Block_Hyphenate](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_hyphenate)]
- [!code-vb[BlockSnippets#_Block_Hyphenate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_hyphenate)]  
-  
+The following example shows how to set the <xref:System.Windows.Documents.Block.IsHyphenationEnabled%2A> attribute of a <xref:System.Windows.Documents.Block> element.  
+ 
+[!code-xml[BlockSnippets#_Block_HyphenateXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_hyphenatexaml)]  
+ 
+The following figure shows how the preceding example renders.  
+ 
+![Screenshot: FlowDocument hyphen enabled](~/add/media/flowdoc-hyphenenabled.png "Screenshot: FlowDocument hyphen enabled")  
+ 
+The following figure shows how the same example renders with the default setting of <xref:System.Windows.Documents.Block.IsHyphenationEnabled%2A>=`false`.  
+ 
+![Screenshot: FlowDocument with disabled hyphens](~/add/media/flowdoc-hyphendisabled.png "Screenshot: FlowDocument with disabled hyphens")  
+ 
+The following example shows how to set the <xref:System.Windows.Documents.Block.IsHyphenationEnabled%2A> property programmatically.  
+ 
+[!code-csharp[BlockSnippets#_Block_Hyphenate](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_hyphenate)]
+[!code-vb[BlockSnippets#_Block_Hyphenate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_hyphenate)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -618,17 +618,17 @@
         <value>The height of each line in device independent pixels, in the range of 0.0034 to 160000, or <see cref="F:System.Double.NaN" /> to determine the height automatically. The default is <see cref="F:System.Double.NaN" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A value of <xref:System.Double?displayProperty=fullName> (equivalent to an attribute value of `Auto`) indicates that the line height is determined automatically from the current font characteristics.  
-  
- Changing this value does not change the height of the associated text; rather, it changes the height of the line that contains the text. To change the size of the text, use the <xref:System.Windows.Documents.FlowDocument.FontSize%2A> property.  
-  
- In addition to this property, the layout of lines in a <xref:System.Windows.Documents.Block> is affected by its <xref:System.Windows.Documents.Block.LineStackingStrategy%2A> property.  
-  
+A value of <xref:System.Double?displayProperty=fullName> (equivalent to an attribute value of `Auto`) indicates that the line height is determined automatically from the current font characteristics.  
+ 
+Changing this value does not change the height of the associated text; rather, it changes the height of the line that contains the text. To change the size of the text, use the <xref:System.Windows.Documents.FlowDocument.FontSize%2A> property.  
+ 
+In addition to this property, the layout of lines in a <xref:System.Windows.Documents.Block> is affected by its <xref:System.Windows.Documents.Block.LineStackingStrategy%2A> property.  
+ 
 <a name="xamlAttributeUsage_LineHeight"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object LineHeight="double"/>  
 - or -  
@@ -636,56 +636,56 @@
 - or -  
 <object LineHeight="Auto"/>  
 ```  
-  
+ 
 <a name="xamlValues_LineHeight"></a>   
 ## XAML Values  
- *double*  
- <xref:System.Double>  
-  
- String representation of a <xref:System.Double> value equal to or greater than 0.0034 but equal to or less than 160000. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
-  
- *qualifiedDouble*  
- A *double* value as described above, (excepting `Auto`) followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- `cm` is centimeters; 1cm==(96/2.54) px  
-  
- `pt` is points; 1pt==(96/72) px  
-  
- Auto  
- Causes the line height is determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double.NaN?displayProperty=fullName>.  
-  
+*double*  
+<xref:System.Double>  
+ 
+String representation of a <xref:System.Double> value equal to or greater than 0.0034 but equal to or less than 160000. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ 
+*qualifiedDouble*  
+A *double* value as described above, (excepting `Auto`) followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
+ 
+`px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+ 
+`in` is inches; 1in==96px  
+ 
+`cm` is centimeters; 1cm==(96/2.54) px  
+ 
+`pt` is points; 1pt==(96/72) px  
+ 
+Auto  
+Causes the line height is determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double.NaN?displayProperty=fullName>.  
+ 
 <a name="dependencyPropertyInfo_LineHeight"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Block.LineHeightProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Documents.Block.LineHeight%2A> attribute of a <xref:System.Windows.Documents.Block> element.  
-  
- [!code-xml[BlockSnippets#_Block_LineHeightXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_lineheightxaml)]  
-  
- The following figure shows how the preceding example renders.  
-  
- ![Screenshot: FlowDocument LineHeight](~/add/media/flowdocument-lineheight.png "Screenshot: FlowDocument LineHeight")  
-  
- The following figure shows how the same <xref:System.Windows.Documents.FlowDocument> renders with the default setting of <xref:System.Windows.Documents.FlowDocument.LineHeight%2A>=<xref:System.Double.NaN?displayProperty=fullName>.  
-  
- ![Screenshot: FlowDocument LineHeight default](~/add/media/flowdocument-lineheightdefault.png "Screenshot: FlowDocument LineHeight default")  
-  
- The following example shows how to set the <xref:System.Windows.Documents.Block.LineHeight%2A> property programmatically.  
-  
- [!code-csharp[BlockSnippets#_Block_LineHeight](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_lineheight)]
- [!code-vb[BlockSnippets#_Block_LineHeight](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_lineheight)]  
-  
+The following example shows how to set the <xref:System.Windows.Documents.Block.LineHeight%2A> attribute of a <xref:System.Windows.Documents.Block> element.  
+ 
+[!code-xml[BlockSnippets#_Block_LineHeightXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_lineheightxaml)]  
+ 
+The following figure shows how the preceding example renders.  
+ 
+![Screenshot: FlowDocument LineHeight](~/add/media/flowdocument-lineheight.png "Screenshot: FlowDocument LineHeight")  
+ 
+The following figure shows how the same <xref:System.Windows.Documents.FlowDocument> renders with the default setting of <xref:System.Windows.Documents.FlowDocument.LineHeight%2A>=<xref:System.Double.NaN?displayProperty=fullName>.  
+ 
+![Screenshot: FlowDocument LineHeight default](~/add/media/flowdocument-lineheightdefault.png "Screenshot: FlowDocument LineHeight default")  
+ 
+The following example shows how to set the <xref:System.Windows.Documents.Block.LineHeight%2A> property programmatically.  
+ 
+[!code-csharp[BlockSnippets#_Block_LineHeight](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_lineheight)]
+[!code-vb[BlockSnippets#_Block_LineHeight](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_lineheight)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -726,29 +726,29 @@
         <value>One of the <see cref="T:System.Windows.LineStackingStrategy" /> values that specifies how a line box is determined for each line of text within the block-level flow content element. The default value is <see cref="F:System.Windows.LineStackingStrategy.MaxHeight" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is \<*object* <xref:System.Windows.Documents.Block.LineStackingStrategy%2A?displayProperty=fullName>="*value*".../>, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Documents.Block> derived class, and *value* is a string value of the <xref:System.Windows.LineStackingStrategy> enumeration. In code, the attached property usage is supported by the <xref:System.Windows.Documents.Block.GetLineStackingStrategy%2A> and <xref:System.Windows.Documents.Block.SetLineStackingStrategy%2A> methods. The attached property usage is not common.  
-  
+This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is \<*object* <xref:System.Windows.Documents.Block.LineStackingStrategy%2A?displayProperty=fullName>="*value*".../>, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Documents.Block> derived class, and *value* is a string value of the <xref:System.Windows.LineStackingStrategy> enumeration. In code, the attached property usage is supported by the <xref:System.Windows.Documents.Block.GetLineStackingStrategy%2A> and <xref:System.Windows.Documents.Block.SetLineStackingStrategy%2A> methods. The attached property usage is not common.  
+ 
 <a name="dependencyPropertyInfo_LineStackingStrategy"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Block.LineStackingStrategyProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> property to determine how the line boxes are created for text lines of a <xref:System.Windows.Controls.TextBlock>. The first <xref:System.Windows.Controls.TextBlock> has a <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> value of <xref:System.Windows.LineStackingStrategy> and the second <xref:System.Windows.Controls.TextBlock> has a value of <xref:System.Windows.LineStackingStrategy>.  
-  
- [!code-xml[FlowMiscSnippets_snip#LineStackingStrategyExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/linestackingstrategyexample.xaml#linestackingstrategyexamplewholepage)]  
-  
- The following illustration shows the result of the preceding code.  
-  
- ![Screenshot: Compare LineStackingStrategy values](~/add/media/flow-linestackingstrategy.gif "Screenshot: Compare LineStackingStrategy values")  
-  
+The following example shows how to use the <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> property to determine how the line boxes are created for text lines of a <xref:System.Windows.Controls.TextBlock>. The first <xref:System.Windows.Controls.TextBlock> has a <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> value of <xref:System.Windows.LineStackingStrategy> and the second <xref:System.Windows.Controls.TextBlock> has a value of <xref:System.Windows.LineStackingStrategy>.  
+ 
+[!code-xml[FlowMiscSnippets_snip#LineStackingStrategyExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/linestackingstrategyexample.xaml#linestackingstrategyexamplewholepage)]  
+ 
+The following illustration shows the result of the preceding code.  
+ 
+![Screenshot: Compare LineStackingStrategy values](~/add/media/flow-linestackingstrategy.gif "Screenshot: Compare LineStackingStrategy values")  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -787,13 +787,13 @@
         <value>A <see cref="T:System.Windows.Thickness" /> structure that specifies the amount of margin to apply, in device independent pixels. The default is a uniform thickness of zero (0.0).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Documents.Block.Margin%2A> is buffer space that falls outside an element's content area, between the edges of the element's content area and the edges of the parent element.  Contrast with <xref:System.Windows.Documents.Block.Padding%2A>, which is buffer space that falls inside an element's content area, between the element's content and the inner edge of the element.  
-  
+<xref:System.Windows.Documents.Block.Margin%2A> is buffer space that falls outside an element's content area, between the edges of the element's content area and the edges of the parent element.  Contrast with <xref:System.Windows.Documents.Block.Padding%2A>, which is buffer space that falls inside an element's content area, between the element's content and the inner edge of the element.  
+ 
 <a name="xamlAttributeUsage_Margin"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object Margin="uniformThickness"/>  
 - or -  
@@ -803,57 +803,57 @@
 - or -  
 <object Margin="qualifiedIndependentThickness"/>  
 ```  
-  
+ 
 <a name="xamlValues_Margin"></a>   
 ## XAML Values  
- *uniformThickness*  
- String representation of a single <xref:System.Double> value to apply uniformly to all four thickness dimensions.  For example, a value of `"10"` is equivalent to a value of `"10,10,10,10"`.  An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
-  
- *independentThickness*  
- String representation of four ordered <xref:System.Double> values corresponding to independent thickness dimensions for left, top, right, and bottom, in this order.  The four values must be separated with commas; spaces are not allowed.  For example, "5,10,15,20" results in 5 pixels of margin to the left of content, 10 pixels of margin above content, 15 pixels of margin to the right of content, and 20 pixels of margin below the content.  
-  
- *qualifiedUniformThickness*  
- A value described by *uniformThickness* followed by one of the following unit specifiers: `px`, `in`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- For example, `"1in"` provides uniform margin of 1 inch in all directions.  
-  
- *qualifiedIndependentThickness*  
- A value described by *independentThickness*, with each independent value followed by one of the following unit specifiers: `px`, `in`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- For example, `"1.5in,0.8in,1.5in,0.8in"`.  Unit specifiers may be mixed or omitted from one or more values.  
-  
+*uniformThickness*  
+String representation of a single <xref:System.Double> value to apply uniformly to all four thickness dimensions.  For example, a value of `"10"` is equivalent to a value of `"10,10,10,10"`.  An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ 
+*independentThickness*  
+String representation of four ordered <xref:System.Double> values corresponding to independent thickness dimensions for left, top, right, and bottom, in this order.  The four values must be separated with commas; spaces are not allowed.  For example, "5,10,15,20" results in 5 pixels of margin to the left of content, 10 pixels of margin above content, 15 pixels of margin to the right of content, and 20 pixels of margin below the content.  
+ 
+*qualifiedUniformThickness*  
+A value described by *uniformThickness* followed by one of the following unit specifiers: `px`, `in`.  
+ 
+`px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+ 
+`in` is inches; 1in==96px  
+ 
+For example, `"1in"` provides uniform margin of 1 inch in all directions.  
+ 
+*qualifiedIndependentThickness*  
+A value described by *independentThickness*, with each independent value followed by one of the following unit specifiers: `px`, `in`.  
+ 
+`px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+ 
+`in` is inches; 1in==96px  
+ 
+For example, `"1.5in,0.8in,1.5in,0.8in"`.  Unit specifiers may be mixed or omitted from one or more values.  
+ 
 <a name="dependencyPropertyInfo_Margin"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Block.MarginProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Documents.Block.Margin%2A> attribute of a <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
-  
- [!code-xml[BlockSnippets#_Block_MarginPaddingXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_marginpaddingxaml)]  
-  
- The following figure shows how the preceding example renders.  Exaggerated thicknesses and colors are used for illustration.  
-  
- ![Screenshot: Paragraphs with padding and margins](~/add/media/block-marginpadding.png "Screenshot: Paragraphs with padding and margins")  
-  
- The following example shows how to set the <xref:System.Windows.Documents.Block.Margin%2A> property programmatically.  
-  
- [!code-csharp[BlockSnippets#_Block_MarginPadding](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_marginpadding)]
- [!code-vb[BlockSnippets#_Block_MarginPadding](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_marginpadding)]  
-  
+The following example shows how to set the <xref:System.Windows.Documents.Block.Margin%2A> attribute of a <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
+ 
+[!code-xml[BlockSnippets#_Block_MarginPaddingXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_marginpaddingxaml)]  
+ 
+The following figure shows how the preceding example renders.  Exaggerated thicknesses and colors are used for illustration.  
+ 
+![Screenshot: Paragraphs with padding and margins](~/add/media/block-marginpadding.png "Screenshot: Paragraphs with padding and margins")  
+ 
+The following example shows how to set the <xref:System.Windows.Documents.Block.Margin%2A> property programmatically.  
+ 
+[!code-csharp[BlockSnippets#_Block_MarginPadding](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_marginpadding)]
+[!code-vb[BlockSnippets#_Block_MarginPadding](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_marginpadding)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -910,13 +910,13 @@
         <value>A <see cref="T:System.Windows.Thickness" /> structure that specifies the amount of padding to apply, in device independent pixels. The default is a uniform thickness of zero (0.0).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Documents.Block.Padding%2A> is buffer space that falls inside an element's content area, between the element's content and the inner edge of the element.  Contrast with <xref:System.Windows.Documents.Block.Margin%2A>, which is buffer space that falls outside an element's content area, between the edges of the element's content area and the edges of the parent element.  
-  
+<xref:System.Windows.Documents.Block.Padding%2A> is buffer space that falls inside an element's content area, between the element's content and the inner edge of the element.  Contrast with <xref:System.Windows.Documents.Block.Margin%2A>, which is buffer space that falls outside an element's content area, between the edges of the element's content area and the edges of the parent element.  
+ 
 <a name="xamlAttributeUsage_Padding"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object Padding="uniformThickness"/>  
 - or -  
@@ -926,57 +926,57 @@
 - or -  
 <object Padding="qualifiedIndependentThickness"/>  
 ```  
-  
+ 
 <a name="xamlValues_Padding"></a>   
 ## XAML Values  
- *uniformThickness*  
- String representation of a single <xref:System.Double> value to apply uniformly to all four thickness dimensions.  For example, a value of `"10"` is equivalent to a value of `"10,10,10,10"`.  An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
-  
- *independentThickness*  
- String representation of four ordered <xref:System.Double> values corresponding to independent thickness dimensions for left, top, right, and bottom, in this order.  The four values must be separated with commas; spaces are not allowed.  For example, "5,10,15,20" results in 5 pixels of padding to the left of content, 10 pixels of padding above content, 15 pixels of padding to the right of content, and 20 pixels of padding below the content.  
-  
- *qualifiedUniformThickness*  
- A value described by *uniformThickness* followed by one of the following unit specifiers: `px`, `in`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- For example, `"1in"` provides uniform padding of 1 inch in all directions.  
-  
- *qualifiedIndependentThickness*  
- A value described by *independentThickness*, with each independent value followed by one of the following unit specifiers: `px`, `in`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in==96px  
-  
- For example, `"1.5in,0.8in,1.5in,0.8in"`.  Unit specifiers may be mixed or omitted from one or more values.  
-  
+*uniformThickness*  
+String representation of a single <xref:System.Double> value to apply uniformly to all four thickness dimensions.  For example, a value of `"10"` is equivalent to a value of `"10,10,10,10"`.  An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ 
+*independentThickness*  
+String representation of four ordered <xref:System.Double> values corresponding to independent thickness dimensions for left, top, right, and bottom, in this order.  The four values must be separated with commas; spaces are not allowed.  For example, "5,10,15,20" results in 5 pixels of padding to the left of content, 10 pixels of padding above content, 15 pixels of padding to the right of content, and 20 pixels of padding below the content.  
+ 
+*qualifiedUniformThickness*  
+A value described by *uniformThickness* followed by one of the following unit specifiers: `px`, `in`.  
+ 
+`px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+ 
+`in` is inches; 1in==96px  
+ 
+For example, `"1in"` provides uniform padding of 1 inch in all directions.  
+ 
+*qualifiedIndependentThickness*  
+A value described by *independentThickness*, with each independent value followed by one of the following unit specifiers: `px`, `in`.  
+ 
+`px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+ 
+`in` is inches; 1in==96px  
+ 
+For example, `"1.5in,0.8in,1.5in,0.8in"`.  Unit specifiers may be mixed or omitted from one or more values.  
+ 
 <a name="dependencyPropertyInfo_Padding"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Block.PaddingProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Documents.Block.Padding%2A> attribute of a <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
-  
- [!code-xml[BlockSnippets#_Block_MarginPaddingXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_marginpaddingxaml)]  
-  
- The following figure shows how the preceding example renders.  Exaggerated thicknesses and colors are used for illustration.  
-  
- ![Screenshot: Paragraphs with padding and margins](~/add/media/block-marginpadding.png "Screenshot: Paragraphs with padding and margins")  
-  
- The following example shows how to set the <xref:System.Windows.Documents.Block.Padding%2A> property programmatically.  
-  
- [!code-csharp[BlockSnippets#_Block_MarginPadding](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_marginpadding)]
- [!code-vb[BlockSnippets#_Block_MarginPadding](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_marginpadding)]  
-  
+The following example shows how to set the <xref:System.Windows.Documents.Block.Padding%2A> attribute of a <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
+ 
+[!code-xml[BlockSnippets#_Block_MarginPaddingXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_marginpaddingxaml)]  
+ 
+The following figure shows how the preceding example renders.  Exaggerated thicknesses and colors are used for illustration.  
+ 
+![Screenshot: Paragraphs with padding and margins](~/add/media/block-marginpadding.png "Screenshot: Paragraphs with padding and margins")  
+ 
+The following example shows how to set the <xref:System.Windows.Documents.Block.Padding%2A> property programmatically.  
+ 
+[!code-csharp[BlockSnippets#_Block_MarginPadding](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_marginpadding)]
+[!code-vb[BlockSnippets#_Block_MarginPadding](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_marginpadding)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1115,10 +1115,10 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Documents.Block.TextAlignment" /> attached property for a specified dependency object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- <xref:System.Windows.Documents.Block.GetTextAlignment%2A>  
-  
+<xref:System.Windows.Documents.Block.GetTextAlignment%2A>  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1142,10 +1142,10 @@
         <value>A <see cref="T:System.Windows.Documents.BlockCollection" /> that contains the child <see cref="T:System.Windows.Documents.Block" /> elements that are directly hosted by the parent of the current <see cref="T:System.Windows.Documents.Block" /> element, or <see langword="null" /> if the current <see cref="T:System.Windows.Documents.Block" /> element has no parent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.BlockCollection> returned by this property includes the <xref:System.Windows.Documents.Block> element through which the collection is accessed; that is, the element that owns this property is considered to be its own sibling for the purposes of generating the collection of siblings.  
-  
+The <xref:System.Windows.Documents.BlockCollection> returned by this property includes the <xref:System.Windows.Documents.Block> element through which the collection is accessed; that is, the element that owns this property is considered to be its own sibling for the purposes of generating the collection of siblings.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1167,41 +1167,41 @@
         <value>One of the <see cref="T:System.Windows.TextAlignment" /> values that specifies the desired alignment. The default is <see cref="F:System.Windows.TextAlignment.Left" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_TextAlignment"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Block.TextAlignmentProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Documents.Block.TextAlignment%2A> attribute of a <xref:System.Windows.Documents.Block> element.  
-  
- [!code-xml[BlockSnippets#_Block_TextAlignmentXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_textalignmentxaml)]  
-  
- The following figure shows how the preceding example renders with <xref:System.Windows.TextAlignment> text alignment (the default).  
-  
- ![Screenshot: TextAlign property value of Left](~/add/media/flowdoc-textalign-left.png "Screenshot: TextAlign property value of Left")  
-  
- The following figure shows how the same example renders with <xref:System.Windows.TextAlignment> text alignment.  
-  
- ![Screenshot: TextAlign value of Right](~/add/media/flowdoc-textalign-right.png "Screenshot: TextAlign value of Right")  
-  
- The following figure shows how the same example renders with <xref:System.Windows.TextAlignment> text alignment.  
-  
- ![Screenshot: TextAlign property value of Center](~/add/media/flowdoc-textalign-center.png "Screenshot: TextAlign property value of Center")  
-  
- The following example shows how to set the <xref:System.Windows.Documents.Block.TextAlignment%2A> property programmatically.  
-  
- [!code-csharp[BlockSnippets#_Block_TextAlignment](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_textalignment)]
- [!code-vb[BlockSnippets#_Block_TextAlignment](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_textalignment)]  
-  
+The following example shows how to set the <xref:System.Windows.Documents.Block.TextAlignment%2A> attribute of a <xref:System.Windows.Documents.Block> element.  
+ 
+[!code-xml[BlockSnippets#_Block_TextAlignmentXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_textalignmentxaml)]  
+ 
+The following figure shows how the preceding example renders with <xref:System.Windows.TextAlignment> text alignment (the default).  
+ 
+![Screenshot: TextAlign property value of Left](~/add/media/flowdoc-textalign-left.png "Screenshot: TextAlign property value of Left")  
+ 
+The following figure shows how the same example renders with <xref:System.Windows.TextAlignment> text alignment.  
+ 
+![Screenshot: TextAlign value of Right](~/add/media/flowdoc-textalign-right.png "Screenshot: TextAlign value of Right")  
+ 
+The following figure shows how the same example renders with <xref:System.Windows.TextAlignment> text alignment.  
+ 
+![Screenshot: TextAlign property value of Center](~/add/media/flowdoc-textalign-center.png "Screenshot: TextAlign property value of Center")  
+ 
+The following example shows how to set the <xref:System.Windows.Documents.Block.TextAlignment%2A> property programmatically.  
+ 
+[!code-csharp[BlockSnippets#_Block_TextAlignment](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml.cs#_block_textalignment)]
+[!code-vb[BlockSnippets#_Block_TextAlignment](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BlockSnippets/visualbasic/window1.xaml.vb#_block_textalignment)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

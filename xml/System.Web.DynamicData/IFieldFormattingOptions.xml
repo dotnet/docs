@@ -86,10 +86,10 @@
           <see langword="true" /> if the data for the control is HTML-encoded before it is rendered; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- HTML-encoding field values helps prevent cross-site scripting attacks and malicious content from being rendered to the browser. This property should be enabled unless you trust the content or have checked for malicious content in another way.  
-  
+HTML-encoding field values helps prevent cross-site scripting attacks and malicious content from being rendered to the browser. This property should be enabled unless you trust the content or have checked for malicious content in another way.  
+ 
  ]]></format>
         </remarks>
       </Docs>

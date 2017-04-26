@@ -19,19 +19,19 @@
     <summary>Represents the data sent when an event is raised using the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> activity.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+ 
+A local communication interface marked with <xref:System.Workflow.Activities.ExternalDataExchangeAttribute> must declare a type that derives from <xref:System.Workflow.Activities.ExternalDataEventArgs> in the interface definition for the corresponding event to be handled in a workflow with a <xref:System.Workflow.Activities.HandleExternalEventActivity> activity.  
+ 
   
- A local communication interface marked with <xref:System.Workflow.Activities.ExternalDataExchangeAttribute> must declare a type that derives from <xref:System.Workflow.Activities.ExternalDataEventArgs> in the interface definition for the corresponding event to be handled in a workflow with a <xref:System.Workflow.Activities.HandleExternalEventActivity> activity.  
-  
-   
-  
+ 
 ## Examples  
- An event class that inherits from <xref:System.Workflow.Activities.ExternalDataEventArgs> must implement a constructor that uses the `:base(instanceId)` constructor. In addition, the new event class must be marked as `Serializable` as shown in the following code.  
-  
+An event class that inherits from <xref:System.Workflow.Activities.ExternalDataEventArgs> must implement a constructor that uses the `:base(instanceId)` constructor. In addition, the new event class must be marked as `Serializable` as shown in the following code.  
+ 
 ```csharp  
 [Serializable]  
 public class TaskEventArgs : ExternalDataEventArgs  
@@ -51,7 +51,7 @@ public class TaskEventArgs : ExternalDataEventArgs
     }  
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -152,14 +152,14 @@ public class TaskEventArgs : ExternalDataEventArgs
         <value>The identity of the user that is raising the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is evaluated by the <xref:System.Workflow.Activities.HandleExternalEventActivity> activity. If the value that is set in the <xref:System.Workflow.Activities.HandleExternalEventActivity.Roles%2A> property of this activity does not match any of the roles associated with the user identity, the activity is not allowed to execute.  
-  
- The entity that raises the event can be a person or a computer.  
-  
- Identity is used by the Roles functionality to ensure that this identity is allowed to submit data to this workflow.  
-  
+This property is evaluated by the <xref:System.Workflow.Activities.HandleExternalEventActivity> activity. If the value that is set in the <xref:System.Workflow.Activities.HandleExternalEventActivity.Roles%2A> property of this activity does not match any of the roles associated with the user identity, the activity is not allowed to execute.  
+ 
+The entity that raises the event can be a person or a computer.  
+ 
+Identity is used by the Roles functionality to ensure that this identity is allowed to submit data to this workflow.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,10 +181,10 @@ public class TaskEventArgs : ExternalDataEventArgs
         <value>The workflow instance identifier for the workflow instance that contains the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> that is expected to handle the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a required property.  
-  
+This is a required property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -207,12 +207,12 @@ public class TaskEventArgs : ExternalDataEventArgs
           <see langword="true" /> if the workflow should go idle before raising the event; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `false`.  
-  
- A value of `true` indicates that data was submitted to the workflow using <xref:System.Workflow.Runtime.WorkflowInstance.EnqueueItemOnIdle%2A>. A value of `false` indicates that data was submitted to the workflow using <xref:System.Workflow.Runtime.WorkflowInstance.EnqueueItem%2A>.  
-  
+The default value is `false`.  
+ 
+A value of `true` indicates that data was submitted to the workflow using <xref:System.Workflow.Runtime.WorkflowInstance.EnqueueItemOnIdle%2A>. A value of `false` indicates that data was submitted to the workflow using <xref:System.Workflow.Runtime.WorkflowInstance.EnqueueItem%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -262,13 +262,13 @@ public class TaskEventArgs : ExternalDataEventArgs
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ExternalDataEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to call the base <xref:System.Workflow.Activities.ExternalDataEventArgs> constructor from a derived class' constructor. This example is from the Ordering State Machine SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
-  
- [!code-csharp[wf_samples#121](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#121)]
- [!code-vb[wf_samples#121](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#121)]  
-  
+The following example shows how to call the base <xref:System.Workflow.Activities.ExternalDataEventArgs> constructor from a derived class' constructor. This example is from the Ordering State Machine SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
+ 
+[!code-csharp[wf_samples#121](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#121)]
+[!code-vb[wf_samples#121](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#121)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,19 +14,19 @@
     <summary>Converts a <see cref="T:System.Drawing.Point" /> object from one data type to another.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.PointConverter> class is typically used for creating a design-time experience for controls that have properties that are of type <xref:System.Drawing.GraphicsUnit>, and is used to convert points to strings for display in a designer and to convert strings entered in a designer to a <xref:System.Drawing.GraphicsUnit> object. Access this class through the <xref:System.ComponentModel.TypeDescriptor> object.  
+The <xref:System.Drawing.PointConverter> class is typically used for creating a design-time experience for controls that have properties that are of type <xref:System.Drawing.GraphicsUnit>, and is used to convert points to strings for display in a designer and to convert strings entered in a designer to a <xref:System.Drawing.GraphicsUnit> object. Access this class through the <xref:System.ComponentModel.TypeDescriptor> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.PointConverter> and the <xref:System.Drawing.Point.op_Subtraction%2A> operator. This example is designed to be used with Windows Forms. Paste this code into a form and call the `ShowPointConverter` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs> .  
-  
- [!code-cpp[System.Drawing.Converters#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Converters/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.Converters#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Converters/CS/form1.cs#1)]
- [!code-vb[System.Drawing.Converters#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Converters/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.PointConverter> and the <xref:System.Drawing.Point.op_Subtraction%2A> operator. This example is designed to be used with Windows Forms. Paste this code into a form and call the `ShowPointConverter` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs> .  
+ 
+[!code-cpp[System.Drawing.Converters#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Converters/CPP/form1.cpp#1)]
+[!code-csharp[System.Drawing.Converters#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Converters/CS/form1.cs#1)]
+[!code-vb[System.Drawing.Converters#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Converters/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -95,10 +95,10 @@
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to get additional information about the environment this converter is being called from. This can be `null`, so you should always check. Also, properties on the context object can also return `null`.  
-  
+The `context` parameter can be used to get additional information about the environment this converter is being called from. This can be `null`, so you should always check. Also, properties on the context object can also return `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -157,10 +157,10 @@
         <returns>The converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The most common types to convert are to and from a string object. The default implementation calls the object's <xref:System.Object.ToString%2A> method if the object is valid and if the destination type is string. If this method cannot convert to the destination type, this will throw a <xref:System.NotSupportedException> exception.  
-  
+The most common types to convert are to and from a string object. The default implementation calls the object's <xref:System.Object.ToString%2A> method if the object is valid and if the destination type is string. If this method cannot convert to the destination type, this will throw a <xref:System.NotSupportedException> exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be completed.</exception>
@@ -189,10 +189,10 @@
         <returns>The newly created object, or <see langword="null" /> if the object could not be created. The default implementation returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Drawing.PointConverter.CreateInstance%2A> is useful for objects that are immutable but still want to provide changeable properties.  
-  
+<xref:System.Drawing.PointConverter.CreateInstance%2A> is useful for objects that are immutable but still want to provide changeable properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -245,10 +245,10 @@
         <returns>The set of properties that are exposed for this data type. If no properties are exposed, this method might return <see langword="null" />. The default implementation always returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A simple implementation of this method can just call <xref:System.ComponentModel.TypeDescriptor.GetProperties%2A> for the correct data type.  
-  
+A simple implementation of this method can just call <xref:System.ComponentModel.TypeDescriptor.GetProperties%2A> for the correct data type.  
+ 
  ]]></format>
         </remarks>
       </Docs>

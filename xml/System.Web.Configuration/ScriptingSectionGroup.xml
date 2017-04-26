@@ -14,10 +14,10 @@
     <summary>Represents the configuration section for scripting settings. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.Configuration.ScriptingSectionGroup> class to programmatically set and retrieve the values of the `scripting` section of the configuration file.  
-  
+Use the <xref:System.Web.Configuration.ScriptingSectionGroup> class to programmatically set and retrieve the values of the `scripting` section of the configuration file.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <value>A <see cref="T:System.Web.Configuration.ScriptingScriptResourceHandlerSection" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `ScriptingScriptResourceHandler` configuration section to set whether script files that are embedded as resources are compressed and cached. You can enable or disable compression and caching by using the <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCompression%2A> and <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCaching%2A> properties.  
-  
+Use the `ScriptingScriptResourceHandler` configuration section to set whether script files that are embedded as resources are compressed and cached. You can enable or disable compression and caching by using the <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCompression%2A> and <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCaching%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>

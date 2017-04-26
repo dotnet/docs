@@ -19,23 +19,23 @@
     <summary>Represents the <see langword="attributeGroup" /> element from the XML Schema as specified by the World Wide Web Consortium (W3C). AttributesGroups provides a mechanism to group a set of attribute declarations so that they can be incorporated as a group into complex type definitions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An attribute group can be defined only as a child of the `schema` element. In this case, the `name` attribute must be present and contain the `attribute`, `attributeGroup`, or `anyAttribute` elements that make up the attribute group. When a `complexType` or an `attributeGroup` element includes an attribute group, the `ref` attribute must be present and the `name` attribute is not allowed.  
+An attribute group can be defined only as a child of the `schema` element. In this case, the `name` attribute must be present and contain the `attribute`, `attributeGroup`, or `anyAttribute` elements that make up the attribute group. When a `complexType` or an `attributeGroup` element includes an attribute group, the `ref` attribute must be present and the `name` attribute is not allowed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates the `attributeGroup` element.  
-  
- [!code-cpp[Classic WebData XmlSchemaAttributeGroup Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaAttributeGroup Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlSchemaAttributeGroup Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaAttributeGroup Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlSchemaAttributeGroup Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaAttributeGroup Example/VB/source.vb#1)]  
-  
- The following XML file is generated for the preceding code example.  
-  
- [!code-xml[Classic WebData XmlSchemaAttributeGroup Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaAttributeGroup Example/XML/source.xml#2)]  
-  
+The following example creates the `attributeGroup` element.  
+ 
+[!code-cpp[Classic WebData XmlSchemaAttributeGroup Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaAttributeGroup Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlSchemaAttributeGroup Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaAttributeGroup Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlSchemaAttributeGroup Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaAttributeGroup Example/VB/source.vb#1)]  
+ 
+The following XML file is generated for the preceding code example.  
+ 
+[!code-xml[Classic WebData XmlSchemaAttributeGroup Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaAttributeGroup Example/XML/source.xml#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -146,10 +146,10 @@
         <value>The name of the attribute group.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name must be an NCName (no-colon name) as defined in the W3C XML Namespaces specification. When a `complexType` or `attributeGroup` element includes an attribute group, the name of the `attributeGroup` element is used for the `ref` attribute. This value must be an NCName.  
-  
+The name must be an NCName (no-colon name) as defined in the W3C XML Namespaces specification. When a `complexType` or `attributeGroup` element includes an attribute group, the name of the `attributeGroup` element is used for the `ref` attribute. This value must be an NCName.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,21 +19,21 @@
     <summary>Wraps an exception that does not derive from the <see cref="T:System.Exception" /> class. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some languages, such as C++, allow you to throw exceptions of any managed type.  Other languages, such as Microsoft C# and Visual Basic, require that every thrown exception be derived from the <xref:System.Exception> class.  To maintain compatibility between languages, the common language runtime (CLR) wraps objects that do not derive from <xref:System.Exception> in a <xref:System.Runtime.CompilerServices.RuntimeWrappedException> object.  
+Some languages, such as C++, allow you to throw exceptions of any managed type.  Other languages, such as Microsoft C# and Visual Basic, require that every thrown exception be derived from the <xref:System.Exception> class.  To maintain compatibility between languages, the common language runtime (CLR) wraps objects that do not derive from <xref:System.Exception> in a <xref:System.Runtime.CompilerServices.RuntimeWrappedException> object.  
+ 
+You can use the <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> class to specify whether exceptions should appear wrapped inside catch blocks and exception filters for an assembly.  Many language compilers, including the Microsoft C# and Visual Basic compilers, apply this attribute by default to specify the wrapping behavior.  
+ 
+Note that the runtime still wraps exceptions even if you use the <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> class to specify that you do not want them wrapped.  In this case, exceptions are unwrapped only inside catch blocks or exception filters.  
+ 
   
- You can use the <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> class to specify whether exceptions should appear wrapped inside catch blocks and exception filters for an assembly.  Many language compilers, including the Microsoft C# and Visual Basic compilers, apply this attribute by default to specify the wrapping behavior.  
-  
- Note that the runtime still wraps exceptions even if you use the <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> class to specify that you do not want them wrapped.  In this case, exceptions are unwrapped only inside catch blocks or exception filters.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to throw a <xref:System.String> object as an exception in C++ and catch it using a <xref:System.Runtime.CompilerServices.RuntimeWrappedException> object.  
-  
- [!code-cpp[System.Runtime.CompilerServices.RuntimeWrappedException#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Runtime.CompilerServices.RuntimeWrappedException/cpp/sample.cpp#1)]  
-  
+The following code example demonstrates how to throw a <xref:System.String> object as an exception in C++ and catch it using a <xref:System.Runtime.CompilerServices.RuntimeWrappedException> object.  
+ 
+[!code-cpp[System.Runtime.CompilerServices.RuntimeWrappedException#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Runtime.CompilerServices.RuntimeWrappedException/cpp/sample.cpp#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with information about the exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.CompilerServices.RuntimeWrappedException.GetObjectData%2A> method sets a <xref:System.Runtime.Serialization.SerializationInfo> object with all the exception object data targeted for serialization. During deserialization, the exception is reconstituted from the `SerializationInfo` transmitted over the stream.  
-  
+The <xref:System.Runtime.CompilerServices.RuntimeWrappedException.GetObjectData%2A> method sets a <xref:System.Runtime.Serialization.SerializationInfo> object with all the exception object data targeted for serialization. During deserialization, the exception is reconstituted from the `SerializationInfo` transmitted over the stream.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
@@ -102,10 +102,10 @@
         <value>The object that was wrapped by the <see cref="T:System.Runtime.CompilerServices.RuntimeWrappedException" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.CompilerServices.RuntimeWrappedException.WrappedException%2A> property gets an object that was thrown as an exception from a language that allows exceptions that do not derive from the <xref:System.Exception> class.  
-  
+The <xref:System.Runtime.CompilerServices.RuntimeWrappedException.WrappedException%2A> property gets an object that was thrown as an exception from a language that allows exceptions that do not derive from the <xref:System.Exception> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

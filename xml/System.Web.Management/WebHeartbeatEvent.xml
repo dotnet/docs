@@ -14,23 +14,23 @@
     <summary>Defines those health-monitoring events raised at a periodic interval.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
-  
- The heartbeat health-monitoring events serve as a timer for the ASP.NET health-monitoring system. They are raised at an interval defined by the `heartBeatInterval` attribute of the `healthMonitoring` configuration section. The <xref:System.Web.Management.WebHeartbeatEvent> uses the <xref:System.Web.Management.WebProcessStatistics> class to obtain process information.  
-  
+ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+ 
+The heartbeat health-monitoring events serve as a timer for the ASP.NET health-monitoring system. They are raised at an interval defined by the `heartBeatInterval` attribute of the `healthMonitoring` configuration section. The <xref:System.Web.Management.WebHeartbeatEvent> uses the <xref:System.Web.Management.WebProcessStatistics> class to obtain process information.  
+ 
 > [!NOTE]
 >  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `healthMonitoring` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following configuration file excerpt shows the configuration for the <xref:System.Web.Management.EventLogWebEventProvider> so it can handle heartbeat health events.  
-  
+The following configuration file excerpt shows the configuration for the <xref:System.Web.Management.EventLogWebEventProvider> so it can handle heartbeat health events.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.Management.EventLogWebEventProvider> and the heartbeat health event types to monitor are configured by default. The only thing you need to do is to define the rule to monitor the heartbeat health events. Remember that by default only the failure audits are logged.  
-  
+ 
 ```  
 <healthMonitoring   
   enabled="true" heartbeatInterval="100">  
@@ -43,7 +43,7 @@
   </rules>  
 </healthMonitoring>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

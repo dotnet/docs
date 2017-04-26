@@ -14,10 +14,10 @@
     <summary>Provides a set of properties, such as flow direction, alignment, or indentation, that can be applied to a paragraph. This is an abstract class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To create a text layout application that uses the services of the <xref:System.Windows.Media.TextFormatting.TextFormatter> object, you must create a derived class that implements the methods of the <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> abstract class.  
-  
+To create a text layout application that uses the services of the <xref:System.Windows.Media.TextFormatting.TextFormatter> object, you must create a derived class that implements the methods of the <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> abstract class.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -15,10 +15,10 @@
     <summary>Represents an extensibility element added to an XML Web service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a derived class, the `ServiceDescriptionFormatExtension` class allows users to define extensibility elements in addition to those defined in the Web Services Description Language (WSDL) specification. Extensibility elements can be added to a <xref:System.Web.Services.Description.ServiceDescription> at any of several levels within the class hierarchy. Thus many classes derived from the <xref:System.Web.Services.Description.DocumentableItem> class (including the <xref:System.Web.Services.Description.ServiceDescription> class) have an `Extensions` property, which returns a <xref:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection>.  
-  
+In a derived class, the `ServiceDescriptionFormatExtension` class allows users to define extensibility elements in addition to those defined in the Web Services Description Language (WSDL) specification. Extensibility elements can be added to a <xref:System.Web.Services.Description.ServiceDescription> at any of several levels within the class hierarchy. Thus many classes derived from the <xref:System.Web.Services.Description.DocumentableItem> class (including the <xref:System.Web.Services.Description.ServiceDescription> class) have an `Extensions` property, which returns a <xref:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,10 +63,10 @@
           <see langword="true" /> if the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtension" /> is used by the import process; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A derived class, representing an extensibility element added to an XML Web service, can be attached to a <xref:System.Web.Services.Description.ServiceDescription> by using the <xref:System.Web.Services.Description.ServiceDescriptionImporter.Import%2A> method (which is used by the wsdl.exe tool). You can also use a custom class derived from the <xref:System.Web.Services.Description.SoapExtensionImporter> class to extend the import process to handle custom extensibility elements.  
-  
+A derived class, representing an extensibility element added to an XML Web service, can be attached to a <xref:System.Web.Services.Description.ServiceDescription> by using the <xref:System.Web.Services.Description.ServiceDescriptionImporter.Import%2A> method (which is used by the wsdl.exe tool). You can also use a custom class derived from the <xref:System.Web.Services.Description.SoapExtensionImporter> class to extend the import process to handle custom extensibility elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <value>The parent of the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtension" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When overridden in a derived class, the class returned by this property will be a derived class within the <xref:System.Web.Services.Description> namespace rather than the base <xref:System.Object> class.  
-  
+When overridden in a derived class, the class returned by this property will be a derived class within the <xref:System.Web.Services.Description> namespace rather than the base <xref:System.Object> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

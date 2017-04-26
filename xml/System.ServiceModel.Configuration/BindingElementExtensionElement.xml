@@ -14,12 +14,12 @@
     <summary>Enables the use of a custom <see cref="T:System.ServiceModel.Channels.BindingElement" /> implementation from a machine or application configuration file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should derive from the <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> class to use a custom <xref:System.ServiceModel.Channels.BindingElement> implementation from a machine or application configuration file.  
-  
- Once a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> instance has been created, a custom binding element is returned. You can use this in an application configuration file by using the <`add`> element and setting the type attribute to the <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> class, and the name attribute to the custom binding element.  
-  
+You should derive from the <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> class to use a custom <xref:System.ServiceModel.Channels.BindingElement> implementation from a machine or application configuration file.  
+ 
+Once a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> instance has been created, a custom binding element is returned. You can use this in an application configuration file by using the <`add`> element and setting the type attribute to the <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> class, and the name attribute to the custom binding element.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,10 +79,10 @@
         <value>A <see cref="T:System.Type" /> object that represents the custom binding type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override and implement the <xref:System.ServiceModel.Configuration.BindingElementExtensionElement.BindingElementType%2A> property to return the type of the custom binding element this <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> associates with the configuration system.  
-  
+Override and implement the <xref:System.ServiceModel.Configuration.BindingElementExtensionElement.BindingElementType%2A> property to return the type of the custom binding element this <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> associates with the configuration system.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,17 +19,17 @@
     <summary>Abstract class that describes a [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] drawing. This class cannot be inherited by your code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Drawing> objects are light-weight objects that enable you to add geometric shapes, images, text, and media to an application. <xref:System.Windows.Media.Drawing> objects are considered light-weight because they do not provide support for [Layout](~/docs/framework/wpf/advanced/layout.md), [Input Overview](~/docs/framework/wpf/advanced/input-overview.md), and focus. Because of their performance benefits, drawings are ideal for backgrounds and clip art. You also use drawings when programming at the <xref:System.Windows.Media.Visual> level.  
-  
- Because they inherit from the <xref:System.Windows.Freezable> class, <xref:System.Windows.Media.Drawing> objects  provide additional features that make them useful for describing clip art and backgrounds: they can be declared as , shared among multiple objects, made read-only, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
-  
- There are different types of <xref:System.Windows.Media.Drawing> objects for different types of content: <xref:System.Windows.Media.GeometryDrawing>, <xref:System.Windows.Media.ImageDrawing>,  <xref:System.Windows.Media.DrawingGroup>,  <xref:System.Windows.Media.VideoDrawing>, and  <xref:System.Windows.Media.GlyphRunDrawing>.  
-  
+<xref:System.Windows.Media.Drawing> objects are light-weight objects that enable you to add geometric shapes, images, text, and media to an application. <xref:System.Windows.Media.Drawing> objects are considered light-weight because they do not provide support for [Layout](~/docs/framework/wpf/advanced/layout.md), [Input Overview](~/docs/framework/wpf/advanced/input-overview.md), and focus. Because of their performance benefits, drawings are ideal for backgrounds and clip art. You also use drawings when programming at the <xref:System.Windows.Media.Visual> level.  
+ 
+Because they inherit from the <xref:System.Windows.Freezable> class, <xref:System.Windows.Media.Drawing> objects  provide additional features that make them useful for describing clip art and backgrounds: they can be declared as , shared among multiple objects, made read-only, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ 
+There are different types of <xref:System.Windows.Media.Drawing> objects for different types of content: <xref:System.Windows.Media.GeometryDrawing>, <xref:System.Windows.Media.ImageDrawing>,  <xref:System.Windows.Media.DrawingGroup>,  <xref:System.Windows.Media.VideoDrawing>, and  <xref:System.Windows.Media.GlyphRunDrawing>.  
+ 
 ## Freezable Features  
- A <xref:System.Windows.Media.Drawing> is a type of <xref:System.Windows.Freezable> object. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
-  
+A <xref:System.Windows.Media.Drawing> is a type of <xref:System.Windows.Freezable> object. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,12 +70,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,12 +98,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

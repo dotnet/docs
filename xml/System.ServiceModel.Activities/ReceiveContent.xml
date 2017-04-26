@@ -14,12 +14,12 @@
     <summary>An abstract base class for classes that represent the data received by a workflow service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.ServiceModel.Activities.ReceiveContent> class to specify the content for a <xref:System.ServiceModel.Activities.Receive> activity.  
-  
- [!code-csharp[ContentBasedCorrelation#3](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/client.cs#3)]  
-  
+The following example shows how to use the <xref:System.ServiceModel.Activities.ReceiveContent> class to specify the content for a <xref:System.ServiceModel.Activities.Receive> activity.  
+ 
+[!code-csharp[ContentBasedCorrelation#3](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/client.cs#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,12 +45,12 @@
         <returns>A <see cref="T:System.ServiceModel.Activities.ReceiveMessageContent" />instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.ServiceModel.Activities.ReceiveContent.Create%2A> method to specify the content for a <xref:System.ServiceModel.Activities.Receive> activity.  
-  
- [!code-csharp[ContentBasedCorrelation#3](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/client.cs#3)]  
-  
+The following example shows how to use the <xref:System.ServiceModel.Activities.ReceiveContent.Create%2A> method to specify the content for a <xref:System.ServiceModel.Activities.Receive> activity.  
+ 
+[!code-csharp[ContentBasedCorrelation#3](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/client.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

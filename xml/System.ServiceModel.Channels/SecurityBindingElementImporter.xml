@@ -51,10 +51,10 @@
         <value>The maximum allowed number of policy redirections.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This quota is useful when importing security policy that involves an issued token. The issued token policy may contain a link to the issuing party's policy, which may itself involve an issued token. So importing the security policy for a service that requires issued token authentication may involve importing policy from the token-issuing services. Services that are incorrectly configured could result in a cycle in these policy redirections. This setting prevents the client from getting into an infinite loop due to incorrectly configured services by limiting the maximum number of redirections (10) that the client's policy import does when obtaining issued token policy.  
-  
+This quota is useful when importing security policy that involves an issued token. The issued token policy may contain a link to the issuing party's policy, which may itself involve an issued token. So importing the security policy for a service that requires issued token authentication may involve importing policy from the token-issuing services. Services that are incorrectly configured could result in a cycle in these policy redirections. This setting prevents the client from getting into an infinite loop due to incorrectly configured services by limiting the maximum number of redirections (10) that the client's policy import does when obtaining issued token policy.  
+ 
  ]]></format>
         </remarks>
       </Docs>

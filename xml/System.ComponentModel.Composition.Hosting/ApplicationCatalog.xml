@@ -19,12 +19,12 @@
     <summary>Discovers attributed parts in the dynamic link library (DLL) and EXE files in an application's directory and path.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -191,10 +191,10 @@
         <value>A string that contains a human-readable display name of the <see cref="T:System.ComponentModel.Composition.Hosting.DirectoryCatalog" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Hosting.ApplicationCatalog> instance is cast to an <xref:System.ComponentModel.Composition.Primitives.ICompositionElement> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Hosting.ApplicationCatalog> instance is cast to an <xref:System.ComponentModel.Composition.Primitives.ICompositionElement> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -217,10 +217,10 @@
         <value>Always <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Hosting.ApplicationCatalog> instance is cast to an <xref:System.ComponentModel.Composition.Primitives.ICompositionElement> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Hosting.ApplicationCatalog> instance is cast to an <xref:System.ComponentModel.Composition.Primitives.ICompositionElement> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

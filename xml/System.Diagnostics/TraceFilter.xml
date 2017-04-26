@@ -23,12 +23,12 @@
     <summary>Provides the base class for trace filter implementations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Trace filters can be used by trace listeners to provide an extra layer of filtering beyond that provided by trace switches. The trace filter for a trace listener can be found in the listener's <xref:System.Diagnostics.TraceListener.Filter%2A> property. Trace switches determine if a trace is to be sent to the trace listeners. Trace filters allow the individual trace listeners to determine whether or not the trace is to be written to the associated output medium. For example, as determined by each trace filter, a trace may be written to the console by a <xref:System.Diagnostics.ConsoleTraceListener>, but not to the event log by a <xref:System.Diagnostics.EventLogTraceListener>.  
-  
- Filters that inherit from the <xref:System.Diagnostics.TraceFilter> class can be used by trace listeners that inherit from the <xref:System.Diagnostics.TraceListener> class to perform filtering of events being traced. <xref:System.Diagnostics.TraceFilter> contains a single method, <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A>, which takes event data and returns a flag indicating whether the event should be traced.  
-  
+Trace filters can be used by trace listeners to provide an extra layer of filtering beyond that provided by trace switches. The trace filter for a trace listener can be found in the listener's <xref:System.Diagnostics.TraceListener.Filter%2A> property. Trace switches determine if a trace is to be sent to the trace listeners. Trace filters allow the individual trace listeners to determine whether or not the trace is to be written to the associated output medium. For example, as determined by each trace filter, a trace may be written to the console by a <xref:System.Diagnostics.ConsoleTraceListener>, but not to the event log by a <xref:System.Diagnostics.EventLogTraceListener>.  
+ 
+Filters that inherit from the <xref:System.Diagnostics.TraceFilter> class can be used by trace listeners that inherit from the <xref:System.Diagnostics.TraceListener> class to perform filtering of events being traced. <xref:System.Diagnostics.TraceFilter> contains a single method, <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A>, which takes event data and returns a flag indicating whether the event should be traced.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -102,14 +102,14 @@
           <see langword="true" /> to trace the specified event; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to override the <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A> method to indicate tracing should occur when the trace event type of the event is equal to <xref:System.Diagnostics.TraceEventType?displayProperty=fullName>.  
-  
- [!code-cpp[System.Diagnostics.TraceFilter#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.diagnostics.tracefilter/cpp/source.cpp#2)]
- [!code-csharp[System.Diagnostics.TraceFilter#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.diagnostics.tracefilter/cs/source.cs#2)]
- [!code-vb[System.Diagnostics.TraceFilter#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.diagnostics.tracefilter/vb/source.vb#2)]  
-  
+The following code example shows how to override the <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A> method to indicate tracing should occur when the trace event type of the event is equal to <xref:System.Diagnostics.TraceEventType?displayProperty=fullName>.  
+ 
+[!code-cpp[System.Diagnostics.TraceFilter#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.diagnostics.tracefilter/cpp/source.cpp#2)]
+[!code-csharp[System.Diagnostics.TraceFilter#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.diagnostics.tracefilter/cs/source.cs#2)]
+[!code-vb[System.Diagnostics.TraceFilter#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.diagnostics.tracefilter/vb/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

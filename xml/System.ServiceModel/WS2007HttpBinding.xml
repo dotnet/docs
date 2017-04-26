@@ -14,10 +14,10 @@
     <summary>Represents an interoperable binding that derives from <see cref="T:System.ServiceModel.WSHttpBinding" /> and provides support for the updated versions of the <see cref="P:System.ServiceModel.WSHttpBinding.Security" />, <see cref="T:System.ServiceModel.ReliableSession" />, and <see cref="P:System.ServiceModel.WSHttpBindingBase.TransactionFlow" /> binding elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.WS2007HttpBinding> class adds a system-provided binding similar to <xref:System.ServiceModel.WSHttpBinding> but uses the Organization for the Advancement of Structured Information Standards (OASIS) standard versions of the <xref:System.ServiceModel.ReliableSession>, <xref:System.ServiceModel.WSHttpBinding.Security%2A>, and <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> protocols. No changes to the object model or default settings are required when using this binding.  
-  
+The <xref:System.ServiceModel.WS2007HttpBinding> class adds a system-provided binding similar to <xref:System.ServiceModel.WSHttpBinding> but uses the Organization for the Advancement of Structured Information Standards (OASIS) standard versions of the <xref:System.ServiceModel.ReliableSession>, <xref:System.ServiceModel.WSHttpBinding.Security%2A>, and <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> protocols. No changes to the object model or default settings are required when using this binding.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,15 +36,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WS2007HttpBinding" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes an instance of the <xref:System.ServiceModel.WS2007HttpBinding> class and sets the <xref:System.ServiceModel.MessageSecurityVersion>, <xref:System.ServiceModel.ReliableMessagingVersion>, and <xref:System.ServiceModel.TransactionProtocol> properties that specify the WS-Security 1.1, WS-Trust 1.3, WS-SecureConversation 1.3, WS-SecurityPolicy 1.2, and WS-I Basic Security Profile 1.0 security protocols.  
+This constructor initializes an instance of the <xref:System.ServiceModel.WS2007HttpBinding> class and sets the <xref:System.ServiceModel.MessageSecurityVersion>, <xref:System.ServiceModel.ReliableMessagingVersion>, and <xref:System.ServiceModel.TransactionProtocol> properties that specify the WS-Security 1.1, WS-Trust 1.3, WS-SecureConversation 1.3, WS-SecurityPolicy 1.2, and WS-I Basic Security Profile 1.0 security protocols.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a new instance of the <xref:System.ServiceModel.WS2007HttpBinding> class.  
-  
+The following example shows how to initialize a new instance of the <xref:System.ServiceModel.WS2007HttpBinding> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -66,10 +66,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WS2007HttpBinding" /> class with a specified type of security used by the binding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to initialize a new instance of the <xref:System.ServiceModel.WS2007HttpBinding> class with a `securityMode` parameter.  
-  
+The following example shows how to initialize a new instance of the <xref:System.ServiceModel.WS2007HttpBinding> class with a `securityMode` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,10 +113,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WS2007HttpBinding" /> class with a specified type of security used by the binding and a value that indicates whether a reliable session is enabled.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes an instance of the <xref:System.ServiceModel.WS2007HttpBinding> class and sets the <xref:System.ServiceModel.MessageSecurityVersion>, <xref:System.ServiceModel.ReliableMessagingVersion>, and <xref:System.ServiceModel.TransactionProtocol> properties that specify the WS-Security 1.1, WS-Trust 1.3, WS-SecureConversation 1.3, WS-SecurityPolicy 1.2, and WS-I Basic Security Profile 1.0 security protocols.  
-  
+This constructor initializes an instance of the <xref:System.ServiceModel.WS2007HttpBinding> class and sets the <xref:System.ServiceModel.MessageSecurityVersion>, <xref:System.ServiceModel.ReliableMessagingVersion>, and <xref:System.ServiceModel.TransactionProtocol> properties that specify the WS-Security 1.1, WS-Trust 1.3, WS-SecureConversation 1.3, WS-SecurityPolicy 1.2, and WS-I Basic Security Profile 1.0 security protocols.  
+ 
  ]]></format>
         </remarks>
       </Docs>

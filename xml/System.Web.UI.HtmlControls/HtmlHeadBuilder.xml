@@ -52,10 +52,10 @@
           <see langword="false" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation of the <xref:System.Web.UI.HtmlControls.HtmlHeadBuilder.AllowWhitespaceLiterals%2A> method is overridden to always return `false`.  
-  
+This implementation of the <xref:System.Web.UI.HtmlControls.HtmlHeadBuilder.AllowWhitespaceLiterals%2A> method is overridden to always return `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
         <returns>The <see cref="T:System.Type" /> of the specified control's child control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlHeadBuilder.GetChildControlType%2A> method returns the control type for child HTML elements represented by <xref:System.Web.UI.HtmlControls.HtmlTitle>, <xref:System.Web.UI.HtmlControls.HtmlLink>, and <xref:System.Web.UI.HtmlControls.HtmlMeta> controls. This method returns a null reference (`Nothing` in Visual Basic) for all other child controls.  
-  
+The <xref:System.Web.UI.HtmlControls.HtmlHeadBuilder.GetChildControlType%2A> method returns the control type for child HTML elements represented by <xref:System.Web.UI.HtmlControls.HtmlTitle>, <xref:System.Web.UI.HtmlControls.HtmlLink>, and <xref:System.Web.UI.HtmlControls.HtmlMeta> controls. This method returns a null reference (`Nothing` in Visual Basic) for all other child controls.  
+ 
  ]]></format>
         </remarks>
       </Docs>

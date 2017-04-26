@@ -14,10 +14,10 @@
     <summary>Provides designer functionality for user controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is no developer advantage to creating your own designer derived from <xref:System.Web.UI.Design.UserControlDesigner>. To enhance the design-time experience for a custom control, derive your control from <xref:System.Web.UI.WebControls.CompositeControl> and your designer from <xref:System.Web.UI.Design.WebControls.CompositeControlDesigner>. In that case, you would not use an .ascx file for your ASP.NET markup.  
-  
+There is no developer advantage to creating your own designer derived from <xref:System.Web.UI.Design.UserControlDesigner>. To enhance the design-time experience for a custom control, derive your control from <xref:System.Web.UI.WebControls.CompositeControl> and your designer from <xref:System.Web.UI.Design.WebControls.CompositeControlDesigner>. In that case, you would not use an .ascx file for your ASP.NET markup.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <value>A <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> that contains the action list tags for the control designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation creates two <xref:System.ComponentModel.Design.DesignerActionMethodItem> objects in the collection: **Edit User Control** and **Refresh**.  
-  
+This implementation creates two <xref:System.ComponentModel.Design.DesignerActionMethodItem> objects in the collection: **Edit User Control** and **Refresh**.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -52,10 +52,10 @@
         <value>A collection of audience URIs that are allowed in the element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on this property, see [\&lt;allowedAudienceUris\&gt;](~/docs/framework/configure-apps/file-schema/wcf/allowedaudienceuris.md)  
-  
+For more information on this property, see [\&lt;allowedAudienceUris\&gt;](~/docs/framework/configure-apps/file-schema/wcf/allowedaudienceuris.md)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
           <see langword="true" /> if untrusted RSA certificate issuers are accepted; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Certificates are signed by certification authorities (CAs) to verify authenticity. An untrusted issuer is a CA that is not specified to be trusted to sign certificates.  
-  
+Certificates are signed by certification authorities (CAs) to verify authenticity. An untrusted issuer is a CA that is not specified to be trusted to sign certificates.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Represents execution state information while a persistence command is being executed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An instance of this class is passed to the TryCommand method of persistence provider implementations. Persistence providers use this class to inspect the in-memory view of the instance as well as indicate the results of operations on the external store which may affect the view or other in-memory context.  
-  
+An instance of this class is passed to the TryCommand method of persistence provider implementations. Persistence providers use this class to inspect the in-memory view of the instance as well as indicate the results of operations on the external store which may affect the view or other in-memory context.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -42,10 +42,10 @@
         <summary>Indicates that the persistence provider has successfully associated a key to the current instance in the instance store. The identifier of the key is specified as a parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instance key must be unassociated. The current instance handle must be bound to an instance as well as a lock on that instance.  
-  
+The instance key must be unassociated. The current instance handle must be bound to an instance as well as a lock on that instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,14 +77,14 @@
         <returns>The status of an asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When attempting to acquire a lock, the persistence provider may decide that the current instance is already locked in the current store. If the lock token matches the current handle’s lock token, then the persistence provider can attempt to reclaim the lock by inspecting its version and passing it to BeginBindReclaimedLock. The persistence provider must not make changes to the instance until the lock is successfully reclaimed. If no other handle is bound to the lock, then the BeginBindReclaimedLock operation succeeds and the current handle becomes bound to the lock. Otherwise, BeginBindReclaimedLock or EndBindReclaimedLock throws InstanceHandleConflictException. If commands are in progress on other handles, the operation may not complete while waiting for the outcome of those commands to decide whether the lock can be reclaimed.  
-  
- The current instance handle must be bound to an instance and a lock owner. The instance must not be completed. The lock token associated with the lock owner is used to identify the owner of the lock.  
-  
- Once a lock is bound to a handle, it remains bound for the lifetime of the handle. Neither the lock token nor the instance version can be changed.  
-  
+When attempting to acquire a lock, the persistence provider may decide that the current instance is already locked in the current store. If the lock token matches the current handle’s lock token, then the persistence provider can attempt to reclaim the lock by inspecting its version and passing it to BeginBindReclaimedLock. The persistence provider must not make changes to the instance until the lock is successfully reclaimed. If no other handle is bound to the lock, then the BeginBindReclaimedLock operation succeeds and the current handle becomes bound to the lock. Otherwise, BeginBindReclaimedLock or EndBindReclaimedLock throws InstanceHandleConflictException. If commands are in progress on other handles, the operation may not complete while waiting for the outcome of those commands to decide whether the lock can be reclaimed.  
+ 
+The current instance handle must be bound to an instance and a lock owner. The instance must not be completed. The lock token associated with the lock owner is used to identify the owner of the lock.  
+ 
+Once a lock is bound to a handle, it remains bound for the lifetime of the handle. Neither the lock token nor the instance version can be changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,10 +116,10 @@
         <returns>The status of an asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A persistence provider can use this method to execute sub-commands as part of a command. The sub-command will be executed using BeginTryCommand, similar to commands passed to InstanceStore.BeginExecute. Commands can be nested, but a command must not execute more than one sub-command at a time.  
-  
+A persistence provider can use this method to execute sub-commands as part of a command. The sub-command will be executed using BeginTryCommand, similar to commands passed to InstanceStore.BeginExecute. Commands can be nested, but a command must not execute more than one sub-command at a time.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,12 +144,12 @@
         <summary>Binds a newly acquired lock on an instance to the current instance handle. The version of the acquired lock is passed as a parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a persistence provider implements lock versioning, then each time a lock is acquired on the instance, the version must be incremented by one in the external store. The first time the instance is locked, the version should be 1. Each lock acquisition invalidates the previous lock. The current instance handle must be bound to an instance and a lock owner. The instance must not be completed. The lock token associated with the lock owner is used to identify the owner of the lock  
-  
- Once a lock is bound to a handle, it remains bound for the lifetime of the handle. Neither the lock token nor the instance version can be changed.  
-  
+If a persistence provider implements lock versioning, then each time a lock is acquired on the instance, the version must be incremented by one in the external store. The first time the instance is locked, the version should be 1. Each lock acquisition invalidates the previous lock. The current instance handle must be bound to an instance and a lock owner. The instance must not be completed. The lock token associated with the lock owner is used to identify the owner of the lock  
+ 
+Once a lock is bound to a handle, it remains bound for the lifetime of the handle. Neither the lock token nor the instance version can be changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,10 +195,10 @@
         <summary>Binds an instance whose identifier is specified as a parameter to the current instance handle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once an instance is bound to a handle, it remains bound for the lifetime of the handle. No other instance can ever be bound to the handle.  
-  
+Once an instance is bound to a handle, it remains bound for the lifetime of the handle. No other instance can ever be bound to the handle.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,10 +225,10 @@
         <summary>Binds an instance owner to the current instance handle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once an instance owner is bound to a handle, it remains bound for the lifetime of the handle. No other instance owner can ever be bound to the handle.  
-  
+Once an instance owner is bound to a handle, it remains bound for the lifetime of the handle. No other instance owner can ever be bound to the handle.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,14 +255,14 @@
         <summary>Binds an existing lock on an instance to the current instance handle. The version of the existing lock is passed as a parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When attempting to acquire a lock, the persistence provider may decide that the current instance is already locked in the current store. If the lock token matches the current handle’s lock token, then the persistence provider can attempt to reclaim the lock by inspecting its version and passing it to BindReclaimedLock. The persistence provider must not make changes to the instance until the lock is successfully reclaimed. If no other handle is bound to the lock, then BindReclaimedLock succeeds and the current handle becomes bound to the lock. Otherwise, BindReclaimedLock throws InstanceHandleConflictException. If commands are in progress on other handles, BindReclaimedLock may block waiting for the outcome of those commands before deciding whether the lock can be reclaimed.  
-  
- The current instance handle must be bound to an instance and a lock owner. The instance must not be completed. The lock token associated with the lock owner is used to identify the owner of the lock.  
-  
- Once a lock is bound to a handle, it remains bound for the lifetime of the handle. Neither the lock token nor the instance version can be changed.  
-  
+When attempting to acquire a lock, the persistence provider may decide that the current instance is already locked in the current store. If the lock token matches the current handle’s lock token, then the persistence provider can attempt to reclaim the lock by inspecting its version and passing it to BindReclaimedLock. The persistence provider must not make changes to the instance until the lock is successfully reclaimed. If no other handle is bound to the lock, then BindReclaimedLock succeeds and the current handle becomes bound to the lock. Otherwise, BindReclaimedLock throws InstanceHandleConflictException. If commands are in progress on other handles, BindReclaimedLock may block waiting for the outcome of those commands before deciding whether the lock can be reclaimed.  
+ 
+The current instance handle must be bound to an instance and a lock owner. The instance must not be completed. The lock token associated with the lock owner is used to identify the owner of the lock.  
+ 
+Once a lock is bound to a handle, it remains bound for the lifetime of the handle. Neither the lock token nor the instance version can be changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -284,10 +284,10 @@
         <summary>Indicates that the persistence provider has successfully marked the current instance as complete in the instance store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance handle must be bound to an instance as well as a lock on that instance. The instance must be initialized and not be already completed. (An instance is initialized if a set of instance data has ever been persisted to it.) All of the keys associated to the instance must be completed.  
-  
+The current instance handle must be bound to an instance as well as a lock on that instance. The instance must be initialized and not be already completed. (An instance is initialized if a set of instance data has ever been persisted to it.) All of the keys associated to the instance must be completed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,10 +312,10 @@
         <summary>Indicates that the persistence provider has successfully marked a key as complete in the external store. The identifier of the key is specified as a parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance handle must be bound to an instance as well as a lock on that instance. The instance key must be associated to the current instance and not be already completed.  
-  
+The current instance handle must be bound to an instance as well as a lock on that instance. The instance key must be associated to the current instance and not be already completed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -341,10 +341,10 @@
         <returns>An exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Sample code:  
-  
+Sample code:  
+ 
 ```  
   
 protected override bool TryCommand(InstancePersistenceContext context, InstancePersistenceCommand command, TimeSpan timeout)  
@@ -359,7 +359,7 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -428,10 +428,10 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
         <summary>Executes a persistence command.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A persistence provider can use this method to execute sub-commands as part of a command. The sub-command will be executed using TryCommand, similar to commands passed to InstanceStore.Execute. Commands can be nested, but a command must not execute more than one sub-command at a time.  
-  
+A persistence provider can use this method to execute sub-commands as part of a command. The sub-command will be executed using TryCommand, similar to commands passed to InstanceStore.Execute. Commands can be nested, but a command must not execute more than one sub-command at a time.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -471,10 +471,10 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
         <value>The version of the instance lock bound to the current instance handle, or -1 if the handle isn’t bound to a lock.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The persistence provider should check this value against the lock version of the lock held on an instance in the instance store when performing an operation that requires a lock (such as persisting instance data) using a handle bound to the lock. If the lock version doesn’t match, the command should fail with InstanceLockLostException.  
-  
+The persistence provider should check this value against the lock version of the lock held on an instance in the instance store when performing an operation that requires a lock (such as persisting instance data) using a handle bound to the lock. If the lock version doesn’t match, the command should fail with InstanceLockLostException.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -525,10 +525,10 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
         <summary>Indicates that the persistence provider has successfully retrieved the current instance from the instance store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance handle must be bound to an instance. If the instance handle is bound to a lock or the loaded instance is marked as complete, the loaded data is considered to be consistent; otherwise, it is considered to be in doubt.  
-  
+The current instance handle must be bound to an instance. If the instance handle is bound to a lock or the loaded instance is marked as complete, the loaded data is considered to be consistent; otherwise, it is considered to be in doubt.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -550,12 +550,12 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
         <value>The lock token bound to the current instance handle, or Guid.Empty if the handle isn’t bound to an instance owner.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The persistence provider should check this value against the lock token of the lock held on an instance in the instance store when performing an operation that requires a lock (such as persisting instance data) using a handle bound to the lock. If the lock token doesn’t match, the command should fail with InstanceLockLostException.  
-  
- The persistence provider should use this value as the lock token when acquiring a new lock on an instance (such as persisting instance data using a handle not already bound to a lock). If the instance is already locked in the instance store and the lock token matches this lock token, the persistence provider can attempt to reclaim the instance using BindReclaimedLock.  
-  
+The persistence provider should check this value against the lock token of the lock held on an instance in the instance store when performing an operation that requires a lock (such as persisting instance data) using a handle bound to the lock. If the lock token doesn’t match, the command should fail with InstanceLockLostException.  
+ 
+The persistence provider should use this value as the lock token when acquiring a new lock on an instance (such as persisting instance data using a handle not already bound to a lock). If the instance is already locked in the instance store and the lock token matches this lock token, the persistence provider can attempt to reclaim the instance using BindReclaimedLock.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -580,10 +580,10 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
         <summary>Indicates that the persistence provider has successfully persisted a set of instance data to the instance store. This has the effect of initializing the instance if it wasn’t already.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance handle must be bound to an instance as well as a lock on that instance. Each set of instance data completely replaces the previous set. The set of instance data may be null – this is the same as empty. Persisting a null set of instance data deletes the existing set of instance data. (Persisting a set of instance data has no effect on instance metadata.)  
-  
+The current instance handle must be bound to an instance as well as a lock on that instance. Each set of instance data completely replaces the previous set. The set of instance data may be null – this is the same as empty. Persisting a null set of instance data deletes the existing set of instance data. (Persisting a set of instance data has no effect on instance metadata.)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -634,10 +634,10 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
         <summary>Indicates that the persistence provider has successfully read some instance key metadata for a key associated to the current instance from the instance store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance handle must be bound to an instance. If the instance handle is bound to a lock or the current instance is marked as complete, the metadata is considered to be consistent; otherwise, it is considered to be in doubt.  
-  
+The current instance handle must be bound to an instance. If the instance handle is bound to a lock or the current instance is marked as complete, the metadata is considered to be consistent; otherwise, it is considered to be in doubt.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -688,10 +688,10 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
         <summary>Sets the instance owner metadata using the data passed in the parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance handle must be bound to an instance. If the instance handle is bound to a lock or the current instance is marked as complete, the metadata is considered to be consistent; otherwise, it is considered to be in doubt.  
-  
+The current instance handle must be bound to an instance. If the instance handle is bound to a lock or the current instance is marked as complete, the metadata is considered to be consistent; otherwise, it is considered to be in doubt.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -716,10 +716,10 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
         <summary>Sets the cancellation handler to be called when the cancel of an operation is requested.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the cancellation handler is called, the persistence provider should cancel all pending operations and throw OperationCanceledException from TryCommand to indicate that the persistence command was interrupted before it could be completed.  
-  
+If the cancellation handler is called, the persistence provider should cancel all pending operations and throw OperationCanceledException from TryCommand to indicate that the persistence command was interrupted before it could be completed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -744,10 +744,10 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
         <summary>Indicates that the persistence provider has successfully disassociated a key from the current instance in the instance store. The identifier of the key is specified as a parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance handle must be bound to an instance as well as a lock on that instance. The instance key must be associated to the current instance and must be marked complete. The current instance must not be marked complete.  
-  
+The current instance handle must be bound to an instance as well as a lock on that instance. The instance key must be associated to the current instance and must be marked complete. The current instance must not be marked complete.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -769,10 +769,10 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
         <value>The user context information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The object is the one that is returned from InstanceStore.OnNewInstanceHandle for the current instance handle.  
-  
+The object is the one that is returned from InstanceStore.OnNewInstanceHandle for the current instance handle.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -801,10 +801,10 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
         <summary>Indicates that the persistence provider has successfully written a metadata value for an instance key that is associated with the current instance to the instance store</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance handle must be bound to an instance as well as a lock on that instance. The instance key must be associated with the current instance and must not be completed.  
-  
+The current instance handle must be bound to an instance as well as a lock on that instance. The instance key must be associated with the current instance and must not be completed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -831,10 +831,10 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
         <summary>Indicates that the persistence provider has successfully written a metadata value for the current instance to the external instance store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance handle must be bound to an instance as well as has a lock on that instance. The instance must not be completed.  
-  
+The current instance handle must be bound to an instance as well as has a lock on that instance. The instance must not be completed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -861,10 +861,10 @@ protected override bool TryCommand(InstancePersistenceContext context, InstanceP
         <summary>Indicates that the persistence provider has successfully written a metadata value for the current instance owner to the instance store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance handle must be bound to an instance owner.  
-  
+The current instance handle must be bound to an instance owner.  
+ 
  ]]></format>
         </remarks>
       </Docs>

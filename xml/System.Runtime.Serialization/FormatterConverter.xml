@@ -135,10 +135,10 @@
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToBoolean%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Boolean>, <xref:System.Convert>, and <xref:System.ValueType>.)  
-  
+This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToBoolean%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Boolean>, <xref:System.Convert>, and <xref:System.ValueType>.)  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
@@ -170,10 +170,10 @@
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToByte%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Byte>, <xref:System.Convert> and <xref:System.ValueType>.  
-  
+This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToByte%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Byte>, <xref:System.Convert> and <xref:System.ValueType>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
@@ -205,10 +205,10 @@
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToChar%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Char>, <xref:System.Convert>, and <xref:System.ValueType>.  
-  
+This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToChar%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Char>, <xref:System.Convert>, and <xref:System.ValueType>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
@@ -240,10 +240,10 @@
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToDateTime%2A?displayProperty=fullName> method instead. For more information, see <xref:System.DateTime>, <xref:System.Convert>, and <xref:System.ValueType>.  
-  
+This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToDateTime%2A?displayProperty=fullName> method instead. For more information, see <xref:System.DateTime>, <xref:System.Convert>, and <xref:System.ValueType>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
@@ -275,10 +275,10 @@
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToDecimal%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Decimal>, <xref:System.Convert>, and <xref:System.ValueType>.  
-  
+This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToDecimal%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Decimal>, <xref:System.Convert>, and <xref:System.ValueType>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
@@ -310,10 +310,10 @@
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToDouble%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Double>, <xref:System.Convert>, and <xref:System.ValueType>.  
-  
+This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToDouble%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Double>, <xref:System.Convert>, and <xref:System.ValueType>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
@@ -345,10 +345,10 @@
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToInt16%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Int16>, <xref:System.Convert>, and <xref:System.ValueType>.  
-  
+This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToInt16%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Int16>, <xref:System.Convert>, and <xref:System.ValueType>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
@@ -380,10 +380,10 @@
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToInt32%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Int32>, <xref:System.Convert>, and <xref:System.ValueType>.  
-  
+This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToInt32%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Int32>, <xref:System.Convert>, and <xref:System.ValueType>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
@@ -415,10 +415,10 @@
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToInt64%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Int64>, <xref:System.Convert>, and <xref:System.ValueType>.  
-  
+This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToInt64%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Int64>, <xref:System.Convert>, and <xref:System.ValueType>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
@@ -455,10 +455,10 @@
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToSByte%2A?displayProperty=fullName> method instead. For more information, see <xref:System.SByte>, <xref:System.Convert>, and <xref:System.ValueType>.  
-  
+This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToSByte%2A?displayProperty=fullName> method instead. For more information, see <xref:System.SByte>, <xref:System.Convert>, and <xref:System.ValueType>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
@@ -490,10 +490,10 @@
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToSingle%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Single>, <xref:System.Convert>, and <xref:System.ValueType>.  
-  
+This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToSingle%2A?displayProperty=fullName> method instead. For more information, see <xref:System.Single>, <xref:System.Convert>, and <xref:System.ValueType>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
@@ -525,10 +525,10 @@
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToString%2A?displayProperty=fullName> method instead. For more information, see <xref:System.String>, <xref:System.Convert>, and <xref:System.ValueType>.  
-  
+This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToString%2A?displayProperty=fullName> method instead. For more information, see <xref:System.String>, <xref:System.Convert>, and <xref:System.ValueType>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
@@ -565,10 +565,10 @@
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToUInt16%2A?displayProperty=fullName> method instead. For more information, see <xref:System.UInt16>, <xref:System.Convert>, and <xref:System.ValueType>.  
-  
+This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToUInt16%2A?displayProperty=fullName> method instead. For more information, see <xref:System.UInt16>, <xref:System.Convert>, and <xref:System.ValueType>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
@@ -605,10 +605,10 @@
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToUInt32%2A?displayProperty=fullName> method instead. For more information, see <xref:System.UInt32>, <xref:System.Convert>, and <xref:System.ValueType>.  
-  
+This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToUInt32%2A?displayProperty=fullName> method instead. For more information, see <xref:System.UInt32>, <xref:System.Convert>, and <xref:System.ValueType>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
@@ -645,10 +645,10 @@
         <returns>The converted <paramref name="value" /> or <see langword="null" /> if the <paramref name="type" /> parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToUInt64%2A?displayProperty=fullName> method instead. For more information, see <xref:System.UInt64>, <xref:System.Convert>, and <xref:System.ValueType>.  
-  
+This method uses the invariant culture (see <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). To use the current culture or to specify a culture, use the <xref:System.Convert.ToUInt64%2A?displayProperty=fullName> method instead. For more information, see <xref:System.UInt64>, <xref:System.Convert>, and <xref:System.ValueType>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>

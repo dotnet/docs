@@ -29,14 +29,14 @@
     <returns>True if the <see cref="T:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector" /> class should ignore a particular <see cref="T:System.Runtime.Remoting.Messaging.IMessage" /> property while creating an <see cref="T:System.Runtime.Remoting.ObjRef" /> for a <see cref="T:System.MarshalByRefObject" /> class.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Messaging.MessageSurrogateFilter> delegate is intended for use only by the remoting infrastructure of the .NET Framework; you should not instantiate the delegate directly.  
-  
- The <xref:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.Filter%2A> property of the <xref:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector> class gets and sets a <xref:System.Runtime.Remoting.Messaging.MessageSurrogateFilter> instance.  
-  
- Each key/value parameter pair is a remoting message property that belongs to the <xref:System.Runtime.Remoting.Messaging.IMessage.Properties%2A> property of the <xref:System.Runtime.Remoting.Messaging.IMessage> class.  
-  
+The <xref:System.Runtime.Remoting.Messaging.MessageSurrogateFilter> delegate is intended for use only by the remoting infrastructure of the .NET Framework; you should not instantiate the delegate directly.  
+ 
+The <xref:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector.Filter%2A> property of the <xref:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector> class gets and sets a <xref:System.Runtime.Remoting.Messaging.MessageSurrogateFilter> instance.  
+ 
+Each key/value parameter pair is a remoting message property that belongs to the <xref:System.Runtime.Remoting.Messaging.IMessage.Properties%2A> property of the <xref:System.Runtime.Remoting.Messaging.IMessage> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>

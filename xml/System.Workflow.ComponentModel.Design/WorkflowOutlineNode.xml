@@ -19,14 +19,14 @@
     <summary>Represents a node in a workflow outline document displayed in the workflow designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- A <xref:System.Workflow.ComponentModel.Design.WorkflowOutline> contains one <xref:System.Workflow.ComponentModel.Design.WorkflowOutlineNode> for each activity a user adds to a workflow design surface.  
-  
+ 
+A <xref:System.Workflow.ComponentModel.Design.WorkflowOutline> contains one <xref:System.Workflow.ComponentModel.Design.WorkflowOutlineNode> for each activity a user adds to a workflow design surface.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,10 +68,10 @@
         <value>The <see cref="T:System.Workflow.ComponentModel.Activity" /> associated with the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowOutlineNode" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each activity added to a workflow design surface is represented in the <xref:System.Workflow.ComponentModel.Design.WorkflowOutline> document by a <xref:System.Workflow.ComponentModel.Design.WorkflowOutlineNode>.  
-  
+Each activity added to a workflow design surface is represented in the <xref:System.Workflow.ComponentModel.Design.WorkflowOutline> document by a <xref:System.Workflow.ComponentModel.Design.WorkflowOutlineNode>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
         <summary>Updates property settings on the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowOutlineNode" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.WorkflowOutlineNode.RefreshNode%2A> updates the foreground color and text of the <xref:System.Workflow.ComponentModel.Design.WorkflowOutlineNode> to the settings associated with the activity the node represents on the workflow design surface.  
-  
+<xref:System.Workflow.ComponentModel.Design.WorkflowOutlineNode.RefreshNode%2A> updates the foreground color and text of the <xref:System.Workflow.ComponentModel.Design.WorkflowOutlineNode> to the settings associated with the activity the node represents on the workflow design surface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

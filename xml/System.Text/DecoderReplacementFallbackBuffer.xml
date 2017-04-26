@@ -19,12 +19,12 @@
     <summary>Represents a substitute output string that is emitted when the original input byte sequence cannot be decoded. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It might not be possible to convert an encoded byte sequence to an equivalent character if no suitable decoding exists. A common reason for a decoding to fail is that the conversion operation uses a code page that cannot represent the character to decode.  
-  
- If the input byte sequence cannot be converted to an output character, a <xref:System.Text.DecoderReplacementFallback?displayProperty=fullName> object provides a replacement string that is substituted for the output character. The replacement string initializes the value of the <xref:System.Text.DecoderReplacementFallback> object, and the value of the <xref:System.Text.DecoderReplacementFallback> object initializes the value of a <xref:System.Text.DecoderReplacementFallbackBuffer> object. The value of a <xref:System.Text.DecoderReplacementFallbackBuffer> object is called the replacement fallback buffer. The conversion operation uses the replacement fallback buffer to emit a replacement string instead of a decoded character, then continues to process the remainder of the input.  
-  
+It might not be possible to convert an encoded byte sequence to an equivalent character if no suitable decoding exists. A common reason for a decoding to fail is that the conversion operation uses a code page that cannot represent the character to decode.  
+ 
+If the input byte sequence cannot be converted to an output character, a <xref:System.Text.DecoderReplacementFallback?displayProperty=fullName> object provides a replacement string that is substituted for the output character. The replacement string initializes the value of the <xref:System.Text.DecoderReplacementFallback> object, and the value of the <xref:System.Text.DecoderReplacementFallback> object initializes the value of a <xref:System.Text.DecoderReplacementFallbackBuffer> object. The value of a <xref:System.Text.DecoderReplacementFallbackBuffer> object is called the replacement fallback buffer. The conversion operation uses the replacement fallback buffer to emit a replacement string instead of a decoded character, then continues to process the remainder of the input.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,10 +81,10 @@
           <see langword="true" /> if the replacement string is not empty; <see langword="false" /> if the replacement string is empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Text.Encoding.GetBytes%2A> and <xref:System.Text.Encoder.Convert%2A> methods call <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> if they encounter an unknown input byte sequence that cannot be decoded. If the return value of <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> is `true`, the calling method can invoke the <xref:System.Text.DecoderReplacementFallbackBuffer.GetNextChar%2A> method to obtain each character of the fallback buffer.  
-  
+The <xref:System.Text.Encoding.GetBytes%2A> and <xref:System.Text.Encoder.Convert%2A> methods call <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> if they encounter an unknown input byte sequence that cannot be decoded. If the return value of <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> is `true`, the calling method can invoke the <xref:System.Text.DecoderReplacementFallbackBuffer.GetNextChar%2A> method to obtain each character of the fallback buffer.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">This method is called again before the <see cref="M:System.Text.DecoderReplacementFallbackBuffer.GetNextChar" /> method has read all the characters in the replacement fallback buffer.</exception>
@@ -113,10 +113,10 @@
         <returns>The next character in the replacement fallback buffer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=fullName> and <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> methods call <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> if they encounter an unknown surrogate pair or character in their input. If the return value of <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> is `true`, the calling method can invoke <xref:System.Text.DecoderReplacementFallbackBuffer.GetNextChar%2A> to obtain each character of the replacement fallback buffer.  
-  
+The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=fullName> and <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> methods call <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> if they encounter an unknown surrogate pair or character in their input. If the return value of <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> is `true`, the calling method can invoke <xref:System.Text.DecoderReplacementFallbackBuffer.GetNextChar%2A> to obtain each character of the replacement fallback buffer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,10 +168,10 @@
         <value>The number of characters in the replacement fallback buffer that have not yet been processed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> method returns `true` if the <xref:System.Text.DecoderReplacementFallbackBuffer.Remaining%2A> property is nonzero.  
-  
+The <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> method returns `true` if the <xref:System.Text.DecoderReplacementFallbackBuffer.Remaining%2A> property is nonzero.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,10 +203,10 @@
         <summary>Initializes all internal state information and data in the <see cref="T:System.Text.DecoderReplacementFallbackBuffer" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Text.DecoderReplacementFallbackBuffer.Reset%2A> method discards any persisted state information and data that govern the emitting of a replacement string. Unpredictable results occur if the decoding operation continues after the <xref:System.Text.DecoderReplacementFallbackBuffer.Reset%2A> method is invoked.  
-  
+The <xref:System.Text.DecoderReplacementFallbackBuffer.Reset%2A> method discards any persisted state information and data that govern the emitting of a replacement string. Unpredictable results occur if the decoding operation continues after the <xref:System.Text.DecoderReplacementFallbackBuffer.Reset%2A> method is invoked.  
+ 
  ]]></format>
         </remarks>
       </Docs>

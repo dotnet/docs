@@ -14,24 +14,24 @@
     <summary>Provides data for the **WindowsAuthentication_OnAuthenticate** event. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Security.WindowsAuthenticationEventArgs> class is used to supply event values to the **WindowsAuthentication_OnAuthenticate** event and to enable you to specify a custom Windows identity for the current request.  
+The <xref:System.Web.Security.WindowsAuthenticationEventArgs> class is used to supply event values to the **WindowsAuthentication_OnAuthenticate** event and to enable you to specify a custom Windows identity for the current request.  
+ 
+The <xref:System.Web.Security.WindowsAuthenticationModule> constructs a <xref:System.Web.Security.WindowsAuthenticationEventArgs> object using the Windows identity supplied by IIS and the current <xref:System.Web.HttpContext> and passes it to the **WindowsAuthentication_OnAuthenticate** event.  
+ 
+You can use the <xref:System.Web.Security.WindowsAuthenticationEventArgs.User%2A> property of the <xref:System.Web.Security.WindowsAuthenticationEventArgs> object supplied to the **WindowsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object. If you do not specify a value for the <xref:System.Web.Security.WindowsAuthenticationEventArgs.User%2A> property during the **WindowsAuthentication_OnAuthenticate** event, the Windows identity supplied by IIS is used as the identity for the current request. If IIS uses anonymous authentication, then the <xref:System.Web.Security.WindowsAuthenticationEventArgs.Identity%2A> property is set to the identity returned by the <xref:System.Security.Principal.WindowsIdentity.GetAnonymous%2A> method.  
+ 
+The **WindowsAuthentication_OnAuthenticate** event is raised only when the authentication <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> is set to <xref:System.Web.Configuration.AuthenticationMode> and the <xref:System.Web.Security.WindowsAuthenticationModule> is an active HTTP module for the application.  
+ 
   
- The <xref:System.Web.Security.WindowsAuthenticationModule> constructs a <xref:System.Web.Security.WindowsAuthenticationEventArgs> object using the Windows identity supplied by IIS and the current <xref:System.Web.HttpContext> and passes it to the **WindowsAuthentication_OnAuthenticate** event.  
-  
- You can use the <xref:System.Web.Security.WindowsAuthenticationEventArgs.User%2A> property of the <xref:System.Web.Security.WindowsAuthenticationEventArgs> object supplied to the **WindowsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object. If you do not specify a value for the <xref:System.Web.Security.WindowsAuthenticationEventArgs.User%2A> property during the **WindowsAuthentication_OnAuthenticate** event, the Windows identity supplied by IIS is used as the identity for the current request. If IIS uses anonymous authentication, then the <xref:System.Web.Security.WindowsAuthenticationEventArgs.Identity%2A> property is set to the identity returned by the <xref:System.Security.Principal.WindowsIdentity.GetAnonymous%2A> method.  
-  
- The **WindowsAuthentication_OnAuthenticate** event is raised only when the authentication <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> is set to <xref:System.Web.Configuration.AuthenticationMode> and the <xref:System.Web.Security.WindowsAuthenticationModule> is an active HTTP module for the application.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the **WindowsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object.  
-  
- [!code-csharp[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/CS/global.asax#1)]
- [!code-vb[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/VB/global.asax#1)]  
-  
+The following code example uses the **WindowsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object.  
+ 
+[!code-csharp[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/CS/global.asax#1)]
+[!code-vb[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/VB/global.asax#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,10 +55,10 @@
         <summary>Initializes a newly created instance of the <see cref="T:System.Web.Security.WindowsAuthenticationEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Security.WindowsAuthenticationModule> constructs a <xref:System.Web.Security.WindowsAuthenticationEventArgs> object using the Windows identity supplied by IIS and the current <xref:System.Web.HttpContext> and passes it to the **WindowsAuthentication_OnAuthenticate** event.  
-  
+The <xref:System.Web.Security.WindowsAuthenticationModule> constructs a <xref:System.Web.Security.WindowsAuthenticationEventArgs> object using the Windows identity supplied by IIS and the current <xref:System.Web.HttpContext> and passes it to the **WindowsAuthentication_OnAuthenticate** event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,10 +80,10 @@
         <value>The <see cref="T:System.Web.HttpContext" /> object for the current HTTP request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext> provides access to <xref:System.Web.HttpContext.Request%2A>, <xref:System.Web.HttpContext.Response%2A>, and <xref:System.Web.HttpContext.User%2A> objects for the current request.  
-  
+The <xref:System.Web.HttpContext> provides access to <xref:System.Web.HttpContext.Request%2A>, <xref:System.Web.HttpContext.Response%2A>, and <xref:System.Web.HttpContext.User%2A> objects for the current request.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,20 +105,20 @@
         <value>The Windows identity passed to the <see cref="T:System.Web.Security.WindowsAuthenticationEventArgs" /> constructor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Security.WindowsAuthenticationModule> constructs a <xref:System.Web.Security.WindowsAuthenticationEventArgs> object using the Windows identity supplied by IIS and the current <xref:System.Web.HttpContext> and passes it to the **WindowsAuthentication_OnAuthenticate** event.  
+The <xref:System.Web.Security.WindowsAuthenticationModule> constructs a <xref:System.Web.Security.WindowsAuthenticationEventArgs> object using the Windows identity supplied by IIS and the current <xref:System.Web.HttpContext> and passes it to the **WindowsAuthentication_OnAuthenticate** event.  
+ 
+If IIS uses anonymous authentication, the <xref:System.Web.Security.WindowsAuthenticationEventArgs.Identity%2A> property is set to the identity returned by the <xref:System.Security.Principal.WindowsIdentity.GetAnonymous%2A> method.  
+ 
   
- If IIS uses anonymous authentication, the <xref:System.Web.Security.WindowsAuthenticationEventArgs.Identity%2A> property is set to the identity returned by the <xref:System.Security.Principal.WindowsIdentity.GetAnonymous%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the **WindowsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object.  
-  
- [!code-csharp[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/CS/global.asax#1)]
- [!code-vb[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/VB/global.asax#1)]  
-  
+The following code example uses the **WindowsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object.  
+ 
+[!code-csharp[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/CS/global.asax#1)]
+[!code-vb[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/VB/global.asax#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,20 +140,20 @@
         <value>The <see cref="T:System.Security.Principal.IPrincipal" /> object to be associated with the current request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Web.Security.WindowsAuthenticationEventArgs.User%2A> property to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object.  
+You can use the <xref:System.Web.Security.WindowsAuthenticationEventArgs.User%2A> property to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object.  
+ 
+If you do not specify a value for the <xref:System.Web.Security.WindowsAuthenticationEventArgs.User%2A> property during the **WindowsAuthentication_OnAuthenticate** event, the Windows identity supplied by IIS is used as the identity for the current request. If IIS uses anonymous authentication, then the <xref:System.Web.Security.WindowsAuthenticationEventArgs.Identity%2A> property is set to the identity returned by the <xref:System.Security.Principal.WindowsIdentity.GetAnonymous%2A> method.  
+ 
   
- If you do not specify a value for the <xref:System.Web.Security.WindowsAuthenticationEventArgs.User%2A> property during the **WindowsAuthentication_OnAuthenticate** event, the Windows identity supplied by IIS is used as the identity for the current request. If IIS uses anonymous authentication, then the <xref:System.Web.Security.WindowsAuthenticationEventArgs.Identity%2A> property is set to the identity returned by the <xref:System.Security.Principal.WindowsIdentity.GetAnonymous%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the **WindowsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object.  
-  
- [!code-csharp[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/CS/global.asax#1)]
- [!code-vb[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/VB/global.asax#1)]  
-  
+The following code example uses the **WindowsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object.  
+ 
+[!code-csharp[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/CS/global.asax#1)]
+[!code-vb[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/VB/global.asax#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

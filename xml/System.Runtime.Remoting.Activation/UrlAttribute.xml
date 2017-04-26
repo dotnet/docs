@@ -20,32 +20,32 @@
     <summary>Defines an attribute that can be used at the call site to specify the URL where the activation will happen. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Activation.UrlAttribute> is passed in the activation attributes array as a parameter to <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> when creating activated objects with the <xref:System.Activator.CreateInstance%2A> method.  
+The <xref:System.Runtime.Remoting.Activation.UrlAttribute> is passed in the activation attributes array as a parameter to <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> when creating activated objects with the <xref:System.Activator.CreateInstance%2A> method.  
+ 
+For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
-   
-  
+ 
 ## Examples  
- The following code example illustrates the use of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> in setting up client-activated remoting. The example contains three parts: a client, a server, and a remote object that is used by the client and server.  
-  
- The following code example shows a client:  
-  
- [!code-cpp[System.Runtime.Remoting.Activation.UrlAttribute#0](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CPP/client.cpp#0)]
- [!code-csharp[System.Runtime.Remoting.Activation.UrlAttribute#0](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CS/client.cs#0)]  
-  
- The following code example shows a server for this client:  
-  
- [!code-cpp[System.Runtime.Remoting.Activation.UrlAttribute#2](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CPP/server.cpp#2)]
- [!code-csharp[System.Runtime.Remoting.Activation.UrlAttribute#2](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CS/server.cs#2)]  
-  
- The following code example shows the remote object that is used by the client and the server:  
-  
- [!code-cpp[System.Runtime.Remoting.Activation.UrlAttribute#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CPP/remoteobject.cpp#3)]
- [!code-csharp[System.Runtime.Remoting.Activation.UrlAttribute#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CS/remoteobject.cs#3)]  
-  
+The following code example illustrates the use of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> in setting up client-activated remoting. The example contains three parts: a client, a server, and a remote object that is used by the client and server.  
+ 
+The following code example shows a client:  
+ 
+[!code-cpp[System.Runtime.Remoting.Activation.UrlAttribute#0](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CPP/client.cpp#0)]
+[!code-csharp[System.Runtime.Remoting.Activation.UrlAttribute#0](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CS/client.cs#0)]  
+ 
+The following code example shows a server for this client:  
+ 
+[!code-cpp[System.Runtime.Remoting.Activation.UrlAttribute#2](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CPP/server.cpp#2)]
+[!code-csharp[System.Runtime.Remoting.Activation.UrlAttribute#2](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CS/server.cs#2)]  
+ 
+The following code example shows the remote object that is used by the client and the server:  
+ 
+[!code-cpp[System.Runtime.Remoting.Activation.UrlAttribute#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CPP/remoteobject.cpp#3)]
+[!code-csharp[System.Runtime.Remoting.Activation.UrlAttribute#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CS/remoteobject.cs#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,13 +68,13 @@
         <summary>Creates a new instance of the <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates the use of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> constructor.  
-  
- [!code-cpp[System.Runtime.Remoting.Activation.UrlAttribute#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CPP/client.cpp#1)]
- [!code-csharp[System.Runtime.Remoting.Activation.UrlAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CS/client.cs#1)]  
-  
+The following code example illustrates the use of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> constructor.  
+ 
+[!code-cpp[System.Runtime.Remoting.Activation.UrlAttribute#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CPP/client.cpp#1)]
+[!code-csharp[System.Runtime.Remoting.Activation.UrlAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CS/client.cs#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="callsiteURL" /> parameter is <see langword="null" />.</exception>
@@ -105,10 +105,10 @@
           <see langword="true" /> if the object is a <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> with the same value; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides the default <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
-  
+This method overrides the default <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -163,10 +163,10 @@
         <summary>Forces the creation of the context and the server object inside the context at the specified URL.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Runtime.Remoting.Activation.UrlAttribute.GetPropertiesForNewContext%2A> does not contribute any properties to the new context because it is used by the remoting infrastructure to force the creation of the context and the server object inside the context at the specified URL.  
-  
+<xref:System.Runtime.Remoting.Activation.UrlAttribute.GetPropertiesForNewContext%2A> does not contribute any properties to the new context because it is used by the remoting infrastructure to force the creation of the context and the server object inside the context at the specified URL.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -224,13 +224,13 @@
         <value>The URL value of the <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates the use of the <xref:System.Runtime.Remoting.Activation.UrlAttribute.UrlValue%2A> property of the <xref:System.Runtime.Remoting.Activation.UrlAttribute>.  
-  
- [!code-cpp[System.Runtime.Remoting.Activation.UrlAttribute#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CPP/client.cpp#1)]
- [!code-csharp[System.Runtime.Remoting.Activation.UrlAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CS/client.cs#1)]  
-  
+The following code example illustrates the use of the <xref:System.Runtime.Remoting.Activation.UrlAttribute.UrlValue%2A> property of the <xref:System.Runtime.Remoting.Activation.UrlAttribute>.  
+ 
+[!code-cpp[System.Runtime.Remoting.Activation.UrlAttribute#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CPP/client.cpp#1)]
+[!code-csharp[System.Runtime.Remoting.Activation.UrlAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Activation.UrlAttribute/CS/client.cs#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>

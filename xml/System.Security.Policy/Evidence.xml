@@ -24,29 +24,29 @@
     <summary>Defines the set of information that constitutes input to security policy decisions. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Common forms of evidence include signatures and location of origin of code, but can potentially be anything. Objects of any type that are recognized by security policy represent evidence.  
-  
- Security policy is composed of code groups; a particular assembly (the basic unit of code for granting security permissions) is a member of a code group if it satisfies the code group's membership condition. Evidence is the set of inputs to policy that membership conditions use to determine to which code groups an assembly belongs.  
-  
- The <xref:System.Security.Policy.Evidence> class is a collection (see <xref:System.Collections.ICollection>) that holds a set of objects that represent evidence. This class holds two sets that correspond to the source of the evidence: host evidence and assembly evidence.  
-  
- Policy can get evidence from two different sources when evaluating permissions for code.  
-  
+Common forms of evidence include signatures and location of origin of code, but can potentially be anything. Objects of any type that are recognized by security policy represent evidence.  
+ 
+Security policy is composed of code groups; a particular assembly (the basic unit of code for granting security permissions) is a member of a code group if it satisfies the code group's membership condition. Evidence is the set of inputs to policy that membership conditions use to determine to which code groups an assembly belongs.  
+ 
+The <xref:System.Security.Policy.Evidence> class is a collection (see <xref:System.Collections.ICollection>) that holds a set of objects that represent evidence. This class holds two sets that correspond to the source of the evidence: host evidence and assembly evidence.  
+ 
+Policy can get evidence from two different sources when evaluating permissions for code.  
+ 
 -   `Host evidence` is provided by the host, and can only be provided by hosts that have been granted the <xref:System.Security.Permissions.SecurityPermissionFlag> permission. Typically, this is evidence of the origin of the code and digital signatures on the assembly. Evidence about origin typically includes <xref:System.Security.Policy.Url>, <xref:System.Security.Policy.Site>, and <xref:System.Security.Policy.Zone> evidence. Signatures refer to software publisher (AuthentiCode X.509v3 signature) and strong name identities. Both kinds of digital signature-based identity are built into the assembly, but must be validated and passed to policy by the host; when loaded, the security system verifies the signature. The system then creates the appropriate evidence and passes it to policy only if the corresponding signature is valid.  
-  
+ 
 -   `Assembly evidence` is part of the assembly itself. Developers or administrators can attach custom evidence to the assembly to extend the set of evidence for policy. Assembly evidence can only be added at the time of assembly generation, which occurs before the assembly is signed. The default policy of the security system ignores assembly-provided evidence, but policy can be extended to accept it.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create new <xref:System.Security.Policy.Evidence> classes with both host evidence and assembly evidence.  
-  
- [!code-cpp[System.Security.Policy.Evidence#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#1)]
- [!code-csharp[System.Security.Policy.Evidence#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#1)]
- [!code-vb[System.Security.Policy.Evidence#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#1)]  
-  
+The following code example demonstrates how to create new <xref:System.Security.Policy.Evidence> classes with both host evidence and assembly evidence.  
+ 
+[!code-cpp[System.Security.Policy.Evidence#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#1)]
+[!code-csharp[System.Security.Policy.Evidence#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#1)]
+[!code-vb[System.Security.Policy.Evidence#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,14 +66,14 @@
         <summary>Initializes a new empty instance of the <see cref="T:System.Security.Policy.Evidence" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Policy.Evidence.%23ctor> constructor. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
-  
- [!code-cpp[System.Security.Policy.Evidence#15](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#15)]
- [!code-csharp[System.Security.Policy.Evidence#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#15)]
- [!code-vb[System.Security.Policy.Evidence#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#15)]  
-  
+The following code example shows the use of the <xref:System.Security.Policy.Evidence.%23ctor> constructor. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+ 
+[!code-cpp[System.Security.Policy.Evidence#15](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#15)]
+[!code-csharp[System.Security.Policy.Evidence#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#15)]
+[!code-vb[System.Security.Policy.Evidence#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,14 +96,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.Evidence" /> class from a shallow copy of an existing one.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Policy.Evidence.%23ctor%28System.Security.Policy.Evidence%29> constructor. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
-  
- [!code-cpp[System.Security.Policy.Evidence#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#12)]
- [!code-csharp[System.Security.Policy.Evidence#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#12)]
- [!code-vb[System.Security.Policy.Evidence#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#12)]  
-  
+The following code example shows the use of the <xref:System.Security.Policy.Evidence.%23ctor%28System.Security.Policy.Evidence%29> constructor. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+ 
+[!code-cpp[System.Security.Policy.Evidence#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#12)]
+[!code-csharp[System.Security.Policy.Evidence#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#12)]
+[!code-vb[System.Security.Policy.Evidence#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#12)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="evidence" /> parameter is not a valid instance of <see cref="T:System.Security.Policy.Evidence" />.</exception>
@@ -134,14 +134,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.Evidence" /> class from multiple sets of host and assembly evidence.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Policy.Evidence.%23ctor%28System.Object%5B%5D%2CSystem.Object%5B%5D%29> constructor. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
-  
- [!code-cpp[System.Security.Policy.Evidence#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#3)]
- [!code-csharp[System.Security.Policy.Evidence#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#3)]
- [!code-vb[System.Security.Policy.Evidence#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#3)]  
-  
+The following code example shows the use of the <xref:System.Security.Policy.Evidence.%23ctor%28System.Object%5B%5D%2CSystem.Object%5B%5D%29> constructor. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+ 
+[!code-cpp[System.Security.Policy.Evidence#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#3)]
+[!code-csharp[System.Security.Policy.Evidence#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#3)]
+[!code-vb[System.Security.Policy.Evidence#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.Evidence" /> class from multiple sets of host and assembly evidence.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a new instance of the class by using evidence objects that inherit from the <xref:System.Security.Policy.EvidenceBase> class.  
-  
+This constructor creates a new instance of the class by using evidence objects that inherit from the <xref:System.Security.Policy.EvidenceBase> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,22 +199,22 @@
         <summary>Adds the specified assembly evidence to the evidence set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method for evidence derived from the assembly.  
-  
+Use this method for evidence derived from the assembly.  
+ 
 > [!NOTE]
 >  This method does not perform a check to prevent adding duplicate types of evidence. Many assembly evidence objects can exist at the same time.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Policy.Evidence.AddAssembly%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
-  
- [!code-cpp[System.Security.Policy.Evidence#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#4)]
- [!code-csharp[System.Security.Policy.Evidence#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#4)]
- [!code-vb[System.Security.Policy.Evidence#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#4)]  
-  
+The following code example shows the use of the <xref:System.Security.Policy.Evidence.AddAssembly%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+ 
+[!code-cpp[System.Security.Policy.Evidence#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#4)]
+[!code-csharp[System.Security.Policy.Evidence#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#4)]
+[!code-vb[System.Security.Policy.Evidence#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -256,10 +256,10 @@
         <summary>Adds an evidence object of the specified type to the assembly-supplied evidence list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Legacy evidence, that is, evidence that is not derived from <xref:System.Security.Policy.EvidenceBase>, cannot be added. Only evidence that is derived from <xref:System.Security.Policy.EvidenceBase> can be added. This method does not allow you to add evidence if evidence of that type already exists in the assembly list.  
-  
+Legacy evidence, that is, evidence that is not derived from <xref:System.Security.Policy.EvidenceBase>, cannot be added. Only evidence that is derived from <xref:System.Security.Policy.EvidenceBase> can be added. This method does not allow you to add evidence if evidence of that type already exists in the assembly list.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -295,22 +295,22 @@
         <summary>Adds the specified evidence supplied by the host to the evidence set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method for evidence supplied by the host.  
-  
+Use this method for evidence supplied by the host.  
+ 
 > [!NOTE]
 >  This method does not perform a check to prevent adding duplicate types of evidence. Many host evidence objects can exist at the same time.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Policy.Evidence.AddHost%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
-  
- [!code-cpp[System.Security.Policy.Evidence#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#2)]
- [!code-csharp[System.Security.Policy.Evidence#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#2)]
- [!code-vb[System.Security.Policy.Evidence#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#2)]  
-  
+The following code example shows the use of the <xref:System.Security.Policy.Evidence.AddHost%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+ 
+[!code-cpp[System.Security.Policy.Evidence#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#2)]
+[!code-csharp[System.Security.Policy.Evidence#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#2)]
+[!code-vb[System.Security.Policy.Evidence#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -353,10 +353,10 @@
         <summary>Adds host evidence of the specified type to the host evidence collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Legacy evidence, that is, evidence that is not derived from <xref:System.Security.Policy.EvidenceBase>, cannot be added. Only evidence that is derived from <xref:System.Security.Policy.EvidenceBase> can be added. This method does not allow you to add evidence if evidence of that type already exists in the assembly list.  
-  
+Legacy evidence, that is, evidence that is not derived from <xref:System.Security.Policy.EvidenceBase>, cannot be added. Only evidence that is derived from <xref:System.Security.Policy.EvidenceBase> can be added. This method does not allow you to add evidence if evidence of that type already exists in the assembly list.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -387,19 +387,19 @@
         <summary>Removes the host and assembly evidence from the evidence set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Policy.Evidence.Clear%2A> removes the evidence in the host and assembly enumerations, setting both to `null`.  
+<xref:System.Security.Policy.Evidence.Clear%2A> removes the evidence in the host and assembly enumerations, setting both to `null`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Policy.Evidence.Clear%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
-  
- [!code-cpp[System.Security.Policy.Evidence#13](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#13)]
- [!code-csharp[System.Security.Policy.Evidence#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#13)]
- [!code-vb[System.Security.Policy.Evidence#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#13)]  
-  
+The following code example shows the use of the <xref:System.Security.Policy.Evidence.Clear%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+ 
+[!code-cpp[System.Security.Policy.Evidence#13](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#13)]
+[!code-csharp[System.Security.Policy.Evidence#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#13)]
+[!code-vb[System.Security.Policy.Evidence#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#13)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to control evidence. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
@@ -429,10 +429,10 @@
         <returns>A duplicate copy of this evidence object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The duplicate copy is a complete copy that includes all the evidence objects in the collection.  
-  
+The duplicate copy is a complete copy that includes all the evidence objects in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -465,14 +465,14 @@
         <summary>Copies evidence objects to an <see cref="T:System.Array" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Policy.Evidence.CopyTo%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
-  
- [!code-cpp[System.Security.Policy.Evidence#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#6)]
- [!code-csharp[System.Security.Policy.Evidence#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#6)]
- [!code-vb[System.Security.Policy.Evidence#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#6)]  
-  
+The following code example shows the use of the <xref:System.Security.Policy.Evidence.CopyTo%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+ 
+[!code-cpp[System.Security.Policy.Evidence#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#6)]
+[!code-csharp[System.Security.Policy.Evidence#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#6)]
+[!code-vb[System.Security.Policy.Evidence#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -504,14 +504,14 @@
         <value>The number of evidence objects in the evidence set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Policy.Evidence.Count%2A> property. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
-  
- [!code-cpp[System.Security.Policy.Evidence#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#12)]
- [!code-csharp[System.Security.Policy.Evidence#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#12)]
- [!code-vb[System.Security.Policy.Evidence#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#12)]  
-  
+The following code example shows the use of the <xref:System.Security.Policy.Evidence.Count%2A> property. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+ 
+[!code-cpp[System.Security.Policy.Evidence#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#12)]
+[!code-csharp[System.Security.Policy.Evidence#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#12)]
+[!code-vb[System.Security.Policy.Evidence#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -535,14 +535,14 @@
         <returns>An enumerator for evidence added by the <see cref="M:System.Security.Policy.Evidence.AddAssembly(System.Object)" /> method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows the use of the <xref:System.Security.Policy.Evidence.GetAssemblyEnumerator%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
-  
- [!code-cpp[System.Security.Policy.Evidence#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#3)]
- [!code-csharp[System.Security.Policy.Evidence#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#3)]
- [!code-vb[System.Security.Policy.Evidence#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#3)]  
-  
+The following example shows the use of the <xref:System.Security.Policy.Evidence.GetAssemblyEnumerator%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+ 
+[!code-cpp[System.Security.Policy.Evidence#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#3)]
+[!code-csharp[System.Security.Policy.Evidence#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#3)]
+[!code-vb[System.Security.Policy.Evidence#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -578,10 +578,10 @@
         <returns>Evidence of type <paramref name="T" /> in the assembly evidence collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns only evidence that is derived from the <xref:System.Security.Policy.EvidenceBase> class. It does not return legacy evidence objects that are derived from other classes.  
-  
+This method returns only evidence that is derived from the <xref:System.Security.Policy.EvidenceBase> class. It does not return legacy evidence objects that are derived from other classes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -610,14 +610,14 @@
         <returns>An enumerator for evidence added by both the <see cref="M:System.Security.Policy.Evidence.AddHost(System.Object)" /> method and the <see cref="M:System.Security.Policy.Evidence.AddAssembly(System.Object)" /> method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Policy.Evidence.GetEnumerator%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
-  
- [!code-cpp[System.Security.Policy.Evidence#14](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#14)]
- [!code-csharp[System.Security.Policy.Evidence#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#14)]
- [!code-vb[System.Security.Policy.Evidence#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#14)]  
-  
+The following code example shows the use of the <xref:System.Security.Policy.Evidence.GetEnumerator%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+ 
+[!code-cpp[System.Security.Policy.Evidence#14](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#14)]
+[!code-csharp[System.Security.Policy.Evidence#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#14)]
+[!code-vb[System.Security.Policy.Evidence#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -641,14 +641,14 @@
         <returns>An enumerator for evidence added by the <see cref="M:System.Security.Policy.Evidence.AddHost(System.Object)" /> method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows the use of the <xref:System.Security.Policy.Evidence.GetHostEnumerator%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
-  
- [!code-cpp[System.Security.Policy.Evidence#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#2)]
- [!code-csharp[System.Security.Policy.Evidence#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#2)]
- [!code-vb[System.Security.Policy.Evidence#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#2)]  
-  
+The following example shows the use of the <xref:System.Security.Policy.Evidence.GetHostEnumerator%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+ 
+[!code-cpp[System.Security.Policy.Evidence#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#2)]
+[!code-csharp[System.Security.Policy.Evidence#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#2)]
+[!code-vb[System.Security.Policy.Evidence#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -684,10 +684,10 @@
         <returns>Evidence of type <paramref name="T" /> in the host evidence collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns only evidence that is derived from the <xref:System.Security.Policy.EvidenceBase> class. It does not return legacy evidence objects that are derived from other classes.  
-  
+This method returns only evidence that is derived from the <xref:System.Security.Policy.EvidenceBase> class. It does not return legacy evidence objects that are derived from other classes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -710,10 +710,10 @@
         <value>Always <see langword="false" />, because read-only evidence sets are not supported.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Application code does not normally use this property.  
-  
+Application code does not normally use this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -736,10 +736,10 @@
         <value>Always <see langword="false" /> because thread-safe evidence sets are not supported.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Application code does not normally use this property.  
-  
+Application code does not normally use this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -763,14 +763,14 @@
           <see langword="true" /> if the evidence is locked; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Policy.Evidence.Locked%2A> property. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
-  
- [!code-cpp[System.Security.Policy.Evidence#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#7)]
- [!code-csharp[System.Security.Policy.Evidence#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#7)]
- [!code-vb[System.Security.Policy.Evidence#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#7)]  
-  
+The following code example shows the use of the <xref:System.Security.Policy.Evidence.Locked%2A> property. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+ 
+[!code-cpp[System.Security.Policy.Evidence#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#7)]
+[!code-csharp[System.Security.Policy.Evidence#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#7)]
+[!code-vb[System.Security.Policy.Evidence#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
@@ -797,22 +797,22 @@
         <summary>Merges the specified evidence set into the current evidence set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each evidence object in the specified evidence set is added to the assembly and host sets of the current evidence set, according to the sets from which it came.  
-  
+Each evidence object in the specified evidence set is added to the assembly and host sets of the current evidence set, according to the sets from which it came.  
+ 
 > [!NOTE]
 >  This method does not perform a check to prevent adding duplicate types of evidence. Many assembly and host evidence objects can exist at the same time.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Policy.Evidence.Merge%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
-  
- [!code-cpp[System.Security.Policy.Evidence#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#10)]
- [!code-csharp[System.Security.Policy.Evidence#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#10)]
- [!code-vb[System.Security.Policy.Evidence#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#10)]  
-  
+The following code example shows the use of the <xref:System.Security.Policy.Evidence.Merge%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+ 
+[!code-cpp[System.Security.Policy.Evidence#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#10)]
+[!code-csharp[System.Security.Policy.Evidence#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#10)]
+[!code-vb[System.Security.Policy.Evidence#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="evidence" /> parameter is not a valid instance of <see cref="T:System.Security.Policy.Evidence" />.</exception>
@@ -847,19 +847,19 @@
         <summary>Removes the evidence for a given type from the host and assembly enumerations.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The results of executing the <xref:System.Security.Policy.Evidence.RemoveType%2A> method can be confirmed using the <xref:System.Security.Policy.Evidence.GetAssemblyEnumerator%2A> method and the <xref:System.Security.Policy.Evidence.GetHostEnumerator%2A> method.  
+The results of executing the <xref:System.Security.Policy.Evidence.RemoveType%2A> method can be confirmed using the <xref:System.Security.Policy.Evidence.GetAssemblyEnumerator%2A> method and the <xref:System.Security.Policy.Evidence.GetHostEnumerator%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Policy.Evidence.RemoveType%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
-  
- [!code-cpp[System.Security.Policy.Evidence#11](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#11)]
- [!code-csharp[System.Security.Policy.Evidence#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#11)]
- [!code-vb[System.Security.Policy.Evidence#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#11)]  
-  
+The following code example shows the use of the <xref:System.Security.Policy.Evidence.RemoveType%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+ 
+[!code-cpp[System.Security.Policy.Evidence#11](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#11)]
+[!code-csharp[System.Security.Policy.Evidence#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#11)]
+[!code-vb[System.Security.Policy.Evidence#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#11)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -885,10 +885,10 @@
         <value>Always <see langword="this" /> (<see langword="Me" /> in Visual Basic), because synchronization of evidence sets is not supported.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not normally used by application code.  
-  
+This property is not normally used by application code.  
+ 
  ]]></format>
         </remarks>
       </Docs>

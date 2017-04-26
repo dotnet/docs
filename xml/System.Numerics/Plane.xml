@@ -318,10 +318,10 @@
           <see langword="true" /> if the two planes are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.Numerics.Plane> objects are equal if their <xref:System.Numerics.Plane> and <xref:System.Numerics.Plane> fields are equal.  
-  
+Two <xref:System.Numerics.Plane> objects are equal if their <xref:System.Numerics.Plane> and <xref:System.Numerics.Plane> fields are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,10 +358,10 @@
           <see langword="true" /> if the current instance and <paramref name="obj" /> are equal; otherwise, <see langword="false" /><see langword="" />. If <paramref name="obj" /> is <see langword="null" />, the method returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance and `obj` are equal if `obj` is a <xref:System.Numerics.Plane> object and their <xref:System.Numerics.Plane.Normal> and <xref:System.Numerics.Plane.D> fields are equal.  
-  
+The current instance and `obj` are equal if `obj` is a <xref:System.Numerics.Plane> object and their <xref:System.Numerics.Plane.Normal> and <xref:System.Numerics.Plane.D> fields are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -488,12 +488,12 @@
           <see langword="true" /> if <paramref name="value1" /> and <paramref name="value2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.Numerics.Plane> objects are equal if their <xref:System.Numerics.Plane> and <xref:System.Numerics.Plane> fields are equal.  
-  
- The <xref:System.Numerics.Plane.op_Equality%2A> method defines the operation of the equality operator for <xref:System.Numerics.Plane> objects.  
-  
+Two <xref:System.Numerics.Plane> objects are equal if their <xref:System.Numerics.Plane> and <xref:System.Numerics.Plane> fields are equal.  
+ 
+The <xref:System.Numerics.Plane.op_Equality%2A> method defines the operation of the equality operator for <xref:System.Numerics.Plane> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -532,10 +532,10 @@
           <see langword="true" /> if <paramref name="value1" /> and <paramref name="value2" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Plane.op_Inequality%2A> method defines the operation of the inequality operator for <xref:System.Numerics.Plane> objects.  
-  
+The <xref:System.Numerics.Plane.op_Inequality%2A> method defines the operation of the inequality operator for <xref:System.Numerics.Plane> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -568,10 +568,10 @@
         <returns>A string that represents this <see cref="T:System.Numerics.Plane" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string representation of a <xref:System.Numerics.Plane> object use the formatting conventions of the current culture to format the numeric values in the returned string. For example, a <xref:System.Numerics.Plane> object whose string representation is formatted by using the conventions of the en-US culture might appear as `{Normal:<1.1, 2.2, 3.3> D:4.4}`.  
-  
+The string representation of a <xref:System.Numerics.Plane> object use the formatting conventions of the current culture to format the numeric values in the returned string. For example, a <xref:System.Numerics.Plane> object whose string representation is formatted by using the conventions of the en-US culture might appear as `{Normal:<1.1, 2.2, 3.3> D:4.4}`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -609,10 +609,10 @@
         <returns>The transformed plane.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `plane` must already be normalized so that its <xref:System.Numerics.Plane> vector is of unit length before this method is called.  
-  
+`plane` must already be normalized so that its <xref:System.Numerics.Plane> vector is of unit length before this method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -650,10 +650,10 @@
         <returns>A new plane that results from applying the Quaternion rotation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `plane` must already be normalized so that its <xref:System.Numerics.Plane> vector is of unit length before this method is called.  
-  
+`plane` must already be normalized so that its <xref:System.Numerics.Plane> vector is of unit length before this method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>

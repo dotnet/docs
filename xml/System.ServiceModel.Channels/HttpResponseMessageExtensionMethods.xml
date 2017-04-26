@@ -36,10 +36,10 @@
         <returns>The new <see cref="T:System.ServiceModel.Channels.Message" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.Message> instance can be read, written and copied  just as a traditional <xref:System.ServiceModel.Channels.ByteStreamMessage> instance. The <xref:System.ServiceModel.Channels.Message> instance can also "read" to retrieve the original <xref:System.Net.Http.HttpResponseMessage> instance by calling the  <xref:System.ServiceModel.Channels.MessageExtensionMethods.ToHttpResponseMessage%2A> extension method.  
-  
+The <xref:System.ServiceModel.Channels.Message> instance can be read, written and copied  just as a traditional <xref:System.ServiceModel.Channels.ByteStreamMessage> instance. The <xref:System.ServiceModel.Channels.Message> instance can also "read" to retrieve the original <xref:System.Net.Http.HttpResponseMessage> instance by calling the  <xref:System.ServiceModel.Channels.MessageExtensionMethods.ToHttpResponseMessage%2A> extension method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

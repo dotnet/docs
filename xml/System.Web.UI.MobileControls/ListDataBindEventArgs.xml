@@ -19,13 +19,13 @@
     <summary>Provides parameters for an <see cref="E:System.Web.UI.MobileControls.List.ItemDataBind" /> event. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.List.ItemDataBind> event to get the starting totals of status settings for the list. This code is part of a larger example for the <xref:System.Web.UI.MobileControls.List> overview.  
-  
- [!code-csharp[MobileListSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListSample/cs/Default.aspx#4)]
- [!code-vb[MobileListSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListSample/vb/Default.aspx#4)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.List.ItemDataBind> event to get the starting totals of status settings for the list. This code is part of a larger example for the <xref:System.Web.UI.MobileControls.List> overview.  
+ 
+[!code-csharp[MobileListSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListSample/cs/Default.aspx#4)]
+[!code-vb[MobileListSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListSample/vb/Default.aspx#4)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -50,10 +50,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ListDataBindEventArgs" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a new <xref:System.Web.UI.MobileControls.ListDataBindEventArgs> object. The constructor initializes the <xref:System.Web.UI.MobileControls.ListDataBindEventArgs.ListItem%2A> and <xref:System.Web.UI.MobileControls.ListDataBindEventArgs.DataItem%2A> properties with the values of `listItem` and `dataItem`, respectively.  
-  
+This constructor creates a new <xref:System.Web.UI.MobileControls.ListDataBindEventArgs> object. The constructor initializes the <xref:System.Web.UI.MobileControls.ListDataBindEventArgs.ListItem%2A> and <xref:System.Web.UI.MobileControls.ListDataBindEventArgs.DataItem%2A> properties with the values of `listItem` and `dataItem`, respectively.  
+ 
  ]]></format>
         </remarks>
       </Docs>

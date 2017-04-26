@@ -19,17 +19,17 @@
     <summary>An abstract base class used to create composite activities from pre-existing <see cref="T:System.Activities.Activity" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Activity> is the base class in the activity type hierarchy. All other activity types such as <xref:System.Activities.CodeActivity>, <xref:System.Activities.NativeActivity>, <xref:System.Activities.AsyncCodeActivity>, <xref:System.Activities.DynamicActivity>, and <xref:System.Activities.ActivityWithResult> derive from this class.  
+<xref:System.Activities.Activity> is the base class in the activity type hierarchy. All other activity types such as <xref:System.Activities.CodeActivity>, <xref:System.Activities.NativeActivity>, <xref:System.Activities.AsyncCodeActivity>, <xref:System.Activities.DynamicActivity>, and <xref:System.Activities.ActivityWithResult> derive from this class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows a simple implementation of an <xref:System.Activities.Activity> derived class.  
-  
+The following example shows a simple implementation of an <xref:System.Activities.Activity> derived class.  
+ 
 <!-- TODO: review snippet reference  [!CODE [SimpleInterop#0](SimpleInterop#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,10 +87,10 @@
         <summary>Creates and validates a description of the activity’s arguments, variables, child activities, and activity delegates.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The workflow runtime uses the default implementation of <xref:System.Activities.Activity.CacheMetadata%2A> to ensure correct construction of a workflow as well as to manage runtime relationships and lifetime rules. The default implementation of <xref:System.Activities.Activity.CacheMetadata%2A> examines the public properties of the activity type using the type’s <xref:System.ComponentModel.TypeDescriptor>. These public members are of type <xref:System.Activities.Argument>, <xref:System.Activities.Variable>, <xref:T:System.Collections.Generic.IEnumerable\<T:System.Activities.Variable>>, <xref:System.Activities.Activity>, <xref:T:System.Collections.Generic.IEnumerable\<T:System.Activities.Activity>>, or <xref:System.Activities.ActivityDelegate>. You can override this method to customize the building of the activity’s run-time description and to provide custom validation logic.  
-  
+The workflow runtime uses the default implementation of <xref:System.Activities.Activity.CacheMetadata%2A> to ensure correct construction of a workflow as well as to manage runtime relationships and lifetime rules. The default implementation of <xref:System.Activities.Activity.CacheMetadata%2A> examines the public properties of the activity type using the type’s <xref:System.ComponentModel.TypeDescriptor>. These public members are of type <xref:System.Activities.Argument>, <xref:System.Activities.Variable>, <xref:T:System.Collections.Generic.IEnumerable\<T:System.Activities.Variable>>, <xref:System.Activities.Activity>, <xref:T:System.Collections.Generic.IEnumerable\<T:System.Activities.Activity>>, or <xref:System.Activities.ActivityDelegate>. You can override this method to customize the building of the activity’s run-time description and to provide custom validation logic.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,10 +130,10 @@
         <value>A friendly name that is used for debugging, validation, exception handling, and tracking.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only at runtime.  
-  
+This property is read-only at runtime.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <value>An identifier that is unique in the scope of the workflow definition.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Activity.Id%2A> is used in tracking and validation.  
-  
+<xref:System.Activities.Activity.Id%2A> is used in tracking and validation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,10 +194,10 @@
         <value>The delegate that contains the execution logic.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The execution logic can be implemented as several Activity objects by containing them in a Sequence activity or other composite activity.  
-  
+The execution logic can be implemented as several Activity objects by containing them in a Sequence activity or other composite activity.  
+ 
  ]]></format>
         </remarks>
       </Docs>

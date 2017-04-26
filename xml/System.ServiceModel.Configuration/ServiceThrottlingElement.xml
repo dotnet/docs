@@ -113,10 +113,10 @@
         <value>The maximum number of concurrent calls to a single service instance. The default is <see cref="F:System.Int32.MaxValue" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calls in excess of the limit are queued. Setting this value to 0 is equivalent to setting it to <xref:System.Int32>.  
-  
+Calls in excess of the limit are queued. Setting this value to 0 is equivalent to setting it to <xref:System.Int32>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,10 +146,10 @@
         <value>The maximum number of concurrent service instances. The default is 26.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Requests to create additional instances are queued and complete when a slot below the limit becomes available.  
-  
+Requests to create additional instances are queued and complete when a slot below the limit becomes available.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,10 +179,10 @@
         <value>The maximum number of concurrent connections to a single service. The default is <see cref="F:System.Int32.MaxValue" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The service accepts connections in excess of the limit. However, only the channels below the limit are active and messages are only read from active channels. Setting this property to 0 is equivalent to setting it to <xref:System.Int32>.  
-  
+The service accepts connections in excess of the limit. However, only the channels below the limit are active and messages are only read from active channels. Setting this property to 0 is equivalent to setting it to <xref:System.Int32>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

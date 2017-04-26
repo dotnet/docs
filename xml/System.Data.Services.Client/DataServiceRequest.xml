@@ -15,10 +15,10 @@
     <summary>Represents request objects submitted as a batch to [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a group of queries submitted as a batch to the data service, the queries are specified as <xref:System.Data.Services.Client.DataServiceRequest> instances. A <xref:System.Data.Services.Client.DataServiceResponse> is returned that represents the response of the batch request as a whole. Individual query responses are represented as <xref:System.Data.Services.Client.QueryOperationResponse> objects, derived from <xref:System.Data.Services.Client.OperationResponse>, that are accessible by enumerating the <xref:System.Data.Services.Client.DataServiceResponse> instance.  
-  
+In a group of queries submitted as a batch to the data service, the queries are specified as <xref:System.Data.Services.Client.DataServiceRequest> instances. A <xref:System.Data.Services.Client.DataServiceResponse> is returned that represents the response of the batch request as a whole. Individual query responses are represented as <xref:System.Data.Services.Client.QueryOperationResponse> objects, derived from <xref:System.Data.Services.Client.OperationResponse>, that are accessible by enumerating the <xref:System.Data.Services.Client.DataServiceResponse> instance.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,10 +80,10 @@
         <returns>The requested URI as a <see cref="T:System.String" /> value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Overrides the <xref:System.Object.ToString> method.  
-  
+Overrides the <xref:System.Object.ToString> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

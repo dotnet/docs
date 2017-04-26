@@ -14,12 +14,12 @@
     <summary>Represents the configuration element that is used when the client must expose an endpoint for the service to send messages over HTTP. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This configuration element adds two-way messaging to a custom binding. It is used with transports that do not allow duplex communications natively, for example, HTTP. TCP, by contrast, allows duplex communications natively, and does not require the use of this binding element for the service to send messages back to a client.  
-  
- The client must expose an address for the service to make contact and establish a connection. This client address is provided by the <xref:System.ServiceModel.Configuration.CompositeDuplexElement.ClientBaseAddress%2A> property.  
-  
+This configuration element adds two-way messaging to a custom binding. It is used with transports that do not allow duplex communications natively, for example, HTTP. TCP, by contrast, allows duplex communications natively, and does not require the use of this binding element for the service to send messages back to a client.  
+ 
+The client must expose an address for the service to make contact and establish a connection. This client address is provided by the <xref:System.ServiceModel.Configuration.CompositeDuplexElement.ClientBaseAddress%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -100,10 +100,10 @@
         <value>A <see cref="T:System.Uri" /> that contains the base address for the client.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The service uses this address to make contact and establish a connection with the client.  
-  
+The service uses this address to make contact and establish a connection with the client.  
+ 
  ]]></format>
         </remarks>
       </Docs>

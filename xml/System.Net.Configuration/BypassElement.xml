@@ -14,14 +14,14 @@
     <summary>Represents the address information for resources that are not retrieved using a proxy server. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class corresponds to the `address` attribute of the [\&lt;add\&gt; Element for bypasslist (Network Settings)](~/docs/framework/configure-apps/file-schema/network/add-element-for-bypasslist-network-settings.md) configuration element.  
-  
- This class is used to specify when a proxy server should not be used to handle requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes. A resource in the bypass list is retrieved directly from the server where it resides.  
-  
- This class provides programmatic access to information that can be stored in configuration files.  
-  
+This class corresponds to the `address` attribute of the [\&lt;add\&gt; Element for bypasslist (Network Settings)](~/docs/framework/configure-apps/file-schema/network/add-element-for-bypasslist-network-settings.md) configuration element.  
+ 
+This class is used to specify when a proxy server should not be used to handle requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes. A resource in the bypass list is retrieved directly from the server where it resides.  
+ 
+This class provides programmatic access to information that can be stored in configuration files.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,10 +58,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.BypassElement" /> class with the specified type information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Configuration.BypassElement.Address%2A> property is set to `address`.  
-  
+The <xref:System.Net.Configuration.BypassElement.Address%2A> property is set to `address`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <value>A string that identifies a resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property contains the address of a resource that is obtained without using a proxy server. Requests for the resource are sent directly to the server where the resource resides.  
-  
+This property contains the address of a resource that is obtained without using a proxy server. Requests for the resource are sent directly to the server where the resource resides.  
+ 
  ]]></format>
         </remarks>
       </Docs>

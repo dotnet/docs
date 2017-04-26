@@ -14,14 +14,14 @@
     <summary>Represents errors that occur when a <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control parses values to create a query.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Query.Dynamic.ParseException> object contains information about exceptions that occur when the <xref:System.Web.UI.WebControls.LinqDataSource> control parses values in order to dynamically create a query.  
-  
- If the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property includes a property that is not in the data object, the <xref:System.Web.UI.WebControls.LinqDataSource> control raises a <xref:System.Web.Query.Dynamic.ParseException> exception. The message indicates that the property does not exist in the data object.  
-  
- You can assign the data object in the <xref:System.Web.UI.WebControls.LinqDataSource.Selecting> event by setting the <xref:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.Result%2A> property to an object that is returned from a query. If you select a property that does not exist in the data object, the <xref:System.Web.UI.WebControls.LinqDataSource> control raises a <xref:System.Web.Query.Dynamic.ParseException> exception. The message indicates that the particular property does not exist in an `AnonymousType` object.  
-  
+The <xref:System.Web.Query.Dynamic.ParseException> object contains information about exceptions that occur when the <xref:System.Web.UI.WebControls.LinqDataSource> control parses values in order to dynamically create a query.  
+ 
+If the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property includes a property that is not in the data object, the <xref:System.Web.UI.WebControls.LinqDataSource> control raises a <xref:System.Web.Query.Dynamic.ParseException> exception. The message indicates that the property does not exist in the data object.  
+ 
+You can assign the data object in the <xref:System.Web.UI.WebControls.LinqDataSource.Selecting> event by setting the <xref:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.Result%2A> property to an object that is returned from a query. If you select a property that does not exist in the data object, the <xref:System.Web.UI.WebControls.LinqDataSource> control raises a <xref:System.Web.Query.Dynamic.ParseException> exception. The message indicates that the particular property does not exist in an `AnonymousType` object.  
+ 
  ]]></format>
     </remarks>
   </Docs>

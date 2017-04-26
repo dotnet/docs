@@ -41,33 +41,33 @@
     <summary>Contains methods to create types of objects locally or remotely, or obtain references to existing remote objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activator.CreateInstance%2A> method creates an instance of a type defined in an assembly by invoking the constructor that best matches the specified arguments. If no arguments are specified, the constructor that takes no parameters, that is, the default constructor, is invoked.  
+The <xref:System.Activator.CreateInstance%2A> method creates an instance of a type defined in an assembly by invoking the constructor that best matches the specified arguments. If no arguments are specified, the constructor that takes no parameters, that is, the default constructor, is invoked.  
+ 
+You must have sufficient permission to search for and call a constructor; otherwise, an exception is thrown. By default, only public constructors are considered during the search for a constructor. If no constructor or default constructor can be found, an exception is thrown.  
+ 
+A binder parameter specifies an object that searches an assembly for a suitable constructor. You can specify your own binder and search criteria. If no binder is specified, a default binder is used. For more information, see the <xref:System.Reflection.Binder?displayProperty=fullName> and <xref:System.Reflection.BindingFlags?displayProperty=fullName> classes.  
+ 
+An evidence parameter affects the security policy and permissions for the constructor. For more information, see the <xref:System.Security.Policy.Evidence?displayProperty=fullName> class.  
+ 
+An instance of a type can be created at a local or remote site. If the type is created remotely, an activation attribute parameter specifies the URI of the remote site. The call to create the instance might pass through intermediary sites before it reaches the remote site. Other activation attributes can modify the environment, or context, in which the call operates at the remote and intermediary sites.  
+ 
+If the instance is created locally, a reference to that object is returned. If the instance is created remotely, a reference to a proxy is returned. The remote object is manipulated through the proxy as if it were a local object.  
+ 
+The <xref:System.Activator.GetObject%2A> method creates a proxy to a currently running remote object, server-activated well-known object, or XML Web service. You can specify the connection medium, that is, the channel. For more information, see the <xref:System.Runtime.Remoting.Channels.ChannelServices?displayProperty=fullName> class.  
+ 
+Assemblies contain type definitions. The <xref:System.Activator.CreateInstance%2A> method creates an instance of a type from a currently running assembly. The <xref:System.Activator.CreateInstanceFrom%2A> method creates an instance from a file that contains an assembly. The <xref:System.Activator.CreateComInstanceFrom%2A> method creates an instance of a COM object from a file that contains an assembly.  
+ 
   
- You must have sufficient permission to search for and call a constructor; otherwise, an exception is thrown. By default, only public constructors are considered during the search for a constructor. If no constructor or default constructor can be found, an exception is thrown.  
-  
- A binder parameter specifies an object that searches an assembly for a suitable constructor. You can specify your own binder and search criteria. If no binder is specified, a default binder is used. For more information, see the <xref:System.Reflection.Binder?displayProperty=fullName> and <xref:System.Reflection.BindingFlags?displayProperty=fullName> classes.  
-  
- An evidence parameter affects the security policy and permissions for the constructor. For more information, see the <xref:System.Security.Policy.Evidence?displayProperty=fullName> class.  
-  
- An instance of a type can be created at a local or remote site. If the type is created remotely, an activation attribute parameter specifies the URI of the remote site. The call to create the instance might pass through intermediary sites before it reaches the remote site. Other activation attributes can modify the environment, or context, in which the call operates at the remote and intermediary sites.  
-  
- If the instance is created locally, a reference to that object is returned. If the instance is created remotely, a reference to a proxy is returned. The remote object is manipulated through the proxy as if it were a local object.  
-  
- The <xref:System.Activator.GetObject%2A> method creates a proxy to a currently running remote object, server-activated well-known object, or XML Web service. You can specify the connection medium, that is, the channel. For more information, see the <xref:System.Runtime.Remoting.Channels.ChannelServices?displayProperty=fullName> class.  
-  
- Assemblies contain type definitions. The <xref:System.Activator.CreateInstance%2A> method creates an instance of a type from a currently running assembly. The <xref:System.Activator.CreateInstanceFrom%2A> method creates an instance from a file that contains an assembly. The <xref:System.Activator.CreateComInstanceFrom%2A> method creates an instance of a COM object from a file that contains an assembly.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Activator> class to dynamically construct objects at run time.  
-  
- [!code-cpp[ActivatorX#1](~/samples/snippets/cpp/VS_Snippets_CLR/ActivatorX/cpp/ActivatorX.cpp#1)]
- [!code-csharp[ActivatorX#1](~/samples/snippets/csharp/VS_Snippets_CLR/ActivatorX/cs/ActivatorX.cs#1)]
- [!code-vb[ActivatorX#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ActivatorX/VB/ActivatorX.vb#1)]  
-  
+The following example shows how to use the <xref:System.Activator> class to dynamically construct objects at run time.  
+ 
+[!code-cpp[ActivatorX#1](~/samples/snippets/cpp/VS_Snippets_CLR/ActivatorX/cpp/ActivatorX.cpp#1)]
+[!code-csharp[ActivatorX#1](~/samples/snippets/csharp/VS_Snippets_CLR/ActivatorX/cs/ActivatorX.cs#1)]
+[!code-vb[ActivatorX#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ActivatorX/VB/ActivatorX.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,19 +96,19 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
-  
- A <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attribute with a value of `true` must be applied either explicitly or by default to the COM type so the <xref:System.Activator.CreateComInstanceFrom%2A> method can create an instance of that type; otherwise, <xref:System.TypeLoadException> is thrown.  
-  
- For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
-  
+Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+ 
+A <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attribute with a value of `true` must be applied either explicitly or by default to the COM type so the <xref:System.Activator.CreateComInstanceFrom%2A> method can create an instance of that type; otherwise, <xref:System.TypeLoadException> is thrown.  
+ 
+For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to create nonpublic types if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -160,19 +160,19 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
-  
- A <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attribute with a value of `true` must be applied either explicitly or by default to the COM type so the <xref:System.Activator.CreateComInstanceFrom%2A> method can create an instance of that type; otherwise, <xref:System.TypeLoadException> is thrown.  
-  
- For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
-  
+Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+ 
+A <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attribute with a value of `true` must be applied either explicitly or by default to the COM type so the <xref:System.Activator.CreateComInstanceFrom%2A> method can create an instance of that type; otherwise, <xref:System.TypeLoadException> is thrown.  
+ 
+For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to create nonpublic types if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -231,12 +231,12 @@
         <returns>A handle that must be unwrapped to access the newly created object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
-  
- The activation context is used during manifest-based activation to set up the domain policy and to provide an application-based security model. The <xref:System.ActivationContext> class contains an <xref:System.ApplicationIdentity> object that provides access to the application manifest. For more information, see the <xref:System.Security.Policy.ApplicationSecurityManager> class.  
-  
+Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+ 
+The activation context is used during manifest-based activation to set up the domain policy and to provide an application-based security model. The <xref:System.ActivationContext> class contains an <xref:System.ApplicationIdentity> object that provides access to the application manifest. For more information, see the <xref:System.Security.Policy.ApplicationSecurityManager> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,24 +274,24 @@
         <returns>A reference to the newly created object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor to be invoked must be accessible.  
-  
+The constructor to be invoked must be accessible.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access nonpublic types if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Activator.CreateInstance%28System.Type%29> method. Instances of several different types are created and their default values are displayed.  
-  
- [!code-cpp[ActivatorX#4](~/samples/snippets/cpp/VS_Snippets_CLR/ActivatorX/cpp/source2.cpp#4)]
- [!code-csharp[ActivatorX#4](~/samples/snippets/csharp/VS_Snippets_CLR/ActivatorX/cs/source2.cs#4)]
- [!code-vb[ActivatorX#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ActivatorX/VB/source2.vb#4)]  
-  
+The following code example demonstrates how to call the <xref:System.Activator.CreateInstance%28System.Type%29> method. Instances of several different types are created and their default values are displayed.  
+ 
+[!code-cpp[ActivatorX#4](~/samples/snippets/cpp/VS_Snippets_CLR/ActivatorX/cpp/source2.cpp#4)]
+[!code-csharp[ActivatorX#4](~/samples/snippets/csharp/VS_Snippets_CLR/ActivatorX/cs/source2.cs#4)]
+[!code-vb[ActivatorX#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ActivatorX/VB/source2.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -370,12 +370,12 @@
         <returns>A handle that must be unwrapped to access the newly created object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
-  
- The activation context is used during manifest-based activation to set up the domain policy and to provide an application-based security model. The <xref:System.ActivationContext> class contains an <xref:System.ApplicationIdentity> object that provides access to the application manifest. For more information, see the <xref:System.Security.Policy.ApplicationSecurityManager> class.  
-  
+Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+ 
+The activation context is used during manifest-based activation to set up the domain policy and to provide an application-based security model. The <xref:System.ActivationContext> class contains an <xref:System.ApplicationIdentity> object that provides access to the application manifest. For more information, see the <xref:System.Security.Policy.ApplicationSecurityManager> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -409,41 +409,41 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
-  
- `assemblyName` can be either of the following:  
-  
+Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
+ 
+`assemblyName` can be either of the following:  
+ 
 -   The simple name of an assembly, without its path or file extension. For example, you would specify `TypeExtensions` for an assembly whose path and name are .\bin\TypeExtensions.dll.  
-  
+ 
 -   The full name of a signed assembly, which consists of its simple name, version, culture, and public key token; for example, "TypeExtensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=181869f2f7435b51".  
-  
- For more information on how the common language runtime identifies and loads assemblies, see [How the Runtime Locates Assemblies](~/docs/framework/deployment/how-the-runtime-locates-assemblies.md). For information on using the application configuration file to define assembly locations, see [Specifying an Assembly's Location](~/docs/framework/configure-apps/specify-assembly-location.md). If `assemblyName` is found, it is loaded in the default context.  
-  
+ 
+For more information on how the common language runtime identifies and loads assemblies, see [How the Runtime Locates Assemblies](~/docs/framework/deployment/how-the-runtime-locates-assemblies.md). For information on using the application configuration file to define assembly locations, see [Specifying an Assembly's Location](~/docs/framework/configure-apps/specify-assembly-location.md). If `assemblyName` is found, it is loaded in the default context.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to create nonpublic types if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example defines a class named `Person` in an assembly named `PersonInfo`. Note that the `Person` class has two constructors, one of which is parameterless.  
-  
- [!code-csharp[System.Activator.CreateInstance#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/personinfo.cs#1)]
- [!code-vb[System.Activator.CreateInstance#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/personinfo.vb#1)]  
-  
- The following example calls the <xref:System.Activator.CreateInstance%28System.String%2CSystem.String%29> method to instantiate the `Person` class. It requires a reference to PersonInfo.dll to be added to the project. Because the <xref:System.Activator.CreateInstance%28System.String%2CSystem.String%29> method calls the `Person` class default constructor,  the example assigns a value to its `Name` property.  
-  
- [!code-csharp[System.Activator.CreateInstance#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/createinstanceex1.cs#2)]
- [!code-vb[System.Activator.CreateInstance#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/createinstanceex1.vb#2)]  
-  
- However, <xref:System.Activator.CreateInstance%2A> is frequently called to instantiate a type that crosses machine boundaries or that is not known at design time. In this case, you cannot include a reference to the assembly in the project and cannot make early-bound calls to the type's members. To work around this limitation, the following example uses the <xref:System.Activator.CreateInstance%2A> method along with reflection to assign a value to the `Person` object's `Name` property and to display its value.  
-  
- [!code-csharp[System.Activator.CreateInstance#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/createinstanceex1a.cs#3)]
- [!code-vb[System.Activator.CreateInstance#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/createinstanceex1a.vb#3)]  
-  
+The following example defines a class named `Person` in an assembly named `PersonInfo`. Note that the `Person` class has two constructors, one of which is parameterless.  
+ 
+[!code-csharp[System.Activator.CreateInstance#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/personinfo.cs#1)]
+[!code-vb[System.Activator.CreateInstance#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/personinfo.vb#1)]  
+ 
+The following example calls the <xref:System.Activator.CreateInstance%28System.String%2CSystem.String%29> method to instantiate the `Person` class. It requires a reference to PersonInfo.dll to be added to the project. Because the <xref:System.Activator.CreateInstance%28System.String%2CSystem.String%29> method calls the `Person` class default constructor,  the example assigns a value to its `Name` property.  
+ 
+[!code-csharp[System.Activator.CreateInstance#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/createinstanceex1.cs#2)]
+[!code-vb[System.Activator.CreateInstance#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/createinstanceex1.vb#2)]  
+ 
+However, <xref:System.Activator.CreateInstance%2A> is frequently called to instantiate a type that crosses machine boundaries or that is not known at design time. In this case, you cannot include a reference to the assembly in the project and cannot make early-bound calls to the type's members. To work around this limitation, the following example uses the <xref:System.Activator.CreateInstance%2A> method along with reflection to assign a value to the `Person` object's `Name` property and to display its value.  
+ 
+[!code-csharp[System.Activator.CreateInstance#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/createinstanceex1a.cs#3)]
+[!code-vb[System.Activator.CreateInstance#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/createinstanceex1a.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -506,14 +506,14 @@
         <returns>A reference to the newly created object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access nonpublic types and members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types and members is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -588,28 +588,28 @@
         <returns>A reference to the newly created object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor to be invoked must be accessible and must provide the most specific match with the specified argument list.  
-  
+The constructor to be invoked must be accessible and must provide the most specific match with the specified argument list.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access nonpublic types if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example calls the  <xref:System.Activator.CreateInstance%28System.Type%2CSystem.Object%5B%5D%29> method to create a <xref:System.String> object. It calls the <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> constructor to instantiate a string that contains ten elements from a character array starting at the fourteenth position.  
-  
- [!code-csharp[System.Activator.CreateInstance#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/CreateInstance5.cs#5)]
- [!code-vb[System.Activator.CreateInstance#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/CreateInstance5.vb#5)]  
-  
- The following example creates a jagged array whose elements are arguments to be passed to a <xref:System.String> constructor. The example then passes each array to the <xref:System.Activator.CreateInstance%28System.Type%2CSystem.Object%5B%5D%29> method to invoke the appropriate string constructor.  
-  
- [!code-csharp[System.Activator.CreateInstance#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/createinstance2.cs#4)]
- [!code-vb[System.Activator.CreateInstance#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/createinstance2.vb#4)]  
-  
+The following example calls the  <xref:System.Activator.CreateInstance%28System.Type%2CSystem.Object%5B%5D%29> method to create a <xref:System.String> object. It calls the <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> constructor to instantiate a string that contains ten elements from a character array starting at the fourteenth position.  
+ 
+[!code-csharp[System.Activator.CreateInstance#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/CreateInstance5.cs#5)]
+[!code-vb[System.Activator.CreateInstance#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/CreateInstance5.vb#5)]  
+ 
+The following example creates a jagged array whose elements are arguments to be passed to a <xref:System.String> constructor. The example then passes each array to the <xref:System.Activator.CreateInstance%28System.Type%2CSystem.Object%5B%5D%29> method to invoke the appropriate string constructor.  
+ 
+[!code-csharp[System.Activator.CreateInstance#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/createinstance2.cs#4)]
+[!code-vb[System.Activator.CreateInstance#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/createinstance2.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -694,15 +694,15 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Activator.CreateInstance%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
-  
- Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
-  
+Use <xref:System.Activator.CreateInstance%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
+ 
+Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
+ 
 > [!NOTE]
 >  This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> to require the immediate caller to have full trust.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -770,15 +770,15 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
-  
+Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to create nonpublic types if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the nonpublic types is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -850,15 +850,15 @@
         <returns>A reference to the newly created object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor to be invoked must be accessible and must provide the most specific match with the specified argument list.  
-  
+The constructor to be invoked must be accessible and must provide the most specific match with the specified argument list.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access nonpublic types if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -934,15 +934,15 @@
         <returns>A reference to the newly created object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor to be invoked must provide the most specific match with the specified argument list under the constraints of the specified binder and binding attributes.  
-  
+The constructor to be invoked must provide the most specific match with the specified argument list under the constraints of the specified binder and binding attributes.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access nonpublic types and members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types and members is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1023,15 +1023,15 @@
         <returns>A reference to the newly created object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor to be invoked must provide the most specific match with the specified argument list under the constraints of the specified binder and binding attributes.  
-  
+The constructor to be invoked must provide the most specific match with the specified argument list under the constraints of the specified binder and binding attributes.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access nonpublic types and members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the nonpublic types and members is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1117,15 +1117,15 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
-  
+Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to create nonpublic types and members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types and members is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md)42d9dc2a-8fcc-4ff3-b002-4ff260ef3dc5.)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1209,15 +1209,15 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Activator.CreateInstance%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
-  
- Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
-  
+Use <xref:System.Activator.CreateInstance%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
+ 
+Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
+ 
 > [!NOTE]
 >  This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> to require the immediate caller to have full trust.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1305,15 +1305,15 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
-  
+Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to create nonpublic types and members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types and members is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1400,15 +1400,15 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Activator.CreateInstance%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
-  
- Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
-  
+Use <xref:System.Activator.CreateInstance%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
+ 
+Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
+ 
 > [!NOTE]
 >  This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> to require the immediate caller to have full trust.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1481,18 +1481,18 @@
         <returns>A reference to the newly created object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activator.CreateInstance%60%601> generic method is used by compilers to implement the instantiation of types specified by type parameters. For example, in the following generic method, the implementation of `new T()` (`gcnew T()` in C++) uses the <xref:System.Activator.CreateInstance%60%601> generic method.  
-  
- [!code-cpp[System.Activation.CreateInstance~~1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.activation.createinstance~~1/cpp/remarks.cpp#1)]
- [!code-csharp[System.Activation.CreateInstance~~1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activation.createinstance~~1/cs/remarks.cs#1)]
- [!code-vb[System.Activation.CreateInstance~~1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activation.createinstance~~1/vb/remarks.vb#1)]  
-  
- In general, there is no use for the <xref:System.Activator.CreateInstance%60%601> generic method in application code, because the type must be known at compile time. If the type is known at compile time, normal instantiation syntax can be used (`new` operator in C#, `New` in Visual Basic, `gcnew` in C++). If the type is not known at compile time, you can call a non-generic overload of <xref:System.Activator.CreateInstance%2A>.  
-  
- There are no overloads of the <xref:System.Activator.CreateInstance%60%601> generic method that take argument lists, because the non-generic overloads of <xref:System.Activator.CreateInstance%2A> already provide late-bound constructor resolution.  
-  
+The <xref:System.Activator.CreateInstance%60%601> generic method is used by compilers to implement the instantiation of types specified by type parameters. For example, in the following generic method, the implementation of `new T()` (`gcnew T()` in C++) uses the <xref:System.Activator.CreateInstance%60%601> generic method.  
+ 
+[!code-cpp[System.Activation.CreateInstance~~1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.activation.createinstance~~1/cpp/remarks.cpp#1)]
+[!code-csharp[System.Activation.CreateInstance~~1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activation.createinstance~~1/cs/remarks.cs#1)]
+[!code-vb[System.Activation.CreateInstance~~1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activation.createinstance~~1/vb/remarks.vb#1)]  
+ 
+In general, there is no use for the <xref:System.Activator.CreateInstance%60%601> generic method in application code, because the type must be known at compile time. If the type is known at compile time, normal instantiation syntax can be used (`new` operator in C#, `New` in Visual Basic, `gcnew` in C++). If the type is not known at compile time, you can call a non-generic overload of <xref:System.Activator.CreateInstance%2A>.  
+ 
+There are no overloads of the <xref:System.Activator.CreateInstance%60%601> generic method that take argument lists, because the non-generic overloads of <xref:System.Activator.CreateInstance%2A> already provide late-bound constructor resolution.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.MissingMethodException">
@@ -1530,21 +1530,21 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+ 
+For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+ 
   
- For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Activator.CreateInstanceFrom%2A> method. This code example is part of a larger example provided for the <xref:System.Activator> class.  
-  
- [!code-cpp[ActivatorX#3](~/samples/snippets/cpp/VS_Snippets_CLR/ActivatorX/cpp/ActivatorX.cpp#3)]
- [!code-csharp[ActivatorX#3](~/samples/snippets/csharp/VS_Snippets_CLR/ActivatorX/cs/ActivatorX.cs#3)]
- [!code-vb[ActivatorX#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/ActivatorX/VB/ActivatorX.vb#3)]  
-  
+The following code example demonstrates how to call the <xref:System.Activator.CreateInstanceFrom%2A> method. This code example is part of a larger example provided for the <xref:System.Activator> class.  
+ 
+[!code-cpp[ActivatorX#3](~/samples/snippets/cpp/VS_Snippets_CLR/ActivatorX/cpp/ActivatorX.cpp#3)]
+[!code-csharp[ActivatorX#3](~/samples/snippets/csharp/VS_Snippets_CLR/ActivatorX/cs/ActivatorX.cs#3)]
+[!code-vb[ActivatorX#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/ActivatorX/VB/ActivatorX.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1600,17 +1600,17 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Activator.CreateInstanceFrom%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
-  
- Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
-  
+Use <xref:System.Activator.CreateInstanceFrom%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
+ 
+Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+ 
 > [!NOTE]
 >  This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> to require the immediate caller to have full trust.  
-  
- For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
-  
+ 
+For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1663,12 +1663,12 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
-  
- For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
-  
+Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+ 
+For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1734,12 +1734,12 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
-  
- For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
-  
+Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+ 
+For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1812,14 +1812,14 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Activator.CreateInstanceFrom%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
-  
- Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
-  
- For information about other exceptions that can be thrown by invoked methods, see the Exceptions sections of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
-  
+Use <xref:System.Activator.CreateInstanceFrom%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
+ 
+Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+ 
+For information about other exceptions that can be thrown by invoked methods, see the Exceptions sections of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1893,12 +1893,12 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
-  
- For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
-  
+Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+ 
+For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1976,17 +1976,17 @@
         <returns>A handle that must be unwrapped to access the newly created instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Activator.CreateInstanceFrom%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
-  
- Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
-  
+Use <xref:System.Activator.CreateInstanceFrom%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
+ 
+Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+ 
 > [!NOTE]
 >  This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> to require the immediate caller to have full trust.  
-  
- For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
-  
+ 
+For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2043,10 +2043,10 @@
         <returns>A proxy that points to an endpoint served by the requested well-known object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call the proxy to send messages to the remote object. No messages are sent over the network until a method is called on the proxy.  
-  
+Call the proxy to send messages to the remote object. No messages are sent over the network until a method is called on the proxy.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2088,12 +2088,12 @@
         <returns>A proxy that points to an endpoint served by the requested well-known object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call the proxy to send messages to the remote object. No messages are sent over the network until a method is called on the proxy.  
-  
- The `state` parameter communicates information to the channel, and is passed to the <xref:System.Runtime.Remoting.Channels.IChannelSender.CreateMessageSink%2A?displayProperty=fullName> method.  
-  
+Call the proxy to send messages to the remote object. No messages are sent over the network until a method is called on the proxy.  
+ 
+The `state` parameter communicates information to the channel, and is passed to the <xref:System.Runtime.Remoting.Channels.IChannelSender.CreateMessageSink%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2133,10 +2133,10 @@
         <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to access managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
+This method is used to access managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -2167,10 +2167,10 @@
         <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to access managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
+This method is used to access managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -2197,10 +2197,10 @@
         <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to access managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
+This method is used to access managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
@@ -2241,10 +2241,10 @@
         <summary>Provides access to properties and methods exposed by an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to access managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
+This method is used to access managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>

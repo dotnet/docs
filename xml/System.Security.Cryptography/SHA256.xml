@@ -30,23 +30,23 @@
     <summary>Computes the <see cref="T:System.Security.Cryptography.SHA256" /> hash for the input data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The hash is used as a unique value of fixed size representing a large amount of data. Hashes of two sets of data should match if and only if the corresponding data also matches. Small changes to the data result in large unpredictable changes in the hash.  
+The hash is used as a unique value of fixed size representing a large amount of data. Hashes of two sets of data should match if and only if the corresponding data also matches. Small changes to the data result in large unpredictable changes in the hash.  
+ 
+The hash size for the <xref:System.Security.Cryptography.SHA256> algorithm is 256 bits.  
+ 
+This is an abstract class. The only implementation of this class is <xref:System.Security.Cryptography.SHA256Managed>.  
+ 
   
- The hash size for the <xref:System.Security.Cryptography.SHA256> algorithm is 256 bits.  
-  
- This is an abstract class. The only implementation of this class is <xref:System.Security.Cryptography.SHA256Managed>.  
-  
-   
-  
+ 
 ## Examples  
- The following example calculates the SHA-256 hash for all files in a directory.  
-  
- [!code-cpp[Classic SHA256 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SHA256 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic SHA256 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SHA256 Example/CS/source.cs#1)]
- [!code-vb[Classic SHA256 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SHA256 Example/VB/source.vb#1)]  
-  
+The following example calculates the SHA-256 hash for all files in a directory.  
+ 
+[!code-cpp[Classic SHA256 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SHA256 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic SHA256 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SHA256 Example/CS/source.cs#1)]
+[!code-vb[Classic SHA256 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SHA256 Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,10 +76,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Security.Cryptography.SHA256" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot create an instance of an abstract class. Application code create a new instance of a derived class.  
-  
+You cannot create an instance of an abstract class. Application code create a new instance of a derived class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,14 +19,14 @@
     <summary>The <see langword="abstract" /> base class representing a field or a property to be extracted from a workflow instance and its associated annotations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.Runtime.Tracking.TrackingExtract> is the `abstract` base class from which the <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> class and the <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> class are derived. An <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> specifies a field or a property to be extracted from the activity associated with a tracking event and a <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> specifies a field or a property to be extracted from the root activity of the workflow instance.  
-  
+ 
+<xref:System.Workflow.Runtime.Tracking.TrackingExtract> is the `abstract` base class from which the <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> class and the <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> class are derived. An <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> specifies a field or a property to be extracted from the activity associated with a tracking event and a <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> specifies a field or a property to be extracted from the root activity of the workflow instance.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,10 +63,10 @@
         <value>The <see cref="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" /> associated with the extracted data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Annotations are `strings` that you define that contain information to associate with the extracted data.  
-  
+Annotations are `strings` that you define that contain information to associate with the extracted data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <value>The dot delineated name of a field or a property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Runtime.Tracking.TrackingExtract.Member%2A> can be set to specify a field or a property; a member of a field or a property; or a single element of a field or a property (or a member of either) that implements the <xref:System.Collections.IEnumerable> interface. For example, a single element in an `array` may be specified.  
-  
+<xref:System.Workflow.Runtime.Tracking.TrackingExtract.Member%2A> can be set to specify a field or a property; a member of a field or a property; or a single element of a field or a property (or a member of either) that implements the <xref:System.Collections.IEnumerable> interface. For example, a single element in an `array` may be specified.  
+ 
  ]]></format>
         </remarks>
       </Docs>

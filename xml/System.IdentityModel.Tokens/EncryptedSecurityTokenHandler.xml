@@ -14,10 +14,10 @@
     <summary>A token handler for encrypted security tokens. Handles tokens of type <see cref="T:System.IdentityModel.Tokens.EncryptedSecurityToken" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A token handler that serializes and deserializes <xref:System.IdentityModel.Tokens.EncryptedSecurityToken> objects from `<xenc:EncryptedData>` elements and <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause> objects from `<xenc:EncryptedKey>` elements as defined in the XML Encryption Syntax and Processing specification (http://www.w3.org/TR/2002/REC-xmlenc-core-20021210).  
-  
+A token handler that serializes and deserializes <xref:System.IdentityModel.Tokens.EncryptedSecurityToken> objects from `<xenc:EncryptedData>` elements and <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause> objects from `<xenc:EncryptedKey>` elements as defined in the XML Encryption Syntax and Processing specification (http://www.w3.org/TR/2002/REC-xmlenc-core-20021210).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,10 +84,10 @@
           <see langword="true" /> if the reader is positioned at an <see langword="&lt;xenc:EncryptedData&gt;" /> element; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Does not move the reader when it returns `false`.  
-  
+Does not move the reader when it returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

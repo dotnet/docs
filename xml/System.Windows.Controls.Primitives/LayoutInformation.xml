@@ -14,13 +14,13 @@
     <summary>Defines methods that provide additional information about the layout state of an element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutSlot%2A> method to translate the bounding box of a <xref:System.Windows.FrameworkElement> into a <xref:System.Windows.Media.GeometryDrawing>.  
-  
- [!code-csharp[LayoutInformation#2](~/samples/snippets/csharp/VS_Snippets_Wpf/LayoutInformation/CSharp/Window1.xaml.cs#2)]
- [!code-vb[LayoutInformation#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/LayoutInformation/VisualBasic/Window1.xaml.vb#2)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutSlot%2A> method to translate the bounding box of a <xref:System.Windows.FrameworkElement> into a <xref:System.Windows.Media.GeometryDrawing>.  
+ 
+[!code-csharp[LayoutInformation#2](~/samples/snippets/csharp/VS_Snippets_Wpf/LayoutInformation/CSharp/Window1.xaml.cs#2)]
+[!code-vb[LayoutInformation#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/LayoutInformation/VisualBasic/Window1.xaml.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <returns>A <see cref="T:System.Windows.Media.Geometry" /> that represents the visible region of an <paramref name="element" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a <xref:System.Windows.FrameworkElement.LayoutTransform%2A> has been applied to the `element`, the returned <xref:System.Windows.Media.Geometry> can be non-rectangular.  
-  
+If a <xref:System.Windows.FrameworkElement.LayoutTransform%2A> has been applied to the `element`, the returned <xref:System.Windows.Media.Geometry> can be non-rectangular.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,10 +75,10 @@
         <returns>A <see cref="T:System.Windows.UIElement" /> that was being processed by the layout engine at the moment of an unhandled exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can view the result of this operation from an application exception handler to fix problems in the layout of an application.  
-  
+You can view the result of this operation from an application exception handler to fix problems in the layout of an application.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Occurs when <paramref name="dispatcher" /> is <see langword="null" />.</exception>
@@ -105,13 +105,13 @@
         <returns>A <see cref="T:System.Windows.Rect" /> that represents the layout slot of the element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutSlot%2A> method to translate the bounding box of a <xref:System.Windows.FrameworkElement> into a <xref:System.Windows.Media.GeometryDrawing>.  
-  
- [!code-csharp[LayoutInformation#2](~/samples/snippets/csharp/VS_Snippets_Wpf/LayoutInformation/CSharp/Window1.xaml.cs#2)]
- [!code-vb[LayoutInformation#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/LayoutInformation/VisualBasic/Window1.xaml.vb#2)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutSlot%2A> method to translate the bounding box of a <xref:System.Windows.FrameworkElement> into a <xref:System.Windows.Media.GeometryDrawing>.  
+ 
+[!code-csharp[LayoutInformation#2](~/samples/snippets/csharp/VS_Snippets_Wpf/LayoutInformation/CSharp/Window1.xaml.cs#2)]
+[!code-vb[LayoutInformation#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/LayoutInformation/VisualBasic/Window1.xaml.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

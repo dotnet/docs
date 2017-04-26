@@ -14,12 +14,12 @@
     <summary>Provides a minimal reader of incoming response return values for Web service clients implemented using HTTP but without SOAP.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Services.Protocols.AnyReturnReader> and other classes in the <xref:System.Web.Services.Protocols> namespace support the .NET Framework's implementations of Web services via the HTTP-GET and HTTP-POST operations. Web service writers and readers serialize and deserialize, respectively, between the parameters or return objects of Web methods and the HTTP request or response streams. Web service writers and readers use HTTP for transport but don't exchange messages using the SOAP standard.  
-  
- The <xref:System.Web.Services.Protocols.AnyReturnReader> class provides a minimal implementation of the interface of the abstract parent class <xref:System.Web.Services.Protocols.MimeReturnReader>.You typically will not need to use <xref:System.Web.Services.Protocols.AnyReturnReader> directly. When the Wsdl.exe tool generates client proxy code according to the HTTP-GET or HTTP-POST implementations, it applies the <xref:System.Web.Services.Protocols.HttpMethodAttribute> to each Web method and by default sets the attribute's <xref:System.Web.Services.Protocols.HttpMethodAttribute.ReturnFormatter%2A> property to <xref:System.Web.Services.Protocols.XmlReturnReader>, another class derived from <xref:System.Web.Services.Protocols.MimeReturnReader>.  
-  
+<xref:System.Web.Services.Protocols.AnyReturnReader> and other classes in the <xref:System.Web.Services.Protocols> namespace support the .NET Framework's implementations of Web services via the HTTP-GET and HTTP-POST operations. Web service writers and readers serialize and deserialize, respectively, between the parameters or return objects of Web methods and the HTTP request or response streams. Web service writers and readers use HTTP for transport but don't exchange messages using the SOAP standard.  
+ 
+The <xref:System.Web.Services.Protocols.AnyReturnReader> class provides a minimal implementation of the interface of the abstract parent class <xref:System.Web.Services.Protocols.MimeReturnReader>.You typically will not need to use <xref:System.Web.Services.Protocols.AnyReturnReader> directly. When the Wsdl.exe tool generates client proxy code according to the HTTP-GET or HTTP-POST implementations, it applies the <xref:System.Web.Services.Protocols.HttpMethodAttribute> to each Web method and by default sets the attribute's <xref:System.Web.Services.Protocols.HttpMethodAttribute.ReturnFormatter%2A> property to <xref:System.Web.Services.Protocols.XmlReturnReader>, another class derived from <xref:System.Web.Services.Protocols.MimeReturnReader>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,12 +60,12 @@
         <returns>The parameter passed to the <see cref="M:System.Web.Services.Protocols.AnyReturnReader.Initialize(System.Object)" /> method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An initializer is an object passed as a parameter to the <xref:System.Web.Services.Protocols.AnyReturnReader.Initialize%2A> method. For the <xref:System.Web.Services.Protocols.AnyReturnReader> class, the initializer is the instance referred to by the keyword `this`, unless the <xref:System.Web.Services.Protocols.LogicalMethodInfo> parameter value has a void return type, in which case the initializer is set to `null`.  
-  
- The <xref:System.Web.Services.Protocols.AnyReturnReader.GetInitializer%2A> method is invoked during service initialization. Later, at the time a response is processed, the initializer <xref:System.Web.Services.Protocols.AnyReturnReader> object is passed to the <xref:System.Web.Services.Protocols.AnyReturnReader.Initialize%2A> method of another <xref:System.Web.Services.Protocols.AnyReturnReader> instance. The other instance takes the call to the <xref:System.Web.Services.Protocols.AnyReturnReader.Read%2A> method.  
-  
+An initializer is an object passed as a parameter to the <xref:System.Web.Services.Protocols.AnyReturnReader.Initialize%2A> method. For the <xref:System.Web.Services.Protocols.AnyReturnReader> class, the initializer is the instance referred to by the keyword `this`, unless the <xref:System.Web.Services.Protocols.LogicalMethodInfo> parameter value has a void return type, in which case the initializer is set to `null`.  
+ 
+The <xref:System.Web.Services.Protocols.AnyReturnReader.GetInitializer%2A> method is invoked during service initialization. Later, at the time a response is processed, the initializer <xref:System.Web.Services.Protocols.AnyReturnReader> object is passed to the <xref:System.Web.Services.Protocols.AnyReturnReader.Initialize%2A> method of another <xref:System.Web.Services.Protocols.AnyReturnReader> instance. The other instance takes the call to the <xref:System.Web.Services.Protocols.AnyReturnReader.Read%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,12 +90,12 @@
         <summary>Initializes an instance of the <see cref="T:System.Web.Services.Protocols.AnyReturnReader" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Protocols.AnyReturnReader.Initialize%2A> method does nothing.  
-  
- This method is invoked at the time a response is processed. The input parameter, `initializer`, is another instance of <xref:System.Web.Services.Protocols.AnyReturnReader>, obtained during client initialization.  
-  
+The <xref:System.Web.Services.Protocols.AnyReturnReader.Initialize%2A> method does nothing.  
+ 
+This method is invoked at the time a response is processed. The input parameter, `initializer`, is another instance of <xref:System.Web.Services.Protocols.AnyReturnReader>, obtained during client initialization.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
         <returns>The input HTTP response stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Protocols.AnyReturnReader> class's implementation of the <xref:System.Web.Services.Protocols.AnyReturnReader.Read%2A> method does no reading. Instead it simply returns the <xref:System.IO.Stream> object passed as a parameter.  
-  
+The <xref:System.Web.Services.Protocols.AnyReturnReader> class's implementation of the <xref:System.Web.Services.Protocols.AnyReturnReader.Read%2A> method does no reading. Instead it simply returns the <xref:System.IO.Stream> object passed as a parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>

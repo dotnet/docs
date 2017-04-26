@@ -14,17 +14,17 @@
     <summary>Represents the configuration section for authentication service settings. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.ScriptingAuthenticationServiceSection> class enables you to programmatically access and modify the `authenticationService` element of the configuration section for using AJAX functionality in ASP.NET.  
+The <xref:System.Web.Configuration.ScriptingAuthenticationServiceSection> class enables you to programmatically access and modify the `authenticationService` element of the configuration section for using AJAX functionality in ASP.NET.  
+ 
+The authentication service for AJAX-enabled applications only works with forms-based authentication that uses cookies to exchange user information. For more information about Forms Authentication, see [Using Forms Authentication with Microsoft Ajax](http://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e).  
+ 
   
- The authentication service for AJAX-enabled applications only works with forms-based authentication that uses cookies to exchange user information. For more information about Forms Authentication, see [Using Forms Authentication with Microsoft Ajax](http://msdn.microsoft.com/library/c50f7dc5-323c-4c63-b4f3-96edfc1e815e).  
-  
-   
-  
+ 
 ## Examples  
- The following configuration file excerpt shows how to declaratively specify values for properties of the <xref:System.Web.Configuration.ScriptingAuthenticationServiceSection> class.  
-  
+The following configuration file excerpt shows how to declaratively specify values for properties of the <xref:System.Web.Configuration.ScriptingAuthenticationServiceSection> class.  
+ 
 ```  
 <system.web.extensions>  
   <scripting>  
@@ -34,12 +34,12 @@
   </scripting>  
 </system.web.extensions>  
 ```  
-  
- The following example demonstrates how to access <xref:System.Web.Configuration.ScriptingAuthenticationServiceSection> programmatically.  
-  
- [!code-csharp[System.Web.Configuration#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Configuration/CS/App_Code/ConfigSectionSample.cs#1)]
- [!code-vb[System.Web.Configuration#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Configuration/VB/App_Code/ConfigSectionSample.vb#1)]  
-  
+ 
+The following example demonstrates how to access <xref:System.Web.Configuration.ScriptingAuthenticationServiceSection> programmatically.  
+ 
+[!code-csharp[System.Web.Configuration#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Configuration/CS/App_Code/ConfigSectionSample.cs#1)]
+[!code-vb[System.Web.Configuration#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Configuration/VB/App_Code/ConfigSectionSample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

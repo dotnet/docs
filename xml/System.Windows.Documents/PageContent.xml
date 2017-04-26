@@ -23,24 +23,24 @@
     <summary>Provides information about the <see cref="T:System.Windows.Documents.FixedPage" /> elements within a <see cref="T:System.Windows.Documents.FixedDocument" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Documents.PageContent> elements are the only allowable child elements of a <xref:System.Windows.Documents.FixedDocument>. The order of the <xref:System.Windows.Documents.PageContent> elements within the <xref:System.Windows.Documents.FixedDocument> defines the page order.  
+<xref:System.Windows.Documents.PageContent> elements are the only allowable child elements of a <xref:System.Windows.Documents.FixedDocument>. The order of the <xref:System.Windows.Documents.PageContent> elements within the <xref:System.Windows.Documents.FixedDocument> defines the page order.  
+ 
+<xref:System.Windows.Documents.PageContent> provides information about the <xref:System.Windows.Documents.FixedPage> elements within a <xref:System.Windows.Documents.FixedDocument> without the requiring the application to load individual pages.  
+ 
+The <xref:System.Windows.Documents.PageContent.Source%2A> dependency property specifies the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the corresponding <xref:System.Windows.Documents.FixedPage>.  
+ 
+For more information about the <xref:System.Windows.Documents.PageContent> element, see Chapter 3 of the XPS *Open XML Paper Specification* available for download at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
+ 
   
- <xref:System.Windows.Documents.PageContent> provides information about the <xref:System.Windows.Documents.FixedPage> elements within a <xref:System.Windows.Documents.FixedDocument> without the requiring the application to load individual pages.  
-  
- The <xref:System.Windows.Documents.PageContent.Source%2A> dependency property specifies the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the corresponding <xref:System.Windows.Documents.FixedPage>.  
-  
- For more information about the <xref:System.Windows.Documents.PageContent> element, see Chapter 3 of the XPS *Open XML Paper Specification* available for download at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows the process of adding <xref:System.Windows.Documents.PageContent> to a <xref:System.Windows.Documents.FixedDocument>.  
-  
- [!code-csharp[XpsSave#XpsSaveCreateFixedDocPages](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpfContent.cs#xpssavecreatefixeddocpages)]
- [!code-vb[XpsSave#XpsSaveCreateFixedDocPages](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpfcontent.vb#xpssavecreatefixeddocpages)]  
-  
+The following example shows the process of adding <xref:System.Windows.Documents.PageContent> to a <xref:System.Windows.Documents.FixedDocument>.  
+ 
+[!code-csharp[XpsSave#XpsSaveCreateFixedDocPages](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpfContent.cs#xpssavecreatefixeddocpages)]
+[!code-vb[XpsSave#XpsSaveCreateFixedDocPages](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpfcontent.vb#xpssavecreatefixeddocpages)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,13 +59,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.PageContent" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows use of the <xref:System.Windows.Documents.PageContent.%23ctor%2A> constructor.  
-  
- [!code-csharp[XpsSave#XpsSaveCreateFixedPage5](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpfContent.cs#xpssavecreatefixedpage5)]
- [!code-vb[XpsSave#XpsSaveCreateFixedPage5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpfcontent.vb#xpssavecreatefixedpage5)]  
-  
+The following example shows use of the <xref:System.Windows.Documents.PageContent.%23ctor%2A> constructor.  
+ 
+[!code-csharp[XpsSave#XpsSaveCreateFixedPage5](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpfContent.cs#xpssavecreatefixedpage5)]
+[!code-vb[XpsSave#XpsSaveCreateFixedPage5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpfcontent.vb#xpssavecreatefixedpage5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,24 +95,24 @@
         <value>The <see cref="T:System.Windows.Documents.FixedPage" /> associated with this <see cref="T:System.Windows.Documents.PageContent" />, or **null** when the <see cref="T:System.Windows.Documents.FixedPage" /> is set by the <see cref="P:System.Windows.Documents.PageContent.Source" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.PageContent.Child%2A> property returns a <xref:System.Windows.Documents.FixedPage> when:  
-  
+The <xref:System.Windows.Documents.PageContent.Child%2A> property returns a <xref:System.Windows.Documents.FixedPage> when:  
+ 
 1.  <xref:System.Windows.Documents.PageContent> has an immediate <xref:System.Windows.Documents.FixedPage> child defined in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] markup.  
-  
+ 
 2.  The <xref:System.Windows.Documents.PageContent.System%23Windows%23Markup%23IAddChild%23AddChild%2A> has been called to set the <xref:System.Windows.Documents.FixedPage> as the child of the <xref:System.Windows.Documents.PageContent>.  
-  
- The <xref:System.Windows.Documents.PageContent.Child%2A> property returns **null** when:  
-  
+ 
+The <xref:System.Windows.Documents.PageContent.Child%2A> property returns **null** when:  
+ 
 1.  The <xref:System.Windows.Documents.FixedPage> is set by the <xref:System.Windows.Documents.PageContent.Source%2A> property (when specified by the <xref:System.Windows.Documents.PageContent.Source%2A> property, the <xref:System.Windows.Documents.FixedPage> is not cached).  Use <xref:System.Windows.Documents.PageContent.GetPageRoot%2A> or <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A> to return the <xref:System.Windows.Documents.FixedPage> when set by the <xref:System.Windows.Documents.PageContent.Source%2A> property.  
-  
- For more information about the <xref:System.Windows.Documents.PageContent> element, see Chapter 3 of the XPS *XML Paper Specification* available for download at [http://www.microsoft.com/whdc/xps/xpsspec.mspx](http://www.microsoft.com/whdc/xps/xpsspec.mspx).  
-  
+ 
+For more information about the <xref:System.Windows.Documents.PageContent> element, see Chapter 3 of the XPS *XML Paper Specification* available for download at [http://www.microsoft.com/whdc/xps/xpsspec.mspx](http://www.microsoft.com/whdc/xps/xpsspec.mspx).  
+ 
 <a name="xamlTextUsage_Child"></a>   
 ## XAML Text Usage  
- You cannot use this property in XAML.  
-  
+You cannot use this property in XAML.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,13 +139,13 @@
         <returns>The root element of the visual tree for this page.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Documents.PageContent.GetPageRoot%2A> performs synchronous loading and parsing of the <xref:System.Windows.Documents.FixedPage>.  
-  
+<xref:System.Windows.Documents.PageContent.GetPageRoot%2A> performs synchronous loading and parsing of the <xref:System.Windows.Documents.FixedPage>.  
+ 
 > [!NOTE]
 >  Use the <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A>instead of <xref:System.Windows.Documents.PageContent.GetPageRoot%2A> to avoid thread blocking while the <xref:System.Windows.Documents.FixedPage> loads.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,20 +171,20 @@
         <summary>Asynchronously loads and returns the <see cref="T:System.Windows.Documents.FixedPage" /> content element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A> asynchronously loads and parses the <xref:System.Windows.Documents.FixedPage> data stream associated with this <xref:System.Windows.Documents.PageContent>.  Other threads will continue to run while <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A> completes.  
-  
- The following steps illustrate how to load the <xref:System.Windows.Documents.FixedPage> content  asynchronously:  
-  
+<xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A> asynchronously loads and parses the <xref:System.Windows.Documents.FixedPage> data stream associated with this <xref:System.Windows.Documents.PageContent>.  Other threads will continue to run while <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A> completes.  
+ 
+The following steps illustrate how to load the <xref:System.Windows.Documents.FixedPage> content  asynchronously:  
+ 
 1.  Create a <xref:System.Windows.Documents.GetPageRootCompletedEventHandler> delegate and add it to be notified of <xref:System.Windows.Documents.PageContent.GetPageRootCompleted> events.  
-  
+ 
 2.  Call <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A>.  
-  
+ 
 3.  When the <xref:System.Windows.Documents.PageContent.GetPageRootCompleted> event occurs and the delegate is called, the <xref:System.Windows.Documents.FixedPage> content has completed loading.  The loaded <xref:System.Windows.Documents.FixedPage> element is returned through the <xref:System.Windows.Documents.GetPageRootCompletedEventArgs>.<xref:System.Windows.Documents.GetPageRootCompletedEventArgs.Result%2A> property.  
-  
- For more information about the `<PageContent>` element, see chapter 3 of the XPS specification which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
-  
+ 
+For more information about the `<PageContent>` element, see chapter 3 of the XPS specification which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@
         <summary>Cancels any current <see cref="M:System.Windows.Documents.PageContent.GetPageRootAsync(System.Boolean)" /> operation in progress.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Documents.PageContent.GetPageRootAsyncCancel%2A> cancels any <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A> operation that has not already finished with a <xref:System.Windows.Documents.PageContent.GetPageRootCompleted> event.  
-  
+<xref:System.Windows.Documents.PageContent.GetPageRootAsyncCancel%2A> cancels any <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A> operation that has not already finished with a <xref:System.Windows.Documents.PageContent.GetPageRootCompleted> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,10 +230,10 @@
         <summary>Occurs when <see cref="M:System.Windows.Documents.PageContent.GetPageRootAsync(System.Boolean)" /> has completed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.PageContent.GetPageRootCompleted> event is handled by methods based on the <xref:System.Windows.Documents.GetPageRootCompletedEventHandler> delegate.  
-  
+The <xref:System.Windows.Documents.PageContent.GetPageRootCompleted> event is handled by methods based on the <xref:System.Windows.Documents.GetPageRootCompletedEventHandler> delegate.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,12 +255,12 @@
         <value>The <see cref="T:System.Windows.Documents.LinkTargetCollection" /> of <see cref="T:System.Windows.Documents.LinkTarget" /> elements that identify the hyperlink-addressable locations on the page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Documents.PageContent.LinkTargets%2A> will never return `null`, but the collection may contain zero elements.  
-  
- For more information about the `<PageContent>` element, see chapter 3 of the XPS specification which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
-  
+<xref:System.Windows.Documents.PageContent.LinkTargets%2A> will never return `null`, but the collection may contain zero elements.  
+ 
+For more information about the `<PageContent>` element, see chapter 3 of the XPS specification which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,18 +328,18 @@
         <value>The <see cref="T:System.Uri" /> of the corresponding <see cref="T:System.Windows.Documents.FixedPage" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the `<PageContent>` element and its `Source` attribute, see chapter 3 of the XPS specification which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
-  
+For more information about the `<PageContent>` element and its `Source` attribute, see chapter 3 of the XPS specification which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
+ 
 <a name="dependencyPropertyInfo_Source"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.PageContent.SourceProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -381,10 +381,10 @@
         <summary>For a description of this member, see <see cref="M:System.Windows.Markup.IAddChild.AddChild(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.PageContent> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.PageContent> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -409,10 +409,10 @@
         <summary>For a description of this member, see <see cref="M:System.Windows.Markup.IAddChild.AddText(System.String)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.PageContent> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.PageContent> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -434,10 +434,10 @@
         <value>The base URI of the current context.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.PageContent> instance is cast to an <xref:System.Windows.Markup.IUriContext> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.PageContent> instance is cast to an <xref:System.Windows.Markup.IUriContext> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

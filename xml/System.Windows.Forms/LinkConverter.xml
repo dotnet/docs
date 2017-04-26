@@ -14,10 +14,10 @@
     <summary>Provides a type converter for <see cref="T:System.Windows.Forms.LinkLabel.Link" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.LinkConverter> class to convert links of one type to another type, and to access standard values and subordinate properties. Access this class through <xref:System.ComponentModel.TypeDescriptor>.  
-  
+Use the <xref:System.Windows.Forms.LinkConverter> class to convert links of one type to another type, and to access standard values and subordinate properties. Access this class through <xref:System.ComponentModel.TypeDescriptor>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -141,10 +141,10 @@
         <returns>The converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The most common conversion is from one <xref:System.String> to another <xref:System.String>. The default implementation calls <xref:System.Object.ToString%2A> on the object if the object is valid and if the `destinationType` is <xref:System.String>.  
-  
+The most common conversion is from one <xref:System.String> to another <xref:System.String>. The default implementation calls <xref:System.Object.ToString%2A> on the object if the object is valid and if the `destinationType` is <xref:System.String>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The object cannot be converted to the destination type.</exception>

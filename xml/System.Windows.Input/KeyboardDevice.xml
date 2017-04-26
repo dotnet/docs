@@ -14,16 +14,16 @@
     <summary>Abstract class that represents a keyboard device.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.KeyboardDevice> supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.  
-  
- For keyboard related input, use the <xref:System.Windows.Input.Keyboard> class. The <xref:System.Windows.Input.Keyboard> class represents the keyboard to an application and provides methods, properties, and events that reflect the state of the keyboard.  
-  
- The <xref:System.Windows.Input.Keyboard> class delegates to the appropriate <xref:System.Windows.Input.KeyboardDevice>.  
-  
- Each <xref:System.Windows.Input.InputDevice> object represents one particular input device.  For example, if there are two mice, there will be two <xref:System.Windows.Input.InputDevice> objects.  
-  
+The <xref:System.Windows.Input.KeyboardDevice> supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.  
+ 
+For keyboard related input, use the <xref:System.Windows.Input.Keyboard> class. The <xref:System.Windows.Input.Keyboard> class represents the keyboard to an application and provides methods, properties, and events that reflect the state of the keyboard.  
+ 
+The <xref:System.Windows.Input.Keyboard> class delegates to the appropriate <xref:System.Windows.Input.KeyboardDevice>.  
+ 
+Each <xref:System.Windows.Input.InputDevice> object represents one particular input device.  For example, if there are two mice, there will be two <xref:System.Windows.Input.InputDevice> objects.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -95,10 +95,10 @@
         <summary>Clears focus.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.KeyboardDevice.ClearFocus%2A> method sets the focus to `null`.  
-  
+The <xref:System.Windows.Input.KeyboardDevice.ClearFocus%2A> method sets the focus to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -324,10 +324,10 @@
         <value>The element that receives input.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The target for a <xref:System.Windows.Input.KeyboardDevice> is the object that has keyboard focus.  
-  
+The target for a <xref:System.Windows.Input.KeyboardDevice> is the object that has keyboard focus.  
+ 
  ]]></format>
         </remarks>
       </Docs>

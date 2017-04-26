@@ -19,18 +19,18 @@
     <summary>Represents the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a system of project-to-project dependencies, the <xref:Microsoft.Build.BuildEngine.Engine> maintains the building projects, making it possible to avoid building the same target in the same project more than once in a given build.  
+In a system of project-to-project dependencies, the <xref:Microsoft.Build.BuildEngine.Engine> maintains the building projects, making it possible to avoid building the same target in the same project more than once in a given build.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
- [!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
-  
+The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
+ 
+[!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
+[!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,13 +49,13 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Engine" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
- [!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
-  
+The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
+ 
+[!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
+[!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,38 +189,38 @@
         <value>The path to MSBuild.exe.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] 3.5, the "BinPath" is superseded by the "ToolsPath." Therefore, in the .Targets file, use MSBuildToolsPath rather than MBBuildBinPath. In the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] object model, "BinPath" relates to the Toolset you are running. The steps to get the path from the build engine are as follows:  
-  
+In [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] 3.5, the "BinPath" is superseded by the "ToolsPath." Therefore, in the .Targets file, use MSBuildToolsPath rather than MBBuildBinPath. In the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] object model, "BinPath" relates to the Toolset you are running. The steps to get the path from the build engine are as follows:  
+ 
 1.  Get the default tools version.  
-  
+ 
 2.  Get the Toolset map.  
-  
+ 
 3.  Find the Toolset, based on the string in the map.  
-  
+ 
 4.  Get the Toolset.  
-  
+ 
 5.  Get the path from the Toolset.  
-  
- This procedure is not required if you are creating the engine. In that case, you already know the Toolset path.  
-  
- Because projects in a solution can use different Toolsets, you can also obtain the MSBuild.exe path from the project, as follows.  
-  
+ 
+This procedure is not required if you are creating the engine. In that case, you already know the Toolset path.  
+ 
+Because projects in a solution can use different Toolsets, you can also obtain the MSBuild.exe path from the project, as follows.  
+ 
 ```  
 project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue   
 ```  
+ 
+For more information about Toolsets, see `MSBuild Tool Set (ToolsVersion)`.  
+ 
   
- For more information about Toolsets, see `MSBuild Tool Set (ToolsVersion)`.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
- [!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
-  
+The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
+ 
+[!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
+[!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,13 +395,13 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
           <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
- [!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
-  
+The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
+ 
+[!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
+[!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -575,10 +575,10 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
           <see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload takes a set of global properties for each project to use for the build, returns the target outputs, and also enables the caller to specify additional build flags.  
-  
+This overload takes a set of global properties for each project to use for the build, returns the target outputs, and also enables the caller to specify additional build flags.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -615,10 +615,10 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
           <see langword="true" /> if the project built successfully; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload takes a set of global properties for each project to use for the build, returns the target outputs, and also enables the caller to specify additional build flags.  
-  
+This overload takes a set of global properties for each project to use for the build, returns the target outputs, and also enables the caller to specify additional build flags.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -659,10 +659,10 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <value>A string that represents the default ToolsVersion.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Projects use this ToolsVersion if they are not otherwise told which ToolsVersion to use. This value is retrieved from either the .exe.config file or the registry. If neither specify a default ToolsVersion, then the version is hard-coded to version "2.0." For more information about ToolsVersion, see [Building for Specific Versions of the .NET Framework](http://msdn.microsoft.com/en-us/24a6530c-e837-4774-9da0-6893614524d8).  
-  
+Projects use this ToolsVersion if they are not otherwise told which ToolsVersion to use. This value is retrieved from either the .exe.config file or the registry. If neither specify a default ToolsVersion, then the version is hard-coded to version "2.0." For more information about ToolsVersion, see [Building for Specific Versions of the .NET Framework](http://msdn.microsoft.com/en-us/24a6530c-e837-4774-9da0-6893614524d8).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -724,10 +724,10 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> that contains the global properties for the project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Global properties are properties that are set by using the **/property** switch on the command line, or properties that are set by the integrated development environment (IDE) before a project is built. These global properties are applied to all projects that are built by using this <xref:Microsoft.Build.BuildEngine.Engine>.  
-  
+Global properties are properties that are set by using the **/property** switch on the command line, or properties that are set by the integrated development environment (IDE) before a project is built. These global properties are applied to all projects that are built by using this <xref:Microsoft.Build.BuildEngine.Engine>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -750,10 +750,10 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
           <see langword="true" /> if a build is in progress; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be checked to prevent a project from being modified while it is being built.  
-  
+This property can be checked to prevent a project from being modified while it is being built.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -799,10 +799,10 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <summary>Registers distributed loggers with the build engine.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not thread-safe. To ensure uniform behavior, all loggers should register before the build is started. For more information, see [Writing Multi-Processor-Aware Loggers](http://msdn.microsoft.com/library/ff987d1b-1798-4803-9ef6-cc8fcc263516).  
-  
+This method is not thread-safe. To ensure uniform behavior, all loggers should register before the build is started. For more information, see [Writing Multi-Processor-Aware Loggers](http://msdn.microsoft.com/library/ff987d1b-1798-4803-9ef6-cc8fcc263516).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -827,20 +827,20 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <summary>Registers the specified logger with the <see cref="T:Microsoft.Build.BuildEngine.Engine" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a logger is registered with the <xref:Microsoft.Build.BuildEngine.Engine>, it receives all build events.  
+When a logger is registered with the <xref:Microsoft.Build.BuildEngine.Engine>, it receives all build events.  
+ 
+To unregister loggers, use the <xref:Microsoft.Build.BuildEngine.Engine.UnregisterAllLoggers%2A> method.  
+ 
   
- To unregister loggers, use the <xref:Microsoft.Build.BuildEngine.Engine.UnregisterAllLoggers%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
- [!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
-  
+The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
+ 
+[!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
+[!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -880,10 +880,10 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <value>A <see cref="T:Microsoft.Build.BuildEngine.ToolsetCollection" /> of the tools sets recognized by this engine instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about ToolSets, see [Building for Specific Versions of the .NET Framework](http://msdn.microsoft.com/en-us/24a6530c-e837-4774-9da0-6893614524d8).  
-  
+For more information about ToolSets, see [Building for Specific Versions of the .NET Framework](http://msdn.microsoft.com/en-us/24a6530c-e837-4774-9da0-6893614524d8).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -944,18 +944,18 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <summary>Unregisters all loggers from the <see cref="T:Microsoft.Build.BuildEngine.Engine" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:Microsoft.Build.BuildEngine.Engine.UnregisterAllLoggers%2A> method calls the <xref:Microsoft.Build.Framework.ILogger.Shutdown%2A> method on every registered logger before unregistering each of them from the <xref:Microsoft.Build.BuildEngine.Engine>.  
+The <xref:Microsoft.Build.BuildEngine.Engine.UnregisterAllLoggers%2A> method calls the <xref:Microsoft.Build.Framework.ILogger.Shutdown%2A> method on every registered logger before unregistering each of them from the <xref:Microsoft.Build.BuildEngine.Engine>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
- [!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
-  
+The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
+ 
+[!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
+[!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -987,13 +987,13 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Engine" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
- [!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
-  
+The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
+ 
+[!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
+[!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1007,13 +1007,13 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <summary>Loads the specified project file and builds the project.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
- [!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
-  
+The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
+ 
+[!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
+[!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

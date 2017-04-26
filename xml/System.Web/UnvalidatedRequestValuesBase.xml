@@ -14,10 +14,10 @@
     <summary>Serves as the base class for classes that provide access to HTTP request values without triggering ASP.NET request validation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about request validation, see <xref:System.Web.UnvalidatedRequestValues>.  
-  
+For information about request validation, see <xref:System.Web.UnvalidatedRequestValues>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -234,10 +234,10 @@
         <value>The part of the URL that follows the website name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the complete request URL is `http://www.contoso.com/default.aspx?id=44`, the value of <xref:System.Web.UnvalidatedRequestValuesBase.RawUrl%2A> is `/default.aspx?id=44`.  
-  
+If the complete request URL is `http://www.contoso.com/default.aspx?id=44`, the value of <xref:System.Web.UnvalidatedRequestValuesBase.RawUrl%2A> is `/default.aspx?id=44`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The property is not implemented.</exception>
@@ -263,10 +263,10 @@
         <value>An object that contains the URL data for the request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can retrieve URL data such as the port number, host name, path information, and data about the user from the <xref:System.Uri> object that this property returns.  
-  
+You can retrieve URL data such as the port number, host name, path information, and data about the user from the <xref:System.Uri> object that this property returns.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The property is not implemented.</exception>

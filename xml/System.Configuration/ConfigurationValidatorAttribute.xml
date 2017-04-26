@@ -19,42 +19,42 @@
     <summary>Serves as the base class for the <see cref="N:System.Configuration" /> validator attribute types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All the ASP.NET configuration standard validator attribute types derive from <xref:System.Configuration.ConfigurationValidatorAttribute>. You can use this type to create your own custom validator attribute.  
+All the ASP.NET configuration standard validator attribute types derive from <xref:System.Configuration.ConfigurationValidatorAttribute>. You can use this type to create your own custom validator attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code examples demonstrate how to create two custom validators using the <xref:System.Configuration.ConfigurationValidatorAttribute> type. The first example performs validation using hard-coded parameters; the second example performs validation using the parameters assigned to it at the time it is applied to the related section property. This code example also contains three supporting files. The first file contains the custom section that uses the validators described above, the second file contains a custom converter type, and the third file contains the console application that builds and uses the custom validators and the section that contains them.  
-  
- The following code example shows how to create a fixed validator with hard-coded parameters.  
-  
- [!code-csharp[System.Configuration.ConfigValidatorAttribute#21](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/CS/FixedValidatorAttribute.cs#21)]
- [!code-vb[System.Configuration.ConfigValidatorAttribute#21](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/VB/FixedValidatorAttribute.vb#21)]  
-  
- The following code example shows how to create a programmable validator.  
-  
- [!code-csharp[System.Configuration.ConfigValidatorAttribute#31](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/CS/ProgrammableValidatorAttribute.cs#31)]
- [!code-vb[System.Configuration.ConfigValidatorAttribute#31](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/VB/ProgrammableValidatorAttribute.vb#31)]  
-  
- The following code example shows how to create a custom section using the previous validators.  
-  
- [!code-csharp[System.Configuration.ConfigValidatorAttribute#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/CS/AutomobileSection.cs#11)]
- [!code-vb[System.Configuration.ConfigValidatorAttribute#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/VB/AutomobileSection.vb#11)]  
-  
- The following code example shows how to create a custom converter.  
-  
- [!code-csharp[System.Configuration.ConfigValidatorAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/CS/AutomobileConverter.cs#1)]
- [!code-vb[System.Configuration.ConfigValidatorAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/VB/AutomobileConverter.vb#1)]  
-  
- The following code example shows how to create the console application that builds and uses the custom validators and their containing section.  
-  
- [!code-csharp[System.Configuration.ConfigValidatorAttribute#41](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/CS/TestingConfigValidatorAttribute.cs#41)]
- [!code-vb[System.Configuration.ConfigValidatorAttribute#41](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/VB/TestingConfigValidatorAttribute.vb#41)]  
-  
- The following code example is a configuration excerpt used by the previous example.  
-  
+The following code examples demonstrate how to create two custom validators using the <xref:System.Configuration.ConfigurationValidatorAttribute> type. The first example performs validation using hard-coded parameters; the second example performs validation using the parameters assigned to it at the time it is applied to the related section property. This code example also contains three supporting files. The first file contains the custom section that uses the validators described above, the second file contains a custom converter type, and the third file contains the console application that builds and uses the custom validators and the section that contains them.  
+ 
+The following code example shows how to create a fixed validator with hard-coded parameters.  
+ 
+[!code-csharp[System.Configuration.ConfigValidatorAttribute#21](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/CS/FixedValidatorAttribute.cs#21)]
+[!code-vb[System.Configuration.ConfigValidatorAttribute#21](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/VB/FixedValidatorAttribute.vb#21)]  
+ 
+The following code example shows how to create a programmable validator.  
+ 
+[!code-csharp[System.Configuration.ConfigValidatorAttribute#31](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/CS/ProgrammableValidatorAttribute.cs#31)]
+[!code-vb[System.Configuration.ConfigValidatorAttribute#31](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/VB/ProgrammableValidatorAttribute.vb#31)]  
+ 
+The following code example shows how to create a custom section using the previous validators.  
+ 
+[!code-csharp[System.Configuration.ConfigValidatorAttribute#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/CS/AutomobileSection.cs#11)]
+[!code-vb[System.Configuration.ConfigValidatorAttribute#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/VB/AutomobileSection.vb#11)]  
+ 
+The following code example shows how to create a custom converter.  
+ 
+[!code-csharp[System.Configuration.ConfigValidatorAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/CS/AutomobileConverter.cs#1)]
+[!code-vb[System.Configuration.ConfigValidatorAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/VB/AutomobileConverter.vb#1)]  
+ 
+The following code example shows how to create the console application that builds and uses the custom validators and their containing section.  
+ 
+[!code-csharp[System.Configuration.ConfigValidatorAttribute#41](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/CS/TestingConfigValidatorAttribute.cs#41)]
+[!code-vb[System.Configuration.ConfigValidatorAttribute#41](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/VB/TestingConfigValidatorAttribute.vb#41)]  
+ 
+The following code example is a configuration excerpt used by the previous example.  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
@@ -65,7 +65,7 @@
         dream="Make:Ferrari Color:Red Miles:10 Year:2005" />  
 </configuration>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,10 +84,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationValidatorAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use this constructor in the attributed model to ensure that the value assigned to the related property is an integer.  
-  
+You use this constructor in the attributed model to ensure that the value assigned to the related property is an integer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,10 +109,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationValidatorAttribute" /> class using the specified validator type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor determines whether a validator instance can be created from an instance of the specified `validator` type.  
-  
+This constructor determines whether a validator instance can be created from an instance of the specified `validator` type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

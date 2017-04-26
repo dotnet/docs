@@ -14,12 +14,12 @@
     <summary>Provides a class that encapsulates theme and style sheet information for controls in a designer environment.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Page developers and control authors do not use the <xref:System.Web.UI.ThemeProvider> class. ASP.NET developer tool and designer builders use the <xref:System.Web.UI.ThemeProvider> class in conjunction with the <xref:System.Web.UI.SkinBuilder> class and the <xref:System.Web.UI.IThemeResolutionService> interface to apply themes and their respective control skins to controls at design time.  
-  
- The <xref:System.Web.UI.ThemeProvider> class encapsulates the information needed to apply a theme or style sheet theme and its control skins to the child controls of a control in a designer.  
-  
+Page developers and control authors do not use the <xref:System.Web.UI.ThemeProvider> class. ASP.NET developer tool and designer builders use the <xref:System.Web.UI.ThemeProvider> class in conjunction with the <xref:System.Web.UI.SkinBuilder> class and the <xref:System.Web.UI.IThemeResolutionService> interface to apply themes and their respective control skins to controls at design time.  
+ 
+The <xref:System.Web.UI.ThemeProvider> class encapsulates the information needed to apply a theme or style sheet theme and its control skins to the child controls of a control in a designer.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,10 +49,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ThemeProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `themeDefinition` parameter passed to the <xref:System.Web.UI.ThemeProvider.%23ctor%28System.ComponentModel.Design.IDesignerHost%2CSystem.String%2CSystem.String%2CSystem.String%5B%5D%2CSystem.String%29> constructor represents the concatenation of all control skins associated with the theme but is not exposed directly by the <xref:System.Web.UI.ThemeProvider> class, as this particular parameter is passed to a <xref:System.Web.UI.DesignTimeTemplateParser> to retrieve a <xref:System.Web.UI.ControlBuilder> and is not otherwise used.  
-  
+The `themeDefinition` parameter passed to the <xref:System.Web.UI.ThemeProvider.%23ctor%28System.ComponentModel.Design.IDesignerHost%2CSystem.String%2CSystem.String%2CSystem.String%5B%5D%2CSystem.String%29> constructor represents the concatenation of all control skins associated with the theme but is not exposed directly by the <xref:System.Web.UI.ThemeProvider> class, as this particular parameter is passed to a <xref:System.Web.UI.DesignTimeTemplateParser> to retrieve a <xref:System.Web.UI.ControlBuilder> and is not otherwise used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,10 +92,10 @@
         <value>An <see cref="T:System.Collections.ICollection" /> of strings that identify the CSS files associated with the theme or style sheet theme. This property might return <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used by designer hosts to add style sheet links to CSS files when rendering HTML to a design surface.  
-  
+This property is used by designer hosts to add style sheet links to CSS files when rendering HTML to a design surface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,10 +139,10 @@
         <returns>A <see cref="T:System.Web.UI.SkinBuilder" /> instance, if one is defined for the specified control type; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.ThemeProvider.GetSkinBuilder%2A> method is called by the <xref:System.Web.UI.ControlBuilder> base class to apply a theme and any control skin to a control when it is built at design time.  
-  
+The <xref:System.Web.UI.ThemeProvider.GetSkinBuilder%2A> method is called by the <xref:System.Web.UI.ControlBuilder> base class to apply a theme and any control skin to a control when it is built at design time.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,10 +190,10 @@
         <returns>An <see cref="T:System.Collections.ICollection" /> of skin identifiers, if control skins are defined for the specified <see cref="T:System.Type" />. If no control skins are associated with the type, an empty <see cref="T:System.Collections.ICollection" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.ThemeProvider.GetSkinsForControl%2A> method is used by designers to populate lists of control skin names. Designers use the list to bind to user interface (UI) elements or to display design properties for a given control type.  
-  
+The <xref:System.Web.UI.ThemeProvider.GetSkinsForControl%2A> method is used by designers to populate lists of control skin names. Designers use the list to bind to user interface (UI) elements or to display design properties for a given control type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,10 +215,10 @@
         <value>The name of the theme or style sheet theme that the <see cref="T:System.Web.UI.ThemeProvider" /> instance represents.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.ThemeProvider.ThemeName%2A> property is set by the `name` property of the <xref:System.Web.UI.ThemeProvider.%23ctor%28System.ComponentModel.Design.IDesignerHost%2CSystem.String%2CSystem.String%2CSystem.String%5B%5D%2CSystem.String%29> constructor.  
-  
+The <xref:System.Web.UI.ThemeProvider.ThemeName%2A> property is set by the `name` property of the <xref:System.Web.UI.ThemeProvider.%23ctor%28System.ComponentModel.Design.IDesignerHost%2CSystem.String%2CSystem.String%2CSystem.String%5B%5D%2CSystem.String%29> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

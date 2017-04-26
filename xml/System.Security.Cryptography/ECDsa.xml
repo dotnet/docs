@@ -24,10 +24,10 @@
     <summary>Provides an abstract base class that encapsulates the Elliptic Curve Digital Signature Algorithm (ECDSA).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class serves as the abstract base class for <xref:System.Security.Cryptography.ECDsaCng> derivations.  
-  
+This class serves as the abstract base class for <xref:System.Security.Cryptography.ECDsaCng> derivations.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,10 +56,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDsa" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called by classes that derive from the <xref:System.Security.Cryptography.ECDsa> class. The <xref:System.Security.Cryptography.ECDsaCng> class is the only implementation currently supported by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. You may provide your own custom implementation.  
-  
+This constructor is called by classes that derive from the <xref:System.Security.Cryptography.ECDsa> class. The <xref:System.Security.Cryptography.ECDsaCng> class is the only implementation currently supported by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. You may provide your own custom implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,12 +188,12 @@
         <returns>A new instance of the specified implementation of this class. If the specified algorithm name does not map to an ECDSA implementation, this method returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you develop your own implementation of an <xref:System.Security.Cryptography.ECDsa> object, you can use the <xref:System.Security.Cryptography.ECDsa.Create%28System.String%29> method overload to create a custom `algorithm` string that specifies your implementation.  
-  
- If you specify a custom value for the `algorithm` parameter, the <xref:System.Security.Cryptography.CryptoConfig> object will use it to determine whether an ECDSA object can be created.  
-  
+If you develop your own implementation of an <xref:System.Security.Cryptography.ECDsa> object, you can use the <xref:System.Security.Cryptography.ECDsa.Create%28System.String%29> method overload to create a custom `algorithm` string that specifies your implementation.  
+ 
+If you specify a custom value for the `algorithm` parameter, the <xref:System.Security.Cryptography.CryptoConfig> object will use it to determine whether an ECDSA object can be created.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="algorithm" /> parameter is <see langword="null" />.</exception>
@@ -423,12 +423,12 @@
         <value>Always <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is inherited from the <xref:System.Security.Cryptography.AsymmetricAlgorithm> base class.  
-  
- The Elliptic Curve Digital Signature Algorithm (ECDSA) is used for digital signature generation; it is not used for key derivation Therefore, this property returns `null`.  
-  
+This property is inherited from the <xref:System.Security.Cryptography.AsymmetricAlgorithm> base class.  
+ 
+The Elliptic Curve Digital Signature Algorithm (ECDSA) is used for digital signature generation; it is not used for key derivation Therefore, this property returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -800,10 +800,10 @@
           <see langword="true" /> if the hash value equals the decrypted signature; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The signature is first decrypted by using the public key, and then compared to the hash value for verification.  
-  
+The signature is first decrypted by using the public key, and then compared to the hash value for verification.  
+ 
  ]]></format>
         </remarks>
       </Docs>

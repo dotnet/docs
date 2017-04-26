@@ -20,10 +20,10 @@
     <summary>Specifies access rights for specific key containers. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This permission is intended to enable users to easily manage key containers when either a small number of keys is involved, or access is to be granted to only some keys.  
-  
+This permission is intended to enable users to easily manage key containers when either a small number of keys is involved, or access is to be granted to only some keys.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,19 +48,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> class, using the specified cryptographic service provider (CSP) parameters and access permissions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor allows access rights to be assigned for specific key containers identified in a <xref:System.Security.Cryptography.CspParameters> object.  
+This constructor allows access rights to be assigned for specific key containers identified in a <xref:System.Security.Cryptography.CspParameters> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry.%23ctor%28System.Security.Cryptography.CspParameters%2CSystem.Security.Permissions.KeyContainerPermissionFlags%29> constructor.  
-  
- [!code-cpp[System.Security.Permissions.KeyContainerPermission#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CPP/keycontainerpermission.cpp#3)]
- [!code-csharp[System.Security.Permissions.KeyContainerPermission#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CS/keycontainerpermission.cs#3)]
- [!code-vb[System.Security.Permissions.KeyContainerPermission#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/VB/Form1.vb#3)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry.%23ctor%28System.Security.Cryptography.CspParameters%2CSystem.Security.Permissions.KeyContainerPermissionFlags%29> constructor.  
+ 
+[!code-cpp[System.Security.Permissions.KeyContainerPermission#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CPP/keycontainerpermission.cpp#3)]
+[!code-csharp[System.Security.Permissions.KeyContainerPermission#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CS/keycontainerpermission.cs#3)]
+[!code-vb[System.Security.Permissions.KeyContainerPermission#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/VB/Form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The resulting entry would have unrestricted access.</exception>
@@ -86,19 +86,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> class, using the specified key container name and access permissions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor allows you to specify access rights for specific key containers identified by name; use an asterisk ("*") to represent all the key containers.  
+This constructor allows you to specify access rights for specific key containers identified by name; use an asterisk ("*") to represent all the key containers.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry.%23ctor%28System.String%2CSystem.Security.Permissions.KeyContainerPermissionFlags%29> constructor.  
-  
- [!code-cpp[System.Security.Permissions.KeyContainerPermission#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CPP/keycontainerpermission.cpp#2)]
- [!code-csharp[System.Security.Permissions.KeyContainerPermission#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CS/keycontainerpermission.cs#2)]
- [!code-vb[System.Security.Permissions.KeyContainerPermission#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/VB/Form1.vb#2)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry.%23ctor%28System.String%2CSystem.Security.Permissions.KeyContainerPermissionFlags%29> constructor.  
+ 
+[!code-cpp[System.Security.Permissions.KeyContainerPermission#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CPP/keycontainerpermission.cpp#2)]
+[!code-csharp[System.Security.Permissions.KeyContainerPermission#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CS/keycontainerpermission.cs#2)]
+[!code-vb[System.Security.Permissions.KeyContainerPermission#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/VB/Form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The resulting entry would have unrestricted access.</exception>
@@ -132,19 +132,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> class with the specified property values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor allows access rights to be assigned for specific key containers. A `keySpec` or `providerType` value of –1 represents all key specifications or provider types. A `keyStore`, `providerName`, or `keyContainerName` of "*" represents all key stores, providers, or key containers. A `providerName` or `keyContainerName` that is `null` represents all providers or key containers.  
+This constructor allows access rights to be assigned for specific key containers. A `keySpec` or `providerType` value of –1 represents all key specifications or provider types. A `keyStore`, `providerName`, or `keyContainerName` of "*" represents all key stores, providers, or key containers. A `providerName` or `keyContainerName` that is `null` represents all providers or key containers.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry.%23ctor%28System.String%2CSystem.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Security.Permissions.KeyContainerPermissionFlags%29> constructor.  
-  
- [!code-cpp[System.Security.Permissions.KeyContainerPermission#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CPP/keycontainerpermission.cpp#4)]
- [!code-csharp[System.Security.Permissions.KeyContainerPermission#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CS/keycontainerpermission.cs#4)]
- [!code-vb[System.Security.Permissions.KeyContainerPermission#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/VB/Form1.vb#4)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry.%23ctor%28System.String%2CSystem.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Security.Permissions.KeyContainerPermissionFlags%29> constructor.  
+ 
+[!code-cpp[System.Security.Permissions.KeyContainerPermission#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CPP/keycontainerpermission.cpp#4)]
+[!code-csharp[System.Security.Permissions.KeyContainerPermission#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CS/keycontainerpermission.cs#4)]
+[!code-vb[System.Security.Permissions.KeyContainerPermission#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/VB/Form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The resulting entry would have unrestricted access.</exception>
@@ -173,10 +173,10 @@
           <see langword="true" /> if the specified <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> is equal to the current <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry.Equals%2A> method compares the properties of the two <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> objects to determine if they are equal.  
-  
+The <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry.Equals%2A> method compares the properties of the two <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> objects to determine if they are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,14 +199,14 @@
         <value>A bitwise combination of the <see cref="T:System.Security.Permissions.KeyContainerPermissionFlags" /> values. The default is <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.NoFlags" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!CAUTION]
 >  Many of these flags are powerful and permit access to key containers that should only be granted to highly trusted code.  
-  
- The most powerful of the flags are <xref:System.Security.Permissions.KeyContainerPermissionFlags>, <xref:System.Security.Permissions.KeyContainerPermissionFlags>, <xref:System.Security.Permissions.KeyContainerPermissionFlags>, <xref:System.Security.Permissions.KeyContainerPermissionFlags>, <xref:System.Security.Permissions.KeyContainerPermissionFlags>, <xref:System.Security.Permissions.KeyContainerPermissionFlags>, and <xref:System.Security.Permissions.KeyContainerPermissionFlags>. For specific threats posed by the use of these flags, see individual flag descriptions.  
-  
+ 
+The most powerful of the flags are <xref:System.Security.Permissions.KeyContainerPermissionFlags>, <xref:System.Security.Permissions.KeyContainerPermissionFlags>, <xref:System.Security.Permissions.KeyContainerPermissionFlags>, <xref:System.Security.Permissions.KeyContainerPermissionFlags>, <xref:System.Security.Permissions.KeyContainerPermissionFlags>, <xref:System.Security.Permissions.KeyContainerPermissionFlags>, and <xref:System.Security.Permissions.KeyContainerPermissionFlags>. For specific threats posed by the use of these flags, see individual flag descriptions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,10 +230,10 @@
         <returns>A hash code for the current <see cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Serves as a hash function for the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry>, suitable for use in hashing algorithms and data structures such as a hash table.  
-  
+Serves as a hash function for the <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry>, suitable for use in hashing algorithms and data structures such as a hash table.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
         <value>The name of the key container.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use a value of "*" to apply the access entry to all key containers within the specified provider name and provider type.  
-  
+Use a value of "*" to apply the access entry to all key containers within the specified provider name and provider type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The resulting entry would have unrestricted access.</exception>
@@ -283,10 +283,10 @@
         <value>One of the AT_ values defined in the Wincrypt.h header file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Valid values for this property are AT_KEYEXCHANGE (1) and AT_SIGNATURE (2). The default value is –1, representing all possible values.  
-  
+Valid values for this property are AT_KEYEXCHANGE (1) and AT_SIGNATURE (2). The default value is –1, representing all possible values.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The resulting entry would have unrestricted access.</exception>
@@ -310,10 +310,10 @@
         <value>The name of the key store.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Valid values are "User", "Machine", or "*". If `null` is specified, the value is set to "\*".  
-  
+Valid values are "User", "Machine", or "*". If `null` is specified, the value is set to "\*".  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The resulting entry would have unrestricted access.</exception>
@@ -337,10 +337,10 @@
         <value>The name of the provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An example of a provider name is "Microsoft Enhanced Cryptographic Provider". If `null` is specified, the enhanced cryptographic provider name is used.  
-  
+An example of a provider name is "Microsoft Enhanced Cryptographic Provider". If `null` is specified, the enhanced cryptographic provider name is used.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The resulting entry would have unrestricted access.</exception>
@@ -364,48 +364,48 @@
         <value>One of the PROV_ values defined in the Wincrypt.h header file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is –1, representing all possible values.  
-  
- The Wincrypt.h header file defines the following values:  
-  
+The default value is –1, representing all possible values.  
+ 
+The Wincrypt.h header file defines the following values:  
+ 
 -   \#define PROV_RSA_FULL 1  
-  
+ 
 -   \#define PROV_RSA_SIG 2  
-  
+ 
 -   \#define PROV_DSS 3  
-  
+ 
 -   \#define PROV_FORTEZZA 4  
-  
+ 
 -   \#define PROV_MS_EXCHANGE 5  
-  
+ 
 -   \#define PROV_SSL 6  
-  
+ 
 -   \#define PROV_RSA_SCHANNEL 12  
-  
+ 
 -   \#define PROV_DSS_DH 13  
-  
+ 
 -   \#define PROV_EC_ECDSA_SIG 14  
-  
+ 
 -   \#define PROV_EC_ECNRA_SIG 15  
-  
+ 
 -   \#define PROV_EC_ECDSA_FULL 16  
-  
+ 
 -   \#define PROV_EC_ECNRA_FULL 17  
-  
+ 
 -   \#define PROV_DH_SCHANNEL 18  
-  
+ 
 -   \#define PROV_SPYRUS_LYNKS 20  
-  
+ 
 -   \#define PROV_RNG 21  
-  
+ 
 -   \#define PROV_INTEL_SEC 22  
-  
+ 
 -   \#define PROV_REPLACE_OWF 23  
-  
+ 
 -   \#define PROV_RSA_AES 24  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The resulting entry would have unrestricted access.</exception>

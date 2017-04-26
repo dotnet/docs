@@ -14,42 +14,42 @@
     <summary>Represents audio input that is associated with a <see cref="T:System.Speech.Recognition.RecognitionResult" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A speech recognizer generates information about the audio input as part of the recognition operation. To access the recognized audio, use the <xref:System.Speech.Recognition.RecognitionResult.Audio%2A> property or the <xref:System.Speech.Recognition.RecognitionResult.GetAudioForWordRange%2A> method of the <xref:System.Speech.Recognition.RecognitionResult>.  
-  
- A recognition result can be produced by the following events and methods of the <xref:System.Speech.Recognition.SpeechRecognizer> and <xref:System.Speech.Recognition.SpeechRecognitionEngine> classes:  
-  
+A speech recognizer generates information about the audio input as part of the recognition operation. To access the recognized audio, use the <xref:System.Speech.Recognition.RecognitionResult.Audio%2A> property or the <xref:System.Speech.Recognition.RecognitionResult.GetAudioForWordRange%2A> method of the <xref:System.Speech.Recognition.RecognitionResult>.  
+ 
+A recognition result can be produced by the following events and methods of the <xref:System.Speech.Recognition.SpeechRecognizer> and <xref:System.Speech.Recognition.SpeechRecognitionEngine> classes:  
+ 
 -   Events:  
-  
-    -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized?displayProperty=fullName>  
-  
-    -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected?displayProperty=fullName>  
-  
-    -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName>  
-  
-    -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeCompleted?displayProperty=fullName>  
-  
-    -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName>  
-  
+ 
+   -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized?displayProperty=fullName>  
+ 
+   -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected?displayProperty=fullName>  
+ 
+   -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName>  
+ 
+   -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeCompleted?displayProperty=fullName>  
+ 
+   -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName>  
+ 
 -   Methods:  
-  
-    -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize%2A?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.EmulateRecognize%2A?displayProperty=fullName>  
-  
-    -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync%2A?displayProperty=fullName>  
-  
-    -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A?displayProperty=fullName>  
-  
-    -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName>  
-  
+ 
+   -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize%2A?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.EmulateRecognize%2A?displayProperty=fullName>  
+ 
+   -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync%2A?displayProperty=fullName>  
+ 
+   -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A?displayProperty=fullName>  
+ 
+   -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName>  
+ 
 > [!IMPORTANT]
 >  A recognition result produced by emulated speech recognition does not contain recognized audio. For such a recognition result, its <xref:System.Speech.Recognition.RecognitionResult.Audio%2A> property returns `null` and its <xref:System.Speech.Recognition.RecognitionResult.GetAudioForWordRange%2A> method throws an exception. For more information about emulated speech recognition, see the `EmulateRecognize` and `EmulateRecognizeAsync` methods of the <xref:System.Speech.Recognition.SpeechRecognizer> and <xref:System.Speech.Recognition.SpeechRecognitionEngine> classes.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example handles the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName>, <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName>, or <xref:System.Speech.Recognition.Grammar.SpeechRecognized?displayProperty=fullName> event and outputs to the console information about the recognized audio that is associated with the recognition result.  
-  
+The following example handles the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName>, <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName>, or <xref:System.Speech.Recognition.Grammar.SpeechRecognized?displayProperty=fullName> event and outputs to the console information about the recognized audio that is associated with the recognition result.  
+ 
 ```csharp  
   
 // Handle the SpeechRecognized event.   
@@ -75,7 +75,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   // Add event handler code here.  
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -97,17 +97,17 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
         <value>The location in the input audio stream for the start of the recognized audio.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property references the position at the beginning of the recognized phrase in the input device's generated audio stream. By contrast, the `RecognizerAudioPosition` property of the <xref:System.Speech.Recognition.SpeechRecognitionEngine> and <xref:System.Speech.Recognition.SpeechRecognizer> classes reference the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+This property references the position at the beginning of the recognized phrase in the input device's generated audio stream. By contrast, the `RecognizerAudioPosition` property of the <xref:System.Speech.Recognition.SpeechRecognitionEngine> and <xref:System.Speech.Recognition.SpeechRecognizer> classes reference the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+ 
+The <xref:System.Speech.Recognition.RecognizedAudio.StartTime%2A> property gets the system time at the start of the recognition operation.  
+ 
   
- The <xref:System.Speech.Recognition.RecognizedAudio.StartTime%2A> property gets the system time at the start of the recognition operation.  
-  
-   
-  
+ 
 ## Examples  
- The following example handles the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName> event and outputs to the console information about the recognized audio that is associated with the recognition result.  
-  
+The following example handles the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName> event and outputs to the console information about the recognized audio that is associated with the recognition result.  
+ 
 ```csharp  
   
 // Handle the SpeechRecognized event.   
@@ -133,7 +133,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   // Add event handler code here.  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
         <value>The duration within the input audio stream for the recognized audio.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example handles the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName> event and outputs to the console information about the recognized audio that is associated with the recognition result.  
-  
+The following example handles the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName> event and outputs to the console information about the recognized audio that is associated with the recognition result.  
+ 
 ```csharp  
   
 // Handle the SpeechRecognized event.   
@@ -184,7 +184,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   // Add event handler code here.  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
         <value>The format of the audio processed by the speech recognizer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example handles the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName> event and outputs to the console information about the recognized audio that is associated with the recognition result.  
-  
+The following example handles the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName> event and outputs to the console information about the recognized audio that is associated with the recognition result.  
+ 
 ```csharp  
   
 // Handle the SpeechRecognized event.   
@@ -235,7 +235,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   // Add event handler code here.  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,10 +263,10 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
         <returns>Returns a subsection of the recognized audio, as defined by <paramref name="audioPosition" /> and <paramref name="duration" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar for name input, adds a handler for the <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event, and loads the grammar into an in-process speech recognizer. Then it writes the audio information for the name portion of the input to an audio file. The audio file is used as input to a <xref:System.Speech.Synthesis.SpeechSynthesizer> object, which speaks a phrase that includes the recorded audio.  
-  
+The following example creates a speech recognition grammar for name input, adds a handler for the <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event, and loads the grammar into an in-process speech recognizer. Then it writes the audio information for the name portion of the input to an audio file. The audio file is used as input to a <xref:System.Speech.Synthesis.SpeechSynthesizer> object, which speaks a phrase that includes the recorded audio.  
+ 
 ```  
 private static void AddNameGrammar(SpeechRecognitionEngine recognizer)  
 {  
@@ -341,7 +341,7 @@ private static void TestAudio(object item)
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -366,17 +366,17 @@ private static void TestAudio(object item)
         <value>The system time at the start of the recognition operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Recognition.RecognizedAudio.StartTime%2A> property gets the system time at the start of the recognition operation, which can be useful for latency and performance calculations.  
+The <xref:System.Speech.Recognition.RecognizedAudio.StartTime%2A> property gets the system time at the start of the recognition operation, which can be useful for latency and performance calculations.  
+ 
+The <xref:System.Speech.Recognition.RecognizedAudio.AudioPosition%2A> property gets the location in the input device's generated audio stream.  
+ 
   
- The <xref:System.Speech.Recognition.RecognizedAudio.AudioPosition%2A> property gets the location in the input device's generated audio stream.  
-  
-   
-  
+ 
 ## Examples  
- The following example handles the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName> event and outputs to the console information about the recognized audio that is associated with the recognition result.  
-  
+The following example handles the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized?displayProperty=fullName> event and outputs to the console information about the recognized audio that is associated with the recognition result.  
+ 
 ```csharp  
   
 // Handle the SpeechRecognized event.   
@@ -402,7 +402,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   // Add event handler code here.  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -427,12 +427,12 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
         <summary>Writes the entire audio to a stream as raw data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Audio data is written to `outputStream` in binary form. No header information is included.  
-  
- The <xref:System.Speech.Recognition.RecognizedAudio.WriteToAudioStream%2A> method uses the Wave format, but does not include the Wave header. To include the Wave header, use the <xref:System.Speech.Recognition.RecognizedAudio.WriteToWaveStream%2A> method.  
-  
+Audio data is written to `outputStream` in binary form. No header information is included.  
+ 
+The <xref:System.Speech.Recognition.RecognizedAudio.WriteToAudioStream%2A> method uses the Wave format, but does not include the Wave header. To include the Wave header, use the <xref:System.Speech.Recognition.RecognizedAudio.WriteToWaveStream%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -457,17 +457,17 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
         <summary>Writes audio to a stream in Wave format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Audio data is written to `outputStream` in Wave format, which includes a resource interchange file format (RIFF) header.  
+Audio data is written to `outputStream` in Wave format, which includes a resource interchange file format (RIFF) header.  
+ 
+The <xref:System.Speech.Recognition.RecognizedAudio.WriteToAudioStream%2A> method uses the same binary format, but does not include the Wave header.  
+ 
   
- The <xref:System.Speech.Recognition.RecognizedAudio.WriteToAudioStream%2A> method uses the same binary format, but does not include the Wave header.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a speech recognition grammar for name input, adds a handler for the <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event, and loads the grammar into an in-process speech recognizer. Then it writes the audio information for the name portion of the input to an audio file. The audio file is used as input to a <xref:System.Speech.Synthesis.SpeechSynthesizer> object, which speaks a phrase that includes the recorded audio.  
-  
+The following example creates a speech recognition grammar for name input, adds a handler for the <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event, and loads the grammar into an in-process speech recognizer. Then it writes the audio information for the name portion of the input to an audio file. The audio file is used as input to a <xref:System.Speech.Synthesis.SpeechSynthesizer> object, which speaks a phrase that includes the recorded audio.  
+ 
 ```  
 private static void AddNameGrammar(SpeechRecognitionEngine recognizer)  
 {  
@@ -542,7 +542,7 @@ private static void TestAudio(object item)
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -196,10 +196,10 @@
         <value>The build result for the indexed target.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws a `KeyNotFoundException` if the given target doesn't exist in this build result.  
-  
+Throws a `KeyNotFoundException` if the given target doesn't exist in this build result.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -306,10 +306,10 @@
         <value>Returns the <see langword="ProjectInstance" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This may be a dummy object and should not be used except to retrieve <xref:Microsoft.Build.Execution.ProjectInstance.Properties%2A>, <xref:Microsoft.Build.Execution.ProjectInstance.GlobalProperties%2A> and <xref:Microsoft.Build.Execution.ProjectInstance.Items%2A>. Other operations are not supported.  
-  
+This may be a dummy object and should not be used except to retrieve <xref:Microsoft.Build.Execution.ProjectInstance.Properties%2A>, <xref:Microsoft.Build.Execution.ProjectInstance.GlobalProperties%2A> and <xref:Microsoft.Build.Execution.ProjectInstance.Items%2A>. Other operations are not supported.  
+ 
  ]]></format>
         </remarks>
       </Docs>

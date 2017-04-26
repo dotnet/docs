@@ -25,10 +25,10 @@
     <summary>Provides a user interface for a <see cref="T:System.Windows.Forms.Design.WindowsFormsComponentEditor" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Forms.Design.ComponentEditorForm> shows a view of available component editor pages along with a user interface for selection.  
-  
+A <xref:System.Windows.Forms.Design.ComponentEditorForm> shows a view of available component editor pages along with a user interface for selection.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -131,14 +131,14 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Form.Activated" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The first time the <xref:System.Windows.Forms.Design.ComponentEditorForm.OnActivated%2A> method is executed, it shows the first component editor page in the list.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.Design.ComponentEditorForm.OnActivated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+The first time the <xref:System.Windows.Forms.Design.ComponentEditorForm.OnActivated%2A> method is executed, it shows the first component editor page in the list.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.Design.ComponentEditorForm.OnActivated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -166,14 +166,14 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HelpRequested" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Design.ComponentEditorForm.OnHelpRequested%2A> method shows the Help page that is associated with the component editor page, if there is one.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.Design.ComponentEditorForm.OnHelpRequested%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+The <xref:System.Windows.Forms.Design.ComponentEditorForm.OnHelpRequested%2A> method shows the Help page that is associated with the component editor page, if there is one.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.Design.ComponentEditorForm.OnHelpRequested%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -227,10 +227,10 @@
           <see langword="true" /> if the specified message is for a component editor page; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.Design.ComponentEditorForm.PreProcessMessage%2A> is called by the application's message loop to preprocess input messages before they are dispatched.  
-  
+<xref:System.Windows.Forms.Design.ComponentEditorForm.PreProcessMessage%2A> is called by the application's message loop to preprocess input messages before they are dispatched.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>

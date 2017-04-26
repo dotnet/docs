@@ -23,12 +23,12 @@
     <summary>Defines the context for a set of <see cref="T:System.Xml.XmlDocument" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `XmlDocument` objects that are created from the same implementation share the same <xref:System.Xml.XmlNameTable>. This enables users to compare attribute and element names between the objects more efficiently.  
-  
- Although the `XmlDocument` objects share the same implementation, to move nodes from one document to another, you must use the <xref:System.Xml.XmlDocument.ImportNode%2A> method.  
-  
+`XmlDocument` objects that are created from the same implementation share the same <xref:System.Xml.XmlNameTable>. This enables users to compare attribute and element names between the objects more efficiently.  
+ 
+Although the `XmlDocument` objects share the same implementation, to move nodes from one document to another, you must use the <xref:System.Xml.XmlDocument.ImportNode%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -111,21 +111,21 @@
         <returns>The new <see langword="XmlDocument" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `XmlDocument` objects created from the same implementation share the same name table. This enables users to compare attribute and element names between the objects more efficiently.  
+`XmlDocument` objects created from the same implementation share the same name table. This enables users to compare attribute and element names between the objects more efficiently.  
+ 
+Although the `XmlDocument` objects share the same implementation, to move nodes from one document to another, you must use the <xref:System.Xml.XmlDocument.ImportNode%2A> method.  
+ 
   
- Although the `XmlDocument` objects share the same implementation, to move nodes from one document to another, you must use the <xref:System.Xml.XmlDocument.ImportNode%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates two `XmlDocument` objects from the same implementation.  
-  
- [!code-cpp[Classic WebData XmlImplementation.CreateDocument Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlImplementation.CreateDocument Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlImplementation.CreateDocument Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlImplementation.CreateDocument Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlImplementation.CreateDocument Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlImplementation.CreateDocument Example/VB/source.vb#1)]  
-  
+The following example creates two `XmlDocument` objects from the same implementation.  
+ 
+[!code-cpp[Classic WebData XmlImplementation.CreateDocument Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlImplementation.CreateDocument Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlImplementation.CreateDocument Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlImplementation.CreateDocument Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlImplementation.CreateDocument Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlImplementation.CreateDocument Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

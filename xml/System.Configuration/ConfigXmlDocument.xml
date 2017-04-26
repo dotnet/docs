@@ -18,10 +18,10 @@
     <summary>Wraps the corresponding <see cref="T:System.Xml.XmlDocument" /> type and also carries the necessary information for reporting file-name and line numbers.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigXmlDocument> wraps the corresponding <xref:System.Xml.XmlDocument> type to carry the necessary information for reporting file-name and line numbers. This information is necessary when the system issues configuration errors.  
-  
+The <xref:System.Configuration.ConfigXmlDocument> wraps the corresponding <xref:System.Xml.XmlDocument> type to carry the necessary information for reporting file-name and line numbers. This information is necessary when the system issues configuration errors.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

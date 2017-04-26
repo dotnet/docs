@@ -29,20 +29,20 @@
     <summary>The exception that is thrown when part of a file or directory cannot be found.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `DirectoryNotFoundException` uses the HRESULT COR_E_DIRECTORYNOTFOUND which has the value 0x80070003. Note that `DirectoryNotFoundException` is also thrown when COM interop programs see the HRESULT STG_E_PATHNOTFOUND, which has the value 0x80030003.  
+`DirectoryNotFoundException` uses the HRESULT COR_E_DIRECTORYNOTFOUND which has the value 0x80070003. Note that `DirectoryNotFoundException` is also thrown when COM interop programs see the HRESULT STG_E_PATHNOTFOUND, which has the value 0x80030003.  
+ 
+If your code does not have <xref:System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery%2A> permission, the error message for this exception may only contain file or directory names instead of fully qualified paths.  
+ 
   
- If your code does not have <xref:System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery%2A> permission, the error message for this exception may only contain file or directory names instead of fully qualified paths.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to force and recover from a <xref:System.IO.DirectoryNotFoundException>.  
-  
- [!code-csharp[DirectoryNotFoundException#1](~/samples/snippets/csharp/VS_Snippets_CLR/DirectoryNotFoundException/cs/program.cs#1)]
- [!code-vb[DirectoryNotFoundException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/DirectoryNotFoundException/VB/DirectoryNotFoundexception.vb#1)]  
-  
+The following example shows how to force and recover from a <xref:System.IO.DirectoryNotFoundException>.  
+ 
+[!code-csharp[DirectoryNotFoundException#1](~/samples/snippets/csharp/VS_Snippets_CLR/DirectoryNotFoundException/cs/program.cs#1)]
+[!code-vb[DirectoryNotFoundException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/DirectoryNotFoundException/VB/DirectoryNotFoundexception.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,20 +71,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.DirectoryNotFoundException" /> class with its message string set to a system-supplied message and its HRESULT set to COR_E_DIRECTORYNOTFOUND.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new instance to a system-supplied message that describes the error, such as "Could not find the specified directory." This message takes into account the current system culture.  
+This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new instance to a system-supplied message that describes the error, such as "Could not find the specified directory." This message takes into account the current system culture.  
+ 
+The <xref:System.Exception.InnerException%2A?displayProperty=fullName> property of the new instance is initialized to `null`.  
+ 
   
- The <xref:System.Exception.InnerException%2A?displayProperty=fullName> property of the new instance is initialized to `null`.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.IO.DirectoryNotFoundException.%23ctor%2A> constructor.  
-  
- [!code-csharp[DirectoryNotFoundException#1](~/samples/snippets/csharp/VS_Snippets_CLR/DirectoryNotFoundException/cs/program.cs#1)]
- [!code-vb[DirectoryNotFoundException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/DirectoryNotFoundException/VB/DirectoryNotFoundexception.vb#1)]  
-  
+The following code example demonstrates how to call the <xref:System.IO.DirectoryNotFoundException.%23ctor%2A> constructor.  
+ 
+[!code-csharp[DirectoryNotFoundException#1](~/samples/snippets/csharp/VS_Snippets_CLR/DirectoryNotFoundException/cs/program.cs#1)]
+[!code-vb[DirectoryNotFoundException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/DirectoryNotFoundException/VB/DirectoryNotFoundexception.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,12 +116,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.DirectoryNotFoundException" /> class with its message string set to <paramref name="message" /> and its HRESULT set to COR_E_DIRECTORYNOTFOUND.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new instance using `message`.  
-  
- The <xref:System.Exception.InnerException%2A?displayProperty=fullName> property of the new instance is initialized to `null`.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new instance using `message`.  
+ 
+The <xref:System.Exception.InnerException%2A?displayProperty=fullName> property of the new instance is initialized to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,17 +180,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.DirectoryNotFoundException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.IO.DirectoryNotFoundException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.IO.DirectoryNotFoundException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

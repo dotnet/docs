@@ -14,12 +14,12 @@
     <summary>Specifies properties of algorithms. This is an <see langword="abstract" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of this class are used to specify the cryptographic characteristics of the algorithms used when securing messages.  
-  
- This class is used by derived classes to instantiate security algorithm suites, and contains properties that describe the security algorithms. For example, the `wsBasicHttp` binding uses an internal derived class to specify the properties of its security algorithms.  
-  
+Instances of this class are used to specify the cryptographic characteristics of the algorithms used when securing messages.  
+ 
+This class is used by derived classes to instantiate security algorithm suites, and contains properties that describe the security algorithms. For example, the `wsBasicHttp` binding uses an internal derived class to specify the properties of its security algorithms.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,10 +38,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SecurityAlgorithmSuite" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instances of this class consist of static properties and read-only properties, so the constructor does not initialize any properties.  
-  
+The instances of this class consist of static properties and read-only properties, so the constructor does not initialize any properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -63,10 +63,10 @@
         <value>The 128-bit Basic <see cref="T:System.ServiceModel.Security.SecurityAlgorithmSuite" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, AES-128 is used as the encryption algorithm.  
-  
+By default, AES-128 is used as the encryption algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <value>An algorithm suite that uses RSA15 as the key wrap algorithm and 128-bit Basic as the message encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
-  
+The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,10 +113,10 @@
         <value>An algorithm suite that uses SHA256 for the signature digest and 128-bit Basic as the message encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
-  
+The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
         <value>An algorithm suite that uses RSA15 as the key wrap algorithm, SHA256 for the signature digest, and 128-bit Basic as the message encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
-  
+The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,10 +163,10 @@
         <value>An algorithm suite that uses 192-bit Basic as the message encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, AES-192 is used as the encryption algorithm.  
-  
+By default, AES-192 is used as the encryption algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,10 +188,10 @@
         <value>An algorithm suite that uses RSA15 as the key wrap algorithm and 192-bit Basic as the message encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
-  
+The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,10 +213,10 @@
         <value>An algorithm suite which uses SHA256 for the signature digest and 192-bit Basic as the message encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
-  
+The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,10 +238,10 @@
         <value>An algorithm suite that uses RSA15 as the key wrap algorithm, SHA256 for the signature digest, and 192-bit Basic as the message encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
-  
+The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,18 +263,18 @@
         <value>An algorithm suite that uses 256-bit Basic as the message encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, AES-256 is used for the encryption algorithm.  
+By default, AES-256 is used for the encryption algorithm.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to set <xref:System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite%2A> to this property.  
-  
- [!code-csharp[c_ProgrammingSecurity#8](~/samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#8)]
- [!code-vb[c_ProgrammingSecurity#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#8)]  
-  
+The following code shows how to set <xref:System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite%2A> to this property.  
+ 
+[!code-csharp[c_ProgrammingSecurity#8](~/samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#8)]
+[!code-vb[c_ProgrammingSecurity#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,10 +296,10 @@
         <value>An algorithm suite that uses RSA15 as the key wrap algorithm and 256-bit Basic as the message encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
-  
+The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -321,10 +321,10 @@
         <value>An algorithm suite that uses SHA256 for the signature digest and 256-bit Basic as the message encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
-  
+The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -346,10 +346,10 @@
         <value>An algorithm suite that uses RSA15 as the key wrap algorithm, SHA256 for the signature digest, and 256-bit Basic as the message encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
-  
+The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -371,10 +371,10 @@
         <value>The default <see cref="T:System.ServiceModel.Security.SecurityAlgorithmSuite" /> is <see cref="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256" />, which specifies 256-bit Advanced Encryption Standard (AES) as the symmetric encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides the properties specifying default values as well as the methods.  
-  
+The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides the properties specifying default values as well as the methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -396,10 +396,10 @@
         <value>The default asymmetric key wrap algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When overridden, provides a string value that will be used for comparison in the <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.IsAsymmetricKeyWrapAlgorithmSupported%2A> method.  
-  
+When overridden, provides a string value that will be used for comparison in the <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.IsAsymmetricKeyWrapAlgorithmSupported%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -421,10 +421,10 @@
         <value>The default asymmetric signature algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When overridden, provides a string value that will be used for comparison in the <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.IsAsymmetricSignatureAlgorithmSupported%2A> method.  
-  
+When overridden, provides a string value that will be used for comparison in the <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.IsAsymmetricSignatureAlgorithmSupported%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -446,10 +446,10 @@
         <value>The default canonicalization algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When overridden, provides a string value that will be used for comparison in the method <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.IsCanonicalizationAlgorithmSupported%2A>.  
-  
+When overridden, provides a string value that will be used for comparison in the method <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.IsCanonicalizationAlgorithmSupported%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -471,10 +471,10 @@
         <value>The default digest algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When overridden, provides a string value that will be used for comparison in the <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.IsDigestAlgorithmSupported%2A> method.  
-  
+When overridden, provides a string value that will be used for comparison in the <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.IsDigestAlgorithmSupported%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -496,10 +496,10 @@
         <value>The default encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When overridden, provides a string value that will be used for comparison in the <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.IsEncryptionAlgorithmSupported%2A> method.  
-  
+When overridden, provides a string value that will be used for comparison in the <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.IsEncryptionAlgorithmSupported%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -521,10 +521,10 @@
         <value>The default encryption key derivation length.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value will vary depending on the subclass that implements it. For `Basic256` encryption, it returns 256.  
-  
+The returned value will vary depending on the subclass that implements it. For `Basic256` encryption, it returns 256.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -546,10 +546,10 @@
         <value>The default signature key derivation length.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value will vary depending on the subclass that implements it. For `Basic256` encryption, it returns 192.  
-  
+The returned value will vary depending on the subclass that implements it. For `Basic256` encryption, it returns 192.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -571,10 +571,10 @@
         <value>The default symmetric key length.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value will vary depending on the subclass that implements it. For `Basic256` encryption, it returns 256.  
-  
+The returned value will vary depending on the subclass that implements it. For `Basic256` encryption, it returns 256.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -637,10 +637,10 @@
           <see langword="true" /> if the key length is supported by the asymmetric algorithm; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typical key lengths are 128, 192, and 256 bits.  
-  
+Typical key lengths are 128, 192, and 256 bits.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -667,10 +667,10 @@
           <see langword="true" /> if the asymmetric key wrap algorithm is supported; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `algorithm` gets compared to the string returned from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultAsymmetricKeyWrapAlgorithm%2A>.  
-  
+`algorithm` gets compared to the string returned from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultAsymmetricKeyWrapAlgorithm%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -697,10 +697,10 @@
           <see langword="true" /> if the asymmetric signature algorithm is supported; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `algorithm` gets compared to the string returned from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultAsymmetricSignatureAlgorithm%2A>.  
-  
+`algorithm` gets compared to the string returned from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultAsymmetricSignatureAlgorithm%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -727,10 +727,10 @@
           <see langword="true" /> if the canonicalization algorithm is supported; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `algorithm` gets compared to the string returned from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultCanonicalizationAlgorithm%2A>.  
-  
+`algorithm` gets compared to the string returned from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultCanonicalizationAlgorithm%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -757,10 +757,10 @@
           <see langword="true" /> if the digest algorithm is supported; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `algorithm` gets compared to the string returned from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultDigestAlgorithm%2A>.  
-  
+`algorithm` gets compared to the string returned from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultDigestAlgorithm%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -787,10 +787,10 @@
           <see langword="true" /> if the encryption algorithm is supported; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `algorithm` gets compared to the string returned from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultEncryptionAlgorithm%2A>.  
-  
+`algorithm` gets compared to the string returned from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultEncryptionAlgorithm%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -863,10 +863,10 @@
           <see langword="true" /> if the symmetric key length is supported; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `length` is compared to a range of values depending on the subclass. For example, in the `TripleDES` subclass, this method verifies that `length` is between 192 and 256, inclusive.  
-  
+The `length` is compared to a range of values depending on the subclass. For example, in the `TripleDES` subclass, this method verifies that `length` is between 192 and 256, inclusive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -934,10 +934,10 @@
         <value>The Triple DES <see cref="T:System.ServiceModel.Security.SecurityAlgorithmSuite" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
-  
+The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -959,10 +959,10 @@
         <value>An algorithm suite that uses RSA15 as the key wrap algorithm and 192-bit Triple Data Encryption Standard (DES) as the message encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
-  
+The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -984,10 +984,10 @@
         <value>An algorithm suite that uses SHA256 for the signature digest and 192-bit Triple Data Encryption Standard (DES) as the message encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
-  
+The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1009,10 +1009,10 @@
         <value>An algorithm suite that uses RSA15 as the key wrap algorithm, SHA256 for the signature digest, and 192-bit Triple Data Encryption Standard (DES) as the message encryption algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
-  
+The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> returned is actually an internal subclass that overrides some of the properties specifying default values as well as some of the methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>

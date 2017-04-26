@@ -30,13 +30,13 @@
     <summary>Represents one case of a <see cref="T:System.Linq.Expressions.SwitchExpression" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create an expression that represents a switch statement without a default case by using the <xref:System.Linq.Expressions.Expression.SwitchCase%2A> method.  
-  
- [!code-csharp[System.Linq.Expressions.ExpressionDev10#34](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#34)]
- [!code-vb[System.Linq.Expressions.ExpressionDev10#34](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#34)]  
-  
+The following example demonstrates how to create an expression that represents a switch statement without a default case by using the <xref:System.Linq.Expressions.Expression.SwitchCase%2A> method.  
+ 
+[!code-csharp[System.Linq.Expressions.ExpressionDev10#34](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#34)]
+[!code-vb[System.Linq.Expressions.ExpressionDev10#34](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#34)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

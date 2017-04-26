@@ -19,10 +19,10 @@
     <summary>Stores and retrieves the message encoding format of incoming and outgoing messages for the composite Web message encoder.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property allows, for example, the composite Web message formatter to know how the composite Web message encoder has encoded the message. <xref:System.ServiceModel.Channels.WebBodyFormatMessageProperty> implements <xref:System.ServiceModel.Channels.IMessageProperty>. Objects that implement this interface are added by value to <xref:System.ServiceModel.Channels.Message.Properties%2A> with the <xref:System.ServiceModel.Channels.WebBodyFormatMessageProperty.Name> providing the access key.  
-  
+This property allows, for example, the composite Web message formatter to know how the composite Web message encoder has encoded the message. <xref:System.ServiceModel.Channels.WebBodyFormatMessageProperty> implements <xref:System.ServiceModel.Channels.IMessageProperty>. Objects that implement this interface are added by value to <xref:System.ServiceModel.Channels.Message.Properties%2A> with the <xref:System.ServiceModel.Channels.WebBodyFormatMessageProperty.Name> providing the access key.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -103,10 +103,10 @@
         <summary>Returns the name of the property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.WebBodyFormatMessageProperty> object must have the name "WebBodyFormatMessageProperty" as its key in the <xref:System.ServiceModel.Channels.MessageProperties> collection for the value to be accessed and used as a processing annotation.  
-  
+The <xref:System.ServiceModel.Channels.WebBodyFormatMessageProperty> object must have the name "WebBodyFormatMessageProperty" as its key in the <xref:System.ServiceModel.Channels.MessageProperties> collection for the value to be accessed and used as a processing annotation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

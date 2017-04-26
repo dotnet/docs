@@ -14,13 +14,13 @@
     <summary>Represents a button on a stylus.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following checks whether the user pressed the barrel button on a stylus.  
-  
- [!code-csharp[StylusSnippets#24](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#24)]
- [!code-vb[StylusSnippets#24](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#24)]  
-  
+The following checks whether the user pressed the barrel button on a stylus.  
+ 
+[!code-csharp[StylusSnippets#24](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#24)]
+[!code-vb[StylusSnippets#24](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#24)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -42,18 +42,18 @@
         <value>The <see cref="T:System.Guid" /> property that represents the stylus button.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property is guaranteed to be unique among stylus buttons on the system.  
+The value of this property is guaranteed to be unique among stylus buttons on the system.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following checks whether the user pressed the barrel button on a stylus.  
-  
- [!code-csharp[StylusSnippets#24](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#24)]
- [!code-vb[StylusSnippets#24](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#24)]  
-  
+The following checks whether the user pressed the barrel button on a stylus.  
+ 
+[!code-csharp[StylusSnippets#24](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#24)]
+[!code-vb[StylusSnippets#24](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#24)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,13 +75,13 @@
         <value>The name of the stylus button.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Windows.Input.StylusButton.Name%2A> property.  
-  
- [!code-csharp[StylusSnippets#25](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#25)]
- [!code-vb[StylusSnippets#25](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#25)]  
-  
+The following example demonstrates the <xref:System.Windows.Input.StylusButton.Name%2A> property.  
+ 
+[!code-csharp[StylusSnippets#25](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#25)]
+[!code-vb[StylusSnippets#25](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#25)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,13 +103,13 @@
         <value>One of the <see cref="T:System.Windows.Input.StylusButtonState" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Windows.Input.StylusButton.StylusButtonState%2A> property.  
-  
- [!code-csharp[StylusSnippets#26](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#26)]
- [!code-vb[StylusSnippets#26](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#26)]  
-  
+The following example demonstrates the <xref:System.Windows.Input.StylusButton.StylusButtonState%2A> property.  
+ 
+[!code-csharp[StylusSnippets#26](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#26)]
+[!code-vb[StylusSnippets#26](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#26)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,13 +131,13 @@
         <value>A <see cref="T:System.Windows.Input.StylusDevice" /> that represents the stylus of the current <see cref="T:System.Windows.Input.StylusButton" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Windows.Input.StylusButton.StylusDevice%2A> property.  
-  
- [!code-csharp[StylusSnippets#27](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#27)]
- [!code-vb[StylusSnippets#27](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#27)]  
-  
+The following example demonstrates the <xref:System.Windows.Input.StylusButton.StylusDevice%2A> property.  
+ 
+[!code-csharp[StylusSnippets#27](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#27)]
+[!code-vb[StylusSnippets#27](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#27)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,13 +160,13 @@
         <returns>To be added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Windows.Input.StylusButton.ToString%2A> method.  
-  
- [!code-csharp[StylusSnippets#28](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#28)]
- [!code-vb[StylusSnippets#28](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#28)]  
-  
+The following example demonstrates the <xref:System.Windows.Input.StylusButton.ToString%2A> method.  
+ 
+[!code-csharp[StylusSnippets#28](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#28)]
+[!code-vb[StylusSnippets#28](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#28)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

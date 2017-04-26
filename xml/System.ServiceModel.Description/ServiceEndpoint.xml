@@ -23,16 +23,16 @@
     <summary>Represents the endpoint for a service that allows clients of the service to find and communicate with the service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The service endpoint contains the information about the address, binding, contract, and behavior required by a client to find and interact with the service at this endpoint.  
+The service endpoint contains the information about the address, binding, contract, and behavior required by a client to find and interact with the service at this endpoint.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceEndpoint#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/program.cs#0)]
- [!code-vb[S_UE_ServiceEndpoint#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/program.vb#0)]  
-  
+[!code-csharp[S_UE_ServiceEndpoint#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/program.cs#0)]
+[!code-vb[S_UE_ServiceEndpoint#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/program.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,16 +55,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> class for a specified contract.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when the binding and address for the endpoint are provided in configuration.  
+Use this constructor when the binding and address for the endpoint are provided in configuration.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceEndpoint#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/program.cs#1)]
- [!code-vb[S_UE_ServiceEndpoint#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/program.vb#1)]  
-  
+[!code-csharp[S_UE_ServiceEndpoint#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/program.cs#1)]
+[!code-vb[S_UE_ServiceEndpoint#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,16 +91,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> class with a specified contract, binding, and address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to specify a service endpoint imperatively in code.  
+Use this constructor to specify a service endpoint imperatively in code.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceEndpoint#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#2)]
- [!code-vb[S_UE_ServiceEndpoint#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#2)]  
-  
+[!code-csharp[S_UE_ServiceEndpoint#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#2)]
+[!code-vb[S_UE_ServiceEndpoint#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,18 +123,18 @@
         <value>The <see cref="T:System.ServiceModel.EndpointAddress" /> that specifies the location of the service endpoint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A> at which the service endpoint listens is provided by <xref:System.ServiceModel.EndpointAddress.Uri%2A> of the <xref:System.ServiceModel.EndpointAddress> returned by <xref:System.ServiceModel.Description.ServiceEndpoint.Address%2A>.  
+The default value of <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A> at which the service endpoint listens is provided by <xref:System.ServiceModel.EndpointAddress.Uri%2A> of the <xref:System.ServiceModel.EndpointAddress> returned by <xref:System.ServiceModel.Description.ServiceEndpoint.Address%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to add a <xref:System.ServiceModel.Description.ServiceEndpoint> to an existing <xref:System.ServiceModel.ServiceHost> and display the address property:  
-  
- [!code-csharp[S_UE_ServiceEndpoint#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/program.cs#3)]
- [!code-vb[S_UE_ServiceEndpoint#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/program.vb#3)]  
-  
+The following example shows how to add a <xref:System.ServiceModel.Description.ServiceEndpoint> to an existing <xref:System.ServiceModel.ServiceHost> and display the address property:  
+ 
+[!code-csharp[S_UE_ServiceEndpoint#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/program.cs#3)]
+[!code-vb[S_UE_ServiceEndpoint#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/program.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -157,20 +157,20 @@
         <value>The <see cref="T:System.Collections.Generic.KeyedByTypeCollection`1" /> of type <see cref="T:System.ServiceModel.Description.IEndpointBehavior" /> that contains the behaviors specified for the service endpoint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type of behavior that is accessible from the description hierarchy is scoped to the specific level. From the <xref:System.ServiceModel.Description.ServiceEndpoint> the <xref:System.ServiceModel.Description.IEndpointBehavior> is accessible.  
+The type of behavior that is accessible from the description hierarchy is scoped to the specific level. From the <xref:System.ServiceModel.Description.ServiceEndpoint> the <xref:System.ServiceModel.Description.IEndpointBehavior> is accessible.  
+ 
+If you want access to the <xref:System.ServiceModel.Description.IContractBehavior> associated with an endpoint, you can obtain the contact for the endpoint using the <xref:System.ServiceModel.Description.ServiceEndpoint.Contract%2A> property. Then call the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A> property to obtain the <xref:System.Collections.Generic.KeyedByTypeCollection%601> of the <xref:System.ServiceModel.Description.IContractBehavior> objects associated with the endpoint.  
+ 
   
- If you want access to the <xref:System.ServiceModel.Description.IContractBehavior> associated with an endpoint, you can obtain the contact for the endpoint using the <xref:System.ServiceModel.Description.ServiceEndpoint.Contract%2A> property. Then call the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A> property to obtain the <xref:System.Collections.Generic.KeyedByTypeCollection%601> of the <xref:System.ServiceModel.Description.IContractBehavior> objects associated with the endpoint.  
-  
-   
-  
+ 
 ## Examples  
- The following code demonstrates how to add a custom endpoint behavior and then access that behavior.  
-  
- [!code-csharp[S_UE_ServiceEndpoint#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#4)]
- [!code-vb[S_UE_ServiceEndpoint#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#4)]  
-  
+The following code demonstrates how to add a custom endpoint behavior and then access that behavior.  
+ 
+[!code-csharp[S_UE_ServiceEndpoint#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#4)]
+[!code-vb[S_UE_ServiceEndpoint#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,16 +193,16 @@
         <value>The <see cref="T:System.ServiceModel.Channels.Binding" /> for the service endpoint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The binding for an endpoint can also be specified in the configuration file in the [\&lt;bindings\&gt;](~/docs/framework/configure-apps/file-schema/wcf/bindings.md) element.  
+The binding for an endpoint can also be specified in the configuration file in the [\&lt;bindings\&gt;](~/docs/framework/configure-apps/file-schema/wcf/bindings.md) element.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#5)]
- [!code-vb[S_UE_ServiceEndpoint#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#5)]  
-  
+[!code-csharp[S_UE_ServiceEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#5)]
+[!code-vb[S_UE_ServiceEndpoint#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,16 +225,16 @@
         <value>The <see cref="T:System.ServiceModel.Description.ContractDescription" /> that specifies the contract for the service endpoint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each service endpoint has a unique contract. From the <xref:System.ServiceModel.Description.ContractDescription>, the <xref:System.ServiceModel.Description.OperationDescriptionCollection> for the methods contained in the contract can be accessed using the <xref:System.ServiceModel.Description.ContractDescription.Operations%2A> property.  
+Each service endpoint has a unique contract. From the <xref:System.ServiceModel.Description.ContractDescription>, the <xref:System.ServiceModel.Description.OperationDescriptionCollection> for the methods contained in the contract can be accessed using the <xref:System.ServiceModel.Description.ContractDescription.Operations%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#5)]
- [!code-vb[S_UE_ServiceEndpoint#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#5)]  
-  
+[!code-csharp[S_UE_ServiceEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#5)]
+[!code-vb[S_UE_ServiceEndpoint#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,16 +296,16 @@
         <value>The <see cref="T:System.Uri" /> at which the service endpoint listens. The default value is provided by <see cref="P:System.ServiceModel.EndpointAddress.Uri" /> of the <see cref="T:System.ServiceModel.EndpointAddress" /> returned by <see cref="P:System.ServiceModel.Description.ServiceEndpoint.Address" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value can also be set using the <xref:System.ServiceModel.Configuration.ServiceEndpointElement.ListenUri%2A> property.  
+The value can also be set using the <xref:System.ServiceModel.Configuration.ServiceEndpointElement.ListenUri%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#5)]
- [!code-vb[S_UE_ServiceEndpoint#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#5)]  
-  
+[!code-csharp[S_UE_ServiceEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#5)]
+[!code-vb[S_UE_ServiceEndpoint#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,16 +328,16 @@
         <value>The <see cref="T:System.ServiceModel.Description.ListenUriMode" /> for the service endpoint. The default value is <see cref="F:System.ServiceModel.Description.ListenUriMode.Explicit" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the <xref:System.ServiceModel.Description.ListenUriMode> is used to determine how the transport handles the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A>.  
+The value of the <xref:System.ServiceModel.Description.ListenUriMode> is used to determine how the transport handles the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#5)]
- [!code-vb[S_UE_ServiceEndpoint#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#5)]  
-  
+[!code-csharp[S_UE_ServiceEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#5)]
+[!code-vb[S_UE_ServiceEndpoint#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -360,19 +360,19 @@
         <value>The name the service endpoint. The default value is the concatenation of the binding name and the contract description name. For example, <see cref="P:System.ServiceModel.Channels.Binding.Name" /> +'_' + <see cref="P:System.ServiceModel.Description.ContractDescription.Name" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Services may have multiple endpoints, so the endpoint <xref:System.ServiceModel.Description.ServiceEndpoint.Name%2A> is distinct from the name of the service. The service name is accessed using the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A> property.  
-  
+Services may have multiple endpoints, so the endpoint <xref:System.ServiceModel.Description.ServiceEndpoint.Name%2A> is distinct from the name of the service. The service name is accessed using the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A> property.  
+ 
 > [!NOTE]
 >  When accessed from the service, this property is populated by the <endpoint name="`endpointName`"\> configuration element. When accessed on the client, this property is `null`. When the property getter is called (again on the client) it populates this property with a default value based on the contract and binding.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_ServiceEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#5)]
- [!code-vb[S_UE_ServiceEndpoint#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#5)]  
-  
+[!code-csharp[S_UE_ServiceEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#5)]
+[!code-vb[S_UE_ServiceEndpoint#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

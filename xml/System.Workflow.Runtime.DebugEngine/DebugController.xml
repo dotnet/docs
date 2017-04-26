@@ -19,14 +19,14 @@
     <summary>Relays workflow instance creation, execution and termination events to the debugger process. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- An instance of this class runs in the workflow host application. It is created by <xref:System.Workflow.Runtime.WorkflowRuntime> if workflow debugging is enabled.  
-  
+ 
+An instance of this class runs in the workflow host application. It is created by <xref:System.Workflow.Runtime.WorkflowRuntime> if workflow debugging is enabled.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <returns>An <see cref="T:System.Object" /> that implements <see cref="T:System.Runtime.Remoting.Lifetime.ILease" /> and is used to control the lifetime policy for the <see cref="T:System.Workflow.Runtime.DebugEngine.DebugController" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value is set to `null` unless this method is overridden in a derived class.  
-  
+The return value is set to `null` unless this method is overridden in a derived class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

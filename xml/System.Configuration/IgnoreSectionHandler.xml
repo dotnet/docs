@@ -18,14 +18,14 @@
     <summary>Provides a legacy section-handler definition for configuration sections that are not handled by the <see cref="N:System.Configuration" /> types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The configuration system completely parses configuration files to collect configuration information and throws exceptions when it encounters configuration sections that do not have a corresponding entry in the `configSections` section.  
-  
- For those sections not handled by the <xref:System.Configuration> types, the new wrapper type <xref:System.Configuration.IgnoreSection> is provided. This is to prevent configuration-file parsing exceptions.  
-  
- For legacy purposes the <xref:System.Configuration.IgnoreSectionHandler> is also provided.  
-  
+The configuration system completely parses configuration files to collect configuration information and throws exceptions when it encounters configuration sections that do not have a corresponding entry in the `configSections` section.  
+ 
+For those sections not handled by the <xref:System.Configuration> types, the new wrapper type <xref:System.Configuration.IgnoreSection> is provided. This is to prevent configuration-file parsing exceptions.  
+ 
+For legacy purposes the <xref:System.Configuration.IgnoreSectionHandler> is also provided.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -19,18 +19,18 @@
     <summary>Represents the <see langword="restriction" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). This class is for complex types with a complex content model derived by restriction. It restricts the contents of the complex type to a subset of the inherited complex type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a `complexContent` element extended by restriction.  
-  
- [!code-cpp[Classic WebData XmlSchemaComplexContentRestriction Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaComplexContentRestriction Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlSchemaComplexContentRestriction Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaComplexContentRestriction Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlSchemaComplexContentRestriction Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaComplexContentRestriction Example/VB/source.vb#1)]  
-  
- The following XML file is generated for the preceding code example.  
-  
- [!code-xml[Classic WebData XmlSchemaComplexContentRestriction Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaComplexContentRestriction Example/XML/source.xml#2)]  
-  
+The following example creates a `complexContent` element extended by restriction.  
+ 
+[!code-cpp[Classic WebData XmlSchemaComplexContentRestriction Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaComplexContentRestriction Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlSchemaComplexContentRestriction Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaComplexContentRestriction Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlSchemaComplexContentRestriction Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaComplexContentRestriction Example/VB/source.vb#1)]  
+ 
+The following XML file is generated for the preceding code example.  
+ 
+[!code-xml[Classic WebData XmlSchemaComplexContentRestriction Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaComplexContentRestriction Example/XML/source.xml#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -141,10 +141,10 @@
         <value>The name of the complex type from which this type is derived by restriction.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value must be a QName. It is the name of the complex type specified by the base attribute of the `restriction` element.  
-  
+The value must be a QName. It is the name of the complex type specified by the base attribute of the `restriction` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,25 +14,25 @@
     <summary>Defines the base class for events providing Web-request information.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Management.WebRequestEvent> is raised at every Web request.  
-  
- It uses the <xref:System.Web.Management.WebRequestInformation> class to obtain request information.  
-  
+The <xref:System.Web.Management.WebRequestEvent> is raised at every Web request.  
+ 
+It uses the <xref:System.Web.Management.WebRequestInformation> class to obtain request information.  
+ 
 > [!NOTE]
 >  In most cases you will use the standard ASP.NET health-monitoring types and control their behavior by setting the `healthMonitoring` configuration section. You can also create custom types, as shown in the next example. If you create your custom event type and you need to add your own information, customize the <xref:System.Web.Management.WebBaseEvent.FormatCustomEventDetails%2A> method. This will avoid overwriting or tampering with sensitive system information.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to derive from the <xref:System.Web.Management.WebRequestEvent> class to create a custom event.  
-  
- [!code-csharp[System.Web.Management.WebRequestEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/CS/WebRequestEvent.cs#1)]
- [!code-vb[System.Web.Management.WebRequestEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/VB/WebRequestEvent.vb#1)]  
-  
- The following is an excerpt of the configuration file that enables ASP.NET to use the custom event.  
-  
+The following code example shows how to derive from the <xref:System.Web.Management.WebRequestEvent> class to create a custom event.  
+ 
+[!code-csharp[System.Web.Management.WebRequestEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/CS/WebRequestEvent.cs#1)]
+[!code-vb[System.Web.Management.WebRequestEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/VB/WebRequestEvent.vb#1)]  
+ 
+The following is an excerpt of the configuration file that enables ASP.NET to use the custom event.  
+ 
 ```  
 <healthMonitoring   
   enabled="true" heartBeatInterval="0">  
@@ -61,7 +61,7 @@ type="SamplesAspNet.SampleWebRequestEvent,webrequestevent,Version=1.0.1573.23947
   </rules>  
 </healthMonitoring>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,21 +87,21 @@ type="SamplesAspNet.SampleWebRequestEvent,webrequestevent,Version=1.0.1573.23947
         <summary>Initializes the <see cref="T:System.Web.Management.WebRequestEvent" /> class with specified event parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor <xref:System.Web.Management.WebRequestEvent.%23ctor%2A> allows specifying the event message, the source of the event, and the code or identifier associated with the event.  
+The constructor <xref:System.Web.Management.WebRequestEvent.%23ctor%2A> allows specifying the event message, the source of the event, and the code or identifier associated with the event.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to customize this constructor.  
-  
+The following code example shows how to customize this constructor.  
+ 
 > [!NOTE]
 >  The value you use to define your event code or identifier must be greater than <xref:System.Web.Management.WebEventCodes>.  
-  
- [!code-csharp[System.Web.Management.WebRequestEvent#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/CS/WebRequestEvent.cs#2)]
- [!code-vb[System.Web.Management.WebRequestEvent#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/VB/WebRequestEvent.vb#2)]  
-  
+ 
+[!code-csharp[System.Web.Management.WebRequestEvent#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/CS/WebRequestEvent.cs#2)]
+[!code-vb[System.Web.Management.WebRequestEvent#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/VB/WebRequestEvent.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,21 +129,21 @@ type="SamplesAspNet.SampleWebRequestEvent,webrequestevent,Version=1.0.1573.23947
         <summary>Initializes the <see cref="T:System.Web.Management.WebRequestEvent" /> class with specified event parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor <xref:System.Web.Management.WebRequestEvent.%23ctor%2A> allows specifying the event message, the source of the event, the code or identifier associated with the event, and the detailed code.  
+The constructor <xref:System.Web.Management.WebRequestEvent.%23ctor%2A> allows specifying the event message, the source of the event, the code or identifier associated with the event, and the detailed code.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to customize this constructor.  
-  
+The following code example shows how to customize this constructor.  
+ 
 > [!NOTE]
 >  The value you use to define your event code or identifier must be greater than <xref:System.Web.Management.WebEventCodes>  
-  
- [!code-csharp[System.Web.Management.WebRequestEvent#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/CS/WebRequestEvent.cs#3)]
- [!code-vb[System.Web.Management.WebRequestEvent#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/VB/WebRequestEvent.vb#3)]  
-  
+ 
+[!code-csharp[System.Web.Management.WebRequestEvent#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/CS/WebRequestEvent.cs#3)]
+[!code-vb[System.Web.Management.WebRequestEvent#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/VB/WebRequestEvent.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,17 +183,17 @@ type="SamplesAspNet.SampleWebRequestEvent,webrequestevent,Version=1.0.1573.23947
         <value>The information associated with the Web-application request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The standard request information is defined by the <xref:System.Web.Management.WebRequestInformation> class.  
+The standard request information is defined by the <xref:System.Web.Management.WebRequestInformation> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to obtain the Web-request information.  
-  
-  
-  
+The following code example shows how to obtain the Web-request information.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>

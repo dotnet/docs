@@ -14,10 +14,10 @@
     <summary>Used within the template of a <see cref="T:System.Windows.Controls.DataGrid" /> to specify the location in the control's visual tree where the cells are to be added.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class generates the <xref:System.Windows.Controls.DataGridCell> instances that are added to the <xref:System.Windows.Controls.DataGrid> visual tree.  
-  
+This class generates the <xref:System.Windows.Controls.DataGridCell> instances that are added to the <xref:System.Windows.Controls.DataGrid> visual tree.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,10 +81,10 @@
         <summary>Clears the container reference for the specified cell.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method sets the row owner value for the <xref:System.Windows.Controls.DataGridCell> to null.  
-  
+This method sets the row owner value for the <xref:System.Windows.Controls.DataGridCell> to null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -278,10 +278,10 @@
         <summary>Prepares the cell to display the specified item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method prepares the <xref:System.Windows.Controls.DataGridCell> for use and updates the column reference.  
-  
+This method prepares the <xref:System.Windows.Controls.DataGridCell> for use and updates the column reference.  
+ 
  ]]></format>
         </remarks>
       </Docs>

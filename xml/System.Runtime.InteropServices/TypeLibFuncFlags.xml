@@ -22,12 +22,12 @@
     <summary>Describes the original settings of the <see langword="FUNCFLAGS" /> in the COM type library from where this method was imported.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Runtime.InteropServices.TypeLibFuncFlags> is used with the <xref:System.Runtime.InteropServices.TypeLibFuncAttribute>. The flags are retained for reference only. They are not used by the common language runtime.  
-  
- For more information about `FUNCFLAGS`, see the MSDN library.  
-  
+<xref:System.Runtime.InteropServices.TypeLibFuncFlags> is used with the <xref:System.Runtime.InteropServices.TypeLibFuncAttribute>. The flags are retained for reference only. They are not used by the common language runtime.  
+ 
+For more information about `FUNCFLAGS`, see the MSDN library.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,9 +14,9 @@
     <summary>Converts instances of other types to and from a <see cref="T:System.Windows.CornerRadius" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_CornerRadiusConverter"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -150,10 +150,10 @@
         <returns>The object created from converting this <see cref="T:System.Windows.CornerRadius" /> (a string).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `destinationType` must be <xref:System.String>.  
-  
+`destinationType` must be <xref:System.String>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

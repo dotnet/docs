@@ -252,10 +252,10 @@
         <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryControlCollection.OnValidate(System.Object)" /> method verifies that <paramref name="value" /> is a <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not return a value. Instead, an exception is thrown if the specified object is null or is not a valid <xref:System.DirectoryServices.Protocols.DirectoryControl> object.  
-  
+This method does not return a value. Instead, an exception is thrown if the specified object is null or is not a valid <xref:System.DirectoryServices.Protocols.DirectoryControl> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

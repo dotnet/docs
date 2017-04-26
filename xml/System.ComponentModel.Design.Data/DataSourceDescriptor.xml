@@ -47,10 +47,10 @@
         <value>A <see cref="T:System.Drawing.Bitmap" /> image that represents the data source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Drawing.Bitmap> image that represents the data source is typically used in design-time pickers. The image may be `null`.  
-  
+A <xref:System.Drawing.Bitmap> image that represents the data source is typically used in design-time pickers. The image may be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,10 +73,10 @@
           <see langword="true" /> if the data source is designable; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Indicates whether the data source is designable, meaning that an instance of this type will be added to the design surface when binding. Designable data sources are bound by instance rather than by type. Data sources of type <xref:System.ComponentModel.IComponent> are designable.  
-  
+Indicates whether the data source is designable, meaning that an instance of this type will be added to the design surface when binding. Designable data sources are bound by instance rather than by type. Data sources of type <xref:System.ComponentModel.IComponent> are designable.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <value>The name of the data source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of the data source must be unique across all data sources at the `EnvDTE.Project` level.  
-  
+The name of the data source must be unique across all data sources at the `EnvDTE.Project` level.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -68,10 +68,10 @@
         <returns>The element associated with the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see "XAML Namescopes in Styles and Templates" in [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
-  
+For more information, see "XAML Namescopes in Styles and Templates" in [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <summary>Registers a new name/object pair into the current name scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see "XAML Namescopes in Styles and Templates" in [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
-  
+For more information, see "XAML Namescopes in Styles and Templates" in [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,12 +188,12 @@
         <value>The resources that can be used within the scope of this template.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlPropertyElementUsage_Resources"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
   <object.Resources>  
@@ -207,15 +207,15 @@
   </object.Resources>  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_Resources"></a>   
 ## XAML Values  
- *oneOrMoreResourceElements*  
- One or more resource elements. To be referenced later in either [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md) or [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md) syntax in XAML, a resource element MUST have an `x:Key` attribute.  
-  
- \<ResourceDictionary Source="*externalDictionarySource*"/>  
- An external file that defines a <xref:System.Windows.ResourceDictionary>.  
-  
+*oneOrMoreResourceElements*  
+One or more resource elements. To be referenced later in either [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md) or [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md) syntax in XAML, a resource element MUST have an `x:Key` attribute.  
+ 
+\<ResourceDictionary Source="*externalDictionarySource*"/>  
+An external file that defines a <xref:System.Windows.ResourceDictionary>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,10 +312,10 @@
         <returns>The object, if found. Returns <see langword="null" /> if no object of that name was found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FrameworkTemplate> instance is cast to an <xref:System.Windows.Markup.INameScope> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FrameworkTemplate> instance is cast to an <xref:System.Windows.Markup.INameScope> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -389,10 +389,10 @@
         <summary>Removes a name/object mapping from the XAML namescope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see "XAML Namescopes in Styles and Templates" in [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
-  
+For more information, see "XAML Namescopes in Styles and Templates" in [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -417,10 +417,10 @@
         <summary>When overridden in a derived class, supplies rules for the element this template is applied to.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base implementation specifies that the templated parent must be a non-null <xref:System.Windows.FrameworkElement>.  
-  
+The base implementation specifies that the templated parent must be a non-null <xref:System.Windows.FrameworkElement>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -442,27 +442,27 @@
         <value>The root node of the template.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlPropertyElementUsage_VisualTree"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
   <VisualTreeRootNode > VisualTreeNodeContents  
   </VisualTreeRootNode >  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_VisualTree"></a>   
 ## XAML Values  
- *VisualTreeRootNode*  
- A single XAML element as the immediate child of the <xref:System.Windows.FrameworkTemplate> subclass. Templates must have a single root node. In order to generate a useful template, the element chosen as *VisualTreeRootNode* is expected to support a content model of its own, often a model that supports multiple child elements.  
-  
- *VisualTreeNodeContents*  
- One or more elements that complete the intended template. If the element chosen as *VisualTreeRootNode* only supports a single child, then there can only be one element declared as *VisualTreeNodeContents*. It is also possible (though uncommon) to provide text content if the chosen *VisualTreeRootNode* supports a text content property.  
-  
+*VisualTreeRootNode*  
+A single XAML element as the immediate child of the <xref:System.Windows.FrameworkTemplate> subclass. Templates must have a single root node. In order to generate a useful template, the element chosen as *VisualTreeRootNode* is expected to support a content model of its own, often a model that supports multiple child elements.  
+ 
+*VisualTreeNodeContents*  
+One or more elements that complete the intended template. If the element chosen as *VisualTreeRootNode* only supports a single child, then there can only be one element declared as *VisualTreeNodeContents*. It is also possible (though uncommon) to provide text content if the chosen *VisualTreeRootNode* supports a text content property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -184,10 +184,10 @@
         <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface. The <xref:System.Collections.Generic.ICollection%601> interface specifies that the <xref:System.Collections.Generic.ICollection%601.Add%2A> method should throw a <xref:System.NotSupportedException> exception if the collection that implements the interface is read-only.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface. The <xref:System.Collections.Generic.ICollection%601> interface specifies that the <xref:System.Collections.Generic.ICollection%601.Add%2A> method should throw a <xref:System.NotSupportedException> exception if the collection that implements the interface is read-only.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">In all cases.</exception>
@@ -220,10 +220,10 @@
         <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface. The <xref:System.Collections.Generic.ICollection%601> interface specifies that the <xref:System.Collections.Generic.ICollection%601.Clear%2A> method should throw a <xref:System.NotSupportedException> exception if the collection that implements the interface is read-only.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface. The <xref:System.Collections.Generic.ICollection%601> interface specifies that the <xref:System.Collections.Generic.ICollection%601.Clear%2A> method should throw a <xref:System.NotSupportedException> exception if the collection that implements the interface is read-only.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">In all cases.</exception>
@@ -261,10 +261,10 @@
           <see langword="true" /> if <paramref name="item" /> is found in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,10 +297,10 @@
           <see langword="true" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -337,10 +337,10 @@
           <see langword="true" /> if <paramref name="item" /> was successfully removed from the collection; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if item is not found in the original collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface. The <xref:System.Collections.Generic.ICollection%601> interface specifies that the <xref:System.Collections.Generic.ICollection%601.Remove%2A> method should throw a <xref:System.NotSupportedException> exception if the collection that implements the interface is read-only.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface. The <xref:System.Collections.Generic.ICollection%601> interface specifies that the <xref:System.Collections.Generic.ICollection%601.Remove%2A> method should throw a <xref:System.NotSupportedException> exception if the collection that implements the interface is read-only.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">In all cases.</exception>
@@ -378,10 +378,10 @@
         <summary>Copies the elements of the collection to an array, starting at a specific array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -424,10 +424,10 @@
           <see langword="true" /> if access to the collection is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -459,10 +459,10 @@
         <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -495,10 +495,10 @@
         <returns>An enumerator that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602.ValueCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

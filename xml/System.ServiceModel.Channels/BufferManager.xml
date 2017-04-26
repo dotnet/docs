@@ -15,10 +15,10 @@
     <summary>Many [!INCLUDE[indigo1](~/includes/indigo1-md.md)] features require the use of buffers, which are expensive to create and destroy. You can use the <see cref="T:System.ServiceModel.Channels.BufferManager" /> class to manage a buffer pool. The pool and its buffers are created when you instantiate this class and destroyed when the buffer pool is reclaimed by garbage collection. Every time you need to use a buffer, you take one from the pool, use it, and return it to the pool when done. This process is much faster than creating and destroying a buffer every time you need to use one.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is commonly used while implementing custom encoders or custom transport channels.  
-  
+This class is commonly used while implementing custom encoders or custom transport channels.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,10 +38,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BufferManager" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because this constructor is `protected`, you can only call it from a derived class.  
-  
+Because this constructor is `protected`, you can only call it from a derived class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <returns>Returns a <see cref="T:System.ServiceModel.Channels.BufferManager" /> object with the specified parameters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a new buffer pool with as many buffers as can be created.  
-  
+This method creates a new buffer pool with as many buffers as can be created.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InsufficientMemoryException">
@@ -129,10 +129,10 @@
         <summary>Returns a buffer to the pool.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer is returned to the pool and is available for re-use.  
-  
+The buffer is returned to the pool and is available for re-use.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -162,10 +162,10 @@
         <returns>A byte array that is the requested size of the buffer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If successful, the system returns a byte array buffer of at least the requested size.  
-  
+If successful, the system returns a byte array buffer of at least the requested size.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">

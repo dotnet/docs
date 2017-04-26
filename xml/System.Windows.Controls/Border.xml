@@ -14,22 +14,22 @@
     <summary>Draws a border, background, or both around another element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Border> can have only one child. To display multiple child elements, you need to place an additional <xref:System.Windows.Controls.Panel> element within the parent <xref:System.Windows.Controls.Border>. You can then place child elements within that <xref:System.Windows.Controls.Panel> element.  
+<xref:System.Windows.Controls.Border> can have only one child. To display multiple child elements, you need to place an additional <xref:System.Windows.Controls.Panel> element within the parent <xref:System.Windows.Controls.Border>. You can then place child elements within that <xref:System.Windows.Controls.Panel> element.  
+ 
+If you want to display a border around your content, you must place the elements within a parent <xref:System.Windows.Controls.Border> element.  
+ 
   
- If you want to display a border around your content, you must place the elements within a parent <xref:System.Windows.Controls.Border> element.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to create a <xref:System.Windows.Controls.Border> and set properties in code and [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
-  
- [!code-cpp[marginpaddingalignmentsample#3](~/samples/snippets/cpp/VS_Snippets_Wpf/MarginPaddingAlignmentSample/CPP/Margin_Padding_Alignment_Sample.cpp#3)]
- [!code-csharp[marginpaddingalignmentsample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/MarginPaddingAlignmentSample/CSharp/Margin_Padding_Alignment_Sample.cs#3)]
- [!code-vb[marginpaddingalignmentsample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MarginPaddingAlignmentSample/VisualBasic/MarginPaddingAlignment.vb#3)]
- [!code-xml[marginpaddingalignmentsample#3](~/samples/snippets/xaml/VS_Snippets_Wpf/MarginPaddingAlignmentSample/XAML/default.xaml#3)]  
-  
+The following example demonstrates how to create a <xref:System.Windows.Controls.Border> and set properties in code and [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+ 
+[!code-cpp[marginpaddingalignmentsample#3](~/samples/snippets/cpp/VS_Snippets_Wpf/MarginPaddingAlignmentSample/CPP/Margin_Padding_Alignment_Sample.cpp#3)]
+[!code-csharp[marginpaddingalignmentsample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/MarginPaddingAlignmentSample/CSharp/Margin_Padding_Alignment_Sample.cs#3)]
+[!code-vb[marginpaddingalignmentsample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MarginPaddingAlignmentSample/VisualBasic/MarginPaddingAlignment.vb#3)]
+[!code-xml[marginpaddingalignmentsample#3](~/samples/snippets/xaml/VS_Snippets_Wpf/MarginPaddingAlignmentSample/XAML/default.xaml#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <returns>The <see cref="T:System.Windows.Size" /> that represents the arranged size of this <see cref="T:System.Windows.Controls.Border" /> element and its child element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Border> can have only one child element.  
-  
+<xref:System.Windows.Controls.Border> can have only one child element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,26 +95,26 @@
         <value>The <see cref="T:System.Windows.Media.Brush" /> that draws the background. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Background"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Border>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the value of the <xref:System.Windows.Controls.Border.Background%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
-  
- [!code-csharp[ThicknessStruct#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#1)]
- [!code-vb[ThicknessStruct#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#1)]
- [!code-xml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
-  
+The following example shows how to set the value of the <xref:System.Windows.Controls.Border.Background%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
+ 
+[!code-csharp[ThicknessStruct#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#1)]
+[!code-vb[ThicknessStruct#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#1)]
+[!code-xml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,26 +153,26 @@
         <value>The <see cref="T:System.Windows.Media.Brush" /> that draws the outer border color. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_BorderBrush"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Border.BorderBrushProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the value of the <xref:System.Windows.Controls.Border.BorderBrush%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
-  
- [!code-csharp[ThicknessStruct#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#1)]
- [!code-vb[ThicknessStruct#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#1)]
- [!code-xml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
-  
+The following example shows how to set the value of the <xref:System.Windows.Controls.Border.BorderBrush%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
+ 
+[!code-csharp[ThicknessStruct#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#1)]
+[!code-vb[ThicknessStruct#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#1)]
+[!code-xml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,26 +211,26 @@
         <value>The <see cref="T:System.Windows.Thickness" /> that describes the width of the boundaries of the <see cref="T:System.Windows.Controls.Border" />. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_BorderThickness"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Border>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the value of this property.  
-  
- [!code-csharp[ThicknessStruct#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#1)]
- [!code-vb[ThicknessStruct#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#1)]
- [!code-xml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
-  
+The following example shows how to set the value of this property.  
+ 
+[!code-csharp[ThicknessStruct#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#1)]
+[!code-vb[ThicknessStruct#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#1)]
+[!code-xml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,27 +269,27 @@
         <value>The <see cref="T:System.Windows.CornerRadius" /> that describes the degree to which corners are rounded. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the property name suggests that you can use only singular values, <xref:System.Windows.Controls.Border.CornerRadius%2A> also supports non-uniform radii. Radius values that are too large are scaled so that they blend smoothly from corner to corner.  
-  
+Although the property name suggests that you can use only singular values, <xref:System.Windows.Controls.Border.CornerRadius%2A> also supports non-uniform radii. Radius values that are too large are scaled so that they blend smoothly from corner to corner.  
+ 
 <a name="dependencyPropertyInfo_CornerRadius"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Border>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the value of this property.  
-  
- [!code-csharp[ThicknessStruct#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#1)]
- [!code-vb[ThicknessStruct#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#1)]
- [!code-xml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
-  
+The following example shows how to set the value of this property.  
+ 
+[!code-csharp[ThicknessStruct#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#1)]
+[!code-vb[ThicknessStruct#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#1)]
+[!code-xml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -332,10 +332,10 @@
         <returns>The <see cref="T:System.Windows.Size" /> that represents the upper size limit of the element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Border> element determines its upper <xref:System.Windows.Size> limit by analyzing the sizing properties, margin, and requested size of its child elements.  
-  
+A <xref:System.Windows.Controls.Border> element determines its upper <xref:System.Windows.Size> limit by analyzing the sizing properties, margin, and requested size of its child elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -378,26 +378,26 @@
         <value>The <see cref="T:System.Windows.Thickness" /> that describes the amount of space between a <see cref="T:System.Windows.Controls.Border" /> and its single child element. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Padding"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Border>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the value of this property.  
-  
- [!code-csharp[ThicknessStruct#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#1)]
- [!code-vb[ThicknessStruct#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#1)]
- [!code-xml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
-  
+The following example shows how to set the value of this property.  
+ 
+[!code-csharp[ThicknessStruct#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#1)]
+[!code-vb[ThicknessStruct#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#1)]
+[!code-xml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

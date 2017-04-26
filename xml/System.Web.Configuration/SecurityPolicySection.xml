@@ -14,17 +14,17 @@
     <summary>Defines configuration settings that are used to support the security infrastructure of a Web application. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.SecurityPolicySection> class provides a way to programmatically access and modify the content of the `securityPolicy` section of the configuration file.  
+The <xref:System.Web.Configuration.SecurityPolicySection> class provides a way to programmatically access and modify the content of the `securityPolicy` section of the configuration file.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates how to specify values declaratively within the `securityPolicy` section, which can also be accessed as members of the <xref:System.Web.Configuration.SecurityPolicySection> class.  
-  
- The following configuration file example shows how to specify values declaratively for the `securityPolicy` section.  
-  
+This example demonstrates how to specify values declaratively within the `securityPolicy` section, which can also be accessed as members of the <xref:System.Web.Configuration.SecurityPolicySection> class.  
+ 
+The following configuration file example shows how to specify values declaratively for the `securityPolicy` section.  
+ 
 ```  
 <system.web>  
   <securityPolicy>  
@@ -36,12 +36,12 @@
   </securityPolicy>  
 </system.web>  
 ```  
-  
- The following code example demonstrates how to use the <xref:System.Web.Configuration.SecurityPolicySection> class.  
-  
- [!code-csharp[System.Web.Configuration.SecurityPolicySection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SecurityPolicySection/CS/securitypolicysection.cs#1)]
- [!code-vb[System.Web.Configuration.SecurityPolicySection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SecurityPolicySection/VB/securitypolicysection.vb#1)]  
-  
+ 
+The following code example demonstrates how to use the <xref:System.Web.Configuration.SecurityPolicySection> class.  
+ 
+[!code-csharp[System.Web.Configuration.SecurityPolicySection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SecurityPolicySection/CS/securitypolicysection.cs#1)]
+[!code-vb[System.Web.Configuration.SecurityPolicySection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SecurityPolicySection/VB/securitypolicysection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.SecurityPolicySection" /> class by using default settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.SecurityPolicySection.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.SecurityPolicySection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
-  
+The <xref:System.Web.Configuration.SecurityPolicySection.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.SecurityPolicySection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,18 +108,18 @@
         <value>A collection of <see cref="P:System.Web.Configuration.SecurityPolicySection.TrustLevels" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default values for the <xref:System.Web.Configuration.SecurityPolicySection.TrustLevels%2A> property are `Full`, `High`, `Medium`, `Low`, and `Minimal`. The items of the <xref:System.Web.Configuration.SecurityPolicySection.TrustLevels%2A> collection each specify a security-level name and an associated policy file. You can extend the security system by providing your own named trust-level element mapped to a file specified by the `policyFile` attribute. For information about creating trust-level elements, see [trustLevel Element for securityPolicy (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/729ab04c-03da-4ee5-86b1-be9d08a09369).  
+The default values for the <xref:System.Web.Configuration.SecurityPolicySection.TrustLevels%2A> property are `Full`, `High`, `Medium`, `Low`, and `Minimal`. The items of the <xref:System.Web.Configuration.SecurityPolicySection.TrustLevels%2A> collection each specify a security-level name and an associated policy file. You can extend the security system by providing your own named trust-level element mapped to a file specified by the `policyFile` attribute. For information about creating trust-level elements, see [trustLevel Element for securityPolicy (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/729ab04c-03da-4ee5-86b1-be9d08a09369).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.Configuration.SecurityPolicySection.TrustLevels%2A> property, add a trust-level element to the configuration file, and update the configuration file. This code example is part of a larger example provided for the <xref:System.Web.Configuration.SecurityPolicySection> class.  
-  
- [!code-csharp[System.Web.Configuration.SecurityPolicySection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SecurityPolicySection/CS/securitypolicysection.cs#2)]
- [!code-vb[System.Web.Configuration.SecurityPolicySection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SecurityPolicySection/VB/securitypolicysection.vb#2)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.Configuration.SecurityPolicySection.TrustLevels%2A> property, add a trust-level element to the configuration file, and update the configuration file. This code example is part of a larger example provided for the <xref:System.Web.Configuration.SecurityPolicySection> class.  
+ 
+[!code-csharp[System.Web.Configuration.SecurityPolicySection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SecurityPolicySection/CS/securitypolicysection.cs#2)]
+[!code-vb[System.Web.Configuration.SecurityPolicySection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SecurityPolicySection/VB/securitypolicysection.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

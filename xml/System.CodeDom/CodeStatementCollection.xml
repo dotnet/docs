@@ -22,19 +22,19 @@
     <summary>Represents a collection of <see cref="T:System.CodeDom.CodeStatement" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.CodeDom.CodeStatementCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeStatement> objects.  
+The <xref:System.CodeDom.CodeStatementCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeStatement> objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.CodeStatementCollection> class. The example creates a new instance of the class and uses several methods to add statements to the collection, return their index, and add or remove statements at a specific index point.  
-  
- [!code-cpp[CodeStatementCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#1)]
- [!code-csharp[CodeStatementCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#1)]
- [!code-vb[CodeStatementCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.CodeStatementCollection> class. The example creates a new instance of the class and uses several methods to add statements to the collection, return their index, and add or remove statements at a specific index point.  
+ 
+[!code-cpp[CodeStatementCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#1)]
+[!code-csharp[CodeStatementCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#1)]
+[!code-vb[CodeStatementCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,14 +53,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeStatementCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create an empty instance of the <xref:System.CodeDom.CodeStatementCollection> class.  
-  
- [!code-cpp[CodeStatementCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#2)]
- [!code-csharp[CodeStatementCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#2)]
- [!code-vb[CodeStatementCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#2)]  
-  
+The following example shows how to create an empty instance of the <xref:System.CodeDom.CodeStatementCollection> class.  
+ 
+[!code-cpp[CodeStatementCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#2)]
+[!code-csharp[CodeStatementCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#2)]
+[!code-vb[CodeStatementCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,14 +148,14 @@
         <returns>The index at which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to add a <xref:System.CodeDom.CodeStatement> object to a <xref:System.CodeDom.CodeStatementCollection> instance.  
-  
- [!code-cpp[CodeStatementCollectionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#3)]
- [!code-csharp[CodeStatementCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#3)]
- [!code-vb[CodeStatementCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#3)]  
-  
+The following example demonstrates how to add a <xref:System.CodeDom.CodeStatement> object to a <xref:System.CodeDom.CodeStatementCollection> instance.  
+ 
+[!code-cpp[CodeStatementCollectionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#3)]
+[!code-csharp[CodeStatementCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#3)]
+[!code-vb[CodeStatementCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,14 +180,14 @@
         <summary>Adds a set of <see cref="T:System.CodeDom.CodeStatement" /> objects to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.CodeStatementCollection.AddRange%28System.CodeDom.CodeStatement%5B%5D%29> method overload to add the members of an array to a <xref:System.CodeDom.CodeStatementCollection> instance.  
-  
- [!code-cpp[CodeStatementCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#4)]
- [!code-csharp[CodeStatementCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#4)]
- [!code-vb[CodeStatementCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#4)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.CodeStatementCollection.AddRange%28System.CodeDom.CodeStatement%5B%5D%29> method overload to add the members of an array to a <xref:System.CodeDom.CodeStatementCollection> instance.  
+ 
+[!code-cpp[CodeStatementCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#4)]
+[!code-csharp[CodeStatementCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#4)]
+[!code-vb[CodeStatementCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -214,14 +214,14 @@
         <summary>Adds the contents of another <see cref="T:System.CodeDom.CodeStatementCollection" /> object to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.CodeStatementCollection.AddRange%28System.CodeDom.CodeStatementCollection%29> method overload to add the members of one <xref:System.CodeDom.CodeStatementCollection> to another.  
-  
- [!code-cpp[CodeStatementCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#4)]
- [!code-csharp[CodeStatementCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#4)]
- [!code-vb[CodeStatementCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#4)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.CodeStatementCollection.AddRange%28System.CodeDom.CodeStatementCollection%29> method overload to add the members of one <xref:System.CodeDom.CodeStatementCollection> to another.  
+ 
+[!code-cpp[CodeStatementCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#4)]
+[!code-csharp[CodeStatementCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#4)]
+[!code-vb[CodeStatementCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -250,14 +250,14 @@
           <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses the <xref:System.CodeDom.CodeStatementCollection.Contains%2A> method to search for the presence of a specific <xref:System.CodeDom.CodeStatement> and retrieve the index value at which it was found.  
-  
- [!code-cpp[CodeStatementCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#5)]
- [!code-csharp[CodeStatementCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#5)]
- [!code-vb[CodeStatementCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#5)]  
-  
+The following example uses the <xref:System.CodeDom.CodeStatementCollection.Contains%2A> method to search for the presence of a specific <xref:System.CodeDom.CodeStatement> and retrieve the index value at which it was found.  
+ 
+[!code-cpp[CodeStatementCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#5)]
+[!code-csharp[CodeStatementCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#5)]
+[!code-vb[CodeStatementCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -284,14 +284,14 @@
         <summary>Copies the elements of the <see cref="T:System.CodeDom.CodeStatementCollection" /> object to a one-dimensional <see cref="T:System.Array" /> instance, starting at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to copy the contents of a <xref:System.CodeDom.CodeStatementCollection> object to an array, starting at the specified index value.  
-  
- [!code-cpp[CodeStatementCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#6)]
- [!code-csharp[CodeStatementCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#6)]
- [!code-vb[CodeStatementCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#6)]  
-  
+The following example demonstrates how to copy the contents of a <xref:System.CodeDom.CodeStatementCollection> object to an array, starting at the specified index value.  
+ 
+[!code-cpp[CodeStatementCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#6)]
+[!code-csharp[CodeStatementCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#6)]
+[!code-vb[CodeStatementCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The destination array is multidimensional.  
@@ -324,14 +324,14 @@
         <returns>The index of the specified object, if it is found, in the collection; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example searches for the presence of a specific <xref:System.CodeDom.CodeStatement> and uses the <xref:System.CodeDom.CodeStatementCollection.IndexOf%2A> method to retrieve the index value at which it was found.  
-  
- [!code-cpp[CodeStatementCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#5)]
- [!code-csharp[CodeStatementCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#5)]
- [!code-vb[CodeStatementCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#5)]  
-  
+The following example searches for the presence of a specific <xref:System.CodeDom.CodeStatement> and uses the <xref:System.CodeDom.CodeStatementCollection.IndexOf%2A> method to retrieve the index value at which it was found.  
+ 
+[!code-cpp[CodeStatementCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#5)]
+[!code-csharp[CodeStatementCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#5)]
+[!code-vb[CodeStatementCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,14 +358,14 @@
         <summary>Inserts the specified <see cref="T:System.CodeDom.CodeStatement" /> object into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.CodeStatementCollection.Insert%2A> method to add a <xref:System.CodeDom.CodeStatement> object to a <xref:System.CodeDom.CodeStatementCollection>.  
-  
- [!code-cpp[CodeStatementCollectionExample#8](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#8)]
- [!code-csharp[CodeStatementCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#8)]
- [!code-vb[CodeStatementCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#8)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.CodeStatementCollection.Insert%2A> method to add a <xref:System.CodeDom.CodeStatement> object to a <xref:System.CodeDom.CodeStatementCollection>.  
+ 
+[!code-cpp[CodeStatementCollectionExample#8](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#8)]
+[!code-csharp[CodeStatementCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#8)]
+[!code-vb[CodeStatementCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -391,10 +391,10 @@
         <value>A <see cref="T:System.CodeDom.CodeStatement" /> at each valid index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is an indexer that can be used to access the collection.  
-  
+This property is an indexer that can be used to access the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is outside the valid range of indexes for the collection.</exception>
@@ -420,14 +420,14 @@
         <summary>Removes the specified <see cref="T:System.CodeDom.CodeStatement" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.CodeDom.CodeStatementCollection.Remove%2A> method to delete a <xref:System.CodeDom.CodeStatement> object from a <xref:System.CodeDom.CodeStatementCollection>.  
-  
- [!code-cpp[CodeStatementCollectionExample#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#9)]
- [!code-csharp[CodeStatementCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#9)]
- [!code-vb[CodeStatementCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#9)]  
-  
+The following example demonstrates how to use the <xref:System.CodeDom.CodeStatementCollection.Remove%2A> method to delete a <xref:System.CodeDom.CodeStatement> object from a <xref:System.CodeDom.CodeStatementCollection>.  
+ 
+[!code-cpp[CodeStatementCollectionExample#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeStatementCollectionExample/CPP/class1.cpp#9)]
+[!code-csharp[CodeStatementCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeStatementCollectionExample/CS/class1.cs#9)]
+[!code-vb[CodeStatementCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeStatementCollectionExample/VB/class1.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>

@@ -19,15 +19,15 @@
     <summary>Represents the <see langword="attributeGroup" /> element with the <see langword="ref" /> attribute from the XML Schema as specified by the [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/?LinkId=49454). AttributesGroupRef is the reference for an attributeGroup, name property contains the attribute group being referenced.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An attribute group reference can be defined only as a child of the `attributeGroup` or `complexType` element. In this case, the `ref` attribute must be present and contain the name of the referenced attribute group.  
+An attribute group reference can be defined only as a child of the `attributeGroup` or `complexType` element. In this case, the `ref` attribute must be present and contain the name of the referenced attribute group.  
+ 
   
-   
-  
+ 
 ## Examples  
- See <xref:System.Xml.Schema.XmlSchemaAttributeGroup> for an example using this class.  
-  
+See <xref:System.Xml.Schema.XmlSchemaAttributeGroup> for an example using this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,12 +79,12 @@
         <value>The name of the referenced attribute group. The value must be a QName.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the name of the attribute group whose attributes are to be included in an attribute group or a complex type. When a complex type or attribute group includes an attribute group, it is the name of the included attribute group that is used for the `ref` attribute.  
-  
- The value must be a QName.  
-  
+This is the name of the attribute group whose attributes are to be included in an attribute group or a complex type. When a complex type or attribute group includes an attribute group, it is the name of the included attribute group that is used for the `ref` attribute.  
+ 
+The value must be a QName.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -15,42 +15,42 @@
     <summary>The <see cref="T:System.Data.SqlClient.SqlDependency" /> object represents a query notification dependency between an application and an instance of SQL Server. An application can create a <see cref="T:System.Data.SqlClient.SqlDependency" /> object and register to receive notifications via the <see cref="T:System.Data.SqlClient.OnChangeEventHandler" /> event handler.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.SqlClient.SqlDependency> is ideal for caching scenarios, where your ASP.NET application or middle-tier service needs to keep certain information cached in memory. <xref:System.Data.SqlClient.SqlDependency> allows you to receive notifications when the original data in the database changes so that the cache can be refreshed.  
-  
- To set up a dependency, you need to associate a <xref:System.Data.SqlClient.SqlDependency> object to one or more <xref:System.Data.SqlClient.SqlCommand> objects. To receive notifications, you need to subscribe to the <xref:System.Data.SqlClient.SqlDependency.OnChange> event. For more information about the requirements for creating queries for notifications, see "Creating a Query for Notification" in SQL Server Books Online.  
-  
+<xref:System.Data.SqlClient.SqlDependency> is ideal for caching scenarios, where your ASP.NET application or middle-tier service needs to keep certain information cached in memory. <xref:System.Data.SqlClient.SqlDependency> allows you to receive notifications when the original data in the database changes so that the cache can be refreshed.  
+ 
+To set up a dependency, you need to associate a <xref:System.Data.SqlClient.SqlDependency> object to one or more <xref:System.Data.SqlClient.SqlCommand> objects. To receive notifications, you need to subscribe to the <xref:System.Data.SqlClient.SqlDependency.OnChange> event. For more information about the requirements for creating queries for notifications, see "Creating a Query for Notification" in SQL Server Books Online.  
+ 
 > [!NOTE]
 >  <xref:System.Data.SqlClient.SqlDependency> was designed to be used in ASP.NET or middle-tier services where there is a relatively small number of servers having dependencies active against the database. It was not designed for use in client applications, where hundreds or thousands of client computers would have <xref:System.Data.SqlClient.SqlDependency> objects set up for a single database server. If you are developing an application where you need reliable sub-second notifications when data changes, review the sections **Planning an Efficient Query Notifications Strategy** and **Alternatives to Query Notifications** in the [Planning for Notifications](http://go.microsoft.com/fwlink/?LinkId=211984) topic in SQL Server Books Online.  
-  
- For more information, see [Query Notifications in SQL Server](~/docs/framework/data/adonet/sql/query-notifications-in-sql-server.md) and "Building Notification Solutions" in SQL Server Books Online.  
-  
+ 
+For more information, see [Query Notifications in SQL Server](~/docs/framework/data/adonet/sql/query-notifications-in-sql-server.md) and "Building Notification Solutions" in SQL Server Books Online.  
+ 
 > [!NOTE]
 >  The <xref:System.Data.SqlClient.SqlDependency.OnChange> event may be generated on a different thread from the thread that initiated command execution.  
-  
- Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
-  
- **SQL Server Books Online**  
-  
+ 
+Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
+ 
+**SQL Server Books Online**  
+ 
 -   [Creating a Query for Notification](http://msdn.microsoft.com/library/ms181122.aspx)  
-  
+ 
 -   [Security Considerations for Service Broker](http://msdn.microsoft.com/library/ms166059.aspx)  
-  
+ 
 -   [Security and Protection (Service Broker)](http://msdn.microsoft.com/library/bb522911.aspx)  
-  
+ 
 -   [Security Considerations for Notifications Services](http://msdn.microsoft.com/library/ms172604.aspx)  
-  
+ 
 -   [Query Notification Permissions](http://msdn.microsoft.com/library/ms188311.aspx)  
-  
+ 
 -   [International Considerations for Service Broker](http://msdn.microsoft.com/library/ms166028.aspx)  
-  
+ 
 -   [Solution Design Considerations (Service Broker)](http://msdn.microsoft.com/library/bb522899.aspx)  
-  
+ 
 -   [Service Broker Developer InfoCenter](http://msdn.microsoft.com/library/ms166100.aspx)  
-  
+ 
 -   [Developer's Guide (Service Broker)](http://msdn.microsoft.com/library/bb522908.aspx)  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,32 +70,32 @@
         <summary>Creates a new instance of the <see cref="T:System.Data.SqlClient.SqlDependency" /> class with the default settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor initializes the <xref:System.Data.SqlClient.SqlDependency> object using the default Service Broker service name and time-out. At some point after construction, you must use the <xref:System.Data.SqlClient.SqlDependency.AddCommandDependency%2A> method to associate one or more commands to this <xref:System.Data.SqlClient.SqlDependency> object.  
-  
- Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
-  
- **SQL Server Books Online**  
-  
+The constructor initializes the <xref:System.Data.SqlClient.SqlDependency> object using the default Service Broker service name and time-out. At some point after construction, you must use the <xref:System.Data.SqlClient.SqlDependency.AddCommandDependency%2A> method to associate one or more commands to this <xref:System.Data.SqlClient.SqlDependency> object.  
+ 
+Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
+ 
+**SQL Server Books Online**  
+ 
 -   [Creating a Query for Notification](http://msdn.microsoft.com/library/ms181122.aspx)  
-  
+ 
 -   [Security Considerations for Service Broker](http://msdn.microsoft.com/library/ms166059.aspx)  
-  
+ 
 -   [Security and Protection (Service Broker)](http://msdn.microsoft.com/library/bb522911.aspx)  
-  
+ 
 -   [Security Considerations for Notifications Services](http://msdn.microsoft.com/library/ms172604.aspx)  
-  
+ 
 -   [Query Notification Permissions](http://msdn.microsoft.com/library/ms188311.aspx)  
-  
+ 
 -   [International Considerations for Service Broker](http://msdn.microsoft.com/library/ms166028.aspx)  
-  
+ 
 -   [Solution Design Considerations (Service Broker)](http://msdn.microsoft.com/library/bb522899.aspx)  
-  
+ 
 -   [Service Broker Developer InfoCenter](http://msdn.microsoft.com/library/ms166100.aspx)  
-  
+ 
 -   [Developer's Guide (Service Broker)](http://msdn.microsoft.com/library/bb522908.aspx)  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,32 +118,32 @@
         <summary>Creates a new instance of the <see cref="T:System.Data.SqlClient.SqlDependency" /> class and associates it with the <see cref="T:System.Data.SqlClient.SqlCommand" /> parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Internally, this constructor creates an instance of the <xref:System.Data.Sql.SqlNotificationRequest> class, and binds it to a <xref:System.Data.SqlClient.SqlCommand> object.  
-  
- Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
-  
- **SQL Server Books Online**  
-  
+Internally, this constructor creates an instance of the <xref:System.Data.Sql.SqlNotificationRequest> class, and binds it to a <xref:System.Data.SqlClient.SqlCommand> object.  
+ 
+Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
+ 
+**SQL Server Books Online**  
+ 
 -   [Creating a Query for Notification](http://msdn.microsoft.com/library/ms181122.aspx)  
-  
+ 
 -   [Security Considerations for Service Broker](http://msdn.microsoft.com/library/ms166059.aspx)  
-  
+ 
 -   [Security and Protection (Service Broker)](http://msdn.microsoft.com/library/bb522911.aspx)  
-  
+ 
 -   [Security Considerations for Notifications Services](http://msdn.microsoft.com/library/ms172604.aspx)  
-  
+ 
 -   [Query Notification Permissions](http://msdn.microsoft.com/library/ms188311.aspx)  
-  
+ 
 -   [International Considerations for Service Broker](http://msdn.microsoft.com/library/ms166028.aspx)  
-  
+ 
 -   [Solution Design Considerations (Service Broker)](http://msdn.microsoft.com/library/bb522899.aspx)  
-  
+ 
 -   [Service Broker Developer InfoCenter](http://msdn.microsoft.com/library/ms166100.aspx)  
-  
+ 
 -   [Developer's Guide (Service Broker)](http://msdn.microsoft.com/library/bb522908.aspx)  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="command" /> parameter is NULL.</exception>
@@ -172,30 +172,30 @@
         <summary>Creates a new instance of the <see cref="T:System.Data.SqlClient.SqlDependency" /> class, associates it with the <see cref="T:System.Data.SqlClient.SqlCommand" /> parameter, and specifies notification options and a time-out value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
-  
- **SQL Server Books Online**  
-  
+Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
+ 
+**SQL Server Books Online**  
+ 
 -   [Creating a Query for Notification](http://msdn.microsoft.com/library/ms181122.aspx)  
-  
+ 
 -   [Security Considerations for Service Broker](http://msdn.microsoft.com/library/ms166059.aspx)  
-  
+ 
 -   [Security and Protection (Service Broker)](http://msdn.microsoft.com/library/bb522911.aspx)  
-  
+ 
 -   [Security Considerations for Notifications Services](http://msdn.microsoft.com/library/ms172604.aspx)  
-  
+ 
 -   [Query Notification Permissions](http://msdn.microsoft.com/library/ms188311.aspx)  
-  
+ 
 -   [International Considerations for Service Broker](http://msdn.microsoft.com/library/ms166028.aspx)  
-  
+ 
 -   [Solution Design Considerations (Service Broker)](http://msdn.microsoft.com/library/bb522899.aspx)  
-  
+ 
 -   [Service Broker Developer InfoCenter](http://msdn.microsoft.com/library/ms166100.aspx)  
-  
+ 
 -   [Developer's Guide (Service Broker)](http://msdn.microsoft.com/library/bb522908.aspx)  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="command" /> parameter is NULL.</exception>
@@ -226,30 +226,30 @@
         <summary>Associates a <see cref="T:System.Data.SqlClient.SqlCommand" /> object with this <see cref="T:System.Data.SqlClient.SqlDependency" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
-  
- **SQL Server Books Online**  
-  
+Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
+ 
+**SQL Server Books Online**  
+ 
 -   [Creating a Query for Notification](http://msdn.microsoft.com/library/ms181122.aspx)  
-  
+ 
 -   [Security Considerations for Service Broker](http://msdn.microsoft.com/library/ms166059.aspx)  
-  
+ 
 -   [Security and Protection (Service Broker)](http://msdn.microsoft.com/library/bb522911.aspx)  
-  
+ 
 -   [Security Considerations for Notifications Services](http://msdn.microsoft.com/library/ms172604.aspx)  
-  
+ 
 -   [Query Notification Permissions](http://msdn.microsoft.com/library/ms188311.aspx)  
-  
+ 
 -   [International Considerations for Service Broker](http://msdn.microsoft.com/library/ms166028.aspx)  
-  
+ 
 -   [Solution Design Considerations (Service Broker)](http://msdn.microsoft.com/library/bb522899.aspx)  
-  
+ 
 -   [Service Broker Developer InfoCenter](http://msdn.microsoft.com/library/ms166100.aspx)  
-  
+ 
 -   [Developer's Guide (Service Broker)](http://msdn.microsoft.com/library/bb522908.aspx)  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="command" /> parameter is null.</exception>
@@ -274,12 +274,12 @@
         <value>A Boolean value indicating whether one of the result sets has changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you are not using the <xref:System.Data.SqlClient.SqlDependency.OnChange> event, you can check the <xref:System.Data.SqlClient.SqlDependency.HasChanges%2A> property to determine if the query results have changed.  
-  
- The <xref:System.Data.SqlClient.SqlDependency.HasChanges%2A> property does not necessarily imply a change in the data. Other circumstances, such as time-out expired and failure to set the notification request, also generate a change event.  
-  
+If you are not using the <xref:System.Data.SqlClient.SqlDependency.OnChange> event, you can check the <xref:System.Data.SqlClient.SqlDependency.HasChanges%2A> property to determine if the query results have changed.  
+ 
+The <xref:System.Data.SqlClient.SqlDependency.HasChanges%2A> property does not necessarily imply a change in the data. Other circumstances, such as time-out expired and failure to set the notification request, also generate a change event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -302,10 +302,10 @@
         <value>A string representation of a GUID that is generated for each instance of the <see cref="T:System.Data.SqlClient.SqlDependency" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.SqlClient.SqlDependency.Id%2A> property is used to uniquely identify a given <xref:System.Data.SqlClient.SqlDependency> instance.  
-  
+The <xref:System.Data.SqlClient.SqlDependency.Id%2A> property is used to uniquely identify a given <xref:System.Data.SqlClient.SqlDependency> instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,12 +327,12 @@
         <summary>Occurs when a notification is received for any of the commands associated with this <see cref="T:System.Data.SqlClient.SqlDependency" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.SqlClient.SqlDependency.OnChange> occurs when the results for the associated command change. If you are not using <xref:System.Data.SqlClient.SqlDependency.OnChange>, you can check the <xref:System.Data.SqlClient.SqlDependency.HasChanges%2A> property to determine whether the query results have changed.  
-  
- The <xref:System.Data.SqlClient.SqlDependency.OnChange> event does not necessarily imply a change in the data. Other circumstances, such as time-out expired and failure to set the notification request, also generate <xref:System.Data.SqlClient.SqlDependency.OnChange>.  
-  
+<xref:System.Data.SqlClient.SqlDependency.OnChange> occurs when the results for the associated command change. If you are not using <xref:System.Data.SqlClient.SqlDependency.OnChange>, you can check the <xref:System.Data.SqlClient.SqlDependency.HasChanges%2A> property to determine whether the query results have changed.  
+ 
+The <xref:System.Data.SqlClient.SqlDependency.OnChange> event does not necessarily imply a change in the data. Other circumstances, such as time-out expired and failure to set the notification request, also generate <xref:System.Data.SqlClient.SqlDependency.OnChange>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,12 +359,12 @@
         <returns>**true** if the listener initialized successfully; **false** if a compatible listener already exists.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method starts the listener for the <xref:System.AppDomain> for receiving dependency notifications from the instance of [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] specified by the `connectionString` parameter. This method may be called more than once with different connection strings for multiple servers.  
-  
- For additional remarks, see <xref:System.Data.SqlClient.SqlDependency.Start%2A>.  
-  
+This method starts the listener for the <xref:System.AppDomain> for receiving dependency notifications from the instance of [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] specified by the `connectionString` parameter. This method may be called more than once with different connection strings for multiple servers.  
+ 
+For additional remarks, see <xref:System.Data.SqlClient.SqlDependency.Start%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="connectionString" /> parameter is NULL.</exception>
@@ -401,14 +401,14 @@
         <returns>**true** if the listener initialized successfully; **false** if a compatible listener already exists.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method starts the listener for the <xref:System.AppDomain> for receiving dependency notifications from the instance of SQL Server specified by the `connectionString` parameter. This method may be called more than once with different connection strings for multiple servers.  
-  
- If no queue name is specified, <xref:System.Data.SqlClient.SqlDependency> creates a temporary queue and service in the server that is used for the entire process, even if the process involves more than one <xref:System.AppDomain>. The queue and service are automatically removed upon application shutdown.  
-  
- For additional remarks, see <xref:System.Data.SqlClient.SqlDependency.Start%2A>.  
-  
+This method starts the listener for the <xref:System.AppDomain> for receiving dependency notifications from the instance of SQL Server specified by the `connectionString` parameter. This method may be called more than once with different connection strings for multiple servers.  
+ 
+If no queue name is specified, <xref:System.Data.SqlClient.SqlDependency> creates a temporary queue and service in the server that is used for the entire process, even if the process involves more than one <xref:System.AppDomain>. The queue and service are automatically removed upon application shutdown.  
+ 
+For additional remarks, see <xref:System.Data.SqlClient.SqlDependency.Start%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="connectionString" /> parameter is NULL.</exception>
@@ -443,10 +443,10 @@
         <returns>**true** if the listener was completely stopped; **false** if the <see cref="T:System.AppDomain" /> was unbound from the listener, but there are is at least one other <see cref="T:System.AppDomain" /> using the same listener.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.SqlClient.SqlDependency.Stop%2A> method must be called for each <xref:System.Data.SqlClient.SqlDependency.Start%2A> call. A given listener only shuts down fully when it receives the same number of <xref:System.Data.SqlClient.SqlDependency.Stop%2A> requests as <xref:System.Data.SqlClient.SqlDependency.Start%2A> requests.  
-  
+The <xref:System.Data.SqlClient.SqlDependency.Stop%2A> method must be called for each <xref:System.Data.SqlClient.SqlDependency.Start%2A> call. A given listener only shuts down fully when it receives the same number of <xref:System.Data.SqlClient.SqlDependency.Stop%2A> requests as <xref:System.Data.SqlClient.SqlDependency.Start%2A> requests.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="connectionString" /> parameter is NULL.</exception>
@@ -479,10 +479,10 @@
         <returns>**true** if the listener was completely stopped; **false** if the <see cref="T:System.AppDomain" /> was unbound from the listener, but there is at least one other <see cref="T:System.AppDomain" /> using the same listener.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.SqlClient.SqlDependency.Stop%2A> method must be called for each <xref:System.Data.SqlClient.SqlDependency.Start%2A> call. A given listener only shuts down fully when it receives the same number of <xref:System.Data.SqlClient.SqlDependency.Stop%2A> requests as <xref:System.Data.SqlClient.SqlDependency.Start%2A> requests.  
-  
+The <xref:System.Data.SqlClient.SqlDependency.Stop%2A> method must be called for each <xref:System.Data.SqlClient.SqlDependency.Start%2A> call. A given listener only shuts down fully when it receives the same number of <xref:System.Data.SqlClient.SqlDependency.Stop%2A> requests as <xref:System.Data.SqlClient.SqlDependency.Start%2A> requests.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="connectionString" /> parameter is NULL.</exception>
@@ -501,24 +501,24 @@
         <summary>Starts the listener for receiving dependency change notifications.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.SqlClient.SqlDependency> listener will restart when an error occurs in the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] connection.  
-  
- Multiple calls to the <xref:System.Data.SqlClient.SqlDependency.Start%2A> method can be made, subject to the following restrictions:  
-  
+The <xref:System.Data.SqlClient.SqlDependency> listener will restart when an error occurs in the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] connection.  
+ 
+Multiple calls to the <xref:System.Data.SqlClient.SqlDependency.Start%2A> method can be made, subject to the following restrictions:  
+ 
 -   Multiple calls with identical parameters (the same connection string and Windows credentials in the calling thread) are valid.  
-  
+ 
 -   Multiple calls with different connection strings are valid as long as:  
-  
-    -   Each connection string specifies a different database, or  
-  
-    -   Each connection string specifies a different user, or  
-  
-    -   The calls come from different application domains.  
-  
- You can make the <xref:System.Data.SqlClient.SqlDependency> work correctly for applications that use multiple threads to represent different user credentials without giving the dbo role to the group, because different users can subscribe and listen (using <xref:System.Web.Caching.SqlCacheDependency> or <xref:System.Data.SqlClient.SqlCommand>) to a notification queue created by an administrator. When the relevant application domain starts, call Start with the (Windows) credentials of a user that has permission to initialize a service/queue (the CREATE QUEUE and CREATE SERVICE permissions for the database). Ensure that Start is only called once per AppDomain, otherwise an ambiguity exception is raised.  The user thread must have permission to subscribe to the notification (the SUBSCRIBE QUERY NOTIFICATIONS permission for the database). <xref:System.Data.SqlClient.SqlDependency> will associate the subscription request of a non-administrator user to the service/queue created by the administrator.  
-  
+ 
+   -   Each connection string specifies a different database, or  
+ 
+   -   Each connection string specifies a different user, or  
+ 
+   -   The calls come from different application domains.  
+ 
+You can make the <xref:System.Data.SqlClient.SqlDependency> work correctly for applications that use multiple threads to represent different user credentials without giving the dbo role to the group, because different users can subscribe and listen (using <xref:System.Web.Caching.SqlCacheDependency> or <xref:System.Data.SqlClient.SqlCommand>) to a notification queue created by an administrator. When the relevant application domain starts, call Start with the (Windows) credentials of a user that has permission to initialize a service/queue (the CREATE QUEUE and CREATE SERVICE permissions for the database). Ensure that Start is only called once per AppDomain, otherwise an ambiguity exception is raised.  The user thread must have permission to subscribe to the notification (the SUBSCRIBE QUERY NOTIFICATIONS permission for the database). <xref:System.Data.SqlClient.SqlDependency> will associate the subscription request of a non-administrator user to the service/queue created by the administrator.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -533,10 +533,10 @@
         <summary>Stops a listener for a connection specified in a previous <see cref="Overload:System.Data.SqlClient.SqlDependency.Start" /> call.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.SqlClient.SqlDependency> listener will restart when an error occurs in the SQL Server connection.  
-  
+The <xref:System.Data.SqlClient.SqlDependency> listener will restart when an error occurs in the SQL Server connection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

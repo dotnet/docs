@@ -18,10 +18,10 @@
     <summary>Controls the ability to access encrypted data and memory. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This permission is used to control the ability to encrypt data and memory using the <xref:System.Security.Cryptography.ProtectedData> and <xref:System.Security.Cryptography.ProtectedMemory> classes.  
-  
+This permission is used to control the ability to encrypt data and memory using the <xref:System.Security.Cryptography.ProtectedData> and <xref:System.Security.Cryptography.ProtectedMemory> classes.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,14 +43,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.DataProtectionPermission" /> class with the specified permission flags.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.%23ctor%28System.Security.Permissions.DataProtectionPermissionFlags%29> constructor. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
-  
- [!code-cpp[System.Security.Permissions.DataProtectionPermission2#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#2)]
- [!code-csharp[System.Security.Permissions.DataProtectionPermission2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#2)]
- [!code-vb[System.Security.Permissions.DataProtectionPermission2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#2)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.%23ctor%28System.Security.Permissions.DataProtectionPermissionFlags%29> constructor. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
+ 
+[!code-cpp[System.Security.Permissions.DataProtectionPermission2#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#2)]
+[!code-csharp[System.Security.Permissions.DataProtectionPermission2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#2)]
+[!code-vb[System.Security.Permissions.DataProtectionPermission2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -74,19 +74,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.DataProtectionPermission" /> class with the specified permission state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates either `None` (fully restricted) or `Unrestricted` access to data and memory.  
+Creates either `None` (fully restricted) or `Unrestricted` access to data and memory.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.%23ctor%28System.Security.Permissions.PermissionState%29> constructor. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
-  
- [!code-cpp[System.Security.Permissions.DataProtectionPermission2#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#9)]
- [!code-csharp[System.Security.Permissions.DataProtectionPermission2#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#9)]
- [!code-vb[System.Security.Permissions.DataProtectionPermission2#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#9)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.%23ctor%28System.Security.Permissions.PermissionState%29> constructor. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
+ 
+[!code-cpp[System.Security.Permissions.DataProtectionPermission2#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#9)]
+[!code-csharp[System.Security.Permissions.DataProtectionPermission2#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#9)]
+[!code-vb[System.Security.Permissions.DataProtectionPermission2#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -111,22 +111,22 @@
         <returns>A copy of the current permission.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A copy of the permission represents the same access to resources as the original permission.  
+A copy of the permission represents the same access to resources as the original permission.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.Copy%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.Copy%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
+ 
 > [!NOTE]
 >  The code example is intended to show the behavior of the method, not to demonstrate its use. In general, the methods of permission classes are used by the security infrastructure; they are not typically used in applications.  
-  
- [!code-cpp[System.Security.Permissions.DataProtectionPermission2#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#5)]
- [!code-csharp[System.Security.Permissions.DataProtectionPermission2#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#5)]
- [!code-vb[System.Security.Permissions.DataProtectionPermission2#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#5)]  
-  
+ 
+[!code-cpp[System.Security.Permissions.DataProtectionPermission2#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#5)]
+[!code-csharp[System.Security.Permissions.DataProtectionPermission2#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#5)]
+[!code-vb[System.Security.Permissions.DataProtectionPermission2#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,19 +148,19 @@
         <value>A bitwise combination of the <see cref="T:System.Security.Permissions.DataProtectionPermissionFlags" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property specifies whether the `Protect` and `Unprotect` methods of the <xref:System.Security.Cryptography.ProtectedData> and <xref:System.Security.Cryptography.ProtectedMemory> classes can be used.  
+This property specifies whether the `Protect` and `Unprotect` methods of the <xref:System.Security.Cryptography.ProtectedData> and <xref:System.Security.Cryptography.ProtectedMemory> classes can be used.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.Flags%2A> property. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
-  
- [!code-cpp[System.Security.Permissions.DataProtectionPermission2#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#10)]
- [!code-csharp[System.Security.Permissions.DataProtectionPermission2#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#10)]
- [!code-vb[System.Security.Permissions.DataProtectionPermission2#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#10)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.Flags%2A> property. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
+ 
+[!code-cpp[System.Security.Permissions.DataProtectionPermission2#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#10)]
+[!code-csharp[System.Security.Permissions.DataProtectionPermission2#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#10)]
+[!code-vb[System.Security.Permissions.DataProtectionPermission2#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified value is not a valid combination of the <see cref="T:System.Security.Permissions.DataProtectionPermissionFlags" /> values.</exception>
@@ -186,22 +186,22 @@
         <summary>Reconstructs a permission with a specific state from an XML encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Permissions.DataProtectionPermission.FromXml%2A> method reconstructs a <xref:System.Security.Permissions.DataProtectionPermission> object from an XML encoding defined by the <xref:System.Security.SecurityElement> class. Use the <xref:System.Security.Permissions.DataProtectionPermission.ToXml%2A> method to XML-encode the <xref:System.Security.Permissions.DataProtectionPermission>, including state information.  
+The <xref:System.Security.Permissions.DataProtectionPermission.FromXml%2A> method reconstructs a <xref:System.Security.Permissions.DataProtectionPermission> object from an XML encoding defined by the <xref:System.Security.SecurityElement> class. Use the <xref:System.Security.Permissions.DataProtectionPermission.ToXml%2A> method to XML-encode the <xref:System.Security.Permissions.DataProtectionPermission>, including state information.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.FromXml%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.FromXml%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
+ 
 > [!NOTE]
 >  The code example is intended to show the behavior of the method, not to demonstrate its use. In general, the methods of permission classes are used by the security infrastructure; they are not typically used in applications.  
-  
- [!code-cpp[System.Security.Permissions.DataProtectionPermission2#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#7)]
- [!code-csharp[System.Security.Permissions.DataProtectionPermission2#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#7)]
- [!code-vb[System.Security.Permissions.DataProtectionPermission2#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#7)]  
-  
+ 
+[!code-cpp[System.Security.Permissions.DataProtectionPermission2#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#7)]
+[!code-csharp[System.Security.Permissions.DataProtectionPermission2#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#7)]
+[!code-vb[System.Security.Permissions.DataProtectionPermission2#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -235,19 +235,19 @@
         <returns>A new permission that represents the intersection of the current permission and the specified permission. This new permission is <see langword="null" /> if the intersection is empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The intersection of two permissions is a permission that describes the set of operations they both describe in common. Only a demand that passes both individual permissions will pass the intersection.  
+The intersection of two permissions is a permission that describes the set of operations they both describe in common. Only a demand that passes both individual permissions will pass the intersection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.Intersect%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
-  
- [!code-cpp[System.Security.Permissions.DataProtectionPermission2#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#10)]
- [!code-csharp[System.Security.Permissions.DataProtectionPermission2#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#10)]
- [!code-vb[System.Security.Permissions.DataProtectionPermission2#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#10)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.Intersect%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
+ 
+[!code-cpp[System.Security.Permissions.DataProtectionPermission2#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#10)]
+[!code-csharp[System.Security.Permissions.DataProtectionPermission2#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#10)]
+[!code-vb[System.Security.Permissions.DataProtectionPermission2#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -276,22 +276,22 @@
           <see langword="true" /> if the current permission is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current permission is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained in the specified permission.  For example, a permission for <xref:System.Security.Permissions.DataProtectionPermissionFlags> access is a subset of a permission for <xref:System.Security.Permissions.DataProtectionPermissionFlags> access.  
+The current permission is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained in the specified permission.  For example, a permission for <xref:System.Security.Permissions.DataProtectionPermissionFlags> access is a subset of a permission for <xref:System.Security.Permissions.DataProtectionPermissionFlags> access.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.IsSubsetOf%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.IsSubsetOf%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
+ 
 > [!NOTE]
 >  The code example is intended to show the behavior of the method, not to demonstrate its use. In general, the methods of permission classes are used by the security infrastructure; they are not typically used in applications.  
-  
- [!code-cpp[System.Security.Permissions.DataProtectionPermission2#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#3)]
- [!code-csharp[System.Security.Permissions.DataProtectionPermission2#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#3)]
- [!code-vb[System.Security.Permissions.DataProtectionPermission2#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#3)]  
-  
+ 
+[!code-cpp[System.Security.Permissions.DataProtectionPermission2#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#3)]
+[!code-csharp[System.Security.Permissions.DataProtectionPermission2#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#3)]
+[!code-vb[System.Security.Permissions.DataProtectionPermission2#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -317,19 +317,19 @@
           <see langword="true" /> if the current permission is unrestricted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An unrestricted permission represents access to all resources protected by the permission.  
+An unrestricted permission represents access to all resources protected by the permission.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.IsUnrestricted%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
-  
- [!code-cpp[System.Security.Permissions.DataProtectionPermission2#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#4)]
- [!code-csharp[System.Security.Permissions.DataProtectionPermission2#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#4)]
- [!code-vb[System.Security.Permissions.DataProtectionPermission2#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#4)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.IsUnrestricted%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
+ 
+[!code-cpp[System.Security.Permissions.DataProtectionPermission2#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#4)]
+[!code-csharp[System.Security.Permissions.DataProtectionPermission2#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#4)]
+[!code-vb[System.Security.Permissions.DataProtectionPermission2#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -352,22 +352,22 @@
         <returns>An XML encoding of the permission, including state information.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Security.Permissions.DataProtectionPermission.FromXml%2A> method to restore the state information from a <xref:System.Security.SecurityElement>.  
+Use the <xref:System.Security.Permissions.DataProtectionPermission.FromXml%2A> method to restore the state information from a <xref:System.Security.SecurityElement>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.ToXml%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.ToXml%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
+ 
 > [!NOTE]
 >  The code example is intended to show the behavior of the method, not to demonstrate its use. In general, the methods of permission classes are used by the security infrastructure; they are not typically used in applications.  
-  
- [!code-cpp[System.Security.Permissions.DataProtectionPermission2#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#7)]
- [!code-csharp[System.Security.Permissions.DataProtectionPermission2#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#7)]
- [!code-vb[System.Security.Permissions.DataProtectionPermission2#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#7)]  
-  
+ 
+[!code-cpp[System.Security.Permissions.DataProtectionPermission2#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#7)]
+[!code-csharp[System.Security.Permissions.DataProtectionPermission2#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#7)]
+[!code-vb[System.Security.Permissions.DataProtectionPermission2#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -393,22 +393,22 @@
         <returns>A new permission that represents the union of the current permission and the specified permission.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The result of a call to <xref:System.Security.Permissions.DataProtectionPermission.Union%2A> is a permission that represents all operations represented by both the current permission and the specified permission. Any demand that passes either permission passes their union.  
+The result of a call to <xref:System.Security.Permissions.DataProtectionPermission.Union%2A> is a permission that represents all operations represented by both the current permission and the specified permission. Any demand that passes either permission passes their union.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.Union%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.DataProtectionPermission.Union%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Permissions.DataProtectionPermission> class.  
+ 
 > [!NOTE]
 >  The code example is intended to show the behavior of the method, not to demonstrate its use. In general, the methods of permission classes are used by the security infrastructure; they are not typically used in applications.  
-  
- [!code-cpp[System.Security.Permissions.DataProtectionPermission2#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#6)]
- [!code-csharp[System.Security.Permissions.DataProtectionPermission2#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#6)]
- [!code-vb[System.Security.Permissions.DataProtectionPermission2#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#6)]  
-  
+ 
+[!code-cpp[System.Security.Permissions.DataProtectionPermission2#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CPP/dataprotect.cpp#6)]
+[!code-csharp[System.Security.Permissions.DataProtectionPermission2#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/CS/dataprotect.cs#6)]
+[!code-vb[System.Security.Permissions.DataProtectionPermission2#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.DataProtectionPermission2/VB/dataprotect.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

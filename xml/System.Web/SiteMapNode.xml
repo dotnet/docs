@@ -24,29 +24,29 @@
     <summary>Represents a node in the hierarchical site map structure such as that described by the <see cref="T:System.Web.SiteMap" /> class and classes that implement the abstract <see cref="T:System.Web.SiteMapProvider" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.SiteMapNode> object represents a Web site page in a site map structure. <xref:System.Web.SiteMapNode> objects are loaded by the static <xref:System.Web.SiteMap> class at run time using one or more site map providers to load site map data from persistent storage into memory. <xref:System.Web.SiteMapNode> objects are wrapped by the <xref:System.Web.UI.WebControls.SiteMapNodeItem> class for use by Web server controls, such as the <xref:System.Web.UI.WebControls.SiteMapPath> control.  
+A <xref:System.Web.SiteMapNode> object represents a Web site page in a site map structure. <xref:System.Web.SiteMapNode> objects are loaded by the static <xref:System.Web.SiteMap> class at run time using one or more site map providers to load site map data from persistent storage into memory. <xref:System.Web.SiteMapNode> objects are wrapped by the <xref:System.Web.UI.WebControls.SiteMapNodeItem> class for use by Web server controls, such as the <xref:System.Web.UI.WebControls.SiteMapPath> control.  
+ 
+The <xref:System.Web.SiteMapNode> class includes several properties that are used to describe a single page in a Web site, including properties that describe a page, such as the <xref:System.Web.SiteMapNode.Url%2A>, <xref:System.Web.SiteMapNode.Title%2A>, and <xref:System.Web.SiteMapNode.Description%2A> properties. Whereas the <xref:System.Web.SiteMapNode.Url%2A> property is used by the <xref:System.Web.XmlSiteMapProvider> class, which is the default site map provider for ASP.NET, as a lookup key in the internal collections that the provider uses to track nodes, the <xref:System.Web.SiteMapNode> class supports a basic <xref:System.Web.SiteMapNode.Key%2A> property that can be used by site map providers to track nodes. Additionally, the <xref:System.Web.SiteMapNode.Url%2A> property is used by navigation controls to render hyperlinks to pages within a navigation structure. The <xref:System.Web.SiteMapNode.Title%2A> property is a friendly name for the <xref:System.Web.SiteMapNode>, is often the same as the HTML title of a Web Form, and is used by navigation controls to render simple labels. Finally, a <xref:System.Collections.Specialized.NameValueCollection> collection of additional <xref:System.Web.SiteMapNode.Attributes%2A> attributes is available to site map providers that use <xref:System.Web.SiteMapNode> objects, but require additional properties that are not available in the base <xref:System.Web.SiteMapNode> class.  
+ 
   
- The <xref:System.Web.SiteMapNode> class includes several properties that are used to describe a single page in a Web site, including properties that describe a page, such as the <xref:System.Web.SiteMapNode.Url%2A>, <xref:System.Web.SiteMapNode.Title%2A>, and <xref:System.Web.SiteMapNode.Description%2A> properties. Whereas the <xref:System.Web.SiteMapNode.Url%2A> property is used by the <xref:System.Web.XmlSiteMapProvider> class, which is the default site map provider for ASP.NET, as a lookup key in the internal collections that the provider uses to track nodes, the <xref:System.Web.SiteMapNode> class supports a basic <xref:System.Web.SiteMapNode.Key%2A> property that can be used by site map providers to track nodes. Additionally, the <xref:System.Web.SiteMapNode.Url%2A> property is used by navigation controls to render hyperlinks to pages within a navigation structure. The <xref:System.Web.SiteMapNode.Title%2A> property is a friendly name for the <xref:System.Web.SiteMapNode>, is often the same as the HTML title of a Web Form, and is used by navigation controls to render simple labels. Finally, a <xref:System.Collections.Specialized.NameValueCollection> collection of additional <xref:System.Web.SiteMapNode.Attributes%2A> attributes is available to site map providers that use <xref:System.Web.SiteMapNode> objects, but require additional properties that are not available in the base <xref:System.Web.SiteMapNode> class.  
-  
-   
-  
+ 
 ## Examples  
- This section contains two code examples. The first code example demonstrates how to create a new site map node collection and add elements to it. The second code example demonstrates how to load site map data from a text file.  
-  
- The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a new <xref:System.Web.SiteMapNodeCollection> collection, and then add elements to it with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method.  
-  
- [!code-csharp[System.Web.SiteMapNode_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNode_2/CS/sitemapnode2acs.aspx.cs#1)]
- [!code-vb[System.Web.SiteMapNode_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNode_2/VB/sitemapnode2avb.aspx.vb#1)]  
-  
- The following code example demonstrates how the `SimpleTextSiteMapProvider` parses a text file that contains site map data in comma-delimited strings. A new <xref:System.Web.SiteMapNode> object is added to the internal tracking collections of the class for each line that is read from the file.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.SiteMapProvider> class.  
-  
- [!code-csharp[Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1#9](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1/CS/simpletextsitemapprovider.cs#9)]
- [!code-vb[Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1/VB/simpletextsitemapprovider.vb#9)]  
-  
+This section contains two code examples. The first code example demonstrates how to create a new site map node collection and add elements to it. The second code example demonstrates how to load site map data from a text file.  
+ 
+The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a new <xref:System.Web.SiteMapNodeCollection> collection, and then add elements to it with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method.  
+ 
+[!code-csharp[System.Web.SiteMapNode_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNode_2/CS/sitemapnode2acs.aspx.cs#1)]
+[!code-vb[System.Web.SiteMapNode_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNode_2/VB/sitemapnode2avb.aspx.vb#1)]  
+ 
+The following code example demonstrates how the `SimpleTextSiteMapProvider` parses a text file that contains site map data in comma-delimited strings. A new <xref:System.Web.SiteMapNode> object is added to the internal tracking collections of the class for each line that is read from the file.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.SiteMapProvider> class.  
+ 
+[!code-csharp[Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1#9](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1/CS/simpletextsitemapprovider.cs#9)]
+[!code-vb[Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1/VB/simpletextsitemapprovider.vb#9)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNode" /> class, using the specified <paramref name="key" /> to identify the page that the node represents and the site map provider that manages the node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> control that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
-  
+The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> control that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -105,18 +105,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNode" /> class using the specified URL, a <paramref name="key" /> to identify the page that the node represents, and the site map provider that manages the node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
+The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a new <xref:System.Web.SiteMapNodeCollection> collection, and then add elements to it with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method.  
-  
- [!code-csharp[System.Web.SiteMapNode_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNode_2/CS/sitemapnode2acs.aspx.cs#1)]
- [!code-vb[System.Web.SiteMapNode_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNode_2/VB/sitemapnode2avb.aspx.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a new <xref:System.Web.SiteMapNodeCollection> collection, and then add elements to it with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method.  
+ 
+[!code-csharp[System.Web.SiteMapNode_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNode_2/CS/sitemapnode2acs.aspx.cs#1)]
+[!code-vb[System.Web.SiteMapNode_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNode_2/VB/sitemapnode2avb.aspx.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -150,23 +150,23 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNode" /> class using the specified URL, a <paramref name="key" /> to identify the page that the node represents, a title, and the site map provider that manages the node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
+The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
+ 
+If no `title` is provided, calls to the <xref:System.Web.SiteMapNode.Title%2A> property return the <xref:System.String.Empty?displayProperty=fullName> field.  
+ 
   
- If no `title` is provided, calls to the <xref:System.Web.SiteMapNode.Title%2A> property return the <xref:System.String.Empty?displayProperty=fullName> field.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.SiteMapNode.%23ctor%2A> constructor to create a new instance of the <xref:System.Web.SiteMapNode> class. The node is initialized with values from a Microsoft Access database row.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> method.  
-  
- [!code-cpp[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#6](~/samples/snippets/cpp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/CPP/accesssitemapprovider.cpp#6)]
- [!code-csharp[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/CS/accesssitemapprovider.cs#6)]
- [!code-vb[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/VB/accesssitemapprovider.vb#6)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.SiteMapNode.%23ctor%2A> constructor to create a new instance of the <xref:System.Web.SiteMapNode> class. The node is initialized with values from a Microsoft Access database row.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> method.  
+ 
+[!code-cpp[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#6](~/samples/snippets/cpp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/CPP/accesssitemapprovider.cpp#6)]
+[!code-csharp[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/CS/accesssitemapprovider.cs#6)]
+[!code-vb[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/VB/accesssitemapprovider.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -202,22 +202,22 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNode" /> class using the specified URL, a <paramref name="key" /> to identify the page that the node represents, a title and description, and the site map provider that manages the node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
+The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
+ 
+If no `title` or `description` is provided, calls to the <xref:System.Web.SiteMapNode.Title%2A> or <xref:System.Web.SiteMapNode.Description%2A> properties return an <xref:System.String.Empty?displayProperty=fullName> field.  
+ 
   
- If no `title` or `description` is provided, calls to the <xref:System.Web.SiteMapNode.Title%2A> or <xref:System.Web.SiteMapNode.Description%2A> properties return an <xref:System.String.Empty?displayProperty=fullName> field.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.SiteMapNode.%23ctor%2A> constructor to create a <xref:System.Web.SiteMapNode> object by parsing data from a simple text file to build a site map in memory.  
-  
- This code example is part of a larger example provided for the abstract <xref:System.Web.SiteMapProvider> class.  
-  
- [!code-csharp[Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1#9](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1/CS/simpletextsitemapprovider.cs#9)]
- [!code-vb[Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1/VB/simpletextsitemapprovider.vb#9)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.SiteMapNode.%23ctor%2A> constructor to create a <xref:System.Web.SiteMapNode> object by parsing data from a simple text file to build a site map in memory.  
+ 
+This code example is part of a larger example provided for the abstract <xref:System.Web.SiteMapProvider> class.  
+ 
+[!code-csharp[Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1#9](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1/CS/simpletextsitemapprovider.cs#9)]
+[!code-vb[Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1/VB/simpletextsitemapprovider.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -261,20 +261,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNode" /> class using the specified site map provider that manages the node, URL, title, description, roles, additional attributes, and explicit and implicit resource keys for localization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
-  
- The <xref:System.Collections.Specialized.NameValueCollection> collection of attributes that the <xref:System.Web.SiteMapNode> is created with is available through the <xref:System.Web.SiteMapNode.Attributes%2A> property, and makes it easy to apply additional attributes to a site map node and extend its capabilities without deriving a custom class to do so.  
-  
- Supply an <xref:System.Collections.IList> collection of roles to provide a set of roles that can view the node when the <xref:System.Web.SiteMapProvider.SecurityTrimmingEnabled%2A> property returns `true`.  For more information, see <xref:System.Web.SiteMapProvider.SecurityTrimmingEnabled%2A>.  
-  
- The <xref:System.Web.XmlSiteMapProvider> provider uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key. Therefore, any <xref:System.Web.SiteMapNode> that is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
-  
- If no `title` or `description` is provided, calls to the <xref:System.Web.SiteMapNode.Title%2A> or <xref:System.Web.SiteMapNode.Description%2A> properties return an <xref:System.String.Empty?displayProperty=fullName> field.  
-  
- To programmatically specify resources for localization, either set the value of `implicitResourceKey` to a unique name that will be used to identify localized resources for the node or set `explicitResourceKeys` to a <xref:System.Collections.Specialized.NameValueCollection> collection of `name/value` pairs where `name` is the node property or custom attribute to localize and `value` contains localization values for the node property or custom attribute. The localized values can then be set in the appropriate .resx files. For more information about how to localize the <xref:System.Web.SiteMapNode.Title%2A>, <xref:System.Web.SiteMapNode.Description%2A>, and any custom properties of a <xref:System.Web.SiteMapNode> object, see [How to: Localize Site-Map Data](http://msdn.microsoft.com/library/be63b4a0-fb82-44b4-bdbb-df1d2548cedc). For the syntax requirements of the `explicitResourceKeys` collection, see <xref:System.Collections.Specialized.NameValueCollection>.  
-  
+The <xref:System.Web.XmlSiteMapProvider> class, which is the default <xref:System.Web.SiteMapProvider> provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key, if one is provided for the node (if a URL is not provided, a tracking identifier is generated for the node). Therefore, any <xref:System.Web.SiteMapNode> object that provides a URL and is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
+ 
+The <xref:System.Collections.Specialized.NameValueCollection> collection of attributes that the <xref:System.Web.SiteMapNode> is created with is available through the <xref:System.Web.SiteMapNode.Attributes%2A> property, and makes it easy to apply additional attributes to a site map node and extend its capabilities without deriving a custom class to do so.  
+ 
+Supply an <xref:System.Collections.IList> collection of roles to provide a set of roles that can view the node when the <xref:System.Web.SiteMapProvider.SecurityTrimmingEnabled%2A> property returns `true`.  For more information, see <xref:System.Web.SiteMapProvider.SecurityTrimmingEnabled%2A>.  
+ 
+The <xref:System.Web.XmlSiteMapProvider> provider uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key. Therefore, any <xref:System.Web.SiteMapNode> that is used by the <xref:System.Web.XmlSiteMapProvider> must have a unique URL within the scope of the provider.  
+ 
+If no `title` or `description` is provided, calls to the <xref:System.Web.SiteMapNode.Title%2A> or <xref:System.Web.SiteMapNode.Description%2A> properties return an <xref:System.String.Empty?displayProperty=fullName> field.  
+ 
+To programmatically specify resources for localization, either set the value of `implicitResourceKey` to a unique name that will be used to identify localized resources for the node or set `explicitResourceKeys` to a <xref:System.Collections.Specialized.NameValueCollection> collection of `name/value` pairs where `name` is the node property or custom attribute to localize and `value` contains localization values for the node property or custom attribute. The localized values can then be set in the appropriate .resx files. For more information about how to localize the <xref:System.Web.SiteMapNode.Title%2A>, <xref:System.Web.SiteMapNode.Description%2A>, and any custom properties of a <xref:System.Web.SiteMapNode> object, see [How to: Localize Site-Map Data](http://msdn.microsoft.com/library/be63b4a0-fb82-44b4-bdbb-df1d2548cedc). For the syntax requirements of the `explicitResourceKeys` collection, see <xref:System.Collections.Specialized.NameValueCollection>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -302,12 +302,12 @@
         <value>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> of additional attributes for the <see cref="T:System.Web.SiteMapNode" /> beyond <see cref="P:System.Web.SiteMapNode.Title" />, <see cref="P:System.Web.SiteMapNode.Description" />, <see cref="P:System.Web.SiteMapNode.Url" />, and <see cref="P:System.Web.SiteMapNode.Roles" />; otherwise, <see langword="null" />, if no attributes exist.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.Attributes%2A> collection is typically used when you need to apply additional attributes to a site map node, but do not want to derive a custom class in order to do so.  
-  
- The protected <xref:System.Web.SiteMapNode.Attributes%2A> attribute does not perform in the same manner as the <xref:System.Web.SiteMapNode.Title%2A> or <xref:System.Web.SiteMapNode.Description%2A> properties. For localization support, developers must use the default indexer.  
-  
+The <xref:System.Web.SiteMapNode.Attributes%2A> collection is typically used when you need to apply additional attributes to a site map node, but do not want to derive a custom class in order to do so.  
+ 
+The protected <xref:System.Web.SiteMapNode.Attributes%2A> attribute does not perform in the same manner as the <xref:System.Web.SiteMapNode.Title%2A> or <xref:System.Web.SiteMapNode.Description%2A> properties. For localization support, developers must use the default indexer.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
@@ -330,12 +330,12 @@
         <value>A read-only <see cref="T:System.Web.SiteMapNodeCollection" /> of child nodes, if any exist for the current node; otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode> relies on the <xref:System.Web.SiteMapProvider> that it is associated with to keep track of its relationships to other nodes in the site map. This property calls the <xref:System.Web.SiteMapProvider.GetChildNodes%2A> method, passing a reference to itself, to retrieve the <xref:System.Web.SiteMapNodeCollection>.  
-  
- If security trimming is enabled, only nodes that the current user is permitted to see are returned. If the user is not permitted to see any child nodes, an empty collection is returned.  
-  
+The <xref:System.Web.SiteMapNode> relies on the <xref:System.Web.SiteMapProvider> that it is associated with to keep track of its relationships to other nodes in the site map. This property calls the <xref:System.Web.SiteMapProvider.GetChildNodes%2A> method, passing a reference to itself, to retrieve the <xref:System.Web.SiteMapNodeCollection>.  
+ 
+If security trimming is enabled, only nodes that the current user is permitted to see are returned. If the user is not permitted to see any child nodes, an empty collection is returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
@@ -359,10 +359,10 @@
         <returns>A new node that is a copy of the current node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calls the <xref:System.Web.SiteMapNode.Clone%2A> method with the parameter set to `false`. The provider, <xref:System.Web.SiteMapNode.Title%2A>, <xref:System.Web.SiteMapNode.Url%2A>, <xref:System.Web.SiteMapNode.Description%2A>, and <xref:System.Web.SiteMapNode.Key%2A> properties are copied. The <xref:System.Web.SiteMapNode.Roles%2A> and <xref:System.Web.SiteMapNode.Attributes%2A> collections are copied to new collections. Ancestor and child nodes are not cloned.  
-  
+Calls the <xref:System.Web.SiteMapNode.Clone%2A> method with the parameter set to `false`. The provider, <xref:System.Web.SiteMapNode.Title%2A>, <xref:System.Web.SiteMapNode.Url%2A>, <xref:System.Web.SiteMapNode.Description%2A>, and <xref:System.Web.SiteMapNode.Key%2A> properties are copied. The <xref:System.Web.SiteMapNode.Roles%2A> and <xref:System.Web.SiteMapNode.Attributes%2A> collections are copied to new collections. Ancestor and child nodes are not cloned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -389,20 +389,20 @@
         <returns>A new node that is a copy of the current node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `cloneParentNodes` parameter is `true`, the <xref:System.Web.SiteMapNode.Clone%2A> method recursively clones all direct ancestor nodes and associates them with the current cloned node. Child nodes are not cloned.  
+If the `cloneParentNodes` parameter is `true`, the <xref:System.Web.SiteMapNode.Clone%2A> method recursively clones all direct ancestor nodes and associates them with the current cloned node. Child nodes are not cloned.  
+ 
+The <xref:System.Web.SiteMapNode.Roles%2A> and <xref:System.Web.SiteMapNode.Attributes%2A> collections are applied to new collections.  
+ 
   
- The <xref:System.Web.SiteMapNode.Roles%2A> and <xref:System.Web.SiteMapNode.Attributes%2A> collections are applied to new collections.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Web.SiteMapNode.Clone%2A> method to create a duplicate site map node from the current node. The `ExpandForumPaths` method is registered to handle the <xref:System.Web.SiteMap.SiteMapResolve> event. It uses the <xref:System.Web.SiteMapNode.Clone%2A> method to create a working copy of the current site map node, modify attributes based on personalization data, and return the working copy.  
-  
- [!code-csharp[System.Web.SiteMap.SiteMapResolve#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMap.SiteMapResolve/CS/sitemapresolve1cs.aspx.cs#1)]
- [!code-vb[System.Web.SiteMap.SiteMapResolve#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMap.SiteMapResolve/VB/sitemapresolve1vb.aspx.vb#1)]  
-  
+The following code example demonstrates how to call the <xref:System.Web.SiteMapNode.Clone%2A> method to create a duplicate site map node from the current node. The `ExpandForumPaths` method is registered to handle the <xref:System.Web.SiteMap.SiteMapResolve> event. It uses the <xref:System.Web.SiteMapNode.Clone%2A> method to create a working copy of the current site map node, modify attributes based on personalization data, and return the working copy.  
+ 
+[!code-csharp[System.Web.SiteMap.SiteMapResolve#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMap.SiteMapResolve/CS/sitemapresolve1cs.aspx.cs#1)]
+[!code-vb[System.Web.SiteMap.SiteMapResolve#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMap.SiteMapResolve/VB/sitemapresolve1vb.aspx.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -429,12 +429,12 @@
         <value>A string that represents a description of the node; otherwise, <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- While the <xref:System.Web.SiteMapNode.Title%2A> of a <xref:System.Web.SiteMapNode> is used by some navigation controls as a label or hyperlink, the <xref:System.Web.SiteMapNode.Description%2A> is used as a ToolTip element for mouse over events.  
-  
- A localized value of the <xref:System.Web.SiteMapNode.Description%2A> property is returned if the <xref:System.Web.SiteMapProvider.EnableLocalization%2A> property is `true`.  
-  
+While the <xref:System.Web.SiteMapNode.Title%2A> of a <xref:System.Web.SiteMapNode> is used by some navigation controls as a label or hyperlink, the <xref:System.Web.SiteMapNode.Description%2A> is used as a ToolTip element for mouse over events.  
+ 
+A localized value of the <xref:System.Web.SiteMapNode.Description%2A> property is returned if the <xref:System.Web.SiteMapProvider.EnableLocalization%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
@@ -462,14 +462,14 @@
           <see langword="true" /> if <paramref name="obj" /> is both a <see cref="T:System.Web.SiteMapNode" /> and identical to the current <see cref="T:System.Web.SiteMapNode" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.Web.SiteMapNode> objects are considered equal if both of the following conditions are met:  
-  
+Two <xref:System.Web.SiteMapNode> objects are considered equal if both of the following conditions are met:  
+ 
 -   Both <xref:System.Web.SiteMapNode> objects have the same value for the <xref:System.Web.SiteMapNode.Key%2A> property.  
-  
+ 
 -   The culture-invariant, case-insensitive comparison of both <xref:System.Web.SiteMapNode.Url%2A> properties returns `true`.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -492,18 +492,18 @@
         <returns>A read-only <see cref="T:System.Web.SiteMapNodeCollection" /> that represents all the descendants of a <see cref="T:System.Web.SiteMapNode" /> within the scope of the current provider.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method retrieves immediate child nodes, and all their child nodes, recursively.  
+This method retrieves immediate child nodes, and all their child nodes, recursively.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to retrieve all the child nodes of the <xref:System.Web.SiteMap.RootNode%2A> with the <xref:System.Web.SiteMapNode.GetAllNodes%2A> method.  
-  
- [!code-csharp[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/CS/webform1smccs.aspx#1)]
- [!code-vb[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/VB/webform1smcvb.aspx#1)]  
-  
+The following code example demonstrates how to retrieve all the child nodes of the <xref:System.Web.SiteMap.RootNode%2A> with the <xref:System.Web.SiteMapNode.GetAllNodes%2A> method.  
+ 
+[!code-csharp[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/CS/webform1smccs.aspx#1)]
+[!code-vb[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/VB/webform1smcvb.aspx#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -558,17 +558,17 @@
         <returns>A string representing the localized attribute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.GetExplicitResourceString%2A> method is invoked in the `get` accessor of the <xref:System.Web.SiteMapNode.Title%2A> property, the <xref:System.Web.SiteMapNode.Description%2A> property, and any custom attributes that are defined in the <xref:System.Web.SiteMapNode.Attributes%2A> property. The <xref:System.Web.SiteMapProvider> object by which the <xref:System.Web.SiteMapNode> is tracked must have its <xref:System.Web.SiteMapProvider.EnableLocalization%2A> property set to `true` for the <xref:System.Web.SiteMapNode.GetExplicitResourceString%2A> method to return a localized string. If the <xref:System.Web.SiteMapProvider.EnableLocalization%2A> is set to `false`, localization is not performed and the <xref:System.Web.SiteMapNode.GetExplicitResourceString%2A> method is never called.  
-  
- The <xref:System.Web.SiteMapNode.Title%2A> property, the <xref:System.Web.SiteMapNode.Description%2A> property, and any custom attributes that are defined in the <xref:System.Web.SiteMapNode.Attributes%2A> property first invoke the <xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> method. If it returns `null`, the <xref:System.Web.SiteMapNode.GetExplicitResourceString%2A> method is invoked with `defaultValue` set to the value of the default value from the explicit resource expression (assuming one was defined) and `throwIfNotFound` set to `true`.  
-  
+The <xref:System.Web.SiteMapNode.GetExplicitResourceString%2A> method is invoked in the `get` accessor of the <xref:System.Web.SiteMapNode.Title%2A> property, the <xref:System.Web.SiteMapNode.Description%2A> property, and any custom attributes that are defined in the <xref:System.Web.SiteMapNode.Attributes%2A> property. The <xref:System.Web.SiteMapProvider> object by which the <xref:System.Web.SiteMapNode> is tracked must have its <xref:System.Web.SiteMapProvider.EnableLocalization%2A> property set to `true` for the <xref:System.Web.SiteMapNode.GetExplicitResourceString%2A> method to return a localized string. If the <xref:System.Web.SiteMapProvider.EnableLocalization%2A> is set to `false`, localization is not performed and the <xref:System.Web.SiteMapNode.GetExplicitResourceString%2A> method is never called.  
+ 
+The <xref:System.Web.SiteMapNode.Title%2A> property, the <xref:System.Web.SiteMapNode.Description%2A> property, and any custom attributes that are defined in the <xref:System.Web.SiteMapNode.Attributes%2A> property first invoke the <xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> method. If it returns `null`, the <xref:System.Web.SiteMapNode.GetExplicitResourceString%2A> method is invoked with `defaultValue` set to the value of the default value from the explicit resource expression (assuming one was defined) and `throwIfNotFound` set to `true`.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.XmlSiteMapProvider> class imposes the restriction that the <xref:System.Web.SiteMapNode> object cannot define both implicit resource expressions and explicit resource expressions for attributes. However, a custom provider implementation can choose to allow both.  
-  
- The <xref:System.Web.SiteMapNode.GetExplicitResourceString%2A> method uses the <xref:System.Collections.Specialized.NameValueCollection> collection of resource keys that the <xref:System.Web.SiteMapNode> object was initialized with. If a collection of resource keys was not specified, the <xref:System.Web.SiteMapNode.GetExplicitResourceString%2A> returns `null`.  
-  
+ 
+The <xref:System.Web.SiteMapNode.GetExplicitResourceString%2A> method uses the <xref:System.Collections.Specialized.NameValueCollection> collection of resource keys that the <xref:System.Web.SiteMapNode> object was initialized with. If a collection of resource keys was not specified, the <xref:System.Web.SiteMapNode.GetExplicitResourceString%2A> returns `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -594,10 +594,10 @@
         <returns>A 32-bit signed integer representing the hash code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The hash code is generated using the lookup key (that is, a hash of the <xref:System.Web.SiteMapNode.Key%2A> property) for a site map node.  
-  
+The hash code is generated using the lookup key (that is, a hash of the <xref:System.Web.SiteMapNode.Key%2A> property) for a site map node.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -642,17 +642,17 @@
         <returns>A string representing the localized attribute. The default is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> method is invoked in the get accessor of the <xref:System.Web.SiteMapNode.Title%2A> property, the <xref:System.Web.SiteMapNode.Description%2A> property, and any custom attributes that are defined in the <xref:System.Web.SiteMapNode.Attributes%2A> property. The <xref:System.Web.SiteMapProvider> provider by which the  <xref:System.Web.SiteMapNode> object is tracked must have its <xref:System.Web.SiteMapProvider.EnableLocalization%2A> property set to `true` for the <xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> method to be called. If the <xref:System.Web.SiteMapProvider.EnableLocalization%2A> is set to `false`, localization is not performed and the <xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> method is never called.  
-  
- If the <xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> method returns a string that is not empty, this becomes the value of the <xref:System.Web.SiteMapNode.Title%2A>, <xref:System.Web.SiteMapNode.Description%2A>, or custom attribute property.  
-  
- The <xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> method uses the value of the <xref:System.Web.SiteMapNode.ResourceKey%2A> property to localize the attribute. If the <xref:System.Web.SiteMapNode.ResourceKey%2A> is not specified, the <xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> returns `null`.  
-  
+The <xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> method is invoked in the get accessor of the <xref:System.Web.SiteMapNode.Title%2A> property, the <xref:System.Web.SiteMapNode.Description%2A> property, and any custom attributes that are defined in the <xref:System.Web.SiteMapNode.Attributes%2A> property. The <xref:System.Web.SiteMapProvider> provider by which the  <xref:System.Web.SiteMapNode> object is tracked must have its <xref:System.Web.SiteMapProvider.EnableLocalization%2A> property set to `true` for the <xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> method to be called. If the <xref:System.Web.SiteMapProvider.EnableLocalization%2A> is set to `false`, localization is not performed and the <xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> method is never called.  
+ 
+If the <xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> method returns a string that is not empty, this becomes the value of the <xref:System.Web.SiteMapNode.Title%2A>, <xref:System.Web.SiteMapNode.Description%2A>, or custom attribute property.  
+ 
+The <xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> method uses the value of the <xref:System.Web.SiteMapNode.ResourceKey%2A> property to localize the attribute. If the <xref:System.Web.SiteMapNode.ResourceKey%2A> is not specified, the <xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> returns `null`.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.XmlSiteMapProvider> class imposes the restriction that the <xref:System.Web.SiteMapNode> object cannot define both implicit resource expressions and explicit resource expressions for attributes. However, a custom provider implementation can choose to allow both.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -677,10 +677,10 @@
           <see langword="true" /> if the node has children; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is a convenience property that calls the <xref:System.Web.SiteMapNode.ChildNodes%2A> property internally, so it will not perform better than if you call the <xref:System.Web.SiteMapNode.ChildNodes%2A> property yourself and check to see if it is empty.  
-  
+This property is a convenience property that calls the <xref:System.Web.SiteMapNode.ChildNodes%2A> property internally, so it will not perform better than if you call the <xref:System.Web.SiteMapNode.ChildNodes%2A> property yourself and check to see if it is empty.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -707,10 +707,10 @@
           <see langword="true" /> if any one of the following conditions is met: the security trimming is enabled and the current user is a member of at least one of the roles allowing access to view the site map node; the current user is authorized specifically for the requested node's URL in the authorization element for the current application and the URL is located within the directory structure for the application; the current thread has an associated <see cref="T:System.Security.Principal.WindowsIdentity" /> that has file access to the requested node's URL and the URL is located within the directory structure for the application; or security trimming is not enabled and therefore any user is allowed to view the site map node; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.IsAccessibleToUser%2A> method calls the <xref:System.Web.SiteMapProvider.IsAccessibleToUser%2A> method of the provider that the node is associated with, passing the specified `context`.  
-  
+The <xref:System.Web.SiteMapNode.IsAccessibleToUser%2A> method calls the <xref:System.Web.SiteMapProvider.IsAccessibleToUser%2A> method of the provider that the node is associated with, passing the specified `context`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified context is <see langword="null" />.</exception>
@@ -760,16 +760,16 @@
         <value>A custom attribute or resource string identified by <paramref name="key" />; otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.Item%2A> property is an indexer that first determines whether the provider that tracks the <xref:System.Web.SiteMapNode> object supports localization. If so, the <xref:System.Web.SiteMapNode.Item%2A> calls the  
-  
- <xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> method, passing the `key` parameter. If no localized text is returned, the <xref:System.Web.SiteMapNode.Item%2A> calls the  
-  
- <xref:System.Web.SiteMapNode.GetExplicitResourceString%2A> method.  
-  
- If no localized text is returned, or if the provider does not support localization, the <xref:System.Web.SiteMapNode.Item%2A> attempts to return an element from the <xref:System.Web.SiteMapNode.Attributes%2A> collection, using the specified `key`.  
-  
+The <xref:System.Web.SiteMapNode.Item%2A> property is an indexer that first determines whether the provider that tracks the <xref:System.Web.SiteMapNode> object supports localization. If so, the <xref:System.Web.SiteMapNode.Item%2A> calls the  
+ 
+<xref:System.Web.SiteMapNode.GetImplicitResourceString%2A> method, passing the `key` parameter. If no localized text is returned, the <xref:System.Web.SiteMapNode.Item%2A> calls the  
+ 
+<xref:System.Web.SiteMapNode.GetExplicitResourceString%2A> method.  
+ 
+If no localized text is returned, or if the provider does not support localization, the <xref:System.Web.SiteMapNode.Item%2A> attempts to return an element from the <xref:System.Web.SiteMapNode.Attributes%2A> collection, using the specified `key`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
@@ -792,12 +792,12 @@
         <value>A string representing a lookup key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Internally, site navigation classes can use this lookup key when searching for site map nodes, as well as for establishing relationships between nodes. The <xref:System.Web.SiteMapProvider> class also exposes the <xref:System.Web.SiteMapProvider.FindSiteMapNodeFromKey%2A> method as a means for getting a reference to a <xref:System.Web.SiteMapNode> object that matches the key value.  
-  
- The specific value that is used for the key is provider specific; however, it is guaranteed to not be `null`.  
-  
+Internally, site navigation classes can use this lookup key when searching for site map nodes, as well as for establishing relationships between nodes. The <xref:System.Web.SiteMapProvider> class also exposes the <xref:System.Web.SiteMapProvider.FindSiteMapNodeFromKey%2A> method as a means for getting a reference to a <xref:System.Web.SiteMapNode> object that matches the key value.  
+ 
+The specific value that is used for the key is provider specific; however, it is guaranteed to not be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -819,10 +819,10 @@
         <value>The next <see cref="T:System.Web.SiteMapNode" />, serially, after the current one, under the parent node; otherwise, <see langword="null" />, if no parent exists, there is no node that follows this one, or security trimming is enabled and the user cannot view the parent or next sibling nodes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.NextSibling%2A> property presumes that the <xref:System.Web.SiteMapProvider> object implements its internal collections such that when a parent node retrieves its <xref:System.Web.SiteMapNode.ChildNodes%2A> property, the nodes are in the same order as they appear in the site map. If you use .NET Framework collection classes in an implementation of a site map provider, choose collections that implement the <xref:System.Collections.IList> interface, such as the <xref:System.Collections.ArrayList> or <xref:System.Collections.Specialized.ListDictionary> classes. If you choose collections that do not implement the <xref:System.Collections.IList> interface, such as the <xref:System.Collections.Hashtable> class, unexpected results can occur for simple site navigation operations.  
-  
+The <xref:System.Web.SiteMapNode.NextSibling%2A> property presumes that the <xref:System.Web.SiteMapProvider> object implements its internal collections such that when a parent node retrieves its <xref:System.Web.SiteMapNode.ChildNodes%2A> property, the nodes are in the same order as they appear in the site map. If you use .NET Framework collection classes in an implementation of a site map provider, choose collections that implement the <xref:System.Collections.IList> interface, such as the <xref:System.Collections.ArrayList> or <xref:System.Collections.Specialized.ListDictionary> classes. If you choose collections that do not implement the <xref:System.Collections.IList> interface, such as the <xref:System.Collections.Hashtable> class, unexpected results can occur for simple site navigation operations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -844,10 +844,10 @@
         <value>The parent <see cref="T:System.Web.SiteMapNode" />; otherwise, <see langword="null" />, if security trimming is enabled and the user cannot view the parent node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode> class relies on the site map provider with which it is associated to track its relationships to other nodes in the site map. The <xref:System.Web.SiteMapNode.ParentNode%2A> property calls the <xref:System.Web.SiteMapProvider.GetParentNode%2A> method, passing a reference to itself, to retrieve the parent <xref:System.Web.SiteMapNode>.  
-  
+The <xref:System.Web.SiteMapNode> class relies on the site map provider with which it is associated to track its relationships to other nodes in the site map. The <xref:System.Web.SiteMapNode.ParentNode%2A> property calls the <xref:System.Web.SiteMapProvider.GetParentNode%2A> method, passing a reference to itself, to retrieve the parent <xref:System.Web.SiteMapNode>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
@@ -870,10 +870,10 @@
         <value>The previous <see cref="T:System.Web.SiteMapNode" />, serially, before the current one, under the parent node; otherwise, <see langword="null" />, if no parent exists, there is no node before this one, or security trimming is enabled and the user cannot view the parent or previous sibling nodes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.PreviousSibling%2A> property presumes that the site map provider implements its internal collections such that when a parent node retrieves its <xref:System.Web.SiteMapNode.ChildNodes%2A> objects, the nodes are in the same order as they appear in the site map. If you use .NET Framework collection classes in an implementation of a <xref:System.Web.SiteMapProvider> provider, choose collections that implement the <xref:System.Collections.IList> interface, such as the <xref:System.Collections.ArrayList> or <xref:System.Collections.Specialized.ListDictionary> class. If you choose collections that do not implement the <xref:System.Collections.IList> interface, such as the <xref:System.Collections.Hashtable> class, unexpected results can occur for simple site navigation operations.  
-  
+The <xref:System.Web.SiteMapNode.PreviousSibling%2A> property presumes that the site map provider implements its internal collections such that when a parent node retrieves its <xref:System.Web.SiteMapNode.ChildNodes%2A> objects, the nodes are in the same order as they appear in the site map. If you use .NET Framework collection classes in an implementation of a <xref:System.Web.SiteMapProvider> provider, choose collections that implement the <xref:System.Collections.IList> interface, such as the <xref:System.Collections.ArrayList> or <xref:System.Collections.Specialized.ListDictionary> class. If you choose collections that do not implement the <xref:System.Collections.IList> interface, such as the <xref:System.Collections.Hashtable> class, unexpected results can occur for simple site navigation operations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -895,10 +895,10 @@
         <value>The <see cref="T:System.Web.SiteMapProvider" /> that the <see cref="T:System.Web.SiteMapNode" /> is tracked by.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A provider is always returned; passing `null` to the <xref:System.Web.SiteMapNode> constructor results in an <xref:System.ArgumentException> exception.  
-  
+A provider is always returned; passing `null` to the <xref:System.Web.SiteMapNode> constructor results in an <xref:System.ArgumentException> exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -921,15 +921,15 @@
           <see langword="true" /> if the site map node can be modified; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.SiteMapNode> object is modifiable by default.  
-  
+A <xref:System.Web.SiteMapNode> object is modifiable by default.  
+ 
 > [!NOTE]
 >  All nodes that are returned by the <xref:System.Web.XmlSiteMapProvider> are read-only, by default.  
-  
- The <xref:System.Web.SiteMapNode.Attributes%2A>, <xref:System.Web.SiteMapNode.ChildNodes%2A>, <xref:System.Web.SiteMapNode.Description%2A>, <xref:System.Web.SiteMapNode.ParentNode%2A>, <xref:System.Web.SiteMapNode.Roles%2A>, <xref:System.Web.SiteMapNode.Title%2A>, and <xref:System.Web.SiteMapNode.Url%2A> property mutators check the <xref:System.Web.SiteMapNode.ReadOnly%2A> property before attempting to modify the property of a site map node. If the node is read-only when a mutator is called, the <xref:System.Web.SiteMapNode> object throws an <xref:System.InvalidOperationException> exception.  
-  
+ 
+The <xref:System.Web.SiteMapNode.Attributes%2A>, <xref:System.Web.SiteMapNode.ChildNodes%2A>, <xref:System.Web.SiteMapNode.Description%2A>, <xref:System.Web.SiteMapNode.ParentNode%2A>, <xref:System.Web.SiteMapNode.Roles%2A>, <xref:System.Web.SiteMapNode.Title%2A>, and <xref:System.Web.SiteMapNode.Url%2A> property mutators check the <xref:System.Web.SiteMapNode.ReadOnly%2A> property before attempting to modify the property of a site map node. If the node is read-only when a mutator is called, the <xref:System.Web.SiteMapNode> object throws an <xref:System.InvalidOperationException> exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -951,10 +951,10 @@
         <value>A string containing the resource key name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using the set accessor of the <xref:System.Web.SiteMapNode.ResourceKey%2A> property when the <xref:System.Web.SiteMapNode.ReadOnly%2A> property is `true` will result in an <xref:System.InvalidOperationException> exception. To set the <xref:System.Web.SiteMapNode.ResourceKey%2A> for a <xref:System.Web.SiteMapNode> object, use the <xref:System.Web.SiteMapNode.%23ctor%2A> constructor.  
-  
+Using the set accessor of the <xref:System.Web.SiteMapNode.ResourceKey%2A> property when the <xref:System.Web.SiteMapNode.ReadOnly%2A> property is `true` will result in an <xref:System.InvalidOperationException> exception. To set the <xref:System.Web.SiteMapNode.ResourceKey%2A> for a <xref:System.Web.SiteMapNode> object, use the <xref:System.Web.SiteMapNode.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
@@ -977,12 +977,12 @@
         <value>An <see cref="T:System.Collections.IList" /> of roles.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If security trimming is enabled, a site map provider builds a node tree of nodes that the current user is able to view, based in part on whether the current user's assigned role is included in the <xref:System.Web.SiteMapNode.Roles%2A> collection. URL authorization and file authorization are also used to determine whether a user has the rights to access a <xref:System.Web.SiteMapNode> object. For more information on authorization, see [ASP.NET Authorization](http://msdn.microsoft.com/library/ba7c17d4-f709-4501-8441-2340e2d6db05).  
-  
- You can use the <xref:System.Web.SiteMapNode.%23ctor%2A> constructor to supply a list of roles to the <xref:System.Web.SiteMapNode> object when it is first created.  
-  
+If security trimming is enabled, a site map provider builds a node tree of nodes that the current user is able to view, based in part on whether the current user's assigned role is included in the <xref:System.Web.SiteMapNode.Roles%2A> collection. URL authorization and file authorization are also used to determine whether a user has the rights to access a <xref:System.Web.SiteMapNode> object. For more information on authorization, see [ASP.NET Authorization](http://msdn.microsoft.com/library/ba7c17d4-f709-4501-8441-2340e2d6db05).  
+ 
+You can use the <xref:System.Web.SiteMapNode.%23ctor%2A> constructor to supply a list of roles to the <xref:System.Web.SiteMapNode> object when it is first created.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
@@ -1005,10 +1005,10 @@
         <value>A <see cref="T:System.Web.SiteMapNode" /> that represents the root node of the site navigation structure.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode> class relies on the site map provider with which it is associated to track its relationships to other nodes in the site map. The <xref:System.Web.SiteMapNode.RootNode%2A> property calls the <xref:System.Web.SiteMapProvider.RootNode%2A> property of the root provider (the <xref:System.Web.SiteMapProvider.RootProvider%2A> property) to retrieve the root node.  
-  
+The <xref:System.Web.SiteMapNode> class relies on the site map provider with which it is associated to track its relationships to other nodes in the site map. The <xref:System.Web.SiteMapNode.RootNode%2A> property calls the <xref:System.Web.SiteMapProvider.RootNode%2A> property of the root provider (the <xref:System.Web.SiteMapProvider.RootProvider%2A> property) to retrieve the root node.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The root node cannot be retrieved from the root provider.</exception>
@@ -1032,10 +1032,10 @@
         <returns>A new node that is a copy of the current node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.Roles%2A> and <xref:System.Web.SiteMapNode.Attributes%2A> collections are copied to new collections.  
-  
+The <xref:System.Web.SiteMapNode.Roles%2A> and <xref:System.Web.SiteMapNode.Attributes%2A> collections are copied to new collections.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1058,12 +1058,12 @@
         <returns>An <see cref="T:System.Web.UI.IHierarchicalEnumerable" /> that represents the immediate children of the current item in the hierarchy.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.System%23Web%23UI%23IHierarchyData%23GetChildren%2A> method delegates to the <xref:System.Web.SiteMapNode.ChildNodes%2A> property.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.IHierarchyData> interface.  
-  
+The <xref:System.Web.SiteMapNode.System%23Web%23UI%23IHierarchyData%23GetChildren%2A> method delegates to the <xref:System.Web.SiteMapNode.ChildNodes%2A> property.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.IHierarchyData> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1086,12 +1086,12 @@
         <returns>An <see cref="T:System.Web.UI.IHierarchicalEnumerable" /> that represents the parent of the current item in the hierarchy.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.System%23Web%23UI%23IHierarchyData%23GetParent%2A> method delegates to the <xref:System.Web.SiteMapNode.ParentNode%2A> property.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.IHierarchyData> interface.  
-  
+The <xref:System.Web.SiteMapNode.System%23Web%23UI%23IHierarchyData%23GetParent%2A> method delegates to the <xref:System.Web.SiteMapNode.ParentNode%2A> property.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.IHierarchyData> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1114,12 +1114,12 @@
           <see langword="true" /> if the node has child nodes; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.System%23Web%23UI%23IHierarchyData%23HasChildren%2A> property delegates to the <xref:System.Web.SiteMapNode.HasChildNodes%2A> property.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.IHierarchyData> interface.  
-  
+The <xref:System.Web.SiteMapNode.System%23Web%23UI%23IHierarchyData%23HasChildren%2A> property delegates to the <xref:System.Web.SiteMapNode.HasChildNodes%2A> property.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.IHierarchyData> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1141,10 +1141,10 @@
         <value>An hierarchical data node object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.IHierarchyData> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.IHierarchyData> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1166,12 +1166,12 @@
         <value>The path of the data item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.System%23Web%23UI%23IHierarchyData%23Path%2A> property delegates to the <xref:System.Web.SiteMapNode.Url%2A> property.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.IHierarchyData> interface.  
-  
+The <xref:System.Web.SiteMapNode.System%23Web%23UI%23IHierarchyData%23Path%2A> property delegates to the <xref:System.Web.SiteMapNode.Url%2A> property.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.IHierarchyData> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1193,10 +1193,10 @@
         <value>The string named <c>"SiteMapNode"</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.IHierarchyData> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.IHierarchyData> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1218,12 +1218,12 @@
         <value>Text displayed in a ToolTip for a node of a navigation control; otherwise, <see cref="F:System.String.Empty" />, if no <see cref="P:System.Web.SiteMapNode.Description" /> is set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.System%23Web%23UI%23INavigateUIData%23Description%2A> property delegates to the <xref:System.Web.SiteMapNode.Description%2A> property.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.INavigateUIData> interface.  
-  
+The <xref:System.Web.SiteMapNode.System%23Web%23UI%23INavigateUIData%23Description%2A> property delegates to the <xref:System.Web.SiteMapNode.Description%2A> property.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.INavigateUIData> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1245,12 +1245,12 @@
         <value>Text that is displayed for a node of a navigation control; otherwise, <see cref="F:System.String.Empty" /> if no <see cref="P:System.Web.SiteMapNode.Title" /> is set for the node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.System%23Web%23UI%23INavigateUIData%23Name%2A> property delegates to the <xref:System.Web.SiteMapNode.Title%2A> property.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.INavigateUIData> interface.  
-  
+The <xref:System.Web.SiteMapNode.System%23Web%23UI%23INavigateUIData%23Name%2A> property delegates to the <xref:System.Web.SiteMapNode.Title%2A> property.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.INavigateUIData> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1272,12 +1272,12 @@
         <value>The URL to navigate to when the node is clicked; otherwise, <see cref="F:System.String.Empty" /> if no <see cref="P:System.Web.SiteMapNode.Url" /> is set for the node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.System%23Web%23UI%23INavigateUIData%23NavigateUrl%2A> property delegates to the <xref:System.Web.SiteMapNode.Url%2A> property.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.INavigateUIData> interface.  
-  
+The <xref:System.Web.SiteMapNode.System%23Web%23UI%23INavigateUIData%23NavigateUrl%2A> property delegates to the <xref:System.Web.SiteMapNode.Url%2A> property.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.INavigateUIData> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1299,12 +1299,12 @@
         <value>A value that is not displayed; otherwise, <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.System%23Web%23UI%23INavigateUIData%23Value%2A> property delegates to the <xref:System.Web.SiteMapNode.Title%2A> property and is used to store additional data about the navigation node, such as the data that is used for handling postback events.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.INavigateUIData> interface.  
-  
+The <xref:System.Web.SiteMapNode.System%23Web%23UI%23INavigateUIData%23Value%2A> property delegates to the <xref:System.Web.SiteMapNode.Title%2A> property and is used to store additional data about the navigation node, such as the data that is used for handling postback events.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.SiteMapNode> instance is cast to an <xref:System.Web.UI.INavigateUIData> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1331,12 +1331,12 @@
         <value>A string that represents the title of the node. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.Title%2A> property is used by navigation controls to render a label for the node, instead of using the <xref:System.Web.SiteMapNode.Url%2A> property, while the <xref:System.Web.SiteMapNode.Description%2A> property is used as a ToolTip element for mouse-over events.  
-  
- A localized value of the <xref:System.Web.SiteMapNode.Title%2A> property is returned if the <xref:System.Web.SiteMapProvider.EnableLocalization%2A> property is `true`.  
-  
+The <xref:System.Web.SiteMapNode.Title%2A> property is used by navigation controls to render a label for the node, instead of using the <xref:System.Web.SiteMapNode.Url%2A> property, while the <xref:System.Web.SiteMapNode.Description%2A> property is used as a ToolTip element for mouse-over events.  
+ 
+A localized value of the <xref:System.Web.SiteMapNode.Title%2A> property is returned if the <xref:System.Web.SiteMapProvider.EnableLocalization%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>
@@ -1360,18 +1360,18 @@
         <returns>The string representation of the value of this <see cref="T:System.Web.SiteMapNode" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNode.ToString%2A> method returns the <xref:System.Web.SiteMapNode.Title%2A> property of a <xref:System.Web.SiteMapNode> object.  
+The <xref:System.Web.SiteMapNode.ToString%2A> method returns the <xref:System.Web.SiteMapNode.Title%2A> property of a <xref:System.Web.SiteMapNode> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to compare the <xref:System.Web.SiteMapNode.ToString%2A> method to the <xref:System.Web.SiteMapNode.Url%2A> and <xref:System.Web.SiteMapNode.Title%2A> properties of a <xref:System.Web.SiteMapNode> object.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.SiteMap_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMap_2/CS/catalog2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.SiteMap_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMap_2/VB/catalog2vb.aspx#1)]  -->  
-  
+The following code example demonstrates how to compare the <xref:System.Web.SiteMapNode.ToString%2A> method to the <xref:System.Web.SiteMapNode.Url%2A> and <xref:System.Web.SiteMapNode.Title%2A> properties of a <xref:System.Web.SiteMapNode> object.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.SiteMap_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMap_2/CS/catalog2cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.SiteMap_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMap_2/VB/catalog2vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1393,23 +1393,23 @@
         <value>The URL of the page that the node represents. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.XmlSiteMapProvider> class, which is the default site map provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key. Therefore, any <xref:System.Web.SiteMapNode> object that is used by the <xref:System.Web.XmlSiteMapProvider> class must have a unique URL within the scope of the provider.  
+The <xref:System.Web.XmlSiteMapProvider> class, which is the default site map provider implementation for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property as a lookup key. Therefore, any <xref:System.Web.SiteMapNode> object that is used by the <xref:System.Web.XmlSiteMapProvider> class must have a unique URL within the scope of the provider.  
+ 
+Leading and trailing white-space characters are ignored.  
+ 
   
- Leading and trailing white-space characters are ignored.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to set the <xref:System.Web.SiteMapNode.Url%2A> property of a <xref:System.Web.SiteMapNode> object. The `AccessSiteMapProvider` stores its root node as a row that has no `parentnodeid` defined. The row is returned using an <xref:System.Data.OleDb.OleDbDataReader> object, and <xref:System.Web.SiteMapNode> properties are set from the values in the data reader.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.SiteMapProvider> class.  
-  
- [!code-cpp[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#4](~/samples/snippets/cpp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/CPP/accesssitemapprovider.cpp#4)]
- [!code-csharp[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/CS/accesssitemapprovider.cs#4)]
- [!code-vb[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/VB/accesssitemapprovider.vb#4)]  
-  
+The following code example demonstrates how to set the <xref:System.Web.SiteMapNode.Url%2A> property of a <xref:System.Web.SiteMapNode> object. The `AccessSiteMapProvider` stores its root node as a row that has no `parentnodeid` defined. The row is returned using an <xref:System.Data.OleDb.OleDbDataReader> object, and <xref:System.Web.SiteMapNode> properties are set from the values in the data reader.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.SiteMapProvider> class.  
+ 
+[!code-cpp[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#4](~/samples/snippets/cpp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/CPP/accesssitemapprovider.cpp#4)]
+[!code-csharp[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/CS/accesssitemapprovider.cs#4)]
+[!code-vb[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/VB/accesssitemapprovider.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is read-only.</exception>

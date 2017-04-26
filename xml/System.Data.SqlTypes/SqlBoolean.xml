@@ -38,12 +38,12 @@
     <summary>Represents an integer value that is either 1 or 0 to be stored in or retrieved from a database.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any non-zero value is interpreted as 1.  
-  
- The key difference between a <xref:System.Data.SqlTypes.SqlBoolean> structure and a standard Boolean value is that, where a standard Boolean has two possible values, `true` and `false`, a <xref:System.Data.SqlTypes.SqlBoolean> structure has three possible values, <xref:System.Data.SqlTypes.SqlBoolean.True>, <xref:System.Data.SqlTypes.SqlBoolean.False>, or <xref:System.Data.SqlTypes.SqlBoolean.Null>.  
-  
+Any non-zero value is interpreted as 1.  
+ 
+The key difference between a <xref:System.Data.SqlTypes.SqlBoolean> structure and a standard Boolean value is that, where a standard Boolean has two possible values, `true` and `false`, a <xref:System.Data.SqlTypes.SqlBoolean> structure has three possible values, <xref:System.Data.SqlTypes.SqlBoolean.True>, <xref:System.Data.SqlTypes.SqlBoolean.False>, or <xref:System.Data.SqlTypes.SqlBoolean.Null>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -161,10 +161,10 @@
         <value>A byte representing the value of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The byte value will be either 0 or 1.  
-  
+The byte value will be either 0 or 1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,10 +238,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any instance of <xref:System.Data.SqlTypes.SqlBoolean>, regardless of its value, is considered greater than a null reference (`Nothing` in Visual Basic).  
-  
+Any instance of <xref:System.Data.SqlTypes.SqlBoolean>, regardless of its value, is considered greater than a null reference (`Nothing` in Visual Basic).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -315,10 +315,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any instance of <xref:System.Data.SqlTypes.SqlBoolean>, regardless of its value, is considered greater than a null reference (`Nothing` in Visual Basic).  
-  
+Any instance of <xref:System.Data.SqlTypes.SqlBoolean>, regardless of its value, is considered greater than a null reference (`Nothing` in Visual Basic).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -413,10 +413,10 @@
         <summary>Represents a false value that can be assigned to the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> property of an instance of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.SqlTypes.SqlBoolean.False> field is a constant for the <xref:System.Data.SqlTypes.SqlBoolean> structure.  
-  
+The <xref:System.Data.SqlTypes.SqlBoolean.False> field is a constant for the <xref:System.Data.SqlTypes.SqlBoolean> structure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -508,10 +508,10 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is greater than the second instance; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
-  
+If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -548,10 +548,10 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is greater than or equal to the second instance; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
-  
+If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -583,10 +583,10 @@
           <see langword="true" /> if <see langword="Value" /> is <see langword="False" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Data.SqlTypes.SqlBoolean.Value%2A> is <xref:System.Data.SqlTypes.SqlBoolean.Null>, this property still will be `false`.  
-  
+If the <xref:System.Data.SqlTypes.SqlBoolean.Value%2A> is <xref:System.Data.SqlTypes.SqlBoolean.Null>, this property still will be `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -618,10 +618,10 @@
           <see langword="true" /> if the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure is null; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
-  
+For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -653,10 +653,10 @@
           <see langword="true" /> if <see langword="Value" /> is <see langword="True" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Data.SqlTypes.SqlBoolean.Value%2A> is <xref:System.Data.SqlTypes.SqlBoolean.Null>, this property still will be `false`.  
-  
+If the <xref:System.Data.SqlTypes.SqlBoolean.Value%2A> is <xref:System.Data.SqlTypes.SqlBoolean.Null>, this property still will be `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -693,10 +693,10 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is less than the second instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
-  
+If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -733,10 +733,10 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is less than or equal to the second instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
-  
+If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -799,10 +799,10 @@
         <summary>Represents <see cref="T:System.DBNull" /> that can be assigned to this instance of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.SqlTypes.SqlBoolean.Null> field is a constant for the <xref:System.Data.SqlTypes.SqlBoolean> structure. For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
-  
+The <xref:System.Data.SqlTypes.SqlBoolean.Null> field is a constant for the <xref:System.Data.SqlTypes.SqlBoolean> structure. For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -832,10 +832,10 @@
         <summary>Represents a one value that can be assigned to the <see cref="P:System.Data.SqlTypes.SqlBoolean.ByteValue" /> property of an instance of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.SqlTypes.SqlBoolean.One> field is a constant for the <xref:System.Data.SqlTypes.SqlBoolean> structure.  
-  
+The <xref:System.Data.SqlTypes.SqlBoolean.One> field is a constant for the <xref:System.Data.SqlTypes.SqlBoolean> structure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -903,40 +903,40 @@
         <returns>The result of the logical AND operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.And%2A> oolean)?qualifyHint=True&autoUpgrade=False]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_BitwiseOr">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_BitwiseOr (System.Data.SqlTypes.SqlBoolean x, System.Data.SqlTypes.SqlBoolean y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_BitwiseOr(valuetype System.Data.SqlTypes.SqlBoolean x, valuetype System.Data.SqlTypes.SqlBoolean y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBoolean.op_BitwiseOr(System.Data.SqlTypes.SqlBoolean,System.Data.SqlTypes.SqlBoolean)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
-        <summary>Computes the bitwise OR of its operands.</summary>
-        <returns>The results of the logical OR operation.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_BitwiseOr">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_BitwiseOr (System.Data.SqlTypes.SqlBoolean x, System.Data.SqlTypes.SqlBoolean y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_BitwiseOr(valuetype System.Data.SqlTypes.SqlBoolean x, valuetype System.Data.SqlTypes.SqlBoolean y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBoolean.op_BitwiseOr(System.Data.SqlTypes.SqlBoolean,System.Data.SqlTypes.SqlBoolean)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+       <summary>Computes the bitwise OR of its operands.</summary>
+       <returns>The results of the logical OR operation.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Or%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -973,40 +973,40 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.Equals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_ExclusiveOr">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_ExclusiveOr (System.Data.SqlTypes.SqlBoolean x, System.Data.SqlTypes.SqlBoolean y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_ExclusiveOr(valuetype System.Data.SqlTypes.SqlBoolean x, valuetype System.Data.SqlTypes.SqlBoolean y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBoolean.op_ExclusiveOr(System.Data.SqlTypes.SqlBoolean,System.Data.SqlTypes.SqlBoolean)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
-        <summary>Performs a bitwise exclusive-OR (XOR) operation on the supplied parameters.</summary>
-        <returns>The result of the logical XOR operation.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_ExclusiveOr">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_ExclusiveOr (System.Data.SqlTypes.SqlBoolean x, System.Data.SqlTypes.SqlBoolean y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_ExclusiveOr(valuetype System.Data.SqlTypes.SqlBoolean x, valuetype System.Data.SqlTypes.SqlBoolean y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBoolean.op_ExclusiveOr(System.Data.SqlTypes.SqlBoolean,System.Data.SqlTypes.SqlBoolean)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+       <summary>Performs a bitwise exclusive-OR (XOR) operation on the supplied parameters.</summary>
+       <returns>The result of the logical XOR operation.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Xor%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -1351,45 +1351,45 @@
         <returns>Returns <see langword="true" /> if the supplied parameter is <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is false, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_GreaterThan (System.Data.SqlTypes.SqlBoolean x, System.Data.SqlTypes.SqlBoolean y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThan(valuetype System.Data.SqlTypes.SqlBoolean x, valuetype System.Data.SqlTypes.SqlBoolean y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBoolean.op_GreaterThan(System.Data.SqlTypes.SqlBoolean,System.Data.SqlTypes.SqlBoolean)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> object.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> object.</param>
-        <summary>Compares two <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures to determine whether the first is greater than the second.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is greater than the second instance; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_GreaterThan">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_GreaterThan (System.Data.SqlTypes.SqlBoolean x, System.Data.SqlTypes.SqlBoolean y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThan(valuetype System.Data.SqlTypes.SqlBoolean x, valuetype System.Data.SqlTypes.SqlBoolean y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBoolean.op_GreaterThan(System.Data.SqlTypes.SqlBoolean,System.Data.SqlTypes.SqlBoolean)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> object.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> object.</param>
+       <summary>Compares two <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures to determine whether the first is greater than the second.</summary>
+       <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is greater than the second instance; otherwise, <see langword="false" />.</returns>
+       <remarks>
+         <format type="text/markdown"><![CDATA[  
+ 
 ## Remarks  
- If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
-  
+If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+ 
  The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -1426,10 +1426,10 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is greater than or equal to the second instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
-  
+If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+ 
  The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -1497,45 +1497,45 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.NotEquals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_LessThan (System.Data.SqlTypes.SqlBoolean x, System.Data.SqlTypes.SqlBoolean y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThan(valuetype System.Data.SqlTypes.SqlBoolean x, valuetype System.Data.SqlTypes.SqlBoolean y) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBoolean.op_LessThan(System.Data.SqlTypes.SqlBoolean,System.Data.SqlTypes.SqlBoolean)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
-      </Parameters>
-      <Docs>
-        <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
-        <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
-        <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether the first is less than the second.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is less than the second instance; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_LessThan">
+     <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_LessThan (System.Data.SqlTypes.SqlBoolean x, System.Data.SqlTypes.SqlBoolean y);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThan(valuetype System.Data.SqlTypes.SqlBoolean x, valuetype System.Data.SqlTypes.SqlBoolean y) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBoolean.op_LessThan(System.Data.SqlTypes.SqlBoolean,System.Data.SqlTypes.SqlBoolean)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+       <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
+     </Parameters>
+     <Docs>
+       <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+       <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
+       <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether the first is less than the second.</summary>
+       <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is less than the second instance; otherwise, <see langword="false" />.</returns>
+       <remarks>
+         <format type="text/markdown"><![CDATA[  
+ 
 ## Remarks  
- If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
-  
+If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+ 
  The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -1572,10 +1572,10 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is less than or equal to the second instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
-  
+If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
+ 
  The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -1641,38 +1641,38 @@
         <returns>The one's complement of the supplied <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.OnesComplement%28System.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_True">
-      <MemberSignature Language="C#" Value="public static bool op_True (System.Data.SqlTypes.SqlBoolean x);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_True(valuetype System.Data.SqlTypes.SqlBoolean x) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBoolean.op_True(System.Data.SqlTypes.SqlBoolean)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-      </Parameters>
-      <Docs>
-        <param name="x">The <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to be tested.</param>
-        <summary>The true operator can be used to test the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether it is true.</summary>
-        <returns>Returns <see langword="true" /> if the supplied parameter is <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is true, <see langword="false" /> otherwise.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_True">
+     <MemberSignature Language="C#" Value="public static bool op_True (System.Data.SqlTypes.SqlBoolean x);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_True(valuetype System.Data.SqlTypes.SqlBoolean x) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBoolean.op_True(System.Data.SqlTypes.SqlBoolean)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Data.SqlClient</AssemblyName>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>System.Data</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+     </Parameters>
+     <Docs>
+       <param name="x">The <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to be tested.</param>
+       <summary>The true operator can be used to test the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether it is true.</summary>
+       <returns>Returns <see langword="true" /> if the supplied parameter is <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is true, <see langword="false" /> otherwise.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -2128,10 +2128,10 @@
         <summary>Represents a true value that can be assigned to the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> property of an instance of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.SqlTypes.SqlBoolean.True> field is a constant for the <xref:System.Data.SqlTypes.SqlBoolean> structure.  
-  
+The <xref:System.Data.SqlTypes.SqlBoolean.True> field is a constant for the <xref:System.Data.SqlTypes.SqlBoolean> structure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2223,10 +2223,10 @@
         <summary>Represents a zero value that can be assigned to the <see cref="P:System.Data.SqlTypes.SqlBoolean.ByteValue" /> property of an instance of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.SqlTypes.SqlBoolean.Zero> field is a constant for the <xref:System.Data.SqlTypes.SqlBoolean> structure.  
-  
+The <xref:System.Data.SqlTypes.SqlBoolean.Zero> field is a constant for the <xref:System.Data.SqlTypes.SqlBoolean> structure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2240,10 +2240,10 @@
         <summary>Compares this instance to a specified object and returns an indication of their relative values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is implemented to support the <xref:System.IComparable> interface.  
-  
+This method is implemented to support the <xref:System.IComparable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

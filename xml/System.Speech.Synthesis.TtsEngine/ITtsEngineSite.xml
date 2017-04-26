@@ -91,10 +91,10 @@
         <value>An <see langword="int" /> containing the sum of one or more members of the <see langword="TtsEventId" /> enumeration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each bit in the `EventInterest` flag field represents a type of event that the engine should raise.  
-  
+Each bit in the `EventInterest` flag field represents a type of event that the engine should raise.  
+ 
  ]]></format>
         </remarks>
       </Docs>

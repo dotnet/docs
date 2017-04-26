@@ -29,10 +29,10 @@
     <summary>Represents a combination of a user's identity, an access mask, and an access control type (allow or deny). An AccessRule`1 object also contains information about the how the rule is inherited by child objects and how that inheritance is propagated.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Access rights (permissions) are type T, which you can type-cast to or from an int. For example, you can cast a <xref:System.Security.AccessControl.FileSystemRights> as the access rights type, and then use the instance normally. In contrast, <xref:System.Security.AccessControl.AccessRule> always takes access rights of type int.  
-  
+Access rights (permissions) are type T, which you can type-cast to or from an int. For example, you can cast a <xref:System.Security.AccessControl.FileSystemRights> as the access rights type, and then use the instance normally. In contrast, <xref:System.Security.AccessControl.AccessRule> always takes access rights of type int.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -175,10 +175,10 @@
         <value>The rights, cast as type &lt;T&gt;, of the current instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property contains the same information as the AccessMask property, but cast as type \<T>.  
-  
+This property contains the same information as the AccessMask property, but cast as type \<T>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,38 +14,38 @@
     <summary>Is the base class to create providers for encrypting and decrypting protected-configuration data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can encrypt sections of a configuration file to protect sensitive information used by your application. This improves security by making it difficult for unauthorized access even if an attacker gains access to your configuration file.  
-  
- The .NET Framework includes two protected configuration providers that can be used to encrypt sections of a configuration file. The <xref:System.Configuration.RsaProtectedConfigurationProvider> class uses the <xref:System.Security.Cryptography.RSACryptoServiceProvider> to encrypt configuration sections. The <xref:System.Configuration.DpapiProtectedConfigurationProvider> class uses the Windows Data Protection API (DPAPI) to encrypt configuration sections.  
-  
- You might have a requirement to encrypt sensitive information using an algorithm other than the RSA or DPAPI providers. In this case, you can build your own custom protected-configuration provider. The <xref:System.Configuration.ProtectedConfigurationProvider> is an abstract base class that you must inherit from to create your own protected-configuration provider.  
-  
- Whether you use a standard or a custom provider, you must ensure that it is configured with the `add` element in the `providers` section of the `configProtectedData`  configuration section. (See next example.)  
-  
- For details, see [Implementing a Protected Configuration Provider](http://msdn.microsoft.com/library/afc329e4-ef37-4915-b419-b37c745d2865).  
-  
+You can encrypt sections of a configuration file to protect sensitive information used by your application. This improves security by making it difficult for unauthorized access even if an attacker gains access to your configuration file.  
+ 
+The .NET Framework includes two protected configuration providers that can be used to encrypt sections of a configuration file. The <xref:System.Configuration.RsaProtectedConfigurationProvider> class uses the <xref:System.Security.Cryptography.RSACryptoServiceProvider> to encrypt configuration sections. The <xref:System.Configuration.DpapiProtectedConfigurationProvider> class uses the Windows Data Protection API (DPAPI) to encrypt configuration sections.  
+ 
+You might have a requirement to encrypt sensitive information using an algorithm other than the RSA or DPAPI providers. In this case, you can build your own custom protected-configuration provider. The <xref:System.Configuration.ProtectedConfigurationProvider> is an abstract base class that you must inherit from to create your own protected-configuration provider.  
+ 
+Whether you use a standard or a custom provider, you must ensure that it is configured with the `add` element in the `providers` section of the `configProtectedData`  configuration section. (See next example.)  
+ 
+For details, see [Implementing a Protected Configuration Provider](http://msdn.microsoft.com/library/afc329e4-ef37-4915-b419-b37c745d2865).  
+ 
 > [!NOTE]
 >  When ASP.NET encounters encrypted configuration data, it performs decryption transparently using the configured provider. No action is required on your side other than making sure that you configure the required provider.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to implement a custom <xref:System.Configuration.ProtectedConfigurationProvider>.  
-  
- To be able to configure this provider, as shown in the next configuration excerpt, you must install it in the Global Assembly Cache (GAC). Refer to [Implementing a Protected Configuration Provider](http://msdn.microsoft.com/library/afc329e4-ef37-4915-b419-b37c745d2865) for more information.  
-  
- [!code-csharp[System.Configuration.ProtectedConfigurationProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProtectedConfigurationProvider/CS/ProtectedConfigurationProviderLib.cs#1)]
- [!code-vb[System.Configuration.ProtectedConfigurationProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProtectedConfigurationProvider/VB/ProtectedConfigurationProviderLib.vb#1)]  
-  
- The following example shows how to use the previous custom <xref:System.Configuration.ProtectedConfigurationProvider>.  
-  
- [!code-csharp[System.Configuration.UsingProtectedConfigurationProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.UsingProtectedConfigurationProvider/CS/ProtectedConfigurationProvider.cs#11)]
- [!code-vb[System.Configuration.UsingProtectedConfigurationProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.UsingProtectedConfigurationProvider/VB/ProtectedConfigurationProvider.vb#11)]  
-  
- The following is an excerpt of the configuration file used by the above examples.  
-  
+The following example shows how to implement a custom <xref:System.Configuration.ProtectedConfigurationProvider>.  
+ 
+To be able to configure this provider, as shown in the next configuration excerpt, you must install it in the Global Assembly Cache (GAC). Refer to [Implementing a Protected Configuration Provider](http://msdn.microsoft.com/library/afc329e4-ef37-4915-b419-b37c745d2865) for more information.  
+ 
+[!code-csharp[System.Configuration.ProtectedConfigurationProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProtectedConfigurationProvider/CS/ProtectedConfigurationProviderLib.cs#1)]
+[!code-vb[System.Configuration.ProtectedConfigurationProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProtectedConfigurationProvider/VB/ProtectedConfigurationProviderLib.vb#1)]  
+ 
+The following example shows how to use the previous custom <xref:System.Configuration.ProtectedConfigurationProvider>.  
+ 
+[!code-csharp[System.Configuration.UsingProtectedConfigurationProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.UsingProtectedConfigurationProvider/CS/ProtectedConfigurationProvider.cs#11)]
+[!code-vb[System.Configuration.UsingProtectedConfigurationProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.UsingProtectedConfigurationProvider/VB/ProtectedConfigurationProvider.vb#11)]  
+ 
+The following is an excerpt of the configuration file used by the above examples.  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
@@ -68,7 +68,7 @@ providerName="System.Data.SqlClient" />
   
 </configuration>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -112,13 +112,13 @@ providerName="System.Data.SqlClient" />
         <returns>The <see cref="T:System.Xml.XmlNode" /> object containing decrypted data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use <xref:System.Configuration.ProtectedConfigurationProvider.Decrypt%2A> method to perform custom decryption.  
-  
- [!code-csharp[System.Configuration.ProtectedConfigurationProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProtectedConfigurationProvider/CS/ProtectedConfigurationProviderLib.cs#2)]
- [!code-vb[System.Configuration.ProtectedConfigurationProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProtectedConfigurationProvider/VB/ProtectedConfigurationProviderLib.vb#2)]  
-  
+The following example shows how to use <xref:System.Configuration.ProtectedConfigurationProvider.Decrypt%2A> method to perform custom decryption.  
+ 
+[!code-csharp[System.Configuration.ProtectedConfigurationProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProtectedConfigurationProvider/CS/ProtectedConfigurationProviderLib.cs#2)]
+[!code-vb[System.Configuration.ProtectedConfigurationProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProtectedConfigurationProvider/VB/ProtectedConfigurationProviderLib.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -147,13 +147,13 @@ providerName="System.Data.SqlClient" />
         <returns>The <see cref="T:System.Xml.XmlNode" /> object containing encrypted data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use <xref:System.Configuration.ProtectedConfigurationProvider.Encrypt%2A> to perform custom encryption.  
-  
- [!code-csharp[System.Configuration.ProtectedConfigurationProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProtectedConfigurationProvider/CS/ProtectedConfigurationProviderLib.cs#3)]
- [!code-vb[System.Configuration.ProtectedConfigurationProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProtectedConfigurationProvider/VB/ProtectedConfigurationProviderLib.vb#3)]  
-  
+The following example shows how to use <xref:System.Configuration.ProtectedConfigurationProvider.Encrypt%2A> to perform custom encryption.  
+ 
+[!code-csharp[System.Configuration.ProtectedConfigurationProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProtectedConfigurationProvider/CS/ProtectedConfigurationProviderLib.cs#3)]
+[!code-vb[System.Configuration.ProtectedConfigurationProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProtectedConfigurationProvider/VB/ProtectedConfigurationProviderLib.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

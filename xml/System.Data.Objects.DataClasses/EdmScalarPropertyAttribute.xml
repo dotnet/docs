@@ -19,14 +19,14 @@
     <summary>Attribute that indicates that the property represents a scalar property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.IsNullable%2A> and <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.EntityKeyProperty%2A> properties cannot both be `true` because key members cannot be `null`.  
-  
- The <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute> links a scalar property on a data class to a property of an entity type or complex type that is defined in the conceptual model.  
-  
- This attribute is applied to properties that return scalar types.  
-  
+The <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.IsNullable%2A> and <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.EntityKeyProperty%2A> properties cannot both be `true` because key members cannot be `null`.  
+ 
+The <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute> links a scalar property on a data class to a property of an entity type or complex type that is defined in the conceptual model.  
+ 
+This attribute is applied to properties that return scalar types.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,12 +63,12 @@
         <value>The value that indicates whether the property is part of the entity key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because an entity key can contain more than one property, the <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.EntityKeyProperty%2A> can be set to true for more than one property of an entity type.  
-  
- The <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.IsNullable%2A> and <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.EntityKeyProperty%2A> properties cannot both be `true` because key members cannot be `null`.  
-  
+Because an entity key can contain more than one property, the <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.EntityKeyProperty%2A> can be set to true for more than one property of an entity type.  
+ 
+The <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.IsNullable%2A> and <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.EntityKeyProperty%2A> properties cannot both be `true` because key members cannot be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,10 +90,10 @@
         <value>The value that indicates whether the property can have a <see langword="null" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.IsNullable%2A> and <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.EntityKeyProperty%2A> properties cannot both be `true`.  
-  
+The <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.IsNullable%2A> and <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.EntityKeyProperty%2A> properties cannot both be `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

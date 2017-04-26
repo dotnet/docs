@@ -14,10 +14,10 @@
     <summary>A persistence provider throws this exception when it expects an instance to be in an uninitialized state but the instance is not in that state.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A persistence provider throws this exception when it expects an instance to be in an uninitialized state but the instance is not in that state.  
-  
+A persistence provider throws this exception when it expects an instance to be in an uninitialized state but the instance is not in that state.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -99,10 +99,10 @@
         <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceCollisionException" /> class using the error message and the inner exception information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a result of a previous exception typically includes a reference to the previous exception in the <xref:System.ServiceModel.ExceptionDetail.InnerException%2A> property.  
-  
+An exception that is thrown as a result of a previous exception typically includes a reference to the previous exception in the <xref:System.ServiceModel.ExceptionDetail.InnerException%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

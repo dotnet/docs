@@ -14,12 +14,12 @@
     <summary>Provides information about a workflow instance that has completed its execution.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example inspects the <xref:System.Activities.WorkflowApplicationCompletedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Completed%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about how the workflow completed.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#4](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#4)]  
-  
+The following code example inspects the <xref:System.Activities.WorkflowApplicationCompletedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Completed%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about how the workflow completed.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#4](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,12 +41,12 @@
         <value>The completion state of the workflow instance, which indicates whether the workflow instance completed successfully, was canceled, or faulted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example inspects the <xref:System.Activities.WorkflowApplicationCompletedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Completed%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about how the workflow completed.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#4](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#4)]  
-  
+The following code example inspects the <xref:System.Activities.WorkflowApplicationCompletedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Completed%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about how the workflow completed.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#4](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -68,12 +68,12 @@
         <value>A dictionary that contains the values of <see cref="T:System.Activities.OutArgument" />s of the workflow instance’s root activity, keyed by argument name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example inspects the <xref:System.Activities.WorkflowApplicationCompletedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Completed%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about how the workflow completed.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#4](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#4)]  
-  
+The following code example inspects the <xref:System.Activities.WorkflowApplicationCompletedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Completed%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about how the workflow completed.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#4](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,12 +95,12 @@
         <value>The exception associated with the termination of the workflow instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example inspects the <xref:System.Activities.WorkflowApplicationCompletedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Completed%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about how the workflow completed.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#4](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#4)]  
-  
+The following code example inspects the <xref:System.Activities.WorkflowApplicationCompletedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Completed%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about how the workflow completed.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#4](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

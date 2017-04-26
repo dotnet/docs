@@ -24,24 +24,24 @@
     <summary>Specifies the data source and data member properties for a component that supports complex data binding. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> is used to specify the properties used with complex data binding, such as binding based on <xref:System.Collections.IList?displayProperty=fullName>.  
+The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> is used to specify the properties used with complex data binding, such as binding based on <xref:System.Collections.IList?displayProperty=fullName>.  
+ 
+The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> attribute is specified at the class level. It is inheritable and does not allow multiple attributes on the same class.  
+ 
+A control can support both simple binding, with <xref:System.ComponentModel.DefaultBindingPropertyAttribute>, as well as complex binding.  
+ 
+For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
   
- The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> attribute is specified at the class level. It is inheritable and does not allow multiple attributes on the same class.  
-  
- A control can support both simple binding, with <xref:System.ComponentModel.DefaultBindingPropertyAttribute>, as well as complex binding.  
-  
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> to identify a control's `DataSource` and `DataMember` properties for data binding. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
-  
- [!code-csharp[System.ComponentModel.AttributesDemoControl#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#20)]
- [!code-vb[System.ComponentModel.AttributesDemoControl#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#20)]  
-  
+The following code example demonstrates using <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> to identify a control's `DataSource` and `DataMember` properties for data binding. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
+ 
+[!code-csharp[System.ComponentModel.AttributesDemoControl#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#20)]
+[!code-vb[System.ComponentModel.AttributesDemoControl#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#20)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,10 +65,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ComplexBindingPropertiesAttribute" /> class using no parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor sets the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource%2A> and <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember%2A> properties to `null`.  
-  
+The default constructor sets the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource%2A> and <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember%2A> properties to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ComplexBindingPropertiesAttribute" /> class using the specified data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource%2A> property to `dataSource` and the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember%2A> property to `null`.  
-  
+This constructor sets the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource%2A> property to `dataSource` and the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember%2A> property to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,10 +127,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ComplexBindingPropertiesAttribute" /> class using the specified data source and data member.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource%2A> property to `dataSource` and the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember%2A> property to `dataMember`.  
-  
+This constructor sets the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource%2A> property to `dataSource` and the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember%2A> property to `dataMember`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -157,10 +157,10 @@
         <value>The name of the data member property for the component to which <see cref="T:System.ComponentModel.ComplexBindingPropertiesAttribute" /> is bound</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember%2A> property is set in the constructors for this class.  
-  
+The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember%2A> property is set in the constructors for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,10 +187,10 @@
         <value>The name of the data source property for the component to which <see cref="T:System.ComponentModel.ComplexBindingPropertiesAttribute" /> is bound.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource%2A> property is set in the constructors for this class.  
-  
+The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource%2A> property is set in the constructors for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,10 +216,10 @@
         <summary>Represents the default value for the <see cref="T:System.ComponentModel.ComplexBindingPropertiesAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.Default> member is a static, read-only field that defines an instance of the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> class initialized with the default constructor.  
-  
+The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.Default> member is a static, read-only field that defines an instance of the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> class initialized with the default constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,10 +251,10 @@
           <see langword="true" /> if the object is equal to the current instance; otherwise, <see langword="false" />, indicating they are not equal.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.Equals%2A> method returns `true` if `obj` is of type <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> and the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource%2A> and <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember%2A> properties of the two objects are equal.  
-  
+The <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.Equals%2A> method returns `true` if `obj` is of type <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> and the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource%2A> and <xref:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember%2A> properties of the two objects are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>

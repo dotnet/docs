@@ -14,12 +14,12 @@
     <summary>To implement a security upgrade initiator, inherit from this <see langword="abstract" /> base class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used with <xref:System.ServiceModel.Channels.StreamSecurityUpgradeAcceptor> and <xref:System.ServiceModel.Channels.StreamSecurityUpgradeProvider> to implement a custom stream upgrade.  
-  
- For a detailed description of the upgrade process, see <xref:System.ServiceModel.Channels.StreamUpgradeProvider>.  
-  
+This class is used with <xref:System.ServiceModel.Channels.StreamSecurityUpgradeAcceptor> and <xref:System.ServiceModel.Channels.StreamSecurityUpgradeProvider> to implement a custom stream upgrade.  
+ 
+For a detailed description of the upgrade process, see <xref:System.ServiceModel.Channels.StreamUpgradeProvider>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
         <returns>Returns the <see cref="T:System.ServiceModel.Security.SecurityMessageProperty" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This information is useful for implementing a stream-level authentication mechanism based on the identities provided in the security context.  
-  
+This information is useful for implementing a stream-level authentication mechanism based on the identities provided in the security context.  
+ 
  ]]></format>
         </remarks>
       </Docs>

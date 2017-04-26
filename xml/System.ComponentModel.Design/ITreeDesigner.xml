@@ -23,14 +23,14 @@
     <summary>Provides support for building a set of related custom designers.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.ITreeDesigner> interface derives from the <xref:System.ComponentModel.Design.IDesigner> interface and provides support for flexibly navigating a hierarchy of related designers. With this interface, a programmer can supply a number of designers for the component, with the appropriate one being determined dynamically.  
-  
- This interface is a simple extension of its base class, adding just two properties for navigating a tree hierarchy: <xref:System.ComponentModel.Design.ITreeDesigner.Children%2A> and <xref:System.ComponentModel.Design.ITreeDesigner.Parent%2A>.  
-  
- For an overview of creating design components, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
-  
+The <xref:System.ComponentModel.Design.ITreeDesigner> interface derives from the <xref:System.ComponentModel.Design.IDesigner> interface and provides support for flexibly navigating a hierarchy of related designers. With this interface, a programmer can supply a number of designers for the component, with the appropriate one being determined dynamically.  
+ 
+This interface is a simple extension of its base class, adding just two properties for navigating a tree hierarchy: <xref:System.ComponentModel.Design.ITreeDesigner.Children%2A> and <xref:System.ComponentModel.Design.ITreeDesigner.Parent%2A>.  
+ 
+For an overview of creating design components, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
         <value>An <see cref="T:System.Collections.ICollection" />, containing the collection of <see cref="T:System.ComponentModel.Design.IDesigner" /> child objects of the current designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.ITreeDesigner.Children%2A> property will return an empty collection if the <xref:System.ComponentModel.Design.ITreeDesigner> has no child objects.  
-  
+The <xref:System.ComponentModel.Design.ITreeDesigner.Children%2A> property will return an empty collection if the <xref:System.ComponentModel.Design.ITreeDesigner> has no child objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>

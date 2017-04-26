@@ -14,26 +14,26 @@
     <summary>Used internally as the class that represents metadata about an individual configuration property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Configuration.SettingsProperty> is used to describe settings properties of a class derived from <xref:System.Configuration.SettingsBase>. The Settings API allows a collection of settings properties to be grouped into a common language runtime class.  
-  
- When persisting settings, the <xref:System.Configuration.SettingsBase> base class asks for a collection of <xref:System.Configuration.SettingsProperty> objects, grouped in a collection of type <xref:System.Configuration.SettingsPropertyCollection>. It does this by calling its own Properties member. Inherited classes should return a collection of properties to persist.  
-  
- Each <xref:System.Configuration.SettingsProperty> object includes metadata about the property, including the following:  
-  
+<xref:System.Configuration.SettingsProperty> is used to describe settings properties of a class derived from <xref:System.Configuration.SettingsBase>. The Settings API allows a collection of settings properties to be grouped into a common language runtime class.  
+ 
+When persisting settings, the <xref:System.Configuration.SettingsBase> base class asks for a collection of <xref:System.Configuration.SettingsProperty> objects, grouped in a collection of type <xref:System.Configuration.SettingsPropertyCollection>. It does this by calling its own Properties member. Inherited classes should return a collection of properties to persist.  
+ 
+Each <xref:System.Configuration.SettingsProperty> object includes metadata about the property, including the following:  
+ 
 -   Name.  
-  
+ 
 -   Default value.  
-  
+ 
 -   Property type.  
-  
+ 
 -   Serialization method.  
-  
+ 
 -   Provider to use for persistence.  
-  
+ 
 -   Other arbitrary attributes that are context and provider specific.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -125,10 +125,10 @@
         <value>A <see cref="T:System.Configuration.SettingsAttributeDictionary" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns a collection of attributes used to describe a <xref:System.Configuration.SettingsProperty> object.  
-  
+Returns a collection of attributes used to describe a <xref:System.Configuration.SettingsProperty> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,10 +169,10 @@
           <see langword="true" /> if the <see cref="T:System.Configuration.SettingsProperty" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default is `false`.  
-  
+The default is `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,10 +194,10 @@
         <value>The name of the <see cref="T:System.Configuration.SettingsProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.SettingsProperty.Name%2A> cannot be an empty string or `null`. If the <xref:System.Configuration.SettingsProperty> does not exist in the data provider, nothing can be returned.  
-  
+The <xref:System.Configuration.SettingsProperty.Name%2A> cannot be an empty string or `null`. If the <xref:System.Configuration.SettingsProperty> does not exist in the data provider, nothing can be returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,10 +255,10 @@
         <value>A <see cref="T:System.Configuration.SettingsSerializeAs" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.SettingsSerializeAs> object is an enumeration used as the serialization scheme to store application settings.  
-  
+The <xref:System.Configuration.SettingsSerializeAs> object is an enumeration used as the serialization scheme to store application settings.  
+ 
  ]]></format>
         </remarks>
       </Docs>

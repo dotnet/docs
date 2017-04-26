@@ -19,22 +19,22 @@
     <summary>Provides methods for manipulating the Clipboard.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Items moved or copied to the Clipboard persist even after the application is shut down.  
-  
- Data on the Clipboard can be in any data format, also called a Clipboard format. For a list of predefined formats to use with the Clipboard, see <xref:System.Windows.Forms.DataFormats>. When an item is moved or copied to the Clipboard, items in other formats are cleared. To make other formats persist, use <xref:Microsoft.VisualBasic.VariantType>, which copies everything existing on the current Clipboard, including items pasted from other applications. Place data on the Clipboard in multiple formats to maximize the possibility that a target application, whose format requirements you might not know, can successfully retrieve the data.  
-  
- Because all Windows applications share the system Clipboard, the contents may change when you switch to another application.  
-  
- A class must be serializable for it to be put on the Clipboard. See [Serialization](http://msdn.microsoft.com/library/f7570c09-7db5-44f2-983a-e8859caeb0d5) for more information.  
-  
- When accessing the Clipboard remotely, a <xref:System.Threading.ThreadStateException> is thrown unless the accessing thread operates in STA (single-threaded apartment) mode. To resolve this issue, set the `ThreadApartmentState` to `STA`. For more information, see <xref:System.STAThreadAttribute>.  
-  
- For more information, see [Storing Data to and Reading from the Clipboard](~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md).  
-  
+Items moved or copied to the Clipboard persist even after the application is shut down.  
+ 
+Data on the Clipboard can be in any data format, also called a Clipboard format. For a list of predefined formats to use with the Clipboard, see <xref:System.Windows.Forms.DataFormats>. When an item is moved or copied to the Clipboard, items in other formats are cleared. To make other formats persist, use <xref:Microsoft.VisualBasic.VariantType>, which copies everything existing on the current Clipboard, including items pasted from other applications. Place data on the Clipboard in multiple formats to maximize the possibility that a target application, whose format requirements you might not know, can successfully retrieve the data.  
+ 
+Because all Windows applications share the system Clipboard, the contents may change when you switch to another application.  
+ 
+A class must be serializable for it to be put on the Clipboard. See [Serialization](http://msdn.microsoft.com/library/f7570c09-7db5-44f2-983a-e8859caeb0d5) for more information.  
+ 
+When accessing the Clipboard remotely, a <xref:System.Threading.ThreadStateException> is thrown unless the accessing thread operates in STA (single-threaded apartment) mode. To resolve this issue, set the `ThreadApartmentState` to `STA`. For more information, see <xref:System.STAThreadAttribute>.  
+ 
+For more information, see [Storing Data to and Reading from the Clipboard](~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md).  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -44,16 +44,16 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example reads text from the Clipboard into the string `textOnClipboard`.  
-  
- [!code-vb[VbVbcnMyClipboard#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#6)]  
-  
- This example will fail if there is no text on the Clipboard.  
-  
+This example reads text from the Clipboard into the string `textOnClipboard`.  
+ 
+[!code-vb[VbVbcnMyClipboard#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#6)]  
+ 
+This example will fail if there is no text on the Clipboard.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,12 +75,12 @@
         <summary>Clears the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Permissions.UIPermission> class controls access to the Clipboard, and the associated <xref:System.Security.Permissions.UIPermissionClipboard> enumeration value indicates the level of access. For more information, see [Additional Security Considerations in Windows Forms](~/docs/framework/winforms/additional-security-considerations-in-windows-forms.md).  
-  
+The <xref:System.Security.Permissions.UIPermission> class controls access to the Clipboard, and the associated <xref:System.Security.Permissions.UIPermissionClipboard> enumeration value indicates the level of access. For more information, see [Additional Security Considerations in Windows Forms](~/docs/framework/winforms/additional-security-considerations-in-windows-forms.md).  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -90,18 +90,18 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example clears the Clipboard.  
-  
+This example clears the Clipboard.  
+ 
 ```  
 My.Computer.Clipboard.Clear()  
 ```  
-  
- This removes all data from the Clipboard.  
-  
+ 
+This removes all data from the Clipboard.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -127,11 +127,11 @@ My.Computer.Clipboard.Clear()
           <see langword="True" /> if audio data is stored on the Clipboard; otherwise <see langword="False" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -141,14 +141,14 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example determines whether the Clipboard contains audio data and displays the result.  
-  
- [!code-vb[VbRefClipbd#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#10)]  
-  
+This example determines whether the Clipboard contains audio data and displays the result.  
+ 
+[!code-vb[VbRefClipbd#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -178,12 +178,12 @@ My.Computer.Clipboard.Clear()
           <see langword="True" /> if data in the specified custom format is stored on the Clipboard; otherwise <see langword="False" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you have placed custom formatted data on the Clipboard, this method allows you to check the Clipboard for data in that format.  
-  
+If you have placed custom formatted data on the Clipboard, this method allows you to check the Clipboard for data in that format.  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -193,16 +193,16 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example checks for data in the custom format `specialFormat`.  
-  
- [!code-vb[VbRefClipbd#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#6)]  
-  
- Replace `specialFormat` with the name of the custom format you wish to check.  
-  
+This example checks for data in the custom format `specialFormat`.  
+ 
+[!code-vb[VbRefClipbd#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#6)]  
+ 
+Replace `specialFormat` with the name of the custom format you wish to check.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -228,12 +228,12 @@ My.Computer.Clipboard.Clear()
           <see langword="True" /> if a file drop list is stored on the Clipboard; otherwise <see langword="False" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A file drop list is a collection of strings containing path information for files.  
-  
+A file drop list is a collection of strings containing path information for files.  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -243,16 +243,16 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example determines if there is a file drop list on the Clipboard and adds the list to the `ListBox``lstFiles` if they exist.  
-  
- [!code-vb[VbRefClipbd#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#12)]  
-  
- This code will create an exception if there is no `ListBox` named `lstFiles`.  
-  
+This example determines if there is a file drop list on the Clipboard and adds the list to the `ListBox``lstFiles` if they exist.  
+ 
+[!code-vb[VbRefClipbd#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#12)]  
+ 
+This code will create an exception if there is no `ListBox` named `lstFiles`.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -278,11 +278,11 @@ My.Computer.Clipboard.Clear()
           <see langword="True" /> if an image is stored on the Clipboard; otherwise <see langword="False" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -292,16 +292,16 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example checks to see if there is an image on the Clipboard and, if so, gets the image and adds it to `PictureBox1`.  
-  
- [!code-vb[VbRefClipbd#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#8)]  
-  
- This example depends on the existence of a `PictureBox` named `PictureBox1`.  
-  
+This example checks to see if there is an image on the Clipboard and, if so, gets the image and adds it to `PictureBox1`.  
+ 
+[!code-vb[VbRefClipbd#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#8)]  
+ 
+This example depends on the existence of a `PictureBox` named `PictureBox1`.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -327,12 +327,12 @@ My.Computer.Clipboard.Clear()
           <see langword="True" /> if the Clipboard contains text; otherwise <see langword="False" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
-  
+Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -342,14 +342,14 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example determines if HTML text is stored on the Clipboard and reads from the Clipboard if it does.  
-  
- [!code-vb[VbRefClipbd#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#5)]  
-  
+This example determines if HTML text is stored on the Clipboard and reads from the Clipboard if it does.  
+ 
+[!code-vb[VbRefClipbd#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -379,12 +379,12 @@ My.Computer.Clipboard.Clear()
           <see langword="True" /> if the Clipboard contains text; otherwise <see langword="False" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
-  
+Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -394,14 +394,14 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example determines if HTML text is stored on the Clipboard and reads from the Clipboard if it does.  
-  
- [!code-vb[VbRefClipbd#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#5)]  
-  
+This example determines if HTML text is stored on the Clipboard and reads from the Clipboard if it does.  
+ 
+[!code-vb[VbRefClipbd#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -426,11 +426,11 @@ My.Computer.Clipboard.Clear()
         <returns>A <see cref="T:System.IO.Stream" /> object containing audio data or <see langword="Nothing" /> if the Clipboard does not contain any audio data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -440,14 +440,14 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example retrieves an audio stream from the Clipboard and plays it.  
-  
- [!code-vb[VbRefClipbd#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#11)]  
-  
+This example retrieves an audio stream from the Clipboard and plays it.  
+ 
+[!code-vb[VbRefClipbd#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#11)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -476,11 +476,11 @@ My.Computer.Clipboard.Clear()
         <returns>An <see langword="Object" /> representing the Clipboard data or <see langword="Nothing" /> if the Clipboard does not contain any data that is in the specified format or can be converted to that format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -490,16 +490,16 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example reads data in the format `specialformat` from the Clipboard and writes it to file.  
-  
- [!code-vb[VbRefClipbd#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#7)]  
-  
- Replace `specialformat` with the custom data format you wish to retrieve.  
-  
+This example reads data in the format `specialformat` from the Clipboard and writes it to file.  
+ 
+[!code-vb[VbRefClipbd#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#7)]  
+ 
+Replace `specialformat` with the custom data format you wish to retrieve.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -529,12 +529,12 @@ My.Computer.Clipboard.Clear()
         <returns>An <see cref="T:System.Windows.Forms.IDataObject" /> object that represents the data currently on the Clipboard, or <see langword="Nothing" /> if there is no data on the Clipboard.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
-  
+This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -544,16 +544,16 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example reads data from the Clipboard in the form of an <xref:System.Windows.Forms.IDataObject> and then writes it to a file.  
-  
- [!code-vb[VbRefClipbd#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#1)]  
-  
- Replace `C:\mylogfile` with the name of the file to which you want to write.  
-  
+This example reads data from the Clipboard in the form of an <xref:System.Windows.Forms.IDataObject> and then writes it to a file.  
+ 
+[!code-vb[VbRefClipbd#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#1)]  
+ 
+Replace `C:\mylogfile` with the name of the file to which you want to write.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -578,14 +578,14 @@ My.Computer.Clipboard.Clear()
         <returns>A <see cref="T:System.Collections.Specialized.StringCollection" /> containing file names or <see langword="Nothing" /> if the Clipboard does not contain any data that is in the <see cref="F:System.Windows.Forms.DataFormats.FileDrop" /> format or can be converted to that format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is available only for non-server applications.  
-  
- A file drop list is a collection of strings containing path information for files.  
-  
+This method is available only for non-server applications.  
+ 
+A file drop list is a collection of strings containing path information for files.  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -595,16 +595,16 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example determines if there is a file drop list on the Clipboard and adds the list to the `ListBox``lstFiles` if they exist.  
-  
- [!code-vb[VbRefClipbd#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#9)]  
-  
- This code creates an exception if there is no `ListBox` named `lstFiles`.  
-  
+This example determines if there is a file drop list on the Clipboard and adds the list to the `ListBox``lstFiles` if they exist.  
+ 
+[!code-vb[VbRefClipbd#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#9)]  
+ 
+This code creates an exception if there is no `ListBox` named `lstFiles`.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -629,11 +629,11 @@ My.Computer.Clipboard.Clear()
         <returns>An <see cref="T:System.Drawing.Image" /> representing the Clipboard image data or <see langword="Nothing" /> if the Clipboard does not contain any data that is in the <see cref="F:System.Windows.Forms.DataFormats.Bitmap" /> format or can be converted to that format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -643,16 +643,16 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example checks to see if there is an image on the Clipboard before retrieving it and assigning it to `PictureBox1`.  
-  
- [!code-vb[VbRefClipbd#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#4)]  
-  
- For this example to function correctly, there must be a `PictureBox` named `PictureBox1` on your form.  
-  
+This example checks to see if there is an image on the Clipboard before retrieving it and assigning it to `PictureBox1`.  
+ 
+[!code-vb[VbRefClipbd#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#4)]  
+ 
+For this example to function correctly, there must be a `PictureBox` named `PictureBox1` on your form.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -677,12 +677,12 @@ My.Computer.Clipboard.Clear()
         <returns>The Clipboard text data or an empty string if the Clipboard does not contain data in the <see cref="F:System.Windows.Forms.DataFormats.Text" /> or <see cref="F:System.Windows.Forms.TextDataFormat.UnicodeText" /> format, depending on the operating system.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
-  
+Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -692,16 +692,16 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example reads text from the Clipboard into the string `textOnClipboard`.  
-  
- [!code-vb[VbVbcnMyClipboard#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#6)]  
-  
- This example fails if there is no text on the Clipboard.  
-  
+This example reads text from the Clipboard into the string `textOnClipboard`.  
+ 
+[!code-vb[VbVbcnMyClipboard#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#6)]  
+ 
+This example fails if there is no text on the Clipboard.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -730,12 +730,12 @@ My.Computer.Clipboard.Clear()
         <returns>The Clipboard text data or an empty string if the Clipboard does not contain data in the specified format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
-  
+Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -745,16 +745,16 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example reads text from the Clipboard into the string `textOnClipboard`.  
-  
- [!code-vb[VbVbcnMyClipboard#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#6)]  
-  
- This example fails if there is no text on the Clipboard.  
-  
+This example reads text from the Clipboard into the string `textOnClipboard`.  
+ 
+[!code-vb[VbVbcnMyClipboard#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#6)]  
+ 
+This example fails if there is no text on the Clipboard.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -782,14 +782,14 @@ My.Computer.Clipboard.Clear()
         <summary>Writes audio data to the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -799,16 +799,16 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example creates the byte array `musicReader`, reads the file `cool.wav` into it, and then writes it to the Clipboard.  
-  
- [!code-vb[VbRefClipbd#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#2)]  
-  
- Replace `cool.wav` with the name and path of the file you wish to read.  
-  
+This example creates the byte array `musicReader`, reads the file `cool.wav` into it, and then writes it to the Clipboard.  
+ 
+[!code-vb[VbRefClipbd#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#2)]  
+ 
+Replace `cool.wav` with the name and path of the file you wish to read.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -836,14 +836,14 @@ My.Computer.Clipboard.Clear()
         <summary>Writes audio data to the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -853,16 +853,16 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example creates the byte array `musicReader`, reads the file `cool.wav` into it, and then writes it to the Clipboard.  
-  
- [!code-vb[VbRefClipbd#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#2)]  
-  
- Replace `cool.wav` with the name and path of the file you wish to read.  
-  
+This example creates the byte array `musicReader`, reads the file `cool.wav` into it, and then writes it to the Clipboard.  
+ 
+[!code-vb[VbRefClipbd#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#2)]  
+ 
+Replace `cool.wav` with the name and path of the file you wish to read.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -891,14 +891,14 @@ My.Computer.Clipboard.Clear()
         <summary>Writes data in a custom format to the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -908,16 +908,16 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example writes the `DataObject``dataChunk` to the Clipboard in the custom format `specialFormat`.  
-  
- [!code-vb[VbVbcnMyClipboard#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#7)]  
-  
- This example depends on the existence of the custom data format `specialFormat`.  
-  
+This example writes the `DataObject``dataChunk` to the Clipboard in the custom format `specialFormat`.  
+ 
+[!code-vb[VbVbcnMyClipboard#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#7)]  
+ 
+This example depends on the existence of the custom data format `specialFormat`.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -950,15 +950,15 @@ My.Computer.Clipboard.Clear()
         <summary>Writes a <see cref="T:System.Windows.Forms.DataObject" /> to the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
-  
+This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+ 
 > [!IMPORTANT]
 >  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -968,16 +968,16 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example writes the data object `dataChunk` to the Clipboard.  
-  
- [!code-vb[VbVbcnMyClipboard#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#9)]  
-  
- This example depends on the existence of the data object `dataChunk`.  
-  
+This example writes the data object `dataChunk` to the Clipboard.  
+ 
+[!code-vb[VbVbcnMyClipboard#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#9)]  
+ 
+This example depends on the existence of the data object `dataChunk`.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -1005,15 +1005,15 @@ My.Computer.Clipboard.Clear()
         <summary>Writes a collection of strings representing file paths to the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A file drop list is a collection of strings representing file names.  
-  
+A file drop list is a collection of strings representing file names.  
+ 
 > [!IMPORTANT]
 >  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -1023,14 +1023,14 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example gets the collection of file names from **MyDocuments**, converts it to a file drop list, and writes it to the Clipboard.  
-  
- [!code-vb[VbRefClipbd#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#3)]  
-  
+This example gets the collection of file names from **MyDocuments**, converts it to a file drop list, and writes it to the Clipboard.  
+ 
+[!code-vb[VbRefClipbd#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1056,14 +1056,14 @@ My.Computer.Clipboard.Clear()
         <summary>Writes an image to the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -1073,16 +1073,16 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example writes the image `coolPicture` to the Clipboard.  
-  
- [!code-vb[VbVbcnMyClipboard#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#8)]  
-  
- This example depends on the existence of the image `coolPicture`.  
-  
+This example writes the image `coolPicture` to the Clipboard.  
+ 
+[!code-vb[VbVbcnMyClipboard#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#8)]  
+ 
+This example depends on the existence of the image `coolPicture`.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">
@@ -1110,17 +1110,17 @@ My.Computer.Clipboard.Clear()
         <summary>Writes text to the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
-  
- Previous Clipboard formats are not preserved.  
-  
+Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+ 
+Previous Clipboard formats are not preserved.  
+ 
 > [!IMPORTANT]
 >  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -1130,14 +1130,14 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example writes the string `This is a test string.` to the Clipboard.  
-  
- [!code-vb[VbVbcnMyClipboard#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#1)]  
-  
+This example writes the string `This is a test string.` to the Clipboard.  
+ 
+[!code-vb[VbVbcnMyClipboard#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1172,17 +1172,17 @@ My.Computer.Clipboard.Clear()
         <summary>Writes text to the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
-  
- Previous Clipboard formats are not preserved.  
-  
+Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+ 
+Previous Clipboard formats are not preserved.  
+ 
 > [!IMPORTANT]
 >  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |------------------|---------------|  
 |Windows Application|**Yes**|  
@@ -1192,14 +1192,14 @@ My.Computer.Clipboard.Clear()
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example writes the string `This is a test string.` to the Clipboard.  
-  
- [!code-vb[VbVbcnMyClipboard#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#1)]  
-  
+This example writes the string `This is a test string.` to the Clipboard.  
+ 
+[!code-vb[VbVbcnMyClipboard#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

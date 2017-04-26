@@ -19,26 +19,26 @@
     <summary>Represents a collection of application-specific <see cref="T:System.IO.Packaging.Package" /> instances used in combination with <see cref="T:System.IO.Packaging.PackWebRequest" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Packaging.PackageStore> defines a reference collections of package that are open and active in the application.  Packages added to the <xref:System.IO.Packaging.PackageStore> are accessed is by their key URI value.  The <xref:System.IO.Packaging.PackageStore> supports three common uses:  
-  
+The <xref:System.IO.Packaging.PackageStore> defines a reference collections of package that are open and active in the application.  Packages added to the <xref:System.IO.Packaging.PackageStore> are accessed is by their key URI value.  The <xref:System.IO.Packaging.PackageStore> supports three common uses:  
+ 
 1.  Accessing <xref:System.IO.Packaging.PackagePart> data through <xref:System.IO.Packaging.PackWebRequest>.  
-  
+ 
 2.  The application obtaining an instance of a <xref:System.IO.Packaging.Package> given the package's URI.  
-  
+ 
 3.  Accessing packages that are created and stored in a <xref:System.IO.MemoryStream>.  
-  
- To improve performance and minimize the overhead of repeated file open/close operations, the <xref:System.IO.Packaging.PackageStore> is used to manage instances of packages accessed by <xref:System.IO.Packaging.PackWebRequest> and directly by the application.  When accessing data in a package, the <xref:System.IO.Packaging.Package> address of a requested <xref:System.IO.Packaging.PackagePart> <xref:System.IO.Packaging.PackagePart.Uri%2A> is first checked to see if the package is already defined and open in the <xref:System.IO.Packaging.PackageStore>.  If the package is defined as open in the <xref:System.IO.Packaging.PackageStore>, requested parts can be accessed directly without repeatedly opening and closing the package for each  request.  
-  
- If your application opens a package with <xref:System.IO.Packaging.Package.Open%2A?displayProperty=fullName>, <xref:System.IO.Packaging.PackageStore.AddPackage%2A> can be called to add the package to the <xref:System.IO.Packaging.PackageStore>.  <xref:System.IO.Packaging.PackageStore.RemovePackage%2A> should later be called to remove the package from the <xref:System.IO.Packaging.PackageStore> prior to calling <xref:System.IO.Packaging.Package.Close%2A?displayProperty=fullName>.  
-  
- XPS packages opened with an <xref:System.Windows.Xps.Packaging.XpsDocument.%23ctor%2A> constructor are automatically added and removed from the <xref:System.IO.Packaging.PackageStore> when the document is created and disposed.  (You do not need to call <xref:System.IO.Packaging.PackageStore.AddPackage%2A> or <xref:System.IO.Packaging.PackageStore.RemovePackage%2A> separately for XPS packages opened with <xref:System.Windows.Xps.Packaging.XpsDocument.%23ctor%2A> constructors.)  
-  
- The file I/O permissions of a package accessed through the <xref:System.IO.Packaging.PackageStore> remains the same as the I/O permissions set on the package when it is opened.  The <xref:System.IO.Packaging.PackageStore> only provides references to the packages that have been added the store.  It is up to the application to correctly open, update, and close each package.  
-  
- Packages added to the <xref:System.IO.Packaging.PackageStore> can be accessed in multithreaded environments when they are used in combination with a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] parser such as <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=fullName>.  When operating in a multithreaded environment, the application must lock the package before access.  
-  
+ 
+To improve performance and minimize the overhead of repeated file open/close operations, the <xref:System.IO.Packaging.PackageStore> is used to manage instances of packages accessed by <xref:System.IO.Packaging.PackWebRequest> and directly by the application.  When accessing data in a package, the <xref:System.IO.Packaging.Package> address of a requested <xref:System.IO.Packaging.PackagePart> <xref:System.IO.Packaging.PackagePart.Uri%2A> is first checked to see if the package is already defined and open in the <xref:System.IO.Packaging.PackageStore>.  If the package is defined as open in the <xref:System.IO.Packaging.PackageStore>, requested parts can be accessed directly without repeatedly opening and closing the package for each  request.  
+ 
+If your application opens a package with <xref:System.IO.Packaging.Package.Open%2A?displayProperty=fullName>, <xref:System.IO.Packaging.PackageStore.AddPackage%2A> can be called to add the package to the <xref:System.IO.Packaging.PackageStore>.  <xref:System.IO.Packaging.PackageStore.RemovePackage%2A> should later be called to remove the package from the <xref:System.IO.Packaging.PackageStore> prior to calling <xref:System.IO.Packaging.Package.Close%2A?displayProperty=fullName>.  
+ 
+XPS packages opened with an <xref:System.Windows.Xps.Packaging.XpsDocument.%23ctor%2A> constructor are automatically added and removed from the <xref:System.IO.Packaging.PackageStore> when the document is created and disposed.  (You do not need to call <xref:System.IO.Packaging.PackageStore.AddPackage%2A> or <xref:System.IO.Packaging.PackageStore.RemovePackage%2A> separately for XPS packages opened with <xref:System.Windows.Xps.Packaging.XpsDocument.%23ctor%2A> constructors.)  
+ 
+The file I/O permissions of a package accessed through the <xref:System.IO.Packaging.PackageStore> remains the same as the I/O permissions set on the package when it is opened.  The <xref:System.IO.Packaging.PackageStore> only provides references to the packages that have been added the store.  It is up to the application to correctly open, update, and close each package.  
+ 
+Packages added to the <xref:System.IO.Packaging.PackageStore> can be accessed in multithreaded environments when they are used in combination with a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] parser such as <xref:System.Windows.Markup.XamlReader.Load%2A?displayProperty=fullName>.  When operating in a multithreaded environment, the application must lock the package before access.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,24 +65,24 @@
         <summary>Adds a <see cref="T:System.IO.Packaging.Package" /> to the store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `packageUri` defines the package's key URI that is compared when you call <xref:System.IO.Packaging.PackWebRequest>.  
+`packageUri` defines the package's key URI that is compared when you call <xref:System.IO.Packaging.PackWebRequest>.  
+ 
+If the `packageUri` matches the <xref:System.IO.Packaging.PackagePart.Uri%2A> for a <xref:System.IO.Packaging.PackagePart> in a <xref:System.IO.Packaging.PackWebRequest> call, the package defined in the <xref:System.IO.Packaging.PackageStore> is used to access the requested part.  
+ 
+If the `packageUri` does not match the <xref:System.IO.Packaging.PackagePart.Uri%2A> for a <xref:System.IO.Packaging.PackagePart> in a <xref:System.IO.Packaging.PackWebRequest> call, the package with the specified URI is opened to access the requested part.  
+ 
+**Security Note** This method demands <xref:System.Security.Permissions.EnvironmentPermission> for all custom <xref:System.IO.Packaging.Package> (non-<xref:System.IO.Packaging.ZipPackage>) types.  
+ 
   
- If the `packageUri` matches the <xref:System.IO.Packaging.PackagePart.Uri%2A> for a <xref:System.IO.Packaging.PackagePart> in a <xref:System.IO.Packaging.PackWebRequest> call, the package defined in the <xref:System.IO.Packaging.PackageStore> is used to access the requested part.  
-  
- If the `packageUri` does not match the <xref:System.IO.Packaging.PackagePart.Uri%2A> for a <xref:System.IO.Packaging.PackagePart> in a <xref:System.IO.Packaging.PackWebRequest> call, the package with the specified URI is opened to access the requested part.  
-  
- **Security Note** This method demands <xref:System.Security.Permissions.EnvironmentPermission> for all custom <xref:System.IO.Packaging.Package> (non-<xref:System.IO.Packaging.ZipPackage>) types.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.IO.Packaging.PackageStore.AddPackage%2A> method.  
-  
- [!code-csharp[RightsManagedPackageViewer#RmPkgViewDecrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackageViewer/CSharp/Window1.xaml.cs#rmpkgviewdecrypt)]
- [!code-vb[RightsManagedPackageViewer#RmPkgViewDecrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackageViewer/visualbasic/window1.xaml.vb#rmpkgviewdecrypt)]  
-  
+The following example shows how to use the <xref:System.IO.Packaging.PackageStore.AddPackage%2A> method.  
+ 
+[!code-csharp[RightsManagedPackageViewer#RmPkgViewDecrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackageViewer/CSharp/Window1.xaml.cs#rmpkgviewdecrypt)]
+[!code-vb[RightsManagedPackageViewer#RmPkgViewDecrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackageViewer/visualbasic/window1.xaml.vb#rmpkgviewdecrypt)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -113,20 +113,20 @@
         <returns>The package with a specified <paramref name="packageUri" />; or <see langword="null" />, if a package with the specified <paramref name="packageUri" /> is not in the store.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `packageUri` is matched to the URIs specified in the <xref:System.IO.Packaging.PackageStore.AddPackage%2A> method call.  
+`packageUri` is matched to the URIs specified in the <xref:System.IO.Packaging.PackageStore.AddPackage%2A> method call.  
+ 
+**Security Note** This method demands <xref:System.Security.Permissions.EnvironmentPermission> for all custom <xref:System.IO.Packaging.Package> (non-<xref:System.IO.Packaging.ZipPackage>) types.  
+ 
   
- **Security Note** This method demands <xref:System.Security.Permissions.EnvironmentPermission> for all custom <xref:System.IO.Packaging.Package> (non-<xref:System.IO.Packaging.ZipPackage>) types.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.IO.Packaging.PackageStore.GetPackage%2A> method.  
-  
- [!code-csharp[RightsManagedPackageViewer#RmPkgViewOpenDoc](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackageViewer/CSharp/Window1.xaml.cs#rmpkgviewopendoc)]
- [!code-vb[RightsManagedPackageViewer#RmPkgViewOpenDoc](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackageViewer/visualbasic/window1.xaml.vb#rmpkgviewopendoc)]  
-  
+The following example shows how to use the <xref:System.IO.Packaging.PackageStore.GetPackage%2A> method.  
+ 
+[!code-csharp[RightsManagedPackageViewer#RmPkgViewOpenDoc](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackageViewer/CSharp/Window1.xaml.cs#rmpkgviewopendoc)]
+[!code-vb[RightsManagedPackageViewer#RmPkgViewOpenDoc](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackageViewer/visualbasic/window1.xaml.vb#rmpkgviewopendoc)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -155,20 +155,20 @@
         <summary>Removes the <see cref="T:System.IO.Packaging.Package" /> with a specified [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] from the store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `packageUri` is matched to the URIs specified in the <xref:System.IO.Packaging.PackageStore.AddPackage%2A> method call.  
+`packageUri` is matched to the URIs specified in the <xref:System.IO.Packaging.PackageStore.AddPackage%2A> method call.  
+ 
+**Security Note** This method demands <xref:System.Security.Permissions.EnvironmentPermission> for all custom <xref:System.IO.Packaging.Package> (non-<xref:System.IO.Packaging.ZipPackage>) types.  
+ 
   
- **Security Note** This method demands <xref:System.Security.Permissions.EnvironmentPermission> for all custom <xref:System.IO.Packaging.Package> (non-<xref:System.IO.Packaging.ZipPackage>) types.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.IO.Packaging.PackageStore.RemovePackage%2A> method.  
-  
- [!code-csharp[RightsManagedPackageViewer#RmPkgViewCloseDoc](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackageViewer/CSharp/Window1.xaml.cs#rmpkgviewclosedoc)]
- [!code-vb[RightsManagedPackageViewer#RmPkgViewCloseDoc](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackageViewer/visualbasic/window1.xaml.vb#rmpkgviewclosedoc)]  
-  
+The following example shows how to use the <xref:System.IO.Packaging.PackageStore.RemovePackage%2A> method.  
+ 
+[!code-csharp[RightsManagedPackageViewer#RmPkgViewCloseDoc](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackageViewer/CSharp/Window1.xaml.cs#rmpkgviewclosedoc)]
+[!code-vb[RightsManagedPackageViewer#RmPkgViewCloseDoc](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackageViewer/visualbasic/window1.xaml.vb#rmpkgviewclosedoc)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

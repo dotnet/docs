@@ -29,12 +29,12 @@
     <summary>Used to represent the schema information for a Tool, a Custom Build Rule, a PropertyPage, and so on.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically represented on disk as XAML, only one instance of this class is maintained per XAML file per project engine (solution).  
-  
- If you manually instantiate this class, call <xref:Microsoft.Build.Framework.XamlTypes.Rule.BeginInit%2A> before you set the first property of the object and <xref:Microsoft.Build.Framework.XamlTypes.Rule.EndInit%2A> after you set the last property.  
-  
+Typically represented on disk as XAML, only one instance of this class is maintained per XAML file per project engine (solution).  
+ 
+If you manually instantiate this class, call <xref:Microsoft.Build.Framework.XamlTypes.Rule.BeginInit%2A> before you set the first property of the object and <xref:Microsoft.Build.Framework.XamlTypes.Rule.EndInit%2A> after you set the last property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,10 +71,10 @@
         <value>Returns a semicolon-separated list of additional inputs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional.  
-  
+This field is optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
         <value>Returns the list of properties.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional. The field returns only the categories that were explicitly defined and that do not contain any auto-generated categories. When a <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty> that is contained in this <xref:Microsoft.Build.Framework.XamlTypes.Rule> declares its category to be something that is not present in this list, then a <xref:Microsoft.Build.Framework.XamlTypes.Category> that has that name is auto-generated and added to the internal list of categories. That auto-generated category is not returned by this field.  
-  
+This field is optional. The field returns only the categories that were explicitly defined and that do not contain any auto-generated categories. When a <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty> that is contained in this <xref:Microsoft.Build.Framework.XamlTypes.Rule> declares its category to be something that is not present in this list, then a <xref:Microsoft.Build.Framework.XamlTypes.Category> that has that name is auto-generated and added to the internal list of categories. That auto-generated category is not returned by this field.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,10 +139,10 @@
         <value>Returns the command-line template.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional.  
-  
+This field is optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@
         <value>Returns the data source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You do not have to specify this field if all individual properties have data sources defined locally.  
-  
+You do not have to specify this field if all individual properties have data sources defined locally.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,10 +194,10 @@
         <value>Returns the description.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional and is culture-sensitive.  
-  
+This field is optional and is culture-sensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,12 +224,12 @@
         <value>Returns the name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional and is culture-sensitive.  
-  
- When this property is not set, it is assigned the same value as the <xref:Microsoft.Build.Framework.XamlTypes.Rule.Name%2A> property (and, therefore, would not be localized).  
-  
+This field is optional and is culture-sensitive.  
+ 
+When this property is not set, it is assigned the same value as the <xref:Microsoft.Build.Framework.XamlTypes.Rule.Name%2A> property (and, therefore, would not be localized).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,10 +287,10 @@
         <value>Returns the message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional.  
-  
+This field is optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,10 +312,10 @@
         <value>Returns the file name extension.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional.  
-  
+This field is optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,12 +338,12 @@
         <returns>Returns a dictionary whose keys are the <see cref="T:Microsoft.Build.Framework.XamlTypes.Category" /> names and whose values are the list of properties in that category. The returned value is never <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned list may contain auto-generated categories. If a <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty> (or its derived classes) refer to a property that is not specified, then an new Category is generated for it. If no category is specified for the property, then the property is put in the "General" category.  
-  
- The list of categories is exactly as specified in the XAML file. The auto-generated categories come after the specified categories but in no strict order.  
-  
+The returned list may contain auto-generated categories. If a <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty> (or its derived classes) refer to a property that is not specified, then an new Category is generated for it. If no category is specified for the property, then the property is put in the "General" category.  
+ 
+The list of categories is exactly as specified in the XAML file. The auto-generated categories come after the specified categories but in no strict order.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -465,10 +465,10 @@
         <value>Returns the Help information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Can be used to specify a Help URL. This field is optional and is culture-sensitive.  
-  
+Can be used to specify a Help URL. This field is optional and is culture-sensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -508,10 +508,10 @@
         <value>Returns the name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is mandatory and culture-invariant. The value of this field cannot be set to the empty string.  
-  
+This field is mandatory and culture-invariant. The value of this field cannot be set to the empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -551,10 +551,10 @@
         <value>Returns the outputs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional.  
-  
+This field is optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -594,12 +594,12 @@
         <value>Returns the UI template.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value used to set this field can be anything as long as it is recognized by the intended rendering template.  
-  
- This field is required only if this Rule is meant to be displayed as a property page.  
-  
+The value used to set this field can be anything as long as it is recognized by the intended rendering template.  
+ 
+This field is required only if this Rule is meant to be displayed as a property page.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -621,10 +621,10 @@
         <value>Returns the list of properties.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- At least one property must be specified. The list returned by this property should not be modified.  
-  
+At least one property must be specified. The list returned by this property should not be modified.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -664,12 +664,12 @@
         <value>Returns the token separator.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value specified here is overridden by the value specified by the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.Separator%2A> of the child <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty>.  
-  
- This field is optional and culture-invariant.  
-  
+The value specified here is overridden by the value specified by the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.Separator%2A> of the child <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty>.  
+ 
+This field is optional and culture-invariant.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -691,12 +691,12 @@
         <value>Returns <see langword="true" /> if command-line categories are hidden; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional.  
-  
- The default value is `true`.  
-  
+This field is optional.  
+ 
+The default value is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -718,10 +718,10 @@
         <value>Returns <see langword="true" /> if multiple files can be batched; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional.  
-  
+This field is optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -743,12 +743,12 @@
         <value>Returns the prefix.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value specified can be overridden by the value specified by the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.SwitchPrefix%2A> of a child <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty>.  
-  
- This field is optional and culture-invariant.  
-  
+The value specified can be overridden by the value specified by the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.SwitchPrefix%2A> of a child <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty>.  
+ 
+This field is optional and culture-invariant.  
+ 
  ]]></format>
         </remarks>
       </Docs>

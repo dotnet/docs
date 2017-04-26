@@ -14,27 +14,27 @@
     <summary>Indicates that there was an error downloading either the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] manifests or the deployment's files to the client computer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Deployment.Application.DeploymentDownloadException> can indicate that a number of problems occurred when the user tried to download a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application update:  
-  
+A <xref:System.Deployment.Application.DeploymentDownloadException> can indicate that a number of problems occurred when the user tried to download a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application update:  
+ 
 -   The client's computer's network connection is down.  
-  
+ 
 -   The Web server, FTP server, or file share hosting the update is unavailable.  
-  
+ 
 -   One or more of the files in the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment was not found.  
+ 
+To obtain detailed error information about an exception, consult the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] error log. For more information, see [Troubleshooting ClickOnce Deployments](http://msdn.microsoft.com/library/58e90012-f68b-4852-8ae9-58e361cbcc32).  
+ 
   
- To obtain detailed error information about an exception, consult the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] error log. For more information, see [Troubleshooting ClickOnce Deployments](http://msdn.microsoft.com/library/58e90012-f68b-4852-8ae9-58e361cbcc32).  
-  
-   
-  
+ 
 ## Examples  
- The following code example installs an application update synchronously, and reports to the user if there was a problem downloading either the manifests or the deployment's files.  
-  
- [!code-cpp[ClickOnceAPI#5](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#5)]
- [!code-csharp[ClickOnceAPI#5](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#5)]
- [!code-vb[ClickOnceAPI#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#5)]  
-  
+The following code example installs an application update synchronously, and reports to the user if there was a problem downloading either the manifests or the deployment's files.  
+ 
+[!code-cpp[ClickOnceAPI#5](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#5)]
+[!code-csharp[ClickOnceAPI#5](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#5)]
+[!code-vb[ClickOnceAPI#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

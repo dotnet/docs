@@ -14,10 +14,10 @@
     <summary>Used to perform late-bound operations on open properties.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used when you implement a custom data service provider for [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].  
-  
+This class is used when you implement a custom data service provider for [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <returns>The result of the arithmetic operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Services.Providers.OpenTypeMethods.Add%2A> method adds two values without overflow checking.  
-  
+The <xref:System.Data.Services.Providers.OpenTypeMethods.Add%2A> method adds two values without overflow checking.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,10 +146,10 @@
         <returns>The converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Services.Providers.OpenTypeMethods.Convert%2A> method is used to perform a type cast on the specified `value`.  
-  
+The <xref:System.Data.Services.Providers.OpenTypeMethods.Convert%2A> method is used to perform a type cast on the specified `value`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,10 +223,10 @@
         <returns>Returns <see langword="true" /> when <paramref name="targetString" /> ends with <paramref name="substring" />; otherwise returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An error is raised when the parameters are not strings.  
-  
+An error is raised when the parameters are not strings.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -394,10 +394,10 @@
         <returns>Returns the index of the location of <paramref name="substring" /> in the <paramref name="targetString" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Services.Providers.OpenTypeMethods.IndexOf%2A> method returns a null value when `substring` cannot be found in `targetString`.  
-  
+The <xref:System.Data.Services.Providers.OpenTypeMethods.IndexOf%2A> method returns a null value when `substring` cannot be found in `targetString`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,10 +423,10 @@
         <returns>The length of the string value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An error is raised when the supplied `value` is not of type <xref:System.String>.  
-  
+An error is raised when the supplied `value` is not of type <xref:System.String>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -570,10 +570,10 @@
         <returns>The product of the two values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Services.Providers.OpenTypeMethods.Multiply%2A> method multiplies two values without overflow checking.  
-  
+The <xref:System.Data.Services.Providers.OpenTypeMethods.Multiply%2A> method multiplies two values without overflow checking.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -787,10 +787,10 @@
         <returns>The substring.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Services.Providers.OpenTypeMethods.Substring%2A> method returns all characters from `startIndex` through the end of the `targetString`.  
-  
+The <xref:System.Data.Services.Providers.OpenTypeMethods.Substring%2A> method returns all characters from `startIndex` through the end of the `targetString`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -820,10 +820,10 @@
         <returns>The substring.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Services.Providers.OpenTypeMethods.Substring%2A> method returns the `length` number of characters from `startIndex` through the end of the `targetString`.  
-  
+The <xref:System.Data.Services.Providers.OpenTypeMethods.Substring%2A> method returns the `length` number of characters from `startIndex` through the end of the `targetString`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

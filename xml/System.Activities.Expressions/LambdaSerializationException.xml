@@ -14,10 +14,10 @@
     <summary>The exception that is thrown when a XAML serialization attempt is made on a <see cref="T:System.Activities.Expressions.LambdaValue`1" /> or <see cref="T:System.Activities.Expressions.LambdaReference`1" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Expressions.LambdaValue%601> and <xref:System.Activities.Expressions.LambdaReference%601> are used for lambda expressions specified in code and are not XAML serializable. If an attempt is made to serialize a workflow that contains a <xref:System.Activities.Expressions.LambdaValue%601> or <xref:System.Activities.Expressions.LambdaReference%601>, a <xref:System.Activities.Expressions.LambdaSerializationException> is thrown. If the containing workflow requires XAML serialization, use <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> or <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601>, or use <xref:System.Activities.Expressions.ExpressionServices> to convert the <xref:System.Activities.Expressions.LambdaValue%601> or <xref:System.Activities.Expressions.LambdaReference%601> to a serializable format.  
-  
+<xref:System.Activities.Expressions.LambdaValue%601> and <xref:System.Activities.Expressions.LambdaReference%601> are used for lambda expressions specified in code and are not XAML serializable. If an attempt is made to serialize a workflow that contains a <xref:System.Activities.Expressions.LambdaValue%601> or <xref:System.Activities.Expressions.LambdaReference%601>, a <xref:System.Activities.Expressions.LambdaSerializationException> is thrown. If the containing workflow requires XAML serialization, use <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> or <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601>, or use <xref:System.Activities.Expressions.ExpressionServices> to convert the <xref:System.Activities.Expressions.LambdaValue%601> or <xref:System.Activities.Expressions.LambdaReference%601> to a serializable format.  
+ 
  ]]></format>
     </remarks>
   </Docs>

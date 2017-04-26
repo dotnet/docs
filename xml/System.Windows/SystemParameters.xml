@@ -37,14 +37,14 @@
         <value>A multiplier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETBORDER. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETBORDER. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_Border"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.Border`}`"/>  
-  
+<*object property*="{ SystemParameters.Border`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -66,13 +66,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_BorderKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.BorderKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.BorderKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,14 +94,14 @@
         <value>A border width.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The metric is obtained from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+The metric is obtained from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_BorderWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.BorderWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.BorderWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,13 +123,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_BorderWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.BorderWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.BorderWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,14 +151,14 @@
         <value>The caption height.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_CaptionHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.CaptionHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.CaptionHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,13 +180,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_CaptionHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.CaptionHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.CaptionHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,14 +208,14 @@
         <value>The caption width.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Obtains the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Obtains the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_CaptionWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.CaptionWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.CaptionWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,13 +237,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_CaptionWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.CaptionWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.CaptionWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,14 +270,14 @@
         <value>The caret width.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETCARETWIDTH. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETCARETWIDTH. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_CaretWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.CaretWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.CaretWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,13 +299,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_CaretWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.CaretWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.CaretWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -332,13 +332,13 @@
         <value>A Boolean value; **true** if client area animation is enabled, **false** otherwise.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ControlAnimation"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ClientAreaAnimation`}`"/>  
-  
+<*object property*="{ SystemParameters.ClientAreaAnimation`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -360,13 +360,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ControlAnimationKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ClientAreaAnimationKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ClientAreaAnimationKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -394,14 +394,14 @@
           <see langword="true" /> for enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETCOMBOBOXANIMATION. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETCOMBOBOXANIMATION. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_ComboBoxAnimation"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ComboBoxAnimation`}`"/>  
-  
+<*object property*="{ SystemParameters.ComboBoxAnimation`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,13 +423,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ComboBoxAnimationKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ComboBoxAnimationKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ComboBoxAnimationKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -451,13 +451,13 @@
         <value>A pop-up animation value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ComboBoxPopupAnimation"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ComboBoxPopupAnimation`}`"/>  
-  
+<*object property*="{ SystemParameters.ComboBoxPopupAnimation`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -479,13 +479,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ComboBoxPopupAnimationKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ComboBoxPopupAnimationKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ComboBoxPopupAnimationKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -512,14 +512,14 @@
         <value>The cursor height.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYCURSOR. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYCURSOR. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_CursorHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.CursorHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.CursorHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -541,13 +541,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_CursorHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.CursorHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.CursorHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -575,14 +575,14 @@
           <see langword="true" /> if the shadow is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETCURSORSHADOW. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETCURSORSHADOW. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_CursorShadow"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.CursorShadow`}`"/>  
-  
+<*object property*="{ SystemParameters.CursorShadow`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -604,13 +604,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_CursorShadowKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.CursorShadowKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.CursorShadowKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -637,14 +637,14 @@
         <value>The cursor width.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXCURSOR. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXCURSOR. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_CursorWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.CursorWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.CursorWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -666,13 +666,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_CursorWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.CursorWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.CursorWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -700,14 +700,14 @@
           <see langword="true" /> if dragging of full windows is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETDRAGFULLWINDOWS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETDRAGFULLWINDOWS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_DragFullWindows"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.DragFullWindows`}`"/>  
-  
+<*object property*="{ SystemParameters.DragFullWindows`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -729,13 +729,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_DragFullWindowsKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.DragFullWindowsKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.DragFullWindowsKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -763,14 +763,14 @@
           <see langword="true" /> if the drop shadow effect is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETDROPSHADOW. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETDROPSHADOW. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_DropShadow"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.DropShadow`}`"/>  
-  
+<*object property*="{ SystemParameters.DropShadow`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -792,13 +792,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_DropShadowKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.DropShadowKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.DropShadowKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -825,14 +825,14 @@
         <value>The border height.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXFIXEDFRAME. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXFIXEDFRAME. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_FixedFrameHorizontalBorderHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.FixedFrameHorizontalBorderHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.FixedFrameHorizontalBorderHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -854,13 +854,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_FixedFrameHorizontalBorderHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.FixedFrameHorizontalBorderHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.FixedFrameHorizontalBorderHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -887,14 +887,14 @@
         <value>The border width.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYFIXEDFRAME. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYFIXEDFRAME. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_FixedFrameVerticalBorderWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.FixedFrameVerticalBorderWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.FixedFrameVerticalBorderWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -916,13 +916,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_FixedFrameVerticalBorderWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.FixedFrameVerticalBorderWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.FixedFrameVerticalBorderWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -950,14 +950,14 @@
           <see langword="true" /> if the flat menu appearance is set; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETFLATMENU. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETFLATMENU. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_FlatMenu"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.FlatMenu`}`"/>  
-  
+<*object property*="{ SystemParameters.FlatMenu`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -979,13 +979,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_FlatMenuKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.FlatMenuKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.FlatMenuKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1012,14 +1012,14 @@
         <value>The edge height.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETFOCUSBORDERHEIGHT. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETFOCUSBORDERHEIGHT. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_FocusBorderHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.FocusBorderHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.FocusBorderHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1041,13 +1041,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_FocusBorderHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.FocusBorderHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.FocusBorderHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1074,14 +1074,14 @@
         <value>The edge width.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETFOCUSBORDERWIDTH. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETFOCUSBORDERWIDTH. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_FocusBorderWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.FocusBorderWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.FocusBorderWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1103,13 +1103,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_FocusBorderWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.FocusBorderWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.FocusBorderWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1136,14 +1136,14 @@
         <value>The edge height.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXFOCUSBORDER. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXFOCUSBORDER. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_FocusHorizontalBorderHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.FocusHorizontalBorderHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.FocusHorizontalBorderHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1165,13 +1165,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_FocusHorizontalBorderHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.FocusHorizontalBorderHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.FocusHorizontalBorderHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1198,14 +1198,14 @@
         <value>The edge width.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYFOCUSBORDER. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYFOCUSBORDER. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_FocusVerticalBorderWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.FocusVerticalBorderWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.FocusVerticalBorderWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1227,13 +1227,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_FocusVerticalBorderWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.FocusVerticalBorderWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.FocusVerticalBorderWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1255,13 +1255,13 @@
         <value>The resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_FocusVisualStyleKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.FocusVisualStyleKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.FocusVisualStyleKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1288,14 +1288,14 @@
         <value>A flash count.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETFOREGROUNDFLASHCOUNT. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETFOREGROUNDFLASHCOUNT. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_ForegroundFlashCount"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ForegroundFlashCount`}`"/>  
-  
+<*object property*="{ SystemParameters.ForegroundFlashCount`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1317,13 +1317,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ForegroundFlashCountKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ForegroundFlashCountKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ForegroundFlashCountKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1350,14 +1350,14 @@
         <value>The height of the client area.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYFULLSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYFULLSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_FullPrimaryScreenHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.FullPrimaryScreenHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.FullPrimaryScreenHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1379,13 +1379,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_FullPrimaryScreenHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.FullPrimaryScreenHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.FullPrimaryScreenHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1412,14 +1412,14 @@
         <value>The width of the client area.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXFULLSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXFULLSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_FullPrimaryScreenWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.FullPrimaryScreenWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.FullPrimaryScreenWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -1444,13 +1444,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_FullPrimaryScreenWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.FullPrimaryScreenWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.FullPrimaryScreenWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1478,14 +1478,14 @@
           <see langword="true" /> if the gradient effect is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETGRADIENTCAPTIONS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETGRADIENTCAPTIONS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_GradientCaptions"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.GradientCaptions`}`"/>  
-  
+<*object property*="{ SystemParameters.GradientCaptions`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1507,13 +1507,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_GradientCaptionsKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.GradientCaptionsKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.GradientCaptionsKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1541,14 +1541,14 @@
           <see langword="true" /> if the HIGHCONTRASTON option is selected; otherwise,<see langword=" false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETHIGHCONTRAST, which references HCF_HIGHCONTRASTON. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp) and [HighContrast](http://msdn.microsoft.com/library/default.asp?url=/library/msaa/access_1wqa.asp).  
-  
+Maps to SPI_GETHIGHCONTRAST, which references HCF_HIGHCONTRASTON. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp) and [HighContrast](http://msdn.microsoft.com/library/default.asp?url=/library/msaa/access_1wqa.asp).  
+ 
 <a name="xamlAttributeUsage_HighContrast"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.HighContrast`}`"/>  
-  
+<*object property*="{ SystemParameters.HighContrast`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1570,13 +1570,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_HighContrastKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.HighContrastKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.HighContrastKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1603,14 +1603,14 @@
         <value>The width of the arrow bitmap.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXHSCROLL. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXHSCROLL. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_HorizontalScrollBarButtonWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.HorizontalScrollBarButtonWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.HorizontalScrollBarButtonWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1632,13 +1632,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_HorizontalScrollBarButtonWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.HorizontalScrollBarButtonWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.HorizontalScrollBarButtonWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1665,14 +1665,14 @@
         <value>The height of the scroll bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYHSCROLL. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYHSCROLL. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_HorizontalScrollBarHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.HorizontalScrollBarHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.HorizontalScrollBarHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1694,13 +1694,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_HorizontalScrollBarHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.HorizontalScrollBarHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.HorizontalScrollBarHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1727,14 +1727,14 @@
         <value>The width of the thumb.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXHTHUMB. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXHTHUMB. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_HorizontalScrollBarThumbWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.HorizontalScrollBarThumbWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.HorizontalScrollBarThumbWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1756,13 +1756,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_HorizontalScrollBarThumbWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.HorizontalScrollBarThumbWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.HorizontalScrollBarThumbWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1790,14 +1790,14 @@
           <see langword="true" /> if hot tracking is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETHOTTRACKING. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETHOTTRACKING. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_HotTracking"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.HotTracking`}`"/>  
-  
+<*object property*="{ SystemParameters.HotTracking`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1819,13 +1819,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_HotTrackingKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.HotTrackingKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.HotTrackingKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1852,14 +1852,14 @@
         <value>The grid height.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYICONSPACING. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYICONSPACING. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_IconGridHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IconGridHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.IconGridHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1881,13 +1881,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IconGridHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IconGridHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IconGridHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1914,14 +1914,14 @@
         <value>The grid width.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXICONSPACING. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXICONSPACING. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_IconGridWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IconGridWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.IconGridWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1943,13 +1943,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IconGridWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IconGridWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IconGridWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1976,14 +1976,14 @@
         <value>The icon height.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYICON. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYICON. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_IconHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IconHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.IconHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2005,13 +2005,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IconHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IconHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IconHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2033,14 +2033,14 @@
         <value>The width of an icon cell.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETICONMETRICS, which references SPI_ICONHORIZONTALSPACING. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETICONMETRICS, which references SPI_ICONHORIZONTALSPACING. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_IconHorizontalSpacing"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IconHorizontalSpacing`}`"/>  
-  
+<*object property*="{ SystemParameters.IconHorizontalSpacing`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2062,13 +2062,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IconHorizontalSpacingKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IconHorizontalSpacingKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IconHorizontalSpacingKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2091,14 +2091,14 @@
           <see langword="true" /> if icon-title wrapping is enabled; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETICONMETRICS, which references SPI_GETICONTITLEWRAP. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETICONMETRICS, which references SPI_GETICONTITLEWRAP. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_IconTitleWrap"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IconTitleWrap`}`"/>  
-  
+<*object property*="{ SystemParameters.IconTitleWrap`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2120,13 +2120,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IconTitleWrapKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IconTitleWrapKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IconTitleWrapKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2148,14 +2148,14 @@
         <value>The height of an icon cell.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETICONMETRICS, which references SPI_ICONVERTICALSPACING. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETICONMETRICS, which references SPI_ICONVERTICALSPACING. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_IconVerticalSpacing"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IconVerticalSpacing`}`"/>  
-  
+<*object property*="{ SystemParameters.IconVerticalSpacing`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2177,13 +2177,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IconVerticalSpacingKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IconVerticalSpacingKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IconVerticalSpacingKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2210,14 +2210,14 @@
         <value>The icon width.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXICON. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXICON. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_IconWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IconWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.IconWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2239,13 +2239,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IconWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IconWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IconWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2297,14 +2297,14 @@
           <see langword="true" /> if the Input Method Manager/Input Method Editor features are enabled; otherwise, <see langword="false" />.<see langword="" /></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_IMMENABLED. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_IMMENABLED. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_IsImmEnabled"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IsImmEnabled`}`"/>  
-  
+<*object property*="{ SystemParameters.IsImmEnabled`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -2329,13 +2329,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IsImmEnabledKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IsImmEnabledKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IsImmEnabledKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2363,14 +2363,14 @@
           <see langword="true" /> if the current operating system is [!INCLUDE[TLA2#tla_whistler2](~/includes/tla2sharptla-whistler2-md.md)] Media Center Edition; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_MEDIACENTER. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_MEDIACENTER. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_IsMediaCenter"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IsMediaCenter`}`"/>  
-  
+<*object property*="{ SystemParameters.IsMediaCenter`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -2395,13 +2395,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IsMediaCenterKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IsMediaCenterKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IsMediaCenterKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2429,14 +2429,14 @@
           <see langword="true" /> if drop-down menus are right-aligned; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_MENUDROPALIGNMENT. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_MENUDROPALIGNMENT. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_IsMenuDropRightAligned"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IsMenuDropRightAligned`}`"/>  
-  
+<*object property*="{ SystemParameters.IsMenuDropRightAligned`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2458,13 +2458,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IsMenuDropRightAlignedKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IsMenuDropRightAlignedKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IsMenuDropRightAlignedKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2492,14 +2492,14 @@
           <see langword="true" /> if the system is enabled for Hebrew and Arabic languages; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_MIDEASTENABLED. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_MIDEASTENABLED. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_IsMiddleEastEnabled"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IsMiddleEastEnabled`}`"/>  
-  
+<*object property*="{ SystemParameters.IsMiddleEastEnabled`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -2524,13 +2524,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IsMiddleEastEnabledKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IsMiddleEastEnabledKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IsMiddleEastEnabledKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2558,16 +2558,16 @@
           <see langword="true" /> if a mouse is installed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is rarely `false`, because virtual mice are supported and because some systems detect the presence of the port, instead of a mouse.  
-  
- Maps to SM_MOUSEPRESENT. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+This value is rarely `false`, because virtual mice are supported and because some systems detect the presence of the port, instead of a mouse.  
+ 
+Maps to SM_MOUSEPRESENT. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_IsMousePresent"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IsMousePresent`}`"/>  
-  
+<*object property*="{ SystemParameters.IsMousePresent`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2589,13 +2589,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IsMousePresentKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IsMousePresentKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IsMousePresentKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2623,14 +2623,14 @@
           <see langword="true" /> if the installed mouse has a vertical scroll wheel; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_MOUSEWHEELPRESENT. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_MOUSEWHEELPRESENT. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_IsMouseWheelPresent"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IsMouseWheelPresent`}`"/>  
-  
+<*object property*="{ SystemParameters.IsMouseWheelPresent`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2652,13 +2652,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IsMouseWheelPresentKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IsMouseWheelPresentKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IsMouseWheelPresentKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2686,14 +2686,14 @@
           <see langword="true" /> if Pen Computing extensions are installed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_PENWINDOWS. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_PENWINDOWS. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_IsPenWindows"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IsPenWindows`}`"/>  
-  
+<*object property*="{ SystemParameters.IsPenWindows`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -2718,13 +2718,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IsPenWindowsKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IsPenWindowsKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IsPenWindowsKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2752,16 +2752,16 @@
           <see langword="true" /> if the current session is remotely controlled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This system metric is used in a Terminal Services environment.  
-  
- Maps to SM_REMOTECONTROL. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+This system metric is used in a Terminal Services environment.  
+ 
+Maps to SM_REMOTECONTROL. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_IsRemotelyControlled"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IsRemotelyControlled`}`"/>  
-  
+<*object property*="{ SystemParameters.IsRemotelyControlled`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -2786,13 +2786,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IsRemotelyControlledKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IsRemotelyControlledKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IsRemotelyControlledKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2820,16 +2820,16 @@
           <see langword="true" /> if the calling process is associated with a Terminal Services client session; <see langword="false" /> if the calling process is associated with the Terminal Server console session.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This system metric is used in a Terminal Services environment.  
-  
- Maps to SM_REMOTESESSION. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+This system metric is used in a Terminal Services environment.  
+ 
+Maps to SM_REMOTESESSION. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_IsRemoteSession"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IsRemoteSession`}`"/>  
-  
+<*object property*="{ SystemParameters.IsRemoteSession`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -2854,13 +2854,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IsRemoteSessionKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IsRemoteSessionKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IsRemoteSessionKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2888,14 +2888,14 @@
           <see langword="true" /> if the computer has a low-end (slow) processor; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_SLOWMACHINE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_SLOWMACHINE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_IsSlowMachine"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IsSlowMachine`}`"/>  
-  
+<*object property*="{ SystemParameters.IsSlowMachine`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -2920,13 +2920,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IsSlowMachineKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IsSlowMachineKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IsSlowMachineKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2954,14 +2954,14 @@
           <see langword="true" /> if the current operating system is [!INCLUDE[TLA2#tla_whistler](~/includes/tla2sharptla-whistler-md.md)] [!INCLUDE[TLA2#tla_tpc](~/includes/tla2sharptla-tpc-md.md)] Edition; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_TABLETPC. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_TABLETPC. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_IsTabletPC"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.IsTabletPC`}`"/>  
-  
+<*object property*="{ SystemParameters.IsTabletPC`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -2986,13 +2986,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_IsTabletPCKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.IsTabletPCKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.IsTabletPCKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3019,14 +3019,14 @@
         <value>The window height.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYKANJIWINDOW. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYKANJIWINDOW. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_KanjiWindowHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.KanjiWindowHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.KanjiWindowHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -3051,13 +3051,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_KanjiWindowHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.KanjiWindowHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.KanjiWindowHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3085,14 +3085,14 @@
           <see langword="true" /> if menu access keys are always underlined; <see langword="false" /> if they are underlined only when the menu is activated by the keyboard.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETKEYBOARDCUES. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETKEYBOARDCUES. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_KeyboardCues"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.KeyboardCues`}`"/>  
-  
+<*object property*="{ SystemParameters.KeyboardCues`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3114,13 +3114,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_KeyboardCuesKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.KeyboardCuesKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.KeyboardCuesKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3147,14 +3147,14 @@
         <value>The keyboard repeat-delay setting.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETKEYBOARDDELAY. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETKEYBOARDDELAY. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_KeyboardDelay"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.KeyboardDelay`}`"/>  
-  
+<*object property*="{ SystemParameters.KeyboardDelay`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3176,13 +3176,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_KeyboardDelayKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.KeyboardDelayKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.KeyboardDelayKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3210,14 +3210,14 @@
           <see langword="true" /> if the user relies on the keyboard; otherwise,<see langword=" false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETKEYBOARDPREF. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETKEYBOARDPREF. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_KeyboardPreference"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.KeyboardPreference`}`"/>  
-  
+<*object property*="{ SystemParameters.KeyboardPreference`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3239,13 +3239,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_KeyboardPreferenceKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.KeyboardPreferenceKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.KeyboardPreferenceKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3272,14 +3272,14 @@
         <value>The keyboard repeat-speed setting.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETKEYBOARDSPEED. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETKEYBOARDSPEED. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_KeyboardSpeed"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.KeyboardSpeed`}`"/>  
-  
+<*object property*="{ SystemParameters.KeyboardSpeed`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3301,13 +3301,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_KeyboardSpeedKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.KeyboardSpeedKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.KeyboardSpeedKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3335,14 +3335,14 @@
           <see langword="true" /> if the smooth-scrolling effect is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETLISTBOXSMOOTHSCROLLING. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETLISTBOXSMOOTHSCROLLING. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_ListBoxSmoothScrolling"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ListBoxSmoothScrolling`}`"/>  
-  
+<*object property*="{ SystemParameters.ListBoxSmoothScrolling`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3364,13 +3364,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ListBoxSmoothScrollingKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ListBoxSmoothScrollingKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ListBoxSmoothScrollingKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3397,14 +3397,14 @@
         <value>The window height.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYMAXIMIZED. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYMAXIMIZED. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MaximizedPrimaryScreenHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MaximizedPrimaryScreenHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.MaximizedPrimaryScreenHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -3429,13 +3429,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MaximizedPrimaryScreenHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MaximizedPrimaryScreenHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MaximizedPrimaryScreenHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3462,14 +3462,14 @@
         <value>The window width.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXMAXIMIZED. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXMAXIMIZED. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MaximizedPrimaryScreenWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MaximizedPrimaryScreenWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.MaximizedPrimaryScreenWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -3494,13 +3494,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MaximizedPrimaryScreenWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MaximizedPrimaryScreenWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MaximizedPrimaryScreenWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3527,16 +3527,16 @@
         <value>The maximum window height.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This metric refers to the entire desktop. The user cannot drag the window frame to a height larger than this dimension.  
-  
- Maps to SM_CYMAXTRACK. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+This metric refers to the entire desktop. The user cannot drag the window frame to a height larger than this dimension.  
+ 
+Maps to SM_CYMAXTRACK. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MaximumWindowTrackHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MaximumWindowTrackHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.MaximumWindowTrackHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -3561,13 +3561,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MaximumWindowTrackHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MaximumWindowTrackHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MaximumWindowTrackHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3594,16 +3594,16 @@
         <value>The maximum window width.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This metric refers to the entire desktop. The user cannot drag the window frame to a width larger than this dimension.  
-  
- Maps to SM_CXMAXTRACK. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+This metric refers to the entire desktop. The user cannot drag the window frame to a width larger than this dimension.  
+ 
+Maps to SM_CXMAXTRACK. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MaximumWindowTrackWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MaximumWindowTrackWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.MaximumWindowTrackWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -3628,13 +3628,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MaximumWindowTrackWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MaximumWindowTrackWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MaximumWindowTrackWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3662,14 +3662,14 @@
           <see langword="true" /> if menu animation is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETMENUANIMATION. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETMENUANIMATION. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_MenuAnimation"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MenuAnimation`}`"/>  
-  
+<*object property*="{ SystemParameters.MenuAnimation`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3691,13 +3691,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuAnimationKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MenuAnimationKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MenuAnimationKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3724,14 +3724,14 @@
         <value>The height of the menu bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYMENU. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYMENU. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MenuBarHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MenuBarHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.MenuBarHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -3756,13 +3756,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuBarHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MenuBarHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MenuBarHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3789,14 +3789,14 @@
         <value>The height of a menu bar button.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYMENUSIZE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYMENUSIZE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MenuButtonHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MenuButtonHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.MenuButtonHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3818,13 +3818,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuButtonHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MenuButtonHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MenuButtonHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3851,14 +3851,14 @@
         <value>The width of a menu bar button.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXMENUSIZE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXMENUSIZE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MenuButtonWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MenuButtonWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.MenuButtonWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3880,13 +3880,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuButtonWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MenuButtonWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MenuButtonWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3913,14 +3913,14 @@
         <value>The height of a bitmap.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYMENUCHECK. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYMENUCHECK. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MenuCheckmarkHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MenuCheckmarkHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.MenuCheckmarkHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3942,13 +3942,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuCheckmarkHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MenuCheckmarkHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MenuCheckmarkHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3975,14 +3975,14 @@
         <value>The width of the bitmap.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXMENUCHECK. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXMENUCHECK. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MenuCheckmarkWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MenuCheckmarkWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.MenuCheckmarkWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4004,13 +4004,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuCheckmarkWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MenuCheckmarkWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MenuCheckmarkWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4038,14 +4038,14 @@
           <see langword="true" /> if left-aligned; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETMENUDROPALIGNMENT. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETMENUDROPALIGNMENT. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_MenuDropAlignment"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MenuDropAlignment`}`"/>  
-  
+<*object property*="{ SystemParameters.MenuDropAlignment`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4067,13 +4067,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuDropAlignmentKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MenuDropAlignmentKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MenuDropAlignmentKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4101,16 +4101,16 @@
           <see langword="true" /> when fade animation is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If fade animation is disabled, menus use slide animation. This flag is ignored unless menu animation is enabled.  
-  
- Maps to SPI_GETMENUFADE. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+If fade animation is disabled, menus use slide animation. This flag is ignored unless menu animation is enabled.  
+ 
+Maps to SPI_GETMENUFADE. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_MenuFade"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MenuFade`}`"/>  
-  
+<*object property*="{ SystemParameters.MenuFade`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4132,13 +4132,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuFadeKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MenuFadeKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MenuFadeKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4160,14 +4160,14 @@
         <value>The menu height.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_MenuHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MenuHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.MenuHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4189,13 +4189,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MenuHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MenuHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4217,13 +4217,13 @@
         <value>The pop-up animation property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuPopupAnimation"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MenuPopupAnimation`}`"/>  
-  
+<*object property*="{ SystemParameters.MenuPopupAnimation`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4245,13 +4245,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuPopupAnimationKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MenuPopupAnimationKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MenuPopupAnimationKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4278,14 +4278,14 @@
         <value>The delay time.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETMENUSHOWDELAY. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETMENUSHOWDELAY. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_MenuShowDelay"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MenuShowDelay`}`"/>  
-  
+<*object property*="{ SystemParameters.MenuShowDelay`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4307,13 +4307,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuShowDelayKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MenuShowDelayKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MenuShowDelayKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4335,14 +4335,14 @@
         <value>The menu width, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_MenuWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MenuWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.MenuWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4364,13 +4364,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MenuWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MenuWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4398,16 +4398,16 @@
           <see langword="true" /> if the minimize window animations feature is enabled; otherwise,<see langword=" false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The SPI_GETANIMATION system parameter gets an [ANIMATIONINFO](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/animationinfo_str.asp) structure. If the *iMinAnimate* member of the structure is non-zero the minimize animation effects are enabled.  
-  
- Maps to SPI_GETANIMATION. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+The SPI_GETANIMATION system parameter gets an [ANIMATIONINFO](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/animationinfo_str.asp) structure. If the *iMinAnimate* member of the structure is non-zero the minimize animation effects are enabled.  
+ 
+Maps to SPI_GETANIMATION. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_MinimizeAnimation"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MinimizeAnimation`}`"/>  
-  
+<*object property*="{ SystemParameters.MinimizeAnimation`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4429,13 +4429,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MinimizeAnimationKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MinimizeAnimationKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MinimizeAnimationKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4462,16 +4462,16 @@
         <value>The height of a grid cell for a minimized window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each minimized window fits into a rectangle with this height. The value is always greater than or equal to <xref:System.Windows.SystemParameters.MinimizedWindowHeight%2A>.  
-  
- Maps to SM_CYMINSPACING. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Each minimized window fits into a rectangle with this height. The value is always greater than or equal to <xref:System.Windows.SystemParameters.MinimizedWindowHeight%2A>.  
+ 
+Maps to SM_CYMINSPACING. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MinimizedGridHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MinimizedGridHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.MinimizedGridHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4493,13 +4493,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MinimizedGridHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MinimizedGridHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MinimizedGridHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4526,16 +4526,16 @@
         <value>The width of a grid cell for a minimized window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each minimized window fits into a rectangle with this width. The value is always greater than or equal to <xref:System.Windows.SystemParameters.MinimizedWindowWidth%2A>.  
-  
- Maps to SM_CXMINSPACING. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Each minimized window fits into a rectangle with this width. The value is always greater than or equal to <xref:System.Windows.SystemParameters.MinimizedWindowWidth%2A>.  
+ 
+Maps to SM_CXMINSPACING. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MinimizedGridWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MinimizedGridWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.MinimizedGridWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4557,13 +4557,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MinimizedGridWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MinimizedGridWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MinimizedGridWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4590,14 +4590,14 @@
         <value>The height of a minimized window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYMINIMIZED. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYMINIMIZED. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MinimizedWindowHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MinimizedWindowHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.MinimizedWindowHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -4622,13 +4622,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MinimizedWindowHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MinimizedWindowHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MinimizedWindowHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4655,14 +4655,14 @@
         <value>The width of a minimized window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXMINIMIZED. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXMINIMIZED. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MinimizedWindowWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MinimizedWindowWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.MinimizedWindowWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -4687,13 +4687,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MinimizedWindowWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MinimizedWindowWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MinimizedWindowWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4720,14 +4720,14 @@
         <value>The width of the rectangle, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXDRAG. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXDRAG. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MinimumHorizontalDragDistance"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MinimumHorizontalDragDistance`}`"/>  
-  
+<*object property*="{ SystemParameters.MinimumHorizontalDragDistance`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4754,14 +4754,14 @@
         <value>The height of the rectangle, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXDRAG. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXDRAG. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MinimumVerticalDragDistance"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MinimumVerticalDragDistance`}`"/>  
-  
+<*object property*="{ SystemParameters.MinimumVerticalDragDistance`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4788,14 +4788,14 @@
         <value>The minimum height of a window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYMIN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYMIN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MinimumWindowHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MinimumWindowHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.MinimumWindowHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -4820,13 +4820,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MinimumWindowHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MinimumWindowHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MinimumWindowHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4853,16 +4853,16 @@
         <value>The minimun tracking height of a window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The user cannot drag the window frame to a height smaller than this dimension.  
-  
- Maps to SM_CYMINTRACK. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+The user cannot drag the window frame to a height smaller than this dimension.  
+ 
+Maps to SM_CYMINTRACK. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MinimumWindowTrackHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MinimumWindowTrackHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.MinimumWindowTrackHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -4887,13 +4887,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MinimumWindowTrackHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MinimumWindowTrackHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MinimumWindowTrackHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4920,16 +4920,16 @@
         <value>The minimum tracking width of a window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The user cannot drag the window frame to a width smaller than this dimension.  
-  
- Maps to SM_CXMINTRACK. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+The user cannot drag the window frame to a width smaller than this dimension.  
+ 
+Maps to SM_CXMINTRACK. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MinimumWindowTrackWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MinimumWindowTrackWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.MinimumWindowTrackWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -4954,13 +4954,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MinimumWindowTrackWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MinimumWindowTrackWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MinimumWindowTrackWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4987,14 +4987,14 @@
         <value>The minimum width of a window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXMIN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXMIN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_MinimumWindowWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MinimumWindowWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.MinimumWindowWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -5019,13 +5019,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MinimumWindowWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MinimumWindowWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MinimumWindowWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5052,14 +5052,14 @@
         <value>The height of a rectangle used for a mouse-hover event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETMOUSEHOVERHEIGHT. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETMOUSEHOVERHEIGHT. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_MouseHoverHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MouseHoverHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.MouseHoverHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5081,13 +5081,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MouseHoverHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MouseHoverHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MouseHoverHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5109,14 +5109,14 @@
         <value>The time, in milliseconds, that the mouse must be in the hover rectangle to generate a mouse-hover event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETMOUSEHOVERTIME. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETMOUSEHOVERTIME. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_MouseHoverTime"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MouseHoverTime`}`"/>  
-  
+<*object property*="{ SystemParameters.MouseHoverTime`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5138,13 +5138,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MouseHoverTimeKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MouseHoverTimeKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MouseHoverTimeKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5171,14 +5171,14 @@
         <value>The width of a rectangle used for a mouse-hover event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETMOUSEHOVERWIDTH. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETMOUSEHOVERWIDTH. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_MouseHoverWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.MouseHoverWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.MouseHoverWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5200,13 +5200,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MouseHoverWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.MouseHoverWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.MouseHoverWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5228,13 +5228,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_NavigationChromeDownLevelStyleKey"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.NavigationChromeDownLevelStyleKey`}`"/>  
-  
+<*object property*="{ SystemParameters.NavigationChromeDownLevelStyleKey`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5256,13 +5256,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_NavigationChromeStyleKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.NavigationChromeStyleKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.NavigationChromeStyleKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5289,13 +5289,13 @@
         <value>A value in the enumeration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_PowerLine"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.PowerLine`}`"/>  
-  
+<*object property*="{ SystemParameters.PowerLine`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5317,13 +5317,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_PowerLineKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.PowerLineKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.PowerLineKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5350,14 +5350,14 @@
         <value>The height of the screen.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_PrimaryScreenHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.PrimaryScreenHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.PrimaryScreenHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5379,13 +5379,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_PrimaryScreenHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.PrimaryScreenHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.PrimaryScreenHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5412,14 +5412,14 @@
         <value>The width of the screen.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_PrimaryScreenWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.PrimaryScreenWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.PrimaryScreenWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5441,13 +5441,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_PrimaryScreenWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.PrimaryScreenWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.PrimaryScreenWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5474,14 +5474,14 @@
         <value>The height of the border.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXSIZEFRAME. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXSIZEFRAME. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_ResizeFrameHorizontalBorderHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ResizeFrameHorizontalBorderHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.ResizeFrameHorizontalBorderHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5503,13 +5503,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ResizeFrameHorizontalBorderHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ResizeFrameHorizontalBorderHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ResizeFrameHorizontalBorderHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5536,14 +5536,14 @@
         <value>The width of the border.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYSIZEFRAME. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYSIZEFRAME. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_ResizeFrameVerticalBorderWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ResizeFrameVerticalBorderWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.ResizeFrameVerticalBorderWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5565,13 +5565,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ResizeFrameVerticalBorderWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ResizeFrameVerticalBorderWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ResizeFrameVerticalBorderWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5593,14 +5593,14 @@
         <value>The scroll height, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The metric is obtained from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+The metric is obtained from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_ScrollHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ScrollHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.ScrollHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5622,13 +5622,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ScrollHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ScrollHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ScrollHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5650,14 +5650,14 @@
         <value>The scroll width, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The metric is obtained from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+The metric is obtained from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_ScrollWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ScrollWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.ScrollWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5679,13 +5679,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ScrollWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ScrollWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ScrollWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5713,16 +5713,16 @@
           <see langword="true" /> if the fade effect is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The selection fade effect causes the menu item selected by the user to remain on the screen briefly while fading out after a menu is dismissed.  
-  
- Maps to SPI_GETSELECTIONFADE. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+The selection fade effect causes the menu item selected by the user to remain on the screen briefly while fading out after a menu is dismissed.  
+ 
+Maps to SPI_GETSELECTIONFADE. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_SelectionFade"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.SelectionFade`}`"/>  
-  
+<*object property*="{ SystemParameters.SelectionFade`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5744,13 +5744,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_SelectionFadeKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.SelectionFadeKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.SelectionFadeKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5778,14 +5778,14 @@
           <see langword="true" /> if the user requires an application to present information visually where it typically presents the information only in audible form; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_SHOWSOUNDS. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_SHOWSOUNDS. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_ShowSounds"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ShowSounds`}`"/>  
-  
+<*object property*="{ SystemParameters.ShowSounds`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -5810,13 +5810,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ShowSoundsKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ShowSoundsKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ShowSoundsKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5838,14 +5838,14 @@
         <value>The caption height, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_SmallCaptionHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.SmallCaptionHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.SmallCaptionHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5867,13 +5867,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_SmallCaptionHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.SmallCaptionHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.SmallCaptionHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5895,14 +5895,14 @@
         <value>The caption width, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Obtain the metric from SPI_GETNONCLIENTMETRICS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_SmallCaptionWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.SmallCaptionWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.SmallCaptionWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5924,13 +5924,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_SmallCaptionWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.SmallCaptionWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.SmallCaptionWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5957,16 +5957,16 @@
         <value>The icon height.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Small icons typically appear in window captions and in small-icon view.  
-  
- Maps to SM_CYSMICON. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Small icons typically appear in window captions and in small-icon view.  
+ 
+Maps to SM_CYSMICON. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_SmallIconHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.SmallIconHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.SmallIconHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5988,13 +5988,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_SmallIconHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.SmallIconHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.SmallIconHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6021,16 +6021,16 @@
         <value>The width of the icon.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Small icons typically appear in window captions and in small-icon view.  
-  
- Maps to SM_CXSMICON. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Small icons typically appear in window captions and in small-icon view.  
+ 
+Maps to SM_CXSMICON. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_SmallIconWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.SmallIconWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.SmallIconWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6052,13 +6052,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_SmallIconWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.SmallIconWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.SmallIconWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6085,14 +6085,14 @@
         <value>The height of the caption button.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYSMSIZE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYSMSIZE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_SmallWindowCaptionButtonHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.SmallWindowCaptionButtonHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.SmallWindowCaptionButtonHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6114,13 +6114,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_SmallWindowCaptionButtonHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.SmallWindowCaptionButtonHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.SmallWindowCaptionButtonHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6147,14 +6147,14 @@
         <value>The width of the caption button.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXSMSIZE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXSMSIZE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_SmallWindowCaptionButtonWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.SmallWindowCaptionButtonWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.SmallWindowCaptionButtonWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6176,13 +6176,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_SmallWindowCaptionButtonWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.SmallWindowCaptionButtonWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.SmallWindowCaptionButtonWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6210,14 +6210,14 @@
           <see langword="true" /> when the feature is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Obtain this metric from SPI_GETSNAPTODEFBUTTON. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Obtain this metric from SPI_GETSNAPTODEFBUTTON. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_SnapToDefaultButton"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.SnapToDefaultButton`}`"/>  
-  
+<*object property*="{ SystemParameters.SnapToDefaultButton`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6239,13 +6239,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_SnapToDefaultButtonKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.SnapToDefaultButtonKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.SnapToDefaultButtonKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6290,14 +6290,14 @@
           <see langword="true" /> if hot tracking of a stylus is enabled; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETSTYLUSHOTTRACKING. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETSTYLUSHOTTRACKING. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_StylusHotTracking"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.StylusHotTracking`}`"/>  
-  
+<*object property*="{ SystemParameters.StylusHotTracking`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6319,13 +6319,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_StylusHotTrackingKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.StylusHotTrackingKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.StylusHotTrackingKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6353,14 +6353,14 @@
           <see langword="true" /> if the functionality of the left and right mouse buttons are swapped; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_SWAPBUTTON. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_SWAPBUTTON. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_SwapButtons"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.SwapButtons`}`"/>  
-  
+<*object property*="{ SystemParameters.SwapButtons`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -6385,13 +6385,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_SwapButtonsKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.SwapButtonsKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.SwapButtonsKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6418,14 +6418,14 @@
         <value>The height of a border.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXEDGE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXEDGE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_ThickHorizontalBorderHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ThickHorizontalBorderHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.ThickHorizontalBorderHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6447,13 +6447,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ThickHorizontalBorderHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ThickHorizontalBorderHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ThickHorizontalBorderHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6480,14 +6480,14 @@
         <value>The width of a border.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYEDGE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYEDGE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_ThickVerticalBorderWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ThickVerticalBorderWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.ThickVerticalBorderWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6509,13 +6509,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ThickVerticalBorderWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ThickVerticalBorderWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ThickVerticalBorderWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6542,14 +6542,14 @@
         <value>The height of a border.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXBORDER. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXBORDER. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_ThinHorizontalBorderHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ThinHorizontalBorderHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.ThinHorizontalBorderHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6571,13 +6571,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ThinHorizontalBorderHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ThinHorizontalBorderHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ThinHorizontalBorderHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6604,14 +6604,14 @@
         <value>The width of a border.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYBORDER. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYBORDER. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_ThinVerticalBorderWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ThinVerticalBorderWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.ThinVerticalBorderWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6633,13 +6633,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ThinVerticalBorderWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ThinVerticalBorderWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ThinVerticalBorderWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6667,14 +6667,14 @@
           <see langword="true" /> if ToolTip animation is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETTOOLTIPANIMATION. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETTOOLTIPANIMATION. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_ToolTipAnimation"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ToolTipAnimation`}`"/>  
-  
+<*object property*="{ SystemParameters.ToolTipAnimation`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6696,13 +6696,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ToolTipAnimationKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ToolTipAnimationKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ToolTipAnimationKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6730,16 +6730,16 @@
           <see langword="true" /> if a fade effect is used; <see langword="false" /> if a slide effect is used.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.SystemParameters.ToolTipAnimation%2A> must be enabled.  
-  
- Maps to SPI_GETTOOLTIPFADE. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+<xref:System.Windows.SystemParameters.ToolTipAnimation%2A> must be enabled.  
+ 
+Maps to SPI_GETTOOLTIPFADE. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_ToolTipFade"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ToolTipFade`}`"/>  
-  
+<*object property*="{ SystemParameters.ToolTipFade`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6761,13 +6761,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ToolTipFadeKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ToolTipFadeKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ToolTipFadeKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6789,13 +6789,13 @@
         <value>A system value for the pop-up animation property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ToolTipPopupAnimation"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.ToolTipPopupAnimation`}`"/>  
-  
+<*object property*="{ SystemParameters.ToolTipPopupAnimation`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6817,13 +6817,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ToolTipPopupAnimationKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.ToolTipPopupAnimationKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.ToolTipPopupAnimationKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6851,14 +6851,14 @@
           <see langword="true" /> if all [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] effects are enabled; <see langword="false" /> if they are disabled.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETUIEFFECTS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETUIEFFECTS. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_UIEffects"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.UIEffects`}`"/>  
-  
+<*object property*="{ SystemParameters.UIEffects`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6880,13 +6880,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_UIEffectsKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.UIEffectsKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.UIEffectsKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6959,14 +6959,14 @@
         <value>The height of a bitmap.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYVSCROLL. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYVSCROLL. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_VerticalScrollBarButtonHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.VerticalScrollBarButtonHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.VerticalScrollBarButtonHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6988,13 +6988,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_VerticalScrollBarButtonHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.VerticalScrollBarButtonHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.VerticalScrollBarButtonHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7021,14 +7021,14 @@
         <value>The height of the thumb.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYVTHUMB. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYVTHUMB. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_VerticalScrollBarThumbHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.VerticalScrollBarThumbHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.VerticalScrollBarThumbHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7050,13 +7050,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_VerticalScrollBarThumbHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.VerticalScrollBarThumbHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.VerticalScrollBarThumbHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7083,14 +7083,14 @@
         <value>The width of a scroll bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXVSCROLL. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXVSCROLL. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_VerticalScrollBarWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.VerticalScrollBarWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.VerticalScrollBarWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7112,13 +7112,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_VerticalScrollBarWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.VerticalScrollBarWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.VerticalScrollBarWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7145,16 +7145,16 @@
         <value>The height of the virtual screen.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The virtual screen is the bounding rectangle of all display monitors. The <xref:System.Windows.SystemParameters.VirtualScreenTop%2A> and <xref:System.Windows.SystemParameters.VirtualScreenLeft%2A> metrics are the coordinates of the upper-left corner of the virtual screen.  
-  
- Maps to SM_CYVIRTUALSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+The virtual screen is the bounding rectangle of all display monitors. The <xref:System.Windows.SystemParameters.VirtualScreenTop%2A> and <xref:System.Windows.SystemParameters.VirtualScreenLeft%2A> metrics are the coordinates of the upper-left corner of the virtual screen.  
+ 
+Maps to SM_CYVIRTUALSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_VirtualScreenHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.VirtualScreenHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.VirtualScreenHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -7179,13 +7179,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_VirtualScreenHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.VirtualScreenHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.VirtualScreenHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7212,16 +7212,16 @@
         <value>A screen coordinate, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The virtual screen is the bounding rectangle of all display monitors. The <xref:System.Windows.SystemParameters.VirtualScreenWidth%2A> and <xref:System.Windows.SystemParameters.VirtualScreenHeight%2A> metrics are the width and height of the virtual screen.  
-  
- Maps to SM_XVIRTUALSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+The virtual screen is the bounding rectangle of all display monitors. The <xref:System.Windows.SystemParameters.VirtualScreenWidth%2A> and <xref:System.Windows.SystemParameters.VirtualScreenHeight%2A> metrics are the width and height of the virtual screen.  
+ 
+Maps to SM_XVIRTUALSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_VirtualScreenLeft"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.VirtualScreenLeft`}`"/>  
-  
+<*object property*="{ SystemParameters.VirtualScreenLeft`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -7246,13 +7246,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_VirtualScreenLeftKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.VirtualScreenLeftKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.VirtualScreenLeftKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7279,16 +7279,16 @@
         <value>A screen coordinate, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The virtual screen is the bounding rectangle of all display monitors. The <xref:System.Windows.SystemParameters.VirtualScreenWidth%2A> and <xref:System.Windows.SystemParameters.VirtualScreenHeight%2A> metrics are the width and height of the virtual screen.  
-  
- Maps to SM_YVIRTUALSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+The virtual screen is the bounding rectangle of all display monitors. The <xref:System.Windows.SystemParameters.VirtualScreenWidth%2A> and <xref:System.Windows.SystemParameters.VirtualScreenHeight%2A> metrics are the width and height of the virtual screen.  
+ 
+Maps to SM_YVIRTUALSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_VirtualScreenTop"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.VirtualScreenTop`}`"/>  
-  
+<*object property*="{ SystemParameters.VirtualScreenTop`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -7313,13 +7313,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_VirtualScreenTopKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.VirtualScreenTopKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.VirtualScreenTopKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7346,16 +7346,16 @@
         <value>The width of the virtual screen.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The virtual screen is the bounding rectangle of all display monitors. The <xref:System.Windows.SystemParameters.VirtualScreenTop%2A> and <xref:System.Windows.SystemParameters.VirtualScreenLeft%2A> metrics are the coordinates of the upper-left corner of the virtual screen.  
-  
- Maps to SM_CXVIRTUALSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+The virtual screen is the bounding rectangle of all display monitors. The <xref:System.Windows.SystemParameters.VirtualScreenTop%2A> and <xref:System.Windows.SystemParameters.VirtualScreenLeft%2A> metrics are the coordinates of the upper-left corner of the virtual screen.  
+ 
+Maps to SM_CXVIRTUALSCREEN. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_VirtualScreenWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.VirtualScreenWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.VirtualScreenWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -7380,13 +7380,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_VirtualScreenWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.VirtualScreenWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.VirtualScreenWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7413,14 +7413,14 @@
         <value>The number of lines.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SPI_GETWHEELSCROLLLINES. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+Maps to SPI_GETWHEELSCROLLLINES. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_WheelScrollLines"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.WheelScrollLines`}`"/>  
-  
+<*object property*="{ SystemParameters.WheelScrollLines`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7442,13 +7442,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_WheelScrollLinesKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.WheelScrollLinesKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.WheelScrollLinesKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7475,14 +7475,14 @@
         <value>The height of a caption button.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYSIZE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYSIZE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_WindowCaptionButtonHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.WindowCaptionButtonHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.WindowCaptionButtonHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -7507,13 +7507,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_WindowCaptionButtonHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.WindowCaptionButtonHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.WindowCaptionButtonHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7540,14 +7540,14 @@
         <value>The width of a caption button.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CXSIZE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CXSIZE. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_WindowCaptionButtonWidth"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.WindowCaptionButtonWidth`}`"/>  
-  
+<*object property*="{ SystemParameters.WindowCaptionButtonWidth`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7569,13 +7569,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_WindowCaptionButtonWidthKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.WindowCaptionButtonWidthKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.WindowCaptionButtonWidthKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7602,14 +7602,14 @@
         <value>The height of a caption area.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Maps to SM_CYCAPTION. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
-  
+Maps to SM_CYCAPTION. See [GetSystemMetrics](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/getsystemmetrics.asp).  
+ 
 <a name="xamlAttributeUsage_WindowCaptionHeight"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.WindowCaptionHeight`}`"/>  
-  
+<*object property*="{ SystemParameters.WindowCaptionHeight`}`"/>  
+ 
  ]]></format>
         </remarks>
         <permission cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode">to call this method, because it calls an unsafe native method. Associated enumeration:  
@@ -7634,13 +7634,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_WindowCaptionHeightKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.WindowCaptionHeightKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.WindowCaptionHeightKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7777,16 +7777,16 @@
         <value>A <see langword="RECT" /> structure that receives the work area coordinates, expressed as virtual screen coordinates.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The work area is the portion of the screen that is not obscured by the system taskbar or by application desktop toolbars.  
-  
- Maps to SPI_GETWORKAREA. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
-  
+The work area is the portion of the screen that is not obscured by the system taskbar or by application desktop toolbars.  
+ 
+Maps to SPI_GETWORKAREA. See [SystemParametersInfo](http://msdn.microsoft.com/library/default.asp?url=/library/sysinfo/base/systemparametersinfo.asp).  
+ 
 <a name="xamlAttributeUsage_WorkArea"></a>   
 ## XAML Attribute Usage  
- <*object property*="{ SystemParameters.WorkArea`}`"/>  
-  
+<*object property*="{ SystemParameters.WorkArea`}`"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -7808,13 +7808,13 @@
         <value>A resource key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_WorkAreaKey"></a>   
 ## XAML Attribute Usage  
- \<*object property*="{ { SystemParameters.WorkAreaKey}}"/>  
-  
+\<*object property*="{ { SystemParameters.WorkAreaKey}}"/>  
+ 
  ]]></format>
         </remarks>
       </Docs>

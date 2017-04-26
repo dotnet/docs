@@ -61,10 +61,10 @@
         <value>The annotation type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For internal use, should not be used.  
-  
+For internal use, should not be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,10 +135,10 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.GradientStyle" /> value used to draw the annotation background.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two colors are used to draw the gradient fill; the primary color is specified with the <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation.BackColor%2A> property and the secondary color is specified with the <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation.BackSecondaryColor%2A> property.  
-  
+Two colors are used to draw the gradient fill; the primary color is specified with the <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation.BackColor%2A> property and the secondary color is specified with the <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation.BackSecondaryColor%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,10 +174,10 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartHatchStyle" /> value used to draw the annotation background.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two colors are used to draw the hatching fill; the primary color is specified with the <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation.BackColor%2A> property and the secondary color is specified with the <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation.BackSecondaryColor%2A> property.  
-  
+Two colors are used to draw the hatching fill; the primary color is specified with the <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation.BackColor%2A> property and the secondary color is specified with the <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation.BackSecondaryColor%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,10 +216,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value used to draw the annotation background with hatching or gradient fill.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This secondary color is used with a primary color, defined with the <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation.BackColor%2A> property, when the <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation.BackHatchStyle%2A> and <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation.BackGradientStyle%2A> properties are used.  
-  
+This secondary color is used with a primary color, defined with the <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation.BackColor%2A> property, when the <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation.BackHatchStyle%2A> and <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation.BackGradientStyle%2A> properties are used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,10 +249,10 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the polygon annotation type.  
-  
+This property is not applicable to the polygon annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,10 +282,10 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not applicable to the polygon annotation type.  
-  
+This property is not applicable to the polygon annotation type.  
+ 
  ]]></format>
         </remarks>
       </Docs>

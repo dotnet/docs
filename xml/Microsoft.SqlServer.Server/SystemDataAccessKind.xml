@@ -14,14 +14,14 @@
     <summary>Describes the type of access to system data for a user-defined method or function.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Describes the type of access to system data for a user-defined method or function.  
-  
- This enumeration is used in <xref:Microsoft.SqlServer.Server.SqlMethodAttribute> and <xref:Microsoft.SqlServer.Server.SqlFunctionAttribute> to indicate what type of access to system data the method or function has.  
-  
- Note that methods and functions are not allowed to make changes to the database, so the options for this enumeration are `None` (meaning no data-access performed by the method or function) and `Read` (meaning that the method or function performs read-only data-access operations, such as executing SELECT statements).  
-  
+Describes the type of access to system data for a user-defined method or function.  
+ 
+This enumeration is used in <xref:Microsoft.SqlServer.Server.SqlMethodAttribute> and <xref:Microsoft.SqlServer.Server.SqlFunctionAttribute> to indicate what type of access to system data the method or function has.  
+ 
+Note that methods and functions are not allowed to make changes to the database, so the options for this enumeration are `None` (meaning no data-access performed by the method or function) and `Read` (meaning that the method or function performs read-only data-access operations, such as executing SELECT statements).  
+ 
  ]]></format>
     </remarks>
   </Docs>

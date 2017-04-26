@@ -26,10 +26,10 @@
     <summary>Exposes methods and properties on the root element in a fragment.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface is implemented by a root element within a framework; for example, a list box within a window. Other elements in the same fragment, such as list items, implement the <xref:System.Windows.Automation.Provider.IRawElementProviderFragment> interface.  
-  
+This interface is implemented by a root element within a framework; for example, a list box within a window. Other elements in the same fragment, such as list items, implement the <xref:System.Windows.Automation.Provider.IRawElementProviderFragment> interface.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,20 +57,20 @@
         <returns>The provider for the child element at the specified point, if one exists, or the root provider if the point is on this element but not on any child element. Otherwise returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the point is on an element in another framework that is hosted by this fragment, the method returns the element that hosts that fragment.  
+If the point is on an element in another framework that is hosted by this fragment, the method returns the element that hosts that fragment.  
+ 
+The returned provider should correspond to the element that would receive mouse input at the specified point.  
+ 
   
- The returned provider should correspond to the element that would receive mouse input at the specified point.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows one possible implementation of this method for a non-scrolling list box. The index of the list item at the specified point is calculated using the height of each item, and the item at that point is returned. If no item exists at that point (for example, it is a blank area of the list box, the method returns a null reference (`Nothing`).  
-  
- [!code-csharp[UIAFragmentProvider_snip#106](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#106)]
- [!code-vb[UIAFragmentProvider_snip#106](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#106)]  
-  
+The following code example shows one possible implementation of this method for a non-scrolling list box. The index of the list item at the specified point is calculated using the height of each item, and the item at that point is returned. If no item exists at that point (for example, it is a blank area of the list box, the method returns a null reference (`Nothing`).  
+ 
+[!code-csharp[UIAFragmentProvider_snip#106](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#106)]
+[!code-vb[UIAFragmentProvider_snip#106](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#106)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,18 +93,18 @@
         <returns>The provider for the element in this fragment that has the input focus, if any; otherwise, a null reference (<see langword="Nothing" /> in Visual Basic).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the focus is on an element in another framework that is hosted by this fragment, the method returns the element that hosts that fragment.  
+If the focus is on an element in another framework that is hosted by this fragment, the method returns the element that hosts that fragment.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows one possible implementation of this method for a list box. It returns the currently selected item in the list.  
-  
- [!code-csharp[UIAFragmentProvider_snip#107](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#107)]
- [!code-vb[UIAFragmentProvider_snip#107](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#107)]  
-  
+The following code example shows one possible implementation of this method for a list box. It returns the currently selected item in the list.  
+ 
+[!code-csharp[UIAFragmentProvider_snip#107](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#107)]
+[!code-vb[UIAFragmentProvider_snip#107](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#107)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

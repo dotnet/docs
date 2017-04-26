@@ -13,16 +13,16 @@
     <summary>Specifies the type of an item in a list control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListItemType> enumeration represents the different items that can be included in a list control, such as the <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.DataList>, and <xref:System.Web.UI.WebControls.Repeater> controls. A typical list control consists of cells that contain elements represented by this enumeration.  
+The <xref:System.Web.UI.WebControls.ListItemType> enumeration represents the different items that can be included in a list control, such as the <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.DataList>, and <xref:System.Web.UI.WebControls.Repeater> controls. A typical list control consists of cells that contain elements represented by this enumeration.  
+ 
   
-   
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[DataGridItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridItemDataBound/CS/datagriditemdataboundcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridItemDataBound/VB/datagriditemdataboundvb.aspx#1)]  -->  
-  
+<!-- TODO: review snippet reference [!code-csharp[DataGridItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridItemDataBound/CS/datagriditemdataboundcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[DataGridItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridItemDataBound/VB/datagriditemdataboundvb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>

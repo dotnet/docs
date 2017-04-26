@@ -16,14 +16,14 @@
     <summary>Defines the behavior of a service that acts as a container of types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.ComponentModel.Compiler.ITypeProvider> can be pushed as a <xref:System.Workflow.Runtime.WorkflowRuntime> service to discover data types that are necessary for extensible Application Markup Language (XAML) workflow activation.  
-  
+ 
+<xref:System.Workflow.ComponentModel.Compiler.ITypeProvider> can be pushed as a <xref:System.Workflow.Runtime.WorkflowRuntime> service to discover data types that are necessary for extensible Application Markup Language (XAML) workflow activation.  
+ 
  ]]></format>
     </remarks>
   </Docs>

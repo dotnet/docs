@@ -54,10 +54,10 @@
           <see langword="true " />if conversion is supported; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.String> is the only supported type for conversion.  
-  
+<xref:System.String> is the only supported type for conversion.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,10 +86,10 @@
           <see langword="true" /> if conversion is possible; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The only supported destination types are <xref:System.String> and <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor>.  
-  
+The only supported destination types are <xref:System.String> and <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -38,10 +38,10 @@
         <returns>Returns the added item group.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Convenience method that picks a location based on a heuristic.  
-  
+Convenience method that picks a location based on a heuristic.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -64,10 +64,10 @@
         <returns>Returns the added property group.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Convenience method that picks a location based on a heuristic.  
-  
+Convenience method that picks a location based on a heuristic.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
         <returns>Returns the added task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Convenience method to add a task to this target.  
-  
+Convenience method to add a task to this target.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
         <value>Returns the <c>AfterTargets</c> attribute value. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the `AfterTargets` attribute if set to null or an empty string.  
-  
+Removes the `AfterTargets` attribute if set to null or an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,10 +171,10 @@
         <value>Returns the BeforeTargets attribute value. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the BeforeTargets attribute if set to null or an empty string.  
-  
+Removes the BeforeTargets attribute if set to null or an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -219,10 +219,10 @@
         <value>Returns the DependsOnTargets attribute value. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the DependsOnTargets attribute if the value to set is set to null or an empty string.  
-  
+Removes the DependsOnTargets attribute if the value to set is set to null or an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,10 +267,10 @@
         <value>Returns the Inputs attribute value. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the Inputs attribute if the value to set is set to null or an empty string.  
-  
+Removes the Inputs attribute if the value to set is set to null or an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,10 +333,10 @@
         <value>Returns the TrimDuplicateOutputs attribute value. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the TrimDuplicateOutputs attribute if the value to set is set to null or an empty string.  
-  
+Removes the TrimDuplicateOutputs attribute if the value to set is set to null or an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -440,10 +440,10 @@
         <value>Returns the Outputs attribute value. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the Outputs attribute if the value to set is set to null or an empty string.  
-  
+Removes the Outputs attribute if the value to set is set to null or an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -506,10 +506,10 @@
         <value>Returns the returns attribute value; null if the attribute is not present</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the attribute only if the value is set to null. An empty string is an allowable value for both getting and setting.  
-  
+Removes the attribute only if the value is set to null. An empty string is an allowable value for both getting and setting.  
+ 
  ]]></format>
         </remarks>
       </Docs>

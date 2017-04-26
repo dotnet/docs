@@ -19,22 +19,22 @@
     <summary>Represents a configuration element for a service to be added to the workflow runtime engine.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- A <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement> specifies a host service that should be initialized and activated by the workflow runtime engine. It corresponds to a host service specified in the <`Services`> element in a configuration file. Because the service specified in a WorkflowRuntimeServiceElement will be initialized by the workflow runtime engine it must have at least one constructor that matches one of the following four signatures (the workflow runtime engine will try to match these signatures in the order shown):  
-  
- Service(WorkflowRuntime runtime, NameValueCollection parameters)  
-  
- Service(WorkflowRuntime runtime)  
-  
- Service(NameValueCollection parameters)  
-  
- Service()  
-  
+ 
+A <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement> specifies a host service that should be initialized and activated by the workflow runtime engine. It corresponds to a host service specified in the <`Services`> element in a configuration file. Because the service specified in a WorkflowRuntimeServiceElement will be initialized by the workflow runtime engine it must have at least one constructor that matches one of the following four signatures (the workflow runtime engine will try to match these signatures in the order shown):  
+ 
+Service(WorkflowRuntime runtime, NameValueCollection parameters)  
+ 
+Service(WorkflowRuntime runtime)  
+ 
+Service(NameValueCollection parameters)  
+ 
+Service()  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,10 +53,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you use this constructor, you must explicitly set <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Type%2A>.  
-  
+If you use this constructor, you must explicitly set <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Type%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,10 +85,10 @@
           <see cref="M:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.OnDeserializeUnrecognizedAttribute(System.String,System.String)" /> always returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name-value pair specified by name and value is added to the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Parameters%2A> collection. Any attributes other than `type` that are specified in an <`add`> element to the <`Services`> element in the configuration file are added as a name-value pair to the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Parameters%2A> collection.  
-  
+The name-value pair specified by name and value is added to the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Parameters%2A> collection. Any attributes other than `type` that are specified in an <`add`> element to the <`Services`> element in the configuration file are added as a name-value pair to the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Parameters%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

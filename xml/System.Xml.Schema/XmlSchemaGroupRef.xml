@@ -19,10 +19,10 @@
     <summary>Represents the <see langword="group" /> element with <see langword="ref" /> attribute from the XML Schema as specified by the World Wide Web Consortium (W3C). This class is used within complex types that reference a <see langword="group" /> defined at the <see langword="schema" /> level.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- See <xref:System.Xml.Schema.XmlSchemaGroup> for an example using this class.  
-  
+See <xref:System.Xml.Schema.XmlSchemaGroup> for an example using this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -102,10 +102,10 @@
         <value>The name of a group defined in this schema.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `RefName` value must be a QName. The `RefName` can include a namespace prefix. To include a group in a `complexType` element, use the `RefName` attribute to specify the group to include in this schema.  
-  
+The `RefName` value must be a QName. The `RefName` can include a namespace prefix. To include a group in a `complexType` element, use the `RefName` attribute to specify the group to include in this schema.  
+ 
  ]]></format>
         </remarks>
       </Docs>

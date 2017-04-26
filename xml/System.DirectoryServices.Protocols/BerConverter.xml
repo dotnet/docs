@@ -146,12 +146,12 @@
         <returns>An array of BER-encoded data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following are valid format characters.  
-  
- Encoding rules:  
-  
+The following are valid format characters.  
+ 
+Encoding rules:  
+ 
 |Code|Corresponding Argument|  
 |----------|----------------------------|  
 |'{' '}' '[' ']' 'n'|No corresponding argument|  
@@ -162,18 +162,18 @@
 |'o' 'X'|byte[]|  
 |'v'|string[]|  
 |'V'|byte[][]|  
-  
+ 
 > [!NOTE]
 >  'v' and 'V' are special in that a double {} is required. For example, use {{v}} and {{V}}.  
-  
+ 
 ## Exceptions  
-  
+ 
 |Exception|Condition|  
 |---------------|---------------|  
 |ArgumentNullException|`format` is a null reference (`Nothing` in Visual Basic).|  
 |ArgumentException|This exception occurs in any one of the following conditions:<br /><br /> -   There are not enough arguments for the format string.<br />-   The format string argument is incorrect.<br />-   The format string contains an undefined character.|  
 |BerConversionException|Error processing return value.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

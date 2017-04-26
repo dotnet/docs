@@ -18,22 +18,22 @@
     <summary>Provides a <see cref="T:System.IO.Packaging.Package" /> that holds the content of an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Xps.Packaging.XpsDocument> contains a <xref:System.Windows.Documents.FixedDocumentSequence> that comprises one or more <xref:System.Windows.Documents.FixedDocument> elements.  
-  
- The <xref:System.Windows.Xps.Packaging.XpsDocument.%23ctor%2A> constructor is passed a reference to a <xref:System.IO.Packaging.Package> for writing, storing, and reading the content elements of the document.  
-  
- A new empty [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] <xref:System.IO.Packaging.Package> is created by using the <xref:System.IO.Packaging.Package.%23ctor%2A> constructor.  
-  
- An existing [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] <xref:System.IO.Packaging.Package> is opened by using the <xref:System.IO.Packaging.Package.Open%2A?displayProperty=fullName> method.  
-  
- A <xref:System.Windows.Documents.FixedDocumentSequence> root is added to an empty [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] <xref:System.IO.Packaging.Package> by calling the <xref:System.Windows.Xps.Packaging.XpsDocument.AddFixedDocumentSequence%2A> method.  
-  
- <xref:System.Printing.PrintTicket> elements with printer information and control can also be associated with the <xref:System.Windows.Documents.FixedDocumentSequence>, or on individual <xref:System.Windows.Documents.FixedDocument> and <xref:System.Windows.Documents.FixedPage> elements that are stored in the <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- For more information about [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] see the XML Paper Specification (XPS) available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
-  
+An <xref:System.Windows.Xps.Packaging.XpsDocument> contains a <xref:System.Windows.Documents.FixedDocumentSequence> that comprises one or more <xref:System.Windows.Documents.FixedDocument> elements.  
+ 
+The <xref:System.Windows.Xps.Packaging.XpsDocument.%23ctor%2A> constructor is passed a reference to a <xref:System.IO.Packaging.Package> for writing, storing, and reading the content elements of the document.  
+ 
+A new empty [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] <xref:System.IO.Packaging.Package> is created by using the <xref:System.IO.Packaging.Package.%23ctor%2A> constructor.  
+ 
+An existing [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] <xref:System.IO.Packaging.Package> is opened by using the <xref:System.IO.Packaging.Package.Open%2A?displayProperty=fullName> method.  
+ 
+A <xref:System.Windows.Documents.FixedDocumentSequence> root is added to an empty [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] <xref:System.IO.Packaging.Package> by calling the <xref:System.Windows.Xps.Packaging.XpsDocument.AddFixedDocumentSequence%2A> method.  
+ 
+<xref:System.Printing.PrintTicket> elements with printer information and control can also be associated with the <xref:System.Windows.Documents.FixedDocumentSequence>, or on individual <xref:System.Windows.Documents.FixedDocument> and <xref:System.Windows.Documents.FixedPage> elements that are stored in the <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+For more information about [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] see the XML Paper Specification (XPS) available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,18 +55,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class with access to a specified [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] <see cref="T:System.IO.Packaging.Package" /> and default interleaving, resource, and compression options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
- [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
- [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
-  
- The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
-  
+The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
+[!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
+[!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
+ 
+The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,18 +90,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class that is contained in a specified <see cref="T:System.IO.Packaging.Package" /> with specified default interleaving, resource, and compression options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
- [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
- [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
-  
- The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
-  
+The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
+[!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
+[!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
+ 
+The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,18 +125,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class that is contained in a specified <see cref="T:System.IO.Packaging.Package" /> file with default interleaving, resource, and compression options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
- [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
- [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
-  
- The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
-  
+The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
+[!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
+[!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
+ 
+The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,18 +162,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class that is contained in a specified <see cref="T:System.IO.Packaging.Package" /> with the specified default interleaving, resource, and compression options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
- [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
- [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
-  
- The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
-  
+The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
+[!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
+[!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
+ 
+The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,18 +199,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class that is contained in a specified <see cref="T:System.IO.Packaging.Package" /> file with default interleaving, resource, and compression options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
- [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
- [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
-  
- The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
-  
+The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
+[!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
+[!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
+ 
+The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,19 +233,19 @@
         <returns>The [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] fixed-document sequence writer for this <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although this class uses a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be a set (sequence) of one <xref:System.Windows.Documents.FixedDocument> or multiple documents.  
+Although this class uses a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be a set (sequence) of one <xref:System.Windows.Documents.FixedDocument> or multiple documents.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.AddFixedDocumentSequence%2A> method to insert content into an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cpp[XpsCreate#XpsCreateAddPkgContent](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpkgcontent)]
- [!code-csharp[XpsCreate#XpsCreateAddPkgContent](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpkgcontent)]
- [!code-vb[XpsCreate#XpsCreateAddPkgContent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpkgcontent)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.AddFixedDocumentSequence%2A> method to insert content into an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-cpp[XpsCreate#XpsCreateAddPkgContent](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpkgcontent)]
+[!code-csharp[XpsCreate#XpsCreateAddPkgContent](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpkgcontent)]
+[!code-vb[XpsCreate#XpsCreateAddPkgContent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpkgcontent)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -289,25 +289,25 @@
         <summary>Closes the XPS document <see cref="T:System.IO.Packaging.Package" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Xps.Packaging.XpsDocument> was opened for write access, data buffers are written to the store and the physical document <xref:System.IO.Packaging.Package> is closed.  
+If the <xref:System.Windows.Xps.Packaging.XpsDocument> was opened for write access, data buffers are written to the store and the physical document <xref:System.IO.Packaging.Package> is closed.  
+ 
+After <xref:System.Windows.Xps.Packaging.XpsDocument.Close%2A> has been called, no parts of the document can be accessed with this <xref:System.Windows.Xps.Packaging.XpsDocument> instance.  
+ 
   
- After <xref:System.Windows.Xps.Packaging.XpsDocument.Close%2A> has been called, no parts of the document can be accessed with this <xref:System.Windows.Xps.Packaging.XpsDocument> instance.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to open, insert content, and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
- [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
- [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
-  
- The following example also shows how to open, write to, and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
-  
+The following example shows how to open, insert content, and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
+[!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
+[!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
+ 
+The following example also shows how to open, write to, and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,12 +351,12 @@
         <returns>The <see cref="T:System.Windows.Xps.XpsDocumentWriter" /> to use for writing the [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] document.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.CreateXpsDocumentWriter%2A> method in order to write an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.CreateXpsDocumentWriter%2A> method in order to write an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,12 +382,12 @@
         <summary>Releases the unmanaged resources that are used by the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> and optionally, releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources that are held by any managed objects that this <xref:System.Windows.Xps.Packaging.XpsDocument> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources that are held by any managed objects that this <xref:System.Windows.Xps.Packaging.XpsDocument> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -414,18 +414,18 @@
         <value>An <see cref="T:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader" /> for reading the document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although this class uses a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be a set (sequence) of one <xref:System.Windows.Documents.FixedDocument> or multiple documents.  
+Although this class uses a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be a set (sequence) of one <xref:System.Windows.Documents.FixedDocument> or multiple documents.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to get a <xref:System.Windows.Xps.Packaging.XpsDocument.FixedDocumentSequenceReader%2A> in order to access <xref:System.Windows.Documents.FixedDocument> parts in an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-csharp[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Window1.xaml.cs#docstrucfixeddoc)]
- [!code-vb[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocumentStructure/visualbasic/window1.xaml.vb#docstrucfixeddoc)]  
-  
+The following example shows how to get a <xref:System.Windows.Xps.Packaging.XpsDocument.FixedDocumentSequenceReader%2A> in order to access <xref:System.Windows.Documents.FixedDocument> parts in an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-csharp[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Window1.xaml.cs#docstrucfixeddoc)]
+[!code-vb[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocumentStructure/visualbasic/window1.xaml.vb#docstrucfixeddoc)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -448,10 +448,10 @@
         <returns>The <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> of the package.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although this class uses a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be a set (sequence) of one <xref:System.Windows.Documents.FixedDocument> or multiple documents.  
-  
+Although this class uses a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be a set (sequence) of one <xref:System.Windows.Documents.FixedDocument> or multiple documents.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -551,10 +551,10 @@
         <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Windows.Xps.Packaging.XpsDigitalSignature" /> objects that represent the signatures that are associated with the package.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Xps.Packaging.XpsDocument.Signatures%2A> list identifies what parts are signed and whether the signatures are valid.  
-  
+The <xref:System.Windows.Xps.Packaging.XpsDocument.Signatures%2A> list identifies what parts are signed and whether the signatures are valid.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -585,18 +585,18 @@
         <returns>An <see cref="T:System.Windows.Xps.Packaging.XpsDigitalSignature" /> that contains information about the signature.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `certificate` is `null`, a dialog box appears that enables the user to select an installed X.509 certificate, such as from a smart card reader.  
+If `certificate` is `null`, a dialog box appears that enables the user to select an installed X.509 certificate, such as from a smart card reader.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method.  
-  
- [!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
- [!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method.  
+ 
+[!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
+[!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -629,18 +629,18 @@
         <returns>An <see cref="T:System.Windows.Xps.Packaging.XpsDigitalSignature" /> that contains information about the signature.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `certificate` is `null`, a dialog box appears that enables the user to select an installed X.509 certificate, such as from a smart card reader.  
+If `certificate` is `null`, a dialog box appears that enables the user to select an installed X.509 certificate, such as from a smart card reader.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method.  
-  
- [!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
- [!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method.  
+ 
+[!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
+[!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -676,20 +676,20 @@
         <returns>An <see cref="T:System.Windows.Xps.Packaging.XpsDigitalSignature" /> that contains information about the signature.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `certificate` is `null`, a dialog box is presented that enables the user to select an installed X.509 certificate, such as from a smart card reader.  
+If `certificate` is `null`, a dialog box is presented that enables the user to select an installed X.509 certificate, such as from a smart card reader.  
+ 
+<xref:System.Security.Cryptography.CryptographicException> is thrown if `certificate` is `null` and no certificates are installed.  
+ 
   
- <xref:System.Security.Cryptography.CryptographicException> is thrown if `certificate` is `null` and no certificates are installed.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method.  
-  
- [!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
- [!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method.  
+ 
+[!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
+[!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -739,13 +739,13 @@
         <summary>Signs a collection of package parts by using a specified X.509 certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method.  
-  
- [!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
- [!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method.  
+ 
+[!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
+[!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -759,18 +759,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
- [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
- [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
-  
- The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
-  
+The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
+[!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
+[!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
+ 
+The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

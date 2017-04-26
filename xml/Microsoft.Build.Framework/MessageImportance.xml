@@ -13,12 +13,12 @@
     <summary>Specifies constants that define the importance of a build message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to write a basic logger that responds to build events.  
-  
- [!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
-  
+The following example shows how to write a basic logger that responds to build events.  
+ 
+[!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

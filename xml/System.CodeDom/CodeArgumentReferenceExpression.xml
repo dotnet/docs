@@ -22,21 +22,21 @@
     <summary>Represents a reference to the value of an argument passed to a method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeArgumentReferenceExpression> can be used in a method to reference the value of a parameter that has been passed to the method.  
+<xref:System.CodeDom.CodeArgumentReferenceExpression> can be used in a method to reference the value of a parameter that has been passed to the method.  
+ 
+The <xref:System.CodeDom.CodeArgumentReferenceExpression.ParameterName%2A> property specifies the name of the parameter to reference.  
+ 
   
- The <xref:System.CodeDom.CodeArgumentReferenceExpression.ParameterName%2A> property specifies the name of the parameter to reference.  
-  
-   
-  
+ 
 ## Examples  
- The following example code defines a method that invokes `Console.WriteLine` to output the string parameter passed to the method. A <xref:System.CodeDom.CodeArgumentReferenceExpression> references the argument passed to the method by method parameter name.  
-  
- [!code-cpp[CodeArgumentReferenceExpressionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeArgumentReferenceExpressionExample/CPP/codeargumentreferenceexpressionexample.cpp#2)]
- [!code-csharp[CodeArgumentReferenceExpressionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeArgumentReferenceExpressionExample/CS/codeargumentreferenceexpressionexample.cs#2)]
- [!code-vb[CodeArgumentReferenceExpressionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeArgumentReferenceExpressionExample/VB/codeargumentreferenceexpressionexample.vb#2)]  
-  
+The following example code defines a method that invokes `Console.WriteLine` to output the string parameter passed to the method. A <xref:System.CodeDom.CodeArgumentReferenceExpression> references the argument passed to the method by method parameter name.  
+ 
+[!code-cpp[CodeArgumentReferenceExpressionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeArgumentReferenceExpressionExample/CPP/codeargumentreferenceexpressionexample.cpp#2)]
+[!code-csharp[CodeArgumentReferenceExpressionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeArgumentReferenceExpressionExample/CS/codeargumentreferenceexpressionexample.cs#2)]
+[!code-vb[CodeArgumentReferenceExpressionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeArgumentReferenceExpressionExample/VB/codeargumentreferenceexpressionexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

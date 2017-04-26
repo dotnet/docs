@@ -72,10 +72,10 @@
           <see langword="true" /> if will compile code that uses the [unsafe](~/docs/csharp/language-reference/keywords/unsafe.md) keyword; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [/unsafe (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/unsafe-compiler-option.md).  
-  
+For more information, see [/unsafe (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/unsafe-compiler-option.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -117,10 +117,10 @@
         <value>The preferred base address at which to load a DLL.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default base address for a DLL is set by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] common language runtime. For more information, see [/baseaddress (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/baseaddress-compiler-option.md).  
-  
+The default base address for a DLL is set by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] common language runtime. For more information, see [/baseaddress (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/baseaddress-compiler-option.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -145,10 +145,10 @@
           <see langword="true" /> if compilation succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will get called during execution if a host object was passed to the `Csc` task.  
-  
+This method will get called during execution if a host object was passed to the `Csc` task.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -171,10 +171,10 @@
         <value>Gets or sets a Boolean value that indicates whether true if the <c>Csc</c> task should cause an exception at run time for integer arithmetic that overflows the bounds of the data type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [/checked (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/checked-compiler-option.md).  
-  
+For more information, see [/checked (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/checked-compiler-option.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -197,10 +197,10 @@
         <value>The list of warnings to be disabled.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [/nowarn (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/nowarn-compiler-option.md).  
-  
+For more information, see [/nowarn (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/nowarn-compiler-option.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -223,10 +223,10 @@
         <value>The XML file to hold the documentation comments.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [/doc (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/doc-compiler-option.md).  
-  
+For more information, see [/doc (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/doc-compiler-option.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -268,10 +268,10 @@
         <value>The method to report a C# internal compiler error to Microsoft.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can have a value of `prompt`, `send`, or `none`. If the property is set to `prompt`, you will receive a prompt when an internal compiler error occurs. The prompt lets you send a bug report electronically to Microsoft. If the property is set to `send`, a bug report is sent automatically. If the property is set to `none`, the error is reported only in the text output of the compiler. Default is `none`. For more information, see [/errorreport (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/errorreport-compiler-option.md).  
-  
+This property can have a value of `prompt`, `send`, or `none`. If the property is set to `prompt`, you will receive a prompt when an internal compiler error occurs. The prompt lets you send a bug report electronically to Microsoft. If the property is set to `send`, a bug report is sent automatically. If the property is set to `none`, the error is reported only in the text output of the compiler. Default is `none`. For more information, see [/errorreport (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/errorreport-compiler-option.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -295,10 +295,10 @@
           <see langword="true" /> if the <c>Csc</c> task should generate the absolute path to the file in the compiler output; <see langword="false" /> if the <c>Csc</c> task should generate the name of the file in the compiler output.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default is `false`. For more information, see [/fullpaths (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/fullpaths-compiler-option.md).  
-  
+The default is `false`. For more information, see [/fullpaths (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/fullpaths-compiler-option.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -342,10 +342,10 @@
         <returns>A host object initialization status value that indicates what the next action should be.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will get called during execution of this task if a host object was passed to the `Csc` task.  
-  
+This method will get called during execution of this task if a host object was passed to the `Csc` task.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -368,10 +368,10 @@
         <value>The version of the language to use.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [/langversion (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/langversion-compiler-option.md).  
-  
+For more information, see [/langversion (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/langversion-compiler-option.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -394,10 +394,10 @@
         <value>An assembly whose non-public types a .netmodule can access.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [/moduleassemblyname (C# Compiler Option)](~/docs/csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md).  
-  
+For more information, see [/moduleassemblyname (C# Compiler Option)](~/docs/csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -421,10 +421,10 @@
           <see langword="true" /> if the <c>Csc</c> task should prevent the import of mscorlib.dll; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property if you want to define or create your own System namespace and objects. For more information, see [/nostdlib (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/nostdlib-compiler-option.md).  
-  
+Use this property if you want to define or create your own System namespace and objects. For more information, see [/nostdlib (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/nostdlib-compiler-option.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -447,10 +447,10 @@
         <value>The path of the .pdb file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [/pdb (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/pdb-compiler-option.md).  
-  
+For more information, see [/pdb (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/pdb-compiler-option.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -473,10 +473,10 @@
         <value>Returns the name of the language.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If set to null, “/preferreduilang” is omitted and the compiler uses its default setting.  
-  
+If set to null, “/preferreduilang” is omitted and the compiler uses its default setting.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -519,10 +519,10 @@
           <see langword="true" /> if the <c>Csc</c> task should use the in-process compiler object, if available; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used only by [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
-  
+Used only by [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -545,10 +545,10 @@
         <value>The warning level for the compiler to display.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [/warn (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/warn-compiler-option.md).  
-  
+For more information, see [/warn (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/warn-compiler-option.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -571,10 +571,10 @@
         <value>The list of warnings to treat as errors.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [/warnaserror (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/warnaserror-compiler-option.md).  
-  
+For more information, see [/warnaserror (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/warnaserror-compiler-option.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -597,10 +597,10 @@
         <value>The list of warnings that are not treated as errors.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [/warnaserror (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/warnaserror-compiler-option.md).  
-  
+For more information, see [/warnaserror (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/warnaserror-compiler-option.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

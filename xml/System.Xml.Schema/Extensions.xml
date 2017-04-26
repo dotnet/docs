@@ -19,17 +19,17 @@
     <summary>This class contains the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] extension methods for XSD validation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class also contains methods to get the post-schema-validation infoset (PSVI) of a validated XML node.  
+This class also contains methods to get the post-schema-validation infoset (PSVI) of a validated XML node.  
+ 
+When you validate an <xref:System.Xml.Linq.XDocument>, <xref:System.Xml.Linq.XElement>, or <xref:System.Xml.Linq.XAttribute>, you can also optionally populate the XML tree with the post-schema-validation infoset. PSVI information is added as an annotation of type <xref:System.Xml.Schema.XmlSchemaInfo?displayProperty=fullName>.  
+ 
   
- When you validate an <xref:System.Xml.Linq.XDocument>, <xref:System.Xml.Linq.XElement>, or <xref:System.Xml.Linq.XAttribute>, you can also optionally populate the XML tree with the post-schema-validation infoset. PSVI information is added as an annotation of type <xref:System.Xml.Schema.XmlSchemaInfo?displayProperty=fullName>.  
-  
-   
-  
+ 
 ## Examples  
- The XSD in [Sample XSD File: Customers and Orders](http://msdn.microsoft.com/library/8b05efe3-cc5e-4c7b-b322-892dbda41687) contains a schema that can be used to validate the XML document in [Sample XML File: Customers and Orders (LINQ to XML)](http://msdn.microsoft.com/library/26790c41-5976-4558-a096-d0f67bfc4d92). The following example loads the schema and the document, validates the document, changes the document so that the `xs:key` and `xs:keyref` relationship is not valid, and then attempts to validate again.  
-  
+The XSD in [Sample XSD File: Customers and Orders](http://msdn.microsoft.com/library/8b05efe3-cc5e-4c7b-b322-892dbda41687) contains a schema that can be used to validate the XML document in [Sample XML File: Customers and Orders (LINQ to XML)](http://msdn.microsoft.com/library/26790c41-5976-4558-a096-d0f67bfc4d92). The following example loads the schema and the document, validates the document, changes the document so that the `xs:key` and `xs:keyref` relationship is not valid, and then attempts to validate again.  
+ 
 ```csharp  
   
                 XmlSchemaSet schemas = new XmlSchemaSet();  
@@ -59,7 +59,7 @@ custOrd.Validate(schemas, (o, e) =>
                      });  
 Console.WriteLine("custOrd {0}", errors ? "did not validate" : "validated");  
 ```  
-  
+ 
 ```vb  
   
                 Dim errors As Boolean = False  
@@ -88,9 +88,9 @@ Sub Main()
     Console.WriteLine("custOrd {0}", IIf(errors, "did not validate", "validated"))  
 End Sub  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 Validating custOrd  
 custOrd validated  
@@ -99,7 +99,7 @@ Validating custOrd
 The key sequence 'AAAAA' in Keyref fails to refer to some key.  
 custOrd did not validate  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -130,14 +130,14 @@ custOrd did not validate
         <returns>A <see cref="T:System.Xml.Schema.IXmlSchemaInfo" /> that contains the post-schema-validation infoset for an <see cref="T:System.Xml.Linq.XAttribute" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Xml.Schema.IXmlSchemaInfo> returned by this method to determine certain characteristics of a validated attribute. For example, you can determine if the attribute came from a default attribute value in an XSD.  
-  
- You use the <xref:System.Xml.Schema.IXmlSchemaInfo.SchemaAttribute%2A> property to get a partial validation type (<xref:System.Xml.Schema.XmlSchemaAttribute>). You can use it to revalidate an attribute without validating an entire document.  
-  
- For an example of this property, see <xref:System.Xml.Schema.Extensions.Validate%2A>.  
-  
+You can use the <xref:System.Xml.Schema.IXmlSchemaInfo> returned by this method to determine certain characteristics of a validated attribute. For example, you can determine if the attribute came from a default attribute value in an XSD.  
+ 
+You use the <xref:System.Xml.Schema.IXmlSchemaInfo.SchemaAttribute%2A> property to get a partial validation type (<xref:System.Xml.Schema.XmlSchemaAttribute>). You can use it to revalidate an attribute without validating an entire document.  
+ 
+For an example of this property, see <xref:System.Xml.Schema.Extensions.Validate%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,19 +168,19 @@ custOrd did not validate
         <returns>A <see cref="T:System.Xml.Schema.IXmlSchemaInfo" /> that contains the post-schema-validation infoset (PSVI) for an <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Xml.Schema.IXmlSchemaInfo> returned by this method to determine certain characteristics of a validated element. For example, you can determine the dynamic schema type of the element.  
+You can use the <xref:System.Xml.Schema.IXmlSchemaInfo> returned by this method to determine certain characteristics of a validated element. For example, you can determine the dynamic schema type of the element.  
+ 
+You use the <xref:System.Xml.Schema.IXmlSchemaInfo.SchemaElement%2A> property to get a partial validation type (<xref:System.Xml.Schema.XmlSchemaElement>). You can use it to revalidate a sub-tree with an element at its root without validating an entire document.  
+ 
+For an example of this property, see <xref:System.Xml.Schema.Extensions.Validate%2A>.  
+ 
   
- You use the <xref:System.Xml.Schema.IXmlSchemaInfo.SchemaElement%2A> property to get a partial validation type (<xref:System.Xml.Schema.XmlSchemaElement>). You can use it to revalidate a sub-tree with an element at its root without validating an entire document.  
-  
- For an example of this property, see <xref:System.Xml.Schema.Extensions.Validate%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example populates the tree with a PSVI. After validation, it prints all elements and attributes in the tree that are invalid according to the PSVI.  
-  
+The following example populates the tree with a PSVI. After validation, it prints all elements and attributes in the tree that are invalid according to the PSVI.  
+ 
 ```csharp  
   
                 static void DumpInvalidNodes(XElement el)  
@@ -255,7 +255,7 @@ static void Main(string[] args)
     DumpInvalidNodes(doc1.Root);  
 }  
 ```  
-  
+ 
 ```vb  
   
                 Private Sub DumpInvalidNodes(ByVal el As XElement)  
@@ -338,9 +338,9 @@ Sub Main()
     DumpInvalidNodes(doc1.Root)  
 End Sub  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 Validating doc1 ...  
 The 'GrandChild2' element is invalid - The value 'ZZZ' is invalid according to its datatype 'GCType' - The Enumeration constraint failed.  
@@ -351,7 +351,7 @@ Invalid Element /Root/Child1
 Invalid Element /Root/Child1/GrandChild2  
 Invalid Element /Root/Child1/GrandChild3  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,15 +385,15 @@ Invalid Element /Root/Child1/GrandChild3
         <summary>This method validates that an <see cref="T:System.Xml.Linq.XDocument" /> conforms to an XSD in an <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This extension method validates that the <xref:System.Xml.Linq.XDocument> conforms to the schema content model in <xref:System.Xml.Schema.XmlSchemaSet>.  
+This extension method validates that the <xref:System.Xml.Linq.XDocument> conforms to the schema content model in <xref:System.Xml.Schema.XmlSchemaSet>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Xml.Schema.XmlSchemaSet>, then validates two <xref:System.Xml.Linq.XDocument> objects against the schema set. One of the documents is valid, the other is not.  
-  
+The following example creates an <xref:System.Xml.Schema.XmlSchemaSet>, then validates two <xref:System.Xml.Linq.XDocument> objects against the schema set. One of the documents is valid, the other is not.  
+ 
 ```csharp  
   
                 string xsdMarkup =  
@@ -443,7 +443,7 @@ doc2.Validate(schemas, (o, e) =>
                      });  
 Console.WriteLine("doc2 {0}", errors ? "did not validate" : "validated");  
 ```  
-  
+ 
 ```vb  
   
                 Dim errors As Boolean = False  
@@ -496,9 +496,9 @@ Sub Main()
     Console.WriteLine("doc2 {0}", IIf(errors, "did not validate", "validated"))  
 End Sub  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 Validating doc1  
 doc1 validated  
@@ -507,7 +507,7 @@ Validating doc2
 The element 'Root' has invalid child element 'Child3'. List of possible elements expected: 'Child2'.  
 doc2 did not validate  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">Thrown for XML Schema Definition Language (XSD) validation errors.</exception>
@@ -544,30 +544,30 @@ doc2 did not validate
         <summary>This method validates that an <see cref="T:System.Xml.Linq.XAttribute" /> conforms to a specified <see cref="T:System.Xml.Schema.XmlSchemaObject" /> and an <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to validate that an <xref:System.Xml.Linq.XAttribute> conforms to a schema. You typically use this method when you have modified an attribute, and you want to make sure that it still conforms to its schema. You could validate the entire document, but it takes less processing time to validate just the attribute.  
-  
- If you pass `null` for `validationEventHandler`, this method raises an exception upon validation errors. Validation warnings will not raise an exception.  
-  
- To validate an attribute, you use an instance of <xref:System.Xml.Schema.XmlSchemaObject>. You can obtain this instance in various ways. An easy way is as follows:  
-  
+You can use this method to validate that an <xref:System.Xml.Linq.XAttribute> conforms to a schema. You typically use this method when you have modified an attribute, and you want to make sure that it still conforms to its schema. You could validate the entire document, but it takes less processing time to validate just the attribute.  
+ 
+If you pass `null` for `validationEventHandler`, this method raises an exception upon validation errors. Validation warnings will not raise an exception.  
+ 
+To validate an attribute, you use an instance of <xref:System.Xml.Schema.XmlSchemaObject>. You can obtain this instance in various ways. An easy way is as follows:  
+ 
 1.  Validate that a document conforms to a schema.  
-  
+ 
 2.  Add the post-schema-validation infoset (PSVI) by calling the <xref:System.Xml.Schema.Extensions.Validate%2A> extension method.  
-  
+ 
 3.  Call the <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A> extension method to retrieve an object that implements <xref:System.Xml.Schema.IXmlSchemaInfo>. From the retrieved object, you can get an <xref:System.Xml.Schema.XmlSchemaObject>.  
+ 
+   -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XElement>, the type will be <xref:System.Xml.Schema.XmlSchemaElement>.  
+ 
+   -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XAttribute>, the type will be <xref:System.Xml.Schema.XmlSchemaAttribute>.  
+ 
+After you have an instance of an <xref:System.Xml.Schema.XmlSchemaObject>, you can use this method to validate an attribute.  
+ 
   
-    -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XElement>, the type will be <xref:System.Xml.Schema.XmlSchemaElement>.  
-  
-    -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XAttribute>, the type will be <xref:System.Xml.Schema.XmlSchemaAttribute>.  
-  
- After you have an instance of an <xref:System.Xml.Schema.XmlSchemaObject>, you can use this method to validate an attribute.  
-  
-   
-  
+ 
 ## Examples  
-  
+ 
 ```csharp  
   
                 string xsdMarkup =  
@@ -634,7 +634,7 @@ lang.Validate(lang.GetSchemaInfo().SchemaAttribute, schemas, (sender, e) =>
     });  
 Console.WriteLine("lang {0}", errors ? "did not validate" : "validated");  
 ```  
-  
+ 
 ```vb  
   
                 Dim errors As Boolean = False  
@@ -696,9 +696,9 @@ Sub Main()
     Console.WriteLine("lang {0}", IIf(errors, "did not validate", "validated"))  
 End Sub  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 Validating doc1 ...  
 doc1 validated  
@@ -710,7 +710,7 @@ Validating Lang attribute ...
 The 'Lang' attribute is invalid - The value 'VC' is invalid according to its datatype 'Token' - The Enumeration constraint failed.  
 lang did not validate  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">Thrown for XML Schema Definition Language (XSD) validation errors.</exception>
@@ -747,23 +747,23 @@ lang did not validate
         <summary>Validates that an <see cref="T:System.Xml.Linq.XDocument" /> conforms to an XSD in an <see cref="T:System.Xml.Schema.XmlSchemaSet" />, optionally populating the XML tree with the post-schema-validation infoset (PSVI).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This extension method validates that the <xref:System.Xml.Linq.XDocument> conforms to the schema content model in <xref:System.Xml.Schema.XmlSchemaSet>.  
-  
- If `addSchemaInfo` is `true`, this method populates the XML tree with the post-schema-validation infoset (PSVI).  
-  
- There are two steps to populating the XML tree with the PSVI.  
-  
+This extension method validates that the <xref:System.Xml.Linq.XDocument> conforms to the schema content model in <xref:System.Xml.Schema.XmlSchemaSet>.  
+ 
+If `addSchemaInfo` is `true`, this method populates the XML tree with the post-schema-validation infoset (PSVI).  
+ 
+There are two steps to populating the XML tree with the PSVI.  
+ 
 1.  First, an annotation is added to all nodes in the tree to enable you to call <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A?displayProperty=fullName> or <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A?displayProperty=fullName> on an element or attribute in the tree.  
-  
+ 
 2.  Second, default elements and attributes defined in the XSD are added to the XML tree. By calling one of the <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A> methods, you can determine if a specific element or attribute was added from the XSD as a default element or attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example contains an XSD that defines the `Child2` element with an `Att1` attribute with a default value. After successfully validating the document, the attribute with the default value is added to the XML tree. Note that the default attribute is not added to `doc2`, which does not validate against the schema.  
-  
+The following example contains an XSD that defines the `Child2` element with an `Att1` attribute with a default value. After successfully validating the document, the attribute with the default value is added to the XML tree. Note that the default attribute is not added to `doc2`, which does not validate against the schema.  
+ 
 ```csharp  
   
                 string xsdMarkup =  
@@ -829,7 +829,7 @@ Console.WriteLine();
 Console.WriteLine("Contents of doc2:");  
 Console.WriteLine(doc2);  
 ```  
-  
+ 
 ```vb  
   
                 Dim errors As Boolean = False  
@@ -894,9 +894,9 @@ Sub Main()
     Console.WriteLine(doc2)  
 End Sub  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 Validating doc1  
 doc1 validated  
@@ -917,9 +917,9 @@ Contents of doc2:
   <Child3>content1</Child3>  
 </Root>  
 ```  
-  
- The following example populates the tree with PSVI. After validation, it prints all elements and attributes in the tree that are invalid according to the PSVI.  
-  
+ 
+The following example populates the tree with PSVI. After validation, it prints all elements and attributes in the tree that are invalid according to the PSVI.  
+ 
 ```csharp  
   
                 static void DumpInvalidNodes(XElement el)  
@@ -994,7 +994,7 @@ static void Main(string[] args)
     DumpInvalidNodes(doc1.Root);  
 }  
 ```  
-  
+ 
 ```vb  
   
                 Private Sub DumpInvalidNodes(ByVal el As XElement)  
@@ -1077,9 +1077,9 @@ Sub Main()
     DumpInvalidNodes(doc1.Root)  
 End Sub  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 Validating doc1 ...  
 The 'GrandChild2' element is invalid - The value 'ZZZ' is invalid according to its datatype 'GCType' - The Enumeration constraint failed.  
@@ -1090,7 +1090,7 @@ Invalid Element /Root/Child1
 Invalid Element /Root/Child1/GrandChild2  
 Invalid Element /Root/Child1/GrandChild3  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">Thrown for XML Schema Definition Language (XSD) validation errors.</exception>
@@ -1127,30 +1127,30 @@ Invalid Element /Root/Child1/GrandChild3
         <summary>This method validates that an <see cref="T:System.Xml.Linq.XElement" /> sub-tree conforms to a specified <see cref="T:System.Xml.Schema.XmlSchemaObject" /> and an <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to validate that a sub-tree (with an <xref:System.Xml.Linq.XElement> at its root) conforms to a schema. You typically use this method when you have modified a sub-tree, and you want to make sure that it still conforms to its schema. You could validate the entire document, but it takes less processing time to validate a just a sub-tree.  
-  
- If you pass `null` for `validationEventHandler`, then this method raises an exception upon validation errors. Validation warnings will not raise an exception.  
-  
- To validate a sub-tree, you use an instance of <xref:System.Xml.Schema.XmlSchemaObject>. You can obtain this instance in various ways. An easy way is as follows:  
-  
+You can use this method to validate that a sub-tree (with an <xref:System.Xml.Linq.XElement> at its root) conforms to a schema. You typically use this method when you have modified a sub-tree, and you want to make sure that it still conforms to its schema. You could validate the entire document, but it takes less processing time to validate a just a sub-tree.  
+ 
+If you pass `null` for `validationEventHandler`, then this method raises an exception upon validation errors. Validation warnings will not raise an exception.  
+ 
+To validate a sub-tree, you use an instance of <xref:System.Xml.Schema.XmlSchemaObject>. You can obtain this instance in various ways. An easy way is as follows:  
+ 
 1.  Validate that a document conforms to a schema.  
-  
+ 
 2.  Add the post-schema-validation infoset (PSVI) by calling the <xref:System.Xml.Schema.Extensions.Validate%2A> extension method.  
-  
+ 
 3.  Call the <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A> extension method to retrieve an object that implements <xref:System.Xml.Schema.IXmlSchemaInfo>. From the retrieved object, you can get an <xref:System.Xml.Schema.XmlSchemaObject>.  
+ 
+   -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XElement>, the type will be <xref:System.Xml.Schema.XmlSchemaElement>.  
+ 
+   -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XAttribute>, the type will be <xref:System.Xml.Schema.XmlSchemaAttribute>.  
+ 
+After you have an instance of an <xref:System.Xml.Schema.XmlSchemaObject>, you can use this method to validate an sub-tree.  
+ 
   
-    -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XElement>, the type will be <xref:System.Xml.Schema.XmlSchemaElement>.  
-  
-    -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XAttribute>, the type will be <xref:System.Xml.Schema.XmlSchemaAttribute>.  
-  
- After you have an instance of an <xref:System.Xml.Schema.XmlSchemaObject>, you can use this method to validate an sub-tree.  
-  
-   
-  
+ 
 ## Examples  
-  
+ 
 ```csharp  
   
                 string xsdMarkup =  
@@ -1215,7 +1215,7 @@ child1.Validate(child1.GetSchemaInfo().SchemaElement, schemas, (sender, e) =>
     });  
 Console.WriteLine("child1 {0}", errors ? "did not validate" : "validated");  
 ```  
-  
+ 
 ```vb  
   
                 Dim errors As Boolean = False  
@@ -1279,9 +1279,9 @@ Sub Main()
     Console.WriteLine("child1 {0}", IIf(errors, "did not validate", "validated"))  
 End Sub  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 Validating doc1 ...  
 doc1 validated  
@@ -1293,7 +1293,7 @@ Validating Child1 after second edit ...
 The element 'Child1' has invalid child element 'GrandChild3'.  
 child1 did not validate  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">Thrown for XML Schema Definition Language (XSD) validation errors.</exception>
@@ -1332,32 +1332,32 @@ child1 did not validate
         <summary>Validates that an <see cref="T:System.Xml.Linq.XAttribute" /> conforms to a specified <see cref="T:System.Xml.Schema.XmlSchemaObject" /> and an <see cref="T:System.Xml.Schema.XmlSchemaSet" />, optionally populating the XML tree with the post-schema-validation infoset (PSVI).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to validate that an <xref:System.Xml.Linq.XAttribute> conforms to a schema. You typically use this method when you have modified an attribute, and you want to make sure that it still conforms to its schema. You could validate the entire document, but it takes less processing time to validate just the attribute.  
-  
- If `addSchemaInfo` is `true`, this method populates the attribute with the post-schema-validation infoset (PSVI). After you have populated the XML tree with the PSVI, you can call <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A?displayProperty=fullName> on the validated attribute. This is useful if you are writing code that relies on data returned by <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A>.  
-  
- If you pass `null` for `validationEventHandler`, then this method raises an exception upon validation errors. Validation warnings will not raise an exception.  
-  
- To validate an attribute, you use an instance of <xref:System.Xml.Schema.XmlSchemaObject>. You can obtain this instance in various ways. An easy way is as follows:  
-  
+You can use this method to validate that an <xref:System.Xml.Linq.XAttribute> conforms to a schema. You typically use this method when you have modified an attribute, and you want to make sure that it still conforms to its schema. You could validate the entire document, but it takes less processing time to validate just the attribute.  
+ 
+If `addSchemaInfo` is `true`, this method populates the attribute with the post-schema-validation infoset (PSVI). After you have populated the XML tree with the PSVI, you can call <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A?displayProperty=fullName> on the validated attribute. This is useful if you are writing code that relies on data returned by <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A>.  
+ 
+If you pass `null` for `validationEventHandler`, then this method raises an exception upon validation errors. Validation warnings will not raise an exception.  
+ 
+To validate an attribute, you use an instance of <xref:System.Xml.Schema.XmlSchemaObject>. You can obtain this instance in various ways. An easy way is as follows:  
+ 
 1.  Validate that a document conforms to a schema.  
-  
+ 
 2.  Add the post-schema-validation infoset (PSVI) by calling the <xref:System.Xml.Schema.Extensions.Validate%2A> extension method.  
-  
+ 
 3.  Call the <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A> extension method to retrieve an object that implements <xref:System.Xml.Schema.IXmlSchemaInfo>. From the retrieved object, you can get an <xref:System.Xml.Schema.XmlSchemaObject>.  
+ 
+   -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XElement>, the type will be <xref:System.Xml.Schema.XmlSchemaElement>.  
+ 
+   -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XAttribute>, the type will be <xref:System.Xml.Schema.XmlSchemaAttribute>.  
+ 
+After you have an instance of an <xref:System.Xml.Schema.XmlSchemaObject>, you can use this method to validate an attribute.  
+ 
   
-    -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XElement>, the type will be <xref:System.Xml.Schema.XmlSchemaElement>.  
-  
-    -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XAttribute>, the type will be <xref:System.Xml.Schema.XmlSchemaAttribute>.  
-  
- After you have an instance of an <xref:System.Xml.Schema.XmlSchemaObject>, you can use this method to validate an attribute.  
-  
-   
-  
+ 
 ## Examples  
-  
+ 
 ```csharp  
   
                 static void DumpInvalidNodes(XElement el)  
@@ -1451,7 +1451,7 @@ static void Main(string[] args)
     DumpInvalidNodes(doc1.Root);  
 }  
 ```  
-  
+ 
 ```vb  
   
                 Private Sub DumpInvalidNodes(ByVal el As XElement)  
@@ -1543,9 +1543,9 @@ Sub Main()
     DumpInvalidNodes(doc1.Root)  
 End Sub  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 Validating doc1 ...  
 doc1 validated  
@@ -1558,7 +1558,7 @@ The 'Lang' attribute is invalid - The value 'VC' is invalid according to its dat
 lang did not validate  
 Invalid Attribute /Root/@Lang  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">Thrown for XML Schema Definition Language (XSD) validation errors.</exception>
@@ -1597,38 +1597,38 @@ Invalid Attribute /Root/@Lang
         <summary>Validates that an <see cref="T:System.Xml.Linq.XElement" /> sub-tree conforms to a specified <see cref="T:System.Xml.Schema.XmlSchemaObject" /> and an <see cref="T:System.Xml.Schema.XmlSchemaSet" />, optionally populating the XML tree with the post-schema-validation infoset (PSVI).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to validate that a sub-tree (with an <xref:System.Xml.Linq.XElement> at the root of the sub-tree) conforms to a schema. You typically use this method when you have modified a sub-tree, and you want to make sure that it still conforms to its schema. You could validate the entire document, but it takes less processing time to validate a just a sub-tree.  
-  
- If `addSchemaInfo` is `true`, then this method populates the XML tree with the post-schema-validation infoset (PSVI).  
-  
- There are two aspects of populating the XML tree with the PSVI.  
-  
- First, an annotation is added to all nodes in the tree such that you can now call <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A> on an element or attribute in the tree.  
-  
- Second, default elements and attributes defined in the XSD are added to the XML tree. By calling one of the <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A> methods, you can determine if a specific element or attribute was added from the XSD as a default element or attribute.  
-  
- If you pass `null` for `validationEventHandler`, then this method raises an exception upon validation errors. Validation warnings will not raise an exception.  
-  
- To validate a sub-tree, you use an instance of <xref:System.Xml.Schema.XmlSchemaObject>. You can obtain this instance in various ways. An easy way is as follows:  
-  
+You can use this method to validate that a sub-tree (with an <xref:System.Xml.Linq.XElement> at the root of the sub-tree) conforms to a schema. You typically use this method when you have modified a sub-tree, and you want to make sure that it still conforms to its schema. You could validate the entire document, but it takes less processing time to validate a just a sub-tree.  
+ 
+If `addSchemaInfo` is `true`, then this method populates the XML tree with the post-schema-validation infoset (PSVI).  
+ 
+There are two aspects of populating the XML tree with the PSVI.  
+ 
+First, an annotation is added to all nodes in the tree such that you can now call <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A> on an element or attribute in the tree.  
+ 
+Second, default elements and attributes defined in the XSD are added to the XML tree. By calling one of the <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A> methods, you can determine if a specific element or attribute was added from the XSD as a default element or attribute.  
+ 
+If you pass `null` for `validationEventHandler`, then this method raises an exception upon validation errors. Validation warnings will not raise an exception.  
+ 
+To validate a sub-tree, you use an instance of <xref:System.Xml.Schema.XmlSchemaObject>. You can obtain this instance in various ways. An easy way is as follows:  
+ 
 1.  Validate that a document conforms to a schema.  
-  
+ 
 2.  Add the post-schema-validation infoset (PSVI) by calling the <xref:System.Xml.Schema.Extensions.Validate%2A> extension method.  
-  
+ 
 3.  Call the <xref:System.Xml.Schema.Extensions.GetSchemaInfo%2A> extension method to retrieve an object that implements <xref:System.Xml.Schema.IXmlSchemaInfo>. From the retrieved object, you can get an <xref:System.Xml.Schema.XmlSchemaObject>.  
+ 
+   -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XElement>, the type will be <xref:System.Xml.Schema.XmlSchemaElement>.  
+ 
+   -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XAttribute>, the type will be <xref:System.Xml.Schema.XmlSchemaAttribute>.  
+ 
+After you have an instance of an <xref:System.Xml.Schema.XmlSchemaObject>, you can use this method to validate a sub-tree..  
+ 
   
-    -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XElement>, the type will be <xref:System.Xml.Schema.XmlSchemaElement>.  
-  
-    -   If you get an <xref:System.Xml.Schema.XmlSchemaObject> for an <xref:System.Xml.Linq.XAttribute>, the type will be <xref:System.Xml.Schema.XmlSchemaAttribute>.  
-  
- After you have an instance of an <xref:System.Xml.Schema.XmlSchemaObject>, you can use this method to validate a sub-tree..  
-  
-   
-  
+ 
 ## Examples  
-  
+ 
 ```csharp  
   
                 string xsdMarkup =  
@@ -1694,7 +1694,7 @@ Console.WriteLine();
 Console.WriteLine("Contents of doc2:");  
 Console.WriteLine(doc2);  
 ```  
-  
+ 
 ```vb  
   
                 Dim errors As Boolean = False  
@@ -1762,9 +1762,9 @@ Sub Main()
     Console.WriteLine(doc2)  
 End Sub  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 Validating doc1  
 doc1 validated  
@@ -1785,7 +1785,7 @@ Contents of doc2:
   <Child3>content1</Child3>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">Thrown for XML Schema Definition Language (XSD) validation errors.</exception>
@@ -1801,12 +1801,12 @@ Contents of doc2:
         <summary>Gets the post-schema-validation infoset (PSVI) of a validated node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After you have validated an <xref:System.Xml.Linq.XDocument>, you can retrieve the post-schema-validation infoset for an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute> that is contained in the document.  
-  
- After retrieving the <xref:System.Xml.Schema.IXmlSchemaInfo> object, you can use the <xref:System.Xml.Schema.IXmlSchemaInfo.SchemaAttribute%2A> or <xref:System.Xml.Schema.IXmlSchemaInfo.SchemaElement%2A> properties to get a partial validation type (<xref:System.Xml.Schema.XmlSchemaElement> or <xref:System.Xml.Schema.XmlSchemaAttribute>). You can use the partial validation types to validate an attribute or a sub-tree.  
-  
+After you have validated an <xref:System.Xml.Linq.XDocument>, you can retrieve the post-schema-validation infoset for an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute> that is contained in the document.  
+ 
+After retrieving the <xref:System.Xml.Schema.IXmlSchemaInfo> object, you can use the <xref:System.Xml.Schema.IXmlSchemaInfo.SchemaAttribute%2A> or <xref:System.Xml.Schema.IXmlSchemaInfo.SchemaElement%2A> properties to get a partial validation type (<xref:System.Xml.Schema.XmlSchemaElement> or <xref:System.Xml.Schema.XmlSchemaAttribute>). You can use the partial validation types to validate an attribute or a sub-tree.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1821,14 +1821,14 @@ Contents of doc2:
         <summary>Validates that an <see cref="T:System.Xml.Linq.XDocument" />, an <see cref="T:System.Xml.Linq.XElement" />, or an <see cref="T:System.Xml.Linq.XAttribute" /> conforms to an XSD in an <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These methods use an underlying <xref:System.Xml.XmlReader> to validate the XML tree against an XSD.  
-  
- Validation error and warning messages are handled using the <xref:System.Xml.Schema.ValidationEventHandler> delegate. If no event handler is provided to these methods, validation errors are exposed as an <xref:System.Xml.Schema.XmlSchemaValidationException>. Validation warnings do not cause an <xref:System.Xml.Schema.XmlSchemaValidationException> to be thrown.  
-  
- Some of these extension methods optionally allow population of the post-schema-validation infoset (PSVI).  
-  
+These methods use an underlying <xref:System.Xml.XmlReader> to validate the XML tree against an XSD.  
+ 
+Validation error and warning messages are handled using the <xref:System.Xml.Schema.ValidationEventHandler> delegate. If no event handler is provided to these methods, validation errors are exposed as an <xref:System.Xml.Schema.XmlSchemaValidationException>. Validation warnings do not cause an <xref:System.Xml.Schema.XmlSchemaValidationException> to be thrown.  
+ 
+Some of these extension methods optionally allow population of the post-schema-validation infoset (PSVI).  
+ 
  ]]></format>
         </remarks>
       </Docs>

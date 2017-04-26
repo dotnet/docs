@@ -28,19 +28,19 @@
     <summary>Specifies conditions under which verification of certificates in the X509 chain should be conducted.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These flags indicate the conditions under which chain verification should occur. For example, if an application does not require certificates time values in a chain to be valid, the IgnoreNotTimeValid flag can be used.  
+These flags indicate the conditions under which chain verification should occur. For example, if an application does not require certificates time values in a chain to be valid, the IgnoreNotTimeValid flag can be used.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example opens the current user's personal certificate store, allows the user to select a certificate, then writes certificate and certificate chain information to the console. The output depends on the certificate you select.  
-  
- [!code-cpp[x509chaintest#3](~/samples/snippets/cpp/VS_Snippets_CLR/x509chaintest/CPP/x509chaintest.cpp#3)]
- [!code-csharp[x509chaintest#3](~/samples/snippets/csharp/VS_Snippets_CLR/x509chaintest/CS/x509chaintest.cs#3)]
- [!code-vb[x509chaintest#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509chaintest/vb/x509chaintest.vb#3)]  
-  
+The following example opens the current user's personal certificate store, allows the user to select a certificate, then writes certificate and certificate chain information to the console. The output depends on the certificate you select.  
+ 
+[!code-cpp[x509chaintest#3](~/samples/snippets/cpp/VS_Snippets_CLR/x509chaintest/CPP/x509chaintest.cpp#3)]
+[!code-csharp[x509chaintest#3](~/samples/snippets/csharp/VS_Snippets_CLR/x509chaintest/CS/x509chaintest.cs#3)]
+[!code-vb[x509chaintest#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509chaintest/vb/x509chaintest.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

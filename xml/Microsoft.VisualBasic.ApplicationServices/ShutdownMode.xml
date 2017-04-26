@@ -13,10 +13,10 @@
     <summary>Indicates which condition should cause a Windows Forms application to shut down.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set the shutdown mode for an application through the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle%2A> property. By default, the <xref:System.Windows.Forms.ApplicationContext.OnMainFormClosed%2A> method checks the value of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle%2A> property to determine if the application should shut down.  
-  
+You can set the shutdown mode for an application through the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle%2A> property. By default, the <xref:System.Windows.Forms.ApplicationContext.OnMainFormClosed%2A> method checks the value of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle%2A> property to determine if the application should shut down.  
+ 
  ]]></format>
     </remarks>
   </Docs>

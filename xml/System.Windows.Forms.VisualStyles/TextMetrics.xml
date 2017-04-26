@@ -14,10 +14,10 @@
     <summary>Provides basic information about the font specified by a visual style for a particular element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.VisualStyles.TextMetrics> structure specifies the return values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetTextMetrics%2A?displayProperty=fullName> method.  
-  
+The <xref:System.Windows.Forms.VisualStyles.TextMetrics> structure specifies the return values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetTextMetrics%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <value>The ascent of characters in the font.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The ascent is the distance a character extends above the base line.  
-  
+The ascent is the distance a character extends above the base line.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -64,10 +64,10 @@
         <value>The average width of characters in the font.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The average character width is generally defined as the width of the letter "x". This value does not include the overhang required for bold or italic characters.  
-  
+The average character width is generally defined as the width of the letter "x". This value does not include the overhang required for bold or italic characters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,10 +143,10 @@
         <value>The descent of characters in the font.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The descent is the distance a character extends below the base line.  
-  
+The descent is the distance a character extends below the base line.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,10 +204,10 @@
         <value>The amount of extra leading (space) required between rows.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because the leading area is outside the font, it contains no marks and is not altered by text output calls in either opaque or transparent mode.  
-  
+Because the leading area is outside the font, it contains no marks and is not altered by text output calls in either opaque or transparent mode.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,10 +247,10 @@
         <value>The height of characters in the font.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The height of a character is equal to the <xref:System.Windows.Forms.VisualStyles.TextMetrics.Ascent%2A> plus the <xref:System.Windows.Forms.VisualStyles.TextMetrics.Descent%2A>.  
-  
+The height of a character is equal to the <xref:System.Windows.Forms.VisualStyles.TextMetrics.Ascent%2A> plus the <xref:System.Windows.Forms.VisualStyles.TextMetrics.Descent%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -272,10 +272,10 @@
         <value>The amount of leading inside the bounds set by the <see cref="P:System.Windows.Forms.VisualStyles.TextMetrics.Height" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Accent marks and other diacritical characters may occur in this area.  
-  
+Accent marks and other diacritical characters may occur in this area.  
+ 
  ]]></format>
         </remarks>
       </Docs>

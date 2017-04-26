@@ -21,42 +21,42 @@
     <summary>Provides a strongly typed collection for <see cref="T:System.Web.SiteMapNode" /> objects and implements the <see cref="T:System.Web.UI.IHierarchicalEnumerable" /> interface to support navigating through the collection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNodeCollection> class provides a strongly typed collection for <xref:System.Web.SiteMapNode> objects. It stores <xref:System.Web.SiteMapNode> objects internally in a zero-based array.  
-  
- You can modify a <xref:System.Web.SiteMapNodeCollection> collection when it is first created, and then use the following methods to add, copy, and remove <xref:System.Web.SiteMapNode> objects:  
-  
+The <xref:System.Web.SiteMapNodeCollection> class provides a strongly typed collection for <xref:System.Web.SiteMapNode> objects. It stores <xref:System.Web.SiteMapNode> objects internally in a zero-based array.  
+ 
+You can modify a <xref:System.Web.SiteMapNodeCollection> collection when it is first created, and then use the following methods to add, copy, and remove <xref:System.Web.SiteMapNode> objects:  
+ 
 -   To add <xref:System.Web.SiteMapNode> objects, use the <xref:System.Web.SiteMapNodeCollection.Add%2A>,  <xref:System.Web.SiteMapNodeCollection.AddRange%2A>, and <xref:System.Web.SiteMapNodeCollection.Insert%2A> methods.  
-  
+ 
 -   To copy <xref:System.Web.SiteMapNode> objects, use the <xref:System.Web.SiteMapNodeCollection.CopyTo%2A> method.  
-  
+ 
 -   To remove <xref:System.Web.SiteMapNode> objects, use the <xref:System.Web.SiteMapNodeCollection.Remove%2A> method.  
-  
- You can create a read-only <xref:System.Web.SiteMapNodeCollection>, which does not permit adding, copying, nor removing <xref:System.Web.SiteMapNode> objects, by using the static <xref:System.Web.SiteMapNodeCollection.ReadOnly%2A> method. The <xref:System.Web.SiteMapNodeCollection> collections that are returned by the <xref:System.Web.SiteMapNode.GetAllNodes%2A?displayProperty=fullName> and <xref:System.Web.UI.IHierarchyData.GetChildren%2A> methods are read-only, as is the <xref:System.Web.SiteMapNodeCollection> that is returned when the <xref:System.Web.SiteMapNode.ChildNodes%2A> property is accessed on a <xref:System.Web.SiteMapNode> object that is returned from a provider. A <xref:System.NotSupportedException> exception is thrown, if you attempt to modify a read-only <xref:System.Web.SiteMapNodeCollection> by setting the default indexer property or by using any of the following methods:  
-  
+ 
+You can create a read-only <xref:System.Web.SiteMapNodeCollection>, which does not permit adding, copying, nor removing <xref:System.Web.SiteMapNode> objects, by using the static <xref:System.Web.SiteMapNodeCollection.ReadOnly%2A> method. The <xref:System.Web.SiteMapNodeCollection> collections that are returned by the <xref:System.Web.SiteMapNode.GetAllNodes%2A?displayProperty=fullName> and <xref:System.Web.UI.IHierarchyData.GetChildren%2A> methods are read-only, as is the <xref:System.Web.SiteMapNodeCollection> that is returned when the <xref:System.Web.SiteMapNode.ChildNodes%2A> property is accessed on a <xref:System.Web.SiteMapNode> object that is returned from a provider. A <xref:System.NotSupportedException> exception is thrown, if you attempt to modify a read-only <xref:System.Web.SiteMapNodeCollection> by setting the default indexer property or by using any of the following methods:  
+ 
 -   <xref:System.Web.SiteMapNodeCollection.Add%2A>  
-  
+ 
 -   <xref:System.Web.SiteMapNodeCollection.AddRange%2A>  
-  
+ 
 -   <xref:System.Web.SiteMapNodeCollection.Clear%2A>  
-  
+ 
 -   <xref:System.Web.SiteMapNodeCollection.Insert%2A>  
-  
+ 
 -   <xref:System.Web.SiteMapNodeCollection.Remove%2A>  
-  
+ 
 -   <xref:System.Web.SiteMapNodeCollection.RemoveAt%2A>  
+ 
+Use the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property to check the collection before calling any of the methods in the preceding list.  
+ 
   
- Use the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property to check the collection before calling any of the methods in the preceding list.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Web.SiteMapNodeCollection> collection, and then add <xref:System.Web.SiteMapNode> objects to it using the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method. The <xref:System.Web.SiteMapNodeCollection> is a subset of the current site map, showing only the first two hierarchical levels.  
-  
- [!code-csharp[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/CS/webform2smccs.aspx#2)]
- [!code-vb[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/VB/webform2smcvb.aspx#2)]  
-  
+The following code example demonstrates how to create a <xref:System.Web.SiteMapNodeCollection> collection, and then add <xref:System.Web.SiteMapNode> objects to it using the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method. The <xref:System.Web.SiteMapNodeCollection> is a subset of the current site map, showing only the first two hierarchical levels.  
+ 
+[!code-csharp[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/CS/webform2smccs.aspx#2)]
+[!code-vb[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/VB/webform2smcvb.aspx#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,18 +75,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNodeCollection" /> class, which is the default instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create an empty <xref:System.Web.SiteMapNodeCollection> collection. You can add elements to the <xref:System.Web.SiteMapNodeCollection> using the <xref:System.Web.SiteMapNodeCollection.Add%2A>, <xref:System.Web.SiteMapNodeCollection.AddRange%2A>, or <xref:System.Web.SiteMapNodeCollection.Insert%2A> method.  
+Use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create an empty <xref:System.Web.SiteMapNodeCollection> collection. You can add elements to the <xref:System.Web.SiteMapNodeCollection> using the <xref:System.Web.SiteMapNodeCollection.Add%2A>, <xref:System.Web.SiteMapNodeCollection.AddRange%2A>, or <xref:System.Web.SiteMapNodeCollection.Insert%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a new <xref:System.Web.SiteMapNodeCollection> collection, and then add elements to the <xref:System.Web.SiteMapNodeCollection> with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method.  
-  
- [!code-csharp[System.Web.SiteMapNode_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNode_2/CS/sitemapnode2acs.aspx.cs#1)]
- [!code-vb[System.Web.SiteMapNode_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNode_2/VB/sitemapnode2avb.aspx.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a new <xref:System.Web.SiteMapNodeCollection> collection, and then add elements to the <xref:System.Web.SiteMapNodeCollection> with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method.  
+ 
+[!code-csharp[System.Web.SiteMapNode_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNode_2/CS/sitemapnode2acs.aspx.cs#1)]
+[!code-vb[System.Web.SiteMapNode_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNode_2/VB/sitemapnode2avb.aspx.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,10 +108,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNodeCollection" /> class with the specified initial capacity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a <xref:System.Web.SiteMapNodeCollection> collection with the specified initial capacity.  
-  
+Use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a <xref:System.Web.SiteMapNodeCollection> collection with the specified initial capacity.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,18 +133,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNodeCollection" /> class and adds the <see cref="T:System.Web.SiteMapNode" /> object to the <see cref="P:System.Collections.CollectionBase.InnerList" /> property for the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a <xref:System.Web.SiteMapNodeCollection> collection with a single initial <xref:System.Web.SiteMapNode> object. You can add elements to the <xref:System.Web.SiteMapNodeCollection> using the <xref:System.Web.SiteMapNodeCollection.Add%2A>, <xref:System.Web.SiteMapNodeCollection.AddRange%2A>, or <xref:System.Web.SiteMapNodeCollection.Insert%2A> method.  
+Use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a <xref:System.Web.SiteMapNodeCollection> collection with a single initial <xref:System.Web.SiteMapNode> object. You can add elements to the <xref:System.Web.SiteMapNodeCollection> using the <xref:System.Web.SiteMapNodeCollection.Add%2A>, <xref:System.Web.SiteMapNodeCollection.AddRange%2A>, or <xref:System.Web.SiteMapNodeCollection.Insert%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Web.SiteMapNodeCollection> collection with a single initial <xref:System.Web.SiteMapNode> object, and then add a <xref:System.Web.SiteMapNodeCollection> of <xref:System.Web.SiteMapNode> objects to it using the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method. You can modify the <xref:System.Web.SiteMapNodeCollection>, even though the individual <xref:System.Web.SiteMapNode> objects might be read-only.  
-  
- [!code-csharp[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/CS/webform2smccs.aspx#2)]
- [!code-vb[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/VB/webform2smcvb.aspx#2)]  
-  
+The following code example demonstrates how to create a <xref:System.Web.SiteMapNodeCollection> collection with a single initial <xref:System.Web.SiteMapNode> object, and then add a <xref:System.Web.SiteMapNodeCollection> of <xref:System.Web.SiteMapNode> objects to it using the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method. You can modify the <xref:System.Web.SiteMapNodeCollection>, even though the individual <xref:System.Web.SiteMapNode> objects might be read-only.  
+ 
+[!code-csharp[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/CS/webform2smccs.aspx#2)]
+[!code-vb[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/VB/webform2smcvb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -168,10 +168,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNodeCollection" /> class and adds the array of type <see cref="T:System.Web.SiteMapNode" /> to the <see cref="P:System.Collections.CollectionBase.InnerList" /> property for the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor is equivalent to calling the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor and adding elements to the <xref:System.Web.SiteMapNodeCollection> collection with the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method.  
-  
+Using the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor is equivalent to calling the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor and adding elements to the <xref:System.Web.SiteMapNodeCollection> collection with the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -195,18 +195,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNodeCollection" /> class and adds all the list items of the specified <see cref="T:System.Web.SiteMapNodeCollection" /> collection to the <see cref="P:System.Collections.CollectionBase.InnerList" /> property for the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor is equivalent to calling the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor and adding elements to the <xref:System.Web.SiteMapNodeCollection> collection with the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method.  
+Using the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor is equivalent to calling the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor and adding elements to the <xref:System.Web.SiteMapNodeCollection> collection with the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Web.SiteMapNodeCollection> collection using another <xref:System.Web.SiteMapNodeCollection> of <xref:System.Web.SiteMapNode> objects as a base. The <xref:System.Web.SiteMapNode.GetAllNodes%2A?displayProperty=fullName> method returns a read-only <xref:System.Web.SiteMapNodeCollection>, which is detected when the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property returns `true`. A new <xref:System.Web.SiteMapNodeCollection> is created using the read-only <xref:System.Web.SiteMapNodeCollection> and the <xref:System.Web.SiteMapNodeCollection.Add%2A> and <xref:System.Web.SiteMapNodeCollection.Remove%2A> methods can be called successfully.  
-  
- [!code-csharp[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/CS/webform1smccs.aspx#1)]
- [!code-vb[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/VB/webform1smcvb.aspx#1)]  
-  
+The following code example demonstrates how to create a <xref:System.Web.SiteMapNodeCollection> collection using another <xref:System.Web.SiteMapNodeCollection> of <xref:System.Web.SiteMapNode> objects as a base. The <xref:System.Web.SiteMapNode.GetAllNodes%2A?displayProperty=fullName> method returns a read-only <xref:System.Web.SiteMapNodeCollection>, which is detected when the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property returns `true`. A new <xref:System.Web.SiteMapNodeCollection> is created using the read-only <xref:System.Web.SiteMapNodeCollection> and the <xref:System.Web.SiteMapNodeCollection.Add%2A> and <xref:System.Web.SiteMapNodeCollection.Remove%2A> methods can be called successfully.  
+ 
+[!code-csharp[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/CS/webform1smccs.aspx#1)]
+[!code-vb[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/VB/webform1smcvb.aspx#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -234,27 +234,27 @@
         <returns>The index of the <see cref="P:System.Collections.CollectionBase.InnerList" /> where the <see cref="T:System.Web.SiteMapNode" /> was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot add a <xref:System.Web.SiteMapNode> object to a read-only or fixed-size <xref:System.Web.SiteMapNodeCollection> collection. You can test whether a <xref:System.Web.SiteMapNodeCollection> is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+You cannot add a <xref:System.Web.SiteMapNode> object to a read-only or fixed-size <xref:System.Web.SiteMapNodeCollection> collection. You can test whether a <xref:System.Web.SiteMapNodeCollection> is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- This section contains two code examples. The first code example demonstrates how to create a new <xref:System.Web.SiteMapNodeCollection> collection and add elements to it. The second code example demonstrates how to add elements to a custom site map provider.  
-  
- The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a new <xref:System.Web.SiteMapNodeCollection>, and then add elements to it with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method.  
-  
- [!code-csharp[System.Web.SiteMapNode_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNode_2/CS/sitemapnode2acs.aspx.cs#1)]
- [!code-vb[System.Web.SiteMapNode_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNode_2/VB/sitemapnode2avb.aspx.vb#1)]  
-  
- The following code example demonstrates a custom site map provider implementation and shows how to use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a new <xref:System.Web.SiteMapNodeCollection> and add elements to the <xref:System.Web.SiteMapNodeCollection> with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method.  
-  
- This code example is part of a larger code example provided for the <xref:System.Web.SiteMapProvider> class.  
-  
- [!code-csharp[Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1/CS/simpletextsitemapprovider.cs#6)]
- [!code-vb[Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1/VB/simpletextsitemapprovider.vb#6)]  
-  
+This section contains two code examples. The first code example demonstrates how to create a new <xref:System.Web.SiteMapNodeCollection> collection and add elements to it. The second code example demonstrates how to add elements to a custom site map provider.  
+ 
+The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a new <xref:System.Web.SiteMapNodeCollection>, and then add elements to it with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method.  
+ 
+[!code-csharp[System.Web.SiteMapNode_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNode_2/CS/sitemapnode2acs.aspx.cs#1)]
+[!code-vb[System.Web.SiteMapNode_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNode_2/VB/sitemapnode2avb.aspx.vb#1)]  
+ 
+The following code example demonstrates a custom site map provider implementation and shows how to use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a new <xref:System.Web.SiteMapNodeCollection> and add elements to the <xref:System.Web.SiteMapNodeCollection> with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method.  
+ 
+This code example is part of a larger code example provided for the <xref:System.Web.SiteMapProvider> class.  
+ 
+[!code-csharp[Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1/CS/simpletextsitemapprovider.cs#6)]
+[!code-vb[Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1/VB/simpletextsitemapprovider.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -282,12 +282,12 @@
         <summary>Adds an array of type <see cref="T:System.Web.SiteMapNode" /> to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The array that is passed to the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method can contain `null` values; however, this leads to unexpected exceptions when the <xref:System.Web.SiteMapNodeCollection> collection is manipulated.  
-  
- You cannot add a <xref:System.Web.SiteMapNode> object to a read-only or fixed-size <xref:System.Web.SiteMapNodeCollection>. You can test whether a <xref:System.Web.SiteMapNodeCollection> is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
-  
+The array that is passed to the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method can contain `null` values; however, this leads to unexpected exceptions when the <xref:System.Web.SiteMapNodeCollection> collection is manipulated.  
+ 
+You cannot add a <xref:System.Web.SiteMapNode> object to a read-only or fixed-size <xref:System.Web.SiteMapNodeCollection>. You can test whether a <xref:System.Web.SiteMapNodeCollection> is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -315,20 +315,20 @@
         <summary>Adds the nodes in the specified  <see cref="T:System.Web.SiteMapNodeCollection" /> to the current collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNodeCollection> collection that is passed to the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method can contain `null`<xref:System.Web.SiteMapNode> objects; however, this leads to unexpected exceptions when the <xref:System.Web.SiteMapNodeCollection> is manipulated.  
+The <xref:System.Web.SiteMapNodeCollection> collection that is passed to the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method can contain `null`<xref:System.Web.SiteMapNode> objects; however, this leads to unexpected exceptions when the <xref:System.Web.SiteMapNodeCollection> is manipulated.  
+ 
+You cannot add a <xref:System.Web.SiteMapNode> object to a read-only or fixed-size <xref:System.Web.SiteMapNodeCollection>. You can test whether a <xref:System.Web.SiteMapNodeCollection> is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+ 
   
- You cannot add a <xref:System.Web.SiteMapNode> object to a read-only or fixed-size <xref:System.Web.SiteMapNodeCollection>. You can test whether a <xref:System.Web.SiteMapNodeCollection> is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a modifiable <xref:System.Web.SiteMapNodeCollection> collection, and then add <xref:System.Web.SiteMapNode> objects to it using the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method.  
-  
- [!code-csharp[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/CS/webform2smccs.aspx#2)]
- [!code-vb[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/VB/webform2smcvb.aspx#2)]  
-  
+The following code example demonstrates how to create a modifiable <xref:System.Web.SiteMapNodeCollection> collection, and then add <xref:System.Web.SiteMapNode> objects to it using the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method.  
+ 
+[!code-csharp[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/CS/webform2smccs.aspx#2)]
+[!code-vb[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/VB/webform2smcvb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -353,12 +353,12 @@
         <summary>Removes all items from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
-  
- To remove specific elements of the <xref:System.Web.SiteMapNodeCollection>, use the <xref:System.Web.SiteMapNodeCollection.Remove%2A> or <xref:System.Web.SiteMapNodeCollection.RemoveAt%2A> method.  
-  
+You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+ 
+To remove specific elements of the <xref:System.Web.SiteMapNodeCollection>, use the <xref:System.Web.SiteMapNodeCollection.Remove%2A> or <xref:System.Web.SiteMapNodeCollection.RemoveAt%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only.</exception>
@@ -386,18 +386,18 @@
           <see langword="true" /> if the <see cref="T:System.Web.SiteMapNodeCollection" /> contains the specified <see cref="T:System.Web.SiteMapNode" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNodeCollection.Contains%2A> method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+The <xref:System.Web.SiteMapNodeCollection.Contains%2A> method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.Contains%2A> and <xref:System.Web.SiteMapNodeCollection.IndexOf%2A> methods of the <xref:System.Web.SiteMapNodeCollection> class. The code checks two providers, `AspNetXmlSiteMapProvider` and `MyXmlSiteMapProvider`, for child nodes of the root node that are duplicates.  
-  
- [!code-csharp[System.Web.SiteMapNodeCollection_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_4/cs/sourcecs.aspx#1)]
- [!code-vb[System.Web.SiteMapNodeCollection_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_4/vb/sourcevb.aspx#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.Contains%2A> and <xref:System.Web.SiteMapNodeCollection.IndexOf%2A> methods of the <xref:System.Web.SiteMapNodeCollection> class. The code checks two providers, `AspNetXmlSiteMapProvider` and `MyXmlSiteMapProvider`, for child nodes of the root node that are duplicates.  
+ 
+[!code-csharp[System.Web.SiteMapNodeCollection_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_4/cs/sourcecs.aspx#1)]
+[!code-vb[System.Web.SiteMapNodeCollection_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_4/vb/sourcevb.aspx#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -424,10 +424,10 @@
         <summary>Copies the entire collection to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNodeCollection.CopyTo%2A> method delegates to the <xref:System.Collections.CollectionBase.List%2A?displayProperty=fullName> property, which accounts for the possible exceptions that are listed in "Exceptions."  
-  
+The <xref:System.Web.SiteMapNodeCollection.CopyTo%2A> method delegates to the <xref:System.Collections.CollectionBase.List%2A?displayProperty=fullName> property, which accounts for the possible exceptions that are listed in "Exceptions."  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -565,18 +565,18 @@
         <returns>The zero-based index of the first occurrence of <paramref name="value" /> within the entire <see cref="T:System.Web.SiteMapNodeCollection" />, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SiteMapNodeCollection.IndexOf%2A> method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+The <xref:System.Web.SiteMapNodeCollection.IndexOf%2A> method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.Contains%2A> and <xref:System.Web.SiteMapNodeCollection.IndexOf%2A> methods of the <xref:System.Web.SiteMapNodeCollection> class. The code checks two providers, `AspNetXmlSiteMapProvider` and `MyXmlSiteMapProvider`, for child nodes of the root node that are duplicates.  
-  
- [!code-csharp[System.Web.SiteMapNodeCollection_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_4/cs/sourcecs.aspx#1)]
- [!code-vb[System.Web.SiteMapNodeCollection_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_4/vb/sourcevb.aspx#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.Contains%2A> and <xref:System.Web.SiteMapNodeCollection.IndexOf%2A> methods of the <xref:System.Web.SiteMapNodeCollection> class. The code checks two providers, `AspNetXmlSiteMapProvider` and `MyXmlSiteMapProvider`, for child nodes of the root node that are duplicates.  
+ 
+[!code-csharp[System.Web.SiteMapNodeCollection_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_4/cs/sourcecs.aspx#1)]
+[!code-vb[System.Web.SiteMapNodeCollection_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_4/vb/sourcevb.aspx#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -603,10 +603,10 @@
         <summary>Inserts the specified <see cref="T:System.Web.SiteMapNode" /> object into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
-  
+You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -702,18 +702,18 @@
         <value>A <see cref="T:System.Web.SiteMapNode" /> that represents an element in the <see cref="T:System.Web.SiteMapNodeCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Web.SiteMapNodeCollection.Item%2A> indexer to iterate over the contents of a <xref:System.Web.SiteMapNodeCollection> collection or to replace the <xref:System.Web.SiteMapNode> object at a specified index.  
+You can use the <xref:System.Web.SiteMapNodeCollection.Item%2A> indexer to iterate over the contents of a <xref:System.Web.SiteMapNodeCollection> collection or to replace the <xref:System.Web.SiteMapNode> object at a specified index.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.Item%2A> indexer to retrieve a <xref:System.Web.SiteMapNode> object from the <xref:System.Web.SiteMapNodeCollection> collection. In this example, a <xref:System.Web.SiteMapNode> object is removed from its position at the second element of the internal array using the <xref:System.Web.SiteMapNodeCollection.Remove%2A> method and is appended to the array with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method. To insert a <xref:System.Web.SiteMapNode> object at a specific index, instead of appending it to the end of the array, use the <xref:System.Web.SiteMapNodeCollection.Insert%2A> method.  
-  
- [!code-csharp[System.Web.SiteMapNodeCollection_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/CS/webform1smccs.aspx#2)]
- [!code-vb[System.Web.SiteMapNodeCollection_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/VB/webform1smcvb.aspx#2)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.Item%2A> indexer to retrieve a <xref:System.Web.SiteMapNode> object from the <xref:System.Web.SiteMapNodeCollection> collection. In this example, a <xref:System.Web.SiteMapNode> object is removed from its position at the second element of the internal array using the <xref:System.Web.SiteMapNodeCollection.Remove%2A> method and is appended to the array with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method. To insert a <xref:System.Web.SiteMapNode> object at a specific index, instead of appending it to the end of the array, use the <xref:System.Web.SiteMapNodeCollection.Insert%2A> method.  
+ 
+[!code-csharp[System.Web.SiteMapNodeCollection_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/CS/webform1smccs.aspx#2)]
+[!code-vb[System.Web.SiteMapNodeCollection_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/VB/webform1smcvb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only.</exception>
@@ -775,18 +775,18 @@
         <returns>A read-only <see cref="T:System.Web.SiteMapNodeCollection" /> with the same <see cref="T:System.Web.SiteMapNode" /> elements and structure as the original <see cref="T:System.Web.SiteMapNodeCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property. The <xref:System.Web.SiteMapNodeCollection.IsFixedSize%2A> property also returns `true` when a <xref:System.Web.SiteMapNodeCollection> is read-only.  
+You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property. The <xref:System.Web.SiteMapNodeCollection.IsFixedSize%2A> property also returns `true` when a <xref:System.Web.SiteMapNodeCollection> is read-only.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property to test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only or modifiable. If `siteNodes` is modifiable, `MoveNode` is called on it; otherwise, a clone <xref:System.Web.SiteMapNodeCollection> is created, using `siteNodes` as a base.  
-  
- [!code-csharp[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/CS/webform1smccs.aspx#1)]
- [!code-vb[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/VB/webform1smcvb.aspx#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property to test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only or modifiable. If `siteNodes` is modifiable, `MoveNode` is called on it; otherwise, a clone <xref:System.Web.SiteMapNodeCollection> is created, using `siteNodes` as a base.  
+ 
+[!code-csharp[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/CS/webform1smccs.aspx#1)]
+[!code-vb[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/VB/webform1smcvb.aspx#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -816,20 +816,20 @@
         <summary>Removes the specified <see cref="T:System.Web.SiteMapNode" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+ 
+The <xref:System.Web.SiteMapNodeCollection.Remove%2A> method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ 
   
- The <xref:System.Web.SiteMapNodeCollection.Remove%2A> method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.Remove%2A> method to remove a <xref:System.Web.SiteMapNode> object from a <xref:System.Web.SiteMapNodeCollection> collection, and then append the <xref:System.Web.SiteMapNode> object to the end of the <xref:System.Web.SiteMapNodeCollection> using the <xref:System.Web.SiteMapNodeCollection.Add%2A> method. If the <xref:System.Web.SiteMapNodeCollection> is read-only, a <xref:System.NotSupportedException> exception is caught.  
-  
- [!code-csharp[System.Web.SiteMapNodeCollection_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/CS/webform1smccs.aspx#2)]
- [!code-vb[System.Web.SiteMapNodeCollection_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/VB/webform1smcvb.aspx#2)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.Remove%2A> method to remove a <xref:System.Web.SiteMapNode> object from a <xref:System.Web.SiteMapNodeCollection> collection, and then append the <xref:System.Web.SiteMapNode> object to the end of the <xref:System.Web.SiteMapNodeCollection> using the <xref:System.Web.SiteMapNodeCollection.Add%2A> method. If the <xref:System.Web.SiteMapNodeCollection> is read-only, a <xref:System.NotSupportedException> exception is caught.  
+ 
+[!code-csharp[System.Web.SiteMapNodeCollection_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/CS/webform1smccs.aspx#2)]
+[!code-vb[System.Web.SiteMapNodeCollection_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/VB/webform1smcvb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -863,12 +863,12 @@
         <summary>Removes the <see cref="T:System.Web.SiteMapNode" /> object at the specified index of the  collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
-  
- To remove an element from the <xref:System.Web.SiteMapNodeCollection> by specifying a <xref:System.Web.SiteMapNode> object to remove, use the <xref:System.Web.SiteMapNodeCollection.Remove%2A> method.  
-  
+You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+ 
+To remove an element from the <xref:System.Web.SiteMapNodeCollection> by specifying a <xref:System.Web.SiteMapNode> object to remove, use the <xref:System.Web.SiteMapNodeCollection.Remove%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -901,10 +901,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Web.SiteMapNodeCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerating through a <xref:System.Web.SiteMapNodeCollection> collection is intrinsically not a thread safe procedure. Even when a <xref:System.Web.SiteMapNodeCollection> is synchronized, other threads can still modify the <xref:System.Web.SiteMapNodeCollection>, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the <xref:System.Web.SiteMapNodeCollection> during the entire enumeration or catch the exceptions resulting from changes that are made by other threads.  
-  
+Enumerating through a <xref:System.Web.SiteMapNodeCollection> collection is intrinsically not a thread safe procedure. Even when a <xref:System.Web.SiteMapNodeCollection> is synchronized, other threads can still modify the <xref:System.Web.SiteMapNodeCollection>, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the <xref:System.Web.SiteMapNodeCollection> during the entire enumeration or catch the exceptions resulting from changes that are made by other threads.  
+ 
  ]]></format>
         </remarks>
       </Docs>

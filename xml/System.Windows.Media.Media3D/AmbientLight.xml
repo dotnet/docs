@@ -14,22 +14,22 @@
     <summary>Light object that applies light to objects uniformly, regardless of their shape.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.AmbientLight> does not have a specified position in space.  
+<xref:System.Windows.Media.Media3D.AmbientLight> does not have a specified position in space.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code excerpt shows how to create an AmbientLight.  
-  
- [!code-xml[HitTest3D#HitTest3D3DN6](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml#hittest3d3dn6)]  
-  
- The following example creates an AmbientLight in code.  
-  
- [!code-csharp[Show3Dlights#Show3DLights3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Show3DLights/CSharp/MyLights.cs#show3dlights3dn1)]
- [!code-vb[Show3Dlights#Show3DLights3DN1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Show3DLights/visualbasic/mylights.vb#show3dlights3dn1)]  
-  
+The following code excerpt shows how to create an AmbientLight.  
+ 
+[!code-xml[HitTest3D#HitTest3D3DN6](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml#hittest3d3dn6)]  
+ 
+The following example creates an AmbientLight in code.  
+ 
+[!code-csharp[Show3Dlights#Show3DLights3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Show3DLights/CSharp/MyLights.cs#show3dlights3dn1)]
+[!code-vb[Show3Dlights#Show3DLights3DN1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Show3DLights/visualbasic/mylights.vb#show3dlights3dn1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,13 +48,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.AmbientLight" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an AmbientLight in code.  
-  
- [!code-csharp[Show3Dlights#Show3DLights3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Show3DLights/CSharp/MyLights.cs#show3dlights3dn1)]
- [!code-vb[Show3Dlights#Show3DLights3DN1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Show3DLights/visualbasic/mylights.vb#show3dlights3dn1)]  
-  
+The following example creates an AmbientLight in code.  
+ 
+[!code-csharp[Show3Dlights#Show3DLights3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Show3DLights/CSharp/MyLights.cs#show3dlights3dn1)]
+[!code-vb[Show3Dlights#Show3DLights3DN1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Show3DLights/visualbasic/mylights.vb#show3dlights3dn1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -76,11 +76,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.AmbientLight" /> class with the specified color.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[show3dlights#Show3DLights3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Show3DLights/CSharp/MyLights.cs#show3dlights3dn1)]
- [!code-vb[show3dlights#Show3DLights3DN1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Show3DLights/visualbasic/mylights.vb#show3dlights3dn1)]  
-  
+[!code-csharp[show3dlights#Show3DLights3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Show3DLights/CSharp/MyLights.cs#show3dlights3dn1)]
+[!code-vb[show3dlights#Show3DLights3DN1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Show3DLights/visualbasic/mylights.vb#show3dlights3dn1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,12 +103,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,12 +131,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

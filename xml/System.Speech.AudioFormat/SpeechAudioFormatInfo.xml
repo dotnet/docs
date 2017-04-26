@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Speech.AudioFormat.SpeechAudioFormatInfo" /> class and specifies the samples per second, bits per sample, and the number of channels.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows a typical use of <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.%23ctor%2A> to specify the format of audio to output to a WAV file. The <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.%23ctor%2A> instance is an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A> method.  
-  
+The following example shows a typical use of <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.%23ctor%2A> to specify the format of audio to output to a WAV file. The <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.%23ctor%2A> instance is an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A> method.  
+ 
 ```csharp  
 using System;  
 using System.IO;  
@@ -81,7 +81,7 @@ namespace SampleSynthesis
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,16 +189,16 @@ namespace SampleSynthesis
         <value>The value for the block alignment.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Software for playback and recording of audio handles audio data in blocks. The sizes of these blocks are multiples of the value of the <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.BlockAlign%2A> property. Block alignment value is the number of bytes in an atomic unit (that is, a block) of audio for a particular format. For Pulse Code Modulation (PCM) formats, the formula for calculating block alignment is as follows:  
-  
+Software for playback and recording of audio handles audio data in blocks. The sizes of these blocks are multiples of the value of the <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.BlockAlign%2A> property. Block alignment value is the number of bytes in an atomic unit (that is, a block) of audio for a particular format. For Pulse Code Modulation (PCM) formats, the formula for calculating block alignment is as follows:  
+ 
 -   Block Alignment = Bytes per Sample x Number of Channels  
-  
- For example, the block alignment value for 16-bit PCM format mono audio is 2 (2 bytes per sample x 1 channel). For 16-bit PCM format stereo audio, the block alignment value is 4.  
-  
- Data written and read from a device must always start at the beginning of a block. For example, it is illegal to start playback of PCM data in the middle of a sample (meaning on a boundary that is not block-aligned).  
-  
+ 
+For example, the block alignment value for 16-bit PCM format mono audio is 2 (2 bytes per sample x 1 channel). For 16-bit PCM format stereo audio, the block alignment value is 4.  
+ 
+Data written and read from a device must always start at the beginning of a block. For example, it is illegal to start playback of PCM data in the middle of a sample (meaning on a boundary that is not block-aligned).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,10 +260,10 @@ namespace SampleSynthesis
         <returns>Returns <see langword="true" /> if the current instance of <see cref="T:System.Speech.AudioFormat.SpeechAudioFormatInfo" /> and that obtained from the <paramref name="obj" /> argument are equal, otherwise returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method returns `false` if the <xref:System.Object> provided by the `obj` argument cannot be cast to <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo>.  
-  
+The method returns `false` if the <xref:System.Object> provided by the `obj` argument cannot be cast to <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

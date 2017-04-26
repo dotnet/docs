@@ -19,18 +19,18 @@
     <summary>Populates <see cref="T:System.Xml.Schema.XmlSchema" /> objects with XML schema element declarations that are found in type mapping objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlSchemaExporter> class provides a programmatic representation of an XML Schema Definition language (XSD) document. Instead of using <xref:System.Xml.Serialization.XmlSchemaExporter> directly, use the <xref:System.Web.Services.Description.ServiceDescriptionReflector> class or the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md).  
-  
- The <xref:System.Web.Services.Description.ServiceDescriptionReflector> class creates <xref:System.Web.Services.Description.ServiceDescription> objects from classes that are identified as Web services. It uses the <xref:System.Xml.Serialization.XmlSchemaExporter> class when a Web service class specifies:  
-  
+The <xref:System.Xml.Serialization.XmlSchemaExporter> class provides a programmatic representation of an XML Schema Definition language (XSD) document. Instead of using <xref:System.Xml.Serialization.XmlSchemaExporter> directly, use the <xref:System.Web.Services.Description.ServiceDescriptionReflector> class or the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md).  
+ 
+The <xref:System.Web.Services.Description.ServiceDescriptionReflector> class creates <xref:System.Web.Services.Description.ServiceDescription> objects from classes that are identified as Web services. It uses the <xref:System.Xml.Serialization.XmlSchemaExporter> class when a Web service class specifies:  
+ 
 -   Literal use, indicating that the contents of SOAP message parameters and return values (or request and response documents) are literally specified with XML schema definitions.  
-  
+ 
 -   Non-SOAP implementations of Web services using the HTTP-GET and HTTP-POST operations.  
-  
- Xsd.exe generates XML schema documents from one or more types in a run-time assembly file using the <xref:System.Xml.Serialization.XmlSchemaExporter> class and reflection.  
-  
+ 
+Xsd.exe generates XML schema documents from one or more types in a run-time assembly file using the <xref:System.Xml.Serialization.XmlSchemaExporter> class and reflection.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -58,10 +58,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSchemaExporter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlSchemaExporter> class supplies the collection of <xref:System.Xml.Schema.XmlSchema> objects to which XML schema element declarations are to be added. You do not need to create an instance of the <xref:System.Xml.Serialization.XmlSchemaExporter> class directly.  
-  
+The <xref:System.Xml.Serialization.XmlSchemaExporter> class supplies the collection of <xref:System.Xml.Schema.XmlSchema> objects to which XML schema element declarations are to be added. You do not need to create an instance of the <xref:System.Xml.Serialization.XmlSchemaExporter> class directly.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -93,14 +93,14 @@
         <returns>An arbitrary name assigned to the **&lt;any&gt;** element declaration.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You do not need to call the method directly.  
-  
- The <xref:System.Web.Services.Description.ServiceDescriptionReflector> creates <xref:System.Web.Services.Description.ServiceDescription> objects from classes that are identified as Web services.  
-  
- A field or property of type <xref:System.Xml.XmlElement>, with an attribute <xref:System.Xml.Serialization.XmlAnyElementAttribute>, is translated into an **\<any>** element.  
-  
+You do not need to call the method directly.  
+ 
+The <xref:System.Web.Services.Description.ServiceDescriptionReflector> creates <xref:System.Web.Services.Description.ServiceDescription> objects from classes that are identified as Web services.  
+ 
+A field or property of type <xref:System.Xml.XmlElement>, with an attribute <xref:System.Xml.Serialization.XmlAnyElementAttribute>, is translated into an **\<any>** element.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -159,12 +159,12 @@
         <summary>Adds an element declaration to the applicable <see cref="T:System.Xml.Schema.XmlSchema" /> for each of the element parts of a literal SOAP message definition.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For each SOAP message part, the <xref:System.Xml.Serialization.XmlSchemaExporter.ExportMembersMapping%2A> method adds an XML schema element declaration to the <xref:System.Xml.Schema.XmlSchema> that uses the same namespace as the part. A literal message definition normally contains a single part.  
-  
- Use the <xref:System.Web.Services.Description.ServiceDescriptionReflector> class instead.  
-  
+For each SOAP message part, the <xref:System.Xml.Serialization.XmlSchemaExporter.ExportMembersMapping%2A> method adds an XML schema element declaration to the <xref:System.Xml.Schema.XmlSchema> that uses the same namespace as the part. A literal message definition normally contains a single part.  
+ 
+Use the <xref:System.Web.Services.Description.ServiceDescriptionReflector> class instead.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -226,12 +226,12 @@
         <returns>An <see cref="T:System.Xml.XmlQualifiedName" /> that represents the qualified XML name of the exported element declaration.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload adds an XML schema element declaration to the <xref:System.Xml.Schema.XmlSchema> that uses the same namespace as the SOAP message part. The literal message definition must contain a single part.  
-  
- Use the <xref:System.Web.Services.Description.ServiceDescriptionReflector> class instead.  
-  
+This overload adds an XML schema element declaration to the <xref:System.Xml.Schema.XmlSchema> that uses the same namespace as the SOAP message part. The literal message definition must contain a single part.  
+ 
+Use the <xref:System.Web.Services.Description.ServiceDescriptionReflector> class instead.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

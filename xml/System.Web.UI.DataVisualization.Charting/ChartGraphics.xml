@@ -14,17 +14,17 @@
     <summary>Provides numerous conversion functions and exposes a GDI+ <see cref="T:System.Drawing.Graphics" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides numerous conversion functions and also exposes a GDI+ <xref:System.Drawing.Graphics> object. Note that when rendering as Scalable Vector Graphics (SVG), use of the <xref:System.Drawing.Graphics> object for custom drawing will not be included as part of the SVG document.  
-  
- Note also that, by default, <xref:System.Drawing.Graphics> functions usually take absolute coordinates. Therefore the conversion methods of this class should be useful if you perform drawing operations.  
-  
- A <xref:System.Web.UI.DataVisualization.Charting.ChartGraphics> object is exposed in the <xref:System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs.ChartGraphics%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs> class?qualifyHint=False&autoUpgrade=True, which makes it easy to perform custom drawing in the <xref:System.Web.UI.DataVisualization.Charting.Chart.PrePaint> and <xref:System.Web.UI.DataVisualization.Charting.Chart.PostPaint> events.  
-  
+This class provides numerous conversion functions and also exposes a GDI+ <xref:System.Drawing.Graphics> object. Note that when rendering as Scalable Vector Graphics (SVG), use of the <xref:System.Drawing.Graphics> object for custom drawing will not be included as part of the SVG document.  
+ 
+Note also that, by default, <xref:System.Drawing.Graphics> functions usually take absolute coordinates. Therefore the conversion methods of this class should be useful if you perform drawing operations.  
+ 
+A <xref:System.Web.UI.DataVisualization.Charting.ChartGraphics> object is exposed in the <xref:System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs.ChartGraphics%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs> class?qualifyHint=False&autoUpgrade=True, which makes it easy to perform custom drawing in the <xref:System.Web.UI.DataVisualization.Charting.Chart.PrePaint> and <xref:System.Web.UI.DataVisualization.Charting.Chart.PostPaint> events.  
+ 
 > [!IMPORTANT]
 >  If significant changes are made to the default behavior of the <xref:System.Drawing.Graphics> object, the chart image and its associated elements may be drawn erratically. For example, positioning may be altered. It is highly recommended that you become well acquainted with GDI+ before you make any significant changes to the properties of the <xref:System.Drawing.Graphics> object.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -226,10 +226,10 @@
         <value>A <see cref="T:System.Drawing.Graphics" /> object used for drawing.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this object property to perform any custom drawing that can be performed using GDI+.  
-  
+You can use this object property to perform any custom drawing that can be performed using GDI+.  
+ 
  ]]></format>
         </remarks>
       </Docs>

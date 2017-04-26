@@ -19,48 +19,48 @@
     <summary>Registers an ECMAScript (JavaScript) file for use on an ASP.NET Web page.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can include a JavaScript file on an ASP.NET Web page by registering it through a <xref:System.Web.UI.ScriptReference> object. You can register a script file that is located as a .js file (a static script file) on the Web site. You can also register a script file that is embedded as a resource in an assembly. After registering the script file, you can use its functions in client script on the Web page.  
-  
- To register a static script file, set the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property of the <xref:System.Web.UI.ScriptReference> object to the relative location of the file.  
-  
- To register a script file that is embedded as a resource in an assembly, set the <xref:System.Web.UI.ScriptReference.Assembly%2A> property to the name of the assembly that contains the file. Then set the <xref:System.Web.UI.ScriptReference.Name%2A> property to the name of the .js file that is embedded in the assembly. In that case, the script file must be embedded, not linked.  
-  
- You set the <xref:System.Web.UI.ScriptReferenceBase.ScriptMode%2A> property to indicate whether to use the debug or release version of the script.  
-  
- The <xref:System.Web.UI.ScriptMode> value produces different results depending on whether it refers to a standalone script file or to a script file that is embedded as a resource in an assembly. A standalone script file is defined with the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property. An assembly reference must be accessed through the <xref:System.Web.UI.ScriptReference.Name%2A> and <xref:System.Web.UI.ScriptReference.Assembly%2A> properties. The results for the <xref:System.Web.UI.ScriptMode> value are as follows:  
-  
+You can include a JavaScript file on an ASP.NET Web page by registering it through a <xref:System.Web.UI.ScriptReference> object. You can register a script file that is located as a .js file (a static script file) on the Web site. You can also register a script file that is embedded as a resource in an assembly. After registering the script file, you can use its functions in client script on the Web page.  
+ 
+To register a static script file, set the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property of the <xref:System.Web.UI.ScriptReference> object to the relative location of the file.  
+ 
+To register a script file that is embedded as a resource in an assembly, set the <xref:System.Web.UI.ScriptReference.Assembly%2A> property to the name of the assembly that contains the file. Then set the <xref:System.Web.UI.ScriptReference.Name%2A> property to the name of the .js file that is embedded in the assembly. In that case, the script file must be embedded, not linked.  
+ 
+You set the <xref:System.Web.UI.ScriptReferenceBase.ScriptMode%2A> property to indicate whether to use the debug or release version of the script.  
+ 
+The <xref:System.Web.UI.ScriptMode> value produces different results depending on whether it refers to a standalone script file or to a script file that is embedded as a resource in an assembly. A standalone script file is defined with the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property. An assembly reference must be accessed through the <xref:System.Web.UI.ScriptReference.Name%2A> and <xref:System.Web.UI.ScriptReference.Assembly%2A> properties. The results for the <xref:System.Web.UI.ScriptMode> value are as follows:  
+ 
 -   When it is applied to a standalone script file where the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property is specified, the <xref:System.Web.UI.ScriptMode> value is equivalent to <xref:System.Web.UI.ScriptMode>.  
-  
+ 
 -   When it is applied to a script reference in an assembly, <xref:System.Web.UI.ScriptMode> is equivalent to <xref:System.Web.UI.ScriptMode>. When only <xref:System.Web.UI.ScriptReference.Name%2A> is specified, it is used to reference the script. When <xref:System.Web.UI.ScriptReference.Name%2A> and the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property are both specified, the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property is used instead of <xref:System.Web.UI.ScriptReference.Name%2A>, but the <xref:System.Web.UI.ScriptMode> value is still equivalent to <xref:System.Web.UI.ScriptMode>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to reference a custom control and a JavaScript file that is embedded in the control assembly. The assembly is assumed to be in the Bin folder of the Web site. The custom control animates <xref:System.Web.UI.UpdatePanel> controls. The JavaScript file is compiled as an embedded resource that is named SampleControl.UpdatePanelAnimation.js. You register the embedded JavaScript file by using the <xref:System.Web.UI.ScriptReference.Assembly%2A> and <xref:System.Web.UI.ScriptReference.Name%2A> properties.  
-  
- To use this example, compile the JavaScript file that is shown in the example as an embedded resource with the custom control. Put the resulting assembly into the Bin folder of the Web site. For an example of how to embed a JavaScript file in an assembly, see [Walkthrough: Embedding a JavaScript File as a Resource in an Assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).  
-  
- The following example shows a page that uses the custom control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptReference#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptReference#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/Default.aspx#1)]  -->  
-  
- The following example shows the custom control class definition.  
-  
- [!code-csharp[System.Web.UI.ScriptReference#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/customcontrol.cs#2)]
- [!code-vb[System.Web.UI.ScriptReference#2](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/customcontrol.vb#2)]  
-  
- The following example shows the supporting JavaScript file.  
-  
- [!code-javascript[System.Web.UI.ScriptReference#3](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/UpdatePanelAnimation.js#3)]  
-  
- The following example shows code that you must add to the AssemblyInfo file of the project that contains the custom control and the JavaScript file.  
-  
- [!code-csharp[System.Web.UI.ScriptReference#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/AssemblyInfo.cs#4)]
- [!code-vb[System.Web.UI.ScriptReference#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/AssemblyInfo.vb#4)]  
-  
+The following example shows how to reference a custom control and a JavaScript file that is embedded in the control assembly. The assembly is assumed to be in the Bin folder of the Web site. The custom control animates <xref:System.Web.UI.UpdatePanel> controls. The JavaScript file is compiled as an embedded resource that is named SampleControl.UpdatePanelAnimation.js. You register the embedded JavaScript file by using the <xref:System.Web.UI.ScriptReference.Assembly%2A> and <xref:System.Web.UI.ScriptReference.Name%2A> properties.  
+ 
+To use this example, compile the JavaScript file that is shown in the example as an embedded resource with the custom control. Put the resulting assembly into the Bin folder of the Web site. For an example of how to embed a JavaScript file in an assembly, see [Walkthrough: Embedding a JavaScript File as a Resource in an Assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).  
+ 
+The following example shows a page that uses the custom control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptReference#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/Default.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptReference#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/Default.aspx#1)]  -->  
+ 
+The following example shows the custom control class definition.  
+ 
+[!code-csharp[System.Web.UI.ScriptReference#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/customcontrol.cs#2)]
+[!code-vb[System.Web.UI.ScriptReference#2](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/customcontrol.vb#2)]  
+ 
+The following example shows the supporting JavaScript file.  
+ 
+[!code-javascript[System.Web.UI.ScriptReference#3](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/UpdatePanelAnimation.js#3)]  
+ 
+The following example shows code that you must add to the AssemblyInfo file of the project that contains the custom control and the JavaScript file.  
+ 
+[!code-csharp[System.Web.UI.ScriptReference#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/AssemblyInfo.cs#4)]
+[!code-vb[System.Web.UI.ScriptReference#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/AssemblyInfo.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -143,40 +143,40 @@
         <value>The fully qualified or partially qualified name of the assembly that contains a client script file as an embedded resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You set the <xref:System.Web.UI.ScriptReference.Assembly%2A> property when you reference a client script file that is included as an embedded resource in an assembly. Set <xref:System.Web.UI.ScriptReference.Assembly%2A> to the fully qualified or partially qualified assembly name. A fully qualified assembly name includes a name, culture, public key, and version number. A partially qualified assembly name includes only a name.  
+You set the <xref:System.Web.UI.ScriptReference.Assembly%2A> property when you reference a client script file that is included as an embedded resource in an assembly. Set <xref:System.Web.UI.ScriptReference.Assembly%2A> to the fully qualified or partially qualified assembly name. A fully qualified assembly name includes a name, culture, public key, and version number. A partially qualified assembly name includes only a name.  
+ 
+When you specify a value for <xref:System.Web.UI.ScriptReference.Assembly%2A>, you must also specify the name of the embedded resource in the <xref:System.Web.UI.ScriptReference.Name%2A> property. Otherwise, an <xref:System.InvalidOperationException> will be thrown.  
+ 
+The assembly being referenced must be located in either the Bin folder of the Web site or in the global assembly cache.  
+ 
   
- When you specify a value for <xref:System.Web.UI.ScriptReference.Assembly%2A>, you must also specify the name of the embedded resource in the <xref:System.Web.UI.ScriptReference.Name%2A> property. Otherwise, an <xref:System.InvalidOperationException> will be thrown.  
-  
- The assembly being referenced must be located in either the Bin folder of the Web site or in the global assembly cache.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to reference a custom control and a JavaScript file that is embedded in the control assembly. The assembly is assumed to be in the Bin folder of the Web site. The custom control animates <xref:System.Web.UI.UpdatePanel> controls. The JavaScript file is compiled as an embedded resource that is named SampleControl.UpdatePanelAnimation.js. You register the embedded JavaScript file by using the <xref:System.Web.UI.ScriptReference.Assembly%2A> and <xref:System.Web.UI.ScriptReference.Name%2A> properties.  
-  
- To use this example, compile the JavaScript file that is shown in the example as an embedded resource with the custom control. Put the resulting assembly into the Bin folder of the Web site. For an example of how to embed a JavaScript file in an assembly, see [Walkthrough: Embedding a JavaScript File as a Resource in an Assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).  
-  
- The following example shows a page that uses the custom control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptReference#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptReference#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/Default.aspx#1)]  -->  
-  
- The following example shows the custom control class definition.  
-  
- [!code-csharp[System.Web.UI.ScriptReference#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/customcontrol.cs#2)]
- [!code-vb[System.Web.UI.ScriptReference#2](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/customcontrol.vb#2)]  
-  
- The following example shows the supporting JavaScript file.  
-  
- [!code-javascript[System.Web.UI.ScriptReference#3](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/UpdatePanelAnimation.js#3)]  
-  
- The following example shows code that you must add to the AssemblyInfo file of the project that contains the custom control and the JavaScript file.  
-  
- [!code-csharp[System.Web.UI.ScriptReference#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/AssemblyInfo.cs#4)]
- [!code-vb[System.Web.UI.ScriptReference#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/AssemblyInfo.vb#4)]  
-  
+The following example shows how to reference a custom control and a JavaScript file that is embedded in the control assembly. The assembly is assumed to be in the Bin folder of the Web site. The custom control animates <xref:System.Web.UI.UpdatePanel> controls. The JavaScript file is compiled as an embedded resource that is named SampleControl.UpdatePanelAnimation.js. You register the embedded JavaScript file by using the <xref:System.Web.UI.ScriptReference.Assembly%2A> and <xref:System.Web.UI.ScriptReference.Name%2A> properties.  
+ 
+To use this example, compile the JavaScript file that is shown in the example as an embedded resource with the custom control. Put the resulting assembly into the Bin folder of the Web site. For an example of how to embed a JavaScript file in an assembly, see [Walkthrough: Embedding a JavaScript File as a Resource in an Assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).  
+ 
+The following example shows a page that uses the custom control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptReference#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/Default.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptReference#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/Default.aspx#1)]  -->  
+ 
+The following example shows the custom control class definition.  
+ 
+[!code-csharp[System.Web.UI.ScriptReference#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/customcontrol.cs#2)]
+[!code-vb[System.Web.UI.ScriptReference#2](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/customcontrol.vb#2)]  
+ 
+The following example shows the supporting JavaScript file.  
+ 
+[!code-javascript[System.Web.UI.ScriptReference#3](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/UpdatePanelAnimation.js#3)]  
+ 
+The following example shows code that you must add to the AssemblyInfo file of the project that contains the custom control and the JavaScript file.  
+ 
+[!code-csharp[System.Web.UI.ScriptReference#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/AssemblyInfo.cs#4)]
+[!code-vb[System.Web.UI.ScriptReference#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/AssemblyInfo.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,10 +235,10 @@
           <see langword="true" /> if the script path is not used when you register the client script; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You set <xref:System.Web.UI.ScriptReference.IgnoreScriptPath%2A> to `true` when you want to register a client script file without including the <xref:System.Web.UI.ScriptManager.ScriptPath%2A> value in the URL of the script file.  
-  
+You set <xref:System.Web.UI.ScriptReference.IgnoreScriptPath%2A> to `true` when you want to register a client script file without including the <xref:System.Web.UI.ScriptManager.ScriptPath%2A> value in the URL of the script file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -316,38 +316,38 @@
         <value>The name of the client script file that is embedded as a resource in an assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You set the <xref:System.Web.UI.ScriptReference.Name%2A> property to reference a client script file that is embedded as a resource in an assembly.  
+You set the <xref:System.Web.UI.ScriptReference.Name%2A> property to reference a client script file that is embedded as a resource in an assembly.  
+ 
+If you define values for both the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> and <xref:System.Web.UI.ScriptReference.Name%2A> properties in the same script reference, the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property takes precedence.  
+ 
   
- If you define values for both the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> and <xref:System.Web.UI.ScriptReference.Name%2A> properties in the same script reference, the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property takes precedence.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to reference a custom control and a JavaScript file that is embedded in the control assembly. The assembly is assumed to be in the Bin folder of the Web site. The custom control animates <xref:System.Web.UI.UpdatePanel> controls. The JavaScript file is compiled as an embedded resource that is named SampleControl.UpdatePanelAnimation.js. You register the embedded JavaScript file by using the <xref:System.Web.UI.ScriptReference.Assembly%2A> and <xref:System.Web.UI.ScriptReference.Name%2A> properties.  
-  
- To use this example, compile the JavaScript file that is shown in the example as an embedded resource with the custom control. Put the resulting assembly into the Bin folder of the Web site. For an example of how to embed a JavaScript file in an assembly, see [Walkthrough: Embedding a JavaScript File as a Resource in an Assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).  
-  
- The following example shows a page that uses the custom control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptReference#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptReference#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/Default.aspx#1)]  -->  
-  
- The following example shows the custom control class definition.  
-  
- [!code-csharp[System.Web.UI.ScriptReference#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/customcontrol.cs#2)]
- [!code-vb[System.Web.UI.ScriptReference#2](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/customcontrol.vb#2)]  
-  
- The following example shows the supporting JavaScript file.  
-  
- [!code-javascript[System.Web.UI.ScriptReference#3](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/UpdatePanelAnimation.js#3)]  
-  
- The following example shows code that you must add to the AssemblyInfo file of the project that contains the custom control and the JavaScript file.  
-  
- [!code-csharp[System.Web.UI.ScriptReference#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/AssemblyInfo.cs#4)]
- [!code-vb[System.Web.UI.ScriptReference#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/AssemblyInfo.vb#4)]  
-  
+The following example shows how to reference a custom control and a JavaScript file that is embedded in the control assembly. The assembly is assumed to be in the Bin folder of the Web site. The custom control animates <xref:System.Web.UI.UpdatePanel> controls. The JavaScript file is compiled as an embedded resource that is named SampleControl.UpdatePanelAnimation.js. You register the embedded JavaScript file by using the <xref:System.Web.UI.ScriptReference.Assembly%2A> and <xref:System.Web.UI.ScriptReference.Name%2A> properties.  
+ 
+To use this example, compile the JavaScript file that is shown in the example as an embedded resource with the custom control. Put the resulting assembly into the Bin folder of the Web site. For an example of how to embed a JavaScript file in an assembly, see [Walkthrough: Embedding a JavaScript File as a Resource in an Assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).  
+ 
+The following example shows a page that uses the custom control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptReference#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/Default.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptReference#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/Default.aspx#1)]  -->  
+ 
+The following example shows the custom control class definition.  
+ 
+[!code-csharp[System.Web.UI.ScriptReference#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/customcontrol.cs#2)]
+[!code-vb[System.Web.UI.ScriptReference#2](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/customcontrol.vb#2)]  
+ 
+The following example shows the supporting JavaScript file.  
+ 
+[!code-javascript[System.Web.UI.ScriptReference#3](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/UpdatePanelAnimation.js#3)]  
+ 
+The following example shows code that you must add to the AssemblyInfo file of the project that contains the custom control and the JavaScript file.  
+ 
+[!code-csharp[System.Web.UI.ScriptReference#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/AssemblyInfo.cs#4)]
+[!code-vb[System.Web.UI.ScriptReference#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/AssemblyInfo.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

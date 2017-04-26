@@ -19,14 +19,14 @@
     <summary>Represents a common dialog box that allows the user to specify a workflow theme to apply to a workflow design surface. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.ComponentModel.Design.ThemeConfigurationDialog> allows users to create and edit user-defined workflow themes and apply user-defined, default, and operating-system defined themes to a workflow design surface,  
-  
+ 
+<xref:System.Workflow.ComponentModel.Design.ThemeConfigurationDialog> allows users to create and edit user-defined workflow themes and apply user-defined, default, and operating-system defined themes to a workflow design surface,  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ThemeConfigurationDialog" /> class by using an <see cref="T:System.IServiceProvider" /> and <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The theme that is highlighted in the theme configuration dialog box is the theme that is currently applied to the workflow design surface. Possible values include the default workflow theme, the operating system color theme, and any user-defined themes.  
-  
+The theme that is highlighted in the theme configuration dialog box is the theme that is currently applied to the workflow design surface. Possible values include the default workflow theme, the operating system color theme, and any user-defined themes.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -97,10 +97,10 @@
         <value>The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> that is highlighted in the theme configuration dialog box in the workflow designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The theme that is highlighted in the theme configuration dialog box is the theme that is currently applied to the workflow design surface. Possible values include the default workflow theme, the operating system color theme, and any user-defined themes.  
-  
+The theme that is highlighted in the theme configuration dialog box is the theme that is currently applied to the workflow design surface. Possible values include the default workflow theme, the operating system color theme, and any user-defined themes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

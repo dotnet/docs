@@ -214,10 +214,10 @@
         <summary>Compact and finalize the Tlogs based on the success of the tracked execution.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once tracked operations have been completed then we need to compact / finalize the Tlogs based on the success of the tracked execution. If it fails, then we clean out the TLogs. If it succeeds then we clean temporary files from the TLogs and re-write them.  
-  
+Once tracked operations have been completed then we need to compact / finalize the Tlogs based on the success of the tracked execution. If it fails, then we clean out the TLogs. If it succeeds then we clean temporary files from the TLogs and re-write them.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,10 +271,10 @@
         <returns>Returns true if everything is up to date; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If things are not up to date, then the TLogs are compacted to remove all entries in preparation to re-track execution of work.  
-  
+If things are not up to date, then the TLogs are compacted to remove all entries in preparation to re-track execution of work.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -306,10 +306,10 @@
         <returns>Returns true if everything is up to date; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No tracking log compaction will take place when using this overload  
-  
+No tracking log compaction will take place when using this overload  
+ 
  ]]></format>
         </remarks>
       </Docs>

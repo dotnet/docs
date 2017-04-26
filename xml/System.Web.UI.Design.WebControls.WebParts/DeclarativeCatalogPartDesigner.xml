@@ -14,10 +14,10 @@
     <summary>Provides design-time support for <see cref="T:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart" /> controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.Design.WebControls.WebParts.DeclarativeCatalogPartDesigner> provides design-time support for <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> controls. It extends its parent class, <xref:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner>, by adding a control-specific <xref:System.Web.UI.Design.TemplateGroup> to the <xref:System.Web.UI.Design.WebControls.WebParts.DeclarativeCatalogPartDesigner.TemplateGroups%2A> collection. <xref:System.Web.UI.Design.WebControls.WebParts.DeclarativeCatalogPartDesigner> does not render the associated <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> control on the design surface.  
-  
+<xref:System.Web.UI.Design.WebControls.WebParts.DeclarativeCatalogPartDesigner> provides design-time support for <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> controls. It extends its parent class, <xref:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner>, by adding a control-specific <xref:System.Web.UI.Design.TemplateGroup> to the <xref:System.Web.UI.Design.WebControls.WebParts.DeclarativeCatalogPartDesigner.TemplateGroups%2A> collection. <xref:System.Web.UI.Design.WebControls.WebParts.DeclarativeCatalogPartDesigner> does not render the associated <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> control on the design surface.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -58,10 +58,10 @@
         <returns>Either an empty string ("") or the value of <see cref="M:System.Web.UI.Design.WebControls.WebParts.DeclarativeCatalogPartDesigner.GetEmptyDesignTimeHtml" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there is no <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart.WebPartsTemplate%2A> associated with the control, the designer displays the standard gray box with the class name and instance name of the control. Otherwise, no design-time rendering occurs at all because the check boxes and Web Parts titles are rendered by the <xref:System.Web.UI.WebControls.WebParts.CatalogPartChrome> instead of the <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> itself.  
-  
+If there is no <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart.WebPartsTemplate%2A> associated with the control, the designer displays the standard gray box with the class name and instance name of the control. Otherwise, no design-time rendering occurs at all because the check boxes and Web Parts titles are rendered by the <xref:System.Web.UI.WebControls.WebParts.CatalogPartChrome> instead of the <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> itself.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,10 +84,10 @@
         <returns>An empty markup string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation renders the control as a gray box showing the class name and the instance name.  
-  
+This operation renders the control as a gray box showing the class name and the instance name.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,10 +130,10 @@
         <value>The appended <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> associated with this class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.WebParts.DeclarativeCatalogPartDesigner.TemplateGroups%2A> property overrides its base implementation to add a <xref:System.Web.UI.Design.TemplateGroup> object that is specific to this class.  
-  
+The <xref:System.Web.UI.Design.WebControls.WebParts.DeclarativeCatalogPartDesigner.TemplateGroups%2A> property overrides its base implementation to add a <xref:System.Web.UI.Design.TemplateGroup> object that is specific to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

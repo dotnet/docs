@@ -24,27 +24,27 @@
     <summary>Specifies the context keyword for a class or member. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the Help keyword for a class is given by the <xref:System.Type.FullName%2A?displayProperty=fullName> property value. For members, the Help keyword is given by the full name of the type that declared the property, plus the property name itself.  
+By default, the Help keyword for a class is given by the <xref:System.Type.FullName%2A?displayProperty=fullName> property value. For members, the Help keyword is given by the full name of the type that declared the property, plus the property name itself.  
+ 
+For example, consider the <xref:System.Windows.Forms.Control.Text%2A?displayProperty=fullName> property on the <xref:System.Windows.Forms.Button?displayProperty=fullName> control. The class keyword is "System.Windows.Forms.Button", but the <xref:System.Windows.Forms.Control.Text%2A?displayProperty=fullName> property keyword is "System.Windows.Forms.Control.Text", because the <xref:System.Windows.Forms.Control.Text%2A?displayProperty=fullName> property is declared on the <xref:System.Windows.Forms.Control?displayProperty=fullName> class, rather than the <xref:System.Windows.Forms.Button?displayProperty=fullName> class itself; the <xref:System.Windows.Forms.Button?displayProperty=fullName> class inherits the property.  
+ 
+By contrast, the <xref:System.Windows.Forms.Button.DialogResult%2A?displayProperty=fullName> property is declared on the <xref:System.Windows.Forms.Button?displayProperty=fullName> class, so its keyword is "System.Windows.Forms.Button.DialogResult".  
+ 
+When the Help system gets the keywords, it will first look at <xref:System.ComponentModel.Design.HelpKeywordAttribute>. At the class level, it will return the string specified by the <xref:System.ComponentModel.Design.HelpKeywordAttribute>. This will not be used for members of the type in question, which will still reflect the declaring type's actual full name, plus the member name. This attribute supports strongly typed classes that have associated common documentation but distinct Help IDs.  
+ 
   
- For example, consider the <xref:System.Windows.Forms.Control.Text%2A?displayProperty=fullName> property on the <xref:System.Windows.Forms.Button?displayProperty=fullName> control. The class keyword is "System.Windows.Forms.Button", but the <xref:System.Windows.Forms.Control.Text%2A?displayProperty=fullName> property keyword is "System.Windows.Forms.Control.Text", because the <xref:System.Windows.Forms.Control.Text%2A?displayProperty=fullName> property is declared on the <xref:System.Windows.Forms.Control?displayProperty=fullName> class, rather than the <xref:System.Windows.Forms.Button?displayProperty=fullName> class itself; the <xref:System.Windows.Forms.Button?displayProperty=fullName> class inherits the property.  
-  
- By contrast, the <xref:System.Windows.Forms.Button.DialogResult%2A?displayProperty=fullName> property is declared on the <xref:System.Windows.Forms.Button?displayProperty=fullName> class, so its keyword is "System.Windows.Forms.Button.DialogResult".  
-  
- When the Help system gets the keywords, it will first look at <xref:System.ComponentModel.Design.HelpKeywordAttribute>. At the class level, it will return the string specified by the <xref:System.ComponentModel.Design.HelpKeywordAttribute>. This will not be used for members of the type in question, which will still reflect the declaring type's actual full name, plus the member name. This attribute supports strongly typed classes that have associated common documentation but distinct Help IDs.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to override this Help system behavior by placing the attribute on the member itself. These are the keywords for the following class, called `DemoComponent`:  
-  
+The following code example shows how to override this Help system behavior by placing the attribute on the member itself. These are the keywords for the following class, called `DemoComponent`:  
+ 
 -   Class keyword: "`System.ComponentModel.Component`" (`DemoNamespace.DemoComponent`)  
-  
+ 
 -   Property1 keyword: "`DemoNamespace.DemoComponent.Property1`" (default)  
-  
+ 
 -   Property2 keyword: "`SomeNamespace.SomeOtherClass.Property2`" (`DemoNamespace.DemoComponent.Property2`)  
-  
+ 
 ```csharp  
 [HelpKeywordAttribute(typeof(Component))]  
 public class DemoComponent : Component  
@@ -67,12 +67,12 @@ public class DemoComponent : Component
     }  
 }  
 ```  
-  
- The following code example demonstrates using the <xref:System.ComponentModel.Design.HelpKeywordAttribute> class to specify a context keyword. For a complete explanation of this code example, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
-  
- [!code-csharp[System.ComponentModel.AttributesDemoControl#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#20)]
- [!code-vb[System.ComponentModel.AttributesDemoControl#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#20)]  
-  
+ 
+The following code example demonstrates using the <xref:System.ComponentModel.Design.HelpKeywordAttribute> class to specify a context keyword. For a complete explanation of this code example, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
+ 
+[!code-csharp[System.ComponentModel.AttributesDemoControl#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#20)]
+[!code-vb[System.ComponentModel.AttributesDemoControl#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#20)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -144,10 +144,10 @@ public class DemoComponent : Component
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" /> class from the given type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Help keyword will be set to the <xref:System.Type.FullName%2A> property of `t`.  
-  
+The Help keyword will be set to the <xref:System.Type.FullName%2A> property of `t`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -175,10 +175,10 @@ public class DemoComponent : Component
         <summary>Represents the default value for <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" />. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value for <xref:System.ComponentModel.Design.HelpKeywordAttribute> is `null`.  
-  
+The default value for <xref:System.ComponentModel.Design.HelpKeywordAttribute> is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -210,10 +210,10 @@ public class DemoComponent : Component
           <see langword="true" /> if the specified <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" /> is equal to the current <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two instances of a <xref:System.ComponentModel.Design.HelpKeywordAttribute> are equal if their Help keywords are equal.  
-  
+Two instances of a <xref:System.ComponentModel.Design.HelpKeywordAttribute> are equal if their Help keywords are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>

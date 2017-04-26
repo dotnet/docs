@@ -14,22 +14,22 @@
     <summary>Represents a collection of <see cref="T:System.Web.UI.WebControls.TableCell" /> objects that are the cells of a <see cref="T:System.Web.UI.WebControls.TableRow" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> class represents the collection of <xref:System.Web.UI.WebControls.TableCell> objects of a <xref:System.Web.UI.WebControls.TableRow> control. <xref:System.Web.UI.WebControls.TableCell> objects can be added at the end of the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> collection with the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection.Add%2A> method or at a specified index location in the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> with the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection.AddAt%2A> method.  
+The <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> class represents the collection of <xref:System.Web.UI.WebControls.TableCell> objects of a <xref:System.Web.UI.WebControls.TableRow> control. <xref:System.Web.UI.WebControls.TableCell> objects can be added at the end of the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> collection with the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection.Add%2A> method or at a specified index location in the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> with the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection.AddAt%2A> method.  
+ 
+Only <xref:System.Web.UI.WebControls.TableCell> objects can be added to the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> collection.  
+ 
   
- Only <xref:System.Web.UI.WebControls.TableCell> objects can be added to the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> collection.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a table, add elements to the table programmatically, and then display the table on the Web page. Note how the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.TableRow> control represents a <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> collection and how the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection.Add%2A> method is used to add cells to the row.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.TableRow> class.  
-  
- [!code-csharp[TableCell#5](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#5)]
- [!code-vb[TableCell#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#5)]  
-  
+The following code example demonstrates how to create a table, add elements to the table programmatically, and then display the table on the Web page. Note how the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.TableRow> control represents a <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> collection and how the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection.Add%2A> method is used to add cells to the row.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.TableRow> class.  
+ 
+[!code-csharp[TableCell#5](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#5)]
+[!code-vb[TableCell#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,20 +54,20 @@
         <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the <see cref="T:System.Web.UI.WebControls.TableRow.CellControlCollection" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The added control can be only a <xref:System.Web.UI.WebControls.TableCell> object; otherwise, an <xref:System.ArgumentException> is thrown.  
+The added control can be only a <xref:System.Web.UI.WebControls.TableCell> object; otherwise, an <xref:System.ArgumentException> is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a table, add elements to the table programmatically, and then display the table on the Web page. Note how the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.TableRow> control represents a <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> collection and how the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection.Add%2A> method is used to add cells to the row.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.TableRow> class.  
-  
- [!code-csharp[TableCell#5](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#5)]
- [!code-vb[TableCell#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#5)]  
-  
+The following code example demonstrates how to create a table, add elements to the table programmatically, and then display the table on the Web page. Note how the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.TableRow> control represents a <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> collection and how the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection.Add%2A> method is used to add cells to the row.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.TableRow> class.  
+ 
+[!code-csharp[TableCell#5](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#5)]
+[!code-vb[TableCell#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The added <see cref="T:System.Web.UI.Control" /> must be of the type <see cref="T:System.Web.UI.WebControls.TableCell" />.</exception>
@@ -95,10 +95,10 @@
         <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the <see cref="T:System.Web.UI.WebControls.TableRow.CellControlCollection" /> collection. The new control is added to the array at the specified index location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The added control can be only a <xref:System.Web.UI.WebControls.TableCell> object; otherwise, an <xref:System.ArgumentException> is thrown.  
-  
+The added control can be only a <xref:System.Web.UI.WebControls.TableCell> object; otherwise, an <xref:System.ArgumentException> is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The added <see cref="T:System.Web.UI.Control" /> must be of the type <see cref="T:System.Web.UI.WebControls.TableCell" />.</exception>

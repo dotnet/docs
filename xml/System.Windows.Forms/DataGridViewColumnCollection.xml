@@ -23,18 +23,18 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Forms.DataGridViewColumn" /> objects in a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can retrieve an instance of this class through the <xref:System.Windows.Forms.DataGridView.Columns%2A> property of the <xref:System.Windows.Forms.DataGridView> control. The collection maintains a reference to the control through the <xref:System.Windows.Forms.DataGridViewColumnCollection.DataGridView%2A> property.  
+You can retrieve an instance of this class through the <xref:System.Windows.Forms.DataGridView.Columns%2A> property of the <xref:System.Windows.Forms.DataGridView> control. The collection maintains a reference to the control through the <xref:System.Windows.Forms.DataGridViewColumnCollection.DataGridView%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates the use of this type.  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/cs/misc2.cs#20)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/vb/misc2.vb#20)]  
-  
+The following code example illustrates the use of this type.  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/cs/misc2.cs#20)]
+[!code-vb[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/vb/misc2.vb#20)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,13 +78,13 @@
         <returns>The index of the column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates the use of this method.  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/cs/misc2.cs#20)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/vb/misc2.vb#20)]  
-  
+The following code example illustrates the use of this method.  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/cs/misc2.cs#20)]
+[!code-vb[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/vb/misc2.vb#20)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -174,10 +174,10 @@
         <returns>The index of the column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `columnName` and `headerText` parameters are related to the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A> and <xref:System.Windows.Forms.DataGridViewColumn.HeaderText%2A> properties, respectively.  
-  
+The `columnName` and `headerText` parameters are related to the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A> and <xref:System.Windows.Forms.DataGridViewColumn.HeaderText%2A> properties, respectively.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
@@ -243,13 +243,13 @@
         <summary>Adds a range of columns to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates the use of this method. This example is part of a larger example available in [How to: Set the Sizing Modes of the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-set-the-sizing-modes-of-the-windows-forms-datagridview-control.md).  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewSizingScenarios#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/CS/sizingscenarios.cs#40)]
- [!code-vb[System.Windows.Forms.DataGridViewSizingScenarios#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/vb/sizingscenarios.vb#40)]  
-  
+The following code example illustrates the use of this method. This example is part of a larger example available in [How to: Set the Sizing Modes of the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-set-the-sizing-modes-of-the-windows-forms-datagridview-control.md).  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewSizingScenarios#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/CS/sizingscenarios.cs#40)]
+[!code-vb[System.Windows.Forms.DataGridViewSizingScenarios#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/vb/sizingscenarios.vb#40)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -336,13 +336,13 @@
         <summary>Clears the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates the use of this method. This example is part of a larger example available in [Column Fill Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewFillColumnsDemo#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/CS/fillcolumns.cs#20)]
- [!code-vb[System.Windows.Forms.DataGridViewFillColumnsDemo#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/vb/fillcolumns.vb#20)]  
-  
+The following code example illustrates the use of this method. This example is part of a larger example available in [Column Fill Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewFillColumnsDemo#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/CS/fillcolumns.cs#20)]
+[!code-vb[System.Windows.Forms.DataGridViewFillColumnsDemo#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/vb/fillcolumns.vb#20)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
@@ -390,22 +390,22 @@
         <summary>Occurs when the collection changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Examples of collection changes include additions or removals of columns.  
+Examples of collection changes include additions or removals of columns.  
+ 
+For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridViewColumnCollection.CollectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridViewColumnCollection> named `DataGridViewColumnCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridViewColumnCollection.CollectionChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#372](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#372)]
- [!code-vb[System.Windows.Forms.EventExamples#372](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#372)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridViewColumnCollection.CollectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridViewColumnCollection> named `DataGridViewColumnCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridViewColumnCollection.CollectionChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#372](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#372)]
+[!code-vb[System.Windows.Forms.EventExamples#372](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#372)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -432,10 +432,10 @@
           <see langword="true" /> if the column is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of a column is indicated by the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A?displayProperty=fullName> property.  
-  
+The name of a column is indicated by the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -528,13 +528,13 @@
         <returns>The number of columns that meet the filter requirements.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates how to use this method to get the number of selected columns.  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewSelectedCollections#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectedCollections/CS/DataGridViewSelectedCollections.cs#30)]
- [!code-vb[System.Windows.Forms.DataGridViewSelectedCollections#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectedCollections/VB/DataGridViewSelectedCollections.vb#30)]  
-  
+The following code example illustrates how to use this method to get the number of selected columns.  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewSelectedCollections#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectedCollections/CS/DataGridViewSelectedCollections.cs#30)]
+[!code-vb[System.Windows.Forms.DataGridViewSelectedCollections#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectedCollections/VB/DataGridViewSelectedCollections.vb#30)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -562,13 +562,13 @@
         <returns>The width, in pixels, that is necessary to display all of the columns that meet the filter requirements.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates the use of this method. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#20)]
- [!code-vb[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#20)]  
-  
+The following code example illustrates the use of this method. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#20)]
+[!code-vb[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#20)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -596,21 +596,21 @@
         <returns>The first column in display order that meets the given filter requirements, or <see langword="null" /> if no column is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The first column in display order is the column with the lowest <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value, regardless of whether the column is actually visible on the screen.  
+The first column in display order is the column with the lowest <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value, regardless of whether the column is actually visible on the screen.  
+ 
+This method lets you determine the first column that fits the given criteria without having to compare index values directly.  
+ 
   
- This method lets you determine the first column that fits the given criteria without having to compare index values directly.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetFirstColumn%2A> method to swap the first displayed column and the last displayed column.  
-  
- [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#170)]
- [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#170)]
- [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#170)]  
-  
+The following code example uses the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetFirstColumn%2A> method to swap the first displayed column and the last displayed column.  
+ 
+[!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#170)]
+[!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#170)]
+[!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#170)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -640,12 +640,12 @@
         <returns>The first column in display order that meets the given filter requirements, or <see langword="null" /> if no column is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The first column in display order is the column with the lowest <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value, regardless of whether the column is actually visible on the screen.  
-  
- This method lets you determine the first column that fits the given criteria without having to compare index values directly.  
-  
+The first column in display order is the column with the lowest <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value, regardless of whether the column is actually visible on the screen.  
+ 
+This method lets you determine the first column that fits the given criteria without having to compare index values directly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">At least one of the filter values is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
@@ -674,21 +674,21 @@
         <returns>The last displayed column in display order that meets the given filter requirements, or <see langword="null" /> if no column is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The last column in display order is the column with the highest <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value, regardless of whether the column is actually visible on the screen.  
+The last column in display order is the column with the highest <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value, regardless of whether the column is actually visible on the screen.  
+ 
+This method lets you determine the last column that fits the given criteria without having to compare index values directly.  
+ 
   
- This method lets you determine the last column that fits the given criteria without having to compare index values directly.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetLastColumn%2A> method to swap the last displayed column and the first displayed column.  
-  
- [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#170)]
- [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#170)]
- [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#170)]  
-  
+The following code example uses the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetLastColumn%2A> method to swap the last displayed column and the first displayed column.  
+ 
+[!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#170)]
+[!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#170)]
+[!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#170)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">At least one of the filter values is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
@@ -719,12 +719,12 @@
         <returns>The next column that meets the given filter requirements, or <see langword="null" /> if no column is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The next column in display order is the column with the lowest <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value higher than the <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value of the specified column, regardless of whether the column is actually visible on the screen.  
-  
- This method lets you determine the next column after the current column that fits the given criteria without having to compare index values directly.  
-  
+The next column in display order is the column with the lowest <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value higher than the <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value of the specified column, regardless of whether the column is actually visible on the screen.  
+ 
+This method lets you determine the next column after the current column that fits the given criteria without having to compare index values directly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -757,12 +757,12 @@
         <returns>The previous column that meets the given filter requirements, or <see langword="null" /> if no column is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The previous column in display order is the column with the highest <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value lower than the <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value of the specified column, regardless of whether the column is actually visible on the screen.  
-  
- This method lets you determine the first column before the current column that fits the given criteria without having to compare index values directly.  
-  
+The previous column in display order is the column with the highest <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value lower than the <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value of the specified column, regardless of whether the column is actually visible on the screen.  
+ 
+This method lets you determine the first column before the current column that fits the given criteria without having to compare index values directly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -814,13 +814,13 @@
         <summary>Inserts a column at the given index in the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates the use of this method. For more information, see [How to: Add an Unbound Column to a Data-Bound Windows Forms DataGridView Control](~/docs/framework/winforms/controls/unbound-column-to-a-data-bound-datagridview.md).  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewMisc#010](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#010)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#010](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#010)]  
-  
+The following code example illustrates the use of this method. For more information, see [How to: Add an Unbound Column to a Data-Bound Windows Forms DataGridView Control](~/docs/framework/winforms/controls/unbound-column-to-a-data-bound-datagridview.md).  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewMisc#010](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#010)]
+[!code-vb[System.Windows.Forms.DataGridViewMisc#010](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#010)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -964,12 +964,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.DataGridViewColumnCollection.CollectionChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The <xref:System.Windows.Forms.DataGridViewColumnCollection.OnCollectionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
+The <xref:System.Windows.Forms.DataGridViewColumnCollection.OnCollectionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -997,20 +997,20 @@
         <summary>Removes the column with the specified name from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of a column is indicated by the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A?displayProperty=fullName> property.  
+The name of a column is indicated by the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A?displayProperty=fullName> property.  
+ 
+To remove a column that is automatically generated when binding to a data source, call this method in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=fullName> event handler.  
+ 
   
- To remove a column that is automatically generated when binding to a data source, call this method in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=fullName> event handler.  
-  
-   
-  
+ 
 ## Examples  
- The following code example illustrates the use of this method. For more information, see [How to: Remove Autogenerated Columns from a Windows Forms DataGridView Control](~/docs/framework/winforms/controls/remove-autogenerated-columns-from-a-wf-datagridview-control.md).  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewMisc#110](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#110)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#110](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#110)]  
-  
+The following code example illustrates the use of this method. For more information, see [How to: Remove Autogenerated Columns from a Windows Forms DataGridView Control](~/docs/framework/winforms/controls/remove-autogenerated-columns-from-a-wf-datagridview-control.md).  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewMisc#110](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#110)]
+[!code-vb[System.Windows.Forms.DataGridViewMisc#110](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#110)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1066,10 +1066,10 @@
         <summary>Removes the specified column from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To remove a column that is automatically generated when binding to a data source, call this method in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=fullName> event handler.  
-  
+To remove a column that is automatically generated when binding to a data source, call this method in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=fullName> event handler.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1125,10 +1125,10 @@
         <summary>Removes the column at the given index in the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To remove a column that is automatically generated when binding to a data source, call this method in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=fullName> event handler.  
-  
+To remove a column that is automatically generated when binding to a data source, call this method in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=fullName> event handler.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1184,10 +1184,10 @@
         <summary>Copies the entire contents of the collection to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1220,10 +1220,10 @@
         <value>The number of elements in the <see cref="T:System.Windows.Forms.DataGridViewColumnCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1246,10 +1246,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1271,10 +1271,10 @@
         <value>An <see cref="T:System.Object" /> that can be used to synchronize access to the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1297,10 +1297,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1326,10 +1326,10 @@
         <returns>The index at which <paramref name="value" /> has been added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">
@@ -1410,10 +1410,10 @@
         <summary>Removes all elements from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
@@ -1467,10 +1467,10 @@
           <see langword="true" /> if <paramref name="value" /> is found in the <see cref="T:System.Windows.Forms.DataGridViewColumnCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1498,10 +1498,10 @@
         <returns>The zero-based index of the first occurrence of <paramref name="value" /> within the collection, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1528,10 +1528,10 @@
         <summary>Inserts an element into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">
@@ -1613,10 +1613,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1639,10 +1639,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1668,12 +1668,12 @@
         <value>The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- This implementation does not support setting this property.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
+This implementation does not support setting this property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This property is being set.</exception>
@@ -1700,10 +1700,10 @@
         <summary>Removes the first occurrence of the specified object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">
@@ -1761,10 +1761,10 @@
         <summary>Removes the element with the specified index from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">

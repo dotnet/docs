@@ -18,17 +18,17 @@
     <summary>Specifies the available verbosity levels of a <see cref="T:Microsoft.Build.Utilities.Logger" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The descriptions of verbosity levels are only guidelines to how a typical logger (including the default [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] console logger) logs build events. Loggers are free to interpret verbosity levels in any way they want.  
+The descriptions of verbosity levels are only guidelines to how a typical logger (including the default [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] console logger) logs build events. Loggers are free to interpret verbosity levels in any way they want.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to write a basic logger that responds to build events.  
-  
- [!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
-  
+The following example shows how to write a basic logger that responds to build events.  
+ 
+[!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

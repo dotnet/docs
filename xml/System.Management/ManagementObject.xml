@@ -33,20 +33,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class. This is the default constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with the default constructor.  
-  
- [!code-csharp[wminet_ManagementObject()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject()/cs/ManagementObject().cs#1)]
- [!code-vb[wminet_ManagementObject()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject()/vb/ManagementObject().vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with the default constructor.  
+ 
+[!code-csharp[wminet_ManagementObject()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject()/cs/ManagementObject().cs#1)]
+[!code-vb[wminet_ManagementObject()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject()/vb/ManagementObject().vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -68,20 +68,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class for the specified WMI object path. The path is provided as a <see cref="T:System.Management.ManagementPath" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with a specified WMI object path.  
-  
- [!code-csharp[wminet_ManagementObject(M)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject(M)/cs/ManagementObject(M).cs#1)]
- [!code-vb[wminet_ManagementObject(M)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject(M)/vb/ManagementObject(M).vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with a specified WMI object path.  
+ 
+[!code-csharp[wminet_ManagementObject(M)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject(M)/cs/ManagementObject(M).cs#1)]
+[!code-vb[wminet_ManagementObject(M)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject(M)/vb/ManagementObject(M).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,21 +103,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class for the specified WMI object path. The path is provided as a string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified path is a relative path only (a server or namespace is not specified), the default path is the local machine, and the default namespace is the <xref:System.Management.ManagementPath.DefaultPath%2A> path (by default, root\cimv2). If the user specifies a full path, the default settings are overridden.  
-  
+If the specified path is a relative path only (a server or namespace is not specified), the default path is the local machine, and the default namespace is the <xref:System.Management.ManagementPath.DefaultPath%2A> path (by default, root\cimv2). If the user specifies a full path, the default settings are overridden.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObject> class.  
-  
- [!code-csharp[wminet_ManagementObject(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject(S)/cs/ManagementObject(S).cs#1)]
- [!code-vb[wminet_ManagementObject(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject(S)/vb/ManagementObject(S).vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObject> class.  
+ 
+[!code-csharp[wminet_ManagementObject(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject(S)/cs/ManagementObject(S).cs#1)]
+[!code-vb[wminet_ManagementObject(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject(S)/vb/ManagementObject(S).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,20 +141,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class bound to the specified WMI path, including the specified additional options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObject> class that is bound to a specific WMI path.  
-  
- [!code-csharp[wminet_ManagementObject(M_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject(M_O)/cs/ManagementObject(M_O).cs#1)]
- [!code-vb[wminet_ManagementObject(M_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject(M_O)/vb/ManagementObject(M_O).vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObject> class that is bound to a specific WMI path.  
+ 
+[!code-csharp[wminet_ManagementObject(M_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject(M_O)/cs/ManagementObject(M_O).cs#1)]
+[!code-vb[wminet_ManagementObject(M_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject(M_O)/vb/ManagementObject(M_O).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,12 +178,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class that is serializable.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -207,20 +207,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class bound to the specified WMI path, including the specified additional options. In this variant, the path can be specified as a string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObject> class.  
-  
- [!code-csharp[wminet_ManagementObject(S_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject(S_O)/cs/ManagementObject(S_O).cs#1)]
- [!code-vb[wminet_ManagementObject(S_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject(S_O)/vb/ManagementObject(S_O).vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObject> class.  
+ 
+[!code-csharp[wminet_ManagementObject(S_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject(S_O)/cs/ManagementObject(S_O).cs#1)]
+[!code-vb[wminet_ManagementObject(S_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject(S_O)/vb/ManagementObject(S_O).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,27 +246,27 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class bound to the specified WMI path that includes the specified options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because WMI paths can be relative or full, a conflict between the scope and the path specified may arise. However, if a scope is specified and a relative WMI path is specified, then there is no conflict. The following are some possible conflicts:  
-  
- If a scope is not specified and a relative WMI path is specified, then the scope will default to the local machine's <xref:System.Management.ManagementPath.DefaultPath%2A>.  
-  
- If a scope is not specified and a full WMI path is specified, then the scope will be inferred from the scope portion of the full path. For example, the full WMI path: `\\MyMachine\root\MyNamespace:MyClass.Name='abc'` will represent the WMI object 'MyClass.Name='abc'" in the scope '\\\MyMachine\root\MyNamespace'.  
-  
- If a scope is specified and a full WMI path is specified, then the scope will override the scope portion of the full path. For example, if the following scope was specified: \\\MyMachine\root\MyScope, and the following full path was specified: \\\MyMachine\root\MyNamespace:MyClass.Name='abc', then look for the following `object: \\MyMachine\root\MyScope:MyClass.Name= 'abc'` (the scope part of the full path is ignored).  
-  
+Because WMI paths can be relative or full, a conflict between the scope and the path specified may arise. However, if a scope is specified and a relative WMI path is specified, then there is no conflict. The following are some possible conflicts:  
+ 
+If a scope is not specified and a relative WMI path is specified, then the scope will default to the local machine's <xref:System.Management.ManagementPath.DefaultPath%2A>.  
+ 
+If a scope is not specified and a full WMI path is specified, then the scope will be inferred from the scope portion of the full path. For example, the full WMI path: `\\MyMachine\root\MyNamespace:MyClass.Name='abc'` will represent the WMI object 'MyClass.Name='abc'" in the scope '\\\MyMachine\root\MyNamespace'.  
+ 
+If a scope is specified and a full WMI path is specified, then the scope will override the scope portion of the full path. For example, if the following scope was specified: \\\MyMachine\root\MyScope, and the following full path was specified: \\\MyMachine\root\MyNamespace:MyClass.Name='abc', then look for the following `object: \\MyMachine\root\MyScope:MyClass.Name= 'abc'` (the scope part of the full path is ignored).  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObject> class that is bound to a specific WMI path.  
-  
- [!code-csharp[wminet_ManagementObject(M_M_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject(M_M_O)/cs/ManagementObject(M_M_O).cs#1)]
- [!code-vb[wminet_ManagementObject(M_M_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject(M_M_O)/vb/ManagementObject(M_M_O).vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObject> class that is bound to a specific WMI path.  
+ 
+[!code-csharp[wminet_ManagementObject(M_M_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject(M_M_O)/cs/ManagementObject(M_M_O).cs#1)]
+[!code-vb[wminet_ManagementObject(M_M_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject(M_M_O)/vb/ManagementObject(M_M_O).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -292,21 +292,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class bound to the specified WMI path, and includes the specified options. The scope and the path are specified as strings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the equivalent overload for details.  
-  
+See the equivalent overload for details.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with a specific WMI path and options.  
-  
- [!code-csharp[wminet_ManagementObject(S_S_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject(S_S_O)/cs/ManagementObject(S_S_O).cs#1)]
- [!code-vb[wminet_ManagementObject(S_S_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject(S_S_O)/vb/ManagementObject(S_S_O).vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with a specific WMI path and options.  
+ 
+[!code-csharp[wminet_ManagementObject(S_S_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject(S_S_O)/cs/ManagementObject(S_S_O).cs#1)]
+[!code-vb[wminet_ManagementObject(S_S_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject(S_S_O)/vb/ManagementObject(S_S_O).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,21 +328,21 @@
         <value>A <see cref="T:System.Management.ManagementPath" /> representing the path to the object's class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only.  
-  
+This property is read-only.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObject> class and then retrieves the class path for the <xref:System.Management.ManagementObject>.  
-  
- [!code-csharp[wminet_ManagementObject_Path#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_Path/cs/ManagementObject_Path.cs#1)]
- [!code-vb[wminet_ManagementObject_Path#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_Path/vb/ManagementObject_Path.vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObject> class and then retrieves the class path for the <xref:System.Management.ManagementObject>.  
+ 
+[!code-csharp[wminet_ManagementObject_Path#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_Path/cs/ManagementObject_Path.cs#1)]
+[!code-vb[wminet_ManagementObject_Path#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_Path/vb/ManagementObject_Path.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -365,12 +365,12 @@
         <returns>The copied object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -396,12 +396,12 @@
         <returns>The new path of the copied object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -427,12 +427,12 @@
         <returns>The new path of the copied object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -459,12 +459,12 @@
         <summary>Copies the object to a different location, asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -491,12 +491,12 @@
         <summary>Copies the object to a different location, asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -524,12 +524,12 @@
         <returns>The new path of the copied object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -557,12 +557,12 @@
         <returns>The new path of the copied object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -591,12 +591,12 @@
         <summary>Copies the object to a different location, asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -625,12 +625,12 @@
         <summary>Copies the object to a different location, asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -652,12 +652,12 @@
         <summary>Deletes the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -682,12 +682,12 @@
         <summary>Deletes the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -712,12 +712,12 @@
         <summary>Deletes the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -744,12 +744,12 @@
         <summary>Deletes the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -789,21 +789,21 @@
         <summary>Binds WMI class information to the management object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method is implicitly invoked at the first attempt to get or set information to the WMI object. It can also be explicitly invoked at the user's discretion, to better control the timing and manner of retrieval.  
-  
+The method is implicitly invoked at the first attempt to get or set information to the WMI object. It can also be explicitly invoked at the user's discretion, to better control the timing and manner of retrieval.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example calls the <xref:System.Management.ManagementObject.Get%2A> method to get an instance of the <xref:System.Management.ManagementObject> class.  
-  
- [!code-csharp[wminet_ManagementObject_GetMethod()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_GetMethod()/cs/ManagementObject_GetMethod().cs#1)]
- [!code-vb[wminet_ManagementObject_GetMethod()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_GetMethod()/vb/ManagementObject_GetMethod().vb#1)]  
-  
+The following example calls the <xref:System.Management.ManagementObject.Get%2A> method to get an instance of the <xref:System.Management.ManagementObject> class.  
+ 
+[!code-csharp[wminet_ManagementObject_GetMethod()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_GetMethod()/cs/ManagementObject_GetMethod().cs#1)]
+[!code-vb[wminet_ManagementObject_GetMethod()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_GetMethod()/vb/ManagementObject_GetMethod().vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -828,21 +828,21 @@
         <summary>Binds to the management object asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method will issue the request to get the object and then will immediately return. The results of the operation will then be delivered through events being fired on the watcher object provided.  
-  
+The method will issue the request to get the object and then will immediately return. The results of the operation will then be delivered through events being fired on the watcher object provided.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example calls the <xref:System.Management.ManagementObject.Get%2A> method to asynchronously get an instance of the <xref:System.Management.ManagementObject> class.  
-  
- [!code-csharp[wminet_ManagementObject_GetMethod(M)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_GetMethod(M)/cs/ManagementObject_GetMethod(M).cs#1)]
- [!code-vb[wminet_ManagementObject_GetMethod(M)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_GetMethod(M)/vb/ManagementObject_GetMethod(M).vb#1)]  
-  
+The following example calls the <xref:System.Management.ManagementObject.Get%2A> method to asynchronously get an instance of the <xref:System.Management.ManagementObject> class.  
+ 
+[!code-csharp[wminet_ManagementObject_GetMethod(M)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_GetMethod(M)/cs/ManagementObject_GetMethod(M).cs#1)]
+[!code-vb[wminet_ManagementObject_GetMethod(M)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_GetMethod(M)/vb/ManagementObject_GetMethod(M).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -868,13 +868,13 @@
         <returns>A <see cref="T:System.Management.ManagementBaseObject" /> containing the input parameters to the method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Gets the object containing the input parameters to a method, and then fills in the values and passes the object to the <xref:System.Management.ManagementObject.InvokeMethod%2A> call.  
-  
+Gets the object containing the input parameters to a method, and then fills in the values and passes the object to the <xref:System.Management.ManagementObject.InvokeMethod%2A> call.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -901,12 +901,12 @@
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data necessary to deserialize the field represented by this instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -929,21 +929,21 @@
         <returns>A <see cref="T:System.Management.ManagementObjectCollection" /> containing the related objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The operation is equivalent to an *ASSOCIATORS OF* query where ResultClass = relatedClass.  
-  
+The operation is equivalent to an *ASSOCIATORS OF* query where ResultClass = relatedClass.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example calls the <xref:System.Management.ManagementObject.GetRelated%2A> method to get a collection of objects related to an instance of the <xref:System.Management.ManagementObject> class.  
-  
- [!code-csharp[wminet_ManagementObject_GetRelated()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_GetRelated()/cs/ManagementObject_GetRelated().cs#1)]
- [!code-vb[wminet_ManagementObject_GetRelated()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_GetRelated()/vb/ManagementObject_GetRelated().vb#1)]  
-  
+The following example calls the <xref:System.Management.ManagementObject.GetRelated%2A> method to get a collection of objects related to an instance of the <xref:System.Management.ManagementObject> class.  
+ 
+[!code-csharp[wminet_ManagementObject_GetRelated()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_GetRelated()/cs/ManagementObject_GetRelated().cs#1)]
+[!code-vb[wminet_ManagementObject_GetRelated()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_GetRelated()/vb/ManagementObject_GetRelated().vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -968,12 +968,12 @@
         <summary>Gets a collection of objects related to the object (associators) asynchronously. This call returns immediately, and a delegate is called when the results are available.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -999,20 +999,20 @@
         <returns>A <see cref="T:System.Management.ManagementObjectCollection" /> containing the related objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example calls the <xref:System.Management.ManagementObject.GetRelated%2A> method to get a collection of objects related to an instance of the <xref:System.Management.ManagementObject> class.  
-  
- [!code-csharp[wminet_ManagementObject_GetRelated(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_GetRelated(S)/cs/ManagementObject_GetRelated(S).cs#1)]
- [!code-vb[wminet_ManagementObject_GetRelated(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_GetRelated(S)/vb/ManagementObject_GetRelated(S).vb#1)]  
-  
+The following example calls the <xref:System.Management.ManagementObject.GetRelated%2A> method to get a collection of objects related to an instance of the <xref:System.Management.ManagementObject> class.  
+ 
+[!code-csharp[wminet_ManagementObject_GetRelated(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_GetRelated(S)/cs/ManagementObject_GetRelated(S).cs#1)]
+[!code-vb[wminet_ManagementObject_GetRelated(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_GetRelated(S)/vb/ManagementObject_GetRelated(S).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1039,13 +1039,13 @@
         <summary>Gets a collection of objects related to the object (associators).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation is equivalent to an *ASSOCIATORS OF* query where ResultClass = relatedClass.  
-  
+This operation is equivalent to an *ASSOCIATORS OF* query where ResultClass = relatedClass.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1085,13 +1085,13 @@
         <returns>A <see cref="T:System.Management.ManagementObjectCollection" /> containing the related objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation is equivalent to an *ASSOCIATORS OF* query where ResultClass = relatedClass.  
-  
+This operation is equivalent to an *ASSOCIATORS OF* query where ResultClass = relatedClass.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1132,13 +1132,13 @@
         <summary>Gets a collection of objects related to the object (associators).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation is equivalent to an *ASSOCIATORS OF* query where ResultClass = relatedClass.  
-  
+This operation is equivalent to an *ASSOCIATORS OF* query where ResultClass = relatedClass.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1161,13 +1161,13 @@
         <returns>A <see cref="T:System.Management.ManagementObjectCollection" /> containing the association objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The operation is equivalent to a *REFERENCES OF* query.  
-  
+The operation is equivalent to a *REFERENCES OF* query.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1192,13 +1192,13 @@
         <summary>Gets a collection of associations to the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation is equivalent to a *REFERENCES OF* query.  
-  
+This operation is equivalent to a *REFERENCES OF* query.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1224,13 +1224,13 @@
         <returns>A <see cref="T:System.Management.ManagementObjectCollection" /> containing the association objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation is equivalent to a *REFERENCES OF* query where the AssocClass = relationshipClass.  
-  
+This operation is equivalent to a *REFERENCES OF* query where the AssocClass = relationshipClass.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1257,13 +1257,13 @@
         <summary>Gets a collection of associations to the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation is equivalent to a *REFERENCES OF* query where the AssocClass = relationshipClass.  
-  
+This operation is equivalent to a *REFERENCES OF* query where the AssocClass = relationshipClass.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1297,13 +1297,13 @@
         <returns>A <see cref="T:System.Management.ManagementObjectCollection" /> containing the association objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation is equivalent to a *REFERENCES OF* query with possibly all the extensions.  
-  
+This operation is equivalent to a *REFERENCES OF* query with possibly all the extensions.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1338,13 +1338,13 @@
         <summary>Gets a collection of associations to the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation is equivalent to a *REFERENCES OF* query with possibly all the extensions.  
-  
+This operation is equivalent to a *REFERENCES OF* query with possibly all the extensions.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1372,21 +1372,21 @@
         <returns>The object value returned by the method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the method is static, the execution should still succeed.  
-  
+If the method is static, the execution should still succeed.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example invokes the **Win32_Process::Create** method to start a new process of Notepad.exe.  
-  
- [!code-csharp[wminet_ManagementObject_InvokeMethod(S_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_InvokeMethod(S_O)/cs/ManagementObject_InvokeMethod(S_O).cs#1)]
- [!code-vb[wminet_ManagementObject_InvokeMethod(S_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_InvokeMethod(S_O)/vb/ManagementObject_InvokeMethod(S_O).vb#1)]  
-  
+The following example invokes the **Win32_Process::Create** method to start a new process of Notepad.exe.  
+ 
+[!code-csharp[wminet_ManagementObject_InvokeMethod(S_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_InvokeMethod(S_O)/cs/ManagementObject_InvokeMethod(S_O).cs#1)]
+[!code-vb[wminet_ManagementObject_InvokeMethod(S_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_InvokeMethod(S_O)/vb/ManagementObject_InvokeMethod(S_O).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1415,13 +1415,13 @@
         <summary>Invokes a method on the object, asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the method is static, the execution should still succeed.  
-  
+If the method is static, the execution should still succeed.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1451,20 +1451,20 @@
         <returns>A <see cref="T:System.Management.ManagementBaseObject" /> containing the output parameters and return value of the executed method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example invokes the **Win32_Process::Create** method to start a new process of Calc.exe.  
-  
- [!code-csharp[wminet_ManagementObject_InvokeMethod(S_M_I)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_InvokeMethod(S_M_I)/cs/ManagementObject_InvokeMethod(S_M_I).cs#1)]
- [!code-vb[wminet_ManagementObject_InvokeMethod(S_M_I)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_InvokeMethod(S_M_I)/vb/ManagementObject_InvokeMethod(S_M_I).vb#1)]  
-  
+The following example invokes the **Win32_Process::Create** method to start a new process of Calc.exe.  
+ 
+[!code-csharp[wminet_ManagementObject_InvokeMethod(S_M_I)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_InvokeMethod(S_M_I)/cs/ManagementObject_InvokeMethod(S_M_I).cs#1)]
+[!code-vb[wminet_ManagementObject_InvokeMethod(S_M_I)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_InvokeMethod(S_M_I)/vb/ManagementObject_InvokeMethod(S_M_I).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1495,13 +1495,13 @@
         <summary>Invokes a method on the object, asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method invokes the specified method execution and then returns. Progress and results are reported through events on the <xref:System.Management.ManagementOperationObserver>.  
-  
+The method invokes the specified method execution and then returns. Progress and results are reported through events on the <xref:System.Management.ManagementOperationObserver>.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1523,21 +1523,21 @@
         <value>An <see cref="T:System.Management.ObjectGetOptions" /> to use when retrieving the object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the property is changed after the management object has been bound to a WMI object, the management object is disconnected from the original WMI object and later rebound using the new options.  
-  
+When the property is changed after the management object has been bound to a WMI object, the management object is disconnected from the original WMI object and later rebound using the new options.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObject> class and then change the default options for the <xref:System.Management.ManagementObject>.  
-  
- [!code-csharp[wminet_ManagementObject_Options#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_Options/cs/ManagementObject_Options.cs#1)]
- [!code-vb[wminet_ManagementObject_Options#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_Options/vb/ManagementObject_Options.vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObject> class and then change the default options for the <xref:System.Management.ManagementObject>.  
+ 
+[!code-csharp[wminet_ManagementObject_Options#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_Options/cs/ManagementObject_Options.cs#1)]
+[!code-vb[wminet_ManagementObject_Options#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_Options/vb/ManagementObject_Options.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1559,23 +1559,23 @@
         <value>A <see cref="T:System.Management.ManagementPath" /> representing the object's path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Changing the property after the management object has been bound to a WMI object in a particular namespace results in releasing the original WMI object. This causes the management object to be rebound to the new object specified by the new path properties and scope values.  
-  
- The rebinding is performed in a "lazy" manner, that is, only when a requested value requires the management object to be bound to the WMI object. Changes can be made to more than just the property before attempting to rebind (for example, modifying the scope and path properties simultaneously).  
-  
+Changing the property after the management object has been bound to a WMI object in a particular namespace results in releasing the original WMI object. This causes the management object to be rebound to the new object specified by the new path properties and scope values.  
+ 
+The rebinding is performed in a "lazy" manner, that is, only when a requested value requires the management object to be bound to the WMI object. Changes can be made to more than just the property before attempting to rebind (for example, modifying the scope and path properties simultaneously).  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with the default namespace, and then changes the WMI path of the <xref:System.Management.ManagementObject>.  
-  
- [!code-csharp[wminet_ManagementObject_Path#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_Path/cs/ManagementObject_Path.cs#1)]
- [!code-vb[wminet_ManagementObject_Path#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_Path/vb/ManagementObject_Path.vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with the default namespace, and then changes the WMI path of the <xref:System.Management.ManagementObject>.  
+ 
+[!code-csharp[wminet_ManagementObject_Path#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_Path/cs/ManagementObject_Path.cs#1)]
+[!code-vb[wminet_ManagementObject_Path#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_Path/vb/ManagementObject_Path.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1598,12 +1598,12 @@
         <returns>A <see cref="T:System.Management.ManagementPath" /> containing the path to the committed object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1628,12 +1628,12 @@
         <summary>Commits the changes to the object, asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1659,12 +1659,12 @@
         <returns>A <see cref="T:System.Management.ManagementPath" /> containing the path to the committed object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1691,12 +1691,12 @@
         <summary>Commits the changes to the object asynchronously and using the specified options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1718,23 +1718,23 @@
         <value>The scope in which this object resides.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Changing this property after the management object has been bound to a WMI object in a particular namespace results in releasing the original WMI object. This causes the management object to be rebound to the new object specified by the new path properties and scope values.  
-  
- The rebinding is performed in a "lazy" manner, that is, only when a requested value requires the management object to be bound to the WMI object. Changes can be made to more than just this property before attempting to rebind (for example, modifying the scope and path properties simultaneously).  
-  
+Changing this property after the management object has been bound to a WMI object in a particular namespace results in releasing the original WMI object. This causes the management object to be rebound to the new object specified by the new path properties and scope values.  
+ 
+The rebinding is performed in a "lazy" manner, that is, only when a requested value requires the management object to be bound to the WMI object. Changes can be made to more than just this property before attempting to rebind (for example, modifying the scope and path properties simultaneously).  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with the default namespace, and then changes the scope of the <xref:System.Management.ManagementObject>.  
-  
- [!code-csharp[wminet_ManagementObject_Scope#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_Scope/cs/ManagementObject_Scope.cs#1)]
- [!code-vb[wminet_ManagementObject_Scope#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_Scope/vb/ManagementObject_Scope.vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with the default namespace, and then changes the scope of the <xref:System.Management.ManagementObject>.  
+ 
+[!code-csharp[wminet_ManagementObject_Scope#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject_Scope/cs/ManagementObject_Scope.cs#1)]
+[!code-vb[wminet_ManagementObject_Scope#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject_Scope/vb/ManagementObject_Scope.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1757,12 +1757,12 @@
         <returns>The full path of the object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1776,12 +1776,12 @@
         <summary>Binds to the management object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

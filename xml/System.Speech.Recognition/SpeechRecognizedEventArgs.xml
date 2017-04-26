@@ -14,23 +14,23 @@
     <summary>Provides information for the <see cref="E:System.Speech.Recognition.Grammar.SpeechRecognized" />, <see cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />, and <see cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized" /> events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A `SpeechRecognized` event is raised by the <xref:System.Speech.Recognition.Grammar>, <xref:System.Speech.Recognition.SpeechRecognizer> and <xref:System.Speech.Recognition.SpeechRecognitionEngine> classes.  
+A `SpeechRecognized` event is raised by the <xref:System.Speech.Recognition.Grammar>, <xref:System.Speech.Recognition.SpeechRecognizer> and <xref:System.Speech.Recognition.SpeechRecognitionEngine> classes.  
+ 
+`SpeechRecognized` events are generated when one or more of the alternates from a recognition operation have a high enough confidence score to be accepted. To obtain detailed information about a recognized phrase, access the <xref:System.Speech.Recognition.RecognitionEventArgs.Result%2A> property in the handler for the event.  
+ 
+`SpeechRecognizedEventArgs` derives from the <xref:System.Speech.Recognition.RecognitionEventArgs> class.  
+ 
   
- `SpeechRecognized` events are generated when one or more of the alternates from a recognition operation have a high enough confidence score to be accepted. To obtain detailed information about a recognized phrase, access the <xref:System.Speech.Recognition.RecognitionEventArgs.Result%2A> property in the handler for the event.  
-  
- `SpeechRecognizedEventArgs` derives from the <xref:System.Speech.Recognition.RecognitionEventArgs> class.  
-  
-   
-  
+ 
 ## Examples  
- The following example is part of a console application that loads a speech recognition grammar and demonstrates speech input to the shared recognizer, the associated recognition results, and the associated events raised by the speech recognizer. If Windows Speech Recognition is not running, then starting this application will also start Windows Speech Recognition.  
-  
- Spoken input such as "I want to fly from Chicago to Miami" will trigger a <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized> event. Speaking the phrase "Fly me from Houston to Chicago " will not trigger a <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized> event.  
-  
- The example uses a handler for the <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized> event to display successfully recognized phrases and the semantics they contain in the console.  
-  
+The following example is part of a console application that loads a speech recognition grammar and demonstrates speech input to the shared recognizer, the associated recognition results, and the associated events raised by the speech recognizer. If Windows Speech Recognition is not running, then starting this application will also start Windows Speech Recognition.  
+ 
+Spoken input such as "I want to fly from Chicago to Miami" will trigger a <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized> event. Speaking the phrase "Fly me from Houston to Chicago " will not trigger a <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized> event.  
+ 
+The example uses a handler for the <xref:System.Speech.Recognition.SpeechRecognizer.SpeechRecognized> event to display successfully recognized phrases and the semantics they contain in the console.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Recognition;  
@@ -104,7 +104,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

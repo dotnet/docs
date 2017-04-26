@@ -66,14 +66,14 @@
         <summary>Registers an object with the system that will be disposed of at some specified time in the future.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method may be called by tasks which need to maintain state across task invocations, such as data caching tasks. It is strongly recommended that `allowEarlyCollection` be set to `true` if the object will retain any significant amount of data.  
-  
- The thread on which the object is disposed may be arbitrarily, but it will not be disposed while the task is executing, even if `allowEarlyCollection` is set to `true`.  
-  
- If the object implements IDisposable, IDisposable.Dispose will be invoked on the object before discarding it.  
-  
+This method may be called by tasks which need to maintain state across task invocations, such as data caching tasks. It is strongly recommended that `allowEarlyCollection` be set to `true` if the object will retain any significant amount of data.  
+ 
+The thread on which the object is disposed may be arbitrarily, but it will not be disposed while the task is executing, even if `allowEarlyCollection` is set to `true`.  
+ 
+If the object implements IDisposable, IDisposable.Dispose will be invoked on the object before discarding it.  
+ 
  ]]></format>
         </remarks>
       </Docs>

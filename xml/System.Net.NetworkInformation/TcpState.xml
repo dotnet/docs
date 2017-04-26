@@ -22,19 +22,19 @@
     <summary>Specifies the states of a Transmission Control Protocol (TCP) connection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration defines valid values for the <xref:System.Net.NetworkInformation.TcpConnectionInformation.State%2A> property. TCP is a transport layer protocol responsible for reliably sending and receiving data packets. The TCP states in this enumeration are defined in IETF RFC 793 available at [http://www.ietf.org](http://www.ietf.org/).  
+This enumeration defines valid values for the <xref:System.Net.NetworkInformation.TcpConnectionInformation.State%2A> property. TCP is a transport layer protocol responsible for reliably sending and receiving data packets. The TCP states in this enumeration are defined in IETF RFC 793 available at [http://www.ietf.org](http://www.ietf.org/).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example counts the established TCP connections.  
-  
- [!code-cpp[NCLNetInfo2#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#2)]
- [!code-csharp[NCLNetInfo2#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#2)]
- [!code-vb[NCLNetInfo2#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#2)]  
-  
+The following code example counts the established TCP connections.  
+ 
+[!code-cpp[NCLNetInfo2#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#2)]
+[!code-csharp[NCLNetInfo2#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#2)]
+[!code-vb[NCLNetInfo2#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

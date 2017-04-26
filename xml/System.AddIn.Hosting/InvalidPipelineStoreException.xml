@@ -14,12 +14,12 @@
     <summary>The exception that is thrown when a directory is not found and the user does not have permission to access the pipeline root path or an add-in path.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike <xref:System.IO.DirectoryNotFoundException>, this exception does not provide any path information. This prevents a malicious user from deliberately specifying erroneous paths and using the information returned by the exception to determine actual paths.  
-  
- This exception is thrown by the following discovery methods that build and update the store of add-in and pipeline information: <xref:System.AddIn.Hosting.AddInStore.FindAddIns%2A>,<xref:System.AddIn.Hosting.AddInStore.Rebuild%2A>, <xref:System.AddIn.Hosting.AddInStore.RebuildAddIns%2A>, <xref:System.AddIn.Hosting.AddInStore.Update%2A>, and <xref:System.AddIn.Hosting.AddInStore.UpdateAddIns%2A>.  
-  
+Unlike <xref:System.IO.DirectoryNotFoundException>, this exception does not provide any path information. This prevents a malicious user from deliberately specifying erroneous paths and using the information returned by the exception to determine actual paths.  
+ 
+This exception is thrown by the following discovery methods that build and update the store of add-in and pipeline information: <xref:System.AddIn.Hosting.AddInStore.FindAddIns%2A>,<xref:System.AddIn.Hosting.AddInStore.Rebuild%2A>, <xref:System.AddIn.Hosting.AddInStore.RebuildAddIns%2A>, <xref:System.AddIn.Hosting.AddInStore.Update%2A>, and <xref:System.AddIn.Hosting.AddInStore.UpdateAddIns%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,10 +76,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Hosting.InvalidPipelineStoreException" /> class with serialization and streaming context information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to reconstitute an exception object that is transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
-  
+This constructor is called during deserialization to reconstitute an exception object that is transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,17 +103,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.AddIn.Hosting.InvalidPipelineStoreException" /> class with the specified message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed to the constructor, or a null reference if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of the <xref:System.AddIn.Hosting.AddInSegmentDirectoryNotFoundException> class.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed to the constructor, or a null reference if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of the <xref:System.AddIn.Hosting.AddInSegmentDirectoryNotFoundException> class.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.Exception.Message%2A>|The localized error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

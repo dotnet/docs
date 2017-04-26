@@ -14,10 +14,10 @@
     <summary>Represents a <see langword="ScriptingScriptResourceHandler" /> configuration section in the <see langword="&lt;scripting&gt;" /> element of the configuration file. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this type to get or set whether caching or compression is enabled for ECMAScript (JavaScript) files that are embedded as resources in an assembly.  
-  
+Use this type to get or set whether caching or compression is enabled for ECMAScript (JavaScript) files that are embedded as resources in an assembly.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
           <see langword="true" /> if caching is enabled for script files that are embedded as resources in an assembly; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCaching%2A> property gets or sets the value for caching the results of the embedded script file, for caching any potential localization objects, and for caching scripts.  
-  
+The <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCaching%2A> property gets or sets the value for caching the results of the embedded script file, for caching any potential localization objects, and for caching scripts.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,19 +91,19 @@
           <see langword="true" /> if compression is enabled for script files that are embedded as resources in an assembly; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCompression%2A> property gets or sets the value that indicates whether the following will be compressed:  
-  
+The <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCompression%2A> property gets or sets the value that indicates whether the following will be compressed:  
+ 
 -   Script files that are embedded as resources in an assembly.  
-  
+ 
 -   Localization objects, such as string resources that are contained in a resource file (.resx).  
-  
+ 
 -   Scripts that are served by the script resource handler.  
-  
+ 
 > [!NOTE]
 >  If the requesting browser does not support compression, this property has no effect.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

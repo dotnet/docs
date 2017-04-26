@@ -18,12 +18,12 @@
     <summary>Provides the implementation for the metadata publishing protocols.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Description.ServiceMetadataExtension> is configured and used by configuring a service with the <xref:System.ServiceModel.Description.ServiceMetadataBehavior?displayProperty=fullName>.  
-  
- You can also use the <xref:System.ServiceModel.Description.ServiceMetadataExtension> class to get the service's metadata at runtime by accessing the <xref:System.ServiceModel.Description.ServiceMetadataExtension.Metadata%2A> property.  
-  
+The <xref:System.ServiceModel.Description.ServiceMetadataExtension> is configured and used by configuring a service with the <xref:System.ServiceModel.Description.ServiceMetadataBehavior?displayProperty=fullName>.  
+ 
+You can also use the <xref:System.ServiceModel.Description.ServiceMetadataExtension> class to get the service's metadata at runtime by accessing the <xref:System.ServiceModel.Description.ServiceMetadataExtension.Metadata%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>

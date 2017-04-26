@@ -14,10 +14,10 @@
     <summary>Specifies a range of pages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.PageRange> defines a range of pages that should be processed in an operation such as  printing.  
-  
+<xref:System.Windows.Controls.PageRange> defines a range of pages that should be processed in an operation such as  printing.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.PageRange" /> class that includes only the single specified page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `page` parameter value is 1-based; page number 1 is the first page.  
-  
+The `page` parameter value is 1-based; page number 1 is the first page.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -66,12 +66,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.PageRange" /> class with the specified first and last pages.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `pageFrom` and `PageTo` parameter values are 1-based; page number 1 is the first page.  
-  
- Since the range includes both the "from" and "to" pages, the total number of pages is "<xref:System.Windows.Controls.PageRange.PageTo%2A> - <xref:System.Windows.Controls.PageRange.PageFrom%2A> + 1".  
-  
+The `pageFrom` and `PageTo` parameter values are 1-based; page number 1 is the first page.  
+ 
+Since the range includes both the "from" and "to" pages, the total number of pages is "<xref:System.Windows.Controls.PageRange.PageTo%2A> - <xref:System.Windows.Controls.PageRange.PageFrom%2A> + 1".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,32 +165,32 @@
           <see langword="true" /> if the two <see cref="T:System.Windows.Controls.PageRange" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Controls.PageRange.Equals%28System.Windows.Controls.PageRange%2CSystem.Windows.Controls.PageRange%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Controls.PageRange pr1, System.Windows.Controls.PageRange pr2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.PageRange pr1, valuetype System.Windows.Controls.PageRange pr2) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.op_Inequality(System.Windows.Controls.PageRange,System.Windows.Controls.PageRange)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="pr1" Type="System.Windows.Controls.PageRange" />
-        <Parameter Name="pr2" Type="System.Windows.Controls.PageRange" />
-      </Parameters>
-      <Docs>
-        <param name="pr1">The first <see cref="T:System.Windows.Controls.PageRange" />.</param>
-        <param name="pr2">The second <see cref="T:System.Windows.Controls.PageRange" />.</param>
-        <summary>Defines the "!=" operator for testing whether two specified <see cref="T:System.Windows.Controls.PageRange" /> objects are *not* equal.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Windows.Controls.PageRange" /> objects are *not* equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Controls.PageRange pr1, System.Windows.Controls.PageRange pr2);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.PageRange pr1, valuetype System.Windows.Controls.PageRange pr2) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PageRange.op_Inequality(System.Windows.Controls.PageRange,System.Windows.Controls.PageRange)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>PresentationFramework</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="pr1" Type="System.Windows.Controls.PageRange" />
+       <Parameter Name="pr2" Type="System.Windows.Controls.PageRange" />
+     </Parameters>
+     <Docs>
+       <param name="pr1">The first <see cref="T:System.Windows.Controls.PageRange" />.</param>
+       <param name="pr2">The second <see cref="T:System.Windows.Controls.PageRange" />.</param>
+       <summary>Defines the "!=" operator for testing whether two specified <see cref="T:System.Windows.Controls.PageRange" /> objects are *not* equal.</summary>
+       <returns>
+         <see langword="true" /> if the two <see cref="T:System.Windows.Controls.PageRange" /> objects are *not* equal; otherwise, <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Controls.PageRange.Compare%28System.Windows.Controls.PageRange%2CSystem.Windows.Controls.PageRange%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -212,10 +212,10 @@
         <value>The 1-based page number of the first page in the range.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.PageRange.PageFrom%2A> property is 1-based; page number 1 is the first page.  
-  
+The <xref:System.Windows.Controls.PageRange.PageFrom%2A> property is 1-based; page number 1 is the first page.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,10 +237,10 @@
         <value>The 1-based page number of the last page in the range.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.PageRange.PageTo%2A> property is 1-based; page number 1 is the first page.  
-  
+The <xref:System.Windows.Controls.PageRange.PageTo%2A> property is 1-based; page number 1 is the first page.  
+ 
  ]]></format>
         </remarks>
       </Docs>

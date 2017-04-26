@@ -22,12 +22,12 @@
     <summary>Defines a group of methods that classes can use to create a type provider for an activity or workflow designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,10 +53,10 @@
         <returns>The <see cref="T:System.Reflection.Assembly" /> associated with <paramref name="obj" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- GetLocalAssembly provides the assembly returned by the <xref:System.Workflow.ComponentModel.Compiler.ITypeProvider.LocalAssembly%2A> property.  
-  
+GetLocalAssembly provides the assembly returned by the <xref:System.Workflow.ComponentModel.Compiler.ITypeProvider.LocalAssembly%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

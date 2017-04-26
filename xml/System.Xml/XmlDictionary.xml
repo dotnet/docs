@@ -27,14 +27,14 @@
     <summary>Implements a dictionary used to optimize [!INCLUDE[indigo1](~/includes/indigo1-md.md)]'s XML reader/writer implementations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Dictionaries establish a mapping between commonly appearing text strings, and integers, and provide an effective mechanism for compressing and decompressing XML. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] uses 2 kinds of dictionaries, static and dynamic.  
-  
- With static dictionaries, both sides of the communication use a predefined dictionary.  
-  
- With dynamic dictionaries, the sending side can add new strings and their mappings not already in the static dictionary. Dynamic dictionaries are sent out of band with the message. Dynamic dictionaries use the <xref:System.Xml.XmlBinaryWriterSession> and <xref:System.Xml.XmlBinaryReaderSession> classes to transmit messages and mappings.  
-  
+Dictionaries establish a mapping between commonly appearing text strings, and integers, and provide an effective mechanism for compressing and decompressing XML. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] uses 2 kinds of dictionaries, static and dynamic.  
+ 
+With static dictionaries, both sides of the communication use a predefined dictionary.  
+ 
+With dynamic dictionaries, the sending side can add new strings and their mappings not already in the static dictionary. Dynamic dictionaries are sent out of band with the message. Dynamic dictionaries use the <xref:System.Xml.XmlBinaryWriterSession> and <xref:System.Xml.XmlBinaryReaderSession> classes to transmit messages and mappings.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
         <summary>Creates a <see cref="T:System.Xml.XmlDictionary" /> with an initial capacity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The dictionary will resize itself as needed.  
-  
+The dictionary will resize itself as needed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,12 +127,12 @@
         <returns>The <see cref="T:System.Xml.XmlDictionaryString" /> that was added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Xml.XmlDictionaryString> is built from `value`.  
-  
- If the string value is already in the dictionary, the <xref:System.Xml.XmlDictionaryString> previously created for it is returned.  
-  
+A <xref:System.Xml.XmlDictionaryString> is built from `value`.  
+ 
+If the string value is already in the dictionary, the <xref:System.Xml.XmlDictionaryString> previously created for it is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,12 +163,12 @@
         <value>A <see langword="static" /> empty <see cref="T:System.Xml.IXmlDictionary" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This instance should be used when an <xref:System.Xml.IXmlDictionary> is required but no <xref:System.Xml.XmlDictionaryString>s are needed.  
-  
- The empty dictionary cannot be modified.  
-  
+This instance should be used when an <xref:System.Xml.IXmlDictionary> is required but no <xref:System.Xml.XmlDictionaryString>s are needed.  
+ 
+The empty dictionary cannot be modified.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -288,10 +288,10 @@
         <summary>Attempts to look up an entry in the dictionary.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method avoids throwing an exception if the string is not currently in the dictionary.  
-  
+This method avoids throwing an exception if the string is not currently in the dictionary.  
+ 
  ]]></format>
         </remarks>
       </Docs>

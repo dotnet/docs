@@ -34,23 +34,23 @@
     <summary>Used to group collections of controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Forms.Panel> is a control that contains other controls. You can use a <xref:System.Windows.Forms.Panel> to group collections of controls such as a group of <xref:System.Windows.Forms.RadioButton> controls. As with other container controls such as the <xref:System.Windows.Forms.GroupBox> control, if the <xref:System.Windows.Forms.Panel> control's <xref:System.Windows.Forms.Control.Enabled%2A> property is set to `false`, the controls contained within the <xref:System.Windows.Forms.Panel> will also be disabled.  
+A <xref:System.Windows.Forms.Panel> is a control that contains other controls. You can use a <xref:System.Windows.Forms.Panel> to group collections of controls such as a group of <xref:System.Windows.Forms.RadioButton> controls. As with other container controls such as the <xref:System.Windows.Forms.GroupBox> control, if the <xref:System.Windows.Forms.Panel> control's <xref:System.Windows.Forms.Control.Enabled%2A> property is set to `false`, the controls contained within the <xref:System.Windows.Forms.Panel> will also be disabled.  
+ 
+The <xref:System.Windows.Forms.Panel> control is displayed by default without any borders. You can provide a standard or three-dimensional border using the <xref:System.Windows.Forms.Panel.BorderStyle%2A> property to distinguish the area of the panel from other areas on the form. Because the <xref:System.Windows.Forms.Panel> control derives from the <xref:System.Windows.Forms.ScrollableControl> class, you can use the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property to enable scroll bars in the <xref:System.Windows.Forms.Panel> control. When the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property is set to `true`, any controls located within the <xref:System.Windows.Forms.Panel> (but outside of its visible region), can be scrolled to with the scroll bars provided.  
+ 
+The <xref:System.Windows.Forms.Panel> control does not display a caption. If you need a control similar to a <xref:System.Windows.Forms.Panel> that can display a caption, see the <xref:System.Windows.Forms.GroupBox> control.  
+ 
   
- The <xref:System.Windows.Forms.Panel> control is displayed by default without any borders. You can provide a standard or three-dimensional border using the <xref:System.Windows.Forms.Panel.BorderStyle%2A> property to distinguish the area of the panel from other areas on the form. Because the <xref:System.Windows.Forms.Panel> control derives from the <xref:System.Windows.Forms.ScrollableControl> class, you can use the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property to enable scroll bars in the <xref:System.Windows.Forms.Panel> control. When the <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> property is set to `true`, any controls located within the <xref:System.Windows.Forms.Panel> (but outside of its visible region), can be scrolled to with the scroll bars provided.  
-  
- The <xref:System.Windows.Forms.Panel> control does not display a caption. If you need a control similar to a <xref:System.Windows.Forms.Panel> that can display a caption, see the <xref:System.Windows.Forms.GroupBox> control.  
-  
-   
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.Panel> control and adds a <xref:System.Windows.Forms.Label> and a <xref:System.Windows.Forms.TextBox> to the <xref:System.Windows.Forms.Panel>. The <xref:System.Windows.Forms.Panel> control is displayed with a three-dimensional border to distinguish where the <xref:System.Windows.Forms.Panel> control is located in relation to other objects on the form. This example requires that the method defined in this example is called from within an existing form and that the <xref:System.Drawing?displayProperty=fullName> namespace has been added to the source code for the form.  
-  
- [!code-cpp[Classic Panel Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Panel Example/CPP/source.cpp#1)]
- [!code-csharp[Classic Panel Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Panel Example/CS/source.cs#1)]
- [!code-vb[Classic Panel Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Panel Example/VB/source.vb#1)]  
-  
+The following code example creates a <xref:System.Windows.Forms.Panel> control and adds a <xref:System.Windows.Forms.Label> and a <xref:System.Windows.Forms.TextBox> to the <xref:System.Windows.Forms.Panel>. The <xref:System.Windows.Forms.Panel> control is displayed with a three-dimensional border to distinguish where the <xref:System.Windows.Forms.Panel> control is located in relation to other objects on the form. This example requires that the method defined in this example is called from within an existing form and that the <xref:System.Drawing?displayProperty=fullName> namespace has been added to the source code for the form.  
+ 
+[!code-cpp[Classic Panel Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Panel Example/CPP/source.cpp#1)]
+[!code-csharp[Classic Panel Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Panel Example/CS/source.cs#1)]
+[!code-vb[Classic Panel Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Panel Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -124,20 +124,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.Panel.AutoSize" /> property has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Panel.AutoSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Panel> named `Panel1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Panel.AutoSizeChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#384](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#384)]
- [!code-vb[System.Windows.Forms.EventExamples#384](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#384)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Panel.AutoSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Panel> named `Panel1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Panel.AutoSizeChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#384](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#384)]
+[!code-vb[System.Windows.Forms.EventExamples#384](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#384)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,19 +197,19 @@
         <value>One of the <see cref="T:System.Windows.Forms.BorderStyle" /> values. The default is <see langword="BorderStyle.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the <xref:System.Windows.Forms.Panel> control is displayed without a border. You can use this property to distinguish the boundaries of the <xref:System.Windows.Forms.Panel> control from other areas on the form.  
+By default, the <xref:System.Windows.Forms.Panel> control is displayed without a border. You can use this property to distinguish the boundaries of the <xref:System.Windows.Forms.Panel> control from other areas on the form.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.Panel> control with a three-dimensional border.  
-  
- [!code-cpp[Classic Panel.BorderStyle Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Panel.BorderStyle Example/CPP/source.cpp#1)]
- [!code-csharp[Classic Panel.BorderStyle Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Panel.BorderStyle Example/CS/source.cs#1)]
- [!code-vb[Classic Panel.BorderStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Panel.BorderStyle Example/VB/source.vb#1)]  
-  
+The following code example creates a <xref:System.Windows.Forms.Panel> control with a three-dimensional border.  
+ 
+[!code-cpp[Classic Panel.BorderStyle Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Panel.BorderStyle Example/CPP/source.cpp#1)]
+[!code-csharp[Classic Panel.BorderStyle Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Panel.BorderStyle Example/CS/source.cs#1)]
+[!code-vb[Classic Panel.BorderStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Panel.BorderStyle Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.BorderStyle" /> value.</exception>
@@ -370,13 +370,13 @@
           <see langword="true" /> if the user can give the focus to the control using the TAB key; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the user presses the TAB key, the input focus is set to the next control in the tab order. Controls with the <xref:System.Windows.Forms.Control.TabStop%2A> property value of `false` are not included in the collection of controls in the tab order. The tab order can be manipulated by setting the control's <xref:System.Windows.Forms.Control.TabIndex%2A> property value.  
-  
+When the user presses the TAB key, the input focus is set to the next control in the tab order. Controls with the <xref:System.Windows.Forms.Control.TabStop%2A> property value of `false` are not included in the collection of controls in the tab order. The tab order can be manipulated by setting the control's <xref:System.Windows.Forms.Control.TabIndex%2A> property value.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Panel.TabStop%2A> property has no effect on the <xref:System.Windows.Forms.Panel> control as it is a container object.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,16 +14,16 @@
     <summary>Provides information about the worker process that hosts ASP.NET.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health-event types responsible for packaging application health-status data, and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
-  
- Instances of the <xref:System.Web.Management.WebProcessInformation> class contain information that is obtained using any of the types derived from the <xref:System.Web.Management.WebManagementEvent> type.  
-  
- Your application needs the appropriate permissions to access protected information provided by this type.  
-  
- The following example is an excerpt of the configuration file you could use to enable ASP.NET to log error events that contain process information.  
-  
+ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health-event types responsible for packaging application health-status data, and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+ 
+Instances of the <xref:System.Web.Management.WebProcessInformation> class contain information that is obtained using any of the types derived from the <xref:System.Web.Management.WebManagementEvent> type.  
+ 
+Your application needs the appropriate permissions to access protected information provided by this type.  
+ 
+The following example is an excerpt of the configuration file you could use to enable ASP.NET to log error events that contain process information.  
+ 
 ```  
 <healthMonitoring   
   enabled="true" heartBeatInterval="0">  
@@ -39,19 +39,19 @@
   
 </healthMonitoring>  
 ```  
-  
+ 
 > [!NOTE]
 >  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `healthMonitoring` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of creating a custom event class, see the Example section.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example has two parts. The first is an excerpt of a configuration file that enables ASP.NET to use a custom event that uses the <xref:System.Web.Management.WebProcessInformation> type.  
-  
- The second shows how to implement the custom event.  
-  
- Ensure that your custom event is raised at the proper time, that is, when the equivalent system health event it replaces would be raised.  
-  
+The following example has two parts. The first is an excerpt of a configuration file that enables ASP.NET to use a custom event that uses the <xref:System.Web.Management.WebProcessInformation> type.  
+ 
+The second shows how to implement the custom event.  
+ 
+Ensure that your custom event is raised at the proper time, that is, when the equivalent system health event it replaces would be raised.  
+ 
 ```  
 <healthMonitoring   
   enabled="true" heartBeatInterval="0">  
@@ -73,12 +73,12 @@
 </healthMonitoring>  
   
 ```  
-  
- The following example shows how to implement a custom event that uses the <xref:System.Web.Management.WebProcessInformation> type.  
-  
- [!code-csharp[System.Web.Management.WebProcessInformation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/CS/webprocessinformation.cs#1)]
- [!code-vb[System.Web.Management.WebProcessInformation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/VB/webprocessinformation.vb#1)]  
-  
+ 
+The following example shows how to implement a custom event that uses the <xref:System.Web.Management.WebProcessInformation> type.  
+ 
+[!code-csharp[System.Web.Management.WebProcessInformation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/CS/webprocessinformation.cs#1)]
+[!code-vb[System.Web.Management.WebProcessInformation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/VB/webprocessinformation.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -100,18 +100,18 @@
         <value>The worker process account name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Your application needs the appropriate permissions to access the information provided by this property.  
+Your application needs the appropriate permissions to access the information provided by this property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to obtain the process account name.  
-  
- [!code-csharp[System.Web.Management.WebProcessInformation#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/CS/webprocessinformation.cs#4)]
- [!code-vb[System.Web.Management.WebProcessInformation#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/VB/webprocessinformation.vb#4)]  
-  
+The following example shows how to obtain the process account name.  
+ 
+[!code-csharp[System.Web.Management.WebProcessInformation#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/CS/webprocessinformation.cs#4)]
+[!code-vb[System.Web.Management.WebProcessInformation#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/VB/webprocessinformation.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,18 +136,18 @@
         <summary>Formats the application information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Management.WebProcessInformation.FormatToString%2A> method provides a uniform format for event information, which is useful if the event data must be logged and later presented to the user. The method is called internally when the provider invokes one of the <xref:System.Web.Management.WebBaseEvent.ToString%2A> methods.  
+The <xref:System.Web.Management.WebProcessInformation.FormatToString%2A> method provides a uniform format for event information, which is useful if the event data must be logged and later presented to the user. The method is called internally when the provider invokes one of the <xref:System.Web.Management.WebBaseEvent.ToString%2A> methods.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to format custom information.  
-  
- [!code-csharp[System.Web.Management.WebProcessInformation#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/CS/webprocessinformation.cs#7)]
- [!code-vb[System.Web.Management.WebProcessInformation#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/VB/webprocessinformation.vb#7)]  
-  
+The following example shows how to format custom information.  
+ 
+[!code-csharp[System.Web.Management.WebProcessInformation#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/CS/webprocessinformation.cs#7)]
+[!code-vb[System.Web.Management.WebProcessInformation#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/VB/webprocessinformation.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,18 +169,18 @@
         <value>The process identifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the identifier of the worker process that hosts ASP.NET.  
+This is the identifier of the worker process that hosts ASP.NET.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to obtain the process identifier.  
-  
- [!code-csharp[System.Web.Management.WebProcessInformation#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/CS/webprocessinformation.cs#5)]
- [!code-vb[System.Web.Management.WebProcessInformation#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/VB/webprocessinformation.vb#5)]  
-  
+The following example shows how to obtain the process identifier.  
+ 
+[!code-csharp[System.Web.Management.WebProcessInformation#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/CS/webprocessinformation.cs#5)]
+[!code-vb[System.Web.Management.WebProcessInformation#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/VB/webprocessinformation.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,18 +202,18 @@
         <value>The name of the process.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the name of the worker process that hosts ASP.NET.  
+This is the name of the worker process that hosts ASP.NET.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to obtain the process name.  
-  
- [!code-csharp[System.Web.Management.WebProcessInformation#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/CS/webprocessinformation.cs#6)]
- [!code-vb[System.Web.Management.WebProcessInformation#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/VB/webprocessinformation.vb#6)]  
-  
+The following example shows how to obtain the process name.  
+ 
+[!code-csharp[System.Web.Management.WebProcessInformation#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/CS/webprocessinformation.cs#6)]
+[!code-vb[System.Web.Management.WebProcessInformation#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessInformation/VB/webprocessinformation.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

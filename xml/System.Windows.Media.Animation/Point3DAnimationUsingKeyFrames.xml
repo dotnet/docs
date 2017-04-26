@@ -26,14 +26,14 @@
     <summary>Animates the value of a <see cref="T:System.Windows.Media.Media3D.Point3D" /> property along a set of <see cref="P:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames.KeyFrames" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A key frame animation's target values are defined by its <xref:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames.KeyFrames%2A> property, which contains a collection of <xref:System.Windows.Media.Animation.Point3DKeyFrame> objects. Each <xref:System.Windows.Media.Animation.Point3DKeyFrame> defines a segment of the animation with its own target <xref:System.Windows.Media.Animation.Point3DKeyFrame.Value%2A> and <xref:System.Windows.Media.Animation.Point3DKeyFrame.KeyTime%2A>. When the animation runs, it progresses from one key value to the next at the specified key times.  
-  
- There are three types of <xref:System.Windows.Media.Animation.Point3DKeyFrame> classes, one for each supported interpolation method: <xref:System.Windows.Media.Animation.LinearPoint3DKeyFrame>, <xref:System.Windows.Media.Animation.DiscretePoint3DKeyFrame>, and <xref:System.Windows.Media.Animation.SplinePoint3DKeyFrame>.  
-  
- Unlike a <xref:System.Windows.Media.Animation.Point3DAnimation>, a <xref:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames> can have more than two of target values. You can also control the interpolation method of individual <xref:System.Windows.Media.Animation.Point3DKeyFrame> segments.  
-  
+A key frame animation's target values are defined by its <xref:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames.KeyFrames%2A> property, which contains a collection of <xref:System.Windows.Media.Animation.Point3DKeyFrame> objects. Each <xref:System.Windows.Media.Animation.Point3DKeyFrame> defines a segment of the animation with its own target <xref:System.Windows.Media.Animation.Point3DKeyFrame.Value%2A> and <xref:System.Windows.Media.Animation.Point3DKeyFrame.KeyTime%2A>. When the animation runs, it progresses from one key value to the next at the specified key times.  
+ 
+There are three types of <xref:System.Windows.Media.Animation.Point3DKeyFrame> classes, one for each supported interpolation method: <xref:System.Windows.Media.Animation.LinearPoint3DKeyFrame>, <xref:System.Windows.Media.Animation.DiscretePoint3DKeyFrame>, and <xref:System.Windows.Media.Animation.SplinePoint3DKeyFrame>.  
+ 
+Unlike a <xref:System.Windows.Media.Animation.Point3DAnimation>, a <xref:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames> can have more than two of target values. You can also control the interpolation method of individual <xref:System.Windows.Media.Animation.Point3DKeyFrame> segments.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,10 +78,10 @@
         <summary>Adds a child <see cref="T:System.Windows.Media.Animation.Point3DKeyFrame" /> to this <see cref="T:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method allows <xref:System.Windows.Media.Animation.Point3DKeyFrame> objects to be direct children of a <xref:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames> object in markup.  
-  
+This method allows <xref:System.Windows.Media.Animation.Point3DKeyFrame> objects to be direct children of a <xref:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames> object in markup.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The parameter <paramref name="child" /> is not a <see cref="T:System.Windows.Media.Animation.Point3DKeyFrame" />.</exception>
@@ -112,10 +112,10 @@
         <summary>Adds a text string as a child of this <see cref="T:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames> does not accept text as a child, so this method will raise an `InvalididOperationException` unless a derived class has overridden this behavior which allows text to be added.  
-  
+A <xref:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames> does not accept text as a child, so this method will raise an `InvalididOperationException` unless a derived class has overridden this behavior which allows text to be added.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A <see cref="T:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames" /> does not accept text as a child, so this method will raise this exception unless a derived class has overridden this behavior which allows text to be added.</exception>
@@ -139,12 +139,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,12 +169,12 @@
         <summary>Makes this instance a deep copy of the specified <see cref="T:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames" />. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
-  
+This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,12 +197,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,12 +227,12 @@
         <summary>Makes this instance a modifiable deep copy of the specified <see cref="T:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames" /> using current property values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
-  
+This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,14 +299,14 @@
         <summary>Makes this instance a clone of the specified <see cref="T:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values. Note that if these properties contain resource references or data bindings, <xref:System.Windows.Freezable.GetAsFrozen%2A> will fail when trying to freeze the object and will throw an <xref:System.InvalidOperationException>.  
-  
- This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
-  
- For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
-  
+When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values. Note that if these properties contain resource references or data bindings, <xref:System.Windows.Freezable.GetAsFrozen%2A> will fail when trying to freeze the object and will throw an <xref:System.InvalidOperationException>.  
+ 
+This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
+ 
+For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -331,12 +331,12 @@
         <summary>Makes this instance a frozen clone of the specified <see cref="T:System.Windows.Media.Animation.Point3DAnimationUsingKeyFrames" />. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
-  
- For more information see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
-  
+This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
+ 
+For more information see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -366,12 +366,12 @@
         <returns>The calculated value of the property, as determined by the current instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `defaultOriginValue` is the first in the composition chain, this value will be the snapshot value (if one is available) or the base property value; otherwise this value will be the value returned by the previous animation in the chain with an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
-  
- The `defaultDestinationValue` is the base value if the animation is in the first composition layer of animations on a property; otherwise the value is the output value from the previous composition layer of animations for the property.  
-  
+If the `defaultOriginValue` is the first in the composition chain, this value will be the snapshot value (if one is available) or the base property value; otherwise this value will be the value returned by the previous animation in the chain with an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
+ 
+The `defaultDestinationValue` is the base value if the animation is in the first composition layer of animations on a property; otherwise the value is the output value from the previous composition layer of animations for the property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -435,10 +435,10 @@
           <see langword="true" /> if the animation accumulates its values when its <see cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" /> property causes it to repeat its simple duration; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to `true`, the animation's output values only accumulate when the animation's <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property causes it to repeat its simple duration. It does not accumulate its values when it restarts because its parent repeated or because its clock was restarted from a <xref:System.Windows.Media.Animation.ClockController.Begin%2A> call.  
-  
+When this property is set to `true`, the animation's output values only accumulate when the animation's <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property causes it to repeat its simple duration. It does not accumulate its values when it restarts because its parent repeated or because its clock was restarted from a <xref:System.Windows.Media.Animation.ClockController.Begin%2A> call.  
+ 
  ]]></format>
         </remarks>
       </Docs>

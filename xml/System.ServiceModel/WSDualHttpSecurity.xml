@@ -14,10 +14,10 @@
     <summary>Specifies the security settings for the <see cref="T:System.ServiceModel.WSDualHttpBinding" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class specifies the security settings for the `wsDualHttpBinding` binding.  
-  
+This class specifies the security settings for the `wsDualHttpBinding` binding.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,18 +54,18 @@
         <value>A <see cref="T:System.ServiceModel.MessageSecurityOverHttp" /> value. The default values include: <see cref="P:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType" /> is <see cref="F:System.ServiceModel.MessageCredentialType.Windows" />, <see cref="P:System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite" /> is <see cref="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256" />, and <see cref="P:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential" /> is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The object returned specifies detailed message-level security properties for the `wsDualHttpBinding` binding.  
+The object returned specifies detailed message-level security properties for the `wsDualHttpBinding` binding.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to set the <xref:System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite%2A> property by accessing this property.  
-  
- [!code-csharp[S_UEWSDualHttpSecurity#30](~/samples/snippets/csharp/VS_Snippets_CFX/s_uewsdualhttpsecurity/cs/program.cs#30)]
- [!code-vb[S_UEWSDualHttpSecurity#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uewsdualhttpsecurity/vb/module1.vb#30)]  
-  
+The following code shows how to set the <xref:System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite%2A> property by accessing this property.  
+ 
+[!code-csharp[S_UEWSDualHttpSecurity#30](~/samples/snippets/csharp/VS_Snippets_CFX/s_uewsdualhttpsecurity/cs/program.cs#30)]
+[!code-vb[S_UEWSDualHttpSecurity#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uewsdualhttpsecurity/vb/module1.vb#30)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,18 +87,18 @@
         <value>A value from the <see cref="T:System.ServiceModel.WSDualHttpSecurityMode" /> enumeration. The default is <see cref="F:System.ServiceModel.WSDualHttpSecurityMode.Message" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property determines whether message-level security is applied to the binding.  
+The value of this property determines whether message-level security is applied to the binding.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to set this property.  
-  
- [!code-csharp[S_UEWSDualHttpSecurity#30](~/samples/snippets/csharp/VS_Snippets_CFX/s_uewsdualhttpsecurity/cs/program.cs#30)]
- [!code-vb[S_UEWSDualHttpSecurity#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uewsdualhttpsecurity/vb/module1.vb#30)]  
-  
+The following code shows how to set this property.  
+ 
+[!code-csharp[S_UEWSDualHttpSecurity#30](~/samples/snippets/csharp/VS_Snippets_CFX/s_uewsdualhttpsecurity/cs/program.cs#30)]
+[!code-vb[S_UEWSDualHttpSecurity#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uewsdualhttpsecurity/vb/module1.vb#30)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not a valid <see cref="T:System.ServiceModel.WSDualHttpSecurityMode" />.</exception>

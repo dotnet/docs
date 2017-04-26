@@ -29,10 +29,10 @@
     <summary>Creates a <see cref="T:System.Text.RegularExpressions.RegexRunner" /> class for a compiled regular expression.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Text.RegularExpressions.RegexRunner> object executes a compiled regular expression. A regular expression that is compiled to an assembly becomes a type in that assembly, and an object of that type is typically created using reflection. However, creating an object by reflection is an expensive operation. The <xref:System.Text.RegularExpressions.RegexRunnerFactory> class improves the performance of the .NET Framework by providing the <xref:System.Text.RegularExpressions.RegexRunnerFactory.CreateInstance%2A> method, which creates a <xref:System.Text.RegularExpressions.RegexRunner> object for a specific compiled regular expression.  
-  
+A <xref:System.Text.RegularExpressions.RegexRunner> object executes a compiled regular expression. A regular expression that is compiled to an assembly becomes a type in that assembly, and an object of that type is typically created using reflection. However, creating an object by reflection is an expensive operation. The <xref:System.Text.RegularExpressions.RegexRunnerFactory> class improves the performance of the .NET Framework by providing the <xref:System.Text.RegularExpressions.RegexRunnerFactory.CreateInstance%2A> method, which creates a <xref:System.Text.RegularExpressions.RegexRunner> object for a specific compiled regular expression.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

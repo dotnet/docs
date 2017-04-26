@@ -14,12 +14,12 @@
     <summary>Represents the auth:ContextItem element defined in the authorization extensions to WS-Trust. These extensions are defined in the WS-Federation specification.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The auth:ContextItem element is a subelement of the auth:AdditionalContext element that is represented by the <xref:System.IdentityModel.Protocols.WSTrust.AdditionalContext> class.  
-  
- For more information about the element that this class represents, see the WS-Federation specification.  
-  
+The auth:ContextItem element is a subelement of the auth:AdditionalContext element that is represented by the <xref:System.IdentityModel.Protocols.WSTrust.AdditionalContext> class.  
+ 
+For more information about the element that this class represents, see the WS-Federation specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> class with the specified Name URI.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Protocols.WSTrust.ContextItem.Value%2A> property and the <xref:System.IdentityModel.Protocols.WSTrust.ContextItem.Scope%2A> property are set to `null` in the new instance.  
-  
+The <xref:System.IdentityModel.Protocols.WSTrust.ContextItem.Value%2A> property and the <xref:System.IdentityModel.Protocols.WSTrust.ContextItem.Scope%2A> property are set to `null` in the new instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNull">
@@ -72,10 +72,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> class with the specified Name URI and value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Protocols.WSTrust.ContextItem.Scope%2A> property is set to `null` in the new instance.  
-  
+The <xref:System.IdentityModel.Protocols.WSTrust.ContextItem.Scope%2A> property is set to `null` in the new instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNull">
@@ -168,10 +168,10 @@
         <value>The value of the ContextItem element. Can be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be set to `null`.  
-  
+This property can be set to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

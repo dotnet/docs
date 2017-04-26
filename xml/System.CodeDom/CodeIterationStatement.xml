@@ -22,21 +22,21 @@
     <summary>Represents a <see langword="for" /> statement, or a loop through a block of statements, using a test expression as a condition for continuing to loop.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.CodeDom.CodeIterationStatement> can represent a `for` loop or `while` loop.  
+A <xref:System.CodeDom.CodeIterationStatement> can represent a `for` loop or `while` loop.  
+ 
+The <xref:System.CodeDom.CodeIterationStatement.InitStatement%2A> property specifies the statement to execute before the first loop iteration. The <xref:System.CodeDom.CodeIterationStatement.TestExpression%2A> property specifies the loop continuation expression, which must evaluate to `true` at the end of each loop iteration for another iteration to begin. The <xref:System.CodeDom.CodeIterationStatement.IncrementStatement%2A> property specifies the statement to execute at the end of each loop iteration. The <xref:System.CodeDom.CodeIterationStatement.Statements%2A> property specifies the collection of statements to execute within the loop.  
+ 
   
- The <xref:System.CodeDom.CodeIterationStatement.InitStatement%2A> property specifies the statement to execute before the first loop iteration. The <xref:System.CodeDom.CodeIterationStatement.TestExpression%2A> property specifies the loop continuation expression, which must evaluate to `true` at the end of each loop iteration for another iteration to begin. The <xref:System.CodeDom.CodeIterationStatement.IncrementStatement%2A> property specifies the statement to execute at the end of each loop iteration. The <xref:System.CodeDom.CodeIterationStatement.Statements%2A> property specifies the collection of statements to execute within the loop.  
-  
-   
-  
+ 
 ## Examples  
- This example demonstrates using a <xref:System.CodeDom.CodeIterationStatement> to represent a `for` loop.  
-  
- [!code-cpp[CodeIterationStatementExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeIterationStatementExample/CPP/codeiterationstatementexample.cpp#2)]
- [!code-csharp[CodeIterationStatementExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeIterationStatementExample/CS/codeiterationstatementexample.cs#2)]
- [!code-vb[CodeIterationStatementExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeIterationStatementExample/VB/codeiterationstatementexample.vb#2)]  
-  
+This example demonstrates using a <xref:System.CodeDom.CodeIterationStatement> to represent a `for` loop.  
+ 
+[!code-cpp[CodeIterationStatementExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeIterationStatementExample/CPP/codeiterationstatementexample.cpp#2)]
+[!code-csharp[CodeIterationStatementExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeIterationStatementExample/CS/codeiterationstatementexample.cs#2)]
+[!code-vb[CodeIterationStatementExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeIterationStatementExample/VB/codeiterationstatementexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -103,10 +103,10 @@
         <value>A <see cref="T:System.CodeDom.CodeStatement" /> that indicates the per cycle increment statement.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This statement is called after each iteration.  
-  
+This statement is called after each iteration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,10 +128,10 @@
         <value>A <see cref="T:System.CodeDom.CodeStatement" /> that indicates the loop initialization statement.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can specify an empty initialization statement by setting this property to a <xref:System.CodeDom.CodeExpressionStatement> that contains a <xref:System.CodeDom.CodeSnippetExpression> that contains an empty string.  
-  
+You can specify an empty initialization statement by setting this property to a <xref:System.CodeDom.CodeExpressionStatement> that contains a <xref:System.CodeDom.CodeSnippetExpression> that contains an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,10 +171,10 @@
         <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the expression to test.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this expression resolves to `true`, the loop will continue.  
-  
+If this expression resolves to `true`, the loop will continue.  
+ 
  ]]></format>
         </remarks>
       </Docs>

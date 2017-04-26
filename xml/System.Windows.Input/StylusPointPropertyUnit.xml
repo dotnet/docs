@@ -13,15 +13,15 @@
     <summary>Specifies the unit of measurement for a <see cref="T:System.Windows.Input.StylusPoint" /> property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Windows.Input.StylusPointDescription> object from a <xref:System.Windows.Input.StylusPointCollection> and gets the information for each <xref:System.Windows.Input.StylusPointPropertyInfo> in the <xref:System.Windows.Input.StylusPointDescription>.  
-  
- [!code-csharp[PacketSpy#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#2)]
- [!code-vb[PacketSpy#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#2)]  
+The following example creates an <xref:System.Windows.Input.StylusPointDescription> object from a <xref:System.Windows.Input.StylusPointCollection> and gets the information for each <xref:System.Windows.Input.StylusPointPropertyInfo> in the <xref:System.Windows.Input.StylusPointDescription>.  
+ 
+[!code-csharp[PacketSpy#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#2)]
+[!code-vb[PacketSpy#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#2)]  
 [!code-csharp[PacketSpy#4](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#4)]
 [!code-vb[PacketSpy#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#4)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

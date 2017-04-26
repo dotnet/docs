@@ -34,21 +34,21 @@
     <summary>Derivative of <see cref="T:System.Workflow.ComponentModel.Activity" /> that is the base class for all activities that contain other activities. A <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> is responsible for managing the execution of its child activities.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+ 
+A <xref:System.Workflow.ComponentModel.CompositeActivity> manages the execution of its child activities using <xref:System.Workflow.ComponentModel.ActivityExecutionContext> class methods and events defined on the <xref:System.Workflow.ComponentModel.Activity> class.  For example, a child activity is scheduled for execution using the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.ExecuteActivity%2A> of <xref:System.Workflow.ComponentModel.ActivityExecutionContext>. A <xref:System.Workflow.ComponentModel.CompositeActivity> activity can be notified when a child activity completes its execution by subscribing to the <xref:System.Workflow.ComponentModel.Activity.Closed> event defined on <xref:System.Workflow.ComponentModel.Activity>.  
+ 
+The workflow runtime enforces certain constraints on <xref:System.Workflow.ComponentModel.CompositeActivity> execution, the most fundamental of which is that a <xref:System.Workflow.ComponentModel.CompositeActivity> activity cannot move to the <xref:System.Workflow.ComponentModel.Activity.Closed> state if any child activities are still in a <xref:System.Workflow.ComponentModel.Activity.Executing>, <xref:System.Workflow.ComponentModel.Activity.Canceling>, <xref:System.Workflow.ComponentModel.Activity.Compensating>, or <xref:System.Workflow.ComponentModel.Activity.Faulting>, state.  
+ 
   
- A <xref:System.Workflow.ComponentModel.CompositeActivity> manages the execution of its child activities using <xref:System.Workflow.ComponentModel.ActivityExecutionContext> class methods and events defined on the <xref:System.Workflow.ComponentModel.Activity> class.  For example, a child activity is scheduled for execution using the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.ExecuteActivity%2A> of <xref:System.Workflow.ComponentModel.ActivityExecutionContext>. A <xref:System.Workflow.ComponentModel.CompositeActivity> activity can be notified when a child activity completes its execution by subscribing to the <xref:System.Workflow.ComponentModel.Activity.Closed> event defined on <xref:System.Workflow.ComponentModel.Activity>.  
-  
- The workflow runtime enforces certain constraints on <xref:System.Workflow.ComponentModel.CompositeActivity> execution, the most fundamental of which is that a <xref:System.Workflow.ComponentModel.CompositeActivity> activity cannot move to the <xref:System.Workflow.ComponentModel.Activity.Closed> state if any child activities are still in a <xref:System.Workflow.ComponentModel.Activity.Executing>, <xref:System.Workflow.ComponentModel.Activity.Canceling>, <xref:System.Workflow.ComponentModel.Activity.Compensating>, or <xref:System.Workflow.ComponentModel.Activity.Faulting>, state.  
-  
-   
-  
+ 
 ## Examples  
- This example shows a basic `CompositeActivity` that executes its first child activity for execution. When the child activity moves to the Closed state, the composite activity is notified and then completes its execution.  
-  
+This example shows a basic `CompositeActivity` that executes its first child activity for execution. When the child activity moves to the Closed state, the composite activity is notified and then completes its execution.  
+ 
 ```csharp  
 public class HasOneChildActivity : CompositeActivity  
 {  
@@ -70,7 +70,7 @@ public class HasOneChildActivity : CompositeActivity
     }  
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -154,20 +154,20 @@ public class HasOneChildActivity : CompositeActivity
           <see cref="T:System.Workflow.ComponentModel.ActivityCollection" /> of all child activities.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Represents the collection of child activities managed by the composite activity. This collection can be updated.  
+Represents the collection of child activities managed by the composite activity. This collection can be updated.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to create activities and add them as children to a composite activity and includes setting the <xref:System.Workflow.ComponentModel.CompositeActivity.CanModifyActivities%2A> permissive for this type.  
-  
- This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. For more information, see [Throw Sample](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
-  
- [!code-csharp[WF_Samples#179](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#179)]
- [!code-vb[WF_Samples#179](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#179)]  
-  
+The following code shows how to create activities and add them as children to a composite activity and includes setting the <xref:System.Workflow.ComponentModel.CompositeActivity.CanModifyActivities%2A> permissive for this type.  
+ 
+This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. For more information, see [Throw Sample](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
+ 
+[!code-csharp[WF_Samples#179](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#179)]
+[!code-vb[WF_Samples#179](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#179)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,15 +213,15 @@ public class HasOneChildActivity : CompositeActivity
           <see langword="true" /> if the individual activities within <see cref="P:System.Workflow.ComponentModel.CompositeActivity.Activities" /> can be modified; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to create activities and add them as children to a composite activity and includes setting the <xref:System.Workflow.ComponentModel.CompositeActivity.CanModifyActivities%2A> permissive for this type.  
-  
- This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. For more information, see [Throw Sample](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
-  
- [!code-csharp[WF_Samples#179](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#179)]
- [!code-vb[WF_Samples#179](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#179)]  
-  
+The following code shows how to create activities and add them as children to a composite activity and includes setting the <xref:System.Workflow.ComponentModel.CompositeActivity.CanModifyActivities%2A> permissive for this type.  
+ 
+This code example is part of the Throw SDK sample and is from the ThrowWorkFlow.cs file. For more information, see [Throw Sample](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
+ 
+[!code-csharp[WF_Samples#179](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#179)]
+[!code-vb[WF_Samples#179](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#179)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,10 +247,10 @@ public class HasOneChildActivity : CompositeActivity
         <summary>Calls <see cref="M:System.Workflow.ComponentModel.DependencyObject.Dispose(System.Boolean)" /> on this instance, and optionally calls <see cref="M:System.Workflow.ComponentModel.DependencyObject.Dispose" /> on all child activities of this instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throughout an activity's lifetime, several .NET objects may be created or disposed. Every time a workflow instance is unloaded from memory, the .NET objects corresponding to the activities in the workflow tree are disposed (the <xref:System.Workflow.ComponentModel.DependencyObject.Dispose%2A> method is called on each activity). When the workflow instance is loaded back into memory, a new .NET object is created for each activity with the state from the corresponding unload.  
-  
+Throughout an activity's lifetime, several .NET objects may be created or disposed. Every time a workflow instance is unloaded from memory, the .NET objects corresponding to the activities in the workflow tree are disposed (the <xref:System.Workflow.ComponentModel.DependencyObject.Dispose%2A> method is called on each activity). When the workflow instance is loaded back into memory, a new .NET object is created for each activity with the state from the corresponding unload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -399,10 +399,10 @@ public class HasOneChildActivity : CompositeActivity
         <summary>Called when an activity is removed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Current implementation provides no functionality.  
-  
+Current implementation provides no functionality.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -512,10 +512,10 @@ public class HasOneChildActivity : CompositeActivity
         <summary>Called after changes have been made to the collection <see cref="P:System.Workflow.ComponentModel.CompositeActivity.Activities" /> of this instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When overridden in a derived class, provides processing for this event.  
-  
+When overridden in a derived class, provides processing for this event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -540,10 +540,10 @@ public class HasOneChildActivity : CompositeActivity
         <summary>Called by the workflow runtime engine when an activity transitions into the <see cref="F:System.Workflow.ComponentModel.ActivityExecutionStatus.Closed" /> state from the <see cref="F:System.Workflow.ComponentModel.ActivityExecutionStatus.Initialized" /> state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used for activity cleanup, such as clearing dependency properties and deleting queues.  
-  
+This method is used for activity cleanup, such as clearing dependency properties and deleting queues.  
+ 
  ]]></format>
         </remarks>
       </Docs>

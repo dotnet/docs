@@ -27,12 +27,12 @@
     <summary>Contains the type description and process transfer information for a variable, function, or a function parameter.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ELEMDESC`, see the MSDN Library.  
-  
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
-  
+For additional information about `ELEMDESC`, see the MSDN Library.  
+ 
+The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,10 +96,10 @@
         <summary>Identifies the type of the element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For additional information about `ELEMDESC`, see the MSDN Library.  
-  
+For additional information about `ELEMDESC`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

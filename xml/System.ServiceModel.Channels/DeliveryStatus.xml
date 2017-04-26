@@ -13,18 +13,18 @@
     <summary>An enumeration that specifies the delivery status of a message when the delivery of the message is in doubt, or when the message was not delivered.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message sent to a queue can land in a dead-letter queue because the message was not delivered or the Queue Manager is not sure of the delivery outcome. The `DeliveryStatus` is a way to get the status of message delivery when the message is read from a dead-letter queue.  
+A message sent to a queue can land in a dead-letter queue because the message was not delivered or the Queue Manager is not sure of the delivery outcome. The `DeliveryStatus` is a way to get the status of message delivery when the message is read from a dead-letter queue.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to access the `DeliveryStatus` of a message within a service operation.  
-  
- [!code-csharp[S_DeadLetter#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_deadletter/cs/dlservice.cs#0)]
- [!code-vb[S_DeadLetter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_deadletter/vb/dlservice.vb#0)]  
-  
+The following example shows how to access the `DeliveryStatus` of a message within a service operation.  
+ 
+[!code-csharp[S_DeadLetter#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_deadletter/cs/dlservice.cs#0)]
+[!code-vb[S_DeadLetter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_deadletter/vb/dlservice.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -19,14 +19,14 @@
     <summary>Represents a header or footer that is associated with a <see cref="T:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter> provides header and footer information for the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner> when it is displayed in print preview mode. If provided by the workflow designer, users can configure headers and footers on the **Header/Footer** tab on the **Page Setup** dialog box.  
-  
+ 
+<xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter> provides header and footer information for the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowRootDesigner> when it is displayed in print preview mode. If provided by the workflow designer, users can configure headers and footers on the **Header/Footer** tab on the **Page Setup** dialog box.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -123,13 +123,13 @@
         <value>The <see cref="T:System.Drawing.Rectangle" /> that defines the bounds for the <see cref="P:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.Image" /> associated with the <see cref="T:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to override the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.ImageRectangle%2A> property. In this example, the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.ImageRectangle%2A> is calculated using the Bounds of the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter> to draw the image in the upper left corner of the header/footer.  
-  
- [!code-csharp[WF_Samples#74](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#74)]
- [!code-vb[WF_Samples#74](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#74)]  
-  
+The following example shows how to override the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.ImageRectangle%2A> property. In this example, the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.ImageRectangle%2A> is calculated using the Bounds of the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter> to draw the image in the upper left corner of the header/footer.  
+ 
+[!code-csharp[WF_Samples#74](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#74)]
+[!code-vb[WF_Samples#74](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#74)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,13 +213,13 @@
         <value>The <see cref="T:System.Drawing.Rectangle" /> that defines the bounds for the <see cref="P:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.Text" /> associated with the <see cref="T:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to override the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.TextRectangle%2A> property. In this example, the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.TextRectangle%2A> is calculated using the Bounds of the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter> as well as the location and size of the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.ImageRectangle%2A>.  
-  
- [!code-csharp[WF_Samples#75](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#75)]
- [!code-vb[WF_Samples#75](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#75)]  
-  
+The following example shows how to override the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.TextRectangle%2A> property. In this example, the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.TextRectangle%2A> is calculated using the Bounds of the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter> as well as the location and size of the <xref:System.Workflow.ComponentModel.Design.SequentialWorkflowHeaderFooter.ImageRectangle%2A>.  
+ 
+[!code-csharp[WF_Samples#75](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#75)]
+[!code-vb[WF_Samples#75](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#75)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

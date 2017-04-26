@@ -14,23 +14,23 @@
     <summary>Represents the license transform algorithm used to normalize XrML licenses for signatures.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class represents the license transform algorithm as defined in the MPEG Rights Extension Language (MPEG REL).  
+The <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class represents the license transform algorithm as defined in the MPEG Rights Extension Language (MPEG REL).  
+ 
+Use the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class to transform XrML licenses for signatures.  
+ 
+The Uniform Resource Identifier (URI) that describes the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class is defined by the <xref:System.Security.Cryptography.Xml.SignedXml.XmlLicenseTransformUrl> field.  
+ 
   
- Use the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class to transform XrML licenses for signatures.  
-  
- The Uniform Resource Identifier (URI) that describes the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class is defined by the <xref:System.Security.Cryptography.Xml.SignedXml.XmlLicenseTransformUrl> field.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to validate an XML digital signature using the <xref:System.Security.Cryptography.Xml.IRelDecryptor> interface and the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class.  
-  
- [!code-cpp[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/cpp/sample.cpp#2)]
- [!code-csharp[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/CS/sample.cs#2)]
- [!code-vb[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/VB/sample.vb#2)]  
-  
+The following code example shows how to validate an XML digital signature using the <xref:System.Security.Cryptography.Xml.IRelDecryptor> interface and the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class.  
+ 
+[!code-cpp[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/cpp/sample.cpp#2)]
+[!code-csharp[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/CS/sample.cs#2)]
+[!code-vb[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/VB/sample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,19 +67,19 @@
         <value>The decryptor of the current <see cref="T:System.Security.Cryptography.Xml.XmlLicenseTransform" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> object uses an <xref:System.Security.Cryptography.Xml.IRelDecryptor> interface to decrypt `<encryptedGrant>` elements from the current `<license>` element.  
+The <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> object uses an <xref:System.Security.Cryptography.Xml.IRelDecryptor> interface to decrypt `<encryptedGrant>` elements from the current `<license>` element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to validate an XML digital signature using the <xref:System.Security.Cryptography.Xml.IRelDecryptor> interface and the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class.  
-  
- [!code-cpp[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/cpp/sample.cpp#2)]
- [!code-csharp[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/CS/sample.cs#2)]
- [!code-vb[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/VB/sample.vb#2)]  
-  
+The following code example shows how to validate an XML digital signature using the <xref:System.Security.Cryptography.Xml.IRelDecryptor> interface and the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class.  
+ 
+[!code-cpp[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/cpp/sample.cpp#2)]
+[!code-csharp[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/CS/sample.cs#2)]
+[!code-vb[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/VB/sample.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +121,10 @@
         <returns>The output of the <see cref="T:System.Security.Cryptography.Xml.XmlLicenseTransform" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type of the returned object must be <xref:System.Xml.XmlDocument>.  
-  
+The type of the returned object must be <xref:System.Xml.XmlDocument>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,10 +169,10 @@
         <value>An array of types that are valid inputs to the <see cref="P:System.Security.Cryptography.Xml.XmlLicenseTransform.OutputTypes" /> method of the current <see cref="T:System.Security.Cryptography.Xml.XmlLicenseTransform" /> object; you can pass only objects of one of these types to the <see cref="P:System.Security.Cryptography.Xml.XmlLicenseTransform.OutputTypes" /> method of the current <see cref="T:System.Security.Cryptography.Xml.XmlLicenseTransform" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The only valid input type to the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class is <xref:System.Xml.XmlDocument>.  
-  
+The only valid input type to the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class is <xref:System.Xml.XmlDocument>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,10 +249,10 @@
         <value>An array of valid output types for the current <see cref="T:System.Security.Cryptography.Xml.XmlLicenseTransform" /> object; only objects of one of these types are returned from the <see cref="M:System.Security.Cryptography.Xml.XmlLicenseTransform.GetOutput" /> methods of the current <see cref="T:System.Security.Cryptography.Xml.XmlLicenseTransform" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The only valid output type to the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class is <xref:System.Xml.XmlDocument>.  
-  
+The only valid output type to the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class is <xref:System.Xml.XmlDocument>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -22,23 +22,23 @@
     <summary>Overrides the correlation parameter value when the correlation value must be obtained from a parameter other than that indicated by the <see cref="T:System.Workflow.Activities.CorrelationParameterAttribute" />. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+ 
+To match an incoming message with the appropriate workflow instance, the message and the workflow instance must share a key. This key is called a correlation set. Typically, the key can be a single-valued correlation set. This means that an ID field in the message can be matched against an ID of the same type that is held by schedule instances.  
+ 
+The <xref:System.Workflow.Activities.CorrelationAliasAttribute> is applied to a method or an event on an interface on a data exchange interface.  
+ 
   
- To match an incoming message with the appropriate workflow instance, the message and the workflow instance must share a key. This key is called a correlation set. Typically, the key can be a single-valued correlation set. This means that an ID field in the message can be matched against an ID of the same type that is held by schedule instances.  
-  
- The <xref:System.Workflow.Activities.CorrelationAliasAttribute> is applied to a method or an event on an interface on a data exchange interface.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use a <xref:System.Workflow.Activities.CorrelationAliasAttribute> to override a <xref:System.Workflow.Activities.CorrelationParameterAttribute>. This code example is from the CorrelatedLocalService SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
-  
- [!code-csharp[WF_Samples#312](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets38.cs#312)]  
-  
+The following code example shows how to use a <xref:System.Workflow.Activities.CorrelationAliasAttribute> to override a <xref:System.Workflow.Activities.CorrelationParameterAttribute>. This code example is from the CorrelatedLocalService SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+ 
+[!code-csharp[WF_Samples#312](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets38.cs#312)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,15 +62,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CorrelationAliasAttribute" /> with the name of the correlation that is being aliased and the path to where the value can be found.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows initial property values for an instance of the <xref:System.Workflow.Activities.CorrelationAliasAttribute> class.  
-  
+The following table shows initial property values for an instance of the <xref:System.Workflow.Activities.CorrelationAliasAttribute> class.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Workflow.Activities.CorrelationAliasAttribute.Name%2A>|The value of `name`.|  
 |<xref:System.Workflow.Activities.CorrelationAliasAttribute.Path%2A>|The value of `path`.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
         <value>The path within the parameter that specifies the location of the correlation value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This parameter can use dot notation; for example, `Parameter.Location`.  
-  
+This parameter can use dot notation; for example, `Parameter.Location`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

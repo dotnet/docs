@@ -28,21 +28,21 @@
     <summary>Specifies the custom type description provider for a class. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This attribute supplies a way for developers to provide custom metadata for their authored classes. This capability extends the static type information functionality in the <xref:System.ComponentModel.TypeDescriptor> class, which by default only obtains type information directly from metadata of the compiled classes.  
-  
+This attribute supplies a way for developers to provide custom metadata for their authored classes. This capability extends the static type information functionality in the <xref:System.ComponentModel.TypeDescriptor> class, which by default only obtains type information directly from metadata of the compiled classes.  
+ 
 > [!NOTE]
 >  For a more dynamic way to provide custom metadata for your authored classes, see the <xref:System.ComponentModel.TypeDescriptor.AddProvider%2A> method.  
-  
- Tagging a class with a <xref:System.ComponentModel.TypeDescriptionProviderAttribute> will associate a <xref:System.ComponentModel.TypeDescriptionProvider> with that class. A <xref:System.ComponentModel.TypeDescriptionProvider> provides supplemental metadata information about the tagged class. For example, the <xref:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor%2A> method returns an <xref:System.ComponentModel.ICustomTypeDescriptor> that defines additional type information, such as attributes, events, and properties. Subsequently, if a <xref:System.ComponentModel.TypeDescriptionProvider> member is used to investigate the tagged class, it will discover both the default and custom type information.  
-  
- This attribute can only be applied to classes and is inherited by derived classes.  
-  
- This attribute cannot be derived from.  
-  
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
+ 
+Tagging a class with a <xref:System.ComponentModel.TypeDescriptionProviderAttribute> will associate a <xref:System.ComponentModel.TypeDescriptionProvider> with that class. A <xref:System.ComponentModel.TypeDescriptionProvider> provides supplemental metadata information about the tagged class. For example, the <xref:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor%2A> method returns an <xref:System.ComponentModel.ICustomTypeDescriptor> that defines additional type information, such as attributes, events, and properties. Subsequently, if a <xref:System.ComponentModel.TypeDescriptionProvider> member is used to investigate the tagged class, it will discover both the default and custom type information.  
+ 
+This attribute can only be applied to classes and is inherited by derived classes.  
+ 
+This attribute cannot be derived from.  
+ 
+For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -73,10 +73,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.TypeDescriptionProviderAttribute" /> class using the specified type name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.TypeDescriptionProviderAttribute.%23ctor%2A> constructor associates the specified <xref:System.ComponentModel.TypeDescriptionProvider> with the tagged class.  
-  
+The <xref:System.ComponentModel.TypeDescriptionProviderAttribute.%23ctor%2A> constructor associates the specified <xref:System.ComponentModel.TypeDescriptionProvider> with the tagged class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -109,10 +109,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.TypeDescriptionProviderAttribute" /> class using the specified type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.TypeDescriptionProviderAttribute.%23ctor%2A> constructor associates the specified <xref:System.ComponentModel.TypeDescriptionProvider> with the tagged class.  
-  
+The <xref:System.ComponentModel.TypeDescriptionProviderAttribute.%23ctor%2A> constructor associates the specified <xref:System.ComponentModel.TypeDescriptionProvider> with the tagged class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -145,10 +145,10 @@
         <value>A <see cref="T:System.String" /> containing the qualified type name for the <see cref="T:System.ComponentModel.TypeDescriptionProvider" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This read-only property retrieves the name of the type description provider set in the constructor.  
-  
+This read-only property retrieves the name of the type description provider set in the constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

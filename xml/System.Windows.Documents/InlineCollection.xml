@@ -32,10 +32,10 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Documents.Inline" /> elements. <see cref="T:System.Windows.Documents.InlineCollection" /> defines the allowable child content of the <see cref="T:System.Windows.Documents.Paragraph" />, <see cref="T:System.Windows.Documents.Span" />, and <see cref="T:System.Windows.Controls.TextBlock" /> elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Documents.InlineCollection> creation is only permitted inside an element that owns an <xref:System.Windows.Documents.InlineCollection>, such as a <xref:System.Windows.Controls.TextBlock> or a <xref:System.Windows.Documents.Paragraph>. As such, an <xref:System.Windows.Documents.InlineCollection> cannot be instantiated directly and has no default or overloaded constructor.  
-  
+<xref:System.Windows.Documents.InlineCollection> creation is only permitted inside an element that owns an <xref:System.Windows.Documents.InlineCollection>, such as a <xref:System.Windows.Controls.TextBlock> or a <xref:System.Windows.Documents.Paragraph>. As such, an <xref:System.Windows.Documents.InlineCollection> cannot be instantiated directly and has no default or overloaded constructor.  
+ 
  ]]></format>
     </remarks>
   </Docs>

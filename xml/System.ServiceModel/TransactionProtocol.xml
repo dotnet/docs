@@ -19,10 +19,10 @@
     <summary>Specifies the transaction protocol used in flowing transactions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used together with the <xref:System.ServiceModel.Channels.TransactionFlowBindingElement> class to specify the desired protocol for flowing transactions.  
-  
+This class is used together with the <xref:System.ServiceModel.Channels.TransactionFlowBindingElement> class to specify the desired protocol for flowing transactions.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <value>A valid <see cref="T:System.ServiceModel.TransactionProtocol" /> value that specifies the default transaction protocol to be used in flowing a transaction.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on selecting a transaction protocol, see [Enabling Transaction Flow](http://msdn.microsoft.com/en-us/31a6bc6a-4ef4-45ba-a753-1efa1a19d917).  
-  
+For more information on selecting a transaction protocol, see [Enabling Transaction Flow](http://msdn.microsoft.com/en-us/31a6bc6a-4ef4-45ba-a753-1efa1a19d917).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,10 +84,10 @@
         <value>An <see cref="P:System.ServiceModel.TransactionProtocol.OleTransactions" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The OleTransactions protocol is useful for scenarios when interoperability with third-party protocol stacks is not a requirement, and the deployer of a service knows in advance that WS-AtomicTransaction is disabled locally or that the existing network topology does not favor the usage of WS-AtomicTransaction.  
-  
+The OleTransactions protocol is useful for scenarios when interoperability with third-party protocol stacks is not a requirement, and the deployer of a service knows in advance that WS-AtomicTransaction is disabled locally or that the existing network topology does not favor the usage of WS-AtomicTransaction.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,10 +127,10 @@
         <value>A <see cref="T:System.ServiceModel.TransactionProtocol" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The WS-AtomicTransaction protocol is useful for scenarios when interoperability with third-party protocol stacks is a requirement. It is also useful as a simple mechanism for testing transaction flow and the two-phase commit protocol using the WS-AT protocol, without interference with the OleTransactions protocol.  
-  
+The WS-AtomicTransaction protocol is useful for scenarios when interoperability with third-party protocol stacks is a requirement. It is also useful as a simple mechanism for testing transaction flow and the two-phase commit protocol using the WS-AT protocol, without interference with the OleTransactions protocol.  
+ 
  ]]></format>
         </remarks>
       </Docs>

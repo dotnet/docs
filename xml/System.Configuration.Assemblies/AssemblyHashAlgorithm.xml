@@ -23,24 +23,24 @@
     <summary>Specifies all the hash algorithms used for hashing files and for generating the strong name.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A `hash function``H` is a transformation that takes an input `m` and returns a fixed-size string, which is called the hash value `h` (that is, `h` = `H` (`m`)). Hash functions with just this property have a variety of general computational uses, but when employed in cryptography, the hash functions are usually chosen to have some additional properties.  
-  
- The basic requirements for a cryptographic hash function are:  
-  
+A `hash function``H` is a transformation that takes an input `m` and returns a fixed-size string, which is called the hash value `h` (that is, `h` = `H` (`m`)). Hash functions with just this property have a variety of general computational uses, but when employed in cryptography, the hash functions are usually chosen to have some additional properties.  
+ 
+The basic requirements for a cryptographic hash function are:  
+ 
 -   The input can be of any length.  
-  
+ 
 -   The output has a fixed length.  
-  
+ 
 -   `H` (`x)` is relatively easy to compute for any given x.  
-  
+ 
 -   `H` (`x`) is one-way.  
-  
+ 
 -   `H` (`x`) is collision-free.  
-  
- The hash value represents concisely the longer message or document from which it was computed; this value is called the message digest. You can think of a message digest as a digital fingerprint of the larger document. Examples of well-known hash functions are MD2 and and SHA.  
-  
+ 
+The hash value represents concisely the longer message or document from which it was computed; this value is called the message digest. You can think of a message digest as a digital fingerprint of the larger document. Examples of well-known hash functions are MD2 and and SHA.  
+ 
  ]]></format>
     </remarks>
   </Docs>

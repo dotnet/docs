@@ -60,42 +60,42 @@
     <summary>Provides the base class for a generic collection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Collections.ObjectModel.Collection%601> class can be used immediately by creating an instance of one of its constructed types; all you have to do is specify the type of object to be contained in the collection. In addition, you can derive your own collection type from any constructed type, or derive a generic collection type from the <xref:System.Collections.ObjectModel.Collection%601> class itself.  
+The <xref:System.Collections.ObjectModel.Collection%601> class can be used immediately by creating an instance of one of its constructed types; all you have to do is specify the type of object to be contained in the collection. In addition, you can derive your own collection type from any constructed type, or derive a generic collection type from the <xref:System.Collections.ObjectModel.Collection%601> class itself.  
+ 
+The <xref:System.Collections.ObjectModel.Collection%601> class provides protected methods that can be used to customize its behavior when adding and removing items, clearing the collection, or setting the value of an existing item.  
+ 
+Most <xref:System.Collections.ObjectModel.Collection%601> objectscan be modified. However, a <xref:System.Collections.ObjectModel.Collection%601> object that is initialized with a read-only <xref:System.Collections.Generic.IList%601> object cannot be modified. See <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> for a read-only version of this class.  
+ 
+Elements in this collection can be accessed using an integer index.  Indexes in this collection are zero-based.  
+ 
+<xref:System.Collections.ObjectModel.Collection%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
+ 
   
- The <xref:System.Collections.ObjectModel.Collection%601> class provides protected methods that can be used to customize its behavior when adding and removing items, clearing the collection, or setting the value of an existing item.  
-  
- Most <xref:System.Collections.ObjectModel.Collection%601> objectscan be modified. However, a <xref:System.Collections.ObjectModel.Collection%601> object that is initialized with a read-only <xref:System.Collections.Generic.IList%601> object cannot be modified. See <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> for a read-only version of this class.  
-  
- Elements in this collection can be accessed using an integer index.  Indexes in this collection are zero-based.  
-  
- <xref:System.Collections.ObjectModel.Collection%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
-  
-   
-  
+ 
 ## Examples  
- This section contains two code examples. The first example demonstrates several properties and methods of the <xref:System.Collections.ObjectModel.Collection%601> class. The second example shows how to derive a collection class from a constructed type of <xref:System.Collections.ObjectModel.Collection%601>, and how to override the protected methods of <xref:System.Collections.ObjectModel.Collection%601> to provide custom behavior.  
-  
- Example 1  
-  
- The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
-  
- [!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
- [!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
- [!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
-  
- Example 2  
-  
- The following code example shows how to derive a collection class from a constructed type of the <xref:System.Collections.ObjectModel.Collection%601> generic class, and how to override the protected <xref:System.Collections.ObjectModel.Collection%601.InsertItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.RemoveItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.ClearItems%2A>, and <xref:System.Collections.ObjectModel.Collection%601.SetItem%2A> methods to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.Collection%601.Insert%2A>, <xref:System.Collections.ObjectModel.Collection%601.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property.  
-  
- The custom behavior provided by this example is a `Changed` notification event that is raised at the end of each of the protected methods. The `Dinosaurs` class inherits `Collection<string>` (`Collection(Of String)` in Visual Basic) and defines the `Changed` event, which uses a `DinosaursChangedEventArgs` class for the event information, and an enumeration to identify the kind of change.  
-  
- The code example calls several properties and methods of <xref:System.Collections.ObjectModel.Collection%601> to demonstrate the custom event.  
-  
- [!code-csharp[ObjectModel.CollectionInherited#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.CollectionInherited/cs/source.cs#1)]
- [!code-vb[ObjectModel.CollectionInherited#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.CollectionInherited/VB/source.vb#1)]  
-  
+This section contains two code examples. The first example demonstrates several properties and methods of the <xref:System.Collections.ObjectModel.Collection%601> class. The second example shows how to derive a collection class from a constructed type of <xref:System.Collections.ObjectModel.Collection%601>, and how to override the protected methods of <xref:System.Collections.ObjectModel.Collection%601> to provide custom behavior.  
+ 
+Example 1  
+ 
+The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
+ 
+[!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
+[!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
+[!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
+ 
+Example 2  
+ 
+The following code example shows how to derive a collection class from a constructed type of the <xref:System.Collections.ObjectModel.Collection%601> generic class, and how to override the protected <xref:System.Collections.ObjectModel.Collection%601.InsertItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.RemoveItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.ClearItems%2A>, and <xref:System.Collections.ObjectModel.Collection%601.SetItem%2A> methods to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.Collection%601.Insert%2A>, <xref:System.Collections.ObjectModel.Collection%601.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property.  
+ 
+The custom behavior provided by this example is a `Changed` notification event that is raised at the end of each of the protected methods. The `Dinosaurs` class inherits `Collection<string>` (`Collection(Of String)` in Visual Basic) and defines the `Changed` event, which uses a `DinosaursChangedEventArgs` class for the event information, and an enumeration to identify the kind of change.  
+ 
+The code example calls several properties and methods of <xref:System.Collections.ObjectModel.Collection%601> to demonstrate the custom event.  
+ 
+[!code-csharp[ObjectModel.CollectionInherited#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.CollectionInherited/cs/source.cs#1)]
+[!code-vb[ObjectModel.CollectionInherited#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.CollectionInherited/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>Public static (<see langword="Shared" /> in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
@@ -132,19 +132,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.Collection`1" /> class that is empty.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is an O(1) operation.  
+This constructor is an O(1) operation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings with the <xref:System.Collections.ObjectModel.Collection%601.%23ctor> constructor, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
-  
- [!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
- [!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
- [!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
-  
+The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings with the <xref:System.Collections.ObjectModel.Collection%601.%23ctor> constructor, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
+ 
+[!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
+[!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
+[!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,12 +178,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.Collection`1" /> class as a wrapper for the specified list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements of the list are not copied. The list is wrapped by the collection, so that subsequent changes to the elements of the list are visible through the <xref:System.Collections.ObjectModel.Collection%601>.  
-  
- This constructor is an O(1) operation.  
-  
+The elements of the list are not copied. The list is wrapped by the collection, so that subsequent changes to the elements of the list are visible through the <xref:System.Collections.ObjectModel.Collection%601>.  
+ 
+This constructor is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -222,21 +222,21 @@
         <summary>Adds an object to the end of the <see cref="T:System.Collections.ObjectModel.Collection`1" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Collections.ObjectModel.Collection%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
+<xref:System.Collections.ObjectModel.Collection%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
+ 
+This method is an O(1) operation.  
+ 
   
- This method is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
-  
- [!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
- [!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
- [!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
-  
+The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
+ 
+[!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
+[!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
+[!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,21 +270,21 @@
         <summary>Removes all elements from the <see cref="T:System.Collections.ObjectModel.Collection`1" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Collections.ObjectModel.Collection%601.Count%2A> is set to zero, and references to other objects from elements of the collection are also released.  
+<xref:System.Collections.ObjectModel.Collection%601.Count%2A> is set to zero, and references to other objects from elements of the collection are also released.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+ 
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
-  
- [!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
- [!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
- [!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
-  
+The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
+ 
+[!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
+[!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
+[!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -321,24 +321,24 @@
         <summary>Removes all elements from the <see cref="T:System.Collections.ObjectModel.Collection`1" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Collections.ObjectModel.Collection%601.Count%2A> is set to zero, and references to other objects from elements of the collection are also released.  
+<xref:System.Collections.ObjectModel.Collection%601.Count%2A> is set to zero, and references to other objects from elements of the collection are also released.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+ 
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to derive a collection class from a constructed type of the <xref:System.Collections.ObjectModel.Collection%601> generic class, and how to override the protected <xref:System.Collections.ObjectModel.Collection%601.InsertItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.RemoveItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.ClearItems%2A>, and <xref:System.Collections.ObjectModel.Collection%601.SetItem%2A> methods to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.Collection%601.Insert%2A>, <xref:System.Collections.ObjectModel.Collection%601.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property.  
-  
- The custom behavior provided by this example is a `Changed` notification event that is raised at the end of each of the protected methods. The `Dinosaurs` class inherits `Collection<string>` (`Collection(Of String)` in Visual Basic) and defines the `Changed` event, which uses a `DinosaursChangedEventArgs` class for the event information, and an enumeration to identify the kind of change.  
-  
- The code example calls several properties and methods of <xref:System.Collections.ObjectModel.Collection%601> to demonstrate the custom event.  
-  
- [!code-csharp[ObjectModel.CollectionInherited#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.CollectionInherited/cs/source.cs#1)]
- [!code-vb[ObjectModel.CollectionInherited#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.CollectionInherited/VB/source.vb#1)]  
-  
+The following code example shows how to derive a collection class from a constructed type of the <xref:System.Collections.ObjectModel.Collection%601> generic class, and how to override the protected <xref:System.Collections.ObjectModel.Collection%601.InsertItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.RemoveItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.ClearItems%2A>, and <xref:System.Collections.ObjectModel.Collection%601.SetItem%2A> methods to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.Collection%601.Insert%2A>, <xref:System.Collections.ObjectModel.Collection%601.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property.  
+ 
+The custom behavior provided by this example is a `Changed` notification event that is raised at the end of each of the protected methods. The `Dinosaurs` class inherits `Collection<string>` (`Collection(Of String)` in Visual Basic) and defines the `Changed` event, which uses a `DinosaursChangedEventArgs` class for the event information, and an enumeration to identify the kind of change.  
+ 
+The code example calls several properties and methods of <xref:System.Collections.ObjectModel.Collection%601> to demonstrate the custom event.  
+ 
+[!code-csharp[ObjectModel.CollectionInherited#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.CollectionInherited/cs/source.cs#1)]
+[!code-vb[ObjectModel.CollectionInherited#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.CollectionInherited/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -380,14 +380,14 @@
           <see langword="true" /> if <paramref name="item" /> is found in the <see cref="T:System.Collections.ObjectModel.Collection`1" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Collections.ObjectModel.Collection%601> object is created using the default constructor, this method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list. If type `T` does not implement the <xref:System.IEquatable%601> interface, the <xref:System.Object.Equals%2A> method is used.  
-  
- If the Collection object is created by passing an <xref:System.Collections.Generic.IList%601> object to the constructor, the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method will be determined by the <xref:System.Collections.Generic.IEqualityComparer%601> interface used by that <xref:System.Collections.Generic.IList%601> object.  
-  
- This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.ObjectModel.Collection%601.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
-  
+If the <xref:System.Collections.ObjectModel.Collection%601> object is created using the default constructor, this method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list. If type `T` does not implement the <xref:System.IEquatable%601> interface, the <xref:System.Object.Equals%2A> method is used.  
+ 
+If the Collection object is created by passing an <xref:System.Collections.Generic.IList%601> object to the constructor, the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method will be determined by the <xref:System.Collections.Generic.IEqualityComparer%601> interface used by that <xref:System.Collections.Generic.IList%601> object.  
+ 
+This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.ObjectModel.Collection%601.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -426,14 +426,14 @@
         <summary>Copies the entire <see cref="T:System.Collections.ObjectModel.Collection`1" /> to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
-  
- The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.ObjectModel.Collection%601>.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
-  
+This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ 
+The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.ObjectModel.Collection%601>.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -472,19 +472,19 @@
         <value>The number of elements actually contained in the <see cref="T:System.Collections.ObjectModel.Collection`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Retrieving the value of this property is an O(1) operation.  
+Retrieving the value of this property is an O(1) operation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
-  
- [!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
- [!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
- [!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
-  
+The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
+ 
+[!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
+[!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
+[!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -519,26 +519,26 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> for the <see cref="T:System.Collections.ObjectModel.Collection`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current%2A>.  
-  
- <xref:System.Collections.Generic.IEnumerator%601.Current%2A> returns the same object until <xref:System.Collections.IEnumerator.MoveNext%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the next element.  
-  
- If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
-  
- This method is an O(1) operation.  
-  
+The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+ 
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current%2A>.  
+ 
+<xref:System.Collections.Generic.IEnumerator%601.Current%2A> returns the same object until <xref:System.Collections.IEnumerator.MoveNext%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the next element.  
+ 
+If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+ 
+Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ 
+This method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -576,23 +576,23 @@
         <returns>The zero-based index of the first occurrence of <paramref name="item" /> within the entire <see cref="T:System.Collections.ObjectModel.Collection`1" />, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Collections.ObjectModel.Collection%601> is searched forward starting at the first element and ending at the last element.  
+The <xref:System.Collections.ObjectModel.Collection%601> is searched forward starting at the first element and ending at the last element.  
+ 
+This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ 
+This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.ObjectModel.Collection%601.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+ 
   
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
-  
- This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.ObjectModel.Collection%601.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
-  
- [!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
- [!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
- [!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
-  
+The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
+ 
+[!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
+[!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
+[!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -631,14 +631,14 @@
         <summary>Inserts an element into the <see cref="T:System.Collections.ObjectModel.Collection`1" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Collections.ObjectModel.Collection%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
-  
- If `index` is equal to <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, `item` is added to the end of <xref:System.Collections.ObjectModel.Collection%601>.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
-  
+<xref:System.Collections.ObjectModel.Collection%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
+ 
+If `index` is equal to <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, `item` is added to the end of <xref:System.Collections.ObjectModel.Collection%601>.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -686,28 +686,28 @@
         <summary>Inserts an element into the <see cref="T:System.Collections.ObjectModel.Collection`1" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Collections.ObjectModel.Collection%601.InsertItem%2A> is meant to be overridden in a derived class. For a public method to insert an item in the <xref:System.Collections.ObjectModel.Collection%601>, see <xref:System.Collections.ObjectModel.Collection%601.Insert%2A>.  
+The <xref:System.Collections.ObjectModel.Collection%601.InsertItem%2A> is meant to be overridden in a derived class. For a public method to insert an item in the <xref:System.Collections.ObjectModel.Collection%601>, see <xref:System.Collections.ObjectModel.Collection%601.Insert%2A>.  
+ 
+<xref:System.Collections.ObjectModel.Collection%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
+ 
+If `index` is equal to <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, `item` is added to the end of <xref:System.Collections.ObjectModel.Collection%601>.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+ 
   
- <xref:System.Collections.ObjectModel.Collection%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
-  
- If `index` is equal to <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, `item` is added to the end of <xref:System.Collections.ObjectModel.Collection%601>.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to derive a collection class from a constructed type of the <xref:System.Collections.ObjectModel.Collection%601> generic class, and how to override the protected <xref:System.Collections.ObjectModel.Collection%601.InsertItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.RemoveItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.ClearItems%2A>, and <xref:System.Collections.ObjectModel.Collection%601.SetItem%2A> methods to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.Collection%601.Insert%2A>, <xref:System.Collections.ObjectModel.Collection%601.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property.  
-  
- The custom behavior provided by this example is a `Changed` notification event that is raised at the end of each of the protected methods. The `Dinosaurs` class inherits `Collection<string>` (`Collection(Of String)` in Visual Basic) and defines the `Changed` event, which uses a `DinosaursChangedEventArgs` class for the event information, and an enumeration to identify the kind of change.  
-  
- The code example calls several properties and methods of <xref:System.Collections.ObjectModel.Collection%601> to demonstrate the custom event.  
-  
- [!code-csharp[ObjectModel.CollectionInherited#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.CollectionInherited/cs/source.cs#1)]
- [!code-vb[ObjectModel.CollectionInherited#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.CollectionInherited/VB/source.vb#1)]  
-  
+The following code example shows how to derive a collection class from a constructed type of the <xref:System.Collections.ObjectModel.Collection%601> generic class, and how to override the protected <xref:System.Collections.ObjectModel.Collection%601.InsertItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.RemoveItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.ClearItems%2A>, and <xref:System.Collections.ObjectModel.Collection%601.SetItem%2A> methods to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.Collection%601.Insert%2A>, <xref:System.Collections.ObjectModel.Collection%601.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property.  
+ 
+The custom behavior provided by this example is a `Changed` notification event that is raised at the end of each of the protected methods. The `Dinosaurs` class inherits `Collection<string>` (`Collection(Of String)` in Visual Basic) and defines the `Changed` event, which uses a `DinosaursChangedEventArgs` class for the event information, and an enumeration to identify the kind of change.  
+ 
+The code example calls several properties and methods of <xref:System.Collections.ObjectModel.Collection%601> to demonstrate the custom event.  
+ 
+[!code-csharp[ObjectModel.CollectionInherited#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.CollectionInherited/cs/source.cs#1)]
+[!code-vb[ObjectModel.CollectionInherited#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.CollectionInherited/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -751,25 +751,25 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Collections.ObjectModel.Collection%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
+<xref:System.Collections.ObjectModel.Collection%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
+ 
+This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
+ 
+The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property. Visual Basic implements <xref:System.Collections.ObjectModel.Collection%601.Item%2A> as a default property, which provides the same indexing functionality.  
+ 
+Retrieving the value of this property is an O(1) operation; setting the property is also an O(1) operation.  
+ 
   
- This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
-  
- The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property. Visual Basic implements <xref:System.Collections.ObjectModel.Collection%601.Item%2A> as a default property, which provides the same indexing functionality.  
-  
- Retrieving the value of this property is an O(1) operation; setting the property is also an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
-  
- [!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
- [!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
- [!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
-  
+The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
+ 
+[!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
+[!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
+[!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -812,12 +812,12 @@
         <value>A <see cref="T:System.Collections.Generic.IList`1" /> wrapper around the <see cref="T:System.Collections.ObjectModel.Collection`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The wrapper provides the functionality of the <xref:System.Collections.Generic.IList%601> class and exposes all the elements of the <xref:System.Collections.ObjectModel.Collection%601>.  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+The wrapper provides the functionality of the <xref:System.Collections.Generic.IList%601> class and exposes all the elements of the <xref:System.Collections.ObjectModel.Collection%601>.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -856,21 +856,21 @@
           <see langword="true" /> if <paramref name="item" /> is successfully removed; otherwise, <see langword="false" />.  This method also returns <see langword="false" /> if <paramref name="item" /> was not found in the original <see cref="T:System.Collections.ObjectModel.Collection`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ 
+This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.ObjectModel.Collection%601.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+ 
   
- This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.ObjectModel.Collection%601.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
-  
- [!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
- [!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
- [!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
-  
+The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
+ 
+[!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
+[!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
+[!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -910,19 +910,19 @@
         <summary>Removes the element at the specified index of the <see cref="T:System.Collections.ObjectModel.Collection`1" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
-  
- [!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
- [!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
- [!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
-  
+The following code example demonstrates many of the properties and methods of <xref:System.Collections.ObjectModel.Collection%601>. The code example creates a collection of strings, uses the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method to add several strings, displays the <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, and lists the strings. The example uses the <xref:System.Collections.ObjectModel.Collection%601.IndexOf%2A> method to find the index of a string and the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method to determine whether a string is in the collection. The example inserts a string using the <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> method and retrieves and sets strings using the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The example removes strings by string identity using the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> method and by index using the <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> method. Finally, the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method is used to clear all strings from the collection.  
+ 
+[!code-cpp[ObjectModel.Collection#1](~/samples/snippets/cpp/VS_Snippets_CLR/ObjectModel.Collection/cpp/source.cpp#1)]
+[!code-csharp[ObjectModel.Collection#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.Collection/cs/source.cs#1)]
+[!code-vb[ObjectModel.Collection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.Collection/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -968,22 +968,22 @@
         <summary>Removes the element at the specified index of the <see cref="T:System.Collections.ObjectModel.Collection`1" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to derive a collection class from a constructed type of the <xref:System.Collections.ObjectModel.Collection%601> generic class, and how to override the protected <xref:System.Collections.ObjectModel.Collection%601.InsertItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.RemoveItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.ClearItems%2A>, and <xref:System.Collections.ObjectModel.Collection%601.SetItem%2A> methods to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.Collection%601.Insert%2A>, <xref:System.Collections.ObjectModel.Collection%601.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property.  
-  
- The custom behavior provided by this example is a `Changed` notification event that is raised at the end of each of the protected methods. The `Dinosaurs` class inherits `Collection<string>` (`Collection(Of String)` in Visual Basic) and defines the `Changed` event, which uses a `DinosaursChangedEventArgs` class for the event information, and an enumeration to identify the kind of change.  
-  
- The code example calls several properties and methods of <xref:System.Collections.ObjectModel.Collection%601> to demonstrate the custom event.  
-  
- [!code-csharp[ObjectModel.CollectionInherited#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.CollectionInherited/cs/source.cs#1)]
- [!code-vb[ObjectModel.CollectionInherited#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.CollectionInherited/VB/source.vb#1)]  
-  
+The following code example shows how to derive a collection class from a constructed type of the <xref:System.Collections.ObjectModel.Collection%601> generic class, and how to override the protected <xref:System.Collections.ObjectModel.Collection%601.InsertItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.RemoveItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.ClearItems%2A>, and <xref:System.Collections.ObjectModel.Collection%601.SetItem%2A> methods to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.Collection%601.Insert%2A>, <xref:System.Collections.ObjectModel.Collection%601.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property.  
+ 
+The custom behavior provided by this example is a `Changed` notification event that is raised at the end of each of the protected methods. The `Dinosaurs` class inherits `Collection<string>` (`Collection(Of String)` in Visual Basic) and defines the `Changed` event, which uses a `DinosaursChangedEventArgs` class for the event information, and an enumeration to identify the kind of change.  
+ 
+The code example calls several properties and methods of <xref:System.Collections.ObjectModel.Collection%601> to demonstrate the custom event.  
+ 
+[!code-csharp[ObjectModel.CollectionInherited#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.CollectionInherited/cs/source.cs#1)]
+[!code-vb[ObjectModel.CollectionInherited#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.CollectionInherited/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1028,24 +1028,24 @@
         <summary>Replaces the element at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Collections.ObjectModel.Collection%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
+<xref:System.Collections.ObjectModel.Collection%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
+ 
+This method is an O(1) operation.  
+ 
   
- This method is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to derive a collection class from a constructed type of the <xref:System.Collections.ObjectModel.Collection%601> generic class, and how to override the protected <xref:System.Collections.ObjectModel.Collection%601.InsertItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.RemoveItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.ClearItems%2A>, and <xref:System.Collections.ObjectModel.Collection%601.SetItem%2A> methods to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.Collection%601.Insert%2A>, <xref:System.Collections.ObjectModel.Collection%601.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property.  
-  
- The custom behavior provided by this example is a `Changed` notification event that is raised at the end of each of the protected methods. The `Dinosaurs` class inherits `Collection<string>` (`Collection(Of String)` in Visual Basic) and defines the `Changed` event, which uses a `DinosaursChangedEventArgs` class for the event information, and an enumeration to identify the kind of change.  
-  
- The code example calls several properties and methods of <xref:System.Collections.ObjectModel.Collection%601> to demonstrate the custom event.  
-  
- [!code-csharp[ObjectModel.CollectionInherited#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.CollectionInherited/cs/source.cs#1)]
- [!code-vb[ObjectModel.CollectionInherited#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.CollectionInherited/VB/source.vb#1)]  
-  
+The following code example shows how to derive a collection class from a constructed type of the <xref:System.Collections.ObjectModel.Collection%601> generic class, and how to override the protected <xref:System.Collections.ObjectModel.Collection%601.InsertItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.RemoveItem%2A>, <xref:System.Collections.ObjectModel.Collection%601.ClearItems%2A>, and <xref:System.Collections.ObjectModel.Collection%601.SetItem%2A> methods to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.Collection%601.Insert%2A>, <xref:System.Collections.ObjectModel.Collection%601.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property.  
+ 
+The custom behavior provided by this example is a `Changed` notification event that is raised at the end of each of the protected methods. The `Dinosaurs` class inherits `Collection<string>` (`Collection(Of String)` in Visual Basic) and defines the `Changed` event, which uses a `DinosaursChangedEventArgs` class for the event information, and an enumeration to identify the kind of change.  
+ 
+The code example calls several properties and methods of <xref:System.Collections.ObjectModel.Collection%601> to demonstrate the custom event.  
+ 
+[!code-csharp[ObjectModel.CollectionInherited#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObjectModel.CollectionInherited/cs/source.cs#1)]
+[!code-vb[ObjectModel.CollectionInherited#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObjectModel.CollectionInherited/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1086,14 +1086,14 @@
           <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.ObjectModel.Collection`1" />, this property always returns <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
-  
- A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+ 
+A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1132,14 +1132,14 @@
         <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the non-generic implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
-  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1192,16 +1192,16 @@
           <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.ObjectModel.Collection`1" />, this property always returns <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
-  
- Enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration. To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
- <xref:System.Collections.ICollection.SyncRoot%2A> returns an object that can be used to synchronize access to the <xref:System.Collections.ICollection>. Synchronization is effective only if all threads lock this object before accessing the collection.  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ 
+Enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration. To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+ 
+<xref:System.Collections.ICollection.SyncRoot%2A> returns an object that can be used to synchronize access to the <xref:System.Collections.ICollection>. Synchronization is effective only if all threads lock this object before accessing the collection.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1235,28 +1235,28 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.  In the default implementation of <see cref="T:System.Collections.ObjectModel.Collection`1" />, this property always returns the current instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
-  
- Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
- <xref:System.Collections.ICollection.SyncRoot%2A> returns an object that can be used to synchronize access to the <xref:System.Collections.ICollection>. Synchronization is effective only if all threads lock this object before accessing the collection. The following code shows the use of the <xref:System.Collections.ICollection.SyncRoot%2A> property for C#, C++, and Visual Basic.  
-  
+Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ 
+Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+ 
+<xref:System.Collections.ICollection.SyncRoot%2A> returns an object that can be used to synchronize access to the <xref:System.Collections.ICollection>. Synchronization is effective only if all threads lock this object before accessing the collection. The following code shows the use of the <xref:System.Collections.ICollection.SyncRoot%2A> property for C#, C++, and Visual Basic.  
+ 
 ```csharp  
 ICollection ic = ...;  
 lock (ic.SyncRoot) {  
    // Access the collection.  
 }  
 ```  
-  
+ 
 ```vb  
 Dim ic As ICollection = ...  
 SyncLock ic.SyncRoot  
    ' Access the collection.  
 End SyncLock  
 ```  
-  
+ 
 ```cpp#  
 ICollection^ ic = ...;  
 try {  
@@ -1267,9 +1267,9 @@ finally {
    Monitor::Exit(ic->SyncRoot);  
 }  
 ```  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1304,26 +1304,26 @@ finally {
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
-  
- <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
-  
- If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
-  
- This method is an O(1) operation.  
-  
+The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+ 
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ 
+<xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+ 
+If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+ 
+Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ 
+This method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1361,10 +1361,10 @@ finally {
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(1) operation.  
-  
+This method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1405,12 +1405,12 @@ finally {
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Collections.IList" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method determines equality by first determining whether `value` is of type `T` (or null) and then calling <xref:System.Collections.ObjectModel.Collection%601.Contains%2A>.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
-  
+This method determines equality by first determining whether `value` is of type `T` (or null) and then calling <xref:System.Collections.ObjectModel.Collection%601.Contains%2A>.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1450,12 +1450,12 @@ finally {
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method determines equality using the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>.  <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements <xref:System.IComparable%601?displayProperty=fullName> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements <xref:System.IComparable?displayProperty=fullName>.  If type `T` does not implement either interface, this method uses <xref:System.Object.Equals%2A?displayProperty=fullName>.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
-  
+This method determines equality using the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>.  <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements <xref:System.IComparable%601?displayProperty=fullName> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements <xref:System.IComparable?displayProperty=fullName>.  If type `T` does not implement either interface, this method uses <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1496,12 +1496,12 @@ finally {
         <summary>Inserts an item into the <see cref="T:System.Collections.IList" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `index` equals the number of items in the <xref:System.Collections.IList>, then `value` is appended to the end.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
-  
+If `index` equals the number of items in the <xref:System.Collections.IList>, then `value` is appended to the end.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1540,14 +1540,14 @@ finally {
           <see langword="true" /> if the <see cref="T:System.Collections.IList" /> has a fixed size; otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.ObjectModel.Collection`1" />, this property always returns <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but it allows the modification of existing elements.  
-  
- A collection with a fixed size is simply a collection with a wrapper that prevents adding and removing elements; therefore, if changes are made to the underlying collection, including the addition or removal of elements, the fixed-size collection reflects those changes.  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but it allows the modification of existing elements.  
+ 
+A collection with a fixed size is simply a collection with a wrapper that prevents adding and removing elements; therefore, if changes are made to the underlying collection, including the addition or removal of elements, the fixed-size collection reflects those changes.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1582,14 +1582,14 @@ finally {
           <see langword="true" /> if the <see cref="T:System.Collections.IList" /> is read-only; otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.ObjectModel.Collection`1" />, this property always returns <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
-  
- A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+ 
+A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1627,14 +1627,14 @@ finally {
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
-  
- The C# language uses the [this](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.ObjectModel.Collection%601.System%23Collections%23IList%23Item%2A> property. Visual Basic implements <xref:System.Collections.ObjectModel.Collection%601.System%23Collections%23IList%23Item%2A> as a default property, which provides the same indexing functionality.  
-  
- Retrieving the value of this property is an O(1) operation; setting the property is also an O(1) operation.  
-  
+This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
+ 
+The C# language uses the [this](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.ObjectModel.Collection%601.System%23Collections%23IList%23Item%2A> property. Visual Basic implements <xref:System.Collections.ObjectModel.Collection%601.System%23Collections%23IList%23Item%2A> as a default property, which provides the same indexing functionality.  
+ 
+Retrieving the value of this property is an O(1) operation; setting the property is also an O(1) operation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1674,12 +1674,12 @@ finally {
         <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.IList" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method determines equality using the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>.  <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements <xref:System.IComparable%601?displayProperty=fullName> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements <xref:System.IComparable?displayProperty=fullName>.  If type `T` does not implement either interface, this method uses <xref:System.Object.Equals%2A?displayProperty=fullName>.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
-  
+This method determines equality using the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>.  <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements <xref:System.IComparable%601?displayProperty=fullName> and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements <xref:System.IComparable?displayProperty=fullName>.  If type `T` does not implement either interface, this method uses <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

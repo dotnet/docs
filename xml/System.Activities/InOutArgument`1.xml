@@ -29,10 +29,10 @@
     <summary>A binding terminal that represents the flow of data into and out of an activity.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In this example, a custom `Square` activity has an <xref:System.Activities.InOutArgument%601> of type <xref:System.Int32> named `N1`. This argument is used to receive the value to be operated on and is also used to pass the result of the operation back out.  
-  
+In this example, a custom `Square` activity has an <xref:System.Activities.InOutArgument%601> of type <xref:System.Int32> named `N1`. This argument is used to receive the value to be operated on and is also used to pass the result of the operation back out.  
+ 
 ```csharp  
 class Square : CodeActivity  
 {  
@@ -51,9 +51,9 @@ class Square : CodeActivity
     }  
 }  
 ```  
-  
- In the following example, the `Square` activity is hosted in a workflow. A value is passed into the activity and the result is then displayed to the console window by a <xref:System.Activities.Statements.WriteLine> activity.  
-  
+ 
+In the following example, the `Square` activity is hosted in a workflow. A value is passed into the activity and the result is then displayed to the console window by a <xref:System.Activities.Statements.WriteLine> activity.  
+ 
 ```csharp  
 Variable<int> n1 = new Variable<int>() { Default = 25 };  
   
@@ -78,7 +78,7 @@ Activity activity1 = new Sequence()
   
 WorkflowInvoker.Invoke(activity1);  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

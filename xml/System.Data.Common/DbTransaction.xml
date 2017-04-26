@@ -109,10 +109,10 @@
         <value>The <see cref="T:System.Data.Common.DbConnection" /> object associated with the transaction.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A single application may have multiple data source connections, each with zero or more transactions. This property allows you to determine the connection object associated with a particular transaction.  
-  
+A single application may have multiple data source connections, each with zero or more transactions. This property allows you to determine the connection object associated with a particular transaction.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,10 +143,10 @@
         <value>The <see cref="T:System.Data.Common.DbConnection" /> object associated with the transaction.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A single application may have multiple data source connections, each with zero or more transactions. This property allows you to determine the connection object associated with a particular transaction.  
-  
+A single application may have multiple data source connections, each with zero or more transactions. This property allows you to determine the connection object associated with a particular transaction.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,10 +177,10 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Data.Common.DbTransaction" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Common.DbTransaction.Dispose%2A> should rollback the transaction. However, the behavior of <xref:System.Data.Common.DbTransaction.Dispose%2A> is provider specific, and should not replace calling <xref:System.Data.Common.DbTransaction.Rollback%2A>.  
-  
+<xref:System.Data.Common.DbTransaction.Dispose%2A> should rollback the transaction. However, the behavior of <xref:System.Data.Common.DbTransaction.Dispose%2A> is provider specific, and should not replace calling <xref:System.Data.Common.DbTransaction.Rollback%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,10 +214,10 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Data.Common.DbTransaction" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Common.DbTransaction.Dispose%2A> should rollback the transaction. However, the behavior of <xref:System.Data.Common.DbTransaction.Dispose%2A> is provider specific, and should not replace calling <xref:System.Data.Common.DbTransaction.Rollback%2A>.  
-  
+<xref:System.Data.Common.DbTransaction.Dispose%2A> should rollback the transaction. However, the behavior of <xref:System.Data.Common.DbTransaction.Dispose%2A> is provider specific, and should not replace calling <xref:System.Data.Common.DbTransaction.Rollback%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,10 +312,10 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Data.Common.DbTransaction" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Common.DbTransaction.Dispose%2A> should rollback the transaction. However, the behavior of <xref:System.Data.Common.DbTransaction.Dispose%2A> is provider specific, and should not replace calling <xref:System.Data.Common.DbTransaction.Rollback%2A>.  
-  
+<xref:System.Data.Common.DbTransaction.Dispose%2A> should rollback the transaction. However, the behavior of <xref:System.Data.Common.DbTransaction.Dispose%2A> is provider specific, and should not replace calling <xref:System.Data.Common.DbTransaction.Rollback%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

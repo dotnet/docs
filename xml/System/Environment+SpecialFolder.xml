@@ -23,23 +23,23 @@
     <summary>Specifies enumerated constants used to retrieve directory paths to system special folders.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The system special folders are folders such as **Program Files**, **Programs**, **System**, or **Startup**, which contain common information. Special folders are set by default by the system, or explicitly by the user, when installing a version of Windows.  
+The system special folders are folders such as **Program Files**, **Programs**, **System**, or **Startup**, which contain common information. Special folders are set by default by the system, or explicitly by the user, when installing a version of Windows.  
+ 
+The <xref:System.Environment.GetFolderPath%2A> method returns the locations associated with this enumeration. The locations of these folders can have different values on different operating systems, the user can change some of the locations, and the locations are localized.  
+ 
+For more information about special folders, see the [KNOWNFOLDERID](http://msdn.microsoft.com/library/dd378457.aspx) constants in the Windows documentation.  
+ 
   
- The <xref:System.Environment.GetFolderPath%2A> method returns the locations associated with this enumeration. The locations of these folders can have different values on different operating systems, the user can change some of the locations, and the locations are localized.  
-  
- For more information about special folders, see the [KNOWNFOLDERID](http://msdn.microsoft.com/library/dd378457.aspx) constants in the Windows documentation.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use <xref:System.Environment.SpecialFolder> with the <xref:System.Environment.GetFolderPath%2A> method to get the System directory.  
-  
- [!code-cpp[Environment.GetFolderPath#1](~/samples/snippets/cpp/VS_Snippets_CLR/Environment.GetFolderPath/CPP/getfolderpath.cpp#1)]
- [!code-csharp[Environment.GetFolderPath#1](~/samples/snippets/csharp/VS_Snippets_CLR/Environment.GetFolderPath/CS/getfolderpath.cs#1)]
- [!code-vb[Environment.GetFolderPath#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Environment.GetFolderPath/VB/getfolderpath.vb#1)]  
-  
+The following example shows how to use <xref:System.Environment.SpecialFolder> with the <xref:System.Environment.GetFolderPath%2A> method to get the System directory.  
+ 
+[!code-cpp[Environment.GetFolderPath#1](~/samples/snippets/cpp/VS_Snippets_CLR/Environment.GetFolderPath/CPP/getfolderpath.cpp#1)]
+[!code-csharp[Environment.GetFolderPath#1](~/samples/snippets/csharp/VS_Snippets_CLR/Environment.GetFolderPath/CS/getfolderpath.cs#1)]
+[!code-vb[Environment.GetFolderPath#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Environment.GetFolderPath/VB/getfolderpath.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -86,10 +86,10 @@
         <summary>The directory that serves as a common repository for application-specific data for the current roaming user.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A roaming user works on more than one computer on a network. A roaming user's profile is kept on a server on the network and is loaded onto a system when the user logs on.  
-  
+A roaming user works on more than one computer on a network. A roaming user's profile is kept on a server on the network and is loaded onto a system when the user logs on.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -474,10 +474,10 @@
         <summary>The directory used to physically store file objects on the desktop.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not confuse this directory with the desktop folder itself, which is a virtual folder.  
-  
+Do not confuse this directory with the desktop folder itself, which is a virtual folder.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -629,10 +629,10 @@
         <summary>The **My Computer** folder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The MyComputer constant always yields the empty string ("") because no path is defined for the My Computer folder.  
-  
+The MyComputer constant always yields the empty string ("") because no path is defined for the My Computer folder.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -658,10 +658,10 @@
         <summary>The **My Documents** folder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is equivalent to  Personal.  
-  
+This member is equivalent to  Personal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -771,10 +771,10 @@
         <summary>The directory that serves as a common repository for documents.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is equivalent to  MyDocuments.  
-  
+This member is equivalent to  MyDocuments.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -970,10 +970,10 @@
         <summary>The directory that corresponds to the user's Startup program group.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The system starts these programs whenever a user logs on or starts Windows NT or later, or starts Windows 98.  
-  
+The system starts these programs whenever a user logs on or starts Windows NT or later, or starts Windows 98.  
+ 
  ]]></format>
         </remarks>
       </Docs>

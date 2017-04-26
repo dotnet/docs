@@ -26,27 +26,27 @@
     <summary>Provides a base class for all <see cref="T:System.Windows.Controls.Panel" /> elements. Use <see cref="T:System.Windows.Controls.Panel" /> elements to position and arrange child objects in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] applications.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Panel> contains a collection of <xref:System.Windows.UIElement> objects, which are in the <xref:System.Windows.Controls.Panel.Children%2A> property. Adding a <xref:System.Windows.UIElement> child to a <xref:System.Windows.Controls.Panel> implicitly adds it to the <xref:System.Windows.Controls.UIElementCollection> for the <xref:System.Windows.Controls.Panel> element.  
+A <xref:System.Windows.Controls.Panel> contains a collection of <xref:System.Windows.UIElement> objects, which are in the <xref:System.Windows.Controls.Panel.Children%2A> property. Adding a <xref:System.Windows.UIElement> child to a <xref:System.Windows.Controls.Panel> implicitly adds it to the <xref:System.Windows.Controls.UIElementCollection> for the <xref:System.Windows.Controls.Panel> element.  
+ 
+[!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides a comprehensive suite of derived <xref:System.Windows.Controls.Panel> implementations, enabling many complex layouts. If you want to implement new layout containers, use the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> and <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> methods. For a demonstration of how to use these methods, see [Create a Custom Content-Wrapping Panel Sample](http://go.microsoft.com/fwlink/?LinkID=159979).  
+ 
+<xref:System.Windows.Controls.Panel> elements do not receive mouse or stylus events if a <xref:System.Windows.Controls.Panel.Background%2A> is not defined. If you need to handle mouse or stylus events but do not want a background for your <xref:System.Windows.Controls.Panel>, use <xref:System.Windows.Media.Brushes.Transparent%2A>.  
+ 
+Panel elements do not receive focus by default. To compel a panel element to receive focus, set the <xref:System.Windows.UIElement.Focusable%2A> property to `true`.  
+ 
   
- [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides a comprehensive suite of derived <xref:System.Windows.Controls.Panel> implementations, enabling many complex layouts. If you want to implement new layout containers, use the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> and <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> methods. For a demonstration of how to use these methods, see [Create a Custom Content-Wrapping Panel Sample](http://go.microsoft.com/fwlink/?LinkID=159979).  
-  
- <xref:System.Windows.Controls.Panel> elements do not receive mouse or stylus events if a <xref:System.Windows.Controls.Panel.Background%2A> is not defined. If you need to handle mouse or stylus events but do not want a background for your <xref:System.Windows.Controls.Panel>, use <xref:System.Windows.Media.Brushes.Transparent%2A>.  
-  
- Panel elements do not receive focus by default. To compel a panel element to receive focus, set the <xref:System.Windows.UIElement.Focusable%2A> property to `true`.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.Panel.Children%2A> property to add two <xref:System.Windows.Controls.Button> objects to a <xref:System.Windows.Controls.StackPanel>.  
-  
- [!code-xml[StackPanel_snip#StackPanelExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/StackPanel_snip/CS/StackPanelExample.xaml#stackpanelexamplewholepage)]
- <!-- TODO: review snippet reference [!code-xml[StackPanel_snip#StackPanelExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/StackPanel_snip/XAML/StackPanelExample.xaml#stackpanelexamplewholepage)]  -->  
-  
- [!code-csharp[Stackpanel_Procedural_snip#StackPanelExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Stackpanel_Procedural_snip/CSharp/StackpanelExample.cs#stackpanelexamplewholepage)]
- [!code-vb[Stackpanel_Procedural_snip#StackPanelExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Stackpanel_Procedural_snip/visualbasic/stackpanelexample.vb#stackpanelexamplewholepage)]  
-  
+The following example shows how to use the <xref:System.Windows.Controls.Panel.Children%2A> property to add two <xref:System.Windows.Controls.Button> objects to a <xref:System.Windows.Controls.StackPanel>.  
+ 
+[!code-xml[StackPanel_snip#StackPanelExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/StackPanel_snip/CS/StackPanelExample.xaml#stackpanelexamplewholepage)]
+<!-- TODO: review snippet reference [!code-xml[StackPanel_snip#StackPanelExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/StackPanel_snip/XAML/StackPanelExample.xaml#stackpanelexamplewholepage)]  -->  
+ 
+[!code-csharp[Stackpanel_Procedural_snip#StackPanelExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Stackpanel_Procedural_snip/CSharp/StackpanelExample.cs#stackpanelexamplewholepage)]
+[!code-vb[Stackpanel_Procedural_snip#StackPanelExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Stackpanel_Procedural_snip/visualbasic/stackpanelexample.vb#stackpanelexamplewholepage)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -83,26 +83,26 @@
         <value>A <see cref="T:System.Windows.Media.Brush" />. This default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Panel> elements do not receive mouse or stylus events if a <xref:System.Windows.Controls.Panel.Background%2A> is not defined. If you need to handle mouse or stylus events but do not want a background for your <xref:System.Windows.Controls.Panel>, use <xref:System.Windows.Media.Brushes.Transparent%2A>.  
-  
+<xref:System.Windows.Controls.Panel> elements do not receive mouse or stylus events if a <xref:System.Windows.Controls.Panel.Background%2A> is not defined. If you need to handle mouse or stylus events but do not want a background for your <xref:System.Windows.Controls.Panel>, use <xref:System.Windows.Media.Brushes.Transparent%2A>.  
+ 
 <a name="dependencyPropertyInfo_Background"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Panel.BackgroundProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example sets the <xref:System.Windows.Controls.Panel.Background%2A> of a <xref:System.Windows.Controls.Grid> to a <xref:System.Windows.Media.RadialGradientBrush>.  
-  
- <!-- TODO: review snippet reference [!code-xml[PanelBackground#1](~/samples/snippets/xaml/VS_Snippets_Wpf/panelbackground/xaml/mainwindow.xaml#1)]  -->
- [!code-xml[PanelBackground#1](~/samples/snippets/csharp/VS_Snippets_Wpf/panelbackground/CS/mainwindow.xaml#1)]  
-  
+The following example sets the <xref:System.Windows.Controls.Panel.Background%2A> of a <xref:System.Windows.Controls.Grid> to a <xref:System.Windows.Media.RadialGradientBrush>.  
+ 
+<!-- TODO: review snippet reference [!code-xml[PanelBackground#1](~/samples/snippets/xaml/VS_Snippets_Wpf/panelbackground/xaml/mainwindow.xaml#1)]  -->
+[!code-xml[PanelBackground#1](~/samples/snippets/csharp/VS_Snippets_Wpf/panelbackground/CS/mainwindow.xaml#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,22 +146,22 @@
         <value>A <see cref="T:System.Windows.Controls.UIElementCollection" />. The default is an empty <see cref="T:System.Windows.Controls.UIElementCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.Panel.Children%2A> collection of a <xref:System.Windows.Controls.Panel> element can only consist of <xref:System.Windows.UIElement> objects. Adding a <xref:System.Windows.UIElement> child to a <xref:System.Windows.Controls.Panel> implicitly adds it to the <xref:System.Windows.Controls.UIElementCollection> for the <xref:System.Windows.Controls.Panel> element.  
+The <xref:System.Windows.Controls.Panel.Children%2A> collection of a <xref:System.Windows.Controls.Panel> element can only consist of <xref:System.Windows.UIElement> objects. Adding a <xref:System.Windows.UIElement> child to a <xref:System.Windows.Controls.Panel> implicitly adds it to the <xref:System.Windows.Controls.UIElementCollection> for the <xref:System.Windows.Controls.Panel> element.  
+ 
+Do not use this collection with derived <xref:System.Windows.Controls.Panel> classes; use the <xref:System.Windows.Controls.Panel.InternalChildren%2A> collection instead.  
+ 
+This property returns `null` if the <xref:System.Windows.Controls.Panel> is data bound.  
+ 
   
- Do not use this collection with derived <xref:System.Windows.Controls.Panel> classes; use the <xref:System.Windows.Controls.Panel.InternalChildren%2A> collection instead.  
-  
- This property returns `null` if the <xref:System.Windows.Controls.Panel> is data bound.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Controls.Panel.Children%2A> property to add a <xref:System.Windows.UIElement> child to a <xref:System.Windows.Controls.Panel> element.  
-  
- [!code-csharp[framesnips#FrameNavigateSetup](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameSnips/CSharp/Window1.xaml.cs#framenavigatesetup)]
- [!code-vb[framesnips#FrameNavigateSetup](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FrameSnips/visualbasic/window1.xaml.vb#framenavigatesetup)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Controls.Panel.Children%2A> property to add a <xref:System.Windows.UIElement> child to a <xref:System.Windows.Controls.Panel> element.  
+ 
+[!code-csharp[framesnips#FrameNavigateSetup](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameSnips/CSharp/Window1.xaml.cs#framenavigatesetup)]
+[!code-vb[framesnips#FrameNavigateSetup](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FrameSnips/visualbasic/window1.xaml.vb#framenavigatesetup)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,10 +187,10 @@
         <returns>An ordered collection of elements that have the specified logical parent.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the generated <xref:System.Windows.Controls.UIElementCollection> to cache information about child elements or to perform incremental layout updates.  
-  
+Use the generated <xref:System.Windows.Controls.UIElementCollection> to cache information about child elements or to perform incremental layout updates.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,10 +258,10 @@
           <see langword="true" /> if the orientation of the <see cref="T:System.Windows.Controls.Panel" /> is in one dimension; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Among predefined panel elements, only <xref:System.Windows.Controls.StackPanel> returns `true`, because its orientation is in a single dimension.  Subclasses of <xref:System.Windows.Controls.Panel> can override this property.  
-  
+Among predefined panel elements, only <xref:System.Windows.Controls.StackPanel> returns `true`, because its orientation is in a single dimension.  Subclasses of <xref:System.Windows.Controls.Panel> can override this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -284,10 +284,10 @@
           <see langword="true" /> if the orientation of the <see cref="T:System.Windows.Controls.Panel" /> is in one dimension; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Among predefined panel elements, only <xref:System.Windows.Controls.StackPanel> returns `true`, because its orientation is in a single dimension.  
-  
+Among predefined panel elements, only <xref:System.Windows.Controls.StackPanel> returns `true`, because its orientation is in a single dimension.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -309,12 +309,12 @@
         <value>An ordered collection of <see cref="T:System.Windows.UIElement" /> objects. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned collection includes items that are added directly in code, and also items that are generated by data binding.  
-  
- Classes that are derived from <xref:System.Windows.Controls.Panel> should use this property, instead of the <xref:System.Windows.Controls.Panel.Children%2A> property, for internal overrides such as <xref:System.Windows.UIElement.MeasureCore%2A> and <xref:System.Windows.UIElement.ArrangeCore%2A>.  
-  
+The returned collection includes items that are added directly in code, and also items that are generated by data binding.  
+ 
+Classes that are derived from <xref:System.Windows.Controls.Panel> should use this property, instead of the <xref:System.Windows.Controls.Panel.Children%2A> property, for internal overrides such as <xref:System.Windows.UIElement.MeasureCore%2A> and <xref:System.Windows.UIElement.ArrangeCore%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,31 +345,31 @@
           <see langword="true" /> if this instance of <see cref="T:System.Windows.Controls.Panel" /> is an items host; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot bind data to this property.  
-  
+You cannot bind data to this property.  
+ 
 <a name="dependencyPropertyInfo_IsItemsHost"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Panel>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses a <xref:System.Windows.Controls.ControlTemplate> to create a horizontal <xref:System.Windows.Controls.ListBox>. The horizontal <xref:System.Windows.Controls.StackPanel> is specified within the <xref:System.Windows.Controls.ControlTemplate>. The <xref:System.Windows.Controls.Panel.IsItemsHost%2A> property is set to `true` on the <xref:System.Windows.Controls.StackPanel>, which indicates that the generated items should be placed in the panel. When you specify it this way, the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> cannot be replaced by the user of the control without using a <xref:System.Windows.Controls.ControlTemplate>. Therefore, do this only if you know that you do not want the panel to be replaced without the use of a template.  
-  
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample/CS/window1.xaml#listboxct)]  -->
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/xaml/VS_Snippets_Wpf/StylingIntroSample/xaml/window1.xaml#listboxct)]  -->  
-  
- Alternatively, you can set the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A?displayProperty=fullName> property. The following example sets the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> in a <xref:System.Windows.Style> of a <xref:System.Windows.Controls.ListBox>.  
-  
- [!code-xml[listboxhorizontal#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxHorizontal/CS/window1.xaml#1)]
- <!-- TODO: review snippet reference [!code-xml[listboxhorizontal#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ListBoxHorizontal/xaml/window1.xaml#1)]  -->  
-  
+The following example uses a <xref:System.Windows.Controls.ControlTemplate> to create a horizontal <xref:System.Windows.Controls.ListBox>. The horizontal <xref:System.Windows.Controls.StackPanel> is specified within the <xref:System.Windows.Controls.ControlTemplate>. The <xref:System.Windows.Controls.Panel.IsItemsHost%2A> property is set to `true` on the <xref:System.Windows.Controls.StackPanel>, which indicates that the generated items should be placed in the panel. When you specify it this way, the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> cannot be replaced by the user of the control without using a <xref:System.Windows.Controls.ControlTemplate>. Therefore, do this only if you know that you do not want the panel to be replaced without the use of a template.  
+ 
+<!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample/CS/window1.xaml#listboxct)]  -->
+<!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/xaml/VS_Snippets_Wpf/StylingIntroSample/xaml/window1.xaml#listboxct)]  -->  
+ 
+Alternatively, you can set the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A?displayProperty=fullName> property. The following example sets the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> in a <xref:System.Windows.Style> of a <xref:System.Windows.Controls.ListBox>.  
+ 
+[!code-xml[listboxhorizontal#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxHorizontal/CS/window1.xaml#1)]
+<!-- TODO: review snippet reference [!code-xml[listboxhorizontal#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ListBoxHorizontal/xaml/window1.xaml#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -426,10 +426,10 @@
         <value>The <see cref="T:System.Windows.Controls.Orientation" /> of the panel. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Subclasses of <xref:System.Windows.Controls.Panel> can override this property. If <xref:System.Windows.Controls.Panel.HasLogicalOrientation%2A> is `false`, this property value should be ignored.  
-  
+Subclasses of <xref:System.Windows.Controls.Panel> can override this property. If <xref:System.Windows.Controls.Panel.HasLogicalOrientation%2A> is `false`, this property value should be ignored.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -451,10 +451,10 @@
         <value>The <see cref="T:System.Windows.Controls.Orientation" /> of the panel. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Controls.Panel.HasLogicalOrientation%2A> is `false`, this property value should be ignored.  
-  
+If <xref:System.Windows.Controls.Panel.HasLogicalOrientation%2A> is `false`, this property value should be ignored.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -525,10 +525,10 @@
         <summary>Invoked when the <see cref="T:System.Windows.Media.VisualCollection" /> of a visual object is modified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Panel.ZIndex%2A> values are automatically recalculated when child elements are added to or removed from the collection.  
-  
+<xref:System.Windows.Controls.Panel.ZIndex%2A> values are automatically recalculated when child elements are added to or removed from the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -555,21 +555,21 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.Panel.ZIndex" /> attached property for a given element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The greater the `value` of a given `element`, the more likely the `element` is to appear in the foreground. Likewise, if an `element` has a relatively low `value`, the `element` will likely appear in the background. For example, an `element` that has a `value` of 5 will appear above an `element` that has a `value` of 4, which in turn will appear above an `element` that has a value of 3, and so on. Negative values are allowed, and they continue this precedence pattern.  
+The greater the `value` of a given `element`, the more likely the `element` is to appear in the foreground. Likewise, if an `element` has a relatively low `value`, the `element` will likely appear in the background. For example, an `element` that has a `value` of 5 will appear above an `element` that has a `value` of 4, which in turn will appear above an `element` that has a value of 3, and so on. Negative values are allowed, and they continue this precedence pattern.  
+ 
+Members of a <xref:System.Windows.Controls.Panel.Children%2A> collection that have equal <xref:System.Windows.Controls.Panel.ZIndex%2A> values are rendered in the order in which they appear in the visual tree. You can determine the index position of a child by iterating the members of the <xref:System.Windows.Controls.Panel.Children%2A> collection.  
+ 
   
- Members of a <xref:System.Windows.Controls.Panel.Children%2A> collection that have equal <xref:System.Windows.Controls.Panel.ZIndex%2A> values are rendered in the order in which they appear in the visual tree. You can determine the index position of a child by iterating the members of the <xref:System.Windows.Controls.Panel.Children%2A> collection.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates in code how to set the value of the <xref:System.Windows.Controls.Panel.ZIndex%2A> property (by using the <xref:System.Windows.Controls.Panel.SetZIndex%2A> method).  
-  
- [!code-cpp[canvasz-order#2](~/samples/snippets/cpp/VS_Snippets_Wpf/CanvasZ-Order/CPP/CanvasZ-Order.cpp#2)]
- [!code-csharp[canvasz-order#2](~/samples/snippets/csharp/VS_Snippets_Wpf/CanvasZ-Order/Csharp/CanvasZ-Order.cs#2)]
- [!code-vb[canvasz-order#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CanvasZ-Order/VisualBasic/CanvasZ-Order.vb#2)]  
-  
+The following example demonstrates in code how to set the value of the <xref:System.Windows.Controls.Panel.ZIndex%2A> property (by using the <xref:System.Windows.Controls.Panel.SetZIndex%2A> method).  
+ 
+[!code-cpp[canvasz-order#2](~/samples/snippets/cpp/VS_Snippets_Wpf/CanvasZ-Order/CPP/CanvasZ-Order.cpp#2)]
+[!code-csharp[canvasz-order#2](~/samples/snippets/csharp/VS_Snippets_Wpf/CanvasZ-Order/Csharp/CanvasZ-Order.cs#2)]
+[!code-vb[canvasz-order#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CanvasZ-Order/VisualBasic/CanvasZ-Order.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The element is <see langword="null" />.</exception>

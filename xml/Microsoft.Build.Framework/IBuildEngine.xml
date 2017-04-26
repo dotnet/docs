@@ -40,14 +40,14 @@
           <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `targetNames`, `globalProperties`, and `targetOutputs` parameters can be `null`.  
-  
- If no targets are specified, [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] builds the default targets of the project.  
-  
- Target outputs are returned as <xref:Microsoft.Build.Framework.ITaskItem> arrays indexed by target name.  
-  
+The `targetNames`, `globalProperties`, and `targetOutputs` parameters can be `null`.  
+ 
+If no targets are specified, [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] builds the default targets of the project.  
+ 
+Target outputs are returned as <xref:Microsoft.Build.Framework.ITaskItem> arrays indexed by target name.  
+ 
  ]]></format>
         </remarks>
       </Docs>

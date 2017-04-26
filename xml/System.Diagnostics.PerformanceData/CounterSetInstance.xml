@@ -18,15 +18,15 @@
     <summary>Creates an instance of the logical counters defined in the <see cref="T:System.Diagnostics.PerformanceData.CounterSet" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance%2A?displayProperty=fullName> method returns an instance of this class.  
+The <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance%2A?displayProperty=fullName> method returns an instance of this class.  
+ 
   
-   
-  
+ 
 ## Examples  
- For an example, see <xref:System.Diagnostics.PerformanceData>.  
-  
+For an example, see <xref:System.Diagnostics.PerformanceData>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,15 +48,15 @@
         <value>A collection of the counter data contained in the counter set instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to index the counters in the counter set instance.  
+Use this property to index the counters in the counter set instance.  
+ 
   
-   
-  
+ 
 ## Examples  
- For an example, see <xref:System.Diagnostics.PerformanceData>.  
-  
+For an example, see <xref:System.Diagnostics.PerformanceData>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

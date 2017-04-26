@@ -25,28 +25,28 @@
     <summary>Defines functionality that enables transformations in a [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] plane. Transformations include rotation (<see cref="T:System.Windows.Media.RotateTransform" />), scale (<see cref="T:System.Windows.Media.ScaleTransform" />), skew (<see cref="T:System.Windows.Media.SkewTransform" />), and translation (<see cref="T:System.Windows.Media.TranslateTransform" />). This class hierarchy differs from the <see cref="T:System.Windows.Media.Matrix" /> structure because it is a class and it supports animation and enumeration semantics.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Media.MatrixTransform> class to create custom transformations that are not provided by the <xref:System.Windows.Media.RotateTransform>, <xref:System.Windows.Media.ScaleTransform>, <xref:System.Windows.Media.SkewTransform>, and <xref:System.Windows.Media.TranslateTransform> classes.  
-  
- A [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] x-y plane uses a 3x3 matrix for transformations. You can multiply affine transformation matrices to form linear transformations, such as rotation and skew (shear) that are followed by translation.  
-  
- An affine transformation matrix has its final column equal to (0, 0, 1); therefore, you only have to specify the members in the first two columns.  
-  
- A [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] <xref:System.Windows.Media.Matrix> has the following structure:  
-  
+Use the <xref:System.Windows.Media.MatrixTransform> class to create custom transformations that are not provided by the <xref:System.Windows.Media.RotateTransform>, <xref:System.Windows.Media.ScaleTransform>, <xref:System.Windows.Media.SkewTransform>, and <xref:System.Windows.Media.TranslateTransform> classes.  
+ 
+A [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] x-y plane uses a 3x3 matrix for transformations. You can multiply affine transformation matrices to form linear transformations, such as rotation and skew (shear) that are followed by translation.  
+ 
+An affine transformation matrix has its final column equal to (0, 0, 1); therefore, you only have to specify the members in the first two columns.  
+ 
+A [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] <xref:System.Windows.Media.Matrix> has the following structure:  
+ 
 ||||  
 |-|-|-|  
 |<xref:System.Windows.Media.Matrix.M11%2A>|<xref:System.Windows.Media.Matrix.M12%2A>|0|  
 |<xref:System.Windows.Media.Matrix.M21%2A>|<xref:System.Windows.Media.Matrix.M22%2A>|0|  
 |<xref:System.Windows.Media.Matrix.OffsetX%2A>|<xref:System.Windows.Media.Matrix.OffsetY%2A>|1|  
-  
- The members in the last row, <xref:System.Windows.Media.Matrix.OffsetX%2A> and <xref:System.Windows.Media.Matrix.OffsetY%2A>, represent translation values.  
-  
- Methods and properties usually specify the transformation matrix as a vector that has only six members; they are as follows:  
-  
- (<xref:System.Windows.Media.Matrix.M11%2A>, <xref:System.Windows.Media.Matrix.M12%2A>, <xref:System.Windows.Media.Matrix.M21%2A>, <xref:System.Windows.Media.Matrix.M22%2A>, <xref:System.Windows.Media.Matrix.OffsetX%2A>, <xref:System.Windows.Media.Matrix.OffsetY%2A>)  
-  
+ 
+The members in the last row, <xref:System.Windows.Media.Matrix.OffsetX%2A> and <xref:System.Windows.Media.Matrix.OffsetY%2A>, represent translation values.  
+ 
+Methods and properties usually specify the transformation matrix as a vector that has only six members; they are as follows:  
+ 
+(<xref:System.Windows.Media.Matrix.M11%2A>, <xref:System.Windows.Media.Matrix.M12%2A>, <xref:System.Windows.Media.Matrix.M21%2A>, <xref:System.Windows.Media.Matrix.M22%2A>, <xref:System.Windows.Media.Matrix.OffsetX%2A>, <xref:System.Windows.Media.Matrix.OffsetY%2A>)  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,14 +69,14 @@
         <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object returns <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- When this method copies dependency properties, it copies resource references and data bindings although they might no longer resolve. It does not copy animations or their current values.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+When this method copies dependency properties, it copies resource references and data bindings although they might no longer resolve. It does not copy animations or their current values.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,12 +99,12 @@
         <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object is <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,18 +126,18 @@
         <value>An identity transform.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An identity transform (identity matrix) that has the following configuration:  
-  
+An identity transform (identity matrix) that has the following configuration:  
+ 
 ||||  
 |-|-|-|  
 |1|0|0|  
 |0|1|0|  
 |0|0|1|  
-  
- When you apply an identity matrix, it does not change the object. It is like multiplying by `1`.  
-  
+ 
+When you apply an identity matrix, it does not change the object. It is like multiplying by `1`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,10 +181,10 @@
         <returns>A new transform that is constructed from the specified string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the XAML Attribute Usage section of the <xref:System.Windows.Media.MatrixTransform> class page.  
-  
+For more information, see the XAML Attribute Usage section of the <xref:System.Windows.Media.MatrixTransform> class page.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,10 +235,10 @@
           <see langword="true" /> if <paramref name="inPoint" /> was transformed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike the <xref:System.Windows.Media.GeneralTransform.Transform%2A> method, this method does not throw an exception if the transformation is unsuccessful.  
-  
+Unlike the <xref:System.Windows.Media.GeneralTransform.Transform%2A> method, this method does not throw an exception if the transformation is unsuccessful.  
+ 
  ]]></format>
         </remarks>
       </Docs>

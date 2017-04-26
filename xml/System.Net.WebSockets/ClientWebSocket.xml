@@ -27,10 +27,10 @@
     <summary>Provides a client for connecting to WebSocket services.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some of the classes and class elements in the <xref:System.Net.WebSockets> namespace are supported on Windows 7, Windows Vista SP2, and Windows Server 2008. However, the only public implementations of client and server WebSockets are supported on Windows 8 and Windows Server 2012. The class elements in the <xref:System.Net.WebSockets> namespace that are supported on Windows 7, Windows Vista SP2, and Windows Server 2008 are abstract class elements. This allows an application developer to inherit and extend these abstract class classes and class elements with an actual implementation of client WebSockets.  
-  
+Some of the classes and class elements in the <xref:System.Net.WebSockets> namespace are supported on Windows 7, Windows Vista SP2, and Windows Server 2008. However, the only public implementations of client and server WebSockets are supported on Windows 8 and Windows Server 2012. The class elements in the <xref:System.Net.WebSockets> namespace that are supported on Windows 7, Windows Vista SP2, and Windows Server 2008 are abstract class elements. This allows an application developer to inherit and extend these abstract class classes and class elements with an actual implementation of client WebSockets.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -135,10 +135,10 @@
  The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the <xref:System.Net.WebSockets.ClientWebSocket> instance is closed.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the <xref:System.Net.WebSockets.ClientWebSocket> instance is closed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,10 +187,10 @@
  The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the output on the <xref:System.Net.WebSockets.ClientWebSocket> instance is closed.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the output on the <xref:System.Net.WebSockets.ClientWebSocket> instance is closed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,14 +295,14 @@
  The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.WebSockets.ClientWebSocket.ConnectAsync%2A> method initiates the WebSocket handshake with a remote network destination, and then negotiates the sub-protocol.  
-  
- For plain WebSocket connections, use the `ws://` scheme in the uri. For secure WebSocket connections over TLS/SSL, use the `wss://` scheme.  
-  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the connect request on the <xref:System.Net.WebSockets.ClientWebSocket> instance has completed.  
-  
+The <xref:System.Net.WebSockets.ClientWebSocket.ConnectAsync%2A> method initiates the WebSocket handshake with a remote network destination, and then negotiates the sub-protocol.  
+ 
+For plain WebSocket connections, use the `ws://` scheme in the uri. For secure WebSocket connections over TLS/SSL, use the `wss://` scheme.  
+ 
+This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the connect request on the <xref:System.Net.WebSockets.ClientWebSocket> instance has completed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -397,12 +397,12 @@
  The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the receive request on the <xref:System.Net.WebSockets.ClientWebSocket> instance has completed.  
-  
- Exactly one send and one receive is supported on each <xref:System.Net.WebSockets.ClientWebSocket> object in parallel.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the receive request on the <xref:System.Net.WebSockets.ClientWebSocket> instance has completed.  
+ 
+Exactly one send and one receive is supported on each <xref:System.Net.WebSockets.ClientWebSocket> object in parallel.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -443,12 +443,12 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the send request on the <xref:System.Net.WebSockets.ClientWebSocket> instance has completed.  
-  
- Exactly one send and one receive is supported on each <xref:System.Net.WebSockets.ClientWebSocket> object in parallel.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the send request on the <xref:System.Net.WebSockets.ClientWebSocket> instance has completed.  
+ 
+Exactly one send and one receive is supported on each <xref:System.Net.WebSockets.ClientWebSocket> object in parallel.  
+ 
  ]]></format>
         </remarks>
       </Docs>

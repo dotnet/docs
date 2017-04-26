@@ -14,31 +14,31 @@
     <summary>Converts between a string and the standard infinite <see cref="T:System.TimeSpan" /> value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type, like all the other configuration converter types, converts strings found in the configuration file to and from the related strongly typed properties.  
+This type, like all the other configuration converter types, converts strings found in the configuration file to and from the related strongly typed properties.  
+ 
+In particular the <xref:System.Configuration.InfiniteTimeSpanConverter> converts the <xref:System.String> value "infinite" assigned to a configuration property to the standard infinite <xref:System.TimeSpan> and vice versa. The infinite <xref:System.TimeSpan> value is represented by the <xref:System.TimeSpan> enumeration value.  
+ 
+This converter is used with <xref:System.TimeSpan> properties. An infinite value is persisted as the "infinite" string.  
+ 
   
- In particular the <xref:System.Configuration.InfiniteTimeSpanConverter> converts the <xref:System.String> value "infinite" assigned to a configuration property to the standard infinite <xref:System.TimeSpan> and vice versa. The infinite <xref:System.TimeSpan> value is represented by the <xref:System.TimeSpan> enumeration value.  
-  
- This converter is used with <xref:System.TimeSpan> properties. An infinite value is persisted as the "infinite" string.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to define a custom section property that uses the <xref:System.Configuration.InfiniteTimeSpanConverter> class.  
-  
- For the complete example code that implements the custom section, refer to the <xref:System.Configuration.ConfigurationConverterBase> class.  
-  
- [!code-csharp[System.Configuration.ConfigurationConvertersCustomSection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationConvertersCustomSection/CS/ConfigurationConvertersCustomSection.cs#3)]
- [!code-vb[System.Configuration.ConfigurationConvertersCustomSection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationConvertersCustomSection/VB/ConfigurationConvertersCustomSection.vb#3)]  
-  
- The following example code shows how to access the previous custom section property.  
-  
- [!code-csharp[System.Configuration.InfiniteTimeSpanConverter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.InfiniteTimeSpanConverter/CS/InfiniteTimeSpanConverter.cs#1)]
- [!code-vb[System.Configuration.InfiniteTimeSpanConverter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.InfiniteTimeSpanConverter/VB/InfiniteTimeSpanConverter.vb#1)]  
-  
- The following is a configuration excerpt as used by the previous example.  
-  
+The following code example shows how to define a custom section property that uses the <xref:System.Configuration.InfiniteTimeSpanConverter> class.  
+ 
+For the complete example code that implements the custom section, refer to the <xref:System.Configuration.ConfigurationConverterBase> class.  
+ 
+[!code-csharp[System.Configuration.ConfigurationConvertersCustomSection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationConvertersCustomSection/CS/ConfigurationConvertersCustomSection.cs#3)]
+[!code-vb[System.Configuration.ConfigurationConvertersCustomSection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationConvertersCustomSection/VB/ConfigurationConvertersCustomSection.vb#3)]  
+ 
+The following example code shows how to access the previous custom section property.  
+ 
+[!code-csharp[System.Configuration.InfiniteTimeSpanConverter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.InfiniteTimeSpanConverter/CS/InfiniteTimeSpanConverter.cs#1)]
+[!code-vb[System.Configuration.InfiniteTimeSpanConverter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.InfiniteTimeSpanConverter/VB/InfiniteTimeSpanConverter.vb#1)]  
+ 
+The following is a configuration excerpt as used by the previous example.  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
@@ -55,7 +55,7 @@
     <CustomSection fileName="default.txt" maxIdleTime="90" timeDelay="infinite"/>  
 </configuration>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,10 +74,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.InfiniteTimeSpanConverter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Normally, you use the converter types provided by the system. The only time you need to use the <xref:System.Configuration.InfiniteTimeSpanConverter.%23ctor%2A> constructor is when you create your own conversion type.  
-  
+Normally, you use the converter types provided by the system. The only time you need to use the <xref:System.Configuration.InfiniteTimeSpanConverter.%23ctor%2A> constructor is when you create your own conversion type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,10 +107,10 @@
         <returns>The <see cref="F:System.TimeSpan.MaxValue" />, if the <paramref name="data" /> parameter is the <see cref="T:System.String" /> infinite; otherwise, the <see cref="T:System.TimeSpan" /> representing the <paramref name="data" /> parameter in minutes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The system uses the <xref:System.Configuration.InfiniteTimeSpanConverter.ConvertFrom%2A> method when reading from a configuration file to convert a <xref:System.String> value to <xref:System.TimeSpan> or the <xref:System.String> "infinite" to <xref:System.TimeSpan.MaxValue>.  
-  
+The system uses the <xref:System.Configuration.InfiniteTimeSpanConverter.ConvertFrom%2A> method when reading from a configuration file to convert a <xref:System.String> value to <xref:System.TimeSpan> or the <xref:System.String> "infinite" to <xref:System.TimeSpan.MaxValue>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,12 +142,12 @@
         <returns>The <see cref="T:System.String" /> "infinite", if the <paramref name="value" /> parameter is <see cref="F:System.TimeSpan.MaxValue" />; otherwise, the <see cref="T:System.String" /> representing the <paramref name="value" /> parameter in minutes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The system uses the <xref:System.Configuration.InfiniteTimeSpanConverter.ConvertTo%2A> method when writing an attribute to a configuration file to convert a <xref:System.TimeSpan> object to a <xref:System.String> object.  
-  
- The system uses the <xref:System.Configuration.InfiniteTimeSpanConverter.ConvertTo%2A> method when writing to a configuration file to convert a <xref:System.TimeSpan> value or <xref:System.TimeSpan> to a <xref:System.String>.  
-  
+The system uses the <xref:System.Configuration.InfiniteTimeSpanConverter.ConvertTo%2A> method when writing an attribute to a configuration file to convert a <xref:System.TimeSpan> object to a <xref:System.String> object.  
+ 
+The system uses the <xref:System.Configuration.InfiniteTimeSpanConverter.ConvertTo%2A> method when writing to a configuration file to convert a <xref:System.TimeSpan> value or <xref:System.TimeSpan> to a <xref:System.String>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

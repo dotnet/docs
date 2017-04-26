@@ -23,10 +23,10 @@
     <summary>Represents a network endpoint as a host name or a string representation of an IP address and a port number.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.DnsEndPoint> class contains a host name or an IP address and remote port information needed by an application to connect to a service on a host. By combining the host name or IP address and port number of a service, the <xref:System.Net.DnsEndPoint> class forms a connection point to a service.  
-  
+The <xref:System.Net.DnsEndPoint> class contains a host name or an IP address and remote port information needed by an application to connect to a service on a host. By combining the host name or IP address and port number of a service, the <xref:System.Net.DnsEndPoint> class forms a connection point to a service.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,12 +59,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.DnsEndPoint" /> class with the host name or string representation of an IP address and a port number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.DnsEndPoint.%23ctor%28System.String%2CSystem.Int32%29> constructor can be used to initialize a <xref:System.Net.DnsEndPoint> class using either a host name or a string that represents an IP address and a port. This constructor sets the <xref:System.Net.DnsEndPoint.AddressFamily%2A> property to <xref:System.Net.Sockets.AddressFamily>.  
-  
- When using this constructor with a host name rather than a string representation of an IP address, the address family of the <xref:System.Net.DnsEndPoint> will remain <xref:System.Net.Sockets.AddressFamily> even after use. The <xref:System.Net.DnsEndPoint.AddressFamily%2A> property of any <xref:System.Net.Sockets.Socket> that is created by calls to the <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method will be the address family of the first address to which a connection can be successfully established (not necessarily the first address to be resolved).  
-  
+The <xref:System.Net.DnsEndPoint.%23ctor%28System.String%2CSystem.Int32%29> constructor can be used to initialize a <xref:System.Net.DnsEndPoint> class using either a host name or a string that represents an IP address and a port. This constructor sets the <xref:System.Net.DnsEndPoint.AddressFamily%2A> property to <xref:System.Net.Sockets.AddressFamily>.  
+ 
+When using this constructor with a host name rather than a string representation of an IP address, the address family of the <xref:System.Net.DnsEndPoint> will remain <xref:System.Net.Sockets.AddressFamily> even after use. The <xref:System.Net.DnsEndPoint.AddressFamily%2A> property of any <xref:System.Net.Sockets.Socket> that is created by calls to the <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method will be the address family of the first address to which a connection can be successfully established (not necessarily the first address to be resolved).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="host" /> parameter contains an empty string.</exception>
@@ -107,12 +107,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.DnsEndPoint" /> class with the host name or string representation of an IP address, a port number, and an address family.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.DnsEndPoint.%23ctor%28System.String%2CSystem.Int32%2CSystem.Net.Sockets.AddressFamily%29> constructor can be used to initialize a <xref:System.Net.DnsEndPoint> class using either a host name or a string that represents an IP address, a port, and an address family.  
-  
- When using the constructor with a host name rather than a string representation of an IP address, the address family restricts DNS resolution to prefer addresses of the specified address family value. When using the constructor with the address family specified as <xref:System.Net.Sockets.AddressFamily>, the address family of the <xref:System.Net.DnsEndPoint> will remain <xref:System.Net.Sockets.AddressFamily> even after use. The <xref:System.Net.DnsEndPoint.AddressFamily%2A> property of any <xref:System.Net.Sockets.Socket> that is created by calls to the <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method will be the address family of the first address to which a connection can be successfully established (not necessarily the first address to be resolved).  
-  
+The <xref:System.Net.DnsEndPoint.%23ctor%28System.String%2CSystem.Int32%2CSystem.Net.Sockets.AddressFamily%29> constructor can be used to initialize a <xref:System.Net.DnsEndPoint> class using either a host name or a string that represents an IP address, a port, and an address family.  
+ 
+When using the constructor with a host name rather than a string representation of an IP address, the address family restricts DNS resolution to prefer addresses of the specified address family value. When using the constructor with the address family specified as <xref:System.Net.Sockets.AddressFamily>, the address family of the <xref:System.Net.DnsEndPoint> will remain <xref:System.Net.Sockets.AddressFamily> even after use. The <xref:System.Net.DnsEndPoint.AddressFamily%2A> property of any <xref:System.Net.Sockets.Socket> that is created by calls to the <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method will be the address family of the first address to which a connection can be successfully established (not necessarily the first address to be resolved).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="host" /> parameter contains an empty string.  
@@ -155,10 +155,10 @@
         <value>One of the <see cref="T:System.Net.Sockets.AddressFamily" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.DnsEndPoint.AddressFamily%2A> property indicates the address family for an instance of the <xref:System.Net.DnsEndPoint> class.  
-  
+The <xref:System.Net.DnsEndPoint.AddressFamily%2A> property indicates the address family for an instance of the <xref:System.Net.DnsEndPoint> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,10 +194,10 @@
           <see langword="true" /> if the two <see cref="T:System.Net.DnsEndPoint" /> instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.DnsEndPoint.Equals%2A> method compares the current <xref:System.Net.DnsEndPoint> instance with the `comparand` parameter and returns `true` if the two instances contain the same endpoint.  
-  
+The <xref:System.Net.DnsEndPoint.Equals%2A> method compares the current <xref:System.Net.DnsEndPoint> instance with the `comparand` parameter and returns `true` if the two instances contain the same endpoint.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,10 +229,10 @@
         <returns>An integer hash value for the <see cref="T:System.Net.DnsEndPoint" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.DnsEndPoint.GetHashCode%2A> method returns a hash code of the <xref:System.Net.DnsEndPoint>. This value can be used as a key in hash tables.  
-  
+The <xref:System.Net.DnsEndPoint.GetHashCode%2A> method returns a hash code of the <xref:System.Net.DnsEndPoint>. This value can be used as a key in hash tables.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,10 +263,10 @@
         <value>A host name or string representation of an IP address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.DnsEndPoint.Host%2A> property indicates the host name or string representation of the IP address for an instance of the <xref:System.Net.DnsEndPoint> class.  
-  
+The <xref:System.Net.DnsEndPoint.Host%2A> property indicates the host name or string representation of the IP address for an instance of the <xref:System.Net.DnsEndPoint> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,10 +325,10 @@
         <returns>A string containing the address family, host name or IP address string, and the port number of the specified <see cref="T:System.Net.DnsEndPoint" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.DnsEndPoint.ToString%2A> method returns a string that contains the address family, the host name or IP address string, and the port number.  
-  
+The <xref:System.Net.DnsEndPoint.ToString%2A> method returns a string that contains the address family, the host name or IP address string, and the port number.  
+ 
  ]]></format>
         </remarks>
       </Docs>

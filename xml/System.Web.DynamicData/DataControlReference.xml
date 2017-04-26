@@ -14,13 +14,13 @@
     <summary>Enables the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> to declaratively define data controls that it manages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows the markup from a Dynamic Data page template that connects the <xref:System.Web.DynamicData.DynamicDataManager> to a <xref:System.Web.UI.WebControls.FormView> control.  
-  
+The following example shows the markup from a Dynamic Data page template that connects the <xref:System.Web.DynamicData.DynamicDataManager> to a <xref:System.Web.UI.WebControls.FormView> control.  
+ 
 > [!NOTE]
 >  Some markup is removed for clarity.  
-  
+ 
 ```  
 <asp:DynamicDataManager ID="DynamicDataManager1" runat="server"   
     AutoLoadForeignKeys="true">  
@@ -41,7 +41,7 @@
   </ContentTemplate>  
 </asp:UpdatePanel>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DataControlReference" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [ASP.NET Dynamic Data Infrastructure](http://msdn.microsoft.com/library/161bbf29-a0b1-4034-b42f-e8b7a42f8bcf)  
-  
+[ASP.NET Dynamic Data Infrastructure](http://msdn.microsoft.com/library/161bbf29-a0b1-4034-b42f-e8b7a42f8bcf)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,13 +99,13 @@
         <value>The ID of the data-bound control that is managed by the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows the markup from a Dynamic Data page template that connects the <xref:System.Web.DynamicData.DynamicDataManager> control to a <xref:System.Web.UI.WebControls.FormView> control. The <xref:System.Web.DynamicData.DataControlReference.ControlID%2A> property is set to "FormView1".  
-  
+The following example shows the markup from a Dynamic Data page template that connects the <xref:System.Web.DynamicData.DynamicDataManager> control to a <xref:System.Web.UI.WebControls.FormView> control. The <xref:System.Web.DynamicData.DataControlReference.ControlID%2A> property is set to "FormView1".  
+ 
 > [!NOTE]
 >  Some markup is removed for clarity.  
-  
+ 
 ```  
 <asp:DynamicDataManager ID="DynamicDataManager1" runat="server"   
     AutoLoadForeignKeys="true">  
@@ -127,7 +127,7 @@
 </asp:UpdatePanel>  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,10 +173,10 @@
         <returns>The literal string <c>DataControl:</c> that has the value of the <see cref="P:System.Web.DynamicData.DataControlReference.ControlID" /> property appended to it.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.DynamicData.DataControlReference.ControlID%2A> property is empty or `null`, the literal string `DataControl` is returned.  
-  
+If the <xref:System.Web.DynamicData.DataControlReference.ControlID%2A> property is empty or `null`, the literal string `DataControl` is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -23,10 +23,10 @@
     <summary>Extends the <see cref="T:System.ComponentModel.IBindingList" /> interface by providing advanced sorting and filtering capabilities.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With the <xref:System.ComponentModel.IBindingListView> interface, you implement advanced sorting as a set of property descriptor-direction pairs. You implement filtering as a string to be interpreted by the data source implementation. The <xref:System.ComponentModel.IBindingListView> interface is implemented by the <xref:System.Windows.Forms.BindingSource> class.  
-  
+With the <xref:System.ComponentModel.IBindingListView> interface, you implement advanced sorting as a set of property descriptor-direction pairs. You implement filtering as a string to be interpreted by the data source implementation. The <xref:System.ComponentModel.IBindingListView> interface is implemented by the <xref:System.Windows.Forms.BindingSource> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,10 +56,10 @@
         <summary>Sorts the data source based on the given <see cref="T:System.ComponentModel.ListSortDescriptionCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.ListSortDescriptionCollection> is a read-only collection, once constructed.  
-  
+The <xref:System.ComponentModel.ListSortDescriptionCollection> is a read-only collection, once constructed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,10 +86,10 @@
         <value>The string used to filter items out in the item collection returned by the data source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Your implementation of the <xref:System.ComponentModel.IBindingListView.Filter%2A> property should exhibit the following behavior when the <xref:System.ComponentModel.IBindingListView.Filter%2A> property is set: The data source returns only the items that meet the filter criteria when the list is accessed by item index or when the list is enumerated. The definition of the filter string is dependent on the data-source implementation, but the behavior associated with setting the filter should be modeled on <xref:System.Data.DataColumn.Expression%2A?displayProperty=fullName>.  
-  
+Your implementation of the <xref:System.ComponentModel.IBindingListView.Filter%2A> property should exhibit the following behavior when the <xref:System.ComponentModel.IBindingListView.Filter%2A> property is set: The data source returns only the items that meet the filter criteria when the list is accessed by item index or when the list is enumerated. The definition of the filter string is dependent on the data-source implementation, but the behavior associated with setting the filter should be modeled on <xref:System.Data.DataColumn.Expression%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,10 +116,10 @@
         <summary>Removes the current filter applied to the data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With the <xref:System.ComponentModel.IBindingListView> type, you implement filtering as a string to be interpreted by the data source implementation.  
-  
+With the <xref:System.ComponentModel.IBindingListView> type, you implement filtering as a string to be interpreted by the data source implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,10 +146,10 @@
         <value>The <see cref="T:System.ComponentModel.ListSortDescriptionCollection" /> currently applied to the data source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.ListSortDescriptionCollection> is a read-only collection, once constructed.  
-  
+The <xref:System.ComponentModel.ListSortDescriptionCollection> is a read-only collection, once constructed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,10 +177,10 @@
           <see langword="true" /> if the data source supports advanced sorting; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Advanced sorting refers to the ability to sort by multiple columns.  
-  
+Advanced sorting refers to the ability to sort by multiple columns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
           <see langword="true" /> if the data source supports filtering; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With the <xref:System.ComponentModel.IBindingListView.SupportsFiltering%2A> property, you implement filtering as a string to be interpreted by the data source implementation.  
-  
+With the <xref:System.ComponentModel.IBindingListView.SupportsFiltering%2A> property, you implement filtering as a string to be interpreted by the data source implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

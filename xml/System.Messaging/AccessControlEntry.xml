@@ -14,12 +14,12 @@
     <summary>Specifies access rights for a trustee (user, group, or computer) to perform application-specific implementations of common tasks.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Many applications have similar operations to which a trustee can be assigned rights, for example, reading, writing, and deleting objects. When you assign rights for these general operations, the application interprets them in a way specific to that application. For example, Message Queuing interprets the reading operation as receiving or peeking messages from a queue. The <xref:System.Messaging.AccessControlEntry> class provides access to these common rights.  
-  
- When working with access control entries, you specify a trustee to which you are assigning the rights. You must set at least one of the <xref:System.Messaging.AccessControlEntry.GenericAccessRights%2A>, <xref:System.Messaging.AccessControlEntry.StandardAccessRights%2A>, or <xref:System.Messaging.AccessControlEntry.CustomAccessRights%2A> properties to indicate which rights to assign to the trustee. You can set the <xref:System.Messaging.AccessControlEntry.EntryType%2A> property to specify whether the rights you indicate should be granted or denied. The default entry type is to allow rights.  
-  
+Many applications have similar operations to which a trustee can be assigned rights, for example, reading, writing, and deleting objects. When you assign rights for these general operations, the application interprets them in a way specific to that application. For example, Message Queuing interprets the reading operation as receiving or peeking messages from a queue. The <xref:System.Messaging.AccessControlEntry> class provides access to these common rights.  
+ 
+When working with access control entries, you specify a trustee to which you are assigning the rights. You must set at least one of the <xref:System.Messaging.AccessControlEntry.GenericAccessRights%2A>, <xref:System.Messaging.AccessControlEntry.StandardAccessRights%2A>, or <xref:System.Messaging.AccessControlEntry.CustomAccessRights%2A> properties to indicate which rights to assign to the trustee. You can set the <xref:System.Messaging.AccessControlEntry.EntryType%2A> property to specify whether the rights you indicate should be granted or denied. The default entry type is to allow rights.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,12 +38,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.AccessControlEntry" /> class that specifies neither a trustee nor set of rights to apply.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set the <xref:System.Messaging.AccessControlEntry.Trustee%2A> property and at least one of the <xref:System.Messaging.AccessControlEntry.GenericAccessRights%2A>, <xref:System.Messaging.AccessControlEntry.StandardAccessRights%2A>, or <xref:System.Messaging.AccessControlEntry.CustomAccessRights%2A> properties before using this <xref:System.Messaging.AccessControlEntry> instance to set access rights for a trustee.  
-  
- You can optionally set the <xref:System.Messaging.AccessControlEntry.EntryType%2A> property, though it defaults to `Allow` if you choose not to do so.  
-  
+Set the <xref:System.Messaging.AccessControlEntry.Trustee%2A> property and at least one of the <xref:System.Messaging.AccessControlEntry.GenericAccessRights%2A>, <xref:System.Messaging.AccessControlEntry.StandardAccessRights%2A>, or <xref:System.Messaging.AccessControlEntry.CustomAccessRights%2A> properties before using this <xref:System.Messaging.AccessControlEntry> instance to set access rights for a trustee.  
+ 
+You can optionally set the <xref:System.Messaging.AccessControlEntry.EntryType%2A> property, though it defaults to `Allow` if you choose not to do so.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -65,10 +65,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.AccessControlEntry" /> class that specifies a trustee to which rights are granted or denied.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set the <xref:System.Messaging.AccessControlEntry.EntryType%2A> property and at least one of the <xref:System.Messaging.AccessControlEntry.GenericAccessRights%2A>, <xref:System.Messaging.AccessControlEntry.StandardAccessRights%2A>, or <xref:System.Messaging.AccessControlEntry.CustomAccessRights%2A> properties before using this <xref:System.Messaging.AccessControlEntry> instance to set access rights for a trustee.  
-  
+Set the <xref:System.Messaging.AccessControlEntry.EntryType%2A> property and at least one of the <xref:System.Messaging.AccessControlEntry.GenericAccessRights%2A>, <xref:System.Messaging.AccessControlEntry.StandardAccessRights%2A>, or <xref:System.Messaging.AccessControlEntry.CustomAccessRights%2A> properties before using this <xref:System.Messaging.AccessControlEntry> instance to set access rights for a trustee.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="trustee" /> parameter is <see langword="null" />.</exception>
@@ -97,10 +97,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.AccessControlEntry" /> class that specifies a trustee, rights to assign, and whether to grant or deny these rights.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload of the constructor sets the <xref:System.Messaging.AccessControlEntry.CustomAccessRights%2A> property to a bitwise combination of the `genericAccessRights` and `standardAccessRights` parameters you specify.  
-  
+This overload of the constructor sets the <xref:System.Messaging.AccessControlEntry.CustomAccessRights%2A> property to a bitwise combination of the `genericAccessRights` and `standardAccessRights` parameters you specify.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="trustee" /> parameter is <see langword="null" />.</exception>
@@ -161,10 +161,10 @@
         <value>A bitwise combination of the <see cref="T:System.Messaging.GenericAccessRights" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Securable objects use the four high-order bits of the Windows 2000 and Windows NT access mask format to specify the generic access rights. Each type of securable object maps these bits to a set of its standard and object-specific access rights. Applications that define private securable objects can also use the generic access rights.  
-  
+Securable objects use the four high-order bits of the Windows 2000 and Windows NT access mask format to specify the generic access rights. Each type of securable object maps these bits to a set of its standard and object-specific access rights. Applications that define private securable objects can also use the generic access rights.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value you set is not a valid combination of <see cref="T:System.Messaging.GenericAccessRights" /> bitflag members.</exception>
@@ -187,10 +187,10 @@
         <value>A bitwise combination of the <see cref="T:System.Messaging.StandardAccessRights" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Windows 2000 and Windows NT access mask format includes a set of bits for the standard access rights. Each type of securable object has a set of access rights that correspond to operations specific to that type of object. In addition to these object-specific access rights, there is a set of standard access rights that correspond to operations common to most types of securable objects.  
-  
+The Windows 2000 and Windows NT access mask format includes a set of bits for the standard access rights. Each type of securable object has a set of access rights that correspond to operations specific to that type of object. In addition to these object-specific access rights, there is a set of standard access rights that correspond to operations common to most types of securable objects.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value you set is not a valid combination of <see cref="T:System.Messaging.StandardAccessRights" /> bitflag members.</exception>
@@ -213,10 +213,10 @@
         <value>A <see cref="T:System.Messaging.Trustee" /> that specifies a user account, group account, or logon session to which a <see cref="T:System.Messaging.AccessControlEntry" /> applies.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Both users and programs, such as Win32 services, use user accounts to log on to the local computer. Group accounts cannot be used to log on to a computer, but are useful in <xref:System.Messaging.AccessControlEntry> instances to allow or deny a set of access rights to one or more user accounts.  
-  
+Both users and programs, such as Win32 services, use user accounts to log on to the local computer. Group accounts cannot be used to log on to a computer, but are useful in <xref:System.Messaging.AccessControlEntry> instances to allow or deny a set of access rights to one or more user accounts.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Messaging.AccessControlEntry.Trustee" /> property is <see langword="null" />.</exception>

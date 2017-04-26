@@ -23,10 +23,10 @@
     <summary>An abstract class used as a base class for other formatters, (for example <see cref="T:System.ServiceModel.Syndication.Atom10FeedFormatter" />).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is abstract and cannot be instantiated directly.  
-  
+This class is abstract and cannot be instantiated directly.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,10 +71,10 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeedFormatter" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> must have a <xref:System.ServiceModel.Syndication.SyndicationFeed> associated with it. The <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> can then write out the <xref:System.ServiceModel.Syndication.SyndicationFeed> to an <xref:System.Xml.XmlReader>. The only way to associate a <xref:System.ServiceModel.Syndication.SyndicationFeed> with a <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> is by using this constructor.  
-  
+A <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> must have a <xref:System.ServiceModel.Syndication.SyndicationFeed> associated with it. The <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> can then write out the <xref:System.ServiceModel.Syndication.SyndicationFeed> to an <xref:System.Xml.XmlReader>. The only way to associate a <xref:System.ServiceModel.Syndication.SyndicationFeed> with a <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> is by using this constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,10 +105,10 @@
           <see langword="true" />, if the XML reader contains a valid syndication feed, otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method verifies whether the start element name and namespace match the start element name and namespace of the RSS 2.0 or Atom 1.0 specification.  
-  
+This method verifies whether the start element name and namespace match the start element name and namespace of the RSS 2.0 or Atom 1.0 specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationCategory> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance used to create it.  
-  
+The newly created <xref:System.ServiceModel.Syndication.SyndicationCategory> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance used to create it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,10 +171,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationCategory> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationItem> instance used to create it.  
-  
+The newly created <xref:System.ServiceModel.Syndication.SyndicationCategory> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationItem> instance used to create it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> instance used to create it.  
-  
+The newly created <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> instance used to create it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -234,10 +234,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationItem> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> instance used to create it.  
-  
+The newly created <xref:System.ServiceModel.Syndication.SyndicationItem> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> instance used to create it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,10 +267,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationLink> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance used to create it.  
-  
+The newly created <xref:System.ServiceModel.Syndication.SyndicationLink> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance used to create it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -300,10 +300,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationLink> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationItem> instance used to create it.  
-  
+The newly created <xref:System.ServiceModel.Syndication.SyndicationLink> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationItem> instance used to create it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,10 +333,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationPerson> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance used to create it.  
-  
+The newly created <xref:System.ServiceModel.Syndication.SyndicationPerson> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance used to create it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -366,10 +366,10 @@
         <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The newly created <xref:System.ServiceModel.Syndication.SyndicationPerson> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationItem> instance used to create it.  
-  
+The newly created <xref:System.ServiceModel.Syndication.SyndicationPerson> instance is not automatically added to the <xref:System.ServiceModel.Syndication.SyndicationItem> instance used to create it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,10 +395,10 @@
         <value>The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> associated with the formatter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ServiceModel.Syndication.SyndicationFeed> is associated with the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> by passing in a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance to the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> constructor.  
-  
+A <xref:System.ServiceModel.Syndication.SyndicationFeed> is associated with the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> by passing in a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance to the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -431,10 +431,10 @@
         <summary>Loads element extensions into the specified <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> using the specified <see cref="T:System.Xml.XmlReader" /> and maximum extension size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The RSS 2.0 and Atom 1.0 specifications allow you to add custom element extensions to a syndication feed. This method allows you to read in these element extensions from an <xref:System.Xml.XmlReader>.  
-  
+The RSS 2.0 and Atom 1.0 specifications allow you to add custom element extensions to a syndication feed. This method allows you to read in these element extensions from an <xref:System.Xml.XmlReader>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -467,10 +467,10 @@
         <summary>Loads element extensions into the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> using the specified <see cref="T:System.Xml.XmlReader" /> and maximum extension size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The RSS 2.0 and Atom 1.0 specifications allow you to add custom element extensions to a syndication feed. This method allows you to read in these element extensions from an <xref:System.Xml.XmlReader>.  
-  
+The RSS 2.0 and Atom 1.0 specifications allow you to add custom element extensions to a syndication feed. This method allows you to read in these element extensions from an <xref:System.Xml.XmlReader>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -503,10 +503,10 @@
         <summary>Loads element extensions into the specified <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> using the specified <see cref="T:System.Xml.XmlReader" /> and maximum extension size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The RSS 2.0 and Atom 1.0 specifications allow you to add custom element extensions to a syndication feed. This method allows you to read in these element extensions from an <xref:System.Xml.XmlReader>.  
-  
+The RSS 2.0 and Atom 1.0 specifications allow you to add custom element extensions to a syndication feed. This method allows you to read in these element extensions from an <xref:System.Xml.XmlReader>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -539,10 +539,10 @@
         <summary>Loads element extensions into the specified <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> using the specified <see cref="T:System.Xml.XmlReader" /> and maximum extension size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The RSS 2.0 and Atom 1.0 specifications allow you to add custom element extensions to a syndication feed. This method allows you to read in these element extensions from an <xref:System.Xml.XmlReader>.  
-  
+The RSS 2.0 and Atom 1.0 specifications allow you to add custom element extensions to a syndication feed. This method allows you to read in these element extensions from an <xref:System.Xml.XmlReader>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -575,10 +575,10 @@
         <summary>Loads element extensions into the specified <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> using the specified <see cref="T:System.Xml.XmlReader" /> and maximum extension size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The RSS 2.0 and Atom 1.0 specifications allow you to add custom element extensions to a syndication feed. This method allows you to read in these element extensions from an <xref:System.Xml.XmlReader>.  
-  
+The RSS 2.0 and Atom 1.0 specifications allow you to add custom element extensions to a syndication feed. This method allows you to read in these element extensions from an <xref:System.Xml.XmlReader>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -607,10 +607,10 @@
         <summary>Reads in a <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> from the specified <see cref="T:System.Xml.XmlReader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new <xref:System.ServiceModel.Syndication.SyndicationFeed>, associates it with the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> and reads the feed into the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
-  
+Creates a new <xref:System.ServiceModel.Syndication.SyndicationFeed>, associates it with the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> and reads the feed into the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
@@ -640,10 +640,10 @@
         <summary>Associates a <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance with the <see cref="T:System.ServiceModel.Syndication.SyndicationFeedFormatter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is protected and cannot be called from user code. To associate a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance with a <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter>, either create a new <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> instance and pass the constructor a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance or load a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance into the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> by calling the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter.ReadFrom%28System.Xml.XmlReader%29> method.  
-  
+This method is protected and cannot be called from user code. To associate a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance with a <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter>, either create a new <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> instance and pass the constructor a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance or load a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance into the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> by calling the <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter.ReadFrom%28System.Xml.XmlReader%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -705,10 +705,10 @@
           <see langword="true" /> if the attribute was parsed successfully; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how attribute extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override the <xref:System.ServiceModel.Syndication.SyndicationCategory.TryParseAttribute%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
-  
+To control how attribute extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override the <xref:System.ServiceModel.Syndication.SyndicationCategory.TryParseAttribute%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -747,10 +747,10 @@
           <see langword="true" /> if the attribute was parsed successfully; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how attribute extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override the <xref:System.ServiceModel.Syndication.SyndicationFeed.TryParseAttribute%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
-  
+To control how attribute extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override the <xref:System.ServiceModel.Syndication.SyndicationFeed.TryParseAttribute%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -789,10 +789,10 @@
           <see langword="true" /> if the attribute was parsed successfully; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how attribute extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationItem> and override the <xref:System.ServiceModel.Syndication.SyndicationItem.TryParseAttribute%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
-  
+To control how attribute extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationItem> and override the <xref:System.ServiceModel.Syndication.SyndicationItem.TryParseAttribute%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -831,10 +831,10 @@
           <see langword="true" /> if the attribute was parsed successfully; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how attribute extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override the <xref:System.ServiceModel.Syndication.SyndicationLink.TryParseAttribute%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
-  
+To control how attribute extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override the <xref:System.ServiceModel.Syndication.SyndicationLink.TryParseAttribute%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -873,10 +873,10 @@
           <see langword="true" /> if the attribute was parsed successfully; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how attribute extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationPerson> and override the <xref:System.ServiceModel.Syndication.SyndicationPerson.TryParseAttribute%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
-  
+To control how attribute extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationPerson> and override the <xref:System.ServiceModel.Syndication.SyndicationPerson.TryParseAttribute%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -915,12 +915,12 @@
           <see langword="true" /> if the content was parsed successfully; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how syndication content is parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationItem> and override the  
-  
- <xref:System.ServiceModel.Syndication.SyndicationItem.TryParseContent%28System.Xml.XmlReader%2CSystem.String%2CSystem.String%2CSystem.ServiceModel.Syndication.SyndicationContent%40%29> method.  
-  
+To control how syndication content is parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationItem> and override the  
+ 
+<xref:System.ServiceModel.Syndication.SyndicationItem.TryParseContent%28System.Xml.XmlReader%2CSystem.String%2CSystem.String%2CSystem.ServiceModel.Syndication.SyndicationContent%40%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -955,10 +955,10 @@
           <see langword="true" /> if the element was parsed successfully; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how element extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override the <xref:System.ServiceModel.Syndication.SyndicationCategory.TryParseElement%28System.Xml.XmlReader%2CSystem.String%29> method.  
-  
+To control how element extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override the <xref:System.ServiceModel.Syndication.SyndicationCategory.TryParseElement%28System.Xml.XmlReader%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -993,10 +993,10 @@
           <see langword="true" /> if the element was parsed successfully; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how element extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override the <xref:System.ServiceModel.Syndication.SyndicationFeed.TryParseElement%28System.Xml.XmlReader%2CSystem.String%29> method.  
-  
+To control how element extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override the <xref:System.ServiceModel.Syndication.SyndicationFeed.TryParseElement%28System.Xml.XmlReader%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1031,10 +1031,10 @@
           <see langword="true" /> if the element was parsed successfully; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how element extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationItem> and override the <xref:System.ServiceModel.Syndication.SyndicationItem.TryParseElement%28System.Xml.XmlReader%2CSystem.String%29> method.  
-  
+To control how element extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationItem> and override the <xref:System.ServiceModel.Syndication.SyndicationItem.TryParseElement%28System.Xml.XmlReader%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1069,10 +1069,10 @@
           <see langword="true" /> if the element was parsed successfully; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how element extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override the <xref:System.ServiceModel.Syndication.SyndicationLink.TryParseElement%28System.Xml.XmlReader%2CSystem.String%29> method.  
-  
+To control how element extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override the <xref:System.ServiceModel.Syndication.SyndicationLink.TryParseElement%28System.Xml.XmlReader%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1107,10 +1107,10 @@
           <see langword="true" /> if the element was parsed successfully; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how element extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationPerson> and override the <xref:System.ServiceModel.Syndication.SyndicationPerson.TryParseElement%28System.Xml.XmlReader%2CSystem.String%29> method.  
-  
+To control how element extensions are parsed, derive your own class from <xref:System.ServiceModel.Syndication.SyndicationPerson> and override the <xref:System.ServiceModel.Syndication.SyndicationPerson.TryParseElement%28System.Xml.XmlReader%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1136,10 +1136,10 @@
         <value>The syndication version of the formatter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] supports the RSS 2.0 and Atom 1.0 specifications.  
-  
+[!INCLUDE[indigo1](~/includes/indigo1-md.md)] supports the RSS 2.0 and Atom 1.0 specifications.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1172,10 +1172,10 @@
         <summary>Writes the attribute extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how attribute extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationCategory>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override the <xref:System.ServiceModel.Syndication.SyndicationCategory.WriteAttributeExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
+To control how attribute extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationCategory>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override the <xref:System.ServiceModel.Syndication.SyndicationCategory.WriteAttributeExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1208,10 +1208,10 @@
         <summary>Writes the attribute extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how attribute extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationFeed>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override the <xref:System.ServiceModel.Syndication.SyndicationFeed.WriteAttributeExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
+To control how attribute extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationFeed>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override the <xref:System.ServiceModel.Syndication.SyndicationFeed.WriteAttributeExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1244,10 +1244,10 @@
         <summary>Writes the attribute extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how attribute extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationItem>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationItem> and override the <xref:System.ServiceModel.Syndication.SyndicationItem.WriteAttributeExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
+To control how attribute extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationItem>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationItem> and override the <xref:System.ServiceModel.Syndication.SyndicationItem.WriteAttributeExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1280,10 +1280,10 @@
         <summary>Writes the attribute extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how attribute extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationLink>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override the <xref:System.ServiceModel.Syndication.SyndicationLink.WriteAttributeExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
+To control how attribute extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationLink>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override the <xref:System.ServiceModel.Syndication.SyndicationLink.WriteAttributeExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1316,10 +1316,10 @@
         <summary>Writes the attribute extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how attribute extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationPerson>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationPerson> and override the <xref:System.ServiceModel.Syndication.SyndicationCategory.WriteAttributeExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
+To control how attribute extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationPerson>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationPerson> and override the <xref:System.ServiceModel.Syndication.SyndicationCategory.WriteAttributeExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1352,10 +1352,10 @@
         <summary>Writes the element extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how element extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationCategory>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override the <xref:System.ServiceModel.Syndication.SyndicationCategory.WriteElementExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
+To control how element extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationCategory>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override the <xref:System.ServiceModel.Syndication.SyndicationCategory.WriteElementExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1388,10 +1388,10 @@
         <summary>Writes the element extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how element extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationFeed>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override the <xref:System.ServiceModel.Syndication.SyndicationFeed.WriteElementExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
+To control how element extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationFeed>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override the <xref:System.ServiceModel.Syndication.SyndicationFeed.WriteElementExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1424,10 +1424,10 @@
         <summary>Writes the element extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how element extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationItem>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationItem> and override the <xref:System.ServiceModel.Syndication.SyndicationItem.WriteElementExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
+To control how element extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationItem>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationItem> and override the <xref:System.ServiceModel.Syndication.SyndicationItem.WriteElementExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1460,10 +1460,10 @@
         <summary>Writes the element extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how element extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationLink>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override the <xref:System.ServiceModel.Syndication.SyndicationLink.WriteElementExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
+To control how element extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationLink>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationLink> and override the <xref:System.ServiceModel.Syndication.SyndicationLink.WriteElementExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1496,10 +1496,10 @@
         <summary>Writes the element extensions in the <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance to the specified <see cref="T:System.Xml.XmlWriter" /> in the specified syndication version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To control how element extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationPerson>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationPerson> and override the <xref:System.ServiceModel.Syndication.SyndicationPerson.WriteElementExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
-  
+To control how element extensions are written by the <xref:System.ServiceModel.Syndication.SyndicationPerson>, derive a class from <xref:System.ServiceModel.Syndication.SyndicationPerson> and override the <xref:System.ServiceModel.Syndication.SyndicationPerson.WriteElementExtensions%28System.Xml.XmlWriter%2CSystem.String%29> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

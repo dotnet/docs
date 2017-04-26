@@ -19,12 +19,12 @@
     <summary>Defines the  peer registration information to be supplied to a peer resolver service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class defines the information used to register the tuple of a peer node and a mesh ID with a peer resolver service. This information is inserted as an entry in the registration lookup table of the resolver service, which can be queried by other peers for the endpoint addresses of the inserted peer.  
-  
- Instances of this class are created when <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Register%2A> (or an implementation of  <xref:System.ServiceModel.PeerResolvers.IPeerResolverContract.Register%2A>) is called to register with a peer resolver service. They are primarily used to pass registration request information to a peer resolver service from a network client of that service.  
-  
+This class defines the information used to register the tuple of a peer node and a mesh ID with a peer resolver service. This information is inserted as an entry in the registration lookup table of the resolver service, which can be queried by other peers for the endpoint addresses of the inserted peer.  
+ 
+Instances of this class are created when <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Register%2A> (or an implementation of  <xref:System.ServiceModel.PeerResolvers.IPeerResolverContract.Register%2A>) is called to register with a peer resolver service. They are primarily used to pass registration request information to a peer resolver service from a network client of that service.  
+ 
  ]]></format>
     </remarks>
   </Docs>

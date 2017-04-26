@@ -24,12 +24,12 @@
     <summary>Identifies which provider-specific property in the strongly typed parameter classes is to be used when setting a provider-specific type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Common.DbProviderSpecificTypePropertyAttribute> is used by a provider writer to designate a provider-specific type parameter property which is not inherited from the <xref:System.Data.Common.DbParameter> base class. The <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> property of a <xref:System.Data.SqlClient.SqlParameter> is an example of a provider-specific type property not found in `DbParameter`.  
-  
- A provider writer can apply `DbProviderSpecificTypePropertyAttribute(true)` to indicate a provider-specific data type parameter property. This allows for its discovery using reflection, which enables code generation tools, such as those used in Visual Studio, to generate code geared to a specific provider. The <xref:System.Data.Common.DbProviderSpecificTypePropertyAttribute.IsProviderSpecificTypeProperty%2A> property returns `true` if the property has been set, otherwise `false`.  
-  
+The <xref:System.Data.Common.DbProviderSpecificTypePropertyAttribute> is used by a provider writer to designate a provider-specific type parameter property which is not inherited from the <xref:System.Data.Common.DbParameter> base class. The <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> property of a <xref:System.Data.SqlClient.SqlParameter> is an example of a provider-specific type property not found in `DbParameter`.  
+ 
+A provider writer can apply `DbProviderSpecificTypePropertyAttribute(true)` to indicate a provider-specific data type parameter property. This allows for its discovery using reflection, which enables code generation tools, such as those used in Visual Studio, to generate code geared to a specific provider. The <xref:System.Data.Common.DbProviderSpecificTypePropertyAttribute.IsProviderSpecificTypeProperty%2A> property returns `true` if the property has been set, otherwise `false`.  
+ 
  ]]></format>
     </remarks>
   </Docs>

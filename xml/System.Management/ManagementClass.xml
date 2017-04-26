@@ -29,20 +29,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class. This is the default constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with the <xref:System.Management.ManagementClass> default constructor. The example lists the methods, properties, and qualifiers for the created class.  
-  
- [!code-csharp[wminet_ManagementClass()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass()/cs/ManagementClass().cs#1)]
- [!code-vb[wminet_ManagementClass()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass()/vb/ManagementClass().vb#1)]  
-  
+The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with the <xref:System.Management.ManagementClass> default constructor. The example lists the methods, properties, and qualifiers for the created class.  
+ 
+[!code-csharp[wminet_ManagementClass()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass()/cs/ManagementClass().cs#1)]
+[!code-vb[wminet_ManagementClass()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass()/vb/ManagementClass().vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -64,21 +64,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe. For more information, see "Win32 Classes" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `path` parameter must specify a WMI class path.  
-  
+The `path` parameter must specify a WMI class path.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers for the created class.  
-  
- [!code-csharp[wminet_ManagementClass(M)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(M)/cs/ManagementClass(M).cs#1)]
- [!code-vb[wminet_ManagementClass(M)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(M)/vb/ManagementClass(M).vb#1)]  
-  
+The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers for the created class.  
+ 
+[!code-csharp[wminet_ManagementClass(M)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(M)/cs/ManagementClass(M).cs#1)]
+[!code-vb[wminet_ManagementClass(M)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(M)/vb/ManagementClass(M).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,20 +100,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class initialized to the given path. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe. For more information, see "Win32 Classes" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers for the created class.  
-  
- [!code-csharp[wminet_ManagementClass(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(S)/cs/ManagementClass(S).cs#1)]
- [!code-vb[wminet_ManagementClass(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(S)/vb/ManagementClass(S).vb#1)]  
-  
+The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers for the created class.  
+ 
+[!code-csharp[wminet_ManagementClass(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(S)/cs/ManagementClass(S).cs#1)]
+[!code-vb[wminet_ManagementClass(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(S)/vb/ManagementClass(S).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,20 +137,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class initialized to the given WMI class path using the specified options. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe. For more information, see "Win32 Classes" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class.  
-  
- [!code-csharp[wminet_ManagementClass(M_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(M_O)/cs/ManagementClass(M_O).cs#1)]
- [!code-vb[wminet_ManagementClass(M_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(M_O)/vb/ManagementClass(M_O).vb#1)]  
-  
+The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class.  
+ 
+[!code-csharp[wminet_ManagementClass(M_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(M_O)/cs/ManagementClass(M_O).cs#1)]
+[!code-vb[wminet_ManagementClass(M_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(M_O)/vb/ManagementClass(M_O).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,12 +174,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> classes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,20 +203,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class initialized to the given WMI class path using the specified options. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe. For more information, see "Win32 Classes" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class.  
-  
- [!code-csharp[wminet_ManagementClass(S_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(S_O)/cs/ManagementClass(S_O).cs#1)]
- [!code-vb[wminet_ManagementClass(S_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(S_O)/vb/ManagementClass(S_O).vb#1)]  
-  
+The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class.  
+ 
+[!code-csharp[wminet_ManagementClass(S_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(S_O)/cs/ManagementClass(S_O).cs#1)]
+[!code-vb[wminet_ManagementClass(S_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(S_O)/vb/ManagementClass(S_O).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,21 +242,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class for the specified WMI class in the specified scope and with the specified options. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe. For more information, see "Win32 Classes" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The path can be specified as a full path (including server and namespace). However, if a scope is specified, it will override the first portion of the full path.  
-  
+The path can be specified as a full path (including server and namespace). However, if a scope is specified, it will override the first portion of the full path.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class. You must change the scope (namespace) in the code for the example to run correctly on your computer.  
-  
- [!code-csharp[wminet_ManagementClass(M_M_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(M_M_O)/cs/ManagementClass(M_M_O).cs#1)]
- [!code-vb[wminet_ManagementClass(M_M_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(M_M_O)/vb/ManagementClass(M_M_O).vb#1)]  
-  
+The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class. You must change the scope (namespace) in the code for the example to run correctly on your computer.  
+ 
+[!code-csharp[wminet_ManagementClass(M_M_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(M_M_O)/cs/ManagementClass(M_M_O).cs#1)]
+[!code-vb[wminet_ManagementClass(M_M_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(M_M_O)/vb/ManagementClass(M_M_O).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,21 +282,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class for the specified WMI class, in the specified scope, and with the specified options. The class represents a Common Information Model (CIM) management class from WMI such as **Win32_LogicalDisk**, which can represent a disk drive, and **Win32_Process**, which represents a process such as Notepad.exe. For more information, see "Win32 Classes" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The path can be specified as a full path (including server and namespace). However, if a scope is specified, it will override the first portion of the full path.  
-  
+The path can be specified as a full path (including server and namespace). However, if a scope is specified, it will override the first portion of the full path.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class. You must change the scope (namespace) in the code for the example to run correctly on your computer.  
-  
- [!code-csharp[wminet_ManagementClass(S_S_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(S_S_O)/cs/ManagementClass(S_S_O).cs#1)]
- [!code-vb[wminet_ManagementClass(S_S_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(S_S_O)/vb/ManagementClass(S_S_O).vb#1)]  
-  
+The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class. You must change the scope (namespace) in the code for the example to run correctly on your computer.  
+ 
+[!code-csharp[wminet_ManagementClass(S_S_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(S_S_O)/cs/ManagementClass(S_S_O).cs#1)]
+[!code-vb[wminet_ManagementClass(S_S_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(S_S_O)/vb/ManagementClass(S_S_O).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -319,13 +319,13 @@
         <returns>The cloned object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that this does not create a copy of the WMI class; only an additional representation is created.  
-  
+Note that this does not create a copy of the WMI class; only an additional representation is created.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,21 +348,21 @@
         <returns>A <see cref="T:System.Management.ManagementObject" /> that represents a new instance of the WMI class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that the new instance is not committed until the <xref:System.Management.ManagementObject.Put%2A>() method is called. Before committing it, the key properties must be specified.  
-  
+Note that the new instance is not committed until the <xref:System.Management.ManagementObject.Put%2A>() method is called. Before committing it, the key properties must be specified.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then create a new instance of a WMI class.  
-  
- [!code-csharp[wminet_ManagementClass_CreateInstance#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_CreateInstance/cs/ManagementClass_CreateInstance.cs#1)]
- [!code-vb[wminet_ManagementClass_CreateInstance#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_CreateInstance/vb/ManagementClass_CreateInstance.vb#1)]  
-  
+The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then create a new instance of a WMI class.  
+ 
+[!code-csharp[wminet_ManagementClass_CreateInstance#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_CreateInstance/cs/ManagementClass_CreateInstance.cs#1)]
+[!code-vb[wminet_ManagementClass_CreateInstance#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_CreateInstance/vb/ManagementClass_CreateInstance.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -384,21 +384,21 @@
         <value>A string collection containing the names of all WMI classes in the inheritance hierarchy of this class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only.  
-  
+This property is read-only.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the classes in the inheritance hierarchy from the WMI class passed into the constructor, to the top of the hierarchy.  
-  
- [!code-csharp[wminet_ManagementClass_Derivation#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Derivation/cs/ManagementClass_Derivation.cs#1)]
- [!code-vb[wminet_ManagementClass_Derivation#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Derivation/vb/ManagementClass_Derivation.vb#1)]  
-  
+The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the classes in the inheritance hierarchy from the WMI class passed into the constructor, to the top of the hierarchy.  
+ 
+[!code-csharp[wminet_ManagementClass_Derivation#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Derivation/cs/ManagementClass_Derivation.cs#1)]
+[!code-vb[wminet_ManagementClass_Derivation#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Derivation/vb/ManagementClass_Derivation.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -424,21 +424,21 @@
         <returns>A new <see cref="T:System.Management.ManagementClass" /> that represents a new WMI class derived from the original class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that the newly returned class has not been committed until the <xref:System.Management.ManagementObject.Put%2A>() method is explicitly called.  
-  
+Note that the newly returned class has not been committed until the <xref:System.Management.ManagementObject.Put%2A>() method is explicitly called.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then create a derived instance of a WMI class.  
-  
- [!code-csharp[wminet_ManagementClass_Derive#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Derive/cs/ManagementClass_Derive.cs#1)]
- [!code-vb[wminet_ManagementClass_Derive#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Derive/vb/ManagementClass_Derive.vb#1)]  
-  
+The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then create a derived instance of a WMI class.  
+ 
+[!code-csharp[wminet_ManagementClass_Derive#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Derive/cs/ManagementClass_Derive.cs#1)]
+[!code-vb[wminet_ManagementClass_Derive#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Derive/vb/ManagementClass_Derive.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -461,20 +461,20 @@
         <returns>A collection of the <see cref="T:System.Management.ManagementObject" /> objects representing the instances of the class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the instances of a WMI class.  
-  
- [!code-csharp[wminet_ManagementClass_GetInstances()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances()/cs/ManagementClass_GetInstances().cs#1)]
- [!code-vb[wminet_ManagementClass_GetInstances()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances()/vb/ManagementClass_GetInstances().vb#1)]  
-  
+The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the instances of a WMI class.  
+ 
+[!code-csharp[wminet_ManagementClass_GetInstances()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances()/cs/ManagementClass_GetInstances().cs#1)]
+[!code-vb[wminet_ManagementClass_GetInstances()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances()/vb/ManagementClass_GetInstances().vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -500,20 +500,20 @@
         <returns>A collection of the <see cref="T:System.Management.ManagementObject" /> objects representing the instances of the class, according to the specified options.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the instances of a WMI class and its subclasses.  
-  
- [!code-csharp[wminet_ManagementClass_GetInstances(E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances(E)/cs/ManagementClass_GetInstances(E).cs#1)]
- [!code-vb[wminet_ManagementClass_GetInstances(E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances(E)/vb/ManagementClass_GetInstances(E).vb#1)]  
-  
+The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the instances of a WMI class and its subclasses.  
+ 
+[!code-csharp[wminet_ManagementClass_GetInstances(E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances(E)/cs/ManagementClass_GetInstances(E).cs#1)]
+[!code-vb[wminet_ManagementClass_GetInstances(E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances(E)/vb/ManagementClass_GetInstances(E).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -538,20 +538,20 @@
         <summary>Returns the collection of all instances of the class, asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the instances of a WMI class asynchronously.  
-  
- [!code-csharp[wminet_ManagementClass_GetInstances(M)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances(M)/cs/ManagementClass_GetInstances(M).cs#1)]
- [!code-vb[wminet_ManagementClass_GetInstances(M)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances(M)/vb/ManagementClass_GetInstances(M).vb#1)]  
-  
+The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the instances of a WMI class asynchronously.  
+ 
+[!code-csharp[wminet_ManagementClass_GetInstances(M)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances(M)/cs/ManagementClass_GetInstances(M).cs#1)]
+[!code-vb[wminet_ManagementClass_GetInstances(M)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances(M)/vb/ManagementClass_GetInstances(M).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -578,12 +578,12 @@
         <summary>Returns the collection of all instances of the class, asynchronously, using the specified options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -610,12 +610,12 @@
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data necessary to deserialize the field represented by this instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -638,21 +638,21 @@
         <returns>A collection of the <see cref="T:System.Management.ManagementClass" /> or <see cref="T:System.Management.ManagementObject" /> objects that represents WMI classes or instances related to the WMI class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method queries the WMI schema for all possible associations that the WMI class may have with other classes, or in rare cases, to instances. For more information about related classes, see " ASSOCIATORS OF Statement" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
+The method queries the WMI schema for all possible associations that the WMI class may have with other classes, or in rare cases, to instances. For more information about related classes, see " ASSOCIATORS OF Statement" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then list all the classes related to the WMI class passed into the constructor.  
-  
- [!code-csharp[wminet_ManagementClass_GetRelatedClasses()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses()/cs/ManagementClass_GetRelatedClasses().cs#1)]
- [!code-vb[wminet_ManagementClass_GetRelatedClasses()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses()/vb/ManagementClass_GetRelatedClasses().vb#1)]  
-  
+The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then list all the classes related to the WMI class passed into the constructor.  
+ 
+[!code-csharp[wminet_ManagementClass_GetRelatedClasses()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses()/cs/ManagementClass_GetRelatedClasses().cs#1)]
+[!code-vb[wminet_ManagementClass_GetRelatedClasses()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses()/vb/ManagementClass_GetRelatedClasses().vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -677,12 +677,12 @@
         <summary>Retrieves classes related to the WMI class, asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -708,12 +708,12 @@
         <returns>A collection of classes related to this class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -740,12 +740,12 @@
         <summary>Retrieves classes related to the WMI class, asynchronously, given the related class name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -783,20 +783,20 @@
         <returns>A collection of classes related to this class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Management.ManagementClass.GetRelatedClasses%2A> method to list the related classes to the **CIM_LogicalDisk** class. For more information, see "CIM_LogicalDisk" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
- [!code-csharp[wminet_ManagementClass_GetRelatedClasses(7)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses(7)/cs/ManagementClass_GetRelatedClasses(7).cs#1)]
- [!code-vb[wminet_ManagementClass_GetRelatedClasses(7)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses(7)/vb/ManagementClass_GetRelatedClasses(7).vb#1)]  
-  
+The following example uses the <xref:System.Management.ManagementClass.GetRelatedClasses%2A> method to list the related classes to the **CIM_LogicalDisk** class. For more information, see "CIM_LogicalDisk" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
+[!code-csharp[wminet_ManagementClass_GetRelatedClasses(7)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses(7)/cs/ManagementClass_GetRelatedClasses(7).cs#1)]
+[!code-vb[wminet_ManagementClass_GetRelatedClasses(7)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses(7)/vb/ManagementClass_GetRelatedClasses(7).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -835,12 +835,12 @@
         <summary>Retrieves classes related to the WMI class, asynchronously, using the specified options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -863,20 +863,20 @@
         <returns>A collection of *association classes* that relate the class to any other class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Management.ManagementClass.GetRelationshipClasses%2A> method to list the relationship classes to the **CIM_LogicalDisk** class. For more information, see "CIM_LogicalDisk" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
- [!code-csharp[wminet_ManagementClass_GetRelationshipClasses()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelationshipClasses()/cs/ManagementClass_GetRelationshipClasses().cs#1)]
- [!code-vb[wminet_ManagementClass_GetRelationshipClasses()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelationshipClasses()/vb/ManagementClass_GetRelationshipClasses().vb#1)]  
-  
+The following example uses the <xref:System.Management.ManagementClass.GetRelationshipClasses%2A> method to list the relationship classes to the **CIM_LogicalDisk** class. For more information, see "CIM_LogicalDisk" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
+[!code-csharp[wminet_ManagementClass_GetRelationshipClasses()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelationshipClasses()/cs/ManagementClass_GetRelationshipClasses().cs#1)]
+[!code-vb[wminet_ManagementClass_GetRelationshipClasses()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelationshipClasses()/vb/ManagementClass_GetRelationshipClasses().vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -901,12 +901,12 @@
         <summary>Retrieves relationship classes that relate the class to others, asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -932,12 +932,12 @@
         <returns>A collection of *association classes* that relate the class to the specified class. For more information about relationship classes, see "ASSOCIATORS OF Statement" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -964,13 +964,13 @@
         <summary>Retrieves relationship classes that relate the class to the specified WMI class, asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about relationship classes, see " ASSOCIATORS OF Statement" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
+For more information about relationship classes, see " ASSOCIATORS OF Statement" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1002,12 +1002,12 @@
         <returns>A collection of *association classes* that relate this class to others, according to the specified options. For more information about relationship classes, see "ASSOCIATORS OF Statement" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1040,12 +1040,12 @@
         <summary>Retrieves relationship classes that relate the class according to the specified options, asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1075,20 +1075,20 @@
         <returns>A <see cref="T:System.CodeDom.CodeTypeDeclaration" /> representing the declaration for the strongly-typed class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example generates a strongly-typed class for the **Win32_LogicalDisk** class. The generated code is produced in C# or Visual Basic .NET.  
-  
- [!code-csharp[wminet_ManagementClass_GetStronglyTypedClassCode(2)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode(2)/cs/ManagementClass_GetStronglyTypedClassCode(2).cs#1)]
- [!code-vb[wminet_ManagementClass_GetStronglyTypedClassCode(2)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode(2)/vb/ManagementClass_GetStronglyTypedClassCode(2).vb#1)]  
-  
+The following example generates a strongly-typed class for the **Win32_LogicalDisk** class. The generated code is produced in C# or Visual Basic .NET.  
+ 
+[!code-csharp[wminet_ManagementClass_GetStronglyTypedClassCode(2)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode(2)/cs/ManagementClass_GetStronglyTypedClassCode(2).cs#1)]
+[!code-vb[wminet_ManagementClass_GetStronglyTypedClassCode(2)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode(2)/vb/ManagementClass_GetStronglyTypedClassCode(2).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1119,20 +1119,20 @@
           <see langword="true" />, if the method succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example generates a strongly-typed class for the **Win32_LogicalDisk** class. The generated code is in C# for the C# example and Visual Basic .NET for the Visual Basic .NET example.  
-  
- [!code-csharp[wminet_ManagementClass_GetStronglyTypedClassCode(3)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode(3)/cs/ManagementClass_GetStronglyTypedClassCode(3).cs#1)]
- [!code-vb[wminet_ManagementClass_GetStronglyTypedClassCode(3)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode(3)/vb/ManagementClass_GetStronglyTypedClassCode(3).vb#1)]  
-  
+The following example generates a strongly-typed class for the **Win32_LogicalDisk** class. The generated code is in C# for the C# example and Visual Basic .NET for the Visual Basic .NET example.  
+ 
+[!code-csharp[wminet_ManagementClass_GetStronglyTypedClassCode(3)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode(3)/cs/ManagementClass_GetStronglyTypedClassCode(3).cs#1)]
+[!code-vb[wminet_ManagementClass_GetStronglyTypedClassCode(3)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode(3)/vb/ManagementClass_GetStronglyTypedClassCode(3).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1155,20 +1155,20 @@
         <returns>A collection of the <see cref="T:System.Management.ManagementObject" /> objects that represent the subclasses of the WMI class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Management.ManagementClass.GetSubclasses%2A> method to list the subclasses to the **CIM_LogicalDisk** class. For more information, see "CIM_LogicalDisk" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
- [!code-csharp[wminet_ManagementClass_GetSubClasses()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses()/cs/ManagementClass_GetSubclasses().cs#1)]
- [!code-vb[wminet_ManagementClass_GetSubClasses()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses()/vb/ManagementClass_GetSubclasses().vb#1)]  
-  
+The following example uses the <xref:System.Management.ManagementClass.GetSubclasses%2A> method to list the subclasses to the **CIM_LogicalDisk** class. For more information, see "CIM_LogicalDisk" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
+[!code-csharp[wminet_ManagementClass_GetSubClasses()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses()/cs/ManagementClass_GetSubclasses().cs#1)]
+[!code-vb[wminet_ManagementClass_GetSubClasses()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses()/vb/ManagementClass_GetSubclasses().vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1194,20 +1194,20 @@
         <returns>A collection of the <see cref="T:System.Management.ManagementObject" /> objects representing the subclasses of the WMI class, according to the specified options.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then receive the subclasses of the WMI class passed into the constructor.  
-  
- [!code-csharp[wminet_ManagementClass_GetSubClasses(E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses(E)/cs/ManagementClass_GetSubclasses(E).cs#1)]
- [!code-vb[wminet_ManagementClass_GetSubClasses(E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses(E)/vb/ManagementClass_GetSubclasses(E).vb#1)]  
-  
+The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then receive the subclasses of the WMI class passed into the constructor.  
+ 
+[!code-csharp[wminet_ManagementClass_GetSubClasses(E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses(E)/cs/ManagementClass_GetSubclasses(E).cs#1)]
+[!code-vb[wminet_ManagementClass_GetSubClasses(E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses(E)/vb/ManagementClass_GetSubclasses(E).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1232,12 +1232,12 @@
         <summary>Returns the collection of all classes derived from this class, asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1264,12 +1264,12 @@
         <summary>Retrieves all classes derived from this class, asynchronously, using the specified options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1291,20 +1291,20 @@
         <value>A <see cref="T:System.Management.MethodDataCollection" /> representing the methods defined in the WMI class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the methods in the WMI class passed into the constructor.  
-  
- [!code-csharp[wminet_ManagementClass_Methods#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Methods/cs/ManagementClass_Methods.cs#1)]
- [!code-vb[wminet_ManagementClass_Methods#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Methods/vb/ManagementClass_Methods.vb#1)]  
-  
+The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the methods in the WMI class passed into the constructor.  
+ 
+[!code-csharp[wminet_ManagementClass_Methods#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Methods/cs/ManagementClass_Methods.cs#1)]
+[!code-vb[wminet_ManagementClass_Methods#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Methods/vb/ManagementClass_Methods.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1326,21 +1326,21 @@
         <value>The path of the object's class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the property is set to a new value, the <xref:System.Management.ManagementClass> will be disconnected from any previously-bound WMI class. Reconnect to the new WMI class path.  
-  
+When the property is set to a new value, the <xref:System.Management.ManagementClass> will be disconnected from any previously-bound WMI class. Reconnect to the new WMI class path.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the methods in the WMI class passed into the constructor.  
-  
- [!code-csharp[wminet_ManagementClass_Path#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Path/cs/ManagementClass_Path.cs#1)]
- [!code-vb[wminet_ManagementClass_Path#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Path/vb/ManagementClass_Path.vb#1)]  
-  
+The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the methods in the WMI class passed into the constructor.  
+ 
+[!code-csharp[wminet_ManagementClass_Path#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_Path/cs/ManagementClass_Path.cs#1)]
+[!code-vb[wminet_ManagementClass_Path#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_Path/vb/ManagementClass_Path.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1354,12 +1354,12 @@
         <summary>Generates a strongly-typed class for a given WMI class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1373,12 +1373,12 @@
         <summary>Retrieves relationship classes that relate the class to others.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1392,12 +1392,12 @@
         <summary>Returns the collection of all instances of the class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1411,12 +1411,12 @@
         <summary>Returns the collection of all derived classes for the class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1430,12 +1430,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1449,12 +1449,12 @@
         <summary>Retrieves classes related to the WMI class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

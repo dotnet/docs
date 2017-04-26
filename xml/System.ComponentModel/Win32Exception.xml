@@ -29,19 +29,19 @@
     <summary>Throws an exception for a Win32 error code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Win32 error codes are translated from their numeric representations into a system message when they are displayed. Use <xref:System.ComponentModel.Win32Exception.NativeErrorCode%2A> to access the numeric representation of the error code associated with this exception. For more information about the error codes, see "Win32 Error Codes" in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/).  
+Win32 error codes are translated from their numeric representations into a system message when they are displayed. Use <xref:System.ComponentModel.Win32Exception.NativeErrorCode%2A> to access the numeric representation of the error code associated with this exception. For more information about the error codes, see "Win32 Error Codes" in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to catch a Win32 exception and interpret its content. The example attempts to start a nonexistent executable, which results in a Win32 exception. Upon catching the exception, the example fetches the respective error message, code, and origin of the exception.  
-  
- [!code-cpp[Win32Exception#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Win32Exception/CPP/win32exception.cpp#1)]
- [!code-csharp[Win32Exception#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Win32Exception/CS/win32exception.cs#1)]
- [!code-vb[Win32Exception#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Win32Exception/VB/win32exception.vb#1)]  
-  
+The following code example shows how to catch a Win32 exception and interpret its content. The example attempts to start a nonexistent executable, which results in a Win32 exception. Upon catching the exception, the example fetches the respective error message, code, and origin of the exception.  
+ 
+[!code-cpp[Win32Exception#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Win32Exception/CPP/win32exception.cpp#1)]
+[!code-csharp[Win32Exception#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Win32Exception/CS/win32exception.cs#1)]
+[!code-vb[Win32Exception#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Win32Exception/VB/win32exception.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,12 +69,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Win32Exception" /> class with the last Win32 error that occurred.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The detailed description of the error will be determined by the Win32 error message associated with the error.  
-  
- This constructor uses the <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> method of <xref:System.Runtime.InteropServices.Marshal> to get its error code.  
-  
+The detailed description of the error will be determined by the Win32 error message associated with the error.  
+ 
+This constructor uses the <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> method of <xref:System.Runtime.InteropServices.Marshal> to get its error code.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -106,10 +106,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Win32Exception" /> class with the specified error.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The detailed description of the error is determined by the Win32 error message associated with the error.  
-  
+The detailed description of the error is determined by the Win32 error message associated with the error.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -171,10 +171,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Win32Exception" /> class with the specified error and the specified detailed description.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The detailed description of the error is determined by the Win32 error message associated with the error.  
-  
+The detailed description of the error is determined by the Win32 error message associated with the error.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>

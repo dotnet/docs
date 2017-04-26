@@ -14,10 +14,10 @@
     <summary>Represents the displayable claim object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Usually, the display tag (the <xref:System.IdentityModel.Metadata.DisplayClaim.DisplayTag%2A> property) and the description (the Description property) are localized. The <xref:System.IdentityModel.Metadata.DisplayClaim.ClaimType%2A> property identifies different claim types. The display value (the <xref:System.IdentityModel.Metadata.DisplayClaim.DisplayValue%2A> property) is the string representation of the claim.Resource.  
-  
+Usually, the display tag (the <xref:System.IdentityModel.Metadata.DisplayClaim.DisplayTag%2A> property) and the description (the Description property) are localized. The <xref:System.IdentityModel.Metadata.DisplayClaim.ClaimType%2A> property identifies different claim types. The display value (the <xref:System.IdentityModel.Metadata.DisplayClaim.DisplayValue%2A> property) is the string representation of the claim.Resource.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.DisplayClaim" /> class that has the specified claim type, display name, display value, and description. The claim is required.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Metadata.DisplayClaim.Optional%2A> property is initialized to `true` in the new instance.  
-  
+The <xref:System.IdentityModel.Metadata.DisplayClaim.Optional%2A> property is initialized to `true` in the new instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -145,10 +145,10 @@
         <value>A URI that represents the claim type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This required attribute provides the unique identifier (URI) of the individual claim returned in the security token  
-  
+This required attribute provides the unique identifier (URI) of the individual claim returned in the security token  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,10 +174,10 @@
         <returns>Returns <see cref="T:System.IdentityModel.Metadata.DisplayClaim" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Metadata.DisplayClaim.DisplayTag%2A> and <xref:System.IdentityModel.Metadata.DisplayClaim.Description%2A> properties are set to default values based on the specified claim type. If default values do not exist for the properties, they are set to `null`.  
-  
+The <xref:System.IdentityModel.Metadata.DisplayClaim.DisplayTag%2A> and <xref:System.IdentityModel.Metadata.DisplayClaim.Description%2A> properties are set to default values based on the specified claim type. If default values do not exist for the properties, they are set to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,10 +199,10 @@
         <value>The description for the display claim.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional element provides a description of the semantics for the claim returned in the security token.  
-  
+This optional element provides a description of the semantics for the claim returned in the security token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,10 +224,10 @@
         <value>The friendly name for the display claim.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional element provides a friendly name for the claim  returned in the security token.  
-  
+This optional element provides a friendly name for the claim  returned in the security token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,10 +249,10 @@
         <value>The displayable value for the display claim.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This optional element provides one or more displayable values for the claim returned in the security token.  
-  
+This optional element provides one or more displayable values for the claim returned in the security token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,10 +275,10 @@
           <see langword="true" /> if the display claim is optional; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The optional attribute.  
-  
+The optional attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>

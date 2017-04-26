@@ -19,10 +19,10 @@
     <summary>Provides a visual editor for <see cref="T:System.Web.UI.WebControls.DataPager" /> fields.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.DataPagerFieldTypeEditor> class provides a visual editor that is used internally by the <xref:System.Web.UI.WebControls.DataPager> control to set the <xref:System.Web.UI.WebControls.DataPager.Fields%2A> property.  
-  
+The <xref:System.Web.UI.Design.WebControls.DataPagerFieldTypeEditor> class provides a visual editor that is used internally by the <xref:System.Web.UI.WebControls.DataPager> control to set the <xref:System.Web.UI.WebControls.DataPager.Fields%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
         <returns>One of the enumeration values that indicates the type of style that the editor will use.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method indicates the editor style that is used by the <xref:System.Web.UI.Design.WebControls.DataPagerFieldTypeEditor.EditValue%2A> method and will always return `UITypeEditorEditStyle.Modal`.  
-  
+This method indicates the editor style that is used by the <xref:System.Web.UI.Design.WebControls.DataPagerFieldTypeEditor.EditValue%2A> method and will always return `UITypeEditorEditStyle.Modal`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

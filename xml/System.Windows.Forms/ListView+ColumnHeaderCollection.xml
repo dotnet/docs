@@ -23,26 +23,26 @@
     <summary>Represents the collection of column headers in a <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Forms.ListView.ColumnHeaderCollection> class stores the column headers that are displayed in the <xref:System.Windows.Forms.ListView> control when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>. The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection> stores <xref:System.Windows.Forms.ColumnHeader> objects that define the text to display for a column as well as how the column header is displayed in the <xref:System.Windows.Forms.ListView> control when displaying columns. When a <xref:System.Windows.Forms.ListView> displays columns, the items and their subitems are displayed in their own columns. To specify which columns subitem data is displayed under, see the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection> class.  
-  
- There are a number of ways to add column headers to the collection. The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method adds a single column header to the collection. To add a number of column headers to the collection, you create an array of <xref:System.Windows.Forms.ColumnHeader> objects and pass it to the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method. If you want to insert a column header at a specific location in the collection, you can use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method. To remove column headers, you can use either the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove%2A> method or the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveAt%2A> method if you know where the column header is located in the collection. The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Clear%2A> method allows you to remove all column headers from the collection instead of using the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove%2A> method to remove a single column header at a time.  
-  
- In addition to methods and properties for adding and removing column headers, the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection> also provides methods to find column headers in the collection. The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Contains%2A> method enables you to determine whether a column header is a member of the collection. Once you know that the column header is located in the collection, you can use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf%2A> method to determine where the column header is located in the collection.  
-  
+A <xref:System.Windows.Forms.ListView.ColumnHeaderCollection> class stores the column headers that are displayed in the <xref:System.Windows.Forms.ListView> control when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>. The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection> stores <xref:System.Windows.Forms.ColumnHeader> objects that define the text to display for a column as well as how the column header is displayed in the <xref:System.Windows.Forms.ListView> control when displaying columns. When a <xref:System.Windows.Forms.ListView> displays columns, the items and their subitems are displayed in their own columns. To specify which columns subitem data is displayed under, see the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection> class.  
+ 
+There are a number of ways to add column headers to the collection. The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method adds a single column header to the collection. To add a number of column headers to the collection, you create an array of <xref:System.Windows.Forms.ColumnHeader> objects and pass it to the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method. If you want to insert a column header at a specific location in the collection, you can use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method. To remove column headers, you can use either the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove%2A> method or the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveAt%2A> method if you know where the column header is located in the collection. The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Clear%2A> method allows you to remove all column headers from the collection instead of using the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove%2A> method to remove a single column header at a time.  
+ 
+In addition to methods and properties for adding and removing column headers, the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection> also provides methods to find column headers in the collection. The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Contains%2A> method enables you to determine whether a column header is a member of the collection. Once you know that the column header is located in the collection, you can use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf%2A> method to determine where the column header is located in the collection.  
+ 
 > [!NOTE]
 >  Unexpected behavior can result when the combined width of all columns exceeds 32,768 pixels.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a form that contains a <xref:System.Windows.Forms.ListView> control that manually sorts items when a column in the <xref:System.Windows.Forms.ListView> control is clicked. The example defines a class called `ListViewItemComparer` that implements the <xref:System.Collections.IComparer?displayProperty=fullName> interface that performs the <xref:System.Windows.Forms.ListViewItem> comparison. The example creates an instance of `ListViewItemComparer` and uses it to set the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property of the <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ListView.Sort%2A> method call in the <xref:System.Windows.Forms.ListView.ColumnClick> event handler uses the methods defined in `ListViewItemComparer` to perform the sort of items, based on the column that is clicked.  
-  
- [!code-cpp[ListView.ColumnClick#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListView.ColumnClick/CPP/listviewsort1.cpp#1)]
- [!code-csharp[ListView.ColumnClick#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListView.ColumnClick/CS/listviewsort1.cs#1)]
- [!code-vb[ListView.ColumnClick#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListView.ColumnClick/VB/listviewsort1.vb#1)]  
-  
+The following code example creates a form that contains a <xref:System.Windows.Forms.ListView> control that manually sorts items when a column in the <xref:System.Windows.Forms.ListView> control is clicked. The example defines a class called `ListViewItemComparer` that implements the <xref:System.Collections.IComparer?displayProperty=fullName> interface that performs the <xref:System.Windows.Forms.ListViewItem> comparison. The example creates an instance of `ListViewItemComparer` and uses it to set the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property of the <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ListView.Sort%2A> method call in the <xref:System.Windows.Forms.ListView.ColumnClick> event handler uses the methods defined in `ListViewItemComparer` to perform the sort of items, based on the column that is clicked.  
+ 
+[!code-cpp[ListView.ColumnClick#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListView.ColumnClick/CPP/listviewsort1.cpp#1)]
+[!code-csharp[ListView.ColumnClick#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListView.ColumnClick/CS/listviewsort1.cs#1)]
+[!code-vb[ListView.ColumnClick#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListView.ColumnClick/VB/listviewsort1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot create an instance of this class without associating it with a <xref:System.Windows.Forms.ListView> control.  
-  
+You cannot create an instance of this class without associating it with a <xref:System.Windows.Forms.ListView> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
         <returns>The <see cref="T:System.Windows.Forms.ColumnHeader" /> with the specified text that was added to the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The column header will be added to the end of the collection.  
-  
+The column header will be added to the end of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,21 +122,21 @@
         <returns>The zero-based index into the collection where the item was added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method to add an existing <xref:System.Windows.Forms.ColumnHeader> to the collection. If you want to create a new <xref:System.Windows.Forms.ColumnHeader> at the time you add it to the collection, you can use the other version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method.  
+You can use this version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method to add an existing <xref:System.Windows.Forms.ColumnHeader> to the collection. If you want to create a new <xref:System.Windows.Forms.ColumnHeader> at the time you add it to the collection, you can use the other version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method.  
+ 
+When column headers are added, they are added to the end of the collection. To insert a column header into the collection at a specific position, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method. To add a set of column headers to the collection in a single operation, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+ 
   
- When column headers are added, they are added to the end of the collection. To insert a column header into the collection at a specific position, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method. To add a set of column headers to the collection in a single operation, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example creates a form that contains a <xref:System.Windows.Forms.ListView> control that manually sorts items when a column in the <xref:System.Windows.Forms.ListView> control is clicked. The example defines a class called `ListViewItemComparer` that implements the <xref:System.Collections.IComparer?displayProperty=fullName> interface that performs the <xref:System.Windows.Forms.ListViewItem> comparison. The example creates an instance of `ListViewItemComparer` and uses it to set the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property of the <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ListView.Sort%2A> method call in the <xref:System.Windows.Forms.ListView.ColumnClick> event handler uses the methods defined in `ListViewItemComparer` to perform the sort of items, based on the column that is clicked.  
-  
- [!code-cpp[ListView.ColumnClick#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListView.ColumnClick/CPP/listviewsort1.cpp#1)]
- [!code-csharp[ListView.ColumnClick#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListView.ColumnClick/CS/listviewsort1.cs#1)]
- [!code-vb[ListView.ColumnClick#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListView.ColumnClick/VB/listviewsort1.vb#1)]  
-  
+The following code example creates a form that contains a <xref:System.Windows.Forms.ListView> control that manually sorts items when a column in the <xref:System.Windows.Forms.ListView> control is clicked. The example defines a class called `ListViewItemComparer` that implements the <xref:System.Collections.IComparer?displayProperty=fullName> interface that performs the <xref:System.Windows.Forms.ListViewItem> comparison. The example creates an instance of `ListViewItemComparer` and uses it to set the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property of the <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ListView.Sort%2A> method call in the <xref:System.Windows.Forms.ListView.ColumnClick> event handler uses the methods defined in `ListViewItemComparer` to perform the sort of items, based on the column that is clicked.  
+ 
+[!code-cpp[ListView.ColumnClick#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListView.ColumnClick/CPP/listviewsort1.cpp#1)]
+[!code-csharp[ListView.ColumnClick#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListView.ColumnClick/CS/listviewsort1.cs#1)]
+[!code-vb[ListView.ColumnClick#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListView.ColumnClick/VB/listviewsort1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@
         <returns>The <see cref="T:System.Windows.Forms.ColumnHeader" /> with the specified text and width that was added to the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The column is added at the end of the collection.  
-  
+The column is added at the end of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,12 +195,12 @@
         <returns>The <see cref="T:System.Windows.Forms.ColumnHeader" /> with the specified key and text that was added to the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
-  
- The column is added at the end of the collection.  
-  
+The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+ 
+The column is added at the end of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,37 +230,37 @@
         <returns>The <see cref="T:System.Windows.Forms.ColumnHeader" /> that was created and added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method to create a new <xref:System.Windows.Forms.ColumnHeader> to add to the collection. The text of the new <xref:System.Windows.Forms.ColumnHeader> added to the control is based on the `text` parameter. This version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method also allows you to specify the width of the column and the alignment of text in the column header. If you have an existing <xref:System.Windows.Forms.ColumnHeader> that you want to add to the collection, use the version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method that accepts a <xref:System.Windows.Forms.ColumnHeader> as its parameter.  
+You can use this version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method to create a new <xref:System.Windows.Forms.ColumnHeader> to add to the collection. The text of the new <xref:System.Windows.Forms.ColumnHeader> added to the control is based on the `text` parameter. This version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method also allows you to specify the width of the column and the alignment of text in the column header. If you have an existing <xref:System.Windows.Forms.ColumnHeader> that you want to add to the collection, use the version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method that accepts a <xref:System.Windows.Forms.ColumnHeader> as its parameter.  
+ 
+When column headers are added, they are added to the end of the collection. To insert a column header into the collection at a specific position, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method. To add a set of column headers to the collection in a single operation, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+ 
   
- When column headers are added, they are added to the end of the collection. To insert a column header into the collection at a specific position, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method. To add a set of column headers to the collection in a single operation, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.ListView> control with three <xref:System.Windows.Forms.ListViewItem> objects specified and three <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects specified for each item. The example also creates <xref:System.Windows.Forms.ColumnHeader> objects to display the subitems in details view. Two <xref:System.Windows.Forms.ImageList> objects are also created in the code example to provide images for the <xref:System.Windows.Forms.ListViewItem> objects. These <xref:System.Windows.Forms.ImageList> objects are added to the <xref:System.Windows.Forms.ListView.LargeImageList%2A> and <xref:System.Windows.Forms.ListView.SmallImageList%2A> properties. The example uses the following properties in creating the <xref:System.Windows.Forms.ListView> control:  
-  
+The following code example creates a <xref:System.Windows.Forms.ListView> control with three <xref:System.Windows.Forms.ListViewItem> objects specified and three <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects specified for each item. The example also creates <xref:System.Windows.Forms.ColumnHeader> objects to display the subitems in details view. Two <xref:System.Windows.Forms.ImageList> objects are also created in the code example to provide images for the <xref:System.Windows.Forms.ListViewItem> objects. These <xref:System.Windows.Forms.ImageList> objects are added to the <xref:System.Windows.Forms.ListView.LargeImageList%2A> and <xref:System.Windows.Forms.ListView.SmallImageList%2A> properties. The example uses the following properties in creating the <xref:System.Windows.Forms.ListView> control:  
+ 
 -   <xref:System.Windows.Forms.ListView.View%2A>  
-  
+ 
 -   <xref:System.Windows.Forms.ListView.LabelEdit%2A>  
-  
+ 
 -   <xref:System.Windows.Forms.ListView.AllowColumnReorder%2A>  
-  
+ 
 -   <xref:System.Windows.Forms.ListView.CheckBoxes%2A>  
-  
+ 
 -   <xref:System.Windows.Forms.ListView.FullRowSelect%2A>  
-  
+ 
 -   <xref:System.Windows.Forms.ListView.GridLines%2A>  
-  
+ 
 -   <xref:System.Windows.Forms.ListView.Sorting%2A>  
-  
- This example requires that you have added the code to a <xref:System.Windows.Forms.Form> and call the method created in the example from the constructor or another method on the form. The example also requires that images named `MySmallImage1`, `MySmallImage2`, `MyLargeImage1`, and `MyLargeImage2` are located in the root directory of drive C.  
-  
- [!code-cpp[ListViewExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListViewExample/CPP/form1.cpp#1)]
- [!code-csharp[ListViewExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewExample/CS/form1.cs#1)]
- [!code-vb[ListViewExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewExample/VB/form1.vb#1)]  
-  
+ 
+This example requires that you have added the code to a <xref:System.Windows.Forms.Form> and call the method created in the example from the constructor or another method on the form. The example also requires that images named `MySmallImage1`, `MySmallImage2`, `MyLargeImage1`, and `MyLargeImage2` are located in the root directory of drive C.  
+ 
+[!code-cpp[ListViewExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListViewExample/CPP/form1.cpp#1)]
+[!code-csharp[ListViewExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewExample/CS/form1.cs#1)]
+[!code-vb[ListViewExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewExample/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -290,12 +290,12 @@
         <returns>The <see cref="T:System.Windows.Forms.ColumnHeader" /> with the given text, key, and width that was added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
-  
- The column is added at the end of the collection.  
-  
+The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+ 
+The column is added at the end of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,12 +329,12 @@
         <returns>The <see cref="T:System.Windows.Forms.ColumnHeader" /> with the specified key, aligned text, width, and image index that has been added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
-  
- The column is added at the end of the collection.  
-  
+The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+ 
+The column is added at the end of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -368,12 +368,12 @@
         <returns>The <see cref="T:System.Windows.Forms.ColumnHeader" /> with the specified key, aligned text, width, and image key that has been added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
-  
- The column is added at the end of the collection.  
-  
+The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+ 
+The column is added at the end of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,10 +398,10 @@
         <summary>Adds an array of column headers to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to reuse the column headers used in a different <xref:System.Windows.Forms.ListView> control. If you want to add a single <xref:System.Windows.Forms.ColumnHeader>, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. You can also use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method if you want to add a single <xref:System.Windows.Forms.ColumnHeader> at a specific position in the collection.  
-  
+You can use this method to reuse the column headers used in a different <xref:System.Windows.Forms.ListView> control. If you want to add a single <xref:System.Windows.Forms.ColumnHeader>, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. You can also use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method if you want to add a single <xref:System.Windows.Forms.ColumnHeader> at a specific position in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,10 +423,10 @@
         <summary>Removes all column headers from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you remove column headers from the collection, all information about the deleted column headers is lost. To remove a single column header from the collection use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove%2A> or <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveAt%2A> method.  
-  
+When you remove column headers from the collection, all information about the deleted column headers is lost. To remove a single column header from the collection use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove%2A> or <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveAt%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -453,10 +453,10 @@
           <see langword="true" /> if the column header is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Contains%2A> method enables you to determine whether a <xref:System.Windows.Forms.ColumnHeader> is a member of the collection. Once you know that the column header is in the collection, you can use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf%2A> method to determine the position of the column header in the collection.  
-  
+The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Contains%2A> method enables you to determine whether a <xref:System.Windows.Forms.ColumnHeader> is a member of the collection. Once you know that the column header is in the collection, you can use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf%2A> method to determine the position of the column header in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -483,12 +483,12 @@
           <see langword="true" /> if a column with the specified name is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The key comparison is not case-sensitive. If `key` is `null` or empty, <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.ContainsKey%2A> returns `false.`  
-  
- The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for an item in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
-  
+The key comparison is not case-sensitive. If `key` is `null` or empty, <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.ContainsKey%2A> returns `false.`  
+ 
+The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for an item in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -515,10 +515,10 @@
         <value>The number of items in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property enables you to determine the number of columns that are displayed in the <xref:System.Windows.Forms.ListView> when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>. You can then use this value when you are looping through the values of the collection and you need to provide a number of iterations to perform the loop.  
-  
+This property enables you to determine the number of columns that are displayed in the <xref:System.Windows.Forms.ListView> when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>. You can then use this value when you are looping through the values of the collection and you need to provide a number of iterations to perform the loop.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -563,10 +563,10 @@
         <returns>The zero-based index of the column header's location in the collection. If the column header is not located in the collection, the return value is -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf%2A> method enables you to determine the position of a column header in the collection. To determine whether a column header is contained in the collection before calling this method, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Contains%2A> method.  
-  
+The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf%2A> method enables you to determine the position of a column header in the collection. To determine whether a column header is contained in the collection before calling this method, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Contains%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -592,14 +592,14 @@
         <returns>The zero-based index for the first occurrence of the column with the specified name, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The key comparison is not case-sensitive. If `key` is `null` or an empty string, <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOfKey%2A> returns -1`.`  
-  
- The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
-  
- If <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
-  
+The key comparison is not case-sensitive. If `key` is `null` or an empty string, <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOfKey%2A> returns -1`.`  
+ 
+The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+ 
+If <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -626,10 +626,10 @@
         <summary>Creates a new column header with the specified text, and inserts the header into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
-  
+To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -658,12 +658,12 @@
         <summary>Inserts an existing column header into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method enables you to insert an existing <xref:System.Windows.Forms.ColumnHeader> at a specific position in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
-  
- If you want to create a new <xref:System.Windows.Forms.ColumnHeader> and insert it at a specific position in the collection, use the other version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method. To add a column header without specifying a specific position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
-  
+This version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method enables you to insert an existing <xref:System.Windows.Forms.ColumnHeader> at a specific position in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+ 
+If you want to create a new <xref:System.Windows.Forms.ColumnHeader> and insert it at a specific position in the collection, use the other version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method. To add a column header without specifying a specific position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -694,10 +694,10 @@
         <summary>Creates a new column header with the specified text and initial width, and inserts the header into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
-  
+To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -726,12 +726,12 @@
         <summary>Creates a new column header with the specified text and key, and inserts the header into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
-  
- The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
-  
+To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+ 
+The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -762,10 +762,10 @@
         <summary>Creates a new column header and inserts it into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method enables you to create a new <xref:System.Windows.Forms.ColumnHeader> with specific column header text, width, and text alignment setting and insert it at a specific position in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>. You can use this method if you want to insert a new column header into an existing collection of column headers. If you want to use an existing <xref:System.Windows.Forms.ColumnHeader> and insert it at a specific position in the collection, use the other version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method. To add a column header without specifying a specific position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
-  
+This version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method enables you to create a new <xref:System.Windows.Forms.ColumnHeader> with specific column header text, width, and text alignment setting and insert it at a specific position in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>. You can use this method if you want to insert a new column header into an existing collection of column headers. If you want to use an existing <xref:System.Windows.Forms.ColumnHeader> and insert it at a specific position in the collection, use the other version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method. To add a column header without specifying a specific position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -798,12 +798,12 @@
         <summary>Creates a new column header with the specified text, key, and width, and inserts the header into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
-  
- The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
-  
+To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+ 
+The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -838,12 +838,12 @@
         <summary>Creates a new column header with the specified aligned text, key, width, and image index, and inserts the header into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
-  
- The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
-  
+To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+ 
+The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -878,12 +878,12 @@
         <summary>Creates a new column header with the specified aligned text, key, width, and image key, and inserts the header into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
-  
- The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
-  
+To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+ 
+The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -906,10 +906,10 @@
           <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is always `false` for this collection.  
-  
+This property is always `false` for this collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -935,10 +935,10 @@
         <value>A <see cref="T:System.Windows.Forms.ColumnHeader" /> representing the column header located at the specified index within the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to obtain the <xref:System.Windows.Forms.ColumnHeader> stored at a specific location in the collection. To determine the index of a specific column header in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf%2A> method.  
-  
+You can use this method to obtain the <xref:System.Windows.Forms.ColumnHeader> stored at a specific location in the collection. To determine the index of a specific column header in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -966,10 +966,10 @@
         <value>The <see cref="T:System.Windows.Forms.ColumnHeader" /> with the specified key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The key comparison is not case-sensitive. If `key` is `null` or an empty string, <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Item%2A> returns `null`.  
-  
+The key comparison is not case-sensitive. If `key` is `null` or an empty string, <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Item%2A> returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -994,10 +994,10 @@
         <summary>Removes the specified column header from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you remove a column header from the collection, the indexes change for subsequent column headers in the collection. All information about the removed column header is deleted. You can use this method to remove a specific column header from the collection by specifying the actual <xref:System.Windows.Forms.ColumnHeader> to remove. To specify the index of the column header to remove instead of the column header itself, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveAt%2A> method. To remove all column headers from the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Clear%2A> method.  
-  
+When you remove a column header from the collection, the indexes change for subsequent column headers in the collection. All information about the removed column header is deleted. You can use this method to remove a specific column header from the collection by specifying the actual <xref:System.Windows.Forms.ColumnHeader> to remove. To specify the index of the column header to remove instead of the column header itself, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveAt%2A> method. To remove all column headers from the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Clear%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1022,10 +1022,10 @@
         <summary>Removes the column header at the specified index within the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you remove a column header from the collection, the indexes change for subsequent column headers in the collection. All information about the removed column header is deleted. You can use this method to remove a specific column header from the collection by specifying the index of the column header to remove from the collection. To specify the column header to remove instead of the index to the column header, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove%2A> method. To remove all column headers from the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Clear%2A> method.  
-  
+When you remove a column header from the collection, the indexes change for subsequent column headers in the collection. All information about the removed column header is deleted. You can use this method to remove a specific column header from the collection by specifying the index of the column header to remove from the collection. To specify the column header to remove instead of the index to the column header, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove%2A> method. To remove all column headers from the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Clear%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1052,12 +1052,12 @@
         <summary>Removes the column with the specified key from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
-  
- The key comparison is not-case sensitive. If `key` is `null` or an empty string, <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveByKey%2A> does not change the collection`.`  
-  
+The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+ 
+The key comparison is not-case sensitive. If `key` is `null` or an empty string, <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveByKey%2A> does not change the collection`.`  
+ 
  ]]></format>
         </remarks>
       </Docs>

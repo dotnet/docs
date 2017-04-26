@@ -22,18 +22,18 @@
     <summary>Indicates the security services requested for an authenticated stream.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used by the <xref:System.Net.Security.NegotiateStream> class.  
+This enumeration is used by the <xref:System.Net.Security.NegotiateStream> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates creating and using a client-side <xref:System.Net.Security.NegotiateStream>.  
-  
- [!code-cpp[NclNegoSyncClient#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#0)]
- [!code-csharp[NclNegoSyncClient#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#0)]  
-  
+The following code example demonstrates creating and using a client-side <xref:System.Net.Security.NegotiateStream>.  
+ 
+[!code-cpp[NclNegoSyncClient#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoSyncClient/CPP/NclNegoSyncClient.cpp#0)]
+[!code-csharp[NclNegoSyncClient#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoSyncClient/CS/client.cs#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

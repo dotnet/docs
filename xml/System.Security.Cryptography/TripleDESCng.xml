@@ -74,10 +74,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.TripleDESCng" /> class with the specified key name, which represents an existing persisted 3DES key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses a default <xref:System.Security.Cryptography.CngKeyOpenOptions> value of <xref:System.Security.Cryptography.CngKeyOpenOptions> and <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A> as the default key storage provider (KSP) to open the key.  
-  
+This constructor uses a default <xref:System.Security.Cryptography.CngKeyOpenOptions> value of <xref:System.Security.Cryptography.CngKeyOpenOptions> and <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A> as the default key storage provider (KSP) to open the key.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -114,10 +114,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.TripleDESCng" /> class with the specified key name, which represents an existing persisted 3DES key, and the specified key storage provider (KSP).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A default <xref:System.Security.Cryptography.CngKeyOpenOptions> value of <xref:System.Security.Cryptography.CngKeyOpenOptions> is used to open the key.  
-  
+A default <xref:System.Security.Cryptography.CngKeyOpenOptions> value of <xref:System.Security.Cryptography.CngKeyOpenOptions> is used to open the key.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -196,10 +196,10 @@
         <returns>A symmetric 3DES decryptor object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method decrypts an encrypted message created using the <xref:System.Security.Cryptography.TripleDESCng.CreateEncryptor> overload with the same signature.  
-  
+This method decrypts an encrypted message created using the <xref:System.Security.Cryptography.TripleDESCng.CreateEncryptor> overload with the same signature.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -236,13 +236,13 @@
         <returns>A symmetric 3DES decryptor object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method decrypts an encrypted message created using the <xref:System.Security.Cryptography.TripleDESCng.CreateEncryptor%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%29> overload with the same signature.  
-  
+This method decrypts an encrypted message created using the <xref:System.Security.Cryptography.TripleDESCng.CreateEncryptor%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%29> overload with the same signature.  
+ 
 > [!NOTE]
 >  If you've created the <xref:System.Security.Cryptography.TripleDESCng> object using an existing persisted key and you want to make use of that key when decrypting the message, you want to set the <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A> property and then call the  parameterless <xref:System.Security.Cryptography.TripleDESCng.CreateDecryptor> overload instead; otherwise, using this method will create an ephemeral key as specified by the `rgbKey` parameter.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -288,10 +288,10 @@
         <returns>A symmetric 3DES encryptor object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to encrypt a message and then use the <xref:System.Security.Cryptography.TripleDESCng.CreateDecryptor%2A> overload with the same signature to decrypt the  result of this method.  
-  
+Use this method to encrypt a message and then use the <xref:System.Security.Cryptography.TripleDESCng.CreateDecryptor%2A> overload with the same signature to decrypt the  result of this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,13 +328,13 @@
         <returns>A symmetric 3DES encryptor object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to encrypt a message and then use the <xref:System.Security.Cryptography.TripleDESCng.CreateDecryptor%2A> overload with the same signature to decrypt the  result of this method.  
-  
+Use this method to encrypt a message and then use the <xref:System.Security.Cryptography.TripleDESCng.CreateDecryptor%2A> overload with the same signature to decrypt the  result of this method.  
+ 
 > [!NOTE]
 >  If you've created the <xref:System.Security.Cryptography.TripleDESCng> object using an existing persisted key and you want to make use of that key when encrypting the message, you want to set the <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A> property and then call the  parameterless <xref:System.Security.Cryptography.TripleDESCng.CreateEncryptor> overload instead; otherwise, using this method will create an ephemeral key as specified by the `rgbKey` parameter.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -463,12 +463,12 @@
         <value>The key for the <see cref="T:System.Security.Cryptography.TripleDESCng" /> algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you've created the <xref:System.Security.Cryptography.TripleDESCng> object using an existing persisted key, when you read the value of the <xref:System.Security.Cryptography.TripleDESCng.Key%2A> property, an attempt to export the key will be made. In this case, if the key is not exportable, a <xref:System.Security.Cryptography.CryptographicException> will be thrown.  
-  
- In addition to that, if you set the value of the <xref:System.Security.Cryptography.TripleDESCng.Key%2A> property,  the persisted key will no longer be used and a temporary key will be used instead. If you need to use the persisted key again, a new instance of <xref:System.Security.Cryptography.TripleDESCng> class needs to be created.  
-  
+If you've created the <xref:System.Security.Cryptography.TripleDESCng> object using an existing persisted key, when you read the value of the <xref:System.Security.Cryptography.TripleDESCng.Key%2A> property, an attempt to export the key will be made. In this case, if the key is not exportable, a <xref:System.Security.Cryptography.CryptographicException> will be thrown.  
+ 
+In addition to that, if you set the value of the <xref:System.Security.Cryptography.TripleDESCng.Key%2A> property,  the persisted key will no longer be used and a temporary key will be used instead. If you need to use the persisted key again, a new instance of <xref:System.Security.Cryptography.TripleDESCng> class needs to be created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -499,10 +499,10 @@
         <value>The size, in bits, of the secret key used by the <see cref="T:System.Security.Cryptography.TripleDESCng" /> algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you've created the <xref:System.Security.Cryptography.TripleDESCng> object using an existing persisted key and you set the value of the <xref:System.Security.Cryptography.TripleDESCng.KeySize%2A> property,  the persisted key will no longer be used and a temporary key will be used instead. If you need to use the persisted key again, a new instance of <xref:System.Security.Cryptography.TripleDESCng> class needs to be created.  
-  
+If you've created the <xref:System.Security.Cryptography.TripleDESCng> object using an existing persisted key and you set the value of the <xref:System.Security.Cryptography.TripleDESCng.KeySize%2A> property,  the persisted key will no longer be used and a temporary key will be used instead. If you need to use the persisted key again, a new instance of <xref:System.Security.Cryptography.TripleDESCng> class needs to be created.  
+ 
  ]]></format>
         </remarks>
       </Docs>

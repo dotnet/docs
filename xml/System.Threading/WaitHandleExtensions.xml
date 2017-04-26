@@ -23,10 +23,10 @@
     <summary>Provides convenience methods to for working with a safe handle for a wait handle.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Threading.WaitHandleExtensions> class includes two extension methods that allow you to create a safe handle for a wait handle and to retrieve the native operating system handle from a safe handle.  
-  
+The <xref:System.Threading.WaitHandleExtensions> class includes two extension methods that allow you to create a safe handle for a wait handle and to retrieve the native operating system handle from a safe handle.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
         <returns>The safe wait handle that wraps the native operating system wait handle.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Threading.WaitHandleExtensions.GetSafeWaitHandle%2A> is an extension method that is equivalent to retrieving the value of the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A?displayProperty=fullName> property.  
-  
+<xref:System.Threading.WaitHandleExtensions.GetSafeWaitHandle%2A> is an extension method that is equivalent to retrieving the value of the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -112,10 +112,10 @@
         <summary>Sets a safe handle for a native operating system wait handle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Threading.WaitHandleExtensions.SetSafeWaitHandle%2A> is an extension method that is equivalent to assigning a value to the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A?displayProperty=fullName> property.  
-  
+<xref:System.Threading.WaitHandleExtensions.SetSafeWaitHandle%2A> is an extension method that is equivalent to assigning a value to the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

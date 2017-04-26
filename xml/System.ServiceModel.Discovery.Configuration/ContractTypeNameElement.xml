@@ -14,10 +14,10 @@
     <summary>Represents a workflow element that identifies by name the workflow service contract being searched for.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A contract type name is a property that refers to the set of criteria typically used when searching for a service. The set of criteria, or contract, is a collection of operations that specify what the endpoint communicates to the outside world. Each operation is a message exchange. For example, a request message and an associated reply message form a request/reply message exchange.  
-  
+A contract type name is a property that refers to the set of criteria typically used when searching for a service. The set of criteria, or contract, is a collection of operations that specify what the endpoint communicates to the outside world. Each operation is a message exchange. For example, a request message and an associated reply message form a request/reply message exchange.  
+ 
  ]]></format>
     </remarks>
   </Docs>

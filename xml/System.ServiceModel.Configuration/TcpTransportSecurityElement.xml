@@ -116,10 +116,10 @@
         <value>A <see cref="P:System.ServiceModel.TcpTransportSecurity.ProtectionLevel" /> value that defines message level security at the level of the named pipe.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Signing messages mitigates the risk of a third party tampering with the message while it is being transferred. Encryption provides data-level privacy during transport.  
-  
+Signing messages mitigates the risk of a third party tampering with the message while it is being transferred. Encryption provides data-level privacy during transport.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,10 +146,10 @@
         <value>The list of SSL/TLS protocols.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is Ssl3 &#124; Tls &#124; Tls11 &#124; Tls12. Versions of the framework prior to 4.6 only support Ssl3 and Tls. If these are not included, communication with earlier versions of the framework will not be possible. Specifying Tls11 and/or Tls12 will disable the usage of Ssl3, even if it has been included.  
-  
+The default value is Ssl3 &#124; Tls &#124; Tls11 &#124; Tls12. Versions of the framework prior to 4.6 only support Ssl3 and Tls. If these are not included, communication with earlier versions of the framework will not be possible. Specifying Tls11 and/or Tls12 will disable the usage of Ssl3, even if it has been included.  
+ 
  ]]></format>
         </remarks>
       </Docs>

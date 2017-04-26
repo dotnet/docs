@@ -11,16 +11,16 @@
     <summary>Provides a means to parse elements that permit mixtures of child elements or text.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For purposes of establishing or defining a content property or content model in WPF, <xref:System.Windows.Markup.IAddChild> is obsolete. Apply the <xref:System.Windows.Markup.ContentPropertyAttribute> to a custom class instead.  
-  
- For purposes of XAML parser/processor behavior, <xref:System.Windows.Markup.IAddChild> is obsolete. Collection behavior is now integrally part of the XAML type system and XAML processor implementations should use the dedicated APIs in the System.Xaml assembly. General user code should use the `Add` methods on the collection type used for the relevant type's child collection property.  
-  
- The main remaining scenario for <xref:System.Windows.Markup.IAddChild> is to support a <xref:System.Windows.FrameworkElementFactory> that can handle child object creation, which is an advanced scenario. See <xref:System.Windows.FrameworkElementFactory>.  
-  
- Callers in .NET Framework 4.5 Beta targeted applications that attempt to use the <xref:System.Windows.Markup.IAddChild> API for one of its original [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)] era purposes (WPF content model, XAML processing) should expect that many current <xref:System.Windows.Markup.IAddChild>-implementing classes will return <xref:System.NotImplementedException> or similar results for the <xref:System.Windows.Markup.IAddChild> API.  
-  
+For purposes of establishing or defining a content property or content model in WPF, <xref:System.Windows.Markup.IAddChild> is obsolete. Apply the <xref:System.Windows.Markup.ContentPropertyAttribute> to a custom class instead.  
+ 
+For purposes of XAML parser/processor behavior, <xref:System.Windows.Markup.IAddChild> is obsolete. Collection behavior is now integrally part of the XAML type system and XAML processor implementations should use the dedicated APIs in the System.Xaml assembly. General user code should use the `Add` methods on the collection type used for the relevant type's child collection property.  
+ 
+The main remaining scenario for <xref:System.Windows.Markup.IAddChild> is to support a <xref:System.Windows.FrameworkElementFactory> that can handle child object creation, which is an advanced scenario. See <xref:System.Windows.FrameworkElementFactory>.  
+ 
+Callers in .NET Framework 4.5 Beta targeted applications that attempt to use the <xref:System.Windows.Markup.IAddChild> API for one of its original [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)] era purposes (WPF content model, XAML processing) should expect that many current <xref:System.Windows.Markup.IAddChild>-implementing classes will return <xref:System.NotImplementedException> or similar results for the <xref:System.Windows.Markup.IAddChild> API.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <summary>Adds a child object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For purposes of establishing or defining a content property or content model in WPF, <xref:System.Windows.Markup.IAddChild> is obsolete. Apply the <xref:System.Windows.Markup.ContentPropertyAttribute> to a custom class instead.  
-  
+For purposes of establishing or defining a content property or content model in WPF, <xref:System.Windows.Markup.IAddChild> is obsolete. Apply the <xref:System.Windows.Markup.ContentPropertyAttribute> to a custom class instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,10 +73,10 @@
         <summary>Adds the text content of a node to the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See Remarks in <xref:System.Windows.Markup.IAddChild>.  
-  
+See Remarks in <xref:System.Windows.Markup.IAddChild>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

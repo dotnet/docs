@@ -18,12 +18,12 @@
     <summary>Contains values of properties that a component might need only occasionally.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.OwnerDrawPropertyBag> class enables a class to appear to have properties it really does not have. The class can then use the properties when needed, and save on memory when the class does not use the properties.  
-  
- The <xref:System.Windows.Forms.OwnerDrawPropertyBag> is used internally to the .NET Framework, and its constructors are private. You cannot create an instance of the <xref:System.Windows.Forms.OwnerDrawPropertyBag>.  
-  
+The <xref:System.Windows.Forms.OwnerDrawPropertyBag> class enables a class to appear to have properties it really does not have. The class can then use the properties when needed, and save on memory when the class does not use the properties.  
+ 
+The <xref:System.Windows.Forms.OwnerDrawPropertyBag> is used internally to the .NET Framework, and its constructors are private. You cannot create an instance of the <xref:System.Windows.Forms.OwnerDrawPropertyBag>.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

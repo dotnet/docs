@@ -54,12 +54,12 @@
         <summary>Removes all items from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base class calls this method when the list is being cleared. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
-  
- For more information, see the <xref:System.Collections.ObjectModel.Collection%601.ClearItems%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
-  
+The base class calls this method when the list is being cleared. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
+ 
+For more information, see the <xref:System.Collections.ObjectModel.Collection%601.ClearItems%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,12 +120,12 @@
         <summary>Inserts an item into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base class calls this method when an item is added to the collection. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
-  
- For more information, see the <xref:System.Collections.ObjectModel.Collection%601.InsertItem%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
-  
+The base class calls this method when an item is added to the collection. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
+ 
+For more information, see the <xref:System.Collections.ObjectModel.Collection%601.InsertItem%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,12 +150,12 @@
         <summary>Removes the item at the specified index in the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base class calls this method when an item is removed from the collection. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
-  
- For more information, see the <xref:System.Collections.ObjectModel.Collection%601.RemoveItem%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
-  
+The base class calls this method when an item is removed from the collection. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
+ 
+For more information, see the <xref:System.Collections.ObjectModel.Collection%601.RemoveItem%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,12 +182,12 @@
         <summary>Replaces the element at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base class calls this method when an item is set in the collection. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
-  
- For more information, see the <xref:System.Collections.ObjectModel.Collection%601.SetItem%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
-  
+The base class calls this method when an item is set in the collection. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
+ 
+For more information, see the <xref:System.Collections.ObjectModel.Collection%601.SetItem%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,21 +14,21 @@
     <summary>Provides data for the <see cref="E:System.Windows.Forms.TreeView.BeforeLabelEdit" /> and <see cref="E:System.Windows.Forms.TreeView.AfterLabelEdit" /> events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TreeView.AfterLabelEdit> event occurs when the user finishes editing the text for a tree node. The <xref:System.Windows.Forms.TreeView.BeforeLabelEdit> event occurs when the user begins editing the text for a tree node. A <xref:System.Windows.Forms.NodeLabelEditEventArgs> object specifies the new text to associate with the tree node, the tree node that contains the label to edit, and whether the edit operation has been canceled.  
+The <xref:System.Windows.Forms.TreeView.AfterLabelEdit> event occurs when the user finishes editing the text for a tree node. The <xref:System.Windows.Forms.TreeView.BeforeLabelEdit> event occurs when the user begins editing the text for a tree node. A <xref:System.Windows.Forms.NodeLabelEditEventArgs> object specifies the new text to associate with the tree node, the tree node that contains the label to edit, and whether the edit operation has been canceled.  
+ 
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
-   
-  
+ 
 ## Examples  
- The following example allows the user to edit nonroot tree nodes by using a <xref:System.Windows.Forms.ContextMenu>. When the user right clicks the mouse, the <xref:System.Windows.Forms.TreeNode> at that position is determined and stored in a variable named `mySelectedNode`. If a nonroot tree node was selected, it is put into an editable state, allowing the user to edit the node label. After the user stops editing the tree node label, the new label text is evaluated and saved. For this example, several characters are considered not valid in the label text. If one of the invalid characters is in the label string, or the string is empty, the user is notified of the error and the label is returned to its previous text.  
-  
- [!code-cpp[classic treenode.beginedit example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CPP/source.cpp#1)]
- [!code-csharp[classic treenode.beginedit example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CS/source.cs#1)]
- [!code-vb[classic treenode.beginedit example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/VB/source.vb#1)]  
-  
+The following example allows the user to edit nonroot tree nodes by using a <xref:System.Windows.Forms.ContextMenu>. When the user right clicks the mouse, the <xref:System.Windows.Forms.TreeNode> at that position is determined and stored in a variable named `mySelectedNode`. If a nonroot tree node was selected, it is put into an editable state, allowing the user to edit the node label. After the user stops editing the tree node label, the new label text is evaluated and saved. For this example, several characters are considered not valid in the label text. If one of the invalid characters is in the label string, or the string is empty, the user is notified of the error and the label is returned to its previous text.  
+ 
+[!code-cpp[classic treenode.beginedit example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CPP/source.cpp#1)]
+[!code-csharp[classic treenode.beginedit example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CS/source.cs#1)]
+[!code-vb[classic treenode.beginedit example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,10 +50,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.NodeLabelEditEventArgs" /> class for the specified <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.NodeLabelEditEventArgs.Node%2A> property is assigned the `node` parameter value.  
-  
+The <xref:System.Windows.Forms.NodeLabelEditEventArgs.Node%2A> property is assigned the `node` parameter value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,10 +77,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.NodeLabelEditEventArgs" /> class for the specified <see cref="T:System.Windows.Forms.TreeNode" /> and the specified text with which to update the tree node label.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.NodeLabelEditEventArgs.Node%2A> property is assigned the `node` parameter value, and the <xref:System.Windows.Forms.NodeLabelEditEventArgs.Label%2A> property is assigned the `label` parameter value.  
-  
+The <xref:System.Windows.Forms.NodeLabelEditEventArgs.Node%2A> property is assigned the `node` parameter value, and the <xref:System.Windows.Forms.NodeLabelEditEventArgs.Label%2A> property is assigned the `label` parameter value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,14 +103,14 @@
           <see langword="true" /> if the edit has been canceled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example allows the user to edit nonroot tree nodes by using a <xref:System.Windows.Forms.ContextMenu>. When the user right clicks the mouse, the <xref:System.Windows.Forms.TreeNode> at that position is determined and stored in a variable named `mySelectedNode`. If a nonroot tree node was selected, it is put into an editable state, allowing the user to edit the node label. After the user stops editing the tree node label, the new label text is evaluated and saved. For this example, several characters are considered not valid in the label text. If one of the invalid characters is in the label string, or the string is empty, the user is notified of the error and the label is returned to its previous text.  
-  
- [!code-cpp[classic treenode.beginedit example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CPP/source.cpp#1)]
- [!code-csharp[classic treenode.beginedit example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CS/source.cs#1)]
- [!code-vb[classic treenode.beginedit example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/VB/source.vb#1)]  
-  
+The following example allows the user to edit nonroot tree nodes by using a <xref:System.Windows.Forms.ContextMenu>. When the user right clicks the mouse, the <xref:System.Windows.Forms.TreeNode> at that position is determined and stored in a variable named `mySelectedNode`. If a nonroot tree node was selected, it is put into an editable state, allowing the user to edit the node label. After the user stops editing the tree node label, the new label text is evaluated and saved. For this example, several characters are considered not valid in the label text. If one of the invalid characters is in the label string, or the string is empty, the user is notified of the error and the label is returned to its previous text.  
+ 
+[!code-cpp[classic treenode.beginedit example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CPP/source.cpp#1)]
+[!code-csharp[classic treenode.beginedit example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CS/source.cs#1)]
+[!code-vb[classic treenode.beginedit example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,19 +132,19 @@
         <value>The string value that represents the new <see cref="T:System.Windows.Forms.TreeNode" /> label or <see langword="null" /> if the user cancels the edit.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property is `null` if the user presses ESC to cancel the edit or presses ENTER without modifying the label text. If the user edits the label text, the value of this property is the new label text. This is true even if the final value of edited label text is the same as its original value.  
+The value of this property is `null` if the user presses ESC to cancel the edit or presses ENTER without modifying the label text. If the user edits the label text, the value of this property is the new label text. This is true even if the final value of edited label text is the same as its original value.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example allows the user to edit nonroot tree nodes by using a <xref:System.Windows.Forms.ContextMenu>. When the user right clicks the mouse, the <xref:System.Windows.Forms.TreeNode> at that position is determined and stored in a variable named `mySelectedNode`. If a nonroot tree node was selected, it is put into an editable state, allowing the user to edit the node label. After the user stops editing the tree node label, the new label text is evaluated and saved. For this example, several characters are considered not valid in the label text. If one of the invalid characters is in the label string, or the string is empty, the user is notified of the error and the label is returned to its previous text.  
-  
- [!code-cpp[classic treenode.beginedit example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CPP/source.cpp#1)]
- [!code-csharp[classic treenode.beginedit example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CS/source.cs#1)]
- [!code-vb[classic treenode.beginedit example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/VB/source.vb#1)]  
-  
+The following example allows the user to edit nonroot tree nodes by using a <xref:System.Windows.Forms.ContextMenu>. When the user right clicks the mouse, the <xref:System.Windows.Forms.TreeNode> at that position is determined and stored in a variable named `mySelectedNode`. If a nonroot tree node was selected, it is put into an editable state, allowing the user to edit the node label. After the user stops editing the tree node label, the new label text is evaluated and saved. For this example, several characters are considered not valid in the label text. If one of the invalid characters is in the label string, or the string is empty, the user is notified of the error and the label is returned to its previous text.  
+ 
+[!code-cpp[classic treenode.beginedit example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CPP/source.cpp#1)]
+[!code-csharp[classic treenode.beginedit example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CS/source.cs#1)]
+[!code-vb[classic treenode.beginedit example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,14 +166,14 @@
         <value>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the tree node containing the text to edit.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example allows the user to edit nonroot tree nodes by using a <xref:System.Windows.Forms.ContextMenu>. When the user right clicks the mouse, the <xref:System.Windows.Forms.TreeNode> at that position is determined and stored in a variable named `mySelectedNode`. If a nonroot tree node was selected, it is put into an editable state, allowing the user to edit the node label. After the user stops editing the tree node label, the new label text is evaluated and saved. For this example, several characters are considered not valid in the label text. If one of the invalid characters is in the label string, or the string is empty, the user is notified of the error and the label is returned to its previous text.  
-  
- [!code-cpp[classic treenode.beginedit example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CPP/source.cpp#1)]
- [!code-csharp[classic treenode.beginedit example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CS/source.cs#1)]
- [!code-vb[classic treenode.beginedit example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/VB/source.vb#1)]  
-  
+The following example allows the user to edit nonroot tree nodes by using a <xref:System.Windows.Forms.ContextMenu>. When the user right clicks the mouse, the <xref:System.Windows.Forms.TreeNode> at that position is determined and stored in a variable named `mySelectedNode`. If a nonroot tree node was selected, it is put into an editable state, allowing the user to edit the node label. After the user stops editing the tree node label, the new label text is evaluated and saved. For this example, several characters are considered not valid in the label text. If one of the invalid characters is in the label string, or the string is empty, the user is notified of the error and the label is returned to its previous text.  
+ 
+[!code-cpp[classic treenode.beginedit example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CPP/source.cpp#1)]
+[!code-csharp[classic treenode.beginedit example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CS/source.cs#1)]
+[!code-vb[classic treenode.beginedit example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

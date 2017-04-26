@@ -23,14 +23,14 @@
     <summary>An <see langword="abstract" /> class that the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] derives from <see cref="T:System.Xml.XmlReader" /> to do serialization and deserialization.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Methods in this class read <xref:System.Xml.XmlDictionary> objects.  
-  
- This class is derived from <xref:System.Xml.XmlReader>.  
-  
- Note that there is a known issue with the normalization of linefeed characters inside of CDATA sections that you may encounter.  
-  
+Methods in this class read <xref:System.Xml.XmlDictionary> objects.  
+ 
+This class is derived from <xref:System.Xml.XmlReader>.  
+ 
+Note that there is a known issue with the normalization of linefeed characters inside of CDATA sections that you may encounter.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,10 +58,10 @@
         <summary>Creates an instance of this class.  Invoked only by its derived classes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The only constructor for this class is the default constructor.  
-  
+The only constructor for this class is the default constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,10 +92,10 @@
         <value>Returns <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property always returns `false`.  
-  
+This property always returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,10 +132,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
-  
+Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -174,10 +174,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
-  
+Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -219,10 +219,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
-  
+Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -265,10 +265,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
-  
+Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -315,10 +315,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
-  
+Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -364,10 +364,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
-  
+Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -413,10 +413,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
-  
+Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -463,10 +463,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
-  
+Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -513,10 +513,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
-  
+Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -588,10 +588,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method reads from a stream, using the character encoding specified by `encoding`, an instance of <xref:System.Text.Encoding>.  
-  
+This method reads from a stream, using the character encoding specified by `encoding`, an instance of <xref:System.Text.Encoding>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -628,10 +628,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method reads from a stream, using one of the character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>.  
-  
+This method reads from a stream, using one of the character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -670,10 +670,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method reads from a stream, using one of the character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>. The message is of the specified MIME type. If `contentType` is `null`, the Content-Type MIME header must be present in the message.  
-  
+This method reads from a stream, using one of the character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>. The message is of the specified MIME type. If `contentType` is `null`, the Content-Type MIME header must be present in the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -712,10 +712,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method reads from a buffer with a specified offset and count, using the character encoding specified by `encoding`, an instance of <xref:System.Text.Encoding>.  
-  
+This method reads from a buffer with a specified offset and count, using the character encoding specified by `encoding`, an instance of <xref:System.Text.Encoding>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -756,10 +756,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method reads from a buffer with a specified offset and count, using one of the character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>.  
-  
+This method reads from a buffer with a specified offset and count, using one of the character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -800,10 +800,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method reads from a buffer with a specified offset and count, using one of the  character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>. The message is of the specified MIME type. If `contentType` is `null`, the Content-Type MIME header must be present in the message.  
-  
+This method reads from a buffer with a specified offset and count, using one of the  character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>. The message is of the specified MIME type. If `contentType` is `null`, the Content-Type MIME header must be present in the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -844,10 +844,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method reads from a stream, using one of the character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>. The message is of the specified MIME type. If `contentType` is `null`, the Content-Type MIME header must be present in the message.  
-  
+This method reads from a stream, using one of the character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>. The message is of the specified MIME type. If `contentType` is `null`, the Content-Type MIME header must be present in the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -892,10 +892,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method reads from a buffer with a specified offset and count, using one of the character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>. The message is of the specified MIME type. If `contentType` is `null`, the Content-Type MIME header must be present in the message.  
-  
+This method reads from a buffer with a specified offset and count, using one of the character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>. The message is of the specified MIME type. If `contentType` is `null`, the Content-Type MIME header must be present in the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -932,10 +932,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The reader created is optimized for reading UTF-8 text.  
-  
+The reader created is optimized for reading UTF-8 text.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -974,10 +974,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The reader created is optimized for reading UTF-8 text.  
-  
+The reader created is optimized for reading UTF-8 text.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1018,10 +1018,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The reader created is optimized for reading UTF-8 text.  
-  
+The reader created is optimized for reading UTF-8 text.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1062,10 +1062,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The reader created is optimized for reading UTF-8 text.  
-  
+The reader created is optimized for reading UTF-8 text.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1106,10 +1106,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The reader created is optimized for reading UTF-8 text.  
-  
+The reader created is optimized for reading UTF-8 text.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1235,10 +1235,10 @@
         <returns>The index of the local name of the current node within an array of names.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `localNames` is an array of strings, and `namespaceUri` is a string.  
-  
+`localNames` is an array of strings, and `namespaceUri` is a string.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1277,10 +1277,10 @@
         <returns>The index of the local name of the current node within an array of names.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `localNames` is an array of <xref:System.Xml.XmlDictionaryString>, and `namespaceUri` is an <xref:System.Xml.XmlDictionaryString>.  
-  
+`localNames` is an array of <xref:System.Xml.XmlDictionaryString>, and `namespaceUri` is an <xref:System.Xml.XmlDictionaryString>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2559,10 +2559,10 @@
         <returns>A <see cref="T:System.Boolean" /> array of the <see cref="T:System.Boolean" /> nodes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2599,10 +2599,10 @@
         <returns>A <see cref="T:System.Boolean" /> array of the <see cref="T:System.Boolean" /> nodes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2667,10 +2667,10 @@
         <returns>A byte array that contains the Base64 decoded binary bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The array size is greater than the MaxArrayLength quota for this reader.</exception>
@@ -2703,10 +2703,10 @@
         <returns>A byte array that contains the <see langword="BinHex" /> decoded binary bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The array size is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
@@ -2922,10 +2922,10 @@
         <returns>The node content in a string representation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this read operation is limited by the MaxStringContentLength quota  
-  
+The string returned by this read operation is limited by the MaxStringContentLength quota  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2960,10 +2960,10 @@
         <returns>Node content in string representation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this read operation is limited by the MaxStringContentLength quota.  
-  
+The string returned by this read operation is limited by the MaxStringContentLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3125,10 +3125,10 @@
         <returns>The node's content represented as a <see cref="T:System.DateTime" /> array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3198,10 +3198,10 @@
         <returns>The node's content represented as a <see cref="T:System.Decimal" /> array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3238,10 +3238,10 @@
         <returns>The node's content represented as a <see cref="T:System.Decimal" /> array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3278,10 +3278,10 @@
         <returns>The node's content represented as a <see cref="T:System.Double" /> array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3318,10 +3318,10 @@
         <returns>The node's content represented as a <see cref="T:System.Double" /> array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3353,10 +3353,10 @@
         <returns>The node's content represented as an array of Base64 bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this read operation is limited by the MaxArrayLength quota.  
-  
+The string returned by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3388,10 +3388,10 @@
         <returns>The node's content represented as an array of <see langword="BinHex" /> bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this read operation is limited by the MaxArrayLength quota.  
-  
+The string returned by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3647,10 +3647,10 @@
         <returns>The node's content represented as a <see cref="T:System.String" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this read operation is limited by the MaxStringContentLength quota.  
-  
+The string returned by this read operation is limited by the MaxStringContentLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3874,10 +3874,10 @@
         <returns>An array of <see cref="T:System.Guid" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3914,10 +3914,10 @@
         <returns>An array of <see cref="T:System.Guid" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3954,10 +3954,10 @@
         <returns>An array of <see langword="short" /> integers (<see cref="T:System.Int16" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3994,10 +3994,10 @@
         <returns>An array of <see langword="short" /> integers (<see cref="T:System.Int16" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4034,10 +4034,10 @@
         <returns>An array of integers (<see cref="T:System.Int32" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4074,10 +4074,10 @@
         <returns>An array of integers (<see cref="T:System.Int32" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4114,10 +4114,10 @@
         <returns>An array of <see langword="long" /> integers (<see cref="T:System.Int64" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4154,10 +4154,10 @@
         <returns>An array of <see langword="long" /> integers (<see cref="T:System.Int64" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4194,10 +4194,10 @@
         <returns>An array of <see langword="float" /> numbers (<see cref="T:System.Single" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4234,10 +4234,10 @@
         <returns>An array of <see langword="float" /> numbers (<see cref="T:System.Single" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4361,10 +4361,10 @@
         <returns>A <see cref="T:System.TimeSpan" /> array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4401,10 +4401,10 @@
         <returns>A <see cref="T:System.TimeSpan" /> array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
-  
+The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4478,10 +4478,10 @@
         <summary>This method is not yet implemented.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Start reading the canonical octets of the XML being read to this reader from the supplied stream until the matching `EndCanonicalization` call is made. The content read from the main reader stream is unaffected by this call. `includeComments` defines whether comments are to be included in the canonical input and `inclusivePrefixes` provides the list of prefixes to be treated as inclusive prefixes with the exclusive canonicalization algorithm.  
-  
+Start reading the canonical octets of the XML being read to this reader from the supplied stream until the matching `EndCanonicalization` call is made. The content read from the main reader stream is unaffected by this call. `includeComments` defines whether comments are to be included in the canonical input and `inclusivePrefixes` provides the list of prefixes to be treated as inclusive prefixes with the exclusive canonicalization algorithm.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always.</exception>
@@ -4657,10 +4657,10 @@
         <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that reads XML in the MTOM format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- MTOM allows users to optimize the transmission and wire format of their SOAP messages.  
-  
+MTOM allows users to optimize the transmission and wire format of their SOAP messages.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4674,10 +4674,10 @@
         <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These overloads create an instance of <xref:System.Xml.XmlDictionaryReader>.  
-  
+These overloads create an instance of <xref:System.Xml.XmlDictionaryReader>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4691,10 +4691,10 @@
         <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that can read .NET Binary XML Format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These overloads create an instance of <xref:System.Xml.XmlDictionaryReader> that can read .NET Binary XML Format.  
-  
+These overloads create an instance of <xref:System.Xml.XmlDictionaryReader> that can read .NET Binary XML Format.  
+ 
  ]]></format>
         </remarks>
       </Docs>

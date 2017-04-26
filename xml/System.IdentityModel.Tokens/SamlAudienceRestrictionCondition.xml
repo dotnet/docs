@@ -14,14 +14,14 @@
     <summary>Specifies that a SAML assertion is addressed to a particular audience.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> class corresponds to the `<saml:AudienceRestrictionCondition>` XML element, which is defined in the OASIS SAML 1.1 specification. The <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> is one of several <xref:System.IdentityModel.Tokens.SamlConditions> that can be used to scope a SAML assertion  
-  
- Use the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> class to specify a <xref:System.IdentityModel.Tokens.SamlAssertion> is intended for a specific audience and that the issuing SAML authority does not warrant the SAML assertion for other audiences that receive the security token. The claims for <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens are expressed as part of a <xref:System.IdentityModel.Tokens.SamlAssertion>, which can optionally have a set of conditions affect the validity of the assertion. One of those conditions is a <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition>, which specifies that the assertion is addressed to one or more specific audiences. The issuing SAML authority cannot prevent an unintended recipient from taking action on the basis of the information provided in the SAML assertion. However, the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> class allows the SAML authority to state explicitly that no warranty is provided to such a party in a machine- and human-readable form.  
-  
- To specify the set of intended audiences, use the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.%23ctor%28System.Collections.Generic.IEnumerable%7BSystem.Uri%7D%29> constructor that accepts a set of audiences. To get the set of intended audiences, access the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.Audiences%2A> property.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> class corresponds to the `<saml:AudienceRestrictionCondition>` XML element, which is defined in the OASIS SAML 1.1 specification. The <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> is one of several <xref:System.IdentityModel.Tokens.SamlConditions> that can be used to scope a SAML assertion  
+ 
+Use the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> class to specify a <xref:System.IdentityModel.Tokens.SamlAssertion> is intended for a specific audience and that the issuing SAML authority does not warrant the SAML assertion for other audiences that receive the security token. The claims for <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens are expressed as part of a <xref:System.IdentityModel.Tokens.SamlAssertion>, which can optionally have a set of conditions affect the validity of the assertion. One of those conditions is a <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition>, which specifies that the assertion is addressed to one or more specific audiences. The issuing SAML authority cannot prevent an unintended recipient from taking action on the basis of the information provided in the SAML assertion. However, the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> class allows the SAML authority to state explicitly that no warranty is provided to such a party in a machine- and human-readable form.  
+ 
+To specify the set of intended audiences, use the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.%23ctor%28System.Collections.Generic.IEnumerable%7BSystem.Uri%7D%29> constructor that accepts a set of audiences. To get the set of intended audiences, access the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.Audiences%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,10 +58,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition" /> class with the specified set of audiences a SAML assertion is intended for.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.Audiences%2A> property.  
-  
+This constructor sets the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.Audiences%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -85,10 +85,10 @@
         <value>An <see cref="T:System.Collections.Generic.IList`1" /> of type <see cref="T:System.Uri" /> that contain a set of intended audiences.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.Audiences%2A> property, use the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.%23ctor%28System.Collections.Generic.IEnumerable%7BSystem.Uri%7D%29> constructor that accepts a set of audiences.  
-  
+To set the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.Audiences%2A> property, use the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.%23ctor%28System.Collections.Generic.IEnumerable%7BSystem.Uri%7D%29> constructor that accepts a set of audiences.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,10 +111,10 @@
           <see langword="true" /> if the properties of this instance are read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To make this instance of the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> class read-only, call the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.MakeReadOnly%2A> method.  
-  
+To make this instance of the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> class read-only, call the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.MakeReadOnly%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,10 +136,10 @@
         <summary>Causes this instance to be read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.IsReadOnly%2A> property is set to `true`.  
-  
+When the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.IsReadOnly%2A> property is set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

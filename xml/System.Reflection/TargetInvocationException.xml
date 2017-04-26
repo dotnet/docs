@@ -31,14 +31,14 @@
     <summary>The exception that is thrown by methods invoked through reflection. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.Reflection.MethodBase.Invoke%2A>.  
-  
- `TargetInvocationException` uses the HRESULT COR_E_TARGETINVOCATION which has the value 0x80131604.  
-  
- When created, the `TargetInvocationException` is passed a reference to the exception thrown by the method invoked through reflection. The <xref:System.Exception.InnerException%2A> property holds the underlying exception.  
-  
+For more information, see <xref:System.Reflection.MethodBase.Invoke%2A>.  
+ 
+`TargetInvocationException` uses the HRESULT COR_E_TARGETINVOCATION which has the value 0x80131604.  
+ 
+When created, the `TargetInvocationException` is passed a reference to the exception thrown by the method invoked through reflection. The <xref:System.Exception.InnerException%2A> property holds the underlying exception.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,17 +71,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.TargetInvocationException" /> class with a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.Reflection.TargetInvocationException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.Reflection.TargetInvocationException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,17 +116,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.TargetInvocationException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.Reflection.TargetInvocationException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.Reflection.TargetInvocationException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

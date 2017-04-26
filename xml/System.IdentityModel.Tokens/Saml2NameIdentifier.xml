@@ -14,10 +14,10 @@
     <summary>Represents the NameID element as specified in [Saml2Core, 2.2.3] or the EncryptedID element as specified in [Saml2Core, 2.2.4].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the element that this class represents, see the SAML V2.0 Core specification.  
-  
+For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> class with the specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.Saml2NameIdentifier.Value%2A> property is initialized with the identifier specified by `name`. The <xref:System.IdentityModel.Tokens.Saml2NameIdentifier.Format%2A> property is initialized to `null`.  
-  
+The <xref:System.IdentityModel.Tokens.Saml2NameIdentifier.Value%2A> property is initialized with the identifier specified by `name`. The <xref:System.IdentityModel.Tokens.Saml2NameIdentifier.Format%2A> property is initialized to `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -68,10 +68,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> class with the specified name and format URI.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.Saml2NameIdentifier.Value%2A> property is initialized with the identifier specified by `name`. The <xref:System.IdentityModel.Tokens.Saml2NameIdentifier.Format%2A> property is initialized to the URI specified by `format`.  
-  
+The <xref:System.IdentityModel.Tokens.Saml2NameIdentifier.Value%2A> property is initialized with the identifier specified by `name`. The <xref:System.IdentityModel.Tokens.Saml2NameIdentifier.Format%2A> property is initialized to the URI specified by `format`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -132,10 +132,10 @@
         <value>A <see cref="T:System.Uri" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Format attribute.  
-  
+The Format attribute.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt to set a value that is not <see langword="null" /> and is not an absolute URI occurs.</exception>
@@ -158,10 +158,10 @@
         <value>The name qualifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The NameQualifier attribute.  
-  
+The NameQualifier attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,10 +183,10 @@
         <value>The service provider name qualifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The SPNameQualifier attribute.  
-  
+The SPNameQualifier attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
         <value>A string that contains the name identifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The SPProviderId attribute.  
-  
+The SPProviderId attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>

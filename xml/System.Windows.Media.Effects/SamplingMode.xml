@@ -13,12 +13,12 @@
     <summary>Indicates the way <see cref="T:System.Windows.Media.Brush" />-valued dependency properties are sampled in a custom shader effect.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set the <xref:System.Windows.Media.Effects.SamplingMode> when you define a dependency property for a <xref:System.Windows.Media.Effects.ShaderEffect>.  
-  
- The rendering system automatically selects the appropriate sampling mode, depending on whether hardware or software rendering is enabled, whether the destination texture is rotated, and other factors.  
-  
+Set the <xref:System.Windows.Media.Effects.SamplingMode> when you define a dependency property for a <xref:System.Windows.Media.Effects.ShaderEffect>.  
+ 
+The rendering system automatically selects the appropriate sampling mode, depending on whether hardware or software rendering is enabled, whether the destination texture is rotated, and other factors.  
+ 
  ]]></format>
     </remarks>
   </Docs>

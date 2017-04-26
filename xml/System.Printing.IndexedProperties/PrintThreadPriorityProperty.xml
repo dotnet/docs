@@ -32,10 +32,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" /> class for the specified property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Threading.ThreadPriority> property of a print system object, including casing. For example, the <xref:System.Printing.PrintServer.PortThreadPriority%2A> property of a <xref:System.Printing.PrintServer> object must be spelled "PortThreadPriority", not "ThreadPriority" or "Portthreadpriority".  
-  
+The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Threading.ThreadPriority> property of a print system object, including casing. For example, the <xref:System.Printing.PrintServer.PortThreadPriority%2A> property of a <xref:System.Printing.PrintServer> object must be spelled "PortThreadPriority", not "ThreadPriority" or "Portthreadpriority".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -59,10 +59,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" /> class that has the specified value for the specified property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Threading.ThreadPriority> property of a print system object, including casing. For example, the <xref:System.Printing.PrintServer.PortThreadPriority%2A> property of a <xref:System.Printing.PrintServer> object must be spelled "PortThreadPriority", not "ThreadPriority" or "Portthreadpriority".  
-  
+The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Threading.ThreadPriority> property of a print system object, including casing. For example, the <xref:System.Printing.PrintServer.PortThreadPriority%2A> property of a <xref:System.Printing.PrintServer> object must be spelled "PortThreadPriority", not "ThreadPriority" or "Portthreadpriority".  
+ 
  ]]></format>
         </remarks>
       </Docs>

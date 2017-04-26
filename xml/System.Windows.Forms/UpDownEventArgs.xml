@@ -14,10 +14,10 @@
     <summary>Provides data for controls that derive from the <see cref="T:System.Windows.Forms.UpDownBase" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.UpDownEventArgs> is used when the user clicks a button on a control that derives from the <xref:System.Windows.Forms.UpDownBase> control. The <xref:System.Windows.Forms.UpDownEventArgs> contains information on which button was clicked.  
-  
+The <xref:System.Windows.Forms.UpDownEventArgs> is used when the user clicks a button on a control that derives from the <xref:System.Windows.Forms.UpDownBase> control. The <xref:System.Windows.Forms.UpDownEventArgs> contains information on which button was clicked.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -40,16 +40,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.UpDownEventArgs" /> class</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table describes the values that are valid for `buttonPushed`.  
-  
+The following table describes the values that are valid for `buttonPushed`.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |0|Neither button was clicked.|  
 |1|The up button was clicked.|  
 |2|The down button was clicked.|  
-  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -72,16 +72,16 @@
         <value>A value that represents which button the user clicked.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table describes the values that the <xref:System.Windows.Forms.UpDownEventArgs.ButtonID%2A> returns.  
-  
+The following table describes the values that the <xref:System.Windows.Forms.UpDownEventArgs.ButtonID%2A> returns.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |0|Neither button was clicked.|  
 |1|The up button was clicked.|  
 |2|The down button was clicked.|  
-  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

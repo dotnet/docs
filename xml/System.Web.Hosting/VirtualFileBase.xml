@@ -14,10 +14,10 @@
     <summary>Provides the core implementation for the <see cref="T:System.Web.Hosting.VirtualFile" /> and <see cref="T:System.Web.Hosting.VirtualDirectory" /> objects. An abstract class, it cannot be instantiated.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.VirtualFileBase> abstract class provides the common methods and properties shared between the <xref:System.Web.Hosting.VirtualFile> and <xref:System.Web.Hosting.VirtualDirectory> objects. Implementations of these classes provide the ASP.NET runtime with access to files and paths used for compilation. For more information on using virtual files and paths, see the <xref:System.Web.Hosting.VirtualPathProvider> class.  
-  
+The <xref:System.Web.Hosting.VirtualFileBase> abstract class provides the common methods and properties shared between the <xref:System.Web.Hosting.VirtualFile> and <xref:System.Web.Hosting.VirtualDirectory> objects. Implementations of these classes provide the ASP.NET runtime with access to files and paths used for compilation. For more information on using virtual files and paths, see the <xref:System.Web.Hosting.VirtualPathProvider> class.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -39,10 +39,10 @@
         <summary>Initializes the class for use by an inherited class instance. This constructor can be called only by an inherited class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although you cannot directly construct an instance of the <xref:System.Web.Hosting.VirtualFileBase> class, you can call this constructor from the constructor of an inheriting class.  
-  
+Although you cannot directly construct an instance of the <xref:System.Web.Hosting.VirtualFileBase> class, you can call this constructor from the constructor of an inheriting class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -65,10 +65,10 @@
         <returns>Always <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides the <xref:System.MarshalByRefObject.InitializeLifetimeService%2A> method on its base class. It always returns `null` and thereby prevents a lease from being created that would limit the lifetime of the virtual file or directory.  
-  
+This method overrides the <xref:System.MarshalByRefObject.InitializeLifetimeService%2A> method on its base class. It always returns `null` and thereby prevents a lease from being created that would limit the lifetime of the virtual file or directory.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,10 +109,10 @@
         <value>The display name of the virtual file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.VirtualFileBase.Name%2A> property is typically the file name and extension associated with the resource, although virtual resources may use arbitrary names.  
-  
+The <xref:System.Web.Hosting.VirtualFileBase.Name%2A> property is typically the file name and extension associated with the resource, although virtual resources may use arbitrary names.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -137,10 +137,10 @@
         <value>The path to the virtual file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.VirtualFileBase.VirtualPath%2A> property returns the path to the file or directory represented by this object.  
-  
+The <xref:System.Web.Hosting.VirtualFileBase.VirtualPath%2A> property returns the path to the file or directory represented by this object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

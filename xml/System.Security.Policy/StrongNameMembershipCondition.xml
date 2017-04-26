@@ -24,10 +24,10 @@
     <summary>Determines whether an assembly belongs to a code group by testing its strong name. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Strong names are well suited to specifying code assemblies to which you give a rich set of powerful permissions. Since strong names are cryptographically verified, attackers cannot impersonate rightful assemblies and use their permissions.  
-  
+Strong names are well suited to specifying code assemblies to which you give a rich set of powerful permissions. Since strong names are cryptographically verified, attackers cannot impersonate rightful assemblies and use their permissions.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,12 +54,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.StrongNameMembershipCondition" /> class with the strong name public key blob, name, and version number that determine membership.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Strong names are well suited to specifying code assemblies to which you give a rich set of powerful permissions. Since strong names are cryptographically verified, attackers cannot impersonate rightful assemblies and use their permissions.  
-  
- The `name` and `version` parameters are optional. For example, you can create a <xref:System.Security.Policy.StrongNameMembershipCondition> that checks for <xref:System.Security.Policy.StrongNameMembershipCondition.PublicKey%2A> and <xref:System.Security.Policy.StrongNameMembershipCondition.Name%2A> (but not <xref:System.Security.Policy.StrongNameMembershipCondition.Version%2A>) by passing `null` into the `version` parameter. If `name` is an empty string (""), an <xref:System.ArgumentException> is thrown.  
-  
+Strong names are well suited to specifying code assemblies to which you give a rich set of powerful permissions. Since strong names are cryptographically verified, attackers cannot impersonate rightful assemblies and use their permissions.  
+ 
+The `name` and `version` parameters are optional. For example, you can create a <xref:System.Security.Policy.StrongNameMembershipCondition> that checks for <xref:System.Security.Policy.StrongNameMembershipCondition.PublicKey%2A> and <xref:System.Security.Policy.StrongNameMembershipCondition.Name%2A> (but not <xref:System.Security.Policy.StrongNameMembershipCondition.Version%2A>) by passing `null` into the `version` parameter. If `name` is an empty string (""), an <xref:System.ArgumentException> is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="blob" /> parameter is <see langword="null" />.</exception>
@@ -93,12 +93,12 @@
           <see langword="true" /> if the specified evidence satisfies the membership condition; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This membership condition tests only the <xref:System.Security.Policy.StrongName> evidence object.  
-  
- The membership condition is satisfied if the specified evidence contains a <xref:System.Security.Policy.StrongName> with the same <xref:System.Security.Policy.StrongName> (public key, name, and version) as specified by the <xref:System.Security.Policy.StrongNameMembershipCondition>.  
-  
+This membership condition tests only the <xref:System.Security.Policy.StrongName> evidence object.  
+ 
+The membership condition is satisfied if the specified evidence contains a <xref:System.Security.Policy.StrongName> with the same <xref:System.Security.Policy.StrongName> (public key, name, and version) as specified by the <xref:System.Security.Policy.StrongNameMembershipCondition>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,10 +146,10 @@
           <see langword="true" /> if the <see cref="T:System.Security.Policy.StrongName" /> from the specified object is equivalent to the <see cref="T:System.Security.Policy.StrongName" /> contained in the current <see cref="T:System.Security.Policy.StrongNameMembershipCondition" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For two <xref:System.Security.Policy.StrongName> classes to be equal, their name, version, and public key blob must match exactly.  
-  
+For two <xref:System.Security.Policy.StrongName> classes to be equal, their name, version, and public key blob must match exactly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Policy.StrongNameMembershipCondition.PublicKey" /> property of the current object or the specified object is <see langword="null" />.</exception>
@@ -242,10 +242,10 @@
         <value>The simple name of the <see cref="T:System.Security.Policy.StrongName" /> for which the membership condition tests.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you attempt to set the <xref:System.Security.Policy.StrongNameMembershipCondition.Name%2A> property to an empty string (""), an <xref:System.ArgumentException> is thrown.  
-  
+If you attempt to set the <xref:System.Security.Policy.StrongNameMembershipCondition.Name%2A> property to an empty string (""), an <xref:System.ArgumentException> is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value is <see langword="null" />.  
@@ -273,12 +273,12 @@
         <value>The <see cref="T:System.Security.Permissions.StrongNamePublicKeyBlob" /> of the <see cref="T:System.Security.Policy.StrongName" /> for which the membership condition tests.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A blob is cryptographic information that uniquely specifies the public key of the software publisher.  
-  
- Blobs differ from certificates in that the blob only has information about the public key; the certificate also includes information that associates a name of the holder with the key, as well as information to verify the certificate.  
-  
+A blob is cryptographic information that uniquely specifies the public key of the software publisher.  
+ 
+Blobs differ from certificates in that the blob only has information about the public key; the certificate also includes information that associates a name of the holder with the key, as well as information to verify the certificate.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt is made to set the <see cref="P:System.Security.Policy.StrongNameMembershipCondition.PublicKey" /> to <see langword="null" />.</exception>

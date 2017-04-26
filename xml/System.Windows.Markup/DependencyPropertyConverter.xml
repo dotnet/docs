@@ -14,16 +14,16 @@
     <summary>Converts from a string to a <see cref="T:System.Windows.DependencyProperty" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Markup.DependencyPropertyConverter> class only converts from a <xref:System.String> into an instance of <xref:System.Windows.DependencyProperty>. Other attempts at conversion throw an exception.  
-  
- The <xref:System.Windows.Markup.DependencyPropertyConverter> converts from a <xref:System.String> using the following input format: *typeName*`.`*propertyName*. A format of *namespacePrefix*:*typeName*`.`*propertyName* is also accepted for legacy reasons but the *namespacePrefix*: component is ignored. A format of *propertyName* is also accepted in certain cases; this format relies on the ability to evaluate ambient properties and deduce the *typeName*, by service implementation of <xref:System.Xaml.IAmbientProvider> in the context.  
-  
- For legacy reasons, this class also supports conversion from BAML records, but this is an implementation detail and should not be relied upon.  
-  
- The behavior of this converter is specifically oriented around a single WPF scenario for XAML processing: reading the attribute value of <xref:System.Windows.Setter.Property%2A> and generating a <xref:System.Windows.DependencyProperty> value.  
-  
+The <xref:System.Windows.Markup.DependencyPropertyConverter> class only converts from a <xref:System.String> into an instance of <xref:System.Windows.DependencyProperty>. Other attempts at conversion throw an exception.  
+ 
+The <xref:System.Windows.Markup.DependencyPropertyConverter> converts from a <xref:System.String> using the following input format: *typeName*`.`*propertyName*. A format of *namespacePrefix*:*typeName*`.`*propertyName* is also accepted for legacy reasons but the *namespacePrefix*: component is ignored. A format of *propertyName* is also accepted in certain cases; this format relies on the ability to evaluate ambient properties and deduce the *typeName*, by service implementation of <xref:System.Xaml.IAmbientProvider> in the context.  
+ 
+For legacy reasons, this class also supports conversion from BAML records, but this is an implementation detail and should not be relied upon.  
+ 
+The behavior of this converter is specifically oriented around a single WPF scenario for XAML processing: reading the attribute value of <xref:System.Windows.Setter.Property%2A> and generating a <xref:System.Windows.DependencyProperty> value.  
+ 
 <a name="xamlTextUsage_DependencyPropertyConverter"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -69,12 +69,12 @@
           <see langword="true" /> if this converter can perform the operation; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Markup.DependencyPropertyConverter> class only converts a string to an instance of <xref:System.Windows.DependencyProperty>. Therefore only a `sourceType` of <xref:System.String> returns `true`.  
-  
- `context` is not used by this implementation.  
-  
+The <xref:System.Windows.Markup.DependencyPropertyConverter> class only converts a string to an instance of <xref:System.Windows.DependencyProperty>. Therefore only a `sourceType` of <xref:System.String> returns `true`.  
+ 
+`context` is not used by this implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
           <see langword="true" /> if this converter can perform the operation; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation always returns `false`.  
-  
+This implementation always returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,14 +136,14 @@
         <returns>The converted object. If the conversion is successful, this is a <see cref="T:System.Windows.DependencyProperty" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Markup.DependencyPropertyConverter> class only converts a string to an instance of <xref:System.Windows.DependencyProperty>.  
-  
- `culture` is not used by this implementation.  
-  
- The `context` provided is expected to provide services that are required for proper evaluation. These include <xref:System.Xaml.IAmbientProvider>, <xref:System.Windows.Markup.IXamlTypeResolver>, and <xref:System.Xaml.IXamlSchemaContextProvider>.  
-  
+The <xref:System.Windows.Markup.DependencyPropertyConverter> class only converts a string to an instance of <xref:System.Windows.DependencyProperty>.  
+ 
+`culture` is not used by this implementation.  
+ 
+The `context` provided is expected to provide services that are required for proper evaluation. These include <xref:System.Xaml.IAmbientProvider>, <xref:System.Windows.Markup.IXamlTypeResolver>, and <xref:System.Xaml.IXamlSchemaContextProvider>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
@@ -179,10 +179,10 @@
         <returns>Always throws an exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation always throws an exception.  
-  
+This implementation always throws an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">In all cases.</exception>

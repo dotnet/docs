@@ -14,12 +14,12 @@
     <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> class represents an AD LDS instance server.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.DirectoryServices.ActiveDirectory.AdamInstance> class refers to Active Directory Application Mode (ADAM) which has been renamed to Active Directory Lightweight Directory Services (AD LDS).  
-  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
@@ -42,10 +42,10 @@
         <summary>Invokes the Knowledge Consistency Checker (KCC) that verifies the replication topology for this AD LDS instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the topic "DsReplicaConsistencyCheck" in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
-  
+For more information, see the topic "DsReplicaConsistencyCheck" in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
@@ -210,12 +210,12 @@
         <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> object that refers to the AD LDS instance that is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.DirectoryServices.ActiveDirectory.AdamInstance.GetAdamInstance%2A> method refers to Active Directory Application Mode (ADAM) which has been renamed to Active Directory Lightweight Directory Services (AD LDS).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A connection to the target that was specified in the <paramref name="context" /> parameter could not be made.</exception>

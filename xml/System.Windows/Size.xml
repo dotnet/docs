@@ -26,34 +26,34 @@
     <summary>Implements a structure that is used to describe the <see cref="T:System.Windows.Size" /> of an object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Size> is particularly useful because it describes both the <xref:System.Windows.Size.Height%2A> and <xref:System.Windows.Size.Width%2A> of an object. <xref:System.Windows.Size> is used extensively by the layout system to arrange and measure elements.  
-  
+<xref:System.Windows.Size> is particularly useful because it describes both the <xref:System.Windows.Size.Height%2A> and <xref:System.Windows.Size.Width%2A> of an object. <xref:System.Windows.Size> is used extensively by the layout system to arrange and measure elements.  
+ 
 <a name="xamlAttributeUsage_Size"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="width,height"/>  
 ```  
-  
+ 
 <a name="xamlValues_Size"></a>   
 ## XAML Values  
- *width*  
- A value greater than or equal to 0 that specifies the <xref:System.Windows.Size.Width%2A> of the <xref:System.Windows.Size> structure.  
+*width*  
+A value greater than or equal to 0 that specifies the <xref:System.Windows.Size.Width%2A> of the <xref:System.Windows.Size> structure.  
+ 
+*height*  
+A value greater than or equal to 0 that specifies the <xref:System.Windows.Size.Height%2A> of the <xref:System.Windows.Size> structure.  
+ 
   
- *height*  
- A value greater than or equal to 0 that specifies the <xref:System.Windows.Size.Height%2A> of the <xref:System.Windows.Size> structure.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use a <xref:System.Windows.Size> structure in code.  
-  
- [!code-cpp[PlotPanel#2](~/samples/snippets/cpp/VS_Snippets_Wpf/PlotPanel/CPP/PlotPanel.cpp#2)]
- [!code-csharp[PlotPanel#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PlotPanel/CSharp/PlotPanel.cs#2)]
- [!code-vb[PlotPanel#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PlotPanel/VisualBasic/PlotPanel.vb#2)]  
-  
+The following example demonstrates how to use a <xref:System.Windows.Size> structure in code.  
+ 
+[!code-cpp[PlotPanel#2](~/samples/snippets/cpp/VS_Snippets_Wpf/PlotPanel/CPP/PlotPanel.cpp#2)]
+[!code-csharp[PlotPanel#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PlotPanel/CSharp/PlotPanel.cs#2)]
+[!code-vb[PlotPanel#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PlotPanel/VisualBasic/PlotPanel.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,10 +77,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Size" /> structure and assigns it an initial <paramref name="width" /> and <paramref name="height" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `width` and `height` cannot be negative.  
-  
+The `width` and `height` cannot be negative.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,10 +102,10 @@
         <value>An empty instance of <see cref="T:System.Windows.Size" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Size.Width%2A> and <xref:System.Windows.Size.Height%2A> of the instance of <xref:System.Windows.Size> are equal to negative-infinity when this property is invoked. This is the only situation where <xref:System.Windows.Size> can be a negative number.  
-  
+The <xref:System.Windows.Size.Width%2A> and <xref:System.Windows.Size.Height%2A> of the instance of <xref:System.Windows.Size> are equal to negative-infinity when this property is invoked. This is the only situation where <xref:System.Windows.Size> can be a negative number.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,10 +132,10 @@
           <see langword="true" /> if the sizes are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Double> values can result in an error when operated upon. Values that are logically equal might fail to result in a value of `true`.  
-  
+<xref:System.Double> values can result in an error when operated upon. Values that are logically equal might fail to result in a value of `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,10 +162,10 @@
           <see langword="true" /> if the instances of <see cref="T:System.Windows.Size" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Double> values can result in an error when operated upon. Values that are logically equal might fail to result in a value of `true`.  
-  
+<xref:System.Double> values can result in an error when operated upon. Values that are logically equal might fail to result in a value of `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,10 +194,10 @@
           <see langword="true" /> if the instances of <see cref="T:System.Windows.Size" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Double> values can result in an error when operated upon. Values that are logically equal might fail to result in a value of `true`.  
-  
+<xref:System.Double> values can result in an error when operated upon. Values that are logically equal might fail to result in a value of `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -257,10 +257,10 @@
           <see langword="true" /> if this instance of size is <see cref="P:System.Windows.Size.Empty" />; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Even if <xref:System.Windows.Size> is 0, the instance of <xref:System.Windows.Size> will still contain a 0 or 1, indicating a zero- or one-dimensional set of points. Therefore, do not use this property to check for a 0 area.  
-  
+Even if <xref:System.Windows.Size> is 0, the instance of <xref:System.Windows.Size> will still contain a 0 or 1, indicating a zero- or one-dimensional set of points. Therefore, do not use this property to check for a 0 area.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -422,10 +422,10 @@
         <returns>A <see cref="T:System.String" /> that specifies the width followed by the height.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Size.Width%2A> property is set to 30 and the <xref:System.Windows.Size.Height%2A> property is set to 40, the <xref:System.Windows.Size.ToString%2A> method returns a string that says `"30, 40"`.  
-  
+If the <xref:System.Windows.Size.Width%2A> property is set to 30 and the <xref:System.Windows.Size.Height%2A> property is set to 40, the <xref:System.Windows.Size.ToString%2A> method returns a string that says `"30, 40"`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

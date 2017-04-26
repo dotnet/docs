@@ -31,18 +31,18 @@
     <summary>Binds an activity's property to a property, field, indexer, method, event, or another activity's property. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.ComponentModel.ActivityBind> allows data to flow from one activity to another activity within a workflow. <xref:System.Workflow.ComponentModel.ActivityBind> is a declarative way of doing what otherwise must be accomplished using code, and therefore is a key element of most workflows that are written entirely in XAML markup.  
-  
- <xref:System.Workflow.ComponentModel.ActivityBind> represents a bind expression that has an <xref:System.Workflow.ComponentModel.Activity> member as a target. The target activity member can be a property, an event, or a field. An <xref:System.Workflow.ComponentModel.Activity> property or method can use <xref:System.Workflow.ComponentModel.ActivityBind> to bind to another <xref:System.Workflow.ComponentModel.Activity> member.  
-  
- For example, if activity1 has property1 set to some value and if activity2 has its property1 set to <xref:System.Workflow.ComponentModel.ActivityBind> with Name="activity1" and Path="property1", at run time the activity2.property1 gets its value from activity1.property1.  
-  
+ 
+<xref:System.Workflow.ComponentModel.ActivityBind> allows data to flow from one activity to another activity within a workflow. <xref:System.Workflow.ComponentModel.ActivityBind> is a declarative way of doing what otherwise must be accomplished using code, and therefore is a key element of most workflows that are written entirely in XAML markup.  
+ 
+<xref:System.Workflow.ComponentModel.ActivityBind> represents a bind expression that has an <xref:System.Workflow.ComponentModel.Activity> member as a target. The target activity member can be a property, an event, or a field. An <xref:System.Workflow.ComponentModel.Activity> property or method can use <xref:System.Workflow.ComponentModel.ActivityBind> to bind to another <xref:System.Workflow.ComponentModel.Activity> member.  
+ 
+For example, if activity1 has property1 set to some value and if activity2 has its property1 set to <xref:System.Workflow.ComponentModel.ActivityBind> with Name="activity1" and Path="property1", at run time the activity2.property1 gets its value from activity1.property1.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,15 +61,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example illustrates creating and using an <xref:System.Workflow.ComponentModel.ActivityBind>.  
-  
- This code example is part of the Throw Activity SDK sample and is from the ThrowActivity.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
-  
- [!code-csharp[WF_Samples#178](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#178)]
- [!code-vb[WF_Samples#178](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#178)]  
-  
+This example illustrates creating and using an <xref:System.Workflow.ComponentModel.ActivityBind>.  
+ 
+This code example is part of the Throw Activity SDK sample and is from the ThrowActivity.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
+ 
+[!code-csharp[WF_Samples#178](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#178)]
+[!code-vb[WF_Samples#178](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#178)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,15 +111,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> class with <paramref name="name" /> and <paramref name="path" /> parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example illustrates creating and using <xref:System.Workflow.ComponentModel.ActivityBind>.  
-  
- The code example is part of the Throw Activity SDK sample and is from the ThrowActivity.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
-  
- [!code-csharp[WF_Samples#178](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#178)]
- [!code-vb[WF_Samples#178](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#178)]  
-  
+This example illustrates creating and using <xref:System.Workflow.ComponentModel.ActivityBind>.  
+ 
+The code example is part of the Throw Activity SDK sample and is from the ThrowActivity.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
+ 
+[!code-csharp[WF_Samples#178](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#178)]
+[!code-vb[WF_Samples#178](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#178)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,12 +199,12 @@
         <value>The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> points to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example illustrates creating and using an <xref:System.Workflow.ComponentModel.ActivityBind> and also of setting the <xref:System.Workflow.ComponentModel.ActivityBind.Name%2A>.  
-  
- This code example is part of the Throw Activity SDK sample and is from the ThrowActivity.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
-  
+This example illustrates creating and using an <xref:System.Workflow.ComponentModel.ActivityBind> and also of setting the <xref:System.Workflow.ComponentModel.ActivityBind.Name%2A>.  
+ 
+This code example is part of the Throw Activity SDK sample and is from the ThrowActivity.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.ReadOnlyException">Occurs when you attempt to set this value when the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> is not in design mode.</exception>
@@ -235,19 +235,19 @@
         <value>The path of the data item of interest on the chosen <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!CAUTION]
 >  This property cannot be set at run time.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example illustrates creating and using an <xref:System.Workflow.ComponentModel.ActivityBind>, and also setting the <xref:System.Workflow.ComponentModel.ActivityBind.Name%2A> and <xref:System.Workflow.ComponentModel.ActivityBind.Path%2A>.  
-  
- This code example is part of the Throw Activity SDK sample and is from the ThrowActivity.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
-  
+This example illustrates creating and using an <xref:System.Workflow.ComponentModel.ActivityBind>, and also setting the <xref:System.Workflow.ComponentModel.ActivityBind.Name%2A> and <xref:System.Workflow.ComponentModel.ActivityBind.Path%2A>.  
+ 
+This code example is part of the Throw Activity SDK sample and is from the ThrowActivity.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.ReadOnlyException">Occurs when you attempt to set this value when the <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> is not in design mode.</exception>
@@ -354,13 +354,13 @@
         <summary>Gets the run-time value of the binding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns the run-time value.  
-  
+Returns the run-time value.  
+ 
 > [!CAUTION]
 >  Throws an exception if this bind is a binding to a method and a <xref:System.Workflow.ComponentModel.BindValidationContext.TargetType%2A> is not provided.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

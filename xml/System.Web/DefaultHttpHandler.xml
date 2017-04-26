@@ -18,30 +18,30 @@
     <summary>Represents the properties and methods of a default HTTP handler.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.DefaultHttpHandler> object intercepts incoming requests in the HTTP pipeline when both request interception has been configured through Internet Information Services (IIS) 6.0 and no explicit  bindings apply to the requested extension.  
-  
- Request interception can be set up through the wildcard application mapping feature introduced in IIS 6.0. For more information, search the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118) for information about using wildcard application maps to remap a URL.  
-  
- The <xref:System.Web.DefaultHttpHandler> class implements the <xref:System.Web.IHttpAsyncHandler> interface to provide asynchronous request processing. For general information about HTTP handlers, see [HTTP Handlers and HTTP Modules Overview](http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b). Additionally, for more information see the following:  
-  
+A <xref:System.Web.DefaultHttpHandler> object intercepts incoming requests in the HTTP pipeline when both request interception has been configured through Internet Information Services (IIS) 6.0 and no explicit  bindings apply to the requested extension.  
+ 
+Request interception can be set up through the wildcard application mapping feature introduced in IIS 6.0. For more information, search the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118) for information about using wildcard application maps to remap a URL.  
+ 
+The <xref:System.Web.DefaultHttpHandler> class implements the <xref:System.Web.IHttpAsyncHandler> interface to provide asynchronous request processing. For general information about HTTP handlers, see [HTTP Handlers and HTTP Modules Overview](http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b). Additionally, for more information see the following:  
+ 
 -   About creating asynchronous HTTP handlers, see [Walkthrough: Creating an Asynchronous HTTP Handler](http://msdn.microsoft.com/library/1b5c4a27-599b-44d0-8a06-72edc6765aa9).  
-  
+ 
 -   About registering HTTP handlers, see [How to: Register HTTP Handlers](http://msdn.microsoft.com/library/d5633f9a-03fb-4ccc-a799-dc67d656fa60).  
+ 
+Classes can derive from the <xref:System.Web.DefaultHttpHandler> class to provide customized handling of requests. An asynchronous HTTP handler that is derived from the <xref:System.Web.DefaultHttpHandler> could override the <xref:System.Web.DefaultHttpHandler.BeginProcessRequest%2A> method to change how requests are processed.  
+ 
+A <xref:System.Web.DefaultHttpHandler> does not use ASP.NET errors. Existing content that uses IIS errors or a propriety ISAPI custom error mechanism would work unchanged.  
+ 
   
- Classes can derive from the <xref:System.Web.DefaultHttpHandler> class to provide customized handling of requests. An asynchronous HTTP handler that is derived from the <xref:System.Web.DefaultHttpHandler> could override the <xref:System.Web.DefaultHttpHandler.BeginProcessRequest%2A> method to change how requests are processed.  
-  
- A <xref:System.Web.DefaultHttpHandler> does not use ASP.NET errors. Existing content that uses IIS errors or a propriety ISAPI custom error mechanism would work unchanged.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to implement a customized HTTP handler by deriving from the <xref:System.Web.DefaultHttpHandler> class.  
-  
- [!code-csharp[System.Web.DefaultHttpHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DefaultHttpHandler/CS/source.cs#1)]
- [!code-vb[System.Web.DefaultHttpHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DefaultHttpHandler/VB/source.vb#1)]  
-  
+The following code example demonstrates how to implement a customized HTTP handler by deriving from the <xref:System.Web.DefaultHttpHandler> class.  
+ 
+[!code-csharp[System.Web.DefaultHttpHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DefaultHttpHandler/CS/source.cs#1)]
+[!code-vb[System.Web.DefaultHttpHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DefaultHttpHandler/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -86,10 +86,10 @@
         <returns>An <see cref="T:System.IAsyncResult" /> that contains information about the status of the process.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When creating an HTTP handler for asynchronous use, your handler must implement the asynchronous <xref:System.Web.DefaultHttpHandler.BeginProcessRequest%2A> and <xref:System.Web.DefaultHttpHandler.EndProcessRequest%2A> methods that are called asynchronously by ASP.NET.  
-  
+When creating an HTTP handler for asynchronous use, your handler must implement the asynchronous <xref:System.Web.DefaultHttpHandler.BeginProcessRequest%2A> and <xref:System.Web.DefaultHttpHandler.EndProcessRequest%2A> methods that are called asynchronously by ASP.NET.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The preconditions for processing a request fail and either the requested file has the suffix .asp or the request was sent through POST.</exception>
@@ -112,10 +112,10 @@
         <value>An <see cref="T:System.Web.HttpContext" /> object that contains the current context.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DefaultHttpHandler.Context%2A> property provides access to the current <xref:System.Web.HttpContext> object for derived classes. An <xref:System.Web.HttpContext> object provides access to the intrinsic <xref:System.Web.HttpApplication.Request%2A>, <xref:System.Web.HttpApplication.Response%2A>, and <xref:System.Web.HttpApplication.Server%2A> properties for the request. For more information about accessing contextual information, see <xref:System.Web.HttpContext>.  
-  
+The <xref:System.Web.DefaultHttpHandler.Context%2A> property provides access to the current <xref:System.Web.HttpContext> object for derived classes. An <xref:System.Web.HttpContext> object provides access to the intrinsic <xref:System.Web.HttpApplication.Request%2A>, <xref:System.Web.HttpApplication.Response%2A>, and <xref:System.Web.HttpApplication.Server%2A> properties for the request. For more information about accessing contextual information, see <xref:System.Web.HttpContext>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <summary>Provides an end method for an asynchronous process.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Web.DefaultHttpHandler.EndProcessRequest%2A> method to throw any exceptions that are caught during the asynchronous process.  
-  
+You can use the <xref:System.Web.DefaultHttpHandler.EndProcessRequest%2A> method to throw any exceptions that are caught during the asynchronous process.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
         <value>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> containing request headers and values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DefaultHttpHandler.ExecuteUrlHeaders%2A> property returns an empty collection unless it is populated in a class that is derived from the <xref:System.Web.DefaultHttpHandler> class. The headers that are added are appended to the collection of headers in the request before passing the request back to Internet Information Services (IIS).  
-  
+The <xref:System.Web.DefaultHttpHandler.ExecuteUrlHeaders%2A> property returns an empty collection unless it is populated in a class that is derived from the <xref:System.Web.DefaultHttpHandler> class. The headers that are added are appended to the collection of headers in the request before passing the request back to Internet Information Services (IIS).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,10 +191,10 @@
           <see langword="true" /> if the <see cref="T:System.Web.DefaultHttpHandler" /> is reusable; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To explicitly set the <xref:System.Web.DefaultHttpHandler.IsReusable%2A> property to `true` or `false`, override the <xref:System.Web.DefaultHttpHandler.IsReusable%2A> property.  
-  
+To explicitly set the <xref:System.Web.DefaultHttpHandler.IsReusable%2A> property to `true` or `false`, override the <xref:System.Web.DefaultHttpHandler.IsReusable%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,24 +216,24 @@
         <summary>Called when preconditions prevent the <see cref="T:System.Web.DefaultHttpHandler" /> object from processing a request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Preconditions are specified by the client in the request-header fields and are evaluated on the Web server. For example, by using preconditions, clients can prevent a requested method (for example, GET) from being applied to a resource other than the one intended. For more information, see section 14, "Header Field Definitions," in the [Hypertext Transfer Protocol -- HTTP/1.1](http://go.microsoft.com/fwlink/?LinkID=73147) specification on the World Wide Web Consortium (W3C) Web site.  
-  
- The <xref:System.Web.DefaultHttpHandler.OnExecuteUrlPreconditionFailure%2A> method is called when preconditions prevent the <xref:System.Web.DefaultHttpHandler> object from processing a request. A deriving class might override the <xref:System.Web.DefaultHttpHandler.OnExecuteUrlPreconditionFailure%2A> method to throw an exception when the preconditions fail. The <xref:System.Web.DefaultHttpHandler> does not throw an exception in the <xref:System.Web.DefaultHttpHandler.OnExecuteUrlPreconditionFailure%2A> method.  
-  
- Any of the following will cause the preconditions to fail:  
-  
+Preconditions are specified by the client in the request-header fields and are evaluated on the Web server. For example, by using preconditions, clients can prevent a requested method (for example, GET) from being applied to a resource other than the one intended. For more information, see section 14, "Header Field Definitions," in the [Hypertext Transfer Protocol -- HTTP/1.1](http://go.microsoft.com/fwlink/?LinkID=73147) specification on the World Wide Web Consortium (W3C) Web site.  
+ 
+The <xref:System.Web.DefaultHttpHandler.OnExecuteUrlPreconditionFailure%2A> method is called when preconditions prevent the <xref:System.Web.DefaultHttpHandler> object from processing a request. A deriving class might override the <xref:System.Web.DefaultHttpHandler.OnExecuteUrlPreconditionFailure%2A> method to throw an exception when the preconditions fail. The <xref:System.Web.DefaultHttpHandler> does not throw an exception in the <xref:System.Web.DefaultHttpHandler.OnExecuteUrlPreconditionFailure%2A> method.  
+ 
+Any of the following will cause the preconditions to fail:  
+ 
 -   Calling <xref:System.Web.HttpResponse.Write%2A?displayProperty=fullName>.  
-  
+ 
 -   Calling <xref:System.Web.HttpResponse.AddHeader%2A?displayProperty=fullName>.  
-  
+ 
 -   Calling <xref:System.Web.HttpResponse.Flush%2A?displayProperty=fullName>.  
-  
+ 
 -   Changing the cache policy for the response.  
-  
+ 
 -   Adding a <xref:System.IO.Stream> object as a filter to the <xref:System.Web.HttpResponse.Filter%2A?displayProperty=fullName> property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,22 +256,22 @@
         <returns>The overridden URL to use in the request; or <see langword="null" /> if an overridden URL is not provided.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DefaultHttpHandler.OverrideExecuteUrlPath%2A> method returns `null` unless it is overridden in a class that is derived from the <xref:System.Web.DefaultHttpHandler> class.  
-  
- The <xref:System.Web.DefaultHttpHandler.OverrideExecuteUrlPath%2A> method is called only if ASP.NET is running in worker process isolation mode on IIS 6.0, and if the response was not modified before the <xref:System.Web.DefaultHttpHandler> object was called. The response is modified by any of the following:  
-  
+The <xref:System.Web.DefaultHttpHandler.OverrideExecuteUrlPath%2A> method returns `null` unless it is overridden in a class that is derived from the <xref:System.Web.DefaultHttpHandler> class.  
+ 
+The <xref:System.Web.DefaultHttpHandler.OverrideExecuteUrlPath%2A> method is called only if ASP.NET is running in worker process isolation mode on IIS 6.0, and if the response was not modified before the <xref:System.Web.DefaultHttpHandler> object was called. The response is modified by any of the following:  
+ 
 -   Calling <xref:System.Web.HttpResponse.Write%2A?displayProperty=fullName>.  
-  
+ 
 -   Calling <xref:System.Web.HttpResponse.AddHeader%2A?displayProperty=fullName>.  
-  
+ 
 -   Calling <xref:System.Web.HttpResponse.Flush%2A?displayProperty=fullName>.  
-  
+ 
 -   Changing the cache policy for the response.  
-  
+ 
 -   Adding a <xref:System.IO.Stream> object as a filter to the <xref:System.Web.HttpResponse.Filter%2A?displayProperty=fullName> property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,10 +296,10 @@
         <summary>Enables a <see cref="T:System.Web.DefaultHttpHandler" /> object to process of HTTP Web requests.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DefaultHttpHandler.ProcessRequest%2A> method should not be called synchronously. Classes that are derived from the <xref:System.Web.DefaultHttpHandler> class can override the <xref:System.Web.DefaultHttpHandler.ProcessRequest%2A> to provide customized request processing.  
-  
+The <xref:System.Web.DefaultHttpHandler.ProcessRequest%2A> method should not be called synchronously. Classes that are derived from the <xref:System.Web.DefaultHttpHandler> class can override the <xref:System.Web.DefaultHttpHandler.ProcessRequest%2A> to provide customized request processing.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.DefaultHttpHandler.ProcessRequest(System.Web.HttpContext)" /> is called synchronously.</exception>

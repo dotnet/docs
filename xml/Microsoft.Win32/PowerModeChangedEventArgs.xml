@@ -14,12 +14,12 @@
     <summary>Provides data for the <see cref="E:Microsoft.Win32.SystemEvents.PowerModeChanged" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:Microsoft.Win32.SystemEvents.PowerModeChanged> event is raised when the user suspends or resumes the operating system, or when a system power status notification occurs. A system power status notification can occur when a weak or charging power source is detected, or when a transition from AC or battery power source occurs.  
-  
- The <xref:Microsoft.Win32.PowerModeChangedEventArgs.Mode%2A> property of a <xref:Microsoft.Win32.PowerModeChangedEventArgs> indicates the type of power mode event that has occurred.  
-  
+A <xref:Microsoft.Win32.SystemEvents.PowerModeChanged> event is raised when the user suspends or resumes the operating system, or when a system power status notification occurs. A system power status notification can occur when a weak or charging power source is detected, or when a transition from AC or battery power source occurs.  
+ 
+The <xref:Microsoft.Win32.PowerModeChangedEventArgs.Mode%2A> property of a <xref:Microsoft.Win32.PowerModeChangedEventArgs> indicates the type of power mode event that has occurred.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.PowerModeChangedEventArgs" /> class using the specified power mode event type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor can be used to create a <xref:Microsoft.Win32.PowerModeChangedEventArgs> that indicates a type of power mode event.  
-  
+This constructor can be used to create a <xref:Microsoft.Win32.PowerModeChangedEventArgs> that indicates a type of power mode event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -66,10 +66,10 @@
         <value>One of the <see cref="T:Microsoft.Win32.PowerModes" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property indicates the type of the power mode transition that is occurring.  
-  
+This property indicates the type of the power mode transition that is occurring.  
+ 
  ]]></format>
         </remarks>
       </Docs>

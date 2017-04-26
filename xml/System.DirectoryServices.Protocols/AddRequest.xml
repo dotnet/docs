@@ -14,10 +14,10 @@
     <summary>The <see cref="T:System.DirectoryServices.Protocols.AddRequest" /> class adds an entry to the directory.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The request may be added to the <xref:System.DirectoryServices.Protocols.DsmlRequestDocument> or it can be used as the parameter for <xref:System.DirectoryServices.Protocols.DirectoryConnection.SendRequest%2A>.  
-  
+The request may be added to the <xref:System.DirectoryServices.Protocols.DsmlRequestDocument> or it can be used as the parameter for <xref:System.DirectoryServices.Protocols.DirectoryConnection.SendRequest%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -82,10 +82,10 @@
         <summary>The <see cref="M:System.DirectoryServices.Protocols.AddRequest.#ctor(System.String,System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.AddRequest" /> class using the specified <paramref name="distinguishedName" /> and the object class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value specified in the `objectClass` parameter is added to the <xref:System.DirectoryServices.Protocols.AddRequest.Attributes%2A> property. This value can be modified after this constructor is called.  
-  
+The value specified in the `objectClass` parameter is added to the <xref:System.DirectoryServices.Protocols.AddRequest.Attributes%2A> property. This value can be modified after this constructor is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="objectClass" /> parameter contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
@@ -108,10 +108,10 @@
         <value>A <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeCollection" /> of attribute-value pairs for the object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property cannot be set.  
-  
+This property cannot be set.  
+ 
  ]]></format>
         </remarks>
       </Docs>

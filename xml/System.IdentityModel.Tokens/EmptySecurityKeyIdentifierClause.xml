@@ -29,10 +29,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor assumes that the user knows how to resolve the key required without any context.  
-  
+This constructor assumes that the user knows how to resolve the key required without any context.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,10 +72,10 @@
         <value>An object that provides a hint when there is a need to resolve to a particular key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the case of SAML11 and SAML2 tokens that have signatures without a `<KeyInfo>` element, this property will contain the assertion that is currently being processed.  
-  
+In the case of SAML11 and SAML2 tokens that have signatures without a `<KeyInfo>` element, this property will contain the assertion that is currently being processed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

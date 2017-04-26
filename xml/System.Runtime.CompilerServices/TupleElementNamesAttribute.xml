@@ -65,10 +65,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.TupleElementNamesAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is used on types that contain a value tuple instance with element names.  For example, if `C` is a generic type with          two type parameters, then the use of the constructed type `C(`<xref:System.ValueTuple%602>`,` <xref:System.ValueTuple%603>`)` might be intended to          treat the first type argument as a tuple with element names and the          second as a tuple without element names. In this case, the          appropriate attribute specification should use a          `transformNames` value of `{ "name1", "name2", null, null,          null}`.  
-  
+This constructor is used on types that contain a value tuple instance with element names.  For example, if `C` is a generic type with          two type parameters, then the use of the constructed type `C(`<xref:System.ValueTuple%602>`,` <xref:System.ValueTuple%603>`)` might be intended to          treat the first type argument as a tuple with element names and the          second as a tuple without element names. In this case, the          appropriate attribute specification should use a          `transformNames` value of `{ "name1", "name2", null, null,          null}`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -32,16 +32,16 @@
     <summary>Wraps objects the marshaler should marshal as a <see langword="VT_DISPATCH" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use to wrap objects the marshaler should marshal as a `VT_DISPATCH`. This wrapper will force objects to be marshaled out as `VT_DISPATCH`. If the object does not support `IDispatch` then an exception will be thrown.  
-  
- [!code-cpp[System.Runtime.InteropServices.DispatchWrapper#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.runtime.interopservices.dispatchwrapper/cpp/source.cpp#1)]
- [!code-csharp[System.Runtime.InteropServices.DispatchWrapper#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.interopservices.dispatchwrapper/cs/source.cs#1)]
- [!code-vb[System.Runtime.InteropServices.DispatchWrapper#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.interopservices.dispatchwrapper/vb/source.vb#1)]  
-  
- For more information on `VT_DISPATCH`, please see the existing documentation for `VARENUM::VT_DISPATCH` in the MSDN library.  
-  
+Use to wrap objects the marshaler should marshal as a `VT_DISPATCH`. This wrapper will force objects to be marshaled out as `VT_DISPATCH`. If the object does not support `IDispatch` then an exception will be thrown.  
+ 
+[!code-cpp[System.Runtime.InteropServices.DispatchWrapper#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.runtime.interopservices.dispatchwrapper/cpp/source.cpp#1)]
+[!code-csharp[System.Runtime.InteropServices.DispatchWrapper#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.interopservices.dispatchwrapper/cs/source.cs#1)]
+[!code-vb[System.Runtime.InteropServices.DispatchWrapper#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.interopservices.dispatchwrapper/vb/source.vb#1)]  
+ 
+For more information on `VT_DISPATCH`, please see the existing documentation for `VARENUM::VT_DISPATCH` in the MSDN library.  
+ 
  ]]></format>
     </remarks>
   </Docs>

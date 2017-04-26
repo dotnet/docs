@@ -23,20 +23,20 @@
     <summary>Directs tracing or debugging output to a text writer, such as a stream writer, or to a stream, such as a file stream.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The trace output is in a delimited text format that uses the delimiter specified by the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property. The delimiter is used to terminate each field in a line of output. For example, to display the trace output in a Microsoft Excel spreadsheet, you might specify a comma (",") as a delimiter and create a comma-separated value (CSV) file.  
-  
+The trace output is in a delimited text format that uses the delimiter specified by the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property. The delimiter is used to terminate each field in a line of output. For example, to display the trace output in a Microsoft Excel spreadsheet, you might specify a comma (",") as a delimiter and create a comma-separated value (CSV) file.  
+ 
 > [!IMPORTANT]
 >  <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a`try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
- You can enable or disable a <xref:System.Diagnostics.DelimitedListTraceListener> through the application configuration file and then use the configured <xref:System.Diagnostics.DelimitedListTraceListener> in your application. Alternately, you can create a <xref:System.Diagnostics.DelimitedListTraceListener> in your code.  
-  
+ 
+You can enable or disable a <xref:System.Diagnostics.DelimitedListTraceListener> through the application configuration file and then use the configured <xref:System.Diagnostics.DelimitedListTraceListener> in your application. Alternately, you can create a <xref:System.Diagnostics.DelimitedListTraceListener> in your code.  
+ 
 > [!NOTE]
 >  The <xref:System.Diagnostics.DelimitedListTraceListener> delimits only text that is emitted by using the methods that have names starting with the word `Trace`, such as <xref:System.Diagnostics.DelimitedListTraceListener.TraceEvent%2A?displayProperty=fullName> or <xref:System.Diagnostics.Trace.TraceWarning%2A?displayProperty=fullName>. Trace data that is emitted by using the <xref:System.Diagnostics.Debug.Write%2A?displayProperty=fullName> and <xref:System.Diagnostics.TextWriterTraceListener.WriteLine%2A?displayProperty=fullName> methods is not delimited.  
-  
- To configure a <xref:System.Diagnostics.DelimitedListTraceListener>, edit the configuration file that corresponds to the name of your application. In this file, you can add a listener, set the properties for a listener, or remove a listener. The configuration file should be formatted as shown in the following example:  
-  
+ 
+To configure a <xref:System.Diagnostics.DelimitedListTraceListener>, edit the configuration file that corresponds to the name of your application. In this file, you can add a listener, set the properties for a listener, or remove a listener. The configuration file should be formatted as shown in the following example:  
+ 
 ```  
 <configuration>  
   <system.diagnostics>  
@@ -52,13 +52,13 @@
   </system.diagnostics>  
 </configuration>  
 ```  
-  
+ 
 > [!NOTE]
 >  If you try to write to a file that is in use or unavailable, the file name is automatically prefixed by a GUID.  
-  
+ 
 > [!NOTE]
 >  Listeners are intended to be used by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace information. Listener methods, except for constructors, should not be called directly from application code.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.DelimitedListTraceListener" /> class that writes to the specified output stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to an empty string ("").  
-  
+This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to an empty string ("").  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -125,10 +125,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.DelimitedListTraceListener" /> class that writes to the specified text writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to an empty string ("").  
-  
+This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to an empty string ("").  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -157,10 +157,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.DelimitedListTraceListener" /> class that writes to the specified file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to an empty string ("").  
-  
+This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to an empty string ("").  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -195,14 +195,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.DelimitedListTraceListener" /> class that writes to the specified output stream and has the specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the value of the `name` parameter, or to an empty string ("") if the `name` parameter is `null`.  The <xref:System.Diagnostics.TraceListener.Name%2A> property can be used as an index into the `Listeners` collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property for the instance of <xref:System.Diagnostics.DelimitedListTraceListener> that has the name "delimListener":  
-  
+This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the value of the `name` parameter, or to an empty string ("") if the `name` parameter is `null`.  The <xref:System.Diagnostics.TraceListener.Name%2A> property can be used as an index into the `Listeners` collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property for the instance of <xref:System.Diagnostics.DelimitedListTraceListener> that has the name "delimListener":  
+ 
 ```  
 ((DelimitedListTraceListener)Trace.Listeners["delimListener"]).Delimiter = ":"  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -237,14 +237,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.DelimitedListTraceListener" /> class that writes to the specified text writer and has the specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the value of the `name` parameter, or to an empty string ("") if the `name` parameter is `null`. The <xref:System.Diagnostics.TraceListener.Name%2A> property can be used as an index into the `Listeners` collection to programmatically change the properties for the listener. For example the following code sets the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property for the instance of <xref:System.Diagnostics.DelimitedListTraceListener> that has the name "delimListener":  
-  
+This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the value of the `name` parameter, or to an empty string ("") if the `name` parameter is `null`. The <xref:System.Diagnostics.TraceListener.Name%2A> property can be used as an index into the `Listeners` collection to programmatically change the properties for the listener. For example the following code sets the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property for the instance of <xref:System.Diagnostics.DelimitedListTraceListener> that has the name "delimListener":  
+ 
 ```  
 ((DelimitedListTraceListener)Trace.Listeners["delimListener"]).Delimiter = ":"  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -275,19 +275,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.DelimitedListTraceListener" /> class that writes to the specified file and has the specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes a new instance of the <xref:System.IO.StreamWriter> class for the specified file on the specified path, using <xref:System.Text.Encoding.UTF8%2A> encoding. If the file exists, it is appended to. If the file does not exist, a new file is created.  
-  
+This constructor initializes a new instance of the <xref:System.IO.StreamWriter> class for the specified file on the specified path, using <xref:System.Text.Encoding.UTF8%2A> encoding. If the file exists, it is appended to. If the file does not exist, a new file is created.  
+ 
 > [!NOTE]
 >  To reduce the chance of an exception, any character that might invalidate the output is replaced with a "?" character.  
-  
- The <xref:System.Diagnostics.TraceListener.Name%2A> property is set to the value of the `name` parameter, or to an empty string ("") if the `name` parameter is `null`. The <xref:System.Diagnostics.TraceListener.Name%2A> property can be used as an index into the `Listeners` collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property for the instance of <xref:System.Diagnostics.DelimitedListTraceListener> that has the name "delimListener":  
-  
+ 
+The <xref:System.Diagnostics.TraceListener.Name%2A> property is set to the value of the `name` parameter, or to an empty string ("") if the `name` parameter is `null`. The <xref:System.Diagnostics.TraceListener.Name%2A> property can be used as an index into the `Listeners` collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property for the instance of <xref:System.Diagnostics.DelimitedListTraceListener> that has the name "delimListener":  
+ 
 ```  
 ((DelimitedListTraceListener)Trace.Listeners["delimListener"]).Delimiter = ":"  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -320,10 +320,10 @@
         <value>The delimiter for the delimited list.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default delimiter is ";" (semicolon). The following configuration file example shows the setting of the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property using the `delimiter` attribute in a configuration file:  
-  
+The default delimiter is ";" (semicolon). The following configuration file example shows the setting of the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property using the `delimiter` attribute in a configuration file:  
+ 
 ```  
 <configuration>  
   <system.diagnostics>  
@@ -341,7 +341,7 @@
 </configuration>  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -373,10 +373,10 @@
         <returns>A string array that contains the single value "delimiter".</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A custom attribute is an attribute that is not inherited from the base class that can be used to set a property for the class. The custom attribute for <xref:System.Diagnostics.DelimitedListTraceListener> is used to set the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property. The following configuration file example shows the use of the `delimiter` attribute to set the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property:  
-  
+A custom attribute is an attribute that is not inherited from the base class that can be used to set a property for the class. The custom attribute for <xref:System.Diagnostics.DelimitedListTraceListener> is used to set the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property. The following configuration file example shows the use of the `delimiter` attribute to set the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property:  
+ 
 ```  
 <configuration>  
   <system.diagnostics>  
@@ -393,7 +393,7 @@
   </system.diagnostics>  
 </configuration>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -435,13 +435,13 @@
         <summary>Writes trace information, a data object, and event information to the output file or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values of the `source`, `eventType`, and `id` parameters are written as a header. The data object is converted to a string using the `ToString` method of the object. The `eventCache` data is written as a footer whose content depends on the value of the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.  
-  
+The values of the `source`, `eventType`, and `id` parameters are written as a header. The data object is converted to a string using the `ToString` method of the object. The `eventCache` data is written as a footer whose content depends on the value of the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Diagnostics.DelimitedListTraceListener.TraceData%2A> method is not intended to be called by application code. It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -489,13 +489,13 @@
         <summary>Writes trace information, an array of data objects, and event information to the output file or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values of the `source`, `eventType`, and `id` parameters are written as a header. The data objects are converted to strings using the `ToString` method of each object. The `eventCache` data is written as a footer whose content depends on the value of the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.  
-  
+The values of the `source`, `eventType`, and `id` parameters are written as a header. The data objects are converted to strings using the `ToString` method of each object. The `eventCache` data is written as a footer whose content depends on the value of the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Diagnostics.DelimitedListTraceListener.TraceData%2A> method is not intended to be called by application code. It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -537,13 +537,13 @@
         <summary>Writes trace information, a message, and event information to the output file or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values of the `source`, `eventType`, and `id` parameters are written as a header, followed by the `message` data. The `eventCache` data is written as a footer whose content depends on the value of the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.  
-  
+The values of the `source`, `eventType`, and `id` parameters are written as a header, followed by the `message` data. The `eventCache` data is written as a footer whose content depends on the value of the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Diagnostics.DelimitedListTraceListener.TraceEvent%2A> method is not intended to be called by application code. It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -593,13 +593,13 @@
         <summary>Writes trace information, a formatted array of objects, and event information to the output file or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values of the `source`, `eventType`, and `id` parameters are written as a header. The `args` object array is converted to a string using the <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method, passing the `format` string and `args` array to format the string as the message portion of the trace. The `eventCache` data is written as a footer whose content depends on the value of the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.  
-  
+The values of the `source`, `eventType`, and `id` parameters are written as a header. The `args` object array is converted to a string using the <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method, passing the `format` string and `args` array to format the string as the message portion of the trace. The `eventCache` data is written as a footer whose content depends on the value of the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Diagnostics.DelimitedListTraceListener.TraceEvent%2A> method is not intended to be called by application code. It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

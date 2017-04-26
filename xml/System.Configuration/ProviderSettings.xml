@@ -14,24 +14,24 @@
     <summary>Represents the configuration elements associated with a provider.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET uses providers to perform specific services required by a feature. For example, the membership feature uses a provider to coordinate the persistence of membership data in a database.  
+ASP.NET uses providers to perform specific services required by a feature. For example, the membership feature uses a provider to coordinate the persistence of membership data in a database.  
+ 
+In a configuration file, individual providers are added to a `providers` element within a particular feature section.  
+ 
+The <xref:System.Configuration.ProviderSettings> class represents a particular group of settings that are added to the `providers` element within a configuration section. Typically the configuration attributes specified by the `add` directive include a name, type, and other properties.  
+ 
   
- In a configuration file, individual providers are added to a `providers` element within a particular feature section.  
-  
- The <xref:System.Configuration.ProviderSettings> class represents a particular group of settings that are added to the `providers` element within a configuration section. Typically the configuration attributes specified by the `add` directive include a name, type, and other properties.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Configuration.ProviderSettings>.  
-  
- [!code-csharp[System.Configuration.ProviderSettings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProviderSettings/CS/ProviderSettings.cs#1)]
- [!code-vb[System.Configuration.ProviderSettings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProviderSettings/VB/ProviderSettings.vb#1)]  
-  
- The following is an excerpt of the configuration file used by the above example.  
-  
+The following code example shows how to use the <xref:System.Configuration.ProviderSettings>.  
+ 
+[!code-csharp[System.Configuration.ProviderSettings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProviderSettings/CS/ProviderSettings.cs#1)]
+[!code-vb[System.Configuration.ProviderSettings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProviderSettings/VB/ProviderSettings.vb#1)]  
+ 
+The following is an excerpt of the configuration file used by the above example.  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
@@ -51,7 +51,7 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
   
 </configuration>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,12 +70,12 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ProviderSettings" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Initializes a new instance of the <xref:System.Configuration.ProviderSettings> class.  
-  
- Use this constructor to create a new <xref:System.Configuration.ProviderSettings> instance.  
-  
+Initializes a new instance of the <xref:System.Configuration.ProviderSettings> class.  
+ 
+Use this constructor to create a new <xref:System.Configuration.ProviderSettings> instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,10 +99,10 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ProviderSettings" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create a new <xref:System.Configuration.ProviderSettings> instance with the specified name and type.  
-  
+Use this constructor to create a new <xref:System.Configuration.ProviderSettings> instance with the specified name and type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,18 +148,18 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
         <value>The name of the provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value of the <xref:System.Configuration.ProviderSettings.Name%2A> property is the same as the value for the `name` attribute that appears in the configuration section for the provider that is configured by the <xref:System.Configuration.ProviderSettings> class.  
+This value of the <xref:System.Configuration.ProviderSettings.Name%2A> property is the same as the value for the `name` attribute that appears in the configuration section for the provider that is configured by the <xref:System.Configuration.ProviderSettings> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to access the <xref:System.Configuration.ProviderSettings.Name%2A> property.  
-  
- [!code-csharp[System.Configuration.ProviderSettings#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProviderSettings/CS/ProviderSettings.cs#2)]
- [!code-vb[System.Configuration.ProviderSettings#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProviderSettings/VB/ProviderSettings.vb#2)]  
-  
+The following code example shows how to access the <xref:System.Configuration.ProviderSettings.Name%2A> property.  
+ 
+[!code-csharp[System.Configuration.ProviderSettings#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProviderSettings/CS/ProviderSettings.cs#2)]
+[!code-vb[System.Configuration.ProviderSettings#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProviderSettings/VB/ProviderSettings.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,18 +205,18 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
         <value>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> of parameters for the provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Configuration.ProviderSettings.Parameters%2A> property to access the <xref:System.Collections.Specialized.NameValueCollection> parameters for this <xref:System.Configuration.ProviderSettings> object.  
+Use the <xref:System.Configuration.ProviderSettings.Parameters%2A> property to access the <xref:System.Collections.Specialized.NameValueCollection> parameters for this <xref:System.Configuration.ProviderSettings> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to access the <xref:System.Configuration.ProviderSettings.Parameters%2A> property.  
-  
- [!code-csharp[System.Configuration.ProviderSettings#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProviderSettings/CS/ProviderSettings.cs#4)]
- [!code-vb[System.Configuration.ProviderSettings#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProviderSettings/VB/ProviderSettings.vb#4)]  
-  
+The following code example shows how to access the <xref:System.Configuration.ProviderSettings.Parameters%2A> property.  
+ 
+[!code-csharp[System.Configuration.ProviderSettings#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProviderSettings/CS/ProviderSettings.cs#4)]
+[!code-vb[System.Configuration.ProviderSettings#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProviderSettings/VB/ProviderSettings.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,18 +282,18 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
         <value>The fully qualified namespace and class name for the type of provider configured by this <see cref="T:System.Configuration.ProviderSettings" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ProviderSettings.Type%2A> property contains the fully qualified namespace and class name for the provider configured by the <xref:System.Configuration.ProviderSettings> class.  
+The <xref:System.Configuration.ProviderSettings.Type%2A> property contains the fully qualified namespace and class name for the provider configured by the <xref:System.Configuration.ProviderSettings> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to access the <xref:System.Configuration.ProviderSettings.Type%2A> property.  
-  
- [!code-csharp[System.Configuration.ProviderSettings#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProviderSettings/CS/ProviderSettings.cs#3)]
- [!code-vb[System.Configuration.ProviderSettings#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProviderSettings/VB/ProviderSettings.vb#3)]  
-  
+The following code example shows how to access the <xref:System.Configuration.ProviderSettings.Type%2A> property.  
+ 
+[!code-csharp[System.Configuration.ProviderSettings#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProviderSettings/CS/ProviderSettings.cs#3)]
+[!code-vb[System.Configuration.ProviderSettings#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProviderSettings/VB/ProviderSettings.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -332,10 +332,10 @@ PublicKeyToken=79e01ae0f5cfc66f, processorArchitecture=MSIL" />
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ProviderSettings" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create a new <xref:System.Configuration.ProviderSettings> instance.  
-  
+Use this constructor to create a new <xref:System.Configuration.ProviderSettings> instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>

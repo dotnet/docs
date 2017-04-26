@@ -14,17 +14,17 @@
     <summary>Provides a base class for filter controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.QueryableFilterUserControl> class is the base class for user controls that render filters that can be plugged into the Dynamic Data filtering framework that is based on the <xref:System.Web.UI.WebControls.QueryExtender> class.  
+The <xref:System.Web.DynamicData.QueryableFilterUserControl> class is the base class for user controls that render filters that can be plugged into the Dynamic Data filtering framework that is based on the <xref:System.Web.UI.WebControls.QueryExtender> class.  
+ 
+Implementers must override the <xref:System.Web.DynamicData.QueryableFilterUserControl.GetQueryable%2A> control, which can return a modified <xref:System.Linq.IQueryable> object that reflects the filter's state. The base class contains helper methods for building LINQ expression trees.  
+ 
   
- Implementers must override the <xref:System.Web.DynamicData.QueryableFilterUserControl.GetQueryable%2A> control, which can return a modified <xref:System.Linq.IQueryable> object that reflects the filter's state. The base class contains helper methods for building LINQ expression trees.  
-  
-   
-  
+ 
 ## Examples  
- A Visual Studio project with source code is available to accompany this topic: [Scaffolding Dynamic Data](http://go.microsoft.com/fwlink/?LinkId=168914).  
-  
+A Visual Studio project with source code is available to accompany this topic: [Scaffolding Dynamic Data](http://go.microsoft.com/fwlink/?LinkId=168914).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -105,10 +105,10 @@
         <value>The default values that are mapped for the table.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, Dynamic Data provides Boolean, foreign-key, and enumeration filter templates.  
-  
+By default, Dynamic Data provides Boolean, foreign-key, and enumeration filter templates.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
         <value>The data control that handles the filter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is `null` if the filter template does not override it.  
-  
+This property is `null` if the filter template does not override it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,17 +194,17 @@
         <returns>The transformed <see cref="T:System.Linq.IQueryable" /> object from the source <see cref="T:System.Linq.IQueryable" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must implement this method if you derive a control from <xref:System.Web.DynamicData.QueryableFilterUserControl>.  
+You must implement this method if you derive a control from <xref:System.Web.DynamicData.QueryableFilterUserControl>.  
+ 
   
-   
-  
+ 
 ## Examples  
- This method is implemented to transform the source <xref:System.Linq.IQueryable> object into the target <xref:System.Linq.IQueryable> object. Examples of <xref:System.Linq.IQueryable> expressions that you might want to implement include order by, range, or search.  
-  
- The following example shows how to implement the <xref:System.Web.DynamicData.QueryableFilterUserControl.GetQueryable%2A> method for a Boolean filter that is derived from <xref:System.Web.DynamicData.QueryableFilterUserControl>.  
-  
+This method is implemented to transform the source <xref:System.Linq.IQueryable> object into the target <xref:System.Linq.IQueryable> object. Examples of <xref:System.Linq.IQueryable> expressions that you might want to implement include order by, range, or search.  
+ 
+The following example shows how to implement the <xref:System.Web.DynamicData.QueryableFilterUserControl.GetQueryable%2A> method for a Boolean filter that is derived from <xref:System.Web.DynamicData.QueryableFilterUserControl>.  
+ 
 ```csharp  
 public override IQueryable GetQueryable(IQueryable source) {  
     if (String.IsNullOrEmpty(DropDownList1.SelectedValue)) {  
@@ -228,7 +228,7 @@ public override IQueryable GetQueryable(IQueryable source) {
     return source.Provider.CreateQuery(whereCall);  
 }  
 ```  
-  
+ 
 ```vb  
 Public Overloads Overrides Function GetQueryable(ByVal source As IQueryable) As IQueryable   
     If [String].IsNullOrEmpty(DropDownList1.SelectedValue) Then   
@@ -246,7 +246,7 @@ Public Overloads Overrides Function GetQueryable(ByVal source As IQueryable) As 
     Return source.Provider.CreateQuery(whereCall)   
 End Function  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -268,10 +268,10 @@ End Function
         <summary>Raises the <see cref="E:System.Web.DynamicData.QueryableFilterUserControl.FilterChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method when the filter selection has changed in order to notify the data source that the query must be re-run.  
-  
+Call this method when the filter selection has changed in order to notify the data source that the query must be re-run.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,10 +296,10 @@ End Function
         <summary>Populates a list control with all the foreign-key elements or Boolean elements in the table.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Foreign-key columns are populated with elements from the foreign-key table. Boolean columns are populated with "All", "True", and "False".  
-  
+Foreign-key columns are populated with elements from the foreign-key table. Boolean columns are populated with "All", "True", and "False".  
+ 
  ]]></format>
         </remarks>
       </Docs>

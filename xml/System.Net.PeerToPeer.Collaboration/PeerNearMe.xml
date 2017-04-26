@@ -21,12 +21,12 @@
     <summary>Represents a peer located by the "People Near Me" infrastructure.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An instance of this class cannot be created directly.  Instead, a reference to the peers "near" the calling peer is obtained by using the static <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetPeersNearMe%2A> method to return a collection of nearby peers.  
-  
- A peer represented by a <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> object is not necessarily in the calling peer's address book.  
-  
+An instance of this class cannot be created directly.  Instead, a reference to the peers "near" the calling peer is obtained by using the static <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetPeersNearMe%2A> method to return a collection of nearby peers.  
+ 
+A peer represented by a <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> object is not necessarily in the calling peer's address book.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -144,10 +144,10 @@
           <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the provided <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> does not map to a signed-in peer on the same subnet, `null` is returned.  
-  
+If the provided <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> does not map to a signed-in peer on the same subnet, `null` is returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="peerEndPoint" /> is <see langword="null" />.</exception>
@@ -318,14 +318,14 @@
         <summary>Initiates a network operation to retrieve the application, object and presence data specific to a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The data retrieved is stored in a cache accessed by the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetObjects%2A> methods as well as the <xref:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.PresenceStatus%2A> property. The <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.InternalRefreshData%2A> method only needs to be used if the caller is not subscribed to the specified <xref:System.Net.PeerToPeer.Collaboration.Peer>, <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>, or <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
-  
- This method blocks additional calls until the network operation is complete and the cache has been updated.  
-  
- The caller is not required to sign in with the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method or via a user interface in to complete this operation successfully.  
-  
+The data retrieved is stored in a cache accessed by the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetObjects%2A> methods as well as the <xref:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.PresenceStatus%2A> property. The <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.InternalRefreshData%2A> method only needs to be used if the caller is not subscribed to the specified <xref:System.Net.PeerToPeer.Collaboration.Peer>, <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>, or <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
+ 
+This method blocks additional calls until the network operation is complete and the cache has been updated.  
+ 
+The caller is not required to sign in with the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method or via a user interface in to complete this operation successfully.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -481,10 +481,10 @@
           <see cref="T:System.String" /> that represents the Nickname of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a contact is generated from a <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> object, the associated contact Nickname is populated with this property value.  
-  
+If a contact is generated from a <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> object, the associated contact Nickname is populated with this property value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object has been disposed.</exception>
@@ -510,12 +510,12 @@
         <summary>Signals the <see cref="E:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataCompleted" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataCompleted> event occurs.  
-  
- This method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataCompleted> event occurs.  
+ 
+This method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -570,14 +570,14 @@
         <summary>Initiates a network operation to retrieve the application, object and presence data specific to a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The data retrieved is stored in a cache accessed by the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetObjects%2A> methods as well as the <xref:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.PresenceStatus%2A> property. This method only needs to be used if the caller is not subscribed to the specified <xref:System.Net.PeerToPeer.Collaboration.Peer>, <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>, or <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
-  
- This method blocks additional calls until the network operation is complete and cache has been updated.  
-  
- The caller is not required to sign in with the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method or via a user interface in to complete this operation successfully.  
-  
+The data retrieved is stored in a cache accessed by the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetObjects%2A> methods as well as the <xref:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.PresenceStatus%2A> property. This method only needs to be used if the caller is not subscribed to the specified <xref:System.Net.PeerToPeer.Collaboration.Peer>, <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>, or <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
+ 
+This method blocks additional calls until the network operation is complete and cache has been updated.  
+ 
+The caller is not required to sign in with the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method or via a user interface in to complete this operation successfully.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object has been disposed.</exception>
@@ -608,14 +608,14 @@
         <summary>Initiates a network operation to retrieve the application, object and presence data specific to a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The data retrieved is stored in a cache accessed by the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetObjects%2A> methods as well as the <xref:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.PresenceStatus%2A> property.  The <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.InternalRefreshData%2A> method only needs to be used if the caller is not subscribed to the specified <xref:System.Net.PeerToPeer.Collaboration.Peer>, <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>, or <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
-  
- This method blocks additional calls until the network operation is complete and cache has been updated.  
-  
- The caller is not required to sign in with the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method or via a user interface in to complete this operation successfully.  
-  
+The data retrieved is stored in a cache accessed by the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetObjects%2A> methods as well as the <xref:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.PresenceStatus%2A> property.  The <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.InternalRefreshData%2A> method only needs to be used if the caller is not subscribed to the specified <xref:System.Net.PeerToPeer.Collaboration.Peer>, <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>, or <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
+ 
+This method blocks additional calls until the network operation is complete and cache has been updated.  
+ 
+The caller is not required to sign in with the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method or via a user interface in to complete this operation successfully.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object has been disposed.</exception>

@@ -22,24 +22,24 @@
     <summary>Represents a labeled statement or a stand-alone label.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeLabeledStatement> represents a label and optionally, an associated statement. A label can be used to indicate the target of a <xref:System.CodeDom.CodeGotoStatement>.  
-  
- The <xref:System.CodeDom.CodeLabeledStatement.Statement%2A> property is optional. To create only a label, leave the <xref:System.CodeDom.CodeLabeledStatement.Statement%2A> property uninitialized.  
-  
+<xref:System.CodeDom.CodeLabeledStatement> represents a label and optionally, an associated statement. A label can be used to indicate the target of a <xref:System.CodeDom.CodeGotoStatement>.  
+ 
+The <xref:System.CodeDom.CodeLabeledStatement.Statement%2A> property is optional. To create only a label, leave the <xref:System.CodeDom.CodeLabeledStatement.Statement%2A> property uninitialized.  
+ 
 > [!NOTE]
 >  Not all languages support `goto` statements and labels, so you should test wheter a code generator supports `goto` statements and labels by calling the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the <xref:System.CodeDom.Compiler.GeneratorSupport> flag.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example code demonstrates use of a <xref:System.CodeDom.CodeGotoStatement> and a <xref:System.CodeDom.CodeLabeledStatement> to redirect program flow.  
-  
- [!code-cpp[CodeGotoStatementExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeGotoStatementExample/CPP/codegotostatementexample.cpp#2)]
- [!code-csharp[CodeGotoStatementExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeGotoStatementExample/CS/codegotostatementexample.cs#2)]
- [!code-vb[CodeGotoStatementExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeGotoStatementExample/VB/codegotostatementexample.vb#2)]  
-  
+The following example code demonstrates use of a <xref:System.CodeDom.CodeGotoStatement> and a <xref:System.CodeDom.CodeLabeledStatement> to redirect program flow.  
+ 
+[!code-cpp[CodeGotoStatementExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeGotoStatementExample/CPP/codegotostatementexample.cpp#2)]
+[!code-csharp[CodeGotoStatementExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeGotoStatementExample/CS/codegotostatementexample.cs#2)]
+[!code-vb[CodeGotoStatementExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeGotoStatementExample/VB/codegotostatementexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -132,10 +132,10 @@
         <value>A <see cref="T:System.CodeDom.CodeStatement" /> that indicates the statement associated with the label.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not set, the <xref:System.CodeDom.CodeLabeledStatement> represents only a label, rather than a labeled statement.  
-  
+If this property is not set, the <xref:System.CodeDom.CodeLabeledStatement> represents only a label, rather than a labeled statement.  
+ 
  ]]></format>
         </remarks>
       </Docs>

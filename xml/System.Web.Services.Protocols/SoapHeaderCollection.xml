@@ -15,12 +15,12 @@
     <summary>Contains a collection of instances of the <see cref="T:System.Web.Services.Protocols.SoapHeader" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[SoapHeaderCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection/CPP/SoapHeaderCollection.cpp#1)]
- [!code-csharp[SoapHeaderCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection/CS/soapheadercollection.cs#1)]
- [!code-vb[SoapHeaderCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection/VB/soapheadercollection.vb#1)]  
-  
+[!code-cpp[SoapHeaderCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection/CPP/SoapHeaderCollection.cpp#1)]
+[!code-csharp[SoapHeaderCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection/CS/soapheadercollection.cs#1)]
+[!code-vb[SoapHeaderCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection/VB/soapheadercollection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,12 +63,12 @@
         <returns>The position at which the <see cref="T:System.Web.Services.Protocols.SoapHeader" /> was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[SoapHeaderCollection#3](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection/CPP/SoapHeaderCollection.cpp#3)]
- [!code-csharp[SoapHeaderCollection#3](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection/CS/soapheadercollection.cs#3)]
- [!code-vb[SoapHeaderCollection#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection/VB/soapheadercollection.vb#3)]  
-  
+[!code-cpp[SoapHeaderCollection#3](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection/CPP/SoapHeaderCollection.cpp#3)]
+[!code-csharp[SoapHeaderCollection#3](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection/CS/soapheadercollection.cs#3)]
+[!code-vb[SoapHeaderCollection#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection/VB/soapheadercollection.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,12 +96,12 @@
           <see langword="true" /> if the value of the <paramref name="header" /> parameter is found in the <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[SoapHeaderCollection_Contains#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CPP/SoapHeaderCollection_Contains.cpp#1)]
- [!code-csharp[SoapHeaderCollection_Contains#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CS/soapheadercollection_contains.cs#1)]
- [!code-vb[SoapHeaderCollection_Contains#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection_Contains/VB/soapheadercollection_contains.vb#1)]  
-  
+[!code-cpp[SoapHeaderCollection_Contains#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CPP/SoapHeaderCollection_Contains.cpp#1)]
+[!code-csharp[SoapHeaderCollection_Contains#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CS/soapheadercollection_contains.cs#1)]
+[!code-vb[SoapHeaderCollection_Contains#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection_Contains/VB/soapheadercollection_contains.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,12 +129,12 @@
         <summary>Copies the elements of the <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" /> to an <see cref="T:System.Array" />, starting at a particular index of the <see cref="T:System.Array" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[SoapHeaderCollection#5](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection/CPP/SoapHeaderCollection.cpp#5)]
- [!code-csharp[SoapHeaderCollection#5](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection/CS/soapheadercollection.cs#5)]
- [!code-vb[SoapHeaderCollection#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection/VB/soapheadercollection.vb#5)]  
-  
+[!code-cpp[SoapHeaderCollection#5](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection/CPP/SoapHeaderCollection.cpp#5)]
+[!code-csharp[SoapHeaderCollection#5](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection/CS/soapheadercollection.cs#5)]
+[!code-vb[SoapHeaderCollection#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection/VB/soapheadercollection.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> parameter is <see langword="null" />.</exception>
@@ -168,12 +168,12 @@
         <returns>The index of the <paramref name="header" /> parameter, if found in the <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" />; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[SoapHeaderCollection_Contains#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CPP/SoapHeaderCollection_Contains.cpp#1)]
- [!code-csharp[SoapHeaderCollection_Contains#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CS/soapheadercollection_contains.cs#1)]
- [!code-vb[SoapHeaderCollection_Contains#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection_Contains/VB/soapheadercollection_contains.vb#1)]  
-  
+[!code-cpp[SoapHeaderCollection_Contains#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CPP/SoapHeaderCollection_Contains.cpp#1)]
+[!code-csharp[SoapHeaderCollection_Contains#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CS/soapheadercollection_contains.cs#1)]
+[!code-vb[SoapHeaderCollection_Contains#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection_Contains/VB/soapheadercollection_contains.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,19 +201,19 @@
         <summary>Inserts a <see cref="T:System.Web.Services.Protocols.SoapHeader" /> into the <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `index` parameter equals the number of items in the collection, then the <xref:System.Web.Services.Protocols.SoapHeader> is appended to the end of the collection.  
+If the `index` parameter equals the number of items in the collection, then the <xref:System.Web.Services.Protocols.SoapHeader> is appended to the end of the collection.  
+ 
+The <xref:System.Web.Services.Protocols.SoapHeader> elements after the insertion point move down to accommodate the new element.  
+ 
   
- The <xref:System.Web.Services.Protocols.SoapHeader> elements after the insertion point move down to accommodate the new element.  
-  
-   
-  
+ 
 ## Examples  
- [!code-cpp[SoapHeaderCollection#4](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection/CPP/SoapHeaderCollection.cpp#4)]
- [!code-csharp[SoapHeaderCollection#4](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection/CS/soapheadercollection.cs#4)]
- [!code-vb[SoapHeaderCollection#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection/VB/soapheadercollection.vb#4)]  
-  
+[!code-cpp[SoapHeaderCollection#4](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection/CPP/SoapHeaderCollection.cpp#4)]
+[!code-csharp[SoapHeaderCollection#4](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection/CS/soapheadercollection.cs#4)]
+[!code-vb[SoapHeaderCollection#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection/VB/soapheadercollection.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameteris not a valid index in the <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" />.</exception>
@@ -241,17 +241,17 @@
         <value>The <see cref="T:System.Web.Services.Protocols.SoapHeader" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
+This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[SoapHeaderCollection_Contains#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CPP/SoapHeaderCollection_Contains.cpp#1)]
- [!code-csharp[SoapHeaderCollection_Contains#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CS/soapheadercollection_contains.cs#1)]
- [!code-vb[SoapHeaderCollection_Contains#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection_Contains/VB/soapheadercollection_contains.vb#1)]  
-  
+[!code-cpp[SoapHeaderCollection_Contains#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CPP/SoapHeaderCollection_Contains.cpp#1)]
+[!code-csharp[SoapHeaderCollection_Contains#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CS/soapheadercollection_contains.cs#1)]
+[!code-vb[SoapHeaderCollection_Contains#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection_Contains/VB/soapheadercollection_contains.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameteris not a valid index in the <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" />.</exception>
@@ -278,17 +278,17 @@
         <summary>Removes the first occurrence of a specific <see cref="T:System.Web.Services.Protocols.SoapHeader" /> from the <see cref="T:System.Web.Services.Protocols.SoapHeaderCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Protocols.SoapHeader> elements that follow the removed <xref:System.Web.Services.Protocols.SoapHeader> move up to occupy the vacated spot.  
+The <xref:System.Web.Services.Protocols.SoapHeader> elements that follow the removed <xref:System.Web.Services.Protocols.SoapHeader> move up to occupy the vacated spot.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[SoapHeaderCollection_Contains#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CPP/SoapHeaderCollection_Contains.cpp#1)]
- [!code-csharp[SoapHeaderCollection_Contains#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CS/soapheadercollection_contains.cs#1)]
- [!code-vb[SoapHeaderCollection_Contains#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection_Contains/VB/soapheadercollection_contains.vb#1)]  
-  
+[!code-cpp[SoapHeaderCollection_Contains#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CPP/SoapHeaderCollection_Contains.cpp#1)]
+[!code-csharp[SoapHeaderCollection_Contains#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderCollection_Contains/CS/soapheadercollection_contains.cs#1)]
+[!code-vb[SoapHeaderCollection_Contains#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderCollection_Contains/VB/soapheadercollection_contains.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

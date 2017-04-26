@@ -28,17 +28,17 @@
     <summary>the Taiwan calendar.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Taiwan calendar works exactly like the Gregorian calendar, except that the year and era are different. The <xref:System.Globalization.TaiwanCalendar> class recognizes only the current era.  
-  
+The Taiwan calendar works exactly like the Gregorian calendar, except that the year and era are different. The <xref:System.Globalization.TaiwanCalendar> class recognizes only the current era.  
+ 
 > [!NOTE]
 >  For information about using the <xref:System.Globalization.TaiwanCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
-  
- Leap years in the Taiwan calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
-  
- The Taiwan calendar has 12 months with 28 to 31 days each:  
-  
+ 
+Leap years in the Taiwan calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
+ 
+The Taiwan calendar has 12 months with 28 to 31 days each:  
+ 
 |GetMonth value|Month|Days in common years|Days in leap years|  
 |--------------------|-----------|--------------------------|------------------------|  
 |1|1月 (January)|31|31|  
@@ -53,13 +53,13 @@
 |10|10月 (October)|31|31|  
 |11|11月 (November)|30|30|  
 |12|12月 (December)|31|31|  
-  
- February has 29 days during leap years and 28 during common years.  
-  
- The date January 1, 2001 C.E. in the Gregorian calendar is equivalent to the first day of January in the year 90 of the current era in the Taiwan calendar.  
-  
- Each <xref:System.Globalization.CultureInfo> supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, the application should set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> to a new <xref:System.Globalization.Calendar>.  
-  
+ 
+February has 29 days during leap years and 28 during common years.  
+ 
+The date January 1, 2001 C.E. in the Gregorian calendar is equivalent to the first day of January in the year 90 of the current era in the Taiwan calendar.  
+ 
+Each <xref:System.Globalization.CultureInfo> supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, the application should set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> to a new <xref:System.Globalization.Calendar>.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="usage">
@@ -124,28 +124,28 @@
         <returns>The <see cref="T:System.DateTime" /> that results from adding the specified number of months to the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The day part of the resulting <xref:System.DateTime> is affected if the resulting day is not a valid day in the resulting month of the resulting year. It is changed to the last valid day in the resulting month of the resulting year. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. This implementation supports only the current era. Therefore, <xref:System.ArgumentException> is thrown if the resulting year is outside the era of the specified <xref:System.DateTime>. The time-of-day part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>.  
+The day part of the resulting <xref:System.DateTime> is affected if the resulting day is not a valid day in the resulting month of the resulting year. It is changed to the last valid day in the resulting month of the resulting year. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. This implementation supports only the current era. Therefore, <xref:System.ArgumentException> is thrown if the resulting year is outside the era of the specified <xref:System.DateTime>. The time-of-day part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>.  
+ 
+For example, if the specified month is October, which has 31 days, the specified day is the 31st day of that month, and the value of the `months` parameter is 6, the resulting year is one more than the specified year, the resulting month is April, and the resulting day is the 30th day, which is the last day in April.  
+ 
+If the value of the `months` parameter is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
+ 
+The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ 
+[!code-csharp[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#5)]
+[!code-vb[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#5)]  
+ 
   
- For example, if the specified month is October, which has 31 days, the specified day is the 31st day of that month, and the value of the `months` parameter is 6, the resulting year is one more than the specified year, the resulting month is April, and the resulting day is the 30th day, which is the last day in April.  
-  
- If the value of the `months` parameter is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
-  
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
-  
- [!code-csharp[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#5)]
- [!code-vb[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#5)]  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Globalization.TaiwanCalendar.AddMonths%2A> method.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
-  
+The following code example demonstrates the use of the <xref:System.Globalization.TaiwanCalendar.AddMonths%2A> method.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range.</exception>
@@ -189,28 +189,28 @@
         <returns>The <see cref="T:System.DateTime" /> that results from adding the specified number of years to the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The day part of the resulting <xref:System.DateTime> is affected if the resulting day is not a valid day in the resulting month of the resulting year. It is changed to the last valid day in the resulting month of the resulting year. The month part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>. This implementation supports only the current era. Therefore, <xref:System.ArgumentException> is thrown if the resulting year is outside the era of the specified <xref:System.DateTime>. The time-of-day part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>.  
+The day part of the resulting <xref:System.DateTime> is affected if the resulting day is not a valid day in the resulting month of the resulting year. It is changed to the last valid day in the resulting month of the resulting year. The month part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>. This implementation supports only the current era. Therefore, <xref:System.ArgumentException> is thrown if the resulting year is outside the era of the specified <xref:System.DateTime>. The time-of-day part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>.  
+ 
+For example, February has 28 days, except during leap years when it has 29 days. If the specified date is the 29th day of February in a leap year and the value of `years` is 1, the resulting date is the 28th day of February in the following year.  
+ 
+If `years` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
+ 
+The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ 
+[!code-csharp[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#8)]
+[!code-vb[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#8)]  
+ 
   
- For example, February has 28 days, except during leap years when it has 29 days. If the specified date is the 29th day of February in a leap year and the value of `years` is 1, the resulting date is the 28th day of February in the following year.  
-  
- If `years` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
-  
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
-  
- [!code-csharp[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#8)]
- [!code-vb[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#8)]  
-  
-   
-  
+ 
 ## Examples  
- The following code example displays the use of the <xref:System.Globalization.TaiwanCalendar.AddYears%2A> method.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
-  
+The following code example displays the use of the <xref:System.Globalization.TaiwanCalendar.AddYears%2A> method.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range.</exception>
@@ -243,13 +243,13 @@
         <value>Always returns <see cref="F:System.Globalization.CalendarAlgorithmType.SolarCalendar" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses reflection to instantiate each <xref:System.Globalization.Calendar> type found in the .NET Framework and displays the value of its <xref:System.Globalization.Calendar.AlgorithmType%2A> property.  
-  
- [!code-csharp[System.Globalization.Calendar.AlgorithmType#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.algorithmtype/cs/algorithmtype1.cs#1)]
- [!code-vb[System.Globalization.Calendar.AlgorithmType#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.algorithmtype/vb/algorithmtype1.vb#1)]  
-  
+The following example uses reflection to instantiate each <xref:System.Globalization.Calendar> type found in the .NET Framework and displays the value of its <xref:System.Globalization.Calendar.AlgorithmType%2A> property.  
+ 
+[!code-csharp[System.Globalization.Calendar.AlgorithmType#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.algorithmtype/cs/algorithmtype1.cs#1)]
+[!code-vb[System.Globalization.Calendar.AlgorithmType#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.algorithmtype/vb/algorithmtype1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,10 +280,10 @@
         <value>An array that consists of a single element for which the value is always the current era.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values in the array returned by this property are numbers that range from 1 to the largest era number. The largest era number is returned in the first array element and the smallest era number is returned in the last element.  
-  
+The values in the array returned by this property are numbers that range from 1 to the largest era number. The largest era number is returned in the first array element and the smallest era number is returned in the last element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -318,14 +318,14 @@
         <returns>An integer from 1 to 31 that represents the day of the month in the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Globalization.TaiwanCalendar.GetDayOfMonth%2A> method.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
-  
+The following code example demonstrates the use of the <xref:System.Globalization.TaiwanCalendar.GetDayOfMonth%2A> method.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -360,10 +360,10 @@
         <returns>A <see cref="T:System.DayOfWeek" /> value that represents the day of the week in the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DayOfWeek> values are as follows:  
-  
+The <xref:System.DayOfWeek> values are as follows:  
+ 
 |DayOfWeek value|which indicates|  
 |---------------------|---------------------|  
 |Sunday|星期日|  
@@ -373,16 +373,16 @@
 |Thursday|星期四|  
 |Friday|星期五|  
 |Saturday|星期六|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Globalization.TaiwanCalendar.GetDayOfWeek%2A> method.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
-  
+The following code example demonstrates the use of the <xref:System.Globalization.TaiwanCalendar.GetDayOfWeek%2A> method.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -417,19 +417,19 @@
         <returns>An integer from 1 to 366 that represents the day of the year in the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The day of the year is defined as the number of days from the first day of the year. For example, <xref:System.Globalization.TaiwanCalendar.GetDayOfYear%2A> for the first day of the first month returns 1, and <xref:System.Globalization.TaiwanCalendar.GetDayOfYear%2A> for the last day of the last month returns the total number of days in that year. The total is the same as the value returned by <xref:System.Globalization.TaiwanCalendar.GetDaysInYear%2A>.  
+The day of the year is defined as the number of days from the first day of the year. For example, <xref:System.Globalization.TaiwanCalendar.GetDayOfYear%2A> for the first day of the first month returns 1, and <xref:System.Globalization.TaiwanCalendar.GetDayOfYear%2A> for the last day of the last month returns the total number of days in that year. The total is the same as the value returned by <xref:System.Globalization.TaiwanCalendar.GetDaysInYear%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Globalization.TaiwanCalendar.GetDayOfYear%2A> method.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
-  
+The following code example demonstrates the use of the <xref:System.Globalization.TaiwanCalendar.GetDayOfYear%2A> method.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -468,19 +468,19 @@
         <returns>The number of days in the specified month in the specified year in the specified era.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, this method returns 28 or 29 for February (`month` = 2), depending on whether `year` is a leap year.  
+For example, this method returns 28 or 29 for February (`month` = 2), depending on whether `year` is a leap year.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example calls <xref:System.Globalization.TaiwanCalendar.GetDaysInMonth%2A> for the second month in each of five years in each era.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar.GetDaysInMonth#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetDaysInMonth/CPP/taiwancalendar_getdaysinmonth.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar.GetDaysInMonth#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetDaysInMonth/CS/taiwancalendar_getdaysinmonth.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar.GetDaysInMonth#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetDaysInMonth/VB/taiwancalendar_getdaysinmonth.vb#1)]  
-  
+The following example calls <xref:System.Globalization.TaiwanCalendar.GetDaysInMonth%2A> for the second month in each of five years in each era.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar.GetDaysInMonth#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetDaysInMonth/CPP/taiwancalendar_getdaysinmonth.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar.GetDaysInMonth#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetDaysInMonth/CS/taiwancalendar_getdaysinmonth.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar.GetDaysInMonth#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetDaysInMonth/VB/taiwancalendar_getdaysinmonth.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -527,19 +527,19 @@
         <returns>The number of days in the specified year in the specified era.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, this method returns 365 or 366, depending on whether `year` is a leap year.  
+For example, this method returns 365 or 366, depending on whether `year` is a leap year.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example calls <xref:System.Globalization.TaiwanCalendar.GetDaysInYear%2A> for five years in each era.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar.GetDaysInYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetDaysInYear/CPP/taiwancalendar_getdaysinyear.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar.GetDaysInYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetDaysInYear/CS/taiwancalendar_getdaysinyear.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar.GetDaysInYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetDaysInYear/VB/taiwancalendar_getdaysinyear.vb#1)]  
-  
+The following example calls <xref:System.Globalization.TaiwanCalendar.GetDaysInYear%2A> for five years in each era.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar.GetDaysInYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetDaysInYear/CPP/taiwancalendar_getdaysinyear.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar.GetDaysInYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetDaysInYear/CS/taiwancalendar_getdaysinyear.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar.GetDaysInYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetDaysInYear/VB/taiwancalendar_getdaysinyear.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -580,19 +580,19 @@
         <returns>An integer that represents the era in the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Globalization.TaiwanCalendar> class recognizes only the current era.  
+The <xref:System.Globalization.TaiwanCalendar> class recognizes only the current era.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Globalization.TaiwanCalendar.GetEra%2A> method.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
-  
+The following code example demonstrates the use of the <xref:System.Globalization.TaiwanCalendar.GetEra%2A> method.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -634,10 +634,10 @@
         <returns>The return value is always 0 because the <see cref="T:System.Globalization.TaiwanCalendar" /> class does not support the notion of a leap month.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a calendar that supports the notion of a leap month, the leap month can occur either after a particular month or after any month in a year. For example, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns a number between 1 and 13 that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.  
-  
+In a calendar that supports the notion of a leap month, the leap month can occur either after a particular month or after any month in a year. For example, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns a number between 1 and 13 that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -672,14 +672,14 @@
         <returns>An integer from 1 to 12 that represents the month in the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Globalization.TaiwanCalendar.GetMonth%2A> method.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
-  
+The following code example demonstrates the use of the <xref:System.Globalization.TaiwanCalendar.GetMonth%2A> method.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -716,14 +716,14 @@
         <returns>The number of months in the specified year in the specified era.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example calls <xref:System.Globalization.TaiwanCalendar.GetMonthsInYear%2A> for five years in each era.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar.GetMonthsInYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetMonthsInYear/CPP/taiwancalendar_getmonthsinyear.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar.GetMonthsInYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetMonthsInYear/CS/taiwancalendar_getmonthsinyear.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar.GetMonthsInYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetMonthsInYear/VB/taiwancalendar_getmonthsinyear.vb#1)]  
-  
+The following example calls <xref:System.Globalization.TaiwanCalendar.GetMonthsInYear%2A> for five years in each era.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar.GetMonthsInYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetMonthsInYear/CPP/taiwancalendar_getmonthsinyear.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar.GetMonthsInYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetMonthsInYear/CS/taiwancalendar_getmonthsinyear.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar.GetMonthsInYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.GetMonthsInYear/VB/taiwancalendar_getmonthsinyear.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -773,27 +773,27 @@
         <returns>A positive integer that represents the week of the year that includes the date in the <paramref name="time" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to determine the number of weeks in the year by setting the `time` parameter to the last day of the year.  
+This method can be used to determine the number of weeks in the year by setting the `time` parameter to the last day of the year.  
+ 
+The <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property contains culture-specific values that can be used for the `rule` and `firstDayOfWeek` parameters.  
+ 
+The <xref:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> contains the default <xref:System.DayOfWeek> value that represents the first day of the week for a specific culture, using the calendar specified in the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName>.  
+ 
+The <xref:System.Globalization.DateTimeFormatInfo.CalendarWeekRule%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> contains the default <xref:System.Globalization.CalendarWeekRule> value that defines a calendar week for a specific culture, using the calendar specified in the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName>.  
+ 
+For example, in <xref:System.Globalization.GregorianCalendar>, the <xref:System.Globalization.Calendar.GetWeekOfYear%2A> method for January 1 returns 1.  
+ 
   
- The <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property contains culture-specific values that can be used for the `rule` and `firstDayOfWeek` parameters.  
-  
- The <xref:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> contains the default <xref:System.DayOfWeek> value that represents the first day of the week for a specific culture, using the calendar specified in the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName>.  
-  
- The <xref:System.Globalization.DateTimeFormatInfo.CalendarWeekRule%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> contains the default <xref:System.Globalization.CalendarWeekRule> value that defines a calendar week for a specific culture, using the calendar specified in the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName>.  
-  
- For example, in <xref:System.Globalization.GregorianCalendar>, the <xref:System.Globalization.Calendar.GetWeekOfYear%2A> method for January 1 returns 1.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how the result of <xref:System.Globalization.Calendar.GetWeekOfYear%2A> varies depending on the <xref:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek%2A> and <xref:System.Globalization.CalendarWeekRule> values used. If the specified date is the last day of the year, <xref:System.Globalization.Calendar.GetWeekOfYear%2A> returns the total number of weeks in that year.  
-  
- [!code-cpp[System.Globalization.Calendar.GetWeekOfYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/CPP/yslin_calendar_getweekofyear.cpp#1)]
- [!code-csharp[System.Globalization.Calendar.GetWeekOfYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/CS/yslin_calendar_getweekofyear.cs#1)]
- [!code-vb[System.Globalization.Calendar.GetWeekOfYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/VB/yslin_calendar_getweekofyear.vb#1)]  
-  
+The following code example shows how the result of <xref:System.Globalization.Calendar.GetWeekOfYear%2A> varies depending on the <xref:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek%2A> and <xref:System.Globalization.CalendarWeekRule> values used. If the specified date is the last day of the year, <xref:System.Globalization.Calendar.GetWeekOfYear%2A> returns the total number of weeks in that year.  
+ 
+[!code-cpp[System.Globalization.Calendar.GetWeekOfYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/CPP/yslin_calendar_getweekofyear.cpp#1)]
+[!code-csharp[System.Globalization.Calendar.GetWeekOfYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/CS/yslin_calendar_getweekofyear.cs#1)]
+[!code-vb[System.Globalization.Calendar.GetWeekOfYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/VB/yslin_calendar_getweekofyear.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -834,14 +834,14 @@
         <returns>An integer that represents the year in the specified <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Globalization.TaiwanCalendar.GetYear%2A> method.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
-  
+The following code example demonstrates the use of the <xref:System.Globalization.TaiwanCalendar.GetYear%2A> method.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CPP/taiwancalendar_addget.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/CS/taiwancalendar_addget.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_AddGet/VB/taiwancalendar_addget.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -883,21 +883,21 @@
           <see langword="true" /> if the specified day is a leap day; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Leap years in the Taiwan calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
+Leap years in the Taiwan calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
+ 
+A leap day is a day that occurs only in a leap year. For example, the 29th day of February is the only leap day.  
+ 
   
- A leap day is a day that occurs only in a leap year. For example, the 29th day of February is the only leap day.  
-  
-   
-  
+ 
 ## Examples  
- The following example calls <xref:System.Globalization.TaiwanCalendar.IsLeapDay%2A> for the last day of the second month (February) for five years in each of the eras.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar.IsLeapDay#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapDay/CPP/taiwancalendar_isleapday.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar.IsLeapDay#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapDay/CS/taiwancalendar_isleapday.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar.IsLeapDay#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapDay/VB/taiwancalendar_isleapday.vb#1)]  
-  
+The following example calls <xref:System.Globalization.TaiwanCalendar.IsLeapDay%2A> for the last day of the second month (February) for five years in each of the eras.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar.IsLeapDay#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapDay/CPP/taiwancalendar_isleapday.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar.IsLeapDay#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapDay/CS/taiwancalendar_isleapday.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar.IsLeapDay#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapDay/VB/taiwancalendar_isleapday.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -950,21 +950,21 @@
         <returns>This method always returns <see langword="false" />, unless overridden by a derived class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Leap years in the Taiwan calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
+Leap years in the Taiwan calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
+ 
+A leap month is an entire month that occurs only in a leap year. The Taiwan calendar does not have any leap months.  
+ 
   
- A leap month is an entire month that occurs only in a leap year. The Taiwan calendar does not have any leap months.  
-  
-   
-  
+ 
 ## Examples  
- The following example calls <xref:System.Globalization.TaiwanCalendar.IsLeapMonth%2A> for all the months in five years in the current era.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar.IsLeapMonth#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapMonth/CPP/taiwancalendar_isleapmonth.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar.IsLeapMonth#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapMonth/CS/taiwancalendar_isleapmonth.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar.IsLeapMonth#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapMonth/VB/taiwancalendar_isleapmonth.vb#1)]  
-  
+The following example calls <xref:System.Globalization.TaiwanCalendar.IsLeapMonth%2A> for all the months in five years in the current era.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar.IsLeapMonth#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapMonth/CPP/taiwancalendar_isleapmonth.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar.IsLeapMonth#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapMonth/CS/taiwancalendar_isleapmonth.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar.IsLeapMonth#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapMonth/VB/taiwancalendar_isleapmonth.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1012,19 +1012,19 @@
           <see langword="true" /> if the specified year is a leap year; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Leap years in the Taiwan calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
+Leap years in the Taiwan calendar correspond to the same leap years in the Gregorian calendar. A leap year in the Gregorian calendar is defined as a Gregorian year that is evenly divisible by four, except if it is divisible by 100. However, Gregorian years that are divisible by 400 are leap years. A common year has 365 days and a leap year has 366 days.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example calls <xref:System.Globalization.TaiwanCalendar.IsLeapYear%2A> for five years in each of the eras.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar.IsLeapYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapYear/CPP/taiwancalendar_isleapyear.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar.IsLeapYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapYear/CS/taiwancalendar_isleapyear.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar.IsLeapYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapYear/VB/taiwancalendar_isleapyear.vb#1)]  
-  
+The following example calls <xref:System.Globalization.TaiwanCalendar.IsLeapYear%2A> for five years in each of the eras.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar.IsLeapYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapYear/CPP/taiwancalendar_isleapyear.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar.IsLeapYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapYear/CS/taiwancalendar_isleapyear.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar.IsLeapYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar.IsLeapYear/VB/taiwancalendar_isleapyear.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1066,14 +1066,14 @@
         <value>The latest date and time supported by the <see cref="T:System.Globalization.TaiwanCalendar" /> class, which is equivalent to the last moment of December 31, 9999 C.E. in the Gregorian calendar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example gets the minimum value and the maximum value of the calendar.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar_MinMax#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_MinMax/CPP/taiwancalendar_minmax.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar_MinMax#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_MinMax/CS/taiwancalendar_minmax.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar_MinMax#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_MinMax/VB/taiwancalendar_minmax.vb#1)]  
-  
+The following code example gets the minimum value and the maximum value of the calendar.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar_MinMax#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_MinMax/CPP/taiwancalendar_minmax.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar_MinMax#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_MinMax/CS/taiwancalendar_minmax.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar_MinMax#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_MinMax/VB/taiwancalendar_minmax.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1109,19 +1109,19 @@
         <value>The earliest date and time supported by the <see cref="T:System.Globalization.TaiwanCalendar" /> class, which is equivalent to the first moment of January 1, 1912 C.E. in the Gregorian calendar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Microsoft Visual Basic represents time of day as the specified time on the minimum date supported by <xref:System.DateTime>, which is January 1, 0001 C.E. However, the <xref:System.Globalization.TaiwanCalendar> class does not support that minimum date. Consequently, if your application calls a method to format the time of day using the current calendar but does not specify a format specifier, formatting uses the ISO 8601 sortable ("s") date/time pattern format specifier instead of the default general ("G") date/time pattern format specifier. For more information, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md).  
+Microsoft Visual Basic represents time of day as the specified time on the minimum date supported by <xref:System.DateTime>, which is January 1, 0001 C.E. However, the <xref:System.Globalization.TaiwanCalendar> class does not support that minimum date. Consequently, if your application calls a method to format the time of day using the current calendar but does not specify a format specifier, formatting uses the ISO 8601 sortable ("s") date/time pattern format specifier instead of the default general ("G") date/time pattern format specifier. For more information, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example gets the minimum value and the maximum value of the calendar.  
-  
- [!code-cpp[System.Globalization.TaiwanCalendar_MinMax#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_MinMax/CPP/taiwancalendar_minmax.cpp#1)]
- [!code-csharp[System.Globalization.TaiwanCalendar_MinMax#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_MinMax/CS/taiwancalendar_minmax.cs#1)]
- [!code-vb[System.Globalization.TaiwanCalendar_MinMax#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_MinMax/VB/taiwancalendar_minmax.vb#1)]  
-  
+The following code example gets the minimum value and the maximum value of the calendar.  
+ 
+[!code-cpp[System.Globalization.TaiwanCalendar_MinMax#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_MinMax/CPP/taiwancalendar_minmax.cpp#1)]
+[!code-csharp[System.Globalization.TaiwanCalendar_MinMax#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_MinMax/CS/taiwancalendar_minmax.cs#1)]
+[!code-vb[System.Globalization.TaiwanCalendar_MinMax#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TaiwanCalendar_MinMax/VB/taiwancalendar_minmax.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1231,14 +1231,14 @@
         <returns>An integer that contains the four-digit representation of <paramref name="year" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method implements <xref:System.Globalization.Calendar.ToFourDigitYear%2A?displayProperty=fullName>.  
-  
- Because the year in the Taiwan calendar is typically less than four digits long, this implementation always returns the value of the `year` parameter.  
-  
- <xref:System.Globalization.TaiwanCalendar.ToFourDigitYear%2A> supports either a two-digit year or a four-digit year. Passing a two-digit year value (less than 100) causes the method to convert the value to a four-digit value according to the <xref:System.Globalization.TaiwanCalendar.TwoDigitYearMax%2A> value representing the appropriate century. If the application supplies a four-digit year value that is within the supported calendar range to <xref:System.Globalization.TaiwanCalendar.ToFourDigitYear%2A>, the method returns the actual input value. If the application supplies a four-digit value that is outside the supported calendar range, or if it supplies a negative value, the method throws an exception.  
-  
+This method implements <xref:System.Globalization.Calendar.ToFourDigitYear%2A?displayProperty=fullName>.  
+ 
+Because the year in the Taiwan calendar is typically less than four digits long, this implementation always returns the value of the `year` parameter.  
+ 
+<xref:System.Globalization.TaiwanCalendar.ToFourDigitYear%2A> supports either a two-digit year or a four-digit year. Passing a two-digit year value (less than 100) causes the method to convert the value to a four-digit value according to the <xref:System.Globalization.TaiwanCalendar.TwoDigitYearMax%2A> value representing the appropriate century. If the application supplies a four-digit year value that is within the supported calendar range to <xref:System.Globalization.TaiwanCalendar.ToFourDigitYear%2A>, the method returns the actual input value. If the application supplies a four-digit value that is outside the supported calendar range, or if it supplies a negative value, the method throws an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1271,12 +1271,12 @@
         <value>The last year of a 100-year range that can be represented by a 2-digit year.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property implements <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=fullName>.  
-  
- Because the year in the Taiwan calendar is typically less than four digits long, this implementation returns 99 by default and does not affect the return value of <xref:System.Globalization.TaiwanCalendar.ToFourDigitYear%2A>.  
-  
+This property implements <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=fullName>.  
+ 
+Because the year in the Taiwan calendar is typically less than four digits long, this implementation returns 99 by default and does not affect the return value of <xref:System.Globalization.TaiwanCalendar.ToFourDigitYear%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified in a set operation is less than 99.  

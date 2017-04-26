@@ -13,12 +13,12 @@
     <summary>Used to specify the data type of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> used with the <see cref="Overload:System.Drawing.Image.Save" /> or <see cref="Overload:System.Drawing.Image.SaveAdd" /> method of an image.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- GDI+ uses image encoders to convert the images stored in <xref:System.Drawing.Bitmap> objects to various file formats. Image encoders are built into GDI+ for the BMP, JPEG, GIF, TIFF, and PNG formats. An encoder is invoked when you call the <xref:System.Drawing.Image.Save%2A> or <xref:System.Drawing.Image.SaveAdd%2A> method of a <xref:System.Drawing.Bitmap> object.  
-  
- The <xref:System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A> data member of the <xref:System.Drawing.Imaging.EncoderParameter> object indicates the length of the character string including the `null` terminator.  
-  
+GDI+ uses image encoders to convert the images stored in <xref:System.Drawing.Bitmap> objects to various file formats. Image encoders are built into GDI+ for the BMP, JPEG, GIF, TIFF, and PNG formats. An encoder is invoked when you call the <xref:System.Drawing.Image.Save%2A> or <xref:System.Drawing.Image.SaveAdd%2A> method of a <xref:System.Drawing.Bitmap> object.  
+ 
+The <xref:System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A> data member of the <xref:System.Drawing.Imaging.EncoderParameter> object indicates the length of the character string including the `null` terminator.  
+ 
  ]]></format>
     </remarks>
   </Docs>

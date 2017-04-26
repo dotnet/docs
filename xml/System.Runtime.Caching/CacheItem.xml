@@ -14,22 +14,22 @@
     <summary>Represents an individual cache entry in the cache.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Caching.CacheItem> class provides a logical representation of a cache entry, which can include regions by using the <xref:System.Runtime.Caching.CacheItem.RegionName%2A> property. In the default ASP.NET cache implementation, a cache entry is a key/value pair.  
+The <xref:System.Runtime.Caching.CacheItem> class provides a logical representation of a cache entry, which can include regions by using the <xref:System.Runtime.Caching.CacheItem.RegionName%2A> property. In the default ASP.NET cache implementation, a cache entry is a key/value pair.  
+ 
+Entries in the cache are not <xref:System.Runtime.Caching.CacheItem> instances. Instead, the cache provider can store cache entries in any internal format that is convenient. However, the cache API requires cache providers to be able to convert cache entries into <xref:System.Runtime.Caching.CacheItem> instances (and vice versa).  
+ 
+Custom cache implementations can inherit from the <xref:System.Runtime.Caching.CacheItem> class provide additional information about cache entries.  
+ 
   
- Entries in the cache are not <xref:System.Runtime.Caching.CacheItem> instances. Instead, the cache provider can store cache entries in any internal format that is convenient. However, the cache API requires cache providers to be able to convert cache entries into <xref:System.Runtime.Caching.CacheItem> instances (and vice versa).  
-  
- Custom cache implementations can inherit from the <xref:System.Runtime.Caching.CacheItem> class provide additional information about cache entries.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Runtime.Caching.CacheItem> class to store the contents of a file as a cache entry.  
-  
- [!code-csharp[System.Runtime.Caching.CacheItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.runtime.caching.cacheitem/cs/default.aspx.cs#1)]
- [!code-vb[System.Runtime.Caching.CacheItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.runtime.caching.cacheitem/vb/default.aspx.vb#1)]  
-  
+The following example shows how to use the <xref:System.Runtime.Caching.CacheItem> class to store the contents of a file as a cache entry.  
+ 
+[!code-csharp[System.Runtime.Caching.CacheItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.runtime.caching.cacheitem/cs/default.aspx.cs#1)]
+[!code-vb[System.Runtime.Caching.CacheItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.runtime.caching.cacheitem/vb/default.aspx.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -54,10 +54,10 @@
         <summary>Initializes a new <see cref="T:System.Runtime.Caching.CacheItem" /> instance using the specified key of a cache entry.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Runtime.Caching.CacheItem.%23ctor%28System.String%29> method overload is called, the property values for <xref:System.Runtime.Caching.CacheItem.RegionName%2A> and <xref:System.Runtime.Caching.CacheItem.Value%2A> are set to `null`.  
-  
+When the <xref:System.Runtime.Caching.CacheItem.%23ctor%28System.String%29> method overload is called, the property values for <xref:System.Runtime.Caching.CacheItem.RegionName%2A> and <xref:System.Runtime.Caching.CacheItem.Value%2A> are set to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,10 +81,10 @@
         <summary>Initializes a new <see cref="T:System.Runtime.Caching.CacheItem" /> instance using the specified key and a value of the cache entry.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Runtime.Caching.CacheItem.%23ctor%28System.String%2CSystem.Object%29> method overload is called, the property value for <xref:System.Runtime.Caching.CacheItem.RegionName%2A> is set to `null`.  
-  
+When the <xref:System.Runtime.Caching.CacheItem.%23ctor%28System.String%2CSystem.Object%29> method overload is called, the property value for <xref:System.Runtime.Caching.CacheItem.RegionName%2A> is set to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

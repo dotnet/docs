@@ -19,22 +19,22 @@
     <summary>Represents a control skin, which is a means to define stylistic properties that are applied to an ASP.NET Web server control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Page and control developers do not use the <xref:System.Web.UI.ControlSkinDelegate>, <xref:System.Web.UI.ControlSkin>, or <xref:System.Web.UI.PageTheme> classes directly. These classes are used internally by the ASP.NET page framework to apply server-side properties and cascading style sheet definitions that are defined in ASP.NET themes and control skin files to specific types of controls.  
+Page and control developers do not use the <xref:System.Web.UI.ControlSkinDelegate>, <xref:System.Web.UI.ControlSkin>, or <xref:System.Web.UI.PageTheme> classes directly. These classes are used internally by the ASP.NET page framework to apply server-side properties and cascading style sheet definitions that are defined in ASP.NET themes and control skin files to specific types of controls.  
+ 
+<xref:System.Web.UI.ControlSkin> objects represent a named skin or default skin of a <xref:System.Web.UI.Control> control at run time and design time. ASP.NET builds <xref:System.Web.UI.PageTheme>, <xref:System.Web.UI.ControlSkin> and <xref:System.Web.UI.ControlSkinDelegate> objects to apply the style elements defined in themes and control skin files to ASP.NET Web pages and controls.  
+ 
+For more information about themes and control skins, see [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ 
   
- <xref:System.Web.UI.ControlSkin> objects represent a named skin or default skin of a <xref:System.Web.UI.Control> control at run time and design time. ASP.NET builds <xref:System.Web.UI.PageTheme>, <xref:System.Web.UI.ControlSkin> and <xref:System.Web.UI.ControlSkinDelegate> objects to apply the style elements defined in themes and control skin files to ASP.NET Web pages and controls.  
-  
- For more information about themes and control skins, see [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how control skins are specified for controls in a declarative ASP.NET page. The example shows three ASP.NET server controls found in the same page, two that use the same named skin and one that uses a different skin.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ControlSkin#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlSkin/CS/controlskincs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ControlSkin#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlSkin/VB/controlskinvb.aspx#1)]  -->  
-  
+The following code example demonstrates how control skins are specified for controls in a declarative ASP.NET page. The example shows three ASP.NET server controls found in the same page, two that use the same named skin and one that uses a different skin.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ControlSkin#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlSkin/CS/controlskincs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[ControlSkin#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlSkin/VB/controlskinvb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,10 +79,10 @@
         <summary>Applies the skin to the <see cref="T:System.Web.UI.Control" /> control contained by the <see cref="T:System.Web.UI.ControlSkin" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Passes the <xref:System.Web.UI.Control> object associated with the <xref:System.Web.UI.ControlSkin> class to the <xref:System.Web.UI.ControlSkinDelegate>, which applies the skin to the <xref:System.Web.UI.Control> object.  
-  
+Passes the <xref:System.Web.UI.Control> object associated with the <xref:System.Web.UI.ControlSkin> class to the <xref:System.Web.UI.ControlSkinDelegate>, which applies the skin to the <xref:System.Web.UI.Control> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

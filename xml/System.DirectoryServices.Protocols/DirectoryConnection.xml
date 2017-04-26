@@ -65,10 +65,10 @@
         <value>Alternate credentials for the connection object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If not specified, the default value is `null`.  
-  
+If not specified, the default value is `null`.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
@@ -93,10 +93,10 @@
         <value>The domain or the server to which the connection should be made.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, "http://fabrikam.com/platforms/adssoap.dll" represents a DSML server and "dc-01.fabrikam.com" represents an LDAP server.  
-  
+For example, "http://fabrikam.com/platforms/adssoap.dll" represents a DSML server and "dc-01.fabrikam.com" represents an LDAP server.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,10 +143,10 @@
         <value>The length of time, in seconds, before the connection times out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Thirty seconds is the default time length property setting.  
-  
+Thirty seconds is the default time length property setting.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,14 +18,14 @@
     <summary>Defines a group of type faces having a similar basic design and certain variations in styles. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows all the font families in the <xref:System.Drawing.FontFamily.Families%2A> property of the <xref:System.Drawing.FontFamily> class. This example is designed to be used with a Windows Form. To run this example, add a <xref:System.Windows.Forms.ListBox> named `listBox1` to a form and call the `PopulateListBoxWithFonts` method from the form's constructor.  
-  
- [!code-cpp[System.Drawing.MiscExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.MiscExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#1)]
- [!code-vb[System.Drawing.MiscExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#1)]  
-  
+The following code example shows all the font families in the <xref:System.Drawing.FontFamily.Families%2A> property of the <xref:System.Drawing.FontFamily> class. This example is designed to be used with a Windows Form. To run this example, add a <xref:System.Windows.Forms.ListBox> named `listBox1` to a form and call the `PopulateListBoxWithFonts` method from the form's constructor.  
+ 
+[!code-cpp[System.Drawing.MiscExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#1)]
+[!code-csharp[System.Drawing.MiscExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#1)]
+[!code-vb[System.Drawing.MiscExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,10 +65,10 @@
         <summary>Initializes a new <see cref="T:System.Drawing.FontFamily" /> with the specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Passing empty string ("") for the `name` parameter causes an exception.  
-  
+Passing empty string ("") for the `name` parameter causes an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -130,15 +130,15 @@
         <summary>Releases all resources used by this <see cref="T:System.Drawing.FontFamily" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling <xref:System.Drawing.FontFamily.Dispose%2A> allows the resources used by this <xref:System.Drawing.FontFamily> to be reallocated for other purposes.  
-  
- Call <xref:System.Drawing.FontFamily.Dispose%2A> when you are finished using the <xref:System.Drawing.FontFamily>. The <xref:System.Drawing.FontFamily.Dispose%2A> method leaves the <xref:System.Drawing.FontFamily> in an unusable state. After calling <xref:System.Drawing.FontFamily.Dispose%2A>, you must release all references to the <xref:System.Drawing.FontFamily> so the garbage collector can reclaim the memory that the <xref:System.Drawing.FontFamily> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Calling <xref:System.Drawing.FontFamily.Dispose%2A> allows the resources used by this <xref:System.Drawing.FontFamily> to be reallocated for other purposes.  
+ 
+Call <xref:System.Drawing.FontFamily.Dispose%2A> when you are finished using the <xref:System.Drawing.FontFamily>. The <xref:System.Drawing.FontFamily.Dispose%2A> method leaves the <xref:System.Drawing.FontFamily> in an unusable state. After calling <xref:System.Drawing.FontFamily.Dispose%2A>, you must release all references to the <xref:System.Drawing.FontFamily> so the garbage collector can reclaim the memory that the <xref:System.Drawing.FontFamily> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call <xref:System.Drawing.FontFamily.Dispose%2A> before you release your last reference to the <xref:System.Drawing.FontFamily>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Drawing.FontFamily> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,20 +165,20 @@
           <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.Drawing.FontFamily" /> and is identical to this <see cref="T:System.Drawing.FontFamily" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates two <xref:System.Drawing.Font> objects.  
-  
+ 
 -   Tests whether they are equivalent.  
-  
+ 
 -   Displays the result of the test in a message box.  
-  
- [!code-cpp[System.Drawing.ClassicFontFamilyExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.ClassicFontFamilyExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#1)]
- [!code-vb[System.Drawing.ClassicFontFamilyExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#1)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicFontFamilyExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#1)]
+[!code-csharp[System.Drawing.ClassicFontFamilyExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#1)]
+[!code-vb[System.Drawing.ClassicFontFamilyExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,14 +200,14 @@
         <value>An array of <see cref="T:System.Drawing.FontFamily" /> objects associated with the current graphics context.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows all the font families in the <xref:System.Drawing.FontFamily.Families%2A> property of the <xref:System.Drawing.FontFamily> class. This example is designed to be used with a Windows Form. To run this example, add a <xref:System.Windows.Forms.ListBox> named `listBox1` to a form and call the `PopulateListBoxWithFonts` method from the form's constructor.  
-  
- [!code-cpp[System.Drawing.MiscExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.MiscExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#1)]
- [!code-vb[System.Drawing.MiscExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#1)]  
-  
+The following code example shows all the font families in the <xref:System.Drawing.FontFamily.Families%2A> property of the <xref:System.Drawing.FontFamily> class. This example is designed to be used with a Windows Form. To run this example, add a <xref:System.Windows.Forms.ListBox> named `listBox1` to a form and call the `PopulateListBoxWithFonts` method from the form's constructor.  
+ 
+[!code-cpp[System.Drawing.MiscExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#1)]
+[!code-csharp[System.Drawing.MiscExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#1)]
+[!code-vb[System.Drawing.MiscExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -305,20 +305,20 @@
         <returns>The cell ascent for this <see cref="T:System.Drawing.FontFamily" /> that uses the specified <see cref="T:System.Drawing.FontStyle" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.FontFamily>.  
-  
+ 
 -   Gets the cell ascent for that font family.  
-  
+ 
 -   Draws the value of the cell ascent to the screen as text.  
-  
- [!code-cpp[System.Drawing.ClassicFontFamilyExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.ClassicFontFamilyExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#2)]
- [!code-vb[System.Drawing.ClassicFontFamilyExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#2)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicFontFamilyExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#2)]
+[!code-csharp[System.Drawing.ClassicFontFamilyExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#2)]
+[!code-vb[System.Drawing.ClassicFontFamilyExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -344,20 +344,20 @@
         <returns>The cell descent metric for this <see cref="T:System.Drawing.FontFamily" /> that uses the specified <see cref="T:System.Drawing.FontStyle" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.FontFamily>.  
-  
+ 
 -   Gets the cell descent for that font family.  
-  
+ 
 -   Draws the value of the cell descent to the screen as text.  
-  
- [!code-cpp[System.Drawing.ClassicFontFamilyExamples#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#3)]
- [!code-csharp[System.Drawing.ClassicFontFamilyExamples#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#3)]
- [!code-vb[System.Drawing.ClassicFontFamilyExamples#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#3)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicFontFamilyExamples#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#3)]
+[!code-csharp[System.Drawing.ClassicFontFamilyExamples#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#3)]
+[!code-vb[System.Drawing.ClassicFontFamilyExamples#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -383,25 +383,25 @@
         <returns>The height of the em square.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- *Em square* is a typography term that refers to the rectangle occupied by the font's widest letter, traditionally the letter M.  
+*Em square* is a typography term that refers to the rectangle occupied by the font's widest letter, traditionally the letter M.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.FontFamily>.  
-  
+ 
 -   Gets the em square height for that font family.  
-  
+ 
 -   Draws the value of the em height to the screen as text.  
-  
- [!code-cpp[System.Drawing.ClassicFontFamilyExamples#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#4)]
- [!code-csharp[System.Drawing.ClassicFontFamilyExamples#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#4)]
- [!code-vb[System.Drawing.ClassicFontFamilyExamples#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#4)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicFontFamilyExamples#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#4)]
+[!code-csharp[System.Drawing.ClassicFontFamilyExamples#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#4)]
+[!code-vb[System.Drawing.ClassicFontFamilyExamples#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -453,20 +453,20 @@
         <returns>The hash code for this <see cref="T:System.Drawing.FontFamily" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.FontFamily>.  
-  
+ 
 -   Gets the hash code for the font family.  
-  
+ 
 -   Draws the value of the hash code to the screen as text.  
-  
- [!code-cpp[System.Drawing.ClassicFontFamilyExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#6)]
- [!code-csharp[System.Drawing.ClassicFontFamilyExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#6)]
- [!code-vb[System.Drawing.ClassicFontFamilyExamples#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#6)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicFontFamilyExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#6)]
+[!code-csharp[System.Drawing.ClassicFontFamilyExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#6)]
+[!code-vb[System.Drawing.ClassicFontFamilyExamples#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -492,20 +492,20 @@
         <returns>The distance between two consecutive lines of text.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.FontFamily>.  
-  
+ 
 -   Gets the line spacing for the font family.  
-  
+ 
 -   Draws the value of the line spacing to the screen as text.  
-  
- [!code-cpp[System.Drawing.ClassicFontFamilyExamples#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#7)]
- [!code-csharp[System.Drawing.ClassicFontFamilyExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#7)]
- [!code-vb[System.Drawing.ClassicFontFamilyExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#7)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicFontFamilyExamples#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#7)]
+[!code-csharp[System.Drawing.ClassicFontFamilyExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#7)]
+[!code-vb[System.Drawing.ClassicFontFamilyExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -531,25 +531,25 @@
         <returns>A <see cref="T:System.String" /> that represents the name, in the specified language, of this <see cref="T:System.Drawing.FontFamily" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To indicate language neutral, you should specify 0 for the `language` parameter. For a listing of the available languages and sublanguages, see the Winnt.h header file. If you have [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] installed, this header file can typically be found relative to the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] installation directory at \\\VC\PlatformSDK\Include.  
+To indicate language neutral, you should specify 0 for the `language` parameter. For a listing of the available languages and sublanguages, see the Winnt.h header file. If you have [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] installed, this header file can typically be found relative to the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] installation directory at \\\VC\PlatformSDK\Include.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.FontFamily>.  
-  
+ 
 -   Gets the name of the font family.  
-  
+ 
 -   Draws the name of the font family to the screen as text.  
-  
- [!code-cpp[System.Drawing.ClassicFontFamilyExamples#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#8)]
- [!code-csharp[System.Drawing.ClassicFontFamilyExamples#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#8)]
- [!code-vb[System.Drawing.ClassicFontFamilyExamples#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#8)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicFontFamilyExamples#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#8)]
+[!code-csharp[System.Drawing.ClassicFontFamilyExamples#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#8)]
+[!code-vb[System.Drawing.ClassicFontFamilyExamples#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -576,20 +576,20 @@
           <see langword="true" /> if the specified <see cref="T:System.Drawing.FontStyle" /> is available; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.FontFamily>.  
-  
+ 
 -   Tests whether the font family is available in an italic font.  
-  
+ 
 -   If it is, draws text to the screen.  
-  
- [!code-cpp[System.Drawing.ClassicFontFamilyExamples#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#9)]
- [!code-csharp[System.Drawing.ClassicFontFamilyExamples#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#9)]
- [!code-vb[System.Drawing.ClassicFontFamilyExamples#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#9)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicFontFamilyExamples#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#9)]
+[!code-csharp[System.Drawing.ClassicFontFamilyExamples#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#9)]
+[!code-vb[System.Drawing.ClassicFontFamilyExamples#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -611,14 +611,14 @@
         <value>A <see cref="T:System.String" /> that represents the name of this <see cref="T:System.Drawing.FontFamily" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows all the font families in the <xref:System.Drawing.FontFamily.Families%2A> property of the <xref:System.Drawing.FontFamily> class. This example is designed to be used with a Windows Form. To run this example, add a <xref:System.Windows.Forms.ListBox> named `listBox1` to a form, and call the `PopulateListBoxWithFonts` method from the form's constructor.  
-  
- [!code-cpp[System.Drawing.MiscExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.MiscExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#1)]
- [!code-vb[System.Drawing.MiscExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#1)]  
-  
+The following code example shows all the font families in the <xref:System.Drawing.FontFamily.Families%2A> property of the <xref:System.Drawing.FontFamily> class. This example is designed to be used with a Windows Form. To run this example, add a <xref:System.Windows.Forms.ListBox> named `listBox1` to a form, and call the `PopulateListBoxWithFonts` method from the form's constructor.  
+ 
+[!code-cpp[System.Drawing.MiscExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#1)]
+[!code-csharp[System.Drawing.MiscExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#1)]
+[!code-vb[System.Drawing.MiscExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -641,14 +641,14 @@
         <returns>The string that represents this <see cref="T:System.Drawing.FontFamily" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code creates a <xref:System.Drawing.FontFamily> and draws a string representation of the font family to the screen.  
-  
- [!code-cpp[System.Drawing.ClassicFontFamilyExamples#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#10)]
- [!code-csharp[System.Drawing.ClassicFontFamilyExamples#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#10)]
- [!code-vb[System.Drawing.ClassicFontFamilyExamples#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#10)]  
-  
+The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code creates a <xref:System.Drawing.FontFamily> and draws a string representation of the font family to the screen.  
+ 
+[!code-cpp[System.Drawing.ClassicFontFamilyExamples#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CPP/form1.cpp#10)]
+[!code-csharp[System.Drawing.ClassicFontFamilyExamples#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/CS/form1.cs#10)]
+[!code-vb[System.Drawing.ClassicFontFamilyExamples#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicFontFamilyExamples/VB/form1.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

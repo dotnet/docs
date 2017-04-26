@@ -14,10 +14,10 @@
     <summary>Represents the <see langword="&lt;wsFederation&gt;" /> element in a configuration file. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `<wsFederation>` element provides configuration for the WS-Federation Authentication Module (WSFAM), which is represented by the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> class. The properties of the <xref:System.IdentityModel.Services.Configuration.WSFederationElement> class represent the attributes of the `<wsFederation>` element.  
-  
+The `<wsFederation>` element provides configuration for the WS-Federation Authentication Module (WSFAM), which is represented by the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> class. The properties of the <xref:System.IdentityModel.Services.Configuration.WSFederationElement> class represent the attributes of the `<wsFederation>` element.  
+ 
  ]]></format>
     </remarks>
   </Docs>

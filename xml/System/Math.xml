@@ -27,21 +27,21 @@
  To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/math.cs#a4407e67b9a5afad).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/math.cs#a4407e67b9a5afad). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses several mathematical and trigonometric functions from the <xref:System.Math> class to calculate the inner angles of a trapezoid.  
-  
- [!code-cpp[MathSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/MathSample/CPP/mathsample.cpp#1)]
- [!code-csharp[MathSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/MathSample/CS/mathsample.cs#1)]
- [!code-vb[MathSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MathSample/VB/mathsample.vb#1)]  
-  
+The following example uses several mathematical and trigonometric functions from the <xref:System.Math> class to calculate the inner angles of a trapezoid.  
+ 
+[!code-cpp[MathSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/MathSample/CPP/mathsample.cpp#1)]
+[!code-csharp[MathSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/MathSample/CS/mathsample.cs#1)]
+[!code-vb[MathSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MathSample/VB/mathsample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,18 +78,18 @@
         <returns>A decimal number, x, such that 0 ≤ x ≤<see cref="F:System.Decimal.MaxValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The absolute value of a <xref:System.Decimal> is its numeric value without its sign. For example, the absolute value of both 1.2 and -1.2 is 1.2.  
+The absolute value of a <xref:System.Decimal> is its numeric value without its sign. For example, the absolute value of both 1.2 and -1.2 is 1.2.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Math.Abs%28System.Decimal%29> method to get the absolute value of a number of <xref:System.Decimal> values.  
-  
- [!code-csharp[System.Math.Abs#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Abs/cs/Abs1.cs#1)]
- [!code-vb[System.Math.Abs#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Abs/vb/Abs1.vb#1)]  
-  
+The following example uses the <xref:System.Math.Abs%28System.Decimal%29> method to get the absolute value of a number of <xref:System.Decimal> values.  
+ 
+[!code-csharp[System.Math.Abs#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Abs/cs/Abs1.cs#1)]
+[!code-vb[System.Math.Abs#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Abs/vb/Abs1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,20 +131,20 @@
         <returns>A double-precision floating-point number, x, such that 0 ≤ x ≤<see cref="F:System.Double.MaxValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The absolute value of a <xref:System.Double> is its numeric value without its sign. For example, the absolute value of both 1.2e03 and -1.2e03 is 1.2e03.  
+The absolute value of a <xref:System.Double> is its numeric value without its sign. For example, the absolute value of both 1.2e03 and -1.2e03 is 1.2e03.  
+ 
+If `value` is equal to <xref:System.Double> or <xref:System.Double>, the return value is <xref:System.Double>. If `value` is equal to <xref:System.Double>, the return value is <xref:System.Double>.  
+ 
   
- If `value` is equal to <xref:System.Double> or <xref:System.Double>, the return value is <xref:System.Double>. If `value` is equal to <xref:System.Double>, the return value is <xref:System.Double>.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Math.Abs%28System.Double%29> method to get the absolute value of a number of <xref:System.Double> values.  
-  
- [!code-csharp[System.Math.Abs#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Abs/cs/abs2.cs#2)]
- [!code-vb[System.Math.Abs#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Abs/vb/abs2.vb#2)]  
-  
+The following example uses the <xref:System.Math.Abs%28System.Double%29> method to get the absolute value of a number of <xref:System.Double> values.  
+ 
+[!code-csharp[System.Math.Abs#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Abs/cs/abs2.cs#2)]
+[!code-vb[System.Math.Abs#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Abs/vb/abs2.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,18 +181,18 @@
         <returns>A 16-bit signed integer, x, such that 0 ≤ x ≤<see cref="F:System.Int16.MaxValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The absolute value of an <xref:System.Int16> is its numeric value without its sign. For example, the absolute value of both 123 and -123 is 123.  
+The absolute value of an <xref:System.Int16> is its numeric value without its sign. For example, the absolute value of both 123 and -123 is 123.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Math.Abs%28System.Int16%29> method to get the absolute value of a number of <xref:System.Int16> values.  
-  
- [!code-csharp[System.Math.Abs#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Abs/cs/abs3.cs#3)]
- [!code-vb[System.Math.Abs#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Abs/vb/abs3.vb#3)]  
-  
+The following example uses the <xref:System.Math.Abs%28System.Int16%29> method to get the absolute value of a number of <xref:System.Int16> values.  
+ 
+[!code-csharp[System.Math.Abs#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Abs/cs/abs3.cs#3)]
+[!code-vb[System.Math.Abs#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Abs/vb/abs3.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">
@@ -231,18 +231,18 @@
         <returns>A 32-bit signed integer, x, such that 0 ≤ x ≤<see cref="F:System.Int32.MaxValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The absolute value of an <xref:System.Int32> is its numeric value without its sign. For example, the absolute value of both 123 and -123 is 123.  
+The absolute value of an <xref:System.Int32> is its numeric value without its sign. For example, the absolute value of both 123 and -123 is 123.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Math.Abs%28System.Int32%29> method to get the absolute value of a number of <xref:System.Int32> values.  
-  
- [!code-csharp[System.Math.Abs#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Abs/cs/abs4.cs#4)]
- [!code-vb[System.Math.Abs#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Abs/vb/abs4.vb#4)]  
-  
+The following example uses the <xref:System.Math.Abs%28System.Int32%29> method to get the absolute value of a number of <xref:System.Int32> values.  
+ 
+[!code-csharp[System.Math.Abs#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Abs/cs/abs4.cs#4)]
+[!code-vb[System.Math.Abs#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Abs/vb/abs4.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">
@@ -281,18 +281,18 @@
         <returns>A 64-bit signed integer, x, such that 0 ≤ x ≤<see cref="F:System.Int64.MaxValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The absolute value of an <xref:System.Int64> is its numeric value without its sign. For example, the absolute value of both 123 and -123 is 123.  
+The absolute value of an <xref:System.Int64> is its numeric value without its sign. For example, the absolute value of both 123 and -123 is 123.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Math.Abs%28System.Int64%29> method to get the absolute value of a number of <xref:System.Int64> values.  
-  
- [!code-csharp[System.Math.Abs#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Abs/cs/abs5.cs#5)]
- [!code-vb[System.Math.Abs#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Abs/vb/abs5.vb#5)]  
-  
+The following example uses the <xref:System.Math.Abs%28System.Int64%29> method to get the absolute value of a number of <xref:System.Int64> values.  
+ 
+[!code-csharp[System.Math.Abs#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Abs/cs/abs5.cs#5)]
+[!code-vb[System.Math.Abs#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Abs/vb/abs5.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">
@@ -336,18 +336,18 @@
         <returns>An 8-bit signed integer, x, such that 0 ≤ x ≤<see cref="F:System.SByte.MaxValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The absolute value of a signed byte is its numeric value without its sign. For example, the absolute value of both 12 and -12 is 12.  
+The absolute value of a signed byte is its numeric value without its sign. For example, the absolute value of both 12 and -12 is 12.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Math.Abs%28System.SByte%29> method to get the absolute value of a number of <xref:System.SByte> values.  
-  
- [!code-csharp[System.Math.Abs#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Abs/cs/abs6.cs#6)]
- [!code-vb[System.Math.Abs#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Abs/vb/abs6.vb#6)]  
-  
+The following example uses the <xref:System.Math.Abs%28System.SByte%29> method to get the absolute value of a number of <xref:System.SByte> values.  
+ 
+[!code-csharp[System.Math.Abs#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Abs/cs/abs6.cs#6)]
+[!code-vb[System.Math.Abs#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Abs/vb/abs6.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">
@@ -391,20 +391,20 @@
         <returns>A single-precision floating-point number, x, such that 0 ≤ x ≤<see cref="F:System.Single.MaxValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The absolute value of a <xref:System.Single> is its numeric value without its sign. For example, the absolute value of both 1.2e-03 and -1.2e03 is 1.2e03.  
+The absolute value of a <xref:System.Single> is its numeric value without its sign. For example, the absolute value of both 1.2e-03 and -1.2e03 is 1.2e03.  
+ 
+If `value` is equal to <xref:System.Single> or <xref:System.Single>, the return value is <xref:System.Single>. If `value` is equal to <xref:System.Single>, the return value is <xref:System.Single>.  
+ 
   
- If `value` is equal to <xref:System.Single> or <xref:System.Single>, the return value is <xref:System.Single>. If `value` is equal to <xref:System.Single>, the return value is <xref:System.Single>.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Math.Abs%28System.Single%29> method to get the absolute value of a number of <xref:System.Single> values.  
-  
- [!code-csharp[System.Math.Abs#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Abs/cs/abs7.cs#7)]
- [!code-vb[System.Math.Abs#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Abs/vb/abs7.vb#7)]  
-  
+The following example uses the <xref:System.Math.Abs%28System.Single%29> method to get the absolute value of a number of <xref:System.Single> values.  
+ 
+[!code-csharp[System.Math.Abs#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Abs/cs/abs7.cs#7)]
+[!code-vb[System.Math.Abs#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Abs/vb/abs7.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -450,19 +450,19 @@
  <see cref="F:System.Double.NaN" /> if <paramref name="d" /> &lt; -1 or <paramref name="d" /> &gt; 1 or <paramref name="d" /> equals <see cref="F:System.Double.NaN" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Multiply the return value by 180/<xref:System.Math.PI?displayProperty=fullName> to convert from radians to degrees.  
+Multiply the return value by 180/<xref:System.Math.PI?displayProperty=fullName> to convert from radians to degrees.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Math.Acos%2A> method to assist in the computation of the inner angles of a given trapezoid.  
-  
- [!code-cpp[MathSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/MathSample/CPP/mathsample.cpp#1)]
- [!code-csharp[MathSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/MathSample/CS/mathsample.cs#1)]
- [!code-vb[MathSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MathSample/VB/mathsample.vb#1)]  
-  
+The following example uses the <xref:System.Math.Acos%2A> method to assist in the computation of the inner angles of a given trapezoid.  
+ 
+[!code-cpp[MathSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/MathSample/CPP/mathsample.cpp#1)]
+[!code-csharp[MathSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/MathSample/CS/mathsample.cs#1)]
+[!code-vb[MathSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MathSample/VB/mathsample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -508,21 +508,21 @@
  <see cref="F:System.Double.NaN" /> if <paramref name="d" /> &lt; -1 or <paramref name="d" /> &gt; 1 or <paramref name="d" /> equals <see cref="F:System.Double.NaN" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A positive return value represents a counterclockwise angle from the x-axis; a negative return value represents a clockwise angle.  
+A positive return value represents a counterclockwise angle from the x-axis; a negative return value represents a clockwise angle.  
+ 
+Multiply the return value by 180/<xref:System.Math.PI?displayProperty=fullName> to convert from radians to degrees.  
+ 
   
- Multiply the return value by 180/<xref:System.Math.PI?displayProperty=fullName> to convert from radians to degrees.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses <xref:System.Math.Asin%2A> to assist in the computation of the inner angles of a given trapezoid.  
-  
- [!code-cpp[MathSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/MathSample/CPP/mathsample.cpp#1)]
- [!code-csharp[MathSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/MathSample/CS/mathsample.cs#1)]
- [!code-vb[MathSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MathSample/VB/mathsample.vb#1)]  
-  
+The following example uses <xref:System.Math.Asin%2A> to assist in the computation of the inner angles of a given trapezoid.  
+ 
+[!code-cpp[MathSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/MathSample/CPP/mathsample.cpp#1)]
+[!code-csharp[MathSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/MathSample/CS/mathsample.cs#1)]
+[!code-vb[MathSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MathSample/VB/mathsample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -568,21 +568,21 @@
  <see cref="F:System.Double.NaN" /> if <paramref name="d" /> equals <see cref="F:System.Double.NaN" />, -π/2 rounded to double precision (-1.5707963267949) if <paramref name="d" /> equals <see cref="F:System.Double.NegativeInfinity" />, or π/2 rounded to double precision (1.5707963267949) if <paramref name="d" /> equals <see cref="F:System.Double.PositiveInfinity" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A positive return value represents a counterclockwise angle from the x-axis; a negative return value represents a clockwise angle.  
+A positive return value represents a counterclockwise angle from the x-axis; a negative return value represents a clockwise angle.  
+ 
+Multiply the return value by 180/<xref:System.Math.PI?displayProperty=fullName> to convert from radians to degrees.  
+ 
   
- Multiply the return value by 180/<xref:System.Math.PI?displayProperty=fullName> to convert from radians to degrees.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to calculate the arctangent of a value and display it to the console.  
-  
- [!code-cpp[math.atanx#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.atanx/CPP/atan.cpp#1)]
- [!code-csharp[math.atanx#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.atanx/CS/atan.cs#1)]
- [!code-vb[math.atanx#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.atanx/VB/atan.vb#1)]  
-  
+The following example demonstrates how to calculate the arctangent of a value and display it to the console.  
+ 
+[!code-cpp[math.atanx#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.atanx/CPP/atan.cpp#1)]
+[!code-csharp[math.atanx#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.atanx/CS/atan.cs#1)]
+[!code-vb[math.atanx#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.atanx/VB/atan.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -648,19 +648,19 @@
  If <paramref name="x" /> or <paramref name="y" /> is <see cref="F:System.Double.NaN" />, or if <paramref name="x" /> and <paramref name="y" /> are either <see cref="F:System.Double.PositiveInfinity" /> or <see cref="F:System.Double.NegativeInfinity" />, the method returns <see cref="F:System.Double.NaN" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value is the angle in the Cartesian plane formed by the x-axis, and a vector starting from the origin, (0,0), and terminating at the point, (x,y).  
+The return value is the angle in the Cartesian plane formed by the x-axis, and a vector starting from the origin, (0,0), and terminating at the point, (x,y).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to calculate the arctangent of an angle and a vector. The resulting value is displayed in the console.  
-  
- [!code-cpp[math.atanx#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.atanx/CPP/atan.cpp#1)]
- [!code-csharp[math.atanx#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.atanx/CS/atan.cs#1)]
- [!code-vb[math.atanx#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.atanx/VB/atan.vb#1)]  
-  
+The following example demonstrates how to calculate the arctangent of an angle and a vector. The resulting value is displayed in the console.  
+ 
+[!code-cpp[math.atanx#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.atanx/CPP/atan.cpp#1)]
+[!code-csharp[math.atanx#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.atanx/CS/atan.cs#1)]
+[!code-vb[math.atanx#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.atanx/VB/atan.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -693,14 +693,14 @@
         <returns>The number containing the product of the specified numbers.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Math.BigMul%2A> method to calculate the product of two integer values.  
-  
- [!code-cpp[math.bigmul#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.bigmul/CPP/bigmul.cpp#1)]
- [!code-csharp[math.bigmul#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.bigmul/CS/bigmul.cs#1)]
- [!code-vb[math.bigmul#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.bigmul/VB/bigmul.vb#1)]  
-  
+The following example demonstrates the use of the <xref:System.Math.BigMul%2A> method to calculate the product of two integer values.  
+ 
+[!code-cpp[math.bigmul#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.bigmul/CPP/bigmul.cpp#1)]
+[!code-csharp[math.bigmul#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.bigmul/CS/bigmul.cs#1)]
+[!code-vb[math.bigmul#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.bigmul/VB/bigmul.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -737,18 +737,18 @@
         <returns>The smallest integral value that is greater than or equal to <paramref name="d" />. Note that this method returns a <see cref="T:System.Decimal" /> instead of an integral type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward positive infinity. In other words, if `d` is positive, the presence of any fractional component causes `d` to be rounded to the next highest integer. If `d` is negative, the rounding operation causes any fractional component of `d` to be discarded. The operation of this method differs from the <xref:System.Math.Floor%28System.Decimal%29> method, which supports rounding toward negative infinity.  
+The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward positive infinity. In other words, if `d` is positive, the presence of any fractional component causes `d` to be rounded to the next highest integer. If `d` is negative, the rounding operation causes any fractional component of `d` to be discarded. The operation of this method differs from the <xref:System.Math.Floor%28System.Decimal%29> method, which supports rounding toward negative infinity.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates the <xref:System.Math.Ceiling%28System.Decimal%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Floor%28System.Decimal%29> method.  
-  
- [!code-csharp[System.Math.Ceiling#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#1)]
- [!code-vb[System.Math.Ceiling#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#1)]  
-  
+The following example illustrates the <xref:System.Math.Ceiling%28System.Decimal%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Floor%28System.Decimal%29> method.  
+ 
+[!code-csharp[System.Math.Ceiling#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#1)]
+[!code-vb[System.Math.Ceiling#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -790,18 +790,18 @@
         <returns>The smallest integral value that is greater than or equal to <paramref name="a" />. If <paramref name="a" /> is equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NegativeInfinity" />, or <see cref="F:System.Double.PositiveInfinity" />, that value is returned. Note that this method returns a <see cref="T:System.Double" /> instead of an integral type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward positive infinity. In other words, if `a` is positive, the presence of any fractional component causes `a` to be rounded to the next highest integer. If `a` is negative, the rounding operation causes any fractional component of `a` to be discarded. The operation of this method differs from the <xref:System.Math.Floor%28System.Double%29> method, which supports rounding toward negative infinity.  
+The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward positive infinity. In other words, if `a` is positive, the presence of any fractional component causes `a` to be rounded to the next highest integer. If `a` is negative, the rounding operation causes any fractional component of `a` to be discarded. The operation of this method differs from the <xref:System.Math.Floor%28System.Double%29> method, which supports rounding toward negative infinity.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates the <xref:System.Math.Ceiling%28System.Double%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Floor%28System.Double%29> method.  
-  
- [!code-csharp[System.Math.Ceiling#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#2)]
- [!code-vb[System.Math.Ceiling#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#2)]  
-  
+The following example illustrates the <xref:System.Math.Ceiling%28System.Double%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Floor%28System.Double%29> method.  
+ 
+[!code-csharp[System.Math.Ceiling#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#2)]
+[!code-vb[System.Math.Ceiling#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -843,21 +843,21 @@
         <returns>The cosine of <paramref name="d" />. If <paramref name="d" /> is equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NegativeInfinity" />, or <see cref="F:System.Double.PositiveInfinity" />, this method returns <see cref="F:System.Double.NaN" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The angle, `d`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+The angle, `d`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ 
+Acceptable values of `d` range from approximately -9223372036854775295 to approximately 9223372036854775295. For values outside this range, the <xref:System.Math.Cos%2A> method returns `d` unchanged rather than throwing an exception.  
+ 
   
- Acceptable values of `d` range from approximately -9223372036854775295 to approximately 9223372036854775295. For values outside this range, the <xref:System.Math.Cos%2A> method returns `d` unchanged rather than throwing an exception.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses <xref:System.Math.Cos%2A> to evaluate certain trigonometric identities for selected angles.  
-  
- [!code-cpp[System.Math.SinCos#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.SinCos/CPP/sincos.cpp#1)]
- [!code-csharp[System.Math.SinCos#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.SinCos/CS/sincos.cs#1)]
- [!code-vb[System.Math.SinCos#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.SinCos/VB/sincos.vb#1)]  
-  
+The following example uses <xref:System.Math.Cos%2A> to evaluate certain trigonometric identities for selected angles.  
+ 
+[!code-cpp[System.Math.SinCos#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.SinCos/CPP/sincos.cpp#1)]
+[!code-csharp[System.Math.SinCos#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.SinCos/CS/sincos.cs#1)]
+[!code-vb[System.Math.SinCos#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.SinCos/VB/sincos.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -899,19 +899,19 @@
         <returns>The hyperbolic cosine of <paramref name="value" />. If <paramref name="value" /> is equal to <see cref="F:System.Double.NegativeInfinity" /> or <see cref="F:System.Double.PositiveInfinity" />, <see cref="F:System.Double.PositiveInfinity" /> is returned. If <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NaN" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses <xref:System.Math.Cosh%2A> to evaluate certain hyperbolic identities for selected values.  
-  
- [!code-cpp[System.Math.SinhCosh#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.SinhCosh/CPP/sinhcosh.cpp#1)]
- [!code-csharp[System.Math.SinhCosh#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.SinhCosh/CS/sinhcosh.cs#1)]
- [!code-vb[System.Math.SinhCosh#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.SinhCosh/VB/sinhcosh.vb#1)]  
-  
+The following example uses <xref:System.Math.Cosh%2A> to evaluate certain hyperbolic identities for selected values.  
+ 
+[!code-cpp[System.Math.SinhCosh#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.SinhCosh/CPP/sinhcosh.cpp#1)]
+[!code-csharp[System.Math.SinhCosh#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.SinhCosh/CS/sinhcosh.cs#1)]
+[!code-vb[System.Math.SinhCosh#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.SinhCosh/VB/sinhcosh.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -946,18 +946,18 @@
         <returns>The quotient of the specified numbers.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The remainder is calculated by using the modulus operation.  
+The remainder is calculated by using the modulus operation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Math.DivRem%28System.Int32%2CSystem.Int32%2CSystem.Int32%40%29> method.  
-  
- [!code-csharp[System.Math.DivRem#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.divrem/cs/divrem1.cs#1)]
- [!code-vb[System.Math.DivRem#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.divrem/vb/divrem1.vb#1)]  
-  
+The following example demonstrates the <xref:System.Math.DivRem%28System.Int32%2CSystem.Int32%2CSystem.Int32%40%29> method.  
+ 
+[!code-csharp[System.Math.DivRem#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.divrem/cs/divrem1.cs#1)]
+[!code-vb[System.Math.DivRem#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.divrem/vb/divrem1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DivideByZeroException">
@@ -994,18 +994,18 @@
         <returns>The quotient of the specified numbers.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The remainder is calculated by using the modulus operation.  
+The remainder is calculated by using the modulus operation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Math.DivRem%28System.Int64%2CSystem.Int64%2CSystem.Int64%40%29> method.  
-  
- [!code-csharp[System.Math.DivRem#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.divrem/cs/divrem2.cs#2)]
- [!code-vb[System.Math.DivRem#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.divrem/vb/divrem2.vb#2)]  
-  
+The following example demonstrates the <xref:System.Math.DivRem%28System.Int64%2CSystem.Int64%2CSystem.Int64%40%29> method.  
+ 
+[!code-csharp[System.Math.DivRem#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.divrem/cs/divrem2.cs#2)]
+[!code-vb[System.Math.DivRem#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.divrem/vb/divrem2.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DivideByZeroException">
@@ -1040,19 +1040,19 @@
         <summary>Represents the natural logarithmic base, specified by the constant, <see langword="e" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this field is 2.7182818284590452354.  
+The value of this field is 2.7182818284590452354.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example compares <xref:System.Math.E> with the value calculated from a power series.  
-  
- [!code-cpp[System.Math.E#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.E/CPP/efield.cpp#1)]
- [!code-csharp[System.Math.E#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.E/CS/efield.cs#1)]
- [!code-vb[System.Math.E#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.E/VB/efield.vb#1)]  
-  
+The following example compares <xref:System.Math.E> with the value calculated from a power series.  
+ 
+[!code-cpp[System.Math.E#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.E/CPP/efield.cpp#1)]
+[!code-csharp[System.Math.E#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.E/CS/efield.cs#1)]
+[!code-vb[System.Math.E#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.E/VB/efield.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1094,23 +1094,23 @@
         <returns>The number <see langword="e" /> raised to the power <paramref name="d" />. If <paramref name="d" /> equals <see cref="F:System.Double.NaN" /> or <see cref="F:System.Double.PositiveInfinity" />, that value is returned. If <paramref name="d" /> equals <see cref="F:System.Double.NegativeInfinity" />, 0 is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `e` is a mathematical constant whose value is approximately 2.71828.  
+`e` is a mathematical constant whose value is approximately 2.71828.  
+ 
+Use the <xref:System.Math.Pow%2A> method to calculate powers of other bases.  
+ 
+<xref:System.Math.Exp%2A> is the inverse of <xref:System.Math.Log%2A>.  
+ 
   
- Use the <xref:System.Math.Pow%2A> method to calculate powers of other bases.  
-  
- <xref:System.Math.Exp%2A> is the inverse of <xref:System.Math.Log%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses <xref:System.Math.Exp%2A> to evaluate certain exponential and logarithmic identities for selected values.  
-  
- [!code-cpp[System.Math.Exp#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.Exp/CPP/exp.cpp#1)]
- [!code-csharp[System.Math.Exp#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Exp/CS/exp.cs#1)]
- [!code-vb[System.Math.Exp#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Exp/VB/exp.vb#1)]  
-  
+The following example uses <xref:System.Math.Exp%2A> to evaluate certain exponential and logarithmic identities for selected values.  
+ 
+[!code-cpp[System.Math.Exp#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.Exp/CPP/exp.cpp#1)]
+[!code-csharp[System.Math.Exp#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Exp/CS/exp.cs#1)]
+[!code-vb[System.Math.Exp#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Exp/VB/exp.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1147,18 +1147,18 @@
         <returns>The largest integer less than or equal to <paramref name="d" />.  Note that the method returns an integral value of type <see cref="T:System.Math" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward negative infinity. In other words, if `d` is positive, any fractional component is truncated. If `d` is negative, the presence of any fractional component causes it to be rounded to the smaller integer. The operation of this method differs from the <xref:System.Math.Ceiling%2A> method, which supports rounding toward positive infinity.  
+The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward negative infinity. In other words, if `d` is positive, any fractional component is truncated. If `d` is negative, the presence of any fractional component causes it to be rounded to the smaller integer. The operation of this method differs from the <xref:System.Math.Ceiling%2A> method, which supports rounding toward positive infinity.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates the <xref:System.Math.Floor%28System.Decimal%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Ceiling%28System.Decimal%29> method.  
-  
- [!code-csharp[System.Math.Ceiling#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#1)]
- [!code-vb[System.Math.Ceiling#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#1)]  
-  
+The following example illustrates the <xref:System.Math.Floor%28System.Decimal%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Ceiling%28System.Decimal%29> method.  
+ 
+[!code-csharp[System.Math.Ceiling#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#1)]
+[!code-vb[System.Math.Ceiling#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1200,18 +1200,18 @@
         <returns>The largest integer less than or equal to <paramref name="d" />. If <paramref name="d" /> is equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NegativeInfinity" />, or <see cref="F:System.Double.PositiveInfinity" />, that value is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward negative infinity. In other words, if `d` is positive, any fractional component is truncated. If `d` is negative, the presence of any fractional component causes it to be rounded to the smaller integer. The operation of this method differs from the <xref:System.Math.Ceiling%2A> method, which supports rounding toward positive infinity.  
+The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward negative infinity. In other words, if `d` is positive, any fractional component is truncated. If `d` is negative, the presence of any fractional component causes it to be rounded to the smaller integer. The operation of this method differs from the <xref:System.Math.Ceiling%2A> method, which supports rounding toward positive infinity.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates the <xref:System.Math.Floor%28System.Double%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Ceiling%28System.Double%29> method.  
-  
- [!code-csharp[System.Math.Ceiling#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#2)]
- [!code-vb[System.Math.Ceiling#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#2)]  
-  
+The following example illustrates the <xref:System.Math.Floor%28System.Double%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Ceiling%28System.Double%29> method.  
+ 
+[!code-csharp[System.Math.Ceiling#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#2)]
+[!code-vb[System.Math.Ceiling#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1254,32 +1254,32 @@
  If <paramref name="y" /> = 0, <see cref="F:System.Double.NaN" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation complies with the remainder operation defined in Section 5.1 of ANSI/IEEE Std 754-1985; IEEE Standard for Binary Floating-Point Arithmetic; Institute of Electrical and Electronics Engineers, Inc; 1985.  
-  
- The<xref:System.Math.IEEERemainder%2A> method is not the same as the modulus operator. Although both return the remainder after division, the formulas they use are different. The formula for the <xref:System.Math.IEEERemainder%2A> method is:  
-  
+This operation complies with the remainder operation defined in Section 5.1 of ANSI/IEEE Std 754-1985; IEEE Standard for Binary Floating-Point Arithmetic; Institute of Electrical and Electronics Engineers, Inc; 1985.  
+ 
+The<xref:System.Math.IEEERemainder%2A> method is not the same as the modulus operator. Although both return the remainder after division, the formulas they use are different. The formula for the <xref:System.Math.IEEERemainder%2A> method is:  
+ 
 ```  
 IEEERemainder = dividend - (divisor * Math.Round(dividend / divisor))  
 ```  
-  
- In contrast, the formula for the modulus operator is:  
-  
+ 
+In contrast, the formula for the modulus operator is:  
+ 
 ```  
 Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *   
           (Math.Floor(Math.Abs(dividend) / Math.Abs(divisor))))) *   
           Math.Sign(dividend)  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example contrasts the remainder returned by the <xref:System.Math.IEEERemainder%2A> method with the remainder returned by the modulus division operator.  
-  
- [!code-csharp[System.Math.IEEERemainder#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.ieeeremainder/cs/ieeeremainder1.cs#1)]
- [!code-vb[System.Math.IEEERemainder#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.ieeeremainder/vb/ieeeremainder1.vb#1)]  
-  
+The following example contrasts the remainder returned by the <xref:System.Math.IEEERemainder%2A> method with the remainder returned by the modulus division operator.  
+ 
+[!code-csharp[System.Math.IEEERemainder#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.ieeeremainder/cs/ieeeremainder1.cs#1)]
+[!code-vb[System.Math.IEEERemainder#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.ieeeremainder/vb/ieeeremainder1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1372,18 +1372,18 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Parameter `d` is specified as a base 10 number.  
+Parameter `d` is specified as a base 10 number.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates the <xref:System.Math.Log%2A> method.  
-  
- [!code-csharp[System.Math.Log_Overloads#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Log_Overloads/CS/log1.cs#2)]
- [!code-vb[System.Math.Log_Overloads#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Log_Overloads/VB/log1.vb#2)]  
-  
+The following example illustrates the <xref:System.Math.Log%2A> method.  
+ 
+[!code-csharp[System.Math.Log_Overloads#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Log_Overloads/CS/log1.cs#2)]
+[!code-vb[System.Math.Log_Overloads#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Log_Overloads/VB/log1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1590,14 +1590,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses <xref:System.Math.Log%2A> to evaluate certain logarithmic identities for selected values.  
-  
- [!code-cpp[System.Math.Log_Overloads#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.Log_Overloads/CPP/loggen.cpp#1)]
- [!code-csharp[System.Math.Log_Overloads#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Log_Overloads/CS/loggen.cs#1)]
- [!code-vb[System.Math.Log_Overloads#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Log_Overloads/VB/loggen.vb#1)]  
-  
+The following example uses <xref:System.Math.Log%2A> to evaluate certain logarithmic identities for selected values.  
+ 
+[!code-cpp[System.Math.Log_Overloads#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.Log_Overloads/CPP/loggen.cpp#1)]
+[!code-csharp[System.Math.Log_Overloads#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Log_Overloads/CS/loggen.cs#1)]
+[!code-vb[System.Math.Log_Overloads#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Log_Overloads/VB/loggen.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1690,18 +1690,18 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Parameter `d` is specified as a base 10 number.  
+Parameter `d` is specified as a base 10 number.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Math.Log10%2A> method to return the base 10 logarithm for selected values.  
-  
- [!code-csharp[System.Math.Log10#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Log10/CS/log10.cs#1)]
- [!code-vb[System.Math.Log10#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Log10/VB/log10.vb#1)]  
-  
+The following example uses the <xref:System.Math.Log10%2A> method to return the base 10 logarithm for selected values.  
+ 
+[!code-csharp[System.Math.Log10#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Log10/CS/log10.cs#1)]
+[!code-vb[System.Math.Log10#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Log10/VB/log10.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1745,14 +1745,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is larger.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
-  
- [!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
- [!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
- [!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
+ 
+[!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
+[!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
+[!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1796,14 +1796,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is larger.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
-  
- [!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
- [!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
- [!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
+ 
+[!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
+[!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
+[!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1847,14 +1847,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is larger. If <paramref name="val1" />, <paramref name="val2" />, or both <paramref name="val1" /> and <paramref name="val2" /> are equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NaN" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
-  
- [!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
- [!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
- [!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
+ 
+[!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
+[!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
+[!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1898,14 +1898,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is larger.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
-  
- [!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
- [!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
- [!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
+ 
+[!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
+[!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
+[!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1949,14 +1949,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is larger.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
-  
- [!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
- [!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
- [!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
+ 
+[!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
+[!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
+[!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2000,14 +2000,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is larger.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
-  
- [!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
- [!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
- [!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
+ 
+[!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
+[!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
+[!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2054,14 +2054,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is larger.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
-  
- [!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
- [!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
- [!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
+ 
+[!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
+[!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
+[!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2105,14 +2105,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is larger. If <paramref name="val1" />, or <paramref name="val2" />, or both <paramref name="val1" /> and <paramref name="val2" /> are equal to <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.NaN" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
-  
- [!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
- [!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
- [!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
+ 
+[!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
+[!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
+[!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2159,14 +2159,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is larger.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
-  
- [!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
- [!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
- [!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
+ 
+[!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
+[!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
+[!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2213,14 +2213,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is larger.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
-  
- [!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
- [!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
- [!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
+ 
+[!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
+[!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
+[!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2267,14 +2267,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is larger.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
-  
- [!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
- [!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
- [!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Max%2A> method to return and display the greater of two variables.  
+ 
+[!code-cpp[Math.Max#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.max/CPP/max.cpp#1)]
+[!code-csharp[Math.Max#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.max/CS/max.cs#1)]
+[!code-vb[Math.Max#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.max/VB/max.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2318,14 +2318,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is smaller.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
-  
- [!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
- [!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
- [!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
+ 
+[!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
+[!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
+[!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2369,14 +2369,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is smaller.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
-  
- [!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
- [!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
- [!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
+ 
+[!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
+[!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
+[!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2420,14 +2420,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is smaller. If <paramref name="val1" />, <paramref name="val2" />, or both <paramref name="val1" /> and <paramref name="val2" /> are equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NaN" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
-  
- [!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
- [!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
- [!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
+ 
+[!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
+[!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
+[!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2471,14 +2471,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is smaller.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
-  
- [!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
- [!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
- [!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
+ 
+[!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
+[!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
+[!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2522,14 +2522,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is smaller.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
-  
- [!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
- [!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
- [!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
+ 
+[!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
+[!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
+[!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2573,14 +2573,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is smaller.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
-  
- [!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
- [!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
- [!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
+ 
+[!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
+[!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
+[!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2627,14 +2627,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is smaller.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
-  
- [!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
- [!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
- [!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
+ 
+[!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
+[!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
+[!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2678,14 +2678,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is smaller. If <paramref name="val1" />, <paramref name="val2" />, or both <paramref name="val1" /> and <paramref name="val2" /> are equal to <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.NaN" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
-  
- [!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
- [!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
- [!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
+ 
+[!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
+[!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
+[!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2732,14 +2732,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is smaller.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
-  
- [!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
- [!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
- [!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
+ 
+[!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
+[!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
+[!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2786,14 +2786,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is smaller.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
-  
- [!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
- [!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
- [!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
+ 
+[!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
+[!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
+[!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2840,14 +2840,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>Parameter <paramref name="val1" /> or <paramref name="val2" />, whichever is smaller.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
-  
- [!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
- [!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
- [!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Min%2A> method to return and display the smaller of two variables.  
+ 
+[!code-cpp[Math.Min#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.min/CPP/min.cpp#1)]
+[!code-csharp[Math.Min#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.min/CS/min.cs#1)]
+[!code-vb[Math.Min#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.min/VB/min.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2880,19 +2880,19 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Represents the ratio of the circumference of a circle to its diameter, specified by the constant, π.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this field is 3.14159265358979323846.  
+The value of this field is 3.14159265358979323846.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses <xref:System.Math.PI> to assist in the computation of the inner angles of a given trapezoid.  
-  
- [!code-cpp[MathSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/MathSample/CPP/mathsample.cpp#1)]
- [!code-csharp[MathSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/MathSample/CS/mathsample.cs#1)]
- [!code-vb[MathSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MathSample/VB/mathsample.vb#1)]  
-  
+The following example uses <xref:System.Math.PI> to assist in the computation of the inner angles of a given trapezoid.  
+ 
+[!code-cpp[MathSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/MathSample/CPP/mathsample.cpp#1)]
+[!code-csharp[MathSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/MathSample/CS/mathsample.cs#1)]
+[!code-vb[MathSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MathSample/VB/mathsample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2936,10 +2936,10 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>The number <paramref name="x" /> raised to the power <paramref name="y" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table indicates the return value when various values or ranges of values are specified for the `x` and `y` parameters. For more information, see <xref:System.Double?displayProperty=fullName>, <xref:System.Double?displayProperty=fullName>, and <xref:System.Double?displayProperty=fullName>.  
-  
+The following table indicates the return value when various values or ranges of values are specified for the `x` and `y` parameters. For more information, see <xref:System.Double?displayProperty=fullName>, <xref:System.Double?displayProperty=fullName>, and <xref:System.Double?displayProperty=fullName>.  
+ 
 |Parameters|Return value|  
 |----------------|------------------|  
 |`x` or `y` = `NaN`.|`NaN`|  
@@ -2958,15 +2958,15 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 |`x` = 1; `y` is any value except `NaN`.|1|  
 |`x` = `PositiveInfinity`; `y` < 0.|0|  
 |`x` = `PositiveInfinity`; `y` > 0.|`PositiveInfinity`|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Math.Pow%2A> method to calculate the value that results from raising 2 to a power ranging from 0 to 32.  
-  
- [!code-csharp[System.Math.Pow#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.pow/cs/pow1.cs#1)]
- [!code-vb[System.Math.Pow#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.pow/vb/pow1.vb#1)]  
-  
+The following example uses the <xref:System.Math.Pow%2A> method to calculate the value that results from raising 2 to a power ranging from 0 to 32.  
+ 
+[!code-csharp[System.Math.Pow#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.pow/cs/pow1.cs#1)]
+[!code-vb[System.Math.Pow#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.pow/vb/pow1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3003,12 +3003,12 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>The integer nearest parameter <paramref name="d" />. If the fractional component of <paramref name="d" /> is halfway between two integers, one of which is even and the other odd, the even number is returned. Note that this method returns a <see cref="T:System.Decimal" /> instead of an integral type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
@@ -3051,12 +3051,12 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>The integer nearest <paramref name="a" />. If the fractional component of <paramref name="a" /> is halfway between two integers, one of which is even and the other odd, then the even number is returned. Note that this method returns a <see cref="T:System.Double" /> instead of an integral type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
@@ -3101,12 +3101,12 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>The number nearest to <paramref name="d" /> that contains a number of fractional digits equal to <paramref name="decimals" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -3148,12 +3148,12 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>The integer nearest <paramref name="d" />. If <paramref name="d" /> is halfway between two numbers, one of which is even and the other odd, then <paramref name="mode" /> determines which of the two is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -3195,12 +3195,12 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>The number nearest to <paramref name="value" /> that contains a number of fractional digits equal to <paramref name="digits" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -3247,12 +3247,12 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>The integer nearest <paramref name="value" />. If <paramref name="value" /> is halfway between two integers, one of which is even and the other odd, then <paramref name="mode" /> determines which of the two is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -3301,12 +3301,12 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>The number nearest to <paramref name="d" /> that contains a number of fractional digits equal to <paramref name="decimals" />. If <paramref name="d" /> has fewer fractional digits than <paramref name="decimals" />, <paramref name="d" /> is returned unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -3352,12 +3352,12 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>The number nearest to <paramref name="value" /> that has a number of fractional digits equal to <paramref name="digits" />. If <paramref name="value" /> has fewer fractional digits than <paramref name="digits" />, <paramref name="value" /> is returned unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -3439,14 +3439,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Sign%28System.Decimal%29> method to determine the sign of a <xref:System.Decimal> value and display it to the console.  
-  
- [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
- [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
- [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Sign%28System.Decimal%29> method to determine the sign of a <xref:System.Decimal> value and display it to the console.  
+ 
+[!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
+[!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
+[!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3518,14 +3518,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Sign%28System.Double%29> method to determine the sign of a <xref:System.Double> value and display it to the console.  
-  
- [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
- [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
- [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Sign%28System.Double%29> method to determine the sign of a <xref:System.Double> value and display it to the console.  
+ 
+[!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
+[!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
+[!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArithmeticException">
@@ -3599,14 +3599,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Sign%28System.Int16%29> method to determine the sign of an <xref:System.Int16> value and display it to the console.  
-  
- [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
- [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
- [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Sign%28System.Int16%29> method to determine the sign of an <xref:System.Int16> value and display it to the console.  
+ 
+[!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
+[!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
+[!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3678,14 +3678,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Sign%28System.Int32%29> method to determine the sign of an <xref:System.Int32> value and display it to the console.  
-  
- [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
- [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
- [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Sign%28System.Int32%29> method to determine the sign of an <xref:System.Int32> value and display it to the console.  
+ 
+[!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
+[!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
+[!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3757,14 +3757,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Sign%28System.Int64%29> method to determine the sign of an <xref:System.Int64> value and display it to the console.  
-  
- [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
- [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
- [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Sign%28System.Int64%29> method to determine the sign of an <xref:System.Int64> value and display it to the console.  
+ 
+[!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
+[!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
+[!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3841,14 +3841,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Sign%28System.SByte%29> method to determine the sign of an <xref:System.SByte> value and display it to the console.  
-  
- [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
- [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
- [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Sign%28System.SByte%29> method to determine the sign of an <xref:System.SByte> value and display it to the console.  
+ 
+[!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
+[!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
+[!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3920,14 +3920,14 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Math.Sign%28System.Single%29> method to determine the sign of a <xref:System.Single> value and display it to the console.  
-  
- [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
- [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
- [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Sign%28System.Single%29> method to determine the sign of a <xref:System.Single> value and display it to the console.  
+ 
+[!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
+[!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
+[!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArithmeticException">
@@ -3971,21 +3971,21 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>The sine of <paramref name="a" />. If <paramref name="a" /> is equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NegativeInfinity" />, or <see cref="F:System.Double.PositiveInfinity" />, this method returns <see cref="F:System.Double.NaN" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ 
+Acceptable values of `a` range from approximately -9223372036854775295 to approximately 9223372036854775295. For values outside of this range, the <xref:System.Math.Sin%2A> method returns `a` unchanged rather than throwing an exception.  
+ 
   
- Acceptable values of `a` range from approximately -9223372036854775295 to approximately 9223372036854775295. For values outside of this range, the <xref:System.Math.Sin%2A> method returns `a` unchanged rather than throwing an exception.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses <xref:System.Math.Sin%2A> to evaluate certain trigonometric identities for selected angles.  
-  
- [!code-cpp[System.Math.SinCos#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.SinCos/CPP/sincos.cpp#1)]
- [!code-csharp[System.Math.SinCos#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.SinCos/CS/sincos.cs#1)]
- [!code-vb[System.Math.SinCos#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.SinCos/VB/sincos.vb#1)]  
-  
+The following example uses <xref:System.Math.Sin%2A> to evaluate certain trigonometric identities for selected angles.  
+ 
+[!code-cpp[System.Math.SinCos#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.SinCos/CPP/sincos.cpp#1)]
+[!code-csharp[System.Math.SinCos#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.SinCos/CS/sincos.cs#1)]
+[!code-vb[System.Math.SinCos#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.SinCos/VB/sincos.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4027,19 +4027,19 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>The hyperbolic sine of <paramref name="value" />. If <paramref name="value" /> is equal to <see cref="F:System.Double.NegativeInfinity" />, <see cref="F:System.Double.PositiveInfinity" />, or <see cref="F:System.Double.NaN" />, this method returns a <see cref="T:System.Double" /> equal to <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses <xref:System.Math.Sinh%2A> to evaluate certain hyperbolic identities for selected values.  
-  
- [!code-cpp[System.Math.SinhCosh#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.SinhCosh/CPP/sinhcosh.cpp#1)]
- [!code-csharp[System.Math.SinhCosh#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.SinhCosh/CS/sinhcosh.cs#1)]
- [!code-vb[System.Math.SinhCosh#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.SinhCosh/VB/sinhcosh.vb#1)]  
-  
+The following example uses <xref:System.Math.Sinh%2A> to evaluate certain hyperbolic identities for selected values.  
+ 
+[!code-cpp[System.Math.SinhCosh#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.SinhCosh/CPP/sinhcosh.cpp#1)]
+[!code-csharp[System.Math.SinhCosh#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.SinhCosh/CS/sinhcosh.cs#1)]
+[!code-vb[System.Math.SinhCosh#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.SinhCosh/VB/sinhcosh.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4127,13 +4127,13 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The square root of the area of a square represents the length of any side of the square. The following example displays the area of some cities in the United States and gives an impression of each city's size if it were represented by a square.  
-  
- [!code-csharp[System.Math.Sqrt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.sqrt/cs/sqrt1.cs#1)]
- [!code-vb[System.Math.Sqrt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.sqrt/vb/sqrt1.vb#1)]  
-  
+The square root of the area of a square represents the length of any side of the square. The following example displays the area of some cities in the United States and gives an impression of each city's size if it were represented by a square.  
+ 
+[!code-csharp[System.Math.Sqrt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.sqrt/cs/sqrt1.cs#1)]
+[!code-vb[System.Math.Sqrt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.sqrt/vb/sqrt1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4175,19 +4175,19 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>The tangent of <paramref name="a" />. If <paramref name="a" /> is equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NegativeInfinity" />, or <see cref="F:System.Double.PositiveInfinity" />, this method returns <see cref="F:System.Double.NaN" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to calculate the tangent of an angle and display it to the console.  
-  
- [!code-cpp[math.atanx#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.atanx/CPP/atan.cpp#1)]
- [!code-csharp[math.atanx#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.atanx/CS/atan.cs#1)]
- [!code-vb[math.atanx#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.atanx/VB/atan.vb#1)]  
-  
+The following example demonstrates how to calculate the tangent of an angle and display it to the console.  
+ 
+[!code-cpp[math.atanx#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.atanx/CPP/atan.cpp#1)]
+[!code-csharp[math.atanx#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.atanx/CS/atan.cs#1)]
+[!code-vb[math.atanx#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.atanx/VB/atan.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4229,19 +4229,19 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>The hyperbolic tangent of <paramref name="value" />. If <paramref name="value" /> is equal to <see cref="F:System.Double.NegativeInfinity" />, this method returns -1. If value is equal to <see cref="F:System.Double.PositiveInfinity" />, this method returns 1. If <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />, this method returns <see cref="F:System.Double.NaN" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses <xref:System.Math.Tanh%2A> to evaluate certain hyperbolic tangent identities for selected values.  
-  
- [!code-cpp[System.Math.Tanh#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.Tanh/CPP/tanh.cpp#1)]
- [!code-csharp[System.Math.Tanh#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Tanh/CS/tanh.cs#1)]
- [!code-vb[System.Math.Tanh#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Tanh/VB/tanh.vb#1)]  
-  
+The following example uses <xref:System.Math.Tanh%2A> to evaluate certain hyperbolic tangent identities for selected values.  
+ 
+[!code-cpp[System.Math.Tanh#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.Tanh/CPP/tanh.cpp#1)]
+[!code-csharp[System.Math.Tanh#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Tanh/CS/tanh.cs#1)]
+[!code-vb[System.Math.Tanh#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Tanh/VB/tanh.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4278,18 +4278,18 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <returns>The integral part of <paramref name="d" />; that is, the number that remains after any fractional digits have been discarded.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Math.Truncate%2A> rounds `d` to the nearest integer towards zero.  
+<xref:System.Math.Truncate%2A> rounds `d` to the nearest integer towards zero.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example calls the <xref:System.Math.Truncate%28System.Decimal%29> method to truncate both a positive and a negative <xref:System.Decimal> value.  
-  
- [!code-csharp[System.Math.Truncate#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Truncate/cs/Truncate1.cs#2)]
- [!code-vb[System.Math.Truncate#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Truncate/vb/Truncate1.vb#2)]  
-  
+The following example calls the <xref:System.Math.Truncate%28System.Decimal%29> method to truncate both a positive and a negative <xref:System.Decimal> value.  
+ 
+[!code-csharp[System.Math.Truncate#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Truncate/cs/Truncate1.cs#2)]
+[!code-vb[System.Math.Truncate#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Truncate/vb/Truncate1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4361,18 +4361,18 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Math.Truncate%2A> rounds `d` to the nearest integer towards zero.  
+<xref:System.Math.Truncate%2A> rounds `d` to the nearest integer towards zero.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example calls the <xref:System.Math.Truncate%28System.Double%29> method to truncate both a positive and a negative <xref:System.Double> value.  
-  
- [!code-csharp[System.Math.Truncate#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Truncate/cs/Truncate1.cs#1)]
- [!code-vb[System.Math.Truncate#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Truncate/vb/Truncate1.vb#1)]  
-  
+The following example calls the <xref:System.Math.Truncate%28System.Double%29> method to truncate both a positive and a negative <xref:System.Double> value.  
+ 
+[!code-csharp[System.Math.Truncate#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Truncate/cs/Truncate1.cs#1)]
+[!code-vb[System.Math.Truncate#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Truncate/vb/Truncate1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4388,10 +4388,10 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns the largest integer less than or equal to the specified number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward negative infinity.  
-  
+The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward negative infinity.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4407,10 +4407,10 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns the smallest integer greater than or equal to the specified number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward positive infinity.  
-  
+The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward positive infinity.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4426,10 +4426,10 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Calculates the integral part of a number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The number is rounded to the nearest integer towards zero.  
-  
+The number is rounded to the nearest integer towards zero.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4445,90 +4445,90 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Rounds a value to the nearest integer or to the specified number of fractional digits.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In this section:  
-  
- [Overloaded method syntax](#Syntax)   
- [Parameters](#Params)   
- [Return value](#Returns)   
- [Exceptions](#Exceptions)   
- [Which method do I call?](#Tasks)   
- [Midpoint values and rounding conventions](#Midpoint)   
- [Rounding and precision](#Precision)   
- [Rounding and single-precision floating-point values](#Single)   
- Examples:   
- [Math.Round(Decimal)](#Round1_Example)  
- [Math.Round(Double)](#Round2_Example)  
- [Math.Round(Decimal, Int32)](#Round3_Example)  
- [Math.Round(Decimal, MidpointRounding)](#Round4_Example)  
- [Math.Round(Double, Int32)](#Round5_Example)  
- [Math.Round(Double, MidpointRounding)](#Round6_Example)  
- [Math.Round(Decimal, Int32, MidpointRounding)](#Round7_Example)  
- [Math.Round(Double, Int32, MidpointRounding)](#Round8_Example)  
+In this section:  
+ 
+[Overloaded method syntax](#Syntax)   
+[Parameters](#Params)   
+[Return value](#Returns)   
+[Exceptions](#Exceptions)   
+[Which method do I call?](#Tasks)   
+[Midpoint values and rounding conventions](#Midpoint)   
+[Rounding and precision](#Precision)   
+[Rounding and single-precision floating-point values](#Single)   
+Examples:   
+[Math.Round(Decimal)](#Round1_Example)  
+[Math.Round(Double)](#Round2_Example)  
+[Math.Round(Decimal, Int32)](#Round3_Example)  
+[Math.Round(Decimal, MidpointRounding)](#Round4_Example)  
+[Math.Round(Double, Int32)](#Round5_Example)  
+[Math.Round(Double, MidpointRounding)](#Round6_Example)  
+[Math.Round(Decimal, Int32, MidpointRounding)](#Round7_Example)  
+[Math.Round(Double, Int32, MidpointRounding)](#Round8_Example)  
 [Version information](#Round_Versions)  
-  
+ 
 <a name="Syntax"></a>   
 ## Overloaded method syntax  
- For additional guidance on choosing an overload, see [Which method do I call?](#Tasks)  
-  
- `Decimal Math.Round(Decimal` `d` `)`  
- Rounds a decimal value to the nearest integer, and rounds midpoint values to the nearest even number ([example](#Round1_Example)).  
-  
- `Double Math.Round(Double` `a` `)`  
- Rounds a double-precision floating-point value to the nearest integer, and rounds midpoint values to the nearest even number ([example](#Round2_Example)).  
-  
- `Decimal Math.Round(Decimal` `d` `, Int32`  `decimals` `)`  
- Rounds a decimal value to a specified number of fractional digits, and rounds midpoint values to the nearest even number ([example](#Round3_Example)).  
-  
- `Double Math.Round(Double` `value` `, Int32`  `digits` `)`  
- Rounds a double-precision floating-point value to a specified number of fractional digits, and rounds midpoint values to the nearest even number ([example](#Round4_Example)).  
-  
- `Decimal Math.Round(Decimal` `d` `, MidpointRounding`  `mode` `)`  
- Rounds a decimal value to the nearest integer, and uses the specified rounding convention for midpoint values ([example](#Round5_Example)).  
-  
- `Double Math.Round(Double` `value` `, MidpointRounding`  `mode` `)`  
- Rounds a double-precision floating-point value to the nearest integer, and uses the specified rounding convention for midpoint values ([example](#Round6_Example)).  
-  
- `Decimal Math.Round(Decimal` `d` `, Int32`  `decimals` `, MidpointRounding`  `mode` `)`  
- Rounds a decimal value to a specified number of fractional digits, and uses the specified rounding convention for midpoint values ([example](#Round7_Example)).  
-  
- `Double Math.Round(Double` `value` `, Int32`  `digits` `, MidpointRounding`  `mode` `)`  
- Rounds a double-precision floating-point value to a specified number of fractional digits, and uses the specified rounding convention for midpoint values ([example](#Round8_Example)).  
-  
+For additional guidance on choosing an overload, see [Which method do I call?](#Tasks)  
+ 
+`Decimal Math.Round(Decimal` `d` `)`  
+Rounds a decimal value to the nearest integer, and rounds midpoint values to the nearest even number ([example](#Round1_Example)).  
+ 
+`Double Math.Round(Double` `a` `)`  
+Rounds a double-precision floating-point value to the nearest integer, and rounds midpoint values to the nearest even number ([example](#Round2_Example)).  
+ 
+`Decimal Math.Round(Decimal` `d` `, Int32`  `decimals` `)`  
+Rounds a decimal value to a specified number of fractional digits, and rounds midpoint values to the nearest even number ([example](#Round3_Example)).  
+ 
+`Double Math.Round(Double` `value` `, Int32`  `digits` `)`  
+Rounds a double-precision floating-point value to a specified number of fractional digits, and rounds midpoint values to the nearest even number ([example](#Round4_Example)).  
+ 
+`Decimal Math.Round(Decimal` `d` `, MidpointRounding`  `mode` `)`  
+Rounds a decimal value to the nearest integer, and uses the specified rounding convention for midpoint values ([example](#Round5_Example)).  
+ 
+`Double Math.Round(Double` `value` `, MidpointRounding`  `mode` `)`  
+Rounds a double-precision floating-point value to the nearest integer, and uses the specified rounding convention for midpoint values ([example](#Round6_Example)).  
+ 
+`Decimal Math.Round(Decimal` `d` `, Int32`  `decimals` `, MidpointRounding`  `mode` `)`  
+Rounds a decimal value to a specified number of fractional digits, and uses the specified rounding convention for midpoint values ([example](#Round7_Example)).  
+ 
+`Double Math.Round(Double` `value` `, Int32`  `digits` `, MidpointRounding`  `mode` `)`  
+Rounds a double-precision floating-point value to a specified number of fractional digits, and uses the specified rounding convention for midpoint values ([example](#Round8_Example)).  
+ 
 <a name="Params"></a>   
 ## Parameters  
- This is a complete list of parameters for the <xref:System.Math.Round%2A> method. For the parameters used by each overload, see the overload syntax above.  
-  
+This is a complete list of parameters for the <xref:System.Math.Round%2A> method. For the parameters used by each overload, see the overload syntax above.  
+ 
 |Parameter|Type|Description|  
 |---------------|----------|-----------------|  
 |`d`|<xref:System.Decimal>|A number to be rounded.|  
 |`a`<br /><br /> -or-<br /><br /> `value`|<xref:System.Double>|A double-precision floating-point number to be rounded.|  
 |`decimals`<br /><br /> -or-<br /><br /> `digits`|<xref:System.Int32>|The number of fractional digits in the return value. For <xref:System.Decimal> values, it can range from 0 to 28. For <xref:System.Double> values, it can range from 0 to 15. Note that 15 is the maximum number of integral and fractional digits supported by the <xref:System.Double> type.<br /><br /> Default value: 0, which rounds to an integer|  
 |`mode`|<xref:System.MidpointRounding>|A flag that specifies the convention to use for rounding midpoint values. See [Midpoint values and rounding conventions](#Midpoint).<br /><br /> Default value: <xref:System.MidpointRounding?displayProperty=fullName>|  
-  
+ 
 <a name="Returns"></a>   
 ## Return value  
- Type: <xref:System.Decimal> or <xref:System.Double>, depending on the type of the value to be rounded.   
+Type: <xref:System.Decimal> or <xref:System.Double>, depending on the type of the value to be rounded.   
 A numeric value of the same type as `d`, `a`, or `value`, but rounded either to an integer or to the specified number of decimal digits. See [Midpoint values and rounding conventions](#Midpoint) for information about rounding numbers with midpoint values.  
-  
+ 
 > [!WARNING]
 >  When rounding midpoint values, the rounding algorithm performs an equality test. Because of problems of binary representation and precision in the floating-point format, the value returned by the method can be unexpected. For more information, see [Rounding and precision](#Precision).  
-  
- If an overload with a <xref:System.Double> parameter is called with <xref:System.Double.NaN?displayProperty=fullName>, the method returns <xref:System.Double.NaN?displayProperty=fullName>. If it is called with <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>, the method returns <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>, respectively.  
-  
+ 
+If an overload with a <xref:System.Double> parameter is called with <xref:System.Double.NaN?displayProperty=fullName>, the method returns <xref:System.Double.NaN?displayProperty=fullName>. If it is called with <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>, the method returns <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>, respectively.  
+ 
 <a name="Exceptions"></a>   
 ## Exceptions  
-  
+ 
 |Exception|Condition|Thrown by|  
 |---------------|---------------|---------------|  
 |<xref:System.OverflowException>|The result is outside the range of the <xref:System.Decimal> type.|<xref:System.Math.Round%28System.Decimal%29><br /><br /> <xref:System.Math.Round%28System.Decimal%2CSystem.Int32%29><br /><br /> <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29><br /><br /> <xref:System.Math.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29>|  
 |<xref:System.ArgumentOutOfRangeException>|`decimals` is less than 0 or greater than 28.<br /><br /> -or-<br /><br /> `digits` is less than 0 or greater than 15.|<xref:System.Math.Round%28System.Decimal%2CSystem.Int32%29><br /><br /> <xref:System.Math.Round%28System.Double%2CSystem.Int32%29><br /><br /> <xref:System.Math.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29><br /><br /> <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29>|  
 |<xref:System.ArgumentException>|`mode` is not a valid value of <xref:System.MidpointRounding>.|<xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29><br /><br /> <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29><br /><br /> <xref:System.Math.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29><br /><br /> <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29>|  
-  
+ 
 <a name="Tasks"></a>   
 ## Which method do I call?  
-  
+ 
 |To|Call|  
 |--------|----------|  
 |Round a number to an integer by using the rounding to nearest convention.|<xref:System.Math.Round%28System.Decimal%29><br /><br /> -or-<br /><br /> <xref:System.Math.Round%28System.Double%29>|  
@@ -4539,32 +4539,32 @@ A numeric value of the same type as `d`, `a`, or `value`, but rounded either to 
 |Round a number to a specified number of fractional digits while minimizing problems of precision in rounding midpoint values.|Call a rounding method that implements a "greater than or approximately equal to" comparison. See [Rounding and precision](#Precision).|  
 |Round a fractional value to an integer that is greater than the fractional value. For example, round 3.1 to 4.|<xref:System.Math.Ceiling%2A>|  
 |Round a fractional value to an integer that is less than the fractional value. For example, round 3.9 to 3.|<xref:System.Math.Floor%2A>|  
-  
+ 
 <a name="Midpoint"></a>   
 ## Midpoint values and rounding conventions  
- Rounding involves converting a numeric value with a specified precision to the nearest value with less precision. For example, you can use the <xref:System.Math.Round%28System.Double%29> method to round a value of 3.4 to 3.0, and the <xref:System.Math.Round%28System.Double%2CSystem.Int32%29> method to round a value of 3.579 to 3.58.  
-  
- In a midpoint value, the value after the least significant digit in the result is precisely half way between two numbers. For example, 3.47500 is a midpoint value if it is to be rounded two decimal places, and 7.500 is a midpoint value if it is to be rounded to an integer. In these cases, the nearest value can't be easily identified without a rounding convention.  
-  
- The <xref:System.Math.Round%2A> method supports two rounding conventions for handling midpoint values:  
-  
- **Rounding away from zero**  
- Midpoint values are rounded to the next number away from zero. For example, 3.75 rounds to 3.8, 3.85 rounds to 3.9, -3.75 rounds to -3.8, and -3.85 rounds to -3.9. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=fullName> enumeration member.  
-  
- Rounding away from zero is the most widely known form of rounding.  
-  
- **Rounding to nearest, or banker's rounding**  
- Midpoint values are rounded to the nearest even number. For example, both 3.75 and 3.85 round to 3.8, and both -3.75 and -3.85 round to -3.8. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=fullName> enumeration member.  
-  
- Rounding to nearest is the standard form of rounding used in financial and statistical operations. It conforms to IEEE Standard 754, section 4. When used in multiple rounding operations, it reduces the rounding error that is caused by consistently rounding midpoint values in a single direction. In some cases, this rounding error can be significant.  
-  
- The following example illustrates the bias that can result from consistently rounding midpoint values in a single direction. The example computes the true mean of an array of <xref:System.Decimal> values, and then computes the mean when the values in the array are rounded by using the two conventions. In this example, the true mean and the mean that results when rounding to nearest are the same. However, the mean that results when rounding away from zero differs by .05 (or by 3.6%) from the true mean.  
-  
- [!code-csharp[System.Math.Round.Overload#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/mean1.cs#2)]
- [!code-vb[System.Math.Round.Overload#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/mean1.vb#2)]  
-  
- By default, the <xref:System.Math.Round%2A> method uses the rounding to nearest convention. The following table lists the overloads of the <xref:System.Math.Round%2A> method and the rounding convention that each uses.  
-  
+Rounding involves converting a numeric value with a specified precision to the nearest value with less precision. For example, you can use the <xref:System.Math.Round%28System.Double%29> method to round a value of 3.4 to 3.0, and the <xref:System.Math.Round%28System.Double%2CSystem.Int32%29> method to round a value of 3.579 to 3.58.  
+ 
+In a midpoint value, the value after the least significant digit in the result is precisely half way between two numbers. For example, 3.47500 is a midpoint value if it is to be rounded two decimal places, and 7.500 is a midpoint value if it is to be rounded to an integer. In these cases, the nearest value can't be easily identified without a rounding convention.  
+ 
+The <xref:System.Math.Round%2A> method supports two rounding conventions for handling midpoint values:  
+ 
+**Rounding away from zero**  
+Midpoint values are rounded to the next number away from zero. For example, 3.75 rounds to 3.8, 3.85 rounds to 3.9, -3.75 rounds to -3.8, and -3.85 rounds to -3.9. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=fullName> enumeration member.  
+ 
+Rounding away from zero is the most widely known form of rounding.  
+ 
+**Rounding to nearest, or banker's rounding**  
+Midpoint values are rounded to the nearest even number. For example, both 3.75 and 3.85 round to 3.8, and both -3.75 and -3.85 round to -3.8. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=fullName> enumeration member.  
+ 
+Rounding to nearest is the standard form of rounding used in financial and statistical operations. It conforms to IEEE Standard 754, section 4. When used in multiple rounding operations, it reduces the rounding error that is caused by consistently rounding midpoint values in a single direction. In some cases, this rounding error can be significant.  
+ 
+The following example illustrates the bias that can result from consistently rounding midpoint values in a single direction. The example computes the true mean of an array of <xref:System.Decimal> values, and then computes the mean when the values in the array are rounded by using the two conventions. In this example, the true mean and the mean that results when rounding to nearest are the same. However, the mean that results when rounding away from zero differs by .05 (or by 3.6%) from the true mean.  
+ 
+[!code-csharp[System.Math.Round.Overload#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/mean1.cs#2)]
+[!code-vb[System.Math.Round.Overload#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/mean1.vb#2)]  
+ 
+By default, the <xref:System.Math.Round%2A> method uses the rounding to nearest convention. The following table lists the overloads of the <xref:System.Math.Round%2A> method and the rounding convention that each uses.  
+ 
 |Overload|Rounding convention|  
 |--------------|-------------------------|  
 |<xref:System.Math.Round%28System.Decimal%29>|<xref:System.MidpointRounding>|  
@@ -4575,118 +4575,118 @@ A numeric value of the same type as `d`, `a`, or `value`, but rounded either to 
 |<xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29>|Determined by `mode` parameter|  
 |<xref:System.Math.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29>|Determined by `mode` parameter|  
 |<xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29>|Determined by `mode` parameter|  
-  
+ 
 <a name="Precision"></a>   
 ## Rounding and precision  
- In order to determine whether a rounding operation involves a midpoint value, the <xref:System.Math.Round%2A> method multiplies the original value to be rounded by 10<sup>n</sup>, where *n* is the desired number of fractional digits in the return value, and then determines whether the remaining fractional portion of the value is greater than or equal to .5. This is a slight variation on a test for equality, and as discussed in the "Testing for Equality" section of the <xref:System.Double> reference topic, tests for equality with floating-point values are problematic because of the floating-point format's issues with binary representation and precision. This means that any fractional portion of a number that is slightly less than .5 (because of a loss of precision) will not be rounded upward.  
-  
- The following example illustrates the problem. It repeatedly adds .1 to 11.0 and rounds the result to the nearest integer. Regardless of the rounding convention, 11.5 should round to 12. However, as the output from the example shows, it does not. The example uses the "R" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md) to display the floating point value's full precision, and shows that the value to be rounded has lost precision during repeated additions, and its value is actually 11.499999999999998. Because .499999999999998 is less than .5, the value is not rounded to the next highest integer. As the example also shows, this problem does not occur if we simply assign the constant value 11.5 to a <xref:System.Double> variable.  
-  
- [!code-csharp[System.Math.Round.Overload#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/precision1.cs#7)]
- [!code-vb[System.Math.Round.Overload#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/precision1.vb#7)]  
-  
- Problems of precision in rounding midpoint values are most likely to arise in the following conditions:  
-  
+In order to determine whether a rounding operation involves a midpoint value, the <xref:System.Math.Round%2A> method multiplies the original value to be rounded by 10<sup>n</sup>, where *n* is the desired number of fractional digits in the return value, and then determines whether the remaining fractional portion of the value is greater than or equal to .5. This is a slight variation on a test for equality, and as discussed in the "Testing for Equality" section of the <xref:System.Double> reference topic, tests for equality with floating-point values are problematic because of the floating-point format's issues with binary representation and precision. This means that any fractional portion of a number that is slightly less than .5 (because of a loss of precision) will not be rounded upward.  
+ 
+The following example illustrates the problem. It repeatedly adds .1 to 11.0 and rounds the result to the nearest integer. Regardless of the rounding convention, 11.5 should round to 12. However, as the output from the example shows, it does not. The example uses the "R" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md) to display the floating point value's full precision, and shows that the value to be rounded has lost precision during repeated additions, and its value is actually 11.499999999999998. Because .499999999999998 is less than .5, the value is not rounded to the next highest integer. As the example also shows, this problem does not occur if we simply assign the constant value 11.5 to a <xref:System.Double> variable.  
+ 
+[!code-csharp[System.Math.Round.Overload#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/precision1.cs#7)]
+[!code-vb[System.Math.Round.Overload#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/precision1.vb#7)]  
+ 
+Problems of precision in rounding midpoint values are most likely to arise in the following conditions:  
+ 
 -   When a fractional value cannot be expressed precisely in the floating-point type's binary format.  
-  
+ 
 -   When the value to be rounded is calculated from one or more floating-point operations.  
-  
+ 
 -   When the value to be rounded is a <xref:System.Single> rather than a <xref:System.Double> or <xref:System.Decimal>. For more information, see the next section, [Rounding and single-precision floating-point values](#Single).  
-  
- In cases where the lack of precision in rounding operations is problematic, you can do the following:  
-  
+ 
+In cases where the lack of precision in rounding operations is problematic, you can do the following:  
+ 
 -   If the rounding operation calls an overload that rounds a <xref:System.Double> value, you can change the <xref:System.Double> to a <xref:System.Decimal> value and call an overload that rounds a <xref:System.Decimal> value instead. Although the <xref:System.Decimal> data type also has problems of representation and loss of precision, these issues are far less common.  
-  
+ 
 -   Define a custom rounding algorithm that performs a "nearly equal" test to determine whether the value to be rounded is acceptably close to a midpoint value. The following example defines a `RoundApproximate` method that examines whether a fractional value is sufficiently near to a midpoint value to be subject to midpoint rounding. As the output from the example shows, it corrects the rounding problem shown in the previous example.  
-  
-     [!code-csharp[System.Math.Round.Overload#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/precision2.cs#8)]
-     [!code-vb[System.Math.Round.Overload#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/precision2.vb#8)]  
-  
+ 
+    [!code-csharp[System.Math.Round.Overload#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/precision2.cs#8)]
+    [!code-vb[System.Math.Round.Overload#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/precision2.vb#8)]  
+ 
 <a name="Single"></a>   
 ## Rounding and single-precision floating-point values  
- The <xref:System.Math.Round%2A> method includes overloads that accept arguments of type <xref:System.Decimal> and <xref:System.Double>. There are no methods that round values of type <xref:System.Single>. If you pass a <xref:System.Single> value to one of the overloads of the <xref:System.Math.Round%2A> method, it is cast (in C#) or converted (in Visual Basic) to a <xref:System.Double>, and the corresponding <xref:System.Math.Round%2A> overload with a <xref:System.Double> parameter is called. Although this is a widening conversion, it often involves a loss of precision, as the following example illustrates. When a <xref:System.Single> value of 16.325 is passed to the <xref:System.Math.Round%2A> method and rounded to two decimal places using the rounding to nearest convention, the result is 16.33 and not the expected result of 16.32.  
-  
- [!code-csharp[System.Math.Round.Overload#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/single1.cs#1)]
- [!code-vb[System.Math.Round.Overload#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/single1.vb#1)]  
-  
- This unexpected result is due to a loss of precision in the conversion of the <xref:System.Single> value to a <xref:System.Double>. Because the resulting <xref:System.Double> value of 16.325000762939453 is not a midpoint value and is greater than 16.325, it is always rounded upward.  
-  
- In many cases, as the example illustrates, the loss of precision can be minimized or eliminated by casting or converting the <xref:System.Single> value to a <xref:System.Decimal>. Note that, because this is a narrowing conversion, it requires using a cast operator or calling a conversion method.  
-  
+The <xref:System.Math.Round%2A> method includes overloads that accept arguments of type <xref:System.Decimal> and <xref:System.Double>. There are no methods that round values of type <xref:System.Single>. If you pass a <xref:System.Single> value to one of the overloads of the <xref:System.Math.Round%2A> method, it is cast (in C#) or converted (in Visual Basic) to a <xref:System.Double>, and the corresponding <xref:System.Math.Round%2A> overload with a <xref:System.Double> parameter is called. Although this is a widening conversion, it often involves a loss of precision, as the following example illustrates. When a <xref:System.Single> value of 16.325 is passed to the <xref:System.Math.Round%2A> method and rounded to two decimal places using the rounding to nearest convention, the result is 16.33 and not the expected result of 16.32.  
+ 
+[!code-csharp[System.Math.Round.Overload#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/single1.cs#1)]
+[!code-vb[System.Math.Round.Overload#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/single1.vb#1)]  
+ 
+This unexpected result is due to a loss of precision in the conversion of the <xref:System.Single> value to a <xref:System.Double>. Because the resulting <xref:System.Double> value of 16.325000762939453 is not a midpoint value and is greater than 16.325, it is always rounded upward.  
+ 
+In many cases, as the example illustrates, the loss of precision can be minimized or eliminated by casting or converting the <xref:System.Single> value to a <xref:System.Decimal>. Note that, because this is a narrowing conversion, it requires using a cast operator or calling a conversion method.  
+ 
 <a name="Round1_Example"></a>   
 ## Math.Round(Decimal) example  
- The following example demonstrates the <xref:System.Math.Round%28System.Decimal%29> method. Note that the <xref:System.Decimal> value of 4.5 rounds to 4 rather than 5, because this overload uses the default <xref:System.MidpointRounding> convention.  
-  
- [!code-csharp[System.Math.Round#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/rounddecimal1.cs#6)]
- [!code-vb[System.Math.Round#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/rounddecimal1.vb#6)]  
-  
+The following example demonstrates the <xref:System.Math.Round%28System.Decimal%29> method. Note that the <xref:System.Decimal> value of 4.5 rounds to 4 rather than 5, because this overload uses the default <xref:System.MidpointRounding> convention.  
+ 
+[!code-csharp[System.Math.Round#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/rounddecimal1.cs#6)]
+[!code-vb[System.Math.Round#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/rounddecimal1.vb#6)]  
+ 
 <a name="Round2_Example"></a>   
 ## Math.Round(Double) example  
- The following example demonstrates rounding to the nearest integer value.  
-  
- [!code-cpp[Classic Math.Round Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Math.Round Example/CPP/source.cpp#1)]
- [!code-csharp[Classic Math.Round Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Math.Round Example/CS/source.cs#1)]
- [!code-vb[Classic Math.Round Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Math.Round Example/VB/source.vb#1)]  
-  
+The following example demonstrates rounding to the nearest integer value.  
+ 
+[!code-cpp[Classic Math.Round Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Math.Round Example/CPP/source.cpp#1)]
+[!code-csharp[Classic Math.Round Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Math.Round Example/CS/source.cs#1)]
+[!code-vb[Classic Math.Round Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Math.Round Example/VB/source.vb#1)]  
+ 
 <a name="Round3_Example"></a>   
 ## Math.Round(Decimal, Int32) example  
- The following example rounds decimal values with two fractional digits to values that have a single fractional digit.  
-  
- [!code-csharp[System.Math.Round.Overload#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/source.cs#3)]
- [!code-vb[System.Math.Round.Overload#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/source.vb#3)]  
-  
+The following example rounds decimal values with two fractional digits to values that have a single fractional digit.  
+ 
+[!code-csharp[System.Math.Round.Overload#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/source.cs#3)]
+[!code-vb[System.Math.Round.Overload#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/source.vb#3)]  
+ 
 <a name="Round4_Example"></a>   
 ## Math.Round(Double, Int32) example  
- The following example rounds double values with two fractional digits to doubles that have a single fractional digit.  
-  
- [!code-cpp[Classic Math.Round2 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Math.Round2 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic Math.Round2 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Math.Round2 Example/CS/source.cs#1)]
- [!code-vb[Classic Math.Round2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Math.Round2 Example/VB/source.vb#1)]  
-  
+The following example rounds double values with two fractional digits to doubles that have a single fractional digit.  
+ 
+[!code-cpp[Classic Math.Round2 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Math.Round2 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic Math.Round2 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Math.Round2 Example/CS/source.cs#1)]
+[!code-vb[Classic Math.Round2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Math.Round2 Example/VB/source.vb#1)]  
+ 
 <a name="Round5_Example"></a>   
 ## Math.Round(Decimal, MidpointRounding) example  
- The following example displays values returned by the <xref:System.Math.Round%28System.Decimal%29> method, the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>, and the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>.  
-  
- [!code-csharp[System.Math.Round.Overload#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/midpoint1.cs#5)]
- [!code-vb[System.Math.Round.Overload#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/midpoint1.vb#5)]  
-  
+The following example displays values returned by the <xref:System.Math.Round%28System.Decimal%29> method, the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>, and the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>.  
+ 
+[!code-csharp[System.Math.Round.Overload#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/midpoint1.cs#5)]
+[!code-vb[System.Math.Round.Overload#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/midpoint1.vb#5)]  
+ 
 <a name="Round6_Example"></a>   
 ## Math.Round(Double, MidpointRounding) example  
- The following example displays values returned by the <xref:System.Math.Round%28System.Double%29> method, the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>, and the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>.  
-  
- [!code-csharp[System.Math.Round.Overload#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/midpoint2.cs#6)]
- [!code-vb[System.Math.Round.Overload#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/midpoint2.vb#6)]  
-  
+The following example displays values returned by the <xref:System.Math.Round%28System.Double%29> method, the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>, and the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>.  
+ 
+[!code-csharp[System.Math.Round.Overload#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/midpoint2.cs#6)]
+[!code-vb[System.Math.Round.Overload#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/midpoint2.vb#6)]  
+ 
 <a name="Round7_Example"></a>   
 ## Math.Round(Decimal, Int32, MidpointRounding) example  
- The following example demonstrates how to use the <xref:System.Math.Round%2A> method with the <xref:System.MidpointRounding> enumeration.  
-  
- [!code-cpp[math.midpointrounding#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.midpointrounding/cpp/mpr.cpp#1)]
- [!code-csharp[math.midpointrounding#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.midpointrounding/CS/mpr.cs#1)]
- [!code-vb[math.midpointrounding#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.midpointrounding/VB/mpr.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Round%2A> method with the <xref:System.MidpointRounding> enumeration.  
+ 
+[!code-cpp[math.midpointrounding#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.midpointrounding/cpp/mpr.cpp#1)]
+[!code-csharp[math.midpointrounding#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.midpointrounding/CS/mpr.cs#1)]
+[!code-vb[math.midpointrounding#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.midpointrounding/VB/mpr.vb#1)]  
+ 
 <a name="Round8_Example"></a>   
 ## Math.Round(Double, Int32, MidpointRounding) example  
- The following example demonstrates how to use the <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29> method with the <xref:System.MidpointRounding> enumeration.  
-  
- [!code-csharp[System.Math.Round.Overload#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/mpr.cs#4)]
- [!code-vb[System.Math.Round.Overload#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/mpr.vb#4)]  
-  
+The following example demonstrates how to use the <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29> method with the <xref:System.MidpointRounding> enumeration.  
+ 
+[!code-csharp[System.Math.Round.Overload#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/mpr.cs#4)]
+[!code-vb[System.Math.Round.Overload#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/mpr.vb#4)]  
+ 
 <a name="Round_Versions"></a>   
 ## Version information  
- .NET Framework  
- Overloads without a <xref:System.MidpointRounding> parameter are supported in: 4.5, 4, 3.5, 3.0, 2.0, 1.1, 1.0  
+.NET Framework  
+Overloads without a <xref:System.MidpointRounding> parameter are supported in: 4.5, 4, 3.5, 3.0, 2.0, 1.1, 1.0  
 Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5, 4, 3.5, 3.0, 2.0  
-  
- .NET Framework Client Profile  
- All overloads are supported in: 4, 3.5 SP1  
-  
- Portable Class Library  
- All overloads are supported  
-  
- .NET for Windows Store apps  
- All overloads are supported in: Windows 8  
-  
+ 
+.NET Framework Client Profile  
+All overloads are supported in: 4, 3.5 SP1  
+ 
+Portable Class Library  
+All overloads are supported  
+ 
+.NET for Windows Store apps  
+All overloads are supported in: Windows 8  
+ 
  ]]></format>
         </remarks>
       </Docs>

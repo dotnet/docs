@@ -32,10 +32,10 @@
         <value>An <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the predicate used to determine which members of the target collection should be deleted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The predicate can include only the following elements: <xref:System.Data.Common.CommandTrees.DbComparisonExpression> (represents equality), <xref:System.Data.Common.CommandTrees.DbConstantExpression>, <xref:System.Data.Common.CommandTrees.DbIsNullExpression>, <xref:System.Data.Common.CommandTrees.DbPropertyExpression>, <xref:System.Data.Common.CommandTrees.DbVariableReferenceExpression> (references the target), <xref:System.Data.Common.CommandTrees.DbAndExpression>, <xref:System.Data.Common.CommandTrees.DbOrExpression>, and <xref:System.Data.Common.CommandTrees.DbNotExpression>.  
-  
+The predicate can include only the following elements: <xref:System.Data.Common.CommandTrees.DbComparisonExpression> (represents equality), <xref:System.Data.Common.CommandTrees.DbConstantExpression>, <xref:System.Data.Common.CommandTrees.DbIsNullExpression>, <xref:System.Data.Common.CommandTrees.DbPropertyExpression>, <xref:System.Data.Common.CommandTrees.DbVariableReferenceExpression> (references the target), <xref:System.Data.Common.CommandTrees.DbAndExpression>, <xref:System.Data.Common.CommandTrees.DbOrExpression>, and <xref:System.Data.Common.CommandTrees.DbNotExpression>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

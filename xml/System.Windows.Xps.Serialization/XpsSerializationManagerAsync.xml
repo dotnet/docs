@@ -14,12 +14,12 @@
     <summary>Manages asynchronous [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] serializers and type converters.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.Serialization.XpsSerializationManagerAsync> manages asynchronous serializers and type converters that write content to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- <xref:System.Windows.Xps.Serialization.XpsSerializationManager> manages synchronous serializers and type converters that write content to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
+<xref:System.Windows.Xps.Serialization.XpsSerializationManagerAsync> manages asynchronous serializers and type converters that write content to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+<xref:System.Windows.Xps.Serialization.XpsSerializationManager> manages synchronous serializers and type converters that write content to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -118,10 +118,10 @@
         <summary>Occurs when a serialization operation finishes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about how to use event handlers, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+For more information about how to use event handlers, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>

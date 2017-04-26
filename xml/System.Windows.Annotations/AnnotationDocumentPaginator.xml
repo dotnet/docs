@@ -14,21 +14,21 @@
     <summary>Provides a <see cref="T:System.Windows.Documents.DocumentPaginator" /> for printing a document together with its associated annotations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
+The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows use of the <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class.  
-  
- [!code-csharp[DocViewerAnnotationsXps#DocViewAnnXpsPrint](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/Window1.xaml.cs#docviewannxpsprint)]
- [!code-vb[DocViewerAnnotationsXps#DocViewAnnXpsPrint](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXps/visualbasic/window1.xaml.vb#docviewannxpsprint)]  
-  
- [!code-csharp[DocViewerAnnotationsXps#DocViewAnnXpsDocPaginator](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/AnnotationsHelperXps.cs#docviewannxpsdocpaginator)]
- [!code-vb[DocViewerAnnotationsXps#DocViewAnnXpsDocPaginator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXps/visualbasic/annotationshelperxps.vb#docviewannxpsdocpaginator)]  
-  
+The following example shows use of the <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class.  
+ 
+[!code-csharp[DocViewerAnnotationsXps#DocViewAnnXpsPrint](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/Window1.xaml.cs#docviewannxpsprint)]
+[!code-vb[DocViewerAnnotationsXps#DocViewAnnXpsPrint](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXps/visualbasic/window1.xaml.vb#docviewannxpsprint)]  
+ 
+[!code-csharp[DocViewerAnnotationsXps#DocViewAnnXpsDocPaginator](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/AnnotationsHelperXps.cs#docviewannxpsdocpaginator)]
+[!code-vb[DocViewerAnnotationsXps#DocViewAnnXpsDocPaginator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXps/visualbasic/annotationshelperxps.vb#docviewannxpsdocpaginator)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,12 +52,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationDocumentPaginator" /> class based on a specified <see cref="T:System.Windows.Documents.DocumentPaginator" /> and annotation storage <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default this constructor sets the text flow direction to <xref:System.Windows.FlowDirection>.  If needed you can use one of the alternate <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor overloads to set the text <xref:System.Windows.FlowDirection> to a different setting.  
-  
- The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
-  
+By default this constructor sets the text flow direction to <xref:System.Windows.FlowDirection>.  If needed you can use one of the alternate <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor overloads to set the text <xref:System.Windows.FlowDirection> to a different setting.  
+ 
+The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,23 +81,23 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationDocumentPaginator" /> class based on a specified <see cref="T:System.Windows.Documents.DocumentPaginator" /> and <see cref="T:System.Windows.Annotations.Storage.AnnotationStore" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default this constructor sets the text flow direction to <xref:System.Windows.FlowDirection>.  If needed you can use one of the alternate <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor overloads to set the text <xref:System.Windows.FlowDirection> to a different setting.  
+By default this constructor sets the text flow direction to <xref:System.Windows.FlowDirection>.  If needed you can use one of the alternate <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor overloads to set the text <xref:System.Windows.FlowDirection> to a different setting.  
+ 
+The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
+ 
   
- The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows use of the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor.  
-  
- [!code-csharp[DocViewerAnnotationsXps#DocViewAnnXpsPrint](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/Window1.xaml.cs#docviewannxpsprint)]
- [!code-vb[DocViewerAnnotationsXps#DocViewAnnXpsPrint](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXps/visualbasic/window1.xaml.vb#docviewannxpsprint)]  
-  
- [!code-csharp[DocViewerAnnotationsXps#DocViewAnnXpsDocPaginator](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/AnnotationsHelperXps.cs#docviewannxpsdocpaginator)]
- [!code-vb[DocViewerAnnotationsXps#DocViewAnnXpsDocPaginator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXps/visualbasic/annotationshelperxps.vb#docviewannxpsdocpaginator)]  
-  
+The following example shows use of the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor.  
+ 
+[!code-csharp[DocViewerAnnotationsXps#DocViewAnnXpsPrint](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/Window1.xaml.cs#docviewannxpsprint)]
+[!code-vb[DocViewerAnnotationsXps#DocViewAnnXpsPrint](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXps/visualbasic/window1.xaml.vb#docviewannxpsprint)]  
+ 
+[!code-csharp[DocViewerAnnotationsXps#DocViewAnnXpsDocPaginator](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/AnnotationsHelperXps.cs#docviewannxpsdocpaginator)]
+[!code-vb[DocViewerAnnotationsXps#DocViewAnnXpsDocPaginator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXps/visualbasic/annotationshelperxps.vb#docviewannxpsdocpaginator)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationDocumentPaginator" /> class based on a specified <see cref="T:System.Windows.Documents.DocumentPaginator" />, annotation storage <see cref="T:System.IO.Stream" />, and text <see cref="T:System.Windows.FlowDirection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
-  
+The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,10 +152,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationDocumentPaginator" /> class based on a specified <see cref="T:System.Windows.Documents.DocumentPaginator" />, <see cref="T:System.Windows.Annotations.Storage.AnnotationStore" />, and text <see cref="T:System.Windows.FlowDirection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
-  
+The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,12 +198,12 @@
         <summary>Forces a pagination of the content, updates <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount" /> with the new total, and sets <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid" /> to <see langword="true" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Immediately after <xref:System.Windows.Annotations.AnnotationDocumentPaginator.ComputePageCount%2A> returns, <xref:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid%2A> will be `true` and the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount%2A> property will reflect the total number of pages.  
-  
- The number of pages may change if the annotation content is modified or the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize%2A> is changed.  
-  
+Immediately after <xref:System.Windows.Annotations.AnnotationDocumentPaginator.ComputePageCount%2A> returns, <xref:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid%2A> will be `true` and the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount%2A> property will reflect the total number of pages.  
+ 
+The number of pages may change if the annotation content is modified or the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize%2A> is changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,10 +228,10 @@
         <summary>Starts an asynchronous pagination of the content, updates <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount" /> with the new total, and sets <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid" /> to <see langword="true" /> when it is finished.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `userState` parameter is intended for use with <xref:System.Windows.Annotations.AnnotationDocumentPaginator.CancelAsync%2A> method if the application wishes to cancel the asynchronous operation before completion.  
-  
+The `userState` parameter is intended for use with <xref:System.Windows.Annotations.AnnotationDocumentPaginator.CancelAsync%2A> method if the application wishes to cancel the asynchronous operation before completion.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,10 +280,10 @@
         <summary>Asynchronously returns a <see cref="T:System.Windows.Documents.DocumentPage" /> together with associated user-annotations for a specified page number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `userState` parameter is intended for use with <xref:System.Windows.Annotations.AnnotationDocumentPaginator.CancelAsync%2A> method if the application wishes to cancel the asynchronous operation before completion.  
-  
+The `userState` parameter is intended for use with <xref:System.Windows.Annotations.AnnotationDocumentPaginator.CancelAsync%2A> method if the application wishes to cancel the asynchronous operation before completion.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -306,10 +306,10 @@
           <see langword="true" /> if pagination is complete and <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount" /> represents the total number of pages; otherwise, <see langword="false" /> if pagination is in process and <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount" /> represents the number of pages currently formatted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid%2A> may switch from `true` to `false` and <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount%2A> recomputed if a change to the content or <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize%2A> triggers repagination.  
-  
+<xref:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid%2A> may switch from `true` to `false` and <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount%2A> recomputed if a change to the content or <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize%2A> triggers repagination.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -331,10 +331,10 @@
         <value>If <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid" /> is <see langword="true" />, the total number of annotation pages; otherwise if <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid" /> is <see langword="false" />, the number of pages currently formatted (pagination in process).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid%2A> may change from `true` to `false` and <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount%2A> recomputed if a change to the content or <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize%2A> triggers repagination.  
-  
+<xref:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid%2A> may change from `true` to `false` and <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount%2A> recomputed if a change to the content or <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize%2A> triggers repagination.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -356,10 +356,10 @@
         <value>The suggested width and height for formatting pages.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize%2A> gets or sets the *suggested* size for formatting pages.  Use the <xref:System.Windows.Documents.DocumentPage.Size%2A> property to get the actual size of the page (if it is required the actual size may be cropped from the suggested <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize%2A>).  
-  
+<xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize%2A> gets or sets the *suggested* size for formatting pages.  Use the <xref:System.Windows.Documents.DocumentPage.Size%2A> property to get the actual size of the page (if it is required the actual size may be cropped from the suggested <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize%2A>).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -391,10 +391,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationDocumentPaginator" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
-  
+The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
+ 
  ]]></format>
         </remarks>
       </Docs>

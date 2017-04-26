@@ -14,10 +14,10 @@
     <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanged" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs> class contains information for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanged> event. The <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs> class provides access to the display mode that was applied to the Web Parts control before the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanged> event. The former display mode is accessed through the <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs.OldDisplayMode%2A> property.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs> class contains information for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanged> event. The <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs> class provides access to the display mode that was applied to the Web Parts control before the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanged> event. The former display mode is accessed through the <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs.OldDisplayMode%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>

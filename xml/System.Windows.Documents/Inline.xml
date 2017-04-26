@@ -54,17 +54,17 @@
  The default value is <see cref="T:System.Windows.BaselineAlignment" />.**Baseline**.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_BaselineAlignment"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Inline>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,32 +105,32 @@
  The default value is <see cref="F:System.Windows.FlowDirection.LeftToRight" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The flow direction of content typically corresponds to the innate flow direction of the language being represented.  Hebrew and Arabic provide examples of languages that naturally flow from right-to-left.  English, German, and Russian provide examples of languages that naturally flow from left-to-right.  
-  
- **Note:** The value of this property is not automatically changed to match the language used by the operating system. If you need to use a different value then the default of <xref:System.Windows.FlowDirection>, you must specify it yourself.  
-  
+The flow direction of content typically corresponds to the innate flow direction of the language being represented.  Hebrew and Arabic provide examples of languages that naturally flow from right-to-left.  English, German, and Russian provide examples of languages that naturally flow from left-to-right.  
+ 
+**Note:** The value of this property is not automatically changed to match the language used by the operating system. If you need to use a different value then the default of <xref:System.Windows.FlowDirection>, you must specify it yourself.  
+ 
 <a name="dependencyPropertyInfo_FlowDirection"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Inline>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Documents.Inline.FlowDirection%2A> attribute of a <xref:System.Windows.Documents.Inline> element (<xref:System.Windows.Documents.Run>).  
-  
- [!code-xml[InlineSnippets#_Inline_FlowDirectionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml#_inline_flowdirectionxaml)]  
-  
- The following example shows how to set the <xref:System.Windows.Documents.Inline.FlowDirection%2A> property programmatically.  
-  
- [!code-csharp[InlineSnippets#_Inline_FlowDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_flowdirection)]
- [!code-vb[InlineSnippets#_Inline_FlowDirection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_flowdirection)]  
-  
+The following example shows how to set the <xref:System.Windows.Documents.Inline.FlowDirection%2A> attribute of a <xref:System.Windows.Documents.Inline> element (<xref:System.Windows.Documents.Run>).  
+ 
+[!code-xml[InlineSnippets#_Inline_FlowDirectionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml#_inline_flowdirectionxaml)]  
+ 
+The following example shows how to set the <xref:System.Windows.Documents.Inline.FlowDirection%2A> property programmatically.  
+ 
+[!code-csharp[InlineSnippets#_Inline_FlowDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_flowdirection)]
+[!code-vb[InlineSnippets#_Inline_FlowDirection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_flowdirection)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,16 +171,16 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Documents.Inline.NextInline%2A> property.  
-  
- [!code-csharp[InlineSnippets#_Inline_SiblingBase](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_siblingbase)]
- [!code-vb[InlineSnippets#_Inline_SiblingBase](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_siblingbase)]  
-  
- [!code-csharp[InlineSnippets#_Inline_NextSibling](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_nextsibling)]
- [!code-vb[InlineSnippets#_Inline_NextSibling](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_nextsibling)]  
-  
+The following example shows how to use the <xref:System.Windows.Documents.Inline.NextInline%2A> property.  
+ 
+[!code-csharp[InlineSnippets#_Inline_SiblingBase](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_siblingbase)]
+[!code-vb[InlineSnippets#_Inline_SiblingBase](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_siblingbase)]  
+ 
+[!code-csharp[InlineSnippets#_Inline_NextSibling](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_nextsibling)]
+[!code-vb[InlineSnippets#_Inline_NextSibling](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_nextsibling)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,16 +204,16 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Documents.Inline.NextInline%2A> property.  
-  
- [!code-csharp[InlineSnippets#_Inline_SiblingBase](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_siblingbase)]
- [!code-vb[InlineSnippets#_Inline_SiblingBase](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_siblingbase)]  
-  
- [!code-csharp[InlineSnippets#_Inline_PreviousSibling](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_previoussibling)]
- [!code-vb[InlineSnippets#_Inline_PreviousSibling](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_previoussibling)]  
-  
+The following example shows how to use the <xref:System.Windows.Documents.Inline.NextInline%2A> property.  
+ 
+[!code-csharp[InlineSnippets#_Inline_SiblingBase](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_siblingbase)]
+[!code-vb[InlineSnippets#_Inline_SiblingBase](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_siblingbase)]  
+ 
+[!code-csharp[InlineSnippets#_Inline_PreviousSibling](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_previoussibling)]
+[!code-vb[InlineSnippets#_Inline_PreviousSibling](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_previoussibling)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,21 +237,21 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection returned by this property always contains the element through which the collection is requested.  That is, an inline element is considered to be its own sibling for the purpose of building a collection of siblings for the element.  
+The collection returned by this property always contains the element through which the collection is requested.  That is, an inline element is considered to be its own sibling for the purpose of building a collection of siblings for the element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Documents.Inline.SiblingInlines%2A> property.  
-  
- [!code-csharp[InlineSnippets#_Inline_SiblingBase](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_siblingbase)]
- [!code-vb[InlineSnippets#_Inline_SiblingBase](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_siblingbase)]  
-  
- [!code-csharp[InlineSnippets#_Inline_Siblings](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_siblings)]
- [!code-vb[InlineSnippets#_Inline_Siblings](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_siblings)]  
-  
+The following example shows how to use the <xref:System.Windows.Documents.Inline.SiblingInlines%2A> property.  
+ 
+[!code-csharp[InlineSnippets#_Inline_SiblingBase](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_siblingbase)]
+[!code-vb[InlineSnippets#_Inline_SiblingBase](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_siblingbase)]  
+ 
+[!code-csharp[InlineSnippets#_Inline_Siblings](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_siblings)]
+[!code-vb[InlineSnippets#_Inline_Siblings](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_siblings)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,42 +275,42 @@
  The default value is **null** (no text decorations applied).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.TextDecoration> object is a visual ornamentation you can add to text. There are four types of text decorations: underline, baseline, strikethrough, and overline.  For more information about text decorations, see [How to: Create a Text Decoration](~/docs/framework/wpf/advanced/how-to-create-a-text-decoration.md).  
-  
+A <xref:System.Windows.TextDecoration> object is a visual ornamentation you can add to text. There are four types of text decorations: underline, baseline, strikethrough, and overline.  For more information about text decorations, see [How to: Create a Text Decoration](~/docs/framework/wpf/advanced/how-to-create-a-text-decoration.md).  
+ 
 <a name="dependencyPropertyInfo_TextDecorations"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Inline.TextDecorationsProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Documents.Inline.TextDecorations%2A> attribute of a <xref:System.Windows.Documents.Inline> element (<xref:System.Windows.Documents.Run>).  
-  
- [!code-xml[InlineSnippets#_Inline_TextDecXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml#_inline_textdecxaml)]  
-  
- The following figure shows how this example renders.  
-  
- ![Screenshot: Text with default strikethrough effect](~/add/media/inline-textdec-strike.png "Screenshot: Text with default strikethrough effect")  
-  
- The following figures show how the **Overline**, **Baseline**, and **Underline** decorations render, respectively.  
-  
- ![Screenshot: Overline TextDecorator](~/add/media/inline-textdec-over.png "Screenshot: Overline TextDecorator")  
-  
- ![Screenshot: Default baseline effect on text](~/add/media/inline-textdec-base.png "Screenshot: Default baseline effect on text")  
-  
- ![Screenshot: Text with default underline effect](~/add/media/inline-textdec-under.png "Screenshot: Text with default underline effect")  
-  
- The following example shows how to set the <xref:System.Windows.Documents.Inline.TextDecorations%2A> property programmatically.  
-  
- [!code-csharp[InlineSnippets#_Inline_TextDec](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_textdec)]
- [!code-vb[InlineSnippets#_Inline_TextDec](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_textdec)]  
-  
+The following example shows how to set the <xref:System.Windows.Documents.Inline.TextDecorations%2A> attribute of a <xref:System.Windows.Documents.Inline> element (<xref:System.Windows.Documents.Run>).  
+ 
+[!code-xml[InlineSnippets#_Inline_TextDecXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml#_inline_textdecxaml)]  
+ 
+The following figure shows how this example renders.  
+ 
+![Screenshot: Text with default strikethrough effect](~/add/media/inline-textdec-strike.png "Screenshot: Text with default strikethrough effect")  
+ 
+The following figures show how the **Overline**, **Baseline**, and **Underline** decorations render, respectively.  
+ 
+![Screenshot: Overline TextDecorator](~/add/media/inline-textdec-over.png "Screenshot: Overline TextDecorator")  
+ 
+![Screenshot: Default baseline effect on text](~/add/media/inline-textdec-base.png "Screenshot: Default baseline effect on text")  
+ 
+![Screenshot: Text with default underline effect](~/add/media/inline-textdec-under.png "Screenshot: Text with default underline effect")  
+ 
+The following example shows how to set the <xref:System.Windows.Documents.Inline.TextDecorations%2A> property programmatically.  
+ 
+[!code-csharp[InlineSnippets#_Inline_TextDec](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml.cs#_inline_textdec)]
+[!code-vb[InlineSnippets#_Inline_TextDec](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InlineSnippets/visualbasic/window1.xaml.vb#_inline_textdec)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

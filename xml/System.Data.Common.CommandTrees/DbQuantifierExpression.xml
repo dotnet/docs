@@ -14,10 +14,10 @@
     <summary>Represents a quantifier operation of the specified kind over the elements of the specified input set. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class represents `Any` and `All` quantifiers. `Any` and `All` are encoded in the <xref:System.Data.Common.CommandTrees.DbExpressionKind>. The result type of a quantifier expression is always a `Boolean`.  
-  
+This class represents `Any` and `All` quantifiers. `Any` and `All` are encoded in the <xref:System.Data.Common.CommandTrees.DbExpressionKind>. The result type of a quantifier expression is always a `Boolean`.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -18,18 +18,18 @@
     <summary>Provides access to detailed information about the capabilities of the client's browser.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.HttpCapabilitiesBase> is the base class from which the <xref:System.Web.HttpBrowserCapabilities> class is derived. <xref:System.Web.Configuration.HttpCapabilitiesBase> offers a large number of read-only properties that provide type-safe access to a browser's capabilities dictionary. You can access the <xref:System.Web.HttpBrowserCapabilities> class through the <xref:System.Web.HttpRequest.Browser%2A> property that is exposed by the ASP.NET <xref:System.Web.HttpRequest.Browser%2A?displayProperty=fullName> property.  
+<xref:System.Web.Configuration.HttpCapabilitiesBase> is the base class from which the <xref:System.Web.HttpBrowserCapabilities> class is derived. <xref:System.Web.Configuration.HttpCapabilitiesBase> offers a large number of read-only properties that provide type-safe access to a browser's capabilities dictionary. You can access the <xref:System.Web.HttpBrowserCapabilities> class through the <xref:System.Web.HttpRequest.Browser%2A> property that is exposed by the ASP.NET <xref:System.Web.HttpRequest.Browser%2A?displayProperty=fullName> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to access information about the browser.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase/VB/sample_vb.aspx#1)]  -->  
-  
+The following example shows how to access information about the browser.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,13 +67,13 @@
           <see langword="true" /> if the browser supports ActiveX controls; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports ActiveX controls.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.ActiveXControls#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.ActiveXControls/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.ActiveXControls#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.ActiveXControls/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports ActiveX controls.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.ActiveXControls#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.ActiveXControls/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.ActiveXControls#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.ActiveXControls/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,13 +135,13 @@
           <see langword="true" /> if the browser is an AOL browser; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser is an AOL browser.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.AOL#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.AOL/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.AOL#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.AOL/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser is an AOL browser.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.AOL#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.AOL/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.AOL#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.AOL/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,13 +164,13 @@
           <see langword="true" /> if the browser supports playing background sounds; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports playing background sounds.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.BackgroundSounds#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.BackgroundSounds/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.BackgroundSounds#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.BackgroundSounds/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports playing background sounds.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.BackgroundSounds#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.BackgroundSounds/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.BackgroundSounds#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.BackgroundSounds/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,18 +193,18 @@
           <see langword="true" /> if the browser is a beta version; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Beta version browsers can exhibit unpredictable behavior.  
+Beta version browsers can exhibit unpredictable behavior.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser is a beta version.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Beta#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Beta/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Beta#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Beta/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser is a beta version.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Beta#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Beta/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Beta#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Beta/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -226,13 +226,13 @@
         <value>The contents of the <see langword="User-Agent" /> request header sent by the browser.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine the `User-Agent` request header sent by the browser.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Browser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Browser/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Browser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Browser/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine the `User-Agent` request header sent by the browser.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Browser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Browser/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Browser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Browser/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,18 +291,18 @@
           <see langword="true" /> if the browser supports decks that contain multiple forms; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanCombineFormsInDeck%2A> property applies only to WML-compatible mobile devices. If true, the adapter can output multiple forms from the same page as cards of a single deck, where possible.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanCombineFormsInDeck%2A> property applies only to WML-compatible mobile devices. If true, the adapter can output multiple forms from the same page as cards of a single deck, where possible.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports decks that contain multiple forms, such as separate cards.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanCombineFormsInDeck#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanCombineFormsInDeck/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanCombineFormsInDeck#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanCombineFormsInDeck/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports decks that contain multiple forms, such as separate cards.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanCombineFormsInDeck#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanCombineFormsInDeck/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanCombineFormsInDeck#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanCombineFormsInDeck/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,18 +325,18 @@
           <see langword="true" /> if the browser device is capable of initiating a voice call; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanInitiateVoiceCall%2A> property applies only to WML-compatible mobile devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanInitiateVoiceCall%2A> property applies only to WML-compatible mobile devices.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser device is capable of initiating a voice call.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanInitiateVoiceCall#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanInitiateVoiceCall/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanInitiateVoiceCall#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanInitiateVoiceCall/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser device is capable of initiating a voice call.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanInitiateVoiceCall#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanInitiateVoiceCall/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanInitiateVoiceCall#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanInitiateVoiceCall/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,18 +359,18 @@
           <see langword="true" /> if the browser supports page content following HTML <see langword="&lt;select&gt; " />or <see langword="&lt;input&gt; " />elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanRenderAfterInputOrSelectElement%2A> property applies only to WML-compatible mobile devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanRenderAfterInputOrSelectElement%2A> property applies only to WML-compatible mobile devices.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports page content following HTML `<select>` or `<input>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanRenderAfterInputOrSelectElement#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderAfterInputOrSelectElement/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanRenderAfterInputOrSelectElement#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderAfterInputOrSelectElement/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports page content following HTML `<select>` or `<input>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanRenderAfterInputOrSelectElement#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderAfterInputOrSelectElement/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanRenderAfterInputOrSelectElement#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderAfterInputOrSelectElement/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -393,13 +393,13 @@
           <see langword="true" /> if the browser supports empty HTML <see langword="&lt;select&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports empty HTML `<select>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanRenderEmptySelects#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderEmptySelects/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanRenderEmptySelects#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderEmptySelects/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports empty HTML `<select>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanRenderEmptySelects#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderEmptySelects/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanRenderEmptySelects#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderEmptySelects/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -422,18 +422,18 @@
           <see langword="true" /> if the browser supports WML <see langword="&lt;input&gt;" /> and <see langword="&lt;select&gt;" /> elements together; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanRenderInputAndSelectElementsTogether%2A> property applies only to WML-compatible mobile devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanRenderInputAndSelectElementsTogether%2A> property applies only to WML-compatible mobile devices.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports HTML `<input>` and `<select>` elements together.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanRenderInputAndSelectElementsTogether#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderInputAndSelectElementsTogether/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanRenderInputAndSelectElementsTogether#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderInputAndSelectElementsTogether/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports HTML `<input>` and `<select>` elements together.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanRenderInputAndSelectElementsTogether#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderInputAndSelectElementsTogether/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanRenderInputAndSelectElementsTogether#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderInputAndSelectElementsTogether/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -456,20 +456,20 @@
           <see langword="true" /> if the browser supports WML <see langword="&lt;option&gt;" /> elements that specify both <see langword="onpick" /> and <see langword="value" /> attributes; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanRenderMixedSelects%2A> property applies only to WML-compatible mobile devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanRenderMixedSelects%2A> property applies only to WML-compatible mobile devices.  
+ 
+If `false`, `onpick` values are displayed as hyperlinks and `value` attributes require a `<do>` element for postback.  
+ 
   
- If `false`, `onpick` values are displayed as hyperlinks and `value` attributes require a `<do>` element for postback.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports HTML `<option>` elements that specify both `onpick` and `value` attributes.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanRenderMixedSelects#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderMixedSelects/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanRenderMixedSelects#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderMixedSelects/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports HTML `<option>` elements that specify both `onpick` and `value` attributes.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanRenderMixedSelects#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderMixedSelects/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanRenderMixedSelects#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderMixedSelects/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -492,20 +492,20 @@
           <see langword="true" /> if the browser supports WML <see langword="&lt;onevent&gt;" /> and <see langword="&lt;prev&gt;" /> elements that coexist within the same WML card; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanRenderOneventAndPrevElementsTogether%2A> property applies only to WML-compatible mobile devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanRenderOneventAndPrevElementsTogether%2A> property applies only to WML-compatible mobile devices.  
+ 
+If `false`, WML `<onevent>` and `<prev>` elements that coexist within the same WML card will not be properly rendered.  
+ 
   
- If `false`, WML `<onevent>` and `<prev>` elements that coexist within the same WML card will not be properly rendered.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports WML `<onevent>` and `<prev>` elements that coexist within the same WML card.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanRenderOneventAndPrevElementsTogether#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderOneventAndPrevElementsTogether/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanRenderOneventAndPrevElementsTogether#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderOneventAndPrevElementsTogether/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports WML `<onevent>` and `<prev>` elements that coexist within the same WML card.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanRenderOneventAndPrevElementsTogether#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderOneventAndPrevElementsTogether/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanRenderOneventAndPrevElementsTogether#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderOneventAndPrevElementsTogether/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -528,20 +528,20 @@
           <see langword="true" /> if the browser supports WML cards for postback; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanRenderPostBackCards%2A> property applies only to WML-compatible mobile-device browsers.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanRenderPostBackCards%2A> property applies only to WML-compatible mobile-device browsers.  
+ 
+If `false`, postback cards will not be properly rendered by the browser.  
+ 
   
- If `false`, postback cards will not be properly rendered by the browser.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports WML cards for postback.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanRenderPostBackCards#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderPostBackCards/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanRenderPostBackCards#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderPostBackCards/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports WML cards for postback.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanRenderPostBackCards#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderPostBackCards/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanRenderPostBackCards#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderPostBackCards/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -564,20 +564,20 @@
           <see langword="true" /> if the browser supports WML <see langword="&lt;setvar&gt;" /> elements with a <see langword="value" /> attribute of <see langword="0" />; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanRenderSetvarZeroWithMultiSelectionList%2A> property applies only to WML-compatible mobile devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.CanRenderSetvarZeroWithMultiSelectionList%2A> property applies only to WML-compatible mobile devices.  
+ 
+If `false`, HTML `<setvar>` elements with a `value` attribute of `0` will not display correctly.  
+ 
   
- If `false`, HTML `<setvar>` elements with a `value` attribute of `0` will not display correctly.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports WML `<setvar>` elements with a `value` attribute of 0.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanRenderSetvarZeroWithMultiSelectionList#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderSetvarZeroWithMultiSelectionList/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanRenderSetvarZeroWithMultiSelectionList#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderSetvarZeroWithMultiSelectionList/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports WML `<setvar>` elements with a `value` attribute of 0.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanRenderSetvarZeroWithMultiSelectionList#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderSetvarZeroWithMultiSelectionList/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanRenderSetvarZeroWithMultiSelectionList#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanRenderSetvarZeroWithMultiSelectionList/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -600,13 +600,13 @@
           <see langword="true" /> if the browser supports sending e-mail by using the HTML <see langword="&lt;mailto&gt;" /> element for displaying electronic addresses; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports sending e-mail by using the HTML `<mailto>` element for displaying electronic addresses.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanSendMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanSendMail/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanSendMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanSendMail/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports sending e-mail by using the HTML `<mailto>` element for displaying electronic addresses.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CanSendMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CanSendMail/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CanSendMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CanSendMail/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -647,13 +647,13 @@
           <see langword="true" /> if the browser supports CDF; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports CDF.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CDF#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CDF/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CDF#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CDF/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports CDF.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.CDF#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.CDF/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.CDF#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.CDF/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -675,14 +675,14 @@
         <value>The common language runtime <see cref="T:System.Version" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.ClrVersion%2A> property is supported only when the browser is Internet Explorer version 5.0 and later.  
-  
- If the .NET Framework is not installed on the client, the value of the version elements returned is `0, 0,-1,-1`.  
-  
- If more than one version of the .NET Framework is installed on the client, the <xref:System.Web.Configuration.HttpCapabilitiesBase.ClrVersion%2A> property returns the latest version.  
-  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.ClrVersion%2A> property is supported only when the browser is Internet Explorer version 5.0 and later.  
+ 
+If the .NET Framework is not installed on the client, the value of the version elements returned is `0, 0,-1,-1`.  
+ 
+If more than one version of the .NET Framework is installed on the client, the <xref:System.Web.Configuration.HttpCapabilitiesBase.ClrVersion%2A> property returns the latest version.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -705,18 +705,18 @@
           <see langword="true" /> if the browser supports cookies; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.Cookies%2A> property indicates whether the browser application supports cookies. If the user has disabled cookies in their application, the <xref:System.Web.Configuration.HttpCapabilitiesBase.Cookies%2A> property will not be affected.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.Cookies%2A> property indicates whether the browser application supports cookies. If the user has disabled cookies in their application, the <xref:System.Web.Configuration.HttpCapabilitiesBase.Cookies%2A> property will not be affected.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports cookies.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Cookies#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Cookies/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Cookies#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Cookies/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports cookies.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Cookies#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Cookies/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Cookies#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Cookies/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -739,13 +739,13 @@
           <see langword="true" /> if the browser is a search engine; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the client is a search engine Web crawler.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Crawler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Crawler/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Crawler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Crawler/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the client is a search engine Web crawler.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Crawler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Crawler/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Crawler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Crawler/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -791,12 +791,12 @@
         <value>The maximum number of Submit buttons that are allowed for a form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.DefaultSubmitButtonLimit%2A> property primarily represents the number of soft keys that are available on a WML-compatible mobile device.  
-  
- Web Forms pages for mobile devices can contain a <xref:System.Web.UI.MobileControls.SelectionList> object and more than one <xref:System.Web.UI.MobileControls.Command> control. The <xref:System.Web.Configuration.HttpCapabilitiesBase.DefaultSubmitButtonLimit%2A> allows you to choose which of the <xref:System.Web.UI.MobileControls.Command> controls should be assigned to a soft key on devices that have multiple soft keys.  
-  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.DefaultSubmitButtonLimit%2A> property primarily represents the number of soft keys that are available on a WML-compatible mobile device.  
+ 
+Web Forms pages for mobile devices can contain a <xref:System.Web.UI.MobileControls.SelectionList> object and more than one <xref:System.Web.UI.MobileControls.Command> control. The <xref:System.Web.Configuration.HttpCapabilitiesBase.DefaultSubmitButtonLimit%2A> allows you to choose which of the <xref:System.Web.UI.MobileControls.Command> controls should be assigned to a soft key on devices that have multiple soft keys.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -836,13 +836,13 @@
         <value>The version number of ECMAScript that the browser supports.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports an ECMAScript major version number greater than 1.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.EcmaScriptVersion#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.EcmaScriptVersion/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.EcmaScriptVersion#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.EcmaScriptVersion/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports an ECMAScript major version number greater than 1.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.EcmaScriptVersion#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.EcmaScriptVersion/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.EcmaScriptVersion#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.EcmaScriptVersion/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -865,13 +865,13 @@
           <see langword="true" /> if the browser supports frames; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports HTML frames.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Frames#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Frames/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Frames#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Frames/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports HTML frames.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Frames#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Frames/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Frames#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Frames/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -931,13 +931,13 @@
         <value>The version number of the wireless gateway used to access the server, if known. The default is <see langword="None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the gateway is an `UP` gateway.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.GatewayVersion#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.GatewayVersion/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.GatewayVersion#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.GatewayVersion/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the gateway is an `UP` gateway.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.GatewayVersion#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.GatewayVersion/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.GatewayVersion#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.GatewayVersion/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -960,10 +960,10 @@
         <returns>An array of <see cref="T:System.Version" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.GetClrVersions%2A> method is supported only when the browser is Internet Explorer version 5.0 or later. If the common language runtime is not installed on the client, the property returns an array containing a single <xref:System.Version> object with the values 0, 0,-1,-1.  
-  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.GetClrVersions%2A> method is supported only when the browser is Internet Explorer version 5.0 or later. If the common language runtime is not installed on the client, the property returns an array containing a single <xref:System.Version> object with the values 0, 0,-1,-1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1010,18 +1010,18 @@
           <see langword="true" /> if the browser has a dedicated **Back** button; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `false`, a link control might be necessary when a **Back** button is not available.  
+If `false`, a link control might be necessary when a **Back** button is not available.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser has a dedicated **Back** button.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.HasBackButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.HasBackButton/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.HasBackButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.HasBackButton/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser has a dedicated **Back** button.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.HasBackButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.HasBackButton/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.HasBackButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.HasBackButton/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1044,13 +1044,13 @@
           <see langword="true" /> if the scrollbar of an HTML <see langword="&lt;select multiple&gt;" /> element with an <see langword="align" /> attribute value of <see langword="right" /> is obscured upon rendering; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser obscures the scrollbar for right-aligned multi-select elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.HidesRightAlignedMultiselectScrollbars#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.HidesRightAlignedMultiselectScrollbars/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.HidesRightAlignedMultiselectScrollbars#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.HidesRightAlignedMultiselectScrollbars/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser obscures the scrollbar for right-aligned multi-select elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.HidesRightAlignedMultiselectScrollbars#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.HidesRightAlignedMultiselectScrollbars/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.HidesRightAlignedMultiselectScrollbars#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.HidesRightAlignedMultiselectScrollbars/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1126,24 +1126,24 @@
         <value>The type of input supported by browser. The default is <c>telephoneKeypad</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Possible return values include:  
-  
+Possible return values include:  
+ 
 -   `virtualKeyboard`  
-  
+ 
 -   `telephoneKeypad`  
-  
+ 
 -   `keyboard`  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine the type of input support.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.InputType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.InputType/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.InputType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.InputType/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine the type of input support.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.InputType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.InputType/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.InputType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.InputType/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1170,10 +1170,10 @@
           <see langword="true" /> if the client browser is the same as the specified browser; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.IsBrowser%2A> method also returns `true` if the client browser definition inherits from the specified browser.  
-  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.IsBrowser%2A> method also returns `true` if the client browser definition inherits from the specified browser.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1196,13 +1196,13 @@
           <see langword="true" /> if the browser has a color display; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows whether the client's browser supports color. The returned value could be used to determine the appropriate image to send to the browser.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.IsColor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.IsColor/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.IsColor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.IsColor/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows whether the client's browser supports color. The returned value could be used to determine the appropriate image to send to the browser.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.IsColor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.IsColor/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.IsColor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.IsColor/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1225,13 +1225,13 @@
           <see langword="true" /> if the browser is a recognized mobile device; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser is a mobile device.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.IsMobileDevice#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.IsMobileDevice/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.IsMobileDevice#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.IsMobileDevice/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser is a mobile device.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.IsMobileDevice#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.IsMobileDevice/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.IsMobileDevice#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.IsMobileDevice/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1257,10 +1257,10 @@
         <value>The browser capability with the specified key name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In JScript, you can use the default indexed properties defined by a type, but you cannot explicitly define your own. However, specifying the `expando` attribute on a class automatically provides a default indexed property with a type of `Object` and an index type of `String`.  
-  
+In JScript, you can use the default indexed properties defined by a type, but you cannot explicitly define your own. However, specifying the `expando` attribute on a class automatically provides a default indexed property with a type of `Object` and an index type of `String`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1283,13 +1283,13 @@
           <see langword="true" /> if the browser supports Java; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports Java.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.JavaApplets#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.JavaApplets/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.JavaApplets#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.JavaApplets/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports Java.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.JavaApplets#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.JavaApplets/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.JavaApplets#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.JavaApplets/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1317,18 +1317,18 @@
           <see langword="true" /> if the browser supports JavaScript; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the browser supports JavaScript but scripting is disabled through a security setting, the <xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A> property will return `true` but script will not execute on the browser.  
+If the browser supports JavaScript but scripting is disabled through a security setting, the <xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A> property will return `true` but script will not execute on the browser.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports JavaScript.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.JavaScript#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.JavaScript/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.JavaScript#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.JavaScript/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports JavaScript.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.JavaScript#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.JavaScript/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.JavaScript#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.JavaScript/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1368,13 +1368,13 @@
         <value>The major version number of the browser.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example adds the major and minor (integer and decimal) values of the browser version number and sends the result to browser.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.MajorVersion#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.MajorVersion/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.MajorVersion#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.MajorVersion/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example adds the major and minor (integer and decimal) values of the browser version number and sends the result to browser.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.MajorVersion#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.MajorVersion/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.MajorVersion#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.MajorVersion/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The major version value is not an integer.</exception>
@@ -1415,12 +1415,12 @@
         <value>The maximum length of the page, in bytes, which the browser can display. The default is <c>2000</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Processing by an intermediate gateway can change the number of bytes that reach the browser. ASP.NET does not enforce this limit on page size.  
-  
- <xref:System.Web.Configuration.HttpCapabilitiesBase.MaximumRenderedPageSize%2A> is primarily useful when working with mobile-client browsers.  
-  
+Processing by an intermediate gateway can change the number of bytes that reach the browser. ASP.NET does not enforce this limit on page size.  
+ 
+<xref:System.Web.Configuration.HttpCapabilitiesBase.MaximumRenderedPageSize%2A> is primarily useful when working with mobile-client browsers.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1442,18 +1442,18 @@
         <value>The maximum length of the text that a soft-key label can display. The default is <see langword="5" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.MaximumSoftkeyLabelLength%2A> property applies only to WML-compatible mobile devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.MaximumSoftkeyLabelLength%2A> property applies only to WML-compatible mobile devices.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine the maximum length of the soft-key label for the browser.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.MaximumSoftkeyLabelLength#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.MaximumSoftkeyLabelLength/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.MaximumSoftkeyLabelLength#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.MaximumSoftkeyLabelLength/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine the maximum length of the soft-key label for the browser.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.MaximumSoftkeyLabelLength#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.MaximumSoftkeyLabelLength/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.MaximumSoftkeyLabelLength#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.MaximumSoftkeyLabelLength/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1475,13 +1475,13 @@
         <value>The minor version number of the browser.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example returns the minor version of the browser.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.MinorVersion#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.MinorVersion/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.MinorVersion#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.MinorVersion/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example returns the minor version of the browser.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.MinorVersion#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.MinorVersion/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.MinorVersion#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.MinorVersion/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpUnhandledException">The minor version number in the header is not valid.</exception>
@@ -1558,13 +1558,13 @@
         <value>The number of the MSHTML DOM version that the browser supports.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports an MSHTML DOM major version greater than 1.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.MSDomVersion#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.MSDomVersion/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.MSDomVersion#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.MSDomVersion/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports an MSHTML DOM major version greater than 1.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.MSDomVersion#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.MSDomVersion/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.MSDomVersion#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.MSDomVersion/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1586,12 +1586,12 @@
         <value>The number of soft keys supported on a mobile device. The default is <see langword="0" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.NumberOfSoftkeys%2A> property applies only to WML-compatible mobile devices.  
-  
- Soft keys are special keys that the application can usually map to custom tasks. Soft-key text is displayed on the screen in the lower-left and lower-right corners.  
-  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.NumberOfSoftkeys%2A> property applies only to WML-compatible mobile devices.  
+ 
+Soft keys are special keys that the application can usually map to custom tasks. Soft-key text is displayed on the screen in the lower-left and lower-right corners.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1613,42 +1613,42 @@
         <value>The operating system that the client uses, if it is known, otherwise the value is set to <see langword="Unknown" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some of the possible values for the <xref:System.Web.Configuration.HttpCapabilitiesBase.Platform%2A> property are as follows:  
-  
+Some of the possible values for the <xref:System.Web.Configuration.HttpCapabilitiesBase.Platform%2A> property are as follows:  
+ 
 -   `Unknown`  
-  
+ 
 -   `Win95`  
-  
+ 
 -   `Win98`  
-  
+ 
 -   `Windows NT 5.0` (Windows 2000)  
-  
+ 
 -   `Windows NT 5.1` (Windows XP)  
-  
+ 
 -   `WinNT` (all other versions of Windows NT)  
-  
+ 
 -   `Win16`  
-  
+ 
 -   `WinCE`  
-  
+ 
 -   `Mac68K`  
-  
+ 
 -   `MacPPC`  
-  
+ 
 -   `UNIX`  
-  
+ 
 -   `WebTV`  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser is running on the Windows NT platform.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Platform#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Platform/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Platform#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Platform/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser is running on the Windows NT platform.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Platform#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Platform/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Platform#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Platform/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1670,13 +1670,13 @@
         <value>The MIME type of the type of image content typically preferred by the browser. The default is <see langword="image/gif" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine the type of image typically preferred by a browser.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.PreferredImageMime#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.PreferredImageMime/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.PreferredImageMime#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.PreferredImageMime/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine the type of image typically preferred by a browser.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.PreferredImageMime#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.PreferredImageMime/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.PreferredImageMime#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.PreferredImageMime/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1698,13 +1698,13 @@
         <value>The MIME type of the type of content typically preferred by the browser. The default is <see langword="text/html" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine the MIME type typically preferred by the browser.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.PreferredRenderingMime#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.PreferredRenderingMime/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.PreferredRenderingMime#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.PreferredRenderingMime/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine the MIME type typically preferred by the browser.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.PreferredRenderingMime#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.PreferredRenderingMime/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.PreferredRenderingMime#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.PreferredRenderingMime/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1727,13 +1727,13 @@
           <see langword="html32" /> or <see langword="chtml10" />. The default is <see langword="html32" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine the type of content that the browser prefers.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.PreferredRenderingType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.PreferredRenderingType/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.PreferredRenderingType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.PreferredRenderingType/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine the type of content that the browser prefers.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.PreferredRenderingType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.PreferredRenderingType/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.PreferredRenderingType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.PreferredRenderingType/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1792,20 +1792,20 @@
           <see langword="true" /> if the browser renders a line break before <see langword="&lt;select&gt;" /> or <see langword="&lt;input&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.RendersBreakBeforeWmlSelectAndInput%2A> property applies only to WML-compatible mobile devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.RendersBreakBeforeWmlSelectAndInput%2A> property applies only to WML-compatible mobile devices.  
+ 
+If `true`, content following `<select>` or `<input>` elements will automatically be placed on a new line.  
+ 
   
- If `true`, content following `<select>` or `<input>` elements will automatically be placed on a new line.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser renders a line break before `<select>` or `<input>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RendersBreakBeforeWmlSelectAndInput#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreakBeforeWmlSelectAndInput/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RendersBreakBeforeWmlSelectAndInput#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreakBeforeWmlSelectAndInput/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser renders a line break before `<select>` or `<input>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RendersBreakBeforeWmlSelectAndInput#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreakBeforeWmlSelectAndInput/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RendersBreakBeforeWmlSelectAndInput#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreakBeforeWmlSelectAndInput/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1828,18 +1828,18 @@
           <see langword="true" /> if the browser renders a line break after list-item elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `true`, content following list-item elements will automatically be placed on a new line.  
+If `true`, content following list-item elements will automatically be placed on a new line.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser renders a line break after list-item elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RendersBreaksAfterHtmlLists#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreaksAfterHtmlLists/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RendersBreaksAfterHtmlLists#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreaksAfterHtmlLists/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser renders a line break after list-item elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RendersBreaksAfterHtmlLists#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreaksAfterHtmlLists/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RendersBreaksAfterHtmlLists#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreaksAfterHtmlLists/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1862,20 +1862,20 @@
           <see langword="true" /> if the browser renders a line break after a stand-alone HTML <see langword="&lt;a&gt;" /> (anchor) element; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.RendersBreaksAfterWmlAnchor%2A> property applies only to WML-compatible mobile devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.RendersBreaksAfterWmlAnchor%2A> property applies only to WML-compatible mobile devices.  
+ 
+If `true`, content following a stand-alone HTML `<a>` (anchor) element will automatically be placed on a new line.  
+ 
   
- If `true`, content following a stand-alone HTML `<a>` (anchor) element will automatically be placed on a new line.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser renders a line break after a stand-alone WML `<a>` (anchor) element.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RendersBreaksAfterWmlAnchor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreaksAfterWmlAnchor/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RendersBreaksAfterWmlAnchor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreaksAfterWmlAnchor/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser renders a line break after a stand-alone WML `<a>` (anchor) element.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RendersBreaksAfterWmlAnchor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreaksAfterWmlAnchor/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RendersBreaksAfterWmlAnchor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreaksAfterWmlAnchor/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1898,20 +1898,20 @@
           <see langword="true" /> if the browser renders a line break after an HTML <see langword="&lt;input&gt; " />element; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.RendersBreaksAfterWmlInput%2A> property applies only to WML-compatible mobile devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.RendersBreaksAfterWmlInput%2A> property applies only to WML-compatible mobile devices.  
+ 
+If `true`, content following an HTML `<input>` element will automatically be placed on a new line.  
+ 
   
- If `true`, content following an HTML `<input>` element will automatically be placed on a new line.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser renders a line break after an HTML `<input>` element.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RendersBreaksAfterWmlInput#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreaksAfterWmlInput/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RendersBreaksAfterWmlInput#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreaksAfterWmlInput/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser renders a line break after an HTML `<input>` element.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RendersBreaksAfterWmlInput#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreaksAfterWmlInput/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RendersBreaksAfterWmlInput#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersBreaksAfterWmlInput/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1934,18 +1934,18 @@
           <see langword="true" /> if the mobile-device browser renders a WML <see langword="do" />-based form-accept construct as an inline button; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.RendersWmlDoAcceptsInline%2A> property applies only to WML-compatible mobile devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.RendersWmlDoAcceptsInline%2A> property applies only to WML-compatible mobile devices.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser renders a WML `do`-based form-accept construct as an inline button.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RendersWmlDoAcceptsInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersWmlDoAcceptsInline/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RendersWmlDoAcceptsInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersWmlDoAcceptsInline/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser renders a WML `do`-based form-accept construct as an inline button.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RendersWmlDoAcceptsInline#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersWmlDoAcceptsInline/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RendersWmlDoAcceptsInline#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersWmlDoAcceptsInline/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1968,18 +1968,18 @@
           <see langword="true" /> if the browser renders WML <see langword="&lt;select&gt;" /> elements as menu cards; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.RendersWmlSelectsAsMenuCards%2A> property applies only to WML-compatible mobile devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.RendersWmlSelectsAsMenuCards%2A> property applies only to WML-compatible mobile devices.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser renders WML `<select>` elements as menu cards.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RendersWmlSelectsAsMenuCards#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersWmlSelectsAsMenuCards/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RendersWmlSelectsAsMenuCards#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersWmlSelectsAsMenuCards/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser renders WML `<select>` elements as menu cards.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RendersWmlSelectsAsMenuCards#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersWmlSelectsAsMenuCards/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RendersWmlSelectsAsMenuCards#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RendersWmlSelectsAsMenuCards/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2001,14 +2001,14 @@
         <value>A meta-tag required by some browsers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Intended for internal use only. Some browsers require a meta-tag similar to the following for the browser to render properly.  
-  
+Intended for internal use only. Some browsers require a meta-tag similar to the following for the browser to render properly.  
+ 
 ```  
 <META NAME="NAME" CONTENT="VALUE">  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2031,18 +2031,18 @@
           <see langword="true" /> if the browser requires colons in element attribute values to be substituted with a different character; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some browsers do not recognize colons in element attribute values. If `true`, a different character will be substituted on rendering and returned in postback data.  
+Some browsers do not recognize colons in element attribute values. If `true`, a different character will be substituted on rendering and returned in postback data.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser requires colons in element attribute values to be substituted with a different character.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresAttributeColonSubstitution#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresAttributeColonSubstitution/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresAttributeColonSubstitution#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresAttributeColonSubstitution/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser requires colons in element attribute values to be substituted with a different character.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresAttributeColonSubstitution#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresAttributeColonSubstitution/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresAttributeColonSubstitution#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresAttributeColonSubstitution/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2065,24 +2065,24 @@
           <see langword="true" /> if the browser requires an HTML <see langword="&lt;meta&gt;" /> element for which the <see langword="content-type" /> attribute is specified; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `true`, server-control adapters insert the following tag into the HTML `<head>` element of a Web page:  
-  
+If `true`, server-control adapters insert the following tag into the HTML `<head>` element of a Web page:  
+ 
 ```  
 <META HTTP-EQUIV="CONTENT-TYPE" CONTENT=""; CHARSET="">  
 ```  
+ 
+In this example, `CONTENT` is the value returned by the <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingMime%2A> property, and `charset` is the character encoding used.  
+ 
   
- In this example, `CONTENT` is the value returned by the <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingMime%2A> property, and `charset` is the character encoding used.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser requires an HTML `<meta>` element for which the `content-type` attribute is specified.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresContentTypeMetaTag#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresContentTypeMetaTag/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresContentTypeMetaTag#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresContentTypeMetaTag/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser requires an HTML `<meta>` element for which the `content-type` attribute is specified.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresContentTypeMetaTag#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresContentTypeMetaTag/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresContentTypeMetaTag#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresContentTypeMetaTag/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2105,13 +2105,13 @@
           <see langword="true" /> if the browser requires control state to be maintained in sessions; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser requires control state to be maintained in sessions.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresControlStateInSession#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresControlStateInSession/CS/browsercaps.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresControlStateInSession#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresControlStateInSession/VB/browsercaps_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser requires control state to be maintained in sessions.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresControlStateInSession#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresControlStateInSession/CS/browsercaps.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresControlStateInSession#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresControlStateInSession/VB/browsercaps_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2134,13 +2134,13 @@
           <see langword="true" /> if the browser requires a double-byte character set; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser requires a double-byte character set.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresDBCSCharacter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresDBCSCharacter/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresDBCSCharacter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresDBCSCharacter/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser requires a double-byte character set.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresDBCSCharacter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresDBCSCharacter/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresDBCSCharacter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresDBCSCharacter/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2163,18 +2163,18 @@
           <see langword="true" /> if the browser requires nonstandard error messages; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `true`, the browser does not properly render HTTP error messages. To correct this, server control adapters generate a custom error page for the browser.  
+If `true`, the browser does not properly render HTTP error messages. To correct this, server control adapters generate a custom error page for the browser.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser requires nonstandard error messages.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresHtmlAdaptiveErrorReporting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresHtmlAdaptiveErrorReporting/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresHtmlAdaptiveErrorReporting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresHtmlAdaptiveErrorReporting/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser requires nonstandard error messages.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresHtmlAdaptiveErrorReporting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresHtmlAdaptiveErrorReporting/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresHtmlAdaptiveErrorReporting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresHtmlAdaptiveErrorReporting/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2197,18 +2197,18 @@
           <see langword="true" /> if the browser requires the first element in the body of a Web page to be an HTML <see langword="BR" /> element; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `true`, server-control adapters insert an additional `<br>` element immediately following the `<body>` tag in a Web page.  
+If `true`, server-control adapters insert an additional `<br>` element immediately following the `<body>` tag in a Web page.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser requires the first element in the body of a Web page to be an HTML `<br>` element.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresLeadingPageBreak#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresLeadingPageBreak/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresLeadingPageBreak#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresLeadingPageBreak/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser requires the first element in the body of a Web page to be an HTML `<br>` element.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresLeadingPageBreak#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresLeadingPageBreak/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresLeadingPageBreak#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresLeadingPageBreak/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2231,18 +2231,18 @@
           <see langword="true" /> if the browser does not support HTML <see langword="&lt;br&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `true`, the browser will not correctly render pages containing the HTML `<br>` element.  
+If `true`, the browser will not correctly render pages containing the HTML `<br>` element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser does not support HTML `<br>` elements to format line breaks.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresNoBreakInFormatting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresNoBreakInFormatting/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresNoBreakInFormatting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresNoBreakInFormatting/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser does not support HTML `<br>` elements to format line breaks.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresNoBreakInFormatting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresNoBreakInFormatting/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresNoBreakInFormatting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresNoBreakInFormatting/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2265,21 +2265,21 @@
           <see langword="true" /> if the browser requires pages to contain a size-optimized form of markup language tags; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `true`, server control adapters generate minimal output to reduce the size of the resulting page.  
-  
+If `true`, server control adapters generate minimal output to reduce the size of the resulting page.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.Configuration.HttpCapabilitiesBase.RequiresOutputOptimization%2A> property returns `true` for i-mode–compatible browsers.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser requires pages to contain a size-optimized form of markup language tags.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresOutputOptimization#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresOutputOptimization/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresOutputOptimization#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresOutputOptimization/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser requires pages to contain a size-optimized form of markup language tags.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresOutputOptimization#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresOutputOptimization/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresOutputOptimization#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresOutputOptimization/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2302,18 +2302,18 @@
           <see langword="true" /> if the browser supports phone dialing based on plain text only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.RequiresPhoneNumbersAsPlainText%2A> property applies only to browsers for which the <xref:System.Web.Configuration.HttpCapabilitiesBase.CanInitiateVoiceCall%2A> property is `true`.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.RequiresPhoneNumbersAsPlainText%2A> property applies only to browsers for which the <xref:System.Web.Configuration.HttpCapabilitiesBase.CanInitiateVoiceCall%2A> property is `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports phone dialing based on plain text, or whether it requires special markup.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresPhoneNumbersAsPlainText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresPhoneNumbersAsPlainText/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresPhoneNumbersAsPlainText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresPhoneNumbersAsPlainText/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports phone dialing based on plain text, or whether it requires special markup.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresPhoneNumbersAsPlainText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresPhoneNumbersAsPlainText/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresPhoneNumbersAsPlainText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresPhoneNumbersAsPlainText/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2336,24 +2336,24 @@
           <see langword="true" /> if the browser requires <see langword="VIEWSTATE" /> values to be specially encoded; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- HTTP is a stateless protocol, and `VIEWSTATE` is one mechanism used to persist client changes across multiple requests. Each control on a Web page contains a <xref:System.Web.UI.Control.ViewState%2A> property, which represents the accumulation of any changes made by the client. In a Web Forms page, these changes are encoded in postback data as the `value` of an HTML `<input>` element with a `type` attribute of `hidden`. For example:  
-  
+HTTP is a stateless protocol, and `VIEWSTATE` is one mechanism used to persist client changes across multiple requests. Each control on a Web page contains a <xref:System.Web.UI.Control.ViewState%2A> property, which represents the accumulation of any changes made by the client. In a Web Forms page, these changes are encoded in postback data as the `value` of an HTML `<input>` element with a `type` attribute of `hidden`. For example:  
+ 
 ```  
 <input type="hidden" name="__VIEWSTATE" value="t0PH_u56?cDxleHQ7P=" />  
 ```  
+ 
+If `true`, non-alphabetic characters in the `VIEWSTATE` value will not be sent correctly by the browser, nor by an intermediate gateway. To correct this, server-control adapters replace non-alphabetic characters in the `VIEWSTATE` value with ones that do not require encoding in HTTP requests.  
+ 
   
- If `true`, non-alphabetic characters in the `VIEWSTATE` value will not be sent correctly by the browser, nor by an intermediate gateway. To correct this, server-control adapters replace non-alphabetic characters in the `VIEWSTATE` value with ones that do not require encoding in HTTP requests.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser requires `VIEWSTATE` values to be specially encoded.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresSpecialViewStateEncoding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresSpecialViewStateEncoding/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresSpecialViewStateEncoding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresSpecialViewStateEncoding/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser requires `VIEWSTATE` values to be specially encoded.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresSpecialViewStateEncoding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresSpecialViewStateEncoding/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresSpecialViewStateEncoding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresSpecialViewStateEncoding/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2376,18 +2376,18 @@
           <see langword="true" /> if the browser requires unique form-action URLs; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A self-referring HTML `<form>` element is one for which the `action` attribute specifies its own URL. If `true`, self-referring forms do not return the correct results. This is due to caching by either the browser or an intermediate gateway. To correct this, server control adapters append a default query string (`__ufps=``uniquefilepathsuffix`) onto the form-action URL values of self-referring forms.  
+A self-referring HTML `<form>` element is one for which the `action` attribute specifies its own URL. If `true`, self-referring forms do not return the correct results. This is due to caching by either the browser or an intermediate gateway. To correct this, server control adapters append a default query string (`__ufps=``uniquefilepathsuffix`) onto the form-action URL values of self-referring forms.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser requires unique form-action URLs.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresUniqueFilePathSuffix#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUniqueFilePathSuffix/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresUniqueFilePathSuffix#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUniqueFilePathSuffix/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser requires unique form-action URLs.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresUniqueFilePathSuffix#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUniqueFilePathSuffix/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresUniqueFilePathSuffix#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUniqueFilePathSuffix/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2410,13 +2410,13 @@
           <see langword="true" /> if the browser requires unique <see langword="name" /> attribute values of multiple HTML <see langword="&lt;input type=&quot;checkbox&quot;&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser requires unique `NAME` attribute values of multiple HTML `<input type="checkbox">` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresUniqueHtmlCheckboxNames#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUniqueHtmlCheckboxNames/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresUniqueHtmlCheckboxNames#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUniqueHtmlCheckboxNames/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser requires unique `NAME` attribute values of multiple HTML `<input type="checkbox">` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresUniqueHtmlCheckboxNames#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUniqueHtmlCheckboxNames/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresUniqueHtmlCheckboxNames#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUniqueHtmlCheckboxNames/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2439,13 +2439,13 @@
           <see langword="true" /> if the browser requires unique <see langword="name" /> attribute values of multiple HTML <see langword="&lt;input&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser requires unique `name` attribute values of multiple HTML `<input>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresUniqueHtmlInputNames#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUniqueHtmlInputNames/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresUniqueHtmlInputNames#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUniqueHtmlInputNames/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser requires unique `name` attribute values of multiple HTML `<input>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresUniqueHtmlInputNames#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUniqueHtmlInputNames/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresUniqueHtmlInputNames#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUniqueHtmlInputNames/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2468,13 +2468,13 @@
           <see langword="true" /> if postback data sent by the browser will be <see langword="UrlEncoded" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser `UrlEncodes` postback data.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresUrlEncodedPostfieldValues#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUrlEncodedPostfieldValues/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresUrlEncodedPostfieldValues#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUrlEncodedPostfieldValues/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser `UrlEncodes` postback data.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.RequiresUrlEncodedPostfieldValues#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUrlEncodedPostfieldValues/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.RequiresUrlEncodedPostfieldValues#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.RequiresUrlEncodedPostfieldValues/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2514,10 +2514,10 @@
         <value>The approximate height of the display, in character lines. The default is <see langword="6" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value can be derived from the assumed character size and actual screen pixel size. The algorithm for determining the height uses a combination of the default font sizes (from a .config file), browser-specific sizes (again, from a .config file), and explicit headers sent by the browser. Some browsers might rely on internal default values, which only approximate the actual height.  
-  
+The returned value can be derived from the assumed character size and actual screen pixel size. The algorithm for determining the height uses a combination of the default font sizes (from a .config file), browser-specific sizes (again, from a .config file), and explicit headers sent by the browser. Some browsers might rely on internal default values, which only approximate the actual height.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2539,10 +2539,10 @@
         <value>The approximate width of the display, in characters. The default is <see langword="12" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value can be derived from the assumed character size and actual screen pixel size. The algorithm for determining the width uses a combination of the default font sizes (from a .config file), device-specific sizes (again, from a .config file), and explicit headers sent by the devices. These values are not necessarily exact (especially for variable-width fonts, these values are approximate). Some devices might rely on internal default values, which only approximate the actual width.  
-  
+The returned value can be derived from the assumed character size and actual screen pixel size. The algorithm for determining the width uses a combination of the default font sizes (from a .config file), device-specific sizes (again, from a .config file), and explicit headers sent by the devices. These values are not necessarily exact (especially for variable-width fonts, these values are approximate). Some devices might rely on internal default values, which only approximate the actual width.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2564,10 +2564,10 @@
         <value>The approximate height of the display, in pixels. The default is <see langword="72" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value can be derived from the assumed character size and character height. The algorithm for determining the pixel height uses a combination of the default font sizes (from a .config file), device-specific sizes (again, from a .config file), and explicit headers sent by the devices. These values are not necessarily exact. Some devices might rely on internal default values, which only approximate the actual height.  
-  
+The returned value can be derived from the assumed character size and character height. The algorithm for determining the pixel height uses a combination of the default font sizes (from a .config file), device-specific sizes (again, from a .config file), and explicit headers sent by the devices. These values are not necessarily exact. Some devices might rely on internal default values, which only approximate the actual height.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2589,10 +2589,10 @@
         <value>The approximate width of the display, in pixels. The default is <see langword="96" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value can be derived from the assumed character size and character width. The algorithm for determining the pixel width uses a combination of the default font sizes (from a .config file), device-specific sizes (again, from a .config file), and explicit headers sent by the devices. These values are not necessarily exact (especially for variable-width fonts, these values are approximate). Some devices might rely on internal default values, which only approximate the actual width.  
-  
+The returned value can be derived from the assumed character size and character width. The algorithm for determining the pixel width uses a combination of the default font sizes (from a .config file), device-specific sizes (again, from a .config file), and explicit headers sent by the devices. These values are not necessarily exact (especially for variable-width fonts, these values are approximate). Some devices might rely on internal default values, which only approximate the actual width.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2615,18 +2615,18 @@
           <see langword="true" /> if the browser supports the <see langword="accesskey" /> attribute of HTML <see langword="&lt;a&gt;" /> (anchor) and <see langword="&lt;input&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `accesskey` attribute extends control of forms and links on a Web page to mobile and accessible platforms by assigning a soft key or other controller on the device to interact with HTML `<a>` (anchor) and `<input>` elements.  
+The `accesskey` attribute extends control of forms and links on a Web page to mobile and accessible platforms by assigning a soft key or other controller on the device to interact with HTML `<a>` (anchor) and `<input>` elements.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports the `accesskey` attribute of HTML `<a>` (anchor) and `<input>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsAccesskeyAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsAccesskeyAttribute/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsAccesskeyAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsAccesskeyAttribute/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports the `accesskey` attribute of HTML `<a>` (anchor) and `<input>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsAccesskeyAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsAccesskeyAttribute/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsAccesskeyAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsAccesskeyAttribute/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2649,13 +2649,13 @@
           <see langword="true" /> if the browser supports the <see langword="bgcolor" /> attribute of the HTML <see langword="&lt;body&gt;" /> element; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports the `bgcolor` attribute of the HTML `<body>` element.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsBodyColor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsBodyColor/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsBodyColor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsBodyColor/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports the `bgcolor` attribute of the HTML `<body>` element.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsBodyColor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsBodyColor/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsBodyColor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsBodyColor/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2678,13 +2678,13 @@
           <see langword="true" /> if the browser supports HTML <see langword="&lt;b&gt;" /> elements to format bold text; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports HTML `<b>` elements to format bold text.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsBold#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsBold/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsBold#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsBold/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports HTML `<b>` elements to format bold text.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsBold#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsBold/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsBold#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsBold/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2707,32 +2707,32 @@
           <see langword="true" /> if the browser supports the <see langword="cache-control" /> value for the <see langword="http-equiv" /> attribute of HTML <see langword="&lt;meta&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `cache-control` value for the `http-equiv` attribute of HTML `<meta>` elements allows control over client caching of downloaded content, which includes Web pages. The following HTML fragment shows an example:  
-  
+The `cache-control` value for the `http-equiv` attribute of HTML `<meta>` elements allows control over client caching of downloaded content, which includes Web pages. The following HTML fragment shows an example:  
+ 
 ```  
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE"/>  
 ```  
-  
- If `true`, the inclusion of this tag in the `<head>` element of a Web page should force the browser to reload content from the server.  
-  
- If `false`, server control adapters append a default query string (`__ufps=``uniquefilepathsuffix`) onto link URL values that do not already have one. This forces the browser to reload content from the server.  
-  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsCacheControlMetaTag%2A> property also applies to the equivalent HTTP header form:  
-  
+ 
+If `true`, the inclusion of this tag in the `<head>` element of a Web page should force the browser to reload content from the server.  
+ 
+If `false`, server control adapters append a default query string (`__ufps=``uniquefilepathsuffix`) onto link URL values that do not already have one. This forces the browser to reload content from the server.  
+ 
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsCacheControlMetaTag%2A> property also applies to the equivalent HTTP header form:  
+ 
 ```  
 CACHE-CONTROL: NO-CACHE  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports the `cache-control` value for the `http-equiv` attribute of HTML `<meta>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsCacheControlMetaTag#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsCacheControlMetaTag/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsCacheControlMetaTag#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsCacheControlMetaTag/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports the `cache-control` value for the `http-equiv` attribute of HTML `<meta>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsCacheControlMetaTag#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsCacheControlMetaTag/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsCacheControlMetaTag#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsCacheControlMetaTag/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2755,13 +2755,13 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports callback scripts; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports callback scripts.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsCallback#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsCallback/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsCallback#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsCallback/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports callback scripts.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsCallback#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsCallback/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsCallback#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsCallback/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2784,13 +2784,13 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports CSS; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports CSS.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsCss#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsCss/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsCss#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsCss/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports CSS.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsCss#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsCss/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsCss#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsCss/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2813,18 +2813,18 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports the <see langword="align" /> attribute of HTML <see langword="&lt;div&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- HTML `<div>` elements are used to group multiple HTML elements so that CSS styles can be applied to them as a whole. The `align` attribute sets the horizontal alignment of a `<div>` group on a Web page.  
+HTML `<div>` elements are used to group multiple HTML elements so that CSS styles can be applied to them as a whole. The `align` attribute sets the horizontal alignment of a `<div>` group on a Web page.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports the `align` attribute of HTML `<div>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsDivAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsDivAlign/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsDivAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsDivAlign/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports the `align` attribute of HTML `<div>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsDivAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsDivAlign/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsDivAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsDivAlign/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2847,18 +2847,18 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports the <see langword="nowrap" /> attribute of HTML <see langword="&lt;div&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- HTML `<div>` elements are used to group multiple HTML elements so that CSS styles can be applied to them as a whole. The `nowrap` attribute specifies that the elements contained in the `<div>` group should remain adjacent to each other without wrapping to a new line.  
+HTML `<div>` elements are used to group multiple HTML elements so that CSS styles can be applied to them as a whole. The `nowrap` attribute specifies that the elements contained in the `<div>` group should remain adjacent to each other without wrapping to a new line.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports the `nowrap` attribute of HTML `<div>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsDivNoWrap#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsDivNoWrap/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsDivNoWrap#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsDivNoWrap/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports the `nowrap` attribute of HTML `<div>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsDivNoWrap#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsDivNoWrap/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsDivNoWrap#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsDivNoWrap/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2881,13 +2881,13 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports empty (<see langword="null" />) strings in cookie values; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports empty (`null`) strings in cookie values.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsEmptyStringInCookieValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsEmptyStringInCookieValue/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsEmptyStringInCookieValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsEmptyStringInCookieValue/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports empty (`null`) strings in cookie values.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsEmptyStringInCookieValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsEmptyStringInCookieValue/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsEmptyStringInCookieValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsEmptyStringInCookieValue/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2910,13 +2910,13 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports the <see langword="color" /> attribute of HTML <see langword="&lt;font&gt; " />elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports the `color` attribute of HTML `<font>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsFontColor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsFontColor/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsFontColor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsFontColor/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports the `color` attribute of HTML `<font>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsFontColor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsFontColor/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsFontColor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsFontColor/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2939,13 +2939,13 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports the <see langword="name" /> attribute of HTML <see langword="&lt;font&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports the `name` attribute of HTML `<font>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsFontName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsFontName/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsFontName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsFontName/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports the `name` attribute of HTML `<font>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsFontName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsFontName/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsFontName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsFontName/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2968,13 +2968,13 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports the <see langword="size" /> attribute of HTML <see langword="&lt;font&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports the `size` attribute of HTML `<font>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsFontSize#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsFontSize/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsFontSize#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsFontSize/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports the `size` attribute of HTML `<font>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsFontSize#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsFontSize/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsFontSize#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsFontSize/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2997,13 +2997,13 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports using a custom image in place of a standard form Submit button; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports using a custom image in place of a standard form Submit button.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsImageSubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsImageSubmit/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsImageSubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsImageSubmit/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports using a custom image in place of a standard form Submit button.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsImageSubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsImageSubmit/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsImageSubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsImageSubmit/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3026,20 +3026,20 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports i-mode symbols; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsInputMode%2A> property applies only to i-mode–compatible devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsInputMode%2A> property applies only to i-mode–compatible devices.  
+ 
+Set i-Phone–specific picture symbols for i-mode–compatible browsers by using the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A>property.  
+ 
   
- Set i-Phone–specific picture symbols for i-mode–compatible browsers by using the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A>property.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports i-mode symbols.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsIModeSymbols#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsIModeSymbols/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsIModeSymbols#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsIModeSymbols/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports i-mode symbols.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsIModeSymbols#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsIModeSymbols/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsIModeSymbols#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsIModeSymbols/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3062,20 +3062,20 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports the <see langword="istyle" /> attribute of HTML <see langword="&lt;input&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsInputMode%2A> property applies only to i-mode–compatible devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsInputMode%2A> property applies only to i-mode–compatible devices.  
+ 
+The `istyle` attribute is used for setting the input style of a text-input field on i-mode–compatible browsers.  
+ 
   
- The `istyle` attribute is used for setting the input style of a text-input field on i-mode–compatible browsers.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports the `istyle` attribute of HTML `<input>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsInputIStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsInputIStyle/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsInputIStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsInputIStyle/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports the `istyle` attribute of HTML `<input>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsInputIStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsInputIStyle/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsInputIStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsInputIStyle/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3098,20 +3098,20 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports the <see langword="mode" /> attribute of HTML <see langword="&lt;input&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsInputMode%2A> property applies only to i-mode–compatible devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsInputMode%2A> property applies only to i-mode–compatible devices.  
+ 
+The `MODE` attribute is used for setting the input mode of a text input field on i-mode–compatible browsers.  
+ 
   
- The `MODE` attribute is used for setting the input mode of a text input field on i-mode–compatible browsers.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports the `mode` attribute of HTML `<input>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsInputMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsInputMode/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsInputMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsInputMode/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports the `mode` attribute of HTML `<input>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsInputMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsInputMode/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsInputMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsInputMode/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3134,13 +3134,13 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports HTML <see langword="&lt;i&gt;" /> elements to format italic text; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports HTML `<i>` elements to format italic text.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsItalic#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsItalic/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsItalic#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsItalic/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports HTML `<i>` elements to format italic text.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsItalic#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsItalic/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsItalic#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsItalic/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3163,32 +3163,32 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports J-Phone multimedia attributes; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes%2A> property applies only to J-Phone–compatible mobile devices.  
-  
- J-Phone is a markup language specification, based on HTML, for J-Phone–compatible browsers. If `true`, the browser supports additional attributes for HTML `<a>` (anchor) and `<select>` elements. The additional attributes supported are as follows:  
-  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes%2A> property applies only to J-Phone–compatible mobile devices.  
+ 
+J-Phone is a markup language specification, based on HTML, for J-Phone–compatible browsers. If `true`, the browser supports additional attributes for HTML `<a>` (anchor) and `<select>` elements. The additional attributes supported are as follows:  
+ 
 -   `src`  
-  
+ 
 -   `soundstart`  
-  
+ 
 -   `loop`  
-  
+ 
 -   `volume`  
-  
+ 
 -   `vibration`  
-  
+ 
 -   `viblength`  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports J-Phone multimedia attributes.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports J-Phone multimedia attributes.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3211,20 +3211,20 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports J-Phone–specific picture symbols; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsJPhoneSymbols%2A> property applies only to J-Phone–compatible mobile devices.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsJPhoneSymbols%2A> property applies only to J-Phone–compatible mobile devices.  
+ 
+Set J-Phone–specific picture symbols for J-Phone–compatible browsers by using the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property.  
+ 
   
- Set J-Phone–specific picture symbols for J-Phone–compatible browsers by using the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports J-Phone–specific picture symbols.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsJPhoneSymbols#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsJPhoneSymbols/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsJPhoneSymbols#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsJPhoneSymbols/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports J-Phone–specific picture symbols.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsJPhoneSymbols#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsJPhoneSymbols/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsJPhoneSymbols#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsJPhoneSymbols/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3247,18 +3247,18 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports a query string in the <see langword="action" /> attribute value of HTML <see langword="&lt;form&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `false`, query string parameters are sent, in postback data, as HTML `<input>` elements with the `type` attributes set to `hidden`.  
+If `false`, query string parameters are sent, in postback data, as HTML `<input>` elements with the `type` attributes set to `hidden`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports a query string in the value for the `action` attribute of HTML `<form>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsQueryStringInFormAction#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsQueryStringInFormAction/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsQueryStringInFormAction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsQueryStringInFormAction/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports a query string in the value for the `action` attribute of HTML `<form>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsQueryStringInFormAction#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsQueryStringInFormAction/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsQueryStringInFormAction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsQueryStringInFormAction/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3281,20 +3281,20 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports cookies on redirection; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With UP.Browser 4.1 or UP.Browser 3.2, the <xref:System.Web.HttpResponse.Redirect%2A> method behaves as if the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsRedirectWithCookie%2A> property of the <xref:System.Web.HttpBrowserCapabilities> object is `false`, unless the <xref:System.Web.Configuration.SessionStateSection.Cookieless%2A> property in the <xref:System.Web.Configuration.SystemWebSectionGroup.SessionState%2A> section of Web.config has been explicitly set to `true`.  
+With UP.Browser 4.1 or UP.Browser 3.2, the <xref:System.Web.HttpResponse.Redirect%2A> method behaves as if the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsRedirectWithCookie%2A> property of the <xref:System.Web.HttpBrowserCapabilities> object is `false`, unless the <xref:System.Web.Configuration.SessionStateSection.Cookieless%2A> property in the <xref:System.Web.Configuration.SystemWebSectionGroup.SessionState%2A> section of Web.config has been explicitly set to `true`.  
+ 
+In ASP.NET 1.1, the options for this setting were `true` or `false`, but with ASP.NET 2.0, the choices are expanded, and <xref:System.Web.HttpCookieMode> is now the default setting. If your Web application has the `cookieless` attribute of the `<sessionState>` section in the Web.config file set to a Boolean value, <xref:System.Web.HttpResponse.Redirect%2A> should work as expected for these browsers.  
+ 
   
- In ASP.NET 1.1, the options for this setting were `true` or `false`, but with ASP.NET 2.0, the choices are expanded, and <xref:System.Web.HttpCookieMode> is now the default setting. If your Web application has the `cookieless` attribute of the `<sessionState>` section in the Web.config file set to a Boolean value, <xref:System.Web.HttpResponse.Redirect%2A> should work as expected for these browsers.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports cookies on redirection.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsRedirectWithCookie#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsRedirectWithCookie/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsRedirectWithCookie#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsRedirectWithCookie/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports cookies on redirection.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsRedirectWithCookie#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsRedirectWithCookie/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsRedirectWithCookie#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsRedirectWithCookie/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3317,13 +3317,13 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports the <see langword="multiple" /> attribute of HTML <see langword="&lt;select&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports the `multiple` attribute of HTML `<select>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsSelectMultiple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsSelectMultiple/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsSelectMultiple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsSelectMultiple/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports the `multiple` attribute of HTML `<select>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsSelectMultiple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsSelectMultiple/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsSelectMultiple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsSelectMultiple/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3346,18 +3346,18 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the clearing of a checked HTML <see langword="&lt;input type=checkbox&gt;" /> element is reflected in postback data; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `false`, the value of the `checked` attribute of HTML `<input type=checkbox>` elements is omitted from postback data.  
+If `false`, the value of the `checked` attribute of HTML `<input type=checkbox>` elements is omitted from postback data.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the clearing of a checked HTML `<input type=checkbox>` element is reflected in postback data.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsUncheck#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsUncheck/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsUncheck#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsUncheck/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the clearing of a checked HTML `<input type=checkbox>` element is reflected in postback data.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsUncheck#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsUncheck/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsUncheck#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsUncheck/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3380,13 +3380,13 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports receiving XML over HTTP; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports receiving XML over HTTP.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsXmlHttp#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsXmlHttp/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsXmlHttp#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsXmlHttp/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports receiving XML over HTTP.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.SupportsXmlHttp#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsXmlHttp/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.SupportsXmlHttp#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.SupportsXmlHttp/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3456,13 +3456,13 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports HTML <see langword="&lt;table&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports HTML `<table>` elements.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Tables#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Tables/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Tables#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Tables/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports HTML `<table>` elements.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Tables#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Tables/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Tables#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Tables/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3503,13 +3503,13 @@ CACHE-CONTROL: NO-CACHE
         <value>The name and major version number of the browser.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser is Internet Explorer version 6.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Type#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Type/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Type#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Type/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser is Internet Explorer version 6.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Type#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Type/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Type#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Type/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3551,13 +3551,13 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser supports VBScript; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser supports VBScript.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.VBScript#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.VBScript/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.VBScript#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.VBScript/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser supports VBScript.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.VBScript#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.VBScript/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.VBScript#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.VBScript/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3579,18 +3579,18 @@ CACHE-CONTROL: NO-CACHE
         <value>The full version number of the browser as a string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.HttpCapabilitiesBase.Version%2A> property returns a string. In some scenarios, the <xref:System.Web.Configuration.HttpCapabilitiesBase.Version%2A> property might contain letter characters, as in the case of a browser or client device that is a beta version such as "7.0b." To correctly get the version as a data type that can be used in a numeric comparison, concatenate the <xref:System.Web.Configuration.HttpCapabilitiesBase.MajorVersion%2A> and <xref:System.Web.Configuration.HttpCapabilitiesBase.MinorVersion%2A> property values.  
+The <xref:System.Web.Configuration.HttpCapabilitiesBase.Version%2A> property returns a string. In some scenarios, the <xref:System.Web.Configuration.HttpCapabilitiesBase.Version%2A> property might contain letter characters, as in the case of a browser or client device that is a beta version such as "7.0b." To correctly get the version as a data type that can be used in a numeric comparison, concatenate the <xref:System.Web.Configuration.HttpCapabilitiesBase.MajorVersion%2A> and <xref:System.Web.Configuration.HttpCapabilitiesBase.MinorVersion%2A> property values.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine the <xref:System.Web.Configuration.HttpCapabilitiesBase.Version%2A> of the browser. The <xref:System.Web.Configuration.HttpCapabilitiesBase.MajorVersion%2A> property and <xref:System.Web.Configuration.HttpCapabilitiesBase.MinorVersion%2A> property are concatenated and the result is used to determine whether the browser version is greater than 5.01.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Version#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Version/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Version#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Version/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine the <xref:System.Web.Configuration.HttpCapabilitiesBase.Version%2A> of the browser. The <xref:System.Web.Configuration.HttpCapabilitiesBase.MajorVersion%2A> property and <xref:System.Web.Configuration.HttpCapabilitiesBase.MinorVersion%2A> property are concatenated and the result is used to determine whether the browser version is greater than 5.01.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Version#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Version/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Version#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Version/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3612,13 +3612,13 @@ CACHE-CONTROL: NO-CACHE
         <value>The number of the W3C XML DOM version number that the browser supports.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser W3C XML DOM version is greater than 1.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.W3CDomVersion#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.W3CDomVersion/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.W3CDomVersion#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.W3CDomVersion/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser W3C XML DOM version is greater than 1.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.W3CDomVersion#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.W3CDomVersion/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.W3CDomVersion#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.W3CDomVersion/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3641,13 +3641,13 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the browser is running on a Win16-based computer; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the browser is running on a Win16-based computer.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Win16#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Win16/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Win16#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Win16/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the browser is running on a Win16-based computer.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Win16#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Win16/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Win16#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Win16/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3670,13 +3670,13 @@ CACHE-CONTROL: NO-CACHE
           <see langword="true" /> if the client is a Win32-based computer; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the client is a Win32-based computer.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Win32#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Win32/CS/sample_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Win32#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Win32/VB/sample_vb.aspx#1)]  -->  
-  
+The following code example shows how to determine whether the client is a Win32-based computer.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpCapabilitiesBase.Win32#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpCapabilitiesBase.Win32/CS/sample_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpCapabilitiesBase.Win32#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpCapabilitiesBase.Win32/VB/sample_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>

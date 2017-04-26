@@ -19,24 +19,24 @@
     <summary>Represents a class that manages the current instance of a <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" />. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- This class also provides the query interface over the current instance of the <xref:System.Workflow.Activities.StateMachineWorkflowActivity>. By using an instance of this class, you can make various queries on the <xref:System.Workflow.Activities.StateMachineWorkflowInstance>.  
-  
- Typical queries that can be made are as follows:  
-  
+ 
+This class also provides the query interface over the current instance of the <xref:System.Workflow.Activities.StateMachineWorkflowActivity>. By using an instance of this class, you can make various queries on the <xref:System.Workflow.Activities.StateMachineWorkflowInstance>.  
+ 
+Typical queries that can be made are as follows:  
+ 
 -   Current state of the state machine.  
-  
+ 
 -   Possible transitions from the current state.  
-  
+ 
 -   History of transitions for the state machine instance.  
-  
+ 
 -   Enumeration of all the states in the state machine.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,12 +60,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.StateMachineWorkflowInstance" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a new instance of a <xref:System.Workflow.Activities.StateMachineWorkflowInstance> object. This example is from the Ordering State Machine SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
-  
- [!code-csharp[wf_samples#128](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#128)]  
-  
+The following example shows how to create a new instance of a <xref:System.Workflow.Activities.StateMachineWorkflowInstance> object. This example is from the Ordering State Machine SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
+ 
+[!code-csharp[wf_samples#128](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#128)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -262,10 +262,10 @@
         <value>A collection of transitions that the <see cref="T:System.Workflow.Activities.StateActivity" /> has made.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property only returns the state history if the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> is used. An `InvalidOperationException` occurs if the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> is not installed.  If there is no state history for a newly created instance, state history is created without the instance being started.  
-  
+This property only returns the state history if the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> is used. An `InvalidOperationException` occurs if the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> is not installed.  If there is no state history for a newly created instance, state history is created without the instance being started.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,10 +287,10 @@
         <value>The latest definition of the <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property only returns a copy of the workflow definition and never the live instance tree. Therefore, the activity tree that is returned by this property cannot be used to query for run-time values.  
-  
+This property only returns a copy of the workflow definition and never the live instance tree. Therefore, the activity tree that is returned by this property cannot be used to query for run-time values.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">If the workflow has already completed, the current <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" /> cannot be retrieved, so the previous definition is retrieved.</exception>

@@ -14,10 +14,10 @@
     <summary>A helper class that creates <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> instances.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once created, the <xref:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator> creates new <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence> instances,  sets the <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence.InstanceId%2A>, <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence.SequenceId%2A> and increments the <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence.MessageNumber%2A> for each successive <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence> instance created.  
-  
+Once created, the <xref:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator> creates new <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence> instances,  sets the <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence.InstanceId%2A>, <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence.SequenceId%2A> and increments the <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence.MessageNumber%2A> for each successive <xref:System.ServiceModel.Discovery.DiscoveryMessageSequence> instance created.  
+ 
  ]]></format>
     </remarks>
   </Docs>

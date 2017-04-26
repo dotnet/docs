@@ -23,17 +23,17 @@
     <summary>Represents the container that handles the layout of a <see cref="T:System.Windows.Controls.ToolBar" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.ToolBarTray> is responsible for handling placement, sizing, drag-and-drop operations, and rearranging of <xref:System.Windows.Controls.ToolBar> controls. <xref:System.Windows.Controls.ToolBarTray> controls are also responsible for managing the rows (or "bands") in which <xref:System.Windows.Controls.ToolBar> controls appear. A <xref:System.Windows.Controls.ToolBarTray> may be horizontal or vertical and, like a <xref:System.Windows.Controls.Menu>, is often docked at the top of an application window.  
+A <xref:System.Windows.Controls.ToolBarTray> is responsible for handling placement, sizing, drag-and-drop operations, and rearranging of <xref:System.Windows.Controls.ToolBar> controls. <xref:System.Windows.Controls.ToolBarTray> controls are also responsible for managing the rows (or "bands") in which <xref:System.Windows.Controls.ToolBar> controls appear. A <xref:System.Windows.Controls.ToolBarTray> may be horizontal or vertical and, like a <xref:System.Windows.Controls.Menu>, is often docked at the top of an application window.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Controls.ToolBar> inside a <xref:System.Windows.Controls.ToolBarTray>.  The example uses the <xref:System.Windows.Controls.ToolBar.BandIndex%2A> property to place tool bars inside tool bar trays.  
-  
- [!code-xml[ToolBarExample#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#2)]  
-  
+The following example shows how to create a <xref:System.Windows.Controls.ToolBar> inside a <xref:System.Windows.Controls.ToolBarTray>.  The example uses the <xref:System.Windows.Controls.ToolBar.BandIndex%2A> property to place tool bars inside tool bar trays.  
+ 
+[!code-xml[ToolBarExample#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -92,24 +92,24 @@
         <value>A brush to use for the background color of the <see cref="T:System.Windows.Controls.ToolBarTray" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Background"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ToolBarTray>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Controls.ToolBarTray.Background%2A> property to set the brush for the background color of a <xref:System.Windows.Controls.ToolBarTray>.  
-  
- [!code-xml[ToolBarExample#ToolBarTrayIsLocked](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#toolbartrayislocked)]  
-  
+The following example uses the <xref:System.Windows.Controls.ToolBarTray.Background%2A> property to set the brush for the background color of a <xref:System.Windows.Controls.ToolBarTray>.  
+ 
+[!code-xml[ToolBarExample#ToolBarTrayIsLocked](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#toolbartrayislocked)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,34 +194,34 @@
           <see langword="true" /> if the toolbar cannot be moved inside the toolbar tray; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This dependency property also has an attached property usage.  
-  
+This dependency property also has an attached property usage.  
+ 
 <a name="xamlAttributeUsage_IsLocked"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object IsLocked="bool"/>  
 - or -  
 <object ToolBarTray.IsLocked="bool"/>  
 ```  
-  
+ 
 <a name="dependencyPropertyInfo_IsLocked"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ToolBarTray>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Controls.ToolBarTray> that does not allow a <xref:System.Windows.Controls.ToolBar> to move inside it.  
-  
- [!code-xml[ToolBarExample#ToolBarTrayIsLocked](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#toolbartrayislocked)]  
-  
+The following example shows how to create a <xref:System.Windows.Controls.ToolBarTray> that does not allow a <xref:System.Windows.Controls.ToolBar> to move inside it.  
+ 
+[!code-xml[ToolBarExample#ToolBarTrayIsLocked](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#toolbartrayislocked)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -321,24 +321,24 @@
         <value>One of the <see cref="T:System.Windows.Controls.Orientation" /> values. The default is <see cref="F:System.Windows.Controls.Orientation.Horizontal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Orientation"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ToolBarTray>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.Orientation> property to set the orientation of the tool bar tray; this determines the orientation of the tool bar.  
-  
- [!code-xml[ToolBarExample#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#4)]  
-  
+The following example shows how to use the <xref:System.Windows.Controls.Orientation> property to set the orientation of the tool bar tray; this determines the orientation of the tool bar.  
+ 
+[!code-xml[ToolBarExample#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -447,32 +447,32 @@
         <value>A collection of <see cref="T:System.Windows.Controls.ToolBar" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can add <xref:System.Windows.Controls.ToolBar> objects to a <xref:System.Windows.Controls.ToolBarTray> by using XAML, but do not use object element syntax.  That is, do not explicitly specify the <xref:System.Collections.ObjectModel.Collection%601> object.  XAML does not support declaring generic types.  
-  
+You can add <xref:System.Windows.Controls.ToolBar> objects to a <xref:System.Windows.Controls.ToolBarTray> by using XAML, but do not use object element syntax.  That is, do not explicitly specify the <xref:System.Collections.ObjectModel.Collection%601> object.  XAML does not support declaring generic types.  
+ 
 <a name="xamlPropertyElementUsage_Items"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
   OneOrMoreToolBarElements  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_Items"></a>   
 ## XAML Values  
- *OneOrMoreToolBarElements*  
- One or more <xref:System.Windows.Controls.ToolBar> objects.  
+*OneOrMoreToolBarElements*  
+One or more <xref:System.Windows.Controls.ToolBar> objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.ToolBarTray.ToolBars%2A> property to add a <xref:System.Windows.Controls.ToolBar> to a <xref:System.Windows.Controls.ToolBarTray>.  
-  
- [!code-csharp[ToolBarOrient_snip#ToolBarTrayToolBars](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarOrient_snip/CSharp/Pane1.xaml.cs#toolbartraytoolbars)]
- [!code-vb[ToolBarOrient_snip#ToolBarTrayToolBars](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolBarOrient_snip/visualbasic/pane1.xaml.vb#toolbartraytoolbars)]  
-  
+The following example shows how to use the <xref:System.Windows.Controls.ToolBarTray.ToolBars%2A> property to add a <xref:System.Windows.Controls.ToolBar> to a <xref:System.Windows.Controls.ToolBarTray>.  
+ 
+[!code-csharp[ToolBarOrient_snip#ToolBarTrayToolBars](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarOrient_snip/CSharp/Pane1.xaml.cs#toolbartraytoolbars)]
+[!code-vb[ToolBarOrient_snip#ToolBarTrayToolBars](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolBarOrient_snip/visualbasic/pane1.xaml.vb#toolbartraytoolbars)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

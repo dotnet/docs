@@ -19,14 +19,14 @@
     <summary>Specifies the design-time editor of the expression builder. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Compilation.ExpressionEditorAttribute> class specifies the design-time expression editor for the expressions that are handled by an <xref:System.Web.Compilation.ExpressionBuilder> class.  
-  
- When editing a control property, you can set the property value to an expression by using an editor for the expression.  
-  
- When developing an expression builder, you can mark the builder with the <xref:System.Web.Compilation.ExpressionEditorAttribute> attribute to set the editor type value.  
-  
+The <xref:System.Web.Compilation.ExpressionEditorAttribute> class specifies the design-time expression editor for the expressions that are handled by an <xref:System.Web.Compilation.ExpressionBuilder> class.  
+ 
+When editing a control property, you can set the property value to an expression by using an editor for the expression.  
+ 
+When developing an expression builder, you can mark the builder with the <xref:System.Web.Compilation.ExpressionEditorAttribute> attribute to set the editor type value.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ExpressionEditorAttribute" /> class using the specified type name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor to initialize an instance of the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type name. To initialize the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type object, use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor.  
-  
+Use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor to initialize an instance of the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type name. To initialize the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type object, use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -75,10 +75,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ExpressionEditorAttribute" /> class using the specified type object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor to initialize an instance of the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type object. To initialize the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type name, use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor.  
-  
+Use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor to initialize an instance of the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type object. To initialize the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type name, use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,10 +100,10 @@
         <value>The name of the editor type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.Compilation.ExpressionEditorAttribute.EditorTypeName%2A> property to retrieve the name of the type of editor that is associated with this instance of the <xref:System.Web.Compilation.ExpressionEditorAttribute> class.  
-  
+Use the <xref:System.Web.Compilation.ExpressionEditorAttribute.EditorTypeName%2A> property to retrieve the name of the type of editor that is associated with this instance of the <xref:System.Web.Compilation.ExpressionEditorAttribute> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,10 +149,10 @@
         <returns>The hash code of the value of this <see cref="T:System.Web.Compilation.ExpressionEditorAttribute" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of an <xref:System.Web.Compilation.ExpressionEditorAttribute> attribute is the value of its <xref:System.Web.Compilation.ExpressionEditorAttribute.EditorTypeName%2A> property.  
-  
+The value of an <xref:System.Web.Compilation.ExpressionEditorAttribute> attribute is the value of its <xref:System.Web.Compilation.ExpressionEditorAttribute.EditorTypeName%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,10 +166,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ExpressionEditorAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.ExpressionEditor.%23ctor%2A> constructor to initialize an empty instance of the <xref:System.Web.Compilation.ExpressionEditorAttribute> class. To initialize the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type object, use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor. To initialize the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type name, use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor.  
-  
+Use the <xref:System.Web.UI.Design.ExpressionEditor.%23ctor%2A> constructor to initialize an empty instance of the <xref:System.Web.Compilation.ExpressionEditorAttribute> class. To initialize the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type object, use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor. To initialize the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type name, use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

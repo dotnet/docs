@@ -48,12 +48,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.ParallelOptions" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the instance with default values. <xref:System.Threading.Tasks.ParallelOptions.MaxDegreeOfParallelism%2A> is initialized to -1, signifying that there is no upper bound set on how much parallelism should be employed. <xref:System.Threading.Tasks.ParallelOptions.CancellationToken%2A> is initialized to a non-cancelable token, and <xref:System.Threading.Tasks.ParallelOptions.TaskScheduler%2A> is initialized to the default scheduler (TaskScheduler.Default).  
-  
- All of these defaults may be overwritten using the property set accessors on the instance.  
-  
+This constructor initializes the instance with default values. <xref:System.Threading.Tasks.ParallelOptions.MaxDegreeOfParallelism%2A> is initialized to -1, signifying that there is no upper bound set on how much parallelism should be employed. <xref:System.Threading.Tasks.ParallelOptions.CancellationToken%2A> is initialized to a non-cancelable token, and <xref:System.Threading.Tasks.ParallelOptions.TaskScheduler%2A> is initialized to the default scheduler (TaskScheduler.Default).  
+ 
+All of these defaults may be overwritten using the property set accessors on the instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,10 +84,10 @@
         <value>The token that is associated with this instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Providing a <xref:System.Threading.CancellationToken> to a <xref:System.Threading.Tasks.Parallel> method enables the operation to be exited early. Code external to the operation may cancel the token, and if the operation observes the token being set, it may exit early by throwing an <xref:System.OperationCanceledException>.  
-  
+Providing a <xref:System.Threading.CancellationToken> to a <xref:System.Threading.Tasks.Parallel> method enables the operation to be exited early. Code external to the operation may cancel the token, and if the operation observes the token being set, it may exit early by throwing an <xref:System.OperationCanceledException>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,20 +118,20 @@
         <value>An integer that represents the maximum degree of parallelism.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Threading.Tasks.ParallelOptions.MaxDegreeOfParallelism%2A> property affects the number of concurrent operations run by <xref:System.Threading.Tasks.Parallel> method calls that are passed this <xref:System.Threading.Tasks.ParallelOptions> instance. A positive property value limits the number of concurrent operations to the set value. If it is -1,  there is no limit on the number of concurrently running operations.  
-  
- By default, <xref:System.Threading.Tasks.Parallel.For%2A> and <xref:System.Threading.Tasks.Parallel.ForEach%2A> will utilize however many threads the underlying scheduler provides, so changing <xref:System.Threading.Tasks.ParallelOptions.MaxDegreeOfParallelism%2A> from the default only limits how many concurrent tasks will be used.  
-  
- Generally, you do not need to modify this setting. However, you may choose to set it explicitly in advanced usage scenarios such as these:  
-  
+The <xref:System.Threading.Tasks.ParallelOptions.MaxDegreeOfParallelism%2A> property affects the number of concurrent operations run by <xref:System.Threading.Tasks.Parallel> method calls that are passed this <xref:System.Threading.Tasks.ParallelOptions> instance. A positive property value limits the number of concurrent operations to the set value. If it is -1,  there is no limit on the number of concurrently running operations.  
+ 
+By default, <xref:System.Threading.Tasks.Parallel.For%2A> and <xref:System.Threading.Tasks.Parallel.ForEach%2A> will utilize however many threads the underlying scheduler provides, so changing <xref:System.Threading.Tasks.ParallelOptions.MaxDegreeOfParallelism%2A> from the default only limits how many concurrent tasks will be used.  
+ 
+Generally, you do not need to modify this setting. However, you may choose to set it explicitly in advanced usage scenarios such as these:  
+ 
 -   When you know that a particular algorithm you're using won't scale beyond a certain number of cores. You can set the property to avoid wasting cycles on additional cores.  
-  
+ 
 -   When you're running multiple algorithms concurrently and want to manually define how much of the system each algorithm can utilize. You can set a <xref:System.Threading.Tasks.ParallelOptions.MaxDegreeOfParallelism%2A> value for each.  
-  
+ 
 -   When the thread pool's heuristics is unable to determine the right number of threads to use and could end up injecting too many threads. For example, in long-running loop body iterations, the thread pool might not be able to tell the difference between reasonable progress or livelock or deadlock, and might not be able to reclaim threads that were added to improve performance. In this case, you can set the property to ensure that you don't use more than a reasonable number of threads.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to zero or to a value that is less than -1.</exception>

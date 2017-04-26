@@ -39,17 +39,17 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.#ctor" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.AlgorithmIdentifier" /> class by using a set of default parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.Pkcs.AlgorithmIdentifier> class has the following default property values.  
-  
+The <xref:System.Security.Cryptography.Pkcs.AlgorithmIdentifier> class has the following default property values.  
+ 
 |Property|Default value|  
 |--------------|-------------------|  
 |<xref:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.Oid%2A>|1.2.840.113549.3.7 (RSA_DES_EDE3_CBC)|  
 |<xref:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.KeyLength%2A>|The maximum provided by the default Cryptographic Service Provider|  
-  
- To gain the highest degree of control over an application constructing an instance of this class, use one of the constructors that allows the algorithm to be set by passing in its  <xref:System.Security.Cryptography.Oid> object.  This guards against the possibility that the default algorithm could change because of security or other considerations.  
-  
+ 
+To gain the highest degree of control over an application constructing an instance of this class, use one of the constructors that allows the algorithm to be set by passing in its  <xref:System.Security.Cryptography.Oid> object.  This guards against the possibility that the default algorithm could change because of security or other considerations.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
@@ -77,10 +77,10 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.#ctor(System.Security.Cryptography.Oid)" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.AlgorithmIdentifier" /> class with the specified algorithm identifier.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.%23ctor>.  
-  
+For the default property values used with this constructor, see <xref:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.%23ctor>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
@@ -110,10 +110,10 @@
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.#ctor(System.Security.Cryptography.Oid,System.Int32)" /> constructor creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.AlgorithmIdentifier" /> class with the specified algorithm identifier and key length.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `keyLength` parameter is ignored for algorithms that use a fixed key length.  
-  
+The `keyLength` parameter is ignored for algorithms that use a fixed key length.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
@@ -141,10 +141,10 @@
         <value>An int value that represents the key length, in bits.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Due to a limitation in the ASN.1 encoding of the key length, the value of this property is estimated for the RC4 encryption algorithm; it is not guaranteed to be accurate.  
-  
+Due to a limitation in the ASN.1 encoding of the key length, the value of this property is estimated for the RC4 encryption algorithm; it is not guaranteed to be accurate.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -23,14 +23,14 @@
     <summary>Defines an MSBuild task for erasing the contents of temporary files that are used when compiling workflows created using Visual Basic. The contents of the temporary files are erased but the files are not deleted. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- This class extends the `Task` class of Microsoft Build framework. The class should be used when compiling Windows Workflow Foundation types of Visual Basic projects.  
-  
+ 
+This class extends the `Task` class of Microsoft Build framework. The class should be used when compiling Windows Workflow Foundation types of Visual Basic projects.  
+ 
  ]]></format>
     </remarks>
   </Docs>

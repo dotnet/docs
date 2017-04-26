@@ -17,12 +17,12 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Forms.DataVisualization.Charting.Title" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.TitleCollection> class is implemented as the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.Titles%2A> collection property of the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object.  
-  
- <xref:System.Windows.Forms.DataVisualization.Charting.Title> objects can be appended, inserted or removed from the collection at design time and run time.  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.TitleCollection> class is implemented as the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.Titles%2A> collection property of the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object.  
+ 
+<xref:System.Windows.Forms.DataVisualization.Charting.Title> objects can be appended, inserted or removed from the collection at design time and run time.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <returns>Index of the added object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A `string` value that represents the zero-based index of the added title.  
-  
+A `string` value that represents the zero-based index of the added title.  
+ 
  ]]></format>
         </remarks>
       </Docs>

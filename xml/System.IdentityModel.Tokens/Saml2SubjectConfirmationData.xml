@@ -14,12 +14,12 @@
     <summary>Represents the SubjectConfirmationData element and the associated KeyInfoConfirmationDataType defined in [Saml2Core, 2.4.1.2-2.4.1.3].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The SubjectConfirmationData element is a subelement of the SubjectConfirmation element, which is represented by the <xref:System.IdentityModel.Tokens.Saml2SubjectConfirmation> class.  
-  
- For more information about the element that this class represents, see the SAML V2.0 Core specification.  
-  
+The SubjectConfirmationData element is a subelement of the SubjectConfirmation element, which is represented by the <xref:System.IdentityModel.Tokens.Saml2SubjectConfirmation> class.  
+ 
+For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,10 +56,10 @@
         <value>A string that contains the address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Address attribute.  
-  
+The Address attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,10 +81,10 @@
         <value>A <see cref="T:System.IdentityModel.Tokens.Saml2Id" /> that represents the ID.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The InResponseTo attribute.  
-  
+The InResponseTo attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,10 +106,10 @@
         <value>Returns a collection of type <see cref="T:Microsoft.IdentityModel.Tokens.SecurityKeyIdentifier" /> that contains the keys.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of a SubjectConfirmationData element that is constrained with the KeyInfoConfirmationDataType. This data type indicates that the element contains cryptographic keys presented in one or more ds:KeyInfo elements.  
-  
+The content of a SubjectConfirmationData element that is constrained with the KeyInfoConfirmationDataType. This data type indicates that the element contains cryptographic keys presented in one or more ds:KeyInfo elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,10 +131,10 @@
         <value>A nullable <see cref="T:System.DateTime" /> that contains the time instant in UTC.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The NotBefore attribute.  
-  
+The NotBefore attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,10 +156,10 @@
         <value>A nullable <see cref="T:System.DateTime" /> that contains the time instant in UTC.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The NotOnOrAfter attribute.  
-  
+The NotOnOrAfter attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,10 +181,10 @@
         <value>A <see cref="T:System.Uri" /> that specifies the entity or location.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Recipient attribute.  
-  
+The Recipient attribute.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt to set a value that is not <see langword="null" /> and is not an absolute URI occurs.</exception>

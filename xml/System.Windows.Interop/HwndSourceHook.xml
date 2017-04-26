@@ -29,10 +29,10 @@
     <returns>The appropriate return value depends on the particular message. See the message documentation details for the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] message being handled.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Interop.HwndSource.AddHook%2A> method to register this handler to receive messages.  
-  
+Use the <xref:System.Windows.Interop.HwndSource.AddHook%2A> method to register this handler to receive messages.  
+ 
  ]]></format>
     </remarks>
   </Docs>

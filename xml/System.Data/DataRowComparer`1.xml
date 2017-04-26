@@ -26,16 +26,16 @@
     <summary>Compares two <see cref="T:System.Data.DataRow" /> objects for equivalence by using value-based comparison.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class implements the <xref:System.Collections.Generic.IEqualityComparer%601> interface and uses value-based semantics to compare <xref:System.Data.DataRow> objects. This class is required because the default implementations of some set-based operations (such as <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Union%2A>, <xref:System.Linq.Enumerable.Intersect%2A>, and <xref:System.Linq.Enumerable.Except%2A>) use reference-based semantics to compare <xref:System.Data.DataRow> object references, instead of comparing the <xref:System.Data.DataRow> object values. The <xref:System.Data.DataRowComparer%601.Default%2A> class is used to compare the values of the <xref:System.Data.DataRow> objects and does not compare the object references.  
-  
- This class cannot be directly instantiated. Instead, the <xref:System.Data.DataRowComparer%601.Default%2A> property must be used to return a singleton instance of the <xref:System.Data.DataRowComparer%601.Default%2A> class.  
-  
- This class is stateless.  
-  
- This class is sealed and cannot be derived from.  
-  
+This class implements the <xref:System.Collections.Generic.IEqualityComparer%601> interface and uses value-based semantics to compare <xref:System.Data.DataRow> objects. This class is required because the default implementations of some set-based operations (such as <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Union%2A>, <xref:System.Linq.Enumerable.Intersect%2A>, and <xref:System.Linq.Enumerable.Except%2A>) use reference-based semantics to compare <xref:System.Data.DataRow> object references, instead of comparing the <xref:System.Data.DataRow> object values. The <xref:System.Data.DataRowComparer%601.Default%2A> class is used to compare the values of the <xref:System.Data.DataRow> objects and does not compare the object references.  
+ 
+This class cannot be directly instantiated. Instead, the <xref:System.Data.DataRowComparer%601.Default%2A> property must be used to return a singleton instance of the <xref:System.Data.DataRowComparer%601.Default%2A> class.  
+ 
+This class is stateless.  
+ 
+This class is sealed and cannot be derived from.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
         <value>An instance of a <see cref="T:System.Data.DataRowComparer`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only.  
-  
+This property is read-only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,14 +89,14 @@
           <see langword="true" /> if the two <see cref="T:System.Data.DataRow" /> objects have ordered sets of column values that are equal; otherwise,<see langword=" false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The schema of the two <xref:System.Data.DataRow> objects is not checked. If both <xref:System.Data.DataRow> objects have exactly the same ordered set of column values, they are considered equal.  
-  
- Only the current values of the <xref:System.Data.DataRow> objects are checked. The state of the <xref:System.Data.DataRow> objects is not checked.  
-  
- The <xref:System.Data.DataRowComparer.Equals%2A> method is the value-based comparison implementation of the <xref:System.Collections.Generic.IEqualityComparer%601.Equals%2A> method.  
-  
+The schema of the two <xref:System.Data.DataRow> objects is not checked. If both <xref:System.Data.DataRow> objects have exactly the same ordered set of column values, they are considered equal.  
+ 
+Only the current values of the <xref:System.Data.DataRow> objects are checked. The state of the <xref:System.Data.DataRow> objects is not checked.  
+ 
+The <xref:System.Data.DataRowComparer.Equals%2A> method is the value-based comparison implementation of the <xref:System.Collections.Generic.IEqualityComparer%601.Equals%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or both of the source <see cref="T:System.Data.DataRow" /> objects are <see langword="null" />.</exception>
@@ -123,10 +123,10 @@
         <returns>An <see cref="T:System.Int32" /> value representing the hash code of the row.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataRowComparer%601.GetHashCode%2A> method is the value-based comparison implementation of the <xref:System.Collections.Generic.IEqualityComparer%601.GetHashCode%2A> method.  
-  
+The <xref:System.Data.DataRowComparer%601.GetHashCode%2A> method is the value-based comparison implementation of the <xref:System.Collections.Generic.IEqualityComparer%601.GetHashCode%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The source <see cref="T:System.Data.DataRow" /> objects does not belong to a <see cref="T:System.Data.DataTable" />.</exception>

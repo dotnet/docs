@@ -18,10 +18,10 @@
     <summary>Specifies the <see cref="T:System.Windows.Forms.DataGridView" /> entity that owns the cell style that was changed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used by <xref:System.Windows.Forms.DataGridViewCellStyleContentChangedEventArgs> to indicate which part of the <xref:System.Windows.Forms.DataGridView> owns the <xref:System.Windows.Forms.DataGridViewCellStyle> that changed.  
-  
+This enumeration is used by <xref:System.Windows.Forms.DataGridViewCellStyleContentChangedEventArgs> to indicate which part of the <xref:System.Windows.Forms.DataGridView> owns the <xref:System.Windows.Forms.DataGridViewCellStyle> that changed.  
+ 
  ]]></format>
     </remarks>
   </Docs>

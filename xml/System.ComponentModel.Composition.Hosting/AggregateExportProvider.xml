@@ -19,12 +19,12 @@
     <summary>Retrieves exports provided by a collection of <see cref="T:System.ComponentModel.Composition.Hosting.ExportProvider" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,12 +47,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AggregateExportProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider> class consults the providers in the order in which they have been specified when it calls <xref:System.ComponentModel.Composition.Hosting.ExportProvider.GetExports%2A>.  
-  
- The <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider> does not take ownership of the specified providers. That is, it tries to dispose of any of the providers when it is disposed.  
-  
+The <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider> class consults the providers in the order in which they have been specified when it calls <xref:System.ComponentModel.Composition.Hosting.ExportProvider.GetExports%2A>.  
+ 
+The <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider> does not take ownership of the specified providers. That is, it tries to dispose of any of the providers when it is disposed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One or more elements of <paramref name="providers" /> are <see langword="null" />.</exception>
@@ -82,12 +82,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AggregateExportProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider> class consults the providers in the order in which they have been specified when it calls <xref:System.ComponentModel.Composition.Hosting.ExportProvider.GetExports%2A>.  
-  
- The <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider> does not take ownership of the specified providers.  That is, it tries to dispose of any of the providers when it is disposed.  
-  
+The <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider> class consults the providers in the order in which they have been specified when it calls <xref:System.ComponentModel.Composition.Hosting.ExportProvider.GetExports%2A>.  
+ 
+The <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider> does not take ownership of the specified providers.  That is, it tries to dispose of any of the providers when it is disposed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,15 +110,15 @@
         <summary>Releases all resources used by the current instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AggregateExportProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call `Dispose` when you are finished using the <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider>. The `Dispose` method leaves the <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call `Dispose` when you are finished using the <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider>. The `Dispose` method leaves the <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider> was occupying.  
+ 
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.ComponentModel.Composition.Hosting.AggregateExportProvider> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,12 +170,12 @@
         <returns>A collection that contains all the exports that match the specified condition.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implementers should not treat cardinality-related mismatches as errors and are not expected to throw exceptions in those cases.  
-  
- For example, if the import requests exactly one export and the provider has either no matching exports or more than one, the method should return an empty <xref:System.Collections.Generic.IEnumerable%601> collection of <xref:System.ComponentModel.Composition.Primitives.Export>.  
-  
+Implementers should not treat cardinality-related mismatches as errors and are not expected to throw exceptions in those cases.  
+ 
+For example, if the import requests exactly one export and the provider has either no matching exports or more than one, the method should return an empty <xref:System.Collections.Generic.IEnumerable%601> collection of <xref:System.ComponentModel.Composition.Primitives.Export>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

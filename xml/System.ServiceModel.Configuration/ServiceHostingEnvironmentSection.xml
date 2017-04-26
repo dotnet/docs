@@ -14,10 +14,10 @@
     <summary>Represents a configuration section that defines the type that the service hosting environment instantiates for a particular transport.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this section is empty, the default type is used.  
-  
+If this section is empty, the default type is used.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
           <see langword="true" /> if ASP.NET compatibility mode has been enabled for the current application; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to `true`, requests to [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services flow through the ASP.NET HTTP pipeline and communication over non-HTTP protocols is prohibited.  
-  
+When this property is set to `true`, requests to [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services flow through the ASP.NET HTTP pipeline and communication over non-HTTP protocols is prohibited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,14 +164,14 @@
           <see langword="true" /> if multiple IIS bindings per site are enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- IIS consists of web sites, which are containers for virtual applications containing virtual directories. The application in a site can be accessed through one or more IIS binding. An IIS binding provides two pieces of information: a binding protocol and binding information. Binding protocol defines the scheme over which communication occurs, and binding information is the information used to access the site. An example of a binding protocol can be HTTP, whereas binding information can contain an IP address, Port, host header, etc.  
-  
- IIS supports specifying multiple IIS bindings per site, which results in multiple base addresses per scheme. However, a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service hosted under a site allows binding to only one baseAddress per scheme.  
-  
- To enable multiple IIS bindings per site for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service, set this property to `true`. Notice that multiple site binding is supported only for the HTTP protocol. The address of endpoints in the configuration file needs to be a complete URI.  
-  
+IIS consists of web sites, which are containers for virtual applications containing virtual directories. The application in a site can be accessed through one or more IIS binding. An IIS binding provides two pieces of information: a binding protocol and binding information. Binding protocol defines the scheme over which communication occurs, and binding information is the information used to access the site. An example of a binding protocol can be HTTP, whereas binding information can contain an IP address, Port, host header, etc.  
+ 
+IIS supports specifying multiple IIS bindings per site, which results in multiple base addresses per scheme. However, a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service hosted under a site allows binding to only one baseAddress per scheme.  
+ 
+To enable multiple IIS bindings per site for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service, set this property to `true`. Notice that multiple site binding is supported only for the HTTP protocol. The address of endpoints in the configuration file needs to be a complete URI.  
+ 
  ]]></format>
         </remarks>
       </Docs>

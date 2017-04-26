@@ -18,19 +18,19 @@
     <summary>Contains session-state values as well as session-level settings for the current request.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET provides session-state management to enable you to store information associated with a unique browser session across multiple requests. You can store a collection of values referenced by a key name or by numerical index. Access to session values and functionality is available using the <xref:System.Web.SessionState.HttpSessionState> class, which is accessible through the <xref:System.Web.HttpContext.Session%2A> property of the current <xref:System.Web.HttpContext> or the <xref:System.Web.UI.Page.Session%2A> property of the <xref:System.Web.UI.Page>. The <xref:System.Web.SessionState.HttpSessionState> class accesses session-state values and session-level settings by referencing a session-state container, which is an implementation of the <xref:System.Web.SessionState.IHttpSessionState> interface that has been populated with session-state data and added to the <xref:System.Web.HttpContext> of the current request by the session-state module for the <xref:System.Web.HttpApplication>.  
+ASP.NET provides session-state management to enable you to store information associated with a unique browser session across multiple requests. You can store a collection of values referenced by a key name or by numerical index. Access to session values and functionality is available using the <xref:System.Web.SessionState.HttpSessionState> class, which is accessible through the <xref:System.Web.HttpContext.Session%2A> property of the current <xref:System.Web.HttpContext> or the <xref:System.Web.UI.Page.Session%2A> property of the <xref:System.Web.UI.Page>. The <xref:System.Web.SessionState.HttpSessionState> class accesses session-state values and session-level settings by referencing a session-state container, which is an implementation of the <xref:System.Web.SessionState.IHttpSessionState> interface that has been populated with session-state data and added to the <xref:System.Web.HttpContext> of the current request by the session-state module for the <xref:System.Web.HttpApplication>.  
+ 
+The <xref:System.Web.SessionState.HttpSessionState> class calls the <xref:System.Web.SessionState.HttpSessionStateContainer> class, which manages session settings and values in memory.  
+ 
+The <xref:System.Web.SessionState.HttpSessionStateContainer> class is the ASP.NET implementation of the <xref:System.Web.SessionState.IHttpSessionState> interface. The <xref:System.Web.SessionState.HttpSessionStateContainer> class is not intended to be called from application code. If you replace the <xref:System.Web.SessionState.SessionStateModule> with a custom session-state module, you can use the <xref:System.Web.SessionState.HttpSessionStateContainer> class, or supply your own implementation of the <xref:System.Web.SessionState.IHttpSessionState> interface.  
+ 
   
- The <xref:System.Web.SessionState.HttpSessionState> class calls the <xref:System.Web.SessionState.HttpSessionStateContainer> class, which manages session settings and values in memory.  
-  
- The <xref:System.Web.SessionState.HttpSessionStateContainer> class is the ASP.NET implementation of the <xref:System.Web.SessionState.IHttpSessionState> interface. The <xref:System.Web.SessionState.HttpSessionStateContainer> class is not intended to be called from application code. If you replace the <xref:System.Web.SessionState.SessionStateModule> with a custom session-state module, you can use the <xref:System.Web.SessionState.HttpSessionStateContainer> class, or supply your own implementation of the <xref:System.Web.SessionState.IHttpSessionState> interface.  
-  
-   
-  
+ 
 ## Examples  
- For an example of a custom session-state module that uses the <xref:System.Web.SessionState.HttpSessionStateContainer> class as the session-state container for the current request, see the <xref:System.Web.SessionState.SessionStateUtility> class overview.  
-  
+For an example of a custom session-state module that uses the <xref:System.Web.SessionState.HttpSessionStateContainer> class as the session-state container for the current request, see the <xref:System.Web.SessionState.SessionStateUtility> class overview.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,13 +68,13 @@
         <summary>Creates a new <see cref="T:System.Web.SessionState.HttpSessionStateContainer" /> object and initializes it with the specified settings and values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the <xref:System.Web.HttpApplication.AcquireRequestState> event handler for a custom session-state module that populates a new <xref:System.Web.SessionState.HttpSessionStateContainer> object with new or existing session information and adds it to the <xref:System.Web.HttpContext> of the current request using the <xref:System.Web.SessionState.SessionStateUtility.AddHttpSessionStateToContext%2A> method. For a full code example of a custom session-state module, see the <xref:System.Web.SessionState.SessionStateUtility> class overview.  
-  
- [!code-csharp[System.Web.SessionState.SessionStateUtility#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SessionState.SessionStateUtility/CS/mysessionstatemodule.cs#4)]
- [!code-vb[System.Web.SessionState.SessionStateUtility#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SessionState.SessionStateUtility/VB/mysessionstatemodule.vb#4)]  
-  
+The following code example shows the <xref:System.Web.HttpApplication.AcquireRequestState> event handler for a custom session-state module that populates a new <xref:System.Web.SessionState.HttpSessionStateContainer> object with new or existing session information and adds it to the <xref:System.Web.HttpContext> of the current request using the <xref:System.Web.SessionState.SessionStateUtility.AddHttpSessionStateToContext%2A> method. For a full code example of a custom session-state module, see the <xref:System.Web.SessionState.SessionStateUtility> class overview.  
+ 
+[!code-csharp[System.Web.SessionState.SessionStateUtility#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SessionState.SessionStateUtility/CS/mysessionstatemodule.cs#4)]
+[!code-vb[System.Web.SessionState.SessionStateUtility#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SessionState.SessionStateUtility/VB/mysessionstatemodule.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -98,10 +98,10 @@
         <summary>Marks the current session as abandoned.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SessionState.HttpSessionStateContainer.Abandon%2A> method of the <xref:System.Web.SessionState.HttpSessionStateContainer> marks the <xref:System.Web.SessionState.HttpSessionStateContainer.IsAbandoned%2A> property as `true`. A custom session module can then query the <xref:System.Web.SessionState.HttpSessionStateContainer.IsAbandoned%2A> property and remove the session information if the <xref:System.Web.SessionState.HttpSessionStateContainer.IsAbandoned%2A> property is `true`.  
-  
+The <xref:System.Web.SessionState.HttpSessionStateContainer.Abandon%2A> method of the <xref:System.Web.SessionState.HttpSessionStateContainer> marks the <xref:System.Web.SessionState.HttpSessionStateContainer.IsAbandoned%2A> property as `true`. A custom session module can then query the <xref:System.Web.SessionState.HttpSessionStateContainer.IsAbandoned%2A> property and remove the session information if the <xref:System.Web.SessionState.HttpSessionStateContainer.IsAbandoned%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,10 +128,10 @@
         <summary>Adds a new item to the session-state collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `name` parameter refers to an existing session-state item, the existing item is overwritten with the specified `value`.  
-  
+If the `name` parameter refers to an existing session-state item, the existing item is overwritten with the specified `value`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,12 +171,12 @@
         <value>The character-set identifier for the current session.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A character set (code page) is used to interpret multibyte character data, determining character value, and therefore sort order. Code-page settings apply only to multibyte character data, not to Unicode character data.  
-  
- This <xref:System.Web.SessionState.HttpSessionStateContainer.CodePage%2A> property is provided for compatibility with earlier versions of ASP only. If you do not need to maintain backward compatibility with ASP pages, use the <xref:System.Web.HttpResponse.ContentEncoding%2A> property instead.  
-  
+A character set (code page) is used to interpret multibyte character data, determining character value, and therefore sort order. Code-page settings apply only to multibyte character data, not to Unicode character data.  
+ 
+This <xref:System.Web.SessionState.HttpSessionStateContainer.CodePage%2A> property is provided for compatibility with earlier versions of ASP only. If you do not need to maintain backward compatibility with ASP pages, use the <xref:System.Web.HttpResponse.ContentEncoding%2A> property instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
         <value>One of the <see cref="T:System.Web.HttpCookieMode" /> values that indicates whether the application is configured for cookieless sessions. The default is <see cref="F:System.Web.HttpCookieMode.UseCookies" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.Web.SessionState.HttpSessionState.IsCookieless%2A> is `true`, the <xref:System.Web.SessionState.HttpSessionState.CookieMode%2A> property returns <xref:System.Web.HttpCookieMode>; otherwise, the <xref:System.Web.SessionState.HttpSessionState.CookieMode%2A> property returns <xref:System.Web.HttpCookieMode>.  
-  
+When <xref:System.Web.SessionState.HttpSessionState.IsCookieless%2A> is `true`, the <xref:System.Web.SessionState.HttpSessionState.CookieMode%2A> property returns <xref:System.Web.HttpCookieMode>; otherwise, the <xref:System.Web.SessionState.HttpSessionState.CookieMode%2A> property returns <xref:System.Web.HttpCookieMode>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -303,10 +303,10 @@
           <see langword="true" /> if the session is embedded in the URL; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a discussion of cookieless sessions, see the <xref:System.Web.SessionState.HttpSessionState.IsCookieless%2A> property of the <xref:System.Web.SessionState.HttpSessionState> class.  
-  
+For a discussion of cookieless sessions, see the <xref:System.Web.SessionState.HttpSessionState.IsCookieless%2A> property of the <xref:System.Web.SessionState.HttpSessionState> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -366,10 +366,10 @@
         <value>Always <see langword="false" />, because thread-safe <see cref="T:System.Web.SessionState.HttpSessionStateContainer" /> objects are not supported.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Application code does not normally use this property.  
-  
+Application code does not normally use this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -453,12 +453,12 @@
         <value>A <see cref="T:System.Globalization.CultureInfo" /> instance that specifies the culture of the current session.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SessionState.HttpSessionStateContainer.LCID%2A> property is provided for compatibility with earlier versions of ASP only. If you do not need to maintain backward compatibility with ASP pages, use the <xref:System.Globalization.CultureInfo.LCID%2A> property instead.  
-  
- ASP.NET does not store the locale identifier in session state. The <xref:System.Web.SessionState.HttpSessionStateContainer.LCID%2A> property accesses the <xref:System.Globalization.CultureInfo.LCID%2A> property to get and set the identifier.  
-  
+The <xref:System.Web.SessionState.HttpSessionStateContainer.LCID%2A> property is provided for compatibility with earlier versions of ASP only. If you do not need to maintain backward compatibility with ASP pages, use the <xref:System.Globalization.CultureInfo.LCID%2A> property instead.  
+ 
+ASP.NET does not store the locale identifier in session state. The <xref:System.Web.SessionState.HttpSessionStateContainer.LCID%2A> property accesses the <xref:System.Globalization.CultureInfo.LCID%2A> property to get and set the identifier.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -480,10 +480,10 @@
         <value>One of the <see cref="T:System.Web.SessionState.SessionStateMode" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about how to configure your server for <xref:System.Web.SessionState.SessionStateMode> or <xref:System.Web.SessionState.SessionStateMode> session-state storage mode, see [ASP.NET Session State Overview](http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
-  
+For information about how to configure your server for <xref:System.Web.SessionState.SessionStateMode> or <xref:System.Web.SessionState.SessionStateMode> session-state storage mode, see [ASP.NET Session State Overview](http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -508,10 +508,10 @@
         <summary>Deletes an item from the session-state collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the session-state collection does not contain an element with the specified `name`, the collection remains unchanged. No exception is thrown.  
-  
+If the session-state collection does not contain an element with the specified `name`, the collection remains unchanged. No exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -533,10 +533,10 @@
         <summary>Clears all session-state values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.SessionState.HttpSessionStateContainer.RemoveAll%2A> performs the same function as <xref:System.Web.SessionState.HttpSessionStateContainer.Clear%2A>.  
-  
+<xref:System.Web.SessionState.HttpSessionStateContainer.RemoveAll%2A> performs the same function as <xref:System.Web.SessionState.HttpSessionStateContainer.Clear%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -603,12 +603,12 @@
         <value>An <see cref="T:System.Web.HttpStaticObjectsCollection" /> containing objects declared in the Global.asax file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an object on a page does not support serialization and <xref:System.Web.SessionState.HttpSessionStateContainer.Mode%2A> is out-of-process (<xref:System.Web.SessionState.SessionStateMode> or <xref:System.Web.SessionState.SessionStateMode>), the object will not be created and will not be added to this collection.  
-  
- <xref:System.Web.SessionState.HttpSessionStateContainer.StaticObjects%2A> is provided for compatibility with earlier versions of ASP.  
-  
+If an object on a page does not support serialization and <xref:System.Web.SessionState.HttpSessionStateContainer.Mode%2A> is out-of-process (<xref:System.Web.SessionState.SessionStateMode> or <xref:System.Web.SessionState.SessionStateMode>), the object will not be created and will not be added to this collection.  
+ 
+<xref:System.Web.SessionState.HttpSessionStateContainer.StaticObjects%2A> is provided for compatibility with earlier versions of ASP.  
+ 
  ]]></format>
         </remarks>
       </Docs>

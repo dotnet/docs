@@ -14,18 +14,18 @@
     <summary>Provides data for the <see cref="E:System.Windows.Forms.TableLayoutPanel.CellPaint" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> class provides information about the row, column, and bounds of the cell to support painting of the cell in the table.  
+The <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> class provides information about the row, column, and bounds of the cell to support painting of the cell in the table.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to a <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
-  
- [!code-csharp[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#100)]
- [!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#100)]  
-  
+The following example shows how to a <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+ 
+[!code-csharp[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#100)]
+[!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#100)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -73,13 +73,13 @@
         <value>A <see cref="T:System.Drawing.Rectangle" /> representing the size and location of the cell.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to a <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
-  
- [!code-csharp[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#100)]
- [!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#100)]  
-  
+The following example shows how to a <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+ 
+[!code-csharp[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#100)]
+[!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#100)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,13 +101,13 @@
         <value>The column position of the cell.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to a <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
-  
- [!code-csharp[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#100)]
- [!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#100)]  
-  
+The following example shows how to a <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+ 
+[!code-csharp[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#100)]
+[!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#100)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,13 +129,13 @@
         <value>The row position of the cell.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to a <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
-  
- [!code-csharp[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#100)]
- [!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#100)]  
-  
+The following example shows how to a <xref:System.Windows.Forms.TableLayoutCellPaintEventArgs> to customize the appearance of a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+ 
+[!code-csharp[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#100)]
+[!code-vb[System.Windows.Forms.TableLayoutPanel#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#100)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

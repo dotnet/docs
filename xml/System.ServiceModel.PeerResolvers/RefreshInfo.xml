@@ -19,12 +19,12 @@
     <summary>Defines the information for the refresh of a registration entry by a peer resolver service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a peer resolver service refreshes an entry, it sets a new expiry on that entry. An instance of this object must be supplied to the peer resolver service for each peer node that should have its expiration refreshed; otherwise, the entry is marked as stale and will be deleted after a specific interval for cleanup has passed.  
-  
- Instances of this class are primarily used to pass information to the resolver service from a network client of that service.  
-  
+When a peer resolver service refreshes an entry, it sets a new expiry on that entry. An instance of this object must be supplied to the peer resolver service for each peer node that should have its expiration refreshed; otherwise, the entry is marked as stale and will be deleted after a specific interval for cleanup has passed.  
+ 
+Instances of this class are primarily used to pass information to the resolver service from a network client of that service.  
+ 
  ]]></format>
     </remarks>
   </Docs>

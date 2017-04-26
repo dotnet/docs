@@ -19,26 +19,26 @@
     <summary>Represents a text box in a <see cref="T:System.Windows.Forms.ToolStrip" /> that allows the user to enter text.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ToolStripTextBox> is the <xref:System.Windows.Forms.TextBox> optimized for hosting in a <xref:System.Windows.Forms.ToolStrip>. A subset of the hosted control's properties and events are exposed at the <xref:System.Windows.Forms.ToolStripTextBox> level, but the underlying <xref:System.Windows.Forms.TextBox> control is fully accessible through the <xref:System.Windows.Forms.ToolStripTextBox.TextBox%2A> property.  
+<xref:System.Windows.Forms.ToolStripTextBox> is the <xref:System.Windows.Forms.TextBox> optimized for hosting in a <xref:System.Windows.Forms.ToolStrip>. A subset of the hosted control's properties and events are exposed at the <xref:System.Windows.Forms.ToolStripTextBox> level, but the underlying <xref:System.Windows.Forms.TextBox> control is fully accessible through the <xref:System.Windows.Forms.ToolStripTextBox.TextBox%2A> property.  
+ 
+The <xref:System.Windows.Forms.ToolStripTextBox> control allows the user to enter text in an application. This control has additional functionality that is not found in the standard Windows text box control, including multiline editing.  
+ 
+Typically, a <xref:System.Windows.Forms.ToolStripTextBox> control is used to display a single line of text or accept it as input. You can use the <xref:System.Windows.Forms.ToolStripTextBox.Multiline%2A> to enable multiple lines of text to be displayed or entered. Set the <xref:System.Windows.Forms.ToolStripTextBox.AcceptsTab%2A> and <xref:System.Windows.Forms.ToolStripTextBox.AcceptsReturn%2A> properties to `true` to allow greater text manipulation in a multiline <xref:System.Windows.Forms.ToolStripTextBox> control.  
+ 
+You can limit the amount of text entered into a <xref:System.Windows.Forms.ToolStripTextBox> control by setting the <xref:System.Windows.Forms.ToolStripTextBox.MaxLength%2A> property to a specific number of characters. Use the <xref:System.Windows.Forms.ToolStripTextBox.CharacterCasing%2A> property to allow the user to type only uppercase, only lowercase, or a combination of uppercase and lowercase characters into the <xref:System.Windows.Forms.ToolStripTextBox> control.  
+ 
+To restrict text from being entered in a <xref:System.Windows.Forms.ToolStripTextBox> control, you can create an event handler for the <xref:System.Windows.Forms.Control.KeyDown> event in order to validate each character entered in the control. You can also restrict all entry of data in a <xref:System.Windows.Forms.ToolStripTextBox> control by setting the <xref:System.Windows.Forms.ToolStripTextBox.ReadOnly%2A> property to `true`.  
+ 
   
- The <xref:System.Windows.Forms.ToolStripTextBox> control allows the user to enter text in an application. This control has additional functionality that is not found in the standard Windows text box control, including multiline editing.  
-  
- Typically, a <xref:System.Windows.Forms.ToolStripTextBox> control is used to display a single line of text or accept it as input. You can use the <xref:System.Windows.Forms.ToolStripTextBox.Multiline%2A> to enable multiple lines of text to be displayed or entered. Set the <xref:System.Windows.Forms.ToolStripTextBox.AcceptsTab%2A> and <xref:System.Windows.Forms.ToolStripTextBox.AcceptsReturn%2A> properties to `true` to allow greater text manipulation in a multiline <xref:System.Windows.Forms.ToolStripTextBox> control.  
-  
- You can limit the amount of text entered into a <xref:System.Windows.Forms.ToolStripTextBox> control by setting the <xref:System.Windows.Forms.ToolStripTextBox.MaxLength%2A> property to a specific number of characters. Use the <xref:System.Windows.Forms.ToolStripTextBox.CharacterCasing%2A> property to allow the user to type only uppercase, only lowercase, or a combination of uppercase and lowercase characters into the <xref:System.Windows.Forms.ToolStripTextBox> control.  
-  
- To restrict text from being entered in a <xref:System.Windows.Forms.ToolStripTextBox> control, you can create an event handler for the <xref:System.Windows.Forms.Control.KeyDown> event in order to validate each character entered in the control. You can also restrict all entry of data in a <xref:System.Windows.Forms.ToolStripTextBox> control by setting the <xref:System.Windows.Forms.ToolStripTextBox.ReadOnly%2A> property to `true`.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a <xref:System.Windows.Forms.ToolStripTextBox> with various common property settings, including automatic completion options.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#0)]
- [!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#0)]  
-  
+The following code example demonstrates a <xref:System.Windows.Forms.ToolStripTextBox> with various common property settings, including automatic completion options.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#0)]
+[!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -122,18 +122,18 @@
           <see langword="true" /> if the ENTER key creates a new line of text in a multiline version of the control; <see langword="false" /> if the ENTER key activates the default button for the form. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of this property is `false`, the user must press CTRL+ENTER to create a new line in a multiline <xref:System.Windows.Forms.ToolStripTextBox> control. If there is no default button for the form, then the ENTER key will always create a new line of text in the control, no matter what the value of this property.  
+If the value of this property is `false`, the user must press CTRL+ENTER to create a new line in a multiline <xref:System.Windows.Forms.ToolStripTextBox> control. If there is no default button for the form, then the ENTER key will always create a new line of text in the control, no matter what the value of this property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.AcceptsReturn%2A> property .  
-  
- [!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.AcceptsReturn%2A> property .  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,18 +161,18 @@
           <see langword="true" /> if users can enter tabs in a multiline text box using the TAB key; <see langword="false" /> if pressing the TAB key moves the focus. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Forms.ToolStripTextBox.AcceptsTab%2A> property is set to `true`, the user must press CTRL+TAB to move the focus to the next control in the tab order.  
+If the <xref:System.Windows.Forms.ToolStripTextBox.AcceptsTab%2A> property is set to `true`, the user must press CTRL+TAB to move the focus to the next control in the tab order.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.AcceptsTab%2A> property .  
-  
- [!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.AcceptsTab%2A> property .  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,20 +193,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripTextBox.AcceptsTab" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.AcceptsTabChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.AcceptsTabChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#612](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#612)]
- [!code-vb[System.Windows.Forms.EventExamples#612](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#612)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.AcceptsTabChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.AcceptsTabChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#612](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#612)]
+[!code-vb[System.Windows.Forms.EventExamples#612](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#612)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,22 +266,22 @@
         <value>An <see cref="T:System.Windows.Forms.AutoCompleteStringCollection" /> to use with <see cref="P:System.Windows.Forms.TextBox.AutoCompleteSource" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A>, <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode%2A>, and <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> properties to create a <xref:System.Windows.Forms.ToolStripTextBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.ToolStripTextBox> controls in which URLs, addresses, file names, or commands will be frequently entered.  
+Use the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A>, <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode%2A>, and <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> properties to create a <xref:System.Windows.Forms.ToolStripTextBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.ToolStripTextBox> controls in which URLs, addresses, file names, or commands will be frequently entered.  
+ 
+The use of the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> property to `CustomSource` in order to use <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A>.  
+ 
+You must use the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode%2A> and <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> properties together.  
+ 
   
- The use of the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> property to `CustomSource` in order to use <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A>.  
-  
- You must use the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode%2A> and <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> properties together.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A> property .  
-  
- [!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A> property .  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -314,22 +314,22 @@
         <value>One of the <see cref="T:System.Windows.Forms.AutoCompleteMode" /> values. The default is <see cref="F:System.Windows.Forms.AutoCompleteMode.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A>, <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode%2A>, and <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> properties to create a <xref:System.Windows.Forms.ToolStripTextBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.ToolStripTextBox> controls in which URLs, addresses, file names, or commands will be frequently entered.  
+Use the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A>, <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode%2A>, and <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> properties to create a <xref:System.Windows.Forms.ToolStripTextBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.ToolStripTextBox> controls in which URLs, addresses, file names, or commands will be frequently entered.  
+ 
+The use of the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> property to `CustomSource` in order to use <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A>.  
+ 
+You must use the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode%2A> and <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> properties together.  
+ 
   
- The use of the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> property to `CustomSource` in order to use <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A>.  
-  
- You must use the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode%2A> and <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> properties together.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode%2A> property .  
-  
- [!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode%2A> property .  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -362,22 +362,22 @@
         <value>One of the <see cref="T:System.Windows.Forms.AutoCompleteSource" /> values. The default is <see cref="F:System.Windows.Forms.AutoCompleteSource.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A>, <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode%2A>, and <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> properties to create a <xref:System.Windows.Forms.ToolStripTextBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.ToolStripTextBox> controls in which URLs, addresses, file names, or commands will be frequently entered.  
+Use the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A>, <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode%2A>, and <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> properties to create a <xref:System.Windows.Forms.ToolStripTextBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.ToolStripTextBox> controls in which URLs, addresses, file names, or commands will be frequently entered.  
+ 
+The use of the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> property to `CustomSource` in order to use <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A>.  
+ 
+You must use the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode%2A> and <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> properties together.  
+ 
   
- The use of the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> property to `CustomSource` in order to use <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteCustomSource%2A>.  
-  
- You must use the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteMode%2A> and <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> properties together.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> property .  
-  
- [!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.AutoCompleteSource%2A> property .  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -410,10 +410,10 @@
         <value>The background image displayed in the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -446,10 +446,10 @@
         <value>An <see cref="T:System.Windows.Forms.ImageLayout" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -479,18 +479,18 @@
         <value>One of the <see cref="T:System.Windows.Forms.BorderStyle" /> values. The default is <see cref="F:System.Windows.Forms.BorderStyle.Fixed3D" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Windows.Forms.ToolStripTextBox.BorderStyle%2A> property to create borderless and flat style controls, in addition to the default three-dimensional control.  
+You can use the <xref:System.Windows.Forms.ToolStripTextBox.BorderStyle%2A> property to create borderless and flat style controls, in addition to the default three-dimensional control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.BorderStyle%2A> property .  
-  
- [!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.BorderStyle%2A> property .  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -511,20 +511,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripTextBox.BorderStyle" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.BorderStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.BorderStyleChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#613](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#613)]
- [!code-vb[System.Windows.Forms.EventExamples#613](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#613)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.BorderStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.BorderStyleChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#613](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#613)]
+[!code-vb[System.Windows.Forms.EventExamples#613](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#613)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -555,10 +555,10 @@
           <see langword="true" /> if the user can undo the previous operation performed in a text box control; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this method returns `true`, you can call the <xref:System.Windows.Forms.ToolStripTextBox.Undo%2A> method to undo the last operation in a <xref:System.Windows.Forms.ToolStripTextBox>.  
-  
+If this method returns `true`, you can call the <xref:System.Windows.Forms.ToolStripTextBox.Undo%2A> method to undo the last operation in a <xref:System.Windows.Forms.ToolStripTextBox>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -585,18 +585,18 @@
         <value>One of the <see cref="T:System.Windows.Forms.CharacterCasing" /> values. The default is <see cref="F:System.Windows.Forms.CharacterCasing.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Windows.Forms.TextBox.CharacterCasing%2A> property to change the case of characters as required by your application.  
+You can use the <xref:System.Windows.Forms.TextBox.CharacterCasing%2A> property to change the case of characters as required by your application.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.CharacterCasing%2A> property .  
-  
- [!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.CharacterCasing%2A> property .  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -636,10 +636,10 @@
         <summary>Clears information about the most recent operation from the undo buffer of the <see cref="T:System.Windows.Forms.ToolStripTextBox" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to prevent an undo operation from repeating, based on the state of your application.  
-  
+You can use this method to prevent an undo operation from repeating, based on the state of your application.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -661,10 +661,10 @@
         <summary>Copies the current selection in the <see cref="T:System.Windows.Forms.ToolStripTextBox" /> to the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method, instead of using the <xref:System.Windows.Forms.Clipboard> class, to copy text in the <xref:System.Windows.Forms.ToolStripTextBox> and place it in the Clipboard.  
-  
+You can use this method, instead of using the <xref:System.Windows.Forms.Clipboard> class, to copy text in the <xref:System.Windows.Forms.ToolStripTextBox> and place it in the Clipboard.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -686,10 +686,10 @@
         <summary>Moves the current selection in the <see cref="T:System.Windows.Forms.ToolStripTextBox" /> to the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will only cut text from the <xref:System.Windows.Forms.ToolStripTextBox> if text is selected in the control. You can use this method, instead of using the <xref:System.Windows.Forms.Clipboard> class, to copy text in the <xref:System.Windows.Forms.ToolStripTextBox> and move it to the Clipboard.  
-  
+This method will only cut text from the <xref:System.Windows.Forms.ToolStripTextBox> if text is selected in the control. You can use this method, instead of using the <xref:System.Windows.Forms.Clipboard> class, to copy text in the <xref:System.Windows.Forms.ToolStripTextBox> and move it to the Clipboard.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -729,12 +729,12 @@
         <value>The default <see cref="T:System.Drawing.Size" /> of the <see cref="T:System.Windows.Forms.ToolStripTextBox" /> in pixels. The default size is 100 pixels by 25 pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In order to maintain better performance, you should not set the <xref:System.Drawing.Size> of a <xref:System.Windows.Forms.ToolStripTextBox> in its constructor. The preferred method is to override the <xref:System.Windows.Forms.ToolStripTextBox.DefaultSize%2A> property.  
-  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -781,13 +781,13 @@
         <returns>The character at the specified location.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the location specified in the `pt` parameter is outside the client area of the control, the first character of the string closest to the point specified in `pt` is returned. You can use this method to determine which characters are located near a specific point within the control. You can then use this value to perform operations on the text at that location.  
-  
+If the location specified in the `pt` parameter is outside the client area of the control, the first character of the string closest to the point specified in `pt` is returned. You can use this method to determine which characters are located near a specific point within the control. You can then use this value to perform operations on the text at that location.  
+ 
 > [!NOTE]
 >  If the specified location in the `pt` parameter is located on the right side of the client area of the control, the last character of the string closest to the point specified in `pt` is returned.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -813,10 +813,10 @@
         <returns>The zero-based character index at the specified location.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns the character index that is closest to the position specified in the `pt` parameter. The character index is a zero-based index of text in the control, including spaces. You can use this method to determine where in the text the user has the mouse over by passing the mouse coordinates to this method. This can be useful if you want to perform tasks when the mouse pointer hovers over a word in the text of the control.  
-  
+This method returns the character index that is closest to the position specified in the `pt` parameter. The character index is a zero-based index of text in the control, including spaces. You can use this method to determine where in the text the user has the mouse over by passing the mouse coordinates to this method. This can be useful if you want to perform tasks when the mouse pointer hovers over a word in the text of the control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -842,12 +842,12 @@
         <returns>The zero-based character index in the specified line.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `lineNum` parameter is negative, <xref:System.Windows.Forms.ToolStripTextBox.GetFirstCharIndexFromLine%2A> returns 0. If the `lineNum` parameter exceeds the number of lines in the control, <xref:System.Windows.Forms.ToolStripTextBox.GetFirstCharIndexFromLine%2A> returns the first character index for the last line in the control.  
-  
- <xref:System.Windows.Forms.ToolStripTextBox.GetFirstCharIndexFromLine%2A> returns the first character index of a physical line. The physical line is the displayed line, not the assigned line. The number of displayed lines can be greater than the number of assigned lines due to word wrap. For example, if you assign two long lines to a <xref:System.Windows.Forms.RichTextBox> control and set <xref:System.Windows.Forms.ToolStripTextBox.Multiline%2A> and <xref:System.Windows.Forms.ToolStripTextBox.WordWrap%2A> to `true`, the two long assigned lines result in four physical (or displayed lines).  
-  
+If the `lineNum` parameter is negative, <xref:System.Windows.Forms.ToolStripTextBox.GetFirstCharIndexFromLine%2A> returns 0. If the `lineNum` parameter exceeds the number of lines in the control, <xref:System.Windows.Forms.ToolStripTextBox.GetFirstCharIndexFromLine%2A> returns the first character index for the last line in the control.  
+ 
+<xref:System.Windows.Forms.ToolStripTextBox.GetFirstCharIndexFromLine%2A> returns the first character index of a physical line. The physical line is the displayed line, not the assigned line. The number of displayed lines can be greater than the number of assigned lines due to word wrap. For example, if you assign two long lines to a <xref:System.Windows.Forms.RichTextBox> control and set <xref:System.Windows.Forms.ToolStripTextBox.Multiline%2A> and <xref:System.Windows.Forms.ToolStripTextBox.WordWrap%2A> to `true`, the two long assigned lines result in four physical (or displayed lines).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -892,13 +892,13 @@
         <returns>The zero-based line number in which the character index is located.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enables you to determine the line number based on the character index specified in the `index` parameter of the method. The first line of text in the control returns the value zero. The <xref:System.Windows.Forms.ToolStripTextBox.GetLineFromCharIndex%2A> method returns the physical line number where the indexed character is located within the control. For example, if a portion of the first logical line of text in the control wraps to the next line, the <xref:System.Windows.Forms.ToolStripTextBox.GetLineFromCharIndex%2A> method returns 1 if the character at the specified character index has wrapped to the second physical line. If <xref:System.Windows.Forms.ToolStripTextBox.WordWrap%2A> is set to `false`, no portion of the line wraps to the next, and the method returns 0 for the specified character index. You can use this method to determine which line a specific character index is located within. For example, after calling the <xref:System.Windows.Forms.RichTextBox.Find%2A> method to search for text, you can obtain the character index to where the search results are found. You can call this method with the character index returned by the <xref:System.Windows.Forms.RichTextBox.Find%2A> method to determine which line the word was found.  
-  
+This method enables you to determine the line number based on the character index specified in the `index` parameter of the method. The first line of text in the control returns the value zero. The <xref:System.Windows.Forms.ToolStripTextBox.GetLineFromCharIndex%2A> method returns the physical line number where the indexed character is located within the control. For example, if a portion of the first logical line of text in the control wraps to the next line, the <xref:System.Windows.Forms.ToolStripTextBox.GetLineFromCharIndex%2A> method returns 1 if the character at the specified character index has wrapped to the second physical line. If <xref:System.Windows.Forms.ToolStripTextBox.WordWrap%2A> is set to `false`, no portion of the line wraps to the next, and the method returns 0 for the specified character index. You can use this method to determine which line a specific character index is located within. For example, after calling the <xref:System.Windows.Forms.RichTextBox.Find%2A> method to search for text, you can obtain the character index to where the search results are found. You can call this method with the character index returned by the <xref:System.Windows.Forms.RichTextBox.Find%2A> method to determine which line the word was found.  
+ 
 > [!NOTE]
 >  If the character index specified in the `index` parameter is beyond the available number of lines contained within the control, the last line number is returned.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -924,10 +924,10 @@
         <returns>The location of the specified character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enables you to determine where in the control a specific character index is located. You can use this method for such tasks as displaying shortcut menu items or help information for a word in the control. For example, if you wanted to display a menu of options to the user when the user right clicks on a word in the control, you can use this method to determine the position of the word to properly display a <xref:System.Windows.Forms.ContextMenuStrip> control.  
-  
+This method enables you to determine where in the control a specific character index is located. You can use this method for such tasks as displaying shortcut menu items or help information for a word in the control. For example, if you wanted to display a menu of options to the user when the user right clicks on a word in the control, you can use this method to determine the position of the word to properly display a <xref:System.Windows.Forms.ContextMenuStrip> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -977,18 +977,18 @@
           <see langword="true" /> if the selected text does not appear highlighted when the text box control loses focus; <see langword="false" />, if the selected text remains highlighted when the text box control loses focus. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this property to keep text highlighted in a text box control while another form or a dialog box has focus, such as a spelling checker dialog box.  
+You can use this property to keep text highlighted in a text box control while another form or a dialog box has focus, such as a spelling checker dialog box.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.HideSelection%2A> property .  
-  
- [!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.HideSelection%2A> property .  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1009,20 +1009,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripTextBox.HideSelection" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.HideSelectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.HideSelectionChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#614](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#614)]
- [!code-vb[System.Windows.Forms.EventExamples#614](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#614)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.HideSelectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.HideSelectionChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#614](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#614)]
+[!code-vb[System.Windows.Forms.EventExamples#614](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#614)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1055,10 +1055,10 @@
         <value>An array of strings that contains the text in a text box control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each element in the array becomes a line of text in the text box control. If the <xref:System.Windows.Forms.ToolStripTextBox.Multiline%2A> property of the text box control is set to `true` and a newline character appears in the text, the text following the newline character is added to a new element in the array and displayed on a separate line.  
-  
+Each element in the array becomes a line of text in the text box control. If the <xref:System.Windows.Forms.ToolStripTextBox.Multiline%2A> property of the text box control is set to `true` and a newline character appears in the text, the text following the newline character is added to a new element in the array and displayed on a separate line.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1088,18 +1088,18 @@
         <value>The number of characters that can be entered into the control. The default is 32767 characters.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this property to restrict the length of text entered in the control for values such as postal codes and telephone numbers, or to restrict the length of text entered when the data is to be entered in a database. You can limit the text entered into the control to the maximum length of the corresponding field in the database.  
+You can use this property to restrict the length of text entered in the control for values such as postal codes and telephone numbers, or to restrict the length of text entered when the data is to be entered in a database. You can limit the text entered into the control to the maximum length of the corresponding field in the database.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.MaxLength%2A> property .  
-  
- [!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.MaxLength%2A> property .  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1130,10 +1130,10 @@
           <see langword="true" /> if the control's contents have been modified; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this property to determine if the user has modified the contents of the <xref:System.Windows.Forms.ToolStripTextBox> control. You can also set this property in code to indicate that changes were made to the <xref:System.Windows.Forms.ToolStripTextBox> control by the application. This property can be used by validation and data-saving methods to determine if changes were made in a <xref:System.Windows.Forms.ToolStripTextBox> control so the changed contents can be validated or saved.  
-  
+You can use this property to determine if the user has modified the contents of the <xref:System.Windows.Forms.ToolStripTextBox> control. You can also set this property in code to indicate that changes were made to the <xref:System.Windows.Forms.ToolStripTextBox> control by the application. This property can be used by validation and data-saving methods to determine if changes were made in a <xref:System.Windows.Forms.ToolStripTextBox> control so the changed contents can be validated or saved.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1154,20 +1154,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripTextBox.Modified" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.ModifiedChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.ModifiedChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#615](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#615)]
- [!code-vb[System.Windows.Forms.EventExamples#615](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#615)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.ModifiedChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.ModifiedChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#615](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#615)]
+[!code-vb[System.Windows.Forms.EventExamples#615](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#615)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1207,10 +1207,10 @@
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1239,10 +1239,10 @@
         <summary>This event is not relevant to this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant to this class.  
-  
+This event is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1267,12 +1267,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripTextBox.AcceptsTabChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripTextBox.OnAcceptsTabChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripTextBox.OnAcceptsTabChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1300,12 +1300,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripTextBox.BorderStyleChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripTextBox.OnBorderStyleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripTextBox.OnBorderStyleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1333,12 +1333,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripTextBox.HideSelectionChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripTextBox.OnHideSelectionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripTextBox.OnHideSelectionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1366,12 +1366,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripTextBox.ModifiedChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripTextBox.OnModifiedChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripTextBox.OnModifiedChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1399,12 +1399,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripTextBox.MultilineChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripTextBox.OnMultilineChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripTextBox.OnMultilineChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1432,12 +1432,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripTextBox.ReadOnlyChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripTextBox.OnReadOnlyChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripTextBox.OnReadOnlyChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1504,10 +1504,10 @@
         <summary>Replaces the current selection in the text box with the contents of the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripTextBox.Paste%2A> method will only paste text into the control if text is currently stored in the Clipboard.  
-  
+The <xref:System.Windows.Forms.ToolStripTextBox.Paste%2A> method will only paste text into the control if text is currently stored in the Clipboard.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1535,10 +1535,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripTextBox" /> is read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to `true`, the contents of the control cannot be changed by the user at runtime, but you can still change the contents in code. You can use this feature instead of disabling the control with the <xref:System.Windows.Forms.Control.Enabled%2A> property to allow the contents to be copied.  
-  
+When this property is set to `true`, the contents of the control cannot be changed by the user at runtime, but you can still change the contents in code. You can use this feature instead of disabling the control with the <xref:System.Windows.Forms.Control.Enabled%2A> property to allow the contents to be copied.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1559,20 +1559,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripTextBox.ReadOnly" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.ReadOnlyChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.ReadOnlyChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#616](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#616)]
- [!code-vb[System.Windows.Forms.EventExamples#616](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#616)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.ReadOnlyChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.ReadOnlyChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#616](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#616)]
+[!code-vb[System.Windows.Forms.EventExamples#616](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#616)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1594,13 +1594,13 @@
         <summary>Scrolls the contents of the control to the current caret position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enables you to scroll the contents of the control until the caret is within the visible region of the control. If the caret is positioned below the visible region of the control, the <xref:System.Windows.Forms.ToolStripTextBox.ScrollToCaret%2A> method will scroll the contents of the control until the caret is visible at the bottom of the control. If the caret is positioned above the visible region of the control, this method scrolls the contents of the control until the caret is visible at the top of the control. You can use this method in a multiline text box to ensure that the current text entry point is within the visible region of the control.  
-  
+This method enables you to scroll the contents of the control until the caret is within the visible region of the control. If the caret is positioned below the visible region of the control, the <xref:System.Windows.Forms.ToolStripTextBox.ScrollToCaret%2A> method will scroll the contents of the control until the caret is visible at the bottom of the control. If the caret is positioned above the visible region of the control, this method scrolls the contents of the control until the caret is visible at the top of the control. You can use this method in a multiline text box to ensure that the current text entry point is within the visible region of the control.  
+ 
 > [!NOTE]
 >  This method has no effect if the control does not have focus or if the caret is already positioned in the visible region of the control.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1627,13 +1627,13 @@
         <summary>Selects a range of text in the text box.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you want to set the start position to the first character in the control's text, set the `start` parameter to 0. You can use this method to select a substring of text, such as when searching through the text of the control and replacing information.  
-  
+If you want to set the start position to the first character in the control's text, set the `start` parameter to 0. You can use this method to select a substring of text, such as when searching through the text of the control and replacing information.  
+ 
 > [!NOTE]
 >  You can programmatically move the caret within the text box by setting the `start` parameter to the position within the text box where you want the caret to move to and set the `length` parameter to a value of zero (0). The text box must have focus in order for the caret to be moved.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1655,10 +1655,10 @@
         <summary>Selects all text in the text box.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enables you to select all text within the control. You can use this method with the <xref:System.Windows.Forms.TextBoxBase.Cut%2A> method, which requires text to be selected in the control, to cut the entire contents of the control and paste them into the Clipboard.  
-  
+This method enables you to select all text within the control. You can use this method with the <xref:System.Windows.Forms.TextBoxBase.Cut%2A> method, which requires text to be selected in the control, to cut the entire contents of the control and paste them into the Clipboard.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1688,10 +1688,10 @@
         <value>A string that represents the currently selected text in the text box.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can assign text to this property to change the text currently selected in the<xref:System.Windows.Forms.ToolStripTextBox>. If no text is currently selected in the<xref:System.Windows.Forms.ToolStripTextBox>, this property returns a zero-length string.  
-  
+You can assign text to this property to change the text currently selected in the<xref:System.Windows.Forms.ToolStripTextBox>. If no text is currently selected in the<xref:System.Windows.Forms.ToolStripTextBox>, this property returns a zero-length string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1721,13 +1721,13 @@
         <value>The number of characters selected in the<see cref="T:System.Windows.Forms.ToolStripTextBox" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this property to determine if any characters are currently selected in the text box control before performing operations on the selected text. When the value of the <xref:System.Windows.Forms.ToolStripTextBox.SelectionLength%2A> property is set to a value that is larger than the number of characters within the text of the control, the value of the <xref:System.Windows.Forms.ToolStripTextBox.SelectionLength%2A> property is set to the entire length of text within the control minus the value of the <xref:System.Windows.Forms.ToolStripTextBox.SelectionStart%2A> property (if any value is specified for the <xref:System.Windows.Forms.ToolStripTextBox.SelectionStart%2A> property).  
-  
+You can use this property to determine if any characters are currently selected in the text box control before performing operations on the selected text. When the value of the <xref:System.Windows.Forms.ToolStripTextBox.SelectionLength%2A> property is set to a value that is larger than the number of characters within the text of the control, the value of the <xref:System.Windows.Forms.ToolStripTextBox.SelectionLength%2A> property is set to the entire length of text within the control minus the value of the <xref:System.Windows.Forms.ToolStripTextBox.SelectionStart%2A> property (if any value is specified for the <xref:System.Windows.Forms.ToolStripTextBox.SelectionStart%2A> property).  
+ 
 > [!NOTE]
 >  You can programmatically move the caret within the text box by setting the <xref:System.Windows.Forms.ToolStripTextBox.SelectionStart%2A> to the position within the text box where you want the caret to move to and set the <xref:System.Windows.Forms.ToolStripTextBox.SelectionLength%2A> property to a value of zero (0). The text box must have focus in order for the caret to be moved.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1757,13 +1757,13 @@
         <value>The starting position of text selected in the<see cref="T:System.Windows.Forms.ToolStripTextBox" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no text is selected in the control, this property indicates the insertion point for new text. If you set this property to a location beyond the length of the text in the control, the selection start position will be placed after the last character. When text is selected in the text box control, changing this property might decrease the value of the <xref:System.Windows.Forms.ToolStripTextBox.SelectionLength%2A> property. If the remaining text in the control after the position indicated by the <xref:System.Windows.Forms.ToolStripTextBox.SelectionStart%2A> property is less than the value of the <xref:System.Windows.Forms.ToolStripTextBox.SelectionLength%2A> property, the value of the <xref:System.Windows.Forms.ToolStripTextBox.SelectionLength%2A> property is automatically decreased. The value of the <xref:System.Windows.Forms.ToolStripTextBox.SelectionStart%2A> property never causes an increase in the <xref:System.Windows.Forms.ToolStripTextBox.SelectionLength%2A> property.  
-  
+If no text is selected in the control, this property indicates the insertion point for new text. If you set this property to a location beyond the length of the text in the control, the selection start position will be placed after the last character. When text is selected in the text box control, changing this property might decrease the value of the <xref:System.Windows.Forms.ToolStripTextBox.SelectionLength%2A> property. If the remaining text in the control after the position indicated by the <xref:System.Windows.Forms.ToolStripTextBox.SelectionStart%2A> property is less than the value of the <xref:System.Windows.Forms.ToolStripTextBox.SelectionLength%2A> property, the value of the <xref:System.Windows.Forms.ToolStripTextBox.SelectionLength%2A> property is automatically decreased. The value of the <xref:System.Windows.Forms.ToolStripTextBox.SelectionStart%2A> property never causes an increase in the <xref:System.Windows.Forms.ToolStripTextBox.SelectionLength%2A> property.  
+ 
 > [!NOTE]
 >  You can programmatically move the caret within the text box by setting the <xref:System.Windows.Forms.ToolStripTextBox.SelectionStart%2A> to the position within the text box where you want the caret to move to and set the <xref:System.Windows.Forms.ToolStripTextBox.SelectionLength%2A> property to a value of zero (0). The text box must have focus in order for the caret to be moved.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1791,10 +1791,10 @@
           <see langword="true" /> to enable the shortcuts; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripTextBox.ShortcutsEnabled%2A> property to enable or disable the following shortcut key combinations:  
-  
+Use the <xref:System.Windows.Forms.ToolStripTextBox.ShortcutsEnabled%2A> property to enable or disable the following shortcut key combinations:  
+ 
 |Shortcut keys|Shortcut keys|  
 |-------------------|-------------------|  
 |CTRL+Z|CTRL+E|  
@@ -1804,17 +1804,17 @@
 |CTRL+A|CTRL+DELETE|  
 |CTRL+L|SHIFT+DELETE|  
 |CTRL+R|SHIFT+INSERT|  
+ 
+You can override this property to specify other shortcut keys.  
+ 
   
- You can override this property to specify other shortcut keys.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.ShortcutsEnabled%2A> property .  
-  
- [!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.ShortcutsEnabled%2A> property .  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1870,18 +1870,18 @@
         <value>One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> enumeration values that specifies how text is aligned in the control. The default is <see cref="F:System.Windows.Forms.HorizontalAlignment.Left" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this property to align the text within a <xref:System.Windows.Forms.TextBox> to match the layout of text on your form. For example, if your controls are all located on the right side of the form, you can set the <xref:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlign%2A> property to <xref:System.Windows.Forms.HorizontalAlignment>, and the text will be aligned with the right side of the control instead of the default left alignment.  
+You can use this property to align the text within a <xref:System.Windows.Forms.TextBox> to match the layout of text on your form. For example, if your controls are all located on the right side of the form, you can set the <xref:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlign%2A> property to <xref:System.Windows.Forms.HorizontalAlignment>, and the text will be aligned with the right side of the control instead of the default left alignment.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlign%2A> property .  
-  
- [!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripTextBox> common property settings, including the <xref:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlign%2A> property .  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripTextBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripTextBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1902,20 +1902,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlign" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlignChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlignChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#617](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#617)]
- [!code-vb[System.Windows.Forms.EventExamples#617](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#617)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlignChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripTextBox> named `ToolStripTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlignChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#617](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#617)]
+[!code-vb[System.Windows.Forms.EventExamples#617](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#617)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1942,10 +1942,10 @@
         <value>The number of characters contained in the text of the <see cref="T:System.Windows.Forms.ToolStripTextBox" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Windows.Forms.ToolStripTextBox.TextLength%2A> property to determine the number of characters in a string for tasks such as searching for specific strings of text within the text of the control, where knowledge of the total number of characters is needed.  
-  
+You can use the <xref:System.Windows.Forms.ToolStripTextBox.TextLength%2A> property to determine the number of characters in a string for tasks such as searching for specific strings of text within the text of the control, where knowledge of the total number of characters is needed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1967,10 +1967,10 @@
         <summary>Undoes the last edit operation in the text box.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will undo the last clipboard or text change operation performed in the text box control if the <xref:System.Windows.Forms.TextBoxBase.CanUndo%2A> property returns `true`.  
-  
+This method will undo the last clipboard or text change operation performed in the text box control if the <xref:System.Windows.Forms.TextBoxBase.CanUndo%2A> property returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2007,10 +2007,10 @@
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

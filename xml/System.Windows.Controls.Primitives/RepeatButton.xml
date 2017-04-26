@@ -14,29 +14,29 @@
     <summary>Represents a control that raises its <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event repeatedly from the time it is pressed until it is released.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Primitives.RepeatButton> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
-  
- The <xref:System.Windows.Controls.Primitives.RepeatButton> class represents a control that is similar to a <xref:System.Windows.Controls.Button>. However, repeat buttons give you control over when and how the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event occurs. The <xref:System.Windows.Controls.Primitives.RepeatButton> raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event repeatedly from the time it is pressed until it is released. The <xref:System.Windows.Controls.Primitives.RepeatButton.Delay%2A> property determines when the event begins. You can also control the interval of the repetitions with the <xref:System.Windows.Controls.Primitives.RepeatButton.Interval%2A> property.  
-  
+A <xref:System.Windows.Controls.Primitives.RepeatButton> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
+ 
+The <xref:System.Windows.Controls.Primitives.RepeatButton> class represents a control that is similar to a <xref:System.Windows.Controls.Button>. However, repeat buttons give you control over when and how the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event occurs. The <xref:System.Windows.Controls.Primitives.RepeatButton> raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event repeatedly from the time it is pressed until it is released. The <xref:System.Windows.Controls.Primitives.RepeatButton.Delay%2A> property determines when the event begins. You can also control the interval of the repetitions with the <xref:System.Windows.Controls.Primitives.RepeatButton.Interval%2A> property.  
+ 
 ## Customizing the RepeatButton Control  
- To apply the same property settings to multiple <xref:System.Windows.Controls.Primitives.RepeatButton> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Primitives.RepeatButton>, see [RepeatButton Syles and Templates](~/docs/framework/wpf/controls/repeatbutton-syles-and-templates.md).  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
+To apply the same property settings to multiple <xref:System.Windows.Controls.Primitives.RepeatButton> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Primitives.RepeatButton>, see [RepeatButton Syles and Templates](~/docs/framework/wpf/controls/repeatbutton-syles-and-templates.md).  
+ 
+Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ 
 > [!NOTE]
 >  Setting a visual property will only have an effect if that property is both present in Button control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Controls.Primitives.RepeatButton>.  
-  
- [!code-xml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
+The following example shows how to create a <xref:System.Windows.Controls.Primitives.RepeatButton>.  
+ 
+[!code-xml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
 [!code-csharp[RepeatButton#2](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml.cs#2)]
 [!code-vb[RepeatButton#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RepeatButton/VisualBasic/Pane1.xaml.vb#2)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,24 +81,24 @@
         <value>The amount of time, in milliseconds, the <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> waits while it is pressed before it starts repeating. The default is the value of <see cref="P:System.Windows.SystemParameters.KeyboardDelay" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Delay"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.RepeatButton>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.Primitives.RepeatButton.Delay%2A> property to set the time that a <xref:System.Windows.Controls.Primitives.RepeatButton> waits before it starts repeating.  
-  
- [!code-xml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
-  
+The following example shows how to use the <xref:System.Windows.Controls.Primitives.RepeatButton.Delay%2A> property to set the time that a <xref:System.Windows.Controls.Primitives.RepeatButton> waits before it starts repeating.  
+ 
+[!code-xml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,24 +145,24 @@
         <value>The amount of time, in milliseconds, between repeats after repeating starts. The default is the value of <see cref="P:System.Windows.SystemParameters.KeyboardSpeed" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Interval"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.RepeatButton.IntervalProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.Primitives.RepeatButton.Interval%2A> property to set the time between repeats after the <xref:System.Windows.Controls.Primitives.RepeatButton> starts repeating.  
-  
- [!code-xml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
-  
+The following example shows how to use the <xref:System.Windows.Controls.Primitives.RepeatButton.Interval%2A> property to set the time between repeats after the <xref:System.Windows.Controls.Primitives.RepeatButton> starts repeating.  
+ 
+[!code-xml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

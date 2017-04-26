@@ -70,12 +70,12 @@
         <returns>The formatted string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method requires the owner task to have registered its resources either via the <xref:Microsoft.Build.Utilities.Task> base class constructor, or one of the following properties: <xref:Microsoft.Build.Utilities.Task.TaskResources%2A> or <xref:Microsoft.Build.Utilities.AppDomainIsolatedTask.TaskResources%2A>.  
-  
- This method is thread-safe.  
-  
+This method requires the owner task to have registered its resources either via the <xref:Microsoft.Build.Utilities.Task> base class constructor, or one of the following properties: <xref:Microsoft.Build.Utilities.Task.TaskResources%2A> or <xref:Microsoft.Build.Utilities.AppDomainIsolatedTask.TaskResources%2A>.  
+ 
+This method is thread-safe.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -98,10 +98,10 @@
         <value>The shared UI and string resources.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used to load culture-specific resources. Derived classes should register their resources either during construction, or via this property, if they have localized strings.  
-  
+This property is used to load culture-specific resources. Derived classes should register their resources either during construction, or via this property, if they have localized strings.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

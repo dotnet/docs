@@ -100,10 +100,10 @@
         <returns>The interface whose support is being tested.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calls <xref:System.ServiceModel.Channels.BindingElement.GetProperty%60%601%28System.ServiceModel.Channels.BindingContext%29> on the next binding element in the binding context.  
-  
+Calls <xref:System.ServiceModel.Channels.BindingElement.GetProperty%60%601%28System.ServiceModel.Channels.BindingContext%29> on the next binding element in the binding context.  
+ 
  ]]></format>
         </remarks>
       </Docs>

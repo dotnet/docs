@@ -11,10 +11,10 @@
     <summary>The <see cref="T:System.Data.Services.IDataServiceConfiguration" /> is used by [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] to set up the behavior of the service, including rights on entity sets and service operations, limits on the allowed requests, registering types not discoverable by default, and the default verbosity on error handling.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type is used by <xref:System.Data.Services.DataService%601> classes to configure the service by implementing a static method named InitializeService, returning void, and taking a single argument of type <xref:System.Data.Services.IDataServiceConfiguration>. The configuration object may only be used during the call to service initialization.  
-  
+This type is used by <xref:System.Data.Services.DataService%601> classes to configure the service by implementing a static method named InitializeService, returning void, and taking a single argument of type <xref:System.Data.Services.IDataServiceConfiguration>. The configuration object may only be used during the call to service initialization.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,12 +72,12 @@
         <value>The maximum number of segments to expand.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the limit is exceeded, a 400 Bad Request status code is returned. The value specified must be between 0 and `int.MaxValue`; otherwise, an `ArgumentOutOfRangeException` is thrown.  
-  
- The following query string sample has two segments:  
-  
+If the limit is exceeded, a 400 Bad Request status code is returned. The value specified must be between 0 and `int.MaxValue`; otherwise, an `ArgumentOutOfRangeException` is thrown.  
+ 
+The following query string sample has two segments:  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,12 +99,12 @@
         <value>Integer representing the maximum number of supported segments in <c>$expand</c> path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the limit is exceeded, a 400 Bad Request status code is returned. The value specified must be between 0 and `int.MaxValue`; otherwise, an `ArgumentOutOfRangeException` is thrown.  
-  
- The following query string sample has two segments in the first `$expand` path and one in the second `$expand` path:  
-  
+If the limit is exceeded, a 400 Bad Request status code is returned. The value specified must be between 0 and `int.MaxValue`; otherwise, an `ArgumentOutOfRangeException` is thrown.  
+ 
+The following query string sample has two segments in the first `$expand` path and one in the second `$expand` path:  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,10 +188,10 @@
         <summary>Sets the access rules for the specified entity set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default configuration is to deny access to resources. When a service is initialized the access rights must be enabled.  
-  
+The default configuration is to deny access to resources. When a service is initialized the access rights must be enabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -218,10 +218,10 @@
         <summary>Sets the access rules for the specified service operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default configuration is to deny access to resources. When a service is initialized, the access rights must be enabled.  
-  
+The default configuration is to deny access to resources. When a service is initialized, the access rights must be enabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -243,10 +243,10 @@
         <value>A Boolean value that indicates whether verbose errors are returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The response from a specified request can be overridden by the data service developer by overriding the `HandleException` method. Verbose errors should only be enabled during development, not in production environments, for security reasons.  
-  
+The response from a specified request can be overridden by the data service developer by overriding the `HandleException` method. Verbose errors should only be enabled during development, not in production environments, for security reasons.  
+ 
  ]]></format>
         </remarks>
       </Docs>

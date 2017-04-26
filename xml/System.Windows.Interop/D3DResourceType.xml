@@ -13,17 +13,17 @@
     <summary>Specifies the Direct3D surface types that are compatible with the <see cref="T:System.Windows.Interop.D3DImage" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Interop.D3DResourceType> when you assign a Direct3D surface in the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A?displayProperty=fullName> method.  
+Use the <xref:System.Windows.Interop.D3DResourceType> when you assign a Direct3D surface in the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A?displayProperty=fullName> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to specify the <xref:System.Windows.Interop.D3DResourceType> in a call to the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
-  
- [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
-  
+The following code example shows how to specify the <xref:System.Windows.Interop.D3DResourceType> in a call to the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+ 
+[!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

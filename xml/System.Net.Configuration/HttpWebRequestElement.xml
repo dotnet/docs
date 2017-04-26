@@ -14,14 +14,14 @@
     <summary>Represents the maximum length for response headers. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class corresponds to the `maximumResponseHeadersLength` attribute of the [\&lt;httpWebRequest\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/httpwebrequest-element-network-settings.md) configuration element.  
-  
- The information in this class applies to responses to requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
-  
- This class provides programmatic access to information that can be stored in configuration files.  
-  
+This class corresponds to the `maximumResponseHeadersLength` attribute of the [\&lt;httpWebRequest\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/httpwebrequest-element-network-settings.md) configuration element.  
+ 
+The information in this class applies to responses to requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
+ 
+This class provides programmatic access to information that can be stored in configuration files.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -40,10 +40,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.HttpWebRequestElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor adds a <xref:System.Configuration.ConfigurationProperty> object that represents the <xref:System.Net.Configuration.HttpWebRequestElement.MaximumResponseHeadersLength%2A> to the <xref:System.Configuration.ConfigurationElement.Properties%2A> collection.  
-  
+This constructor adds a <xref:System.Configuration.ConfigurationProperty> object that represents the <xref:System.Net.Configuration.HttpWebRequestElement.MaximumResponseHeadersLength%2A> to the <xref:System.Configuration.ConfigurationElement.Properties%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,12 +93,12 @@
         <value>A 32-bit signed integer containing the maximum length in kilobytes (1024 bytes) of the response headers. The default value is 64.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The length is measured in kilobytes (1024 bytes) and it includes the response status line and the response headers, as well as all extra control characters received as part of the HTTP protocol.  
-  
- A value of -1 means no limit is imposed on the response headers; a value of 0 means that all requests will fail.  
-  
+The length is measured in kilobytes (1024 bytes) and it includes the response status line and the response headers, as well as all extra control characters received as part of the HTTP protocol.  
+ 
+A value of -1 means no limit is imposed on the response headers; a value of 0 means that all requests will fail.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,24 +191,24 @@
         <value>Boolean that indicates whether this property has been set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to `false`, the following validations are performed during HTTP parsing:  
-  
+When this property is set to `false`, the following validations are performed during HTTP parsing:  
+ 
 -   In end-of-line code, use CRLF; using CR or LF alone is not allowed.  
-  
+ 
 -   Headers names should not have spaces in them.  
-  
+ 
 -   If multiple status lines exist, all additional status lines are treated as malformed header name/value pairs.  
-  
+ 
 -   The status line must have a status description, in addition to a status code.  
-  
+ 
 -   Header names cannot have non-ASCII chars in them. This validation is performed whether this property is set to `true` or `false`.  
-  
- When a protocol violation occurs, a <xref:System.Net.WebException> exception is thrown with the status set to <xref:System.Net.WebExceptionStatus>. If the `UseUnsafeHeaderParsing` property is set to `true`, validation errors are ignored.  
-  
- Setting this property to `true` has security implications, so it should only be done if backward compatibility with a server is required.  
-  
+ 
+When a protocol violation occurs, a <xref:System.Net.WebException> exception is thrown with the status set to <xref:System.Net.WebExceptionStatus>. If the `UseUnsafeHeaderParsing` property is set to `true`, validation errors are ignored.  
+ 
+Setting this property to `true` has security implications, so it should only be done if backward compatibility with a server is required.  
+ 
  ]]></format>
         </remarks>
       </Docs>

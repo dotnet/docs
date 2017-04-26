@@ -29,35 +29,35 @@
     <summary>Implements a selectable item in a <see cref="T:System.Windows.Controls.TreeView" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.TreeViewItem> is a <xref:System.Windows.Controls.HeaderedItemsControl>, which means its header and collection of objects can be of any type (such as string, image, or panel). For more information, see the <xref:System.Windows.Controls.HeaderedItemsControl> class.  
-  
- <xref:System.Windows.Controls.TreeViewItem> controls can be embedded inside other <xref:System.Windows.Controls.TreeViewItem> controls to create a hierarchy of nodes inside a <xref:System.Windows.Controls.TreeView> control.  
-  
- The following illustration shows a hierarchy of <xref:System.Windows.Controls.TreeViewItem> controls inside a <xref:System.Windows.Controls.TreeView>.  
-  
- ![TreeView illustration](~/add/media/treeviewillustration.JPG "TreeView illustration")  
-  
- To expand or collapse a <xref:System.Windows.Controls.TreeViewItem>, use the <xref:System.Windows.Controls.TreeViewItem.IsExpanded%2A> property.  
-  
- For more information about the <xref:System.Windows.Controls.TreeView> control, see the [TreeView Overview](~/docs/framework/wpf/controls/treeview-overview.md).  
-  
+<xref:System.Windows.Controls.TreeViewItem> is a <xref:System.Windows.Controls.HeaderedItemsControl>, which means its header and collection of objects can be of any type (such as string, image, or panel). For more information, see the <xref:System.Windows.Controls.HeaderedItemsControl> class.  
+ 
+<xref:System.Windows.Controls.TreeViewItem> controls can be embedded inside other <xref:System.Windows.Controls.TreeViewItem> controls to create a hierarchy of nodes inside a <xref:System.Windows.Controls.TreeView> control.  
+ 
+The following illustration shows a hierarchy of <xref:System.Windows.Controls.TreeViewItem> controls inside a <xref:System.Windows.Controls.TreeView>.  
+ 
+![TreeView illustration](~/add/media/treeviewillustration.JPG "TreeView illustration")  
+ 
+To expand or collapse a <xref:System.Windows.Controls.TreeViewItem>, use the <xref:System.Windows.Controls.TreeViewItem.IsExpanded%2A> property.  
+ 
+For more information about the <xref:System.Windows.Controls.TreeView> control, see the [TreeView Overview](~/docs/framework/wpf/controls/treeview-overview.md).  
+ 
 ## Customizing the TreeViewItem Control  
- To apply the same property settings to multiple <xref:System.Windows.Controls.TreeViewItem> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.TreeViewItem>, see [TreeView Styles and Templates](~/docs/framework/wpf/controls/treeview-styles-and-templates.md).  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
+To apply the same property settings to multiple <xref:System.Windows.Controls.TreeViewItem> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.TreeViewItem>, see [TreeView Styles and Templates](~/docs/framework/wpf/controls/treeview-styles-and-templates.md).  
+ 
+Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ 
 > [!NOTE]
 >  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.TreeViewItem> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a hierarchy of <xref:System.Windows.Controls.TreeViewItem> controls in a <xref:System.Windows.Controls.TreeView> control.  
-  
- [!code-xml[TreeViewSnips#EmbeddedTVIs](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#embeddedtvis)]  
-  
+The following example shows how to create a hierarchy of <xref:System.Windows.Controls.TreeViewItem> controls in a <xref:System.Windows.Controls.TreeView> control.  
+ 
+[!code-xml[TreeViewSnips#EmbeddedTVIs](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#embeddedtvis)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -120,29 +120,29 @@
         <summary>Occurs when the <see cref="P:System.Windows.Controls.TreeViewItem.IsExpanded" /> property changes from <see langword="true" /> to <see langword="false" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event occurs when a <xref:System.Windows.Controls.TreeViewItem> is collapsed so that child elements are hidden.  
-  
+This event occurs when a <xref:System.Windows.Controls.TreeViewItem> is collapsed so that child elements are hidden.  
+ 
 <a name="routedEventInfo_Collapsed"></a>   
 ## Routed Event Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.TreeViewItem.CollapsedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to assign an event handler for the <xref:System.Windows.Controls.TreeViewItem.Collapsed> event to a <xref:System.Windows.Controls.TreeViewItem>,and how to define the event handler.  
-  
- [!code-xml[TreeViewSnips#OnCollapsedExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#oncollapsedexpanded)]  
-  
- [!code-csharp[TreeViewSnips#OnCollapsed](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#oncollapsed)]
- [!code-vb[TreeViewSnips#OnCollapsed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#oncollapsed)]  
-  
+The following example shows how to assign an event handler for the <xref:System.Windows.Controls.TreeViewItem.Collapsed> event to a <xref:System.Windows.Controls.TreeViewItem>,and how to define the event handler.  
+ 
+[!code-xml[TreeViewSnips#OnCollapsedExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#oncollapsedexpanded)]  
+ 
+[!code-csharp[TreeViewSnips#OnCollapsed](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#oncollapsed)]
+[!code-vb[TreeViewSnips#OnCollapsed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#oncollapsed)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,10 +163,10 @@
         <summary>Identifies the <see cref="E:System.Windows.Controls.TreeViewItem.Collapsed" /> routed event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.TreeViewItem.Collapsed> routed event.  
-  
+The identifier for the <xref:System.Windows.Controls.TreeViewItem.Collapsed> routed event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,29 +192,29 @@
         <summary>Occurs when the <see cref="P:System.Windows.Controls.TreeViewItem.IsExpanded" /> property changes from <see langword="false" /> to <see langword="true" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event occurs when a <xref:System.Windows.Controls.TreeViewItem> is expanded so that its child elements are visible.  
-  
+This event occurs when a <xref:System.Windows.Controls.TreeViewItem> is expanded so that its child elements are visible.  
+ 
 <a name="routedEventInfo_Expanded"></a>   
 ## Routed Event Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.TreeViewItem.ExpandedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to assign an event handler for the <xref:System.Windows.Controls.TreeViewItem.Expanded> event to a <xref:System.Windows.Controls.TreeViewItem> and how to define the event handler in the code-behind.  
-  
- [!code-xml[TreeViewSnips#OnCollapsedExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#oncollapsedexpanded)]  
-  
- [!code-csharp[TreeViewSnips#OnExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#onexpanded)]
- [!code-vb[TreeViewSnips#OnExpanded](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#onexpanded)]  
-  
+The following example shows how to assign an event handler for the <xref:System.Windows.Controls.TreeViewItem.Expanded> event to a <xref:System.Windows.Controls.TreeViewItem> and how to define the event handler in the code-behind.  
+ 
+[!code-xml[TreeViewSnips#OnCollapsedExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#oncollapsedexpanded)]  
+ 
+[!code-csharp[TreeViewSnips#OnExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#onexpanded)]
+[!code-vb[TreeViewSnips#OnExpanded](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#onexpanded)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,10 +235,10 @@
         <summary>Identifies the <see cref="E:System.Windows.Controls.TreeViewItem.Expanded" /> routed event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.TreeViewItem.Expanded> routed event.  
-  
+The identifier for the <xref:System.Windows.Controls.TreeViewItem.Expanded> routed event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,20 +260,20 @@
         <summary>Expands the <see cref="T:System.Windows.Controls.TreeViewItem" /> control and all its child <see cref="T:System.Windows.Controls.TreeViewItem" /> elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following examples show how to find the selected <xref:System.Windows.Controls.TreeViewItem> and expand it and all of it child items.  The following [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] creates a <xref:System.Windows.Controls.TreeView> and populates it with some data.  
-  
- [!code-xml[TreeViewExpand#1](~/samples/snippets/csharp/VS_Snippets_Wpf/treeviewexpand/csharp/mainwindow.xaml#1)]  
-  
- The following code traverses the <xref:System.Windows.Controls.TreeView> to find the selected <xref:System.Windows.Controls.TreeViewItem> and then calls <xref:System.Windows.Controls.TreeViewItem.ExpandSubtree%2A> to display all child items of the selected <xref:System.Windows.Controls.TreeViewItem>.  
-  
+The following examples show how to find the selected <xref:System.Windows.Controls.TreeViewItem> and expand it and all of it child items.  The following [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] creates a <xref:System.Windows.Controls.TreeView> and populates it with some data.  
+ 
+[!code-xml[TreeViewExpand#1](~/samples/snippets/csharp/VS_Snippets_Wpf/treeviewexpand/csharp/mainwindow.xaml#1)]  
+ 
+The following code traverses the <xref:System.Windows.Controls.TreeView> to find the selected <xref:System.Windows.Controls.TreeViewItem> and then calls <xref:System.Windows.Controls.TreeViewItem.ExpandSubtree%2A> to display all child items of the selected <xref:System.Windows.Controls.TreeViewItem>.  
+ 
 > [!NOTE]
 >  The `GetTreeViewItem` method only works for <xref:System.Windows.Controls.TreeViewItem> controls that are not virtualized.  To learn how to find a <xref:System.Windows.Controls.TreeViewItem> that may be virtualized, see [How to: Find a TreeViewItem in a TreeView](~/docs/framework/wpf/controls/how-to-find-a-treeviewitem-in-a-treeview.md).  
-  
- [!code-csharp[TreeViewExpand#2](~/samples/snippets/csharp/VS_Snippets_Wpf/treeviewexpand/csharp/mainwindow.xaml.cs#2)]
- [!code-vb[TreeViewExpand#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/treeviewexpand/visualbasic/mainwindow.xaml.vb#2)]  
-  
+ 
+[!code-csharp[TreeViewExpand#2](~/samples/snippets/csharp/VS_Snippets_Wpf/treeviewexpand/csharp/mainwindow.xaml.cs#2)]
+[!code-vb[TreeViewExpand#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/treeviewexpand/visualbasic/mainwindow.xaml.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -315,28 +315,28 @@
           <see langword="true" /> if the nested items of a <see cref="T:System.Windows.Controls.TreeViewItem" /> are visible; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The appearance of the button that expands and collapses the <xref:System.Windows.Controls.TreeViewItem> changes when the <xref:System.Windows.Controls.TreeViewItem> is expanded or collapsed. When the <xref:System.Windows.Controls.TreeViewItem.IsExpanded%2A> property value changes from `true` to `false`, the <xref:System.Windows.Controls.TreeViewItem.Collapsed> event occurs. Similarly, the <xref:System.Windows.Controls.TreeViewItem.Expanded> event occurs when the <xref:System.Windows.Controls.TreeViewItem.IsExpanded%2A> property value changes from `false` to `true`.  
-  
+The appearance of the button that expands and collapses the <xref:System.Windows.Controls.TreeViewItem> changes when the <xref:System.Windows.Controls.TreeViewItem> is expanded or collapsed. When the <xref:System.Windows.Controls.TreeViewItem.IsExpanded%2A> property value changes from `true` to `false`, the <xref:System.Windows.Controls.TreeViewItem.Collapsed> event occurs. Similarly, the <xref:System.Windows.Controls.TreeViewItem.Expanded> event occurs when the <xref:System.Windows.Controls.TreeViewItem.IsExpanded%2A> property value changes from `false` to `true`.  
+ 
 <a name="dependencyPropertyInfo_IsExpanded"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.TreeViewItem.IsExpandedProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Controls.TreeViewItem.IsExpanded%2A> property.  
-  
- [!code-xml[TreeViewSnips#OnCollapsedExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#oncollapsedexpanded)]  
-  
- [!code-csharp[TreeViewSnips#IsExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#isexpanded)]
- [!code-vb[TreeViewSnips#IsExpanded](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#isexpanded)]  
-  
+The following example shows how to set the <xref:System.Windows.Controls.TreeViewItem.IsExpanded%2A> property.  
+ 
+[!code-xml[TreeViewSnips#OnCollapsedExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#oncollapsedexpanded)]  
+ 
+[!code-csharp[TreeViewSnips#IsExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#isexpanded)]
+[!code-vb[TreeViewSnips#IsExpanded](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#isexpanded)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -357,10 +357,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.TreeViewItem.IsExpanded" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.TreeViewItem.IsExpanded%2A> dependency property.  
-  
+The identifier for the <xref:System.Windows.Controls.TreeViewItem.IsExpanded%2A> dependency property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -406,27 +406,27 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.TreeViewItem" /> is selected; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Windows.Controls.TreeViewItem.IsSelected%2A> property value changes to `true`, the <xref:System.Windows.Controls.TreeViewItem.Selected> event occurs. When the <xref:System.Windows.Controls.TreeViewItem.IsSelected%2A> property value changes to `false`, the <xref:System.Windows.Controls.TreeViewItem.Unselected> event occurs.  
-  
+When the <xref:System.Windows.Controls.TreeViewItem.IsSelected%2A> property value changes to `true`, the <xref:System.Windows.Controls.TreeViewItem.Selected> event occurs. When the <xref:System.Windows.Controls.TreeViewItem.IsSelected%2A> property value changes to `false`, the <xref:System.Windows.Controls.TreeViewItem.Unselected> event occurs.  
+ 
 <a name="dependencyPropertyInfo_IsSelected"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.TreeViewItem.IsSelectedProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Controls.TreeViewItem.IsSelected%2A> property.  
-  
- [!code-csharp[TreeViewSnips#IsSelected](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#isselected)]
- [!code-vb[TreeViewSnips#IsSelected](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#isselected)]
- [!code-xml[TreeViewSnips#IsSelected](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#isselected)]  
-  
+The following example shows how to set the <xref:System.Windows.Controls.TreeViewItem.IsSelected%2A> property.  
+ 
+[!code-csharp[TreeViewSnips#IsSelected](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#isselected)]
+[!code-vb[TreeViewSnips#IsSelected](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#isselected)]
+[!code-xml[TreeViewSnips#IsSelected](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#isselected)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -447,10 +447,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.TreeViewItem.IsSelected" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.TreeViewItem.IsSelected%2A> dependency property.  
-  
+The identifier for the <xref:System.Windows.Controls.TreeViewItem.IsSelected%2A> dependency property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -484,26 +484,26 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.TreeViewItem" /> has keyboard focus; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the keyboard changes focus from a <xref:System.Windows.Controls.TreeViewItem> to a <xref:System.Windows.Controls.Menu> or a <xref:System.Windows.Controls.ToolBar>, the value of this property remains `true`.  
-  
+If the keyboard changes focus from a <xref:System.Windows.Controls.TreeViewItem> to a <xref:System.Windows.Controls.Menu> or a <xref:System.Windows.Controls.ToolBar>, the value of this property remains `true`.  
+ 
 <a name="dependencyPropertyInfo_IsSelectionActive"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.TreeViewItem.IsSelectionActiveProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to get the value of the <xref:System.Windows.Controls.TreeViewItem.IsSelectionActive%2A> property.  
-  
- [!code-csharp[TreeViewSnips#IsSelectionActive](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#isselectionactive)]
- [!code-vb[TreeViewSnips#IsSelectionActive](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#isselectionactive)]  
-  
+The following example shows how to get the value of the <xref:System.Windows.Controls.TreeViewItem.IsSelectionActive%2A> property.  
+ 
+[!code-csharp[TreeViewSnips#IsSelectionActive](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#isselectionactive)]
+[!code-vb[TreeViewSnips#IsSelectionActive](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#isselectionactive)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -524,10 +524,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.TreeViewItem.IsSelectionActive" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.TreeViewItem.IsSelectionActive%2A> dependency property.  
-  
+The identifier for the <xref:System.Windows.Controls.TreeViewItem.IsSelectionActive%2A> dependency property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -613,12 +613,12 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.GotFocus" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation sets the <xref:System.Windows.Controls.TreeView> selection to the <xref:System.Windows.Controls.TreeViewItem> that is in focus.  
-  
- The <xref:System.Windows.UIElement.GotFocus> event occurs when the value of the <xref:System.Windows.UIElement.IsFocused%2A> property changes from `false` to `true`.  
-  
+This implementation sets the <xref:System.Windows.Controls.TreeView> selection to the <xref:System.Windows.Controls.TreeViewItem> that is in focus.  
+ 
+The <xref:System.Windows.UIElement.GotFocus> event occurs when the value of the <xref:System.Windows.UIElement.IsFocused%2A> property changes from `false` to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -643,10 +643,10 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.Controls.ItemContainerGenerator.ItemsChanged" /> event that occurs when there is a change in the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation adjusts the <xref:System.Windows.Controls.TreeView> selection when there is a change in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection.  
-  
+This implementation adjusts the <xref:System.Windows.Controls.TreeView> selection when there is a change in the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -671,22 +671,22 @@
         <summary>Provides class handling for a <see cref="E:System.Windows.UIElement.KeyDown" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method sets <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true` and collapses or expands the <xref:System.Windows.Controls.TreeViewItem> when one of the following keys is pressed:  
-  
+This method sets <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true` and collapses or expands the <xref:System.Windows.Controls.TreeViewItem> when one of the following keys is pressed:  
+ 
 -   <xref:System.Windows.Input.Key>  
-  
+ 
 -   <xref:System.Windows.Input.Key>  
-  
+ 
 -   <xref:System.Windows.Input.Key>  
-  
+ 
 -   <xref:System.Windows.Input.Key>  
-  
+ 
 -   <xref:System.Windows.Input.Key>  
-  
+ 
 -   <xref:System.Windows.Input.Key>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -711,12 +711,12 @@
         <summary>Provides class handling for a <see cref="E:System.Windows.UIElement.MouseLeftButtonDown" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the mouse <xref:System.Windows.Input.MouseButtonEventArgs.ClickCount%2A> is two, the value of the <xref:System.Windows.Controls.TreeViewItem.IsExpanded%2A> property switches to `true` or `false`, which causes the <xref:System.Windows.Controls.TreeViewItem> to expand or collapse.  
-  
- This implementation marks the <xref:System.Windows.UIElement.MouseLeftButtonDown> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true`.  
-  
+If the mouse <xref:System.Windows.Input.MouseButtonEventArgs.ClickCount%2A> is two, the value of the <xref:System.Windows.Controls.TreeViewItem.IsExpanded%2A> property switches to `true` or `false`, which causes the <xref:System.Windows.Controls.TreeViewItem> to expand or collapse.  
+ 
+This implementation marks the <xref:System.Windows.UIElement.MouseLeftButtonDown> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true`.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -744,10 +744,10 @@
         <summary>Raises the <see cref="E:System.Windows.Controls.TreeViewItem.Selected" /> routed event when the <see cref="P:System.Windows.Controls.TreeViewItem.IsSelected" /> property changes from <see langword="false" /> to <see langword="true" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The control raises the <xref:System.Windows.Controls.TreeViewItem.Selected> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
-  
+The control raises the <xref:System.Windows.Controls.TreeViewItem.Selected> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -775,10 +775,10 @@
         <summary>Raises the <see cref="E:System.Windows.Controls.TreeViewItem.Unselected" /> routed event when the <see cref="P:System.Windows.Controls.TreeViewItem.IsSelected" /> property changes from <see langword="true" /> to <see langword="false" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The control raises the <xref:System.Windows.Controls.TreeViewItem.Unselected> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
-  
+The control raises the <xref:System.Windows.Controls.TreeViewItem.Unselected> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -806,10 +806,10 @@
         <summary>Responds to a change in the visual parent of a <see cref="T:System.Windows.Controls.TreeViewItem" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation updates the <xref:System.Windows.Controls.TreeView> <xref:System.Windows.Controls.TreeView.SelectedItem%2A> if <xref:System.Windows.Controls.TreeViewItem.IsSelected%2A> is `true`.  
-  
+This implementation updates the <xref:System.Windows.Controls.TreeView> <xref:System.Windows.Controls.TreeView.SelectedItem%2A> if <xref:System.Windows.Controls.TreeViewItem.IsSelected%2A> is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -835,29 +835,29 @@
         <summary>Occurs when the <see cref="P:System.Windows.Controls.TreeViewItem.IsSelected" /> property of a <see cref="T:System.Windows.Controls.TreeViewItem" /> changes from <see langword="false" /> to <see langword="true" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The event occurs when a <xref:System.Windows.Controls.TreeViewItem> becomes the selected <xref:System.Windows.Controls.TreeViewItem> in a <xref:System.Windows.Controls.TreeView> control. This event is related to the <xref:System.Windows.Controls.TreeView.SelectedItemChanged> event that occurs when there is a change in the <xref:System.Windows.Controls.TreeView.SelectedItem%2A> property of a <xref:System.Windows.Controls.TreeView> control.  
-  
+The event occurs when a <xref:System.Windows.Controls.TreeViewItem> becomes the selected <xref:System.Windows.Controls.TreeViewItem> in a <xref:System.Windows.Controls.TreeView> control. This event is related to the <xref:System.Windows.Controls.TreeView.SelectedItemChanged> event that occurs when there is a change in the <xref:System.Windows.Controls.TreeView.SelectedItem%2A> property of a <xref:System.Windows.Controls.TreeView> control.  
+ 
 <a name="routedEventInfo_Selected"></a>   
 ## Routed Event Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.TreeViewItem.SelectedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to assign an event handler for the <xref:System.Windows.Controls.TreeViewItem.Selected> event to a <xref:System.Windows.Controls.TreeViewItem>, and how to define the event handler.  
-  
- [!code-xml[TreeViewSnips#Selected](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#selected)]  
-  
- [!code-csharp[TreeViewSnips#ChooseWine](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#choosewine)]
- [!code-vb[TreeViewSnips#ChooseWine](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#choosewine)]  
-  
+The following example shows how to assign an event handler for the <xref:System.Windows.Controls.TreeViewItem.Selected> event to a <xref:System.Windows.Controls.TreeViewItem>, and how to define the event handler.  
+ 
+[!code-xml[TreeViewSnips#Selected](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#selected)]  
+ 
+[!code-csharp[TreeViewSnips#ChooseWine](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#choosewine)]
+[!code-vb[TreeViewSnips#ChooseWine](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#choosewine)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -878,10 +878,10 @@
         <summary>Identified by the <see cref="E:System.Windows.Controls.TreeViewItem.Selected" /> routed event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.TreeViewItem.Selected> routed event.  
-  
+The identifier for the <xref:System.Windows.Controls.TreeViewItem.Selected> routed event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -903,10 +903,10 @@
         <value>An object that represents the viewport and cache sizes of the <see cref="T:System.Windows.Controls.TreeViewItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.TreeViewItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.TreeViewItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -928,10 +928,10 @@
         <value>An object that represents the desired size of the <see cref="P:System.Windows.Controls.HeaderedItemsControl.Header" />, in pixels and in logical units.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.TreeViewItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.TreeViewItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -954,10 +954,10 @@
           <see langword="true" /> if the control's layout pass occurs at a lower priority; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.TreeViewItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.TreeViewItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -979,10 +979,10 @@
         <value>An object that represents the desired size of the control's items, in pixels and in logical units.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.TreeViewItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.TreeViewItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1004,10 +1004,10 @@
         <value>The <see cref="T:System.Windows.Controls.Panel" /> that displays the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> of the <see cref="T:System.Windows.Controls.TreeViewItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.TreeViewItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.TreeViewItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1030,10 +1030,10 @@
           <see langword="true" /> if the owning <see cref="T:System.Windows.Controls.ItemsControl" /> should virtualize its items; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.TreeViewItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.TreeViewItem> instance is cast to an <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1059,29 +1059,29 @@
         <summary>Occurs when the <see cref="P:System.Windows.Controls.TreeViewItem.IsSelected" /> property of a <see cref="T:System.Windows.Controls.TreeViewItem" /> changes from <see langword="true" /> to <see langword="false" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The event occurs when the selection changes from this <xref:System.Windows.Controls.TreeViewItem> to another <xref:System.Windows.Controls.TreeViewItem> in a <xref:System.Windows.Controls.TreeView> control. This event is related to the <xref:System.Windows.Controls.TreeView.SelectedItemChanged> event that occurs when there is a change in the <xref:System.Windows.Controls.TreeView.SelectedItem%2A> property of a <xref:System.Windows.Controls.TreeView> control.  
-  
+The event occurs when the selection changes from this <xref:System.Windows.Controls.TreeViewItem> to another <xref:System.Windows.Controls.TreeViewItem> in a <xref:System.Windows.Controls.TreeView> control. This event is related to the <xref:System.Windows.Controls.TreeView.SelectedItemChanged> event that occurs when there is a change in the <xref:System.Windows.Controls.TreeView.SelectedItem%2A> property of a <xref:System.Windows.Controls.TreeView> control.  
+ 
 <a name="routedEventInfo_Unselected"></a>   
 ## Routed Event Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.TreeViewItem.UnselectedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to assign an event handler for the <xref:System.Windows.Controls.TreeViewItem.Selected> event to a <xref:System.Windows.Controls.TreeViewItem>, and how to define the event handler.  
-  
- [!code-xml[TreeViewSnips#Selected](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#selected)]  
-  
- [!code-csharp[TreeViewSnips#ChangeWineChoice](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#changewinechoice)]
- [!code-vb[TreeViewSnips#ChangeWineChoice](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#changewinechoice)]  
-  
+The following example shows how to assign an event handler for the <xref:System.Windows.Controls.TreeViewItem.Selected> event to a <xref:System.Windows.Controls.TreeViewItem>, and how to define the event handler.  
+ 
+[!code-xml[TreeViewSnips#Selected](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#selected)]  
+ 
+[!code-csharp[TreeViewSnips#ChangeWineChoice](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#changewinechoice)]
+[!code-vb[TreeViewSnips#ChangeWineChoice](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#changewinechoice)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1102,10 +1102,10 @@
         <summary>Identified by the <see cref="E:System.Windows.Controls.TreeViewItem.Unselected" /> routed event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.TreeViewItem.Unselected> routed event.  
-  
+The identifier for the <xref:System.Windows.Controls.TreeViewItem.Unselected> routed event.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,22 +18,22 @@
     <summary>Represents the collection of <see cref="T:System.IO.Log.LogExtent" /> objects associated with a <see cref="T:System.IO.Log.LogStore" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class contains a collection of <xref:System.IO.Log.LogExtent> objects associated with a <xref:System.IO.Log.LogStore>. A <xref:System.IO.Log.LogStore> instance stores its data in a collection of disk extents, represented by <xref:System.IO.Log.LogExtent> instances. A particular <xref:System.IO.Log.LogExtent> is associated with one <xref:System.IO.Log.LogStore>, and <xref:System.IO.Log.LogExtent> objects in the same <xref:System.IO.Log.LogStore> are of identical size. Space is added to and removed from a <xref:System.IO.Log.LogStore> instance in extent increments.  
+This class contains a collection of <xref:System.IO.Log.LogExtent> objects associated with a <xref:System.IO.Log.LogStore>. A <xref:System.IO.Log.LogStore> instance stores its data in a collection of disk extents, represented by <xref:System.IO.Log.LogExtent> instances. A particular <xref:System.IO.Log.LogExtent> is associated with one <xref:System.IO.Log.LogStore>, and <xref:System.IO.Log.LogExtent> objects in the same <xref:System.IO.Log.LogStore> are of identical size. Space is added to and removed from a <xref:System.IO.Log.LogStore> instance in extent increments.  
+ 
+Although <xref:System.IO.Log.LogExtent> objects are represented on disk as files, they should not be moved or deleted as normal files. Rather, you should use the methods provided by this class for adding and deleting <xref:System.IO.Log.LogExtent> instances directly. Extents are usually removed when they no longer contain any active data. However, if the `force` parameter in the <xref:System.IO.Log.LogExtentCollection.Remove%2A> method is `true`, an exception is thrown if they cannot be removed immediately.  
+ 
+You cannot remove the last extent in the <xref:System.IO.Log.LogExtentCollection>, which means that the <xref:System.IO.Log.LogExtentCollection.Count%2A> property cannot be zero after an extent is added.  
+ 
   
- Although <xref:System.IO.Log.LogExtent> objects are represented on disk as files, they should not be moved or deleted as normal files. Rather, you should use the methods provided by this class for adding and deleting <xref:System.IO.Log.LogExtent> instances directly. Extents are usually removed when they no longer contain any active data. However, if the `force` parameter in the <xref:System.IO.Log.LogExtentCollection.Remove%2A> method is `true`, an exception is thrown if they cannot be removed immediately.  
-  
- You cannot remove the last extent in the <xref:System.IO.Log.LogExtentCollection>, which means that the <xref:System.IO.Log.LogExtentCollection.Count%2A> property cannot be zero after an extent is added.  
-  
-   
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.IO.Log.LogExtent> and <xref:System.IO.Log.LogExtentCollection> classes to add and emulate extents in a log sequence.  
-  
- [!code-csharp[S_UELogRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#0)]
- [!code-vb[S_UELogRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#0)]  
-  
+This example shows how to use the <xref:System.IO.Log.LogExtent> and <xref:System.IO.Log.LogExtentCollection> classes to add and emulate extents in a log sequence.  
+ 
+[!code-csharp[S_UELogRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#0)]
+[!code-vb[S_UELogRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,21 +58,21 @@
         <summary>Adds a <see cref="T:System.IO.Log.LogExtent" /> instance to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The size of the newly added <xref:System.IO.Log.LogExtent> instance is the same as the size of existing <xref:System.IO.Log.LogExtent> instances in the collection.  
-  
+The size of the newly added <xref:System.IO.Log.LogExtent> instance is the same as the size of existing <xref:System.IO.Log.LogExtent> instances in the collection.  
+ 
 > [!NOTE]
 >  Do not use this method to add the first <xref:System.IO.Log.LogExtent> to the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.IO.Log.LogExtent> and <xref:System.IO.Log.LogExtentCollection> classes to add and emulate extents in a log sequence.  
-  
- [!code-csharp[S_UELogRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#0)]
- [!code-vb[S_UELogRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#0)]  
-  
+This example shows how to use the <xref:System.IO.Log.LogExtent> and <xref:System.IO.Log.LogExtentCollection> classes to add and emulate extents in a log sequence.  
+ 
+[!code-csharp[S_UELogRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#0)]
+[!code-vb[S_UELogRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#0)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -116,10 +116,10 @@
         <summary>Creates a new <see cref="T:System.IO.Log.LogExtent" /> with the specified size and adds it to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the collection is not empty, the specified size must be at least as large as the size of the other extents in the collection. In this case, the `size` parameter is ignored, and the extent is created with the same size as the other extents in the collection.  
-  
+If the collection is not empty, the specified size must be at least as large as the size of the other extents in the collection. In this case, the `size` parameter is ignored, and the extent is created with the same size as the other extents in the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -166,13 +166,13 @@
         <value>The number of log extents in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.IO.Log.LogExtent> and <xref:System.IO.Log.LogExtentCollection> classes to add and emulate extents in a log sequence.  
-  
- [!code-csharp[S_UELogRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#0)]
- [!code-vb[S_UELogRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#0)]  
-  
+This example shows how to use the <xref:System.IO.Log.LogExtent> and <xref:System.IO.Log.LogExtentCollection> classes to add and emulate extents in a log sequence.  
+ 
+[!code-csharp[S_UELogRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#0)]
+[!code-vb[S_UELogRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#0)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The log store has been disposed of.</exception>
@@ -195,13 +195,13 @@
         <value>The number of free <see cref="T:System.IO.Log.LogExtent" /> instances in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.IO.Log.LogExtent> and <xref:System.IO.Log.LogExtentCollection> classes to add and emulate extents in a log sequence.  
-  
- [!code-csharp[S_UELogRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#0)]
- [!code-vb[S_UELogRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#0)]  
-  
+This example shows how to use the <xref:System.IO.Log.LogExtent> and <xref:System.IO.Log.LogExtentCollection> classes to add and emulate extents in a log sequence.  
+ 
+[!code-csharp[S_UELogRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#0)]
+[!code-vb[S_UELogRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#0)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The log store has been disposed of.</exception>
@@ -261,12 +261,12 @@
         <summary>Removes the specified <see cref="T:System.IO.Log.LogExtent" /> instance from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.IO.Log.LogExtent> instance can be removed from the collection only if it is not part of the active region of the <xref:System.IO.Log.LogStore>. If the `force` parameter is `true` and the extent cannot be removed immediately, an exception is thrown. If the `force` parameter is `false` and the extent cannot be removed immediately, the removal is deferred until it is no longer part of the active region.  
-  
- You cannot remove the last extent in the <xref:System.IO.Log.LogExtentCollection>, which means that the <xref:System.IO.Log.LogExtentCollection.Count%2A> property cannot be zero once an extent has been added.  
-  
+A <xref:System.IO.Log.LogExtent> instance can be removed from the collection only if it is not part of the active region of the <xref:System.IO.Log.LogStore>. If the `force` parameter is `true` and the extent cannot be removed immediately, an exception is thrown. If the `force` parameter is `false` and the extent cannot be removed immediately, the removal is deferred until it is no longer part of the active region.  
+ 
+You cannot remove the last extent in the <xref:System.IO.Log.LogExtentCollection>, which means that the <xref:System.IO.Log.LogExtentCollection.Count%2A> property cannot be zero once an extent has been added.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -309,12 +309,12 @@
         <summary>Removes the <see cref="T:System.IO.Log.LogExtent" /> instance with the specified path from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.IO.Log.LogExtent> instance can be removed from the collection only if it is not part of the active region of the <xref:System.IO.Log.LogStore>. If the `force` parameter is `true` and the extent cannot be removed immediately, an exception is thrown. If the `force` parameter is `false` and the extent cannot be removed immediately, the removal is deferred until it is no longer part of the active region.  
-  
- You cannot remove the last extent in the <xref:System.IO.Log.LogExtentCollection>, which means that the <xref:System.IO.Log.LogExtentCollection.Count%2A> property cannot be zero once an extent has been added.  
-  
+A <xref:System.IO.Log.LogExtent> instance can be removed from the collection only if it is not part of the active region of the <xref:System.IO.Log.LogStore>. If the `force` parameter is `true` and the extent cannot be removed immediately, an exception is thrown. If the `force` parameter is `false` and the extent cannot be removed immediately, the removal is deferred until it is no longer part of the active region.  
+ 
+You cannot remove the last extent in the <xref:System.IO.Log.LogExtentCollection>, which means that the <xref:System.IO.Log.LogExtentCollection.Count%2A> property cannot be zero once an extent has been added.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

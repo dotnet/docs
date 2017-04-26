@@ -14,12 +14,12 @@
     <summary>Represents a read-only collection that can contain many different types of permissions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Read-only permission sets are created from explicit XML and cannot be modified after creation. This restriction ensures that the permission set will be restored to the same XML encoding that it was originally created from. Attempting to add or remove a permission from the <xref:System.Security.ReadOnlyPermissionSet> results in an <xref:System.InvalidOperationException>.  
-  
- Note that any permission you obtain from the <xref:System.Security.ReadOnlyPermissionSet> is only a copy of the permission. If the copy is mutable and is changed, the permission that is in the <xref:System.Security.ReadOnlyPermissionSet> is not changed.  
-  
+Read-only permission sets are created from explicit XML and cannot be modified after creation. This restriction ensures that the permission set will be restored to the same XML encoding that it was originally created from. Attempting to add or remove a permission from the <xref:System.Security.ReadOnlyPermissionSet> results in an <xref:System.InvalidOperationException>.  
+ 
+Note that any permission you obtain from the <xref:System.Security.ReadOnlyPermissionSet> is only a copy of the permission. If the copy is mutable and is changed, the permission that is in the <xref:System.Security.ReadOnlyPermissionSet> is not changed.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -105,10 +105,10 @@
         <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This override of <xref:System.Security.PermissionSet.FromXml%2A?displayProperty=fullName> is intended to be called by the base class <xref:System.Security.PermissionSet> when it is deserializing the permission set. An exception is thrown if you attempt to call <xref:System.Security.ReadOnlyPermissionSet.FromXml%2A> directly. You cannot modify a read-only permission set with a <xref:System.Security.ReadOnlyPermissionSet.FromXml%2A> call.  
-  
+This override of <xref:System.Security.PermissionSet.FromXml%2A?displayProperty=fullName> is intended to be called by the base class <xref:System.Security.PermissionSet> when it is deserializing the permission set. An exception is thrown if you attempt to call <xref:System.Security.ReadOnlyPermissionSet.FromXml%2A> directly. You cannot modify a read-only permission set with a <xref:System.Security.ReadOnlyPermissionSet.FromXml%2A> call.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="et" /> parameter is <see langword="null" />.</exception>
@@ -178,10 +178,10 @@
         <value>Always <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Security.ReadOnlyPermissionSet> is always read-only, so this value must always be `true`.  
-  
+A <xref:System.Security.ReadOnlyPermissionSet> is always read-only, so this value must always be `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

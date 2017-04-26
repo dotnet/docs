@@ -26,24 +26,24 @@
     <summary>Specifies the internal execution behavior of a durable service contract implementation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following items are checked as part of the validation logic for durable services:  
-  
+The following items are checked as part of the validation logic for durable services:  
+ 
 -   All sessionful bindings have a context binding element such as <xref:System.ServiceModel.Configuration.WSHttpContextBindingElement> or <xref:System.ServiceModel.Configuration.NetTcpContextBindingElement>.  
-  
+ 
 -   The <xref:System.ServiceModel.ConcurrencyMode> value must not be set to Multiple.  
-  
+ 
 -   The <xref:System.ServiceModel.InstanceContextMode> value must be PerSession.  
-  
+ 
 -   There must be one sessionful endpoint configured for the service.  
-  
+ 
 -   If the contract disallows sessions, then <xref:System.ServiceModel.Description.DurableOperationAttribute.CanCreateInstance%2A> must be set to `true` for all operations.  
-  
+ 
 -   If the contract permits or allows sessions then all operations for which <xref:System.ServiceModel.Description.DurableOperationAttribute.CanCreateInstance%2A> is set to `true` must be request/response operations, that is <xref:System.Workflow.Activities.OperationInfo.IsOneWay%2A> cannot be set to `true`.  
-  
+ 
 -   If <xref:System.ServiceModel.Description.DurableServiceAttribute.SaveStateInOperationTransaction%2A> is set to `true`, then all operations on the service must either be marked with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=fullName> set to `true` or marked with <xref:System.ServiceModel.TransactionFlowOption?displayProperty=fullName>. Additionally, <xref:System.ServiceModel.ConcurrencyMode> must be set to Single.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -131,12 +131,12 @@
           <see langword="true" /> if the service instance state is persisted using the same transaction; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.ServiceModel.Description.DurableServiceAttribute.SaveStateInOperationTransaction%2A> is set to `true`, then all operations on the service must either be marked with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=fullName> set to `true` or marked with <xref:System.ServiceModel.TransactionFlowOption?displayProperty=fullName>. Additionally, <xref:System.ServiceModel.ConcurrencyMode> must be set to Single.  
-  
- Setting <xref:System.ServiceModel.Description.DurableServiceAttribute.SaveStateInOperationTransaction%2A> to `true` makes the service state transactional with the operation transaction. This means that if the operation's transaction rolls back, the service state also rolls back.  
-  
+If <xref:System.ServiceModel.Description.DurableServiceAttribute.SaveStateInOperationTransaction%2A> is set to `true`, then all operations on the service must either be marked with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=fullName> set to `true` or marked with <xref:System.ServiceModel.TransactionFlowOption?displayProperty=fullName>. Additionally, <xref:System.ServiceModel.ConcurrencyMode> must be set to Single.  
+ 
+Setting <xref:System.ServiceModel.Description.DurableServiceAttribute.SaveStateInOperationTransaction%2A> to `true` makes the service state transactional with the operation transaction. This means that if the operation's transaction rolls back, the service state also rolls back.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,10 +158,10 @@
         <value>An <see cref="T:System.ServiceModel.Description.UnknownExceptionAction" /> enumeration value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.ServiceModel.Description.DurableServiceAttribute> is instantiated, it sets this property value to <xref:System.ServiceModel.Description.UnknownExceptionAction>. This means that whenever an unknown exception is encountered by the durable service, the service instance is terminated and any state information is deleted from the persistence store.  
-  
+When <xref:System.ServiceModel.Description.DurableServiceAttribute> is instantiated, it sets this property value to <xref:System.ServiceModel.Description.UnknownExceptionAction>. This means that whenever an unknown exception is encountered by the durable service, the service instance is terminated and any state information is deleted from the persistence store.  
+ 
  ]]></format>
         </remarks>
       </Docs>

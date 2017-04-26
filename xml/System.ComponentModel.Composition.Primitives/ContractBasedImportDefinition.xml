@@ -210,10 +210,10 @@
         <value>A collection of <see cref="T:System.String" /> objects that contain the metadata names of the <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> objects required by the <see cref="T:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition" />. The default is an empty <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Overrides of this property should never return `null` or return an <xref:System.Collections.Generic.IEnumerable%601> collection that contains an element that is `null`. If the definition does not contain required metadata, return an empty <xref:System.Collections.Generic.IEnumerable%601> collection instead.  
-  
+Overrides of this property should never return `null` or return an <xref:System.Collections.Generic.IEnumerable%601> collection that contains an element that is `null`. If the definition does not contain required metadata, return an empty <xref:System.Collections.Generic.IEnumerable%601> collection instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>

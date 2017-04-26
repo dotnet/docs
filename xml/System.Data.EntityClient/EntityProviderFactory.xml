@@ -18,12 +18,12 @@
     <summary>Represents a set of methods for creating instances of a provider's implementation of the data source classes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.EntityClient.EntityProviderFactory> provides a common entry point to obtain <xref:System.Data.EntityClient> classes.  
-  
- For conceptual information about how to use <xref:System.Data.EntityClient.EntityProviderFactory>, see [ADO.NET Entity Framework](http://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205) and [DbProviderFactories](~/docs/framework/data/adonet/dbproviderfactories.md).  
-  
+The <xref:System.Data.EntityClient.EntityProviderFactory> provides a common entry point to obtain <xref:System.Data.EntityClient> classes.  
+ 
+For conceptual information about how to use <xref:System.Data.EntityClient.EntityProviderFactory>, see [ADO.NET Entity Framework](http://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205) and [DbProviderFactories](~/docs/framework/data/adonet/dbproviderfactories.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>

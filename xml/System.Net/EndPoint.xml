@@ -23,10 +23,10 @@
     <summary>Identifies a network address. This is an <see langword="abstract" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.EndPoint> class provides an `abstract` base class that represents a network resource or service. Descendant classes combine network connection information to form a connection point to a service.  
-  
+The <xref:System.Net.EndPoint> class provides an `abstract` base class that represents a network resource or service. Descendant classes combine network connection information to form a connection point to a service.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,10 +81,10 @@
         <value>One of the <see cref="T:System.Net.Sockets.AddressFamily" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.EndPoint.AddressFamily%2A> property specifies the addressing scheme that is used by the endpoint's underlying network protocol.  
-  
+The <xref:System.Net.EndPoint.AddressFamily%2A> property specifies the addressing scheme that is used by the endpoint's underlying network protocol.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">Any attempt is made to get or set the property when the property is not overridden in a descendant class.</exception>

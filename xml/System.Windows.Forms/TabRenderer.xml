@@ -14,23 +14,23 @@
     <summary>Provides methods used to render a tab control with visual styles. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TabRenderer> class provides a set of `static` methods that can be used to render a tab control with the current visual style of the operating system. Rendering a control refers to drawing the user interface of a control. This is useful if you are drawing a custom control that should have the appearance of the current visual style. To draw a tab control, use the <xref:System.Windows.Forms.TabRenderer.DrawTabPage%2A> method to draw the page, and use the <xref:System.Windows.Forms.TabRenderer.DrawTabItem%2A> method to draw each tab.  
+The <xref:System.Windows.Forms.TabRenderer> class provides a set of `static` methods that can be used to render a tab control with the current visual style of the operating system. Rendering a control refers to drawing the user interface of a control. This is useful if you are drawing a custom control that should have the appearance of the current visual style. To draw a tab control, use the <xref:System.Windows.Forms.TabRenderer.DrawTabPage%2A> method to draw the page, and use the <xref:System.Windows.Forms.TabRenderer.DrawTabItem%2A> method to draw each tab.  
+ 
+If visual styles are enabled in the operating system and visual styles are applied to the client area of application windows, the methods of this class will draw the tab control with the current visual style. Otherwise, the methods and properties of this class will throw an <xref:System.InvalidOperationException>. To determine whether the members of this class can be used, check the value of the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property.  
+ 
+This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=fullName> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab?displayProperty=fullName> class. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
+ 
   
- If visual styles are enabled in the operating system and visual styles are applied to the client area of application windows, the methods of this class will draw the tab control with the current visual style. Otherwise, the methods and properties of this class will throw an <xref:System.InvalidOperationException>. To determine whether the members of this class can be used, check the value of the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property.  
-  
- This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=fullName> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab?displayProperty=fullName> class. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a custom control that uses the <xref:System.Windows.Forms.TabRenderer.DrawTabPage%2A> and <xref:System.Windows.Forms.TabRenderer.DrawTabItem%2A> methods to draw a basic tab control with two tabs.  
-  
- [!code-cpp[System.Windows.Forms.TabRenderer#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/cpp/form1.cpp#0)]
- [!code-csharp[System.Windows.Forms.TabRenderer#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/CS/form1.cs#0)]
- [!code-vb[System.Windows.Forms.TabRenderer#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/VB/form1.vb#0)]  
-  
+The following code example demonstrates how to create a custom control that uses the <xref:System.Windows.Forms.TabRenderer.DrawTabPage%2A> and <xref:System.Windows.Forms.TabRenderer.DrawTabItem%2A> methods to draw a basic tab control with two tabs.  
+ 
+[!code-cpp[System.Windows.Forms.TabRenderer#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/cpp/form1.cpp#0)]
+[!code-csharp[System.Windows.Forms.TabRenderer#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/CS/form1.cs#0)]
+[!code-vb[System.Windows.Forms.TabRenderer#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/VB/form1.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <summary>Draws a tab in the specified state and bounds.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
-  
+Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -103,10 +103,10 @@
         <summary>Draws a tab in the specified state and bounds, and with an optional focus rectangle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
-  
+Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -148,10 +148,10 @@
         <summary>Draws a tab in the specified state and bounds, and with the specified text.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
-  
+Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -196,10 +196,10 @@
         <summary>Draws a tab in the specified state and bounds, with the specified image, and with an optional focus rectangle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
-  
+Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -244,19 +244,19 @@
         <summary>Draws a tab in the specified state and bounds, with the specified text, and with an optional focus rectangle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
+Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.TabRenderer.DrawTabItem%28System.Drawing.Graphics%2CSystem.Drawing.Rectangle%2CSystem.String%2CSystem.Drawing.Font%2CSystem.Boolean%2CSystem.Windows.Forms.VisualStyles.TabItemState%29> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a tab item. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TabRenderer> class.  
-  
- [!code-cpp[System.Windows.Forms.TabRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/cpp/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.TabRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.TabRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/VB/form1.vb#2)]  
-  
+The following code example uses the <xref:System.Windows.Forms.TabRenderer.DrawTabItem%28System.Drawing.Graphics%2CSystem.Drawing.Rectangle%2CSystem.String%2CSystem.Drawing.Font%2CSystem.Boolean%2CSystem.Windows.Forms.VisualStyles.TabItemState%29> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a tab item. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TabRenderer> class.  
+ 
+[!code-cpp[System.Windows.Forms.TabRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/cpp/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.TabRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.TabRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -303,10 +303,10 @@
         <summary>Draws a tab in the specified state and bounds, with the specified text and text formatting, and with an optional focus rectangle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
-  
+Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -355,10 +355,10 @@
         <summary>Draws a tab in the specified state and bounds, with the specified text and image, and with an optional focus rectangle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
-  
+Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -409,10 +409,10 @@
         <summary>Draws a tab in the specified state and bounds; with the specified text, text formatting, and image; and with an optional focus rectangle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
-  
+Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -448,19 +448,19 @@
         <summary>Draws a tab page in the specified bounds.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
+Before calling this method, you should verify that the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property returns `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.TabRenderer.DrawTabPage%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a tab page. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TabRenderer> class.  
-  
- [!code-cpp[System.Windows.Forms.TabRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/cpp/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.TabRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.TabRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/VB/form1.vb#2)]  
-  
+The following code example uses the <xref:System.Windows.Forms.TabRenderer.DrawTabPage%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a tab page. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TabRenderer> class.  
+ 
+[!code-cpp[System.Windows.Forms.TabRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/cpp/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.TabRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.TabRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -492,19 +492,19 @@
           <see langword="true" /> if the user has enabled visual styles in the operating system and visual styles are applied to the client area of application windows; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is `false`, the <xref:System.Windows.Forms.TabRenderer.DrawTabPage%2A> and <xref:System.Windows.Forms.TabRenderer.DrawTabItem%2A> methods will throw an <xref:System.InvalidOperationException>.  
+If this property is `false`, the <xref:System.Windows.Forms.TabRenderer.DrawTabPage%2A> and <xref:System.Windows.Forms.TabRenderer.DrawTabItem%2A> methods will throw an <xref:System.InvalidOperationException>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property to determine whether to use the <xref:System.Windows.Forms.TabRenderer.DrawTabPage%2A> and <xref:System.Windows.Forms.TabRenderer.DrawTabItem%2A> methods. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TabRenderer> class.  
-  
- [!code-cpp[System.Windows.Forms.TabRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/cpp/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.TabRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.TabRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/VB/form1.vb#2)]  
-  
+The following code example uses the <xref:System.Windows.Forms.TabRenderer.IsSupported%2A> property to determine whether to use the <xref:System.Windows.Forms.TabRenderer.DrawTabPage%2A> and <xref:System.Windows.Forms.TabRenderer.DrawTabItem%2A> methods. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TabRenderer> class.  
+ 
+[!code-cpp[System.Windows.Forms.TabRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/cpp/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.TabRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.TabRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TabRenderer/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

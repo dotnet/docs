@@ -14,12 +14,12 @@
     <summary>Provides access to a client script that was previously registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A client script is uniquely identified by its key and its type. Only one script with a given key/type pair can be registered with a page.  
-  
- Client scripts are not guaranteed to be output in the order that they are registered in.  
-  
+A client script is uniquely identified by its key and its type. Only one script with a given key/type pair can be registered with a page.  
+ 
+Client scripts are not guaranteed to be output in the order that they are registered in.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,10 +78,10 @@
         <value>The value of the key. This value can be <see langword="null " />or empty.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A client script is uniquely identified by its key and its type. Only one script with a given key/type pair can be registered with a page.  
-  
+A client script is uniquely identified by its key and its type. Only one script with a given key/type pair can be registered with a page.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,12 +139,12 @@
         <value>The type of the script.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is usually specified by using the type of the control that registered the script.  
-  
- A client script is uniquely identified by its key and its type. Only one script with a given key/type pair can be registered with a page.  
-  
+This property is usually specified by using the type of the control that registered the script.  
+ 
+A client script is uniquely identified by its key and its type. Only one script with a given key/type pair can be registered with a page.  
+ 
  ]]></format>
         </remarks>
       </Docs>

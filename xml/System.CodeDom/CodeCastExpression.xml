@@ -22,21 +22,21 @@
     <summary>Represents an expression cast to a data type or interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeCastExpression> can be used to represent an expression cast to a different data type or interface.  
+<xref:System.CodeDom.CodeCastExpression> can be used to represent an expression cast to a different data type or interface.  
+ 
+The <xref:System.CodeDom.CodeCastExpression.Expression%2A> property indicates the <xref:System.CodeDom.CodeExpression> to cast. The <xref:System.CodeDom.CodeCastExpression.TargetType%2A> property indicates the type to cast to.  
+ 
   
- The <xref:System.CodeDom.CodeCastExpression.Expression%2A> property indicates the <xref:System.CodeDom.CodeExpression> to cast. The <xref:System.CodeDom.CodeCastExpression.TargetType%2A> property indicates the type to cast to.  
-  
-   
-  
+ 
 ## Examples  
- This example demonstrates using a <xref:System.CodeDom.CodeCastExpression> to cast a `System.Int32` value to a `System.Int64` data type.  
-  
- [!code-cpp[CodeCastExpressionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCastExpressionExample/CPP/codecastexpressionexample.cpp#2)]
- [!code-csharp[CodeCastExpressionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCastExpressionExample/CS/codecastexpressionexample.cs#2)]
- [!code-vb[CodeCastExpressionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCastExpressionExample/VB/codecastexpressionexample.vb#2)]  
-  
+This example demonstrates using a <xref:System.CodeDom.CodeCastExpression> to cast a `System.Int32` value to a `System.Int64` data type.  
+ 
+[!code-cpp[CodeCastExpressionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCastExpressionExample/CPP/codecastexpressionexample.cpp#2)]
+[!code-csharp[CodeCastExpressionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCastExpressionExample/CS/codecastexpressionexample.cs#2)]
+[!code-vb[CodeCastExpressionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCastExpressionExample/VB/codecastexpressionexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

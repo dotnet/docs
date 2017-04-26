@@ -14,12 +14,12 @@
     <summary>This exception is used to wrap an unhandled exception from a logger.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception can only be thrown by the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine.  
-  
- This exception stops the build.  
-  
+This exception can only be thrown by the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine.  
+ 
+This exception stops the build.  
+ 
  ]]></format>
     </remarks>
   </Docs>

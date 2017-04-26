@@ -11,10 +11,10 @@
     <summary>Defines methods for accessing the object that a member is defined on.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each wrapped object contains the information for one member (field, property, or method), together with a copy of the instantiated object that the member is defined on. This enables other objects that do not contain the member to store it and then return its value as if it were their own.  
-  
+Each wrapped object contains the information for one member (field, property, or method), together with a copy of the instantiated object that the member is defined on. This enables other objects that do not contain the member to store it and then return its value as if it were their own.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -38,10 +38,10 @@
         <returns>The object that a member is defined on.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each wrapped object contains the information for one member (field, property, or method), together with a copy of the instantiated object that the member is defined on. This enables other objects that do not contain the member to store it and then return its value as if it were their own.  
-  
+Each wrapped object contains the information for one member (field, property, or method), together with a copy of the instantiated object that the member is defined on. This enables other objects that do not contain the member to store it and then return its value as if it were their own.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

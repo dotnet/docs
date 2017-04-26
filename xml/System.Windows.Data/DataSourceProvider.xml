@@ -21,12 +21,12 @@
     <summary>Common base class and contract for <see cref="T:System.Windows.Data.DataSourceProvider" /> objects, which are factories that execute some queries to produce a single object or a list of objects that you can use as binding source objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Data.DataSourceProvider> is a convenience wrapper around an existing data model; it does not replace any data model. A data provider does not attempt to condense the complexity and versatility of a data model such as [!INCLUDE[TLA2#tla_ado](~/includes/tla2sharptla-ado-md.md)] into one single object with a few properties.  
-  
- <xref:System.Windows.Data.DataSourceProvider> is an abstract class. Use one of the derived classes, which are <xref:System.Windows.Data.XmlDataProvider> and <xref:System.Windows.Data.ObjectDataProvider>. The <xref:System.Windows.Data.DataSourceProvider> is aware of the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] threading and dispatcher model. It assumes the thread at creation time to be the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread. Events will get marshaled from a worker thread to the UI thread of the application.  
-  
+<xref:System.Windows.Data.DataSourceProvider> is a convenience wrapper around an existing data model; it does not replace any data model. A data provider does not attempt to condense the complexity and versatility of a data model such as [!INCLUDE[TLA2#tla_ado](~/includes/tla2sharptla-ado-md.md)] into one single object with a few properties.  
+ 
+<xref:System.Windows.Data.DataSourceProvider> is an abstract class. Use one of the derived classes, which are <xref:System.Windows.Data.XmlDataProvider> and <xref:System.Windows.Data.ObjectDataProvider>. The <xref:System.Windows.Data.DataSourceProvider> is aware of the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] threading and dispatcher model. It assumes the thread at creation time to be the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread. Events will get marshaled from a worker thread to the UI thread of the application.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,10 +81,10 @@
         <summary>When overridden in a derived class, this base class calls this method when <see cref="M:System.Windows.Data.DataSourceProvider.InitialLoad" /> or <see cref="M:System.Windows.Data.DataSourceProvider.Refresh" /> has been called. The base class delays the call if refresh is deferred or initial load is disabled.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Notes to Implementers:** You can choose to execute the query on the same thread or on a background thread or using `IsAsynchronous`. When the query is complete, call <xref:System.Windows.Data.DataSourceProvider.OnQueryFinished%2A> to have the public properties updated.  
-  
+**Notes to Implementers:** You can choose to execute the query on the same thread or on a background thread or using `IsAsynchronous`. When the query is complete, call <xref:System.Windows.Data.DataSourceProvider.OnQueryFinished%2A> to have the public properties updated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,10 +111,10 @@
         <value>A value of type <see cref="T:System.Object" /> that is the underlying data object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Windows.Data.DataSourceProvider> is used as the source of a binding, this is the resulting binding source object.  
-  
+When the <xref:System.Windows.Data.DataSourceProvider> is used as the source of a binding, this is the resulting binding source object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,10 +135,10 @@
         <summary>Occurs when the <see cref="P:System.Windows.Data.DataSourceProvider.Data" /> property has a new value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Notes to implementers:** Raise this event when a new data object becomes available on the <xref:System.Windows.Data.DataSourceProvider.Data%2A> property.  
-  
+**Notes to implementers:** Raise this event when a new data object becomes available on the <xref:System.Windows.Data.DataSourceProvider.Data%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
         <returns>An <see cref="T:System.IDisposable" /> object that you can use to dispose of the calling object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The typical usage is to create a `using` scope with this method and then place multiple property changes within the scope. This delays automatic refresh until the defer cycle is exited.  
-  
+The typical usage is to create a `using` scope with this method and then place multiple property changes within the scope. This delays automatic refresh until the defer cycle is exited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -240,14 +240,14 @@
         <summary>Starts the initial query to the underlying data model. The result is returned on the <see cref="P:System.Windows.Data.DataSourceProvider.Data" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is typically called by the binding engine when dependent data bindings are activated. Set <xref:System.Windows.Data.DataSourceProvider.IsInitialLoadEnabled%2A> to `false` to prevent or delay the automatic loading of data.  
-  
- The <xref:System.Windows.Data.DataSourceProvider.InitialLoad%2A> method can be called multiple times. The provider ignores subsequent calls once it is busy executing the initial query; the provider does not restart an already running query when <xref:System.Windows.Data.DataSourceProvider.InitialLoad%2A> is called again. When the query finishes successfully, any <xref:System.Windows.Data.DataSourceProvider.InitialLoad%2A> call still does not re-query data. The <xref:System.Windows.Data.DataSourceProvider.InitialLoad%2A> operation is typically asynchronous, a <xref:System.Windows.Data.DataSourceProvider.DataChanged> event is raised when the <xref:System.Windows.Data.DataSourceProvider.Data%2A> property assumed a new value.  
-  
- The application calls <xref:System.Windows.Data.DataSourceProvider.Refresh%2A> to cause a refresh of the data.  
-  
+This method is typically called by the binding engine when dependent data bindings are activated. Set <xref:System.Windows.Data.DataSourceProvider.IsInitialLoadEnabled%2A> to `false` to prevent or delay the automatic loading of data.  
+ 
+The <xref:System.Windows.Data.DataSourceProvider.InitialLoad%2A> method can be called multiple times. The provider ignores subsequent calls once it is busy executing the initial query; the provider does not restart an already running query when <xref:System.Windows.Data.DataSourceProvider.InitialLoad%2A> is called again. When the query finishes successfully, any <xref:System.Windows.Data.DataSourceProvider.InitialLoad%2A> call still does not re-query data. The <xref:System.Windows.Data.DataSourceProvider.InitialLoad%2A> operation is typically asynchronous, a <xref:System.Windows.Data.DataSourceProvider.DataChanged> event is raised when the <xref:System.Windows.Data.DataSourceProvider.Data%2A> property assumed a new value.  
+ 
+The application calls <xref:System.Windows.Data.DataSourceProvider.Refresh%2A> to cause a refresh of the data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,10 +275,10 @@
           <see langword="false" /> to prevent or delay the automatic loading of data; otherwise, <see langword="true" />. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically the <xref:System.Windows.Data.DataSourceProvider> runs its query and sets its <xref:System.Windows.Data.DataSourceProvider.Data%2A> property the first time it is used by a binding or a <xref:System.Windows.Data.CollectionViewSource>. You can omit this step by setting the <xref:System.Windows.Data.DataSourceProvider.IsInitialLoadEnabled%2A> property to `false`. In this case, the application must explicitly call <xref:System.Windows.Data.DataSourceProvider.Refresh%2A> to cause the provider to obtain its data.  
-  
+Typically the <xref:System.Windows.Data.DataSourceProvider> runs its query and sets its <xref:System.Windows.Data.DataSourceProvider.Data%2A> property the first time it is used by a binding or a <xref:System.Windows.Data.CollectionViewSource>. You can omit this step by setting the <xref:System.Windows.Data.DataSourceProvider.IsInitialLoadEnabled%2A> property to `false`. In this case, the application must explicitly call <xref:System.Windows.Data.DataSourceProvider.Refresh%2A> to cause the provider to obtain its data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -301,10 +301,10 @@
           <see langword="true" /> if there is an outstanding <see cref="M:System.Windows.Data.DataSourceProvider.DeferRefresh" /> in use; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Notes to implementers:** To get the best use out of refresh deferral, do not call <xref:System.Windows.Data.DataSourceProvider.Refresh%2A> when this property is `true`.  
-  
+**Notes to implementers:** To get the best use out of refresh deferral, do not call <xref:System.Windows.Data.DataSourceProvider.Refresh%2A> when this property is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -350,10 +350,10 @@
         <summary>Derived classes call this method to indicate that a query has finished.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This callback can be called from any thread. This implementation marshals back the result to the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread before setting any of the public properties and before raising any events.  
-  
+This callback can be called from any thread. This implementation marshals back the result to the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread before setting any of the public properties and before raising any events.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -384,10 +384,10 @@
         <summary>Derived classes call this method to indicate that a query has finished.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This callback can be called from any thread. This implementation marshals back the result to the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread before setting any of the public properties and before raising any events.  
-  
+This callback can be called from any thread. This implementation marshals back the result to the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread before setting any of the public properties and before raising any events.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -426,10 +426,10 @@
         <summary>Initiates a refresh operation to the underlying data model. The result is returned on the <see cref="P:System.Windows.Data.DataSourceProvider.Data" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A refresh operation is typically asynchronous, a <xref:System.Windows.Data.DataSourceProvider.DataChanged> event is raised when the <xref:System.Windows.Data.DataSourceProvider.Data%2A> property assumed a new value. If the refresh operation fails, the <xref:System.Windows.Data.DataSourceProvider.Data%2A> property is set to `null`; the <xref:System.Windows.Data.DataSourceProvider.Error%2A> property is set with the error exception. The application can call <xref:System.Windows.Data.DataSourceProvider.Refresh%2A> while a previous refresh is still underway. Calling <xref:System.Windows.Data.DataSourceProvider.Refresh%2A> twice raises the <xref:System.Windows.Data.DataSourceProvider.DataChanged> event twice.  
-  
+A refresh operation is typically asynchronous, a <xref:System.Windows.Data.DataSourceProvider.DataChanged> event is raised when the <xref:System.Windows.Data.DataSourceProvider.Data%2A> property assumed a new value. If the refresh operation fails, the <xref:System.Windows.Data.DataSourceProvider.Data%2A> property is set to `null`; the <xref:System.Windows.Data.DataSourceProvider.Error%2A> property is set with the error exception. The application can call <xref:System.Windows.Data.DataSourceProvider.Refresh%2A> while a previous refresh is still underway. Calling <xref:System.Windows.Data.DataSourceProvider.Refresh%2A> twice raises the <xref:System.Windows.Data.DataSourceProvider.DataChanged> event twice.  
+ 
  ]]></format>
         </remarks>
       </Docs>

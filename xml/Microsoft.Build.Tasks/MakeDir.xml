@@ -78,10 +78,10 @@
         <value>The directories that the <c>MakeDir</c> task created.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If some directories could not be created, this property may not contain all of the items that were passed into the <xref:Microsoft.Build.Tasks.MakeDir.Directories%2A> property.  
-  
+If some directories could not be created, this property may not contain all of the items that were passed into the <xref:Microsoft.Build.Tasks.MakeDir.Directories%2A> property.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

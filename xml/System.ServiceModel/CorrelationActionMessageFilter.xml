@@ -112,10 +112,10 @@
           <see langword="true" /> if the action matches; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message’s action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message’s <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
-  
+A message’s action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message’s <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,10 +142,10 @@
           <see langword="true" /> if the action matches; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message’s action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message’s <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
-  
+A message’s action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message’s <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,10 +168,10 @@
         <returns>The current <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.ServiceModel.CorrelationActionMessageFilter.Action%2A> property is set, its value is used to build the string representation; otherwise, the base class <xref:System.Object.ToString%2A> value is returned.  
-  
+If the <xref:System.ServiceModel.CorrelationActionMessageFilter.Action%2A> property is set, its value is used to build the string representation; otherwise, the base class <xref:System.Object.ToString%2A> value is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,10 +185,10 @@
         <summary>Determines whether a message’s action matches the <see cref="P:System.ServiceModel.CorrelationActionMessageFilter.Action" /> of this <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message’s action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message’s <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
-  
+A message’s action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message’s <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

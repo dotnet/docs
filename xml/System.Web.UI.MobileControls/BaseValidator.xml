@@ -35,12 +35,12 @@
     <summary>Provides the core implementation for all validation controls derived from this class. As an abstract class, it cannot be instantiated. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.BaseValidator> class inherits from the <xref:System.Web.UI.MobileControls.TextControl> base class, and thus has a <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property. In the event of an invalid entry, the validator displays the value of the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property. If the property is not set, the validator displays the value of the <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> property instead; this is the text that is shown in the <xref:System.Web.UI.MobileControls.ValidationSummary> control. This behavior is consistent with Web Forms validators.  
-  
- Of the ASP.NET mobile controls, those that support validation are the <xref:System.Web.UI.MobileControls.TextBox> control (its <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property) and the <xref:System.Web.UI.MobileControls.SelectionList> control (its <xref:System.Web.UI.MobileControls.SelectionList.SelectedIndex%2A> property). Other controls can participate in validation by including a <xref:System.Web.UI.ValidationPropertyAttribute> attribute. For more information, see the [How to: Validate Against a Specific Value for ASP.NET Server Controls](http://msdn.microsoft.com/library/3db6f7e6-ad52-42cf-a429-c2aaa7d64ed7) documentation.  
-  
+The <xref:System.Web.UI.MobileControls.BaseValidator> class inherits from the <xref:System.Web.UI.MobileControls.TextControl> base class, and thus has a <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property. In the event of an invalid entry, the validator displays the value of the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property. If the property is not set, the validator displays the value of the <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> property instead; this is the text that is shown in the <xref:System.Web.UI.MobileControls.ValidationSummary> control. This behavior is consistent with Web Forms validators.  
+ 
+Of the ASP.NET mobile controls, those that support validation are the <xref:System.Web.UI.MobileControls.TextBox> control (its <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property) and the <xref:System.Web.UI.MobileControls.SelectionList> control (its <xref:System.Web.UI.MobileControls.SelectionList.SelectedIndex%2A> property). Other controls can participate in validation by including a <xref:System.Web.UI.ValidationPropertyAttribute> attribute. For more information, see the [How to: Validate Against a Specific Value for ASP.NET Server Controls](http://msdn.microsoft.com/library/3db6f7e6-ad52-42cf-a429-c2aaa7d64ed7) documentation.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -60,10 +60,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.BaseValidator" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although you cannot directly construct a <xref:System.Web.UI.MobileControls.BaseValidator> class, you can call this constructor from the constructor of an inheriting class.  
-  
+Although you cannot directly construct a <xref:System.Web.UI.MobileControls.BaseValidator> class, you can call this constructor from the constructor of an inheriting class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,10 +141,10 @@
         <value>The ID of the control to validate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws an exception during pre-rendering if the ID is empty or not valid.  
-  
+Throws an exception during pre-rendering if the ID is empty or not valid.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,10 +186,10 @@
         <returns>An aggregated Web validator.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates and returns the corresponding Web Controls validator object. The default implementation of this method in a <xref:System.Web.UI.WebControls.BaseValidator> object returns null.  
-  
+Creates and returns the corresponding Web Controls validator object. The default implementation of this method in a <xref:System.Web.UI.WebControls.BaseValidator> object returns null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -219,12 +219,12 @@
         <value>The display behavior of the error message of the validation control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.BaseValidator.Display%2A> property supports only the <xref:System.Web.UI.WebControls.ValidatorDisplay> value.  
-  
- The .NET Framework Web Forms <xref:System.Web.UI.WebControls.ValidatorDisplay> enumeration represents the different display behaviors of the error messages in validation controls.  
-  
+The <xref:System.Web.UI.MobileControls.BaseValidator.Display%2A> property supports only the <xref:System.Web.UI.WebControls.ValidatorDisplay> value.  
+ 
+The .NET Framework Web Forms <xref:System.Web.UI.WebControls.ValidatorDisplay> enumeration represents the different display behaviors of the error messages in validation controls.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,10 +254,10 @@
         <value>The text that will be used for the error message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used in two ways. First, if there is no value for the <xref:System.Web.UI.MobileControls.BaseValidator.Display%2A> property, the value of the <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> property is used in its place. Second, when the <xref:System.Web.UI.MobileControls.ValidationSummary> control is used, the summary uses the value of the <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> property for each validator that represents an invalid control.  
-  
+This property is used in two ways. First, if there is no value for the <xref:System.Web.UI.MobileControls.BaseValidator.Display%2A> property, the value of the <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> property is used in its place. Second, when the <xref:System.Web.UI.MobileControls.ValidationSummary> control is used, the summary uses the value of the <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> property for each validator that represents an invalid control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -281,10 +281,10 @@
           <see langword="true" /> if the validator is valid, otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override this method with a derived method to provide your own validation logic when implementing your own validator controls.  
-  
+You can override this method with a derived method to provide your own validation logic when implementing your own validator controls.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -401,10 +401,10 @@
         <summary>Performs control validation, and then sets the <see cref="P:System.Web.UI.MobileControls.BaseValidator.IsValid" /> property based on the results of the validation. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.BaseValidator.Validate%2A> method causes the <xref:System.Web.UI.MobileControls.BaseValidator.IsValid%2A> property of the control to be set to `true` or `false`, depending on the outcome of the validation test.  
-  
+The <xref:System.Web.UI.MobileControls.BaseValidator.Validate%2A> method causes the <xref:System.Web.UI.MobileControls.BaseValidator.IsValid%2A> property of the control to be set to `true` or `false`, depending on the outcome of the validation test.  
+ 
  ]]></format>
         </remarks>
       </Docs>

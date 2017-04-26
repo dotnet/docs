@@ -18,21 +18,21 @@
     <summary>Contains style characteristics for menus on <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> class is essentially a <xref:System.Web.UI.WebControls.TableStyle> object, which contains style characteristics to apply to menus on <xref:System.Web.UI.WebControls.WebParts.WebPart> controls.  
-  
- The Web Parts control set uses the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> object to determine the style characteristics of the verbs menu on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. A verbs menu is contained in the title bar of each <xref:System.Web.UI.WebControls.WebParts.WebPart> control, and it includes various user interface (UI) actions (called verbs) that users can perform, such as closing, minimizing, exporting, or deleting a control.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> class is essentially a <xref:System.Web.UI.WebControls.TableStyle> object, which contains style characteristics to apply to menus on <xref:System.Web.UI.WebControls.WebParts.WebPart> controls.  
+ 
+The Web Parts control set uses the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> object to determine the style characteristics of the verbs menu on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. A verbs menu is contained in the title bar of each <xref:System.Web.UI.WebControls.WebParts.WebPart> control, and it includes various user interface (UI) actions (called verbs) that users can perform, such as closing, minimizing, exporting, or deleting a control.  
+ 
 > [!IMPORTANT]
 >  You can set style attributes on the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> object, and thus on the verbs menu of all the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in a zone, by using the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupStyle%2A> property on a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> class has two important properties. The first is the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.HorizontalAlign%2A> property, which determines whether the content of the menu is aligned on the left, the center, or the right of the control or the alignment is not set. The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.ShadowColor%2A> property determines the color of the shadow for the menu on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, if the menu shadowing feature is enabled on the user's system.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> class also has some critical methods. The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.CopyFrom%2A> method copies nonblank style elements from the style object passed into the method, and applies them to the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> object, overwriting any existing style elements in the process. The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.MergeWith%2A> method similarly copies nonblank style elements from the style object passed to the method, but it does not overwrite existing style elements in the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> object. The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.Reset%2A> method removes any defined style elements from the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> object's state bag.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> class also implements all the methods contained in the <xref:System.ComponentModel.ICustomTypeDescriptor> interface. In general, this enables the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> class to be applied to different types of menus.  
-  
+ 
+The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> class has two important properties. The first is the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.HorizontalAlign%2A> property, which determines whether the content of the menu is aligned on the left, the center, or the right of the control or the alignment is not set. The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.ShadowColor%2A> property determines the color of the shadow for the menu on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, if the menu shadowing feature is enabled on the user's system.  
+ 
+The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> class also has some critical methods. The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.CopyFrom%2A> method copies nonblank style elements from the style object passed into the method, and applies them to the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> object, overwriting any existing style elements in the process. The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.MergeWith%2A> method similarly copies nonblank style elements from the style object passed to the method, but it does not overwrite existing style elements in the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> object. The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.Reset%2A> method removes any defined style elements from the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> object's state bag.  
+ 
+The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> class also implements all the methods contained in the <xref:System.ComponentModel.ICustomTypeDescriptor> interface. In general, this enables the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> class to be applied to different types of menus.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -90,13 +90,13 @@
         <summary>Copies nonblank style elements to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartMenuStyle" /> object, overwriting any existing style elements in the process.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.CopyFrom%2A> method copies style information from the specified <xref:System.Web.UI.WebControls.Style> object, and if there are any existing style elements in the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> instance, it overwrites them.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.CopyFrom%2A> method copies style information from the specified <xref:System.Web.UI.WebControls.Style> object, and if there are any existing style elements in the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> instance, it overwrites them.  
+ 
 > [!NOTE]
 >  One reason this method overrides its base method is to customize the process of assigning a value to the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.ShadowColor%2A> property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,10 +152,10 @@
         <value>A <see cref="T:System.Web.UI.WebControls.HorizontalAlign" /> enumeration value that specifies what type of alignment to use. The default value is obtained from the base <see cref="P:System.Web.UI.WebControls.TableStyle.HorizontalAlign" /> property value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.HorizontalAlign%2A> property overrides the base property to prevent the alignment from being set, and to add some attributes to the property. The property gets its value from the base <xref:System.Web.UI.WebControls.TableStyle.HorizontalAlign%2A?displayProperty=fullName> property value, but does not provide any implementation for the setter, so you cannot set the alignment of the menu content by using this property.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.HorizontalAlign%2A> property overrides the base property to prevent the alignment from being set, and to add some attributes to the property. The property gets its value from the base <xref:System.Web.UI.WebControls.TableStyle.HorizontalAlign%2A?displayProperty=fullName> property value, but does not provide any implementation for the setter, so you cannot set the alignment of the menu content by using this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,13 +180,13 @@
         <summary>Copies nonblank style elements to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartMenuStyle" /> instance, but does not overwrite existing style elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.MergeWith%2A> method is similar to the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.CopyFrom%2A> method in that it copies style elements from a specified <xref:System.Web.UI.WebControls.Style> object, but it differs in that it does not overwrite any existing style elements in the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> instance.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.MergeWith%2A> method is similar to the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.CopyFrom%2A> method in that it copies style elements from a specified <xref:System.Web.UI.WebControls.Style> object, but it differs in that it does not overwrite any existing style elements in the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle> instance.  
+ 
 > [!NOTE]
 >  One reason this method overrides its base method is to customize the process of assigning a value to the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.ShadowColor%2A> property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
         <summary>Removes any defined style elements from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartMenuStyle" /> object's state bag.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.Reset%2A> method is very similar to the base method in the <xref:System.Web.UI.WebControls.TableStyle> class. After some custom handling for the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.ShadowColor%2A> property, this method simply calls the base method to remove any remaining style elements from the state bag.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.Reset%2A> method is very similar to the base method in the <xref:System.Web.UI.WebControls.TableStyle> class. After some custom handling for the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.ShadowColor%2A> property, this method simply calls the base method to remove any remaining style elements from the state bag.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -241,10 +241,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that determines the shadow color. The default value is <see cref="F:System.Drawing.Color.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.ShadowColor%2A> property takes effect only when users have the Microsoft Windows menu-shadowing feature enabled on their systems. When menu shadowing is enabled, the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.ShadowColor%2A> property sets the color of the shadow that is created around the menu content. If no color value is assigned to the property, no shadow will appear on menus, even if menu shadowing is enabled on the system.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.ShadowColor%2A> property takes effect only when users have the Microsoft Windows menu-shadowing feature enabled on their systems. When menu shadowing is enabled, the <xref:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.ShadowColor%2A> property sets the color of the shadow that is created around the menu content. If no color value is assigned to the property, no shadow will appear on menus, even if menu shadowing is enabled on the system.  
+ 
  ]]></format>
         </remarks>
       </Docs>

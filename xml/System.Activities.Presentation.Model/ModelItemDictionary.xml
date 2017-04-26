@@ -340,10 +340,10 @@
         <value>Returns <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there is no item for the given key, this method returns `null`.  
-  
+If there is no item for the given key, this method returns `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If <paramref name="key" /> or the value is <see langword="null" />.</exception>
@@ -372,10 +372,10 @@
         <value>Returns <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there is no item for the given key, this method returns `null`.  
-  
+If there is no item for the given key, this method returns `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If <paramref name="key" /> or the value is <see langword="null" />.</exception>
@@ -440,10 +440,10 @@
           <see langword="true" /> if the item exists; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does nothing if the item does not exist in the collection.  
-  
+This method does nothing if the item does not exist in the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If the <paramref name="key" /> is <see langword="null" />.</exception>
@@ -472,10 +472,10 @@
           <see langword="true" /> if the item exists; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does nothing if the item does not exist in the collection.  
-  
+This method does nothing if the item does not exist in the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If the <paramref name="key" /> is <see langword="null" />.</exception>
@@ -499,10 +499,10 @@
         <value>Returns <see cref="T:System.Object" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation returns “this.”  
-  
+The default implementation returns “this.”  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -854,10 +854,10 @@
         <summary>Removes the element with the specified key from the <see cref="T:System.Collections.IDictionary" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Collections.IDictionary> object does not contain an element with the specified key, the <xref:System.Collections.IDictionary> remains unchanged. No exception is thrown.  
-  
+If the <xref:System.Collections.IDictionary> object does not contain an element with the specified key, the <xref:System.Collections.IDictionary> remains unchanged. No exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -973,10 +973,10 @@
         <value>Returns <see cref="T:System.Collections.Generic.ICollection`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values are guaranteed to be in the same order as the keys. The resulting collection is read-only.  
-  
+The values are guaranteed to be in the same order as the keys. The resulting collection is read-only.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -21,12 +21,12 @@
     <summary>Contains values that specify the dock position of an object, represented by a <see cref="T:System.Windows.Automation.DockPattern" />, within a docking container.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A docking container is a control that allows the arrangement of child elements, both horizontally and vertically, relative to the boundaries of the docking container and other elements within the container.  
-  
- Controls are docked relative to each other based on their current z-order; the higher their z-order placement, the further they are placed from the specified edge of the docking container.  
-  
+A docking container is a control that allows the arrangement of child elements, both horizontally and vertically, relative to the boundaries of the docking container and other elements within the container.  
+ 
+Controls are docked relative to each other based on their current z-order; the higher their z-order placement, the further they are placed from the specified edge of the docking container.  
+ 
  ]]></format>
     </remarks>
   </Docs>

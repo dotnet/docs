@@ -22,12 +22,12 @@
     <summary>Provides an implementation of the OLE DB <see langword="IConnectionPointContainer" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,12 +52,12 @@
         <summary>Creates an enumerator of all the connection points supported in the connectable object, one connection point per IID.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,12 +84,12 @@
         <summary>Queries the connectable object about whether it has a connection point for a particular IID, and, if so, returns the <see langword="IConnectionPoint" /> interface pointer to that connection point.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>.  
-  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>.  
+ 
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

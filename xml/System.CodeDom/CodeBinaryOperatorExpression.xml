@@ -22,19 +22,19 @@
     <summary>Represents an expression that consists of a binary operation between two expressions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeBinaryOperatorExpression> can be used to represent code expressions that include a binary operator. Some examples of binary operators are equality (`==`), addition (`+`), and bitwise (`|`) operators. The <xref:System.CodeDom.CodeBinaryOperatorType> enumeration represents a set of basic, commonly used binary operators that are supported in many languages.  
+<xref:System.CodeDom.CodeBinaryOperatorExpression> can be used to represent code expressions that include a binary operator. Some examples of binary operators are equality (`==`), addition (`+`), and bitwise (`|`) operators. The <xref:System.CodeDom.CodeBinaryOperatorType> enumeration represents a set of basic, commonly used binary operators that are supported in many languages.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates use of a <xref:System.CodeDom.CodeBinaryOperatorExpression> to add two numbers together.  
-  
- [!code-cpp[CodeBinaryOperatorExpression#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeBinaryOperatorExpression/CPP/codebinaryoperatorexpressionexample.cpp#2)]
- [!code-csharp[CodeBinaryOperatorExpression#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeBinaryOperatorExpression/CS/codebinaryoperatorexpressionexample.cs#2)]
- [!code-vb[CodeBinaryOperatorExpression#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeBinaryOperatorExpression/VB/codebinaryoperatorexpressionexample.vb#2)]  
-  
+This example demonstrates use of a <xref:System.CodeDom.CodeBinaryOperatorExpression> to add two numbers together.  
+ 
+[!code-cpp[CodeBinaryOperatorExpression#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeBinaryOperatorExpression/CPP/codebinaryoperatorexpressionexample.cpp#2)]
+[!code-csharp[CodeBinaryOperatorExpression#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeBinaryOperatorExpression/CS/codebinaryoperatorexpressionexample.cs#2)]
+[!code-vb[CodeBinaryOperatorExpression#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeBinaryOperatorExpression/VB/codebinaryoperatorexpressionexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -111,10 +111,10 @@
         <value>A <see cref="T:System.CodeDom.CodeBinaryOperatorType" /> that indicates the type of operator in the expression.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A binary operator performs an evaluation on two operands. Some examples of binary operators are equality (`==`), addition (`+`), and bitwise (`|`) operators. Many commonly used binary operators can be found in the <xref:System.CodeDom.CodeBinaryOperatorType> enumeration.  
-  
+A binary operator performs an evaluation on two operands. Some examples of binary operators are equality (`==`), addition (`+`), and bitwise (`|`) operators. Many commonly used binary operators can be found in the <xref:System.CodeDom.CodeBinaryOperatorType> enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>

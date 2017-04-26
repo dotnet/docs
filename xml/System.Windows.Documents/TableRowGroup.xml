@@ -23,10 +23,10 @@
     <summary>Represents a flow content element used to group <see cref="T:System.Windows.Documents.TableRow" /> elements within a <see cref="T:System.Windows.Documents.Table" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides a way to arbitrarily group rows within a table; every row in a table must belong to a row grouping. Rows within a row group often share a common intent, and can be styled as a group. A common use for row groupings is to separate special-purpose rows, such as a title, header, and footer rows, from the primary content contained by the table.  
-  
+This class provides a way to arbitrarily group rows within a table; every row in a table must belong to a row grouping. Rows within a row group often share a common intent, and can be styled as a group. A common use for row groupings is to separate special-purpose rows, such as a title, header, and footer rows, from the primary content contained by the table.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,18 +68,18 @@
         <value>A <see cref="T:System.Windows.Documents.TableRowCollection" /> that contains the <see cref="T:System.Windows.Documents.TableRow" /> elements that comprise the contents of the <see cref="T:System.Windows.Documents.TableRowGroup" />. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Documents.TableRowCollection> returned by this property to enumerate or manipulate the contents of a <xref:System.Windows.Documents.TableRowGroup> element (i.e. add/remove rows).  
+Use the <xref:System.Windows.Documents.TableRowCollection> returned by this property to enumerate or manipulate the contents of a <xref:System.Windows.Documents.TableRowGroup> element (i.e. add/remove rows).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following examples show how to use this property to perform common operations on a <xref:System.Windows.Documents.TableRowGroup>.  
-  
- [!code-csharp[TableSnippets2#_TableRowGroup_Rows](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml.cs#_tablerowgroup_rows)]
- [!code-vb[TableSnippets2#_TableRowGroup_Rows](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets2/visualbasic/window1.xaml.vb#_tablerowgroup_rows)]  
-  
+The following examples show how to use this property to perform common operations on a <xref:System.Windows.Documents.TableRowGroup>.  
+ 
+[!code-csharp[TableSnippets2#_TableRowGroup_Rows](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml.cs#_tablerowgroup_rows)]
+[!code-vb[TableSnippets2#_TableRowGroup_Rows](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets2/visualbasic/window1.xaml.vb#_tablerowgroup_rows)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,10 +108,10 @@
           <see langword="true" /> if the property value has changed from its default; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This `ShouldSerialize` method is provided because the <xref:System.Windows.Documents.TableRowGroup.Rows%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer for the <xref:System.Windows.Documents.TableRowGroup> or developing your own control incorporating the <xref:System.Windows.Documents.TableRowGroup>.  
-  
+This `ShouldSerialize` method is provided because the <xref:System.Windows.Documents.TableRowGroup.Rows%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer for the <xref:System.Windows.Documents.TableRowGroup> or developing your own control incorporating the <xref:System.Windows.Documents.TableRowGroup>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

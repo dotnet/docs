@@ -19,23 +19,23 @@
     <summary>Represents a collection of <see cref="T:System.Web.Configuration.OutputCacheProfile" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.OutputCacheProfileCollection> allows to centralize the management of the output cache settings used by pages or user controls.  
-  
- It allows you to programmatically access and modify the <xref:System.Web.Configuration.OutputCacheProfile> objects it contains.  
-  
+The <xref:System.Web.Configuration.OutputCacheProfileCollection> allows to centralize the management of the output cache settings used by pages or user controls.  
+ 
+It allows you to programmatically access and modify the <xref:System.Web.Configuration.OutputCacheProfile> objects it contains.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.Configuration.OutputCacheProfile> can be applied to a page using the `CacheProfile` attribute of the [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to obtain the <xref:System.Web.Configuration.OutputCacheProfileCollection> object.  
-  
- [!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#1)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#1)]  
-  
+The following code example shows how to obtain the <xref:System.Web.Configuration.OutputCacheProfileCollection> object.  
+ 
+[!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#1)]
+[!code-vb[System.Web.Configuration.OutputCacheProfileCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,18 +75,18 @@
         <summary>Adds a <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection cannot contain a <xref:System.Web.Configuration.OutputCacheProfile> object with the same name.  
+The collection cannot contain a <xref:System.Web.Configuration.OutputCacheProfile> object with the same name.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Add%2A> method.  
-  
- [!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#2)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#2)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Add%2A> method.  
+ 
+[!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#2)]
+[!code-vb[System.Web.Configuration.OutputCacheProfileCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object already exists in the collection or the collection is read only.</exception>
@@ -109,13 +109,13 @@
         <value>The <see langword="string" /> array containing the collection keys.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.AllKeys%2A> property.  
-  
- [!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#9)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#9)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.AllKeys%2A> property.  
+ 
+[!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#9)]
+[!code-vb[System.Web.Configuration.OutputCacheProfileCollection#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,18 +137,18 @@
         <summary>Removes all the  <see cref="T:System.Web.Configuration.OutputCacheProfile" /> objects from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method inserts a `clear` directive into the corresponding section of the configuration file to clear all references to elements defined in a higher-level configuration file. All elements defined in the corresponding section of the current configuration file are removed.  
+This method inserts a `clear` directive into the corresponding section of the configuration file to clear all references to elements defined in a higher-level configuration file. All elements defined in the corresponding section of the current configuration file are removed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Clear%2A> method.  
-  
- [!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#3)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#3)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Clear%2A> method.  
+ 
+[!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#3)]
+[!code-vb[System.Web.Configuration.OutputCacheProfileCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The collection is read only.</exception>
@@ -194,13 +194,13 @@
         <returns>The <see cref="T:System.Web.Configuration.OutputCacheProfile" /> element at the specified index.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Get%2A> method.  
-  
- [!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#11)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#11)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Get%2A> method.  
+ 
+[!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#11)]
+[!code-vb[System.Web.Configuration.OutputCacheProfileCollection#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -226,13 +226,13 @@
         <returns>The <see cref="T:System.Web.Configuration.OutputCacheProfile" /> element with the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Get%2A> method.  
-  
- [!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#11)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#11)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Get%2A> method.  
+ 
+[!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#11)]
+[!code-vb[System.Web.Configuration.OutputCacheProfileCollection#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,13 +280,13 @@
         <returns>The key with the specified <see cref="T:System.Web.Configuration.OutputCacheProfileCollection" /> index.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.GetKey%2A> method.  
-  
- [!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#6)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#6)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.GetKey%2A> method.  
+ 
+[!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#6)]
+[!code-vb[System.Web.Configuration.OutputCacheProfileCollection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,13 +312,13 @@
         <value>The <see cref="T:System.Web.Configuration.OutputCacheProfile" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Item%2A> property.  
-  
- [!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#4)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#4)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Item%2A> property.  
+ 
+[!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#4)]
+[!code-vb[System.Web.Configuration.OutputCacheProfileCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -344,13 +344,13 @@
         <value>The <see cref="T:System.Web.Configuration.OutputCacheProfile" /> with the specified name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Item%2A> property.  
-  
- [!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#5)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#5)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Item%2A> property.  
+ 
+[!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#5)]
+[!code-vb[System.Web.Configuration.OutputCacheProfileCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -393,18 +393,18 @@
         <summary>Removes the <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object with the specified name from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.OutputCacheProfileCollection.Remove%2A> method inserts a `remove` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+The <xref:System.Web.Configuration.OutputCacheProfileCollection.Remove%2A> method inserts a `remove` element into the appropriate section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the appropriate section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Remove%2A> method.  
-  
- [!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#8)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#8)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Remove%2A> method.  
+ 
+[!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#8)]
+[!code-vb[System.Web.Configuration.OutputCacheProfileCollection#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#8)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object with the specified key in the collection, the element has already been removed, or the collection is read-only.</exception>
@@ -430,18 +430,18 @@
         <summary>Removes the <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object at the specified index from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.OutputCacheProfileCollection.RemoveAt%2A> method inserts a `remove` element into the corresponding section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the corresponding section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+The <xref:System.Web.Configuration.OutputCacheProfileCollection.RemoveAt%2A> method inserts a `remove` element into the corresponding section of the configuration file for any element defined in a higher-level configuration file. If the element is defined in the corresponding section of the current configuration file, its entry is removed from the configuration file. The object to remove must exist in the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.RemoveAt%2A> method.  
-  
- [!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#7)]
- [!code-vb[System.Web.Configuration.OutputCacheProfileCollection#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#7)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.RemoveAt%2A> method.  
+ 
+[!code-csharp[System.Web.Configuration.OutputCacheProfileCollection#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/CS/OutputCacheProfileCollection.cs#7)]
+[!code-vb[System.Web.Configuration.OutputCacheProfileCollection#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheProfileCollection/VB/OutputCacheProfileCollection.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">There is no <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object with the specified key in the collection, the element has already been removed, or the collection is read-only.</exception>
@@ -467,18 +467,18 @@
         <summary>Sets the specified <see cref="T:System.Web.Configuration.OutputCacheProfile" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.OutputCacheProfileCollection.Set%2A> method modifies an existing <xref:System.Web.Configuration.OutputCacheProfileCollection> element.  
+The <xref:System.Web.Configuration.OutputCacheProfileCollection.Set%2A> method modifies an existing <xref:System.Web.Configuration.OutputCacheProfileCollection> element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Set%2A> method.  
-  
- [!code-csharp[System.Web.Configuration.FormsAuthenticationCredentials#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.FormsAuthenticationCredentials/CS/formsauthenticationcredentials.cs#10)]
- [!code-vb[System.Web.Configuration.FormsAuthenticationCredentials#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.FormsAuthenticationCredentials/VB/formsauthenticationcredentials.vb#10)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheProfileCollection.Set%2A> method.  
+ 
+[!code-csharp[System.Web.Configuration.FormsAuthenticationCredentials#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.FormsAuthenticationCredentials/CS/formsauthenticationcredentials.cs#10)]
+[!code-vb[System.Web.Configuration.FormsAuthenticationCredentials#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.FormsAuthenticationCredentials/VB/formsauthenticationcredentials.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.OutputCacheProfileCollection" /> is read-only.</exception>

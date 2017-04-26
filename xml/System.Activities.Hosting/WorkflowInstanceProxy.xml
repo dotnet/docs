@@ -42,10 +42,10 @@
         <returns>A reference to the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine if the resume operation was successful, call <xref:System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark%2A>. <xref:System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark%2A> can be called from inside or outside of the callback method. If <xref:System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark%2A> is called before the resume operation completes, it blocks until the resume operation completes.  
-  
+To determine if the resume operation was successful, call <xref:System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark%2A>. <xref:System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark%2A> can be called from inside or outside of the callback method. If <xref:System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark%2A> is called before the resume operation completes, it blocks until the resume operation completes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,10 +79,10 @@
         <returns>A reference to the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine if the resume operation was successful, call <xref:System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark%2A>. <xref:System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark%2A> can be called from inside or outside of the callback method. If <xref:System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark%2A> is called before the resume operation completes, it blocks until the resume operation completes. By default, the resume operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark%2A>.  
-  
+To determine if the resume operation was successful, call <xref:System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark%2A>. <xref:System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark%2A> can be called from inside or outside of the callback method. If <xref:System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark%2A> is called before the resume operation completes, it blocks until the resume operation completes. By default, the resume operation must complete in 30 seconds or a <xref:System.TimeoutException> is thrown from <xref:System.Activities.Hosting.WorkflowInstanceProxy.EndResumeBookmark%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,10 +108,10 @@
         <returns>Returns <see cref="T:System.Activities.BookmarkResumptionResult" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be called to determine whether a <xref:System.Activities.Hosting.WorkflowInstanceProxy.BeginResumeBookmark%2A> operation was successful. If called before the resume operation completes, it blocks until the resume operation is complete.  
-  
+This method can be called to determine whether a <xref:System.Activities.Hosting.WorkflowInstanceProxy.BeginResumeBookmark%2A> operation was successful. If called before the resume operation completes, it blocks until the resume operation is complete.  
+ 
  ]]></format>
         </remarks>
       </Docs>

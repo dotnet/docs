@@ -14,12 +14,12 @@
     <summary>Represents the base class for views that define the appearance of data in a <see cref="T:System.Windows.Controls.ListView" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.GridView> view mode is derived from the <xref:System.Windows.Controls.ViewBase> class. You typically use a <xref:System.Windows.Controls.GridView> with the <xref:System.Windows.Controls.ListView> control to lay out data in columns. You can also use the <xref:System.Windows.Controls.ViewBase> class to create custom view modes for a <xref:System.Windows.Controls.ListView>.  
-  
- The <xref:System.Windows.Controls.ListView.View%2A> property defines the view mode that the <xref:System.Windows.Controls.ListView> control uses.  
-  
+The <xref:System.Windows.Controls.GridView> view mode is derived from the <xref:System.Windows.Controls.ViewBase> class. You typically use a <xref:System.Windows.Controls.GridView> with the <xref:System.Windows.Controls.ListView> control to lay out data in columns. You can also use the <xref:System.Windows.Controls.ViewBase> class to create custom view modes for a <xref:System.Windows.Controls.ListView>.  
+ 
+The <xref:System.Windows.Controls.ListView.View%2A> property defines the view mode that the <xref:System.Windows.Controls.ListView> control uses.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,12 +77,12 @@
         <value>The style to use for the view mode. The default value is the style for the <see cref="T:System.Windows.Controls.ListBox" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not overridden by a derived class, the style for the <xref:System.Windows.Controls.ListBox> control is used as the default style.  
-  
- Use this property to set the style for the <xref:System.Windows.Controls.ListView>.  
-  
+If this property is not overridden by a derived class, the style for the <xref:System.Windows.Controls.ListBox> control is used as the default style.  
+ 
+Use this property to set the style for the <xref:System.Windows.Controls.ListView>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,10 +108,10 @@
         <returns>The <see cref="T:System.Windows.Automation.Peers.IViewAutomationPeer" /> interface that implements the <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" /> for a custom <see cref="P:System.Windows.Controls.ListView.View" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Automation.Peers.ListViewAutomationPeer> first uses the properties and <xref:System.Windows.Automation.AutomationPattern> objects that are implemented by the specified view, before using the default properties and patterns that are defined for a <xref:System.Windows.Controls.ListView> control.  
-  
+The <xref:System.Windows.Automation.Peers.ListViewAutomationPeer> first uses the properties and <xref:System.Windows.Automation.AutomationPattern> objects that are implemented by the specified view, before using the default properties and patterns that are defined for a <xref:System.Windows.Controls.ListView> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,10 +133,10 @@
         <value>The style of a <see cref="T:System.Windows.Controls.ListViewItem" />. The default value is the style for the <see cref="T:System.Windows.Controls.ListBoxItem" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to set the style for a <xref:System.Windows.Controls.ListViewItem>.  
-  
+Use this property to set the style for a <xref:System.Windows.Controls.ListViewItem>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -24,19 +24,19 @@
     <summary>Represents a verb that can be invoked from a designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A designer verb is a menu command linked to an event handler. Designer verbs are added to a component's shortcut menu at design time. In Visual Studio, each designer verb is also listed, using a <xref:System.Windows.Forms.LinkLabel>, in the **Description** pane of the Properties window.  
+A designer verb is a menu command linked to an event handler. Designer verbs are added to a component's shortcut menu at design time. In Visual Studio, each designer verb is also listed, using a <xref:System.Windows.Forms.LinkLabel>, in the **Description** pane of the Properties window.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create <xref:System.ComponentModel.Design.DesignerVerb> objects and add them to the design-time shortcut menu for a component.  
-  
- [!code-cpp[DesignerVerb Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerVerb Example/CPP/component1.cpp#1)]
- [!code-csharp[DesignerVerb Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerVerb Example/CS/component1.cs#1)]
- [!code-vb[DesignerVerb Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerVerb Example/VB/component1.vb#1)]  
-  
+The following code example demonstrates how to create <xref:System.ComponentModel.Design.DesignerVerb> objects and add them to the design-time shortcut menu for a component.  
+ 
+[!code-cpp[DesignerVerb Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerVerb Example/CPP/component1.cpp#1)]
+[!code-csharp[DesignerVerb Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerVerb Example/CS/component1.cs#1)]
+[!code-vb[DesignerVerb Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerVerb Example/VB/component1.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -66,10 +66,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerVerb" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Verbs are menu commands that are dynamically inserted into the menu at run time. Verb commands are usually displayed on either an edit menu or on a component's shortcut menu.  
-  
+Verbs are menu commands that are dynamically inserted into the menu at run time. Verb commands are usually displayed on either an edit menu or on a component's shortcut menu.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -101,10 +101,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerVerb" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Verbs are menu commands that are dynamically inserted into the menu at run time. Verb commands are usually displayed on either an edit menu or on a component's shortcut menu.  
-  
+Verbs are menu commands that are dynamically inserted into the menu at run time. Verb commands are usually displayed on either an edit menu or on a component's shortcut menu.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>

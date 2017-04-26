@@ -14,16 +14,16 @@
     <summary>Maintains the registration of all access keys and the handling of interop keyboard commands between [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)], [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)], and [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Input.AccessKeyManager> object is created on demand with one per <xref:System.Windows.Threading.Dispatcher>.  
-  
- The <xref:System.Windows.Input.AccessKeyManager> is attached as an event handler for <xref:System.Windows.Input.InputManager.PostProcessInput> and exposes methods to <xref:System.Windows.Input.AccessKeyManager.Register%2A> and <xref:System.Windows.Input.AccessKeyManager.Unregister%2A> access keys.  
-  
- When the registered access key is pressed, the <xref:System.Windows.Input.AccessKeyManager> calls the <xref:System.Windows.UIElement.OnAccessKey%2A> method on the target element.  
-  
- An element can be associated with any number of access keys.  
-  
+An <xref:System.Windows.Input.AccessKeyManager> object is created on demand with one per <xref:System.Windows.Threading.Dispatcher>.  
+ 
+The <xref:System.Windows.Input.AccessKeyManager> is attached as an event handler for <xref:System.Windows.Input.InputManager.PostProcessInput> and exposes methods to <xref:System.Windows.Input.AccessKeyManager.Register%2A> and <xref:System.Windows.Input.AccessKeyManager.Unregister%2A> access keys.  
+ 
+When the registered access key is pressed, the <xref:System.Windows.Input.AccessKeyManager> calls the <xref:System.Windows.UIElement.OnAccessKey%2A> method on the target element.  
+ 
+An element can be associated with any number of access keys.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -147,12 +147,12 @@
         <summary>Associates the specified access keys with the specified element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the access keys is pressed, the  <xref:System.Windows.UIElement.OnAccessKey%2A> method of `element` is called.  
-  
- An element can be associated with any number of access keys.  
-  
+When the access keys is pressed, the  <xref:System.Windows.UIElement.OnAccessKey%2A> method of `element` is called.  
+ 
+An element can be associated with any number of access keys.  
+ 
  ]]></format>
         </remarks>
       </Docs>

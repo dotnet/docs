@@ -14,10 +14,10 @@
     <summary>Maintains the run-time state of an <see cref="T:System.Windows.Media.Animation.AnimationTimeline" /> and processes its output values.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Animation.AnimationClock> objects are generated from <xref:System.Windows.Media.Animation.AnimationTimeline> objects. An <xref:System.Windows.Media.Animation.AnimationTimeline> describes an animation's output values, duration, begin time, end time, and other fundamental animation information. An <xref:System.Windows.Media.Animation.AnimationClock> processes the animation values described by an <xref:System.Windows.Media.Animation.AnimationTimeline> object.  
-  
+<xref:System.Windows.Media.Animation.AnimationClock> objects are generated from <xref:System.Windows.Media.Animation.AnimationTimeline> objects. An <xref:System.Windows.Media.Animation.AnimationTimeline> describes an animation's output values, duration, begin time, end time, and other fundamental animation information. An <xref:System.Windows.Media.Animation.AnimationClock> processes the animation values described by an <xref:System.Windows.Media.Animation.AnimationTimeline> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>

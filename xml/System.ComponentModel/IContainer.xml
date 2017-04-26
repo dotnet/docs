@@ -29,19 +29,19 @@
     <summary>Provides functionality for containers. Containers are objects that logically contain zero or more components.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Containers are objects that encapsulate and track zero or more components. In this context, containment refers to logical containment, not visual containment. You can use components and containers in a variety of scenarios, including scenarios that are both visual and not visual.  
+Containers are objects that encapsulate and track zero or more components. In this context, containment refers to logical containment, not visual containment. You can use components and containers in a variety of scenarios, including scenarios that are both visual and not visual.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.ComponentModel.IContainer> interface.  
-  
- [!code-cpp[ContainerExmpl#2](~/samples/snippets/cpp/VS_Snippets_Winforms/ContainerExmpl/CPP/librarycontainer.cpp#2)]
- [!code-csharp[ContainerExmpl#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ContainerExmpl/CS/librarycontainer.cs#2)]
- [!code-vb[ContainerExmpl#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ContainerExmpl/VB/librarycontainer.vb#2)]  
-  
+The following code example demonstrates how to implement the <xref:System.ComponentModel.IContainer> interface.  
+ 
+[!code-cpp[ContainerExmpl#2](~/samples/snippets/cpp/VS_Snippets_Winforms/ContainerExmpl/CPP/librarycontainer.cpp#2)]
+[!code-csharp[ContainerExmpl#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ContainerExmpl/CS/librarycontainer.cs#2)]
+[!code-vb[ContainerExmpl#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ContainerExmpl/VB/librarycontainer.vb#2)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -78,10 +78,10 @@
         <summary>Adds the specified <see cref="T:System.ComponentModel.IComponent" /> to the <see cref="T:System.ComponentModel.IContainer" /> at the end of the list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new <xref:System.ComponentModel.IComponent> is added at the end of the list.  
-  
+The new <xref:System.ComponentModel.IComponent> is added at the end of the list.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +121,10 @@
         <summary>Adds the specified <see cref="T:System.ComponentModel.IComponent" /> to the <see cref="T:System.ComponentModel.IContainer" /> at the end of the list, and assigns a name to the component.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new <xref:System.ComponentModel.IComponent> is added at the end of the list.  
-  
+The new <xref:System.ComponentModel.IComponent> is added at the end of the list.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

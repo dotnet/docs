@@ -14,10 +14,10 @@
     <summary>Provides a <see cref="T:System.IO.TextWriter" /> object that is accessed through the intrinsic <see cref="T:System.Web.HttpResponse" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpResponse.Write%2A> methods of the intrinsic <xref:System.Web.HttpResponse> object make internal calls to an <xref:System.Web.HttpWriter> object.  
-  
+The <xref:System.Web.HttpResponse.Write%2A> methods of the intrinsic <xref:System.Web.HttpResponse> object make internal calls to an <xref:System.Web.HttpWriter> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>

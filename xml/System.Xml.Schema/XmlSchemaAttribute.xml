@@ -19,23 +19,23 @@
     <summary>Represents the <see langword="attribute" /> element from the XML Schema as specified by the World Wide Web Consortium (W3C). Attributes provide additional information for other document elements. The attribute tag is nested between the tags of a document's element for the schema. The XML document displays attributes as named items in the opening tag of an element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attribute declarations can be present as child elements of the `schema` element (having global scope) or within complex type definitions. For complex types, attribute declarations can be present as local declarations or references to attributes with global scope. Both global and local attribute declarations have the optional type attribute that refers to an existing simple type. If the optional type attribute is not used, the attribute declaration (global or local) must define a local simple type.  
+Attribute declarations can be present as child elements of the `schema` element (having global scope) or within complex type definitions. For complex types, attribute declarations can be present as local declarations or references to attributes with global scope. Both global and local attribute declarations have the optional type attribute that refers to an existing simple type. If the optional type attribute is not used, the attribute declaration (global or local) must define a local simple type.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates the `attribute` element.  
-  
- [!code-cpp[Classic WebData XmlSchemaAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaAttribute Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlSchemaAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaAttribute Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlSchemaAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaAttribute Example/VB/source.vb#1)]  
-  
- The following XML file is generated for the preceding code example.  
-  
- [!code-xml[Classic WebData XmlSchemaAttribute Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaAttribute Example/XML/source.xml#2)]  
-  
+The following example creates the `attribute` element.  
+ 
+[!code-cpp[Classic WebData XmlSchemaAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaAttribute Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlSchemaAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaAttribute Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlSchemaAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaAttribute Example/VB/source.vb#1)]  
+ 
+The following XML file is generated for the preceding code example.  
+ 
+[!code-xml[Classic WebData XmlSchemaAttribute Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaAttribute Example/XML/source.xml#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,10 +87,10 @@
         <value>An <see cref="T:System.Xml.Schema.XmlSchemaSimpleType" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is a post-schema-validation infoset property.  
-  
+This property is a post-schema-validation infoset property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,13 +125,13 @@
         <value>The common runtime library (CLR) object that holds the post-compilation value of the <see langword="AttributeType" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The object can be <xref:System.Xml.Schema.XmlSchemaDatatype> if the attribute has a built-in XML Schema type or <xref:System.Xml.Schema.XmlSchemaSimpleType> if the attribute has a user-defined type. This property is a post-schema-validation infoset property.  
-  
+The object can be <xref:System.Xml.Schema.XmlSchemaDatatype> if the attribute has a built-in XML Schema type or <xref:System.Xml.Schema.XmlSchemaSimpleType> if the attribute has a user-defined type. This property is a post-schema-validation infoset property.  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchemaAttribute.AttributeType%2A> property is obsolete in the 2.0 version of the .NET Framework and has been replaced by the <xref:System.Xml.Schema.XmlSchemaAttribute.AttributeSchemaType%2A> property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,14 +168,14 @@
  Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `DefaultValue` property indicates that the attribute is to appear unconditionally in the XML document, using the supplied value whenever the attribute is not present. By default, this property is set to null to indicate that no default value is supplied for the attribute. The `fixed` and `default` properties are mutually exclusive.  
-  
- Optional.  
-  
- The default is null.  
-  
+`DefaultValue` property indicates that the attribute is to appear unconditionally in the XML document, using the supplied value whenever the attribute is not present. By default, this property is set to null to indicate that no default value is supplied for the attribute. The `fixed` and `default` properties are mutually exclusive.  
+ 
+Optional.  
+ 
+The default is null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,12 +212,12 @@
  Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `FixedValue` indicates that the attribute value, if present, must equal the supplied value. By default, this property is set to null, which means that no fixed value is supplied for the attribute. The `fixed` and `default` properties are mutually exclusive.  
-  
- Optional.  
-  
+`FixedValue` indicates that the attribute value, if present, must equal the supplied value. By default, this property is set to null, which means that no fixed value is supplied for the attribute. The `fixed` and `default` properties are mutually exclusive.  
+ 
+Optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,12 +282,12 @@
         <value>The name of the attribute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name must be an NCName (no-colon name) as defined in the World Wide Web Consortium (W3C) XML Namespaces specification. When an XML document is validated against a schema, each attribute in the document is validated against an `attribute` element in the schema. The `attribute` element with a `name` attribute that matches the local name of the attribute in the document is used to validate that attribute. The `Name` and `RefName` properties are mutually exclusive.  
-  
- Optional.  
-  
+The name must be an NCName (no-colon name) as defined in the World Wide Web Consortium (W3C) XML Namespaces specification. When an XML document is validated against a schema, each attribute in the document is validated against an `attribute` element in the schema. The `attribute` element with a `name` attribute that matches the local name of the attribute in the document is used to validate that attribute. The `Name` and `RefName` properties are mutually exclusive.  
+ 
+Optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -319,10 +319,10 @@
         <value>The post-compilation value of the <see langword="QualifiedName" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Optional.  
-  
+Optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -354,12 +354,12 @@
         <value>The name of the attribute declared.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `RefName` must be a QName. The type can include a namespace prefix. The `Name` and `RefName` properties are mutually exclusive.  
-  
- Optional.  
-  
+The `RefName` must be a QName. The type can include a namespace prefix. The `Name` and `RefName` properties are mutually exclusive.  
+ 
+Optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -391,10 +391,10 @@
         <value>The simple type defined in this schema.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `SchemaTypeName` and `SchemaType` properties cannot be set at the same time.  
-  
+`SchemaTypeName` and `SchemaType` properties cannot be set at the same time.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -426,12 +426,12 @@
         <value>The name of the simple type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `SchemaTypeName` and <xref:System.Xml.Schema.XmlSchemaAttribute.SchemaType%2A> properties cannot be set at the same time. The type must be a QName. The type can include a namespace prefix.  
-  
- Optional.  
-  
+`SchemaTypeName` and <xref:System.Xml.Schema.XmlSchemaAttribute.SchemaType%2A> properties cannot be set at the same time. The type must be a QName. The type can include a namespace prefix.  
+ 
+Optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -468,17 +468,17 @@
  Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If specified, this attribute must have one of the values shown in the following table.  
-  
+If specified, this attribute must have one of the values shown in the following table.  
+ 
 |Enum|Description|  
 |----------|-----------------|  
 |`None`|Attribute has no value.|  
 |`Prohibited`|Attribute cannot be used.|  
 |`Optional`|Attribute is optional and may have any value. This is the default.|  
 |`Required`|Attribute must appear once.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

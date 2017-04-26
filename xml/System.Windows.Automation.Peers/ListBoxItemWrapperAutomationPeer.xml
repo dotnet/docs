@@ -14,10 +14,10 @@
     <summary>Exposes the <see cref="T:System.Windows.UIElement" /> sub-tree for the data items in a <see cref="T:System.Windows.Controls.ListBox" /> to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When data items are shown in UI, the system creates a <xref:System.Windows.UIElement> sub-tree for the data items. The system also creates an <xref:System.Windows.Automation.Peers.ItemAutomationPeer> for each data item; when the UI for the data item is created, this <xref:System.Windows.Automation.Peers.ListBoxItemWrapperAutomationPeer> is also created. The two peers then merge to form a single peer.  
-  
+When data items are shown in UI, the system creates a <xref:System.Windows.UIElement> sub-tree for the data items. The system also creates an <xref:System.Windows.Automation.Peers.ItemAutomationPeer> for each data item; when the UI for the data item is created, this <xref:System.Windows.Automation.Peers.ListBoxItemWrapperAutomationPeer> is also created. The two peers then merge to form a single peer.  
+ 
  ]]></format>
     </remarks>
   </Docs>

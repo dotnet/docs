@@ -22,21 +22,21 @@
     <summary>Represents a reference to a data type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeTypeReferenceExpression> can be used to reference a particular data type.  
+<xref:System.CodeDom.CodeTypeReferenceExpression> can be used to reference a particular data type.  
+ 
+The <xref:System.CodeDom.CodeTypeReferenceExpression.Type%2A> property specifies the data type to reference.  
+ 
   
- The <xref:System.CodeDom.CodeTypeReferenceExpression.Type%2A> property specifies the data type to reference.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates use of a <xref:System.CodeDom.CodeTypeReferenceExpression> to represent a reference to a type.  
-  
- [!code-cpp[CodeTypeOfExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeOfExample/CPP/codetypeofexample.cpp#3)]
- [!code-csharp[CodeTypeOfExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeOfExample/CS/codetypeofexample.cs#3)]
- [!code-vb[CodeTypeOfExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeOfExample/VB/codetypeofexample.vb#3)]  
-  
+The following example demonstrates use of a <xref:System.CodeDom.CodeTypeReferenceExpression> to represent a reference to a type.  
+ 
+[!code-cpp[CodeTypeOfExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeOfExample/CPP/codetypeofexample.cpp#3)]
+[!code-csharp[CodeTypeOfExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeOfExample/CS/codetypeofexample.cs#3)]
+[!code-vb[CodeTypeOfExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeOfExample/VB/codetypeofexample.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

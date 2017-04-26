@@ -18,21 +18,21 @@
     <summary>The <see cref="T:System.DirectoryServices.AuthenticationTypes" /> enumeration specifies the types of authentication used in <see cref="N:System.DirectoryServices" />. This enumeration has a <see cref="T:System.FlagsAttribute" /> attribute that allows a bitwise combination of its member values.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Secure flag can be used in combination with other flags such as ReadonlyServer, FastBind.  
-  
- Serverless binding refers to a process in which a client attempts to bind to an Active Directory Domain Services object without explicitly specifying an Active Directory Domain Services server in the binding string, for example:  
-  
+The Secure flag can be used in combination with other flags such as ReadonlyServer, FastBind.  
+ 
+Serverless binding refers to a process in which a client attempts to bind to an Active Directory Domain Services object without explicitly specifying an Active Directory Domain Services server in the binding string, for example:  
+ 
 ```  
 LDAP://CN=jsmith,DC=fabrikam,DC=Com  
 ```  
-  
- This is possible because the Lightweight Directory Access Protocol (LDAP) provider relies on the locator services of Windows 2000 to find the best domain controller (DC) for the client. However, the client must have an account on the Active Directory Domain Services domain controller to take advantage of the serverless binding feature, and the domain controller that is used by a serverless bind will always be located in the default domain (the domain associated with the current security context of the thread that's doing the binding).  
-  
+ 
+This is possible because the Lightweight Directory Access Protocol (LDAP) provider relies on the locator services of Windows 2000 to find the best domain controller (DC) for the client. However, the client must have an account on the Active Directory Domain Services domain controller to take advantage of the serverless binding feature, and the domain controller that is used by a serverless bind will always be located in the default domain (the domain associated with the current security context of the thread that's doing the binding).  
+ 
 > [!NOTE]
 >  None of these options are supported by the Novell Netware Directory Service (NDS) system provider.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

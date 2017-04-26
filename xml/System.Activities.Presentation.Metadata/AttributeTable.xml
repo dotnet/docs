@@ -14,17 +14,17 @@
     <summary>The attribute table is a read-only collection of metadata attributes that are associated with specific types, members, and dependencies.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This table is created using the <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder> and is used by the <xref:System.Activities.Presentation.Metadata.MetadataStore>.  
+This table is created using the <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder> and is used by the <xref:System.Activities.Presentation.Metadata.MetadataStore>.  
+ 
+The <xref:System.Activities.Presentation.Metadata.AttributeTable> is created using the <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder> and is used by the <xref:System.Activities.Presentation.Metadata.MetadataStore>.  
+ 
   
- The <xref:System.Activities.Presentation.Metadata.AttributeTable> is created using the <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder> and is used by the <xref:System.Activities.Presentation.Metadata.MetadataStore>.  
-  
-   
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_AttributeTable#1](WFD_AttributeTable#1)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <value>Returns <see cref="T:System.Collections.Generic.IEnumerable`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This can be used to determine what types will be refreshed when this attribute table is added to the metadata store.  
-  
+This can be used to determine what types will be refreshed when this attribute table is added to the metadata store.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,10 +216,10 @@
         <summary>Returns an enumeration of all attributes provided for the given arguments.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method never returns a null enumeration.  
-  
+This method never returns a null enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>

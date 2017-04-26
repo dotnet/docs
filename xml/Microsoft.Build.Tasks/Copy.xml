@@ -101,10 +101,10 @@
         <value>The list of files to copy the source files to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The list of destination files is expected to be a one-to-one mapping with the list specified in the <xref:Microsoft.Build.Tasks.Copy.SourceFiles%2A> property. That is, the first file specified in <xref:Microsoft.Build.Tasks.Copy.SourceFiles%2A> will be copied to the first location specified in <xref:Microsoft.Build.Tasks.Copy.DestinationFiles%2A>, and so forth.  
-  
+The list of destination files is expected to be a one-to-one mapping with the list specified in the <xref:Microsoft.Build.Tasks.Copy.SourceFiles%2A> property. That is, the first file specified in <xref:Microsoft.Build.Tasks.Copy.SourceFiles%2A> will be copied to the first location specified in <xref:Microsoft.Build.Tasks.Copy.DestinationFiles%2A>, and so forth.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -127,10 +127,10 @@
         <value>The directory to which you want to copy the files.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The destination folder must be a directory, not a file. If the directory does not exist, it is created automatically.  
-  
+The destination folder must be a directory, not a file. If the directory does not exist, it is created automatically.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -233,10 +233,10 @@
           <see langword="true" /> if the <c>Copy</c> task should skip the copying of files that are unchanged between the source and destination; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Copy` task considers files to be unchanged if they have the same size and the same last modified time.  
-  
+The `Copy` task considers files to be unchanged if they have the same size and the same last modified time.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

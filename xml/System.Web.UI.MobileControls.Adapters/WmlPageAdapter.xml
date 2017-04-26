@@ -57,12 +57,12 @@
         <value>A list of any additional HTTP headers by which caching is varied.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter> and <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter> classes inherit this property from the <xref:System.Web.UI.MobileControls.IPageAdapter> interface. These implementations return `null`.  
-  
- For more information, see the "Output Caching" section in [Mobile Text Writer Rendering Best Practices](http://msdn.microsoft.com/en-us/28893297-2c45-4c57-a2b3-9cdd5898f988).  
-  
+The <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter> and <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter> classes inherit this property from the <xref:System.Web.UI.MobileControls.IPageAdapter> interface. These implementations return `null`.  
+ 
+For more information, see the "Output Caching" section in [Mobile Text Writer Rendering Best Practices](http://msdn.microsoft.com/en-us/28893297-2c45-4c57-a2b3-9cdd5898f988).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,10 +84,10 @@
         <value>Data persisted between requests through the use of the URL query string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is populated when a valid <xref:System.Collections.IDictionary> type is configured as an attribute of the `< mobileControls >` configuration element.  
-  
+This property is populated when a valid <xref:System.Collections.IDictionary> type is configured as an attribute of the `< mobileControls >` configuration element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,14 +141,14 @@
         <returns>The modified postback data collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because some devices handle postback differently from others, this method allows the adapter to modify the collection.  
-  
- The <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter> and <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter> implementations of this method gather control data if the post originated from a different page.  
-  
- The <xref:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter> implementation performs CHTML-specific handling of postback data.  
-  
+Because some devices handle postback differently from others, this method allows the adapter to modify the collection.  
+ 
+The <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter> and <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter> implementations of this method gather control data if the post originated from a different page.  
+ 
+The <xref:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter> implementation performs CHTML-specific handling of postback data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,15 +175,15 @@
           <see langword="true" /> if the device adapter set applies to the specified request; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 |Class|Returns|Preferred rendering type|Check value of JavaScript property|  
 |-----------|-------------|------------------------------|----------------------------------------|  
 |<xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter>|`true`|Checks whether the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingType%2A> property is <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeHtml32> or <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeChtml10>.|The <xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A> property returns `true`.|  
 |<xref:System.Web.UI.MobileControls.Adapters.ChtmlPageAdapter>|`true`|Checks whether the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingType%2A> property is <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeHtml32> or <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeChtml10>.|<xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A> property returns `false`.|  
 |<xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter>|`true`|Checks whether the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingType%2A> property is <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeWml11> or <xref:System.Web.Mobile.MobileCapabilities.PreferredRenderingTypeWml12>.|Not applicable.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,14 +212,14 @@
           <see langword="true" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An adapter can choose to handle the exception and render an error message. The method returns `true` if it handles the error.  
-  
- For the <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter> class, this implementation does nothing and returns `false`.  
-  
- For the <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter> class, this implementation formats the error for WML and returns `true`.  
-  
+An adapter can choose to handle the exception and render an error message. The method returns `true` if it handles the error.  
+ 
+For the <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter> class, this implementation does nothing and returns `false`.  
+ 
+For the <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter> class, this implementation formats the error for WML and returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,12 +248,12 @@
           <see langword="false" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called during postback. It allows a page adapter to handle a postback event by itself.  
-  
- Both the <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter.HandlePagePostBackEvent%2A?displayProperty=fullName> and <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.HandlePagePostBackEvent%2A> methods return false.  
-  
+This method is called during postback. It allows a page adapter to handle a postback event by itself.  
+ 
+Both the <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter.HandlePagePostBackEvent%2A?displayProperty=fullName> and <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.HandlePagePostBackEvent%2A> methods return false.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,12 +280,12 @@
           <see langword="true" /> if the specified form is to be rendered as part of the current request; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter> class, only the active form is rendered for each request.  
-  
- For the <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter> class, multiple forms can be combined as cards into a single deck, if size permits.  
-  
+For the <xref:System.Web.UI.MobileControls.Adapters.HtmlPageAdapter> class, only the active form is rendered for each request.  
+ 
+For the <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter> class, multiple forms can be combined as cards into a single deck, if size permits.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -344,10 +344,10 @@
           <see langword="true" /> if items from the <see cref="P:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.CookielessDataDictionary" /> property are persisted in the query string; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, this value is `true` if the `CookielessDataDictionaryType` entry in the `MobileControls` configuration section of Web.config is set to a valid dictionary type.  
-  
+By default, this value is `true` if the `CookielessDataDictionaryType` entry in the `MobileControls` configuration section of Web.config is set to a valid dictionary type.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -23,10 +23,10 @@
     <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.IStream" /> instead.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IStream` and `ISequentialStream` in the com subfolder of the MSDN library.  
-  
+For more information, please see the existing documentation for `IStream` and `ISequentialStream` in the com subfolder of the MSDN library.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,10 +52,10 @@
         <summary>Creates a new stream object with its own seek pointer that references the same bytes as the original stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IStream::Clone` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IStream::Clone` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,10 +81,10 @@
         <summary>Ensures that any changes made to a stream object open in transacted mode are reflected in the parent storage.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IStream::Commit` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IStream::Commit` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,10 +116,10 @@
         <summary>Copies a specified number of bytes from the current seek pointer in the stream to the current seek pointer in another stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IStream::CopyTo` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IStream::CopyTo` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,10 +149,10 @@
         <summary>Restricts access to a specified range of bytes in the stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IStream::LockRegion` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IStream::LockRegion` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,10 +182,10 @@
         <summary>Reads a specified number of bytes from the stream object into memory starting at the current seek pointer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `ISequentialStream::Read` in the MSDN library.  
-  
+For more information, please see the existing documentation for `ISequentialStream::Read` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
         <summary>Discards all changes that have been made to a transacted stream since the last <see cref="M:System.Runtime.InteropServices.UCOMIStream.Commit(System.Int32)" /> call.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IStream::Revert` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IStream::Revert` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -241,10 +241,10 @@
         <summary>Changes the seek pointer to a new location relative to the beginning of the stream, to the end of the stream, or to the current seek pointer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IStream::Seek` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IStream::Seek` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,10 +270,10 @@
         <summary>Changes the size of the stream object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IStream::SetSize` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IStream::SetSize` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -301,10 +301,10 @@
         <summary>Retrieves the <see cref="T:System.Runtime.InteropServices.STATSTG" /> structure for this stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IStream::Stat` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IStream::Stat` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -334,10 +334,10 @@
         <summary>Removes the access restriction on a range of bytes previously restricted with <see cref="M:System.Runtime.InteropServices.UCOMIStream.LockRegion(System.Int64,System.Int64,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IStream::UnlockRegion` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IStream::UnlockRegion` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -367,10 +367,10 @@
         <summary>Writes a specified number of bytes into the stream object starting at the current seek pointer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `ISequentialStream::Write` in the MSDN library.  
-  
+For more information, please see the existing documentation for `ISequentialStream::Write` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

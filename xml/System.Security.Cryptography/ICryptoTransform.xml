@@ -29,10 +29,10 @@
     <summary>Defines the basic operations of cryptographic transformations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Hash algorithms are an example of cryptographic transformations (<xref:System.Security.Cryptography.HashAlgorithm>).  
-  
+Hash algorithms are an example of cryptographic transformations (<xref:System.Security.Cryptography.HashAlgorithm>).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -220,10 +220,10 @@
         <returns>The computed transform.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Cryptography.ICryptoTransform.TransformFinalBlock%2A> is a special function for transforming the last block or a partial block in the stream. It returns a new array that contains the remaining transformed bytes. A new array is returned, because the amount of information returned at the end might be larger than a single block when padding is added.  
-  
+<xref:System.Security.Cryptography.ICryptoTransform.TransformFinalBlock%2A> is a special function for transforming the last block or a partial block in the stream. It returns a new array that contains the remaining transformed bytes. A new array is returned, because the amount of information returned at the end might be larger than a single block when padding is added.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -27,10 +27,10 @@
     <summary>Specifies the cryptographic operations that a Cryptography Next Generation (CNG) key may be used with.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Not all operations apply to each key. For example, an Elliptic Curve Digital Signature Algorithm (ECDSA) key cannot be used for decryption even if the Decryption usage is set.  
-  
+Not all operations apply to each key. For example, an Elliptic Curve Digital Signature Algorithm (ECDSA) key cannot be used for decryption even if the Decryption usage is set.  
+ 
  ]]></format>
     </remarks>
   </Docs>

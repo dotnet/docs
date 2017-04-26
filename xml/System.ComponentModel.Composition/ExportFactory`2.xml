@@ -24,10 +24,10 @@
     <summary>A factory that creates new instances of a part that provides the specified export, with attached metadata.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ComponentModel.Composition.ExportFactory%602> extends <xref:System.ComponentModel.Composition.ExportFactory%601> to include a metadata object, in much the same way that <xref:System.Lazy%602> extends <xref:System.Lazy%601>. For more information, see <xref:System.ComponentModel.Composition.ExportFactory%601> and <xref:System.Lazy%601>.  
-  
+<xref:System.ComponentModel.Composition.ExportFactory%602> extends <xref:System.ComponentModel.Composition.ExportFactory%601> to include a metadata object, in much the same way that <xref:System.Lazy%602> extends <xref:System.Lazy%601>. For more information, see <xref:System.ComponentModel.Composition.ExportFactory%601> and <xref:System.Lazy%601>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -44,10 +44,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.ConcurrencyCheckAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You apply the <xref:System.ComponentModel.DataAnnotations.ConcurrencyCheckAttribute> attribute to a property in order to specify that the property indicates whether the data record in the application is still current with the data record in the data source.  
-  
+You apply the <xref:System.ComponentModel.DataAnnotations.ConcurrencyCheckAttribute> attribute to a property in order to specify that the property indicates whether the data record in the application is still current with the data record in the data source.  
+ 
  ]]></format>
         </remarks>
       </Docs>

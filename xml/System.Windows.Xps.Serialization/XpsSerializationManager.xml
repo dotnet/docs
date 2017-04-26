@@ -14,12 +14,12 @@
     <summary>Manages synchronous [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] serializers and type converters.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.Serialization.XpsSerializationManager> manages synchronous serializers and type converters that write content to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- <xref:System.Windows.Xps.Serialization.XpsSerializationManagerAsync> manages asynchronous serializers and type converters that store content to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
+<xref:System.Windows.Xps.Serialization.XpsSerializationManager> manages synchronous serializers and type converters that write content to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+<xref:System.Windows.Xps.Serialization.XpsSerializationManagerAsync> manages asynchronous serializers and type converters that store content to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,10 +81,10 @@
           <see langword="true" /> if the manager is in batch mode; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Batch mode is set in the `batchMode` parameter of the <xref:System.Windows.Xps.Serialization.XpsSerializationManager.%23ctor%2A> constructor.  
-  
+Batch mode is set in the `batchMode` parameter of the <xref:System.Windows.Xps.Serialization.XpsSerializationManager.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,19 +130,19 @@
         <summary>Sets the number of pages or documents to process for font-subsetting.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default font-subsetting `countPolicy` is 1.  
-  
- `countPolicy` defines either a number of pages or documents dependent on the <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> enumeration value specified to the <xref:System.Windows.Xps.Serialization.XpsSerializationManager.SetFontSubsettingPolicy%2A> method.  
-  
+The default font-subsetting `countPolicy` is 1.  
+ 
+`countPolicy` defines either a number of pages or documents dependent on the <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> enumeration value specified to the <xref:System.Windows.Xps.Serialization.XpsSerializationManager.SetFontSubsettingPolicy%2A> method.  
+ 
 |FontSubsetterCommitPolicy|CountPolicy|  
 |-------------------------------|-----------------|  
 |<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>|Always 1 (the whole document sequence).|  
 |<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>|Number of documents.|  
 |<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>|Number of pages.|  
 |<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>|Not applicable.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,20 +167,20 @@
         <summary>Sets the granularity at which font-subsetting is performed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default font-subsetting policy is <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>.  
-  
- When font glyphs for text in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document are saved in the document package, the document text displays identically on any computer or printer.  If glyphs are not saved in document and the required font is not installed on the local computer or printer, the rendering device must substitute glyphs from another font.  Substituting glyphs can change the appearance of the text when a different font is used.  
-  
- <xref:System.Windows.Xps.Serialization.XpsSerializationManager.SetFontSubsettingPolicy%2A> determines the granularity of font-subsetting.  
-  
- <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> (default) is the most efficient and enables the pages of all documents in a document sequence to share one font-subset that contains only the glyphs that are actually used.  
-  
- When creating interleaved documents, font-subsetting across a document sequence can require a large amount of memory to hold the complete document until the final font-subset can be determined.  <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> or <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> can be specified to reduce application memory requirements when you create interleaved documents.  
-  
- When `policy` is <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>, all the glyphs for all fonts that are used in the [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document are saved, even glyphs for characters that not actually used in the text.  
-  
+The default font-subsetting policy is <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>.  
+ 
+When font glyphs for text in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document are saved in the document package, the document text displays identically on any computer or printer.  If glyphs are not saved in document and the required font is not installed on the local computer or printer, the rendering device must substitute glyphs from another font.  Substituting glyphs can change the appearance of the text when a different font is used.  
+ 
+<xref:System.Windows.Xps.Serialization.XpsSerializationManager.SetFontSubsettingPolicy%2A> determines the granularity of font-subsetting.  
+ 
+<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> (default) is the most efficient and enables the pages of all documents in a document sequence to share one font-subset that contains only the glyphs that are actually used.  
+ 
+When creating interleaved documents, font-subsetting across a document sequence can require a large amount of memory to hold the complete document until the final font-subset can be determined.  <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> or <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> can be specified to reduce application memory requirements when you create interleaved documents.  
+ 
+When `policy` is <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>, all the glyphs for all fonts that are used in the [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document are saved, even glyphs for characters that not actually used in the text.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
         <summary>Occurs when an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] serializer requests a <see cref="T:System.Printing.PrintTicket" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about event handlers, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+For more information about event handlers, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,10 +225,10 @@
         <summary>Occurs when a page or document finishes serialization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about event handlers, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+For more information about event handlers, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>

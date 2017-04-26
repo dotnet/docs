@@ -13,10 +13,10 @@
     <summary>Specifies the path level of a Web-application configuration file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.WebApplicationLevel> class provides three levels that are used to distinguish where a configuration file is in relation to the root level of an ASP.NET Web application. The three path-level types are AboveApplication, AtApplication, and BelowApplication.  
-  
+The <xref:System.Web.Configuration.WebApplicationLevel> class provides three levels that are used to distinguish where a configuration file is in relation to the root level of an ASP.NET Web application. The three path-level types are AboveApplication, AtApplication, and BelowApplication.  
+ 
  ]]></format>
     </remarks>
   </Docs>

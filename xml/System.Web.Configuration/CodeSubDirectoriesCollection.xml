@@ -19,15 +19,15 @@
     <summary>Represents a collection of <see cref="T:System.Web.Configuration.CodeSubDirectory" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.CodeSubDirectoriesCollection> defines an ordered collection of subdirectories containing files compiled at run time. You can have any number of subdirectories. This collection refers to the `codeSubDirectories` element of the `compilation` section of the configuration file. The collection will only provide the items defined in the root Web.config or higher. This collection is a construct that allows easy access to the compilation information it contains.  
+The <xref:System.Web.Configuration.CodeSubDirectoriesCollection> defines an ordered collection of subdirectories containing files compiled at run time. You can have any number of subdirectories. This collection refers to the `codeSubDirectories` element of the `compilation` section of the configuration file. The collection will only provide the items defined in the root Web.config or higher. This collection is a construct that allows easy access to the compilation information it contains.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following configuration-file example defines an ordered collection of assembly subdirectories. This example shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.CodeSubDirectoriesCollection> class. The subdirectories are listed in the order in which the code must be compiled to meet its dependencies.  
-  
+The following configuration-file example defines an ordered collection of assembly subdirectories. This example shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.CodeSubDirectoriesCollection> class. The subdirectories are listed in the order in which the code must be compiled to meet its dependencies.  
+ 
 ```  
 <system.web>  
   <compilation>   
@@ -39,7 +39,7 @@
   </compilation>  
 </system.web>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,10 +79,10 @@
         <summary>Adds a <see cref="T:System.Web.Configuration.CodeSubDirectory" /> object to the <see cref="T:System.Web.Configuration.CodeSubDirectoriesCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adds a <xref:System.Web.Configuration.CodeSubDirectory> object to the collection. If the assembly object is not initialized with assembly information, an exception is thrown. If the assembly object already exists in the collection, the statement is ignored.  
-  
+Adds a <xref:System.Web.Configuration.CodeSubDirectory> object to the collection. If the assembly object is not initialized with assembly information, an exception is thrown. If the assembly object already exists in the collection, the statement is ignored.  
+ 
  ]]></format>
         </remarks>
       </Docs>

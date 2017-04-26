@@ -13,10 +13,10 @@
     <summary>Specifies the type of point in a <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each point in a <xref:System.Drawing.Drawing2D.GraphicsPath> object has a type associated with it. The type determines how the point is used to draw the path. Point types that make up shapes include start points, stop points, and Bézier curve points. Types also include markers, which allow easy traversal of a path or a mask to show or hide points. The Line type and any of the Bezier types can be combined with CloseSubpath (by using the bitwise operator `OR`) to indicate that the corresponding point is the last point in a figure and that the figure should be closed.  
-  
+Each point in a <xref:System.Drawing.Drawing2D.GraphicsPath> object has a type associated with it. The type determines how the point is used to draw the path. Point types that make up shapes include start points, stop points, and Bézier curve points. Types also include markers, which allow easy traversal of a path or a mask to show or hide points. The Line type and any of the Bezier types can be combined with CloseSubpath (by using the bitwise operator `OR`) to indicate that the corresponding point is the last point in a figure and that the figure should be closed.  
+ 
  ]]></format>
     </remarks>
   </Docs>

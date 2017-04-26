@@ -18,13 +18,13 @@
     <summary>Specifies how to read XML data and a relational schema into a <see cref="T:System.Data.DataSet" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the members of this enumeration when setting the `ReadMode` parameter of the <xref:System.Data.DataSet.ReadXml%2A> method.  
-  
+Use the members of this enumeration when setting the `ReadMode` parameter of the <xref:System.Data.DataSet.ReadXml%2A> method.  
+ 
 > [!NOTE]
 >  `Auto` mode may be slower than setting <xref:System.Data.XmlReadMode> to an explicit option.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,20 +50,20 @@
         <summary>Default.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Performs the most appropriate of these actions:  
-  
- If the data is a DiffGram, sets `XmlReadMode` to `DiffGram`.  
-  
- -or-  
-  
- If the dataset already has a schema, or the document contains an in-line schema, sets `XmlReadMode` to `ReadSchema`.  
-  
- -or-  
-  
- If the dataset does not already have a schema and the document does not contain an in-line schema, sets `XmlReadMode` to `InferSchema`.  
-  
+Performs the most appropriate of these actions:  
+ 
+If the data is a DiffGram, sets `XmlReadMode` to `DiffGram`.  
+ 
+-or-  
+ 
+If the dataset already has a schema, or the document contains an in-line schema, sets `XmlReadMode` to `ReadSchema`.  
+ 
+-or-  
+ 
+If the dataset does not already have a schema and the document does not contain an in-line schema, sets `XmlReadMode` to `InferSchema`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <summary>Reads a DiffGram, applying changes from the DiffGram to the <see cref="T:System.Data.DataSet" />. The semantics are identical to those of a <see cref="M:System.Data.DataSet.Merge(System.Data.DataSet)" /> operation. As with the <see cref="M:System.Data.DataSet.Merge(System.Data.DataSet)" /> operation, <see cref="P:System.Data.DataRow.RowState" /> values are preserved. Input to <see cref="M:System.Data.DataSet.ReadXml(System.Xml.XmlReader)" /> with DiffGrams should only be obtained using the output from <see cref="M:System.Data.DataSet.WriteXml(System.IO.Stream)" /> as a DiffGram.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The target <xref:System.Data.DataSet> must have the same schema as the <xref:System.Data.DataSet> on which <xref:System.Data.DataSet.WriteXml%2A> as DiffGram is called. Otherwise the DiffGram merge operation fails, and an exception is thrown.  
-  
+The target <xref:System.Data.DataSet> must have the same schema as the <xref:System.Data.DataSet> on which <xref:System.Data.DataSet.WriteXml%2A> as DiffGram is called. Otherwise the DiffGram merge operation fails, and an exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -47,10 +47,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Synthesis.PromptStyle" /> class and specifies the setting for the emphasis of the style.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The speech synthesis engines in Windows do not support variations in the emphasis of speech output at this time. Setting values for emphasis using a member of the <xref:System.Speech.Synthesis.PromptEmphasis> enumeration will produce no audible change in the synthesized speech output.  
-  
+The speech synthesis engines in Windows do not support variations in the emphasis of speech output at this time. Setting values for emphasis using a member of the <xref:System.Speech.Synthesis.PromptEmphasis> enumeration will produce no audible change in the synthesized speech output.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,10 +72,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Synthesis.PromptStyle" /> class and specifies the setting for the speaking rate of the style.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Speech.Synthesis.PromptBuilder> object and appends text strings. The example uses the <xref:System.Speech.Synthesis.PromptStyle.%23ctor%2A> constructor as an argument to the <xref:System.Speech.Synthesis.PromptBuilder.StartStyle%2A> method to specify a slow speaking rate for the string being added, which enumerates the contents of an order.  
-  
+The following example creates a <xref:System.Speech.Synthesis.PromptBuilder> object and appends text strings. The example uses the <xref:System.Speech.Synthesis.PromptStyle.%23ctor%2A> constructor as an argument to the <xref:System.Speech.Synthesis.PromptBuilder.StartStyle%2A> method to specify a slow speaking rate for the string being added, which enumerates the contents of an order.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -113,7 +113,7 @@ namespace SampleSynthesis
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,15 +135,15 @@ namespace SampleSynthesis
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Synthesis.PromptStyle" /> class and specifies the setting for the speaking volume of the style.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Synthesis.PromptVolume> setting for <xref:System.Speech.Synthesis.PromptVolume> is full volume, which is the same as <xref:System.Speech.Synthesis.PromptVolume>. The other settings decrease the volume of speech output relative to full volume.  
+The <xref:System.Speech.Synthesis.PromptVolume> setting for <xref:System.Speech.Synthesis.PromptVolume> is full volume, which is the same as <xref:System.Speech.Synthesis.PromptVolume>. The other settings decrease the volume of speech output relative to full volume.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Speech.Synthesis.PromptStyle.%23ctor%2A> constructor to specify volume settings that the <xref:System.Speech.Synthesis.SpeechSynthesizer> should apply to speech output.  
-  
+The following example uses the <xref:System.Speech.Synthesis.PromptStyle.%23ctor%2A> constructor to specify volume settings that the <xref:System.Speech.Synthesis.SpeechSynthesizer> should apply to speech output.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -188,7 +188,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -210,10 +210,10 @@ namespace SampleSynthesis
         <value>Returns the setting for the emphasis of the style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The speech synthesis engines in Windows do not support variations in the emphasis of speech output at this time. Setting values for emphasis using a member of the <xref:System.Speech.Synthesis.PromptEmphasis> enumeration will produce no audible change in the synthesized speech output.  
-  
+The speech synthesis engines in Windows do not support variations in the emphasis of speech output at this time. Setting values for emphasis using a member of the <xref:System.Speech.Synthesis.PromptEmphasis> enumeration will produce no audible change in the synthesized speech output.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -253,10 +253,10 @@ namespace SampleSynthesis
         <value>Returns the setting for the volume (loudness) of the style.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Synthesis.PromptVolume> setting for <xref:System.Speech.Synthesis.PromptVolume> is full volume, which is the same as <xref:System.Speech.Synthesis.PromptVolume>. The other settings decrease the volume of speech output relative to full volume.  
-  
+The <xref:System.Speech.Synthesis.PromptVolume> setting for <xref:System.Speech.Synthesis.PromptVolume> is full volume, which is the same as <xref:System.Speech.Synthesis.PromptVolume>. The other settings decrease the volume of speech output relative to full volume.  
+ 
  ]]></format>
         </remarks>
       </Docs>

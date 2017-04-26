@@ -28,14 +28,14 @@
     <summary>Determines the set of valid key sizes for the symmetric cryptographic algorithms.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows the use of members of the <xref:System.Security.Cryptography.KeySizes> class.  
-  
- [!code-cpp[System.Security.Cryptography.KeySizes#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CPP/members.cpp#1)]
- [!code-csharp[System.Security.Cryptography.KeySizes#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CS/members.cs#1)]
- [!code-vb[System.Security.Cryptography.KeySizes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/VB/members.vb#1)]  
-  
+The following example shows the use of members of the <xref:System.Security.Cryptography.KeySizes> class.  
+ 
+[!code-cpp[System.Security.Cryptography.KeySizes#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CPP/members.cpp#1)]
+[!code-csharp[System.Security.Cryptography.KeySizes#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CS/members.cs#1)]
+[!code-vb[System.Security.Cryptography.KeySizes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/VB/members.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,14 +70,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.KeySizes" /> class with the specified key values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows the use of the <xref:System.Security.Cryptography.KeySizes.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.KeySizes> class.  
-  
- [!code-cpp[System.Security.Cryptography.KeySizes#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CPP/members.cpp#2)]
- [!code-csharp[System.Security.Cryptography.KeySizes#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CS/members.cs#2)]
- [!code-vb[System.Security.Cryptography.KeySizes#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/VB/members.vb#2)]  
-  
+The following code shows the use of the <xref:System.Security.Cryptography.KeySizes.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.KeySizes> class.  
+ 
+[!code-cpp[System.Security.Cryptography.KeySizes#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CPP/members.cpp#2)]
+[!code-csharp[System.Security.Cryptography.KeySizes#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CS/members.cs#2)]
+[!code-vb[System.Security.Cryptography.KeySizes#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/VB/members.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,14 +108,14 @@
         <value>The maximum key size in bits.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to retrieve the use of the <xref:System.Security.Cryptography.KeySizes.MaxSize%2A> property. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.KeySizes> class.  
-  
- [!code-cpp[System.Security.Cryptography.KeySizes#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CPP/members.cpp#4)]
- [!code-csharp[System.Security.Cryptography.KeySizes#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CS/members.cs#4)]
- [!code-vb[System.Security.Cryptography.KeySizes#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/VB/members.vb#4)]  
-  
+The following code shows how to retrieve the use of the <xref:System.Security.Cryptography.KeySizes.MaxSize%2A> property. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.KeySizes> class.  
+ 
+[!code-cpp[System.Security.Cryptography.KeySizes#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CPP/members.cpp#4)]
+[!code-csharp[System.Security.Cryptography.KeySizes#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CS/members.cs#4)]
+[!code-vb[System.Security.Cryptography.KeySizes#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/VB/members.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,14 +146,14 @@
         <value>The minimum key size in bits.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to retrieve the use of the <xref:System.Security.Cryptography.KeySizes.MinSize%2A> property. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.KeySizes> class.  
-  
- [!code-cpp[System.Security.Cryptography.KeySizes#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CPP/members.cpp#3)]
- [!code-csharp[System.Security.Cryptography.KeySizes#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CS/members.cs#3)]
- [!code-vb[System.Security.Cryptography.KeySizes#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/VB/members.vb#3)]  
-  
+The following code shows how to retrieve the use of the <xref:System.Security.Cryptography.KeySizes.MinSize%2A> property. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.KeySizes> class.  
+ 
+[!code-cpp[System.Security.Cryptography.KeySizes#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CPP/members.cpp#3)]
+[!code-csharp[System.Security.Cryptography.KeySizes#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CS/members.cs#3)]
+[!code-vb[System.Security.Cryptography.KeySizes#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/VB/members.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,14 +184,14 @@
         <value>The interval between valid key sizes in bits.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to retrieve the use of the <xref:System.Security.Cryptography.KeySizes.SkipSize%2A> property. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.KeySizes> class.  
-  
- [!code-cpp[System.Security.Cryptography.KeySizes#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CPP/members.cpp#5)]
- [!code-csharp[System.Security.Cryptography.KeySizes#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CS/members.cs#5)]
- [!code-vb[System.Security.Cryptography.KeySizes#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/VB/members.vb#5)]  
-  
+The following code shows how to retrieve the use of the <xref:System.Security.Cryptography.KeySizes.SkipSize%2A> property. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.KeySizes> class.  
+ 
+[!code-cpp[System.Security.Cryptography.KeySizes#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CPP/members.cpp#5)]
+[!code-csharp[System.Security.Cryptography.KeySizes#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/CS/members.cs#5)]
+[!code-vb[System.Security.Cryptography.KeySizes#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.KeySizes/VB/members.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

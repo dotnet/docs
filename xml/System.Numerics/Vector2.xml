@@ -31,10 +31,10 @@
     <summary>Represents a vector with two single-precision floating-point values.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Vector2> structure provides support for hardware acceleration.  
-  
+The <xref:System.Numerics.Vector2> structure provides support for hardware acceleration.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -229,10 +229,10 @@
         <summary>Copies the elements of the vector to a specified array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `array` must have at least two elements. The method copies the vector's elements starting at index 0.  
-  
+`array` must have at least two elements. The method copies the vector's elements starting at index 0.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -274,10 +274,10 @@
         <summary>Copies the elements of the vector to a specified array starting at a specified index position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `array` must have a sufficient number of elements to accommodate the two vector elements. In other words, elements `index` and `index` + 1 must already exist in `array`.  
-  
+`array` must have a sufficient number of elements to accommodate the two vector elements. In other words, elements `index` and `index` + 1 must already exist in `array`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -495,10 +495,10 @@
           <see langword="true" /> if the two vectors are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two vectors are equal if their <xref:System.Numerics.Vector2> and <xref:System.Numerics.Vector2> elements are equal.  
-  
+Two vectors are equal if their <xref:System.Numerics.Vector2> and <xref:System.Numerics.Vector2> elements are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -535,10 +535,10 @@
           <see langword="true" /> if the current instance and <paramref name="obj" /> are equal; otherwise, <see langword="false" /><see langword="" />. If <paramref name="obj" /> is <see langword="null" />, the method returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current instance and `obj` are equal if `obj` is a <xref:System.Numerics.Vector2> object and their <xref:System.Numerics.Vector2.X> and <xref:System.Numerics.Vector2.Y> elements are equal.  
-  
+The current instance and `obj` are equal if `obj` is a <xref:System.Numerics.Vector2> object and their <xref:System.Numerics.Vector2.X> and <xref:System.Numerics.Vector2.Y> elements are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -629,10 +629,10 @@
         <returns>The vector's length squared.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation offers better performance than a call to the <xref:System.Numerics.Vector2.Length%2A> method.  
-  
+This operation offers better performance than a call to the <xref:System.Numerics.Vector2.Length%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -968,10 +968,10 @@
         <returns>The summed vector.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Vector2.op_Addition%2A> method defines the addition operation for <xref:System.Numerics.Vector2> objects.  
-  
+The <xref:System.Numerics.Vector2.op_Addition%2A> method defines the addition operation for <xref:System.Numerics.Vector2> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1009,10 +1009,10 @@
         <returns>The vector that results from dividing <paramref name="left" /> by <paramref name="right" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Vector2.op_Division%2A> method defines the division operation for <xref:System.Numerics.Vector2> objects.  
-  
+The <xref:System.Numerics.Vector2.op_Division%2A> method defines the division operation for <xref:System.Numerics.Vector2> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1050,10 +1050,10 @@
         <returns>The result of the division.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Vector2.op_Division%2A> method defines the division operation for <xref:System.Numerics.Vector2> objects.  
-  
+The <xref:System.Numerics.Vector2.op_Division%2A> method defines the division operation for <xref:System.Numerics.Vector2> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1092,10 +1092,10 @@
           <see langword="true" /> if <paramref name="left" /> and <paramref name="right" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.Numerics.Vector2> objects are equal if each value in `left` is equal to the corresponding value in `right`.  
-  
+Two <xref:System.Numerics.Vector2> objects are equal if each value in `left` is equal to the corresponding value in `right`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1168,10 +1168,10 @@
         <returns>The product vector.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Vector2.op_Multiply%2A> method defines the multiplication operation for <xref:System.Numerics.Vector2> objects.  
-  
+The <xref:System.Numerics.Vector2.op_Multiply%2A> method defines the multiplication operation for <xref:System.Numerics.Vector2> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1209,10 +1209,10 @@
         <returns>The scaled vector.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Vector2.op_Multiply%2A> method defines the multiplication operation for <xref:System.Numerics.Vector2> objects.  
-  
+The <xref:System.Numerics.Vector2.op_Multiply%2A> method defines the multiplication operation for <xref:System.Numerics.Vector2> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1250,10 +1250,10 @@
         <returns>The scaled vector.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Vector2.op_Multiply%2A> method defines the multiplication operation for <xref:System.Numerics.Vector2> objects.  
-  
+The <xref:System.Numerics.Vector2.op_Multiply%2A> method defines the multiplication operation for <xref:System.Numerics.Vector2> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1291,10 +1291,10 @@
         <returns>The vector that results from subtracting <paramref name="right" /> from <paramref name="left" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Vector2.op_Subtraction%2A> method defines the subtraction operation for <xref:System.Numerics.Vector2> objects.  
-  
+The <xref:System.Numerics.Vector2.op_Subtraction%2A> method defines the subtraction operation for <xref:System.Numerics.Vector2> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1330,10 +1330,10 @@
         <returns>The negated vector.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Numerics.Vector2.op_UnaryNegation%2A> method defines the unary negation operation for <xref:System.Numerics.Vector2> objects.  
-  
+The <xref:System.Numerics.Vector2.op_UnaryNegation%2A> method defines the unary negation operation for <xref:System.Numerics.Vector2> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1466,10 +1466,10 @@
         <returns>The string representation of the current instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a string in which each element of the vector is formatted using the "G" (general) format string and the formatting conventions of the current thread culture. The "\<" and ">" characters are used to begin and end the string, and the current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
-  
+This method returns a string in which each element of the vector is formatted using the "G" (general) format string and the formatting conventions of the current thread culture. The "\<" and ">" characters are used to begin and end the string, and the current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1505,10 +1505,10 @@
         <returns>The string representation of the current instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a string in which each element of the vector is formatted using `format` and the current culture's formatting conventions. The "\<" and ">" characters are used to begin and end the string, and the current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
-  
+This method returns a string in which each element of the vector is formatted using `format` and the current culture's formatting conventions. The "\<" and ">" characters are used to begin and end the string, and the current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1546,10 +1546,10 @@
         <returns>The string representation of the current instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a string in which each element of the vector is formatted using `format` and `formatProvider`. The "\<" and ">" characters are used to begin and end the string, and the format provider's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
-  
+This method returns a string in which each element of the vector is formatted using `format` and `formatProvider`. The "\<" and ">" characters are used to begin and end the string, and the format provider's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

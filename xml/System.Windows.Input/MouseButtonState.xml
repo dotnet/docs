@@ -13,18 +13,18 @@
     <summary>Specifies the possible states of a mouse button.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.MouseButtonState> enumeration specifies constants which correlate to the state of a mouse button.  
+The <xref:System.Windows.Input.MouseButtonState> enumeration specifies constants which correlate to the state of a mouse button.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows a mouse event handler that determines which buttons are currently pressed by checking the button state of each mouse button.  
-  
- [!code-csharp[mousesnippetsample#MouseEventArgsMouseButton](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargsmousebutton)]
- [!code-vb[mousesnippetsample#MouseEventArgsMouseButton](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargsmousebutton)]  
-  
+The following example shows a mouse event handler that determines which buttons are currently pressed by checking the button state of each mouse button.  
+ 
+[!code-csharp[mousesnippetsample#MouseEventArgsMouseButton](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargsmousebutton)]
+[!code-vb[mousesnippetsample#MouseEventArgsMouseButton](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargsmousebutton)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

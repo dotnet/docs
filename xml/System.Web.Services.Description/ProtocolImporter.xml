@@ -14,10 +14,10 @@
     <summary>Provides common functionality across communication protocols for generating classes for Web services.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The abstract <xref:System.Web.Services.Description.ProtocolImporter> class and its concrete derived classes generate client proxy code or abstract server code according to a specified communication protocol. <xref:System.Web.Services.Description.ProtocolImporter> provides common functionality regardless of the protocol. Within a given protocol, a concrete derived class generates a class for each supported binding defined in a Web Services Description Language (WSDL) document. Typically, instead of directly invoking classes derived from <xref:System.Web.Services.Description.ProtocolImporter>, a developer uses these classes indirectly through the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class.  
-  
+The abstract <xref:System.Web.Services.Description.ProtocolImporter> class and its concrete derived classes generate client proxy code or abstract server code according to a specified communication protocol. <xref:System.Web.Services.Description.ProtocolImporter> provides common functionality regardless of the protocol. Within a given protocol, a concrete derived class generates a class for each supported binding defined in a Web Services Description Language (WSDL) document. Typically, instead of directly invoking classes derived from <xref:System.Web.Services.Description.ProtocolImporter>, a developer uses these classes indirectly through the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,10 +77,10 @@
         <summary>For each unhandled extension or XML element in the input extensions collection, turns on a <see cref="F:System.Web.Services.Description.ServiceDescriptionImportWarnings.RequiredExtensionsIgnored" /> or <see cref="F:System.Web.Services.Description.ServiceDescriptionImportWarnings.OptionalExtensionsIgnored" /> warning for each unhandled extension or XML element in the input extensions collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method also adds the warning messages to a collection of code comments.  
-  
+This method also adds the warning messages to a collection of code comments.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <returns>The generated class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When generating a class for a given binding, the <xref:System.Web.Services.Description.ProtocolImporter> class calls the <xref:System.Web.Services.Description.ProtocolImporter.BeginClass%2A>method before generating methods that correspond to operations.  
-  
+When generating a class for a given binding, the <xref:System.Web.Services.Description.ProtocolImporter> class calls the <xref:System.Web.Services.Description.ProtocolImporter.BeginClass%2A>method before generating methods that correspond to operations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,10 +128,10 @@
         <summary>When overridden in a derived class, performs namespace-wide initialization during code generation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When generating code, the <xref:System.Web.Services.Description.ProtocolImporter> class calls the <xref:System.Web.Services.Description.ProtocolImporter.BeginNamespace%2A> method before generating classes that represent bindings.  
-  
+When generating code, the <xref:System.Web.Services.Description.ProtocolImporter> class calls the <xref:System.Web.Services.Description.ProtocolImporter.BeginNamespace%2A> method before generating classes that represent bindings.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,10 +261,10 @@
         <summary>When overridden in a derived class, processes a binding class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When generating a class for a given binding, the <xref:System.Web.Services.Description.ProtocolImporter> class calls the <xref:System.Web.Services.Description.ProtocolImporter.EndClass%2A> method after generating methods that correspond to operations.  
-  
+When generating a class for a given binding, the <xref:System.Web.Services.Description.ProtocolImporter> class calls the <xref:System.Web.Services.Description.ProtocolImporter.EndClass%2A> method after generating methods that correspond to operations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,10 +286,10 @@
         <summary>When overridden in a derived class, performs processing for an entire namespace.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When generating code, the <xref:System.Web.Services.Description.ProtocolImporter> class calls the <xref:System.Web.Services.Description.ProtocolImporter.EndNamespace%2A> method after generating classes that represent bindings.  
-  
+When generating code, the <xref:System.Web.Services.Description.ProtocolImporter> class calls the <xref:System.Web.Services.Description.ProtocolImporter.EndNamespace%2A> method after generating classes that represent bindings.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,10 +312,10 @@
         <returns>The generated method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When generating code, the <xref:System.Web.Services.Description.ProtocolImporter> class calls the <xref:System.Web.Services.Description.ProtocolImporter.GenerateMethod%2A> method for each binding class method that represents an operation.  
-  
+When generating code, the <xref:System.Web.Services.Description.ProtocolImporter> class calls the <xref:System.Web.Services.Description.ProtocolImporter.GenerateMethod%2A> method for each binding class method that represents an operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -356,10 +356,10 @@
         <returns>True if the binding is supported; otherwise false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When generating code, the <xref:System.Web.Services.Description.ProtocolImporter> class calls the <xref:System.Web.Services.Description.ProtocolImporter.IsBindingSupported%2A> method to determine whether to generate a class for the current binding, as represented by the <xref:System.Web.Services.Description.ProtocolImporter.Binding%2A> property.  
-  
+When generating code, the <xref:System.Web.Services.Description.ProtocolImporter> class calls the <xref:System.Web.Services.Description.ProtocolImporter.IsBindingSupported%2A> method to determine whether to generate a class for the current binding, as represented by the <xref:System.Web.Services.Description.ProtocolImporter.Binding%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,12 +385,12 @@
         <returns>True if the current operation's operation flow is supported.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When generating code, the <xref:System.Web.Services.Description.ProtocolImporter> class calls the <xref:System.Web.Services.Description.ProtocolImporter.IsOperationFlowSupported%2A> method to determine whether to generate a method for the current operation, as represented by the <xref:System.Web.Services.Description.ProtocolImporter.Operation%2A> property. This evaluation takes place for each operation in a binding for which a class is being generated. If a `false` value is returned, the <xref:System.Web.Services.Description.ProtocolImporter> class calls its <xref:System.Web.Services.Description.ProtocolImporter.UnsupportedOperationWarning%2A> method.  
-  
- For more information, see the <xref:System.Web.Services.Description.OperationMessageCollection.Flow%2A> property. The <xref:System.Web.Services.Description.Operation.Messages%2A> property is of type <xref:System.Web.Services.Description.OperationMessageCollection>.  
-  
+When generating code, the <xref:System.Web.Services.Description.ProtocolImporter> class calls the <xref:System.Web.Services.Description.ProtocolImporter.IsOperationFlowSupported%2A> method to determine whether to generate a method for the current operation, as represented by the <xref:System.Web.Services.Description.ProtocolImporter.Operation%2A> property. This evaluation takes place for each operation in a binding for which a class is being generated. If a `false` value is returned, the <xref:System.Web.Services.Description.ProtocolImporter> class calls its <xref:System.Web.Services.Description.ProtocolImporter.UnsupportedOperationWarning%2A> method.  
+ 
+For more information, see the <xref:System.Web.Services.Description.OperationMessageCollection.Flow%2A> property. The <xref:System.Web.Services.Description.Operation.Messages%2A> property is of type <xref:System.Web.Services.Description.OperationMessageCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -430,10 +430,10 @@
         <value>The abstract Web Services Description Language (WSDL) operation that the protocol importer is currently processing to generate a method in a binding class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The operation appears as a child of the <xref:System.Web.Services.Description.ProtocolImporter.PortType%2A> element in a WSDL document. The method is generated with a <xref:System.Web.Services.WebMethodAttribute> class.  
-  
+The operation appears as a child of the <xref:System.Web.Services.Description.ProtocolImporter.PortType%2A> element in a WSDL document. The method is generated with a <xref:System.Web.Services.WebMethodAttribute> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -455,10 +455,10 @@
         <value>The Web Services Description Language (WSDL) operation binding that the protocol importer is currently processing to generate a method in a binding class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method is generated with a <xref:System.Web.Services.WebMethodAttribute> class.  
-  
+The method is generated with a <xref:System.Web.Services.WebMethodAttribute> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

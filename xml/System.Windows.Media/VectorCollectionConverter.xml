@@ -105,10 +105,10 @@
         <returns>The <see cref="T:System.Windows.Media.VectorCollection" /> that is created from converting <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether you can perform a conversion without actually performing the conversion, use the <xref:System.Windows.Media.VectorCollectionConverter.CanConvertFrom%2A> method.  
-  
+To determine whether you can perform a conversion without actually performing the conversion, use the <xref:System.Windows.Media.VectorCollectionConverter.CanConvertFrom%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <returns>The object that is created from converting this <see cref="T:System.Windows.Media.VectorCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether you can perform a conversion without actually performing the conversion, use the <xref:System.Windows.Media.VectorCollectionConverter.CanConvertTo%2A> method.  
-  
+To determine whether you can perform a conversion without actually performing the conversion, use the <xref:System.Windows.Media.VectorCollectionConverter.CanConvertTo%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

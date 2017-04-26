@@ -18,13 +18,13 @@
     <summary>Defines a collection of <see cref="T:System.Windows.Forms.HtmlElement" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Windows.Forms.HtmlElementCollection> objects to print out a textual representation of the Document Object Model (DOM) of a page.  
-  
- [!code-csharp[System.Windows.Forms.HtmlElement#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/CS/Form1.cs#1)]
- [!code-vb[System.Windows.Forms.HtmlElement#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/VB/Form1.vb#1)]  
-  
+The following code example uses <xref:System.Windows.Forms.HtmlElementCollection> objects to print out a textual representation of the Document Object Model (DOM) of a page.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlElement#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/CS/Form1.cs#1)]
+[!code-vb[System.Windows.Forms.HtmlElement#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/VB/Form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,13 +46,13 @@
         <value>An <see cref="T:System.Int32" /> representing the number of elements in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example finds a `FORM` object using its name, and submits its data to the server programmatically. The code example requires that your application hosts a <xref:System.Windows.Forms.WebBrowser> control named `webBrowser1`.  
-  
- [!code-csharp[System.Windows.Forms.HtmlElement#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/CS/Form1.cs#10)]
- [!code-vb[System.Windows.Forms.HtmlElement#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/VB/Form1.vb#10)]  
-  
+The following code example finds a `FORM` object using its name, and submits its data to the server programmatically. The code example requires that your application hosts a <xref:System.Windows.Forms.WebBrowser> control named `webBrowser1`.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlElement#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/CS/Form1.cs#10)]
+[!code-vb[System.Windows.Forms.HtmlElement#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/VB/Form1.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -78,18 +78,18 @@
         <returns>An <see cref="T:System.Windows.Forms.HtmlElementCollection" /> containing the elements whose <see cref="P:System.Windows.Forms.HtmlElement.Name" /> property match <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- While the <xref:System.Windows.Forms.HtmlElement.Id%2A> property of an <xref:System.Windows.Forms.HtmlElement> must be unique, multiple elements can use the same <xref:System.Windows.Forms.HtmlElement.Name%2A> property.  
+While the <xref:System.Windows.Forms.HtmlElement.Id%2A> property of an <xref:System.Windows.Forms.HtmlElement> must be unique, multiple elements can use the same <xref:System.Windows.Forms.HtmlElement.Name%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example finds a `FORM` object using its name, and submits its data to the server programmatically. The code example requires that your application hosts a <xref:System.Windows.Forms.WebBrowser> control named `webBrowser1`.  
-  
- [!code-csharp[System.Windows.Forms.HtmlElement#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/CS/Form1.cs#10)]
- [!code-vb[System.Windows.Forms.HtmlElement#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/VB/Form1.vb#10)]  
-  
+The following code example finds a `FORM` object using its name, and submits its data to the server programmatically. The code example requires that your application hosts a <xref:System.Windows.Forms.WebBrowser> control named `webBrowser1`.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlElement#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/CS/Form1.cs#10)]
+[!code-vb[System.Windows.Forms.HtmlElement#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/VB/Form1.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -134,10 +134,10 @@
         <value>An item from the collection by specifying its numerical index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Elements in an <xref:System.Windows.Forms.HtmlElementCollection> are not guaranteed to be in source code order. In other words, just because a `DIV` element is the first element inside of a `BODY` tag does not mean that the first element of the collection will be the `DIV` element.  
-  
+Elements in an <xref:System.Windows.Forms.HtmlElementCollection> are not guaranteed to be in source code order. In other words, just because a `DIV` element is the first element inside of a `BODY` tag does not mean that the first element of the collection will be the `DIV` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,13 +163,13 @@
         <value>An <see cref="T:System.Windows.Forms.HtmlElement" />, if the named element is found. Otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example finds a `FORM` object using its name, and submits its data to the server programmatically. The code example requires that your application hosts a <xref:System.Windows.Forms.WebBrowser> control named `webBrowser1`.  
-  
- [!code-csharp[System.Windows.Forms.HtmlElement#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/CS/Form1.cs#10)]
- [!code-vb[System.Windows.Forms.HtmlElement#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/VB/Form1.vb#10)]  
-  
+The following code example finds a `FORM` object using its name, and submits its data to the server programmatically. The code example requires that your application hosts a <xref:System.Windows.Forms.WebBrowser> control named `webBrowser1`.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlElement#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/CS/Form1.cs#10)]
+[!code-vb[System.Windows.Forms.HtmlElement#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElement/VB/Form1.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -243,10 +243,10 @@
         <summary>Gets an item from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.HtmlElementCollection> objects are read-only. To add an element to an HTML document, use methods such as <xref:System.Windows.Forms.HtmlElement.InsertAdjacentElement%2A> and <xref:System.Windows.Forms.HtmlElement.AppendChild%2A>.  
-  
+<xref:System.Windows.Forms.HtmlElementCollection> objects are read-only. To add an element to an HTML document, use methods such as <xref:System.Windows.Forms.HtmlElement.InsertAdjacentElement%2A> and <xref:System.Windows.Forms.HtmlElement.AppendChild%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,15 +14,15 @@
     <summary>Provides data for the <see cref="E:System.IO.Log.IRecordSequence.TailPinned" /> event. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Log.IRecordSequence.TailPinned> event can be fired when the record sequence has run out of space. When this event is fired, the tail of the sequence (that is, the base sequence number) is moved forward to free up space.  
+The <xref:System.IO.Log.IRecordSequence.TailPinned> event can be fired when the record sequence has run out of space. When this event is fired, the tail of the sequence (that is, the base sequence number) is moved forward to free up space.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.IO.Log.LogRecordSequence.TailPinned> event to free up space in a log sequence.  
-  
+This example shows how to use the <xref:System.IO.Log.LogRecordSequence.TailPinned> event to free up space in a log sequence.  
+ 
 ```  
 recordSequence.RetryAppend = true;  
 recordSequence.TailPinned += new EventHandler<TailPinnedEventArgs>(HandleTailPinned);  
@@ -42,7 +42,7 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
   
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

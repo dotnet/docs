@@ -22,23 +22,23 @@
     <summary>Represents a <see langword="typeof" /> expression, an expression that returns a <see cref="T:System.Type" /> for a specified type name.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.CodeDom.CodeTypeOfExpression> represents a `typeof` expression that returns a <xref:System.Type> at runtime.  
+A <xref:System.CodeDom.CodeTypeOfExpression> represents a `typeof` expression that returns a <xref:System.Type> at runtime.  
+ 
+The <xref:System.CodeDom.CodeTypeOfExpression.Type%2A> property specifies the data type to return a <xref:System.Type> object for.  
+ 
+Use <xref:System.CodeDom.CodeTypeReferenceExpression> to represent source code that refers to a type by name, such as when creating a <xref:System.CodeDom.CodeCastExpression> to cast an object to a name-specified type.  
+ 
   
- The <xref:System.CodeDom.CodeTypeOfExpression.Type%2A> property specifies the data type to return a <xref:System.Type> object for.  
-  
- Use <xref:System.CodeDom.CodeTypeReferenceExpression> to represent source code that refers to a type by name, such as when creating a <xref:System.CodeDom.CodeCastExpression> to cast an object to a name-specified type.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates use of a <xref:System.CodeDom.CodeTypeOfExpression> to represent a typeof expression.  
-  
- [!code-cpp[CodeTypeOfExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeOfExample/CPP/codetypeofexample.cpp#2)]
- [!code-csharp[CodeTypeOfExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeOfExample/CS/codetypeofexample.cs#2)]
- [!code-vb[CodeTypeOfExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeOfExample/VB/codetypeofexample.vb#2)]  
-  
+The following example demonstrates use of a <xref:System.CodeDom.CodeTypeOfExpression> to represent a typeof expression.  
+ 
+[!code-cpp[CodeTypeOfExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeOfExample/CPP/codetypeofexample.cpp#2)]
+[!code-csharp[CodeTypeOfExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeOfExample/CS/codetypeofexample.cs#2)]
+[!code-vb[CodeTypeOfExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeOfExample/VB/codetypeofexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

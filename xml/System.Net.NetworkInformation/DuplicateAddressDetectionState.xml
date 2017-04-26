@@ -22,21 +22,21 @@
     <summary>Specifies the current state of an IP address.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To help ensure that all interfaces on a network have a unique address, the interface host is responsible for running a "duplicate address detection" algorithm on unicast addresses. The purpose of this algorithm is to attempt to prevent non-unique addresses on the network. This process is defined in IETF RFC 1971.  
+To help ensure that all interfaces on a network have a unique address, the interface host is responsible for running a "duplicate address detection" algorithm on unicast addresses. The purpose of this algorithm is to attempt to prevent non-unique addresses on the network. This process is defined in IETF RFC 1971.  
+ 
+This enumeration is used by the <xref:System.Net.NetworkInformation.UnicastIPAddressInformation> and <xref:System.Net.NetworkInformation.MulticastIPAddressInformation> classes. Instances of this class are returned when you retrieve the unicast address information for a <xref:System.Net.NetworkInformation.NetworkInterface> object.  
+ 
   
- This enumeration is used by the <xref:System.Net.NetworkInformation.UnicastIPAddressInformation> and <xref:System.Net.NetworkInformation.MulticastIPAddressInformation> classes. Instances of this class are returned when you retrieve the unicast address information for a <xref:System.Net.NetworkInformation.NetworkInterface> object.  
-  
-   
-  
+ 
 ## Examples  
- The following code example determines unicast address information.  
-  
- [!code-cpp[NclNetInfo2#45](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#45)]
- [!code-csharp[NclNetInfo2#45](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#45)]
- [!code-vb[NclNetInfo2#45](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#45)]  
-  
+The following code example determines unicast address information.  
+ 
+[!code-cpp[NclNetInfo2#45](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#45)]
+[!code-csharp[NclNetInfo2#45](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#45)]
+[!code-vb[NclNetInfo2#45](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#45)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

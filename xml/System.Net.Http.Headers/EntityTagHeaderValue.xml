@@ -24,10 +24,10 @@
     <summary>Represents an entity-tag header value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Entity tags are used for comparing two or more entities from the same requested resource.  
-  
+Entity tags are used for comparing two or more entities from the same requested resource.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -105,10 +105,10 @@
         <value>Returns <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The entity-tag header value.  
-  
+The entity-tag header value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,12 +166,12 @@
         <returns>A hash code for the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
-  
- The <xref:System.Net.Http.Headers.AuthenticationHeaderValue.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures such as a hash table.  
-  
+A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
+ 
+The <xref:System.Net.Http.Headers.AuthenticationHeaderValue.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures such as a hash table.  
+ 
  ]]></format>
         </remarks>
       </Docs>

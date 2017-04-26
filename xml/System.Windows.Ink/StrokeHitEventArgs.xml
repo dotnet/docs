@@ -33,10 +33,10 @@
         <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that contains the strokes that are created after the eraser path erases part of <see cref="P:System.Windows.Ink.StrokeHitEventArgs.HitStroke" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeHitEventArgs.GetPointEraseResults%2A> method returns a <xref:System.Windows.Ink.StrokeCollection> that contains the strokes that result in the eraser path erasing the <xref:System.Windows.Ink.StrokeHitEventArgs.HitStroke%2A> where they intersect. If the eraser path intersects the middle of <xref:System.Windows.Ink.StrokeHitEventArgs.HitStroke%2A>, the <xref:System.Windows.Ink.StrokeHitEventArgs.GetPointEraseResults%2A> method returns a <xref:System.Windows.Ink.StrokeCollection> that contains two new strokes.  
-  
+The <xref:System.Windows.Ink.StrokeHitEventArgs.GetPointEraseResults%2A> method returns a <xref:System.Windows.Ink.StrokeCollection> that contains the strokes that result in the eraser path erasing the <xref:System.Windows.Ink.StrokeHitEventArgs.HitStroke%2A> where they intersect. If the eraser path intersects the middle of <xref:System.Windows.Ink.StrokeHitEventArgs.HitStroke%2A>, the <xref:System.Windows.Ink.StrokeHitEventArgs.GetPointEraseResults%2A> method returns a <xref:System.Windows.Ink.StrokeCollection> that contains two new strokes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

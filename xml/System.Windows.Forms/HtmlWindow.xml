@@ -14,24 +14,24 @@
     <summary>Represents the logical window that contains one or more instances of <see cref="T:System.Windows.Forms.HtmlDocument" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.HtmlWindow> should not be confused with the concept of a window in Windows Forms or the Win32 API; there is no `HWND` or similar Windows resource that corresponds directly to an instance of <xref:System.Windows.Forms.HtmlWindow>. Rather, <xref:System.Windows.Forms.HtmlWindow> provides high-level descriptions of a document's location on a user's screen, as well as methods for interacting with users by way of prompts and dialog boxes. <xref:System.Windows.Forms.HtmlWindow> acts as a logical container for a Web page's documents and its metadata, such as the document's location and the capabilities of the Web browser.  
+<xref:System.Windows.Forms.HtmlWindow> should not be confused with the concept of a window in Windows Forms or the Win32 API; there is no `HWND` or similar Windows resource that corresponds directly to an instance of <xref:System.Windows.Forms.HtmlWindow>. Rather, <xref:System.Windows.Forms.HtmlWindow> provides high-level descriptions of a document's location on a user's screen, as well as methods for interacting with users by way of prompts and dialog boxes. <xref:System.Windows.Forms.HtmlWindow> acts as a logical container for a Web page's documents and its metadata, such as the document's location and the capabilities of the Web browser.  
+ 
+A Web page consists of a single document, or a `FRAMESET` containing one or more `FRAME` elements, each of which hosts its own document. Web developers use framesets to show logically related pages side by side (for example, a content page next to a navigation page). When a page consists of a single document, you can access it through the <xref:System.Windows.Forms.HtmlWindow.Document%2A> property of <xref:System.Windows.Forms.HtmlWindow>; if the page uses frames, you can access their documents through the <xref:System.Windows.Forms.HtmlWindow.Frames%2A> collection, which consists of one or more <xref:System.Windows.Forms.HtmlWindow> objects.  
+ 
+When your host the <xref:System.Windows.Forms.WebBrowser> control in a Windows Forms application, you can choose to interact with the user using standard Windows Forms classes, such as <xref:System.Windows.Forms.Form> or <xref:System.Windows.Forms.MessageBox>, or you can use methods on <xref:System.Windows.Forms.HtmlWindow> defined for this purpose. The <xref:System.Windows.Forms.HtmlWindow.Alert%2A> method presents a simple dialog box with custom text and an **OK** button; <xref:System.Windows.Forms.HtmlWindow.Prompt%2A> presents a line of custom text and a text input field to the user; and <xref:System.Windows.Forms.HtmlWindow.Confirm%2A> presents a dialog box with a line of custom text and **OK** and **Cancel** buttons.  
+ 
+You can use <xref:System.Windows.Forms.HtmlWindow> to open new windows containing new documents. <xref:System.Windows.Forms.HtmlWindow.Open%2A> loads the specified URL into the named window, creating it if it does not already exist, while <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> always opens its URL in a newly created window.  
+ 
   
- A Web page consists of a single document, or a `FRAMESET` containing one or more `FRAME` elements, each of which hosts its own document. Web developers use framesets to show logically related pages side by side (for example, a content page next to a navigation page). When a page consists of a single document, you can access it through the <xref:System.Windows.Forms.HtmlWindow.Document%2A> property of <xref:System.Windows.Forms.HtmlWindow>; if the page uses frames, you can access their documents through the <xref:System.Windows.Forms.HtmlWindow.Frames%2A> collection, which consists of one or more <xref:System.Windows.Forms.HtmlWindow> objects.  
-  
- When your host the <xref:System.Windows.Forms.WebBrowser> control in a Windows Forms application, you can choose to interact with the user using standard Windows Forms classes, such as <xref:System.Windows.Forms.Form> or <xref:System.Windows.Forms.MessageBox>, or you can use methods on <xref:System.Windows.Forms.HtmlWindow> defined for this purpose. The <xref:System.Windows.Forms.HtmlWindow.Alert%2A> method presents a simple dialog box with custom text and an **OK** button; <xref:System.Windows.Forms.HtmlWindow.Prompt%2A> presents a line of custom text and a text input field to the user; and <xref:System.Windows.Forms.HtmlWindow.Confirm%2A> presents a dialog box with a line of custom text and **OK** and **Cancel** buttons.  
-  
- You can use <xref:System.Windows.Forms.HtmlWindow> to open new windows containing new documents. <xref:System.Windows.Forms.HtmlWindow.Open%2A> loads the specified URL into the named window, creating it if it does not already exist, while <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> always opens its URL in a newly created window.  
-  
-   
-  
+ 
 ## Examples  
- The following code example contains two methods. The first opens a URL in a window named `displayWindow`, which it creates with a status bar displayed. The second opens another URL in the same window, but specifies that only the location bar should be displayed. Notice that the dimensions of the window and the controls that are displayed depends on which URL is opened first. The code example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control named `WebBrowser1`.  
-  
- [!code-csharp[System.Windows.Forms.HtmlWindow#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#13)]
- [!code-vb[System.Windows.Forms.HtmlWindow#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#13)]  
-  
+The following code example contains two methods. The first opens a URL in a window named `displayWindow`, which it creates with a status bar displayed. The second opens another URL in the same window, but specifies that only the location bar should be displayed. Notice that the dimensions of the window and the controls that are displayed depends on which URL is opened first. The code example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control named `WebBrowser1`.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlWindow#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#13)]
+[!code-vb[System.Windows.Forms.HtmlWindow#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#13)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,12 +56,12 @@
         <summary>Displays a message box.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.MessageBox> class offers a more powerful version of the <xref:System.Windows.Forms.HtmlWindow.Alert%2A> method.  
-  
- Although <xref:System.Windows.Forms.HtmlWindow.Alert%2A> accepts Unicode text as input, the Internet Explorer script prompt will not display non-Latin language text appropriately on Windows 95, Windows 98, Windows ME or Windows NT due to operating system limitations. For more information, see [INFO: Internet Explorer Script Prompts and MBCS/Unicode](http://support.microsoft.com/default.aspx?scid=kb;en-us;211147).  
-  
+The <xref:System.Windows.Forms.MessageBox> class offers a more powerful version of the <xref:System.Windows.Forms.HtmlWindow.Alert%2A> method.  
+ 
+Although <xref:System.Windows.Forms.HtmlWindow.Alert%2A> accepts Unicode text as input, the Internet Explorer script prompt will not display non-Latin language text appropriately on Windows 95, Windows 98, Windows ME or Windows NT due to operating system limitations. For more information, see [INFO: Internet Explorer Script Prompts and MBCS/Unicode](http://support.microsoft.com/default.aspx?scid=kb;en-us;211147).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <summary>Adds an event handler for the named HTML DOM event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should not attach an event to an HTML document or one of its objects until the document has completed loading. The earliest you should call this method is in the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event of the <xref:System.Windows.Forms.WebBrowser> control.  
-  
+You should not attach an event to an HTML document or one of its objects until the document has completed loading. The earliest you should call this method is in the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event of the <xref:System.Windows.Forms.WebBrowser> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,20 +113,20 @@
         <summary>Closes the window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.HtmlWindow.IsClosed%2A> property to determine if the window is already closed. If the window is already closed, this method will have no effect.  
+Use the <xref:System.Windows.Forms.HtmlWindow.IsClosed%2A> property to determine if the window is already closed. If the window is already closed, this method will have no effect.  
+ 
+When you create new windows using <xref:System.Windows.Forms.HtmlWindow.Open%2A> or <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A>, <xref:System.Windows.Forms.HtmlWindow.Close%2A> causes the HTML Document Object Model to open a new instance of Internet Explorer. If you do not call <xref:System.Windows.Forms.HtmlWindow.Close%2A> on all of the windows you have created, this instance of Internet Explorer will remain running even after your application closes.  
+ 
   
- When you create new windows using <xref:System.Windows.Forms.HtmlWindow.Open%2A> or <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A>, <xref:System.Windows.Forms.HtmlWindow.Close%2A> causes the HTML Document Object Model to open a new instance of Internet Explorer. If you do not call <xref:System.Windows.Forms.HtmlWindow.Close%2A> on all of the windows you have created, this instance of Internet Explorer will remain running even after your application closes.  
-  
-   
-  
+ 
 ## Examples  
- The following code example opens a window, and closes it if the user has not used it in the past five minutes. The code example was written under the assumption that your form has a <xref:System.Windows.Forms.WebBrowser> control named `WebBrowser1`, a <xref:System.Windows.Forms.Button> named `Button1`, and a <xref:System.Windows.Forms.Timer> class named `Timer1`. To run this example successfully, change the first argument supplied to <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> to a valid URL.  
-  
- [!code-csharp[System.Windows.Forms.HtmlWindow#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#9)]
- [!code-vb[System.Windows.Forms.HtmlWindow#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#9)]  
-  
+The following code example opens a window, and closes it if the user has not used it in the past five minutes. The code example was written under the assumption that your form has a <xref:System.Windows.Forms.WebBrowser> control named `WebBrowser1`, a <xref:System.Windows.Forms.Button> named `Button1`, and a <xref:System.Windows.Forms.Timer> class named `Timer1`. To run this example successfully, change the first argument supplied to <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> to a valid URL.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlWindow#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#9)]
+[!code-vb[System.Windows.Forms.HtmlWindow#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,56 +153,56 @@
           <see langword="true" /> if the user clicked **Yes**; <see langword="false" /> if the user clicked **No** or closed the dialog box.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.HtmlWindow.Confirm%2A> displays a modal dialog box; the user will not be able to access the underlying HTML page without first closing this dialog box.  
+<xref:System.Windows.Forms.HtmlWindow.Confirm%2A> displays a modal dialog box; the user will not be able to access the underlying HTML page without first closing this dialog box.  
+ 
+Although <xref:System.Windows.Forms.HtmlWindow.Confirm%2A> accepts Unicode text as input, the Internet Explorer script prompt will not display non-Latin language text appropriately on Windows 95, Windows 98, Windows ME or Windows NT due to operating system limitations. For more information, see [INFO: Internet Explorer Script Prompts and MBCS/Unicode](http://support.microsoft.com/default.aspx?scid=kb;en-us;211147).  
+ 
   
- Although <xref:System.Windows.Forms.HtmlWindow.Confirm%2A> accepts Unicode text as input, the Internet Explorer script prompt will not display non-Latin language text appropriately on Windows 95, Windows 98, Windows ME or Windows NT due to operating system limitations. For more information, see [INFO: Internet Explorer Script Prompts and MBCS/Unicode](http://support.microsoft.com/default.aspx?scid=kb;en-us;211147).  
-  
-   
-  
+ 
 ## Examples  
- Copy the following HTML and save it into a form called orderForm.htm:  
-  
- `<HTML>`  
-  
- `<BODY>`  
-  
- `<FORM name="NewOrderForm">`  
-  
- `Select Part Type:`  
-  
- `<SELECT name="PartType">`  
-  
- `<OPTION>AZ-3700`  
-  
- `<OPTION>AZ-3701`  
-  
- `<OPTION>AZ-3702`  
-  
- `<SELECT><br>`  
-  
- `Quantity: <INPUT type="text" name="PartQty" size="2" maxsize="2"><br>`  
-  
- `Building/Desk:`  
-  
- `<INPUT type="text" name="PartBuilding" size="2" maxsize="2"> /`  
-  
- `<INPUT type="text" name="PartDesk" size="2" maxsize="2"><p>`  
-  
- `<INPUT type="submit" value="Transmit Order">`  
-  
- `</FORM>`  
-  
- `</BODY>`  
-  
- `</HTML>`  
-  
- The following code example displays a <xref:System.Windows.Forms.HtmlWindow.Confirm%2A> dialog box when the user submits `NewOrderForm`.  
-  
- [!code-csharp[System.Windows.Forms.HtmlWindow#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#10)]
- [!code-vb[System.Windows.Forms.HtmlWindow#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#10)]  
-  
+Copy the following HTML and save it into a form called orderForm.htm:  
+ 
+`<HTML>`  
+ 
+`<BODY>`  
+ 
+`<FORM name="NewOrderForm">`  
+ 
+`Select Part Type:`  
+ 
+`<SELECT name="PartType">`  
+ 
+`<OPTION>AZ-3700`  
+ 
+`<OPTION>AZ-3701`  
+ 
+`<OPTION>AZ-3702`  
+ 
+`<SELECT><br>`  
+ 
+`Quantity: <INPUT type="text" name="PartQty" size="2" maxsize="2"><br>`  
+ 
+`Building/Desk:`  
+ 
+`<INPUT type="text" name="PartBuilding" size="2" maxsize="2"> /`  
+ 
+`<INPUT type="text" name="PartDesk" size="2" maxsize="2"><p>`  
+ 
+`<INPUT type="submit" value="Transmit Order">`  
+ 
+`</FORM>`  
+ 
+`</BODY>`  
+ 
+`</HTML>`  
+ 
+The following code example displays a <xref:System.Windows.Forms.HtmlWindow.Confirm%2A> dialog box when the user submits `NewOrderForm`.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlWindow#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#10)]
+[!code-vb[System.Windows.Forms.HtmlWindow#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,18 +247,18 @@
         <value>A valid instance of <see cref="T:System.Windows.Forms.HtmlDocument" />, if a document is loaded. If this window contains a <c>FRAMESET</c>, or no document is currently loaded, it will return <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, you will access the <xref:System.Windows.Forms.HtmlWindow.Document%2A> through the <xref:System.Windows.Forms.WebBrowser.Document%2A> property of the <xref:System.Windows.Forms.WebBrowser> control. Use this property when you need to access a document within a `FRAME` using the <xref:System.Windows.Forms.HtmlWindow.Frames%2A> collection.  
+Typically, you will access the <xref:System.Windows.Forms.HtmlWindow.Document%2A> through the <xref:System.Windows.Forms.WebBrowser.Document%2A> property of the <xref:System.Windows.Forms.WebBrowser> control. Use this property when you need to access a document within a `FRAME` using the <xref:System.Windows.Forms.HtmlWindow.Frames%2A> collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example inspects each document within a page containing frames and creates a table of all of the outgoing hyperlinks from each page for future inspection.  
-  
- [!code-csharp[System.Windows.Forms.HtmlWindow#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#2)]
- [!code-vb[System.Windows.Forms.HtmlWindow#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#2)]  
-  
+The following code example inspects each document within a page containing frames and creates a table of all of the outgoing hyperlinks from each page for future inspection.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlWindow#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#2)]
+[!code-vb[System.Windows.Forms.HtmlWindow#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,20 +280,20 @@
         <value>An object that can be cast to an <see langword="IHTMLWindow2" />, <see langword="IHTMLWindow3" />, or <see langword="IHTMLWindow4 " />pointer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the underlying unmanaged interface pointers to the Document Object Model (DOM) to execute methods not exposed by <xref:System.Windows.Forms.HtmlWindow>.  
+Use the underlying unmanaged interface pointers to the Document Object Model (DOM) to execute methods not exposed by <xref:System.Windows.Forms.HtmlWindow>.  
+ 
+You must add a referenced to the unmanaged MSHTML.dll in order to use <xref:System.Windows.Forms.HtmlWindow.DomWindow%2A>. For more information, see [Importing a Type Library as an Assembly](~/docs/framework/interop/importing-a-type-library-as-an-assembly.md).  
+ 
   
- You must add a referenced to the unmanaged MSHTML.dll in order to use <xref:System.Windows.Forms.HtmlWindow.DomWindow%2A>. For more information, see [Importing a Type Library as an Assembly](~/docs/framework/interop/importing-a-type-library-as-an-assembly.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example obtains an `IHTMLWindow2` pointer from a document's window and displays a new document in a modal window.  
-  
- [!code-csharp[System.Windows.Forms.HtmlWindow#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#3)]
- [!code-vb[System.Windows.Forms.HtmlWindow#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#3)]  
-  
+The following code example obtains an `IHTMLWindow2` pointer from a document's window and displays a new document in a modal window.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlWindow#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#3)]
+[!code-vb[System.Windows.Forms.HtmlWindow#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -337,22 +337,22 @@
         <summary>Occurs when script running inside of the window encounters a run-time error.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- HTML pages can contain script code, usually written in JScript or VBScript, that executes when a page is loaded. <xref:System.Windows.Forms.HtmlWindow.Error> occurs whenever a script encounters a run-time error. Because script code is late-bound, which means that calls against the object are not resolved until run-time, errors can include everything from referencing a null object to calling an undefined property or method.  
+HTML pages can contain script code, usually written in JScript or VBScript, that executes when a page is loaded. <xref:System.Windows.Forms.HtmlWindow.Error> occurs whenever a script encounters a run-time error. Because script code is late-bound, which means that calls against the object are not resolved until run-time, errors can include everything from referencing a null object to calling an undefined property or method.  
+ 
+You can set the <xref:System.Windows.Forms.HtmlElementErrorEventArgs.Handled%2A> property of <xref:System.Windows.Forms.HtmlElementErrorEventArgs> to true in order to prevent the native error dialog box in Internet Explorer from displaying.  
+ 
+For more information about the difference between canceling event bubbling and canceling the default action on an event, see [About the DHTML Object Model](http://msdn.microsoft.com/library/ms533022.aspx).  
+ 
   
- You can set the <xref:System.Windows.Forms.HtmlElementErrorEventArgs.Handled%2A> property of <xref:System.Windows.Forms.HtmlElementErrorEventArgs> to true in order to prevent the native error dialog box in Internet Explorer from displaying.  
-  
- For more information about the difference between canceling event bubbling and canceling the default action on an event, see [About the DHTML Object Model](http://msdn.microsoft.com/library/ms533022.aspx).  
-  
-   
-  
+ 
 ## Examples  
- The following code example traps the error that results when a script on an HTML page attempts to access an object that is not defined in the document. The page must be fully loaded before the <xref:System.Windows.Forms.HtmlWindow.Error> event handler is attached, otherwise the example will not work.  
-  
- [!code-csharp[System.Windows.Forms.HtmlWindow#16](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#16)]
- [!code-vb[System.Windows.Forms.HtmlWindow#16](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#16)]  
-  
+The following code example traps the error that results when a script on an HTML page attempts to access an object that is not defined in the document. The page must be fully loaded before the <xref:System.Windows.Forms.HtmlWindow.Error> event handler is attached, otherwise the example will not work.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlWindow#16](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#16)]
+[!code-vb[System.Windows.Forms.HtmlWindow#16](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -374,12 +374,12 @@
         <summary>Puts the focus on the current window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If another window held the focus before <xref:System.Windows.Forms.HtmlWindow.Focus%2A> was called, that window will lose the focus.  
-  
- Do not call focus on an element inside of a window until the window's <xref:System.Windows.Forms.HtmlWindow.Load> event has been raised.  
-  
+If another window held the focus before <xref:System.Windows.Forms.HtmlWindow.Focus%2A> was called, that window will lose the focus.  
+ 
+Do not call focus on an element inside of a window until the window's <xref:System.Windows.Forms.HtmlWindow.Load> event has been raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -401,20 +401,20 @@
         <value>An <see cref="T:System.Windows.Forms.HtmlWindowCollection" /> of a document's <c>FRAME</c> and <c>IFRAME</c> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A `FRAME` is a set of windows defined within a `FRAMESET`. `FRAME`s enable hosting multiple documents within a single document. Each `FRAME` is defined as possessing a certain row and column width, and is position on the page in relation to the other `FRAME`s defined within the `FRAMESET`; the position of a `FRAME` is fixed, although a user may sometimes use the mouse cursor to grow or shrink the `FRAME`. An `IFRAME` is similar to a frame, but it need not be anchored in a fixed position.  
+A `FRAME` is a set of windows defined within a `FRAMESET`. `FRAME`s enable hosting multiple documents within a single document. Each `FRAME` is defined as possessing a certain row and column width, and is position on the page in relation to the other `FRAME`s defined within the `FRAMESET`; the position of a `FRAME` is fixed, although a user may sometimes use the mouse cursor to grow or shrink the `FRAME`. An `IFRAME` is similar to a frame, but it need not be anchored in a fixed position.  
+ 
+Frames will contain one instance of <xref:System.Windows.Forms.HtmlWindow> for each `FRAME` or `IFRAME` defined within a Web page.  
+ 
   
- Frames will contain one instance of <xref:System.Windows.Forms.HtmlWindow> for each `FRAME` or `IFRAME` defined within a Web page.  
-  
-   
-  
+ 
 ## Examples  
- The following code example inspects each document within a page containing frames and creates a table of all of the outgoing hyperlinks from each page for future inspection.  
-  
- [!code-csharp[System.Windows.Forms.HtmlWindow#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#2)]
- [!code-vb[System.Windows.Forms.HtmlWindow#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#2)]  
-  
+The following code example inspects each document within a page containing frames and creates a table of all of the outgoing hyperlinks from each page for future inspection.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlWindow#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#2)]
+[!code-vb[System.Windows.Forms.HtmlWindow#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -454,28 +454,28 @@
         <summary>Occurs when the current window obtains user input focus.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.HtmlWindow.GotFocus> will occur for:  
-  
+<xref:System.Windows.Forms.HtmlWindow.GotFocus> will occur for:  
+ 
 -   The first window in a `FRAMESET` when the `FRAMESET` first loads.  
-  
+ 
 -   The `FRAME` that last had focus when the window containing the <xref:System.Windows.Forms.WebBrowser> control is brought to the foreground.  
-  
+ 
 -   A `FRAME` clicked by the user, but only if the user's click does not put focus on an element within the window.  
+ 
+You cannot cancel the default action for the <xref:System.Windows.Forms.HtmlWindow.GotFocus> event, or prevent it from bubbling. For more information about the difference between canceling event bubbling and canceling the default action on an event, see [About the DHTML Object Model](http://msdn.microsoft.com/library/ms533022.aspx).  
+ 
   
- You cannot cancel the default action for the <xref:System.Windows.Forms.HtmlWindow.GotFocus> event, or prevent it from bubbling. For more information about the difference between canceling event bubbling and canceling the default action on an event, see [About the DHTML Object Model](http://msdn.microsoft.com/library/ms533022.aspx).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.GotFocus> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.GotFocus> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#452](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#452)]
- [!code-vb[System.Windows.Forms.EventExamples#452](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#452)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.GotFocus> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.GotFocus> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#452](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#452)]
+[!code-vb[System.Windows.Forms.EventExamples#452](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#452)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -497,10 +497,10 @@
         <value>The <see cref="T:System.Windows.Forms.HtmlHistory" /> for the current window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.HtmlWindow.History%2A> contains all URLs navigated to within the current window, which is referred to as the *navigation stack*, and provides methods for navigating back to those documents.  
-  
+<xref:System.Windows.Forms.HtmlWindow.History%2A> contains all URLs navigated to within the current window, which is referred to as the *navigation stack*, and provides methods for navigating back to those documents.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -523,18 +523,18 @@
           <see langword="true" /> if the window is still open on the screen; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Forms.HtmlWindow> has been closed by the user or by way of a call to the <xref:System.Windows.Forms.HtmlWindow.Close%2A> method, attempting to navigate to a new URL or access the window's document will result in an error. Use this property to determine whether it is safe to call properties and methods on the current window object.  
+If the <xref:System.Windows.Forms.HtmlWindow> has been closed by the user or by way of a call to the <xref:System.Windows.Forms.HtmlWindow.Close%2A> method, attempting to navigate to a new URL or access the window's document will result in an error. Use this property to determine whether it is safe to call properties and methods on the current window object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens a window, and closes it if the user has not used it in the past five minutes. The code example requires that your form has a <xref:System.Windows.Forms.WebBrowser> control named `WebBrowser1`, a <xref:System.Windows.Forms.Button> named `Button1`, and a <xref:System.Windows.Forms.Timer> class named `Timer1`.  
-  
- [!code-csharp[System.Windows.Forms.HtmlWindow#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#8)]
- [!code-vb[System.Windows.Forms.HtmlWindow#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#8)]  
-  
+The following code example opens a window, and closes it if the user has not used it in the past five minutes. The code example requires that your form has a <xref:System.Windows.Forms.WebBrowser> control named `WebBrowser1`, a <xref:System.Windows.Forms.Button> named `Button1`, and a <xref:System.Windows.Forms.Timer> class named `Timer1`.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlWindow#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#8)]
+[!code-vb[System.Windows.Forms.HtmlWindow#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -555,24 +555,24 @@
         <summary>Occurs when the window's document and all of its elements have finished initializing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.HtmlWindow.Load> event works similarly to the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event on the <xref:System.Windows.Forms.WebBrowser> control: it signals that it is safe to access HTML elements inside of the document.  
+The <xref:System.Windows.Forms.HtmlWindow.Load> event works similarly to the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event on the <xref:System.Windows.Forms.WebBrowser> control: it signals that it is safe to access HTML elements inside of the document.  
+ 
+You cannot cancel the default action for the <xref:System.Windows.Forms.HtmlWindow.Load> event.  
+ 
+For more information about the difference between canceling event bubbling and canceling the default action on an event, see [About the DHTML Object Model](http://msdn.microsoft.com/library/ms533022.aspx).  
+ 
   
- You cannot cancel the default action for the <xref:System.Windows.Forms.HtmlWindow.Load> event.  
-  
- For more information about the difference between canceling event bubbling and canceling the default action on an event, see [About the DHTML Object Model](http://msdn.microsoft.com/library/ms533022.aspx).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Load> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.Load> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#453](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#453)]
- [!code-vb[System.Windows.Forms.EventExamples#453](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#453)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Load> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.Load> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#453](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#453)]
+[!code-vb[System.Windows.Forms.EventExamples#453](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#453)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -593,15 +593,15 @@
         <summary>Occurs when user input focus has left the window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.LostFocus> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.LostFocus> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#454](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#454)]
- [!code-vb[System.Windows.Forms.EventExamples#454](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#454)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.LostFocus> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.LostFocus> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#454](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#454)]
+[!code-vb[System.Windows.Forms.EventExamples#454](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#454)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -626,12 +626,12 @@
         <summary>Moves the window to the specified coordinates on the screen.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot use <xref:System.Windows.Forms.HtmlWindow.MoveTo%2A> to move a window off of the visible edge of the screen; this method is also available through script on a Web page, and allowing untrusted script to render windows invisible is not considered secure.  
-  
- <xref:System.Windows.Forms.HtmlWindow.MoveTo%2A> will raise an <xref:System.UnauthorizedAccessException> if the window you are trying to move and its parent window have different top-level domains. For example, if you are hosting the <xref:System.Windows.Forms.WebBrowser> control pointing to a.adatum.com, create a new window using <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> to display b.adatum.com. In this case, both windows are considered to be part of the same top-level domain, and the exception is not thrown. However, if you call <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> to display www,microsoft.com, the two windows now have different top-level domains, and the <xref:System.Windows.Forms.HtmlWindow.MoveTo%2A> operation will cause the exception to throw.  
-  
+You cannot use <xref:System.Windows.Forms.HtmlWindow.MoveTo%2A> to move a window off of the visible edge of the screen; this method is also available through script on a Web page, and allowing untrusted script to render windows invisible is not considered secure.  
+ 
+<xref:System.Windows.Forms.HtmlWindow.MoveTo%2A> will raise an <xref:System.UnauthorizedAccessException> if the window you are trying to move and its parent window have different top-level domains. For example, if you are hosting the <xref:System.Windows.Forms.WebBrowser> control pointing to a.adatum.com, create a new window using <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> to display b.adatum.com. In this case, both windows are considered to be part of the same top-level domain, and the exception is not thrown. However, if you call <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> to display www,microsoft.com, the two windows now have different top-level domains, and the <xref:System.Windows.Forms.HtmlWindow.MoveTo%2A> operation will cause the exception to throw.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The code trying to execute this operation does not have permission to manipulate this window. See the Remarks section for details.</exception>
@@ -659,12 +659,12 @@
         <summary>Moves the window to the specified coordinates on the screen.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot use <xref:System.Windows.Forms.HtmlWindow.MoveTo%2A> to move a window off of the visible edge of the screen; this method is also available through script on a Web page, and allowing untrusted script to render windows invisible is not considered secure.  
-  
- <xref:System.Windows.Forms.HtmlWindow.MoveTo%2A> will raise an <xref:System.UnauthorizedAccessException> if the window you are trying to move and its parent window have different top-level domains. For example, if you are hosting the <xref:System.Windows.Forms.WebBrowser> control and it is pointing to a.adatum.com, you create a new window using <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> to display b.adatum.com. In this case, both windows are considered to be part of the same top-level domain, and the exception is not thrown. However, if you call <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> to display www,microsoft.com, the two windows now have different top-level domains, and the <xref:System.Windows.Forms.HtmlWindow.MoveTo%2A> operation will cause the exception to throw.  
-  
+You cannot use <xref:System.Windows.Forms.HtmlWindow.MoveTo%2A> to move a window off of the visible edge of the screen; this method is also available through script on a Web page, and allowing untrusted script to render windows invisible is not considered secure.  
+ 
+<xref:System.Windows.Forms.HtmlWindow.MoveTo%2A> will raise an <xref:System.UnauthorizedAccessException> if the window you are trying to move and its parent window have different top-level domains. For example, if you are hosting the <xref:System.Windows.Forms.WebBrowser> control and it is pointing to a.adatum.com, you create a new window using <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> to display b.adatum.com. In this case, both windows are considered to be part of the same top-level domain, and the exception is not thrown. However, if you call <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> to display www,microsoft.com, the two windows now have different top-level domains, and the <xref:System.Windows.Forms.HtmlWindow.MoveTo%2A> operation will cause the exception to throw.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The code trying to execute this operation does not have permission to manipulate this window. See the Remarks section for details.</exception>
@@ -708,10 +708,10 @@
         <summary>Displays or downloads the new content located at the specified URL.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `url` parameter points to an HTML page, the page currently displayed in the window will be destroyed and replaced with the new page; any references your application holds to managed DOM objects in the old page will not be valid. If `url` points to a resource that cannot be displayed by Internet Explorer, the user will be presented with a dialog box asking whether to open the resource outside of the application, save it to disk, or cancel the download operation.  
-  
+If the `url` parameter points to an HTML page, the page currently displayed in the window will be destroyed and replaced with the new page; any references your application holds to managed DOM objects in the old page will not be valid. If `url` points to a resource that cannot be displayed by Internet Explorer, the user will be presented with a dialog box asking whether to open the resource outside of the application, save it to disk, or cancel the download operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -761,10 +761,10 @@
           <see langword="true" /> if both parameters are <see langword="null" />, or if both elements have the same underlying COM interface; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The equality operator tests the `IUnknown` pointers of the underlying COM objects wrapped by the supplied <xref:System.Windows.Forms.HtmlWindow> classes.  
-  
+The equality operator tests the `IUnknown` pointers of the underlying COM objects wrapped by the supplied <xref:System.Windows.Forms.HtmlWindow> classes.  
+ 
  The equivalent method for this operator is <xref:System.Windows.Forms.HtmlWindow.Equals%28System.Object%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -859,20 +859,20 @@
         <returns>An <see cref="T:System.Windows.Forms.HtmlWindow" /> representing the new window, or the previously created window named by the <paramref name="target" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `target` parameter can name a window that was created as the result of a previous call to <xref:System.Windows.Forms.HtmlWindow.Open%2A>. The parameter may also point to a window opened by clicking on a hyperlink (`A` element) or a `FORM` element that uses the `TARGET` attribute to open its URL in a new window. The following HTML code will open a new window named `orderWindow` when the user clicks it:  
-  
- `<A HREF="/startOrder.aspx" TARGET="orderWindow">Click to Start Order</a>`  
-  
- If you supply any options for the `windowOptions` parameter, any option not included is automatically disabled. In other words, if you only specify by way of `windowOptions` that you want a status bar, then the menu bar, toolbar, title, scroll bars, and so on will not be displayed unless you explicitly enable them by way of `windowOptions`.  
-  
- If the file referenced by `url` is an HTML file, text file, or other file type that can be hosted inside of Internet Explorer, it will be displayed in the named window. If the file cannot be displayed inside of Internet Explorer, and the window named by target does not already exist, then the window will open only long enough for Internet Explorer to download the resource; it will close immediately afterwards.  
-  
- When you create new windows using <xref:System.Windows.Forms.HtmlWindow.Open%2A> or <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A>, it causes the HTML Document Object Model to open a new instance of Internet Explorer. If you do not call <xref:System.Windows.Forms.HtmlWindow.Close%2A> on all of the windows you have created, this instance of Internet Explorer will remain running even after your application has quit.  
-  
- If you use <xref:System.Windows.Forms.HtmlWindow.Open%2A> to load a URL in an existing window, `windowOptions` will be ignored; the window will retain the dimensions, appearance, and screen location first given it by the initial call to <xref:System.Windows.Forms.HtmlWindow.Open%2A>.  
-  
+The `target` parameter can name a window that was created as the result of a previous call to <xref:System.Windows.Forms.HtmlWindow.Open%2A>. The parameter may also point to a window opened by clicking on a hyperlink (`A` element) or a `FORM` element that uses the `TARGET` attribute to open its URL in a new window. The following HTML code will open a new window named `orderWindow` when the user clicks it:  
+ 
+`<A HREF="/startOrder.aspx" TARGET="orderWindow">Click to Start Order</a>`  
+ 
+If you supply any options for the `windowOptions` parameter, any option not included is automatically disabled. In other words, if you only specify by way of `windowOptions` that you want a status bar, then the menu bar, toolbar, title, scroll bars, and so on will not be displayed unless you explicitly enable them by way of `windowOptions`.  
+ 
+If the file referenced by `url` is an HTML file, text file, or other file type that can be hosted inside of Internet Explorer, it will be displayed in the named window. If the file cannot be displayed inside of Internet Explorer, and the window named by target does not already exist, then the window will open only long enough for Internet Explorer to download the resource; it will close immediately afterwards.  
+ 
+When you create new windows using <xref:System.Windows.Forms.HtmlWindow.Open%2A> or <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A>, it causes the HTML Document Object Model to open a new instance of Internet Explorer. If you do not call <xref:System.Windows.Forms.HtmlWindow.Close%2A> on all of the windows you have created, this instance of Internet Explorer will remain running even after your application has quit.  
+ 
+If you use <xref:System.Windows.Forms.HtmlWindow.Open%2A> to load a URL in an existing window, `windowOptions` will be ignored; the window will retain the dimensions, appearance, and screen location first given it by the initial call to <xref:System.Windows.Forms.HtmlWindow.Open%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -942,34 +942,34 @@
         <returns>An <see cref="T:System.Windows.Forms.HtmlWindow" /> representing the new window, or the previously created window named by the <paramref name="target" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `target` parameter can name a window that was created as the result of a previous call to <xref:System.Windows.Forms.HtmlWindow.Open%2A>. The parameter may also point to a window opened by clicking on a hyperlink (`A` element) or a `FORM` element that uses the `TARGET` attribute to open its URL in a new window. The following HTML code will open a new window named `orderWindow` when the user clicks it:  
+The `target` parameter can name a window that was created as the result of a previous call to <xref:System.Windows.Forms.HtmlWindow.Open%2A>. The parameter may also point to a window opened by clicking on a hyperlink (`A` element) or a `FORM` element that uses the `TARGET` attribute to open its URL in a new window. The following HTML code will open a new window named `orderWindow` when the user clicks it:  
+ 
+`<A HREF="/startOrder.aspx" TARGET="orderWindow">Click to Start Order</a>`  
+ 
+If you supply any options for the `windowOptions` parameter, any option not included is automatically disabled. In other words, if you only specify by way of `windowOptions` that you want a status bar, then the menu bar, toolbar, title, scroll bars, and so on will not be displayed unless you explicitly enable them by way of `windowOptions`.  
+ 
+If the file referenced by `url` is an HTML file, text file, or other file type that can be hosted inside of Internet Explorer, it will be displayed in the named window. If the file cannot be displayed inside of Internet Explorer, and the window named by target does not already exist, then the window will open only long enough for Internet Explorer to download the resource; it will close immediately afterwards.  
+ 
+When you create new windows using <xref:System.Windows.Forms.HtmlWindow.Open%2A> or <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A>, it causes the HTML Document Object Model to open a new instance of Internet Explorer. If you do not call <xref:System.Windows.Forms.HtmlWindow.Close%2A> on all of the windows you have created, this instance of Internet Explorer will remain running even after your application has quit.  
+ 
+If you use <xref:System.Windows.Forms.HtmlWindow.Open%2A> to load a URL in an existing window, `windowOptions` will be ignored; the window will retain the dimensions, appearance, and screen location first given it by the initial call to <xref:System.Windows.Forms.HtmlWindow.Open%2A> .  
+ 
   
- `<A HREF="/startOrder.aspx" TARGET="orderWindow">Click to Start Order</a>`  
-  
- If you supply any options for the `windowOptions` parameter, any option not included is automatically disabled. In other words, if you only specify by way of `windowOptions` that you want a status bar, then the menu bar, toolbar, title, scroll bars, and so on will not be displayed unless you explicitly enable them by way of `windowOptions`.  
-  
- If the file referenced by `url` is an HTML file, text file, or other file type that can be hosted inside of Internet Explorer, it will be displayed in the named window. If the file cannot be displayed inside of Internet Explorer, and the window named by target does not already exist, then the window will open only long enough for Internet Explorer to download the resource; it will close immediately afterwards.  
-  
- When you create new windows using <xref:System.Windows.Forms.HtmlWindow.Open%2A> or <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A>, it causes the HTML Document Object Model to open a new instance of Internet Explorer. If you do not call <xref:System.Windows.Forms.HtmlWindow.Close%2A> on all of the windows you have created, this instance of Internet Explorer will remain running even after your application has quit.  
-  
- If you use <xref:System.Windows.Forms.HtmlWindow.Open%2A> to load a URL in an existing window, `windowOptions` will be ignored; the window will retain the dimensions, appearance, and screen location first given it by the initial call to <xref:System.Windows.Forms.HtmlWindow.Open%2A> .  
-  
-   
-  
+ 
 ## Examples  
- The following code example contains two methods:  
-  
+The following code example contains two methods:  
+ 
 -   The first opens a URL in a window named `displayWindow`, which it creates with a status bar displayed.  
-  
+ 
 -   The second opens another URL in the same window, but specifies that only the location bar should be displayed.  
-  
- Notice that the dimensions of the window and the controls that are displayed depends on which URL is opened first. The code example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control named `WebBrowser1`.  
-  
- [!code-csharp[System.Windows.Forms.HtmlWindow#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#13)]
- [!code-vb[System.Windows.Forms.HtmlWindow#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#13)]  
-  
+ 
+Notice that the dimensions of the window and the controls that are displayed depends on which URL is opened first. The code example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control named `WebBrowser1`.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlWindow#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#13)]
+[!code-vb[System.Windows.Forms.HtmlWindow#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1015,14 +1015,14 @@
         <returns>An <see cref="T:System.Windows.Forms.HtmlWindow" /> representing the new window.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the file referenced by `url` is an HTML file, text file, or other file type that can be hosted inside of Internet Explorer, it will be displayed in a new window. If the file cannot be displayed inside of Internet Explorer, then the window will open only long enough for Internet Explorer to download the resource; it will close immediately afterwards.  
-  
- When you create new windows using <xref:System.Windows.Forms.HtmlWindow.Open%2A> or <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A>, it causes the HTML Document Object Model to open a new instance of Internet Explorer. If you do not call <xref:System.Windows.Forms.HtmlWindow.Close%2A> on all of the windows you have created, this instance of Internet Explorer will remain running even after your application has quit.  
-  
- If you want to load a document into a previously opened window, see the <xref:System.Windows.Forms.HtmlWindow.Open%2A> method.  
-  
+If the file referenced by `url` is an HTML file, text file, or other file type that can be hosted inside of Internet Explorer, it will be displayed in a new window. If the file cannot be displayed inside of Internet Explorer, then the window will open only long enough for Internet Explorer to download the resource; it will close immediately afterwards.  
+ 
+When you create new windows using <xref:System.Windows.Forms.HtmlWindow.Open%2A> or <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A>, it causes the HTML Document Object Model to open a new instance of Internet Explorer. If you do not call <xref:System.Windows.Forms.HtmlWindow.Close%2A> on all of the windows you have created, this instance of Internet Explorer will remain running even after your application has quit.  
+ 
+If you want to load a document into a previously opened window, see the <xref:System.Windows.Forms.HtmlWindow.Open%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1050,14 +1050,14 @@
         <returns>An <see cref="T:System.Windows.Forms.HtmlWindow" /> representing the new window.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the file referenced by `url` is an HTML file, text file, or other file type that can be hosted inside of Internet Explorer, it will be displayed in a new window. If the file cannot be displayed inside of Internet Explorer, then the window will open only long enough for Internet Explorer to download the resource; it will close immediately afterwards.  
-  
- When you create new windows using <xref:System.Windows.Forms.HtmlWindow.Open%2A> or <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A>, it causes the HTML Document Object Model to open a new instance of Internet Explorer. If you do not call <xref:System.Windows.Forms.HtmlWindow.Close%2A> on all of the windows you have created, this instance of Internet Explorer will remain running even after your application has quit.  
-  
- If you want to load a document into a previously opened window, see the <xref:System.Windows.Forms.HtmlWindow.Open%2A> method.  
-  
+If the file referenced by `url` is an HTML file, text file, or other file type that can be hosted inside of Internet Explorer, it will be displayed in a new window. If the file cannot be displayed inside of Internet Explorer, then the window will open only long enough for Internet Explorer to download the resource; it will close immediately afterwards.  
+ 
+When you create new windows using <xref:System.Windows.Forms.HtmlWindow.Open%2A> or <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A>, it causes the HTML Document Object Model to open a new instance of Internet Explorer. If you do not call <xref:System.Windows.Forms.HtmlWindow.Close%2A> on all of the windows you have created, this instance of Internet Explorer will remain running even after your application has quit.  
+ 
+If you want to load a document into a previously opened window, see the <xref:System.Windows.Forms.HtmlWindow.Open%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1079,10 +1079,10 @@
         <value>The <see cref="T:System.Windows.Forms.HtmlWindow" /> that owns the current window. If the current window is not a <c>FRAME</c>, or is not embedded inside of a <c>FRAME</c>, it returns <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a document containing frames, each `FRAME` within a `FRAMESET` acts as a separate child window on the page. The parent of each `FRAME` is the `FRAMESET` which contains the `FRAME`.  
-  
+In a document containing frames, each `FRAME` within a `FRAMESET` acts as a separate child window on the page. The parent of each `FRAME` is the `FRAMESET` which contains the `FRAME`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1104,18 +1104,18 @@
         <value>A <see cref="T:System.Drawing.Point" /> describing the x -and y-coordinates of the top-left corner of the screen, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Control.Location%2A> property of the <xref:System.Windows.Forms.WebBrowser> control will return the position of the control relative to the upper-left corner of the form. By contrast, <xref:System.Windows.Forms.HtmlWindow.Position%2A> will return the location of the document's display area relative to the top-left corner of the user's monitor.  
+The <xref:System.Windows.Forms.Control.Location%2A> property of the <xref:System.Windows.Forms.WebBrowser> control will return the position of the control relative to the upper-left corner of the form. By contrast, <xref:System.Windows.Forms.HtmlWindow.Position%2A> will return the location of the document's display area relative to the top-left corner of the user's monitor.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens a new window directly over the <xref:System.Windows.Forms.WebBrowser> control on the form. The code example requires that your form contains an instance of the <xref:System.Windows.Forms.WebBrowser> control named `WebBrowser1`.  
-  
- [!code-csharp[System.Windows.Forms.HtmlWindow#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#5)]
- [!code-vb[System.Windows.Forms.HtmlWindow#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#5)]  
-  
+The following code example opens a new window directly over the <xref:System.Windows.Forms.WebBrowser> control on the form. The code example requires that your form contains an instance of the <xref:System.Windows.Forms.WebBrowser> control named `WebBrowser1`.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlWindow#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#5)]
+[!code-vb[System.Windows.Forms.HtmlWindow#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1143,12 +1143,12 @@
         <returns>A <see cref="T:System.String" /> representing the text entered by the user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.HtmlWindow.Prompt%2A> provides a quick, easy way to obtain simple text input from the user.  
-  
- Although <xref:System.Windows.Forms.HtmlWindow.Prompt%2A> accepts Unicode text as input, the Internet Explorer script prompt will not display non-Latin language text appropriately on Windows 95, Windows 98, Windows ME or Windows NT due to operating system limitations. For more information, see [INFO: Internet Explorer Script Prompts and MBCS/Unicode](http://support.microsoft.com/default.aspx?scid=kb;en-us;211147).  
-  
+<xref:System.Windows.Forms.HtmlWindow.Prompt%2A> provides a quick, easy way to obtain simple text input from the user.  
+ 
+Although <xref:System.Windows.Forms.HtmlWindow.Prompt%2A> accepts Unicode text as input, the Internet Explorer script prompt will not display non-Latin language text appropriately on Windows 95, Windows 98, Windows ME or Windows NT due to operating system limitations. For more information, see [INFO: Internet Explorer Script Prompts and MBCS/Unicode](http://support.microsoft.com/default.aspx?scid=kb;en-us;211147).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1170,10 +1170,10 @@
         <summary>Takes focus off of the current window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When called on a `FRAME` window in a `FRAMESET`, <xref:System.Windows.Forms.HtmlWindow.RemoveFocus%2A> will cause that window to lose focus, but it will not automatically set focus on another window.  
-  
+When called on a `FRAME` window in a `FRAMESET`, <xref:System.Windows.Forms.HtmlWindow.RemoveFocus%2A> will cause that window to lose focus, but it will not automatically set focus on another window.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1194,15 +1194,15 @@
         <summary>Occurs when the user uses the mouse to change the dimensions of the window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Resize> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.Resize> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#455](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#455)]
- [!code-vb[System.Windows.Forms.EventExamples#455](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#455)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Resize> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.Resize> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#455](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#455)]
+[!code-vb[System.Windows.Forms.EventExamples#455](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#455)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1227,13 +1227,13 @@
         <summary>Changes the size of the window to the specified dimensions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example opens a new window, and resizes it to fill the available screen area.  
-  
- [!code-csharp[System.Windows.Forms.HtmlWindow#15](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#15)]
- [!code-vb[System.Windows.Forms.HtmlWindow#15](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#15)]  
-  
+The following code example opens a new window, and resizes it to fill the available screen area.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlWindow#15](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#15)]
+[!code-vb[System.Windows.Forms.HtmlWindow#15](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#15)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The window you are trying to resize is in a different domain than its parent window. This restriction is part of cross-frame scripting security; for more information, see [About Cross-Frame Scripting and Security](http://msdn.microsoft.com/library/ms533028.aspx).</exception>
@@ -1279,15 +1279,15 @@
         <summary>Occurs when the user scrolls through the window to view off-screen text.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Scroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.Scroll> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#456](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#456)]
- [!code-vb[System.Windows.Forms.EventExamples#456](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#456)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Scroll> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.Scroll> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#456](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#456)]
+[!code-vb[System.Windows.Forms.EventExamples#456](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#456)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1312,18 +1312,18 @@
         <summary>Moves the window to the specified coordinates.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.HtmlWindow.ScrollTo%2A> will cause the document to scroll so that the specified coordinate on the document is located in the upper-left corner of the document's window. If the document is not long or wide enough for this to happen, <xref:System.Windows.Forms.HtmlWindow.ScrollTo%2A> will scroll through the document as far as possible in the specified direction.  
+<xref:System.Windows.Forms.HtmlWindow.ScrollTo%2A> will cause the document to scroll so that the specified coordinate on the document is located in the upper-left corner of the document's window. If the document is not long or wide enough for this to happen, <xref:System.Windows.Forms.HtmlWindow.ScrollTo%2A> will scroll through the document as far as possible in the specified direction.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example scrolls through the document to the coordinate position clicked by the user.  
-  
- [!code-csharp[System.Windows.Forms.HtmlWindow#15](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#15)]
- [!code-vb[System.Windows.Forms.HtmlWindow#15](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#15)]  
-  
+The following code example scrolls through the document to the coordinate position clicked by the user.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlWindow#15](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#15)]
+[!code-vb[System.Windows.Forms.HtmlWindow#15](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1350,10 +1350,10 @@
         <summary>Scrolls the window to the designated position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.HtmlWindow.ScrollTo%2A> will cause the document to scroll so that the specified coordinate on the document is located in the upper-left corner of the document's window. If the document is not long or wide enough for this to happen, <xref:System.Windows.Forms.HtmlWindow.ScrollTo%2A> will scroll through the document as far as possible in the specified direction.  
-  
+<xref:System.Windows.Forms.HtmlWindow.ScrollTo%2A> will cause the document to scroll so that the specified coordinate on the document is located in the upper-left corner of the document's window. If the document is not long or wide enough for this to happen, <xref:System.Windows.Forms.HtmlWindow.ScrollTo%2A> will scroll through the document as far as possible in the specified direction.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1393,10 +1393,10 @@
         <value>A <see cref="T:System.String" /> containing the current status text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.WebBrowser> control does not display a status bar. Any new window that you open with the <xref:System.Windows.Forms.HtmlWindow.Open%2A> or <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> methods, however, will display a status bar by default.  
-  
+The <xref:System.Windows.Forms.WebBrowser> control does not display a status bar. Any new window that you open with the <xref:System.Windows.Forms.HtmlWindow.Open%2A> or <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> methods, however, will display a status bar by default.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1417,15 +1417,15 @@
         <summary>Occurs when the current page is unloading, and a new page is about to be displayed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Unload> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.Unload> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#457](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#457)]
- [!code-vb[System.Windows.Forms.EventExamples#457](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#457)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlWindow.Unload> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlWindow> named `HtmlWindow1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlWindow.Unload> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#457](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#457)]
+[!code-vb[System.Windows.Forms.EventExamples#457](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#457)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1447,10 +1447,10 @@
         <value>A <see cref="T:System.Uri" /> describing the URL.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only. To navigate the window to a new document, use the <xref:System.Windows.Forms.HtmlWindow.Navigate%2A> method.  
-  
+This property is read-only. To navigate the window to a new document, use the <xref:System.Windows.Forms.HtmlWindow.Navigate%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1472,18 +1472,18 @@
         <value>An <see cref="T:System.Windows.Forms.HtmlElement" /> corresponding to this window's <c>FRAME</c> element. If this window is not a frame, it returns <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you retrieve a `FRAME` element from the <xref:System.Windows.Forms.HtmlWindow.Frames%2A> collection, it returns an <xref:System.Windows.Forms.HtmlWindow>. Call <xref:System.Windows.Forms.HtmlWindow.WindowFrameElement%2A> on this object if you need to access attributes of the underlying `FRAME` element, such as the `SRC` attribute.  
+When you retrieve a `FRAME` element from the <xref:System.Windows.Forms.HtmlWindow.Frames%2A> collection, it returns an <xref:System.Windows.Forms.HtmlWindow>. Call <xref:System.Windows.Forms.HtmlWindow.WindowFrameElement%2A> on this object if you need to access attributes of the underlying `FRAME` element, such as the `SRC` attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example compares the `SRC` attribute of frames in a `FRAMESET` to the current location. If they are different, the frames are reset to their original URLs.  
-  
- [!code-csharp[System.Windows.Forms.HtmlWindow#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#8)]
- [!code-vb[System.Windows.Forms.HtmlWindow#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#8)]  
-  
+The following code example compares the `SRC` attribute of frames in a `FRAMESET` to the current location. If they are different, the frames are reset to their original URLs.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlWindow#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#8)]
+[!code-vb[System.Windows.Forms.HtmlWindow#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#8)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.UnauthorizedAccessException">You cannot access a <c>FRAME</c> elements or the <c>FRAME</c>'s document if the <c>FRAME</c> is in a different zone than the <c>FRAMESET</c> that contains it. For a full explanation, see [About Cross-Frame Scripting and Security](http://msdn.microsoft.com/library/ms533028.aspx).</permission>

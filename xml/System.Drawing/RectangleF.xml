@@ -22,10 +22,10 @@
     <summary>Stores a set of four floating-point numbers that represent the location and size of a rectangle. For more advanced region functions, use a <see cref="T:System.Drawing.Region" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A rectangle is defined by its width, height, and upper-left corner.  
-  
+A rectangle is defined by its width, height, and upper-left corner.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,14 +57,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.RectangleF" /> class with the specified location and size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.RectangleF.op_Implicit%2A>, <xref:System.Drawing.RectangleF.%23ctor%2A>, and <xref:System.Drawing.RectangleF.op_Equality%2A> members. This example is designed for use with a Windows Form. Paste this code into a form and call the `ConvertRectangleToRectangleF` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.RectanglesAndPoints#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#6)]
- [!code-csharp[System.Drawing.RectanglesAndPoints#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#6)]
- [!code-vb[System.Drawing.RectanglesAndPoints#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#6)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.RectangleF.op_Implicit%2A>, <xref:System.Drawing.RectangleF.%23ctor%2A>, and <xref:System.Drawing.RectangleF.op_Equality%2A> members. This example is designed for use with a Windows Form. Paste this code into a form and call the `ConvertRectangleToRectangleF` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.RectanglesAndPoints#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#6)]
+[!code-csharp[System.Drawing.RectanglesAndPoints#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#6)]
+[!code-vb[System.Drawing.RectanglesAndPoints#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,14 +100,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.RectangleF" /> class with the specified location and size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.RectangleF.%23ctor%2A>, <xref:System.Drawing.Rectangle.Round%2A> and <xref:System.Drawing.Rectangle.Truncate%2A> members. This example is designed for use with a Windows Form.  Paste this code into a form and call the `RoundingAndTruncatingRectangles` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.RectanglesAndPoints#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#5)]
- [!code-csharp[System.Drawing.RectanglesAndPoints#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#5)]
- [!code-vb[System.Drawing.RectanglesAndPoints#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#5)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.RectangleF.%23ctor%2A>, <xref:System.Drawing.Rectangle.Round%2A> and <xref:System.Drawing.Rectangle.Truncate%2A> members. This example is designed for use with a Windows Form.  Paste this code into a form and call the `RoundingAndTruncatingRectangles` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.RectanglesAndPoints#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#5)]
+[!code-csharp[System.Drawing.RectanglesAndPoints#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#5)]
+[!code-vb[System.Drawing.RectanglesAndPoints#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,10 +137,10 @@
         <value>The y-coordinate that is the sum of <see cref="P:System.Drawing.RectangleF.Y" /> and <see cref="P:System.Drawing.RectangleF.Height" /> of this <see cref="T:System.Drawing.RectangleF" /> structure.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.RectangleF.Bottom%2A> value represents the y-coordinate of the first point at the bottom edge of the rectangle that is not contained in the rectangle.  
-  
+The <xref:System.Drawing.RectangleF.Bottom%2A> value represents the y-coordinate of the first point at the bottom edge of the rectangle that is not contained in the rectangle.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,10 +261,10 @@
         <summary>Represents an instance of the <see cref="T:System.Drawing.RectangleF" /> class with its members uninitialized.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The members of the new <xref:System.Drawing.RectangleF> are left uninitialized.  
-  
+The members of the new <xref:System.Drawing.RectangleF> are left uninitialized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -334,10 +334,10 @@
         <returns>The new <see cref="T:System.Drawing.RectangleF" /> that this method creates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a <xref:System.Drawing.RectangleF> with the specified upper-left and lower-right corners.  
-  
+This method creates a <xref:System.Drawing.RectangleF> with the specified upper-left and lower-right corners.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,19 +423,19 @@
         <summary>Enlarges this <see cref="T:System.Drawing.RectangleF" /> by the specified amount.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enlarges this rectangle, not a copy of it. The rectangle is enlarged in both directions along an axis. For example, if a 50 by 50 rectangle is inflated by 50 in the x-axis, the resultant rectangle will be 150 units long (the original 50, the 50 in the minus direction, and the 50 in the plus direction) maintaining the rectangle's geometric center.  
+This method enlarges this rectangle, not a copy of it. The rectangle is enlarged in both directions along an axis. For example, if a 50 by 50 rectangle is inflated by 50 in the x-axis, the resultant rectangle will be 150 units long (the original 50, the 50 in the minus direction, and the 50 in the plus direction) maintaining the rectangle's geometric center.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> e, an OnPaint event object. The code creates a <xref:System.Drawing.RectangleF> and draws it to the screen in black. Notice that it has to be converted to a <xref:System.Drawing.Rectangle> for drawing purposes. Then the code enlarges the <xref:System.Drawing.RectangleF>, again converts it to a <xref:System.Drawing.Rectangle>, and draws it to the screen in red. Notice that the original (black) rectangle is expanded in both directions along the x-axis by 100 points.  
-  
- [!code-cpp[System.Drawing.ClassicRectangleFExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.ClassicRectangleFExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/CS/form1.cs#1)]
- [!code-vb[System.Drawing.ClassicRectangleFExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/VB/form1.vb#1)]  
-  
+This example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> e, an OnPaint event object. The code creates a <xref:System.Drawing.RectangleF> and draws it to the screen in black. Notice that it has to be converted to a <xref:System.Drawing.Rectangle> for drawing purposes. Then the code enlarges the <xref:System.Drawing.RectangleF>, again converts it to a <xref:System.Drawing.Rectangle>, and draws it to the screen in red. Notice that the original (black) rectangle is expanded in both directions along the x-axis by 100 points.  
+ 
+[!code-cpp[System.Drawing.ClassicRectangleFExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/CPP/form1.cpp#1)]
+[!code-csharp[System.Drawing.ClassicRectangleFExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/CS/form1.cs#1)]
+[!code-vb[System.Drawing.ClassicRectangleFExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -470,12 +470,12 @@
         <summary>Enlarges this <see cref="T:System.Drawing.RectangleF" /> structure by the specified amount.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enlarges this rectangle, not a copy of it. The rectangle is enlarged in both directions along an axis. For example, if a 50 by 50 rectangle is inflated by 50 in the x-axis, the resultant rectangle will be 150 units long (the original 50, the 50 in the minus direction, and the 50 in the plus direction) maintaining the rectangle's geometric center.  
-  
- If either `x` or `y` is negative, the <xref:System.Drawing.RectangleF> is deflated in the corresponding direction.  
-  
+This method enlarges this rectangle, not a copy of it. The rectangle is enlarged in both directions along an axis. For example, if a 50 by 50 rectangle is inflated by 50 in the x-axis, the resultant rectangle will be 150 units long (the original 50, the 50 in the minus direction, and the 50 in the plus direction) maintaining the rectangle's geometric center.  
+ 
+If either `x` or `y` is negative, the <xref:System.Drawing.RectangleF> is deflated in the corresponding direction.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -513,10 +513,10 @@
         <returns>The enlarged <see cref="T:System.Drawing.RectangleF" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method makes a copy of `rect`, enlarges the copy, and then returns the enlarged copy. The rectangle is enlarged in both directions along an axis. For example, if a 50 by 50 rectangle is inflated by 50 in the x-axis, the resultant rectangle will be 150 units long (the original 50, the 50 in the minus direction, and the 50 in the plus direction) maintaining the rectangle's geometric center.  
-  
+This method makes a copy of `rect`, enlarges the copy, and then returns the enlarged copy. The rectangle is enlarged in both directions along an axis. For example, if a 50 by 50 rectangle is inflated by 50 in the x-axis, the resultant rectangle will be 150 units long (the original 50, the 50 in the minus direction, and the 50 in the plus direction) maintaining the rectangle's geometric center.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -581,14 +581,14 @@
         <returns>A third <see cref="T:System.Drawing.RectangleF" /> structure the size of which represents the overlapped area of the two specified rectangles.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.OnPaint%2A> event object. The code creates two <xref:System.Drawing.RectangleF> objects and draws them to the screen in black and red. Notice that they have to be converted to <xref:System.Drawing.Rectangle> objects for drawing purposes. Then the code creates a third <xref:System.Drawing.RectangleF> using the <xref:System.Drawing.RectangleF.Intersect%2A> method, converts it to a <xref:System.Drawing.Rectangle>, and draws it to the screen in blue. Notice the third (blue) rectangle is the area of overlap of the other two rectangles:  
-  
- [!code-cpp[System.Drawing.ClassicRectangleFExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.ClassicRectangleFExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/CS/form1.cs#2)]
- [!code-vb[System.Drawing.ClassicRectangleFExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/VB/form1.vb#2)]  
-  
+This example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.OnPaint%2A> event object. The code creates two <xref:System.Drawing.RectangleF> objects and draws them to the screen in black and red. Notice that they have to be converted to <xref:System.Drawing.Rectangle> objects for drawing purposes. Then the code creates a third <xref:System.Drawing.RectangleF> using the <xref:System.Drawing.RectangleF.Intersect%2A> method, converts it to a <xref:System.Drawing.Rectangle>, and draws it to the screen in blue. Notice the third (blue) rectangle is the area of overlap of the other two rectangles:  
+ 
+[!code-cpp[System.Drawing.ClassicRectangleFExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/CPP/form1.cpp#2)]
+[!code-csharp[System.Drawing.ClassicRectangleFExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/CS/form1.cs#2)]
+[!code-vb[System.Drawing.ClassicRectangleFExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -792,14 +792,14 @@
         <returns>This operator returns <see langword="true" /> if the two specified <see cref="T:System.Drawing.RectangleF" /> structures have equal <see cref="P:System.Drawing.RectangleF.X" />, <see cref="P:System.Drawing.RectangleF.Y" />, <see cref="P:System.Drawing.RectangleF.Width" />, and <see cref="P:System.Drawing.RectangleF.Height" /> properties.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.RectangleF.op_Implicit%2A>, <xref:System.Drawing.RectangleF.%23ctor%2A>and <xref:System.Drawing.RectangleF.op_Equality%2A> members. This example is designed for use with a Windows Form. Paste this code into a form and call the `ConvertRectangleToRectangleF` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.RectanglesAndPoints#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#6)]
- [!code-csharp[System.Drawing.RectanglesAndPoints#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#6)]
- [!code-vb[System.Drawing.RectanglesAndPoints#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#6)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.RectangleF.op_Implicit%2A>, <xref:System.Drawing.RectangleF.%23ctor%2A>and <xref:System.Drawing.RectangleF.op_Equality%2A> members. This example is designed for use with a Windows Form. Paste this code into a form and call the `ConvertRectangleToRectangleF` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.RectanglesAndPoints#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CPP/form1.cpp#6)]
+[!code-csharp[System.Drawing.RectanglesAndPoints#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/CS/form1.cs#6)]
+[!code-vb[System.Drawing.RectanglesAndPoints#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RectanglesAndPoints/VB/form1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -891,10 +891,10 @@
         <value>The x-coordinate that is the sum of <see cref="P:System.Drawing.RectangleF.X" /> and <see cref="P:System.Drawing.RectangleF.Width" /> of this <see cref="T:System.Drawing.RectangleF" /> structure.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.RectangleF.Right%2A> value represents the x-coordinate of the first point at the right edge of the rectangle that is not contained in the rectangle.  
-  
+The <xref:System.Drawing.RectangleF.Right%2A> value represents the x-coordinate of the first point at the right edge of the rectangle that is not contained in the rectangle.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1009,19 +1009,19 @@
         <returns>A third <see cref="T:System.Drawing.RectangleF" /> structure that contains both of the two rectangles that form the union.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When one of the two rectangles is empty, meaning all of its values are zero, the <xref:System.Drawing.Rectangle.Union%2A> method returns a rectangle with a starting point of (0, 0), and the height and width of the non-empty rectangle. For example, if you have two rectangles A = (0, 0; 0, 0) and B = (1, 1; 2, 2), then the union of A and B is (0, 0; 2, 2).  
+When one of the two rectangles is empty, meaning all of its values are zero, the <xref:System.Drawing.Rectangle.Union%2A> method returns a rectangle with a starting point of (0, 0), and the height and width of the non-empty rectangle. For example, if you have two rectangles A = (0, 0; 0, 0) and B = (1, 1; 2, 2), then the union of A and B is (0, 0; 2, 2).  
+ 
   
-   
-  
+ 
 ## Examples  
- This example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> e, an <xref:System.Windows.Forms.Control.OnPaint%2A> event object. The code creates two <xref:System.Drawing.RectangleF> s and draws them to the screen in black and red. Notice that they have to be converted to <xref:System.Drawing.Rectangle> s for drawing purposes. Then the code creates a third <xref:System.Drawing.RectangleF> using the <xref:System.Drawing.RectangleF.Union%2A> method, converts it to a <xref:System.Drawing.Rectangle>, and draws it to the screen in blue. Notice the third (blue) rectangle is the smallest possible rectangle that can contain both of the other two rectangles:  
-  
- [!code-cpp[System.Drawing.ClassicRectangleFExamples#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/CPP/form1.cpp#3)]
- [!code-csharp[System.Drawing.ClassicRectangleFExamples#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/CS/form1.cs#3)]
- [!code-vb[System.Drawing.ClassicRectangleFExamples#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/VB/form1.vb#3)]  
-  
+This example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> e, an <xref:System.Windows.Forms.Control.OnPaint%2A> event object. The code creates two <xref:System.Drawing.RectangleF> s and draws them to the screen in black and red. Notice that they have to be converted to <xref:System.Drawing.Rectangle> s for drawing purposes. Then the code creates a third <xref:System.Drawing.RectangleF> using the <xref:System.Drawing.RectangleF.Union%2A> method, converts it to a <xref:System.Drawing.Rectangle>, and draws it to the screen in blue. Notice the third (blue) rectangle is the smallest possible rectangle that can contain both of the other two rectangles:  
+ 
+[!code-cpp[System.Drawing.ClassicRectangleFExamples#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/CPP/form1.cpp#3)]
+[!code-csharp[System.Drawing.ClassicRectangleFExamples#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/CS/form1.cs#3)]
+[!code-vb[System.Drawing.ClassicRectangleFExamples#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicRectangleFExamples/VB/form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

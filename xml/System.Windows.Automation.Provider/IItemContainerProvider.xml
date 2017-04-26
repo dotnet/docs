@@ -22,10 +22,10 @@
     <summary>Exposes a method to enable applications to find an element in a container, such as a virtualized list.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface must be implemented by containers that support virtualization and have no other means to find the virtualized element.  
-  
+This interface must be implemented by containers that support virtualization and have no other means to find the virtualized element.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,10 +55,10 @@
         <returns>The first item that matches the search criterion; otherwise, <see langword="null" /> if no items match.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set the `propertyId` parameter to `0` to retrieve the next item after `startAfter`, regardless of the value specified in `value`. Set `startAfter` to `null` to start the search with the first item.  
-  
+Set the `propertyId` parameter to `0` to retrieve the next item after `startAfter`, regardless of the value specified in `value`. Set `startAfter` to `null` to start the search with the first item.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,12 +14,12 @@
     <summary>The exception that is thrown when a XAML writer attempts to write a value for a duplicate member into the same object node.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you handle this exception from a XAML node stream, members might be reported as duplicates in several possible situations. For example, an explicit property element for a XAML content property might be preceded by whitespace that is interpreted as content, if the collection is whitespace significant. Or the XAML writer might be attempting to reset a property that should instead be using a `GetObject` default value. If you analyze individual nodes in the XAML node stream, you can often determine the source of the problem.  
-  
- If a XAML object writer provides special handing for duplicate members, it can prevent some duplicate member exceptions if you specify <xref:System.Xaml.XamlObjectWriterSettings.SkipDuplicatePropertyCheck%2A> as `true` in <xref:System.Xaml.XamlObjectWriterSettings> that initialize the <xref:System.Xaml.XamlObjectWriter>.  
-  
+If you handle this exception from a XAML node stream, members might be reported as duplicates in several possible situations. For example, an explicit property element for a XAML content property might be preceded by whitespace that is interpreted as content, if the collection is whitespace significant. Or the XAML writer might be attempting to reset a property that should instead be using a `GetObject` default value. If you analyze individual nodes in the XAML node stream, you can often determine the source of the problem.  
+ 
+If a XAML object writer provides special handing for duplicate members, it can prevent some duplicate member exceptions if you specify <xref:System.Xaml.XamlObjectWriterSettings.SkipDuplicatePropertyCheck%2A> as `true` in <xref:System.Xaml.XamlObjectWriterSettings> that initialize the <xref:System.Xaml.XamlObjectWriter>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -98,10 +98,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlDuplicateMemberException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,10 +171,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlDuplicateMemberException" /> class with serialized data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object that is transmitted over a stream.  
-  
+This constructor is called during deserialization to reconstitute the exception object that is transmitted over a stream.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

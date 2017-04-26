@@ -14,10 +14,10 @@
     <summary>Defines the smallest unit of a code access security permission that is set for an <see cref="T:System.Diagnostics.EventLog" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on code access security, see [Code Access Security](~/docs/framework/misc/code-access-security.md).  
-  
+For more information on code access security, see [Code Access Security](~/docs/framework/misc/code-access-security.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventLogPermissionEntry" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the application is running in a High trust zone, request for permission to the local machine must refer to the machine name as COMPUTERNAME or ".", instead of the full machine name. Full machine name is not accepted for security reasons. In addition, the COMPUTERNAME must be treated as case-sensitive.  
-  
+If the application is running in a High trust zone, request for permission to the local machine must refer to the machine name as COMPUTERNAME or ".", instead of the full machine name. Full machine name is not accepted for security reasons. In addition, the COMPUTERNAME must be treated as case-sensitive.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The computer name is invalid.</exception>
@@ -67,10 +67,10 @@
         <value>The name of the computer on which to read or write events.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the application is running in a High trust zone, request for permission to the local machine must refer to the machine name as COMPUTERNAME or ".", instead of the full machine name. Full machine name is not accepted for security reasons. In addition, the COMPUTERNAME must be treated as case-sensitive.  
-  
+If the application is running in a High trust zone, request for permission to the local machine must refer to the machine name as COMPUTERNAME or ".", instead of the full machine name. Full machine name is not accepted for security reasons. In addition, the COMPUTERNAME must be treated as case-sensitive.  
+ 
  ]]></format>
         </remarks>
       </Docs>

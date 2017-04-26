@@ -18,19 +18,19 @@
     <summary>When overridden in a derived form, provides functionality for tasks.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This abstract class provides default implementations for the methods and properties of the <xref:Microsoft.Build.Framework.ITask> interface.  
+This abstract class provides default implementations for the methods and properties of the <xref:Microsoft.Build.Framework.ITask> interface.  
+ 
+This class can only be instantiated in a derived form.  
+ 
   
- This class can only be instantiated in a derived form.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows the code for a task that creates one or more directories.  
-  
- [!code-csharp[msbuild_MakeDirTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_MakeDirTask/CS/msbuild_MakeDirTask.cs#1)]  
-  
+The following example shows the code for a task that creates one or more directories.  
+ 
+[!code-csharp[msbuild_MakeDirTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_MakeDirTask/CS/msbuild_MakeDirTask.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,10 +67,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Utilities.Task" /> class with the specified <see cref="P:Microsoft.Build.Utilities.Task.TaskResources" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor allows derived task classes to register their resources.  
-  
+This constructor allows derived task classes to register their resources.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,10 +94,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Utilities.Task" /> class with the specified <see cref="P:Microsoft.Build.Utilities.Task.TaskResources" /> and <see cref="P:Microsoft.Build.Utilities.Task.HelpKeywordPrefix" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor allows derived task classes to register their resources, as well as provide a prefix for composing help keywords from string resource names. If `helpKeywordPrefix` is an empty string, string resource names will be used verbatim as help keywords.  
-  
+This constructor allows derived task classes to register their resources, as well as provide a prefix for composing help keywords from string resource names. If `helpKeywordPrefix` is an empty string, string resource names will be used verbatim as help keywords.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <value>The <see cref="T:Microsoft.Build.Framework.IBuildEngine" /> available to tasks.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The build engine automatically sets this property to allow tasks to call back into it.  
-  
+The build engine automatically sets this property to allow tasks to call back into it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,17 +200,17 @@
           <see langword="true" /> if the task successfully executed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class must be overridden in a derived class, and is used for performing task execution logic.  
+This class must be overridden in a derived class, and is used for performing task execution logic.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the code for a task that creates one or more directories.  
-  
- [!code-csharp[msbuild_MakeDirTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_MakeDirTask/CS/msbuild_MakeDirTask.cs#1)]  
-  
+The following example shows the code for a task that creates one or more directories.  
+ 
+[!code-csharp[msbuild_MakeDirTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_MakeDirTask/CS/msbuild_MakeDirTask.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,10 +232,10 @@
         <value>The prefix used to compose Help keywords from resource names.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a task does not have Help keywords associated with its messages, it can ignore this property or set it to `null`. If this property is set to an empty <xref:System.String>, resource names will be used verbatim as Help keywords.  
-  
+If a task does not have Help keywords associated with its messages, it can ignore this property or set it to `null`. If this property is set to an empty <xref:System.String>, resource names will be used verbatim as Help keywords.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -257,12 +257,12 @@
         <value>The host object associated with the task. This value can be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the host IDE has associated a host object with this particular task, then the build engine sets this property.  
-  
- The host object is provided by <xref:Microsoft.Build.Execution.HostServices>. Visual Studio determines the host object via a system registry key. For more information, see <xref:Microsoft.VisualStudio.Shell.Interop.IVsMSBuildHostObject>.  
-  
+If the host IDE has associated a host object with this particular task, then the build engine sets this property.  
+ 
+The host object is provided by <xref:Microsoft.Build.Execution.HostServices>. Visual Studio determines the host object via a system registry key. For more information, see <xref:Microsoft.VisualStudio.Shell.Interop.IVsMSBuildHostObject>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -284,12 +284,12 @@
         <value>The logging helper object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows the code for a task that creates one or more directories.  
-  
- [!code-csharp[msbuild_MakeDirTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_MakeDirTask/CS/msbuild_MakeDirTask.cs#1)]  
-  
+The following example shows the code for a task that creates one or more directories.  
+ 
+[!code-csharp[msbuild_MakeDirTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_MakeDirTask/CS/msbuild_MakeDirTask.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,10 +311,10 @@
         <value>The culture-specific resources associated with the task. This value can be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If derived classes have localized strings, then they should register their resources either during construction, or through this property.  
-  
+If derived classes have localized strings, then they should register their resources either during construction, or through this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

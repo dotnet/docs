@@ -38,37 +38,37 @@
  To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System.Xml.Linq/XLinq.cs#3367036406d1344a).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System.Xml.Linq/XLinq.cs#3367036406d1344a). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
- This class represents an XML element, the fundamental XML construct.  See [XElement Class Overview](http://msdn.microsoft.com/library/d35180fe-7016-4895-9bfc-ba1e3f7875ec) for other usage information.  
-  
- An element has an <xref:System.Xml.Linq.XName>, optionally one or more attributes, and can optionally contain content (for more information, see <xref:System.Xml.Linq.XContainer.Nodes%2A>).  
-  
- An <xref:System.Xml.Linq.XElement> can contain the following types of content:  
-  
+ 
+This class represents an XML element, the fundamental XML construct.  See [XElement Class Overview](http://msdn.microsoft.com/library/d35180fe-7016-4895-9bfc-ba1e3f7875ec) for other usage information.  
+ 
+An element has an <xref:System.Xml.Linq.XName>, optionally one or more attributes, and can optionally contain content (for more information, see <xref:System.Xml.Linq.XContainer.Nodes%2A>).  
+ 
+An <xref:System.Xml.Linq.XElement> can contain the following types of content:  
+ 
 -   <xref:System.Xml.Linq.XElement>  
-  
+ 
 -   <xref:System.Xml.Linq.XComment>  
-  
+ 
 -   <xref:System.Xml.Linq.XProcessingInstruction>  
-  
+ 
 -   <xref:System.Xml.Linq.XText>  
+ 
+For details about the valid content of an <xref:System.Xml.Linq.XElement>, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+<xref:System.Xml.Linq.XElement> derives from <xref:System.Xml.Linq.XContainer>, which derives from <xref:System.Xml.Linq.XNode>.  
+ 
+Some <xref:System.Xml.Linq.XElement> methods can be used from XAML. For more information, see [LINQ to XML Dynamic Properties](http://msdn.microsoft.com/library/0455f47c-4a68-4f2e-a3f8-dd1d85b99012).  
+ 
   
- For details about the valid content of an <xref:System.Xml.Linq.XElement>, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
- <xref:System.Xml.Linq.XElement> derives from <xref:System.Xml.Linq.XContainer>, which derives from <xref:System.Xml.Linq.XNode>.  
-  
- Some <xref:System.Xml.Linq.XElement> methods can be used from XAML. For more information, see [LINQ to XML Dynamic Properties](http://msdn.microsoft.com/library/0455f47c-4a68-4f2e-a3f8-dd1d85b99012).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree. The content of the new element comes from a LINQ query.  
-  
+The following example creates an XML tree. The content of the new element comes from a LINQ query.  
+ 
 ```csharp  
   
                 XElement xmlTree1 = new XElement("Root",  
@@ -87,7 +87,7 @@ XElement xmlTree2 = new XElement("Root",
 );  
 Console.WriteLine(xmlTree2);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree1 As XElement = _  
@@ -110,9 +110,9 @@ Dim xmlTree2 As XElement = _
 Console.WriteLine(xmlTree2)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -121,9 +121,9 @@ Console.WriteLine(xmlTree2)
   <Child5>5</Child5>  
 </Root>  
 ```  
-  
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
-  
+ 
+The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ 
 ```csharp  
   
                 XNamespace aw = "http://www.adventure-works.com";  
@@ -143,7 +143,7 @@ XElement xmlTree2 = new XElement(aw + "Root",
 );  
 Console.WriteLine(xmlTree2);  
 ```  
-  
+ 
 ```vb  
   
                 Imports <xmlns="http://www.adventure-works.com">  
@@ -171,9 +171,9 @@ Module Module1
     End SUb  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root xmlns="http://www.adventure-works.com">  
@@ -182,7 +182,7 @@ End Module
   <Child5>5</Child5>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -214,15 +214,15 @@ End Module
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XElement" /> class from another <see cref="T:System.Xml.Linq.XElement" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor makes a deep copy of an element.  
+This constructor makes a deep copy of an element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree, creates a clone of the tree, and then calls <xref:System.Xml.Linq.XNode.DeepEquals%2A>, which tests whether the two XML trees are equal.  
-  
+The following example creates an XML tree, creates a clone of the tree, and then calls <xref:System.Xml.Linq.XNode.DeepEquals%2A>, which tests whether the two XML trees are equal.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -241,7 +241,7 @@ xmlTree.Add(new XElement("Child3", 3));
   
 Console.WriteLine("xmlTree = treeClone: {0}", XNode.DeepEquals(xmlTree, treeClone));  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _  
@@ -261,15 +261,15 @@ xmlTree.Add(New XElement("Child3", 3))
 Console.WriteLine("xmlTree = treeClone: {0}", XNode.DeepEquals(xmlTree, treeClone))  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 xmlTree = treeClone: True  
 xmlTree = treeClone: False  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -301,45 +301,45 @@ xmlTree = treeClone: False
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XElement" /> class with the specified name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates an element with no content and no attributes.  
+This constructor creates an element with no content and no attributes.  
+ 
+There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>. When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ 
   
- There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>. When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an element with no content.  
-  
+The following example creates an element with no content.  
+ 
 ```csharp  
   
                 XElement el = new XElement("Root");  
 Console.WriteLine(el);  
 ```  
-  
+ 
 ```vb  
   
                 Dim el As XElement = <Root/>  
 Console.WriteLine(el)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
 <Root />  
 ```  
-  
- The following example creates an element in a namespace with no content. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
-  
+ 
+The following example creates an element in a namespace with no content. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ 
 ```  
   
                 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root");  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 Imports <xmlns="http://www.adventure-works.com">  
@@ -351,14 +351,14 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
 <Root xmlns="http://www.adventure-works.com" />  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -390,15 +390,15 @@ End Module
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XElement" /> class from an <see cref="T:System.Xml.Linq.XStreamingElement" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor iterates through the contents of the specified <xref:System.Xml.Linq.XStreamingElement>, and creates an element with its contents.  
+This constructor iterates through the contents of the specified <xref:System.Xml.Linq.XStreamingElement>, and creates an element with its contents.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a source XML tree, and then creates an <xref:System.Xml.Linq.XStreamingElement> from a query on the source XML tree. It then serializes the <xref:System.Xml.Linq.XStreamingElement> to the console, adds a new element to the source XML tree, and then serializes the <xref:System.Xml.Linq.XStreamingElement> again. You can see that element newly added to the source XML tree is not included in the first serialization, but is included in the second.  
-  
+The following example creates a source XML tree, and then creates an <xref:System.Xml.Linq.XStreamingElement> from a query on the source XML tree. It then serializes the <xref:System.Xml.Linq.XStreamingElement> to the console, adds a new element to the source XML tree, and then serializes the <xref:System.Xml.Linq.XStreamingElement> again. You can see that element newly added to the source XML tree is not included in the first serialization, but is included in the second.  
+ 
 ```csharp  
   
                 XElement src = new XElement("Root",  
@@ -416,7 +416,7 @@ src.Add(new XElement("Child4", 4));
 Console.WriteLine("----");  
 Console.WriteLine(xse);  
 ```  
-  
+ 
 ```vb  
   
                 Dim src As XElement = _   
@@ -435,9 +435,9 @@ src.Add(New XElement("Child4", 4))
 Console.WriteLine("----")  
 Console.WriteLine(xse)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <NewRoot>  
@@ -451,7 +451,7 @@ Console.WriteLine(xse)
   <Child4>4</Child4>  
 </NewRoot>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -485,21 +485,21 @@ Console.WriteLine(xse)
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XElement" /> class with the specified name and content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates an element with the specified content and attributes.  
+This constructor creates an element with the specified content and attributes.  
+ 
+There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
+ 
+When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ 
+For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
   
- There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
-  
- When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
-  
- For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree. The content of the new element comes from a LINQ query.  
-  
+The following example creates an XML tree. The content of the new element comes from a LINQ query.  
+ 
 ```csharp  
   
                 XElement xmlTree1 = new XElement("Root",  
@@ -518,7 +518,7 @@ XElement xmlTree2 = new XElement("Root",
 );  
 Console.WriteLine(xmlTree2);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree1 As XElement = _   
@@ -541,9 +541,9 @@ Dim xmlTree2 As XElement = _
 Console.WriteLine(xmlTree2)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -552,9 +552,9 @@ Console.WriteLine(xmlTree2)
   <Child5>5</Child5>  
 </Root>  
 ```  
-  
- The following example creates an XML tree with a variety of types of content.  
-  
+ 
+The following example creates an XML tree with a variety of types of content.  
+ 
 ```csharp  
   
                 XElement root;  
@@ -614,7 +614,7 @@ XAttribute[] attArray = {
 root = new XElement("Root", attArray);  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement  
@@ -675,9 +675,9 @@ root = <Root><%= attArray %></Root>
 Console.WriteLine(root)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <Root>Some text</Root>  
@@ -695,9 +695,9 @@ Console.WriteLine(root)
 </Root>  
 <Root NewAtt1="1" NewAtt2="2" NewAtt3="3" />  
 ```  
-  
- The following example creates an XML tree in a namespace.  
-  
+ 
+The following example creates an XML tree in a namespace.  
+ 
 ```csharp  
   
                 // Create an XML tree in a namespace.  
@@ -707,7 +707,7 @@ XElement root = new XElement(aw + "Root",
 );  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 ' Create an XML tree in a namespace.  
@@ -717,18 +717,18 @@ Dim root As XElement = _
     </Root>  
 Console.WriteLine(root)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root xmlns="http://www.adventure-works.com">  
   <Child>child content</Child>  
 </Root>  
 ```  
-  
- The following example creates an XML tree with nested namespaces.  
-  
+ 
+The following example creates an XML tree with nested namespaces.  
+ 
 ```csharp  
   
                 // Create an XML tree with nested namespaces.  
@@ -744,7 +744,7 @@ XDocument root = new XDocument(
 );  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 ' Create an XML tree with nested namespaces.  
@@ -757,9 +757,9 @@ Dim root As XDocument = _
     </Root>  
 Console.WriteLine(root)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root xmlns="http://www.adventure-works.com">  
@@ -768,7 +768,7 @@ Console.WriteLine(root)
   </Child>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -808,21 +808,21 @@ Console.WriteLine(root)
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XElement" /> class with the specified name and content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates an element with the specified content and attributes.  
+This constructor creates an element with the specified content and attributes.  
+ 
+There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
+ 
+When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ 
+For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
   
- There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
-  
- When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
-  
- For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree. The content of the new element comes from a LINQ query.  
-  
+The following example creates an XML tree. The content of the new element comes from a LINQ query.  
+ 
 ```csharp  
   
                 XElement xmlTree1 = new XElement("Root",  
@@ -841,7 +841,7 @@ XElement xmlTree2 = new XElement("Root",
 );  
 Console.WriteLine(xmlTree2);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree1 As XElement = _   
@@ -864,9 +864,9 @@ Dim xmlTree2 As XElement = _
 Console.WriteLine(xmlTree2)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -875,9 +875,9 @@ Console.WriteLine(xmlTree2)
   <Child5>5</Child5>  
 </Root>  
 ```  
-  
- The following example creates an XML tree with a variety of types of content.  
-  
+ 
+The following example creates an XML tree with a variety of types of content.  
+ 
 ```csharp  
   
                 XElement root;  
@@ -937,7 +937,7 @@ XAttribute[] attArray = {
 root = new XElement("Root", attArray);  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement  
@@ -998,9 +998,9 @@ root = <Root><%= attArray %></Root>
 Console.WriteLine(root)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <Root>Some text</Root>  
@@ -1018,9 +1018,9 @@ Console.WriteLine(root)
 </Root>  
 <Root NewAtt1="1" NewAtt2="2" NewAtt3="3" />  
 ```  
-  
- The following example creates an XML tree in a namespace.  
-  
+ 
+The following example creates an XML tree in a namespace.  
+ 
 ```csharp  
   
                 // Create an XML tree in a namespace.  
@@ -1030,7 +1030,7 @@ XElement root = new XElement(aw + "Root",
 );  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 ' Create an XML tree in a namespace.  
@@ -1040,18 +1040,18 @@ Dim root As XElement = _
     </Root>  
 Console.WriteLine(root)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root xmlns="http://www.adventure-works.com">  
   <Child>child content</Child>  
 </Root>  
 ```  
-  
- The following example creates an XML tree with nested namespaces.  
-  
+ 
+The following example creates an XML tree with nested namespaces.  
+ 
 ```csharp  
   
                 // Create an XML tree with nested namespaces.  
@@ -1064,7 +1064,7 @@ XElement root = new XElement(aw + "Root",
 );  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 ' Create an XML tree with nested namespaces.  
@@ -1078,9 +1078,9 @@ Dim root As XDocument = _
 Console.WriteLine(root)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root xmlns="http://www.adventure-works.com">  
@@ -1090,7 +1090,7 @@ Console.WriteLine(root)
 </Root>  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1123,17 +1123,17 @@ Console.WriteLine(root)
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> of elements that contain this element, and the ancestors of this element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements in the returned collection are in reverse document order.  
+The elements in the returned collection are in reverse document order.  
+ 
+This method uses deferred execution.  
+ 
   
- This method uses deferred execution.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree. It then finds the `GrandChild` element, and then prints the ancestors of it.  
-  
+The following example creates an XML tree. It then finds the `GrandChild` element, and then prints the ancestors of it.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1148,7 +1148,7 @@ IEnumerable<XElement> aas =
 foreach (XElement el in aas)  
     Console.WriteLine(el.Name);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -1169,16 +1169,16 @@ For Each el In aas
 Next  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 GrandChild  
 Child  
 Root  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1214,17 +1214,17 @@ Root
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> that contain this element, and the ancestors of this element. Only elements that have a matching <see cref="T:System.Xml.Linq.XName" /> are included in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements in the returned collection are in reverse document order.  
+The elements in the returned collection are in reverse document order.  
+ 
+This method uses deferred execution.  
+ 
   
- This method uses deferred execution.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses this .  
-  
+The following example uses this .  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1237,7 +1237,7 @@ IEnumerable<XElement> aas = gc.AncestorsAndSelf("Child");
 foreach (XElement el in aas)  
     Console.WriteLine(el.Name);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -1254,14 +1254,14 @@ For Each el In aas
 Next  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Child  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1297,17 +1297,17 @@ Child
         <returns>An <see cref="T:System.Xml.Linq.XAttribute" /> that has the specified <see cref="T:System.Xml.Linq.XName" />; <see langword="null" /> if there is no attribute with the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some  return collections of elements or attributes. This method returns only a single attribute. Sometimes this is referred to as a *singleton* (in contrast to a *collection*).  
+Some  return collections of elements or attributes. This method returns only a single attribute. Sometimes this is referred to as a *singleton* (in contrast to a *collection*).  
+ 
+Visual Basic users can use the integrated attribute axis to retrieve the value of an attribute with a specified name.  
+ 
   
- Visual Basic users can use the integrated attribute axis to retrieve the value of an attribute with a specified name.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an element with an attribute. It then retrieves the attribute using this method.  
-  
+The following example creates an element with an attribute. It then retrieves the attribute using this method.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1316,7 +1316,7 @@ Child
 XAttribute att = xmlTree.Attribute("Att");  
 Console.WriteLine(att);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = <Root Att="attribute content"/>  
@@ -1325,16 +1325,16 @@ Dim att As XAttribute = xmlTree.Attribute("Att")
 Console.WriteLine(att)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Att="attribute content"  
 ```  
-  
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
-  
+ 
+The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ 
 ```csharp  
   
                 XNamespace aw = "http://www.adventure-works.com";  
@@ -1345,7 +1345,7 @@ XElement xmlTree = new XElement(aw + "Root",
 XAttribute att = xmlTree.Attribute(aw + "Att");  
 Console.WriteLine(att);  
 ```  
-  
+ 
 ```vb  
   
                 Imports <xmlns:aw="http://www.adventure-works.com">  
@@ -1359,14 +1359,14 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 aw:Att="attribute content"  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1399,17 +1399,17 @@ aw:Att="attribute content"
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XAttribute" /> of attributes of this element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The attributes in the returned collection are in the order that they were added to the element. If the XML tree was parsed from XML, the attributes are returned in document order.  
+The attributes in the returned collection are in the order that they were added to the element. If the XML tree was parsed from XML, the attributes are returned in document order.  
+ 
+This method uses deferred execution.  
+ 
   
- This method uses deferred execution.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an element with two attributes. It then uses this  to retrieve all attributes of the element.  
-  
+The following example creates an element with two attributes. It then uses this  to retrieve all attributes of the element.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1422,7 +1422,7 @@ IEnumerable<XAttribute> attList =
 foreach (XAttribute att in attList)  
     Console.WriteLine(att);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = <Root Att1="content1" Att2="content2"/>  
@@ -1436,17 +1436,17 @@ For Each att In attList
 Next  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 Att1="content1"  
 Att2="content2"  
 ```  
-  
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
-  
+ 
+The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ 
 ```csharp  
   
                 XNamespace aw = "http://www.adventure-works.com";  
@@ -1461,7 +1461,7 @@ IEnumerable<XAttribute> attList =
 foreach (XAttribute att in attList)  
     Console.WriteLine(att);  
 ```  
-  
+ 
 ```vb  
   
                 Imports <xmlns:aw="http://www.adventure-works.com">  
@@ -1480,16 +1480,16 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 aw:Att1="content1"  
 aw:Att2="content2"  
 xmlns:aw="http://www.adventure-works.com"  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1525,17 +1525,17 @@ xmlns:aw="http://www.adventure-works.com"
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XAttribute" /> that contains the attributes of this element. Only elements that have a matching <see cref="T:System.Xml.Linq.XName" /> are included in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attribute names must be unique within an element. Therefore, this  can return either a collection that contains only one attribute, or it can return an empty collection.  
+Attribute names must be unique within an element. Therefore, this  can return either a collection that contains only one attribute, or it can return an empty collection.  
+ 
+This method uses deferred execution.  
+ 
   
- This method uses deferred execution.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses this .  
-  
+The following example uses this .  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1546,7 +1546,7 @@ IEnumerable<XAttribute> attList = xmlTree.Attributes("Att1");
 foreach (XAttribute att in attList)  
     Console.WriteLine(att);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = <Root Att1="content1" Att2="content2"/>  
@@ -1558,16 +1558,16 @@ For Each att In attList
 Next  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Att1="content1"  
 ```  
-  
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
-  
+ 
+The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ 
 ```csharp  
   
                 XNamespace aw = "http://www.adventure-works.com";  
@@ -1580,7 +1580,7 @@ IEnumerable<XAttribute> attList = xmlTree.Attributes(aw + "Att1");
 foreach (XAttribute att in attList)  
     Console.WriteLine(att);  
 ```  
-  
+ 
 ```vb  
   
                 Imports <xmlns:aw="http://www.adventure-works.com">  
@@ -1597,14 +1597,14 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 aw:Att1="content1"  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1637,15 +1637,15 @@ aw:Att1="content1"
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XNode" /> that contain this element, and all descendant nodes of this element, in document order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses deferred execution.  
+This method uses deferred execution.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree, and then uses this .  
-  
+The following example creates an XML tree, and then uses this .  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1667,7 +1667,7 @@ foreach (XNode node in dnas)
         Console.WriteLine(node);  
 }  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _  
@@ -1689,9 +1689,9 @@ For Each node In dnas
 Next  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 Root  
@@ -1700,7 +1700,7 @@ Some text
 GrandChild  
 element content  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1733,15 +1733,15 @@ element content
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> of elements that contain this element, and all descendant elements of this element, in document order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses deferred execution.  
+This method uses deferred execution.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree, and then uses this .  
-  
+The following example creates an XML tree, and then uses this .  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1757,7 +1757,7 @@ IEnumerable<XElement> das =
 foreach (XElement el in das)  
     Console.WriteLine(el.Name);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _  
@@ -1776,16 +1776,16 @@ For Each el In das
 Next  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 Root  
 Child  
 GrandChild  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1821,15 +1821,15 @@ GrandChild
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> that contain this element, and all descendant elements of this element, in document order. Only elements that have a matching <see cref="T:System.Xml.Linq.XName" /> are included in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses deferred execution.  
+This method uses deferred execution.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree, and then uses this .  
-  
+The following example creates an XML tree, and then uses this .  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1843,7 +1843,7 @@ IEnumerable<XElement> das = xmlTree.DescendantsAndSelf("Child");
 foreach (XElement el in das)  
     Console.WriteLine(el.Name);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _  
@@ -1860,14 +1860,14 @@ For Each el In das
 Next  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Child  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1899,10 +1899,10 @@ Child
         <value>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> that contains an empty collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is typically used by class implementers when writing a method that returns a collection of elements. If the method must return no elements, it can use this property to get an empty collection of <xref:System.Xml.Linq.XElement> objects.  
-  
+This property is typically used by class implementers when writing a method that returns a collection of elements. If the method must return no elements, it can use this property to get an empty collection of <xref:System.Xml.Linq.XElement> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1934,15 +1934,15 @@ Child
         <value>An <see cref="T:System.Xml.Linq.XAttribute" /> that contains the first attribute of this element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attributes are stored in the element in the order that they were added to the element.  
+Attributes are stored in the element in the order that they were added to the element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses this property.  
-  
+The following example uses this property.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1952,21 +1952,21 @@ Child
 );  
 Console.WriteLine(xmlTree.FirstAttribute);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
 Console.WriteLine(xmlTree.FirstAttribute)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Att1="1"  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1999,28 +1999,28 @@ Att1="1"
         <returns>An <see cref="T:System.Xml.Linq.XNamespace" /> that contains the default namespace of this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Namespace declarations may be persisted as attributes in the XML tree. These special attributes declare namespaces, including default namespaces. This method finds the namespace declaration that declares the default namespace, if there is one, and returns the <xref:System.Xml.Linq.XNamespace> for the default namespace.  
+Namespace declarations may be persisted as attributes in the XML tree. These special attributes declare namespaces, including default namespaces. This method finds the namespace declaration that declares the default namespace, if there is one, and returns the <xref:System.Xml.Linq.XNamespace> for the default namespace.  
+ 
+If there is no attribute that declares the default namespace, then this method returns <xref:System.Xml.Linq.XNamespace.None%2A?displayProperty=fullName>.  
+ 
+When creating XML trees using C#, even if an XML tree would be serialized with a default namespace, if the namespace is not persisted in the XML tree as an attribute, this method will not report the namespace as the default namespace.  
+ 
+When creating XML trees using Visual Basic and XML literals, if you create the XML in a default namespace using the Imports statement, then a namespace attribute will be created in the tree by the Visual Basic compiler, and this method will report that namespace.  
+ 
   
- If there is no attribute that declares the default namespace, then this method returns <xref:System.Xml.Linq.XNamespace.None%2A?displayProperty=fullName>.  
-  
- When creating XML trees using C#, even if an XML tree would be serialized with a default namespace, if the namespace is not persisted in the XML tree as an attribute, this method will not report the namespace as the default namespace.  
-  
- When creating XML trees using Visual Basic and XML literals, if you create the XML in a default namespace using the Imports statement, then a namespace attribute will be created in the tree by the Visual Basic compiler, and this method will report that namespace.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree that has a default namespace. It then uses this method to retrieve the default namespace.  
-  
+The following example creates an XML tree that has a default namespace. It then uses this method to retrieve the default namespace.  
+ 
 ```csharp  
   
                 String xml = "<root xmlns='http://www.adventure-works.com'/>";  
 XElement e = XElement.Parse(xml);  
 Console.WriteLine("Default namespace: {0}", e.GetDefaultNamespace());  
 ```  
-  
+ 
 ```vb  
   
                 Imports <xmlns="http://www.adventure-works.com">  
@@ -2032,14 +2032,14 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Default namespace: http://www.adventure-works.com  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2075,24 +2075,24 @@ Default namespace: http://www.adventure-works.com
         <returns>An <see cref="T:System.Xml.Linq.XNamespace" /> for the namespace associated with the prefix for this <see cref="T:System.Xml.Linq.XElement" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method looks through the XML tree for namespace attributes that are in scope for this element. Namespace prefixes are specified in namespace attributes that are in the XML tree.  
+This method looks through the XML tree for namespace attributes that are in scope for this element. Namespace prefixes are specified in namespace attributes that are in the XML tree.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree that has a namespace with an associated prefix. It then uses this method to retrieve the <xref:System.Xml.Linq.XNamespace> for the prefix.  
-  
+The following example creates an XML tree that has a namespace with an associated prefix. It then uses this method to retrieve the <xref:System.Xml.Linq.XNamespace> for the prefix.  
+ 
 ```csharp  
   
                 XElement xmlTree = XElement.Parse("<Root xmlns:aw='http://www.adventure-works.com'/>");  
 XNamespace awNamespace = xmlTree.GetNamespaceOfPrefix("aw");  
 Console.WriteLine("Namespace: {0}", awNamespace);  
 ```  
-  
- When using Visual Basic, you would typically use the [GetXmlNamespace Operator](~/docs/visual-basic/language-reference/operators/getxmlnamespace-operator.md) operator, as follows  
-  
+ 
+When using Visual Basic, you would typically use the [GetXmlNamespace Operator](~/docs/visual-basic/language-reference/operators/getxmlnamespace-operator.md) operator, as follows  
+ 
 ```vb  
   
                 Imports <xmlns:aw="http://www.adventure-works.com">  
@@ -2106,14 +2106,14 @@ Module Module1
 End Module  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Namespace: http://www.adventure-works.com  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2149,24 +2149,24 @@ Namespace: http://www.adventure-works.com
         <returns>A <see cref="T:System.String" /> that contains the namespace prefix.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method looks through the XML tree for namespace attributes that are in scope for this element. Namespace prefixes are specified in namespace attributes that are in the XML tree.  
+This method looks through the XML tree for namespace attributes that are in scope for this element. Namespace prefixes are specified in namespace attributes that are in the XML tree.  
+ 
+If the namespace is the default namespace, and there is no prefix for the namespace, then this method returns null.  
+ 
   
- If the namespace is the default namespace, and there is no prefix for the namespace, then this method returns null.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree that contains a namespace with a prefix. It then uses this method to retrieve the prefix for the namespace. Notice that this example uses the implicit conversion from string to <xref:System.Xml.Linq.XNamespace> when calling this method.  
-  
+The following example creates an XML tree that contains a namespace with a prefix. It then uses this method to retrieve the prefix for the namespace. Notice that this example uses the implicit conversion from string to <xref:System.Xml.Linq.XNamespace> when calling this method.  
+ 
 ```csharp  
   
                 XElement xmlTree = XElement.Parse("<Root xmlns:aw='http://www.adventure-works.com'/>");  
 string prefix = xmlTree.GetPrefixOfNamespace("http://www.adventure-works.com");  
 Console.WriteLine("Prefix: {0}", prefix);  
 ```  
-  
+ 
 ```vb  
   
                 Imports <xmlns:aw="http://www.adventure-works.com">  
@@ -2179,14 +2179,14 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Prefix: aw  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2219,10 +2219,10 @@ Prefix: aw
           <see langword="true" /> if this element has at least one attribute; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses this property.  
-  
+The following example uses this property.  
+ 
 ```csharp  
   
                 XElement xmlTree1 = new XElement("Root",  
@@ -2232,7 +2232,7 @@ Console.WriteLine(xmlTree1.HasAttributes);
 XElement xmlTree2 = new XElement("Root");  
 Console.WriteLine(xmlTree2.HasAttributes);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree1 As XElement = <Root Att1="1"/>  
@@ -2242,14 +2242,14 @@ Dim xmlTree2 As XElement = <Root/>
 Console.WriteLine(xmlTree2.HasAttributes)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 True  
 False  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2282,10 +2282,10 @@ False
           <see langword="true" /> if this element has at least one child element; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses this property.  
-  
+The following example uses this property.  
+ 
 ```csharp  
   
                 XElement xmlTree1 = new XElement("Root",  
@@ -2295,7 +2295,7 @@ Console.WriteLine(xmlTree1.HasElements);
 XElement xmlTree2 = new XElement("Root", "contents");  
 Console.WriteLine(xmlTree2.HasElements);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree1 As XElement = _   
@@ -2308,15 +2308,15 @@ Dim xmlTree2 As XElement = <Root>contents</Root>
 Console.WriteLine(xmlTree2.HasElements)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 True  
 False  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2349,15 +2349,15 @@ False
           <see langword="true" /> if this element contains no content; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that an element that contains a start and end tag with no content between the tags is not considered to be an empty element. It has content with no length. Only an element that contains only a start tag, and is expressed as a terminated empty element, is considered to be empty.  
+Note that an element that contains a start and end tag with no content between the tags is not considered to be an empty element. It has content with no length. Only an element that contains only a start tag, and is expressed as a terminated empty element, is considered to be empty.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a variety of XML trees, and shows the value of this property with each tree.  
-  
+The following example creates a variety of XML trees, and shows the value of this property with each tree.  
+ 
 ```csharp  
   
                 XElement el1 = new XElement("Root");  
@@ -2376,7 +2376,7 @@ el3.ReplaceAll(null);
 Console.WriteLine(el3);  
 Console.WriteLine(el3.IsEmpty);  
 ```  
-  
+ 
 ```vb  
   
                 Dim el1 As XElement = <Root/>  
@@ -2396,9 +2396,9 @@ Console.WriteLine(el3)
 Console.WriteLine(el3.IsEmpty)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <Root />  
@@ -2413,7 +2413,7 @@ False
 <Root />  
 True  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2445,15 +2445,15 @@ True
         <value>An <see cref="T:System.Xml.Linq.XAttribute" /> that contains the last attribute of this element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attributes are stored in the element in the order that they were added to the element.  
+Attributes are stored in the element in the order that they were added to the element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree with three attributes. It then writes the last attribute as output.  
-  
+The following example creates an XML tree with three attributes. It then writes the last attribute as output.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -2463,21 +2463,21 @@ True
 );  
 Console.WriteLine(xmlTree.LastAttribute);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
 Console.WriteLine(xmlTree.LastAttribute)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Att3="3"  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2513,18 +2513,18 @@ Att3="3"
         <returns>An <see cref="T:System.Xml.Linq.XElement" /> object used to read the data that is contained in the stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you want to control load options, use the <xref:System.Xml.Linq.XElement.Load%2A> overload that takes <xref:System.Xml.Linq.LoadOptions> as a parameter.  
-  
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
-  
- If you have to modify <xref:System.Xml.XmlReaderSettings>, following these steps:  
-  
+If you want to control load options, use the <xref:System.Xml.Linq.XElement.Load%2A> overload that takes <xref:System.Xml.Linq.LoadOptions> as a parameter.  
+ 
+LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ 
+If you have to modify <xref:System.Xml.XmlReaderSettings>, following these steps:  
+ 
 1.  Create an <xref:System.Xml.XmlReader> by calling one of the <xref:System.Xml.XmlReader.Create%2A> overloads that take <xref:System.Xml.XmlReaderSettings> as a parameter.  
-  
+ 
 2.  Pass the <xref:System.Xml.XmlReader> to one of the <xref:System.Xml.Linq.XElement>'s <xref:System.Xml.Linq.XElement.Load%2A> overloads that takes <xref:System.Xml.XmlReader> as a parameter.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2560,17 +2560,17 @@ Att3="3"
         <returns>An <see cref="T:System.Xml.Linq.XElement" /> that contains the XML that was read from the specified <see cref="T:System.IO.TextReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method reads the raw XML into the XML tree. It discards all insignificant white space in the file.  
+This method reads the raw XML into the XML tree. It discards all insignificant white space in the file.  
+ 
+LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ 
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
-  
-   
-  
+ 
 ## Examples  
- The following example loads an element from a <xref:System.IO.StringReader>.  
-  
+The following example loads an element from a <xref:System.IO.StringReader>.  
+ 
 ```csharp  
   
                 TextReader sr = new StringReader("<Root><Child/></Root>");  
@@ -2578,7 +2578,7 @@ XElement xmlTree = XElement.Load(sr);
 sr.Close();  
 Console.WriteLine(xmlTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim sr As TextReader = New StringReader("<Root><Child/></Root>")  
@@ -2587,16 +2587,16 @@ sr.Close()
 Console.WriteLine(xmlTree)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
   <Child />  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2632,17 +2632,17 @@ Console.WriteLine(xmlTree)
         <returns>An <see cref="T:System.Xml.Linq.XElement" /> that contains the contents of the specified file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method reads the raw XML into the XML tree. It discards all insignificant white space in the file.  
+This method reads the raw XML into the XML tree. It discards all insignificant white space in the file.  
+ 
+LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ 
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree, saves it to a file, and then uses this method to load the <xref:System.Xml.Linq.XElement> from the file.  
-  
+The following example creates an XML tree, saves it to a file, and then uses this method to load the <xref:System.Xml.Linq.XElement> from the file.  
+ 
 ```csharp  
   
                 XElement xmlTree1 = new XElement("Root",  
@@ -2653,7 +2653,7 @@ xmlTree1.Save("Tree.xml");
 XElement xmlTree2 = XElement.Load("Tree.xml");  
 Console.WriteLine(xmlTree2.Name);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree1 As XElement = _   
@@ -2666,14 +2666,14 @@ Dim xmlTree2 As XElement = XElement.Load("Tree.xml")
 Console.WriteLine(xmlTree2.Name)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Root  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2709,17 +2709,17 @@ Root
         <returns>An <see cref="T:System.Xml.Linq.XElement" /> that contains the XML that was read from the specified <see cref="T:System.Xml.XmlReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By creating an <xref:System.Xml.XmlNodeReader> from a DOM document, and then using the <xref:System.Xml.XmlNodeReader> to create an <xref:System.Xml.Linq.XElement>, this method can be used to create a copy of a DOM document in a LINQ to XML tree.  
+By creating an <xref:System.Xml.XmlNodeReader> from a DOM document, and then using the <xref:System.Xml.XmlNodeReader> to create an <xref:System.Xml.Linq.XElement>, this method can be used to create a copy of a DOM document in a LINQ to XML tree.  
+ 
+LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ 
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a DOM document, creates an <xref:System.Xml.XmlNodeReader> from the DOM document, instantiates a tree from the reader. This code effectively copies a DOM document into a LINQ to XML tree.  
-  
+The following example creates a DOM document, creates an <xref:System.Xml.XmlNodeReader> from the DOM document, instantiates a tree from the reader. This code effectively copies a DOM document into a LINQ to XML tree.  
+ 
 ```csharp  
 // Create a DOM document with some content.  
 XmlDocument doc = new XmlDocument();  
@@ -2739,7 +2739,7 @@ using (XmlNodeReader nodeReader = new XmlNodeReader(doc)) {
     Console.WriteLine(xRoot);  
 }  
 ```  
-  
+ 
 ```vb  
 ' Create a DOM document with some content.  
 Dim doc As XmlDocument = New XmlDocument()  
@@ -2760,16 +2760,16 @@ Using nodeReader = New XmlNodeReader(doc)
 End Using  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
   <Child>child contents</Child>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2807,16 +2807,16 @@ End Using
         <returns>An <see cref="T:System.Xml.Linq.XElement" /> object used to read the data that the stream contains.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
-  
- If you have to modify <xref:System.Xml.XmlReaderSettings>, following these steps:  
-  
+LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ 
+If you have to modify <xref:System.Xml.XmlReaderSettings>, following these steps:  
+ 
 1.  Create an <xref:System.Xml.XmlReader> by calling one of the <xref:System.Xml.XmlReader.Create%2A> overloads that take <xref:System.Xml.XmlReaderSettings> as a parameter.  
-  
+ 
 2.  Pass the <xref:System.Xml.XmlReader> to one of the <xref:System.Xml.Linq.XElement>'s <xref:System.Xml.Linq.XElement.Load%2A> overloads that takes <xref:System.Xml.XmlReader> as a parameter.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2854,31 +2854,31 @@ End Using
         <returns>An <see cref="T:System.Xml.Linq.XElement" /> that contains the XML that was read from the specified <see cref="T:System.IO.TextReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the source XML is indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to read all white space in the source XML. Nodes of type <xref:System.Xml.Linq.XText> are created for both significant and insignificant white space.  
+If the source XML is indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to read all white space in the source XML. Nodes of type <xref:System.Xml.Linq.XText> are created for both significant and insignificant white space.  
+ 
+If the source XML is indented, not setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to ignore all of the insignificant white space in the source XML. The XML tree is created without any text nodes for insignificant white space.  
+ 
+If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
+ 
+For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ 
+Use <xref:System.Xml.Linq.XElement.Parse%2A> to create an <xref:System.Xml.Linq.XElement> from a string that contains XML.  
+ 
+Setting <xref:System.Xml.Linq.LoadOptions> will have no effect when loading from a <xref:System.IO.TextReader>.  
+ 
+There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions> flag.  
+ 
+The line information is accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the line information may become meaningless.  
+ 
+LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ 
   
- If the source XML is indented, not setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to ignore all of the insignificant white space in the source XML. The XML tree is created without any text nodes for insignificant white space.  
-  
- If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
-  
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
-  
- Use <xref:System.Xml.Linq.XElement.Parse%2A> to create an <xref:System.Xml.Linq.XElement> from a string that contains XML.  
-  
- Setting <xref:System.Xml.Linq.LoadOptions> will have no effect when loading from a <xref:System.IO.TextReader>.  
-  
- There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions> flag.  
-  
- The line information is accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the line information may become meaningless.  
-  
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
-  
-   
-  
+ 
 ## Examples  
- The following example loads an <xref:System.Xml.Linq.XElement> from a <xref:System.IO.StringReader> in two different ways: preserving white space, and not preserving white space. It then uses a query to determine the number of white space nodes in the resulting XML tree.  
-  
+The following example loads an <xref:System.Xml.Linq.XElement> from a <xref:System.IO.StringReader> in two different ways: preserving white space, and not preserving white space. It then uses a query to determine the number of white space nodes in the resulting XML tree.  
+ 
 ```csharp  
   
                 TextReader sr;  
@@ -2904,7 +2904,7 @@ whiteSpaceNodes = xmlTree2
     .Count();  
 Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whiteSpaceNodes);  
 ```  
-  
+ 
 ```vb  
   
                 Dim sr As TextReader  
@@ -2930,17 +2930,17 @@ whiteSpaceNodes = xmlTree2 _
     .Count()  
 Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whiteSpaceNodes)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 Count of white space nodes (not preserving whitespace): 0  
 Count of white space nodes (preserving whitespace): 3  
 ```  
-  
- The following example loads the line information as it loads from the <xref:System.IO.TextReader>. It then prints the line information.  
-  
+ 
+The following example loads the line information as it loads from the <xref:System.IO.TextReader>. It then prints the line information.  
+ 
 ```csharp  
   
                 TextReader sr = new StringReader(  
@@ -2966,7 +2966,7 @@ foreach (XElement e in po.DescendantsAndSelf())
         ((IXmlLineInfo)e).LineNumber.ToString().PadRight(5),  
         ((IXmlLineInfo)e).LinePosition);  
 ```  
-  
+ 
 ```vb  
   
                 Dim sr As TextReader = New StringReader( _  
@@ -2992,9 +2992,9 @@ For Each e As XElement In po.DescendantsAndSelf()
         (DirectCast(e, IXmlLineInfo)).LinePosition)  
 Next  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 Element Name        Line Position  
@@ -3004,7 +3004,7 @@ Root                1    2
     GrandChild1     3    6  
     GrandChild2     4    6  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3042,29 +3042,29 @@ Root                1    2
         <returns>An <see cref="T:System.Xml.Linq.XElement" /> that contains the contents of the specified file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the source XML is indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to read all white space in the source XML. Nodes of type <xref:System.Xml.Linq.XText> are created for both significant and insignificant white space.  
+If the source XML is indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to read all white space in the source XML. Nodes of type <xref:System.Xml.Linq.XText> are created for both significant and insignificant white space.  
+ 
+If the source XML is indented, not setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to ignore all of the insignificant white space in the source XML. The XML tree is created without any text nodes for insignificant white space.  
+ 
+If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
+ 
+For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ 
+Use <xref:System.Xml.Linq.XElement.Parse%2A> to create an <xref:System.Xml.Linq.XElement> from a string that contains XML.  
+ 
+There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions> and the <xref:System.Xml.Linq.LoadOptions> flags.  
+ 
+The base URI and the line information are accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the base URI and line information may become meaningless.  
+ 
+LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ 
   
- If the source XML is indented, not setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to ignore all of the insignificant white space in the source XML. The XML tree is created without any text nodes for insignificant white space.  
-  
- If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
-  
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
-  
- Use <xref:System.Xml.Linq.XElement.Parse%2A> to create an <xref:System.Xml.Linq.XElement> from a string that contains XML.  
-  
- There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions> and the <xref:System.Xml.Linq.LoadOptions> flags.  
-  
- The base URI and the line information are accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the base URI and line information may become meaningless.  
-  
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
-  
-   
-  
+ 
 ## Examples  
- The following example loads an <xref:System.Xml.Linq.XElement> from a file in two different ways: preserving white space, and not preserving white space. It then uses a query to determine the number of white space nodes in the resulting XML tree.  
-  
+The following example loads an <xref:System.Xml.Linq.XElement> from a file in two different ways: preserving white space, and not preserving white space. It then uses a query to determine the number of white space nodes in the resulting XML tree.  
+ 
 ```csharp  
   
                 XElement xmlTree1 = XElement.Parse("<Root> <Child>  </Child> </Root>", LoadOptions.PreserveWhitespace);  
@@ -3090,7 +3090,7 @@ whiteSpaceNodes = xmlTree3
     .Count();  
 Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whiteSpaceNodes);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree1 As XElement = XElement.Parse("<Root> <Child>  </Child> </Root>", LoadOptions.PreserveWhitespace)  
@@ -3114,20 +3114,20 @@ whiteSpaceNodes = xmlTree3 _
                   .Count()  
 Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whiteSpaceNodes)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <Root> <Child>  </Child> </Root>  
 Count of white space nodes (not preserving whitespace): 0  
 Count of white space nodes (preserving whitespace): 3  
 ```  
-  
- The following example loads the base URI and line information as it loads the file. It then prints the base URI and the line information.  
-  
- This example uses the following resource file: [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348).  
-  
+ 
+The following example loads the base URI and line information as it loads the file. It then prints the base URI and the line information.  
+ 
+This example uses the following resource file: [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348).  
+ 
 ```csharp  
   
                 XElement po = XElement.Load("PurchaseOrder.xml",  
@@ -3149,7 +3149,7 @@ foreach (XElement e in po.DescendantsAndSelf())
         ((IXmlLineInfo)e).LineNumber.ToString().PadRight(5),  
         ((IXmlLineInfo)e).LinePosition);  
 ```  
-  
+ 
 ```vb  
   
         Dim po As XElement = XElement.Load("PurchaseOrder.xml", LoadOptions.SetBaseUri Or LoadOptions.SetLineInfo)  
@@ -3171,9 +3171,9 @@ For Each e As XElement In po.DescendantsAndSelf()
         (DirectCast(e, IXmlLineInfo)).LinePosition)  
 Next  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 BaseUri: PurchaseOrder.xml  
@@ -3208,7 +3208,7 @@ PurchaseOrder       2    2
       USPrice       30   8  
       ShipDate      31   8  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3246,29 +3246,29 @@ PurchaseOrder       2    2
         <returns>An <see cref="T:System.Xml.Linq.XElement" /> that contains the XML that was read from the specified <see cref="T:System.Xml.XmlReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By creating an <xref:System.Xml.XmlNodeReader> from a DOM document, and then using the <xref:System.Xml.XmlNodeReader> to create an <xref:System.Xml.Linq.XElement>, this method can be used to create a copy of a DOM document in a LINQ to XML tree.  
+By creating an <xref:System.Xml.XmlNodeReader> from a DOM document, and then using the <xref:System.Xml.XmlNodeReader> to create an <xref:System.Xml.Linq.XElement>, this method can be used to create a copy of a DOM document in a LINQ to XML tree.  
+ 
+Use <xref:System.Xml.Linq.XElement.Parse%2A> to create an <xref:System.Xml.Linq.XElement> from a string that contains XML.  
+ 
+Setting <xref:System.Xml.Linq.LoadOptions> is not valid when loading from a <xref:System.Xml.XmlReader>. The <xref:System.Xml.XmlReader> will be configured to either read whitespace or not. The LINQ to XML tree will be populated with the whitespace nodes that the reader surfaces. This will be the behavior regardless of whether <xref:System.Xml.Linq.LoadOptions> is set or not.  
+ 
+The <xref:System.Xml.XmlReader> may have a valid base URI or not. If you set <xref:System.Xml.Linq.LoadOptions>, the base URI will be set in the XML tree from the base URI that is reported by the <xref:System.Xml.XmlReader>.  
+ 
+The <xref:System.Xml.XmlReader> may have a valid line information or not. If you set <xref:System.Xml.Linq.LoadOptions>, the line information will be set in the XML tree from the line information that is reported by the <xref:System.Xml.XmlReader>.  
+ 
+There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions> flag.  
+ 
+The line information is accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the line information may become meaningless.  
+ 
+LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ 
   
- Use <xref:System.Xml.Linq.XElement.Parse%2A> to create an <xref:System.Xml.Linq.XElement> from a string that contains XML.  
-  
- Setting <xref:System.Xml.Linq.LoadOptions> is not valid when loading from a <xref:System.Xml.XmlReader>. The <xref:System.Xml.XmlReader> will be configured to either read whitespace or not. The LINQ to XML tree will be populated with the whitespace nodes that the reader surfaces. This will be the behavior regardless of whether <xref:System.Xml.Linq.LoadOptions> is set or not.  
-  
- The <xref:System.Xml.XmlReader> may have a valid base URI or not. If you set <xref:System.Xml.Linq.LoadOptions>, the base URI will be set in the XML tree from the base URI that is reported by the <xref:System.Xml.XmlReader>.  
-  
- The <xref:System.Xml.XmlReader> may have a valid line information or not. If you set <xref:System.Xml.Linq.LoadOptions>, the line information will be set in the XML tree from the line information that is reported by the <xref:System.Xml.XmlReader>.  
-  
- There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions> flag.  
-  
- The line information is accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the line information may become meaningless.  
-  
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
-  
-   
-  
+ 
 ## Examples  
- The following example loads the line information that it loads from the <xref:System.Xml.XmlReader>. It then prints the line information.  
-  
+The following example loads the line information that it loads from the <xref:System.Xml.XmlReader>. It then prints the line information.  
+ 
 ```csharp  
   
                 string markup =  
@@ -3301,7 +3301,7 @@ using (XmlReader nodeReader = XmlReader.Create(new StringReader(markup)))
             ((IXmlLineInfo)e).LinePosition);  
 }  
 ```  
-  
+ 
 ```vb  
   
                 Dim markup As String = _  
@@ -3335,9 +3335,9 @@ Using nodeReader As XmlReader = XmlReader.Create(New StringReader(markup))
     Next  
 End Using  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 Element Name        Line Position  
@@ -3346,7 +3346,7 @@ Root                1    2
   Child             2    6  
     GrandChild      3    10  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3378,15 +3378,15 @@ Root                1    2
         <value>An <see cref="T:System.Xml.Linq.XName" /> that contains the name of this element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+Setting this property will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses this property to determine the name of an element.  
-  
+The following example uses this property to determine the name of an element.  
+ 
 ```csharp  
   
                 XElement el1 = new XElement("Root", "content");  
@@ -3400,7 +3400,7 @@ Console.WriteLine(el2.Name.LocalName);
 el2.Name = ns + "NewName";  
 Console.WriteLine(el2.Name);  
 ```  
-  
+ 
 ```vb  
   
                 Imports <xmlns:aw="http://www.adventure-works.com">  
@@ -3420,9 +3420,9 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 Root  
@@ -3431,7 +3431,7 @@ http://www.adventure-works.com
 Root  
 {http://www.adventure-works.com}NewName  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3463,22 +3463,22 @@ Root
         <value>The node type. For <see cref="T:System.Xml.Linq.XElement" /> objects, this value is <see cref="F:System.Xml.XmlNodeType.Element" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because all classes that derive from <xref:System.Xml.Linq.XObject> contain a <xref:System.Xml.Linq.XObject.NodeType%2A> property, you can write code that operates on collections of concrete subclass of <xref:System.Xml.Linq.XObject>. Your code can then test for the node type of each node in the collection.  
+Because all classes that derive from <xref:System.Xml.Linq.XObject> contain a <xref:System.Xml.Linq.XObject.NodeType%2A> property, you can write code that operates on collections of concrete subclass of <xref:System.Xml.Linq.XObject>. Your code can then test for the node type of each node in the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses this property to print the node type of an element.  
-  
+The following example uses this property to print the node type of an element.  
+ 
 ```csharp  
   
                 XElement el1 = new XElement("Root", "content");  
 Console.WriteLine(el1.NodeType);  
 Console.WriteLine();  
 ```  
-  
+ 
 ```vb  
   
                 Dim el1 As XElement = <Root>content</Root>  
@@ -3486,14 +3486,14 @@ Console.WriteLine(el1.NodeType.ToString())
 Console.WriteLine()  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Element  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4454,38 +4454,38 @@ Element
         <returns>An <see cref="T:System.Xml.Linq.XElement" /> populated from the string that contains XML.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not preserve white space. If you want to preserve white space in the XML tree, use the overload of the <xref:System.Xml.Linq.XElement.Parse%2A> method that takes <xref:System.Xml.Linq.LoadOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+This method does not preserve white space. If you want to preserve white space in the XML tree, use the overload of the <xref:System.Xml.Linq.XElement.Parse%2A> method that takes <xref:System.Xml.Linq.LoadOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ 
+LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ 
   
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a string that contains XML. It then parses the string into an <xref:System.Xml.Linq.XElement>.  
-  
+The following example creates a string that contains XML. It then parses the string into an <xref:System.Xml.Linq.XElement>.  
+ 
 ```csharp  
   
                 XElement xmlTree = XElement.Parse("<Root> <Child> </Child> </Root>");  
 Console.WriteLine(xmlTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = <Root><Child></Child></Root>  
 Console.WriteLine(xmlTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
   <Child></Child>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4523,31 +4523,31 @@ Console.WriteLine(xmlTree)
         <returns>An <see cref="T:System.Xml.Linq.XElement" /> populated from the string that contains XML.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the source XML is indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to read all white space in the source XML. Nodes of type <xref:System.Xml.Linq.XText> are created for both significant and insignificant white space.  
+If the source XML is indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to read all white space in the source XML. Nodes of type <xref:System.Xml.Linq.XText> are created for both significant and insignificant white space.  
+ 
+If the source XML is indented, not setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to ignore all of the insignificant white space in the source XML. The XML tree is created without any text nodes for insignificant white space.  
+ 
+If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
+ 
+For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ 
+Setting <xref:System.Xml.Linq.LoadOptions> will have no effect when parsing from a <xref:System.String>.  
+ 
+The <xref:System.Xml.XmlReader> may have a valid line information or not. If you set <xref:System.Xml.Linq.LoadOptions>, the line information will be set in the XML tree from the line information that is reported by the <xref:System.Xml.XmlReader>.  
+ 
+There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions> flag.  
+ 
+The line information is accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the line information may become meaningless.  
+ 
+LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
+ 
   
- If the source XML is indented, not setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` causes the reader to ignore all of the insignificant white space in the source XML. The XML tree is created without any text nodes for insignificant white space.  
-  
- If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
-  
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
-  
- Setting <xref:System.Xml.Linq.LoadOptions> will have no effect when parsing from a <xref:System.String>.  
-  
- The <xref:System.Xml.XmlReader> may have a valid line information or not. If you set <xref:System.Xml.Linq.LoadOptions>, the line information will be set in the XML tree from the line information that is reported by the <xref:System.Xml.XmlReader>.  
-  
- There is a performance penalty if you set the <xref:System.Xml.Linq.LoadOptions> flag.  
-  
- The line information is accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the line information may become meaningless.  
-  
- LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
-  
-   
-  
+ 
 ## Examples  
- The following example parses a string into an <xref:System.Xml.Linq.XElement> in two different ways: preserving white space, and not preserving white space. It then uses a query to determine the number of white space nodes in the resulting XML tree.  
-  
+The following example parses a string into an <xref:System.Xml.Linq.XElement> in two different ways: preserving white space, and not preserving white space. It then uses a query to determine the number of white space nodes in the resulting XML tree.  
+ 
 ```csharp  
   
                 int whiteSpaceNodes;  
@@ -4572,7 +4572,7 @@ whiteSpaceNodes = xmlTree2
 Console.WriteLine("Count of white space nodes (preserving whitespace): {0}",  
     whiteSpaceNodes);  
 ```  
-  
+ 
 ```vb  
   
                 Dim whiteSpaceNodes As Integer  
@@ -4593,17 +4593,17 @@ whiteSpaceNodes = xmlTree2 _
     .Count()  
 Console.WriteLine("Count of white space nodes (preserving whitespace): {0}", whiteSpaceNodes)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 Count of white space nodes (not preserving whitespace): 0  
 Count of white space nodes (preserving whitespace): 3  
 ```  
-  
- The following example retains line information as it parses the string.  
-  
+ 
+The following example retains line information as it parses the string.  
+ 
 ```csharp  
   
                 string markup =  
@@ -4628,7 +4628,7 @@ foreach (XElement e in xRoot.DescendantsAndSelf())
         ((IXmlLineInfo)e).LineNumber.ToString().PadRight(5),  
         ((IXmlLineInfo)e).LinePosition);  
 ```  
-  
+ 
 ```vb  
   
                 Dim markup As String = _  
@@ -4654,9 +4654,9 @@ For Each e As XElement In xRoot.DescendantsAndSelf()
         DirectCast(e, IXmlLineInfo).LinePosition)  
 Next  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 Element Name        Line Position  
@@ -4665,7 +4665,7 @@ Root                1    2
   Child             2    6  
     GrandChild      3    10  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4697,15 +4697,15 @@ Root                1    2
         <summary>Removes nodes and attributes from this <see cref="T:System.Xml.Linq.XElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an element with attributes and child elements. It then calls this method to remove both the attributes and the child elements.  
-  
+The following example creates an element with attributes and child elements. It then calls this method to remove both the attributes and the child elements.  
+ 
 ```csharp  
   
                 XElement root = new XElement("Root",  
@@ -4719,7 +4719,7 @@ Root                1    2
 root.RemoveAll();   // removes children elements and attributes of root  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement = _   
@@ -4732,14 +4732,14 @@ Console.WriteLine(root);
 root.RemoveAll()   ' removes children elements and attributes of root  
 Console.WriteLine(root)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
 <Root />  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4771,15 +4771,15 @@ Console.WriteLine(root)
         <summary>Removes the attributes of this <see cref="T:System.Xml.Linq.XElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an element with attributes and child elements. It then calls this method to remove the attributes. The child elements remain.  
-  
+The following example creates an element with attributes and child elements. It then calls this method to remove the attributes. The child elements remain.  
+ 
 ```csharp  
   
                 XElement root = new XElement("Root",  
@@ -4793,7 +4793,7 @@ Console.WriteLine(root)
 root.RemoveAttributes();  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement = _   
@@ -4806,9 +4806,9 @@ Console.WriteLine(root);
 root.RemoveAttributes()  
 Console.WriteLine(root)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -4817,7 +4817,7 @@ Console.WriteLine(root)
   <Child3>3</Child3>  
 </Root>   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4852,21 +4852,21 @@ Console.WriteLine(root)
         <summary>Replaces the child nodes and the attributes of this element with the specified content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method first removes existing content and attributes. It then adds the specified `content`.  
+This method first removes existing content and attributes. It then adds the specified `content`.  
+ 
+This method uses snapshot semantics—that is, it creates a separate copy of the new content before replacing the contents of the current element with the new content. This means that you can query the contents of the current element and use the results of the query as the specified new content.  
+ 
+For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
   
- This method uses snapshot semantics—that is, it creates a separate copy of the new content before replacing the contents of the current element with the new content. This means that you can query the contents of the current element and use the results of the query as the specified new content.  
-  
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses this method.  
-  
+The following example uses this method.  
+ 
 ```csharp  
   
                 XElement root = new XElement("Root",  
@@ -4924,7 +4924,7 @@ XAttribute[] attArray = {
 root.ReplaceAll(attArray);  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement = _   
@@ -4984,9 +4984,9 @@ root.ReplaceAll(attArray)
 Console.WriteLine(root)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <Root>  
@@ -5004,7 +5004,7 @@ Console.WriteLine(root)
 </Root>  
 <Root NewAtt1="1" NewAtt2="2" NewAtt3="3" />  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5045,21 +5045,21 @@ Console.WriteLine(root)
         <summary>Replaces the child nodes and the attributes of this element with the specified content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method first removes existing content and attributes. It then adds the specified `content`.  
+This method first removes existing content and attributes. It then adds the specified `content`.  
+ 
+This method uses snapshot semantics—that is, it creates a separate copy of the new content before replacing the contents of the current element with the new content. This means that you can query the contents of the current element and use the results of the query as the specified new content.  
+ 
+For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
   
- This method uses snapshot semantics—that is, it creates a separate copy of the new content before replacing the contents of the current element with the new content. This means that you can query the contents of the current element and use the results of the query as the specified new content.  
-  
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
-  
+ 
 ## Examples  
- The following example passes the results of a LINQ query to this method, replacing the contents of an element with the query results.  
-  
+The following example passes the results of a LINQ query to this method, replacing the contents of an element with the query results.  
+ 
 ```csharp  
   
                 XElement xmlTree1 = new XElement("Root",  
@@ -5082,7 +5082,7 @@ root.ReplaceAll(
 );  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree1 As XElement = _   
@@ -5108,9 +5108,9 @@ root.ReplaceAll( _
 Console.WriteLine(root)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -5119,7 +5119,7 @@ Console.WriteLine(root)
   <Child5>5</Child5>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5154,19 +5154,19 @@ Console.WriteLine(root)
         <summary>Replaces the attributes of this element with the specified content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method first removes existing attributes. It then adds the specified `content`.  
+This method first removes existing attributes. It then adds the specified `content`.  
+ 
+For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an element with three attributes. It then uses this method to replace all of the attributes of the element with a single attribute.  
-  
+The following example creates an element with three attributes. It then uses this method to replace all of the attributes of the element with a single attribute.  
+ 
 ```csharp  
   
                 XElement root = new XElement("Root",  
@@ -5179,21 +5179,21 @@ root.ReplaceAttributes(
 );  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
 root.ReplaceAttributes(New XAttribute("NewAtt1", 101))  
 Console.WriteLine(root)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
 <Root NewAtt1="101" />  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5234,19 +5234,19 @@ Console.WriteLine(root)
         <summary>Replaces the attributes of this element with the specified content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method first removes existing attributes. It then adds the specified `content`.  
+This method first removes existing attributes. It then adds the specified `content`.  
+ 
+For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an element with three attributes. It then replaces the attributes with other attributes.  
-  
+The following example creates an element with three attributes. It then replaces the attributes with other attributes.  
+ 
 ```csharp  
   
                 XElement root = new XElement("Root",  
@@ -5261,7 +5261,7 @@ root.ReplaceAttributes(
 );  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
@@ -5271,14 +5271,14 @@ New XAttribute("NewAtt2", 102), _
 New XAttribute("NewAtt3", 103))  
 Console.WriteLine(root)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
 <Root NewAtt1="101" NewAtt2="102" NewAtt3="103" />  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5313,14 +5313,14 @@ Console.WriteLine(root)
         <summary>Outputs this <see cref="T:System.Xml.Linq.XElement" /> to the specified <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space will not be preserved.  
-  
- If you want to control white space, use the overload of <xref:System.Xml.Linq.XElement.Save%2A> that takes <xref:System.Xml.Linq.SaveOptions> as a parameter. Use the <xref:System.Xml.Linq.SaveOptions> option to save unindented XML. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
-  
- Use the <xref:System.Xml.Linq.SaveOptions> option if you want to remove duplicate namespace declarations.  
-  
+The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space will not be preserved.  
+ 
+If you want to control white space, use the overload of <xref:System.Xml.Linq.XElement.Save%2A> that takes <xref:System.Xml.Linq.SaveOptions> as a parameter. Use the <xref:System.Xml.Linq.SaveOptions> option to save unindented XML. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
+ 
+Use the <xref:System.Xml.Linq.SaveOptions> option if you want to remove duplicate namespace declarations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5355,17 +5355,17 @@ Console.WriteLine(root)
         <summary>Serialize this element to a <see cref="T:System.IO.TextWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that white space will not be preserved.  
+The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that white space will not be preserved.  
+ 
+If you want to control white space, use the overload of <xref:System.Xml.Linq.XElement.Save%2A> that allows you to specify <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ 
   
- If you want to control white space, use the overload of <xref:System.Xml.Linq.XElement.Save%2A> that allows you to specify <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Xml.Linq.XElement>, saves the document to a <xref:System.IO.StringWriter>, and then prints the string to the console.  
-  
+The following example creates an <xref:System.Xml.Linq.XElement>, saves the document to a <xref:System.IO.StringWriter>, and then prints the string to the console.  
+ 
 ```csharp  
   
                 XElement root = XElement.Parse(@"<Root> <Child> Text </Child> </Root>");  
@@ -5374,7 +5374,7 @@ using (StringWriter sw = new StringWriter()) {
     Console.WriteLine(sw.ToString());  
 }  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement = <Root><Child> Text </Child></Root>  
@@ -5383,9 +5383,9 @@ Using sw = New StringWriter()
     Console.WriteLine(sw.ToString())  
 End Using  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <?xml version="1.0" encoding="utf-16"?>  
@@ -5393,7 +5393,7 @@ End Using
   <Child> Text </Child>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5423,17 +5423,17 @@ End Using
         <summary>Serialize this element to a file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space nodes in the XML tree will not be preserved.  
+The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space nodes in the XML tree will not be preserved.  
+ 
+If you want to control white space, use the overload of <xref:System.Xml.Linq.XElement.Save%2A> that allows you to specify <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ 
   
- If you want to control white space, use the overload of <xref:System.Xml.Linq.XElement.Save%2A> that allows you to specify <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Xml.Linq.XElement>, saves the document to a file, and then prints the file to the console.  
-  
+The following example creates an <xref:System.Xml.Linq.XElement>, saves the document to a file, and then prints the file to the console.  
+ 
 ```csharp  
   
                 XElement root = new XElement("Root",  
@@ -5443,7 +5443,7 @@ root.Save("Root.xml");
 string str = File.ReadAllText("Root.xml");  
 Console.WriteLine(str);  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement = _   
@@ -5454,9 +5454,9 @@ root.Save("Root.xml")
 Dim Str As String = File.ReadAllText("Root.xml")  
 Console.WriteLine(Str)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <?xml version="1.0" encoding="utf-8"?>  
@@ -5464,7 +5464,7 @@ Console.WriteLine(Str)
   <Child>child content</Child>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5499,10 +5499,10 @@ Console.WriteLine(Str)
         <summary>Serialize this element to an <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to save an <xref:System.Xml.Linq.XElement> to an <xref:System.Xml.XmlWriter>.  
-  
+The following example shows how to save an <xref:System.Xml.Linq.XElement> to an <xref:System.Xml.XmlWriter>.  
+ 
 ```csharp  
   
                 StringBuilder sb = new StringBuilder();  
@@ -5516,7 +5516,7 @@ using (XmlWriter xw = XmlWriter.Create(sb, xws)) {
 }  
 Console.WriteLine(sb.ToString());  
 ```  
-  
+ 
 ```vb  
   
                 Dim sb As StringBuilder = New StringBuilder()  
@@ -5530,14 +5530,14 @@ Using xw = XmlWriter.Create(sb, xws)
 End Using  
 Console.WriteLine(sb.ToString())  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
 <Root><Child>child content</Child></Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5574,14 +5574,14 @@ Console.WriteLine(sb.ToString())
         <summary>Outputs this <see cref="T:System.Xml.Linq.XElement" /> to the specified <see cref="T:System.IO.Stream" />, optionally specifying formatting behavior.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default the `options` are set to <xref:System.Xml.Linq.SaveOptions>. This option will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented.  
-  
- If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
-  
- Use <xref:System.Xml.Linq.SaveOptions> option if you want to remove duplicate namespace declarations.  
-  
+By default the `options` are set to <xref:System.Xml.Linq.SaveOptions>. This option will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented.  
+ 
+If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
+ 
+Use <xref:System.Xml.Linq.SaveOptions> option if you want to remove duplicate namespace declarations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5618,19 +5618,19 @@ Console.WriteLine(sb.ToString())
         <summary>Serialize this element to a <see cref="T:System.IO.TextWriter" />, optionally disabling formatting.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
+If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
+ 
+If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
+ 
+For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ 
   
- If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
-  
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows two uses of this method. The first use preserves white space. The second serializes the <xref:System.Xml.Linq.XElement> with formatting. Because the document has no white space in it as constructed, preserving white space outputs the XML without any indenting.  
-  
+The following example shows two uses of this method. The first use preserves white space. The second serializes the <xref:System.Xml.Linq.XElement> with formatting. Because the document has no white space in it as constructed, preserving white space outputs the XML without any indenting.  
+ 
 ```csharp  
   
                 XElement root = XElement.Parse(@"<Root> <Child> Text </Child> </Root>");  
@@ -5649,7 +5649,7 @@ using (StringWriter sw = new StringWriter())
     Console.WriteLine(sw.ToString());  
 }  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement = <Root><Child> Text </Child></Root>  
@@ -5667,9 +5667,9 @@ Using sw = New StringWriter()
 End Using  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <?xml version="1.0" encoding="utf-16"?><Root><Child> Text </Child></Root>  
@@ -5679,7 +5679,7 @@ End Using
   <Child> Text </Child>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5711,19 +5711,19 @@ End Using
         <summary>Serialize this element to a file, optionally disabling formatting.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
+If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
+ 
+If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
+ 
+For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ 
   
- If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
-  
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows two uses of this method. The first use preserves white space. The second one serializes the <xref:System.Xml.Linq.XElement> with formatting.  
-  
+The following example shows two uses of this method. The first use preserves white space. The second one serializes the <xref:System.Xml.Linq.XElement> with formatting.  
+ 
 ```csharp  
   
                 string str;  
@@ -5739,7 +5739,7 @@ root.Save("Root.xml", SaveOptions.None);
 str = File.ReadAllText("Root.xml");  
 Console.WriteLine(str);  
 ```  
-  
+ 
 ```vb  
   
                 Dim str As String  
@@ -5756,9 +5756,9 @@ str = File.ReadAllText("Root.xml")
 Console.WriteLine(str)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <?xml version="1.0" encoding="utf-8"?><Root><Child> Text </Child></Root>  
@@ -5768,7 +5768,7 @@ Console.WriteLine(str)
   <Child> Text </Child>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5805,21 +5805,21 @@ Console.WriteLine(str)
         <summary>Sets the value of an attribute, adds an attribute, or removes an attribute.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is designed to make it easy to maintain a list of name/value pairs as a set of attributes. When maintaining the list, you need to add pairs, modify pairs, or delete pairs. If you call this method passing a name that does not exist as an attribute, this method creates an attribute for you. If you call this method passing the name of an existing attribute, this method modifies the value of the attribute to the value that you specify. If you pass `null` for `value`, this method removes the attribute.  
+This method is designed to make it easy to maintain a list of name/value pairs as a set of attributes. When maintaining the list, you need to add pairs, modify pairs, or delete pairs. If you call this method passing a name that does not exist as an attribute, this method creates an attribute for you. If you call this method passing the name of an existing attribute, this method modifies the value of the attribute to the value that you specify. If you pass `null` for `value`, this method removes the attribute.  
+ 
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
+The value is assigned to the attribute with the specified name. If no attribute with the specified name exists, a new attribute is added. If the value is `null`, the attribute with the specified name, if any, is deleted.  
+ 
+For more information, see [Maintaining Name/Value Pairs](http://msdn.microsoft.com/library/fe9798bf-b5e2-4a3c-a86c-7f8638912691).  
+ 
   
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
- The value is assigned to the attribute with the specified name. If no attribute with the specified name exists, a new attribute is added. If the value is `null`, the attribute with the specified name, if any, is deleted.  
-  
- For more information, see [Maintaining Name/Value Pairs](http://msdn.microsoft.com/library/fe9798bf-b5e2-4a3c-a86c-7f8638912691).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an element with an attribute. It then uses this method to replace the content of the attribute.  
-  
+The following example creates an element with an attribute. It then uses this method to replace the content of the attribute.  
+ 
 ```csharp  
 // Create an element with no content.  
 XElement root = new XElement("Root");  
@@ -5838,7 +5838,7 @@ Console.WriteLine(root);
 root.SetAttributeValue("Att3", null);  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
 ' Create an element with no content.  
 Dim root As XElement = <Root/>  
@@ -5858,16 +5858,16 @@ root.SetAttributeValue("Att3", Nothing)
 Console.WriteLine(root)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <Root Att1="1" Att2="2" Att3="3" />  
 <Root Att1="1" Att2="22" Att3="3" />  
 <Root Att1="1" Att2="22" />  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="value" /> is an instance of <see cref="T:System.Xml.Linq.XObject" />.</exception>
@@ -5905,23 +5905,23 @@ Console.WriteLine(root)
         <summary>Sets the value of a child element, adds a child element, or removes a child element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is designed to make it easy to maintain a list of name/value pairs as a set of children elements. When maintaining the list, you need to add pairs, modify pairs, or delete pairs. If you call this method passing a name that does not exist as a child element, this method creates a child element for you. If you call this method passing the name of an existing child element, this method modifies the value of the child element to the value that you specify. If you pass `null` for `value`, this method removes the child element.  
+This method is designed to make it easy to maintain a list of name/value pairs as a set of children elements. When maintaining the list, you need to add pairs, modify pairs, or delete pairs. If you call this method passing a name that does not exist as a child element, this method creates a child element for you. If you call this method passing the name of an existing child element, this method modifies the value of the child element to the value that you specify. If you pass `null` for `value`, this method removes the child element.  
+ 
+This method will raise events.  
+ 
+The value is assigned to the first child element with the specified name. If no child element with the specified name exists, a new child element is added. If the value is null, the first child element with the specified name, if any, is deleted.  
+ 
+This method does not add child nodes or attributes to the specified child element. This method throws an exception if any object that derives from <xref:System.Xml.Linq.XObject> is passed as `value`.  
+ 
+For more information, see [Maintaining Name/Value Pairs](http://msdn.microsoft.com/library/fe9798bf-b5e2-4a3c-a86c-7f8638912691).  
+ 
   
- This method will raise events.  
-  
- The value is assigned to the first child element with the specified name. If no child element with the specified name exists, a new child element is added. If the value is null, the first child element with the specified name, if any, is deleted.  
-  
- This method does not add child nodes or attributes to the specified child element. This method throws an exception if any object that derives from <xref:System.Xml.Linq.XObject> is passed as `value`.  
-  
- For more information, see [Maintaining Name/Value Pairs](http://msdn.microsoft.com/library/fe9798bf-b5e2-4a3c-a86c-7f8638912691).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an element with a child element. It then uses this method to set the value of the child element.  
-  
+The following example creates an element with a child element. It then uses this method to set the value of the child element.  
+ 
 ```csharp  
 // Create an element with no content  
 XElement root = new XElement("Root");  
@@ -5940,7 +5940,7 @@ Console.WriteLine(root);
 root.SetElementValue("Ele3", null);  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
 ' Create an element with no content.  
 Dim root As XElement = <Root/>  
@@ -5960,9 +5960,9 @@ root.SetElementValue("Ele3", Nothing)
 Console.WriteLine(root)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <Root>  
@@ -5980,7 +5980,7 @@ Console.WriteLine(root)
   <Ele2>22</Ele2>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="value" /> is an instance of <see cref="T:System.Xml.Linq.XObject" />.</exception>
@@ -6016,17 +6016,17 @@ Console.WriteLine(root)
         <summary>Sets the value of this element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
+It is invalid to pass an instance of a class that derives from <xref:System.Xml.Linq.XObject>, such as <xref:System.Xml.Linq.XElement>.  
+ 
   
- It is invalid to pass an instance of a class that derives from <xref:System.Xml.Linq.XObject>, such as <xref:System.Xml.Linq.XElement>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an element that contains a child element. It then sets the value of the element using this method.  
-  
+The following example creates an element that contains a child element. It then sets the value of the element using this method.  
+ 
 ```csharp  
   
                 XElement root = new XElement("Root",  
@@ -6035,7 +6035,7 @@ Console.WriteLine(root)
 root.SetValue("new content");  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement = _   
@@ -6046,14 +6046,14 @@ Console.WriteLine(root);
 root.SetValue("new content")  
 Console.WriteLine(root)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
 <Root>new content</Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
@@ -6087,12 +6087,12 @@ Console.WriteLine(root)
         <returns>An <see cref="T:System.Xml.Schema.XmlSchema" /> that describes the XML representation of the object that is produced by the <see cref="M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)" /> method and consumed by the <see cref="M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)" /> method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is part of implementation of the <xref:System.Xml.Serialization.IXmlSerializable> interface.  
-  
- This method is used internally for serializing object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](http://msdn.microsoft.com/library/443d7904-a6f0-450a-b1a4-5d7ed869d1d5).  
-  
+This method is part of implementation of the <xref:System.Xml.Serialization.IXmlSerializable> interface.  
+ 
+This method is used internally for serializing object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](http://msdn.microsoft.com/library/443d7904-a6f0-450a-b1a4-5d7ed869d1d5).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6126,12 +6126,12 @@ Console.WriteLine(root)
         <summary>Generates an object from its XML representation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is part of implementation of the <xref:System.Xml.Serialization.IXmlSerializable> interface.  
-  
- This method is used internally for serializing object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](http://msdn.microsoft.com/library/443d7904-a6f0-450a-b1a4-5d7ed869d1d5).  
-  
+This method is part of implementation of the <xref:System.Xml.Serialization.IXmlSerializable> interface.  
+ 
+This method is used internally for serializing object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](http://msdn.microsoft.com/library/443d7904-a6f0-450a-b1a4-5d7ed869d1d5).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6165,10 +6165,10 @@ Console.WriteLine(root)
         <summary>Converts an object into its XML representation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used internally for marshaling object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](http://msdn.microsoft.com/library/443d7904-a6f0-450a-b1a4-5d7ed869d1d5).  
-  
+This method is used internally for marshaling object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](http://msdn.microsoft.com/library/443d7904-a6f0-450a-b1a4-5d7ed869d1d5).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6200,39 +6200,39 @@ Console.WriteLine(root)
         <value>A <see cref="T:System.String" /> that contains all of the text content of this element. If there are multiple text nodes, they will be concatenated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using this property, you can get or set the value of an element.  
+Using this property, you can get or set the value of an element.  
+ 
+Setting this property will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
+If you want to get the value of an element but you are not sure that it exists, it is more convenient to use the explicit conversion operators, and assign the element to a nullable type such as `string` or <xref:System.Nullable%601> of <xref:System.Int32>. If the element does not exist, the nullable type is set to `null`. By contrast, if you want to use this property, you must make sure that the <xref:System.Xml.Linq.XContainer.Element%2A> method does not return `null` before you access this property.  
+ 
   
- Setting this property will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
- If you want to get the value of an element but you are not sure that it exists, it is more convenient to use the explicit conversion operators, and assign the element to a nullable type such as `string` or <xref:System.Nullable%601> of <xref:System.Int32>. If the element does not exist, the nullable type is set to `null`. By contrast, if you want to use this property, you must make sure that the <xref:System.Xml.Linq.XContainer.Element%2A> method does not return `null` before you access this property.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses this property to retrieve the text of an element with mixed content.  
-  
+The following example uses this property to retrieve the text of an element with mixed content.  
+ 
 ```csharp  
   
                 XElement el = XElement.Parse("<Root>This is <b>mixed</b> content</Root>");  
 Console.WriteLine("{0}", el.Value);  
 ```  
-  
+ 
 ```vb  
   
                 Dim el As XElement = <Root>This is <b>mixed</b> content</Root>  
 Console.WriteLine("{0}", el.Value)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 This is mixed content  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6267,10 +6267,10 @@ This is mixed content
         <summary>Write this element to an <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to write an <xref:System.Xml.Linq.XElement> to an <xref:System.Xml.XmlWriter>. Note that the example did not write an XML declaration.  
-  
+The following example shows how to write an <xref:System.Xml.Linq.XElement> to an <xref:System.Xml.XmlWriter>. Note that the example did not write an XML declaration.  
+ 
 ```csharp  
   
                 StringBuilder sb = new StringBuilder();  
@@ -6296,7 +6296,7 @@ using (XmlWriter xw = XmlWriter.Create(sb, xws)) {
   
 Console.WriteLine(sb.ToString());  
 ```  
-  
+ 
 ```vb  
   
                 Dim sb As StringBuilder = New StringBuilder()  
@@ -6322,9 +6322,9 @@ End Using
 Console.WriteLine(sb.ToString())  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -6336,7 +6336,7 @@ Console.WriteLine(sb.ToString())
   </AnotherChild>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6351,12 +6351,12 @@ Console.WriteLine(sb.ToString())
         <summary>Returns a collection of elements that contain this element, and the ancestors of this element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements in the returned collection are in reverse document order.  
-  
- This method uses deferred execution.  
-  
+The elements in the returned collection are in reverse document order.  
+ 
+This method uses deferred execution.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6371,10 +6371,10 @@ Console.WriteLine(sb.ToString())
         <summary>Returns a collection of elements that contain this element, and all descendant elements of this element, in document order.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses deferred execution.  
-  
+This method uses deferred execution.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6389,19 +6389,19 @@ Console.WriteLine(sb.ToString())
         <summary>Replaces the child nodes and the attributes of this element with the specified content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses snapshot semantics—that is, it creates a separate copy of the new content before replacing the contents of the current element with the new content. This means that you can query the contents of the current element and use the results of the query as the specified new content.  
+This method uses snapshot semantics—that is, it creates a separate copy of the new content before replacing the contents of the current element with the new content. This means that you can query the contents of the current element and use the results of the query as the specified new content.  
+ 
+For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
-  
+ 
 ## Examples  
- The following example passes the results of a LINQ query to this method, replacing the contents of an element with the query results. It queries the element that is having its contents replaced.  
-  
+The following example passes the results of a LINQ query to this method, replacing the contents of an element with the query results. It queries the element that is having its contents replaced.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -6423,7 +6423,7 @@ xmlTree.ReplaceAll(
   
 Console.WriteLine(xmlTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _  
@@ -6447,9 +6447,9 @@ xmlTree.ReplaceAll( _
 Console.WriteLine(xmlTree)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <Root>  
@@ -6466,7 +6466,7 @@ Console.WriteLine(xmlTree)
   <NewData>5</NewData>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6481,12 +6481,12 @@ Console.WriteLine(xmlTree)
         <summary>Creates a new <see cref="T:System.Xml.Linq.XElement" /> from a file specified by a URI, from an <see cref="T:System.IO.TextReader" />, or from an <see cref="T:System.Xml.XmlReader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use one of the overloads of this method to load an <xref:System.Xml.Linq.XElement> from a file, a <xref:System.IO.TextReader>, or an <xref:System.Xml.XmlReader>.  
-  
- To create an <xref:System.Xml.Linq.XElement> from a string that contains XML, use <xref:System.Xml.Linq.XElement.Parse%2A>.  
-  
+You can use one of the overloads of this method to load an <xref:System.Xml.Linq.XElement> from a file, a <xref:System.IO.TextReader>, or an <xref:System.Xml.XmlReader>.  
+ 
+To create an <xref:System.Xml.Linq.XElement> from a string that contains XML, use <xref:System.Xml.Linq.XElement.Parse%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6501,17 +6501,17 @@ Console.WriteLine(xmlTree)
         <summary>Replaces the attributes of this element with the specified content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
+For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an element with three attributes. It then uses this method to replace all of the attributes of the element with a single attribute.  
-  
+The following example creates an element with three attributes. It then uses this method to replace all of the attributes of the element with a single attribute.  
+ 
 ```csharp  
   
                 XElement root = new XElement("Root",  
@@ -6524,21 +6524,21 @@ root.ReplaceAttributes(
 );  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement = <Root Att1="1" Att2="2" Att3="3"/>  
 root.ReplaceAttributes(New XAttribute("NewAtt1", 101))  
 Console.WriteLine(root)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
 <Root NewAtt1="101" />  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6553,19 +6553,19 @@ Console.WriteLine(root)
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
+ 
+When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ 
   
- There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
-  
- When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree. The content of the new element comes from a LINQ query.  
-  
+The following example creates an XML tree. The content of the new element comes from a LINQ query.  
+ 
 ```csharp  
   
                 XElement xmlTree1 = new XElement("Root",  
@@ -6584,7 +6584,7 @@ XElement xmlTree2 = new XElement("Root",
 );  
 Console.WriteLine(xmlTree2);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree1 As XElement = _   
@@ -6607,9 +6607,9 @@ Dim xmlTree2 As XElement = _
 Console.WriteLine(xmlTree2)  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -6618,7 +6618,7 @@ Console.WriteLine(xmlTree2)
   <Child>5</Child>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -6633,10 +6633,10 @@ Console.WriteLine(xmlTree2)
         <summary>Returns a collection of attributes of this element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses deferred execution.  
-  
+This method uses deferred execution.  
+ 
  ]]></format>
         </remarks>
       </Docs>

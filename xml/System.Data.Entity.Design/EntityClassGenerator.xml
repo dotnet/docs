@@ -65,10 +65,10 @@
         <value>The CSDL to code namespace mappings.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Namespace mappings can be used to specify a different code namespace for generating code than what is specified in the CSDL file. The namespace mappings are consulted when a reference to a type is to be generated. If an entry is found, the value will be used to generate the qualified reference to the type; otherwise, the CSDL namespace will be used.  
-  
+Namespace mappings can be used to specify a different code namespace for generating code than what is specified in the CSDL file. The namespace mappings are consulted when a reference to a type is to be generated. If an entry is found, the value will be used to generate the qualified reference to the type; otherwise, the CSDL namespace will be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -207,10 +207,10 @@
         <summary>Occurs when a property has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -231,10 +231,10 @@
         <summary>Occurs when type information has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
  ]]></format>
         </remarks>
       </Docs>

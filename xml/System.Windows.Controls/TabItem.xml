@@ -19,25 +19,25 @@
     <summary>Represents a selectable item inside a <see cref="T:System.Windows.Controls.TabControl" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.TabItem> is a <xref:System.Windows.Controls.HeaderedContentControl>. Its content property is <xref:System.Windows.Controls.ContentControl.Content%2A> and its header property is <xref:System.Windows.Controls.HeaderedContentControl.Header%2A>. For more information, see the <xref:System.Windows.Controls.HeaderedContentControl> class.  
-  
+<xref:System.Windows.Controls.TabItem> is a <xref:System.Windows.Controls.HeaderedContentControl>. Its content property is <xref:System.Windows.Controls.ContentControl.Content%2A> and its header property is <xref:System.Windows.Controls.HeaderedContentControl.Header%2A>. For more information, see the <xref:System.Windows.Controls.HeaderedContentControl> class.  
+ 
 ## Customizing the TabControl Control  
- To apply the same property settings to multiple <xref:System.Windows.Controls.TabItem> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.TabItem>, see [TabControl Styles and Templates](~/docs/framework/wpf/controls/tabcontrol-styles-and-templates.md).  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
+To apply the same property settings to multiple <xref:System.Windows.Controls.TabItem> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.TabItem>, see [TabControl Styles and Templates](~/docs/framework/wpf/controls/tabcontrol-styles-and-templates.md).  
+ 
+Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ 
 > [!NOTE]
 >  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.TabItem> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Controls.TabControl> with <xref:System.Windows.Controls.TabItem> elements.  
-  
- [!code-xml[TabControl#1](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControl/CSharp/Pane1.xaml#1)]  
-  
+The following example shows how to create a <xref:System.Windows.Controls.TabControl> with <xref:System.Windows.Controls.TabItem> elements.  
+ 
+[!code-xml[TabControl#1](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControl/CSharp/Pane1.xaml#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -83,25 +83,25 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.TabItem" /> is selected; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsSelected"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.TabItem>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Journal%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.TabItem.IsSelected%2A> property to select a <xref:System.Windows.Controls.TabItem> programmatically.  
-  
- [!code-xml[TabControlStyles#4](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlStyles/CS/Pane1.xaml#4)]
- <!-- TODO: review snippet reference [!code-xml[TabControlStyles#4](~/samples/snippets/xaml/VS_Snippets_Wpf/TabControlStyles/XAML/Pane1.xaml#4)]  -->  
-  
+The following example shows how to use the <xref:System.Windows.Controls.TabItem.IsSelected%2A> property to select a <xref:System.Windows.Controls.TabItem> programmatically.  
+ 
+[!code-xml[TabControlStyles#4](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlStyles/CS/Pane1.xaml#4)]
+<!-- TODO: review snippet reference [!code-xml[TabControlStyles#4](~/samples/snippets/xaml/VS_Snippets_Wpf/TabControlStyles/XAML/Pane1.xaml#4)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,26 +333,26 @@
         <value>One of the <see cref="T:System.Windows.Controls.Dock" /> values. The default is <see cref="F:System.Windows.Controls.Dock.Top" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property cannot be set. It gets its value from the <xref:System.Windows.Controls.TabControl.TabStripPlacement%2A?displayProperty=fullName> property of the parent <xref:System.Windows.Controls.TabControl>.  
-  
+This property cannot be set. It gets its value from the <xref:System.Windows.Controls.TabControl.TabStripPlacement%2A?displayProperty=fullName> property of the parent <xref:System.Windows.Controls.TabControl>.  
+ 
 <a name="dependencyPropertyInfo_TabStripPlacement"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.TabItem.TabStripPlacementProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to retrieve <xref:System.Windows.Controls.TabItem.TabStripPlacement%2A> information about a <xref:System.Windows.Controls.TabItem>.  
-  
- [!code-csharp[TabItem_snip#TabItemPlacement](~/samples/snippets/csharp/VS_Snippets_Wpf/TabItem_snip/CSharp/Pane1.xaml.cs#tabitemplacement)]
- [!code-vb[TabItem_snip#TabItemPlacement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TabItem_snip/visualbasic/pane1.xaml.vb#tabitemplacement)]  
-  
+The following example shows how to retrieve <xref:System.Windows.Controls.TabItem.TabStripPlacement%2A> information about a <xref:System.Windows.Controls.TabItem>.  
+ 
+[!code-csharp[TabItem_snip#TabItemPlacement](~/samples/snippets/csharp/VS_Snippets_Wpf/TabItem_snip/CSharp/Pane1.xaml.cs#tabitemplacement)]
+[!code-vb[TabItem_snip#TabItemPlacement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TabItem_snip/visualbasic/pane1.xaml.vb#tabitemplacement)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

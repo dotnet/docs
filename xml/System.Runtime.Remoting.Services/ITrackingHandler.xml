@@ -17,36 +17,36 @@
     <summary>Indicates that the implementing object must be notified of marshaling, unmarshaling, and disconnection of objects and proxies by the remoting infrastructure.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Every object that is registered with <xref:System.Runtime.Remoting.Services.TrackingServices> is called by remoting when an object or proxy in the current <xref:System.AppDomain> is marshaled, unmarshaled, or disconnected.  
-  
- Note that only objects can be disconnected. An exception is thrown when disconnect is called on a proxy.  
-  
+Every object that is registered with <xref:System.Runtime.Remoting.Services.TrackingServices> is called by remoting when an object or proxy in the current <xref:System.AppDomain> is marshaled, unmarshaled, or disconnected.  
+ 
+Note that only objects can be disconnected. An exception is thrown when disconnect is called on a proxy.  
+ 
 > [!NOTE]
 >  This interface makes a link demand. A SecurityException is thrown if the immediate caller makes the call through a reference to the interface and does not have infrastructure permission. See [Link Demands](~/docs/framework/misc/link-demands.md) for more information.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to implement the methods of the <xref:System.Runtime.Remoting.Services.ITrackingHandler> interface to receive notifications from the remoting infrastructure.  
-  
- The following code example shows how to implement this interface.  
-  
- [!code-csharp[System.Runtime.Remoting.Services.TrackingServices#30](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Services.TrackingServices/CS/trackinghandler.cs#30)]  
-  
- The following code example shows how to implement this interface on a server.  
-  
- [!code-csharp[System.Runtime.Remoting.Services.TrackingServices#20](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Services.TrackingServices/CS/server.cs#20)]  
-  
- The following code example shows how to implement this interface on a client for the server in the preceding code example.  
-  
- [!code-csharp[System.Runtime.Remoting.Services.TrackingServices#0](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Services.TrackingServices/CS/client.cs#0)]  
-  
- The following code example shows the remote object that is used by the server and the client.  
-  
- [!code-csharp[System.Runtime.Remoting.Services.TrackingServices#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Services.TrackingServices/CS/remoteservice.cs#10)]  
-  
+The following code example shows how to implement the methods of the <xref:System.Runtime.Remoting.Services.ITrackingHandler> interface to receive notifications from the remoting infrastructure.  
+ 
+The following code example shows how to implement this interface.  
+ 
+[!code-csharp[System.Runtime.Remoting.Services.TrackingServices#30](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Services.TrackingServices/CS/trackinghandler.cs#30)]  
+ 
+The following code example shows how to implement this interface on a server.  
+ 
+[!code-csharp[System.Runtime.Remoting.Services.TrackingServices#20](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Services.TrackingServices/CS/server.cs#20)]  
+ 
+The following code example shows how to implement this interface on a client for the server in the preceding code example.  
+ 
+[!code-csharp[System.Runtime.Remoting.Services.TrackingServices#0](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Services.TrackingServices/CS/client.cs#0)]  
+ 
+The following code example shows the remote object that is used by the server and the client.  
+ 
+[!code-csharp[System.Runtime.Remoting.Services.TrackingServices#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Services.TrackingServices/CS/remoteservice.cs#10)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
@@ -73,12 +73,12 @@
         <summary>Notifies the current instance that an object has been disconnected from its proxy.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to implement this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Services.ITrackingHandler> interface.  
-  
- [!code-csharp[System.Runtime.Remoting.Services.TrackingServices#33](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Services.TrackingServices/CS/trackinghandler.cs#33)]  
-  
+The following code example shows how to implement this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Services.ITrackingHandler> interface.  
+ 
+[!code-csharp[System.Runtime.Remoting.Services.TrackingServices#33](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Services.TrackingServices/CS/trackinghandler.cs#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,12 +106,12 @@
         <summary>Notifies the current instance that an object has been marshaled.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to implement this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Services.ITrackingHandler> interface.  
-  
- [!code-csharp[System.Runtime.Remoting.Services.TrackingServices#31](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Services.TrackingServices/CS/trackinghandler.cs#31)]  
-  
+The following code example shows how to implement this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Services.ITrackingHandler> interface.  
+ 
+[!code-csharp[System.Runtime.Remoting.Services.TrackingServices#31](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Services.TrackingServices/CS/trackinghandler.cs#31)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,12 +139,12 @@
         <summary>Notifies the current instance that an object has been unmarshaled.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to implement this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Services.ITrackingHandler> interface.  
-  
- [!code-csharp[System.Runtime.Remoting.Services.TrackingServices#32](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Services.TrackingServices/CS/trackinghandler.cs#32)]  
-  
+The following code example shows how to implement this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Services.ITrackingHandler> interface.  
+ 
+[!code-csharp[System.Runtime.Remoting.Services.TrackingServices#32](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Services.TrackingServices/CS/trackinghandler.cs#32)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

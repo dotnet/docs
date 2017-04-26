@@ -19,14 +19,14 @@
     <summary>Contains the data sent to the tracking service by the runtime tracking infrastructure when it matches a <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackPoint" />. It is also used in the return list of the <see cref="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowEvents" /> property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- When the runtime tracking infrastructure matches a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>, it sends a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> to the tracking service over the <xref:System.Workflow.Runtime.Tracking.TrackingChannel> associated with that tracking service. The tracking service can perform whatever action is necessary on the data in the tracking record.  
-  
+ 
+When the runtime tracking infrastructure matches a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>, it sends a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> to the tracking service over the <xref:System.Workflow.Runtime.Tracking.TrackingChannel> associated with that tracking service. The tracking service can perform whatever action is necessary on the data in the tracking record.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called by the runtime tracking infrastructure.  
-  
+This constructor is called by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -76,12 +76,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord" /> class by using the specified <see cref="T:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent" /> value, <see cref="T:System.DateTime" />, number, and <see cref="T:System.EventArgs" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `eventDateTime` is expressed in Coordinated Universal Time (UTC). `eventOrder` is guaranteed to be unique within the workflow instance; however, it is not guaranteed to be sequential.  
-  
- This constructor is called by the runtime tracking infrastructure.  
-  
+`eventDateTime` is expressed in Coordinated Universal Time (UTC). `eventOrder` is guaranteed to be unique within the workflow instance; however, it is not guaranteed to be sequential.  
+ 
+This constructor is called by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <value>An <see cref="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" /> that contains the annotations that are associated with the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackPoint" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is set by the runtime tracking infrastructure.  
-  
+This property is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,18 +128,18 @@
         <value>Either a <see cref="T:System.Workflow.Runtime.Tracking.TrackingWorkflowSuspendedEventArgs" />, a <see cref="T:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs" />, a <see cref="T:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs" />, or a null reference (<see langword="Nothing" /> in Visual Basic).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For most workflow status events, <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A> is a null reference (`Nothing`); however, for certain kinds of workflow status events the runtime tracking infrastructure uses <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A> to return additional data about the workflow status event. The following table lists the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values that correspond to these special workflow status events and the type of object returned in <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A> for each of these workflow status events.  
-  
+For most workflow status events, <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A> is a null reference (`Nothing`); however, for certain kinds of workflow status events the runtime tracking infrastructure uses <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A> to return additional data about the workflow status event. The following table lists the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values that correspond to these special workflow status events and the type of object returned in <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A> for each of these workflow status events.  
+ 
 |<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> Value|<xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A> Object|  
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
 |<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs>|  
 |<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowSuspendedEventArgs>|  
 |<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs>|  
-  
- This property is set by the runtime tracking infrastructure.  
-  
+ 
+This property is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,12 +161,12 @@
         <value>A <see cref="T:System.DateTime" /> that indicates the date and time that the workflow status event occurred.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DateTime> is Coordinated Universal Time (UTC).  
-  
- This property is set by the runtime tracking infrastructure.  
-  
+The <xref:System.DateTime> is Coordinated Universal Time (UTC).  
+ 
+This property is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,12 +188,12 @@
         <value>A value that indicates the order of the workflow status event in the workflow instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventOrder%2A> indicates the relative order in the workflow instance of the workflow status event that matched the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint>.  <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventOrder%2A> is unique within a workflow instance, but it is not guaranteed to be sequential.  
-  
- This property is set by the runtime tracking infrastructure.  
-  
+<xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventOrder%2A> indicates the relative order in the workflow instance of the workflow status event that matched the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint>.  <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventOrder%2A> is unique within a workflow instance, but it is not guaranteed to be sequential.  
+ 
+This property is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,12 +215,12 @@
         <value>One of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `TrackingWorkflowEvent` contains one of the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values indicating the kind of workflow status event that was matched by the runtime tracking infrastructure and caused the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> to be sent. It reflects the current status of the workflow instance. A workflow instance emits workflow status events only when the status of the workflow instance changes, and, therefore, a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> can be matched only when a workflow status change occurs.  
-  
- This property is set by the runtime tracking infrastructure.  
-  
+`TrackingWorkflowEvent` contains one of the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values indicating the kind of workflow status event that was matched by the runtime tracking infrastructure and caused the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> to be sent. It reflects the current status of the workflow instance. A workflow instance emits workflow status events only when the status of the workflow instance changes, and, therefore, a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> can be matched only when a workflow status change occurs.  
+ 
+This property is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -234,10 +234,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor is called by the runtime tracking infrastructure.  
-  
+The constructor is called by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>

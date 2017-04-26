@@ -40,10 +40,10 @@
         <summary>Creates a new instance of the specified class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adapters are usually constructed automatically by ASP.NET and must have a default constructor.  
-  
+Adapters are usually constructed automatically by ASP.NET and must have a default constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -65,10 +65,10 @@
         <summary>Starts a new Style block. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.EndStyleContext%2A> method to complete the Style block.  
-  
+Use the <xref:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.EndStyleContext%2A> method to complete the Style block.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,10 +90,10 @@
         <summary>Completes a new Style block. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.BeginStyleContext%2A> method to start the Style block.  
-  
+Use the <xref:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.BeginStyleContext%2A> method to start the Style block.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,10 +160,10 @@
         <summary>Begins a block by using the layout and character formatting from a given style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.EnterStyle%2A> and <xref:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.ExitStyle%2A> methods allow a device adapter to emit markup, in order to begin and end a block using the character formatting from a given style.  
-  
+The <xref:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.EnterStyle%2A> and <xref:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.ExitStyle%2A> methods allow a device adapter to emit markup, in order to begin and end a block using the character formatting from a given style.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -652,10 +652,10 @@
         <summary>Writes a hidden field with the given name and value. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A hidden field is in the form \<input type="hidden" name="name" value="value">.  
-  
+A hidden field is in the form \<input type="hidden" name="name" value="value">.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -703,10 +703,10 @@
         <summary>Writes the given text, optionally with encoding. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Encoding involves mapping characters with HTML/WML meanings to the appropriate character code.  
-  
+Encoding involves mapping characters with HTML/WML meanings to the appropriate character code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -733,10 +733,10 @@
         <summary>Writes an encoded URL parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The parameter is written in the form `name=value`.  
-  
+The parameter is written in the form `name=value`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

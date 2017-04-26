@@ -14,10 +14,10 @@
     <summary>Provides customized assembly binding for designers that are used to create [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This feature is used only in developer mode for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. It enables designers to supply isolated binding contexts as required, during iterative development of assemblies.  
-  
+This feature is used only in developer mode for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. It enables designers to supply isolated binding contexts as required, during iterative development of assemblies.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -144,12 +144,12 @@
         <summary>Creates a context and sets it as the shared context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The shared context cannot be set more than once.  
-  
- <xref:System.Runtime.DesignerServices.WindowsRuntimeDesignerContext> is supported only in the default application domain.  
-  
+The shared context cannot be set more than once.  
+ 
+<xref:System.Runtime.DesignerServices.WindowsRuntimeDesignerContext> is supported only in the default application domain.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The shared context has already been set in this application domain.  
@@ -215,12 +215,12 @@
         <summary>Sets a context to handle iterations of assembly binding requests, as assemblies are recompiled during the design process.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The context can be replaced with a new binding context at any time, as required by the needs of the designer.  
-  
- <xref:System.Runtime.DesignerServices.WindowsRuntimeDesignerContext> is supported only in the default application domain.  
-  
+The context can be replaced with a new binding context at any time, as required by the needs of the designer.  
+ 
+<xref:System.Runtime.DesignerServices.WindowsRuntimeDesignerContext> is supported only in the default application domain.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The current application domain is not the default application domain.</exception>

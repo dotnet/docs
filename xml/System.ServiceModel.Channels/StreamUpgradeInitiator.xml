@@ -14,12 +14,12 @@
     <summary>To implement a custom upgrade initiator, inherit from this <see langword="abstract" /> base class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An example of a stream upgrade is to build a compression stream directly on top of the transport stream. This class is used with <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor> and <xref:System.ServiceModel.Channels.StreamUpgradeProvider> to implement a custom stream upgrade.  
-  
- For a detailed description of the upgrade process, see <xref:System.ServiceModel.Channels.StreamUpgradeProvider>.  
-  
+An example of a stream upgrade is to build a compression stream directly on top of the transport stream. This class is used with <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor> and <xref:System.ServiceModel.Channels.StreamUpgradeProvider> to implement a custom stream upgrade.  
+ 
+For a detailed description of the upgrade process, see <xref:System.ServiceModel.Channels.StreamUpgradeProvider>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <returns>Returns an <see cref="T:System.IAsyncResult" /> to be passed into the <see cref="M:System.ServiceModel.Channels.StreamUpgradeInitiator.EndInitiateUpgrade(System.IAsyncResult)" /> method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls <xref:System.ServiceModel.Channels.StreamUpgradeInitiator.InitiateUpgrade%2A> and returns.  
-  
+This method calls <xref:System.ServiceModel.Channels.StreamUpgradeInitiator.InitiateUpgrade%2A> and returns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
         <returns>Returns the upgraded stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about using this method, see the remarks in <xref:System.ServiceModel.Channels.StreamUpgradeInitiator.InitiateUpgrade%2A>.  
-  
+For more information about using this method, see the remarks in <xref:System.ServiceModel.Channels.StreamUpgradeInitiator.InitiateUpgrade%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <returns>Returns the content type of the next upgrade.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a set of upgrade content types supported by the upgrade provider in the order in which they are expected. Upgrade providers that support a single upgrade return only a single value. Upgrade providers that support multiple upgrades return the values in order (for example, compression content type followed by the security content type).  
-  
+This method returns a set of upgrade content types supported by the upgrade provider in the order in which they are expected. Upgrade providers that support a single upgrade return only a single value. Upgrade providers that support multiple upgrades return the values in order (for example, compression content type followed by the security content type).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,10 +148,10 @@
         <returns>Returns the upgraded stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be called multiple times for each upgrade supported by the upgrade provider. For example, an upgrade provider that supports compression and security would call this method twice: first to upgrade the default transport streaming for compression, and second to upgrade the security. Subsequent calls to this method should pass in the upgrade stream from the previous call.  
-  
+This method can be called multiple times for each upgrade supported by the upgrade provider. For example, an upgrade provider that supports compression and security would call this method twice: first to upgrade the default transport streaming for compression, and second to upgrade the security. Subsequent calls to this method should pass in the upgrade stream from the previous call.  
+ 
  ]]></format>
         </remarks>
       </Docs>

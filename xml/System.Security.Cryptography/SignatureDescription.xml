@@ -24,14 +24,14 @@
     <summary>Contains information about the properties of a digital signature.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use members of the <xref:System.Security.Cryptography.SignatureDescription> class.  
-  
- [!code-cpp[System.Security.Cryptography.SignatureDescription#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#2)]
- [!code-csharp[System.Security.Cryptography.SignatureDescription#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#2)]
- [!code-vb[System.Security.Cryptography.SignatureDescription#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#2)]  
-  
+The following code example demonstrates how to use members of the <xref:System.Security.Cryptography.SignatureDescription> class.  
+ 
+[!code-cpp[System.Security.Cryptography.SignatureDescription#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#2)]
+[!code-csharp[System.Security.Cryptography.SignatureDescription#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#2)]
+[!code-vb[System.Security.Cryptography.SignatureDescription#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,14 +55,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.SignatureDescription" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the default <xref:System.Security.Cryptography.SignatureDescription.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
-  
- [!code-cpp[System.Security.Cryptography.SignatureDescription#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#1)]
- [!code-csharp[System.Security.Cryptography.SignatureDescription#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#1)]
- [!code-vb[System.Security.Cryptography.SignatureDescription#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#1)]  
-  
+The following code example demonstrates how to call the default <xref:System.Security.Cryptography.SignatureDescription.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
+ 
+[!code-cpp[System.Security.Cryptography.SignatureDescription#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#1)]
+[!code-csharp[System.Security.Cryptography.SignatureDescription#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#1)]
+[!code-vb[System.Security.Cryptography.SignatureDescription#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,16 +89,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.SignatureDescription" /> class from the specified <see cref="T:System.Security.SecurityElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to initialize a new <xref:System.Security.Cryptography.SignatureDescription> class using a  
-  
- <xref:System.Security.SecurityElement> containing the four algorithms. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
-  
- [!code-cpp[System.Security.Cryptography.SignatureDescription#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#3)]
- [!code-csharp[System.Security.Cryptography.SignatureDescription#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#3)]
- [!code-vb[System.Security.Cryptography.SignatureDescription#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#3)]  
-  
+The following code example demonstrates how to initialize a new <xref:System.Security.Cryptography.SignatureDescription> class using a  
+ 
+<xref:System.Security.SecurityElement> containing the four algorithms. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
+ 
+[!code-cpp[System.Security.Cryptography.SignatureDescription#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#3)]
+[!code-csharp[System.Security.Cryptography.SignatureDescription#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#3)]
+[!code-vb[System.Security.Cryptography.SignatureDescription#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="el" /> parameter is <see langword="null" />.</exception>
@@ -130,14 +130,14 @@
         <returns>The newly created <see cref="T:System.Security.Cryptography.AsymmetricSignatureDeformatter" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Security.Cryptography.SignatureDescription.CreateDeformatter%2A> method to create a DSA signature deformatter to verify the signature. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
-  
- [!code-cpp[System.Security.Cryptography.SignatureDescription#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#4)]
- [!code-csharp[System.Security.Cryptography.SignatureDescription#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#4)]
- [!code-vb[System.Security.Cryptography.SignatureDescription#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#4)]  
-  
+The following code example demonstrates how to use the <xref:System.Security.Cryptography.SignatureDescription.CreateDeformatter%2A> method to create a DSA signature deformatter to verify the signature. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
+ 
+[!code-cpp[System.Security.Cryptography.SignatureDescription#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#4)]
+[!code-csharp[System.Security.Cryptography.SignatureDescription#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#4)]
+[!code-vb[System.Security.Cryptography.SignatureDescription#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,14 +165,14 @@
         <returns>The newly created <see cref="T:System.Security.Cryptography.HashAlgorithm" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Security.Cryptography.SignatureDescription.CreateDigest%2A> method to create a <xref:System.Security.Cryptography.HashAlgorithm> using the digest algorithm of the signature. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
-  
- [!code-cpp[System.Security.Cryptography.SignatureDescription#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#10)]
- [!code-csharp[System.Security.Cryptography.SignatureDescription#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#10)]
- [!code-vb[System.Security.Cryptography.SignatureDescription#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#10)]  
-  
+The following code example demonstrates how to use the <xref:System.Security.Cryptography.SignatureDescription.CreateDigest%2A> method to create a <xref:System.Security.Cryptography.HashAlgorithm> using the digest algorithm of the signature. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
+ 
+[!code-cpp[System.Security.Cryptography.SignatureDescription#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#10)]
+[!code-csharp[System.Security.Cryptography.SignatureDescription#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#10)]
+[!code-vb[System.Security.Cryptography.SignatureDescription#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,14 +203,14 @@
         <returns>The newly created <see cref="T:System.Security.Cryptography.AsymmetricSignatureFormatter" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Security.Cryptography.SignatureDescription.CreateFormatter%2A> method to create a signature formatter for DSA encryption. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
-  
- [!code-cpp[System.Security.Cryptography.SignatureDescription#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#5)]
- [!code-csharp[System.Security.Cryptography.SignatureDescription#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#5)]
- [!code-vb[System.Security.Cryptography.SignatureDescription#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#5)]  
-  
+The following code example demonstrates how to use the <xref:System.Security.Cryptography.SignatureDescription.CreateFormatter%2A> method to create a signature formatter for DSA encryption. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
+ 
+[!code-cpp[System.Security.Cryptography.SignatureDescription#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#5)]
+[!code-csharp[System.Security.Cryptography.SignatureDescription#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#5)]
+[!code-vb[System.Security.Cryptography.SignatureDescription#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,14 +237,14 @@
         <value>The deformatter algorithm for the signature description.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to set the <xref:System.Security.Cryptography.SignatureDescription.DeformatterAlgorithm%2A> property with the RSAPKCS1 deformatter. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
-  
- [!code-cpp[System.Security.Cryptography.SignatureDescription#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#8)]
- [!code-csharp[System.Security.Cryptography.SignatureDescription#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#8)]
- [!code-vb[System.Security.Cryptography.SignatureDescription#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#8)]  
-  
+The following code example demonstrates how to set the <xref:System.Security.Cryptography.SignatureDescription.DeformatterAlgorithm%2A> property with the RSAPKCS1 deformatter. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
+ 
+[!code-cpp[System.Security.Cryptography.SignatureDescription#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#8)]
+[!code-csharp[System.Security.Cryptography.SignatureDescription#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#8)]
+[!code-vb[System.Security.Cryptography.SignatureDescription#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,14 +271,14 @@
         <value>The digest algorithm for the signature description.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to set the <xref:System.Security.Cryptography.SignatureDescription.DigestAlgorithm%2A> property for RSA encryption using the SHA1 provider. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
-  
- [!code-cpp[System.Security.Cryptography.SignatureDescription#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#6)]
- [!code-csharp[System.Security.Cryptography.SignatureDescription#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#6)]
- [!code-vb[System.Security.Cryptography.SignatureDescription#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#6)]  
-  
+The following code example demonstrates how to set the <xref:System.Security.Cryptography.SignatureDescription.DigestAlgorithm%2A> property for RSA encryption using the SHA1 provider. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
+ 
+[!code-cpp[System.Security.Cryptography.SignatureDescription#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#6)]
+[!code-csharp[System.Security.Cryptography.SignatureDescription#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#6)]
+[!code-vb[System.Security.Cryptography.SignatureDescription#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -305,14 +305,14 @@
         <value>The formatter algorithm for the signature description.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to set the <xref:System.Security.Cryptography.SignatureDescription.FormatterAlgorithm%2A> property with the RSAPKCS1 formatter. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
-  
- [!code-cpp[System.Security.Cryptography.SignatureDescription#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#9)]
- [!code-csharp[System.Security.Cryptography.SignatureDescription#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#9)]
- [!code-vb[System.Security.Cryptography.SignatureDescription#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#9)]  
-  
+The following code example demonstrates how to set the <xref:System.Security.Cryptography.SignatureDescription.FormatterAlgorithm%2A> property with the RSAPKCS1 formatter. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
+ 
+[!code-cpp[System.Security.Cryptography.SignatureDescription#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#9)]
+[!code-csharp[System.Security.Cryptography.SignatureDescription#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#9)]
+[!code-vb[System.Security.Cryptography.SignatureDescription#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -339,14 +339,14 @@
         <value>The key algorithm for the signature description.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to set the <xref:System.Security.Cryptography.SignatureDescription.KeyAlgorithm%2A> property for RSA encryption. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
-  
- [!code-cpp[System.Security.Cryptography.SignatureDescription#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#7)]
- [!code-csharp[System.Security.Cryptography.SignatureDescription#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#7)]
- [!code-vb[System.Security.Cryptography.SignatureDescription#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#7)]  
-  
+The following code example demonstrates how to set the <xref:System.Security.Cryptography.SignatureDescription.KeyAlgorithm%2A> property for RSA encryption. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.SignatureDescription> class.  
+ 
+[!code-cpp[System.Security.Cryptography.SignatureDescription#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CPP/signaturedescription.cpp#7)]
+[!code-csharp[System.Security.Cryptography.SignatureDescription#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/CS/signaturedescription.cs#7)]
+[!code-vb[System.Security.Cryptography.SignatureDescription#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.SignatureDescription/VB/signaturedescription.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -11,18 +11,18 @@
     <summary>Defines the basic functionality for a data source designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.IDataSourceDesigner> interface defines an interface through which you can implement basic services for a data source designer. A designer is only active at design time, and must be associated with a data source, using a <xref:System.ComponentModel.DesignerAttribute>, in order to be loaded when a data source of the associated type is created at design time.  
-  
- The <xref:System.Web.UI.Design.IDataSourceDesigner> interface provides methods and properties that you can implement in order to provide custom behavior at design time.  
-  
- A designer can also use the available design-time services to perform a variety of tasks, including surveying the current design-time environment for components and their properties, reading and setting the values of properties of components, managing the toolbox, managing selected components, or displaying a user interface that can be used to configure values or to apply further processing.  
-  
- In most cases, implement your custom designer for a data source by deriving it from the <xref:System.Web.UI.Design.DataSourceDesigner> class. Data sources whose associated designer does not derive from <xref:System.Web.UI.Design.DataSourceDesigner> are displayed in the component tray. The <xref:System.Web.UI.Design.DataSourceDesigner> class implements the <xref:System.Web.UI.Design.IDataSourceDesigner> interface and provides additional design-time support that may be of use to authors of designers. For more information, see the reference documentation for these classes.  
-  
- For an overview of creating design components, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
-  
+The <xref:System.Web.UI.Design.IDataSourceDesigner> interface defines an interface through which you can implement basic services for a data source designer. A designer is only active at design time, and must be associated with a data source, using a <xref:System.ComponentModel.DesignerAttribute>, in order to be loaded when a data source of the associated type is created at design time.  
+ 
+The <xref:System.Web.UI.Design.IDataSourceDesigner> interface provides methods and properties that you can implement in order to provide custom behavior at design time.  
+ 
+A designer can also use the available design-time services to perform a variety of tasks, including surveying the current design-time environment for components and their properties, reading and setting the values of properties of components, managing the toolbox, managing selected components, or displaying a user interface that can be used to configure values or to apply further processing.  
+ 
+In most cases, implement your custom designer for a data source by deriving it from the <xref:System.Web.UI.Design.DataSourceDesigner> class. Data sources whose associated designer does not derive from <xref:System.Web.UI.Design.DataSourceDesigner> are displayed in the component tray. The <xref:System.Web.UI.Design.DataSourceDesigner> class implements the <xref:System.Web.UI.Design.IDataSourceDesigner> interface and provides additional design-time support that may be of use to authors of designers. For more information, see the reference documentation for these classes.  
+ 
+For an overview of creating design components, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -82,10 +82,10 @@
         <summary>Launches the underlying data source's configuration wizard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be called only if <xref:System.Web.UI.Design.IDataSourceDesigner.CanConfigure%2A> is `true`.  
-  
+This method can be called only if <xref:System.Web.UI.Design.IDataSourceDesigner.CanConfigure%2A> is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,10 +106,10 @@
         <summary>Occurs when a data source has changed in a way that affects data-bound controls.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.IDataSourceDesigner.DataSourceChanged> event occurs when the value of a field in the data source, or a property in the data-bound control that affects the data bindings to that field, has changed.  
-  
+The <xref:System.Web.UI.Design.IDataSourceDesigner.DataSourceChanged> event occurs when the value of a field in the data source, or a property in the data-bound control that affects the data bindings to that field, has changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,12 +135,12 @@
         <returns>A <see cref="T:System.Web.UI.Design.DesignerDataSourceView" /> containing information about the identified view, or <see langword="null" /> if a view with the specified name is not found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A class that implements <xref:System.Web.UI.Design.IDataSourceDesigner> can define a view in a way that is useful within the context of that class.  
-  
- Use the <xref:System.Web.UI.Design.IDataSourceDesigner.GetViewNames%2A> method to get a list of view names.  
-  
+A class that implements <xref:System.Web.UI.Design.IDataSourceDesigner> can define a view in a way that is useful within the context of that class.  
+ 
+Use the <xref:System.Web.UI.Design.IDataSourceDesigner.GetViewNames%2A> method to get a list of view names.  
+ 
  ]]></format>
         </remarks>
       </Docs>

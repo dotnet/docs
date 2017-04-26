@@ -75,12 +75,12 @@
         <value>Returns the Condition attribute value. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the Condition attribute if the value to set is set to null or an empty string. If the Condition attribute is not present, returns an empty string instead of throwing an exception because a nonexistent condition is implicitly true  
-  
- For the "ProjectExtensions" element, the getter returns null and the setter throws an exception for any value.  
-  
+Removes the Condition attribute if the value to set is set to null or an empty string. If the Condition attribute is not present, returns an empty string instead of throwing an exception because a nonexistent condition is implicitly true  
+ 
+For the "ProjectExtensions" element, the getter returns null and the setter throws an exception for any value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,10 +154,10 @@
         <value>Returns the label. Returns an empty string if no label is present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the attribute if the value to set is empty.  
-  
+Removes the attribute if the value to set is empty.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
         <value>Returns the project element container that contains this project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Parent should only be set by ProjectElementContainer.  
-  
+Parent should only be set by ProjectElementContainer.  
+ 
  ]]></format>
         </remarks>
       </Docs>

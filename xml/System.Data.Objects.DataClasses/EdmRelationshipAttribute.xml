@@ -19,14 +19,14 @@
     <summary>Defines a relationship between two entity types based on an association in the conceptual model.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This attribute is applied at the assembly level with one instance for each association. There can be multiple attributes of this type in an assembly.  
-  
- The details for the role of an entity type in a particular association should match the association defined in the conceptual schema.  
-  
- An association does not define any ordering for the roles. This means that properties that define the related ends of an association can be defined in any order.  
-  
+This attribute is applied at the assembly level with one instance for each association. There can be multiple attributes of this type in an assembly.  
+ 
+The details for the role of an entity type in a particular association should match the association defined in the conceptual schema.  
+ 
+An association does not define any ordering for the roles. This means that properties that define the related ends of an association can be defined in any order.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@
         <summary>Creates an instance of the <see cref="T:System.Data.Objects.DataClasses.EdmRelationshipAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `typeof` operator (`GetType` in Visual Basic) is used to return the <xref:System.Type> object for an object.  
-  
+The `typeof` operator (`GetType` in Visual Basic) is used to return the <xref:System.Type> object for an object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <value>A <see cref="T:System.String" /> that is the name of a relationship that is defined by this <see cref="T:System.Data.Objects.DataClasses.EdmRelationshipAttribute" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of the relationship is specified by the `Name` attribute of the `Association` element that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
-  
+The name of the relationship is specified by the `Name` attribute of the `Association` element that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
         <value>A <see cref="T:System.String" /> that is the namespace for the relationship.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The namespace of the relationship is specified by the `Namespace` attribute of the `Schema` element that contains association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
-  
+The namespace of the relationship is specified by the `Namespace` attribute of the `Schema` element that contains association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,12 +190,12 @@
         <value>A <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> value that indicates the multiplicity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Properties that define the related ends of an association can be defined in any order.  
-  
- The multiplicity is specified by the `Multiplicity` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
-  
+Properties that define the related ends of an association can be defined in any order.  
+ 
+The multiplicity is specified by the `Multiplicity` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -217,10 +217,10 @@
         <value>A <see cref="T:System.String" /> that is the name of the role.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The role name is specified by the `Role` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
-  
+The role name is specified by the `Role` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,12 +242,12 @@
         <value>A <see cref="T:System.Type" /> that is the type of the object at this end of the association.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Properties that define the related ends of an association can be defined in any order.  
-  
- The type name is specified by the `Type` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
-  
+Properties that define the related ends of an association can be defined in any order.  
+ 
+The type name is specified by the `Type` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,12 +269,12 @@
         <value>A <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> value that indicates the multiplicity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Properties that define the related ends of an association can be defined in any order.  
-  
- The multiplicity is specified by the `Multiplicity` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
-  
+Properties that define the related ends of an association can be defined in any order.  
+ 
+The multiplicity is specified by the `Multiplicity` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,12 +296,12 @@
         <value>A <see cref="T:System.String" /> that is the name of the role.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Properties that define the related ends of an association can be defined in any order.  
-  
- The role name is specified by the `Role` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
-  
+Properties that define the related ends of an association can be defined in any order.  
+ 
+The role name is specified by the `Role` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -323,12 +323,12 @@
         <value>A <see cref="T:System.Type" /> that is the type of the object t the other end of the association.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Properties that define the related ends of an association can be defined in any order.  
-  
- The type name is specified by the `Type` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
-  
+Properties that define the related ends of an association can be defined in any order.  
+ 
+The type name is specified by the `Type` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](~/docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

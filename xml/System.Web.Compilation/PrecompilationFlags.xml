@@ -18,10 +18,10 @@
     <summary>Provides flags that determine precompilation behavior.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `PrecompilationFlags` class defines the behavior of the build manager during precompilation. The <xref:System.Web.Compilation.ClientBuildManager> class takes `PrecompilationFlags` as one of its constructor parameters. Precompilation can be performed programmatically through <xref:System.Web.Compilation.ClientBuildManager> or through the Aspnet_compiler.exe command-line tool.  
-  
+The `PrecompilationFlags` class defines the behavior of the build manager during precompilation. The <xref:System.Web.Compilation.ClientBuildManager> class takes `PrecompilationFlags` as one of its constructor parameters. Precompilation can be performed programmatically through <xref:System.Web.Compilation.ClientBuildManager> or through the Aspnet_compiler.exe command-line tool.  
+ 
  ]]></format>
     </remarks>
   </Docs>

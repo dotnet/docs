@@ -35,16 +35,16 @@
     <summary>Provides support for type equivalence.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.InteropServices.TypeIdentifierAttribute> attribute is primarily emitted by compilers. It serves two purposes:  
-  
+The <xref:System.Runtime.InteropServices.TypeIdentifierAttribute> attribute is primarily emitted by compilers. It serves two purposes:  
+ 
 -   For all imported types, it indicates that the type is intended to be used for type equivalence.  
-  
+ 
 -   For types that don’t have GUIDs in their type library, it has a constructor that takes two strings (`scope` and `identifier`). These are combined into a GUID and become the key that is used for type equivalence.  
-  
- Type equivalence is discussed in the <xref:System.Type.IsEquivalentTo%2A?displayProperty=fullName> topic.  
-  
+ 
+Type equivalence is discussed in the <xref:System.Type.IsEquivalentTo%2A?displayProperty=fullName> topic.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,10 +76,10 @@
         <summary>Creates a new instance of the <see cref="T:System.Runtime.InteropServices.TypeIdentifierAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor overload does not accept parameters. Therefore, interfaces that have this attribute use the type's GUID and simple name to establish type equivalence.  
-  
+This constructor overload does not accept parameters. Therefore, interfaces that have this attribute use the type's GUID and simple name to establish type equivalence.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,12 +116,12 @@
         <summary>Creates a new instance of the <see cref="T:System.Runtime.InteropServices.TypeIdentifierAttribute" /> class with the specified scope and identifier.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `scope` and `identifier` parameters are used to establish type equivalence. They are combined into a GUID and become the key that is used for type equivalence. This constructor is particularly useful for types that do not have GUIDs in their type library.  
-  
- The <xref:System.Runtime.InteropServices.TypeIdentifierAttribute> class internally maintains the `scope` and `identifier` parameters as private members.  
-  
+The `scope` and `identifier` parameters are used to establish type equivalence. They are combined into a GUID and become the key that is used for type equivalence. This constructor is particularly useful for types that do not have GUIDs in their type library.  
+ 
+The <xref:System.Runtime.InteropServices.TypeIdentifierAttribute> class internally maintains the `scope` and `identifier` parameters as private members.  
+ 
  ]]></format>
         </remarks>
       </Docs>

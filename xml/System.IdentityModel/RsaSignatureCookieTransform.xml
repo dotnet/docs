@@ -14,15 +14,15 @@
     <summary>Provides cookie integrity using an <see cref="T:System.Security.Cryptography.RSA" /> signature.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IdentityModel.RsaSignatureCookieTransform> adds an RSA MAC to the cookie data. This provides integrity but not confidentiality. By default, the MAC uses SHA-256, but SHA-1 may be requested.  
-  
- Cookies protected with this transform may be read by any computer that shares the same RSA private key (generally associated with an X509 certificate).  
-  
+<xref:System.IdentityModel.RsaSignatureCookieTransform> adds an RSA MAC to the cookie data. This provides integrity but not confidentiality. By default, the MAC uses SHA-256, but SHA-1 may be requested.  
+ 
+Cookies protected with this transform may be read by any computer that shares the same RSA private key (generally associated with an X509 certificate).  
+ 
 > [!IMPORTANT]
 >  When using the <xref:System.IdentityModel.RsaSignatureCookieTransform> with a service, if a key provided by a certificate changes the service must be restarted.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,10 +44,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.RsaSignatureCookieTransform" /> class by using the specified RSA key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.RsaSignatureCookieTransform.SigningKey%2A> property is initialized to `key`. The <xref:System.IdentityModel.RsaSignatureCookieTransform.VerificationKeys%2A> property is initialized to a collection that contains `key` as its only element.  
-  
+The <xref:System.IdentityModel.RsaSignatureCookieTransform.SigningKey%2A> property is initialized to `key`. The <xref:System.IdentityModel.RsaSignatureCookieTransform.VerificationKeys%2A> property is initialized to a collection that contains `key` as its only element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -71,10 +71,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.RsaSignatureCookieTransform" /> class by using the private key of the specified certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.RsaSignatureCookieTransform.SigningKey%2A> property is initialized to private key of the certificate. The <xref:System.IdentityModel.RsaSignatureCookieTransform.VerificationKeys%2A> property is initialized to a collection that contains the private key of the certificate as its only element.  
-  
+The <xref:System.IdentityModel.RsaSignatureCookieTransform.SigningKey%2A> property is initialized to private key of the certificate. The <xref:System.IdentityModel.RsaSignatureCookieTransform.VerificationKeys%2A> property is initialized to a collection that contains the private key of the certificate as its only element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -108,10 +108,10 @@
         <returns>The original data (unsigned).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All of the keys in the collection specified in the <xref:System.IdentityModel.RsaSignatureCookieTransform.VerificationKeys%2A> property are tried.  
-  
+All of the keys in the collection specified in the <xref:System.IdentityModel.RsaSignatureCookieTransform.VerificationKeys%2A> property are tried.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -145,12 +145,12 @@
         <returns>The signed data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The key specified by the <xref:System.IdentityModel.RsaSignatureCookieTransform.SigningKey%2A> property must include the private key in order to sign the data.  
-  
- The signed data may be verified by calling the <xref:System.IdentityModel.RsaSignatureCookieTransform.Decode%2A> method.  
-  
+The key specified by the <xref:System.IdentityModel.RsaSignatureCookieTransform.SigningKey%2A> property must include the private key in order to sign the data.  
+ 
+The signed data may be verified by calling the <xref:System.IdentityModel.RsaSignatureCookieTransform.Decode%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -186,12 +186,12 @@
         <value>The name of the hash algorithm. The default is “SHA256”.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- SHA256 is the default algorithm. This may require a minimum operating system of [!INCLUDE[winxpsvr](~/includes/winxpsvr-md.md)] and .NET 3.5 SP1.  
-  
- If SHA256 is not supported, set the <xref:System.IdentityModel.RsaSignatureCookieTransform.HashName%2A> property to "SHA1".  
-  
+SHA256 is the default algorithm. This may require a minimum operating system of [!INCLUDE[winxpsvr](~/includes/winxpsvr-md.md)] and .NET 3.5 SP1.  
+ 
+If SHA256 is not supported, set the <xref:System.IdentityModel.RsaSignatureCookieTransform.HashName%2A> property to "SHA1".  
+ 
  ]]></format>
         </remarks>
       </Docs>

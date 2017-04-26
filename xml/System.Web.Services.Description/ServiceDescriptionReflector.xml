@@ -52,12 +52,12 @@
         <summary>Creates a <see cref="T:System.Web.Services.Description.ServiceDescription" /> including the specified <see cref="T:System.Type" /> for the XML Web service at the specified URL.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method examines the metadata for the XML Web service at the specified URL. If the specified <xref:System.Type> is not supported, it modifies the Web Services Description Language (WSDL) file corresponding to the <xref:System.Web.Services.Description.ServiceDescription> describing the XML Web service, in order to include that type.  
-  
- For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
-  
+This method examines the metadata for the XML Web service at the specified URL. If the specified <xref:System.Type> is not supported, it modifies the Web Services Description Language (WSDL) file corresponding to the <xref:System.Web.Services.Description.ServiceDescription> describing the XML Web service, in order to include that type.  
+ 
+For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,12 +79,12 @@
         <value>An <see cref="T:System.Xml.Serialization.XmlSchemas" /> collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is initialized with a <xref:System.Collections.CollectionBase.Count%2A> of zero. Any members must be explicitly added using the collection's <xref:System.Xml.Serialization.XmlSchemas.Add%2A> method.  
-  
- For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
-  
+This property is initialized with a <xref:System.Collections.CollectionBase.Count%2A> of zero. Any members must be explicitly added using the collection's <xref:System.Xml.Serialization.XmlSchemas.Add%2A> method.  
+ 
+For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,12 +106,12 @@
         <value>A reference to the <see cref="T:System.Web.Services.Description.ServiceDescriptionCollection" /> associated with the XML Web service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is initialized with a <xref:System.Collections.CollectionBase.Count%2A> of zero. Any members must be explicitly added using the collection's <xref:System.Web.Services.Description.ServiceDescriptionCollection.Add%2A> method.  
-  
- For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
-  
+This property is initialized with a <xref:System.Collections.CollectionBase.Count%2A> of zero. Any members must be explicitly added using the collection's <xref:System.Web.Services.Description.ServiceDescriptionCollection.Add%2A> method.  
+ 
+For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+ 
  ]]></format>
         </remarks>
       </Docs>

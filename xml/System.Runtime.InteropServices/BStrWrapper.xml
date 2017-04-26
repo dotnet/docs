@@ -32,10 +32,10 @@
     <summary>Marshals data of type <see langword="VT_BSTR" /> from managed to unmanaged code. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.InteropServices.BStrWrapper> class controls how the wrapped object is marshaled when passed as `VARIANT`. You can wrap a <xref:System.String> object in a <xref:System.Runtime.InteropServices.BStrWrapper> object to marshal it as `VT_BSTR`. <xref:System.Runtime.InteropServices.BStrWrapper> is useful when passing a null string to unmanaged code. Without <xref:System.Runtime.InteropServices.BStrWrapper>, a null string is passed as `VT_EMPTY`; however, wrapping the string with <xref:System.Runtime.InteropServices.BStrWrapper> ensures that the null string is passed as `VT_BSTR`.  
-  
+The <xref:System.Runtime.InteropServices.BStrWrapper> class controls how the wrapped object is marshaled when passed as `VARIANT`. You can wrap a <xref:System.String> object in a <xref:System.Runtime.InteropServices.BStrWrapper> object to marshal it as `VT_BSTR`. <xref:System.Runtime.InteropServices.BStrWrapper> is useful when passing a null string to unmanaged code. Without <xref:System.Runtime.InteropServices.BStrWrapper>, a null string is passed as `VT_EMPTY`; however, wrapping the string with <xref:System.Runtime.InteropServices.BStrWrapper> ensures that the null string is passed as `VT_BSTR`.  
+ 
  ]]></format>
     </remarks>
   </Docs>

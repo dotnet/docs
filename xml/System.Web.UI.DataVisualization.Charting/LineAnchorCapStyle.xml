@@ -13,10 +13,10 @@
     <summary>Specifies the shape—that is, the anchor cap—to draw on the point end of the label callout line.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle> enumeration represents the shape to be drawn on the point end of the label callout line. It is used in conjunction with the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutStyle%2A> and the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutLineAnchorCapStyle%2A> properties. If a callout line is not used, this enumeration will have no effect.  
-  
+The <xref:System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle> enumeration represents the shape to be drawn on the point end of the label callout line. It is used in conjunction with the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutStyle%2A> and the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutLineAnchorCapStyle%2A> properties. If a callout line is not used, this enumeration will have no effect.  
+ 
  ]]></format>
     </remarks>
   </Docs>

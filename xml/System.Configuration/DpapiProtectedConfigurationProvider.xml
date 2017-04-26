@@ -14,25 +14,25 @@
     <summary>Provides a <see cref="T:System.Configuration.ProtectedConfigurationProvider" /> object that uses the Windows data protection API (DPAPI) to encrypt and decrypt configuration data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.DpapiProtectedConfigurationProvider> allows you to protect sensitive information stored in a configuration file from unauthorized access.  
+The <xref:System.Configuration.DpapiProtectedConfigurationProvider> allows you to protect sensitive information stored in a configuration file from unauthorized access.  
+ 
+You use the standard <xref:System.Configuration.DpapiProtectedConfigurationProvider> by declaring the provider and appropriate settings in the configuration file rather than creating an instance of this class. Refer to the next example.  
+ 
+For more information about Protected Configuration, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
+ 
+The <xref:System.Configuration.DpapiProtectedConfigurationProvider> uses the Windows built-in cryptographic services and can be configured for either machine-specific or user-account-specific protection. Machine-specific protection is useful for anonymous services but provides less security. User-account-specific protection can be used with services that run with a specific user identity.  
+ 
   
- You use the standard <xref:System.Configuration.DpapiProtectedConfigurationProvider> by declaring the provider and appropriate settings in the configuration file rather than creating an instance of this class. Refer to the next example.  
-  
- For more information about Protected Configuration, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
-  
- The <xref:System.Configuration.DpapiProtectedConfigurationProvider> uses the Windows built-in cryptographic services and can be configured for either machine-specific or user-account-specific protection. Machine-specific protection is useful for anonymous services but provides less security. User-account-specific protection can be used with services that run with a specific user identity.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the standard <xref:System.Configuration.DpapiProtectedConfigurationProvider> to protect or unprotect a configuration section.  
-  
+The following example shows how to use the standard <xref:System.Configuration.DpapiProtectedConfigurationProvider> to protect or unprotect a configuration section.  
+ 
 <!-- TODO: review snippet reference  [!CODE [System.Configuration.DpapiProtectedConfigurationProvider#1](System.Configuration.DpapiProtectedConfigurationProvider#1)]  -->  
-  
- The following configuration excerpts show the configuration section before and after the protection has been applied.  
-  
+ 
+The following configuration excerpts show the configuration section before and after the protection has been applied.  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
@@ -43,7 +43,7 @@
   </connectionStrings>  
 </configuration>  
 ```  
-  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
@@ -65,7 +65,7 @@
   </configProtectedData>  
 </configuration>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />[FullTrust](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3)</permission>
@@ -85,10 +85,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.DpapiProtectedConfigurationProvider" /> class using default settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.DpapiProtectedConfigurationProvider.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system.  
-  
+The <xref:System.Configuration.DpapiProtectedConfigurationProvider.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,10 +190,10 @@
           <see langword="true" /> if the <see cref="T:System.Configuration.DpapiProtectedConfigurationProvider" /> is using machine-specific protection; <see langword="false" /> if it is using user-account-specific protection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Machine-specific protection is useful for anonymous services but provides less security. User-account-specific protection can be used with services that run with a specific user identity.  
-  
+Machine-specific protection is useful for anonymous services but provides less security. User-account-specific protection can be used with services that run with a specific user identity.  
+ 
  ]]></format>
         </remarks>
       </Docs>

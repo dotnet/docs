@@ -22,18 +22,18 @@
     <summary>Specifies the class a type or member uses to filter the types that are displayed in the class browser dialog box. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- The class you use to filter the types to display in the class browser dialog box must implement <xref:System.Workflow.ComponentModel.Design.ITypeFilterProvider>.  
-  
- Use the <xref:System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute.TypeFilterProviderTypeName%2A> property to determine the name of the filter class.  
-  
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
+ 
+The class you use to filter the types to display in the class browser dialog box must implement <xref:System.Workflow.ComponentModel.Design.ITypeFilterProvider>.  
+ 
+Use the <xref:System.Workflow.ComponentModel.Design.TypeFilterProviderAttribute.TypeFilterProviderTypeName%2A> property to determine the name of the filter class.  
+ 
+For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
  ]]></format>
     </remarks>
   </Docs>

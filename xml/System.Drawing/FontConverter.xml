@@ -14,19 +14,19 @@
     <summary>Converts <see cref="T:System.Drawing.Font" /> objects from one data type to another.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A type converter is used to convert values between data types. A type converter also supports property configuration at design time by providing text-to-value conversion or a list of values that users can select from. Access the <xref:System.Drawing.FontConverter> class through the <xref:System.ComponentModel.TypeDescriptor> class by calling the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method.  
+A type converter is used to convert values between data types. A type converter also supports property configuration at design time by providing text-to-value conversion or a list of values that users can select from. Access the <xref:System.Drawing.FontConverter> class through the <xref:System.ComponentModel.TypeDescriptor> class by calling the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.FontConverter> to convert a <xref:System.Drawing.Font> to and from a string. This example is designed to be used with Windows Forms. Paste this code into a form and call the `ShowFontStringConversion` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing e as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.Converters#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Converters/CPP/form1.cpp#3)]
- [!code-csharp[System.Drawing.Converters#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Converters/CS/form1.cs#3)]
- [!code-vb[System.Drawing.Converters#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Converters/VB/form1.vb#3)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.FontConverter> to convert a <xref:System.Drawing.Font> to and from a string. This example is designed to be used with Windows Forms. Paste this code into a form and call the `ShowFontStringConversion` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing e as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.Converters#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Converters/CPP/form1.cpp#3)]
+[!code-csharp[System.Drawing.Converters#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Converters/CS/form1.cs#3)]
+[!code-vb[System.Drawing.Converters#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Converters/VB/form1.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <summary>Initializes a new <see cref="T:System.Drawing.FontConverter" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should access a <xref:System.Drawing.FontConverter> object through the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A?displayProperty=fullName> method.  
-  
+You should access a <xref:System.Drawing.FontConverter> object through the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,10 +100,10 @@
         <returns>This method returns <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,10 +162,10 @@
         <returns>The converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The most common type conversion is to and from a string type. The default implementation calls the <xref:System.Object.ToString%2A> method of the object if the object is valid and if the destination type is string.  
-  
+The most common type conversion is to and from a string type. The default implementation calls the <xref:System.Object.ToString%2A> method of the object if the object is valid and if the destination type is string.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion was not successful.</exception>

@@ -14,12 +14,12 @@
     <summary>Provides the client certificate fields issued by the client in response to the server's request for the client's identity.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a Web browser uses the SSL3.0/PCT1 protocol (the URL begins with https:// instead of http://) to connect to a server and the server requires client certificates, the browser sends the client certificate fields contained in its digital certificate.  
-  
- For more information about digital certificates, see the document X.509: Public-key and attribute certificate frameworks, available on the International Telecommunication Union (ITU) site at http://www.itu.int.  
-  
+If a Web browser uses the SSL3.0/PCT1 protocol (the URL begins with https:// instead of http://) to connect to a server and the server requires client certificates, the browser sends the client certificate fields contained in its digital certificate.  
+ 
+For more information about digital certificates, see the document X.509: Public-key and attribute certificate frameworks, available on the International Telecommunication Union (ITU) site at http://www.itu.int.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <value>One of the CERT_CONTEXT.dwCertEncodingType values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the CERT_CONTEXT structure, see http://msdn.microsoft.com and search for CERT_CONTEXT.  
-  
+For more information about the CERT_CONTEXT structure, see http://msdn.microsoft.com and search for CERT_CONTEXT.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,10 +102,10 @@
         <value>The client certificate ID.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpClientCertificate.Cookie%2A> can be used as a signature for the whole client certificate.  
-  
+The <xref:System.Web.HttpClientCertificate.Cookie%2A> can be used as a signature for the whole client certificate.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,10 +127,10 @@
         <value>A set of Boolean flags.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Bit0 is set to 1 if the client certificate is present. Bit1 is set to 1 if the Certificate Authority (CA) of the client certificate is not in the list of recognized CAs on the server.  
-  
+Bit0 is set to 1 if the client certificate is present. Bit1 is set to 1 if the Certificate Authority (CA) of the client certificate is not in the list of recognized CAs on the server.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,10 +212,10 @@
           <see langword="true" /> if the client certificate is valid; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The client certificate is not valid if the Certificate Authority (CA) is not in the list of recognized CAs on the server.  
-  
+The client certificate is not valid if the Certificate Authority (CA) is not in the list of recognized CAs on the server.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,10 +345,10 @@
         <value>The subject field of the client certificate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `String` is specified without a subfield, the <xref:System.Web.HttpClientCertificate> collection returns a comma-separated list of subfields. For example, C=US, O= Msft.  
-  
+If `String` is specified without a subfield, the <xref:System.Web.HttpClientCertificate> collection returns a comma-separated list of subfields. For example, C=US, O= Msft.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -388,10 +388,10 @@
         <value>The certificate expiration date.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The year value is displayed as a four-digit number.  
-  
+The year value is displayed as a four-digit number.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,17 +14,17 @@
     <summary>The <see cref="T:System.ServiceModel.Description.ServiceContractGenerator" /> type generates service contract code and binding configurations from <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> description objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.ServiceContractGenerator> to create tools or to modify the default contract generation process using an <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName>.  
+Use the <xref:System.ServiceModel.Description.ServiceContractGenerator> to create tools or to modify the default contract generation process using an <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the use of a <xref:System.ServiceModel.Description.ServiceContractGenerator> to convert downloaded metadata into code.  
-  
- [!code-csharp[C_CustomWSDLExtensions#8](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/client.cs#8)]  
-  
+The following example shows the use of a <xref:System.ServiceModel.Description.ServiceContractGenerator> to convert downloaded metadata into code.  
+ 
+[!code-csharp[C_CustomWSDLExtensions#8](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/client.cs#8)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -135,10 +135,10 @@
         <value>A collection of <see cref="T:System.ServiceModel.Description.MetadataConversionError" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These error and warning messages can be used by tools to display debugging information to users.  
-  
+These error and warning messages can be used by tools to display debugging information to users.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,12 +167,12 @@
         <summary>Generates a binding configuration for the specified <see cref="T:System.ServiceModel.Channels.Binding" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The configuration name for the binding is taken from the <xref:System.ServiceModel.Channels.Binding.Name%2A> property. Binding configuration names are made unique by adding integers to the binding configuration name.  
-  
- The binding section name is the name of the binding configuration section that the binding configuration was added to.  
-  
+The configuration name for the binding is taken from the <xref:System.ServiceModel.Channels.Binding.Name%2A> property. Binding configuration names are made unique by adding integers to the binding configuration name.  
+ 
+The binding section name is the name of the binding configuration section that the binding configuration was added to.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
         <returns>A <see cref="T:System.CodeDom.CodeTypeReference" /> instance for the generated contract type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Other code artifacts may also get generated as specified by using the <xref:System.ServiceModel.Description.ServiceContractGenerator.Options%2A?displayProperty=fullName> property.  
-  
+Other code artifacts may also get generated as specified by using the <xref:System.ServiceModel.Description.ServiceContractGenerator.Options%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,10 +229,10 @@
         <returns>A <see cref="T:System.CodeDom.CodeTypeReference" /> instance for the generated contract type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Other code artifacts may also get generated as specified by using the <xref:System.ServiceModel.Description.ServiceContractGenerator.Options%2A?displayProperty=fullName> property.  
-  
+Other code artifacts may also get generated as specified by using the <xref:System.ServiceModel.Description.ServiceContractGenerator.Options%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,14 +254,14 @@
         <value>A mapping from contract description namespaces to managed namespaces.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to associated a contract description namespace with a managed namespace that is used when generating code.  
-  
- You can use the wildcard character "*" as the dictionary key to specify a managed namespace to use for any description namespaces that are not explicitly mapped to a managed namespace.  
-  
- The default managed namespace is used when no namespace mapping is specified for a particular description namespace.  
-  
+Use this property to associated a contract description namespace with a managed namespace that is used when generating code.  
+ 
+You can use the wildcard character "*" as the dictionary key to specify a managed namespace to use for any description namespaces that are not explicitly mapped to a managed namespace.  
+ 
+The default managed namespace is used when no namespace mapping is specified for a particular description namespace.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,10 +283,10 @@
         <value>A <see cref="T:System.ServiceModel.Description.ServiceContractGenerationOptions" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to specify various options for code generation. This enumeration has a <xref:System.FlagsAttribute?displayProperty=fullName> attribute that allows a bitwise combination of its member values.  
-  
+Use this property to specify various options for code generation. This enumeration has a <xref:System.FlagsAttribute?displayProperty=fullName> attribute that allows a bitwise combination of its member values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -308,10 +308,10 @@
         <value>A mapping from contract descriptions to referenced contract types.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Code is not generated for referenced contract types. Instead the referenced type is used.  
-  
+Code is not generated for referenced contract types. Instead the referenced type is used.  
+ 
  ]]></format>
         </remarks>
       </Docs>

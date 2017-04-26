@@ -24,18 +24,18 @@
     <summary>Wraps an XSD <see langword="time" /> type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about XSD data types, see "XML Data Types Reference" in the MSDN Library at http://msdn.microsoft.com/library.  
+For more information about XSD data types, see "XML Data Types Reference" in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime> class to wrap an XSD `time` type.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#10](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo.cpp#10)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo.cs#10)]  
-  
+The following code example demonstrates using the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime> class to wrap an XSD `time` type.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#10](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo.cpp#10)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo.cs#10)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,13 +55,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#21](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo2.cpp#21)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#21](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo2.cs#21)]  
-  
+The following code example shows how to use this constructor.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#21](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo2.cpp#21)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#21](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo2.cs#21)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,13 +84,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime" /> class with a specified <see cref="T:System.DateTime" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#22](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo2.cpp#22)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#22](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo2.cs#22)]  
-  
+The following code example shows how to use this constructor.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#22](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo2.cpp#22)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#22](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo2.cs#22)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,13 +114,13 @@
         <returns>A <see cref="T:System.String" /> that indicates the XSD of the current SOAP type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#13](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo.cpp#13)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#13](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo.cs#13)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#13](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo.cpp#13)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#13](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo.cs#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,10 +147,10 @@
         <returns>A <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime" /> object that is obtained from <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime.Parse%2A> method is capable of parsing strings in the HH:mm:ss.fffzzz format. This is composed out of the following format patterns.  
-  
+The <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime.Parse%2A> method is capable of parsing strings in the HH:mm:ss.fffzzz format. This is composed out of the following format patterns.  
+ 
 |Format Pattern|Description|Examples|  
 |--------------------|-----------------|--------------|  
 |HH|The hour within a 24-hour range. Single-digit hours have a leading zero.|17, 07|  
@@ -158,17 +158,17 @@
 |ss|The second. Single-digit seconds have a leading zero.|32, 02|  
 |fff|The fraction of a second. A maximum of 7 fraction digits are allowed, and only the first three are parsed.|321635, 4592|  
 |zzz|The full time zone offset (hour and minutes) from the Universal Time Coordinate (Greenwich Mean Time). Single-digit hours have a leading zero.|-07:00, +08:00, Z|  
+ 
+Only the first 3 fraction digits are parsed because the parsed value is stored as a <xref:System.DateTime> object, and the <xref:System.DateTime> type supports precisely 3 fraction digits of accuracy.  
+ 
   
- Only the first 3 fraction digits are parsed because the parsed value is stored as a <xref:System.DateTime> object, and the <xref:System.DateTime> type supports precisely 3 fraction digits of accuracy.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#11](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo.cpp#11)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo.cs#11)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#11](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo.cpp#11)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo.cs#11)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Remoting.RemotingException">
@@ -194,13 +194,13 @@
         <returns>A <see cref="T:System.String" /> that is obtained from <see cref="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime.Value" /> in the format "HH:mm:ss.fffzzz".</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#12](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo.cpp#12)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#12](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo.cs#12)]  
-  
+The following code example shows how to use this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#12](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo.cpp#12)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#12](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo.cs#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,13 +223,13 @@
         <value>The <see cref="T:System.DateTime" /> object that contains the date and time of the current instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#14](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo.cpp#14)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#14](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo.cs#14)]  
-  
+The following code example shows how to use this property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#14](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo.cpp#14)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#14](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo.cs#14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,13 +252,13 @@
         <value>A <see cref="T:System.String" /> that indicates the XSD of the current SOAP type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#16](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo.cpp#16)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#16](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo.cs#16)]  
-  
+The following code example shows how to use this property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#16](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CPP/demo.cpp#16)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime#16](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime/CS/demo.cs#16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

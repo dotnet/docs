@@ -51,10 +51,10 @@
         <summary>Releases the resources (other than memory) that are used by the module.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Handlers.ScriptModule.Dispose%2A> method performs any final cleanup work before the module is removed from the execution pipeline.  
-  
+The <xref:System.Web.Handlers.ScriptModule.Dispose%2A> method performs any final cleanup work before the module is removed from the execution pipeline.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,10 +79,10 @@
         <summary>Initializes a module and prepares it to handle requests.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.Handlers.ScriptModule.Init%2A> method to register event-handling methods with specific events.  
-  
+Use the <xref:System.Web.Handlers.ScriptModule.Init%2A> method to register event-handling methods with specific events.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,13 +13,13 @@
     <summary>Specifies the drawing mode for a background image.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode> enumeration represents the drawing mode for a background image, as set by the <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImageWrapMode%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> control. To set a background image for a chart element, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImage%2A> property.  
-  
+The <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode> enumeration represents the drawing mode for a background image, as set by the <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImageWrapMode%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> control. To set a background image for a chart element, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImage%2A> property.  
+ 
 > [!NOTE]
 >  If you specify the Unscaled value, the location where the image is drawn will depend on the <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImageAlignment%2A> property setting.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

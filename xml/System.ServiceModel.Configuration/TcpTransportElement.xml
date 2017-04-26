@@ -14,10 +14,10 @@
     <summary>Specifies a configuration element that causes a channel to transfer messages on the TCP transport when it is included in a custom binding. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This configuration element allows you to create a custom binding that implements the TCP transport protocol.  
-  
+This configuration element allows you to create a custom binding that implements the TCP transport protocol.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -208,10 +208,10 @@
         <value>The maximum number of channels that can wait on the listener to be accepted. The default is 10.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Connections in excess of the limit are queued until a space below the limit becomes available. The <xref:System.ServiceModel.Configuration.TcpConnectionPoolSettingsElement.LeaseTimeout%2A> property limits the duration the client waits to be connected before throwing a connection exception.  
-  
+Connections in excess of the limit are queued until a space below the limit becomes available. The <xref:System.ServiceModel.Configuration.TcpConnectionPoolSettingsElement.LeaseTimeout%2A> property limits the duration the client waits to be connected before throwing a connection exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,14 +239,14 @@
           <see langword="true" /> if TCP port sharing is enabled; <see langword="false" /> if each binding uses its own exclusive port. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This setting is relevant only to services. Clients are not affected.  
-  
- Using this setting requires enabling the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] TCP Port Sharing Service by changing its Startup Type to Manual or Automatic.  
-  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the TCP Listener and how to start it, see <xref:System.Net.Sockets.TcpListener>.  
-  
+This setting is relevant only to services. Clients are not affected.  
+ 
+Using this setting requires enabling the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] TCP Port Sharing Service by changing its Startup Type to Manual or Automatic.  
+ 
+[!INCLUDE[crabout](~/includes/crabout-md.md)] the TCP Listener and how to start it, see <xref:System.Net.Sockets.TcpListener>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -292,12 +292,12 @@
           <see langword="true" /> if Teredo is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property enables Teredo for the underlying TCP socket. For more information, see [Teredo Overview](http://go.microsoft.com/fwlink/?LinkId=96651).  
-  
- This property is only applicable on [!INCLUDE[wxpsp2](~/includes/wxpsp2-md.md)] and [!INCLUDE[ws2003](~/includes/ws2003-md.md)]. [!INCLUDE[wv](~/includes/wv-md.md)] has a machine-wide configuration option for Teredo, so when running [!INCLUDE[wv](~/includes/wv-md.md)], this property is ignored. Teredo requires that the client and service machines both have the Microsoft IPv6 stack installed and correctly configured for Teredo usage. For more information about configuring Teredo, see [Teredo Overview](http://go.microsoft.com/fwlink/?LinkId=96651). For more information, see [Windows Server 2003 Technology Centers](http://go.microsoft.com/fwlink/?LinkId=96652).  
-  
+This property enables Teredo for the underlying TCP socket. For more information, see [Teredo Overview](http://go.microsoft.com/fwlink/?LinkId=96651).  
+ 
+This property is only applicable on [!INCLUDE[wxpsp2](~/includes/wxpsp2-md.md)] and [!INCLUDE[ws2003](~/includes/ws2003-md.md)]. [!INCLUDE[wv](~/includes/wv-md.md)] has a machine-wide configuration option for Teredo, so when running [!INCLUDE[wv](~/includes/wv-md.md)], this property is ignored. Teredo requires that the client and service machines both have the Microsoft IPv6 stack installed and correctly configured for Teredo usage. For more information about configuring Teredo, see [Teredo Overview](http://go.microsoft.com/fwlink/?LinkId=96651). For more information, see [Windows Server 2003 Technology Centers](http://go.microsoft.com/fwlink/?LinkId=96652).  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Base class for <see cref="T:System.Web.DynamicData.DynamicValidator" /> classes that contain event data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.DynamicValidator> class catches exceptions thrown from LINQ to SQL classes or from Entity Framework methods in a data model. This class does not contain event data. It is used by events that do not pass state information to an event handler when an event is raised. If the event handler requires state information, you must create a derived class from this class to hold the data.  
-  
+The <xref:System.Web.DynamicData.DynamicValidator> class catches exceptions thrown from LINQ to SQL classes or from Entity Framework methods in a data model. This class does not contain event data. It is used by events that do not pass state information to an event handler when an event is raised. If the event handler requires state information, you must create a derived class from this class to hold the data.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,12 +41,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicValidatorEventArgs" /> class, using the exception that occurred and the data source operation that caused the exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET Dynamic Data provides data source operations that can be performed by a data source object. These operations include `Delete`, `Insert`, `Select` and `Update` and `ContextCreate`. If an exception occurs during a data source operation, the data source operation that caused the exception and the exception that occurred are represented by <xref:System.Web.DynamicData.DynamicValidatorEventArgs.Operation%2A> and <xref:System.Web.DynamicData.DynamicValidatorEventArgs.Exception%2A> respectively.  
-  
- This constructor initializes a new instance of the <xref:System.Web.DynamicData.DynamicValidatorEventArgs> class using these properties.  
-  
+ASP.NET Dynamic Data provides data source operations that can be performed by a data source object. These operations include `Delete`, `Insert`, `Select` and `Update` and `ContextCreate`. If an exception occurs during a data source operation, the data source operation that caused the exception and the exception that occurred are represented by <xref:System.Web.DynamicData.DynamicValidatorEventArgs.Operation%2A> and <xref:System.Web.DynamicData.DynamicValidatorEventArgs.Exception%2A> respectively.  
+ 
+This constructor initializes a new instance of the <xref:System.Web.DynamicData.DynamicValidatorEventArgs> class using these properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -68,10 +68,10 @@
         <value>The exception that occurred during the data source operation event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET Dynamic Data provides data source operations that can be performed by a data source object. These operations include `Delete`, `Insert`, `Select` and `Update` and `ContextCreate`. If an exception occurs, the <xref:System.Web.DynamicData.DynamicValidator> class uses this property to get the type of exception that is triggered during a data source operation.  
-  
+ASP.NET Dynamic Data provides data source operations that can be performed by a data source object. These operations include `Delete`, `Insert`, `Select` and `Update` and `ContextCreate`. If an exception occurs, the <xref:System.Web.DynamicData.DynamicValidator> class uses this property to get the type of exception that is triggered during a data source operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
         <value>The data source operation that caused the exception.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET Dynamic Data provides data source operation that can be performed by the data source object. These operations include `Delete`, `Insert`, `Select` and `Update` and `ContextCreate`. If an exception occurs, the <xref:System.Web.DynamicData.DynamicValidator> class uses this property to retrieve the operation that triggered that exception.  
-  
+ASP.NET Dynamic Data provides data source operation that can be performed by the data source object. These operations include `Delete`, `Insert`, `Select` and `Update` and `ContextCreate`. If an exception occurs, the <xref:System.Web.DynamicData.DynamicValidator> class uses this property to retrieve the operation that triggered that exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>

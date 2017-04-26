@@ -20,19 +20,19 @@
     <summary>Represents an extension added to an <see cref="T:System.Web.Services.Description.OperationBinding" /> within an XML Web service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class specifies that the message transmission will use SOAP and provides details about how the SOAP message will be formatted.  
+This class specifies that the message transmission will use SOAP and provides details about how the SOAP message will be formatted.  
+ 
+For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+ 
   
- For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
-  
-   
-  
+ 
 ## Examples  
- [!code-cpp[SoapOperationBinding#2](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapOperationBinding/CPP/soapoperationbinding.cpp#2)]
- [!code-csharp[SoapOperationBinding#2](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapOperationBinding/CS/soapoperationbinding.cs#2)]
- [!code-vb[SoapOperationBinding#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapOperationBinding/VB/soapoperationbinding.vb#2)]  
-  
+[!code-cpp[SoapOperationBinding#2](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapOperationBinding/CPP/soapoperationbinding.cpp#2)]
+[!code-csharp[SoapOperationBinding#2](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapOperationBinding/CS/soapoperationbinding.cs#2)]
+[!code-vb[SoapOperationBinding#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapOperationBinding/VB/soapoperationbinding.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,17 +76,17 @@
         <value>A string containing the URI for the SOAP header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is required for HTTP protocol binding of SOAP. The default value is an empty string ("").  
+This property is required for HTTP protocol binding of SOAP. The default value is an empty string ("").  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[SoapBinding_SoapOperationBinding#6](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapBinding_SoapOperationBinding/CPP/soapprotocol.cpp#6)]
- [!code-csharp[SoapBinding_SoapOperationBinding#6](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapBinding_SoapOperationBinding/CS/soapprotocol.cs#6)]
- [!code-vb[SoapBinding_SoapOperationBinding#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapBinding_SoapOperationBinding/VB/soapprotocol.vb#6)]  
-  
+[!code-cpp[SoapBinding_SoapOperationBinding#6](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapBinding_SoapOperationBinding/CPP/soapprotocol.cpp#6)]
+[!code-csharp[SoapBinding_SoapOperationBinding#6](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapBinding_SoapOperationBinding/CS/soapprotocol.cs#6)]
+[!code-vb[SoapBinding_SoapOperationBinding#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapBinding_SoapOperationBinding/VB/soapprotocol.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,10 +117,10 @@
         <value>One of the <see cref="T:System.Web.Services.Description.SoapBindingStyle" /> values. The default is <see langword="Document" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- SoapBinding_SoapOperationBinding#7  
-  
+SoapBinding_SoapOperationBinding#7  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -25,21 +25,21 @@
     <summary>Provides a common implementation of members for the <see cref="T:System.Windows.Forms.ListBox" /> and <see cref="T:System.Windows.Forms.ComboBox" /> classes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListControl> class provides implementations of common elements for the <xref:System.Windows.Forms.ListBox> and <xref:System.Windows.Forms.ComboBox> controls.  
+The <xref:System.Windows.Forms.ListControl> class provides implementations of common elements for the <xref:System.Windows.Forms.ListBox> and <xref:System.Windows.Forms.ComboBox> controls.  
+ 
+The following properties are of primary concern to users of a data-bound <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.ComboBox>: <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, <xref:System.Windows.Forms.ListControl.SelectedValue%2A>, and <xref:System.Windows.Forms.ListControl.ValueMember%2A> properties.  
+ 
   
- The following properties are of primary concern to users of a data-bound <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.ComboBox>: <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, <xref:System.Windows.Forms.ListControl.SelectedValue%2A>, and <xref:System.Windows.Forms.ListControl.ValueMember%2A> properties.  
-  
-   
-  
+ 
 ## Examples  
- The following code example is a complete application that shows how you can use <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, <xref:System.Windows.Forms.ListControl.ValueMember%2A>, and <xref:System.Windows.Forms.ListControl.SelectedValue%2A> members of the <xref:System.Windows.Forms.ListControl> class as implemented by the <xref:System.Windows.Forms.ListBox> class. The example loads an <xref:System.Collections.ArrayList> and the list box. When the user selects an item in the list box, the selected value is used to return the data associated with the selected item.  
-  
- [!code-cpp[ListControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#1)]
- [!code-csharp[ListControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#1)]
- [!code-vb[ListControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#1)]  
-  
+The following code example is a complete application that shows how you can use <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, <xref:System.Windows.Forms.ListControl.ValueMember%2A>, and <xref:System.Windows.Forms.ListControl.SelectedValue%2A> members of the <xref:System.Windows.Forms.ListControl> class as implemented by the <xref:System.Windows.Forms.ListBox> class. The example loads an <xref:System.Collections.ArrayList> and the list box. When the user selects an item in the list box, the selected value is used to return the data associated with the selected item.  
+ 
+[!code-cpp[ListControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#1)]
+[!code-csharp[ListControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#1)]
+[!code-vb[ListControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -95,10 +95,10 @@
         <value>The <see cref="T:System.Windows.Forms.CurrencyManager" /> associated with this control. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListControl.DataManager%2A> property is valid if the <xref:System.Windows.Forms.ListControl.DataSource%2A> property is set. If this is not a data-bound control, the default is `null`.  
-  
+The <xref:System.Windows.Forms.ListControl.DataManager%2A> property is valid if the <xref:System.Windows.Forms.ListControl.DataSource%2A> property is set. If this is not a data-bound control, the default is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,27 +131,27 @@
         <value>An object that implements the <see cref="T:System.Collections.IList" /> or <see cref="T:System.ComponentModel.IListSource" /> interfaces, such as a <see cref="T:System.Data.DataSet" /> or an <see cref="T:System.Array" />. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There are two ways to fill the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.ListBox> controls.  
+There are two ways to fill the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.ListBox> controls.  
+ 
+For example, you can add objects to the <xref:System.Windows.Forms.ComboBox> by using the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Add%2A> method. You can also add objects to a <xref:System.Windows.Forms.ComboBox> by using the <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, and <xref:System.Windows.Forms.ListControl.ValueMember%2A> properties to fill the <xref:System.Windows.Forms.ComboBox>.  
+ 
+When the <xref:System.Windows.Forms.ListControl.DataSource%2A> property is set, a user cannot modify the items collection.  
+ 
+If setting the <xref:System.Windows.Forms.ListControl.DataSource%2A> property causes the data source to change, the <xref:System.Windows.Forms.ListControl.DataSourceChanged> event is raised. If setting this property causes the data member to change, the <xref:System.Windows.Forms.ListControl.DisplayMemberChanged> event is raised.  
+ 
+When you set <xref:System.Windows.Forms.ListControl.DataSource%2A> to `null`, <xref:System.Windows.Forms.ListControl.DisplayMember%2A> is set to an empty string ("").  
+ 
   
- For example, you can add objects to the <xref:System.Windows.Forms.ComboBox> by using the <xref:System.Windows.Forms.ComboBox.ObjectCollection.Add%2A> method. You can also add objects to a <xref:System.Windows.Forms.ComboBox> by using the <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, and <xref:System.Windows.Forms.ListControl.ValueMember%2A> properties to fill the <xref:System.Windows.Forms.ComboBox>.  
-  
- When the <xref:System.Windows.Forms.ListControl.DataSource%2A> property is set, a user cannot modify the items collection.  
-  
- If setting the <xref:System.Windows.Forms.ListControl.DataSource%2A> property causes the data source to change, the <xref:System.Windows.Forms.ListControl.DataSourceChanged> event is raised. If setting this property causes the data member to change, the <xref:System.Windows.Forms.ListControl.DisplayMemberChanged> event is raised.  
-  
- When you set <xref:System.Windows.Forms.ListControl.DataSource%2A> to `null`, <xref:System.Windows.Forms.ListControl.DisplayMember%2A> is set to an empty string ("").  
-  
-   
-  
+ 
 ## Examples  
- The following code example is a complete application that shows how you can use <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, <xref:System.Windows.Forms.ListControl.ValueMember%2A>, and <xref:System.Windows.Forms.ListControl.SelectedValue%2A> members of the <xref:System.Windows.Forms.ListControl> class as implemented by the <xref:System.Windows.Forms.ListBox> class. The example loads an <xref:System.Collections.ArrayList> and the list box. When the user selects an item in the list box, the selected value is used to return the data associated with the selected item.  
-  
- [!code-cpp[ListControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#1)]
- [!code-csharp[ListControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#1)]
- [!code-vb[ListControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#1)]  
-  
+The following code example is a complete application that shows how you can use <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, <xref:System.Windows.Forms.ListControl.ValueMember%2A>, and <xref:System.Windows.Forms.ListControl.SelectedValue%2A> members of the <xref:System.Windows.Forms.ListControl> class as implemented by the <xref:System.Windows.Forms.ListBox> class. The example loads an <xref:System.Collections.ArrayList> and the list box. When the user selects an item in the list box, the selected value is used to return the data associated with the selected item.  
+ 
+[!code-cpp[ListControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#1)]
+[!code-csharp[ListControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#1)]
+[!code-vb[ListControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The assigned value does not implement the <see cref="T:System.Collections.IList" /> or <see cref="T:System.ComponentModel.IListSource" /> interfaces.</exception>
@@ -173,20 +173,20 @@
         <summary>Occurs when the <see cref="P:System.Windows.Forms.ListControl.DataSource" /> changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.DataSourceChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.DataSourceChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#142](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#142)]
- [!code-vb[System.Windows.Forms.EventExamples#142](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#142)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.DataSourceChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.DataSourceChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#142](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#142)]
+[!code-vb[System.Windows.Forms.EventExamples#142](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#142)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -219,21 +219,21 @@
         <value>A <see cref="T:System.String" /> specifying the name of an object property that is contained in the collection specified by the <see cref="P:System.Windows.Forms.ListControl.DataSource" /> property. The default is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The controls that inherit from <xref:System.Windows.Forms.ListControl> can display diverse types of objects. If the specified property does not exist on the object or the value of <xref:System.Windows.Forms.ListControl.DisplayMember%2A> is an empty string (""), the results of the object's `ToString` method are displayed instead.  
+The controls that inherit from <xref:System.Windows.Forms.ListControl> can display diverse types of objects. If the specified property does not exist on the object or the value of <xref:System.Windows.Forms.ListControl.DisplayMember%2A> is an empty string (""), the results of the object's `ToString` method are displayed instead.  
+ 
+If the new display member cannot be set, the previous display member setting is maintained.  
+ 
   
- If the new display member cannot be set, the previous display member setting is maintained.  
-  
-   
-  
+ 
 ## Examples  
- The following code example is a complete application that shows how you can use <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, <xref:System.Windows.Forms.ListControl.ValueMember%2A>, and <xref:System.Windows.Forms.ListControl.SelectedValue%2A> members of the <xref:System.Windows.Forms.ListControl> class as implemented by the <xref:System.Windows.Forms.ListBox> class. The example loads an <xref:System.Collections.ArrayList> and the list box. When the user selects an item in the list box, the selected value is used to return the data associated with the selected item.  
-  
- [!code-cpp[ListControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#1)]
- [!code-csharp[ListControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#1)]
- [!code-vb[ListControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#1)]  
-  
+The following code example is a complete application that shows how you can use <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, <xref:System.Windows.Forms.ListControl.ValueMember%2A>, and <xref:System.Windows.Forms.ListControl.SelectedValue%2A> members of the <xref:System.Windows.Forms.ListControl> class as implemented by the <xref:System.Windows.Forms.ListBox> class. The example loads an <xref:System.Collections.ArrayList> and the list box. When the user selects an item in the list box, the selected value is used to return the data associated with the selected item.  
+ 
+[!code-cpp[ListControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#1)]
+[!code-csharp[ListControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#1)]
+[!code-vb[ListControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,20 +254,20 @@
         <summary>Occurs when the <see cref="P:System.Windows.Forms.ListControl.DisplayMember" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.DisplayMemberChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.DisplayMemberChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#143](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#143)]
- [!code-vb[System.Windows.Forms.EventExamples#143](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#143)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.DisplayMemberChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.DisplayMemberChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#143](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#143)]
+[!code-vb[System.Windows.Forms.EventExamples#143](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#143)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -334,22 +334,22 @@
         <summary>Occurs when the control is bound to a data value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListControl.Format> event is raised before each visible item in the <xref:System.Windows.Forms.ListControl> is formatted. Handling this event gives you access to the string to be displayed for this list item, through the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A> property of the <xref:System.Windows.Forms.ListControlConvertEventArgs>.  
+The <xref:System.Windows.Forms.ListControl.Format> event is raised before each visible item in the <xref:System.Windows.Forms.ListControl> is formatted. Handling this event gives you access to the string to be displayed for this list item, through the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A> property of the <xref:System.Windows.Forms.ListControlConvertEventArgs>.  
+ 
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.Format> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.Format> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#144](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#144)]
- [!code-vb[System.Windows.Forms.EventExamples#144](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#144)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.Format> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.Format> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#144](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#144)]
+[!code-vb[System.Windows.Forms.EventExamples#144](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#144)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,10 +382,10 @@
         <value>The <see cref="T:System.IFormatProvider" /> implementation that provides custom formatting behavior.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.ListControl.FormatInfo%2A> property will override the default formatting behavior, which uses the <xref:System.Windows.Forms.Application.CurrentCulture%2A> setting.  
-  
+Setting the <xref:System.Windows.Forms.ListControl.FormatInfo%2A> property will override the default formatting behavior, which uses the <xref:System.Windows.Forms.Application.CurrentCulture%2A> setting.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -414,20 +414,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ListControl.FormatInfo" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.FormatInfoChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.FormatInfoChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#145](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#145)]
- [!code-vb[System.Windows.Forms.EventExamples#145](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#145)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.FormatInfoChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.FormatInfoChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#145](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#145)]
+[!code-vb[System.Windows.Forms.EventExamples#145](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#145)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -460,10 +460,10 @@
         <value>The string of format-specifier characters that indicates how a value is to be displayed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The format string used must follow standard [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] format specifications. For more information, see [Formatting Types in the .NET Framework](~/docs/standard/base-types/formatting-types.md).  
-  
+The format string used must follow standard [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] format specifications. For more information, see [Formatting Types in the .NET Framework](~/docs/standard/base-types/formatting-types.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -484,20 +484,20 @@
         <summary>Occurs when value of the <see cref="P:System.Windows.Forms.ListControl.FormatString" /> property changes</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.FormatStringChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.FormatStringChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#146](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#146)]
- [!code-vb[System.Windows.Forms.EventExamples#146](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#146)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.FormatStringChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.FormatStringChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#146](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#146)]
+[!code-vb[System.Windows.Forms.EventExamples#146](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#146)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -525,16 +525,16 @@
           <see langword="true" /> if formatting of the <see cref="P:System.Windows.Forms.ListControl.DisplayMember" /> property is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> property to `true` causes the <xref:System.Windows.Forms.ListControl.Format> event to be raised for each visible member of the <xref:System.Windows.Forms.ListControl>.  
-  
- <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A>, <xref:System.Windows.Forms.ListControl.SelectedValue%2A>, and <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> are related as follows:  
-  
+Setting the <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> property to `true` causes the <xref:System.Windows.Forms.ListControl.Format> event to be raised for each visible member of the <xref:System.Windows.Forms.ListControl>.  
+ 
+<xref:System.Windows.Forms.ComboBox.SelectedIndex%2A>, <xref:System.Windows.Forms.ListControl.SelectedValue%2A>, and <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> are related as follows:  
+ 
 -   If <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> is `false`, <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> will not be set to -1 when <xref:System.Windows.Forms.ListControl.SelectedValue%2A> is blank.  
-  
+ 
 -   If <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> is `true`, <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> will be set to -1 when <xref:System.Windows.Forms.ListControl.SelectedValue%2A> is blank.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -555,20 +555,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ListControl.FormattingEnabled" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.FormattingEnabledChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.FormattingEnabledChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#147](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#147)]
- [!code-vb[System.Windows.Forms.EventExamples#147](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#147)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.FormattingEnabledChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.FormattingEnabledChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#147](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#147)]
+[!code-vb[System.Windows.Forms.EventExamples#147](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#147)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -659,12 +659,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.DataSourceChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ListControl.OnDataSourceChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ListControl.OnDataSourceChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -692,12 +692,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.DisplayMemberChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ListControl.OnDisplayMemberChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ListControl.OnDisplayMemberChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -725,12 +725,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.Format" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ListControl.OnFormat%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ListControl.OnFormat%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -758,12 +758,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.FormatInfoChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ListControl.OnFormatInfoChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ListControl.OnFormatInfoChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -791,12 +791,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.FormatStringChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ListControl.OnFormatStringChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ListControl.OnFormatStringChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -824,12 +824,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.FormattingEnabledChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ListControl.OnFormattingEnabledChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ListControl.OnFormattingEnabledChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -857,10 +857,10 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.SelectedValueChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -888,10 +888,10 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.SelectedValueChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -919,12 +919,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.ValueMemberChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ListControl.OnValueMemberChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ListControl.OnValueMemberChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1020,25 +1020,25 @@
         <value>An object containing the value of the member of the data source specified by the <see cref="P:System.Windows.Forms.ListControl.ValueMember" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a property is not specified in <xref:System.Windows.Forms.ListControl.ValueMember%2A>, <xref:System.Windows.Forms.ListControl.SelectedValue%2A> returns the results of the `ToString` method of the object.  
-  
- <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A>, <xref:System.Windows.Forms.ListControl.SelectedValue%2A>, and <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> are related as follows:  
-  
+If a property is not specified in <xref:System.Windows.Forms.ListControl.ValueMember%2A>, <xref:System.Windows.Forms.ListControl.SelectedValue%2A> returns the results of the `ToString` method of the object.  
+ 
+<xref:System.Windows.Forms.ComboBox.SelectedIndex%2A>, <xref:System.Windows.Forms.ListControl.SelectedValue%2A>, and <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> are related as follows:  
+ 
 -   If <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> is `false`, <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> will not be set to -1 when <xref:System.Windows.Forms.ListControl.SelectedValue%2A> is blank.  
-  
+ 
 -   If <xref:System.Windows.Forms.ListControl.FormattingEnabled%2A> is `true`, <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> will be set to -1 when <xref:System.Windows.Forms.ListControl.SelectedValue%2A> is blank.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the <xref:System.Windows.Forms.ListControl.SelectedValue%2A> returning the value of the property specified by the <xref:System.Windows.Forms.ListControl.ValueMember%2A> property. This code is an excerpt from the example shown in the <xref:System.Windows.Forms.ListControl> class overview. See <xref:System.Windows.Forms.ListControl> for the whole code listing.  
-  
- [!code-cpp[ListControl#3](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#3)]
- [!code-csharp[ListControl#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#3)]
- [!code-vb[ListControl#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#3)]  
-  
+The following code example shows the <xref:System.Windows.Forms.ListControl.SelectedValue%2A> returning the value of the property specified by the <xref:System.Windows.Forms.ListControl.ValueMember%2A> property. This code is an excerpt from the example shown in the <xref:System.Windows.Forms.ListControl> class overview. See <xref:System.Windows.Forms.ListControl> for the whole code listing.  
+ 
+[!code-cpp[ListControl#3](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#3)]
+[!code-csharp[ListControl#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#3)]
+[!code-vb[ListControl#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The assigned value is <see langword="null" /> or the empty string ("").</exception>
@@ -1060,19 +1060,19 @@
         <summary>Occurs when the <see cref="P:System.Windows.Forms.ListControl.SelectedValue" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is a complete application that shows how you can use <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, <xref:System.Windows.Forms.ListControl.ValueMember%2A>, and <xref:System.Windows.Forms.ListControl.SelectedValue%2A> members of the <xref:System.Windows.Forms.ListControl> class as implemented by the <xref:System.Windows.Forms.ListBox> class. The example loads an <xref:System.Collections.ArrayList> and the list box. The example also uses the <xref:System.Windows.Forms.ListControl.SelectedValueChanged> event to fill in a text box when the user selects an item in the list box. The text box is filled with the data associated with the selected item.  
-  
- [!code-cpp[ListControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#1)]
- [!code-csharp[ListControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#1)]
- [!code-vb[ListControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#1)]  
-  
+The following code example is a complete application that shows how you can use <xref:System.Windows.Forms.ListControl.DataSource%2A>, <xref:System.Windows.Forms.ListControl.DisplayMember%2A>, <xref:System.Windows.Forms.ListControl.ValueMember%2A>, and <xref:System.Windows.Forms.ListControl.SelectedValue%2A> members of the <xref:System.Windows.Forms.ListControl> class as implemented by the <xref:System.Windows.Forms.ListBox> class. The example loads an <xref:System.Collections.ArrayList> and the list box. The example also uses the <xref:System.Windows.Forms.ListControl.SelectedValueChanged> event to fill in a text box when the user selects an item in the list box. The text box is filled with the data associated with the selected item.  
+ 
+[!code-cpp[ListControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#1)]
+[!code-csharp[ListControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#1)]
+[!code-vb[ListControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1146,23 +1146,23 @@
         <value>A <see cref="T:System.String" /> representing a single property name of the <see cref="P:System.Windows.Forms.ListControl.DataSource" /> property value, or a hierarchy of period-delimited property names that resolves to a property name of the final data-bound object. The default is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specify the contents of the <xref:System.Windows.Forms.ListControl.ValueMember%2A> property in cases where you bind data.  
+Specify the contents of the <xref:System.Windows.Forms.ListControl.ValueMember%2A> property in cases where you bind data.  
+ 
+You can clear the <xref:System.Windows.Forms.ListControl.ValueMember%2A> property by setting the property to an empty string ("") or `null`.  
+ 
+Setting a new <xref:System.Windows.Forms.ListControl.ValueMember%2A> property raises the <xref:System.Windows.Forms.ListControl.ValueMemberChanged> and <xref:System.Windows.Forms.ListControl.SelectedValueChanged> events.  
+ 
   
- You can clear the <xref:System.Windows.Forms.ListControl.ValueMember%2A> property by setting the property to an empty string ("") or `null`.  
-  
- Setting a new <xref:System.Windows.Forms.ListControl.ValueMember%2A> property raises the <xref:System.Windows.Forms.ListControl.ValueMemberChanged> and <xref:System.Windows.Forms.ListControl.SelectedValueChanged> events.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows loading the data into an <xref:System.Collections.ArrayList> and setting the <xref:System.Windows.Forms.ListControl.ValueMember%2A> to a property of the object in the list.  
-  
- [!code-cpp[ListControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#1)]
- [!code-csharp[ListControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#1)]
- [!code-vb[ListControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#1)]  
-  
+The following code example shows loading the data into an <xref:System.Collections.ArrayList> and setting the <xref:System.Windows.Forms.ListControl.ValueMember%2A> to a property of the object in the list.  
+ 
+[!code-cpp[ListControl#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListControl/CPP/form1.cpp#1)]
+[!code-csharp[ListControl#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListControl/CS/form1.cs#1)]
+[!code-vb[ListControl#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListControl/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified property path cannot be resolved through the object specified by the <see cref="P:System.Windows.Forms.ListControl.DataSource" /> property.</exception>
@@ -1184,20 +1184,20 @@
         <summary>Occurs when the <see cref="P:System.Windows.Forms.ListControl.ValueMember" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.ValueMemberChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.ValueMemberChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#148](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#148)]
- [!code-vb[System.Windows.Forms.EventExamples#148](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#148)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListControl.ValueMemberChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ListControl>, such as a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox>. Then name the instance `ListControl1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ListControl.ValueMemberChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#148](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#148)]
+[!code-vb[System.Windows.Forms.EventExamples#148](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#148)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

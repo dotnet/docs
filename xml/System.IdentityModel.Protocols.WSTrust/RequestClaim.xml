@@ -14,14 +14,14 @@
     <summary>Represents a single requested claim in a security token request (RST).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Represents a single claim inside a wst:Claims element in a wst:RequestSecurityToken message. The entire contents of the wst:Claims element is represented by a <xref:System.IdentityModel.Protocols.WSTrust.RequestClaimCollection> which is a collection of <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim> objects. The contents of the wst:Claims element is accessed through the <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Claims%2A?displayProperty=fullName> property.  
-  
- A <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim> object represents a request for a claim, identified by its claim type (the <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim.ClaimType%2A> property), to be present in the security token issued by the STS. The <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim.IsOptional%2A> property indicates whether the claim is required in the in the issued token.  
-  
- For more information about the element that this class represents, see the version of the WS-Trust specification that applies to your scenario.  
-  
+Represents a single claim inside a wst:Claims element in a wst:RequestSecurityToken message. The entire contents of the wst:Claims element is represented by a <xref:System.IdentityModel.Protocols.WSTrust.RequestClaimCollection> which is a collection of <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim> objects. The contents of the wst:Claims element is accessed through the <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.Claims%2A?displayProperty=fullName> property.  
+ 
+A <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim> object represents a request for a claim, identified by its claim type (the <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim.ClaimType%2A> property), to be present in the security token issued by the STS. The <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim.IsOptional%2A> property indicates whether the claim is required in the in the issued token.  
+ 
+For more information about the element that this class represents, see the version of the WS-Trust specification that applies to your scenario.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,10 +43,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestClaim" /> class with the specified claim type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim.IsOptional%2A> property is set to `false` and the <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim.Value%2A> property is set to `null` in the new <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim> instance. This constructor creates a <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim> object that represents a request for a claim that is required in the response.  
-  
+The <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim.IsOptional%2A> property is set to `false` and the <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim.Value%2A> property is set to `null` in the new <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim> instance. This constructor creates a <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim> object that represents a request for a claim that is required in the response.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -71,10 +71,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestClaim" /> class with the specified claim type and a value that indicates whether the claim is optional.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim.Value%2A> property is set to `null` in the new <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim> instance.  
-  
+The <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim.Value%2A> property is set to `null` in the new <xref:System.IdentityModel.Protocols.WSTrust.RequestClaim> instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <value>The URI that represents the claim type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Represents the contents of the ClaimType Uri attribute.  
-  
+Represents the contents of the ClaimType Uri attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,10 +145,10 @@
           <see langword="true" /> if the claim is optional in the response; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Represents the ClaimType optional attribute.  
-  
+Represents the ClaimType optional attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
         <value>The value of the claim.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Represents the contents of the ClaimType value element.  
-  
+Represents the contents of the ClaimType value element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

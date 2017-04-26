@@ -14,10 +14,10 @@
     <summary>Represents a security token provider that provides an SSPI security token.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The SSPI security token is not capable of any cryptographic operations, but contains only the settings needed for Windows authentication.  
-  
+The SSPI security token is not capable of any cryptographic operations, but contains only the settings needed for Windows authentication.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SspiSecurityTokenProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instance of this class is used for SSPI tokens on the service.  
-  
+The instance of this class is used for SSPI tokens on the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,10 +75,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SspiSecurityTokenProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new instance of this class is used for SSPI tokens on the client.  
-  
+The new instance of this class is used for SSPI tokens on the client.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,10 +104,10 @@
         <returns>The security token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The security token is of type <xref:System.ServiceModel.Security.Tokens.SspiSecurityToken>.  
-  
+The security token is of type <xref:System.ServiceModel.Security.Tokens.SspiSecurityToken>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

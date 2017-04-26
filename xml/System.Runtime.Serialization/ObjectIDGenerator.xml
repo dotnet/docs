@@ -24,16 +24,16 @@
     <summary>Generates IDs for objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.ObjectIDGenerator> keeps track of previously identified objects. When you ask for the ID of an object, the <xref:System.Runtime.Serialization.ObjectIDGenerator> knows whether to return the existing ID, or generate and remember a new ID.  
-  
- The IDs are unique for the life of the <xref:System.Runtime.Serialization.ObjectIDGenerator> instance. Generally, a <xref:System.Runtime.Serialization.ObjectIDGenerator> life lasts as long as the <xref:System.Runtime.Serialization.Formatter> that created it. Object IDs have meaning only within a given serialized stream, and are used for tracking which objects have references to others within the serialized object graph.  
-  
- Using a hash table, the <xref:System.Runtime.Serialization.ObjectIDGenerator> retains which ID is assigned to which object. The object references, which uniquely identify each object, are addresses in the runtime garbage-collected heap. Object reference values can change during serialization, but the table is updated automatically so the information is correct.  
-  
- Object IDs are 64-bit numbers. Allocation starts from one, so zero is never a valid object ID. A formatter can choose a zero value to represent an object reference whose value is `null`.  
-  
+The <xref:System.Runtime.Serialization.ObjectIDGenerator> keeps track of previously identified objects. When you ask for the ID of an object, the <xref:System.Runtime.Serialization.ObjectIDGenerator> knows whether to return the existing ID, or generate and remember a new ID.  
+ 
+The IDs are unique for the life of the <xref:System.Runtime.Serialization.ObjectIDGenerator> instance. Generally, a <xref:System.Runtime.Serialization.ObjectIDGenerator> life lasts as long as the <xref:System.Runtime.Serialization.Formatter> that created it. Object IDs have meaning only within a given serialized stream, and are used for tracking which objects have references to others within the serialized object graph.  
+ 
+Using a hash table, the <xref:System.Runtime.Serialization.ObjectIDGenerator> retains which ID is assigned to which object. The object references, which uniquely identify each object, are addresses in the runtime garbage-collected heap. Object reference values can change during serialization, but the table is updated automatically so the information is correct.  
+ 
+Object IDs are 64-bit numbers. Allocation starts from one, so zero is never a valid object ID. A formatter can choose a zero value to represent an object reference whose value is `null`.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -119,10 +119,10 @@
         <returns>The object ID of <paramref name="obj" /> if previously known to the <see cref="T:System.Runtime.Serialization.ObjectIDGenerator" />; otherwise, zero.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the object has already been assigned an ID, the ID is returned and `firstTime` is set to `false`; otherwise, zero is returned and `firstTime` is set to `true`. <xref:System.Runtime.Serialization.ObjectIDGenerator.HasId%2A> differs from <xref:System.Runtime.Serialization.ObjectIDGenerator.GetId%2A> in that it never creates an ID for an object that has not already been seen by the <xref:System.Runtime.Serialization.ObjectIDGenerator>.  
-  
+If the object has already been assigned an ID, the ID is returned and `firstTime` is set to `false`; otherwise, zero is returned and `firstTime` is set to `true`. <xref:System.Runtime.Serialization.ObjectIDGenerator.HasId%2A> differs from <xref:System.Runtime.Serialization.ObjectIDGenerator.GetId%2A> in that it never creates an ID for an object that has not already been seen by the <xref:System.Runtime.Serialization.ObjectIDGenerator>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>

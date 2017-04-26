@@ -21,21 +21,21 @@
     <summary>Serializes or deserializes an object, or an entire graph of connected objects, to or from the body of a Message Queuing message, using a binary format.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Messaging.BinaryMessageFormatter> is very efficient and can be used to serialize most objects. The result is very compact and fast to parse, but does not allow for loosely coupled messaging as the <xref:System.Messaging.XmlMessageFormatter> does. Loosely coupled means that the client and the server can independently version the type that is sent and received.  
+The <xref:System.Messaging.BinaryMessageFormatter> is very efficient and can be used to serialize most objects. The result is very compact and fast to parse, but does not allow for loosely coupled messaging as the <xref:System.Messaging.XmlMessageFormatter> does. Loosely coupled means that the client and the server can independently version the type that is sent and received.  
+ 
+When the application sends a message to the queue using an instance of the <xref:System.Messaging.MessageQueue> class, the formatter serializes the object into a stream and inserts it into the message body. When reading from a queue using a <xref:System.Messaging.MessageQueue>, the formatter deserializes the message data into the <xref:System.Messaging.Message.Body%2A> property of a <xref:System.Messaging.Message>.  
+ 
+<xref:System.Messaging.BinaryMessageFormatter> provides faster throughput than the <xref:System.Messaging.XmlMessageFormatter>. Use the <xref:System.Messaging.BinaryMessageFormatter> when pure speed rather than loosely coupled messaging is desired.  
+ 
   
- When the application sends a message to the queue using an instance of the <xref:System.Messaging.MessageQueue> class, the formatter serializes the object into a stream and inserts it into the message body. When reading from a queue using a <xref:System.Messaging.MessageQueue>, the formatter deserializes the message data into the <xref:System.Messaging.Message.Body%2A> property of a <xref:System.Messaging.Message>.  
-  
- <xref:System.Messaging.BinaryMessageFormatter> provides faster throughput than the <xref:System.Messaging.XmlMessageFormatter>. Use the <xref:System.Messaging.BinaryMessageFormatter> when pure speed rather than loosely coupled messaging is desired.  
-  
-   
-  
+ 
 ## Examples  
- [!code-cpp[MessagingBinaryFormatter#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessagingBinaryFormatter/CPP/message_binaryformatter.cpp#1)]
- [!code-csharp[MessagingBinaryFormatter#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessagingBinaryFormatter/CS/message_binaryformatter.cs#1)]
- [!code-vb[MessagingBinaryFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessagingBinaryFormatter/VB/message_binaryformatter.vb#1)]  
-  
+[!code-cpp[MessagingBinaryFormatter#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessagingBinaryFormatter/CPP/message_binaryformatter.cpp#1)]
+[!code-csharp[MessagingBinaryFormatter#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessagingBinaryFormatter/CS/message_binaryformatter.cs#1)]
+[!code-vb[MessagingBinaryFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessagingBinaryFormatter/VB/message_binaryformatter.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.BinaryMessageFormatter" /> class without specifying a type style or top object assembly style.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must specify values for the <xref:System.Messaging.BinaryMessageFormatter.TopObjectFormat%2A> property (which defines how the root object in a graph is laid out) and the <xref:System.Messaging.BinaryMessageFormatter.TypeFormat%2A> property (which defines how object type descriptions are laid out) before using an instance of the <xref:System.Messaging.BinaryMessageFormatter> class to serialize and send a message.  
-  
+You must specify values for the <xref:System.Messaging.BinaryMessageFormatter.TopObjectFormat%2A> property (which defines how the root object in a graph is laid out) and the <xref:System.Messaging.BinaryMessageFormatter.TypeFormat%2A> property (which defines how object type descriptions are laid out) before using an instance of the <xref:System.Messaging.BinaryMessageFormatter> class to serialize and send a message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,12 +104,12 @@
           <see langword="true" /> if the binary message formatter can deserialize the message; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Messaging.BinaryMessageFormatter.CanRead%2A> returns `false` if the message body is not a binary object.  
-  
- On the receiving computer, <xref:System.Messaging.BinaryMessageFormatter.CanRead%2A> returns `true` if the assembly for the class to be deserialized exists locally. The assembly must be found in the global assembly cache, or be linked to the application (for example, if the object represents a custom class).  
-  
+<xref:System.Messaging.BinaryMessageFormatter.CanRead%2A> returns `false` if the message body is not a binary object.  
+ 
+On the receiving computer, <xref:System.Messaging.BinaryMessageFormatter.CanRead%2A> returns `true` if the assembly for the class to be deserialized exists locally. The assembly must be found in the global assembly cache, or be linked to the application (for example, if the object represents a custom class).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="message" /> parameter is <see langword="null" />.</exception>
@@ -133,10 +133,10 @@
         <returns>An object whose properties are identical to those of this <see cref="T:System.Messaging.BinaryMessageFormatter" />, but whose metadata does not specify it to be a formatter class instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a copy of the formatter and initializes all its properties to the values of this <xref:System.Messaging.BinaryMessageFormatter>. It is used for scalability, but does not guarantee read or write thread safety.  
-  
+This method creates a copy of the formatter and initializes all its properties to the values of this <xref:System.Messaging.BinaryMessageFormatter>. It is used for scalability, but does not guarantee read or write thread safety.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,14 +162,14 @@
         <returns>The deserialized message.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- The body of the message must be in binary format, and the same serializer must be used to deserialize the message as that which initially serialized it. If the body represents a custom class, the assembly for that class must exist locally.  
-  
+ 
+The body of the message must be in binary format, and the same serializer must be used to deserialize the message as that which initially serialized it. If the body represents a custom class, the assembly for that class must exist locally.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The message's <see cref="P:System.Messaging.Message.BodyType" /> property does not indicate a binary object.</exception>
@@ -201,10 +201,10 @@
         <value>One of the <see cref="T:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle" /> values that defines the deserialization behavior.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Currently, you should accept the default value, `AssemblyStyle`.  
-  
+Currently, you should accept the default value, `AssemblyStyle`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -234,10 +234,10 @@
         <value>A <see cref="T:System.Runtime.Serialization.Formatters.FormatterTypeStyle" /> that defines the type description format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Currently, you should accept the default value, `TypesWhenNeeded`.  
-  
+Currently, you should accept the default value, `TypesWhenNeeded`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -264,12 +264,12 @@
         <summary>Serializes an object into the body of the message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The top object format and type format need not be specified to write to the queue as they must be when reading. The <xref:System.Messaging.BinaryMessageFormatter.TopObjectFormat%2A> and <xref:System.Messaging.BinaryMessageFormatter.TypeFormat%2A> properties are used by the formatter only when deserializing a message.  
-  
- The <xref:System.Messaging.BinaryMessageFormatter> can serialize most objects, but the result is not loosely coupled. However, it is compact, so the formatter is efficient for large objects.  
-  
+The top object format and type format need not be specified to write to the queue as they must be when reading. The <xref:System.Messaging.BinaryMessageFormatter.TopObjectFormat%2A> and <xref:System.Messaging.BinaryMessageFormatter.TypeFormat%2A> properties are used by the formatter only when deserializing a message.  
+ 
+The <xref:System.Messaging.BinaryMessageFormatter> can serialize most objects, but the result is not loosely coupled. However, it is compact, so the formatter is efficient for large objects.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="message" /> parameter is <see langword="null" />.</exception>

@@ -23,36 +23,36 @@
     <summary>Provides a base class for getting and setting option values for a designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerOptionService> class provides a collection of options. Each of these option collections has an indexer that enables it to be further filtered. Each option collection contains its own set of options, as well as a rollup of all of its child options. In the event of a naming conflict between properties, the outermost options object takes precedence. The following **Tools &#124; Options** user interface (UI) structure shows how the outermost options object takes on greater importance:  
-  
- **WindowsFormsDesigner &#124; General**  
-  
+The <xref:System.ComponentModel.Design.DesignerOptionService> class provides a collection of options. Each of these option collections has an indexer that enables it to be further filtered. Each option collection contains its own set of options, as well as a rollup of all of its child options. In the event of a naming conflict between properties, the outermost options object takes precedence. The following **Tools &#124; Options** user interface (UI) structure shows how the outermost options object takes on greater importance:  
+ 
+**WindowsFormsDesigner &#124; General**  
+ 
 -   **SnapToGrid**  
-  
+ 
 -   **ShowGrid**  
-  
+ 
 -   **GridSize**  
+ 
+Given a <xref:System.ComponentModel.Design.IDesignerOptionService> named `service`, to get to the value of the <xref:System.Windows.Forms.Design.ParentControlDesigner.GridSize%2A> property, you would make the following call:  
+ 
+[!code-cpp[IDesignerOptionServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IDesignerOptionServiceExample/CPP/idesigneroptionservicecontrol.cpp#2)]
+[!code-csharp[IDesignerOptionServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IDesignerOptionServiceExample/CS/idesigneroptionservicecontrol.cs#2)]
+[!code-vb[IDesignerOptionServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IDesignerOptionServiceExample/VB/idesigneroptionservicecontrol.vb#2)]  
+ 
+This works, until you want to move <xref:System.Windows.Forms.Design.ParentControlDesigner.GridSize%2A> to another page. Also, <xref:System.ComponentModel.Design.IDesignerOptionService> provides no discovery mechanism. If you do not know what string to pass in, the service cannot find the property value.  
+ 
+The <xref:System.ComponentModel.Design.DesignerOptionService> class addresses these issues. You can query collections, and there is a type converter defined on the <xref:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection> object that marks the collection as expandable. With this type converter, you can pass the entire designer option service to a property window and visually inspect the service.  
+ 
   
- Given a <xref:System.ComponentModel.Design.IDesignerOptionService> named `service`, to get to the value of the <xref:System.Windows.Forms.Design.ParentControlDesigner.GridSize%2A> property, you would make the following call:  
-  
- [!code-cpp[IDesignerOptionServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IDesignerOptionServiceExample/CPP/idesigneroptionservicecontrol.cpp#2)]
- [!code-csharp[IDesignerOptionServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IDesignerOptionServiceExample/CS/idesigneroptionservicecontrol.cs#2)]
- [!code-vb[IDesignerOptionServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IDesignerOptionServiceExample/VB/idesigneroptionservicecontrol.vb#2)]  
-  
- This works, until you want to move <xref:System.Windows.Forms.Design.ParentControlDesigner.GridSize%2A> to another page. Also, <xref:System.ComponentModel.Design.IDesignerOptionService> provides no discovery mechanism. If you do not know what string to pass in, the service cannot find the property value.  
-  
- The <xref:System.ComponentModel.Design.DesignerOptionService> class addresses these issues. You can query collections, and there is a type converter defined on the <xref:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection> object that marks the collection as expandable. With this type converter, you can pass the entire designer option service to a property window and visually inspect the service.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates accessing the <xref:System.ComponentModel.Design.DesignerOptionService> to display the current values of the standard options.  
-  
- [!code-csharp[System.ComponentModel.Design.DesignerOptionService#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerOptionService/CS/designeroptionservicecontrol.cs#1)]
- [!code-vb[System.ComponentModel.Design.DesignerOptionService#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerOptionService/VB/designeroptionservicecontrol.vb#1)]  
-  
+The following code example demonstrates accessing the <xref:System.ComponentModel.Design.DesignerOptionService> to display the current values of the standard options.  
+ 
+[!code-csharp[System.ComponentModel.Design.DesignerOptionService#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerOptionService/CS/designeroptionservicecontrol.cs#1)]
+[!code-vb[System.ComponentModel.Design.DesignerOptionService#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerOptionService/VB/designeroptionservicecontrol.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -107,10 +107,10 @@
         <returns>A new <see cref="T:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection" /> with the given name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `value` parameter specifies an object whose public properties are used in the <xref:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.Properties%2A> collection of the option collection. The `value` parameter can be `null` if this options collection does not offer any properties. Properties are wrapped in such a way that passing anything into the component parameter of the <xref:System.ComponentModel.PropertyDescriptor> is ignored, and the `value` object is substituted.  
-  
+The `value` parameter specifies an object whose public properties are used in the <xref:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection.Properties%2A> collection of the option collection. The `value` parameter can be `null` if this options collection does not offer any properties. Properties are wrapped in such a way that passing anything into the component parameter of the <xref:System.ComponentModel.PropertyDescriptor> is ignored, and the `value` object is substituted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -141,18 +141,18 @@
         <value>A <see cref="T:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection" /> populated with available designer options.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is always a global options collection that contains child collections.  
+There is always a global options collection that contains child collections.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how you can navigate the collections by named indexers so you can get the value of the `GridSize` option. All three variations return the same value.  
-  
- [!code-csharp[System.ComponentModel.Design.DesignerOptionService#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerOptionService/CS/designeroptionservicecontrol.cs#3)]
- [!code-vb[System.ComponentModel.Design.DesignerOptionService#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerOptionService/VB/designeroptionservicecontrol.vb#3)]  
-  
+The following code example shows how you can navigate the collections by named indexers so you can get the value of the `GridSize` option. All three variations return the same value.  
+ 
+[!code-csharp[System.ComponentModel.Design.DesignerOptionService#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerOptionService/CS/designeroptionservicecontrol.cs#3)]
+[!code-vb[System.ComponentModel.Design.DesignerOptionService#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerOptionService/VB/designeroptionservicecontrol.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,12 +182,12 @@
         <summary>Populates a <see cref="T:System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerOptionService.PopulateOptionCollection%2A> method is called on demand the first time a user asks for child options or properties of an options collection.  
-  
- You can populate the `options` collection by calling the <xref:System.ComponentModel.Design.DesignerOptionService.CreateOptionCollection%2A> method and passing this collection as the parent.  
-  
+The <xref:System.ComponentModel.Design.DesignerOptionService.PopulateOptionCollection%2A> method is called on demand the first time a user asks for child options or properties of an options collection.  
+ 
+You can populate the `options` collection by calling the <xref:System.ComponentModel.Design.DesignerOptionService.CreateOptionCollection%2A> method and passing this collection as the parent.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -221,10 +221,10 @@
           <see langword="true" /> if the dialog box is shown; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerOptionService.ShowDialog%2A> method must be implemented for the `optionObject` parameter's options dialog box to be shown.  
-  
+The <xref:System.ComponentModel.Design.DesignerOptionService.ShowDialog%2A> method must be implemented for the `optionObject` parameter's options dialog box to be shown.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

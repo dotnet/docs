@@ -121,10 +121,10 @@
           <see langword="true" /> if <paramref name="eventId" /> is in range; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can turn off all events in an event listener by calling <xref:System.Diagnostics.Tracing.EventCommandEventArgs.DisableEvent%2A> starting with `eventID` = 1 and continuing until <xref:System.Diagnostics.Tracing.EventCommandEventArgs.DisableEvent%2A> returns `false`.  
-  
+You can turn off all events in an event listener by calling <xref:System.Diagnostics.Tracing.EventCommandEventArgs.DisableEvent%2A> starting with `eventID` = 1 and continuing until <xref:System.Diagnostics.Tracing.EventCommandEventArgs.DisableEvent%2A> returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,10 +163,10 @@
           <see langword="true" /> if <paramref name="eventId" /> is in range; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can turn on all events in an event listener by calling <xref:System.Diagnostics.Tracing.EventCommandEventArgs.EnableEvent%2A> starting with `eventID` = 1 and continuing until <xref:System.Diagnostics.Tracing.EventCommandEventArgs.EnableEvent%2A> returns `false`.  
-  
+You can turn on all events in an event listener by calling <xref:System.Diagnostics.Tracing.EventCommandEventArgs.EnableEvent%2A> starting with `eventID` = 1 and continuing until <xref:System.Diagnostics.Tracing.EventCommandEventArgs.EnableEvent%2A> returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

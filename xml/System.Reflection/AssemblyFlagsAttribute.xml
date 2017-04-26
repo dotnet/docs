@@ -34,23 +34,23 @@
     <summary>Specifies a bitwise combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags for an assembly, describing just-in-time (JIT) compiler options, whether the assembly is retargetable, and whether it has a full or tokenized public key. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Reflection.AssemblyNameFlags> enumeration describes the assembly characteristics that can be set using this attribute.  
+The <xref:System.Reflection.AssemblyNameFlags> enumeration describes the assembly characteristics that can be set using this attribute.  
+ 
+To access the flags that have been specified for an assembly, use the <xref:System.Reflection.Assembly.GetName%2A?displayProperty=fullName> property to obtain an <xref:System.Reflection.AssemblyName> object, then use the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property to obtain an <xref:System.Reflection.AssemblyNameFlags> value.  
+ 
+To specify <xref:System.Reflection.AssemblyNameFlags> flags for a dynamic assembly, set the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property of the <xref:System.Reflection.AssemblyName> object that you pass to the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=fullName> method.  
+ 
   
- To access the flags that have been specified for an assembly, use the <xref:System.Reflection.Assembly.GetName%2A?displayProperty=fullName> property to obtain an <xref:System.Reflection.AssemblyName> object, then use the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property to obtain an <xref:System.Reflection.AssemblyNameFlags> value.  
-  
- To specify <xref:System.Reflection.AssemblyNameFlags> flags for a dynamic assembly, set the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property of the <xref:System.Reflection.AssemblyName> object that you pass to the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=fullName> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to an assembly, and how to read the flags at run time. The example also creates an instance of the attribute, and uses the <xref:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags%2A> property to display the flags. For an example of how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to a dynamic assembly, see the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property.  
-  
- [!code-cpp[AssemblyFlagsAttribute#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyFlagsAttribute/CPP/source.cpp#1)]
- [!code-csharp[AssemblyFlagsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyFlagsAttribute/CS/source.cs#1)]
- [!code-vb[AssemblyFlagsAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyFlagsAttribute/VB/source.vb#1)]  
-  
+The following code example shows how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to an assembly, and how to read the flags at run time. The example also creates an instance of the attribute, and uses the <xref:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags%2A> property to display the flags. For an example of how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to a dynamic assembly, see the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property.  
+ 
+[!code-cpp[AssemblyFlagsAttribute#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyFlagsAttribute/CPP/source.cpp#1)]
+[!code-csharp[AssemblyFlagsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyFlagsAttribute/CS/source.cs#1)]
+[!code-vb[AssemblyFlagsAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyFlagsAttribute/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -82,10 +82,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyFlagsAttribute" /> class with the specified combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags, cast as an integer value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This untyped constructor is now obsolete. Do not use.  
-  
+This untyped constructor is now obsolete. Do not use.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,14 +119,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyFlagsAttribute" /> class with the specified combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to an assembly, and how to read the flags at run time. The example also creates an instance of the attribute, and uses the <xref:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags%2A> property to display the flags. For an example of how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to a dynamic assembly, see the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property.  
-  
- [!code-cpp[AssemblyFlagsAttribute#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyFlagsAttribute/CPP/source.cpp#1)]
- [!code-csharp[AssemblyFlagsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyFlagsAttribute/CS/source.cs#1)]
- [!code-vb[AssemblyFlagsAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyFlagsAttribute/VB/source.vb#1)]  
-  
+The following code example shows how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to an assembly, and how to read the flags at run time. The example also creates an instance of the attribute, and uses the <xref:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags%2A> property to display the flags. For an example of how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to a dynamic assembly, see the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property.  
+ 
+[!code-cpp[AssemblyFlagsAttribute#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyFlagsAttribute/CPP/source.cpp#1)]
+[!code-csharp[AssemblyFlagsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyFlagsAttribute/CS/source.cs#1)]
+[!code-vb[AssemblyFlagsAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyFlagsAttribute/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyFlagsAttribute" /> class with the specified combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags, cast as an unsigned integer value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This untyped constructor is now obsolete. Do not use.  
-  
+This untyped constructor is now obsolete. Do not use.  
+ 
  ]]></format>
         </remarks>
         <altCompliant cref="M:System.Reflection.AssemblyFlagsAttribute.#ctor(System.Reflection.AssemblyNameFlags)" />
@@ -199,19 +199,19 @@
         <value>An integer value representing a bitwise combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns an integer for backward compatibility. Cast the value to the <xref:System.Reflection.AssemblyNameFlags> type before using it.  
+This property returns an integer for backward compatibility. Cast the value to the <xref:System.Reflection.AssemblyNameFlags> type before using it.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to an assembly, and how to read the flags at run time. The example also creates an instance of the attribute, and uses the <xref:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags%2A> property to display the flags. For an example of how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to a dynamic assembly, see the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property.  
-  
- [!code-cpp[AssemblyFlagsAttribute#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyFlagsAttribute/CPP/source.cpp#1)]
- [!code-csharp[AssemblyFlagsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyFlagsAttribute/CS/source.cs#1)]
- [!code-vb[AssemblyFlagsAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyFlagsAttribute/VB/source.vb#1)]  
-  
+The following code example shows how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to an assembly, and how to read the flags at run time. The example also creates an instance of the attribute, and uses the <xref:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags%2A> property to display the flags. For an example of how to apply the <xref:System.Reflection.AssemblyFlagsAttribute> to a dynamic assembly, see the <xref:System.Reflection.AssemblyName.Flags%2A?displayProperty=fullName> property.  
+ 
+[!code-cpp[AssemblyFlagsAttribute#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyFlagsAttribute/CPP/source.cpp#1)]
+[!code-csharp[AssemblyFlagsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyFlagsAttribute/CS/source.cs#1)]
+[!code-vb[AssemblyFlagsAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyFlagsAttribute/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,10 +246,10 @@
         <value>An unsigned integer value representing a bitwise combination of <see cref="T:System.Reflection.AssemblyNameFlags" /> flags.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns an integer for backward compatibility. Cast the value to the <xref:System.Reflection.AssemblyNameFlags> type before using it.  
-  
+This property returns an integer for backward compatibility. Cast the value to the <xref:System.Reflection.AssemblyNameFlags> type before using it.  
+ 
  ]]></format>
         </remarks>
         <altCompliant cref="P:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags" />

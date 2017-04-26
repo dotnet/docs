@@ -30,12 +30,12 @@
     <summary>Defines an activity delegate with six in arguments of type <c>T</c> and one out argument of type <c>TResult</c>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activities.ActivityDelegate> enables activity authors to expose callbacks with specific signatures that users of the activity can provide activity-based handlers for. <xref:System.Activities.ActivityFunc%607> is an <xref:System.Activities.ActivityDelegate> that returns a value. The signature of the <xref:System.Activities.ActivityFunc%607> is specified as generic type arguments.  
-  
- There are multiple generic versions of this type that take from 1 to 16 in arguments, plus the `out` argument, for the activity that is called. There are also **ActivityAction** types for activity delegates that do not return values.  
-  
+The <xref:System.Activities.ActivityDelegate> enables activity authors to expose callbacks with specific signatures that users of the activity can provide activity-based handlers for. <xref:System.Activities.ActivityFunc%607> is an <xref:System.Activities.ActivityDelegate> that returns a value. The signature of the <xref:System.Activities.ActivityFunc%607> is specified as generic type arguments.  
+ 
+There are multiple generic versions of this type that take from 1 to 16 in arguments, plus the `out` argument, for the activity that is called. There are also **ActivityAction** types for activity delegates that do not return values.  
+ 
  ]]></format>
     </remarks>
   </Docs>

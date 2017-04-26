@@ -30,10 +30,10 @@
     <summary>Provides an approach that is consistent with the document object model (DOM), which constructs activities dynamically that interface with the WF designer and workflow runtime using <see cref="T:System.ComponentModel.ICustomTypeDescriptor" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With <xref:System.Activities.DynamicActivity%601> you can create new activities without creating new types. <xref:System.Activities.DynamicActivity%601> with its associated XAML support in <xref:System.Activities.XamlIntegration.ActivityXamlServices> allows new arguments to be defined in XAML and bound by the host without requiring XAML to be compiled.  
-  
+With <xref:System.Activities.DynamicActivity%601> you can create new activities without creating new types. <xref:System.Activities.DynamicActivity%601> with its associated XAML support in <xref:System.Activities.XamlIntegration.ActivityXamlServices> allows new arguments to be defined in XAML and bound by the host without requiring XAML to be compiled.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -219,10 +219,10 @@
         <returns>The attributes of the dynamic activity.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -245,10 +245,10 @@
         <returns>The class name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,10 +271,10 @@
         <returns>The component name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,10 +297,10 @@
         <returns>A type converter for this dynamic activity instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -323,10 +323,10 @@
         <returns>The default event.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -349,10 +349,10 @@
         <returns>The default property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -378,10 +378,10 @@
         <returns>An instance of the editor that can be cast to the specified editor type, or <see langword="null" /> if no editor of the requested type can be found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -404,10 +404,10 @@
         <returns>The collection of events.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -433,10 +433,10 @@
         <returns>The collection of events that match the specified attributes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -459,10 +459,10 @@
         <returns>The collection of properties.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -488,10 +488,10 @@
         <returns>The collection of properties that match the specified attributes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -517,12 +517,12 @@
         <returns>This instance of <see cref="T:System.Activities.DynamicActivity`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `pd` parameter is ignored by this method. This parameter is present to implement the <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
-  
+The `pd` parameter is ignored by this method. This parameter is present to implement the <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Activities.DynamicActivity%601> instance is cast to an <xref:System.ComponentModel.ICustomTypeDescriptor> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

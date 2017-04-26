@@ -34,29 +34,29 @@
     <summary>Specifies that the assembly is not fully signed when created.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this attribute is used on an assembly, space is reserved for the signature which is later filled by a signing tool such as the Sn.exe utility. Delayed signing is used when the author of the assembly does not have access to the private key that will be used to generate the signature, as in `[assembly:AssemblyDelaySignAttribute(true)]`.  
+When this attribute is used on an assembly, space is reserved for the signature which is later filled by a signing tool such as the Sn.exe utility. Delayed signing is used when the author of the assembly does not have access to the private key that will be used to generate the signature, as in `[assembly:AssemblyDelaySignAttribute(true)]`.  
+ 
+The classes in `System.Runtime.CompilerServices` are intended for use by compilers only. Do not use them unless you are building a compiler.  
+ 
+For more information, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ 
   
- The classes in `System.Runtime.CompilerServices` are intended for use by compilers only. Do not use them unless you are building a compiler.  
-  
- For more information, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Reflection.AssemblyDelaySignAttribute> attribute with the <xref:System.Reflection.AssemblyKeyFileAttribute>. To compile this example, you must create a strong-name key file named TestPublicKey.snk using the [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md):  
-  
+The following code example shows the use of the <xref:System.Reflection.AssemblyDelaySignAttribute> attribute with the <xref:System.Reflection.AssemblyKeyFileAttribute>. To compile this example, you must create a strong-name key file named TestPublicKey.snk using the [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md):  
+ 
 ```  
 sn -k TestPublicKey.snk   
 ```  
-  
- Compile the example as a .dll. If you compile from the command line, use the `/t:library` option for C# or Visual Basic, or the `/LD` linker option for Visual C++.  
-  
- [!code-cpp[AssemblyDelaySignattribute#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyDelaySignAttribute/cpp/source.cpp#1)]
- [!code-csharp[AssemblyDelaySignattribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyDelaySignAttribute/cs/source.cs#1)]
- [!code-vb[AssemblyDelaySignattribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyDelaySignAttribute/vb/source.vb#1)]  
-  
+ 
+Compile the example as a .dll. If you compile from the command line, use the `/t:library` option for C# or Visual Basic, or the `/LD` linker option for Visual C++.  
+ 
+[!code-cpp[AssemblyDelaySignattribute#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyDelaySignAttribute/cpp/source.cpp#1)]
+[!code-csharp[AssemblyDelaySignattribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyDelaySignAttribute/cs/source.cs#1)]
+[!code-vb[AssemblyDelaySignattribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyDelaySignAttribute/vb/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

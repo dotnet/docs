@@ -35,22 +35,22 @@
     <summary>Models the throwing of an exception. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+ 
+The purpose of the <xref:System.Workflow.ComponentModel.ThrowActivity> is to allow declarative modeling of the throwing of an exception. The <xref:System.Workflow.ComponentModel.ThrowActivity> is functionally equivalent to a <xref:System.Workflow.Activities.CodeActivity> activity whose code-beside handler throws the indicated exception.  
+ 
   
- The purpose of the <xref:System.Workflow.ComponentModel.ThrowActivity> is to allow declarative modeling of the throwing of an exception. The <xref:System.Workflow.ComponentModel.ThrowActivity> is functionally equivalent to a <xref:System.Workflow.Activities.CodeActivity> activity whose code-beside handler throws the indicated exception.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows the use of a single throw activity in a workflow to implement exception handling. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using Throw](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
-  
- [!code-csharp[WF_Samples#178](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#178)]
- [!code-vb[WF_Samples#178](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#178)]  
-  
+The following code shows the use of a single throw activity in a workflow to implement exception handling. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using Throw](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
+ 
+[!code-csharp[WF_Samples#178](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#178)]
+[!code-vb[WF_Samples#178](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#178)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,13 +69,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ThrowActivity" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows the use of a single throw activity in a workflow to implement exception handling. This example includes invoking the constructor. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using Throw](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
-  
- [!code-csharp[WF_Samples#178](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#178)]
- [!code-vb[WF_Samples#178](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#178)]  
-  
+The following code shows the use of a single throw activity in a workflow to implement exception handling. This example includes invoking the constructor. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using Throw](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
+ 
+[!code-csharp[WF_Samples#178](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#178)]
+[!code-vb[WF_Samples#178](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#178)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,10 +150,10 @@
         <value>The <see cref="T:System.Exception" /> associated with this instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
-  
+You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,10 +179,10 @@
         <summary>The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> representing the <see cref="P:System.Workflow.ComponentModel.ThrowActivity.Fault" /> property for this instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -218,13 +218,13 @@
         <value>The type representing the fault associated with this instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows the usage of a single throw activity within a workflow to implement exception handling. This example shows setting the <xref:System.Workflow.ComponentModel.ThrowActivity.FaultType%2A> to `null`. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using Throw](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
-  
- [!code-csharp[WF_Samples#178](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#178)]
- [!code-vb[WF_Samples#178](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#178)]  
-  
+The following code shows the usage of a single throw activity within a workflow to implement exception handling. This example shows setting the <xref:System.Workflow.ComponentModel.ThrowActivity.FaultType%2A> to `null`. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using Throw](http://msdn.microsoft.com/en-us/aa5b9546-ec95-4e43-8337-20e26f8d71cc).  
+ 
+[!code-csharp[WF_Samples#178](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#178)]
+[!code-vb[WF_Samples#178](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#178)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,12 +250,12 @@
         <summary>The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> representing the <see cref="P:System.Workflow.ComponentModel.ThrowActivity.FaultType" /> property for this instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
-  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named `XProperty` or `XEvent`, where X is the corresponding property.  
+ 
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,10 +348,10 @@
         <returns>An <see cref="T:System.Workflow.ComponentModel.Compiler.AccessTypes" /> enumeration value denoting the access level of the property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used at compile time to validate if the properties are correctly bound to one other. Without this interface this information is inferred directly from property getter/setters.  
-  
+Used at compile time to validate if the properties are correctly bound to one other. Without this interface this information is inferred directly from property getter/setters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -379,10 +379,10 @@
         <returns>The <see cref="T:System.Type" /> for the property whose name is passed as the <paramref name="propertyName " />parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used at compile time to validate if the properties are correctly bound to one other.  
-  
+Used at compile time to validate if the properties are correctly bound to one other.  
+ 
  ]]></format>
         </remarks>
       </Docs>

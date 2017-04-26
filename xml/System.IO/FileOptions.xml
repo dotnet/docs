@@ -30,13 +30,13 @@
     <summary>Represents advanced options for creating a <see cref="T:System.IO.FileStream" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the Asynchronous value when creating a file stream.  
-  
- [!code-csharp[IO.FileStream.ctor2#2](~/samples/snippets/csharp/VS_Snippets_CLR/IO.FileStream.ctor2/CS/example2.cs#2)]
- [!code-vb[IO.FileStream.ctor2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.FileStream.ctor2/VB/example2.vb#2)]  
-  
+The following example shows how to use the Asynchronous value when creating a file stream.  
+ 
+[!code-csharp[IO.FileStream.ctor2#2](~/samples/snippets/csharp/VS_Snippets_CLR/IO.FileStream.ctor2/CS/example2.cs#2)]
+[!code-vb[IO.FileStream.ctor2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.FileStream.ctor2/VB/example2.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -191,10 +191,10 @@
         <summary>Indicates that the file is to be accessed sequentially from beginning to end. The system can use this as a hint to optimize file caching. If an application moves the file pointer for random access, optimum caching may not occur; however, correct operation is still guaranteed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specifying this flag can increase performance for applications that read large files using sequential access. Performance gains can be even more noticeable for applications that read large files mostly sequentially, but occasionally skip over small ranges of bytes.  
-  
+Specifying this flag can increase performance for applications that read large files using sequential access. Performance gains can be even more noticeable for applications that read large files mostly sequentially, but occasionally skip over small ranges of bytes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

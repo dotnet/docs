@@ -35,20 +35,20 @@
     <summary>Represents a collection of parameters associated with a <see cref="T:System.Data.SqlClient.SqlCommand" /> and their respective mappings to columns in a <see cref="T:System.Data.DataSet" />. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the command contains an ad hoc SQL statement, as opposed to a stored-procedure name, the number of the parameters in the collection must be equal to the number of parameter placeholders within the command text, or SQL Server raises an error. With a stored procedure, all the parameters declared in the stored procedure without a default value must be provided. Parameters declared with a default value are optional. This lets you specify a value other than the default.  
+If the command contains an ad hoc SQL statement, as opposed to a stored-procedure name, the number of the parameters in the collection must be equal to the number of parameter placeholders within the command text, or SQL Server raises an error. With a stored procedure, all the parameters declared in the stored procedure without a default value must be provided. Parameters declared with a default value are optional. This lets you specify a value other than the default.  
+ 
+For more information with additional sample code demonstrating how to use parameters, see [Commands and Parameters](~/docs/framework/data/adonet/commands-and-parameters.md).  
+ 
   
- For more information with additional sample code demonstrating how to use parameters, see [Commands and Parameters](~/docs/framework/data/adonet/commands-and-parameters.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates multiple instances of <xref:System.Data.SqlClient.SqlParameter> through the <xref:System.Data.SqlClient.SqlParameterCollection> collection. The parameters are used to select data within the data source and populate the <xref:System.Data.DataSet>. This code assumes that a <xref:System.Data.DataSet> and a <xref:System.Data.SqlClient.SqlDataAdapter> have already been created with the appropriate schema, commands, and connection.  
-  
- [!code-csharp[Classic WebData SqlParameter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlParameter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter Example/VB/source.vb#1)]  
-  
+The following example creates multiple instances of <xref:System.Data.SqlClient.SqlParameter> through the <xref:System.Data.SqlClient.SqlParameterCollection> collection. The parameters are used to select data within the data source and populate the <xref:System.Data.DataSet>. This code assumes that a <xref:System.Data.DataSet> and a <xref:System.Data.SqlClient.SqlDataAdapter> have already been created with the appropriate schema, commands, and connection.  
+ 
+[!code-csharp[Classic WebData SqlParameter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlParameter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -83,11 +83,11 @@
         <returns>A new <see cref="T:System.Data.SqlClient.SqlParameter" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[Classic WebData SqlParameterCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlParameterCollection.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add Example/VB/source.vb#1)]  
-  
+[!code-csharp[Classic WebData SqlParameterCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlParameterCollection.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Data.SqlClient.SqlParameter" /> specified in the <paramref name="value" /> parameter is already added to this or another <see cref="T:System.Data.SqlClient.SqlParameterCollection" />.</exception>
@@ -163,11 +163,11 @@
         <returns>A new <see cref="T:System.Data.SqlClient.SqlParameter" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[Classic WebData SqlParameterCollection.Add3 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add3 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlParameterCollection.Add3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add3 Example/VB/source.vb#1)]  
-  
+[!code-csharp[Classic WebData SqlParameterCollection.Add3 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add3 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlParameterCollection.Add3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add3 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,11 +212,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
  If you do not perform this conversion, the compiler assumes that you are trying to call the <see langword="SqlParameterCollection.Add" /> (<see langword="string" />, <see langword="SqlDbType" />) overload.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[Classic WebData SqlParameterCollection.Add1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlParameterCollection.Add1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add1 Example/VB/source.vb#1)]  
-  
+[!code-csharp[Classic WebData SqlParameterCollection.Add1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlParameterCollection.Add1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Data.SqlClient.SqlParameter" /> specified in the <paramref name="value" /> parameter is already added to this or another <see cref="T:System.Data.SqlClient.SqlParameterCollection" />.</exception>
@@ -257,16 +257,16 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <returns>A new <see cref="T:System.Data.SqlClient.SqlParameter" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload is useful when you are adding a parameter of a variable-length data type such as `varchar` or `binary`.  
+This overload is useful when you are adding a parameter of a variable-length data type such as `varchar` or `binary`.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[Classic WebData SqlParameterCollection.Add1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add1 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlParameterCollection.Add1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add1 Example/VB/source.vb#1)]  
-  
+[!code-csharp[Classic WebData SqlParameterCollection.Add1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add1 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlParameterCollection.Add1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,11 +299,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <returns>A new <see cref="T:System.Data.SqlClient.SqlParameter" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[Classic WebData SqlParameterCollection.Add5 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add5 Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlParameterCollection.Add5 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add5 Example/VB/source.vb#1)]  
-  
+[!code-csharp[Classic WebData SqlParameterCollection.Add5 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add5 Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlParameterCollection.Add5 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Add5 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -400,20 +400,20 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <returns>A <see cref="T:System.Data.SqlClient.SqlParameter" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.SqlClient.SqlParameterCollection.AddWithValue%2A> replaces the `SqlParameterCollection.Add` method that takes a <xref:System.String> and an <xref:System.Object>. The overload of `Add` that takes a string and an object was deprecated because of possible ambiguity with the `SqlParameterCollection.Add` overload that takes a <xref:System.String> and a <xref:System.Data.SqlDbType> enumeration value where passing an integer with the string could be interpreted as being either the parameter value or the corresponding <xref:System.Data.SqlDbType> value. Use <xref:System.Data.SqlClient.SqlParameterCollection.AddWithValue%2A> whenever you want to add a parameter by specifying its name and value.  
+<xref:System.Data.SqlClient.SqlParameterCollection.AddWithValue%2A> replaces the `SqlParameterCollection.Add` method that takes a <xref:System.String> and an <xref:System.Object>. The overload of `Add` that takes a string and an object was deprecated because of possible ambiguity with the `SqlParameterCollection.Add` overload that takes a <xref:System.String> and a <xref:System.Data.SqlDbType> enumeration value where passing an integer with the string could be interpreted as being either the parameter value or the corresponding <xref:System.Data.SqlDbType> value. Use <xref:System.Data.SqlClient.SqlParameterCollection.AddWithValue%2A> whenever you want to add a parameter by specifying its name and value.  
+ 
+For <xref:System.Data.SqlDbType>`Xml` enumeration values, you can use a string, an XML value, an <xref:System.Xml.XmlReader> derived type instance, or a <xref:System.Data.SqlTypes.SqlXml> object.  
+ 
   
- For <xref:System.Data.SqlDbType>`Xml` enumeration values, you can use a string, an XML value, an <xref:System.Xml.XmlReader> derived type instance, or a <xref:System.Data.SqlTypes.SqlXml> object.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the `AddWithValue` method.  
-  
- [!code-csharp[DataWorks SqlParameterCollection.AddWithValue#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlParameterCollection.AddWithValue/CS/source.cs#1)]
- [!code-vb[DataWorks SqlParameterCollection.AddWithValue#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlParameterCollection.AddWithValue/VB/source.vb#1)]  
-  
+The following example demonstrates how to use the `AddWithValue` method.  
+ 
+[!code-csharp[DataWorks SqlParameterCollection.AddWithValue#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlParameterCollection.AddWithValue/CS/source.cs#1)]
+[!code-vb[DataWorks SqlParameterCollection.AddWithValue#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlParameterCollection.AddWithValue/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -974,12 +974,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <value>The <see cref="T:System.Data.SqlClient.SqlParameter" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates creating <xref:System.Data.SqlClient.SqlParameter> objects to supply an input parameter to a stored procedure that returns results in an output parameter. The code iterates through the items in the <xref:System.Data.SqlClient.SqlParameterCollection> and displays some parameter properties in the console window. This example assumes a valid connection string to the **AdventureWorks** sample database on an instance of [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)].  
-  
- [!code-csharp[Classic WebData SqlParameterCollection.Parent Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Parent Example/CS/source.cs#1)]  
-  
+The following example demonstrates creating <xref:System.Data.SqlClient.SqlParameter> objects to supply an input parameter to a stored procedure that returns results in an output parameter. The code iterates through the items in the <xref:System.Data.SqlClient.SqlParameterCollection> and displays some parameter properties in the console window. This example assumes a valid connection string to the **AdventureWorks** sample database on an instance of [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)].  
+ 
+[!code-csharp[Classic WebData SqlParameterCollection.Parent Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Parent Example/CS/source.cs#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The specified index does not exist.</exception>
@@ -1023,10 +1023,10 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <value>The <see cref="T:System.Data.SqlClient.SqlParameter" /> with the specified name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `parameterName` is used to look up the index value in the underlying <xref:System.Data.SqlClient.SqlParameterCollection>. If the `parameterName` is not valid, an <xref:System.IndexOutOfRangeException> will be thrown.  
-  
+The `parameterName` is used to look up the index value in the underlying <xref:System.Data.SqlClient.SqlParameterCollection>. If the `parameterName` is not valid, an <xref:System.IndexOutOfRangeException> will be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The specified <paramref name="parameterName" /> is not valid.</exception>
@@ -1061,13 +1061,13 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Removes the specified <see cref="T:System.Data.SqlClient.SqlParameter" /> from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example searches for a <xref:System.Data.SqlClient.SqlParameter> object in a <xref:System.Data.SqlClient.SqlParameterCollection> collection. If the parameter exists, the example removes it. This example assumes that a <xref:System.Data.SqlClient.SqlParameterCollection> collection has already been created by a <xref:System.Data.SqlClient.SqlCommand>.  
-  
- [!code-csharp[Classic WebData SqlParameterCollection.Remove Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Remove Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlParameterCollection.Remove Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Remove Example/VB/source.vb#1)]  
-  
+The following example searches for a <xref:System.Data.SqlClient.SqlParameter> object in a <xref:System.Data.SqlClient.SqlParameterCollection> collection. If the parameter exists, the example removes it. This example assumes that a <xref:System.Data.SqlClient.SqlParameterCollection> collection has already been created by a <xref:System.Data.SqlClient.SqlCommand>.  
+ 
+[!code-csharp[Classic WebData SqlParameterCollection.Remove Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Remove Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlParameterCollection.Remove Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameterCollection.Remove Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The parameter is not a <see cref="T:System.Data.SqlClient.SqlParameter" />.</exception>

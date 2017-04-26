@@ -30,27 +30,27 @@
     <summary>Specifies flags that describe the attributes of a field.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `FieldAttributes` uses the value from `FieldAccessMask` to mask off only the parts of the attribute value that pertain to the accessibility. For example, the following code determines if `Attributes` has the public bit set.  
+`FieldAttributes` uses the value from `FieldAccessMask` to mask off only the parts of the attribute value that pertain to the accessibility. For example, the following code determines if `Attributes` has the public bit set.  
+ 
+[!code-cpp[System.Reflection.FieldAttributes#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.reflection.fieldattributes/cpp/remarks.cpp#1)]
+[!code-csharp[System.Reflection.FieldAttributes#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.fieldattributes/cs/remarks.cs#1)]
+[!code-vb[System.Reflection.FieldAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.fieldattributes/vb/remarks.vb#1)]  
+ 
+To get the `FieldAttributes`, first get the class `Type`. From the `Type`, get the `FieldInfo`. From the `FieldInfo`, get the `Attributes`.  
+ 
+The enumerated value is a number representing the bitwise OR of the attributes implemented on the field.  
+ 
   
- [!code-cpp[System.Reflection.FieldAttributes#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.reflection.fieldattributes/cpp/remarks.cpp#1)]
- [!code-csharp[System.Reflection.FieldAttributes#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.fieldattributes/cs/remarks.cs#1)]
- [!code-vb[System.Reflection.FieldAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.fieldattributes/vb/remarks.vb#1)]  
-  
- To get the `FieldAttributes`, first get the class `Type`. From the `Type`, get the `FieldInfo`. From the `FieldInfo`, get the `Attributes`.  
-  
- The enumerated value is a number representing the bitwise OR of the attributes implemented on the field.  
-  
-   
-  
+ 
 ## Examples  
- In this example, three fields are built and the `FieldAttributes` values are displayed. A `FieldAttributes` value can contain more than one attribute, for example, both `Public` and `Literal`, as shown in the third field.  
-  
- [!code-cpp[Classic FieldAttributes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FieldAttributes Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FieldAttributes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FieldAttributes Example/CS/source.cs#1)]
- [!code-vb[Classic FieldAttributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FieldAttributes Example/VB/source.vb#1)]  
-  
+In this example, three fields are built and the `FieldAttributes` values are displayed. A `FieldAttributes` value can contain more than one attribute, for example, both `Public` and `Literal`, as shown in the third field.  
+ 
+[!code-cpp[Classic FieldAttributes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FieldAttributes Example/CPP/source.cpp#1)]
+[!code-csharp[Classic FieldAttributes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FieldAttributes Example/CS/source.cs#1)]
+[!code-vb[Classic FieldAttributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FieldAttributes Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

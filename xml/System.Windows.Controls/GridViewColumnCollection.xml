@@ -17,12 +17,12 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Controls.GridViewColumn" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.GridViewColumnCollection> object contains a set of <xref:System.Windows.Controls.GridViewColumn> objects that are typically used to define the columns of a <xref:System.Windows.Controls.GridView> object. A <xref:System.Windows.Controls.GridView> is a <xref:System.Windows.Controls.ListView.View%2A> that defines the layout of data in a <xref:System.Windows.Controls.ListView> control.  
-  
- To receive notification of changes in the collection, monitor the <xref:System.Collections.ObjectModel.ObservableCollection%601.CollectionChanged> event that is inherited from <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
-  
+A <xref:System.Windows.Controls.GridViewColumnCollection> object contains a set of <xref:System.Windows.Controls.GridViewColumn> objects that are typically used to define the columns of a <xref:System.Windows.Controls.GridView> object. A <xref:System.Windows.Controls.GridView> is a <xref:System.Windows.Controls.ListView.View%2A> that defines the layout of data in a <xref:System.Windows.Controls.ListView> control.  
+ 
+To receive notification of changes in the collection, monitor the <xref:System.Collections.ObjectModel.ObservableCollection%601.CollectionChanged> event that is inherited from <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -82,10 +82,10 @@
         <summary>Adds a <see cref="T:System.Windows.Controls.GridViewColumn" /> to the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a new item in the <xref:System.Windows.Controls.GridViewColumnCollection> without replacing another item. To replace an item in the collection with a new item, use the <xref:System.Windows.Controls.GridViewColumnCollection.SetItem%2A> method.  
-  
+This method creates a new item in the <xref:System.Windows.Controls.GridViewColumnCollection> without replacing another item. To replace an item in the collection with a new item, use the <xref:System.Windows.Controls.GridViewColumnCollection.SetItem%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,10 +177,10 @@
         <summary>Replaces the <see cref="T:System.Windows.Controls.GridViewColumn" /> that is at the specified index with another <see cref="T:System.Windows.Controls.GridViewColumn" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method replaces a column in the <xref:System.Windows.Controls.GridViewColumnCollection> with a new column. To insert a new column without replacing another column, use the <xref:System.Windows.Controls.GridViewColumnCollection.InsertItem%2A> method.  
-  
+This method replaces a column in the <xref:System.Windows.Controls.GridViewColumnCollection> with a new column. To insert a new column without replacing another column, use the <xref:System.Windows.Controls.GridViewColumnCollection.InsertItem%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

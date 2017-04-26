@@ -24,19 +24,19 @@
     <summary>Provides data for the <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosed" /> and <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosing" /> events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.IDesignerHost.TransactionClosed> event occurs when a designer finalizes a transaction.  
+The <xref:System.ComponentModel.Design.IDesignerHost.TransactionClosed> event occurs when a designer finalizes a transaction.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates creating a <xref:System.ComponentModel.Design.DesignerTransactionCloseEventArgs>.  
-  
- [!code-cpp[DesignerTransactionCloseEventArgsExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerTransactionCloseEventArgsExample/CPP/designertransactioncloseeventargsexample.cpp#1)]
- [!code-csharp[DesignerTransactionCloseEventArgsExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerTransactionCloseEventArgsExample/CS/designertransactioncloseeventargsexample.cs#1)]
- [!code-vb[DesignerTransactionCloseEventArgsExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerTransactionCloseEventArgsExample/VB/designertransactioncloseeventargsexample.vb#1)]  
-  
+The following code example demonstrates creating a <xref:System.ComponentModel.Design.DesignerTransactionCloseEventArgs>.  
+ 
+[!code-cpp[DesignerTransactionCloseEventArgsExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerTransactionCloseEventArgsExample/CPP/designertransactioncloseeventargsexample.cpp#1)]
+[!code-csharp[DesignerTransactionCloseEventArgsExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerTransactionCloseEventArgsExample/CS/designertransactioncloseeventargsexample.cs#1)]
+[!code-vb[DesignerTransactionCloseEventArgsExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerTransactionCloseEventArgsExample/VB/designertransactioncloseeventargsexample.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -96,10 +96,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerTransactionCloseEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `commit` is `true`, the <xref:System.ComponentModel.Design.DesignerTransactionCloseEventArgs.LastTransaction%2A> property defaults to `true`.  
-  
+If `commit` is `true`, the <xref:System.ComponentModel.Design.DesignerTransactionCloseEventArgs.LastTransaction%2A> property defaults to `true`.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>

@@ -14,34 +14,34 @@
     <summary>Provides data for various events that report changes to the mouse wheel delta value of a mouse device.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Input.MouseWheelEventArgs> is used with the following events:  
-  
+<xref:System.Windows.Input.MouseWheelEventArgs> is used with the following events:  
+ 
 -   <xref:System.Windows.UIElement.MouseWheel?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.ContentElement.MouseWheel?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Input.Mouse.MouseWheel?displayProperty=fullName> (attached event)  
-  
+ 
 -   <xref:System.Windows.UIElement.PreviewMouseWheel?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.ContentElement.PreviewMouseWheel?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Input.Mouse.PreviewMouseWheel?displayProperty=fullName> (attached event)  
+ 
+The <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> property is positive if the mouse wheel is moved upward or forward (away from the user) or negative if the mouse wheel is moved downward or backward (toward the user).  
+ 
+This event is raised even for small mouse wheel movements. For some scenarios, it is appropriate to implement handlers that throttle small mouse wheel deltas by checking whether the delta exceeds a certain threshold. Otherwise, you might invoke your handler for cases where the mouse wheel delta was so small that any UI that is tied to the mouse wheel movement would not update. Exactly how you implement the threshold behavior in a handler and what that threshold should be is entirely implementation-specific.  
+ 
   
- The <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> property is positive if the mouse wheel is moved upward or forward (away from the user) or negative if the mouse wheel is moved downward or backward (toward the user).  
-  
- This event is raised even for small mouse wheel movements. For some scenarios, it is appropriate to implement handlers that throttle small mouse wheel deltas by checking whether the delta exceeds a certain threshold. Otherwise, you might invoke your handler for cases where the mouse wheel delta was so small that any UI that is tied to the mouse wheel movement would not update. Exactly how you implement the threshold behavior in a handler and what that threshold should be is entirely implementation-specific.  
-  
-   
-  
+ 
 ## Examples  
- The following example moves a <xref:System.Windows.Controls.TextBox> up if the mouse wheel <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> is positive and moves the <xref:System.Windows.Controls.TextBox> down if the mouse wheel <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> is negative. The <xref:System.Windows.Controls.TextBox> is attached to a <xref:System.Windows.Controls.Canvas>.  
-  
- [!code-csharp[mousesnippetsample#MouseWheelDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mousewheeldelta)]
- [!code-vb[mousesnippetsample#MouseWheelDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mousewheeldelta)]  
-  
+The following example moves a <xref:System.Windows.Controls.TextBox> up if the mouse wheel <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> is positive and moves the <xref:System.Windows.Controls.TextBox> down if the mouse wheel <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> is negative. The <xref:System.Windows.Controls.TextBox> is attached to a <xref:System.Windows.Controls.Canvas>.  
+ 
+[!code-csharp[mousesnippetsample#MouseWheelDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mousewheeldelta)]
+[!code-vb[mousesnippetsample#MouseWheelDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mousewheeldelta)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -85,18 +85,18 @@
         <value>The amount the wheel has changed. This value is positive if the mouse wheel is rotated in an upward direction (away from the user) or negative if the mouse wheel is rotated in a downward direction (toward the user).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The effective upper and lower ranges of this value potentially come from device implementations or other callers that raised the event, and are therefore not defined.  
+The effective upper and lower ranges of this value potentially come from device implementations or other callers that raised the event, and are therefore not defined.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example moves a <xref:System.Windows.Controls.TextBox> up if the mouse wheel <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> is positive and moves the <xref:System.Windows.Controls.TextBox> down if the mouse wheel <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> is negative. The <xref:System.Windows.Controls.TextBox> is attached to a <xref:System.Windows.Controls.Canvas>.  
-  
- [!code-csharp[mousesnippetsample#MouseWheelDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mousewheeldelta)]
- [!code-vb[mousesnippetsample#MouseWheelDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mousewheeldelta)]  
-  
+The following example moves a <xref:System.Windows.Controls.TextBox> up if the mouse wheel <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> is positive and moves the <xref:System.Windows.Controls.TextBox> down if the mouse wheel <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> is negative. The <xref:System.Windows.Controls.TextBox> is attached to a <xref:System.Windows.Controls.Canvas>.  
+ 
+[!code-csharp[mousesnippetsample#MouseWheelDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mousewheeldelta)]
+[!code-vb[mousesnippetsample#MouseWheelDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mousewheeldelta)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
         <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation casts the generic handler as a <xref:System.Windows.Input.MouseWheelEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
-  
+This implementation casts the generic handler as a <xref:System.Windows.Input.MouseWheelEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

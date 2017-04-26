@@ -19,14 +19,14 @@
     <summary>Provides common methods and properties for composite activity designers that contain structured layouts.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- The <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner> is the base class for all designers that contain child designers and the child designers are connected to each other using lines rendered on the design surface, called connectors. The class is provided so that activity designer developers can provide a number of activity designer layout types, rather than being tied to the layout provided in the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
-  
+ 
+The <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner> is the base class for all designers that contain child designers and the child designers are connected to each other using lines rendered on the design surface, called connectors. The class is provided so that activity designer developers can provide a number of activity designer layout types, rather than being tied to the layout provided in the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,10 +68,10 @@
         <value>A <see cref="T:System.Workflow.ComponentModel.Design.DesignerView" /> that contains information about the current view displayed by the <see cref="T:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.ActiveView%2A> contains the view ID and any text, images, activity designers, and user data associated with the view.  
-  
+<xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.ActiveView%2A> contains the view ID and any text, images, activity designers, and user data associated with the view.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,13 +100,13 @@
           <see langword="true" /> if the specified activities can be inserted at the specified location on the workflow design surface; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to lock a <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner> by not allowing the insertion of child activities.  
-  
- [!code-csharp[WF_Samples#25](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#25)]
- [!code-vb[WF_Samples#25](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#25)]  
-  
+The following example shows how to lock a <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner> by not allowing the insertion of child activities.  
+ 
+[!code-csharp[WF_Samples#25](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#25)]
+[!code-vb[WF_Samples#25](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#25)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,13 +133,13 @@
           <see langword="true" /> if the specified activities can be removed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to override the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.CanRemoveActivities%2A> method to allow the moving of child activities within the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner>.  
-  
- [!code-csharp[WF_Samples#27](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#27)]
- [!code-vb[WF_Samples#27](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#27)]  
-  
+The following example shows how to override the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.CanRemoveActivities%2A> method to allow the moving of child activities within the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner>.  
+ 
+[!code-csharp[WF_Samples#27](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#27)]
+[!code-vb[WF_Samples#27](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#27)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,13 +161,13 @@
         <value>An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> read-only collection that contains the child designers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the addition of a new branch using a designer based off of the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  If <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanInsertActivities%2A> returns true, a new branch is created using the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A> method. A <xref:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo> object is created as a parameter to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A> method. When this is finished, the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.EnsureVisibleContainedDesigner%2A> method is used to ensure that the newly added branch is displayed in the workflow designer by accessing a single object in the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.ContainedDesigners%2A> collection.  
-  
- [!code-csharp[WF_Samples#28](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#28)]
- [!code-vb[WF_Samples#28](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#28)]  
-  
+The following example demonstrates the addition of a new branch using a designer based off of the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  If <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanInsertActivities%2A> returns true, a new branch is created using the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A> method. A <xref:System.Workflow.ComponentModel.Design.ConnectorHitTestInfo> object is created as a parameter to the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A> method. When this is finished, the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.EnsureVisibleContainedDesigner%2A> method is used to ensure that the newly added branch is displayed in the workflow designer by accessing a single object in the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.ContainedDesigners%2A> collection.  
+ 
+[!code-csharp[WF_Samples#28](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#28)]
+[!code-vb[WF_Samples#28](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#28)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -218,10 +218,10 @@
         <summary>Draws all of the connectors to display on the <see cref="T:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Connectors are links between separate designers on a workflow design surface. These links appear as lines on the design surface and each line end connects to a visible point on the designers it connects. These points are called connection points.  
-  
+Connectors are links between separate designers on a workflow design surface. These links appear as lines on the design surface and each line end connects to a visible point on the designers it connects. These points are called connection points.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -264,10 +264,10 @@
         <value>An <see cref="T:System.Object" /> that is the first selectable object in the designer navigation order.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.FirstSelectableObject%2A> returns the <xref:System.Workflow.ComponentModel.Activity> associated with the <xref:System.Workflow.ComponentModel.Design.DesignerView.AssociatedDesigner%2A> property that is exposed through <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.ActiveView%2A>.  
-  
+<xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.FirstSelectableObject%2A> returns the <xref:System.Workflow.ComponentModel.Activity> associated with the <xref:System.Workflow.ComponentModel.Design.DesignerView.AssociatedDesigner%2A> property that is exposed through <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.ActiveView%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -315,10 +315,10 @@
         <returns>A <see cref="T:System.Drawing.Point" /> generic read-only collection that contains the inner connection points for the designer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Connectors are links between separate designers on a workflow design surface. These links appear as lines on the design surface and each line end connects to a visible point on each designer it connects. These points are called connection points. Designer classes that inherit from the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner> class can contain other designers, and <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.GetInnerConnections%2A> returns a read-only collection of all the connection points for the designers associated with `edges` that are contained by the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner>.  
-  
+Connectors are links between separate designers on a workflow design surface. These links appear as lines on the design surface and each line end connects to a visible point on each designer it connects. These points are called connection points. Designer classes that inherit from the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner> class can contain other designers, and <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.GetInnerConnections%2A> returns a read-only collection of all the connection points for the designers associated with `edges` that are contained by the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -367,10 +367,10 @@
         <summary>Initializes the designer by using the specified activity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.Initialize%2A> ensures that the active view loaded into the workflow design surface is a valid view.  
-  
+<xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.Initialize%2A> ensures that the active view loaded into the workflow design surface is a valid view.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -415,10 +415,10 @@
         <value>The <see cref="T:System.Object" /> that is the last selectable object in the designer navigation order.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner> is the active activity designer, <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.LastSelectableObject%2A> returns `null` (`Nothing` in Visual Basic). If a child activity designer is the active designer, it returns the last selectable object associated with the active child designer.  
-  
+If the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner> is the active activity designer, <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.LastSelectableObject%2A> returns `null` (`Nothing` in Visual Basic). If a child activity designer is the active designer, it returns the last selectable object associated with the active child designer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -762,10 +762,10 @@
         <value>A <see cref="T:System.Workflow.ComponentModel.Design.DesignerAction" /> read-only collection that contains all the actions associated with the smart tags on the designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection is returned only if the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner> hosts multiple views. Use the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.Views%2A> property to determine how many views the current designer hosts.  
-  
+The collection is returned only if the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner> hosts multiple views. Use the <xref:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner.Views%2A> property to determine how many views the current designer hosts.  
+ 
  ]]></format>
         </remarks>
       </Docs>

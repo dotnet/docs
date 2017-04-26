@@ -138,10 +138,10 @@
         <value>The variable modifier value for this <see cref="T:System.Activities.Variable" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
+This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,10 +168,10 @@
         <value>The name of the <see cref="T:System.Activities.Variable" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
+This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>

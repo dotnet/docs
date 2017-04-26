@@ -25,87 +25,87 @@
     <summary>Acts as a template and merging container for pages that are composed only of <see cref="T:System.Web.UI.WebControls.Content" /> controls and their respective child controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A master page functions as a template container and merging page for content pages in your ASP.NET Web application. Master pages provide a convenient way to share structure and content across a set of content pages. You use content placeholders to define the sections of the master page to replace with content from the content pages.  
-  
- When you use a master page and its related content pages, you add the required XHTML document tags (such as `html`, `head`, and `body`) only to the master page and no longer create your other .aspx files (ASP.NET pages) as stand-alone Web pages. The content pages define the content to insert into the placeholders in the master page.  
-  
- When an HTTP request is made for a page at run time, the master page and content pages are combined into a single class with the same name as the content pages. The resulting compiled, merged class derives from the <xref:System.Web.UI.Page> class.  
-  
- A master page can contain direct markup and server controls, as well as container controls. Every element that is placed in the master page outside of a <xref:System.Web.UI.WebControls.ContentPlaceHolder> control is rendered on all pages that result from merging the master page and content pages.  
-  
- Each content page that is related to the master page must reference the master page in a `MasterPageFile` attribute of its  directive. Content pages can contain only a `@ Page` directive and one or more <xref:System.Web.UI.WebControls.Content> controls. All of your page text, markup, and server controls must be placed within <xref:System.Web.UI.WebControls.Content> controls. You identify the <xref:System.Web.UI.WebControls.ContentPlaceHolder> control of a master page that a <xref:System.Web.UI.WebControls.Content> control is associated with by setting the <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property of the <xref:System.Web.UI.WebControls.Content> control.  
-  
- At run time, the dynamic content from each <xref:System.Web.UI.WebControls.Content> control in the requested page is merged with the master page in the exact location of the related <xref:System.Web.UI.WebControls.ContentPlaceHolder> control. Any other markup and controls in the master page are unaffected. Event handlers can be defined in both the master class and on the content page. For more information, see [Events in ASP.NET Master and Content Pages](http://msdn.microsoft.com/library/b3ab2d01-9e37-4788-82d0-c6065e3ff5bd).  
-  
- The <xref:System.Web.UI.MasterPage> class is associated with files that have a .master extension. These files are compiled at run time as <xref:System.Web.UI.MasterPage> objects and are cached in server memory.  
-  
- The master page is made available to the content page through the <xref:System.Web.UI.Page.Master%2A> property of the base <xref:System.Web.UI.Page> class. The <xref:System.Web.UI.Page.Master%2A> property returns the instance of the master page; however, it is typed as the base <xref:System.Web.UI.MasterPage> class. To access controls, properties, and functions of the master page, the <xref:System.Web.UI.Page.Master%2A> property can be cast to a <xref:System.Web.UI.MasterPage> object. The class name of the master page is defined using the `ClassName` attribute of the  directive.  
-  
+A master page functions as a template container and merging page for content pages in your ASP.NET Web application. Master pages provide a convenient way to share structure and content across a set of content pages. You use content placeholders to define the sections of the master page to replace with content from the content pages.  
+ 
+When you use a master page and its related content pages, you add the required XHTML document tags (such as `html`, `head`, and `body`) only to the master page and no longer create your other .aspx files (ASP.NET pages) as stand-alone Web pages. The content pages define the content to insert into the placeholders in the master page.  
+ 
+When an HTTP request is made for a page at run time, the master page and content pages are combined into a single class with the same name as the content pages. The resulting compiled, merged class derives from the <xref:System.Web.UI.Page> class.  
+ 
+A master page can contain direct markup and server controls, as well as container controls. Every element that is placed in the master page outside of a <xref:System.Web.UI.WebControls.ContentPlaceHolder> control is rendered on all pages that result from merging the master page and content pages.  
+ 
+Each content page that is related to the master page must reference the master page in a `MasterPageFile` attribute of its  directive. Content pages can contain only a `@ Page` directive and one or more <xref:System.Web.UI.WebControls.Content> controls. All of your page text, markup, and server controls must be placed within <xref:System.Web.UI.WebControls.Content> controls. You identify the <xref:System.Web.UI.WebControls.ContentPlaceHolder> control of a master page that a <xref:System.Web.UI.WebControls.Content> control is associated with by setting the <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property of the <xref:System.Web.UI.WebControls.Content> control.  
+ 
+At run time, the dynamic content from each <xref:System.Web.UI.WebControls.Content> control in the requested page is merged with the master page in the exact location of the related <xref:System.Web.UI.WebControls.ContentPlaceHolder> control. Any other markup and controls in the master page are unaffected. Event handlers can be defined in both the master class and on the content page. For more information, see [Events in ASP.NET Master and Content Pages](http://msdn.microsoft.com/library/b3ab2d01-9e37-4788-82d0-c6065e3ff5bd).  
+ 
+The <xref:System.Web.UI.MasterPage> class is associated with files that have a .master extension. These files are compiled at run time as <xref:System.Web.UI.MasterPage> objects and are cached in server memory.  
+ 
+The master page is made available to the content page through the <xref:System.Web.UI.Page.Master%2A> property of the base <xref:System.Web.UI.Page> class. The <xref:System.Web.UI.Page.Master%2A> property returns the instance of the master page; however, it is typed as the base <xref:System.Web.UI.MasterPage> class. To access controls, properties, and functions of the master page, the <xref:System.Web.UI.Page.Master%2A> property can be cast to a <xref:System.Web.UI.MasterPage> object. The class name of the master page is defined using the `ClassName` attribute of the  directive.  
+ 
 > [!NOTE]
 >  Files with .master extensions are not served to a browser.  
-  
- The directives that are valid on a master page are the same as those that are available on a <xref:System.Web.UI.UserControl> object. They can include the following attributes:  
-  
+ 
+The directives that are valid on a master page are the same as those that are available on a <xref:System.Web.UI.UserControl> object. They can include the following attributes:  
+ 
 -   `AutoEventWireup`  
-  
+ 
 -   `ClassName`  
-  
+ 
 -   `CodeFile`  
-  
+ 
 -   `CompilerMode`  
-  
+ 
 -   `CompilerOptions`  
-  
+ 
 -   `Debug`  
-  
+ 
 -   `Description`  
-  
+ 
 -   `EnableTheming`  
-  
+ 
 -   `EnableViewState`  
-  
+ 
 -   `Explicit`  
-  
+ 
 -   `Inherits`  
-  
+ 
 -   `Language`  
-  
+ 
 -   `LinePragmas`  
-  
+ 
 -   `MasterPageFile`  
-  
+ 
 -   `Src`  
-  
+ 
 -   `Strict`  
-  
+ 
 -   `WarningLevel`  
-  
- Master page directives do not override the directives on individual content pages.  
-  
- Master pages are most often created declaratively. If you want to create a master page programmatically, derive directly from the <xref:System.Web.UI.MasterPage> class. In addition to extending the <xref:System.Web.UI.MasterPage> class, you must create the .master file to visually display the user interface (UI) that is associated with the classes that you have invoked in your source file.  
-  
+ 
+Master page directives do not override the directives on individual content pages.  
+ 
+Master pages are most often created declaratively. If you want to create a master page programmatically, derive directly from the <xref:System.Web.UI.MasterPage> class. In addition to extending the <xref:System.Web.UI.MasterPage> class, you must create the .master file to visually display the user interface (UI) that is associated with the classes that you have invoked in your source file.  
+ 
 > [!NOTE]
 >  When you create a master page by creating your own class first, you must include all namespaces that are required for the classes that are used by the page.  
+ 
+For more information about master pages, see [ASP.NET Master Pages](http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b).  
+ 
   
- For more information about master pages, see [ASP.NET Master Pages](http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b).  
-  
-   
-  
+ 
 ## Examples  
- This section contains four code examples:  
-  
+This section contains four code examples:  
+ 
 -   The first code example demonstrates how to create a master page declaratively.  
-  
+ 
 -   The second code example represents the content page that is associated with the master page that was created in the first code example.  
-  
+ 
 -   The third code example demonstrates how to add a property to a master page.  
-  
+ 
 -   The fourth code example demonstrates how to use a content page to access a public property on the master page.  
-  
- The following example demonstrates how to create a master page declaratively and to add some content to it using a content page. The first Web page is the .master page named `MasterPageSample_1.master`.  
-  
+ 
+The following example demonstrates how to create a master page declaratively and to add some content to it using a content page. The first Web page is the .master page named `MasterPageSample_1.master`.  
+ 
 ```csharp  
 <%@ Master Language="C#" %>  
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  
@@ -122,7 +122,7 @@
 </body>  
 </html>  
 ```  
-  
+ 
 ```vb  
 <%@ Master Language="VB" %>  
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  
@@ -139,9 +139,9 @@
 </body>  
 </html>  
 ```  
-  
- The following example represents the content page that is associated with `MasterPageSample_1.master`. It contains a <xref:System.Web.UI.WebControls.Content> control and identifies the <xref:System.Web.UI.WebControls.ContentPlaceHolder> control that the content is associated with by using the <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property.  
-  
+ 
+The following example represents the content page that is associated with `MasterPageSample_1.master`. It contains a <xref:System.Web.UI.WebControls.Content> control and identifies the <xref:System.Web.UI.WebControls.ContentPlaceHolder> control that the content is associated with by using the <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property.  
+ 
 ```csharp  
 <%@ Page Language="C#" MasterPageFile="~/MasterPageSample_1cs.master" Title="Content Page"%>  
   
@@ -149,7 +149,7 @@
     runat="server"  
     contentplaceholderid="ContentPlaceHolder1" >Hello, Master Pages!</asp:content>  
 ```  
-  
+ 
 ```vb  
 <%@ Page Language="VB" MasterPageFile="~/MasterPageSample_1vb.master" Title="Content Page"%>  
   
@@ -157,9 +157,9 @@
     runat="server"  
     contentplaceholderid="ContentPlaceHolder1" >Hello, Master Pages!</asp:content>  
 ```  
-  
- The following example demonstrates how to add a property to a master page. The `ClassName` attribute is used to name the master page.  
-  
+ 
+The following example demonstrates how to add a property to a master page. The `ClassName` attribute is used to name the master page.  
+ 
 ```csharp  
 <%@ Master Language="C#" ClassName="MasterExample" %>  
   
@@ -184,7 +184,7 @@
 </body>  
 </html>  
 ```  
-  
+ 
 ```vb  
 <%@ Master Language="VB" ClassName="MasterExample" %>  
   
@@ -211,9 +211,9 @@
 </body>  
 </html>  
 ```  
-  
- The following example shows how to use a content page to access the public property `SiteName` on the master page in the preceding code example.  
-  
+ 
+The following example shows how to use a content page to access the public property `SiteName` on the master page in the preceding code example.  
+ 
 ```csharp  
 <%@ Page Language="C#" MasterPageFile="~/MasterPage.master" Title="MasterPage Example" %>  
   
@@ -230,7 +230,7 @@
     <asp:Label runat="server" Text="Label" ID="mylabel"></asp:Label>  
 </asp:Content>  
 ```  
-  
+ 
 ```vb  
 <%@ Page Language="VB" MasterPageFile="~/MasterPage.master" Title="MasterPage Example" %>  
   
@@ -247,7 +247,7 @@
     <asp:Label runat="server" Text="Label" ID="mylabel"></asp:Label>  
 </asp:Content>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -294,10 +294,10 @@
         <summary>Adds a <see cref="T:System.Web.UI.WebControls.Content" /> control to the <see cref="P:System.Web.UI.MasterPage.ContentTemplates" /> dictionary.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived master page classes can add <xref:System.Web.UI.WebControls.Content> controls to the <xref:System.Web.UI.MasterPage.ContentTemplates%2A> dictionary using the <xref:System.Web.UI.MasterPage.AddContentTemplate%2A> method. Derived types do not typically override the <xref:System.Web.UI.MasterPage.AddContentTemplate%2A> method.  
-  
+Derived master page classes can add <xref:System.Web.UI.WebControls.Content> controls to the <xref:System.Web.UI.MasterPage.ContentTemplates%2A> dictionary using the <xref:System.Web.UI.MasterPage.AddContentTemplate%2A> method. Derived types do not typically override the <xref:System.Web.UI.MasterPage.AddContentTemplate%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">A <see cref="T:System.Web.UI.WebControls.Content" /> control with the same name already exists in the <see cref="P:System.Web.UI.MasterPage.ContentTemplates" /> dictionary.</exception>
@@ -328,10 +328,10 @@
         <value>An <see cref="T:System.Collections.IList" /> of <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder" /> controls that the master page uses as placeholders for <see cref="T:System.Web.UI.WebControls.Content" /> controls found in content pages.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived master page classes access the <xref:System.Web.UI.MasterPage.ContentPlaceHolders%2A> property to list the current <xref:System.Web.UI.WebControls.ContentPlaceHolder> controls that are contained by the master. Derived types do not typically override the <xref:System.Web.UI.MasterPage.ContentPlaceHolders%2A> property.  
-  
+Derived master page classes access the <xref:System.Web.UI.MasterPage.ContentPlaceHolders%2A> property to list the current <xref:System.Web.UI.WebControls.ContentPlaceHolder> controls that are contained by the master. Derived types do not typically override the <xref:System.Web.UI.MasterPage.ContentPlaceHolders%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -361,10 +361,10 @@
         <value>An <see cref="T:System.Collections.IList" /> of content controls associated with the master page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived master page classes access the <xref:System.Web.UI.MasterPage.ContentTemplates%2A> property to retrieve the current <xref:System.Web.UI.WebControls.Content> controls, as defined by associated content pages. Derived types do not typically override the <xref:System.Web.UI.MasterPage.ContentTemplates%2A> property.  
-  
+Derived master page classes access the <xref:System.Web.UI.MasterPage.ContentTemplates%2A> property to retrieve the current <xref:System.Web.UI.WebControls.Content> controls, as defined by associated content pages. Derived types do not typically override the <xref:System.Web.UI.MasterPage.ContentTemplates%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -417,17 +417,17 @@
         <value>The master page that is the parent of the current master page; otherwise, <see langword="null" />, if the current master page has no parent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MasterPage.Master%2A> property is read-only, because master page hierarchies cannot be built at run time.  
+The <xref:System.Web.UI.MasterPage.Master%2A> property is read-only, because master page hierarchies cannot be built at run time.  
+ 
   
-   
-  
+ 
 ## Examples  
- This section contains three code examples. The first code example demonstrates how to create a nested master page`.` The second code example demonstrates how to reference the master page that was created in the first code example. The third code example demonstrates how to use a content page to reference the master page that was created in the second code example.  
-  
- The following code example demonstrates how to create a nested master page and represents the parent master page named `ParentMasterPage_1`.  
-  
+This section contains three code examples. The first code example demonstrates how to create a nested master page`.` The second code example demonstrates how to reference the master page that was created in the first code example. The third code example demonstrates how to use a content page to reference the master page that was created in the second code example.  
+ 
+The following code example demonstrates how to create a nested master page and represents the parent master page named `ParentMasterPage_1`.  
+ 
 ```csharp  
 <%@ Master Language="C#" %>  
   
@@ -448,7 +448,7 @@
 </body>  
 </html>  
 ```  
-  
+ 
 ```vb  
 <%@ Master Language="VB" %>  
   
@@ -469,9 +469,9 @@
 </body>  
 </html>  
 ```  
-  
- The following code example demonstrates how to use a nested master page named `ChildMasterPage_1` that references the master page that was created in the preceding code example.  
-  
+ 
+The following code example demonstrates how to use a nested master page named `ChildMasterPage_1` that references the master page that was created in the preceding code example.  
+ 
 ```csharp  
 <%@ Master Language="C#" MasterPageFile="~/ParentMasterPage_1cs.master" %>  
   
@@ -483,7 +483,7 @@
     </div>  
 </asp:Content>  
 ```  
-  
+ 
 ```vb  
 <%@ Master Language="VB" MasterPageFile="~/ParentMasterPage_1vb.master" %>  
   
@@ -495,9 +495,9 @@
     </div>  
 </asp:Content>  
 ```  
-  
- The following code example demonstrates how to use a content page named `ContentPage` that references the `ChildMasterPage_1` that was created in the preceding code example.  
-  
+ 
+The following code example demonstrates how to use a content page named `ContentPage` that references the `ChildMasterPage_1` that was created in the preceding code example.  
+ 
 ```csharp  
 <%@ Page Language="C#" MasterPageFile="~/ChildMasterPage_1cs.master" Title="Untitled Page"%>  
   
@@ -505,7 +505,7 @@
 This is the content of a Content control.  
 </asp:content>  
 ```  
-  
+ 
 ```vb  
 <%@ Page Language="VB" MasterPageFile="~/ChildMasterPage_1vb.master" Title="Untitled Page"%>  
   
@@ -513,7 +513,7 @@ This is the content of a Content control.
 This is the content of a Content control.  
 </asp:content>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -540,12 +540,12 @@ This is the content of a Content control.
         <value>The name of the master page that is the parent of the current master page; otherwise, <see langword="null" />, if the current master page has no parent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This section contains three code examples. The first code example demonstrates how to create a nested master page`.` The second code example demonstrates how to reference the master page that was created in the first code example. The third code example demonstrates how to use a content page to reference the master page that was created in the second code example.  
-  
- The following code example demonstrates how to create a nested master page and represents the parent master page named `ParentMasterPage_1`.  
-  
+This section contains three code examples. The first code example demonstrates how to create a nested master page`.` The second code example demonstrates how to reference the master page that was created in the first code example. The third code example demonstrates how to use a content page to reference the master page that was created in the second code example.  
+ 
+The following code example demonstrates how to create a nested master page and represents the parent master page named `ParentMasterPage_1`.  
+ 
 ```csharp  
 <%@ Master Language="C#" %>  
   
@@ -566,7 +566,7 @@ This is the content of a Content control.
 </body>  
 </html>  
 ```  
-  
+ 
 ```vb  
 <%@ Master Language="VB" %>  
   
@@ -587,9 +587,9 @@ This is the content of a Content control.
 </body>  
 </html>  
 ```  
-  
- The following code example demonstrates how to use a nested master page named `ChildMasterPage_1` that references the master page that was created in the preceding code example.  
-  
+ 
+The following code example demonstrates how to use a nested master page named `ChildMasterPage_1` that references the master page that was created in the preceding code example.  
+ 
 ```csharp  
 <%@ Master Language="C#" MasterPageFile="~/ParentMasterPage_1cs.master" %>  
   
@@ -601,7 +601,7 @@ This is the content of a Content control.
     </div>  
 </asp:Content>  
 ```  
-  
+ 
 ```vb  
 <%@ Master Language="VB" MasterPageFile="~/ParentMasterPage_1vb.master" %>  
   
@@ -613,9 +613,9 @@ This is the content of a Content control.
     </div>  
 </asp:Content>  
 ```  
-  
- The following code example demonstrates how to use a content page named `ContentPage` that references the `ChildMasterPage_1` that was created in the preceding code example.  
-  
+ 
+The following code example demonstrates how to use a content page named `ContentPage` that references the `ChildMasterPage_1` that was created in the preceding code example.  
+ 
 ```csharp  
 <%@ Page Language="C#" MasterPageFile="~/ChildMasterPage_1cs.master" Title="Untitled Page"%>  
   
@@ -623,7 +623,7 @@ This is the content of a Content control.
 This is the content of a Content control.  
 </asp:content>  
 ```  
-  
+ 
 ```vb  
 <%@ Page Language="VB" MasterPageFile="~/ChildMasterPage_1vb.master" Title="Untitled Page"%>  
   
@@ -631,7 +631,7 @@ This is the content of a Content control.
 This is the content of a Content control.  
 </asp:content>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.MasterPage.MasterPageFile" /> property can only be set in or before the <see cref="E:System.Web.UI.Page.PreInit" /> event.</exception>

@@ -24,22 +24,22 @@
     <summary>Represents an open connection to a data source, and is implemented by .NET Framework data providers that access relational databases.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.IDbConnection> interface enables an inheriting class to implement a Connection class, which represents a unique session with a data source (for example, a network connection to a server). For more information about Connection classes, see [Connecting to a Data Source](~/docs/framework/data/adonet/connecting-to-a-data-source.md).  
+The <xref:System.Data.IDbConnection> interface enables an inheriting class to implement a Connection class, which represents a unique session with a data source (for example, a network connection to a server). For more information about Connection classes, see [Connecting to a Data Source](~/docs/framework/data/adonet/connecting-to-a-data-source.md).  
+ 
+An application does not create an instance of the <xref:System.Data.IDbConnection> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDbConnection>.  
+ 
+Classes that inherit <xref:System.Data.IDbConnection> must implement all inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.IDbConnection> interface defines the <xref:System.Data.IDbConnection.ConnectionTimeout%2A> property. In turn, the <xref:System.Data.SqlClient.SqlConnection> class inherits this property, and also defines the <xref:System.Data.SqlClient.SqlConnection.PacketSize%2A> property.  
+ 
   
- An application does not create an instance of the <xref:System.Data.IDbConnection> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDbConnection>.  
-  
- Classes that inherit <xref:System.Data.IDbConnection> must implement all inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.IDbConnection> interface defines the <xref:System.Data.IDbConnection.ConnectionTimeout%2A> property. In turn, the <xref:System.Data.SqlClient.SqlConnection> class inherits this property, and also defines the <xref:System.Data.SqlClient.SqlConnection.PacketSize%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates instances of the derived classes, <xref:System.Data.SqlClient.SqlCommand> and <xref:System.Data.SqlClient.SqlConnection>. The <xref:System.Data.SqlClient.SqlConnection> is opened and set as the <xref:System.Data.SqlClient.SqlCommand.Connection%2A> for the <xref:System.Data.SqlClient.SqlCommand>. The example then calls <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A>, and closes the connection. To accomplish this, the <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A> is passed a connection string and a query string that is a Transact-SQL INSERT statement.  
-  
- [!code-csharp[Classic WebData SqlConnection Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlConnection Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlConnection Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlConnection Example/VB/source.vb#1)]  
-  
+The following example creates instances of the derived classes, <xref:System.Data.SqlClient.SqlCommand> and <xref:System.Data.SqlClient.SqlConnection>. The <xref:System.Data.SqlClient.SqlConnection> is opened and set as the <xref:System.Data.SqlClient.SqlCommand.Connection%2A> for the <xref:System.Data.SqlClient.SqlCommand>. The example then calls <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A>, and closes the connection. To accomplish this, the <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A> is passed a connection string and a query string that is a Transact-SQL INSERT statement.  
+ 
+[!code-csharp[Classic WebData SqlConnection Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlConnection Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlConnection Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlConnection Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -103,10 +103,10 @@
         <returns>An object representing the new transaction.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once the transaction has completed, you must explicitly commit or roll back the transaction by using the <xref:System.Data.IDbTransaction.Commit%2A> or <xref:System.Data.IDbTransaction.Rollback%2A> methods.  
-  
+Once the transaction has completed, you must explicitly commit or roll back the transaction by using the <xref:System.Data.IDbTransaction.Commit%2A> or <xref:System.Data.IDbTransaction.Rollback%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,10 +141,10 @@
         <returns>An object representing the new transaction.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once the transaction has completed, you must explicitly commit or roll back the transaction using the <xref:System.Data.IDbTransaction.Commit%2A> or <xref:System.Data.IDbTransaction.Rollback%2A> methods.  
-  
+Once the transaction has completed, you must explicitly commit or roll back the transaction using the <xref:System.Data.IDbTransaction.Commit%2A> or <xref:System.Data.IDbTransaction.Rollback%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,12 +205,12 @@
         <summary>Closes the connection to the database.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.IDbConnection.Close%2A> method rolls back any pending transactions. It then releases the connection to the connection pool, or closes the connection if connection pooling is disabled.  
-  
- An application can call `Close` more than one time without generating an exception.  
-  
+The <xref:System.Data.IDbConnection.Close%2A> method rolls back any pending transactions. It then releases the connection to the connection pool, or closes the connection if connection pooling is disabled.  
+ 
+An application can call `Close` more than one time without generating an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -241,18 +241,18 @@
         <value>A string containing connection settings.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `ConnectionString` property can be set only while the connection is closed.  
+The `ConnectionString` property can be set only while the connection is closed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an instance of a derived class, <xref:System.Data.OleDb.OleDbConnection>, sets its <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A>, and displays its <xref:System.Data.OleDb.OleDbConnection.State%2A>.  
-  
- [!code-csharp[Classic WebData IDbConnection.ConnectionString Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/CS/source.cs#1)]
- [!code-vb[Classic WebData IDbConnection.ConnectionString Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/VB/source.vb#1)]  
-  
+The following example creates an instance of a derived class, <xref:System.Data.OleDb.OleDbConnection>, sets its <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A>, and displays its <xref:System.Data.OleDb.OleDbConnection.State%2A>.  
+ 
+[!code-csharp[Classic WebData IDbConnection.ConnectionString Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/CS/source.cs#1)]
+[!code-vb[Classic WebData IDbConnection.ConnectionString Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,10 +283,10 @@
         <value>The time (in seconds) to wait for a connection to open. The default value is 15 seconds.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A value of 0 indicates no limit to the wait time, rather than no wait time, and should be avoided in a <xref:System.Data.IDbConnection.ConnectionString%2A> because it would cause the connection attempt to wait indefinitely.  
-  
+A value of 0 indicates no limit to the wait time, rather than no wait time, and should be avoided in a <xref:System.Data.IDbConnection.ConnectionString%2A> because it would cause the connection attempt to wait indefinitely.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,10 +345,10 @@
         <value>The name of the current database or the name of the database to be used once a connection is open. The default value is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Database` property can be dynamically updated by using the <xref:System.Data.IDbConnection.ChangeDatabase%2A> method or by passing an SQL statement using one of the Execute methods. (Initially the database is set by means of the connection string.) If you change the current database using an SQL statement or the `ChangeDatabase` method, an informational message is sent and then the property is updated.  
-  
+The `Database` property can be dynamically updated by using the <xref:System.Data.IDbConnection.ChangeDatabase%2A> method or by passing an SQL statement using one of the Execute methods. (Initially the database is set by means of the connection string.) If you change the current database using an SQL statement or the `ChangeDatabase` method, an informational message is sent and then the property is updated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -406,22 +406,22 @@
         <value>One of the <see cref="T:System.Data.ConnectionState" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The allowed state changes are:  
-  
+The allowed state changes are:  
+ 
 -   From `Closed` to `Open`, using the `Open` method of the Connection object.  
-  
+ 
 -   From `Open` to `Closed`, using either the `Close` method or the `Dispose` method of the Connection object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an instance of a derived class, <xref:System.Data.OleDb.OleDbConnection>, sets its <xref:System.Data.IDbConnection.ConnectionString%2A>, and displays its <xref:System.Data.IDbConnection.State%2A>.  
-  
- [!code-csharp[Classic WebData IDbConnection.ConnectionString Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/CS/source.cs#1)]
- [!code-vb[Classic WebData IDbConnection.ConnectionString Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/VB/source.vb#1)]  
-  
+The following example creates an instance of a derived class, <xref:System.Data.OleDb.OleDbConnection>, sets its <xref:System.Data.IDbConnection.ConnectionString%2A>, and displays its <xref:System.Data.IDbConnection.State%2A>.  
+ 
+[!code-csharp[Classic WebData IDbConnection.ConnectionString Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/CS/source.cs#1)]
+[!code-vb[Classic WebData IDbConnection.ConnectionString Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

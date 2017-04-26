@@ -14,12 +14,12 @@
     <summary>Stores references to <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationProvider" /> objects indexed by name. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used to store the default provider in the single-provider scenario. In multiple-provider scenarios, you can use this collection to choose a specific personalization provider at run time.  
-  
- Personalization providers in the collection are indexed according to the name of each provider as set in the Web.config or the Machine.config configuration file using the [providers Element for personalization for webParts (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/51363b49-eafa-4b9c-b9d0-80086b385195) attribute.  
-  
+This class is used to store the default provider in the single-provider scenario. In multiple-provider scenarios, you can use this collection to choose a specific personalization provider at run time.  
+ 
+Personalization providers in the collection are indexed according to the name of each provider as set in the Web.config or the Machine.config configuration file using the [providers Element for personalization for webParts (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/51363b49-eafa-4b9c-b9d0-80086b385195) attribute.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,10 +38,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection> class.  
-  
+Use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -66,10 +66,10 @@
         <summary>Adds an instance of a class that implements <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationProvider" /> to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to add <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider>-derived instances to the collection.  
-  
+Use this method to add <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider>-derived instances to the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The provider specified is not a <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationProvider" />.</exception>
@@ -98,10 +98,10 @@
         <summary>Copies the personalization providers in the collection to an array, starting at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The array is an array of <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider> instances.  
-  
+The array is an array of <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider> instances.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,10 +127,10 @@
         <value>The name of the personalization provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Personalization providers in the collection are indexed according to the name of each provider, as set in the Web.config or Machine.config configuration files.  
-  
+Personalization providers in the collection are indexed according to the name of each provider, as set in the Web.config or Machine.config configuration files.  
+ 
  ]]></format>
         </remarks>
       </Docs>

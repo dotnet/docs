@@ -57,10 +57,10 @@
         <summary>Minimizes the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method sets the <xref:System.Windows.Controls.Ribbon.Ribbon.IsMinimized%2A> property to `true`.  
-  
+This method sets the <xref:System.Windows.Controls.Ribbon.Ribbon.IsMinimized%2A> property to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,10 +104,10 @@
         <summary>Restores the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method sets the <xref:System.Windows.Controls.Ribbon.Ribbon.IsMinimized%2A> property to `false`.  
-  
+This method sets the <xref:System.Windows.Controls.Ribbon.Ribbon.IsMinimized%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,10 +167,10 @@
         <returns>The child elements of the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonAutomationPeer" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Automation.Peers.RibbonAutomationPeer.GetChildrenCore%2A> method returns a collection of <xref:System.Windows.Automation.Peers.AutomationPeer> objects that represent the <xref:System.Windows.Controls.Ribbon.Ribbon.ApplicationMenu%2A>, <xref:System.Windows.Controls.Ribbon.Ribbon.QuickAccessToolBar%2A>, and <xref:System.Windows.Controls.Ribbon.RibbonTab> objects that belong to the <xref:System.Windows.Controls.Ribbon.Ribbon>.  
-  
+The <xref:System.Windows.Automation.Peers.RibbonAutomationPeer.GetChildrenCore%2A> method returns a collection of <xref:System.Windows.Automation.Peers.AutomationPeer> objects that represent the <xref:System.Windows.Controls.Ribbon.Ribbon.ApplicationMenu%2A>, <xref:System.Windows.Controls.Ribbon.Ribbon.QuickAccessToolBar%2A>, and <xref:System.Windows.Controls.Ribbon.RibbonTab> objects that belong to the <xref:System.Windows.Controls.Ribbon.Ribbon>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -272,10 +272,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -298,10 +298,10 @@
           <see langword="true" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

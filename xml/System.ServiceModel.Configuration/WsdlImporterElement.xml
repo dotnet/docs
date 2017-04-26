@@ -14,12 +14,12 @@
     <summary>Represents the configuration element that specifies the import of Web Services Description Language (WSDL) 1.1 metadata with WS-Policy attachments.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ServiceModel.Description.WsdlImporter> is used to import metadata as well as convert that information into various classes that represent contract and endpoint information.  
-  
- It can selectively import contract and endpoint information and properties that expose any import errors and accept type information relevant to the import and conversion process. It also supports importing binding information and properties that provide access to any policy documents, WSDL documents, WSDL extensions, and XML schema documents.  
-  
+A <xref:System.ServiceModel.Description.WsdlImporter> is used to import metadata as well as convert that information into various classes that represent contract and endpoint information.  
+ 
+It can selectively import contract and endpoint information and properties that expose any import errors and accept type information relevant to the import and conversion process. It also supports importing binding information and properties that provide access to any policy documents, WSDL documents, WSDL extensions, and XML schema documents.  
+ 
  ]]></format>
     </remarks>
   </Docs>

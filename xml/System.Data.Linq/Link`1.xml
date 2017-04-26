@@ -18,10 +18,10 @@
     <summary>Used to enable deferred loading of individual properties (similar to <see cref="T:System.Data.Linq.EntityRef`1" />).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you assign a deferred source (<xref:System.Collections.Generic.IEnumerable%601>) to <xref:System.Data.Linq.Link%601>, <xref:System.Data.Linq.Link%601> loads the value by enumerating the source the first time the <xref:System.Data.Linq.Link%601.Value%2A> property is accessed.  
-  
+If you assign a deferred source (<xref:System.Collections.Generic.IEnumerable%601>) to <xref:System.Data.Linq.Link%601>, <xref:System.Data.Linq.Link%601> loads the value by enumerating the source the first time the <xref:System.Data.Linq.Link%601.Value%2A> property is accessed.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,10 +43,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Link`1" /> structure by referencing the source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to initialize the <xref:System.Data.Linq.Link%601> with a deferred value loader (implements <xref:System.Collections.Generic.IEnumerable%601>)  
-  
+Use this constructor to initialize the <xref:System.Data.Linq.Link%601> with a deferred value loader (implements <xref:System.Collections.Generic.IEnumerable%601>)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,10 +86,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Link`1" /> structure by referencing the value of the property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when the value for the property is already known.  
-  
+Use this constructor when the value for the property is already known.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,12 +112,12 @@
           <see langword="true" /> if the <see cref="T:System.Data.Linq.Link`1" /> has either loaded or assigned a value; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- "Loaded" means that the data was loaded during materialization or at deferred loading. "Assigned" means that you have manually given the data a value.  
-  
- [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] uses this property to make sure that the <xref:System.Data.Linq.Link%601> has a value, so that accesing it will not trigger deferred loading.  
-  
+"Loaded" means that the data was loaded during materialization or at deferred loading. "Assigned" means that you have manually given the data a value.  
+ 
+[!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] uses this property to make sure that the <xref:System.Data.Linq.Link%601> has a value, so that accesing it will not trigger deferred loading.  
+ 
  ]]></format>
         </remarks>
       </Docs>

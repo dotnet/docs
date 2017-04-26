@@ -11,10 +11,10 @@
     <summary>Defines a set of methods and properties used to examine a data source.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that implement the <xref:System.Web.UI.Design.IDataSourceSchema> class are used by custom control designer components to provide lists of views in a data source for data-bound controls at design time. In a class that is derived from the <xref:System.Web.UI.Design.IDataSourceSchema>, use the <xref:System.Web.UI.Design.IDataSourceSchema.GetViews%2A> method to get an array of <xref:System.Web.UI.Design.IDataSourceViewSchema> objects.  
-  
+Classes that implement the <xref:System.Web.UI.Design.IDataSourceSchema> class are used by custom control designer components to provide lists of views in a data source for data-bound controls at design time. In a class that is derived from the <xref:System.Web.UI.Design.IDataSourceSchema>, use the <xref:System.Web.UI.Design.IDataSourceSchema.GetViews%2A> method to get an array of <xref:System.Web.UI.Design.IDataSourceViewSchema> objects.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -37,10 +37,10 @@
         <returns>An array of <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> objects that represent the child views contained in the current view.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.XmlDocumentSchema> class implements the <xref:System.Web.UI.Design.IDataSourceViewSchema> interface. It uses its implementation of the <xref:System.Web.UI.Design.IDataSourceViewSchema.GetChildren%2A> method to create an array of <xref:System.Web.UI.Design.IDataSourceViewSchema> objects.  
-  
+The <xref:System.Web.UI.Design.XmlDocumentSchema> class implements the <xref:System.Web.UI.Design.IDataSourceViewSchema> interface. It uses its implementation of the <xref:System.Web.UI.Design.IDataSourceViewSchema.GetChildren%2A> method to create an array of <xref:System.Web.UI.Design.IDataSourceViewSchema> objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -63,10 +63,10 @@
         <returns>An array of <see cref="T:System.Web.UI.Design.IDataSourceFieldSchema" /> objects representing each of the fields in the data source.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DataSetSchema> class implements the <xref:System.Web.UI.Design.IDataSourceViewSchema> interface; its implementation of the <xref:System.Web.UI.Design.DataSetViewSchema.GetFields%2A> method returns an array of <xref:System.Web.UI.Design.DataSetFieldSchema> objects, each of which derives from the <xref:System.Web.UI.Design.IDataSourceFieldSchema> interface.  
-  
+The <xref:System.Web.UI.Design.DataSetSchema> class implements the <xref:System.Web.UI.Design.IDataSourceViewSchema> interface; its implementation of the <xref:System.Web.UI.Design.DataSetViewSchema.GetFields%2A> method returns an array of <xref:System.Web.UI.Design.DataSetFieldSchema> objects, each of which derives from the <xref:System.Web.UI.Design.IDataSourceFieldSchema> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <value>The name of the view.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a <xref:System.Data.DataTable> object, this property corresponds to the <xref:System.Data.DataTable.TableName%2A> property.  
-  
+For a <xref:System.Data.DataTable> object, this property corresponds to the <xref:System.Data.DataTable.TableName%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,18 +13,18 @@
     <summary>Determines the serialization method used for a <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.ProfilePropertySettings.SerializeAs%2A> property of the <xref:System.Web.Configuration.ProfilePropertySettings> object controls the serialization mode for a single profile property setting.  
+The <xref:System.Web.Configuration.ProfilePropertySettings.SerializeAs%2A> property of the <xref:System.Web.Configuration.ProfilePropertySettings> object controls the serialization mode for a single profile property setting.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.ProfilePropertySettings.SerializeAs%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
-  
- [!code-csharp[System.Web.Configuration.ProfileSection#17](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#17)]
- [!code-vb[System.Web.Configuration.ProfileSection#17](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#17)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.ProfilePropertySettings.SerializeAs%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+ 
+[!code-csharp[System.Web.Configuration.ProfileSection#17](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#17)]
+[!code-vb[System.Web.Configuration.ProfileSection#17](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#17)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

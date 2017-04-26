@@ -14,19 +14,19 @@
     <summary>Defines a condition with an associated set of actions to perform.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Workflow.Activities.Rules.Rule> consists of a <xref:System.Workflow.Activities.Rules.RuleCondition> and one or both <xref:System.Workflow.Activities.Rules.Rule.ThenActions%2A> or <xref:System.Workflow.Activities.Rules.Rule.ElseActions%2A> collections.  
+A <xref:System.Workflow.Activities.Rules.Rule> consists of a <xref:System.Workflow.Activities.Rules.RuleCondition> and one or both <xref:System.Workflow.Activities.Rules.Rule.ThenActions%2A> or <xref:System.Workflow.Activities.Rules.Rule.ElseActions%2A> collections.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a named <xref:System.Workflow.Activities.Rules.Rule>.  
-  
+The following example shows how to create a named <xref:System.Workflow.Activities.Rules.Rule>.  
+ 
 ```csharp  
 private Rule firstRule = new Rule("firstRule");  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -128,10 +128,10 @@ private Rule firstRule = new Rule("firstRule");
           <see langword="true" /> if the Rule should be evaluated; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When set to `false`, this property is similar to commenting out the rule. The default is `true`.  
-  
+When set to `false`, this property is similar to commenting out the rule. The default is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,12 +213,12 @@ private Rule firstRule = new Rule("firstRule");
         <value>A collection of <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> to perform in the ELSE case.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.Rules.Rule.ElseActions%2A> typically set a variable value on one of the properties of the activity, calls a method of the activity, or calls static methods on types in referenced assemblies.  
-  
- The <xref:System.Workflow.Activities.Rules.RuleHaltAction> causes the <xref:System.Workflow.Activities.Rules.RuleSet> to stop executing and returns control to the calling method. A <xref:System.Workflow.Activities.Rules.RuleStatementAction> modifies a property or calls a method. A <xref:System.Workflow.Activities.Rules.RuleUpdateAction> explicitly indicates that a rule is updating a variable. This causes the re-evaluation of any affected rules.  
-  
+<xref:System.Workflow.Activities.Rules.Rule.ElseActions%2A> typically set a variable value on one of the properties of the activity, calls a method of the activity, or calls static methods on types in referenced assemblies.  
+ 
+The <xref:System.Workflow.Activities.Rules.RuleHaltAction> causes the <xref:System.Workflow.Activities.Rules.RuleSet> to stop executing and returns control to the calling method. A <xref:System.Workflow.Activities.Rules.RuleStatementAction> modifies a property or calls a method. A <xref:System.Workflow.Activities.Rules.RuleUpdateAction> explicitly indicates that a rule is updating a variable. This causes the re-evaluation of any affected rules.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -300,12 +300,12 @@ private Rule firstRule = new Rule("firstRule");
         <value>A value that indicates the order in which a <see cref="T:System.Workflow.Activities.Rules.Rule" /> should be run.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.Rules.Rule> classes that have a higher priority value are run before lower priority <xref:System.Workflow.Activities.Rules.Rule> classes. Rules that have the same priority are run in the alphabetic order of their name properties.  
-  
- The <xref:System.Workflow.Activities.Rules.Rule.Priority%2A> value can be positive or negative. The default value for any <xref:System.Workflow.Activities.Rules.Rule> is 0.  
-  
+<xref:System.Workflow.Activities.Rules.Rule> classes that have a higher priority value are run before lower priority <xref:System.Workflow.Activities.Rules.Rule> classes. Rules that have the same priority are run in the alphabetic order of their name properties.  
+ 
+The <xref:System.Workflow.Activities.Rules.Rule.Priority%2A> value can be positive or negative. The default value for any <xref:System.Workflow.Activities.Rules.Rule> is 0.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -350,12 +350,12 @@ private Rule firstRule = new Rule("firstRule");
         <value>A collection of <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> classes to perform in the THEN case.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.Rules.Rule.ThenActions%2A> typically set a variable value on one of the properties of the activity, call a method of the activity, or call static methods on types in referenced assemblies.  
-  
- The <xref:System.Workflow.Activities.Rules.RuleHaltAction> causes the <xref:System.Workflow.Activities.Rules.RuleSet> to stop executing and returns control to the calling method. A <xref:System.Workflow.Activities.Rules.RuleUpdateAction> explicitly indicates that a rule is updating a variable. This causes the re-evaluation of any affected rules.  
-  
+<xref:System.Workflow.Activities.Rules.Rule.ThenActions%2A> typically set a variable value on one of the properties of the activity, call a method of the activity, or call static methods on types in referenced assemblies.  
+ 
+The <xref:System.Workflow.Activities.Rules.RuleHaltAction> causes the <xref:System.Workflow.Activities.Rules.RuleSet> to stop executing and returns control to the calling method. A <xref:System.Workflow.Activities.Rules.RuleUpdateAction> explicitly indicates that a rule is updating a variable. This causes the re-evaluation of any affected rules.  
+ 
  ]]></format>
         </remarks>
       </Docs>

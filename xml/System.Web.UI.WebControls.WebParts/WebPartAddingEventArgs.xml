@@ -14,12 +14,12 @@
     <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdding" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdding> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartAdding%2A> method just before adding a control to a Web Parts zone. This event provides an opportunity to cancel the process before it is complete. The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdded> event is called after a control has been added to a Web Parts zone.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs> class contains information that can be used within a <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdding> event. It provides access to the Web Parts control that is being added and the zone it is being added to.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdding> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartAdding%2A> method just before adding a control to a Web Parts zone. This event provides an opportunity to cancel the process before it is complete. The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdded> event is called after a control has been added to a Web Parts zone.  
+ 
+The <xref:System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs> class contains information that can be used within a <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdding> event. It provides access to the Web Parts control that is being added and the zone it is being added to.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,13 +81,13 @@
         <value>The numerical order of a control within its zone. The first control in a zone has an index value of zero.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs.ZoneIndex%2A> property indicates the numerical order (or ordinal position) within the zone for the Web Parts control being added in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdded> event. The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control uses this property to track and manage its collection of Web Parts controls on a Web page.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs.ZoneIndex%2A> property indicates the numerical order (or ordinal position) within the zone for the Web Parts control being added in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdded> event. The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control uses this property to track and manage its collection of Web Parts controls on a Web page.  
+ 
 > [!IMPORTANT]
 >  The value of the <xref:System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs.ZoneIndex%2A> property for a control might not equal the index value for the same control within the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebParts%2A> collection.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

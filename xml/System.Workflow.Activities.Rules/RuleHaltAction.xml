@@ -14,10 +14,10 @@
     <summary>Causes the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> to stop executing and returns control back to the calling method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Halt action is similar to a break command, although it ends the execution of the <xref:System.Workflow.Activities.Rules.RuleSet>. The Halt action will stop execution of the <xref:System.Workflow.Activities.Rules.RuleSet> when all the actions in the same action block have finished executing.  
-  
+The Halt action is similar to a break command, although it ends the execution of the <xref:System.Workflow.Activities.Rules.RuleSet>. The Halt action will stop execution of the <xref:System.Workflow.Activities.Rules.RuleSet> when all the actions in the same action block have finished executing.  
+ 
  ]]></format>
     </remarks>
   </Docs>

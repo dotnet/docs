@@ -22,23 +22,23 @@
     <summary>An inline-level flow content element which enables <see cref="T:System.Windows.UIElement" /> elements (i.e. a <see cref="T:System.Windows.Controls.Button" />) to be embedded (hosted) in flow content.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.UIElement> element (i.e. a <xref:System.Windows.Controls.Button>) may be embedded directly in flow content by enclosing it in a <xref:System.Windows.Documents.InlineUIContainer> (see example below).  
+A <xref:System.Windows.UIElement> element (i.e. a <xref:System.Windows.Controls.Button>) may be embedded directly in flow content by enclosing it in a <xref:System.Windows.Documents.InlineUIContainer> (see example below).  
+ 
+An <xref:System.Windows.Documents.InlineUIContainer> may directly host no more than one <xref:System.Windows.UIElement> child.  However, the child element hosted by an <xref:System.Windows.Documents.InlineUIContainer> may host children of its own.  
+ 
   
- An <xref:System.Windows.Documents.InlineUIContainer> may directly host no more than one <xref:System.Windows.UIElement> child.  However, the child element hosted by an <xref:System.Windows.Documents.InlineUIContainer> may host children of its own.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Documents.InlineUIContainer> elements to host <xref:System.Windows.UIElement> elements within flow content.  
-  
- [!code-xml[SpanSnippets#_InlineUIXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml#_inlineuixaml)]  
-  
- The following figure shows how this example renders.  
-  
- ![Screenshot: UIElement elements embedded in flow](~/add/media/inlineuicontainer.png "Screenshot: UIElement elements embedded in flow")  
-  
+The following example shows how to use the <xref:System.Windows.Documents.InlineUIContainer> elements to host <xref:System.Windows.UIElement> elements within flow content.  
+ 
+[!code-xml[SpanSnippets#_InlineUIXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml#_inlineuixaml)]  
+ 
+The following figure shows how this example renders.  
+ 
+![Screenshot: UIElement elements embedded in flow](~/add/media/inlineuicontainer.png "Screenshot: UIElement elements embedded in flow")  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,13 +75,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.InlineUIContainer" /> class, taking a specified <see cref="T:System.Windows.UIElement" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.InlineUIContainer" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates usage of this constructor.  
-  
- [!code-csharp[SpanSnippets#_InlineUI_Const1](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_inlineui_const1)]
- [!code-vb[SpanSnippets#_InlineUI_Const1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_inlineui_const1)]  
-  
+The following example demonstrates usage of this constructor.  
+ 
+[!code-csharp[SpanSnippets#_InlineUI_Const1](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_inlineui_const1)]
+[!code-vb[SpanSnippets#_InlineUI_Const1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_inlineui_const1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,13 +105,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.InlineUIContainer" /> class, taking a specified <see cref="T:System.Windows.UIElement" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.InlineUIContainer" />, and a <see cref="T:System.Windows.Documents.TextPointer" /> specifying an insertion position for the new <see cref="T:System.Windows.Documents.InlineUIContainer" /> element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates usage of this constructor.  
-  
- [!code-csharp[SpanSnippets#_InlineUI_Const2](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_inlineui_const2)]
- [!code-vb[SpanSnippets#_InlineUI_Const2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_inlineui_const2)]  
-  
+The following example demonstrates usage of this constructor.  
+ 
+[!code-csharp[SpanSnippets#_InlineUI_Const2](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_inlineui_const2)]
+[!code-vb[SpanSnippets#_InlineUI_Const2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_inlineui_const2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,28 +133,28 @@
         <value>The <see cref="T:System.Windows.UIElement" /> hosted by the <see cref="T:System.Windows.Documents.InlineUIContainer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Documents.InlineUIContainer> may directly host no more than one <xref:System.Windows.UIElement> child.  However, the child element hosted by an <xref:System.Windows.Documents.InlineUIContainer> may host children of its own.  
+An <xref:System.Windows.Documents.InlineUIContainer> may directly host no more than one <xref:System.Windows.UIElement> child.  However, the child element hosted by an <xref:System.Windows.Documents.InlineUIContainer> may host children of its own.  
+ 
+In [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)], wrapping a <xref:System.Windows.UIElement> in an <xref:System.Windows.Documents.InlineUIContainer> is equivalent to setting that <xref:System.Windows.UIElement> as the value of the <xref:System.Windows.Documents.InlineUIContainer.Child%2A> property.  
+ 
   
- In [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)], wrapping a <xref:System.Windows.UIElement> in an <xref:System.Windows.Documents.InlineUIContainer> is equivalent to setting that <xref:System.Windows.UIElement> as the value of the <xref:System.Windows.Documents.InlineUIContainer.Child%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Documents.InlineUIContainer> elements to host <xref:System.Windows.UIElement> elements within flow content.  
-  
- [!code-xml[SpanSnippets#_InlineUIXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml#_inlineuixaml)]  
-  
- The following figure shows how this example renders.  
-  
- ![Screenshot: UIElement elements embedded in flow](~/add/media/inlineuicontainer.png "Screenshot: UIElement elements embedded in flow")  
-  
- The following example shows how to use the <xref:System.Windows.Documents.InlineUIContainer.Child%2A> property programmatically.  
-  
- [!code-csharp[SpanSnippets#_InlineUI_Child](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_inlineui_child)]
- [!code-vb[SpanSnippets#_InlineUI_Child](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_inlineui_child)]  
-  
+The following example shows how to use the <xref:System.Windows.Documents.InlineUIContainer> elements to host <xref:System.Windows.UIElement> elements within flow content.  
+ 
+[!code-xml[SpanSnippets#_InlineUIXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml#_inlineuixaml)]  
+ 
+The following figure shows how this example renders.  
+ 
+![Screenshot: UIElement elements embedded in flow](~/add/media/inlineuicontainer.png "Screenshot: UIElement elements embedded in flow")  
+ 
+The following example shows how to use the <xref:System.Windows.Documents.InlineUIContainer.Child%2A> property programmatically.  
+ 
+[!code-csharp[SpanSnippets#_InlineUI_Child](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_inlineui_child)]
+[!code-vb[SpanSnippets#_InlineUI_Child](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_inlineui_child)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

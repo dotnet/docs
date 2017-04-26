@@ -18,18 +18,18 @@
     <summary>A class that represents the category of a syndication feed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A category allows you to assign one or more keywords that can be used to search for information.  
+A category allows you to assign one or more keywords that can be used to search for information.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> and add a <xref:System.ServiceModel.Syndication.SyndicationItem> with a <xref:System.ServiceModel.Syndication.SyndicationCategory>.  
-  
- [!code-csharp[SyndicationCategory#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcategory/cs/program.cs#0)]
- [!code-vb[SyndicationCategory#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcategory/vb/program.vb#0)]  
-  
+The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> and add a <xref:System.ServiceModel.Syndication.SyndicationItem> with a <xref:System.ServiceModel.Syndication.SyndicationCategory>.  
+ 
+[!code-csharp[SyndicationCategory#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcategory/cs/program.cs#0)]
+[!code-vb[SyndicationCategory#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcategory/vb/program.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,13 +96,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> class with the given name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> and add a <xref:System.ServiceModel.Syndication.SyndicationItem> with a <xref:System.ServiceModel.Syndication.SyndicationCategory>.  
-  
- [!code-csharp[SyndicationCategory#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcategory/cs/program.cs#0)]
- [!code-vb[SyndicationCategory#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcategory/vb/program.vb#0)]  
-  
+The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> and add a <xref:System.ServiceModel.Syndication.SyndicationItem> with a <xref:System.ServiceModel.Syndication.SyndicationCategory>.  
+ 
+[!code-csharp[SyndicationCategory#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcategory/cs/program.cs#0)]
+[!code-vb[SyndicationCategory#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcategory/vb/program.vb#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,13 +132,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> class with the specified name, scheme, and label.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code demonstrates how to call this constructor.  
-  
- [!code-csharp[SyndicationCategory#2](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcategory/cs/snippets.cs#2)]
- [!code-vb[SyndicationCategory#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcategory/vb/snippets.vb#2)]  
-  
+The following code demonstrates how to call this constructor.  
+ 
+[!code-csharp[SyndicationCategory#2](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcategory/cs/snippets.cs#2)]
+[!code-vb[SyndicationCategory#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcategory/vb/snippets.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@
         <value>The attribute extensions for this category.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The syndication object model allows you to add custom attributes to a <xref:System.ServiceModel.Syndication.SyndicationCategory> instance. Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<category>` element.  
-  
+The syndication object model allows you to add custom attributes to a <xref:System.ServiceModel.Syndication.SyndicationCategory> instance. Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<category>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,24 +216,24 @@
         <value>A collection of element extensions.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specification. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace.  
+Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specification. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following XML shows how a <xref:System.ServiceModel.Syndication.SyndicationCategory> with a custom element is serialized to Atom 1.0.  
-  
+The following XML shows how a <xref:System.ServiceModel.Syndication.SyndicationCategory> with a custom element is serialized to Atom 1.0.  
+ 
 ```  
 <category customAttribute="value" term="FeedCategory" label="CategoryLabel" scheme="CategoryScheme">  
     <customCategoryElement xmlns="">Some text</customCategoryElement>  
 </category>  
 ```  
-  
+ 
 > [!NOTE]
 >  Custom elements within <xref:System.ServiceModel.Syndication.SyndicationCategory> instances are not serialized to RSS 2.0.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -259,19 +259,19 @@
         <value>The label of the category.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Label%2A> is written to the `label` attribute of the <`category`> element. <xref:System.ServiceModel.Syndication.SyndicationCategory.Label%2A> is not serialized to RSS 2.0.  
+When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Label%2A> is written to the `label` attribute of the <`category`> element. <xref:System.ServiceModel.Syndication.SyndicationCategory.Label%2A> is not serialized to RSS 2.0.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationCategory.Label%2A> property is serialized to Atom 1.0.  
-  
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationCategory.Label%2A> property is serialized to Atom 1.0.  
+ 
 ```  
 <category customAttribute="value" term="FeedCategory" label="CategoryLabel" scheme="CategoryScheme"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,19 +297,19 @@
         <value>The name of the category.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Name%2A> is written to the `term` attribute of the <`category`> element. <xref:System.ServiceModel.Syndication.SyndicationCategory.Label%2A> is not serialized to RSS 2.0.  
+When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Name%2A> is written to the `term` attribute of the <`category`> element. <xref:System.ServiceModel.Syndication.SyndicationCategory.Label%2A> is not serialized to RSS 2.0.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationCategory.Name%2A> property is serialized to Atom 1.0.  
-  
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationCategory.Name%2A> property is serialized to Atom 1.0.  
+ 
 ```  
 <category customAttribute="value" term="FeedCategory" label="CategoryLabel" scheme="CategoryScheme"/>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -335,27 +335,27 @@
         <value>The scheme of the category.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Scheme%2A> property is written to the `scheme` attribute of the <`category`> element.  
+When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Scheme%2A> property is written to the `scheme` attribute of the <`category`> element.  
+ 
+When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Scheme%2A> property is written to the `domain` attribute of the <`category`> element.  
+ 
   
- When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Scheme%2A> property is written to the `domain` attribute of the <`category`> element.  
-  
-   
-  
+ 
 ## Examples  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationCategory.Scheme%2A> property is serialized to Atom 1.0.  
-  
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationCategory.Scheme%2A> property is serialized to Atom 1.0.  
+ 
 ```  
 <category customAttribute="value" term="FeedCategory" label="CategoryLabel" scheme="CategoryScheme"/>  
 ```  
-  
- The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationCategory.Scheme%2A> property is serialized to RSS 2.0.  
-  
+ 
+The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationCategory.Scheme%2A> property is serialized to RSS 2.0.  
+ 
 ```  
 <category customAttribute="value" domain="CategoryScheme">FeedCategory</category>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -391,10 +391,10 @@
         <returns>A value that specifies whether the attribute extension was parsed successfully.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<category>` element. This method is an extension point that allows you to handle the deserialization of a custom attribute extension. To do this, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override this method. This method is called for all unrecognized attribute extensions.  
-  
+Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<category>` element. This method is an extension point that allows you to handle the deserialization of a custom attribute extension. To do this, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override this method. This method is called for all unrecognized attribute extensions.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
@@ -427,10 +427,10 @@
         <returns>A value that specifies whether the element extension has been parsed successfully.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the deserialization of a custom element extension. To do this, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override this method. This method is called for all unrecognized attribute extensions.  
-  
+Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the deserialization of a custom element extension. To do this, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override this method. This method is called for all unrecognized attribute extensions.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
@@ -462,10 +462,10 @@
         <summary>Writes the attribute extensions to the specified writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<category>` element. This method is an extension point that allows you to handle the serialization of custom attribute extensions. To do this, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override this method. This method is called for all unrecognized attribute extensions.  
-  
+Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<category>` element. This method is an extension point that allows you to handle the serialization of custom attribute extensions. To do this, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override this method. This method is called for all unrecognized attribute extensions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -496,10 +496,10 @@
         <summary>Writes the element extensions to the specified writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specification. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the serialization of custom element extensions. To do this, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override this method. This method is called for all unrecognized element extensions.  
-  
+Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specification. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the serialization of custom element extensions. To do this, derive a class from <xref:System.ServiceModel.Syndication.SyndicationCategory> and override this method. This method is called for all unrecognized element extensions.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,13 +13,13 @@
     <summary>Specifies the image type of the chart.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageFormat> enumeration represents an image type that is used to save the chart to a file or stream.  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.ChartImageFormat> enumeration represents an image type that is used to save the chart to a file or stream.  
+ 
 > [!NOTE]
 >  Only charts saved to disk can use the EmfDual or EmfDual format. Charts cannot be rendered on a Web page using EMF-dual or EMF+.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

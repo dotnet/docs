@@ -18,10 +18,10 @@
     <summary>Represents XML syndication content that is not intended to be displayed in a browser.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used to send serialized objects or other application state data as XML.  
-  
+This class is used to send serialized objects or other application state data as XML.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -119,10 +119,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> with the specified type, object, and <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.DataContractSerializer> is one subtype of <xref:System.Runtime.Serialization.XmlObjectSerializer>. If null is passed, a default instance of <xref:System.Runtime.Serialization.DataContractSerializer> is instantiated.  
-  
+The <xref:System.Runtime.Serialization.DataContractSerializer> is one subtype of <xref:System.Runtime.Serialization.XmlObjectSerializer>. If null is passed, a default instance of <xref:System.Runtime.Serialization.DataContractSerializer> is instantiated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,12 +197,12 @@
         <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtension" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- On the send/serialization side, this property represents the XML content that must be serialized.  
-  
- On the receive/deserialization side, this property is always `null`.  
-  
+On the send/serialization side, this property represents the XML content that must be serialized.  
+ 
+On the receive/deserialization side, this property is always `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
         <returns>An object of the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- On the receive/deserialization side, if the XML syndication content element is an empty XML element, then default(`TContent`) is returned. If not, a new instance of <xref:System.Runtime.Serialization.DataContractSerializer> is created and is used to deserialize the inner XML of the XML syndication content element into an instance of `TContent`.  
-  
+On the receive/deserialization side, if the XML syndication content element is an empty XML element, then default(`TContent`) is returned. If not, a new instance of <xref:System.Runtime.Serialization.DataContractSerializer> is created and is used to deserialize the inner XML of the XML syndication content element into an instance of `TContent`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The input XML cannot be deserialized into the requested type.</exception>
@@ -294,10 +294,10 @@
         <returns>An object of the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- On the receive/deserialization side, if the XML syndication content element is an empty XML element, then default(`TContent`) is returned. If not, the instance of <xref:System.Runtime.Serialization.XmlObjectSerializer> passed in is used to deserialize the inner XML of XML syndication content element into an instance of `TContent`.  
-  
+On the receive/deserialization side, if the XML syndication content element is an empty XML element, then default(`TContent`) is returned. If not, the instance of <xref:System.Runtime.Serialization.XmlObjectSerializer> passed in is used to deserialize the inner XML of XML syndication content element into an instance of `TContent`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The input XML cannot be deserialized into the requested type.</exception>
@@ -332,10 +332,10 @@
         <returns>An object of the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- On the receive/deserialization side, if the XML syndication content element is an empty XML element, then default(`TContent`) is returned. If not, the instance of <xref:System.Xml.Serialization.XmlSerializer> passed in is used to deserialize the inner XML of XML syndication content element into an instance of `TContent`.  
-  
+On the receive/deserialization side, if the XML syndication content element is an empty XML element, then default(`TContent`) is returned. If not, the instance of <xref:System.Xml.Serialization.XmlSerializer> passed in is used to deserialize the inner XML of XML syndication content element into an instance of `TContent`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The input XML cannot be deserialized into the requested type.</exception>
@@ -387,10 +387,10 @@
         <summary>Write the contents of the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method writes the inner XML content of the <xref:System.ServiceModel.Syndication.XmlSyndicationContent> instance (for example, it does not write the top level start and end elements of the syndication content).  
-  
+This method writes the inner XML content of the <xref:System.ServiceModel.Syndication.XmlSyndicationContent> instance (for example, it does not write the top level start and end elements of the syndication content).  
+ 
  ]]></format>
         </remarks>
       </Docs>

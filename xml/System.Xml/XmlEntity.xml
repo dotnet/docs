@@ -42,23 +42,23 @@
         <value>The location from which the node was loaded.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A networked XML document is comprised of chunks of data aggregated using various World Wide Web Consortium (W3C) standard inclusion mechanisms and therefore contains nodes that come from different places. The `BaseURI` tells you where these nodes came from.  
-  
- The value of this property varies depending on the node type. Nodes which are children of external EntityReference nodes return the location of the entity itself. For example, consider the following XML document:  
-  
+A networked XML document is comprised of chunks of data aggregated using various World Wide Web Consortium (W3C) standard inclusion mechanisms and therefore contains nodes that come from different places. The `BaseURI` tells you where these nodes came from.  
+ 
+The value of this property varies depending on the node type. Nodes which are children of external EntityReference nodes return the location of the entity itself. For example, consider the following XML document:  
+ 
 ```  
 <!DOCTYPE item [  
 <!ENTITY xyz SYSTEM "a/b.xml">  
 ]>  
 <item num='123'>&xyz;</item>  
 ```  
-  
- where the external entity `a/b.xml` contains the XML text `<test>123</test>`.  
-  
- If the document is loaded from http://server/mydata.xml, `BaseURI` returns the following:  
-  
+ 
+where the external entity `a/b.xml` contains the XML text `<test>123</test>`.  
+ 
+If the document is loaded from http://server/mydata.xml, `BaseURI` returns the following:  
+ 
 |NodeType|Name|BaseURI|  
 |--------------|----------|-------------|  
 |Attribute|num|http://server/mydata.xml|  
@@ -69,26 +69,26 @@
 |EntityReference|xyz|http://server/mydata.xml|  
 |Element|test|http://server/a/b.xml|  
 |Text|#text|http://server/a/b.xml|  
-  
- `BaseURI` looks for entity reference boundaries, so if entities are expanded, this information is not preserved and this property returns the location of the `XmlDocument` object in all cases.  
-  
- As a second example, given the following XML document:  
-  
+ 
+`BaseURI` looks for entity reference boundaries, so if entities are expanded, this information is not preserved and this property returns the location of the `XmlDocument` object in all cases.  
+ 
+As a second example, given the following XML document:  
+ 
 ```  
 <!DOCTYPE Mydata SYSTEM "http://localhost/doctype.dtd">  
 <baa>&xyz;</baa>  
 ```  
-  
- where the document type definition (DTD) file contains the following:  
-  
+ 
+where the document type definition (DTD) file contains the following:  
+ 
 ```  
 <!ENTITY xyz "<E1>My Data</E1>">  
 <!ELEMENT baa #PCDATA>  
 <!ATTLIST baa attr1 "woof">  
 ```  
-  
- If the XML document is loaded from http://localhost/mydata.xml, `BaseURI` returns the following for each of the nodes:  
-  
+ 
+If the XML document is loaded from http://localhost/mydata.xml, `BaseURI` returns the following for each of the nodes:  
+ 
 |NodeType|Name|BaseURI|  
 |--------------|----------|-------------|  
 |Document|#document|http://localhost/mydata.xml|  
@@ -97,12 +97,12 @@
 |Entity|xyz|http://localhost/doctype.dtd|  
 |EntityReference|xyz|http://localhost/mydata.xml|  
 |Attribute|woof|http://localhost/mydata.xml|  
-  
+ 
 > [!NOTE]
 >  The base URI of a default attribute is the same as the base URI of the element to which they belong.  
-  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,12 +158,12 @@
         <value>The concatenated values of the node and all its children.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `XmlEntity` nodes are read-only. Setting this property throws an exception.  
-  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
+`XmlEntity` nodes are read-only. Setting this property throws an exception.  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Attempting to set the property.</exception>
@@ -191,12 +191,12 @@
         <value>For <see langword="XmlEntity" /> nodes, String.Empty is returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `XmlEntity` nodes are read-only. Setting this property throws an exception.  
-  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
+`XmlEntity` nodes are read-only. Setting this property throws an exception.  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Attempting to set the property.</exception>
@@ -227,10 +227,10 @@
  Because <see langword="XmlEntity" /> nodes are read-only, this property always returns <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A read-only node is one whose properties, attributes, or children cannot be changed. You can remove a read-only node from the tree and insert it somewhere else.  
-  
+A read-only node is one whose properties, attributes, or children cannot be changed. You can remove a read-only node from the tree and insert it somewhere else.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,18 +280,18 @@
         <value>The name of the entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays information on the entities declared in the XML document.  
-  
- [!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
- [!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
- [!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
-  
- The example uses the file `doment.xml` as input.  
-  
- [!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
-  
+The following example displays information on the entities declared in the XML document.  
+ 
+[!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
+[!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
+[!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
+ 
+The example uses the file `doment.xml` as input.  
+ 
+[!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -318,18 +318,18 @@
         <value>The node type. For <see langword="XmlEntity" /> nodes, the value is XmlNodeType.Entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays information on the entities declared in the XML document.  
-  
- [!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
- [!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
- [!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
-  
- The example uses the file `doment.xml` as input.  
-  
- [!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
-  
+The following example displays information on the entities declared in the XML document.  
+ 
+[!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
+[!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
+[!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
+ 
+The example uses the file `doment.xml` as input.  
+ 
+[!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -356,18 +356,18 @@
         <value>The name of the NDATA attribute. If there is no NDATA, <see langword="null" /> is returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays information on the entities declared in the XML document.  
-  
- [!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
- [!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
- [!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
-  
- The example uses the file, `doment.xml`, as input.  
-  
- [!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
-  
+The following example displays information on the entities declared in the XML document.  
+ 
+[!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
+[!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
+[!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
+ 
+The example uses the file, `doment.xml`, as input.  
+ 
+[!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -394,10 +394,10 @@
         <value>For <see langword="XmlEntity" /> nodes, String.Empty is returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -424,18 +424,18 @@
         <value>The public identifier on the entity. If there is no public identifier, <see langword="null" /> is returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays information on the entities declared in the XML document.  
-  
- [!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
- [!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
- [!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
-  
- The example uses the file, `doment.xml`, as input.  
-  
- [!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
-  
+The following example displays information on the entities declared in the XML document.  
+ 
+[!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
+[!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
+[!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
+ 
+The example uses the file, `doment.xml`, as input.  
+ 
+[!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -462,18 +462,18 @@
         <value>The system identifier on the entity. If there is no system identifier, <see langword="null" /> is returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays information on the entities declared in the XML document.  
-  
- [!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
- [!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
- [!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
-  
- The example uses the file `doment.xml` as input.  
-  
- [!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
-  
+The following example displays information on the entities declared in the XML document.  
+ 
+[!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
+[!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
+[!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
+ 
+The example uses the file `doment.xml` as input.  
+ 
+[!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -503,10 +503,10 @@
         <summary>Saves all the children of the node to the specified <see cref="T:System.Xml.XmlWriter" />. For <see langword="XmlEntity" /> nodes, this method has no effect.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -536,10 +536,10 @@
         <summary>Saves the node to the specified <see cref="T:System.Xml.XmlWriter" />. For <see langword="XmlEntity" /> nodes, this method has no effect.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>

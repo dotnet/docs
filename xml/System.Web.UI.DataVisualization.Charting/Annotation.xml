@@ -23,20 +23,20 @@
     <summary>Defines properties and methods common to all annotations. This is an abstract class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Annotations are commonly used to comment or elaborate on chart elements such as data points. Annotations can also be used to draw custom shapes.  
-  
- By default, annotations are positioned using relative coordinates, with (0,0) representing the top-left corner, and (100,100) representing the bottom-right corner of the chart image. It is also possible to switch from this relative coordinate system to a system that uses axis values. With an axis coordinate system, X and Y, which represent the position of the top-left corner of an annotation, are set using X axis and Y axis values, instead of values that range from 0-100.  
-  
- There are two ways to use axis values when you specify the position and size of an annotation:  
-  
+Annotations are commonly used to comment or elaborate on chart elements such as data points. Annotations can also be used to draw custom shapes.  
+ 
+By default, annotations are positioned using relative coordinates, with (0,0) representing the top-left corner, and (100,100) representing the bottom-right corner of the chart image. It is also possible to switch from this relative coordinate system to a system that uses axis values. With an axis coordinate system, X and Y, which represent the position of the top-left corner of an annotation, are set using X axis and Y axis values, instead of values that range from 0-100.  
+ 
+There are two ways to use axis values when you specify the position and size of an annotation:  
+ 
 -   Set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A>, <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisY%2A> or both of these annotation properties to the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.AxisX%2A> and <xref:System.Web.UI.DataVisualization.Charting.ChartArea.AxisY%2A> property values of a <xref:System.Web.UI.DataVisualization.Charting.Series.ChartArea%2A> object.  
-  
+ 
 -   Use the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property to anchor the annotation to a data point. In this case, its positioning is automatically calculated.  
-  
- All annotations are derived from the <xref:System.Web.UI.DataVisualization.Charting.Annotation> class, which can be used to set attributes common to all <xref:System.Web.UI.DataVisualization.Charting.Annotation> objects, such as color, position, anchoring and so forth.  
-  
+ 
+All annotations are derived from the <xref:System.Web.UI.DataVisualization.Charting.Annotation> class, which can be used to set attributes common to all <xref:System.Web.UI.DataVisualization.Charting.Annotation> objects, such as color, position, anchoring and so forth.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,10 +55,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.Annotation" /> class. This is the default constructor and should not be used.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.DataVisualization.Charting.Annotation> is an abstract class and cannot be created directly. To create a new annotation object, use constructors of classes such as <xref:System.Web.UI.DataVisualization.Charting.LineAnnotation> or <xref:System.Web.UI.DataVisualization.Charting.RectangleAnnotation>.  
-  
+<xref:System.Web.UI.DataVisualization.Charting.Annotation> is an abstract class and cannot be created directly. To create a new annotation object, use constructors of classes such as <xref:System.Web.UI.DataVisualization.Charting.LineAnnotation> or <xref:System.Web.UI.DataVisualization.Charting.RectangleAnnotation>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,10 +85,10 @@
         <value>A <see cref="T:System.Drawing.ContentAlignment" /> enumeration value that represents the content alignment.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used to align text for the <xref:System.Web.UI.DataVisualization.Charting.Annotation.Alignment%2A> property to align text for <xref:System.Web.UI.DataVisualization.Charting.TextAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.RectangleAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.EllipseAnnotation> and <xref:System.Web.UI.DataVisualization.Charting.CalloutAnnotation> objects, and to align a non-scaled image inside an <xref:System.Web.UI.DataVisualization.Charting.ImageAnnotation> object.  
-  
+This property is used to align text for the <xref:System.Web.UI.DataVisualization.Charting.Annotation.Alignment%2A> property to align text for <xref:System.Web.UI.DataVisualization.Charting.TextAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.RectangleAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.EllipseAnnotation> and <xref:System.Web.UI.DataVisualization.Charting.CalloutAnnotation> objects, and to align a non-scaled image inside an <xref:System.Web.UI.DataVisualization.Charting.ImageAnnotation> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,10 +115,10 @@
         <value>A <see cref="T:System.Drawing.ContentAlignment" /> enumeration value that represents the alignment of the annotation to the anchor point.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The annotation must be anchored by either using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or by setting the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorY%2A> properties. Its <xref:System.Web.UI.DataVisualization.Charting.Annotation.X%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.Y%2A> properties must be set to <xref:System.Double.NaN>.  
-  
+The annotation must be anchored by either using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or by setting the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorY%2A> properties. Its <xref:System.Web.UI.DataVisualization.Charting.Annotation.X%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.Y%2A> properties must be set to <xref:System.Double.NaN>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,16 +154,16 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> object to which an annotation is anchored.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The annotation is anchored to the X and Y values of the specified data point, and automatically uses the same axes coordinates as the data point.  
-  
- To automatically position the annotation relative to the anchor point, make sure its <xref:System.Web.UI.DataVisualization.Charting.Annotation.X%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.Y%2A> properties are set to <xref:System.Double.NaN>. The <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorAlignment%2A> property can be used to change the annotation's automatic position alignment to the anchor point. The <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorOffsetX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorOffsetY%2A> properties can be used to add extra spacing.  
-  
- When you use this property, make sure the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorY%2A> properties are set to <xref:System.Double.NaN>, as they have precedence.  
-  
- Set this value to `null` to disable annotation anchoring to a data point.  
-  
+The annotation is anchored to the X and Y values of the specified data point, and automatically uses the same axes coordinates as the data point.  
+ 
+To automatically position the annotation relative to the anchor point, make sure its <xref:System.Web.UI.DataVisualization.Charting.Annotation.X%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.Y%2A> properties are set to <xref:System.Double.NaN>. The <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorAlignment%2A> property can be used to change the annotation's automatic position alignment to the anchor point. The <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorOffsetX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorOffsetY%2A> properties can be used to add extra spacing.  
+ 
+When you use this property, make sure the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorY%2A> properties are set to <xref:System.Double.NaN>, as they have precedence.  
+ 
+Set this value to `null` to disable annotation anchoring to a data point.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,10 +225,10 @@
         <value>A <see langword="double" /> value that represents the offset of the X position from the anchor point.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The annotation must be anchored using either the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> or the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorX%2A> property, and its <xref:System.Web.UI.DataVisualization.Charting.Annotation.X%2A> property must be set to <xref:System.Double.NaN>.  
-  
+The annotation must be anchored using either the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> or the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorX%2A> property, and its <xref:System.Web.UI.DataVisualization.Charting.Annotation.X%2A> property must be set to <xref:System.Double.NaN>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,10 +258,10 @@
         <value>A <see langword="double" /> value that represents the offset of the Y position from the anchor point.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The annotation must be anchored using either the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> or <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorY%2A> property, and its <xref:System.Web.UI.DataVisualization.Charting.Annotation.Y%2A> property must be set to <xref:System.Double.NaN>.  
-  
+The annotation must be anchored using either the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> or <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorY%2A> property, and its <xref:System.Web.UI.DataVisualization.Charting.Annotation.Y%2A> property must be set to <xref:System.Double.NaN>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -294,16 +294,16 @@
         <value>A <see langword="double" /> value that represents the X coordinate to which an annotation is anchored.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The annotation is anchored to the X coordinate and is specified in relative chart or axes coordinates, depending on the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> property value.  
-  
- To automatically position an annotation relative to an anchor point, make sure its <xref:System.Web.UI.DataVisualization.Charting.Annotation.X%2A> property is set to <xref:System.Double.NaN>. The <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorAlignment%2A> property can be used to change the automatic position alignment of the annotation to the anchor point. The <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorOffsetX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorOffsetY%2A> properties may be used to add extra spacing.  
-  
- This property has a higher priority than the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property.  
-  
- Set this value to <xref:System.Double.NaN> to disable annotation anchoring to the value.  
-  
+The annotation is anchored to the X coordinate and is specified in relative chart or axes coordinates, depending on the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> property value.  
+ 
+To automatically position an annotation relative to an anchor point, make sure its <xref:System.Web.UI.DataVisualization.Charting.Annotation.X%2A> property is set to <xref:System.Double.NaN>. The <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorAlignment%2A> property can be used to change the automatic position alignment of the annotation to the anchor point. The <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorOffsetX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorOffsetY%2A> properties may be used to add extra spacing.  
+ 
+This property has a higher priority than the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property.  
+ 
+Set this value to <xref:System.Double.NaN> to disable annotation anchoring to the value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -336,16 +336,16 @@
         <value>A <see langword="double" /> value that represents the Y coordinate an annotation is anchored to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The annotation is anchored to the Y coordinate and is specified in relative chart or axes coordinates, depending on the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> property value.  
-  
- To automatically position an annotation relative to an anchor point make sure its <xref:System.Web.UI.DataVisualization.Charting.Annotation.Y%2A> property is set to <xref:System.Double.NaN>. The <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorAlignment%2A> property can be used to change the automatic position alignment of the annotation to the anchor point. The <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorOffsetX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorOffsetY%2A> properties may be used to add extra spacing.  
-  
- This property has a higher priority than the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property.  
-  
- Set this value to <xref:System.Double.NaN> to disable annotation anchoring to the value.  
-  
+The annotation is anchored to the Y coordinate and is specified in relative chart or axes coordinates, depending on the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> property value.  
+ 
+To automatically position an annotation relative to an anchor point make sure its <xref:System.Web.UI.DataVisualization.Charting.Annotation.Y%2A> property is set to <xref:System.Double.NaN>. The <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorAlignment%2A> property can be used to change the automatic position alignment of the annotation to the anchor point. The <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorOffsetX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorOffsetY%2A> properties may be used to add extra spacing.  
+ 
+This property has a higher priority than the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property.  
+ 
+Set this value to <xref:System.Double.NaN> to disable annotation anchoring to the value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -407,10 +407,10 @@
         <value>The type name of an annotation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used to get the name of each annotation type, for example, Line, Rectangle, Ellipse, and so forth.  
-  
+This property is used to get the name of each annotation type, for example, Line, Rectangle, Ellipse, and so forth.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -446,12 +446,12 @@
         <value>An <see cref="T:System.Web.UI.DataVisualization.Charting.Axis" /> object to which the annotation is attached.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an annotation is attached to an axis, its X position is always specified in axes coordinates. To also define the size of an annotation in axes coordinates, make sure the <xref:System.Web.UI.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property is set to `false`.  
-  
- Set this value to `null` to disable attachment to the axis.  
-  
+When an annotation is attached to an axis, its X position is always specified in axes coordinates. To also define the size of an annotation in axes coordinates, make sure the <xref:System.Web.UI.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property is set to `false`.  
+ 
+Set this value to `null` to disable attachment to the axis.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -519,12 +519,12 @@
         <value>An <see cref="T:System.Web.UI.DataVisualization.Charting.Axis" /> object which this annotation is attached to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an annotation is attached to an axis, its Y position is always specified in axes coordinates. To also define the size of an annotation in axes coordinates, make sure the <xref:System.Web.UI.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property is set to `false`.  
-  
- Set to `null` to disable annotation attachment to an axis.  
-  
+When an annotation is attached to an axis, its Y position is always specified in axes coordinates. To also define the size of an annotation in axes coordinates, make sure the <xref:System.Web.UI.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property is set to `false`.  
+ 
+Set to `null` to disable annotation attachment to an axis.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -592,10 +592,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value used to draw an annotation background.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property does not apply to line-type annotations, image annotations and text annotations.  
-  
+This property does not apply to line-type annotations, image annotations and text annotations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -628,12 +628,12 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.GradientStyle" /> value used to draw an annotation background.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two colors are used to draw the gradients, <xref:System.Web.UI.DataVisualization.Charting.Annotation.BackColor%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.BackSecondaryColor%2A>.  
-  
- This property does not apply to line-type annotations, image annotations and text annotations.  
-  
+Two colors are used to draw the gradients, <xref:System.Web.UI.DataVisualization.Charting.Annotation.BackColor%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.BackSecondaryColor%2A>.  
+ 
+This property does not apply to line-type annotations, image annotations and text annotations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -666,12 +666,12 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartHatchStyle" /> value used to draw the background.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two colors are used to draw the hatching, <xref:System.Web.UI.DataVisualization.Charting.Annotation.BackColor%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.BackSecondaryColor%2A>.  
-  
- This property does not apply to line-type annotations, image annotations and text annotations.  
-  
+Two colors are used to draw the hatching, <xref:System.Web.UI.DataVisualization.Charting.Annotation.BackColor%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.BackSecondaryColor%2A>.  
+ 
+This property does not apply to line-type annotations, image annotations and text annotations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -707,12 +707,12 @@
         <value>A <see cref="T:System.Drawing.Color" /> value used to draw an annotation background with hatching or gradient fill.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The secondary color is used with the <xref:System.Web.UI.DataVisualization.Charting.Annotation.BackColor%2A> when <xref:System.Web.UI.DataVisualization.Charting.Annotation.BackHatchStyle%2A> or <xref:System.Web.UI.DataVisualization.Charting.Annotation.BackGradientStyle%2A> is used.  
-  
- This property does not apply to line-type annotations, image annotations and text annotations.  
-  
+The secondary color is used with the <xref:System.Web.UI.DataVisualization.Charting.Annotation.BackColor%2A> when <xref:System.Web.UI.DataVisualization.Charting.Annotation.BackHatchStyle%2A> or <xref:System.Web.UI.DataVisualization.Charting.Annotation.BackGradientStyle%2A> is used.  
+ 
+This property does not apply to line-type annotations, image annotations and text annotations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -751,10 +751,10 @@
         <value>A <see langword="double" /> value that represents the position of the bottom boundary of an annotation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To use axes coordinates, anchor an annotation to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or set the annotation axes using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisY%2A> properties and set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property to `false`.  
-  
+To use axes coordinates, anchor an annotation to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or set the annotation axes using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisY%2A> properties and set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -802,12 +802,12 @@
         <value>A <see langword="string" /> that represents the name of an existing chart area.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the chart area name is specified, an annotation will only be drawn inside the plotting area of the chart area specified. All parts of the annotation outside of the plotting area will be clipped.  
-  
- To disable chart area clipping, set the property to <xref:System.String>.  
-  
+If the chart area name is specified, an annotation will only be drawn inside the plotting area of the chart area specified. All parts of the annotation outside of the plotting area will be clipped.  
+ 
+To disable chart area clipping, set the property to <xref:System.String>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -914,16 +914,16 @@
         <value>A <see langword="double" /> value that represents the height of an annotation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The height of an annotation can be a negative value, in which case the annotation orientation is switched.  
-  
- Annotation height can be in relative chart coordinates or in axes coordinates. Chart relative coordinates are used by default.  
-  
- To use axes coordinates, anchor an annotation to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or set the annotation axes using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> or <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisY%2A> properties and set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property to `false`.  
-  
- Set the height to <xref:System.Double.NaN> to achieve automatic size calculation for annotations with text. The size will automatically be calculated based on the annotation text and font size.  
-  
+The height of an annotation can be a negative value, in which case the annotation orientation is switched.  
+ 
+Annotation height can be in relative chart coordinates or in axes coordinates. Chart relative coordinates are used by default.  
+ 
+To use axes coordinates, anchor an annotation to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or set the annotation axes using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> or <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisY%2A> properties and set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property to `false`.  
+ 
+Set the height to <xref:System.Double.NaN> to achieve automatic size calculation for annotations with text. The size will automatically be calculated based on the annotation text and font size.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -978,12 +978,12 @@
           <see langword="true" /> if the <see cref="P:System.Web.UI.DataVisualization.Charting.Annotation.Width" /> and <see cref="P:System.Web.UI.DataVisualization.Charting.Annotation.Height" /> of an annotation are always expressed in relative chart coordinates; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The height and width of an annotation may be set in relative chart or in axes coordinates. Relative chart coordinates are the default.  
-  
- To express the size of an annotation in axes coordinates, set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property to `false`. Then anchor the annotation to a data point or set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisY%2A> properties.  
-  
+The height and width of an annotation may be set in relative chart or in axes coordinates. Relative chart coordinates are the default.  
+ 
+To express the size of an annotation in axes coordinates, set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property to `false`. Then anchor the annotation to a data point or set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisY%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1085,12 +1085,12 @@
         <value>A <see langword="string" /> value that represents the map area attributes of an annotation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This `string` will be added to the attributes of the image map generated for the annotation.  
-  
- Special keywords can be used when an annotation is anchored to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property.  
-  
+This `string` will be added to the attributes of the image map generated for the annotation.  
+ 
+Special keywords can be used when an annotation is anchored to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1161,15 +1161,15 @@
         <summary>Resizes an annotation according to its content size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Sets the annotation width and height to fit the specified text.  
-  
- This method applies to <xref:System.Web.UI.DataVisualization.Charting.TextAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.RectangleAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.EllipseAnnotation> and <xref:System.Web.UI.DataVisualization.Charting.CalloutAnnotation> objects only.  
-  
+Sets the annotation width and height to fit the specified text.  
+ 
+This method applies to <xref:System.Web.UI.DataVisualization.Charting.TextAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.RectangleAnnotation>, <xref:System.Web.UI.DataVisualization.Charting.EllipseAnnotation> and <xref:System.Web.UI.DataVisualization.Charting.CalloutAnnotation> objects only.  
+ 
 > [!NOTE]
 >  This method requires that the annotation be added to the <xref:System.Web.UI.DataVisualization.Charting.AnnotationCollection> to function correctly.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1208,10 +1208,10 @@
         <value>A <see langword="double" /> value that represents the position of the right boundary of an annotation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To use axes coordinates, anchor an annotation to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or set the annotation axes using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> or <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisY%2A> properties and set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property to `false`.  
-  
+To use axes coordinates, anchor an annotation to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or set the annotation axes using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> or <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisY%2A> properties and set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.IsSizeAlwaysRelative%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1277,10 +1277,10 @@
         <summary>Anchors an annotation to two data points.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Anchors an annotation's top-left and bottom-right corners to the specified data points.  
-  
+Anchors an annotation's top-left and bottom-right corners to the specified data points.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1365,13 +1365,13 @@
         <value>An <see cref="T:System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle" /> object that represents an annotation's smart labels style properties.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Smart labels are used to prevent an annotation from overlapping the data point labels and other annotations.  
-  
+Smart labels are used to prevent an annotation from overlapping the data point labels and other annotations.  
+ 
 > [!NOTE]
 >  Data point labels must also have smart labels enabled.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1421,10 +1421,10 @@
         <value>A <see langword="string" /> value that represents the tooltip text for an annotation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Special keywords can be used in the text when an annotation is anchored to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property.  
-  
+Special keywords can be used in the text when an annotation is anchored to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1451,10 +1451,10 @@
         <value>A <see langword="string" /> value that represents the URL of an annotation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Special keywords can be used when an annotation is anchored to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property.  
-  
+Special keywords can be used when an annotation is anchored to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1514,10 +1514,10 @@
         <value>A <see langword="double" /> value that is a percentage of the chart width.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the <xref:System.Web.UI.DataVisualization.Charting.Annotation.Height%2A> property description.  
-  
+For more information, see the <xref:System.Web.UI.DataVisualization.Charting.Annotation.Height%2A> property description.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1550,14 +1550,14 @@
         <value>A <see langword="double" /> value that represents the X coordinate position of the annotation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The X coordinate of an annotation is specified in relative chart coordinates or in axes coordinates. Relative chart coordinates are used by default.  
-  
- To use axes coordinates, anchor an annotation to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or set the annotation axes using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisY%2A> properties.  
-  
- Set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.X%2A> position to <xref:System.Double.NaN> to automatically calculate position when the annotation has been anchored using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property or the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorY%2A> properties.  
-  
+The X coordinate of an annotation is specified in relative chart coordinates or in axes coordinates. Relative chart coordinates are used by default.  
+ 
+To use axes coordinates, anchor an annotation to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or set the annotation axes using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisY%2A> properties.  
+ 
+Set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.X%2A> position to <xref:System.Double.NaN> to automatically calculate position when the annotation has been anchored using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property or the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorY%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1590,14 +1590,14 @@
         <value>A <see langword="double" /> value that represents the Y coordinate position of the annotation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Y coordinate of an annotation is specified in relative chart coordinates or in axes coordinates. Relative chart coordinates are used by default.  
-  
- To use axes coordinates, anchor an annotation to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or set the annotation axes using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> or <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisY%2A> properties.  
-  
- Set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.Y%2A> position to <xref:System.Double.NaN> to automatically calculate the position when the annotation has been anchored using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property or the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorY%2A> properties.  
-  
+The Y coordinate of an annotation is specified in relative chart coordinates or in axes coordinates. Relative chart coordinates are used by default.  
+ 
+To use axes coordinates, anchor an annotation to a data point using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property, or set the annotation axes using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisX%2A> or <xref:System.Web.UI.DataVisualization.Charting.Annotation.AxisY%2A> properties.  
+ 
+Set the <xref:System.Web.UI.DataVisualization.Charting.Annotation.Y%2A> position to <xref:System.Double.NaN> to automatically calculate the position when the annotation has been anchored using the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> property or the <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Web.UI.DataVisualization.Charting.Annotation.AnchorY%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>

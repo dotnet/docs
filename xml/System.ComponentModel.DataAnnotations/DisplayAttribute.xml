@@ -24,10 +24,10 @@
     <summary>Provides a general-purpose attribute that lets you specify localizable strings for types and members of entity partial classes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The properties of this class can be used either as literals or as resource identifiers for a specified <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType%2A> instance.  
-  
+The properties of this class can be used either as literals or as resource identifiers for a specified <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType%2A> instance.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,10 +51,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DisplayAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor initializes the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName%2A>, <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Name%2A>, <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A>, and <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt%2A> properties to an empty string.  
-  
+The constructor initializes the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName%2A>, <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Name%2A>, <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A>, and <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt%2A> properties to an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,10 +82,10 @@
           <see langword="true" /> if UI should be generated automatically to display this field; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not use this property to access the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateField%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetAutoGenerateField%2A> method instead.  
-  
+Do not use this property to access the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateField%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetAutoGenerateField%2A> method instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to get the property value before it was set.</exception>
@@ -114,17 +114,17 @@
           <see langword="true" /> if UI should be generated automatically to display filtering for this field; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateFilter%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetAutoGenerateFilter%2A> method instead.  
+Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateFilter%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetAutoGenerateFilter%2A> method instead.  
+ 
+Setting this property overrides the default behavior for specifying which columns are included as filters.  
+ 
   
- Setting this property overrides the default behavior for specifying which columns are included as filters.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to disable the filter for the Employee1 field.  
-  
+The following example shows how to disable the filter for the Employee1 field.  
+ 
 ```csharp  
 [MetadataType(typeof(EmployeeMD))]  
 public partial class Employee {  
@@ -138,7 +138,7 @@ public partial class Employee {
     }  
 }  
 ```  
-  
+ 
 ```vb  
 <MetadataType(GetType(EmployeeMD))>  _  
 Public Class Employee  
@@ -156,7 +156,7 @@ Public Class Employee
     End Class  
 End Class  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to get the property value before it was set.</exception>
@@ -184,17 +184,17 @@ End Class
         <value>The value that is used to display a description in the UI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetDescription%2A> method instead.  
+Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetDescription%2A> method instead.  
+ 
+The <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A> property is typically used as a tooltip or description UI element that is bound to the member using this attribute. The Dynamic Data Edit.ascx template will display the description as a tooltip in text-entry fields. A `null` value or empty string is valid.  
+ 
   
- The <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A> property is typically used as a tooltip or description UI element that is bound to the member using this attribute. The Dynamic Data Edit.ascx template will display the description as a tooltip in text-entry fields. A `null` value or empty string is valid.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A> property.  
-  
+The following example shows how to set the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A> property.  
+ 
 ```csharp  
 [MetadataType(typeof(EmployeeMD))]  
 public partial class Employee {  
@@ -208,7 +208,7 @@ public partial class Employee {
     }  
 }  
 ```  
-  
+ 
 ```vb  
 <MetadataType(GetType(EmployeeMD))>  _  
 Public Class Employee  
@@ -226,7 +226,7 @@ Public Class Employee
     End Class  
 End Class  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -302,10 +302,10 @@ End Class
         <returns>The localized description, if the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> has been specified and the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description" /> property represents a resource key; otherwise, the non-localized value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description" /> property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A> property is typically used as a tooltip for the property that is annotated with this attribute.  
-  
+The <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A> property is typically used as a tooltip for the property that is annotated with this attribute.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property and the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description" /> property are initialized, but a public static property that has a name that matches the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description" /> value could not be found for the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property.</exception>
@@ -358,10 +358,10 @@ End Class
         <returns>The localized string for the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name" /> property, if the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property has been specified and the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name" /> property represents a resource key; otherwise, the non-localized value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name" /> property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name is typically used as the field label for a UI element that is bound to the property that is annotated with the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Name%2A> property. A `null` value or empty string is valid.  
-  
+The name is typically used as the field label for a UI element that is bound to the property that is annotated with the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Name%2A> property. A `null` value or empty string is valid.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property and the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name" /> property are initialized, but a public static property that has a name that matches the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name" /> value could not be found for the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property.</exception>
@@ -390,10 +390,10 @@ End Class
         <returns>The value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Order" /> property, if it has been set; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an order is not specified, presentation layers should consider setting the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Order%2A> property to 10000. This value lets explicitly-ordered fields be displayed before and after the fields that do not have a specified order.  
-  
+If an order is not specified, presentation layers should consider setting the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Order%2A> property to 10000. This value lets explicitly-ordered fields be displayed before and after the fields that do not have a specified order.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -421,10 +421,10 @@ End Class
         <returns>Gets the localized string for the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt" /> property if the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property has been specified and if the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt" /> property represents a resource key; otherwise, the non-localized value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt" /> property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt%2A> property is typically used as a prompt or watermark for a UI element that is bound to the property that is annotated with the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt%2A> attribute.  
-  
+The <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt%2A> property is typically used as a prompt or watermark for a UI element that is bound to the property that is annotated with the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt%2A> attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -452,10 +452,10 @@ End Class
         <returns>The localized string for the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName" /> property if the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property has been specified and if the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName" /> property represents a resource key; otherwise, the non-localized value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName" /> value property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The short name is used as the grid column label for a UI element that is bound to the property that is annotated with this attribute. This property returns either the literal, non-localized string, or a localized string if <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType%2A> is not `null`.  
-  
+The short name is used as the grid column label for a UI element that is bound to the property that is annotated with this attribute. This property returns either the literal, non-localized string, or a localized string if <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType%2A> is not `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -482,10 +482,10 @@ End Class
         <value>A value that is used to group fields in the UI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetDescription%2A> method instead. A `null` value or empty string is valid.  
-  
+Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetDescription%2A> method instead. A `null` value or empty string is valid.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -512,17 +512,17 @@ End Class
         <value>A value that is used for display in the UI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Name%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetName%2A> method instead.  
+Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Name%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetName%2A> method instead.  
+ 
+The name is typically used as the field label for a UI element that is bound to the property that is annotated with this attribute. The Dynamic Data List.aspx, ListDetails.aspx, and Details.aspx page templates use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Name%2A> property for the field label. A `null` value or empty string is valid.  
+ 
   
- The name is typically used as the field label for a UI element that is bound to the property that is annotated with this attribute. The Dynamic Data List.aspx, ListDetails.aspx, and Details.aspx page templates use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Name%2A> property for the field label. A `null` value or empty string is valid.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to set the name property.  
-  
+The following example shows how to set the name property.  
+ 
 ```csharp  
 [MetadataType(typeof(EmployeeMD))]  
 public partial class Employee {  
@@ -536,7 +536,7 @@ public partial class Employee {
     }  
 }  
 ```  
-  
+ 
 ```vb  
 <MetadataType(GetType(EmployeeMD))>  _  
 Public Class Employee  
@@ -554,7 +554,7 @@ Public Class Employee
     End Class  
 End Class  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -581,15 +581,15 @@ End Class
         <value>The order weight of the column.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Columns are sorted in increasing order based on the order value. Columns without this attribute have an order value of 0. Negative values are valid and can be used to position a column before all non-negative columns. If an order is not specified, presentation layers should consider using the value 10000. This value lets explicitly-ordered fields be displayed before and after the fields that do not have a specified order.  
+Columns are sorted in increasing order based on the order value. Columns without this attribute have an order value of 0. Negative values are valid and can be used to position a column before all non-negative columns. If an order is not specified, presentation layers should consider using the value 10000. This value lets explicitly-ordered fields be displayed before and after the fields that do not have a specified order.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the order weight of the LastName field to -9. The other fields in the entity have the default order weight of zero. Therefore, the LastName field will be displayed first.  
-  
+The following example shows how to set the order weight of the LastName field to -9. The other fields in the entity have the default order weight of zero. Therefore, the LastName field will be displayed first.  
+ 
 ```csharp  
 [MetadataType(typeof(EmployeeMD))]  
 public partial class Employee {  
@@ -603,7 +603,7 @@ public partial class Employee {
     }  
 }  
 ```  
-  
+ 
 ```vb  
 <MetadataType(GetType(EmployeeMD))>  _  
 Public Class Employee  
@@ -621,7 +621,7 @@ Public Class Employee
     End Class  
 End Class  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -648,15 +648,15 @@ End Class
         <value>A value that will be used to display a watermark in the UI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is typically used as a prompt or watermark for a UI element that is bound to the property that is annotated with this attribute. Do not use this method to access the prompt string. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetPrompt%2A> method instead.  
+This property is typically used as a prompt or watermark for a UI element that is bound to the property that is annotated with this attribute. Do not use this method to access the prompt string. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetPrompt%2A> method instead.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt%2A> property to "Enter Last Name".  
-  
+The following example shows how to set the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt%2A> property to "Enter Last Name".  
+ 
 ```csharp  
 [MetadataType(typeof(EmployeeMD))]  
 public partial class Employee {  
@@ -670,7 +670,7 @@ public partial class Employee {
     }  
 }  
 ```  
-  
+ 
 ```vb  
 <MetadataType(GetType(EmployeeMD))>  _  
 Public Class Employee  
@@ -688,7 +688,7 @@ Public Class Employee
     End Class  
 End Class  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -715,10 +715,10 @@ End Class
         <value>The type of the resource that contains the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName" />, <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name" />, <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt" />, and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description" /> properties.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this value is `null`, the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName%2A>, <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Name%2A>, <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt%2A>, and <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A> properties are assumed to be literal, non-localized strings. If this value is not `null`, the string properties are assumed to be the names of public static properties that return the actual string value.  
-  
+If this value is `null`, the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName%2A>, <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Name%2A>, <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt%2A>, and <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A> properties are assumed to be literal, non-localized strings. If this value is not `null`, the string properties are assumed to be the names of public static properties that return the actual string value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -745,10 +745,10 @@ End Class
         <value>A value that is for the grid column label.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The short name is used as the grid column label for a UI element that is bound to the property that is annotated with this attribute. The Dynamic Data Insert.aspx and Edit.aspx page templates use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName%2A> for the field label. This property returns the localized string for <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType%2A> if the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType%2A> property has been specified and if the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName%2A> property represents a resource key. If the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType%2A> property has not been specified or if the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName%2A> property is not a resource key, this property returns a non-localized string.  
-  
+The short name is used as the grid column label for a UI element that is bound to the property that is annotated with this attribute. The Dynamic Data Insert.aspx and Edit.aspx page templates use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName%2A> for the field label. This property returns the localized string for <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType%2A> if the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType%2A> property has been specified and if the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName%2A> property represents a resource key. If the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType%2A> property has not been specified or if the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName%2A> property is not a resource key, this property returns a non-localized string.  
+ 
  ]]></format>
         </remarks>
       </Docs>

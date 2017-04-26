@@ -14,18 +14,18 @@
     <summary>Dynamically hit tests a <see cref="T:System.Windows.Ink.Stroke" /> with a lasso.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.IncrementalLassoHitTester> hit tests strokes by determining whether a lasso path surrounds it. Use the <xref:System.Windows.Ink.IncrementalHitTester.AddPoints%2A> method in the stylus events to add the points to the <xref:System.Windows.Ink.IncrementalLassoHitTester>. When the points added to the <xref:System.Windows.Ink.IncrementalLassoHitTester> selects or unselects a <xref:System.Windows.Ink.Stroke>, the <xref:System.Windows.Ink.IncrementalLassoHitTester> raises the <xref:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged> event  
+The <xref:System.Windows.Ink.IncrementalLassoHitTester> hit tests strokes by determining whether a lasso path surrounds it. Use the <xref:System.Windows.Ink.IncrementalHitTester.AddPoints%2A> method in the stylus events to add the points to the <xref:System.Windows.Ink.IncrementalLassoHitTester>. When the points added to the <xref:System.Windows.Ink.IncrementalLassoHitTester> selects or unselects a <xref:System.Windows.Ink.Stroke>, the <xref:System.Windows.Ink.IncrementalLassoHitTester> raises the <xref:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged> event  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to dynamically select strokes in a custom control. For the entire sample, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md)  
-  
- [!code-csharp[StrokeCollectionMethods#18](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/InkSelector.cs#18)]
- [!code-vb[StrokeCollectionMethods#18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/InkSelector.vb#18)]  
-  
+The following example demonstrates how to dynamically select strokes in a custom control. For the entire sample, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md)  
+ 
+[!code-csharp[StrokeCollectionMethods#18](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/InkSelector.cs#18)]
+[!code-vb[StrokeCollectionMethods#18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/InkSelector.vb#18)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -88,13 +88,13 @@
         <summary>Occurs when the lasso path selects or unselects an ink <see cref="T:System.Windows.Ink.Stroke" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to dynamically select strokes in a custom control. For the entire sample, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md)  
-  
- [!code-csharp[StrokeCollectionMethods#18](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/InkSelector.cs#18)]
- [!code-vb[StrokeCollectionMethods#18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/InkSelector.vb#18)]  
-  
+The following example demonstrates how to dynamically select strokes in a custom control. For the entire sample, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md)  
+ 
+[!code-csharp[StrokeCollectionMethods#18](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/InkSelector.cs#18)]
+[!code-vb[StrokeCollectionMethods#18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/InkSelector.vb#18)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

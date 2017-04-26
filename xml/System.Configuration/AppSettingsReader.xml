@@ -14,10 +14,10 @@
     <summary>Provides a method for reading values of a particular type from the configuration.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a configuration file that contains the `<appSettings>` section, and then uses the <xref:System.Configuration.AppSettingsReader> to read the settings just generated.  
-  
+The following example creates a configuration file that contains the `<appSettings>` section, and then uses the <xref:System.Configuration.AppSettingsReader> to read the settings just generated.  
+ 
 ```  
 using System;  
 using System.Configuration;  
@@ -48,9 +48,9 @@ class Program
     }  
 }  
 ```  
-  
- The following example demonstrates a configuration file used by the previous example.  
-  
+ 
+The following example demonstrates a configuration file used by the previous example.  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
@@ -60,7 +60,7 @@ class Program
     </appSettings>  
 </configuration>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,10 +79,10 @@ class Program
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.AppSettingsReader" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a configuration file that contains the `<appSettings>` section, and then uses the <xref:System.Configuration.AppSettingsReader> to read the settings just generated.  
-  
+The following example creates a configuration file that contains the `<appSettings>` section, and then uses the <xref:System.Configuration.AppSettingsReader> to read the settings just generated.  
+ 
 ```  
 using System;  
 using System.Configuration;  
@@ -113,9 +113,9 @@ class Program
     }  
 }  
 ```  
-  
- The following example demonstrates a configuration file used by the previous example.  
-  
+ 
+The following example demonstrates a configuration file used by the previous example.  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
@@ -125,7 +125,7 @@ class Program
     </appSettings>  
 </configuration>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,13 +153,13 @@ class Program
         <returns>The value of the specified key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.AppSettingsReader.GetValue%2A> method to retrieve the value for each key in the `<appSettings>` section of the configuration file.  
-  
- [!code-csharp[System.Configuration.AppSettingsReader#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.AppSettingsReader/CS/AppSettingsReader.cs#2)]
- [!code-vb[System.Configuration.AppSettingsReader#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsReader/VB/AppSettingsReader.vb#2)]  
-  
+The following example shows how to use the <xref:System.Configuration.AppSettingsReader.GetValue%2A> method to retrieve the value for each key in the `<appSettings>` section of the configuration file.  
+ 
+[!code-csharp[System.Configuration.AppSettingsReader#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.AppSettingsReader/CS/AppSettingsReader.cs#2)]
+[!code-vb[System.Configuration.AppSettingsReader#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsReader/VB/AppSettingsReader.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

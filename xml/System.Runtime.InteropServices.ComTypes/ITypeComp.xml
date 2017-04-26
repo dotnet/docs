@@ -32,12 +32,12 @@
     <summary>Provides the managed definition of the <see langword="ITypeComp" /> interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the `ITypeComp` interface, see the MSDN Library.  
-  
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
-  
+For more information about the `ITypeComp` interface, see the MSDN Library.  
+ 
+The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -85,10 +85,10 @@
         <summary>Maps a name to a member of a type, or binds global variables and functions contained in a type library.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `ITypeComp::Bind` in the MSDN library.  
-  
+For more information, see the existing documentation for `ITypeComp::Bind` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,10 +132,10 @@
         <summary>Binds to the type descriptions contained within a type library.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the existing documentation for `ITypeComp::BindType` in the MSDN library.  
-  
+For more information, see the existing documentation for `ITypeComp::BindType` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

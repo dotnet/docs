@@ -19,10 +19,10 @@
     <summary>Represents a data service primitive, complex, or entity type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Nested types are not supported as resource types.  
-  
+Nested types are not supported as resource types.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -368,10 +368,10 @@
         <returns>The list of properties declared on this type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Services.Providers.ResourceType.LoadPropertiesDeclaredOnThisType%2A> method enables you to defer loading of the properties of a resource type. This <xref:System.Data.Services.Providers.ResourceType.LoadPropertiesDeclaredOnThisType%2A> method is called only one time when either <xref:System.Data.Services.Providers.ResourceType.Properties%2A> or <xref:System.Data.Services.Providers.ResourceType.PropertiesDeclaredOnThisType%2A> properties are accessed.  
-  
+The <xref:System.Data.Services.Providers.ResourceType.LoadPropertiesDeclaredOnThisType%2A> method enables you to defer loading of the properties of a resource type. This <xref:System.Data.Services.Providers.ResourceType.LoadPropertiesDeclaredOnThisType%2A> method is called only one time when either <xref:System.Data.Services.Providers.ResourceType.Properties%2A> or <xref:System.Data.Services.Providers.ResourceType.PropertiesDeclaredOnThisType%2A> properties are accessed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

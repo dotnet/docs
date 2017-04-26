@@ -22,10 +22,10 @@
     <summary>Represents the design-time version of the <see cref="T:System.Web.UI.DataBoundLiteralControl" /> control. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DesignerDataBoundLiteralControl> class allows the handling of \<%# … %> data-binding expressions during design time.  
-  
+The <xref:System.Web.UI.DesignerDataBoundLiteralControl> class allows the handling of \<%# … %> data-binding expressions during design time.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -144,10 +144,10 @@
         <value>A <see cref="T:System.String" /> that represents the text in the &lt;%# … %&gt; data-binding expression.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DesignerDataBoundLiteralControl.Text%2A> property is used by the designer to specify or determine the text that appears in the \<%# … %> data-binding expression.  
-  
+The <xref:System.Web.UI.DesignerDataBoundLiteralControl.Text%2A> property is used by the designer to specify or determine the text that appears in the \<%# … %> data-binding expression.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

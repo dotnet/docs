@@ -31,12 +31,12 @@
     <summary>Contains functionality to compare nodes for their document order. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class implements `IComparer` and `IComparer<XNode>`.  
-  
- We recommend that instead of using this class directly, you use the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> method. This class is used internally by that method.  
-  
+This class implements `IComparer` and `IComparer<XNode>`.  
+ 
+We recommend that instead of using this class directly, you use the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> method. This class is used internally by that method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,15 +65,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XNodeDocumentOrderComparer" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- We recommend that instead of using this class directly, you use the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> method. This class is used internally by that method.  
+We recommend that instead of using this class directly, you use the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> method. This class is used internally by that method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses of this class to compare the document order for two nodes.  
-  
+The following example uses of this class to compare the document order for two nodes.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -96,13 +96,13 @@ else if (val < 0)
 else  
     Console.WriteLine("Child3 is after Child5");  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 Child3 is before Child5  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,15 +140,15 @@ Child3 is before Child5
         <returns>An <see cref="T:System.Int32" /> that contains 0 if the nodes are equal; -1 if <paramref name="x" /> is before <paramref name="y" />; 1 if <paramref name="x" /> is after <paramref name="y" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- We recommend that instead of using this class directly, you use the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> method. This class is used internally by that method.  
+We recommend that instead of using this class directly, you use the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> method. This class is used internally by that method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses this class to compare document order for two nodes.  
-  
+The following example uses this class to compare document order for two nodes.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -171,13 +171,13 @@ else if (val < 0)
 else  
     Console.WriteLine("Child3 is after Child5");  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 Child3 is before Child5  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The two nodes do not share a common ancestor.</exception>
@@ -216,10 +216,10 @@ Child3 is before Child5
         <returns>An <see cref="T:System.Int32" /> that contains 0 if the nodes are equal; -1 if <paramref name="x" /> is before <paramref name="y" />; 1 if <paramref name="x" /> is after <paramref name="y" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- We recommend that instead of using this class directly, you use the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> method. This class is used internally by that method.  
-  
+We recommend that instead of using this class directly, you use the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> method. This class is used internally by that method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The two nodes do not share a common ancestor.</exception>

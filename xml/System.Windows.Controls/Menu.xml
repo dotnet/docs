@@ -14,20 +14,20 @@
     <summary>Represents a [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] menu control that enables you to hierarchically organize elements associated with commands and event handlers.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.Menu> control presents a list of items that specify commands or options for an application. Typically, clicking an item on a menu opens a submenu or causes an application to carry out a command.  
-  
- <xref:System.Windows.Controls.Menu> is an <xref:System.Windows.Controls.ItemsControl>, which means it can contain a collection of objects of any type (such as string, image, or panel). For more information, see the <xref:System.Windows.Controls.ItemsControl> class. The <xref:System.Windows.Controls.MenuItem> is the most common type of item in a <xref:System.Windows.Controls.Menu>. A <xref:System.Windows.Controls.MenuItem> can contain child items. The child items will appear in a submenu when the user chooses a parent <xref:System.Windows.Controls.MenuItem>.  
-  
+The <xref:System.Windows.Controls.Menu> control presents a list of items that specify commands or options for an application. Typically, clicking an item on a menu opens a submenu or causes an application to carry out a command.  
+ 
+<xref:System.Windows.Controls.Menu> is an <xref:System.Windows.Controls.ItemsControl>, which means it can contain a collection of objects of any type (such as string, image, or panel). For more information, see the <xref:System.Windows.Controls.ItemsControl> class. The <xref:System.Windows.Controls.MenuItem> is the most common type of item in a <xref:System.Windows.Controls.Menu>. A <xref:System.Windows.Controls.MenuItem> can contain child items. The child items will appear in a submenu when the user chooses a parent <xref:System.Windows.Controls.MenuItem>.  
+ 
 ## Customizing the Menu Control  
- To apply the same property settings to multiple <xref:System.Windows.Controls.Menu> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Menu>, see [Menu Styles and Templates](~/docs/framework/wpf/controls/menu-styles-and-templates.md).  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
+To apply the same property settings to multiple <xref:System.Windows.Controls.Menu> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Menu>, see [Menu Styles and Templates](~/docs/framework/wpf/controls/menu-styles-and-templates.md).  
+ 
+Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ 
 > [!NOTE]
 >  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.Menu> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -86,26 +86,26 @@
           <see langword="true" /> if the menu receives a main menu activation notification; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there are multiple <xref:System.Windows.Controls.Menu> controls on a page, <xref:System.Windows.Controls.Menu> controls that should not receive ALT or F10 key notifications should set this property to `false`.  
-  
+If there are multiple <xref:System.Windows.Controls.Menu> controls on a page, <xref:System.Windows.Controls.Menu> controls that should not receive ALT or F10 key notifications should set this property to `false`.  
+ 
 <a name="dependencyPropertyInfo_IsMainMenu"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Menu>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.Menu.IsMainMenu%2A> property to create a <xref:System.Windows.Controls.Menu> that does not receive activation notification.  
-  
- <!-- TODO: review snippet reference [!code-xml[MenuStyles#MenuIsMainMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuStyles/CS/pane1.xaml#menuismainmenu)]  -->
- <!-- TODO: review snippet reference [!code-xml[MenuStyles#MenuIsMainMenu](~/samples/snippets/xaml/VS_Snippets_Wpf/MenuStyles/xaml/pane1.xaml#menuismainmenu)]  -->  
-  
+The following example shows how to use the <xref:System.Windows.Controls.Menu.IsMainMenu%2A> property to create a <xref:System.Windows.Controls.Menu> that does not receive activation notification.  
+ 
+<!-- TODO: review snippet reference [!code-xml[MenuStyles#MenuIsMainMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuStyles/CS/pane1.xaml#menuismainmenu)]  -->
+<!-- TODO: review snippet reference [!code-xml[MenuStyles#MenuIsMainMenu](~/samples/snippets/xaml/VS_Snippets_Wpf/MenuStyles/xaml/pane1.xaml#menuismainmenu)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,10 +216,10 @@
         <summary>Handles the <see cref="E:System.Windows.UIElement.TextInput" /> routed event that occurs when the menu receives text input from any device.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.TextInput> event data.  
-  
+This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.TextInput> event data.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -249,10 +249,10 @@
         <summary>Prepares the specified element to display the specified item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Preparing the element might involve applying styles, setting bindings, and so on.  
-  
+Preparing the element might involve applying styles, setting bindings, and so on.  
+ 
  ]]></format>
         </remarks>
       </Docs>

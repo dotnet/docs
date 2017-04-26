@@ -14,20 +14,20 @@
     <summary>Implements an event provider that saves event notifications to an SQL database.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=fullName> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
-  
- This provider has a comprehensive set of configuration attributes that you can use to customize its behavior.  
-  
+ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=fullName> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+ 
+This provider has a comprehensive set of configuration attributes that you can use to customize its behavior.  
+ 
 > [!NOTE]
 >  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `<healthMonitoring>` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of creating a custom provider, see [How to: Implement the Health Monitoring Custom Provider Example](http://msdn.microsoft.com/library/bbb1c959-e6e4-42b2-be62-49b7ca5ab72c).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is a configuration file excerpt that shows how to specify a provider of type <xref:System.Web.Management.SqlWebEventProvider> in the `<healthMonitoring>` section. The `<add>` element in the `<rules>` section specifies that the provider will handle audit events.  
-  
+The following example is a configuration file excerpt that shows how to specify a provider of type <xref:System.Web.Management.SqlWebEventProvider> in the `<healthMonitoring>` section. The `<add>` element in the `<rules>` section specifies that the provider will handle audit events.  
+ 
 ```  
 <healthMonitoring  
   enabled="true"  
@@ -73,7 +73,7 @@
   </rules>  
 </healthMonitoring>   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -92,10 +92,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Management.SqlWebEventProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is used internally by the ASP.NET health-monitoring system. You will never use it to create an instance of the <xref:System.Web.Management.SqlWebEventProvider> class.  
-  
+This constructor is used internally by the ASP.NET health-monitoring system. You will never use it to create an instance of the <xref:System.Web.Management.SqlWebEventProvider> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <summary>Called when event processing is complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not intended to be used directly from your code. It is called by the ASP.NET health-monitoring system.  
-  
+This method is not intended to be used directly from your code. It is called by the ASP.NET health-monitoring system.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,10 +150,10 @@
         <summary>Sets the initial values for this object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET calls the <xref:System.Web.Management.SqlWebEventProvider.Initialize%2A> method to initialize the <xref:System.Web.Management.SqlWebEventProvider> class with the configuration settings and name as specified in the configuration file.  
-  
+ASP.NET calls the <xref:System.Web.Management.SqlWebEventProvider.Initialize%2A> method to initialize the <xref:System.Web.Management.SqlWebEventProvider> class with the configuration settings and name as specified in the configuration file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">There is no connection string declared in <paramref name="config" />.  
@@ -191,10 +191,10 @@
         <summary>Processes the event passed to the provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not intended to be used directly from your code. It is called by the ASP.NET health-monitoring system to start the processing of the event.  
-  
+This method is not intended to be used directly from your code. It is called by the ASP.NET health-monitoring system to start the processing of the event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -219,10 +219,10 @@
         <summary>Removes all events from the provider's buffer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not intended to be used directly from your code. It is called by the ASP.NET health-monitoring system.  
-  
+This method is not intended to be used directly from your code. It is called by the ASP.NET health-monitoring system.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,10 +244,10 @@
         <summary>Performs tasks associated with shutting down the provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET calls the <xref:System.Web.Management.SqlWebEventProvider.Shutdown%2A> method when the application domain that hosts the Web application terminates. The method is called to perform tasks that allow the application to end gracefully."  
-  
+ASP.NET calls the <xref:System.Web.Management.SqlWebEventProvider.Shutdown%2A> method when the application domain that hosts the Web application terminates. The method is called to perform tasks that allow the application to end gracefully."  
+ 
  ]]></format>
         </remarks>
       </Docs>

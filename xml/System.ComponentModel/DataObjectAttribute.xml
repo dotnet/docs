@@ -24,20 +24,20 @@
     <summary>Identifies a type as an object suitable for binding to an <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> object. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ComponentModel.DataObjectAttribute> attribute to identify an object as suitable for use by an <xref:System.Web.UI.WebControls.ObjectDataSource> object. Design-time classes such as the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> class use the <xref:System.ComponentModel.DataObjectAttribute> attribute to present suitable objects to bind to an <xref:System.Web.UI.WebControls.ObjectDataSource> object.  
+Use the <xref:System.ComponentModel.DataObjectAttribute> attribute to identify an object as suitable for use by an <xref:System.Web.UI.WebControls.ObjectDataSource> object. Design-time classes such as the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> class use the <xref:System.ComponentModel.DataObjectAttribute> attribute to present suitable objects to bind to an <xref:System.Web.UI.WebControls.ObjectDataSource> object.  
+ 
+For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how you can apply the <xref:System.ComponentModel.DataObjectAttribute> attribute to indicate an object is suitable for binding to an <xref:System.Web.UI.WebControls.ObjectDataSource> object. In this example, the `NorthwindData` object is intended for use with an <xref:System.Web.UI.WebControls.ObjectDataSource> object.  
-  
- [!code-csharp[System.ComponentModel.DataObjectMethodAttribute#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataObjectMethodAttribute/CS/dataobjectmethodattribute.cs#3)]
- [!code-vb[System.ComponentModel.DataObjectMethodAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataObjectMethodAttribute/VB/dataobjectmethodattribute.vb#3)]  
-  
+The following code example demonstrates how you can apply the <xref:System.ComponentModel.DataObjectAttribute> attribute to indicate an object is suitable for binding to an <xref:System.Web.UI.WebControls.ObjectDataSource> object. In this example, the `NorthwindData` object is intended for use with an <xref:System.Web.UI.WebControls.ObjectDataSource> object.  
+ 
+[!code-csharp[System.ComponentModel.DataObjectMethodAttribute#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataObjectMethodAttribute/CS/dataobjectmethodattribute.cs#3)]
+[!code-vb[System.ComponentModel.DataObjectMethodAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataObjectMethodAttribute/VB/dataobjectmethodattribute.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,18 +61,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataObjectAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.DataObjectAttribute.IsDataObject%2A> property is set to `true` when you use the <xref:System.ComponentModel.DataObjectAttribute.%23ctor> constructor.  
+The <xref:System.ComponentModel.DataObjectAttribute.IsDataObject%2A> property is set to `true` when you use the <xref:System.ComponentModel.DataObjectAttribute.%23ctor> constructor.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.ComponentModel.DataObjectAttribute.%23ctor> constructor.  
-  
- [!code-csharp[System.ComponentModel.DataObjectMethodAttribute#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataObjectMethodAttribute/CS/dataobjectmethodattribute.cs#3)]
- [!code-vb[System.ComponentModel.DataObjectMethodAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataObjectMethodAttribute/VB/dataobjectmethodattribute.vb#3)]  
-  
+The following code example demonstrates using the <xref:System.ComponentModel.DataObjectAttribute.%23ctor> constructor.  
+ 
+[!code-csharp[System.ComponentModel.DataObjectMethodAttribute#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataObjectMethodAttribute/CS/dataobjectmethodattribute.cs#3)]
+[!code-vb[System.ComponentModel.DataObjectMethodAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataObjectMethodAttribute/VB/dataobjectmethodattribute.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,12 +100,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataObjectAttribute" /> class and indicates whether an object is suitable for binding to an <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ComponentModel.DataObjectAttribute.%23ctor%28System.Boolean%29> constructor to indicate to a design-time class such as the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> class that an object should be excluded from the list of suitable objects for binding to an <xref:System.Web.UI.WebControls.ObjectDataSource> object.  
-  
- The <xref:System.ComponentModel.DataObjectAttribute.IsDataObject%2A> property is set to the value of the `isDataObject` parameter.  
-  
+Use the <xref:System.ComponentModel.DataObjectAttribute.%23ctor%28System.Boolean%29> constructor to indicate to a design-time class such as the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> class that an object should be excluded from the list of suitable objects for binding to an <xref:System.Web.UI.WebControls.ObjectDataSource> object.  
+ 
+The <xref:System.ComponentModel.DataObjectAttribute.IsDataObject%2A> property is set to the value of the `isDataObject` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,10 +131,10 @@
         <summary>Indicates that the class is suitable for binding to an <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> object at design time. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.DataObjectAttribute.DataObject> field returns a new <xref:System.ComponentModel.DataObjectAttribute> object with the <xref:System.ComponentModel.DataObjectAttribute.IsDataObject%2A> property set to `true`.  
-  
+The <xref:System.ComponentModel.DataObjectAttribute.DataObject> field returns a new <xref:System.ComponentModel.DataObjectAttribute> object with the <xref:System.ComponentModel.DataObjectAttribute.IsDataObject%2A> property set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,10 +160,10 @@
         <summary>Represents the default value of the <see cref="T:System.ComponentModel.DataObjectAttribute" /> class, which indicates that the class is suitable for binding to an <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> object at design time. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.DataObjectAttribute.Default> field defines an instance of the <xref:System.ComponentModel.DataObjectAttribute> class initialized with the <xref:System.ComponentModel.DataObjectAttribute.%23ctor%2A> constructor, which sets the <xref:System.ComponentModel.DataObjectAttribute.IsDataObject%2A> property to `true`.  
-  
+The <xref:System.ComponentModel.DataObjectAttribute.Default> field defines an instance of the <xref:System.ComponentModel.DataObjectAttribute> class initialized with the <xref:System.ComponentModel.DataObjectAttribute.%23ctor%2A> constructor, which sets the <xref:System.ComponentModel.DataObjectAttribute.IsDataObject%2A> property to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,10 +195,10 @@
           <see langword="true" /> if this instance is the same as the instance specified by the <paramref name="obj" /> parameter; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method determines whether this instance of <xref:System.ComponentModel.DataObjectAttribute> fits the pattern of another object.  
-  
+This method determines whether this instance of <xref:System.ComponentModel.DataObjectAttribute> fits the pattern of another object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,10 +297,10 @@
         <summary>Indicates that the class is not suitable for binding to an <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> object at design time. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.DataObjectAttribute.NonDataObject> field returns a new <xref:System.ComponentModel.DataObjectAttribute> object with the <xref:System.ComponentModel.DataObjectAttribute.IsDataObject%2A> property set to `false`.  
-  
+The <xref:System.ComponentModel.DataObjectAttribute.NonDataObject> field returns a new <xref:System.ComponentModel.DataObjectAttribute> object with the <xref:System.ComponentModel.DataObjectAttribute.IsDataObject%2A> property set to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

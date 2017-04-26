@@ -34,21 +34,21 @@
     <summary>Provides culture-specific information used by the [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)] system themes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_PlatformCulture"></a>   
 ## XAML Attribute Usage  
- `<` *object property* `="{x:Static theme:PlatformCulture.FlowDirection}"/>`  
-  
+`<` *object property* `="{x:Static theme:PlatformCulture.FlowDirection}"/>`  
+ 
 <a name="xamlValues_PlatformCulture"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
- *theme*  
- An xmlns prefix mapping to the <xref:Microsoft.Windows.Themes> [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] namespace in a specific assembly.  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
+*theme*  
+An xmlns prefix mapping to the <xref:Microsoft.Windows.Themes> [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] namespace in a specific assembly.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -90,25 +90,25 @@
         <value>One of the enumeration values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_FlowDirection"></a>   
 ## XAML Attribute Usage  
- `<` *object property* `="{x:Static theme:PlatformCulture.FlowDirection}"/>`  
-  
+`<` *object property* `="{x:Static theme:PlatformCulture.FlowDirection}"/>`  
+ 
 <a name="xamlValues_FlowDirection"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
- *theme*  
- An xmlns prefix mapping to the <xref:Microsoft.Windows.Themes> [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] namespace in a specific assembly.  
-  
- <Grid  
-  
- FlowDirection="{x:Static theme:PlatformCulture.FlowDirection}"  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
+*theme*  
+An xmlns prefix mapping to the <xref:Microsoft.Windows.Themes> [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] namespace in a specific assembly.  
+ 
+<Grid  
+ 
+FlowDirection="{x:Static theme:PlatformCulture.FlowDirection}"  
+ 
  ]]></format>
         </remarks>
       </Docs>

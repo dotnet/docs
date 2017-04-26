@@ -14,13 +14,13 @@
     <summary>Provides data for the <see cref="E:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Device.Location.ResolveAddressCompletedEventArgs>.  
-  
- [!code-csharp[System.Device.Location.ResolveCivicAddressAsync#2](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/cs/resolvecivicaddressasync.cs#2)]
- [!code-vb[System.Device.Location.ResolveCivicAddressAsync#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/vb/resolvecivicaddressasync.vb#2)]  
-  
+The following example shows how to use the <xref:System.Device.Location.ResolveAddressCompletedEventArgs>.  
+ 
+[!code-csharp[System.Device.Location.ResolveCivicAddressAsync#2](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/cs/resolvecivicaddressasync.cs#2)]
+[!code-vb[System.Device.Location.ResolveCivicAddressAsync#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/vb/resolvecivicaddressasync.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,10 +49,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Device.Location.ResolveAddressCompletedEventArgs" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is public so that classes implementing the <xref:System.Device.Location.ICivicAddressResolver> interface can create this object to fire events.  
-  
+This constructor is public so that classes implementing the <xref:System.Device.Location.ICivicAddressResolver> interface can create this object to fire events.  
+ 
  ]]></format>
         </remarks>
       </Docs>

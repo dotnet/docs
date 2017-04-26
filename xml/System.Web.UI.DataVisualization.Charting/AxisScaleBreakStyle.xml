@@ -19,39 +19,39 @@
     <summary>Represents a scale break on the Y-axis of the chart.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Scale breaks are intentional discontinuities on the Y-axis that are most often used to redistribute the data points in a series on a chart. This feature improves readability when there are large differences between the high and low values of the data in one series being plotted. Scale breaks are not drawn for differences between data in multiple series.  
-  
- By default, scale breaks are disabled. You can enable scale breaks on the Y-axis by setting the <xref:System.Web.UI.DataVisualization.Charting.AxisScaleBreakStyle.Enabled%2A> property to `true`. To change the amount of vertical space of the scale break, you can specify a <xref:System.Web.UI.DataVisualization.Charting.AxisScaleBreakStyle.Spacing%2A> value. This is calculated as a percentage of the Y-axis scale.  
-  
- You must have sufficient separation between ranges of data points in a single series to draw a scale break. By default, a scale break can be added only if there is a separation between the data ranges of at least 25% of the chart. If you enable a scale break but it does not appear, even though there is sufficient distance between the data ranges, you can set the <xref:System.Web.UI.DataVisualization.Charting.AxisScaleBreakStyle.CollapsibleSpaceThreshold%2A> property to a value less than 25.  
-  
- Charts support up to five scale breaks per chart; however, the chart can become unreadable if you display more than one scale break. If you have more than two data ranges, consider using a different method for displaying this data. Use the <xref:System.Web.UI.DataVisualization.Charting.AxisScaleBreakStyle.MaxNumberOfBreaks%2A> property to reduce the number of scale breaks that can be displayed on the chart.  
-  
- When a scale break is used, the Y-axis labels may become offset. To disable the label offset, set the <xref:System.Web.UI.DataVisualization.Charting.LabelStyle.IsStaggered%2A> property to `false`.  
-  
- Scale breaks are not supported under any of the following conditions:  
-  
+Scale breaks are intentional discontinuities on the Y-axis that are most often used to redistribute the data points in a series on a chart. This feature improves readability when there are large differences between the high and low values of the data in one series being plotted. Scale breaks are not drawn for differences between data in multiple series.  
+ 
+By default, scale breaks are disabled. You can enable scale breaks on the Y-axis by setting the <xref:System.Web.UI.DataVisualization.Charting.AxisScaleBreakStyle.Enabled%2A> property to `true`. To change the amount of vertical space of the scale break, you can specify a <xref:System.Web.UI.DataVisualization.Charting.AxisScaleBreakStyle.Spacing%2A> value. This is calculated as a percentage of the Y-axis scale.  
+ 
+You must have sufficient separation between ranges of data points in a single series to draw a scale break. By default, a scale break can be added only if there is a separation between the data ranges of at least 25% of the chart. If you enable a scale break but it does not appear, even though there is sufficient distance between the data ranges, you can set the <xref:System.Web.UI.DataVisualization.Charting.AxisScaleBreakStyle.CollapsibleSpaceThreshold%2A> property to a value less than 25.  
+ 
+Charts support up to five scale breaks per chart; however, the chart can become unreadable if you display more than one scale break. If you have more than two data ranges, consider using a different method for displaying this data. Use the <xref:System.Web.UI.DataVisualization.Charting.AxisScaleBreakStyle.MaxNumberOfBreaks%2A> property to reduce the number of scale breaks that can be displayed on the chart.  
+ 
+When a scale break is used, the Y-axis labels may become offset. To disable the label offset, set the <xref:System.Web.UI.DataVisualization.Charting.LabelStyle.IsStaggered%2A> property to `false`.  
+ 
+Scale breaks are not supported under any of the following conditions:  
+ 
 -   Pie, doughnut, funnel, pyramid, radial or any stacked chart types are used.  
-  
+ 
 -   Custom intervals for labels, tick marks or grid lines are enabled.  
-  
+ 
 -   The minimum or maximum value for the axis is set.  
-  
+ 
 -   Custom labels are used.  
-  
+ 
 -   A logarithmic Y-axis is specified.  
-  
+ 
 -   Axis views on the Y-axis, which include scrolling and zooming, are used.  
-  
+ 
 -   3-D charts are used.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
-  
+The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
+ 
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
   
@@ -86,7 +86,7 @@ Private Function AddScaleBreaks()
   
 End Function  
 ```  
-  
+ 
 ```csharp  
 using System.Web.UI.DataVisualization.Charting  
   
@@ -119,7 +119,7 @@ private void AddScaleBreaks()
     chart1.ChartAreas["ChartArea1"].AxisY.ScaleBreakStyle.Spacing = 2;  
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -161,10 +161,10 @@ private void AddScaleBreaks()
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.BreakLineStyle" /> enumeration value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
-  
+The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
+ 
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
   
@@ -199,7 +199,7 @@ Private Function AddScaleBreaks()
   
 End Function  
 ```  
-  
+ 
 ```csharp  
 using System.Web.UI.DataVisualization.Charting  
   
@@ -232,7 +232,7 @@ private void AddScaleBreaks()
     chart1.ChartAreas["ChartArea1"].AxisY.ScaleBreakStyle.Spacing = 2;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -259,15 +259,15 @@ private void AddScaleBreaks()
         <value>An <see langword="integer" /> value that specifies the threshold of space on the chart at which scale breaks are drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is measured as a percentage of the Y-axis scale. By default, its value is set to 25. This means that data points in a series that have a difference of at least 25% of the scale will be collapsed with a scale break.  
+This property is measured as a percentage of the Y-axis scale. By default, its value is set to 25. This means that data points in a series that have a difference of at least 25% of the scale will be collapsed with a scale break.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
-  
+The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
+ 
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
   
@@ -302,7 +302,7 @@ Private Function AddScaleBreaks()
   
 End Function  
 ```  
-  
+ 
 ```csharp  
 using System.Web.UI.DataVisualization.Charting  
   
@@ -335,7 +335,7 @@ private void AddScaleBreaks()
     chart1.ChartAreas["ChartArea1"].AxisY.ScaleBreakStyle.Spacing = 2;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -365,10 +365,10 @@ private void AddScaleBreaks()
         <value>A <see langword="Boolean" /> value that specifies whether scale breaks are enabled.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
-  
+The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
+ 
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
   
@@ -403,7 +403,7 @@ Private Function AddScaleBreaks()
   
 End Function  
 ```  
-  
+ 
 ```csharp  
 using System.Web.UI.DataVisualization.Charting  
   
@@ -436,7 +436,7 @@ private void AddScaleBreaks()
     chart1.ChartAreas["ChartArea1"].AxisY.ScaleBreakStyle.Spacing = 2;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -469,10 +469,10 @@ private void AddScaleBreaks()
         <value>A <see cref="T:System.Drawing.Color" /> value that represents the color of the scale break line.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
-  
+The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
+ 
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
   
@@ -507,7 +507,7 @@ Private Function AddScaleBreaks()
   
 End Function  
 ```  
-  
+ 
 ```csharp  
 using System.Web.UI.DataVisualization.Charting  
   
@@ -540,7 +540,7 @@ private void AddScaleBreaks()
     chart1.ChartAreas["ChartArea1"].AxisY.ScaleBreakStyle.Spacing = 2;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -567,10 +567,10 @@ private void AddScaleBreaks()
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartDashStyle" /> value that represents the style of the scale break line.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
-  
+The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
+ 
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
   
@@ -605,7 +605,7 @@ Private Function AddScaleBreaks()
   
 End Function  
 ```  
-  
+ 
 ```csharp  
 using System.Web.UI.DataVisualization.Charting  
   
@@ -638,7 +638,7 @@ private void AddScaleBreaks()
     chart1.ChartAreas["ChartArea1"].AxisY.ScaleBreakStyle.Spacing = 2;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -665,10 +665,10 @@ private void AddScaleBreaks()
         <value>An <see langword="integer" /> value that represents the width of the scale break line.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
-  
+The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
+ 
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
   
@@ -703,7 +703,7 @@ Private Function AddScaleBreaks()
   
 End Function  
 ```  
-  
+ 
 ```csharp  
 using System.Web.UI.DataVisualization.Charting  
   
@@ -736,7 +736,7 @@ private void AddScaleBreaks()
     chart1.ChartAreas["ChartArea1"].AxisY.ScaleBreakStyle.Spacing = 2;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -763,15 +763,15 @@ private void AddScaleBreaks()
         <value>An <see langword="integer" /> value that represents the maximum number of scale breaks to be displayed on the chart.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.Chart> is capable of displaying up to five scale breaks.  
+The <xref:System.Web.UI.DataVisualization.Charting.Chart> is capable of displaying up to five scale breaks.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
-  
+The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
+ 
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
   
@@ -806,7 +806,7 @@ Private Function AddScaleBreaks()
   
 End Function  
 ```  
-  
+ 
 ```csharp  
 using System.Web.UI.DataVisualization.Charting  
   
@@ -839,7 +839,7 @@ private void AddScaleBreaks()
     chart1.ChartAreas["ChartArea1"].AxisY.ScaleBreakStyle.Spacing = 2;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -866,10 +866,10 @@ private void AddScaleBreaks()
         <value>A <see langword="double" /> value that represents the spacing gap between the lines of the scale break.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to set properties relating to the scale break. It is assumed that the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
-  
+The following code example demonstrates how to set properties relating to the scale break. It is assumed that the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
+ 
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
   
@@ -905,7 +905,7 @@ Private Function AddScaleBreaks()
   
 End Function  
 ```  
-  
+ 
 ```csharp  
 using System.Web.UI.DataVisualization.Charting  
   
@@ -939,7 +939,7 @@ private void AddScaleBreaks()
     chart1.ChartAreas["Default"].AxisY.ScaleBreakStyle.Spacing = 2;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -966,15 +966,15 @@ private void AddScaleBreaks()
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.StartFromZero" /> enumeration value that indicates whether to start the scale break from zero.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.UI.DataVisualization.Charting.AxisScaleBreakStyle.StartFromZero%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.StartFromZero>, the chart will automatically calculate whether to start the Y-axis scale minimum from the lowest value in the series or from zero.  
+If the <xref:System.Web.UI.DataVisualization.Charting.AxisScaleBreakStyle.StartFromZero%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.StartFromZero>, the chart will automatically calculate whether to start the Y-axis scale minimum from the lowest value in the series or from zero.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
-  
+The following code example demonstrates how to enable and customize a scale break after the <xref:System.Web.UI.DataVisualization.Charting.Chart> control has been added to the design surface.  
+ 
 ```vb  
 Imports System.Web.UI.DataVisualization.Charting  
   
@@ -1009,7 +1009,7 @@ Private Function AddScaleBreaks()
   
 End Function  
 ```  
-  
+ 
 ```csharp  
 using System.Web.UI.DataVisualization.Charting  
   
@@ -1042,7 +1042,7 @@ private void AddScaleBreaks()
     chart1.ChartAreas["ChartArea1"].AxisY.ScaleBreakStyle.Spacing = 2;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

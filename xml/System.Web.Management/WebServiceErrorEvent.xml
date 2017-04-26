@@ -14,10 +14,10 @@
     <summary>Defines the event that contains information about Web service errors.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Management.WebServiceErrorEvent> event is raised if an error occurs during a Web service request. Your application can use this event to obtain request-related information, which is available by using the <xref:System.Web.Management.WebRequestInformation> and the <xref:System.Web.Management.WebThreadInformation> classes.  
-  
+The <xref:System.Web.Management.WebServiceErrorEvent> event is raised if an error occurs during a Web service request. Your application can use this event to obtain request-related information, which is available by using the <xref:System.Web.Management.WebRequestInformation> and the <xref:System.Web.Management.WebThreadInformation> classes.  
+ 
  ]]></format>
     </remarks>
   </Docs>

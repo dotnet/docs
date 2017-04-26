@@ -18,12 +18,12 @@
     <summary>Allows control of code access permissions for messaging.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates several instances of <xref:System.Messaging.MessageQueuePermission> and demonstrates the use of the <xref:System.Messaging.MessageQueuePermission.PermissionEntries%2A> property.  
-  
- [!code-csharp[MessageQueuePermission#0](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermission/CS/class1.cs#0)]  
-  
+The following code example creates several instances of <xref:System.Messaging.MessageQueuePermission> and demonstrates the use of the <xref:System.Messaging.MessageQueuePermission.PermissionEntries%2A> property.  
+ 
+[!code-csharp[MessageQueuePermission#0](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermission/CS/class1.cs#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -42,12 +42,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueuePermission" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermission>.  
-  
- [!code-csharp[MessageQueuePermission#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermission/CS/class1.cs#1)]  
-  
+The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermission>.  
+ 
+[!code-csharp[MessageQueuePermission#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermission/CS/class1.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -69,12 +69,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueuePermission" /> class with the specified permission access level entries.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermission>.  
-  
- [!code-csharp[MessageQueuePermission#4](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermission/CS/class1.cs#4)]  
-  
+The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermission>.  
+ 
+[!code-csharp[MessageQueuePermission#4](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermission/CS/class1.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,12 +96,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueuePermission" /> class with the specified permission state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermission>.  
-  
- [!code-csharp[MessageQueuePermission#5](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermission/CS/class1.cs#5)]  
-  
+The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermission>.  
+ 
+[!code-csharp[MessageQueuePermission#5](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermission/CS/class1.cs#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,12 +125,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueuePermission" /> class with the specified access levels and the path of the queue.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermission>.  
-  
- [!code-csharp[MessageQueuePermission#2](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermission/CS/class1.cs#2)]  
-  
+The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermission>.  
+ 
+[!code-csharp[MessageQueuePermission#2](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermission/CS/class1.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,12 +158,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueuePermission" /> class with the specified access levels, computer to use, queue description, and queue category.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermission>.  
-  
- [!code-csharp[MessageQueuePermission#3](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermission/CS/class1.cs#3)]  
-  
+The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermission>.  
+ 
+[!code-csharp[MessageQueuePermission#3](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermission/CS/class1.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -290,12 +290,12 @@
         <value>A <see cref="T:System.Messaging.MessageQueuePermissionEntryCollection" /> that contains the permission entries for this permissions request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermission> and gets the value of its <xref:System.Messaging.MessageQueuePermission.PermissionEntries%2A> property.  
-  
- [!code-csharp[MessageQueuePermission#6](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermission/CS/class1.cs#6)]  
-  
+The following code example creates a new instance of <xref:System.Messaging.MessageQueuePermission> and gets the value of its <xref:System.Messaging.MessageQueuePermission.PermissionEntries%2A> property.  
+ 
+[!code-csharp[MessageQueuePermission#6](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermission/CS/class1.cs#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

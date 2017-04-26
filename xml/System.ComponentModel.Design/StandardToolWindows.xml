@@ -19,19 +19,19 @@
     <summary>Defines GUID identifiers that correspond to the standard set of tool windows that are available in the design environment.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These GUIDs can be used to access the standard tool windows that are available to the design-time environment.  
+These GUIDs can be used to access the standard tool windows that are available to the design-time environment.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use <xref:System.ComponentModel.Design.StandardToolWindows> to display a standard tool window. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.IUIService> interface.  
-  
- [!code-cpp[IUIServiceExample#5](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#5)]
- [!code-csharp[IUIServiceExample#5](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#5)]
- [!code-vb[IUIServiceExample#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#5)]  
-  
+The following code example demonstrates how to use <xref:System.ComponentModel.Design.StandardToolWindows> to display a standard tool window. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.IUIService> interface.  
+ 
+[!code-cpp[IUIServiceExample#5](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#5)]
+[!code-csharp[IUIServiceExample#5](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#5)]
+[!code-vb[IUIServiceExample#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#5)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -210,14 +210,14 @@
         <summary>Gets the GUID for the task list. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use <xref:System.ComponentModel.Design.StandardToolWindows> to display a standard tool window. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.IUIService> interface.  
-  
- [!code-cpp[IUIServiceExample#5](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#5)]
- [!code-csharp[IUIServiceExample#5](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#5)]
- [!code-vb[IUIServiceExample#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#5)]  
-  
+The following code example demonstrates how to use <xref:System.ComponentModel.Design.StandardToolWindows> to display a standard tool window. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.IUIService> interface.  
+ 
+[!code-cpp[IUIServiceExample#5](~/samples/snippets/cpp/VS_Snippets_Winforms/IUIServiceExample/CPP/class1.cpp#5)]
+[!code-csharp[IUIServiceExample#5](~/samples/snippets/csharp/VS_Snippets_Winforms/IUIServiceExample/CS/class1.cs#5)]
+[!code-vb[IUIServiceExample#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IUIServiceExample/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,10 +18,10 @@
     <summary>Handles the importation of data contract messages from WSDL documents.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Description.DataContractSerializerMessageContractImporter> is invoked by the <xref:System.ServiceModel.Description.WsdlImporter> when converting a WSDL description. It examines the WSDL documents and generates an in-memory description to be used later for code generation.  
-  
+The <xref:System.ServiceModel.Description.DataContractSerializerMessageContractImporter> is invoked by the <xref:System.ServiceModel.Description.WsdlImporter> when converting a WSDL description. It examines the WSDL documents and generates an in-memory description to be used later for code generation.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,10 +84,10 @@
         <summary>Specifies a service description and schema set to use when importing a set of WSDL documents.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specifies a service description and schema set to use when importing a set of WSDL documents.  
-  
+Specifies a service description and schema set to use when importing a set of WSDL documents.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
         <summary>Imports a message contract from a WSDL document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Imports a message contract from a WSDL document.  
-  
+Imports a message contract from a WSDL document.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <summary>Converts the WSDL document from a specified endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Converts the WSDL document from a specified endpoint.  
-  
+Converts the WSDL document from a specified endpoint.  
+ 
  ]]></format>
         </remarks>
       </Docs>

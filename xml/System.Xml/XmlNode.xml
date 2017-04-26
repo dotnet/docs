@@ -38,13 +38,13 @@
     <summary>Represents a single node in the XML document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class implements the W3C Document Object Model (DOM) Level 1 Core and the Core DOM Level 2. The DOM is an in-memory (cache) tree representation of an XML document. `XmlNode` is the base class in the .NET implementation of the DOM. It supports XPath selections and provides editing capabilities. The <xref:System.Xml.XmlDocument> class extends `XmlNode` and represents an XML document. You can use `XmlDocument` to load and save XML data. It also includes methods for node creation. See [XML Document Object Model (DOM)](~/docs/standard/data/xml/xml-document-object-model-dom.md) for more information.  
-  
+This class implements the W3C Document Object Model (DOM) Level 1 Core and the Core DOM Level 2. The DOM is an in-memory (cache) tree representation of an XML document. `XmlNode` is the base class in the .NET implementation of the DOM. It supports XPath selections and provides editing capabilities. The <xref:System.Xml.XmlDocument> class extends `XmlNode` and represents an XML document. You can use `XmlDocument` to load and save XML data. It also includes methods for node creation. See [XML Document Object Model (DOM)](~/docs/standard/data/xml/xml-document-object-model-dom.md) for more information.  
+ 
 > [!IMPORTANT]
 >  Exceptions raised as a result of using the <xref:System.Xml.XmlNode> class, such as the <xref:System.Xml.XmlException> class may contain sensitive information that should not be exposed in untrusted scenarios. Exceptions should be properly handled so that this sensitive information is not exposed in untrusted scenarios.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,23 +79,23 @@
         <returns>The node added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
+If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
+ 
+If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ 
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
-  
-   
-  
+ 
 ## Examples  
- The following example adds a new node to the XML document.  
-  
- [!code-cpp[Classic WebData XmlNode.AppendChild Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.AppendChild Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.AppendChild Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.AppendChild Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.AppendChild Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.AppendChild Example/VB/source.vb#1)]  
-  
- **Output:**  
-  
+The following example adds a new node to the XML document.  
+ 
+[!code-cpp[Classic WebData XmlNode.AppendChild Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.AppendChild Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.AppendChild Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.AppendChild Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.AppendChild Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.AppendChild Example/VB/source.vb#1)]  
+ 
+**Output:**  
+ 
 ```  
 Display the modified XML...  
 <?xml version="1.0" encoding="IBM437"?>  
@@ -103,7 +103,7 @@ Display the modified XML...
   <title>Pride And Prejudice</title>  
   <price>19.95</price>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This node is of a type that does not allow child nodes of the type of the <paramref name="newChild" /> node.  
@@ -145,14 +145,14 @@ Display the modified XML...
  If the node is of type XmlNodeType.Element, the attributes of the node are returned. Otherwise, this property returns <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example adds a new attribute to the XML document.  
-  
- [!code-cpp[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/VB/source.vb#1)]  
-  
+The following example adds a new attribute to the XML document.  
+ 
+[!code-cpp[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,23 +183,23 @@ Display the modified XML...
         <value>The location from which the node was loaded or String.Empty if the node has no base URI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A networked XML document is comprised of chunks of data aggregated using various W3C standard inclusion mechanisms and therefore contains nodes that come from different places. The `BaseURI` tells you where these nodes came from.  
-  
- The value of this property varies depending on the node type. For example, Document nodes return the location of the <xref:System.Xml.XmlDocument> object. Nodes which are child nodes of external EntityReference nodes return the location of the entity itself. For example, consider the following XML document:  
-  
+A networked XML document is comprised of chunks of data aggregated using various W3C standard inclusion mechanisms and therefore contains nodes that come from different places. The `BaseURI` tells you where these nodes came from.  
+ 
+The value of this property varies depending on the node type. For example, Document nodes return the location of the <xref:System.Xml.XmlDocument> object. Nodes which are child nodes of external EntityReference nodes return the location of the entity itself. For example, consider the following XML document:  
+ 
 ```  
 <!DOCTYPE item [  
 <!ENTITY xyz SYSTEM "a/b.xml">  
 ]>  
 <item num='123'>&xyz;</item>  
 ```  
-  
- where the external entity `a/b.xml` contains the XML text: `<test>123</test>`.  
-  
- If the document is loaded from http://server/mydata.xml, `BaseURI` returns the following:  
-  
+ 
+where the external entity `a/b.xml` contains the XML text: `<test>123</test>`.  
+ 
+If the document is loaded from http://server/mydata.xml, `BaseURI` returns the following:  
+ 
 |NodeType|Name|BaseURI|  
 |--------------|----------|-------------|  
 |Attribute|num|http://server/mydata.xml|  
@@ -210,26 +210,26 @@ Display the modified XML...
 |EntityReference|xyz|http://server/mydata.xml|  
 |Element|test|http://server/a/b.xml|  
 |Text|#text|http://server/a/b.xml|  
-  
- `BaseURI` looks for entity reference boundaries, so if entities are expanded this information is not preserved and this property returns the location of the `XmlDocument` object in all cases.  
-  
- As a second example, given the following XML document:  
-  
+ 
+`BaseURI` looks for entity reference boundaries, so if entities are expanded this information is not preserved and this property returns the location of the `XmlDocument` object in all cases.  
+ 
+As a second example, given the following XML document:  
+ 
 ```  
 <!DOCTYPE Mydata SYSTEM "http://localhost/doctype.dtd">  
 <baa>&xyz;</baa>  
 ```  
-  
- where the DTD file contains the following:  
-  
+ 
+where the DTD file contains the following:  
+ 
 ```  
 <!ENTITY xyz <E1>My Data</E1>  
 <!ELEMENT baa #PCDATA>  
 <!ATTLIST baa attr1 "woof">  
 ```  
-  
- If the XML document is loaded from http://localhost/mydata.xml, `BaseURI` returns the following for each of the nodes:  
-  
+ 
+If the XML document is loaded from http://localhost/mydata.xml, `BaseURI` returns the following for each of the nodes:  
+ 
 |NodeType|Name|BaseURI|  
 |--------------|----------|-------------|  
 |Document|#document|http://localhost/mydata.xml|  
@@ -238,12 +238,12 @@ Display the modified XML...
 |Entity|xyz|http://localhost/doctype.dtd|  
 |EntityReference|xyz|http://localhost/mydata.xml|  
 |Attribute|woof|http://localhost/mydata.xml|  
-  
+ 
 > [!NOTE]
 >  The base URI of a default attribute is the same as the base URI of the element to which they belong.  
-  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -276,19 +276,19 @@ Display the modified XML...
  If there are no child nodes, this property returns an empty <see cref="T:System.Xml.XmlNodeList" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about child nodes, see the [W3C DOM (Core) Level 1 specification](http://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html)  
+For information about child nodes, see the [W3C DOM (Core) Level 1 specification](http://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html)  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays all the child nodes of the root element.  
-  
- [!code-cpp[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/VB/source.vb#1)]  
-  
+The following example displays all the child nodes of the root element.  
+ 
+[!code-cpp[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -316,14 +316,14 @@ Display the modified XML...
         <returns>The cloned node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Cloning an <xref:System.Xml.XmlElement> copies all attributes and their values, including those generated by the XML processor to represent defaulted attributes. This method recursively clones the node and the subtree underneath it.  
-  
- `Clone` is equivalent to calling `CloneNode(true)`.  
-  
- The following table describes the specific behavior for each <xref:System.Xml.XmlNodeType>.  
-  
+Cloning an <xref:System.Xml.XmlElement> copies all attributes and their values, including those generated by the XML processor to represent defaulted attributes. This method recursively clones the node and the subtree underneath it.  
+ 
+`Clone` is equivalent to calling `CloneNode(true)`.  
+ 
+The following table describes the specific behavior for each <xref:System.Xml.XmlNodeType>.  
+ 
 |XmlNodeType|Clone|  
 |-----------------|-----------|  
 |Attribute|Clones the attribute node, including child nodes.|  
@@ -342,18 +342,18 @@ Display the modified XML...
 |Whitespace|Clones the white space node, including its data value.|  
 |XmlDeclaration|Clones the XmlDeclaration node, including its data value.|  
 |All other node types.|These node types cannot be cloned.|  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example clones the root node of the XML document.  
-  
- [!code-cpp[Classic WebData XmlNode.Clone Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.Clone Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.Clone Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.Clone Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.Clone Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.Clone Example/VB/source.vb#1)]  
-  
+The following example clones the root node of the XML document.  
+ 
+[!code-cpp[Classic WebData XmlNode.Clone Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.Clone Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.Clone Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.Clone Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.Clone Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.Clone Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -389,12 +389,12 @@ Display the modified XML...
         <returns>The cloned node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method serves as a copy constructor for nodes. The duplicate node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
-  
- The following table describes the specific behavior for each <xref:System.Xml.XmlNodeType>.  
-  
+This method serves as a copy constructor for nodes. The duplicate node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
+ 
+The following table describes the specific behavior for each <xref:System.Xml.XmlNodeType>.  
+ 
 |XmlNodeType|CloneNode(true)|CloneNode(false)|  
 |-----------------|-----------------------|------------------------|  
 |Attribute|Clones the attribute node, including child nodes.|Clones the attribute node, including child nodes.|  
@@ -413,16 +413,16 @@ Display the modified XML...
 |Whitespace|Clones the white space node, including its data value.|Clones the white space node, including its data value.|  
 |XmlDeclaration|Clones the XmlDeclaration node, including its data value.|Clones the XmlDeclaration node, including its data value.|  
 |All other node types.|These node types cannot be cloned.|These node types cannot be cloned.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the difference between a deep and shallow clone.  
-  
- [!code-cpp[Classic WebData XmlNode.CloneNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.CloneNode Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.CloneNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.CloneNode Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.CloneNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.CloneNode Example/VB/source.vb#1)]  
-  
+The following example shows the difference between a deep and shallow clone.  
+ 
+[!code-cpp[Classic WebData XmlNode.CloneNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.CloneNode Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.CloneNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.CloneNode Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.CloneNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.CloneNode Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Calling this method on a node type that cannot be cloned.</exception>
@@ -451,21 +451,21 @@ Display the modified XML...
         <returns>An <see langword="XPathNavigator" /> object used to navigate the node. The <see langword="XPathNavigator" /> is positioned on the node from which the method was called. It is not positioned on the root of the document.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `XPathNavigator` provides read-only, random access to data. Because it is optimized for XSLT transformations, it provides performance benefits when used as an input mechanism to the <xref:System.Xml.Xsl.XslTransform.Transform%2A?displayProperty=fullName> method.  
+The `XPathNavigator` provides read-only, random access to data. Because it is optimized for XSLT transformations, it provides performance benefits when used as an input mechanism to the <xref:System.Xml.Xsl.XslTransform.Transform%2A?displayProperty=fullName> method.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example loads and edits an XML document before performing an XSLT transform.  
-  
- [!code-cpp[XslTransform.Transform2#1](~/samples/snippets/cpp/VS_Snippets_Data/XslTransform.Transform2/CPP/trans_snip.cpp#1)]
- [!code-csharp[XslTransform.Transform2#1](~/samples/snippets/csharp/VS_Snippets_Data/XslTransform.Transform2/CS/trans_snip.cs#1)]
- [!code-vb[XslTransform.Transform2#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XslTransform.Transform2/VB/trans_snip.vb#1)]  
-  
+The following example loads and edits an XML document before performing an XSLT transform.  
+ 
+[!code-cpp[XslTransform.Transform2#1](~/samples/snippets/cpp/VS_Snippets_Data/XslTransform.Transform2/CPP/trans_snip.cpp#1)]
+[!code-csharp[XslTransform.Transform2#1](~/samples/snippets/csharp/VS_Snippets_Data/XslTransform.Transform2/CS/trans_snip.cs#1)]
+[!code-vb[XslTransform.Transform2#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XslTransform.Transform2/VB/trans_snip.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -496,19 +496,19 @@ Display the modified XML...
         <value>The first child of the node. If there is no such node, <see langword="null" /> is returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about child nodes, see the [W3C DOM (Core) Level 1 specification](http://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html)  
+For information about child nodes, see the [W3C DOM (Core) Level 1 specification](http://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html)  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the title element.  
-  
- [!code-cpp[Classic WebData XmlNode.FirstChild Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.FirstChild Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.FirstChild Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.FirstChild Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.FirstChild Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.FirstChild Example/VB/source.vb#1)]  
-  
+The following example displays the title element.  
+ 
+[!code-cpp[Classic WebData XmlNode.FirstChild Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.FirstChild Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.FirstChild Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.FirstChild Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.FirstChild Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.FirstChild Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -540,25 +540,25 @@ Display the modified XML...
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the child nodes in the current node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Provides support for the “for each” style iteration over the nodes in the `XmlNode`.  
+Provides support for the “for each” style iteration over the nodes in the `XmlNode`.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example displays all the books in the XML document.  
-  
- [!code-cpp[Classic WebData XmlNode.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.GetEnumerator Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.GetEnumerator Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.GetEnumerator Example/VB/source.vb#1)]  
-  
- The example uses the file, `books.xml`, as input.  
-  
- [!code-xml[Classic WebData XmlNode.GetEnumerator Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNode.GetEnumerator Example/XML/source.xml#2)]  
-  
+The following example displays all the books in the XML document.  
+ 
+[!code-cpp[Classic WebData XmlNode.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.GetEnumerator Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.GetEnumerator Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.GetEnumerator Example/VB/source.vb#1)]  
+ 
+The example uses the file, `books.xml`, as input.  
+ 
+[!code-xml[Classic WebData XmlNode.GetEnumerator Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNode.GetEnumerator Example/XML/source.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -593,19 +593,19 @@ Display the modified XML...
         <returns>The namespace URI of the specified prefix.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example adds a new attribute to the XML document.  
-  
- [!code-cpp[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/VB/source.vb#1)]  
-  
+The following example adds a new attribute to the XML document.  
+ 
+[!code-cpp[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -640,19 +640,19 @@ Display the modified XML...
         <returns>The prefix for the specified namespace URI.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example adds a new element to the XML document.  
-  
- [!code-cpp[Classic WebData XmlNode.GetPrefixOfNamespace Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.GetPrefixOfNamespace Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.GetPrefixOfNamespace Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.GetPrefixOfNamespace Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.GetPrefixOfNamespace Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.GetPrefixOfNamespace Example/VB/source.vb#1)]  
-  
+The following example adds a new element to the XML document.  
+ 
+[!code-cpp[Classic WebData XmlNode.GetPrefixOfNamespace Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.GetPrefixOfNamespace Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.GetPrefixOfNamespace Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.GetPrefixOfNamespace Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.GetPrefixOfNamespace Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.GetPrefixOfNamespace Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -684,19 +684,19 @@ Display the modified XML...
           <see langword="true" /> if the node has child nodes; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about child nodes, see the [W3C DOM (Core) Level 1 specification](http://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html)  
+For information about child nodes, see the [W3C DOM (Core) Level 1 specification](http://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html)  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays all the child nodes of the root element.  
-  
- [!code-cpp[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/VB/source.vb#1)]  
-  
+The following example displays all the child nodes of the root element.  
+ 
+[!code-cpp[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.HasChildNodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.HasChildNodes Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -727,25 +727,25 @@ Display the modified XML...
         <value>The concatenated values of the node and all its child nodes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property replaces all the child nodes with the parsed contents of the given string.  
+Setting this property replaces all the child nodes with the parsed contents of the given string.  
+ 
+For leaf nodes, `InnerText` returns the same content as the <xref:System.Xml.XmlNode.Value%2A> property.  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- For leaf nodes, `InnerText` returns the same content as the <xref:System.Xml.XmlNode.Value%2A> property.  
-  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example compares the `InnerText` and <xref:System.Xml.XmlNode.InnerXml%2A> properties.  
-  
- [!code-cpp[Classic WebData XmlNode.InnerText Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.InnerText Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.InnerText Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.InnerText Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.InnerText Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.InnerText Example/VB/source.vb#1)]  
-  
- **Output:**  
-  
+The following example compares the `InnerText` and <xref:System.Xml.XmlNode.InnerXml%2A> properties.  
+ 
+[!code-cpp[Classic WebData XmlNode.InnerText Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.InnerText Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.InnerText Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.InnerText Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.InnerText Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.InnerText Example/VB/source.vb#1)]  
+ 
+**Output:**  
+ 
 ```  
 Display the InnerText of the element...  
 some textmore text  
@@ -755,7 +755,7 @@ some text<child />more text
 d.</elem>  
 <elem>Text containing <markup />.</elem>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -793,24 +793,24 @@ d.</elem>
 </block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attempting to set this property from a node that cannot have child nodes, for example a Text node, throws an exception. Otherwise, setting `InnerXml` replaces the child nodes, of the node, with the parsed contents of the given string. The parsing is done in the current namespace context.  
-  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
+Attempting to set this property from a node that cannot have child nodes, for example a Text node, throws an exception. Otherwise, setting `InnerXml` replaces the child nodes, of the node, with the parsed contents of the given string. The parsing is done in the current namespace context.  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
 > [!NOTE]
 >  `InnerXml` is not an efficient way to modify the DOM. There may be performance issues when replacing complex nodes. It is more efficient to construct nodes and use methods such as `InsertBefore`, `InsertAfter`, `AppendChild`, and `RemoveChild` to modify the Xml document.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example compares the <xref:System.Xml.XmlNode.InnerText%2A> and `InnerXml` properties.  
-  
- [!code-cpp[Classic WebData XmlNode.InnerText Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.InnerText Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.InnerText Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.InnerText Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.InnerText Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.InnerText Example/VB/source.vb#1)]  
-  
+The following example compares the <xref:System.Xml.XmlNode.InnerText%2A> and `InnerXml` properties.  
+ 
+[!code-cpp[Classic WebData XmlNode.InnerText Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.InnerText Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.InnerText Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.InnerText Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.InnerText Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.InnerText Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Setting this property on a node that cannot have child nodes.</exception>
@@ -849,23 +849,23 @@ d.</elem>
         <returns>The node being inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `refChild` is `null`, insert `newChild` at the beginning of the list of child nodes. All the contents of the `newChild` are inserted, in the same order, after `refChild`. If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
+If `refChild` is `null`, insert `newChild` at the beginning of the list of child nodes. All the contents of the `newChild` are inserted, in the same order, after `refChild`. If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
+ 
+If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example adds a new node to the XML document.  
-  
- [!code-cpp[Classic WebData XmlNode.InsertAfter Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.InsertAfter Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.InsertAfter Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.InsertAfter Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.InsertAfter Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.InsertAfter Example/VB/source.vb#1)]  
-  
+The following example adds a new node to the XML document.  
+ 
+[!code-cpp[Classic WebData XmlNode.InsertAfter Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.InsertAfter Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.InsertAfter Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.InsertAfter Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.InsertAfter Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.InsertAfter Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This node is of a type that does not allow child nodes of the type of the <paramref name="newChild" /> node.  
@@ -913,21 +913,21 @@ d.</elem>
         <returns>The node being inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `refChild` is `null`, insert `newChild` at the end of the list of child nodes. All the contents of the `newChild` are inserted, in the same order, before `refChild`. If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
+If `refChild` is `null`, insert `newChild` at the end of the list of child nodes. All the contents of the `newChild` are inserted, in the same order, before `refChild`. If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
+ 
+If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ 
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
-  
-   
-  
+ 
 ## Examples  
- The following example adds a new node to the XML document.  
-  
- [!code-cpp[Classic WebData XmlNode.InsertBefore Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.InsertBefore Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.InsertBefore Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.InsertBefore Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.InsertBefore Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.InsertBefore Example/VB/source.vb#1)]  
-  
+The following example adds a new node to the XML document.  
+ 
+[!code-cpp[Classic WebData XmlNode.InsertBefore Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.InsertBefore Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.InsertBefore Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.InsertBefore Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.InsertBefore Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.InsertBefore Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current node is of a type that does not allow child nodes of the type of the <paramref name="newChild" /> node.  
@@ -970,12 +970,12 @@ d.</elem>
           <see langword="true" /> if the node is read-only; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A read-only node is one whose properties, attributes, or child nodes cannot be changed. You can remove a read-only node from the tree and insert it somewhere else. For example, Entity nodes are always read-only.  
-  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
+A read-only node is one whose properties, attributes, or child nodes cannot be changed. You can remove a read-only node from the tree and insert it somewhere else. For example, Entity nodes are always read-only.  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1010,19 +1010,19 @@ d.</elem>
         <value>The first <see cref="T:System.Xml.XmlElement" /> that matches the specified name. It returns a null reference (<see langword="Nothing" /> in Visual Basic) if there is no match.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is a Microsoft extension to the Document Object Model (DOM).  
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the title element.  
-  
- [!code-cpp[Classic WebData XmlNode.this Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.this Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.this Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.this Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.this Example/VB/source.vb#1)]  
-  
+The following example displays the title element.  
+ 
+[!code-cpp[Classic WebData XmlNode.this Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.this Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.this Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.this Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.this Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1059,10 +1059,10 @@ d.</elem>
         <value>The first <see cref="T:System.Xml.XmlElement" /> with the matching <paramref name="localname" /> and <paramref name="ns" />. . It returns a null reference (<see langword="Nothing" /> in Visual Basic) if there is no match.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1093,14 +1093,14 @@ d.</elem>
         <value>The last child of the node. If there is no such node, <see langword="null" /> is returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays the price element.  
-  
- [!code-cpp[Classic WebData XmlNode.LastChild Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.LastChild Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.LastChild Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.LastChild Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.LastChild Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.LastChild Example/VB/source.vb#1)]  
-  
+The following example displays the price element.  
+ 
+[!code-cpp[Classic WebData XmlNode.LastChild Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.LastChild Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.LastChild Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.LastChild Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.LastChild Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.LastChild Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1264,10 +1264,10 @@ d.</elem>
 </list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the node does not have a prefix, LocalName is the same as <xref:System.Xml.XmlNode.Name%2A>.  
-  
+If the node does not have a prefix, LocalName is the same as <xref:System.Xml.XmlNode.Name%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1456,12 +1456,12 @@ d.</elem>
         <value>The namespace URI of this node. If there is no namespace URI, this property returns String.Empty.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the namespace URI specified at creation time. For example, `NamespaceURI` is urn:samples for the element \<bk:book xmlns:bk= "urn:samples">  
-  
- An attribute does not inherit its namespace from the element it is attached to. If an attribute is not explicitly given a namespace, it simply has no namespace.  
-  
+This is the namespace URI specified at creation time. For example, `NamespaceURI` is urn:samples for the element \<bk:book xmlns:bk= "urn:samples">  
+ 
+An attribute does not inherit its namespace from the element it is attached to. If an attribute is not explicitly given a namespace, it simply has no namespace.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1492,14 +1492,14 @@ d.</elem>
         <value>The next <see langword="XmlNode" />. If there is no next node, <see langword="null" /> is returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays all the books in the XML document.  
-  
- [!code-cpp[Classic WebData XmlNode.NextSibling Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.NextSibling Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.NextSibling Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.NextSibling Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.NextSibling Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.NextSibling Example/VB/source.vb#1)]  
-  
+The following example displays all the books in the XML document.  
+ 
+[!code-cpp[Classic WebData XmlNode.NextSibling Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.NextSibling Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.NextSibling Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.NextSibling Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.NextSibling Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.NextSibling Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1530,10 +1530,10 @@ d.</elem>
         <value>One of the <see cref="T:System.Xml.XmlNodeType" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property never returns the `XmlNodeType` EndElement, EndEntity or None.  
-  
+This property never returns the `XmlNodeType` EndElement, EndEntity or None.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1564,10 +1564,10 @@ d.</elem>
         <summary>Puts all XmlText nodes in the full depth of the sub-tree underneath this XmlNode into a "normal" form where only markup (that is, tags, comments, processing instructions, CDATA sections, and entity references) separates XmlText nodes, that is, there are no adjacent XmlText nodes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to ensure that the DOM view of a document is the same as if it were saved and re-loaded, and is useful when operations (such as XPointer lookups) that depend on a particular document tree structure are to be used.  
-  
+This method can be used to ensure that the DOM view of a document is the same as if it were saved and re-loaded, and is useful when operations (such as XPointer lookups) that depend on a particular document tree structure are to be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1605,19 +1605,19 @@ d.</elem>
 </block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is a Microsoft extension to the Document Object Model (DOM).  
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example compares output from the <xref:System.Xml.XmlNode.InnerXml%2A> and `OuterXml` properties.  
-  
- [!code-cpp[Classic WebData XmlNode.OuterXml Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.OuterXml Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.OuterXml Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.OuterXml Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.OuterXml Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.OuterXml Example/VB/source.vb#1)]  
-  
+The following example compares output from the <xref:System.Xml.XmlNode.InnerXml%2A> and `OuterXml` properties.  
+ 
+[!code-cpp[Classic WebData XmlNode.OuterXml Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.OuterXml Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.OuterXml Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.OuterXml Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.OuterXml Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.OuterXml Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1650,15 +1650,15 @@ d.</elem>
  If the node is an <see cref="T:System.Xml.XmlDocument" /> (NodeType equals XmlNodeType.Document), this property returns <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When adding nodes to the current node, use the <xref:System.Xml.XmlDocument> returned by the <xref:System.Xml.XmlNode.OwnerDocument%2A> property to create the node.  
+When adding nodes to the current node, use the <xref:System.Xml.XmlDocument> returned by the <xref:System.Xml.XmlNode.OwnerDocument%2A> property to create the node.  
+ 
   
-   
-  
+ 
 ## Examples  
- See <xref:System.Xml.XmlElement.OwnerDocument%2A> (in the XmlElement class) for an example using this property.  
-  
+See <xref:System.Xml.XmlElement.OwnerDocument%2A> (in the XmlElement class) for an example using this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1764,10 +1764,10 @@ d.</elem>
 </list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about parent and child nodes, see the [W3C DOM (Core) Level 1 specification](http://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html)  
-  
+For information about parent and child nodes, see the [W3C DOM (Core) Level 1 specification](http://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1798,10 +1798,10 @@ d.</elem>
         <value>The namespace prefix of this node. For example, <see langword="Prefix" /> is bk for the element &lt;bk:book&gt;. If there is no prefix, this property returns String.Empty.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property, when permitted, changes the <xref:System.Xml.XmlNode.Name%2A> property, which holds the qualified name, on Element and Attribute nodes. Setting this property on node types that cannot have a prefix (such as Text, Comment, EntityReference, CDATA, ProcessingInstruction, Document, and DocumentFragment) has no effect. Changing the prefix of an attribute that is known to have a default value, does not make a new attribute with the default value and the original prefix appear, since the namespace URI and local name do not change.  
-  
+Setting this property, when permitted, changes the <xref:System.Xml.XmlNode.Name%2A> property, which holds the qualified name, on Element and Attribute nodes. Setting this property on node types that cannot have a prefix (such as Text, Comment, EntityReference, CDATA, ProcessingInstruction, Document, and DocumentFragment) has no effect. Changing the prefix of an attribute that is known to have a default value, does not make a new attribute with the default value and the original prefix appear, since the namespace URI and local name do not change.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">This node is read-only.</exception>
@@ -1849,23 +1849,23 @@ d.</elem>
         <returns>The node added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
+If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
+ 
+If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example adds a new node to the XML document.  
-  
- [!code-cpp[Classic WebData XmlNode.PrependChild Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.PrependChild Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.PrependChild Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.PrependChild Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.PrependChild Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.PrependChild Example/VB/source.vb#1)]  
-  
+The following example adds a new node to the XML document.  
+ 
+[!code-cpp[Classic WebData XmlNode.PrependChild Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.PrependChild Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.PrependChild Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.PrependChild Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.PrependChild Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.PrependChild Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This node is of a type that does not allow child nodes of the type of the <paramref name="newChild" /> node.  
@@ -1905,14 +1905,14 @@ d.</elem>
         <value>The preceding <see langword="XmlNode" />. If there is no preceding node, <see langword="null" /> is returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays all the books in the XML document.  
-  
- [!code-cpp[Classic WebData XmlNode.PreviousSibling Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.PreviousSibling Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.PreviousSibling Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.PreviousSibling Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.PreviousSibling Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.PreviousSibling Example/VB/source.vb#1)]  
-  
+The following example displays all the books in the XML document.  
+ 
+[!code-cpp[Classic WebData XmlNode.PreviousSibling Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.PreviousSibling Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.PreviousSibling Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.PreviousSibling Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.PreviousSibling Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.PreviousSibling Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1943,10 +1943,10 @@ d.</elem>
         <value>Returns <see cref="T:System.Xml.XmlNode" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property has faster performance than the <xref:System.Xml.XmlNode.PreviousSibling%2A> property but you can use it only to get a node of type <xref:System.Xml.XmlNodeType>. To get any other type of node that that precedes this node, use the <xref:System.Xml.XmlNode.PreviousSibling%2A> property.  
-  
+This property has faster performance than the <xref:System.Xml.XmlNode.PreviousSibling%2A> property but you can use it only to get a node of type <xref:System.Xml.XmlNodeType>. To get any other type of node that that precedes this node, use the <xref:System.Xml.XmlNode.PreviousSibling%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1977,21 +1977,21 @@ d.</elem>
         <summary>Removes all the child nodes and/or attributes of the current node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a removed attribute is known to have a default value, an attribute immediately appears containing the default value and, if applicable, the corresponding namespace URI, local name, and prefix.  
+If a removed attribute is known to have a default value, an attribute immediately appears containing the default value and, if applicable, the corresponding namespace URI, local name, and prefix.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example removes all child and attribute nodes from the root node.  
-  
- [!code-cpp[Classic WebData XmlNode.RemoveAll Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.RemoveAll Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.RemoveAll Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.RemoveAll Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.RemoveAll Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.RemoveAll Example/VB/source.vb#1)]  
-  
+The following example removes all child and attribute nodes from the root node.  
+ 
+[!code-cpp[Classic WebData XmlNode.RemoveAll Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.RemoveAll Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.RemoveAll Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.RemoveAll Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.RemoveAll Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.RemoveAll Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -2029,14 +2029,14 @@ d.</elem>
         <returns>The node removed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example removes a node from the XML document.  
-  
- [!code-cpp[Classic WebData XmlNode.RemoveChild Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.RemoveChild Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.RemoveChild Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.RemoveChild Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.RemoveChild Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.RemoveChild Example/VB/source.vb#1)]  
-  
+The following example removes a node from the XML document.  
+ 
+[!code-cpp[Classic WebData XmlNode.RemoveChild Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.RemoveChild Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.RemoveChild Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.RemoveChild Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.RemoveChild Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.RemoveChild Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="oldChild" /> is not a child of this node. Or this node is read-only.</exception>
@@ -2077,21 +2077,21 @@ d.</elem>
         <returns>The node replaced.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `newChild` is already in the tree, it is first removed.  
+If the `newChild` is already in the tree, it is first removed.  
+ 
+If the `newChild` was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be passed to the `ReplaceChild` method.  
+ 
   
- If the `newChild` was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be passed to the `ReplaceChild` method.  
-  
-   
-  
+ 
 ## Examples  
- The following example replaces the title element in the XML document.  
-  
- [!code-cpp[Classic WebData XmlNode.ReplaceChild Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.ReplaceChild Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.ReplaceChild Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.ReplaceChild Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.ReplaceChild Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.ReplaceChild Example/VB/source.vb#1)]  
-  
+The following example replaces the title element in the XML document.  
+ 
+[!code-cpp[Classic WebData XmlNode.ReplaceChild Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.ReplaceChild Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.ReplaceChild Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.ReplaceChild Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.ReplaceChild Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.ReplaceChild Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This node is of a type that does not allow child nodes of the type of the <paramref name="newChild" /> node.  
@@ -2129,10 +2129,10 @@ d.</elem>
         <value>An <see cref="T:System.Xml.Schema.IXmlSchemaInfo" /> object containing the post schema validation infoset of this node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlNode.SchemaInfo%2A> property is set when this node is validatied.  
-  
+The <xref:System.Xml.XmlNode.SchemaInfo%2A> property is set when this node is validatied.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2163,18 +2163,18 @@ d.</elem>
         <returns>An <see cref="T:System.Xml.XmlNodeList" /> containing a collection of nodes matching the XPath query.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the XPath expression requires namespace resolution, you must use the `SelectNodes` overload which takes an <xref:System.Xml.XmlNamespaceManager> as its argument. The `XmlNamespaceManager` is used to resolve namespaces.  
-  
+If the XPath expression requires namespace resolution, you must use the `SelectNodes` overload which takes an <xref:System.Xml.XmlNamespaceManager> as its argument. The `XmlNamespaceManager` is used to resolve namespaces.  
+ 
 > [!NOTE]
 >  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still use the `XmlNamespaceManager` and add a prefix and namespace URI to it; otherwise, you will not get any nodes selected. For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md).  
-  
+ 
 > [!NOTE]
 >  A common issue when formulating XPath expressions is how to include a single quote (') or double quote (") in the expression. If you have to search for a value that includes a single quote, you must enclose the string in double quotes. If you need to search for a value that includes a double quote, you must enclose the string in single quotes.  
-  
- For example, suppose you have the following XML:  
-  
+ 
+For example, suppose you have the following XML:  
+ 
 ```  
 <bookstore>  
   <book>  
@@ -2182,30 +2182,30 @@ d.</elem>
   </book>  
 </bookstore>  
 ```  
-  
- The following Visual Basic code selects an element that contains single quotes:  
-  
+ 
+The following Visual Basic code selects an element that contains single quotes:  
+ 
 ```  
 nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")  
 ```  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
+The <xref:System.Xml.XmlNodeList> object returned by this method will be valid while the underlying document remains unchanged. If the underlying document changes, unexpected results may be returned (no exception will be thrown).  
+ 
   
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
- The <xref:System.Xml.XmlNodeList> object returned by this method will be valid while the underlying document remains unchanged. If the underlying document changes, unexpected results may be returned (no exception will be thrown).  
-  
-   
-  
+ 
 ## Examples  
- The following example selects all books where the author's last name is Austen, and then changes the price of those books.  
-  
- [!code-cpp[Classic WebData XmlNode.SelectNodes Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.SelectNodes Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.SelectNodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/VB/source.vb#1)]  
-  
- This example uses the following XML:  
-  
- [!code-xml[Classic WebData XmlNode.SelectNodes Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/XML/source.xml#2)]  
-  
+The following example selects all books where the author's last name is Austen, and then changes the price of those books.  
+ 
+[!code-cpp[Classic WebData XmlNode.SelectNodes Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.SelectNodes Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.SelectNodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/VB/source.vb#1)]  
+ 
+This example uses the following XML:  
+ 
+[!code-xml[Classic WebData XmlNode.SelectNodes Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/XML/source.xml#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix. See [XPath Examples](http://msdn.microsoft.com/en-us/1431789e-c545-4765-8c09-3057e07d3041).</exception>
@@ -2239,15 +2239,15 @@ nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")
         <returns>An <see cref="T:System.Xml.XmlNodeList" /> containing a collection of nodes matching the XPath query.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- XPath expressions can include namespaces. Namespace resolution is supported using the `XmlNamespaceManager`. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the `XmlNamespaceManager`.  
-  
+XPath expressions can include namespaces. Namespace resolution is supported using the `XmlNamespaceManager`. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the `XmlNamespaceManager`.  
+ 
 > [!NOTE]
 >  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the `XmlNamespaceManager`; otherwise, you will not get any nodes selected. For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md).  
-  
- For example, if you had the following XML:  
-  
+ 
+For example, if you had the following XML:  
+ 
 ```  
 <bookstore xmlns="http://www.lucernepublishing.com">  
  <book>  
@@ -2255,20 +2255,20 @@ nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")
  </book>  
 </bookstore>  
 ```  
-  
- The following C# code selects all book nodes:  
-  
+ 
+The following C# code selects all book nodes:  
+ 
 ```  
 XmlNamespaceManager nsmgr = new XmlNamespaceManager(doc.NameTable);  
 nsmgr.AddNamespace("ab", "http://www.lucernepublishing.com");  
 XmlNodeList nodelist = doc.SelectNodes("//ab:book", nsmgr);  
 ```  
-  
+ 
 > [!NOTE]
 >  A common issue when formulating XPath expressions is how to include a single quote (') or double quote (") in the expression. If you have to search for a value that includes a single quote, you must enclose the string in double quotes. If you need to search for a value that includes a double quote, you must enclose the string in single quotes.  
-  
- For example, suppose you have the following XML:  
-  
+ 
+For example, suppose you have the following XML:  
+ 
 ```  
 <bookstore xmlns="http://www.lucernepublishing.com">  
   <book>  
@@ -2276,32 +2276,32 @@ XmlNodeList nodelist = doc.SelectNodes("//ab:book", nsmgr);
   </book>  
 </bookstore>  
 ```  
-  
- The following Visual Basic code selects an element that contains single quotes:  
-  
+ 
+The following Visual Basic code selects an element that contains single quotes:  
+ 
 ```  
 Dim nsmgr As XmlNamespaceManager = New XmlNamespaceManager(doc.NameTable)  
 nsmgr.AddNamespace("ab", "http://www.lucernepublishing.com")  
 nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)  
 ```  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
+The <xref:System.Xml.XmlNodeList> object returned by this method will be valid while the underlying document remains unchanged. If the underlying document changes, unexpected results may be returned (no exception will be thrown).  
+ 
   
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
- The <xref:System.Xml.XmlNodeList> object returned by this method will be valid while the underlying document remains unchanged. If the underlying document changes, unexpected results may be returned (no exception will be thrown).  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the values of each of the ISBN attributes. This example uses an <xref:System.Xml.XmlElement> object, which inherits from the <xref:System.Xml.XmlNode> class.  
-  
- [!code-cpp[XmlNode.SelectNodes1#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlNode.SelectNodes1/CPP/selectnodes1.cpp#1)]
- [!code-csharp[XmlNode.SelectNodes1#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlNode.SelectNodes1/CS/selectnodes1.cs#1)]
- [!code-vb[XmlNode.SelectNodes1#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlNode.SelectNodes1/VB/selectnodes1.vb#1)]  
-  
- The example uses the file, `booksort.xml`, as input.  
-  
- [!code-xml[Classic WebData XmlNode.SelectNodes Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/XML/source.xml#2)]  
-  
+The following example displays the values of each of the ISBN attributes. This example uses an <xref:System.Xml.XmlElement> object, which inherits from the <xref:System.Xml.XmlNode> class.  
+ 
+[!code-cpp[XmlNode.SelectNodes1#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlNode.SelectNodes1/CPP/selectnodes1.cpp#1)]
+[!code-csharp[XmlNode.SelectNodes1#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlNode.SelectNodes1/CS/selectnodes1.cs#1)]
+[!code-vb[XmlNode.SelectNodes1#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlNode.SelectNodes1/VB/selectnodes1.vb#1)]  
+ 
+The example uses the file, `booksort.xml`, as input.  
+ 
+[!code-xml[Classic WebData XmlNode.SelectNodes Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/XML/source.xml#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix which is not defined in the <see langword="XmlNamespaceManager" />.</exception>
@@ -2333,18 +2333,18 @@ nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)
         <returns>The first <see langword="XmlNode" /> that matches the XPath query or <see langword="null" /> if no matching node is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the XPath expression requires namespace resolution, you must use the `SelectSingleNode` overload which takes an <xref:System.Xml.XmlNamespaceManager> as its argument. The `XmlNamespaceManager` is used to resolve namespaces.  
-  
+If the XPath expression requires namespace resolution, you must use the `SelectSingleNode` overload which takes an <xref:System.Xml.XmlNamespaceManager> as its argument. The `XmlNamespaceManager` is used to resolve namespaces.  
+ 
 > [!NOTE]
 >  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still use the `XmlNamespaceManager` and add a prefix and namespace URI to it; otherwise, you will not get a selected node. For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md).  
-  
+ 
 > [!NOTE]
 >  A common issue when formulating XPath expressions is how to include a single quote (') or double quote (") in the expression. If you have to search for a value that includes a single quote, you must enclose the string in double quotes. If you need to search for a value that includes a double quote, you must enclose the string in single quotes.  
-  
- For example, suppose you have the following XML:  
-  
+ 
+For example, suppose you have the following XML:  
+ 
 ```  
 <bookstore>  
   <book>  
@@ -2352,28 +2352,28 @@ nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)
   </book>  
 </bookstore>  
 ```  
-  
- The following Visual Basic code selects an element that contains single quotes:  
-  
+ 
+The following Visual Basic code selects an element that contains single quotes:  
+ 
 ```  
 book = root.SelectSingleNode("descendant::book[title=""'Emma'""]")  
 ```  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example changes the price of the first Jane Austen book.  
-  
- [!code-cpp[Classic WebData XmlNode.SelectSingleNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.SelectSingleNode Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.SelectSingleNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.SelectSingleNode Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.SelectSingleNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.SelectSingleNode Example/VB/source.vb#1)]  
-  
- The example uses the file, `booksort.xml`, as input.  
-  
- [!code-xml[Classic WebData XmlNode.SelectSingleNode Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNode.SelectSingleNode Example/XML/source.xml#2)]  
-  
+The following example changes the price of the first Jane Austen book.  
+ 
+[!code-cpp[Classic WebData XmlNode.SelectSingleNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.SelectSingleNode Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.SelectSingleNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.SelectSingleNode Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.SelectSingleNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.SelectSingleNode Example/VB/source.vb#1)]  
+ 
+The example uses the file, `booksort.xml`, as input.  
+ 
+[!code-xml[Classic WebData XmlNode.SelectSingleNode Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNode.SelectSingleNode Example/XML/source.xml#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix.</exception>
@@ -2407,15 +2407,15 @@ book = root.SelectSingleNode("descendant::book[title=""'Emma'""]")
         <returns>The first <see langword="XmlNode" /> that matches the XPath query or <see langword="null" /> if no matching node is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- XPath expressions can include namespaces. Namespace resolution is supported using the `XmlNamespaceManager`. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the `XmlNamespaceManager`.  
-  
+XPath expressions can include namespaces. Namespace resolution is supported using the `XmlNamespaceManager`. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the `XmlNamespaceManager`.  
+ 
 > [!NOTE]
 >  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the `XmlNamespaceManager`; otherwise, you will not get a node selected. For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md).  
-  
- For example, if you had the following XML:  
-  
+ 
+For example, if you had the following XML:  
+ 
 ```  
 <bookstore xmlns="http://www.lucernepublishing.com">  
  <book>  
@@ -2423,20 +2423,20 @@ book = root.SelectSingleNode("descendant::book[title=""'Emma'""]")
  </book>  
 </bookstore>  
 ```  
-  
- The following C# code selects the first book node:  
-  
+ 
+The following C# code selects the first book node:  
+ 
 ```  
 XmlNamespaceManager nsmgr = new XmlNamespaceManager(doc.NameTable);  
 nsmgr.AddNamespace("ab", "http://www.lucernepublishing.com");  
 XmlNode book = doc.SelectSingleNode("//ab:book", nsmgr);  
 ```  
-  
+ 
 > [!NOTE]
 >  A common issue when formulating XPath expressions is how to include a single quote (') or double quote (") in the expression. If you have to search for a value that includes a single quote, you must enclose the string in double quotes. If you need to search for a value that includes a double quote, you must enclose the string in single quotes.  
-  
- For example, suppose you have the following XML:  
-  
+ 
+For example, suppose you have the following XML:  
+ 
 ```  
 <bookstore xmlns="http://www.lucernepublishing.com">  
   <book>  
@@ -2444,30 +2444,30 @@ XmlNode book = doc.SelectSingleNode("//ab:book", nsmgr);
   </book>  
 </bookstore>  
 ```  
-  
- The following Visual Basic code selects an element that contains single quotes:  
-  
+ 
+The following Visual Basic code selects an element that contains single quotes:  
+ 
 ```  
 Dim nsmgr As XmlNamespaceManager = New XmlNamespaceManager(doc.NameTable)  
 nsmgr.AddNamespace("ab", "http://www.lucernepublishing.com")  
 book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)  
 ```  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example selects the book with the matching ISBN value.  
-  
- [!code-cpp[XmlNode.SelectSingleNode1#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlNode.SelectSingleNode1/CPP/selectsingnode.cpp#1)]
- [!code-csharp[XmlNode.SelectSingleNode1#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlNode.SelectSingleNode1/CS/selectsingnode.cs#1)]
- [!code-vb[XmlNode.SelectSingleNode1#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlNode.SelectSingleNode1/VB/selectsingnode.vb#1)]  
-  
- The example uses the file, `booksort.xml`, as input.  
-  
- [!code-xml[Classic WebData XmlNode.SelectNodes Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/XML/source.xml#2)]  
-  
+The following example selects the book with the matching ISBN value.  
+ 
+[!code-cpp[XmlNode.SelectSingleNode1#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlNode.SelectSingleNode1/CPP/selectsingnode.cpp#1)]
+[!code-csharp[XmlNode.SelectSingleNode1#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlNode.SelectSingleNode1/CS/selectsingnode.cs#1)]
+[!code-vb[XmlNode.SelectSingleNode1#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlNode.SelectSingleNode1/VB/selectsingnode.vb#1)]  
+ 
+The example uses the file, `booksort.xml`, as input.  
+ 
+[!code-xml[Classic WebData XmlNode.SelectNodes Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNode.SelectNodes Example/XML/source.xml#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix which is not defined in the <see langword="XmlNamespaceManager" />.</exception>
@@ -2561,10 +2561,10 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         <returns>Returns an enumerator for the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlNode> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlNode> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2592,10 +2592,10 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         <returns>A copy of the node from which it is called.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlNode> instance is cast to an <xref:System.ICloneable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.XmlNode> instance is cast to an <xref:System.ICloneable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2757,14 +2757,14 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
 </list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example adds a new attribute to the XML document and sets the <xref:System.Xml.XmlNode.Value%2A> property of the new attribute.  
-  
- [!code-cpp[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/VB/source.vb#1)]  
-  
+The following example adds a new attribute to the XML document and sets the <xref:System.Xml.XmlNode.Value%2A> property of the new attribute.  
+ 
+[!code-cpp[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.GetNamespaceOfPrefix Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.GetNamespaceOfPrefix Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Setting the value of a node that is read-only.</exception>
@@ -2800,19 +2800,19 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         <summary>Saves all the child nodes of the node to the specified <see cref="T:System.Xml.XmlWriter" />, when overridden in a derived class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlNode.InnerXml%2A> property.  
+This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlNode.InnerXml%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the contents of the root node to the console.  
-  
- [!code-cpp[Classic WebData XmlNode.WriteContentTo Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.WriteContentTo Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.WriteContentTo Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.WriteContentTo Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.WriteContentTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.WriteContentTo Example/VB/source.vb#1)]  
-  
+The following example displays the contents of the root node to the console.  
+ 
+[!code-cpp[Classic WebData XmlNode.WriteContentTo Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.WriteContentTo Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.WriteContentTo Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.WriteContentTo Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.WriteContentTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.WriteContentTo Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2846,19 +2846,19 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         <summary>Saves the current node to the specified <see cref="T:System.Xml.XmlWriter" />, when overridden in a derived class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlNode.OuterXml%2A> property.  
+This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlNode.OuterXml%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the root node to the console.  
-  
- [!code-cpp[Classic WebData XmlNode.WriteTo Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.WriteTo Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlNode.WriteTo Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.WriteTo Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlNode.WriteTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.WriteTo Example/VB/source.vb#1)]  
-  
+The following example displays the root node to the console.  
+ 
+[!code-cpp[Classic WebData XmlNode.WriteTo Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.WriteTo Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlNode.WriteTo Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.WriteTo Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlNode.WriteTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNode.WriteTo Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2873,26 +2873,26 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         <summary>Selects the first <see langword="XmlNode" /> that matches the XPath expression.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- XPath expressions can include namespaces. Namespace resolution is supported using the `XmlNamespaceManager`. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the `XmlNamespaceManager`.  
-  
+XPath expressions can include namespaces. Namespace resolution is supported using the `XmlNamespaceManager`. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the `XmlNamespaceManager`.  
+ 
 > [!NOTE]
 >  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the `XmlNamespaceManager`; otherwise, you will not get any nodes selected. For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example returns the first book with the matching author name. The `XmlNamespaceManager` resolves the default namespace in the XPath expression.  
-  
- [!code-cpp[XmlNode.SelectSingleNode2#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlNode.SelectSingleNode2/CPP/XmlNode.SelectSingleNode2.cpp#1)]
- [!code-csharp[XmlNode.SelectSingleNode2#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlNode.SelectSingleNode2/CS/selectsingnode2.cs#1)]
- [!code-vb[XmlNode.SelectSingleNode2#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlNode.SelectSingleNode2/VB/selectsingnode2.vb#1)]  
-  
- The example uses the file, `newbooks.xml`, as input.  
-  
- [!code-xml[XmlNode.SelectSingleNode2#2](~/samples/snippets/xml/VS_Snippets_Data/XmlNode.SelectSingleNode2/XML/newbooks.xml#2)]  
-  
+The following example returns the first book with the matching author name. The `XmlNamespaceManager` resolves the default namespace in the XPath expression.  
+ 
+[!code-cpp[XmlNode.SelectSingleNode2#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlNode.SelectSingleNode2/CPP/XmlNode.SelectSingleNode2.cpp#1)]
+[!code-csharp[XmlNode.SelectSingleNode2#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlNode.SelectSingleNode2/CS/selectsingnode2.cs#1)]
+[!code-vb[XmlNode.SelectSingleNode2#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlNode.SelectSingleNode2/VB/selectsingnode2.vb#1)]  
+ 
+The example uses the file, `newbooks.xml`, as input.  
+ 
+[!code-xml[XmlNode.SelectSingleNode2#2](~/samples/snippets/xml/VS_Snippets_Data/XmlNode.SelectSingleNode2/XML/newbooks.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2907,15 +2907,15 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         <summary>Selects a list of nodes matching the XPath expression.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- XPath expressions can include namespaces. Namespace resolution is supported using the `XmlNamespaceManager`. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the `XmlNamespaceManager`.  
-  
+XPath expressions can include namespaces. Namespace resolution is supported using the `XmlNamespaceManager`. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the `XmlNamespaceManager`.  
+ 
 > [!NOTE]
 >  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the `XmlNamespaceManager`; otherwise, you will not get any nodes selected.  
-  
- For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md). For code examples, choose an overload from the overload list in the previous section.  
-  
+ 
+For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md). For code examples, choose an overload from the overload list in the previous section.  
+ 
  ]]></format>
         </remarks>
       </Docs>

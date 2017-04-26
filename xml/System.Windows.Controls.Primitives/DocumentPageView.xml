@@ -58,10 +58,10 @@
         <returns>The actual size that the page view used to arrange itself and its children.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned size will always be less than or equal to the specified `finalSize`.  
-  
+The returned size will always be less than or equal to the specified `finalSize`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,13 +83,13 @@
         <summary>Releases all resources used by the <see cref="T:System.Windows.Controls.Primitives.DocumentPageView" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Windows.Controls.Primitives.DocumentPageView.Dispose%2A> after finished using each <xref:System.Windows.Controls.Primitives.DocumentPageView> instance.  After <xref:System.Windows.Controls.Primitives.DocumentPageView.Dispose%2A> is called, the <xref:System.Windows.Controls.Primitives.DocumentPageView> is released for garbage collection and should no longer be referenced by the application.  After calling <xref:System.Windows.Controls.Primitives.DocumentPageView.Dispose%2A> and being released, the garbage collector can reclaim the <xref:System.Windows.Controls.Primitives.DocumentPageView> memory and resources.  For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call <xref:System.Windows.Controls.Primitives.DocumentPageView.Dispose%2A> after finished using each <xref:System.Windows.Controls.Primitives.DocumentPageView> instance.  After <xref:System.Windows.Controls.Primitives.DocumentPageView.Dispose%2A> is called, the <xref:System.Windows.Controls.Primitives.DocumentPageView> is released for garbage collection and should no longer be referenced by the application.  After calling <xref:System.Windows.Controls.Primitives.DocumentPageView.Dispose%2A> and being released, the garbage collector can reclaim the <xref:System.Windows.Controls.Primitives.DocumentPageView> memory and resources.  For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call <xref:System.Windows.Controls.Primitives.DocumentPageView.Dispose%2A> as the final call to release each <xref:System.Windows.Controls.Primitives.DocumentPageView> instance.  If <xref:System.Windows.Controls.Primitives.DocumentPageView.Dispose%2A> is not called, the resources the <xref:System.Windows.Controls.Primitives.DocumentPageView> is using will not be freed until the garbage collector later calls the page viewer's <xref:System.Object.Finalize%2A> method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,10 +151,10 @@
         <returns>A service object of type <paramref name="serviceType" />, or <see langword="null" /> if there is no service object of type <paramref name="serviceType" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Primitives.DocumentPageView.GetService%2A> returns any services that the <xref:System.Windows.Controls.Primitives.DocumentPageView.DocumentPaginator%2A> provides if the <xref:System.Windows.Controls.Primitives.DocumentPageView.DocumentPaginator%2A> implements <xref:System.IServiceProvider>.  
-  
+<xref:System.Windows.Controls.Primitives.DocumentPageView.GetService%2A> returns any services that the <xref:System.Windows.Controls.Primitives.DocumentPageView.DocumentPaginator%2A> provides if the <xref:System.Windows.Controls.Primitives.DocumentPageView.DocumentPaginator%2A> implements <xref:System.IServiceProvider>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,10 +180,10 @@
         <returns>The visual child at the specified index.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `index` must be between 0 and <xref:System.Windows.Controls.Primitives.DocumentPageView.VisualChildrenCount%2A>-1.  
-  
+`index` must be between 0 and <xref:System.Windows.Controls.Primitives.DocumentPageView.VisualChildrenCount%2A>-1.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -230,10 +230,10 @@
         <returns>The actual desired size.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned size is always equal to or less than the given `availableSize`.  
-  
+The returned size is always equal to or less than the given `availableSize`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -331,20 +331,20 @@
         <value>The zero-based page number of the current page displayed.  The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Primitives.DocumentPageView.PageNumber%2A> is zero-based: 0 is the first page, 1 is the second page, and so on.  
-  
- No content is displayed if <xref:System.Windows.Controls.Primitives.DocumentPageView.PageNumber%2A> is set to a negative number.  
-  
+<xref:System.Windows.Controls.Primitives.DocumentPageView.PageNumber%2A> is zero-based: 0 is the first page, 1 is the second page, and so on.  
+ 
+No content is displayed if <xref:System.Windows.Controls.Primitives.DocumentPageView.PageNumber%2A> is set to a negative number.  
+ 
 <a name="dependencyPropertyInfo_PageNumber"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.DocumentPageView.PageNumberProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -383,17 +383,17 @@
         <value>The enumeration value that specifies how content should be stretched to fill the display page.  The default is <see cref="F:System.Windows.Media.Stretch.Uniform" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Stretch"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.DocumentPageView.StretchProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -415,17 +415,17 @@
         <value>The enumeration value that specifies in what scaling directions <see cref="P:System.Windows.Controls.Primitives.DocumentPageView.Stretch" /> should be applied.  The default is <see cref="F:System.Windows.Controls.StretchDirection.DownOnly" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_StretchDirection"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.DocumentPageView.StretchDirectionProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,12 +14,12 @@
     <summary>An instance of this class is returned by the <see cref="M:System.Workflow.Activities.Rules.IRuleExpression.Validate(System.Workflow.Activities.Rules.RuleValidation,System.Boolean)" /> method of an <see cref="T:System.Workflow.Activities.Rules.IRuleExpression" /> expression.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.Activities.Rules.RuleExpressionInfo.ExpressionType%2A> property on <xref:System.Workflow.Activities.Rules.RuleExpressionInfo> provides the return type of the expression. For example, a binary expression, when evaluated, has a return type of Boolean; or, an expression that accesses a property might return an integer type.  
-  
- The information in the <xref:System.Workflow.Activities.Rules.RuleExpressionInfo> can be used to validate the use of the expression. For example, a greater-than test cannot be used to compare two expressions if either returns a Boolean.  
-  
+The <xref:System.Workflow.Activities.Rules.RuleExpressionInfo.ExpressionType%2A> property on <xref:System.Workflow.Activities.Rules.RuleExpressionInfo> provides the return type of the expression. For example, a binary expression, when evaluated, has a return type of Boolean; or, an expression that accesses a property might return an integer type.  
+ 
+The information in the <xref:System.Workflow.Activities.Rules.RuleExpressionInfo> can be used to validate the use of the expression. For example, a greater-than test cannot be used to compare two expressions if either returns a Boolean.  
+ 
  ]]></format>
     </remarks>
   </Docs>

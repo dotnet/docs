@@ -14,12 +14,12 @@
     <summary>Represents the configuration element that specifies settings required for interaction with a Message Queuing (MSMQ) sender or receiver.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [\&lt;msmqIntegration\&gt;](~/docs/framework/configure-apps/file-schema/wcf/msmqintegration.md)  
-  
- <xref:System.ServiceModel.MsmqIntegration>  
-  
+[\&lt;msmqIntegration\&gt;](~/docs/framework/configure-apps/file-schema/wcf/msmqintegration.md)  
+ 
+<xref:System.ServiceModel.MsmqIntegration>  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -179,22 +179,22 @@
         <value>The <see cref="T:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat" /> to be used when serializing MSMQ messages.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can have one of the following values:  
-  
+This property can have one of the following values:  
+ 
 -   `ActiveX` - The ActiveX serializer is used to serialize objects.  
-  
+ 
 -   `Binary` - The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> is used to serialize objects.  
-  
+ 
 -   `ByteArray` - The object is serialized to an array of bytes.  
-  
+ 
 -   `Stream` - The object is serialized to a stream.  
-  
+ 
 -   `Xml` - The <xref:System.Xml.Serialization.XmlSerializer> is used to serialize objects.  
-  
- The default value is `Xml`.  
-  
+ 
+The default value is `Xml`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

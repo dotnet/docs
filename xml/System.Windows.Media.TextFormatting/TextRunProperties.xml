@@ -14,10 +14,10 @@
     <summary>Provides a set of properties, such as typeface or foreground brush, that can be applied to a <see cref="T:System.Windows.Media.TextFormatting.TextRun" /> object. This is an abstract class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The text layout client provides a concrete implementation of this abstract class. This enables the client to implement text run properties in a way that corresponds with the associated formatting store.  
-  
+The text layout client provides a concrete implementation of this abstract class. This enables the client to implement text run properties in a way that corresponds with the associated formatting store.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -108,10 +108,10 @@
         <value>A <see cref="T:System.Double" /> that represents the text size in points. The default is 12 pt.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Points are defined as 1/72 of an inch.  
-  
+Points are defined as 1/72 of an inch.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,10 +133,10 @@
         <value>A <see cref="T:System.Double" /> that represents the text size in DIPs (Device Independent Pixels). The default is 12 DIP.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A DIP is 1/96 of an inch. As DIP increases the size of the text increases.  
-  
+A DIP is 1/96 of an inch. As DIP increases the size of the text increases.  
+ 
  ]]></format>
         </remarks>
       </Docs>

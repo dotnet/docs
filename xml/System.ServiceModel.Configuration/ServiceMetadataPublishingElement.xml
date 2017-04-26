@@ -14,15 +14,15 @@
     <summary>Represents the configuration element that controls the publication of service metadata and associated information. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This configuration element can be used to enable or disable the publication of service metadata using an HTTP/Get request or a WS-MetadataExchange (WS-MEX) request. You can also enable or prevent the display of an HTML page of information about the service when it is requested over HTTP.  
+This configuration element can be used to enable or disable the publication of service metadata using an HTTP/Get request or a WS-MetadataExchange (WS-MEX) request. You can also enable or prevent the display of an HTML page of information about the service when it is requested over HTTP.  
+ 
   
-   
-  
+ 
 ## Examples  
- [\&lt;serviceMetadata\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicemetadata.md)  
-  
+[\&lt;serviceMetadata\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicemetadata.md)  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -122,10 +122,10 @@
         <value>A URI that specifies the location of a WSDL file, which is returned to the user in response to WSDL and MEX requests instead of the auto-generated WSDL. The default is a <see langword="null" /> Uri object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is not set, the auto-generated WSDL is returned.  
-  
+When this property is not set, the auto-generated WSDL is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <value>Returns <see cref="T:System.String" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not set, the default binding (HttpsTransportBindingElement) is used for metadata retrieval as appropriate.  
-  
+If this property is not set, the default binding (HttpsTransportBindingElement) is used for metadata retrieval as appropriate.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,12 +212,12 @@
           <see langword="true" /> if the service metadata is published for retrieval using an HTTP/Get request; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement.HttpGetUrl%2A> property is not specified, the address at which the metadata is published is the service address plus a "?wsdl". For example, if the service address is "http://localhost:8080/CalculatorService", the HTTP/Get metadata address is "http://localhost:8080/CalculatorService?wsdl".  
-  
- If this property is `false`, or the address of the service is not based on HTTP or HTTPS, “?wsdl” is ignored.  
-  
+If the <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement.HttpGetUrl%2A> property is not specified, the address at which the metadata is published is the service address plus a "?wsdl". For example, if the service address is "http://localhost:8080/CalculatorService", the HTTP/Get metadata address is "http://localhost:8080/CalculatorService?wsdl".  
+ 
+If this property is `false`, or the address of the service is not based on HTTP or HTTPS, “?wsdl” is ignored.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,10 +270,10 @@
         <value>Returns <see cref="T:System.String" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not set, the default binding (HttpsTransportBindingElement) is used for metadata retrieval as appropriate.  
-  
+If this property is not set, the default binding (HttpsTransportBindingElement) is used for metadata retrieval as appropriate.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,12 +327,12 @@
           <see langword="true" /> if the service metadata is published for retrieval using an HTTP/Get request; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement.HttpsGetUrl%2A> property is not specified, the address at which the metadata is published is the service address plus a "?wsdl". For example, if the service address is "https://localhost:8080/CalculatorService", the HTTP/Get metadata address is "https://localhost:8080/CalculatorService?wsdl".  
-  
- If this property is `false`, or the address of the service is not based on HTTP or HTTPS, “?wsdl” is ignored.  
-  
+If the <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement.HttpsGetUrl%2A> property is not specified, the address at which the metadata is published is the service address plus a "?wsdl". For example, if the service address is "https://localhost:8080/CalculatorService", the HTTP/Get metadata address is "https://localhost:8080/CalculatorService?wsdl".  
+ 
+If this property is `false`, or the address of the service is not based on HTTP or HTTPS, “?wsdl” is ignored.  
+ 
  ]]></format>
         </remarks>
       </Docs>

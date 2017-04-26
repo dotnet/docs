@@ -14,20 +14,20 @@
     <summary>Provides data for mouse button related events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Input.MouseButtonEventArgs> is used with the following events: <xref:System.Windows.Input.Mouse.MouseDown>, <xref:System.Windows.Input.Mouse.MouseUp>, <xref:System.Windows.UIElement.MouseLeftButtonDown>, <xref:System.Windows.UIElement.MouseLeftButtonUp>, <xref:System.Windows.UIElement.MouseRightButtonDown>, <xref:System.Windows.UIElement.MouseRightButtonUp>, and the corresponding tunneling events.  
+<xref:System.Windows.Input.MouseButtonEventArgs> is used with the following events: <xref:System.Windows.Input.Mouse.MouseDown>, <xref:System.Windows.Input.Mouse.MouseUp>, <xref:System.Windows.UIElement.MouseLeftButtonDown>, <xref:System.Windows.UIElement.MouseLeftButtonUp>, <xref:System.Windows.UIElement.MouseRightButtonDown>, <xref:System.Windows.UIElement.MouseRightButtonUp>, and the corresponding tunneling events.  
+ 
+The <xref:System.Windows.Input.Mouse> class provides additional properties and methods for determining the state of the mouse.  
+ 
   
- The <xref:System.Windows.Input.Mouse> class provides additional properties and methods for determining the state of the mouse.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a mouse button event handler that changes the color of the object that raised the event.  The color chosen depends on the mouse button which was pressed.  The <xref:System.Windows.Input.MouseButtonEventArgs.ChangedButton%2A> property is checked to determine which button was pressed.  
-  
- [!code-csharp[mousesnippetsample#MouseEventArgsChangedButton](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargschangedbutton)]
- [!code-vb[mousesnippetsample#MouseEventArgsChangedButton](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargschangedbutton)]  
-  
+The following example creates a mouse button event handler that changes the color of the object that raised the event.  The color chosen depends on the mouse button which was pressed.  The <xref:System.Windows.Input.MouseButtonEventArgs.ChangedButton%2A> property is checked to determine which button was pressed.  
+ 
+[!code-csharp[mousesnippetsample#MouseEventArgsChangedButton](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargschangedbutton)]
+[!code-vb[mousesnippetsample#MouseEventArgsChangedButton](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargschangedbutton)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -95,18 +95,18 @@
         <value>The state the button is in.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.Mouse> class provides additional properties and methods for determining the state of the mouse.  
+The <xref:System.Windows.Input.Mouse> class provides additional properties and methods for determining the state of the mouse.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a mouse button event handler that changes the color of the object that handles the event.  The color that is chosen depends on whether the mouse button was pressed or released.  
-  
- [!code-csharp[mousesnippetsample#MouseEventArgsButtonStatePressed](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargsbuttonstatepressed)]
- [!code-vb[mousesnippetsample#MouseEventArgsButtonStatePressed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargsbuttonstatepressed)]  
-  
+The following example creates a mouse button event handler that changes the color of the object that handles the event.  The color that is chosen depends on whether the mouse button was pressed or released.  
+ 
+[!code-csharp[mousesnippetsample#MouseEventArgsButtonStatePressed](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargsbuttonstatepressed)]
+[!code-vb[mousesnippetsample#MouseEventArgsButtonStatePressed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargsbuttonstatepressed)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,18 +128,18 @@
         <value>The button which was pressed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.Mouse> class provides additional properties and methods for determining the state of the mouse.  
+The <xref:System.Windows.Input.Mouse> class provides additional properties and methods for determining the state of the mouse.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a mouse button event handler that changes the color of an object depending on the mouse button which was pressed.  The <xref:System.Windows.Input.MouseButtonEventArgs.ChangedButton%2A> property is checked to determine which button was pressed.  
-  
- [!code-csharp[mousesnippetsample#MouseEventArgsChangedButton](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargschangedbutton)]
- [!code-vb[mousesnippetsample#MouseEventArgsChangedButton](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargschangedbutton)]  
-  
+The following example creates a mouse button event handler that changes the color of an object depending on the mouse button which was pressed.  The <xref:System.Windows.Input.MouseButtonEventArgs.ChangedButton%2A> property is checked to determine which button was pressed.  
+ 
+[!code-csharp[mousesnippetsample#MouseEventArgsChangedButton](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargschangedbutton)]
+[!code-vb[mousesnippetsample#MouseEventArgsChangedButton](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargschangedbutton)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,18 +161,18 @@
         <value>The number of times the mouse button was clicked.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- One use of <xref:System.Windows.Input.MouseButtonEventArgs.ClickCount%2A> is to determine whether a double mouse click has occurred.  Some classes expose events for a double-click, such as the <xref:System.Windows.Controls.Control.MouseDoubleClick> event on the <xref:System.Windows.Controls.Control> class. When a double click event is not exposed on a class, a double click can be detected by using the <xref:System.Windows.Input.MouseButtonEventArgs.ClickCount%2A> property on the event data.  
+One use of <xref:System.Windows.Input.MouseButtonEventArgs.ClickCount%2A> is to determine whether a double mouse click has occurred.  Some classes expose events for a double-click, such as the <xref:System.Windows.Controls.Control.MouseDoubleClick> event on the <xref:System.Windows.Controls.Control> class. When a double click event is not exposed on a class, a double click can be detected by using the <xref:System.Windows.Input.MouseButtonEventArgs.ClickCount%2A> property on the event data.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Input.MouseButtonEventHandler> which determines if a single, double, or triple click occurred.  <xref:System.Windows.Input.MouseButtonEventArgs.ClickCount%2A> property is used to determine the number of clicks.  
-  
- [!code-csharp[mousesnippetsample#MouseClickCountDoubleClick](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseclickcountdoubleclick)]
- [!code-vb[mousesnippetsample#MouseClickCountDoubleClick](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseclickcountdoubleclick)]  
-  
+The following example creates a <xref:System.Windows.Input.MouseButtonEventHandler> which determines if a single, double, or triple click occurred.  <xref:System.Windows.Input.MouseButtonEventArgs.ClickCount%2A> property is used to determine the number of clicks.  
+ 
+[!code-csharp[mousesnippetsample#MouseClickCountDoubleClick](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseclickcountdoubleclick)]
+[!code-vb[mousesnippetsample#MouseClickCountDoubleClick](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseclickcountdoubleclick)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,10 +199,10 @@
         <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation casts the generic handler as a <xref:System.Windows.Input.MouseEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
-  
+This implementation casts the generic handler as a <xref:System.Windows.Input.MouseEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

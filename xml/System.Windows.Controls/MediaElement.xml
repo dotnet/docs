@@ -23,18 +23,18 @@
     <summary>Represents a control that contains audio and/or video.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When distributing media with your application, you cannot use a media file as a project resource. In your project file, you must instead set the media type to `Content` and set `CopyToOutputDirectory` to `PreserveNewest` or `Always`.  
-  
- <xref:System.Windows.Controls.MediaElement> can be used in two different modes, depending on what is driving the control: independent mode or clock mode. When used in the independent mode, the <xref:System.Windows.Controls.MediaElement> is analogous to an image, and <xref:System.Windows.Controls.MediaElement.Source%2A> [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] can be directly specified. In clock mode, the <xref:System.Windows.Controls.MediaElement> can be thought of as a target for an animation, and thus it will have corresponding <xref:System.Windows.Media.Animation.Timeline> and <xref:System.Windows.Media.Animation.Clock> entries in the timing tree. For more information on media modes, see the [Multimedia Overview](~/docs/framework/wpf/graphics-multimedia/multimedia-overview.md).  
-  
- For an example of controlling a <xref:System.Windows.Controls.MediaElement> in independent mode, see [How to: Control a MediaElement (Play, Pause, Stop, Volume, and Speed)](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-mediaelement-play-pause-stop-volume-and-speed.md).  
-  
- Until the <xref:System.Windows.Controls.MediaElement.MediaOpened> event has been raised, the <xref:System.Windows.FrameworkElement.ActualWidth%2A> and <xref:System.Windows.FrameworkElement.ActualHeight%2A> of the control will report as zero as the media content is used to determine the final size and location of the control. For audio only content, these properties will always be zero.  
-  
- For a fixed size control, the <xref:System.Windows.FrameworkElement.Width%2A> and/or <xref:System.Windows.FrameworkElement.Height%2A> properties can be set. However, to preserve the media's aspect ratio, set the <xref:System.Windows.FrameworkElement.Width%2A> or <xref:System.Windows.FrameworkElement.Height%2A> properties but not both.  
-  
+When distributing media with your application, you cannot use a media file as a project resource. In your project file, you must instead set the media type to `Content` and set `CopyToOutputDirectory` to `PreserveNewest` or `Always`.  
+ 
+<xref:System.Windows.Controls.MediaElement> can be used in two different modes, depending on what is driving the control: independent mode or clock mode. When used in the independent mode, the <xref:System.Windows.Controls.MediaElement> is analogous to an image, and <xref:System.Windows.Controls.MediaElement.Source%2A> [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] can be directly specified. In clock mode, the <xref:System.Windows.Controls.MediaElement> can be thought of as a target for an animation, and thus it will have corresponding <xref:System.Windows.Media.Animation.Timeline> and <xref:System.Windows.Media.Animation.Clock> entries in the timing tree. For more information on media modes, see the [Multimedia Overview](~/docs/framework/wpf/graphics-multimedia/multimedia-overview.md).  
+ 
+For an example of controlling a <xref:System.Windows.Controls.MediaElement> in independent mode, see [How to: Control a MediaElement (Play, Pause, Stop, Volume, and Speed)](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-mediaelement-play-pause-stop-volume-and-speed.md).  
+ 
+Until the <xref:System.Windows.Controls.MediaElement.MediaOpened> event has been raised, the <xref:System.Windows.FrameworkElement.ActualWidth%2A> and <xref:System.Windows.FrameworkElement.ActualHeight%2A> of the control will report as zero as the media content is used to determine the final size and location of the control. For audio only content, these properties will always be zero.  
+ 
+For a fixed size control, the <xref:System.Windows.FrameworkElement.Width%2A> and/or <xref:System.Windows.FrameworkElement.Height%2A> properties can be set. However, to preserve the media's aspect ratio, set the <xref:System.Windows.FrameworkElement.Width%2A> or <xref:System.Windows.FrameworkElement.Height%2A> properties but not both.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -93,18 +93,18 @@
         <value>The ratio of volume across speakers in the range between -1 and 1. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A value of -1 represents 100% of the left side speakers and 1 represents 100% of the right side speakers.  
-  
+A value of -1 represents 100% of the left side speakers and 1 represents 100% of the right side speakers.  
+ 
 <a name="dependencyPropertyInfo_Balance"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.MediaElement.BalanceProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,18 +142,18 @@
         <summary>Occurs when media buffering has ended.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="routedEventInfo_BufferingEnded"></a>   
 ## Routed Event Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.MediaElement.BufferingEndedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,18 +209,18 @@
         <summary>Occurs when media buffering has begun.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="routedEventInfo_BufferingStarted"></a>   
 ## Routed Event Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.MediaElement.BufferingStartedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,10 +283,10 @@
         <value>A clock associated with the <see cref="T:System.Windows.Media.MediaTimeline" /> that controls media playback. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property puts the media element into a mode in which it utilizes the timing engine. Any media that was previously playing is stopped and the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] associated with the new clock is opened.  
-  
+Setting this property puts the media element into a mode in which it utilizes the timing engine. Any media that was previously playing is stopped and the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] associated with the new clock is opened.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -402,17 +402,17 @@
           <see langword="true" /> if audio is muted; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsMuted"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.MediaElement.IsMutedProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -451,18 +451,18 @@
         <value>The load behavior <see cref="T:System.Windows.Controls.MediaState" /> set for the media. The default value is <see cref="F:System.Windows.Controls.MediaState.Play" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> must be set to <xref:System.Windows.Controls.MediaState> in order to interactively control media with the <xref:System.Windows.Controls.MediaElement.Play%2A>, <xref:System.Windows.Controls.MediaElement.Pause%2A>, and <xref:System.Windows.Controls.MediaElement.Stop%2A> methods.  
-  
+<xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> must be set to <xref:System.Windows.Controls.MediaState> in order to interactively control media with the <xref:System.Windows.Controls.MediaElement.Play%2A>, <xref:System.Windows.Controls.MediaElement.Pause%2A>, and <xref:System.Windows.Controls.MediaElement.Stop%2A> methods.  
+ 
 <a name="dependencyPropertyInfo_LoadedBehavior"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.MediaElement.LoadedBehaviorProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -522,18 +522,18 @@
         <summary>Occurs when the media has ended.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="routedEventInfo_MediaEnded"></a>   
 ## Routed Event Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.MediaElement.MediaEndedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -571,18 +571,18 @@
         <summary>Occurs when an error is encountered.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="routedEventInfo_MediaFailed"></a>   
 ## Routed Event Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.MediaElement.MediaFailedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.EventHandler%601>, with constraint of <xref:System.Windows.ExceptionRoutedEventArgs>.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -620,18 +620,18 @@
         <summary>Occurs when media loading has finished.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="routedEventInfo_MediaOpened"></a>   
 ## Routed Event Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.MediaElement.MediaOpenedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -670,12 +670,12 @@
         <value>The natural duration of the media.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value returned is independent of <xref:System.Windows.Controls.MediaElement.SpeedRatio%2A>.  
-  
- <xref:System.Windows.Controls.MediaElement.NaturalDuration%2A> is not accurate until the <xref:System.Windows.Controls.MediaElement.MediaOpened> event has been raised.  
-  
+The value returned is independent of <xref:System.Windows.Controls.MediaElement.SpeedRatio%2A>.  
+ 
+<xref:System.Windows.Controls.MediaElement.NaturalDuration%2A> is not accurate until the <xref:System.Windows.Controls.MediaElement.MediaOpened> event has been raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -697,10 +697,10 @@
         <value>The height of the video associated with the media. Audio files will return zero.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.MediaElement.NaturalVideoHeight%2A> is not accurate until the <xref:System.Windows.Controls.MediaElement.MediaOpened> event has been raised.  
-  
+<xref:System.Windows.Controls.MediaElement.NaturalVideoHeight%2A> is not accurate until the <xref:System.Windows.Controls.MediaElement.MediaOpened> event has been raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -722,10 +722,10 @@
         <value>The width of the video associated with the media.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.MediaElement.NaturalVideoWidth%2A> is not accurate until the <xref:System.Windows.Controls.MediaElement.MediaOpened> event has been raised.  
-  
+<xref:System.Windows.Controls.MediaElement.NaturalVideoWidth%2A> is not accurate until the <xref:System.Windows.Controls.MediaElement.MediaOpened> event has been raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -787,14 +787,14 @@
         <summary>Pauses media at the current position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method pauses the media if the media is currently running. The <xref:System.Windows.Controls.MediaElement.Play%2A> method can be used to resume.  
-  
- This method can be used only when the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is `null`. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is non-`null`, the timing engine controls media playback behavior.  
-  
- This method has an effect only if the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> property is set to <xref:System.Windows.Controls.MediaState>.  
-  
+This method pauses the media if the media is currently running. The <xref:System.Windows.Controls.MediaElement.Play%2A> method can be used to resume.  
+ 
+This method can be used only when the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is `null`. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is non-`null`, the timing engine controls media playback behavior.  
+ 
+This method has an effect only if the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> property is set to <xref:System.Windows.Controls.MediaState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Controls.MediaElement.Clock" /> property is not <see langword="null" />.</exception>
@@ -817,14 +817,14 @@
         <summary>Plays media from the current position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will begin the media if it is not currently active or resume media if it is paused. This method has no effect if the media is currently running.  
-  
- This method can be used only when the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is `null`. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is non-`null`, the timing engine controls media playback behavior.  
-  
- This method has an effect only if the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> property is set to <xref:System.Windows.Controls.MediaState>.  
-  
+This method will begin the media if it is not currently active or resume media if it is paused. This method has no effect if the media is currently running.  
+ 
+This method can be used only when the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is `null`. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is non-`null`, the timing engine controls media playback behavior.  
+ 
+This method has an effect only if the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> property is set to <xref:System.Windows.Controls.MediaState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Controls.MediaElement.Clock" /> property is not <see langword="null" />.</exception>
@@ -847,14 +847,14 @@
         <value>The amount of time since the beginning of the media. The default is 00:00:00.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property can enable you to jump to different points in playback (also known as seeking). Not all media types allow seek operations. The <xref:System.Windows.Controls.MediaElement.MediaFailed> event will fire if the media source does not allow seeking.  
-  
- This property has no effect until after the <xref:System.Windows.Controls.MediaElement.MediaOpened> event has occurred.  
-  
- This property can be set only when the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is `null`. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is non-`null`, the timing engine controls media playback behavior.  
-  
+Setting this property can enable you to jump to different points in playback (also known as seeking). Not all media types allow seek operations. The <xref:System.Windows.Controls.MediaElement.MediaFailed> event will fire if the media source does not allow seeking.  
+ 
+This property has no effect until after the <xref:System.Windows.Controls.MediaElement.MediaOpened> event has occurred.  
+ 
+This property can be set only when the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is `null`. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is non-`null`, the timing engine controls media playback behavior.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Controls.MediaElement.Clock" /> property is not <see langword="null" />.</exception>
@@ -876,18 +876,18 @@
         <summary>Occurs when a script command is encountered in the media.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="routedEventInfo_ScriptCommand"></a>   
 ## Routed Event Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.MediaElement.ScriptCommandEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.EventHandler>, with constraint of <xref:System.Windows.MediaScriptCommandRoutedEventArgs>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -927,20 +927,20 @@
           <see langword="true" /> if frames are updated while paused; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When set to `false`, seeking to a specific location will only update the displayed frame if media is playing.  
-  
- Setting <xref:System.Windows.Controls.MediaElement.ScrubbingEnabled%2A> to `true` can incur some performance costs, especially when interactively controlling media playback.  
-  
+When set to `false`, seeking to a specific location will only update the displayed frame if media is playing.  
+ 
+Setting <xref:System.Windows.Controls.MediaElement.ScrubbingEnabled%2A> to `true` can incur some performance costs, especially when interactively controlling media playback.  
+ 
 <a name="dependencyPropertyInfo_ScrubbingEnabled"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.MediaElement>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -979,20 +979,20 @@
         <value>The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] that specifies the source of the element. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the value of this property causes the media to play.  
-  
- This property can be set only when the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is `null`. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is non-`null`, the timing engine controls media playback behavior.  
-  
+Setting the value of this property causes the media to play.  
+ 
+This property can be set only when the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is `null`. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is non-`null`, the timing engine controls media playback behavior.  
+ 
 <a name="dependencyPropertyInfo_Source"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.MediaElement.SourceProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Controls.MediaElement.Clock" /> property is not <see langword="null" />.</exception>
@@ -1032,12 +1032,12 @@
         <value>The speed ratio of the media. The valid range is between 0 (zero) and infinity. Values less than 1 yield slower than normal playback, and values greater than 1 yield faster than normal playback. Negative values are treated as 0. The default value is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be set only when the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is `null`. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is non-`null`, the timing engine controls media playback behavior.  
-  
- Audio playback may not occur unless the value of <xref:System.Windows.Controls.MediaElement.SpeedRatio%2A> is 1.  
-  
+This property can be set only when the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is `null`. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is non-`null`, the timing engine controls media playback behavior.  
+ 
+Audio playback may not occur unless the value of <xref:System.Windows.Controls.MediaElement.SpeedRatio%2A> is 1.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Controls.MediaElement.Clock" /> property is not <see langword="null" />.</exception>
@@ -1060,12 +1060,12 @@
         <summary>Stops and resets media to be played from the beginning.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used only when the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is `null`. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is non-`null`, the timing engine controls media playback behavior.  
-  
- This method has an effect only if the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> property is set to <xref:System.Windows.Controls.MediaState>.  
-  
+This method can be used only when the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is `null`. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is non-`null`, the timing engine controls media playback behavior.  
+ 
+This method has an effect only if the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> property is set to <xref:System.Windows.Controls.MediaState>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Controls.MediaElement.Clock" /> property is not <see langword="null" />.</exception>
@@ -1088,30 +1088,30 @@
         <value>The stretch value for the rendered media. The default is <see cref="F:System.Windows.Media.Stretch.Uniform" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following illustration demonstrates the different <xref:System.Windows.Media.Stretch> values.  
-  
- ![Different TileBrush Stretch settings](~/add/media/img-mmgraphics-stretchenum.jpg "Different TileBrush Stretch settings")  
+The following illustration demonstrates the different <xref:System.Windows.Media.Stretch> values.  
+ 
+![Different TileBrush Stretch settings](~/add/media/img-mmgraphics-stretchenum.jpg "Different TileBrush Stretch settings")  
 Different gradient spread methods  
-  
+ 
 <a name="dependencyPropertyInfo_Stretch"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.MediaElement>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Controls.Viewbox> and set the <xref:System.Windows.Media.Stretch> mode of content.  
-  
- [!code-cpp[ViewBoxCode#2](~/samples/snippets/cpp/VS_Snippets_Wpf/ViewBoxCode/CPP/ViewboxCode.cpp#2)]
- [!code-csharp[ViewBoxCode#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ViewBoxCode/Csharp/ViewboxCode.cs#2)]
- [!code-vb[ViewBoxCode#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ViewBoxCode/VisualBasic/ViewBoxCodeVB.vb#2)]  
-  
+The following example shows how to create a <xref:System.Windows.Controls.Viewbox> and set the <xref:System.Windows.Media.Stretch> mode of content.  
+ 
+[!code-cpp[ViewBoxCode#2](~/samples/snippets/cpp/VS_Snippets_Wpf/ViewBoxCode/CPP/ViewboxCode.cpp#2)]
+[!code-csharp[ViewBoxCode#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ViewBoxCode/Csharp/ViewboxCode.cs#2)]
+[!code-vb[ViewBoxCode#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ViewBoxCode/VisualBasic/ViewBoxCodeVB.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1133,23 +1133,23 @@ Different gradient spread methods
         <value>The value that specifies the direction the element is stretched. The default is <see cref="F:System.Windows.Controls.StretchDirection.Both" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_StretchDirection"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.MediaElement.StretchDirectionProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-xml[mediagallery_snip#StretchMediaElementExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MediaGallery_snip/VB/StretchMediaElementExample.xaml#stretchmediaelementexamplewholepage)]
- [!code-xml[mediagallery_snip#StretchMediaElementExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/MediaGallery_snip/CSharp/StretchMediaElementExample.xaml#stretchmediaelementexamplewholepage)]  
-  
+[!code-xml[mediagallery_snip#StretchMediaElementExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MediaGallery_snip/VB/StretchMediaElementExample.xaml#stretchmediaelementexamplewholepage)]
+[!code-xml[mediagallery_snip#StretchMediaElementExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/MediaGallery_snip/CSharp/StretchMediaElementExample.xaml#stretchmediaelementexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1223,17 +1223,17 @@ Different gradient spread methods
         <value>The unload behavior <see cref="T:System.Windows.Controls.MediaState" /> for the media.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_UnloadedBehavior"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.MediaElement.UnloadedBehaviorProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1272,17 +1272,17 @@ Different gradient spread methods
         <value>The media's volume represented on a linear scale between 0 and 1. The default is 0.5.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Volume"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.MediaElement.VolumeProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

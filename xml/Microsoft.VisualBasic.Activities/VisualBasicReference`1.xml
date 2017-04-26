@@ -33,10 +33,10 @@
     <summary>Contains an expression in Visual Basic syntax that evaluates to an l-value, which supports binding of the <see cref="F:System.Activities.ArgumentDirection.Out" /> arguments.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This activity uses the LINQ to Entity provider to evaluate LINQ expressions. Any LINQ expressions used with this activity must be evaluatable by the ADO.Net Entity Data Model. For example, LINQ expressions cannot be used to reference activities, variables, or arguments of the workflow itself.  
-  
+This activity uses the LINQ to Entity provider to evaluate LINQ expressions. Any LINQ expressions used with this activity must be evaluatable by the ADO.Net Entity Data Model. For example, LINQ expressions cannot be used to reference activities, variables, or arguments of the workflow itself.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -117,10 +117,10 @@
           <see langword="true" /> if the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" /> can be converted into a string; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method always returns `true`.  
-  
+This method always returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,10 +146,10 @@
         <returns>A string representation of the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string representation consists of the <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601.ExpressionText%2A> surrounded by brackets.  
-  
+The string representation consists of the <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601.ExpressionText%2A> surrounded by brackets.  
+ 
  ]]></format>
         </remarks>
       </Docs>

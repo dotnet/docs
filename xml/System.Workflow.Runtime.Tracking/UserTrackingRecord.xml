@@ -19,14 +19,14 @@
     <summary>Contains the data sent to a tracking service by the runtime tracking infrastructure when a <see cref="T:System.Workflow.Runtime.Tracking.UserTrackPoint" /> is matched.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- When the runtime tracking infrastructure matches a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>, it sends a <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord> to the tracking service over the <xref:System.Workflow.Runtime.Tracking.TrackingChannel> associated with that tracking service. The tracking service can perform whatever action is required on the data in the tracking record.  
-  
+ 
+When the runtime tracking infrastructure matches a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>, it sends a <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord> to the tracking service over the <xref:System.Workflow.Runtime.Tracking.TrackingChannel> associated with that tracking service. The tracking service can perform whatever action is required on the data in the tracking record.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingRecord" /> class</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called by the runtime tracking infrastructure.  
-  
+This constructor is called by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,10 +102,10 @@
         <value>The <see cref="T:System.Type" /> of the activity that emitted the user data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is set by the runtime tracking infrastructure.  
-  
+This property is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,17 +127,17 @@
         <value>A <see cref="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" /> that contains the annotations that are associated with the user event by the <see cref="T:System.Workflow.Runtime.Tracking.UserTrackPoint" /> that was matched in the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can specify annotations to be associated with a user event in <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Annotations%2A?displayProperty=fullName>. When the runtime tracking infrastructure matches the <xref:System.Workflow.Runtime.Tracking.UserTrackPoint>, it returns these annotations in <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.Annotations%2A?displayProperty=fullName>.  
+You can specify annotations to be associated with a user event in <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Annotations%2A?displayProperty=fullName>. When the runtime tracking infrastructure matches the <xref:System.Workflow.Runtime.Tracking.UserTrackPoint>, it returns these annotations in <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.Annotations%2A?displayProperty=fullName>.  
+ 
+This property is set by the runtime tracking infrastructure.  
+ 
   
- This property is set by the runtime tracking infrastructure.  
-  
-   
-  
+ 
 ## Examples  
- For more information about annotations, see the [Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8) and the [Using the Tracking Profile Object Model Sample](http://msdn.microsoft.com/en-us/0b820e0a-8f4b-4276-8452-e985b51d9528).  
-  
+For more information about annotations, see the [Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8) and the [Using the Tracking Profile Object Model Sample](http://msdn.microsoft.com/en-us/0b820e0a-8f4b-4276-8452-e985b51d9528).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,12 +159,12 @@
         <value>A list of <see cref="T:System.Workflow.Runtime.Tracking.TrackingDataItem" /> objects each of which contains a single piece of extracted data and its associated annotations.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> is matched, the runtime tracking infrastructure can extract data from the workflow instance. The data to be extracted is specified by <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts%2A?displayProperty=fullName>. <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts%2A?displayProperty=fullName> can contain <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> objects, which specify member data to be extracted from the activity associated with the user event, and <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> objects, which specify member data to be extracted from the root activity of the workflow. Each type of extract can also specify annotations to be returned with the extracted data. The runtime tracking infrastructure encapsulates each piece of extracted data and its associated annotations in a <xref:System.Workflow.Runtime.Tracking.TrackingDataItem> which it adds to <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.Body%2A>.  
-  
- Because the user data pushed to the tracking service by the user event is contained in <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.UserData%2A>, <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.Body%2A> will frequently be an empty list. This property is set by the runtime tracking infrastructure.  
-  
+When a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> is matched, the runtime tracking infrastructure can extract data from the workflow instance. The data to be extracted is specified by <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts%2A?displayProperty=fullName>. <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts%2A?displayProperty=fullName> can contain <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> objects, which specify member data to be extracted from the activity associated with the user event, and <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> objects, which specify member data to be extracted from the root activity of the workflow. Each type of extract can also specify annotations to be returned with the extracted data. The runtime tracking infrastructure encapsulates each piece of extracted data and its associated annotations in a <xref:System.Workflow.Runtime.Tracking.TrackingDataItem> which it adds to <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.Body%2A>.  
+ 
+Because the user data pushed to the tracking service by the user event is contained in <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.UserData%2A>, <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.Body%2A> will frequently be an empty list. This property is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,14 +204,14 @@
         <value>A null reference (<see langword="Nothing" />) for a <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingRecord" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is no event data associated with a user event, therefore, <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.EventArgs%2A> has no meaning and is always a null reference (`Nothing`).  
-  
- The user data that is pushed to the runtime tracking infrastructure by whichever one of the <xref:System.Workflow.ComponentModel.Activity.TrackData%2A> or <xref:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData%2A> methods that caused the user event is sent in <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.UserData%2A>. Any data extracts that are associated with the user event by the <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> are encapsulated in <xref:System.Workflow.Runtime.Tracking.TrackingDataItem> objects and sent in <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.Body%2A>.  
-  
- This property is set by the runtime tracking infrastructure.  
-  
+There is no event data associated with a user event, therefore, <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.EventArgs%2A> has no meaning and is always a null reference (`Nothing`).  
+ 
+The user data that is pushed to the runtime tracking infrastructure by whichever one of the <xref:System.Workflow.ComponentModel.Activity.TrackData%2A> or <xref:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData%2A> methods that caused the user event is sent in <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.UserData%2A>. Any data extracts that are associated with the user event by the <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> are encapsulated in <xref:System.Workflow.Runtime.Tracking.TrackingDataItem> objects and sent in <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.Body%2A>.  
+ 
+This property is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,12 +233,12 @@
         <value>A <see cref="T:System.DateTime" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DateTime> is Coordinated Universal Time (UTC).  
-  
- This property is set by the runtime tracking infrastructure.  
-  
+The <xref:System.DateTime> is Coordinated Universal Time (UTC).  
+ 
+This property is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,12 +260,12 @@
         <value>A value that indicates the order of the user event in the workflow instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.EventOrder%2A> indicates the order of the user event that matched the <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> relative to the other tracking events emitted by the workflow instance. <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.EventOrder%2A> will be unique within a workflow instance, but it is not guaranteed to be sequential.  
-  
- This property is set by the runtime tracking infrastructure.  
-  
+<xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.EventOrder%2A> indicates the order of the user event that matched the <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> relative to the other tracking events emitted by the workflow instance. <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.EventOrder%2A> will be unique within a workflow instance, but it is not guaranteed to be sequential.  
+ 
+This property is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -305,10 +305,10 @@
         <value>The <see cref="P:System.Workflow.ComponentModel.Activity.QualifiedName" /> of the <see cref="T:System.Workflow.ComponentModel.Activity" /> from which the user data for this user event was emitted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is set by the runtime tracking infrastructure.  
-  
+This property is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -330,12 +330,12 @@
         <value>The user data for which the <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingRecord" /> was created.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.UserData%2A> contains the actual data pushed to the runtime tracking infrastructure by whichever one of the overloaded <xref:System.Workflow.ComponentModel.Activity.TrackData%2A> or <xref:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData%2A> methods is responsible for the user event.  
-  
- This property is set by the runtime tracking infrastructure.  
-  
+<xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.UserData%2A> contains the actual data pushed to the runtime tracking infrastructure by whichever one of the overloaded <xref:System.Workflow.ComponentModel.Activity.TrackData%2A> or <xref:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData%2A> methods is responsible for the user event.  
+ 
+This property is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -357,10 +357,10 @@
         <value>A <see langword="string" /> key associated with the user data for this tracking record.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An activity or workflow designer can use either <xref:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData%28System.String%2CSystem.Object%29?displayProperty=fullName> or <xref:System.Workflow.ComponentModel.Activity.TrackData%28System.String%2CSystem.Object%29?displayProperty=fullName> to specify a key to associate with the user data pushed to the runtime tracking infrastructure. <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.UserDataKey%2A> contains this key. If no key is specified, <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.UserDataKey%2A> is a null reference (`Nothing` in Visual Basic).  
-  
+An activity or workflow designer can use either <xref:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData%28System.String%2CSystem.Object%29?displayProperty=fullName> or <xref:System.Workflow.ComponentModel.Activity.TrackData%28System.String%2CSystem.Object%29?displayProperty=fullName> to specify a key to associate with the user data pushed to the runtime tracking infrastructure. <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.UserDataKey%2A> contains this key. If no key is specified, <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.UserDataKey%2A> is a null reference (`Nothing` in Visual Basic).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -374,10 +374,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingRecord" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor is called by the runtime tracking infrastructure.  
-  
+The constructor is called by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -93,10 +93,10 @@
         <summary>Cancels a pending asynchronous operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.ArgumentNullException> is thrown if `userState` is `null`. If multiple <xref:System.ServiceModel.Discovery.DiscoveryClient.FindAsync%2A> or <xref:System.ServiceModel.Discovery.DiscoveryClient.ResolveAsync%2A> operations are called with the same `userState` value, and <xref:System.ServiceModel.Discovery.DiscoveryClient.CancelAsync%2A> is called with that `userState` value, an <xref:System.InvalidOperationException> is thrown.  
-  
+An <xref:System.ArgumentNullException> is thrown if `userState` is `null`. If multiple <xref:System.ServiceModel.Discovery.DiscoveryClient.FindAsync%2A> or <xref:System.ServiceModel.Discovery.DiscoveryClient.ResolveAsync%2A> operations are called with the same `userState` value, and <xref:System.ServiceModel.Discovery.DiscoveryClient.CancelAsync%2A> is called with that `userState` value, an <xref:System.InvalidOperationException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,10 +215,10 @@
         <summary>Begins an asynchronous find operation with the specified criteria.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Find operations initiated by calling this method cannot be canceled.  
-  
+Find operations initiated by calling this method cannot be canceled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -245,10 +245,10 @@
         <summary>Begins an asynchronous find operation with the specified criteria and user defined state object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `userState` parameter is `null`, the find operation cannot be canceled.  
-  
+If the `userState` parameter is `null`, the find operation cannot be canceled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,10 +269,10 @@
         <summary>Occurs when the entire find operation completes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Discovery.FindCompletedEventArgs.Result%2A> property contains information about all matching services. [!INCLUDE[crabout](~/includes/crabout-md.md)] this event see [Asynchronous Find](~/docs/framework/wcf/samples/asynchronous-find-sample.md).  
-  
+The <xref:System.ServiceModel.Discovery.FindCompletedEventArgs.Result%2A> property contains information about all matching services. [!INCLUDE[crabout](~/includes/crabout-md.md)] this event see [Asynchronous Find](~/docs/framework/wcf/samples/asynchronous-find-sample.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -293,10 +293,10 @@
         <summary>Occurs every time the client receives a response from a particular service.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is useful if you are processing the results as they arrive. [!INCLUDE[crabout](~/includes/crabout-md.md)] this event see [Asynchronous Find](~/docs/framework/wcf/samples/asynchronous-find-sample.md).  
-  
+This event is useful if you are processing the results as they arrive. [!INCLUDE[crabout](~/includes/crabout-md.md)] this event see [Asynchronous Find](~/docs/framework/wcf/samples/asynchronous-find-sample.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,10 +382,10 @@
         <summary>Opens the <see cref="T:System.ServiceModel.Discovery.DiscoveryClient" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method transitions the discovery client to the open state.  
-  
+This method transitions the discovery client to the open state.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -449,10 +449,10 @@
         <summary>Begins an asynchronous resolve operation with the specified criteria.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Resolve operations initiated by calling this method cannot be canceled.  
-  
+Resolve operations initiated by calling this method cannot be canceled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -479,10 +479,10 @@
         <summary>Begins an asynchronous resolve operation with the specified criteria and user-defined state object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `userState` parameter is null, the resolve operation cannot be canceled.  
-  
+If the `userState` parameter is null, the resolve operation cannot be canceled.  
+ 
  ]]></format>
         </remarks>
       </Docs>

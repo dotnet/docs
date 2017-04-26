@@ -20,22 +20,22 @@
     <summary>Represents a parameter to a Command object, and optionally, its mapping to <see cref="T:System.Data.DataSet" /> columns; and is implemented by .NET Framework data providers that access data sources.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.IDataParameter> interface allows an inheriting class to implement a Parameter class, which represents a parameter to a Command object. For more information about Parameter classes, see [Configuring Parameters and Parameter Data Types](~/docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md).  
+The <xref:System.Data.IDataParameter> interface allows an inheriting class to implement a Parameter class, which represents a parameter to a Command object. For more information about Parameter classes, see [Configuring Parameters and Parameter Data Types](~/docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md).  
+ 
+An application does not create an instance of the <xref:System.Data.IDataParameter> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDataParameter>.  
+ 
+Classes that inherit <xref:System.Data.IDataParameter> must implement the inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.IDataParameter> interface defines the <xref:System.Data.IDataParameter.DbType%2A> property. In turn, the <xref:System.Data.OleDb.OleDbParameter> class inherits this property, and also defines the <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A> property.  
+ 
   
- An application does not create an instance of the <xref:System.Data.IDataParameter> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDataParameter>.  
-  
- Classes that inherit <xref:System.Data.IDataParameter> must implement the inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.IDataParameter> interface defines the <xref:System.Data.IDataParameter.DbType%2A> property. In turn, the <xref:System.Data.OleDb.OleDbParameter> class inherits this property, and also defines the <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates multiple instances of the derived class, <xref:System.Data.SqlClient.SqlParameter>, through the <xref:System.Data.SqlClient.SqlParameterCollection> collection within the <xref:System.Data.SqlClient.SqlDataAdapter>. These parameters are used to select data from the data source and place the data in the <xref:System.Data.DataSet>. This example assumes that a <xref:System.Data.DataSet> and a <xref:System.Data.SqlClient.SqlDataAdapter> have already been created with the appropriate schema, commands, and connection.  
-  
- [!code-csharp[Classic WebData SqlParameter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlParameter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter Example/VB/source.vb#1)]  
-  
+The following example creates multiple instances of the derived class, <xref:System.Data.SqlClient.SqlParameter>, through the <xref:System.Data.SqlClient.SqlParameterCollection> collection within the <xref:System.Data.SqlClient.SqlDataAdapter>. These parameters are used to select data from the data source and place the data in the <xref:System.Data.DataSet>. This example assumes that a <xref:System.Data.DataSet> and a <xref:System.Data.SqlClient.SqlDataAdapter> have already been created with the appropriate schema, commands, and connection.  
+ 
+[!code-csharp[Classic WebData SqlParameter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlParameter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -130,12 +130,12 @@
         <value>One of the <see cref="T:System.Data.DbType" /> values. The default is <see cref="F:System.Data.DbType.String" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The PrvDbType (where Prv represents the provider-specific prefix) and <xref:System.Data.SqlClient.SqlParameter.DbType%2A> are linked. Therefore, setting the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> changes the PrvDbType to a supporting PrvDbType.  
-  
- For a list of the supported data types, see the appropriate .NET Framework data provider PrvDbType member. For more information, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
-  
+The PrvDbType (where Prv represents the provider-specific prefix) and <xref:System.Data.SqlClient.SqlParameter.DbType%2A> are linked. Therefore, setting the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> changes the PrvDbType to a supporting PrvDbType.  
+ 
+For a list of the supported data types, see the appropriate .NET Framework data provider PrvDbType member. For more information, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property was not set to a valid <see cref="T:System.Data.DbType" />.</exception>
@@ -167,20 +167,20 @@
         <value>One of the <see cref="T:System.Data.ParameterDirection" /> values. The default is <see langword="Input" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Data.ParameterDirection> is output, and execution of the associated <xref:System.Data.SqlClient.SqlCommand> does not return a value, the <xref:System.Data.IDataParameter> contains a null value.  
+If the <xref:System.Data.ParameterDirection> is output, and execution of the associated <xref:System.Data.SqlClient.SqlCommand> does not return a value, the <xref:System.Data.IDataParameter> contains a null value.  
+ 
+After the last row from the last resultset is read, `Output`, `InputOut`, and `ReturnValue` parameters are updated.  
+ 
   
- After the last row from the last resultset is read, `Output`, `InputOut`, and `ReturnValue` parameters are updated.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
-  
- [!code-csharp[Classic WebData SqlParameter.Direction Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.Direction Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlParameter.Direction Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.Direction Example/VB/source.vb#1)]  
-  
+The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
+ 
+[!code-csharp[Classic WebData SqlParameter.Direction Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.Direction Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlParameter.Direction Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.Direction Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property was not set to one of the valid <see cref="T:System.Data.ParameterDirection" /> values.</exception>
@@ -213,18 +213,18 @@
           <see langword="true" /> if null values are accepted; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Null values are handled using the <xref:System.DBNull> class.  
+Null values are handled using the <xref:System.DBNull> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
-  
- [!code-csharp[Classic WebData SqlParameter.IsNullable Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.IsNullable Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlParameter.IsNullable Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.IsNullable Example/VB/source.vb#1)]  
-  
+The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
+ 
+[!code-csharp[Classic WebData SqlParameter.IsNullable Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.IsNullable Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlParameter.IsNullable Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.IsNullable Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,18 +255,18 @@
         <value>The name of the <see cref="T:System.Data.IDataParameter" />. The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.IDataParameter.ParameterName%2A> is specified in the form @paramname. You must set <xref:System.Data.IDataParameter.ParameterName%2A> before executing a command that relies on parameters.  
+The <xref:System.Data.IDataParameter.ParameterName%2A> is specified in the form @paramname. You must set <xref:System.Data.IDataParameter.ParameterName%2A> before executing a command that relies on parameters.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
-  
- [!code-csharp[Classic WebData SqlParameter.ParameterName Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.ParameterName Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlParameter.ParameterName Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.ParameterName Example/VB/source.vb#1)]  
-  
+The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
+ 
+[!code-csharp[Classic WebData SqlParameter.ParameterName Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.ParameterName Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlParameter.ParameterName Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.ParameterName Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,18 +297,18 @@
         <value>The name of the source column that is mapped to the <see cref="T:System.Data.DataSet" />. The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The link betwen the value of the <xref:System.Data.IDataParameter> and the <xref:System.Data.DataTable> may be bidirectional depending on the value of the <xref:System.Data.IDataParameter.Direction%2A> property.  
+The link betwen the value of the <xref:System.Data.IDataParameter> and the <xref:System.Data.DataTable> may be bidirectional depending on the value of the <xref:System.Data.IDataParameter.Direction%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
-  
- [!code-csharp[Classic WebData SqlParameter.SourceColumn Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.SourceColumn Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlParameter.SourceColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.SourceColumn Example/VB/source.vb#1)]  
-  
+The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
+ 
+[!code-csharp[Classic WebData SqlParameter.SourceColumn Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.SourceColumn Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlParameter.SourceColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.SourceColumn Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -339,18 +339,18 @@
         <value>One of the <see cref="T:System.Data.DataRowVersion" /> values. The default is <see langword="Current" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used by the <xref:System.Data.IDbDataAdapter.UpdateCommand%2A> during the <xref:System.Data.Common.DbDataAdapter.Update%2A> to determine whether the original or current value is used for a parameter value. This allows primary keys to be updated. This property is ignored by the <xref:System.Data.IDbDataAdapter.InsertCommand%2A> and <xref:System.Data.IDbDataAdapter.DeleteCommand%2A>. This property is set to the version of the <xref:System.Data.DataRow> used by the <xref:System.Data.DataRow.Item%2A> property, or the <xref:System.Data.DataRow.GetChildRows%2A> method of the <xref:System.Data.DataRow> object.  
+This property is used by the <xref:System.Data.IDbDataAdapter.UpdateCommand%2A> during the <xref:System.Data.Common.DbDataAdapter.Update%2A> to determine whether the original or current value is used for a parameter value. This allows primary keys to be updated. This property is ignored by the <xref:System.Data.IDbDataAdapter.InsertCommand%2A> and <xref:System.Data.IDbDataAdapter.DeleteCommand%2A>. This property is set to the version of the <xref:System.Data.DataRow> used by the <xref:System.Data.DataRow.Item%2A> property, or the <xref:System.Data.DataRow.GetChildRows%2A> method of the <xref:System.Data.DataRow> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
-  
- [!code-csharp[Classic WebData SqlParameter.SourceVersion Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.SourceVersion Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlParameter.SourceVersion Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.SourceVersion Example/VB/source.vb#1)]  
-  
+The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
+ 
+[!code-csharp[Classic WebData SqlParameter.SourceVersion Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.SourceVersion Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlParameter.SourceVersion Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.SourceVersion Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property was not set one of the <see cref="T:System.Data.DataRowVersion" /> values.</exception>
@@ -382,24 +382,24 @@
         <value>An <see cref="T:System.Object" /> that is the value of the parameter. The default value is null.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For input parameters, the value is bound to the <xref:System.Data.IDbCommand> that is sent to the server. For output and return value parameters, the value is set on completion of the <xref:System.Data.IDbCommand> and after the <xref:System.Data.IDataReader> is closed.  
+For input parameters, the value is bound to the <xref:System.Data.IDbCommand> that is sent to the server. For output and return value parameters, the value is set on completion of the <xref:System.Data.IDbCommand> and after the <xref:System.Data.IDataReader> is closed.  
+ 
+When sending a null parameter value to the server, the user must specify `DBNull`, not null. The null value in the system is an empty object that has no value. `DBNull` is used to represent null values.  
+ 
+If the application specifies the database type, the bound value is converted to that type when the provider sends the data to the server. The provider attempts to convert any type of value if it supports the <xref:System.IConvertible> interface. Conversion errors may result if the specified type is not compatible with the value.  
+ 
+The <xref:System.Data.SqlClient.SqlParameter.Value%2A> property is overwritten by <xref:System.Data.Common.DbDataAdapter.Update%2A>.  
+ 
   
- When sending a null parameter value to the server, the user must specify `DBNull`, not null. The null value in the system is an empty object that has no value. `DBNull` is used to represent null values.  
-  
- If the application specifies the database type, the bound value is converted to that type when the provider sends the data to the server. The provider attempts to convert any type of value if it supports the <xref:System.IConvertible> interface. Conversion errors may result if the specified type is not compatible with the value.  
-  
- The <xref:System.Data.SqlClient.SqlParameter.Value%2A> property is overwritten by <xref:System.Data.Common.DbDataAdapter.Update%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
-  
- [!code-csharp[Classic WebData SqlParameter.Value Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.Value Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlParameter.Value Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.Value Example/VB/source.vb#1)]  
-  
+The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
+ 
+[!code-csharp[Classic WebData SqlParameter.Value Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.Value Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlParameter.Value Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.Value Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -54,10 +54,10 @@
         <summary>Adjusts the set of properties the process exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds the nonbrowsable "EnableRaisingEvents" and "StartInfo" properties to the designer's process at design time.  
-  
+This method adds the nonbrowsable "EnableRaisingEvents" and "StartInfo" properties to the designer's process at design time.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

@@ -11,12 +11,12 @@
     <summary>Defines properties and events that must be implemented to allow a control to act like a button on a Web page.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.IButtonControl> interface defines the properties and events that must be implemented to allow a control to act like a button on a Web page.  
-  
- The members of this interface provide basic button functionality, such as the ability to raise a <xref:System.Web.UI.WebControls.IButtonControl.Click> event and a <xref:System.Web.UI.WebControls.IButtonControl.Command> event. The <xref:System.Web.UI.WebControls.IButtonControl.PostBackUrl%2A> property provides cross-page posting functionality.  
-  
+The <xref:System.Web.UI.WebControls.IButtonControl> interface defines the properties and events that must be implemented to allow a control to act like a button on a Web page.  
+ 
+The members of this interface provide basic button functionality, such as the ability to raise a <xref:System.Web.UI.WebControls.IButtonControl.Click> event and a <xref:System.Web.UI.WebControls.IButtonControl.Command> event. The <xref:System.Web.UI.WebControls.IButtonControl.PostBackUrl%2A> property provides cross-page posting functionality.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -42,10 +42,10 @@
           <see langword="true" /> if clicking the button causes page validation to occur; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A control that implements the <xref:System.Web.UI.WebControls.IButtonControl> interface must implement the <xref:System.Web.UI.WebControls.IButtonControl.CausesValidation%2A> property to indicate whether clicking the button causes page validation to occur.  
-  
+A control that implements the <xref:System.Web.UI.WebControls.IButtonControl> interface must implement the <xref:System.Web.UI.WebControls.IButtonControl.CausesValidation%2A> property to indicate whether clicking the button causes page validation to occur.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -66,12 +66,12 @@
         <summary>Occurs when the button control is clicked.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.IButtonControl.Click> event is raised when the button control is clicked.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+The <xref:System.Web.UI.WebControls.IButtonControl.Click> event is raised when the button control is clicked.  
+ 
+For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,12 +92,12 @@
         <summary>Occurs when the button control is clicked.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.IButtonControl.Command> event is raised when the button control is clicked.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
+The <xref:System.Web.UI.WebControls.IButtonControl.Command> event is raised when the button control is clicked.  
+ 
+For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <value>The argument that is propagated to the <see cref="E:System.Web.UI.WebControls.IButtonControl.Command" /> event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A control that implements the <xref:System.Web.UI.WebControls.IButtonControl> interface must implement the <xref:System.Web.UI.WebControls.IButtonControl.CommandArgument%2A> property and the <xref:System.Web.UI.WebControls.IButtonControl.CommandName%2A> property to indicate the argument and command name that are propagated to the <xref:System.Web.UI.WebControls.IButtonControl.Command> event.  
-  
+A control that implements the <xref:System.Web.UI.WebControls.IButtonControl> interface must implement the <xref:System.Web.UI.WebControls.IButtonControl.CommandArgument%2A> property and the <xref:System.Web.UI.WebControls.IButtonControl.CommandName%2A> property to indicate the argument and command name that are propagated to the <xref:System.Web.UI.WebControls.IButtonControl.Command> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <value>The name of the command that is propagated to the <see cref="E:System.Web.UI.WebControls.IButtonControl.Command" /> event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A control that implements the <xref:System.Web.UI.WebControls.IButtonControl> interface must implement the <xref:System.Web.UI.WebControls.IButtonControl.CommandArgument%2A> property and the <xref:System.Web.UI.WebControls.IButtonControl.CommandName%2A> property to indicate the argument and command name that are propagated to the <xref:System.Web.UI.WebControls.IButtonControl.Command> event.  
-  
+A control that implements the <xref:System.Web.UI.WebControls.IButtonControl> interface must implement the <xref:System.Web.UI.WebControls.IButtonControl.CommandArgument%2A> property and the <xref:System.Web.UI.WebControls.IButtonControl.CommandName%2A> property to indicate the argument and command name that are propagated to the <xref:System.Web.UI.WebControls.IButtonControl.Command> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,12 +169,12 @@
         <value>The URL of the Web page to post to from the current page when the button control is clicked.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Web.UI.WebControls.IButtonControl.PostBackUrl%2A> property to perform a cross-page post. If the <xref:System.Web.UI.WebControls.IButtonControl.PostBackUrl%2A> property is set to the page that the button is currently on, a normal postback event cycle occurs.  
-  
- A control that implements the <xref:System.Web.UI.WebControls.IButtonControl> interface must implement the <xref:System.Web.UI.WebControls.IButtonControl.PostBackUrl%2A> property to indicate the URL of the Web page to post to from the current page when the button control is clicked.  
-  
+You can use the <xref:System.Web.UI.WebControls.IButtonControl.PostBackUrl%2A> property to perform a cross-page post. If the <xref:System.Web.UI.WebControls.IButtonControl.PostBackUrl%2A> property is set to the page that the button is currently on, a normal postback event cycle occurs.  
+ 
+A control that implements the <xref:System.Web.UI.WebControls.IButtonControl> interface must implement the <xref:System.Web.UI.WebControls.IButtonControl.PostBackUrl%2A> property to indicate the URL of the Web page to post to from the current page when the button control is clicked.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,10 +196,10 @@
         <value>The text caption displayed for the button.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A control that implements the <xref:System.Web.UI.WebControls.IButtonControl> interface must implement the <xref:System.Web.UI.WebControls.IButtonControl.Text%2A> property to indicate the text caption displayed for the button.  
-  
+A control that implements the <xref:System.Web.UI.WebControls.IButtonControl> interface must implement the <xref:System.Web.UI.WebControls.IButtonControl.Text%2A> property to indicate the text caption displayed for the button.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -221,10 +221,10 @@
         <value>The name for the group of controls for which the button control causes validation when it posts back to the server.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A control that implements the <xref:System.Web.UI.WebControls.IButtonControl> interface must implement the <xref:System.Web.UI.WebControls.IButtonControl.ValidationGroup%2A> property to indicate the name for the group of controls for which the button control causes validation when it posts back to the server.  
-  
+A control that implements the <xref:System.Web.UI.WebControls.IButtonControl> interface must implement the <xref:System.Web.UI.WebControls.IButtonControl.ValidationGroup%2A> property to indicate the name for the group of controls for which the button control causes validation when it posts back to the server.  
+ 
  ]]></format>
         </remarks>
       </Docs>

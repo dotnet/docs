@@ -19,12 +19,12 @@
     <summary>Represents an evaluated item definition for a particular item-type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Item definitions are not the same as items. Like items, item definitions can have metadata. Like properties, new metadata can override old metadata with the same name.  
-  
- During evaluation, all the item definitions for an item type are collected together (assuming their conditions are true) to create one ProjectItemDefinition for each type. For this reason, a project item definition can refer to more than one project item definition element. The metadata within a project item definition, however, refers to a single project metadata element, which can be added, removed, and modified.  
-  
+Item definitions are not the same as items. Like items, item definitions can have metadata. Like properties, new metadata can override old metadata with the same name.  
+ 
+During evaluation, all the item definitions for an item type are collected together (assuming their conditions are true) to create one ProjectItemDefinition for each type. For this reason, a project item definition can refer to more than one project item definition element. The metadata within a project item definition, however, refers to a single project metadata element, which can be added, removed, and modified.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -121,10 +121,10 @@
         <value>Returns an enumerator over all metadata for the item definition.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a read-only collection.  
-  
+This is a read-only collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,10 +196,10 @@
         <returns>Returns the metadata with the given name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The unevaluated value is assumed to contain character escape sequences as needed.  
-  
+The unevaluated value is assumed to contain character escape sequences as needed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

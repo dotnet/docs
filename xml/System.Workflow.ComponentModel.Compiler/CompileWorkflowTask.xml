@@ -23,14 +23,14 @@
     <summary>Represents the MSBuild task of compiling a workflow. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- This class extends the `Task` class of Microsoft Build framework. Methods of this class are invoked by the Microsoft Build framework to customize the build process when compiling Windows Workflow Foundation types of C# and Visual Basic projects. It provides support for compiling .xoml files into intermediate code files (either C# or Visual Basic). Workflows are validated before compiling.  
-  
+ 
+This class extends the `Task` class of Microsoft Build framework. Methods of this class are invoked by the Microsoft Build framework to customize the build process when compiling Windows Workflow Foundation types of C# and Visual Basic projects. It provides support for compiling .xoml files into intermediate code files (either C# or Visual Basic). Workflows are validated before compiling.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -161,10 +161,10 @@
         <value>The <see cref="T:System.Object" /> that is used to obtain services provided by Visual Studio host when the compile workflow task is invoked.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value for this property is set by the workflow project system just before compilation starts.  
-  
+The value for this property is set by the workflow project system just before compilation starts.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,10 +246,10 @@
         <value>The path of the file that is used for signing the workflow assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This file is usually of type .snk.  
-  
+This file is usually of type .snk.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -294,10 +294,10 @@
         <value>An array of paths to output files from the workflow project being compiled.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These files are temporary files and may be removed after compilation, depending the value of the <xref:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.KeepTemporaryFiles%2A> property.  
-  
+These files are temporary files and may be removed after compilation, depending the value of the <xref:System.Workflow.ComponentModel.Compiler.CompileWorkflowTask.KeepTemporaryFiles%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

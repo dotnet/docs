@@ -35,10 +35,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> class, using the specified distinguished name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default object class that represents the application partition is domainDNS.  
-  
+The default object class that represents the application partition is domainDNS.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
@@ -69,10 +69,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> class, using the specified distinguished name and object class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default object class that represents the application partition is domainDNS.  
-  
+The default object class that represents the application partition is domainDNS.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
@@ -120,10 +120,10 @@
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection" /> object that contains <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> objects that represent directory servers for this application partition.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition.DirectoryServers%2A?displayProperty=fullName> property returns the same collection of <xref:System.DirectoryServices.ActiveDirectory.DirectoryServer> objects as the <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindAllDirectoryServers?displayProperty=fullName> method if the <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition> object has been committed to the underlying directory services store.  
-  
+The <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition.DirectoryServers%2A?displayProperty=fullName> property returns the same collection of <xref:System.DirectoryServices.ActiveDirectory.DirectoryServer> objects as the <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindAllDirectoryServers?displayProperty=fullName> method if the <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition> object has been committed to the underlying directory services store.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>

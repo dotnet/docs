@@ -14,48 +14,48 @@
     <summary>Provides information about security failures.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=fullName> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
-  
- The <xref:System.Web.Management.WebFailureAuditEvent> class is used when a security operation fails. An example of this is a failed URL authorization for a Web request.  
-  
- By default, ASP.NET is configured to raise the <xref:System.Web.Management.WebFailureAuditEvent> event for the following features:  
-  
+ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=fullName> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+ 
+The <xref:System.Web.Management.WebFailureAuditEvent> class is used when a security operation fails. An example of this is a failed URL authorization for a Web request.  
+ 
+By default, ASP.NET is configured to raise the <xref:System.Web.Management.WebFailureAuditEvent> event for the following features:  
+ 
 -   File authorization. ASP.NET attempts file authorization only when a Windows Identity is associated with the request. The related event audit code is <xref:System.Web.Management.WebEventCodes.AuditFileAuthorizationFailure>.  
-  
+ 
 -   URL authorization. This governs unauthorized attempts to access a URL resource. Failed attempts by an anonymous user are not audited, because anonymous authentication failure is acceptable in most circumstances. The related event audit code is <xref:System.Web.Management.WebEventCodes.AuditUrlAuthorizationFailure>.  
-  
+ 
 -   Generic unhandled or security unhandled conditions. The following is a list of the event codes related to these conditions:  
-  
-    -   <xref:System.Web.Management.WebEventCodes.AuditFormsAuthenticationFailure>  
-  
-    -   <xref:System.Web.Management.WebEventCodes.AuditMembershipAuthenticationFailure>  
-  
-    -   <xref:System.Web.Management.WebEventCodes.AuditInvalidViewStateFailure>  
-  
-    -   <xref:System.Web.Management.WebEventCodes.AuditUnhandledSecurityException>  
-  
-    -   <xref:System.Web.Management.WebEventCodes.AuditUnhandledAccessException>  
-  
- When a <xref:System.Web.Management.WebFailureAuditEvent> event is raised, ASP.NET health monitoring increments the related Audit Failure Events Raised performance counter and then checks the `healthMonitoring` configuration section to determine whether any providers subscribe to the event. If providers subscribe to the event, ASP.NET dispatches the event to them for processing.  
-  
+ 
+   -   <xref:System.Web.Management.WebEventCodes.AuditFormsAuthenticationFailure>  
+ 
+   -   <xref:System.Web.Management.WebEventCodes.AuditMembershipAuthenticationFailure>  
+ 
+   -   <xref:System.Web.Management.WebEventCodes.AuditInvalidViewStateFailure>  
+ 
+   -   <xref:System.Web.Management.WebEventCodes.AuditUnhandledSecurityException>  
+ 
+   -   <xref:System.Web.Management.WebEventCodes.AuditUnhandledAccessException>  
+ 
+When a <xref:System.Web.Management.WebFailureAuditEvent> event is raised, ASP.NET health monitoring increments the related Audit Failure Events Raised performance counter and then checks the `healthMonitoring` configuration section to determine whether any providers subscribe to the event. If providers subscribe to the event, ASP.NET dispatches the event to them for processing.  
+ 
 > [!NOTE]
 >  To view the Audit Failure Events Raised performance counter in System Monitor (PerfMon), in the **Add Counters** window, select **ASP.NET** from the **Performance object** drop-down list, select the **Audit Failure Events Raised** performance counter, and click the **Add** button. For more information, see [Using the System Monitor (PerfMon) with ASP.NET Applications](http://go.microsoft.com/fwlink/?linkid=36882) in the IIS documentation on MSDN.  
-  
+ 
 > [!NOTE]
 >  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `healthMonitoring` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of deriving from the <xref:System.Web.Management.WebFailureAuditEvent> class, see the Example section.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to derive from the <xref:System.Web.Management.WebFailureAuditEvent> class to create a custom audit event.  
-  
- [!code-csharp[System.Web.Management.WebFailureAuditEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebFailureAuditEvent/CS/webfailureauditevent.cs#1)]
- [!code-vb[System.Web.Management.WebFailureAuditEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebFailureAuditEvent/VB/webfailureauditevent.vb#1)]  
-  
- The following configuration excerpt shows how to enable ASP.NET to use the <xref:System.Web.Management.WebFailureAuditEvent> event.  
-  
+The following code example demonstrates how to derive from the <xref:System.Web.Management.WebFailureAuditEvent> class to create a custom audit event.  
+ 
+[!code-csharp[System.Web.Management.WebFailureAuditEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebFailureAuditEvent/CS/webfailureauditevent.cs#1)]
+[!code-vb[System.Web.Management.WebFailureAuditEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebFailureAuditEvent/VB/webfailureauditevent.vb#1)]  
+ 
+The following configuration excerpt shows how to enable ASP.NET to use the <xref:System.Web.Management.WebFailureAuditEvent> event.  
+ 
 ```  
 <healthMonitoring   
 enabled="true"  
@@ -85,7 +85,7 @@ profile="Default"/>
   
 </healthMonitoring>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -114,18 +114,18 @@ profile="Default"/>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebFailureAuditEvent" /> class using the supplied parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is used internally by the ASP.NET health-monitoring system. You will never use it to create an instance of <xref:System.Web.Management.WebFailureAuditEvent>, but you can call this constructor when implementing your own event type that inherits from this class.  
+This constructor is used internally by the ASP.NET health-monitoring system. You will never use it to create an instance of <xref:System.Web.Management.WebFailureAuditEvent>, but you can call this constructor when implementing your own event type that inherits from this class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to call this constructor in the `SampleWebFailureAuditEvent` class. This code example is part of a larger example provided for the <xref:System.Web.Management.WebFailureAuditEvent> class overview.  
-  
- [!code-csharp[System.Web.Management.WebFailureAuditEvent#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebFailureAuditEvent/CS/webfailureauditevent.cs#2)]
- [!code-vb[System.Web.Management.WebFailureAuditEvent#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebFailureAuditEvent/VB/webfailureauditevent.vb#2)]  
-  
+The following code example shows how to call this constructor in the `SampleWebFailureAuditEvent` class. This code example is part of a larger example provided for the <xref:System.Web.Management.WebFailureAuditEvent> class overview.  
+ 
+[!code-csharp[System.Web.Management.WebFailureAuditEvent#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebFailureAuditEvent/CS/webfailureauditevent.cs#2)]
+[!code-vb[System.Web.Management.WebFailureAuditEvent#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebFailureAuditEvent/VB/webfailureauditevent.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,18 +153,18 @@ profile="Default"/>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebFailureAuditEvent" /> class using the supplied parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is used internally by the ASP.NET health-monitoring system. You will never use it to create an instance of <xref:System.Web.Management.WebFailureAuditEvent>, but you can call this constructor when implementing your own event type that inherits from this class.  
+This constructor is used internally by the ASP.NET health-monitoring system. You will never use it to create an instance of <xref:System.Web.Management.WebFailureAuditEvent>, but you can call this constructor when implementing your own event type that inherits from this class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to call this constructor in the `SampleWebFailureAuditEvent` class. This code example is part of a larger example provided for the <xref:System.Web.Management.WebFailureAuditEvent> class overview.  
-  
- [!code-csharp[System.Web.Management.WebFailureAuditEvent#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebFailureAuditEvent/CS/webfailureauditevent.cs#3)]
- [!code-vb[System.Web.Management.WebFailureAuditEvent#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebFailureAuditEvent/VB/webfailureauditevent.vb#3)]  
-  
+The following code example shows how to call this constructor in the `SampleWebFailureAuditEvent` class. This code example is part of a larger example provided for the <xref:System.Web.Management.WebFailureAuditEvent> class overview.  
+ 
+[!code-csharp[System.Web.Management.WebFailureAuditEvent#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebFailureAuditEvent/CS/webfailureauditevent.cs#3)]
+[!code-vb[System.Web.Management.WebFailureAuditEvent#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebFailureAuditEvent/VB/webfailureauditevent.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,12 +186,12 @@ profile="Default"/>
         <summary>Increments the Audit Failure Events Raised performance counter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Audit Failure Events Raised performance counter tracks the number of failed audit events raised since the application started. This method also calls the parent <xref:System.Web.Management.WebBaseEvent.IncrementPerfCounters%2A> method, which increments the Events Raised counter. This counter tracks the total number of events raised.  
-  
- To view these performance counters in System Monitor (PerfMon), in the **Add Counters** window select **ASP.NET** from the **Performance object** drop-down list, select the performance counter you want to view, and click the **Add** button. For more information, see [Using the System Monitor (PerfMon) with ASP.NET Applications](http://go.microsoft.com/fwlink/?linkid=36882) in the IIS documentation on MSDN.  
-  
+The Audit Failure Events Raised performance counter tracks the number of failed audit events raised since the application started. This method also calls the parent <xref:System.Web.Management.WebBaseEvent.IncrementPerfCounters%2A> method, which increments the Events Raised counter. This counter tracks the total number of events raised.  
+ 
+To view these performance counters in System Monitor (PerfMon), in the **Add Counters** window select **ASP.NET** from the **Performance object** drop-down list, select the performance counter you want to view, and click the **Add** button. For more information, see [Using the System Monitor (PerfMon) with ASP.NET Applications](http://go.microsoft.com/fwlink/?linkid=36882) in the IIS documentation on MSDN.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -160,10 +160,10 @@
         <value>The total number of columns in a grid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,10 +191,10 @@
         <returns>The UI Automation provider for the specified cell.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,10 +216,10 @@
         <value>The total number of rows in a grid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,10 +249,10 @@
         <returns>The first item that matches the search criterion; otherwise, <see langword="null" /> if no items match.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IItemContainerProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IItemContainerProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,10 +274,10 @@
         <value>The value for the current view of the UI Automation element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IMultipleViewProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IMultipleViewProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -300,10 +300,10 @@
         <returns>A collection of values that identifies the views available for a UI Automation element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IMultipleViewProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IMultipleViewProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,10 +329,10 @@
         <returns>A localized name for the view.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IMultipleViewProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IMultipleViewProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -357,10 +357,10 @@
         <summary>Sets the current control-specific view.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IMultipleViewProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IMultipleViewProvider> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -385,10 +385,10 @@
           <see langword="true" /> if multiple selection is allowed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -411,10 +411,10 @@
         <returns>A collection of UI Automation providers.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -437,10 +437,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -463,10 +463,10 @@
         <returns>A collection of UI Automation providers.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -489,10 +489,10 @@
         <returns>A collection of UI Automation providers.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -514,10 +514,10 @@
         <value>The primary direction of traversal.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.CalendarAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

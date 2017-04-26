@@ -19,12 +19,12 @@
     <summary>A <see cref="T:System.Activities.Statements.FlowNode" /> element that executes a specified <see cref="P:System.Activities.Statements.FlowStep.Action" /> and has a <see cref="P:System.Activities.Statements.FlowStep.Next" /> pointer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowStep> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
-  
- [!code-csharp[wfs_FlowChartWithFaultHandling#4](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#4)]  
-  
+The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowStep> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
+ 
+[!code-csharp[wfs_FlowChartWithFaultHandling#4](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,12 +43,12 @@
         <summary>Returns a new instance of the <see cref="T:System.Activities.Statements.FlowStep" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowStep> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
-  
- [!code-csharp[wfs_FlowChartWithFaultHandling#4](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#4)]  
-  
+The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowStep> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
+ 
+[!code-csharp[wfs_FlowChartWithFaultHandling#4](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,12 +75,12 @@
         <value>The activity to be executed as part of this step of the flowchart.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates using the Action property of a <xref:System.Activities.Statements.FlowStep> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
-  
- [!code-csharp[wfs_FlowChartWithFaultHandling#4](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#4)]  
-  
+The following code sample demonstrates using the Action property of a <xref:System.Activities.Statements.FlowStep> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
+ 
+[!code-csharp[wfs_FlowChartWithFaultHandling#4](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,12 +110,12 @@
         <value>The specified element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates using the Next property of a <xref:System.Activities.Statements.FlowStep> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
-  
- [!code-csharp[wfs_FlowChartWithFaultHandling#4](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#4)]  
-  
+The following code sample demonstrates using the Next property of a <xref:System.Activities.Statements.FlowStep> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
+ 
+[!code-csharp[wfs_FlowChartWithFaultHandling#4](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

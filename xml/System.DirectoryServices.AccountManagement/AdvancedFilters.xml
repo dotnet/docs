@@ -14,15 +14,15 @@
     <summary>This class provides writable access to certain attributes so that users can modify read-only properties of the "dummy" principal object that is passed to a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" /> object when using [Query By Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DirectoryServices.AccountManagement.AdvancedFilters> class is accessed from a <xref:System.DirectoryServices.AccountManagement.UserPrincipal> object through the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.AdvancedSearchFilter%2A> property, and is effectually treated like a property of the <xref:System.DirectoryServices.AccountManagement.UserPrincipal> object, and isn't intended to be used on its own.  
+The <xref:System.DirectoryServices.AccountManagement.AdvancedFilters> class is accessed from a <xref:System.DirectoryServices.AccountManagement.UserPrincipal> object through the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.AdvancedSearchFilter%2A> property, and is effectually treated like a property of the <xref:System.DirectoryServices.AccountManagement.UserPrincipal> object, and isn't intended to be used on its own.  
+ 
   
-   
-  
+ 
 ## Examples  
- See the [Query By Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) topic for example code.  
-  
+See the [Query By Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) topic for example code.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,10 +44,10 @@
         <summary>Instantiates a new <see cref="T:System.DirectoryServices.AccountManagement.AdvancedFilters" /> object. Not intended to be called directly.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applications should access <xref:System.DirectoryServices.AccountManagement.AdvancedFilters> through the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.AdvancedSearchFilter%2A> property of the user object.  
-  
+Applications should access <xref:System.DirectoryServices.AccountManagement.AdvancedFilters> through the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.AdvancedSearchFilter%2A> property of the user object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -74,14 +74,14 @@
         <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountExpirationDate" /> attribute to the specified time and comparison type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
-  
+ 
 ```csharp  
   
 // Create the principal context for the usr object.  
@@ -105,7 +105,7 @@ foreach (UserPrincipal u in results)
   Console.WriteLine(u.Name);  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,14 +132,14 @@ foreach (UserPrincipal u in results)
         <summary>Sets the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountLockoutTime" /> query filter to the specified time and comparison type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
-  
+ 
 ```csharp  
   
 // Create the principal context for the usr object.  
@@ -163,7 +163,7 @@ foreach (UserPrincipal u in results)
   Console.WriteLine(u.Name);  
  }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,10 +199,10 @@ foreach (UserPrincipal u in results)
         <summary>Creates a query filter for a property in an extended class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In an extended class, you might implement an advanced search filter for `LogonCount`:  
-  
+In an extended class, you might implement an advanced search filter for `LogonCount`:  
+ 
 ```csharp  
   
 public class InetOrgPersonSearchFilter : AdvancedFilters  
@@ -215,7 +215,7 @@ public class InetOrgPersonSearchFilter : AdvancedFilters
 	}  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,9 +242,9 @@ public class InetOrgPersonSearchFilter : AdvancedFilters
         <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.BadLogonCount" /> attribute to the specified value and comparison type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
-  
+ 
 ```csharp  
   
 // Create the principal context for the usr object.  
@@ -266,7 +266,7 @@ foreach (UserPrincipal u in results)
   Console.WriteLine(u.Name);  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -293,14 +293,14 @@ foreach (UserPrincipal u in results)
         <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.LastBadPasswordAttempt" /> attribute to the specified <see cref="T:System.DateTime" /> and the specified comparison value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
-  
+ 
 ```csharp  
   
 // Create the principal context for the usr object.  
@@ -324,7 +324,7 @@ foreach (UserPrincipal u in results)
 	Console.WriteLine(u.Name);  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,14 +351,14 @@ foreach (UserPrincipal u in results)
         <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.LastLogon" /> attribute to the specified <see cref="T:System.DateTime" /> and the specified comparison value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
-  
+ 
 ```csharp  
   
 // Create the principal context for the usr object.  
@@ -380,7 +380,7 @@ foreach (UserPrincipal u in results)
 	Console.WriteLine(u.Name);  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -407,14 +407,14 @@ foreach (UserPrincipal u in results)
         <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.LastPasswordSet" /> attribute to the specified <see cref="T:System.DateTime" /> and the specified comparison value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
-  
+ 
 ```csharp  
   
 // Create the principal context for the usr object.  
@@ -438,7 +438,7 @@ foreach (UserPrincipal u in results)
 	u.Save();  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

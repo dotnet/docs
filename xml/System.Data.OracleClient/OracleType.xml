@@ -13,10 +13,10 @@
     <summary>Specifies the data type of a field or property for use in an <see cref="T:System.Data.OracleClient.OracleParameter" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows mappings between <xref:System.Data.OracleClient.OracleType> data types, Oracle data types, and .NET Framework types.  
-  
+The following table shows mappings between <xref:System.Data.OracleClient.OracleType> data types, Oracle data types, and .NET Framework types.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -245,10 +245,10 @@
         <summary>An Oracle <see langword="LONGRAW" /> data type that contains variable-length binary data with a maximum size of 2 gigabytes. Use the .NET Framework <see langword="Byte[]" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleBinary" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you update a column with the `LONG RAW` data type, an exception is thrown when you enter a value of `NULL` in the column. The Oracle `LONG RAW` data type is a deprecated type in Oracle version 8.0. To avoid this error, use the `BLOB` data type instead of `LONG RAW`.  
-  
+When you update a column with the `LONG RAW` data type, an exception is thrown when you enter a value of `NULL` in the column. The Oracle `LONG RAW` data type is a deprecated type in Oracle version 8.0. To avoid this error, use the `BLOB` data type instead of `LONG RAW`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

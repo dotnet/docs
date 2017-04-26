@@ -14,10 +14,10 @@
     <summary>Specifies the parameters of a hit test along a ray.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
-  
+Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Creates an instance of the object that specifies the origin and direction of the ray along which to hit test.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
-  
+Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -66,16 +66,16 @@
         <value>Vector3D that indicates the direction of the ray along which to hit test.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
+Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[hittest3d#HitTest3D3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn4)]
- [!code-vb[hittest3d#HitTest3D3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn4)]  
-  
+[!code-csharp[hittest3d#HitTest3D3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn4)]
+[!code-vb[hittest3d#HitTest3D3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,16 +97,16 @@
         <value>Origin of the ray along which to hit test.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
+Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[hittest3d#HitTest3D3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn4)]
- [!code-vb[hittest3d#HitTest3D3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn4)]  
-  
+[!code-csharp[hittest3d#HitTest3D3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn4)]
+[!code-vb[hittest3d#HitTest3D3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

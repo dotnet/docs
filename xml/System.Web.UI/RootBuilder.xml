@@ -93,10 +93,10 @@
         <returns>The type of the child control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.RootBuilder.GetChildControlType%2A> method overrides the implementation of this method in <xref:System.Web.UI.ControlBuilder>.  
-  
+The <xref:System.Web.UI.RootBuilder.GetChildControlType%2A> method overrides the implementation of this method in <xref:System.Web.UI.ControlBuilder>.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -119,10 +119,10 @@
         <summary>Provides a way to modify the <see cref="T:System.CodeDom.CodeCompileUnit" /> object after code generation is finished.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.RootBuilder.OnCodeGenerationComplete%2A> method is called when the CodeDom tree has been fully built.  
-  
+The <xref:System.Web.UI.RootBuilder.OnCodeGenerationComplete%2A> method is called when the CodeDom tree has been fully built.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

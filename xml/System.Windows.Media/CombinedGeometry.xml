@@ -14,33 +14,33 @@
     <summary>Represents a 2-D geometric shape defined by the combination of two <see cref="T:System.Windows.Media.Geometry" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A> property specifies how the two geometries will be combined. Note that <xref:System.Windows.Media.CombinedGeometry> combines the area specified by two geometries, so geometries that do not have area (such as <xref:System.Windows.Media.LineGeometry>) disappear when combined.  
-  
- Geometries can be combined in several ways: using a <xref:System.Windows.Media.GeometryGroup>, a <xref:System.Windows.Media.CombinedGeometry>, or the <xref:System.Windows.Media.Geometry.Combine%2A> method of the <xref:System.Windows.Media.Geometry> class.  
-  
+The <xref:System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A> property specifies how the two geometries will be combined. Note that <xref:System.Windows.Media.CombinedGeometry> combines the area specified by two geometries, so geometries that do not have area (such as <xref:System.Windows.Media.LineGeometry>) disappear when combined.  
+ 
+Geometries can be combined in several ways: using a <xref:System.Windows.Media.GeometryGroup>, a <xref:System.Windows.Media.CombinedGeometry>, or the <xref:System.Windows.Media.Geometry.Combine%2A> method of the <xref:System.Windows.Media.Geometry> class.  
+ 
 -   A <xref:System.Windows.Media.GeometryGroup> creates a composite geometry from one or more <xref:System.Windows.Media.Geometry> objects.  
-  
+ 
 -   A <xref:System.Windows.Media.CombinedGeometry> uses a specified boolean operation to combine the area described by two <xref:System.Windows.Media.Geometry> objects.  
-  
+ 
 -   The static <xref:System.Windows.Media.Geometry.Combine%2A> method of the <xref:System.Windows.Media.Geometry> class behaves in exactly the same manner as the <xref:System.Windows.Media.CombinedGeometry> object.  
-  
- Careful thought should be involved when using a <xref:System.Windows.Media.CombinedGeometry> to perform a union as it can be very CPU-expensive. In most cases, a <xref:System.Windows.Media.GeometryGroup> or <xref:System.Windows.Media.PathGeometry.AddGeometry%2A> will work better.  
-  
- Use a <xref:System.Windows.Media.CombinedGeometry> only when any of the following apply:  
-  
+ 
+Careful thought should be involved when using a <xref:System.Windows.Media.CombinedGeometry> to perform a union as it can be very CPU-expensive. In most cases, a <xref:System.Windows.Media.GeometryGroup> or <xref:System.Windows.Media.PathGeometry.AddGeometry%2A> will work better.  
+ 
+Use a <xref:System.Windows.Media.CombinedGeometry> only when any of the following apply:  
+ 
 -   The geometric operation is not a union.  
-  
+ 
 -   Either of the geometries have a <xref:System.Windows.Media.FillRule> value of <xref:System.Windows.Media.FillRule> and the geometries are self-intersecting (i.e. the <xref:System.Windows.Media.FillRule> actually matters).  
-  
+ 
 -   Time is not a concern, but space is (for instance, if the geometry is created once and then cached). Typically, <xref:System.Windows.Media.CombinedGeometry> produces smaller output than <xref:System.Windows.Media.PathGeometry.AddGeometry%2A>.  
-  
+ 
 -   The resulting geometry will be stroked or used in a path animation and <xref:System.Windows.Media.PathGeometry.AddGeometry%2A> does not provide the desired outline.  
-  
+ 
 ## Freezable Features  
- A <xref:System.Windows.Media.CombinedGeometry> is a type of <xref:System.Windows.Freezable> object. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
-  
+A <xref:System.Windows.Media.CombinedGeometry> is a type of <xref:System.Windows.Freezable> object. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -143,10 +143,10 @@
         <value>The bounding box of this <see cref="T:System.Windows.Media.CombinedGeometry" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If animations are present, the base values of the <xref:System.Windows.Media.Geometry> object are used to calculate the bounding box.  
-  
+If animations are present, the base values of the <xref:System.Windows.Media.Geometry> object are used to calculate the bounding box.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,12 +169,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,12 +197,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -243,18 +243,18 @@
         <value>The first <see cref="T:System.Windows.Media.Geometry" /> object to combine.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A> property specifies how the two geometries will be combined. Note that <xref:System.Windows.Media.CombinedGeometry> combines the area specified by two geometries, so geometries that do not have area (such as <xref:System.Windows.Media.LineGeometry>) disappear when combined.  
-  
+The <xref:System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A> property specifies how the two geometries will be combined. Note that <xref:System.Windows.Media.CombinedGeometry> combines the area specified by two geometries, so geometries that do not have area (such as <xref:System.Windows.Media.LineGeometry>) disappear when combined.  
+ 
 <a name="dependencyPropertyInfo_Geometry1"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.CombinedGeometry.Geometry1Property>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -293,18 +293,18 @@
         <value>The second <see cref="T:System.Windows.Media.Geometry" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A> property specifies how the two geometries will be combined. Note that <xref:System.Windows.Media.CombinedGeometry> combines the area specified by two geometries, so geometries that do not have area (such as <xref:System.Windows.Media.LineGeometry>) disappear when combined.  
-  
+The <xref:System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A> property specifies how the two geometries will be combined. Note that <xref:System.Windows.Media.CombinedGeometry> combines the area specified by two geometries, so geometries that do not have area (such as <xref:System.Windows.Media.LineGeometry>) disappear when combined.  
+ 
 <a name="dependencyPropertyInfo_Geometry2"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.CombinedGeometry.Geometry2Property>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -343,17 +343,17 @@
         <value>The method by which <see cref="P:System.Windows.Media.CombinedGeometry.Geometry1" /> and <see cref="P:System.Windows.Media.CombinedGeometry.Geometry2" /> are combined. The default value is <see cref="F:System.Windows.Media.GeometryCombineMode.Union" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_GeometryCombineMode"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.CombinedGeometry.GeometryCombineModeProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

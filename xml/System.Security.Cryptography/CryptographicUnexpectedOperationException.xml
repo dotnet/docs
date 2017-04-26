@@ -24,20 +24,20 @@
     <summary>The exception that is thrown when an unexpected operation occurs during a cryptographic operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> uses the HRESULT CORSEC_E_CRYPTO_UNEX_OPER, which has the value 0x80131431.  
+<xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> uses the HRESULT CORSEC_E_CRYPTO_UNEX_OPER, which has the value 0x80131431.  
+ 
+For a list of initial property values for an instance of <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException>, see the constructor.  
+ 
   
- For a list of initial property values for an instance of <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException>, see the constructor.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use members of the <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> class.  
-  
- [!code-csharp[System.Security.Cryptography.CryptographicUnexpectedOperationException#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/CS/members.cs#2)]
- [!code-vb[System.Security.Cryptography.CryptographicUnexpectedOperationException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/VB/members.vb#2)]  
-  
+The following code example demonstrates how to use members of the <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> class.  
+ 
+[!code-csharp[System.Security.Cryptography.CryptographicUnexpectedOperationException#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/CS/members.cs#2)]
+[!code-vb[System.Security.Cryptography.CryptographicUnexpectedOperationException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/VB/members.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,23 +61,23 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException" /> class with default properties.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the initial property values for an instance of <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException>.  
-  
+The following table shows the initial property values for an instance of <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`.|  
 |<xref:System.Exception.Message%2A>|The localized error message string.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> with no parameters. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> class.  
-  
- [!code-csharp[System.Security.Cryptography.CryptographicUnexpectedOperationException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/CS/members.cs#1)]
- [!code-vb[System.Security.Cryptography.CryptographicUnexpectedOperationException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/VB/members.vb#1)]  
-  
+The following code example demonstrates how to construct a <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> with no parameters. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> class.  
+ 
+[!code-csharp[System.Security.Cryptography.CryptographicUnexpectedOperationException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/CS/members.cs#1)]
+[!code-vb[System.Security.Cryptography.CryptographicUnexpectedOperationException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/VB/members.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,23 +104,23 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException" /> class with a specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the initial property values for an instance of <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException>.  
-  
+The following table shows the initial property values for an instance of <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> using a custom error message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> class.  
-  
- [!code-csharp[System.Security.Cryptography.CryptographicUnexpectedOperationException#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/CS/members.cs#3)]
- [!code-vb[System.Security.Cryptography.CryptographicUnexpectedOperationException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/VB/members.vb#3)]  
-  
+The following code example demonstrates how to construct a <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> using a custom error message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> class.  
+ 
+[!code-csharp[System.Security.Cryptography.CryptographicUnexpectedOperationException#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/CS/members.cs#3)]
+[!code-vb[System.Security.Cryptography.CryptographicUnexpectedOperationException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/VB/members.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,10 +149,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException" /> class with serialized data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.  
-  
+This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,25 +181,25 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> using a custom error message and an inner exception. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> class.  
-  
- [!code-csharp[System.Security.Cryptography.CryptographicUnexpectedOperationException#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/CS/members.cs#4)]
- [!code-vb[System.Security.Cryptography.CryptographicUnexpectedOperationException#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/VB/members.vb#4)]  
-  
+The following code example demonstrates how to construct a <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> using a custom error message and an inner exception. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> class.  
+ 
+[!code-csharp[System.Security.Cryptography.CryptographicUnexpectedOperationException#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/CS/members.cs#4)]
+[!code-vb[System.Security.Cryptography.CryptographicUnexpectedOperationException#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/VB/members.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,23 +228,23 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException" /> class with a specified error message in the specified format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the initial property values for an instance of <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException>.  
-  
+The following table shows the initial property values for an instance of <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> using a time format and the current date. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> class.  
-  
- [!code-csharp[System.Security.Cryptography.CryptographicUnexpectedOperationException#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/CS/members.cs#5)]
- [!code-vb[System.Security.Cryptography.CryptographicUnexpectedOperationException#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/VB/members.vb#5)]  
-  
+The following code example demonstrates how to construct a <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> using a time format and the current date. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptographicUnexpectedOperationException> class.  
+ 
+[!code-csharp[System.Security.Cryptography.CryptographicUnexpectedOperationException#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/CS/members.cs#5)]
+[!code-vb[System.Security.Cryptography.CryptographicUnexpectedOperationException#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptographicUnexpectedOperationException/VB/members.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

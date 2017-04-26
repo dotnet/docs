@@ -18,23 +18,23 @@
     <summary>Specifies values representing possible states for an accessible object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An accessible object can be associated with one or more of these states.  
+An accessible object can be associated with one or more of these states.  
+ 
+For more information about the accessibility application, see "Microsoft Active Accessibility" in the Microsoft Developer Network (MSDN) library at http://msdn.microsoft.com/library.  
+ 
   
- For more information about the accessibility application, see "Microsoft Active Accessibility" in the Microsoft Developer Network (MSDN) library at http://msdn.microsoft.com/library.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Because the chart legend is not an actual control based on <xref:System.Windows.Forms.Control>, but instead is drawn by the chart control, it does not contain any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This code excerpt demonstrates using the <xref:System.Windows.Forms.AccessibleStates> enumeration with the <xref:System.Windows.Forms.AccessibleObject.State%2A> property. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-cpp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#4)]
- [!code-csharp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#4)]
- [!code-vb[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#4)]  
-  
+The following code example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Because the chart legend is not an actual control based on <xref:System.Windows.Forms.Control>, but instead is drawn by the chart control, it does not contain any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+ 
+This code excerpt demonstrates using the <xref:System.Windows.Forms.AccessibleStates> enumeration with the <xref:System.Windows.Forms.AccessibleObject.State%2A> property. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
+ 
+[!code-cpp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#4)]
+[!code-csharp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#4)]
+[!code-vb[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

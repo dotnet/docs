@@ -14,10 +14,10 @@
     <summary>Represents a comparison operation applied to two arguments. Equality, greater than, greater than or equal, less than, less than or equal, and inequality are comparison operations. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Common.CommandTrees.DbComparisonExpression> class requires that its arguments have a common result type. This result type must be equality comparable for <xref:System.Data.Common.CommandTrees.DbExpressionKind> and <xref:System.Data.Common.CommandTrees.DbExpressionKind>; order comparable for <xref:System.Data.Common.CommandTrees.DbExpressionKind> and <xref:System.Data.Common.CommandTrees.DbExpressionKind>; and both for <xref:System.Data.Common.CommandTrees.DbExpressionKind> and <xref:System.Data.Common.CommandTrees.DbExpressionKind>.  
-  
+The <xref:System.Data.Common.CommandTrees.DbComparisonExpression> class requires that its arguments have a common result type. This result type must be equality comparable for <xref:System.Data.Common.CommandTrees.DbExpressionKind> and <xref:System.Data.Common.CommandTrees.DbExpressionKind>; order comparable for <xref:System.Data.Common.CommandTrees.DbExpressionKind> and <xref:System.Data.Common.CommandTrees.DbExpressionKind>; and both for <xref:System.Data.Common.CommandTrees.DbExpressionKind> and <xref:System.Data.Common.CommandTrees.DbExpressionKind>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

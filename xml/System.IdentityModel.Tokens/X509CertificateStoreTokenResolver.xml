@@ -29,10 +29,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver" /> class with a default X.509 certificate store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default store location is <xref:System.Security.Cryptography.X509Certificates.StoreLocation>. The default store name is <xref:System.Security.Cryptography.X509Certificates.StoreName>.  
-  
+The default store location is <xref:System.Security.Cryptography.X509Certificates.StoreLocation>. The default store name is <xref:System.Security.Cryptography.X509Certificates.StoreName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,24 +14,24 @@
     <summary>Represents a file object in a virtual file or resource space.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.VirtualFile> class is the base class for objects that represent files in a virtual file system. Typically, you would implement a descendent of the <xref:System.Web.Hosting.VirtualFile> class for each <xref:System.Web.Hosting.VirtualPathProvider> object descendent in your Web application.  
+The <xref:System.Web.Hosting.VirtualFile> class is the base class for objects that represent files in a virtual file system. Typically, you would implement a descendent of the <xref:System.Web.Hosting.VirtualFile> class for each <xref:System.Web.Hosting.VirtualPathProvider> object descendent in your Web application.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is a <xref:System.Web.Hosting.VirtualFile> class implementation that combines information stored in a <xref:System.Data.DataSet> object with a template file to return HTML data. This code example works with the code examples for the <xref:System.Web.Hosting.VirtualPathProvider> and <xref:System.Web.Hosting.VirtualDirectory> classes to provide virtual resources from a data store that is loaded into a <xref:System.Data.DataSet> object. For the complete instructions for compiling and running the example, see the Example section of the <xref:System.Web.Hosting.VirtualPathProvider> class overview.  
-  
- This example has three parts: the <xref:System.Web.Hosting.VirtualFile> class implementation, an XML data file used to populate the <xref:System.Data.DataSet> object, and the page template file.  
-  
- The first code example is an implementation of the <xref:System.Web.Hosting.VirtualFile> class. Its constructor uses a method on a custom <xref:System.Web.Hosting.VirtualPathProvider> object to return a <xref:System.Data.DataSet> object. It then searches the <xref:System.Data.DataSet> object to retrieve the information associated with the virtual file path provided. In the <xref:System.Web.Hosting.VirtualFile.Open%2A> method, it combines the information from the <xref:System.Data.DataSet> object with a template file and returns the combination as a <xref:System.IO.Stream> object.  
-  
- [!code-csharp[System.Web.Hosting.VirtualPathProvider#40](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/CS/SampleVirtualFile.cs#40)]
- [!code-vb[System.Web.Hosting.VirtualPathProvider#40](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/VB/SampleVirtualFile.vb#40)]  
-  
- The second example is the XML data file used to populate the <xref:System.Data.DataSet> object returned by the custom <xref:System.Web.Hosting.VirtualPathProvider> object. This XML data is used to demonstrate using the <xref:System.Web.Hosting.VirtualPathProvider>, <xref:System.Web.Hosting.VirtualFile>, and <xref:System.Web.Hosting.VirtualDirectory> classes to retrieve data from external data, and is not intended to represent a production-quality data store.  
-  
+The following code example is a <xref:System.Web.Hosting.VirtualFile> class implementation that combines information stored in a <xref:System.Data.DataSet> object with a template file to return HTML data. This code example works with the code examples for the <xref:System.Web.Hosting.VirtualPathProvider> and <xref:System.Web.Hosting.VirtualDirectory> classes to provide virtual resources from a data store that is loaded into a <xref:System.Data.DataSet> object. For the complete instructions for compiling and running the example, see the Example section of the <xref:System.Web.Hosting.VirtualPathProvider> class overview.  
+ 
+This example has three parts: the <xref:System.Web.Hosting.VirtualFile> class implementation, an XML data file used to populate the <xref:System.Data.DataSet> object, and the page template file.  
+ 
+The first code example is an implementation of the <xref:System.Web.Hosting.VirtualFile> class. Its constructor uses a method on a custom <xref:System.Web.Hosting.VirtualPathProvider> object to return a <xref:System.Data.DataSet> object. It then searches the <xref:System.Data.DataSet> object to retrieve the information associated with the virtual file path provided. In the <xref:System.Web.Hosting.VirtualFile.Open%2A> method, it combines the information from the <xref:System.Data.DataSet> object with a template file and returns the combination as a <xref:System.IO.Stream> object.  
+ 
+[!code-csharp[System.Web.Hosting.VirtualPathProvider#40](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/CS/SampleVirtualFile.cs#40)]
+[!code-vb[System.Web.Hosting.VirtualPathProvider#40](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/VB/SampleVirtualFile.vb#40)]  
+ 
+The second example is the XML data file used to populate the <xref:System.Data.DataSet> object returned by the custom <xref:System.Web.Hosting.VirtualPathProvider> object. This XML data is used to demonstrate using the <xref:System.Web.Hosting.VirtualPathProvider>, <xref:System.Web.Hosting.VirtualFile>, and <xref:System.Web.Hosting.VirtualDirectory> classes to retrieve data from external data, and is not intended to represent a production-quality data store.  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
 <resource type="dir"   
@@ -80,9 +80,9 @@
   </resource>  
 </resource>  
 ```  
-  
- The third example is the text file used as a template for the virtual file. Placeholders in the file are represented by text between percent (%) marks, such as `%file%` and `%content%`. Timestamps are used to monitor changes to cached virtual file data.  
-  
+ 
+The third example is the text file used as a template for the virtual file. Placeholders in the file are represented by text between percent (%) marks, such as `%file%` and `%content%`. Timestamps are used to monitor changes to cached virtual file data.  
+ 
 ```  
 <html>  
   <head>  
@@ -98,7 +98,7 @@
   </body>  
 </html>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -123,13 +123,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Hosting.VirtualFile" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is an implementation of the <xref:System.Web.Hosting.VirtualFile.%23ctor%2A> constructor that retrieves virtual file information from a <xref:System.Data.DataSet> object provided by a custom <xref:System.Web.Hosting.VirtualPathProvider> object. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualFile> class overview.  
-  
- [!code-csharp[System.Web.Hosting.VirtualPathProvider#41](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/CS/SampleVirtualFile.cs#41)]
- [!code-vb[System.Web.Hosting.VirtualPathProvider#41](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/VB/SampleVirtualFile.vb#41)]  
-  
+The following code example is an implementation of the <xref:System.Web.Hosting.VirtualFile.%23ctor%2A> constructor that retrieves virtual file information from a <xref:System.Data.DataSet> object provided by a custom <xref:System.Web.Hosting.VirtualPathProvider> object. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualFile> class overview.  
+ 
+[!code-csharp[System.Web.Hosting.VirtualPathProvider#41](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/CS/SampleVirtualFile.cs#41)]
+[!code-vb[System.Web.Hosting.VirtualPathProvider#41](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/VB/SampleVirtualFile.vb#41)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,18 +170,18 @@
         <returns>A read-only stream to the virtual file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Hosting.VirtualFile.Open%2A> method returns a stream containing the data treated as a file by the <xref:System.Web.Hosting.VirtualPathProvider> class. The stream is read-only and is seekable (the <xref:System.IO.Stream.CanSeek%2A> property is true).  
+The <xref:System.Web.Hosting.VirtualFile.Open%2A> method returns a stream containing the data treated as a file by the <xref:System.Web.Hosting.VirtualPathProvider> class. The stream is read-only and is seekable (the <xref:System.IO.Stream.CanSeek%2A> property is true).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is an implementation of the <xref:System.Web.Hosting.VirtualFile.Open%2A> method that combines virtual-file-specific information with a template file and then returns the combination. The template file is cached to reduce the overhead of reading the file system multiple times to retrieve the template file. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualFile> class overview.  
-  
- [!code-csharp[System.Web.Hosting.VirtualPathProvider#42](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/CS/SampleVirtualFile.cs#42)]
- [!code-vb[System.Web.Hosting.VirtualPathProvider#42](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/VB/SampleVirtualFile.vb#42)]  
-  
+The following code example is an implementation of the <xref:System.Web.Hosting.VirtualFile.Open%2A> method that combines virtual-file-specific information with a template file and then returns the combination. The template file is cached to reduce the overhead of reading the file system multiple times to retrieve the template file. For the full code required to run the example, see the Example section of the <xref:System.Web.Hosting.VirtualFile> class overview.  
+ 
+[!code-csharp[System.Web.Hosting.VirtualPathProvider#42](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/CS/SampleVirtualFile.cs#42)]
+[!code-vb[System.Web.Hosting.VirtualPathProvider#42](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.hosting.virtualpathprovider/VB/SampleVirtualFile.vb#42)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

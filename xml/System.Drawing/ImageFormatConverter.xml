@@ -15,15 +15,15 @@
       <see cref="T:System.Drawing.ImageFormatConverter" /> is a class that can be used to convert <see cref="T:System.Drawing.Imaging.ImageFormat" /> objects from one data type to another. Access this class through the <see cref="T:System.ComponentModel.TypeDescriptor" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A type converter is used to convert values between data types. A type converter also supports property configuration at design time by providing text-to-value conversion or a list of values that users can select from. Access the <xref:System.Drawing.ImageFormatConverter> class through the <xref:System.ComponentModel.TypeDescriptor> class by calling the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method.  
-  
- The <xref:System.Drawing.ImageFormatConverter> converts to and from known image formats, as specified in the <xref:System.Drawing.Imaging.ImageFormat> class.  
-  
+A type converter is used to convert values between data types. A type converter also supports property configuration at design time by providing text-to-value conversion or a list of values that users can select from. Access the <xref:System.Drawing.ImageFormatConverter> class through the <xref:System.ComponentModel.TypeDescriptor> class by calling the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method.  
+ 
+The <xref:System.Drawing.ImageFormatConverter> converts to and from known image formats, as specified in the <xref:System.Drawing.Imaging.ImageFormat> class.  
+ 
 > [!NOTE]
 >  If you want to convert between image formats, such as converting between BMP and JPEG, use one of the <xref:System.Drawing.Image.Save%2A?displayProperty=fullName> methods that takes an <xref:System.Drawing.Imaging.ImageFormat> object as a parameter.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -42,10 +42,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.ImageFormatConverter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not create a <xref:System.Drawing.ImageFormatConverter> object directly. Access the <xref:System.Drawing.ImageFormatConverter> class through the <xref:System.ComponentModel.TypeDescriptor> class by calling the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method.  
-  
+Do not create a <xref:System.Drawing.ImageFormatConverter> object directly. Access the <xref:System.Drawing.ImageFormatConverter> class through the <xref:System.ComponentModel.TypeDescriptor> class by calling the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,10 +73,10 @@
         <returns>This method returns <see langword="true" /> if this object can perform the conversion.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.ImageFormatConverter> converts to and from known image formats, as specified in the <xref:System.Drawing.Imaging.ImageFormat> class.  
-  
+The <xref:System.Drawing.ImageFormatConverter> converts to and from known image formats, as specified in the <xref:System.Drawing.Imaging.ImageFormat> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,10 +104,10 @@
         <returns>This method returns <see langword="true" /> if this object can perform the conversion.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.ImageFormatConverter> converts to and from known image formats, as specified in the <xref:System.Drawing.Imaging.ImageFormat> class.  
-  
+The <xref:System.Drawing.ImageFormatConverter> converts to and from known image formats, as specified in the <xref:System.Drawing.Imaging.ImageFormat> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,10 +137,10 @@
         <returns>The converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.ImageFormatConverter> converts to and from known image formats, as specified in the <xref:System.Drawing.Imaging.ImageFormat> class.  
-  
+The <xref:System.Drawing.ImageFormatConverter> converts to and from known image formats, as specified in the <xref:System.Drawing.Imaging.ImageFormat> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be completed.</exception>
@@ -173,12 +173,12 @@
         <returns>The converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.ImageFormatConverter> converts to and from known image formats, as specified in the <xref:System.Drawing.Imaging.ImageFormat> class.  
-  
- The most common type conversion is to and from a string type. The default implementation calls the <xref:System.Object.ToString%2A> method of the object if the object is valid and if the destination type is `string`. If this method cannot convert the specified object to the specified destination type, it throws a <xref:System.NotSupportedException> exception.  
-  
+The <xref:System.Drawing.ImageFormatConverter> converts to and from known image formats, as specified in the <xref:System.Drawing.Imaging.ImageFormat> class.  
+ 
+The most common type conversion is to and from a string type. The default implementation calls the <xref:System.Object.ToString%2A> method of the object if the object is valid and if the destination type is `string`. If this method cannot convert the specified object to the specified destination type, it throws a <xref:System.NotSupportedException> exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be completed.</exception>

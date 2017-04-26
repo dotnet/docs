@@ -23,17 +23,17 @@
     <summary>Represents an extensibility element added to an <see cref="T:System.Web.Services.Description.InputBinding" />, an <see cref="T:System.Web.Services.Description.OutputBinding" />, or a <see cref="T:System.Web.Services.Description.MimePart" />, specifying the text patterns for which to search the HTTP transmission. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[MimeText_Binding_Match_8#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#1)]
- [!code-csharp[MimeText_Binding_Match_8#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#1)]
- [!code-vb[MimeText_Binding_Match_8#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#1)]  
-  
+[!code-cpp[MimeText_Binding_Match_8#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#1)]
+[!code-csharp[MimeText_Binding_Match_8#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#1)]
+[!code-vb[MimeText_Binding_Match_8#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,19 +77,19 @@
         <value>A <see cref="T:System.Web.Services.Description.MimeTextMatchCollection" /> representing the MIME text patterns to search for.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the `Matches` property.  
-  
- [!code-cpp[MimeText_Binding_Match_8#8](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#8)]
- [!code-csharp[MimeText_Binding_Match_8#8](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#8)]
- [!code-vb[MimeText_Binding_Match_8#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#8)]  
-  
+The following example demonstrates the use of the `Matches` property.  
+ 
+[!code-cpp[MimeText_Binding_Match_8#8](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#8)]
+[!code-csharp[MimeText_Binding_Match_8#8](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#8)]
+[!code-vb[MimeText_Binding_Match_8#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,10 +111,10 @@
         <summary>Specifies the URI for the XML namespace of the <see cref="T:System.Web.Services.Description.MimeTextBinding" /> class. This field is constant.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- MimeTextBinding_1#1  
-  
+MimeTextBinding_1#1  
+ 
  ]]></format>
         </remarks>
       </Docs>

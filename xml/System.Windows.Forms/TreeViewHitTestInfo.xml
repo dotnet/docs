@@ -14,18 +14,18 @@
     <summary>Contains information about an area of a <see cref="T:System.Windows.Forms.TreeView" /> control or a <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TreeViewHitTestInfo> is returned by the <xref:System.Windows.Forms.TreeView> class when the <xref:System.Windows.Forms.TreeView.HitTest%2A> method is called.  
+The <xref:System.Windows.Forms.TreeViewHitTestInfo> is returned by the <xref:System.Windows.Forms.TreeView> class when the <xref:System.Windows.Forms.TreeView.HitTest%2A> method is called.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.TreeViewHitTestInfo> class. To run this example, paste the following code into a Windows Form that contains a <xref:System.Windows.Forms.TreeView> control named `treeView1`, and populate the <xref:System.Windows.Forms.TreeView> with items. Ensure that `treeview1` and the <xref:System.Windows.Forms.Control.MouseDown> event for the form are associated with the `HandleMouseDown` method.  
-  
- [!code-csharp[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/CS/Form1.cs#1)]
- [!code-vb[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/VB/Form1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.TreeViewHitTestInfo> class. To run this example, paste the following code into a Windows Form that contains a <xref:System.Windows.Forms.TreeView> control named `treeView1`, and populate the <xref:System.Windows.Forms.TreeView> with items. Ensure that `treeview1` and the <xref:System.Windows.Forms.Control.MouseDown> event for the form are associated with the `HandleMouseDown` method.  
+ 
+[!code-csharp[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/CS/Form1.cs#1)]
+[!code-vb[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/VB/Form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,10 +49,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeViewHitTestInfo" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `hitNode` parameter can be `null`.  
-  
+The `hitNode` parameter can be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -74,13 +74,13 @@
         <value>One of the <see cref="T:System.Windows.Forms.TreeViewHitTestLocations" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.TreeViewHitTestInfo.Location%2A> property. To run this example, paste the following code into a Windows Form that contains a <xref:System.Windows.Forms.TreeView> control named `treeView1`, and populate the <xref:System.Windows.Forms.TreeView> with items. Ensure that `treeview1` and the <xref:System.Windows.Forms.Control.MouseDown> event for the form are associated with the `HandleMouseDown` method.  
-  
- [!code-csharp[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/CS/Form1.cs#1)]
- [!code-vb[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/VB/Form1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.TreeViewHitTestInfo.Location%2A> property. To run this example, paste the following code into a Windows Form that contains a <xref:System.Windows.Forms.TreeView> control named `treeView1`, and populate the <xref:System.Windows.Forms.TreeView> with items. Ensure that `treeview1` and the <xref:System.Windows.Forms.Control.MouseDown> event for the form are associated with the `HandleMouseDown` method.  
+ 
+[!code-csharp[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/CS/Form1.cs#1)]
+[!code-vb[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/VB/Form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,19 +102,19 @@
         <value>The <see cref="T:System.Windows.Forms.TreeNode" /> at the position indicated by a hit test of a <see cref="T:System.Windows.Forms.TreeView" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the hit test location is not on a <xref:System.Windows.Forms.TreeNode>, the <xref:System.Windows.Forms.TreeViewHitTestInfo.Node%2A> property will be `null`.  
+If the hit test location is not on a <xref:System.Windows.Forms.TreeNode>, the <xref:System.Windows.Forms.TreeViewHitTestInfo.Node%2A> property will be `null`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.TreeViewHitTestInfo.Node%2A> property. To run this example, create a Windows Form that contains a <xref:System.Windows.Forms.TreeView> named `treeView1`, and populate it with several levels of nodes. Paste the following code into a form, and associate the <xref:System.Windows.Forms.Control.MouseDown> event of `treeView1` with the `treeView1_MouseDown` method.  
-  
- [!code-cpp[System.Windows.Forms.TreeViewWhidbeyMembers#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewWhidbeyMembers/cpp/Form1.cpp#3)]
- [!code-csharp[System.Windows.Forms.TreeViewWhidbeyMembers#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewWhidbeyMembers/CS/Form1.cs#3)]
- [!code-vb[System.Windows.Forms.TreeViewWhidbeyMembers#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewWhidbeyMembers/VB/Form1.vb#3)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.TreeViewHitTestInfo.Node%2A> property. To run this example, create a Windows Form that contains a <xref:System.Windows.Forms.TreeView> named `treeView1`, and populate it with several levels of nodes. Paste the following code into a form, and associate the <xref:System.Windows.Forms.Control.MouseDown> event of `treeView1` with the `treeView1_MouseDown` method.  
+ 
+[!code-cpp[System.Windows.Forms.TreeViewWhidbeyMembers#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewWhidbeyMembers/cpp/Form1.cpp#3)]
+[!code-csharp[System.Windows.Forms.TreeViewWhidbeyMembers#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewWhidbeyMembers/CS/Form1.cs#3)]
+[!code-vb[System.Windows.Forms.TreeViewWhidbeyMembers#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewWhidbeyMembers/VB/Form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

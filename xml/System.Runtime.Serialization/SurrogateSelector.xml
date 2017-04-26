@@ -28,17 +28,17 @@
     <summary>Assists formatters in selection of the serialization surrogate to delegate the serialization or deserialization process to.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A serialization surrogate gives the users an object that can handle the serialization requirements of a different object and can transform the serialized data if necessary.  
+A serialization surrogate gives the users an object that can handle the serialization requirements of a different object and can transform the serialized data if necessary.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to make a serialization surrogate class that knows how to properly serialize or deserialize a class that is not itself serializable. In addition, this example also shows how to recover from a <xref:System.Runtime.Serialization.SerializationException>.  
-  
- [!code-csharp[SurrogateSelector#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SurrogateSelector/CS/SurrogateSelector.cs#1)]  
-  
+The following code example shows how to make a serialization surrogate class that knows how to properly serialize or deserialize a class that is not itself serializable. In addition, this example also shows how to recover from a <xref:System.Runtime.Serialization.SerializationException>.  
+ 
+[!code-csharp[SurrogateSelector#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SurrogateSelector/CS/SurrogateSelector.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -92,12 +92,12 @@
         <summary>Adds a surrogate to the list of checked surrogates.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates calling the <xref:System.Runtime.Serialization.SurrogateSelector.AddSurrogate%2A> method. This code example is part of a larger example provided for the <xref:System.Runtime.Serialization.SurrogateSelector> class.  
-  
- [!code-csharp[SurrogateSelector#2](~/samples/snippets/csharp/VS_Snippets_Remoting/SurrogateSelector/CS/SurrogateSelector.cs#2)]  
-  
+The following code example demonstrates calling the <xref:System.Runtime.Serialization.SurrogateSelector.AddSurrogate%2A> method. This code example is part of a larger example provided for the <xref:System.Runtime.Serialization.SurrogateSelector> class.  
+ 
+[!code-csharp[SurrogateSelector#2](~/samples/snippets/csharp/VS_Snippets_Remoting/SurrogateSelector/CS/SurrogateSelector.cs#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> or <paramref name="surrogate" /> parameter is <see langword="null" />.</exception>
@@ -134,10 +134,10 @@
         <summary>Adds the specified <see cref="T:System.Runtime.Serialization.ISurrogateSelector" /> that can handle a particular object type to the list of surrogates.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The last selector added to the list will be the first one checked.  
-  
+The last selector added to the list will be the first one checked.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="selector" /> parameter is <see langword="null" />.</exception>
@@ -212,10 +212,10 @@
         <returns>The surrogate for a particular type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the current selector cannot provide a surrogate, it checks all its child objects before returning `null`.  
-  
+If the current selector cannot provide a surrogate, it checks all its child objects before returning `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
@@ -250,10 +250,10 @@
         <summary>Removes the surrogate associated with a given type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not check chained surrogates.  
-  
+This method does not check chained surrogates.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>

@@ -31,34 +31,34 @@
     <summary>Represents a scrollable area that can contain other visible elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.ScrollViewer> enables content to be displayed in a smaller area than its actual size.  When the content of the <xref:System.Windows.Controls.ScrollViewer> is not entirely visible, the <xref:System.Windows.Controls.ScrollViewer> displays scrollbars that the user can use to move the content areas that is visible.  The area that includes all of the content of the <xref:System.Windows.Controls.ScrollViewer> is the extent.  The visible area of the content is the viewport.  
-  
- Physical scrolling is used to scroll content by a predetermined physical increment, typically by a value that is declared in pixels. Logical scrolling is used to scroll to the next item in the logical tree. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. Physical scrolling is the default scroll behavior for most <xref:System.Windows.Controls.Panel> elements.  
-  
- If your <xref:System.Windows.Controls.ScrollViewer> contains a large number of items, the scrolling performance may be affected.  In this case, set <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> to `true`.  This causes the content view to remain static while dragging the <xref:System.Windows.Controls.Primitives.Thumb> and to update only when the <xref:System.Windows.Controls.Primitives.Thumb> is released.  
-  
- Because the scroll bars for a <xref:System.Windows.Controls.ScrollViewer> element are defined in the default style of the element, scroll bars will no longer appear if you apply a custom style to a <xref:System.Windows.Controls.ScrollViewer>. Scroll bars must be defined in the custom style for them to appear.  
-  
+A <xref:System.Windows.Controls.ScrollViewer> enables content to be displayed in a smaller area than its actual size.  When the content of the <xref:System.Windows.Controls.ScrollViewer> is not entirely visible, the <xref:System.Windows.Controls.ScrollViewer> displays scrollbars that the user can use to move the content areas that is visible.  The area that includes all of the content of the <xref:System.Windows.Controls.ScrollViewer> is the extent.  The visible area of the content is the viewport.  
+ 
+Physical scrolling is used to scroll content by a predetermined physical increment, typically by a value that is declared in pixels. Logical scrolling is used to scroll to the next item in the logical tree. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. Physical scrolling is the default scroll behavior for most <xref:System.Windows.Controls.Panel> elements.  
+ 
+If your <xref:System.Windows.Controls.ScrollViewer> contains a large number of items, the scrolling performance may be affected.  In this case, set <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> to `true`.  This causes the content view to remain static while dragging the <xref:System.Windows.Controls.Primitives.Thumb> and to update only when the <xref:System.Windows.Controls.Primitives.Thumb> is released.  
+ 
+Because the scroll bars for a <xref:System.Windows.Controls.ScrollViewer> element are defined in the default style of the element, scroll bars will no longer appear if you apply a custom style to a <xref:System.Windows.Controls.ScrollViewer>. Scroll bars must be defined in the custom style for them to appear.  
+ 
 ## Customizing the ScrollViewer Control  
- To apply the same property settings to multiple <xref:System.Windows.Controls.ScrollViewer> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.ScrollViewer>, see [ScrollViewer Styles and Templates](~/docs/framework/wpf/controls/scrollviewer-styles-and-templates.md).  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
+To apply the same property settings to multiple <xref:System.Windows.Controls.ScrollViewer> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.ScrollViewer>, see [ScrollViewer Styles and Templates](~/docs/framework/wpf/controls/scrollviewer-styles-and-templates.md).  
+ 
+Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ 
 > [!NOTE]
 >  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.ScrollViewer> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.ScrollViewer> that contains some text and a rectangle. The scroll bars appear only when they are needed. When you resize the window, the scroll bars appear and disappear.  
-  
- [!code-cpp[ScrollViewer#1](~/samples/snippets/cpp/VS_Snippets_Wpf/ScrollViewer/CPP/ScrollViewer_wcp.cpp#1)]
- [!code-csharp[ScrollViewer#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollViewer/CSharp/ScrollViewer_wcp.cs#1)]
- [!code-vb[ScrollViewer#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ScrollViewer/VisualBasic/ScrollViewer.vb#1)]
- [!code-xml[ScrollViewer#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ScrollViewer/XAML/Pane1.xaml#1)]  
-  
+The following example creates a <xref:System.Windows.Controls.ScrollViewer> that contains some text and a rectangle. The scroll bars appear only when they are needed. When you resize the window, the scroll bars appear and disappear.  
+ 
+[!code-cpp[ScrollViewer#1](~/samples/snippets/cpp/VS_Snippets_Wpf/ScrollViewer/CPP/ScrollViewer_wcp.cpp#1)]
+[!code-csharp[ScrollViewer#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollViewer/CSharp/ScrollViewer_wcp.cs#1)]
+[!code-vb[ScrollViewer#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ScrollViewer/VisualBasic/ScrollViewer.vb#1)]
+[!code-xml[ScrollViewer#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ScrollViewer/XAML/Pane1.xaml#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -121,28 +121,28 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.ScrollViewer" /> scrolls in terms of logical units; <see langword="false" /> if the <see cref="T:System.Windows.Controls.ScrollViewer" /> scrolls in terms of physical units. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Content in a <xref:System.Windows.Controls.ScrollViewer> can be scrolled in terms of physical units or logical units. Physical units are device independent pixels. Logical units are used for scrolling items within an <xref:System.Windows.Controls.ItemsControl>. The default behavior of the <xref:System.Windows.Controls.ScrollViewer> is to use physical units to scroll its content. However, in cases where the <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is set to `true`, the content could use logical units to scroll. For example, <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.ListView>, and other controls that inherit from <xref:System.Windows.Controls.ItemsControl> use logical units to scroll. If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `true`, the values of the <xref:System.Windows.Controls.ScrollViewer.ExtentHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ScrollableHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A>, and <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> properties are number of items, instead of physical units.  
-  
- If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. Physical scrolling is the default scroll behavior for most <xref:System.Windows.Controls.Panel> elements.  
-  
+Content in a <xref:System.Windows.Controls.ScrollViewer> can be scrolled in terms of physical units or logical units. Physical units are device independent pixels. Logical units are used for scrolling items within an <xref:System.Windows.Controls.ItemsControl>. The default behavior of the <xref:System.Windows.Controls.ScrollViewer> is to use physical units to scroll its content. However, in cases where the <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is set to `true`, the content could use logical units to scroll. For example, <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.ListView>, and other controls that inherit from <xref:System.Windows.Controls.ItemsControl> use logical units to scroll. If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `true`, the values of the <xref:System.Windows.Controls.ScrollViewer.ExtentHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ScrollableHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A>, and <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> properties are number of items, instead of physical units.  
+ 
+If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. Physical scrolling is the default scroll behavior for most <xref:System.Windows.Controls.Panel> elements.  
+ 
 <a name="dependencyPropertyInfo_CanContentScroll"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ScrollViewer.CanContentScrollProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to set the <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property by using code.  
-  
- [!code-csharp[scrollchangedeventargsLayout#4](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollchangedeventargsLayout/CSharp/Window1.xaml.cs#4)]
- [!code-vb[scrollchangedeventargsLayout#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#4)]  
-  
+The following example demonstrates how to set the <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property by using code.  
+ 
+[!code-csharp[scrollchangedeventargsLayout#4](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollchangedeventargsLayout/CSharp/Window1.xaml.cs#4)]
+[!code-vb[scrollchangedeventargsLayout#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,17 +181,17 @@
         <value>A <see cref="T:System.Windows.Visibility" /> that indicates whether the horizontal scroll bar is visible. The default is <see cref="F:System.Windows.Controls.ScrollBarVisibility.Hidden" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_ComputedHorizontalScrollBarVisibility"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ScrollViewer.ComputedHorizontalScrollBarVisibilityProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,17 +230,17 @@
         <value>A <see cref="T:System.Windows.Visibility" /> that indicates whether the vertical scroll bar is visible. The default is <see cref="F:System.Windows.Controls.ScrollBarVisibility.Visible" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_ComputedVerticalScrollBarVisibility"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ScrollViewer.ComputedVerticalScrollBarVisibilityProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -279,12 +279,12 @@
         <value>The horizontal offset of the visible content.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> is `true`, the content is scrolled when the user releases the <xref:System.Windows.Controls.Primitives.Thumb> of the <xref:System.Windows.Controls.Primitives.ScrollBar>.  When the user drags the <xref:System.Windows.Controls.Primitives.Thumb>, the <xref:System.Windows.Controls.ScrollViewer.ContentHorizontalOffset%2A> value does not change.   When the user releases the <xref:System.Windows.Controls.Primitives.Thumb>, <xref:System.Windows.Controls.ScrollViewer.ContentHorizontalOffset%2A> updates to the current <xref:System.Windows.Controls.ScrollViewer.HorizontalOffset%2A> value.  
-  
- When <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> is `false`, the content is scrolled when the user drags the <xref:System.Windows.Controls.Primitives.Thumb>.  In this case, <xref:System.Windows.Controls.ScrollViewer.ContentVerticalOffset%2A> is always equal to <xref:System.Windows.Controls.ScrollViewer.HorizontalOffset%2A>.  
-  
+When <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> is `true`, the content is scrolled when the user releases the <xref:System.Windows.Controls.Primitives.Thumb> of the <xref:System.Windows.Controls.Primitives.ScrollBar>.  When the user drags the <xref:System.Windows.Controls.Primitives.Thumb>, the <xref:System.Windows.Controls.ScrollViewer.ContentHorizontalOffset%2A> value does not change.   When the user releases the <xref:System.Windows.Controls.Primitives.Thumb>, <xref:System.Windows.Controls.ScrollViewer.ContentHorizontalOffset%2A> updates to the current <xref:System.Windows.Controls.ScrollViewer.HorizontalOffset%2A> value.  
+ 
+When <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> is `false`, the content is scrolled when the user drags the <xref:System.Windows.Controls.Primitives.Thumb>.  In this case, <xref:System.Windows.Controls.ScrollViewer.ContentVerticalOffset%2A> is always equal to <xref:System.Windows.Controls.ScrollViewer.HorizontalOffset%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -323,12 +323,12 @@
         <value>The vertical offset of the visible content.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> is `true`, the content is scrolled when the user releases the <xref:System.Windows.Controls.Primitives.Thumb> of the <xref:System.Windows.Controls.Primitives.ScrollBar>.  When the user drags the <xref:System.Windows.Controls.Primitives.Thumb>, the <xref:System.Windows.Controls.ScrollViewer.ContentVerticalOffset%2A> does not change.  When the user releases the <xref:System.Windows.Controls.Primitives.Thumb>, <xref:System.Windows.Controls.ScrollViewer.ContentVerticalOffset%2A> updates to the current <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> value.  
-  
- When <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> is `false`, the content is scrolled when the user drags the <xref:System.Windows.Controls.Primitives.Thumb>.  In this case, <xref:System.Windows.Controls.ScrollViewer.ContentVerticalOffset%2A> is always equal to <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A>.  
-  
+When <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> is `true`, the content is scrolled when the user releases the <xref:System.Windows.Controls.Primitives.Thumb> of the <xref:System.Windows.Controls.Primitives.ScrollBar>.  When the user drags the <xref:System.Windows.Controls.Primitives.Thumb>, the <xref:System.Windows.Controls.ScrollViewer.ContentVerticalOffset%2A> does not change.  When the user releases the <xref:System.Windows.Controls.Primitives.Thumb>, <xref:System.Windows.Controls.ScrollViewer.ContentVerticalOffset%2A> updates to the current <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> value.  
+ 
+When <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> is `false`, the content is scrolled when the user drags the <xref:System.Windows.Controls.Primitives.Thumb>.  In this case, <xref:System.Windows.Controls.ScrollViewer.ContentVerticalOffset%2A> is always equal to <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -372,20 +372,20 @@
         <value>A <see cref="T:System.Double" /> that represents the vertical size of the extent. The default is 0.0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.ScrollViewer.ExtentHeight%2A> is only an output property; it can effectively be set by specifying the <xref:System.Windows.FrameworkElement.Height%2A> of the content element.  
-  
- If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `true`, the values of the <xref:System.Windows.Controls.ScrollViewer.ExtentHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ScrollableHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A>, and <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> properties are number of items. If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `false`, the values of these properties are Device Independent Pixels.  
-  
+<xref:System.Windows.Controls.ScrollViewer.ExtentHeight%2A> is only an output property; it can effectively be set by specifying the <xref:System.Windows.FrameworkElement.Height%2A> of the content element.  
+ 
+If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `true`, the values of the <xref:System.Windows.Controls.ScrollViewer.ExtentHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ScrollableHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A>, and <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> properties are number of items. If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `false`, the values of these properties are Device Independent Pixels.  
+ 
 <a name="dependencyPropertyInfo_ExtentHeight"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ScrollViewer.ExtentHeightProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -429,20 +429,20 @@
         <value>A <see cref="T:System.Double" /> that represents the horizontal size of the extent. The default is 0.0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.ScrollViewer.ExtentWidth%2A> is only an output property; it can effectively be set by specifying the <xref:System.Windows.FrameworkElement.Width%2A> of the content element.  
-  
- The returned value is described in Device Independent Pixels.  
-  
+<xref:System.Windows.Controls.ScrollViewer.ExtentWidth%2A> is only an output property; it can effectively be set by specifying the <xref:System.Windows.FrameworkElement.Width%2A> of the content element.  
+ 
+The returned value is described in Device Independent Pixels.  
+ 
 <a name="dependencyPropertyInfo_ExtentWidth"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ScrollViewer.ExtentWidthProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -486,10 +486,10 @@
           <see langword="true" /> if this element can scroll; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A>  
-  
+<xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -645,10 +645,10 @@
           <see langword="true" /> if this control defines custom keyboard scrolling behavior; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property returns `true`, keyboard input is not handled by the <xref:System.Windows.Controls.ScrollViewer>.  
-  
+If this property returns `true`, keyboard input is not handled by the <xref:System.Windows.Controls.ScrollViewer>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -692,24 +692,24 @@
         <value>A <see cref="T:System.Double" /> that represents the horizontal offset of the scrolled content. The default is 0.0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A positive <xref:System.Windows.Controls.ScrollViewer.HorizontalOffset%2A> value corresponds to the content being offset to the left.  
-  
- Valid values are between zero and the <xref:System.Windows.Controls.ScrollViewer.ExtentWidth%2A> minus the <xref:System.Windows.Controls.ScrollViewer.ViewportWidth%2A>.  
-  
- The returned value is described in Device Independent Pixels.  
-  
- Beginning in the .NET Framework version 3.5 SP1, when <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> is `true`, <xref:System.Windows.Controls.ScrollViewer.HorizontalOffset%2A> continues to change as the user drags the <xref:System.Windows.Controls.Primitives.Thumb>, but the content view doesn't change until the <xref:System.Windows.Controls.Primitives.Thumb> is released.  In this case, <xref:System.Windows.Controls.ScrollViewer.ContentHorizontalOffset%2A> represents the visible content offset and <xref:System.Windows.Controls.ScrollViewer.HorizontalOffset%2A> represents the content offset based on the <xref:System.Windows.Controls.Primitives.Thumb> position.  
-  
+A positive <xref:System.Windows.Controls.ScrollViewer.HorizontalOffset%2A> value corresponds to the content being offset to the left.  
+ 
+Valid values are between zero and the <xref:System.Windows.Controls.ScrollViewer.ExtentWidth%2A> minus the <xref:System.Windows.Controls.ScrollViewer.ViewportWidth%2A>.  
+ 
+The returned value is described in Device Independent Pixels.  
+ 
+Beginning in the .NET Framework version 3.5 SP1, when <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> is `true`, <xref:System.Windows.Controls.ScrollViewer.HorizontalOffset%2A> continues to change as the user drags the <xref:System.Windows.Controls.Primitives.Thumb>, but the content view doesn't change until the <xref:System.Windows.Controls.Primitives.Thumb> is released.  In this case, <xref:System.Windows.Controls.ScrollViewer.ContentHorizontalOffset%2A> represents the visible content offset and <xref:System.Windows.Controls.ScrollViewer.HorizontalOffset%2A> represents the content offset based on the <xref:System.Windows.Controls.Primitives.Thumb> position.  
+ 
 <a name="dependencyPropertyInfo_HorizontalOffset"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ScrollViewer.HorizontalOffsetProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -756,18 +756,18 @@
         <value>A <see cref="T:System.Windows.Controls.ScrollBarVisibility" /> value that indicates whether a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> should be displayed. The default is <see cref="F:System.Windows.Controls.ScrollBarVisibility.Hidden" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property also has an attached property usage.  
-  
+This property also has an attached property usage.  
+ 
 <a name="dependencyPropertyInfo_HorizontalScrollBarVisibility"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -806,10 +806,10 @@
         <summary>Called by an <see cref="T:System.Windows.Controls.Primitives.IScrollInfo" /> interface that is attached to a <see cref="T:System.Windows.Controls.ScrollViewer" /> when the value of any scrolling property size changes. Scrolling properties include offset, extent, or viewport.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method handles invalidation of other elements, such as scroll bars, that depend on the scrolling properties of this <xref:System.Windows.Controls.ScrollViewer>.  
-  
+This method handles invalidation of other elements, such as scroll bars, that depend on the scrolling properties of this <xref:System.Windows.Controls.ScrollViewer>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -832,19 +832,19 @@
           <see langword="true" /> if the content is stationary when the user drags the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> of a <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Displaying a large number of items may cause performance issues.  In this case, it might be useful to use deferred scrolling.  For more information, see [Optimizing Performance: Controls](~/docs/framework/wpf/advanced/optimizing-performance-controls.md).  
+Displaying a large number of items may cause performance issues.  In this case, it might be useful to use deferred scrolling.  For more information, see [Optimizing Performance: Controls](~/docs/framework/wpf/advanced/optimizing-performance-controls.md).  
+ 
+This property can be used as an instance property and an attached property.  
+ 
   
- This property can be used as an instance property and an attached property.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows a <xref:System.Windows.Controls.ScrollViewer> with the <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> property set to `true`.  
-  
- [!code-xml[DeferredScrolling#DeferredScrolling](~/samples/snippets/xaml/VS_Snippets_Wpf/DeferredScrolling/xaml/window1.xaml#deferredscrolling)]  
-  
+The following example shows a <xref:System.Windows.Controls.ScrollViewer> with the <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> property set to `true`.  
+ 
+[!code-xml[DeferredScrolling#DeferredScrolling](~/samples/snippets/xaml/VS_Snippets_Wpf/DeferredScrolling/xaml/window1.xaml#deferredscrolling)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -883,12 +883,12 @@
         <summary>Scrolls the <see cref="T:System.Windows.Controls.ScrollViewer" /> content downward by one line.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
-  
- Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
+ 
+Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -910,12 +910,12 @@
         <summary>Scrolls the <see cref="T:System.Windows.Controls.ScrollViewer" /> content to the left by a predetermined amount.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
-  
- Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
+ 
+Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -937,12 +937,12 @@
         <summary>Scrolls the <see cref="T:System.Windows.Controls.ScrollViewer" /> content to the right by a predetermined amount.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
-  
- Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
+ 
+Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -964,12 +964,12 @@
         <summary>Scrolls the <see cref="T:System.Windows.Controls.ScrollViewer" /> content upward by one line.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
-  
- Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
+ 
+Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1053,26 +1053,26 @@
         <summary>Responds to specific keyboard input and invokes associated scrolling behavior.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following keyboard input is recognized:  
-  
+The following keyboard input is recognized:  
+ 
 -   The LEFT ARROW key: Scrolls content one line to the left.  
-  
+ 
 -   The RIGHT ARROW key: Scrolls content one line to the right.  
-  
+ 
 -   The UP ARROW key: Scrolls content upward by one line.  
-  
+ 
 -   The DOWN ARROW key: Scrolls content downward by one line.  
-  
+ 
 -   PAGE UP: Scrolls content to the top of the current page.  
-  
+ 
 -   PAGE DOWN: Scrolls content to the bottom of the current page.  
-  
+ 
 -   HOME: Scrolls content to the top of the first page.  
-  
+ 
 -   END: Scrolls content to the bottom of the last page.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1097,10 +1097,10 @@
         <summary>Called when the <see cref="E:System.Windows.UIElement.ManipulationCompleted" /> event occurs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.ScrollViewer.OnManipulationCompleted%2A> method sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> property to `true`.  
-  
+The <xref:System.Windows.Controls.ScrollViewer.OnManipulationCompleted%2A> method sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> property to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1125,10 +1125,10 @@
         <summary>Called when the <see cref="E:System.Windows.UIElement.ManipulationDelta" /> event occurs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.ScrollViewer.OnManipulationDelta%2A> method sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> property to `true`.  
-  
+The <xref:System.Windows.Controls.ScrollViewer.OnManipulationDelta%2A> method sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> property to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1153,10 +1153,10 @@
         <summary>Called when the <see cref="E:System.Windows.UIElement.ManipulationInertiaStarting" /> event occurs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.ScrollViewer.OnManipulationInertiaStarting%2A> method sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> property to `true`.  
-  
+The <xref:System.Windows.Controls.ScrollViewer.OnManipulationInertiaStarting%2A> method sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> property to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1181,10 +1181,10 @@
         <summary>Called when the <see cref="E:System.Windows.UIElement.ManipulationStarting" /> event occurs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.ScrollViewer.OnManipulationInertiaStarting%2A> method sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> property to `true`.  
-  
+The <xref:System.Windows.Controls.ScrollViewer.OnManipulationInertiaStarting%2A> method sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> property to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1251,10 +1251,10 @@
         <summary>Called when a change in scrolling state is detected, such as a change in scroll position, extent, or viewport size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you override this method, call `base.OnScrollChanged(ScrollChangedEventArgs)` to ensure that this event is raised.  
-  
+If you override this method, call `base.OnScrollChanged(ScrollChangedEventArgs)` to ensure that this event is raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1279,10 +1279,10 @@
         <summary>Called when a tap gesture initiated by a stylus is detected.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used internally to make decisions about panning.  
-  
+Used internally to make decisions about panning.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1304,12 +1304,12 @@
         <summary>Scrolls the <see cref="T:System.Windows.Controls.ScrollViewer" /> content downward by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
-  
- Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
+ 
+Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1331,12 +1331,12 @@
         <summary>Scrolls the <see cref="T:System.Windows.Controls.ScrollViewer" /> content to the left by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
-  
- Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
+ 
+Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1358,12 +1358,12 @@
         <summary>Scrolls the <see cref="T:System.Windows.Controls.ScrollViewer" /> content to the right by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
-  
- Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
+ 
+Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1385,10 +1385,10 @@
         <summary>Scrolls the <see cref="T:System.Windows.Controls.ScrollViewer" /> content upward by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
-  
+This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1410,10 +1410,10 @@
         <value>The rate <see cref="T:System.Windows.Controls.ScrollViewer" /> slows in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] per squared millisecond.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a user scrolls the <xref:System.Windows.Controls.ScrollViewer> by using touch, the user puts a finger on the <xref:System.Windows.Controls.ScrollViewer>, moves the finger across the screen for a short distance, and then lifts the finger while it is moving.  The result of this is that the <xref:System.Windows.Controls.ScrollViewer> will continue to move after the user lifts the finger. The <xref:System.Windows.Controls.ScrollViewer.PanningDeceleration%2A> property specifies the rate the scrolling slows after the user lifts the finger.  
-  
+When a user scrolls the <xref:System.Windows.Controls.ScrollViewer> by using touch, the user puts a finger on the <xref:System.Windows.Controls.ScrollViewer>, moves the finger across the screen for a short distance, and then lifts the finger while it is moving.  The result of this is that the <xref:System.Windows.Controls.ScrollViewer> will continue to move after the user lifts the finger. The <xref:System.Windows.Controls.ScrollViewer.PanningDeceleration%2A> property specifies the rate the scrolling slows after the user lifts the finger.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1452,25 +1452,25 @@
         <value>A value that specifies how <see cref="T:System.Windows.Controls.ScrollViewer" /> reacts to touch manipulation.  The default is <see cref="F:System.Windows.Controls.PanningMode.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The<xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> property specifies whether the <xref:System.Windows.Controls.ScrollViewer> scroll horizontally, vertically, or both. The <xref:System.Windows.Controls.ScrollViewer> will scroll when a user drags a finger on the control on a touch device that supports Windows Touch.  
+The<xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> property specifies whether the <xref:System.Windows.Controls.ScrollViewer> scroll horizontally, vertically, or both. The <xref:System.Windows.Controls.ScrollViewer> will scroll when a user drags a finger on the control on a touch device that supports Windows Touch.  
+ 
+<xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> can be either set directly on a <xref:System.Windows.Controls.ScrollViewer> or used as an attached property.  When a control contains a <xref:System.Windows.Controls.ScrollViewer> in its <xref:System.Windows.Controls.ControlTemplate>, use <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A?displayProperty=fullName> as an attached property to specify the behavior of the <xref:System.Windows.Controls.ScrollViewer> in the <xref:System.Windows.Controls.ControlTemplate>. When you use a <xref:System.Windows.Controls.ScrollViewer> outside of a <xref:System.Windows.Controls.ControlTemplate>, set <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> directly on the <xref:System.Windows.Controls.ScrollViewer>.  
+ 
   
- <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> can be either set directly on a <xref:System.Windows.Controls.ScrollViewer> or used as an attached property.  When a control contains a <xref:System.Windows.Controls.ScrollViewer> in its <xref:System.Windows.Controls.ControlTemplate>, use <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A?displayProperty=fullName> as an attached property to specify the behavior of the <xref:System.Windows.Controls.ScrollViewer> in the <xref:System.Windows.Controls.ControlTemplate>. When you use a <xref:System.Windows.Controls.ScrollViewer> outside of a <xref:System.Windows.Controls.ControlTemplate>, set <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> directly on the <xref:System.Windows.Controls.ScrollViewer>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.ScrollViewer> and adds several elements to it.  In this example, when the size of the window changes, the size of `textblock1` also changes.  When the <xref:System.Windows.Controls.TextBlock> is too small to display all of the content, the <xref:System.Windows.Controls.ScrollViewer> becomes scrollable. The example sets <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> to <xref:System.Windows.Controls.PanningMode> so that the user can scroll the <xref:System.Windows.Controls.ScrollViewer> horizontally and vertically by using a finger.  
-  
- [!code-xml[ScrollViewerPanning#PanningModeDirect](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollviewerpanning/CS/mainwindow.xaml#panningmodedirect)]
- <!-- TODO: review snippet reference [!code-xml[ScrollViewerPanning#PanningModeDirect](~/samples/snippets/xaml/VS_Snippets_Wpf/scrollviewerpanning/xaml/mainwindow.xaml#panningmodedirect)]  -->  
-  
- The following example creates a <xref:System.Windows.Controls.TextBox> and uses <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A?displayProperty=fullName> as an attached property. By default the <xref:System.Windows.Controls.ScrollViewer> in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.TextBox> has its <xref:System.Windows.Controls.PanningMode> to <xref:System.Windows.Controls.PanningMode>.  This is so that when the user moves a finger horizontally before moving it vertically, the user highlights text.  The example sets <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> to <xref:System.Windows.Controls.PanningMode> so that the user cannot select text by using a finger.  Note that setting <xref:System.Windows.Controls.PanningMode> to <xref:System.Windows.Controls.PanningMode> also prevents the user from selecting text.  The example sets the <xref:System.Windows.TextWrapping> property to <xref:System.Windows.TextWrapping>, so horizontal scrolling is not necessary.  
-  
- [!code-xml[ScrollViewerPanning#PanningModeAttached](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollviewerpanning/CS/mainwindow.xaml#panningmodeattached)]
- <!-- TODO: review snippet reference [!code-xml[ScrollViewerPanning#PanningModeAttached](~/samples/snippets/xaml/VS_Snippets_Wpf/scrollviewerpanning/xaml/mainwindow.xaml#panningmodeattached)]  -->  
-  
+The following example creates a <xref:System.Windows.Controls.ScrollViewer> and adds several elements to it.  In this example, when the size of the window changes, the size of `textblock1` also changes.  When the <xref:System.Windows.Controls.TextBlock> is too small to display all of the content, the <xref:System.Windows.Controls.ScrollViewer> becomes scrollable. The example sets <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> to <xref:System.Windows.Controls.PanningMode> so that the user can scroll the <xref:System.Windows.Controls.ScrollViewer> horizontally and vertically by using a finger.  
+ 
+[!code-xml[ScrollViewerPanning#PanningModeDirect](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollviewerpanning/CS/mainwindow.xaml#panningmodedirect)]
+<!-- TODO: review snippet reference [!code-xml[ScrollViewerPanning#PanningModeDirect](~/samples/snippets/xaml/VS_Snippets_Wpf/scrollviewerpanning/xaml/mainwindow.xaml#panningmodedirect)]  -->  
+ 
+The following example creates a <xref:System.Windows.Controls.TextBox> and uses <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A?displayProperty=fullName> as an attached property. By default the <xref:System.Windows.Controls.ScrollViewer> in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.TextBox> has its <xref:System.Windows.Controls.PanningMode> to <xref:System.Windows.Controls.PanningMode>.  This is so that when the user moves a finger horizontally before moving it vertically, the user highlights text.  The example sets <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> to <xref:System.Windows.Controls.PanningMode> so that the user cannot select text by using a finger.  Note that setting <xref:System.Windows.Controls.PanningMode> to <xref:System.Windows.Controls.PanningMode> also prevents the user from selecting text.  The example sets the <xref:System.Windows.TextWrapping> property to <xref:System.Windows.TextWrapping>, so horizontal scrolling is not necessary.  
+ 
+[!code-xml[ScrollViewerPanning#PanningModeAttached](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollviewerpanning/CS/mainwindow.xaml#panningmodeattached)]
+<!-- TODO: review snippet reference [!code-xml[ScrollViewerPanning#PanningModeAttached](~/samples/snippets/xaml/VS_Snippets_Wpf/scrollviewerpanning/xaml/mainwindow.xaml#panningmodeattached)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1509,10 +1509,10 @@
         <value>The ratio of scrolling offset to translate manipulation offset. The default is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a user drags a finger across an object, it is considered a translate manipulation.  The <xref:System.Windows.Controls.ScrollViewer> uses that manipulation to scroll. The <xref:System.Windows.Controls.ScrollViewer.PanningRatio%2A> property specifies how much the <xref:System.Windows.Controls.ScrollViewer> scrolls for each unit of translation.  For example, if <xref:System.Windows.Controls.ScrollViewer.PanningRatio%2A> is 2, the <xref:System.Windows.Controls.ScrollViewer> will scroll 2 [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] for every [!INCLUDE[TLA#tla_dipixel](~/includes/tlasharptla-dipixel-md.md)] of the translate manipulation.  
-  
+When a user drags a finger across an object, it is considered a translate manipulation.  The <xref:System.Windows.Controls.ScrollViewer> uses that manipulation to scroll. The <xref:System.Windows.Controls.ScrollViewer.PanningRatio%2A> property specifies how much the <xref:System.Windows.Controls.ScrollViewer> scrolls for each unit of translation.  For example, if <xref:System.Windows.Controls.ScrollViewer.PanningRatio%2A> is 2, the <xref:System.Windows.Controls.ScrollViewer> will scroll 2 [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] for every [!INCLUDE[TLA#tla_dipixel](~/includes/tlasharptla-dipixel-md.md)] of the translate manipulation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1551,18 +1551,18 @@
         <value>A <see cref="T:System.Double" /> that represents the vertical size of the content element that can be scrolled. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `true`, the values of the <xref:System.Windows.Controls.ScrollViewer.ExtentHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ScrollableHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A>, and <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> properties are number of items. If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `false`, the values of these properties are Device Independent Pixels.  
-  
+If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `true`, the values of the <xref:System.Windows.Controls.ScrollViewer.ExtentHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ScrollableHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A>, and <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> properties are number of items. If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `false`, the values of these properties are Device Independent Pixels.  
+ 
 <a name="dependencyPropertyInfo_ScrollableHeight"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ScrollViewer.ScrollableHeightProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1601,17 +1601,17 @@
         <value>A <see cref="T:System.Double" /> that represents the horizontal size of the content element that can be scrolled. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_ScrollableWidth"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ScrollViewer.ScrollableWidthProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1654,18 +1654,18 @@
         <summary>Occurs when changes are detected to the scroll position, extent, or viewport size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="routedEventInfo_ScrollChanged"></a>   
 ## Routed Event Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ScrollViewer.ScrollChangedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.Controls.ScrollChangedEventHandler>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1722,12 +1722,12 @@
         <summary>Scrolls vertically to the end of the <see cref="T:System.Windows.Controls.ScrollViewer" /> content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
-  
- Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
+ 
+Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1749,14 +1749,14 @@
         <summary>Scrolls vertically to the end of the <see cref="T:System.Windows.Controls.ScrollViewer" /> content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method scrolls to both the vertical and horizontal end points of the content.  
-  
- This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
-  
- Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+This method scrolls to both the vertical and horizontal end points of the content.  
+ 
+This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
+ 
+Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1778,12 +1778,12 @@
         <summary>Scrolls vertically to the beginning of the <see cref="T:System.Windows.Controls.ScrollViewer" /> content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
-  
- Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
+ 
+Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1826,12 +1826,12 @@
         <summary>Scrolls horizontally to the beginning of the <see cref="T:System.Windows.Controls.ScrollViewer" /> content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
-  
- Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
+ 
+Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1853,12 +1853,12 @@
         <summary>Scrolls horizontally to the end of the <see cref="T:System.Windows.Controls.ScrollViewer" /> content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
-  
- Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
+ 
+Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1880,12 +1880,12 @@
         <summary>Scrolls vertically to the beginning of the <see cref="T:System.Windows.Controls.ScrollViewer" /> content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
-  
- Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+This method does not induce any scrolling behavior if <xref:System.Windows.Controls.ScrollViewer.ScrollInfo%2A> is `null`.  
+ 
+Logical scrolling is used to scroll to the next element in the logical tree. This differs from physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.Panel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1980,10 +1980,10 @@
         <summary>Sets the <see cref="P:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled" /> property for the specified object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Displaying a large number of items may cause performance issues.  In this case, it might be useful to use deferred scrolling.  For more information, see [Optimizing Performance: Controls](~/docs/framework/wpf/advanced/optimizing-performance-controls.md).  
-  
+Displaying a large number of items may cause performance issues.  In this case, it might be useful to use deferred scrolling.  For more information, see [Optimizing Performance: Controls](~/docs/framework/wpf/advanced/optimizing-performance-controls.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2097,24 +2097,24 @@
         <value>A <see cref="T:System.Double" /> that represents the vertical offset of the scrolled content. The default is 0.0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A positive <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> value corresponds to the content being offset to the top.  
-  
- Valid values are between zero and the <xref:System.Windows.Controls.ScrollViewer.ExtentHeight%2A> minus the <xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A>.  
-  
- If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `true`, the values of the <xref:System.Windows.Controls.ScrollViewer.ExtentHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ScrollableHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A>, and <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> properties are number of items. If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `false`, the values of these properties are Device Independent Pixels.  
-  
- Beginning in the .NET Framework version 3.5 SP1, when <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> is `true`, <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> continues to change as the user drags the <xref:System.Windows.Controls.Primitives.Thumb>, but the content view doesn't change until the <xref:System.Windows.Controls.Primitives.Thumb> is released.  In this case, <xref:System.Windows.Controls.ScrollViewer.ContentVerticalOffset%2A> represents the visible content offset and <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> represents the content offset based on the <xref:System.Windows.Controls.Primitives.Thumb> position.  
-  
+A positive <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> value corresponds to the content being offset to the top.  
+ 
+Valid values are between zero and the <xref:System.Windows.Controls.ScrollViewer.ExtentHeight%2A> minus the <xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A>.  
+ 
+If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `true`, the values of the <xref:System.Windows.Controls.ScrollViewer.ExtentHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ScrollableHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A>, and <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> properties are number of items. If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `false`, the values of these properties are Device Independent Pixels.  
+ 
+Beginning in the .NET Framework version 3.5 SP1, when <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> is `true`, <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> continues to change as the user drags the <xref:System.Windows.Controls.Primitives.Thumb>, but the content view doesn't change until the <xref:System.Windows.Controls.Primitives.Thumb> is released.  In this case, <xref:System.Windows.Controls.ScrollViewer.ContentVerticalOffset%2A> represents the visible content offset and <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> represents the content offset based on the <xref:System.Windows.Controls.Primitives.Thumb> position.  
+ 
 <a name="dependencyPropertyInfo_VerticalOffset"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ScrollViewer.VerticalOffsetProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2161,17 +2161,17 @@
         <value>A <see cref="T:System.Windows.Controls.ScrollBarVisibility" /> value that indicates whether a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> should be displayed. The default is <see cref="F:System.Windows.Controls.ScrollBarVisibility.Visible" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_VerticalScrollBarVisibility"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2215,22 +2215,22 @@
         <value>A <see cref="T:System.Double" /> that represents the vertical size of the content's viewport. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The viewport is the visible area of the content.  
-  
- <xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A> is only an output property; it can effectively be set by specifying the <xref:System.Windows.FrameworkElement.Height%2A> of the content element.  
-  
- If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `true`, the values of the <xref:System.Windows.Controls.ScrollViewer.ExtentHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ScrollableHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A>, and <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> properties are number of items. If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `false`, the values of these properties are Device Independent Pixels.  
-  
+The viewport is the visible area of the content.  
+ 
+<xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A> is only an output property; it can effectively be set by specifying the <xref:System.Windows.FrameworkElement.Height%2A> of the content element.  
+ 
+If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `true`, the values of the <xref:System.Windows.Controls.ScrollViewer.ExtentHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ScrollableHeight%2A>, <xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A>, and <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A> properties are number of items. If <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> is `false`, the values of these properties are Device Independent Pixels.  
+ 
 <a name="dependencyPropertyInfo_ViewportHeight"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ScrollViewer.ViewportHeightProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2274,18 +2274,18 @@
         <value>A <see cref="T:System.Double" /> that represents the horizontal size of the content's viewport. The default is 0.0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The viewport is the visible area of the content.  
-  
+The viewport is the visible area of the content.  
+ 
 <a name="dependencyPropertyInfo_ViewportWidth"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ScrollViewer.ViewportWidthProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

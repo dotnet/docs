@@ -14,12 +14,12 @@
     <summary>The <see cref="T:System.DirectoryServices.ActiveDirectoryAccessRule" /> class is used to represent an access control entry (ACE) in the discretionary access control list (DACL) of an Active Directory Domain Services object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DirectoryServices.ActiveDirectoryAccessRule> class contains properties of the access rule such as the trustee, access control type, access mask, and inheritance flags. This type of access rule is set on an <xref:System.DirectoryServices.ActiveDirectorySecurity> object.  
-  
- After the <xref:System.DirectoryServices.ActiveDirectorySecurity> object is committed to the directory store, it will modify the security descriptor of the object according to the rules set on the <xref:System.DirectoryServices.ActiveDirectoryAccessRule> object.  
-  
+The <xref:System.DirectoryServices.ActiveDirectoryAccessRule> class contains properties of the access rule such as the trustee, access control type, access mask, and inheritance flags. This type of access rule is set on an <xref:System.DirectoryServices.ActiveDirectorySecurity> object.  
+ 
+After the <xref:System.DirectoryServices.ActiveDirectorySecurity> object is committed to the directory store, it will modify the security descriptor of the object according to the rules set on the <xref:System.DirectoryServices.ActiveDirectoryAccessRule> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>

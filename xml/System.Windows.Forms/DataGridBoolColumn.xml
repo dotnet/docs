@@ -14,21 +14,21 @@
     <summary>Specifies a column in which each cell contains a check box for representing a Boolean value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridBoolColumn> derives from the `abstract` class <xref:System.Windows.Forms.DataGridColumnStyle>. At run time, the <xref:System.Windows.Forms.DataGridBoolColumn> contains check boxes in each cell that have three states by default: checked (`true`), unchecked (`false`), and <xref:System.DBNull.Value>. To use two-state check boxes, set the <xref:System.Windows.Forms.DataGridBoolColumn.AllowNull%2A> property to `false`.  
+The <xref:System.Windows.Forms.DataGridBoolColumn> derives from the `abstract` class <xref:System.Windows.Forms.DataGridColumnStyle>. At run time, the <xref:System.Windows.Forms.DataGridBoolColumn> contains check boxes in each cell that have three states by default: checked (`true`), unchecked (`false`), and <xref:System.DBNull.Value>. To use two-state check boxes, set the <xref:System.Windows.Forms.DataGridBoolColumn.AllowNull%2A> property to `false`.  
+ 
+Properties added to the class include <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A>. These properties specify the value underlying each of the column's states.  
+ 
   
- Properties added to the class include <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A>. These properties specify the value underlying each of the column's states.  
-  
-   
-  
+ 
 ## Examples  
- The following code example first creates a new <xref:System.Windows.Forms.DataGridBoolColumn> and adds it to the <xref:System.Windows.Forms.GridColumnStylesCollection> of a <xref:System.Windows.Forms.DataGridTableStyle>.  
-  
- [!code-cpp[DataGridBoolColumn overview#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridBoolColumn overview/CPP/boolcolumn.cpp#1)]
- [!code-csharp[DataGridBoolColumn overview#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridBoolColumn overview/CS/boolcolumn.cs#1)]
- [!code-vb[DataGridBoolColumn overview#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridBoolColumn overview/VB/boolcolumn.vb#1)]  
-  
+The following code example first creates a new <xref:System.Windows.Forms.DataGridBoolColumn> and adds it to the <xref:System.Windows.Forms.GridColumnStylesCollection> of a <xref:System.Windows.Forms.DataGridTableStyle>.  
+ 
+[!code-cpp[DataGridBoolColumn overview#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridBoolColumn overview/CPP/boolcolumn.cpp#1)]
+[!code-csharp[DataGridBoolColumn overview#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridBoolColumn overview/CS/boolcolumn.cs#1)]
+[!code-vb[DataGridBoolColumn overview#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridBoolColumn overview/VB/boolcolumn.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,19 +47,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When using this overload to create a <xref:System.Windows.Forms.DataGridBoolColumn>, be sure to set the <xref:System.Windows.Forms.DataGridColumnStyle.MappingName%2A> value to the <xref:System.Data.DataColumn.ColumnName%2A> of a <xref:System.Data.DataColumn>.  
+When using this overload to create a <xref:System.Windows.Forms.DataGridBoolColumn>, be sure to set the <xref:System.Windows.Forms.DataGridColumnStyle.MappingName%2A> value to the <xref:System.Data.DataColumn.ColumnName%2A> of a <xref:System.Data.DataColumn>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example first creates a new <xref:System.Windows.Forms.DataGridBoolColumn> and adds it to the <xref:System.Windows.Forms.GridColumnStylesCollection> of a <xref:System.Windows.Forms.DataGridTableStyle>.  
-  
- [!code-cpp[Classic DataGridBoolColumn Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataGridBoolColumn Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn Example/CS/source.cs#1)]
- [!code-vb[Classic DataGridBoolColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridBoolColumn Example/VB/source.vb#1)]  
-  
+The following code example first creates a new <xref:System.Windows.Forms.DataGridBoolColumn> and adds it to the <xref:System.Windows.Forms.GridColumnStylesCollection> of a <xref:System.Windows.Forms.DataGridTableStyle>.  
+ 
+[!code-cpp[Classic DataGridBoolColumn Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataGridBoolColumn Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn Example/CS/source.cs#1)]
+[!code-vb[Classic DataGridBoolColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridBoolColumn Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,21 +81,21 @@
         <summary>Initializes a new instance of a <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> with the specified <see cref="T:System.ComponentModel.PropertyDescriptor" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridBoolColumn> must be associated with a data source that contains <xref:System.Boolean> values.  
+The <xref:System.Windows.Forms.DataGridBoolColumn> must be associated with a data source that contains <xref:System.Boolean> values.  
+ 
+To get a <xref:System.ComponentModel.PropertyDescriptor>, first use the <xref:System.Windows.Forms.BindingContext> to return the appropriate <xref:System.Windows.Forms.BindingManagerBase>. Then use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> to return a <xref:System.ComponentModel.PropertyDescriptorCollection>. Finally, use the <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property of the <xref:System.ComponentModel.PropertyDescriptorCollection> to return the specific <xref:System.ComponentModel.PropertyDescriptor> for the column.  
+ 
   
- To get a <xref:System.ComponentModel.PropertyDescriptor>, first use the <xref:System.Windows.Forms.BindingContext> to return the appropriate <xref:System.Windows.Forms.BindingManagerBase>. Then use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> to return a <xref:System.ComponentModel.PropertyDescriptorCollection>. Finally, use the <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property of the <xref:System.ComponentModel.PropertyDescriptorCollection> to return the specific <xref:System.ComponentModel.PropertyDescriptor> for the column.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method to return a <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=fullName> for a <xref:System.Data.DataTable>. The <xref:System.ComponentModel.PropertyDescriptor> for a <xref:System.Data.DataColumn> is then used to create the <xref:System.Windows.Forms.DataGridBoolColumn>.  
-  
- [!code-cpp[Classic DataGridBoolColumn.DataGridBoolColumn1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn.DataGridBoolColumn1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataGridBoolColumn.DataGridBoolColumn1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn.DataGridBoolColumn1 Example/CS/source.cs#1)]
- [!code-vb[Classic DataGridBoolColumn.DataGridBoolColumn1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridBoolColumn.DataGridBoolColumn1 Example/VB/source.vb#1)]  
-  
+The following code example uses the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method to return a <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=fullName> for a <xref:System.Data.DataTable>. The <xref:System.ComponentModel.PropertyDescriptor> for a <xref:System.Data.DataColumn> is then used to create the <xref:System.Windows.Forms.DataGridBoolColumn>.  
+ 
+[!code-cpp[Classic DataGridBoolColumn.DataGridBoolColumn1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn.DataGridBoolColumn1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataGridBoolColumn.DataGridBoolColumn1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn.DataGridBoolColumn1 Example/CS/source.cs#1)]
+[!code-vb[Classic DataGridBoolColumn.DataGridBoolColumn1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridBoolColumn.DataGridBoolColumn1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <summary>Initializes a new instance of a <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> with the specified <see cref="T:System.ComponentModel.PropertyDescriptor" />, and specifying whether the column style is a default column.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get a <xref:System.ComponentModel.PropertyDescriptor>, first use the <xref:System.Windows.Forms.BindingContext> to return the appropriate <xref:System.Windows.Forms.BindingManagerBase>. Then use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> to return a <xref:System.ComponentModel.PropertyDescriptorCollection>. Finally, use the <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property of the <xref:System.ComponentModel.PropertyDescriptorCollection> to return the specific <xref:System.ComponentModel.PropertyDescriptor> for the column.  
-  
+To get a <xref:System.ComponentModel.PropertyDescriptor>, first use the <xref:System.Windows.Forms.BindingContext> to return the appropriate <xref:System.Windows.Forms.BindingManagerBase>. Then use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> to return a <xref:System.ComponentModel.PropertyDescriptorCollection>. Finally, use the <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property of the <xref:System.ComponentModel.PropertyDescriptorCollection> to return the specific <xref:System.ComponentModel.PropertyDescriptor> for the column.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,19 +172,19 @@
           <see langword="true" /> if null values are allowed, otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to false, the check boxes in the column have only two states: checked (`true`) and unchecked (`false`).  
+When this property is set to false, the check boxes in the column have only two states: checked (`true`) and unchecked (`false`).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example sets the <xref:System.Windows.Forms.DataGridBoolColumn.AllowNull%2A> property.  
-  
- [!code-cpp[Classic DataGridBoolColumn.AllowNull Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn.AllowNull Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataGridBoolColumn.AllowNull Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn.AllowNull Example/CS/source.cs#1)]
- [!code-vb[Classic DataGridBoolColumn.AllowNull Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridBoolColumn.AllowNull Example/VB/source.vb#1)]  
-  
+The following code example sets the <xref:System.Windows.Forms.DataGridBoolColumn.AllowNull%2A> property.  
+ 
+[!code-cpp[Classic DataGridBoolColumn.AllowNull Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn.AllowNull Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataGridBoolColumn.AllowNull Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn.AllowNull Example/CS/source.cs#1)]
+[!code-vb[Classic DataGridBoolColumn.AllowNull Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridBoolColumn.AllowNull Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,14 +205,14 @@
         <summary>Occurs when the <see cref="P:System.Windows.Forms.DataGridBoolColumn.AllowNull" /> property is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-cpp[DataGridBoolColumn#2](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridBoolColumn/CPP/datagridboolcolumn.cpp#2)]
- [!code-csharp[DataGridBoolColumn#2](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridBoolColumn/CS/datagridboolcolumn.cs#2)]
- [!code-vb[DataGridBoolColumn#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridBoolColumn/VB/datagridboolcolumn.vb#2)]  
-  
+The following code example demonstrates the use of this member.  
+ 
+[!code-cpp[DataGridBoolColumn#2](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridBoolColumn/CPP/datagridboolcolumn.cpp#2)]
+[!code-csharp[DataGridBoolColumn#2](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridBoolColumn/CS/datagridboolcolumn.cs#2)]
+[!code-vb[DataGridBoolColumn#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridBoolColumn/VB/datagridboolcolumn.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -292,10 +292,10 @@
         <summary>Prepares the cell for editing a value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike the typical implementation of this method (as described in the <xref:System.Windows.Forms.DataGridColumnStyle> class), the <xref:System.Windows.Forms.DataGridBoolColumn.Edit%2A> method does not site a control for editing the cell value. Instead, a check box is drawn when the <xref:System.Windows.Forms.DataGridBoolColumn.Paint%2A> method is called.  
-  
+Unlike the typical implementation of this method (as described in the <xref:System.Windows.Forms.DataGridColumnStyle> class), the <xref:System.Windows.Forms.DataGridBoolColumn.Edit%2A> method does not site a control for editing the cell value. Instead, a check box is drawn when the <xref:System.Windows.Forms.DataGridBoolColumn.Paint%2A> method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -317,19 +317,19 @@
         <summary>Enters a <see cref="F:System.DBNull.Value" /> into the column.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set the actual value used when entering a null value, use the <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A> property.  
+To set the actual value used when entering a null value, use the <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.DataGridBoolColumn.EnterNullValue%2A> to enter a null value into the column.  
-  
- [!code-cpp[Classic DataGridBoolColumn.EnterNullValue Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn.EnterNullValue Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataGridBoolColumn.EnterNullValue Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn.EnterNullValue Example/CS/source.cs#1)]
- [!code-vb[Classic DataGridBoolColumn.EnterNullValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridBoolColumn.EnterNullValue Example/VB/source.vb#1)]  
-  
+The following code example uses the <xref:System.Windows.Forms.DataGridBoolColumn.EnterNullValue%2A> to enter a null value into the column.  
+ 
+[!code-cpp[Classic DataGridBoolColumn.EnterNullValue Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn.EnterNullValue Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataGridBoolColumn.EnterNullValue Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn.EnterNullValue Example/CS/source.cs#1)]
+[!code-vb[Classic DataGridBoolColumn.EnterNullValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridBoolColumn.EnterNullValue Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The <see cref="P:System.Windows.Forms.DataGridBoolColumn.AllowNull" /> property is set to <see langword="false" />.</exception>
@@ -360,19 +360,19 @@
         <value>The value, typed as <see cref="T:System.Object" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A> properties determine the actual values pushed into the data source.  
+The <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A> properties determine the actual values pushed into the data source.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example sets the <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A> properties of a <xref:System.Windows.Forms.DataGridBoolColumn>.  
-  
- [!code-cpp[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/CS/source.cs#1)]
- [!code-vb[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/VB/source.vb#1)]  
-  
+The following code example sets the <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A> properties of a <xref:System.Windows.Forms.DataGridBoolColumn>.  
+ 
+[!code-cpp[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/CS/source.cs#1)]
+[!code-vb[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -393,14 +393,14 @@
         <summary>Occurs when the <see cref="P:System.Windows.Forms.DataGridBoolColumn.FalseValue" /> property is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-cpp[DataGridBoolColumn#3](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridBoolColumn/CPP/datagridboolcolumn.cpp#3)]
- [!code-csharp[DataGridBoolColumn#3](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridBoolColumn/CS/datagridboolcolumn.cs#3)]
- [!code-vb[DataGridBoolColumn#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridBoolColumn/VB/datagridboolcolumn.vb#3)]  
-  
+The following code example demonstrates the use of this member.  
+ 
+[!code-cpp[DataGridBoolColumn#3](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridBoolColumn/CPP/datagridboolcolumn.cpp#3)]
+[!code-csharp[DataGridBoolColumn#3](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridBoolColumn/CS/datagridboolcolumn.cs#3)]
+[!code-vb[DataGridBoolColumn#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridBoolColumn/VB/datagridboolcolumn.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -495,10 +495,10 @@
         <returns>A <see cref="T:System.Drawing.Size" /> that contains the drawing information for the cell.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridBoolColumn.GetPreferredSize%2A> method allows you to resize the column based on the value displayed. For example, if a cell contains an especially large value, you can use the <xref:System.Windows.Forms.DataGridBoolColumn.GetPreferredSize%2A> method to return the optimum size of the cell based on the value. The optimum size takes into account not only the size of the string, but also the font used to display it.  
-  
+The <xref:System.Windows.Forms.DataGridBoolColumn.GetPreferredSize%2A> method allows you to resize the column based on the value displayed. For example, if a cell contains an especially large value, you can use the <xref:System.Windows.Forms.DataGridBoolColumn.GetPreferredSize%2A> method to return the optimum size of the cell based on the value. The optimum size takes into account not only the size of the string, but also the font used to display it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -525,23 +525,23 @@
         <value>The value, typed as <see cref="T:System.Object" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can also specify what text will be displayed by setting the <xref:System.Windows.Forms.DataGridColumnStyle.NullText%2A> property.  
+You can also specify what text will be displayed by setting the <xref:System.Windows.Forms.DataGridColumnStyle.NullText%2A> property.  
+ 
+The <xref:System.Windows.Forms.DataGridBoolColumn.AllowNull%2A> property must be set to true to enter null values.  
+ 
+The <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A> properties determine the actual values pushed into the data source.  
+ 
   
- The <xref:System.Windows.Forms.DataGridBoolColumn.AllowNull%2A> property must be set to true to enter null values.  
-  
- The <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A> properties determine the actual values pushed into the data source.  
-  
-   
-  
+ 
 ## Examples  
- The following code example sets the <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A> properties of a <xref:System.Windows.Forms.DataGridBoolColumn>.  
-  
- [!code-cpp[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/CS/source.cs#1)]
- [!code-vb[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/VB/source.vb#1)]  
-  
+The following code example sets the <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A> properties of a <xref:System.Windows.Forms.DataGridBoolColumn>.  
+ 
+[!code-cpp[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/CS/source.cs#1)]
+[!code-vb[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -572,10 +572,10 @@
         <summary>Draws the <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> with the given <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" /> and row number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method paints the background with the background color in the graphics object passed in.  
-  
+This method paints the background with the background color in the graphics object passed in.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -641,10 +641,10 @@
         <summary>Draws the <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> with the given <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, row number, <see cref="T:System.Drawing.Brush" />, and <see cref="T:System.Drawing.Color" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Paints the check box in the column.  
-  
+Paints the check box in the column.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -699,19 +699,19 @@
         <value>The value, typed as <see cref="T:System.Object" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A> properties determine the actual values pushed into the data source.  
+The <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A> properties determine the actual values pushed into the data source.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example sets the <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A> properties of a <xref:System.Windows.Forms.DataGridBoolColumn>.  
-  
- [!code-cpp[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/CS/source.cs#1)]
- [!code-vb[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/VB/source.vb#1)]  
-  
+The following code example sets the <xref:System.Windows.Forms.DataGridBoolColumn.TrueValue%2A>, <xref:System.Windows.Forms.DataGridBoolColumn.FalseValue%2A>, and <xref:System.Windows.Forms.DataGridBoolColumn.NullValue%2A> properties of a <xref:System.Windows.Forms.DataGridBoolColumn>.  
+ 
+[!code-cpp[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/CS/source.cs#1)]
+[!code-vb[Classic DataGridBoolColumn.TrueValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridBoolColumn.TrueValue Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -732,19 +732,19 @@
         <summary>Occurs when the <see cref="P:System.Windows.Forms.DataGridBoolColumn.TrueValue" /> property value is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-cpp[DataGridBoolColumn#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridBoolColumn/CPP/datagridboolcolumn.cpp#1)]
- [!code-csharp[DataGridBoolColumn#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridBoolColumn/CS/datagridboolcolumn.cs#1)]
- [!code-vb[DataGridBoolColumn#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridBoolColumn/VB/datagridboolcolumn.vb#1)]  
-  
+The following code example demonstrates the use of this member.  
+ 
+[!code-cpp[DataGridBoolColumn#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridBoolColumn/CPP/datagridboolcolumn.cpp#1)]
+[!code-csharp[DataGridBoolColumn#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridBoolColumn/CS/datagridboolcolumn.cs#1)]
+[!code-vb[DataGridBoolColumn#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridBoolColumn/VB/datagridboolcolumn.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

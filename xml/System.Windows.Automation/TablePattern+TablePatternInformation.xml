@@ -32,13 +32,13 @@
         <value>The total number of columns in a table. The default value is zero.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.TablePattern> object obtained from a target control is passed into a function that retrieves the current <xref:System.Windows.Automation.TablePattern> property values.  
-  
- [!code-csharp[UIATablePattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#103)]
- [!code-vb[UIATablePattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#103)]  
-  
+In the following example, a <xref:System.Windows.Automation.TablePattern> object obtained from a target control is passed into a function that retrieves the current <xref:System.Windows.Automation.TablePattern> property values.  
+ 
+[!code-csharp[UIATablePattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#103)]
+[!code-vb[UIATablePattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#103)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -61,15 +61,15 @@
         <returns>A collection of <see cref="T:System.Windows.Automation.AutomationElement" />s. The default is an empty array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, the row or column header is retrieved for a specific table item.  
-  
- For the purposes of this example, a relationship between the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property and the row and column header items is demonstrated. However, a table can have row and column headers regardless of the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property of the table.  
-  
- [!code-csharp[UIATablePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#102)]
- [!code-vb[UIATablePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#102)]  
-  
+In the following example, the row or column header is retrieved for a specific table item.  
+ 
+For the purposes of this example, a relationship between the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property and the row and column header items is demonstrated. However, a table can have row and column headers regardless of the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property of the table.  
+ 
+[!code-csharp[UIATablePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#102)]
+[!code-vb[UIATablePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#102)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,15 +92,15 @@
         <returns>A collection of <see cref="T:System.Windows.Automation.AutomationElement" />s. The default is an empty array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, the row or column header is retrieved for a specific table item.  
-  
- For the purposes of this example, a relationship between the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property and the row and column header items is demonstrated. However, a table can have row and column headers regardless of the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property of the table.  
-  
- [!code-csharp[UIATablePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#102)]
- [!code-vb[UIATablePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#102)]  
-  
+In the following example, the row or column header is retrieved for a specific table item.  
+ 
+For the purposes of this example, a relationship between the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property and the row and column header items is demonstrated. However, a table can have row and column headers regardless of the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property of the table.  
+ 
+[!code-csharp[UIATablePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#102)]
+[!code-vb[UIATablePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#102)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,13 +122,13 @@
         <value>The total number of rows in a table. The default value is zero.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.TablePattern> object obtained from a target control is passed into a function that retrieves the current <xref:System.Windows.Automation.TablePattern> property values.  
-  
- [!code-csharp[UIATablePattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#103)]
- [!code-vb[UIATablePattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#103)]  
-  
+In the following example, a <xref:System.Windows.Automation.TablePattern> object obtained from a target control is passed into a function that retrieves the current <xref:System.Windows.Automation.TablePattern> property values.  
+ 
+[!code-csharp[UIATablePattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#103)]
+[!code-vb[UIATablePattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#103)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,15 +150,15 @@
         <value>The primary direction of traversal. The default is <see cref="F:System.Windows.Automation.RowOrColumnMajor.Indeterminate" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, the row or column header is retrieved for a specific table item.  
-  
- For the purposes of this example, a relationship between the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property and the row and column header items is demonstrated. However, a table can have row and column headers regardless of the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property of the table.  
-  
- [!code-csharp[UIATablePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#102)]
- [!code-vb[UIATablePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#102)]  
-  
+In the following example, the row or column header is retrieved for a specific table item.  
+ 
+For the purposes of this example, a relationship between the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property and the row and column header items is demonstrated. However, a table can have row and column headers regardless of the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property of the table.  
+ 
+[!code-csharp[UIATablePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#102)]
+[!code-vb[UIATablePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#102)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

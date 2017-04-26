@@ -19,25 +19,25 @@
     <summary>Provides data for the <see cref="E:System.Net.WebClient.UploadFileCompleted" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of this class are passed to the <xref:System.Net.UploadFileCompletedEventHandler>.  
+Instances of this class are passed to the <xref:System.Net.UploadFileCompletedEventHandler>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates asynchronously uploading a file.  
-  
- [!code-cpp[NCLWebClientAsync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebClientAsync/CPP/asyncmethods.cpp#4)]
- [!code-csharp[NCLWebClientAsync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsync/CS/asyncmethods.cs#4)]
- [!code-vb[NCLWebClientAsync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsync/VB/asyncmethods.vb#4)]  
-  
- The following method is called when the upload completes.  
-  
- [!code-cpp[NCLWebClientAsync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebClientAsync/CPP/asyncmethods.cpp#5)]
- [!code-csharp[NCLWebClientAsync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsync/CS/asyncmethods.cs#5)]
- [!code-vb[NCLWebClientAsync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsync/VB/asyncmethods.vb#5)]  
-  
+The following code example demonstrates asynchronously uploading a file.  
+ 
+[!code-cpp[NCLWebClientAsync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebClientAsync/CPP/asyncmethods.cpp#4)]
+[!code-csharp[NCLWebClientAsync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsync/CS/asyncmethods.cs#4)]
+[!code-vb[NCLWebClientAsync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsync/VB/asyncmethods.vb#4)]  
+ 
+The following method is called when the upload completes.  
+ 
+[!code-cpp[NCLWebClientAsync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebClientAsync/CPP/asyncmethods.cpp#5)]
+[!code-csharp[NCLWebClientAsync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsync/CS/asyncmethods.cs#5)]
+[!code-vb[NCLWebClientAsync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsync/VB/asyncmethods.vb#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,19 +64,19 @@
         <value>A <see cref="T:System.Byte" /> array that contains the server reply.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> and <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> properties to determine whether the upload completed. If the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property's value is an <xref:System.Exception> object or the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property's value is `true`, the asynchronous operation did not complete correctly and the <xref:System.Net.UploadFileCompletedEventArgs.Result%2A> property's value will not be valid.  
+You should check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> and <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> properties to determine whether the upload completed. If the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property's value is an <xref:System.Exception> object or the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property's value is `true`, the asynchronous operation did not complete correctly and the <xref:System.Net.UploadFileCompletedEventArgs.Result%2A> property's value will not be valid.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the value of this property.  
-  
- [!code-cpp[NCLWebClientAsync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebClientAsync/CPP/asyncmethods.cpp#5)]
- [!code-csharp[NCLWebClientAsync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsync/CS/asyncmethods.cs#5)]
- [!code-vb[NCLWebClientAsync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsync/VB/asyncmethods.vb#5)]  
-  
+The following code example displays the value of this property.  
+ 
+[!code-cpp[NCLWebClientAsync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebClientAsync/CPP/asyncmethods.cpp#5)]
+[!code-csharp[NCLWebClientAsync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsync/CS/asyncmethods.cs#5)]
+[!code-vb[NCLWebClientAsync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsync/VB/asyncmethods.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -36,10 +36,10 @@
         <returns>The new stream with the specified <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.IO.Packaging.StorageInfo.CreateStream%2A> method creates a new stream with <xref:System.IO.Packaging.StreamInfo> default settings set to CompressionOption.<xref:System.IO.Packaging.CompressionOption> and EncryptionOption.<xref:System.IO.Packaging.EncryptionOption>.  
-  
+This <xref:System.IO.Packaging.StorageInfo.CreateStream%2A> method creates a new stream with <xref:System.IO.Packaging.StreamInfo> default settings set to CompressionOption.<xref:System.IO.Packaging.CompressionOption> and EncryptionOption.<xref:System.IO.Packaging.EncryptionOption>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,10 +135,10 @@
         <summary>Deletes a specified sub-store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified sub-store itself contains child sub-stores, <xref:System.IO.Packaging.StorageInfo.DeleteSubStorage%2A> also recursively deletes all descendant sub-stores.  
-  
+If the specified sub-store itself contains child sub-stores, <xref:System.IO.Packaging.StorageInfo.DeleteSubStorage%2A> also recursively deletes all descendant sub-stores.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -185,12 +185,12 @@
         <returns>An array of the <see cref="T:System.IO.Packaging.StreamInfo" /> objects, each pointing to an I/O steam defined within this store.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IO.Packaging.StorageInfo.GetStreams%2A> will always return a <xref:System.IO.Packaging.StreamInfo> array, but the array may be empty (zero-length) if there are no streams defined in the store.  
-  
- <xref:System.IO.Packaging.StorageInfo.GetStreams%2A> provides a snapshot of the streams currently defined in the store.  The individual <xref:System.IO.Packaging.StreamInfo> objects will reflect the updated state of their respective streams, but the returned array will not be updated with any additions or deletions.  Call <xref:System.IO.Packaging.StorageInfo.GetStreams%2A> again to obtain an updated array as streams added or deleted to the store.  
-  
+<xref:System.IO.Packaging.StorageInfo.GetStreams%2A> will always return a <xref:System.IO.Packaging.StreamInfo> array, but the array may be empty (zero-length) if there are no streams defined in the store.  
+ 
+<xref:System.IO.Packaging.StorageInfo.GetStreams%2A> provides a snapshot of the streams currently defined in the store.  The individual <xref:System.IO.Packaging.StreamInfo> objects will reflect the updated state of their respective streams, but the returned array will not be updated with any additions or deletions.  Call <xref:System.IO.Packaging.StorageInfo.GetStreams%2A> again to obtain an updated array as streams added or deleted to the store.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -236,12 +236,12 @@
         <returns>An array of <see cref="T:System.IO.Packaging.StorageInfo" /> objects, each pointing to a sub-store defined within this store.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IO.Packaging.StorageInfo.GetSubStorages%2A> will always return a <xref:System.IO.Packaging.StorageInfo> array, but the array may be empty (zero-length) if there are no sub-stores.  
-  
- <xref:System.IO.Packaging.StorageInfo.GetSubStorages%2A> provides a snapshot of the sub-stores currently defined in this store.  The individual <xref:System.IO.Packaging.StorageInfo> objects will reflect the updated state of their respective stores, but the returned array will not be updated with any additions or deletions.  Call <xref:System.IO.Packaging.StorageInfo.GetSubStorages%2A> again to obtain an updated array as sub-stores added or deleted to the store.  
-  
+<xref:System.IO.Packaging.StorageInfo.GetSubStorages%2A> will always return a <xref:System.IO.Packaging.StorageInfo> array, but the array may be empty (zero-length) if there are no sub-stores.  
+ 
+<xref:System.IO.Packaging.StorageInfo.GetSubStorages%2A> provides a snapshot of the sub-stores currently defined in this store.  The individual <xref:System.IO.Packaging.StorageInfo> objects will reflect the updated state of their respective stores, but the returned array will not be updated with any additions or deletions.  Call <xref:System.IO.Packaging.StorageInfo.GetSubStorages%2A> again to obtain an updated array as sub-stores added or deleted to the store.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,10 +263,10 @@
         <value>The name of this store.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of a sub-store is specified to the <xref:System.IO.Packaging.StorageInfo.CreateSubStorage%2A> method and cannot be changed after created.  
-  
+The name of a sub-store is specified to the <xref:System.IO.Packaging.StorageInfo.CreateSubStorage%2A> method and cannot be changed after created.  
+ 
  ]]></format>
         </remarks>
       </Docs>

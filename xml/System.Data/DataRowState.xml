@@ -23,18 +23,18 @@
     <summary>Gets the state of a <see cref="T:System.Data.DataRow" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataRowState> enumeration is returned by the <xref:System.Data.DataRow.RowState%2A> property of the <xref:System.Data.DataRow> class.  
+The <xref:System.Data.DataRowState> enumeration is returned by the <xref:System.Data.DataRow.RowState%2A> property of the <xref:System.Data.DataRow> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example first creates a new <xref:System.Data.DataTable> with one column, then creates a single <xref:System.Data.DataRow>. As the <xref:System.Data.DataRow> is created, added, modified, and deleted, its <xref:System.Data.DataRow.RowState%2A> is printed.  
-  
- [!code-csharp[Classic WebData DataRowState Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRowState Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataRowState Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRowState Example/VB/source.vb#1)]  
-  
+The following example first creates a new <xref:System.Data.DataTable> with one column, then creates a single <xref:System.Data.DataRow>. As the <xref:System.Data.DataRow> is created, added, modified, and deleted, its <xref:System.Data.DataRow.RowState%2A> is printed.  
+ 
+[!code-csharp[Classic WebData DataRowState Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRowState Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataRowState Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRowState Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

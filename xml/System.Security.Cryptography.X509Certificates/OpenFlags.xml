@@ -28,19 +28,19 @@
     <summary>Specifies the way to open the X.509 certificate store.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The ReadOnly, ReadWrite, and MaxAllowed flags are mutually exclusive. The OpenExistingOnly flag is the only flag that does not require the <xref:System.Security.Permissions.StorePermissionFlags> permission to be granted.  
+The ReadOnly, ReadWrite, and MaxAllowed flags are mutually exclusive. The OpenExistingOnly flag is the only flag that does not require the <xref:System.Security.Permissions.StorePermissionFlags> permission to be granted.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
+The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

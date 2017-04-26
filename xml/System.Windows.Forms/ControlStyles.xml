@@ -18,38 +18,38 @@
     <summary>Specifies the style and behavior of a control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Controls use this enumeration in various properties and methods to specify functionality. A control can enable a style by calling the <xref:System.Windows.Forms.Control.SetStyle%2A> method and passing in the appropriate <xref:System.Windows.Forms.ControlStyles> bit (or bits) and the Boolean value to set the bit(s) to. For example, the following line of Visual Basic code would enable double-buffering.  
-  
+Controls use this enumeration in various properties and methods to specify functionality. A control can enable a style by calling the <xref:System.Windows.Forms.Control.SetStyle%2A> method and passing in the appropriate <xref:System.Windows.Forms.ControlStyles> bit (or bits) and the Boolean value to set the bit(s) to. For example, the following line of Visual Basic code would enable double-buffering.  
+ 
 ```  
 myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)  
 ```  
-  
- If the AllPaintingInWmPaint bit is set to `true`, the window message WM_ERASEBKGND is ignored, and both <xref:System.Windows.Forms.Control.OnPaintBackground%2A> and <xref:System.Windows.Forms.Control.OnPaint%2A> methods are called directly from the window message WM_PAINT. This generally reduces flicker unless other controls send the window message WM_ERASEBKGND to the control. You might send the window message WM_ERASEBKGRND to achieve a pseudo-transparent effect similar to SupportsTransparentBackColor; for example, a <xref:System.Windows.Forms.ToolBar> with flat appearance does this.  
-  
- To fully enable double-buffering, you can set the OptimizedDoubleBuffer and AllPaintingInWmPaint bits to `true`. However the preferred method for enabling double buffering, which yields the same result, is to set the <xref:System.Windows.Forms.Control.DoubleBuffered%2A> property for the control to `true`.  
-  
- If the SupportsTransparentBackColor bit is set to `true`, and the <xref:System.Windows.Forms.Control.BackColor%2A> is set to a color whose alpha component is less than 255, <xref:System.Windows.Forms.Control.OnPaintBackground%2A> will simulate transparency by asking its parent control to paint the background. This is not true transparency.  
-  
+ 
+If the AllPaintingInWmPaint bit is set to `true`, the window message WM_ERASEBKGND is ignored, and both <xref:System.Windows.Forms.Control.OnPaintBackground%2A> and <xref:System.Windows.Forms.Control.OnPaint%2A> methods are called directly from the window message WM_PAINT. This generally reduces flicker unless other controls send the window message WM_ERASEBKGND to the control. You might send the window message WM_ERASEBKGRND to achieve a pseudo-transparent effect similar to SupportsTransparentBackColor; for example, a <xref:System.Windows.Forms.ToolBar> with flat appearance does this.  
+ 
+To fully enable double-buffering, you can set the OptimizedDoubleBuffer and AllPaintingInWmPaint bits to `true`. However the preferred method for enabling double buffering, which yields the same result, is to set the <xref:System.Windows.Forms.Control.DoubleBuffered%2A> property for the control to `true`.  
+ 
+If the SupportsTransparentBackColor bit is set to `true`, and the <xref:System.Windows.Forms.Control.BackColor%2A> is set to a color whose alpha component is less than 255, <xref:System.Windows.Forms.Control.OnPaintBackground%2A> will simulate transparency by asking its parent control to paint the background. This is not true transparency.  
+ 
 > [!NOTE]
 >  If there is another control between the control and its parent, the current control will not show the control in the middle.  
+ 
+When the UserMouse bit is set to `true`, the following methods are still called: <xref:System.Windows.Forms.Control.OnMouseDown%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.OnMouseUp%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.OnMouseEnter%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.OnMouseMove%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.OnMouseHover%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.OnMouseLeave%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Control.OnMouseWheel%2A?displayProperty=fullName>.  
+ 
+When the control is clicked, if the StandardClick bit is set to `true` the <xref:System.Windows.Forms.Control.OnClick%2A?displayProperty=fullName> method is called and it raises the <xref:System.Windows.Forms.Control.Click?displayProperty=fullName> event. When the control is double-clicked, and both the StandardClick and StandardDoubleClick bits are set to `true`, the click is passed on to the <xref:System.Windows.Forms.Control.DoubleClick> event. Then the <xref:System.Windows.Forms.Control.OnDoubleClick%2A?displayProperty=fullName> method is called and it raises the <xref:System.Windows.Forms.Control.DoubleClick?displayProperty=fullName> event. However, the control can call <xref:System.Windows.Forms.Control.OnClick%2A> or <xref:System.Windows.Forms.Control.OnDoubleClick%2A> directly regardless of the StandardClick and StandardDoubleClick bit values. For more information on control click and double click behaviors, see the <xref:System.Windows.Forms.Control.Click?displayProperty=fullName> and <xref:System.Windows.Forms.Control.DoubleClick?displayProperty=fullName> topics.  
+ 
+When the UseTextForAccessibility bit is set and there is a value in the control's `Text` property, the value of that control's `Text` property determines the control's default Active Accessibility name and shortcut key. Otherwise, the text of the preceding <xref:System.Windows.Forms.Label> control will be used instead. This style is set by default. Certain built-in control types, such as <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.ComboBox>, reset this style so that the `Text` property of those controls will not be used by Active Accessibility.  
+ 
   
- When the UserMouse bit is set to `true`, the following methods are still called: <xref:System.Windows.Forms.Control.OnMouseDown%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.OnMouseUp%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.OnMouseEnter%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.OnMouseMove%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.OnMouseHover%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.OnMouseLeave%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Control.OnMouseWheel%2A?displayProperty=fullName>.  
-  
- When the control is clicked, if the StandardClick bit is set to `true` the <xref:System.Windows.Forms.Control.OnClick%2A?displayProperty=fullName> method is called and it raises the <xref:System.Windows.Forms.Control.Click?displayProperty=fullName> event. When the control is double-clicked, and both the StandardClick and StandardDoubleClick bits are set to `true`, the click is passed on to the <xref:System.Windows.Forms.Control.DoubleClick> event. Then the <xref:System.Windows.Forms.Control.OnDoubleClick%2A?displayProperty=fullName> method is called and it raises the <xref:System.Windows.Forms.Control.DoubleClick?displayProperty=fullName> event. However, the control can call <xref:System.Windows.Forms.Control.OnClick%2A> or <xref:System.Windows.Forms.Control.OnDoubleClick%2A> directly regardless of the StandardClick and StandardDoubleClick bit values. For more information on control click and double click behaviors, see the <xref:System.Windows.Forms.Control.Click?displayProperty=fullName> and <xref:System.Windows.Forms.Control.DoubleClick?displayProperty=fullName> topics.  
-  
- When the UseTextForAccessibility bit is set and there is a value in the control's `Text` property, the value of that control's `Text` property determines the control's default Active Accessibility name and shortcut key. Otherwise, the text of the preceding <xref:System.Windows.Forms.Label> control will be used instead. This style is set by default. Certain built-in control types, such as <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.ComboBox>, reset this style so that the `Text` property of those controls will not be used by Active Accessibility.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates a use of <xref:System.Windows.Forms.ControlStyles> with the <xref:System.Windows.Forms.Control.StyleChanged> event.  
-  
- [!code-cpp[Control_StyleChanged#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control_StyleChanged/CPP/control_stylechanged.cpp#1)]
- [!code-csharp[Control_StyleChanged#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control_StyleChanged/CS/control_stylechanged.cs#1)]
- [!code-vb[Control_StyleChanged#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control_StyleChanged/VB/control_stylechanged.vb#1)]  
-  
+The following example demonstrates a use of <xref:System.Windows.Forms.ControlStyles> with the <xref:System.Windows.Forms.Control.StyleChanged> event.  
+ 
+[!code-cpp[Control_StyleChanged#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control_StyleChanged/CPP/control_stylechanged.cpp#1)]
+[!code-csharp[Control_StyleChanged#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control_StyleChanged/CS/control_stylechanged.cs#1)]
+[!code-vb[Control_StyleChanged#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control_StyleChanged/VB/control_stylechanged.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">

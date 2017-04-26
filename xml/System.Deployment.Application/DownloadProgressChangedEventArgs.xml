@@ -14,18 +14,18 @@
     <summary>Provides data for the <see cref="E:System.Deployment.Application.InPlaceHostingManager.DownloadProgressChanged" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a console application, since events are assigned to threads out of a thread pool, you might receive update progress events out of order, with a subsequent event showing a decrease compared to a previous event. You will not see such behavior in a Windows Forms application, because events in Windows Forms are processed sequentially out of the UI thread's message queue.  
+In a console application, since events are assigned to threads out of a thread pool, you might receive update progress events out of order, with a subsequent event showing a decrease compared to a previous event. You will not see such behavior in a Windows Forms application, because events in Windows Forms are processed sequentially out of the UI thread's message queue.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of <xref:System.Deployment.Application.DownloadProgressChangedEventArgs> in the context of an application that uses <xref:System.Deployment.Application.InPlaceHostingManager> to download and install a ClickOnce application programmatically.  
-  
- [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
- [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  
-  
+The following code example demonstrates the use of <xref:System.Deployment.Application.DownloadProgressChangedEventArgs> in the context of an application that uses <xref:System.Deployment.Application.InPlaceHostingManager> to download and install a ClickOnce application programmatically.  
+ 
+[!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
+[!code-vb[System.Deployment.Application.InPlaceHostingManager#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

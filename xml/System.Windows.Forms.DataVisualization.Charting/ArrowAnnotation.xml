@@ -14,12 +14,12 @@
     <summary>Represents an arrow annotation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Arrow annotations can be used to connect to points on the chart or to highlight a single chart area.  
-  
- Different arrow styles and sizes can be applied to the annotation.  
-  
+Arrow annotations can be used to connect to points on the chart or to highlight a single chart area.  
+ 
+Different arrow styles and sizes can be applied to the annotation.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,12 +67,12 @@
         <value>A <see cref="T:System.Drawing.ContentAlignment" /> enumeration value that represents the alignment of the annotation to the anchor point.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The annotation must be anchored using either <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A>, or the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorY%2A> properties.  
-  
- Its <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.X%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.Y%2A> properties must be set to <xref:System.Double.NaN>.  
-  
+The annotation must be anchored using either <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A>, or the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorY%2A> properties.  
+ 
+Its <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.X%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.Y%2A> properties must be set to <xref:System.Double.NaN>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,12 +108,12 @@
         <value>A <see langword="string" /> value that represents the name of the annotation type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Gets the name of each annotation type such as Line, Rectangle, Ellipse, and so forth.  
-  
- This property is for internal use and is hidden at design time and run time.  
-  
+Gets the name of each annotation type such as Line, Rectangle, Ellipse, and so forth.  
+ 
+This property is for internal use and is hidden at design time and run time.  
+ 
  ]]></format>
         </remarks>
       </Docs>

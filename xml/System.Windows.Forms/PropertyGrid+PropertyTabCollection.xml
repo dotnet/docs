@@ -39,10 +39,10 @@
         <summary>Adds a **Property** tab of the specified type to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The **Property** tab is added to the collection with a <xref:System.ComponentModel.PropertyTabScope> value of `Global`.  
-  
+The **Property** tab is added to the collection with a <xref:System.ComponentModel.PropertyTabScope> value of `Global`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,10 +90,10 @@
         <summary>Removes all the **Property** tabs of the specified scope from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method clears the tabs of the specified scope or smaller. The `tabScope` parameter must be the `Component` or `Document` value of <xref:System.ComponentModel.PropertyTabScope>.  
-  
+This method clears the tabs of the specified scope or smaller. The `tabScope` parameter must be the `Component` or `Document` value of <xref:System.ComponentModel.PropertyTabScope>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The assigned value of the <paramref name="tabScope" /> parameter is less than the <see langword="Document" /> value of <see cref="T:System.ComponentModel.PropertyTabScope" />.</exception>
@@ -135,12 +135,12 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Windows.Forms.PropertyGrid.PropertyTabCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates an enumerator that contains a snapshot of the collection. You can change the collection by changing the enumerator; however, multiple enumerators can simultaneously access the same collection. Changing the collection, either directly or through another enumerator, can cause <xref:System.Collections.IEnumerator.Current%2A> or <xref:System.Collections.IEnumerator.MoveNext%2A> to throw an exception.  
-  
- Two enumerators created from the same collection at the same time can contain different snapshots. Removing objects from the enumerator also removes them from the collection.  
-  
+This method creates an enumerator that contains a snapshot of the collection. You can change the collection by changing the enumerator; however, multiple enumerators can simultaneously access the same collection. Changing the collection, either directly or through another enumerator, can cause <xref:System.Collections.IEnumerator.Current%2A> or <xref:System.Collections.IEnumerator.MoveNext%2A> to throw an exception.  
+ 
+Two enumerators created from the same collection at the same time can contain different snapshots. Removing objects from the enumerator also removes them from the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,10 +187,10 @@
         <summary>Removes the specified tab type from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removing the tab from the collection removes it from the property grid.  
-  
+Removing the tab from the collection removes it from the property grid.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -217,10 +217,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid.PropertyTabCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid.PropertyTabCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -243,10 +243,10 @@
           <see langword="true" /> to indicate the list is synchronized; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid.PropertyTabCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid.PropertyTabCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -268,10 +268,10 @@
         <value>An object that can be used to synchronize access to the underlying list.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid.PropertyTabCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid.PropertyTabCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

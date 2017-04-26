@@ -14,21 +14,21 @@
     <summary>Provides data for the <see langword="MeasureItem" /> event of the <see cref="T:System.Windows.Forms.ListBox" />, <see cref="T:System.Windows.Forms.ComboBox" />, <see cref="T:System.Windows.Forms.CheckedListBox" />, and <see cref="T:System.Windows.Forms.MenuItem" /> controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is sent when the `OwnerDraw` property of <xref:System.Windows.Forms.ListBox>, <xref:System.Windows.Forms.ComboBox>, <xref:System.Windows.Forms.CheckedListBox>, or <xref:System.Windows.Forms.MenuItem> is set to `true`. It is used to tell the drawing function how to size an item.  
+This event is sent when the `OwnerDraw` property of <xref:System.Windows.Forms.ListBox>, <xref:System.Windows.Forms.ComboBox>, <xref:System.Windows.Forms.CheckedListBox>, or <xref:System.Windows.Forms.MenuItem> is set to `true`. It is used to tell the drawing function how to size an item.  
+ 
+For information about the event model, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
- For information about the event model, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Graphics> property to perform custom drawing of the items in a <xref:System.Windows.Forms.ListBox>.  
-  
- [!code-cpp[MeasureItemEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MeasureItemEventArgs/CPP/form1.cpp#1)]
- [!code-csharp[MeasureItemEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MeasureItemEventArgs/CS/form1.cs#1)]
- [!code-vb[MeasureItemEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MeasureItemEventArgs/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Graphics> property to perform custom drawing of the items in a <xref:System.Windows.Forms.ListBox>.  
+ 
+[!code-cpp[MeasureItemEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MeasureItemEventArgs/CPP/form1.cpp#1)]
+[!code-csharp[MeasureItemEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MeasureItemEventArgs/CS/form1.cs#1)]
+[!code-vb[MeasureItemEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MeasureItemEventArgs/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -92,19 +92,19 @@
         <value>The <see cref="T:System.Drawing.Graphics" /> object to use to determine the scale of the item you are drawing.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use a <xref:System.Drawing.Graphics> object to determine the scale to use when setting the <xref:System.Windows.Forms.MeasureItemEventArgs.ItemHeight%2A> and <xref:System.Windows.Forms.MeasureItemEventArgs.ItemWidth%2A>. Different types of graphics objects can have different scales, such as the difference in measurement scale between a monitor screen and a printer.  
+You use a <xref:System.Drawing.Graphics> object to determine the scale to use when setting the <xref:System.Windows.Forms.MeasureItemEventArgs.ItemHeight%2A> and <xref:System.Windows.Forms.MeasureItemEventArgs.ItemWidth%2A>. Different types of graphics objects can have different scales, such as the difference in measurement scale between a monitor screen and a printer.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Graphics> property to perform custom drawing of the items in a <xref:System.Windows.Forms.ListBox>.  
-  
- [!code-cpp[MeasureItemEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MeasureItemEventArgs/CPP/form1.cpp#1)]
- [!code-csharp[MeasureItemEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MeasureItemEventArgs/CS/form1.cs#1)]
- [!code-vb[MeasureItemEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MeasureItemEventArgs/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Graphics> property to perform custom drawing of the items in a <xref:System.Windows.Forms.ListBox>.  
+ 
+[!code-cpp[MeasureItemEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MeasureItemEventArgs/CPP/form1.cpp#1)]
+[!code-csharp[MeasureItemEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MeasureItemEventArgs/CS/form1.cs#1)]
+[!code-vb[MeasureItemEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MeasureItemEventArgs/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,12 +126,12 @@
         <value>The index of the item to be measured.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[MeasureItemEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MeasureItemEventArgs/CPP/form1.cpp#1)]
- [!code-csharp[MeasureItemEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MeasureItemEventArgs/CS/form1.cs#1)]
- [!code-vb[MeasureItemEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MeasureItemEventArgs/VB/form1.vb#1)]  
-  
+[!code-cpp[MeasureItemEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MeasureItemEventArgs/CPP/form1.cpp#1)]
+[!code-csharp[MeasureItemEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MeasureItemEventArgs/CS/form1.cs#1)]
+[!code-vb[MeasureItemEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MeasureItemEventArgs/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,14 +153,14 @@
         <value>The height of the item measured.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Graphics> property to perform custom drawing of the items in a <xref:System.Windows.Forms.ListBox>.  
-  
- [!code-cpp[MeasureItemEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MeasureItemEventArgs/CPP/form1.cpp#1)]
- [!code-csharp[MeasureItemEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MeasureItemEventArgs/CS/form1.cs#1)]
- [!code-vb[MeasureItemEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MeasureItemEventArgs/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Graphics> property to perform custom drawing of the items in a <xref:System.Windows.Forms.ListBox>.  
+ 
+[!code-cpp[MeasureItemEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MeasureItemEventArgs/CPP/form1.cpp#1)]
+[!code-csharp[MeasureItemEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MeasureItemEventArgs/CS/form1.cs#1)]
+[!code-vb[MeasureItemEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MeasureItemEventArgs/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,19 +182,19 @@
         <value>The width of the item measured.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is only used by <xref:System.Windows.Forms.MenuItem>. You use this property to ensure the menu is at least as wide as the widest menu item in the menu list.  
+This member is only used by <xref:System.Windows.Forms.MenuItem>. You use this property to ensure the menu is at least as wide as the widest menu item in the menu list.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Graphics> property to perform custom drawing of the items in a <xref:System.Windows.Forms.ListBox>.  
-  
- [!code-cpp[MeasureItemEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MeasureItemEventArgs/CPP/form1.cpp#1)]
- [!code-csharp[MeasureItemEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MeasureItemEventArgs/CS/form1.cs#1)]
- [!code-vb[MeasureItemEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MeasureItemEventArgs/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Graphics> property to perform custom drawing of the items in a <xref:System.Windows.Forms.ListBox>.  
+ 
+[!code-cpp[MeasureItemEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MeasureItemEventArgs/CPP/form1.cpp#1)]
+[!code-csharp[MeasureItemEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MeasureItemEventArgs/CS/form1.cs#1)]
+[!code-vb[MeasureItemEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MeasureItemEventArgs/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,27 +18,27 @@
     <summary>Provides methods and properties for parsing structured text files.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `TextFieldParser` object provides methods and properties for parsing structured text files. Parsing a text file with the `TextFieldParser` is similar to iterating over a text file, while the `ReadFields` method to extract fields of text is similar to splitting the strings.  
-  
- The `TextFieldParser` can parse two types of files: delimited or fixed-width. Some properties, such as `Delimiters` and `HasFieldsEnclosedInQuotes` are meaningful only when working with delimited files, while the `FieldWidths` property is meaningful only when working with fixed-width files.  
-  
- The following table lists examples of tasks involving the `Microsoft.VisualBasic.FileIO.TextFieldParser` object.  
-  
+The `TextFieldParser` object provides methods and properties for parsing structured text files. Parsing a text file with the `TextFieldParser` is similar to iterating over a text file, while the `ReadFields` method to extract fields of text is similar to splitting the strings.  
+ 
+The `TextFieldParser` can parse two types of files: delimited or fixed-width. Some properties, such as `Delimiters` and `HasFieldsEnclosedInQuotes` are meaningful only when working with delimited files, while the `FieldWidths` property is meaningful only when working with fixed-width files.  
+ 
+The following table lists examples of tasks involving the `Microsoft.VisualBasic.FileIO.TextFieldParser` object.  
+ 
 |To|See|  
 |--------|---------|  
 |Read from a delimited text file|[How to: Read From Comma-Delimited Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)|  
 |Read from a fixed-width text file|[How to: Read From Fixed-width Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)|  
 |Read from a text file with multiple formats|[How to: Read From Text Files with Multiple Formats](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example parses through a tab-delimited text file, `Bigfile`.  
-  
- [!code-vb[VbVbalrTextFieldParser#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#17)]  
-  
+This example parses through a tab-delimited text file, `Bigfile`.  
+ 
+[!code-vb[VbVbalrTextFieldParser#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#17)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new `TextFieldParser` object to parse the file or stream that is represented by the `stream` parameter.  
-  
+Creates a new `TextFieldParser` object to parse the file or stream that is represented by the `stream` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -91,10 +91,10 @@
         <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new `TextFieldParser` object to parse the file or stream that is represented by the `reader` parameter.  
-  
+Creates a new `TextFieldParser` object to parse the file or stream that is represented by the `reader` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -119,10 +119,10 @@
         <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new `TextFieldParser` object to parse the file specified by the `path` parameter.  
-  
+Creates a new `TextFieldParser` object to parse the file specified by the `path` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -150,13 +150,13 @@
         <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new `TextFieldParser` object to parse the file or stream that is represented by the `stream` parameter.  
-  
+Creates a new `TextFieldParser` object to parse the file or stream that is represented by the `stream` parameter.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable and could cause an exception to be thrown.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -186,13 +186,13 @@
         <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new `TextFieldParser` object to parse the file specified by the `path` parameter.  
-  
+Creates a new `TextFieldParser` object to parse the file specified by the `path` parameter.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable and could cause an exception to be thrown.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -223,15 +223,15 @@
         <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new `TextFieldParser` object to parse the file or stream that is represented by the `stream` parameter.  
-  
- If the `detectEncoding` parameter is `True`, this constructor attempts to detect the encoding by looking at the first three bytes of the file or stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte-order marks. Otherwise, the encoding specified by `defaultEncoding` is used.  
-  
+Creates a new `TextFieldParser` object to parse the file or stream that is represented by the `stream` parameter.  
+ 
+If the `detectEncoding` parameter is `True`, this constructor attempts to detect the encoding by looking at the first three bytes of the file or stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte-order marks. Otherwise, the encoding specified by `defaultEncoding` is used.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable and could cause an exception to be thrown.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -264,15 +264,15 @@
         <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new `TextFieldParser` object to parse the file specified by the `path` parameter.  
-  
- If the `detectEncoding` parameter is `True`, this constructor attempts to detect the encoding by looking at the first three bytes of the file or stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte-order marks. Otherwise, the encoding specified by `defaultEncoding` is used.  
-  
+Creates a new `TextFieldParser` object to parse the file specified by the `path` parameter.  
+ 
+If the `detectEncoding` parameter is `True`, this constructor attempts to detect the encoding by looking at the first three bytes of the file or stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte-order marks. Otherwise, the encoding specified by `defaultEncoding` is used.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable and could cause an exception to be thrown.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -306,15 +306,15 @@
         <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new `TextFieldParser` object to parse the file or stream that is represented by the `stream` parameter.  
-  
- If the `detectEncoding` parameter is `True`, this constructor attempts to detect the encoding by looking at the first three bytes of the file or stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte-order marks. Otherwise, the encoding specified by `defaultEncoding` is used.  
-  
+Creates a new `TextFieldParser` object to parse the file or stream that is represented by the `stream` parameter.  
+ 
+If the `detectEncoding` parameter is `True`, this constructor attempts to detect the encoding by looking at the first three bytes of the file or stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte-order marks. Otherwise, the encoding specified by `defaultEncoding` is used.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable and could cause an exception to be thrown.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -340,12 +340,12 @@
         <summary>Closes the current <see langword="TextFieldParser" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example closes the `TextFieldParser``FileReader`.  
-  
- [!code-vb[VbVbalrTextFieldParser#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#14)]  
-  
+This example closes the `TextFieldParser``FileReader`.  
+ 
+[!code-vb[VbVbalrTextFieldParser#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -372,19 +372,19 @@
         <value>A string array that contains all of the comment tokens for the <see cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+ 
+Zero-length comment tokens are ignored.  
+ 
   
- Zero-length comment tokens are ignored.  
-  
-   
-  
+ 
 ## Examples  
- This example specifies that for the `TextFieldParser`, `FileReader` lines beginning with a single quotation mark (') should be ignored.  
-  
- [!code-vb[VbVbalrTextFieldParser#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#5)]  
-  
+This example specifies that for the `TextFieldParser`, `FileReader` lines beginning with a single quotation mark (') should be ignored.  
+ 
+[!code-vb[VbVbalrTextFieldParser#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A comment token includes white space.</exception>
@@ -407,25 +407,25 @@
         <value>A string array that contains all of the field delimiters for the <see cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is meaningful only if the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType%2A> property is set to `FieldType.Delimited`.  
-  
- Defining the delimiters for a text file can also be accomplished with the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A> method.  
-  
- The following table lists an example of a task involving the `Delimiters` property.  
-  
+This property is meaningful only if the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType%2A> property is set to `FieldType.Delimited`.  
+ 
+Defining the delimiters for a text file can also be accomplished with the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A> method.  
+ 
+The following table lists an example of a task involving the `Delimiters` property.  
+ 
 |To|See|  
 |--------|---------|  
 |Read from a delimited text file|[How to: Read From Comma-Delimited Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example specifies that the delimiter for the `TextFieldParser` object, `FileReader`, is a comma (,).  
-  
- [!code-vb[VbVbalrTextFieldParser#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#9)]  
-  
+This example specifies that the delimiter for the `TextFieldParser` object, `FileReader`, is a comma (,).  
+ 
+[!code-vb[VbVbalrTextFieldParser#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A delimiter value is set to a newline character, an empty string, or <see langword="Nothing" />.</exception>
@@ -488,24 +488,24 @@
           <see langword="True" /> if there is no more data to read; otherwise, <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be used when reading from files to determine the end of the data being read.  
-  
- The following table lists examples of tasks involving the `EndOfData` property.  
-  
+This property can be used when reading from files to determine the end of the data being read.  
+ 
+The following table lists examples of tasks involving the `EndOfData` property.  
+ 
 |To|See|  
 |--------|---------|  
 |Read from a delimited file|[How to: Read From Comma-Delimited Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)|  
 |Read from a fixed-width file|[How to: Read From Fixed-width Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `EndofData` property to loop through all the fields in the file with the `TextFieldReader`, `FileReader`.  
-  
- [!code-vb[VbVbalrTextFieldParser#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#6)]  
-  
+This example uses the `EndofData` property to loop through all the fields in the file with the `TextFieldReader`, `FileReader`.  
+ 
+[!code-vb[VbVbalrTextFieldParser#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -527,26 +527,26 @@
         <value>The line that caused the most recent <see cref="T:Microsoft.VisualBasic.FileIO.MalformedLineException" /> exception.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exceptions have been thrown, an empty string is returned.  
-  
- The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLineNumber%2A> property can be used to display the number of the line that caused the exception.  
-  
- The following table lists examples of tasks involving the `ErrorLine` property.  
-  
+If no <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exceptions have been thrown, an empty string is returned.  
+ 
+The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLineNumber%2A> property can be used to display the number of the line that caused the exception.  
+ 
+The following table lists examples of tasks involving the `ErrorLine` property.  
+ 
 |To|See|  
 |--------|---------|  
 |Read from a delimited file|[How to: Read From Comma-Delimited Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)|  
 |Read from a fixed-width file|[How to: Read From Fixed-width Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `ErrorLine` property to display the line causing the current <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exception.  
-  
- [!code-vb[VbVbalrTextFieldParser#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#1)]  
-  
+This example uses the `ErrorLine` property to display the line causing the current <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exception.  
+ 
+[!code-vb[VbVbalrTextFieldParser#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -568,26 +568,26 @@
         <value>The number of the line that caused the most recent <see cref="T:Microsoft.VisualBasic.FileIO.MalformedLineException" /> exception.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exceptions have been thrown, -1 is returned.  
-  
- The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine%2A> property can be used to display the number of the line that caused the exception. Blank lines and comments are not ignored when determining the line number.  
-  
- The following table lists examples of tasks involving the `ErrorLineNumber` property.  
-  
+If no <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exceptions have been thrown, -1 is returned.  
+ 
+The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine%2A> property can be used to display the number of the line that caused the exception. Blank lines and comments are not ignored when determining the line number.  
+ 
+The following table lists examples of tasks involving the `ErrorLineNumber` property.  
+ 
 |To|See|  
 |--------|---------|  
 |Read from a delimited file|[How to: Read From Comma-Delimited Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)|  
 |Read from a fixed-width file|[How to: Read From Fixed-width Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `ErrorLineNumber` property to display the location of the line causing the current <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exception.  
-  
- [!code-vb[VbVbalrTextFieldParser#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#3)]  
-  
+This example uses the `ErrorLineNumber` property to display the location of the line causing the current <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exception.  
+ 
+[!code-vb[VbVbalrTextFieldParser#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -609,25 +609,25 @@
         <value>An integer array that contains the width of each column in the text file that is being parsed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is meaningful only if the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType%2A> property is set to `FieldType.FixedWidth`. If the last entry in the array is less than or equal to zero, the field is assumed to be of variable width.  
-  
- The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths%2A> method can also be used to set field widths.  
-  
- The following table lists examples of tasks involving the `FieldWidths` property.  
-  
+This property is meaningful only if the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType%2A> property is set to `FieldType.FixedWidth`. If the last entry in the array is less than or equal to zero, the field is assumed to be of variable width.  
+ 
+The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths%2A> method can also be used to set field widths.  
+ 
+The following table lists examples of tasks involving the `FieldWidths` property.  
+ 
 |To|See|  
 |--------|---------|  
 |Read from a fixed-width text file|[How to: Read From Fixed-width Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example reads the file `ParserText.txt`, specifying the widths; the first column is 5 characters wide, the second is 10, the third is 11, and the fourth is of variable width  
-  
- [!code-vb[VbVbalrTextFieldParser#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#16)]  
-  
+This example reads the file `ParserText.txt`, specifying the widths; the first column is 5 characters wide, the second is 10, the third is 11, and the fourth is of variable width  
+ 
+[!code-vb[VbVbalrTextFieldParser#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#16)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A width value in any location other than the last entry of the array is less than or equal to zero.</exception>
@@ -674,21 +674,21 @@
           <see langword="True" /> if fields are enclosed in quotation marks; otherwise, <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+ 
+If the property is `True`, the parser assumes that fields are enclosed in quotation marks (" ") and may contain line endings.  
+ 
+If a field is enclosed in quotation marks, for example, `abc, "field2a,field2b", field3` and this property is `True`, then all text enclosed in quotation marks will be returned as is; this example would return `abc|field2a,field2b|field3`. Setting this property to `False` would make this example return `abc|"field2a|field2b"|field3`.  
+ 
   
- If the property is `True`, the parser assumes that fields are enclosed in quotation marks (" ") and may contain line endings.  
-  
- If a field is enclosed in quotation marks, for example, `abc, "field2a,field2b", field3` and this property is `True`, then all text enclosed in quotation marks will be returned as is; this example would return `abc|field2a,field2b|field3`. Setting this property to `False` would make this example return `abc|"field2a|field2b"|field3`.  
-  
-   
-  
+ 
 ## Examples  
- This example sets the `HasFieldsEnclosedInQuotes` property to `True` for `myReader`.  
-  
- [!code-vb[VbVbalrTextFieldParser#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#18)]  
-  
+This example sets the `HasFieldsEnclosedInQuotes` property to `True` for `myReader`.  
+ 
+[!code-vb[VbVbalrTextFieldParser#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#18)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -715,19 +715,19 @@
         <value>The current line number.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+ 
+Blank lines and comments are not ignored when determining the line number.  
+ 
   
- Blank lines and comments are not ignored when determining the line number.  
-  
-   
-  
+ 
 ## Examples  
- This example searches for the name "Jones" in the text file and reports what line(s) it occurs on.  
-  
- [!code-vb[VbVbalrTextFieldParser#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#11)]  
-  
+This example searches for the name "Jones" in the text file and reports what line(s) it occurs on.  
+ 
+[!code-vb[VbVbalrTextFieldParser#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -754,29 +754,29 @@
         <returns>A string that contains the specified number of characters read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `numberOfChars` value must be less than the total number of characters in the line. If it is not, the string returned by `PeekChars` will be truncated to the length of the line.  
-  
- Blank lines are ignored.  
-  
- End-of-line characters are not returned.  
-  
- The `PeekChars` method performs no parsing; an end-of- line character within a delimited field is interpreted as the actual end of the line.  
-  
- The following table lists examples of tasks involving the `PeekChars` method.  
-  
+The `numberOfChars` value must be less than the total number of characters in the line. If it is not, the string returned by `PeekChars` will be truncated to the length of the line.  
+ 
+Blank lines are ignored.  
+ 
+End-of-line characters are not returned.  
+ 
+The `PeekChars` method performs no parsing; an end-of- line character within a delimited field is interpreted as the actual end of the line.  
+ 
+The following table lists examples of tasks involving the `PeekChars` method.  
+ 
 |To|See|  
 |--------|---------|  
 |Determine the format of a field before parsing it|[How to: Read From Text Files with Multiple Formats](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses `PeekChars` to find the end of the data and stop parsing the file at that point.  
-  
- [!code-vb[VbVbalrTextFieldParser#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#8)]  
-  
+This example uses `PeekChars` to find the end of the data and stop parsing the file at that point.  
+ 
+[!code-vb[VbVbalrTextFieldParser#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#8)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -801,28 +801,28 @@
         <returns>An array of strings that contains field values for the current line.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In order to allow users to parse text files in multiple formats, the `ReadFields` method examines the values of `TextFieldType`, `Delimiters`, and `FieldWidths`, if they are specified, each time it is called. Users need to correctly configure the `TextFieldType` and `FieldWidths` or `Delimiters` properties, as appropriate. If `TextFieldType` is set to `Delimited`, and `Delimiters` is not set, or if `TextFieldType` is set to `FixedWidth` and `FieldWidths`, an exception is thrown.  
-  
- If `ReadFields` encounters blank lines, they are skipped and the next non-blank line is returned.  
-  
- If the `ReadFields` method cannot parse the current line, it raises an exception and does not move to the next line. This enables your application to attempt to parse the line again.  
-  
- The following table lists examples of tasks involving the `ReadFields` method.  
-  
+In order to allow users to parse text files in multiple formats, the `ReadFields` method examines the values of `TextFieldType`, `Delimiters`, and `FieldWidths`, if they are specified, each time it is called. Users need to correctly configure the `TextFieldType` and `FieldWidths` or `Delimiters` properties, as appropriate. If `TextFieldType` is set to `Delimited`, and `Delimiters` is not set, or if `TextFieldType` is set to `FixedWidth` and `FieldWidths`, an exception is thrown.  
+ 
+If `ReadFields` encounters blank lines, they are skipped and the next non-blank line is returned.  
+ 
+If the `ReadFields` method cannot parse the current line, it raises an exception and does not move to the next line. This enables your application to attempt to parse the line again.  
+ 
+The following table lists examples of tasks involving the `ReadFields` method.  
+ 
 |To|See|  
 |--------|---------|  
 |Read from a delimited file|[How to: Read From Comma-Delimited Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)|  
 |Read from a fixed-width file|[How to: Read From Fixed-width Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `ReadFields` method to read from the comma-delimited file `ParserText.txt`. The example writes the fields to `Testfile.txt`.  
-  
- [!code-vb[VbVbalrTextFieldParser#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#2)]  
-  
+This example uses the `ReadFields` method to read from the comma-delimited file `ParserText.txt`. The example writes the fields to `Testfile.txt`.  
+ 
+[!code-vb[VbVbalrTextFieldParser#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:Microsoft.VisualBasic.FileIO.MalformedLineException">A field cannot be parsed by using the specified format.</exception>
@@ -853,23 +853,23 @@
         <returns>The current line from the file or stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `ReadLine` method performs no parsing; an end-of-line character within a delimited field is interpreted as the actual end of the line.  
+The `ReadLine` method performs no parsing; an end-of-line character within a delimited field is interpreted as the actual end of the line.  
+ 
+`Nothing` is returned if the end of the file is reached.  
+ 
   
- `Nothing` is returned if the end of the file is reached.  
-  
-   
-  
+ 
 ## Examples  
- This example reads through the file `ParserText.txt` and writes it to `Testfile.txt`.  
-  
- [!code-vb[VbVbalrTextFieldParser#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#15)]  
-  
- If `Testfile.txt` does not exist, it is created by the `WriteAllText` method.  
-  
- This example writes the fields as a single string; to have each line display on its own line in the destination file, a `VbCrLf` character should be appended at the end of each line.  
-  
+This example reads through the file `ParserText.txt` and writes it to `Testfile.txt`.  
+ 
+[!code-vb[VbVbalrTextFieldParser#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#15)]  
+ 
+If `Testfile.txt` does not exist, it is created by the `WriteAllText` method.  
+ 
+This example writes the fields as a single string; to have each line display on its own line in the destination file, a `VbCrLf` character should be appended at the end of each line.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -897,23 +897,23 @@
         <returns>The remaining text from the file or stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+ 
+If there is nothing more to read because the end of the file has been reached, `Nothing` is returned.  
+ 
+The `ReadToEnd` method does not ignore blank lines and comments.  
+ 
   
- If there is nothing more to read because the end of the file has been reached, `Nothing` is returned.  
-  
- The `ReadToEnd` method does not ignore blank lines and comments.  
-  
-   
-  
+ 
 ## Examples  
- This example uses the `ReadToEnd` method to read the entire file `ParserText.txt` and write it to the file `Testfile.txt`.  
-  
- [!code-vb[VbVbalrTextFieldParser#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#10)]  
-  
- If `Testfile.txt` does not exist, it is created by the `WriteAllText` method.  
-  
+This example uses the `ReadToEnd` method to read the entire file `ParserText.txt` and write it to the file `Testfile.txt`.  
+ 
+[!code-vb[VbVbalrTextFieldParser#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#10)]  
+ 
+If `Testfile.txt` does not exist, it is created by the `WriteAllText` method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -944,27 +944,27 @@
         <summary>Sets the delimiters for the reader to the specified values, and sets the field type to <see langword="Delimited" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The existing contents of the `Delimiters` property are cleared when this method is set.  
-  
- This method provides a way to set delimiters without creating an array.  
-  
- The following table lists an example of a task involving the `SetDelimiters` method.  
-  
+The existing contents of the `Delimiters` property are cleared when this method is set.  
+ 
+This method provides a way to set delimiters without creating an array.  
+ 
+The following table lists an example of a task involving the `SetDelimiters` method.  
+ 
 |To|See|  
 |--------|---------|  
 |Parse a text file|[Parsing Text Files with the TextFieldParser Object](~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example opens a text field parser and defines the delimiter as `vbTab`.  
-  
- [!code-vb[VbVbalrTextFieldParser#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#4)]  
-  
- Replace the path `C:\logs\test.log` with the path and name of the file you wish to parse.  
-  
+This example opens a text field parser and defines the delimiter as `vbTab`.  
+ 
+[!code-vb[VbVbalrTextFieldParser#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#4)]  
+ 
+Replace the path `C:\logs\test.log` with the path and name of the file you wish to parse.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A delimiter is zero-length.</exception>
@@ -996,33 +996,33 @@
         <summary>Sets the delimiters for the reader to the specified values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The existing contents of the `Delimiters` property are cleared when this is set.  
-  
- This method provides a way to set delimiters without creating an array.  
-  
- The following table lists example of tasks involving the `SetFieldWidths` method.  
-  
+The existing contents of the `Delimiters` property are cleared when this is set.  
+ 
+This method provides a way to set delimiters without creating an array.  
+ 
+The following table lists example of tasks involving the `SetFieldWidths` method.  
+ 
 |To|See|  
 |--------|---------|  
 |Parse a text file.|[Parsing Text Files with the TextFieldParser Object](~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example opens a text-field parser and defines the field width as `5`.  
-  
- [!code-vb[VbVbalrTextFieldParser#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#12)]  
-  
- Replace the path `C:\logs\test.log` with the path and name of the file you wish to parse.  
-  
- The following example opens a text-field parser and defines the field widths as `5`, `10`, and variable.  
-  
- [!code-vb[VbVbalrTextFieldParser#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#13)]  
-  
- Replace the path `C:\logs\test.log` with the path and name of the file you wish to parse.  
-  
+This example opens a text-field parser and defines the field width as `5`.  
+ 
+[!code-vb[VbVbalrTextFieldParser#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#12)]  
+ 
+Replace the path `C:\logs\test.log` with the path and name of the file you wish to parse.  
+ 
+The following example opens a text-field parser and defines the field widths as `5`, `10`, and variable.  
+ 
+[!code-vb[VbVbalrTextFieldParser#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#13)]  
+ 
+Replace the path `C:\logs\test.log` with the path and name of the file you wish to parse.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1044,29 +1044,29 @@
         <value>A <see cref="P:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType" /> value that indicates whether the file to be parsed is delimited or fixed-width.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of this property is delimited.  
-  
- The following table lists examples of tasks involving the `TextFieldType` property.  
-  
+The default value of this property is delimited.  
+ 
+The following table lists examples of tasks involving the `TextFieldType` property.  
+ 
 |To|See|  
 |--------|---------|  
 |Read from a delimited text file|[How to: Read From Comma-Delimited Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)|  
 |Read from a fixed-width text file|[How to: Read From Fixed-width Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)|  
 |Read from a text file with multiple formats|[How to: Read From Text Files with Multiple Formats](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example creates a `TextFieldParser`, `FileReader`, and specifies that it is delimited.  
-  
- [!code-vb[VbVbalrTextFieldParser#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#19)]  
-  
- This example creates a `TextFieldParser`, `FileReader`, and specifies that it is fixed-width.  
-  
- [!code-vb[VbVbalrTextFieldParser#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#20)]  
-  
+This example creates a `TextFieldParser`, `FileReader`, and specifies that it is delimited.  
+ 
+[!code-vb[VbVbalrTextFieldParser#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#19)]  
+ 
+This example creates a `TextFieldParser`, `FileReader`, and specifies that it is fixed-width.  
+ 
+[!code-vb[VbVbalrTextFieldParser#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#20)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1089,17 +1089,17 @@
           <see langword="True" /> if leading and trailing white space should be trimmed from field values; otherwise, <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value for this property is `True`.  
+The default value for this property is `True`.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example creates a `TextFieldParser`, `FileReader`, and sets the `TrimWhiteSpace` property to `True`.  
-  
- [!code-vb[VbVbalrTextFieldParser#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#7)]  
-  
+This example creates a `TextFieldParser`, `FileReader`, and sets the `TrimWhiteSpace` property to `True`.  
+ 
+[!code-vb[VbVbalrTextFieldParser#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

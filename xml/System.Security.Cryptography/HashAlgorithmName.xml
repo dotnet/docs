@@ -27,18 +27,18 @@
     <summary>Specifies the name of a cryptographic hash algorithm.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.HashAlgorithmName> structure includes some static properties that return predefined hash algorithm names, as well as a <xref:System.Security.Cryptography.HashAlgorithmName.Name%2A> property that can represent a custom hash algorithm name as a strongly-typed string. Hash algorithm names are case-sensitive.  
-  
- Asymmetric algorithms implemented using Microsoft's CNG (Cryptographic Next Generation) API interpret the underlying string value as a [CNG algorithm identifier](https://msdn.microsoft.com/library/windows/desktop/aa375534.aspx).  
-  
- Asymmetric algorithms implemented using other technologies:  
-  
+The <xref:System.Security.Cryptography.HashAlgorithmName> structure includes some static properties that return predefined hash algorithm names, as well as a <xref:System.Security.Cryptography.HashAlgorithmName.Name%2A> property that can represent a custom hash algorithm name as a strongly-typed string. Hash algorithm names are case-sensitive.  
+ 
+Asymmetric algorithms implemented using Microsoft's CNG (Cryptographic Next Generation) API interpret the underlying string value as a [CNG algorithm identifier](https://msdn.microsoft.com/library/windows/desktop/aa375534.aspx).  
+ 
+Asymmetric algorithms implemented using other technologies:  
+ 
 -   Must recognize at least "MD5", "SHA1", "SHA256", "SHA384", and "SHA512".  
-  
+ 
 -   Should recognize additional CNG identifiers for any additional hash algorithms that they support.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,10 +69,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.HashAlgorithmName" /> structure with a custom name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor performs no validation on `name`.  
-  
+The constructor performs no validation on `name`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
           <see langword="true" /> if both <paramref name="left" /> and <paramref name="right" /> have the same <see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> value; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.HashAlgorithmName.op_Equality%2A> method defines the operation of the equality operator for <xref:System.Security.Cryptography.HashAlgorithmName> values.  
-  
+The <xref:System.Security.Cryptography.HashAlgorithmName.op_Equality%2A> method defines the operation of the equality operator for <xref:System.Security.Cryptography.HashAlgorithmName> values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,10 +297,10 @@
           <see langword="true" /> if both <paramref name="left" /> and <paramref name="right" /> do not have the same <see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> value; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.HashAlgorithmName.op_Inequality%2A> method defines the operation of the inequality operator for <xref:System.Security.Cryptography.HashAlgorithmName> values.  
-  
+The <xref:System.Security.Cryptography.HashAlgorithmName.op_Inequality%2A> method defines the operation of the inequality operator for <xref:System.Security.Cryptography.HashAlgorithmName> values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -440,10 +440,10 @@
         <returns>The string representation of the current <see cref="T:System.Security.Cryptography.HashAlgorithmName" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.HashAlgorithmName.ToString%2A> method returns the <xref:System.Security.Cryptography.HashAlgorithmName.Name%2A> property, if it has been assigned. Otherwise, it returns <xref:System.String.Empty?displayProperty=fullName>.  
-  
+The <xref:System.Security.Cryptography.HashAlgorithmName.ToString%2A> method returns the <xref:System.Security.Cryptography.HashAlgorithmName.Name%2A> property, if it has been assigned. Otherwise, it returns <xref:System.String.Empty?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

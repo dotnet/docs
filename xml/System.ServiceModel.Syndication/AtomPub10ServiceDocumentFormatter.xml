@@ -27,10 +27,10 @@
     <summary>A formatter that serializes a <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> instance to and from XML using Atom 1.0 formats.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this class to serialize instances of <xref:System.ServiceModel.Syndication.ServiceDocument> to XML and to generate instances of <xref:System.ServiceModel.Syndication.ServiceDocument> from an XML document. If you want to serialize or deserialized an object derived from <xref:System.ServiceModel.Syndication.ServiceDocument>, use the <xref:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter%601> formatter instead.  
-  
+Use this class to serialize instances of <xref:System.ServiceModel.Syndication.ServiceDocument> to XML and to generate instances of <xref:System.ServiceModel.Syndication.ServiceDocument> from an XML document. If you want to serialize or deserialized an object derived from <xref:System.ServiceModel.Syndication.ServiceDocument>, use the <xref:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter%601> formatter instead.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,10 +75,10 @@
         <summary>Creates a new instance of the Atom 1.0-based <see cref="T:System.ServiceModel.Syndication.ServiceDocumentFormatter" /> class to serialize a specified service document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `documentToWrite` can be serialized to an XML representation or deserialized from an XML representation by the formatter using Atom 1.0 formats.  
-  
+The `documentToWrite` can be serialized to an XML representation or deserialized from an XML representation by the formatter using Atom 1.0 formats.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -106,10 +106,10 @@
         <summary>Creates a new instance of the Atom 1.0-based <see cref="T:System.ServiceModel.Syndication.ServiceDocumentFormatter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `documentTypeToCreate` can be serialized to an XML representation or deserialized from an XML representation by the formatter using Atom 1.0 formats.  
-  
+The `documentTypeToCreate` can be serialized to an XML representation or deserialized from an XML representation by the formatter using Atom 1.0 formats.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -220,10 +220,10 @@
         <returns>Returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Explicitly implements the <xref:System.Xml.Serialization.IXmlSerializable.GetSchema%2A> method.  
-  
+Explicitly implements the <xref:System.Xml.Serialization.IXmlSerializable.GetSchema%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,10 +252,10 @@
         <summary>Generates a <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> from its XML representation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Explicitly implements the <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> method.  
-  
+Explicitly implements the <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -286,10 +286,10 @@
         <summary>Converts the <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> into its XML representation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Explicitly implements the <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A> method.  
-  
+Explicitly implements the <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

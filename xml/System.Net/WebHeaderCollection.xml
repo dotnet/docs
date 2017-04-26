@@ -33,38 +33,38 @@
     <summary>Contains protocol headers associated with a request or response.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.WebHeaderCollection> class is generally accessed through <xref:System.Net.WebRequest.Headers%2A?displayProperty=fullName> or <xref:System.Net.WebResponse.Headers%2A?displayProperty=fullName>. Some common headers are considered restricted and are either exposed directly by the API (such as `Content-Type`) or protected by the system and cannot be changed.  
-  
- The restricted headers are:  
-  
+The <xref:System.Net.WebHeaderCollection> class is generally accessed through <xref:System.Net.WebRequest.Headers%2A?displayProperty=fullName> or <xref:System.Net.WebResponse.Headers%2A?displayProperty=fullName>. Some common headers are considered restricted and are either exposed directly by the API (such as `Content-Type`) or protected by the system and cannot be changed.  
+ 
+The restricted headers are:  
+ 
 -   Accept  
-  
+ 
 -   Connection  
-  
+ 
 -   Content-Length  
-  
+ 
 -   Content-Type  
-  
+ 
 -   Date  
-  
+ 
 -   Expect  
-  
+ 
 -   Host  
-  
+ 
 -   If-Modified-Since  
-  
+ 
 -   Range  
-  
+ 
 -   Referrer  
-  
+ 
 -   Transfer-Encoding  
-  
+ 
 -   User-Agent  
-  
+ 
 -   Proxy-Connection  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -117,10 +117,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.WebHeaderCollection" /> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> classes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.WebHeaderCollection> class.  
-  
+This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.WebHeaderCollection> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -154,21 +154,21 @@
         <summary>Inserts the specified header into the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `header` parameter must be specified in the format "name:value". If the specified header does not exist in the collection, a new header is added to the collection.  
+The `header` parameter must be specified in the format "name:value". If the specified header does not exist in the collection, a new header is added to the collection.  
+ 
+If the header specified in `header` is already present in the collection, the value part of the `header` is concatenated with the existing value.  
+ 
   
- If the header specified in `header` is already present in the collection, the value part of the `header` is concatenated with the existing value.  
-  
-   
-  
+ 
 ## Examples  
- The following example adds a name/value pair to a <xref:System.Net.WebHeaderCollection> using the <xref:System.Net.WebHeaderCollection.Add%2A> Method.  
-  
- [!code-cpp[WebHeaderCollection_Add#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebHeaderCollection_Add/CPP/webheadercollection_add.cpp#1)]
- [!code-csharp[WebHeaderCollection_Add#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebHeaderCollection_Add/CS/webheadercollection_add.cs#1)]
- [!code-vb[WebHeaderCollection_Add#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebHeaderCollection_Add/VB/webheadercollection_add.vb#1)]  
-  
+The following example adds a name/value pair to a <xref:System.Net.WebHeaderCollection> using the <xref:System.Net.WebHeaderCollection.Add%2A> Method.  
+ 
+[!code-cpp[WebHeaderCollection_Add#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebHeaderCollection_Add/CPP/webheadercollection_add.cpp#1)]
+[!code-csharp[WebHeaderCollection_Add#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebHeaderCollection_Add/CS/webheadercollection_add.cs#1)]
+[!code-vb[WebHeaderCollection_Add#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebHeaderCollection_Add/VB/webheadercollection_add.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -219,12 +219,12 @@
         <summary>Inserts the specified header with the specified value into the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified header does not exist, the <xref:System.Net.WebHeaderCollection.Add%2A> method inserts a new header into the list of header name/value pairs.  
-  
- If the specified header is already present, `value` is added to the comma-separated list of values associated with the header.  
-  
+If the specified header does not exist, the <xref:System.Net.WebHeaderCollection.Add%2A> method inserts a new header into the list of header name/value pairs.  
+ 
+If the specified header is already present, `value` is added to the comma-separated list of values associated with the header.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The length of <paramref name="value" /> is greater than 65535.</exception>
@@ -258,12 +258,12 @@
         <summary>Inserts the specified header with the specified value into the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified header does not exist, the <xref:System.Net.WebHeaderCollection.Add%2A> method inserts a new header into the list of header name/value pairs.  
-  
- If the specified header is already present, `value` is added to the comma-separated list of values associated with the header.  
-  
+If the specified header does not exist, the <xref:System.Net.WebHeaderCollection.Add%2A> method inserts a new header into the list of header name/value pairs.  
+ 
+If the specified header is already present, `value` is added to the comma-separated list of values associated with the header.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The length of <paramref name="value" /> is greater than 65535.</exception>
@@ -297,21 +297,21 @@
         <summary>Inserts a header with the specified name and value into the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the header specified in `name` does not exist, the <xref:System.Net.WebHeaderCollection.Add%2A> method inserts a new header into the list of header name/value pairs.  
+If the header specified in `name` does not exist, the <xref:System.Net.WebHeaderCollection.Add%2A> method inserts a new header into the list of header name/value pairs.  
+ 
+If the header specified in `name` is already present, `value` is added to the existing comma-separated list of values associated with `name`.  
+ 
   
- If the header specified in `name` is already present, `value` is added to the existing comma-separated list of values associated with `name`.  
-  
-   
-  
+ 
 ## Examples  
- The following example adds a name/value pair to a <xref:System.Net.WebHeaderCollection> using the <xref:System.Net.WebHeaderCollection.Add%2A> Method.  
-  
- [!code-cpp[WebHeaderCollection_Add#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebHeaderCollection_Add/CPP/webheadercollection_add.cpp#1)]
- [!code-csharp[WebHeaderCollection_Add#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebHeaderCollection_Add/CS/webheadercollection_add.cs#1)]
- [!code-vb[WebHeaderCollection_Add#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebHeaderCollection_Add/VB/webheadercollection_add.vb#1)]  
-  
+The following example adds a name/value pair to a <xref:System.Net.WebHeaderCollection> using the <xref:System.Net.WebHeaderCollection.Add%2A> Method.  
+ 
+[!code-cpp[WebHeaderCollection_Add#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebHeaderCollection_Add/CPP/webheadercollection_add.cpp#1)]
+[!code-csharp[WebHeaderCollection_Add#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebHeaderCollection_Add/CS/webheadercollection_add.cs#1)]
+[!code-vb[WebHeaderCollection_Add#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebHeaderCollection_Add/VB/webheadercollection_add.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -354,10 +354,10 @@
         <summary>Inserts a header into the collection without checking whether the header is on the restricted header list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.WebHeaderCollection.AddWithoutValidate%2A> method adds a header to the collection without checking whether the header is on the restricted header list.  
-  
+The <xref:System.Net.WebHeaderCollection.AddWithoutValidate%2A> method adds a header to the collection without checking whether the header is on the restricted header list.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -399,12 +399,12 @@
         <value>An array of type <see cref="T:System.String" /> containing all header names in a Web request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Net.WebHeaderCollection.AllKeys%2A> property to get the header names a <xref:System.Net.WebHeaderCollection>.  
-  
- [!code-csharp[WebHeaderCollection_Get_Values_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/webheadercollection_get_values_2/CS/webheadercollection_newprops.cs#1)]  
-  
+The following code example uses the <xref:System.Net.WebHeaderCollection.AllKeys%2A> property to get the header names a <xref:System.Net.WebHeaderCollection>.  
+ 
+[!code-csharp[WebHeaderCollection_Get_Values_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/webheadercollection_get_values_2/CS/webheadercollection_newprops.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -431,12 +431,12 @@
         <summary>Removes all headers from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example clears the headers in a <xref:System.Net.WebHeaderCollection>.  
-  
- [!code-csharp[WebHeaderCollection_Get_Values_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/webheadercollection_get_values_2/CS/webheadercollection_newprops.cs#1)]  
-  
+The following code example clears the headers in a <xref:System.Net.WebHeaderCollection>.  
+ 
+[!code-csharp[WebHeaderCollection_Get_Values_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/webheadercollection_get_values_2/CS/webheadercollection_newprops.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -467,12 +467,12 @@
         <value>An <see cref="T:System.Int32" /> indicating the number of headers in a request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Net.WebHeaderCollection.Count%2A> property to iterate through a <xref:System.Net.WebHeaderCollection>.  
-  
- [!code-csharp[WebHeaderCollection_Get_Values_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/webheadercollection_get_values_2/CS/webheadercollection_newprops.cs#1)]  
-  
+The following code example uses the <xref:System.Net.WebHeaderCollection.Count%2A> property to iterate through a <xref:System.Net.WebHeaderCollection>.  
+ 
+[!code-csharp[WebHeaderCollection_Get_Values_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/webheadercollection_get_values_2/CS/webheadercollection_newprops.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -503,12 +503,12 @@
         <returns>A <see cref="T:System.String" /> containing the value of the specified header.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Net.WebHeaderCollection.Get%2A> method to retrieve a header value in a <xref:System.Net.WebHeaderCollection>.  
-  
- [!code-csharp[WebHeaderCollection_Get_Values_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/webheadercollection_get_values_2/CS/webheadercollection_newprops.cs#1)]  
-  
+The following code example uses the <xref:System.Net.WebHeaderCollection.Get%2A> method to retrieve a header value in a <xref:System.Net.WebHeaderCollection>.  
+ 
+[!code-csharp[WebHeaderCollection_Get_Values_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/webheadercollection_get_values_2/CS/webheadercollection_newprops.cs#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -545,17 +545,17 @@
         <returns>A <see cref="T:System.String" /> holding the value of the specified header.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `null` if there is no `name` header in the collection.  
+This method returns `null` if there is no `name` header in the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Net.WebHeaderCollection.Get%2A> property to retrieve header values in a <xref:System.Net.WebHeaderCollection>.  
-  
- [!code-csharp[WebHeaderCollection_Get_Values_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/webheadercollection_get_values_2/CS/webheadercollection_newprops.cs#1)]  
-  
+The following code example uses the <xref:System.Net.WebHeaderCollection.Get%2A> property to retrieve header values in a <xref:System.Net.WebHeaderCollection>.  
+ 
+[!code-csharp[WebHeaderCollection_Get_Values_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/webheadercollection_get_values_2/CS/webheadercollection_newprops.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -610,12 +610,12 @@
         <returns>A <see cref="T:System.String" /> holding the header name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Net.WebHeaderCollection.GetKey%2A> to get a header name in a <xref:System.Net.WebHeaderCollection>.  
-  
- [!code-csharp[WebHeaderCollection_Get_Values_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/webheadercollection_get_values_2/CS/webheadercollection_newprops.cs#1)]  
-  
+The following code example uses <xref:System.Net.WebHeaderCollection.GetKey%2A> to get a header name in a <xref:System.Net.WebHeaderCollection>.  
+ 
+[!code-csharp[WebHeaderCollection_Get_Values_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/webheadercollection_get_values_2/CS/webheadercollection_newprops.cs#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -653,10 +653,10 @@
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any objects included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
-  
+Any objects included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -687,10 +687,10 @@
         <returns>An array of header strings.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Net.WebHeaderCollection.GetValues%2A> returns the contents of the specified header as an array.  
-  
+<xref:System.Net.WebHeaderCollection.GetValues%2A> returns the contents of the specified header as an array.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -721,19 +721,19 @@
         <returns>An array of header strings.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Net.WebHeaderCollection.GetValues%2A> returns the contents of the specified header as an array.  
+<xref:System.Net.WebHeaderCollection.GetValues%2A> returns the contents of the specified header as an array.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Net.WebHeaderCollection.GetValues%2A> method to retrieve an array of values for each header in the <xref:System.Net.WebHeaderCollection>.  
-  
- [!code-cpp[WebHeaderCollection_GetValues_1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebHeaderCollection_GetValues_1/CPP/webheadercollection_getvalues_1.cpp#1)]
- [!code-csharp[WebHeaderCollection_GetValues_1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebHeaderCollection_GetValues_1/CS/webheadercollection_getvalues_1.cs#1)]
- [!code-vb[WebHeaderCollection_GetValues_1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebHeaderCollection_GetValues_1/VB/webheadercollection_getvalues_1.vb#1)]  
-  
+The following example uses the <xref:System.Net.WebHeaderCollection.GetValues%2A> method to retrieve an array of values for each header in the <xref:System.Net.WebHeaderCollection>.  
+ 
+[!code-cpp[WebHeaderCollection_GetValues_1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebHeaderCollection_GetValues_1/CPP/webheadercollection_getvalues_1.cpp#1)]
+[!code-csharp[WebHeaderCollection_GetValues_1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebHeaderCollection_GetValues_1/CS/webheadercollection_getvalues_1.cs#1)]
+[!code-vb[WebHeaderCollection_GetValues_1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebHeaderCollection_GetValues_1/VB/webheadercollection_getvalues_1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -765,45 +765,45 @@
           <see langword="true" /> if the header is restricted; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.WebHeaderCollection.IsRestricted%2A> method returns `true` to indicate that a header is restricted and must be set using properties instead of directly or is set by the system. The restricted headers are:  
-  
+The <xref:System.Net.WebHeaderCollection.IsRestricted%2A> method returns `true` to indicate that a header is restricted and must be set using properties instead of directly or is set by the system. The restricted headers are:  
+ 
 -   Accept  
-  
+ 
 -   Connection  
-  
+ 
 -   Content-Length  
-  
+ 
 -   Content-Type  
-  
+ 
 -   Date  
-  
+ 
 -   Expect  
-  
+ 
 -   Host  
-  
+ 
 -   If-Modified-Since  
-  
+ 
 -   Range  
-  
+ 
 -   Referer  
-  
+ 
 -   Transfer-Encoding  
-  
+ 
 -   User-Agent  
-  
+ 
 -   Proxy-Connection  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example checks the <xref:System.Net.WebHeaderCollection.IsRestricted%2A> property to see if any headers are prohibited from being set.  
-  
- [!code-cpp[WebHeaderCollection_IsRestricted#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebHeaderCollection_IsRestricted/CPP/webheadercollection_isrestricted.cpp#1)]
- [!code-csharp[WebHeaderCollection_IsRestricted#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebHeaderCollection_IsRestricted/CS/webheadercollection_isrestricted.cs#1)]
- [!code-vb[WebHeaderCollection_IsRestricted#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebHeaderCollection_IsRestricted/VB/webheadercollection_isrestricted.vb#1)]  
-  
+The following example checks the <xref:System.Net.WebHeaderCollection.IsRestricted%2A> property to see if any headers are prohibited from being set.  
+ 
+[!code-cpp[WebHeaderCollection_IsRestricted#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebHeaderCollection_IsRestricted/CPP/webheadercollection_isrestricted.cpp#1)]
+[!code-csharp[WebHeaderCollection_IsRestricted#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebHeaderCollection_IsRestricted/CS/webheadercollection_isrestricted.cs#1)]
+[!code-vb[WebHeaderCollection_IsRestricted#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebHeaderCollection_IsRestricted/VB/webheadercollection_isrestricted.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -841,45 +841,45 @@
           <see langword="true" /> if the header is restricted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.WebHeaderCollection.IsRestricted%2A> method returns `true` to indicate that a request or response header is restricted and must be set using properties instead of directly or is set by the system. The restricted headers are:  
-  
+The <xref:System.Net.WebHeaderCollection.IsRestricted%2A> method returns `true` to indicate that a request or response header is restricted and must be set using properties instead of directly or is set by the system. The restricted headers are:  
+ 
 -   Accept  
-  
+ 
 -   Connection  
-  
+ 
 -   Content-Length  
-  
+ 
 -   Content-Type  
-  
+ 
 -   Date  
-  
+ 
 -   Expect  
-  
+ 
 -   Host  
-  
+ 
 -   If-Modified-Since  
-  
+ 
 -   Range  
-  
+ 
 -   Referer  
-  
+ 
 -   Transfer-Encoding  
-  
+ 
 -   User-Agent  
-  
+ 
 -   Proxy-Connection  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example checks the <xref:System.Net.WebHeaderCollection.IsRestricted%2A> property to see if any request headers are prohibited from being set.  
-  
- [!code-cpp[WebHeaderCollection_IsRestricted#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebHeaderCollection_IsRestricted/CPP/webheadercollection_isrestricted.cpp#1)]
- [!code-csharp[WebHeaderCollection_IsRestricted#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebHeaderCollection_IsRestricted/CS/webheadercollection_isrestricted.cs#1)]
- [!code-vb[WebHeaderCollection_IsRestricted#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebHeaderCollection_IsRestricted/VB/webheadercollection_isrestricted.vb#1)]  
-  
+The following example checks the <xref:System.Net.WebHeaderCollection.IsRestricted%2A> property to see if any request headers are prohibited from being set.  
+ 
+[!code-cpp[WebHeaderCollection_IsRestricted#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebHeaderCollection_IsRestricted/CPP/webheadercollection_isrestricted.cpp#1)]
+[!code-csharp[WebHeaderCollection_IsRestricted#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebHeaderCollection_IsRestricted/CS/webheadercollection_isrestricted.cs#1)]
+[!code-vb[WebHeaderCollection_IsRestricted#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebHeaderCollection_IsRestricted/VB/webheadercollection_isrestricted.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1049,10 +1049,10 @@
         <summary>Removes the specified header from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Net.WebHeaderCollection.Remove%2A> deletes the specified header from the collection. If the specified header does not exist, the method does nothing.  
-  
+<xref:System.Net.WebHeaderCollection.Remove%2A> deletes the specified header from the collection. If the specified header does not exist, the method does nothing.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Net.WebHeaderCollection" /> instance does not allow instances of <see cref="T:System.Net.HttpRequestHeader" />.</exception>
@@ -1083,10 +1083,10 @@
         <summary>Removes the specified header from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Net.WebHeaderCollection.Remove%2A> deletes the specified header from the collection. If the specified header does not exist, the method does nothing.  
-  
+<xref:System.Net.WebHeaderCollection.Remove%2A> deletes the specified header from the collection. If the specified header does not exist, the method does nothing.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Net.WebHeaderCollection" /> instance does not allow instances of <see cref="T:System.Net.HttpResponseHeader" />.</exception>
@@ -1121,19 +1121,19 @@
         <summary>Removes the specified header from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Net.WebHeaderCollection.Remove%2A> deletes the specified header from the collection. If the specified header does not exist, the method returns.  
+<xref:System.Net.WebHeaderCollection.Remove%2A> deletes the specified header from the collection. If the specified header does not exist, the method returns.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Net.WebHeaderCollection.Remove%2A> method to remove a header from the <xref:System.Net.WebHeaderCollection>. After the header is removed, this example prints all existing headers to the screen to prove that it has been removed.  
-  
- [!code-cpp[WebHeaderCollection_Remove#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebHeaderCollection_Remove/CPP/webheadercollection_remove.cpp#1)]
- [!code-csharp[WebHeaderCollection_Remove#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebHeaderCollection_Remove/CS/webheadercollection_remove.cs#1)]
- [!code-vb[WebHeaderCollection_Remove#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebHeaderCollection_Remove/VB/webheadercollection_remove.vb#1)]  
-  
+The following example uses the <xref:System.Net.WebHeaderCollection.Remove%2A> method to remove a header from the <xref:System.Net.WebHeaderCollection>. After the header is removed, this example prints all existing headers to the screen to prove that it has been removed.  
+ 
+[!code-cpp[WebHeaderCollection_Remove#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebHeaderCollection_Remove/CPP/webheadercollection_remove.cpp#1)]
+[!code-csharp[WebHeaderCollection_Remove#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebHeaderCollection_Remove/CS/webheadercollection_remove.cs#1)]
+[!code-vb[WebHeaderCollection_Remove#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebHeaderCollection_Remove/VB/webheadercollection_remove.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1173,12 +1173,12 @@
         <summary>Sets the specified header to the specified value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the header specified in the header does not exist, the <xref:System.Net.WebHeaderCollection.Set%2A> method inserts a new header into the list of header name/value pairs.  
-  
- If the header specified in `header` is already present, `value` replaces the existing value.  
-  
+If the header specified in the header does not exist, the <xref:System.Net.WebHeaderCollection.Set%2A> method inserts a new header into the list of header name/value pairs.  
+ 
+If the header specified in `header` is already present, `value` replaces the existing value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The length of <paramref name="value" /> is greater than 65535.</exception>
@@ -1212,12 +1212,12 @@
         <summary>Sets the specified header to the specified value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the header specified in the header does not exist, the <xref:System.Net.WebHeaderCollection.Set%2A> method inserts a new header into the list of header name/value pairs.  
-  
- If the header specified in `header` is already present, `value` replaces the existing value.  
-  
+If the header specified in the header does not exist, the <xref:System.Net.WebHeaderCollection.Set%2A> method inserts a new header into the list of header name/value pairs.  
+ 
+If the header specified in `header` is already present, `value` replaces the existing value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The length of <paramref name="value" /> is greater than 65535.</exception>
@@ -1251,21 +1251,21 @@
         <summary>Sets the specified header to the specified value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the header specified in the header does not exist, the <xref:System.Net.WebHeaderCollection.Set%2A> method inserts a new header into the list of header name/value pairs.  
+If the header specified in the header does not exist, the <xref:System.Net.WebHeaderCollection.Set%2A> method inserts a new header into the list of header name/value pairs.  
+ 
+If the header specified in `header` is already present, `value` replaces the existing value.  
+ 
   
- If the header specified in `header` is already present, `value` replaces the existing value.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Net.WebHeaderCollection.Set%2A> method to set the value of an existing header.  
-  
- [!code-cpp[WebHeaderCollection_Set#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebHeaderCollection_Set/CPP/webheadercollection_set.cpp#1)]
- [!code-csharp[WebHeaderCollection_Set#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebHeaderCollection_Set/CS/webheadercollection_set.cs#1)]
- [!code-vb[WebHeaderCollection_Set#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebHeaderCollection_Set/VB/webheadercollection_set.vb#1)]  
-  
+The following example uses the <xref:System.Net.WebHeaderCollection.Set%2A> method to set the value of an existing header.  
+ 
+[!code-cpp[WebHeaderCollection_Set#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebHeaderCollection_Set/CPP/webheadercollection_set.cpp#1)]
+[!code-csharp[WebHeaderCollection_Set#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebHeaderCollection_Set/CS/webheadercollection_set.cs#1)]
+[!code-vb[WebHeaderCollection_Set#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebHeaderCollection_Set/VB/webheadercollection_set.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

@@ -22,19 +22,19 @@
     <summary>Provides the means to create and manage duplex channels of different types that are used by clients to send and receive messages to and from service endpoints.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A duplex channel allows clients and servers to communicate with each other independently so that either can initiate calls to the other. A duplex service can send messages to the client endpoint, providing event-like behavior. Duplex communication occurs when a client establishes a session with a service and provides the service with a channel on which the service can send messages back to the client. The various <xref:System.ServiceModel.DuplexChannelFactory%601.CreateChannel%2A> methods are used to create these duplex channels. The duplex message pattern is one of three message patterns available to [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services. The other two message patterns are one-way and request-reply.  
+A duplex channel allows clients and servers to communicate with each other independently so that either can initiate calls to the other. A duplex service can send messages to the client endpoint, providing event-like behavior. Duplex communication occurs when a client establishes a session with a service and provides the service with a channel on which the service can send messages back to the client. The various <xref:System.ServiceModel.DuplexChannelFactory%601.CreateChannel%2A> methods are used to create these duplex channels. The duplex message pattern is one of three message patterns available to [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services. The other two message patterns are one-way and request-reply.  
+ 
+For a general discussion of duplex services that allow clients to connect back to the service, see [Duplex Services](~/docs/framework/wcf/feature-details/duplex-services.md). For an outline and discussion of the steps involved in writing a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client application using a channel factory, see [How to: Use the ChannelFactory](~/docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md). For a procedure describing how to create a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client in a client class that implements the callback interface to access a service that uses a duplex messaging pattern, see [How to: Access Services with a Duplex Contract](~/docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md).  
+ 
   
- For a general discussion of duplex services that allow clients to connect back to the service, see [Duplex Services](~/docs/framework/wcf/feature-details/duplex-services.md). For an outline and discussion of the steps involved in writing a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client application using a channel factory, see [How to: Use the ChannelFactory](~/docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md). For a procedure describing how to create a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client in a client class that implements the callback interface to access a service that uses a duplex messaging pattern, see [How to: Access Services with a Duplex Contract](~/docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md).  
-  
-   
-  
+ 
 ## Examples  
- The following sample shows how to create a channel factory and use it to create and manage channels.  
-  
- [!code-csharp[S_CustomAuthentication#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_customauthentication/cs/instance.cs#1)]  
-  
+The following sample shows how to create a channel factory and use it to create and manage channels.  
+ 
+[!code-csharp[S_CustomAuthentication#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_customauthentication/cs/instance.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to pass an object that implements the callback contract for the target service programmatically rather than by using an application configuration file.  
-  
+Use this constructor to pass an object that implements the callback contract for the target service programmatically rather than by using an application configuration file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -129,10 +129,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified binding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to pass an instance context object that implements the callback contract for the target service and to pass the binding information programmatically rather than by using an application configuration file.  
-  
+Use this constructor to pass an instance context object that implements the callback contract for the target service and to pass the binding information programmatically rather than by using an application configuration file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -159,10 +159,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and to pass the service endpoint information programmatically rather than using an application configuration file.  
-  
+Use this constructor to pass a service object that implements the callback contract for the target service and to pass the service endpoint information programmatically rather than using an application configuration file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -189,10 +189,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the client application configuration file.  
-  
+Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the client application configuration file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -219,10 +219,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with a context that implements the callback contract and a specified binding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to pass an instance context object that implements the callback contract for the target service and to pass the binding information programmatically rather than by using an application configuration file.  
-  
+Use this constructor to pass an instance context object that implements the callback contract for the target service and to pass the binding information programmatically rather than by using an application configuration file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -249,10 +249,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to pass an instance context object that implements the callback contract for the target service and to pass the endpoint information programmatically rather than by using an application configuration file.  
-  
+Use this constructor to pass an instance context object that implements the callback contract for the target service and to pass the endpoint information programmatically rather than by using an application configuration file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -279,10 +279,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to pass an instance context object that implements the callback contract for the target service and to determine the target endpoint information from the client application configuration file.  
-  
+Use this constructor to pass an instance context object that implements the callback contract for the target service and to determine the target endpoint information from the client application configuration file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -380,10 +380,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified binding and endpoint address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and pass in the binding and address information programmatically rather than using an application configuration file.  
-  
+Use this constructor to pass a service object that implements the callback contract for the target service and pass in the binding and address information programmatically rather than using an application configuration file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -437,10 +437,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract, and a specified configuration and endpoint address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service, pass in the address information programmatically, and determine the remaining target endpoint information from the client application configuration file.  
-  
+Use this constructor to pass a service object that implements the callback contract for the target service, pass in the address information programmatically, and determine the remaining target endpoint information from the client application configuration file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -469,10 +469,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified binding and endpoint address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to pass an instance context object that implements the callback contract for the target service and to pass in the binding and address information programmatically rather than using an application configuration file.  
-  
+Use this constructor to pass an instance context object that implements the callback contract for the target service and to pass in the binding and address information programmatically rather than using an application configuration file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -526,10 +526,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified configuration and endpoint address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to pass an instance context object that implements the callback contract for the target service address information programmatically, pass in the address information programmatically, and determine the remaining target endpoint information from the client application configuration file.  
-  
+Use this constructor to pass an instance context object that implements the callback contract for the target service address information programmatically, pass in the address information programmatically, and determine the remaining target endpoint information from the client application configuration file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

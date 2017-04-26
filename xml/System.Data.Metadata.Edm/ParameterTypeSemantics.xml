@@ -13,10 +13,10 @@
     <summary>Specifies the type semantics that are used to resolve the function overloads. Each store provider must use these enumeration flags in the provider manifest file for every function definition.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Metadata.Edm.ParameterTypeSemantics> class specifies type semantics for promotability, implicit conversion, and explicit conversion for the provider primitive types. [!INCLUDE[vstecado](~/includes/vstecado-md.md)] reads this information from the storage provider manifest file into the <xref:System.Data.Metadata.Edm.ParameterTypeSemantics> class. Then, [!INCLUDE[vstecado](~/includes/vstecado-md.md)] uses the <xref:System.Data.Metadata.Edm.ParameterTypeSemantics> class to determine the appropriate function definitions based on the parameter types.  
-  
+The <xref:System.Data.Metadata.Edm.ParameterTypeSemantics> class specifies type semantics for promotability, implicit conversion, and explicit conversion for the provider primitive types. [!INCLUDE[vstecado](~/includes/vstecado-md.md)] reads this information from the storage provider manifest file into the <xref:System.Data.Metadata.Edm.ParameterTypeSemantics> class. Then, [!INCLUDE[vstecado](~/includes/vstecado-md.md)] uses the <xref:System.Data.Metadata.Edm.ParameterTypeSemantics> class to determine the appropriate function definitions based on the parameter types.  
+ 
  ]]></format>
     </remarks>
   </Docs>

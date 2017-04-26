@@ -18,10 +18,10 @@
     <summary>Specifies how a durable service will handle an unknown exception.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, when a durable service is created, <xref:System.ServiceModel.Description.DurableServiceAttribute.UnknownExceptionAction%2A> is set to TerminateInstance.  
-  
+By default, when a durable service is created, <xref:System.ServiceModel.Description.DurableServiceAttribute.UnknownExceptionAction%2A> is set to TerminateInstance.  
+ 
  ]]></format>
     </remarks>
   </Docs>

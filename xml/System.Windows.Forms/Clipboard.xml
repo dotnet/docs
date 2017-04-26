@@ -14,19 +14,19 @@
     <summary>Provides methods to place data on and retrieve data from the system Clipboard. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of predefined formats to use with the <xref:System.Windows.Forms.Clipboard> class, see the <xref:System.Windows.Forms.DataFormats> class.  
-  
- Call <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> to put data on the Clipboard, replacing its current contents. To place a persistent copy of the data on the Clipboard, set the `copy` parameter to `true`.  
-  
+For a list of predefined formats to use with the <xref:System.Windows.Forms.Clipboard> class, see the <xref:System.Windows.Forms.DataFormats> class.  
+ 
+Call <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> to put data on the Clipboard, replacing its current contents. To place a persistent copy of the data on the Clipboard, set the `copy` parameter to `true`.  
+ 
 > [!NOTE]
 >  To place data on the Clipboard in multiple formats, use the <xref:System.Windows.Forms.DataObject> class or an <xref:System.Windows.Forms.IDataObject> implementation. Place data on the Clipboard in multiple formats to maximize the possibility that a target application, whose format requirements you might not know, can successfully retrieve the data.  
-  
- Call <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> to retrieve data from the Clipboard. The data is returned as an object that implements the <xref:System.Windows.Forms.IDataObject> interface. Use the methods specified by <xref:System.Windows.Forms.IDataObject> and fields in <xref:System.Windows.Forms.DataFormats> to extract the data from the object. If you do not know the format of the data you retrieved, call the <xref:System.Windows.Forms.IDataObject.GetFormats%2A> method of the <xref:System.Windows.Forms.IDataObject> interface to get a list of all formats that data is stored in. Then call the <xref:System.Windows.Forms.IDataObject.GetData%2A> method of the <xref:System.Windows.Forms.IDataObject> interface, and specify a format that your application can use.  
-  
- In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the <xref:System.Windows.Forms.Clipboard> class provides additional methods that make it easier to work with the system Clipboard. Call the <xref:System.Windows.Forms.Clipboard.Clear%2A> method to remove all data from the Clipboard. To add data of a particular format to the Clipboard, replacing the existing data, call the appropriate `Set`*Format* method, such as <xref:System.Windows.Forms.Clipboard.SetText%2A>, or call the <xref:System.Windows.Forms.Clipboard.SetData%2A> method to specify the format. To retrieve data of a particular format from the Clipboard, first call the appropriate `Contains`*Format* method (such as <xref:System.Windows.Forms.Clipboard.ContainsText%2A>) method to determine whether the Clipboard contains data in that format, and then call the appropriate `Get`*Format* method (such as <xref:System.Windows.Forms.Clipboard.GetText%2A>) to retrieve the data if the Clipboard contains it. To specify the format in these operations, call the <xref:System.Windows.Forms.Clipboard.ContainsData%2A> and <xref:System.Windows.Forms.Clipboard.GetData%2A> methods instead.  
-  
+ 
+Call <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> to retrieve data from the Clipboard. The data is returned as an object that implements the <xref:System.Windows.Forms.IDataObject> interface. Use the methods specified by <xref:System.Windows.Forms.IDataObject> and fields in <xref:System.Windows.Forms.DataFormats> to extract the data from the object. If you do not know the format of the data you retrieved, call the <xref:System.Windows.Forms.IDataObject.GetFormats%2A> method of the <xref:System.Windows.Forms.IDataObject> interface to get a list of all formats that data is stored in. Then call the <xref:System.Windows.Forms.IDataObject.GetData%2A> method of the <xref:System.Windows.Forms.IDataObject> interface, and specify a format that your application can use.  
+ 
+In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the <xref:System.Windows.Forms.Clipboard> class provides additional methods that make it easier to work with the system Clipboard. Call the <xref:System.Windows.Forms.Clipboard.Clear%2A> method to remove all data from the Clipboard. To add data of a particular format to the Clipboard, replacing the existing data, call the appropriate `Set`*Format* method, such as <xref:System.Windows.Forms.Clipboard.SetText%2A>, or call the <xref:System.Windows.Forms.Clipboard.SetData%2A> method to specify the format. To retrieve data of a particular format from the Clipboard, first call the appropriate `Contains`*Format* method (such as <xref:System.Windows.Forms.Clipboard.ContainsText%2A>) method to determine whether the Clipboard contains data in that format, and then call the appropriate `Get`*Format* method (such as <xref:System.Windows.Forms.Clipboard.GetText%2A>) to retrieve the data if the Clipboard contains it. To specify the format in these operations, call the <xref:System.Windows.Forms.Clipboard.ContainsData%2A> and <xref:System.Windows.Forms.Clipboard.GetData%2A> methods instead.  
+ 
 > [!NOTE]
 >  All Windows-based applications share the system Clipboard, so the contents are subject to change when you switch to another application.  
 >   
@@ -35,20 +35,20 @@
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
 >   
 >  Special considerations may be necessary when using the metafile format with the Clipboard. Due to a limitation in the current implementation of the <xref:System.Windows.Forms.DataObject> class, the metafile format used by the .NET Framework may not be recognized by applications that use an older metafile format. In this case, you must interoperate with the Win32 Clipboard application programming interfaces (APIs). For more information, see article 323530, "Metafiles on Clipboard Are Not Visible to All Applications," in the Microsoft Knowledge Base at http://support.microsoft.com.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Windows.Forms.Clipboard> methods to place data on and retrieve it from the system Clipboard. This code assumes `button1`, `button2`, `textBox1`, and `textBox2` have been created and placed on the form.  
-  
- The `button1_Click` method calls <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> to take selected text from the text box and place it on the system Clipboard.  
-  
- The `button2_Click` method calls <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> to retrieve data from the system Clipboard. The code uses <xref:System.Windows.Forms.IDataObject> and <xref:System.Windows.Forms.DataFormats> to extract the data returned and displays the data in `textBox2`.  
-  
- [!code-cpp[Classic Clipboard Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Clipboard Example/CPP/source.cpp#1)]
- [!code-csharp[Classic Clipboard Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Clipboard Example/CS/source.cs#1)]
- [!code-vb[Classic Clipboard Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Clipboard Example/VB/source.vb#1)]  
-  
+The following code example uses <xref:System.Windows.Forms.Clipboard> methods to place data on and retrieve it from the system Clipboard. This code assumes `button1`, `button2`, `textBox1`, and `textBox2` have been created and placed on the form.  
+ 
+The `button1_Click` method calls <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> to take selected text from the text box and place it on the system Clipboard.  
+ 
+The `button2_Click` method calls <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> to retrieve data from the system Clipboard. The code uses <xref:System.Windows.Forms.IDataObject> and <xref:System.Windows.Forms.DataFormats> to extract the data returned and displays the data in `textBox2`.  
+ 
+[!code-cpp[Classic Clipboard Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Clipboard Example/CPP/source.cpp#1)]
+[!code-csharp[Classic Clipboard Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Clipboard Example/CS/source.cs#1)]
+[!code-vb[Classic Clipboard Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Clipboard Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,21 +70,21 @@
         <summary>Removes all data from the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because the Clipboard is shared by multiple processes, calling this method may have an impact on those processes.  
-  
+Because the Clipboard is shared by multiple processes, calling this method may have an impact on those processes.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.Clipboard#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#1)]  
-  
+The following example demonstrates this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.Clipboard#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -111,21 +111,21 @@
           <see langword="true" /> if there is audio data on the Clipboard; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to determine whether the Clipboard contains audio data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetAudioStream%2A> method.  
-  
+Use this method to determine whether the Clipboard contains audio data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetAudioStream%2A> method.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#20)]
- [!code-vb[System.Windows.Forms.Clipboard#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#20)]  
-  
+The following code example demonstrates the use of this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#20)]
+[!code-vb[System.Windows.Forms.Clipboard#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#20)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -155,25 +155,25 @@
           <see langword="true" /> if there is data on the Clipboard that is in the specified <paramref name="format" /> or can be converted to that format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataFormats> class contains pre-defined format names that you can use with this method.  
-  
- Use this method to determine whether the Clipboard contains data in the specified format or a compatible format before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetData%2A> method.  
-  
+The <xref:System.Windows.Forms.DataFormats> class contains pre-defined format names that you can use with this method.  
+ 
+Use this method to determine whether the Clipboard contains data in the specified format or a compatible format before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetData%2A> method.  
+ 
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
 >   
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#10)]
- [!code-vb[System.Windows.Forms.Clipboard#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#10)]  
-  
+The following example demonstrates this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#10)]
+[!code-vb[System.Windows.Forms.Clipboard#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -200,23 +200,23 @@
           <see langword="true" /> if there is a file drop list on the Clipboard; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A file drop list is a collection of strings containing path information for files.  
-  
- Use this method to determine whether the Clipboard contains a file drop list before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetFileDropList%2A> method.  
-  
+A file drop list is a collection of strings containing path information for files.  
+ 
+Use this method to determine whether the Clipboard contains a file drop list before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetFileDropList%2A> method.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#30)]
- [!code-vb[System.Windows.Forms.Clipboard#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#30)]  
-  
+The following example demonstrates this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#30)]
+[!code-vb[System.Windows.Forms.Clipboard#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#30)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -243,21 +243,21 @@
           <see langword="true" /> if there is image data on the Clipboard; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to determine whether the Clipboard contains image data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetImage%2A> method.  
-  
+Use this method to determine whether the Clipboard contains image data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetImage%2A> method.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#40)]
- [!code-vb[System.Windows.Forms.Clipboard#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#40)]  
-  
+The following example demonstrates this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#40)]
+[!code-vb[System.Windows.Forms.Clipboard#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#40)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -284,23 +284,23 @@
           <see langword="true" /> if there is text data on the Clipboard; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method checks for the presence of data in the <xref:System.Windows.Forms.TextDataFormat> format on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. Otherwise, this method checks for the presence of data in the <xref:System.Windows.Forms.TextDataFormat> format.  
-  
- Use this method to determine whether the Clipboard contains text data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetText%2A> method.  
-  
+This method checks for the presence of data in the <xref:System.Windows.Forms.TextDataFormat> format on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. Otherwise, this method checks for the presence of data in the <xref:System.Windows.Forms.TextDataFormat> format.  
+ 
+Use this method to determine whether the Clipboard contains text data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetText%2A> method.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates an overload of the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method that is similar to this overload.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
- [!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
-  
+The following example demonstrates an overload of the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method that is similar to this overload.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
+[!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -330,21 +330,21 @@
           <see langword="true" /> if there is text data on the Clipboard in the value specified for <paramref name="format" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to determine whether the Clipboard contains text data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetText%2A> method.  
-  
+Use this method to determine whether the Clipboard contains text data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetText%2A> method.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
- [!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
-  
+The following example demonstrates this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
+[!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -372,23 +372,23 @@
         <returns>A <see cref="T:System.IO.Stream" /> containing audio data or <see langword="null" /> if the Clipboard does not contain any data in the <see cref="F:System.Windows.Forms.DataFormats.WaveAudio" /> format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.Clipboard.ContainsAudio%2A> method to determine whether the Clipboard contains audio data before retrieving it with this method.  
-  
- Use the <xref:System.Windows.Forms.Clipboard.SetAudio%2A> method to add audio data to the Clipboard.  
-  
+Use the <xref:System.Windows.Forms.Clipboard.ContainsAudio%2A> method to determine whether the Clipboard contains audio data before retrieving it with this method.  
+ 
+Use the <xref:System.Windows.Forms.Clipboard.SetAudio%2A> method to add audio data to the Clipboard.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#20)]
- [!code-vb[System.Windows.Forms.Clipboard#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#20)]  
-  
+The following example demonstrates this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#20)]
+[!code-vb[System.Windows.Forms.Clipboard#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#20)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -417,27 +417,27 @@
         <returns>An <see cref="T:System.Object" /> representing the Clipboard data or <see langword="null" /> if the Clipboard does not contain any data that is in the specified <paramref name="format" /> or can be converted to that format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.Clipboard.ContainsData%2A> method to determine whether the Clipboard contains data in the specified format or a compatible format before retrieving it with this method.  
-  
- If this method cannot find data in the specified format, it attempts to convert the data to the format. If the data cannot be converted to the specified format, or if the data was stored with automatic conversion set to `false`, this method returns `null`.  
-  
+Use the <xref:System.Windows.Forms.Clipboard.ContainsData%2A> method to determine whether the Clipboard contains data in the specified format or a compatible format before retrieving it with this method.  
+ 
+If this method cannot find data in the specified format, it attempts to convert the data to the format. If the data cannot be converted to the specified format, or if the data was stored with automatic conversion set to `false`, this method returns `null`.  
+ 
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
 >   
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
+Use the <xref:System.Windows.Forms.Clipboard.SetData%2A> method to add data to the Clipboard in a particular format.  
+ 
   
- Use the <xref:System.Windows.Forms.Clipboard.SetData%2A> method to add data to the Clipboard in a particular format.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#10)]
- [!code-vb[System.Windows.Forms.Clipboard#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#10)]  
-  
+The following example demonstrates this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#10)]
+[!code-vb[System.Windows.Forms.Clipboard#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -463,28 +463,28 @@
         <returns>An <see cref="T:System.Windows.Forms.IDataObject" /> that represents the data currently on the Clipboard, or <see langword="null" /> if there is no data on the Clipboard.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because the data type of the object returned from the Clipboard can vary, this method returns the data in an <xref:System.Windows.Forms.IDataObject>. Then you can use methods of the <xref:System.Windows.Forms.IDataObject> interface to extract the data in its proper data type.  
-  
- This method attempts to get the data ten times in 100-millisecond intervals, and throws an <xref:System.Runtime.InteropServices.ExternalException> if all attempts are unsuccessful.  
-  
+Because the data type of the object returned from the Clipboard can vary, this method returns the data in an <xref:System.Windows.Forms.IDataObject>. Then you can use methods of the <xref:System.Windows.Forms.IDataObject> interface to extract the data in its proper data type.  
+ 
+This method attempts to get the data ten times in 100-millisecond intervals, and throws an <xref:System.Runtime.InteropServices.ExternalException> if all attempts are unsuccessful.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Windows.Forms.Clipboard> methods to place data on and retrieve it from the system Clipboard. This code assumes `button1`, `button2`, `textBox1`, and `textBox2` have been placed on the form.  
-  
- The `button1_Click` method calls <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> to take selected text from the text box and place it on the system Clipboard.  
-  
- The `button2_Click` method calls <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> to retrieve data from the system Clipboard. The code uses <xref:System.Windows.Forms.IDataObject> and <xref:System.Windows.Forms.DataFormats> to extract the data returned. The data is displayed in `textBox2`.  
-  
- [!code-cpp[Classic Clipboard Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Clipboard Example/CPP/source.cpp#1)]
- [!code-csharp[Classic Clipboard Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Clipboard Example/CS/source.cs#1)]
- [!code-vb[Classic Clipboard Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Clipboard Example/VB/source.vb#1)]  
-  
+The following code example uses <xref:System.Windows.Forms.Clipboard> methods to place data on and retrieve it from the system Clipboard. This code assumes `button1`, `button2`, `textBox1`, and `textBox2` have been placed on the form.  
+ 
+The `button1_Click` method calls <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> to take selected text from the text box and place it on the system Clipboard.  
+ 
+The `button2_Click` method calls <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> to retrieve data from the system Clipboard. The code uses <xref:System.Windows.Forms.IDataObject> and <xref:System.Windows.Forms.DataFormats> to extract the data returned. The data is displayed in `textBox2`.  
+ 
+[!code-cpp[Classic Clipboard Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Clipboard Example/CPP/source.cpp#1)]
+[!code-csharp[Classic Clipboard Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Clipboard Example/CS/source.cs#1)]
+[!code-vb[Classic Clipboard Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Clipboard Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">Data could not be retrieved from the Clipboard. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -510,27 +510,27 @@
         <returns>A <see cref="T:System.Collections.Specialized.StringCollection" /> containing file names or <see langword="null" /> if the Clipboard does not contain any data that is in the <see cref="F:System.Windows.Forms.DataFormats.FileDrop" /> format or can be converted to that format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A file drop list is a collection of strings containing path information for files.  
-  
- A file drop list is stored on the Clipboard as a <xref:System.String> array. This method converts this array to a <xref:System.Collections.Specialized.StringCollection> and returns the collection.  
-  
- Use the <xref:System.Windows.Forms.Clipboard.ContainsFileDropList%2A> method to determine whether the Clipboard contains a file drop list before retrieving it with this method.  
-  
- Use the <xref:System.Windows.Forms.Clipboard.SetFileDropList%2A> method to add a file drop list to the Clipboard.  
-  
+A file drop list is a collection of strings containing path information for files.  
+ 
+A file drop list is stored on the Clipboard as a <xref:System.String> array. This method converts this array to a <xref:System.Collections.Specialized.StringCollection> and returns the collection.  
+ 
+Use the <xref:System.Windows.Forms.Clipboard.ContainsFileDropList%2A> method to determine whether the Clipboard contains a file drop list before retrieving it with this method.  
+ 
+Use the <xref:System.Windows.Forms.Clipboard.SetFileDropList%2A> method to add a file drop list to the Clipboard.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#30)]
- [!code-vb[System.Windows.Forms.Clipboard#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#30)]  
-  
+The following example demonstrates this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#30)]
+[!code-vb[System.Windows.Forms.Clipboard#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#30)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -556,23 +556,23 @@
         <returns>An <see cref="T:System.Drawing.Image" /> representing the Clipboard image data or <see langword="null" /> if the Clipboard does not contain any data that is in the <see cref="F:System.Windows.Forms.DataFormats.Bitmap" /> format or can be converted to that format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.Clipboard.ContainsImage%2A> method to determine whether the Clipboard contains image data before retrieving it with this method.  
-  
- Use the <xref:System.Windows.Forms.Clipboard.SetImage%2A> method to add image data to the Clipboard.  
-  
+Use the <xref:System.Windows.Forms.Clipboard.ContainsImage%2A> method to determine whether the Clipboard contains image data before retrieving it with this method.  
+ 
+Use the <xref:System.Windows.Forms.Clipboard.SetImage%2A> method to add image data to the Clipboard.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#40)]
- [!code-vb[System.Windows.Forms.Clipboard#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#40)]  
-  
+The following example demonstrates this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#40)]
+[!code-vb[System.Windows.Forms.Clipboard#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#40)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -598,25 +598,25 @@
         <returns>The Clipboard text data or <see cref="F:System.String.Empty" /> if the Clipboard does not contain data in the <see cref="F:System.Windows.Forms.TextDataFormat.Text" /> or <see cref="F:System.Windows.Forms.TextDataFormat.UnicodeText" /> format, depending on the operating system.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns text data in the <xref:System.Windows.Forms.TextDataFormat> format on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. Otherwise, this method returns text data in the <xref:System.Windows.Forms.TextDataFormat> format.  
-  
- Use the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method to determine whether the Clipboard contains text data before retrieving it with this method.  
-  
- Use the <xref:System.Windows.Forms.Clipboard.SetText%2A> method to add text data to the Clipboard.  
-  
+This method returns text data in the <xref:System.Windows.Forms.TextDataFormat> format on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. Otherwise, this method returns text data in the <xref:System.Windows.Forms.TextDataFormat> format.  
+ 
+Use the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method to determine whether the Clipboard contains text data before retrieving it with this method.  
+ 
+Use the <xref:System.Windows.Forms.Clipboard.SetText%2A> method to add text data to the Clipboard.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates an overload of the <xref:System.Windows.Forms.Clipboard.GetText%2A> method that is similar to this overload.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
- [!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
-  
+The following example demonstrates an overload of the <xref:System.Windows.Forms.Clipboard.GetText%2A> method that is similar to this overload.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
+[!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -645,23 +645,23 @@
         <returns>The Clipboard text data or <see cref="F:System.String.Empty" /> if the Clipboard does not contain data in the specified format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method to determine whether the Clipboard contains text data before retrieving it with this method.  
-  
- Use the <xref:System.Windows.Forms.Clipboard.SetText%2A> method to add text data to the Clipboard.  
-  
+Use the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method to determine whether the Clipboard contains text data before retrieving it with this method.  
+ 
+Use the <xref:System.Windows.Forms.Clipboard.SetText%2A> method to add text data to the Clipboard.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
- [!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
-  
+The following example demonstrates this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
+[!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -691,21 +691,21 @@
         <summary>Clears the Clipboard and then adds a <see cref="T:System.Byte" /> array in the <see cref="F:System.Windows.Forms.DataFormats.WaveAudio" /> format after converting it to a <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To retrieve audio data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsAudio%2A> method to determine whether the Clipboard contains audio data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetAudioStream%2A> method.  
-  
+To retrieve audio data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsAudio%2A> method to determine whether the Clipboard contains audio data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetAudioStream%2A> method.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates an overload of the <xref:System.Windows.Forms.Clipboard.SetAudio%2A> method that is similar to this overload.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#20)]
- [!code-vb[System.Windows.Forms.Clipboard#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#20)]  
-  
+The following example demonstrates an overload of the <xref:System.Windows.Forms.Clipboard.SetAudio%2A> method that is similar to this overload.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#20)]
+[!code-vb[System.Windows.Forms.Clipboard#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#20)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -735,21 +735,21 @@
         <summary>Clears the Clipboard and then adds a <see cref="T:System.IO.Stream" /> in the <see cref="F:System.Windows.Forms.DataFormats.WaveAudio" /> format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To retrieve audio data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsAudio%2A> method to determine whether the Clipboard contains audio data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetAudioStream%2A> method.  
-  
+To retrieve audio data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsAudio%2A> method to determine whether the Clipboard contains audio data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetAudioStream%2A> method.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#20)]
- [!code-vb[System.Windows.Forms.Clipboard#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#20)]  
-  
+The following example demonstrates this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#20)]
+[!code-vb[System.Windows.Forms.Clipboard#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#20)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -781,25 +781,25 @@
         <summary>Clears the Clipboard and then adds data in the specified format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not know the format of the target application, you can store data in multiple formats using this method.  
-  
- Data stored using this method can be converted to a compatible format when it is retrieved.  
-  
- To retrieve data from the Clipboard in a particular format, first use the <xref:System.Windows.Forms.Clipboard.ContainsData%2A> method to determine whether the Clipboard contains data in that format before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetData%2A> method.  
-  
+If you do not know the format of the target application, you can store data in multiple formats using this method.  
+ 
+Data stored using this method can be converted to a compatible format when it is retrieved.  
+ 
+To retrieve data from the Clipboard in a particular format, first use the <xref:System.Windows.Forms.Clipboard.ContainsData%2A> method to determine whether the Clipboard contains data in that format before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetData%2A> method.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#10)]
- [!code-vb[System.Windows.Forms.Clipboard#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#10)]  
-  
+The following example demonstrates this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#10)]
+[!code-vb[System.Windows.Forms.Clipboard#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -829,26 +829,26 @@
         <summary>Clears the Clipboard and then places nonpersistent data on it.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Data will be deleted from system Clipboard when the application exits.  
-  
- This method attempts to set the data ten times in 100-millisecond intervals, and throws an <xref:System.Runtime.InteropServices.ExternalException> if all attempts are unsuccessful.  
-  
+Data will be deleted from system Clipboard when the application exits.  
+ 
+This method attempts to set the data ten times in 100-millisecond intervals, and throws an <xref:System.Runtime.InteropServices.ExternalException> if all attempts are unsuccessful.  
+ 
 > [!NOTE]
 >  An object must be serializable for it to be put on the Clipboard. If you pass a non-serializable object to this method, it will fail without throwing an exception. See <xref:System.Runtime.Serialization> for more information on serialization.  
 >   
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> to place nonpersistent text data onto the system Clipboard. In the `button1_Click` method, the selected text is copied from `textBox1` and pasted on the Clipboard. In the `button2_Click` method, the information is retrieved from the Clipboard and displayed in `textBox2`. This code assumes `button1`, `button2`, `textBox1`, and `textBox2` have been created and placed on a form.  
-  
- [!code-cpp[Classic Clipboard Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Clipboard Example/CPP/source.cpp#1)]
- [!code-csharp[Classic Clipboard Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Clipboard Example/CS/source.cs#1)]
- [!code-vb[Classic Clipboard Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Clipboard Example/VB/source.vb#1)]  
-  
+The following code example uses <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> to place nonpersistent text data onto the system Clipboard. In the `button1_Click` method, the selected text is copied from `textBox1` and pasted on the Clipboard. In the `button2_Click` method, the information is retrieved from the Clipboard and displayed in `textBox2`. This code assumes `button1`, `button2`, `textBox1`, and `textBox2` have been created and placed on a form.  
+ 
+[!code-cpp[Classic Clipboard Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Clipboard Example/CPP/source.cpp#1)]
+[!code-csharp[Classic Clipboard Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Clipboard Example/CS/source.cs#1)]
+[!code-vb[Classic Clipboard Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Clipboard Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">Data could not be placed on the Clipboard. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -880,32 +880,32 @@
         <summary>Clears the Clipboard and then places data on it and specifies whether the data should remain after the application exits.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `copy` parameter is `false`, the data will be deleted from system Clipboard when the application exits.  
-  
- This method attempts to set the data ten times in 100-millisecond intervals, and throws an <xref:System.Runtime.InteropServices.ExternalException> if all attempts are unsuccessful.  
-  
+If the `copy` parameter is `false`, the data will be deleted from system Clipboard when the application exits.  
+ 
+This method attempts to set the data ten times in 100-millisecond intervals, and throws an <xref:System.Runtime.InteropServices.ExternalException> if all attempts are unsuccessful.  
+ 
 > [!NOTE]
 >  An object must be serializable for it to be put on the Clipboard. If you pass a non-serializable object to this method, it will fail without throwing an exception. See <xref:System.Runtime.Serialization> for more information on serialization.  
 >   
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following method is run in an application. It places a persistent copy of the selected text data in the text box on the system Clipboard. This code assumes `button1`, `textBox1`, and `textBox2` have been created and placed on a form.  
-  
- [!code-cpp[Classic Clipboard.SetDataObject1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic Clipboard.SetDataObject1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/CS/source.cs#1)]
- [!code-vb[Classic Clipboard.SetDataObject1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/VB/source.vb#1)]  
-  
- In a different application, the following method retrieves the text from the system Clipboard and pastes the text into `textBox2`. This code assumes `button2` and `textBox2` have been created and placed on a form.  
-  
- [!code-cpp[Classic Clipboard.SetDataObject1 Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/CPP/source.cpp#2)]
- [!code-csharp[Classic Clipboard.SetDataObject1 Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/CS/source.cs#2)]
- [!code-vb[Classic Clipboard.SetDataObject1 Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/VB/source.vb#2)]  
-  
+The following method is run in an application. It places a persistent copy of the selected text data in the text box on the system Clipboard. This code assumes `button1`, `textBox1`, and `textBox2` have been created and placed on a form.  
+ 
+[!code-cpp[Classic Clipboard.SetDataObject1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic Clipboard.SetDataObject1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/CS/source.cs#1)]
+[!code-vb[Classic Clipboard.SetDataObject1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/VB/source.vb#1)]  
+ 
+In a different application, the following method retrieves the text from the system Clipboard and pastes the text into `textBox2`. This code assumes `button2` and `textBox2` have been created and placed on a form.  
+ 
+[!code-cpp[Classic Clipboard.SetDataObject1 Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/CPP/source.cpp#2)]
+[!code-csharp[Classic Clipboard.SetDataObject1 Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/CS/source.cs#2)]
+[!code-vb[Classic Clipboard.SetDataObject1 Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/VB/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">Data could not be placed on the Clipboard. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -941,17 +941,17 @@
         <summary>Clears the Clipboard and then attempts to place data on it the specified number of times and with the specified delay between attempts, optionally leaving the data on the Clipboard after the application exits.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adding data to the Clipboard can occasionally fail if the Clipboard is busy with another thread or application. This method is useful to work around this issue in environments with heavy Clipboard use.  
-  
- If the `copy` parameter is `false`, the data will be deleted from system Clipboard when the application exits.  
-  
+Adding data to the Clipboard can occasionally fail if the Clipboard is busy with another thread or application. This method is useful to work around this issue in environments with heavy Clipboard use.  
+ 
+If the `copy` parameter is `false`, the data will be deleted from system Clipboard when the application exits.  
+ 
 > [!NOTE]
 >  An object must be serializable for it to be put on the Clipboard. If you pass a non-serializable object to this method, it will fail without throwing an exception. See <xref:System.Runtime.Serialization> for more information on serialization.  
 >   
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
@@ -987,25 +987,25 @@
         <summary>Clears the Clipboard and then adds a collection of file names in the <see cref="F:System.Windows.Forms.DataFormats.FileDrop" /> format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A file drop list is a collection of strings containing path information for files.  
-  
- A file drop list is stored on the Clipboard as a <xref:System.String> array. This method converts `filePaths` to a <xref:System.String> array before adding it to the Clipboard.  
-  
- To retrieve a file drop list from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsFileDropList%2A> method to determine whether the Clipboard contains data in that format before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetFileDropList%2A> method.  
-  
+A file drop list is a collection of strings containing path information for files.  
+ 
+A file drop list is stored on the Clipboard as a <xref:System.String> array. This method converts `filePaths` to a <xref:System.String> array before adding it to the Clipboard.  
+ 
+To retrieve a file drop list from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsFileDropList%2A> method to determine whether the Clipboard contains data in that format before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetFileDropList%2A> method.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#30)]
- [!code-vb[System.Windows.Forms.Clipboard#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#30)]  
-  
+The following example demonstrates this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#30)]
+[!code-vb[System.Windows.Forms.Clipboard#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#30)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -1044,21 +1044,21 @@
         <summary>Clears the Clipboard and then adds an <see cref="T:System.Drawing.Image" /> in the <see cref="F:System.Windows.Forms.DataFormats.Bitmap" /> format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To retrieve image data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsImage%2A> method to determine whether the Clipboard contains image data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetImage%2A> method.  
-  
+To retrieve image data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsImage%2A> method to determine whether the Clipboard contains image data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetImage%2A> method.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#40)]
- [!code-vb[System.Windows.Forms.Clipboard#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#40)]  
-  
+The following example demonstrates this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#40)]
+[!code-vb[System.Windows.Forms.Clipboard#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#40)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -1088,23 +1088,23 @@
         <summary>Clears the Clipboard and then adds text data in the <see cref="F:System.Windows.Forms.TextDataFormat.Text" /> or <see cref="F:System.Windows.Forms.TextDataFormat.UnicodeText" /> format, depending on the operating system.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds text data in the <xref:System.Windows.Forms.TextDataFormat> format on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. Otherwise, this method adds text data in the <xref:System.Windows.Forms.TextDataFormat> format.  
-  
- To retrieve text data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method to determine whether the Clipboard contains text data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetText%2A> method.  
-  
+This method adds text data in the <xref:System.Windows.Forms.TextDataFormat> format on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. Otherwise, this method adds text data in the <xref:System.Windows.Forms.TextDataFormat> format.  
+ 
+To retrieve text data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method to determine whether the Clipboard contains text data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetText%2A> method.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates an overload of the <xref:System.Windows.Forms.Clipboard.SetText%2A> method that is similar to this overload.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
- [!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
-  
+The following example demonstrates an overload of the <xref:System.Windows.Forms.Clipboard.SetText%2A> method that is similar to this overload.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
+[!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
@@ -1136,21 +1136,21 @@
         <summary>Clears the Clipboard and then adds text data in the format indicated by the specified <see cref="T:System.Windows.Forms.TextDataFormat" /> value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To retrieve text data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method to determine whether the Clipboard contains text data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetText%2A> method.  
-  
+To retrieve text data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method to determine whether the Clipboard contains text data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetText%2A> method.  
+ 
 > [!NOTE]
 >  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates this member.  
-  
- [!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
- [!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
-  
+The following example demonstrates this member.  
+ 
+[!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
+[!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>

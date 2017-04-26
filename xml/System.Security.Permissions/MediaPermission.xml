@@ -18,10 +18,10 @@
     <summary>The <see cref="T:System.Security.Permissions.MediaPermission" /> describes a set of security permissions that controls the ability for audio, image, and video media to work in a partial-trust Windows Presentation Foundation (WPF) application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This permission uses the values of the <xref:System.Security.Permissions.MediaPermissionAudio>, <xref:System.Security.Permissions.MediaPermissionImage>, and <xref:System.Security.Permissions.MediaPermissionVideo> enumerations.  
-  
+This permission uses the values of the <xref:System.Security.Permissions.MediaPermissionAudio>, <xref:System.Security.Permissions.MediaPermissionImage>, and <xref:System.Security.Permissions.MediaPermissionVideo> enumerations.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,18 +58,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.MediaPermission" /> class by specifying the audio permission level.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default values for image and video permissions are <xref:System.Security.Permissions.MediaPermissionImage> and <xref:System.Security.Permissions.MediaPermissionVideo>.  
+The default values for image and video permissions are <xref:System.Security.Permissions.MediaPermissionImage> and <xref:System.Security.Permissions.MediaPermissionVideo>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to create a <xref:System.Security.Permissions.MediaPermission> with a <xref:System.Security.Permissions.MediaPermissionAudio> value.  
-  
- [!code-csharp[SecurityPermissionsSnippets#MediaPermission1](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission1)]
- [!code-vb[SecurityPermissionsSnippets#MediaPermission1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission1)]  
-  
+The following code example shows how to create a <xref:System.Security.Permissions.MediaPermission> with a <xref:System.Security.Permissions.MediaPermissionAudio> value.  
+ 
+[!code-csharp[SecurityPermissionsSnippets#MediaPermission1](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission1)]
+[!code-vb[SecurityPermissionsSnippets#MediaPermission1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,18 +91,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.MediaPermission" /> class by specifying the image permission level.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default values for audio and video permissions are <xref:System.Security.Permissions.MediaPermissionAudio> and <xref:System.Security.Permissions.MediaPermissionVideo>.  
+The default values for audio and video permissions are <xref:System.Security.Permissions.MediaPermissionAudio> and <xref:System.Security.Permissions.MediaPermissionVideo>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to create a <xref:System.Security.Permissions.MediaPermission> with a <xref:System.Security.Permissions.MediaPermissionImage> value.  
-  
- [!code-csharp[SecurityPermissionsSnippets#MediaPermission2](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission2)]
- [!code-vb[SecurityPermissionsSnippets#MediaPermission2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission2)]  
-  
+The following code example shows how to create a <xref:System.Security.Permissions.MediaPermission> with a <xref:System.Security.Permissions.MediaPermissionImage> value.  
+ 
+[!code-csharp[SecurityPermissionsSnippets#MediaPermission2](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission2)]
+[!code-vb[SecurityPermissionsSnippets#MediaPermission2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,18 +124,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.MediaPermission" /> class by specifying the video permission level.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default values for audio and image permissions are <xref:System.Security.Permissions.MediaPermissionAudio> and <xref:System.Security.Permissions.MediaPermissionImage>.  
+The default values for audio and image permissions are <xref:System.Security.Permissions.MediaPermissionAudio> and <xref:System.Security.Permissions.MediaPermissionImage>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to create a <xref:System.Security.Permissions.MediaPermission> with a <xref:System.Security.Permissions.MediaPermissionVideo> value.  
-  
- [!code-csharp[SecurityPermissionsSnippets#MediaPermission3](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission3)]
- [!code-vb[SecurityPermissionsSnippets#MediaPermission3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission3)]  
-  
+The following code example shows how to create a <xref:System.Security.Permissions.MediaPermission> with a <xref:System.Security.Permissions.MediaPermissionVideo> value.  
+ 
+[!code-csharp[SecurityPermissionsSnippets#MediaPermission3](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission3)]
+[!code-vb[SecurityPermissionsSnippets#MediaPermission3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -157,18 +157,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.MediaPermission" /> class by specifying a permission state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `state` is set to <xref:System.Security.Permissions.PermissionState>, all media types are granted full permission to play or display with no restrictions. If `state` is set to <xref:System.Security.Permissions.PermissionState>, all media types are restricted from playing or displaying.  
+If `state` is set to <xref:System.Security.Permissions.PermissionState>, all media types are granted full permission to play or display with no restrictions. If `state` is set to <xref:System.Security.Permissions.PermissionState>, all media types are restricted from playing or displaying.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to create a <xref:System.Security.Permissions.MediaPermission> with a <xref:System.Security.Permissions.PermissionState> value.  
-  
- [!code-csharp[SecurityPermissionsSnippets#MediaPermission4](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission4)]
- [!code-vb[SecurityPermissionsSnippets#MediaPermission4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission4)]  
-  
+The following code example shows how to create a <xref:System.Security.Permissions.MediaPermission> with a <xref:System.Security.Permissions.PermissionState> value.  
+ 
+[!code-csharp[SecurityPermissionsSnippets#MediaPermission4](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission4)]
+[!code-vb[SecurityPermissionsSnippets#MediaPermission4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,13 +194,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.MediaPermission" /> class by specifying the audio, video, and image permission levels.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to create a <xref:System.Security.Permissions.MediaPermission> with <xref:System.Security.Permissions.MediaPermissionAudio>, <xref:System.Security.Permissions.MediaPermissionVideo>, and <xref:System.Security.Permissions.MediaPermissionImage> values  
-  
- [!code-csharp[SecurityPermissionsSnippets#MediaPermission5](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission5)]
- [!code-vb[SecurityPermissionsSnippets#MediaPermission5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission5)]  
-  
+The following code example shows how to create a <xref:System.Security.Permissions.MediaPermission> with <xref:System.Security.Permissions.MediaPermissionAudio>, <xref:System.Security.Permissions.MediaPermissionVideo>, and <xref:System.Security.Permissions.MediaPermissionImage> values  
+ 
+[!code-csharp[SecurityPermissionsSnippets#MediaPermission5](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission5)]
+[!code-vb[SecurityPermissionsSnippets#MediaPermission5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,13 +222,13 @@
         <value>The audio permission level.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to retrieve the <xref:System.Security.Permissions.MediaPermissionAudio> value for the <xref:System.Security.Permissions.MediaPermission>.  
-  
- [!code-csharp[SecurityPermissionsSnippets#MediaPermission6](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission6)]
- [!code-vb[SecurityPermissionsSnippets#MediaPermission6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission6)]  
-  
+The following code example shows how to retrieve the <xref:System.Security.Permissions.MediaPermissionAudio> value for the <xref:System.Security.Permissions.MediaPermission>.  
+ 
+[!code-csharp[SecurityPermissionsSnippets#MediaPermission6](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission6)]
+[!code-vb[SecurityPermissionsSnippets#MediaPermission6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,10 +251,10 @@
         <returns>A copy of the current permission.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A copy of a permission represents the same access to resources as the original permission.  
-  
+A copy of a permission represents the same access to resources as the original permission.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,13 +297,13 @@
         <value>The image permission level.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to retrieve the <xref:System.Security.Permissions.MediaPermissionImage> value for the <xref:System.Security.Permissions.MediaPermission>.  
-  
- [!code-csharp[SecurityPermissionsSnippets#MediaPermission7](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission7)]
- [!code-vb[SecurityPermissionsSnippets#MediaPermission7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission7)]  
-  
+The following code example shows how to retrieve the <xref:System.Security.Permissions.MediaPermissionImage> value for the <xref:System.Security.Permissions.MediaPermission>.  
+ 
+[!code-csharp[SecurityPermissionsSnippets#MediaPermission7](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission7)]
+[!code-vb[SecurityPermissionsSnippets#MediaPermission7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -352,12 +352,12 @@
           <see langword="true" /> if the current permission is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current permission is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained by the specified permission. For example, a permission that represents access to C:\example.txt is a subset of a permission that represents access to C:\\.  
-  
- If this method returns `true`, the current permission represents no more access to the protected resource than does the specified permission.  
-  
+The current permission is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained by the specified permission. For example, a permission that represents access to C:\example.txt is a subset of a permission that represents access to C:\\.  
+ 
+If this method returns `true`, the current permission represents no more access to the protected resource than does the specified permission.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -381,18 +381,18 @@
           <see langword="true" /> if the audio, image, and video permissions are all unrestricted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value is `true` when the media permission values are <xref:System.Security.Permissions.MediaPermissionAudio>, <xref:System.Security.Permissions.MediaPermissionImage>, and <xref:System.Security.Permissions.MediaPermissionVideo>.  
+The return value is `true` when the media permission values are <xref:System.Security.Permissions.MediaPermissionAudio>, <xref:System.Security.Permissions.MediaPermissionImage>, and <xref:System.Security.Permissions.MediaPermissionVideo>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to determine whether the <xref:System.Security.Permissions.MediaPermission> is unrestricted.  
-  
- [!code-csharp[SecurityPermissionsSnippets#MediaPermission16](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission16)]
- [!code-vb[SecurityPermissionsSnippets#MediaPermission16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission16)]  
-  
+The following code example shows how to determine whether the <xref:System.Security.Permissions.MediaPermission> is unrestricted.  
+ 
+[!code-csharp[SecurityPermissionsSnippets#MediaPermission16](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission16)]
+[!code-vb[SecurityPermissionsSnippets#MediaPermission16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -455,13 +455,13 @@
         <value>The media permission level.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to retrieve the <xref:System.Security.Permissions.MediaPermissionVideo> value for the <xref:System.Security.Permissions.MediaPermission>.  
-  
- [!code-csharp[SecurityPermissionsSnippets#MediaPermission8](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission8)]
- [!code-vb[SecurityPermissionsSnippets#MediaPermission8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission8)]  
-  
+The following code example shows how to retrieve the <xref:System.Security.Permissions.MediaPermissionVideo> value for the <xref:System.Security.Permissions.MediaPermission>.  
+ 
+[!code-csharp[SecurityPermissionsSnippets#MediaPermission8](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermission8)]
+[!code-vb[SecurityPermissionsSnippets#MediaPermission8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermission8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

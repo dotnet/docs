@@ -18,18 +18,18 @@
     <summary>Specifies the ASP.Net features to install or remove using the methods provided by the <see cref="T:System.Web.Management.SqlServices" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration has a <xref:System.FlagsAttribute>, which means you can select two or more features by combining them with the `&` (and) operator (the `And` operator in Visual Basic).  
+This enumeration has a <xref:System.FlagsAttribute>, which means you can select two or more features by combining them with the `&` (and) operator (the `And` operator in Visual Basic).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Management.SqlFeatures> enumeration with the <xref:System.Web.Management.SqlServices.Install%28System.String%2CSystem.Web.Management.SqlFeatures%2CSystem.String%29> method of the <xref:System.Web.Management.SqlServices> class.  
-  
- [!code-csharp[System.Web.Management.SqlServices#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#2)]
- [!code-vb[System.Web.Management.SqlServices#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#2)]  
-  
+The following code example shows how to use the <xref:System.Web.Management.SqlFeatures> enumeration with the <xref:System.Web.Management.SqlServices.Install%28System.String%2CSystem.Web.Management.SqlFeatures%2CSystem.String%29> method of the <xref:System.Web.Management.SqlServices> class.  
+ 
+[!code-csharp[System.Web.Management.SqlServices#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#2)]
+[!code-vb[System.Web.Management.SqlServices#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

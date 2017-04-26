@@ -31,10 +31,10 @@
         <value>The human-readable display name of the <see cref="T:System.ComponentModel.Composition.Primitives.ICompositionElement" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implementers of this property should never return `null` or an empty string ("").  
-  
+Implementers of this property should never return `null` or an empty string ("").  
+ 
  ]]></format>
         </remarks>
       </Docs>

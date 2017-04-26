@@ -14,29 +14,29 @@
     <summary>Automatically generates single-table commands that are used to reconcile changes made to a <see cref="T:System.Data.DataSet" /> with the associated data source. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Odbc.OdbcDataAdapter> does not automatically generate the SQL statements required to reconcile changes made to a <xref:System.Data.DataSet> associated with the data source. However, you can create an <xref:System.Data.Odbc.OdbcCommandBuilder> object that generates SQL statements for single-table updates by setting the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> property of the <xref:System.Data.Odbc.OdbcDataAdapter>. The <xref:System.Data.Odbc.OdbcCommandBuilder> then generates any additional SQL statements that you do not set.  
-  
- The relationship between an <xref:System.Data.Odbc.OdbcDataAdapter> and its corresponding <xref:System.Data.Odbc.OdbcCommandBuilder> is always one-to-one. To create this correspondence, you set the <xref:System.Data.Odbc.OdbcDataAdapter> property of the <xref:System.Data.Odbc.OdbcCommandBuilder> object. This causes the <xref:System.Data.Odbc.OdbcCommandBuilder> to register itself as a listener, which produces the output of <xref:System.Data.Odbc.OdbcDataAdapter.RowUpdating> events that affect the <xref:System.Data.DataSet>.  
-  
- To generate INSERT, UPDATE, or DELETE statements, the <xref:System.Data.Odbc.OdbcCommandBuilder> uses the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> property to retrieve a required set of metadata. If you change the value of <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> after the metadata has been retrieved, such as after the first update, you should then call the <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> method to update the metadata.  
-  
+The <xref:System.Data.Odbc.OdbcDataAdapter> does not automatically generate the SQL statements required to reconcile changes made to a <xref:System.Data.DataSet> associated with the data source. However, you can create an <xref:System.Data.Odbc.OdbcCommandBuilder> object that generates SQL statements for single-table updates by setting the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> property of the <xref:System.Data.Odbc.OdbcDataAdapter>. The <xref:System.Data.Odbc.OdbcCommandBuilder> then generates any additional SQL statements that you do not set.  
+ 
+The relationship between an <xref:System.Data.Odbc.OdbcDataAdapter> and its corresponding <xref:System.Data.Odbc.OdbcCommandBuilder> is always one-to-one. To create this correspondence, you set the <xref:System.Data.Odbc.OdbcDataAdapter> property of the <xref:System.Data.Odbc.OdbcCommandBuilder> object. This causes the <xref:System.Data.Odbc.OdbcCommandBuilder> to register itself as a listener, which produces the output of <xref:System.Data.Odbc.OdbcDataAdapter.RowUpdating> events that affect the <xref:System.Data.DataSet>.  
+ 
+To generate INSERT, UPDATE, or DELETE statements, the <xref:System.Data.Odbc.OdbcCommandBuilder> uses the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> property to retrieve a required set of metadata. If you change the value of <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> after the metadata has been retrieved, such as after the first update, you should then call the <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> method to update the metadata.  
+ 
 > [!NOTE]
 >  If the SELECT statement assigned to the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> property uses aliased column names, the resulting INSERT, UPDATE, and DELETE statements may be inaccurate or fail. If the underlying ODBC driver cannot provide the appropriate base column name for the alias column name (using the SQL_DESC_BASE_COLUMN_NAME value of `SQLColAttribute`), the alias name could be used in the generated INSERT, UPDATE, and DELETE statements. For example, the Microsoft ODBC Driver for Oracle returns the alias name as the base column name. Therefore, the generated INSERT, UPDATE, and DELETE statements would cause errors.  
+ 
+The <xref:System.Data.Odbc.OdbcCommandBuilder> also uses the <xref:System.Data.Odbc.OdbcCommand.Connection%2A>, <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A>, and <xref:System.Data.Odbc.OdbcCommand.Transaction%2A> properties referenced by the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A>. The user should call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if one or more of these properties are modified, or if the value of the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> property itself is changed. Otherwise the <xref:System.Data.Odbc.OdbcDataAdapter.InsertCommand%2A>, <xref:System.Data.Odbc.OdbcDataAdapter.UpdateCommand%2A>, and <xref:System.Data.Odbc.OdbcDataAdapter.DeleteCommand%2A> properties retain their previous values.  
+ 
+If you call <xref:System.ComponentModel.Component.Dispose%2A>, the <xref:System.Data.Odbc.OdbcCommandBuilder> is disassociated from the <xref:System.Data.Odbc.OdbcDataAdapter>, and the generated commands are no longer used.  
+ 
   
- The <xref:System.Data.Odbc.OdbcCommandBuilder> also uses the <xref:System.Data.Odbc.OdbcCommand.Connection%2A>, <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A>, and <xref:System.Data.Odbc.OdbcCommand.Transaction%2A> properties referenced by the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A>. The user should call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if one or more of these properties are modified, or if the value of the <xref:System.Data.Odbc.OdbcDataAdapter.SelectCommand%2A> property itself is changed. Otherwise the <xref:System.Data.Odbc.OdbcDataAdapter.InsertCommand%2A>, <xref:System.Data.Odbc.OdbcDataAdapter.UpdateCommand%2A>, and <xref:System.Data.Odbc.OdbcDataAdapter.DeleteCommand%2A> properties retain their previous values.  
-  
- If you call <xref:System.ComponentModel.Component.Dispose%2A>, the <xref:System.Data.Odbc.OdbcCommandBuilder> is disassociated from the <xref:System.Data.Odbc.OdbcDataAdapter>, and the generated commands are no longer used.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses <xref:System.Data.Odbc.OdbcCommand>, together with <xref:System.Data.Odbc.OdbcDataAdapter> and <xref:System.Data.Odbc.OdbcConnection>, to select rows from a data source. The example is passed an initialized <xref:System.Data.DataSet>, a connection string, a query string that is an SQL SELECT statement, and a string that is the name of the data source table. The example then creates an <xref:System.Data.Odbc.OdbcCommandBuilder>.  
-  
- [!code-csharp[Classic WebData OdbcCommandBuilder#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcCommandBuilder/CS/mysample.cs#1)]
- [!code-vb[Classic WebData OdbcCommandBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcCommandBuilder/VB/mysample.vb#1)]  
-  
+The following example uses <xref:System.Data.Odbc.OdbcCommand>, together with <xref:System.Data.Odbc.OdbcDataAdapter> and <xref:System.Data.Odbc.OdbcConnection>, to select rows from a data source. The example is passed an initialized <xref:System.Data.DataSet>, a connection string, a query string that is an SQL SELECT statement, and a string that is the name of the data source table. The example then creates an <xref:System.Data.Odbc.OdbcCommandBuilder>.  
+ 
+[!code-csharp[Classic WebData OdbcCommandBuilder#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcCommandBuilder/CS/mysample.cs#1)]
+[!code-vb[Classic WebData OdbcCommandBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcCommandBuilder/VB/mysample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,10 +55,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcCommandBuilder" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base constructor initializes all fields to their default values.  
-  
+The base constructor initializes all fields to their default values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,12 +80,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcCommandBuilder" /> class with the associated <see cref="T:System.Data.Odbc.OdbcDataAdapter" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Odbc.OdbcCommandBuilder> registers itself as a listener for <xref:System.Data.Odbc.OdbcDataAdapter.RowUpdating> events that are generated by the <xref:System.Data.Odbc.OdbcDataAdapter> specified in this property.  
-  
- When you create a new instance of <xref:System.Data.Odbc.OdbcCommandBuilder>, any existing <xref:System.Data.Odbc.OdbcCommandBuilder> associated with this <xref:System.Data.Odbc.OdbcDataAdapter> is released.  
-  
+The <xref:System.Data.Odbc.OdbcCommandBuilder> registers itself as a listener for <xref:System.Data.Odbc.OdbcDataAdapter.RowUpdating> events that are generated by the <xref:System.Data.Odbc.OdbcDataAdapter> specified in this property.  
+ 
+When you create a new instance of <xref:System.Data.Odbc.OdbcCommandBuilder>, any existing <xref:System.Data.Odbc.OdbcCommandBuilder> associated with this <xref:System.Data.Odbc.OdbcDataAdapter> is released.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,12 +139,12 @@
         <value>An <see cref="T:System.Data.Odbc.OdbcDataAdapter" /> object that is associated with this <see cref="T:System.Data.Odbc.OdbcCommandBuilder" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Odbc.OdbcCommandBuilder> registers itself as a listener for <xref:System.Data.Odbc.OdbcDataAdapter.RowUpdating> events that are generated by the <xref:System.Data.Odbc.OdbcDataAdapter> specified in this property.  
-  
- When you create a new instance of <xref:System.Data.Odbc.OdbcCommandBuilder>, any existing <xref:System.Data.Odbc.OdbcCommandBuilder> associated with this <xref:System.Data.Odbc.OdbcDataAdapter> is released.  
-  
+The <xref:System.Data.Odbc.OdbcCommandBuilder> registers itself as a listener for <xref:System.Data.Odbc.OdbcDataAdapter.RowUpdating> events that are generated by the <xref:System.Data.Odbc.OdbcDataAdapter> specified in this property.  
+ 
+When you create a new instance of <xref:System.Data.Odbc.OdbcCommandBuilder>, any existing <xref:System.Data.Odbc.OdbcCommandBuilder> associated with this <xref:System.Data.Odbc.OdbcDataAdapter> is released.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,14 +169,14 @@
         <summary>Retrieves parameter information from the stored procedure specified in the <see cref="T:System.Data.Odbc.OdbcCommand" /> and populates the <see cref="P:System.Data.Odbc.OdbcCommand.Parameters" /> collection of the specified <see cref="T:System.Data.Odbc.OdbcCommand" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Odbc.OdbcCommandBuilder.DeriveParameters%2A> overwrites any existing parameter information for the <xref:System.Data.Odbc.OdbcCommand>.  
-  
- <xref:System.Data.Odbc.OdbcCommandBuilder.DeriveParameters%2A> requires an additional call to the data source to obtain the information. If the parameter information is known in advance, it is more efficient to populate the parameters collection by setting the information explicitly.  
-  
- You can only use <xref:System.Data.Odbc.OdbcCommandBuilder.DeriveParameters%2A> with stored procedures. You cannot use <xref:System.Data.Odbc.OdbcCommandBuilder.DeriveParameters%2A> to populate the <xref:System.Data.Odbc.OdbcParameterCollection> with arbitrary Transact-SQL statements, such as a parameterized SELECT statement.  
-  
+<xref:System.Data.Odbc.OdbcCommandBuilder.DeriveParameters%2A> overwrites any existing parameter information for the <xref:System.Data.Odbc.OdbcCommand>.  
+ 
+<xref:System.Data.Odbc.OdbcCommandBuilder.DeriveParameters%2A> requires an additional call to the data source to obtain the information. If the parameter information is known in advance, it is more efficient to populate the parameters collection by setting the information explicitly.  
+ 
+You can only use <xref:System.Data.Odbc.OdbcCommandBuilder.DeriveParameters%2A> with stored procedures. You cannot use <xref:System.Data.Odbc.OdbcCommandBuilder.DeriveParameters%2A> to populate the <xref:System.Data.Odbc.OdbcParameterCollection> with arbitrary Transact-SQL statements, such as a parameterized SELECT statement.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying ODBC driver does not support returning stored procedure parameter information, or the command text is not a valid stored procedure name, or the <see cref="T:System.Data.CommandType" /> specified was not <see langword="CommandType.StoredProcedure" />.</exception>
@@ -200,14 +200,14 @@
         <returns>The automatically generated <see cref="T:System.Data.Odbc.OdbcCommand" /> object required to perform deletions.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
-  
- You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
-  
- After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A>.  
-  
+You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
+ 
+You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
+ 
+After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,22 +233,22 @@
         <returns>The automatically generated <see cref="T:System.Data.Odbc.OdbcCommand" /> object required to perform deletions.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
-  
- You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
-  
- After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A>.  
-  
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.Odbc.OdbcCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
-  
+You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
+ 
+You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
+ 
+After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A>.  
+ 
+The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.Odbc.OdbcCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
+ 
 -   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> has been specified, and its length is equal to or greater than the generated parameter name.  
-  
+ 
 -   The generated parameter name meets the criteria specified in the <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNamePattern> regular expression.  
-  
+ 
 -   A <xref:System.Data.Common.DbMetaDataColumnNames.ParameterMarkerFormat> is specified.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,14 +271,14 @@
         <returns>The automatically generated <see cref="T:System.Data.Odbc.OdbcCommand" /> object required to perform insertions.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
-  
- You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
-  
- After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> still will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A>.  
-  
+You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
+ 
+You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
+ 
+After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> still will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,22 +304,22 @@
         <returns>The automatically generated <see cref="T:System.Data.Odbc.OdbcCommand" /> object required to perform insertions.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
-  
- You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
-  
- After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A>.  
-  
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
-  
+You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
+ 
+You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
+ 
+After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A>.  
+ 
+The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
+ 
 -   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> has been specified, and its length is equal to or greater than the generated parameter name.  
-  
+ 
 -   The generated parameter name meets the criteria specified in the <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNamePattern> regular expression.  
-  
+ 
 -   A <xref:System.Data.Common.DbMetaDataColumnNames.ParameterMarkerFormat> is specified.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -408,14 +408,14 @@
         <returns>The automatically generated <see cref="T:System.Data.Odbc.OdbcCommand" /> object required to perform updates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
-  
- You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
-  
- After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> still will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A>.  
-  
+You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
+ 
+You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
+ 
+After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> still will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -441,22 +441,22 @@
         <returns>The automatically generated <see cref="T:System.Data.Odbc.OdbcCommand" /> object required to perform updates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
-  
- You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
-  
- After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> still will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A>.  
-  
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
-  
+You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
+ 
+You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
+ 
+After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> still will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A>.  
+ 
+The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
+ 
 -   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> has been specified, and its length is equal to or greater than the generated parameter name.  
-  
+ 
 -   The generated parameter name meets the criteria specified in the <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNamePattern> regular expression.  
-  
+ 
 -   A <xref:System.Data.Common.DbMetaDataColumnNames.ParameterMarkerFormat> is specified.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -583,14 +583,14 @@
         <summary>Gets the automatically generated <see cref="T:System.Data.Odbc.OdbcCommand" /> object required to perform insertions at the data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
-  
- You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
-  
- After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A>.  
-  
+You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
+ 
+You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
+ 
+After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A> will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -604,14 +604,14 @@
         <summary>Gets the automatically generated <see cref="T:System.Data.Odbc.OdbcCommand" /> object required to perform deletions at the data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
-  
- You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
-  
- After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> still will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A>.  
-  
+You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
+ 
+You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
+ 
+After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A> still will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -625,14 +625,14 @@
         <summary>Gets the automatically generated <see cref="T:System.Data.Odbc.OdbcCommand" /> object required to perform updates at the data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
-  
- You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
-  
- After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A>.  
-  
+You can use the <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.Odbc.OdbcCommand> object to be executed.  
+ 
+You can also use <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.Odbc.OdbcDataAdapter>.  
+ 
+After the SQL statement is first generated, you must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A> will be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

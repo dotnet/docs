@@ -31,10 +31,10 @@
     <summary>Defines abbreviations that you can use in place of the full contract syntax.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create abbreviated names for code contracts that are repeated in several methods.  
-  
+The following example demonstrates how to create abbreviated names for code contracts that are repeated in several methods.  
+ 
 ```csharp  
   
 using System.Diagnostics.Contracts;  
@@ -78,7 +78,7 @@ public class MyClass
 }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

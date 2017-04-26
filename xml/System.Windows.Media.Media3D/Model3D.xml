@@ -23,17 +23,17 @@
     <summary>Provides functionality for [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] models.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Objects of this type include <xref:System.Windows.Media.Media3D.GeometryModel3D>, <xref:System.Windows.Media.Media3D.Light>, and <xref:System.Windows.Media.Media3D.Model3DGroup>.  
+Objects of this type include <xref:System.Windows.Media.Media3D.GeometryModel3D>, <xref:System.Windows.Media.Media3D.Light>, and <xref:System.Windows.Media.Media3D.Model3DGroup>.  
+ 
+Use the <xref:System.Windows.Media.Media3D.ModelVisual3D> class to render <xref:System.Windows.Media.Media3D.Model3D> objects. You can compose <xref:System.Windows.Media.Media3D.Model3D> objects by using a <xref:System.Windows.Media.Media3D.Model3DGroup> to form a single model. You can share <xref:System.Windows.Media.Media3D.Model3D> objects among <xref:System.Windows.Media.Media3D.ModelVisual3D> objects to make multiple instances in a scene.  
+ 
   
- Use the <xref:System.Windows.Media.Media3D.ModelVisual3D> class to render <xref:System.Windows.Media.Media3D.Model3D> objects. You can compose <xref:System.Windows.Media.Media3D.Model3D> objects by using a <xref:System.Windows.Media.Media3D.Model3DGroup> to form a single model. You can share <xref:System.Windows.Media.Media3D.Model3D> objects among <xref:System.Windows.Media.Media3D.ModelVisual3D> objects to make multiple instances in a scene.  
-  
-   
-  
+ 
 ## Examples  
- [!code-xml[animate3drotation#Animate3DRotation3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn3)]  
-  
+[!code-xml[animate3drotation#Animate3DRotation3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,12 +74,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects or of any <xref:System.Windows.Freezable> object. For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects or of any <xref:System.Windows.Freezable> object. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,12 +102,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects or of any <xref:System.Windows.Freezable> object. For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects or of any <xref:System.Windows.Freezable> object. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,22 +202,22 @@
         <value>A <see cref="T:System.Windows.Media.Media3D.Transform3D" /> set on the model. The default value is <see cref="T:System.Windows.Media.Media3D.MatrixTransform3D" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Transform"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.Model3D.TransformProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-xml[basic3d#Basic3DXAML3DN6](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn6)]  
-  
+[!code-xml[basic3d#Basic3DXAML3DN6](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -26,18 +26,18 @@
     <summary>Provides a serializable type of endpoint address that is compliant with the version of WS-Addressing published in August 2004 and that enables it to be exposed as part of the service contract.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.EndpointAddress> is not serializable nor is it tied to a particular version of the WS-Addressing specification. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] supplies a class that provides a serializable type, <xref:System.ServiceModel.EndpointAddress10>, which is WS-Addressing V1 compliant.  
+The <xref:System.ServiceModel.EndpointAddress> is not serializable nor is it tied to a particular version of the WS-Addressing specification. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] supplies a class that provides a serializable type, <xref:System.ServiceModel.EndpointAddress10>, which is WS-Addressing V1 compliant.  
+ 
+This class provides a WS-Addressing August 2004 compliant wrapper for the <xref:System.ServiceModel.EndpointAddress> that is serializable and bound to a particular wire format for legacy purposes. The <xref:System.ServiceModel.EndpointAddressAugust2004.FromEndpointAddress%28System.ServiceModel.EndpointAddress%29> method does the wrapping and the <xref:System.ServiceModel.EndpointAddressAugust2004.ToEndpointAddress%2A> method does the unwrapping, allowing the recovery of the endpoint address after being serialized on the wire.  
+ 
   
- This class provides a WS-Addressing August 2004 compliant wrapper for the <xref:System.ServiceModel.EndpointAddress> that is serializable and bound to a particular wire format for legacy purposes. The <xref:System.ServiceModel.EndpointAddressAugust2004.FromEndpointAddress%28System.ServiceModel.EndpointAddress%29> method does the wrapping and the <xref:System.ServiceModel.EndpointAddressAugust2004.ToEndpointAddress%2A> method does the unwrapping, allowing the recovery of the endpoint address after being serialized on the wire.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddressAugust2004#1](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddressaugust2004/cs/source.cs#1)]
- [!code-vb[EndpointAddressAugust2004#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/endpointaddressaugust2004/vb/source.vb#1)]  
-  
+[!code-csharp[EndpointAddressAugust2004#1](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddressaugust2004/cs/source.cs#1)]
+[!code-vb[EndpointAddressAugust2004#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/endpointaddressaugust2004/vb/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,16 +63,16 @@
         <returns>The <see cref="T:System.ServiceModel.EndpointAddressAugust2004" /> class that contains the specified endpoint address.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.EndpointAddress> is not tied to a particular version of the WS-Addressing specification or bound to a particular wire format.  
+The <xref:System.ServiceModel.EndpointAddress> is not tied to a particular version of the WS-Addressing specification or bound to a particular wire format.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddressAugust2004#1](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddressaugust2004/cs/source.cs#1)]
- [!code-vb[EndpointAddressAugust2004#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/endpointaddressaugust2004/vb/source.vb#1)]  
-  
+[!code-csharp[EndpointAddressAugust2004#1](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddressaugust2004/cs/source.cs#1)]
+[!code-vb[EndpointAddressAugust2004#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/endpointaddressaugust2004/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <returns>A <see cref="T:System.Xml.XmlQualifiedName" /> that describes the XML representation of the endpoint address.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is required by the serialization contract. It must be public to be seen by the XmlSerializer. It is not intended to be called by developers.  
-  
+This method is required by the serialization contract. It must be public to be seen by the XmlSerializer. It is not intended to be called by developers.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -189,11 +189,11 @@
         <returns>The <see cref="T:System.ServiceModel.EndpointAddress" /> that contains a version-neutral endpoint address of this <see cref="T:System.ServiceModel.EndpointAddressAugust2004" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[EndpointAddressAugust2004#1](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddressaugust2004/cs/source.cs#1)]
- [!code-vb[EndpointAddressAugust2004#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/endpointaddressaugust2004/vb/source.vb#1)]  
-  
+[!code-csharp[EndpointAddressAugust2004#1](~/samples/snippets/csharp/VS_Snippets_CFX/endpointaddressaugust2004/cs/source.cs#1)]
+[!code-vb[EndpointAddressAugust2004#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/endpointaddressaugust2004/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

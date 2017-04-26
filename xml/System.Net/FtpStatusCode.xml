@@ -18,20 +18,20 @@
     <summary>Specifies the status codes returned for a File Transfer Protocol (FTP) operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.FtpStatusCode> enumeration defines the values returned in the <xref:System.Net.FtpWebResponse.StatusCode%2A> property.  
+The <xref:System.Net.FtpStatusCode> enumeration defines the values returned in the <xref:System.Net.FtpWebResponse.StatusCode%2A> property.  
+ 
+For additional information about FTP server status codes, see RFC 959, "File Transfer Protocol," Section 4.2, "FTP Replies," available at [http://www.rfc-editor.org](http://www.ietf.org).  
+ 
   
- For additional information about FTP server status codes, see RFC 959, "File Transfer Protocol," Section 4.2, "FTP Replies," available at [http://www.rfc-editor.org](http://www.ietf.org).  
-  
-   
-  
+ 
 ## Examples  
- The following code example sends an FTP request to make a new directory on an FTP server and checks the status code returned in the response.  
-  
- [!code-cpp[NclFtpClient#22](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#22)]
- [!code-csharp[NclFtpClient#22](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#22)]  
-  
+The following code example sends an FTP request to make a new directory on an FTP server and checks the status code returned in the response.  
+ 
+[!code-cpp[NclFtpClient#22](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#22)]
+[!code-csharp[NclFtpClient#22](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#22)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

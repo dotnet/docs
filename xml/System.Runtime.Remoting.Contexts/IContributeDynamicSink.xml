@@ -17,10 +17,10 @@
     <summary>Indicates that the implementing property will be registered at runtime through the <see cref="M:System.Runtime.Remoting.Contexts.Context.RegisterDynamicProperty(System.Runtime.Remoting.Contexts.IDynamicProperty,System.ContextBoundObject,System.Runtime.Remoting.Contexts.Context)" /> method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Dynamic properties can contribute sinks that are notified when remoting calls start and finish.  
-  
+Dynamic properties can contribute sinks that are notified when remoting calls start and finish.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

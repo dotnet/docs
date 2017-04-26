@@ -14,21 +14,21 @@
     <summary>Provides access to instances of the C# code generator and code compiler.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides methods that can be used to retrieve instances of the C# <xref:System.CodeDom.Compiler.ICodeGenerator> and <xref:System.CodeDom.Compiler.ICodeCompiler> implementations.  
-  
+This class provides methods that can be used to retrieve instances of the C# <xref:System.CodeDom.Compiler.ICodeGenerator> and <xref:System.CodeDom.Compiler.ICodeCompiler> implementations.  
+ 
 > [!NOTE]
 >  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses either the C# or Visual Basic code provider to compile a source file. The example checks the input file extension and uses the corresponding <xref:Microsoft.CSharp.CSharpCodeProvider> or <xref:Microsoft.VisualBasic.VBCodeProvider> for compilation. The input file is compiled into an executable file, and any compilation errors are displayed to the console.  
-  
- [!code-csharp[CodeDom_CodeProviders#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDom_CodeProviders/CS/source.cs#1)]
- [!code-vb[CodeDom_CodeProviders#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDom_CodeProviders/VB/source.vb#1)]  
-  
+The following example uses either the C# or Visual Basic code provider to compile a source file. The example checks the input file extension and uses the corresponding <xref:Microsoft.CSharp.CSharpCodeProvider> or <xref:Microsoft.VisualBasic.VBCodeProvider> for compilation. The input file is compiled into an executable file, and any compilation errors are displayed to the console.  
+ 
+[!code-csharp[CodeDom_CodeProviders#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDom_CodeProviders/CS/source.cs#1)]
+[!code-vb[CodeDom_CodeProviders#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDom_CodeProviders/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
@@ -69,15 +69,15 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.CSharp.CSharpCodeProvider" /> class by using the specified provider options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value for `providerOptions` is obtained from the  element in the configuration file. You can identify the version of the <xref:Microsoft.CSharp.CSharpCodeProvider> you want to use by specifying the `<providerOption>` element, supplying "CompilerVersion" as the option name, and supplying the version number (for example, "v3.5") as the option value.  You must precede the version number with a lower case "v".  
+The value for `providerOptions` is obtained from the  element in the configuration file. You can identify the version of the <xref:Microsoft.CSharp.CSharpCodeProvider> you want to use by specifying the `<providerOption>` element, supplying "CompilerVersion" as the option name, and supplying the version number (for example, "v3.5") as the option value.  You must precede the version number with a lower case "v".  
+ 
   
-   
-  
+ 
 ## Examples  
- The following configuration file example demonstrates how to specify that version 3.5 of the C# code provider should be used.  
-  
+The following configuration file example demonstrates how to specify that version 3.5 of the C# code provider should be used.  
+ 
 ```  
 <configuration>  
   <system.codedom>  
@@ -99,11 +99,11 @@
   </system.codedom>  
 </configuration>  
 ```  
-  
- The following example shows how to specify the compiler version when you create a new instance of the <xref:Microsoft.CSharp.CSharpCodeProvider> class.  
-  
- [!code-csharp[CSProvider.ProviderOptions#1](~/samples/snippets/csharp/VS_Snippets_CLR/csprovider.provideroptions/cs/program.cs#1)]  
-  
+ 
+The following example shows how to specify the compiler version when you create a new instance of the <xref:Microsoft.CSharp.CSharpCodeProvider> class.  
+ 
+[!code-csharp[CSProvider.ProviderOptions#1](~/samples/snippets/csharp/VS_Snippets_CLR/csprovider.provideroptions/cs/program.cs#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -176,10 +176,10 @@
         <value>The file name extension to use for generated source code files.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This file name extension is usually the extension used by the language's source code files.  
-  
+This file name extension is usually the extension used by the language's source code files.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,18 +213,18 @@
         <summary>Generates code for the specified class member using the specified text writer and code generator options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Members are generated differently depending on their context. For example, a method in an interface or a field in an enumeration is generated differently than a method or field on a class.  This implementation generates code for a member in the class context.  
+Members are generated differently depending on their context. For example, a method in an interface or a field in an enumeration is generated differently than a method or field on a class.  This implementation generates code for a member in the class context.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:Microsoft.CSharp.CSharpCodeProvider.GenerateCodeFromMember%2A> method to create a code fragment to be used in a CodeDOM graph. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromMember%2A> method of the <xref:System.CodeDom.Compiler.CodeDomProvider> class.  
-  
- [!code-csharp[CodeDom_GenerateCodeFromMember#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDom_GenerateCodeFromMember/cs/program.cs#3)]
- [!code-vb[CodeDom_GenerateCodeFromMember#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDom_GenerateCodeFromMember/vb/module1.vb#3)]  
-  
+The following code example shows the use of the <xref:Microsoft.CSharp.CSharpCodeProvider.GenerateCodeFromMember%2A> method to create a code fragment to be used in a CodeDOM graph. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromMember%2A> method of the <xref:System.CodeDom.Compiler.CodeDomProvider> class.  
+ 
+[!code-csharp[CodeDom_GenerateCodeFromMember#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDom_GenerateCodeFromMember/cs/program.cs#3)]
+[!code-vb[CodeDom_GenerateCodeFromMember#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDom_GenerateCodeFromMember/vb/module1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,10 +255,10 @@
         <returns>A <see cref="T:System.ComponentModel.TypeConverter" /> for the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A derived class can override this method to provide specific types of type converters for specific data types.  
-  
+A derived class can override this method to provide specific types of type converters for specific data types.  
+ 
  ]]></format>
         </remarks>
       </Docs>

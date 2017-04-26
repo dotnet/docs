@@ -112,10 +112,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.DataException" /> class with the specified string and inner exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can create a new exception that catches an earlier exception. The code that handles the second exception can make use of the additional information from the earlier exception, also called an inner exception, to examine the cause of the initial error.  
-  
+You can create a new exception that catches an earlier exception. The code that handles the second exception can make use of the additional information from the earlier exception, also called an inner exception, to examine the cause of the initial error.  
+ 
  ]]></format>
         </remarks>
       </Docs>

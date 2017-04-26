@@ -18,10 +18,10 @@
     <summary>Represents a collection of provider objects that inherit from <see cref="T:System.Configuration.Provider.ProviderBase" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.Provider.ProviderCollection> class utilizes an underlying <xref:System.Collections.Hashtable> object to store the provider name/value pairs.  
-  
+The <xref:System.Configuration.Provider.ProviderCollection> class utilizes an underlying <xref:System.Collections.Hashtable> object to store the provider name/value pairs.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -40,10 +40,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.Provider.ProviderCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.Provider.ProviderCollection.%23ctor%2A> constructor initializes the underlying <xref:System.Collections.Hashtable> object used to store the items of the collection.  
-  
+The <xref:System.Configuration.Provider.ProviderCollection.%23ctor%2A> constructor initializes the underlying <xref:System.Collections.Hashtable> object used to store the items of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -68,10 +68,10 @@
         <summary>Adds a provider to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.Provider.ProviderCollection.Add%2A> method first checks for any exceptions (as listed in the Exceptions section), and then calls the <xref:System.Collections.Hashtable.Add%2A?displayProperty=fullName> method. It passes in the object referenced by the `provider` parameter as well as the <xref:System.Configuration.Provider.ProviderBase.Name%2A> property of the provider to be used as the key in the <xref:System.Collections.Hashtable> object.  
-  
+The <xref:System.Configuration.Provider.ProviderCollection.Add%2A> method first checks for any exceptions (as listed in the Exceptions section), and then calls the <xref:System.Collections.Hashtable.Add%2A?displayProperty=fullName> method. It passes in the object referenced by the `provider` parameter as well as the <xref:System.Configuration.Provider.ProviderBase.Name%2A> property of the provider to be used as the key in the <xref:System.Collections.Hashtable> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -125,10 +125,10 @@
         <summary>Copies the contents of the collection to the given array starting at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The array into which the items are copied must have zero-based indexing.  
-  
+The array into which the items are copied must have zero-based indexing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,10 +169,10 @@
         <returns>An object that implements <see cref="T:System.Collections.IEnumerator" /> to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.Provider.ProviderCollection> class stores its collection in a <xref:System.Collections.Hashtable> object. The <xref:System.Configuration.Provider.ProviderCollection.GetEnumerator%2A?displayProperty=fullName> method calls the <xref:System.Collections.Hashtable.GetEnumerator%2A?displayProperty=fullName> method.  
-  
+The <xref:System.Configuration.Provider.ProviderCollection> class stores its collection in a <xref:System.Collections.Hashtable> object. The <xref:System.Configuration.Provider.ProviderCollection.GetEnumerator%2A?displayProperty=fullName> method calls the <xref:System.Collections.Hashtable.GetEnumerator%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,10 +195,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is included to fulfill the <xref:System.Collections.ICollection> interface.  
-  
+This property is included to fulfill the <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -264,12 +264,12 @@
         <summary>Sets the collection to be read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.Provider.ProviderCollection> class is read/write by default. The <xref:System.Configuration.Provider.ProviderCollection.SetReadOnly%2A> method makes the collection read-only. After a collection is set to read-only, some method calls (such as <xref:System.Configuration.Provider.ProviderCollection.Remove%2A> and <xref:System.Configuration.Provider.ProviderCollection.Add%2A> will result in an exception.  
-  
- Note that most provider-based features will set their <xref:System.Configuration.Provider.ProviderCollection> object to read-only after creating instances of all of the configured providers.  
-  
+The <xref:System.Configuration.Provider.ProviderCollection> class is read/write by default. The <xref:System.Configuration.Provider.ProviderCollection.SetReadOnly%2A> method makes the collection read-only. After a collection is set to read-only, some method calls (such as <xref:System.Configuration.Provider.ProviderCollection.Remove%2A> and <xref:System.Configuration.Provider.ProviderCollection.Add%2A> will result in an exception.  
+ 
+Note that most provider-based features will set their <xref:System.Configuration.Provider.ProviderCollection> object to read-only after creating instances of all of the configured providers.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,10 +291,10 @@
         <value>The current object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is included to fulfill the <xref:System.Collections.ICollection> interface.  
-  
+This property is included to fulfill the <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -321,10 +321,10 @@
         <summary>Copies the elements of the <see cref="T:System.Configuration.Provider.ProviderCollection" /> to an array, starting at a particular array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Configuration.Provider.ProviderCollection.System%23Collections%23ICollection%23CopyTo%2A> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Configuration.Provider.ProviderCollection.System%23Collections%23ICollection%23CopyTo%2A> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

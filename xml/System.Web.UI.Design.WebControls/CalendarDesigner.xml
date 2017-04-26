@@ -73,10 +73,10 @@
         <summary>Initializes the designer with the specified component.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The designer host calls <xref:System.Web.UI.Design.WebControls.CalendarDesigner.Initialize%2A> to initialize the component for the designer.  
-  
+The designer host calls <xref:System.Web.UI.Design.WebControls.CalendarDesigner.Initialize%2A> to initialize the component for the designer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <summary>Called when an auto-format scheme has been applied to the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Schemes are applied by the user to set the appearance of a control from a collection of predefined styles. Override this method to perform other actions that might be needed after a scheme is applied to a control.  
-  
+Schemes are applied by the user to set the appearance of a control from a collection of predefined styles. Override this method to perform other actions that might be needed after a scheme is applied to a control.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -24,14 +24,14 @@
     <summary>Controls the permissions related to user interfaces and the Clipboard. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Drawing and user input events in windows are user interfaces.  
-  
- The permission to use windows can be one of the following: unrestricted, limited to <xref:System.Security.Permissions.UIPermissionWindow>, only <xref:System.Security.Permissions.UIPermissionWindow>, or no window drawing or user input event access allowed. <xref:System.Security.Permissions.UIPermissionWindow> and <xref:System.Security.Permissions.UIPermissionWindow> are restricted in title and size to prevent possible spoofing by potentially harmful code.  
-  
- The permission to use the Clipboard can be one of the following: unrestricted, write-only, or no Clipboard access allowed. The paste limitation prevents potentially harmful applications from taking data from the Clipboard without the user's consent, while still allowing the cut, copy, and paste operations when initiated by the user through keyboard commands.  
-  
+Drawing and user input events in windows are user interfaces.  
+ 
+The permission to use windows can be one of the following: unrestricted, limited to <xref:System.Security.Permissions.UIPermissionWindow>, only <xref:System.Security.Permissions.UIPermissionWindow>, or no window drawing or user input event access allowed. <xref:System.Security.Permissions.UIPermissionWindow> and <xref:System.Security.Permissions.UIPermissionWindow> are restricted in title and size to prevent possible spoofing by potentially harmful code.  
+ 
+The permission to use the Clipboard can be one of the following: unrestricted, write-only, or no Clipboard access allowed. The paste limitation prevents potentially harmful applications from taking data from the Clipboard without the user's consent, while still allowing the cut, copy, and paste operations when initiated by the user through keyboard commands.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,19 +54,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.UIPermission" /> class with either fully restricted or unrestricted access, as specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates either the fully restricted (`None`) or the `Unrestricted` form of the permission.  
+This constructor creates either the fully restricted (`None`) or the `Unrestricted` form of the permission.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.UIPermission.%23ctor%2A> constructor. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
-  
- [!code-cpp[System.Security.Permissions.UIPermission#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#7)]
- [!code-csharp[System.Security.Permissions.UIPermission#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#7)]
- [!code-vb[System.Security.Permissions.UIPermission#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#7)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.UIPermission.%23ctor%2A> constructor. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
+ 
+[!code-cpp[System.Security.Permissions.UIPermission#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#7)]
+[!code-csharp[System.Security.Permissions.UIPermission#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#7)]
+[!code-vb[System.Security.Permissions.UIPermission#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="state" /> parameter is not a valid <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
@@ -90,19 +90,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.UIPermission" /> class with the permissions for the Clipboard, and no access to windows.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set both the Clipboard and window permissions, use the constructor that takes parameters for both.  
+To set both the Clipboard and window permissions, use the constructor that takes parameters for both.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.UIPermission.%23ctor%28System.Security.Permissions.UIPermissionClipboard%29?displayProperty=fullName> constructor. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
-  
- [!code-cpp[System.Security.Permissions.UIPermission#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#9)]
- [!code-csharp[System.Security.Permissions.UIPermission#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#9)]
- [!code-vb[System.Security.Permissions.UIPermission#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#9)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.UIPermission.%23ctor%28System.Security.Permissions.UIPermissionClipboard%29?displayProperty=fullName> constructor. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
+ 
+[!code-cpp[System.Security.Permissions.UIPermission#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#9)]
+[!code-csharp[System.Security.Permissions.UIPermission#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#9)]
+[!code-vb[System.Security.Permissions.UIPermission#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="clipboardFlag" /> parameter is not a valid <see cref="T:System.Security.Permissions.UIPermissionClipboard" /> value.</exception>
@@ -126,19 +126,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.UIPermission" /> class with the permissions for windows, and no access to the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set both the Clipboard and window permissions, use the constructor that takes parameters for both.  
+To set both the Clipboard and window permissions, use the constructor that takes parameters for both.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.UIPermission.%23ctor%28System.Security.Permissions.UIPermissionWindow%29?displayProperty=fullName> constructor. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
-  
- [!code-cpp[System.Security.Permissions.UIPermission#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#8)]
- [!code-csharp[System.Security.Permissions.UIPermission#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#8)]
- [!code-vb[System.Security.Permissions.UIPermission#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#8)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.UIPermission.%23ctor%28System.Security.Permissions.UIPermissionWindow%29?displayProperty=fullName> constructor. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
+ 
+[!code-cpp[System.Security.Permissions.UIPermission#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#8)]
+[!code-csharp[System.Security.Permissions.UIPermission#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#8)]
+[!code-vb[System.Security.Permissions.UIPermission#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#8)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="windowFlag" /> parameter is not a valid <see cref="T:System.Security.Permissions.UIPermissionWindow" /> value.</exception>
@@ -164,14 +164,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.UIPermission" /> class with the specified permissions for windows and the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.UIPermission.%23ctor%28System.Security.Permissions.UIPermissionWindow%2CSystem.Security.Permissions.UIPermissionClipboard%29?displayProperty=fullName> constructor. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
-  
- [!code-cpp[System.Security.Permissions.UIPermission#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#10)]
- [!code-csharp[System.Security.Permissions.UIPermission#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#10)]
- [!code-vb[System.Security.Permissions.UIPermission#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#10)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.UIPermission.%23ctor%28System.Security.Permissions.UIPermissionWindow%2CSystem.Security.Permissions.UIPermissionClipboard%29?displayProperty=fullName> constructor. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
+ 
+[!code-cpp[System.Security.Permissions.UIPermission#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#10)]
+[!code-csharp[System.Security.Permissions.UIPermission#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#10)]
+[!code-vb[System.Security.Permissions.UIPermission#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="windowFlag" /> parameter is not a valid <see cref="T:System.Security.Permissions.UIPermissionWindow" /> value.  
@@ -219,22 +219,22 @@
         <returns>A copy of the current permission.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A copy of the permission represents the same access to resources as the original permission.  
+A copy of the permission represents the same access to resources as the original permission.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the behavior of the <xref:System.Security.Permissions.UIPermission.Copy%2A> method. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
-  
+The following code example shows the behavior of the <xref:System.Security.Permissions.UIPermission.Copy%2A> method. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
+ 
 > [!NOTE]
 >  The code example is intended to show the behavior of the method, not to demonstrate its use. In general, the methods of permission classes are used by the security infrastructure; they are not typically used in applications.  
-  
- [!code-cpp[System.Security.Permissions.UIPermission#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#5)]
- [!code-csharp[System.Security.Permissions.UIPermission#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#5)]
- [!code-vb[System.Security.Permissions.UIPermission#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#5)]  
-  
+ 
+[!code-cpp[System.Security.Permissions.UIPermission#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#5)]
+[!code-csharp[System.Security.Permissions.UIPermission#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#5)]
+[!code-vb[System.Security.Permissions.UIPermission#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,17 +260,17 @@
         <summary>Reconstructs a permission with a specified state from an XML encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the behavior of the <xref:System.Security.Permissions.UIPermission.FromXml%2A> method. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
-  
+The following code example shows the behavior of the <xref:System.Security.Permissions.UIPermission.FromXml%2A> method. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
+ 
 > [!NOTE]
 >  The code example is intended to show the behavior of the method, not to demonstrate its use. In general, the methods of permission classes are used by the security infrastructure; they are not typically used in applications.  
-  
- [!code-cpp[System.Security.Permissions.UIPermission#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#6)]
- [!code-csharp[System.Security.Permissions.UIPermission#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#6)]
- [!code-vb[System.Security.Permissions.UIPermission#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#6)]  
-  
+ 
+[!code-cpp[System.Security.Permissions.UIPermission#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#6)]
+[!code-csharp[System.Security.Permissions.UIPermission#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#6)]
+[!code-vb[System.Security.Permissions.UIPermission#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="esd" /> parameter is <see langword="null" />.</exception>
@@ -303,22 +303,22 @@
         <returns>A new permission that represents the intersection of the current permission and the specified permission. This new permission is <see langword="null" /> if the intersection is empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The intersection of two permissions is a permission that describes the set of operations they both describe in common. Specifically, it represents the least permissive values of <xref:System.Security.Permissions.UIPermissionWindow> and <xref:System.Security.Permissions.UIPermissionClipboard> from those in the current permission and the specified permission.  
+The intersection of two permissions is a permission that describes the set of operations they both describe in common. Specifically, it represents the least permissive values of <xref:System.Security.Permissions.UIPermissionWindow> and <xref:System.Security.Permissions.UIPermissionClipboard> from those in the current permission and the specified permission.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the behavior of the <xref:System.Security.Permissions.UIPermission.Intersect%2A> method. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
-  
+The following code example shows the behavior of the <xref:System.Security.Permissions.UIPermission.Intersect%2A> method. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
+ 
 > [!NOTE]
 >  The code example is intended to show the behavior of the method, not to demonstrate its use. In general, the methods of permission classes are used by the security infrastructure; they are not typically used in applications.  
-  
- [!code-cpp[System.Security.Permissions.UIPermission#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#4)]
- [!code-csharp[System.Security.Permissions.UIPermission#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#4)]
- [!code-vb[System.Security.Permissions.UIPermission#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#4)]  
-  
+ 
+[!code-cpp[System.Security.Permissions.UIPermission#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#4)]
+[!code-csharp[System.Security.Permissions.UIPermission#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#4)]
+[!code-vb[System.Security.Permissions.UIPermission#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>
@@ -347,22 +347,22 @@
           <see langword="true" /> if the current permission is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current permission is a subset of the specified permission if all demands that succeed for the current permission also succeed for the specified permission. That is, the specified permission contains at least the permissions contained in the subset. For <xref:System.Security.Permissions.UIPermission.IsSubsetOf%2A> to return `true`, both the <xref:System.Security.Permissions.UIPermissionWindow> and <xref:System.Security.Permissions.UIPermissionClipboard> values of the current permission must be equal to or less permissive than the values of the specified permission.  
+The current permission is a subset of the specified permission if all demands that succeed for the current permission also succeed for the specified permission. That is, the specified permission contains at least the permissions contained in the subset. For <xref:System.Security.Permissions.UIPermission.IsSubsetOf%2A> to return `true`, both the <xref:System.Security.Permissions.UIPermissionWindow> and <xref:System.Security.Permissions.UIPermissionClipboard> values of the current permission must be equal to or less permissive than the values of the specified permission.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the behavior of the <xref:System.Security.Permissions.UIPermission.IsSubsetOf%2A> method. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
-  
+The following code example shows the behavior of the <xref:System.Security.Permissions.UIPermission.IsSubsetOf%2A> method. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
+ 
 > [!NOTE]
 >  The code example is intended to show the behavior of the method, not to demonstrate its use. In general, the methods of permission classes are used by the security infrastructure; they are not typically used in applications.  
-  
- [!code-cpp[System.Security.Permissions.UIPermission#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#2)]
- [!code-csharp[System.Security.Permissions.UIPermission#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#2)]
- [!code-vb[System.Security.Permissions.UIPermission#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#2)]  
-  
+ 
+[!code-cpp[System.Security.Permissions.UIPermission#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#2)]
+[!code-csharp[System.Security.Permissions.UIPermission#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#2)]
+[!code-vb[System.Security.Permissions.UIPermission#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>
@@ -388,10 +388,10 @@
           <see langword="true" /> if the current permission is unrestricted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An unrestricted permission represents access to any and all resources protected by the permission.  
-  
+An unrestricted permission represents access to any and all resources protected by the permission.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -415,17 +415,17 @@
         <returns>An XML encoding of the permission, including any state information.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the behavior of the <xref:System.Security.Permissions.UIPermission.ToXml%2A> method. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
-  
+The following code example shows the behavior of the <xref:System.Security.Permissions.UIPermission.ToXml%2A> method. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
+ 
 > [!NOTE]
 >  The code example is intended to show the behavior of the method, not to demonstrate its use. In general, the methods of permission classes are used by the security infrastructure; they are not typically used in applications.  
-  
- [!code-cpp[System.Security.Permissions.UIPermission#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#6)]
- [!code-csharp[System.Security.Permissions.UIPermission#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#6)]
- [!code-vb[System.Security.Permissions.UIPermission#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#6)]  
-  
+ 
+[!code-cpp[System.Security.Permissions.UIPermission#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#6)]
+[!code-csharp[System.Security.Permissions.UIPermission#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#6)]
+[!code-vb[System.Security.Permissions.UIPermission#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -452,22 +452,22 @@
         <returns>A new permission that represents the union of the current permission and the specified permission.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The result of a call to <xref:System.Security.Permissions.UIPermission.Union%2A> is a permission that represents all the operations represented by the current permission as well as all the operations represented by the specified permission. Specifically, it represents the most permissive values of <xref:System.Security.Permissions.UIPermissionWindow> and <xref:System.Security.Permissions.UIPermissionClipboard> from those in the current permission and the specified permission.  
+The result of a call to <xref:System.Security.Permissions.UIPermission.Union%2A> is a permission that represents all the operations represented by the current permission as well as all the operations represented by the specified permission. Specifically, it represents the most permissive values of <xref:System.Security.Permissions.UIPermissionWindow> and <xref:System.Security.Permissions.UIPermissionClipboard> from those in the current permission and the specified permission.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the behavior of the <xref:System.Security.Permissions.UIPermission.Union%2A> method. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
-  
+The following code example shows the behavior of the <xref:System.Security.Permissions.UIPermission.Union%2A> method. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
+ 
 > [!NOTE]
 >  The code example is intended to show the behavior of the method, not to demonstrate its use. In general, the methods of permission classes are used by the security infrastructure; they are not typically used in applications.  
-  
- [!code-cpp[System.Security.Permissions.UIPermission#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#3)]
- [!code-csharp[System.Security.Permissions.UIPermission#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#3)]
- [!code-vb[System.Security.Permissions.UIPermission#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#3)]  
-  
+ 
+[!code-cpp[System.Security.Permissions.UIPermission#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#3)]
+[!code-csharp[System.Security.Permissions.UIPermission#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#3)]
+[!code-vb[System.Security.Permissions.UIPermission#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>
@@ -491,14 +491,14 @@
         <value>One of the <see cref="T:System.Security.Permissions.UIPermissionWindow" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.UIPermission.Window%2A> property. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
-  
- [!code-cpp[System.Security.Permissions.UIPermission#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#2)]
- [!code-csharp[System.Security.Permissions.UIPermission#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#2)]
- [!code-vb[System.Security.Permissions.UIPermission#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#2)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.UIPermission.Window%2A> property. This example is part of a larger example provided for the <xref:System.Security.Permissions.UIPermission> class.  
+ 
+[!code-cpp[System.Security.Permissions.UIPermission#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CPP/uipermission.cpp#2)]
+[!code-csharp[System.Security.Permissions.UIPermission#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/CS/uipermission.cs#2)]
+[!code-vb[System.Security.Permissions.UIPermission#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.UIPermission/VB/uipermission.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

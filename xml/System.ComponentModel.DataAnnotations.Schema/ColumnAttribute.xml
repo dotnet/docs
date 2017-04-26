@@ -113,10 +113,10 @@
         <value>The order of the column.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified order is relative to the order values specified on other properties in the class. For example, given the following definition, the column `Line1` appears before `Line2`, and `Line2` appears before `Country`.  
-  
+The specified order is relative to the order values specified on other properties in the class. For example, given the following definition, the column `Line1` appears before `Line2`, and `Line2` appears before `Country`.  
+ 
 ```  
 public class Address  
 {  
@@ -129,7 +129,7 @@ public string Country { get; set; }
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

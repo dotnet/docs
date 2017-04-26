@@ -15,10 +15,10 @@
     <summary>Provides settings for maintaining the quota size for isolated storage.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides a host application with settings to perform policy decisions in the host's implementation of the <xref:System.AppDomainManager.CheckSecuritySettings%2A?displayProperty=fullName> method.  
-  
+This class provides a host application with settings to perform policy decisions in the host's implementation of the <xref:System.AppDomainManager.CheckSecuritySettings%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -62,10 +62,10 @@
         <value>The option to increase the isolated quota storage size.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is equal to the <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityOptions?displayProperty=fullName> enumeration value, which is the only value in the enumeration.  
-  
+This property is equal to the <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityOptions?displayProperty=fullName> enumeration value, which is the only value in the enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>

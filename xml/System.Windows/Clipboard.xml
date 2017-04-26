@@ -14,38 +14,38 @@
     <summary>Provides static methods that facilitate transferring data to and from the system Clipboard.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All applications for [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] share the system Clipboard, so the contents are subject to change when you switch to another application.  
-  
- For a list of predefined formats available to use with the <xref:System.Windows.Clipboard> class, see the <xref:System.Windows.DataFormats> class.  
-  
- **Security Alert:** For security purposes, the following points should be kept in mind.  
-  
+All applications for [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] share the system Clipboard, so the contents are subject to change when you switch to another application.  
+ 
+For a list of predefined formats available to use with the <xref:System.Windows.Clipboard> class, see the <xref:System.Windows.DataFormats> class.  
+ 
+**Security Alert:** For security purposes, the following points should be kept in mind.  
+ 
 -   Paste operations need to be user initiated (Ctrl-V, Paste Menu).  
-  
+ 
 -   Copy can only be on user selected content.  
-  
+ 
 -   On copy or cut, partial trust code puts plaintext and [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] on to the clipboard. Plaintext includes text, Unicode text, OEM (Object Exchange Model) text, and CSV (Comma-separated values).  
-  
+ 
 -   On paste, [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] will paste in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] if the source of that content is from a equally trusted or more trusted site. Specifically:  
+ 
+   -   A partial trust application can paste [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] from a full trust application.  
+ 
+   -   A partial trust application can paste [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] from a partial trust application.  
+ 
+   -   A full trust application can paste XAML only from another fully trusted application.  
+ 
+   -   A non-[!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] full trust application can examine the ApplicationTrust format on the clipboard and sanitize the XAML if appropriate.  
+ 
   
-    -   A partial trust application can paste [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] from a full trust application.  
-  
-    -   A partial trust application can paste [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] from a partial trust application.  
-  
-    -   A full trust application can paste XAML only from another fully trusted application.  
-  
-    -   A non-[!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] full trust application can examine the ApplicationTrust format on the clipboard and sanitize the XAML if appropriate.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to add data to the system Clipboard.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_SetData](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_setdata)]
- [!code-vb[DragDrop_DragDropMiscCode#_SetData](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_setdata)]  
-  
+The following example shows how to add data to the system Clipboard.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_SetData](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_setdata)]
+[!code-vb[DragDrop_DragDropMiscCode#_SetData](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_setdata)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,10 +72,10 @@
         <summary>Clears any data from the system Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method is equivalent to calling **OleSetClipboard**(**null**).  
-  
+Calling this method is equivalent to calling **OleSetClipboard**(**null**).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,10 +99,10 @@
           <see langword="true" /> if the Clipboard contains data in the <see cref="F:System.Windows.DataFormats.WaveAudio" /> data format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `true` only if the specified data format exists natively on the Clipboard; this method does not check for the presence of auto-convertible data formats.  
-  
+This method returns `true` only if the specified data format exists natively on the Clipboard; this method does not check for the presence of auto-convertible data formats.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,18 +129,18 @@
           <see langword="true" /> if data in the specified format is available on the Clipboard; otherwise, <see langword="false" />. See Remarks.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A query for the data format <xref:System.Windows.DataFormats> or <xref:System.Windows.DataFormats.FileDrop> will return `true` if the data can be automatically converted to the specified data format.  For other data formats, this method returns `true` only if the specified format is available natively on the Clipboard.  
+A query for the data format <xref:System.Windows.DataFormats> or <xref:System.Windows.DataFormats.FileDrop> will return `true` if the data can be automatically converted to the specified data format.  For other data formats, this method returns `true` only if the specified format is available natively on the Clipboard.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of this method.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_ContainsDataGetData](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_containsdatagetdata)]
- [!code-vb[DragDrop_DragDropMiscCode#_ContainsDataGetData](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_containsdatagetdata)]  
-  
+The following example demonstrates the use of this method.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_ContainsDataGetData](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_containsdatagetdata)]
+[!code-vb[DragDrop_DragDropMiscCode#_ContainsDataGetData](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_containsdatagetdata)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -166,10 +166,10 @@
           <see langword="true" /> if the Clipboard contains data in the <see cref="F:System.Windows.DataFormats.FileDrop" /> data format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `true` only if the specified data format exists natively or is available as an auto-convertible data format on the Clipboard; this method does not check for the presence of auto-convertible data formats.  
-  
+This method returns `true` only if the specified data format exists natively or is available as an auto-convertible data format on the Clipboard; this method does not check for the presence of auto-convertible data formats.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,12 +193,12 @@
           <see langword="true" /> if the Clipboard contains data in the <see cref="F:System.Windows.DataFormats.Bitmap" /> data format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `true` only if the specified data format exists natively or is available as an auto-convertible data format on the Clipboard; this method does not check for the presence of auto-convertible data formats.  
-  
- A bitmap represents a computer graphic as an array of bits in memory, and these bits represent the attributes of the individual pixels in an image.  
-  
+This method returns `true` only if the specified data format exists natively or is available as an auto-convertible data format on the Clipboard; this method does not check for the presence of auto-convertible data formats.  
+ 
+A bitmap represents a computer graphic as an array of bits in memory, and these bits represent the attributes of the individual pixels in an image.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,12 +222,12 @@
           <see langword="true" /> if the Clipboard contains data in the <see cref="F:System.Windows.DataFormats.UnicodeText" /> data format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `true` only if the specified data format exists natively on the Clipboard; this method does not check for the presence of auto-convertible data formats.  
-  
- The <xref:System.Windows.DataFormats.UnicodeText> data format denotes 16-bit character encoded Unicode, also referred to as UTF-16, and USC-2.  
-  
+This method returns `true` only if the specified data format exists natively on the Clipboard; this method does not check for the presence of auto-convertible data formats.  
+ 
+The <xref:System.Windows.DataFormats.UnicodeText> data format denotes 16-bit character encoded Unicode, also referred to as UTF-16, and USC-2.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,10 +254,10 @@
           <see langword="true" /> if the Clipboard contains data in the specified text data format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `true` only if the specified data format exists natively in the data object; this method does not check for the presence of auto-convertible data formats.  
-  
+This method returns `true` only if the specified data format exists natively in the data object; this method does not check for the presence of auto-convertible data formats.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -300,10 +300,10 @@
         <returns>A stream that contains the data in the <see cref="F:System.Windows.DataFormats.WaveAudio" /> format, or <see langword="null" /> if the Clipboard does not contain data in this format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a stream only if the specified format exists natively in the data object; this method does not return auto-convertible data.  
-  
+This method returns a stream only if the specified format exists natively in the data object; this method does not return auto-convertible data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,13 +329,13 @@
         <returns>An object that contains the data in the specified format, or <see langword="null" /> if the data is unavailable in the specified format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of this method.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_ContainsDataGetData](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_containsdatagetdata)]
- [!code-vb[DragDrop_DragDropMiscCode#_ContainsDataGetData](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_containsdatagetdata)]  
-  
+The following example demonstrates the use of this method.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_ContainsDataGetData](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_containsdatagetdata)]
+[!code-vb[DragDrop_DragDropMiscCode#_ContainsDataGetData](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_containsdatagetdata)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -365,14 +365,14 @@
         <returns>A data object that enables access to the entire contents of the system Clipboard, or <see langword="null" /> if there is no data on the Clipboard.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Access to data on the system Clipboard is enabled through a *data object*, that is, an object that implements the <xref:System.Windows.IDataObject> interface. A list of predefined formats is defined by the <xref:System.Windows.DataFormats> class.  Use the methods specified by <xref:System.Windows.IDataObject> and fields in <xref:System.Windows.DataFormats> to examine and extract the data from the data object.  
-  
- To examine the formats of data on the system Clipboard, call <xref:System.Windows.IDataObject.GetFormats%2A> on the data object returned by this method.  To retrieve data from the system Clipboard, call <xref:System.Windows.IDataObject.GetData%2A> and specify the desired data format.  
-  
- The system Clipboard is shared by all applications, so data on the Clipboard is subject to change by other applications.  
-  
+Access to data on the system Clipboard is enabled through a *data object*, that is, an object that implements the <xref:System.Windows.IDataObject> interface. A list of predefined formats is defined by the <xref:System.Windows.DataFormats> class.  Use the methods specified by <xref:System.Windows.IDataObject> and fields in <xref:System.Windows.DataFormats> to examine and extract the data from the data object.  
+ 
+To examine the formats of data on the system Clipboard, call <xref:System.Windows.IDataObject.GetFormats%2A> on the data object returned by this method.  To retrieve data from the system Clipboard, call <xref:System.Windows.IDataObject.GetData%2A> and specify the desired data format.  
+ 
+The system Clipboard is shared by all applications, so data on the Clipboard is subject to change by other applications.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for permission to access data on the system Clipboard.  Associated enumeration: **AllClipboard**.</permission>
@@ -415,12 +415,12 @@
         <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> object that contains data in the <see cref="F:System.Windows.DataFormats.Bitmap" /> format, or <see langword="null" /> if the data is unavailable in this format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a <xref:System.Windows.Media.Imaging.BitmapSource> object, either when data is available natively or when data can be auto-converted to the <xref:System.Windows.DataFormats.Bitmap> data format.  
-  
- A bitmap represents a computer graphic as an array of bits in memory, and these bits represent the attributes of the individual pixels in an image.  
-  
+This method returns a <xref:System.Windows.Media.Imaging.BitmapSource> object, either when data is available natively or when data can be auto-converted to the <xref:System.Windows.DataFormats.Bitmap> data format.  
+ 
+A bitmap represents a computer graphic as an array of bits in memory, and these bits represent the attributes of the individual pixels in an image.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -443,10 +443,10 @@
         <returns>A string containing the <see cref="F:System.Windows.DataFormats.UnicodeText" /> data , or an empty string if no <see cref="F:System.Windows.DataFormats.UnicodeText" /> data is available on the Clipboard.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.DataFormats.UnicodeText> data format denotes 16-bit character encoded Unicode, also referred to as UTF-16, and UCS-2.  
-  
+The <xref:System.Windows.DataFormats.UnicodeText> data format denotes 16-bit character encoded Unicode, also referred to as UTF-16, and UCS-2.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -495,18 +495,18 @@
           <see langword="true" /> if the specified data object matches what is on the system Clipboard; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to determine if a data object that was previously placed on the Clipboard is still present and unmodified.  
+Use this method to determine if a data object that was previously placed on the Clipboard is still present and unmodified.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of this method.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_SetDataObjectIsCurrent](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_setdataobjectiscurrent)]
- [!code-vb[DragDrop_DragDropMiscCode#_SetDataObjectIsCurrent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_setdataobjectiscurrent)]  
-  
+The following example demonstrates the use of this method.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_SetDataObjectIsCurrent](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_setdataobjectiscurrent)]
+[!code-vb[DragDrop_DragDropMiscCode#_SetDataObjectIsCurrent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_setdataobjectiscurrent)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -534,10 +534,10 @@
         <summary>Stores audio data (<see cref="F:System.Windows.DataFormats.WaveAudio" /> data format) on the Clipboard.  The audio data is specified as a byte array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds data with auto-conversion disabled.  
-  
+This method adds data with auto-conversion disabled.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -564,10 +564,10 @@
         <summary>Stores audio data (<see cref="F:System.Windows.DataFormats.WaveAudio" /> data format) on the Clipboard.  The audio data is specified as a stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds data with auto-conversion disabled.  
-  
+This method adds data with auto-conversion disabled.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -596,18 +596,18 @@
         <summary>Stores the specified data on the Clipboard in the specified format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds data with auto-conversion enabled if the corresponding data format is <xref:System.Windows.DataFormats> or <xref:System.Windows.DataFormats.Bitmap>.  Otherwise, auto-conversion is disabled.  
+This method adds data with auto-conversion enabled if the corresponding data format is <xref:System.Windows.DataFormats> or <xref:System.Windows.DataFormats.Bitmap>.  Otherwise, auto-conversion is disabled.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of this method.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_SetData](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_setdata)]
- [!code-vb[DragDrop_DragDropMiscCode#_SetData](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_setdata)]  
-  
+The following example demonstrates the use of this method.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_SetData](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_setdata)]
+[!code-vb[DragDrop_DragDropMiscCode#_SetData](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_setdata)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -637,15 +637,15 @@
         <summary>Places a specified non-persistent data object on the system Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, data placed on the system Clipboard with <xref:System.Windows.Clipboard.SetDataObject%2A> is automatically cleared from the Clipboard when the application exits.  
-  
+By default, data placed on the system Clipboard with <xref:System.Windows.Clipboard.SetDataObject%2A> is automatically cleared from the Clipboard when the application exits.  
+ 
 > [!NOTE]
 >  The default behavior of clearing the Clipboard on application exit might differ from other implementations, which might leave data on the Clipboard on application exit rather than clearing it by default.  Use the <xref:System.Windows.Clipboard.SetDataObject%2A> overload and specify the `copy` parameter as `true` if you do not want data cleared from the Clipboard on application exit.  
 >   
 >  <xref:System.Windows.DataObject> provides a basic implementation of the <xref:System.Windows.IDataObject> interface.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -682,18 +682,18 @@
         <summary>Places a specified data object on the system Clipboard and accepts a Boolean parameter that indicates whether the data object should be left on the Clipboard when the application exits.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.DataObject> provides a basic implementation of the <xref:System.Windows.IDataObject> interface. <xref:System.Windows.Clipboard.IsCurrent%2A> determines the data object previously placed on the clipboard by the last <xref:System.Windows.Clipboard.SetDataObject%2A> call.  
+<xref:System.Windows.DataObject> provides a basic implementation of the <xref:System.Windows.IDataObject> interface. <xref:System.Windows.Clipboard.IsCurrent%2A> determines the data object previously placed on the clipboard by the last <xref:System.Windows.Clipboard.SetDataObject%2A> call.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of this method.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_SetDataObjectIsCurrent](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_setdataobjectiscurrent)]
- [!code-vb[DragDrop_DragDropMiscCode#_SetDataObjectIsCurrent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_setdataobjectiscurrent)]  
-  
+The following example demonstrates the use of this method.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_SetDataObjectIsCurrent](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_setdataobjectiscurrent)]
+[!code-vb[DragDrop_DragDropMiscCode#_SetDataObjectIsCurrent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_setdataobjectiscurrent)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -722,10 +722,10 @@
         <summary>Stores <see cref="F:System.Windows.DataFormats.FileDrop" /> data on the Clipboard.  The dropped file list is specified as a string collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds data with auto-conversion enabled.  
-  
+This method adds data with auto-conversion enabled.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -754,12 +754,12 @@
         <summary>Stores <see cref="F:System.Windows.DataFormats.Bitmap" /> data on the Clipboard.  The image data is specified as a <see cref="T:System.Windows.Media.Imaging.BitmapSource" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A bitmap represents a computer graphic as an array of bits in memory, and these bits represent the attributes of the individual pixels in an image.  
-  
- This method adds data with auto-conversion enabled.  
-  
+A bitmap represents a computer graphic as an array of bits in memory, and these bits represent the attributes of the individual pixels in an image.  
+ 
+This method adds data with auto-conversion enabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -784,12 +784,12 @@
         <summary>Stores <see cref="F:System.Windows.DataFormats.UnicodeText" /> data on the Clipboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This data format denotes 16-bit character encoded Unicode, also referred to as UTF-16, and UCS-2.  
-  
- This method adds data with auto-conversion disabled.  
-  
+This data format denotes 16-bit character encoded Unicode, also referred to as UTF-16, and UCS-2.  
+ 
+This method adds data with auto-conversion disabled.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -818,10 +818,10 @@
         <summary>Stores text data on the Clipboard in a specified text data format.  The <see cref="F:System.Windows.DataFormats.UnicodeText" /> data to store is specified as a string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds data with auto-conversion disabled.  
-  
+This method adds data with auto-conversion disabled.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

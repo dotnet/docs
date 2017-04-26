@@ -15,12 +15,12 @@
     <summary>Reads return values from XML that is encoded in the body of incoming responses for Web service clients implemented using HTTP but without SOAP.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Services.Protocols.XmlReturnReader> and other classes in the <xref:System.Web.Services.Protocols> namespace support the .NET Framework's implementations of Web services via the HTTP-GET and HTTP-POST operations. Web service writers and readers serialize and deserialize, respectively, between the parameters or return objects of Web methods and the HTTP request or response streams. Web service writers and readers use HTTP for transport but don't exchange messages using the SOAP standard. The <xref:System.Web.Services.Protocols.XmlReturnReader> class implements the client-side reading of XML documents into Web method return values. The XML documents are encoded in the body of HTTP responses.  
-  
- You typically will not need to use <xref:System.Web.Services.Protocols.XmlReturnReader> directly. Instead, when the Wsdl.exe tool generates client proxy code according to the HTTP-GET or HTTP-POST implementations, it applies the <xref:System.Web.Services.Protocols.HttpMethodAttribute> to each Web method and sets the attribute's <xref:System.Web.Services.Protocols.HttpMethodAttribute.ReturnFormatter%2A> property to <xref:System.Web.Services.Protocols.XmlReturnReader>.  
-  
+<xref:System.Web.Services.Protocols.XmlReturnReader> and other classes in the <xref:System.Web.Services.Protocols> namespace support the .NET Framework's implementations of Web services via the HTTP-GET and HTTP-POST operations. Web service writers and readers serialize and deserialize, respectively, between the parameters or return objects of Web methods and the HTTP request or response streams. Web service writers and readers use HTTP for transport but don't exchange messages using the SOAP standard. The <xref:System.Web.Services.Protocols.XmlReturnReader> class implements the client-side reading of XML documents into Web method return values. The XML documents are encoded in the body of HTTP responses.  
+ 
+You typically will not need to use <xref:System.Web.Services.Protocols.XmlReturnReader> directly. Instead, when the Wsdl.exe tool generates client proxy code according to the HTTP-GET or HTTP-POST implementations, it applies the <xref:System.Web.Services.Protocols.HttpMethodAttribute> to each Web method and sets the attribute's <xref:System.Web.Services.Protocols.HttpMethodAttribute.ReturnFormatter%2A> property to <xref:System.Web.Services.Protocols.XmlReturnReader>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,12 +63,12 @@
         <returns>An initializer for the specified method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An initializer is an object passed as a parameter to the Initialize method. For the <xref:System.Web.Services.Protocols.XmlReturnReader> class, the initializer is an <xref:System.Xml.Serialization.XmlSerializer> object for the return type of the Web method.  
-  
- The <xref:System.Web.Services.Protocols.XmlReturnReader.GetInitializer%2A> method is invoked during service initialization. Later, at the time a response is processed, the initializer object is passed to the <xref:System.Web.Services.Protocols.XmlReturnReader.Initialize%2A> method of another <xref:System.Web.Services.Protocols.XmlReturnReader> instance. The other instance performs the actual reading.  
-  
+An initializer is an object passed as a parameter to the Initialize method. For the <xref:System.Web.Services.Protocols.XmlReturnReader> class, the initializer is an <xref:System.Xml.Serialization.XmlSerializer> object for the return type of the Web method.  
+ 
+The <xref:System.Web.Services.Protocols.XmlReturnReader.GetInitializer%2A> method is invoked during service initialization. Later, at the time a response is processed, the initializer object is passed to the <xref:System.Web.Services.Protocols.XmlReturnReader.Initialize%2A> method of another <xref:System.Web.Services.Protocols.XmlReturnReader> instance. The other instance performs the actual reading.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,12 +95,12 @@
         <returns>An array of initializer objects corresponding to an input array of method definitions.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An initializer is an object passed as a parameter to the Initialize method. For the <xref:System.Web.Services.Protocols.XmlReturnReader> class, the initializer is an <xref:System.Xml.Serialization.XmlSerializer> object for the return type of the Web method.  
-  
- The <xref:System.Web.Services.Protocols.XmlReturnReader.GetInitializers%2A> method is invoked during service initialization. Later, at the time a response is processed, the initializer object for each Web method is passed to the <xref:System.Web.Services.Protocols.XmlReturnReader.Initialize%2A> method of another <xref:System.Web.Services.Protocols.XmlReturnReader> instance. The other instance performs the actual reading.  
-  
+An initializer is an object passed as a parameter to the Initialize method. For the <xref:System.Web.Services.Protocols.XmlReturnReader> class, the initializer is an <xref:System.Xml.Serialization.XmlSerializer> object for the return type of the Web method.  
+ 
+The <xref:System.Web.Services.Protocols.XmlReturnReader.GetInitializers%2A> method is invoked during service initialization. Later, at the time a response is processed, the initializer object for each Web method is passed to the <xref:System.Web.Services.Protocols.XmlReturnReader.Initialize%2A> method of another <xref:System.Web.Services.Protocols.XmlReturnReader> instance. The other instance performs the actual reading.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,12 +126,12 @@
         <summary>Initializes an instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Protocols.XmlReturnReader.Initialize%2A> method supplies the <xref:System.Xml.Serialization.XmlSerializer> object used by the <xref:System.Web.Services.Protocols.XmlReturnReader.Read%2A> method to deserialize an XML document contained in the HTTP response.  
-  
- The <xref:System.Web.Services.Protocols.XmlReturnReader.Initialize%2A> method is invoked at the time a request is processed. The input parameter, `o`, is obtained by calling the <xref:System.Web.Services.Protocols.XmlReturnReader.GetInitializer%2A> or <xref:System.Web.Services.Protocols.XmlReturnReader.GetInitializers%2A> method on another instance during client initialization.  
-  
+The <xref:System.Web.Services.Protocols.XmlReturnReader.Initialize%2A> method supplies the <xref:System.Xml.Serialization.XmlSerializer> object used by the <xref:System.Web.Services.Protocols.XmlReturnReader.Read%2A> method to deserialize an XML document contained in the HTTP response.  
+ 
+The <xref:System.Web.Services.Protocols.XmlReturnReader.Initialize%2A> method is invoked at the time a request is processed. The input parameter, `o`, is obtained by calling the <xref:System.Web.Services.Protocols.XmlReturnReader.GetInitializer%2A> or <xref:System.Web.Services.Protocols.XmlReturnReader.GetInitializers%2A> method on another instance during client initialization.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,10 +160,10 @@
         <returns>A return value deserialized from an XML document contained in the HTTP response.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To deserialize the XML content of the HTTP response, the <xref:System.Web.Services.Protocols.XmlReturnReader> class's implementation of the <xref:System.Web.Services.Protocols.XmlReturnReader.Read%2A> method uses the <xref:System.Xml.Serialization.XmlSerializer> object passed as an argument to the <xref:System.Web.Services.Protocols.XmlReturnReader.Initialize%2A> method. It throws an exception if the HTTP response's MIME content type is not `text/xml`. The method closes the response before returning the deserialized Web method return value.  
-  
+To deserialize the XML content of the HTTP response, the <xref:System.Web.Services.Protocols.XmlReturnReader> class's implementation of the <xref:System.Web.Services.Protocols.XmlReturnReader.Read%2A> method uses the <xref:System.Xml.Serialization.XmlSerializer> object passed as an argument to the <xref:System.Web.Services.Protocols.XmlReturnReader.Initialize%2A> method. It throws an exception if the HTTP response's MIME content type is not `text/xml`. The method closes the response before returning the deserialized Web method return value.  
+ 
  ]]></format>
         </remarks>
       </Docs>

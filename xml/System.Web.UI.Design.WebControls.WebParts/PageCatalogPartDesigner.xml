@@ -14,12 +14,12 @@
     <summary>Provides design-time support in a visual designer for a <see cref="T:System.Web.UI.WebControls.WebParts.PageCatalogPart" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> class acts as a page catalog to maintain any controls previously added to the page that a user has closed, so that the user can add them back to the page. This control is visible only when a Web page is in catalog display mode. The <xref:System.Web.UI.Design.WebControls.WebParts.PageCatalogPartDesigner> class provides design-time support for the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> class.  
-  
- In a visual designer, when you switch from Source to Design view, the markup source code that describes the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control is persisted to the markup source code and edited into the markup for the Web page.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> class acts as a page catalog to maintain any controls previously added to the page that a user has closed, so that the user can add them back to the page. This control is visible only when a Web page is in catalog display mode. The <xref:System.Web.UI.Design.WebControls.WebParts.PageCatalogPartDesigner> class provides design-time support for the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> class.  
+ 
+In a visual designer, when you switch from Source to Design view, the markup source code that describes the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control is persisted to the markup source code and edited into the markup for the Web page.  
+ 
  ]]></format>
     </remarks>
   </Docs>

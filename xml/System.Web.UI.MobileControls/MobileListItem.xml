@@ -29,18 +29,18 @@
     <summary>Represents an individual item within a <see cref="T:System.Web.UI.MobileControls.List" /> or <see cref="T:System.Web.UI.MobileControls.SelectionList" /> ASP.NET mobile control. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the class name is <xref:System.Web.UI.MobileControls.MobileListItem>, the element name is `Item`. On a mobile page, you declare an item by using the [\<Item>](http://msdn.microsoft.com/en-us/7152e195-e1d6-4a91-9dba-e0536a676e79)element.  
+Although the class name is <xref:System.Web.UI.MobileControls.MobileListItem>, the element name is `Item`. On a mobile page, you declare an item by using the [\<Item>](http://msdn.microsoft.com/en-us/7152e195-e1d6-4a91-9dba-e0536a676e79)element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how you manipulate items in the <xref:System.Web.UI.MobileControls.MobileListItem> object through the <xref:System.Web.UI.MobileControls.MobileListItemCollection> class by using the selected item's index of the <xref:System.Web.UI.MobileControls.SelectionList.Items%2A?displayProperty=fullName> property.  
-  
- <!-- TODO: review snippet reference [!code-csharp[MobileListItemSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListItemSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileListItemSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListItemSample/vb/Default.aspx#1)]  -->  
-  
+The following code example shows how you manipulate items in the <xref:System.Web.UI.MobileControls.MobileListItem> object through the <xref:System.Web.UI.MobileControls.MobileListItemCollection> class by using the selected item's index of the <xref:System.Web.UI.MobileControls.SelectionList.Items%2A?displayProperty=fullName> property.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[MobileListItemSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileListItemSample/cs/Default.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[MobileListItemSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileListItemSample/vb/Default.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -60,10 +60,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor builds a <xref:System.Web.UI.MobileControls.MobileListItem> object with the missing elements set to `null.` The default constructor initializes all properties to `null`.  
-  
+This constructor builds a <xref:System.Web.UI.MobileControls.MobileListItem> object with the missing elements set to `null.` The default constructor initializes all properties to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,10 +85,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> class using the specified <see cref="P:System.Web.UI.MobileControls.MobileListItem.Text" /> property. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor builds a <xref:System.Web.UI.MobileControls.MobileListItem> object with the missing elements set to `null`. The object is initialized with the <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> property set to the value of the `text` parameter.  
-  
+This constructor builds a <xref:System.Web.UI.MobileControls.MobileListItem> object with the missing elements set to `null`. The object is initialized with the <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> property set to the value of the `text` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> class with the specified <see cref="T:System.Type" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor builds a <xref:System.Web.UI.MobileControls.MobileListItem> object with the missing elements set to `null`. The object is initialized with the `itemType` parameter.  
-  
+This constructor builds a <xref:System.Web.UI.MobileControls.MobileListItem> object with the missing elements set to `null`. The object is initialized with the `itemType` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,10 +137,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor builds a <xref:System.Web.UI.MobileControls.MobileListItem> object with the missing elements set to `null`. The object is initialized with the <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> and <xref:System.Web.UI.MobileControls.MobileListItem.Value%2A> properties set to the values of the corresponding `text` and `value` parameters.  
-  
+This constructor builds a <xref:System.Web.UI.MobileControls.MobileListItem> object with the missing elements set to `null`. The object is initialized with the <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> and <xref:System.Web.UI.MobileControls.MobileListItem.Value%2A> properties set to the values of the corresponding `text` and `value` parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,10 +166,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor builds a <xref:System.Web.UI.MobileControls.MobileListItem> object with the missing elements set to `null`. The object is initialized with the <xref:System.Web.UI.MobileControls.MobileListItem.DataItem%2A>, <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A>, and <xref:System.Web.UI.MobileControls.MobileListItem.Value%2A> properties set to the values of the corresponding `dataItem`, `text`, and `value` parameters.  
-  
+This constructor builds a <xref:System.Web.UI.MobileControls.MobileListItem> object with the missing elements set to `null`. The object is initialized with the <xref:System.Web.UI.MobileControls.MobileListItem.DataItem%2A>, <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A>, and <xref:System.Web.UI.MobileControls.MobileListItem.Value%2A> properties set to the values of the corresponding `dataItem`, `text`, and `value` parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -432,10 +432,10 @@
           <see langword="true" /> if the <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> object is tracking its view-state changes; otherwise, <see langword="false." /></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.MobileListItem> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.MobileListItem> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -460,10 +460,10 @@
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.MobileListItem> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.MobileListItem> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -486,10 +486,10 @@
         <returns>The view-state changes for the control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.MobileListItem> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.MobileListItem> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -511,10 +511,10 @@
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.TrackViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.MobileListItem> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.MobileListItem> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -541,12 +541,12 @@
         <value>The text in the item. The default is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> property is an empty string or is never set, either programmatically or through the constructor, it returns the value of the <xref:System.Web.UI.MobileControls.MobileListItem.Value%2A> property for the specified list item.  
-  
- The <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> property can be specified by using the `Text` attribute, or as inner text. If the <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> property is specified in both ways, the inner text always takes precedence. However, if the <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> property is programmatically set, the inner text is automatically removed and the newly set property takes precedence.  
-  
+If the <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> property is an empty string or is never set, either programmatically or through the constructor, it returns the value of the <xref:System.Web.UI.MobileControls.MobileListItem.Value%2A> property for the specified list item.  
+ 
+The <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> property can be specified by using the `Text` attribute, or as inner text. If the <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> property is specified in both ways, the inner text always takes precedence. However, if the <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> property is programmatically set, the inner text is automatically removed and the newly set property takes precedence.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -610,10 +610,10 @@
         <value>The value contained in the list item. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is `null`, a call to retrieve the value returns the value of the <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> property.  
-  
+If this property is `null`, a call to retrieve the value returns the value of the <xref:System.Web.UI.MobileControls.MobileListItem.Text%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -57,10 +57,10 @@
           <see langword="true" /> if the objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The serializer uses this method to determine whether the same object already exists in the parent collection and whether it needs to be serialized at a lower level if it is not inherited.  
-  
+The serializer uses this method to determine whether the same object already exists in the parent collection and whether it needs to be serialized at a lower level if it is not inherited.  
+ 
  ]]></format>
         </remarks>
       </Docs>

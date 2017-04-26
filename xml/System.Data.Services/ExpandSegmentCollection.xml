@@ -17,14 +17,14 @@
     <summary>The segments of a query that can be expanded by the <c>$expand</c> clause that follows a query.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An `$expand` clause indicates that each expand item should be fully expanded. For example, the value `OrderLines.Product.Image` with `$expand` causes `OrderLines`, the `Product` of each element in `OrderLines`, and the `Image` of the `Product` of each element in `OrderLines` to be expanded.  
-  
- The left-most resource property in an `$expand` clause must be a property on the entity type within the entity set identified by the last path segment in the request URI.  
-  
- Redundant `$expand` clause rules are ignored.  
-  
+An `$expand` clause indicates that each expand item should be fully expanded. For example, the value `OrderLines.Product.Image` with `$expand` causes `OrderLines`, the `Product` of each element in `OrderLines`, and the `Image` of the `Product` of each element in `OrderLines` to be expanded.  
+ 
+The left-most resource property in an `$expand` clause must be a property on the entity type within the entity set identified by the last path segment in the request URI.  
+ 
+Redundant `$expand` clause rules are ignored.  
+ 
  ]]></format>
     </remarks>
   </Docs>

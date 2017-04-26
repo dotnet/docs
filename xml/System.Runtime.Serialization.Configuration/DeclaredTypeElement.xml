@@ -14,12 +14,12 @@
     <summary>Handles the XML elements used to add known types that are used for serialization by the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used to handle the XML element that specifies the declared type and contains its collection of known types.  
-  
- For an example of adding known types to the collection using configuration, see [\&lt;declaredTypes\&gt;](~/docs/framework/configure-apps/file-schema/wcf/declaredtypes.md).  
-  
+This class is used to handle the XML element that specifies the declared type and contains its collection of known types.  
+ 
+For an example of adding known types to the collection using configuration, see [\&lt;declaredTypes\&gt;](~/docs/framework/configure-apps/file-schema/wcf/declaredtypes.md).  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

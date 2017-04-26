@@ -14,15 +14,15 @@
     <summary>Enables the preservation and accessing of all data values associated with the user interaction components of a workflow application, at a particular point in time in the running of a workflow application. A <see cref="T:System.Activities.Presentation.View.ViewStateService" /> stores view states for model items.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is useful so that the state can keep being retrieved when control of the application goes and comes with postbacks. <xref:System.Activities.Presentation.View.ViewStateService> is an abstract class. Derived classes must store view states when <xref:System.Activities.Presentation.View.ViewStateService.StoreViewState%2A> is called, and retrieve them when <xref:System.Activities.Presentation.View.ViewStateService.RetrieveViewState%2A> is called.  
+This is useful so that the state can keep being retrieved when control of the application goes and comes with postbacks. <xref:System.Activities.Presentation.View.ViewStateService> is an abstract class. Derived classes must store view states when <xref:System.Activities.Presentation.View.ViewStateService.StoreViewState%2A> is called, and retrieve them when <xref:System.Activities.Presentation.View.ViewStateService.RetrieveViewState%2A> is called.  
+ 
   
-   
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_ViewStateService#0](WFD_ViewStateService#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -88,10 +88,10 @@
         <returns>Returns <see cref="T:System.Collections.Generic.Dictionary`2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Activities.Presentation.View.ViewStateService.StoreViewState%2A> to initially store view state information so that it can be retrieved.  
-  
+Call <xref:System.Activities.Presentation.View.ViewStateService.StoreViewState%2A> to initially store view state information so that it can be retrieved.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <returns>The aspect of the view state as an <see cref="T:System.Object" />,or <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Activities.Presentation.View.ViewStateService.StoreViewState%2A> to initially store view state information so that it can be retrieved.  
-  
+Call <xref:System.Activities.Presentation.View.ViewStateService.StoreViewState%2A> to initially store view state information so that it can be retrieved.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,10 +151,10 @@
         <summary>Stores an aspect of the view state for the specified <paramref name="modelItem" />, matching the specified <paramref name="key" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can retrieve the stored object by calling <xref:System.Activities.Presentation.View.ViewStateService.RetrieveViewState%2A> and passing the same values for `modelItem` and `key`.  
-  
+You can retrieve the stored object by calling <xref:System.Activities.Presentation.View.ViewStateService.RetrieveViewState%2A> and passing the same values for `modelItem` and `key`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,10 +183,10 @@
         <summary>When implemented in a derived class, records the current setting of the item represented by the specified key so that it is available for an undo operation. The item represented by the specified key is then stored in the view state of the specified model item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can retrieve the stored object by calling <xref:System.Activities.Presentation.View.ViewStateService.RetrieveViewState%2A> and passing the same values for `modelItem` and `key`.  
-  
+You can retrieve the stored object by calling <xref:System.Activities.Presentation.View.ViewStateService.RetrieveViewState%2A> and passing the same values for `modelItem` and `key`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

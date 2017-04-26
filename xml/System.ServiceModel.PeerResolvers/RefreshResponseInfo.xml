@@ -19,12 +19,12 @@
     <summary>Contains response information returned as a result of a registration lookup table refresh operation on the peer resolver.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Refresh%28System.ServiceModel.PeerResolvers.RefreshInfo%29> or an implementation of  <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Refresh%28System.ServiceModel.PeerResolvers.RefreshInfo%29> is called, this object is returned to the client. It contains the refreshed registration entry with the new expiry timestamp, and is returned when a previous <xref:System.ServiceModel.PeerResolvers.RefreshInfo> instance is sent to the peer resolver as part of a request to update the expiry of a registration entry.  
-  
- Instances of this class are primarily used to pass information from the resolver service to a network client of that service.  
-  
+When <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Refresh%28System.ServiceModel.PeerResolvers.RefreshInfo%29> or an implementation of  <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Refresh%28System.ServiceModel.PeerResolvers.RefreshInfo%29> is called, this object is returned to the client. It contains the refreshed registration entry with the new expiry timestamp, and is returned when a previous <xref:System.ServiceModel.PeerResolvers.RefreshInfo> instance is sent to the peer resolver as part of a request to update the expiry of a registration entry.  
+ 
+Instances of this class are primarily used to pass information from the resolver service to a network client of that service.  
+ 
  ]]></format>
     </remarks>
   </Docs>

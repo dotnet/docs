@@ -24,32 +24,32 @@
     <summary>Specifies the <see cref="T:System.ComponentModel.LicenseProvider" /> to use with a class. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you create a component that you want to license, you must specify the <xref:System.ComponentModel.LicenseProvider> by marking the component with a <xref:System.ComponentModel.LicenseProviderAttribute>.  
-  
- Use the <xref:System.ComponentModel.LicenseProviderAttribute.LicenseProvider%2A> property to get the <xref:System.Type> of the <xref:System.ComponentModel.LicenseProvider>.  
-  
- For more information about attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87). For more information about licensing, see [How to: License Components and Controls](http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57).  
-  
+When you create a component that you want to license, you must specify the <xref:System.ComponentModel.LicenseProvider> by marking the component with a <xref:System.ComponentModel.LicenseProviderAttribute>.  
+ 
+Use the <xref:System.ComponentModel.LicenseProviderAttribute.LicenseProvider%2A> property to get the <xref:System.Type> of the <xref:System.ComponentModel.LicenseProvider>.  
+ 
+For more information about attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87). For more information about licensing, see [How to: License Components and Controls](http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57).  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.ComponentModel.LicFileLicenseProvider> as the license provider for `MyControl`.  
-  
- [!code-cpp[Classic LicenseProviderAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic LicenseProviderAttribute Example/CPP/source.cpp#1)]
- [!code-csharp[Classic LicenseProviderAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic LicenseProviderAttribute Example/CS/source.cs#1)]
- [!code-vb[Classic LicenseProviderAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic LicenseProviderAttribute Example/VB/source.vb#1)]  
-  
- The next code example creates an instance of the `MyControl` class. Then, it gets the attributes for the class, and prints the name of the license provider used by `myNewControl`.  
-  
- [!code-cpp[Classic LicenseProviderAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic LicenseProviderAttribute Example/CPP/source.cpp#2)]
- [!code-csharp[Classic LicenseProviderAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic LicenseProviderAttribute Example/CS/source.cs#2)]
- [!code-vb[Classic LicenseProviderAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic LicenseProviderAttribute Example/VB/source.vb#2)]  
-  
+The following code example uses the <xref:System.ComponentModel.LicFileLicenseProvider> as the license provider for `MyControl`.  
+ 
+[!code-cpp[Classic LicenseProviderAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic LicenseProviderAttribute Example/CPP/source.cpp#1)]
+[!code-csharp[Classic LicenseProviderAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic LicenseProviderAttribute Example/CS/source.cs#1)]
+[!code-vb[Classic LicenseProviderAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic LicenseProviderAttribute Example/VB/source.vb#1)]  
+ 
+The next code example creates an instance of the `MyControl` class. Then, it gets the attributes for the class, and prints the name of the license provider used by `myNewControl`.  
+ 
+[!code-cpp[Classic LicenseProviderAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic LicenseProviderAttribute Example/CPP/source.cpp#2)]
+[!code-csharp[Classic LicenseProviderAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic LicenseProviderAttribute Example/CS/source.cs#2)]
+[!code-vb[Classic LicenseProviderAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic LicenseProviderAttribute Example/VB/source.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

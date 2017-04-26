@@ -14,10 +14,10 @@
     <summary>Provides data for the <see cref="E:System.Windows.Documents.Hyperlink.RequestNavigate" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is raised by <xref:System.Windows.Documents.Hyperlink> when clicked. The event is processed by the navigator (<xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame>) whose content contains the <xref:System.Windows.Documents.Hyperlink>.  
-  
+This event is raised by <xref:System.Windows.Documents.Hyperlink> when clicked. The event is processed by the navigator (<xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame>) whose content contains the <xref:System.Windows.Documents.Hyperlink>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

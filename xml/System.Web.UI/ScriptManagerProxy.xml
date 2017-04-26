@@ -34,23 +34,23 @@
     <summary>Enables nested components such as content pages and user controls to add script and service references to pages when a <see cref="T:System.Web.UI.ScriptManager" /> control is already defined in a parent element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In this topic:  
-  
+In this topic:  
+ 
 -   [Introduction](#introduction)  
-  
+ 
 -   [Declarative Syntax](#declarative_syntax)  
-  
+ 
 <a name="introduction"></a>   
 ## Introduction  
- A Web page can contain only one <xref:System.Web.UI.ScriptManager> control, either directly on the page or indirectly inside a nested or parent component. The <xref:System.Web.UI.ScriptManagerProxy> control lets you add scripts and services to content pages and to user controls if the master page or host page already contains a <xref:System.Web.UI.ScriptManager> control.  
-  
- When you use the <xref:System.Web.UI.ScriptManagerProxy> control, you can add to the script and service collections defined by the <xref:System.Web.UI.ScriptManager> control. If you do not want to include specific scripts and services on every page that includes a particular <xref:System.Web.UI.ScriptManager> control, you can remove them from the <xref:System.Web.UI.ScriptManager> control. You can then add them to individual pages by using the <xref:System.Web.UI.ScriptManagerProxy> control instead.  
-  
+A Web page can contain only one <xref:System.Web.UI.ScriptManager> control, either directly on the page or indirectly inside a nested or parent component. The <xref:System.Web.UI.ScriptManagerProxy> control lets you add scripts and services to content pages and to user controls if the master page or host page already contains a <xref:System.Web.UI.ScriptManager> control.  
+ 
+When you use the <xref:System.Web.UI.ScriptManagerProxy> control, you can add to the script and service collections defined by the <xref:System.Web.UI.ScriptManager> control. If you do not want to include specific scripts and services on every page that includes a particular <xref:System.Web.UI.ScriptManager> control, you can remove them from the <xref:System.Web.UI.ScriptManager> control. You can then add them to individual pages by using the <xref:System.Web.UI.ScriptManagerProxy> control instead.  
+ 
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
-  
+ 
 ```  
 <asp:ScriptManagerProxy  
     AuthenticationService-Path="uri"  
@@ -101,7 +101,7 @@
         </Services>  
 </asp:ScriptManagerProxy>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -120,10 +120,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptManagerProxy" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A page that contains a <xref:System.Web.UI.ScriptManagerProxy> control must also contain a valid <xref:System.Web.UI.ScriptManager> control. For example, if you are putting a <xref:System.Web.UI.ScriptManagerProxy> control on a content page, the page must reference a master page that contains a <xref:System.Web.UI.ScriptManager> control.  
-  
+A page that contains a <xref:System.Web.UI.ScriptManagerProxy> control must also contain a valid <xref:System.Web.UI.ScriptManager> control. For example, if you are putting a <xref:System.Web.UI.ScriptManagerProxy> control on a content page, the page must reference a master page that contains a <xref:System.Web.UI.ScriptManager> control.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">There is no <see cref="T:System.Web.UI.ScriptManager" /> for the current page.  
@@ -167,12 +167,12 @@
         <value>The <see cref="T:System.Web.UI.AuthenticationServiceManager" /> object for the current <see cref="T:System.Web.UI.ScriptManagerProxy" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.AuthenticationServiceManager> object that is returned by this property represents the authentication service that is registered with the page.  
-  
- You can use the ASP.NET authentication service or use a custom authentication service. To use a custom service, you can register it by including a `AuthenticationService` element inside the `ScriptManagerProxy` element on the page. You can also programmatically configure the <xref:System.Web.UI.AuthenticationServiceManager> object.  
-  
+The <xref:System.Web.UI.AuthenticationServiceManager> object that is returned by this property represents the authentication service that is registered with the page.  
+ 
+You can use the ASP.NET authentication service or use a custom authentication service. To use a custom service, you can register it by including a `AuthenticationService` element inside the `ScriptManagerProxy` element on the page. You can also programmatically configure the <xref:System.Web.UI.AuthenticationServiceManager> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,10 +233,10 @@
         <summary>Occurs when the user clicks the browser's **Back** or **Forward** button.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a user clicks the browser's **Back** button, the browser navigates through previously-viewed URLs, which can include URLs that contain history-point state data. If client code in the Web page detects that the URL contains history state data, it makes a request to the server page. This acts as a postback event, and the <xref:System.Web.UI.ScriptManagerProxy> server control raises the `Navigate` event. You can handle this event and re-create the page as required in the Web application by using the state data that is passed with the event.  
-  
+When a user clicks the browser's **Back** button, the browser navigates through previously-viewed URLs, which can include URLs that contain history-point state data. If client code in the Web page detects that the URL contains history state data, it makes a request to the server page. This acts as a postback event, and the <xref:System.Web.UI.ScriptManagerProxy> server control raises the `Navigate` event. You can handle this event and re-create the page as required in the Web application by using the state data that is passed with the event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,12 +296,12 @@
         <value>The <see cref="T:System.Web.UI.ProfileServiceManager" /> object for the current <see cref="T:System.Web.UI.ScriptManagerProxy" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.ProfileServiceManager> object that is returned by this property represents the profile service that is registered with the page.  
-  
- You can use the ASP.NET profile service or use a custom profile service. To use a custom service, you can register it by including a `ProfileService` element inside the `ScriptManagerProxy` element on the page. You can also programmatically configure the <xref:System.Web.UI.ProfileServiceManager> object.  
-  
+The <xref:System.Web.UI.ProfileServiceManager> object that is returned by this property represents the profile service that is registered with the page.  
+ 
+You can use the ASP.NET profile service or use a custom profile service. To use a custom service, you can register it by including a `ProfileService` element inside the `ScriptManagerProxy` element on the page. You can also programmatically configure the <xref:System.Web.UI.ProfileServiceManager> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -340,12 +340,12 @@
         <value>The <see cref="T:System.Web.UI.RoleServiceManager" /> object for the current <see cref="T:System.Web.UI.ScriptManagerProxy" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.RoleServiceManager> object that is returned by this property represents the role service that is registered with the page.  
-  
- You can use the ASP.NET role service or use a custom role service. To use a custom service, you can register it by including a `RoleService` element inside the `ScriptManagerProxy` element on the page. You can also programmatically configure the <xref:System.Web.UI.RoleServiceManager> object.  
-  
+The <xref:System.Web.UI.RoleServiceManager> object that is returned by this property represents the role service that is registered with the page.  
+ 
+You can use the ASP.NET role service or use a custom role service. To use a custom service, you can register it by including a `RoleService` element inside the `ScriptManagerProxy` element on the page. You can also programmatically configure the <xref:System.Web.UI.RoleServiceManager> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -384,14 +384,14 @@
         <value>A collection of <see cref="T:System.Web.UI.ScriptReference" /> objects for each script file that the <see cref="T:System.Web.UI.ScriptManagerProxy" /> control sends to the browser.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.ScriptManagerProxy.Scripts%2A> collection enables you to add script references to any scripts that are already registered with the <xref:System.Web.UI.ScriptManager> control.  
-  
- You can add script references to the <xref:System.Web.UI.ScriptManagerProxy.Scripts%2A> collection declaratively by using the `ScriptReference` element. You can add script references programmatically by adding <xref:System.Web.UI.ScriptReference> objects to the <xref:System.Web.UI.ScriptManagerProxy.Scripts%2A> collection.  
-  
- If a script is already registered with the <xref:System.Web.UI.ScriptManagerProxy> or <xref:System.Web.UI.ScriptManager> control, the script is not registered again.  
-  
+The <xref:System.Web.UI.ScriptManagerProxy.Scripts%2A> collection enables you to add script references to any scripts that are already registered with the <xref:System.Web.UI.ScriptManager> control.  
+ 
+You can add script references to the <xref:System.Web.UI.ScriptManagerProxy.Scripts%2A> collection declaratively by using the `ScriptReference` element. You can add script references programmatically by adding <xref:System.Web.UI.ScriptReference> objects to the <xref:System.Web.UI.ScriptManagerProxy.Scripts%2A> collection.  
+ 
+If a script is already registered with the <xref:System.Web.UI.ScriptManagerProxy> or <xref:System.Web.UI.ScriptManager> control, the script is not registered again.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -430,14 +430,14 @@
         <value>A collection that contains an <see cref="T:System.Web.UI.ServiceReference" /> object for each service that is registered with the <see cref="T:System.Web.UI.ScriptManagerProxy" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.ScriptManagerProxy.Services%2A> collection enables you to add services to any services that are already registered with the <xref:System.Web.UI.ScriptManager> control.  
-  
- You can add service references to the <xref:System.Web.UI.ScriptManagerProxy.Services%2A> collection declaratively by using the `ServiceReference` element. You can add service references programmatically by adding <xref:System.Web.UI.ServiceReference> objects to the <xref:System.Web.UI.ScriptManagerProxy.Services%2A> collection.  
-  
- If a service is already registered with the <xref:System.Web.UI.ScriptManagerProxy> or <xref:System.Web.UI.ScriptManager> control, the service is not registered again.  
-  
+The <xref:System.Web.UI.ScriptManagerProxy.Services%2A> collection enables you to add services to any services that are already registered with the <xref:System.Web.UI.ScriptManager> control.  
+ 
+You can add service references to the <xref:System.Web.UI.ScriptManagerProxy.Services%2A> collection declaratively by using the `ServiceReference` element. You can add service references programmatically by adding <xref:System.Web.UI.ServiceReference> objects to the <xref:System.Web.UI.ScriptManagerProxy.Services%2A> collection.  
+ 
+If a service is already registered with the <xref:System.Web.UI.ScriptManagerProxy> or <xref:System.Web.UI.ScriptManager> control, the service is not registered again.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -471,10 +471,10 @@
           <see langword="true" /> if the control is rendered on the page; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Control.Visible%2A> property is overridden in the <xref:System.Web.UI.ScriptManagerProxy> class to prevent setting this property. The <xref:System.Web.UI.ScriptManagerProxy.Visible%2A> property returns `true` unless it is inside a container, such as a <xref:System.Web.UI.UserControl> whose <xref:System.Web.UI.Control.Visible%2A> property is set to `false`.  
-  
+The <xref:System.Web.UI.Control.Visible%2A> property is overridden in the <xref:System.Web.UI.ScriptManagerProxy> class to prevent setting this property. The <xref:System.Web.UI.ScriptManagerProxy.Visible%2A> property returns `true` unless it is inside a container, such as a <xref:System.Web.UI.UserControl> whose <xref:System.Web.UI.Control.Visible%2A> property is set to `false`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">A value is assigned to the <see cref="P:System.Web.UI.ScriptManagerProxy.Visible" /> property.</exception>

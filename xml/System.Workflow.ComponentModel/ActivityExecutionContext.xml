@@ -26,16 +26,16 @@
     <summary>Represents the execution environment of an <see cref="T:System.Workflow.ComponentModel.Activity" />. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- Represents the execution environment of an <xref:System.Workflow.ComponentModel.Activity>. This class selectively exposes workflow runtime capabilities and services to individual activities. This class cannot be inherited.  
-  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Understanding the Activity Execution Context](http://msdn.microsoft.com/en-us/60a032ef-4c51-482f-9aa8-fce406856b29).  
-  
+ 
+Represents the execution environment of an <xref:System.Workflow.ComponentModel.Activity>. This class selectively exposes workflow runtime capabilities and services to individual activities. This class cannot be inherited.  
+ 
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Understanding the Activity Execution Context](http://msdn.microsoft.com/en-us/60a032ef-4c51-482f-9aa8-fce406856b29).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -162,10 +162,10 @@
         <summary>Called by a composite activity to schedule the execution of a child activity. The workflow runtime disallows execution of a child activity that is not in the initialized state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the status is <xref:System.Workflow.ComponentModel.Activity.Closed>, the <xref:System.Workflow.ComponentModel.Activity> is initialized and executed.  
-  
+If the status is <xref:System.Workflow.ComponentModel.Activity.Closed>, the <xref:System.Workflow.ComponentModel.Activity> is initialized and executed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -279,10 +279,10 @@
         <summary>Invokes the track method for the associated <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The tracking routine is defined as part of the interface provided by each activity. See comment in user-supplied custom code.  
-  
+The tracking routine is defined as part of the interface provided by each activity. See comment in user-supplied custom code.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If <paramref name="userData" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
@@ -311,10 +311,10 @@
         <summary>Invokes the track method for the associated <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The tracking routine is defined as part of the interface provided by each activity. It is user supplied custom code.  
-  
+The tracking routine is defined as part of the interface provided by each activity. It is user supplied custom code.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">If <paramref name="userData" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>

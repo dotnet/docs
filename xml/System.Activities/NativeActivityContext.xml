@@ -14,10 +14,10 @@
     <summary>The execution context for a <see cref="T:System.Activities.NativeActivity" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Activities.NativeActivity> is provided access to the advanced capabilities of the WF runtime via <xref:System.Activities.NativeActivityContext>, which is passed as a parameter to the activity’s <xref:System.Activities.NativeActivity.Execute%2A> method.  
-  
+A <xref:System.Activities.NativeActivity> is provided access to the advanced capabilities of the WF runtime via <xref:System.Activities.NativeActivityContext>, which is passed as a parameter to the activity’s <xref:System.Activities.NativeActivity.Execute%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -230,12 +230,12 @@
         <returns>A bookmark that includes the callback method and the bookmark execution option.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Bookmark options include <xref:System.Activities.BookmarkOptions>, <xref:System.Activities.BookmarkOptions> and <xref:System.Activities.BookmarkOptions>.  
-  
- Bookmark callbacks can operate without bookmark options but bookmark options must always be paired with a callback because the options do not apply in situations where there is no callback method.  
-  
+Bookmark options include <xref:System.Activities.BookmarkOptions>, <xref:System.Activities.BookmarkOptions> and <xref:System.Activities.BookmarkOptions>.  
+ 
+Bookmark callbacks can operate without bookmark options but bookmark options must always be paired with a callback because the options do not apply in situations where there is no callback method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -289,10 +289,10 @@
         <returns>A bookmark that includes the name of the bookmark, the callback method, and the bookmark execution option.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Bookmark callbacks can operate without bookmark options but bookmark options must always be paired with a callback because the options do not apply in situations where there is no callback method.  
-  
+Bookmark callbacks can operate without bookmark options but bookmark options must always be paired with a callback because the options do not apply in situations where there is no callback method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -322,10 +322,10 @@
         <returns>A bookmark that includes the name of the bookmark, the callback method, and the scope of the bookmark.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Bookmark callbacks can operate without bookmark options but bookmark options must always be paired with a callback because the options do not apply in situations where there is no callback method.  
-  
+Bookmark callbacks can operate without bookmark options but bookmark options must always be paired with a callback because the options do not apply in situations where there is no callback method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -357,10 +357,10 @@
         <returns>A bookmark that includes the name of the bookmark, the callback method, the scope of the bookmark, and the bookmark execution option.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Bookmark callbacks can operate without bookmark options but bookmark options must always be paired with a callback because the options do not apply in situations where there is no callback method.  
-  
+Bookmark callbacks can operate without bookmark options but bookmark options must always be paired with a callback because the options do not apply in situations where there is no callback method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

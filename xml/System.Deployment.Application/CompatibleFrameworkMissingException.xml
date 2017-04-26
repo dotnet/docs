@@ -29,17 +29,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.CompatibleFrameworkMissingException" /> class with a system-supplied message that describes the error.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "No compatible framework found." This message takes into account the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.Deployment.Application.CompatibleFrameworkMissingException>.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "No compatible framework found." This message takes into account the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.Deployment.Application.CompatibleFrameworkMissingException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`.|  
 |<xref:System.Exception.Message%2A>|The localized error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -61,15 +61,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.CompatibleFrameworkMissingException" /> class with a specified message that describes the error.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the initial property values for an instance of <xref:System.Deployment.Application.CompatibleFrameworkMissingException>.  
-  
+The following table shows the initial property values for an instance of <xref:System.Deployment.Application.CompatibleFrameworkMissingException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`.|  
 |<xref:System.Exception.Message%2A>|The error message string specified in `message`.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.CompatibleFrameworkMissingException" /> class with serialized data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.  
-  
+This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,17 +120,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.CompatibleFrameworkMissingException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.Deployment.Application.CompatibleFrameworkMissingException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.Deployment.Application.CompatibleFrameworkMissingException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`.|  
 |<xref:System.Exception.Message%2A>|The error message string specified in `message`.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,10 +175,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.CompatibleFrameworkMissingException" /> class with serialized data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.  
-  
+This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>

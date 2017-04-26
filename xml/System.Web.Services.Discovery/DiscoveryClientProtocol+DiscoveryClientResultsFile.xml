@@ -15,17 +15,17 @@
     <summary>Represents the root element of an XML document containing the results of all files written when the <see cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll(System.String,System.String)" /> method is invoked.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you invoke the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll%2A?displayProperty=fullName> method, all resolved discovery documents and a file containing a map of all those files are saved to a directory. The map file is described in XML with the root element being <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoveryClientResultsFile>; this class is passed to the <xref:System.Xml.Serialization.XmlSerializer> class to serialize the results.  
+When you invoke the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll%2A?displayProperty=fullName> method, all resolved discovery documents and a file containing a map of all those files are saved to a directory. The map file is described in XML with the root element being <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoveryClientResultsFile>; this class is passed to the <xref:System.Xml.Serialization.XmlSerializer> class to serialize the results.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[DiscoveryClientResultsFile_Results#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientResultsFile_Results/CPP/discoveryclientresultsfile_results.cpp#1)]
- [!code-csharp[DiscoveryClientResultsFile_Results#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientResultsFile_Results/CS/discoveryclientresultsfile_results.cs#1)]
- [!code-vb[DiscoveryClientResultsFile_Results#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientResultsFile_Results/VB/discoveryclientresultsfile_results.vb#1)]  
-  
+[!code-cpp[DiscoveryClientResultsFile_Results#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientResultsFile_Results/CPP/discoveryclientresultsfile_results.cpp#1)]
+[!code-csharp[DiscoveryClientResultsFile_Results#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientResultsFile_Results/CS/discoveryclientresultsfile_results.cs#1)]
+[!code-vb[DiscoveryClientResultsFile_Results#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientResultsFile_Results/VB/discoveryclientresultsfile_results.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <value>A <see cref="T:System.Web.Services.Discovery.DiscoveryClientResultCollection" /> containing the results from a <see cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.ReadAll(System.String)" /> or <see cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll(System.String,System.String)" /> invocation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- DiscoveryClientResultsFile_Results#3  
-  
+DiscoveryClientResultsFile_Results#3  
+ 
  ]]></format>
         </remarks>
       </Docs>

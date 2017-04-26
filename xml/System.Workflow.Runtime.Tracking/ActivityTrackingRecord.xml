@@ -19,14 +19,14 @@
     <summary>Contains the data sent to a tracking service by the runtime tracking infrastructure when an <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackPoint" /> is matched. It is also used in the return list of the <see cref="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.ActivityEvents" /> property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- When the runtime tracking infrastructure matches an <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>, it sends an <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> to the tracking service over the <xref:System.Workflow.Runtime.Tracking.TrackingChannel> associated with that tracking service. The tracking service can perform whatever action is needed on the data in the tracking record.  
-  
+ 
+When the runtime tracking infrastructure matches an <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>, it sends an <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> to the tracking service over the <xref:System.Workflow.Runtime.Tracking.TrackingChannel> associated with that tracking service. The tracking service can perform whatever action is needed on the data in the tracking record.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingRecord" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called by the runtime tracking infrastructure.  
-  
+This constructor is called by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,10 +102,10 @@
         <value>The <see cref="T:System.Type" /> of the activity for which this <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingRecord" /> was created.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.ActivityType%2A> is set by the runtime tracking infrastructure.  
-  
+<xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.ActivityType%2A> is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,10 +127,10 @@
         <value>An <see cref="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" /> that contains the annotations that are associated with the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackPoint" /> that corresponds to this tracking record.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is set by the runtime tracking infrastructure.  
-  
+This property is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,12 +152,12 @@
         <value>A list of <see cref="T:System.Workflow.Runtime.Tracking.TrackingDataItem" /> objects each of which contains a single piece of extracted data and its associated annotations.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> is matched, the runtime tracking infrastructure can extract data from the workflow instance. The data to be extracted is specified by <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A?displayProperty=fullName>. <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A?displayProperty=fullName> can contain two kinds of objects: <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> objects specify member data to be extracted from the activity associated with the activity status event; and, <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> objects specify member data to be extracted from the root activity of the workflow. Both of these extract types can also specify annotations to be returned with the extracted data. The runtime tracking infrastructure encapsulates each piece of extracted data and its associated annotations in a <xref:System.Workflow.Runtime.Tracking.TrackingDataItem>, and adds this <xref:System.Workflow.Runtime.Tracking.TrackingDataItem> to <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.Body%2A>.  
-  
- This property is set by the runtime tracking infrastructure.  
-  
+When an <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> is matched, the runtime tracking infrastructure can extract data from the workflow instance. The data to be extracted is specified by <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A?displayProperty=fullName>. <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A?displayProperty=fullName> can contain two kinds of objects: <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> objects specify member data to be extracted from the activity associated with the activity status event; and, <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> objects specify member data to be extracted from the root activity of the workflow. Both of these extract types can also specify annotations to be returned with the extracted data. The runtime tracking infrastructure encapsulates each piece of extracted data and its associated annotations in a <xref:System.Workflow.Runtime.Tracking.TrackingDataItem>, and adds this <xref:System.Workflow.Runtime.Tracking.TrackingDataItem> to <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.Body%2A>.  
+ 
+This property is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,14 +198,14 @@
         <value>A null reference (<see langword="Nothing" />) for an <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingRecord" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is set by the runtime tracking infrastructure.  
-  
- <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.EventArgs%2A> has no meaning for an <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> and is always a null reference (`Nothing`).  
-  
- This property is set by the runtime tracking infrastructure.  
-  
+This property is set by the runtime tracking infrastructure.  
+ 
+<xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.EventArgs%2A> has no meaning for an <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> and is always a null reference (`Nothing`).  
+ 
+This property is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,12 +227,12 @@
         <value>A <see cref="T:System.DateTime" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DateTime> is Greenwich Mean Time (UTC).  
-  
- <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.EventDateTime%2A> is set by the runtime tracking infrastructure.  
-  
+The <xref:System.DateTime> is Greenwich Mean Time (UTC).  
+ 
+<xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.EventDateTime%2A> is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,10 +254,10 @@
         <value>A value that indicates the order of the activity status event in the workflow instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.EventOrder%2A> indicates the relative order of the event that matched the <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> within the workflow instance.  <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.EventOrder%2A> is unique within a workflow instance, but it is not guaranteed to be sequential. <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.EventOrder%2A> is set by the runtime tracking infrastructure.  
-  
+<xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.EventOrder%2A> indicates the relative order of the event that matched the <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> within the workflow instance.  <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.EventOrder%2A> is unique within a workflow instance, but it is not guaranteed to be sequential. <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.EventOrder%2A> is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -279,10 +279,10 @@
         <value>One of the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A workflow instance only emits activity status events when the execution status of an activity instance changes. Therefore an <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> can only be matched when an activity execution status change occurs. <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.ExecutionStatus%2A> contains the <xref:System.Workflow.ComponentModel.ActivityExecutionStatus?displayProperty=fullName> that triggered the match and caused the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> to be sent. It reflects the current status of the activity instance. <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.ExecutionStatus%2A> is set by the runtime tracking infrastructure.  
-  
+A workflow instance only emits activity status events when the execution status of an activity instance changes. Therefore an <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> can only be matched when an activity execution status change occurs. <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.ExecutionStatus%2A> contains the <xref:System.Workflow.ComponentModel.ActivityExecutionStatus?displayProperty=fullName> that triggered the match and caused the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> to be sent. It reflects the current status of the activity instance. <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.ExecutionStatus%2A> is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -323,10 +323,10 @@
         <value>The <see cref="P:System.Workflow.ComponentModel.Activity.QualifiedName" /> of the <see cref="T:System.Workflow.ComponentModel.Activity" /> for which this tracking record was created.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.QualifiedName%2A> is set by the runtime tracking infrastructure.  
-  
+<xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.QualifiedName%2A> is set by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -340,10 +340,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingRecord" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor is called by the runtime tracking infrastructure.  
-  
+The constructor is called by the runtime tracking infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,15 +13,15 @@
     <summary>Specifies the border style of a control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.BorderStyle> enumeration represents the different border style options for a control.  
-  
- The width of the border is controlled by using the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property of the <xref:System.Web.UI.WebControls.WebControl> class.  
-  
+The <xref:System.Web.UI.WebControls.BorderStyle> enumeration represents the different border style options for a control.  
+ 
+The width of the border is controlled by using the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property of the <xref:System.Web.UI.WebControls.WebControl> class.  
+ 
 > [!NOTE]
 >  When using the Double style, the border width you specify must be at least 3 pixels wide to accommodate both lines and the space in between.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

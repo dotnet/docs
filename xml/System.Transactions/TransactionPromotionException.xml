@@ -19,10 +19,10 @@
     <summary>The exception that is thrown when a promotion fails.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception should be thrown by an implementation of <xref:System.Transactions.IPromotableSinglePhaseNotification> interface to indicate that a call to <xref:System.Transactions.ITransactionPromoter.Promote%2A> has failed. If an implementation of <xref:System.Transactions.IPromotableSinglePhaseNotification> fails a promotion due to an exception that is not fatal, it should catch that exception and create a <xref:System.Transactions.TransactionPromotionException> with the original exception as the inner exception.  
-  
+This exception should be thrown by an implementation of <xref:System.Transactions.IPromotableSinglePhaseNotification> interface to indicate that a call to <xref:System.Transactions.ITransactionPromoter.Promote%2A> has failed. If an implementation of <xref:System.Transactions.IPromotableSinglePhaseNotification> fails a promotion due to an exception that is not fatal, it should catch that exception and create a <xref:System.Transactions.TransactionPromotionException> with the original exception as the inner exception.  
+ 
  ]]></format>
     </remarks>
   </Docs>

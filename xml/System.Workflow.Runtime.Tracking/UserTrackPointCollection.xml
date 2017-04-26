@@ -22,14 +22,14 @@
     <summary>Contains a collection of <see cref="T:System.Workflow.Runtime.Tracking.UserTrackPoint" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.Runtime.Tracking.UserTrackPointCollection> is used in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> to maintain a list of <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> objects to match.  
-  
+ 
+<xref:System.Workflow.Runtime.Tracking.UserTrackPointCollection> is used in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> to maintain a list of <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> objects to match.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.UserTrackPointCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor initializes the <xref:System.Workflow.Runtime.Tracking.UserTrackPointCollection> to an empty list.  
-  
+The default constructor initializes the <xref:System.Workflow.Runtime.Tracking.UserTrackPointCollection> to an empty list.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,10 +73,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.UserTrackPointCollection" /> class by using a list of user track points.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.Runtime.Tracking.UserTrackPointCollection> is initialized to contain the <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> objects specified in `points`.  
-  
+The <xref:System.Workflow.Runtime.Tracking.UserTrackPointCollection> is initialized to contain the <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> objects specified in `points`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

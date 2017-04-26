@@ -26,17 +26,17 @@
     <summary>Represents a 3-D rectangle: for example, a cube.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is defined as a location (<xref:System.Windows.Media.Media3D.Point3D>) and a size structure (<xref:System.Windows.Media.Media3D.Size3D>). Because the <xref:System.Windows.Media.Media3D.Rect3D.X%2A>, <xref:System.Windows.Media.Media3D.Rect3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Rect3D.Z%2A> values specified for the size are magnitudes and not coordinates, they cannot be negative except in the case of an empty rectangle. An empty rectangle is specified by <xref:System.Windows.Media.Media3D.Rect3D.Empty%2A>, which has <xref:System.Windows.Media.Media3D.Rect3D.X%2A>, <xref:System.Windows.Media.Media3D.Rect3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Rect3D.Z%2A> values of -Infinity.  
-  
- This structure is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
- <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is defined as a location (<xref:System.Windows.Media.Media3D.Point3D>) and a size structure (<xref:System.Windows.Media.Media3D.Size3D>). Because the <xref:System.Windows.Media.Media3D.Rect3D.X%2A>, <xref:System.Windows.Media.Media3D.Rect3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Rect3D.Z%2A> values specified for the size are magnitudes and not coordinates, they cannot be negative except in the case of an empty rectangle. An empty rectangle is specified by <xref:System.Windows.Media.Media3D.Rect3D.Empty%2A>, which has <xref:System.Windows.Media.Media3D.Rect3D.X%2A>, <xref:System.Windows.Media.Media3D.Rect3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Rect3D.Z%2A> values of -Infinity.  
+ 
+This structure is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
+<xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
+ 
 <a name="xamlTextUsage_Rect3D"></a>   
 ## XAML Text Usage  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <summary>Initializes a new instance of a <see cref="T:System.Windows.Media.Media3D.Rect3D" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,10 +117,10 @@
         <returns>True if the specified point or rectangle is within the <see cref="T:System.Windows.Media.Media3D.Rect3D" />, including its edges; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Rect3D is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+Rect3D is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,10 +147,10 @@
         <returns>True if the specified point or rectangle is within the <see cref="T:System.Windows.Media.Media3D.Rect3D" />, including its edges; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,10 +181,10 @@
           <see langword="true" /> if the specified point or rectangle is within the <see cref="T:System.Windows.Media.Media3D.Rect3D" />, including its edges; <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,12 +206,12 @@
         <value>An empty <see cref="T:System.Windows.Media.Media3D.Rect3D" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns an empty <xref:System.Windows.Media.Media3D.Rect3D> whose X, Y, and Z values are positive-infinity and whose size values are negative infinity. This is the only situation in which size values can be negative.  
-  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+This property returns an empty <xref:System.Windows.Media.Media3D.Rect3D> whose X, Y, and Z values are positive-infinity and whose size values are negative infinity. This is the only situation in which size values can be negative.  
+ 
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,12 +238,12 @@
           <see langword="true" /> if the two specified <see cref="T:System.Windows.Media.Media3D.Rect3D" /> instances are exactly equal; <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that values of type <xref:System.Double> might acquire error when operated upon; an exact comparison between two logically-equal <xref:System.Windows.Media.Media3D.Rect3D> values might fail.  
-  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+Note that values of type <xref:System.Double> might acquire error when operated upon; an exact comparison between two logically-equal <xref:System.Windows.Media.Media3D.Rect3D> values might fail.  
+ 
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,12 +270,12 @@
           <see langword="true" /> if the two specified <see cref="T:System.Windows.Media.Media3D.Rect3D" /> instances are exactly equal; <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that values of type <xref:System.Double> might acquire error when operated upon; an exact comparison between two logically-equal <xref:System.Windows.Media.Media3D.Rect3D> values might fail.  
-  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+Note that values of type <xref:System.Double> might acquire error when operated upon; an exact comparison between two logically-equal <xref:System.Windows.Media.Media3D.Rect3D> values might fail.  
+ 
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,12 +304,12 @@
           <see langword="true" /> if the two specified <see cref="T:System.Windows.Media.Media3D.Rect3D" /> instances are exactly equal; <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that values of type <xref:System.Double> might acquire error when operated upon; an exact comparison between two logically-equal <xref:System.Windows.Media.Media3D.Rect3D> values might fail.  
-  
- <xref:System.Windows.Media.Media3D.Rect3D> s typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+Note that values of type <xref:System.Double> might acquire error when operated upon; an exact comparison between two logically-equal <xref:System.Windows.Media.Media3D.Rect3D> values might fail.  
+ 
+<xref:System.Windows.Media.Media3D.Rect3D> s typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -332,10 +332,10 @@
         <returns>A hash code for this <see cref="T:System.Windows.Media.Media3D.Rect3D" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -360,12 +360,12 @@
         <summary>Finds the intersection of the current <see cref="T:System.Windows.Media.Media3D.Rect3D" /> and the specified <see cref="T:System.Windows.Media.Media3D.Rect3D" />, and stores the result as the current <see cref="T:System.Windows.Media.Media3D.Rect3D" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of either specified rectangle is empty, this method returns an empty value.  
-  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+If the value of either specified rectangle is empty, this method returns an empty value.  
+ 
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -393,12 +393,12 @@
         <returns>Result of the intersection of <paramref name="rect1" /> and <paramref name="rect2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of either specified rectangle is empty, this method returns an empty value.  
-  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+If the value of either specified rectangle is empty, this method returns an empty value.  
+ 
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -425,12 +425,12 @@
           <see langword="true" /> if the specified <see cref="T:System.Windows.Media.Media3D.Rect3D" /> intersects with this <see cref="T:System.Windows.Media.Media3D.Rect3D" />; <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If one edge of each <xref:System.Windows.Media.Media3D.Rect3D> is coincident, it is considered an intersection.  
-  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+If one edge of each <xref:System.Windows.Media.Media3D.Rect3D> is coincident, it is considered an intersection.  
+ 
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -453,12 +453,12 @@
           <see langword="true" /> if this <see cref="T:System.Windows.Media.Media3D.Rect3D" /> is the empty rectangle; <see langword="false" /> otherwise.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Media.Media3D.Rect3D.Size%2A> is zero, this <xref:System.Windows.Media.Media3D.Rect3D> still contains a zero- or 1-dimensional set of points; therefore, this property should not be used to check for zero area.  
-  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+If <xref:System.Windows.Media.Media3D.Rect3D.Size%2A> is zero, this <xref:System.Windows.Media.Media3D.Rect3D> still contains a zero- or 1-dimensional set of points; therefore, this property should not be used to check for zero area.  
+ 
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -481,17 +481,17 @@
           <see cref="T:System.Windows.Media.Media3D.Point3D" /> that represents the origin of the <see cref="T:System.Windows.Media.Media3D.Rect3D" />, typically the back bottom left corner.  The default value is (0,0,0).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that in the 3-D coordinate system, the positive Y axis points up (assuming that the camera's <xref:System.Windows.Media.Media3D.ProjectionCamera.UpDirection%2A> property is positive).  Therefore, this property usually represents the back bottom left corner of the <xref:System.Windows.Media.Media3D.Rect3D> in the scene.  
-  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
- <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
+Note that in the 3-D coordinate system, the positive Y axis points up (assuming that the camera's <xref:System.Windows.Media.Media3D.ProjectionCamera.UpDirection%2A> property is positive).  Therefore, this property usually represents the back bottom left corner of the <xref:System.Windows.Media.Media3D.Rect3D> in the scene.  
+ 
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
+<xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
+ 
 <a name="xamlTextUsage_Location"></a>   
 ## XAML Text Usage  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -517,12 +517,12 @@
         <summary>Sets the offset translation of the <see cref="T:System.Windows.Media.Media3D.Rect3D" /> to the provided value, specified as a <see cref="T:System.Windows.Media.Media3D.Vector3D" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
- Note that calling the <xref:System.Windows.Media.Media3D.Rect3D.Offset%2A> method will only have an effect if you can change the <xref:System.Windows.Media.Media3D.Rect3D.X%2A>, <xref:System.Windows.Media.Media3D.Rect3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Rect3D.Z%2A> properties directly. Because <xref:System.Windows.Media.Media3D.Rect3D> is a value type, if you reference a <xref:System.Windows.Media.Media3D.Rect3D> object by using a property or indexer, you get a copy of the object, not a reference to the object. If you attempt to change <xref:System.Windows.Media.Media3D.Rect3D.X%2A>, <xref:System.Windows.Media.Media3D.Rect3D.Y%2A>, or <xref:System.Windows.Media.Media3D.Rect3D.Z%2A> on a property or indexer reference, a compiler error occurs. Similarly, calling <xref:System.Windows.Media.Media3D.Rect3D.Offset%2A> on the property or indexer will not change the underlying object.  If you want to change the value of a <xref:System.Windows.Media.Media3D.Rect3D> that is referenced as a property or indexer, create a new <xref:System.Windows.Media.Media3D.Rect3D>, modify its fields, and then assign the <xref:System.Windows.Media.Media3D.Rect3D> back to the property or indexer.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
+Note that calling the <xref:System.Windows.Media.Media3D.Rect3D.Offset%2A> method will only have an effect if you can change the <xref:System.Windows.Media.Media3D.Rect3D.X%2A>, <xref:System.Windows.Media.Media3D.Rect3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Rect3D.Z%2A> properties directly. Because <xref:System.Windows.Media.Media3D.Rect3D> is a value type, if you reference a <xref:System.Windows.Media.Media3D.Rect3D> object by using a property or indexer, you get a copy of the object, not a reference to the object. If you attempt to change <xref:System.Windows.Media.Media3D.Rect3D.X%2A>, <xref:System.Windows.Media.Media3D.Rect3D.Y%2A>, or <xref:System.Windows.Media.Media3D.Rect3D.Z%2A> on a property or indexer reference, a compiler error occurs. Similarly, calling <xref:System.Windows.Media.Media3D.Rect3D.Offset%2A> on the property or indexer will not change the underlying object.  If you want to change the value of a <xref:System.Windows.Media.Media3D.Rect3D> that is referenced as a property or indexer, create a new <xref:System.Windows.Media.Media3D.Rect3D>, modify its fields, and then assign the <xref:System.Windows.Media.Media3D.Rect3D> back to the property or indexer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -552,10 +552,10 @@
         <returns>A <see cref="T:System.Windows.Media.Media3D.Rect3D" /> value that represents the result of the offset.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -584,12 +584,12 @@
         <summary>Gets or sets an offset value by which the location of a <see cref="T:System.Windows.Media.Media3D.Rect3D" /> is translated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
- Note that calling the <xref:System.Windows.Media.Media3D.Rect3D.Offset%2A> method will only have an effect if you can change the <xref:System.Windows.Media.Media3D.Rect3D.X%2A>, <xref:System.Windows.Media.Media3D.Rect3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Rect3D.Z%2A> properties directly. Because <xref:System.Windows.Media.Media3D.Rect3D> is a value type, if you reference a <xref:System.Windows.Media.Media3D.Rect3D> object by using a property or indexer, you get a copy of the object, not a reference to the object. If you attempt to change <xref:System.Windows.Media.Media3D.Rect3D.X%2A>, <xref:System.Windows.Media.Media3D.Rect3D.Y%2A>, or <xref:System.Windows.Media.Media3D.Rect3D.Z%2A> on a property or indexer reference, a compiler error occurs. Similarly, calling <xref:System.Windows.Media.Media3D.Rect3D.Offset%2A> on the property or indexer will not change the underlying object. If you want to change the value of a <xref:System.Windows.Media.Media3D.Rect3D> that is referenced as a property or indexer, create a new <xref:System.Windows.Media.Media3D.Rect3D>, modify its fields, and then assign the <xref:System.Windows.Media.Media3D.Rect3D> back to the property or indexer.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
+Note that calling the <xref:System.Windows.Media.Media3D.Rect3D.Offset%2A> method will only have an effect if you can change the <xref:System.Windows.Media.Media3D.Rect3D.X%2A>, <xref:System.Windows.Media.Media3D.Rect3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Rect3D.Z%2A> properties directly. Because <xref:System.Windows.Media.Media3D.Rect3D> is a value type, if you reference a <xref:System.Windows.Media.Media3D.Rect3D> object by using a property or indexer, you get a copy of the object, not a reference to the object. If you attempt to change <xref:System.Windows.Media.Media3D.Rect3D.X%2A>, <xref:System.Windows.Media.Media3D.Rect3D.Y%2A>, or <xref:System.Windows.Media.Media3D.Rect3D.Z%2A> on a property or indexer reference, a compiler error occurs. Similarly, calling <xref:System.Windows.Media.Media3D.Rect3D.Offset%2A> on the property or indexer will not change the underlying object. If you want to change the value of a <xref:System.Windows.Media.Media3D.Rect3D> that is referenced as a property or indexer, create a new <xref:System.Windows.Media.Media3D.Rect3D>, modify its fields, and then assign the <xref:System.Windows.Media.Media3D.Rect3D> back to the property or indexer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -621,10 +621,10 @@
         <returns>A <see cref="T:System.Windows.Media.Media3D.Rect3D" /> value that represents the result of the offset.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -653,10 +653,10 @@
           <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Rect3D" /> instances are exactly equal; <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -684,12 +684,12 @@
         <returns>True if the two <see cref="T:System.Windows.Media.Media3D.Rect3D" /> instances are unequal, false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that <xref:System.Double> values can acquire error when operated upon; an exact comparison between two <xref:System.Windows.Media.Media3D.Rect3D> values which are logically equal might fail.  
-  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+Note that <xref:System.Double> values can acquire error when operated upon; an exact comparison between two <xref:System.Windows.Media.Media3D.Rect3D> values which are logically equal might fail.  
+ 
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -715,10 +715,10 @@
         <returns>A string representation of the <see cref="T:System.Windows.Media.Media3D.Rect3D" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -741,15 +741,15 @@
           <see cref="T:System.Windows.Media.Media3D.Size3D" /> that specifies the area of the <see cref="T:System.Windows.Media.Media3D.Rect3D" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
- <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
+<xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
+ 
 <a name="xamlTextUsage_SizeX"></a>   
 ## XAML Text Usage  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -771,15 +771,15 @@
         <value>Double that specifies the size of the <see cref="T:System.Windows.Media.Media3D.Rect3D" /> in the X dimension.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
- <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
+<xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
+ 
 <a name="xamlTextUsage_SizeY"></a>   
 ## XAML Text Usage  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -801,15 +801,15 @@
         <value>Double that specifies the size of the <see cref="T:System.Windows.Media.Media3D.Rect3D" /> in the Y dimension.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
- <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
+<xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
+ 
 <a name="xamlTextUsage_SizeZ"></a>   
 ## XAML Text Usage  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -831,15 +831,15 @@
         <value>Double that specifies the size of the <see cref="T:System.Windows.Media.Media3D.Rect3D" /> in the Z dimension.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Rect3D is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
- <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
+Rect3D is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
+<xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
+ 
 <a name="xamlTextUsage_Size3D"></a>   
 ## XAML Text Usage  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -937,10 +937,10 @@
         <summary>Updates a specified <see cref="T:System.Windows.Media.Media3D.Rect3D" /> to reflect the union of that <see cref="T:System.Windows.Media.Media3D.Rect3D" /> and a specified <see cref="T:System.Windows.Media.Media3D.Point3D" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -965,10 +965,10 @@
         <summary>Updates a specified <see cref="T:System.Windows.Media.Media3D.Rect3D" /> to reflect the union of that <see cref="T:System.Windows.Media.Media3D.Rect3D" /> and a second specified <see cref="T:System.Windows.Media.Media3D.Rect3D" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -996,10 +996,10 @@
         <returns>Result of the union of <paramref name="rect" /> and <paramref name="point" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1027,10 +1027,10 @@
         <returns>A <see cref="T:System.Windows.Media.Media3D.Rect3D" /> value that represents the result of the union of <paramref name="rect1" /> and <paramref name="rect2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1052,15 +1052,15 @@
         <value>Value of the X coordinate of the <see cref="T:System.Windows.Media.Media3D.Rect3D" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
- <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
+<xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
+ 
 <a name="xamlTextUsage_X"></a>   
 ## XAML Text Usage  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1082,15 +1082,15 @@
         <value>Value of the Y coordinate of the <see cref="T:System.Windows.Media.Media3D.Rect3D" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
- <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
+<xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
+ 
 <a name="xamlTextUsage_Y"></a>   
 ## XAML Text Usage  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1112,15 +1112,15 @@
         <value>Value of the Z coordinate of the <see cref="T:System.Windows.Media.Media3D.Rect3D" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
-  
- <xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
-  
+<xref:System.Windows.Media.Media3D.Rect3D> is typically used to represent the bounds of a <xref:System.Windows.Media.Media3D.MeshGeometry3D> or <xref:System.Windows.Media.Media3D.Model3D>.  
+ 
+<xref:System.Windows.Media.Media3D.Size3D> and <xref:System.Windows.Media.Media3D.Rect3D> are not typically used in XAML, because no settable properties exist in the WPF 3D object model that use those types.  
+ 
 <a name="xamlTextUsage_Z"></a>   
 ## XAML Text Usage  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1134,10 +1134,10 @@
         <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Rect3D" /> instances for equality.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that values of type <xref:System.Double> might acquire error when operated upon; an exact comparison between two logically-equal values might fail.  
-  
+Note that values of type <xref:System.Double> might acquire error when operated upon; an exact comparison between two logically-equal values might fail.  
+ 
  ]]></format>
         </remarks>
       </Docs>

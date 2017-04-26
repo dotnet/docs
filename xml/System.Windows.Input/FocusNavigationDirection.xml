@@ -13,10 +13,10 @@
     <summary>Specifies the direction within a [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] in which a desired focus change request is attempted. The direction is either based on tab order or by relative direction in layout.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Left, Right, Down, and Up each move focus in that direction based on an approximate representation of the relative item positions in the rendered window. Not all such directional movements are possible, depending on the relative layout of your [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  
-  
+Left, Right, Down, and Up each move focus in that direction based on an approximate representation of the relative item positions in the rendered window. Not all such directional movements are possible, depending on the relative layout of your [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -18,14 +18,14 @@
     <summary>Determines the shapes of connector points on a workflow design surface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- Connectors are the lines rendered on the workflow design surface between interconnected activity designers. The ends of each line are called connector points, which are where the lines attach to the activity designers that they connect. <xref:System.Workflow.ComponentModel.Design.LineAnchor> provides values that determine the appearance of the connector points.  
-  
+ 
+Connectors are the lines rendered on the workflow design surface between interconnected activity designers. The ends of each line are called connector points, which are where the lines attach to the activity designers that they connect. <xref:System.Workflow.ComponentModel.Design.LineAnchor> provides values that determine the appearance of the connector points.  
+ 
  ]]></format>
     </remarks>
   </Docs>

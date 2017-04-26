@@ -19,10 +19,10 @@
     <summary>Represents the <see langword="restriction" /> element for simple types from XML Schema as specified by the World Wide Web Consortium (W3C). This class can be used restricting <see langword="simpleType" /> element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- See <xref:System.Xml.Schema.XmlSchemaSimpleType> for an example using this class.  
-  
+See <xref:System.Xml.Schema.XmlSchemaSimpleType> for an example using this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,10 +74,10 @@
         <value>The base type for the <see langword="simpleType" /> element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The use of <xref:System.Xml.Schema.XmlSchemaSimpleTypeRestriction.BaseTypeName%2A> and `BaseType` are mutually exclusive.  
-  
+The use of <xref:System.Xml.Schema.XmlSchemaSimpleTypeRestriction.BaseTypeName%2A> and `BaseType` are mutually exclusive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,10 +109,10 @@
         <value>The qualified name of the simple type restriction base type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The use of `BaseTypeName` and <xref:System.Xml.Schema.XmlSchemaSimpleTypeRestriction.BaseType%2A> are mutually exclusive.  
-  
+The use of `BaseTypeName` and <xref:System.Xml.Schema.XmlSchemaSimpleTypeRestriction.BaseType%2A> are mutually exclusive.  
+ 
  ]]></format>
         </remarks>
       </Docs>

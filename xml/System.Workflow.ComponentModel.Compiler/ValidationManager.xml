@@ -23,14 +23,14 @@
     <summary>Enables the sharing of contextual information, such as property validation, parent activity, and so on, across validators during the compilation process.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- For a list of initial property values regarding an instance of the <xref:System.Workflow.ComponentModel.Compiler.ValidationManager> class, see the <xref:System.Workflow.ComponentModel.Compiler.ValidationManager.%23ctor%2A> constructor.  
-  
+ 
+For a list of initial property values regarding an instance of the <xref:System.Workflow.ComponentModel.Compiler.ValidationManager> class, see the <xref:System.Workflow.ComponentModel.Compiler.ValidationManager.%23ctor%2A> constructor.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,10 +52,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationManager" /> class using the identified service provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of initial property values regarding an instance of the <xref:System.Workflow.ComponentModel.Compiler.ValidationManager> class, see the <xref:System.Workflow.ComponentModel.Compiler.ValidationManager.%23ctor%2A> constructor.  
-  
+For a list of initial property values regarding an instance of the <xref:System.Workflow.ComponentModel.Compiler.ValidationManager> class, see the <xref:System.Workflow.ComponentModel.Compiler.ValidationManager.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,10 +80,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationManager" /> class using the identified service provider and indicates whether child <see cref="T:System.Workflow.ComponentModel.Activity" /> classes should be validated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of initial property values regarding an instance of the <xref:System.Workflow.ComponentModel.Compiler.ValidationManager> class, see the <xref:System.Workflow.ComponentModel.Compiler.ValidationManager.%23ctor%2A> constructor.  
-  
+For a list of initial property values regarding an instance of the <xref:System.Workflow.ComponentModel.Compiler.ValidationManager> class, see the <xref:System.Workflow.ComponentModel.Compiler.ValidationManager.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,12 +149,12 @@
         <returns>An array of <see cref="T:System.Workflow.ComponentModel.Compiler.Validator" /> classes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the hash table of <xref:System.Workflow.ComponentModel.Compiler.Validator> classes contains the <xref:System.Type> indicated by `type`, an array of <xref:System.Workflow.ComponentModel.Compiler.Validator> classes is returned.  
-  
- If the hash table does not contain the <xref:System.Type> indicated by `type`, a new hash table of <xref:System.Workflow.ComponentModel.Compiler.Validator> classes is created and then an array of the <xref:System.Workflow.ComponentModel.Compiler.Validator> classes is returned.  
-  
+If the hash table of <xref:System.Workflow.ComponentModel.Compiler.Validator> classes contains the <xref:System.Type> indicated by `type`, an array of <xref:System.Workflow.ComponentModel.Compiler.Validator> classes is returned.  
+ 
+If the hash table does not contain the <xref:System.Type> indicated by `type`, a new hash table of <xref:System.Workflow.ComponentModel.Compiler.Validator> classes is created and then an array of the <xref:System.Workflow.ComponentModel.Compiler.Validator> classes is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,15 +187,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationManager" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows initial property values for an instance of the ValidationManager class.  
-  
+The following table shows initial property values for an instance of the ValidationManager class.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Workflow.ComponentModel.Compiler.ValidationManager.Context%2A>|A null reference (`Nothing` in Visual Basic).|  
 |<xref:System.Workflow.ComponentModel.Compiler.ValidationManager.ValidateChildActivities%2A>|`true`|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

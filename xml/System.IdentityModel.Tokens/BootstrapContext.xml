@@ -78,10 +78,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.BootstrapContext" /> class by using the specified security token and token handler.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The token handler is not used to deserialize the token because it cannot be assumed to exist at the time when the token is deserialized.  
-  
+The token handler is not used to deserialize the token because it cannot be assumed to exist at the time when the token is deserialized.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -156,10 +156,10 @@
         <value>The security token or <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.IdentityModel.Tokens.SecurityToken%2CSystem.IdentityModel.Tokens.SecurityTokenHandler%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
-  
+This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.IdentityModel.Tokens.SecurityToken%2CSystem.IdentityModel.Tokens.SecurityTokenHandler%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,10 +181,10 @@
         <value>The token handler or <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.IdentityModel.Tokens.SecurityToken%2CSystem.IdentityModel.Tokens.SecurityTokenHandler%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
-  
+This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.IdentityModel.Tokens.SecurityToken%2CSystem.IdentityModel.Tokens.SecurityTokenHandler%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@
         <value>The string that was used to initialize the context or <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.String%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
-  
+This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.String%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -231,10 +231,10 @@
         <value>The array that was used to initialize the context or <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.Byte%5B%5D%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
-  
+This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.Byte%5B%5D%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,19 +14,19 @@
     <summary>Defines a content decorator that can stretch and scale a single child to fill the available space.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Viewbox> can only have one <xref:System.Windows.Controls.Viewbox.Child%2A>. If you add an additional <xref:System.Windows.Controls.Viewbox.Child%2A>, you cause an <xref:System.ArgumentException> at run time.  
+A <xref:System.Windows.Controls.Viewbox> can only have one <xref:System.Windows.Controls.Viewbox.Child%2A>. If you add an additional <xref:System.Windows.Controls.Viewbox.Child%2A>, you cause an <xref:System.ArgumentException> at run time.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create an instance of a <xref:System.Windows.Controls.Viewbox> and set common properties in code.  
-  
- [!code-cpp[ViewBoxCode#2](~/samples/snippets/cpp/VS_Snippets_Wpf/ViewBoxCode/CPP/ViewboxCode.cpp#2)]
- [!code-csharp[ViewBoxCode#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ViewBoxCode/Csharp/ViewboxCode.cs#2)]
- [!code-vb[ViewBoxCode#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ViewBoxCode/VisualBasic/ViewBoxCodeVB.vb#2)]  
-  
+The following example shows how to create an instance of a <xref:System.Windows.Controls.Viewbox> and set common properties in code.  
+ 
+[!code-cpp[ViewBoxCode#2](~/samples/snippets/cpp/VS_Snippets_Wpf/ViewBoxCode/CPP/ViewboxCode.cpp#2)]
+[!code-csharp[ViewBoxCode#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ViewBoxCode/Csharp/ViewboxCode.cs#2)]
+[!code-vb[ViewBoxCode#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ViewBoxCode/VisualBasic/ViewBoxCodeVB.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,10 +68,10 @@
           <see cref="T:System.Windows.Size" /> that represents the arranged size of this <see cref="T:System.Windows.Controls.Viewbox" /> element and its child elements.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Viewbox> always sets its <xref:System.Windows.Controls.Viewbox.Child%2A> to the <xref:System.Windows.UIElement.DesiredSize%2A>. It then computes and applies a transformation from that <xref:System.Windows.Size> to the available space. <xref:System.Windows.Controls.Viewbox> determines available space by subtracting the margin of its <xref:System.Windows.Controls.Viewbox.Child%2A> from the input <xref:System.Windows.Size> of its elements.  
-  
+<xref:System.Windows.Controls.Viewbox> always sets its <xref:System.Windows.Controls.Viewbox.Child%2A> to the <xref:System.Windows.UIElement.DesiredSize%2A>. It then computes and applies a transformation from that <xref:System.Windows.Size> to the available space. <xref:System.Windows.Controls.Viewbox> determines available space by subtracting the margin of its <xref:System.Windows.Controls.Viewbox.Child%2A> from the input <xref:System.Windows.Size> of its elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,19 +93,19 @@
         <value>The single child of a <see cref="T:System.Windows.Controls.Viewbox" /> element. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you add an additional child element to a <xref:System.Windows.Controls.Viewbox> it causes an <xref:System.ArgumentException> at run time.  
+If you add an additional child element to a <xref:System.Windows.Controls.Viewbox> it causes an <xref:System.ArgumentException> at run time.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create an instance of a <xref:System.Windows.Controls.Viewbox> and then set its child property by using code.  
-  
- [!code-cpp[ViewBoxCode#1](~/samples/snippets/cpp/VS_Snippets_Wpf/ViewBoxCode/CPP/ViewboxCode.cpp#1)]
- [!code-csharp[ViewBoxCode#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ViewBoxCode/Csharp/ViewboxCode.cs#1)]
- [!code-vb[ViewBoxCode#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ViewBoxCode/VisualBasic/ViewBoxCodeVB.vb#1)]  
-  
+The following example shows how to create an instance of a <xref:System.Windows.Controls.Viewbox> and then set its child property by using code.  
+ 
+[!code-cpp[ViewBoxCode#1](~/samples/snippets/cpp/VS_Snippets_Wpf/ViewBoxCode/CPP/ViewboxCode.cpp#1)]
+[!code-csharp[ViewBoxCode#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ViewBoxCode/Csharp/ViewboxCode.cs#1)]
+[!code-vb[ViewBoxCode#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ViewBoxCode/VisualBasic/ViewBoxCodeVB.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,12 +171,12 @@
         <returns>The <see cref="T:System.Windows.Size" /> that represents the element size you want.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The parent <xref:System.Windows.UIElement> for <xref:System.Windows.Controls.Viewbox> typically calls this method, which performs the first layout pass.  
-  
- <xref:System.Windows.Controls.Viewbox> measures its child at an infinite `constraint`, allowing the child to be as large as it requires.  
-  
+The parent <xref:System.Windows.UIElement> for <xref:System.Windows.Controls.Viewbox> typically calls this method, which performs the first layout pass.  
+ 
+<xref:System.Windows.Controls.Viewbox> measures its child at an infinite `constraint`, allowing the child to be as large as it requires.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,26 +198,26 @@
         <value>A <see cref="T:System.Windows.Media.Stretch" /> that determines how content fits in the available space. The default is <see cref="F:System.Windows.Media.Stretch.Uniform" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Stretch"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Viewbox>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create an instance of <xref:System.Windows.Controls.Viewbox> and then set the <xref:System.Windows.Controls.Viewbox.Stretch%2A> property by using code.  
-  
- [!code-cpp[ViewBoxCode#2](~/samples/snippets/cpp/VS_Snippets_Wpf/ViewBoxCode/CPP/ViewboxCode.cpp#2)]
- [!code-csharp[ViewBoxCode#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ViewBoxCode/Csharp/ViewboxCode.cs#2)]
- [!code-vb[ViewBoxCode#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ViewBoxCode/VisualBasic/ViewBoxCodeVB.vb#2)]  
-  
+The following example shows how to create an instance of <xref:System.Windows.Controls.Viewbox> and then set the <xref:System.Windows.Controls.Viewbox.Stretch%2A> property by using code.  
+ 
+[!code-cpp[ViewBoxCode#2](~/samples/snippets/cpp/VS_Snippets_Wpf/ViewBoxCode/CPP/ViewboxCode.cpp#2)]
+[!code-csharp[ViewBoxCode#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ViewBoxCode/Csharp/ViewboxCode.cs#2)]
+[!code-vb[ViewBoxCode#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ViewBoxCode/VisualBasic/ViewBoxCodeVB.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,27 +239,27 @@
         <value>A <see cref="T:System.Windows.Controls.StretchDirection" /> that determines how scaling is applied to the contents of a <see cref="T:System.Windows.Controls.Viewbox" />. The default is <see cref="F:System.Windows.Controls.StretchDirection.Both" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property determines the scaling restrictions that apply to the contents of a <xref:System.Windows.Controls.Viewbox>. For example, use this property to prevent the contents of a <xref:System.Windows.Controls.Viewbox> from being smaller or larger than its original size.  
-  
+This property determines the scaling restrictions that apply to the contents of a <xref:System.Windows.Controls.Viewbox>. For example, use this property to prevent the contents of a <xref:System.Windows.Controls.Viewbox> from being smaller or larger than its original size.  
+ 
 <a name="dependencyPropertyInfo_StretchDirection"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Viewbox>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create an instance of <xref:System.Windows.Controls.Viewbox> and then set the <xref:System.Windows.Controls.Viewbox.StretchDirection%2A> property by using code.  
-  
- [!code-cpp[ViewBoxCode#2](~/samples/snippets/cpp/VS_Snippets_Wpf/ViewBoxCode/CPP/ViewboxCode.cpp#2)]
- [!code-csharp[ViewBoxCode#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ViewBoxCode/Csharp/ViewboxCode.cs#2)]
- [!code-vb[ViewBoxCode#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ViewBoxCode/VisualBasic/ViewBoxCodeVB.vb#2)]  
-  
+The following example shows how to create an instance of <xref:System.Windows.Controls.Viewbox> and then set the <xref:System.Windows.Controls.Viewbox.StretchDirection%2A> property by using code.  
+ 
+[!code-cpp[ViewBoxCode#2](~/samples/snippets/cpp/VS_Snippets_Wpf/ViewBoxCode/CPP/ViewboxCode.cpp#2)]
+[!code-csharp[ViewBoxCode#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ViewBoxCode/Csharp/ViewboxCode.cs#2)]
+[!code-vb[ViewBoxCode#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ViewBoxCode/VisualBasic/ViewBoxCodeVB.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -315,10 +315,10 @@
         <value>The number of <see cref="T:System.Windows.Media.Visual" /> children.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property always returns 1.  
-  
+This property always returns 1.  
+ 
  ]]></format>
         </remarks>
       </Docs>

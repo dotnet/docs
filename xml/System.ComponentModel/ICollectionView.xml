@@ -18,10 +18,10 @@
     <summary>Enables collections to have the functionalities of current record management, custom sorting, filtering, and grouping.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The interface is implemented by the <xref:System.Windows.Data.CollectionView> class, which is the base class for <xref:System.Windows.Data.BindingListCollectionView>, <xref:System.Windows.Data.ListCollectionView>, and <xref:System.Windows.Controls.ItemCollection>.  
-  
+The interface is implemented by the <xref:System.Windows.Data.CollectionView> class, which is the base class for <xref:System.Windows.Data.BindingListCollectionView>, <xref:System.Windows.Data.ListCollectionView>, and <xref:System.Windows.Controls.ItemCollection>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -105,10 +105,10 @@
           <see langword="true" /> if the item belongs to this collection view; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not make any assumptions about whether the item belongs to the underlying collection.  
-  
+This method does not make any assumptions about whether the item belongs to the underlying collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,10 +147,10 @@
         <summary>When implementing this interface, raise this event after the current item has been changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that are implementing this interface should raise the <xref:System.ComponentModel.ICollectionView.CurrentChanging> event and check the <xref:System.ComponentModel.CurrentChangingEventArgs.Cancel%2A> property value before changing the currency and raising <xref:System.ComponentModel.ICollectionView.CurrentChanged> event.  
-  
+Classes that are implementing this interface should raise the <xref:System.ComponentModel.ICollectionView.CurrentChanging> event and check the <xref:System.ComponentModel.CurrentChangingEventArgs.Cancel%2A> property value before changing the currency and raising <xref:System.ComponentModel.ICollectionView.CurrentChanged> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,10 +171,10 @@
         <summary>When implementing this interface, raise this event before changing the current item. Event handler can cancel this event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that are implementing this interface should raise the <xref:System.ComponentModel.ICollectionView.CurrentChanging> event and check the <xref:System.ComponentModel.CurrentChangingEventArgs.Cancel%2A> property value before changing the currency and raising <xref:System.ComponentModel.ICollectionView.CurrentChanged> event.  
-  
+Classes that are implementing this interface should raise the <xref:System.ComponentModel.ICollectionView.CurrentChanging> event and check the <xref:System.ComponentModel.CurrentChangingEventArgs.Cancel%2A> property value before changing the currency and raising <xref:System.ComponentModel.ICollectionView.CurrentChanged> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>

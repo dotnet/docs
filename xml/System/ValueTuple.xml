@@ -35,20 +35,20 @@
     <summary>Provides static methods for creating value tuples.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
 A tuple is a data structure that has a specific number and sequence of elements. An example of a tuple is a data structure with three elements (known as a 3-tuple or triple) that is used to store an identifier such as a person's name in the first element, a year in the second element, and the person's income for that year in the third element.  
-  
+ 
 Value tuples are tuple types introduced in the [!INCLUDE[net_v463](~/includes/net-v463-md.md)] to provide the runtime implementation of [tuples in C#](~/docs/csharp/tuples.md) and struct tuples in F#. They differ from the tuple classes, such as  <xref:System.Tuple%601>, <xref:System.Tuple%602>, etc., as follows:  
-  
+ 
 -   They are structures (value types) rather than classes (reference types).  
-  
+ 
 -   They are mutable rather than read-only. That is, the value of tuple components can change.  
-  
+ 
 -   Their data members, such as `Item1`, `Item2`, etc., are fields rather than properties.  
-  
+ 
 The <xref:System.ValueTuple> structure itself does not represent a value tuple. Instead, it provides static methods for creating instances of value tuple types. It provides helper methods that you can call to instantiate value tuples without having to explicitly specify the type of each value tuple component. By calling its static `Create` methods, you can create value tuples that have from zero to eight components. For value tuples with more than eight components, you must call the <xref:System.ValueTuple%608.%23ctor%2A> constructor.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -136,10 +136,10 @@ The <xref:System.ValueTuple> structure itself does not represent a value tuple. 
         <returns>A value tuple with 1 component.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate a 1-component value tuple without having to explicitly specify the type of its component.  
-  
+<xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate a 1-component value tuple without having to explicitly specify the type of its component.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,10 +178,10 @@ The <xref:System.ValueTuple> structure itself does not represent a value tuple. 
         <returns>A value tuple with 2 components.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 2-component value tuple without having to explicitly specify the types of its components.  
-  
+<xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 2-component value tuple without having to explicitly specify the types of its components.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,10 +224,10 @@ The <xref:System.ValueTuple> structure itself does not represent a value tuple. 
         <returns>A value tuple with 3 components.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 3-component value tuple without having to explicitly specify the types of its components.  
-  
+<xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 3-component value tuple without having to explicitly specify the types of its components.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,10 +274,10 @@ The <xref:System.ValueTuple> structure itself does not represent a value tuple. 
         <returns>A value tuple with 4 components.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 4-component value tuple without having to explicitly specify the types of its components.  
-  
+<xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 4-component value tuple without having to explicitly specify the types of its components.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,10 +328,10 @@ The <xref:System.ValueTuple> structure itself does not represent a value tuple. 
         <returns>A value tuple with 5 components.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate a 5-component value tuple without having to explicitly specify the types of its components.  
-  
+<xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate a 5-component value tuple without having to explicitly specify the types of its components.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -386,10 +386,10 @@ The <xref:System.ValueTuple> structure itself does not represent a value tuple. 
         <returns>A value tuple with 6 components.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate a 6-component value tuple without having to explicitly specify the types of its components.  
-  
+<xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate a 6-component value tuple without having to explicitly specify the types of its components.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -448,10 +448,10 @@ The <xref:System.ValueTuple> structure itself does not represent a value tuple. 
         <returns>A value tuple with 7 components.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 7-component value tuple without having to explicitly specify the types of its components.  
-  
+<xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 7-component value tuple without having to explicitly specify the types of its components.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -514,13 +514,13 @@ The <xref:System.ValueTuple> structure itself does not represent a value tuple. 
         <returns>A value tuple with 8 components.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 8-component value tuple without having to explicitly specify the types of its components.  
-  
+<xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 8-component value tuple without having to explicitly specify the types of its components.  
+ 
 > [!NOTE]
 >  You must call the <xref:System.ValueTuple%608.%23ctor%2A> constructor to create a tuple with nine or more components unless your language provides a special syntax for this purpose. The static methods of the <xref:System.ValueTuple> structure cannot be used to create a tuple with nine or more components.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -664,10 +664,10 @@ The <xref:System.ValueTuple> structure itself does not represent a value tuple. 
           <see langword="true" /> if the current instance is equal to the specified object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface implementation. It can only be used when the <xref:System.ValueTuple>t> instance is cast to an <xref:System.Collections.IStructuralEquatable> interface. The <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=fullName> implementation is called only if `other` is not `null`, and if it can be successfully cast to a <xref:System.ValueTuple> object.  
-  
+This member is an explicit interface implementation. It can only be used when the <xref:System.ValueTuple>t> instance is cast to an <xref:System.Collections.IStructuralEquatable> interface. The <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=fullName> implementation is called only if `other` is not `null`, and if it can be successfully cast to a <xref:System.ValueTuple> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

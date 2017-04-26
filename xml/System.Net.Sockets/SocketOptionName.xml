@@ -22,19 +22,19 @@
     <summary>Defines configuration option names.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Sockets.SocketOptionName> enumeration defines the name of each <xref:System.Net.Sockets.Socket> configuration option. Sockets can be configured with the <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=fullName> method.  
+The <xref:System.Net.Sockets.SocketOptionName> enumeration defines the name of each <xref:System.Net.Sockets.Socket> configuration option. Sockets can be configured with the <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=fullName> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses this enumeration to set socket options.  
-  
- [!code-cpp[Socket_Socket_Options#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Socket_Options/CPP/source.cpp#1)]
- [!code-csharp[Socket_Socket_Options#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Socket_Options/CS/source.cs#1)]
- [!code-vb[Socket_Socket_Options#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Socket_Options/VB/source.vb#1)]  
-  
+The following code example uses this enumeration to set socket options.  
+ 
+[!code-cpp[Socket_Socket_Options#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Socket_Options/CPP/source.cpp#1)]
+[!code-csharp[Socket_Socket_Options#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Socket_Options/CS/source.cs#1)]
+[!code-vb[Socket_Socket_Options#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Socket_Options/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

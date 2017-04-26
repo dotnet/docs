@@ -18,15 +18,15 @@
     <summary>Contains static information and configuration settings for an event log. Many of the configurations settings were defined by the event provider that created the log.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a property is changed for this object, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+If a property is changed for this object, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+ 
   
-   
-  
+ 
 ## Examples  
- For example code using this class, see [How to: Configure and Read Event Log Properties](http://msdn.microsoft.com/en-us/2d2b00b3-2d1d-4567-a47e-3f5a7c1955ac).  
-  
+For example code using this class, see [How to: Configure and Read Event Log Properties](http://msdn.microsoft.com/en-us/2d2b00b3-2d1d-4567-a47e-3f5a7c1955ac).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -154,10 +154,10 @@
         <value>Returns <see langword="true" /> if the log is enabled, and returns <see langword="false" /> if the log is disabled.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
-  
+If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,10 +179,10 @@
         <value>Returns a string that contains the path to the event log file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
-  
+If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,10 +222,10 @@
         <value>Returns an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogMode" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
-  
+If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,10 +283,10 @@
         <value>Returns a long value that represents the maximum size, in bytes, that the event log file is allowed to be.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
-  
+If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -362,10 +362,10 @@
         <value>Returns a long value that can be null if the event provider did not define any keywords.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
-  
+If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -405,10 +405,10 @@
         <value>Returns an integer value that can be null if the maximum event level was not defined in the event provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
-  
+If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -502,10 +502,10 @@
         <value>Returns a string that contains the security descriptor for the event log.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
-  
+If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

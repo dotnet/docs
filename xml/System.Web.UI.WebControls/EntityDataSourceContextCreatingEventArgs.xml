@@ -14,15 +14,15 @@
     <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.EntityDataSource.ContextCreating" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs> object has a <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context%2A> property that can be assigned to a long-running <xref:System.Data.Objects.ObjectContext> in the handler for the <xref:System.Data.WebControls.EntityDataSourceView.ContextCreating> event. For more information, see [Object Context Life-Cycle Management (EntityDataSource)](http://msdn.microsoft.com/en-us/67bc2486-112c-47c3-b23f-0297f7ac2160).  
+The <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs> object has a <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context%2A> property that can be assigned to a long-running <xref:System.Data.Objects.ObjectContext> in the handler for the <xref:System.Data.WebControls.EntityDataSourceView.ContextCreating> event. For more information, see [Object Context Life-Cycle Management (EntityDataSource)](http://msdn.microsoft.com/en-us/67bc2486-112c-47c3-b23f-0297f7ac2160).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the creation of an <xref:System.Data.Objects.ObjectContext> variable of the <xref:System.Web.UI.Page> object and its assignment to the <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context%2A> property of the <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs> object.  
-  
+The following example shows the creation of an <xref:System.Data.Objects.ObjectContext> variable of the <xref:System.Web.UI.Page> object and its assignment to the <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context%2A> property of the <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs> object.  
+ 
 ```  
 public partial class _Default : System.Web.UI.Page  
     {  
@@ -37,7 +37,7 @@ public partial class _Default : System.Web.UI.Page
     }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,15 +59,15 @@ public partial class _Default : System.Web.UI.Page
         <value>The object context that is used by the data source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context%2A> property can be assigned to a long-running <xref:System.Data.Objects.ObjectContext> in the handler for the <xref:System.Data.WebControls.EntityDataSourceView.ContextCreating> event. For more information, see [Object Context Life-Cycle Management (EntityDataSource)](http://msdn.microsoft.com/en-us/67bc2486-112c-47c3-b23f-0297f7ac2160).  
+The <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context%2A> property can be assigned to a long-running <xref:System.Data.Objects.ObjectContext> in the handler for the <xref:System.Data.WebControls.EntityDataSourceView.ContextCreating> event. For more information, see [Object Context Life-Cycle Management (EntityDataSource)](http://msdn.microsoft.com/en-us/67bc2486-112c-47c3-b23f-0297f7ac2160).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the creation of an <xref:System.Data.Objects.ObjectContext> variable of the <xref:System.Web.UI.Page> object and its assignment to the <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context%2A> property of the <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs> object.  
-  
+The following example shows the creation of an <xref:System.Data.Objects.ObjectContext> variable of the <xref:System.Web.UI.Page> object and its assignment to the <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context%2A> property of the <xref:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs> object.  
+ 
 ```  
 public partial class _Default : System.Web.UI.Page  
     {  
@@ -82,7 +82,7 @@ public partial class _Default : System.Web.UI.Page
     }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

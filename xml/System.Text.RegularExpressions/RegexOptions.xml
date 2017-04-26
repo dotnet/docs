@@ -30,34 +30,34 @@
     <summary>Provides enumerated values to use to set regular expression options.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Text.RegularExpressions.RegexOptions> value can be provided as a parameter to the following members of the <xref:System.Text.RegularExpressions.Regex> class:  
-  
+A <xref:System.Text.RegularExpressions.RegexOptions> value can be provided as a parameter to the following members of the <xref:System.Text.RegularExpressions.Regex> class:  
+ 
 -   The <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> class constructor.  
-  
+ 
 -   The <xref:System.Text.RegularExpressions.Regex.Split%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> method.  
-  
+ 
 -   The <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> method.  
-  
+ 
 -   The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> method.  
-  
+ 
 -   The <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> method.  
-  
+ 
 -   The <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> and <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> methods.  
+ 
+A <xref:System.Text.RegularExpressions.RegexOptions> value can also be supplied as a parameter to the <xref:System.Text.RegularExpressions.RegexCompilationInfo.%23ctor%2A> constructor, or it can be assigned directly to the <xref:System.Text.RegularExpressions.RegexCompilationInfo.Options%2A> property. The resulting <xref:System.Text.RegularExpressions.RegexCompilationInfo> object is then used in the call to the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A> method.  
+ 
+Several options provided by members of the <xref:System.Text.RegularExpressions.RegexOptions> enumeration (in particular, by its ExplicitCapture, IgnoreCase, Multiline, and Singleline members) can instead be provided by using an inline option character in the regular expression pattern. For details, see [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md).  
+ 
   
- A <xref:System.Text.RegularExpressions.RegexOptions> value can also be supplied as a parameter to the <xref:System.Text.RegularExpressions.RegexCompilationInfo.%23ctor%2A> constructor, or it can be assigned directly to the <xref:System.Text.RegularExpressions.RegexCompilationInfo.Options%2A> property. The resulting <xref:System.Text.RegularExpressions.RegexCompilationInfo> object is then used in the call to the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A> method.  
-  
- Several options provided by members of the <xref:System.Text.RegularExpressions.RegexOptions> enumeration (in particular, by its ExplicitCapture, IgnoreCase, Multiline, and Singleline members) can instead be provided by using an inline option character in the regular expression pattern. For details, see [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example defines two regular expressions that identify repeated words in text but that are instantiated using different <xref:System.Text.RegularExpressions.RegexOptions> values. The first regular expression is case-insensitive; case is ignored when determining whether a word is identical to the preceding word. The second regular expression is case-sensitive; a word must match the case of the preceding word exactly to be considered a duplicate.  
-  
- [!code-csharp[System.Text.RegularExpressions.RegexOptions#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.RegularExpressions.RegexOptions/cs/RegexOptions.cs#1)]
- [!code-vb[System.Text.RegularExpressions.RegexOptions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.RegularExpressions.RegexOptions/vb/RegexOptions.vb#1)]  
-  
+The following example defines two regular expressions that identify repeated words in text but that are instantiated using different <xref:System.Text.RegularExpressions.RegexOptions> values. The first regular expression is case-insensitive; case is ignored when determining whether a word is identical to the preceding word. The second regular expression is case-sensitive; a word must match the case of the preceding word exactly to be considered a duplicate.  
+ 
+[!code-csharp[System.Text.RegularExpressions.RegexOptions#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.RegularExpressions.RegexOptions/cs/RegexOptions.cs#1)]
+[!code-vb[System.Text.RegularExpressions.RegexOptions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.RegularExpressions.RegexOptions/vb/RegexOptions.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

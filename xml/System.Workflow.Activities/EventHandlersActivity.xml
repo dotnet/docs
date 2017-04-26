@@ -38,18 +38,18 @@
     <summary>A composite activity that contains a collection of event handlers. It is typically used where a collection of events must be handled. Each event is handled by one <see cref="T:System.Workflow.Activities.EventDrivenActivity" />, which is part of <see cref="T:System.Workflow.Activities.EventHandlersActivity" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- The <xref:System.Workflow.Activities.EventHandlersActivity> activity holds a set of <xref:System.Workflow.Activities.EventDrivenActivity> classes, for use by the associated <xref:System.Workflow.ComponentModel.Activity>.  
-  
- An <xref:System.Workflow.Activities.EventHandlersActivity> activity can only be associated with an <xref:System.Workflow.Activities.EventHandlingScopeActivity>.  
-  
- The <xref:System.Workflow.Activities.EventHandlersActivity> activity is a <xref:System.Workflow.ComponentModel.CompositeActivity>, meaning the <xref:System.Workflow.Activities.EventHandlersActivity> activity can contain other activities.  
-  
+ 
+The <xref:System.Workflow.Activities.EventHandlersActivity> activity holds a set of <xref:System.Workflow.Activities.EventDrivenActivity> classes, for use by the associated <xref:System.Workflow.ComponentModel.Activity>.  
+ 
+An <xref:System.Workflow.Activities.EventHandlersActivity> activity can only be associated with an <xref:System.Workflow.Activities.EventHandlingScopeActivity>.  
+ 
+The <xref:System.Workflow.Activities.EventHandlersActivity> activity is a <xref:System.Workflow.ComponentModel.CompositeActivity>, meaning the <xref:System.Workflow.Activities.EventHandlersActivity> activity can contain other activities.  
+ 
  ]]></format>
     </remarks>
   </Docs>

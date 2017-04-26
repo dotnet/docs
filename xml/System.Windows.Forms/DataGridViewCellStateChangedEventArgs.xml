@@ -14,20 +14,20 @@
     <summary>Provides data for the <see cref="E:System.Windows.Forms.DataGridView.CellStateChanged" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.DataGridViewCellStateChangedEventArgs.Cell%2A> property to determine which cell changed. Use the <xref:System.Windows.Forms.DataGridViewCellStateChangedEventArgs.StateChanged%2A> property to determine which cell state changed.  
+Use the <xref:System.Windows.Forms.DataGridViewCellStateChangedEventArgs.Cell%2A> property to determine which cell changed. Use the <xref:System.Windows.Forms.DataGridViewCellStateChangedEventArgs.StateChanged%2A> property to determine which cell state changed.  
+ 
+For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
+ 
 ## Examples  
- The following code example illustrates the use of this type.  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#135)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#135)]  
-  
+The following code example illustrates the use of this type.  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#135)]
+[!code-vb[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#135)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,10 +51,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellStateChangedEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses the parameter values to initialize the <xref:System.Windows.Forms.DataGridViewCellStateChangedEventArgs.Cell%2A> and <xref:System.Windows.Forms.DataGridViewCellStateChangedEventArgs.StateChanged%2A> properties.  
-  
+This method uses the parameter values to initialize the <xref:System.Windows.Forms.DataGridViewCellStateChangedEventArgs.Cell%2A> and <xref:System.Windows.Forms.DataGridViewCellStateChangedEventArgs.StateChanged%2A> properties.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -78,13 +78,13 @@
         <value>The <see cref="T:System.Windows.Forms.DataGridViewCell" /> whose state has changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates the use of this type.  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#135)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#135)]  
-  
+The following code example illustrates the use of this type.  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#135)]
+[!code-vb[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#135)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,13 +106,13 @@
         <value>One of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values indicating the state that has changed on the cell.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates the use of this type.  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#135)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#135)]  
-  
+The following code example illustrates the use of this type.  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#135)]
+[!code-vb[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#135)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

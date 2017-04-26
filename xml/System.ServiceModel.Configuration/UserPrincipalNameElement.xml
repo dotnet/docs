@@ -14,10 +14,10 @@
     <summary>Represents a configuration element that specifies a user principal name. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A user principal name is the logon name type of a user on a network. The user principal name consists of the user object name used in Active Directory, followed by the symbol (@) and then, typically, the Domain Name System parent domain. For example, Jeff in the Fabrikam.com domain tree might have the user principal name [jeff@fabrikam.com](mailto:jeffsmith@fabrikam.com).  
-  
+A user principal name is the logon name type of a user on a network. The user principal name consists of the user object name used in Active Directory, followed by the symbol (@) and then, typically, the Domain Name System parent domain. For example, Jeff in the Fabrikam.com domain tree might have the user principal name [jeff@fabrikam.com](mailto:jeffsmith@fabrikam.com).  
+ 
  ]]></format>
     </remarks>
   </Docs>

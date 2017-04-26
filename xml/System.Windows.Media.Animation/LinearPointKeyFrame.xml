@@ -14,14 +14,14 @@
     <summary>Animates from the <see cref="T:System.Windows.Point" /> value of the previous key frame to its own <see cref="P:System.Windows.Media.Animation.PointKeyFrame.Value" /> using linear interpolation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used as part of a <xref:System.Windows.Media.Animation.PointKeyFrameCollection> in conjunction with a <xref:System.Windows.Media.Animation.PointAnimationUsingKeyFrames> to animate a <xref:System.Windows.Point> property value along a set of key frames.  
-  
- A key frame defines a segment of the <xref:System.Windows.Media.Animation.PointAnimationUsingKeyFrames> to which it belongs. Each key frame has a target <xref:System.Windows.Media.Animation.PointKeyFrame.Value%2A> and a <xref:System.Windows.Media.Animation.PointKeyFrame.KeyTime%2A>. The <xref:System.Windows.Media.Animation.PointKeyFrame.KeyTime%2A> specifies the time at which the key frame's <xref:System.Windows.Media.Animation.PointKeyFrame.Value%2A> should be reached. A key frame animates from the target value of the previous key frame to its own target value. It starts when the previous key frame ends and ends when its own key time is reached.  
-  
- Linear key frames like <xref:System.Windows.Media.Animation.LinearPointKeyFrame> create a smooth, linear interpolation between values.  
-  
+This class is used as part of a <xref:System.Windows.Media.Animation.PointKeyFrameCollection> in conjunction with a <xref:System.Windows.Media.Animation.PointAnimationUsingKeyFrames> to animate a <xref:System.Windows.Point> property value along a set of key frames.  
+ 
+A key frame defines a segment of the <xref:System.Windows.Media.Animation.PointAnimationUsingKeyFrames> to which it belongs. Each key frame has a target <xref:System.Windows.Media.Animation.PointKeyFrame.Value%2A> and a <xref:System.Windows.Media.Animation.PointKeyFrame.KeyTime%2A>. The <xref:System.Windows.Media.Animation.PointKeyFrame.KeyTime%2A> specifies the time at which the key frame's <xref:System.Windows.Media.Animation.PointKeyFrame.Value%2A> should be reached. A key frame animates from the target value of the previous key frame to its own target value. It starts when the previous key frame ends and ends when its own key time is reached.  
+ 
+Linear key frames like <xref:System.Windows.Media.Animation.LinearPointKeyFrame> create a smooth, linear interpolation between values.  
+ 
  ]]></format>
     </remarks>
   </Docs>

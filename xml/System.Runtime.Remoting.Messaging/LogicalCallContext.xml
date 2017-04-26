@@ -30,15 +30,15 @@
     <summary>Provides a set of properties that are carried with the execution code path during remote method calls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> class is a version of the <xref:System.Runtime.Remoting.Messaging.CallContext> class that is used during method calls to remote application domains. The <xref:System.Runtime.Remoting.Messaging.CallContext> is a specialized collection object similar to a thread local storage for method calls, and provides data slots that are unique to each logical thread of execution. The slots are not shared across call contexts on other logical threads. Objects can be added to the <xref:System.Runtime.Remoting.Messaging.CallContext> as it travels down and up the execution code path, and examined by various objects along the path.  
-  
- When a remote method call is made to an object in another <xref:System.AppDomain>, the <xref:System.Runtime.Remoting.Messaging.CallContext> class generates a <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> that travels along with the remote call. Only objects that expose the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface and are stored in the <xref:System.Runtime.Remoting.Messaging.CallContext> are propagated outside the <xref:System.AppDomain> in a <xref:System.Runtime.Remoting.Messaging.LogicalCallContext>. Objects that do not support this interface are not transmitted in <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> instances with remote method calls.  
-  
+The <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> class is a version of the <xref:System.Runtime.Remoting.Messaging.CallContext> class that is used during method calls to remote application domains. The <xref:System.Runtime.Remoting.Messaging.CallContext> is a specialized collection object similar to a thread local storage for method calls, and provides data slots that are unique to each logical thread of execution. The slots are not shared across call contexts on other logical threads. Objects can be added to the <xref:System.Runtime.Remoting.Messaging.CallContext> as it travels down and up the execution code path, and examined by various objects along the path.  
+ 
+When a remote method call is made to an object in another <xref:System.AppDomain>, the <xref:System.Runtime.Remoting.Messaging.CallContext> class generates a <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> that travels along with the remote call. Only objects that expose the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface and are stored in the <xref:System.Runtime.Remoting.Messaging.CallContext> are propagated outside the <xref:System.AppDomain> in a <xref:System.Runtime.Remoting.Messaging.LogicalCallContext>. Objects that do not support this interface are not transmitted in <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> instances with remote method calls.  
+ 
 > [!NOTE]
 >  This class makes a link demand. A SecurityException is thrown if the immediate caller does not have infrastructure permission. See [Link Demands](~/docs/framework/misc/link-demands.md) for more information.  
-  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
@@ -68,10 +68,10 @@
         <returns>A new object that is a copy of this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Messaging.LogicalCallContext.Clone%2A> method produces a deep copy of the current <xref:System.Runtime.Remoting.Messaging.LogicalCallContext>.  
-  
+The <xref:System.Runtime.Remoting.Messaging.LogicalCallContext.Clone%2A> method produces a deep copy of the current <xref:System.Runtime.Remoting.Messaging.LogicalCallContext>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,12 +159,12 @@
         <summary>Populates a specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the current <see cref="T:System.Runtime.Remoting.Messaging.LogicalCallContext" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current method fills the provided <xref:System.Runtime.Serialization.SerializationInfo> with all the data needed to recreate the <xref:System.Runtime.Remoting.Messaging.LogicalCallContext>.  
-  
- The current method is an implementation of <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>.  
-  
+The current method fills the provided <xref:System.Runtime.Serialization.SerializationInfo> with all the data needed to recreate the <xref:System.Runtime.Remoting.Messaging.LogicalCallContext>.  
+ 
+The current method is an implementation of <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

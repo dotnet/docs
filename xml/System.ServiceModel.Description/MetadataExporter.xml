@@ -14,26 +14,26 @@
     <summary>Exports service description information into metadata.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Metadata export is the process of describing service endpoints and projecting them into a parallel, standardized representation (typically, but not necessarily XML) that applications can access to implement a client that uses the service. To export metadata from <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=fullName> objects, use an implementation of the <xref:System.ServiceModel.Description.MetadataExporter> abstract class.  A <xref:System.ServiceModel.Description.MetadataExporter> implementation generates metadata that is encapsulated in a <xref:System.ServiceModel.Description.MetadataSet?displayProperty=fullName> instance.  
+Metadata export is the process of describing service endpoints and projecting them into a parallel, standardized representation (typically, but not necessarily XML) that applications can access to implement a client that uses the service. To export metadata from <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=fullName> objects, use an implementation of the <xref:System.ServiceModel.Description.MetadataExporter> abstract class.  A <xref:System.ServiceModel.Description.MetadataExporter> implementation generates metadata that is encapsulated in a <xref:System.ServiceModel.Description.MetadataSet?displayProperty=fullName> instance.  
+ 
+The <xref:System.ServiceModel.Description.MetadataExporter> class provides a framework for generating policy expressions that describe the capabilities and requirements of an endpoint binding and its associated operations, messages and faults. These policy expressions are captured in a <xref:System.ServiceModel.Description.PolicyConversionContext?displayProperty=fullName> instance. A <xref:System.ServiceModel.Description.MetadataExporter> implementation can then attach these policy expressions to the metadata it generates.  
+ 
+The <xref:System.ServiceModel.Description.MetadataExporter> calls into each <xref:System.ServiceModel.Channels.BindingElement?displayProperty=fullName> that implements the <xref:System.ServiceModel.Description.IPolicyExportExtension?displayProperty=fullName> interface in the binding of a <xref:System.ServiceModel.Description.ServiceEndpoint> when generating a <xref:System.ServiceModel.Description.PolicyConversionContext> object for the <xref:System.ServiceModel.Description.MetadataExporter> implementation to use. You can export new policy assertions by implementing the <xref:System.ServiceModel.Description.IPolicyExportExtension> interface on your custom implementations of the <xref:System.ServiceModel.Channels.BindingElement?displayProperty=fullName> type.  
+ 
+The <xref:System.ServiceModel.Description.WsdlExporter?displayProperty=fullName> type is the implementation of the <xref:System.ServiceModel.Description.MetadataExporter> class included with [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. The <xref:System.ServiceModel.Description.WsdlExporter> type generates WSDL metadata with attached policy expressions.  
+ 
+To export custom WSDL metadata or WSDL extensions for endpoint behaviors, contract behaviors or binding elements in a service endpoint, you can implement the <xref:System.ServiceModel.Description.IWsdlExportExtension?displayProperty=fullName> interface. The <xref:System.ServiceModel.Description.WsdlExporter> type calls into parts of a service endpoint that implement this interface when generating the WSDL document from that endpoint.  
+ 
   
- The <xref:System.ServiceModel.Description.MetadataExporter> class provides a framework for generating policy expressions that describe the capabilities and requirements of an endpoint binding and its associated operations, messages and faults. These policy expressions are captured in a <xref:System.ServiceModel.Description.PolicyConversionContext?displayProperty=fullName> instance. A <xref:System.ServiceModel.Description.MetadataExporter> implementation can then attach these policy expressions to the metadata it generates.  
-  
- The <xref:System.ServiceModel.Description.MetadataExporter> calls into each <xref:System.ServiceModel.Channels.BindingElement?displayProperty=fullName> that implements the <xref:System.ServiceModel.Description.IPolicyExportExtension?displayProperty=fullName> interface in the binding of a <xref:System.ServiceModel.Description.ServiceEndpoint> when generating a <xref:System.ServiceModel.Description.PolicyConversionContext> object for the <xref:System.ServiceModel.Description.MetadataExporter> implementation to use. You can export new policy assertions by implementing the <xref:System.ServiceModel.Description.IPolicyExportExtension> interface on your custom implementations of the <xref:System.ServiceModel.Channels.BindingElement?displayProperty=fullName> type.  
-  
- The <xref:System.ServiceModel.Description.WsdlExporter?displayProperty=fullName> type is the implementation of the <xref:System.ServiceModel.Description.MetadataExporter> class included with [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. The <xref:System.ServiceModel.Description.WsdlExporter> type generates WSDL metadata with attached policy expressions.  
-  
- To export custom WSDL metadata or WSDL extensions for endpoint behaviors, contract behaviors or binding elements in a service endpoint, you can implement the <xref:System.ServiceModel.Description.IWsdlExportExtension?displayProperty=fullName> interface. The <xref:System.ServiceModel.Description.WsdlExporter> type calls into parts of a service endpoint that implement this interface when generating the WSDL document from that endpoint.  
-  
-   
-  
+ 
 ## Examples  
- The following code example is an <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A?displayProperty=fullName> method that demonstrates how the <xref:System.ServiceModel.Description.MetadataExporter.State%2A> property of the class <xref:System.ServiceModel.Description.WsdlExporter> is used to attach a custom <xref:System.Runtime.Serialization.XsdDataContractExporter?displayProperty=fullName> that modifies the export of data contracts in the endpoint.  
-  
- [!code-csharp[C_CustomWSDLExtensions#6](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#6)]  
+The following code example is an <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A?displayProperty=fullName> method that demonstrates how the <xref:System.ServiceModel.Description.MetadataExporter.State%2A> property of the class <xref:System.ServiceModel.Description.WsdlExporter> is used to attach a custom <xref:System.Runtime.Serialization.XsdDataContractExporter?displayProperty=fullName> that modifies the export of data contracts in the endpoint.  
+ 
+[!code-csharp[C_CustomWSDLExtensions#6](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#6)]  
 [!code-csharp[C_CustomWSDLExtensions#5](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#5)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,10 +55,10 @@
         <value>The export errors that occurred.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is populated with errors that occurred during the metadata export process. Users of derived classes should check the <xref:System.ServiceModel.Description.MetadataExporter.Errors%2A> property prior to using the exported metadata.  
-  
+This property is populated with errors that occurred during the metadata export process. Users of derived classes should check the <xref:System.ServiceModel.Description.MetadataExporter.Errors%2A> property prior to using the exported metadata.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
         <summary>When overridden in a derived class, exports a contract description into metadata.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override and implement <xref:System.ServiceModel.Description.MetadataExporter.ExportContract%2A> to convert a contract description into metadata.  
-  
+Override and implement <xref:System.ServiceModel.Description.MetadataExporter.ExportContract%2A> to convert a contract description into metadata.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,10 +111,10 @@
         <summary>When overridden in a derived class, converts an endpoint into metadata.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override and implement <xref:System.ServiceModel.Description.MetadataExporter.ExportEndpoint%2A> to convert a contract description into metadata.  
-  
+Override and implement <xref:System.ServiceModel.Description.MetadataExporter.ExportEndpoint%2A> to convert a contract description into metadata.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@
         <returns>An enumerable collection of <see cref="T:System.ServiceModel.Description.MetadataSection" /> objects that contain the exported metadata.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.MetadataExporter.GetGeneratedMetadata%2A> method to retrieve the metadata generated from earlier calls. Check the <xref:System.ServiceModel.Description.MetadataExporter.Errors%2A> property prior to retrieving the metadata to ensure that you have the metadata you want.  
-  
+Use the <xref:System.ServiceModel.Description.MetadataExporter.GetGeneratedMetadata%2A> method to retrieve the metadata generated from earlier calls. Check the <xref:System.ServiceModel.Description.MetadataExporter.Errors%2A> property prior to retrieving the metadata to ensure that you have the metadata you want.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,10 +184,10 @@
         <value>A <see cref="T:System.ServiceModel.Description.PolicyVersion" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Description.PolicyVersion> class contains the namespace for the version of WS-Policy the metadata exporter uses. WS-Policy 1.2 and 1.5 are currently supported.  
-  
+The <xref:System.ServiceModel.Description.PolicyVersion> class contains the namespace for the version of WS-Policy the metadata exporter uses. WS-Policy 1.2 and 1.5 are currently supported.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,18 +209,18 @@
         <value>A dictionary of objects used by the importer to export contracts and endpoints.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `State` property to pass a <xref:System.ServiceModel.Description.MetadataExporter> state data required to successfully export endpoints or contracts.  
+Use the `State` property to pass a <xref:System.ServiceModel.Description.MetadataExporter> state data required to successfully export endpoints or contracts.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is an <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A?displayProperty=fullName> method that demonstrates how the <xref:System.ServiceModel.Description.MetadataExporter.State%2A> property of the derived class <xref:System.ServiceModel.Description.WsdlImporter> is used to attach a custom <xref:System.Runtime.Serialization.XsdDataContractExporter?displayProperty=fullName> that modifies the export of data contracts in the endpoint.  
-  
- [!code-csharp[C_CustomWSDLExtensions#6](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#6)]  
+The following code example is an <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A?displayProperty=fullName> method that demonstrates how the <xref:System.ServiceModel.Description.MetadataExporter.State%2A> property of the derived class <xref:System.ServiceModel.Description.WsdlImporter> is used to attach a custom <xref:System.Runtime.Serialization.XsdDataContractExporter?displayProperty=fullName> that modifies the export of data contracts in the endpoint.  
+ 
+[!code-csharp[C_CustomWSDLExtensions#6](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#6)]  
 [!code-csharp[C_CustomWSDLExtensions#5](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationattribute.cs#5)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

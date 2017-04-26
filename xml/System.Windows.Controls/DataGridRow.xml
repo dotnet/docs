@@ -14,10 +14,10 @@
     <summary>Represents a <see cref="T:System.Windows.Controls.DataGrid" /> row.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.DataGrid> row represents a single data item in a bound data source. Each row contains one cell per column in the <xref:System.Windows.Controls.DataGrid>, and each cell displays a single value in the bound data item.  
-  
+A <xref:System.Windows.Controls.DataGrid> row represents a single data item in a bound data source. Each row contains one cell per column in the <xref:System.Windows.Controls.DataGrid>, and each cell displays a single value in the bound data item.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,12 +54,12 @@
         <value>The index of the row within a set of alternating rows. The registered default is 0. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Alternating rows are rows to which you can assign different characteristics, such as alternating background colors. You can set the <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> property of the <xref:System.Windows.Controls.DataGrid> to indicate the number of rows within a set of alternating rows. For more information about alternating rows, see <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A?displayProperty=fullName>.  
-  
- Override the <xref:System.Windows.Controls.DataGridRow.OnPropertyChanged%2A> method to respond to changes to the <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property. The <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property does not have its own property changed method because the <xref:System.Windows.Controls.DataGridRow.AlternationIndexProperty> field reuses the read-only <xref:System.Windows.Controls.ItemsControl.AlternationIndexProperty?displayProperty=fullName> field.  
-  
+Alternating rows are rows to which you can assign different characteristics, such as alternating background colors. You can set the <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> property of the <xref:System.Windows.Controls.DataGrid> to indicate the number of rows within a set of alternating rows. For more information about alternating rows, see <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A?displayProperty=fullName>.  
+ 
+Override the <xref:System.Windows.Controls.DataGridRow.OnPropertyChanged%2A> method to respond to changes to the <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property. The <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property does not have its own property changed method because the <xref:System.Windows.Controls.DataGridRow.AlternationIndexProperty> field reuses the read-only <xref:System.Windows.Controls.ItemsControl.AlternationIndexProperty?displayProperty=fullName> field.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,10 +80,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.DataGridRow.AlternationIndex" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.DataGridRow.AlternationIndexProperty> field reuses the read-only <xref:System.Windows.Controls.ItemsControl.AlternationIndexProperty?displayProperty=fullName> field.  
-  
+The <xref:System.Windows.Controls.DataGridRow.AlternationIndexProperty> field reuses the read-only <xref:System.Windows.Controls.ItemsControl.AlternationIndexProperty?displayProperty=fullName> field.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -308,12 +308,12 @@
         <value>The style that is used when rendering the row header. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To define a <xref:System.Windows.Style> for a row header, specify a <xref:System.Windows.Style.TargetType%2A> of <xref:System.Windows.Controls.Primitives.DataGridRowHeader>.  
-  
- A <xref:System.Windows.Style> can be applied to all row headers, or to an individual row header. To apply a <xref:System.Windows.Style> to an individual header set the <xref:System.Windows.Controls.DataGridRow.HeaderStyle%2A?displayProperty=fullName> property, which takes precedence over the <xref:System.Windows.Controls.DataGrid.RowHeaderStyle%2A?displayProperty=fullName> property.  
-  
+To define a <xref:System.Windows.Style> for a row header, specify a <xref:System.Windows.Style.TargetType%2A> of <xref:System.Windows.Controls.Primitives.DataGridRowHeader>.  
+ 
+A <xref:System.Windows.Style> can be applied to all row headers, or to an individual row header. To apply a <xref:System.Windows.Style> to an individual header set the <xref:System.Windows.Controls.DataGridRow.HeaderStyle%2A?displayProperty=fullName> property, which takes precedence over the <xref:System.Windows.Controls.DataGrid.RowHeaderStyle%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -461,17 +461,17 @@
  The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsNewItem"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.DataGridRow>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -715,12 +715,12 @@
         <summary>Invoked whenever the effective value of any dependency property on this <see cref="T:System.Windows.Controls.DataGridRow" /> has been updated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A?displayProperty=fullName>. The specific dependency property that changed is reported in the arguments parameter.  
-  
- Override this method to respond to changes to the <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property. The <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property does not have its own property changed method because the <xref:System.Windows.Controls.DataGridRow.AlternationIndexProperty> field reuses the read-only <xref:System.Windows.Controls.ItemsControl.AlternationIndexProperty?displayProperty=fullName> field.  
-  
+This method overrides <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A?displayProperty=fullName>. The specific dependency property that changed is reported in the arguments parameter.  
+ 
+Override this method to respond to changes to the <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property. The <xref:System.Windows.Controls.DataGridRow.AlternationIndex%2A> property does not have its own property changed method because the <xref:System.Windows.Controls.DataGridRow.AlternationIndexProperty> field reuses the read-only <xref:System.Windows.Controls.ItemsControl.AlternationIndexProperty?displayProperty=fullName> field.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -748,12 +748,12 @@
         <summary>Raises the <see cref="E:System.Windows.Controls.DataGridRow.Selected" /> event when the <see cref="P:System.Windows.Controls.DataGridRow.IsSelected" /> property value changes to <see langword="true" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The <xref:System.Windows.Controls.DataGridRow.OnSelected%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
+The <xref:System.Windows.Controls.DataGridRow.OnSelected%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -804,12 +804,12 @@
         <summary>Raises the <see cref="E:System.Windows.Controls.DataGridRow.Unselected" /> event when the <see cref="P:System.Windows.Controls.DataGridRow.IsSelected" /> property value changes to <see langword="false" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The <xref:System.Windows.Controls.DataGridRow.OnUnselected%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
+The <xref:System.Windows.Controls.DataGridRow.OnUnselected%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -833,10 +833,10 @@
         <summary>Occurs when the row is selected.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event occurs when the <xref:System.Windows.Controls.DataGridRow.IsSelected%2A> property value changes to `true`.  
-  
+This event occurs when the <xref:System.Windows.Controls.DataGridRow.IsSelected%2A> property value changes to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -874,10 +874,10 @@
         <summary>Occurs when the row selection is cleared.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event occurs when the <xref:System.Windows.Controls.DataGridRow.IsSelected%2A> property value changes to `false`.  
-  
+This event occurs when the <xref:System.Windows.Controls.DataGridRow.IsSelected%2A> property value changes to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

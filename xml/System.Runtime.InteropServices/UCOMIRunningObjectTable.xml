@@ -23,10 +23,10 @@
     <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.IRunningObjectTable" /> instead.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IRunningObjectTable` in the com subfolder of the MSDN library.  
-  
+For more information, please see the existing documentation for `IRunningObjectTable` in the com subfolder of the MSDN library.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,10 +52,10 @@
         <summary>Enumerates the objects currently registered as running.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IRunningObjectTable::EnumRunning` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IRunningObjectTable::EnumRunning` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
         <summary>Returns the registered object if the supplied object name is registered as running.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IRunningObjectTable::GetObject` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IRunningObjectTable::GetObject` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
         <summary>Searches for this moniker in the ROT and reports the recorded time of change, if present.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IRunningObjectTable::GetTimeOfLastChange` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IRunningObjectTable::GetTimeOfLastChange` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,10 +143,10 @@
         <summary>Determines if the specified moniker is currently registered in the Running Object Table.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IRunningObjectTable::IsRunning` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IRunningObjectTable::IsRunning` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,10 +174,10 @@
         <summary>Makes a note of the time that a particular object has changed so <see langword="IMoniker::GetTimeOfLastChange" /> can report an appropriate change time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IRunningObjectTable::NoteChangeTime` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IRunningObjectTable::NoteChangeTime` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,10 +209,10 @@
         <summary>Registers that the supplied object has entered the running state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IRunningObjectTable::Register` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IRunningObjectTable::Register` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,10 +238,10 @@
         <summary>Unregisters the specified object from the ROT.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IRunningObjectTable::Revoke` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IRunningObjectTable::Revoke` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

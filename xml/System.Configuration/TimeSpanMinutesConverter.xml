@@ -14,24 +14,24 @@
     <summary>Converts a time span expressed in minutes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type, like all the other configuration converter types, converts strings found in the configuration file to and from the related strongly typed properties.  
+This type, like all the other configuration converter types, converts strings found in the configuration file to and from the related strongly typed properties.  
+ 
+In particular, the <xref:System.Configuration.TimeSpanMinutesConverter> converts <xref:System.String> minutes, assigned to a configuration property, to <xref:System.TimeSpan> minutes and vice versa.  
+ 
+The <xref:System.Configuration.TimeSpanMinutesConverter> persists values of type `long` representing a number of minutes.  
+ 
   
- In particular, the <xref:System.Configuration.TimeSpanMinutesConverter> converts <xref:System.String> minutes, assigned to a configuration property, to <xref:System.TimeSpan> minutes and vice versa.  
-  
- The <xref:System.Configuration.TimeSpanMinutesConverter> persists values of type `long` representing a number of minutes.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to define a custom <xref:System.Configuration.TimeSpanMinutesConverter> type.  
-  
- [!code-csharp[System.Configuration.TimeSpanMinutesConverter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.TimeSpanMinutesConverter/CS/TimeSpanMinutesConverter.cs#1)]
- [!code-vb[System.Configuration.TimeSpanMinutesConverter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.TimeSpanMinutesConverter/VB/TimeSpanMinutesConverter.vb#1)]  
-  
- The following is a configuration excerpt used by the previous example.  
-  
+The following code example shows how to define a custom <xref:System.Configuration.TimeSpanMinutesConverter> type.  
+ 
+[!code-csharp[System.Configuration.TimeSpanMinutesConverter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.TimeSpanMinutesConverter/CS/TimeSpanMinutesConverter.cs#1)]
+[!code-vb[System.Configuration.TimeSpanMinutesConverter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.TimeSpanMinutesConverter/VB/TimeSpanMinutesConverter.vb#1)]  
+ 
+The following is a configuration excerpt used by the previous example.  
+ 
 ```  
 <configuration>  
   
@@ -52,7 +52,7 @@
   
 </configuration>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,10 +71,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.TimeSpanMinutesConverter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Normally, you use the converter types provided by the system. The only time you need to use the <xref:System.Configuration.TimeSpanMinutesConverter.%23ctor%2A> constructor is when you create your own conversion type.  
-  
+Normally, you use the converter types provided by the system. The only time you need to use the <xref:System.Configuration.TimeSpanMinutesConverter.%23ctor%2A> constructor is when you create your own conversion type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,18 +104,18 @@
         <returns>The <see cref="T:System.TimeSpan" /> representing the <paramref name="data" /> parameter in minutes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The system uses the <xref:System.Configuration.TimeSpanMinutesConverter.ConvertFrom%2A> method when reading from a configuration file to convert a <xref:System.String> value to <xref:System.TimeSpan>.  
+The system uses the <xref:System.Configuration.TimeSpanMinutesConverter.ConvertFrom%2A> method when reading from a configuration file to convert a <xref:System.String> value to <xref:System.TimeSpan>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to customize the <xref:System.Configuration.TimeSpanMinutesConverter.ConvertFrom%2A> method.  
-  
- [!code-csharp[System.Configuration.TimeSpanMinutesConverter#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.TimeSpanMinutesConverter/CS/TimeSpanMinutesConverter.cs#5)]
- [!code-vb[System.Configuration.TimeSpanMinutesConverter#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.TimeSpanMinutesConverter/VB/TimeSpanMinutesConverter.vb#5)]  
-  
+The following code example shows how to customize the <xref:System.Configuration.TimeSpanMinutesConverter.ConvertFrom%2A> method.  
+ 
+[!code-csharp[System.Configuration.TimeSpanMinutesConverter#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.TimeSpanMinutesConverter/CS/TimeSpanMinutesConverter.cs#5)]
+[!code-vb[System.Configuration.TimeSpanMinutesConverter#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.TimeSpanMinutesConverter/VB/TimeSpanMinutesConverter.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,18 +147,18 @@
         <returns>The <see cref="T:System.String" /> representing the <paramref name="value" /> parameter in minutes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The system uses the <xref:System.Configuration.TimeSpanMinutesConverter.ConvertTo%2A> method when writing to a configuration file to convert a <xref:System.TimeSpan> to a <xref:System.String>.  
+The system uses the <xref:System.Configuration.TimeSpanMinutesConverter.ConvertTo%2A> method when writing to a configuration file to convert a <xref:System.TimeSpan> to a <xref:System.String>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to customize the <xref:System.Configuration.TimeSpanMinutesConverter.ConvertTo%2A> method.  
-  
- [!code-csharp[System.Configuration.TimeSpanMinutesConverter#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.TimeSpanMinutesConverter/CS/TimeSpanMinutesConverter.cs#4)]
- [!code-vb[System.Configuration.TimeSpanMinutesConverter#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.TimeSpanMinutesConverter/VB/TimeSpanMinutesConverter.vb#4)]  
-  
+The following code example shows how to customize the <xref:System.Configuration.TimeSpanMinutesConverter.ConvertTo%2A> method.  
+ 
+[!code-csharp[System.Configuration.TimeSpanMinutesConverter#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.TimeSpanMinutesConverter/CS/TimeSpanMinutesConverter.cs#4)]
+[!code-vb[System.Configuration.TimeSpanMinutesConverter#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.TimeSpanMinutesConverter/VB/TimeSpanMinutesConverter.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

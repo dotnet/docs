@@ -14,33 +14,33 @@
     <summary>Represents a service that provides properties and events to control the display and behavior of tooltips.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You define a tooltip for an element by setting the <xref:System.Windows.FrameworkContentElement.ToolTip%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property.  The ToolTip property takes one child. The content of the child can vary from a simple text string to more complex content such as a <xref:System.Windows.Controls.StackPanel> that has embedded text and <xref:System.Windows.Controls.Image> elements.  
-  
- You can define tooltip content as a <xref:System.Windows.Controls.ToolTip> object, but this is not required. When you do not define the tooltip content as a <xref:System.Windows.Controls.ToolTip> object, you can use the <xref:System.Windows.Controls.ToolTipService> properties to position and customize the tooltip content. The <xref:System.Windows.Controls.ToolTipService> class attached properties are used to determine the placement, behavior, and appearance of a tooltip. These properties are set on the element that defines the tooltip.  
-  
- The <xref:System.Windows.Controls.ToolTip> class and the <xref:System.Windows.Controls.ToolTipService> class share many of the same properties that are used to customize a tooltip. If equivalent <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> properties are both set, the <xref:System.Windows.Controls.ToolTipService> property takes precedence. For example, if both the <xref:System.Windows.Controls.ToolTip.Placement%2A?displayProperty=fullName> property and the <xref:System.Windows.Controls.ToolTipService.Placement%2A?displayProperty=fullName> property are set for a <xref:System.Windows.Controls.ToolTip?displayProperty=fullName> object, the value of the <xref:System.Windows.Controls.ToolTipService.Placement%2A?displayProperty=fullName> property is used.  
-  
- The following <xref:System.Windows.Controls.ToolTipService> timing properties are only defined for the <xref:System.Windows.Controls.ToolTipService> class and are used by all tooltips:  
-  
+You define a tooltip for an element by setting the <xref:System.Windows.FrameworkContentElement.ToolTip%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property.  The ToolTip property takes one child. The content of the child can vary from a simple text string to more complex content such as a <xref:System.Windows.Controls.StackPanel> that has embedded text and <xref:System.Windows.Controls.Image> elements.  
+ 
+You can define tooltip content as a <xref:System.Windows.Controls.ToolTip> object, but this is not required. When you do not define the tooltip content as a <xref:System.Windows.Controls.ToolTip> object, you can use the <xref:System.Windows.Controls.ToolTipService> properties to position and customize the tooltip content. The <xref:System.Windows.Controls.ToolTipService> class attached properties are used to determine the placement, behavior, and appearance of a tooltip. These properties are set on the element that defines the tooltip.  
+ 
+The <xref:System.Windows.Controls.ToolTip> class and the <xref:System.Windows.Controls.ToolTipService> class share many of the same properties that are used to customize a tooltip. If equivalent <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> properties are both set, the <xref:System.Windows.Controls.ToolTipService> property takes precedence. For example, if both the <xref:System.Windows.Controls.ToolTip.Placement%2A?displayProperty=fullName> property and the <xref:System.Windows.Controls.ToolTipService.Placement%2A?displayProperty=fullName> property are set for a <xref:System.Windows.Controls.ToolTip?displayProperty=fullName> object, the value of the <xref:System.Windows.Controls.ToolTipService.Placement%2A?displayProperty=fullName> property is used.  
+ 
+The following <xref:System.Windows.Controls.ToolTipService> timing properties are only defined for the <xref:System.Windows.Controls.ToolTipService> class and are used by all tooltips:  
+ 
 -   <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A>  
-  
+ 
 -   <xref:System.Windows.Controls.ToolTipService.ShowDuration%2A>  
-  
+ 
 -   <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A>  
+ 
+For information about how to handle the events that occur when the tooltip opens or closes, see the <xref:System.Windows.Controls.ToolTipService.ToolTipOpeningEvent> and <xref:System.Windows.Controls.ToolTipService.ToolTipClosingEvent> fields.  
+ 
+<xref:System.Windows.Controls.ToolTipService.Placement%2A>, <xref:System.Windows.Controls.ToolTipService.PlacementRectangle%2A>, <xref:System.Windows.Controls.ToolTipService.PlacementTarget%2A>, <xref:System.Windows.Controls.ToolTipService.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ToolTipService.VerticalOffset%2A> behave similarly to the properties of the same name in the <xref:System.Windows.Controls.Primitives.Popup> class.  For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+ 
   
- For information about how to handle the events that occur when the tooltip opens or closes, see the <xref:System.Windows.Controls.ToolTipService.ToolTipOpeningEvent> and <xref:System.Windows.Controls.ToolTipService.ToolTipClosingEvent> fields.  
-  
- <xref:System.Windows.Controls.ToolTipService.Placement%2A>, <xref:System.Windows.Controls.ToolTipService.PlacementRectangle%2A>, <xref:System.Windows.Controls.ToolTipService.PlacementTarget%2A>, <xref:System.Windows.Controls.ToolTipService.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ToolTipService.VerticalOffset%2A> behave similarly to the properties of the same name in the <xref:System.Windows.Controls.Primitives.Popup> class.  For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how the use the <xref:System.Windows.Controls.ToolTipService> class to specify the behavior of a tooltip. You set the properties of the <xref:System.Windows.Controls.ToolTipService> class by attaching them directly to the element that exposes the tooltip.  
-  
- [!code-xml[ToolTipService#NoToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#notooltip)]  
-  
+The following example shows how the use the <xref:System.Windows.Controls.ToolTipService> class to specify the behavior of a tooltip. You set the properties of the <xref:System.Windows.Controls.ToolTipService> class by attaching them directly to the element that exposes the tooltip.  
+ 
+[!code-xml[ToolTipService#NoToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#notooltip)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -134,13 +134,13 @@
         <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.BetweenShowDelay" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
-  
- [!code-csharp[ToolTipService#GetBetweenShowDelay](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getbetweenshowdelay)]
- [!code-vb[ToolTipService#GetBetweenShowDelay](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getbetweenshowdelay)]  
-  
+The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ 
+[!code-csharp[ToolTipService#GetBetweenShowDelay](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getbetweenshowdelay)]
+[!code-vb[ToolTipService#GetBetweenShowDelay](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getbetweenshowdelay)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,13 +171,13 @@
         <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.HasDropShadow" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.HasDropShadow%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
-  
- [!code-csharp[ToolTipService#GetHasDropShadow](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#gethasdropshadow)]
- [!code-vb[ToolTipService#GetHasDropShadow](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#gethasdropshadow)]  
-  
+The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.HasDropShadow%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ 
+[!code-csharp[ToolTipService#GetHasDropShadow](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#gethasdropshadow)]
+[!code-vb[ToolTipService#GetHasDropShadow](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#gethasdropshadow)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,13 +211,13 @@
         <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.HorizontalOffset" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.HorizontalOffset%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
-  
- [!code-csharp[ToolTipService#GetHorizontalOffset](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#gethorizontaloffset)]
- [!code-vb[ToolTipService#GetHorizontalOffset](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#gethorizontaloffset)]  
-  
+The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.HorizontalOffset%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ 
+[!code-csharp[ToolTipService#GetHorizontalOffset](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#gethorizontaloffset)]
+[!code-vb[ToolTipService#GetHorizontalOffset](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#gethorizontaloffset)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,13 +248,13 @@
         <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.InitialShowDelay" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
-  
- [!code-csharp[ToolTipService#GetInitialShowDelay](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getinitialshowdelay)]
- [!code-vb[ToolTipService#GetInitialShowDelay](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getinitialshowdelay)]  
-  
+The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ 
+[!code-csharp[ToolTipService#GetInitialShowDelay](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getinitialshowdelay)]
+[!code-vb[ToolTipService#GetInitialShowDelay](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getinitialshowdelay)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -285,13 +285,13 @@
         <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.IsEnabled" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.IsEnabled%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
-  
- [!code-csharp[ToolTipService#GetIsEnabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getisenabled)]
- [!code-vb[ToolTipService#GetIsEnabled](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getisenabled)]  
-  
+The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.IsEnabled%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ 
+[!code-csharp[ToolTipService#GetIsEnabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getisenabled)]
+[!code-vb[ToolTipService#GetIsEnabled](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getisenabled)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -322,13 +322,13 @@
         <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.IsOpen" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.IsOpen%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
-  
- [!code-csharp[ToolTipService#GetIsOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getisopen)]
- [!code-vb[ToolTipService#GetIsOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getisopen)]  
-  
+The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.IsOpen%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ 
+[!code-csharp[ToolTipService#GetIsOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getisopen)]
+[!code-vb[ToolTipService#GetIsOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getisopen)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,13 +359,13 @@
         <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.Placement" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.Placement%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
-  
- [!code-csharp[ToolTipService#GetPlacement](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getplacement)]
- [!code-vb[ToolTipService#GetPlacement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getplacement)]  
-  
+The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.Placement%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ 
+[!code-csharp[ToolTipService#GetPlacement](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getplacement)]
+[!code-vb[ToolTipService#GetPlacement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getplacement)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -396,13 +396,13 @@
         <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.PlacementRectangle" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.PlacementRectangle%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
-  
- [!code-csharp[ToolTipService#GetPlacementRectangle](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getplacementrectangle)]
- [!code-vb[ToolTipService#GetPlacementRectangle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getplacementrectangle)]  
-  
+The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.PlacementRectangle%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ 
+[!code-csharp[ToolTipService#GetPlacementRectangle](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getplacementrectangle)]
+[!code-vb[ToolTipService#GetPlacementRectangle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getplacementrectangle)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -433,13 +433,13 @@
         <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.PlacementTarget" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.PlacementTarget%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
-  
- [!code-csharp[ToolTipService#GetPlacementTarget](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getplacementtarget)]
- [!code-vb[ToolTipService#GetPlacementTarget](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getplacementtarget)]  
-  
+The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.PlacementTarget%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ 
+[!code-csharp[ToolTipService#GetPlacementTarget](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getplacementtarget)]
+[!code-vb[ToolTipService#GetPlacementTarget](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getplacementtarget)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -470,13 +470,13 @@
         <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.ShowDuration" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.ShowDuration%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
-  
- [!code-csharp[ToolTipService#GetShowDuration](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getshowduration)]
- [!code-vb[ToolTipService#GetShowDuration](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getshowduration)]  
-  
+The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.ShowDuration%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ 
+[!code-csharp[ToolTipService#GetShowDuration](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getshowduration)]
+[!code-vb[ToolTipService#GetShowDuration](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getshowduration)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -507,13 +507,13 @@
         <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.ShowOnDisabled" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.ShowOnDisabled%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
-  
- [!code-csharp[ToolTipService#GetShowOnDisabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getshowondisabled)]
- [!code-vb[ToolTipService#GetShowOnDisabled](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getshowondisabled)]  
-  
+The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.ShowOnDisabled%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ 
+[!code-csharp[ToolTipService#GetShowOnDisabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getshowondisabled)]
+[!code-vb[ToolTipService#GetShowOnDisabled](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getshowondisabled)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -544,13 +544,13 @@
         <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.ToolTip" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.ToolTip%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
-  
- [!code-csharp[ToolTipService#GetToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#gettooltip)]
- [!code-vb[ToolTipService#GetToolTip](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#gettooltip)]  
-  
+The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.ToolTip%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ 
+[!code-csharp[ToolTipService#GetToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#gettooltip)]
+[!code-vb[ToolTipService#GetToolTip](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#gettooltip)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -584,13 +584,13 @@
         <returns>The object's <see cref="P:System.Windows.Controls.ToolTipService.VerticalOffset" /> property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.VerticalOffset%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
-  
- [!code-csharp[ToolTipService#GetVerticalOffset](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getverticaloffset)]
- [!code-vb[ToolTipService#GetVerticalOffset](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getverticaloffset)]  
-  
+The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.VerticalOffset%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ 
+[!code-csharp[ToolTipService#GetVerticalOffset](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getverticaloffset)]
+[!code-vb[ToolTipService#GetVerticalOffset](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getverticaloffset)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -799,13 +799,13 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.ToolTipService.BetweenShowDelay" /> attached property for an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A> attached property.  
-  
- [!code-csharp[ToolTipService#SetBetweenShowDelay](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setbetweenshowdelay)]
- [!code-vb[ToolTipService#SetBetweenShowDelay](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setbetweenshowdelay)]  
-  
+The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A> attached property.  
+ 
+[!code-csharp[ToolTipService#SetBetweenShowDelay](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setbetweenshowdelay)]
+[!code-vb[ToolTipService#SetBetweenShowDelay](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setbetweenshowdelay)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -832,13 +832,13 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.ToolTipService.HasDropShadow" /> attached property for an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.HasDropShadow%2A> attached property.  
-  
- [!code-csharp[ToolTipService#SetHasDropShadow](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#sethasdropshadow)]
- [!code-vb[ToolTipService#SetHasDropShadow](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#sethasdropshadow)]  
-  
+The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.HasDropShadow%2A> attached property.  
+ 
+[!code-csharp[ToolTipService#SetHasDropShadow](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#sethasdropshadow)]
+[!code-vb[ToolTipService#SetHasDropShadow](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#sethasdropshadow)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -865,13 +865,13 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.ToolTipService.HorizontalOffset" /> attached property for an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.HorizontalOffset%2A> attached property.  
-  
- [!code-csharp[ToolTipService#SetHorizontalOffset](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#sethorizontaloffset)]
- [!code-vb[ToolTipService#SetHorizontalOffset](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#sethorizontaloffset)]  
-  
+The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.HorizontalOffset%2A> attached property.  
+ 
+[!code-csharp[ToolTipService#SetHorizontalOffset](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#sethorizontaloffset)]
+[!code-vb[ToolTipService#SetHorizontalOffset](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#sethorizontaloffset)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -898,13 +898,13 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.ToolTipService.InitialShowDelay" /> attached property for an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A> attached property.  
-  
- [!code-csharp[ToolTipService#SetInitialShowDelay](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setinitialshowdelay)]
- [!code-vb[ToolTipService#SetInitialShowDelay](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setinitialshowdelay)]  
-  
+The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A> attached property.  
+ 
+[!code-csharp[ToolTipService#SetInitialShowDelay](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setinitialshowdelay)]
+[!code-vb[ToolTipService#SetInitialShowDelay](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setinitialshowdelay)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -931,13 +931,13 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.ToolTipService.IsEnabled" /> attached property for an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.IsEnabled%2A> attached property.  
-  
- [!code-csharp[ToolTipService#SetIsEnabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setisenabled)]
- [!code-vb[ToolTipService#SetIsEnabled](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setisenabled)]  
-  
+The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.IsEnabled%2A> attached property.  
+ 
+[!code-csharp[ToolTipService#SetIsEnabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setisenabled)]
+[!code-vb[ToolTipService#SetIsEnabled](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setisenabled)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -964,13 +964,13 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.ToolTipService.Placement" /> attached property for an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.Placement%2A> attached property.  
-  
- [!code-csharp[ToolTipService#SetPlacement](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setplacement)]
- [!code-vb[ToolTipService#SetPlacement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setplacement)]  
-  
+The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.Placement%2A> attached property.  
+ 
+[!code-csharp[ToolTipService#SetPlacement](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setplacement)]
+[!code-vb[ToolTipService#SetPlacement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setplacement)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -997,13 +997,13 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.ToolTipService.PlacementRectangle" /> attached property for an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.PlacementRectangle%2A> attached property.  
-  
- [!code-csharp[ToolTipService#SetPlacementRectangle](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setplacementrectangle)]
- [!code-vb[ToolTipService#SetPlacementRectangle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setplacementrectangle)]  
-  
+The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.PlacementRectangle%2A> attached property.  
+ 
+[!code-csharp[ToolTipService#SetPlacementRectangle](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setplacementrectangle)]
+[!code-vb[ToolTipService#SetPlacementRectangle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setplacementrectangle)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1030,13 +1030,13 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.ToolTipService.PlacementTarget" /> attached property for an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.PlacementTarget%2A> attached property.  
-  
- [!code-csharp[ToolTipAssign#SetPlacementTarget](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipAssign/CSharp/Pane1.xaml.cs#setplacementtarget)]
- [!code-vb[ToolTipAssign#SetPlacementTarget](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipAssign/visualbasic/pane1.xaml.vb#setplacementtarget)]  
-  
+The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.PlacementTarget%2A> attached property.  
+ 
+[!code-csharp[ToolTipAssign#SetPlacementTarget](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipAssign/CSharp/Pane1.xaml.cs#setplacementtarget)]
+[!code-vb[ToolTipAssign#SetPlacementTarget](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipAssign/visualbasic/pane1.xaml.vb#setplacementtarget)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1063,13 +1063,13 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.ToolTipService.ShowDuration" /> attached property for an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.ShowDuration%2A> attached property.  
-  
- [!code-csharp[ToolTipService#SetShowDuration](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setshowduration)]
- [!code-vb[ToolTipService#SetShowDuration](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setshowduration)]  
-  
+The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.ShowDuration%2A> attached property.  
+ 
+[!code-csharp[ToolTipService#SetShowDuration](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setshowduration)]
+[!code-vb[ToolTipService#SetShowDuration](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setshowduration)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1096,13 +1096,13 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.ToolTipService.ShowOnDisabled" /> attached property for an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.ShowOnDisabled%2A> attached property.  
-  
- [!code-csharp[ToolTipService#SetShowOnDisabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setshowondisabled)]
- [!code-vb[ToolTipService#SetShowOnDisabled](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setshowondisabled)]  
-  
+The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.ShowOnDisabled%2A> attached property.  
+ 
+[!code-csharp[ToolTipService#SetShowOnDisabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setshowondisabled)]
+[!code-vb[ToolTipService#SetShowOnDisabled](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setshowondisabled)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1129,18 +1129,18 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.ToolTipService.ToolTip" /> attached property for an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is a <xref:System.Windows.Controls.ToolTip> object, the <xref:System.Windows.Controls.ToolTip> is used without any modification. If the value is any other type, that value is used as the content for a tooltip that is provided by the <xref:System.Windows.Controls.ToolTipService>.  
+If the value is a <xref:System.Windows.Controls.ToolTip> object, the <xref:System.Windows.Controls.ToolTip> is used without any modification. If the value is any other type, that value is used as the content for a tooltip that is provided by the <xref:System.Windows.Controls.ToolTipService>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.ToolTip%2A> attached property.  
-  
- [!code-csharp[ToolTipService#SetToolTip2](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#settooltip2)]
- [!code-vb[ToolTipService#SetToolTip2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#settooltip2)]  
-  
+The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.ToolTip%2A> attached property.  
+ 
+[!code-csharp[ToolTipService#SetToolTip2](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#settooltip2)]
+[!code-vb[ToolTipService#SetToolTip2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#settooltip2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1167,13 +1167,13 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Controls.ToolTipService.VerticalOffset" /> attached property for an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.VerticalOffset%2A> attached property.  
-  
- [!code-csharp[ToolTipService#SetVerticalOffset](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setverticaloffset)]
- [!code-vb[ToolTipService#SetVerticalOffset](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setverticaloffset)]  
-  
+The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.VerticalOffset%2A> attached property.  
+ 
+[!code-csharp[ToolTipService#SetVerticalOffset](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setverticaloffset)]
+[!code-vb[ToolTipService#SetVerticalOffset](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setverticaloffset)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1228,25 +1228,25 @@
         <summary>Identifies the <see cref="E:System.Windows.Controls.ToolTipService.ToolTipClosing" /> event that is exposed by objects that use the <see cref="T:System.Windows.Controls.ToolTipService" /> service to display tooltips.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.ToolTipService.ToolTipClosing> event occurs immediately before a tooltip closes.  
+The <xref:System.Windows.Controls.ToolTipService.ToolTipClosing> event occurs immediately before a tooltip closes.  
+ 
+This field registers the behavior of the <xref:System.Windows.Controls.ToolTipService.ToolTipClosingEvent> event for classes that use this service. The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event through the [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] accessors <xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=fullName> and <xref:System.Windows.FrameworkContentElement.ToolTipClosing?displayProperty=fullName>.  
+ 
+If you specify the tooltip as a <xref:System.Windows.Controls.ToolTip> object, the <xref:System.Windows.Controls.ToolTip.Closed> event is also raised when the tooltip closes.  
+ 
   
- This field registers the behavior of the <xref:System.Windows.Controls.ToolTipService.ToolTipClosingEvent> event for classes that use this service. The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event through the [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] accessors <xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=fullName> and <xref:System.Windows.FrameworkContentElement.ToolTipClosing?displayProperty=fullName>.  
-  
- If you specify the tooltip as a <xref:System.Windows.Controls.ToolTip> object, the <xref:System.Windows.Controls.ToolTip.Closed> event is also raised when the tooltip closes.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to set an event handler for the <xref:System.Windows.Controls.ToolTipService.ToolTipClosing> event. In this case, the event handler is actually for <xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=fullName>, because the <xref:System.Windows.Shapes.Ellipse> where the handler is attached is a derived class of <xref:System.Windows.FrameworkElement>.  
-  
- [!code-csharp[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipserviceeventhandlers)]
- [!code-vb[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipserviceeventhandlers)]  
-  
- [!code-csharp[ToolTipService#ToolTipOpenAndCloseHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipopenandclosehandler)]
- [!code-vb[ToolTipService#ToolTipOpenAndCloseHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipopenandclosehandler)]  
-  
+The following example shows how to set an event handler for the <xref:System.Windows.Controls.ToolTipService.ToolTipClosing> event. In this case, the event handler is actually for <xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=fullName>, because the <xref:System.Windows.Shapes.Ellipse> where the handler is attached is a derived class of <xref:System.Windows.FrameworkElement>.  
+ 
+[!code-csharp[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipserviceeventhandlers)]
+[!code-vb[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipserviceeventhandlers)]  
+ 
+[!code-csharp[ToolTipService#ToolTipOpenAndCloseHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipopenandclosehandler)]
+[!code-vb[ToolTipService#ToolTipOpenAndCloseHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipopenandclosehandler)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1267,25 +1267,25 @@
         <summary>Identifies the <see cref="E:System.Windows.Controls.ToolTipService.ToolTipOpening" /> event that is exposed by objects that use the <see cref="T:System.Windows.Controls.ToolTipService" /> service to display tooltips.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.ToolTipService.ToolTipOpening> event occurs immediately before a tooltip opens. This event does not occur if the tooltip is not defined or if the tooltip content is set to null.  
+The <xref:System.Windows.Controls.ToolTipService.ToolTipOpening> event occurs immediately before a tooltip opens. This event does not occur if the tooltip is not defined or if the tooltip content is set to null.  
+ 
+This field registers the behavior of the <xref:System.Windows.Controls.ToolTipService.ToolTipOpening> event for classes that use this service. The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event through the [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] accessors <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName> and <xref:System.Windows.FrameworkContentElement.ToolTipOpening?displayProperty=fullName>.  
+ 
+If you specify the tooltip as a <xref:System.Windows.Controls.ToolTip> object, the <xref:System.Windows.Controls.ToolTip.Opened> event is also raised when the tooltip opens.  
+ 
   
- This field registers the behavior of the <xref:System.Windows.Controls.ToolTipService.ToolTipOpening> event for classes that use this service. The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event through the [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] accessors <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName> and <xref:System.Windows.FrameworkContentElement.ToolTipOpening?displayProperty=fullName>.  
-  
- If you specify the tooltip as a <xref:System.Windows.Controls.ToolTip> object, the <xref:System.Windows.Controls.ToolTip.Opened> event is also raised when the tooltip opens.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to set an event handler for the <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName> event.  In this case, the event handler is actually for <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName>, because the <xref:System.Windows.Shapes.Ellipse> where the handler is attached is a derived class of <xref:System.Windows.FrameworkElement>.  
-  
- [!code-csharp[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipserviceeventhandlers)]
- [!code-vb[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipserviceeventhandlers)]  
-  
- [!code-csharp[ToolTipService#ToolTipOpenAndCloseHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipopenandclosehandler)]
- [!code-vb[ToolTipService#ToolTipOpenAndCloseHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipopenandclosehandler)]  
-  
+The following example shows how to set an event handler for the <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName> event.  In this case, the event handler is actually for <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName>, because the <xref:System.Windows.Shapes.Ellipse> where the handler is attached is a derived class of <xref:System.Windows.FrameworkElement>.  
+ 
+[!code-csharp[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipserviceeventhandlers)]
+[!code-vb[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipserviceeventhandlers)]  
+ 
+[!code-csharp[ToolTipService#ToolTipOpenAndCloseHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipopenandclosehandler)]
+[!code-vb[ToolTipService#ToolTipOpenAndCloseHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipopenandclosehandler)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

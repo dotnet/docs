@@ -52,10 +52,10 @@
         <value>An <see cref="T:System.ServiceModel.Configuration.AuthorizationPolicyTypeElementCollection" /> that contains a collection of authorization policy types.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Configuring a set of authorization policy implementations enables transformation of one set of input claims into another set of claims. Access control can be granted or denied based on the claims.  
-  
+Configuring a set of authorization policy implementations enables transformation of one set of input claims into another set of claims. Access control can be granted or denied based on the claims.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,10 +141,10 @@
           <see langword="true" /> if all the operations in the service impersonate the caller; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a specific service operation impersonates the caller, the thread context is switched to the caller context before executing the specified service.  
-  
+When a specific service operation impersonates the caller, the thread context is switched to the caller context before executing the specified service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,10 +239,10 @@
         <value>The name of the role provider. The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Different types of role providers can be used to provide role information from a Windows group, an SQL database, an authorization manager policy store, and so on.  
-  
+Different types of role providers can be used to provide role information from a Windows group, an SQL database, an authorization manager policy store, and so on.  
+ 
  ]]></format>
         </remarks>
       </Docs>

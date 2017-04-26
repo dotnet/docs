@@ -21,19 +21,19 @@
     <summary>Provides a basic implementation of the <see cref="T:System.Windows.IDataObject" /> interface, which defines a format-independent mechanism for transferring data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_DataObject"></a>   
 ## XAML Text Usage  
-   
   
+ 
 ## Examples  
- The following example shows how to use this class.  
-  
- [!code-csharp[dragdrop_dragdropmisccode#_DragDrop_CreateDataObject_TypeString](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_typestring)]
- [!code-vb[dragdrop_dragdropmisccode#_DragDrop_CreateDataObject_TypeString](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_typestring)]  
-  
+The following example shows how to use this class.  
+ 
+[!code-csharp[dragdrop_dragdropmisccode#_DragDrop_CreateDataObject_TypeString](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_typestring)]
+[!code-vb[dragdrop_dragdropmisccode#_DragDrop_CreateDataObject_TypeString](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_typestring)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,18 +80,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.DataObject" /> class that contains the specified data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a new data object and uses this constructor to initialize the data object with a string.  In this case, an appropriate data format is determined automatically according to the stored data's type, and auto-converting of the stored data is allowed by default.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Simple](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_simple)]
- [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Simple](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_simple)]  
-  
- The following example is a condensed version of the previous example.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Simple_Condensed](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_simple_condensed)]
- [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Simple_Condensed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_simple_condensed)]  
-  
+The following example creates a new data object and uses this constructor to initialize the data object with a string.  In this case, an appropriate data format is determined automatically according to the stored data's type, and auto-converting of the stored data is allowed by default.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Simple](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_simple)]
+[!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Simple](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_simple)]  
+ 
+The following example is a condensed version of the previous example.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Simple_Condensed](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_simple_condensed)]
+[!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Simple_Condensed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_simple_condensed)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -124,18 +124,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.DataObject" /> class that contains the specified data and its associated format; the format is specified by a string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a new data object and uses this constructor to initialize the data object with a string and a specified data format.  In this case, the data format is specified by a string; the <xref:System.Windows.DataFormats> class provides a set of predefined type strings. Auto-converting of the stored data is allowed by default.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_TypeString](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_typestring)]
- [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_TypeString](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_typestring)]  
-  
- The following example is a condensed version of the previous example.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_TypeString_Condensed](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_typestring_condensed)]
- [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_TypeString_Condensed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_typestring_condensed)]  
-  
+The following example creates a new data object and uses this constructor to initialize the data object with a string and a specified data format.  In this case, the data format is specified by a string; the <xref:System.Windows.DataFormats> class provides a set of predefined type strings. Auto-converting of the stored data is allowed by default.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_TypeString](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_typestring)]
+[!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_TypeString](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_typestring)]  
+ 
+The following example is a condensed version of the previous example.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_TypeString_Condensed](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_typestring_condensed)]
+[!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_TypeString_Condensed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_typestring_condensed)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -166,18 +166,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.DataObject" /> class that contains the specified data and its associated format; the data format is specified by a <see cref="T:System.Type" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a new data object and uses this constructor to initialize the data object with a string and a specified data format.  In this case, the data format is specified by a <xref:System.Type> parameter.  Auto-converting of the stored data is allowed by default.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Type](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_type)]
- [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Type](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_type)]  
-  
- The following example is a condensed version of the previous example.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Type_Condensed](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_type_condensed)]
- [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Type_Condensed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_type_condensed)]  
-  
+The following example creates a new data object and uses this constructor to initialize the data object with a string and a specified data format.  In this case, the data format is specified by a <xref:System.Type> parameter.  Auto-converting of the stored data is allowed by default.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Type](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_type)]
+[!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Type](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_type)]  
+ 
+The following example is a condensed version of the previous example.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Type_Condensed](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_type_condensed)]
+[!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Type_Condensed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_type_condensed)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -211,18 +211,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.DataObject" /> class that contains the specified data and its associated format; the format is specified by a string. This overload includes a <see langword="Boolean" /> flag to indicate whether the data may be converted to another format on retrieval.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a new data object and uses this constructor to initialize the data object with a string and a specified data format.  In this case, the data format is specified by a string; the <xref:System.Windows.DataFormats> class provides a set of predefined type strings.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_AutoConvert](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_autoconvert)]
- [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_AutoConvert](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_autoconvert)]  
-  
- The following example is a condensed version of the preceding example.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_AutoConvert_Condensed](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_autoconvert_condensed)]
- [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_AutoConvert_Condensed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_autoconvert_condensed)]  
-  
+The following example creates a new data object and uses this constructor to initialize the data object with a string and a specified data format.  In this case, the data format is specified by a string; the <xref:System.Windows.DataFormats> class provides a set of predefined type strings.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_AutoConvert](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_autoconvert)]
+[!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_AutoConvert](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_autoconvert)]  
+ 
+The following example is a condensed version of the preceding example.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_AutoConvert_Condensed](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_autoconvert_condensed)]
+[!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_AutoConvert_Condensed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_autoconvert_condensed)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -251,12 +251,12 @@
         <summary>Adds a <see cref="E:System.Windows.DataObject.Copying" /> event handler to a specified dependency object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.DataObject.Copying> event occurs when a copy operation has finished converting the selected content into all specified data formats, has stored all data formats in the associated data object, and is ready to put the data object on the system Clipboard or to begin a drag operation.  
-  
- Use this event to inspect or modify a data object after a copy operation completes, and before proceeding with subsequent operations. The entire copy operation can be canceled by calling <xref:System.Windows.DataObjectEventArgs.CancelCommand%2A>.  
-  
+The <xref:System.Windows.DataObject.Copying> event occurs when a copy operation has finished converting the selected content into all specified data formats, has stored all data formats in the associated data object, and is ready to put the data object on the system Clipboard or to begin a drag operation.  
+ 
+Use this event to inspect or modify a data object after a copy operation completes, and before proceeding with subsequent operations. The entire copy operation can be canceled by calling <xref:System.Windows.DataObjectEventArgs.CancelCommand%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,21 +283,21 @@
         <summary>Adds a <see cref="E:System.Windows.DataObject.Pasting" /> event handler to a specified dependency object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this event to inspect a data object before the data is pasted, and possibly to decide on an alternate course of action, such as:  
-  
+Use this event to inspect a data object before the data is pasted, and possibly to decide on an alternate course of action, such as:  
+ 
 -   **Cancel the Paste** - Cancel the entire paste operation by calling the <xref:System.Windows.DataObjectEventArgs.CancelCommand%2A> method.  
-  
+ 
 -   **Select an Alternate Format** - Change the selected paste format by specifying a new value for the <xref:System.Windows.DataObjectPastingEventArgs.FormatToApply%2A> property. The newly selected format must by supported by the data object to be pasted.  
-  
-    > [!NOTE]
-    >  If the paste format is changed, ensure that the paste target supports the newly specified format.  
-  
+ 
+   > [!NOTE]
+   >  If the paste format is changed, ensure that the paste target supports the newly specified format.  
+ 
 -   **Insert a New Format** - If you determine that the paste data object does not support the desired format, update the data object to include a version of the data in the desired format. Custom data converters are often used as part of this process.  
-  
- Changing the content of a paste data object (<xref:System.Windows.DataObjectPastingEventArgs.DataObject%2A>) does not change the data stored on the system Clipboard; any such changes will apply only to the data object associated with the associated paste command.  
-  
+ 
+Changing the content of a paste data object (<xref:System.Windows.DataObjectPastingEventArgs.DataObject%2A>) does not change the data stored on the system Clipboard; any such changes will apply only to the data object associated with the associated paste command.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -324,12 +324,12 @@
         <summary>Adds a <see cref="E:System.Windows.DataObject.SettingData" /> event handler to a specified dependency object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.DataObject.SettingData> event occurs as part of a copy or drag command, once for each of the data formats to add to the associated data object. Typically, this event is connected to a content control, such as <xref:System.Windows.Controls.TextBox>.  
-  
- A handler for this event can be used to selectively prevent unwanted data formats from being added to the data object, thus eliminating data conversion processing for redundant data formats and improving the overall performance of a copy operation. To skip a particular data format, call the <xref:System.Windows.DataObjectEventArgs.CancelCommand%2A> method and specify the format to skip in the <xref:System.Windows.DataObjectSettingDataEventArgs.Format%2A> property. Calling the <xref:System.Windows.DataObjectEventArgs.CancelCommand%2A> method for this event does not cancel the associated copy or drag command.  
-  
+The <xref:System.Windows.DataObject.SettingData> event occurs as part of a copy or drag command, once for each of the data formats to add to the associated data object. Typically, this event is connected to a content control, such as <xref:System.Windows.Controls.TextBox>.  
+ 
+A handler for this event can be used to selectively prevent unwanted data formats from being added to the data object, thus eliminating data conversion processing for redundant data formats and improving the overall performance of a copy operation. To skip a particular data format, call the <xref:System.Windows.DataObjectEventArgs.CancelCommand%2A> method and specify the format to skip in the <xref:System.Windows.DataObjectSettingDataEventArgs.Format%2A> property. Calling the <xref:System.Windows.DataObjectEventArgs.CancelCommand%2A> method for this event does not cancel the associated copy or drag command.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -353,10 +353,10 @@
           <see langword="true" /> if the data object contains data in the <see cref="F:System.Windows.DataFormats.WaveAudio" /> data format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `true` only if the specified data format exists natively in the data object; this method does not check for the presence of auto-convertible data formats.  
-  
+This method returns `true` only if the specified data format exists natively in the data object; this method does not check for the presence of auto-convertible data formats.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -380,10 +380,10 @@
           <see langword="true" /> if the data object contains data in the <see cref="F:System.Windows.DataFormats.FileDrop" /> data format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `true` only if the specified data format exists natively in the data object; this method does not check for the presence of auto-convertible data formats.  
-  
+This method returns `true` only if the specified data format exists natively in the data object; this method does not check for the presence of auto-convertible data formats.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -407,12 +407,12 @@
           <see langword="true" /> if the data object contains data in the <see cref="F:System.Windows.DataFormats.Bitmap" /> data format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `true` only if the specified data format exists natively in the data object; this method does not check for the presence of auto-convertible data formats.  
-  
- A bitmap represents a computer graphic as an array of bits in memory, and these bits represent the attributes of the individual pixels in an image.  
-  
+This method returns `true` only if the specified data format exists natively in the data object; this method does not check for the presence of auto-convertible data formats.  
+ 
+A bitmap represents a computer graphic as an array of bits in memory, and these bits represent the attributes of the individual pixels in an image.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -436,12 +436,12 @@
           <see langword="true" /> if the data object contains data in the <see cref="F:System.Windows.DataFormats.UnicodeText" /> data format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `true` only if the specified data format exists natively in the data object; this method does not check for the presence of auto-convertible data formats.  
-  
- The <xref:System.Windows.DataFormats.UnicodeText> data format denotes 16-bit character encoded Unicode, also referred to as UTF-16, and USC-2.  
-  
+This method returns `true` only if the specified data format exists natively in the data object; this method does not check for the presence of auto-convertible data formats.  
+ 
+The <xref:System.Windows.DataFormats.UnicodeText> data format denotes 16-bit character encoded Unicode, also referred to as UTF-16, and USC-2.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -468,10 +468,10 @@
           <see langword="true" /> if the data object contains data in a text data format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `true` only if the specified data format exists natively in the data object; this method does not check for the presence of auto-convertible data formats.  
-  
+This method returns `true` only if the specified data format exists natively in the data object; this method does not check for the presence of auto-convertible data formats.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -513,10 +513,10 @@
         <returns>A stream that contains data in the <see cref="F:System.Windows.DataFormats.WaveAudio" /> format, or <see langword="null" /> if the data is unavailable in this format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a stream only if the specified format exists natively in the data object; this method does not return auto-convertible data.  
-  
+This method returns a stream only if the specified format exists natively in the data object; this method does not return auto-convertible data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -542,18 +542,18 @@
         <returns>An object that contains the data in the specified format, or <see langword="null" /> if the data is unavailable in the specified format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses this method to first check whether a specified data format is available (natively or by auto-convert); if the specified format is available, the example retrieves the data by using the <xref:System.Windows.DataObject.GetData%28System.String%29> method.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_GetSpecificDataFormat](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_getspecificdataformat)]
- [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_GetSpecificDataFormat](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_getspecificdataformat)]  
-  
- The following example code uses the <xref:System.Windows.DataObject.GetDataPresent%28System.String%2CSystem.Boolean%29> method to first check if a specified data format is available natively (auto-convertible data formats are filtered); if the specified format is available, the example retrieves the data by using the <xref:System.Windows.DataObject.GetData%28System.String%29> method.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_GetSpecificDataFormat_Native](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_getspecificdataformat_native)]
- [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_GetSpecificDataFormat_Native](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_getspecificdataformat_native)]  
-  
+The following example uses this method to first check whether a specified data format is available (natively or by auto-convert); if the specified format is available, the example retrieves the data by using the <xref:System.Windows.DataObject.GetData%28System.String%29> method.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_GetSpecificDataFormat](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_getspecificdataformat)]
+[!code-vb[DragDrop_DragDropMiscCode#_DragDrop_GetSpecificDataFormat](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_getspecificdataformat)]  
+ 
+The following example code uses the <xref:System.Windows.DataObject.GetDataPresent%28System.String%2CSystem.Boolean%29> method to first check if a specified data format is available natively (auto-convertible data formats are filtered); if the specified format is available, the example retrieves the data by using the <xref:System.Windows.DataObject.GetData%28System.String%29> method.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_GetSpecificDataFormat_Native](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_getspecificdataformat_native)]
+[!code-vb[DragDrop_DragDropMiscCode#_DragDrop_GetSpecificDataFormat_Native](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_getspecificdataformat_native)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -635,18 +635,18 @@
           <see langword="true" /> if the data is in, or can be converted to, the specified format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Windows.DataObject.GetDataPresent%2A> to determine whether a format is available in this data object before calling <xref:System.Windows.DataObject.GetData%2A>. Call <xref:System.Windows.DataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
+Call <xref:System.Windows.DataObject.GetDataPresent%2A> to determine whether a format is available in this data object before calling <xref:System.Windows.DataObject.GetData%2A>. Call <xref:System.Windows.DataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses this method to query for the presence of a particular data format by descriptor string.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_QueryDataFormats_String](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_querydataformats_string)]
- [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_QueryDataFormats_String](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_querydataformats_string)]  
-  
+The following example uses this method to query for the presence of a particular data format by descriptor string.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_QueryDataFormats_String](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_querydataformats_string)]
+[!code-vb[DragDrop_DragDropMiscCode#_DragDrop_QueryDataFormats_String](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_querydataformats_string)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -675,18 +675,18 @@
           <see langword="true" /> if the data is in, or can be converted to, the specified format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Windows.DataObject.GetDataPresent%2A> to determine whether a format is available in this data object before calling <xref:System.Windows.DataObject.GetData%2A>. Call <xref:System.Windows.DataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
+Call <xref:System.Windows.DataObject.GetDataPresent%2A> to determine whether a format is available in this data object before calling <xref:System.Windows.DataObject.GetData%2A>. Call <xref:System.Windows.DataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses this method to query for the presence of a particular data format by type.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_QueryDataFormats_Type](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_querydataformats_type)]
- [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_QueryDataFormats_Type](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_querydataformats_type)]  
-  
+The following example uses this method to query for the presence of a particular data format by type.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_QueryDataFormats_Type](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_querydataformats_type)]
+[!code-vb[DragDrop_DragDropMiscCode#_DragDrop_QueryDataFormats_Type](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_querydataformats_type)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -718,18 +718,18 @@
           <see langword="true" /> if the data is in, or can be converted to, the specified format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Windows.DataObject.GetDataPresent%2A> to determine whether a format is available in this data object before calling <xref:System.Windows.DataObject.GetData%2A>. Call <xref:System.Windows.DataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
+Call <xref:System.Windows.DataObject.GetDataPresent%2A> to determine whether a format is available in this data object before calling <xref:System.Windows.DataObject.GetData%2A>. Call <xref:System.Windows.DataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses this method to query for data by descriptor string, and specifies how to treat auto-convertible data formats.  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_QueryDataFormats_Autoconvert](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_querydataformats_autoconvert)]
- [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_QueryDataFormats_Autoconvert](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_querydataformats_autoconvert)]  
-  
+The following example uses this method to query for data by descriptor string, and specifies how to treat auto-convertible data formats.  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_QueryDataFormats_Autoconvert](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_querydataformats_autoconvert)]
+[!code-vb[DragDrop_DragDropMiscCode#_DragDrop_QueryDataFormats_Autoconvert](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_querydataformats_autoconvert)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -773,18 +773,18 @@
         <returns>An array of strings, with each string specifying the name of a format that this data object supports.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a set of predefined data formats, see the <xref:System.Windows.DataFormats> class.  
+For a set of predefined data formats, see the <xref:System.Windows.DataFormats> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses this method to get an array of strings denoting all data formats available in a data object (both native and auto-convertible).  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_GetAllDataFormats](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_getalldataformats)]
- [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_GetAllDataFormats](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_getalldataformats)]  
-  
+The following example uses this method to get an array of strings denoting all data formats available in a data object (both native and auto-convertible).  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_GetAllDataFormats](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_getalldataformats)]
+[!code-vb[DragDrop_DragDropMiscCode#_DragDrop_GetAllDataFormats](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_getalldataformats)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -811,18 +811,18 @@
         <returns>An array of strings, with each string specifying the name of a format supported by this data object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a set of predefined data formats, see the <xref:System.Windows.DataFormats> class.  
+For a set of predefined data formats, see the <xref:System.Windows.DataFormats> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses this method to get an array of strings denoting only data formats available in a data object (auto-convertible data formats are filtered).  
-  
- [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_GetAllDataFormats_NativeOnly](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_getalldataformats_nativeonly)]
- [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_GetAllDataFormats_NativeOnly](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_getalldataformats_nativeonly)]  
-  
+The following example uses this method to get an array of strings denoting only data formats available in a data object (auto-convertible data formats are filtered).  
+ 
+[!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_GetAllDataFormats_NativeOnly](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_getalldataformats_nativeonly)]
+[!code-vb[DragDrop_DragDropMiscCode#_DragDrop_GetAllDataFormats_NativeOnly](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_getalldataformats_nativeonly)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -845,12 +845,12 @@
         <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> object that contains data in the <see cref="F:System.Windows.DataFormats.Bitmap" /> format, or <see langword="null" /> if the data is unavailable in this format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a <xref:System.Windows.Media.Imaging.BitmapSource> object either when data is available natively or when data can be auto-converted to the <xref:System.Windows.DataFormats.Bitmap> data format.  
-  
- A bitmap represents a computer graphic as an array of bits in memory, and these bits represent the attributes of the individual pixels in an image.  
-  
+This method returns a <xref:System.Windows.Media.Imaging.BitmapSource> object either when data is available natively or when data can be auto-converted to the <xref:System.Windows.DataFormats.Bitmap> data format.  
+ 
+A bitmap represents a computer graphic as an array of bits in memory, and these bits represent the attributes of the individual pixels in an image.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -873,10 +873,10 @@
         <returns>A string that contains the <see cref="F:System.Windows.DataFormats.UnicodeText" /> data, or an empty string if no <see cref="F:System.Windows.DataFormats.UnicodeText" /> data is available.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.DataFormats.UnicodeText> data format denotes 16-bit character encoded Unicode, also referred to as UTF-16, and USC-2.  
-  
+The <xref:System.Windows.DataFormats.UnicodeText> data format denotes 16-bit character encoded Unicode, also referred to as UTF-16, and USC-2.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1011,10 +1011,10 @@
         <summary>Stores audio data (<see cref="F:System.Windows.DataFormats.WaveAudio" /> data format) in this data object. The audio data is specified as a byte array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds data with auto-conversion disabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `false`).  
-  
+This method adds data with auto-conversion disabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `false`).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1041,10 +1041,10 @@
         <summary>Stores audio data (<see cref="F:System.Windows.DataFormats.WaveAudio" /> data format) in this data object.  The audio data is specified as a stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds data with auto-conversion disabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `false`).  
-  
+This method adds data with auto-conversion disabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `false`).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1076,10 +1076,10 @@
         <summary>Stores the specified data in this data object, automatically determining the data format from the source object type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds data with auto-conversion enabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `true`).  
-  
+This method adds data with auto-conversion enabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `true`).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1114,10 +1114,10 @@
         <summary>Stores the specified data in this data object, along with one or more specified data formats; the data format is specified by a string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds data with auto-conversion enabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `true`).  
-  
+This method adds data with auto-conversion enabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `true`).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1152,10 +1152,10 @@
         <summary>Stores the specified data in this data object, along with one or more specified data formats; the data format is specified by a <see cref="T:System.Type" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds data with auto-conversion enabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `true`).  
-  
+This method adds data with auto-conversion enabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `true`).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1217,10 +1217,10 @@
         <summary>Stores <see cref="F:System.Windows.DataFormats.FileDrop" /> data in this data object.  The dropped file list is specified as a string collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds data with auto-conversion enabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `true`).  
-  
+This method adds data with auto-conversion enabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `true`).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1249,12 +1249,12 @@
         <summary>Stores <see cref="F:System.Windows.DataFormats.Bitmap" /> data in this data object.  The image data is specified as a <see cref="T:System.Windows.Media.Imaging.BitmapSource" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A bitmap represents a computer graphic as an array of bits in memory, and these bits represent the attributes of the individual pixels in an image.  
-  
- This method adds data with auto-conversion enabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `true`).  
-  
+A bitmap represents a computer graphic as an array of bits in memory, and these bits represent the attributes of the individual pixels in an image.  
+ 
+This method adds data with auto-conversion enabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `true`).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1281,12 +1281,12 @@
         <summary>Stores <see cref="F:System.Windows.DataFormats.UnicodeText" /> data, specified as a string, in this data object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This data format denotes 16-bit character encoded Unicode, also referred to as UTF-16, and USC-2.  
-  
- This method adds data with auto-conversion disabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `false`).  
-  
+This data format denotes 16-bit character encoded Unicode, also referred to as UTF-16, and USC-2.  
+ 
+This method adds data with auto-conversion disabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `false`).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1315,10 +1315,10 @@
         <summary>Stores text data in this data object. The format of the text data to store is specified with a member of <see cref="T:System.Windows.TextDataFormat" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds data with auto-conversion disabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `false`).  
-  
+This method adds data with auto-conversion disabled (the same as calling <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> with `autoConvert` set to `false`).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1374,10 +1374,10 @@
         <returns>This method supports the standard return values E_INVALIDARG, E_UNEXPECTED, and E_OUTOFMEMORY, as well as the following:</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1407,10 +1407,10 @@
         <summary>Destroys a notification connection that had been previously established.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1468,10 +1468,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1537,10 +1537,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1624,10 +1624,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1659,10 +1659,10 @@
         <summary>Obtains data from a source data object. The <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" /> method, which is called by a data consumer, renders the data described in the specified <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structure and transfers it through the specified <see cref="T:System.Runtime.InteropServices.ComTypes.STGMEDIUM" /> structure. The caller then assumes responsibility for releasing the <see cref="T:System.Runtime.InteropServices.ComTypes.STGMEDIUM" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1694,10 +1694,10 @@
         <summary>Obtains data from a source data object. This method, which is called by a data consumer, differs from the <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" /> method in that the caller must allocate and free the specified storage medium.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1787,10 +1787,10 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1825,10 +1825,10 @@
         <summary>Transfers data to the object that implements this method. This method is called by an object that contains a data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.DataObject> instance is cast to an <xref:System.Runtime.InteropServices.ComTypes.IDataObject> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1842,10 +1842,10 @@
         <summary>Determines whether the data is available in, or can be converted to, a specified format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Windows.DataObject.GetDataPresent%2A> to determine whether a format is available in this data object before calling <xref:System.Windows.DataObject.GetData%2A>. Call <xref:System.Windows.DataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
-  
+Call <xref:System.Windows.DataObject.GetDataPresent%2A> to determine whether a format is available in this data object before calling <xref:System.Windows.DataObject.GetData%2A>. Call <xref:System.Windows.DataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

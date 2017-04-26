@@ -19,10 +19,10 @@
     <summary>Represents the set of all of the <see langword="&lt;securityTokenHandlers&gt;" /> elements under an <see langword="&lt;identityConfiguration&gt;" /> element in a configuration file. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each `<securityTokenHandlers>` element is represented by a <xref:System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection> object. This class represents a collection of these objects.  
-  
+Each `<securityTokenHandlers>` element is represented by a <xref:System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection> object. This class represents a collection of these objects.  
+ 
  ]]></format>
     </remarks>
   </Docs>

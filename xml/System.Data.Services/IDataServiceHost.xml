@@ -11,10 +11,10 @@
     <summary>Interface that specifies interactions between [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] and its hosting environment.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each component that hosts [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)], such as Windows Communication Foundation (WCF) must implement this interface. <xref:System.Data.Services.IDataServiceHost> is the contract between [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] and its hosting environment. This abstraction allows the [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] runtime to be agnostic to any particular hosting environment. The interface provides [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] with access to inbound HTTP requests. A new object implementing this interface is instantiated for each HTTP request and is then used to inspect properties of the HTTP request and configure the HTTP response.  
-  
+Each component that hosts [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)], such as Windows Communication Foundation (WCF) must implement this interface. <xref:System.Data.Services.IDataServiceHost> is the contract between [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] and its hosting environment. This abstraction allows the [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] runtime to be agnostic to any particular hosting environment. The interface provides [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] with access to inbound HTTP requests. A new object implementing this interface is instantiated for each HTTP request and is then used to inspect properties of the HTTP request and configure the HTTP response.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <value>A string that is the absolute URI of the request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Services.IDataServiceHost.AbsoluteRequestUri%2A> property always returns the absolute URI from the client HTTP request. This enables consistent access to the request URI, even in cases where the host revises the URI.  
-  
+The <xref:System.Data.Services.IDataServiceHost.AbsoluteRequestUri%2A> property always returns the absolute URI from the client HTTP request. This enables consistent access to the request URI, even in cases where the host revises the URI.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -61,10 +61,10 @@
         <value>A string that is the absolute root URI of the data service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Services.IDataServiceHost.AbsoluteServiceUri%2A> property always returns the absolute root URI of the service request. This enables consistent access to the root data service URI, even in cases where the host revises the URI.  
-  
+The <xref:System.Data.Services.IDataServiceHost.AbsoluteServiceUri%2A> property always returns the absolute root URI of the service request. This enables consistent access to the root data service URI, even in cases where the host revises the URI.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,10 +90,10 @@
         <returns>The data item requested by the query serialized as a string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The query string portion of an [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] URI is made up of key/value pairs, with the key and value separated by the ‘=’ character. `GetQueryStringItem` returns a data item for an identity key specified by the parameter of the method.  
-  
+The query string portion of an [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] URI is made up of key/value pairs, with the key and value separated by the ‘=’ character. `GetQueryStringItem` returns a data item for an identity key specified by the parameter of the method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,10 +137,10 @@
         <value>String that indicates the transport protocol required by the request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Protocols currently supported by [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] include JSON and AtomPub.  
-  
+Protocols currently supported by [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] include JSON and AtomPub.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,10 +162,10 @@
         <value>String representing the value of the <c>Accept-Charset</c> HTTP header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns null if no `Accept-Charset` header is present on the request.  
-  
+Returns null if no `Accept-Charset` header is present on the request.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,10 +187,10 @@
         <value>String value that indicates content type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Protocols currently supported by [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] include JSON and AtomPub.  
-  
+Protocols currently supported by [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] include JSON and AtomPub.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,10 +212,10 @@
         <value>String value that indicates request method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the properties supported by <xref:System.Data.Services.IDataServiceHost> and their use, see [WCF Data Services Client Library](~/docs/framework/data/wcf/wcf-data-services-client-library.md).  
-  
+For more information about the properties supported by <xref:System.Data.Services.IDataServiceHost> and their use, see [WCF Data Services Client Library](~/docs/framework/data/wcf/wcf-data-services-client-library.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -310,10 +310,10 @@
         <value>A string that identifies the version of the request that the client submitted, possibly null.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this value is null, the version is assumed to be 1.0.  
-  
+If this value is null, the version is assumed to be 1.0.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -353,10 +353,10 @@
         <value>String value containing the content type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For more information about the properties supported by <xref:System.Data.Services.IDataServiceHost> and their use, see [WCF Data Services Client Library](~/docs/framework/data/wcf/wcf-data-services-client-library.md).  
-  
+For more information about the properties supported by <xref:System.Data.Services.IDataServiceHost> and their use, see [WCF Data Services Client Library](~/docs/framework/data/wcf/wcf-data-services-client-library.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -396,20 +396,20 @@
         <value>String that contains the service location.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property never returns null or `string.Empty`.  
+This property never returns null or `string.Empty`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following URI contains the location of the service in the substring `http://myhost/myservice.svc`.  
-  
+The following URI contains the location of the service in the substring `http://myhost/myservice.svc`.  
+ 
 ```  
 http://myhost/myservice.svc/Customers, the response location would be http://myhost/myservice.svc  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -450,10 +450,10 @@ http://myhost/myservice.svc/Customers, the response location would be http://myh
           <see cref="T:System.IO.Stream" /> object to which the response body will be written.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a null stream is returned or an exception occurs when writing to the stream, [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] aborts the request.  
-  
+If a null stream is returned or an exception occurs when writing to the stream, [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] aborts the request.  
+ 
  ]]></format>
         </remarks>
       </Docs>

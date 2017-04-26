@@ -11,12 +11,12 @@
     <summary>An interface that is implemented by classes which are responsible for generating [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] content on behalf of a host.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.ItemsControl> is the base class for containing and displaying one or more data items. <xref:System.Windows.Controls.ItemContainerGenerator> maintains an association between <xref:System.Windows.Controls.ItemsControl> and the list of items that are displayed by <xref:System.Windows.Controls.ItemsControl>. <xref:System.Windows.Controls.ItemContainerGenerator> is also responsible for generating the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] for those items on behalf of <xref:System.Windows.Controls.ItemsControl>. <xref:System.Windows.Controls.Panel>, <xref:System.Windows.Controls.VirtualizingPanel>, and <xref:System.Windows.Controls.VirtualizingStackPanel> also use <xref:System.Windows.Controls.ItemContainerGenerator> for the same reason.  
-  
- <xref:System.Windows.Controls.ItemContainerGenerator> implements <xref:System.Windows.Controls.Primitives.IItemContainerGenerator> and is the interface through which each of the mentioned layout elements communicate with <xref:System.Windows.Controls.ItemContainerGenerator>.  
-  
+<xref:System.Windows.Controls.ItemsControl> is the base class for containing and displaying one or more data items. <xref:System.Windows.Controls.ItemContainerGenerator> maintains an association between <xref:System.Windows.Controls.ItemsControl> and the list of items that are displayed by <xref:System.Windows.Controls.ItemsControl>. <xref:System.Windows.Controls.ItemContainerGenerator> is also responsible for generating the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] for those items on behalf of <xref:System.Windows.Controls.ItemsControl>. <xref:System.Windows.Controls.Panel>, <xref:System.Windows.Controls.VirtualizingPanel>, and <xref:System.Windows.Controls.VirtualizingStackPanel> also use <xref:System.Windows.Controls.ItemContainerGenerator> for the same reason.  
+ 
+<xref:System.Windows.Controls.ItemContainerGenerator> implements <xref:System.Windows.Controls.Primitives.IItemContainerGenerator> and is the interface through which each of the mentioned layout elements communicate with <xref:System.Windows.Controls.ItemContainerGenerator>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <returns>A <see cref="T:System.Windows.DependencyObject" /> that is the container element which is used to display the next item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext%2A> must be called within the scope of the <xref:System.IDisposable> reference that is returned by a previous call to the <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A> method.  
-  
+<xref:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext%2A> must be called within the scope of the <xref:System.IDisposable> reference that is returned by a previous call to the <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -68,10 +68,10 @@
         <returns>A <see cref="T:System.Windows.DependencyObject" /> that is the container element which is used to display the next item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the next item to be displayed has not already been generated (realized), <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext%2A> returns a new <xref:System.Windows.DependencyObject>, otherwise, the existing <xref:System.Windows.DependencyObject> is returned.  
-  
+When the next item to be displayed has not already been generated (realized), <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext%2A> returns a new <xref:System.Windows.DependencyObject>, otherwise, the existing <xref:System.Windows.DependencyObject> is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,12 +164,12 @@
         <summary>Prepares the specified element as the container for the corresponding item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Preparing the specified element includes applying the container style, forwarding information from the host control, such as the <xref:System.Windows.DataTemplate> value of the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> property, and other small adjustments.  
-  
- <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.PrepareItemContainer%2A> must be called after the element has been added to the visual tree, so that resource references and inherited properties work correctly.  
-  
+Preparing the specified element includes applying the container style, forwarding information from the host control, such as the <xref:System.Windows.DataTemplate> value of the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> property, and other small adjustments.  
+ 
+<xref:System.Windows.Controls.Primitives.IItemContainerGenerator.PrepareItemContainer%2A> must be called after the element has been added to the visual tree, so that resource references and inherited properties work correctly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,12 +238,12 @@
         <returns>An <see cref="T:System.IDisposable" /> object that tracks the lifetime of the generation process.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A> must be called before <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext%2A> is called.  
-  
- <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A> sets <xref:System.Windows.Controls.ItemContainerGenerator.Status%2A> to <xref:System.Windows.Controls.Primitives.GeneratorStatus>; when the <xref:System.IDisposable> is disposed, the status changes to <xref:System.Windows.Controls.Primitives.GeneratorStatus> or <xref:System.Windows.Controls.Primitives.GeneratorStatus>, as appropriate.  
-  
+<xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A> must be called before <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext%2A> is called.  
+ 
+<xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A> sets <xref:System.Windows.Controls.ItemContainerGenerator.Status%2A> to <xref:System.Windows.Controls.Primitives.GeneratorStatus>; when the <xref:System.IDisposable> is disposed, the status changes to <xref:System.Windows.Controls.Primitives.GeneratorStatus> or <xref:System.Windows.Controls.Primitives.GeneratorStatus>, as appropriate.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -273,10 +273,10 @@
         <returns>An <see cref="T:System.IDisposable" /> object that tracks the lifetime of the generation process.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A>.  
-  
+See <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,17 +19,17 @@
     <summary>Represents the <see langword="list" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). This class can be used to define a <see langword="simpleType" /> element as a list of values of a specified data type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a data type is derived from a list data type, the following constraining facets can be used: `length`, `maxLength`, `minLength`, `enumeration`, `pattern`, and `whiteSpace`.  
+When a data type is derived from a list data type, the following constraining facets can be used: `length`, `maxLength`, `minLength`, `enumeration`, `pattern`, and `whiteSpace`.  
+ 
+For each `length`, `maxLength`, and `minLength`, the unit of length is measured in number of list items. The value of `whiteSpace` is fixed to the `collapse` value.  
+ 
   
- For each `length`, `maxLength`, and `minLength`, the unit of length is measured in number of list items. The value of `whiteSpace` is fixed to the `collapse` value.  
-  
-   
-  
+ 
 ## Examples  
- See <xref:System.Xml.Schema.XmlSchemaSimpleType> for an example using this class.  
-  
+See <xref:System.Xml.Schema.XmlSchemaSimpleType> for an example using this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,10 +81,10 @@
         <value>The <see cref="T:System.Xml.Schema.XmlSchemaSimpleType" /> representing the type of the <see langword="simpleType" /> element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is a post-schema-compilation-infoset property.  
-  
+This property is a post-schema-compilation-infoset property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,10 +116,10 @@
         <value>The item type for the simple type element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base value must be a QName. The use of <xref:System.Xml.Schema.XmlSchemaSimpleTypeList.ItemTypeName%2A> and `ItemType` are mutually exclusive.  
-  
+The base value must be a QName. The use of <xref:System.Xml.Schema.XmlSchemaSimpleTypeList.ItemTypeName%2A> and `ItemType` are mutually exclusive.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,10 +151,10 @@
         <value>The type name of the simple type list.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The simple type list value must be a QName. The use of `ItemTypeName` and <xref:System.Xml.Schema.XmlSchemaSimpleTypeList.ItemType%2A> are mutually exclusive.  
-  
+The simple type list value must be a QName. The use of `ItemTypeName` and <xref:System.Xml.Schema.XmlSchemaSimpleTypeList.ItemType%2A> are mutually exclusive.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,32 +14,32 @@
     <summary>The <see cref="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding" /> class maps Microsoft Message Queuing (MSMQ) messages to [!INCLUDE[indigo1](~/includes/indigo1-md.md)] messages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This binding can be used to enable [!INCLUDE[indigo2](~/includes/indigo2-md.md)] applications to send and receive messages to and from existing MSMQ applications that use COM, native C++ APIs or the types defined in the <xref:System.Messaging> namespace.  
+This binding can be used to enable [!INCLUDE[indigo2](~/includes/indigo2-md.md)] applications to send and receive messages to and from existing MSMQ applications that use COM, native C++ APIs or the types defined in the <xref:System.Messaging> namespace.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following configuration file snippet illustrates how to configure the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> binding on the client:  
-  
-  
-  
- The following configuration file snippet illustrates how to configure the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> binding on the service:  
-  
- [!code-csharp[S_MSMQToWCF#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_msmqtowcf/cs/service.cs#1)]
- [!code-vb[S_MSMQToWCF#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_msmqtowcf/vb/service.vb#1)]  
-  
- The following code illustrates how to use the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> binding on the service programmatically:  
-  
- [!code-csharp[S_MSMQToWCF#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_msmqtowcf/cs/service.cs#2)]
- [!code-vb[S_MSMQToWCF#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_msmqtowcf/vb/service.vb#2)]  
-  
- The following code illustrates how to use the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> binding on the client programmatically:  
-  
- [!code-csharp[S_WCFToMsmq#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_wcftomsmq/cs/snippets.cs#2)]
- [!code-vb[S_WCFToMsmq#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_wcftomsmq/vb/snippets.vb#2)]  
-  
+The following configuration file snippet illustrates how to configure the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> binding on the client:  
+ 
+ 
+ 
+The following configuration file snippet illustrates how to configure the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> binding on the service:  
+ 
+[!code-csharp[S_MSMQToWCF#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_msmqtowcf/cs/service.cs#1)]
+[!code-vb[S_MSMQToWCF#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_msmqtowcf/vb/service.vb#1)]  
+ 
+The following code illustrates how to use the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> binding on the service programmatically:  
+ 
+[!code-csharp[S_MSMQToWCF#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_msmqtowcf/cs/service.cs#2)]
+[!code-vb[S_MSMQToWCF#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_msmqtowcf/vb/service.vb#2)]  
+ 
+The following code illustrates how to use the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> binding on the client programmatically:  
+ 
+[!code-csharp[S_WCFToMsmq#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_wcftomsmq/cs/snippets.cs#2)]
+[!code-vb[S_WCFToMsmq#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_wcftomsmq/vb/snippets.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,18 +76,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding" /> class by using the specified <see cref="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enables you to instantiate a new instance of the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> and pass in a security mode.  
+This method enables you to instantiate a new instance of the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> and pass in a security mode.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code illustrates how to instantiate an instance of the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> binding, specifying the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode>:  
-  
- [!code-csharp[S_WCFToMsmq#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_wcftomsmq/cs/snippets.cs#5)]
- [!code-vb[S_WCFToMsmq#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_wcftomsmq/vb/snippets.vb#5)]  
-  
+The following code illustrates how to instantiate an instance of the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> binding, specifying the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode>:  
+ 
+[!code-csharp[S_WCFToMsmq#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_wcftomsmq/cs/snippets.cs#5)]
+[!code-vb[S_WCFToMsmq#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_wcftomsmq/vb/snippets.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not within the range of <see cref="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode" /> values.</exception>
@@ -110,18 +110,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding" /> class from the settings of a specified configuration binding element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method allows you to place the binding settings in a configuration file but add the actual binding in code.  
+This method allows you to place the binding settings in a configuration file but add the actual binding in code.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to create an instance of the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> binding and initialize it by passing in the name of the binding element:  
-  
- [!code-csharp[S_WCFToMsmq#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_wcftomsmq/cs/snippets.cs#3)]
- [!code-vb[S_WCFToMsmq#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_wcftomsmq/vb/snippets.vb#3)]  
-  
+The following code shows how to create an instance of the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> binding and initialize it by passing in the name of the binding element:  
+ 
+[!code-csharp[S_WCFToMsmq#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_wcftomsmq/cs/snippets.cs#3)]
+[!code-vb[S_WCFToMsmq#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_wcftomsmq/vb/snippets.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,10 +162,10 @@
         <value>The <see cref="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity" /> that is associated with this binding.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity> encapsulates Message Queuing (MSMQ) transport security settings.  
-  
+<xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity> encapsulates Message Queuing (MSMQ) transport security settings.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,17 +192,17 @@
         <value>A <see cref="T:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat" /> object that represents the type of serialization to use.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns an enumeration value that specifies how a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] message will be serialized and deserialized. For more information, see <xref:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat>.  
+This property returns an enumeration value that specifies how a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] message will be serialized and deserialized. For more information, see <xref:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code illustrates how to set the serialization format on an instance of the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> class:  
-  
- [!code-csharp[S_WCFToMsmq#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_wcftomsmq/cs/client.cs#4)]  
-  
+The following code illustrates how to set the serialization format on an instance of the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> class:  
+ 
+[!code-csharp[S_WCFToMsmq#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_wcftomsmq/cs/client.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

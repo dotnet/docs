@@ -14,15 +14,15 @@
     <summary>The <see cref="T:System.DirectoryServices.SearchResult" /> class encapsulates a node in the Active Directory Domain Services hierarchy that is returned during a search through <see cref="T:System.DirectoryServices.DirectorySearcher" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of the <xref:System.DirectoryServices.SearchResult> class are very similar to instances of <xref:System.DirectoryServices.DirectoryEntry> class. The crucial difference is that the <xref:System.DirectoryServices.DirectoryEntry> class retrieves its information from the Active Directory Domain Services hierarchy each time a new object is accessed, whereas the data for <xref:System.DirectoryServices.SearchResult> is already available in the <xref:System.DirectoryServices.SearchResultCollection>, where it gets returned from a query that is performed with the <xref:System.DirectoryServices.DirectorySearcher> class. Only those properties that are specified through the <xref:System.DirectoryServices.DirectorySearcher.PropertiesToLoad%2A?displayProperty=fullName> collection in your query will be available from <xref:System.DirectoryServices.SearchResult>.  
+Instances of the <xref:System.DirectoryServices.SearchResult> class are very similar to instances of <xref:System.DirectoryServices.DirectoryEntry> class. The crucial difference is that the <xref:System.DirectoryServices.DirectoryEntry> class retrieves its information from the Active Directory Domain Services hierarchy each time a new object is accessed, whereas the data for <xref:System.DirectoryServices.SearchResult> is already available in the <xref:System.DirectoryServices.SearchResultCollection>, where it gets returned from a query that is performed with the <xref:System.DirectoryServices.DirectorySearcher> class. Only those properties that are specified through the <xref:System.DirectoryServices.DirectorySearcher.PropertiesToLoad%2A?displayProperty=fullName> collection in your query will be available from <xref:System.DirectoryServices.SearchResult>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the desired path and uses the <xref:System.DirectoryServices.DirectorySearcher.FindOne%2A> method to initiate the search. After performing the search, the example uses the  <xref:System.DirectoryServices.SearchResult.GetDirectoryEntry%2A> method to retrieve the live directory entry identified in the search results.  
-  
+The following example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the desired path and uses the <xref:System.DirectoryServices.DirectorySearcher.FindOne%2A> method to initiate the search. After performing the search, the example uses the  <xref:System.DirectoryServices.SearchResult.GetDirectoryEntry%2A> method to retrieve the live directory entry identified in the search results.  
+ 
 ```vb  
 Imports System  
 Imports System.DirectoryServices  
@@ -76,7 +76,7 @@ Public Class MySample
    End Sub 'Main  
 End Class 'MySample  
 ```  
-  
+ 
 ```csharp  
 using System;  
 using System.DirectoryServices;  
@@ -144,7 +144,7 @@ public class MySample
   
 }  
 ```  
-  
+ 
 ```cpp#  
 #using <mscorlib.dll>  
 #using <System.dll>  
@@ -213,7 +213,7 @@ int main()
 }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
@@ -239,18 +239,18 @@ int main()
         <returns>The <see cref="T:System.DirectoryServices.DirectoryEntry" /> that corresponds to the <see cref="T:System.DirectoryServices.SearchResult" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.DirectoryServices.SearchResult.GetDirectoryEntry%2A> when you want to look at the live entry instead of the entry that was returned through <xref:System.DirectoryServices.DirectorySearcher>, or when you want to invoke a method on the object that was returned.  
-  
+Use <xref:System.DirectoryServices.SearchResult.GetDirectoryEntry%2A> when you want to look at the live entry instead of the entry that was returned through <xref:System.DirectoryServices.DirectorySearcher>, or when you want to invoke a method on the object that was returned.  
+ 
 > [!NOTE]
 >  Calling <xref:System.DirectoryServices.SearchResult.GetDirectoryEntry%2A> on each <xref:System.DirectoryServices.SearchResult> returned through <xref:System.DirectoryServices.DirectorySearcher> can be slow.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is an excerpt of the example in <xref:System.DirectoryServices.SearchResult>. The original example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the desired path and uses the <xref:System.DirectoryServices.DirectorySearcher.FindOne%2A> method to initiate the search. After performing the search, the example uses the <xref:System.DirectoryServices.SearchResult.GetDirectoryEntry%2A> method to retrieve the live directory entry that is identified in the search results.  
-  
+The following example is an excerpt of the example in <xref:System.DirectoryServices.SearchResult>. The original example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the desired path and uses the <xref:System.DirectoryServices.DirectorySearcher.FindOne%2A> method to initiate the search. After performing the search, the example uses the <xref:System.DirectoryServices.SearchResult.GetDirectoryEntry%2A> method to retrieve the live directory entry that is identified in the search results.  
+ 
 ```vb  
 ' Get the 'DirectoryEntry' that corresponds to 'mySearchResult'.  
 Dim myDirectoryEntry As DirectoryEntry = mySearchResult.GetDirectoryEntry()  
@@ -260,7 +260,7 @@ Console.WriteLine(ControlChars.Newline + "The name of the 'myDirectoryEntry' " +
             ControlChars.Newline, myDirectoryEntry.Name)  
   
 ```  
-  
+ 
 ```csharp  
 // Get the 'DirectoryEntry' that corresponds to 'mySearchResult'.  
 DirectoryEntry myDirectoryEntry =   
@@ -271,7 +271,7 @@ Console.WriteLine("\nThe name of the 'myDirectoryEntry' " +
                   myDirectoryEntry.Name);  
   
 ```  
-  
+ 
 ```cpp#  
 // Get the 'DirectoryEntry' that corresponds to 'mySearchResult'.  
 DirectoryEntry^ myDirectoryEntry = mySearchResult->GetDirectoryEntry();  
@@ -281,7 +281,7 @@ Console::WriteLine(
     "'mySearchResult' search result is : {0}\n"),  
     myDirectoryEntry->Name);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -303,36 +303,36 @@ Console::WriteLine(
         <value>The path of this <see cref="T:System.DirectoryServices.SearchResult" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DirectoryServices.SearchResult.Path%2A> property uniquely identifies this entry in the Active Directory Domain Services hierarchy. The entry can always be retrieved using this path.  
+The <xref:System.DirectoryServices.SearchResult.Path%2A> property uniquely identifies this entry in the Active Directory Domain Services hierarchy. The entry can always be retrieved using this path.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is an excerpt of the example in <xref:System.DirectoryServices.SearchResult>. The original example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the desired path and uses the <xref:System.DirectoryServices.DirectorySearcher.FindOne%2A> method to initiate the search. After performing the search, the example uses the <xref:System.DirectoryServices.SearchResult.GetDirectoryEntry%2A> method to retrieve the live directory entry that is identified in the search results.  
-  
- This example shows how to parse the <xref:System.DirectoryServices.SearchResult.Path%2A> property from the search result.  
-  
+The following example is an excerpt of the example in <xref:System.DirectoryServices.SearchResult>. The original example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the desired path and uses the <xref:System.DirectoryServices.DirectorySearcher.FindOne%2A> method to initiate the search. After performing the search, the example uses the <xref:System.DirectoryServices.SearchResult.GetDirectoryEntry%2A> method to retrieve the live directory entry that is identified in the search results.  
+ 
+This example shows how to parse the <xref:System.DirectoryServices.SearchResult.Path%2A> property from the search result.  
+ 
 ```vb  
 Dim mySearchResultPath As String = mySearchResult.Path  
 Console.WriteLine("The path for the 'mySearchResult' search result is : {0}" + _  
                   ControlChars.Newline, mySearchResultPath)  
   
 ```  
-  
+ 
 ```csharp  
 string mySearchResultPath = mySearchResult.Path;  
 Console.WriteLine("The path for the 'mySearchResult' search "  
                   + "result is : {0}\n", mySearchResultPath);  
 ```  
-  
+ 
 ```cpp#  
 String^ mySearchResultPath = mySearchResult->Path;  
 Console::WriteLine("The path for the 'mySearchResult' search result is : {0}\n", mySearchResultPath);  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -354,17 +354,17 @@ Console::WriteLine("The path for the 'mySearchResult' search result is : {0}\n",
         <value>A <see cref="T:System.DirectoryServices.ResultPropertyCollection" /> of properties set on this object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection only contains properties that were explicitly requested through <xref:System.DirectoryServices.DirectorySearcher.PropertiesToLoad%2A?displayProperty=fullName>.  
+This collection only contains properties that were explicitly requested through <xref:System.DirectoryServices.DirectorySearcher.PropertiesToLoad%2A?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is an excerpt of the example in <xref:System.DirectoryServices.SearchResult>. The original example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the desired path and uses the <xref:System.DirectoryServices.DirectorySearcher.FindOne%2A> method to initiate the search. After performing the search, the example uses the <xref:System.DirectoryServices.SearchResult.GetDirectoryEntry%2A> method to retrieve the live directory entry that is identified in the search results.  
-  
- In this example, the search result is put into a <xref:System.DirectoryServices.ResultPropertyCollection>. Then, each property is displayed to the console window.  
-  
+The following example is an excerpt of the example in <xref:System.DirectoryServices.SearchResult>. The original example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the desired path and uses the <xref:System.DirectoryServices.DirectorySearcher.FindOne%2A> method to initiate the search. After performing the search, the example uses the <xref:System.DirectoryServices.SearchResult.GetDirectoryEntry%2A> method to retrieve the live directory entry that is identified in the search results.  
+ 
+In this example, the search result is put into a <xref:System.DirectoryServices.ResultPropertyCollection>. Then, each property is displayed to the console window.  
+ 
 ```vb  
 ' Get the properties for 'mySearchResult'.  
 Dim myResultPropColl As ResultPropertyCollection  
@@ -381,7 +381,7 @@ For Each myKey In  myResultPropColl.PropertyNames
 Next myKey  
   
 ```  
-  
+ 
 ```csharp  
 // Get the properties for 'mySearchResult'.  
 ResultPropertyCollection myResultPropColl;  
@@ -399,7 +399,7 @@ foreach( string myKey in myResultPropColl.PropertyNames)
 }  
   
 ```  
-  
+ 
 ```cpp#  
 // Get the properties for 'mySearchResult'.  
 ResultPropertyCollection^ myResultPropColl = mySearchResult->Properties;  
@@ -417,7 +417,7 @@ while (myEnum->MoveNext())
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

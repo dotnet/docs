@@ -13,15 +13,15 @@
     <summary>Contains a list of possible states for the audio input to a speech recognition engine.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can obtain the audio input state of the speech recognition engine with the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioState%2A?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.AudioState%2A?displayProperty=fullName> properties. The <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.AudioStateChanged?displayProperty=fullName> events are raised when the audio input state of a speech recognition engine changes.  
+You can obtain the audio input state of the speech recognition engine with the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioState%2A?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.AudioState%2A?displayProperty=fullName> properties. The <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.AudioStateChanged?displayProperty=fullName> events are raised when the audio input state of a speech recognition engine changes.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates an event handler that handles the changing audio state of a speech recognizer.  
-  
+The following example demonstrates an event handler that handles the changing audio state of a speech recognizer.  
+ 
 ```csharp  
   
 private SpeechRecognitionEngine sre;  
@@ -46,7 +46,7 @@ private void Initialize()
 }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

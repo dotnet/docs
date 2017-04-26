@@ -18,10 +18,10 @@
     <summary>Represents a collection of binding parameters that store information used by binding elements to build factories.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.BindingParameterCollection> is a collection of objects that is used when a custom binding needs to provide additional parameters to another binding. For example, the <xref:System.ServiceModel.Channels.SecurityBindingElement> looks for <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> in the <xref:System.ServiceModel.Channels.BindingParameterCollection> to determine Security auditing settings.  
-  
+The <xref:System.ServiceModel.Channels.BindingParameterCollection> is a collection of objects that is used when a custom binding needs to provide additional parameters to another binding. For example, the <xref:System.ServiceModel.Channels.SecurityBindingElement> looks for <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> in the <xref:System.ServiceModel.Channels.BindingParameterCollection> to determine Security auditing settings.  
+ 
  ]]></format>
     </remarks>
   </Docs>

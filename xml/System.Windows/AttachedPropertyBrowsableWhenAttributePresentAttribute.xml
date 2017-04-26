@@ -19,14 +19,14 @@
     <summary>Specifies that an attached property is only browsable on an element that also has another specific  [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] applied to its class definition.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The meaning of the term `browsable` as used in descriptions for this [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] is analogous to the descriptions given for <xref:System.ComponentModel.BrowsableAttribute>, but the browsable state for an attached property is particularly relevant to property information for [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], because an attached property is primarily a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] concept.  
-  
- This [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] should only be applied on the get accessor of attached property definitions. Do not apply this [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] to the set accessor. Although intuitively it is the set operation that is being made browsable for [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] on relevant elements, it is the presence and characteristics of the get accessor on the property defining element that controls the true behavior.  
-  
- For general information on declaring attached properties, see [Attached Properties Overview](~/docs/framework/wpf/advanced/attached-properties-overview.md).  
-  
+The meaning of the term `browsable` as used in descriptions for this [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] is analogous to the descriptions given for <xref:System.ComponentModel.BrowsableAttribute>, but the browsable state for an attached property is particularly relevant to property information for [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], because an attached property is primarily a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] concept.  
+ 
+This [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] should only be applied on the get accessor of attached property definitions. Do not apply this [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] to the set accessor. Although intuitively it is the set operation that is being made browsable for [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] on relevant elements, it is the presence and characteristics of the get accessor on the property defining element that controls the true behavior.  
+ 
+For general information on declaring attached properties, see [Attached Properties Overview](~/docs/framework/wpf/advanced/attached-properties-overview.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
         <value>The  [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute.AttributeType%2A> value can only be set through the `attributeType` parameter of the <xref:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute> [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] constructor.  
-  
+The <xref:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute.AttributeType%2A> value can only be set through the `attributeType` parameter of the <xref:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute> [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,10 +96,10 @@
           <see langword="true" /> if the specified <see cref="T:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute" /> is equal to the current <see cref="T:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation supports value equality of the one possible settable value exposed by this attribute, <xref:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute.AttributeType%2A>.  
-  
+This implementation supports value equality of the one possible settable value exposed by this attribute, <xref:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute.AttributeType%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,10 +122,10 @@
         <returns>An unsigned 32-bit integer value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation supports multiple possible hash values based on the one possible settable value exposed by this attribute, <xref:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute.AttributeType%2A>.  
-  
+This implementation supports multiple possible hash values based on the one possible settable value exposed by this attribute, <xref:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute.AttributeType%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

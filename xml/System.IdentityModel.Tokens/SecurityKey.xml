@@ -14,10 +14,10 @@
     <summary>Base class for security keys.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Security keys are used for cryptographic operations, such as generating digital signatures and encrypting XML data.  
-  
+Security keys are used for cryptographic operations, such as generating digital signatures and encrypting XML data.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <returns>An array of <see cref="T:System.Byte" /> that contains the decrypted key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,10 +91,10 @@
         <returns>An array of <see cref="T:System.Byte" /> that contains the encrypted key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +121,10 @@
           <see langword="true" /> when the specified algorithm uses asymmetric keys; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,10 +174,10 @@
           <see langword="true" /> when the specified algorithm uses symmetric keys; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>

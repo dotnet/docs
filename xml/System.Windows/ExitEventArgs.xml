@@ -32,15 +32,15 @@
         <value>The exit code that an application returns to the operating system when the application exits.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An application typically returns an exit code to the operating system to indicate whether an application exited successfully or not. An application exit code value of **0** (the default) is commonly used to indicate success. However, you are free to return exit code values that are appropriate to your application.  
-  
- You can specify an exit code by handling the <xref:System.Windows.Application.Exit> event and setting <xref:System.Windows.ExitEventArgs.ApplicationExitCode%2A> with an appropriate value.  
-  
+An application typically returns an exit code to the operating system to indicate whether an application exited successfully or not. An application exit code value of **0** (the default) is commonly used to indicate success. However, you are free to return exit code values that are appropriate to your application.  
+ 
+You can specify an exit code by handling the <xref:System.Windows.Application.Exit> event and setting <xref:System.Windows.ExitEventArgs.ApplicationExitCode%2A> with an appropriate value.  
+ 
 > [!NOTE]
 >  You can also specify an exit code by calling <xref:System.Windows.Application.Shutdown%2A> method. If you do, the value of <xref:System.Windows.ExitEventArgs.ApplicationExitCode%2A> is the value of the exit code that you pass to <xref:System.Windows.Application.Shutdown%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

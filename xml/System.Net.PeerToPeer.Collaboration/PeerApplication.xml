@@ -24,18 +24,18 @@
     <summary>Represents an application that is available for use with the Peer Collaboration infrastructure.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An application is a set of software or software features available to a peer from an endpoint. Commonly, this refers to network-enabled software packages such as games or other collaborative applications. A <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> defines the set of software applications or components available for use with the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration> network. This network enables infrastructure participants to initiate usage of this application. They may initiate a collaboration session using the application identified by this class.  
-  
- After constructing an instance of this class and setting the appropriate properties, this object may be used in <xref:System.Net.PeerToPeer> collaboration sessions.  Its use is accomplished by passing it to the peer collaboration <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.RegisterApplication%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.UnregisterApplication%2A> methods, which will enable or disable it.  
-  
- The globally unique <xref:System.Net.PeerToPeer.Collaboration.PeerApplication.Id%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType> properties of this instance must be set before the application can successfully be registered.  
-  
- After registering an application with the Peer Collaboration infrastructure, the registration information persists in the registry.  This makes the application available to collaboration applications even after the program which registered the application has exited.  
-  
- Changing the properties on an application instance after it has been registered has no effect on the registration. To update the registration, the application must be deregistered and then registered again with the new information.  
-  
+An application is a set of software or software features available to a peer from an endpoint. Commonly, this refers to network-enabled software packages such as games or other collaborative applications. A <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> defines the set of software applications or components available for use with the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration> network. This network enables infrastructure participants to initiate usage of this application. They may initiate a collaboration session using the application identified by this class.  
+ 
+After constructing an instance of this class and setting the appropriate properties, this object may be used in <xref:System.Net.PeerToPeer> collaboration sessions.  Its use is accomplished by passing it to the peer collaboration <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.RegisterApplication%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.UnregisterApplication%2A> methods, which will enable or disable it.  
+ 
+The globally unique <xref:System.Net.PeerToPeer.Collaboration.PeerApplication.Id%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType> properties of this instance must be set before the application can successfully be registered.  
+ 
+After registering an application with the Peer Collaboration infrastructure, the registration information persists in the registry.  This makes the application available to collaboration applications even after the program which registered the application has exited.  
+ 
+Changing the properties on an application instance after it has been registered has no effect on the registration. To update the registration, the application must be deregistered and then registered again with the new information.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <summary>Initializes a new default instance of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The globally unique <xref:System.Net.PeerToPeer.Collaboration.PeerApplication.Id%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType> properties of this instance must be set before the application can successfully be registered.  
-  
+The globally unique <xref:System.Net.PeerToPeer.Collaboration.PeerApplication.Id%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType> properties of this instance must be set before the application can successfully be registered.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,12 +81,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> type with the data required for serialization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns a <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> object with a name fully qualified by the <xref:System.Net.PeerToPeer.PeerName> object within it.  
-  
- The globally unique <xref:System.Net.PeerToPeer.Collaboration.PeerApplication.Id%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType> properties of this instance must be set before the application can successfully be registered.  
-  
+Returns a <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> object with a name fully qualified by the <xref:System.Net.PeerToPeer.PeerName> object within it.  
+ 
+The globally unique <xref:System.Net.PeerToPeer.Collaboration.PeerApplication.Id%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType> properties of this instance must be set before the application can successfully be registered.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
         <summary>Initializes a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> instance with the supplied application ID, description, scope, and data elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The globally unique <xref:System.Net.PeerToPeer.Collaboration.PeerApplication.Id%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType> properties of this instance must be set before the application can successfully be registered.  
-  
+The globally unique <xref:System.Net.PeerToPeer.Collaboration.PeerApplication.Id%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType> properties of this instance must be set before the application can successfully be registered.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">-   Length of the binary data object cannot be less than one or greater than 16k.  
@@ -153,10 +153,10 @@
         <summary>This event is raised whenever a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> is added, updated or deleted by a remote peer on a subscribed endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use of this event requires a value of <xref:System.Security.Permissions.PermissionState> in the <xref:System.Security.Permissions.PermissionState> of the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission> object that was created when the peer collaboration session began.  
-  
+Use of this event requires a value of <xref:System.Security.Permissions.PermissionState> in the <xref:System.Security.Permissions.PermissionState> of the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission> object that was created when the peer collaboration session began.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
@@ -199,10 +199,10 @@
         <value>Array of <see cref="T:System.Byte" /> data that contain a binary object to associate with the peer application. This is commonly a small image or XML blob.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This data is free form and is provided by the hosting peer. The maximum amount of data that can be provided is 4,096 bytes. This data is not part of a <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> invitation, but rather allows additional data to be associated with the application on the local peer.  
-  
+This data is free form and is provided by the hosting peer. The maximum amount of data that can be provided is 4,096 bytes. This data is not part of a <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> invitation, but rather allows additional data to be associated with the application on the local peer.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The size of this binary data object is either less than 0 or greater than 4,096 bytes.</exception>
@@ -227,10 +227,10 @@
           <see cref="T:System.String" /> value that describes the application. Unless specified, the default value for this property is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This data is not part of a <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> invitation. However, it is displayed on the user interface when a <xref:System.Net.PeerToPeer.Collaboration.Peer> receives an invitation for the application.  
-  
+This data is not part of a <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> invitation. However, it is displayed on the user interface when a <xref:System.Net.PeerToPeer.Collaboration.Peer> receives an invitation for the application.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
@@ -306,10 +306,10 @@
         <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> instance provided has matching data, else <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="other" /> is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No normalizations are performed on the strings prior to comparison.  All normalization should have been completed while or before constructing the PeerApplication objects.  
-  
+No normalizations are performed on the strings prior to comparison.  All normalization should have been completed while or before constructing the PeerApplication objects.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
@@ -423,10 +423,10 @@
           <see cref="T:System.Guid" /> associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> instance. Unless specified, the default value for this property is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `Null` items are not allowed.  
-  
+`Null` items are not allowed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
@@ -452,10 +452,10 @@
         <summary>Raises the <see cref="E:System.Net.PeerToPeer.Collaboration.PeerApplication.ApplicationChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that inherit from this class can override this delegate to perform additional tasks when the event occurs.  
-  
+Classes that inherit from this class can override this delegate to perform additional tasks when the event occurs.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -478,10 +478,10 @@
           <see cref="T:System.String" /> that represents the file path. Unless explicitly specified, the default value for this property is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `Null` or <xref:System.String> values are not allowed.  
-  
+`Null` or <xref:System.String> values are not allowed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
@@ -535,12 +535,12 @@
         <value>Object that implements the <see cref="T:System.ComponentModel.ISynchronizeInvoke" /> interface and is used by instances of this type for event handler synchronization on the thread that created it.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default set value for this property is `null`, indicating that all event handlers are called on a system thread pool thread.  
-  
- This property is typically set to a UI element such as a <xref:System.Windows.Forms.Form> instance.  
-  
+The default set value for this property is `null`, indicating that all event handlers are called on a system thread pool thread.  
+ 
+This property is typically set to a UI element such as a <xref:System.Windows.Forms.Form> instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The calling object has been disposed.</exception>
@@ -592,10 +592,10 @@
         <returns>A string that contains the <see cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Id" /> and <see cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Description" /> of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> instance, separated by a space.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method inherits the default signature and behavior from <xref:System.Object>.  
-  
+This method inherits the default signature and behavior from <xref:System.Object>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
@@ -610,10 +610,10 @@
         <summary>Initializes a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The globally unique <xref:System.Net.PeerToPeer.Collaboration.PeerApplication.Id%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType> properties of this instance must be set before the application can successfully be registered.  
-  
+The globally unique <xref:System.Net.PeerToPeer.Collaboration.PeerApplication.Id%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType> properties of this instance must be set before the application can successfully be registered.  
+ 
  ]]></format>
         </remarks>
       </Docs>

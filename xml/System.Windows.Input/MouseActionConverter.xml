@@ -14,10 +14,10 @@
     <summary>Converts a <see cref="T:System.Windows.Input.MouseAction" /> object to and from other types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.MouseActionConverter> class only converts an instance of <xref:System.Windows.Input.MouseAction> to and from a <xref:System.String>.  
-  
+The <xref:System.Windows.Input.MouseActionConverter> class only converts an instance of <xref:System.Windows.Input.MouseAction> to and from a <xref:System.String>.  
+ 
 <a name="xamlTextUsage_MouseActionConverter"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -144,10 +144,10 @@
         <returns>The converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `destinationType` must be <xref:System.String>.  
-  
+`destinationType` must be <xref:System.String>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

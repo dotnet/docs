@@ -19,24 +19,24 @@
     <summary>Represents a set of proposed changes to a running workflow instance.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+ 
+All proposed changes to a running workflow instance must be made using a <xref:System.Workflow.ComponentModel.WorkflowChanges> object.  
+ 
+When a <xref:System.Workflow.ComponentModel.WorkflowChanges> object is constructed in application code (outside the workflow instance), the <xref:System.Workflow.ComponentModel.Activity> object that is passed to the constructor must be the object that is returned by the <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowDefinition%2A> method of the <xref:System.Workflow.Runtime.WorkflowInstance> class.  
+ 
   
- All proposed changes to a running workflow instance must be made using a <xref:System.Workflow.ComponentModel.WorkflowChanges> object.  
-  
- When a <xref:System.Workflow.ComponentModel.WorkflowChanges> object is constructed in application code (outside the workflow instance), the <xref:System.Workflow.ComponentModel.Activity> object that is passed to the constructor must be the object that is returned by the <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowDefinition%2A> method of the <xref:System.Workflow.Runtime.WorkflowInstance> class.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates creating a new instance of a <xref:System.Workflow.ComponentModel.WorkflowChanges> object. This example is from the Ordering State Machine SDK sample. For more information, see [Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
-  
- [!code-csharp[WF_Samples#87](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#87)]
- [!code-vb[WF_Samples#87](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#87)]  
-  
+The following example demonstrates creating a new instance of a <xref:System.Workflow.ComponentModel.WorkflowChanges> object. This example is from the Ordering State Machine SDK sample. For more information, see [Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
+ 
+[!code-csharp[WF_Samples#87](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#87)]
+[!code-vb[WF_Samples#87](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#87)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,14 +81,14 @@
         <summary>Specifies the condition that must be satisfied to apply the <see cref="T:System.Workflow.ComponentModel.WorkflowChanges" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be set on a root activity to disallow dynamic updates to the running workflow.  
-  
- When the property is set on the root activity, and condition evaluates to `false`, the dynamic updates are disallowed on the workflow instance. If the condition evaluates to `true`, or the condition is not set, the dynamic updates are allowed.  
-  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+This property can be set on a root activity to disallow dynamic updates to the running workflow.  
+ 
+When the property is set on the root activity, and condition evaluates to `false`, the dynamic updates are disallowed on the workflow instance. If the condition evaluates to `true`, or the condition is not set, the dynamic updates are allowed.  
+ 
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,12 +114,12 @@
         <returns>A condition property type, such as <see cref="T:System.Workflow.ComponentModel.ActivityCondition" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.ComponentModel.WorkflowChanges.ConditionProperty> is an attached dependency property, that is, it is declared and used by one type and set on another. Therefore, there must be static `get` and `set` methods on the type declaring the property.  
-  
- Helper method for getting <xref:System.Workflow.ComponentModel.WorkflowChanges.ConditionProperty>.  
-  
+The <xref:System.Workflow.ComponentModel.WorkflowChanges.ConditionProperty> is an attached dependency property, that is, it is declared and used by one type and set on another. Therefore, there must be static `get` and `set` methods on the type declaring the property.  
+ 
+Helper method for getting <xref:System.Workflow.ComponentModel.WorkflowChanges.ConditionProperty>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -150,12 +150,12 @@
         <summary>Sets the condition property on a dependency object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.ComponentModel.WorkflowChanges.ConditionProperty> is an attached dependency property, that is, it is declared and used by one type and set on another. Therefore, there must be static `get` and `set` methods on the type declaring the property.  
-  
- Helper method for setting <xref:System.Workflow.ComponentModel.WorkflowChanges.ConditionProperty>.  
-  
+The <xref:System.Workflow.ComponentModel.WorkflowChanges.ConditionProperty> is an attached dependency property, that is, it is declared and used by one type and set on another. Therefore, there must be static `get` and `set` methods on the type declaring the property.  
+ 
+Helper method for setting <xref:System.Workflow.ComponentModel.WorkflowChanges.ConditionProperty>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,13 +177,13 @@
         <value>A <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> that contains the cloned root activity for the workflow.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates adding activities to the TransientWorkflow property. This example is from the Ordering State Machine SDK sample. For more information, see [Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
-  
- [!code-csharp[WF_Samples#88](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#88)]
- [!code-vb[WF_Samples#88](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#88)]  
-  
+The following example demonstrates adding activities to the TransientWorkflow property. This example is from the Ordering State Machine SDK sample. For more information, see [Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
+ 
+[!code-csharp[WF_Samples#88](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#88)]
+[!code-vb[WF_Samples#88](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#88)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

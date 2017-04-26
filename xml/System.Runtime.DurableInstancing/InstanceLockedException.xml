@@ -92,10 +92,10 @@
         <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceLockedException" /> class by using the error message and the inner exception information passed as parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a result of a previous exception typically includes a reference to the previous exception in the <xref:System.ServiceModel.ExceptionDetail.InnerException%2A> property.  
-  
+An exception that is thrown as a result of a previous exception typically includes a reference to the previous exception in the <xref:System.ServiceModel.ExceptionDetail.InnerException%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

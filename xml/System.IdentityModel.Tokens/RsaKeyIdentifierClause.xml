@@ -14,10 +14,10 @@
     <summary>Represents a key identifier clause that identifies a <see cref="T:System.IdentityModel.Tokens.RsaSecurityToken" /> security token.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, the <xref:System.IdentityModel.Tokens.RsaKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens. Attached references refer to security tokens that are contained within the security header of a SOAP message and unattached references are security tokens that are not included within the security header in the SOAP message. These references typically affirm the authenticity of the issued security token. Use the <xref:System.IdentityModel.Tokens.RsaKeyIdentifierClause> class to reference a <xref:System.IdentityModel.Tokens.RsaSecurityToken> security token and to access the RSA algorithm. To access the RSA algorithm, get the value of the <xref:System.IdentityModel.Tokens.RsaKeyIdentifierClause.Rsa%2A> property.  
-  
+Typically, the <xref:System.IdentityModel.Tokens.RsaKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens. Attached references refer to security tokens that are contained within the security header of a SOAP message and unattached references are security tokens that are not included within the security header in the SOAP message. These references typically affirm the authenticity of the issued security token. Use the <xref:System.IdentityModel.Tokens.RsaKeyIdentifierClause> class to reference a <xref:System.IdentityModel.Tokens.RsaSecurityToken> security token and to access the RSA algorithm. To access the RSA algorithm, get the value of the <xref:System.IdentityModel.Tokens.RsaKeyIdentifierClause.Rsa%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
           <see langword="true" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To create the key, call the <xref:System.IdentityModel.Tokens.RsaKeyIdentifierClause.CreateKey%2A> method.  
-  
+To create the key, call the <xref:System.IdentityModel.Tokens.RsaKeyIdentifierClause.CreateKey%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -207,10 +207,10 @@
         <returns>A <see cref="T:System.String" /> that represents the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.RsaKeyIdentifierClause.ToString%2A> method returns a string that contains the `Modulus` and `Exponent` values of the RSA algorithm. The `Modulus` and `Exponent` values are the values returned by the <xref:System.IdentityModel.Tokens.RsaKeyIdentifierClause.GetModulus%2A> and <xref:System.IdentityModel.Tokens.RsaKeyIdentifierClause.GetExponent%2A> methods that are Base64 encoded.  
-  
+The <xref:System.IdentityModel.Tokens.RsaKeyIdentifierClause.ToString%2A> method returns a string that contains the `Modulus` and `Exponent` values of the RSA algorithm. The `Modulus` and `Exponent` values are the values returned by the <xref:System.IdentityModel.Tokens.RsaKeyIdentifierClause.GetModulus%2A> and <xref:System.IdentityModel.Tokens.RsaKeyIdentifierClause.GetExponent%2A> methods that are Base64 encoded.  
+ 
  ]]></format>
         </remarks>
       </Docs>

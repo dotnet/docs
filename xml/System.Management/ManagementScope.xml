@@ -23,13 +23,13 @@
     <summary>Represents a scope (namespace) for management operations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
-  
- [!code-csharp[wminet_ManagementScope#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope/cs/ManagementScope.cs#1)]
- [!code-vb[wminet_ManagementScope#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope/vb/ManagementScope.vb#1)]  
-  
+The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
+ 
+[!code-csharp[wminet_ManagementScope#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope/cs/ManagementScope.cs#1)]
+[!code-vb[wminet_ManagementScope#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope/vb/ManagementScope.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,13 +48,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementScope" /> class, with default values. This is the default constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the object does not have any properties set before connection, it is initialized with default values (for example, the local machine and the root\cimv2 namespace).  
-  
+If the object does not have any properties set before connection, it is initialized with default values (for example, the local machine and the root\cimv2 namespace).  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -76,12 +76,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementScope" /> class representing the specified scope path.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,20 +103,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementScope" /> class representing the specified scope path.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
-  
- [!code-csharp[wminet_ManagementScope(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope(S)/cs/ManagementScope(S).cs#1)]
- [!code-vb[wminet_ManagementScope(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope(S)/vb/ManagementScope(S).vb#1)]  
-  
+The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
+ 
+[!code-csharp[wminet_ManagementScope(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope(S)/cs/ManagementScope(S).cs#1)]
+[!code-vb[wminet_ManagementScope(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope(S)/vb/ManagementScope(S).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,12 +140,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementScope" /> class representing the specified scope path, with the specified options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,20 +169,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementScope" /> class representing the specified scope path, with the specified options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
-  
- [!code-csharp[wminet_ManagementScope(S_C)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope(S_C)/cs/ManagementScope(S_C).cs#1)]
- [!code-vb[wminet_ManagementScope(S_C)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope(S_C)/vb/ManagementScope(S_C).vb#1)]  
-  
+The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
+ 
+[!code-csharp[wminet_ManagementScope(S_C)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope(S_C)/cs/ManagementScope(S_C).cs#1)]
+[!code-vb[wminet_ManagementScope(S_C)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope(S_C)/vb/ManagementScope(S_C).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,12 +205,12 @@
         <returns>A new copy of the <see cref="T:System.Management.ManagementScope" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,21 +232,21 @@
         <summary>Connects this <see cref="T:System.Management.ManagementScope" /> to the actual WMI scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called implicitly when the scope is used in an operation that requires it to be connected. Calling it explicitly allows the user to control the time of connection. This method will return within two minutes.  
-  
+This method is called implicitly when the scope is used in an operation that requires it to be connected. Calling it explicitly allows the user to control the time of connection. This method will return within two minutes.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
-  
- [!code-csharp[wminet_ManagementScope_Connect#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope_Connect/cs/ManagementScope_Connect.cs#1)]
- [!code-vb[wminet_ManagementScope_Connect#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope_Connect/vb/ManagementScope_Connect.vb#1)]  
-  
+The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
+ 
+[!code-csharp[wminet_ManagementScope_Connect#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope_Connect/cs/ManagementScope_Connect.cs#1)]
+[!code-vb[wminet_ManagementScope_Connect#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope_Connect/vb/ManagementScope_Connect.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -268,16 +268,16 @@
         <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the scope is currently bound to a WMI server and namespace.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A scope is disconnected after creation until someone explicitly calls <xref:System.Management.ManagementScope.Connect%2A>, or uses the scope for any operation that requires a live connection. Also, the scope is disconnected from the previous connection whenever the identifying properties of the scope are changed.  
-  
+A scope is disconnected after creation until someone explicitly calls <xref:System.Management.ManagementScope.Connect%2A>, or uses the scope for any operation that requires a live connection. Also, the scope is disconnected from the previous connection whenever the identifying properties of the scope are changed.  
+ 
 ## Property Value  
- `true` if a connection is alive (bound to a server and namespace); otherwise, `false`.  
-  
+`true` if a connection is alive (bound to a server and namespace); otherwise, `false`.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,15 +299,15 @@
         <value>Returns a <see cref="T:System.Management.ConnectionOptions" /> that contains the options for making a WMI connection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- The valid <xref:System.Management.ConnectionOptions> containing options for the WMI connection.  
-  
+The valid <xref:System.Management.ConnectionOptions> containing options for the WMI connection.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,15 +329,15 @@
         <value>Returns a <see cref="T:System.Management.ManagementPath" /> containing the path to the scope (namespace).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- A <xref:System.Management.ManagementPath> containing the path to a server and namespace.  
-  
+A <xref:System.Management.ManagementPath> containing the path to a server and namespace.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -360,12 +360,12 @@
         <returns>A new object that is a copy of this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

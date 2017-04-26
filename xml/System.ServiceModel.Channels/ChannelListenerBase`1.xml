@@ -27,10 +27,10 @@
     <summary>Provides a common base implementation for channel listeners on a service to accept channels produced by the client factories.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The channel listeners on a service wait for and then accept the channels created by factories on the client. Once the channel connection is established between client and service, they can communicate by exchanging messages  
-  
+The channel listeners on a service wait for and then accept the channels created by factories on the client. Once the channel connection is established between client and service, they can communicate by exchanging messages  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,10 +49,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelListenerBase`1" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelListenerBase%601.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
-  
+The default constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelListenerBase%601.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -74,10 +74,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelListenerBase`1" /> class with specified default communication timeouts.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.ServiceModel.Channels.ChannelListenerBase%601.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> instead of the default constructor if you want to specify custom values for the open, send, receive, and close operation timeouts instead of using the service model default values.  
-  
+Use <xref:System.ServiceModel.Channels.ChannelListenerBase%601.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> instead of the default constructor if you want to specify custom values for the open, send, receive, and close operation timeouts instead of using the service model default values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,10 +274,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelListenerBase`1" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default <xref:System.ServiceModel.Channels.ChannelListenerBase%601.%23ctor> constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelListenerBase%601.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
-  
+The default <xref:System.ServiceModel.Channels.ChannelListenerBase%601.%23ctor> constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelListenerBase%601.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
+ 
  ]]></format>
         </remarks>
       </Docs>

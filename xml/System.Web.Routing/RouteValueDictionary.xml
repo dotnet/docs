@@ -29,20 +29,20 @@
     <summary>Represents a case-insensitive collection of key/value pairs that you use in various places in the routing framework, such as when you define the default values for a route or when you generate a URL that is based on a route.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Routing.RouteValueDictionary> class enables you to work with collections of key/value pairs that are required in order to use ASP.NET routing. You use the <xref:System.Web.Routing.RouteValueDictionary> object to define values for the <xref:System.Web.Routing.Route.Constraints%2A>, <xref:System.Web.Routing.Route.DataTokens%2A>, and <xref:System.Web.Routing.Route.Defaults%2A> properties. You also use a <xref:System.Web.Routing.RouteValueDictionary> object when you generate a URL by calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method and passing a <xref:System.Web.Routing.RouteValueDictionary> object as a parameter.  
+The <xref:System.Web.Routing.RouteValueDictionary> class enables you to work with collections of key/value pairs that are required in order to use ASP.NET routing. You use the <xref:System.Web.Routing.RouteValueDictionary> object to define values for the <xref:System.Web.Routing.Route.Constraints%2A>, <xref:System.Web.Routing.Route.DataTokens%2A>, and <xref:System.Web.Routing.Route.Defaults%2A> properties. You also use a <xref:System.Web.Routing.RouteValueDictionary> object when you generate a URL by calling the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method and passing a <xref:System.Web.Routing.RouteValueDictionary> object as a parameter.  
+ 
+Every key in a <xref:System.Web.Routing.RouteValueDictionary> object must be unique. The <xref:System.Web.Routing.RouteValueDictionary> class uses case-insensitive ordinal comparison. For more information, see <xref:System.StringComparer.OrdinalIgnoreCase%2A>. A key cannot be `null`.  
+ 
   
- Every key in a <xref:System.Web.Routing.RouteValueDictionary> object must be unique. The <xref:System.Web.Routing.RouteValueDictionary> class uses case-insensitive ordinal comparison. For more information, see <xref:System.StringComparer.OrdinalIgnoreCase%2A>. A key cannot be `null`.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Web.Routing.Route> object and how to set the <xref:System.Web.Routing.Route.Constraints%2A>, <xref:System.Web.Routing.Route.DataTokens%2A>, and <xref:System.Web.Routing.Route.Defaults%2A> properties.  
-  
- [!code-csharp[System.Web.Routing.Route.ctor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.Route.ctor/cs/Global.asax#1)]
- [!code-vb[System.Web.Routing.Route.ctor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.Route.ctor/VB/Global.asax#1)]  
-  
+The following example shows how to create a <xref:System.Web.Routing.Route> object and how to set the <xref:System.Web.Routing.Route.Constraints%2A>, <xref:System.Web.Routing.Route.DataTokens%2A>, and <xref:System.Web.Routing.Route.Defaults%2A> properties.  
+ 
+[!code-csharp[System.Web.Routing.Route.ctor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.Route.ctor/cs/Global.asax#1)]
+[!code-vb[System.Web.Routing.Route.ctor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.Route.ctor/VB/Global.asax#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteValueDictionary" /> class that is empty.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can add elements to a <xref:System.Web.Routing.RouteValueDictionary> object by calling the <xref:System.Web.Routing.RouteValueDictionary.Add%2A> method.  
-  
+You can add elements to a <xref:System.Web.Routing.RouteValueDictionary> object by calling the <xref:System.Web.Routing.RouteValueDictionary.Add%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,10 +86,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteValueDictionary" /> class and adds elements from the specified collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Every key in a <xref:System.Web.Routing.RouteValueDictionary> object must be unique. The <xref:System.Web.Routing.RouteValueDictionary> class uses case-insensitive ordinal comparison. For more information, see <xref:System.StringComparer.OrdinalIgnoreCase%2A>. A key cannot be `null`.  
-  
+Every key in a <xref:System.Web.Routing.RouteValueDictionary> object must be unique. The <xref:System.Web.Routing.RouteValueDictionary> class uses case-insensitive ordinal comparison. For more information, see <xref:System.StringComparer.OrdinalIgnoreCase%2A>. A key cannot be `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -115,18 +115,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteValueDictionary" /> class and adds values that are based on properties from the specified object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Every key in a <xref:System.Web.Routing.RouteValueDictionary> object must be unique according to the dictionary's equality comparer. The <xref:System.Web.Routing.RouteValueDictionary> class uses case-insensitive ordinal comparison. For more information, see <xref:System.StringComparer.OrdinalIgnoreCase%2A>. A key cannot be `null`.  
+Every key in a <xref:System.Web.Routing.RouteValueDictionary> object must be unique according to the dictionary's equality comparer. The <xref:System.Web.Routing.RouteValueDictionary> class uses case-insensitive ordinal comparison. For more information, see <xref:System.StringComparer.OrdinalIgnoreCase%2A>. A key cannot be `null`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Web.Routing.Route> object and how to set the <xref:System.Web.Routing.Route.Constraints%2A>, <xref:System.Web.Routing.Route.DataTokens%2A>, and <xref:System.Web.Routing.Route.Defaults%2A> properties.  
-  
- [!code-csharp[System.Web.Routing.Route.ctor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.Route.ctor/cs/Global.asax#1)]
- [!code-vb[System.Web.Routing.Route.ctor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.Route.ctor/VB/Global.asax#1)]  
-  
+The following example shows how to create a <xref:System.Web.Routing.Route> object and how to set the <xref:System.Web.Routing.Route.Constraints%2A>, <xref:System.Web.Routing.Route.DataTokens%2A>, and <xref:System.Web.Routing.Route.Defaults%2A> properties.  
+ 
+[!code-csharp[System.Web.Routing.Route.ctor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.Route.ctor/cs/Global.asax#1)]
+[!code-vb[System.Web.Routing.Route.ctor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.Route.ctor/VB/Global.asax#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -497,10 +497,10 @@
         <returns>A structure for reading data in the dictionary.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.RouteValueDictionary> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.RouteValueDictionary> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -529,12 +529,12 @@
           <see langword="true" /> if the dictionary contains an element that has the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method combines the functionality of the <xref:System.Web.Routing.RouteValueDictionary.ContainsKey%2A> method and the <xref:System.Web.Routing.RouteValueDictionary.Item%2A> property.  
-  
- If the key is not found, the `value` parameter is assigned the appropriate default value for the type, such as 0 (zero) for integer types, `false` for Boolean types, and `null` for reference types.  
-  
+This method combines the functionality of the <xref:System.Web.Routing.RouteValueDictionary.ContainsKey%2A> method and the <xref:System.Web.Routing.RouteValueDictionary.Item%2A> property.  
+ 
+If the key is not found, the `value` parameter is assigned the appropriate default value for the type, such as 0 (zero) for integer types, `false` for Boolean types, and `null` for reference types.  
+ 
  ]]></format>
         </remarks>
       </Docs>

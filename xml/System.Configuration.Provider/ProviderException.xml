@@ -14,10 +14,10 @@
     <summary>The exception that is thrown when a configuration provider error has occurred. This exception class is also used by providers to throw exceptions when internal errors occur within the provider that do not map to other pre-existing exception classes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.Provider.ProviderException> is thrown when any error occurs while loading a configuration provider.  
-  
+The <xref:System.Configuration.Provider.ProviderException> is thrown when any error occurs while loading a configuration provider.  
+ 
  ]]></format>
     </remarks>
   </Docs>

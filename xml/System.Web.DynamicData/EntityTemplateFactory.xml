@@ -14,17 +14,17 @@
     <summary>Creates an entity template.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.EntityTemplateFactory> class is used at run time by Dynamic Data to get an instance of an entity template for a table. Entity templates are user controls that apply to a whole table row instead of a single data field, as with field templates. The entity templates are displayed on a page by using the <xref:System.Web.DynamicData.DynamicEntity> class. They use field templates to display values from the data model.  
+The <xref:System.Web.DynamicData.EntityTemplateFactory> class is used at run time by Dynamic Data to get an instance of an entity template for a table. Entity templates are user controls that apply to a whole table row instead of a single data field, as with field templates. The entity templates are displayed on a page by using the <xref:System.Web.DynamicData.DynamicEntity> class. They use field templates to display values from the data model.  
+ 
+Dynamic Data provides default entity templates that are found in the ~\DynamicData\EntityTemplates folder. You can modify these default entity templates or create custom ones to change the appearance and behavior for a table. There are templates for display, edit, and insert operations.  
+ 
   
- Dynamic Data provides default entity templates that are found in the ~\DynamicData\EntityTemplates folder. You can modify these default entity templates or create custom ones to change the appearance and behavior for a table. There are templates for display, edit, and insert operations.  
-  
-   
-  
+ 
 ## Examples  
- For an example of how to use entity templates, see [Walkthrough: Customizing Table Layout Using Entity Templates](http://msdn.microsoft.com/library/03d33a22-d3c0-41df-a717-82ce86329a08).  
-  
+For an example of how to use entity templates, see [Walkthrough: Customizing Table Layout Using Entity Templates](http://msdn.microsoft.com/library/03d33a22-d3c0-41df-a717-82ce86329a08).  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -37,10 +37,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintTicketProperty" /> class for the specified property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Printing.PrintTicket> property of a print system object, including casing. For example, the <xref:System.Printing.PrintQueue.DefaultPrintTicket%2A> property of a <xref:System.Printing.PrintQueue> object must be spelled "DefaultPrintTicket", not "DefaultPrintSettings" or "Defaultprintticket".  
-  
+The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Printing.PrintTicket> property of a print system object, including casing. For example, the <xref:System.Printing.PrintQueue.DefaultPrintTicket%2A> property of a <xref:System.Printing.PrintQueue> object must be spelled "DefaultPrintTicket", not "DefaultPrintSettings" or "Defaultprintticket".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -69,10 +69,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintTicketProperty" /> class that has the specified value for the specified property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Printing.PrintTicket> property of a print system object, including casing. For example, the <xref:System.Printing.PrintQueue.DefaultPrintTicket%2A> property of a <xref:System.Printing.PrintQueue> object must be spelled "DefaultPrintTicket", not "DefaultPrintSettings" or "Defaultprintticket".  
-  
+The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Printing.PrintTicket> property of a print system object, including casing. For example, the <xref:System.Printing.PrintQueue.DefaultPrintTicket%2A> property of a <xref:System.Printing.PrintQueue> object must be spelled "DefaultPrintTicket", not "DefaultPrintSettings" or "Defaultprintticket".  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -15,12 +15,12 @@
     <summary>Specifies the types of security available to a service endpoint configured to receive HTTP requests.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.WebHttpSecurity> provides the security requirements for an endpoint configured with a <xref:System.ServiceModel.WebHttpBinding>.  
-  
- If the <xref:System.ServiceModel.WebHttpSecurityMode> value is specified by the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> method, then the settings provided by the <xref:System.ServiceModel.WebHttpSecurity.Transport%2A> property become effective for the service endpoint. The value of <xref:System.ServiceModel.WebHttpSecurityMode> can only be set in the <xref:System.ServiceModel.WebHttpBinding> constructor that takes it as an explicit parameter and its value cannot be set again after the binding instance is created.  
-  
+<xref:System.ServiceModel.WebHttpSecurity> provides the security requirements for an endpoint configured with a <xref:System.ServiceModel.WebHttpBinding>.  
+ 
+If the <xref:System.ServiceModel.WebHttpSecurityMode> value is specified by the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> method, then the settings provided by the <xref:System.ServiceModel.WebHttpSecurity.Transport%2A> property become effective for the service endpoint. The value of <xref:System.ServiceModel.WebHttpSecurityMode> can only be set in the <xref:System.ServiceModel.WebHttpBinding> constructor that takes it as an explicit parameter and its value cannot be set again after the binding instance is created.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <value>A value of the <see cref="T:System.ServiceModel.WebHttpSecurityMode" /> that indicates whether transport-level security or no security is used by an endpoint. The default value is <see cref="F:System.ServiceModel.WebHttpSecurityMode.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property determines whether the settings from the <xref:System.ServiceModel.WebHttpSecurity.Transport%2A> property becomes effective.  
-  
+This property determines whether the settings from the <xref:System.ServiceModel.WebHttpSecurity.Transport%2A> property becomes effective.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not a valid <see cref="T:System.ServiceModel.WebHttpSecurityMode" />.</exception>
@@ -140,14 +140,14 @@
  The default values set are a <see cref="P:System.ServiceModel.HttpTransportSecurity.ClientCredentialType" /> of <see cref="F:System.ServiceModel.HttpClientCredentialType.None" />, a <see cref="P:System.ServiceModel.HttpTransportSecurity.ProxyCredentialType" /> of <see cref="F:System.ServiceModel.HttpProxyCredentialType.None" />, and <see cref="P:System.ServiceModel.HttpTransportSecurity.Realm" /> = "".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.HttpTransportSecurity> object returned by this property to set the transport security parameters for the <xref:System.ServiceModel.WebHttpBinding>.  
-  
- If the <xref:System.ServiceModel.WebHttpSecurityMode> or <xref:System.ServiceModel.WebHttpSecurityMode> value is specified by the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> method, then the settings provided by the <xref:System.ServiceModel.WebHttpSecurity.Transport%2A> property become effective for the service endpoint.  
-  
- If the <xref:System.ServiceModel.WebHttpSecurityMode> value is specified by the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> method, then the settings provided by the <xref:System.ServiceModel.WebHttpSecurity.Transport%2A> property become effective for the service endpoint. The value of <xref:System.ServiceModel.WebHttpSecurityMode> can only be set in the <xref:System.ServiceModel.WebHttpBinding> constructor that takes it as an explicit parameter and its value cannot be set again after the binding instance is created.  
-  
+Use the <xref:System.ServiceModel.HttpTransportSecurity> object returned by this property to set the transport security parameters for the <xref:System.ServiceModel.WebHttpBinding>.  
+ 
+If the <xref:System.ServiceModel.WebHttpSecurityMode> or <xref:System.ServiceModel.WebHttpSecurityMode> value is specified by the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> method, then the settings provided by the <xref:System.ServiceModel.WebHttpSecurity.Transport%2A> property become effective for the service endpoint.  
+ 
+If the <xref:System.ServiceModel.WebHttpSecurityMode> value is specified by the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> method, then the settings provided by the <xref:System.ServiceModel.WebHttpSecurity.Transport%2A> property become effective for the service endpoint. The value of <xref:System.ServiceModel.WebHttpSecurityMode> can only be set in the <xref:System.ServiceModel.WebHttpBinding> constructor that takes it as an explicit parameter and its value cannot be set again after the binding instance is created.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,13 +13,13 @@
     <summary>Specifies error conditions that can occur when performing a rights management operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> and <xref:System.Exception.Message%2A> properties to create an error message for the user.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
- [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
-  
+The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> and <xref:System.Exception.Message%2A> properties to create an error message for the user.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+[!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

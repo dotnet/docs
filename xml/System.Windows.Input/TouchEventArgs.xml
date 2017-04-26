@@ -14,50 +14,50 @@
     <summary>Provides data for touch input events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following events use <xref:System.Windows.Input.TouchEventArgs>.  
-  
+The following events use <xref:System.Windows.Input.TouchEventArgs>.  
+ 
 -   <xref:System.Windows.UIElement.TouchUp?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.UIElement.TouchDown?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.UIElement.TouchEnter?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.UIElement.TouchLeave?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.UIElement.TouchMove?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.UIElement3D.TouchUp?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.UIElement3D.TouchDown?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.UIElement3D.TouchEnter?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.UIElement3D.TouchLeave?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.UIElement3D.TouchMove?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.ContentElement.TouchUp?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.ContentElement.TouchDown?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.ContentElement.TouchEnter?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.ContentElement.TouchLeave?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.ContentElement.TouchMove?displayProperty=fullName>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example handles the <xref:System.Windows.UIElement.TouchUp> events that occur on a <xref:System.Windows.Controls.Canvas>. It checks the <xref:System.Windows.Input.TouchDevice.Captured%2A> property to verify that the device that raised the event is captured to the <xref:System.Windows.Controls.Canvas>. If it is, the <xref:System.Windows.Input.TouchDevice> is released.  
-  
- This example is part of a larger example that is available in the <xref:System.Windows.Input.TouchDevice> class overview.  
-  
- [!code-csharp[TouchEventsSample#130](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#130)]
- [!code-vb[TouchEventsSample#130](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#130)]  
-  
+The following example handles the <xref:System.Windows.UIElement.TouchUp> events that occur on a <xref:System.Windows.Controls.Canvas>. It checks the <xref:System.Windows.Input.TouchDevice.Captured%2A> property to verify that the device that raised the event is captured to the <xref:System.Windows.Controls.Canvas>. If it is, the <xref:System.Windows.Input.TouchDevice> is released.  
+ 
+This example is part of a larger example that is available in the <xref:System.Windows.Input.TouchDevice> class overview.  
+ 
+[!code-csharp[TouchEventsSample#130](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#130)]
+[!code-vb[TouchEventsSample#130](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#130)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -148,10 +148,10 @@
         <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation casts the generic handler as an <xref:System.EventHandler%601> of type <xref:System.Windows.Input.TouchEventArgs> and then invokes it. For more information about this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
-  
+This implementation casts the generic handler as an <xref:System.EventHandler%601> of type <xref:System.Windows.Input.TouchEventArgs> and then invokes it. For more information about this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,15 +173,15 @@
         <value>The touch that generated the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example handles the <xref:System.Windows.UIElement.TouchUp> events that occur on a <xref:System.Windows.Controls.Canvas>. It checks the <xref:System.Windows.Input.TouchDevice.Captured%2A> property to verify that the device that raised the event is captured to the <xref:System.Windows.Controls.Canvas>. If it is, the <xref:System.Windows.Input.TouchDevice> is released.  
-  
- This example is part of a larger example that is available in the <xref:System.Windows.Input.TouchDevice> class overview.  
-  
- [!code-csharp[TouchEventsSample#130](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#130)]
- [!code-vb[TouchEventsSample#130](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#130)]  
-  
+The following example handles the <xref:System.Windows.UIElement.TouchUp> events that occur on a <xref:System.Windows.Controls.Canvas>. It checks the <xref:System.Windows.Input.TouchDevice.Captured%2A> property to verify that the device that raised the event is captured to the <xref:System.Windows.Controls.Canvas>. If it is, the <xref:System.Windows.Input.TouchDevice> is released.  
+ 
+This example is part of a larger example that is available in the <xref:System.Windows.Input.TouchDevice> class overview.  
+ 
+[!code-csharp[TouchEventsSample#130](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#130)]
+[!code-vb[TouchEventsSample#130](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#130)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

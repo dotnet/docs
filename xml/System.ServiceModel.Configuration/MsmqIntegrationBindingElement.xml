@@ -14,10 +14,10 @@
     <summary>This binding element can be used to enable [!INCLUDE[indigo1](~/includes/indigo1-md.md)] applications to send messages to and receive messages from existing MSMQ applications that use either COM, MSMQ native APIs, or the APIs in <see cref="N:System.Messaging" />. Use this class to send and receive messages from MSMQ-based messaging applications.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Configuration.MsmqIntegrationBindingElement> class has properties for specifying how to address the queue, how to specify transfer assurances, whether messages must be durably stored, and how messages should be protected and authenticated.  
-  
+The <xref:System.ServiceModel.Configuration.MsmqIntegrationBindingElement> class has properties for specifying how to address the queue, how to specify transfer assurances, whether messages must be durably stored, and how messages should be protected and authenticated.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -178,22 +178,22 @@
         <value>The <see cref="T:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat" /> to be used when serializing MSMQ messages.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can have one of the following values:  
-  
+This property can have one of the following values:  
+ 
 -   `ActiveX` - The ActiveX serializer is used to serialize objects.  
-  
+ 
 -   `Binary` - The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> is used to serialize objects.  
-  
+ 
 -   `ByteArray` - The object is serialized to an array of bytes.  
-  
+ 
 -   `Stream` - The object is serialized to a stream.  
-  
+ 
 -   `Xml` - The <xref:System.Xml.Serialization.XmlSerializer> is used to serialize objects.  
-  
- The default value is `Xml`.  
-  
+ 
+The default value is `Xml`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,14 +19,14 @@
     <summary>Represents the default version of <see cref="T:System.Workflow.Runtime.Hosting.WorkflowLoaderService" /> created by the workflow runtime engine if no other workflow loader service is added.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- The <xref:System.Workflow.Runtime.WorkflowRuntime> class creates a <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowLoaderService> object when the runtime engine is started, if no other workflow loader service derived from <xref:System.Workflow.Runtime.Hosting.WorkflowLoaderService> has been added as a service.  
-  
+ 
+The <xref:System.Workflow.Runtime.WorkflowRuntime> class creates a <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowLoaderService> object when the runtime engine is started, if no other workflow loader service derived from <xref:System.Workflow.Runtime.Hosting.WorkflowLoaderService> has been added as a service.  
+ 
  ]]></format>
     </remarks>
   </Docs>

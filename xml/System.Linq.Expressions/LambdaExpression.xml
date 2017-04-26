@@ -30,22 +30,22 @@
     <summary>Describes a lambda expression. This captures a block of code that is similar to a .NET method body.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Linq.Expressions.LambdaExpression> type represents a lambda expression in the form of an expression tree. The <xref:System.Linq.Expressions.Expression%601> type, which derives from <xref:System.Linq.Expressions.LambdaExpression> and captures the type of the lambda expression more explicitly, can also be used to represent a lambda expression. At runtime, an expression tree node that represents a lambda expression is always of type <xref:System.Linq.Expressions.Expression%601>.  
+The <xref:System.Linq.Expressions.LambdaExpression> type represents a lambda expression in the form of an expression tree. The <xref:System.Linq.Expressions.Expression%601> type, which derives from <xref:System.Linq.Expressions.LambdaExpression> and captures the type of the lambda expression more explicitly, can also be used to represent a lambda expression. At runtime, an expression tree node that represents a lambda expression is always of type <xref:System.Linq.Expressions.Expression%601>.  
+ 
+The value of the <xref:System.Linq.Expressions.Expression.NodeType%2A> property of a <xref:System.Linq.Expressions.LambdaExpression> is <xref:System.Linq.Expressions.ExpressionType>.  
+ 
+Use the <xref:System.Linq.Expressions.Expression.Lambda%2A> factory methods to create a <xref:System.Linq.Expressions.LambdaExpression> object.  
+ 
   
- The value of the <xref:System.Linq.Expressions.Expression.NodeType%2A> property of a <xref:System.Linq.Expressions.LambdaExpression> is <xref:System.Linq.Expressions.ExpressionType>.  
-  
- Use the <xref:System.Linq.Expressions.Expression.Lambda%2A> factory methods to create a <xref:System.Linq.Expressions.LambdaExpression> object.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to create an expression that represents a lambda expression that adds 1 to the passed argument by using the <xref:System.Linq.Expressions.Expression.Lambda%2A> method.  
-  
- [!code-csharp[System.Linq.Expressions.ExpressionDev10#42](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#42)]
- [!code-vb[System.Linq.Expressions.ExpressionDev10#42](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#42)]  
-  
+The following example demonstrates how to create an expression that represents a lambda expression that adds 1 to the passed argument by using the <xref:System.Linq.Expressions.Expression.Lambda%2A> method.  
+ 
+[!code-csharp[System.Linq.Expressions.ExpressionDev10#42](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#42)]
+[!code-vb[System.Linq.Expressions.ExpressionDev10#42](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#42)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -108,10 +108,10 @@
         <returns>A <see cref="T:System.Delegate" /> that contains the compiled version of the lambda expression.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Linq.Expressions.LambdaExpression.Compile%2A> method can be used to convert a <xref:System.Linq.Expressions.LambdaExpression> expression tree into the delegate that it represents.  
-  
+The <xref:System.Linq.Expressions.LambdaExpression.Compile%2A> method can be used to convert a <xref:System.Linq.Expressions.LambdaExpression> expression tree into the delegate that it represents.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,10 +247,10 @@
         <value>The name of the lambda expression.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used for debugging.  
-  
+Used for debugging.  
+ 
  ]]></format>
         </remarks>
       </Docs>

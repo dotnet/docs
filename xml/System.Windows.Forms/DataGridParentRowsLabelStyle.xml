@@ -13,19 +13,19 @@
     <summary>Specifies how the parent row labels of a <see cref="T:System.Windows.Forms.DataGrid" /> control are displayed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.DataGrid.ParentRowsLabelStyle%2A> property.  
+Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.DataGrid.ParentRowsLabelStyle%2A> property.  
+ 
+Parent rows can be displayed only if the <xref:System.Windows.Forms.DataGrid> contains at least one <xref:System.Data.DataRelation> to a second <xref:System.Data.DataTable>, and if the <xref:System.Windows.Forms.DataGrid.AllowNavigation%2A> property is set to a value that allows navigation.  
+ 
   
- Parent rows can be displayed only if the <xref:System.Windows.Forms.DataGrid> contains at least one <xref:System.Data.DataRelation> to a second <xref:System.Data.DataTable>, and if the <xref:System.Windows.Forms.DataGrid.AllowNavigation%2A> property is set to a value that allows navigation.  
-  
-   
-  
+ 
 ## Examples  
- The following example iterates through each of the possible values for the <xref:System.Windows.Forms.DataGridParentRowsLabelStyle>.  
-  
- [!code-vb[Classic DataGridParentRowsLabelStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridParentRowsLabelStyle Example/VB/source.vb#1)]  
-  
+The following example iterates through each of the possible values for the <xref:System.Windows.Forms.DataGridParentRowsLabelStyle>.  
+ 
+[!code-vb[Classic DataGridParentRowsLabelStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridParentRowsLabelStyle Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

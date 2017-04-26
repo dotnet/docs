@@ -149,10 +149,10 @@
         <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the target when the target implements the invoke member operation as a sequence of get member, and invoke, to let the <xref:System.Dynamic.DynamicMetaObject> request the binding of the invoke operation only.  
-  
+This method is called by the target when the target implements the invoke member operation as a sequence of get member, and invoke, to let the <xref:System.Dynamic.DynamicMetaObject> request the binding of the invoke operation only.  
+ 
  ]]></format>
         </remarks>
       </Docs>

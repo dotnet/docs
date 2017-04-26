@@ -19,10 +19,10 @@
     <summary>Represents a right granted to a user to access information in a rights managed document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As with other <xref:System.Security.RightsManagement> types, <xref:System.Security.RightsManagement.ContentGrant> is only usable in full trust applications.  
-  
+As with other <xref:System.Security.RightsManagement> types, <xref:System.Security.RightsManagement.ContentGrant> is only usable in full trust applications.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,16 +46,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.ContentGrant" /> class that grants a specified <see cref="T:System.Security.RightsManagement.ContentUser" /> a specified <see cref="T:System.Security.RightsManagement.ContentRight" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Security.RightsManagement.ContentGrant> instance with no date or time limitations.  
-  
+This constructor initializes the <xref:System.Security.RightsManagement.ContentGrant> instance with no date or time limitations.  
+ 
 -   The <xref:System.Security.RightsManagement.ContentGrant.ValidFrom%2A> property is set to <xref:System.DateTime>.<xref:System.DateTime.MinValue> which indicates there is no starting limitation.  
-  
+ 
 -   The <xref:System.Security.RightsManagement.ContentGrant.ValidUntil%2A> property is set to <xref:System.DateTime>.<xref:System.DateTime.MaxValue> which indicates there is no ending limitation.  
-  
- Use the alternate <xref:System.Security.RightsManagement.ContentGrant.%23ctor%2A> constructor to create an instance with date and time limitations.  
-  
+ 
+Use the alternate <xref:System.Security.RightsManagement.ContentGrant.%23ctor%2A> constructor to create an instance with date and time limitations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,12 +83,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.ContentGrant" /> class that grants a specified <see cref="T:System.Security.RightsManagement.ContentUser" /> a specified <see cref="T:System.Security.RightsManagement.ContentRight" /> for a specified <see cref="T:System.DateTime" /> duration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specify the `validFrom` parameter with <xref:System.DateTime>.<xref:System.DateTime> if there is no start date and time limitation.  
-  
- Specify the `validUntil` parameter with <xref:System.DateTime>.<xref:System.DateTime> if there is no end date and time limitation.  
-  
+Specify the `validFrom` parameter with <xref:System.DateTime>.<xref:System.DateTime> if there is no start date and time limitation.  
+ 
+Specify the `validUntil` parameter with <xref:System.DateTime>.<xref:System.DateTime> if there is no end date and time limitation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

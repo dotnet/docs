@@ -24,18 +24,18 @@
     <summary>Wraps an XSD <see langword="hexBinary" /> type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about XSD data types, see "XML Data Types Reference" in the MSDN Library at http://msdn.microsoft.com/library.  
+For more information about XSD data types, see "XML Data Types Reference" in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the members in the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary> class to convert between a <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary> object and an XSD `hexBinary` string.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#10](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo.cpp#10)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo.cs#10)]  
-  
+The following code example shows how to use the members in the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary> class to convert between a <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary> object and an XSD `hexBinary` string.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#10](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo.cpp#10)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo.cs#10)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,13 +55,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#21](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo2.cpp#21)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#21](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo2.cs#21)]  
-  
+The following code example shows how to use this constructor.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#21](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo2.cpp#21)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#21](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo2.cs#21)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,13 +84,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#22](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo2.cpp#22)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#22](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo2.cs#22)]  
-  
+The following code example shows how to use this constructor.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#22](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo2.cpp#22)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#22](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo2.cs#22)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,13 +114,13 @@
         <returns>A <see cref="T:System.String" /> that indicates the XSD of the current SOAP type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.GetXsdType%2A> method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#13](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo.cpp#13)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#13](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo.cs#13)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.GetXsdType%2A> method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#13](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo.cpp#13)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#13](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo.cs#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,13 +147,13 @@
         <returns>A <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary" /> object that is obtained from <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.Parse%2A> method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#11](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo.cpp#11)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo.cs#11)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.Parse%2A> method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#11](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo.cpp#11)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo.cs#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,13 +177,13 @@
         <returns>A <see cref="T:System.String" /> that is obtained from <see cref="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.Value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.ToString%2A> method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#12](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo.cpp#12)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#12](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo.cs#12)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.ToString%2A> method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#12](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo.cpp#12)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#12](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo.cs#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,13 +206,13 @@
         <value>A <see cref="T:System.Byte" /> array containing the hexadecimal representation of a number.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.Value%2A> property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#14](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo.cpp#14)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#14](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo.cs#14)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.Value%2A> property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#14](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo.cpp#14)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#14](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo.cs#14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,13 +235,13 @@
         <value>A <see cref="T:System.String" /> indicating the XSD of the current SOAP type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.XsdType%2A> property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary> class.  
-  
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#16](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo.cpp#16)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#16](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo.cs#16)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.XsdType%2A> property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary> class.  
+ 
+[!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#16](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CPP/demo.cpp#16)]
+[!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary#16](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary/CS/demo.cs#16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

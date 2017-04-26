@@ -14,13 +14,13 @@
     <summary>Provides runtime versions 1.0 and 1.1 support for reading configuration sections and common configuration settings.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using the static methods and properties of the <xref:System.Configuration.ConfigurationSettings> type is the recommended method for reading configuration information at runtime for versions 1.0 and 1.1 applications.  
-  
+Using the static methods and properties of the <xref:System.Configuration.ConfigurationSettings> type is the recommended method for reading configuration information at runtime for versions 1.0 and 1.1 applications.  
+ 
 > [!NOTE]
 >  The <xref:System.Configuration.ConfigurationSettings> class provides backward compatibility only. For new applications you should use the <xref:System.Configuration.ConfigurationManager> class or <xref:System.Web.Configuration.WebConfigurationManager> class instead. To use these two classes, you must add a reference in your project or application to the System.Configuration namespace.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,15 +47,15 @@
         <value>A read-only <see cref="T:System.Collections.Specialized.NameValueCollection" /> of the application settings section from the configuration file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `appSettings` section element of the configuration file contains a series of name/value pairs that your application can use for any purpose.  
-  
- This method is deprecated and is maintained for backward compatibility. Please use the GetSection method instead.  
-  
+The `appSettings` section element of the configuration file contains a series of name/value pairs that your application can use for any purpose.  
+ 
+This method is deprecated and is maintained for backward compatibility. Please use the GetSection method instead.  
+ 
 > [!NOTE]
 >  The <xref:System.Configuration.ConfigurationSettings> class provides backward compatibility only. You should use the <xref:System.Configuration.ConfigurationManager> class or <xref:System.Web.Configuration.WebConfigurationManager> class instead.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
 </block></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is deprecated and is maintained for backward compatibility. Please use the GetSection method instead.  
-  
+This method is deprecated and is maintained for backward compatibility. Please use the GetSection method instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">Unable to retrieve the requested section.</exception>

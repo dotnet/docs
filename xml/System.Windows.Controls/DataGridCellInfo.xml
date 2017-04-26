@@ -14,10 +14,10 @@
     <summary>Represents information about a specific cell in a <see cref="T:System.Windows.Controls.DataGrid" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This structure provides information about the cell and the data item associated with the cell. It is used instead of a reference to the actual <xref:System.Windows.Controls.DataGridCell> container when the <xref:System.Windows.Controls.DataGrid> gets a cell; for example, in the <xref:System.Windows.Controls.DataGrid.CurrentCell%2A> or <xref:System.Windows.Controls.DataGrid.SelectedCells%2A> properties.  
-  
+This structure provides information about the cell and the data item associated with the cell. It is used instead of a reference to the actual <xref:System.Windows.Controls.DataGridCell> container when the <xref:System.Windows.Controls.DataGrid> gets a cell; for example, in the <xref:System.Windows.Controls.DataGrid.CurrentCell%2A> or <xref:System.Windows.Controls.DataGrid.SelectedCells%2A> properties.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridCellInfo" /> structure for the specified cell.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor associates the <xref:System.Windows.Controls.DataGridCellInfo> with the specific <xref:System.Windows.Controls.DataGrid> instance that owns the cell container.  
-  
+This constructor associates the <xref:System.Windows.Controls.DataGridCellInfo> with the specific <xref:System.Windows.Controls.DataGrid> instance that owns the cell container.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -66,10 +66,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridCellInfo" /> structure using the specified data item and column.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor does not associate the <xref:System.Windows.Controls.DataGridCellInfo> with a specific <xref:System.Windows.Controls.DataGrid> instance.  
-  
+This constructor does not associate the <xref:System.Windows.Controls.DataGridCellInfo> with a specific <xref:System.Windows.Controls.DataGrid> instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
           <see langword="true" /> if the comparison object represents the same cell; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method compares the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property, the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property, and the <xref:System.Windows.Controls.DataGrid> that owns the cell container.  
-  
+This method compares the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property, the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property, and the <xref:System.Windows.Controls.DataGrid> that owns the cell container.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@
           <see langword="true" /> if the structure has valid information; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property verifies that the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property is not <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName> and the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property is not `null`.  
-  
+This property verifies that the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property is not <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName> and the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property is not `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,10 +209,10 @@
           <see langword="true" /> if the two structures represent the same cell; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operator compares the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property, the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property, and the <xref:System.Windows.Controls.DataGrid> that owns the cell container.  
-  
+This operator compares the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property, the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property, and the <xref:System.Windows.Controls.DataGrid> that owns the cell container.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -241,10 +241,10 @@
           <see langword="true" /> if the two structures do not represent the same cell; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operator compares the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property, the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property, and the <xref:System.Windows.Controls.DataGrid> that owns the cell container.  
-  
+This operator compares the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property, the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property, and the <xref:System.Windows.Controls.DataGrid> that owns the cell container.  
+ 
  ]]></format>
         </remarks>
       </Docs>

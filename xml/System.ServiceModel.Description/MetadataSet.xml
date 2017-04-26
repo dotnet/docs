@@ -23,16 +23,16 @@
     <summary>Represents a serializable collection of service metadata in XML form.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Description.MetadataSet> class contains a collection of <xref:System.ServiceModel.Description.MetadataSection> objects, each of which contains one dialect of metadata in XML form. Typically, the <xref:System.ServiceModel.Description.MetadataSet> class is used to pass a group of XML metadata documents to and from <xref:System.ServiceModel.Description.MetadataExporter> and <xref:System.ServiceModel.Description.MetadataImporter> objects, such as <xref:System.ServiceModel.Description.WsdlImporter> and <xref:System.ServiceModel.Description.WsdlExporter>.  
-  
- To create a <xref:System.ServiceModel.Description.MetadataSet> from a <xref:System.Collections.Generic.IEnumerable%601> object of type <xref:System.ServiceModel.Description.MetadataSection>, use the <xref:System.ServiceModel.Description.MetadataSet.%23ctor%2A> constructor. To obtain a <xref:System.Collections.Generic.IEnumerable%601> object of type <xref:System.ServiceModel.Description.MetadataSection>, use the <xref:System.ServiceModel.Description.MetadataSet.MetadataSections%2A> property.  
-  
- In addition, you can use the <xref:System.ServiceModel.Description.MetadataSet.ReadFrom%2A> method to load a <xref:System.ServiceModel.Description.MetadataSet> from XML data and the <xref:System.ServiceModel.Description.MetadataSet.WriteTo%2A> method to write the internal metadata to an XML format.  
-  
- This type implements the structure defined in the WS-MetadataExchange specification.  
-  
+The <xref:System.ServiceModel.Description.MetadataSet> class contains a collection of <xref:System.ServiceModel.Description.MetadataSection> objects, each of which contains one dialect of metadata in XML form. Typically, the <xref:System.ServiceModel.Description.MetadataSet> class is used to pass a group of XML metadata documents to and from <xref:System.ServiceModel.Description.MetadataExporter> and <xref:System.ServiceModel.Description.MetadataImporter> objects, such as <xref:System.ServiceModel.Description.WsdlImporter> and <xref:System.ServiceModel.Description.WsdlExporter>.  
+ 
+To create a <xref:System.ServiceModel.Description.MetadataSet> from a <xref:System.Collections.Generic.IEnumerable%601> object of type <xref:System.ServiceModel.Description.MetadataSection>, use the <xref:System.ServiceModel.Description.MetadataSet.%23ctor%2A> constructor. To obtain a <xref:System.Collections.Generic.IEnumerable%601> object of type <xref:System.ServiceModel.Description.MetadataSection>, use the <xref:System.ServiceModel.Description.MetadataSet.MetadataSections%2A> property.  
+ 
+In addition, you can use the <xref:System.ServiceModel.Description.MetadataSet.ReadFrom%2A> method to load a <xref:System.ServiceModel.Description.MetadataSet> from XML data and the <xref:System.ServiceModel.Description.MetadataSet.WriteTo%2A> method to write the internal metadata to an XML format.  
+ 
+This type implements the structure defined in the WS-MetadataExchange specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,10 +51,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MetadataSet" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new <xref:System.ServiceModel.Description.MetadataSet> object.  
-  
+Creates a new <xref:System.ServiceModel.Description.MetadataSet> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -76,10 +76,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MetadataSet" /> class that contains the specified collection of <see cref="T:System.ServiceModel.Description.MetadataSection" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new <xref:System.ServiceModel.Description.MetadataSet> from `sections`.  
-  
+Creates a new <xref:System.ServiceModel.Description.MetadataSet> from `sections`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,10 +151,10 @@
         <returns>A <see cref="T:System.ServiceModel.Description.MetadataSet" /> that contains all the metadata present in the XML stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a <xref:System.ServiceModel.Description.MetadataSet> from an <xref:System.Xml.XmlReader> object.  
-  
+Creates a <xref:System.ServiceModel.Description.MetadataSet> from an <xref:System.Xml.XmlReader> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The reader is <see langword="null" />.</exception>
@@ -245,10 +245,10 @@
         <summary>Writes the <see cref="T:System.ServiceModel.Description.MetadataSet" /> to XML using the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Writes a <xref:System.ServiceModel.Description.MetadataSet> to an XML stream.  
-  
+Writes a <xref:System.ServiceModel.Description.MetadataSet> to an XML stream.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The writer is <see langword="null" />.</exception>

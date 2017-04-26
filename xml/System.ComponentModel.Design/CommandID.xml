@@ -24,10 +24,10 @@
     <summary>Represents a unique command identifier that consists of a numeric command ID and a GUID menu group identifier.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ComponentModel.Design.CommandID> uniquely identifies a command. A unique command identification system prevents conflicts between command identifiers. Command IDs consist of a menu group GUID and a numeric command identifier.  
-  
+A <xref:System.ComponentModel.Design.CommandID> uniquely identifies a command. A unique command identification system prevents conflicts between command identifiers. Command IDs consist of a menu group GUID and a numeric command identifier.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -57,10 +57,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.CommandID" /> class using the specified menu group GUID and command ID number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a new command ID.  
-  
+This method creates a new command ID.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -191,10 +191,10 @@
         <returns>A string that contains the command ID information, both the GUID and integer identifier.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a string that contains the significant information of the <xref:System.ComponentModel.Design.CommandID>, a concatenation that consists of the menu group GUID and the numeric ID for the <xref:System.ComponentModel.Design.CommandID>.  
-  
+This method returns a string that contains the significant information of the <xref:System.ComponentModel.Design.CommandID>, a concatenation that consists of the menu group GUID and the numeric ID for the <xref:System.ComponentModel.Design.CommandID>.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>

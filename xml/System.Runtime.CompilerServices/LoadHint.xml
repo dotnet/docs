@@ -18,12 +18,12 @@
     <summary>Specifies the preferred default binding for a dependent assembly.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this enumeration with the <xref:System.Runtime.CompilerServices.DependencyAttribute> attribute and the <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> attribute to specify the preferred default binding for a dependent assembly.  
-  
- Note that the `Default` value directs the native generation service to consult the dependent assembly for its preferred default binding, which is specified using the <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> attribute. Very few assemblies should need to specify a default value in this manner.  
-  
+Use this enumeration with the <xref:System.Runtime.CompilerServices.DependencyAttribute> attribute and the <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> attribute to specify the preferred default binding for a dependent assembly.  
+ 
+Note that the `Default` value directs the native generation service to consult the dependent assembly for its preferred default binding, which is specified using the <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> attribute. Very few assemblies should need to specify a default value in this manner.  
+ 
  ]]></format>
     </remarks>
   </Docs>

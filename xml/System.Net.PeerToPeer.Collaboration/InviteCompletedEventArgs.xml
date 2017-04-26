@@ -14,10 +14,10 @@
     <summary>Provides qualifying information to a callback method when an <see cref="E:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted" /> event occurs.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted> event is raised when a remote peer responds to an invitation to collaborate with a peer host or host application. This occurs when the invitation has completed, regardless of whether the invited peer intends to collaborate. Methods used to manage peer invitations are in the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> and <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> subclasses and the <xref:System.Net.PeerToPeer.Collaboration.Peer> abstract class. Callback method, delegate, and type-safe function pointer are synonyms for the delegate methods.  
-  
+The <xref:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted> event is raised when a remote peer responds to an invitation to collaborate with a peer host or host application. This occurs when the invitation has completed, regardless of whether the invited peer intends to collaborate. Methods used to manage peer invitations are in the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> and <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> subclasses and the <xref:System.Net.PeerToPeer.Collaboration.Peer> abstract class. Callback method, delegate, and type-safe function pointer are synonyms for the delegate methods.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" /> to the invitation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unless specified, the default value for this property is `null`.  
-  
+Unless specified, the default value for this property is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

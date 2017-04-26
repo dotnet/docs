@@ -14,21 +14,21 @@
     <summary>Provides properties and methods that define a template element in a Web server control at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.TemplateDefinition> class provides a base template definition class that can be inherited from and extended for a control designer to use in providing support for templated controls in a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)]. A design host uses the properties and methods of the <xref:System.Web.UI.Design.TemplateDefinition> class to facilitate creating and editing a template at design time.  
+The <xref:System.Web.UI.Design.TemplateDefinition> class provides a base template definition class that can be inherited from and extended for a control designer to use in providing support for templated controls in a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)]. A design host uses the properties and methods of the <xref:System.Web.UI.Design.TemplateDefinition> class to facilitate creating and editing a template at design time.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to derive a custom class from the <xref:System.Web.UI.Design.ControlDesigner> class. This control designer supports a control with four possible templates.  
-  
- To try it, add a reference to the System.Design.dll assembly, compile the code, and then, in a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], look at the page in Design view. Select the control, click the action list to select a template to modify, and then use the drag-and-drop feature to move controls into the template.  
-  
- [!code-csharp[DesignerTemplateGroupSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DesignerTemplateGroupSample/CS/TemplateGroupsSample.cs#1)]
- [!code-vb[DesignerTemplateGroupSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.vb#1)]  
+The following code example demonstrates how to derive a custom class from the <xref:System.Web.UI.Design.ControlDesigner> class. This control designer supports a control with four possible templates.  
+ 
+To try it, add a reference to the System.Design.dll assembly, compile the code, and then, in a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], look at the page in Design view. Select the control, click the action list to select a template to modify, and then use the drag-and-drop feature to move controls into the template.  
+ 
+[!code-csharp[DesignerTemplateGroupSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DesignerTemplateGroupSample/CS/TemplateGroupsSample.cs#1)]
+[!code-vb[DesignerTemplateGroupSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.vb#1)]  
 <!-- TODO: review snippet reference [!code-vb[DesignerTemplateGroupSample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.aspx#2)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -179,10 +179,10 @@
           <see langword="true" /> if editing is allowed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To change the default, derived classes must override the <xref:System.Web.UI.Design.TemplateDefinition.AllowEditing%2A> property.  
-  
+To change the default, derived classes must override the <xref:System.Web.UI.Design.TemplateDefinition.AllowEditing%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -241,10 +241,10 @@
         <value>A <see cref="T:System.Web.UI.WebControls.Style" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Web.UI.WebControls.Style> property is read-only, the properties of the <xref:System.Web.UI.WebControls.Style> can be set.  
-  
+Although the <xref:System.Web.UI.WebControls.Style> property is read-only, the properties of the <xref:System.Web.UI.WebControls.Style> can be set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -285,10 +285,10 @@
         <value>The component as set when this <see cref="T:System.Web.UI.Design.TemplateDefinition" /> was created.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although this <xref:System.Web.UI.Design.TemplateDefinition.TemplatedObject%2A> property is read-only, its properties can be set, and if <xref:System.Web.UI.Design.TemplateDefinition.AllowEditing%2A> is true, the content can be edited.  
-  
+Although this <xref:System.Web.UI.Design.TemplateDefinition.TemplatedObject%2A> property is read-only, its properties can be set, and if <xref:System.Web.UI.Design.TemplateDefinition.AllowEditing%2A> is true, the content can be edited.  
+ 
  ]]></format>
         </remarks>
       </Docs>

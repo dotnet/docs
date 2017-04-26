@@ -22,10 +22,10 @@
     <summary>Contains settings that <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicValue`1" /> and <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" /> instances use to compile the source text of the expressions they contain.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These settings include assembly references and imported namespaces required to compile an expression.  
-  
+These settings include assembly references and imported namespaces required to compile an expression.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@
         <value>A <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> that contains the default set of assembly references and imported namespaces.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table lists the default imported namespaces and assembly references.  
-  
+The following table lists the default imported namespaces and assembly references.  
+ 
 |Imported Namespace|Assembly|  
 |------------------------|--------------|  
 |System|mscorlib|  
@@ -76,7 +76,7 @@
 |System.Activities|System.Activities|  
 |System.Activities.Statements|System.Activities|  
 |System.Activities.Expressions|System.Activities|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

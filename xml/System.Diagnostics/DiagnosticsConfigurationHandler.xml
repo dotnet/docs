@@ -23,10 +23,10 @@
     <summary>Handles the diagnostics section of configuration files.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.DiagnosticsConfigurationHandler> method is a section handler that participates in the resolution of configuration settings in the [\&lt;system.diagnostics\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/system-diagnostics-element.md) portion of configuration files.  
-  
+The <xref:System.Diagnostics.DiagnosticsConfigurationHandler> method is a section handler that participates in the resolution of configuration settings in the [\&lt;system.diagnostics\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/system-diagnostics-element.md) portion of configuration files.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -73,10 +73,10 @@
         <returns>A new configuration object, in the form of a <see cref="T:System.Collections.Hashtable" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.DiagnosticsConfigurationHandler.Create%2A> method populates a <xref:System.Collections.Hashtable> with the values obtained from the [\&lt;system.diagnostics\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/system-diagnostics-element.md) section of a configuration file and returns the hashtable.  
-  
+The <xref:System.Diagnostics.DiagnosticsConfigurationHandler.Create%2A> method populates a <xref:System.Collections.Hashtable> with the values obtained from the [\&lt;system.diagnostics\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/system-diagnostics-element.md) section of a configuration file and returns the hashtable.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">Switches could not be found.  

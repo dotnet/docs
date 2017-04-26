@@ -19,45 +19,45 @@
     <summary>Represents an access control list (ACL) and is the base class for the <see cref="T:System.Security.AccessControl.DiscretionaryAcl" /> and <see cref="T:System.Security.AccessControl.SystemAcl" /> classes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 -   Certain combinations of inheritance and access mask flags are meaningless:  
-  
+ 
 -   Any access control entry (ACE) with a zero-access mask is removed.  
-  
+ 
 -   Inherit-only ACEs inside object ACLs are removed.  
-  
+ 
 -   <xref:System.Security.AccessControl.PropagationFlags>, <xref:System.Security.AccessControl.PropagationFlags>, <xref:System.Security.AccessControl.InheritanceFlags>, and <xref:System.Security.AccessControl.InheritanceFlags> flags on all ACEs in leaf object ACLs are cleared.  
-  
+ 
 -   ACEs that have an <xref:System.Security.AccessControl.PropagationFlags> flag in the absence of the <xref:System.Security.AccessControl.InheritanceFlags> or <xref:System.Security.AccessControl.InheritanceFlags> flag are meaningless; they are removed.  
-  
+ 
 -   The <xref:System.Security.AccessControl.PropagationFlags> flag in the absence of the <xref:System.Security.AccessControl.InheritanceFlags> or <xref:System.Security.AccessControl.InheritanceFlags> flag can be removed.  
-  
+ 
 -   ACEs that have an <xref:System.Security.AccessControl.AuditFlags> value of <xref:System.Security.AccessControl.AuditFlags> or <xref:System.Security.AccessControl.AuditFlags> in discretionary access control lists (DACLs) are removed.  
-  
+ 
 -   Any audit ACE that does not specify either <xref:System.Security.AccessControl.AuditFlags> or <xref:System.Security.AccessControl.AuditFlags> is removed.  
-  
+ 
 -   On DACLs, SystemAudit and SystemAlarm ACEs are removed.  
-  
+ 
 -   On system access control lists (SACLs), AccessAllowed and AccessDenied ACEs are removed.  
-  
- Canonical order is maintained according to the following algorithm:  
-  
+ 
+Canonical order is maintained according to the following algorithm:  
+ 
 -   Explicit ACEs take precedence over inherited ACEs; this rule applies to both DACLs and SACLs.  
-  
+ 
 -   In DACLs, among the explicit ACEs, ACEs that deny access take precedence over ACEs that allow access. For directory object ACLs, the nonobject ACEs come before object ACEs.  
-  
+ 
 -   All common ACEs take precedence over noncommon ACEs.  
-  
+ 
 -   Inherited ACEs maintain their relative order after canonicity.  
-  
+ 
 -   Unrecognized and custom ACEs are disallowed in both DACLs and SACLs.  
-  
+ 
 -   Within contiguous ranges (explicit AccessDenied and AccessAllowed ACEs on DACLs, all explicit ACEs on SACLs), the ACEs are sorted by using the <xref:System.Security.Principal.SecurityIdentifier.CompareTo%2A> methods of the <xref:System.Security.Principal.SecurityIdentifier> objects associated with the ACEs.  
-  
- Adjacent ACEs are combined, if appropriate.  This reduces the size of the ACL without affecting the access control semantics it grants.  
-  
+ 
+Adjacent ACEs are combined, if appropriate.  This reduces the size of the ACL without affecting the access control semantics it grants.  
+ 
  ]]></format>
     </remarks>
   </Docs>

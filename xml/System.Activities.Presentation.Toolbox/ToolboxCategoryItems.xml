@@ -24,10 +24,10 @@
     <summary>A collection of <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> objects. This class is <see langword="sealed" /> and so cannot be inherited.This class provides support for the categorization of toolbox items when re-hosting the [!INCLUDE[wfd1](~/includes/wfd1-md.md)] outside of [!INCLUDE[vs2010](~/includes/vs2010-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_ToolboxCategoryItems#0](WFD_ToolboxCategoryItems#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -133,10 +133,10 @@
         <summary>Copies the entire <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" /> collection to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target <see cref="T:System.Array" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> collection.  
-  
+The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> is <see langword="null" />.</exception>
@@ -159,10 +159,10 @@
         <value>The number of elements contained in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements  the <xref:System.Collections.ICollection> interface.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements  the <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,14 +185,14 @@
         <returns>An <see cref="T:System.Collections.IEnumerator`1" /> for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerators can be used to read the data in a collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.IEnumerator%601.Current> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current>. An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is no longer valid and its behavior is undefined.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  
-  
+Enumerators can be used to read the data in a collection, but they cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.IEnumerator%601.Current> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current>. An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is no longer valid and its behavior is undefined.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,10 +215,10 @@
           <see langword="true" /> if the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface. A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface. A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,10 +244,10 @@
         <value>The toolbox category <see cref="T:System.Object" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface. This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface. This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,10 +297,10 @@
         <summary>Copies the entire <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" /> collection to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target <see cref="T:System.Array" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> collection.  
-  
+The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> is <see langword="null" />.</exception>
@@ -323,10 +323,10 @@
         <value>The number of items contained in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" /> collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.ICollection> interface.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -349,10 +349,10 @@
           <see langword="true" /> if access to the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.ICollection> interface. The <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.System%23Collections%23ICollection%23SyncRoot%2A> property returns an object, which can be used to synchronize access to the <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems>.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.ICollection> interface. The <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.System%23Collections%23ICollection%23SyncRoot%2A> property returns an object, which can be used to synchronize access to the <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -374,10 +374,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.ICollection> interface.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -400,14 +400,14 @@
         <returns>An <see cref="T:System.Collections.IEnumerator`1" /> for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerators can be used to read the data in a collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.IEnumerator%601.Current> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current>. An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is no longer valid and its behavior is undefined.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  
-  
+Enumerators can be used to read the data in a collection, but they cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.IEnumerator%601.Current> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current>. An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is no longer valid and its behavior is undefined.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -433,10 +433,10 @@
         <returns>The zero-based index of the tool added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="value" /> is of a type that is not assignable to the <see cref="T:System.Collections.IList" /> implemented by the collection.</exception>
@@ -459,10 +459,10 @@
         <summary>Removes all the tools from the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -489,10 +489,10 @@
           <see langword="true" /> if the <paramref name="value" /> is found in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
@@ -519,10 +519,10 @@
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
@@ -550,14 +550,14 @@
         <summary>Inserts a toolbox category into the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" /> collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
-  
- If `index` equals the number of items in the <xref:System.Collections.IList>, then `value` is appended to the end.  
-  
- In collections of contiguous elements, such as lists, the elements that follow the insertion point move down to accommodate the new element. If the collection is indexed, the indexes of the elements that are moved are also updated.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
+ 
+If `index` equals the number of items in the <xref:System.Collections.IList>, then `value` is appended to the end.  
+ 
+In collections of contiguous elements, such as lists, the elements that follow the insertion point move down to accommodate the new element. If the collection is indexed, the indexes of the elements that are moved are also updated.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not valid for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" /> collection.</exception>
@@ -583,10 +583,10 @@
           <see langword="true" /> if the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -609,10 +609,10 @@
           <see langword="true" /> if the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface. A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface. A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -638,10 +638,10 @@
         <value>The toolbox category<see cref="T:System.Object" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface. This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface. This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> set is <see langword="null" />.</exception>
@@ -667,12 +667,12 @@
         <summary>Removes the first occurrence of a specific toolbox category from the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
-  
- In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
+ 
+In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -697,12 +697,12 @@
         <summary>Removes a toolbox category at the specified index of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
-  
- In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated.  
-  
+<xref:System.Activities.Presentation.Toolbox.ToolboxCategoryItems> implements the <xref:System.Collections.IList> interface.  
+ 
+In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not valid for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" /> collection.</exception>

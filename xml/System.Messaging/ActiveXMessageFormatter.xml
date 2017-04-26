@@ -21,16 +21,16 @@
     <summary>Serializes or deserializes primitive data types and other objects to or from the body of a Message Queuing message, using a format that is compatible with the MSMQ ActiveX Component.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Messaging.ActiveXMessageFormatter> is compatible with messages sent using Message Queuing COM components, allowing interoperability with applications that use the MSMQ COM control.  
-  
- The <xref:System.Messaging.ActiveXMessageFormatter> can serialize most primitives, as well as objects that implement the `IPersistStream` OLE interface. It can deserialize the same set of primitives, but requires further effort when deserializing a COM object (for example, an object created using Visual Basic 6.0) that implements `IPersistStream`. The object to deserialize must be in memory by first importing the object into a .NET Framework application.  
-  
- When an application sends a message to the queue using an instance of the <xref:System.Messaging.MessageQueue> class, the formatter serializes the object into a stream and inserts it into the message body. When reading from a queue using a <xref:System.Messaging.MessageQueue>, the formatter deserializes the message data into the <xref:System.Messaging.Message.Body%2A> property of a <xref:System.Messaging.Message>.  
-  
- ActiveX serialization is very compact, which makes using the <xref:System.Messaging.ActiveXMessageFormatter> and MSMQ COM control a very fast method of serialization.  
-  
+The <xref:System.Messaging.ActiveXMessageFormatter> is compatible with messages sent using Message Queuing COM components, allowing interoperability with applications that use the MSMQ COM control.  
+ 
+The <xref:System.Messaging.ActiveXMessageFormatter> can serialize most primitives, as well as objects that implement the `IPersistStream` OLE interface. It can deserialize the same set of primitives, but requires further effort when deserializing a COM object (for example, an object created using Visual Basic 6.0) that implements `IPersistStream`. The object to deserialize must be in memory by first importing the object into a .NET Framework application.  
+ 
+When an application sends a message to the queue using an instance of the <xref:System.Messaging.MessageQueue> class, the formatter serializes the object into a stream and inserts it into the message body. When reading from a queue using a <xref:System.Messaging.MessageQueue>, the formatter deserializes the message data into the <xref:System.Messaging.Message.Body%2A> property of a <xref:System.Messaging.Message>.  
+ 
+ActiveX serialization is very compact, which makes using the <xref:System.Messaging.ActiveXMessageFormatter> and MSMQ COM control a very fast method of serialization.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,10 +72,10 @@
           <see langword="true" /> if the <see cref="T:System.Messaging.ActiveXMessageFormatter" /> can deserialize the message; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Messaging.ActiveXMessageFormatter.CanRead%2A> returns `false` if the message body is not a primitive that the Message Queuing ActiveX control can deserialize or if it does not implement the `IPersistStream` interface.  
-  
+<xref:System.Messaging.ActiveXMessageFormatter.CanRead%2A> returns `false` if the message body is not a primitive that the Message Queuing ActiveX control can deserialize or if it does not implement the `IPersistStream` interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="message" /> parameter is <see langword="null" />.</exception>
@@ -99,10 +99,10 @@
         <returns>An object whose properties are identical to those of this <see cref="T:System.Messaging.ActiveXMessageFormatter" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used by the <xref:System.Messaging.MessageQueue> class in order to receive multiple messages at the same time (for example, if the application is receiving asynchronously). You typically do not need to call this method in your application code.  
-  
+This method is used by the <xref:System.Messaging.MessageQueue> class in order to receive multiple messages at the same time (for example, if the application is receiving asynchronously). You typically do not need to call this method in your application code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,10 +149,10 @@
         <returns>The deserialized message.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the body of the message represents a primitive type, the message's <xref:System.Messaging.Message.BodyType%2A> property must be one of the managed types in the following table.  
-  
+If the body of the message represents a primitive type, the message's <xref:System.Messaging.Message.BodyType%2A> property must be one of the managed types in the following table.  
+ 
 |BodyType value|Managed type|  
 |--------------------|------------------|  
 |VT_LPSTR|<xref:System.Char> array (deserialized using ASCII encoding)|  
@@ -173,7 +173,7 @@
 |VT_R8|<xref:System.Double>|  
 |VT_NULL|`null`|  
 |VT_STREAMED_OBJECT|<xref:System.Object>|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Messaging.Message.BodyType" /> property of the <paramref name="message" /> passed as a parameter cannot be mapped to a primitive type, nor does it represent a streamed object.</exception>
@@ -203,10 +203,10 @@
         <summary>Serializes an object into the body of the message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the relationship between managed types and the <xref:System.Messaging.Message.BodyType%2A> property. The object that you serialize must be one of these managed types or must implement the OLE `IPersistStream` interface.  
-  
+The following table shows the relationship between managed types and the <xref:System.Messaging.Message.BodyType%2A> property. The object that you serialize must be one of these managed types or must implement the OLE `IPersistStream` interface.  
+ 
 |BodyType value|Managed type|  
 |--------------------|------------------|  
 |VT_LPSTR|<xref:System.Char>|  
@@ -227,7 +227,7 @@
 |VT_R8|<xref:System.Double>|  
 |VT_NULL|`null`|  
 |VT_STREAMED_OBJECT|`IPersistStream` (OLE) <xref:System.Object>|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The object to serialize is neither a primitive nor a streamed object that implements the OLE <see langword="IPersistStream" /> interface.</exception>

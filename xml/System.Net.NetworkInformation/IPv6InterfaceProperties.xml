@@ -23,21 +23,21 @@
     <summary>Provides information about network interfaces that support Internet Protocol version 6 (IPv6).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides access to configuration and address information for network interfaces that support IPv6. You do not create instances of this class; they are returned by the <xref:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv6Properties%2A> method.  
+This class provides access to configuration and address information for network interfaces that support IPv6. You do not create instances of this class; they are returned by the <xref:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv6Properties%2A> method.  
+ 
+For IPV4 properties, see <xref:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv4Properties%2A>.  
+ 
   
- For IPV4 properties, see <xref:System.Net.NetworkInformation.IPInterfaceProperties.GetIPv4Properties%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example gets an <xref:System.Net.NetworkInformation.IPInterfaceProperties> object and displays its data.  
-  
- [!code-cpp[NclNetInfo2#49](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#49)]
- [!code-csharp[NclNetInfo2#49](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#49)]
- [!code-vb[NclNetInfo2#49](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#49)]  
-  
+The following code example gets an <xref:System.Net.NetworkInformation.IPInterfaceProperties> object and displays its data.  
+ 
+[!code-cpp[NclNetInfo2#49](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#49)]
+[!code-csharp[NclNetInfo2#49](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#49)]
+[!code-vb[NclNetInfo2#49](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#49)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,10 +65,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.IPv6InterfaceProperties" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor can be called only by classes that derive from <xref:System.Net.NetworkInformation.IPv6InterfaceProperties>.  
-  
+This constructor can be called only by classes that derive from <xref:System.Net.NetworkInformation.IPv6InterfaceProperties>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,19 +132,19 @@
         <value>An <see cref="T:System.Int32" /> value that contains the index of the network interface for IPv6 address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of this property is zero, IPv6 is not supported by this interface.  
+If the value of this property is zero, IPv6 is not supported by this interface.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example gets an <xref:System.Net.NetworkInformation.IPv6InterfaceProperties> object and displays its data.  
-  
- [!code-cpp[NclNetInfo2#49](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#49)]
- [!code-csharp[NclNetInfo2#49](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#49)]
- [!code-vb[NclNetInfo2#49](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#49)]  
-  
+The following code example gets an <xref:System.Net.NetworkInformation.IPv6InterfaceProperties> object and displays its data.  
+ 
+[!code-cpp[NclNetInfo2#49](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#49)]
+[!code-csharp[NclNetInfo2#49](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#49)]
+[!code-vb[NclNetInfo2#49](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#49)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,19 +175,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the MTU.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The MTU of a network interface is the largest packet that can be transmitted. It is measured in octets (8-bit bytes).  
+The MTU of a network interface is the largest packet that can be transmitted. It is measured in octets (8-bit bytes).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example gets an <xref:System.Net.NetworkInformation.IPv6InterfaceProperties> object and displays its data.  
-  
- [!code-cpp[NclNetInfo2#49](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#49)]
- [!code-csharp[NclNetInfo2#49](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#49)]
- [!code-vb[NclNetInfo2#49](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#49)]  
-  
+The following code example gets an <xref:System.Net.NetworkInformation.IPv6InterfaceProperties> object and displays its data.  
+ 
+[!code-cpp[NclNetInfo2#49](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#49)]
+[!code-csharp[NclNetInfo2#49](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#49)]
+[!code-vb[NclNetInfo2#49](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#49)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

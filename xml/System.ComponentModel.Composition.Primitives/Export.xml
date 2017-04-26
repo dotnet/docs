@@ -31,10 +31,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived types that call this constructor must override the <xref:System.ComponentModel.Composition.Primitives.Export.Definition%2A> property and the <xref:System.ComponentModel.Composition.Primitives.Export.GetExportedValueCore%2A> method.  
-  
+Derived types that call this constructor must override the <xref:System.ComponentModel.Composition.Primitives.Export.Definition%2A> property and the <xref:System.ComponentModel.Composition.Primitives.Export.GetExportedValueCore%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <value>A definition that describes the contract that the <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> object satisfies.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Overrides of this property should never return `null`.  
-  
+Overrides of this property should never return `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">This property was not overridden by a derived class.</exception>
@@ -193,10 +193,10 @@
         <value>The metadata of the <see cref="T:System.ComponentModel.Composition.Primitives.Export" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the value of <xref:System.ComponentModel.Composition.Primitives.ExportDefinition.Metadata%2A> of the <xref:System.ComponentModel.Composition.Primitives.Export.Definition%2A> property.  
-  
+This property returns the value of <xref:System.ComponentModel.Composition.Primitives.ExportDefinition.Metadata%2A> of the <xref:System.ComponentModel.Composition.Primitives.Export.Definition%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The <see cref="P:System.ComponentModel.Composition.Primitives.Export.Definition" /> property was not overridden by a derived class.</exception>

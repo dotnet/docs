@@ -56,10 +56,10 @@
         <returns>A <see cref="T:System.Reflection.FieldInfo" /> object that has the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method applies to fields that cannot be resolved at compile time. This happens when an `eval` expression refers to a field in the outer scope. Because the `eval` expression can declare a local field with the same name, the field cannot be early bound to the outer scope field.  
-  
+This method applies to fields that cannot be resolved at compile time. This happens when an `eval` expression refers to a field in the outer scope. Because the `eval` expression can declare a local field with the same name, the field cannot be early bound to the outer scope field.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -131,10 +131,10 @@
         <returns>The value of the member <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method applies to members that cannot be resolved at compile time. This occurs when an `eval` expression refers to a member in the outer scope. Because the `eval` expression can declare a local member with the same name, the member cannot be early bound to the outer scope member.  
-  
+This method applies to members that cannot be resolved at compile time. This occurs when an `eval` expression refers to a member in the outer scope. Because the `eval` expression can declare a local member with the same name, the member cannot be early bound to the outer scope member.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

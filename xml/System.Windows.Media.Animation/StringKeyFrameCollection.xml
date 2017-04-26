@@ -18,13 +18,13 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Media.Animation.StringKeyFrame" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection is used as part of a <xref:System.Windows.Media.Animation.StringAnimationUsingKeyFrames> to animate a <xref:System.String> property value along a set of key frames.  
-  
+This collection is used as part of a <xref:System.Windows.Media.Animation.StringAnimationUsingKeyFrames> to animate a <xref:System.String> property value along a set of key frames.  
+ 
 <a name="xamlImplicitCollectionUsage_StringKeyFrameCollection"></a>   
 ## XAML Implicit Collection Usage  
-  
+ 
 ```  
 <object>  
   <object.property>  
@@ -32,12 +32,12 @@
   </object.property>  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_StringKeyFrameCollection"></a>   
 ## XAML Values  
- *oneOrMoreStringKeyFrameObjectElements*  
- One or more <xref:System.Windows.Media.Animation.StringKeyFrame> objects, declared using object element syntax.  
-  
+*oneOrMoreStringKeyFrameObjectElements*  
+One or more <xref:System.Windows.Media.Animation.StringKeyFrame> objects, declared using object element syntax.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -115,12 +115,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,12 +145,12 @@
         <summary>Makes this instance a deep copy of the specified <see cref="T:System.Windows.Media.Animation.StringKeyFrameCollection" />. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
-  
+This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,12 +175,12 @@
         <summary>Makes this instance a modifiable deep copy of the specified <see cref="T:System.Windows.Media.Animation.StringKeyFrameCollection" /> using current property values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
-  
+This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -207,12 +207,12 @@
           <see langword="true" /> if the collection contains <paramref name="keyFrame" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Windows.Media.Animation.StringKeyFrameCollection.Count%2A>. That is, this method is an O(*n*) operation, where *n* is <xref:System.Windows.Media.Animation.StringKeyFrameCollection.Count%2A>.  
-  
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
-  
+This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Windows.Media.Animation.StringKeyFrameCollection.Count%2A>. That is, this method is an O(*n*) operation, where *n* is <xref:System.Windows.Media.Animation.StringKeyFrameCollection.Count%2A>.  
+ 
+This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,14 +338,14 @@
         <summary>Makes this instance a clone of the specified <see cref="T:System.Windows.Media.Animation.StringKeyFrameCollection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values. Note that if these properties contain resource references or data bindings, <xref:System.Windows.Freezable.GetAsFrozen%2A> will fail when trying to freeze the object and will throw an <xref:System.InvalidOperationException>.  
-  
- This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
-  
- For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
-  
+When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values. Note that if these properties contain resource references or data bindings, <xref:System.Windows.Freezable.GetAsFrozen%2A> will fail when trying to freeze the object and will throw an <xref:System.InvalidOperationException>.  
+ 
+This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
+ 
+For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -370,12 +370,12 @@
         <summary>Makes this instance a frozen clone of the specified <see cref="T:System.Windows.Media.Animation.StringKeyFrameCollection" />. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
-  
- For more information see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
-  
+This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
+ 
+For more information see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,20 +398,20 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerators only allow reading the data in the collection. Enumerators cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first item in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first item of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
-  
- <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next item.  
-  
- After the end of the collection is passed, the enumerator is positioned after the last item in the collection, and calling <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. To set <xref:System.Collections.IEnumerator.Current%2A> to the first item of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying or deleting items, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> will return the item that it is set to, even if the enumerator is already invalidated.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
+Enumerators only allow reading the data in the collection. Enumerators cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first item in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first item of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ 
+<xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next item.  
+ 
+After the end of the collection is passed, the enumerator is positioned after the last item in the collection, and calling <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. To set <xref:System.Collections.IEnumerator.Current%2A> to the first item of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying or deleting items, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> will return the item that it is set to, even if the enumerator is already invalidated.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -437,14 +437,14 @@
         <returns>The zero-based index of the first occurrence of <paramref name="keyFrame" /> within the entire collection, if found; otherwise, <c>-1</c>.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection is searched forward starting at the first key frame and ending at the last key frame.  
-  
- This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Windows.Media.Animation.StringKeyFrameCollection.Count%2A>. That is, this method is an O(*n*) operation, where *n* is <xref:System.Windows.Media.Animation.StringKeyFrameCollection.Count%2A>.  
-  
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
-  
+The collection is searched forward starting at the first key frame and ending at the last key frame.  
+ 
+This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Windows.Media.Animation.StringKeyFrameCollection.Count%2A>. That is, this method is an O(*n*) operation, where *n* is <xref:System.Windows.Media.Animation.StringKeyFrameCollection.Count%2A>.  
+ 
+This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -528,10 +528,10 @@
           <see langword="true" /> if access to the collection is synchronized (thread-safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
+Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,12 +14,12 @@
     <summary>Represents a collection of connection points for a control in a Web Parts zone acting as a consumer. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A control in a Web Parts zone acting as a consumer can connect to only one provider by default. However, when the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.AllowsMultipleConnections%2A> property is set to `true`, multiple providers can connect to the consumer.  
-  
- Note that this class inherits from the <xref:System.Collections.ReadOnlyCollectionBase> class, making this collection a strongly typed, non-generic, read-only collection. You cannot add or remove members after an instance has been created.  
-  
+A control in a Web Parts zone acting as a consumer can connect to only one provider by default. However, when the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.AllowsMultipleConnections%2A> property is set to `true`, multiple providers can connect to the consumer.  
+ 
+Note that this class inherits from the <xref:System.Collections.ReadOnlyCollectionBase> class, making this collection a strongly typed, non-generic, read-only collection. You cannot add or remove members after an instance has been created.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,10 +38,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a new instance of the <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection> class with no items in the collection.  
-  
+This constructor creates a new instance of the <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection> class with no items in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -63,10 +63,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection" /> class using the specified collection of connection points.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a new instance of the <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection> class and adds the connection points contained in the `connectionPoints` parameter.  
-  
+This constructor creates a new instance of the <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection> class and adds the connection points contained in the `connectionPoints` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -100,10 +100,10 @@
           <see langword="true" /> if the consumer connection point is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to determine whether a <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object is contained in the current <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection> collection. This method is commonly used to test for the existence of a <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object before performing a task, such as adding a menu item to or removing a menu item from the collection.  
-  
+Use this method to determine whether a <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object is contained in the current <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection> collection. This method is commonly used to test for the existence of a <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object before performing a task, such as adding a menu item to or removing a menu item from the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,10 +130,10 @@
         <summary>Copies all the items from the <see cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection" /> collection to a compatible one-dimensional array of <see cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" /> objects, starting at the specified index in the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to copy the contents of the current <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection> object into the specified zero-based array. Items are copied starting at the specified index of the target array. With the array, you can then use array syntax to access the items in the <xref:System.Array> object.  
-  
+Use this method to copy the contents of the current <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection> object into the specified zero-based array. Items are copied starting at the specified index of the target array. With the array, you can then use array syntax to access the items in the <xref:System.Array> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <value>The default <see cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides a quick way to find the consumer connection point in a collection that is the default connection point.  
-  
+This property provides a quick way to find the consumer connection point in a collection that is the default connection point.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,10 +184,10 @@
         <returns>The zero-based index of the first occurrence of <paramref name="connectionPoint" /> within the current <see cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection" />, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified consumer connection point item appears multiple times in the collection, the index of the first occurrence is returned.  
-  
+If the specified consumer connection point item appears multiple times in the collection, the index of the first occurrence is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,10 +213,10 @@
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" /> at the specified index in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to retrieve a connection point from the collection if you know its index value.  
-  
+Use this method to retrieve a connection point from the collection if you know its index value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,10 +242,10 @@
         <value>The first <see cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" /> in the collection whose ID matches the value of <paramref name="id" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to retrieve a connection point from the collection if you know its connection point ID.  
-  
+Use this method to retrieve a connection point from the collection if you know its connection point ID.  
+ 
  ]]></format>
         </remarks>
       </Docs>

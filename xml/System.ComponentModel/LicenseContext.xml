@@ -23,10 +23,10 @@
     <summary>Specifies when you can use a licensed object and provides a way of obtaining additional services needed to support licenses running within its domain.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides the default <xref:System.ComponentModel.LicenseContext>. It implements only run-time support and does not support saved license keys.  
-  
+This class provides the default <xref:System.ComponentModel.LicenseContext>. It implements only run-time support and does not support saved license keys.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -142,10 +142,10 @@
         <summary>When overridden in a derived class, sets a license key for the specified type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, call this method when you set <xref:System.ComponentModel.LicenseUsageMode> at design time. You must override the <xref:System.ComponentModel.LicenseContext.UsageMode%2A> property to implement design-time license support.  
-  
+Typically, call this method when you set <xref:System.ComponentModel.LicenseUsageMode> at design time. You must override the <xref:System.ComponentModel.LicenseContext.UsageMode%2A> property to implement design-time license support.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

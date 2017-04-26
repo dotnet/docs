@@ -23,10 +23,10 @@
     <summary>Represents a suggested input text pattern.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Input.InputScopeName> provides a set of pre-defined <xref:System.Windows.Input.InputScopePhrase.Name%2A> values.  
-  
+<xref:System.Windows.Input.InputScopeName> provides a set of pre-defined <xref:System.Windows.Input.InputScopePhrase.Name%2A> values.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,10 +63,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputScopePhrase" /> class, taking a string specifying the <see cref="P:System.Windows.Input.InputScopePhrase.Name" /> of the input scope phrase.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.InputScopeName> enumeration provides a set of pre-defined <xref:System.Windows.Input.InputScopePhrase.Name%2A> values.  
-  
+The <xref:System.Windows.Input.InputScopeName> enumeration provides a set of pre-defined <xref:System.Windows.Input.InputScopePhrase.Name%2A> values.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised if <paramref name="name" /> is <see langword="null" />.</exception>
@@ -131,19 +131,19 @@
         <value>A string containing the descriptive name for this <see cref="T:System.Windows.Input.InputScopePhrase" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.InputScopeName> enumeration provides a set of pre-defined <xref:System.Windows.Input.InputScopePhrase.Name%2A> values.  
-  
+The <xref:System.Windows.Input.InputScopeName> enumeration provides a set of pre-defined <xref:System.Windows.Input.InputScopePhrase.Name%2A> values.  
+ 
 <a name="xamlPropertyElementUsage_Name"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
   string  
 </object>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

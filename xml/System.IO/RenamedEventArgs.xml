@@ -23,18 +23,18 @@
     <summary>Provides data for the <see cref="E:System.IO.FileSystemWatcher.Renamed" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class inherits from <xref:System.IO.FileSystemEventArgs> and extends it by adding an old name field and an old full path field to specify the previous name and full path of the affected file or directory.  
+This class inherits from <xref:System.IO.FileSystemEventArgs> and extends it by adding an old name field and an old full path field to specify the previous name and full path of the affected file or directory.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a FileSystemWatcher to monitor file changes (creates, deletes, renames, changes) occurring on a disk drive. The example also shows how to properly receive error notifications.  
-  
- [!code-csharp[FileSystemWatcher#1](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemWatcher/cs/filesystemwatcher.cs#1)]
- [!code-vb[FileSystemWatcher#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemWatcher/VB/FileSystemWatcher.vb#1)]  
-  
+The following example shows how to create a FileSystemWatcher to monitor file changes (creates, deletes, renames, changes) occurring on a disk drive. The example also shows how to properly receive error notifications.  
+ 
+[!code-csharp[FileSystemWatcher#1](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemWatcher/cs/filesystemwatcher.cs#1)]
+[!code-vb[FileSystemWatcher#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemWatcher/VB/FileSystemWatcher.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,10 +71,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.RenamedEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class inherits from the <xref:System.IO.FileSystemEventArgs> class and extends it by adding an old name field to specify the previous name of the file or directory affected.  
-  
+This class inherits from the <xref:System.IO.FileSystemEventArgs> class and extends it by adding an old name field to specify the previous name of the file or directory affected.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,13 +105,13 @@
         <value>The previous fully qualified path of the affected file or directory.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.IO.RenamedEventArgs.OldFullPath%2A> property. This code example is part of a larger example provided for the <xref:System.IO.RenamedEventArgs> class.  
-  
- [!code-csharp[FileSystemWatcher#8](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemWatcher/cs/filesystemwatcher.cs#8)]
- [!code-vb[FileSystemWatcher#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemWatcher/VB/FileSystemWatcher.vb#8)]  
-  
+The following example demonstrates the <xref:System.IO.RenamedEventArgs.OldFullPath%2A> property. This code example is part of a larger example provided for the <xref:System.IO.RenamedEventArgs> class.  
+ 
+[!code-csharp[FileSystemWatcher#8](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemWatcher/cs/filesystemwatcher.cs#8)]
+[!code-vb[FileSystemWatcher#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemWatcher/VB/FileSystemWatcher.vb#8)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>

@@ -15,10 +15,10 @@
     <summary>Provides information about the addresses, bindings, binding elements and binding parameters required to build the channel listeners and channel factories.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The channel listeners and channel factories, in turn, construct the channel stacks used to process incoming and outgoing messages. The binding context also provides the linkage to the inner channel factories and channel listeners that are used to construct the channel and listener stacks. The binding context basically stores all of the dynamic information needed during the construction of the channel stack.  
-  
+The channel listeners and channel factories, in turn, construct the channel stacks used to process incoming and outgoing messages. The binding context also provides the linkage to the inner channel factories and channel listeners that are used to construct the channel and listener stacks. The binding context basically stores all of the dynamic information needed during the construction of the channel stack.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,16 +43,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BindingContext" /> class for a specified binding and collection of binding parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of <xref:System.ServiceModel.Description.ListenUriMode> is set to <xref:System.ServiceModel.Description.ListenUriMode> by this constructor, the relative address is set to <xref:System.String.Empty>, and the base address is set to `null`.  
+The value of <xref:System.ServiceModel.Description.ListenUriMode> is set to <xref:System.ServiceModel.Description.ListenUriMode> by this constructor, the relative address is set to <xref:System.String.Empty>, and the base address is set to `null`.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BindingContext#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#1)]
- [!code-vb[S_UE_BindingContext#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#1)]  
-  
+[!code-csharp[S_UE_BindingContext#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#1)]
+[!code-vb[S_UE_BindingContext#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -85,11 +85,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BindingContext" /> class for a specified binding, collection of binding parameters, and address for the endpoint at which the service listens.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BindingContext#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#2)]
- [!code-vb[S_UE_BindingContext#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#2)]  
-  
+[!code-csharp[S_UE_BindingContext#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#2)]
+[!code-vb[S_UE_BindingContext#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -115,11 +115,11 @@
         <value>The <see cref="T:System.ServiceModel.Channels.CustomBinding" /> for the channel built in the current context.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BindingContext#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#3)]
- [!code-vb[S_UE_BindingContext#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#3)]  
-  
+[!code-csharp[S_UE_BindingContext#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#3)]
+[!code-vb[S_UE_BindingContext#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,16 +142,16 @@
         <value>The <see cref="T:System.ServiceModel.Channels.BindingParameterCollection" /> for the channel built in the current context.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection holds the settings encountered when building the channel stack from the bindings. Settings that need to be pushed down the channel stack during creation are put into the collection until a channel lower in the stack needs them.  
+This collection holds the settings encountered when building the channel stack from the bindings. Settings that need to be pushed down the channel stack during creation are put into the collection until a channel lower in the stack needs them.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BindingContext#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#4)]
- [!code-vb[S_UE_BindingContext#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#4)]  
-  
+[!code-csharp[S_UE_BindingContext#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#4)]
+[!code-vb[S_UE_BindingContext#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,11 +179,11 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.IChannelFactory`1" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> that represents the inner channel factory of the current channel factory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BindingContext#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#9)]
- [!code-vb[S_UE_BindingContext#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#9)]  
-  
+[!code-csharp[S_UE_BindingContext#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#9)]
+[!code-vb[S_UE_BindingContext#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,11 +215,11 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.IChannelListener`1" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> that represents the inner channel listener of the current channel factory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BindingContext#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#10)]
- [!code-vb[S_UE_BindingContext#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#10)]  
-  
+[!code-csharp[S_UE_BindingContext#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#10)]
+[!code-vb[S_UE_BindingContext#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,11 +248,11 @@
           <see langword="true" /> if the inner channel factory can produce the specified <paramref name="TChannel" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BindingContext#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#11)]
- [!code-vb[S_UE_BindingContext#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#11)]  
-  
+[!code-csharp[S_UE_BindingContext#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#11)]
+[!code-vb[S_UE_BindingContext#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -285,11 +285,11 @@
           <see langword="true" /> if the inner channel listener can be built to listen for the <paramref name="TChannel" /> specified; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BindingContext#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#12)]
- [!code-vb[S_UE_BindingContext#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#12)]  
-  
+[!code-csharp[S_UE_BindingContext#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#12)]
+[!code-vb[S_UE_BindingContext#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -313,16 +313,16 @@
         <returns>A <see cref="T:System.ServiceModel.Channels.BindingContext" /> object that is a copy of the current channel build context.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a copy that is a deep clone of your binding context. A deep clone of an object creates a copy of the object and a copy of everything directly or indirectly referenced by that object. (This is also called copying the entire object graph.) A shallow clone of an object, by contrast, is a copy of the object only. If the object contains references to other objects, the shallow copy does not create copies of the referred objects; instead, it copies only the references to the original objects.  
+This method returns a copy that is a deep clone of your binding context. A deep clone of an object creates a copy of the object and a copy of everything directly or indirectly referenced by that object. (This is also called copying the entire object graph.) A shallow clone of an object, by contrast, is a copy of the object only. If the object contains references to other objects, the shallow copy does not create copies of the referred objects; instead, it copies only the references to the original objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BindingContext#13](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#13)]
- [!code-vb[S_UE_BindingContext#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#13)]  
-  
+[!code-csharp[S_UE_BindingContext#13](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#13)]
+[!code-vb[S_UE_BindingContext#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -354,16 +354,16 @@
         <returns>The typed object <paramref name="T" /> requested if it is present or <see langword="null" /> if it is not.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Clones the binding context and calls <xref:System.ServiceModel.Channels.BindingElement.GetProperty%60%601%28System.ServiceModel.Channels.BindingContext%29> on the next binding element stored in the binding context.  
+Clones the binding context and calls <xref:System.ServiceModel.Channels.BindingElement.GetProperty%60%601%28System.ServiceModel.Channels.BindingContext%29> on the next binding element stored in the binding context.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BindingContext#14](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#14)]
- [!code-vb[S_UE_BindingContext#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#14)]  
-  
+[!code-csharp[S_UE_BindingContext#14](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#14)]
+[!code-vb[S_UE_BindingContext#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -386,16 +386,16 @@
         <value>The <see cref="T:System.Uri" /> at which the service endpoint listens.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The address for the endpoint at which a service listens is obtained by appending the <xref:System.ServiceModel.Channels.BindingContext.ListenUriRelativeAddress%2A> to the <xref:System.ServiceModel.Channels.BindingContext.ListenUriBaseAddress%2A>. This absolute address can be set using the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A> property.  
+The address for the endpoint at which a service listens is obtained by appending the <xref:System.ServiceModel.Channels.BindingContext.ListenUriRelativeAddress%2A> to the <xref:System.ServiceModel.Channels.BindingContext.ListenUriBaseAddress%2A>. This absolute address can be set using the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BindingContext#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#5)]
- [!code-vb[S_UE_BindingContext#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#5)]  
-  
+[!code-csharp[S_UE_BindingContext#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#5)]
+[!code-vb[S_UE_BindingContext#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -418,11 +418,11 @@
         <value>The <see cref="T:System.ServiceModel.Description.ListenUriMode" /> that indicates whether the transport must ensure that the URI provided for the service to listen on is unique.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BindingContext#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#6)]
- [!code-vb[S_UE_BindingContext#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#6)]  
-  
+[!code-csharp[S_UE_BindingContext#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#6)]
+[!code-vb[S_UE_BindingContext#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -445,16 +445,16 @@
         <value>The relative address at which the service endpoint listens.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The address for the endpoint at which a service listens is obtained by appending the <xref:System.ServiceModel.Channels.BindingContext.ListenUriRelativeAddress%2A> to the <xref:System.ServiceModel.Channels.BindingContext.ListenUriBaseAddress%2A>. This absolute address can be set using the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A> property.  
+The address for the endpoint at which a service listens is obtained by appending the <xref:System.ServiceModel.Channels.BindingContext.ListenUriRelativeAddress%2A> to the <xref:System.ServiceModel.Channels.BindingContext.ListenUriBaseAddress%2A>. This absolute address can be set using the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BindingContext#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#7)]
- [!code-vb[S_UE_BindingContext#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#7)]  
-  
+[!code-csharp[S_UE_BindingContext#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#7)]
+[!code-vb[S_UE_BindingContext#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -477,16 +477,16 @@
         <value>The <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> that contains the binding elements that are used by other binding elements to construct the channel stack.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The binding elements that are put into this collection are those elements that do not correspond directly to a listener or factory in one of the channel stacks. The encoder binding element, for example, ends up in this collection and is then used by the transport channel to construct a message encoder.  
+The binding elements that are put into this collection are those elements that do not correspond directly to a listener or factory in one of the channel stacks. The encoder binding element, for example, ends up in this collection and is then used by the transport channel to construct a message encoder.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UE_BindingContext#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#8)]
- [!code-vb[S_UE_BindingContext#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#8)]  
-  
+[!code-csharp[S_UE_BindingContext#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_bindingcontext/cs/program.cs#8)]
+[!code-vb[S_UE_BindingContext#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_bindingcontext/vb/program.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

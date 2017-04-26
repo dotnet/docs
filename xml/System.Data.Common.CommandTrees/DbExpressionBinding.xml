@@ -14,10 +14,10 @@
     <summary>Represents an input set to relational expressions such as <see cref="T:System.Data.Common.CommandTrees.DbFilterExpression" />, <see cref="T:System.Data.Common.CommandTrees.DbProjectExpression" />, and <see cref="T:System.Data.Common.CommandTrees.DbJoinExpression" />. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is very similar to a `foreach` traversal with a binding to each element of the traversal. This class is provided as a helper class for many of the expressions that correspond to relational operators.  
-  
+This class is very similar to a `foreach` traversal with a binding to each element of the traversal. This class is provided as a helper class for many of the expressions that correspond to relational operators.  
+ 
  ]]></format>
     </remarks>
   </Docs>

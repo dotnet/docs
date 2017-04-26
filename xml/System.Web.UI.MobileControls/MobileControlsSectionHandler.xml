@@ -90,10 +90,10 @@
         <returns>A <see cref="T:System.Web.UI.MobileControls.MobileControlsSectionHandler" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.MobileControlsSectionHandler> instance is cast to an <xref:System.Configuration.IConfigurationSectionHandler> interface.  
-  
+This method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.MobileControlsSectionHandler> instance is cast to an <xref:System.Configuration.IConfigurationSectionHandler> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

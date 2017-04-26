@@ -19,17 +19,17 @@
     <summary>Provides a type converter to convert components to and from various other representations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class implements <xref:System.ComponentModel.TypeConverter.GetPropertiesSupported%2A> and <xref:System.ComponentModel.ComponentConverter.GetProperties%2A> by returning the properties through the <xref:System.ComponentModel.TypeDescriptor.GetProperties%2A> method of <xref:System.ComponentModel.TypeDescriptor>.  
-  
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
-  
+This class implements <xref:System.ComponentModel.TypeConverter.GetPropertiesSupported%2A> and <xref:System.ComponentModel.ComponentConverter.GetProperties%2A> by returning the properties through the <xref:System.ComponentModel.TypeDescriptor.GetProperties%2A> method of <xref:System.ComponentModel.TypeDescriptor>.  
+ 
+For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ 
 > [!NOTE]
 >  You should never create an instance of <xref:System.ComponentModel.ComponentConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of <xref:System.ComponentModel.TypeDescriptor>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
-  
- This converter converts an object that implements <xref:System.ComponentModel.IComponent> and displays its properties in the Properties window.  
-  
+ 
+This converter converts an object that implements <xref:System.ComponentModel.IComponent> and displays its properties in the Properties window.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,20 +87,20 @@
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> with the properties that are exposed for the component, or <see langword="null" /> if there are no properties.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
- The `attributes` array will be used to filter the array. The `attributes` can have a mix of <xref:System.Type> and <xref:System.Attribute> objects. Filtering is defined by the following rules:  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
+The `attributes` array will be used to filter the array. The `attributes` can have a mix of <xref:System.Type> and <xref:System.Attribute> objects. Filtering is defined by the following rules:  
+ 
 -   A <xref:System.Type> object will be treated as a wildcard; it will match any property that has the <xref:System.Type> in its set of attributes.  
-  
+ 
 -   If a property does not have an <xref:System.Attribute> of the same class, the property will not be included in the returned array.  
-  
+ 
 -   If the attribute is an instance of <xref:System.Attribute>, the property must be an exact match or it will not be included in the returned array.  
-  
+ 
 -   If a <xref:System.Attribute> instance is specified and it is the default property, it will be included in the returned array even if there is no instance of the <xref:System.Attribute> in the property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,10 +132,10 @@
           <see langword="true" /> because <see cref="M:System.ComponentModel.TypeConverter.GetProperties(System.Object)" /> should be called to find the properties of this object. This method never returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

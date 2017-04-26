@@ -136,10 +136,10 @@
         <summary>Sends a request to activate a control and initiate its single, unambiguous action.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IInvokeProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonContextualTabGroupDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IInvokeProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

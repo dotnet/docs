@@ -75,17 +75,17 @@
         <returns>An object that implements the <see langword="ITypeLib" /> interface.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on `ITypeLib`, please see its existing documentation in the MSDN library.  
+For more information on `ITypeLib`, please see its existing documentation in the MSDN library.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[System.Runtime.InteropServices.TypelibConverter.ConvertAssemblyToTypelib1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Runtime.InteropServices.TypelibConverter.ConvertAssemblyToTypelib1/CPP/convert2.cpp#1)]
- [!code-csharp[System.Runtime.InteropServices.TypelibConverter.ConvertAssemblyToTypelib1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.InteropServices.TypelibConverter.ConvertAssemblyToTypelib1/CS/convert2.cs#1)]
- [!code-vb[System.Runtime.InteropServices.TypelibConverter.ConvertAssemblyToTypelib1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.InteropServices.TypelibConverter.ConvertAssemblyToTypelib1/VB/convert2.vb#1)]  
-  
+[!code-cpp[System.Runtime.InteropServices.TypelibConverter.ConvertAssemblyToTypelib1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Runtime.InteropServices.TypelibConverter.ConvertAssemblyToTypelib1/CPP/convert2.cpp#1)]
+[!code-csharp[System.Runtime.InteropServices.TypelibConverter.ConvertAssemblyToTypelib1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.InteropServices.TypelibConverter.ConvertAssemblyToTypelib1/CS/convert2.cs#1)]
+[!code-vb[System.Runtime.InteropServices.TypelibConverter.ConvertAssemblyToTypelib1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.InteropServices.TypelibConverter.ConvertAssemblyToTypelib1/VB/convert2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code.  
@@ -130,12 +130,12 @@
         <returns>An <see cref="T:System.Reflection.Emit.AssemblyBuilder" /> object containing the converted type library.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not want to generate a strong name for your assembly, it is valid for `publicKey` and `keyPair` to be `null`, as long as `flags` does not equal <xref:System.Runtime.InteropServices.TypeLibImporterFlags?displayProperty=fullName>. Otherwise, at least one of these parameters must be specified. If `publicKey` is `null`, the public key in `keyPair` will be set in the target assembly's manifest metadata and a signature will be generated based on the contents of the assembly. If `keyPair` is `null`, `publicKey` will be set in the target assembly's manifest metadata and no signature will be generated. Specifying both parameters is not generally useful, and can result in an invalid signature.  
-  
- For more information on `ITypeLib`, please see its existing documentation in the MSDN library.  
-  
+If you do not want to generate a strong name for your assembly, it is valid for `publicKey` and `keyPair` to be `null`, as long as `flags` does not equal <xref:System.Runtime.InteropServices.TypeLibImporterFlags?displayProperty=fullName>. Otherwise, at least one of these parameters must be specified. If `publicKey` is `null`, the public key in `keyPair` will be set in the target assembly's manifest metadata and a signature will be generated based on the contents of the assembly. If `keyPair` is `null`, `publicKey` will be set in the target assembly's manifest metadata and no signature will be generated. Specifying both parameters is not generally useful, and can result in an invalid signature.  
+ 
+For more information on `ITypeLib`, please see its existing documentation in the MSDN library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -205,19 +205,19 @@
         <returns>An <see cref="T:System.Reflection.Emit.AssemblyBuilder" /> object containing the converted type library.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not want to generate a strong name for your assembly, it is valid for `publicKey` and `keyPair` to be `null`, as long as `flags` does not equal <xref:System.Runtime.InteropServices.TypeLibImporterFlags?displayProperty=fullName>. Otherwise, atleast one of these parameters must be specified. If `publicKey` is `null`, the public key in `keyPair` will be set in the target assembly's manifest metadata and a signature will be generated based on the contents of the assembly. If `keyPair` is `null`, `publicKey` will be set in the target assembly's manifest metadata and no signature will be generated. Specifying both parameters is not generally useful, and can result in an invalid signature.  
+If you do not want to generate a strong name for your assembly, it is valid for `publicKey` and `keyPair` to be `null`, as long as `flags` does not equal <xref:System.Runtime.InteropServices.TypeLibImporterFlags?displayProperty=fullName>. Otherwise, atleast one of these parameters must be specified. If `publicKey` is `null`, the public key in `keyPair` will be set in the target assembly's manifest metadata and a signature will be generated based on the contents of the assembly. If `keyPair` is `null`, `publicKey` will be set in the target assembly's manifest metadata and no signature will be generated. Specifying both parameters is not generally useful, and can result in an invalid signature.  
+ 
+For more information on `ITypeLib`, please see its existing documentation in the MSDN library.  
+ 
   
- For more information on `ITypeLib`, please see its existing documentation in the MSDN library.  
-  
-   
-  
+ 
 ## Examples  
- [!code-cpp[System.Runtime.InteropServices.ConvertTypelibToASSembly#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Runtime.InteropServices.ConvertTypelibToASSembly/CPP/convert1.cpp#1)]
- [!code-csharp[System.Runtime.InteropServices.ConvertTypelibToASSembly#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.InteropServices.ConvertTypelibToASSembly/CS/convert1.cs#1)]
- [!code-vb[System.Runtime.InteropServices.ConvertTypelibToASSembly#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.InteropServices.ConvertTypelibToASSembly/VB/convert1.vb#1)]  
-  
+[!code-cpp[System.Runtime.InteropServices.ConvertTypelibToASSembly#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Runtime.InteropServices.ConvertTypelibToASSembly/CPP/convert1.cpp#1)]
+[!code-csharp[System.Runtime.InteropServices.ConvertTypelibToASSembly#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.InteropServices.ConvertTypelibToASSembly/CS/convert1.cs#1)]
+[!code-vb[System.Runtime.InteropServices.ConvertTypelibToASSembly#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.InteropServices.ConvertTypelibToASSembly/VB/convert1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

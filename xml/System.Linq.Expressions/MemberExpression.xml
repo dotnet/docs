@@ -30,20 +30,20 @@
     <summary>Represents accessing a field or property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Linq.Expressions.Expression.Field%2A>, <xref:System.Linq.Expressions.Expression.Property%2A> or <xref:System.Linq.Expressions.Expression.PropertyOrField%2A> factory methods to create a <xref:System.Linq.Expressions.MemberExpression>.  
+Use the <xref:System.Linq.Expressions.Expression.Field%2A>, <xref:System.Linq.Expressions.Expression.Property%2A> or <xref:System.Linq.Expressions.Expression.PropertyOrField%2A> factory methods to create a <xref:System.Linq.Expressions.MemberExpression>.  
+ 
+The value of the <xref:System.Linq.Expressions.Expression.NodeType%2A> property of a <xref:System.Linq.Expressions.MemberExpression> is <xref:System.Linq.Expressions.ExpressionType>.  
+ 
   
- The value of the <xref:System.Linq.Expressions.Expression.NodeType%2A> property of a <xref:System.Linq.Expressions.MemberExpression> is <xref:System.Linq.Expressions.ExpressionType>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Linq.Expressions.MemberExpression> that represents getting the value of a field member.  
-  
- [!code-csharp[System.Linq.Expressions.Expression#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#5)]
- [!code-vb[System.Linq.Expressions.Expression#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#5)]  
-  
+The following example creates a <xref:System.Linq.Expressions.MemberExpression> that represents getting the value of a field member.  
+ 
+[!code-csharp[System.Linq.Expressions.Expression#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#5)]
+[!code-vb[System.Linq.Expressions.Expression#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,10 +80,10 @@
         <returns>The result of visiting this node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This default implementation for <xref:System.Linq.Expressions.ExpressionType> nodes calls <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>. Override this method to call into a more specific method on a derived visitor class of the <xref:System.Linq.Expressions.ExpressionVisitor> class. However, it should still support unknown visitors by calling <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>.  
-  
+This default implementation for <xref:System.Linq.Expressions.ExpressionType> nodes calls <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>. Override this method to call into a more specific method on a derived visitor class of the <xref:System.Linq.Expressions.ExpressionVisitor> class. However, it should still support unknown visitors by calling <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

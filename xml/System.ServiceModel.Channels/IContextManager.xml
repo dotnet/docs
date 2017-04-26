@@ -16,10 +16,10 @@
     <summary>Defines an interface that allows you to get and set the context on the channel.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For channels that use <xref:System.ServiceModel.WSHttpContextBinding> with the <xref:System.ServiceModel.SessionMode> value set, the context cannot be retrieved on the client using <xref:System.ServiceModel.Channels.IContextManager> because a new channel that establishes a session is created each time <xref:System.ServiceModel.Channels.IChannelFactory.GetProperty%2A> is called to enforce <xref:System.ServiceModel.SessionMode> semantics on a channel. This means that even though the context is properly propagated back to the client in this case, it cannot be retrieved using <xref:System.ServiceModel.Channels.IContextManager>. You can still retrieve it using <xref:System.ServiceModel.Channels.ContextMessageProperty> as shown in the following code.  
-  
+For channels that use <xref:System.ServiceModel.WSHttpContextBinding> with the <xref:System.ServiceModel.SessionMode> value set, the context cannot be retrieved on the client using <xref:System.ServiceModel.Channels.IContextManager> because a new channel that establishes a session is created each time <xref:System.ServiceModel.Channels.IChannelFactory.GetProperty%2A> is called to enforce <xref:System.ServiceModel.SessionMode> semantics on a channel. This means that even though the context is properly propagated back to the client in this case, it cannot be retrieved using <xref:System.ServiceModel.Channels.IContextManager>. You can still retrieve it using <xref:System.ServiceModel.Channels.ContextMessageProperty> as shown in the following code.  
+ 
 ```csharp  
 using (new OperationContextScope((IContextChannel)channel))  
 {  
@@ -32,7 +32,7 @@ using (new OperationContextScope((IContextChannel)channel))
 }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,30 +55,30 @@ using (new OperationContextScope((IContextChannel)channel))
           <see langword="true" /> if the context is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When context management is enabled the context channel caches the context in its lifetime. Context can be retrieved from the channel through the `IContextManager` channel property by calling <xref:System.ServiceModel.Channels.IContextManager.GetContext%2A> method on it. The channel can also be pre-initialized with context before being opened by calling the <xref:System.ServiceModel.Channels.IContextManager.SetContext%2A> method on the channel property. Once the channel is initialized with context it cannot be reset.  
-  
- The following are invariants in this mode:  
-  
+When context management is enabled the context channel caches the context in its lifetime. Context can be retrieved from the channel through the `IContextManager` channel property by calling <xref:System.ServiceModel.Channels.IContextManager.GetContext%2A> method on it. The channel can also be pre-initialized with context before being opened by calling the <xref:System.ServiceModel.Channels.IContextManager.SetContext%2A> method on the channel property. Once the channel is initialized with context it cannot be reset.  
+ 
+The following are invariants in this mode:  
+ 
 -   Any call to <xref:System.ServiceModel.Channels.IContextManager.SetContext%2A> after the channel is open throws an `InvalidOperationException`.  
-  
+ 
 -   Any attempt to send context through the `ContextMessageProperty` in an outgoing message throws `InvalidOperationException`.  
-  
+ 
 -   If a message is received from the server with context, when the channel is already initialized with a context a `ProtocolException` is thrown. Note that you can receive initial context from a server if the channel is opened without explicitly setting the context.  
-  
+ 
 -   The `ContextMessageProperty` on an incoming message is always `null`.  
-  
- When context management is not enabled, the context channel does not manage context. It is the application's responsibility to retrieve, manage and apply context through the `ContextMessageProperty`. Any attempt to call <xref:System.ServiceModel.Channels.IContextManager.GetContext%2A> or <xref:System.ServiceModel.Channels.IContextManager.SetContext%2A> using through the `IContextManager` channel property results in `InvalidOperationException`.  
-  
- All HTTP cookies, except for context HTTP cookies, are handled at the channel level. Context HTTP cookies are managed at the application level. This can have unexpected consequences when channels are shared to talk to different instances targeted by <xref:System.ServiceModel.Channels.ContextMessageProperty>. The following table shows how HTTP cookies are affected when <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A> is set to either `true` or `false`.  
-  
+ 
+When context management is not enabled, the context channel does not manage context. It is the application's responsibility to retrieve, manage and apply context through the `ContextMessageProperty`. Any attempt to call <xref:System.ServiceModel.Channels.IContextManager.GetContext%2A> or <xref:System.ServiceModel.Channels.IContextManager.SetContext%2A> using through the `IContextManager` channel property results in `InvalidOperationException`.  
+ 
+All HTTP cookies, except for context HTTP cookies, are handled at the channel level. Context HTTP cookies are managed at the application level. This can have unexpected consequences when channels are shared to talk to different instances targeted by <xref:System.ServiceModel.Channels.ContextMessageProperty>. The following table shows how HTTP cookies are affected when <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A> is set to either `true` or `false`.  
+ 
 |Binding|IContextManager.Enabled Value|Context HTTP Cookie Scope|Other HTTP Cookies Scope|  
 |-------------|-----------------------------------|-------------------------------|------------------------------|  
 |BasicHttpBinding|n/a|ChannelFactory|ChannelFactory|  
 |BasicHttpContextBinding|true|Channel|Channel|  
 |BasicHttpContextBinding|false|For each message (explicitly managed by application)|Channel|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,10 +101,10 @@ using (new OperationContextScope((IContextChannel)channel))
         <returns>The <see cref="T:System.Collections.Generic.IDictionary`2" /> of key/value pairs with the namespace and name of the context.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how the context can be obtained from a typed proxy instance on the client.  
-  
+The following code shows how the context can be obtained from a typed proxy instance on the client.  
+ 
 ```  
 IDictionary<string, string> context;  
 CalculatorProxy proxy;  
@@ -112,7 +112,7 @@ IContextManager cm = proxy.InnerChannel.GetProperty<IContextManager>();
 if (cm != null)  
     context = cm.GetContext();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,10 +137,10 @@ if (cm != null)
         <summary>Sets the context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how the context can be set on the client.  
-  
+The following code shows how the context can be set on the client.  
+ 
 ```  
 IDictionary<string, string> context;  
 CalculatorProxy proxy;  
@@ -148,7 +148,7 @@ IContextManager cm = proxy.InnerChannel.GetProperty<IContextManager>();
 if (cm != null)  
     cm.SetContext(context);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

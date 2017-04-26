@@ -23,10 +23,10 @@
     <summary>Represents a collection of cells in a <see cref="T:System.Windows.Forms.DataGridViewRow" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.DataGridViewCellCollection> objects are retrieved by the <xref:System.Windows.Forms.DataGridViewRow.Cells%2A?displayProperty=fullName> property.  
-  
+<xref:System.Windows.Forms.DataGridViewCellCollection> objects are retrieved by the <xref:System.Windows.Forms.DataGridViewRow.Cells%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <returns>The position in which to insert the new element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to populate a <xref:System.Windows.Forms.DataGridViewRow> with cells before you add the row to a <xref:System.Windows.Forms.DataGridView> control. Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
-  
+Use this method to populate a <xref:System.Windows.Forms.DataGridViewRow> with cells before you add the row to a <xref:System.Windows.Forms.DataGridView> control. Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row that owns this <see cref="T:System.Windows.Forms.DataGridViewCellCollection" /> already belongs to a <see cref="T:System.Windows.Forms.DataGridView" /> control.  
@@ -114,10 +114,10 @@
         <summary>Adds an array of cells to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to populate a <xref:System.Windows.Forms.DataGridViewRow> with cells before you add the row to a <xref:System.Windows.Forms.DataGridView> control. Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
-  
+Use this method to populate a <xref:System.Windows.Forms.DataGridViewRow> with cells before you add the row to a <xref:System.Windows.Forms.DataGridView> control. Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -154,10 +154,10 @@
         <summary>Clears all cells from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to alter the collection before you add the containing row to a <xref:System.Windows.Forms.DataGridView> control. Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
-  
+Use this method to alter the collection before you add the containing row to a <xref:System.Windows.Forms.DataGridView> control. Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row that owns this <see cref="T:System.Windows.Forms.DataGridViewCellCollection" /> already belongs to a <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
@@ -179,15 +179,15 @@
         <summary>Occurs when the collection is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridViewCellCollection.CollectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridViewCellCollection> named `DataGridViewCellCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridViewCellCollection.CollectionChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#371](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#371)]
- [!code-vb[System.Windows.Forms.EventExamples#371](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#371)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridViewCellCollection.CollectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridViewCellCollection> named `DataGridViewCellCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridViewCellCollection.CollectionChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#371](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#371)]
+[!code-vb[System.Windows.Forms.EventExamples#371](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#371)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,10 +282,10 @@
         <summary>Inserts a cell into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to alter the collection before you add the containing row to a <xref:System.Windows.Forms.DataGridView> control. Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
-  
+Use this method to alter the collection before you add the containing row to a <xref:System.Windows.Forms.DataGridView> control. Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row that owns this <see cref="T:System.Windows.Forms.DataGridViewCellCollection" /> already belongs to a <see cref="T:System.Windows.Forms.DataGridView" /> control.  
@@ -398,12 +398,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.DataGridViewCellCollection.CollectionChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The <xref:System.Windows.Forms.DataGridViewCellCollection.OnCollectionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
+The <xref:System.Windows.Forms.DataGridViewCellCollection.OnCollectionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -431,10 +431,10 @@
         <summary>Removes the specified cell from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to alter the collection before you add the containing row to a <xref:System.Windows.Forms.DataGridView> control. Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
-  
+Use this method to alter the collection before you add the containing row to a <xref:System.Windows.Forms.DataGridView> control. Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row that owns this <see cref="T:System.Windows.Forms.DataGridViewCellCollection" /> already belongs to a <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
@@ -462,10 +462,10 @@
         <summary>Removes the cell at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to alter the collection before you add the containing row to a <xref:System.Windows.Forms.DataGridView> control. Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
-  
+Use this method to alter the collection before you add the containing row to a <xref:System.Windows.Forms.DataGridView> control. Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row that owns this <see cref="T:System.Windows.Forms.DataGridViewCellCollection" /> already belongs to a <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
@@ -493,10 +493,10 @@
         <summary>Copies the elements of the collection to the specified array, starting at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -529,10 +529,10 @@
         <value>The number of elements in the <see cref="T:System.Windows.Forms.DataGridViewCellCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -555,10 +555,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -580,10 +580,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Forms.DataGridViewCellCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -606,10 +606,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -635,12 +635,12 @@
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">
@@ -669,12 +669,12 @@
         <summary>Clears the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row that owns this <see cref="T:System.Windows.Forms.DataGridViewCellCollection" /> already belongs to a <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
@@ -702,10 +702,10 @@
           <see langword="true" /> if the <paramref name="value" /> is found in the <see cref="T:System.Windows.Forms.DataGridViewCellCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -731,10 +731,10 @@
         <returns>The index of value if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -761,12 +761,12 @@
         <summary>Inserts an item into the collection at the specified position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">
@@ -796,10 +796,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -822,10 +822,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -851,10 +851,10 @@
         <value>The <see cref="T:System.Windows.Forms.DataGridViewCell" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified value when setting this property is not a <see cref="T:System.Windows.Forms.DataGridViewCell" />.</exception>
@@ -892,12 +892,12 @@
         <summary>Removes the first occurrence of a specific object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">
@@ -927,12 +927,12 @@
         <summary>Removes the <see cref="T:System.Windows.Forms.DataGridViewCell" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+Once you add the row to a control, the number of cells it contains always matches the number of columns in the control, so this method is no longer useful.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row that owns this <see cref="T:System.Windows.Forms.DataGridViewCellCollection" /> already belongs to a <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>

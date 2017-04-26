@@ -23,22 +23,22 @@
     <summary>Provides methods for passing credentials across a stream and requesting or performing authentication for client-server applications.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This abstract class provides methods and properties that are common to authenticated streams.  
+This abstract class provides methods and properties that are common to authenticated streams.  
+ 
+Authenticated streams can provide authentication, data signing, and encryption services that can help maintain the integrity and confidentiality of data transmitted using the <xref:System.Net.Security.AuthenticatedStream.InnerStream%2A>.  
+ 
+The security protocol implemented by a class that derives from <xref:System.Net.Security.AuthenticatedStream> together with the security protocols supported on the client and server will determine the security features that are available to an application. The <xref:System.Net.Security.NegotiateStream> and <xref:System.Net.Security.SslStream> classes inherit from <xref:System.Net.Security.AuthenticatedStream> and implement the Negotiate and Secure Sockets Layer security protocols, respectively.  
+ 
   
- Authenticated streams can provide authentication, data signing, and encryption services that can help maintain the integrity and confidentiality of data transmitted using the <xref:System.Net.Security.AuthenticatedStream.InnerStream%2A>.  
-  
- The security protocol implemented by a class that derives from <xref:System.Net.Security.AuthenticatedStream> together with the security protocols supported on the client and server will determine the security features that are available to an application. The <xref:System.Net.Security.NegotiateStream> and <xref:System.Net.Security.SslStream> classes inherit from <xref:System.Net.Security.AuthenticatedStream> and implement the Negotiate and Secure Sockets Layer security protocols, respectively.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the properties of an authenticated stream.  
-  
- [!code-cpp[NclNegoAsyncClient#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#6)]
- [!code-csharp[NclNegoAsyncClient#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#6)]  
-  
+The following code example demonstrates displaying the properties of an authenticated stream.  
+ 
+[!code-cpp[NclNegoAsyncClient#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#6)]
+[!code-csharp[NclNegoAsyncClient#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#6)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -74,12 +74,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Security.AuthenticatedStream" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you specify `true` for the `leaveStreamOpen` parameter, closing the <xref:System.Net.Security.AuthenticatedStream> has no effect on the `innerStream` stream.  
-  
- This constructor is provided for implementers of authenticated streams, and can be called only by classes that are derived from <xref:System.Net.Security.AuthenticatedStream>.  
-  
+When you specify `true` for the `leaveStreamOpen` parameter, closing the <xref:System.Net.Security.AuthenticatedStream> has no effect on the `innerStream` stream.  
+ 
+This constructor is provided for implementers of authenticated streams, and can be called only by classes that are derived from <xref:System.Net.Security.AuthenticatedStream>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -120,12 +120,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Security.AuthenticatedStream" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Net.Security.AuthenticatedStream> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Net.Security.AuthenticatedStream> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -162,10 +162,10 @@
         <value>A <see cref="T:System.IO.Stream" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that inherit from <xref:System.Net.Security.AuthenticatedStream> can use this property to access the stream passed to the <xref:System.Net.Security.AuthenticatedStream.%23ctor%28System.IO.Stream%2CSystem.Boolean%29>.  
-  
+Classes that inherit from <xref:System.Net.Security.AuthenticatedStream> can use this property to access the stream passed to the <xref:System.Net.Security.AuthenticatedStream.%23ctor%28System.IO.Stream%2CSystem.Boolean%29>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,18 +197,18 @@
           <see langword="true" /> if successful authentication occurred; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The methods called to perform authentication are defined in the classes that inherit from <xref:System.Net.Security.AuthenticatedStream>.  
+The methods called to perform authentication are defined in the classes that inherit from <xref:System.Net.Security.AuthenticatedStream>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoAsyncClient#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#6)]
- [!code-csharp[NclNegoAsyncClient#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#6)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoAsyncClient#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#6)]
+[!code-csharp[NclNegoAsyncClient#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -240,18 +240,18 @@
           <see langword="true" /> if data is encrypted before being transmitted over the network and decrypted when it reaches the remote endpoint; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Encryption helps to protect the privacy of the data; namely, it helps to ensure that while data is in transit, it cannot be deciphered by third parties.  
+Encryption helps to protect the privacy of the data; namely, it helps to ensure that while data is in transit, it cannot be deciphered by third parties.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoAsyncClient#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#6)]
- [!code-csharp[NclNegoAsyncClient#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#6)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoAsyncClient#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#6)]
+[!code-csharp[NclNegoAsyncClient#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,18 +283,18 @@
           <see langword="true" /> if the client and server have been authenticated; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Not all security protocols support mutual authentication. To determine whether mutual authentication is supported by the security protocol implemented in a class that inherits from <xref:System.Net.Security.AuthenticatedStream>, check the class documentation.  
+Not all security protocols support mutual authentication. To determine whether mutual authentication is supported by the security protocol implemented in a class that inherits from <xref:System.Net.Security.AuthenticatedStream>, check the class documentation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoAsyncClient#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#6)]
- [!code-csharp[NclNegoAsyncClient#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#6)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoAsyncClient#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#6)]
+[!code-csharp[NclNegoAsyncClient#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,18 +326,18 @@
           <see langword="true" /> if the local endpoint was authenticated as the server side of a client-server authenticated connection; <see langword="false" /> if the local endpoint was authenticated as the client.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Most security protocols used for client-server authentication define specific behavior and requirements for supplying credentials for authentication based on whether you are the client or the server.  
+Most security protocols used for client-server authentication define specific behavior and requirements for supplying credentials for authentication based on whether you are the client or the server.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoAsyncClient#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#6)]
- [!code-csharp[NclNegoAsyncClient#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#6)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoAsyncClient#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#6)]
+[!code-csharp[NclNegoAsyncClient#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -369,18 +369,18 @@
           <see langword="true" /> if the data is signed before being transmitted; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Data signing helps to protect the integrity of the data; namely, it helps the recipient determine whether the data has been tampered with while in transit.  
+Data signing helps to protect the integrity of the data; namely, it helps the recipient determine whether the data has been tampered with while in transit.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the value of this property.  
-  
- [!code-cpp[NclNegoAsyncClient#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#6)]
- [!code-csharp[NclNegoAsyncClient#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#6)]  
-  
+The following code example demonstrates displaying the value of this property.  
+ 
+[!code-cpp[NclNegoAsyncClient#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNegoasyncClient/CPP/NclNegoasyncClient.cpp#6)]
+[!code-csharp[NclNegoAsyncClient#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNegoasyncClient/CS/client.cs#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -412,10 +412,10 @@
           <see langword="true" /> if the inner stream has been left open; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When set to `true`, the stream passed to the constructor of this class will not be closed after the instance of this class is closed. When set to `false`, closing the instance of this class will also close the underlined transport stream. The default value of this property is `false`.  
-  
+When set to `true`, the stream passed to the constructor of this class will not be closed after the instance of this class is closed. When set to `false`, closing the instance of this class will also close the underlined transport stream. The default value of this property is `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

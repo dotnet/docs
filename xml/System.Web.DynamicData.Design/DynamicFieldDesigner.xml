@@ -48,10 +48,10 @@
         <returns>An empty field object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.Design.DynamicFieldDesigner.CreateField> method is called when the designer does not have schema information about the field.  
-  
+The <xref:System.Web.DynamicData.Design.DynamicFieldDesigner.CreateField> method is called when the designer does not have schema information about the field.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,10 +101,10 @@
         <returns>The new template field.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.Design.DynamicFieldDesigner.CreateTemplateField%2A> method is invoked by the designer when it converts a data control field into a <xref:System.Web.UI.WebControls.TemplateField> object.  
-  
+The <xref:System.Web.DynamicData.Design.DynamicFieldDesigner.CreateTemplateField%2A> method is invoked by the designer when it converts a data control field into a <xref:System.Web.UI.WebControls.TemplateField> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,10 +195,10 @@
           <see langword="true" /> if the data field is enabled in the fields editor; <see langword="false" /> if the data field will not be displayed in the fields editor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.DynamicData.Design.DynamicFieldDesigner.IsEnabled%2A> method returns `false`, the data field will not be displayed in the fields editor. This occurs when the data-bound control does not contain the field yet  
-  
+If the <xref:System.Web.DynamicData.Design.DynamicFieldDesigner.IsEnabled%2A> method returns `false`, the data field will not be displayed in the fields editor. This occurs when the data-bound control does not contain the field yet  
+ 
  ]]></format>
         </remarks>
       </Docs>

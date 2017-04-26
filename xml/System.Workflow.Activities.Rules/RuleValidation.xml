@@ -14,10 +14,10 @@
     <summary>Validates expression conditions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code creates an invalid condition. It then attempts to validate the condition, and displays any errors that result.  
-  
+The following code creates an invalid condition. It then attempts to validate the condition, and displays any errors that result.  
+ 
 ```csharp  
 // Create an invalid condition ("abc" < true).  
 CodeBinaryOperatorExpression invalidCompare = new CodeBinaryOperatorExpression();  
@@ -42,13 +42,13 @@ if (!condition.Validate(validation))
 }  
   
 ```  
-  
- Running this code produces the following error:  
-  
+ 
+Running this code produces the following error:  
+ 
 ```  
 Relational operator "LessThan" cannot be used on operands of types "string" and "bool".  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,10 +96,10 @@ Relational operator "LessThan" cannot be used on operands of types "string" and 
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> class using the specified <see cref="T:System.Workflow.ComponentModel.Activity" /> and the type provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is used at design time.  
-  
+This constructor is used at design time.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -186,10 +186,10 @@ Relational operator "LessThan" cannot be used on operands of types "string" and 
           <see langword="true" /> if the <paramref name="newParent" /> was added to the stack; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `newParent` is already part of the parent <xref:System.CodeDom.CodeExpression> objects, a new <xref:System.Workflow.ComponentModel.Compiler.ValidationError> is created.  
-  
+If the `newParent` is already part of the parent <xref:System.CodeDom.CodeExpression> objects, a new <xref:System.Workflow.ComponentModel.Compiler.ValidationError> is created.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

@@ -54,10 +54,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlProcessingInstruction" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not instantiate an <xref:System.Xml.XmlProcessingInstruction> directly; instead, use methods such as <xref:System.Xml.XmlDocument.CreateProcessingInstruction%2A>.  
-  
+Do not instantiate an <xref:System.Xml.XmlProcessingInstruction> directly; instead, use methods such as <xref:System.Xml.XmlDocument.CreateProcessingInstruction%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,12 +93,12 @@
         <returns>The duplicate node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `CloneNode` serves as a copy constructor for nodes. For processing instruction nodes, the cloned node always includes the target and data. To see how this method behaves with other node types, see the <xref:System.Xml.XmlNode.CloneNode%2A> method in the `XmlNode` class.  
-  
- The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
-  
+`CloneNode` serves as a copy constructor for nodes. For processing instruction nodes, the cloned node always includes the target and data. To see how this method behaves with other node types, see the <xref:System.Xml.XmlNode.CloneNode%2A> method in the `XmlNode` class.  
+ 
+The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,14 +129,14 @@
         <value>The content of the processing instruction, excluding the target.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a processing instruction node and adds it to a document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/VB/source.vb#1)]  
-  
+The following example creates a processing instruction node and adds it to a document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,10 +167,10 @@
         <value>The concatenated values of the node and all its children.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,14 +282,14 @@
         <value>The target of the processing instruction.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a processing instruction node and adds it to a document.  
-  
- [!code-cpp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/VB/source.vb#1)]  
-  
+The following example creates a processing instruction node and adds it to a document.  
+ 
+[!code-cpp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDocument.CreateProcessingInstruction Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDocument.CreateProcessingInstruction Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,10 +351,10 @@
         <summary>Saves all the children of the node to the specified <see cref="T:System.Xml.XmlWriter" />. Because ProcessingInstruction nodes do not have children, this method has no effect.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -388,10 +388,10 @@
         <summary>Saves the node to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>

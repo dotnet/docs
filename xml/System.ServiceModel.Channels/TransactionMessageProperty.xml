@@ -14,10 +14,10 @@
     <summary>Allows a custom channel, which uses a proprietary transaction flow mechanism, to inject its transaction into the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] framework. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class allows third-party channel developers who use a proprietary transaction flow mechanism for their channel, to introduce their transaction into the ServiceModel framework. The transaction is then used when executing the service method. This mechanism cannot be used in conjunction with the <xref:System.ServiceModel.TransactionFlowAttribute>.  
-  
+This class allows third-party channel developers who use a proprietary transaction flow mechanism for their channel, to introduce their transaction into the ServiceModel framework. The transaction is then used when executing the service method. This mechanism cannot be used in conjunction with the <xref:System.ServiceModel.TransactionFlowAttribute>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,10 +44,10 @@
         <summary>Sets the transaction that will be used when executing the service method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A custom incoming channel (which is part of a service’s channel stack) can call this method to add a <xref:System.ServiceModel.Channels.TransactionMessageProperty>, containing the `transaction` parameter, to the `Properties` collection of the `message` parameter. This prompts the infrastructure to create a <xref:System.Transactions.TransactionScope> instance using the transaction passed in, before calling the service method requested in the incoming message. The service method must have the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> property set to `true`.  
-  
+A custom incoming channel (which is part of a service’s channel stack) can call this method to add a <xref:System.ServiceModel.Channels.TransactionMessageProperty>, containing the `transaction` parameter, to the `Properties` collection of the `message` parameter. This prompts the infrastructure to create a <xref:System.Transactions.TransactionScope> instance using the transaction passed in, before calling the service method requested in the incoming message. The service method must have the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> property set to `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceModel.FaultException">The property has already been set on <paramref name="message" />.</exception>

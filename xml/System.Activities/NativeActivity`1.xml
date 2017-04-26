@@ -21,13 +21,13 @@
     <summary>Abstract base class for custom activities that implement execution logic using the <see cref="M:System.Activities.NativeActivity`1.Execute(System.Activities.ActivityExecutionContext)" /> method, that has full access to the runtime’s features.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates creating a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [How to: Create an Activity](~/docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) step of the  [Getting Started Tutorial &#91;.NET Framework 4.5&#93;](~/docs/framework/windows-workflow-foundation/getting-started-tutorial.md).  
-  
- [!code-csharp[CFX_WF_GettingStarted#1](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/readint.cs#1)]
- [!code-vb[CFX_WF_GettingStarted#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/readint.vb#1)]  
-  
+The following code sample demonstrates creating a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [How to: Create an Activity](~/docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) step of the  [Getting Started Tutorial &#91;.NET Framework 4.5&#93;](~/docs/framework/windows-workflow-foundation/getting-started-tutorial.md).  
+ 
+[!code-csharp[CFX_WF_GettingStarted#1](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/readint.cs#1)]
+[!code-vb[CFX_WF_GettingStarted#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/readint.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -88,10 +88,10 @@
         <summary>Not implemented. Use <see cref="M:System.Activities.NativeActivity`1.CacheMetadata(System.Activities.NativeActivityMetadata)" /> instead.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Custom activity authors can provide validation logic in an activity's <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
-  
+Custom activity authors can provide validation logic in an activity's <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,17 +116,17 @@
         <summary>Creates and validates a description of the activity’s arguments, variables, child activities, and activity delegates.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The workflow runtime uses the default implementation of <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> to ensure correct construction of a workflow as well as to manage run-time relationships and lifetime rules. The default implementation of <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> examines the public members of the activity type using the type’s <xref:System.ComponentModel.TypeDescriptor>. These public members are of type <xref:System.Activities.Argument>, <xref:System.Activities.Variable>, <xref:T:System.Collections.Generic.IEnumerable\<T:System.Activities.Variable>>, <xref:System.Activities.Activity>, <xref:T:System.Collections.Generic.IEnumerable\<T:System.Activities.Activity>>, or <xref:System.Activities.ActivityDelegate>. You can override this method to customize the building of the activity’s run-time description and to provide custom validation logic. Any exceptions that are thrown from <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
+The workflow runtime uses the default implementation of <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> to ensure correct construction of a workflow as well as to manage run-time relationships and lifetime rules. The default implementation of <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> examines the public members of the activity type using the type’s <xref:System.ComponentModel.TypeDescriptor>. These public members are of type <xref:System.Activities.Argument>, <xref:System.Activities.Variable>, <xref:T:System.Collections.Generic.IEnumerable\<T:System.Activities.Variable>>, <xref:System.Activities.Activity>, <xref:T:System.Collections.Generic.IEnumerable\<T:System.Activities.Activity>>, or <xref:System.Activities.ActivityDelegate>. You can override this method to customize the building of the activity’s run-time description and to provide custom validation logic. Any exceptions that are thrown from <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates using CacheMetadata in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Custom Composite using Native Activity](~/docs/framework/windows-workflow-foundation/samples/custom-composite-using-native-activity.md) sample.  
-  
- [!code-csharp[wfs_CustomCompositeNativeActivity#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_customcompositenativeactivity/cs/mysequence.cs#2)]  
-  
+The following code sample demonstrates using CacheMetadata in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Custom Composite using Native Activity](~/docs/framework/windows-workflow-foundation/samples/custom-composite-using-native-activity.md) sample.  
+ 
+[!code-csharp[wfs_CustomCompositeNativeActivity#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_customcompositenativeactivity/cs/mysequence.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,12 +151,12 @@
         <summary>When implemented in a derived class, runs logic to cause graceful early completion of the activity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates using Cancel in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](~/docs/framework/windows-workflow-foundation/samples/non-generic-parallelforeach.md) sample.  
-  
- [!code-csharp[wfs_NonGenericParallelForEach#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nongenericparallelforeach/cs/parallelforeach.cs#2)]  
-  
+The following code sample demonstrates using Cancel in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](~/docs/framework/windows-workflow-foundation/samples/non-generic-parallelforeach.md) sample.  
+ 
+[!code-csharp[wfs_NonGenericParallelForEach#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nongenericparallelforeach/cs/parallelforeach.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,12 +179,12 @@
           <see langword="true" /> if the activity can cause the workflow to become idle, otherwise <see langword="false" />. This value is <see langword="false" /> by default.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates using CanInduceIdle in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Wait For Input Activity &#91;WF Samples&#93;](~/docs/framework/windows-workflow-foundation/samples/wait-for-input-activity.md) sample.  
-  
- [!code-csharp[wfs_WaitForInput#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_waitforinput/cs/waitforinput/waitforinput.cs#1)]  
-  
+The following code sample demonstrates using CanInduceIdle in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Wait For Input Activity &#91;WF Samples&#93;](~/docs/framework/windows-workflow-foundation/samples/wait-for-input-activity.md) sample.  
+ 
+[!code-csharp[wfs_WaitForInput#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_waitforinput/cs/waitforinput/waitforinput.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,12 +209,12 @@
         <summary>When implemented in a derived class, runs the activity’s execution logic.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates using Execute in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](~/docs/framework/windows-workflow-foundation/samples/non-generic-parallelforeach.md) sample.  
-  
- [!code-csharp[wfs_NonGenericParallelForEach#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nongenericparallelforeach/cs/parallelforeach.cs#1)]  
-  
+The following code sample demonstrates using Execute in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](~/docs/framework/windows-workflow-foundation/samples/non-generic-parallelforeach.md) sample.  
+ 
+[!code-csharp[wfs_NonGenericParallelForEach#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nongenericparallelforeach/cs/parallelforeach.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -336,10 +336,10 @@
         <summary>Creates and validates a description of the activity’s arguments, variables, child activities, and activity delegates.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Custom activity authors can provide validation logic in an activity's <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
-  
+Custom activity authors can provide validation logic in an activity's <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
+ 
  ]]></format>
         </remarks>
       </Docs>

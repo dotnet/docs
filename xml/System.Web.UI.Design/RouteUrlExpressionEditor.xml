@@ -14,10 +14,10 @@
     <summary>Provides properties and methods for composing a <see langword="RouteURL" /> expression at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A visual designer host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], uses the <xref:System.Web.UI.Design.RouteUrlExpressionEditor> class to compose a `RouteUrl` markup expression.  
-  
+A visual designer host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], uses the <xref:System.Web.UI.Design.RouteUrlExpressionEditor> class to compose a `RouteUrl` markup expression.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <returns>The URL for the specified route and route parameter values if the expression evaluation succeeded; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The visual designer uses the <xref:System.Web.UI.Design.RouteUrlExpressionEditor.EvaluateExpression%2A> method to evaluate a `RouteUrl` expression and provide the design-time value for an associated control property.  
-  
+The visual designer uses the <xref:System.Web.UI.Design.RouteUrlExpressionEditor.EvaluateExpression%2A> method to evaluate a `RouteUrl` expression and provide the design-time value for an associated control property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
         <returns>A <see cref="T:System.Web.UI.Design.RouteUrlExpressionEditorSheet" /> instance that defines the <see langword="RouteUrl" /> expression properties.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.RouteUrlExpressionEditor.GetExpressionEditorSheet%2A> method returns an editor-sheet implementation for `RouteUrl` expressions. The editor sheet for `RouteUrl` expressions enables users to select parameters and a route name. After users have selected the parameters and route name, the editor-sheet implementation generates a `RouteUrl` expression, which is returned to the visual designer.  
-  
+The <xref:System.Web.UI.Design.RouteUrlExpressionEditor.GetExpressionEditorSheet%2A> method returns an editor-sheet implementation for `RouteUrl` expressions. The editor sheet for `RouteUrl` expressions enables users to select parameters and a route name. After users have selected the parameters and route name, the editor-sheet implementation generates a `RouteUrl` expression, which is returned to the visual designer.  
+ 
  ]]></format>
         </remarks>
       </Docs>

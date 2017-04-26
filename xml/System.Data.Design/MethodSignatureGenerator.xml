@@ -194,10 +194,10 @@
         <value>A <see langword="ParameterGenerationOption" /> value specifying the category of types to use for parameters: <see cref="F:System.Data.Design.ParameterGenerationOption.ClrTypes" /> (the default), <see cref="F:System.Data.Design.ParameterGenerationOption.SqlTypes" />, or <see cref="F:System.Data.Design.ParameterGenerationOption.Objects" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.Data.Design.ParameterGenerationOption>.  
-  
+For more information, see <xref:System.Data.Design.ParameterGenerationOption>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,12 +222,12 @@
         <summary>Sets the schema of the design table for which the database query method will be generated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,12 +252,12 @@
         <summary>Sets the database query for which the method signature will be generated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

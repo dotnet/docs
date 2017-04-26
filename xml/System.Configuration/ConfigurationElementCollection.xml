@@ -23,32 +23,32 @@
     <summary>Represents a configuration element containing a collection of child elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElementCollection> represents a collection of elements within a configuration file.  
-  
+The <xref:System.Configuration.ConfigurationElementCollection> represents a collection of elements within a configuration file.  
+ 
 > [!NOTE]
 >  An element within a configuration file refers to a basic XML element or a section. A simple element is an XML tag with related attributes, if any. A simple element constitutes a section. Complex sections can contain one or more simple elements, a collection of elements, and other sections.  
+ 
+You use the <xref:System.Configuration.ConfigurationElementCollection> to work with a collection of <xref:System.Configuration.ConfigurationElement> objects. Implement this class to add collections of custom <xref:System.Configuration.ConfigurationElement> elements to a <xref:System.Configuration.ConfigurationSection>.  
+ 
   
- You use the <xref:System.Configuration.ConfigurationElementCollection> to work with a collection of <xref:System.Configuration.ConfigurationElement> objects. Implement this class to add collections of custom <xref:System.Configuration.ConfigurationElement> elements to a <xref:System.Configuration.ConfigurationSection>.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationElementCollection>.  
-  
- The first example consists of three classes: `UrlsSection`, `UrlsCollection` and `UrlConfigElement`.The `UrlsSection` class uses the <xref:System.Configuration.ConfigurationCollectionAttribute> to define a custom configuration section. This section contains a URL collection (defined by the `UrlsCollection` class) of URL elements (defined by the `UrlConfigElement` class).  
-  
- [!code-csharp[System.Configuration.ConfigurationElementCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#1)]
- [!code-vb[System.Configuration.ConfigurationElementCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#1)]  
-  
- This second code example uses the classes specified before. You combine these two examples in a console application project.  
-  
- [!code-csharp[System.Configuration.ConfigurationElementCollection#31](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/usingconfigurationcollectionelement.cs#31)]
- [!code-vb[System.Configuration.ConfigurationElementCollection#31](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/usingconfigurationcollectionelement.vb#31)]  
-  
- When you run the console application, an instance of the `UrlsSection` class is created and the following configuration elements are generated in the application configuration file:  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationElementCollection>.  
+ 
+The first example consists of three classes: `UrlsSection`, `UrlsCollection` and `UrlConfigElement`.The `UrlsSection` class uses the <xref:System.Configuration.ConfigurationCollectionAttribute> to define a custom configuration section. This section contains a URL collection (defined by the `UrlsCollection` class) of URL elements (defined by the `UrlConfigElement` class).  
+ 
+[!code-csharp[System.Configuration.ConfigurationElementCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#1)]
+[!code-vb[System.Configuration.ConfigurationElementCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#1)]  
+ 
+This second code example uses the classes specified before. You combine these two examples in a console application project.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElementCollection#31](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/usingconfigurationcollectionelement.cs#31)]
+[!code-vb[System.Configuration.ConfigurationElementCollection#31](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/usingconfigurationcollectionelement.vb#31)]  
+ 
+When you run the console application, an instance of the `UrlsSection` class is created and the following configuration elements are generated in the application configuration file:  
+ 
 ```  
 <configuration>  
     <configSections>  
@@ -62,7 +62,7 @@
     </MyUrls>  
 </configuration  
 ```  
-  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -88,10 +88,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationElementCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You create a new instance of the <xref:System.Configuration.ConfigurationElementCollection> when your application needs to create a custom <xref:System.Configuration.ConfigurationElementCollection>.  
-  
+You create a new instance of the <xref:System.Configuration.ConfigurationElementCollection> when your application needs to create a custom <xref:System.Configuration.ConfigurationElementCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,10 +113,10 @@
         <summary>Creates a new instance of the <see cref="T:System.Configuration.ConfigurationElementCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Collections.IComparer> is used to set a comparer to use. For example, you can use a case-insensitive comparer to make the key case insensitive.  
-  
+The <xref:System.Collections.IComparer> is used to set a comparer to use. For example, you can use a case-insensitive comparer to make the key case insensitive.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -162,20 +162,20 @@
         <summary>Adds a configuration element to the <see cref="T:System.Configuration.ConfigurationElementCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Configuration.ConfigurationElementCollection.BaseAdd%2A> method to add a new <xref:System.Configuration.ConfigurationElement> to the collection. Override it in a derived class if custom behavior is required when the element is added.  
+Use the <xref:System.Configuration.ConfigurationElementCollection.BaseAdd%2A> method to add a new <xref:System.Configuration.ConfigurationElement> to the collection. Override it in a derived class if custom behavior is required when the element is added.  
+ 
+When adding, an element is considered a duplicate only if the keys are identical but the values are different. Elements with identical keys and values are accepted silently because the elements do not compete. However, an element with an identical key but a different value cannot be added because there is no logic to determine which of the competing values should be honored.  
+ 
   
- When adding, an element is considered a duplicate only if the keys are identical but the values are different. Elements with identical keys and values are accepted silently because the elements do not compete. However, an element with an identical key but a different value cannot be added because there is no logic to determine which of the competing values should be honored.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to override the <xref:System.Configuration.ConfigurationElementCollection.BaseAdd%2A> method and how to call it from an `Add` method.  
-  
- [!code-csharp[System.Configuration.ConfigurationElementCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#2)]
- [!code-vb[System.Configuration.ConfigurationElementCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#2)]  
-  
+The following code example shows how to override the <xref:System.Configuration.ConfigurationElementCollection.BaseAdd%2A> method and how to call it from an `Add` method.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElementCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#2)]
+[!code-vb[System.Configuration.ConfigurationElementCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,12 +203,12 @@
         <summary>Adds a configuration element to the configuration element collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the optional parameter `throwIfExists` to throw an <xref:System.Exception> exception if the specified <xref:System.Configuration.ConfigurationElement> object already exists in the <xref:System.Configuration.ConfigurationElementCollection> collection.  
-  
- An element is considered a duplicate only if the keys are identical but the values are different. Elements with identical keys and values are accepted silently because the elements do not compete. However, an element with an identical key but a different value cannot be added because there is no logic to determine which of the competing values should be honored.  
-  
+Use the optional parameter `throwIfExists` to throw an <xref:System.Exception> exception if the specified <xref:System.Configuration.ConfigurationElement> object already exists in the <xref:System.Configuration.ConfigurationElementCollection> collection.  
+ 
+An element is considered a duplicate only if the keys are identical but the values are different. Elements with identical keys and values are accepted silently because the elements do not compete. However, an element with an identical key but a different value cannot be added because there is no logic to determine which of the competing values should be honored.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The <see cref="T:System.Configuration.ConfigurationElement" /> to add already exists in the <see cref="T:System.Configuration.ConfigurationElementCollection" /> and the <paramref name="throwIfExists" /> parameter is <see langword="true" />.</exception>
@@ -236,10 +236,10 @@
         <summary>Adds a configuration element to the configuration element collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `index` parameter to add the <xref:System.Configuration.ConfigurationElement> object to the <xref:System.Configuration.ConfigurationElementCollection> at a specific index location.  
-  
+Use the `index` parameter to add the <xref:System.Configuration.ConfigurationElement> object to the <xref:System.Configuration.ConfigurationElementCollection> at a specific index location.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,18 +261,18 @@
         <summary>Removes all configuration element objects from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Configuration.ConfigurationElementCollection.BaseClear%2A> method is called, it removes all <xref:System.Configuration.ConfigurationElement> objects from the collection. It also inserts a `clear` directive into the configuration file.  
+When the <xref:System.Configuration.ConfigurationElementCollection.BaseClear%2A> method is called, it removes all <xref:System.Configuration.ConfigurationElement> objects from the collection. It also inserts a `clear` directive into the configuration file.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to call the <xref:System.Configuration.ConfigurationElementCollection.BaseClear%2A> method.  
-  
- [!code-csharp[System.Configuration.ConfigurationElementCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#3)]
- [!code-vb[System.Configuration.ConfigurationElementCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#3)]  
-  
+The following code example shows how to call the <xref:System.Configuration.ConfigurationElementCollection.BaseClear%2A> method.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElementCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#3)]
+[!code-vb[System.Configuration.ConfigurationElementCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration is read-only.  
@@ -303,13 +303,13 @@
         <returns>The <see cref="T:System.Configuration.ConfigurationElement" /> at the specified index.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to call the <xref:System.Configuration.ConfigurationElementCollection.BaseGet%2A> method.  
-  
- [!code-csharp[System.Configuration.ConfigurationElementCollection#8](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#8)]
- [!code-vb[System.Configuration.ConfigurationElementCollection#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#8)]  
-  
+The following code example shows how to call the <xref:System.Configuration.ConfigurationElementCollection.BaseGet%2A> method.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElementCollection#8](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#8)]
+[!code-vb[System.Configuration.ConfigurationElementCollection#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#8)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">
@@ -341,18 +341,18 @@
         <returns>The <see cref="T:System.Configuration.ConfigurationElement" /> with the specified key; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElementCollection.BaseGet%2A> method returns `null` if there is no <xref:System.Configuration.ConfigurationElement> object with the specified key in the collection.  
+The <xref:System.Configuration.ConfigurationElementCollection.BaseGet%2A> method returns `null` if there is no <xref:System.Configuration.ConfigurationElement> object with the specified key in the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to call the <xref:System.Configuration.ConfigurationElementCollection.BaseGet%2A> method.  
-  
- [!code-csharp[System.Configuration.ConfigurationElementCollection#9](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#9)]
- [!code-vb[System.Configuration.ConfigurationElementCollection#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#9)]  
-  
+The following code example shows how to call the <xref:System.Configuration.ConfigurationElementCollection.BaseGet%2A> method.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElementCollection#9](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#9)]
+[!code-vb[System.Configuration.ConfigurationElementCollection#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -425,12 +425,12 @@
         <returns>The index of the specified <see cref="T:System.Configuration.ConfigurationElement" />; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to call the <xref:System.Configuration.ConfigurationElementCollection.BaseIndexOf%2A> method.  
-  
- [!code-vb[System.Configuration.ConfigurationElementCollection#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#10)]  
-  
+The following code example shows how to call the <xref:System.Configuration.ConfigurationElementCollection.BaseIndexOf%2A> method.  
+ 
+[!code-vb[System.Configuration.ConfigurationElementCollection#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -478,18 +478,18 @@
         <summary>Removes a <see cref="T:System.Configuration.ConfigurationElement" /> from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElementCollection.BaseRemove%2A> method inserts a `<remove>` directive into the configuration file for the <xref:System.Configuration.ConfigurationElement> with the specified key.  
+The <xref:System.Configuration.ConfigurationElementCollection.BaseRemove%2A> method inserts a `<remove>` directive into the configuration file for the <xref:System.Configuration.ConfigurationElement> with the specified key.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to call the <xref:System.Configuration.ConfigurationElementCollection.BaseRemove%2A> method.  
-  
- [!code-csharp[System.Configuration.ConfigurationElementCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#3)]
- [!code-vb[System.Configuration.ConfigurationElementCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#3)]  
-  
+The following code example shows how to call the <xref:System.Configuration.ConfigurationElementCollection.BaseRemove%2A> method.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElementCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#3)]
+[!code-vb[System.Configuration.ConfigurationElementCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">No <see cref="T:System.Configuration.ConfigurationElement" /> with the specified key exists in the collection, the element has already been removed, or the element cannot be removed because the value of its <see cref="P:System.Configuration.ConfigurationProperty.Type" /> is not <see cref="F:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap" />.</exception>
@@ -515,10 +515,10 @@
         <summary>Removes the <see cref="T:System.Configuration.ConfigurationElement" /> at the specified index location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElementCollection.BaseRemoveAt%2A> method inserts a `<remove>` directive into the configuration file for the element at the specified index location.  
-  
+The <xref:System.Configuration.ConfigurationElementCollection.BaseRemoveAt%2A> method inserts a `<remove>` directive into the configuration file for the element at the specified index location.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration is read-only.  
@@ -580,18 +580,18 @@
         <value>The <see cref="T:System.Configuration.ConfigurationElementCollectionType" /> of this collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type will be either a <xref:System.Configuration.ConfigurationElementCollectionType> or an <xref:System.Configuration.ConfigurationElementCollectionType> field. For more information, see <xref:System.Configuration.ConfigurationElementCollectionType>.  
+The type will be either a <xref:System.Configuration.ConfigurationElementCollectionType> or an <xref:System.Configuration.ConfigurationElementCollectionType> field. For more information, see <xref:System.Configuration.ConfigurationElementCollectionType>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to get the <xref:System.Configuration.ConfigurationElementCollection.CollectionType%2A> property.  
-  
- [!code-csharp[System.Configuration.ConfigurationElementCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#5)]
- [!code-vb[System.Configuration.ConfigurationElementCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#5)]  
-  
+The following code example shows how to get the <xref:System.Configuration.ConfigurationElementCollection.CollectionType%2A> property.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElementCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#5)]
+[!code-vb[System.Configuration.ConfigurationElementCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -655,18 +655,18 @@
         <returns>A newly created <see cref="T:System.Configuration.ConfigurationElement" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override the <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> method to create custom <xref:System.Configuration.ConfigurationElement> objects of a specific type. When a collection is loaded from the configuration file, <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> is called to create individual elements. <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> must be overridden in classes that derive from the <xref:System.Configuration.ConfigurationElementCollection> class.  
+Override the <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> method to create custom <xref:System.Configuration.ConfigurationElement> objects of a specific type. When a collection is loaded from the configuration file, <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> is called to create individual elements. <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> must be overridden in classes that derive from the <xref:System.Configuration.ConfigurationElementCollection> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to override the <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> method.  
-  
- [!code-csharp[System.Configuration.ConfigurationElementCollection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#6)]
- [!code-vb[System.Configuration.ConfigurationElementCollection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#6)]  
-  
+The following code example shows how to override the <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> method.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElementCollection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#6)]
+[!code-vb[System.Configuration.ConfigurationElementCollection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -692,10 +692,10 @@
         <returns>A new <see cref="T:System.Configuration.ConfigurationElement" /> with a specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override the <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> method to create custom <xref:System.Configuration.ConfigurationElement> objects of a specific type. When a collection is loaded from the configuration file, <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> is called to create individual elements. <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> must be overridden in classes that derive from the <xref:System.Configuration.ConfigurationElementCollection> class.  
-  
+Override the <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> method to create custom <xref:System.Configuration.ConfigurationElement> objects of a specific type. When a collection is loaded from the configuration file, <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> is called to create individual elements. <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> must be overridden in classes that derive from the <xref:System.Configuration.ConfigurationElementCollection> class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -724,10 +724,10 @@
         <value>The name of the collection; otherwise, an empty string. The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override the <xref:System.Configuration.ConfigurationElementCollection.ElementName%2A> property to name a custom <xref:System.Configuration.ConfigurationElementCollection>.  
-  
+Override the <xref:System.Configuration.ConfigurationElementCollection.ElementName%2A> property to name a custom <xref:System.Configuration.ConfigurationElementCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -750,10 +750,10 @@
           <see langword="true" /> if the collection has been cleared; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Configuration.ConfigurationElementCollection.EmitClear%2A> property to `true` causes a `<clear>` directive to be written to the configuration file when the collection is serialized.  
-  
+Setting the <xref:System.Configuration.ConfigurationElementCollection.EmitClear%2A> property to `true` causes a `<clear>` directive to be written to the configuration file when the collection is serialized.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration is read-only.</exception>
@@ -803,13 +803,13 @@
         <returns>An <see cref="T:System.Object" /> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to override <xref:System.Configuration.ConfigurationElementCollection.GetElementKey%2A> method.  
-  
- [!code-csharp[System.Configuration.ConfigurationElementCollection#7](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#7)]
- [!code-vb[System.Configuration.ConfigurationElementCollection#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#7)]  
-  
+The following code example shows how to override <xref:System.Configuration.ConfigurationElementCollection.GetElementKey%2A> method.  
+ 
+[!code-csharp[System.Configuration.ConfigurationElementCollection#7](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationelementcollection/cs/customcollectionsection.cs#7)]
+[!code-vb[System.Configuration.ConfigurationElementCollection#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationelementcollection/vb/customcollectionsection.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -874,10 +874,10 @@
           <see langword="true" /> if the element exists in the collection; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override the <xref:System.Configuration.ConfigurationElementCollection.IsElementName%2A> method to provide custom behavior.  
-  
+Override the <xref:System.Configuration.ConfigurationElementCollection.IsElementName%2A> method to provide custom behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -904,10 +904,10 @@
           <see langword="true" /> if the specified <see cref="T:System.Configuration.ConfigurationElement" /> can be removed from this <see cref="T:System.Configuration.ConfigurationElementCollection" />; otherwise, <see langword="false" />. The default is <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Query <xref:System.Configuration.ConfigurationElementCollection.IsElementRemovable%2A> before removing a collection element.  
-  
+Query <xref:System.Configuration.ConfigurationElementCollection.IsElementRemovable%2A> before removing a collection element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -931,10 +931,10 @@
           <see langword="true" /> if any contained element has been modified; otherwise, <see langword="false" /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Configuration.ConfigurationElement.IsModified%2A> method of any <xref:System.Configuration.ConfigurationElement> contained within a <xref:System.Configuration.ConfigurationElementCollection> returns `true`, the <xref:System.Configuration.ConfigurationElementCollection.IsModified%2A> method of the entire collection returns `true` as well.  
-  
+If the <xref:System.Configuration.ConfigurationElement.IsModified%2A> method of any <xref:System.Configuration.ConfigurationElement> contained within a <xref:System.Configuration.ConfigurationElementCollection> returns `true`, the <xref:System.Configuration.ConfigurationElementCollection.IsModified%2A> method of the entire collection returns `true` as well.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -958,10 +958,10 @@
           <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationElementCollection" /> object is read only; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The system defines configuration elements that cannot be modified. Call this method to determine whether elements can be modified.  
-  
+The system defines configuration elements that cannot be modified. Call this method to determine whether elements can be modified.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1009,12 +1009,12 @@
           <see langword="true" /> if the unrecognized element was deserialized successfully; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElementCollection.OnDeserializeUnrecognizedElement%2A> is called when an unrecognized configuration element is read from a configuration file.  
-  
- Override this method to provide custom handling of unrecognized configuration elements from a configuration file. The default return value, `false`, causes the configuration system to throw an exception.  
-  
+The <xref:System.Configuration.ConfigurationElementCollection.OnDeserializeUnrecognizedElement%2A> is called when an unrecognized configuration element is read from a configuration file.  
+ 
+Override this method to provide custom handling of unrecognized configuration elements from a configuration file. The default return value, `false`, causes the configuration system to throw an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The element specified in <paramref name="elementName" /> is the <see langword="&lt;clear&gt;" /> element.</exception>
@@ -1061,10 +1061,10 @@
         <summary>Resets the <see cref="T:System.Configuration.ConfigurationElementCollection" /> to its unmodified state when overridden in a derived class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default behavior for the <xref:System.Configuration.ConfigurationElementCollection.Reset%2A> method is to clear any modified elements a <xref:System.Configuration.ConfigurationElementCollection> object contains and to set the modified elements to the values specified by their parent configuration file. If any element in the <xref:System.Configuration.ConfigurationElementCollection> has child elements, <xref:System.Configuration.ConfigurationElementCollection.Reset%2A> is also called on those child elements.  
-  
+The default behavior for the <xref:System.Configuration.ConfigurationElementCollection.Reset%2A> method is to clear any modified elements a <xref:System.Configuration.ConfigurationElementCollection> object contains and to set the modified elements to the values specified by their parent configuration file. If any element in the <xref:System.Configuration.ConfigurationElementCollection> has child elements, <xref:System.Configuration.ConfigurationElementCollection.Reset%2A> is also called on those child elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1086,10 +1086,10 @@
         <summary>Resets the value of the <see cref="M:System.Configuration.ConfigurationElementCollection.IsModified" /> property to <see langword="false" /> when overridden in a derived class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElementCollection.ResetModified%2A> method determines whether the elements of this collection will be written to the configuration file when the configuration is updated.  
-  
+The <xref:System.Configuration.ConfigurationElementCollection.ResetModified%2A> method determines whether the elements of this collection will be written to the configuration file when the configuration is updated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1119,10 +1119,10 @@
           <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationElementCollection" /> was written to the configuration file successfully.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElementCollection.SerializeElement%2A> method writes the contents of the configuration elements contained in the collection and any nested elements they contain to the configuration file. Override <xref:System.Configuration.ConfigurationElementCollection.SerializeElement%2A> to provide a custom write procedure out of the collection contents and nested elements.  
-  
+The <xref:System.Configuration.ConfigurationElementCollection.SerializeElement%2A> method writes the contents of the configuration elements contained in the collection and any nested elements they contain to the configuration file. Override <xref:System.Configuration.ConfigurationElementCollection.SerializeElement%2A> to provide a custom write procedure out of the collection contents and nested elements.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One of the elements in the collection was added or replaced and starts with the reserved prefix "config" or "lock".</exception>
@@ -1145,10 +1145,10 @@
         <summary>Sets the <see cref="M:System.Configuration.ConfigurationElementCollection.IsReadOnly" /> property for the <see cref="T:System.Configuration.ConfigurationElementCollection" /> object and for all sub-elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used internally to set aside those system configuration elements that cannot be modified. To determine which elements are modifiable, call the <xref:System.Configuration.ConfigurationElementCollection.IsReadOnly%2A> method.  
-  
+This method is used internally to set aside those system configuration elements that cannot be modified. To determine which elements are modifiable, call the <xref:System.Configuration.ConfigurationElementCollection.IsReadOnly%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1212,12 +1212,12 @@
           <see langword="true" /> if an attempt to add a duplicate <see cref="T:System.Configuration.ConfigurationElement" /> to this <see cref="T:System.Configuration.ConfigurationElementCollection" /> will cause an exception to be thrown; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you add a duplicate element, an exception is thrown if the <xref:System.Configuration.ConfigurationElementCollection.CollectionType%2A> value of the element is either <xref:System.Configuration.ConfigurationElementCollectionType> or <xref:System.Configuration.ConfigurationElementCollectionType>.  
-  
- Note that elements with identical keys and values are not considered duplicates, and are accepted silently. Only elements with identical keys but different values are considered duplicates. For more information, see the Remarks section for the <xref:System.Configuration.ConfigurationElementCollection.BaseAdd%2A> method.  
-  
+When you add a duplicate element, an exception is thrown if the <xref:System.Configuration.ConfigurationElementCollection.CollectionType%2A> value of the element is either <xref:System.Configuration.ConfigurationElementCollectionType> or <xref:System.Configuration.ConfigurationElementCollectionType>.  
+ 
+Note that elements with identical keys and values are not considered duplicates, and are accepted silently. Only elements with identical keys but different values are considered duplicates. For more information, see the Remarks section for the <xref:System.Configuration.ConfigurationElementCollection.BaseAdd%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1246,12 +1246,12 @@
         <summary>Reverses the effect of merging configuration information from different levels of the configuration hierarchy</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationElementCollection.Unmerge%2A> method reverses the effect of merging configuration information from different levels of the configuration hierarchy. This allows configuration set at the current hierarchy level to be differentiated from that set at parent levels, before serialization.  
-  
- <xref:System.Configuration.ConfigurationElementCollection.Unmerge%2A> is called by the system on a new temporary element to compare the parent object and the source object. Based on the <xref:System.Configuration.ConfigurationSaveMode> value, it then sets the temporary object to contain the data that needs to be serialized. For details about save modes, see <xref:System.Configuration.ConfigurationSaveMode>.  
-  
+The <xref:System.Configuration.ConfigurationElementCollection.Unmerge%2A> method reverses the effect of merging configuration information from different levels of the configuration hierarchy. This allows configuration set at the current hierarchy level to be differentiated from that set at parent levels, before serialization.  
+ 
+<xref:System.Configuration.ConfigurationElementCollection.Unmerge%2A> is called by the system on a new temporary element to compare the parent object and the source object. Based on the <xref:System.Configuration.ConfigurationSaveMode> value, it then sets the temporary object to contain the data that needs to be serialized. For details about save modes, see <xref:System.Configuration.ConfigurationSaveMode>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1265,10 +1265,10 @@
         <summary>When overridden in a derived class, creates a new <see cref="T:System.Configuration.ConfigurationElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override the <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> method to create custom <xref:System.Configuration.ConfigurationElement> objects of a specific type. When a collection is loaded from the configuration file, <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> is called to create individual elements. <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> must be overridden in classes that derive from the <xref:System.Configuration.ConfigurationElementCollection> class.  
-  
+Override the <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> method to create custom <xref:System.Configuration.ConfigurationElement> objects of a specific type. When a collection is loaded from the configuration file, <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> is called to create individual elements. <xref:System.Configuration.ConfigurationElementCollection.CreateNewElement%2A> must be overridden in classes that derive from the <xref:System.Configuration.ConfigurationElementCollection> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1282,12 +1282,12 @@
         <summary>Adds a <see cref="T:System.Configuration.ConfigurationElement" /> to an <see cref="T:System.Configuration.ConfigurationElementCollection" /> instance when overridden in a derived class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Configuration.ConfigurationElementCollection.BaseAdd%2A> method to add a new <xref:System.Configuration.ConfigurationElement> to the collection. Override in a derived class if custom behavior is required when the element is added.  
-  
- When adding, an element is considered a duplicate only if the keys are identical but the values are different. Elements with identical keys and values are accepted silently because the elements do not compete. However, an element with an identical key but a different value cannot be added because there is no logic to determine which of the competing values should be honored.  
-  
+Use the <xref:System.Configuration.ConfigurationElementCollection.BaseAdd%2A> method to add a new <xref:System.Configuration.ConfigurationElement> to the collection. Override in a derived class if custom behavior is required when the element is added.  
+ 
+When adding, an element is considered a duplicate only if the keys are identical but the values are different. Elements with identical keys and values are accepted silently because the elements do not compete. However, an element with an identical key but a different value cannot be added because there is no logic to determine which of the competing values should be honored.  
+ 
  ]]></format>
         </remarks>
       </Docs>

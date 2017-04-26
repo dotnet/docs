@@ -34,18 +34,18 @@
     <summary>Specifies that a separate type contains the code contracts for this type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Types that are marked with this attribute have code contracts that are included in a separate type. The type that contains the contracts is specified in the constructor.  
+Types that are marked with this attribute have code contracts that are included in a separate type. The type that contains the contracts is specified in the constructor.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Diagnostics.Contracts.ContractClassAttribute> attribute to specify that the contracts for the `IArray` interface are contained in the `IArrayContracts` class.  
-  
- [!code-csharp[ContractExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/contractexample/cs/program.cs#1)]
- [!code-vb[ContractExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/contractexample/vb/program.vb#1)]  
-  
+The following example shows how to use the <xref:System.Diagnostics.Contracts.ContractClassAttribute> attribute to specify that the contracts for the `IArray` interface are contained in the `IArrayContracts` class.  
+ 
+[!code-csharp[ContractExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/contractexample/cs/program.cs#1)]
+[!code-vb[ContractExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/contractexample/vb/program.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,13 +76,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Contracts.ContractClassAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Diagnostics.Contracts.ContractClassAttribute.%23ctor%2A> constructor to specify that the contracts for the `IArray` interface are contained in the `IArrayContracts` class.  
-  
- [!code-csharp[ContractExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/contractexample/cs/program.cs#1)]
- [!code-vb[ContractExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/contractexample/vb/program.vb#1)]  
-  
+The following example shows how to use the <xref:System.Diagnostics.Contracts.ContractClassAttribute.%23ctor%2A> constructor to specify that the contracts for the `IArray` interface are contained in the `IArrayContracts` class.  
+ 
+[!code-csharp[ContractExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/contractexample/cs/program.cs#1)]
+[!code-vb[ContractExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/contractexample/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

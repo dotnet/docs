@@ -29,22 +29,22 @@
     <summary>Provides a set of services for registering and unregistering managed assemblies for use from COM.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Registration is needed when the objects within an assembly are being used by COM clients. The [Regasm.exe (Assembly Registration Tool)](~/docs/framework/tools/regasm-exe-assembly-registration-tool.md) and [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)] use methods exposed by the <xref:System.Runtime.InteropServices.RegistrationServices> class to add or remove COM-enabling registry entries for managed assemblies.  
-  
- You can use the following methods to assist you in preparing a registration file:  
-  
+Registration is needed when the objects within an assembly are being used by COM clients. The [Regasm.exe (Assembly Registration Tool)](~/docs/framework/tools/regasm-exe-assembly-registration-tool.md) and [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)] use methods exposed by the <xref:System.Runtime.InteropServices.RegistrationServices> class to add or remove COM-enabling registry entries for managed assemblies.  
+ 
+You can use the following methods to assist you in preparing a registration file:  
+ 
 -   <xref:System.Runtime.InteropServices.RegistrationServices.GetManagedCategoryGuid%2A>  
-  
+ 
 -   <xref:System.Runtime.InteropServices.RegistrationServices.GetProgIdForType%2A>  
-  
+ 
 -   <xref:System.Runtime.InteropServices.RegistrationServices.GetRegistrableTypesInAssembly%2A>  
-  
+ 
 -   <xref:System.Runtime.InteropServices.RegistrationServices.TypeRepresentsComType%2A>  
-  
- Although these methods help in gathering information to be used in a registration file, they do not actually produce a registration file. Instead, you can use the [Regasm.exe (Assembly Registration Tool)](~/docs/framework/tools/regasm-exe-assembly-registration-tool.md) tool with the `/regfile` option to perform this task. <xref:System.Runtime.InteropServices.RegistrationServices> methods cannot export and register a type library. To export and register a type library, you can use the [Regasm.exe (Assembly Registration Tool)](~/docs/framework/tools/regasm-exe-assembly-registration-tool.md) tool and the [Tlbexp.exe (Type Library Exporter)](~/docs/framework/tools/tlbexp-exe-type-library-exporter.md) tool.  
-  
+ 
+Although these methods help in gathering information to be used in a registration file, they do not actually produce a registration file. Instead, you can use the [Regasm.exe (Assembly Registration Tool)](~/docs/framework/tools/regasm-exe-assembly-registration-tool.md) tool with the `/regfile` option to perform this task. <xref:System.Runtime.InteropServices.RegistrationServices> methods cannot export and register a type library. To export and register a type library, you can use the [Regasm.exe (Assembly Registration Tool)](~/docs/framework/tools/regasm-exe-assembly-registration-tool.md) tool and the [Tlbexp.exe (Type Library Exporter)](~/docs/framework/tools/tlbexp-exe-type-library-exporter.md) tool.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -154,12 +154,12 @@
           <see langword="true" /> if <paramref name="assembly" /> contains types that were successfully registered; otherwise <see langword="false" /> if the assembly contains no eligible types.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `RegisterAssembly` adds the appropriate registry entries for the types in the specified assembly. This method also calls any registration functions found in the assembly.  
-  
- Use <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> to get an assembly.  
-  
+`RegisterAssembly` adds the appropriate registry entries for the types in the specified assembly. This method also calls any registration functions found in the assembly.  
+ 
+Use <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> to get an assembly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -203,14 +203,14 @@
         <summary>Registers the specified type with COM using the specified GUID.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to calling `CoRegisterClassObject` in COM. The <xref:System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients%2A> method is not atomic and can cause unpredictable results when used in a multithreaded context.  
-  
- In version 2.0 and later, use the <xref:System.Runtime.InteropServices.RegistrationServices.UnregisterTypeForComClients%2A> method to unregister a type in COM.  
-  
- Note that using platform invoke to call the unmanaged `CoRegisterClassObject` and  `CoDisconnectObject` methods for registration and unregistration of COM objects is not supported.  
-  
+This method is equivalent to calling `CoRegisterClassObject` in COM. The <xref:System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients%2A> method is not atomic and can cause unpredictable results when used in a multithreaded context.  
+ 
+In version 2.0 and later, use the <xref:System.Runtime.InteropServices.RegistrationServices.UnregisterTypeForComClients%2A> method to unregister a type in COM.  
+ 
+Note that using platform invoke to call the unmanaged `CoRegisterClassObject` and  `CoDisconnectObject` methods for registration and unregistration of COM objects is not supported.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
@@ -248,14 +248,14 @@
         <returns>An integer that represents a cookie value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to calling `CoRegisterClassObject` in COM. The <xref:System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients%2A> method is not atomic and can cause unpredictable results when used in a multithreaded context.  
-  
- In the .NET Framework version 2.0 and later, use the <xref:System.Runtime.InteropServices.RegistrationServices.UnregisterTypeForComClients%2A> method to unregister a type in COM.  
-  
- Note that using platform invoke to call the unmanaged `CoRegisterClassObject` and  `CoDisconnectObject` methods for registration and unregistration of COM objects is not supported.  
-  
+This method is equivalent to calling `CoRegisterClassObject` in COM. The <xref:System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients%2A> method is not atomic and can cause unpredictable results when used in a multithreaded context.  
+ 
+In the .NET Framework version 2.0 and later, use the <xref:System.Runtime.InteropServices.RegistrationServices.UnregisterTypeForComClients%2A> method to unregister a type in COM.  
+ 
+Note that using platform invoke to call the unmanaged `CoRegisterClassObject` and  `CoDisconnectObject` methods for registration and unregistration of COM objects is not supported.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
@@ -332,10 +332,10 @@
           <see langword="true" /> if <paramref name="assembly" /> contains types that were successfully unregistered; otherwise <see langword="false" /> if the assembly contains no eligible types.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `UnregisterAssembly` removes the registry entries for the types in the specified assembly previously added by <xref:System.Runtime.InteropServices.RegistrationServices.RegisterAssembly%2A>. This method also calls any unregistration functions found in the assembly.  
-  
+`UnregisterAssembly` removes the registry entries for the types in the specified assembly previously added by <xref:System.Runtime.InteropServices.RegistrationServices.RegisterAssembly%2A>. This method also calls any unregistration functions found in the assembly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -382,10 +382,10 @@
         <summary>Removes references to a type registered with the <see cref="M:System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients(System.Type,System.Runtime.InteropServices.RegistrationClassContext,System.Runtime.InteropServices.RegistrationConnectionType)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that using platform invoke to call the unmanaged `CoRegisterClassObject` and  `CoDisconnectObject` methods to register and unregister COM objects is not supported.  
-  
+Note that using platform invoke to call the unmanaged `CoRegisterClassObject` and  `CoDisconnectObject` methods to register and unregister COM objects is not supported.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -400,10 +400,10 @@
         <summary>Registers the specified type with COM.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that using platform invoke to call the unmanaged `CoRegisterClassObject` and  `CoDisconnectObject` methods for registration and unregistration of COM objects is not supported.  
-  
+Note that using platform invoke to call the unmanaged `CoRegisterClassObject` and  `CoDisconnectObject` methods for registration and unregistration of COM objects is not supported.  
+ 
  ]]></format>
         </remarks>
       </Docs>

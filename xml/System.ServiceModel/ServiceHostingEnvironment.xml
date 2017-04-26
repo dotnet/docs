@@ -19,10 +19,10 @@
     <summary>Provides information about the current hosting environment in which [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services are running.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class exposes AppDomain-wide settings not specifically associated with an individual service. This class can only be applied at the application or machine configuration level.  
-  
+This class exposes AppDomain-wide settings not specifically associated with an individual service. This class can only be applied at the application or machine configuration level.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
           <see langword="true" /> if ASP.NET compatibility is enabled for the current AppDomain; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value reflects the value set by the <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.AspNetCompatibilityEnabled%2A> configuration element.  
-  
+This value reflects the value set by the <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.AspNetCompatibilityEnabled%2A> configuration element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,12 +96,12 @@
         <summary>Ensures that a service is activated at the provided virtual path.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used by third-party transport developers to activate the service at the provided virtual path if that service is not already active. This method is idempotent so that once it has been called, calling it again with the same `virtualPath` specified is safe in the sense that it has no effect.  
-  
- The expected virtual path format is `/<app-name>/<sub-directory/<service-name>.svc` or `~/<sub-directory/<service-name>.svc` where `<app-name>` is the application name,  `<sub-directory>` is the IIS virtual directory, and `<service-name>` is the service name.  
-  
+This method is used by third-party transport developers to activate the service at the provided virtual path if that service is not already active. This method is idempotent so that once it has been called, calling it again with the same `virtualPath` specified is safe in the sense that it has no effect.  
+ 
+The expected virtual path format is `/<app-name>/<sub-directory/<service-name>.svc` or `~/<sub-directory/<service-name>.svc` where `<app-name>` is the application name,  `<sub-directory>` is the IIS virtual directory, and `<service-name>` is the service name.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ServiceModel.EndpointNotFoundException">A service at given virtual path cannot be found.</exception>
@@ -131,10 +131,10 @@
           <see langword="true" /> if multiple site bindings are enabled; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Supporting Multiple IIS Site Bindings](~/docs/framework/wcf/feature-details/supporting-multiple-iis-site-bindings.md)  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Supporting Multiple IIS Site Bindings](~/docs/framework/wcf/feature-details/supporting-multiple-iis-site-bindings.md)  
+ 
  ]]></format>
         </remarks>
       </Docs>

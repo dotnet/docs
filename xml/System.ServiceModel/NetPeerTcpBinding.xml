@@ -23,14 +23,14 @@
     <summary>Provides a secure binding for peer-to-peer network applications.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.NetPeerTcpBinding> binding provides support for the creation of peer networking applications that use a TCP-level peer-to-peer mesh infrastructure.  
-  
- Each <xref:System.ServiceModel.PeerNode> instance can host multiple peer channels defined with this binding type. Channel factories produced using a configured instance of this type can be used to generate peer channels. A peer channel factory can produce peer channels that are input-only (implements <xref:System.ServiceModel.Channels.IInputChannel>), output-only (implements <xref:System.ServiceModel.Channels.IOutputChannel>), and duplex (implements <xref:System.ServiceModel.Channels.IDuplexChannel>).  
-  
- This is one of the standard bindings provided by the Windows Communication Framework (WCF). It can be used in imperative code or specified in the corresponding XML configuration file for the application. The recommended procedure is to define the binding using configuration values and not to use a code-based approach, except in certain advanced scenarios where configuration values must be set as a service is initialized.  
-  
+The <xref:System.ServiceModel.NetPeerTcpBinding> binding provides support for the creation of peer networking applications that use a TCP-level peer-to-peer mesh infrastructure.  
+ 
+Each <xref:System.ServiceModel.PeerNode> instance can host multiple peer channels defined with this binding type. Channel factories produced using a configured instance of this type can be used to generate peer channels. A peer channel factory can produce peer channels that are input-only (implements <xref:System.ServiceModel.Channels.IInputChannel>), output-only (implements <xref:System.ServiceModel.Channels.IOutputChannel>), and duplex (implements <xref:System.ServiceModel.Channels.IDuplexChannel>).  
+ 
+This is one of the standard bindings provided by the Windows Communication Framework (WCF). It can be used in imperative code or specified in the corresponding XML configuration file for the application. The recommended procedure is to define the binding using configuration values and not to use a code-based approach, except in certain advanced scenarios where configuration values must be set as a service is initialized.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,10 +67,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetPeerTcpBinding" /> class with a specified configuration name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a new <xref:System.ServiceModel.NetPeerTcpBinding> with the supplied name. If a configuration for that name already exists, the settings in the configuration file that contains that name are used. If the name does not already exist, the default configuration settings are used.  
-  
+This constructor creates a new <xref:System.ServiceModel.NetPeerTcpBinding> with the supplied name. If a configuration for that name already exists, the settings in the configuration file that contains that name are used. If the name does not already exist, the default configuration settings are used.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The configuration is invalid.</exception>
@@ -157,16 +157,16 @@
         <value>A <see cref="T:System.String" /> value that contains the well-formed IPv4 or IPv6 address upon which the local peer node is listening.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not set, or is set to `null` or <xref:System.String>, the associated <xref:System.ServiceModel.PeerNode> listens on all global addresses (both IPv4 and IPv6) configured for the local machine.  
-  
- If a valid unicast IP address is specified for this property, then the associated <xref:System.ServiceModel.PeerNode> object listens on that address. IPv4 and IPv6 wildcard addresses are not considered valid.  
-  
- If a non-`null` IP address string is specified for this property in conjunction with <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>, then the IP address must be associated with a physical interface rather than a virtual one.  
-  
- ListenIPAddress must be set for ad-hoc networks in order to register with the default peer resolver (PNRP). If this property is specified in conjunction with <xref:System.ServiceModel.Configuration.PnrpPeerResolverElement> (the default peer resolver), then the IP address must belong to a physical network interface rather than a virtual one (such as a tunneling interface). This is because PNRP only publishes within PNRP clouds corresponding to physical interfaces. By setting this property to null, all global addresses are published in the global PNRP cloud.  
-  
+If this property is not set, or is set to `null` or <xref:System.String>, the associated <xref:System.ServiceModel.PeerNode> listens on all global addresses (both IPv4 and IPv6) configured for the local machine.  
+ 
+If a valid unicast IP address is specified for this property, then the associated <xref:System.ServiceModel.PeerNode> object listens on that address. IPv4 and IPv6 wildcard addresses are not considered valid.  
+ 
+If a non-`null` IP address string is specified for this property in conjunction with <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>, then the IP address must be associated with a physical interface rather than a virtual one.  
+ 
+ListenIPAddress must be set for ad-hoc networks in order to register with the default peer resolver (PNRP). If this property is specified in conjunction with <xref:System.ServiceModel.Configuration.PnrpPeerResolverElement> (the default peer resolver), then the IP address must belong to a physical network interface rather than a virtual one (such as a tunneling interface). This is because PNRP only publishes within PNRP clouds corresponding to physical interfaces. By setting this property to null, all global addresses are published in the global PNRP cloud.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The provided address is invalid or incorrectly formed.</exception>
@@ -194,10 +194,10 @@
         <value>A <see cref="T:System.Int32" /> value that specifies the maximum number of bytes that are used to buffer incoming messages in memory. The default value is 65,536 bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of <xref:System.ServiceModel.NetPeerTcpBinding.MaxBufferPoolSize%2A> cannot be less than <xref:System.ServiceModel.NetPeerTcpBinding.MaxReceivedMessageSize%2A> whose default value is 65536 bytes (64 KB).  
-  
+The value of <xref:System.ServiceModel.NetPeerTcpBinding.MaxBufferPoolSize%2A> cannot be less than <xref:System.ServiceModel.NetPeerTcpBinding.MaxReceivedMessageSize%2A> whose default value is 65536 bytes (64 KB).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,10 +248,10 @@
         <value>A <see cref="T:System.Int32" /> value that represents the network port on which this binding instance will process peer-specific TCP messages.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the port value is invalid, <xref:System.ArgumentException> is raised. The default value for this property is 0, which indicates that the listener port is randomly selected from all unreserved ports.  
-  
+If the port value is invalid, <xref:System.ArgumentException> is raised. The default value for this property is 0, which indicates that the listener port is randomly selected from all unreserved ports.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -310,10 +310,10 @@
         <value>A <see cref="T:System.String" /> that specifies the URI scheme for the specific transport protocol used for this binding.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value must be "net.p2p".  
-  
+This value must be "net.p2p".  
+ 
  ]]></format>
         </remarks>
       </Docs>

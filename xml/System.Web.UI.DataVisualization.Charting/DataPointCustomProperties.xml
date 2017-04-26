@@ -26,12 +26,12 @@
     <summary>Represents the custom properties that are common to data points, series and empty points.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class defines custom properties such as colors, the use of background images, hatching, and so forth.  
-  
- The <xref:System.Web.UI.DataVisualization.Charting.Series> class, <xref:System.Web.UI.DataVisualization.Charting.DataPoint> class and the <xref:System.Web.UI.DataVisualization.Charting.Series.EmptyPointStyle%2A> property are all derived from this class.  
-  
+This class defines custom properties such as colors, the use of background images, hatching, and so forth.  
+ 
+The <xref:System.Web.UI.DataVisualization.Charting.Series> class, <xref:System.Web.UI.DataVisualization.Charting.DataPoint> class and the <xref:System.Web.UI.DataVisualization.Charting.Series.EmptyPointStyle%2A> property are all derived from this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -99,14 +99,14 @@
         <value>The text of the X-axis label.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can only be set at run time for a <xref:System.Web.UI.DataVisualization.Charting.Series> object. If you set this property or a <xref:System.Web.UI.DataVisualization.Charting.Series> object, all of its data points will use this label.  
-  
- If the <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.AxisLabel%2A> property is not set and a custom label has not been specified, an axis label will be generated automatically using the axis scale.  
-  
- Empty point labels are set using the <xref:System.Web.UI.DataVisualization.Charting.Series.EmptyPointStyle%2A> property.  
-  
+This property can only be set at run time for a <xref:System.Web.UI.DataVisualization.Charting.Series> object. If you set this property or a <xref:System.Web.UI.DataVisualization.Charting.Series> object, all of its data points will use this label.  
+ 
+If the <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.AxisLabel%2A> property is not set and a custom label has not been specified, an axis label will be generated automatically using the axis scale.  
+ 
+Empty point labels are set using the <xref:System.Web.UI.DataVisualization.Charting.Series.EmptyPointStyle%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1580,10 +1580,10 @@
         <summary>Sets the default properties of the data point. Indicates whether the previous property values must be cleared.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `clearAll` parameter is set to `true`, all previous property values are cleared, otherwise they are not.  
-  
+If the `clearAll` parameter is set to `true`, all previous property values are cleared, otherwise they are not.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>A configuration element that specifies workflow instance state or activity instance state the user subscribes tracking information for.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This element is placed within a <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection> within a <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement> to specify the activity states the query should filter on.  
-  
+This element is placed within a <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection> within a <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement> to specify the activity states the query should filter on.  
+ 
  ]]></format>
     </remarks>
   </Docs>

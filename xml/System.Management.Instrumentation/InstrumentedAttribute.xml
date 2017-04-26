@@ -36,12 +36,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.InstrumentedAttribute" /> class that is set for the root\default namespace. This is the default constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -63,12 +63,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.InstrumentedAttribute" /> class that is set to the specified namespace for instrumentation within this assembly.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,12 +92,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.InstrumentedAttribute" /> class that is set to the specified namespace and security settings for instrumentation within this assembly.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,16 +119,16 @@
         <value>Returns a <see cref="T:System.String" /> value containing the name of the namespace for instrumentation instances and events in this assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is highly recommended that the namespace name be specified by the assembly, and that it should be a unique namespace per assembly, or per application. Having a specific namespace for each assembly or application instrumentation allows more granularity for securing access to instrumentation provided by different assemblies or applications.  
-  
+It is highly recommended that the namespace name be specified by the assembly, and that it should be a unique namespace per assembly, or per application. Having a specific namespace for each assembly or application instrumentation allows more granularity for securing access to instrumentation provided by different assemblies or applications.  
+ 
 ## Property Value  
- If not specified, the default namespace will be set as "\\\\.\root\default". Otherwise, a string indicating the name of the namespace for instrumentation instances and events in this assembly.  
-  
+If not specified, the default namespace will be set as "\\\\.\root\default". Otherwise, a string indicating the name of the namespace for instrumentation instances and events in this assembly.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,16 +150,16 @@
         <value>Returns a <see cref="T:System.String" /> value containing the security descriptor that allows only the specified users or groups to run applications that provide the instrumentation supported by this assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Users or groups not specified in this security descriptor may still run the application, but cannot provide instrumentation from this assembly.  
-  
+Users or groups not specified in this security descriptor may still run the application, but cannot provide instrumentation from this assembly.  
+ 
 ## Property Value  
- If null, the default value is defined as the Local Administrators Group. This will only allow members of the local administrators group to publish data and fire events from this assembly. Otherwise, this is a string in SDDL format representing the security descriptor that defines which users and groups can provide instrumentation data and events from this application.  
-  
+If null, the default value is defined as the Local Administrators Group. This will only allow members of the local administrators group to publish data and fire events from this assembly. Otherwise, this is a string in SDDL format representing the security descriptor that defines which users and groups can provide instrumentation data and events from this application.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

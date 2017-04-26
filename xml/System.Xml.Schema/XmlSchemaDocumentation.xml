@@ -19,23 +19,23 @@
     <summary>Represents the <see langword="documentation" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). This class specifies information to be read or used by humans within an <see langword="annotation" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Information supplied within the `XmlSchemaDocumentation` class is not used in validation. However, it provides a standardized way to supply information that can be retrieved by tools.  
+Information supplied within the `XmlSchemaDocumentation` class is not used in validation. However, it provides a standardized way to supply information that can be retrieved by tools.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates the `documentation` element.  
-  
- [!code-cpp[Classic WebData XmlSchemaDocumentation Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic Webdata XmlSchemaDocumentation Example/CPP/documentation.cpp#1)]
- [!code-csharp[Classic WebData XmlSchemaDocumentation Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic Webdata XmlSchemaDocumentation Example/CS/documentation.cs#1)]
- [!code-vb[Classic WebData XmlSchemaDocumentation Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic Webdata XmlSchemaDocumentation Example/VB/documentation.vb#1)]  
-  
- The following XML file is generated for the preceding code example.  
-  
- [!code-xml[Classic WebData XmlSchemaDocumentation Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic Webdata XmlSchemaDocumentation Example/XML/example.xsd#2)]  
-  
+The following example creates the `documentation` element.  
+ 
+[!code-cpp[Classic WebData XmlSchemaDocumentation Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic Webdata XmlSchemaDocumentation Example/CPP/documentation.cpp#1)]
+[!code-csharp[Classic WebData XmlSchemaDocumentation Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic Webdata XmlSchemaDocumentation Example/CS/documentation.cs#1)]
+[!code-vb[Classic WebData XmlSchemaDocumentation Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic Webdata XmlSchemaDocumentation Example/VB/documentation.vb#1)]  
+ 
+The following XML file is generated for the preceding code example.  
+ 
+[!code-xml[Classic WebData XmlSchemaDocumentation Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic Webdata XmlSchemaDocumentation Example/XML/example.xsd#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -150,12 +150,12 @@
  Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Source must be a URI reference.  
-  
- Optional.  
-  
+Source must be a URI reference.  
+ 
+Optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>

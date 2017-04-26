@@ -14,10 +14,10 @@
     <summary>Specifies the data type of a field, a property, for use in an <see cref="T:System.Data.OleDb.OleDbParameter" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The preceding table shows mappings between <xref:System.Data.OleDb.OleDbType> data types, OLE DB data types (shown in parentheses), and the .NET Framework types. The <xref:System.Data.OleDb.OleDbType> data types accept `System.Char[]`as `Parameter.Value` in parameterized queries.  
-  
+The preceding table shows mappings between <xref:System.Data.OleDb.OleDbType> data types, OLE DB data types (shown in parentheses), and the .NET Framework types. The <xref:System.Data.OleDb.OleDbType> data types accept `System.Char[]`as `Parameter.Value` in parameterized queries.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -311,10 +311,10 @@
         <summary>A pointer to an <see langword="IDispatch" /> interface (DBTYPE_IDISPATCH). This maps to <see cref="T:System.Object" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This data type is not currently supported by ADO.NET. Usage may cause unpredictable results.  
-  
+This data type is not currently supported by ADO.NET. Usage may cause unpredictable results.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -353,10 +353,10 @@
         <summary>A pointer to an <see langword="IUnknown" /> interface (DBTYPE_UNKNOWN). This maps to <see cref="T:System.Object" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This data type is not currently supported by ADO.NET. Usage may cause unpredictable results.  
-  
+This data type is not currently supported by ADO.NET. Usage may cause unpredictable results.  
+ 
  ]]></format>
         </remarks>
       </Docs>

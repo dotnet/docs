@@ -19,31 +19,31 @@
     <summary>When given a class representing a data contract, and metadata representing a member of the contract, produces an XPath query for the member.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about data contracts, see [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
-  
- To use the class, there are four steps:  
-  
+For more information about data contracts, see [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
+ 
+To use the class, there are four steps:  
+ 
 1.  Create the data contract type by applying the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> as appropriate to the type and its fields or properties.  
-  
+ 
 2.  Use the <xref:System.Type.GetMember%2A> method of the <xref:System.Type> class to generate the MemberInfo array.  
-  
+ 
 3.  Pass the type and the array to the method.  
-  
+ 
 4.  If needed, use the <xref:System.Xml.XmlNamespaceManager> returned by the `namespaces` parameter to examine the XML namespaces referenced by the namespaces prefixes in the XPath query.  
-  
+ 
 > [!NOTE]
 >  The namespace prefix "xg" (for "XPath Generator") is used as the default in the XPath. This cannot be changed. Instead, refer to the NameTable collection to see what namespace the prefix is associated with.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates XPath queries from two classes to which the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes have been applied.  
-  
- [!code-csharp[XPathQueryGenerator#0](~/samples/snippets/csharp/VS_Snippets_CFX/xpathquerygenerator/cs/source.cs#0)]
- [!code-vb[XPathQueryGenerator#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/xpathquerygenerator/vb/source.vb#0)]  
-  
+The following example creates XPath queries from two classes to which the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes have been applied.  
+ 
+[!code-csharp[XPathQueryGenerator#0](~/samples/snippets/csharp/VS_Snippets_CFX/xpathquerygenerator/cs/source.cs#0)]
+[!code-vb[XPathQueryGenerator#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/xpathquerygenerator/vb/source.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,18 +81,18 @@
  The XPath generated from the type and member data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about data contracts, see [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
+For more information about data contracts, see [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates XPath queries from two classes to which the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes have been applied.  
-  
- [!code-csharp[XPathQueryGenerator#0](~/samples/snippets/csharp/VS_Snippets_CFX/xpathquerygenerator/cs/source.cs#0)]
- [!code-vb[XPathQueryGenerator#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/xpathquerygenerator/vb/source.vb#0)]  
-  
+The following example creates XPath queries from two classes to which the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes have been applied.  
+ 
+[!code-csharp[XPathQueryGenerator#0](~/samples/snippets/csharp/VS_Snippets_CFX/xpathquerygenerator/cs/source.cs#0)]
+[!code-vb[XPathQueryGenerator#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/xpathquerygenerator/vb/source.vb#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

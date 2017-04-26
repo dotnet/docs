@@ -22,26 +22,26 @@
     <summary>Represents the binding element used to specify an HTTP transport for transmitting messages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.HttpTransportBindingElement> class is the starting point for creating a custom binding that implements the HTTP transport protocol. HTTP is the primary transport used for interoperability purposes. This transport is supported by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to ensure interoperability with other non-[!INCLUDE[indigo2](~/includes/indigo2-md.md)] Web services stacks.  
+The <xref:System.ServiceModel.Channels.HttpTransportBindingElement> class is the starting point for creating a custom binding that implements the HTTP transport protocol. HTTP is the primary transport used for interoperability purposes. This transport is supported by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to ensure interoperability with other non-[!INCLUDE[indigo2](~/includes/indigo2-md.md)] Web services stacks.  
+ 
+The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service model uses this class to create factory objects that implement the <xref:System.ServiceModel.Channels.IChannelFactory> and <xref:System.ServiceModel.Channels.IChannelListener> interfaces. These factory objects, in turn, create the channels and listeners that transmit SOAP messages using the HTTP protocol.  
+ 
+You configure the factories that this class creates by setting its properties, such as <xref:System.ServiceModel.Channels.HttpTransportBindingElement.AuthenticationScheme%2A>, <xref:System.ServiceModel.Channels.HttpTransportBindingElement.HostNameComparisonMode%2A>, and <xref:System.ServiceModel.Channels.HttpTransportBindingElement.MaxBufferSize%2A>.  
+ 
+You can also set properties on the base class, <xref:System.ServiceModel.Channels.TransportBindingElement>, such as <xref:System.ServiceModel.Channels.TransportBindingElement.ManualAddressing%2A>, <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A>, and <xref:System.ServiceModel.Channels.TransportBindingElement.MaxBufferPoolSize%2A>. For a complete list of properties, see <xref:System.ServiceModel.Channels.TransportBindingElement>.  
+ 
   
- The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service model uses this class to create factory objects that implement the <xref:System.ServiceModel.Channels.IChannelFactory> and <xref:System.ServiceModel.Channels.IChannelListener> interfaces. These factory objects, in turn, create the channels and listeners that transmit SOAP messages using the HTTP protocol.  
-  
- You configure the factories that this class creates by setting its properties, such as <xref:System.ServiceModel.Channels.HttpTransportBindingElement.AuthenticationScheme%2A>, <xref:System.ServiceModel.Channels.HttpTransportBindingElement.HostNameComparisonMode%2A>, and <xref:System.ServiceModel.Channels.HttpTransportBindingElement.MaxBufferSize%2A>.  
-  
- You can also set properties on the base class, <xref:System.ServiceModel.Channels.TransportBindingElement>, such as <xref:System.ServiceModel.Channels.TransportBindingElement.ManualAddressing%2A>, <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A>, and <xref:System.ServiceModel.Channels.TransportBindingElement.MaxBufferPoolSize%2A>. For a complete list of properties, see <xref:System.ServiceModel.Channels.TransportBindingElement>.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to imperatively use the <xref:System.ServiceModel.Channels.HttpTransportBindingElement>.  
-  
- [!code-csharp[S_Imperative#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_imperative/cs/service.cs#1)]
- [!code-vb[S_Imperative#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_imperative/vb/service.vb#1)]  
-  
- `HttpTransportBindingElement` can also be used in a configuration file as shown in the following configuration.  
-  
+The following code shows how to imperatively use the <xref:System.ServiceModel.Channels.HttpTransportBindingElement>.  
+ 
+[!code-csharp[S_Imperative#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_imperative/cs/service.cs#1)]
+[!code-vb[S_Imperative#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_imperative/vb/service.vb#1)]  
+ 
+`HttpTransportBindingElement` can also be used in a configuration file as shown in the following configuration.  
+ 
 ```  
 <bindings>  
   <customBinding>  
@@ -59,7 +59,7 @@
 </bindings>  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -98,17 +98,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.HttpTransportBindingElement" /> class using another binding element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a copy constructor used to clone the binding.  
+This method is a copy constructor used to clone the binding.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the copy constructor in a derived class.  
-  
- [C#]  
-  
+The following example shows how to use the copy constructor in a derived class.  
+ 
+[C#]  
+ 
 ```  
 public class MyBindingElement : HttpTransportBindingElement  
 {  
@@ -117,7 +117,7 @@ public class MyBindingElement : HttpTransportBindingElement
     }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,23 +146,23 @@ public class MyBindingElement : HttpTransportBindingElement
           <see langword="true" /> if cookies are allowed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is provided as a convenience for interacting with ASMX Web services that use cookies to make sure that the cookies returned from the server are automatically copied to all future client requests for that service.  
+This property is provided as a convenience for interacting with ASMX Web services that use cookies to make sure that the cookies returned from the server are automatically copied to all future client requests for that service.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example sets this property to indicate that all cookies from the server should be copied to future client requests.  
-  
- [C#]  
-  
+The following example sets this property to indicate that all cookies from the server should be copied to future client requests.  
+ 
+[C#]  
+ 
 ```  
 HttpTransportBindingElement httpBindingElement = new HttpBindingElement();  
 httpBindingElement.AllowCookies = true;  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,17 +190,17 @@ httpBindingElement.AllowCookies = true;
         <value>One of the enumeration values of the <see cref="T:System.Net.AuthenticationSchemes" /> enumeration that specifies the protocols used for client authentication. The default is <see cref="F:System.Net.AuthenticationSchemes.Anonymous" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The authentication scheme can only be set once.  
+The authentication scheme can only be set once.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example sets this property to use when authenticating client requests.  
-  
- [C#]  
-  
+The following example sets this property to use when authenticating client requests.  
+ 
+[C#]  
+ 
 ```  
 [ServiceContract]  
 interface ICalculator  
@@ -224,7 +224,7 @@ ICalculator calc = proxy.CreateChannel();
   
 int odd=calc.Add(5,4);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value for the <see cref="T:System.Net.AuthenticationSchemes" /> was already set.</exception>
@@ -257,10 +257,10 @@ int odd=calc.Add(5,4);
         <returns>A channel factory of the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to get a channel factory for sending messages based on the configuration of the transport binding element.  
-  
+This method can be used to get a channel factory for sending messages based on the configuration of the transport binding element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -299,10 +299,10 @@ int odd=calc.Add(5,4);
         <returns>A channel listener of the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to get a channel listener for receiving messages based on the configuration of the transport binding element.  
-  
+This method can be used to get a channel listener for receiving messages based on the configuration of the transport binding element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -334,24 +334,24 @@ int odd=calc.Add(5,4);
           <see langword="true" /> if proxies are ignored for local addresses; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A local address is one that is on the local LAN or intranet.  
+A local address is one that is on the local LAN or intranet.  
+ 
+[!INCLUDE[indigo2](~/includes/indigo2-md.md)] always ignores the proxy if the service address begins with `http://localhost`. You should use the host name (rather than `localhost`) if you want clients to go through a proxy when talking to services on the same machine.  
+ 
   
- [!INCLUDE[indigo2](~/includes/indigo2-md.md)] always ignores the proxy if the service address begins with `http://localhost`. You should use the host name (rather than `localhost`) if you want clients to go through a proxy when talking to services on the same machine.  
-  
-   
-  
+ 
 ## Examples  
- The following example sets this property to use when performing requests on the binding.  
-  
- [C#]  
-  
+The following example sets this property to use when performing requests on the binding.  
+ 
+[C#]  
+ 
 ```  
 HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
 httpBinding.BypassProxyOnLocal = true;  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -439,16 +439,16 @@ httpBinding.BypassProxyOnLocal = true;
         <returns>A new instance that is a copy of the current binding element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example clones the specified binding element.  
-  
- [C#]  
-  
+The following example clones the specified binding element.  
+ 
+[C#]  
+ 
 ```  
 HttpBindingElement bindingElement = elementToClone.Clone();  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -577,17 +577,17 @@ HttpBindingElement bindingElement = elementToClone.Clone();
           <see langword="true" /> if the request to the service endpoint should contain a Connection HTTP header with the value <see langword="Keep-alive" />; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set this property to `true` to send a Connection HTTP header with the value `Keep-alive`. A client uses this property to indicate a preference for persistent connections. When this property is `true`, the connection that the client makes to a service endpoint is persistent if the service endpoint supports that.  
+Set this property to `true` to send a Connection HTTP header with the value `Keep-alive`. A client uses this property to indicate a preference for persistent connections. When this property is `true`, the connection that the client makes to a service endpoint is persistent if the service endpoint supports that.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to set this property.  
-  
- [!code-csharp[PoxSample#1](~/samples/snippets/csharp/VS_Snippets_CFX/poxsample/cs/client/httpclient.cs#1)]  
-  
+The following code shows how to set this property.  
+ 
+[!code-csharp[PoxSample#1](~/samples/snippets/csharp/VS_Snippets_CFX/poxsample/cs/client/httpclient.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -639,24 +639,24 @@ HttpBindingElement bindingElement = elementToClone.Clone();
         <value>The maximum size, in bytes, of the buffer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For streamed messages, if the size of the message headers is greater than this property, then a <xref:System.ServiceModel.QuotaExceededException> is thrown. For a non-streamed message, if the message size is greater than this property, then the message is dropped.  
+For streamed messages, if the size of the message headers is greater than this property, then a <xref:System.ServiceModel.QuotaExceededException> is thrown. For a non-streamed message, if the message size is greater than this property, then the message is dropped.  
+ 
+If not specified, this defaults to 65536.  
+ 
   
- If not specified, this defaults to 65536.  
-  
-   
-  
+ 
 ## Examples  
- The following example sets this property to use when performing requests on the binding.  
-  
- [C#]  
-  
+The following example sets this property to use when performing requests on the binding.  
+ 
+[C#]  
+ 
 ```  
 HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
 httpBinding.MaxBufferSize = 16384;  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -683,10 +683,10 @@ httpBinding.MaxBufferSize = 16384;
         <value>The maximum number of connections the service can accept simultaneously.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of <xref:System.ServiceModel.Channels.HttpTransportBindingElement.MaxPendingAccepts%2A> is 0, which means WCF will configure the value for you. You can increase the number for better scalability. In the self-hosted case, this property controls the maximum number of simultaneous BeginGetContext calls WCF will invoke. Each time BeginGetContext is called some memory is pinned within the managed heap for buffering. If too many buffers are pinned, excessive heap fragmentation may result. This property is ignored in the web-hosted case.  
-  
+The default value of <xref:System.ServiceModel.Channels.HttpTransportBindingElement.MaxPendingAccepts%2A> is 0, which means WCF will configure the value for you. You can increase the number for better scalability. In the self-hosted case, this property controls the maximum number of simultaneous BeginGetContext calls WCF will invoke. Each time BeginGetContext is called some memory is pinned within the managed heap for buffering. If too many buffers are pinned, excessive heap fragmentation may result. This property is ignored in the web-hosted case.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -735,17 +735,17 @@ httpBinding.MaxBufferSize = 16384;
         <value>The <see cref="T:System.Uri" /> that contains the address for the proxy. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example sets this property to use when performing requests on the binding. All requests are routed through this proxy, unless <xref:System.ServiceModel.Channels.HttpTransportBindingElement.BypassProxyOnLocal%2A> is set to `true` and the endpoint is a local endpoint.  
-  
- [C#]  
-  
+The following example sets this property to use when performing requests on the binding. All requests are routed through this proxy, unless <xref:System.ServiceModel.Channels.HttpTransportBindingElement.BypassProxyOnLocal%2A> is set to `true` and the endpoint is a local endpoint.  
+ 
+[C#]  
+ 
 ```  
 HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
 httpBinding.ProxyAddress = new Uri(http://proxyserver);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -773,18 +773,18 @@ httpBinding.ProxyAddress = new Uri(http://proxyserver);
         <value>The <see cref="T:System.Net.AuthenticationSchemes" /> enumeration that specifies the protocols used for client authentication on the proxy. The default is <see cref="F:System.Net.AuthenticationSchemes.Anonymous" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example sets this property to use when sending requests to the proxy specified in the <xref:System.ServiceModel.Channels.HttpTransportBindingElement.ProxyAddress%2A> property.  
-  
- [C#]  
-  
+The following example sets this property to use when sending requests to the proxy specified in the <xref:System.ServiceModel.Channels.HttpTransportBindingElement.ProxyAddress%2A> property.  
+ 
+[C#]  
+ 
 ```  
 HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
 httpBinding.ProxyAddress = new Uri(http://proxyserver);  
 httpBinding.ProxyAuthenticationScheme = AuthenticationSchemes.Digest;  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -812,10 +812,10 @@ httpBinding.ProxyAuthenticationScheme = AuthenticationSchemes.Digest;
         <value>The authentication realm. The default value is "".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Servers use realms to partition protected resources; each partition can have its own authentication scheme or authorization database. Realms are used only for basic and digest authentication. After a client successfully authenticates, the authentication is valid for all resources in a given realm. For a detailed description of realms, see [RFC 2617](http://go.microsoft.com/fwlink/?LinkID=95943).  
-  
+Servers use realms to partition protected resources; each partition can have its own authentication scheme or authorization database. Realms are used only for basic and digest authentication. After a client successfully authenticates, the authentication is valid for all resources in a given realm. For a detailed description of realms, see [RFC 2617](http://go.microsoft.com/fwlink/?LinkID=95943).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -861,24 +861,24 @@ httpBinding.ProxyAuthenticationScheme = AuthenticationSchemes.Digest;
         <value>A <see cref="F:System.Uri.UriSchemeHttp" /> object that represents the URI scheme for the transport.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used to validate bindings against base addresses.  
+This property is used to validate bindings against base addresses.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example outputs the scheme of the binding to the console.  
-  
- [C#]  
-  
+The following example outputs the scheme of the binding to the console.  
+ 
+[C#]  
+ 
 ```  
 HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
 Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);  
 ```  
-  
- The output is: "The scheme of the binding is http."  
-  
+ 
+The output is: "The scheme of the binding is http."  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -981,16 +981,16 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
         <summary>Exports a custom policy assertion about bindings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method writes binding-related statements into the WSDL information exposed by a particular contract and is used by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to communicate to clients the existence of this custom binding element in the binding stack.  
-  
- This method takes two parameters: the <xref:System.ServiceModel.Description.MetadataExporter> and <xref:System.ServiceModel.Description.PolicyConversionContext> objects. Use the <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A>, <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A>, and <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> methods to obtain collections of policy assertions that have already been exported at various scopes. Then use this method to add your own policy assertions to the appropriate collection.  
-  
- The <xref:System.ServiceModel.Description.PolicyConversionContext.Contract%2A> property exposes the <xref:System.ServiceModel.Description.ContractDescription> for the endpoint that is being exported. This allows this method to correctly scope their exported policy assertions. For example, security attributes in code may add behaviors to the <xref:System.ServiceModel.Description.ContractDescription> that indicate where security policy assertions should be added.  
-  
- Once custom policy assertions have been attached to the WSDL information, clients can detect and import the custom binding assertions by implementing an <xref:System.ServiceModel.Description.IPolicyImportExtension> interface.  
-  
+This method writes binding-related statements into the WSDL information exposed by a particular contract and is used by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to communicate to clients the existence of this custom binding element in the binding stack.  
+ 
+This method takes two parameters: the <xref:System.ServiceModel.Description.MetadataExporter> and <xref:System.ServiceModel.Description.PolicyConversionContext> objects. Use the <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A>, <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A>, and <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> methods to obtain collections of policy assertions that have already been exported at various scopes. Then use this method to add your own policy assertions to the appropriate collection.  
+ 
+The <xref:System.ServiceModel.Description.PolicyConversionContext.Contract%2A> property exposes the <xref:System.ServiceModel.Description.ContractDescription> for the endpoint that is being exported. This allows this method to correctly scope their exported policy assertions. For example, security attributes in code may add behaviors to the <xref:System.ServiceModel.Description.ContractDescription> that indicate where security policy assertions should be added.  
+ 
+Once custom policy assertions have been attached to the WSDL information, clients can detect and import the custom binding assertions by implementing an <xref:System.ServiceModel.Description.IPolicyImportExtension> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1072,10 +1072,10 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
 -   StreamedResponse</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specifying <xref:System.ServiceModel.Channels.HttpTransportBindingElement.TransferMode%2A> = Streamed implies both `StreamedRequest` and `StreamedResponse`.  
-  
+Specifying <xref:System.ServiceModel.Channels.HttpTransportBindingElement.TransferMode%2A> = Streamed implies both `StreamedRequest` and `StreamedResponse`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1104,30 +1104,30 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
           <see langword="true" /> if Unsafe Connection Sharing is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to `true` and the first request over a particular connection is authenticated using NTLM, subsequent requests over the same connection are processed using the authentication information in <xref:System.Security.Principal.IIdentity> of the initial request.  
-  
- This property has no effect when NTLM is not the authentication protocol.  
-  
+When this property is set to `true` and the first request over a particular connection is authenticated using NTLM, subsequent requests over the same connection are processed using the authentication information in <xref:System.Security.Principal.IIdentity> of the initial request.  
+ 
+This property has no effect when NTLM is not the authentication protocol.  
+ 
 > [!NOTE]
 >  While setting this property to `true` increases performance because additional NTLM authentication challenges are not sent, there is a security risk in not requiring all requests to provide authentication information. You must determine whether the increase in performance is worth this risk.  
+ 
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.Net.HttpListener.UnsafeConnectionNtlmAuthentication%2A>.  
+ 
   
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.Net.HttpListener.UnsafeConnectionNtlmAuthentication%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example sets the property to enable Unsafe Connection Sharing.  
-  
- [C#]  
-  
+The following example sets the property to enable Unsafe Connection Sharing.  
+ 
+[C#]  
+ 
 ```  
 HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
 httpBinding.AuthenticationScheme = AuthenticationSchemes.Ntlm;  
 httpBinding.UnsafeConnectionNtlmAuthentication = true;  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1177,17 +1177,17 @@ httpBinding.UnsafeConnectionNtlmAuthentication = true;
           <see langword="true" /> if the machine-wide proxy settings are used; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example causes user-specific proxy settings to be used.  
-  
- [C#]  
-  
+The following example causes user-specific proxy settings to be used.  
+ 
+[C#]  
+ 
 ```  
 HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
 httpBinding.UseDefaultWebProxy = false;  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

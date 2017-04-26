@@ -32,10 +32,10 @@
         <value>The exception that will be processed and returned in the response.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the exception is a <xref:System.Data.Services.DataServiceException>, the message of the exception will always be returned to the client, regardless of the <xref:System.Data.Services.HandleExceptionArgs.UseVerboseErrors%2A> value. If <xref:System.Data.Services.HandleExceptionArgs.UseVerboseErrors%2A> is true, the inner exceptions will also be returned to the client; otherwise only the <xref:System.Data.Services.DataServiceException> message will be returned.  
-  
+If the exception is a <xref:System.Data.Services.DataServiceException>, the message of the exception will always be returned to the client, regardless of the <xref:System.Data.Services.HandleExceptionArgs.UseVerboseErrors%2A> value. If <xref:System.Data.Services.HandleExceptionArgs.UseVerboseErrors%2A> is true, the inner exceptions will also be returned to the client; otherwise only the <xref:System.Data.Services.DataServiceException> message will be returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -57,10 +57,10 @@
         <value>The string value that indicates the response format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All errors result in an error payload sent back from the service. This property informs the service author of the format the error that will be sent back. The value of this property will always be a valid Internet Assigned Numbers Authority (IANA) mime type.  
-  
+All errors result in an error payload sent back from the service. This property informs the service author of the format the error that will be sent back. The value of this property will always be a valid Internet Assigned Numbers Authority (IANA) mime type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,10 +100,10 @@
         <value>Boolean value that indicates whether response has been written.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value is true, the HTTP response headers and possibly part of the response body have already been sent to the client and cannot be altered.  
-  
+If the value is true, the HTTP response headers and possibly part of the response body have already been sent to the client and cannot be altered.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,10 +125,10 @@
         <value>The Boolean value that indicates whether verbose errors will be returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.Data.Services.HandleExceptionArgs.UseVerboseErrors%2A> is set to true, all exception details will be returned in the response. Security Note: Setting this value to true may disclose information that should be private to the service.  
-  
+When <xref:System.Data.Services.HandleExceptionArgs.UseVerboseErrors%2A> is set to true, all exception details will be returned in the response. Security Note: Setting this value to true may disclose information that should be private to the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>

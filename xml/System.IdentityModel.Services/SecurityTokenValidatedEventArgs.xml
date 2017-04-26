@@ -14,10 +14,10 @@
     <summary>Provides data for the <see cref="E:System.IdentityModel.Services.WSFederationAuthenticationModule.SecurityTokenValidated" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The event is raised just after the issued token that was received from the security token service (STS) is validated during sign-in. You can access the principal that was created during validation by using the <xref:System.IdentityModel.Services.SecurityTokenValidatedEventArgs.ClaimsPrincipal%2A> property and either modify or replace it. You can set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to cancel processing of the sign-in response message.  
-  
+The event is raised just after the issued token that was received from the security token service (STS) is validated during sign-in. You can access the principal that was created during validation by using the <xref:System.IdentityModel.Services.SecurityTokenValidatedEventArgs.ClaimsPrincipal%2A> property and either modify or replace it. You can set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to cancel processing of the sign-in response message.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SecurityTokenValidatedEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Services.SecurityTokenValidatedEventArgs.ClaimsPrincipal%2A> property is set to the principal specified in the `claimsPrincipal` parameter.  
-  
+The <xref:System.IdentityModel.Services.SecurityTokenValidatedEventArgs.ClaimsPrincipal%2A> property is set to the principal specified in the `claimsPrincipal` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

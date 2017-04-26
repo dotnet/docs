@@ -29,10 +29,10 @@
         <summary>Initializes a new instance of the <see langword="MetaHeader" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor initializes all properties to their default values.  
-  
+The default constructor initializes all properties to their default values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <value>The type of the associated <see cref="T:System.Drawing.Imaging.Metafile" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specifies whether the metafile is in memory or recorded in a disk file. This property can be one of the following values.  
-  
+Specifies whether the metafile is in memory or recorded in a disk file. This property can be one of the following values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,10 +169,10 @@
         <value>The version number of the header format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specifies the system version number. The version number for metafiles that support device-independent bitmaps (DIBS) is 0x0300. Otherwise, the version number is 0x0100.  
-  
+Specifies the system version number. The version number for metafiles that support device-independent bitmaps (DIBS) is 0x0300. Otherwise, the version number is 0x0100.  
+ 
  ]]></format>
         </remarks>
       </Docs>

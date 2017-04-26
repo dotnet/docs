@@ -146,18 +146,18 @@
         <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttributeModificationCollection.CopyTo(System.DirectoryServices.Protocols.DirectoryAttributeModification[],System.Int32)" /> method copies the entire collection to a one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Exceptions  
-  
+ 
 |Exception|Condition|  
 |---------------|---------------|  
 |ArgumentNullException|`array` is a null reference (`Nothing` in Visual Basic).|  
 |ArgumentOutOfRangeException|`index` is less than zero.|  
 |ArgumentException|`array` is multidimensional<br /><br /> -or-<br /><br /> The number of elements in the source <xref:System.DirectoryServices.Protocols.DirectoryAttributeModificationCollection> is greater than the available space from `index` to the end of the destination `array`.|  
 |InvalidCastException|The type of the source <xref:System.DirectoryServices.Protocols.DirectoryAttributeModificationCollection> cannot be cast automatically to the type of the destination `array`.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,15 +232,15 @@
         <value>The <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeModification" /> object at the specified <paramref name="index" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Exceptions  
-  
+ 
 |Exception|Condition|  
 |---------------|---------------|  
 |ArgumentException|You attempted to set the property to `null`.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -265,15 +265,15 @@
         <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttributeModificationCollection.OnValidate(System.Object)" /> method verifies that <paramref name="value" /> is a <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeModification" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Exceptions  
-  
+ 
 |Exception|Condition|  
 |---------------|---------------|  
 |ArgumentException|`value` is a null reference (`Nothing` in Visual Basic), or `value` is not a <xref:System.DirectoryServices.Protocols.DirectoryAttributeModification> object.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

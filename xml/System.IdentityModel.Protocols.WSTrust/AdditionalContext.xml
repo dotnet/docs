@@ -14,12 +14,12 @@
     <summary>Represents the auth:AdditionalContext element defined in the authorization extensions to WS-Trust. These extensions are defined in the WS-Federation specification.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The auth:AdditionalContext element can be used to communicate any additional context for a token request (RST). This context is provided as a collection of name-value pairs, each of which corresponds to a single auth:ContextItem subelement. The auth:ContextItem element is represented by the <xref:System.IdentityModel.Protocols.WSTrust.ContextItem> class. You can access the list of context items through the <xref:System.IdentityModel.Protocols.WSTrust.AdditionalContext.Items%2A> property.  
-  
- For more information about the element that this class represents, see the WS-Federation specification.  
-  
+The auth:AdditionalContext element can be used to communicate any additional context for a token request (RST). This context is provided as a collection of name-value pairs, each of which corresponds to a single auth:ContextItem subelement. The auth:ContextItem element is represented by the <xref:System.IdentityModel.Protocols.WSTrust.ContextItem> class. You can access the list of context items through the <xref:System.IdentityModel.Protocols.WSTrust.AdditionalContext.Items%2A> property.  
+ 
+For more information about the element that this class represents, see the WS-Federation specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>

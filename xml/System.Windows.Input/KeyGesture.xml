@@ -22,52 +22,52 @@
     <summary>Defines a keyboard combination that can be used to invoke a command.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In most cases, a <xref:System.Windows.Input.KeyGesture> must be associated with one or more <xref:System.Windows.Input.ModifierKeys>. The exceptions to this rule are the function keys and the numeric keypad keys, which can be a valid <xref:System.Windows.Input.KeyGesture> by themselves. For example, you can create a <xref:System.Windows.Input.KeyGesture> by using only the F12 key, but to use the X key in a <xref:System.Windows.Input.KeyGesture> it must be paired with a modifier key.  
-  
- In general, you can  
-  
- You can use a <xref:System.Windows.Input.KeyBinding> to bind a <xref:System.Windows.Input.KeyGesture> to an <xref:System.Windows.Input.ICommand>, so that the command is invoked when the <xref:System.Windows.Input.KeyGesture> occurs.  
-  
- For <xref:System.Windows.Input.KeyGesture> [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usages, the property that is generally set in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] is <xref:System.Windows.Input.KeyBinding.Gesture%2A>, in cases where the gesture represents both a standard key and a modifier key. You can also set the <xref:System.Windows.Input.KeyBinding.Gesture%2A> property to be just a function key, or just a modifier key combination. However, it is more common to set the <xref:System.Windows.Input.KeyBinding.Key%2A> property if the intended command binding is a function key with no modifiers, or <xref:System.Windows.Input.KeyBinding.Modifiers%2A> if the intended command binding is for modifier keys only.  
-  
+In most cases, a <xref:System.Windows.Input.KeyGesture> must be associated with one or more <xref:System.Windows.Input.ModifierKeys>. The exceptions to this rule are the function keys and the numeric keypad keys, which can be a valid <xref:System.Windows.Input.KeyGesture> by themselves. For example, you can create a <xref:System.Windows.Input.KeyGesture> by using only the F12 key, but to use the X key in a <xref:System.Windows.Input.KeyGesture> it must be paired with a modifier key.  
+ 
+In general, you can  
+ 
+You can use a <xref:System.Windows.Input.KeyBinding> to bind a <xref:System.Windows.Input.KeyGesture> to an <xref:System.Windows.Input.ICommand>, so that the command is invoked when the <xref:System.Windows.Input.KeyGesture> occurs.  
+ 
+For <xref:System.Windows.Input.KeyGesture> [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usages, the property that is generally set in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] is <xref:System.Windows.Input.KeyBinding.Gesture%2A>, in cases where the gesture represents both a standard key and a modifier key. You can also set the <xref:System.Windows.Input.KeyBinding.Gesture%2A> property to be just a function key, or just a modifier key combination. However, it is more common to set the <xref:System.Windows.Input.KeyBinding.Key%2A> property if the intended command binding is a function key with no modifiers, or <xref:System.Windows.Input.KeyBinding.Modifiers%2A> if the intended command binding is for modifier keys only.  
+ 
 <a name="xamlAttributeUsage_KeyGesture"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="oneOrMoreModifierKeys+key"/>  
 - or -  
 <object property="functionKey"/>  
 ```  
-  
+ 
 <a name="xamlValues_KeyGesture"></a>   
 ## XAML Values  
- `functionKey`  
- <xref:System.Windows.Input.Key>  
+`functionKey`  
+<xref:System.Windows.Input.Key>  
+ 
+A single key value, which must be one of the function keys (F1-12) or numeric keypad keys.  
+ 
+`oneOrMoreModifierKeys`  
+One or more modifier keys, defined by the <xref:System.Windows.Input.ModifierKeys> enumeration, delimited with a "+" character.  
+ 
+`key`  
+<xref:System.Windows.Input.Key>  
+ 
+A single key value.  
+ 
   
- A single key value, which must be one of the function keys (F1-12) or numeric keypad keys.  
-  
- `oneOrMoreModifierKeys`  
- One or more modifier keys, defined by the <xref:System.Windows.Input.ModifierKeys> enumeration, delimited with a "+" character.  
-  
- `key`  
- <xref:System.Windows.Input.Key>  
-  
- A single key value.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to bind the <xref:System.Windows.Input.ApplicationCommands.Close%2A> command to a <xref:System.Windows.Input.KeyGesture> using a <xref:System.Windows.Input.KeyBinding>.  
-  
- [!code-csharp[commandlibrarysnippets#KeyBindingWithKeyAndModifiers](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#keybindingwithkeyandmodifiers)]
- [!code-vb[commandlibrarysnippets#KeyBindingWithKeyAndModifiers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#keybindingwithkeyandmodifiers)]  
-  
- The following example shows how to use <xref:System.Windows.Input.KeyGesture> in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Note that the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage does not directly declare a `<KeyGesture>` element. That object element usage is not possible because <xref:System.Windows.Input.KeyGesture> does not expose a public default constructor. Instead, the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage uses the typeconverter behavior to declare an entire <xref:System.Windows.Input.KeyGesture> inline as the `Gesture` attribute value.  
-  
- [!code-xml[commandWithHandler#CommandHandlerKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml#commandhandlerkeybinding)]  
-  
+The following example shows how to bind the <xref:System.Windows.Input.ApplicationCommands.Close%2A> command to a <xref:System.Windows.Input.KeyGesture> using a <xref:System.Windows.Input.KeyBinding>.  
+ 
+[!code-csharp[commandlibrarysnippets#KeyBindingWithKeyAndModifiers](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#keybindingwithkeyandmodifiers)]
+[!code-vb[commandlibrarysnippets#KeyBindingWithKeyAndModifiers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#keybindingwithkeyandmodifiers)]  
+ 
+The following example shows how to use <xref:System.Windows.Input.KeyGesture> in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Note that the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage does not directly declare a `<KeyGesture>` element. That object element usage is not possible because <xref:System.Windows.Input.KeyGesture> does not expose a public default constructor. Instead, the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage uses the typeconverter behavior to declare an entire <xref:System.Windows.Input.KeyGesture> inline as the `Gesture` attribute value.  
+ 
+[!code-xml[commandWithHandler#CommandHandlerKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml#commandhandlerkeybinding)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,18 +89,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyGesture" /> class with the specified <see cref="T:System.Windows.Input.Key" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In most cases, a <xref:System.Windows.Input.KeyGesture> must be associated with one or more <xref:System.Windows.Input.ModifierKeys>.  The exceptions to this rule are the function keys and the numeric keypad keys, which can be a valid <xref:System.Windows.Input.KeyGesture> by themselves.  
+In most cases, a <xref:System.Windows.Input.KeyGesture> must be associated with one or more <xref:System.Windows.Input.ModifierKeys>.  The exceptions to this rule are the function keys and the numeric keypad keys, which can be a valid <xref:System.Windows.Input.KeyGesture> by themselves.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this constructor to create a <xref:System.Windows.Input.KeyGesture> and associate it with a <xref:System.Windows.Input.KeyBinding>.  The <xref:System.Windows.Input.KeyBinding> is then added to the <xref:System.Windows.Input.InputBindingCollection> of a <xref:System.Windows.Window>.  
-  
- [!code-csharp[commandlibrarysnippets#KeyBindingWithNoModifier](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#keybindingwithnomodifier)]
- [!code-vb[commandlibrarysnippets#KeyBindingWithNoModifier](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#keybindingwithnomodifier)]  
-  
+The following example shows how to use this constructor to create a <xref:System.Windows.Input.KeyGesture> and associate it with a <xref:System.Windows.Input.KeyBinding>.  The <xref:System.Windows.Input.KeyBinding> is then added to the <xref:System.Windows.Input.InputBindingCollection> of a <xref:System.Windows.Window>.  
+ 
+[!code-csharp[commandlibrarysnippets#KeyBindingWithNoModifier](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#keybindingwithnomodifier)]
+[!code-vb[commandlibrarysnippets#KeyBindingWithNoModifier](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#keybindingwithnomodifier)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -128,18 +128,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyGesture" /> class with the specified <see cref="T:System.Windows.Input.Key" /> and <see cref="T:System.Windows.Input.ModifierKeys" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In most cases, a <xref:System.Windows.Input.KeyGesture> must be associated with one or more <xref:System.Windows.Input.ModifierKeys>. The exceptions to this rule are the function keys and the numeric keypad keys, which can be a valid <xref:System.Windows.Input.KeyGesture> by themselves.  
+In most cases, a <xref:System.Windows.Input.KeyGesture> must be associated with one or more <xref:System.Windows.Input.ModifierKeys>. The exceptions to this rule are the function keys and the numeric keypad keys, which can be a valid <xref:System.Windows.Input.KeyGesture> by themselves.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this constructor to create a <xref:System.Windows.Input.KeyGesture> and associate it with a <xref:System.Windows.Input.KeyBinding>. The <xref:System.Windows.Input.KeyBinding> is then added to the <xref:System.Windows.Input.InputBindingCollection> of a <xref:System.Windows.Window>.  
-  
- [!code-csharp[commandlibrarysnippets#KeyBindingWithKeyAndModifiers](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#keybindingwithkeyandmodifiers)]
- [!code-vb[commandlibrarysnippets#KeyBindingWithKeyAndModifiers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#keybindingwithkeyandmodifiers)]  
-  
+The following example shows how to use this constructor to create a <xref:System.Windows.Input.KeyGesture> and associate it with a <xref:System.Windows.Input.KeyBinding>. The <xref:System.Windows.Input.KeyBinding> is then added to the <xref:System.Windows.Input.InputBindingCollection> of a <xref:System.Windows.Window>.  
+ 
+[!code-csharp[commandlibrarysnippets#KeyBindingWithKeyAndModifiers](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#keybindingwithkeyandmodifiers)]
+[!code-vb[commandlibrarysnippets#KeyBindingWithKeyAndModifiers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#keybindingwithkeyandmodifiers)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -173,10 +173,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyGesture" /> class with the specified <see cref="T:System.Windows.Input.Key" />, <see cref="T:System.Windows.Input.ModifierKeys" />, and display string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.KeyGesture.DisplayString%2A> property is set to the `displayString` parameter.  
-  
+The <xref:System.Windows.Input.KeyGesture.DisplayString%2A> property is set to the `displayString` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -208,12 +208,12 @@
         <value>The display string for this <see cref="T:System.Windows.Input.KeyGesture" />. The default value is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a display string was not set in the constructor, an empty string is returned.  
-  
- If this property is empty, the <xref:System.Windows.Input.KeyGesture.GetDisplayStringForCulture%2A> method returns a string created from the <xref:System.Windows.Input.KeyGesture.Key%2A> and <xref:System.Windows.Input.KeyGesture.Modifiers%2A>.  
-  
+If a display string was not set in the constructor, an empty string is returned.  
+ 
+If this property is empty, the <xref:System.Windows.Input.KeyGesture.GetDisplayStringForCulture%2A> method returns a string created from the <xref:System.Windows.Input.KeyGesture.Key%2A> and <xref:System.Windows.Input.KeyGesture.Modifiers%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,10 +239,10 @@
         <returns>The string to display</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the display string was set by the constructor, that string is returned; otherwise, a string is created from the <xref:System.Windows.Input.KeyGesture.Key%2A> and <xref:System.Windows.Input.KeyGesture.Modifiers%2A> with any necessary conversions being governed by the specified <xref:System.Globalization.CultureInfo> object.  
-  
+If the display string was set by the constructor, that string is returned; otherwise, a string is created from the <xref:System.Windows.Input.KeyGesture.Key%2A> and <xref:System.Windows.Input.KeyGesture.Modifiers%2A> with any necessary conversions being governed by the specified <xref:System.Globalization.CultureInfo> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -264,10 +264,10 @@
         <value>The key associated with the gesture.  The default value is <see cref="F:System.Windows.Input.Key.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In most cases, a <xref:System.Windows.Input.KeyGesture> must be associated with one or more <xref:System.Windows.Input.ModifierKeys>.  The exceptions to this rule are the function keys and the numeric keypad keys, which can be a valid <xref:System.Windows.Input.KeyGesture> by themselves.  
-  
+In most cases, a <xref:System.Windows.Input.KeyGesture> must be associated with one or more <xref:System.Windows.Input.ModifierKeys>.  The exceptions to this rule are the function keys and the numeric keypad keys, which can be a valid <xref:System.Windows.Input.KeyGesture> by themselves.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,18 +296,18 @@
           <see langword="true" /> if the event data matches this <see cref="T:System.Windows.Input.KeyGesture" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `targetElement` can be used to make a more specific decision on whether a command should be invoked on a specific element.  
+`targetElement` can be used to make a more specific decision on whether a command should be invoked on a specific element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to test whether a <xref:System.Windows.Input.KeyGesture> matches the input associated with an instance of an <xref:System.Windows.Input.InputEventArgs>. A <xref:System.Windows.UIElement.KeyDown> event handler is created that compares the event data with the <xref:System.Windows.Input.KeyGesture> by using the <xref:System.Windows.Input.KeyGesture.Matches%2A> method.  
-  
- [!code-csharp[commandlibrarysnippets#KeyDownHandlerKeyGestureMatches](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#keydownhandlerkeygesturematches)]
- [!code-vb[commandlibrarysnippets#KeyDownHandlerKeyGestureMatches](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#keydownhandlerkeygesturematches)]  
-  
+The following example shows how to test whether a <xref:System.Windows.Input.KeyGesture> matches the input associated with an instance of an <xref:System.Windows.Input.InputEventArgs>. A <xref:System.Windows.UIElement.KeyDown> event handler is created that compares the event data with the <xref:System.Windows.Input.KeyGesture> by using the <xref:System.Windows.Input.KeyGesture.Matches%2A> method.  
+ 
+[!code-csharp[commandlibrarysnippets#KeyDownHandlerKeyGestureMatches](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#keydownhandlerkeygesturematches)]
+[!code-vb[commandlibrarysnippets#KeyDownHandlerKeyGestureMatches](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#keydownhandlerkeygesturematches)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,10 +329,10 @@
         <value>The modifier keys associated with the gesture. The default value is <see cref="F:System.Windows.Input.ModifierKeys.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In most cases, a <xref:System.Windows.Input.KeyGesture> must be associated with one or more <xref:System.Windows.Input.ModifierKeys>. The exceptions to this rule are the function keys and the numeric keypad keys, which can be a valid <xref:System.Windows.Input.KeyGesture> by themselves. For example, you can create a <xref:System.Windows.Input.KeyGesture> by using only the F12 key, but to use the X key in a <xref:System.Windows.Input.KeyGesture> it must be paired with a modifier key.  
-  
+In most cases, a <xref:System.Windows.Input.KeyGesture> must be associated with one or more <xref:System.Windows.Input.ModifierKeys>. The exceptions to this rule are the function keys and the numeric keypad keys, which can be a valid <xref:System.Windows.Input.KeyGesture> by themselves. For example, you can create a <xref:System.Windows.Input.KeyGesture> by using only the F12 key, but to use the X key in a <xref:System.Windows.Input.KeyGesture> it must be paired with a modifier key.  
+ 
  ]]></format>
         </remarks>
       </Docs>

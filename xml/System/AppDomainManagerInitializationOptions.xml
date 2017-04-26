@@ -22,10 +22,10 @@
     <summary>Specifies the action that a custom application domain manager takes when initializing a new domain.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These flags are used for property settings in the <xref:System.AppDomainManager> class. The <xref:System.AppDomainManagerInitializationOptions> flags apply only to custom application domain managers; they do not apply to the default manager. The <xref:System.AppDomainManager.InitializeNewDomain%2A> method in the default application domain manager does nothing. The default enumeration value is None.  
-  
+These flags are used for property settings in the <xref:System.AppDomainManager> class. The <xref:System.AppDomainManagerInitializationOptions> flags apply only to custom application domain managers; they do not apply to the default manager. The <xref:System.AppDomainManager.InitializeNewDomain%2A> method in the default application domain manager does nothing. The default enumeration value is None.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,14 +14,14 @@
     <summary>Each property of the <see cref="T:System.Drawing.SystemBrushes" /> class is a <see cref="T:System.Drawing.SolidBrush" /> that is the color of a Windows display element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to set a keyboard shortcut using the <xref:System.Drawing.StringFormat.HotkeyPrefix%2A> property. It also demonstrates how to use the <xref:System.Drawing.SystemBrushes.FromSystemColor%2A> method. To run this example, paste the code into a form, handle the form's <xref:System.Windows.Forms.Control.Paint> event and call the following method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.MiscExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.MiscExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#2)]
- [!code-vb[System.Drawing.MiscExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#2)]  
-  
+The following code example shows how to set a keyboard shortcut using the <xref:System.Drawing.StringFormat.HotkeyPrefix%2A> property. It also demonstrates how to use the <xref:System.Drawing.SystemBrushes.FromSystemColor%2A> method. To run this example, paste the code into a form, handle the form's <xref:System.Windows.Forms.Control.Paint> event and call the following method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.MiscExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#2)]
+[!code-csharp[System.Drawing.MiscExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#2)]
+[!code-vb[System.Drawing.MiscExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -97,10 +97,10 @@
         <value>A <see cref="T:System.Drawing.SolidBrush" /> that is the color of the application workspace.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The application workspace is the area in a multiple-document view that is not being occupied by documents.  
-  
+The application workspace is the area in a multiple-document view that is not being occupied by documents.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <value>A <see cref="T:System.Drawing.SolidBrush" /> that is the highlight color of a 3-D element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This color is applied to parts of a 3-D element that face the light source.  
-  
+This color is applied to parts of a 3-D element that face the light source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
         <value>A <see cref="T:System.Drawing.SolidBrush" /> that is the shadow color of a 3-D element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This color is applied to parts of a 3-D element that face away from the light source.  
-  
+This color is applied to parts of a 3-D element that face away from the light source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
         <value>A <see cref="T:System.Drawing.SolidBrush" /> that is the shadow color of a 3-D element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The shadow color is applied to parts of a 3-D element that face away from the light source.  
-  
+The shadow color is applied to parts of a 3-D element that face away from the light source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,10 +233,10 @@
         <value>A <see cref="T:System.Drawing.SolidBrush" /> that is the dark shadow color of a 3-D element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The dark shadow color is applied to the parts of a 3-D element that are the darkest color.  
-  
+The dark shadow color is applied to the parts of a 3-D element that are the darkest color.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,10 +258,10 @@
         <value>A <see cref="T:System.Drawing.SolidBrush" /> that is the light color of a 3-D element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The light color is applied to parts of a 3-D element that face the light source.  
-  
+The light color is applied to parts of a 3-D element that face the light source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,10 +283,10 @@
         <value>A <see cref="T:System.Drawing.SolidBrush" /> that is the highlight color of a 3-D element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The highlight color is applied to the parts of a 3-D element that are the lightest color.  
-  
+The highlight color is applied to the parts of a 3-D element that are the lightest color.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -402,10 +402,10 @@
         <value>A <see cref="T:System.Drawing.SolidBrush" /> that is the color of dimmed text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Disabled items in a list are displayed in dimmed text.  
-  
+Disabled items in a list are displayed in dimmed text.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -427,10 +427,10 @@
         <value>A <see cref="T:System.Drawing.SolidBrush" /> that is the color of the background of selected items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Selected items may include menu items as well as selected text. For example, the brush may be the color used for the background of selected items in a list box.  
-  
+Selected items may include menu items as well as selected text. For example, the brush may be the color used for the background of selected items in a list box.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -452,10 +452,10 @@
         <value>A <see cref="T:System.Drawing.SolidBrush" /> that is the color of the text of selected items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Selected items may include menu items as well as selected text. For example, the brush may be the color used for the text of selected items in a list box.  
-  
+Selected items may include menu items as well as selected text. For example, the brush may be the color used for the text of selected items in a list box.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -477,10 +477,10 @@
         <value>A <see cref="T:System.Drawing.SolidBrush" /> that is the color used to designate a hot-tracked item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Single-clicking a hot-tracked item executes the item.  
-  
+Single-clicking a hot-tracked item executes the item.  
+ 
  ]]></format>
         </remarks>
       </Docs>

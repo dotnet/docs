@@ -13,10 +13,10 @@
     <summary>Specifies the reason why a cache entry was removed or an entry is about to be removed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Caching.CacheEntryRemovedReason> enumeration is used to provide a predefined set of reasons why a cache entry was removed or is about to be removed. The <xref:System.Runtime.Caching.CacheEntryRemovedArguments> class takes a <xref:System.Runtime.Caching.CacheEntryRemovedReason> value as one of the parameter to pass to a callback method.  
-  
+The <xref:System.Runtime.Caching.CacheEntryRemovedReason> enumeration is used to provide a predefined set of reasons why a cache entry was removed or is about to be removed. The <xref:System.Runtime.Caching.CacheEntryRemovedArguments> class takes a <xref:System.Runtime.Caching.CacheEntryRemovedReason> value as one of the parameter to pass to a callback method.  
+ 
  ]]></format>
     </remarks>
   </Docs>

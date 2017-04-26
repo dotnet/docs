@@ -23,13 +23,13 @@
     <summary>Represents a property on a value type that can be used as an l-value in an expression.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses <xref:System.Activities.Expressions.ValueTypePropertyReference%602> in an `Assign` activity to assign a `string` value to a property and prints the property value to the console. The `Assign` activity is equivalent to the following statement when using the `struct` defined in the following example: `myStructVariable.AProperty = "Hello";`.  
-  
+The following code example uses <xref:System.Activities.Expressions.ValueTypePropertyReference%602> in an `Assign` activity to assign a `string` value to a property and prints the property value to the console. The `Assign` activity is equivalent to the following statement when using the `struct` defined in the following example: `myStructVariable.AProperty = "Hello";`.  
+ 
 > [!NOTE]
 >  Instead of instantiating the <xref:System.Activities.Expressions.ValueTypePropertyReference%602> l-value expression activity directly, it is strongly recommended that you call <xref:System.Activities.Expressions.ExpressionServices.ConvertReference%2A>, which provides a higher level of abstraction and enables you to implement your workflow more intuitively.  
-  
+ 
 ```  
   
 // Define a struct with a property named AProperty.  
@@ -73,7 +73,7 @@ public static void ValueTypePropertyReferenceSample()
 }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

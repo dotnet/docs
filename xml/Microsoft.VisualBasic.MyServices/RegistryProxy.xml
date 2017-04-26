@@ -19,25 +19,25 @@
     <summary>Provides properties and methods for manipulating the registry.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To use these properties, you must have Read and Write permission from the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. Any code running with full trust (under the default security policy, this is any code installed on the user's local hard drive) has the necessary permissions to access the registry. For more information, see the <xref:System.Security.Permissions.RegistryPermission> class.  
-  
- The following table lists examples of tasks involving the `My.Computer.Registry` object.  
-  
+To use these properties, you must have Read and Write permission from the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. Any code running with full trust (under the default security policy, this is any code installed on the user's local hard drive) has the necessary permissions to access the registry. For more information, see the <xref:System.Security.Permissions.RegistryPermission> class.  
+ 
+The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+ 
 |To|See|  
 |--------|---------|  
 |Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
 |Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
 |Read data from the registry|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example reads the value `Name` from `HKEY_CURRENT_USER\Software\MyApp` and displays it in a message box.  
-  
- [!code-vb[VbVbalrMyRegistry#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#8)]  
-  
+This example reads the value `Name` from `HKEY_CURRENT_USER\Software\MyApp` and displays it in a message box.  
+ 
+[!code-vb[VbVbalrMyRegistry#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#8)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,14 +61,14 @@
         </value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `HKEY_CLASSES_ROOT` is primarily used to store information about file associations in Windows.  
-  
- The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant only those privileges necessary to get the job done.  
-  
- Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
-  
+`HKEY_CLASSES_ROOT` is primarily used to store information about file associations in Windows.  
+ 
+The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant only those privileges necessary to get the job done.  
+ 
+Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |AllAccess|Create, read, and write access to registry variables.|  
@@ -76,24 +76,24 @@
 |NoAccess|No access to registry variables.|  
 |Read|Read access to registry variables.|  
 |Write|Write access to registry variables.|  
-  
- The following table lists examples of tasks involving the `My.Computer.Registry` object.  
-  
+ 
+The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+ 
 |To|See|  
 |--------|---------|  
 |Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
 |Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
 |Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example gets the names of the subkeys for the `ClassesRoot` registry key and adds them to `ListBox1`.  
-  
- [!code-vb[VbVbalrMyRegistry#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#10)]  
-  
- This example requires that you have a `ListBox` named `ListBox1` in your project.  
-  
+This example gets the names of the subkeys for the `ClassesRoot` registry key and adds them to `ListBox1`.  
+ 
+[!code-vb[VbVbalrMyRegistry#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#10)]  
+ 
+This example requires that you have a `ListBox` named `ListBox1` in your project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,14 +117,14 @@
         </value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `HKEY_CURRENT_CONFIG` is primarily used to store settings for devices on the computer.  
-  
- The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant only those privileges necessary to get the job done.  
-  
- Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
-  
+`HKEY_CURRENT_CONFIG` is primarily used to store settings for devices on the computer.  
+ 
+The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant only those privileges necessary to get the job done.  
+ 
+Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |AllAccess|Create, read, and write access to registry variables.|  
@@ -132,22 +132,22 @@
 |NoAccess|No access to registry variables.|  
 |Read|Read access to registry variables.|  
 |Write|Write access to registry variables.|  
-  
- The following table lists examples of tasks involving the `My.Computer.Registry` object.  
-  
+ 
+The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+ 
 |To|See|  
 |--------|---------|  
 |Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
 |Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
 |Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example creates the subkey `MyDeviceSettings`.  
-  
- [!code-vb[VbVbalrMyRegistry#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#5)]  
-  
+This example creates the subkey `MyDeviceSettings`.  
+ 
+[!code-vb[VbVbalrMyRegistry#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,14 +171,14 @@
         </value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `HKEY_CURRENT_USER` is primarily used to store per-user settings, such as colors and fonts, in Windows. The key differ according to the user.  
-  
- The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant the fewest privileges necessary to get the job done.  
-  
- Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
-  
+`HKEY_CURRENT_USER` is primarily used to store per-user settings, such as colors and fonts, in Windows. The key differ according to the user.  
+ 
+The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant the fewest privileges necessary to get the job done.  
+ 
+Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |AllAccess|Create, read, and write access to registry variables.|  
@@ -186,22 +186,22 @@
 |NoAccess|No access to registry variables.|  
 |Read|Read access to registry variables.|  
 |Write|Write access to registry variables.|  
-  
- The following table lists examples of tasks involving the `My.Computer.Registry` object.  
-  
+ 
+The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+ 
 |To|See|  
 |--------|---------|  
 |Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
 |Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
 |Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example deletes the subkey `Software\MyCompany\Preferences\UserData`.  
-  
- [!code-vb[VbVbalrMyRegistry#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#2)]  
-  
+This example deletes the subkey `Software\MyCompany\Preferences\UserData`.  
+ 
+[!code-vb[VbVbalrMyRegistry#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,14 +230,14 @@
         </value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `HKEY_DYNDATA` is used to store dynamic registry data, such as that used by Virtual Device Drivers and is supported only on Windows 95/98 systems. On non-Windows 95/98 systems, calling any methods of the key returned by `Registry.DynData`, such as `CreateSubKey`, `DeleteSubKey`, `GetSubKeyCount`, `GetValueCount`, etc., will throw a <xref:System.IO.IOException>.  
-  
- The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant the fewest privileges necessary to get the job done.  
-  
- Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
-  
+`HKEY_DYNDATA` is used to store dynamic registry data, such as that used by Virtual Device Drivers and is supported only on Windows 95/98 systems. On non-Windows 95/98 systems, calling any methods of the key returned by `Registry.DynData`, such as `CreateSubKey`, `DeleteSubKey`, `GetSubKeyCount`, `GetValueCount`, etc., will throw a <xref:System.IO.IOException>.  
+ 
+The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant the fewest privileges necessary to get the job done.  
+ 
+Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |AllAccess|Create, read, and write access to registry variables.|  
@@ -245,22 +245,22 @@
 |NoAccess|No access to registry variables.|  
 |Read|Read access to registry variables.|  
 |Write|Write access to registry variables.|  
-  
- The following table lists examples of tasks involving the `My.Computer.Registry` object.  
-  
+ 
+The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+ 
 |To|See|  
 |--------|---------|  
 |Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
 |Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
 |Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example deletes the subkey tree `Software\MyCompany\Preferences`.  
-  
- [!code-vb[VbVbalrMyRegistry#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#1)]  
-  
+This example deletes the subkey tree `Software\MyCompany\Preferences`.  
+ 
+[!code-vb[VbVbalrMyRegistry#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -293,25 +293,25 @@
         <returns>Gets a value from a registry key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `valueName` is not case-sensitive.  
-  
- A registry key can contain one value that is not associated with any name. When this unnamed value is displayed in the registry editor, the string "(Default)" appears instead of a name. To retrieve this unnamed value, specify either null or the empty string ("") for `valueName`.  
-  
- The following table lists examples of tasks involving the `GetValue` method.  
-  
+`valueName` is not case-sensitive.  
+ 
+A registry key can contain one value that is not associated with any name. When this unnamed value is displayed in the registry editor, the string "(Default)" appears instead of a name. To retrieve this unnamed value, specify either null or the empty string ("") for `valueName`.  
+ 
+The following table lists examples of tasks involving the `GetValue` method.  
+ 
 |To|See|  
 |--------|---------|  
 |Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example reads the value `Name` from `HKEY_CURRENT_USER\Software\MyApp` and displays it in a `MessageBox`.  
-  
- [!code-vb[VbVbalrMyRegistry#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#9)]  
-  
+This example reads the value `Name` from `HKEY_CURRENT_USER\Software\MyApp` and displays it in a `MessageBox`.  
+ 
+[!code-vb[VbVbalrMyRegistry#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to read from the registry key.</exception>
@@ -341,14 +341,14 @@
         </value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `HKEY_LOCAL_MACHINE` is usually used to store settings that do not vary from user to user in Windows. All users of the computer share this key. Its five subkeys (`Hardware`, `SAM`, `Security`, `Software`, and `System`) hold configuration data for the local machine.  
-  
- The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant the fewest privileges necessary to get the job done.  
-  
- Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
-  
+`HKEY_LOCAL_MACHINE` is usually used to store settings that do not vary from user to user in Windows. All users of the computer share this key. Its five subkeys (`Hardware`, `SAM`, `Security`, `Software`, and `System`) hold configuration data for the local machine.  
+ 
+The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant the fewest privileges necessary to get the job done.  
+ 
+Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |AllAccess|Create, read, and write access to registry variables.|  
@@ -356,22 +356,22 @@
 |NoAccess|No access to registry variables.|  
 |Read|Read access to registry variables.|  
 |Write|Write access to registry variables.|  
-  
- The following table lists examples of tasks involving the `My.Computer.Registry` object.  
-  
+ 
+The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+ 
 |To|See|  
 |--------|---------|  
 |Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
 |Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
 |Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example opens the subkey `Software\MyCompany\Preferences` and sets the value `FontColor` to `"red"`.  
-  
- [!code-vb[VbVbalrMyRegistry#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#3)]  
-  
+This example opens the subkey `Software\MyCompany\Preferences` and sets the value `FontColor` to `"red"`.  
+ 
+[!code-vb[VbVbalrMyRegistry#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,18 +395,18 @@
         </value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `HKEY_PERFORMANCE_DATA` is used to access performance information for software components. Each software component creates keys for its objects and counters when it is installed and writes counter data while it is executing. This data is not stored in the registry, although the registry is used to access it. Instead, calling registry functions via `HKEY_PERFORMANCE_DATA` causes the system to collect the data from the appropriate system object managers.  
-  
- This key does not exist on Windows 98 systems; an attempt to use it other than calling the `Name` method will throw an <xref:System.IO.IOException>.  
-  
- This key cannot normally be written to; attempting to create a subkey on it will throw an <xref:System.IO.IOException>.  
-  
- The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant the fewest privileges necessary to get the job done.  
-  
- Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
-  
+`HKEY_PERFORMANCE_DATA` is used to access performance information for software components. Each software component creates keys for its objects and counters when it is installed and writes counter data while it is executing. This data is not stored in the registry, although the registry is used to access it. Instead, calling registry functions via `HKEY_PERFORMANCE_DATA` causes the system to collect the data from the appropriate system object managers.  
+ 
+This key does not exist on Windows 98 systems; an attempt to use it other than calling the `Name` method will throw an <xref:System.IO.IOException>.  
+ 
+This key cannot normally be written to; attempting to create a subkey on it will throw an <xref:System.IO.IOException>.  
+ 
+The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant the fewest privileges necessary to get the job done.  
+ 
+Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |AllAccess|Create, read, and write access to registry variables.|  
@@ -414,22 +414,22 @@
 |NoAccess|No access to registry variables.|  
 |Read|Read access to registry variables.|  
 |Write|Write access to registry variables.|  
-  
- The following table lists examples of tasks involving the `My.Computer.Registry` object.  
-  
+ 
+The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+ 
 |To|See|  
 |--------|---------|  
 |Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
 |Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
 |Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example gets the value `ThisSoftwar`e from the `MyCompany` subkey.  
-  
- [!code-vb[VbVbalrMyRegistry#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#7)]  
-  
+This example gets the value `ThisSoftwar`e from the `MyCompany` subkey.  
+ 
+[!code-vb[VbVbalrMyRegistry#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -461,23 +461,23 @@
         <summary>Writes a value to a registry key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified key or value does not exist, it is created.  
-  
- Here is an example of a task involving the `My.Computer.Registry.SetValue` method.  
-  
+If the specified key or value does not exist, it is created.  
+ 
+Here is an example of a task involving the `My.Computer.Registry.SetValue` method.  
+ 
 |To|See|  
 |--------|---------|  
 |Set a value in a registry key|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example sets the value `FontColor` to "red" in the key `HKEY_LOCAL_MACHINE\Software\MyCompany\Preferences`.  
-  
- [!code-vb[VbVbalrMyRegistry#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#3)]  
-  
+This example sets the value `FontColor` to "red" in the key `HKEY_LOCAL_MACHINE\Software\MyCompany\Preferences`.  
+ 
+[!code-vb[VbVbalrMyRegistry#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -523,23 +523,23 @@
         <summary>Writes a value to a registry key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified key or value does not exist, it is created.  
-  
- Here is an example of a task involving the `My.Computer.Registry.SetValue` method.  
-  
+If the specified key or value does not exist, it is created.  
+ 
+Here is an example of a task involving the `My.Computer.Registry.SetValue` method.  
+ 
 |To|See|  
 |--------|---------|  
 |Set a value in a registry key|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example sets the value `FontColor` to "red" in the key `HKEY_LOCAL_MACHINE\Software\MyCompany\Preferences`.  
-  
- [!code-vb[VbVbalrMyRegistry#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#3)]  
-  
+This example sets the value `FontColor` to "red" in the key `HKEY_LOCAL_MACHINE\Software\MyCompany\Preferences`.  
+ 
+[!code-vb[VbVbalrMyRegistry#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -578,14 +578,14 @@
         </value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `HKEY_USERS` is primarily used to store default settings for first-time users.  
-  
- The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant the fewest privileges necessary to get the job done.  
-  
- Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
-  
+`HKEY_USERS` is primarily used to store default settings for first-time users.  
+ 
+The <xref:System.Security.Permissions.RegistryPermission> class, which is in the <xref:System.Security.Permissions> namespace, controls access to registry variables. Registry variables should not be stored in memory locations where code without <xref:System.Security.Permissions.RegistryPermission> can access them. Similarly, when granting permissions, grant the fewest privileges necessary to get the job done.  
+ 
+Registry permission access values are defined by the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration. The following table details its members.  
+ 
 |Value|Access to Registry Variables|  
 |-----------|----------------------------------|  
 |AllAccess|Create, read, and write|  
@@ -593,22 +593,22 @@
 |NoAccess|No access.|  
 |Read|Read|  
 |Write|Write|  
-  
- The following table lists examples of tasks involving the `My.Computer.Registry` object.  
-  
+ 
+The following table lists examples of tasks involving the `My.Computer.Registry` object.  
+ 
 |**To**|**See**|  
 |------------|-------------|  
 |Create a registry key and set its value|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
 |Delete a registry key|[How to: Delete a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)|  
 |Read a value from a registry key|[How to: Read a Value from a Registry Key](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example counts and displays the number of values in the registry key.  
-  
- [!code-vb[VbVbalrMyRegistry#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#4)]  
-  
+This example counts and displays the number of values in the registry key.  
+ 
+[!code-vb[VbVbalrMyRegistry#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyRegistry/VB/Class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

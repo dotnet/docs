@@ -37,10 +37,10 @@
         <returns>An object that contains the value of the specified parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is typically used when the query is a mapped function that has output parameters.  
-  
+This method is typically used when the query is a mapped function that has output parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -62,10 +62,10 @@
         <value>The value or result of the executed query.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This object has the same underlying type as the `Type` property of the query expression.  
-  
+This object has the same underlying type as the `Type` property of the query expression.  
+ 
  ]]></format>
         </remarks>
       </Docs>

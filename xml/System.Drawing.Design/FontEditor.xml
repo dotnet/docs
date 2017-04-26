@@ -19,19 +19,19 @@
     <summary>Provides a user interface to select and configure a <see cref="T:System.Drawing.Font" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Drawing.Design.FontEditor> is a <xref:System.Drawing.Design.UITypeEditor> that provides a user interface for choosing and configuring a <xref:System.Drawing.Font> from a list of available fonts.  
+<xref:System.Drawing.Design.FontEditor> is a <xref:System.Drawing.Design.UITypeEditor> that provides a user interface for choosing and configuring a <xref:System.Drawing.Font> from a list of available fonts.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses an <xref:System.ComponentModel.EditorAttribute> to associate the <xref:System.Drawing.Design.FontEditor> with a property.  
-  
- [!code-cpp[EditorAttributesExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/EditorAttributesExample/CPP/class1.cpp#2)]
- [!code-csharp[EditorAttributesExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/EditorAttributesExample/CS/class1.cs#2)]
- [!code-vb[EditorAttributesExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/EditorAttributesExample/VB/class1.vb#2)]  
-  
+The following code example uses an <xref:System.ComponentModel.EditorAttribute> to associate the <xref:System.Drawing.Design.FontEditor> with a property.  
+ 
+[!code-cpp[EditorAttributesExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/EditorAttributesExample/CPP/class1.cpp#2)]
+[!code-csharp[EditorAttributesExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/EditorAttributesExample/CS/class1.cs#2)]
+[!code-vb[EditorAttributesExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/EditorAttributesExample/VB/class1.vb#2)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -78,10 +78,10 @@
         <returns>The new value of the object. If the value of the object has not changed, this should return the same object that was passed to it.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A service provider is provided so that any required editing services can be obtained.  
-  
+A service provider is provided so that any required editing services can be obtained.  
+ 
  ]]></format>
         </remarks>
       </Docs>

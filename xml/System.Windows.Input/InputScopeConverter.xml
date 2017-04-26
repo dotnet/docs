@@ -14,9 +14,9 @@
     <summary>Converts a <see cref="T:System.Windows.Input.InputScope" /> to and from other types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_InputScopeConverter"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -141,10 +141,10 @@
         <returns>A new object of the specified type (string) converted from the given <see cref="T:System.Windows.Input.InputScope" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `destinationType` must be <xref:System.String>.  
-  
+`destinationType` must be <xref:System.String>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

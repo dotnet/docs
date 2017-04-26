@@ -14,12 +14,12 @@
     <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart> event occurs before a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is added to a page. There are a number of common scenarios where a control can be added to a page. For a full description of these, see the Remarks section for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%2A?displayProperty=fullName> method.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs> class provides access to properties about the Web Parts control being added to the page. When a control is added, it must be checked to see whether its <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property has been set and, if so, whether the control is authorized to be added to the page.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart> event occurs before a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is added to a page. There are a number of common scenarios where a control can be added to a page. For a full description of these, see the Remarks section for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%2A?displayProperty=fullName> method.  
+ 
+The <xref:System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs> class provides access to properties about the Web Parts control being added to the page. When a control is added, it must be checked to see whether its <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property has been set and, if so, whether the control is authorized to be added to the page.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -103,14 +103,14 @@
           <see langword="true" /> if the Web Parts control is visible to all users of the page; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A shared Web Parts control is visible to all users of a Web page. The opposite of a shared control is a per-user control, which is user-specific and is visible only to the user who added that control to the page.  
-  
- If a dynamic control is added while a user is viewing the page in shared personalization scope, the control will be shared. If the control is added while the user is in user personalization scope, the <xref:System.Web.UI.WebControls.WebParts.WebPart.IsShared%2A> property value for that control will be `false`.  
-  
- For more information about shared and per-user controls, see [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
-  
+A shared Web Parts control is visible to all users of a Web page. The opposite of a shared control is a per-user control, which is user-specific and is visible only to the user who added that control to the page.  
+ 
+If a dynamic control is added while a user is viewing the page in shared personalization scope, the control will be shared. If the control is added while the user is in user personalization scope, the <xref:System.Web.UI.WebControls.WebParts.WebPart.IsShared%2A> property value for that control will be `false`.  
+ 
+For more information about shared and per-user controls, see [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+ 
  ]]></format>
         </remarks>
       </Docs>

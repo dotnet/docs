@@ -31,27 +31,27 @@
     <summary>Specifies additional event schema information for an event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you apply this attribute to an ETW event method defined on an <xref:System.Diagnostics.Tracing.EventSource>-derived class, you must call the <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method on the base class, passing the event ID, followed by the same arguments as the defined method is passed. You should follow the pattern shown in the following examples.  
+When you apply this attribute to an ETW event method defined on an <xref:System.Diagnostics.Tracing.EventSource>-derived class, you must call the <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method on the base class, passing the event ID, followed by the same arguments as the defined method is passed. You should follow the pattern shown in the following examples.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Diagnostics.Tracing.EventAttribute> class to define a variety of events. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-csharp[ETWTrace#5](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#5)]
- [!code-vb[ETWTrace#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#5)]  
-  
- [!code-csharp[ETWTrace#6](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#6)]
- [!code-vb[ETWTrace#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#6)]  
-  
- [!code-csharp[ETWTrace#7](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#7)]
- [!code-vb[ETWTrace#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#7)]  
-  
- [!code-csharp[ETWTrace#8](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#8)]
- [!code-vb[ETWTrace#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#8)]  
-  
+The following example shows how to use the <xref:System.Diagnostics.Tracing.EventAttribute> class to define a variety of events. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+ 
+[!code-csharp[ETWTrace#5](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#5)]
+[!code-vb[ETWTrace#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#5)]  
+ 
+[!code-csharp[ETWTrace#6](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#6)]
+[!code-vb[ETWTrace#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#6)]  
+ 
+[!code-csharp[ETWTrace#7](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#7)]
+[!code-vb[ETWTrace#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#7)]  
+ 
+[!code-csharp[ETWTrace#8](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#8)]
+[!code-vb[ETWTrace#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#8)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -85,16 +85,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Tracing.EventAttribute" /> class with the specified event identifier.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Diagnostics.Tracing.EventAttribute.%23ctor%2A> constructor to specify events. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-csharp[ETWTrace#1](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#1)]
- [!code-vb[ETWTrace#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#1)]  
-  
- [!code-csharp[ETWTrace#2](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#2)]
- [!code-vb[ETWTrace#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#2)]  
-  
+The following example shows how to use the <xref:System.Diagnostics.Tracing.EventAttribute.%23ctor%2A> constructor to specify events. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+ 
+[!code-csharp[ETWTrace#1](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#1)]
+[!code-vb[ETWTrace#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#1)]  
+ 
+[!code-csharp[ETWTrace#2](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#2)]
+[!code-vb[ETWTrace#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,10 +184,10 @@
         <value>The event identifier. This value should be between 0 and 65535.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> should be greater than 0 or less than 65535 or errors can occur in a tracing operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
-  
+<xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> should be greater than 0 or less than 65535 or errors can occur in a tracing operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -221,22 +221,22 @@
         <value>A bitwise combination of the enumeration values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Diagnostics.Tracing.EventAttribute.Keywords%2A> property to define event keywords. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-csharp[ETWTrace#3](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#3)]
- [!code-vb[ETWTrace#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#3)]  
-  
- [!code-csharp[ETWTrace#5](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#5)]
- [!code-vb[ETWTrace#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#5)]  
-  
- [!code-csharp[ETWTrace#6](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#6)]
- [!code-vb[ETWTrace#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#6)]  
-  
- [!code-csharp[ETWTrace#7](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#7)]
- [!code-vb[ETWTrace#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#7)]  
-  
+The following example shows how to use the <xref:System.Diagnostics.Tracing.EventAttribute.Keywords%2A> property to define event keywords. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+ 
+[!code-csharp[ETWTrace#3](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#3)]
+[!code-vb[ETWTrace#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#3)]  
+ 
+[!code-csharp[ETWTrace#5](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#5)]
+[!code-vb[ETWTrace#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#5)]  
+ 
+[!code-csharp[ETWTrace#6](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#6)]
+[!code-vb[ETWTrace#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#6)]  
+ 
+[!code-csharp[ETWTrace#7](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#7)]
+[!code-vb[ETWTrace#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,19 +270,19 @@
         <value>One of the enumeration values that specifies the level for the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Diagnostics.Tracing.EventAttribute.Level%2A> property to specify event levels. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-csharp[ETWTrace#5](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#5)]
- [!code-vb[ETWTrace#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#5)]  
-  
- [!code-csharp[ETWTrace#6](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#6)]
- [!code-vb[ETWTrace#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#6)]  
-  
- [!code-csharp[ETWTrace#11](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#11)]
- [!code-vb[ETWTrace#11](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#11)]  
-  
+The following example shows how to use the <xref:System.Diagnostics.Tracing.EventAttribute.Level%2A> property to specify event levels. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+ 
+[!code-csharp[ETWTrace#5](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#5)]
+[!code-vb[ETWTrace#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#5)]  
+ 
+[!code-csharp[ETWTrace#6](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#6)]
+[!code-vb[ETWTrace#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#6)]  
+ 
+[!code-csharp[ETWTrace#11](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#11)]
+[!code-vb[ETWTrace#11](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -316,30 +316,30 @@
         <value>The message for the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use standard .NET Framework substitution operators (for example, {1}) in the string). They will be replaced with the string representation of the corresponding part of the event payload.  
-  
+You can use standard .NET Framework substitution operators (for example, {1}) in the string). They will be replaced with the string representation of the corresponding part of the event payload.  
+ 
 ```  
 [Event(1, Message = "Application Falure: {0}", Level = EventLevel.Error, Keywords = Keywords.Diagnostic)]  
         public void Failure(string message) { WriteEvent(1, message); }  
   
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Diagnostics.Tracing.EventAttribute.Message%2A> property to specify event messages. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-csharp[ETWTrace#5](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#5)]
- [!code-vb[ETWTrace#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#5)]  
-  
- [!code-csharp[ETWTrace#6](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#6)]
- [!code-vb[ETWTrace#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#6)]  
-  
- [!code-csharp[ETWTrace#7](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#7)]
- [!code-vb[ETWTrace#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#7)]  
-  
+The following example shows how to use the <xref:System.Diagnostics.Tracing.EventAttribute.Message%2A> property to specify event messages. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+ 
+[!code-csharp[ETWTrace#5](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#5)]
+[!code-vb[ETWTrace#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#5)]  
+ 
+[!code-csharp[ETWTrace#6](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#6)]
+[!code-vb[ETWTrace#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#6)]  
+ 
+[!code-csharp[ETWTrace#7](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#7)]
+[!code-vb[ETWTrace#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,19 +373,19 @@
         <value>One of the enumeration values that specifies the operation code.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A> property to specify operation codes. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-csharp[ETWTrace#8](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#8)]
- [!code-vb[ETWTrace#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#8)]  
-  
- [!code-csharp[ETWTrace#9](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#9)]
- [!code-vb[ETWTrace#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#9)]  
-  
- [!code-csharp[ETWTrace#10](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#10)]
- [!code-vb[ETWTrace#10](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#10)]  
-  
+The following example shows how to use the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A> property to specify operation codes. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+ 
+[!code-csharp[ETWTrace#8](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#8)]
+[!code-vb[ETWTrace#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#8)]  
+ 
+[!code-csharp[ETWTrace#9](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#9)]
+[!code-vb[ETWTrace#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#9)]  
+ 
+[!code-csharp[ETWTrace#10](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#10)]
+[!code-vb[ETWTrace#10](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -447,19 +447,19 @@
         <value>The task for the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Diagnostics.Tracing.EventAttribute.Task%2A> property to define event tasks. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-csharp[ETWTrace#4](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#4)]
- [!code-vb[ETWTrace#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#4)]  
-  
- [!code-csharp[ETWTrace#8](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#8)]
- [!code-vb[ETWTrace#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#8)]  
-  
- [!code-csharp[ETWTrace#9](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#9)]
- [!code-vb[ETWTrace#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#9)]  
-  
+The following example shows how to use the <xref:System.Diagnostics.Tracing.EventAttribute.Task%2A> property to define event tasks. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+ 
+[!code-csharp[ETWTrace#4](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#4)]
+[!code-vb[ETWTrace#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#4)]  
+ 
+[!code-csharp[ETWTrace#8](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#8)]
+[!code-vb[ETWTrace#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#8)]  
+ 
+[!code-csharp[ETWTrace#9](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#9)]
+[!code-vb[ETWTrace#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

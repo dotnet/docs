@@ -23,19 +23,19 @@
     <summary>Represents a cryptographic object identifier. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Cryptographic object identifiers consist of a value/name pair. If one property in a pair is set to a known value, the other property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.Value%2A> property is set to "1.3.6.1.5.5.7.3.4", the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property, which is localized, is set automatically to "Secure Email".  
+Cryptographic object identifiers consist of a value/name pair. If one property in a pair is set to a known value, the other property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.Value%2A> property is set to "1.3.6.1.5.5.7.3.4", the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property, which is localized, is set automatically to "Secure Email".  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,19 +59,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Oid" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the default constructor.  
+This is the default constructor.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,19 +102,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Oid" /> class using the specified <see cref="T:System.Security.Cryptography.Oid" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor copies the values of an existing <xref:System.Security.Cryptography.Oid> object to a new object.  
+This constructor copies the values of an existing <xref:System.Security.Cryptography.Oid> object to a new object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -147,19 +147,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Oid" /> class using a string value of an <see cref="T:System.Security.Cryptography.Oid" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor copies the values of an existing <xref:System.Security.Cryptography.Oid> object to a new object.  
+This constructor copies the values of an existing <xref:System.Security.Cryptography.Oid> object to a new object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,19 +192,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Oid" /> class using the specified value and friendly name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor can be used to copy the values of an existing <xref:System.Security.Cryptography.Oid> object. Note that if the Oid value is not recognized, the `value` and `friendlyName` parameters are not verified to determine if they correspond to each other. This is because there are object identifiers that the .NET Framework does not recognize, although an application may be able to interpret them.  
+This constructor can be used to copy the values of an existing <xref:System.Security.Cryptography.Oid> object. Note that if the Oid value is not recognized, the `value` and `friendlyName` parameters are not verified to determine if they correspond to each other. This is because there are object identifiers that the .NET Framework does not recognize, although an application may be able to interpret them.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,19 +235,19 @@
         <value>The friendly name of the identifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If one value of an <xref:System.Security.Cryptography.Oid> property is set to a known value, the other value of an <xref:System.Security.Cryptography.Oid> property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property is set to "Secure Email", the <xref:System.Security.Cryptography.Oid.Value%2A> property is set automatically to "1.3.6.1.5.5.7.3.4".  
+If one value of an <xref:System.Security.Cryptography.Oid> property is set to a known value, the other value of an <xref:System.Security.Cryptography.Oid> property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property is set to "Secure Email", the <xref:System.Security.Cryptography.Oid.Value%2A> property is set automatically to "1.3.6.1.5.5.7.3.4".  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -350,19 +350,19 @@
         <value>The dotted number of the identifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If one value of an <xref:System.Security.Cryptography.Oid> property is set to a known value, the other value of an <xref:System.Security.Cryptography.Oid> property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.Value%2A> property is set to "1.3.6.1.5.5.7.3.4", the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property is set automatically to "Secure Email".  
+If one value of an <xref:System.Security.Cryptography.Oid> property is set to a known value, the other value of an <xref:System.Security.Cryptography.Oid> property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.Value%2A> property is set to "1.3.6.1.5.5.7.3.4", the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property is set automatically to "Secure Email".  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
-  
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+ 
+[!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+[!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+[!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

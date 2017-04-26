@@ -26,14 +26,14 @@
     <summary>Represents a query on an XML document defined by an XPath 1.0 expression.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> uses an XPath expression to determine whether an XML document contains specific elements, attributes, text, or other XML syntactic constructs. Typically, an application uses an <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> at an endpoint to query the contents of a SOAP message and then takes the appropriate action based on the results of that query. A queuing process, for example, may use an XPath query to check the priority element of a known header to decide whether to move a message to the front of the queue.  
-  
- The XML Path Language (XPath) provides a language for addressing parts of an XML document. The primary syntactic construct in XPath is an expression that defines how to traverse the logical structure of an XML document and address or identify an XPath data type. Specifically, XPath implementations evaluate an expression against the structure of an XML document to yield one of the four basic XPath data types: strings, numbers, Booleans, and node sets. They also support functions that convert an XPath data type to a string, number, or Boolean data type. If a method expects one of these three data types, the result of the expression evaluation is implicitly converted. Note that these three data types cannot be converted to a node-set type. The XML Path language is fully described in the [W3C XML Path Language 1.0 specification](http://go.microsoft.com/fwlink/?LinkId=96179).  
-  
- Numbers in XPath expressions are expressed as double-precision 64-bit values. Therefore XPath expressions that involve testing numbers with many significant digits can return incorrect results due to floating point precision issues. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][XML Path Language (XPath) Version 1.0, section 3.5](http://go.microsoft.com/fwlink/?LinkId=96180).  
-  
+An <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> uses an XPath expression to determine whether an XML document contains specific elements, attributes, text, or other XML syntactic constructs. Typically, an application uses an <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> at an endpoint to query the contents of a SOAP message and then takes the appropriate action based on the results of that query. A queuing process, for example, may use an XPath query to check the priority element of a known header to decide whether to move a message to the front of the queue.  
+ 
+The XML Path Language (XPath) provides a language for addressing parts of an XML document. The primary syntactic construct in XPath is an expression that defines how to traverse the logical structure of an XML document and address or identify an XPath data type. Specifically, XPath implementations evaluate an expression against the structure of an XML document to yield one of the four basic XPath data types: strings, numbers, Booleans, and node sets. They also support functions that convert an XPath data type to a string, number, or Boolean data type. If a method expects one of these three data types, the result of the expression evaluation is implicitly converted. Note that these three data types cannot be converted to a node-set type. The XML Path language is fully described in the [W3C XML Path Language 1.0 specification](http://go.microsoft.com/fwlink/?LinkId=96179).  
+ 
+Numbers in XPath expressions are expressed as double-precision 64-bit values. Therefore XPath expressions that involve testing numbers with many significant digits can return incorrect results due to floating point precision issues. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][XML Path Language (XPath) Version 1.0, section 3.5](http://go.microsoft.com/fwlink/?LinkId=96180).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,10 +52,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> class that matches all well-formed XML documents.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Initializes a new instance of the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> class with an empty XPath expression. An empty XPath expression always matches a well-formed XML document, so all objects satisfy the criteria of a filter defined by an empty XPath expression.  
-  
+Initializes a new instance of the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> class with an empty XPath expression. An empty XPath expression always matches a well-formed XML document, so all objects satisfy the criteria of a filter defined by an empty XPath expression.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,12 +77,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> class using an XPath expression to specify query criteria for the filter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when there are no namespaces to manage.  
-  
- This constructor initializes the <xref:System.Xml.XmlNamespaceManager> assigned to the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Namespaces%2A> property by using the default <xref:System.ServiceModel.Dispatcher.XPathMessageContext>, so the XPath expression has access to the function library that the <xref:System.ServiceModel.Dispatcher.XPathMessageContext> defines.  
-  
+Use this constructor when there are no namespaces to manage.  
+ 
+This constructor initializes the <xref:System.Xml.XmlNamespaceManager> assigned to the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Namespaces%2A> property by using the default <xref:System.ServiceModel.Dispatcher.XPathMessageContext>, so the XPath expression has access to the function library that the <xref:System.ServiceModel.Dispatcher.XPathMessageContext> defines.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -106,12 +106,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> class by reading a streamed XPath with the specified XML reader.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is assumed that the reader is positioned at the start element of the serialized `XPathMessageFilter`. The name of the element is not validated before reading. When this method returns, the reader is positioned immediately after the serialized `XPathMessageFilter`. The constructor also automatically initializes the namespace manager by resolving all prefixes in the XPath expression as they were bound in the reader.  
-  
- This method can access any XML that can be created by the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.WriteXPathTo%2A> method.  
-  
+It is assumed that the reader is positioned at the start element of the serialized `XPathMessageFilter`. The name of the element is not validated before reading. When this method returns, the reader is positioned immediately after the serialized `XPathMessageFilter`. The constructor also automatically initializes the namespace manager by resolving all prefixes in the XPath expression as they were bound in the reader.  
+ 
+This method can access any XML that can be created by the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.WriteXPathTo%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -137,12 +137,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> class using the specified XPath expression and namespace manager.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when XPath uses prefixes not defined in <xref:System.ServiceModel.Dispatcher.XPathMessageContext>, or when you want to use your own <xref:System.Xml.XmlNamespaceManager>. An instance of <xref:System.ServiceModel.Dispatcher.XPathMessageContext> can be created and passed to this method.  
-  
- If the instances provided to this method are <xref:System.Xml.Xsl.XsltContext> implementations, it is equivalent to calling the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.%23ctor%2A> constructor.  
-  
+Use this constructor when XPath uses prefixes not defined in <xref:System.ServiceModel.Dispatcher.XPathMessageContext>, or when you want to use your own <xref:System.Xml.XmlNamespaceManager>. An instance of <xref:System.ServiceModel.Dispatcher.XPathMessageContext> can be created and passed to this method.  
+ 
+If the instances provided to this method are <xref:System.Xml.Xsl.XsltContext> implementations, it is equivalent to calling the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -188,12 +188,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> class by reading in a streamed XPath with a specified XML reader and using the specified namespace manager.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when you want to use your own <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlNamespaceManager> to define the filter.  
-  
- It is assumed that the reader is positioned at the start element of the serialized `XPathMessageFilter`. The name of the element is not validated before reading. When this method returns, the reader is positioned immediately after the serialized `XPathMessageFilter`.  
-  
+Use this constructor when you want to use your own <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlNamespaceManager> to define the filter.  
+ 
+It is assumed that the reader is positioned at the start element of the serialized `XPathMessageFilter`. The name of the element is not validated before reading. When this method returns, the reader is positioned immediately after the serialized `XPathMessageFilter`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -222,12 +222,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> class by reading a streamed XPath with a specified XML reader and using the <see cref="T:System.Xml.Xsl.XsltContext" /> to resolve namespaces, custom functions, and variables.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when you want to use your own <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlNamespaceManager> to define the filter.  
-  
- It is assumed that the reader is positioned at the start element of the serialized `XPathMessageFilter`. The name of the element is not validated before reading. When this method returns, the reader is positioned immediately after the serialized `XPathMessageFilter`.  
-  
+Use this constructor when you want to use your own <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlNamespaceManager> to define the filter.  
+ 
+It is assumed that the reader is positioned at the start element of the serialized `XPathMessageFilter`. The name of the element is not validated before reading. When this method returns, the reader is positioned immediately after the serialized `XPathMessageFilter`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -256,10 +256,10 @@
         <returns>An <see cref="T:System.ServiceModel.Dispatcher.IMessageFilterTable`1" /> object to which filters associated with <paramref name="FilterData" /> can be added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by <xref:System.ServiceModel.Dispatcher.MessageFilterTable%601>. Users should create a filter table by calling a constructor for the filter table. This implementation returns an instance of <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601>.  
-  
+This method is called by <xref:System.ServiceModel.Dispatcher.MessageFilterTable%601>. Users should create a filter table by calling a constructor for the filter table. This implementation returns an instance of <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,10 +286,10 @@
           <see langword="true" /> if the <see cref="T:System.ServiceModel.Channels.Message" /> satisfies the filter criteria; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A?displayProperty=fullName> method to match elements from the body. An exception is thrown by this method if the engine attempts to access the message body in order to evaluate the XPath expression. This helps to ensure that the filter engine does not access the body stream.  
-  
+Use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A?displayProperty=fullName> method to match elements from the body. An exception is thrown by this method if the engine attempts to access the message body in order to evaluate the XPath expression. This helps to ensure that the filter engine does not access the body stream.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -320,10 +320,10 @@
           <see langword="true" /> if the <see cref="M:System.ServiceModel.Dispatcher.XPathMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" /> satisfies the filter criteria; otherwise<see langword=" false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this overload of the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A> method when a <xref:System.ServiceModel.Channels.MessageBuffer> is available. This form is allowed to examine the body of the message.  
-  
+Use this overload of the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A> method when a <xref:System.ServiceModel.Channels.MessageBuffer> is available. This form is allowed to examine the body of the message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -353,10 +353,10 @@
           <see langword="true" /> if the data from the <see cref="T:System.ServiceModel.Dispatcher.SeekableXPathNavigator" /> satisfies the filter criteria; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.SeekableXPathNavigator> class extends the <xref:System.Xml.XPath.XPathNavigator> class with methods that run queries more efficiently.  
-  
+The <xref:System.ServiceModel.Dispatcher.SeekableXPathNavigator> class extends the <xref:System.Xml.XPath.XPathNavigator> class with methods that run queries more efficiently.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -407,12 +407,12 @@
         <value>The <see cref="T:System.Xml.XmlNamespaceManager" /> for the current <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Namespaces%2A> property can also be an <xref:System.Xml.Xsl.XsltContext> that defines custom function or variables.  
-  
- Do not modify the namespace manager instance once the filter is created.  
-  
+The <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Namespaces%2A> property can also be an <xref:System.Xml.Xsl.XsltContext> that defines custom function or variables.  
+ 
+Do not modify the namespace manager instance once the filter is created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -434,12 +434,12 @@
         <value>The maximum number of nodes that should be looked at during filter evaluation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some filters can be extremely expensive to evaluate or are very long running. Because filters operate on XML documents, the best way to set computational limits is to specify the maximum number of nodes that should be looked at during a filter evaluation.  
-  
- The quota is initially set to <xref:System.Int32>.  
-  
+Some filters can be extremely expensive to evaluate or are very long running. Because filters operate on XML documents, the best way to set computational limits is to specify the maximum number of nodes that should be looked at during a filter evaluation.  
+ 
+The quota is initially set to <xref:System.Int32>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The quota is zero or negative.</exception>
@@ -535,10 +535,10 @@
         <summary>Initializes the current instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> with an XPath obtained from a specified XML reader using a specified namespace manager.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The namespace manager instance can be an <xref:System.Xml.Xsl.XsltContext> that is used to resolve functions and variables.  
-  
+The namespace manager instance can be an <xref:System.Xml.Xsl.XsltContext> that is used to resolve functions and variables.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -645,10 +645,10 @@
         <summary>Compacts the XPath filter, which releases all unused memory.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation is similar to the resizing of an array so that it has no unused elements.  
-  
+This operation is similar to the resizing of an array so that it has no unused elements.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">In all cases.</exception>
@@ -676,10 +676,10 @@
         <summary>Serializes the XPath filter to an <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `writer` must be in the *Start* state. Otherwise an exception is thrown.  
-  
+The `writer` must be in the *Start* state. Otherwise an exception is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -713,10 +713,10 @@
         <summary>Writes the XML XPath element with a specified XML writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `writer` must be in the *Start* state. Otherwise an exception is thrown.  
-  
+The `writer` must be in the *Start* state. Otherwise an exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -752,16 +752,16 @@
         <summary>Determines whether a message or XML document satisfies the query criteria of the XPath filter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These methods check one filter against a message. If you need to check the message against multiple filters, put the filters into a filter table and then use the match methods provided by the table.  
-  
- If you only need to test the message headers and not the message body, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A> method.  
-  
- If you need to test parts of the message body, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A> method.  
-  
- For tests that involve XPath queries, use one of the remaining overloads of the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A>.  
-  
+These methods check one filter against a message. If you need to check the message against multiple filters, put the filters into a filter table and then use the match methods provided by the table.  
+ 
+If you only need to test the message headers and not the message body, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A> method.  
+ 
+If you need to test parts of the message body, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A> method.  
+ 
+For tests that involve XPath queries, use one of the remaining overloads of the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,19 +14,19 @@
     <summary>Provides data for the <see cref="M:System.Drawing.Design.UITypeEditor.PaintValue(System.Object,System.Drawing.Graphics,System.Drawing.Rectangle)" /> method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Drawing.Design.PaintValueEventArgs> provides all the information needed for a <xref:System.Drawing.Design.UITypeEditor> to paint within an area based on the value of the specified object, including the <xref:System.Drawing.Rectangle> in which the drawing should be done and the <xref:System.Drawing.Graphics> object with which the drawing should be done.  
+<xref:System.Drawing.Design.PaintValueEventArgs> provides all the information needed for a <xref:System.Drawing.Design.UITypeEditor> to paint within an area based on the value of the specified object, including the <xref:System.Drawing.Rectangle> in which the drawing should be done and the <xref:System.Drawing.Graphics> object with which the drawing should be done.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example method returns a <xref:System.Drawing.Design.PaintValueEventArgs> that provides the data needed to paint a representation of the value of an object within a given area:  
-  
- [!code-cpp[MoreEventArgsExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/MoreEventArgsExamples/CPP/class1.cpp#2)]
- [!code-csharp[MoreEventArgsExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/MoreEventArgsExamples/CS/class1.cs#2)]
- [!code-vb[MoreEventArgsExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MoreEventArgsExamples/VB/class1.vb#2)]  
-  
+The following code example method returns a <xref:System.Drawing.Design.PaintValueEventArgs> that provides the data needed to paint a representation of the value of an object within a given area:  
+ 
+[!code-cpp[MoreEventArgsExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/MoreEventArgsExamples/CPP/class1.cpp#2)]
+[!code-csharp[MoreEventArgsExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/MoreEventArgsExamples/CS/class1.cs#2)]
+[!code-vb[MoreEventArgsExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MoreEventArgsExamples/VB/class1.vb#2)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>

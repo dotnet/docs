@@ -22,22 +22,22 @@
     <summary>Represents a selectable option displayed on a <see cref="T:System.Windows.Forms.MenuStrip" /> or <see cref="T:System.Windows.Forms.ContextMenuStrip" />. Although <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> replaces and adds functionality to the <see cref="T:System.Windows.Forms.MenuItem" /> control of previous versions, <see cref="T:System.Windows.Forms.MenuItem" /> is retained for both backward compatibility and future use if you choose.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ToolStripMenuItem> is a <xref:System.Windows.Forms.ToolStripDropDownItem> that works with <xref:System.Windows.Forms.ToolStripDropDownMenu> and <xref:System.Windows.Forms.ContextMenuStrip> to handle the special highlighting, layout, and column arrangement for menus.  
+<xref:System.Windows.Forms.ToolStripMenuItem> is a <xref:System.Windows.Forms.ToolStripDropDownItem> that works with <xref:System.Windows.Forms.ToolStripDropDownMenu> and <xref:System.Windows.Forms.ContextMenuStrip> to handle the special highlighting, layout, and column arrangement for menus.  
+ 
+In order for a <xref:System.Windows.Forms.ToolStripMenuItem> to be displayed, you must add it to a <xref:System.Windows.Forms.MenuStrip> or <xref:System.Windows.Forms.ContextMenuStrip>.  
+ 
+The <xref:System.Windows.Forms.ToolStripMenuItem> class provides properties that enable you to configure the appearance and functionality of a menu item. To display a check mark next to a menu item, use the <xref:System.Windows.Forms.ToolStripMenuItem.Checked%2A> property. Use this feature to identify a menu item that is selected in a list of mutually exclusive menu items. For example, if you have a set of menu items for setting the color of text in a <xref:System.Windows.Forms.TextBox> control, use the <xref:System.Windows.Forms.ToolStripMenuItem.Checked%2A> property to identify which color is currently selected. Use the <xref:System.Windows.Forms.ToolStripMenuItem.ShortcutKeys%2A> property to define a keyboard combination that can be pressed to select the menu item.  
+ 
   
- In order for a <xref:System.Windows.Forms.ToolStripMenuItem> to be displayed, you must add it to a <xref:System.Windows.Forms.MenuStrip> or <xref:System.Windows.Forms.ContextMenuStrip>.  
-  
- The <xref:System.Windows.Forms.ToolStripMenuItem> class provides properties that enable you to configure the appearance and functionality of a menu item. To display a check mark next to a menu item, use the <xref:System.Windows.Forms.ToolStripMenuItem.Checked%2A> property. Use this feature to identify a menu item that is selected in a list of mutually exclusive menu items. For example, if you have a set of menu items for setting the color of text in a <xref:System.Windows.Forms.TextBox> control, use the <xref:System.Windows.Forms.ToolStripMenuItem.Checked%2A> property to identify which color is currently selected. Use the <xref:System.Windows.Forms.ToolStripMenuItem.ShortcutKeys%2A> property to define a keyboard combination that can be pressed to select the menu item.  
-  
-   
-  
+ 
 ## Examples  
- The following code example adds a <xref:System.Windows.Forms.ToolStripMenuItem.ShortcutKeyDisplayString%2A> to the specified menu items of a <xref:System.Windows.Forms.ContextMenuStrip>. This code example is part of a larger example available in the <xref:System.Windows.Forms.ToolStripManager> class overview.  
-  
- [!code-csharp[System.Windows.Forms.ContextMenuStripMerge#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStripMerge/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.ContextMenuStripMerge#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStripMerge/VB/form1.vb#2)]  
-  
+The following code example adds a <xref:System.Windows.Forms.ToolStripMenuItem.ShortcutKeyDisplayString%2A> to the specified menu items of a <xref:System.Windows.Forms.ContextMenuStrip>. This code example is part of a larger example available in the <xref:System.Windows.Forms.ToolStripManager> class overview.  
+ 
+[!code-csharp[System.Windows.Forms.ContextMenuStripMerge#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStripMerge/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.ContextMenuStripMerge#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStripMerge/VB/form1.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,10 +74,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> class that displays the specified <see cref="T:System.Drawing.Image" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor to create a <xref:System.Windows.Forms.ToolStripMenuItem> that displays an image in the margin alongside the text.  
-  
+Use the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor to create a <xref:System.Windows.Forms.ToolStripMenuItem> that displays an image in the margin alongside the text.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,18 +99,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> class that displays the specified text.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor to create a <xref:System.Windows.Forms.ToolStripMenuItem> with the specified name.  
+Use the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor to create a <xref:System.Windows.Forms.ToolStripMenuItem> with the specified name.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a use of the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor.  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.Misc#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#12)]
- [!code-vb[System.Windows.Forms.ToolStrip.Misc#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#12)]  
-  
+The following code example demonstrates a use of the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.Misc#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#12)]
+[!code-vb[System.Windows.Forms.ToolStrip.Misc#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -134,10 +134,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> class that displays the specified text and image.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor to create a <xref:System.Windows.Forms.ToolStripMenuItem> with the specified name and image.  
-  
+Use the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor to create a <xref:System.Windows.Forms.ToolStripMenuItem> with the specified name and image.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,18 +163,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> class that displays the specified text and image and that does the specified action when the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is clicked.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> to create a <xref:System.Windows.Forms.ToolStripMenuItem> that displays both text and an image and that does the specified action when the <xref:System.Windows.Forms.ToolStripMenuItem> is clicked.  
+Use the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> to create a <xref:System.Windows.Forms.ToolStripMenuItem> that displays both text and an image and that does the specified action when the <xref:System.Windows.Forms.ToolStripMenuItem> is clicked.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a use of the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor.  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.Misc#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#12)]
- [!code-vb[System.Windows.Forms.ToolStrip.Misc#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#12)]  
-  
+The following code example demonstrates a use of the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.Misc#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#12)]
+[!code-vb[System.Windows.Forms.ToolStrip.Misc#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> class that displays the specified text and image and that contains the specified <see cref="T:System.Windows.Forms.ToolStripItem" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor to create a <xref:System.Windows.Forms.ToolStripMenuItem> that displays text and an image and that contains the specified <xref:System.Windows.Forms.ToolStripItem> collection.  
-  
+Use the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor to create a <xref:System.Windows.Forms.ToolStripMenuItem> that displays text and an image and that contains the specified <xref:System.Windows.Forms.ToolStripItem> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,13 +237,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> class with the specified name that displays the specified text and image that does the specified action when the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is clicked.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates a use of the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor.  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.Misc#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#40)]
- [!code-vb[System.Windows.Forms.ToolStrip.Misc#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#40)]  
-  
+The following code example demonstrates a use of the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.Misc#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#40)]
+[!code-vb[System.Windows.Forms.ToolStrip.Misc#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#40)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,10 +271,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> class that displays the specified text and image, does the specified action when the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is clicked, and displays the specified shortcut keys.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor to create a <xref:System.Windows.Forms.ToolStripMenuItem> that displays text and an image, performs the specified action when clicked, and has the specified shortcut key.  
-  
+Use the <xref:System.Windows.Forms.ToolStripMenuItem.%23ctor%2A> constructor to create a <xref:System.Windows.Forms.ToolStripMenuItem> that displays text and an image, performs the specified action when clicked, and has the specified shortcut key.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -308,18 +308,18 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is checked or is in an indeterminate state; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripMenuItem.Checked%2A> property returns `false` if and only if the <xref:System.Windows.Forms.ToolStripMenuItem> is unchecked.  
-  
- Starting with the .NET Framework 4.5.2, when an item is checked or indeterminate, the corresponding icon may be resized. Resizing is determined by the system DPI setting when the app.config file contains the following entry:  
-  
+The <xref:System.Windows.Forms.ToolStripMenuItem.Checked%2A> property returns `false` if and only if the <xref:System.Windows.Forms.ToolStripMenuItem> is unchecked.  
+ 
+Starting with the .NET Framework 4.5.2, when an item is checked or indeterminate, the corresponding icon may be resized. Resizing is determined by the system DPI setting when the app.config file contains the following entry:  
+ 
 ```  
 <appSettings>  
   <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
 </appSettings>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -340,20 +340,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripMenuItem.Checked" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripMenuItem.CheckedChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripMenuItem> named `ToolStripMenuItem1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripMenuItem.CheckedChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#495](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#495)]
- [!code-vb[System.Windows.Forms.EventExamples#495](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#495)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripMenuItem.CheckedChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripMenuItem> named `ToolStripMenuItem1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripMenuItem.CheckedChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#495](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#495)]
+[!code-vb[System.Windows.Forms.EventExamples#495](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#495)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -410,18 +410,18 @@
         <value>One of the <see cref="T:System.Windows.Forms.CheckState" /> values. The default is <see langword="Unchecked" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripMenuItem.CheckState%2A> property to control or determine whether a <xref:System.Windows.Forms.ToolStripMenuItem> is initially checked, unchecked, or in an indeterminate state.  
-  
- Starting with the .NET Framework 4.5.2, if the <xref:System.Windows.Forms.ToolStripMenuItem.CheckState%2A> property is set to <xref:System.Windows.Forms.CheckState> or <xref:System.Windows.Forms.CheckState>, the corresponding icon may be resized. Resizing is determined by the system DPI setting when the app.config file contains the following entry:  
-  
+Use the <xref:System.Windows.Forms.ToolStripMenuItem.CheckState%2A> property to control or determine whether a <xref:System.Windows.Forms.ToolStripMenuItem> is initially checked, unchecked, or in an indeterminate state.  
+ 
+Starting with the .NET Framework 4.5.2, if the <xref:System.Windows.Forms.ToolStripMenuItem.CheckState%2A> property is set to <xref:System.Windows.Forms.CheckState> or <xref:System.Windows.Forms.CheckState>, the corresponding icon may be resized. Resizing is determined by the system DPI setting when the app.config file contains the following entry:  
+ 
 ```  
 <appSettings>  
   <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
 </appSettings>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <see cref="P:System.Windows.Forms.ToolStripMenuItem.CheckState" /> property is not set to one of the <see cref="T:System.Windows.Forms.CheckState" /> values.</exception>
@@ -443,20 +443,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripMenuItem.CheckState" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripMenuItem.CheckStateChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripMenuItem> named `ToolStripMenuItem1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripMenuItem.CheckStateChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#496](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#496)]
- [!code-vb[System.Windows.Forms.EventExamples#496](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#496)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripMenuItem.CheckStateChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripMenuItem> named `ToolStripMenuItem1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripMenuItem.CheckStateChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#496](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#496)]
+[!code-vb[System.Windows.Forms.EventExamples#496](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#496)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -484,16 +484,16 @@
         <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the <see cref="T:System.Windows.Forms.ToolStripMenuItem" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to create an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Because the chart legend is not an actual <xref:System.Windows.Forms.Control>-based control, but instead is drawn by the chart control, it does not any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This code example is part of a complete code example that can be found at the <xref:System.Windows.Forms.AccessibleObject> class overview.  
-  
- [!code-cpp[System.Windows.Forms.AccessibleObject#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#2)]
- [!code-csharp[System.Windows.Forms.AccessibleObject#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#2)]
- [!code-vb[System.Windows.Forms.AccessibleObject#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#2)]  
-  
+The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to create an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Because the chart legend is not an actual <xref:System.Windows.Forms.Control>-based control, but instead is drawn by the chart control, it does not any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+ 
+This code example is part of a complete code example that can be found at the <xref:System.Windows.Forms.AccessibleObject> class overview.  
+ 
+[!code-cpp[System.Windows.Forms.AccessibleObject#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#2)]
+[!code-csharp[System.Windows.Forms.AccessibleObject#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#2)]
+[!code-vb[System.Windows.Forms.AccessibleObject#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -516,10 +516,10 @@
         <returns>A generic <see cref="T:System.Windows.Forms.ToolStripDropDown" /> for which can be defined.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripMenuItem.CreateDefaultDropDown%2A> method is automatically called if the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDown%2A> property finds no <xref:System.Windows.Forms.ToolStripDropDown> associated with the <xref:System.Windows.Forms.ToolStripDropDownItem>.  
-  
+The <xref:System.Windows.Forms.ToolStripMenuItem.CreateDefaultDropDown%2A> method is automatically called if the <xref:System.Windows.Forms.ToolStripDropDownItem.DropDown%2A> property finds no <xref:System.Windows.Forms.ToolStripDropDown> associated with the <xref:System.Windows.Forms.ToolStripDropDownItem>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -577,10 +577,10 @@
         <value>The <see cref="T:System.Drawing.Size" /> of the <see cref="T:System.Windows.Forms.ToolStripMenuItem" />, measured in pixels. The default is 100 pixels horizontally.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override <xref:System.Windows.Forms.ToolStripMenuItem.DefaultSize%2A> in derived classes to configure a default size for a <xref:System.Windows.Forms.ToolStripMenuItem>. This is more efficient than setting the size in the control's constructor.  
-  
+Override <xref:System.Windows.Forms.ToolStripMenuItem.DefaultSize%2A> in derived classes to configure a default size for a <xref:System.Windows.Forms.ToolStripMenuItem>. This is more efficient than setting the size in the control's constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -606,12 +606,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.ToolStripMenuItem> references. This method invokes the `Dispose` method of each referenced object.  
-  
+This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.ToolStripMenuItem> references. This method invokes the `Dispose` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -664,10 +664,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> appears on a MDI window list; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of the <xref:System.Windows.Forms.ToolStripMenuItem> must be specified by the <xref:System.Windows.Forms.MenuStrip.MdiWindowListItem%2A> property.  
-  
+The name of the <xref:System.Windows.Forms.ToolStripMenuItem> must be specified by the <xref:System.Windows.Forms.MenuStrip.MdiWindowListItem%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -692,12 +692,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripMenuItem.CheckedChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripMenuItem.OnCheckedChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripMenuItem.OnCheckedChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -725,12 +725,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripMenuItem.CheckStateChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripMenuItem.OnCheckStateChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripMenuItem.OnCheckStateChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -758,12 +758,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.Click" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripMenuItem.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripMenuItem.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -791,12 +791,12 @@
         <summary>Raised in response to the <see cref="M:System.Windows.Forms.ToolStripDropDownItem.HideDropDown" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripMenuItem.OnDropDownHide%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripMenuItem.OnDropDownHide%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -824,12 +824,12 @@
         <summary>Raised in response to the <see cref="M:System.Windows.Forms.ToolStripDropDownItem.ShowDropDown" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripMenuItem.OnDropDownShow%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripMenuItem.OnDropDownShow%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -878,12 +878,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseDown" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripMenuItem.OnMouseDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripMenuItem.OnMouseDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -911,12 +911,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseEnter" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripMenuItem.OnMouseEnter%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripMenuItem.OnMouseEnter%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -944,12 +944,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseLeave" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripMenuItem.OnMouseLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripMenuItem.OnMouseLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -977,12 +977,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.MouseUp" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripMenuItem.OnMouseUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripMenuItem.OnMouseUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1010,12 +1010,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.OwnerChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripMenuItem.OnOwnerChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripMenuItem.OnOwnerChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1043,12 +1043,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripMenuItem.OnPaint%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripMenuItem.OnPaint%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1174,18 +1174,18 @@
         <value>A <see cref="T:System.String" /> representing the shortcut key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to get or set the text that is displayed as the shortcut key.  
+Use this property to get or set the text that is displayed as the shortcut key.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example assigns the specified text to the <xref:System.Windows.Forms.ToolStripMenuItem.ShortcutKeyDisplayString%2A>. This example is part of a larger example available in the <xref:System.Windows.Forms.ToolStripManager> class overview.  
-  
- [!code-csharp[System.Windows.Forms.ContextMenuStripMerge#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStripMerge/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.ContextMenuStripMerge#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStripMerge/VB/form1.vb#2)]  
-  
+The following example assigns the specified text to the <xref:System.Windows.Forms.ToolStripMenuItem.ShortcutKeyDisplayString%2A>. This example is part of a larger example available in the <xref:System.Windows.Forms.ToolStripManager> class overview.  
+ 
+[!code-csharp[System.Windows.Forms.ContextMenuStripMerge#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStripMerge/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.ContextMenuStripMerge#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStripMerge/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1215,18 +1215,18 @@
         <value>One of the <see cref="T:System.Windows.Forms.Keys" /> values. The default is <see cref="F:System.Windows.Forms.Keys.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripMenuItem.ShortcutKeys%2A> property to assign a key combination to a menu command, such as CTRL+C for the **Copy** command. You can use shortcut keys instead of or in addition to access keys, which are underscored letters in menus or menu items used with the ALT key. Define access keys in code by typing an ampersand (&) before the letter you want to use for an access key.  
+Use the <xref:System.Windows.Forms.ToolStripMenuItem.ShortcutKeys%2A> property to assign a key combination to a menu command, such as CTRL+C for the **Copy** command. You can use shortcut keys instead of or in addition to access keys, which are underscored letters in menus or menu items used with the ALT key. Define access keys in code by typing an ampersand (&) before the letter you want to use for an access key.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.ToolStripMenuItem.ShortcutKeys%2A> property to assign the key combination CTRL+P to a menu item called `printToolStripMenuItem`. For the complete example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
-  
- [!code-csharp[System.Windows.Forms.WebBrowser#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#100)]
- [!code-vb[System.Windows.Forms.WebBrowser#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/VB/form1.vb#100)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.ToolStripMenuItem.ShortcutKeys%2A> property to assign the key combination CTRL+P to a menu item called `printToolStripMenuItem`. For the complete example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
+ 
+[!code-csharp[System.Windows.Forms.WebBrowser#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#100)]
+[!code-vb[System.Windows.Forms.WebBrowser#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/VB/form1.vb#100)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property was not set to one of the <see cref="T:System.Windows.Forms.Keys" /> values.</exception>

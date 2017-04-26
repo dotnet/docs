@@ -14,13 +14,13 @@
     <summary>Contains information about a WMI method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example lists information about the **Win32_Process.Create** method using the <xref:System.Management.MethodData> class. For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
- [!code-csharp[wminet_MethodData#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_MethodData/cs/MethodData.cs#1)]
- [!code-vb[wminet_MethodData#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_MethodData/vb/MethodData.vb#1)]  
-  
+The following example lists information about the **Win32_Process.Create** method using the <xref:System.Management.MethodData> class. For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
+[!code-csharp[wminet_MethodData#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_MethodData/cs/MethodData.cs#1)]
+[!code-vb[wminet_MethodData#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_MethodData/vb/MethodData.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -42,24 +42,24 @@
         <value>Returns a <see cref="T:System.Management.ManagementBaseObject" /> containing the input parameters to the method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each parameter in the object should have an ID qualifier, identifying the order of the parameters in the method call.  
-  
+Each parameter in the object should have an ID qualifier, identifying the order of the parameters in the method call.  
+ 
 ## Property Value  
- A <xref:System.Management.ManagementBaseObject> containing all the input parameters to the method.  
-  
+A <xref:System.Management.ManagementBaseObject> containing all the input parameters to the method.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example lists information about the **Win32_Process.Create** method using the <xref:System.Management.MethodData> class. For more information about the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
- [!code-csharp[wminet_MethodData_InParameters#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_MethodData_InParameters/cs/MethodData_InParameters.cs#1)]
- [!code-vb[wminet_MethodData_InParameters#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_MethodData_InParameters/vb/MethodData_InParameters.vb#1)]  
-  
+The following example lists information about the **Win32_Process.Create** method using the <xref:System.Management.MethodData> class. For more information about the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
+[!code-csharp[wminet_MethodData_InParameters#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_MethodData_InParameters/cs/MethodData_InParameters.cs#1)]
+[!code-vb[wminet_MethodData_InParameters#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_MethodData_InParameters/vb/MethodData_InParameters.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,23 +81,23 @@
         <value>Returns a <see cref="T:System.String" /> value containing the name of the method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- The name of the method.  
-  
+The name of the method.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example lists information about the **Win32_Process.Create** method using the <xref:System.Management.MethodData> class. For more information about the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
- [!code-csharp[wminet_MethodData_Name#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_MethodData_Name/cs/MethodData_Name.cs#1)]
- [!code-vb[wminet_MethodData_Name#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_MethodData_Name/vb/MethodData_Name.vb#1)]  
-  
+The following example lists information about the **Win32_Process.Create** method using the <xref:System.Management.MethodData> class. For more information about the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
+[!code-csharp[wminet_MethodData_Name#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_MethodData_Name/cs/MethodData_Name.cs#1)]
+[!code-vb[wminet_MethodData_Name#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_MethodData_Name/vb/MethodData_Name.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,15 +119,15 @@
         <value>Returns a <see cref="T:System.String" /> value containing the name of the class in which the method was first introduced in the class inheritance hierarchy.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- A string representing the originating management class name.  
-  
+A string representing the originating management class name.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,26 +149,26 @@
         <value>Returns a <see cref="T:System.Management.ManagementBaseObject" /> containing the output parameters for the method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each parameter in this object should have an ID qualifier to identify the order of the parameters in the method call.  
-  
- The **ReturnValue** property is a special property of the <xref:System.Management.ManagementBaseObject> returned by the <xref:System.Management.MethodData.OutParameters%2A> property and holds the return value of the method.  
-  
+Each parameter in this object should have an ID qualifier to identify the order of the parameters in the method call.  
+ 
+The **ReturnValue** property is a special property of the <xref:System.Management.ManagementBaseObject> returned by the <xref:System.Management.MethodData.OutParameters%2A> property and holds the return value of the method.  
+ 
 ## Property Value  
- A <xref:System.Management.ManagementBaseObject> containing all the output parameters to the method.  
-  
+A <xref:System.Management.ManagementBaseObject> containing all the output parameters to the method.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example lists information about the **Win32_Process.Create** method using the <xref:System.Management.MethodData> class. For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
- [!code-csharp[wminet_MethodData_OutParameters#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_MethodData_OutParameters/cs/MethodData_OutParameters.cs#1)]
- [!code-vb[wminet_MethodData_OutParameters#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_MethodData_OutParameters/vb/MethodData_OutParameters.vb#1)]  
-  
+The following example lists information about the **Win32_Process.Create** method using the <xref:System.Management.MethodData> class. For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
+[!code-csharp[wminet_MethodData_OutParameters#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_MethodData_OutParameters/cs/MethodData_OutParameters.cs#1)]
+[!code-vb[wminet_MethodData_OutParameters#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_MethodData_OutParameters/vb/MethodData_OutParameters.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,23 +190,23 @@
         <value>Returns a <see cref="T:System.Management.QualifierDataCollection" /> containing the qualifiers for the method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- A <xref:System.Management.QualifierDataCollection> containing the qualifiers for this method.  
-  
+A <xref:System.Management.QualifierDataCollection> containing the qualifiers for this method.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example lists information about the **Win32_Process.Create** method using the <xref:System.Management.MethodData> class. For more information about the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
- [!code-csharp[wminet_MethodData_Qualifiers#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_MethodData_Qualifiers/cs/MethodData_Qualifiers.cs#1)]
- [!code-vb[wminet_MethodData_Qualifiers#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_MethodData_Qualifiers/vb/MethodData_Qualifiers.vb#1)]  
-  
+The following example lists information about the **Win32_Process.Create** method using the <xref:System.Management.MethodData> class. For more information about the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
+[!code-csharp[wminet_MethodData_Qualifiers#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_MethodData_Qualifiers/cs/MethodData_Qualifiers.cs#1)]
+[!code-vb[wminet_MethodData_Qualifiers#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_MethodData_Qualifiers/vb/MethodData_Qualifiers.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

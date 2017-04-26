@@ -19,14 +19,14 @@
     <summary>Provides a common base implementation for all custom channel factories.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this base class to create a custom channel factory.  
-  
- The <xref:System.ServiceModel.Channels.ChannelFactoryBase> class derives from the <xref:System.ServiceModel.Channels.ChannelManagerBase> class and implements the <xref:System.ServiceModel.Channels.IChannelFactory> interface for creating channels. The methods handle parameter validation and then delegate to protected, virtual or abstract methods that derived classes can override.  
-  
- Each of the protected virtual methods is automatically synchronized with respect to the other methods on the <xref:System.ServiceModel.Channels.IChannelFactory> interface (including the state transition methods). This means that no additional locking is required to ensure that the object is in a consistent state inside the method body.  
-  
+Use this base class to create a custom channel factory.  
+ 
+The <xref:System.ServiceModel.Channels.ChannelFactoryBase> class derives from the <xref:System.ServiceModel.Channels.ChannelManagerBase> class and implements the <xref:System.ServiceModel.Channels.IChannelFactory> interface for creating channels. The methods handle parameter validation and then delegate to protected, virtual or abstract methods that derived classes can override.  
+ 
+Each of the protected virtual methods is automatically synchronized with respect to the other methods on the <xref:System.ServiceModel.Channels.IChannelFactory> interface (including the state transition methods). This means that no additional locking is required to ensure that the object is in a consistent state inside the method body.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelFactoryBase" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
-  
+The default constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,10 +72,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelFactoryBase" /> class with specified default communication timeouts.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> instead of the default constructor if you want to specify custom values for the open, send, receive, and close operation timeouts instead of using the service model default values.  
-  
+Use <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> instead of the default constructor if you want to specify custom values for the open, send, receive, and close operation timeouts instead of using the service model default values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <value>The default <see cref="T:System.TimeSpan" /> that specifies how long the close operation has to complete before timing out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelFactoryBase> object. The default <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelFactoryBase.DefaultCloseTimeout%2A> property to a value of 1 minute. Use <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
-  
+This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelFactoryBase> object. The default <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelFactoryBase.DefaultCloseTimeout%2A> property to a value of 1 minute. Use <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,10 +124,10 @@
         <value>The default <see cref="T:System.TimeSpan" /> that specifies how long the open operation has to complete before timing out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelFactoryBase> object. The default <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelFactoryBase.DefaultOpenTimeout%2A> property to a value of 1 minute. Use <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
-  
+This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelFactoryBase> object. The default <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelFactoryBase.DefaultOpenTimeout%2A> property to a value of 1 minute. Use <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,10 +150,10 @@
         <value>The default <see cref="T:System.TimeSpan" /> that specifies how long the receive operation has to complete before timing out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelFactoryBase> object. The default <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelFactoryBase.DefaultReceiveTimeout%2A> property to a value of 10 minutes. Use <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
-  
+This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelFactoryBase> object. The default <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelFactoryBase.DefaultReceiveTimeout%2A> property to a value of 10 minutes. Use <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,10 +176,10 @@
         <value>The default <see cref="T:System.TimeSpan" /> that specifies how long the send operation has to complete before timing out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelFactoryBase> object. The default <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelFactoryBase.DefaultSendTimeout%2A> property to a value of 1 minute. Use <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
-  
+This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelFactoryBase> object. The default <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelFactoryBase.DefaultSendTimeout%2A> property to a value of 1 minute. Use <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,12 +211,12 @@
         <returns>The typed object T requested if it is present or <see langword="null" /> if it is not.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this to request a typed object such as an interface for setting properties or getting status from the appropriate layer in the channel factory stack. If a layer supports returning the requested object, it returns it. If not, it simply delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no channel factory layer supported the requested object, then the method returns `null`.  
-  
- This is similar to COM+’s QueryService interface.  
-  
+Use this to request a typed object such as an interface for setting properties or getting status from the appropriate layer in the channel factory stack. If a layer supports returning the requested object, it returns it. If not, it simply delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no channel factory layer supported the requested object, then the method returns `null`.  
+ 
+This is similar to COM+’s QueryService interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,10 +239,10 @@
         <summary>Inserts processing on a communication object after it transitions to the closing state due to the invocation of a synchronous abort operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation is empty.  
-  
+The default implementation is empty.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,10 +295,10 @@
         <summary>Inserts processing on a communication object after it transitions into the opening state which must complete within a specified interval of time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation is empty.  
-  
+The default implementation is empty.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -335,10 +335,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelFactoryBase" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor> constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
-  
+The default <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor> constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelFactoryBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
+ 
  ]]></format>
         </remarks>
       </Docs>

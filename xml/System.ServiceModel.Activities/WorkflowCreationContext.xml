@@ -100,12 +100,12 @@
         <summary>Aborts the <see cref="T:System.ServiceModel.Activities.WorkflowCreationContext" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to implement the <xref:System.ServiceModel.Activities.WorkflowCreationContext.OnAbort%2A> method.  
-  
- [!code-csharp[WFCreationContext#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfcreationcontext/cs/program.cs#2)]  
-  
+The following example shows how to implement the <xref:System.ServiceModel.Activities.WorkflowCreationContext.OnAbort%2A> method.  
+ 
+[!code-csharp[WFCreationContext#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfcreationcontext/cs/program.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,12 +141,12 @@
         <returns>The status of the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to implement the <xref:System.ServiceModel.Activities.WorkflowCreationContext.OnBeginWorkflowCompleted%2A> method.  
-  
- [!code-csharp[WFCreationContext#0](~/samples/snippets/csharp/VS_Snippets_CFX/wfcreationcontext/cs/program.cs#0)]  
-  
+The following example shows how to implement the <xref:System.ServiceModel.Activities.WorkflowCreationContext.OnBeginWorkflowCompleted%2A> method.  
+ 
+[!code-csharp[WFCreationContext#0](~/samples/snippets/csharp/VS_Snippets_CFX/wfcreationcontext/cs/program.cs#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,12 +171,12 @@
         <summary>Completes an asynchronous operation that notifies workflow instance completion associated with this <see cref="T:System.ServiceModel.Activities.WorkflowCreationContext" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows a simple implementation of the <xref:System.ServiceModel.Activities.WorkflowCreationContext.OnEndWorkflowCompleted%2A> method. Notice that the base class <xref:System.ServiceModel.Activities.WorkflowCreationContext.OnAbort%2A> method is called.  
-  
- [!code-csharp[WFCreationContext#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfcreationcontext/cs/program.cs#2)]  
-  
+The following example shows a simple implementation of the <xref:System.ServiceModel.Activities.WorkflowCreationContext.OnEndWorkflowCompleted%2A> method. Notice that the base class <xref:System.ServiceModel.Activities.WorkflowCreationContext.OnAbort%2A> method is called.  
+ 
+[!code-csharp[WFCreationContext#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfcreationcontext/cs/program.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

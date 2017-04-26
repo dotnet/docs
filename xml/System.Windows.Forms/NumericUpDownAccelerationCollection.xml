@@ -26,18 +26,18 @@
     <summary>Represents a sorted collection of <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> objects in the <see cref="T:System.Windows.Forms.NumericUpDown" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements in the <xref:System.Windows.Forms.NumericUpDownAccelerationCollection> are sorted by the <xref:System.Windows.Forms.NumericUpDownAcceleration.Seconds%2A> property.  
+The elements in the <xref:System.Windows.Forms.NumericUpDownAccelerationCollection> are sorted by the <xref:System.Windows.Forms.NumericUpDownAcceleration.Seconds%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.NumericUpDown.Accelerations%2A> property. To run this example, paste the following code into a form and call the `InitializeAcceleratedUpDown` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler. While the code is running, press and hold the up or down arrow to see the acceleration occur.  
-  
- [!code-csharp[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/CS/Form1.cs#6)]
- [!code-vb[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/VB/form1.vb#6)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.NumericUpDown.Accelerations%2A> property. To run this example, paste the following code into a form and call the `InitializeAcceleratedUpDown` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler. While the code is running, press and hold the up or down arrow to see the acceleration occur.  
+ 
+[!code-csharp[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/CS/Form1.cs#6)]
+[!code-vb[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/VB/form1.vb#6)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,18 +77,18 @@
         <summary>Adds a new <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> to the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The item is added while preserving the <xref:System.Windows.Forms.NumericUpDownAccelerationCollection> sorted.  
+The item is added while preserving the <xref:System.Windows.Forms.NumericUpDownAccelerationCollection> sorted.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.NumericUpDown.Accelerations%2A> property. To run this example, paste the following code into a form and call the `InitializeAcceleratedUpDown` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler. While the code is running, press and hold the up or down arrow to see the acceleration occur.  
-  
- [!code-csharp[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/CS/Form1.cs#6)]
- [!code-vb[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/VB/form1.vb#6)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.NumericUpDown.Accelerations%2A> property. To run this example, paste the following code into a form and call the `InitializeAcceleratedUpDown` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler. While the code is running, press and hold the up or down arrow to see the acceleration occur.  
+ 
+[!code-csharp[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/CS/Form1.cs#6)]
+[!code-vb[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/VB/form1.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -224,10 +224,10 @@
           <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property always returns `false`.  
-  
+This property always returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,10 +295,10 @@
         <returns>Iterates over a collection to specify how acceleration should be performed on the control when the up or down button is pressed for specified time period.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.NumericUpDownAccelerationCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.NumericUpDownAccelerationCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -321,10 +321,10 @@
         <returns>An iteration over the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.NumericUpDownAccelerationCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.NumericUpDownAccelerationCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -24,12 +24,12 @@
     <summary>Indicates whether the component associated with this attribute has been inherited from a base class. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ComponentModel.InheritanceAttribute> represents the type and level of inheritance of a member.  
-  
- When the <xref:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents%2A> method of the <xref:System.ComponentModel.Design.IInheritanceService> searches the component fields of a component to identify fields that are inherited from a base class, the method represents the inheritance level of each component using an <xref:System.ComponentModel.InheritanceAttribute>.  
-  
+<xref:System.ComponentModel.InheritanceAttribute> represents the type and level of inheritance of a member.  
+ 
+When the <xref:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents%2A> method of the <xref:System.ComponentModel.Design.IInheritanceService> searches the component fields of a component to identify fields that are inherited from a base class, the method represents the inheritance level of each component using an <xref:System.ComponentModel.InheritanceAttribute>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -98,10 +98,10 @@
         <summary>Specifies that the default value for <see cref="T:System.ComponentModel.InheritanceAttribute" /> is <see cref="F:System.ComponentModel.InheritanceAttribute.NotInherited" />. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field creates a new <xref:System.ComponentModel.InheritanceAttribute> that indicates that the associated component is not inherited.  
-  
+This field creates a new <xref:System.ComponentModel.InheritanceAttribute> that indicates that the associated component is not inherited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,10 +202,10 @@
         <summary>Specifies that the component is inherited. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field creates a new <xref:System.ComponentModel.InheritanceAttribute> that indicates that the associated component is inherited.  
-  
+This field creates a new <xref:System.ComponentModel.InheritanceAttribute> that indicates that the associated component is inherited.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -231,10 +231,10 @@
         <summary>Specifies that the component is inherited and is read-only. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field creates a new <xref:System.ComponentModel.InheritanceAttribute> that indicates that the associated component is inherited and read-only.  
-  
+This field creates a new <xref:System.ComponentModel.InheritanceAttribute> that indicates that the associated component is inherited and read-only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -285,10 +285,10 @@
         <summary>Specifies that the component is not inherited. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field creates a new <xref:System.ComponentModel.InheritanceAttribute> that indicates that the associated component is not inherited.  
-  
+This field creates a new <xref:System.ComponentModel.InheritanceAttribute> that indicates that the associated component is not inherited.  
+ 
  ]]></format>
         </remarks>
       </Docs>

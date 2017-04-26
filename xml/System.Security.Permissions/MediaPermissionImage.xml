@@ -13,18 +13,18 @@
     <summary>Specifies the permission level for images.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this enumeration to set the <xref:System.Security.Permissions.MediaPermission.Image%2A> property of the <xref:System.Security.Permissions.MediaPermission> class. The default is SafeImage.  
+Use this enumeration to set the <xref:System.Security.Permissions.MediaPermission.Image%2A> property of the <xref:System.Security.Permissions.MediaPermission> class. The default is SafeImage.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.MediaPermissionAttribute.Image%2A> property.  
-  
- [!code-csharp[SecurityPermissionsSnippets#MediaPermissionAttribute5](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermissionattribute5)]
- [!code-vb[SecurityPermissionsSnippets#MediaPermissionAttribute5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermissionattribute5)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.MediaPermissionAttribute.Image%2A> property.  
+ 
+[!code-csharp[SecurityPermissionsSnippets#MediaPermissionAttribute5](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermissionattribute5)]
+[!code-vb[SecurityPermissionsSnippets#MediaPermissionAttribute5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermissionattribute5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

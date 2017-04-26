@@ -14,18 +14,18 @@
     <summary>Provides information for a data-context instance in order to allow customization.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.ContextConfiguration> class enables you to customize data access. For example, you can use this class to enable scaffolding for a Web application, or to define a custom metadata provider.  
+The <xref:System.Web.DynamicData.ContextConfiguration> class enables you to customize data access. For example, you can use this class to enable scaffolding for a Web application, or to define a custom metadata provider.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.DynamicData.ContextConfiguration> class when you call the <xref:System.Web.DynamicData.MetaModel.RegisterContext%2A> method in order to register a data context with scaffolding enabled.  
-  
- [!code-csharp[System.Web.DynamicData.MetaModel#99](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/global.asax.cs#99)]
- [!code-vb[System.Web.DynamicData.MetaModel#99](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/global.asax.vb#99)]  
-  
+The following example shows how to use the <xref:System.Web.DynamicData.ContextConfiguration> class when you call the <xref:System.Web.DynamicData.MetaModel.RegisterContext%2A> method in order to register a data context with scaffolding enabled.  
+ 
+[!code-csharp[System.Web.DynamicData.MetaModel#99](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/global.asax.cs#99)]
+[!code-vb[System.Web.DynamicData.MetaModel#99](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/global.asax.vb#99)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@
         <value>The type of the metadata provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enables you to define a custom metadata provider for a given data context.  
-  
+This method enables you to define a custom metadata provider for a given data context.  
+ 
  ]]></format>
         </remarks>
       </Docs>

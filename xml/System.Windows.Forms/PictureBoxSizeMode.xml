@@ -13,18 +13,18 @@
     <summary>Specifies how an image is positioned within a <see cref="T:System.Windows.Forms.PictureBox" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property of the <xref:System.Windows.Forms.PictureBox>.  
+Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property of the <xref:System.Windows.Forms.PictureBox>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property. To run this example, paste the following code into a Windows Form and call the `InitializePictureBoxAndButton` method from the form's constructor or Load-event handling method.  
-  
- [!code-csharp[System.Windows.Forms.PictureBox.SizeMode#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PictureBox.SizeMode/CS/Form1.cs#10)]
- [!code-vb[System.Windows.Forms.PictureBox.SizeMode#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PictureBox.SizeMode/VB/Form1.vb#10)]  
-  
+The following code example demonstrates the use of the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property. To run this example, paste the following code into a Windows Form and call the `InitializePictureBoxAndButton` method from the form's constructor or Load-event handling method.  
+ 
+[!code-csharp[System.Windows.Forms.PictureBox.SizeMode#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PictureBox.SizeMode/CS/Form1.cs#10)]
+[!code-vb[System.Windows.Forms.PictureBox.SizeMode#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PictureBox.SizeMode/VB/Form1.vb#10)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

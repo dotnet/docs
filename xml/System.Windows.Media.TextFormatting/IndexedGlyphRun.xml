@@ -14,10 +14,10 @@
     <summary>Allows text engine clients to map a text source character index to the corresponding <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.TextFormatting.IndexedGlyphRun> object allows a text engine client to obtain glyph information for a text source character such as the glyph's cluster map, glyph indices, and glyph typeface.  
-  
+The <xref:System.Windows.Media.TextFormatting.IndexedGlyphRun> object allows a text engine client to obtain glyph information for a text source character such as the glyph's cluster map, glyph indices, and glyph typeface.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,10 +75,10 @@
         <value>An <see cref="T:System.Int32" /> value that represents the length of the text source character.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the <xref:System.Windows.Media.TextFormatting.IndexedGlyphRun.TextSourceLength%2A> property is not necessarily equal to the character count of the corresponding <xref:System.Windows.Media.GlyphRun>.  
-  
+The value of the <xref:System.Windows.Media.TextFormatting.IndexedGlyphRun.TextSourceLength%2A> property is not necessarily equal to the character count of the corresponding <xref:System.Windows.Media.GlyphRun>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -27,29 +27,29 @@
     <summary>Provides a way of reading a forward-only stream of rows from a SQL Server database. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To create a <xref:System.Data.SqlClient.SqlDataReader>, you must call the <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> method of the <xref:System.Data.SqlClient.SqlCommand> object, instead of directly using a constructor.  
-  
- While the <xref:System.Data.SqlClient.SqlDataReader> is being used, the associated <xref:System.Data.SqlClient.SqlConnection> is busy serving the <xref:System.Data.SqlClient.SqlDataReader>, and no other operations can be performed on the <xref:System.Data.SqlClient.SqlConnection> other than closing it. This is the case until the <xref:System.Data.SqlClient.SqlDataReader.Close%2A> method of the <xref:System.Data.SqlClient.SqlDataReader> is called. For example, you cannot retrieve output parameters until after you call <xref:System.Data.SqlClient.SqlDataReader.Close%2A>.  
-  
- Changes made to a result set by another process or thread while data is being read may be visible to the user of the `SqlDataReader`. However, the precise behavior is timing dependent.  
-  
- <xref:System.Data.SqlClient.SqlDataReader.IsClosed%2A> and <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.SqlClient.SqlDataReader> is closed. Although the <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> property may be accessed while the <xref:System.Data.SqlClient.SqlDataReader> exists, always call <xref:System.Data.SqlClient.SqlDataReader.Close%2A> before returning the value of <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> to guarantee an accurate return value.  
-  
- When using sequential access (<xref:System.Data.CommandBehavior?displayProperty=fullName>), an <xref:System.InvalidOperationException> will be raised if the <xref:System.Data.SqlClient.SqlDataReader> position is advanced and another read operation is attempted on the previous column.  
-  
+To create a <xref:System.Data.SqlClient.SqlDataReader>, you must call the <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> method of the <xref:System.Data.SqlClient.SqlCommand> object, instead of directly using a constructor.  
+ 
+While the <xref:System.Data.SqlClient.SqlDataReader> is being used, the associated <xref:System.Data.SqlClient.SqlConnection> is busy serving the <xref:System.Data.SqlClient.SqlDataReader>, and no other operations can be performed on the <xref:System.Data.SqlClient.SqlConnection> other than closing it. This is the case until the <xref:System.Data.SqlClient.SqlDataReader.Close%2A> method of the <xref:System.Data.SqlClient.SqlDataReader> is called. For example, you cannot retrieve output parameters until after you call <xref:System.Data.SqlClient.SqlDataReader.Close%2A>.  
+ 
+Changes made to a result set by another process or thread while data is being read may be visible to the user of the `SqlDataReader`. However, the precise behavior is timing dependent.  
+ 
+<xref:System.Data.SqlClient.SqlDataReader.IsClosed%2A> and <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.SqlClient.SqlDataReader> is closed. Although the <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> property may be accessed while the <xref:System.Data.SqlClient.SqlDataReader> exists, always call <xref:System.Data.SqlClient.SqlDataReader.Close%2A> before returning the value of <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> to guarantee an accurate return value.  
+ 
+When using sequential access (<xref:System.Data.CommandBehavior?displayProperty=fullName>), an <xref:System.InvalidOperationException> will be raised if the <xref:System.Data.SqlClient.SqlDataReader> position is advanced and another read operation is attempted on the previous column.  
+ 
 > [!NOTE]
 >  For optimal performance, <xref:System.Data.SqlClient.SqlDataReader> avoids creating unnecessary objects or making unnecessary copies of data. Therefore, multiple calls to methods such as <xref:System.Data.SqlClient.SqlDataReader.GetValue%2A> return a reference to the same object. Use caution if you are modifying the underlying value of the objects returned by methods such as <xref:System.Data.SqlClient.SqlDataReader.GetValue%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.SqlClient.SqlConnection>, a <xref:System.Data.SqlClient.SqlCommand>, and a <xref:System.Data.SqlClient.SqlDataReader>. The example reads through the data, writing it out to the console window. The code then closes the <xref:System.Data.SqlClient.SqlDataReader>. The <xref:System.Data.SqlClient.SqlConnection> is closed automatically at the end of the `using` code block.  
-  
- [!code-csharp[Classic WebData SqlDataReader.Read Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Read Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlDataReader.Read Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Read Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Data.SqlClient.SqlConnection>, a <xref:System.Data.SqlClient.SqlCommand>, and a <xref:System.Data.SqlClient.SqlDataReader>. The example reads through the data, writing it out to the console window. The code then closes the <xref:System.Data.SqlClient.SqlDataReader>. The <xref:System.Data.SqlClient.SqlConnection> is closed automatically at the end of the `using` code block.  
+ 
+[!code-csharp[Classic WebData SqlDataReader.Read Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Read Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlDataReader.Read Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Read Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,23 +72,23 @@
         <summary>Closes the <see cref="T:System.Data.SqlClient.SqlDataReader" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must explicitly call the <xref:System.Data.SqlClient.SqlDataReader.Close%2A> method when you are through using the <xref:System.Data.SqlClient.SqlDataReader> to use the associated <xref:System.Data.SqlClient.SqlConnection> for any other purpose.  
-  
- The `Close` method fills in the values for output parameters, return values and `RecordsAffected`, increasing the time that it takes to close a `SqlDataReader` that was used to process a large or complex query. When the return values and the number of records affected by a query are not significant, the time that it takes to close the `SqlDataReader` can be reduced by calling the <xref:System.Data.SqlClient.SqlCommand.Cancel%2A> method of the associated <xref:System.Data.SqlClient.SqlCommand> object before calling the `Close` method.  
-  
+You must explicitly call the <xref:System.Data.SqlClient.SqlDataReader.Close%2A> method when you are through using the <xref:System.Data.SqlClient.SqlDataReader> to use the associated <xref:System.Data.SqlClient.SqlConnection> for any other purpose.  
+ 
+The `Close` method fills in the values for output parameters, return values and `RecordsAffected`, increasing the time that it takes to close a `SqlDataReader` that was used to process a large or complex query. When the return values and the number of records affected by a query are not significant, the time that it takes to close the `SqlDataReader` can be reduced by calling the <xref:System.Data.SqlClient.SqlCommand.Cancel%2A> method of the associated <xref:System.Data.SqlClient.SqlCommand> object before calling the `Close` method.  
+ 
 > [!CAUTION]
 >  Do not call `Close` or `Dispose` on a Connection, a DataReader, or any other managed object in the `Finalize` method of your class. In a finalizer, you should only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.SqlClient.SqlConnection>, a `SqlCommand`, and a <xref:System.Data.SqlClient.SqlDataReader>. The example reads through the data, writing it out to the console window. The code then closes the <xref:System.Data.SqlClient.SqlDataReader>. The <xref:System.Data.SqlClient.SqlConnection> is closed automatically at the end of the `using` code block.  
-  
- [!code-csharp[Classic WebData SqlDataReader.Close Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Close Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlDataReader.Close Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Close Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Data.SqlClient.SqlConnection>, a `SqlCommand`, and a <xref:System.Data.SqlClient.SqlDataReader>. The example reads through the data, writing it out to the console window. The code then closes the <xref:System.Data.SqlClient.SqlDataReader>. The <xref:System.Data.SqlClient.SqlConnection> is closed automatically at the end of the `using` code block.  
+ 
+[!code-csharp[Classic WebData SqlDataReader.Close Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Close Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlDataReader.Close Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Close Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,10 +146,10 @@
         <value>The depth of nesting for the current row.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The outermost table has a depth of zero. The .NET Framework Data Provider for SQL Server does not support nesting and always returns zero.  
-  
+The outermost table has a depth of zero. The .NET Framework Data Provider for SQL Server does not support nesting and always returns zero.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,10 +180,10 @@
         <value>When not positioned in a valid recordset, 0; otherwise the number of columns in the current row. The default is -1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Executing a query that, by its nature, does not return rows (such as a DELETE query), sets <xref:System.Data.SqlClient.SqlDataReader.FieldCount%2A> to 0. However. this should not be confused with a query that returns 0 rows (such as SELECT * FROM *table* WHERE 1 = 2) in which case <xref:System.Data.SqlClient.SqlDataReader.FieldCount%2A> returns the number of columns in the table, including hidden fields. Use <xref:System.Data.SqlClient.SqlDataReader.VisibleFieldCount%2A> to exclude hidden fields.  
-  
+Executing a query that, by its nature, does not return rows (such as a DELETE query), sets <xref:System.Data.SqlClient.SqlDataReader.FieldCount%2A> to 0. However. this should not be confused with a query that returns 0 rows (such as SELECT * FROM *table* WHERE 1 = 2) in which case <xref:System.Data.SqlClient.SqlDataReader.FieldCount%2A> returns the number of columns in the table, including hidden fields. Use <xref:System.Data.SqlClient.SqlDataReader.VisibleFieldCount%2A> to exclude hidden fields.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">There is no current connection to an instance of SQL Server.</exception>
@@ -219,12 +219,12 @@
         <returns>The value of the column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a Boolean, or an exception is generated.  
-  
- Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+No conversions are performed; therefore, the data retrieved must already be a Boolean, or an exception is generated.  
+ 
+Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -260,12 +260,12 @@
         <returns>The value of the specified column as a byte.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a byte.  
-  
- Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+No conversions are performed; therefore, the data retrieved must already be a byte.  
+ 
+Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -309,14 +309,14 @@
         <returns>The actual number of bytes read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.SqlClient.SqlDataReader.GetBytes%2A> returns the number of available bytes in the field. Most of the time this is the exact length of the field. However, the number returned may be less than the true length of the field if `GetBytes` has already been used to obtain bytes from the field. This may be the case, for example, if the <xref:System.Data.SqlClient.SqlDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting for <xref:System.Data.CommandBehavior>.  
-  
- If you pass a buffer that is `null`, <xref:System.Data.SqlClient.SqlDataReader.GetBytes%2A> returns the length of the entire field in bytes, not the remaining size based on the buffer offset parameter.  
-  
- No conversions are performed; therefore, the data retrieved must already be a byte array.  
-  
+<xref:System.Data.SqlClient.SqlDataReader.GetBytes%2A> returns the number of available bytes in the field. Most of the time this is the exact length of the field. However, the number returned may be less than the true length of the field if `GetBytes` has already been used to obtain bytes from the field. This may be the case, for example, if the <xref:System.Data.SqlClient.SqlDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting for <xref:System.Data.CommandBehavior>.  
+ 
+If you pass a buffer that is `null`, <xref:System.Data.SqlClient.SqlDataReader.GetBytes%2A> returns the length of the entire field in bytes, not the remaining size based on the buffer offset parameter.  
+ 
+No conversions are performed; therefore, the data retrieved must already be a byte array.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -356,10 +356,10 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Not supported for <xref:System.Data.SqlClient>.  
-  
+Not supported for <xref:System.Data.SqlClient>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -403,17 +403,17 @@
         <returns>The actual number of characters read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> returns the number of available characters in the field. Frequently this is the exact length of the field. However, the number returned may be less than the true length of the field if `GetChars` has already been used to obtain characters from the field. This may be the case, for example, if the <xref:System.Data.SqlClient.SqlDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting for <xref:System.Data.CommandBehavior>.  
-  
- The actual number of characters read can be less than the requested length, if the end of the field is reached. If you pass a buffer that is `null`, <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> returns the length of the entire field in characters, not the remaining size based on the buffer offset parameter.  
-  
- No conversions are performed; therefore. the data retrieved must already be a character array.  
-  
+<xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> returns the number of available characters in the field. Frequently this is the exact length of the field. However, the number returned may be less than the true length of the field if `GetChars` has already been used to obtain characters from the field. This may be the case, for example, if the <xref:System.Data.SqlClient.SqlDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting for <xref:System.Data.CommandBehavior>.  
+ 
+The actual number of characters read can be less than the requested length, if the end of the field is reached. If you pass a buffer that is `null`, <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> returns the length of the entire field in characters, not the remaining size based on the buffer offset parameter.  
+ 
+No conversions are performed; therefore. the data retrieved must already be a character array.  
+ 
 > [!NOTE]
 >  The <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> method returns 0 when `dataIndex` is negative.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -448,12 +448,12 @@
         <returns>The string representing the data type of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns the name of the back-end data type.  
-  
- `numeric` is a synonym in SQL Server for the `decimal` data type. `GetDataTypeName` will return "decimal" for a column defined as either decimal or numeric.  
-  
+Returns the name of the back-end data type.  
+ 
+`numeric` is a synonym in SQL Server for the `decimal` data type. `GetDataTypeName` will return "decimal" for a column defined as either decimal or numeric.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -488,12 +488,12 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a <xref:System.DateTime> object.  
-  
- Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+No conversions are performed; therefore, the data retrieved must already be a <xref:System.DateTime> object.  
+ 
+Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -529,12 +529,12 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a <xref:System.DateTimeOffset> object.  
-  
- Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+No conversions are performed; therefore, the data retrieved must already be a <xref:System.DateTimeOffset> object.  
+ 
+Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -570,12 +570,12 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a <xref:System.Decimal> object.  
-  
- Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+No conversions are performed; therefore, the data retrieved must already be a <xref:System.Decimal> object.  
+ 
+Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -611,12 +611,12 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed. Therefore, the data retrieved must already be a double-precision floating point number.  
-  
- Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+No conversions are performed. Therefore, the data retrieved must already be a double-precision floating point number.  
+ 
+Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -649,10 +649,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Data.SqlClient.SqlDataReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although you can use this method to retrieve an explicit enumerator, in languages that support a `foreach` construct, it is simpler to use the looping construct directly in order to iterate through the rows in the data reader.  
-  
+Although you can use this method to retrieve an explicit enumerator, in languages that support a `foreach` construct, it is simpler to use the looping construct directly in order to iterate through the rows in the data reader.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -722,10 +722,10 @@
         <returns>The returned type object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `T` can be one of the following types:  
-  
+`T` can be one of the following types:  
+ 
 |||||  
 |-|-|-|-|  
 |Boolean|Byte|Char|DateTime|  
@@ -735,9 +735,9 @@
 |SqlDouble|SqlGuid|SqlInt16|SqlInt32|  
 |SqlInt64|SqlMoney|SqlSingle|SqlString|  
 |String|UDT, which can be any CLR type marked with <xref:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute>.|||  
-  
- For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+ 
+For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
@@ -791,10 +791,10 @@
         <returns>The returned type object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `T` can be one of the following types:  
-  
+`T` can be one of the following types:  
+ 
 |||||  
 |-|-|-|-|  
 |Boolean|Byte|Char|DateTime|  
@@ -804,9 +804,9 @@
 |SqlDouble|SqlGuid|SqlInt16|SqlInt32|  
 |SqlInt64|SqlMoney|SqlSingle|SqlString|  
 |String|UDT, which can be any CLR type marked with <xref:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute>.|||  
-  
- For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+ 
+For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
@@ -856,12 +856,12 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed. Therefore, the data retrieved must already be a single-precision floating point number.  
-  
- Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+No conversions are performed. Therefore, the data retrieved must already be a single-precision floating point number.  
+ 
+Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -897,12 +897,12 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a GUID.  
-  
- Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+No conversions are performed; therefore, the data retrieved must already be a GUID.  
+ 
+Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -938,12 +938,12 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a 16-bit signed integer.  
-  
- Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+No conversions are performed; therefore, the data retrieved must already be a 16-bit signed integer.  
+ 
+Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -979,12 +979,12 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a 32-bit signed integer.  
-  
- Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+No conversions are performed; therefore, the data retrieved must already be a 32-bit signed integer.  
+ 
+Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -1020,12 +1020,12 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a 64-bit signed integer.  
-  
- Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+No conversions are performed; therefore, the data retrieved must already be a 64-bit signed integer.  
+ 
+Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -1092,22 +1092,22 @@
         <returns>The zero-based column ordinal.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `GetOrdinal` performs a case-sensitive lookup first. If it fails, a second, case-insensitive search occurs (a case-insensitive comparison is done using the database collation). Unexpected results can occur when comparisons are affected by culture-specific casing rules. For example, in Turkish, the following example yields the wrong results because the file system in Turkish does not use linguistic casing rules for the letter 'i' in "file". The method throws an `IndexOutOfRange` exception if the zero-based column ordinal is not found.  
+`GetOrdinal` performs a case-sensitive lookup first. If it fails, a second, case-insensitive search occurs (a case-insensitive comparison is done using the database collation). Unexpected results can occur when comparisons are affected by culture-specific casing rules. For example, in Turkish, the following example yields the wrong results because the file system in Turkish does not use linguistic casing rules for the letter 'i' in "file". The method throws an `IndexOutOfRange` exception if the zero-based column ordinal is not found.  
+ 
+`GetOrdinal` is kana-width insensitive.  
+ 
+Because ordinal-based lookups are more efficient than named lookups, it is inefficient to call `GetOrdinal` within a loop. Save time by calling `GetOrdinal` once and assigning the results to an integer variable for use within the loop.  
+ 
   
- `GetOrdinal` is kana-width insensitive.  
-  
- Because ordinal-based lookups are more efficient than named lookups, it is inefficient to call `GetOrdinal` within a loop. Save time by calling `GetOrdinal` once and assigning the results to an integer variable for use within the loop.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Data.SqlClient.SqlDataReader.GetOrdinal%2A> method.  
-  
- [!code-csharp[Classic WebData SqlDataReader.GetOrdinal#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.GetOrdinal/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlDataReader.GetOrdinal#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.GetOrdinal/VB/source.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Data.SqlClient.SqlDataReader.GetOrdinal%2A> method.  
+ 
+[!code-csharp[Classic WebData SqlDataReader.GetOrdinal#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.GetOrdinal/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlDataReader.GetOrdinal#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.GetOrdinal/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The name specified is not a valid column name.</exception>
@@ -1225,10 +1225,10 @@
         <returns>A <see cref="T:System.Data.DataTable" /> that describes the column metadata.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> method returns metadata about each column in the following order:  
-  
+For the <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> method returns metadata about each column in the following order:  
+ 
 |DataReader column|Description|  
 |-----------------------|-----------------|  
 |AllowDBNull|Set if the consumer can set the column to a null value or if the provider cannot determine whether the consumer can set the column to a null value. Otherwise, not set. A column may contain null values, even if it cannot be set to a null value.|  
@@ -1261,10 +1261,10 @@
 |XmlSchemaCollectionDatabase|The name of the database where the schema collection for this XML instance is located, if the row contains information about an XML column. This value is `null` (`Nothing` in Visual Basic) if the collection is defined within the current database. It is also null if there is no schema collection, in which case the `XmlSchemaCollectionName` and `XmlSchemaCollectionOwningSchema` columns are also null.|  
 |XmlSchemaCollectionName|The name of the schema collection for this XML instance, if the row contains information about an XML column. This value is `null` (`Nothing` in Visual Basic) if there is no associated schema collection. If the value is null, the `XmlSchemaCollectionDatabase` and `XmlSchemaCollectionOwningSchema` columns are also null.|  
 |XmlSchemaCollectionOwningSchema|The owning relational schema where the schema collection for this XML instance is located, if the row contains information about an XML column. This value is `null` (`Nothing` in Visual Basic) if the collection is defined within the current database. It is also null if there is no schema collection, in which case the `XmlSchemaCollectionDatabase` and `XmlSchemaCollectionName` columns are also null.|  
-  
+ 
 > [!NOTE]
 >  To make sure that metadata columns return the correct information, you must call <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> with the `behavior` parameter set to `KeyInfo`. Otherwise, some of the columns in the schema table may return default, null, or incorrect data.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed.</exception>
@@ -1300,10 +1300,10 @@
         <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlBinary" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a binary structure or an exception is generated.  
-  
+No conversions are performed; therefore the data retrieved must already be a binary structure or an exception is generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1338,10 +1338,10 @@
         <returns>The value of the column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a Boolean or an exception is generated.  
-  
+No conversions are performed; therefore, the data retrieved must already be a Boolean or an exception is generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1376,10 +1376,10 @@
         <returns>The value of the column expressed as a  <see cref="T:System.Data.SqlTypes.SqlByte" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a byte, or an exception is generated.  
-  
+No conversions are performed; therefore the data retrieved must already be a byte, or an exception is generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1476,10 +1476,10 @@
         <returns>The value of the column expressed as a  <see cref="T:System.Data.SqlTypes.SqlDateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a date/time value, or an exception is generated.  
-  
+No conversions are performed; therefore, the data retrieved must already be a date/time value, or an exception is generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1514,10 +1514,10 @@
         <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlDecimal" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a decimal value, or an exception is generated.  
-  
+No conversions are performed; therefore, the data retrieved must already be a decimal value, or an exception is generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1552,10 +1552,10 @@
         <returns>The value of the column expressed as a  <see cref="T:System.Data.SqlTypes.SqlDouble" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a double-precision floating-point number, or an exception is generated.  
-  
+No conversions are performed; therefore, the data retrieved must already be a double-precision floating-point number, or an exception is generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1590,10 +1590,10 @@
         <returns>The value of the column expressed as a  <see cref="T:System.Data.SqlTypes.SqlGuid" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a GUID, or an exception is generated.  
-  
+No conversions are performed; therefore, the data retrieved must already be a GUID, or an exception is generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1628,10 +1628,10 @@
         <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlInt16" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a 16-bit signed integer, or an exception is generated.  
-  
+No conversions are performed; therefore, the data retrieved must already be a 16-bit signed integer, or an exception is generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1666,10 +1666,10 @@
         <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlInt32" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a 32-bit signed integer, or an exception is generated.  
-  
+No conversions are performed; therefore the data retrieved must already be a 32-bit signed integer, or an exception is generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1704,10 +1704,10 @@
         <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlInt64" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a 64-bit signed integer, or an exception is generated.  
-  
+No conversions are performed; therefore, the data retrieved must already be a 64-bit signed integer, or an exception is generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1742,10 +1742,10 @@
         <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlMoney" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a decimal value, or an exception is generated.  
-  
+No conversions are performed; therefore, the data retrieved must already be a decimal value, or an exception is generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1780,10 +1780,10 @@
         <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlSingle" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a single precision floating point number, or an exception is generated.  
-  
+No conversions are performed; therefore, the data retrieved must already be a single precision floating point number, or an exception is generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1818,10 +1818,10 @@
         <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a string, or an exception is generated.  
-  
+No conversions are performed; therefore, the data retrieved must already be a string, or an exception is generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1856,10 +1856,10 @@
         <returns>The value of the column expressed as a <see cref="T:System.Data.SqlDbType" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.SqlClient.SqlDataReader.GetSqlValue%2A> returns data using the native SQL Server types. To retrieve data using the .NET Framework types, see <xref:System.Data.SqlClient.SqlDataReader.GetValue%2A>.  
-  
+<xref:System.Data.SqlClient.SqlDataReader.GetSqlValue%2A> returns data using the native SQL Server types. To retrieve data using the .NET Framework types, see <xref:System.Data.SqlClient.SqlDataReader.GetValue%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1894,10 +1894,10 @@
         <returns>An integer indicating the number of columns copied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns the values for all the columns in the record in a single call, using the SQL type system instead of the CLR type system. The length of the <xref:System.Object> array does not need to match the number of columns in the record. You can pass an <xref:System.Object> array that contains fewer than the number of columns contained in the record. Only the amount of data the <xref:System.Object> array holds is copied to the array, starting at the column with ordinal 0. You can also pass an <xref:System.Object> array whose length is more than the number of columns contained in the resulting row. Any remaining columns are untouched.  
-  
+Returns the values for all the columns in the record in a single call, using the SQL type system instead of the CLR type system. The length of the <xref:System.Object> array does not need to match the number of columns in the record. You can pass an <xref:System.Object> array that contains fewer than the number of columns contained in the record. Only the amount of data the <xref:System.Object> array holds is copied to the array, starting at the column with ordinal 0. You can also pass an <xref:System.Object> array whose length is more than the number of columns contained in the resulting row. Any remaining columns are untouched.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1934,12 +1934,12 @@
         <returns>A <see cref="T:System.Data.SqlTypes.SqlXml" /> value that contains the XML stored within the corresponding field.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be an XML value.  
-  
- Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+No conversions are performed; therefore, the data retrieved must already be an XML value.  
+ 
+Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The index passed was outside the range of 0 to <see cref="P:System.Data.DataTableReader.FieldCount" /> - 1</exception>
@@ -1977,40 +1977,40 @@
         <returns>A stream object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IO.Stream.ReadTimeout%2A> defaults to the value of <xref:System.Data.SqlClient.SqlCommand.CommandTimeout%2A>; but you can modify <xref:System.IO.Stream.ReadTimeout%2A> via <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A>.  
-  
- Null values will be returned as an empty (zero bytes) <xref:System.IO.Stream>.  
-  
- <xref:System.Data.SqlClient.SqlDataReader.GetBytes%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A> when <xref:System.Data.CommandBehavior> is in effect.  
-  
- <xref:System.Data.SqlClient.SqlException> exceptions raised from <xref:System.IO.Stream> are thrown as <xref:System.IO.IOException> exceptions; check the inner exception for the <xref:System.Data.SqlClient.SqlException>.  
-  
- The following <xref:System.IO.Stream> members are not available for objects returned by <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A>:  
-  
+<xref:System.IO.Stream.ReadTimeout%2A> defaults to the value of <xref:System.Data.SqlClient.SqlCommand.CommandTimeout%2A>; but you can modify <xref:System.IO.Stream.ReadTimeout%2A> via <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A>.  
+ 
+Null values will be returned as an empty (zero bytes) <xref:System.IO.Stream>.  
+ 
+<xref:System.Data.SqlClient.SqlDataReader.GetBytes%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A> when <xref:System.Data.CommandBehavior> is in effect.  
+ 
+<xref:System.Data.SqlClient.SqlException> exceptions raised from <xref:System.IO.Stream> are thrown as <xref:System.IO.IOException> exceptions; check the inner exception for the <xref:System.Data.SqlClient.SqlException>.  
+ 
+The following <xref:System.IO.Stream> members are not available for objects returned by <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A>:  
+ 
 -   BeginWrite  
-  
+ 
 -   EndWrite  
-  
+ 
 -   Length  
-  
+ 
 -   Position  
-  
+ 
 -   Seek  
-  
+ 
 -   SetLength  
-  
+ 
 -   Write  
-  
+ 
 -   WriteByte  
-  
+ 
 -   WriteTimeout  
-  
- When the connection property `ContextConnection=true`, <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A> only supports synchronous data retrieval for both sequential (<xref:System.Data.CommandBehavior>) and non-sequential (<xref:System.Data.CommandBehavior>) access.  
-  
- For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+ 
+When the connection property `ContextConnection=true`, <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A> only supports synchronous data retrieval for both sequential (<xref:System.Data.CommandBehavior>) and non-sequential (<xref:System.Data.CommandBehavior>) access.  
+ 
+For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
@@ -2064,12 +2064,12 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a string.  
-  
- Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+No conversions are performed; therefore, the data retrieved must already be a string.  
+ 
+Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -2105,18 +2105,18 @@
         <returns>The returned object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.SqlClient.SqlException> exceptions raised from <xref:System.IO.TextReader> are thrown as <xref:System.IO.IOException> exceptions; check the inner exception for the <xref:System.Data.SqlClient.SqlException>.  
-  
- Null values will be returned as an empty (zero bytes) <xref:System.IO.TextReader>.  
-  
- <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetTextReader%2A> when <xref:System.Data.CommandBehavior> is in effect.  
-  
- When the connection property `ContextConnection=true`, <xref:System.Data.SqlClient.SqlDataReader.GetTextReader%2A> only supports synchronous data retrieval for both sequential (<xref:System.Data.CommandBehavior>) and non-sequential (<xref:System.Data.CommandBehavior>) access.  
-  
- For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+<xref:System.Data.SqlClient.SqlException> exceptions raised from <xref:System.IO.TextReader> are thrown as <xref:System.IO.IOException> exceptions; check the inner exception for the <xref:System.Data.SqlClient.SqlException>.  
+ 
+Null values will be returned as an empty (zero bytes) <xref:System.IO.TextReader>.  
+ 
+<xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetTextReader%2A> when <xref:System.Data.CommandBehavior> is in effect.  
+ 
+When the connection property `ContextConnection=true`, <xref:System.Data.SqlClient.SqlDataReader.GetTextReader%2A> only supports synchronous data retrieval for both sequential (<xref:System.Data.CommandBehavior>) and non-sequential (<xref:System.Data.CommandBehavior>) access.  
+ 
+For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
@@ -2174,12 +2174,12 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore, the data retrieved must already be a <xref:System.TimeSpan> object.  
-  
- Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
-  
+No conversions are performed; therefore, the data retrieved must already be a <xref:System.TimeSpan> object.  
+ 
+Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
@@ -2215,10 +2215,10 @@
         <returns>This method returns <see cref="T:System.DBNull" /> for null database columns.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.SqlClient.SqlDataReader.GetValue%2A> returns data using the .NET Framework types.  
-  
+<xref:System.Data.SqlClient.SqlDataReader.GetValue%2A> returns data using the .NET Framework types.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2253,22 +2253,22 @@
         <returns>The number of instances of <see cref="T:System.Object" /> in the array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For most applications, this method provides an efficient means for retrieving all columns, instead of retrieving each column individually.  
+For most applications, this method provides an efficient means for retrieving all columns, instead of retrieving each column individually.  
+ 
+You can pass an <xref:System.Object> array that contains fewer than the number of columns contained in the resulting row. Only the amount of data the <xref:System.Object> array holds is copied to the array. You can also pass an <xref:System.Object> array whose length is more than the number of columns contained in the resulting row.  
+ 
+This method returns <xref:System.DBNull> for null database columns.  
+ 
   
- You can pass an <xref:System.Object> array that contains fewer than the number of columns contained in the resulting row. Only the amount of data the <xref:System.Object> array holds is copied to the array. You can also pass an <xref:System.Object> array whose length is more than the number of columns contained in the resulting row.  
-  
- This method returns <xref:System.DBNull> for null database columns.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates using a correctly sized  array  to read all values from the current row in the supplied <xref:System.Data.SqlClient.SqlDataReader>. In addition, the sample demonstrates using a fixed-sized array that could be either smaller or larger than the number of available columns.  
-  
- [!code-csharp[DataWorks DataTableReader.GetValueObject#2](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTableReader.GetValueObject/CS/source.cs#2)]
- [!code-vb[DataWorks DataTableReader.GetValueObject#2](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTableReader.GetValueObject/VB/source.vb#2)]  
-  
+The following example demonstrates using a correctly sized  array  to read all values from the current row in the supplied <xref:System.Data.SqlClient.SqlDataReader>. In addition, the sample demonstrates using a fixed-sized array that could be either smaller or larger than the number of available columns.  
+ 
+[!code-csharp[DataWorks DataTableReader.GetValueObject#2](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTableReader.GetValueObject/CS/source.cs#2)]
+[!code-vb[DataWorks DataTableReader.GetValueObject#2](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTableReader.GetValueObject/VB/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2303,16 +2303,16 @@
         <returns>The returned object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlReader> object returned by <xref:System.Data.SqlClient.SqlDataReader.GetXmlReader%2A> does not support asynchronous operations. If you require asynchronous operations on an <xref:System.Xml.XmlReader>, cast the XML column to an NVARCHAR(MAX) on the server and use <xref:System.Data.SqlClient.SqlDataReader.GetTextReader%2A> with <xref:System.Xml.XmlReader.Create%2A>.  
-  
- <xref:System.Data.SqlClient.SqlException> exceptions raised from <xref:System.Xml.XmlReader> are thrown as <xref:System.Xml.XmlException> exceptions; check the inner exception for the <xref:System.Data.SqlClient.SqlException>.  
-  
- <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetXmlReader%2A> when <xref:System.Data.CommandBehavior> is in effect.  
-  
- For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+The <xref:System.Xml.XmlReader> object returned by <xref:System.Data.SqlClient.SqlDataReader.GetXmlReader%2A> does not support asynchronous operations. If you require asynchronous operations on an <xref:System.Xml.XmlReader>, cast the XML column to an NVARCHAR(MAX) on the server and use <xref:System.Data.SqlClient.SqlDataReader.GetTextReader%2A> with <xref:System.Xml.XmlReader.Create%2A>.  
+ 
+<xref:System.Data.SqlClient.SqlException> exceptions raised from <xref:System.Xml.XmlReader> are thrown as <xref:System.Xml.XmlException> exceptions; check the inner exception for the <xref:System.Data.SqlClient.SqlException>.  
+ 
+<xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetXmlReader%2A> when <xref:System.Data.CommandBehavior> is in effect.  
+ 
+For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
@@ -2383,10 +2383,10 @@
           <see langword="true" /> if the specified <see cref="T:System.Data.SqlClient.SqlDataReader" /> instance is closed; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is not possible to read from a <xref:System.Data.SqlClient.SqlDataReader> instance that is closed.  
-  
+It is not possible to read from a <xref:System.Data.SqlClient.SqlDataReader> instance that is closed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2414,10 +2414,10 @@
           <see langword="true" /> if the specified <see cref="T:System.Data.CommandBehavior" /> is true, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
-  
+This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2453,13 +2453,13 @@
           <see langword="true" /> if the specified column value is equivalent to <see cref="T:System.DBNull" />; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method to check for null column values before calling the typed get methods (for example, <xref:System.Data.SqlClient.SqlDataReader.GetByte%2A>, <xref:System.Data.SqlClient.SqlDataReader.GetChar%2A>, and so on) to avoid raising an error.  
-  
- [!code-csharp[SqlDataReader_IsDbNull#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/sqldatareader_isdbnull/cs/source.cs#1)]
- [!code-vb[SqlDataReader_IsDbNull#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/sqldatareader_isdbnull/vb/source.vb#1)]  
-  
+Call this method to check for null column values before calling the typed get methods (for example, <xref:System.Data.SqlClient.SqlDataReader.GetByte%2A>, <xref:System.Data.SqlClient.SqlDataReader.GetChar%2A>, and so on) to avoid raising an error.  
+ 
+[!code-csharp[SqlDataReader_IsDbNull#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/sqldatareader_isdbnull/cs/source.cs#1)]
+[!code-vb[SqlDataReader_IsDbNull#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/sqldatareader_isdbnull/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2499,10 +2499,10 @@
           <see langword="true" /> if the specified column value is equivalent to <see langword="DBNull" /> otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
@@ -2581,12 +2581,12 @@
         <value>The value of the specified column in its native format.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A case-sensitive lookup is performed first. If it fails, a second case-insensitive search is made (a case-insensitive comparison is done using the database collation). Unexpected results can occur when comparisons are affected by culture-specific casing rules. For example, in Turkish, the following example yields the wrong results because the file system in Turkish does not use linguistic casing rules for the letter 'i' in "file".  
-  
- This method is kana-width insensitive.  
-  
+A case-sensitive lookup is performed first. If it fails, a second case-insensitive search is made (a case-insensitive comparison is done using the database collation). Unexpected results can occur when comparisons are affected by culture-specific casing rules. For example, in Turkish, the following example yields the wrong results because the file system in Turkish does not use linguistic casing rules for the letter 'i' in "file".  
+ 
+This method is kana-width insensitive.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">No column with the specified name was found.</exception>
@@ -2620,12 +2620,12 @@
           <see langword="true" /> if there are more result sets; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used to process multiple results, which can be generated by executing batch Transact-SQL statements.  
-  
- By default, the data reader is positioned on the first result.  
-  
+Used to process multiple results, which can be generated by executing batch Transact-SQL statements.  
+ 
+By default, the data reader is positioned on the first result.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2661,10 +2661,10 @@
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Calling <see cref="M:System.Data.SqlClient.SqlDataReader.NextResultAsync(System.Threading.CancellationToken)" /> more than once for the same instance before task completion.  
@@ -2701,20 +2701,20 @@
           <see langword="true" /> if there are more rows; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default position of the <xref:System.Data.SqlClient.SqlDataReader> is before the first record. Therefore, you must call <xref:System.Data.SqlClient.SqlDataReader.Read%2A> to begin accessing any data.  
+The default position of the <xref:System.Data.SqlClient.SqlDataReader> is before the first record. Therefore, you must call <xref:System.Data.SqlClient.SqlDataReader.Read%2A> to begin accessing any data.  
+ 
+Only one `SqlDataReader` per associated <xref:System.Data.SqlClient.SqlConnection> may be open at a time, and any attempt to open another will fail until the first one is closed. Similarly, while the `SqlDataReader` is being used, the associated `SqlConnection` is busy serving it until you call <xref:System.Data.SqlClient.SqlDataReader.Close%2A>.  
+ 
   
- Only one `SqlDataReader` per associated <xref:System.Data.SqlClient.SqlConnection> may be open at a time, and any attempt to open another will fail until the first one is closed. Similarly, while the `SqlDataReader` is being used, the associated `SqlConnection` is busy serving it until you call <xref:System.Data.SqlClient.SqlDataReader.Close%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Data.SqlClient.SqlConnection>, a <xref:System.Data.SqlClient.SqlCommand>, and a <xref:System.Data.SqlClient.SqlDataReader>. The example reads through the data, writing it out to the console window. The code then closes the <xref:System.Data.SqlClient.SqlDataReader>. The <xref:System.Data.SqlClient.SqlConnection> is closed automatically at the end of the `using` code block.  
-  
- [!code-csharp[Classic WebData SqlDataReader.Read Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Read Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlDataReader.Read Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Read Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Data.SqlClient.SqlConnection>, a <xref:System.Data.SqlClient.SqlCommand>, and a <xref:System.Data.SqlClient.SqlDataReader>. The example reads through the data, writing it out to the console window. The code then closes the <xref:System.Data.SqlClient.SqlDataReader>. The <xref:System.Data.SqlClient.SqlConnection> is closed automatically at the end of the `using` code block.  
+ 
+[!code-csharp[Classic WebData SqlDataReader.Read Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Read Example/CS/source.cs#1)]
+[!code-vb[Classic WebData SqlDataReader.Read Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Read Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.SqlClient.SqlException">[!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] returned an error while executing the command text.</exception>
@@ -2751,12 +2751,12 @@
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `behavior` parameter of <xref:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync%2A> is set to `Default`, <xref:System.Data.SqlClient.SqlDataReader.ReadAsync%2A> reads the entire row before returning the Task.  
-  
- For more information, including code samples, about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+If the `behavior` parameter of <xref:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync%2A> is set to `Default`, <xref:System.Data.SqlClient.SqlDataReader.ReadAsync%2A> reads the entire row before returning the Task.  
+ 
+For more information, including code samples, about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Calling <see cref="M:System.Data.SqlClient.SqlDataReader.ReadAsync(System.Threading.CancellationToken)" /> more than once for the same instance before task completion.  
@@ -2791,14 +2791,14 @@
         <value>The number of rows changed, inserted, or deleted; 0 if no rows were affected or the statement failed; and -1 for SELECT statements.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> property is not set until all rows are read and you close the <xref:System.Data.SqlClient.SqlDataReader>.  
-  
- The value of this property is cumulative. For example, if two records are inserted in batch mode, the value of `RecordsAffected` will be two.  
-  
- <xref:System.Data.SqlClient.SqlDataReader.IsClosed%2A> and <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.SqlClient.SqlDataReader> is closed.  
-  
+The <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> property is not set until all rows are read and you close the <xref:System.Data.SqlClient.SqlDataReader>.  
+ 
+The value of this property is cumulative. For example, if two records are inserted in batch mode, the value of `RecordsAffected` will be two.  
+ 
+<xref:System.Data.SqlClient.SqlDataReader.IsClosed%2A> and <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.SqlClient.SqlDataReader> is closed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2829,10 +2829,10 @@
         <returns>The <see cref="T:System.Data.IDataReader" /> instance for the specified column ordinal.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlClient.SqlDataReader> instance is cast to an <xref:System.IDataRecord> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlClient.SqlDataReader> instance is cast to an <xref:System.IDataRecord> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2863,10 +2863,10 @@
         <value>The number of fields that are not hidden.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is used to determine how many fields in the <xref:System.Data.SqlClient.SqlDataReader> are visible. For example, a SELECT on a partial primary key returns the remaining parts of the key as hidden fields. The hidden fields are always appended behind the visible fields.  
-  
+This value is used to determine how many fields in the <xref:System.Data.SqlClient.SqlDataReader> are visible. For example, a SELECT on a partial primary key returns the remaining parts of the key as hidden fields. The hidden fields are always appended behind the visible fields.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -23,12 +23,12 @@
     <summary>Represents evaluated design-time metadata.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Never used to represent built-in metadata, like %(Filename). The metadata is always associated with project source code.  
-  
- The metadata is contained by either by a <xref:Microsoft.Build.Evaluation.ProjectItemDefinition> or a <xref:Microsoft.Build.Evaluation.ProjectItem>.  
-  
+Never used to represent built-in metadata, like %(Filename). The metadata is always associated with project source code.  
+ 
+The metadata is contained by either by a <xref:Microsoft.Build.Evaluation.ProjectItemDefinition> or a <xref:Microsoft.Build.Evaluation.ProjectItem>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -73,10 +73,10 @@
         <value>Returns the evaluated metadata value, which is never null.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Cannot be set directly: only the unevaluated value can be set.  
-  
+Cannot be set directly: only the unevaluated value can be set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,12 +180,12 @@
         <value>Returns the last metadata (from an item definition or item) whose value was overridden by this metadata during evaluation. Returns null if the metadata has not been overridden.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method searches for all metadata with the same name that lie above in the logical project file, and which are contained by item definitions of the same item type, and whose conditions evaluate to true. If the metadata is contained by an item, this method searches for any previous metadata with the same name and item whose condition evaluated to true. Item definitions are searched before items.  
-  
- If the project has not been reevaluated since the last modification, this value may be incorrect.  
-  
+This method searches for all metadata with the same name that lie above in the logical project file, and which are contained by item definitions of the same item type, and whose conditions evaluate to true. If the metadata is contained by an item, this method searches for any previous metadata with the same name and item whose condition evaluated to true. Item definitions are searched before items.  
+ 
+If the project has not been reevaluated since the last modification, this value may be incorrect.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,20 +260,20 @@
         <value>Returns the unevaluated metadata value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The setter method updates both the unevaluated value and the evaluated value, but does not affect anything else in the project until reevaluation.  
-  
- For example, --if a piece of metadata named "m" is modified on item of type "i", it does not affect "j" which is evaluated from "@(j->'%(m)')" until reevaluation. --if the unevaluated value of "m" is set to something that is modified by evaluation, such as "$(p)", the evaluated value will be set to "$(p)" until reevaluation.  
-  
- Setting metadata through a <xref:Microsoft.Build.Evaluation.ProjectItem> may cause the associated <xref:Microsoft.Build.Construction.ProjectItemElement> to be split, if the item element originated from an item list, wildcard, or semicolon expression. because it implies an intention to only affect that particular item.  
-  
- Setting metadata through ProjectMetadata does not cause any splitting, because it implies an intention to affect all items using the underlying <xref:Microsoft.Build.Construction.ProjectMetadataElement>.  
-  
- The containing project is marked as modified. Unevaluated values are assumed to contain escaped character sequences as needed.  
-  
- This method may not leave the project in a self consistent state.  
-  
+The setter method updates both the unevaluated value and the evaluated value, but does not affect anything else in the project until reevaluation.  
+ 
+For example, --if a piece of metadata named "m" is modified on item of type "i", it does not affect "j" which is evaluated from "@(j->'%(m)')" until reevaluation. --if the unevaluated value of "m" is set to something that is modified by evaluation, such as "$(p)", the evaluated value will be set to "$(p)" until reevaluation.  
+ 
+Setting metadata through a <xref:Microsoft.Build.Evaluation.ProjectItem> may cause the associated <xref:Microsoft.Build.Construction.ProjectItemElement> to be split, if the item element originated from an item list, wildcard, or semicolon expression. because it implies an intention to only affect that particular item.  
+ 
+Setting metadata through ProjectMetadata does not cause any splitting, because it implies an intention to affect all items using the underlying <xref:Microsoft.Build.Construction.ProjectMetadataElement>.  
+ 
+The containing project is marked as modified. Unevaluated values are assumed to contain escaped character sequences as needed.  
+ 
+This method may not leave the project in a self consistent state.  
+ 
  ]]></format>
         </remarks>
       </Docs>

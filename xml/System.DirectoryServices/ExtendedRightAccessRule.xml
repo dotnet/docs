@@ -34,10 +34,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ExtendedRightAccessRule" /> class with the specified identity reference and access control type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates an extended right access rule that applies to all extended rights.  
-  
+This constructor creates an extended right access rule that applies to all extended rights.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -63,10 +63,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ExtendedRightAccessRule" /> class with the specified identity reference, access control type, and Active Directory security inheritance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using this constructor creates an extended right access rule that applies to all extended rights.  
-  
+Using this constructor creates an extended right access rule that applies to all extended rights.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,10 +116,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ExtendedRightAccessRule" /> class with the specified identity reference, access control type, Active Directory security inheritance, and inherited object type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates an extended right access rule that applies to all extended rights.  
-  
+This constructor creates an extended right access rule that applies to all extended rights.  
+ 
  ]]></format>
         </remarks>
       </Docs>

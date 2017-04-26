@@ -18,13 +18,13 @@
     <summary>Specifies values that succinctly describe the results of a masked text parsing operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.MaskedTextBox> control delegates the actual responsibility for parsing the input characters to the <xref:System.ComponentModel.MaskedTextProvider> class. Many of the methods of <xref:System.ComponentModel.MaskedTextProvider>, in addition to returning a <xref:System.Boolean> success result, also provide an additional output parameter of type <xref:System.ComponentModel.MaskedTextResultHint>. This enumeration provides additional information about the operation of the method.  
-  
+The <xref:System.Windows.Forms.MaskedTextBox> control delegates the actual responsibility for parsing the input characters to the <xref:System.ComponentModel.MaskedTextProvider> class. Many of the methods of <xref:System.ComponentModel.MaskedTextProvider>, in addition to returning a <xref:System.Boolean> success result, also provide an additional output parameter of type <xref:System.ComponentModel.MaskedTextResultHint>. This enumeration provides additional information about the operation of the method.  
+ 
 > [!NOTE]
 >  The <xref:System.ComponentModel.MaskedTextProvider.GetOperationResultFromHint%2A> method can be used to convert a <xref:System.ComponentModel.MaskedTextResultHint> value into a <xref:System.Boolean> success value.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

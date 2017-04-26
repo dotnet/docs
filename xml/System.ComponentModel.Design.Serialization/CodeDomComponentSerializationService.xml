@@ -14,12 +14,12 @@
     <summary>Serializes a set of components into a serialization store.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> class serializes a set of components or serializable objects into a serialization store. The store can then be deserialized at a later time. The <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> class differs from other serialization schemes in that the serialization format is opaque, and it allows for partial serialization of objects. For example, you can choose to serialize only selected properties for an object.  
-  
- The base class, <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService>, replaces the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> interface from the .NET Framework version 1.0, although the latter is retained for backward compatibility. The <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> class does not implement the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> interface, but if you query for <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>, the <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader> provides a bridge implementation to ensure backward compatibility.  
-  
+The <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> class serializes a set of components or serializable objects into a serialization store. The store can then be deserialized at a later time. The <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> class differs from other serialization schemes in that the serialization format is opaque, and it allows for partial serialization of objects. For example, you can choose to serialize only selected properties for an object.  
+ 
+The base class, <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService>, replaces the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> interface from the .NET Framework version 1.0, although the latter is retained for backward compatibility. The <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> class does not implement the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> interface, but if you query for <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>, the <xref:System.ComponentModel.Design.Serialization.CodeDomDesignerLoader> provides a bridge implementation to ensure backward compatibility.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,10 +75,10 @@
         <returns>A new serialization store.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The serialization store can be passed to any of the <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.Serialize%2A> methods to build up serialization state for a group of objects.  
-  
+The serialization store can be passed to any of the <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.Serialize%2A> methods to build up serialization state for a group of objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,10 +132,10 @@
         <returns>A collection of deserialized components.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Created objects that implement the <xref:System.ComponentModel.IComponent> interface will be added to the `container` parameter.  
-  
+Created objects that implement the <xref:System.ComponentModel.IComponent> interface will be added to the `container` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -172,10 +172,10 @@
         <summary>Deserializes the given <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to the given container, optionally applying default property values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.DeserializeTo%2A> method deserializes the given store, but rather than producing new objects, the data in the store is applied to an existing set of objects that are taken from the `container` parameter. As a result, the caller can create in advance an object however it sees fit. If an object has deserialization state and the object is not named in the set of existing objects, a new object will be created. If that object also implements <xref:System.ComponentModel.IComponent>, it will be added to the given container. Objects in the container must have names and types that match objects in the serialization store in order for an existing object to be used.  
-  
+The <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.DeserializeTo%2A> method deserializes the given store, but rather than producing new objects, the data in the store is applied to an existing set of objects that are taken from the `container` parameter. As a result, the caller can create in advance an object however it sees fit. If an object has deserialization state and the object is not named in the set of existing objects, a new object will be created. If that object also implements <xref:System.ComponentModel.IComponent>, it will be added to the given container. Objects in the container must have names and types that match objects in the serialization store in order for an existing object to be used.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -205,10 +205,10 @@
         <returns>The loaded <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the returned store to deserialize objects by passing it to the various <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.Deserialize%2A> methods.  
-  
+You can use the returned store to deserialize objects by passing it to the various <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.Deserialize%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -240,10 +240,10 @@
         <summary>Serializes the given object to the given <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `store` parameter can be used to serialize more than one object by calling this method once for each object.  
-  
+The `store` parameter can be used to serialize more than one object by calling this method once for each object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -274,10 +274,10 @@
         <summary>Serializes the given object, accounting for default property values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The store can be used to serialize more than one object by calling this method more than once.  
-  
+The store can be used to serialize more than one object by calling this method more than once.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -310,10 +310,10 @@
         <summary>Serializes the given member on the given object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be invoked multiple times for the same object to build up a list of serialized members within the serialization store. The member generally has to be a property or an event.  
-  
+This method can be invoked multiple times for the same object to build up a list of serialized members within the serialization store. The member generally has to be a property or an event.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -346,10 +346,10 @@
         <summary>Serializes the given member on the given object, but also serializes the member if it contains the default property value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For some members, containing the default property value and setting the same value back to the member are different concepts. For example, if a property inherits its value from a parent object if no local value is set, setting the value back to the property may not be what is desired. The <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.SerializeMemberAbsolute%2A> method takes this into account and would clear the state of the property in this case.  
-  
+For some members, containing the default property value and setting the same value back to the member are different concepts. For example, if a property inherits its value from a parent object if no local value is set, setting the value back to the property may not be what is desired. The <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.SerializeMemberAbsolute%2A> method takes this into account and would clear the state of the property in this case.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

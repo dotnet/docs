@@ -14,14 +14,14 @@
     <summary>Provides methods for sharing and readapting add-ins.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this class to share an add-in with another host that does not have the same pipeline to that add-in (particularly, another host that does not have the same host view of the add-in).  
-  
- If you need to adapt an activated add-in from its host view to the contract, use the <xref:System.AddIn.Pipeline.ContractAdapter.ViewToContractAdapter%2A> method.  
-  
- If you have an instance of the contract and need to convert it to the host view, use the <xref:System.AddIn.Pipeline.ContractAdapter.ContractToViewAdapter%2A> method.  
-  
+You can use this class to share an add-in with another host that does not have the same pipeline to that add-in (particularly, another host that does not have the same host view of the add-in).  
+ 
+If you need to adapt an activated add-in from its host view to the contract, use the <xref:System.AddIn.Pipeline.ContractAdapter.ViewToContractAdapter%2A> method.  
+ 
+If you have an instance of the contract and need to convert it to the host view, use the <xref:System.AddIn.Pipeline.ContractAdapter.ContractToViewAdapter%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,10 +58,10 @@
         <returns>The host view of the add-in that is shared.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In this scenario, an entity has an instance of a contract and wants to adapt it to a particular view. Use this method to query the system to find and instantiate an adapter to convert into that view.  
-  
+In this scenario, an entity has an instance of a contract and wants to adapt it to a particular view. Use this method to query the system to find and instantiate an adapter to convert into that view.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -100,10 +100,10 @@
         <returns>The host view of the add-in that is shared.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In this scenario, an entity has an instance of a contract and wants to adapt it to a particular view. Use this method to query the system to find and instantiate an adapter to convert into that view.  
-  
+In this scenario, an entity has an instance of a contract and wants to adapt it to a particular view. Use this method to query the system to find and instantiate an adapter to convert into that view.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,12 +129,12 @@
         <returns>A handle to the contract.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In this scenario, the source entity (a host) has an add-in that wants to be shared by a destination entity (another host).  
-  
- Use this method to obtain the handle to the contract that was instantiated for the source entity by the add-in system.  
-  
+In this scenario, the source entity (a host) has an add-in that wants to be shared by a destination entity (another host).  
+ 
+Use this method to obtain the handle to the contract that was instantiated for the source entity by the add-in system.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

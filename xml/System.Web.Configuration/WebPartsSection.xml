@@ -14,17 +14,17 @@
     <summary>Provides programmatic access to the <see langword="webParts" /> configuration file section. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `webParts` configuration file section allows you to specify a Web Parts personalization provider, set personalization authorizations, and add custom classes that extend the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class for use by Web Parts connections.  
+The `webParts` configuration file section allows you to specify a Web Parts personalization provider, set personalization authorizations, and add custom classes that extend the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class for use by Web Parts connections.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates how to specify values declaratively for several attributes of the `webParts` section, which can also be accessed as members of the <xref:System.Web.Configuration.WebPartsSection> class.  
-  
- The following configuration file example shows how to specify values declaratively for the `webParts` section.  
-  
+This example demonstrates how to specify values declaratively for several attributes of the `webParts` section, which can also be accessed as members of the <xref:System.Web.Configuration.WebPartsSection> class.  
+ 
+The following configuration file example shows how to specify values declaratively for the `webParts` section.  
+ 
 ```  
 <system.web>  
   <webParts>  
@@ -54,12 +54,12 @@ type="System.Web.UI.WebControls.WebParts.RowToParametersTransformer" />
   </webParts>  
 </system.web>  
 ```  
-  
- The following code example demonstrates how to use the <xref:System.Web.Configuration.WebPartsSection> class.  
-  
- [!code-csharp[System.Web.Configuration.WebPartsSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.WebPartsSection/CS/usingwebpartssection.cs#1)]
- [!code-vb[System.Web.Configuration.WebPartsSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.WebPartsSection/VB/usingwebpartssection.vb#1)]  
-  
+ 
+The following code example demonstrates how to use the <xref:System.Web.Configuration.WebPartsSection> class.  
+ 
+[!code-csharp[System.Web.Configuration.WebPartsSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.WebPartsSection/CS/usingwebpartssection.cs#1)]
+[!code-vb[System.Web.Configuration.WebPartsSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.WebPartsSection/VB/usingwebpartssection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,19 +78,19 @@ type="System.Web.UI.WebControls.WebParts.RowToParametersTransformer" />
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.WebPartsSection" /> class using default settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.WebPartsSection.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.WebPartsSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
-  
- This constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system.  
-  
- The following table shows the default settings that are used for this constructor.  
-  
+The <xref:System.Web.Configuration.WebPartsSection.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.WebPartsSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
+ 
+This constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system.  
+ 
+The following table shows the default settings that are used for this constructor.  
+ 
 |Setting|Default Value|  
 |-------------|-------------------|  
 |<xref:System.Web.Configuration.WebPartsSection.Personalization%2A>|An empty <xref:System.Web.Configuration.WebPartsPersonalization> object.|  
 |<xref:System.Web.Configuration.WebPartsSection.Transformers%2A>|A <xref:System.Web.Configuration.TransformerInfoCollection> collection containing a default <xref:System.Web.Configuration.TransformerInfo> object.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,13 +160,13 @@ type="System.Web.UI.WebControls.WebParts.RowToParametersTransformer" />
         <value>A <see cref="T:System.Web.Configuration.WebPartsPersonalization" /> object that allows you to specify the personalization provider and set personalization authorizations.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.WebPartsSection.Personalization%2A> property.  
-  
- [!code-csharp[System.Web.Configuration.WebPartsSection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.WebPartsSection/CS/usingwebpartssection.cs#3)]
- [!code-vb[System.Web.Configuration.WebPartsSection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.WebPartsSection/VB/usingwebpartssection.vb#3)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.WebPartsSection.Personalization%2A> property.  
+ 
+[!code-csharp[System.Web.Configuration.WebPartsSection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.WebPartsSection/CS/usingwebpartssection.cs#3)]
+[!code-vb[System.Web.Configuration.WebPartsSection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.WebPartsSection/VB/usingwebpartssection.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,18 +211,18 @@ type="System.Web.UI.WebControls.WebParts.RowToParametersTransformer" />
         <value>A <see cref="T:System.Web.Configuration.TransformerInfoCollection" /> collection of <see cref="T:System.Web.Configuration.TransformerInfo" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.TransformerInfo> objects specify custom classes that extend the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class for use by Web Part connections for the ASP.NET applications affected by the configuration file. These transformer classes act as bridges between connected Web Parts, translating data between Web Parts with incompatible connection points.  
+<xref:System.Web.Configuration.TransformerInfo> objects specify custom classes that extend the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class for use by Web Part connections for the ASP.NET applications affected by the configuration file. These transformer classes act as bridges between connected Web Parts, translating data between Web Parts with incompatible connection points.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Configuration.WebPartsSection.Transformers%2A> property.  
-  
- [!code-csharp[System.Web.Configuration.WebPartsSection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.WebPartsSection/CS/usingwebpartssection.cs#2)]
- [!code-vb[System.Web.Configuration.WebPartsSection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.WebPartsSection/VB/usingwebpartssection.vb#2)]  
-  
+The following code example shows how to use the <xref:System.Web.Configuration.WebPartsSection.Transformers%2A> property.  
+ 
+[!code-csharp[System.Web.Configuration.WebPartsSection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.WebPartsSection/CS/usingwebpartssection.cs#2)]
+[!code-vb[System.Web.Configuration.WebPartsSection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.WebPartsSection/VB/usingwebpartssection.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

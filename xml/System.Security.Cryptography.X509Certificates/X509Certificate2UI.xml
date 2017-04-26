@@ -14,19 +14,19 @@
     <summary>Displays user interface dialogs that allow you to select and view X.509 certificates. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the methods of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI> class to present user interface dialogs that display detailed information about an X.509 certificate or allow users to select one or more certificates from a collection of X.509 certificates.  
+Use the methods of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI> class to present user interface dialogs that display detailed information about an X.509 certificate or allow users to select one or more certificates from a collection of X.509 certificates.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to display user interface dialogs to select and view X.509 certificates.  
-  
- [!code-cpp[CertSelect#1](~/samples/snippets/cpp/VS_Snippets_CLR/CertSelect/CPP/certselect.cpp#1)]
- [!code-csharp[CertSelect#1](~/samples/snippets/csharp/VS_Snippets_CLR/CertSelect/CS/certselect.cs#1)]
- [!code-vb[CertSelect#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CertSelect/VB/certselect.vb#1)]  
-  
+The following code example demonstrates how to display user interface dialogs to select and view X.509 certificates.  
+ 
+[!code-cpp[CertSelect#1](~/samples/snippets/cpp/VS_Snippets_CLR/CertSelect/CPP/certselect.cpp#1)]
+[!code-csharp[CertSelect#1](~/samples/snippets/csharp/VS_Snippets_CLR/CertSelect/CS/certselect.cs#1)]
+[!code-vb[CertSelect#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CertSelect/VB/certselect.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,19 +51,19 @@
         <summary>Displays a dialog box that contains the properties of an X.509 certificate and its associated certificate chain.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.DisplayCertificate%2A> method displays a dialog box with detailed information about the specified X.509 certificate. The dialog box includes buttons for installing or copying the certificate.  
+The <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.DisplayCertificate%2A> method displays a dialog box with detailed information about the specified X.509 certificate. The dialog box includes buttons for installing or copying the certificate.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to display user interface dialogs to select and view X.509 certificates.  
-  
- [!code-cpp[CertSelect#1](~/samples/snippets/cpp/VS_Snippets_CLR/CertSelect/CPP/certselect.cpp#1)]
- [!code-csharp[CertSelect#1](~/samples/snippets/csharp/VS_Snippets_CLR/CertSelect/CS/certselect.cs#1)]
- [!code-vb[CertSelect#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CertSelect/VB/certselect.vb#1)]  
-  
+The following code example demonstrates how to display user interface dialogs to select and view X.509 certificates.  
+ 
+[!code-cpp[CertSelect#1](~/samples/snippets/cpp/VS_Snippets_CLR/CertSelect/CPP/certselect.cpp#1)]
+[!code-csharp[CertSelect#1](~/samples/snippets/csharp/VS_Snippets_CLR/CertSelect/CS/certselect.cs#1)]
+[!code-vb[CertSelect#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CertSelect/VB/certselect.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="certificate" /> parameter is <see langword="null" />.</exception>
@@ -92,10 +92,10 @@
         <summary>Displays a dialog box that contains the properties of an X.509 certificate and its associated certificate chain using a handle to a parent window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.DisplayCertificate%2A> method displays a dialog box with detailed information about the specified X.509 certificate. This method can be used to nest dialog boxes that display certificate information. The dialog box includes buttons for installing or copying the certificate.  
-  
+The <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.DisplayCertificate%2A> method displays a dialog box with detailed information about the specified X.509 certificate. This method can be used to nest dialog boxes that display certificate information. The dialog box includes buttons for installing or copying the certificate.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="certificate" /> parameter is <see langword="null" />.</exception>
@@ -130,19 +130,19 @@
         <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> object that contains the selected certificate or certificates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection%2A> method if you require users to manually select X.509 certificates using a dialog box. If no user interaction is required, use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A?displayProperty=fullName> method.  
+Use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection%2A> method if you require users to manually select X.509 certificates using a dialog box. If no user interaction is required, use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A?displayProperty=fullName> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to display user interface dialogs to select and view X.509 certificates.  
-  
- [!code-cpp[CertSelect#1](~/samples/snippets/cpp/VS_Snippets_CLR/CertSelect/CPP/certselect.cpp#1)]
- [!code-csharp[CertSelect#1](~/samples/snippets/csharp/VS_Snippets_CLR/CertSelect/CS/certselect.cs#1)]
- [!code-vb[CertSelect#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CertSelect/VB/certselect.vb#1)]  
-  
+The following code example demonstrates how to display user interface dialogs to select and view X.509 certificates.  
+ 
+[!code-cpp[CertSelect#1](~/samples/snippets/cpp/VS_Snippets_CLR/CertSelect/CPP/certselect.cpp#1)]
+[!code-csharp[CertSelect#1](~/samples/snippets/csharp/VS_Snippets_CLR/CertSelect/CS/certselect.cs#1)]
+[!code-vb[CertSelect#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CertSelect/VB/certselect.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="selectionFlag" /> parameter is not a valid flag.</exception>
@@ -179,10 +179,10 @@
         <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> object that contains the selected certificate or certificates.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection%2A> method if you require users to manually select X.509 certificates using a dialog box. If no user interaction is required, use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A?displayProperty=fullName> method.  
-  
+Use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection%2A> method if you require users to manually select X.509 certificates using a dialog box. If no user interaction is required, use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="selectionFlag" /> parameter is not a valid flag.</exception>
@@ -200,10 +200,10 @@
         <summary>Displays a dialog box that contains the properties of an X.509 certificate and its associated certificate chain.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method displays a dialog box with detailed information about the specified X.509 certificate. The dialog box includes buttons for installing or copying the certificate.  
-  
+This method displays a dialog box with detailed information about the specified X.509 certificate. The dialog box includes buttons for installing or copying the certificate.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -217,10 +217,10 @@
         <summary>Displays a dialog box for selecting an X.509 certificate from a certificate collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method if you require users to manually select X.509 certificates using a dialog box. If no user interaction is required, use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A?displayProperty=fullName> method.  
-  
+Use this method if you require users to manually select X.509 certificates using a dialog box. If no user interaction is required, use the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

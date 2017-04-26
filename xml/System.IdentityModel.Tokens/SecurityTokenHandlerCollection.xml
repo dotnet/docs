@@ -32,10 +32,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new collection does not contain any handlers.  
-  
+The new collection does not contain any handlers.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -57,10 +57,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" /> class with the specified token handlers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not use this constructor to attempt to clone an instance of the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerCollection>class, use the **Clone** method instead.  
-  
+Do not use this constructor to attempt to clone an instance of the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerCollection>class, use the **Clone** method instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,10 +82,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" /> class with the specified configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new collection does not contain any handlers.  
-  
+The new collection does not contain any handlers.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,10 +109,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollection" /> class with the specified token handlers and configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not use this constructor to attempt to clone an instance of the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerCollection>class, use the **Clone** method instead.  
-  
+Do not use this constructor to attempt to clone an instance of the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerCollection>class, use the **Clone** method instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@
           <see langword="true" /> if the collection contains a token handler that can read the specified token; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method invokes the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadToken%28System.String%29?displayProperty=fullName> method on the token handlers (<xref:System.IdentityModel.Tokens.SecurityTokenHandler>) in the collection to determine whether the token can be read.  
-  
+The method invokes the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadToken%28System.String%29?displayProperty=fullName> method on the token handlers (<xref:System.IdentityModel.Tokens.SecurityTokenHandler>) in the collection to determine whether the token can be read.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

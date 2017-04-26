@@ -36,10 +36,10 @@
         <summary>Stores a reference to the caller of the current stack frame.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The types possible for this object include <xref:Microsoft.JScript.StackFrame>, <xref:Microsoft.JScript.JSObject>, <xref:Microsoft.JScript.ScriptFunction>, and <xref:System.RuntimeTypeHandle>.  
-  
+The types possible for this object include <xref:Microsoft.JScript.StackFrame>, <xref:Microsoft.JScript.JSObject>, <xref:Microsoft.JScript.ScriptFunction>, and <xref:System.RuntimeTypeHandle>.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

@@ -24,10 +24,10 @@
     <summary>Implements common functionality for queries against a conceptual model using both LINQ to Entities and <see cref="T:System.Data.Objects.ObjectQuery`1" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Objects.ObjectQuery> is the base class for queries against a conceptual model. <xref:System.Data.Objects.ObjectQuery> is provided to ensure that LINQ to Entities queries have the same functionality as queries executed using <xref:System.Data.Objects.ObjectQuery%601>. You must use <xref:System.Data.Objects.ObjectQuery%601> with a specified type to query a conceptual model. For more information, see [Object Queries](http://msdn.microsoft.com/en-us/0768033c-876f-471d-85d5-264884349276).  
-  
+<xref:System.Data.Objects.ObjectQuery> is the base class for queries against a conceptual model. <xref:System.Data.Objects.ObjectQuery> is provided to ensure that LINQ to Entities queries have the same functionality as queries executed using <xref:System.Data.Objects.ObjectQuery%601>. You must use <xref:System.Data.Objects.ObjectQuery%601> with a specified type to query a conceptual model. For more information, see [Object Queries](http://msdn.microsoft.com/en-us/0768033c-876f-471d-85d5-264884349276).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,20 +67,20 @@
         <value>The <see cref="T:System.Data.Objects.ObjectContext" /> associated with this <see cref="T:System.Data.Objects.ObjectQuery`1" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The context for the query includes the connection, cache, and metadata. For more information, see [Object Services Overview (Entity Framework)](http://msdn.microsoft.com/en-us/43014cf9-c9cb-4538-bfbb-197820b60038).  
+The context for the query includes the connection, cache, and metadata. For more information, see [Object Services Overview (Entity Framework)](http://msdn.microsoft.com/en-us/43014cf9-c9cb-4538-bfbb-197820b60038).  
+ 
+The connection property is mutable and must be set before a query can be executed. For more information, see [Managing Connections in Object Services (Entity Framework)](http://msdn.microsoft.com/en-us/a1df87ef-6441-417d-b264-bb58360e5d67).  
+ 
   
- The connection property is mutable and must be set before a query can be executed. For more information, see [Managing Connections in Object Services (Entity Framework)](http://msdn.microsoft.com/en-us/a1df87ef-6441-417d-b264-bb58360e5d67).  
-  
-   
-  
+ 
 ## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example gets the <xref:System.Data.Objects.ObjectContext> object associated with this <xref:System.Data.Objects.ObjectQuery%601> object.  
-  
- [!code-csharp[DP ObjectServices Concepts#ObjectQuery_Context](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#objectquery_context)]
- [!code-vb[DP ObjectServices Concepts#ObjectQuery_Context](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#objectquery_context)]  
-  
+The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example gets the <xref:System.Data.Objects.ObjectContext> object associated with this <xref:System.Data.Objects.ObjectQuery%601> object.  
+ 
+[!code-csharp[DP ObjectServices Concepts#ObjectQuery_Context](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#objectquery_context)]
+[!code-vb[DP ObjectServices Concepts#ObjectQuery_Context](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#objectquery_context)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,10 +102,10 @@
         <value>A value that indicates whether the query plan should be cached.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Query Plan Caching](~/docs/framework/data/adonet/ef/language-reference/query-plan-caching-entity-sql.md).  
-  
+For more information, see [Query Plan Caching](~/docs/framework/data/adonet/ef/language-reference/query-plan-caching-entity-sql.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,12 +131,12 @@
         <returns>An <see cref="T:System.Data.Objects.ObjectResult`1" /> that contains a collection of entity objects returned by the query.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default merge option for object queries is <xref:System.Data.Objects.MergeOption>. For more information, see [Identity Resolution, State Management, and Change Tracking](http://msdn.microsoft.com/en-us/3bd49311-0e72-4ea4-8355-38fe57036ba0).  
-  
- Call the <xref:System.Data.Objects.ObjectQuery%601.Execute%2A> method on <xref:System.Data.Objects.ObjectQuery%601> for typed object queries.  
-  
+The default merge option for object queries is <xref:System.Data.Objects.MergeOption>. For more information, see [Identity Resolution, State Management, and Change Tracking](http://msdn.microsoft.com/en-us/3bd49311-0e72-4ea4-8355-38fe57036ba0).  
+ 
+Call the <xref:System.Data.Objects.ObjectQuery%601.Execute%2A> method on <xref:System.Data.Objects.ObjectQuery%601> for typed object queries.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,13 +159,13 @@
         <returns>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> value that contains information about the result type of the query.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example creates an <xref:System.Data.Objects.ObjectQuery%601> of type <xref:System.Data.Common.DbDataRecord> and uses <xref:System.Data.Objects.ObjectQuery.GetResultType%2A> to determine whether the type returned represents a row.  
-  
- [!code-csharp[DP ObjectServices Concepts#GetResultType](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#getresulttype)]
- [!code-vb[DP ObjectServices Concepts#GetResultType](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#getresulttype)]  
-  
+This example is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example creates an <xref:System.Data.Objects.ObjectQuery%601> of type <xref:System.Data.Common.DbDataRecord> and uses <xref:System.Data.Objects.ObjectQuery.GetResultType%2A> to determine whether the type returned represents a row.  
+ 
+[!code-csharp[DP ObjectServices Concepts#GetResultType](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#getresulttype)]
+[!code-vb[DP ObjectServices Concepts#GetResultType](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#getresulttype)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,10 +187,10 @@
         <value>The query <see cref="T:System.Data.Objects.MergeOption" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no <xref:System.Data.Objects.MergeOption> is specified, the default value is <xref:System.Data.Objects.MergeOption>. For more information, see [Identity Resolution, State Management, and Change Tracking](http://msdn.microsoft.com/en-us/3bd49311-0e72-4ea4-8355-38fe57036ba0).  
-  
+If no <xref:System.Data.Objects.MergeOption> is specified, the default value is <xref:System.Data.Objects.MergeOption>. For more information, see [Identity Resolution, State Management, and Change Tracking](http://msdn.microsoft.com/en-us/3bd49311-0e72-4ea4-8355-38fe57036ba0).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,18 +212,18 @@
         <value>The parameter collection for this <see cref="T:System.Data.Objects.ObjectQuery`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the returned <xref:System.Data.Objects.ObjectParameterCollection> to specify parameters that are passed to the query. For more information, see [Query Builder Methods](http://msdn.microsoft.com/en-us/05685434-05e6-41c2-8d5e-8933b88a40b0).  
+Use the returned <xref:System.Data.Objects.ObjectParameterCollection> to specify parameters that are passed to the query. For more information, see [Query Builder Methods](http://msdn.microsoft.com/en-us/05685434-05e6-41c2-8d5e-8933b88a40b0).  
+ 
   
-   
-  
+ 
 ## Examples  
- This example is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example adds new parameters to the collection and then gets the parameter collection for this <xref:System.Data.Objects.ObjectQuery%601>. Then it iterates through the <xref:System.Data.Objects.ObjectParameterCollection> and displays the name, type, and value of each parameter in the collection.  
-  
- [!code-csharp[DP ObjectServices Concepts#ObjectQuery_Parameters](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#objectquery_parameters)]
- [!code-vb[DP ObjectServices Concepts#ObjectQuery_Parameters](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#objectquery_parameters)]  
-  
+This example is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example adds new parameters to the collection and then gets the parameter collection for this <xref:System.Data.Objects.ObjectQuery%601>. Then it iterates through the <xref:System.Data.Objects.ObjectParameterCollection> and displays the name, type, and value of each parameter in the collection.  
+ 
+[!code-csharp[DP ObjectServices Concepts#ObjectQuery_Parameters](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#objectquery_parameters)]
+[!code-vb[DP ObjectServices Concepts#ObjectQuery_Parameters](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#objectquery_parameters)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,14 +246,14 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling <xref:System.Data.Objects.ObjectQuery.System%23Collections%23IEnumerable%23GetEnumerator%2A> executes the query with the merge option that is specified by the <xref:System.Data.Objects.ObjectQuery.MergeOption%2A> property.  
-  
- The `foreach` statement of the C# language (`For Each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
+Calling <xref:System.Data.Objects.ObjectQuery.System%23Collections%23IEnumerable%23GetEnumerator%2A> executes the query with the merge option that is specified by the <xref:System.Data.Objects.ObjectQuery.MergeOption%2A> property.  
+ 
+The `foreach` statement of the C# language (`For Each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+ 
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,12 +275,12 @@
         <value>A Boolean value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.ObjectQuery%601> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
-  
- This property always returns `false` because the collection returned by the query contains objects and not collections.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.ObjectQuery%601> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
+ 
+This property always returns `false` because the collection returned by the query contains objects and not collections.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -303,12 +303,12 @@
         <returns>An <see cref="T:System.Collections.IList" /> of entity objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.ObjectQuery%601> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
-  
- This method enables data binding to the result of the query. It is called by the control bound to the collection. For more information, see [Binding Objects to Controls](http://msdn.microsoft.com/en-us/2fd34855-929b-4303-a91e-4bb69d958f2b).  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.ObjectQuery%601> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
+ 
+This method enables data binding to the result of the query. It is called by the control bound to the collection. For more information, see [Binding Objects to Controls](http://msdn.microsoft.com/en-us/2fd34855-929b-4303-a91e-4bb69d958f2b).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -330,10 +330,10 @@
         <value>A <see cref="T:System.Type" /> that is the result element type for this query instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.ObjectQuery%601> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.ObjectQuery%601> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -355,12 +355,12 @@
         <value>The LINQ <see cref="T:System.Linq.Expressions.Expression" /> that describes this query.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For queries built by using LINQ builder patterns, this returns a full LINQ expression tree; otherwise, it returns a constant expression that wraps this query. Note that the default expression is not cached. This allows the framework to differentiate between LINQ and Entity SQL queries.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.ObjectQuery%601> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
-  
+For queries built by using LINQ builder patterns, this returns a full LINQ expression tree; otherwise, it returns a constant expression that wraps this query. Note that the default expression is not cached. This allows the framework to differentiate between LINQ and Entity SQL queries.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.ObjectQuery%601> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,10 +382,10 @@
         <value>The <see cref="T:System.Linq.IQueryProvider" /> associated with this query instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.ObjectQuery%601> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.ObjectQuery%601> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -413,13 +413,13 @@
         <returns>A <see langword="string" /> that represents the commands that the query executes against the data source.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832).  
-  
- [!code-csharp[DP ObjectServices Concepts#ObjectQuery_ToTraceString](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#objectquery_totracestring)]
- [!code-vb[DP ObjectServices Concepts#ObjectQuery_ToTraceString](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#objectquery_totracestring)]  
-  
+The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832).  
+ 
+[!code-csharp[DP ObjectServices Concepts#ObjectQuery_ToTraceString](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#objectquery_totracestring)]
+[!code-vb[DP ObjectServices Concepts#ObjectQuery_ToTraceString](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#objectquery_totracestring)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

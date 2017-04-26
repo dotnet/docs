@@ -31,32 +31,32 @@
     <summary>Specifies the default value for a property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can create a <xref:System.ComponentModel.DefaultValueAttribute> with any value. A member's default value is typically its initial value. A visual designer can use the default value to reset the member's value. Code generators can use the default values also to determine whether code should be generated for the member.  
-  
+You can create a <xref:System.ComponentModel.DefaultValueAttribute> with any value. A member's default value is typically its initial value. A visual designer can use the default value to reset the member's value. Code generators can use the default values also to determine whether code should be generated for the member.  
+ 
 > [!NOTE]
 >  A <xref:System.ComponentModel.DefaultValueAttribute> will not cause a member to be automatically initialized with the attribute's value. You must set the initial value in your code.  
+ 
+For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
   
- For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
-   
-  
+ 
 ## Examples  
- The following example sets the default value of `MyProperty` to `false`.  
-  
- [!code-cpp[Classic DefaultValueAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DefaultValueAttribute Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DefaultValueAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DefaultValueAttribute Example/CS/source.cs#1)]
- [!code-vb[Classic DefaultValueAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DefaultValueAttribute Example/VB/source.vb#1)]  
-  
- The next example checks the default value of `MyProperty`. First the code gets a <xref:System.ComponentModel.PropertyDescriptorCollection> with all the properties for the object. Next it indexes into the <xref:System.ComponentModel.PropertyDescriptorCollection> to get `MyProperty`. Then it returns the attributes for this property and saves them in the attributes variable.  
-  
- The example then prints the default value by retrieving the <xref:System.ComponentModel.DefaultValueAttribute> from the <xref:System.ComponentModel.AttributeCollection>, and writing its name to the console screen.  
-  
- [!code-cpp[Classic DefaultValueAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DefaultValueAttribute Example/CPP/source.cpp#2)]
- [!code-csharp[Classic DefaultValueAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DefaultValueAttribute Example/CS/source.cs#2)]
- [!code-vb[Classic DefaultValueAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DefaultValueAttribute Example/VB/source.vb#2)]  
-  
+The following example sets the default value of `MyProperty` to `false`.  
+ 
+[!code-cpp[Classic DefaultValueAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DefaultValueAttribute Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DefaultValueAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DefaultValueAttribute Example/CS/source.cs#1)]
+[!code-vb[Classic DefaultValueAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DefaultValueAttribute Example/VB/source.vb#1)]  
+ 
+The next example checks the default value of `MyProperty`. First the code gets a <xref:System.ComponentModel.PropertyDescriptorCollection> with all the properties for the object. Next it indexes into the <xref:System.ComponentModel.PropertyDescriptorCollection> to get `MyProperty`. Then it returns the attributes for this property and saves them in the attributes variable.  
+ 
+The example then prints the default value by retrieving the <xref:System.ComponentModel.DefaultValueAttribute> from the <xref:System.ComponentModel.AttributeCollection>, and writing its name to the console screen.  
+ 
+[!code-cpp[Classic DefaultValueAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DefaultValueAttribute Example/CPP/source.cpp#2)]
+[!code-csharp[Classic DefaultValueAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DefaultValueAttribute Example/CS/source.cs#2)]
+[!code-vb[Classic DefaultValueAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DefaultValueAttribute Example/VB/source.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

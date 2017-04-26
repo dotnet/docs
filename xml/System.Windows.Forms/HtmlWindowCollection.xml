@@ -18,24 +18,24 @@
     <summary>Represents the windows contained within another <see cref="T:System.Windows.Forms.HtmlWindow" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An HTML document may consist of a `FRAMESET` that defines multiple fixed `FRAME` objects, each of which contains its own HTML page. Alternatively, a document may contain a number of `IFRAME` objects, which can position documents arbitrarily inside of other documents. `FRAME` objects and `IFRAME` objects are represented at their top-most level by an <xref:System.Windows.Forms.HtmlWindowCollection>, which contains elements of type <xref:System.Windows.Forms.HtmlWindow>.  
+An HTML document may consist of a `FRAMESET` that defines multiple fixed `FRAME` objects, each of which contains its own HTML page. Alternatively, a document may contain a number of `IFRAME` objects, which can position documents arbitrarily inside of other documents. `FRAME` objects and `IFRAME` objects are represented at their top-most level by an <xref:System.Windows.Forms.HtmlWindowCollection>, which contains elements of type <xref:System.Windows.Forms.HtmlWindow>.  
+ 
+<xref:System.Windows.Forms.HtmlWindowCollection> supports the <xref:System.Collections.IEnumerator> interface so that it can be used in loop constructs. It also defines an Item method, which allows access to the elements of the collection either via a method call or using standard array syntax.  
+ 
+If you create new windows with the <xref:System.Windows.Forms.HtmlWindow.Open%2A> or <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> methods, and the documents hosted by these windows contain `FRAME` or `IFRAME` elements, that these elements will appear in the <xref:System.Windows.Forms.HtmlWindowCollection> of the parent page.  
+ 
+For more information on frames, see the documentation for the <xref:System.Windows.Forms.HtmlWindow.Frames%2A> property.  
+ 
   
- <xref:System.Windows.Forms.HtmlWindowCollection> supports the <xref:System.Collections.IEnumerator> interface so that it can be used in loop constructs. It also defines an Item method, which allows access to the elements of the collection either via a method call or using standard array syntax.  
-  
- If you create new windows with the <xref:System.Windows.Forms.HtmlWindow.Open%2A> or <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> methods, and the documents hosted by these windows contain `FRAME` or `IFRAME` elements, that these elements will appear in the <xref:System.Windows.Forms.HtmlWindowCollection> of the parent page.  
-  
- For more information on frames, see the documentation for the <xref:System.Windows.Forms.HtmlWindow.Frames%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following code example inspects each document within a page containing frames and creates a table of all of the outgoing hyperlinks from each page for future inspection.  
-  
- [!code-csharp[System.Windows.Forms.HtmlWindow#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#2)]
- [!code-vb[System.Windows.Forms.HtmlWindow#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#2)]  
-  
+The following code example inspects each document within a page containing frames and creates a table of all of the outgoing hyperlinks from each page for future inspection.  
+ 
+[!code-csharp[System.Windows.Forms.HtmlWindow#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/CS/Form1.cs#2)]
+[!code-vb[System.Windows.Forms.HtmlWindow#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlWindow/VB/Form1.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -98,12 +98,12 @@
         <value>The <see cref="T:System.Windows.Forms.HtmlWindow" /> corresponding to the requested frame.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.HtmlWindowCollection> is a zero-based collection. If there are *N* elements in the collection, valid arguments to <xref:System.Windows.Forms.HtmlWindowCollection.Item%2A> are the integers from 0 to *N*-1.  
-  
- Windows are not laid out in <xref:System.Windows.Forms.HtmlWindowCollection> in any predetermined order.  
-  
+<xref:System.Windows.Forms.HtmlWindowCollection> is a zero-based collection. If there are *N* elements in the collection, valid arguments to <xref:System.Windows.Forms.HtmlWindowCollection.Item%2A> are the integers from 0 to *N*-1.  
+ 
+Windows are not laid out in <xref:System.Windows.Forms.HtmlWindowCollection> in any predetermined order.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -131,10 +131,10 @@
         <value>The <see cref="T:System.Windows.Forms.HtmlWindow" /> element corresponding to the supplied name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.HtmlWindowCollection.Item%2A> will return a single element whose <xref:System.Windows.Forms.HtmlElement.Name%2A> property corresponds to `elementId`. If the document contains multiple elements with the same name, <xref:System.Windows.Forms.HtmlWindowCollection.Item%2A> will return only the first one in the collection. If you need to retrieve all elements with a <xref:System.Windows.Forms.HtmlElement.Name%2A> property of `windowId`, use the <xref:System.Windows.Forms.HtmlElementCollection.GetElementsByName%2A> method instead.  
-  
+<xref:System.Windows.Forms.HtmlWindowCollection.Item%2A> will return a single element whose <xref:System.Windows.Forms.HtmlElement.Name%2A> property corresponds to `elementId`. If the document contains multiple elements with the same name, <xref:System.Windows.Forms.HtmlWindowCollection.Item%2A> will return only the first one in the collection. If you need to retrieve all elements with a <xref:System.Windows.Forms.HtmlElement.Name%2A> property of `windowId`, use the <xref:System.Windows.Forms.HtmlElementCollection.GetElementsByName%2A> method instead.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -210,10 +210,10 @@
         <summary>Retrieves an item either by its <see langword="name" /> property or its position in the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.HtmlWindowCollection.Item%2A> enables access to the elements of the collection using array syntax.  
-  
+<xref:System.Windows.Forms.HtmlWindowCollection.Item%2A> enables access to the elements of the collection using array syntax.  
+ 
  ]]></format>
         </remarks>
       </Docs>

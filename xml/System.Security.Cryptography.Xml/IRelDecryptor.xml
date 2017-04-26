@@ -11,19 +11,19 @@
     <summary>Defines methods that decrypt an XrML <see langword="&lt;encryptedGrant&gt;" /> element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Security.Cryptography.Xml.IRelDecryptor> interface with the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class to decrypt an XrML `<encryptedGrant>` element.  
+Use the <xref:System.Security.Cryptography.Xml.IRelDecryptor> interface with the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class to decrypt an XrML `<encryptedGrant>` element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to validate an XML digital signature using the <xref:System.Security.Cryptography.Xml.IRelDecryptor> interface and the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class.  
-  
- [!code-cpp[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/cpp/sample.cpp#2)]
- [!code-csharp[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/CS/sample.cs#2)]
- [!code-vb[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/VB/sample.vb#2)]  
-  
+The following code example shows how to validate an XML digital signature using the <xref:System.Security.Cryptography.Xml.IRelDecryptor> interface and the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class.  
+ 
+[!code-cpp[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/cpp/sample.cpp#2)]
+[!code-csharp[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/CS/sample.cs#2)]
+[!code-vb[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/VB/sample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,10 +53,10 @@
         <returns>A <see cref="T:System.IO.Stream" /> object that contains a decrypted <see langword="&lt;encryptedGrant&gt;" /> element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.IRelDecryptor.Decrypt%2A> method decrypts an XrML `<encryptedGrant>` element and returns a plaintext stream.  
-  
+The <xref:System.Security.Cryptography.Xml.IRelDecryptor.Decrypt%2A> method decrypts an XrML `<encryptedGrant>` element and returns a plaintext stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>

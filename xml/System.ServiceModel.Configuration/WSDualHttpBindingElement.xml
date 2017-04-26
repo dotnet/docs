@@ -14,12 +14,12 @@
     <summary>Represents the configuration element for a secure and interoperable binding that is suitable for duplex service contracts or communication through SOAP intermediaries.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The wsDualHttpBinding is a secure, reliable, interoperable binding suitable for duplex service contracts. By default, it generates a run-time stack with WS-ReliableMessaging for reliability, WS-Security for message security and authentication, HTTP for message delivery, and a Text/XML message encoding.  
-  
- This binding requires that the client has a public URI. It can be used to communicate reliably through one or more SOAP intermediaries.  
-  
+The wsDualHttpBinding is a secure, reliable, interoperable binding suitable for duplex service contracts. By default, it generates a run-time stack with WS-ReliableMessaging for reliability, WS-Security for message security and authentication, HTTP for message delivery, and a Text/XML message encoding.  
+ 
+This binding requires that the client has a public URI. It can be used to communicate reliably through one or more SOAP intermediaries.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -121,10 +121,10 @@
         <value>A URI that specifies the base address that the client listens to for response messages from the service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property has a value, this address (plus a GUID for each channel) is used for listening. Otherwise, the client base address is generated in a transport-specific manner.  
-  
+If this property has a value, this address (plus a GUID for each channel) is used for listening. Otherwise, the client base address is generated in a transport-specific manner.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,12 +224,12 @@
         <value>The maximum size, in bytes, for a message that is processed by the binding. The default value is 65,536 bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The size of the messages that can be received on the wire by services using the <xref:System.ServiceModel.WSDualHttpBinding> class is bounded by the amount of memory allocated for each message. This bound on message size is intended to limit exposure to DoS-style attacks.  
-  
- Note that the settings for <xref:System.ServiceModel.Configuration.WSDualHttpBindingElement.MaxBufferPoolSize%2A> and <xref:System.ServiceModel.Configuration.WSDualHttpBindingElement.MaxReceivedMessageSize%2A>, are local behavioral settings. This means that they are not transmitted to other endpoints in metadata. If you generate a proxy to a service with a maximum message size of 2GB from metadata, the proxy still has a default value 64K. This leaves control of the appropriate bounds for message and message buffer size in the scope of local administrators.  
-  
+The size of the messages that can be received on the wire by services using the <xref:System.ServiceModel.WSDualHttpBinding> class is bounded by the amount of memory allocated for each message. This bound on message size is intended to limit exposure to DoS-style attacks.  
+ 
+Note that the settings for <xref:System.ServiceModel.Configuration.WSDualHttpBindingElement.MaxBufferPoolSize%2A> and <xref:System.ServiceModel.Configuration.WSDualHttpBindingElement.MaxReceivedMessageSize%2A>, are local behavioral settings. This means that they are not transmitted to other endpoints in metadata. If you generate a proxy to a service with a maximum message size of 2GB from metadata, the proxy still has a default value 64K. This leaves control of the appropriate bounds for message and message buffer size in the scope of local administrators.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -318,10 +318,10 @@
         <value>A URI that specifies the address of the HTTP proxy.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.ServiceModel.WSDualHttpBinding.UseDefaultWebProxy%2A> property is set to `true`, the value of this property is ignored.  
-  
+If the <xref:System.ServiceModel.WSDualHttpBinding.UseDefaultWebProxy%2A> property is set to `true`, the value of this property is ignored.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,10 +348,10 @@
         <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that specifies the complexity constraints.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The complexity constraints include items such as a maximum element depth, or a maximum length for string content within the message. The constraints protect against a type of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources.  
-  
+The complexity constraints include items such as a maximum element depth, or a maximum length for string content within the message. The constraints protect against a type of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -378,10 +378,10 @@
         <value>An <see cref="T:System.ServiceModel.Configuration.ReliableSessionElement" /> that specifies whether reliable sessions are enabled for the endpoint configured with this binding.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A reliable session is required for services configured with wsDualHttpBinding binding.  
-  
+A reliable session is required for services configured with wsDualHttpBinding binding.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -458,10 +458,10 @@
           <see langword="true" /> if the binding supports flowing WS-Transactions; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value specifies that clients do not flow transactions and services reject messages with a flowed transaction message header.  
-  
+The default value specifies that clients do not flow transactions and services reject messages with a flowed transaction message header.  
+ 
  ]]></format>
         </remarks>
       </Docs>

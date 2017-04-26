@@ -26,19 +26,19 @@
     <summary>Represents an extension added to a <see cref="T:System.Web.Services.Description.Binding" /> within an XML Web service. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class specifies that the data transmission will use the SOAP protocol version 1.1.  
+This class specifies that the data transmission will use the SOAP protocol version 1.1.  
+ 
+For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+ 
   
- For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
-  
-   
-  
+ 
 ## Examples  
- [!code-cpp[SoapOperationBinding#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapOperationBinding/CPP/soapoperationbinding.cpp#1)]
- [!code-csharp[SoapOperationBinding#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapOperationBinding/CS/soapoperationbinding.cs#1)]
- [!code-vb[SoapOperationBinding#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapOperationBinding/VB/soapoperationbinding.vb#1)]  
-  
+[!code-cpp[SoapOperationBinding#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapOperationBinding/CPP/soapoperationbinding.cpp#1)]
+[!code-csharp[SoapOperationBinding#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapOperationBinding/CS/soapoperationbinding.cs#1)]
+[!code-vb[SoapOperationBinding#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapOperationBinding/VB/soapoperationbinding.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,17 +76,17 @@
         <summary>Gets the URI for the standard protocol specifying HTTP transmission of SOAP data. This field is constant.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The field value is "http://schemas.xmlsoap.org/soap/http/".  
+The field value is "http://schemas.xmlsoap.org/soap/http/".  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[SoapOperationBinding#5](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapOperationBinding/CPP/soapoperationbinding.cpp#5)]
- [!code-csharp[SoapOperationBinding#5](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapOperationBinding/CS/soapoperationbinding.cs#5)]
- [!code-vb[SoapOperationBinding#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapOperationBinding/VB/soapoperationbinding.vb#5)]  
-  
+[!code-cpp[SoapOperationBinding#5](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapOperationBinding/CPP/soapoperationbinding.cpp#5)]
+[!code-csharp[SoapOperationBinding#5](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapOperationBinding/CS/soapoperationbinding.cs#5)]
+[!code-vb[SoapOperationBinding#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapOperationBinding/VB/soapoperationbinding.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,17 +108,17 @@
         <summary>Gets the URI for the XML namespace of the <see cref="T:System.Web.Services.Description.SoapBinding" /> class. This field is constant.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The field value is "http://schemas.xmlsoap.org/wsdl/soap/".  
+The field value is "http://schemas.xmlsoap.org/wsdl/soap/".  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[SoapBodyBinding_Parts#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapBodyBinding_Parts/CPP/soapbodybinding_parts.cpp#1)]
- [!code-csharp[SoapBodyBinding_Parts#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapBodyBinding_Parts/CS/soapbodybinding_parts.cs#1)]
- [!code-vb[SoapBodyBinding_Parts#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapBodyBinding_Parts/VB/soapbodybinding_parts.vb#1)]  
-  
+[!code-cpp[SoapBodyBinding_Parts#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapBodyBinding_Parts/CPP/soapbodybinding_parts.cpp#1)]
+[!code-csharp[SoapBodyBinding_Parts#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapBodyBinding_Parts/CS/soapbodybinding_parts.cs#1)]
+[!code-vb[SoapBodyBinding_Parts#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapBodyBinding_Parts/VB/soapbodybinding_parts.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,12 +168,12 @@
         <value>One of the <see cref="T:System.Web.Services.Description.SoapBindingStyle" /> values. The default is <see langword="Document" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[SoapBinding_SoapOperationBinding#3](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapBinding_SoapOperationBinding/CPP/soapprotocol.cpp#3)]
- [!code-csharp[SoapBinding_SoapOperationBinding#3](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapBinding_SoapOperationBinding/CS/soapprotocol.cs#3)]
- [!code-vb[SoapBinding_SoapOperationBinding#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapBinding_SoapOperationBinding/VB/soapprotocol.vb#3)]  
-  
+[!code-cpp[SoapBinding_SoapOperationBinding#3](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapBinding_SoapOperationBinding/CPP/soapprotocol.cpp#3)]
+[!code-csharp[SoapBinding_SoapOperationBinding#3](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapBinding_SoapOperationBinding/CS/soapprotocol.cs#3)]
+[!code-vb[SoapBinding_SoapOperationBinding#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapBinding_SoapOperationBinding/VB/soapprotocol.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,15 +201,15 @@
         <value>A string value representing the URI for the specification for data transmission by means of SOAP. The default is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This required property value will generally be the same as that of the <xref:System.Web.Services.Description.SoapBinding.HttpTransport> field. However, this property value can be any URI for data-transmission specifications, for example, SMTP or FTP.  
+This required property value will generally be the same as that of the <xref:System.Web.Services.Description.SoapBinding.HttpTransport> field. However, this property value can be any URI for data-transmission specifications, for example, SMTP or FTP.  
+ 
   
-   
-  
+ 
 ## Examples  
- SoapBinding_SoapOperationBinding#2  
-  
+SoapBinding_SoapOperationBinding#2  
+ 
  ]]></format>
         </remarks>
       </Docs>

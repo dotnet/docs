@@ -14,10 +14,10 @@
     <summary>The <see cref="T:System.Web.Configuration.BrowserCapabilitiesFactoryBase" /> class is the base class from which <see cref="T:System.Web.Configuration.BrowserCapabilitiesFactory" /> is derived. It is used internally at run time by the configuration system to create request-specific instances of the <see cref="T:System.Web.Configuration.HttpCapabilitiesBase" /> class, publicly accessed through the ASP.NET intrinsic <see langword="Request.Browser" /> property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You define browser capabilities in a .browser file. You can use the default hierarchy in the .browser file or create a custom hierarchy to define the browser capabilities.  
-  
+You define browser capabilities in a .browser file. You can use the default hierarchy in the .browser file or create a custom hierarchy to define the browser capabilities.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -109,10 +109,10 @@
         <summary>Used internally at run time to configure custom hierarchies of browser capabilities.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You define browser capabilities in a .browser file. You can use the default hierarchy in the .browser file or create a custom hierarchy to define the browser capabilities. The <xref:System.Web.Configuration.BrowserCapabilitiesFactoryBase.ConfigureCustomCapabilities%2A> method processes a custom hierarchy. The custom hierarchy must contain a `parentID` value in the `browser` element.  
-  
+You define browser capabilities in a .browser file. You can use the default hierarchy in the .browser file or create a custom hierarchy to define the browser capabilities. The <xref:System.Web.Configuration.BrowserCapabilitiesFactoryBase.ConfigureCustomCapabilities%2A> method processes a custom hierarchy. The custom hierarchy must contain a `parentID` value in the `browser` element.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

@@ -18,21 +18,21 @@
     <summary>Represents a collection of configuration-element properties.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ConfigurationPropertyCollection> class represents the collection of the <xref:System.Configuration.ConfigurationProperty> objects that can be attributes or <xref:System.Configuration.ConfigurationElement> objects of a configuration element.  
+The <xref:System.Configuration.ConfigurationPropertyCollection> class represents the collection of the <xref:System.Configuration.ConfigurationProperty> objects that can be attributes or <xref:System.Configuration.ConfigurationElement> objects of a configuration element.  
+ 
+The <xref:System.Configuration.ConfigurationProperty> class represents an individual configuration setting. It allows you to get or set the name, type, and default value for a particular configuration entity (attribute or element). Additional options allow you to specify whether the attribute is required, is an element key, or represents a default element collection.  
+ 
   
- The <xref:System.Configuration.ConfigurationProperty> class represents an individual configuration setting. It allows you to get or set the name, type, and default value for a particular configuration entity (attribute or element). Additional options allow you to specify whether the attribute is required, is an element key, or represents a default element collection.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows one possible use of the <xref:System.Configuration.ConfigurationPropertyCollection>. Refer to the example of the related type <xref:System.Configuration.ConfigurationProperty>.  
-  
-  
-  
- The following is an excerpt from the configuration used by the above example.  
-  
+The following example shows one possible use of the <xref:System.Configuration.ConfigurationPropertyCollection>. Refer to the example of the related type <xref:System.Configuration.ConfigurationProperty>.  
+ 
+ 
+ 
+The following is an excerpt from the configuration used by the above example.  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
@@ -43,7 +43,7 @@
       maxIdleTime="00:05:00" />  
 </configuration>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,17 +62,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.Configuration.ConfigurationPropertyCollection.%23ctor%2A> to create a new collection that will contain the <xref:System.Configuration.ConfigurationProperty> objects as they apply to your configuration element.  
+You use the <xref:System.Configuration.ConfigurationPropertyCollection.%23ctor%2A> to create a new collection that will contain the <xref:System.Configuration.ConfigurationProperty> objects as they apply to your configuration element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.%23ctor%2A> constructor.  
-  
-  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.%23ctor%2A> constructor.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,17 +97,17 @@
         <summary>Adds a configuration property to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the <xref:System.Configuration.ConfigurationPropertyCollection.Add%2A> method will add the specified <xref:System.Configuration.ConfigurationProperty> object, if it is not already contained within the collection.  
+By default, the <xref:System.Configuration.ConfigurationPropertyCollection.Add%2A> method will add the specified <xref:System.Configuration.ConfigurationProperty> object, if it is not already contained within the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.Add%2A> method.  
-  
-  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.Add%2A> method.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,16 +129,16 @@
         <summary>Removes all configuration property objects from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.Clear%2A> method.  
-  
-  
-  
- The following example shows how to call the above method and save the changes to the configuration file.  
-  
-  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.Clear%2A> method.  
+ 
+ 
+ 
+The following example shows how to call the above method and save the changes to the configuration file.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,12 +165,12 @@
           <see langword="true" /> if the specified <see cref="T:System.Configuration.ConfigurationProperty" /> is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.Contains%2A> method.  
-  
-  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.Contains%2A> method.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,12 +197,12 @@
         <summary>Copies this ConfigurationPropertyCollection to an array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.CopyTo%2A> method.  
-  
-  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.CopyTo%2A> method.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -243,16 +243,16 @@
         <returns>The <see cref="T:System.Collections.IEnumerator" /> object as it applies to the collection</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.GetEnumerator%2A> method.  
-  
-  
-  
- The following example shows how to call the above method to enumerate the <xref:System.Configuration.ConfigurationProperty> objects in the collection.  
-  
-  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.GetEnumerator%2A> method.  
+ 
+ 
+ 
+The following example shows how to call the above method to enumerate the <xref:System.Configuration.ConfigurationProperty> objects in the collection.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,12 +275,12 @@
           <see langword="true" /> if access to the <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the <xref:System.Configuration.ConfigurationPropertyCollection.IsSynchronized%2A> property value.  
-  
-  
-  
+The following example shows how to get the <xref:System.Configuration.ConfigurationPropertyCollection.IsSynchronized%2A> property value.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -306,12 +306,12 @@
         <value>The <see cref="T:System.Configuration.ConfigurationProperty" /> with the specified <paramref name="name" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.Count%2A> property.  
-  
-  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.Count%2A> property.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,21 +338,21 @@
           <see langword="true" /> if the specified <see cref="T:System.Configuration.ConfigurationProperty" /> was removed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A return value of `false` indicates that the specified <xref:System.Configuration.ConfigurationProperty> object was not contained within the collection.  
+A return value of `false` indicates that the specified <xref:System.Configuration.ConfigurationProperty> object was not contained within the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.Remove%2A> method.  
-  
-  
-  
- The following example shows how to call the above method and save the changes to the configuration file.  
-  
-  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationPropertyCollection.Remove%2A> method.  
+ 
+ 
+ 
+The following example shows how to call the above method and save the changes to the configuration file.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -374,12 +374,12 @@
         <value>The object to synchronize access to the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the <xref:System.Configuration.ConfigurationPropertyCollection.SyncRoot%2A> property value.  
-  
-  
-  
+The following example shows how to get the <xref:System.Configuration.ConfigurationPropertyCollection.SyncRoot%2A> property value.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>

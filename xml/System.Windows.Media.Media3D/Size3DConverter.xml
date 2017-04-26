@@ -14,12 +14,12 @@
     <summary>Converts instances of other types to and from a <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [C#]  
-  
- The following sample uses a <xref:System.Windows.Media.Media3D.Size3DConverter> structure to convert a string into a <xref:System.Windows.Media.Media3D.Size3D> structure.  
-  
+[C#]  
+ 
+The following sample uses a <xref:System.Windows.Media.Media3D.Size3DConverter> structure to convert a string into a <xref:System.Windows.Media.Media3D.Size3D> structure.  
+ 
 ```csharp  
 ...  
   
@@ -35,7 +35,7 @@ size3DResult = (Size3D)s3DConverter.ConvertFromString(string3);
   
 ...  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

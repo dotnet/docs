@@ -34,10 +34,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.EntityKeyMember" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is used during entity key serialization.  
-  
+This constructor is used during entity key serialization.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <returns>A string representation of the entity key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.EntityKeyMember.ToString%2A> method returns a string in the format "[*keyName*, *keyValue*]".  
-  
+The <xref:System.Data.EntityKeyMember.ToString%2A> method returns a string in the format "[*keyName*, *keyValue*]".  
+ 
  ]]></format>
         </remarks>
       </Docs>

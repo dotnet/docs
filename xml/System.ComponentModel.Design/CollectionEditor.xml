@@ -14,14 +14,14 @@
     <summary>Provides a user interface that can edit most types of collections at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses an <xref:System.ComponentModel.EditorAttribute> to associate the <xref:System.ComponentModel.Design.CollectionEditor> with a property.  
-  
- [!code-cpp[EditorAttributesExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/EditorAttributesExample/CPP/class1.cpp#1)]
- [!code-csharp[EditorAttributesExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/EditorAttributesExample/CS/class1.cs#1)]
- [!code-vb[EditorAttributesExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/EditorAttributesExample/VB/class1.vb#1)]  
-  
+The following code example uses an <xref:System.ComponentModel.EditorAttribute> to associate the <xref:System.ComponentModel.Design.CollectionEditor> with a property.  
+ 
+[!code-cpp[EditorAttributesExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/EditorAttributesExample/CPP/class1.cpp#1)]
+[!code-csharp[EditorAttributesExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/EditorAttributesExample/CS/class1.cs#1)]
+[!code-vb[EditorAttributesExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/EditorAttributesExample/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -90,12 +90,12 @@
           <see langword="true" /> if it is permissible to remove this value from the collection; otherwise, <see langword="false" />. The default implementation always returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When implemented in a derived class, this method indicates whether the specified value can be removed from the collection. By default, this method always returns `true`.  
-  
- This method is called when the user tries to remove an item that is an original member of the collection. This method is not called when removing items that were added in the current editing session because they are not yet part of the collection.  
-  
+When implemented in a derived class, this method indicates whether the specified value can be removed from the collection. By default, this method always returns `true`.  
+ 
+This method is called when the user tries to remove an item that is an original member of the collection. This method is not called when removing items that were added in the current editing session because they are not yet part of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
           <see langword="true" /> if it multiple collection members can be selected at the same time; otherwise, <see langword="false" />. By default, this returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method indicates whether multiple collection members can be selected within the collection editor dialog box.  
-  
+This method indicates whether multiple collection members can be selected within the collection editor dialog box.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <value>The data type of the collection items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the data type of the items of the collection.  
-  
+This property represents the data type of the items of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,10 +169,10 @@
         <value>The data type of the collection object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the data type of the collection object.  
-  
+This property represents the data type of the collection object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,14 +235,14 @@
         <returns>The data type of the items in the collection, or an <see cref="T:System.Object" /> if no <see langword="Item" /> property can be located on the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can retrieve the data type of the items of the collection from the <xref:System.ComponentModel.Design.CollectionEditor.CollectionItemType%2A> property, which is faster than this method.  
-  
- This method does not need to be called by users, except in derived classes where this method has been overridden and implemented.  
-  
- The default implementation of this method returns the data type of the `Item` property of the collection, if it exists.  
-  
+You can retrieve the data type of the items of the collection from the <xref:System.ComponentModel.Design.CollectionEditor.CollectionItemType%2A> property, which is faster than this method.  
+ 
+This method does not need to be called by users, except in derived classes where this method has been overridden and implemented.  
+ 
+The default implementation of this method returns the data type of the `Item` property of the collection, if it exists.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -293,14 +293,14 @@
         <returns>An array of data types that this collection can contain.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can retrieve the data type of the items of the collection from the <xref:System.ComponentModel.Design.CollectionEditor.NewItemTypes%2A> property, which is faster than this method.  
-  
- This method does not need to be called by users, except in derived classes where this method has been overridden and implemented.  
-  
- The default implementation of this method returns the type of all the collection items in a Type array.  
-  
+You can retrieve the data type of the items of the collection from the <xref:System.ComponentModel.Design.CollectionEditor.NewItemTypes%2A> property, which is faster than this method.  
+ 
+This method does not need to be called by users, except in derived classes where this method has been overridden and implemented.  
+ 
+The default implementation of this method returns the type of all the collection items in a Type array.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -483,10 +483,10 @@
         <value>The Help keyword to display the Help topic or topic list for when Help is requested from the editor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override this property to display a different Help topic.  
-  
+Override this property to display a different Help topic.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -508,10 +508,10 @@
         <value>The types of items that can be created.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property indicates the data types that can be added to the collection. By default, this returns a single type of <xref:System.ComponentModel.Design.CollectionEditor.CollectionItemType%2A>. If more than one type is returned, the collection editor UI provides a way to choose which item type to create.  
-  
+This property indicates the data types that can be added to the collection. By default, this returns a single type of <xref:System.ComponentModel.Design.CollectionEditor.CollectionItemType%2A>. If more than one type is returned, the collection editor UI provides a way to choose which item type to create.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -539,10 +539,10 @@
         <returns>The newly created collection object or, otherwise, the collection indicated by the <paramref name="editValue" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If setting requires that a new object be created, the new object is returned. Otherwise, the `editValue` parameter is returned.  
-  
+If setting requires that a new object be created, the new object is returned. Otherwise, the `editValue` parameter is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>

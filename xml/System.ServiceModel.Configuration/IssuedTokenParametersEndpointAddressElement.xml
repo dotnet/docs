@@ -55,10 +55,10 @@
         <value>The type of binding to use.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type must have a registered configuration section in order to be referenced. The type is registered by section name, rather than by the type name of the binding.  
-  
+The type must have a registered configuration section in order to be referenced. The type is registered by section name, rather than by the type name of the binding.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <value>The name of the binding configuration to use when the endpoint is instantiated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The binding configuration must be in scope when the endpoint is defined.  
-  
+The binding configuration must be in scope when the endpoint is defined.  
+ 
  ]]></format>
         </remarks>
       </Docs>

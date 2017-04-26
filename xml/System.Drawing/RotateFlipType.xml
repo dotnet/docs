@@ -13,21 +13,21 @@
     <summary>Specifies how much an image is rotated and the axis used to flip the image.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The image is rotated in a clockwise direction.  
+The image is rotated in a clockwise direction.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to set the <xref:System.Drawing.Image.RotateFlip%2A> property of an <xref:System.Drawing.Image> and the <xref:System.Drawing.RotateFlipType> enumeration.  
-  
- This example is designed to be used with a Windows Form that contains a <xref:System.Windows.Forms.PictureBox> named `PictureBox1` and a button named `Button1`. Paste the code into a form, call `InitializeBitmap` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method and associate `Button1_Click` with the button's <xref:System.Windows.Forms.Control.Click> event. Ensure the file path to the bitmap is valid on your system.  
-  
- [!code-cpp[System.Drawing.BitmapMembers#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CPP/form1.cpp#3)]
- [!code-csharp[System.Drawing.BitmapMembers#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CS/form1.cs#3)]
- [!code-vb[System.Drawing.BitmapMembers#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.BitmapMembers/VB/form1.vb#3)]  
-  
+The following code example demonstrates how to set the <xref:System.Drawing.Image.RotateFlip%2A> property of an <xref:System.Drawing.Image> and the <xref:System.Drawing.RotateFlipType> enumeration.  
+ 
+This example is designed to be used with a Windows Form that contains a <xref:System.Windows.Forms.PictureBox> named `PictureBox1` and a button named `Button1`. Paste the code into a form, call `InitializeBitmap` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method and associate `Button1_Click` with the button's <xref:System.Windows.Forms.Control.Click> event. Ensure the file path to the bitmap is valid on your system.  
+ 
+[!code-cpp[System.Drawing.BitmapMembers#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CPP/form1.cpp#3)]
+[!code-csharp[System.Drawing.BitmapMembers#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CS/form1.cs#3)]
+[!code-vb[System.Drawing.BitmapMembers#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.BitmapMembers/VB/form1.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

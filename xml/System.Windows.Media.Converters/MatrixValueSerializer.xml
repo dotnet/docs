@@ -14,19 +14,19 @@
     <summary>Converts instances of <see cref="T:System.String" /> to and from instances of <see cref="T:System.Windows.Media.Matrix" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is typically only utilized by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization purposes.  
+This class is typically only utilized by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization purposes.  
+ 
+Use a <xref:System.Windows.Media.Converters.MatrixValueSerializer> to create a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representation of a <xref:System.Windows.Media.Matrix> structure. Use a <xref:System.Windows.Media.MatrixConverter> to create a <xref:System.Windows.Media.Matrix> from an attribute string.  
+ 
   
- Use a <xref:System.Windows.Media.Converters.MatrixValueSerializer> to create a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representation of a <xref:System.Windows.Media.Matrix> structure. Use a <xref:System.Windows.Media.MatrixConverter> to create a <xref:System.Windows.Media.Matrix> from an attribute string.  
-  
-   
-  
+ 
 ## Examples  
- <xref:System.Windows.Markup.Primitives.MarkupWriter>  
-  
- <xref:System.Windows.Media.Matrix>  
-  
+<xref:System.Windows.Markup.Primitives.MarkupWriter>  
+ 
+<xref:System.Windows.Media.Matrix>  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
           <see langword="true" /> if the value can be converted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method always returns `true`.  
-  
+This method always returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

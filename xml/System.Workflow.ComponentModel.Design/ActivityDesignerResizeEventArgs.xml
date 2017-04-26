@@ -19,14 +19,14 @@
     <summary>Provides data for the <see cref="M:System.Workflow.ComponentModel.Design.ActivityDesigner.OnBeginResizing(System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs)" /> and <see cref="M:System.Workflow.ComponentModel.Design.ActivityDesigner.OnResizing(System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs)" /> methods.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs> contains information used by an activity designer when a user resized the activity designer on a workflow design surface. This information includes the designer edge that is being used to resize the designer and the designer's new bounds.  
-  
+ 
+<xref:System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs> contains information used by an activity designer when a user resized the activity designer on a workflow design surface. This information includes the designer edge that is being used to resize the designer and the designer's new bounds.  
+ 
  ]]></format>
     </remarks>
   </Docs>

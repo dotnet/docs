@@ -13,14 +13,14 @@
     <summary>Specifies the direction of data flow for an <see cref="T:System.Activities.Argument" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In this example, an <xref:System.Activities.InArgument%601> of type <xref:System.String> is created using the <xref:System.Activities.Argument.Create%2A> method of the <xref:System.Activities.Argument> class.  
-  
+In this example, an <xref:System.Activities.InArgument%601> of type <xref:System.String> is created using the <xref:System.Activities.Argument.Create%2A> method of the <xref:System.Activities.Argument> class.  
+ 
 ```csharp  
 Argument a = Argument.Create(typeof(string), ArgumentDirection.In);  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

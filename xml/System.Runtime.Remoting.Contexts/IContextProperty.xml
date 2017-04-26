@@ -17,10 +17,10 @@
     <summary>Gathers naming information from the context property and determines whether the new context is ok for the context property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Contexts.IContextProperty> interface is exposed by the property contributed to a context by an attribute. By default, it is also implemented by the <xref:System.Runtime.Remoting.Contexts.ContextAttribute> base class, from which <xref:System.Runtime.Remoting.Contexts.Context> attribute classes can extend.  
-  
+The <xref:System.Runtime.Remoting.Contexts.IContextProperty> interface is exposed by the property contributed to a context by an attribute. By default, it is also implemented by the <xref:System.Runtime.Remoting.Contexts.ContextAttribute> base class, from which <xref:System.Runtime.Remoting.Contexts.Context> attribute classes can extend.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -47,10 +47,10 @@
         <summary>Called when the context is frozen.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Context properties cannot be added after the context has been frozen.  
-  
+Context properties cannot be added after the context has been frozen.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -79,10 +79,10 @@
           <see langword="true" /> if the context property can coexist with the other context properties in the given context; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once all the context properties have been added to the new context, they are all queried as to whether they are okay in the new context. The context property could look at the other context properties from `newCtx` and determine whether it is compatible with these other context properties.  
-  
+Once all the context properties have been added to the new context, they are all queried as to whether they are okay in the new context. The context property could look at the other context properties from `newCtx` and determine whether it is compatible with these other context properties.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

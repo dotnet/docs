@@ -14,16 +14,16 @@
     <summary>Plays a media file. If the media is a video file, the <see cref="T:System.Windows.Media.VideoDrawing" /> draws it to the specified rectangle.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although you can declare an instance of this class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], you cannot load and play its media without using code, because of the dependency on the <xref:System.Windows.Media.MediaPlayer> class and in particular the <xref:System.Windows.Media.MediaPlayer.Open%2A> and <xref:System.Windows.Media.MediaPlayer.Play%2A> methods. To play media in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] only, use a <xref:System.Windows.Controls.MediaElement>.  
-  
- Despite its name, a <xref:System.Windows.Media.VideoDrawing> can be used to play audio.  
-  
- **Performance Note:** A <xref:System.Windows.Media.VideoDrawing> provides fewer features then an <xref:System.Windows.Controls.MediaElement>: <xref:System.Windows.Media.VideoDrawing> does not support layout, input, or focus. However, because it does not support these features, <xref:System.Windows.Media.VideoDrawing> provides performance benefits making them ideal for describing backgrounds, clip art, and for low-level drawing with <xref:System.Windows.Media.Visual> objects. See [Drawing Objects Overview](~/docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md) for more information.  
-  
- An <xref:System.Windows.Media.VideoDrawing> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
-  
+Although you can declare an instance of this class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], you cannot load and play its media without using code, because of the dependency on the <xref:System.Windows.Media.MediaPlayer> class and in particular the <xref:System.Windows.Media.MediaPlayer.Open%2A> and <xref:System.Windows.Media.MediaPlayer.Play%2A> methods. To play media in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] only, use a <xref:System.Windows.Controls.MediaElement>.  
+ 
+Despite its name, a <xref:System.Windows.Media.VideoDrawing> can be used to play audio.  
+ 
+**Performance Note:** A <xref:System.Windows.Media.VideoDrawing> provides fewer features then an <xref:System.Windows.Controls.MediaElement>: <xref:System.Windows.Media.VideoDrawing> does not support layout, input, or focus. However, because it does not support these features, <xref:System.Windows.Media.VideoDrawing> provides performance benefits making them ideal for describing backgrounds, clip art, and for low-level drawing with <xref:System.Windows.Media.Visual> objects. See [Drawing Objects Overview](~/docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md) for more information.  
+ 
+An <xref:System.Windows.Media.VideoDrawing> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,12 +61,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,12 +89,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,17 +135,17 @@
         <value>The media player associated with the drawing.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Player"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.VideoDrawing.PlayerProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,17 +184,17 @@
         <value>The rectangle in which the video is drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Rect"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.VideoDrawing.RectProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

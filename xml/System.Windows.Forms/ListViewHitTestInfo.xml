@@ -14,18 +14,18 @@
     <summary>Contains information about an area of a <see cref="T:System.Windows.Forms.ListView" /> control or a <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ListViewHitTestInfo> is returned by the <xref:System.Windows.Forms.ListView> class when the <xref:System.Windows.Forms.ListView.HitTest%2A> method is called.  
+<xref:System.Windows.Forms.ListViewHitTestInfo> is returned by the <xref:System.Windows.Forms.ListView> class when the <xref:System.Windows.Forms.ListView.HitTest%2A> method is called.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Windows.Forms.ListViewHitTestInfo> class and the <xref:System.Windows.Forms.ListView.HitTest%2A> method to determine the location of a <xref:System.Windows.Forms.Control.MouseDown> event. To run this code, paste it into a Windows Form that contains a <xref:System.Windows.Forms.ListView> named `listView1` that is populated with items. Associate the <xref:System.Windows.Forms.Control.MouseDown> event for the form and `listView1` with the `HandleMouseDown` method in this example.  
-  
- [!code-csharp[System.Windows.Forms.ListViewWhidbeyProperties#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewWhidbeyProperties/CS/form1.cs#7)]
- [!code-vb[System.Windows.Forms.ListViewWhidbeyProperties#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewWhidbeyProperties/VB/form1.vb#7)]  
-  
+The following code example demonstrates using the <xref:System.Windows.Forms.ListViewHitTestInfo> class and the <xref:System.Windows.Forms.ListView.HitTest%2A> method to determine the location of a <xref:System.Windows.Forms.Control.MouseDown> event. To run this code, paste it into a Windows Form that contains a <xref:System.Windows.Forms.ListView> named `listView1` that is populated with items. Associate the <xref:System.Windows.Forms.Control.MouseDown> event for the form and `listView1` with the `HandleMouseDown` method in this example.  
+ 
+[!code-csharp[System.Windows.Forms.ListViewWhidbeyProperties#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewWhidbeyProperties/CS/form1.cs#7)]
+[!code-vb[System.Windows.Forms.ListViewWhidbeyProperties#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewWhidbeyProperties/VB/form1.vb#7)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,10 +51,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewHitTestInfo" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `hitItem` and `hitSubItem` parameters can be `null`.  
-  
+The `hitItem` and `hitSubItem` parameters can be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -76,10 +76,10 @@
         <value>The <see cref="T:System.Windows.Forms.ListViewItem" /> at the position indicated by a hit test on a <see cref="T:System.Windows.Forms.ListView" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value will be `null` if the <xref:System.Windows.Forms.ListView> does not contain items or the position indicated is not on an item.  
-  
+This value will be `null` if the <xref:System.Windows.Forms.ListView> does not contain items or the position indicated is not on an item.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,10 +101,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.ListViewHitTestLocations" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property will return <xref:System.Windows.Forms.ListViewHitTestLocations> if the hit test indicates a position that is within the client area of the <xref:System.Windows.Forms.ListView> but is not located on a <xref:System.Windows.Forms.ListViewItem>.  
-  
+This property will return <xref:System.Windows.Forms.ListViewHitTestLocations> if the hit test indicates a position that is within the client area of the <xref:System.Windows.Forms.ListView> but is not located on a <xref:System.Windows.Forms.ListViewItem>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,10 +126,10 @@
         <value>The <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> at the position indicated by a hit test on a <see cref="T:System.Windows.Forms.ListView" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value will be `null` if the <xref:System.Windows.Forms.ListView> does not contain subitems or the position indicated is not on a subitem.  
-  
+This value will be `null` if the <xref:System.Windows.Forms.ListView> does not contain subitems or the position indicated is not on a subitem.  
+ 
  ]]></format>
         </remarks>
       </Docs>

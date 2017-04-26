@@ -14,16 +14,16 @@
     <summary>Exposes <see cref="T:System.Windows.Interop.HwndSource" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Automation.Peers.GenericRootAutomationPeer> is used as a peer for <xref:System.Windows.Interop.HwndSource> when it contains the following tree:  
-  
- ![HwndSource&#45;&#62;Visual&#45;&#62;2 UIElement objects](~/add/media/apgenericroot.png "HwndSource->Visual->2 UIElement objects")  
-  
- Because only <xref:System.Windows.UIElement> types have peers, and visuals are not <xref:System.Windows.UIElement> types, a common parent does not exist in the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree for the <xref:System.Windows.UIElement> types. [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] expects a single root peer from the application; therefore, [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)] creates a <xref:System.Windows.Automation.Peers.GenericRootAutomationPeer> for the <xref:System.Windows.Interop.HwndSource> in order to serve as a single root peer to parent peers for the two <xref:System.Windows.UIElement> types.  
-  
- Typically, the root peer is a <xref:System.Windows.Automation.Peers.WindowAutomationPeer>.  
-  
+<xref:System.Windows.Automation.Peers.GenericRootAutomationPeer> is used as a peer for <xref:System.Windows.Interop.HwndSource> when it contains the following tree:  
+ 
+![HwndSource&#45;&#62;Visual&#45;&#62;2 UIElement objects](~/add/media/apgenericroot.png "HwndSource->Visual->2 UIElement objects")  
+ 
+Because only <xref:System.Windows.UIElement> types have peers, and visuals are not <xref:System.Windows.UIElement> types, a common parent does not exist in the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree for the <xref:System.Windows.UIElement> types. [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] expects a single root peer from the application; therefore, [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)] creates a <xref:System.Windows.Automation.Peers.GenericRootAutomationPeer> for the <xref:System.Windows.Interop.HwndSource> in order to serve as a single root peer to parent peers for the two <xref:System.Windows.UIElement> types.  
+ 
+Typically, the root peer is a <xref:System.Windows.Automation.Peers.WindowAutomationPeer>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -137,10 +137,10 @@
         <returns>The string that contains the label.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can think of the name property as if it were a string of text that users use to explain the control they are referring to. Make certain that you have a textual representation for all controls in the [!INCLUDE[TLA#tla_gui](~/includes/tlasharptla-gui-md.md)] so that you can programmatically refer to the control in a localized manner.  
-  
+You can think of the name property as if it were a string of text that users use to explain the control they are referring to. Make certain that you have a textual representation for all controls in the [!INCLUDE[TLA#tla_gui](~/includes/tlasharptla-gui-md.md)] so that you can programmatically refer to the control in a localized manner.  
+ 
  ]]></format>
         </remarks>
       </Docs>

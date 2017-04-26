@@ -18,14 +18,14 @@
     <summary>Provides an abstract base class for a script control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.ScriptControl> inherits from the <xref:System.Web.UI.WebControls.WebControl> class and implements the <xref:System.Web.UI.IScriptControl> interface. The <xref:System.Web.UI.WebControls.WebControl> class is a base class for ASP.NET Web server controls. The <xref:System.Web.UI.ScriptControl> is an abstract class, which you cannot instantiate directly. Instead, you derive a class based on this abstract class.  
-  
- The <xref:System.Web.UI.ScriptControl> base class tests the page for a <xref:System.Web.UI.ScriptManager> control during the `PreRender` stage of the derived control. The <xref:System.Web.UI.ScriptControl> base class also makes sure that the derived control calls methods of the <xref:System.Web.UI.ScriptManager> control to register script during the `Render` event. This includes registering <xref:System.Web.UI.ScriptDescriptor> objects for the <xref:System.Web.UI.ScriptControl> when the <xref:System.Web.UI.ScriptControl.Render%2A> method is called. The <xref:System.Web.UI.ScriptControl.Render%2A> method makes sure that <xref:System.Web.UI.ScriptDescriptor> objects are not rendered unless the <xref:System.Web.UI.ScriptControl> itself is rendered. This enables a <xref:System.Web.UI.ScriptControl> to work inside a closed <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
-  
- You can add as many descriptors and types as necessary to any class that you derive from <xref:System.Web.UI.ScriptControl>.  
-  
+<xref:System.Web.UI.ScriptControl> inherits from the <xref:System.Web.UI.WebControls.WebControl> class and implements the <xref:System.Web.UI.IScriptControl> interface. The <xref:System.Web.UI.WebControls.WebControl> class is a base class for ASP.NET Web server controls. The <xref:System.Web.UI.ScriptControl> is an abstract class, which you cannot instantiate directly. Instead, you derive a class based on this abstract class.  
+ 
+The <xref:System.Web.UI.ScriptControl> base class tests the page for a <xref:System.Web.UI.ScriptManager> control during the `PreRender` stage of the derived control. The <xref:System.Web.UI.ScriptControl> base class also makes sure that the derived control calls methods of the <xref:System.Web.UI.ScriptManager> control to register script during the `Render` event. This includes registering <xref:System.Web.UI.ScriptDescriptor> objects for the <xref:System.Web.UI.ScriptControl> when the <xref:System.Web.UI.ScriptControl.Render%2A> method is called. The <xref:System.Web.UI.ScriptControl.Render%2A> method makes sure that <xref:System.Web.UI.ScriptDescriptor> objects are not rendered unless the <xref:System.Web.UI.ScriptControl> itself is rendered. This enables a <xref:System.Web.UI.ScriptControl> to work inside a closed <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+ 
+You can add as many descriptors and types as necessary to any class that you derive from <xref:System.Web.UI.ScriptControl>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -103,10 +103,10 @@
         <summary>Raises the <see cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" /> event and registers the script control with the <see cref="T:System.Web.UI.ScriptManager" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After the <xref:System.Web.UI.Control.PreRender> event of the base class is raised, the <xref:System.Web.UI.Control.OnPreRender%2A> method registers the script control with the <xref:System.Web.UI.ScriptManager> control.  
-  
+After the <xref:System.Web.UI.Control.PreRender> event of the base class is raised, the <xref:System.Web.UI.Control.OnPreRender%2A> method registers the script control with the <xref:System.Web.UI.ScriptManager> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>

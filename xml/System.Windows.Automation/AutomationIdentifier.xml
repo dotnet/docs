@@ -18,10 +18,10 @@
     <summary>Base class for types that identify control types, events, patterns, properties, and text attributes in [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Automation.AutomationIdentifier> class is effectively abstract, as it has no constructor and cannot be instantiated by applications.  
-  
+The <xref:System.Windows.Automation.AutomationIdentifier> class is effectively abstract, as it has no constructor and cannot be instantiated by applications.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -91,10 +91,10 @@
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method.  
-  
+This method overrides the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -134,20 +134,20 @@
         <value>The programmatic name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Automation.AutomationIdentifier.ProgrammaticName%2A> is intended for debugging and diagnostic purposes only. The string is not localized.  
+<xref:System.Windows.Automation.AutomationIdentifier.ProgrammaticName%2A> is intended for debugging and diagnostic purposes only. The string is not localized.  
+ 
+This property should not be used in string comparisons. To determine if two properties are the same, compare the property identifiers directly.  
+ 
   
- This property should not be used in string comparisons. To determine if two properties are the same, compare the property identifiers directly.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the programmatic name of each property supported by an <xref:System.Windows.Automation.AutomationElement>.  
-  
- [!code-csharp[UIAClient_snip#115](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#115)]
- [!code-vb[UIAClient_snip#115](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#115)]  
-  
+The following example displays the programmatic name of each property supported by an <xref:System.Windows.Automation.AutomationElement>.  
+ 
+[!code-csharp[UIAClient_snip#115](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#115)]
+[!code-vb[UIAClient_snip#115](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#115)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

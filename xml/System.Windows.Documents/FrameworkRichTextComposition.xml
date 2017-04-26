@@ -14,10 +14,10 @@
     <summary>Represents a composition related to text input. You can use this class to find the text position of the composition or the result string.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used for parameters of text input events (i.e. <xref:System.Windows.Input.TextCompositionManager.TextInputStart>, <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate>, etc) on <xref:System.Windows.Controls.RichTextBox>.  
-  
+This class is used for parameters of text input events (i.e. <xref:System.Windows.Input.TextCompositionManager.TextInputStart>, <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate>, etc) on <xref:System.Windows.Controls.RichTextBox>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

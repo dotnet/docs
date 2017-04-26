@@ -14,10 +14,10 @@
     <summary>Provides data for the <see cref="E:System.IdentityModel.Services.WSFederationAuthenticationModule.RedirectingToIdentityProvider" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.RedirectingToIdentityProvider> event is raised before the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> redirects the request to the identity provider. You can access and modify the request through the <xref:System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs.SignInRequestMessage%2A> property. For example, you can modify the <xref:System.IdentityModel.Services.FederationMessage.BaseUri%2A> property in the sign-in message to change the identity provider to which the request will be redirected.  
-  
+The <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.RedirectingToIdentityProvider> event is raised before the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> redirects the request to the identity provider. You can access and modify the request through the <xref:System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs.SignInRequestMessage%2A> property. For example, you can modify the <xref:System.IdentityModel.Services.FederationMessage.BaseUri%2A> property in the sign-in message to change the identity provider to which the request will be redirected.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <summary>Initializes an instance of the <see cref="T:System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs" /> class by using the specified WS-Federation Passive Sign-in message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs.SignInRequestMessage%2A> property in the new instance is initialized to the value of the `signInRequestMessage` parameter.  
-  
+The <xref:System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs.SignInRequestMessage%2A> property in the new instance is initialized to the value of the `signInRequestMessage` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -66,10 +66,10 @@
         <value>The WS-Federation Sign-in message that will be used to redirect the user to the identity provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can change properties of the sign-in message to modify the request. For example, you can modify the <xref:System.IdentityModel.Services.FederationMessage.BaseUri%2A> property in the sign-in message to change the identity provider to which the request will be redirected.  
-  
+You can change properties of the sign-in message to modify the request. For example, you can modify the <xref:System.IdentityModel.Services.FederationMessage.BaseUri%2A> property in the sign-in message to change the identity provider to which the request will be redirected.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>

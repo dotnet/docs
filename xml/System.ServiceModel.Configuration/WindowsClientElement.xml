@@ -52,10 +52,10 @@
         <value>A valid <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> value that specifies the permissible impersonation level. The default is <see cref="F:System.Security.Principal.TokenImpersonationLevel.Identification" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See <xref:System.Security.Principal.TokenImpersonationLevel> for a description of the enumeration.  
-  
+See <xref:System.Security.Principal.TokenImpersonationLevel> for a description of the enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
           <see langword="true" /> if Windows security is enabled in the workgroup scenario; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to `true`, Windows security is enabled at the workgroup level. Otherwise, Windows security is only supported at the domain level.  
-  
+When this property is set to `true`, Windows security is enabled at the workgroup level. Otherwise, Windows security is only supported at the domain level.  
+ 
  ]]></format>
         </remarks>
       </Docs>

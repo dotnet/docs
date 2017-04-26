@@ -18,25 +18,25 @@
     <summary>Represents a custom binding element that supports channel security using symmetric encryption.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A custom binding contains a collection of binding elements arranged in a specific order: the element that represents the top of the binding stack is added first, the next element down in the binding stack, is added second, and so forth.  
-  
+A custom binding contains a collection of binding elements arranged in a specific order: the element that represents the top of the binding stack is added first, the next element down in the binding stack, is added second, and so forth.  
+ 
 ### To add this class to a binding  
-  
+ 
 1.  Create a <xref:System.ServiceModel.Channels.BindingElementCollection>.  
-  
+ 
 2.  Create custom binding elements that is above this binding element in the binding stack, such as the optional <xref:System.ServiceModel.Channels.TransactionFlowBindingElement> and <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>.  
-  
+ 
 3.  Add the created elements, in the order mentioned previously, to the <xref:System.ServiceModel.Channels.BindingElementCollection> using the <xref:System.ServiceModel.Channels.BindingElementCollection.InsertItem%2A> method.  
-  
+ 
 4.  Create an instance of <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> and add it to the collection.  
-  
+ 
 5.  Add any additional custom binding elements to the collection, such as <xref:System.ServiceModel.Channels.TcpTransportBindingElement>.  
-  
+ 
 > [!NOTE]
 >  Once an instance of this object is created, you should treat the properties of its base class, <xref:System.ServiceModel.Channels.SecurityBindingElement>, as immutable. Calling `set` on some properties may have unpredictable effects: the binding may behave as if the property retained its old value, with a run-time failure being the only indication of an issue. Two properties known to behave this way are <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.KeyType%2A> and <xref:System.ServiceModel.Channels.SecurityBindingElement.MessageSecurityVersion%2A>. There may be other properties for which this is true.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,12 +55,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.SymmetricSecurityBindingElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to use this constructor.  
-  
- [!code-csharp[c_CustomBinding#4](~/samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#4)]  
-  
+The following code shows how to use this constructor.  
+ 
+[!code-csharp[c_CustomBinding#4](~/samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,12 +158,12 @@
         <returns>A <see cref="T:System.ServiceModel.Channels.BindingElement" /> object with property values equal to those of the current instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This creates a complete copy of the current binding element object tree, also called a deep clone. A deep clone of an object creates a copy of the object and a copy of everything directly or indirectly referenced by that object. This can also be described as copying the entire object graph. Returning a deep clone enables the runtime to support the case in which multiple custom bindings share a custom binding element. If a deep clone is not returned, the run-time behavior is undefined.  
-  
- A shallow clone of an object, by contrast, is a copy of the object only. If the object contains references to other objects, the shallow copy does not create copies of the referred objects; instead, it copies only the references to the original objects.  
-  
+This creates a complete copy of the current binding element object tree, also called a deep clone. A deep clone of an object creates a copy of the object and a copy of everything directly or indirectly referenced by that object. This can also be described as copying the entire object graph. Returning a deep clone enables the runtime to support the case in which multiple custom bindings share a custom binding element. If a deep clone is not returned, the run-time behavior is undefined.  
+ 
+A shallow clone of an object, by contrast, is a copy of the object only. If the object contains references to other objects, the shallow copy does not create copies of the referred objects; instead, it copies only the references to the original objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
         <returns>The specified object of type <paramref name="T" /> from the <see cref="T:System.ServiceModel.Channels.BindingContext" />, or <see langword="null" /> if the object is not found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method gets the specified object from the base class or from one of that class's ancestors. The object returned is usually a collection of properties, for example an object that implements <xref:System.ServiceModel.Channels.ISecurityCapabilities>.  
-  
+This method gets the specified object from the base class or from one of that class's ancestors. The object returned is usually a collection of properties, for example an object that implements <xref:System.ServiceModel.Channels.ISecurityCapabilities>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,21 +222,21 @@
         <value>The <see cref="T:System.ServiceModel.Security.MessageProtectionOrder" /> that specifies how the message is protected. The default is <see cref="F:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  If there is nothing in the message that is encrypted, the signature element is not encrypted even when the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder%2A> property is set to <xref:System.ServiceModel.Security.MessageProtectionOrder>. This behavior occurs even with system-provided bindings. However, the WSDL generated by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] still contains the <`sp:EncryptSignature`> assertion.  
+ 
+For a listing of the members and their descriptions, see <xref:System.ServiceModel.Security.MessageProtectionOrder>.  
+ 
   
- For a listing of the members and their descriptions, see <xref:System.ServiceModel.Security.MessageProtectionOrder>.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to set this property.  
-  
- [!code-csharp[c_CustomBinding#5](~/samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#5)]  
-  
+The following code shows how to set this property.  
+ 
+[!code-csharp[c_CustomBinding#5](~/samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -260,12 +260,12 @@
         <value>The <see cref="T:System.ServiceModel.Security.Tokens.SecurityTokenParameters" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to set this property.  
-  
- [!code-csharp[c_CustomBinding#6](~/samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#6)]  
-  
+The following code shows how to set this property.  
+ 
+[!code-csharp[c_CustomBinding#6](~/samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -288,10 +288,10 @@
           <see langword="true" /> if message signatures must be confirmed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property specifies whether the signature must be encrypted. If the value is `true`, the primary signature must be encrypted and any signature confirmation elements must also be encrypted. If the value is `false`, the primary signature must not be encrypted and any signature confirmation elements must not be encrypted.  
-  
+This property specifies whether the signature must be encrypted. If the value is `true`, the primary signature must be encrypted and any signature confirmation elements must also be encrypted. If the value is `false`, the primary signature must not be encrypted and any signature confirmation elements must not be encrypted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -317,10 +317,10 @@
         <summary>Sets a value that indicates whether derived keys are required.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A derived key is created from an existing key and makes it possible to vary the key used in the course of a conversation. This makes it more difficult for a hacker to decrypt the communication.  
-  
+A derived key is created from an existing key and makes it possible to vary the key used in the course of a conversation. This makes it more difficult for a hacker to decrypt the communication.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -347,16 +347,16 @@
         <summary>Exports a custom policy assertion about bindings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method writes binding-related statements into the WSDL information exposed by a particular contract and is used by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to communicate to clients of the existence of this custom binding element in the binding stack.  
-  
- This method takes two parameters: the <xref:System.ServiceModel.Description.MetadataExporter> and <xref:System.ServiceModel.Description.PolicyConversionContext> objects. Use the <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A>, <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A>, and <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> methods to obtain collections of policy assertions that have already been exported at various scopes. Then use this method to add your own policy assertions to the appropriate collection.  
-  
- The <xref:System.ServiceModel.Description.PolicyConversionContext.Contract%2A> property exposes the <xref:System.ServiceModel.Description.ContractDescription> for the endpoint that is being exported. This allows this method to correctly scope their exported policy assertions. For example, security attributes in code may add behaviors to the <xref:System.ServiceModel.Description.ContractDescription> that indicate where security policy assertions should be added.  
-  
- Once custom policy assertions are attached to the WSDL information, clients can detect and import the custom binding assertions by implementing the <xref:System.ServiceModel.Description.IPolicyImportExtension> interface.  
-  
+This method writes binding-related statements into the WSDL information exposed by a particular contract and is used by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to communicate to clients of the existence of this custom binding element in the binding stack.  
+ 
+This method takes two parameters: the <xref:System.ServiceModel.Description.MetadataExporter> and <xref:System.ServiceModel.Description.PolicyConversionContext> objects. Use the <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A>, <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A>, and <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> methods to obtain collections of policy assertions that have already been exported at various scopes. Then use this method to add your own policy assertions to the appropriate collection.  
+ 
+The <xref:System.ServiceModel.Description.PolicyConversionContext.Contract%2A> property exposes the <xref:System.ServiceModel.Description.ContractDescription> for the endpoint that is being exported. This allows this method to correctly scope their exported policy assertions. For example, security attributes in code may add behaviors to the <xref:System.ServiceModel.Description.ContractDescription> that indicate where security policy assertions should be added.  
+ 
+Once custom policy assertions are attached to the WSDL information, clients can detect and import the custom binding assertions by implementing the <xref:System.ServiceModel.Description.IPolicyImportExtension> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -379,10 +379,10 @@
         <returns>A string that represents this <see cref="T:System.ServiceModel.Channels.SymmetricSecurityBindingElement" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Information returned by <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.ToString%2A> includes the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder%2A>, <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.RequireSignatureConfirmation%2A>, and <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.ProtectionTokenParameters%2A> values of the current instance.  
-  
+Information returned by <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.ToString%2A> includes the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder%2A>, <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.RequireSignatureConfirmation%2A>, and <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.ProtectionTokenParameters%2A> values of the current instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>

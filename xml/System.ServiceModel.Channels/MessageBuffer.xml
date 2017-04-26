@@ -19,28 +19,28 @@
     <summary>Represents a memory buffer that stores an entire message for future consumption.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The body of a <xref:System.ServiceModel.Channels.Message> instance can only be consumed or written once. If you wish to consume a <xref:System.ServiceModel.Channels.Message> instance more than once, you should use the <xref:System.ServiceModel.Channels.MessageBuffer> class to completely store an entire <xref:System.ServiceModel.Channels.Message> instance into memory.  
-  
- A <xref:System.ServiceModel.Channels.MessageBuffer> instance is constructed by calling <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> of a <xref:System.ServiceModel.Channels.Message> instance. A new <xref:System.ServiceModel.Channels.MessageBuffer> is then created and returned, which assumes ownership of the <xref:System.ServiceModel.Channels.Message> and reads the entire content into memory.  
-  
- In order to retrieve a copy of a <xref:System.ServiceModel.Channels.Message> from the <xref:System.ServiceModel.Channels.MessageBuffer>, you must call the <xref:System.ServiceModel.Channels.MessageBuffer.CreateMessage%2A> method of the <xref:System.ServiceModel.Channels.MessageBuffer>. This returns an identical copy of the original <xref:System.ServiceModel.Channels.Message> instance you provided.  
-  
- You can control the maximum size of the buffer by setting <xref:System.ServiceModel.Channels.MessageBuffer.BufferSize%2A> to the maximum number of bytes desired. This number does not necessarily cover any transient allocations related to building the buffer, or properties attached to the message.  
-  
- You should always close a <xref:System.ServiceModel.Channels.MessageBuffer> instance by calling <xref:System.ServiceModel.Channels.MessageBuffer.Close%2A> when finished working with it. This allows system resources to potentially be freed sooner.  
-  
- Special note for Managed C++ users deriving from this class:  
-  
+The body of a <xref:System.ServiceModel.Channels.Message> instance can only be consumed or written once. If you wish to consume a <xref:System.ServiceModel.Channels.Message> instance more than once, you should use the <xref:System.ServiceModel.Channels.MessageBuffer> class to completely store an entire <xref:System.ServiceModel.Channels.Message> instance into memory.  
+ 
+A <xref:System.ServiceModel.Channels.MessageBuffer> instance is constructed by calling <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> of a <xref:System.ServiceModel.Channels.Message> instance. A new <xref:System.ServiceModel.Channels.MessageBuffer> is then created and returned, which assumes ownership of the <xref:System.ServiceModel.Channels.Message> and reads the entire content into memory.  
+ 
+In order to retrieve a copy of a <xref:System.ServiceModel.Channels.Message> from the <xref:System.ServiceModel.Channels.MessageBuffer>, you must call the <xref:System.ServiceModel.Channels.MessageBuffer.CreateMessage%2A> method of the <xref:System.ServiceModel.Channels.MessageBuffer>. This returns an identical copy of the original <xref:System.ServiceModel.Channels.Message> instance you provided.  
+ 
+You can control the maximum size of the buffer by setting <xref:System.ServiceModel.Channels.MessageBuffer.BufferSize%2A> to the maximum number of bytes desired. This number does not necessarily cover any transient allocations related to building the buffer, or properties attached to the message.  
+ 
+You should always close a <xref:System.ServiceModel.Channels.MessageBuffer> instance by calling <xref:System.ServiceModel.Channels.MessageBuffer.Close%2A> when finished working with it. This allows system resources to potentially be freed sooner.  
+ 
+Special note for Managed C++ users deriving from this class:  
+ 
 -   Put your cleanup code in (On)(Begin)Close (and/or OnAbort), not in a destructor.  
-  
+ 
 -   Avoid destructors: they cause the compiler to auto-generate <xref:System.IDisposable>  
-  
+ 
 -   Avoid non-reference members: they can cause the compiler to auto-generate <xref:System.IDisposable>  
-  
+ 
 -   Avoid finalizers; but if you include one, you should suppress the build warning and call <xref:System.GC.SuppressFinalize%28System.Object%29> and the finalizer itself from (On)(Begin)Close (and/or OnAbort) in order to emulate what would have been the auto-generated <xref:System.IDisposable> behavior.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,10 +79,10 @@
         <value>The approximate number of bytes consumed by this <see cref="T:System.ServiceModel.Channels.MessageBuffer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can control the maximum size of the buffer by setting <xref:System.ServiceModel.Channels.MessageBuffer.BufferSize%2A> to the maximum number of bytes desired. This number does not necessarily cover any transient allocations related to building the buffer, or properties attached to the message. It is not related to the actual size of the message when serialized.  
-  
+You can control the maximum size of the buffer by setting <xref:System.ServiceModel.Channels.MessageBuffer.BufferSize%2A> to the maximum number of bytes desired. This number does not necessarily cover any transient allocations related to building the buffer, or properties attached to the message. It is not related to the actual size of the message when serialized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,17 +105,17 @@
         <summary>Finishes working with the buffer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should always close a <xref:System.ServiceModel.Channels.MessageBuffer> instance by calling <xref:System.ServiceModel.Channels.MessageBuffer.Close%2A> when finished working with it. This allows system resources to potentially be freed sooner.  
+You should always close a <xref:System.ServiceModel.Channels.MessageBuffer> instance by calling <xref:System.ServiceModel.Channels.MessageBuffer.Close%2A> when finished working with it. This allows system resources to potentially be freed sooner.  
+ 
+If you have called <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> to create a message buffer of a message, and inspected the message using <xref:System.ServiceModel.Channels.MessageBuffer.CreateMessage%2A>, you will get a <xref:System.InvalidOperationException> when you attempt to close the buffer using this method. To avoid this problem, you need to recreate the message from the buffer before closing. See the code sample in the Example section for a demonstration of the previous scenario and a way to resolve this problem.  
+ 
   
- If you have called <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> to create a message buffer of a message, and inspected the message using <xref:System.ServiceModel.Channels.MessageBuffer.CreateMessage%2A>, you will get a <xref:System.InvalidOperationException> when you attempt to close the buffer using this method. To avoid this problem, you need to recreate the message from the buffer before closing. See the code sample in the Example section for a demonstration of the previous scenario and a way to resolve this problem.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to properly close a message buffer.  
-  
+The following example demonstrates how to properly close a message buffer.  
+ 
 ```  
 public void AfterReceiveReply(ref Message reply, object correlationState)  
 {  
@@ -134,9 +134,9 @@ public void AfterReceiveReply(ref Message reply, object correlationState)
     // You can close the buffer after the message has been recreated.  
     buffer.Close();  
 ```  
-  
- }  
-  
+ 
+}  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,10 +160,10 @@ public void AfterReceiveReply(ref Message reply, object correlationState)
         <returns>An identical copy of the original <see cref="T:System.ServiceModel.Channels.Message" /> instance you previously provided to the <see cref="M:System.ServiceModel.Channels.Message.CreateBufferedCopy(System.Int32)" /> method of a <see cref="T:System.ServiceModel.Channels.Message" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method creates an identical copy of the original <xref:System.ServiceModel.Channels.Message> instance you previously provided to the <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> method of a <xref:System.ServiceModel.Channels.Message> instance. You can then save the message to a durable storage.  
-  
+Calling this method creates an identical copy of the original <xref:System.ServiceModel.Channels.Message> instance you previously provided to the <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> method of a <xref:System.ServiceModel.Channels.Message> instance. You can then save the message to a durable storage.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,10 +186,10 @@ public void AfterReceiveReply(ref Message reply, object correlationState)
         <returns>An <see cref="T:System.Xml.XPath.XPathNavigator" /> object for navigating this object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method if you want to manipulate just a portion of the message copy.  
-  
+Use this method if you want to manipulate just a portion of the message copy.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,10 +215,10 @@ public void AfterReceiveReply(ref Message reply, object correlationState)
         <returns>An <see cref="T:System.Xml.XPath.XPathNavigator" /> object for navigating this object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method if you want to manipulate just a portion of the message copy.  
-  
+Use this method if you want to manipulate just a portion of the message copy.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,10 +244,10 @@ public void AfterReceiveReply(ref Message reply, object correlationState)
         <returns>An <see cref="T:System.Xml.XPath.XPathNavigator" /> object for navigating this object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method if you want to manipulate just a portion of the message copy.  
-  
+Use this method if you want to manipulate just a portion of the message copy.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,10 +275,10 @@ public void AfterReceiveReply(ref Message reply, object correlationState)
         <returns>An <see cref="T:System.Xml.XPath.XPathNavigator" /> object for navigating this object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method if you want to manipulate just a portion of the message copy.  
-  
+Use this method if you want to manipulate just a portion of the message copy.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -320,13 +320,13 @@ public void AfterReceiveReply(ref Message reply, object correlationState)
         <summary>Releases the unmanaged resources used by the <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> and optionally releases the managed resources. This method cannot be inherited.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method when you are finished using the <xref:System.ServiceModel.Channels.MessageBuffer>. This method leaves the <xref:System.ServiceModel.Channels.MessageBuffer> in an unusable state. After calling this method, you must release all references to the <xref:System.ServiceModel.Channels.MessageBuffer> so the garbage collector can reclaim the memory that the <xref:System.ServiceModel.Channels.MessageBuffer> was occupying.  
-  
+Call this method when you are finished using the <xref:System.ServiceModel.Channels.MessageBuffer>. This method leaves the <xref:System.ServiceModel.Channels.MessageBuffer> in an unusable state. After calling this method, you must release all references to the <xref:System.ServiceModel.Channels.MessageBuffer> so the garbage collector can reclaim the memory that the <xref:System.ServiceModel.Channels.MessageBuffer> was occupying.  
+ 
 > [!NOTE]
 >  Always call this method before you release your last reference to the <xref:System.ServiceModel.Channels.MessageBuffer>. Otherwise, the resources it is using are not freed until the garbage collector calls the <xref:System.ServiceModel.Channels.MessageBuffer> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -352,14 +352,14 @@ public void AfterReceiveReply(ref Message reply, object correlationState)
         <summary>Writes the entire content of this buffer to the specified IO stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function uses a binary encoder instead of a UTF-8 encoder. Therefore, you cannot directly convert from a <xref:System.ServiceModel.Channels.MessageBuffer> to a <xref:System.ServiceModel.Channels.Message>. The code in the example section shows how to work around this problem.  
+This function uses a binary encoder instead of a UTF-8 encoder. Therefore, you cannot directly convert from a <xref:System.ServiceModel.Channels.MessageBuffer> to a <xref:System.ServiceModel.Channels.Message>. The code in the example section shows how to work around this problem.  
+ 
   
-   
-  
+ 
 ## Examples  
-  
+ 
 ```  
 private byte[] ConvertMessageToByteArray(ref Message message)   
 {  
@@ -386,7 +386,7 @@ private byte[] ConvertMessageToByteArray(ref Message message)
     return retval;  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -400,10 +400,10 @@ private byte[] ConvertMessageToByteArray(ref Message message)
         <summary>Creates a new <see cref="T:System.Xml.XPath.XPathNavigator" /> object for navigating this object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method if you want to manipulate just a portion of the message copy.  
-  
+Use this method if you want to manipulate just a portion of the message copy.  
+ 
  ]]></format>
         </remarks>
       </Docs>

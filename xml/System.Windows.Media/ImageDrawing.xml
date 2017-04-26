@@ -14,12 +14,12 @@
     <summary>Draws an image within a region defined by a <see cref="T:System.Windows.Rect" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Performance Note:** A <xref:System.Windows.Media.DrawingImage> provides less features then an <xref:System.Windows.Controls.Image> for rendering images, however, <xref:System.Windows.Media.DrawingImage> provides performance benefits making them ideal for describing backgrounds, clip art, and for low-level drawing with <xref:System.Windows.Media.Visual> objects. See [Drawing Objects Overview](~/docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md) for more information.  
-  
- An <xref:System.Windows.Media.ImageDrawing> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
-  
+**Performance Note:** A <xref:System.Windows.Media.DrawingImage> provides less features then an <xref:System.Windows.Controls.Image> for rendering images, however, <xref:System.Windows.Media.DrawingImage> provides performance benefits making them ideal for describing backgrounds, clip art, and for low-level drawing with <xref:System.Windows.Media.Visual> objects. See [Drawing Objects Overview](~/docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md) for more information.  
+ 
+An <xref:System.Windows.Media.ImageDrawing> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,12 +77,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,12 +105,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,35 +151,35 @@
         <value>The source of the image. The default value is **null**.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ImageSource"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object ImageSource="imageUri"/>  
 ```  
-  
+ 
 <a name="xamlTextUsage_ImageSource"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see the <xref:System.Windows.Media.ImageSource> type.  
-  
+For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see the <xref:System.Windows.Media.ImageSource> type.  
+ 
 <a name="xamlValues_ImageSource"></a>   
 ## XAML Values  
- *imageUri*  
- <xref:System.String?displayProperty=fullName>  
-  
- A [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the image file.  
-  
+*imageUri*  
+<xref:System.String?displayProperty=fullName>  
+ 
+A [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the image file.  
+ 
 <a name="dependencyPropertyInfo_ImageSource"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier Field|<xref:System.Windows.Media.ImageDrawing.ImageSourceProperty>|  
 |Metadata Flags|<xref:System.Windows.FrameworkPropertyMetadataOptions>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -218,17 +218,17 @@
         <value>The region in which the image is drawn. The default is <c>Empty</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Rect"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier Field|<xref:System.Windows.Media.ImageDrawing.RectProperty>|  
 |Metadata Flags|<xref:System.Windows.FrameworkPropertyMetadataOptions>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

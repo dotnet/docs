@@ -14,15 +14,15 @@
     <summary>Provides data for the <see cref="E:System.Windows.Controls.Primitives.Selector.SelectionChanged" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.ListBox> and subscribes to the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event. It uses the <xref:System.Windows.Controls.SelectionChangedEventArgs> to find the selected item in the <xref:System.Windows.Controls.ListBox>.  
-  
- [!code-xml[ListBoxEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#8)]  
-  
- [!code-csharp[ListBoxEvent#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#9)]
- [!code-vb[ListBoxEvent#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#9)]  
-  
+The following example creates a <xref:System.Windows.Controls.ListBox> and subscribes to the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event. It uses the <xref:System.Windows.Controls.SelectionChangedEventArgs> to find the selected item in the <xref:System.Windows.Controls.ListBox>.  
+ 
+[!code-xml[ListBoxEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#8)]  
+ 
+[!code-csharp[ListBoxEvent#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#9)]
+[!code-vb[ListBoxEvent#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#9)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,15 +48,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.SelectionChangedEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.ListBox> and subscribes to the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event. It uses the <xref:System.Windows.Controls.SelectionChangedEventArgs> to find the selected item in the <xref:System.Windows.Controls.ListBox>.  
-  
- [!code-xml[ListBoxEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#8)]  
-  
- [!code-csharp[ListBoxEvent#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#9)]
- [!code-vb[ListBoxEvent#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#9)]  
-  
+The following example creates a <xref:System.Windows.Controls.ListBox> and subscribes to the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event. It uses the <xref:System.Windows.Controls.SelectionChangedEventArgs> to find the selected item in the <xref:System.Windows.Controls.ListBox>.  
+ 
+[!code-xml[ListBoxEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#8)]  
+ 
+[!code-csharp[ListBoxEvent#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#9)]
+[!code-vb[ListBoxEvent#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,15 +101,15 @@
         <summary>Performs the proper type casting to call the type-safe <see cref="T:System.Windows.Controls.SelectionChangedEventHandler" /> delegate for the <see cref="E:System.Windows.Controls.Primitives.Selector.SelectionChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.ListBox> and subscribes to the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event. It uses the <xref:System.Windows.Controls.SelectionChangedEventArgs> to find the selected item in the <xref:System.Windows.Controls.ListBox>.  
-  
- [!code-xml[ListBoxEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#8)]  
-  
- [!code-csharp[ListBoxEvent#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#9)]
- [!code-vb[ListBoxEvent#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#9)]  
-  
+The following example creates a <xref:System.Windows.Controls.ListBox> and subscribes to the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event. It uses the <xref:System.Windows.Controls.SelectionChangedEventArgs> to find the selected item in the <xref:System.Windows.Controls.ListBox>.  
+ 
+[!code-xml[ListBoxEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#8)]  
+ 
+[!code-csharp[ListBoxEvent#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#9)]
+[!code-vb[ListBoxEvent#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

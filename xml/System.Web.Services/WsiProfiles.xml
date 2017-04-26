@@ -19,10 +19,10 @@
     <summary>Describes the Web services interoperability (WSI) specification to which a Web service claims to conform.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The WS-I organization publishes non-proprietary Web services specifications to promote the interoperability of Web services across platforms. This enumeration is used by the <xref:System.Web.Services.WebServiceBindingAttribute.ConformsTo%2A> property of the <xref:System.Web.Services.WebServiceBindingAttribute> attribute to indicate the WSI specification to which the Web service claims to conform.  
-  
+The WS-I organization publishes non-proprietary Web services specifications to promote the interoperability of Web services across platforms. This enumeration is used by the <xref:System.Web.Services.WebServiceBindingAttribute.ConformsTo%2A> property of the <xref:System.Web.Services.WebServiceBindingAttribute> attribute to indicate the WSI specification to which the Web service claims to conform.  
+ 
  ]]></format>
     </remarks>
   </Docs>

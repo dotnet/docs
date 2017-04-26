@@ -32,10 +32,10 @@
         <value>The entity object that was created.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an object that has the same key value exists in the context, the Entity Framework will not recreate the object and the <xref:System.Data.Objects.ObjectContext.ObjectMaterialized> event will not be raised.  
-  
+If an object that has the same key value exists in the context, the Entity Framework will not recreate the object and the <xref:System.Data.Objects.ObjectContext.ObjectMaterialized> event will not be raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>

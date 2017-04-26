@@ -14,25 +14,25 @@
     <summary>Provides a <see cref="T:System.Configuration.ProtectedConfigurationProvider" /> instance that uses RSA encryption to encrypt and decrypt configuration data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.RsaProtectedConfigurationProvider> class gives you a way to encrypt sensitive information stored in a configuration file, which helps protect it from unauthorized access. You use the built-in <xref:System.Configuration.RsaProtectedConfigurationProvider> instance by declaring the provider and making appropriate settings in the configuration file instead of creating an instance of this class, as shown in the example later in this topic.  
-  
- The <xref:System.Configuration.RsaProtectedConfigurationProvider> object uses the cryptography functions provided by <xref:System.Security.Cryptography.RSA> class to encrypt and decrypt configuration sections.  
-  
+The <xref:System.Configuration.RsaProtectedConfigurationProvider> class gives you a way to encrypt sensitive information stored in a configuration file, which helps protect it from unauthorized access. You use the built-in <xref:System.Configuration.RsaProtectedConfigurationProvider> instance by declaring the provider and making appropriate settings in the configuration file instead of creating an instance of this class, as shown in the example later in this topic.  
+ 
+The <xref:System.Configuration.RsaProtectedConfigurationProvider> object uses the cryptography functions provided by <xref:System.Security.Cryptography.RSA> class to encrypt and decrypt configuration sections.  
+ 
 > [!NOTE]
 >  Before ASP.NET can decrypt encrypted information in your configuration file, the identity of your ASP.NET application must have read access to the encryption key used to encrypt and decrypt the configuration data. For more information, see [Walkthrough: Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/e1652f90-eac5-4f51-bff1-cf1acc2e1180).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the standard <xref:System.Configuration.RsaProtectedConfigurationProvider> to protect or unprotect a configuration section.  
-  
- [!code-csharp[System.Configuration.RsaProtectedConfigurationProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.RsaProtectedConfigurationProvider/CS/RsaProtectedConfigurationProvider.cs#1)]
- [!code-vb[System.Configuration.RsaProtectedConfigurationProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.RsaProtectedConfigurationProvider/VB/RsaProtectedConfigurationProvider.vb#1)]  
-  
- The following example shows an excerpt from a configuration file after encryption.  
-  
+The following code example shows how to use the standard <xref:System.Configuration.RsaProtectedConfigurationProvider> to protect or unprotect a configuration section.  
+ 
+[!code-csharp[System.Configuration.RsaProtectedConfigurationProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.RsaProtectedConfigurationProvider/CS/RsaProtectedConfigurationProvider.cs#1)]
+[!code-vb[System.Configuration.RsaProtectedConfigurationProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.RsaProtectedConfigurationProvider/VB/RsaProtectedConfigurationProvider.vb#1)]  
+ 
+The following example shows an excerpt from a configuration file after encryption.  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
@@ -58,7 +58,7 @@
   </connectionStrings>  
 </configuration>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for full access to the resource protected by the permission. <see cref="F:System.Security.Permissions.SecurityAction.Demand" />.</permission>
@@ -78,10 +78,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.RsaProtectedConfigurationProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.RsaProtectedConfigurationProvider.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system.  
-  
+The <xref:System.Configuration.RsaProtectedConfigurationProvider.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system.  
+ 
  ]]></format>
         </remarks>
       </Docs>

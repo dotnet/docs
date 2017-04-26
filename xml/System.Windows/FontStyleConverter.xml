@@ -14,10 +14,10 @@
     <summary>Converts instances of <see cref="T:System.Windows.FontStyle" /> to and from other data types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.FontStyleConverter> object supports conversion to and from the <xref:System.String> type.  
-  
+The <xref:System.Windows.FontStyleConverter> object supports conversion to and from the <xref:System.String> type.  
+ 
 <a name="XAMLTextUsage_FontStyleConverter"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -151,10 +151,10 @@
         <returns>The object created from the converted instance of <see cref="T:System.Windows.FontStyle" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `destinationType` can be <xref:System.String> or <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor>.  
-  
+`destinationType` can be <xref:System.String> or <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">

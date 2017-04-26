@@ -31,10 +31,10 @@
     <summary>Indicates that a field should be treated as containing a fixed number of elements of the specified primitive type. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Apply the <xref:System.Runtime.CompilerServices.FixedBufferAttribute> attribute to a field to indicate that it should be treated as a fixed-length inline array. The type of the field that the attribute is applied to must have a size that can contain the indicated number of elements.  
-  
+Apply the <xref:System.Runtime.CompilerServices.FixedBufferAttribute> attribute to a field to indicate that it should be treated as a fixed-length inline array. The type of the field that the attribute is applied to must have a size that can contain the indicated number of elements.  
+ 
  ]]></format>
     </remarks>
   </Docs>

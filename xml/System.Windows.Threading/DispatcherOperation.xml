@@ -14,16 +14,16 @@
     <summary>Represents an object that is used to interact with an operation that has been posted to the <see cref="T:System.Windows.Threading.Dispatcher" /> queue.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> returns a <xref:System.Windows.Threading.DispatcherOperation> object when it is called.  
-  
- The <xref:System.Windows.Threading.DispatcherOperation> object can be used to interact with the delegate on the <xref:System.Windows.Threading.Dispatcher> queue, such as changing the priority of the operation or aborting the operation.  
-  
- To obtain the return value of the invoked delegate, use the <xref:System.Windows.Threading.DispatcherOperation.Result%2A> property.  
-  
- The <xref:System.Windows.Threading.DispatcherOperation> is not an exception handling boundary. This means that exceptions are handled by the <xref:System.Windows.Threading.Dispatcher> and are not preserved by the operation.  
-  
+<xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> returns a <xref:System.Windows.Threading.DispatcherOperation> object when it is called.  
+ 
+The <xref:System.Windows.Threading.DispatcherOperation> object can be used to interact with the delegate on the <xref:System.Windows.Threading.Dispatcher> queue, such as changing the priority of the operation or aborting the operation.  
+ 
+To obtain the return value of the invoked delegate, use the <xref:System.Windows.Threading.DispatcherOperation.Result%2A> property.  
+ 
+The <xref:System.Windows.Threading.DispatcherOperation> is not an exception handling boundary. This means that exceptions are handled by the <xref:System.Windows.Threading.Dispatcher> and are not preserved by the operation.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,12 +47,12 @@
           <see langword="true" /> if the operation was aborted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an operation is already in progress, this method will return `false`.  
-  
- When an operation is aborted, the <xref:System.Windows.Threading.DispatcherOperation.Status%2A> of the <xref:System.Windows.Threading.DispatcherOperation> is set to <xref:System.Windows.Threading.DispatcherOperationStatus> and the <xref:System.Windows.Threading.DispatcherOperation.Aborted> event is raised.  
-  
+If an operation is already in progress, this method will return `false`.  
+ 
+When an operation is aborted, the <xref:System.Windows.Threading.DispatcherOperation.Status%2A> of the <xref:System.Windows.Threading.DispatcherOperation> is set to <xref:System.Windows.Threading.DispatcherOperationStatus> and the <xref:System.Windows.Threading.DispatcherOperation.Aborted> event is raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,10 +209,10 @@
         <value>The status of the operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The stages of a <xref:System.Windows.Threading.DispatcherOperation> are <xref:System.Windows.Threading.DispatcherOperationStatus>, <xref:System.Windows.Threading.DispatcherOperationStatus>, and <xref:System.Windows.Threading.DispatcherOperationStatus>.  At any point before the operation has completed, the status can be set to <xref:System.Windows.Threading.DispatcherOperationStatus>.  
-  
+The stages of a <xref:System.Windows.Threading.DispatcherOperation> are <xref:System.Windows.Threading.DispatcherOperationStatus>, <xref:System.Windows.Threading.DispatcherOperationStatus>, and <xref:System.Windows.Threading.DispatcherOperationStatus>.  At any point before the operation has completed, the status can be set to <xref:System.Windows.Threading.DispatcherOperationStatus>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -253,10 +253,10 @@
         <returns>The status of the operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To obtain the return value of the invoked delegate, use the <xref:System.Windows.Threading.DispatcherOperation.Result%2A> property.  
-  
+To obtain the return value of the invoked delegate, use the <xref:System.Windows.Threading.DispatcherOperation.Result%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -289,10 +289,10 @@
         <returns>The status of the operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To obtain the return value of the invoked delegate, use the <xref:System.Windows.Threading.DispatcherOperation.Result%2A> property.  
-  
+To obtain the return value of the invoked delegate, use the <xref:System.Windows.Threading.DispatcherOperation.Result%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">

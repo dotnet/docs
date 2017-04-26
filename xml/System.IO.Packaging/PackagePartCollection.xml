@@ -22,10 +22,10 @@
     <summary>Represents a collection of <see cref="T:System.IO.Packaging.PackagePart" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Packaging.PackagePartCollection> class has no public constructor.  This class is created and returned by the <xref:System.IO.Packaging.Package.GetParts%2A?displayProperty=fullName> method.  
-  
+The <xref:System.IO.Packaging.PackagePartCollection> class has no public constructor.  This class is created and returned by the <xref:System.IO.Packaging.Package.GetParts%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,10 +52,10 @@
         <returns>An enumerator for iterating through the <see cref="T:System.IO.Packaging.PackagePart" /> elements in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection accessed by the enumerator is invalidated after any change occurs to the underlying collection.  The underlying collection can change when the <xref:System.IO.Packaging.Package.CreatePart%2A?displayProperty=fullName> method or <xref:System.IO.Packaging.Package.DeletePart%2A?displayProperty=fullName> method is called.  
-  
+The collection accessed by the enumerator is invalidated after any change occurs to the underlying collection.  The underlying collection can change when the <xref:System.IO.Packaging.Package.CreatePart%2A?displayProperty=fullName> method or <xref:System.IO.Packaging.Package.DeletePart%2A?displayProperty=fullName> method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,10 +82,10 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.IO.Packaging.PackagePartCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.IO.Packaging.PackagePartCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.IO.Packaging.PackagePartCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.IO.Packaging.PackagePartCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

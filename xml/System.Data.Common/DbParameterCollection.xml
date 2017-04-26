@@ -909,12 +909,12 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbParameterCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- For more information, see <xref:System.Collections.IList.Item%2A>.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbParameterCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
+For more information, see <xref:System.Collections.IList.Item%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -949,12 +949,12 @@
         <value>An <see cref="T:System.Object" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbParameterCollection> instance is cast to an <xref:System.Data.IDataParameterCollection> interface.  
-  
- For more information, see <xref:System.Data.IDataParameterCollection.Item%2A>.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbParameterCollection> instance is cast to an <xref:System.Data.IDataParameterCollection> interface.  
+ 
+For more information, see <xref:System.Data.IDataParameterCollection.Item%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

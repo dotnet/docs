@@ -63,10 +63,10 @@
         <returns>The item created.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Peers.IViewAutomationPeer> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Peers.IViewAutomationPeer> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <returns>A value in the enumeration.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Peers.IViewAutomationPeer> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Peers.IViewAutomationPeer> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
         <returns>Collection of child objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Peers.IViewAutomationPeer> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Peers.IViewAutomationPeer> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,10 +147,10 @@
         <returns>If <paramref name="patternInterface" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.Grid" /> or <see cref="F:System.Windows.Automation.Peers.PatternInterface.Table" />, this method returns an object that implements the control pattern, otherwise this method returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Peers.IViewAutomationPeer> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Peers.IViewAutomationPeer> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,10 +175,10 @@
         <summary>Called when the collection of items changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Peers.IViewAutomationPeer> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Peers.IViewAutomationPeer> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,10 +200,10 @@
         <summary>Called when the custom view is no longer applied to the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Peers.IViewAutomationPeer> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Peers.IViewAutomationPeer> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,10 +225,10 @@
         <value>The total number of columns in a grid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
         <returns>The UI Automation provider for the specified cell.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -281,10 +281,10 @@
         <value>The total number of rows in a grid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -307,10 +307,10 @@
         <returns>A collection of UI Automation providers.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,10 +333,10 @@
         <returns>A collection of UI Automation providers.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,10 +358,10 @@
         <value>The primary direction of traversal.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.GridViewAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ITableProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

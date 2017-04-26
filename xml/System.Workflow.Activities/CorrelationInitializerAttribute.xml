@@ -22,14 +22,14 @@
     <summary>Indicates the method or event on an ExternalDataExchange interface that initializes the correlation value. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- The indicated method or event must be the first reference to the correlation value in the workflow for validation to succeed.  
-  
+ 
+The indicated method or event must be the first reference to the correlation value in the workflow for validation to succeed.  
+ 
  ]]></format>
     </remarks>
   </Docs>

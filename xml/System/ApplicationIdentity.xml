@@ -24,18 +24,18 @@
     <summary>Provides the ability to uniquely identify a manifest-activated application. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ApplicationIdentity> class is used in the activation of manifest-based applications.  
+The <xref:System.ApplicationIdentity> class is used in the activation of manifest-based applications.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of an <xref:System.ActivationContext> object to obtain the <xref:System.ApplicationIdentity> for a manifest-based application. This code example is part of a larger example provided for the <xref:System.ActivationContext> class.  
-  
- [!code-csharp[System.ActivationContext#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ActivationContext/cs/program.cs#2)]
- [!code-vb[System.ActivationContext#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ActivationContext/vb/program.vb#2)]  
-  
+The following code example demonstrates the use of an <xref:System.ActivationContext> object to obtain the <xref:System.ApplicationIdentity> for a manifest-based application. This code example is part of a larger example provided for the <xref:System.ActivationContext> class.  
+ 
+[!code-csharp[System.ActivationContext#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ActivationContext/cs/program.cs#2)]
+[!code-vb[System.ActivationContext#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ActivationContext/vb/program.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,10 +58,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ApplicationIdentity" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The format of the `applicationIdentityFullName` parameter is a comma-delimited Unicode string that begins with the name, as follows:  
-  
+The format of the `applicationIdentityFullName` parameter is a comma-delimited Unicode string that begins with the name, as follows:  
+ 
 ```  
   
 applicationURL  
@@ -71,9 +71,9 @@ deploymentIdentity
 applicationIdentity  
   
 ```  
-  
- Where *deploymentIdentity* =  
-  
+ 
+Where *deploymentIdentity* =  
+ 
 ```  
   
 deploymentManifest  
@@ -87,9 +87,9 @@ TokenNumber
 processorArchitecture  
   
 ```  
-  
- And *applicationIdentity* =  
-  
+ 
+And *applicationIdentity* =  
+ 
 ```  
   
 applicationName  
@@ -105,17 +105,17 @@ processorArchitecture
 OsType  
   
 ```  
-  
- The following is an example of the full name for an application named ActivationContext:  
-  
+ 
+The following is an example of the full name for an application named ActivationContext:  
+ 
 ```  
 http://testserver/ActivationContext/ActivationContext.application  
 #ActivationContext.application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ae13aad84c1a3490, processorArchitecture=msil  
 \ActivationContext.exe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ae13aad84c1a3490, processorArchitecture=msil, type=win32  
 ```  
-  
- The default value for processor architecture is "msil", and the default value for type is "win32".  
-  
+ 
+The default value for processor architecture is "msil", and the default value for type is "win32".  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -140,22 +140,22 @@ http://testserver/ActivationContext/ActivationContext.application
         <value>The URL of the deployment manifest.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following are two examples of <xref:System.ApplicationIdentity.CodeBase%2A> property values for an application named ActivationContext:  
-  
+The following are two examples of <xref:System.ApplicationIdentity.CodeBase%2A> property values for an application named ActivationContext:  
+ 
 -   http://testserver/ActivationContext/ActivationContext.application  
-  
+ 
 -   file://C:/UserFiles/UserName/SolutionName/ActivationContext/publish/ActivationContext.application.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of an <xref:System.ApplicationIdentity> object to obtain the value of the <xref:System.ApplicationIdentity.CodeBase%2A> property for a manifest-based application. This code example is part of a larger example provided for the <xref:System.ActivationContext> class.  
-  
- [!code-csharp[System.ActivationContext#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ActivationContext/cs/program.cs#3)]
- [!code-vb[System.ActivationContext#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ActivationContext/vb/program.vb#3)]  
-  
+The following code example demonstrates the use of an <xref:System.ApplicationIdentity> object to obtain the value of the <xref:System.ApplicationIdentity.CodeBase%2A> property for a manifest-based application. This code example is part of a larger example provided for the <xref:System.ActivationContext> class.  
+ 
+[!code-csharp[System.ActivationContext#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ActivationContext/cs/program.cs#3)]
+[!code-vb[System.ActivationContext#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ActivationContext/vb/program.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,18 +178,18 @@ http://testserver/ActivationContext/ActivationContext.application
         <value>The full name of the application, also known as the display name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a description of the format of the <xref:System.ApplicationIdentity.FullName%2A> property, see the <xref:System.ApplicationIdentity.%23ctor%2A> constructor.  
+For a description of the format of the <xref:System.ApplicationIdentity.FullName%2A> property, see the <xref:System.ApplicationIdentity.%23ctor%2A> constructor.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of an <xref:System.ApplicationIdentity> object to obtain the value of the <xref:System.ApplicationIdentity.FullName%2A> property for a manifest-based application. This code example is part of a larger example provided for the <xref:System.ActivationContext> class.  
-  
- [!code-csharp[System.ActivationContext#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ActivationContext/cs/program.cs#3)]
- [!code-vb[System.ActivationContext#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ActivationContext/vb/program.vb#3)]  
-  
+The following code example demonstrates the use of an <xref:System.ApplicationIdentity> object to obtain the value of the <xref:System.ApplicationIdentity.FullName%2A> property for a manifest-based application. This code example is part of a larger example provided for the <xref:System.ActivationContext> class.  
+ 
+[!code-csharp[System.ActivationContext#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ActivationContext/cs/program.cs#3)]
+[!code-vb[System.ActivationContext#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ActivationContext/vb/program.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,10 +238,10 @@ http://testserver/ActivationContext/ActivationContext.application
         <returns>The full name of the manifest-activated application.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a description of the format of a full name for a manifest activated application, see the <xref:System.ApplicationIdentity.%23ctor%2A> constructor.  
-  
+For a description of the format of a full name for a manifest activated application, see the <xref:System.ApplicationIdentity.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

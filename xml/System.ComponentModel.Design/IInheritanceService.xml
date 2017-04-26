@@ -16,12 +16,12 @@
     <summary>Provides methods for identifying the components of a component.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface provides methods that can be used to identify components of a component that are inherited from a base class.  
-  
- To determine what components are inherited, call the <xref:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents%2A> method and pass the component to search and an <xref:System.ComponentModel.IContainer> to store references to the identified components. Call the <xref:System.ComponentModel.Design.IInheritanceService.GetInheritanceAttribute%2A> method to retrieve an <xref:System.ComponentModel.InheritanceAttribute> for a component that has been identified by the <xref:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents%2A> method.  
-  
+This interface provides methods that can be used to identify components of a component that are inherited from a base class.  
+ 
+To determine what components are inherited, call the <xref:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents%2A> method and pass the component to search and an <xref:System.ComponentModel.IContainer> to store references to the identified components. Call the <xref:System.ComponentModel.Design.IInheritanceService.GetInheritanceAttribute%2A> method to retrieve an <xref:System.ComponentModel.InheritanceAttribute> for a component that has been identified by the <xref:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,10 +53,10 @@
         <summary>Searches the specified component for fields that implement the <see cref="T:System.ComponentModel.IComponent" /> interface and adds each to the specified container, storing the inheritance level of each which can be retrieved using the <see cref="M:System.ComponentModel.Design.IInheritanceService.GetInheritanceAttribute(System.ComponentModel.IComponent)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method searches the specified component for any fields that implement the <xref:System.ComponentModel.IComponent>, adds each to the specified container, and stores an <xref:System.ComponentModel.InheritanceAttribute> for each. The <xref:System.ComponentModel.InheritanceAttribute> for a component indicates whether the field is inherited from a base class and can be retrieved using the <xref:System.ComponentModel.Design.IInheritanceService.GetInheritanceAttribute%2A> method.  
-  
+This method searches the specified component for any fields that implement the <xref:System.ComponentModel.IComponent>, adds each to the specified container, and stores an <xref:System.ComponentModel.InheritanceAttribute> for each. The <xref:System.ComponentModel.InheritanceAttribute> for a component indicates whether the field is inherited from a base class and can be retrieved using the <xref:System.ComponentModel.Design.IInheritanceService.GetInheritanceAttribute%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,12 +87,12 @@
         <returns>An instance of <see cref="T:System.ComponentModel.InheritanceAttribute" /> that describes the level of inheritance of the specified component.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the component has been profiled by the <xref:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents%2A> method, this method returns the value <xref:System.ComponentModel.InheritanceAttribute.NotInherited?displayProperty=fullName>. Otherwise, it returns the inheritance attribute for this component.  
-  
- You should call <xref:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents%2A> on the specified component or a parent of the specified component before attempting to obtain an <xref:System.ComponentModel.InheritanceAttribute> that reflects the inheritance level of the specified component.  
-  
+If the component has been profiled by the <xref:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents%2A> method, this method returns the value <xref:System.ComponentModel.InheritanceAttribute.NotInherited?displayProperty=fullName>. Otherwise, it returns the inheritance attribute for this component.  
+ 
+You should call <xref:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents%2A> on the specified component or a parent of the specified component before attempting to obtain an <xref:System.ComponentModel.InheritanceAttribute> that reflects the inheritance level of the specified component.  
+ 
  ]]></format>
         </remarks>
       </Docs>

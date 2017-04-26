@@ -34,10 +34,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.CleanUpVirtualizedItemEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `value` is a visual element, `value` and `element` are identical.  
-  
+If `value` is a visual element, `value` and `element` are identical.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -78,10 +78,10 @@
         <value>The <see cref="T:System.Windows.UIElement" /> that represents the data value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Controls.CleanUpVirtualizedItemEventArgs.Value%2A> is a visual element, its property value will be the same as <xref:System.Windows.Controls.CleanUpVirtualizedItemEventArgs.UIElement%2A>.  
-  
+If <xref:System.Windows.Controls.CleanUpVirtualizedItemEventArgs.Value%2A> is a visual element, its property value will be the same as <xref:System.Windows.Controls.CleanUpVirtualizedItemEventArgs.UIElement%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <value>The <see cref="T:System.Object" /> that represents the original data value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Controls.CleanUpVirtualizedItemEventArgs.Value%2A> is a visual element, its property value will be the same as <xref:System.Windows.Controls.CleanUpVirtualizedItemEventArgs.UIElement%2A>.  
-  
+If <xref:System.Windows.Controls.CleanUpVirtualizedItemEventArgs.Value%2A> is a visual element, its property value will be the same as <xref:System.Windows.Controls.CleanUpVirtualizedItemEventArgs.UIElement%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

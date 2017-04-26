@@ -153,10 +153,10 @@
           <see langword="true" /> if Windows groups are included in the security context; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property to `true` has a performance impact as it results in a full group expansion. Set this property to `false` if you do not need to establish the list of groups a user belongs to.  
-  
+Setting this property to `true` has a performance impact as it results in a full group expansion. Set this property to `false` if you do not need to establish the list of groups a user belongs to.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,10 +212,10 @@
         <value>The name of a member provider that provides password validation logic.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When using username `ClientCredentialType` on a binding, the usernames are mapped to Windows accounts by default. It is possible to override this behavior using this property, which provides the name of the <xref:System.Web.Security.MembershipProvider> that specifies the relevant password validation logic.  
-  
+When using username `ClientCredentialType` on a binding, the usernames are mapped to Windows accounts by default. It is possible to override this behavior using this property, which provides the name of the <xref:System.Web.Security.MembershipProvider> that specifies the relevant password validation logic.  
+ 
  ]]></format>
         </remarks>
       </Docs>

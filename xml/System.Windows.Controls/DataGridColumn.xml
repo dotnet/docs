@@ -14,10 +14,10 @@
     <summary>Represents a <see cref="T:System.Windows.Controls.DataGrid" /> column.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This abstract class provides the base functionality for all <xref:System.Windows.Controls.DataGrid> columns.  
-  
+This abstract class provides the base functionality for all <xref:System.Windows.Controls.DataGrid> columns.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,12 +54,12 @@
         <value>The width of the column in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]. The registered default is 0. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the <xref:System.Windows.Controls.DataGridColumn.ActualWidth%2A> property is used to arrange the cells and header of the column. The value is coerced to be within the <xref:System.Windows.Controls.DataGridColumn.MaxWidth%2A> and <xref:System.Windows.Controls.DataGridColumn.MinWidth%2A> constraints.  
-  
- To get the rendered width of the column, use the <xref:System.Windows.Controls.DataGridLength.DisplayValue%2A> of the <xref:System.Windows.Controls.DataGridColumn.Width%2A> property.  
-  
+The value of the <xref:System.Windows.Controls.DataGridColumn.ActualWidth%2A> property is used to arrange the cells and header of the column. The value is coerced to be within the <xref:System.Windows.Controls.DataGridColumn.MaxWidth%2A> and <xref:System.Windows.Controls.DataGridColumn.MinWidth%2A> constraints.  
+ 
+To get the rendered width of the column, use the <xref:System.Windows.Controls.DataGridLength.DisplayValue%2A> of the <xref:System.Windows.Controls.DataGridColumn.Width%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,10 +122,10 @@
           <see langword="true" /> if the user can drag the column header to a new position; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set this reorder behavior for all columns by setting the <xref:System.Windows.Controls.DataGrid.CanUserReorderColumns%2A?displayProperty=fullName> property. If the <xref:System.Windows.Controls.DataGridColumn.CanUserReorder%2A?displayProperty=fullName> property and the <xref:System.Windows.Controls.DataGrid.CanUserReorderColumns%2A?displayProperty=fullName> property are both set, a value of `false` takes precedence over a value of `true`.  
-  
+You can set this reorder behavior for all columns by setting the <xref:System.Windows.Controls.DataGrid.CanUserReorderColumns%2A?displayProperty=fullName> property. If the <xref:System.Windows.Controls.DataGridColumn.CanUserReorder%2A?displayProperty=fullName> property and the <xref:System.Windows.Controls.DataGrid.CanUserReorderColumns%2A?displayProperty=fullName> property are both set, a value of `false` takes precedence over a value of `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,12 +165,12 @@
           <see langword="true" /> if the user can resize the column; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property does not affect whether column widths can be changed programmatically, such as by changing the <xref:System.Windows.Controls.DataGridColumn.Width%2A> property.  
-  
- You can set this resize behavior for all columns by setting the <xref:System.Windows.Controls.DataGrid.CanUserResizeColumns%2A?displayProperty=fullName> property. If the <xref:System.Windows.Controls.DataGridColumn.CanUserResize%2A?displayProperty=fullName> property and the <xref:System.Windows.Controls.DataGrid.CanUserResizeColumns%2A?displayProperty=fullName> property are both set, a value of `false` takes precedence over a value of `true`.  
-  
+This property does not affect whether column widths can be changed programmatically, such as by changing the <xref:System.Windows.Controls.DataGridColumn.Width%2A> property.  
+ 
+You can set this resize behavior for all columns by setting the <xref:System.Windows.Controls.DataGrid.CanUserResizeColumns%2A?displayProperty=fullName> property. If the <xref:System.Windows.Controls.DataGridColumn.CanUserResize%2A?displayProperty=fullName> property and the <xref:System.Windows.Controls.DataGrid.CanUserResizeColumns%2A?displayProperty=fullName> property are both set, a value of `false` takes precedence over a value of `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -210,10 +210,10 @@
           <see langword="true" /> if the user can sort the column; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set this sorting behavior for all columns by setting the <xref:System.Windows.Controls.DataGrid.CanUserSortColumns%2A?displayProperty=fullName> property. If the <xref:System.Windows.Controls.DataGridColumn.CanUserSort%2A?displayProperty=fullName> property and the <xref:System.Windows.Controls.DataGrid.CanUserSortColumns%2A?displayProperty=fullName> property are both set, a value of `false` takes precedence over a value of `true`.  
-  
+You can set this sorting behavior for all columns by setting the <xref:System.Windows.Controls.DataGrid.CanUserSortColumns%2A?displayProperty=fullName> property. If the <xref:System.Windows.Controls.DataGridColumn.CanUserSort%2A?displayProperty=fullName> property and the <xref:System.Windows.Controls.DataGrid.CanUserSortColumns%2A?displayProperty=fullName> property are both set, a value of `false` takes precedence over a value of `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,12 +252,12 @@
         <value>The style that is used to render cells in the column. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To define a <xref:System.Windows.Style> for a cell, specify a <xref:System.Windows.Style.TargetType%2A> of <xref:System.Windows.Controls.DataGridCell>.  
-  
- A <xref:System.Windows.Style> can be applied to a cell at the table, column, or cell level. To apply a <xref:System.Windows.Style> to all cells in a column, set the <xref:System.Windows.Controls.DataGridColumn.CellStyle%2A?displayProperty=fullName> property, which takes precedence over the <xref:System.Windows.Controls.DataGrid.CellStyle%2A?displayProperty=fullName> property. To apply a <xref:System.Windows.Style> to an individual cell, set the <xref:System.Windows.FrameworkElement.Style%2A> property directly on the <xref:System.Windows.Controls.DataGridCell> object, which takes precedence over all other styles that you apply to the cell.  
-  
+To define a <xref:System.Windows.Style> for a cell, specify a <xref:System.Windows.Style.TargetType%2A> of <xref:System.Windows.Controls.DataGridCell>.  
+ 
+A <xref:System.Windows.Style> can be applied to a cell at the table, column, or cell level. To apply a <xref:System.Windows.Style> to all cells in a column, set the <xref:System.Windows.Controls.DataGridColumn.CellStyle%2A?displayProperty=fullName> property, which takes precedence over the <xref:System.Windows.Controls.DataGrid.CellStyle%2A?displayProperty=fullName> property. To apply a <xref:System.Windows.Style> to an individual cell, set the <xref:System.Windows.FrameworkElement.Style%2A> property directly on the <xref:System.Windows.Controls.DataGridCell> object, which takes precedence over all other styles that you apply to the cell.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -336,10 +336,10 @@
         <summary>Occurs after the cell clipboard content is prepared.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Event handlers can modify the cell content before it gets stored on the clipboard.  
-  
+Event handlers can modify the cell content before it gets stored on the clipboard.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -379,16 +379,16 @@
         <value>The zero-based position of the column, as it is displayed in the associated <see cref="T:System.Windows.Controls.DataGrid" />. The registered default is -1. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> property has a default value of -1 before it is added to the <xref:System.Windows.Controls.DataGrid.Columns%2A?displayProperty=fullName> collection. This value is updated when the column is added to the <xref:System.Windows.Controls.DataGrid>.  
-  
- The <xref:System.Windows.Controls.DataGrid> requires that the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> property of each column must be a unique integer from 0 to the <xref:System.Windows.Controls.ColumnDefinitionCollection.Count%2A> of <xref:System.Windows.Controls.DataGrid.Columns%2A> -1. Therefore, when the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> of one column changes, the change typically causes the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> of other columns to also change.  
-  
- The restrictions on the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
-  
- When the value of the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> property is changed, the <xref:System.Windows.Controls.DataGrid.ColumnDisplayIndexChanged?displayProperty=fullName> event is raised.  
-  
+The <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> property has a default value of -1 before it is added to the <xref:System.Windows.Controls.DataGrid.Columns%2A?displayProperty=fullName> collection. This value is updated when the column is added to the <xref:System.Windows.Controls.DataGrid>.  
+ 
+The <xref:System.Windows.Controls.DataGrid> requires that the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> property of each column must be a unique integer from 0 to the <xref:System.Windows.Controls.ColumnDefinitionCollection.Count%2A> of <xref:System.Windows.Controls.DataGrid.Columns%2A> -1. Therefore, when the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> of one column changes, the change typically causes the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> of other columns to also change.  
+ 
+The restrictions on the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
+ 
+When the value of the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> property is changed, the <xref:System.Windows.Controls.DataGrid.ColumnDisplayIndexChanged?displayProperty=fullName> event is raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -427,12 +427,12 @@
         <value>The style object to apply to the column header during a drag operation. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to set the <xref:System.Windows.Controls.DataGridColumn.DragIndicatorStyle%2A> for an individual column in the <xref:System.Windows.Controls.DataGrid>. To define a <xref:System.Windows.Style> for the drag indicator, specify a <xref:System.Windows.Style.TargetType%2A> of <xref:System.Windows.Controls.Control>.  
-  
- You can set properties in the style to change the appearance of certain elements of the drag indicator, such as the border around the column header. However, the default template for the drag indicator uses a <xref:System.Windows.Media.VisualBrush> to paint a <xref:System.Windows.Controls.Canvas> with an image of the original column header that is being dragged. As a result, if you set some properties in your style, such as <xref:System.Windows.Controls.Control.Background%2A> or <xref:System.Windows.Controls.Control.Foreground%2A>, they will appear to not be applied. To change the appearance of the column header while it is being dragged, apply a new template that does not use the default <xref:System.Windows.Media.VisualBrush>.  
-  
+Use this property to set the <xref:System.Windows.Controls.DataGridColumn.DragIndicatorStyle%2A> for an individual column in the <xref:System.Windows.Controls.DataGrid>. To define a <xref:System.Windows.Style> for the drag indicator, specify a <xref:System.Windows.Style.TargetType%2A> of <xref:System.Windows.Controls.Control>.  
+ 
+You can set properties in the style to change the appearance of certain elements of the drag indicator, such as the border around the column header. However, the default template for the drag indicator uses a <xref:System.Windows.Media.VisualBrush> to paint a <xref:System.Windows.Controls.Canvas> with an image of the original column header that is being dragged. As a result, if you set some properties in your style, such as <xref:System.Windows.Controls.Control.Background%2A> or <xref:System.Windows.Controls.Control.Foreground%2A>, they will appear to not be applied. To change the appearance of the column header while it is being dragged, apply a new template that does not use the default <xref:System.Windows.Media.VisualBrush>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -477,10 +477,10 @@
         <returns>A new editing element that is bound to the <see cref="P:System.Windows.Controls.DataGridBoundColumn.Binding" /> property value of the column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates the visual tree for the cell content when the cell is in editing mode.  
-  
+This method creates the visual tree for the cell content when the cell is in editing mode.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -508,10 +508,10 @@
         <returns>A new read-only element that is bound to the <see cref="P:System.Windows.Controls.DataGridBoundColumn.Binding" /> property value of the column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates the visual tree for the cell content when the cell is in display mode.  
-  
+This method creates the visual tree for the cell content when the cell is in display mode.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -651,20 +651,20 @@
         <value>The style that is used to render the column header; or <see langword="null" />, to use the <see cref="P:System.Windows.Controls.DataGrid.ColumnHeaderStyle" /> setting. The registered default is <see langword="null" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To define a <xref:System.Windows.Style> for a column header, specify a <xref:System.Windows.Style.TargetType%2A> of <xref:System.Windows.Controls.Primitives.DataGridColumnHeader>.  
+To define a <xref:System.Windows.Style> for a column header, specify a <xref:System.Windows.Style.TargetType%2A> of <xref:System.Windows.Controls.Primitives.DataGridColumnHeader>.  
+ 
+A <xref:System.Windows.Style> can be applied to all column headers or to an individual column header. To apply a <xref:System.Windows.Style> to an individual header, set the <xref:System.Windows.Controls.DataGridColumn.HeaderStyle%2A?displayProperty=fullName> property, which takes precedence over the <xref:System.Windows.Controls.DataGrid.ColumnHeaderStyle%2A?displayProperty=fullName> property.  
+ 
   
- A <xref:System.Windows.Style> can be applied to all column headers or to an individual column header. To apply a <xref:System.Windows.Style> to an individual header, set the <xref:System.Windows.Controls.DataGridColumn.HeaderStyle%2A?displayProperty=fullName> property, which takes precedence over the <xref:System.Windows.Controls.DataGrid.ColumnHeaderStyle%2A?displayProperty=fullName> property.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses a style resource to change the style of column headers in the <xref:System.Windows.Controls.DataGrid>. The style of the first column header is then set with an inline style that overrides the <xref:System.Windows.Controls.DataGrid.ColumnHeaderStyle%2A?displayProperty=fullName>.  
-  
- [!code-xml[DataGrid_ColumnHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnheaderstyle/CS/mainwindow.xaml#1)]
- <!-- TODO: review snippet reference [!code-xml[DataGrid_ColumnHeaderStyle#1](~/samples/snippets/xaml/VS_Snippets_Wpf/datagrid_columnheaderstyle/xaml/mainwindow.xaml#1)]  -->  
-  
+The following example uses a style resource to change the style of column headers in the <xref:System.Windows.Controls.DataGrid>. The style of the first column header is then set with an inline style that overrides the <xref:System.Windows.Controls.DataGrid.ColumnHeaderStyle%2A?displayProperty=fullName>.  
+ 
+[!code-xml[DataGrid_ColumnHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnheaderstyle/CS/mainwindow.xaml#1)]
+<!-- TODO: review snippet reference [!code-xml[DataGrid_ColumnHeaderStyle#1](~/samples/snippets/xaml/VS_Snippets_Wpf/datagrid_columnheaderstyle/xaml/mainwindow.xaml#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -810,22 +810,22 @@
           <see langword="true" /> if the column cannot be scrolled horizontally; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.DataGridColumn.IsFrozen%2A> cannot be used to freeze a column. Instead, set the <xref:System.Windows.Controls.DataGrid.FrozenColumnCount%2A> property. The leftmost columns up to the column that is specified by the <xref:System.Windows.Controls.DataGrid.FrozenColumnCount%2A> number will freeze in place.  
+<xref:System.Windows.Controls.DataGridColumn.IsFrozen%2A> cannot be used to freeze a column. Instead, set the <xref:System.Windows.Controls.DataGrid.FrozenColumnCount%2A> property. The leftmost columns up to the column that is specified by the <xref:System.Windows.Controls.DataGrid.FrozenColumnCount%2A> number will freeze in place.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to freeze a column when "Freeze Column" is selected from the <xref:System.Windows.Controls.ContextMenu>. Columns are moved to the left in order to be included in the frozen columns.  
-  
- [!code-xml[DataGrid_FrozenColumn#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_frozencolumn/cs/window1.xaml#1)]  
-  
- [!code-csharp[DataGrid_FrozenColumn#2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_frozencolumn/cs/window1.xaml.cs#2)]
- [!code-vb[DataGrid_FrozenColumn#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_frozencolumn/vb/window1.xaml.vb#2)]  
+The following example shows how to freeze a column when "Freeze Column" is selected from the <xref:System.Windows.Controls.ContextMenu>. Columns are moved to the left in order to be included in the frozen columns.  
+ 
+[!code-xml[DataGrid_FrozenColumn#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_frozencolumn/cs/window1.xaml#1)]  
+ 
+[!code-csharp[DataGrid_FrozenColumn#2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_frozencolumn/cs/window1.xaml.cs#2)]
+[!code-vb[DataGrid_FrozenColumn#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_frozencolumn/vb/window1.xaml.vb#2)]  
 [!code-csharp[DataGrid_FrozenColumn#3](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_frozencolumn/cs/window1.xaml.cs#3)]
 [!code-vb[DataGrid_FrozenColumn#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_frozencolumn/vb/window1.xaml.vb#3)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -865,10 +865,10 @@
           <see langword="true" /> if cells in the column cannot be edited; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set the <xref:System.Windows.Controls.DataGridColumn.IsReadOnly%2A> property to `true` to make all cells in an individual column read-only. Set the <xref:System.Windows.Controls.DataGrid.IsReadOnly%2A?displayProperty=fullName> property to `true` to make all cells in the <xref:System.Windows.Controls.DataGrid> read-only. Set the <xref:System.Windows.Controls.DataGridCell.IsReadOnly%2A?displayProperty=fullName> property to `true` to make an individual cell read-only. If a conflict exists between the settings at the <xref:System.Windows.Controls.DataGrid>, column, or cell levels, a value of `true` takes precedence over a value of `false`.  
-  
+Set the <xref:System.Windows.Controls.DataGridColumn.IsReadOnly%2A> property to `true` to make all cells in an individual column read-only. Set the <xref:System.Windows.Controls.DataGrid.IsReadOnly%2A?displayProperty=fullName> property to `true` to make all cells in the <xref:System.Windows.Controls.DataGrid> read-only. Set the <xref:System.Windows.Controls.DataGridCell.IsReadOnly%2A?displayProperty=fullName> property to `true` to make an individual cell read-only. If a conflict exists between the settings at the <xref:System.Windows.Controls.DataGrid>, column, or cell levels, a value of `true` takes precedence over a value of `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -907,22 +907,22 @@
         <value>The maximum column width, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]. The registered default is <see cref="F:System.Double.PositiveInfinity" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you set a value for the <xref:System.Windows.Controls.DataGridColumn.MaxWidth%2A> property, it must be greater than or equal to 0.0.  
-  
- <xref:System.Double?displayProperty=fullName> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
-  
- The <xref:System.Windows.Controls.DataGridLength.DisplayValue%2A> of the <xref:System.Windows.Controls.DataGrid.ColumnWidth%2A?displayProperty=fullName> and <xref:System.Windows.Controls.DataGridColumn.Width%2A?displayProperty=fullName> properties are constrained by the following properties, if they are set, in order of precedence:  
-  
+When you set a value for the <xref:System.Windows.Controls.DataGridColumn.MaxWidth%2A> property, it must be greater than or equal to 0.0.  
+ 
+<xref:System.Double?displayProperty=fullName> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
+ 
+The <xref:System.Windows.Controls.DataGridLength.DisplayValue%2A> of the <xref:System.Windows.Controls.DataGrid.ColumnWidth%2A?displayProperty=fullName> and <xref:System.Windows.Controls.DataGridColumn.Width%2A?displayProperty=fullName> properties are constrained by the following properties, if they are set, in order of precedence:  
+ 
 -   <xref:System.Windows.Controls.DataGridColumn.MaxWidth%2A?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Controls.DataGrid.MaxColumnWidth%2A?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Controls.DataGridColumn.MinWidth%2A?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Controls.DataGrid.MinColumnWidth%2A?displayProperty=fullName>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -961,22 +961,22 @@
         <value>The minimum column width, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]. The registered default is 20. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you set a value for the <xref:System.Windows.Controls.DataGridColumn.MinWidth%2A> property, the value must be greater than or equal to 0.0.  
-  
- <xref:System.Double?displayProperty=fullName> and <xref:System.Double?displayProperty=fullName> are not valid values for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
-  
- The <xref:System.Windows.Controls.DataGridLength.DisplayValue%2A> of the <xref:System.Windows.Controls.DataGrid.ColumnWidth%2A?displayProperty=fullName> and <xref:System.Windows.Controls.DataGridColumn.Width%2A?displayProperty=fullName> properties are constrained by the following properties, if they are set, in order of precedence:  
-  
+When you set a value for the <xref:System.Windows.Controls.DataGridColumn.MinWidth%2A> property, the value must be greater than or equal to 0.0.  
+ 
+<xref:System.Double?displayProperty=fullName> and <xref:System.Double?displayProperty=fullName> are not valid values for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
+ 
+The <xref:System.Windows.Controls.DataGridLength.DisplayValue%2A> of the <xref:System.Windows.Controls.DataGrid.ColumnWidth%2A?displayProperty=fullName> and <xref:System.Windows.Controls.DataGridColumn.Width%2A?displayProperty=fullName> properties are constrained by the following properties, if they are set, in order of precedence:  
+ 
 -   <xref:System.Windows.Controls.DataGridColumn.MaxWidth%2A?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Controls.DataGrid.MaxColumnWidth%2A?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Controls.DataGridColumn.MinWidth%2A?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Controls.DataGrid.MinColumnWidth%2A?displayProperty=fullName>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1063,10 +1063,10 @@
         <returns>An object that represents the content of the cell.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called for each selected cell to retrieve the default cell content. It then raises the <xref:System.Windows.Controls.DataGridColumn.CopyingCellClipboardContent> event. You can handle the event to modify the cell content before it is returned.  
-  
+This method is called for each selected cell to retrieve the default cell content. It then raises the <xref:System.Windows.Controls.DataGridColumn.CopyingCellClipboardContent> event. You can handle the event to modify the cell content before it is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1093,12 +1093,12 @@
         <summary>Raises the <see cref="E:System.Windows.Controls.DataGridColumn.PastingCellClipboardContent" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used as a helper if you provide a custom paste implementation for the <xref:System.Windows.Controls.DataGrid>. The cell content is stored in the `item` object.  
-  
- This method raises the <xref:System.Windows.Controls.DataGridColumn.PastingCellClipboardContent> event. You can handle the event to modify the cell content before it is pasted into the cell. You can set `cellContent` to `null` to cancel the paste action.  
-  
+This method can be used as a helper if you provide a custom paste implementation for the <xref:System.Windows.Controls.DataGrid>. The cell content is stored in the `item` object.  
+ 
+This method raises the <xref:System.Windows.Controls.DataGridColumn.PastingCellClipboardContent> event. You can handle the event to modify the cell content before it is pasted into the cell. You can set `cellContent` to `null` to cancel the paste action.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1119,10 +1119,10 @@
         <summary>Occurs before the clipboard content is moved to the cell.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Event handlers can modify the clipboard content before it gets stored in the cell content.  
-  
+Event handlers can modify the clipboard content before it gets stored in the cell content.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1150,10 +1150,10 @@
         <returns>When returned by a derived class, the unedited cell value. This implementation returns <see langword="null" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived column types override this method to respond to the user gesture that is indicated by `editingEventArgs` and to return the current value before editing.  
-  
+Derived column types override this method to respond to the user gesture that is indicated by `editingEventArgs` and to return the current value before editing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1268,21 +1268,21 @@
         <value>An enumeration value that specifies the column visibility. The registered default is <see cref="F:System.Windows.Visibility.Visible" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To hide a column, set its <xref:System.Windows.Controls.DataGridColumn.Visibility%2A> property to <xref:System.Windows.Visibility>.  
+To hide a column, set its <xref:System.Windows.Controls.DataGridColumn.Visibility%2A> property to <xref:System.Windows.Visibility>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the visibility of the column.  
-  
- [!code-xml[DataGrid_ColumnsManipulation#Visible](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#visible)]  
+The following example shows how to set the visibility of the column.  
+ 
+[!code-xml[DataGrid_ColumnsManipulation#Visible](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#visible)]  
 [!code-xml[DataGrid_ColumnsManipulation#DataGrid](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#datagrid)]  
-  
- [!code-csharp[DataGrid_ColumnsManipulation#Visible2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml.cs#visible2)]
- [!code-vb[DataGrid_ColumnsManipulation#Visible2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_columnsmanipulation/vb/datagrid_columnsmanipulation_vb/window1.xaml.vb#visible2)]  
-  
+ 
+[!code-csharp[DataGrid_ColumnsManipulation#Visible2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml.cs#visible2)]
+[!code-vb[DataGrid_ColumnsManipulation#Visible2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_columnsmanipulation/vb/datagrid_columnsmanipulation_vb/window1.xaml.vb#visible2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1321,20 +1321,20 @@
         <value>A structure that represents the column width or automatic sizing mode. The registered default is <see cref="P:System.Windows.Controls.DataGridLength.Auto" />. For information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.DataGridColumn.Width%2A> property, when set on an individual <xref:System.Windows.Controls.DataGridColumn>, takes precedence over the <xref:System.Windows.Controls.DataGrid.ColumnWidth%2A?displayProperty=fullName> property.  
-  
- The <xref:System.Windows.Controls.DataGridLength.DisplayValue%2A> of the <xref:System.Windows.Controls.DataGridColumn.Width%2A> property is constrained by the following properties, if they are set, in order of precedence:  
-  
+The <xref:System.Windows.Controls.DataGridColumn.Width%2A> property, when set on an individual <xref:System.Windows.Controls.DataGridColumn>, takes precedence over the <xref:System.Windows.Controls.DataGrid.ColumnWidth%2A?displayProperty=fullName> property.  
+ 
+The <xref:System.Windows.Controls.DataGridLength.DisplayValue%2A> of the <xref:System.Windows.Controls.DataGridColumn.Width%2A> property is constrained by the following properties, if they are set, in order of precedence:  
+ 
 -   <xref:System.Windows.Controls.DataGridColumn.MaxWidth%2A?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Controls.DataGrid.MaxColumnWidth%2A?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Controls.DataGridColumn.MinWidth%2A?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Windows.Controls.DataGrid.MinColumnWidth%2A?displayProperty=fullName>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

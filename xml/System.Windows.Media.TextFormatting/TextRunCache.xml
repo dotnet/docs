@@ -14,10 +14,10 @@
     <summary>Provides caching services to the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> object in order to improve performance.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applications that use this caching mechanism are responsible for invalidating the content in the cache when it has changed.  
-  
+Applications that use this caching mechanism are responsible for invalidating the content in the cache when it has changed.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,10 +79,10 @@
         <summary>Signals the text engine client to invalidate the entire contents of the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> cache.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Invalidating the entire cache has the effect of emptying the cache. The cache refills with subsequent calls to the <xref:System.Windows.Media.TextFormatting> APIs.  
-  
+Invalidating the entire cache has the effect of emptying the cache. The cache refills with subsequent calls to the <xref:System.Windows.Media.TextFormatting> APIs.  
+ 
  ]]></format>
         </remarks>
       </Docs>

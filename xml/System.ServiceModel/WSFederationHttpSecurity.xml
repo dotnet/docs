@@ -14,10 +14,10 @@
     <summary>Specifies the security settings for the <see cref="T:System.ServiceModel.WSFederationHttpBinding" />. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class specifies the kind of security to be applied to the `wsFederationHttpBinding` binding and the specific security settings.  
-  
+This class specifies the kind of security to be applied to the `wsFederationHttpBinding` binding and the specific security settings.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,18 +54,18 @@
         <value>A <see cref="T:System.ServiceModel.FederatedMessageSecurityOverHttp" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The object returned specifies detailed message-level security properties for the `wsFederationHttpBinding`.  
+The object returned specifies detailed message-level security properties for the `wsFederationHttpBinding`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to access this property and use it to set properties of the `wsFederationHttpBinding`.  
-  
- [!code-csharp[WSFederationHttpSecurity#2](~/samples/snippets/csharp/VS_Snippets_CFX/wsfederationhttpsecurity/cs/source.cs#2)]
- [!code-vb[WSFederationHttpSecurity#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/wsfederationhttpsecurity/vb/source.vb#2)]  
-  
+The following code shows how to access this property and use it to set properties of the `wsFederationHttpBinding`.  
+ 
+[!code-csharp[WSFederationHttpSecurity#2](~/samples/snippets/csharp/VS_Snippets_CFX/wsfederationhttpsecurity/cs/source.cs#2)]
+[!code-vb[WSFederationHttpSecurity#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/wsfederationhttpsecurity/vb/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,24 +87,24 @@
         <value>A <see cref="T:System.ServiceModel.WSFederationHttpSecurityMode" />. The default is <see cref="F:System.ServiceModel.WSFederationHttpSecurityMode.Message" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The enumeration member returned specifies which general type of security is to be applied.  
+The enumeration member returned specifies which general type of security is to be applied.  
+ 
+The allowed values are <xref:System.ServiceModel.WSFederationHttpSecurityMode> and <xref:System.ServiceModel.WSFederationHttpSecurityMode>.  
+ 
+In the <xref:System.ServiceModel.WSFederationHttpSecurityMode> security mode, the message is sent over HTTP and SOAP message security is used to protect the message. Client authentication is performed based on the issued token obtained from the security token service. Server authentication is based on the server's certificate.  
+ 
+In the <xref:System.ServiceModel.WSFederationHttpSecurityMode> security mode, the message is sent over HTTPS. Client authentication is performed by including the issued token obtained from the security token service in the SOAP message. Server authentication, based on the server's certificate, is performed as part of the HTTPS connection setup.  
+ 
   
- The allowed values are <xref:System.ServiceModel.WSFederationHttpSecurityMode> and <xref:System.ServiceModel.WSFederationHttpSecurityMode>.  
-  
- In the <xref:System.ServiceModel.WSFederationHttpSecurityMode> security mode, the message is sent over HTTP and SOAP message security is used to protect the message. Client authentication is performed based on the issued token obtained from the security token service. Server authentication is based on the server's certificate.  
-  
- In the <xref:System.ServiceModel.WSFederationHttpSecurityMode> security mode, the message is sent over HTTPS. Client authentication is performed by including the issued token obtained from the security token service in the SOAP message. Server authentication, based on the server's certificate, is performed as part of the HTTPS connection setup.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to set this property.  
-  
- [!code-csharp[WSFederationHttpSecurity#3](~/samples/snippets/csharp/VS_Snippets_CFX/wsfederationhttpsecurity/cs/source.cs#3)]
- [!code-vb[WSFederationHttpSecurity#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/wsfederationhttpsecurity/vb/source.vb#3)]  
-  
+The following code shows how to set this property.  
+ 
+[!code-csharp[WSFederationHttpSecurity#3](~/samples/snippets/csharp/VS_Snippets_CFX/wsfederationhttpsecurity/cs/source.cs#3)]
+[!code-vb[WSFederationHttpSecurity#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/wsfederationhttpsecurity/vb/source.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Save%2A?displayProperty=fullName> method must be called to commit the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty> object that was created to the Active Directory Domain Services.  
-  
+The <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Save%2A?displayProperty=fullName> method must be called to commit the <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty> object that was created to the Active Directory Domain Services.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -498,10 +498,10 @@
         <value>A <see cref="T:System.Guid" /> that represents the schemaIDGuid for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> object. For more information, see the topic [Schema-ID-GUID](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_schemaidguid.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.SchemaGuid%2A> is used in many Active Directory Domain Services configuration operations, such as managing extended rights.  
-  
+The <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.SchemaGuid%2A> is used in many Active Directory Domain Services configuration operations, such as managing extended rights.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>

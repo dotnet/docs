@@ -22,17 +22,17 @@
     <summary>An abstract base class that provides functionality for text editing controls, including <see cref="T:System.Windows.Controls.TextBox" /> and <see cref="T:System.Windows.Controls.RichTextBox" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the derived <xref:System.Windows.Controls.TextBox> object in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
-  
- [!code-xml[TextBoxBase_Samp#TextBoxBase1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml#textboxbase1)]  
-  
- The following example demonstrates how to use the derived <xref:System.Windows.Controls.RichTextBox> object in code.  
-  
- [!code-csharp[richtextboxsnippets#_RichTextBox_MouseUpDown](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_richtextbox_mouseupdown)]
- [!code-vb[richtextboxsnippets#_RichTextBox_MouseUpDown](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_richtextbox_mouseupdown)]  
-  
+The following example demonstrates how to use the derived <xref:System.Windows.Controls.TextBox> object in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+ 
+[!code-xml[TextBoxBase_Samp#TextBoxBase1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml#textboxbase1)]  
+ 
+The following example demonstrates how to use the derived <xref:System.Windows.Controls.RichTextBox> object in code.  
+ 
+[!code-csharp[richtextboxsnippets#_RichTextBox_MouseUpDown](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_richtextbox_mouseupdown)]
+[!code-vb[richtextboxsnippets#_RichTextBox_MouseUpDown](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_richtextbox_mouseupdown)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,18 +55,18 @@
           <see langword="true" /> if pressing the ENTER key inserts a new line at the current cursor position; otherwise, the ENTER key is ignored. The default value is <see langword="false" /> for <see cref="T:System.Windows.Controls.TextBox" /> and <see langword="true" /> for <see cref="T:System.Windows.Controls.RichTextBox" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The ENTER key corresponds to `VK_RETURN` virtual-key code.  
-  
+The ENTER key corresponds to `VK_RETURN` virtual-key code.  
+ 
 <a name="dependencyPropertyInfo_AcceptsReturn"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.AcceptsReturnProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,18 +108,18 @@
  The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The TAB key corresponds to **VK_TAB** virtual-key code.  
-  
+The TAB key corresponds to **VK_TAB** virtual-key code.  
+ 
 <a name="dependencyPropertyInfo_AcceptsTab"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.AcceptsTabProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,18 +161,18 @@
         <summary>Appends a string to the contents of a text control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.Primitives.TextBoxBase.AppendText%2A> method enables the user to append text to the contents of a text control without using text concatenation, which, can yield better performance when many concatenations are required.  
+The <xref:System.Windows.Controls.Primitives.TextBoxBase.AppendText%2A> method enables the user to append text to the contents of a text control without using text concatenation, which, can yield better performance when many concatenations are required.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.AppendText%2A> method.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase11](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase11)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase11)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.AppendText%2A> method.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase11](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase11)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,22 +197,22 @@
  The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.Windows.Controls.Primitives.TextBoxBase.AutoWordSelection%2A> is enabled, every time that part of a word is selected by the user dragging over part of a word using the mouse, the selection is automatically expanded to include the whole word. The user can override automatic selection of a whole word by momentarily reversing the direction in which the mouse pointer is being dragged as the selection is made. This action undoes the automatic selection of the whole word, and enables the user to precisely select part or all of the word.  
-  
- When <xref:System.Windows.Controls.Primitives.TextBoxBase.AutoWordSelection%2A> is disabled, a selection is not automatically expanded to include whole words; in this case, precise selections are always determined manually.  
-  
- **Note:** Auto selection does not affect the first word that the user drags across. It is only after this first word boundary is crossed that auto selection takes effect.  
-  
+When <xref:System.Windows.Controls.Primitives.TextBoxBase.AutoWordSelection%2A> is enabled, every time that part of a word is selected by the user dragging over part of a word using the mouse, the selection is automatically expanded to include the whole word. The user can override automatic selection of a whole word by momentarily reversing the direction in which the mouse pointer is being dragged as the selection is made. This action undoes the automatic selection of the whole word, and enables the user to precisely select part or all of the word.  
+ 
+When <xref:System.Windows.Controls.Primitives.TextBoxBase.AutoWordSelection%2A> is disabled, a selection is not automatically expanded to include whole words; in this case, precise selections are always determined manually.  
+ 
+**Note:** Auto selection does not affect the first word that the user drags across. It is only after this first word boundary is crossed that auto selection takes effect.  
+ 
 <a name="dependencyPropertyInfo_AutoWordSelection"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.AutoWordSelectionProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,20 +251,20 @@
         <summary>Begins a change block.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Note:** When you call <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A>, you must also call <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> to complete the change block otherwise an exception will be thrown.  
+**Note:** When you call <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A>, you must also call <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> to complete the change block otherwise an exception will be thrown.  
+ 
+A change block logically groups multiple changes into a single undo unit and prevents text content or selection change events from being raised until after the change block. This way you can make multiple edits to the text element without the danger of the text element being changed at the same time by another listener. A change block is created by calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.DeclareChangeBlock%2A> method. Calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A> method causes all subsequent changes to be included in the specified change block until a corresponding call to the <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> method is made.  
+ 
   
- A change block logically groups multiple changes into a single undo unit and prevents text content or selection change events from being raised until after the change block. This way you can make multiple edits to the text element without the danger of the text element being changed at the same time by another listener. A change block is created by calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.DeclareChangeBlock%2A> method. Calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A> method causes all subsequent changes to be included in the specified change block until a corresponding call to the <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> method is made.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A> and <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> methods to create a change block.  
-  
- [!code-csharp[TextBoxMiscSnippets_procedural_snip#BeginChangeEndChangeCodeExampleInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/CSharp/BeginChangeEndChangeExample.cs#beginchangeendchangecodeexampleinline1)]
- [!code-vb[TextBoxMiscSnippets_procedural_snip#BeginChangeEndChangeCodeExampleInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/visualbasic/beginchangeendchangeexample.vb#beginchangeendchangecodeexampleinline1)]  
-  
+The following example shows how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A> and <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> methods to create a change block.  
+ 
+[!code-csharp[TextBoxMiscSnippets_procedural_snip#BeginChangeEndChangeCodeExampleInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/CSharp/BeginChangeEndChangeExample.cs#beginchangeendchangecodeexampleinline1)]
+[!code-vb[TextBoxMiscSnippets_procedural_snip#BeginChangeEndChangeCodeExampleInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/visualbasic/beginchangeendchangeexample.vb#beginchangeendchangecodeexampleinline1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -289,13 +289,13 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.CanRedo%2A> property to determine whether the most recent undo action can be redone.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase9](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase9)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase9)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.CanRedo%2A> property to determine whether the most recent undo action can be redone.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase9](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase9)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -320,13 +320,13 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.CanUndo%2A> property to determine whether the most recent action can be undone.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase8](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase8)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase8)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.CanUndo%2A> property to determine whether the most recent action can be undone.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase8](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase8)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,18 +348,18 @@
         <value>The brush that is used to paint the caret of the text box.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.TextBox> and adds the text, "This is some text." The example sets the <xref:System.Windows.Controls.Primitives.TextBoxBase.CaretBrush%2A> and <xref:System.Windows.Controls.Control.Foreground%2A> properties of a <xref:System.Windows.Controls.TextBox> to blue.  
-  
- [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]
- <!-- TODO: review snippet reference [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/xaml/VS_Snippets_Wpf/textbaseselectionbrush/xaml/window1.xaml#textbox)]  -->  
-  
- The preceding example produces output that is like the following illustration.  
-  
- ![TextBox with CaretBrush set to blue.](~/add/media/textboxcaretbrush.png "TextBox with CaretBrush set to blue.")  
+The following example creates a <xref:System.Windows.Controls.TextBox> and adds the text, "This is some text." The example sets the <xref:System.Windows.Controls.Primitives.TextBoxBase.CaretBrush%2A> and <xref:System.Windows.Controls.Control.Foreground%2A> properties of a <xref:System.Windows.Controls.TextBox> to blue.  
+ 
+[!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]
+<!-- TODO: review snippet reference [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/xaml/VS_Snippets_Wpf/textbaseselectionbrush/xaml/window1.xaml#textbox)]  -->  
+ 
+The preceding example produces output that is like the following illustration.  
+ 
+![TextBox with CaretBrush set to blue.](~/add/media/textboxcaretbrush.png "TextBox with CaretBrush set to blue.")  
 TextBox with CaretBrush set to blue  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -403,18 +403,18 @@ TextBox with CaretBrush set to blue
         <summary>Copies the current selection of the text editing control to the <see cref="T:System.Windows.Clipboard" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A copy operation copies the selected text to the <xref:System.Windows.Clipboard>. Note that the selected text is not removed from the text editing control in the process. A similar method, <xref:System.Windows.Controls.Primitives.TextBoxBase.Cut%2A>, moves the current selection to the <xref:System.Windows.Clipboard> and removes the selected text from the text editing control in the process.  
+A copy operation copies the selected text to the <xref:System.Windows.Clipboard>. Note that the selected text is not removed from the text editing control in the process. A similar method, <xref:System.Windows.Controls.Primitives.TextBoxBase.Cut%2A>, moves the current selection to the <xref:System.Windows.Clipboard> and removes the selected text from the text editing control in the process.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.Copy%2A> method to copy the text that is selected in a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase4](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase4)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase4)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.Copy%2A> method to copy the text that is selected in a <xref:System.Windows.Controls.TextBox> control.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase4](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase4)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase4)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
@@ -442,18 +442,18 @@ TextBox with CaretBrush set to blue
         <summary>Removes the current selection from the text editing control and copies it to the <see cref="T:System.Windows.Clipboard" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A cut operation removes the current selection from the text editing control and copies it to the <xref:System.Windows.Clipboard>. Note that the selected text is removed (cut) from the text editing control in the process. A similar method, <xref:System.Windows.Controls.Primitives.TextBoxBase.Copy%2A>, copies the current selection to the Clipboard, but does not remove the selected text from the text editing control.  
+A cut operation removes the current selection from the text editing control and copies it to the <xref:System.Windows.Clipboard>. Note that the selected text is removed (cut) from the text editing control in the process. A similar method, <xref:System.Windows.Controls.Primitives.TextBoxBase.Copy%2A>, copies the current selection to the Clipboard, but does not remove the selected text from the text editing control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.Cut%2A> method to delete the text that is selected in a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase5](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase5)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase5)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.Cut%2A> method to delete the text that is selected in a <xref:System.Windows.Controls.TextBox> control.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase5](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase5)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase5)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
@@ -477,10 +477,10 @@ TextBox with CaretBrush set to blue
         <returns>An <see cref="T:System.IDisposable" /> object that refers to a new change block.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A change block logically groups multiple changes into a single undo unit. A change block is created by calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.DeclareChangeBlock%2A> method. Calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A> method causes all subsequent changes to be included in the specified change block until a corresponding call to the <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> method is made.  
-  
+A change block logically groups multiple changes into a single undo unit. A change block is created by calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.DeclareChangeBlock%2A> method. Calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A> method causes all subsequent changes to be included in the specified change block until a corresponding call to the <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> method is made.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -502,20 +502,20 @@ TextBox with CaretBrush set to blue
         <summary>Ends a change block.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Note:** When you call <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A>, you must also call <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> to complete the change block otherwise an exception will be thrown.  
+**Note:** When you call <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A>, you must also call <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> to complete the change block otherwise an exception will be thrown.  
+ 
+A change block logically groups multiple changes into a single undo unit and prevents text content or selection change events from being raised until after the change block. This way you can make multiple edits to the text element without the danger of the text element being changed at the same time by another process. A change block is created by calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.DeclareChangeBlock%2A> method. Calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A> method causes all subsequent changes to be included in the specified change block until a corresponding call to the <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> method is made.  
+ 
   
- A change block logically groups multiple changes into a single undo unit and prevents text content or selection change events from being raised until after the change block. This way you can make multiple edits to the text element without the danger of the text element being changed at the same time by another process. A change block is created by calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.DeclareChangeBlock%2A> method. Calling the <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A> method causes all subsequent changes to be included in the specified change block until a corresponding call to the <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> method is made.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A> and <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> methods to create a change block.  
-  
- [!code-csharp[TextBoxMiscSnippets_procedural_snip#BeginChangeEndChangeCodeExampleInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/CSharp/BeginChangeEndChangeExample.cs#beginchangeendchangecodeexampleinline1)]
- [!code-vb[TextBoxMiscSnippets_procedural_snip#BeginChangeEndChangeCodeExampleInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/visualbasic/beginchangeendchangeexample.vb#beginchangeendchangecodeexampleinline1)]  
-  
+The following example shows how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.BeginChange%2A> and <xref:System.Windows.Controls.Primitives.TextBoxBase.EndChange%2A> methods to create a change block.  
+ 
+[!code-csharp[TextBoxMiscSnippets_procedural_snip#BeginChangeEndChangeCodeExampleInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/CSharp/BeginChangeEndChangeExample.cs#beginchangeendchangecodeexampleinline1)]
+[!code-vb[TextBoxMiscSnippets_procedural_snip#BeginChangeEndChangeCodeExampleInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/visualbasic/beginchangeendchangeexample.vb#beginchangeendchangecodeexampleinline1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -541,13 +541,13 @@ TextBox with CaretBrush set to blue
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to read the value of the <xref:System.Windows.Controls.Primitives.TextBoxBase.ExtentHeight%2A> property.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase3)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase3)]  
-  
+The following example demonstrates how to read the value of the <xref:System.Windows.Controls.Primitives.TextBoxBase.ExtentHeight%2A> property.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase3)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -573,13 +573,13 @@ TextBox with CaretBrush set to blue
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to read the value of the <xref:System.Windows.Controls.Primitives.TextBoxBase.ExtentWidth%2A> property.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase3)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase3)]  
-  
+The following example demonstrates how to read the value of the <xref:System.Windows.Controls.Primitives.TextBoxBase.ExtentWidth%2A> property.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase3)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -607,18 +607,18 @@ TextBox with CaretBrush set to blue
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The horizontal offset is measured from the right of the visible text area if you are working in right-to-left mode; otherwise, it is measured from the left.  
+The horizontal offset is measured from the right of the visible text area if you are working in right-to-left mode; otherwise, it is measured from the left.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to read the value of the <xref:System.Windows.Controls.Primitives.TextBoxBase.HorizontalOffset%2A> property.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase3)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase3)]  
-  
+The following example demonstrates how to read the value of the <xref:System.Windows.Controls.Primitives.TextBoxBase.HorizontalOffset%2A> property.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase3)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt is made to set this property to a negative value.</exception>
@@ -643,24 +643,24 @@ TextBox with CaretBrush set to blue
  The default value is <see cref="F:System.Windows.Visibility.Hidden" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_HorizontalScrollBarVisibility"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.HorizontalScrollBarVisibilityProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to set the value of the <xref:System.Windows.Controls.Primitives.TextBoxBase.HorizontalScrollBarVisibility%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
-  
- [!code-xml[TextBoxBase_Samp#TextBoxBase1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml#textboxbase1)]  
-  
+The following example demonstrates how to set the value of the <xref:System.Windows.Controls.Primitives.TextBoxBase.HorizontalScrollBarVisibility%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+ 
+[!code-xml[TextBoxBase_Samp#TextBoxBase1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml#textboxbase1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -702,17 +702,17 @@ TextBox with CaretBrush set to blue
  The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsInactiveSelectionHighlightEnabled"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.IsInactiveSelectionHighlightEnabledProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -752,18 +752,18 @@ TextBox with CaretBrush set to blue
           <see langword="true" /> if the contents of the text editing control are read-only to a user; otherwise, the contents of the text editing control can be modified by the user. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value only affects a user who is interacting with the control. The contents of a text editing control can always be modified programmatically.  
-  
+This value only affects a user who is interacting with the control. The contents of a text editing control can always be modified programmatically.  
+ 
 <a name="dependencyPropertyInfo_IsReadOnly"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.IsReadOnlyProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -786,10 +786,10 @@ TextBox with CaretBrush set to blue
           <see langword="true" /> if a read-only text box displays a caret; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.Windows.Controls.Primitives.TextBoxBase.IsReadOnly%2A> is `true`, a user can still select and copy text. If the <xref:System.Windows.Controls.Primitives.TextBoxBase.IsReadOnlyCaretVisible%2A> property is also set to `true`, a caret will appear in the text box when the text box has keyboard focus. When <xref:System.Windows.Controls.Primitives.TextBoxBase.IsReadOnly%2A> is `false`, the <xref:System.Windows.Controls.Primitives.TextBoxBase.IsReadOnlyCaretVisible%2A> property has no effect.  
-  
+When <xref:System.Windows.Controls.Primitives.TextBoxBase.IsReadOnly%2A> is `true`, a user can still select and copy text. If the <xref:System.Windows.Controls.Primitives.TextBoxBase.IsReadOnlyCaretVisible%2A> property is also set to `true`, a caret will appear in the text box when the text box has keyboard focus. When <xref:System.Windows.Controls.Primitives.TextBoxBase.IsReadOnly%2A> is `false`, the <xref:System.Windows.Controls.Primitives.TextBoxBase.IsReadOnlyCaretVisible%2A> property has no effect.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -848,17 +848,17 @@ TextBox with CaretBrush set to blue
  The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsSelectionActive"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.IsSelectionActiveProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -898,25 +898,25 @@ TextBox with CaretBrush set to blue
           <see langword="true" /> if undo support is enabled; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property to `false` clears the undo stack. Therefore, if you disable undo and then re-enable it, undo commands still do not work because the undo stack was emptied when you disabled undo.  
-  
+Setting this property to `false` clears the undo stack. Therefore, if you disable undo and then re-enable it, undo commands still do not work because the undo stack was emptied when you disabled undo.  
+ 
 <a name="dependencyPropertyInfo_IsUndoEnabled"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.IsUndoEnabledProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.IsUndoEnabled%2A> property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
-  
- [!code-xml[TextBoxBase_Samp#TextBoxBase1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml#textboxbase1)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.IsUndoEnabled%2A> property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+ 
+[!code-xml[TextBoxBase_Samp#TextBoxBase1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml#textboxbase1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -955,13 +955,13 @@ TextBox with CaretBrush set to blue
         <summary>Scrolls the contents of the control down by one line.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.LineDown%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase13](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase13)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase13)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.LineDown%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase13](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase13)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -983,13 +983,13 @@ TextBox with CaretBrush set to blue
         <summary>Scrolls the contents of the control to the left by one line.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.LineLeft%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase14](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase14)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase14)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.LineLeft%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase14](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase14)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1011,13 +1011,13 @@ TextBox with CaretBrush set to blue
         <summary>Scrolls the contents of the control to the right by one line.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.LineRight%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase15](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase15)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase15)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.LineRight%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase15](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase15)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1039,13 +1039,13 @@ TextBox with CaretBrush set to blue
         <summary>Scrolls the contents of the control upward by one line.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.LineUp%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase16](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase16)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase16)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.LineUp%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase16](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase16)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1067,10 +1067,10 @@ TextBox with CaretBrush set to blue
         <summary>Locks the most recent undo unit of the undo stack of the application. This prevents the locked unit from being merged with undo units that are added subsequently.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method when a non-text undo unit is added to the application's main undo stack. This prevents the locked unit from being merged with undo units that are added subsequently.  
-  
+Call this method when a non-text undo unit is added to the application's main undo stack. This prevents the locked unit from being merged with undo units that are added subsequently.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1092,10 +1092,10 @@ TextBox with CaretBrush set to blue
         <summary>Is called when a control template is applied.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Overrides <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A>.  
-  
+Overrides <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A>.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1123,12 +1123,12 @@ TextBox with CaretBrush set to blue
         <summary>Called whenever an unhandled <see cref="E:System.Windows.FrameworkElement.ContextMenuOpening" /> routed event reaches this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method has no default implementation. You should still call the base implementation in case an intermediate class in the inheritance has implemented this method.  
-  
- The purpose of this method is somewhat similar to [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] event pattern On* methods: it lets you handle the matching event from derived classes by using a class handler instead of an instance handler. In this case, the matching event is a routed event. The implementation pattern of the On* methods is different for routed events because the routed event might have been raised by a child element, which is not necessarily the element that invokes handlers. Therefore, your implementation needs to take the event arguments' source properties into account (and should not try to re-raise the event in most cases). Subclasses of <xref:System.Windows.Controls.Primitives.TextBoxBase> can call private class handler methods when the event is received along the route. One scenario is to take the arguments of the event and deliberately mark the event as handled.  
-  
+This method has no default implementation. You should still call the base implementation in case an intermediate class in the inheritance has implemented this method.  
+ 
+The purpose of this method is somewhat similar to [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] event pattern On* methods: it lets you handle the matching event from derived classes by using a class handler instead of an instance handler. In this case, the matching event is a routed event. The implementation pattern of the On* methods is different for routed events because the routed event might have been raised by a child element, which is not necessarily the element that invokes handlers. Therefore, your implementation needs to take the event arguments' source properties into account (and should not try to re-raise the event in most cases). Subclasses of <xref:System.Windows.Controls.Primitives.TextBoxBase> can call private class handler methods when the event is received along the route. One scenario is to take the arguments of the event and deliberately mark the event as handled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1426,12 +1426,12 @@ TextBox with CaretBrush set to blue
         <summary>Is called when a <see cref="E:System.Windows.UIElement.MouseWheel" /> event is routed to this class (or to a class that inherits from this class).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.UIElement.MouseWheel> event occurs when the mouse wheel is rolled.  
-  
- Overrides <xref:System.Windows.UIElement.OnMouseWheel%2A>.  
-  
+The <xref:System.Windows.UIElement.MouseWheel> event occurs when the mouse wheel is rolled.  
+ 
+Overrides <xref:System.Windows.UIElement.OnMouseWheel%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1477,12 +1477,12 @@ TextBox with CaretBrush set to blue
         <summary>Invoked whenever an unhandled <see cref="E:System.Windows.DragDrop.QueryContinueDrag" /> attached  routed event reaches an element derived from this class in its route. Implement this method to add class handling for this event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method has no default implementation. Calling base() in your implementation is still recommended, in case an intermediate class in the inheritance implemented this method. You may call base() either before or after your special handling, depending on your requirements.  
-  
- The purpose of this method is somewhat similar to [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] event pattern On* methods: it lets you handle the matching event from derived classes by using a class handler instead of an instance handler. In this case, the matching event is a routed event. The implementation pattern of the On* methods is different for routed events because the routed event may have been raised by a child element, which is not necessarily the element that invokes handlers. Therefore, your implementation needs to take the event arguments' source properties into account (and should not try to re-raise the event in most cases). Subclasses of <xref:System.Windows.Controls.Primitives.TextBoxBase> can choose to call private class handler methods when the event is received along the route. One scenario is to take the arguments of the event and mark the event as handled.  
-  
+This method has no default implementation. Calling base() in your implementation is still recommended, in case an intermediate class in the inheritance implemented this method. You may call base() either before or after your special handling, depending on your requirements.  
+ 
+The purpose of this method is somewhat similar to [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] event pattern On* methods: it lets you handle the matching event from derived classes by using a class handler instead of an instance handler. In this case, the matching event is a routed event. The implementation pattern of the On* methods is different for routed events because the routed event may have been raised by a child element, which is not necessarily the element that invokes handlers. Therefore, your implementation needs to take the event arguments' source properties into account (and should not try to re-raise the event in most cases). Subclasses of <xref:System.Windows.Controls.Primitives.TextBoxBase> can choose to call private class handler methods when the event is received along the route. One scenario is to take the arguments of the event and mark the event as handled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1528,10 +1528,10 @@ TextBox with CaretBrush set to blue
         <summary>Is called when the caret or current selection changes position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method raises a <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionChanged> event.  
-  
+This method raises a <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionChanged> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1558,10 +1558,10 @@ TextBox with CaretBrush set to blue
         <summary>Is called when the control template changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Overrides <xref:System.Windows.Controls.Control.OnTemplateChanged%2A>.  
-  
+Overrides <xref:System.Windows.Controls.Control.OnTemplateChanged%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1586,10 +1586,10 @@ TextBox with CaretBrush set to blue
         <summary>Is called when content in this editing control changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method raises a <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event.  
-  
+This method raises a <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1632,13 +1632,13 @@ TextBox with CaretBrush set to blue
         <summary>Scrolls the contents of the control down by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.PageDown%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase17](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase17)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase17](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase17)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.PageDown%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase17](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase17)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase17](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase17)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1660,13 +1660,13 @@ TextBox with CaretBrush set to blue
         <summary>Scrolls the contents of the control to the left by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.PageLeft%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase18](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase18)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase18)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.PageLeft%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase18](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase18)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase18)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1688,13 +1688,13 @@ TextBox with CaretBrush set to blue
         <summary>Scrolls the contents of the control to the right by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.PageRight%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase19](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase19)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase19](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase19)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.PageRight%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase19](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase19)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase19](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase19)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1716,13 +1716,13 @@ TextBox with CaretBrush set to blue
         <summary>Scrolls the contents of the control up by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.PageUp%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase20](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase20)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase20](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase20)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.PageUp%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase20](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase20)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase20](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase20)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1744,13 +1744,13 @@ TextBox with CaretBrush set to blue
         <summary>Pastes the contents of the Clipboard over the current selection in the text editing control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.Paste%2A> method to paste selected content into a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase6](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase6)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase6)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.Paste%2A> method to paste selected content into a <xref:System.Windows.Controls.TextBox> control.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase6](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase6)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1774,13 +1774,13 @@ TextBox with CaretBrush set to blue
           <see langword="true" /> if the redo operation was successful; otherwise, <see langword="false" />. This method returns <see langword="false" /> if there is no undo command available (the undo stack is empty).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.Redo%2A> method.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase9](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase9)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase9)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.Redo%2A> method.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase9](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase9)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1802,13 +1802,13 @@ TextBox with CaretBrush set to blue
         <summary>Scrolls the view of the editing control to the end of the content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.ScrollToEnd%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase22](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase22)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase22](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase22)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.ScrollToEnd%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase22](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase22)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase22](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase22)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1830,13 +1830,13 @@ TextBox with CaretBrush set to blue
         <summary>Scrolls the view of the editing control to the beginning of the viewport.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.ScrollToHome%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase21](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase21)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase21](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase21)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.ScrollToHome%2A> method to scroll the contents of a <xref:System.Windows.Controls.TextBox> control.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase21](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase21)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase21](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase21)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1900,13 +1900,13 @@ TextBox with CaretBrush set to blue
         <summary>Selects all the contents of the text editing control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectAll%2A> method to select all the contents of a <xref:System.Windows.Controls.TextBox> control.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase7](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase7)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase7)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectAll%2A> method to select all the contents of a <xref:System.Windows.Controls.TextBox> control.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase7](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase7)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1928,23 +1928,23 @@ TextBox with CaretBrush set to blue
         <value>The brush that highlights selected text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can specify the brush that highlights selected text by setting the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> and <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> properties. The <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> property specifies the opacity of the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A>.  
+You can specify the brush that highlights selected text by setting the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> and <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> properties. The <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> property specifies the opacity of the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.TextBox> and adds the text, "This is some text." The example sets the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> property to red and the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> property to 0.5 to customize the appearance of selected text.  
-  
- [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]
- <!-- TODO: review snippet reference [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/xaml/VS_Snippets_Wpf/textbaseselectionbrush/xaml/window1.xaml#textbox)]  -->  
-  
- The following illustration shows the <xref:System.Windows.Controls.TextBox> from the preceding example with its text selected.  
-  
- ![TextBox with a red SelectionBrush](~/add/media/textboxselectionbrush.png "TextBox with a red SelectionBrush")  
+The following example creates a <xref:System.Windows.Controls.TextBox> and adds the text, "This is some text." The example sets the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> property to red and the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> property to 0.5 to customize the appearance of selected text.  
+ 
+[!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]
+<!-- TODO: review snippet reference [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/xaml/VS_Snippets_Wpf/textbaseselectionbrush/xaml/window1.xaml#textbox)]  -->  
+ 
+The following illustration shows the <xref:System.Windows.Controls.TextBox> from the preceding example with its text selected.  
+ 
+![TextBox with a red SelectionBrush](~/add/media/textboxselectionbrush.png "TextBox with a red SelectionBrush")  
 Selected text in a TextBox with SelectionBrush set to red  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1982,26 +1982,26 @@ Selected text in a TextBox with SelectionBrush set to red
         <summary>Occurs when the text selection has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="routedEventInfo_SelectionChanged"></a>   
 ## Routed Event Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionChangedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to handle the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionChanged> event by using code.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase10](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase10)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase10)]  
-  
+The following example demonstrates how to handle the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionChanged> event by using code.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase10](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase10)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2040,23 +2040,23 @@ Selected text in a TextBox with SelectionBrush set to red
         <value>The opacity of the <see cref="P:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush" />. The default is 0.4.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> is set to 0, the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> is transparent and is not visible. If <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> is set to 1.0 or greater, the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> is opaque and the selected text is not visible.  
+If <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> is set to 0, the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> is transparent and is not visible. If <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> is set to 1.0 or greater, the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> is opaque and the selected text is not visible.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.TextBox> and adds the text, "This is some text." The example sets the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> property to red and the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> property to 0.5 to customize the appearance of selected text.  
-  
- [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]
- <!-- TODO: review snippet reference [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/xaml/VS_Snippets_Wpf/textbaseselectionbrush/xaml/window1.xaml#textbox)]  -->  
-  
- The following illustration shows the <xref:System.Windows.Controls.TextBox> from the preceding example with its text selected.  
-  
- ![TextBox with a red SelectionBrush](~/add/media/textboxselectionbrush.png "TextBox with a red SelectionBrush")  
+The following example creates a <xref:System.Windows.Controls.TextBox> and adds the text, "This is some text." The example sets the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> property to red and the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> property to 0.5 to customize the appearance of selected text.  
+ 
+[!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]
+<!-- TODO: review snippet reference [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/xaml/VS_Snippets_Wpf/textbaseselectionbrush/xaml/window1.xaml#textbox)]  -->  
+ 
+The following illustration shows the <xref:System.Windows.Controls.TextBox> from the preceding example with its text selected.  
+ 
+![TextBox with a red SelectionBrush](~/add/media/textboxselectionbrush.png "TextBox with a red SelectionBrush")  
 Selected text in a TextBox with SelectionOpacity set to 0.5  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2114,19 +2114,19 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
         <summary>Occurs when content changes in the text element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a <xref:System.Windows.Controls.TextBox>, this event occurs when its text changes; for a <xref:System.Windows.Controls.RichTextBox>, this event occurs when any content or formatting changes (for example, images, table, or background color).  
-  
+For a <xref:System.Windows.Controls.TextBox>, this event occurs when its text changes; for a <xref:System.Windows.Controls.RichTextBox>, this event occurs when any content or formatting changes (for example, images, table, or background color).  
+ 
 <a name="routedEventInfo_TextChanged"></a>   
 ## Routed Event Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.TextChangedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.Controls.TextChangedEventHandler>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2167,13 +2167,13 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
           <see langword="true" /> if the undo operation was successful; otherwise, <see langword="false" />. This method returns <see langword="false" /> if the undo stack is empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.Undo%2A> method.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase8](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase8)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase8)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.Undo%2A> method.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase8](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase8)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2195,12 +2195,12 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
         <value>The number of actions stored in the undo queue. The default is –1, which means the undo queue is limited to the memory that is available.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> clears the undo queue. When <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> is set to –1, the undo queue is limited only by the memory that is available. When <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> is set to 0, undo is disabled on the <xref:System.Windows.Controls.Primitives.TextBoxBase>.  
-  
- <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+Setting <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> clears the undo queue. When <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> is set to –1, the undo queue is limited only by the memory that is available. When <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> is set to 0, undo is disabled on the <xref:System.Windows.Controls.Primitives.TextBoxBase>.  
+ 
+<xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -2223,10 +2223,10 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimitProperty> is introduced in the .NET Framework version 3.5. For more information, see[Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimitProperty> is introduced in the .NET Framework version 3.5. For more information, see[Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2254,18 +2254,18 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The vertical offset is measured from the top of the visible text area.  
+The vertical offset is measured from the top of the visible text area.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to read the value of the <xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalOffset%2A> property.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase3)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase3)]  
-  
+The following example demonstrates how to read the value of the <xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalOffset%2A> property.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase3)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt is made to set this property to a negative value.</exception>
@@ -2290,17 +2290,17 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
  The default value is <see cref="F:System.Windows.Visibility.Hidden" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_VerticalScrollBarVisibility"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibilityProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2343,13 +2343,13 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to read the value of the <xref:System.Windows.Controls.Primitives.TextBoxBase.ViewportHeight%2A> property.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase3)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase3)]  
-  
+The following example demonstrates how to read the value of the <xref:System.Windows.Controls.Primitives.TextBoxBase.ViewportHeight%2A> property.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase3)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2375,13 +2375,13 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to read the value of the <xref:System.Windows.Controls.Primitives.TextBoxBase.ViewportWidth%2A> property.  
-  
- [!code-csharp[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase3)]
- [!code-vb[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase3)]  
-  
+The following example demonstrates how to read the value of the <xref:System.Windows.Controls.Primitives.TextBoxBase.ViewportWidth%2A> property.  
+ 
+[!code-csharp[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml.cs#textboxbase3)]
+[!code-vb[TextBoxBase_Samp#TextBoxBase3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxBase_Samp/VisualBasic/Window1.xaml.vb#textboxbase3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,28 +14,28 @@
     <summary>Represents an attribute that is associated with the subject of a <see cref="T:System.IdentityModel.Tokens.SamlAttributeStatement" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAttribute> class corresponds to the `<saml:Attribute>` XML element that is defined in the OASIS SAML 1.1 specification.  
+The <xref:System.IdentityModel.Tokens.SamlAttribute> class corresponds to the `<saml:Attribute>` XML element that is defined in the OASIS SAML 1.1 specification.  
+ 
+A <xref:System.IdentityModel.Tokens.SamlAttribute> instance contains <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A> claims for the subject of a <xref:System.IdentityModel.Tokens.SamlAttributeStatement>. For example, a <xref:System.IdentityModel.Tokens.SamlAttribute> might contain an `Over21` claim, whose type would be specified in the <xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A> property and whose resource would be specified as a member of the collection in the <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A> property. When the <xref:System.IdentityModel.Tokens.SamlStatement.CreatePolicy%2A> method is called, this `Over21` claim is added to the authorization policy that is returned by returned from by the <xref:System.IdentityModel.Tokens.SamlAttributeStatement>. When the <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A> property contains multiple elements then one claim is returned for each element.  
+ 
+<xref:System.IdentityModel.Tokens.SamlAttribute> position in the SAML object hierarchy is:  
+ 
+<xref:System.IdentityModel.Tokens.SamlSecurityToken>  
+ 
+<xref:System.IdentityModel.Tokens.SamlAssertion>  
+ 
+<xref:System.IdentityModel.Tokens.SamlAttributeStatement>  
+ 
+<xref:System.IdentityModel.Tokens.SamlAttribute>  
+ 
   
- A <xref:System.IdentityModel.Tokens.SamlAttribute> instance contains <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A> claims for the subject of a <xref:System.IdentityModel.Tokens.SamlAttributeStatement>. For example, a <xref:System.IdentityModel.Tokens.SamlAttribute> might contain an `Over21` claim, whose type would be specified in the <xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A> property and whose resource would be specified as a member of the collection in the <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A> property. When the <xref:System.IdentityModel.Tokens.SamlStatement.CreatePolicy%2A> method is called, this `Over21` claim is added to the authorization policy that is returned by returned from by the <xref:System.IdentityModel.Tokens.SamlAttributeStatement>. When the <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A> property contains multiple elements then one claim is returned for each element.  
-  
- <xref:System.IdentityModel.Tokens.SamlAttribute> position in the SAML object hierarchy is:  
-  
- <xref:System.IdentityModel.Tokens.SamlSecurityToken>  
-  
- <xref:System.IdentityModel.Tokens.SamlAssertion>  
-  
- <xref:System.IdentityModel.Tokens.SamlAttributeStatement>  
-  
- <xref:System.IdentityModel.Tokens.SamlAttribute>  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[SamlAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/samlattribute/cs/source.cs#1)]
- [!code-vb[SamlAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/samlattribute/vb/source.vb#1)]  
-  
+[!code-csharp[SamlAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/samlattribute/cs/source.cs#1)]
+[!code-vb[SamlAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/samlattribute/vb/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,18 +72,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> class using the specified claim.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to convert a claim into a SAML attribute. To be converted to a SAML attribute, the <xref:System.IdentityModel.Claims.Claim.Right%2A> property must be <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>, the <xref:System.IdentityModel.Claims.Claim.Resource%2A> property must be of type <xref:System.String>, and the <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property must be in the format `namespace/name`.  
-  
- The following table specifies what the `claim` parameter sets the <xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A>, <xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A>, and the <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A> properties to.  
-  
+Use this constructor to convert a claim into a SAML attribute. To be converted to a SAML attribute, the <xref:System.IdentityModel.Claims.Claim.Right%2A> property must be <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>, the <xref:System.IdentityModel.Claims.Claim.Resource%2A> property must be of type <xref:System.String>, and the <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property must be in the format `namespace/name`.  
+ 
+The following table specifies what the `claim` parameter sets the <xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A>, <xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A>, and the <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A> properties to.  
+ 
 |Property|Property of the `claim` parameter used to set the property|  
 |--------------|----------------------------------------------------------------|  
 |<xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A>|The value of the <xref:System.IdentityModel.Claims.Claim.Resource%2A> property is added to the collection.|  
 |<xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A>|The portion of the string after the last '/' character in the <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property.|  
 |<xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A>|The portion of the string before the last '/' character in the <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -120,16 +120,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> class using the specified attribute name, XML namespace, and attribute values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table specifies the properties that are set by this constructor's parameters.  
-  
+The following table specifies the properties that are set by this constructor's parameters.  
+ 
 |Property|Parameter|  
 |--------------|---------------|  
 |<xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A>|`attributeValues`|  
 |<xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A>|`attributeName`|  
 |<xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A>|`attributeNamespace`|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -170,12 +170,12 @@
         <value>A <see cref="T:System.Collections.Generic.IList`1" /> that contains the set of attribute values for the SAML attribute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A SAML attribute may contain more than one attribute value.  
-  
- The <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A> property corresponds to the `<saml:AttributeValue>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+A SAML attribute may contain more than one attribute value.  
+ 
+The <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A> property corresponds to the `<saml:AttributeValue>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
         <value>A string that contains the xsi:type. The default is <see cref="F:System.Security.Claims.ClaimValueTypes.String" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValueXsiType%2A> property corresponds to the `type` attribute of the `<saml:AttributeValue>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification. This attribute is required.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValueXsiType%2A> property corresponds to the `type` attribute of the `<saml:AttributeValue>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification. This attribute is required.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt to set a value that is <see langword="null" /> or empty occurs.  
@@ -228,10 +228,10 @@
         <returns>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Claims.Claim" /> that contains the set of claims that this SAML attribute represents.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions that can specify an attribute about the subject represented by the security token. Use the <xref:System.IdentityModel.Tokens.SamlAttribute.ExtractClaims%2A> method to convert the SAML attribute into a set of claims.  
-  
+<xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions that can specify an attribute about the subject represented by the security token. Use the <xref:System.IdentityModel.Tokens.SamlAttribute.ExtractClaims%2A> method to convert the SAML attribute into a set of claims.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,10 +254,10 @@
           <see langword="true" /> if the properties of this instance are read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To make this instance of the <xref:System.IdentityModel.Tokens.SamlAttribute> class read-only, call the <xref:System.IdentityModel.Tokens.SamlAttribute.MakeReadOnly%2A> method.  
-  
+To make this instance of the <xref:System.IdentityModel.Tokens.SamlAttribute> class read-only, call the <xref:System.IdentityModel.Tokens.SamlAttribute.MakeReadOnly%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -279,10 +279,10 @@
         <summary>Causes this instance to be read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.IdentityModel.Tokens.SamlAttribute.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlAttribute.IsReadOnly%2A> property is set to `true` and properties of this instance can no longer be set.  
-  
+When the <xref:System.IdentityModel.Tokens.SamlAttribute.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlAttribute.IsReadOnly%2A> property is set to `true` and properties of this instance can no longer be set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,12 +304,12 @@
         <value>The name of the SAML attribute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To specify the values associated with this SAML attribute, set the <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A> property  
-  
- The <xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A> property corresponds to the `AttributeName` attribute of the `<Attribute>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+To specify the values associated with this SAML attribute, set the <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A> property  
+ 
+The <xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A> property corresponds to the `AttributeName` attribute of the `<Attribute>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SamlAttribute.Name" /> property is set and the <see cref="P:System.IdentityModel.Tokens.SamlAttribute.IsReadOnly" /> property is <see langword="true" />.</exception>
@@ -333,12 +333,12 @@
         <value>The XML namespace in which the name of the SAML attribute is defined.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set the name of the SAML attribute, set the <xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A> property.  
-  
- The <xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A> property corresponds to the `AttributeNamespace` attribute of the `<AttributeDesignator>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+To set the name of the SAML attribute, set the <xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A> property.  
+ 
+The <xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A> property corresponds to the `AttributeNamespace` attribute of the `<AttributeDesignator>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -388,10 +388,10 @@
         <summary>Reads the SAML attribute from the specified XML reader.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAttribute.ReadXml%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Tokens.SamlSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method sets the <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A>, <xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A>, and <xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A> properties.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAttribute.ReadXml%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Tokens.SamlSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method sets the <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A>, <xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A>, and <xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A> properties.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

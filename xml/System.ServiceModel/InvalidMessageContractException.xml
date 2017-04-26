@@ -15,15 +15,15 @@
     <summary>Represents a message contract that is not valid.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.InvalidMessageContractException> is thrown when custom attribute usage results in the generation of an invalid service description. For example, if a <xref:System.ServiceModel.MessageContractAttribute?displayProperty=fullName> type has multiple parts with the same name, or a method has multiple parameters with the same name.  
+The <xref:System.ServiceModel.InvalidMessageContractException> is thrown when custom attribute usage results in the generation of an invalid service description. For example, if a <xref:System.ServiceModel.MessageContractAttribute?displayProperty=fullName> type has multiple parts with the same name, or a method has multiple parameters with the same name.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows a contract and service that throws an <xref:System.ServiceModel.InvalidMessageContractException> that says `operand` appears more than once in the message.  
-  
+The following code example shows a contract and service that throws an <xref:System.ServiceModel.InvalidMessageContractException> that says `operand` appears more than once in the message.  
+ 
 ```  
 [ServiceContract(Namespace = "http://contoso.com/IMath")]  
 public interface IMath  
@@ -42,7 +42,7 @@ public class AddMessage
     public int b;  
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@ public class AddMessage
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.InvalidMessageContractException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new <xref:System.ServiceModel.InvalidMessageContractException> object.  
-  
+Creates a new <xref:System.ServiceModel.InvalidMessageContractException> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@ public class AddMessage
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.InvalidMessageContractException" /> class using the specified message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new <xref:System.ServiceModel.InvalidMessageContractException> object using the `message`.  
-  
+Creates a new <xref:System.ServiceModel.InvalidMessageContractException> object using the `message`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,10 +116,10 @@ public class AddMessage
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.InvalidMessageContractException" /> class when deserializing from a stream into an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new <xref:System.ServiceModel.InvalidMessageContractException> object from the stream on deserialization.  
-  
+Creates a new <xref:System.ServiceModel.InvalidMessageContractException> object from the stream on deserialization.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@ public class AddMessage
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.InvalidMessageContractException" /> class that uses the specified message and inner exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new <xref:System.ServiceModel.InvalidMessageContractException> object from the `message` and `innerException`.  
-  
+Creates a new <xref:System.ServiceModel.InvalidMessageContractException> object from the `message` and `innerException`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,25 +14,25 @@
     <summary>Represents all resources in an XML resource (.resx) file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Resources.ResXResourceSet> class enumerates over an <xref:System.Resources.IResourceReader>, loads every name and value, and stores them in a hash table. You can then enumerate the resources in the <xref:System.Resources.ResXResourceSet> object or retrieve individual resources by name.  
-  
+The <xref:System.Resources.ResXResourceSet> class enumerates over an <xref:System.Resources.IResourceReader>, loads every name and value, and stores them in a hash table. You can then enumerate the resources in the <xref:System.Resources.ResXResourceSet> object or retrieve individual resources by name.  
+ 
 > [!NOTE]
 >  This class contains a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> and an <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> at the class level that applies to all members. A <xref:System.Security.SecurityException> exception is thrown when the immediate caller or a derived class does not have full-trust permission.  
+ 
+A <xref:System.Resources.ResXResourceSet> object provides a convenient way to read all the resources in a .resx file into memory. You can use the <xref:System.Resources.ResourceSet.GetObject%2A> method to retrieve a particular resource when the .resx file has been read into a <xref:System.Resources.ResXResourceSet> instance.  
+ 
   
- A <xref:System.Resources.ResXResourceSet> object provides a convenient way to read all the resources in a .resx file into memory. You can use the <xref:System.Resources.ResourceSet.GetObject%2A> method to retrieve a particular resource when the .resx file has been read into a <xref:System.Resources.ResXResourceSet> instance.  
-  
-   
-  
+ 
 ## Examples  
- The following example instantiates a <xref:System.Resources.ResXResourceSet> object and illustrates how to enumerate its resources and retrieve individual resources by name. For each resource that it enumerates, the example uses the <xref:System.Collections.IDictionaryEnumerator.Key%2A?displayProperty=fullName> property in a call to the `GetString` or `GetObject` method, depending on whether the value of the resource is a string or an object.  
-  
- [!code-csharp[System.Resources.ResXResourceSet.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resxresourceset.class/cs/example1.cs#1)]
- [!code-vb[System.Resources.ResXResourceSet.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resxresourceset.class/vb/example1.vb#1)]  
-  
- The example calls a `CreateResXFile` method to create the necessary XML resource file. It requires a bitmap file named Logo.bmp in the directory in which the example is running.  
-  
+The following example instantiates a <xref:System.Resources.ResXResourceSet> object and illustrates how to enumerate its resources and retrieve individual resources by name. For each resource that it enumerates, the example uses the <xref:System.Collections.IDictionaryEnumerator.Key%2A?displayProperty=fullName> property in a call to the `GetString` or `GetObject` method, depending on whether the value of the resource is a string or an object.  
+ 
+[!code-csharp[System.Resources.ResXResourceSet.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resxresourceset.class/cs/example1.cs#1)]
+[!code-vb[System.Resources.ResXResourceSet.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resxresourceset.class/vb/example1.vb#1)]  
+ 
+The example calls a `CreateResXFile` method to create the necessary XML resource file. It requires a bitmap file named Logo.bmp in the directory in which the example is running.  
+ 
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>

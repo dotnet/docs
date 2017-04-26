@@ -54,10 +54,10 @@
           <see langword="true" /> if this converter can perform the operation; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xaml.Schema.XamlTypeTypeConverter> class only converts an instance of <xref:System.Xaml.XamlType> to and from a <xref:System.String> (or <xref:System.Xaml.XamlType>). Other `sourceType` inputs return `false`.  
-  
+The <xref:System.Xaml.Schema.XamlTypeTypeConverter> class only converts an instance of <xref:System.Xaml.XamlType> to and from a <xref:System.String> (or <xref:System.Xaml.XamlType>). Other `sourceType` inputs return `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,10 +86,10 @@
           <see langword="true" /> if this converter can perform the operation; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xaml.Schema.XamlTypeTypeConverter> class only converts an instance of <xref:System.Xaml.XamlType> to and from a <xref:System.String> (or <xref:System.Xaml.XamlType>). Other `destinationType` inputs return `false`.  
-  
+The <xref:System.Xaml.Schema.XamlTypeTypeConverter> class only converts an instance of <xref:System.Xaml.XamlType> to and from a <xref:System.String> (or <xref:System.Xaml.XamlType>). Other `destinationType` inputs return `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <returns>The converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xaml.Schema.XamlTypeTypeConverter> class only converts an instance of <xref:System.Xaml.XamlType> to and from a <xref:System.String> (or <xref:System.Xaml.XamlType>). Other `value` types throw an exception.  
-  
+The <xref:System.Xaml.Schema.XamlTypeTypeConverter> class only converts an instance of <xref:System.Xaml.XamlType> to and from a <xref:System.String> (or <xref:System.Xaml.XamlType>). Other `value` types throw an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
@@ -156,10 +156,10 @@
         <returns>The converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xaml.Schema.XamlTypeTypeConverter> class only converts an instance of <xref:System.Xaml.XamlType> to and from a <xref:System.String> (or <xref:System.Xaml.XamlType>). Other `value` types or `destinationType` inputs throw an exception.  
-  
+The <xref:System.Xaml.Schema.XamlTypeTypeConverter> class only converts an instance of <xref:System.Xaml.XamlType> to and from a <xref:System.String> (or <xref:System.Xaml.XamlType>). Other `value` types or `destinationType` inputs throw an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">

@@ -48,18 +48,18 @@
           <see langword="true" /> if a security context token is established; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property controls whether a security context token is established through a WS-SecureConversation exchange between the client and the service. Setting it to `true` requires that the remote party supports WS-SecureConversation.  
+This property controls whether a security context token is established through a WS-SecureConversation exchange between the client and the service. Setting it to `true` requires that the remote party supports WS-SecureConversation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to set this property.  
-  
- [!code-csharp[S_UEMessageSecurityOverTCP#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_uemessagesecurityovertcp/cs/source.cs#8)]
- [!code-vb[S_UEMessageSecurityOverTCP#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uemessagesecurityovertcp/vb/source.vb#8)]  
-  
+The following code shows how to set this property.  
+ 
+[!code-csharp[S_UEMessageSecurityOverTCP#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_uemessagesecurityovertcp/cs/source.cs#8)]
+[!code-vb[S_UEMessageSecurityOverTCP#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uemessagesecurityovertcp/vb/source.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

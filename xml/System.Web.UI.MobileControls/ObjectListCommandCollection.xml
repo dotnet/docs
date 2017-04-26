@@ -23,17 +23,17 @@
     <summary>Represents a collection of <see cref="T:System.Web.UI.MobileControls.ObjectListCommand" /> objects. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The class object provides the container for the commands of an <xref:System.Web.UI.MobileControls.ObjectList>. Accessing the <xref:System.Web.UI.MobileControls.ObjectList.Commands%2A> property of an <xref:System.Web.UI.MobileControls.ObjectList> retrieves an <xref:System.Web.UI.MobileControls.ObjectListCommandCollection> object. An application can programmatically add or remove commands.  
+The class object provides the container for the commands of an <xref:System.Web.UI.MobileControls.ObjectList>. Accessing the <xref:System.Web.UI.MobileControls.ObjectList.Commands%2A> property of an <xref:System.Web.UI.MobileControls.ObjectList> retrieves an <xref:System.Web.UI.MobileControls.ObjectListCommandCollection> object. An application can programmatically add or remove commands.  
+ 
+The <xref:System.Web.UI.MobileControls.ObjectListCommandCollection> class implements the <xref:System.Collections.ICollection> interface through the <xref:System.Web.UI.MobileControls.ArrayListCollectionBase> class.  
+ 
   
- The <xref:System.Web.UI.MobileControls.ObjectListCommandCollection> class implements the <xref:System.Collections.ICollection> interface through the <xref:System.Web.UI.MobileControls.ArrayListCollectionBase> class.  
-  
-   
-  
+ 
 ## Examples  
- For a complete example, see the <xref:System.Web.UI.MobileControls.ObjectList> overview.  
-  
+For a complete example, see the <xref:System.Web.UI.MobileControls.ObjectList> overview.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -82,10 +82,10 @@
         <summary>Adds a command at the location in the collection specified by the index parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A value of -1 for the `index` parameter specifies that the command is added to the end of the collection.  
-  
+A value of -1 for the `index` parameter specifies that the command is added to the end of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,14 +107,14 @@
         <summary>Clears the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not available in the read-only <xref:System.Web.UI.MobileControls.IObjectListFieldCollection> interface.  
-  
- You can use the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection.Clear%2A> method for all the classes where this method applies. For example, the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection.Clear%2A> method for a <xref:System.Web.UI.MobileControls.StyleSheet> collection clears all the styles in the collection. For the <xref:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection>, it clears all the choices in the collection.  
-  
- Adding a field to the fields of an object list changes the data-binding behavior of the control, and requires you to bind data to the control again.  
-  
+This method is not available in the read-only <xref:System.Web.UI.MobileControls.IObjectListFieldCollection> interface.  
+ 
+You can use the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection.Clear%2A> method for all the classes where this method applies. For example, the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection.Clear%2A> method for a <xref:System.Web.UI.MobileControls.StyleSheet> collection clears all the styles in the collection. For the <xref:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection>, it clears all the choices in the collection.  
+ 
+Adding a field to the fields of an object list changes the data-binding behavior of the control, and requires you to bind data to the control again.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <returns>The index of the command whose name is the specified string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns the index of the command whose <xref:System.Web.UI.MobileControls.ObjectListCommand.Name%2A> property is the string specified by the s parameter. If matching items are not found in the collection, the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection.IndexOf%2A> method returns -1.  
-  
+Returns the index of the command whose <xref:System.Web.UI.MobileControls.ObjectListCommand.Name%2A> property is the string specified by the s parameter. If matching items are not found in the collection, the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection.IndexOf%2A> method returns -1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -289,10 +289,10 @@
           <see langword="true" /> if view state changes are being tracked; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -317,10 +317,10 @@
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -343,10 +343,10 @@
         <returns>Returns an object that contains the view state changes, if any, or <see langword="null" /> if there are no changes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -368,10 +368,10 @@
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.TrackViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

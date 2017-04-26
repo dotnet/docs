@@ -21,17 +21,17 @@
     <summary>Represents a cell in a table.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only a <xref:System.Windows.Documents.DocumentStructures.TableRowStructure> can be the parent of a <xref:System.Windows.Documents.DocumentStructures.TableCellStructure>.  
+Only a <xref:System.Windows.Documents.DocumentStructures.TableRowStructure> can be the parent of a <xref:System.Windows.Documents.DocumentStructures.TableCellStructure>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the `<TableCellStructure>` part of an [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] document.  
-  
- [!code-xml[DocumentStructure#DocStructTableStruct1](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Content/FixedPage1_structure.xaml#docstructtablestruct1)]  
-  
+The following example shows the `<TableCellStructure>` part of an [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] document.  
+ 
+[!code-xml[DocumentStructure#DocStructTableStruct1](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Content/FixedPage1_structure.xaml#docstructtablestruct1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -169,12 +169,12 @@
         <summary>Adds a child object to the <see cref="T:System.Windows.Documents.DocumentStructures.TableCellStructure" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.DocumentStructures.TableCellStructure> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
-  
- Every <xref:System.Windows.Documents.DocumentStructures.TableCellStructure> must have at least one child. Typically, a child is a <xref:System.Windows.Documents.DocumentStructures.ParagraphStructure>, but it can be a <xref:System.Windows.Documents.DocumentStructures.ListStructure>, <xref:System.Windows.Documents.DocumentStructures.FigureStructure>, or a (nested) <xref:System.Windows.Documents.DocumentStructures.TableStructure>.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.DocumentStructures.TableCellStructure> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+ 
+Every <xref:System.Windows.Documents.DocumentStructures.TableCellStructure> must have at least one child. Typically, a child is a <xref:System.Windows.Documents.DocumentStructures.ParagraphStructure>, but it can be a <xref:System.Windows.Documents.DocumentStructures.ListStructure>, <xref:System.Windows.Documents.DocumentStructures.FigureStructure>, or a (nested) <xref:System.Windows.Documents.DocumentStructures.TableStructure>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -201,10 +201,10 @@
         <summary>Adds the text content of a node to the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.DocumentStructures.TableCellStructure> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.DocumentStructures.TableCellStructure> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

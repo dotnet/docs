@@ -18,12 +18,12 @@
     <summary>Represents a collection that contains operation descriptions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ServiceModel.Description.ContractDescription> is used to describe the contract for a service, including the associated operations. The operations are accessed from the <xref:System.ServiceModel.Description.ContractDescription.Operations%2A> property which returns the <xref:System.ServiceModel.Description.OperationDescriptionCollection> for the contract.  
-  
- Each contract operation has a corresponding <xref:System.ServiceModel.Description.OperationDescription> that describes aspects of the operation, such as whether the operation is one-way or request/reply. Each <xref:System.ServiceModel.Description.OperationDescription> in turn describes the messages that make up the operation using a collection of <xref:System.ServiceModel.Description.MessageDescription>.  
-  
+A <xref:System.ServiceModel.Description.ContractDescription> is used to describe the contract for a service, including the associated operations. The operations are accessed from the <xref:System.ServiceModel.Description.ContractDescription.Operations%2A> property which returns the <xref:System.ServiceModel.Description.OperationDescriptionCollection> for the contract.  
+ 
+Each contract operation has a corresponding <xref:System.ServiceModel.Description.OperationDescription> that describes aspects of the operation, such as whether the operation is one-way or request/reply. Each <xref:System.ServiceModel.Description.OperationDescription> in turn describes the messages that make up the operation using a collection of <xref:System.ServiceModel.Description.MessageDescription>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,10 +50,10 @@
         <returns>An <see cref="T:System.ServiceModel.Description.OperationDescription" /> with the name specified.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns the first occurrence of the <xref:System.ServiceModel.Description.OperationDescription> in the collection with the name specified. If you need to find all of the <xref:System.ServiceModel.Description.OperationDescription> objects in the collection use the <xref:System.ServiceModel.Description.OperationDescriptionCollection.FindAll%28System.String%29> method instead.  
-  
+This method returns the first occurrence of the <xref:System.ServiceModel.Description.OperationDescription> in the collection with the name specified. If you need to find all of the <xref:System.ServiceModel.Description.OperationDescription> objects in the collection use the <xref:System.ServiceModel.Description.OperationDescriptionCollection.FindAll%28System.String%29> method instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,10 +106,10 @@
         <summary>Inserts an element into the operation description collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is provided for the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] system to do input validation and is not expected to be called by users.  
-  
+This method is provided for the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] system to do input validation and is not expected to be called by users.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -139,10 +139,10 @@
         <summary>Replaces the operation description element in the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is provided for the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] system to do input validation and is not expected to be called by users.  
-  
+This method is provided for the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] system to do input validation and is not expected to be called by users.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

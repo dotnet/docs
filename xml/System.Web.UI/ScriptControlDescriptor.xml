@@ -52,10 +52,10 @@
         <value>The ID of the client component.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.ScriptControlDescriptor.ClientID%2A> property of the <xref:System.Web.UI.ScriptControlDescriptor> class always returns the value of the <xref:System.Web.UI.ScriptControlDescriptor.ElementID%2A> property.  
-  
+The <xref:System.Web.UI.ScriptControlDescriptor.ClientID%2A> property of the <xref:System.Web.UI.ScriptControlDescriptor> class always returns the value of the <xref:System.Web.UI.ScriptControlDescriptor.ElementID%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

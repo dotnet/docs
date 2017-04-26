@@ -47,10 +47,10 @@
         <value>The instance that contains the data methods to call, or <see langword="null" /> if the data methods are static methods.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you set this property, do not set the <xref:System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsType%2A> property.  
-  
+If you set this property, do not set the <xref:System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsType%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,10 +72,10 @@
         <value>The type that contains the static data methods to call, or <see langword="null" /> if the data methods are not static methods.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you set this property, do not set the <xref:System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsObject%2A> property.  
-  
+If you set this property, do not set the <xref:System.Web.UI.WebControls.CallingDataMethodsEventArgs.DataMethodsObject%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

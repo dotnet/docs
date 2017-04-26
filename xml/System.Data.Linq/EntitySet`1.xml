@@ -38,10 +38,10 @@
     <summary>Provides for deferred loading and relationship maintenance for the collection side of one-to-many and one-to-one relationships in a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] applications.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used in combination with <xref:System.Data.Linq.EntityRef%601>.  
-  
+This class is used in combination with <xref:System.Data.Linq.EntityRef%601>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -207,10 +207,10 @@
         <summary>Copies the <see cref="T:System.Data.Linq.EntitySet`1" /> to an array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following C# sample shows one use of this method:  
-  
+The following C# sample shows one use of this method:  
+ 
 ```  
 var customer = (from c in db.Customers  
    where c.CustomerID == "ALFKI"  
@@ -218,9 +218,9 @@ var customer = (from c in db.Customers
   
 Order[] orderArray = new Order[customer.Orders.Count];  
 ```  
-  
- customer.Orders.CopyTo(orderArray,0);In Visual Basic:  
-  
+ 
+customer.Orders.CopyTo(orderArray,0);In Visual Basic:  
+ 
 ```  
 Dim customer = (From c In db.Customers _   
    Where c.CustomerID = "ALFKI" _   
@@ -229,7 +229,7 @@ Dim customer = (From c In db.Customers _
 Dim orderArray As Order() = New Order(customer.Orders.Count - 1) {}  
 customer.Orders.CopyTo(orderArray, 0)  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,10 +325,10 @@ customer.Orders.CopyTo(orderArray, 0)
         <value>Returns true if the <see cref="T:System.Data.Linq.EntitySet`1" /> has either loaded or assigned a value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- "Loaded" means that the data was loaded during materialization or at deferred loading. "Assigned" means that you have manually given the data a value.  
-  
+"Loaded" means that the data was loaded during materialization or at deferred loading. "Assigned" means that you have manually given the data a value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -555,10 +555,10 @@ customer.Orders.CopyTo(orderArray, 0)
           <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -585,10 +585,10 @@ customer.Orders.CopyTo(orderArray, 0)
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -629,10 +629,10 @@ customer.Orders.CopyTo(orderArray, 0)
           <see langword="true" /> if access to the collection is synchronized (thread-safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -654,10 +654,10 @@ customer.Orders.CopyTo(orderArray, 0)
         <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -680,10 +680,10 @@ customer.Orders.CopyTo(orderArray, 0)
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through a collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IEnumerable?displayProperty=fullName> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IEnumerable?displayProperty=fullName> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -709,10 +709,10 @@ customer.Orders.CopyTo(orderArray, 0)
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList?displayProperty=fullName> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList?displayProperty=fullName> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -757,10 +757,10 @@ customer.Orders.CopyTo(orderArray, 0)
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Collections.IList" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList?displayProperty=fullName> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList?displayProperty=fullName> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -786,10 +786,10 @@ customer.Orders.CopyTo(orderArray, 0)
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList?displayProperty=fullName> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList?displayProperty=fullName> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -816,10 +816,10 @@ customer.Orders.CopyTo(orderArray, 0)
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -842,10 +842,10 @@ customer.Orders.CopyTo(orderArray, 0)
           <see langword="true" /> if the collection has a fixed size; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -868,10 +868,10 @@ customer.Orders.CopyTo(orderArray, 0)
           <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -897,10 +897,10 @@ customer.Orders.CopyTo(orderArray, 0)
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -925,10 +925,10 @@ customer.Orders.CopyTo(orderArray, 0)
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -972,10 +972,10 @@ customer.Orders.CopyTo(orderArray, 0)
           <see langword="true" /> if the collection is a collection of <see cref="T:System.Collections.IList" /> objects; otherwise <see langword="false" />;</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -998,10 +998,10 @@ customer.Orders.CopyTo(orderArray, 0)
         <returns>An <see cref="T:System.Collections.IList" /> that can be bound to a data source from the object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.ComponentModel.IListSource?displayProperty=fullName> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.EntitySet%601> instance is cast to an <xref:System.ComponentModel.IListSource?displayProperty=fullName> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

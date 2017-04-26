@@ -44,10 +44,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlEntityReference" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not instantiate an <xref:System.Xml.XmlEntityReference> directly; instead, use methods such as <xref:System.Xml.XmlDocument.CreateEntityReference%2A>.  
-  
+Do not instantiate an <xref:System.Xml.XmlEntityReference> directly; instead, use methods such as <xref:System.Xml.XmlDocument.CreateEntityReference%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -74,31 +74,31 @@
         <value>The location from which the node was loaded.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A networked XML document is comprised of chunks of data aggregated using various World Wide Web Consortium (W3C) standard inclusion mechanisms and therefore contains nodes that come from different places. The `BaseURI` tells you where these nodes came from. If there is no base URI for the nodes being returned (maybe they were parsed from an in-memory string), <xref:System.String> is returned.  
+A networked XML document is comprised of chunks of data aggregated using various World Wide Web Consortium (W3C) standard inclusion mechanisms and therefore contains nodes that come from different places. The `BaseURI` tells you where these nodes came from. If there is no base URI for the nodes being returned (maybe they were parsed from an in-memory string), <xref:System.String> is returned.  
+ 
+`BaseURI` walks the node tree looking for entity reference boundaries, so if entities are expanded, this information is not preserved and this property returns the location of the XmlDocument in all cases.  
+ 
+For additional information on `BaseURI` and how it behaves with other node types, see <xref:System.Xml.XmlNode.BaseURI%2A?displayProperty=fullName>.  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- `BaseURI` walks the node tree looking for entity reference boundaries, so if entities are expanded, this information is not preserved and this property returns the location of the XmlDocument in all cases.  
-  
- For additional information on `BaseURI` and how it behaves with other node types, see <xref:System.Xml.XmlNode.BaseURI%2A?displayProperty=fullName>.  
-  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example displays information on entity reference node, including its base URI.  
-  
- [!code-cpp[Classic WebData XmlEntityReference.BaseURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlEntityReference.BaseURI Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlEntityReference.BaseURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlEntityReference.BaseURI Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlEntityReference.BaseURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlEntityReference.BaseURI Example/VB/source.vb#1)]  
-  
- The sample uses the file, `uri.xml`, as input.  
-  
- [!code-xml[Classic WebData XmlEntityReference.BaseURI Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlEntityReference.BaseURI Example/XML/source.xml#2)]  
-  
- The `style.xml` file contains the XML string `<style>hardcover</style>`.  
-  
+The following example displays information on entity reference node, including its base URI.  
+ 
+[!code-cpp[Classic WebData XmlEntityReference.BaseURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlEntityReference.BaseURI Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlEntityReference.BaseURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlEntityReference.BaseURI Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlEntityReference.BaseURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlEntityReference.BaseURI Example/VB/source.vb#1)]  
+ 
+The sample uses the file, `uri.xml`, as input.  
+ 
+[!code-xml[Classic WebData XmlEntityReference.BaseURI Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlEntityReference.BaseURI Example/XML/source.xml#2)]  
+ 
+The `style.xml` file contains the XML string `<style>hardcover</style>`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,10 +130,10 @@
         <returns>The cloned node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method serves as a copy constructor for nodes. The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
-  
+This method serves as a copy constructor for nodes. The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,21 +163,21 @@
  Because <see langword="XmlEntityReference" /> nodes are read-only, this property always returns <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A read-only node is one whose properties, attributes, or children cannot be changed. However, you can remove a read-only node from the tree and insert it somewhere else.  
+A read-only node is one whose properties, attributes, or children cannot be changed. However, you can remove a read-only node from the tree and insert it somewhere else.  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the `IsReadOnly` property.  
-  
- [!code-cpp[Classic WebData XmlEntityReference.IsReadOnly Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlEntityReference.IsReadOnly Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlEntityReference.IsReadOnly Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlEntityReference.IsReadOnly Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlEntityReference.IsReadOnly Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlEntityReference.IsReadOnly Example/VB/source.vb#1)]  
-  
+The following example shows how to use the `IsReadOnly` property.  
+ 
+[!code-cpp[Classic WebData XmlEntityReference.IsReadOnly Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlEntityReference.IsReadOnly Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlEntityReference.IsReadOnly Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlEntityReference.IsReadOnly Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlEntityReference.IsReadOnly Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlEntityReference.IsReadOnly Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,14 +227,14 @@
         <value>The name of the entity referenced.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays information on the entity reference node.  
-  
- [!code-cpp[Classic WebData XmlEntityReference.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlEntityReference.Name Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlEntityReference.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlEntityReference.Name Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlEntityReference.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlEntityReference.Name Example/VB/source.vb#1)]  
-  
+The following example displays information on the entity reference node.  
+ 
+[!code-cpp[Classic WebData XmlEntityReference.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlEntityReference.Name Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlEntityReference.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlEntityReference.Name Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlEntityReference.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlEntityReference.Name Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,10 +312,10 @@
         <summary>Saves all the children of the node to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,10 +345,10 @@
         <summary>Saves the node to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>

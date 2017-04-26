@@ -14,13 +14,13 @@
     <summary>An enumeration listing the possible types of X.509 key identifier clauses.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to set the <xref:System.ServiceModel.Security.Tokens.X509SecurityTokenParameters.X509ReferenceStyle%2A> property to a member of this enumeration.  
-  
- [!code-csharp[S_UEAssymetricSecurityBindingElement#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/cs/source.cs#4)]
- [!code-vb[S_UEAssymetricSecurityBindingElement#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/vb/source.vb#4)]  
-  
+The following code shows how to set the <xref:System.ServiceModel.Security.Tokens.X509SecurityTokenParameters.X509ReferenceStyle%2A> property to a member of this enumeration.  
+ 
+[!code-csharp[S_UEAssymetricSecurityBindingElement#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/cs/source.cs#4)]
+[!code-vb[S_UEAssymetricSecurityBindingElement#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/vb/source.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

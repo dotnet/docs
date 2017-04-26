@@ -14,12 +14,12 @@
     <summary>Converts a control on the Web Forms page that can be validated with a validation control to a string containing the control's ID.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Not all controls can be validated with a validation control. This class creates a collection of control IDs on the Web Forms page that can be associated with a validation control. This collection is commonly used in a designer to display a list of controls on the Web Forms page that can be associated with a validation control.  
-  
- When creating your own validation control, you can enable the designer to display a list of controls that support validation controls. Simply add an attribute to the string property that represents the control to validate, as follows:  
-  
+Not all controls can be validated with a validation control. This class creates a collection of control IDs on the Web Forms page that can be associated with a validation control. This collection is commonly used in a designer to display a list of controls on the Web Forms page that can be associated with a validation control.  
+ 
+When creating your own validation control, you can enable the designer to display a list of controls that support validation controls. Simply add an attribute to the string property that represents the control to validate, as follows:  
+ 
 ```vb  
 <TypeConverter(GetType(ValidatedControlConverter))> _  
  Public Property ControlToValidate() As String  
@@ -31,7 +31,7 @@
     End Set  
  End Property  
 ```  
-  
+ 
 ```csharp  
 [TypeConverter(typeof(ValidatedControlConverter))]  
  public string ControlToValidate  
@@ -46,7 +46,7 @@
     }  
  }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -88,10 +88,10 @@
           <see langword="true" /> if the control should be added to the list of controls that can be validated; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.ValidatedControlConverter.FilterControl%2A> method returns `true`, the <xref:System.Web.UI.WebControls.ValidatedControlConverter> instance will add the ID of the control specified in the control parameter to the <xref:System.ComponentModel.TypeConverter.StandardValuesCollection> returned by the <xref:System.Web.UI.WebControls.ControlIDConverter.GetStandardValues%2A> method.  
-  
+When the <xref:System.Web.UI.WebControls.ValidatedControlConverter.FilterControl%2A> method returns `true`, the <xref:System.Web.UI.WebControls.ValidatedControlConverter> instance will add the ID of the control specified in the control parameter to the <xref:System.ComponentModel.TypeConverter.StandardValuesCollection> returned by the <xref:System.Web.UI.WebControls.ControlIDConverter.GetStandardValues%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

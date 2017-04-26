@@ -20,12 +20,12 @@
     <summary>Describes data type definitions relevant to exchanged messages. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is a container for data type definitions for the XML Web service. Note especially that this class does not represent a collection of instances of the <xref:System.Type> class, as its name might imply. Instead, it corresponds to the Web Services Description Language (WSDL) `<types>` element enclosed by the `<definitions>` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
-  
- The `Types` class has two read-only properties, <xref:System.Web.Services.Description.Types.Schemas%2A> and <xref:System.Web.Services.Description.Types.Extensions%2A>, representing the collections of data type definitions available to an XML Web service.  
-  
+This class is a container for data type definitions for the XML Web service. Note especially that this class does not represent a collection of instances of the <xref:System.Type> class, as its name might imply. Instead, it corresponds to the Web Services Description Language (WSDL) `<types>` element enclosed by the `<definitions>` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ 
+The `Types` class has two read-only properties, <xref:System.Web.Services.Description.Types.Schemas%2A> and <xref:System.Web.Services.Description.Types.Extensions%2A>, representing the collections of data type definitions available to an XML Web service.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,10 +69,10 @@
         <value>A collection of extension elements included in the XML Web service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the default implementation of the <xref:System.Web.Services.Description.Types> class, this property returns an empty collection.  
-  
+In the default implementation of the <xref:System.Web.Services.Description.Types> class, this property returns an empty collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,10 +100,10 @@
         <value>An <see cref="T:System.Xml.Serialization.XmlSchemas" /> collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the default implementation of the <xref:System.Web.Services.Description.Types> class, this property returns an empty collection.  
-  
+In the default implementation of the <xref:System.Web.Services.Description.Types> class, this property returns an empty collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

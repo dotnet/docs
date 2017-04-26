@@ -14,18 +14,18 @@
     <summary>Represents the [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile that is associated with a bitmap image.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The supported standard color spaces are sRGB, ScRGB, RGB, CMYK, Gray, Multichannel, and unknown.  
+The supported standard color spaces are sRGB, ScRGB, RGB, CMYK, Gray, Multichannel, and unknown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to get the color profile that is associated with a bitmap image.  
-  
- [!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
- [!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
-  
+The following code example demonstrates how to get the color profile that is associated with a bitmap image.  
+ 
+[!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
+[!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,10 +52,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Windows.Media.ColorContext" /> with the [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile located at a given <see cref="T:System.Uri" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To use any of the unsupported color profiles, you must install one and use its URI to initialize the <xref:System.Windows.Media.ColorContext> by using the <xref:System.Windows.Media.ColorContext.%23ctor%2A> constructor.  
-  
+To use any of the unsupported color profiles, you must install one and use its URI to initialize the <xref:System.Windows.Media.ColorContext> by using the <xref:System.Windows.Media.ColorContext.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,13 +82,13 @@
         <summary>Initializes a new instance of <see cref="T:System.Windows.Media.ColorContext" /> with the standard color profile (sRGB or RGB ) that most closely matches the supplied <see cref="T:System.Windows.Media.PixelFormat" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new instance of <xref:System.Windows.Media.ColorContext>.  
-  
- [!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
- [!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
-  
+The following code example demonstrates how to construct a new instance of <xref:System.Windows.Media.ColorContext>.  
+ 
+[!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
+[!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

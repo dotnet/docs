@@ -71,10 +71,10 @@
         <summary>Validates the specified X.509 certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws a <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception if validation fails.  
-  
+Throws a <xref:System.IdentityModel.Tokens.SecurityTokenValidationException> exception if validation fails.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

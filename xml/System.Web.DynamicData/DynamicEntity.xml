@@ -19,15 +19,15 @@
     <summary>Provides an ASP.NET control that represents an entity for use by ASP.NET Dynamic Data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This control can be used to load a control from the DynamicData\EntityTemplates folder. The control must derive from <xref:System.Web.DynamicData.EntityTemplateUserControl>.  
-  
- For a tutorial series on using model binding with Web Forms, which includes the use a <xref:System.Web.DynamicData.DynamicEntity> control, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
+This control can be used to load a control from the DynamicData\EntityTemplates folder. The control must derive from <xref:System.Web.DynamicData.EntityTemplateUserControl>.  
+ 
+For a tutorial series on using model binding with Web Forms, which includes the use a <xref:System.Web.DynamicData.DynamicEntity> control, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ 
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
-  
+ 
 ```  
 <asp:DynamicEntity  
     ID="string"  
@@ -35,7 +35,7 @@
     ValidationGroup="string"  
     OnLoad="On load event handler"/>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -122,10 +122,10 @@
         <summary>Sends server control content to a specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which renders the content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you develop custom server controls, you can override this method to generate content for an ASP.NET page.  
-  
+If you develop custom server controls, you can override this method to generate content for an ASP.NET page.  
+ 
  ]]></format>
         </remarks>
       </Docs>

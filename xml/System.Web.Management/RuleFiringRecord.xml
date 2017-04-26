@@ -14,18 +14,18 @@
     <summary>Represents the firing record for an event that derives from the <see cref="T:System.Web.Management.WebManagementEvent" /> class and implements the <see cref="T:System.Web.Management.IWebEventCustomEvaluator" /> interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Management.RuleFiringRecord> class provides information that could be used to determine whether the firing of the event should be recorded.  
+The <xref:System.Web.Management.RuleFiringRecord> class provides information that could be used to determine whether the firing of the event should be recorded.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how the <xref:System.Web.Management.RuleFiringRecord> is used when passed to the <xref:System.Web.Management.IWebEventCustomEvaluator.CanFire%2A> method.  
-  
- [!code-csharp[System.Web.Management.WebBaseEvent#22](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/CS/webbaseevent.cs#22)]
- [!code-vb[System.Web.Management.WebBaseEvent#22](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/VB/webbaseevent.vb#22)]  
-  
+The following code example shows how the <xref:System.Web.Management.RuleFiringRecord> is used when passed to the <xref:System.Web.Management.IWebEventCustomEvaluator.CanFire%2A> method.  
+ 
+[!code-csharp[System.Web.Management.WebBaseEvent#22](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/CS/webbaseevent.cs#22)]
+[!code-vb[System.Web.Management.WebBaseEvent#22](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/VB/webbaseevent.vb#22)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

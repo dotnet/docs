@@ -18,10 +18,10 @@
     <summary>The operation selector that supports the Web programming model.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector> dispatches method calls based on matching the Uniform Resource Identifier (URI) to a <xref:System.UriTemplateTable>. If multiple matches are found in the <xref:System.UriTemplateTable>, dispatch is done by the HTTP method.  
-  
+The <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector> dispatches method calls based on matching the Uniform Resource Identifier (URI) to a <xref:System.UriTemplateTable>. If multiple matches are found in the <xref:System.UriTemplateTable>, dispatch is done by the HTTP method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -114,10 +114,10 @@
         <summary>A string used as a key for storing the value that indicates whether a call to a service operation was matched by the URI but not by the HTTP method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two different errors can occur when calling a service operation: "404 Endpoint/URI not found" and "405 Method Not Allowed." This string and its associated Boolean value allow the service model to differentiate between these two errors. The "404 Endpoint/URI" error occurs when an invalid URI is used. The "405 Method Not Allowed" error occurs when a valid URI is used but the HTTP method was not valid for the URI.  
-  
+Two different errors can occur when calling a service operation: "404 Endpoint/URI not found" and "405 Method Not Allowed." This string and its associated Boolean value allow the service model to differentiate between these two errors. The "404 Endpoint/URI" error occurs when an invalid URI is used. The "405 Method Not Allowed" error occurs when a valid URI is used but the HTTP method was not valid for the URI.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,10 +167,10 @@
         <returns>The name of the service operation to call.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is possible that an incoming URI matches an operation, but the HTTP method is not allowed by the operation. In such cases, the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] runtime returns 404 (Not Found) when `uriMatched` is `false`, and returns 405 (Method Not Allowed) when `uriMatched` is `true`.  
-  
+It is possible that an incoming URI matches an operation, but the HTTP method is not allowed by the operation. In such cases, the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] runtime returns 404 (Not Found) when `uriMatched` is `false`, and returns 405 (Method Not Allowed) when `uriMatched` is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

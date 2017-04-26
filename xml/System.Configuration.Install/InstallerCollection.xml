@@ -14,33 +14,33 @@
     <summary>Contains a collection of installers to be run during an installation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.Install.InstallerCollection> provides the methods and properties that your application needs to manage a collection of <xref:System.Configuration.Install.Installer> objects.  
-  
- Use any of the following three ways to add installers to the collection:  
-  
+The <xref:System.Configuration.Install.InstallerCollection> provides the methods and properties that your application needs to manage a collection of <xref:System.Configuration.Install.Installer> objects.  
+ 
+Use any of the following three ways to add installers to the collection:  
+ 
 -   The <xref:System.Configuration.Install.InstallerCollection.Add%2A> method adds a single installer to the collection.  
-  
+ 
 -   The <xref:System.Configuration.Install.InstallerCollection.AddRange%2A> methods add multiple installers to the collection.  
-  
+ 
 -   The <xref:System.Configuration.Install.InstallerCollection.Insert%2A> method and the <xref:System.Configuration.Install.InstallerCollection.Item%2A> property, which is the <xref:System.Configuration.Install.InstallerCollection> indexer, each add a single installer to the collection at the specified index.  
+ 
+Remove installers through the <xref:System.Configuration.Install.InstallerCollection.Remove%2A> method. Check whether an installer is in the collection by using the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method. Find where an installer is located in the collection by using the <xref:System.Configuration.Install.InstallerCollection.IndexOf%2A> method.  
+ 
+The installers in a collection are run when the installer containing the collection, as specified by the <xref:System.Configuration.Install.Installer.Parent%2A?displayProperty=fullName> property, calls their <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, or <xref:System.Configuration.Install.Installer.Uninstall%2A> methods.  
+ 
+For examples of the usage of an installer collection, see the <xref:System.Configuration.Install.AssemblyInstaller> and <xref:System.Configuration.Install.TransactedInstaller> classes.  
+ 
   
- Remove installers through the <xref:System.Configuration.Install.InstallerCollection.Remove%2A> method. Check whether an installer is in the collection by using the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method. Find where an installer is located in the collection by using the <xref:System.Configuration.Install.InstallerCollection.IndexOf%2A> method.  
-  
- The installers in a collection are run when the installer containing the collection, as specified by the <xref:System.Configuration.Install.Installer.Parent%2A?displayProperty=fullName> property, calls their <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, or <xref:System.Configuration.Install.Installer.Uninstall%2A> methods.  
-  
- For examples of the usage of an installer collection, see the <xref:System.Configuration.Install.AssemblyInstaller> and <xref:System.Configuration.Install.TransactedInstaller> classes.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.Add%2A> method of the <xref:System.Configuration.Install.InstallerCollection> class. This example provides an implementation similar to that of [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md). It installs assemblies with the options preceding that particular assembly. If an option is not specified for an assembly, the previous assembly's options are taken if there is a previous assembly in the list. If the "/u" or "/uninstall" option is specified, the assemblies are uninstalled. If the "/?" or "/help" option is provided, the help information is displayed to the console.  
-  
- [!code-cpp[InstallerCollection_Add#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Add/CPP/installercollection_add.cpp#1)]
- [!code-csharp[InstallerCollection_Add#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Add/CS/installercollection_add.cs#1)]
- [!code-vb[InstallerCollection_Add#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Add/VB/installercollection_add.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.Add%2A> method of the <xref:System.Configuration.Install.InstallerCollection> class. This example provides an implementation similar to that of [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md). It installs assemblies with the options preceding that particular assembly. If an option is not specified for an assembly, the previous assembly's options are taken if there is a previous assembly in the list. If the "/u" or "/uninstall" option is specified, the assemblies are uninstalled. If the "/?" or "/help" option is provided, the help information is displayed to the console.  
+ 
+[!code-cpp[InstallerCollection_Add#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Add/CPP/installercollection_add.cpp#1)]
+[!code-csharp[InstallerCollection_Add#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Add/CS/installercollection_add.cs#1)]
+[!code-vb[InstallerCollection_Add#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Add/VB/installercollection_add.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,19 +66,19 @@
         <returns>The zero-based index of the added installer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.Install.Installer.Parent%2A> property of the added <xref:System.Configuration.Install.Installer> is set to specify the <xref:System.Configuration.Install.Installer> containing this collection.  
+The <xref:System.Configuration.Install.Installer.Parent%2A> property of the added <xref:System.Configuration.Install.Installer> is set to specify the <xref:System.Configuration.Install.Installer> containing this collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is an excerpt of the example in the <xref:System.Configuration.Install.InstallerCollection> class.  
-  
- [!code-cpp[InstallerCollection_Add#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Add/CPP/installercollection_add.cpp#1)]
- [!code-csharp[InstallerCollection_Add#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Add/CS/installercollection_add.cs#1)]
- [!code-vb[InstallerCollection_Add#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Add/VB/installercollection_add.vb#1)]  
-  
+The following example is an excerpt of the example in the <xref:System.Configuration.Install.InstallerCollection> class.  
+ 
+[!code-cpp[InstallerCollection_Add#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Add/CPP/installercollection_add.cpp#1)]
+[!code-csharp[InstallerCollection_Add#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Add/CS/installercollection_add.cs#1)]
+[!code-vb[InstallerCollection_Add#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Add/VB/installercollection_add.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,19 +103,19 @@
         <summary>Adds the specified array of installers to this collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.Install.Installer.Parent%2A> property of each added <xref:System.Configuration.Install.Installer> is set to the <xref:System.Configuration.Install.Installer> containing this collection.  
+The <xref:System.Configuration.Install.Installer.Parent%2A> property of each added <xref:System.Configuration.Install.Installer> is set to the <xref:System.Configuration.Install.Installer> containing this collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.AddRange%2A> method of the <xref:System.Configuration.Install.InstallerCollection> class. It creates <xref:System.Configuration.Install.AssemblyInstaller> instances for `MyAssembly1.exe` and `MyAssembly2.exe`.These instances are added to a <xref:System.Configuration.Install.TransactedInstaller>. The installation process installs both `MyAssembly1.exe` and `MyAssembly2.exe`.  
-  
- [!code-cpp[InstallerCollection_AddRange1#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_AddRange1/CPP/installercollection_addrange1.cpp#1)]
- [!code-csharp[InstallerCollection_AddRange1#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_AddRange1/CS/installercollection_addrange1.cs#1)]
- [!code-vb[InstallerCollection_AddRange1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_AddRange1/VB/installercollection_addrange1.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.AddRange%2A> method of the <xref:System.Configuration.Install.InstallerCollection> class. It creates <xref:System.Configuration.Install.AssemblyInstaller> instances for `MyAssembly1.exe` and `MyAssembly2.exe`.These instances are added to a <xref:System.Configuration.Install.TransactedInstaller>. The installation process installs both `MyAssembly1.exe` and `MyAssembly2.exe`.  
+ 
+[!code-cpp[InstallerCollection_AddRange1#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_AddRange1/CPP/installercollection_addrange1.cpp#1)]
+[!code-csharp[InstallerCollection_AddRange1#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_AddRange1/CS/installercollection_addrange1.cs#1)]
+[!code-vb[InstallerCollection_AddRange1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_AddRange1/VB/installercollection_addrange1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,19 +140,19 @@
         <summary>Adds the specified collection of installers to this collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.Install.Installer.Parent%2A> property of each added <xref:System.Configuration.Install.Installer> is set to the <xref:System.Configuration.Install.Installer> containing this collection.  
+The <xref:System.Configuration.Install.Installer.Parent%2A> property of each added <xref:System.Configuration.Install.Installer> is set to the <xref:System.Configuration.Install.Installer> containing this collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.Insert%2A> method and the <xref:System.Configuration.Install.InstallerCollection.AddRange%2A> methods of the <xref:System.Configuration.Install.InstallerCollection> class. It creates <xref:System.Configuration.Install.AssemblyInstaller> instances for `MyAssembly1.exe` and `MyAssembly2.exe`. These instances of <xref:System.Configuration.Install.AssemblyInstaller> are added to a <xref:System.Configuration.Install.TransactedInstaller> named `myTransactedInstaller1`. The installers in the `myTransactedInstaller1` are copied to another <xref:System.Configuration.Install.TransactedInstaller> named `myTransactedInstaller2`. The installation process installs both `MyAssembly1.exe` and `MyAssembly2.exe`.  
-  
- [!code-cpp[InstallerCollection_Insert#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Insert/CPP/installercollection_insert.cpp#1)]
- [!code-csharp[InstallerCollection_Insert#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Insert/CS/installercollection_insert.cs#1)]
- [!code-vb[InstallerCollection_Insert#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Insert/VB/installercollection_insert.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.Insert%2A> method and the <xref:System.Configuration.Install.InstallerCollection.AddRange%2A> methods of the <xref:System.Configuration.Install.InstallerCollection> class. It creates <xref:System.Configuration.Install.AssemblyInstaller> instances for `MyAssembly1.exe` and `MyAssembly2.exe`. These instances of <xref:System.Configuration.Install.AssemblyInstaller> are added to a <xref:System.Configuration.Install.TransactedInstaller> named `myTransactedInstaller1`. The installers in the `myTransactedInstaller1` are copied to another <xref:System.Configuration.Install.TransactedInstaller> named `myTransactedInstaller2`. The installation process installs both `MyAssembly1.exe` and `MyAssembly2.exe`.  
+ 
+[!code-cpp[InstallerCollection_Insert#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Insert/CPP/installercollection_insert.cpp#1)]
+[!code-csharp[InstallerCollection_Insert#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Insert/CS/installercollection_insert.cs#1)]
+[!code-vb[InstallerCollection_Insert#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Insert/VB/installercollection_insert.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,14 +179,14 @@
           <see langword="true" /> if the specified installer is in this collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.Remove%2A> method, <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method, and <xref:System.Configuration.Install.InstallerCollection.IndexOf%2A> method of the <xref:System.Configuration.Install.InstallerCollection> class. It creates <xref:System.Configuration.Install.AssemblyInstaller> instances for `MyAssembly1.exe` and `MyAssembly2.exe`. These instances are added to a <xref:System.Configuration.Install.TransactedInstaller>. `MyAssembly2.exe` is then removed from the <xref:System.Configuration.Install.InstallerCollection> of the <xref:System.Configuration.Install.TransactedInstaller>. The installation process starts and installs only `MyAssembly1.exe`.  
-  
- [!code-cpp[InstallerCollection_Remove#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Remove/CPP/installercollection_remove.cpp#1)]
- [!code-csharp[InstallerCollection_Remove#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Remove/CS/installercollection_remove.cs#1)]
- [!code-vb[InstallerCollection_Remove#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Remove/VB/installercollection_remove.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.Remove%2A> method, <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method, and <xref:System.Configuration.Install.InstallerCollection.IndexOf%2A> method of the <xref:System.Configuration.Install.InstallerCollection> class. It creates <xref:System.Configuration.Install.AssemblyInstaller> instances for `MyAssembly1.exe` and `MyAssembly2.exe`. These instances are added to a <xref:System.Configuration.Install.TransactedInstaller>. `MyAssembly2.exe` is then removed from the <xref:System.Configuration.Install.InstallerCollection> of the <xref:System.Configuration.Install.TransactedInstaller>. The installation process starts and installs only `MyAssembly1.exe`.  
+ 
+[!code-cpp[InstallerCollection_Remove#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Remove/CPP/installercollection_remove.cpp#1)]
+[!code-csharp[InstallerCollection_Remove#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Remove/CS/installercollection_remove.cs#1)]
+[!code-vb[InstallerCollection_Remove#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Remove/VB/installercollection_remove.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,14 +213,14 @@
         <summary>Copies the items from the collection to an array, begining at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.CopyTo%2A> method of the <xref:System.Configuration.Install.InstallerCollection> class. It creates <xref:System.Configuration.Install.AssemblyInstaller> instances for `MyAssembly1.exe` and `MyAssembly2.exe`. These instances are added to a <xref:System.Configuration.Install.TransactedInstaller>. The names of the assemblies to be installed are displayed on the console. The installation process installs both `MyAssembly1.exe` and `MyAssembly2.exe`.  
-  
- [!code-cpp[InstallerCollection_CopyTo#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_CopyTo/CPP/installercollection_copyto.cpp#1)]
- [!code-csharp[InstallerCollection_CopyTo#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_CopyTo/CS/installercollection_copyto.cs#1)]
- [!code-vb[InstallerCollection_CopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_CopyTo/VB/installercollection_copyto.vb#1)]  
-  
+The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.CopyTo%2A> method of the <xref:System.Configuration.Install.InstallerCollection> class. It creates <xref:System.Configuration.Install.AssemblyInstaller> instances for `MyAssembly1.exe` and `MyAssembly2.exe`. These instances are added to a <xref:System.Configuration.Install.TransactedInstaller>. The names of the assemblies to be installed are displayed on the console. The installation process installs both `MyAssembly1.exe` and `MyAssembly2.exe`.  
+ 
+[!code-cpp[InstallerCollection_CopyTo#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_CopyTo/CPP/installercollection_copyto.cpp#1)]
+[!code-csharp[InstallerCollection_CopyTo#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_CopyTo/CS/installercollection_copyto.cs#1)]
+[!code-vb[InstallerCollection_CopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_CopyTo/VB/installercollection_copyto.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,14 +246,14 @@
         <returns>The zero-based index of the installer in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example is the same as the example in the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method. For more information on this example, please see the Example section of the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method.  
-  
- [!code-cpp[InstallerCollection_Remove#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Remove/CPP/installercollection_remove.cpp#1)]
- [!code-csharp[InstallerCollection_Remove#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Remove/CS/installercollection_remove.cs#1)]
- [!code-vb[InstallerCollection_Remove#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Remove/VB/installercollection_remove.vb#1)]  
-  
+The following example is the same as the example in the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method. For more information on this example, please see the Example section of the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method.  
+ 
+[!code-cpp[InstallerCollection_Remove#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Remove/CPP/installercollection_remove.cpp#1)]
+[!code-csharp[InstallerCollection_Remove#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Remove/CS/installercollection_remove.cs#1)]
+[!code-vb[InstallerCollection_Remove#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Remove/VB/installercollection_remove.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,14 +280,14 @@
         <summary>Inserts the specified installer into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example is the same as the example in the <xref:System.Configuration.Install.InstallerCollection.AddRange%2A> method. For more information on this example, please see the Example section of the <xref:System.Configuration.Install.InstallerCollection.AddRange%2A> method.  
-  
- [!code-cpp[InstallerCollection_Insert#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Insert/CPP/installercollection_insert.cpp#1)]
- [!code-csharp[InstallerCollection_Insert#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Insert/CS/installercollection_insert.cs#1)]
- [!code-vb[InstallerCollection_Insert#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Insert/VB/installercollection_insert.vb#1)]  
-  
+The following example is the same as the example in the <xref:System.Configuration.Install.InstallerCollection.AddRange%2A> method. For more information on this example, please see the Example section of the <xref:System.Configuration.Install.InstallerCollection.AddRange%2A> method.  
+ 
+[!code-cpp[InstallerCollection_Insert#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Insert/CPP/installercollection_insert.cpp#1)]
+[!code-csharp[InstallerCollection_Insert#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Insert/CS/installercollection_insert.cs#1)]
+[!code-vb[InstallerCollection_Insert#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Insert/VB/installercollection_insert.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -313,19 +313,19 @@
         <value>An <see cref="T:System.Configuration.Install.Installer" /> that represents the installer at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the specified <xref:System.Configuration.Install.Installer> is placed in the <xref:System.Configuration.Install.InstallerCollection>, the <xref:System.Configuration.Install.Installer.Parent%2A> property of the <xref:System.Configuration.Install.Installer> is set to the <xref:System.Configuration.Install.Installer> that contains the collection.  
+When the specified <xref:System.Configuration.Install.Installer> is placed in the <xref:System.Configuration.Install.InstallerCollection>, the <xref:System.Configuration.Install.Installer.Parent%2A> property of the <xref:System.Configuration.Install.Installer> is set to the <xref:System.Configuration.Install.Installer> that contains the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates <xref:System.Configuration.Install.AssemblyInstaller> instances for `MyAssembly1.exe` and `MyAssembly2.exe`. These instances are added to a <xref:System.Configuration.Install.TransactedInstaller>. The names of all the assemblies that are to be installed are displayed to the console. The installation process installs both `MyAssembly1.exe` and `MyAssembly2.exe`.  
-  
- [!code-cpp[InstallerCollection_Item#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Item/CPP/installercollection_item.cpp#1)]
- [!code-csharp[InstallerCollection_Item#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Item/CS/installercollection_item.cs#1)]
- [!code-vb[InstallerCollection_Item#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Item/VB/installercollection_item.vb#1)]  
-  
+The following example creates <xref:System.Configuration.Install.AssemblyInstaller> instances for `MyAssembly1.exe` and `MyAssembly2.exe`. These instances are added to a <xref:System.Configuration.Install.TransactedInstaller>. The names of all the assemblies that are to be installed are displayed to the console. The installation process installs both `MyAssembly1.exe` and `MyAssembly2.exe`.  
+ 
+[!code-cpp[InstallerCollection_Item#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Item/CPP/installercollection_item.cpp#1)]
+[!code-csharp[InstallerCollection_Item#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Item/CS/installercollection_item.cs#1)]
+[!code-vb[InstallerCollection_Item#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Item/VB/installercollection_item.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -421,19 +421,19 @@
         <summary>Removes the specified <see cref="T:System.Configuration.Install.Installer" /> from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.Install.Installer.Parent%2A> property of the removed <xref:System.Configuration.Install.Installer> is set to `null`.  
+The <xref:System.Configuration.Install.Installer.Parent%2A> property of the removed <xref:System.Configuration.Install.Installer> is set to `null`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is the same as the example in the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method. For more information on this example, please see the Example section of the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method.  
-  
- [!code-cpp[InstallerCollection_Remove#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Remove/CPP/installercollection_remove.cpp#1)]
- [!code-csharp[InstallerCollection_Remove#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Remove/CS/installercollection_remove.cs#1)]
- [!code-vb[InstallerCollection_Remove#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Remove/VB/installercollection_remove.vb#1)]  
-  
+The following example is the same as the example in the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method. For more information on this example, please see the Example section of the <xref:System.Configuration.Install.InstallerCollection.Contains%2A> method.  
+ 
+[!code-cpp[InstallerCollection_Remove#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Remove/CPP/installercollection_remove.cpp#1)]
+[!code-csharp[InstallerCollection_Remove#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Remove/CS/installercollection_remove.cs#1)]
+[!code-vb[InstallerCollection_Remove#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallerCollection_Remove/VB/installercollection_remove.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

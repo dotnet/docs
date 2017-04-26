@@ -24,12 +24,12 @@
     <summary>Provides the security zone of a code assembly as evidence for policy evaluation. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The presence of <xref:System.Security.Policy.Zone> evidence produces a <xref:System.Security.Permissions.ZoneIdentityPermission> in the grant set. If there is a <xref:System.Security.CodeAccessPermission.Demand%2A> for <xref:System.Security.Permissions.ZoneIdentityPermission>, the <xref:System.Security.Permissions.ZoneIdentityPermission> that corresponds to the <xref:System.Security.Policy.Zone> evidence will be compared with the demanded permission.  
-  
- Zones are defined by the <xref:System.Security.SecurityZone> enumeration.  
-  
+The presence of <xref:System.Security.Policy.Zone> evidence produces a <xref:System.Security.Permissions.ZoneIdentityPermission> in the grant set. If there is a <xref:System.Security.CodeAccessPermission.Demand%2A> for <xref:System.Security.Permissions.ZoneIdentityPermission>, the <xref:System.Security.Permissions.ZoneIdentityPermission> that corresponds to the <xref:System.Security.Policy.Zone> evidence will be compared with the demanded permission.  
+ 
+Zones are defined by the <xref:System.Security.SecurityZone> enumeration.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -115,10 +115,10 @@
         <returns>A new zone with the specified URL.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The zone determination for the specified URL is based on the zone mapping settings in Microsoft Internet Explorer and can therefore differ from computer to computer. The zone mapping settings are located on the Security tab of the Internet Options dialog launched from the Tools menu.  
-  
+The zone determination for the specified URL is based on the zone mapping settings in Microsoft Internet Explorer and can therefore differ from computer to computer. The zone mapping settings are located on the Security tab of the Internet Options dialog launched from the Tools menu.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="url" /> parameter is <see langword="null" />.</exception>
@@ -170,10 +170,10 @@
           <see langword="true" /> if the two <see cref="T:System.Security.Policy.Zone" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Policy.Zone> objects are equal if they designate the same <xref:System.Security.SecurityZone>.  
-  
+<xref:System.Security.Policy.Zone> objects are equal if they designate the same <xref:System.Security.SecurityZone>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="o" /> parameter is not a <see cref="T:System.Security.Policy.Zone" /> object.</exception>

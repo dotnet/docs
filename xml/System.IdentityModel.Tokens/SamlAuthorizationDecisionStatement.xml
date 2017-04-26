@@ -14,17 +14,17 @@
     <summary>Represents a claim for a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token that asserts that an authorization decision regarding access by the subject to the specified resource has been made.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify whether a subject is authorized to access a specific resource. The claims in a SAML assertion are represented by SAML statements. The SAML specification defines a set of SAML statement types and one of them is a <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement>. An <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> asserts an authorization decision regarding access by the subject to the specified resource has been made. The following table summarizes the properties that are associated with the authorization decision.  
-  
+<xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify whether a subject is authorized to access a specific resource. The claims in a SAML assertion are represented by SAML statements. The SAML specification defines a set of SAML statement types and one of them is a <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement>. An <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> asserts an authorization decision regarding access by the subject to the specified resource has been made. The following table summarizes the properties that are associated with the authorization decision.  
+ 
 |Property|Description|  
 |--------------|-----------------|  
 |<xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A>|The authorization decision rendered by the SAML authority with respect to the resource represented by the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource%2A> property.|  
 |<xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Evidence%2A>|A set of SAML assertions that the SAML authority relied on to render the decision.|  
 |<xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource%2A>|A URI reference that identifies the resource to which access is sought.|  
 |<xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.SamlActions%2A>|The set of actions that the subject is authorized to perform on the resource represented by the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource%2A> property.|  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,10 +43,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.IsReadOnly%2A> property to `false` and the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ClaimType%2A> property to `http://schemas.microsoft.com/mb/2005/09/ClaimType/SamlAuthorizationDecision`.  
-  
+This constructor initializes the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.IsReadOnly%2A> property to `false` and the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ClaimType%2A> property to `http://schemas.microsoft.com/mb/2005/09/ClaimType/SamlAuthorizationDecision`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -74,10 +74,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement" /> class.  using the specified subject, resource, authorization decision, and the actions sought by the subject on the resource.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.IsReadOnly%2A> property to `false`, the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ClaimType%2A> property to `http://schemas.microsoft.com/mb/2005/09/ClaimType/SamlAuthorizationDecision`, and the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Evidence%2A> property to `null`.  
-  
+This constructor initializes the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.IsReadOnly%2A> property to `false`, the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ClaimType%2A> property to `http://schemas.microsoft.com/mb/2005/09/ClaimType/SamlAuthorizationDecision`, and the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Evidence%2A> property to `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -123,10 +123,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement" /> class.  using the specified subject, resource, authorization decision, and the actions sought by the subject on the resource.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.IsReadOnly%2A> property to `false`, the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ClaimType%2A> property to `http://schemas.microsoft.com/mb/2005/09/ClaimType/SamlAuthorizationDecision`.  
-  
+This constructor initializes the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.IsReadOnly%2A> property to `false`, the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ClaimType%2A> property to `http://schemas.microsoft.com/mb/2005/09/ClaimType/SamlAuthorizationDecision`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,10 +167,10 @@
 </list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A> property corresponds to the `Decision` attribute of the `<AuthorizationDecisionStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A> property corresponds to the `Decision` attribute of the `<AuthorizationDecisionStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,10 +195,10 @@
         <summary>Adds claims based on the properties of this instance to the specified collection of claims.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AddClaimsToList%28System.Collections.Generic.IList%7BSystem.IdentityModel.Claims.Claim%7D%29> method adds a claim to the `claims` parameter for each action specified in the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.SamlActions%2A> property. Each claim that is added to the collection is based on the action, and the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ClaimType%2A>, <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource%2A>, and <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A> properties. The claim resource type is <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource>.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AddClaimsToList%28System.Collections.Generic.IList%7BSystem.IdentityModel.Claims.Claim%7D%29> method adds a claim to the `claims` parameter for each action specified in the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.SamlActions%2A> property. Each claim that is added to the collection is based on the action, and the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ClaimType%2A>, <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource%2A>, and <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A> properties. The claim resource type is <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -240,10 +240,10 @@
         <value>A <see cref="T:System.IdentityModel.Tokens.SamlEvidence" /> that contains a set of SAML assertions that the SAML authority relied on to render the authorization decision.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A> property corresponds to the `<Evidence>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A> property corresponds to the `<Evidence>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,10 +266,10 @@
           <see langword="true" /> if the properties of this instance are read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To make this instance of the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> class read-only, call the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.MakeReadOnly%2A> method.  
-  
+To make this instance of the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> class read-only, call the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.MakeReadOnly%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,10 +291,10 @@
         <summary>Causes this instance to be read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.IsReadOnly%2A> property is set to `true` and properties of this instance can no longer be set.  
-  
+When the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.IsReadOnly%2A> property is set to `true` and properties of this instance can no longer be set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,18 +325,18 @@
         <summary>Reads the SAML authorization statement from the specified XML reader.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ReadXml%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Tokens.SamlSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method sets the following properties:  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ReadXml%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Tokens.SamlSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method sets the following properties:  
+ 
 -   <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Evidence%2A>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource%2A>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.SamlActions%2A>  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -370,10 +370,10 @@
         <value>A URI reference that identifies the resource to which access is sought.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A> property corresponds to the `Decision` attribute of the `<AuthorizationDecisionStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A> property corresponds to the `Decision` attribute of the `<AuthorizationDecisionStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,10 +395,10 @@
         <value>An <see cref="T:System.Collections.Generic.IList`1" /> of type <see cref="T:System.IdentityModel.Tokens.SamlAction" /> that specifies the set of actions that the subject is authorized to perform on the resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.SamlActions%2A> property corresponds to the `<Action>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.SamlActions%2A> property corresponds to the `<Action>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -427,10 +427,10 @@
         <summary>Writes the SAML authorization statement into the specified XML serializer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.WriteXml%28System.Xml.XmlDictionaryWriter%2CSystem.IdentityModel.Tokens.SamlSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%29> method to write the current <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> instance into a `<AuthorizationDecisionStatement>` element.  
-  
+Use the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.WriteXml%28System.Xml.XmlDictionaryWriter%2CSystem.IdentityModel.Tokens.SamlSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%29> method to write the current <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> instance into a `<AuthorizationDecisionStatement>` element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

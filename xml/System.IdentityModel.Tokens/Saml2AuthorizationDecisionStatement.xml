@@ -14,19 +14,19 @@
     <summary>Represents the <see langword="&lt;saml:AuthzDecisionStatement&gt;" /> element defined by SAML 2.0.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IdentityModel.Tokens.Saml2SecurityToken> security tokens specify their claims using SAML assertions, which can specify whether a subject is authorized to access a specific resource. The claims in a SAML assertion are represented by SAML statements. The SAML 2.0 specification defines a set of SAML statement types and one of them is represented by the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> class. When specified in a SAML 2.0 assertion in the <xref:System.IdentityModel.Tokens.Saml2Assertion.Statements%2A?displayProperty=fullName> property, a <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> asserts an authorization decision regarding access by the subject of the assertion to a specified resource. The subject of the SAML 2.0 assertion is specified by the <xref:System.IdentityModel.Tokens.Saml2Assertion.Subject%2A?displayProperty=fullName> property. The following table summarizes the properties that are associated with the authorization decision.  
-  
+<xref:System.IdentityModel.Tokens.Saml2SecurityToken> security tokens specify their claims using SAML assertions, which can specify whether a subject is authorized to access a specific resource. The claims in a SAML assertion are represented by SAML statements. The SAML 2.0 specification defines a set of SAML statement types and one of them is represented by the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> class. When specified in a SAML 2.0 assertion in the <xref:System.IdentityModel.Tokens.Saml2Assertion.Statements%2A?displayProperty=fullName> property, a <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> asserts an authorization decision regarding access by the subject of the assertion to a specified resource. The subject of the SAML 2.0 assertion is specified by the <xref:System.IdentityModel.Tokens.Saml2Assertion.Subject%2A?displayProperty=fullName> property. The following table summarizes the properties that are associated with the authorization decision.  
+ 
 |Property|Description|  
 |--------------|-----------------|  
 |<xref:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Decision%2A>|The authorization decision rendered by the SAML authority with respect to the resource represented by the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource%2A> property.|  
 |<xref:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Evidence%2A>|A set of SAML assertions that the SAML authority relied on to render the decision.|  
 |<xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource%2A>|A URI reference that identifies the resource to which access is sought.|  
 |<xref:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Actions%2A>|The set of actions that the subject is authorized to perform on the resource represented by the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource%2A> property. Each action is represented by an instance of <xref:System.IdentityModel.Tokens.Saml2Action>.|  
-  
- [!INCLUDE[wif_saml2_ref](~/includes/wif-saml2-ref-md.md)]  
-  
+ 
+[!INCLUDE[wif_saml2_ref](~/includes/wif-saml2-ref-md.md)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,10 +50,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement" /> class with the specified decision for the specified resource.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Actions%2A> property is initialized to null in the new instance.  
-  
+The <xref:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Actions%2A> property is initialized to null in the new instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -109,10 +109,10 @@
         <value>A collection of type <see cref="T:System.IdentityModel.Tokens.Saml2Action" /> that specifies the authorized actions.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<saml:Actions>` child element. [!INCLUDE[wif_saml2_ref](~/includes/wif-saml2-ref-md.md)]  
-  
+Corresponds to the `<saml:Actions>` child element. [!INCLUDE[wif_saml2_ref](~/includes/wif-saml2-ref-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -134,10 +134,10 @@
         <value>One of the <see cref="T:System.IdentityModel.Tokens.SamlAccessDecision" /> values that specify the authorization decision rendered by the SAML authority with respect to access by the subject to the specified resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<saml:Decision>` child element. [!INCLUDE[wif_saml2_ref](~/includes/wif-saml2-ref-md.md)]  
-  
+Corresponds to the `<saml:Decision>` child element. [!INCLUDE[wif_saml2_ref](~/includes/wif-saml2-ref-md.md)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">An attempt to set a value that is not a valid <see cref="T:System.IdentityModel.Tokens.SamlAccessDecision" /> value occurs.</exception>
@@ -159,10 +159,10 @@
         <summary>Gets an empty URI reference. The reference may be used to set the <see cref="P:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Resource" /> property. When used, it specifies the start of the current document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An empty URI reference.  
-  
+An empty URI reference.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,10 +184,10 @@
         <value>A <see cref="T:System.IdentityModel.Tokens.Saml2Evidence" /> that contains the assertions.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<saml:Evidence>` child element. [!INCLUDE[wif_saml2_ref](~/includes/wif-saml2-ref-md.md)]  
-  
+Corresponds to the `<saml:Evidence>` child element. [!INCLUDE[wif_saml2_ref](~/includes/wif-saml2-ref-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,12 +209,12 @@
         <value>A <see cref="T:System.Uri" /> that identifies the resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `Resource` attribute [!INCLUDE[wif_saml2_ref](~/includes/wif-saml2-ref-md.md)].  
-  
- The <xref:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Resource%2A> property may be set to an absolute URI or to the empty URI reference (<xref:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.EmptyResource>). When it is set to the empty URI reference, the meaning is defined to be the start of the current document.  
-  
+Corresponds to the `Resource` attribute [!INCLUDE[wif_saml2_ref](~/includes/wif-saml2-ref-md.md)].  
+ 
+The <xref:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.Resource%2A> property may be set to an absolute URI or to the empty URI reference (<xref:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement.EmptyResource>). When it is set to the empty URI reference, the meaning is defined to be the start of the current document.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set a value that is <see langword="null" /> occurs.</exception>

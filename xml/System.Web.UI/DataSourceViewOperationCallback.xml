@@ -23,10 +23,10 @@
     <returns>A value indicating whether any exceptions thrown during the data operation were handled.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, ASP.NET Web page and control execution is synchronous. However, data source controls can be extended to support asynchronous data retrieval and data operations. The <xref:System.Web.UI.DataSourceView> object supports the <xref:System.Web.UI.DataSourceView.Insert%2A>, <xref:System.Web.UI.DataSourceView.Update%2A>, and <xref:System.Web.UI.DataSourceView.Delete%2A> methods for asynchronous data processing. The <xref:System.Web.UI.DataSourceViewOperationCallback> delegate is passed to the data source view by a data-bound control, so that the view can call this delegate when asynchronous processing is complete and notify the data-bound control of the operation's outcome.  
-  
+By default, ASP.NET Web page and control execution is synchronous. However, data source controls can be extended to support asynchronous data retrieval and data operations. The <xref:System.Web.UI.DataSourceView> object supports the <xref:System.Web.UI.DataSourceView.Insert%2A>, <xref:System.Web.UI.DataSourceView.Update%2A>, and <xref:System.Web.UI.DataSourceView.Delete%2A> methods for asynchronous data processing. The <xref:System.Web.UI.DataSourceViewOperationCallback> delegate is passed to the data source view by a data-bound control, so that the view can call this delegate when asynchronous processing is complete and notify the data-bound control of the operation's outcome.  
+ 
  ]]></format>
     </remarks>
   </Docs>

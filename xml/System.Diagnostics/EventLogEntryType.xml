@@ -17,21 +17,21 @@
     <summary>Specifies the event type of an event log entry.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type of an event log entry provides additional information for the entry.  Applications set the entry type when they write the entry to the event log.  
+The type of an event log entry provides additional information for the entry.  Applications set the entry type when they write the entry to the event log.  
+ 
+Each event must be of a single type; the event types cannot be combined for an entry.  The Event Viewer uses this type to determine which icon to display in the list view of the log.  
+ 
   
- Each event must be of a single type; the event types cannot be combined for an entry.  The Event Viewer uses this type to determine which icon to display in the list view of the log.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Diagnostics.EventLogEntryType> class to add information about triggered events to a log file. In this example, a `switch` statement is used to determine the event type. Each `case` statement uses the <xref:System.Diagnostics.EventLogEntryType> to specify the event type, gets the message and ID, and then writes the information to the log.  
-  
- [!code-cpp[EventLogEntryType_6#2](~/samples/snippets/cpp/VS_Snippets_CLR/EventLogEntryType_6/CPP/eventlogentrytype_6.cpp#2)]
- [!code-csharp[EventLogEntryType_6#2](~/samples/snippets/csharp/VS_Snippets_CLR/EventLogEntryType_6/CS/eventlogentrytype_6.cs#2)]
- [!code-vb[EventLogEntryType_6#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EventLogEntryType_6/VB/eventlogentrytype_6.vb#2)]  
-  
+The following code example demonstrates how to use the <xref:System.Diagnostics.EventLogEntryType> class to add information about triggered events to a log file. In this example, a `switch` statement is used to determine the event type. Each `case` statement uses the <xref:System.Diagnostics.EventLogEntryType> to specify the event type, gets the message and ID, and then writes the information to the log.  
+ 
+[!code-cpp[EventLogEntryType_6#2](~/samples/snippets/cpp/VS_Snippets_CLR/EventLogEntryType_6/CPP/eventlogentrytype_6.cpp#2)]
+[!code-csharp[EventLogEntryType_6#2](~/samples/snippets/csharp/VS_Snippets_CLR/EventLogEntryType_6/CS/eventlogentrytype_6.cs#2)]
+[!code-vb[EventLogEntryType_6#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EventLogEntryType_6/VB/eventlogentrytype_6.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

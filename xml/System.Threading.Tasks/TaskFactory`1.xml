@@ -28,40 +28,40 @@
     <summary>Provides support for creating and scheduling <see cref="T:System.Threading.Tasks.Task`1" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The .NET Framework provides two factories for creating and scheduling tasks:  
-  
+The .NET Framework provides two factories for creating and scheduling tasks:  
+ 
 -   The <xref:System.Threading.Tasks.TaskFactory> class, which creates <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects.  
-  
+ 
 -   The <xref:System.Threading.Tasks.TaskFactory%601> class, which creates <xref:System.Threading.Tasks.Task%601> objects.  
-  
- The <xref:System.Threading.Tasks.TaskFactory%601> class allows you to do the following:  
-  
+ 
+The <xref:System.Threading.Tasks.TaskFactory%601> class allows you to do the following:  
+ 
 -   Create a task and start it immediately by calling the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method. You can call the overloads of this method to create and execute a task that requires non-default arguments.  
-  
-    > [!WARNING]
-    >  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method provides the easiest way to create a task with default configuration values and start it immediately.  
-  
+ 
+   > [!WARNING]
+   >  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method provides the easiest way to create a task with default configuration values and start it immediately.  
+ 
 -   Create a task that starts when any one of the tasks in an array has completed by calling the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAny%2A> or   <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAny%2A> method.  
-  
+ 
 -   Create a task that starts when all the tasks in an array have completed by calling the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> or <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> method.  
+ 
+The static <xref:System.Threading.Tasks.Task%601.Factory%2A?displayProperty=fullName> property returns a default <xref:System.Threading.Tasks.TaskFactory%601> object. You can also call one of the <xref:System.Threading.Tasks.TaskFactory%601> class constructors to configure the <xref:System.Threading.Tasks.Task%601> objects that  the <xref:System.Threading.Tasks.TaskFactory%601> class creates. The following example configures a new <xref:System.Threading.Tasks.TaskFactory%601> object to create tasks that have a specified cancellation token, task creation options, continuation options, and a customized task scheduler.  
+ 
+[!code-csharp[TPL_Factories#2](~/samples/snippets/csharp/VS_Snippets_Misc/tpl_factories/cs/factoriestresult.cs#2)]
+[!code-vb[TPL_Factories#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpl_factories/vb/factoriestresult.vb#2)]  
+ 
+In most cases, you do not have to instantiate a new <xref:System.Threading.Tasks.TaskFactory%601> instance. Instead, you can use the static <xref:System.Threading.Tasks.Task%601.Factory%2A?displayProperty=fullName> property, which returns a factory object that uses default values. You can then call its methods to start new tasks or define task continuations. For an illustration, see the example.  
+ 
   
- The static <xref:System.Threading.Tasks.Task%601.Factory%2A?displayProperty=fullName> property returns a default <xref:System.Threading.Tasks.TaskFactory%601> object. You can also call one of the <xref:System.Threading.Tasks.TaskFactory%601> class constructors to configure the <xref:System.Threading.Tasks.Task%601> objects that  the <xref:System.Threading.Tasks.TaskFactory%601> class creates. The following example configures a new <xref:System.Threading.Tasks.TaskFactory%601> object to create tasks that have a specified cancellation token, task creation options, continuation options, and a customized task scheduler.  
-  
- [!code-csharp[TPL_Factories#2](~/samples/snippets/csharp/VS_Snippets_Misc/tpl_factories/cs/factoriestresult.cs#2)]
- [!code-vb[TPL_Factories#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpl_factories/vb/factoriestresult.vb#2)]  
-  
- In most cases, you do not have to instantiate a new <xref:System.Threading.Tasks.TaskFactory%601> instance. Instead, you can use the static <xref:System.Threading.Tasks.Task%601.Factory%2A?displayProperty=fullName> property, which returns a factory object that uses default values. You can then call its methods to start new tasks or define task continuations. For an illustration, see the example.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the static <xref:System.Threading.Tasks.Task%601.Factory%2A> property to make two calls to the <xref:System.Threading.Tasks.TaskFactory%601.StartNew%2A?displayProperty=fullName> method. The first task returns a string array that is populated with the names of files in the user's MyDocuments directory, while the second returns a string array that is populated with the names of subdirectories of the user's MyDocuments directory. It then calls the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%28System.Threading.Tasks.Task%5B%5D%2CSystem.Action%7BSystem.Threading.Tasks.Task%5B%5D%7D%29?displayProperty=fullName> method, which displays information about the number of files and directories in the arrays returned by the two tasks after they have completed execution.  
-  
- [!code-csharp[System.Threading.Tasks.Task.Factory#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.factory/cs/factory2.cs#2)]
- [!code-vb[System.Threading.Tasks.Task.Factory#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.factory/vb/factory2.vb#2)]  
-  
+The following example uses the static <xref:System.Threading.Tasks.Task%601.Factory%2A> property to make two calls to the <xref:System.Threading.Tasks.TaskFactory%601.StartNew%2A?displayProperty=fullName> method. The first task returns a string array that is populated with the names of files in the user's MyDocuments directory, while the second returns a string array that is populated with the names of subdirectories of the user's MyDocuments directory. It then calls the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%28System.Threading.Tasks.Task%5B%5D%2CSystem.Action%7BSystem.Threading.Tasks.Task%5B%5D%7D%29?displayProperty=fullName> method, which displays information about the number of files and directories in the arrays returned by the two tasks after they have completed execution.  
+ 
+[!code-csharp[System.Threading.Tasks.Task.Factory#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.factory/cs/factory2.cs#2)]
+[!code-vb[System.Threading.Tasks.Task.Factory#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.factory/vb/factory2.vb#2)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Threading.Tasks.TaskFactory`1" /> are thread-safe and may be used concurrently from multiple threads.</threadsafe>
@@ -91,10 +91,10 @@
         <summary>Initializes a <see cref="T:System.Threading.Tasks.TaskFactory`1" /> instance with the default configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a <xref:System.Threading.Tasks.TaskFactory%601> instance with a default configuration. The <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
-  
+This constructor creates a <xref:System.Threading.Tasks.TaskFactory%601> instance with a default configuration. The <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,10 +126,10 @@
         <summary>Initializes a <see cref="T:System.Threading.Tasks.TaskFactory`1" /> instance with the default configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a <xref:System.Threading.Tasks.TaskFactory%601> instance with a default configuration. The <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
-  
+This constructor creates a <xref:System.Threading.Tasks.TaskFactory%601> instance with a default configuration. The <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
         <summary>Initializes a <see cref="T:System.Threading.Tasks.TaskFactory`1" /> instance with the specified configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With this constructor, the <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to `scheduler`, unless it's `null`, in which case the property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
-  
+With this constructor, the <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to `scheduler`, unless it's `null`, in which case the property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
         <summary>Initializes a <see cref="T:System.Threading.Tasks.TaskFactory`1" /> instance with the specified configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With this constructor, the <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to `creationOptions`, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to `continuationOptions`, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
-  
+With this constructor, the <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to `creationOptions`, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to `continuationOptions`, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -241,10 +241,10 @@
         <summary>Initializes a <see cref="T:System.Threading.Tasks.TaskFactory`1" /> instance with the specified configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With this constructor, the <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to `creationOptions`, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to `continuationOptions`, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to `scheduler`, unless it's `null`, in which case the property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
-  
+With this constructor, the <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to `creationOptions`, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to `continuationOptions`, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to `scheduler`, unless it's `null`, in which case the property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -278,10 +278,10 @@
         <value>The default cancellation token for this task factory.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the default cancellation token that will be assigned to all tasks created by this factory unless another cancellation token value is explicitly specified during the call to the task factory methods.  
-  
+This property returns the default cancellation token that will be assigned to all tasks created by this factory unless another cancellation token value is explicitly specified during the call to the task factory methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -313,10 +313,10 @@
         <value>One of the enumeration values that specifies the default continuation options for this task factory.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the default continuation options for this factory. They will be used to create all continuation tasks unless other options are explicitly specified during calls to this factory's methods.  
-  
+This property returns the default continuation options for this factory. They will be used to create all continuation tasks unless other options are explicitly specified during calls to this factory's methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -354,10 +354,10 @@
         <returns>The new continuation task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">One of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
@@ -405,10 +405,10 @@
         <returns>The new continuation task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">One of the elements in the <paramref name="tasks" /> array has been disposed.  
@@ -459,10 +459,10 @@
         <returns>The new continuation task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">One of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
@@ -514,10 +514,10 @@
         <returns>The new continuation task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
@@ -576,10 +576,10 @@
         <returns>The new continuation task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">One of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
@@ -630,10 +630,10 @@
         <returns>The new continuation task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">One of the elements in the <paramref name="tasks" /> array has been disposed.  
@@ -688,10 +688,10 @@
         <returns>The new continuation task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">One of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
@@ -747,10 +747,10 @@
         <returns>The new continuation task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
@@ -804,10 +804,10 @@
         <returns>The new continuation task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">One of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
@@ -854,10 +854,10 @@
         <returns>The new continuation task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">One of the elements in the <paramref name="tasks" /> array has been disposed.  
@@ -912,10 +912,10 @@
         <returns>The new continuation task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">One of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
@@ -971,10 +971,10 @@
         <returns>The new continuation task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
@@ -1036,10 +1036,10 @@
         <returns>The new continuation <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">One of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
@@ -1094,10 +1094,10 @@
         <returns>The new continuation task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">One of the elements in the <paramref name="tasks" /> array has been disposed.  
@@ -1156,10 +1156,10 @@
         <returns>The new continuation <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">One of the elements in the <paramref name="tasks" /> array has been disposed.</exception>
@@ -1219,10 +1219,10 @@
         <returns>The new continuation <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
-  
+After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
@@ -1274,10 +1274,10 @@
         <value>One of the enumeration values that specifies the default creation options for this task factory.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the default creation options for this factory. They will be used to create all tasks unless other options are explicitly specified during calls to this factory's methods.  
-  
+This property returns the default creation options for this factory. They will be used to create all tasks unless other options are explicitly specified during calls to this factory's methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1356,10 +1356,10 @@
         <returns>The created task that represents the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
-  
+This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="beginMethod" /> argument is <see langword="null" />.  
@@ -1448,10 +1448,10 @@
         <returns>The created <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
-  
+This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="beginMethod" /> argument is <see langword="null" />.  
@@ -1551,10 +1551,10 @@
         <returns>The created task that represents the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
-  
+This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="beginMethod" /> argument is <see langword="null" />.  
@@ -1607,10 +1607,10 @@
         <returns>The created task that represents the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
-  
+This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="beginMethod" /> argument is <see langword="null" />.  
@@ -1666,10 +1666,10 @@
         <returns>The created task that represents the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
-  
+This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="beginMethod" /> argument is <see langword="null" />.  
@@ -1726,10 +1726,10 @@
         <returns>The created task that represents the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
-  
+This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="beginMethod" /> argument is <see langword="null" />.  
@@ -1789,10 +1789,10 @@
         <returns>The created task that represents the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
-  
+This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="beginMethod" /> argument is <see langword="null" />.  
@@ -1853,10 +1853,10 @@
         <returns>The created task that represents the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
-  
+This method throws any exceptions thrown by the `beginMethod`. Exceptions for `endmethod` are thrown when waiting on the returned task.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="beginMethod" /> argument is <see langword="null" />.  
@@ -1894,12 +1894,12 @@
         <value>The task scheduler for this task factory.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the default scheduler for this factory. It will be used to schedule all tasks unless another scheduler is explicitly specified during calls to this factory's methods.  
-  
- If this property returns `null`, <xref:System.Threading.Tasks.TaskScheduler.Current%2A> will be used.  
-  
+This property returns the default scheduler for this factory. It will be used to schedule all tasks unless another scheduler is explicitly specified during calls to this factory's methods.  
+ 
+If this property returns `null`, <xref:System.Threading.Tasks.TaskScheduler.Current%2A> will be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1935,12 +1935,12 @@
         <returns>The started task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors, and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
-  
- However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
-  
+Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors, and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
+ 
+However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
@@ -1979,12 +1979,12 @@
         <returns>The started task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
-  
- However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
-  
+Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
+ 
+However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
@@ -2023,12 +2023,12 @@
         <returns>The started task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
-  
- However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
-  
+Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
+ 
+However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The cancellation token source that created<paramref name="cancellationToken" /> has already been disposed.</exception>
@@ -2068,12 +2068,12 @@
         <returns>The started <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
-  
- However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
-  
+Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
+ 
+However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
@@ -2115,12 +2115,12 @@
         <returns>The started task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
-  
- However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
-  
+Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
+ 
+However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The cancellation token source that created<paramref name="cancellationToken" /> has already been disposed.</exception>
@@ -2162,12 +2162,12 @@
         <returns>The started task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
-  
- However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
-  
+Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
+ 
+However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
@@ -2211,12 +2211,12 @@
         <returns>The started task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
-  
- However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
-  
+Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
+ 
+However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The cancellation token source that created<paramref name="cancellationToken" /> has already been disposed.</exception>
@@ -2267,12 +2267,12 @@
         <returns>The started task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
-  
- However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
-  
+Calling `StartNew` is functionally equivalent to creating a task by using one of the <xref:System.Threading.Tasks.Task%601> constructors and then calling the <xref:System.Threading.Tasks.Task.Start%2A> method to schedule it for execution.  
+ 
+However, unless creation and scheduling must be separated, `StartNew` is the recommended approach for both simplicity and performance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The cancellation token source that created<paramref name="cancellationToken" /> has already been disposed.</exception>

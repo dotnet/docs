@@ -35,12 +35,12 @@
     <summary>Represents the navigation and manipulation user interface (UI) for controls on a form that are bound to data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.BindingNavigator> control represents a standardized way to navigate and manipulate data on a form. In most cases, a <xref:System.Windows.Forms.BindingNavigator> is paired with a <xref:System.Windows.Forms.BindingSource> control to move through data records on a form and interact with them. In these cases, the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is set to the associated <xref:System.Windows.Forms.BindingSource?displayProperty=fullName> component that acts as a data source.  
-  
- By default, the <xref:System.Windows.Forms.BindingNavigator> control's user interface (UI) is composed of a series of <xref:System.Windows.Forms.ToolStrip> buttons, text boxes, and static text elements for most common data-related actions, such as adding data, deleting data, and navigating through data. Each of these controls can be retrieved or set through an associated member of the <xref:System.Windows.Forms.BindingNavigator> control. Likewise, there is also a one-to-one correspondence to members within the <xref:System.Windows.Forms.BindingSource> class that programmatically perform the same functionality, as shown in the following table.  
-  
+The <xref:System.Windows.Forms.BindingNavigator> control represents a standardized way to navigate and manipulate data on a form. In most cases, a <xref:System.Windows.Forms.BindingNavigator> is paired with a <xref:System.Windows.Forms.BindingSource> control to move through data records on a form and interact with them. In these cases, the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is set to the associated <xref:System.Windows.Forms.BindingSource?displayProperty=fullName> component that acts as a data source.  
+ 
+By default, the <xref:System.Windows.Forms.BindingNavigator> control's user interface (UI) is composed of a series of <xref:System.Windows.Forms.ToolStrip> buttons, text boxes, and static text elements for most common data-related actions, such as adding data, deleting data, and navigating through data. Each of these controls can be retrieved or set through an associated member of the <xref:System.Windows.Forms.BindingNavigator> control. Likewise, there is also a one-to-one correspondence to members within the <xref:System.Windows.Forms.BindingSource> class that programmatically perform the same functionality, as shown in the following table.  
+ 
 |UI Control|<xref:System.Windows.Forms.BindingNavigator> member|<xref:System.Windows.Forms.BindingSource> member|  
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|  
 |**Move First**|<xref:System.Windows.Forms.BindingNavigator.MoveFirstItem%2A>|<xref:System.Windows.Forms.BindingSource.MoveFirst%2A>|  
@@ -51,23 +51,23 @@
 |**Move Last**|<xref:System.Windows.Forms.BindingNavigator.MoveLastItem%2A>|<xref:System.Windows.Forms.BindingSource.MoveLast%2A>|  
 |**Add New**|<xref:System.Windows.Forms.BindingNavigator.AddNewItem%2A>|<xref:System.Windows.Forms.BindingSource.AddNew%2A>|  
 |**Delete**|<xref:System.Windows.Forms.BindingNavigator.DeleteItem%2A>|<xref:System.Windows.Forms.BindingSource.RemoveCurrent%2A>|  
-  
- Adding a <xref:System.Windows.Forms.BindingNavigator> control to a form and binding it to a data source, such as a <xref:System.Windows.Forms.BindingSource>, will automatically establish the relationships in this table.  
-  
- You can use one of the following techniques to customize this toolbar:  
-  
+ 
+Adding a <xref:System.Windows.Forms.BindingNavigator> control to a form and binding it to a data source, such as a <xref:System.Windows.Forms.BindingSource>, will automatically establish the relationships in this table.  
+ 
+You can use one of the following techniques to customize this toolbar:  
+ 
 -   Create the <xref:System.Windows.Forms.BindingNavigator> with the <xref:System.Windows.Forms.BindingNavigator.%23ctor%28System.Boolean%29> constructor, which accepts a Boolean `addStandardItems` parameter, and set this parameter to `false`. Then add the desired <xref:System.Windows.Forms.ToolStripItem> objects to the <xref:System.Windows.Forms.ToolStrip.Items%2A> collection.  
-  
+ 
 -   If a great deal of customization is desired, or the custom design will be reused, derive a class from <xref:System.Windows.Forms.BindingNavigator> and override the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method to define additional or alternate standard items.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use a <xref:System.Windows.Forms.BindingNavigator> control to move through a data set. The set is contained in a <xref:System.Data.DataView>, which is bound to a <xref:System.Windows.Forms.TextBox> control with a <xref:System.Windows.Forms.BindingSource> component.  
-  
- [!code-csharp[System.Windows.Forms.DataNavigator#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataNavigator/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.DataNavigator#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataNavigator/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use a <xref:System.Windows.Forms.BindingNavigator> control to move through a data set. The set is contained in a <xref:System.Data.DataView>, which is bound to a <xref:System.Windows.Forms.TextBox> control with a <xref:System.Windows.Forms.BindingSource> component.  
+ 
+[!code-csharp[System.Windows.Forms.DataNavigator#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataNavigator/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.DataNavigator#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataNavigator/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -91,10 +91,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingNavigator" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor sets the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property to `null`. This constructor is equivalent to calling the <xref:System.Windows.Forms.BindingNavigator.%23ctor%28System.Boolean%29> constructor with a parameter value of `false`. You can add the standard items by making a separate call to <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A>.  
-  
+The default constructor sets the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property to `null`. This constructor is equivalent to calling the <xref:System.Windows.Forms.BindingNavigator.%23ctor%28System.Boolean%29> constructor with a parameter value of `false`. You can add the standard items by making a separate call to <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,10 +117,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingNavigator" /> class, indicating whether to display the standard navigation user interface (UI).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property to `null`. If <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> is `false`, <xref:System.Windows.Forms.BindingNavigator.AddNewItem%2A>, <xref:System.Windows.Forms.BindingNavigator.MoveFirstItem%2A>, <xref:System.Windows.Forms.BindingNavigator.MoveLastItem%2A>, <xref:System.Windows.Forms.BindingNavigator.MoveNextItem%2A>, <xref:System.Windows.Forms.BindingNavigator.MovePreviousItem%2A>, <xref:System.Windows.Forms.BindingNavigator.DeleteItem%2A>, <xref:System.Windows.Forms.BindingNavigator.CountItem%2A> and <xref:System.Windows.Forms.BindingNavigator.PositionItem%2A> will also be `null`.  
-  
+This constructor sets the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property to `null`. If <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> is `false`, <xref:System.Windows.Forms.BindingNavigator.AddNewItem%2A>, <xref:System.Windows.Forms.BindingNavigator.MoveFirstItem%2A>, <xref:System.Windows.Forms.BindingNavigator.MoveLastItem%2A>, <xref:System.Windows.Forms.BindingNavigator.MoveNextItem%2A>, <xref:System.Windows.Forms.BindingNavigator.MovePreviousItem%2A>, <xref:System.Windows.Forms.BindingNavigator.DeleteItem%2A>, <xref:System.Windows.Forms.BindingNavigator.CountItem%2A> and <xref:System.Windows.Forms.BindingNavigator.PositionItem%2A> will also be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,10 +147,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingNavigator" /> class and adds this new instance to the specified container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is provided as a convenience, combining the steps of creating a new <xref:System.Windows.Forms.BindingNavigator> control and adding it to a parent <xref:System.ComponentModel.IContainer>. Like the default constructor, it sets the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property to `null` and does not show the standard user interface.  
-  
+This constructor is provided as a convenience, combining the steps of creating a new <xref:System.Windows.Forms.BindingNavigator> control and adding it to a parent <xref:System.ComponentModel.IContainer>. Like the default constructor, it sets the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property to `null` and does not show the standard user interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,10 +172,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingNavigator" /> class with the specified <see cref="T:System.Windows.Forms.BindingSource" /> as the data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses the `BindingSource` parameter to initialize the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property. It also adds the standard set of navigational buttons and sets their corresponding properties, such as <xref:System.Windows.Forms.BindingNavigator.CountItem%2A> and <xref:System.Windows.Forms.BindingNavigator.MoveNextItem%2A>.  
-  
+This constructor uses the `BindingSource` parameter to initialize the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property. It also adds the standard set of navigational buttons and sets their corresponding properties, such as <xref:System.Windows.Forms.BindingNavigator.CountItem%2A> and <xref:System.Windows.Forms.BindingNavigator.MoveNextItem%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,16 +202,16 @@
         <value>A <see cref="T:System.Windows.Forms.ToolStripItem" /> that represents the **Add New** button for the <see cref="T:System.Windows.Forms.BindingSource" />. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When set, the <xref:System.Windows.Forms.BindingNavigator.AddNewItem%2A> property generates the <xref:System.Windows.Forms.Control.Click> event handler for the **Add New** button. This event handler calls the <xref:System.Windows.Forms.BindingSource.AddNew%2A> method when the **Add New** button is clicked at run time.  
-  
- This property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
-  
- The <xref:System.Windows.Forms.BindingNavigator> control will disable the **Add New** button if the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is `null` or the <xref:System.Windows.Forms.BindingSource.AllowNew%2A> property is `false`.  
-  
- In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripButton>.  
-  
+When set, the <xref:System.Windows.Forms.BindingNavigator.AddNewItem%2A> property generates the <xref:System.Windows.Forms.Control.Click> event handler for the **Add New** button. This event handler calls the <xref:System.Windows.Forms.BindingSource.AddNew%2A> method when the **Add New** button is clicked at run time.  
+ 
+This property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
+ 
+The <xref:System.Windows.Forms.BindingNavigator> control will disable the **Add New** button if the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is `null` or the <xref:System.Windows.Forms.BindingSource.AllowNew%2A> property is `false`.  
+ 
+In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripButton>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,15 +233,15 @@
         <summary>Adds the standard set of navigation items to the <see cref="T:System.Windows.Forms.BindingNavigator" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method adds the standard set of user interface <xref:System.Windows.Forms.ToolStripItem> objects to the <xref:System.Windows.Forms.BindingNavigator> tool strip for basic navigation operations, such as **Move First**, **Move Last**, and **Add New**.  
-  
- Override <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> in derived classes to define additional or alternative tool strip items. To ensure optimal design-time support for your derived class, make sure each item has a meaningful value in its <xref:System.Windows.Forms.ToolStripItem.Name%2A> property. At design time, this will be used to generate a unique name for the corresponding member variable. The item's <xref:System.Windows.Forms.ToolStripItem.Name%2A> property will then be updated to match the name given to the member variable.  
-  
+The <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method adds the standard set of user interface <xref:System.Windows.Forms.ToolStripItem> objects to the <xref:System.Windows.Forms.BindingNavigator> tool strip for basic navigation operations, such as **Move First**, **Move Last**, and **Add New**.  
+ 
+Override <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> in derived classes to define additional or alternative tool strip items. To ensure optimal design-time support for your derived class, make sure each item has a meaningful value in its <xref:System.Windows.Forms.ToolStripItem.Name%2A> property. At design time, this will be used to generate a unique name for the corresponding member variable. The item's <xref:System.Windows.Forms.ToolStripItem.Name%2A> property will then be updated to match the name given to the member variable.  
+ 
 > [!NOTE]
 >  This method does not explicitly remove any previously existing items from the <xref:System.Windows.Forms.BindingNavigator>, but does set new values for the <xref:System.Windows.Forms.BindingNavigator.MoveNextItem%2A>, <xref:System.Windows.Forms.BindingNavigator.MovePreviousItem%2A>, <xref:System.Windows.Forms.BindingNavigator.MoveFirstItem%2A>, <xref:System.Windows.Forms.BindingNavigator.MoveLastItem%2A>, <xref:System.Windows.Forms.BindingNavigator.PositionItem%2A>, <xref:System.Windows.Forms.BindingNavigator.CountItem%2A>, <xref:System.Windows.Forms.BindingNavigator.AddNewItem%2A> and <xref:System.Windows.Forms.BindingNavigator.DeleteItem%2A> properties. Also <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> does not suspend layout while items are being added.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,10 +263,10 @@
         <summary>Disables updates to the <see cref="T:System.Windows.Forms.ToolStripItem" /> controls of the <see cref="T:System.Windows.Forms.BindingNavigator" /> during the component's initialization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.BindingNavigator.BeginInit%2A> and <xref:System.Windows.Forms.BindingNavigator.EndInit%2A> methods allow the <xref:System.Windows.Forms.BindingNavigator> control to optimize changes to multiple properties. Using this pair of methods, you can initialize co-dependent properties or batch set multiple properties at design time. Call the <xref:System.Windows.Forms.BindingNavigator.BeginInit%2A> method to signal the control that initialization is starting; call the <xref:System.Windows.Forms.BindingNavigator.EndInit%2A> method to signal that initialization is complete.  
-  
+The <xref:System.Windows.Forms.BindingNavigator.BeginInit%2A> and <xref:System.Windows.Forms.BindingNavigator.EndInit%2A> methods allow the <xref:System.Windows.Forms.BindingNavigator> control to optimize changes to multiple properties. Using this pair of methods, you can initialize co-dependent properties or batch set multiple properties at design time. Call the <xref:System.Windows.Forms.BindingNavigator.BeginInit%2A> method to signal the control that initialization is starting; call the <xref:System.Windows.Forms.BindingNavigator.EndInit%2A> method to signal that initialization is complete.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,20 +296,20 @@
         <value>The <see cref="T:System.Windows.Forms.BindingSource" /> component associated with this <see cref="T:System.Windows.Forms.BindingNavigator" />. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property represents the data source that the <xref:System.Windows.Forms.BindingNavigator> navigates through. More specifically, the <xref:System.Windows.Forms.BindingSource.List%2A> property of the <xref:System.Windows.Forms.BindingSource> represents the actual data list.  
+The <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property represents the data source that the <xref:System.Windows.Forms.BindingNavigator> navigates through. More specifically, the <xref:System.Windows.Forms.BindingSource.List%2A> property of the <xref:System.Windows.Forms.BindingSource> represents the actual data list.  
+ 
+This is the default property for the <xref:System.Windows.Forms.BindingNavigator> class.  
+ 
   
- This is the default property for the <xref:System.Windows.Forms.BindingNavigator> class.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use a <xref:System.Windows.Forms.BindingNavigator> control to move through a data set. The set is contained in a <xref:System.Data.DataView>, which is bound to a <xref:System.Windows.Forms.TextBox> control with a <xref:System.Windows.Forms.BindingSource> component. This code example is part of a larger example provided in [How to: Move Through a DataSet with the Windows Forms BindingNavigator Control](~/docs/framework/winforms/controls/move-through-a-dataset-with-wf-bindingnavigator-control.md).  
-  
- [!code-csharp[System.Windows.Forms.DataNavigator#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataNavigator/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.DataNavigator#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataNavigator/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use a <xref:System.Windows.Forms.BindingNavigator> control to move through a data set. The set is contained in a <xref:System.Data.DataView>, which is bound to a <xref:System.Windows.Forms.TextBox> control with a <xref:System.Windows.Forms.BindingSource> component. This code example is part of a larger example provided in [How to: Move Through a DataSet with the Windows Forms BindingNavigator Control](~/docs/framework/winforms/controls/move-through-a-dataset-with-wf-bindingnavigator-control.md).  
+ 
+[!code-csharp[System.Windows.Forms.DataNavigator#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataNavigator/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.DataNavigator#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataNavigator/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -336,14 +336,14 @@
         <value>A <see cref="T:System.Windows.Forms.ToolStripItem" /> that displays the total number of items in the associated <see cref="T:System.Windows.Forms.BindingSource" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.BindingNavigator.CountItem%2A> property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
-  
- The count of items is accessed through the <xref:System.Windows.Forms.BindingSource.Count%2A> property of the <xref:System.Windows.Forms.BindingSource>.  
-  
- In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripLabel>.  
-  
+The <xref:System.Windows.Forms.BindingNavigator.CountItem%2A> property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
+ 
+The count of items is accessed through the <xref:System.Windows.Forms.BindingSource.Count%2A> property of the <xref:System.Windows.Forms.BindingSource>.  
+ 
+In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripLabel>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -365,12 +365,12 @@
         <value>The format <see cref="T:System.String" /> used to format the item count. The default is the string "of {0}".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.BindingNavigator.CountItem%2A> control is a <xref:System.Windows.Forms.ToolStripLabel> that displays the total number of items in the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A>. The <xref:System.Windows.Forms.BindingNavigator.CountItemFormat%2A> property is the format string used to format the count.  
-  
- For more information about format strings, see the <xref:System.String.Format%28System.String%2CSystem.Object%29?displayProperty=fullName> method.  
-  
+The <xref:System.Windows.Forms.BindingNavigator.CountItem%2A> control is a <xref:System.Windows.Forms.ToolStripLabel> that displays the total number of items in the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A>. The <xref:System.Windows.Forms.BindingNavigator.CountItemFormat%2A> property is the format string used to format the count.  
+ 
+For more information about format strings, see the <xref:System.String.Format%28System.String%2CSystem.Object%29?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -397,16 +397,16 @@
         <value>A <see cref="T:System.Windows.Forms.ToolStripItem" /> that represents the **Delete** button for the <see cref="T:System.Windows.Forms.BindingSource" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When set, this property generates the <xref:System.Windows.Forms.Control.Click> event handler for the **Delete** button. This event handler calls the <xref:System.Windows.Forms.BindingSource.RemoveCurrent%2A> method when the **Delete** button is clicked at run time.  
-  
- This property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
-  
- The <xref:System.Windows.Forms.BindingNavigator> control will disable the **Delete** button under the following run-time circumstances: the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is `null`, the <xref:System.Windows.Forms.BindingSource.Count%2A> property is 0, or the <xref:System.Windows.Forms.BindingSource.AllowRemove%2A> property is `false`.  
-  
- In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripButton>.  
-  
+When set, this property generates the <xref:System.Windows.Forms.Control.Click> event handler for the **Delete** button. This event handler calls the <xref:System.Windows.Forms.BindingSource.RemoveCurrent%2A> method when the **Delete** button is clicked at run time.  
+ 
+This property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
+ 
+The <xref:System.Windows.Forms.BindingNavigator> control will disable the **Delete** button under the following run-time circumstances: the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is `null`, the <xref:System.Windows.Forms.BindingSource.Count%2A> property is 0, or the <xref:System.Windows.Forms.BindingSource.AllowRemove%2A> property is `false`.  
+ 
+In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripButton>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -432,12 +432,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.BindingNavigator" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.BindingNavigator> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.BindingNavigator> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -465,10 +465,10 @@
         <summary>Enables updates to the <see cref="T:System.Windows.Forms.ToolStripItem" /> controls of the <see cref="T:System.Windows.Forms.BindingNavigator" /> after the component's initialization has concluded.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.BindingNavigator.BeginInit%2A> and <xref:System.Windows.Forms.BindingNavigator.EndInit%2A> methods allow the <xref:System.Windows.Forms.BindingNavigator> control to optimize changes to multiple properties. Using this pair of methods, you can initialize co-dependent properties or batch set multiple properties at design time. Call the <xref:System.Windows.Forms.BindingNavigator.BeginInit%2A> method to signal the control that initialization is starting; call the <xref:System.Windows.Forms.BindingNavigator.EndInit%2A> method to signal that initialization is complete.  
-  
+The <xref:System.Windows.Forms.BindingNavigator.BeginInit%2A> and <xref:System.Windows.Forms.BindingNavigator.EndInit%2A> methods allow the <xref:System.Windows.Forms.BindingNavigator> control to optimize changes to multiple properties. Using this pair of methods, you can initialize co-dependent properties or batch set multiple properties at design time. Call the <xref:System.Windows.Forms.BindingNavigator.BeginInit%2A> method to signal the control that initialization is starting; call the <xref:System.Windows.Forms.BindingNavigator.EndInit%2A> method to signal that initialization is complete.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -495,16 +495,16 @@
         <value>A <see cref="T:System.Windows.Forms.ToolStripItem" /> that represents the **Move First** button for the <see cref="T:System.Windows.Forms.BindingSource" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When set, this property generates the <xref:System.Windows.Forms.Control.Click> event handler for the **Move First** button. This event handler calls the <xref:System.Windows.Forms.BindingSource.MoveFirst%2A> method when the **Move First** button is clicked at run time.  
-  
- This property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
-  
- The <xref:System.Windows.Forms.BindingNavigator> control will disable the **Move First** button under the following run-time circumstances: the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is `null`, the <xref:System.Windows.Forms.BindingSource.Position%2A?displayProperty=fullName> property is zero, or <xref:System.Windows.Forms.BindingSource.AllowNew%2A> for the related <xref:System.Windows.Forms.BindingSource> is `false`.  
-  
- In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripButton>.  
-  
+When set, this property generates the <xref:System.Windows.Forms.Control.Click> event handler for the **Move First** button. This event handler calls the <xref:System.Windows.Forms.BindingSource.MoveFirst%2A> method when the **Move First** button is clicked at run time.  
+ 
+This property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
+ 
+The <xref:System.Windows.Forms.BindingNavigator> control will disable the **Move First** button under the following run-time circumstances: the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is `null`, the <xref:System.Windows.Forms.BindingSource.Position%2A?displayProperty=fullName> property is zero, or <xref:System.Windows.Forms.BindingSource.AllowNew%2A> for the related <xref:System.Windows.Forms.BindingSource> is `false`.  
+ 
+In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripButton>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -531,16 +531,16 @@
         <value>A <see cref="T:System.Windows.Forms.ToolStripItem" /> that represents the **Move Last** button for the <see cref="T:System.Windows.Forms.BindingSource" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When set, this property generates the <xref:System.Windows.Forms.Control.Click> event handler for the **Move Last** button. This event handler calls the <xref:System.Windows.Forms.BindingSource.MoveLast%2A> method when the **Move Last** button is clicked at run time.  
-  
- This property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
-  
- The <xref:System.Windows.Forms.BindingNavigator> control will disable the **Move Last** button under the following run-time circumstances: the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is `null` or the <xref:System.Windows.Forms.BindingSource.Position%2A> property is greater than or equal to the <xref:System.Windows.Forms.BindingSource.Count%2A> property.  
-  
- In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripButton>.  
-  
+When set, this property generates the <xref:System.Windows.Forms.Control.Click> event handler for the **Move Last** button. This event handler calls the <xref:System.Windows.Forms.BindingSource.MoveLast%2A> method when the **Move Last** button is clicked at run time.  
+ 
+This property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
+ 
+The <xref:System.Windows.Forms.BindingNavigator> control will disable the **Move Last** button under the following run-time circumstances: the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is `null` or the <xref:System.Windows.Forms.BindingSource.Position%2A> property is greater than or equal to the <xref:System.Windows.Forms.BindingSource.Count%2A> property.  
+ 
+In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripButton>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -567,16 +567,16 @@
         <value>A <see cref="T:System.Windows.Forms.ToolStripItem" /> that represents the **Move Next** button for the <see cref="T:System.Windows.Forms.BindingSource" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When set, this property generates the <xref:System.Windows.Forms.Control.Click> event handler for the **Move Next** button. This event handler calls the <xref:System.Windows.Forms.BindingSource.MoveNext%2A> method when the **Move Next** button is clicked at run time.  
-  
- This property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
-  
- The <xref:System.Windows.Forms.BindingNavigator> control will disable the **Move Next** button under the following run-time circumstances: the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is `null` or the <xref:System.Windows.Forms.BindingSource.Position%2A> property is greater than or equal to the <xref:System.Windows.Forms.BindingSource.Count%2A> property.  
-  
- In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripButton>.  
-  
+When set, this property generates the <xref:System.Windows.Forms.Control.Click> event handler for the **Move Next** button. This event handler calls the <xref:System.Windows.Forms.BindingSource.MoveNext%2A> method when the **Move Next** button is clicked at run time.  
+ 
+This property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
+ 
+The <xref:System.Windows.Forms.BindingNavigator> control will disable the **Move Next** button under the following run-time circumstances: the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is `null` or the <xref:System.Windows.Forms.BindingSource.Position%2A> property is greater than or equal to the <xref:System.Windows.Forms.BindingSource.Count%2A> property.  
+ 
+In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripButton>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -603,16 +603,16 @@
         <value>A <see cref="T:System.Windows.Forms.ToolStripItem" /> that represents the **Move Previous** button for the <see cref="T:System.Windows.Forms.BindingSource" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When set, the <xref:System.Windows.Forms.BindingNavigator.MovePreviousItem%2A> property generates the <xref:System.Windows.Forms.Control.Click> event handler for the **Move Previous** button. This event handler calls the <xref:System.Windows.Forms.BindingSource.MovePrevious%2A> method when the **Move Previous** button is clicked at run time.  
-  
- This property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
-  
- The <xref:System.Windows.Forms.BindingNavigator> control will disable the **Move Previous** button under the following run-time circumstances: the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is `null` or the <xref:System.Windows.Forms.BindingSource.Position%2A> property is less than or equal to 0.  
-  
- In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripButton>.  
-  
+When set, the <xref:System.Windows.Forms.BindingNavigator.MovePreviousItem%2A> property generates the <xref:System.Windows.Forms.Control.Click> event handler for the **Move Previous** button. This event handler calls the <xref:System.Windows.Forms.BindingSource.MovePrevious%2A> method when the **Move Previous** button is clicked at run time.  
+ 
+This property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
+ 
+The <xref:System.Windows.Forms.BindingNavigator> control will disable the **Move Previous** button under the following run-time circumstances: the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property is `null` or the <xref:System.Windows.Forms.BindingSource.Position%2A> property is less than or equal to 0.  
+ 
+In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripButton>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -634,20 +634,20 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.BindingNavigator.RefreshItems" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In addition to raising the corresponding <xref:System.Windows.Forms.BindingNavigator.RefreshItems> event, the <xref:System.Windows.Forms.BindingNavigator.OnRefreshItems%2A> method performs the following operations against the state of the associated <xref:System.Windows.Forms.BindingSource>.  
-  
+In addition to raising the corresponding <xref:System.Windows.Forms.BindingNavigator.RefreshItems> event, the <xref:System.Windows.Forms.BindingNavigator.OnRefreshItems%2A> method performs the following operations against the state of the associated <xref:System.Windows.Forms.BindingSource>.  
+ 
 -   Sets the internal members using the current <xref:System.Windows.Forms.BindingSource> state.  
-  
+ 
 -   Enables or disables user interface (UI) items appropriately for the current <xref:System.Windows.Forms.BindingSource> state.  
-  
+ 
 -   Updates the <xref:System.Windows.Forms.BindingNavigator.CountItem%2A> and <xref:System.Windows.Forms.BindingNavigator.PositionItem%2A> controls.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.BindingNavigator.OnRefreshItems%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.BindingNavigator.OnRefreshItems%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -677,16 +677,16 @@
         <value>The <see cref="T:System.Windows.Forms.ToolStripItem" /> that displays the current position.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the default implementation, the <xref:System.Windows.Forms.BindingNavigator.PositionItem%2A> property is of type <xref:System.Windows.Forms.ToolStripTextBox>.  
-  
- This property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
-  
- The current position calculated by obtaining the <xref:System.Windows.Forms.BindingSource.Position%2A> property of the <xref:System.Windows.Forms.BindingSource>, and adding 1 to transform the position into a 1-based count.  
-  
- In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripTextBox>.  
-  
+In the default implementation, the <xref:System.Windows.Forms.BindingNavigator.PositionItem%2A> property is of type <xref:System.Windows.Forms.ToolStripTextBox>.  
+ 
+This property is `null` if it was not previously set and it is accessed before the <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> method is implicitly or explicitly called.  
+ 
+The current position calculated by obtaining the <xref:System.Windows.Forms.BindingSource.Position%2A> property of the <xref:System.Windows.Forms.BindingSource>, and adding 1 to transform the position into a 1-based count.  
+ 
+In the default implementation, this property represents a control of type <xref:System.Windows.Forms.ToolStripTextBox>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -707,22 +707,22 @@
         <summary>Occurs when the state of the navigational user interface (UI) needs to be refreshed to reflect the current state of the underlying data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.BindingNavigator.RefreshItems?displayProperty=fullName> event signals that the navigational UI of the <xref:System.Windows.Forms.BindingNavigator> needs to be updated to reflect the current state of the associated <xref:System.Windows.Forms.BindingSource>.  
+The <xref:System.Windows.Forms.BindingNavigator.RefreshItems?displayProperty=fullName> event signals that the navigational UI of the <xref:System.Windows.Forms.BindingNavigator> needs to be updated to reflect the current state of the associated <xref:System.Windows.Forms.BindingSource>.  
+ 
+This is the default event for the <xref:System.Windows.Forms.BindingNavigator> class.  
+ 
   
- This is the default event for the <xref:System.Windows.Forms.BindingNavigator> class.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingNavigator.RefreshItems> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingNavigator> named `BindingNavigator1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingNavigator.RefreshItems> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#124](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#124)]
- [!code-vb[System.Windows.Forms.EventExamples#124](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#124)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingNavigator.RefreshItems> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingNavigator> named `BindingNavigator1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingNavigator.RefreshItems> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#124](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#124)]
+[!code-vb[System.Windows.Forms.EventExamples#124](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#124)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -749,10 +749,10 @@
         <summary>Refreshes the state of the standard items to reflect the current state of the data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you have overridden <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> in a derived class, you should also override <xref:System.Windows.Forms.BindingNavigator.RefreshItemsCore%2A> to refresh any custom standard items you have added to the <xref:System.Windows.Forms.BindingNavigator> control.  
-  
+If you have overridden <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A> in a derived class, you should also override <xref:System.Windows.Forms.BindingNavigator.RefreshItemsCore%2A> to refresh any custom standard items you have added to the <xref:System.Windows.Forms.BindingNavigator> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -776,10 +776,10 @@
           <see langword="true" /> if validation was successful and focus can shift to the <see cref="T:System.Windows.Forms.BindingNavigator" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to confirm focus can shift before performing the click action for an item on the <xref:System.Windows.Forms.BindingNavigator> control.  
-  
+Use this method to confirm focus can shift before performing the click action for an item on the <xref:System.Windows.Forms.BindingNavigator> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>

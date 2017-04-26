@@ -74,10 +74,10 @@
         <returns>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that contains the set of authorization policies in effect for this application.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method is called on the authorization policy that is returned from this method, a claim of type <xref:System.IdentityModel.Claims.ClaimTypes.Rsa%2A> is added to the <xref:System.IdentityModel.Policy.EvaluationContext.ClaimSets%2A> property of the <xref:System.IdentityModel.Policy.EvaluationContext> that is passed into the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method.  
-  
+When the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method is called on the authorization policy that is returned from this method, a claim of type <xref:System.IdentityModel.Claims.ClaimTypes.Rsa%2A> is added to the <xref:System.IdentityModel.Policy.EvaluationContext.ClaimSets%2A> property of the <xref:System.IdentityModel.Policy.EvaluationContext> that is passed into the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

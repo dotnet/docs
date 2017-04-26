@@ -43,13 +43,13 @@
         <returns>An object that contains the URI that is used to return the next results page.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example uses the <xref:System.Data.Services.Client.QueryOperationResponse%601.GetContinuation%2A> method in a `do…while` loop to load `Customers` entities from a paged results from the data service.  
-  
- [!code-csharp[Astoria Northwind Client#GetCustomersPaged](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#getcustomerspaged)]
- [!code-vb[Astoria Northwind Client#GetCustomersPaged](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#getcustomerspaged)]  
-  
+This example uses the <xref:System.Data.Services.Client.QueryOperationResponse%601.GetContinuation%2A> method in a `do…while` loop to load `Customers` entities from a paged results from the data service.  
+ 
+[!code-csharp[Astoria Northwind Client#GetCustomersPaged](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#getcustomerspaged)]
+[!code-vb[Astoria Northwind Client#GetCustomersPaged](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#getcustomerspaged)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,10 +92,10 @@
         <value>The return value can be either zero or a positive value equal to the number of entities in the set on the server.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.InvalidOperationException> is thrown when the count was not part of the original request; that is, if the count tag is not found in the response stream.  
-  
+<xref:System.InvalidOperationException> is thrown when the count was not part of the original request; that is, if the count tag is not found in the response stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>

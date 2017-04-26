@@ -30,13 +30,13 @@
     <summary>Represents the abstract base class from which all implementations of the Advanced Encryption Standard (AES) must inherit.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to encrypt and decrypt sample data by using the <xref:System.Security.Cryptography.Aes> class.  
-  
- [!code-csharp[AesSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/aessample/cs/program.cs#1)]
- [!code-vb[AesSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/aessample/vb/program.vb#1)]  
-  
+The following example demonstrates how to encrypt and decrypt sample data by using the <xref:System.Security.Cryptography.Aes> class.  
+ 
+[!code-csharp[AesSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/aessample/cs/program.cs#1)]
+[!code-vb[AesSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/aessample/vb/program.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,13 +66,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Aes" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to encrypt and decrypt sample data using the <xref:System.Security.Cryptography.Aes> class.  
-  
- [!code-csharp[AesSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/aessample/cs/program.cs#1)]
- [!code-vb[AesSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/aessample/vb/program.vb#1)]  
-  
+The following example demonstrates how to encrypt and decrypt sample data using the <xref:System.Security.Cryptography.Aes> class.  
+ 
+[!code-csharp[AesSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/aessample/cs/program.cs#1)]
+[!code-vb[AesSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/aessample/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,10 +133,10 @@
         <returns>A cryptographic object that is used to perform the symmetric algorithm.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Possible `algorithmName` values are: "AES", "AesCryptoServiceProvider", "System.Security.Cryptography.AesCryptoServiceProvider", "AesManaged", and "System.Security.Cryptography.AesManaged".  
-  
+Possible `algorithmName` values are: "AES", "AesCryptoServiceProvider", "System.Security.Cryptography.AesCryptoServiceProvider", "AesManaged", and "System.Security.Cryptography.AesManaged".  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="algorithmName" /> parameter is <see langword="null" />.</exception>

@@ -18,15 +18,15 @@
     <summary>Defines the mapping between arguments and expressions and provides the functionality to convert between these objects. Typically, this converter is used declaratively when using an <see cref="T:System.Activities.Presentation.View.ExpressionTextBox" /> in a custom activity designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This converter can also be used imperatively; however, this usage is not recommended.  
+This converter can also be used imperatively; however, this usage is not recommended.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following XAML snippet shows how to use the ArgumentToExpressionConverter in a custom activity designer that uses an ExpressionTextBox.  
-  
+The following XAML snippet shows how to use the ArgumentToExpressionConverter in a custom activity designer that uses an ExpressionTextBox.  
+ 
 ```  
 <sapv:ExpressionTextBox   
     Expression="{Binding Path=ModelItem.SampleValue,   
@@ -38,7 +38,7 @@
    />  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,10 +87,10 @@
  Contains the converted Argument.Expression.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `parameter`,  
-  
+The `parameter`,  
+ 
  ]]></format>
         </remarks>
       </Docs>

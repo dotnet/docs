@@ -14,20 +14,20 @@
     <summary>Provides a set of ASP.NET run-time services for the current application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpRuntime> object is used at the beginning of the ASP.NET pipeline model that processes HTTP requests. The <xref:System.Web.HttpRuntime.ProcessRequest%2A> method drives all subsequent ASP.NET Web processing.  
+The <xref:System.Web.HttpRuntime> object is used at the beginning of the ASP.NET pipeline model that processes HTTP requests. The <xref:System.Web.HttpRuntime.ProcessRequest%2A> method drives all subsequent ASP.NET Web processing.  
+ 
+Page developers can use the <xref:System.Web.HttpRuntime> class properties to find out information about the current application domain for diagnostic purposes, for example. Developers creating custom process pipeline or a custom hosting environment should call the <xref:System.Web.HttpRuntime.ProcessRequest%2A> method from a class derived from the <xref:System.Web.HttpWorkerRequest> or <xref:System.Web.Hosting.SimpleWorkerRequest> class.  
+ 
   
- Page developers can use the <xref:System.Web.HttpRuntime> class properties to find out information about the current application domain for diagnostic purposes, for example. Developers creating custom process pipeline or a custom hosting environment should call the <xref:System.Web.HttpRuntime.ProcessRequest%2A> method from a class derived from the <xref:System.Web.HttpWorkerRequest> or <xref:System.Web.Hosting.SimpleWorkerRequest> class.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to get properties of the <xref:System.Web.HttpRuntime> class representing the current application domain and display them to the browser.  
-  
- <!-- TODO: review snippet reference [!code-csharp[SystemWebHttpRuntime#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebHttpRuntime/CS/systemwebhttpruntime.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[SystemWebHttpRuntime#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebHttpRuntime/VB/systemwebhttpruntime.vb.aspx#1)]  -->  
-  
+The following example demonstrates how to get properties of the <xref:System.Web.HttpRuntime> class representing the current application domain and display them to the browser.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[SystemWebHttpRuntime#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebHttpRuntime/CS/systemwebhttpruntime.cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[SystemWebHttpRuntime#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebHttpRuntime/VB/systemwebhttpruntime.vb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <value>The application identification of the application domain where the <see cref="T:System.Web.HttpRuntime" /> exists.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `AppDomainAppID` uniquely identifies the application. It does not change after the application is restarted and a new application domain is created.  
-  
+`AppDomainAppID` uniquely identifies the application. It does not change after the application is restarted and a new application domain is created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,10 +125,10 @@
         <value>The unique application domain identifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `AppDomainID` changes whenever the application is restarted and a new application domain is created.  
-  
+`AppDomainID` changes whenever the application is restarted and a new application domain is created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,10 +224,10 @@
         <value>The current <see cref="T:System.Web.Caching.Cache" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the <xref:System.Web.Caching.Cache?displayProperty=fullName> class.  
-  
+For more information, see the <xref:System.Web.Caching.Cache?displayProperty=fullName> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">ASP.NET is not installed.</exception>
@@ -250,10 +250,10 @@
         <summary>Shuts down the <see cref="T:System.Web.HttpRuntime" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is provided for use when your code implements its own hosting environment. There is no need to call this method in the course of normal request processing.  
-  
+This method is provided for use when your code implements its own hosting environment. There is no need to call this method in the course of normal request processing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,10 +312,10 @@
         <returns>A <see cref="T:System.Security.NamedPermissionSet" /> object containing the names and descriptions of permissions, or <see langword="null" /> if none exists.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.HttpRuntime.GetNamedPermissionSet%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.HttpRuntime.GetNamedPermissionSet%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -337,10 +337,10 @@
         <value>The version of IIS that is hosting this application, or <see langword="null" /> if this application is not hosted by IIS.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The version includes major version and minor version; for example, 7.0, 7.5, 8.0, etc.  
-  
+The version includes major version and minor version; for example, 7.0, 7.5, 8.0, etc.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -402,10 +402,10 @@
         <summary>Drives all ASP.NET Web processing execution.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is provided for use when your code implements its own hosting environment. It also can be used to execute child requests when your code implements its own <xref:System.Web.HttpWorkerRequest>.  
-  
+This method is provided for use when your code implements its own hosting environment. It also can be used to execute child requests when your code implements its own <xref:System.Web.HttpWorkerRequest>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="wr" /> parameter is <see langword="null" />.</exception>
@@ -429,12 +429,12 @@
         <value>The version of the .NET Framework that the current web application targets.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is normally set by using the `targetFramework` attribute of the `httpRuntime` element in the Web.config file.  
-  
- This property is not guaranteed to return a correct value if the currentapplication domain is not an ASP.NET application domain.  
-  
+This property is normally set by using the `targetFramework` attribute of the `httpRuntime` element in the Web.config file.  
+ 
+This property is not guaranteed to return a correct value if the currentapplication domain is not an ASP.NET application domain.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -456,10 +456,10 @@
         <summary>Terminates the current application. The application restarts the next time a request is received for it.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `UnloadAppDomain` is useful for servers that have a large number of applications that infrequently receive requests. Rather than keep application resources alive for the lifetime of the process, `UnloadAppDomain` allows programmatic shutdown of unused applications.  
-  
+`UnloadAppDomain` is useful for servers that have a large number of applications that infrequently receive requests. Rather than keep application resources alive for the lifetime of the process, `UnloadAppDomain` allows programmatic shutdown of unused applications.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -482,10 +482,10 @@
           <see langword="true" /> if the application is running in integrated-pipeline mode; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Integrated-pipeline mode is not available in versions of IIS earlier than [!INCLUDE[iisver](~/includes/iisver-md.md)].  
-  
+Integrated-pipeline mode is not available in versions of IIS earlier than [!INCLUDE[iisver](~/includes/iisver-md.md)].  
+ 
  ]]></format>
         </remarks>
       </Docs>

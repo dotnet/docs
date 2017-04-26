@@ -29,10 +29,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.IssuerTokenResolver" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the new instance is initialized with an <xref:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver> that uses the default store (LM.TrustedPeople).        //  
-  
+By default, the new instance is initialized with an <xref:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver> that uses the default store (LM.TrustedPeople).        //  
+ 
  ]]></format>
         </remarks>
       </Docs>

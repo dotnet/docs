@@ -14,14 +14,14 @@
     <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting" /> and <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting" /> events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnecting%2A> method, and it indicates that the connection process has begun (for example, a user has selected a control and clicked a connect verb), but is not yet completed. The event provides an opportunity to cancel a connection before it is complete. If the connection is successfully completed, this event is followed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected> event.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnecting%2A> method, and it indicates that a user has clicked a disconnect verb, or the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts%2A> method has otherwise been called. The event provides an opportunity to cancel the process of ending a connection before it is complete. If the connection is ended successfully, this event is followed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected> event.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs> class contains information about the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting> and <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting> events. It provides access to the Web Parts controls that are being connected or disconnected.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnecting%2A> method, and it indicates that the connection process has begun (for example, a user has selected a control and clicked a connect verb), but is not yet completed. The event provides an opportunity to cancel a connection before it is complete. If the connection is successfully completed, this event is followed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected> event.  
+ 
+The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnecting%2A> method, and it indicates that a user has clicked a disconnect verb, or the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts%2A> method has otherwise been called. The event provides an opportunity to cancel the process of ending a connection before it is complete. If the connection is ended successfully, this event is followed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected> event.  
+ 
+The <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs> class contains information about the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting> and <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting> events. It provides access to the Web Parts controls that are being connected or disconnected.  
+ 
  ]]></format>
     </remarks>
   </Docs>

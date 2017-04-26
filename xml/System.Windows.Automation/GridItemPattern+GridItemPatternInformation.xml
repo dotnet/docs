@@ -32,19 +32,19 @@
         <value>A zero-based ordinal number that identifies the column containing the cell or item. The default value is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of grid items within a grid container. Item properties are echoed to the console upon each focus-changed event.  
-  
- [!code-csharp[UIAGridItemPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#101)]
- [!code-vb[UIAGridItemPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#101)]  
+In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of grid items within a grid container. Item properties are echoed to the console upon each focus-changed event.  
+ 
+[!code-csharp[UIAGridItemPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#101)]
+[!code-vb[UIAGridItemPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#101)]  
 [!code-csharp[UIAGridItemPattern_snip#1015](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#1015)]
 [!code-vb[UIAGridItemPattern_snip#1015](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#1015)]  
 [!code-csharp[UIAGridItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#102)]
 [!code-vb[UIAGridItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#102)]  
 [!code-csharp[UIAGridItemPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#103)]
 [!code-vb[UIAGridItemPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#103)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -66,19 +66,19 @@
         <value>The number of columns spanned. The default value is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of grid items within a grid container. Item properties are echoed to the console upon each focus-changed event.  
-  
- [!code-csharp[UIAGridItemPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#101)]
- [!code-vb[UIAGridItemPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#101)]  
+In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of grid items within a grid container. Item properties are echoed to the console upon each focus-changed event.  
+ 
+[!code-csharp[UIAGridItemPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#101)]
+[!code-vb[UIAGridItemPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#101)]  
 [!code-csharp[UIAGridItemPattern_snip#1015](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#1015)]
 [!code-vb[UIAGridItemPattern_snip#1015](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#1015)]  
 [!code-csharp[UIAGridItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#102)]
 [!code-vb[UIAGridItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#102)]  
 [!code-csharp[UIAGridItemPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#103)]
 [!code-vb[UIAGridItemPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#103)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,19 +100,19 @@
         <value>A [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element that supports the GridPattern and represents the table cell or item container. The default is a null reference (<see langword="Nothing" /> in Microsoft Visual Basic .NET).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> listener is declared to track the traversal of grid items within a grid container. Item properties are echoed to the console upon each focus-changed event.  
-  
- [!code-csharp[UIAGridItemPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#101)]
- [!code-vb[UIAGridItemPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#101)]  
+In the following example, an <xref:System.Windows.Automation.AutomationElement> listener is declared to track the traversal of grid items within a grid container. Item properties are echoed to the console upon each focus-changed event.  
+ 
+[!code-csharp[UIAGridItemPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#101)]
+[!code-vb[UIAGridItemPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#101)]  
 [!code-csharp[UIAGridItemPattern_snip#1015](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#1015)]
 [!code-vb[UIAGridItemPattern_snip#1015](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#1015)]  
 [!code-csharp[UIAGridItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#102)]
 [!code-vb[UIAGridItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#102)]  
 [!code-csharp[UIAGridItemPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#103)]
 [!code-vb[UIAGridItemPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#103)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -134,19 +134,19 @@
         <value>A zero-based ordinal number that identifies the row containing the table cell or item. The default value is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of grid items within a grid container. Item properties are echoed to the console upon each focus-changed event.  
-  
- [!code-csharp[UIAGridItemPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#101)]
- [!code-vb[UIAGridItemPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#101)]  
+In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of grid items within a grid container. Item properties are echoed to the console upon each focus-changed event.  
+ 
+[!code-csharp[UIAGridItemPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#101)]
+[!code-vb[UIAGridItemPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#101)]  
 [!code-csharp[UIAGridItemPattern_snip#1015](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#1015)]
 [!code-vb[UIAGridItemPattern_snip#1015](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#1015)]  
 [!code-csharp[UIAGridItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#102)]
 [!code-vb[UIAGridItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#102)]  
 [!code-csharp[UIAGridItemPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#103)]
 [!code-vb[UIAGridItemPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#103)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,19 +168,19 @@
         <value>The number of rows spanned. The default value is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of grid items within a grid container. Item properties are echoed to the console upon each focus-changed event.  
-  
- [!code-csharp[UIAGridItemPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#101)]
- [!code-vb[UIAGridItemPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#101)]  
+In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of grid items within a grid container. Item properties are echoed to the console upon each focus-changed event.  
+ 
+[!code-csharp[UIAGridItemPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#101)]
+[!code-vb[UIAGridItemPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#101)]  
 [!code-csharp[UIAGridItemPattern_snip#1015](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#1015)]
 [!code-vb[UIAGridItemPattern_snip#1015](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#1015)]  
 [!code-csharp[UIAGridItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#102)]
 [!code-vb[UIAGridItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#102)]  
 [!code-csharp[UIAGridItemPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#103)]
 [!code-vb[UIAGridItemPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#103)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,18 +14,18 @@
     <summary>Manages a collection of <see cref="T:System.Windows.Media.Visual" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.ContainerVisual> class is used as a container for a collection of <xref:System.Windows.Media.Visual> objects. The <xref:System.Windows.Media.DrawingVisual> class derives from the <xref:System.Windows.Media.ContainerVisual> class, such that the <xref:System.Windows.Media.DrawingVisual> class can also contain a collection of visual objects.  
+The <xref:System.Windows.Media.ContainerVisual> class is used as a container for a collection of <xref:System.Windows.Media.Visual> objects. The <xref:System.Windows.Media.DrawingVisual> class derives from the <xref:System.Windows.Media.ContainerVisual> class, such that the <xref:System.Windows.Media.DrawingVisual> class can also contain a collection of visual objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Media.ContainerVisual> object that is used as the parent for two <xref:System.Windows.Media.DrawingVisual> objects. Objects that are added to the <xref:System.Windows.Media.ContainerVisual> object must be added in reverse z-order (bottom to top) to ensure they are rendering in the correct drawing order. In order for the visual tree to be enumerated correctly, the example provides overridden implementations of the <xref:System.Windows.Media.ContainerVisual.GetVisualChild%2A> method and <xref:System.Windows.Media.ContainerVisual.VisualChildrenCount%2A> property.  
-  
- [!code-csharp[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualHost/CSharp/Window1.xaml.cs#containervisualhost01)]
- [!code-vb[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualHost/visualbasic/window1.xaml.vb#containervisualhost01)]  
-  
+The following example shows how to create a <xref:System.Windows.Media.ContainerVisual> object that is used as the parent for two <xref:System.Windows.Media.DrawingVisual> objects. Objects that are added to the <xref:System.Windows.Media.ContainerVisual> object must be added in reverse z-order (bottom to top) to ensure they are rendering in the correct drawing order. In order for the visual tree to be enumerated correctly, the example provides overridden implementations of the <xref:System.Windows.Media.ContainerVisual.GetVisualChild%2A> method and <xref:System.Windows.Media.ContainerVisual.VisualChildrenCount%2A> property.  
+ 
+[!code-csharp[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualHost/CSharp/Window1.xaml.cs#containervisualhost01)]
+[!code-vb[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualHost/visualbasic/window1.xaml.vb#containervisualhost01)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,13 +44,13 @@
         <summary>Creates a new instance of the <see cref="T:System.Windows.Media.ContainerVisual" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a new instance of a <xref:System.Windows.Media.ContainerVisual> object, and then add child visual objects to it.  
-  
- [!code-csharp[ContainerVisualSnippets#ContainerVisualSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualSnippets/CSharp/Window1.xaml.cs#containervisualsnippet1)]
- [!code-vb[ContainerVisualSnippets#ContainerVisualSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualSnippets/visualbasic/window1.xaml.vb#containervisualsnippet1)]  
-  
+The following example shows how to create a new instance of a <xref:System.Windows.Media.ContainerVisual> object, and then add child visual objects to it.  
+ 
+[!code-csharp[ContainerVisualSnippets#ContainerVisualSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualSnippets/CSharp/Window1.xaml.cs#containervisualsnippet1)]
+[!code-vb[ContainerVisualSnippets#ContainerVisualSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualSnippets/visualbasic/window1.xaml.vb#containervisualsnippet1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
         <value>A <see cref="T:System.Windows.Media.CacheMode" /> that holds a cached representation of the <see cref="T:System.Windows.Media.ContainerVisual" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set the <xref:System.Windows.Media.ContainerVisual.CacheMode%2A> property when you need to increase performance for content that is time-consuming to render. For more information, see <xref:System.Windows.Media.BitmapCache>.  
-  
+Set the <xref:System.Windows.Media.ContainerVisual.CacheMode%2A> property when you need to increase performance for content that is time-consuming to render. For more information, see <xref:System.Windows.Media.BitmapCache>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,13 +143,13 @@
         <value>A <see cref="T:System.Windows.Media.VisualCollection" /> that contains the children of the <see cref="T:System.Windows.Media.ContainerVisual" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to retrieve the <xref:System.Windows.Media.VisualCollection> from a <xref:System.Windows.Media.ContainerVisual> object.  
-  
- [!code-csharp[ContainerVisualSnippets#ContainerVisualSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualSnippets/CSharp/Window1.xaml.cs#containervisualsnippet3)]
- [!code-vb[ContainerVisualSnippets#ContainerVisualSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualSnippets/visualbasic/window1.xaml.vb#containervisualsnippet3)]  
-  
+The following example shows how to retrieve the <xref:System.Windows.Media.VisualCollection> from a <xref:System.Windows.Media.ContainerVisual> object.  
+ 
+[!code-csharp[ContainerVisualSnippets#ContainerVisualSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualSnippets/CSharp/Window1.xaml.cs#containervisualsnippet3)]
+[!code-vb[ContainerVisualSnippets#ContainerVisualSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualSnippets/visualbasic/window1.xaml.vb#containervisualsnippet3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,18 +189,18 @@
         <value>A <see cref="T:System.Windows.Rect" /> that specifies the bounding box.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Media.ContainerVisual.DescendantBounds%2A> property to return the union of all the content bounding boxes for all of the descendants of a <xref:System.Windows.Media.ContainerVisual> object, but not the object itself.  
+Use the <xref:System.Windows.Media.ContainerVisual.DescendantBounds%2A> property to return the union of all the content bounding boxes for all of the descendants of a <xref:System.Windows.Media.ContainerVisual> object, but not the object itself.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to retrieve the bounding rectangle of a <xref:System.Windows.Media.ContainerVisual> object.  
-  
- [!code-csharp[ContainerVisualSnippets#ContainerVisualSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualSnippets/CSharp/Window1.xaml.cs#containervisualsnippet4)]
- [!code-vb[ContainerVisualSnippets#ContainerVisualSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualSnippets/visualbasic/window1.xaml.vb#containervisualsnippet4)]  
-  
+The following example shows how to retrieve the bounding rectangle of a <xref:System.Windows.Media.ContainerVisual> object.  
+ 
+[!code-csharp[ContainerVisualSnippets#ContainerVisualSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualSnippets/CSharp/Window1.xaml.cs#containervisualsnippet4)]
+[!code-vb[ContainerVisualSnippets#ContainerVisualSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualSnippets/visualbasic/window1.xaml.vb#containervisualsnippet4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,18 +222,18 @@
         <value>A <see cref="T:System.Windows.Rect" /> that specifies the combination bounding box.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Get the <xref:System.Windows.Media.ContainerVisual.ContentBounds%2A> property to return the cached bounding box rectangle for the <xref:System.Windows.Media.ContainerVisual> itself.  
+Get the <xref:System.Windows.Media.ContainerVisual.ContentBounds%2A> property to return the cached bounding box rectangle for the <xref:System.Windows.Media.ContainerVisual> itself.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to retrieve the bounding rectangle of a <xref:System.Windows.Media.ContainerVisual> object's descendants.  
-  
- [!code-csharp[ContainerVisualSnippets#ContainerVisualSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualSnippets/CSharp/Window1.xaml.cs#containervisualsnippet4)]
- [!code-vb[ContainerVisualSnippets#ContainerVisualSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualSnippets/visualbasic/window1.xaml.vb#containervisualsnippet4)]  
-  
+The following example shows how to retrieve the bounding rectangle of a <xref:System.Windows.Media.ContainerVisual> object's descendants.  
+ 
+[!code-csharp[ContainerVisualSnippets#ContainerVisualSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualSnippets/CSharp/Window1.xaml.cs#containervisualsnippet4)]
+[!code-vb[ContainerVisualSnippets#ContainerVisualSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualSnippets/visualbasic/window1.xaml.vb#containervisualsnippet4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -277,18 +277,18 @@
         <returns>The child <see cref="T:System.Windows.Media.Visual" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, a <xref:System.Windows.Media.ContainerVisual> does not have any children.  
+By default, a <xref:System.Windows.Media.ContainerVisual> does not have any children.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Media.ContainerVisual> object that is used as the parent for two <xref:System.Windows.Media.DrawingVisual> objects. Objects that are added to the <xref:System.Windows.Media.ContainerVisual> object must be added in reverse z-order (bottom to top) to ensure they are rendering in the correct drawing order. In order for the visual tree to be enumerated correctly, the example provides overridden implementations of the <xref:System.Windows.Media.ContainerVisual.GetVisualChild%2A> method and <xref:System.Windows.Media.ContainerVisual.VisualChildrenCount%2A> property.  
-  
- [!code-csharp[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualHost/CSharp/Window1.xaml.cs#containervisualhost01)]
- [!code-vb[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualHost/visualbasic/window1.xaml.vb#containervisualhost01)]  
-  
+The following example shows how to create a <xref:System.Windows.Media.ContainerVisual> object that is used as the parent for two <xref:System.Windows.Media.DrawingVisual> objects. Objects that are added to the <xref:System.Windows.Media.ContainerVisual> object must be added in reverse z-order (bottom to top) to ensure they are rendering in the correct drawing order. In order for the visual tree to be enumerated correctly, the example provides overridden implementations of the <xref:System.Windows.Media.ContainerVisual.GetVisualChild%2A> method and <xref:System.Windows.Media.ContainerVisual.VisualChildrenCount%2A> property.  
+ 
+[!code-csharp[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualHost/CSharp/Window1.xaml.cs#containervisualhost01)]
+[!code-vb[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualHost/visualbasic/window1.xaml.vb#containervisualhost01)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -317,18 +317,18 @@
         <returns>The hit test result of the visual returned as a <see cref="T:System.Windows.Media.HitTestResult" /> type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.HitTestResult.VisualHit%2A> property of the return value represents the <xref:System.Windows.Media.Visual> object that was hit.  
+The <xref:System.Windows.Media.HitTestResult.VisualHit%2A> property of the return value represents the <xref:System.Windows.Media.Visual> object that was hit.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to retrieve the <xref:System.Windows.Media.HitTestResult> return value from the <xref:System.Windows.Media.ContainerVisual.HitTest%2A> method.  
-  
- [!code-csharp[ContainerVisualSnippets#ContainerVisualSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualSnippets/CSharp/Window1.xaml.cs#containervisualsnippet2)]
- [!code-vb[ContainerVisualSnippets#ContainerVisualSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualSnippets/visualbasic/window1.xaml.vb#containervisualsnippet2)]  
-  
+The following example shows how to retrieve the <xref:System.Windows.Media.HitTestResult> return value from the <xref:System.Windows.Media.ContainerVisual.HitTest%2A> method.  
+ 
+[!code-csharp[ContainerVisualSnippets#ContainerVisualSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualSnippets/CSharp/Window1.xaml.cs#containervisualsnippet2)]
+[!code-vb[ContainerVisualSnippets#ContainerVisualSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualSnippets/visualbasic/window1.xaml.vb#containervisualsnippet2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -357,10 +357,10 @@
         <summary>Initiates a hit test on the <see cref="T:System.Windows.Media.ContainerVisual" /> by using the <see cref="T:System.Windows.Media.HitTestFilterCallback" /> and <see cref="T:System.Windows.Media.HitTestResultCallback" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `filterCallback` parameter can be null, in which case, it is ignored. If `filterCallback` is not `null`, it is invoked before `resultCallback`.  
-  
+The `filterCallback` parameter can be null, in which case, it is ignored. If `filterCallback` is not `null`, it is invoked before `resultCallback`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -418,10 +418,10 @@
         <value>A value of type <see cref="T:System.Windows.Media.Brush" /> that represents the opacity mask value of the <see cref="T:System.Windows.Media.ContainerVisual" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Opacity masks can be used to create effects such as vignettes, based on the alpha channel values of the brush.  
-  
+Opacity masks can be used to create effects such as vignettes, based on the alpha channel values of the brush.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -443,12 +443,12 @@
         <value>The parent of the visual.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that this is returned as <xref:System.Windows.DependencyObject>, rather than a raw object.  
-  
- This property might return `null` in a disconnected tree, or if you have traversed to the tree root at the window level.  
-  
+Note that this is returned as <xref:System.Windows.DependencyObject>, rather than a raw object.  
+ 
+This property might return `null` in a disconnected tree, or if you have traversed to the tree root at the window level.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -470,10 +470,10 @@
         <value>The transform value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Transform> is a base class that unifies many different forms of transforms. For details, see <xref:System.Windows.Media.Transform>.  
-  
+<xref:System.Windows.Media.Transform> is a base class that unifies many different forms of transforms. For details, see <xref:System.Windows.Media.Transform>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -495,18 +495,18 @@
         <value>The number of children in the <see cref="T:System.Windows.Media.VisualCollection" /> of the <see cref="T:System.Windows.Media.ContainerVisual" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, a <xref:System.Windows.Media.ContainerVisual> does not have any children.  
+By default, a <xref:System.Windows.Media.ContainerVisual> does not have any children.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Media.ContainerVisual> object that is used as the parent for two <xref:System.Windows.Media.DrawingVisual> objects. Objects that are added to the <xref:System.Windows.Media.ContainerVisual> object must be added in reverse z-order (bottom to top) to ensure they are rendering in the correct drawing order. In order for the visual tree to be enumerated correctly, the example provides overridden implementations of the <xref:System.Windows.Media.ContainerVisual.GetVisualChild%2A> method and <xref:System.Windows.Media.ContainerVisual.VisualChildrenCount%2A> property.  
-  
- [!code-csharp[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualHost/CSharp/Window1.xaml.cs#containervisualhost01)]
- [!code-vb[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualHost/visualbasic/window1.xaml.vb#containervisualhost01)]  
-  
+The following example shows how to create a <xref:System.Windows.Media.ContainerVisual> object that is used as the parent for two <xref:System.Windows.Media.DrawingVisual> objects. Objects that are added to the <xref:System.Windows.Media.ContainerVisual> object must be added in reverse z-order (bottom to top) to ensure they are rendering in the correct drawing order. In order for the visual tree to be enumerated correctly, the example provides overridden implementations of the <xref:System.Windows.Media.ContainerVisual.GetVisualChild%2A> method and <xref:System.Windows.Media.ContainerVisual.VisualChildrenCount%2A> property.  
+ 
+[!code-csharp[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualHost/CSharp/Window1.xaml.cs#containervisualhost01)]
+[!code-vb[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualHost/visualbasic/window1.xaml.vb#containervisualhost01)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -538,12 +538,12 @@
         <value>The horizontal guideline.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Pixel snapping is the process in which content layout is fixed so that object edges are rendered on device-specific pixels. The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] graphics system uses device-independent units to enable resolution and device independence. Each device independent pixel automatically scales with the system's [!INCLUDE[TLA#tla_dpi](~/includes/tlasharptla-dpi-md.md)] setting. This provides [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications proper scaling for different [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] settings and makes the application automatically [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)]-aware.  
-  
- However, this [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] independence can create irregular edge rendering due to anti-aliasing. These artifacts, commonly seen as blurry, or "soft" edges, can occur when the location of an edge falls in the middle of a device pixel rather than between device pixels. To address this issue, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides a way for object edges in a visual tree to "snap" to device pixels through pixel snapping, eliminating the soft edges produced by anti-aliasing.  
-  
+Pixel snapping is the process in which content layout is fixed so that object edges are rendered on device-specific pixels. The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] graphics system uses device-independent units to enable resolution and device independence. Each device independent pixel automatically scales with the system's [!INCLUDE[TLA#tla_dpi](~/includes/tlasharptla-dpi-md.md)] setting. This provides [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications proper scaling for different [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] settings and makes the application automatically [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)]-aware.  
+ 
+However, this [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] independence can create irregular edge rendering due to anti-aliasing. These artifacts, commonly seen as blurry, or "soft" edges, can occur when the location of an edge falls in the middle of a device pixel rather than between device pixels. To address this issue, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides a way for object edges in a visual tree to "snap" to device pixels through pixel snapping, eliminating the soft edges produced by anti-aliasing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -570,12 +570,12 @@
         <value>The vertical guideline.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Pixel snapping is the process in which content layout is fixed so that object edges are rendered on device-specific pixels. The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] graphics system uses device-independent units to enable resolution and device independence. Each device independent pixel automatically scales with the system's [!INCLUDE[TLA#tla_dpi](~/includes/tlasharptla-dpi-md.md)] setting. This provides [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications proper scaling for different [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] settings and makes the application automatically [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)]-aware.  
-  
- However, this [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] independence can create irregular edge rendering due to anti-aliasing. These artifacts, commonly seen as blurry, or "soft" edges, can occur when the location of an edge falls in the middle of a device pixel rather than between device pixels. To address this issue, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides a way for object edges in a visual tree to "snap" to device pixels through pixel snapping, eliminating the soft edges produced by anti-aliasing.  
-  
+Pixel snapping is the process in which content layout is fixed so that object edges are rendered on device-specific pixels. The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] graphics system uses device-independent units to enable resolution and device independence. Each device independent pixel automatically scales with the system's [!INCLUDE[TLA#tla_dpi](~/includes/tlasharptla-dpi-md.md)] setting. This provides [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications proper scaling for different [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] settings and makes the application automatically [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)]-aware.  
+ 
+However, this [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] independence can create irregular edge rendering due to anti-aliasing. These artifacts, commonly seen as blurry, or "soft" edges, can occur when the location of an edge falls in the middle of a device pixel rather than between device pixels. To address this issue, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides a way for object edges in a visual tree to "snap" to device pixels through pixel snapping, eliminating the soft edges produced by anti-aliasing.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,10 +18,10 @@
     <summary>Specifies whether the subject of a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token is granted access to a given resource.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IdentityModel.Tokens.SamlAccessDecision> to express access permissions to a resource in a <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> within a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token.  
-  
+Use the <xref:System.IdentityModel.Tokens.SamlAccessDecision> to express access permissions to a resource in a <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> within a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token.  
+ 
  ]]></format>
     </remarks>
   </Docs>

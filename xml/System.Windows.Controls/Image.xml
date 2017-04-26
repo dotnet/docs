@@ -23,16 +23,16 @@
     <summary>Represents a control that displays an image.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.Image> class enables you to load the following image types: .bmp, .gif, .ico, .jpg, .png, .wdp, and .tiff.  
-  
- When displaying a multiframe image, only the first frame is displayed. The animation of multiframe images is not supported by the <xref:System.Windows.Controls.Image> control.  
-  
- Until the image content is loaded, the <xref:System.Windows.FrameworkElement.ActualWidth%2A> and <xref:System.Windows.FrameworkElement.ActualHeight%2A> of the control will report as zero, because the image content is used to determine the final size and location of the control.  
-  
- For a fixed size control, the <xref:System.Windows.FrameworkElement.Width%2A> and/or <xref:System.Windows.FrameworkElement.Height%2A> properties can be set. However, to preserve the media's aspect ratio, set the <xref:System.Windows.FrameworkElement.Width%2A> or <xref:System.Windows.FrameworkElement.Height%2A> properties but not both.  
-  
+The <xref:System.Windows.Controls.Image> class enables you to load the following image types: .bmp, .gif, .ico, .jpg, .png, .wdp, and .tiff.  
+ 
+When displaying a multiframe image, only the first frame is displayed. The animation of multiframe images is not supported by the <xref:System.Windows.Controls.Image> control.  
+ 
+Until the image content is loaded, the <xref:System.Windows.FrameworkElement.ActualWidth%2A> and <xref:System.Windows.FrameworkElement.ActualHeight%2A> of the control will report as zero, because the image content is used to determine the final size and location of the control.  
+ 
+For a fixed size control, the <xref:System.Windows.FrameworkElement.Width%2A> and/or <xref:System.Windows.FrameworkElement.Height%2A> properties can be set. However, to preserve the media's aspect ratio, set the <xref:System.Windows.FrameworkElement.Width%2A> or <xref:System.Windows.FrameworkElement.Height%2A> properties but not both.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.MediaPermission">for displaying images that you don't have <see cref="T:System.Net.WebPermission" /> or <see cref="T:System.Security.Permissions.FileIOPermission" /> access for. Associated enumeration: <see cref="F:System.Security.Permissions.MediaPermissionImage.SafeImage" />.</permission>
@@ -143,23 +143,23 @@
         <summary>Occurs when there is a failure in the image.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Controls.Image.Source%2A> is a <xref:System.Windows.Media.Imaging.BitmapImage> and it fails to load, due to a corrupt header, both the <xref:System.Windows.Media.Imaging.BitmapSource.DecodeFailed> and <xref:System.Windows.Controls.Image.ImageFailed> events occur.  
-  
+If the <xref:System.Windows.Controls.Image.Source%2A> is a <xref:System.Windows.Media.Imaging.BitmapImage> and it fails to load, due to a corrupt header, both the <xref:System.Windows.Media.Imaging.BitmapSource.DecodeFailed> and <xref:System.Windows.Controls.Image.ImageFailed> events occur.  
+ 
 <a name="xamlTextUsage_ImageFailed"></a>   
 ## XAML Text Usage  
- \<*object* ImageFailed="*EventHandler*" .../>  
-  
+\<*object* ImageFailed="*EventHandler*" .../>  
+ 
 <a name="routedEventInfo_ImageFailed"></a>   
 ## Routed Event Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Image.ImageFailedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.EventHandler%601>, constrained by <xref:System.Windows.ExceptionRoutedEventArgs>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,10 +202,10 @@
         <returns>The image's desired size.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The image will always return its natural size, if it fits within the constraint.  If not, it will return as large a size as it can.  
-  
+The image will always return its natural size, if it fits within the constraint.  If not, it will return as large a size as it can.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,10 +228,10 @@
         <returns>An <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> object for this <see cref="T:System.Windows.Controls.Image" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer?displayProperty=fullName>.  
-  
+This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,45 +297,45 @@
         <value>The source of the drawn image. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Source"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object Source="imageUri"/>  
 ```  
-  
+ 
 <a name="xamlTextUsage_Source"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see the <xref:System.Windows.Media.ImageSource> type.  
-  
+For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see the <xref:System.Windows.Media.ImageSource> type.  
+ 
 <a name="xamlValues_Source"></a>   
 ## XAML Values  
- *imageUri*  
- <xref:System.String?displayProperty=fullName>  
-  
- A [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the image file.  
-  
+*imageUri*  
+<xref:System.String?displayProperty=fullName>  
+ 
+A [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the image file.  
+ 
 <a name="dependencyPropertyInfo_Source"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Image.SourceProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>,<br /><br /> <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Controls.Image.Source%2A> property.  
-  
- [!code-cpp[StackPanelOvw4#3](~/samples/snippets/cpp/VS_Snippets_Wpf/StackPanelOvw4/CPP/StackPanel_Ovw_Sample4.cpp#3)]
- [!code-csharp[StackPanelOvw4#3](~/samples/snippets/csharp/VS_Snippets_Wpf/StackPanelOvw4/CSharp/StackPanel_Ovw_Sample4.cs#3)]
- [!code-vb[StackPanelOvw4#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StackPanelOvw4/VisualBasic/StackPanelSamp.vb#3)]
- [!code-xml[StackPanelOvw4#3](~/samples/snippets/xaml/VS_Snippets_Wpf/StackPanelOvw4/XAML/default.xaml#3)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Controls.Image.Source%2A> property.  
+ 
+[!code-cpp[StackPanelOvw4#3](~/samples/snippets/cpp/VS_Snippets_Wpf/StackPanelOvw4/CPP/StackPanel_Ovw_Sample4.cpp#3)]
+[!code-csharp[StackPanelOvw4#3](~/samples/snippets/csharp/VS_Snippets_Wpf/StackPanelOvw4/CSharp/StackPanel_Ovw_Sample4.cs#3)]
+[!code-vb[StackPanelOvw4#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StackPanelOvw4/VisualBasic/StackPanelSamp.vb#3)]
+[!code-xml[StackPanelOvw4#3](~/samples/snippets/xaml/VS_Snippets_Wpf/StackPanelOvw4/XAML/default.xaml#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -374,26 +374,26 @@
         <value>One of the <see cref="T:System.Windows.Media.Stretch" /> values. The default is <see cref="F:System.Windows.Media.Stretch.Uniform" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A value of <xref:System.Windows.Media.Stretch> will cause your image to stretch to completely fill the output area. When the output area and the image have different aspect ratios, the image is distorted by this stretching. To make an <xref:System.Windows.Controls.Image> preserve the aspect ratio of the image, set this property to <xref:System.Windows.Media.Stretch> (default) or <xref:System.Windows.Media.Stretch>.  
-  
+A value of <xref:System.Windows.Media.Stretch> will cause your image to stretch to completely fill the output area. When the output area and the image have different aspect ratios, the image is distorted by this stretching. To make an <xref:System.Windows.Controls.Image> preserve the aspect ratio of the image, set this property to <xref:System.Windows.Media.Stretch> (default) or <xref:System.Windows.Media.Stretch>.  
+ 
 <a name="dependencyPropertyInfo_Stretch"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Image.StretchProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use this property.  
-  
- [!code-csharp[ImageElementExample_snip#ImageSimpleExampleInlineCode2](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml.cs#imagesimpleexampleinlinecode2)]
- [!code-vb[ImageElementExample_snip#ImageSimpleExampleInlineCode2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample_snip/VB/ImageSimpleExample.xaml.vb#imagesimpleexampleinlinecode2)]  
-  
+The following example demonstrates how to use this property.  
+ 
+[!code-csharp[ImageElementExample_snip#ImageSimpleExampleInlineCode2](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml.cs#imagesimpleexampleinlinecode2)]
+[!code-vb[ImageElementExample_snip#ImageSimpleExampleInlineCode2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample_snip/VB/ImageSimpleExample.xaml.vb#imagesimpleexampleinlinecode2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -415,25 +415,25 @@
         <value>One of the <see cref="T:System.Windows.Controls.StretchDirection" /> values. The default is <see cref="F:System.Windows.Controls.StretchDirection.Both" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_StretchDirection"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Image.StretchDirectionProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use this property.  
-  
- [!code-csharp[ImageElementExample_snip#ImageSimpleExampleInlineCode2](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml.cs#imagesimpleexampleinlinecode2)]
- [!code-vb[ImageElementExample_snip#ImageSimpleExampleInlineCode2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample_snip/VB/ImageSimpleExample.xaml.vb#imagesimpleexampleinlinecode2)]  
-  
+The following example demonstrates how to use this property.  
+ 
+[!code-csharp[ImageElementExample_snip#ImageSimpleExampleInlineCode2](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml.cs#imagesimpleexampleinlinecode2)]
+[!code-vb[ImageElementExample_snip#ImageSimpleExampleInlineCode2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample_snip/VB/ImageSimpleExample.xaml.vb#imagesimpleexampleinlinecode2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

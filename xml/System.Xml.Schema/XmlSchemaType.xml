@@ -19,10 +19,10 @@
     <summary>The base class for all simple types and complex types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- See the <xref:System.Xml.Schema.XmlSchemaSimpleType> class and the <xref:System.Xml.Schema.XmlSchemaComplexType> class for an example using this class.  
-  
+See the <xref:System.Xml.Schema.XmlSchemaSimpleType> class and the <xref:System.Xml.Schema.XmlSchemaComplexType> class for an example using this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,13 +77,13 @@
         <value>The built-in XSD data type, simpleType element, or complexType element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The complexType is derived from the type specified by the base value. The base value must be a QName.  
-  
+The complexType is derived from the type specified by the base value. The base value must be a QName.  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchemaType.BaseSchemaType%2A> property is obsolete and has been replaced by the <xref:System.Xml.Schema.XmlSchemaType.BaseXmlSchemaType%2A> property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,10 +115,10 @@
         <value>An <see cref="T:System.Xml.Schema.XmlSchemaType" /> object representing the base type of this schema type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Schema.XmlSchemaType.BaseXmlSchemaType%2A> property always has a value, because all schema types have a base type. This value is set upon schema compilation, making it a part of the post-schema-compilation infoset.  
-  
+The <xref:System.Xml.Schema.XmlSchemaType.BaseXmlSchemaType%2A> property always has a value, because all schema types have a base type. This value is set upon schema compilation, making it a part of the post-schema-compilation infoset.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,10 +178,10 @@
         <value>One of the valid <see cref="T:System.Xml.Schema.XmlSchemaDerivationMethod" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the values that this property can contain.  
-  
+The following table shows the values that this property can contain.  
+ 
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod> value|Description|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|No derivation method specified.|  
@@ -190,7 +190,7 @@
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Derived by Restriction.|  
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Derived by List.|  
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Derived by Union.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,10 +225,10 @@
         <value>One of the valid <see cref="T:System.Xml.Schema.XmlSchemaDerivationMethod" /> values. The default is <see cref="F:System.Xml.Schema.XmlSchemaDerivationMethod.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the values that this property can contain for simple type.  
-  
+The following table shows the values that this property can contain for simple type.  
+ 
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod> value|Description|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Overrides the schema `blockDefault` setting allowing any derivations by restriction, extension, or substitution to take place.|  
@@ -237,9 +237,9 @@
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Extension.|  
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Restriction.|  
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|`#all`. Cannot be replaced by a type derived by any derivation method.|  
-  
- The following table shows the values that this property can contain for complex type.  
-  
+ 
+The following table shows the values that this property can contain for complex type.  
+ 
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod> value|Description|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Overrides the schema `blockDefault` setting allowing any derivations by restriction, extension, or substitution to take place.|  
@@ -248,7 +248,7 @@
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Extension.|  
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Restriction.|  
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|`#all`. Cannot be replaced by a type derived by any derivation method.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,10 +280,10 @@
         <value>The post-compilation value of the <see cref="P:System.Xml.Schema.XmlSchemaType.Final" /> property. The default is the <see langword="finalDefault" /> attribute value of the <see langword="schema" /> element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value indicates how the type is restricted when the type is extended through restriction. If the type is marked as `final`, this type cannot be extended.  
-  
+This value indicates how the type is restricted when the type is extended through restriction. If the type is marked as `final`, this type cannot be extended.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -369,18 +369,18 @@
         <returns>The <see cref="T:System.Xml.Schema.XmlSchemaSimpleType" /> that represents the built-in simple type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot directly serialize the built-in type. If you need to serialize the type, create a new simple type which derives from the built-in type and serialize the simple type.  
+You cannot directly serialize the built-in type. If you need to serialize the type, create a new simple type which derives from the built-in type and serialize the simple type.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create the type and add it to the schema.  
-  
- [!code-csharp[XmlSchemaType#1](~/samples/snippets/csharp/VS_Snippets_Data/xmlschematype/cs/xmlschematype.cs#1)]
- [!code-vb[XmlSchemaType#1](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlschematype/vb/getbuiltinsimpletype.vb#1)]  
-  
+The following example shows how to create the type and add it to the schema.  
+ 
+[!code-csharp[XmlSchemaType#1](~/samples/snippets/csharp/VS_Snippets_Data/xmlschematype/cs/xmlschematype.cs#1)]
+[!code-vb[XmlSchemaType#1](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlschematype/vb/getbuiltinsimpletype.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -411,18 +411,18 @@
         <returns>The <see cref="T:System.Xml.Schema.XmlSchemaSimpleType" /> that represents the built-in simple type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot directly serialize the built-in type. If you need to serialize the type, create a new simple type which derives from the built-in type and serialize the simple type.  
+You cannot directly serialize the built-in type. If you need to serialize the type, create a new simple type which derives from the built-in type and serialize the simple type.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create the type and add it to the schema.  
-  
- [!code-csharp[XmlSchemaType#1](~/samples/snippets/csharp/VS_Snippets_Data/xmlschematype/cs/xmlschematype.cs#1)]
- [!code-vb[XmlSchemaType#1](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlschematype/vb/getbuiltinsimpletype.vb#1)]  
-  
+The following example shows how to create the type and add it to the schema.  
+ 
+[!code-csharp[XmlSchemaType#1](~/samples/snippets/csharp/VS_Snippets_Data/xmlschematype/cs/xmlschematype.cs#1)]
+[!code-vb[XmlSchemaType#1](~/samples/snippets/visualbasic/VS_Snippets_Data/xmlschematype/vb/getbuiltinsimpletype.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Xml.XmlQualifiedName" /> parameter is <see langword="null" />.</exception>
@@ -459,10 +459,10 @@
           <see langword="true" /> if the derived type is derived from the base type; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following is an example of the <xref:System.Xml.Schema.XmlSchemaType.IsDerivedFrom%2A> method.  
-  
+The following is an example of the <xref:System.Xml.Schema.XmlSchemaType.IsDerivedFrom%2A> method.  
+ 
 ```csharp  
 XmlSchemaType xsdInteger = XmlSchemaType.GetBuiltInSimpleType(XmlTypeCode.Integer);  
 XmlSchemaType xsdPositiveInteger = XmlSchemaType.GetBuiltInSimpleType(XmlTypeCode.PositiveInteger);  
@@ -473,7 +473,7 @@ Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, Xm
 // false  
 Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, XmlSchemaDerivationMethod.Restriction));  
 ```  
-  
+ 
 ```vb  
 Dim xsdInteger As XmlSchemaType = XmlSchemaType.GetBuiltInSimpleType(XmlTypeCode.Integer)  
 Dim xsdPositiveInteger As XmlSchemaType = XmlSchemaType.GetBuiltInSimpleType(XmlTypeCode.PositiveInteger)  
@@ -484,7 +484,7 @@ Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, Xm
 ' False  
 Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, XmlSchemaDerivationMethod.Restriction))  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -517,10 +517,10 @@ Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, Xm
           <see langword="true" /> if the type has a mixed content model; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This virtual method is overridden in derived classes.  
-  
+This virtual method is overridden in derived classes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -552,10 +552,10 @@ Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, Xm
         <value>The name of the type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name must be an no-colon name (NCName) as defined in the World Wide Web Consortium (W3C) XML Namespaces specification. If specified, the name must be unique among all `simpleType` and `complexType` elements.  
-  
+The name must be an no-colon name (NCName) as defined in the World Wide Web Consortium (W3C) XML Namespaces specification. If specified, the name must be unique among all `simpleType` and `complexType` elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>

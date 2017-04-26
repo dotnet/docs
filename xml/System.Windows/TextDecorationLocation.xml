@@ -13,22 +13,22 @@
     <summary>Specifies the vertical position of a <see cref="T:System.Windows.TextDecoration" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Text decorations are available in four types: baseline, overline, strikethrough, and underline. The following example shows the locations of the text decorations relative to the text.  
-  
- ![Diagram of text decoration locations](~/add/media/textdecoration01.gif "Diagram of text decoration locations")  
+Text decorations are available in four types: baseline, overline, strikethrough, and underline. The following example shows the locations of the text decorations relative to the text.  
+ 
+![Diagram of text decoration locations](~/add/media/textdecoration01.gif "Diagram of text decoration locations")  
 Text decoration types  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an underline text decoration and uses a solid color brush for the pen.  
-  
- [!code-csharp[TextDecorationSnippets#TextDecorationSnippets2](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml.cs#textdecorationsnippets2)]
- [!code-vb[TextDecorationSnippets#TextDecorationSnippets2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextDecorationSnippets/visualbasic/window1.xaml.vb#textdecorationsnippets2)]
- [!code-xml[TextDecorationSnippets#TextDecorationSnippets2](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml#textdecorationsnippets2)]  
-  
+The following example creates an underline text decoration and uses a solid color brush for the pen.  
+ 
+[!code-csharp[TextDecorationSnippets#TextDecorationSnippets2](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml.cs#textdecorationsnippets2)]
+[!code-vb[TextDecorationSnippets#TextDecorationSnippets2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextDecorationSnippets/visualbasic/window1.xaml.vb#textdecorationsnippets2)]
+[!code-xml[TextDecorationSnippets#TextDecorationSnippets2](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml#textdecorationsnippets2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -12,10 +12,10 @@
     <summary>Defines the contract for specifying the security capabilities for bindings.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For a full implementation see the [NetHttpBinding](http://msdn.microsoft.com/en-us/1f2bb9b2-e0c5-4e8e-a9d3-703575bb159c) sample  
-  
+For a full implementation see the [NetHttpBinding](http://msdn.microsoft.com/en-us/1f2bb9b2-e0c5-4e8e-a9d3-703575bb159c) sample  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,12 +38,12 @@
         <value>The <see cref="T:System.Net.Security.ProtectionLevel" /> that specifies the protection level requests supported by the binding.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code snippet illustrates how to implement this property:  
-  
+The following code snippet illustrates how to implement this property:  
+ 
 <!-- TODO: review snippet reference  [!CODE [S_UE_NetHttpBinding#0](S_UE_NetHttpBinding#0)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -66,12 +66,12 @@
         <value>The <see cref="T:System.Net.Security.ProtectionLevel" /> that specifies the protection level responses supported by the binding.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code snippet illustrates how to implement this property:  
-  
+The following code snippet illustrates how to implement this property:  
+ 
 <!-- TODO: review snippet reference  [!CODE [S_UE_NetHttpBinding#1](S_UE_NetHttpBinding#1)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,12 +95,12 @@
           <see langword="true" /> if the binding can support client authentication; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code snippet illustrates how to implement this property:  
-  
+The following code snippet illustrates how to implement this property:  
+ 
 <!-- TODO: review snippet reference  [!CODE [S_UE_NetHttpBinding#2](S_UE_NetHttpBinding#2)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,12 +124,12 @@
           <see langword="true" /> if the binding can support client Windows identity; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code snippet illustrates how to implement this property:  
-  
+The following code snippet illustrates how to implement this property:  
+ 
 <!-- TODO: review snippet reference  [!CODE [S_UE_NetHttpBinding#3](S_UE_NetHttpBinding#3)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,12 +153,12 @@
           <see langword="true" /> if the binding can support server authentication; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code snippet illustrates how to implement this property:  
-  
+The following code snippet illustrates how to implement this property:  
+ 
 <!-- TODO: review snippet reference  [!CODE [S_UE_NetHttpBinding#4](S_UE_NetHttpBinding#4)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

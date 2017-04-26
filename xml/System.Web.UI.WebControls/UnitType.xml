@@ -13,20 +13,20 @@
     <summary>Specifies the unit of measurement.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.UnitType> enumeration represents the different supported measurement units. Measurements can be represented in pixels, points, picas, inches, millimeters, centimeters, percentages, em, or ex.  
-  
- A Point is a unit of measurement that represents 1/72 of an inch.  
-  
- A Pica is a unit that equals 12 points.  
-  
- A Percentage is a unit of measurement that is relative to a parent element. For example, if the font size of a paragraph is 10 pixels, you can place a phrase inside the paragraph with a font size specified as 200%. The font size of the phrase becomes twice the font size of the paragraph, or 20 pixels.  
-  
- An Em is a unit of measurement that is relative to the height of a parent element's font. For example, if the font size of a paragraph is 10 pixels, you can place a phrase inside the paragraph with a font size specified as 2 em. The font size of the phrase becomes twice the font size of the paragraph, or 20 pixels.  
-  
- An Ex is a unit of measurement that is relative to the height of the lowercase letter x of the parent element's font. For example if the font size of a paragraph is 10 pixels, you can place a phrase inside the paragraph with a font size specified as 2 ex. The font size of the phrase becomes twice the font size of a lowercase letter x in the paragraph.  
-  
+The <xref:System.Web.UI.WebControls.UnitType> enumeration represents the different supported measurement units. Measurements can be represented in pixels, points, picas, inches, millimeters, centimeters, percentages, em, or ex.  
+ 
+A Point is a unit of measurement that represents 1/72 of an inch.  
+ 
+A Pica is a unit that equals 12 points.  
+ 
+A Percentage is a unit of measurement that is relative to a parent element. For example, if the font size of a paragraph is 10 pixels, you can place a phrase inside the paragraph with a font size specified as 200%. The font size of the phrase becomes twice the font size of the paragraph, or 20 pixels.  
+ 
+An Em is a unit of measurement that is relative to the height of a parent element's font. For example, if the font size of a paragraph is 10 pixels, you can place a phrase inside the paragraph with a font size specified as 2 em. The font size of the phrase becomes twice the font size of the paragraph, or 20 pixels.  
+ 
+An Ex is a unit of measurement that is relative to the height of the lowercase letter x of the parent element's font. For example if the font size of a paragraph is 10 pixels, you can place a phrase inside the paragraph with a font size specified as 2 ex. The font size of the phrase becomes twice the font size of a lowercase letter x in the paragraph.  
+ 
  ]]></format>
     </remarks>
   </Docs>

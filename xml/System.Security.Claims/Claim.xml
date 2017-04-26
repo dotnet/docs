@@ -23,31 +23,31 @@
     <summary>Represents a claim.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A claim is a statement about a subject by an issuer. Claims represent attributes of the subject that are useful in the context of authentication and authorization operations. Subjects and issuers are both entities that are part of an identity scenario. Some typical examples of a subject are: a user, an application or service, a device, or a computer. Some typical examples of an issuer are: the operating system, an application. a service, a role provider, an identity provider, or a federation provider. An issuer delivers claims by issuing security tokens, typically through a Security Token Service (STS). (In WIF, you can build an STS by deriving from the <xref:System.IdentityModel.SecurityTokenService> class.) On occasion, the collection of claims received from an issuer can be extended by subject attributes stored directly at the resource. A claim can be evaluated to determine access rights to data and other secured resources during the process of authorization and can also be used to make or express authentication decisions about a subject.  
-  
- Beginning with .NET 4.5, the Windows Identity Foundation (WIF) classes, which implement claims-based identity, have been fully integrated into the .NET Framework. The claims concept is implemented by the <xref:System.Security.Claims.Claim> class.  
-  
- The following describes important properties of the <xref:System.Security.Claims.Claim> class:  
-  
+A claim is a statement about a subject by an issuer. Claims represent attributes of the subject that are useful in the context of authentication and authorization operations. Subjects and issuers are both entities that are part of an identity scenario. Some typical examples of a subject are: a user, an application or service, a device, or a computer. Some typical examples of an issuer are: the operating system, an application. a service, a role provider, an identity provider, or a federation provider. An issuer delivers claims by issuing security tokens, typically through a Security Token Service (STS). (In WIF, you can build an STS by deriving from the <xref:System.IdentityModel.SecurityTokenService> class.) On occasion, the collection of claims received from an issuer can be extended by subject attributes stored directly at the resource. A claim can be evaluated to determine access rights to data and other secured resources during the process of authorization and can also be used to make or express authentication decisions about a subject.  
+ 
+Beginning with .NET 4.5, the Windows Identity Foundation (WIF) classes, which implement claims-based identity, have been fully integrated into the .NET Framework. The claims concept is implemented by the <xref:System.Security.Claims.Claim> class.  
+ 
+The following describes important properties of the <xref:System.Security.Claims.Claim> class:  
+ 
 -   The <xref:System.Security.Claims.Claim.Type%2A> property is a string (typically a URI) that contains the semantic information about the claim; it tells you what the value of the claim means. For example, a claim with a claim type of <xref:System.Security.Claims.ClaimTypes.GivenName> (“http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname”) represents a user’s first name. The value of the <xref:System.Security.Claims.Claim.Type%2A> property can be one of the well-known claim types defined in the <xref:System.Security.Claims.ClaimTypes> class, or it can be an arbitrary URI as defined by the issuer. For example, a claim type of “urn:spendinglimit” might represent a user attribute which makes sense within the business context of the issuer.  
-  
+ 
 -   The <xref:System.Security.Claims.Claim.Value%2A> property contains the value of the claim. In order to reduce dependencies and simplify administration, in WIF the value of a claim is represented only as a string. For more complex value types, it is recommended that you use standard XML schema types to indicate how the value is meant to be serialized into and deserialized from a string.  
-  
+ 
 -   The <xref:System.Security.Claims.Claim.ValueType%2A> property contains a string that identifies the type information for the value. This property should be used to understand the format of the value and to provide information about how to deserialize it. If your solution requires complex value types, it is recommended that you use standard XML schema types in the <xref:System.Security.Claims.Claim.ValueType%2A> property to indicate how the <xref:System.Security.Claims.Claim.Value%2A> property is meant to be serialized into and deserialized from a string.  
-  
+ 
 -   The <xref:System.Security.Claims.Claim.Subject%2A> property is a <xref:System.Security.Claims.ClaimsIdentity> object that represents the subject of the claim. The subject of the claim is the entity (typically the user who is requesting access to a resource) about which the claim is asserted. The <xref:System.Security.Claims.ClaimsIdentity> contains, among its properties, a collection of claims that describe the properties and attributes of the subject as attested to by one or more issuers.  
-  
+ 
 -   The <xref:System.Security.Claims.Claim.Issuer%2A> property contains the name of the entity that issued the claim. The issuer of a claim is represented in WIF by a string that contains a name taken from a list of well-known issuers that is maintained by the issuer name registry. The issuer name registry is an instance of a class that derives from the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class. The issuer name registry associates a mnemonic name to the cryptographic material needed to verify the signatures of tokens produced by the corresponding issuer. For example, the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> class, available out of the box with .NET 4.5, associates the mnemonic name for each issuer with its corresponding X.509 certificate. The list of well-known issuers is typically built at startup time by the issuer name registry. The list used by the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> is specified in the application configuration file.  
-  
+ 
 -   The <xref:System.Security.Claims.Claim.OriginalIssuer%2A> property contains the name of the entity that originally issued the claim. This property is designed to facilitate scenarios where a claim may pass through multiple issuers before it is presented by the client to the RP application; such as federation scenarios. You can examine the <xref:System.Security.Claims.Claim.OriginalIssuer%2A> property to determine the entity that originally issued the claim. The name is taken from the list of well-known issuers maintained by the issuer name registry, as in the case of the <xref:System.Security.Claims.Claim.Issuer%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example extracts the claims associated to the authenticated user performing an HTTP request and writes them in the HTTP response. The current user is read from the <xref:System.Web.HttpContext> as a <xref:System.Security.Claims.ClaimsPrincipal> and the claims are read from it. The claims are then written to HTTP the response.  
-  
+The following example extracts the claims associated to the authenticated user performing an HTTP request and writes them in the HTTP response. The current user is read from the <xref:System.Web.HttpContext> as a <xref:System.Security.Claims.ClaimsPrincipal> and the claims are read from it. The claims are then written to HTTP the response.  
+ 
 ```csharp  
 ClaimsPrincipal principal = HttpContext.Current.User as ClaimsPrincipal;  
 if (null != principal)  
@@ -60,7 +60,7 @@ if (null != principal)
 }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -205,10 +205,10 @@ if (null != principal)
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.Claim" /> class with the specified claim type, and value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Claims.Claim.Subject%2A> property is set to `null`. The <xref:System.Security.Claims.Claim.Issuer%2A> and <xref:System.Security.Claims.Claim.OriginalIssuer%2A> properties are set to <xref:System.Security.Claims.ClaimsIdentity.DefaultIssuer>. The <xref:System.Security.Claims.Claim.ValueType%2A> property is set to <xref:System.Security.Claims.ClaimValueTypes.String?displayProperty=fullName>  
-  
+The <xref:System.Security.Claims.Claim.Subject%2A> property is set to `null`. The <xref:System.Security.Claims.Claim.Issuer%2A> and <xref:System.Security.Claims.Claim.OriginalIssuer%2A> properties are set to <xref:System.Security.Claims.ClaimsIdentity.DefaultIssuer>. The <xref:System.Security.Claims.Claim.ValueType%2A> property is set to <xref:System.Security.Claims.ClaimValueTypes.String?displayProperty=fullName>  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -245,10 +245,10 @@ if (null != principal)
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.Claim" /> class with the specified claim type, value, and value type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Claims.Claim.Subject%2A> property is set to `null`. The <xref:System.Security.Claims.Claim.Issuer%2A> and <xref:System.Security.Claims.Claim.OriginalIssuer%2A> properties are set to <xref:System.Security.Claims.ClaimsIdentity.DefaultIssuer>.  
-  
+The <xref:System.Security.Claims.Claim.Subject%2A> property is set to `null`. The <xref:System.Security.Claims.Claim.Issuer%2A> and <xref:System.Security.Claims.Claim.OriginalIssuer%2A> properties are set to <xref:System.Security.Claims.ClaimsIdentity.DefaultIssuer>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -287,10 +287,10 @@ if (null != principal)
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.Claim" /> class with the specified claim type, value, value type, and issuer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Claims.Claim.Subject%2A> property is set to `null`. The <xref:System.Security.Claims.Claim.OriginalIssuer%2A> property is set according to the value of the `issuer` parameter.  
-  
+The <xref:System.Security.Claims.Claim.Subject%2A> property is set to `null`. The <xref:System.Security.Claims.Claim.OriginalIssuer%2A> property is set according to the value of the `issuer` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -331,10 +331,10 @@ if (null != principal)
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.Claim" /> class with the specified claim type, value, value type, issuer,  and original issuer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Claims.Claim.Subject%2A> property is set to `null`.  
-  
+The <xref:System.Security.Claims.Claim.Subject%2A> property is set to `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -407,10 +407,10 @@ if (null != principal)
         <returns>The new claim object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a shallow copy operation. The <xref:System.Security.Claims.Claim.Subject%2A> property of the new <xref:System.Security.Claims.Claim> object is set to `null`.  
-  
+This is a shallow copy operation. The <xref:System.Security.Claims.Claim.Subject%2A> property of the new <xref:System.Security.Claims.Claim> object is set to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -445,10 +445,10 @@ if (null != principal)
         <returns>The new claim object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a shallow copy operation. The <xref:System.Security.Claims.Claim.Subject%2A> property of the new <xref:System.Security.Claims.Claim> object is set to the value of the `identity` parameter.  
-  
+This is a shallow copy operation. The <xref:System.Security.Claims.Claim.Subject%2A> property of the new <xref:System.Security.Claims.Claim> object is set to the value of the `identity` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -506,10 +506,10 @@ if (null != principal)
         <value>A name that refers to the issuer of the claim.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the <xref:System.Security.Claims.Claim.Issuer%2A> property is a name that is taken from a list of well-known issuers maintained by the issuer name registry. The issuer name registry is an instance of a class that derives from the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class. The issuer name registry associates a mnemonic name (the issuer name) with the cryptographic material that is needed to verify signatures of tokens produced by the issuer; for example, an X.509 certificate.  
-  
+The value of the <xref:System.Security.Claims.Claim.Issuer%2A> property is a name that is taken from a list of well-known issuers maintained by the issuer name registry. The issuer name registry is an instance of a class that derives from the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class. The issuer name registry associates a mnemonic name (the issuer name) with the cryptographic material that is needed to verify signatures of tokens produced by the issuer; for example, an X.509 certificate.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -540,14 +540,14 @@ if (null != principal)
         <value>A name that refers to the original issuer of the claim.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Contains the name of the entity that originally issued the claim. This property is designed to facilitate scenarios where a claim may pass through multiple issuers before it is presented by the client to the RP application; such as federation scenarios.  
-  
- The value of the <xref:System.Security.Claims.Claim.OriginalIssuer%2A> property is a name that is taken from a list of well-known issuers maintained by the issuer name registry. The issuer name registry is an instance of a class that derives from the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class. The issuer name registry associates a mnemonic name (the issuer name) with the cryptographic material that is needed to verify signatures of tokens produced by the issuer; for example, an X.509 certificate.  
-  
- Except for delegation and federation scenarios, the <xref:System.Security.Claims.Claim.Issuer%2A> property and the <xref:System.Security.Claims.Claim.OriginalIssuer%2A> property will usually have the same value. If the value of the <xref:System.Security.Claims.Claim.OriginalIssuer%2A> property differs from the value of the <xref:System.Security.Claims.Claim.Issuer%2A> property, the claim was first issued by the original issuer and was subsequently re-issued by the issuer.  
-  
+Contains the name of the entity that originally issued the claim. This property is designed to facilitate scenarios where a claim may pass through multiple issuers before it is presented by the client to the RP application; such as federation scenarios.  
+ 
+The value of the <xref:System.Security.Claims.Claim.OriginalIssuer%2A> property is a name that is taken from a list of well-known issuers maintained by the issuer name registry. The issuer name registry is an instance of a class that derives from the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class. The issuer name registry associates a mnemonic name (the issuer name) with the cryptographic material that is needed to verify signatures of tokens produced by the issuer; for example, an X.509 certificate.  
+ 
+Except for delegation and federation scenarios, the <xref:System.Security.Claims.Claim.Issuer%2A> property and the <xref:System.Security.Claims.Claim.OriginalIssuer%2A> property will usually have the same value. If the value of the <xref:System.Security.Claims.Claim.OriginalIssuer%2A> property differs from the value of the <xref:System.Security.Claims.Claim.Issuer%2A> property, the claim was first issued by the original issuer and was subsequently re-issued by the issuer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -578,10 +578,10 @@ if (null != principal)
         <value>A dictionary that contains additional properties associated with the claim. The properties are represented as name-value pairs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Claims.Claim.Properties%2A> property provides a dictionary of name-value pairs that allows metadata or other information about the claim to be associated with it. For claims generated from SAML tokens, this dictionary may contain keys given by the constants in the <xref:System.Security.Claims.ClaimProperties> class.  
-  
+The <xref:System.Security.Claims.Claim.Properties%2A> property provides a dictionary of name-value pairs that allows metadata or other information about the claim to be associated with it. For claims generated from SAML tokens, this dictionary may contain keys given by the constants in the <xref:System.Security.Claims.ClaimProperties> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -612,10 +612,10 @@ if (null != principal)
         <value>The subject of the claim.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The subject is the entity about which the claim is asserted. Some typical examples are a user, an application or service, a device, or a computer. The subject is represented by a <xref:System.Security.Claims.ClaimsIdentity>, which contains a collection of claims that describe it.  
-  
+The subject is the entity about which the claim is asserted. Some typical examples are a user, an application or service, a device, or a computer. The subject is represented by a <xref:System.Security.Claims.ClaimsIdentity>, which contains a collection of claims that describe it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -647,10 +647,10 @@ if (null != principal)
         <returns>The string representation of this <see cref="T:System.Security.Claims.Claim" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string that is returned contains the values of the <xref:System.Security.Claims.Claim.Type%2A> and <xref:System.Security.Claims.Claim.Value%2A> properties in the following format:.”Type: Value”.  
-  
+The string that is returned contains the values of the <xref:System.Security.Claims.Claim.Type%2A> and <xref:System.Security.Claims.Claim.Value%2A> properties in the following format:.”Type: Value”.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -681,10 +681,10 @@ if (null != principal)
         <value>The claim type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Claims.Claim.Type%2A> property provides the semantic content of the claim, that is, it states what the claim is about. For example, a claim with a claim type of <xref:System.Security.Claims.ClaimTypes.GivenName> (“http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname”) represents a user’s first name. The claim type is typically a URI; however, you are not limited to any specific format other than that it must be representable as a string. The only general requirement is that the claim issuer and the claim consumer must agree about the meaning of the claim. Constants for the well-known claim types used by Windows Identity Foundation (WIF) are available through the <xref:System.Security.Claims.ClaimTypes> class. The claim value is provided by the <xref:System.Security.Claims.Claim.Value%2A> property.  
-  
+The <xref:System.Security.Claims.Claim.Type%2A> property provides the semantic content of the claim, that is, it states what the claim is about. For example, a claim with a claim type of <xref:System.Security.Claims.ClaimTypes.GivenName> (“http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname”) represents a user’s first name. The claim type is typically a URI; however, you are not limited to any specific format other than that it must be representable as a string. The only general requirement is that the claim issuer and the claim consumer must agree about the meaning of the claim. Constants for the well-known claim types used by Windows Identity Foundation (WIF) are available through the <xref:System.Security.Claims.ClaimTypes> class. The claim value is provided by the <xref:System.Security.Claims.Claim.Value%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -715,12 +715,12 @@ if (null != principal)
         <value>The claim value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of a claim is represented only as a string. For more complex value types, it is recommended that you use standard XML schema types to indicate how the value is meant to be serialized and deserialized to and from a string.  
-  
- The <xref:System.Security.Claims.Claim.ValueType%2A> property provides the underlying syntactic type information about the value. The <xref:System.Security.Claims.Claim.Type%2A> property provides the semantic information about the value; that is, it provides the meaning of the value and tells a claim consumer how to interpret it.  
-  
+The value of a claim is represented only as a string. For more complex value types, it is recommended that you use standard XML schema types to indicate how the value is meant to be serialized and deserialized to and from a string.  
+ 
+The <xref:System.Security.Claims.Claim.ValueType%2A> property provides the underlying syntactic type information about the value. The <xref:System.Security.Claims.Claim.Type%2A> property provides the semantic information about the value; that is, it provides the meaning of the value and tells a claim consumer how to interpret it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -751,10 +751,10 @@ if (null != principal)
         <value>The claim value type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Claims.Claim.ValueType%2A> property contains a string that identifies the type information of the value. This property can be used to understand the format of the value and to provide information about how to serialize and deserialize the value. If your solution requires complex value types, it is recommended that you use standard XML schema types in the <xref:System.Security.Claims.Claim.ValueType%2A> property to indicate how the <xref:System.Security.Claims.Claim.Value%2A> property is meant to be serialized and deserialized from a string.  
-  
+The <xref:System.Security.Claims.Claim.ValueType%2A> property contains a string that identifies the type information of the value. This property can be used to understand the format of the value and to provide information about how to serialize and deserialize the value. If your solution requires complex value types, it is recommended that you use standard XML schema types in the <xref:System.Security.Claims.Claim.ValueType%2A> property to indicate how the <xref:System.Security.Claims.Claim.Value%2A> property is meant to be serialized and deserialized from a string.  
+ 
  ]]></format>
         </remarks>
       </Docs>

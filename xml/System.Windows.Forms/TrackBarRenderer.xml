@@ -14,23 +14,23 @@
     <summary>Provides methods used to render a track bar control with visual styles. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TrackBarRenderer> class provides a set of `static` methods that can be used to render each part of a track bar control with the current visual style of the operating system. Rendering a control refers to drawing the user interface of a control. This is useful if you are drawing a custom control that should have the appearance of the current visual style.  
+The <xref:System.Windows.Forms.TrackBarRenderer> class provides a set of `static` methods that can be used to render each part of a track bar control with the current visual style of the operating system. Rendering a control refers to drawing the user interface of a control. This is useful if you are drawing a custom control that should have the appearance of the current visual style.  
+ 
+If visual styles are enabled in the operating system and visual styles are applied to the client area of application windows, the methods in this class will draw the track bar with the current visual style. Otherwise, the methods in this class will throw an <xref:System.InvalidOperationException>. To determine whether the members of this class can be used, you can check the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property.  
+ 
+This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=fullName> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar?displayProperty=fullName> class. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
+ 
   
- If visual styles are enabled in the operating system and visual styles are applied to the client area of application windows, the methods in this class will draw the track bar with the current visual style. Otherwise, the methods in this class will throw an <xref:System.InvalidOperationException>. To determine whether the members of this class can be used, you can check the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property.  
-  
- This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=fullName> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar?displayProperty=fullName> class. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a custom control that uses the <xref:System.Windows.Forms.TrackBarRenderer> methods to draw a horizontal track bar that responds to mouse clicks.  
-  
- [!code-cpp[System.Windows.Forms.TrackBarRenderer#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp#0)]
- [!code-csharp[System.Windows.Forms.TrackBarRenderer#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs#0)]
- [!code-vb[System.Windows.Forms.TrackBarRenderer#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb#0)]  
-  
+The following code example demonstrates how to create a custom control that uses the <xref:System.Windows.Forms.TrackBarRenderer> methods to draw a horizontal track bar that responds to mouse clicks.  
+ 
+[!code-cpp[System.Windows.Forms.TrackBarRenderer#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp#0)]
+[!code-csharp[System.Windows.Forms.TrackBarRenderer#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs#0)]
+[!code-vb[System.Windows.Forms.TrackBarRenderer#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <summary>Draws a downward-pointing track bar slider (also known as the thumb) with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
-  
+Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -100,10 +100,10 @@
         <summary>Draws a horizontal track bar slider (also known as the thumb) with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
-  
+Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -143,12 +143,12 @@
         <summary>Draws the specified number of horizontal track bar ticks with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
-  
- If width or height of the bounding rectangle or the number of ticks is less than or equal to zero, or `g` is `null`, <xref:System.Windows.Forms.TrackBarRenderer.DrawHorizontalTicks%2A> returns without rendering.  
-  
+Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+ 
+If width or height of the bounding rectangle or the number of ticks is less than or equal to zero, or `g` is `null`, <xref:System.Windows.Forms.TrackBarRenderer.DrawHorizontalTicks%2A> returns without rendering.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -184,19 +184,19 @@
         <summary>Draws the track for a horizontal track bar with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.TrackBarRenderer.DrawHorizontalTrack%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a track bar. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
-  
- [!code-cpp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp#4)]
- [!code-csharp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs#4)]
- [!code-vb[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb#4)]  
-  
+The following code example uses the <xref:System.Windows.Forms.TrackBarRenderer.DrawHorizontalTrack%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a track bar. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
+ 
+[!code-cpp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp#4)]
+[!code-csharp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs#4)]
+[!code-vb[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -234,10 +234,10 @@
         <summary>Draws a left-pointing track bar slider (also known as the thumb) with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
-  
+Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -275,10 +275,10 @@
         <summary>Draws a right-pointing track bar slider (also known as the thumb) with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
-  
+Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -316,19 +316,19 @@
         <summary>Draws an upward-pointing track bar slider (also known as the thumb) with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.TrackBarRenderer.DrawTopPointingThumb%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw an upward-pointing track bar slider. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
-  
- [!code-cpp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp#4)]
- [!code-csharp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs#4)]
- [!code-vb[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb#4)]  
-  
+The following code example uses the <xref:System.Windows.Forms.TrackBarRenderer.DrawTopPointingThumb%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw an upward-pointing track bar slider. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
+ 
+[!code-cpp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp#4)]
+[!code-csharp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs#4)]
+[!code-vb[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -366,10 +366,10 @@
         <summary>Draws a vertical track bar slider (also known as the thumb) with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
-  
+Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -409,12 +409,12 @@
         <summary>Draws the specified number of vertical track bar ticks with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If width or height of the bounding rectangle or the number of ticks is less than or equal to zero, or `g` is `null`, <xref:System.Windows.Forms.TrackBarRenderer.DrawVerticalTicks%2A> returns without rendering.  
-  
- Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
-  
+If width or height of the bounding rectangle or the number of ticks is less than or equal to zero, or `g` is `null`, <xref:System.Windows.Forms.TrackBarRenderer.DrawVerticalTicks%2A> returns without rendering.  
+ 
+Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -450,10 +450,10 @@
         <summary>Draws the track for a vertical track bar with visual styles.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
-  
+Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -490,12 +490,12 @@
         <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size, in pixels, of the slider.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The size of the slider is determined by the current visual style of the operating system.  
-  
- Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
-  
+The size of the slider is determined by the current visual style of the operating system.  
+ 
+Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -532,12 +532,12 @@
         <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size, in pixels, of the slider.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The size of the slider is determined by the current visual style of the operating system.  
-  
- Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
-  
+The size of the slider is determined by the current visual style of the operating system.  
+ 
+Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -574,12 +574,12 @@
         <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size, in pixels, of the slider.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The size of the slider is determined by the current visual style of the operating system.  
-  
- Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
-  
+The size of the slider is determined by the current visual style of the operating system.  
+ 
+Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -616,21 +616,21 @@
         <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size, in pixels, of the slider.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The size of the slider is determined by the current visual style of the operating system.  
+The size of the slider is determined by the current visual style of the operating system.  
+ 
+Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
+ 
   
- Before calling this method, you should verify that the value of the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property is `true`.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.TrackBarRenderer.GetTopPointingThumbSize%2A> method to determine the size of the rectangle used by the <xref:System.Windows.Forms.TrackBarRenderer.DrawTopPointingThumb%2A> method to draw the slider. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
-  
- [!code-cpp[System.Windows.Forms.TrackBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.TrackBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.TrackBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb#2)]  
-  
+The following code example uses the <xref:System.Windows.Forms.TrackBarRenderer.GetTopPointingThumbSize%2A> method to determine the size of the rectangle used by the <xref:System.Windows.Forms.TrackBarRenderer.DrawTopPointingThumb%2A> method to draw the slider. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
+ 
+[!code-cpp[System.Windows.Forms.TrackBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.TrackBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.TrackBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
@@ -662,19 +662,19 @@
           <see langword="true" /> if the user has enabled visual styles in the operating system and visual styles are applied to the client area of application windows; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is `false`, the methods of this class will throw an <xref:System.InvalidOperationException>.  
+If this property is `false`, the methods of this class will throw an <xref:System.InvalidOperationException>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property to determine whether to use the <xref:System.Windows.Forms.TrackBarRenderer> methods. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
-  
- [!code-cpp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp#4)]
- [!code-csharp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs#4)]
- [!code-vb[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb#4)]  
-  
+The following code example uses the <xref:System.Windows.Forms.TrackBarRenderer.IsSupported%2A> property to determine whether to use the <xref:System.Windows.Forms.TrackBarRenderer> methods. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TrackBarRenderer> class.  
+ 
+[!code-cpp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/cpp/form1.cpp#4)]
+[!code-csharp[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/CS/form1.cs#4)]
+[!code-vb[System.Windows.Forms.TrackBarRenderer#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TrackBarRenderer/VB/form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

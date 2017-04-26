@@ -11,10 +11,10 @@
     <summary>Defines the communication layer between a control and the Win32 API.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Control> class implements this interface internally.  
-  
+The <xref:System.Windows.Forms.Control> class implements this interface internally.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -40,10 +40,10 @@
         <summary>Sets the handle of the <see cref="T:System.Windows.Forms.IWindowTarget" /> to the specified handle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.IWindowTarget.OnHandleChange%2A> method is called when the window handle of the control has changed.  
-  
+The <xref:System.Windows.Forms.IWindowTarget.OnHandleChange%2A> method is called when the window handle of the control has changed.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

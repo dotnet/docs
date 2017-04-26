@@ -87,10 +87,10 @@
         <value>The size of the buffer used to transmit a part of the serialized message on the wire from the client or service. The default value is 8K.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value can be changed to provide better throughput based on average message sizes and exchange patterns.  
-  
+This value can be changed to provide better throughput based on average message sizes and exchange patterns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,16 +185,16 @@
         <value>The maximum number of bytes that are used to buffer incoming messages in memory. The default value is 65,536 bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property only applies to the headers of streamed messages.  
-  
- This value should be at least the maximum possible size of the SOAP headers, which are read in buffered mode.  
-  
- The value of this property must be less than or equal to MaxMessageSize and must be larger than the size of the headers of the message. Otherwise, the channel throws an exception.  
-  
- If you receive more data than you can buffer, the channel throws a <xref:System.ServiceModel.CommunicationException>, which contains <xref:System.ServiceModel.QuotaExceededException> as an inner exception.  
-  
+This property only applies to the headers of streamed messages.  
+ 
+This value should be at least the maximum possible size of the SOAP headers, which are read in buffered mode.  
+ 
+The value of this property must be less than or equal to MaxMessageSize and must be larger than the size of the headers of the message. Otherwise, the channel throws an exception.  
+ 
+If you receive more data than you can buffer, the channel throws a <xref:System.ServiceModel.CommunicationException>, which contains <xref:System.ServiceModel.QuotaExceededException> as an inner exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,10 +250,10 @@
         <value>The maximum number of pending messages the service can accept. The default value is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you anticipate high levels of simultaneous connections, you should adjust this property to handle higher levels of concurrent client connections.  
-  
+If you anticipate high levels of simultaneous connections, you should adjust this property to handle higher levels of concurrent client connections.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,10 +283,10 @@
         <value>The maximum number of pending connections.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is 100.  
-  
+The default value is 100.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,12 +14,12 @@
     <summary>Specifies a security property requirements specific to channel creation in the [!INCLUDE[indigo1](~/includes/indigo1-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Token requirement classes are used by a security token manager to specify what is required of a security token, such as the key size, key type, and how the key can be used. When a security token can be identified that matches the specified criteria, a SecurityTokenProvider and SecurityTokenAuthenticator can be created.  
-  
- This token requirement class specifies initiator-related requirements.  
-  
+Token requirement classes are used by a security token manager to specify what is required of a security token, such as the key size, key type, and how the key can be used. When a security token can be identified that matches the specified criteria, a SecurityTokenProvider and SecurityTokenAuthenticator can be created.  
+ 
+This token requirement class specifies initiator-related requirements.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,10 +38,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SupportSecurityContextCancellationProperty%2A> is set to `false`. <xref:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IsInitiatorProperty%2A> is set to `true`.  
-  
+<xref:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SupportSecurityContextCancellationProperty%2A> is set to `false`. <xref:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IsInitiatorProperty%2A> is set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,10 +82,10 @@
         <returns>A text representation of this instance of the class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method displays the property type name, and for each property, the property name and value.  
-  
+This method displays the property type name, and for each property, the property name and value.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -23,26 +23,26 @@
     <summary>A factory that creates channels of different types that are used by clients to send messages to variously configured service endpoints.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This generic class enables more advanced scenarios where there is a requirement to create a channel factory that can be used to create more than one type of channel.  
+This generic class enables more advanced scenarios where there is a requirement to create a channel factory that can be used to create more than one type of channel.  
+ 
+When adding behaviors programmatically, the behavior is added to the appropriate `Behaviors` property on the <xref:System.ServiceModel.ChannelFactory> prior to the creation of any channel. See the example section for a code sample.  
+ 
+Frequently client or calling applications (for example, middle-tier applications are client applications, too) using this type also have complex state management needs as well as performance needs. For more information about these scenarios, please see [Middle-Tier Client Applications](~/docs/framework/wcf/feature-details/middle-tier-client-applications.md).  
+ 
   
- When adding behaviors programmatically, the behavior is added to the appropriate `Behaviors` property on the <xref:System.ServiceModel.ChannelFactory> prior to the creation of any channel. See the example section for a code sample.  
-  
- Frequently client or calling applications (for example, middle-tier applications are client applications, too) using this type also have complex state management needs as well as performance needs. For more information about these scenarios, please see [Middle-Tier Client Applications](~/docs/framework/wcf/feature-details/middle-tier-client-applications.md).  
-  
-   
-  
+ 
 ## Examples  
- The following sample shows how to create a channel factory and use it to create and manage channels.  
-  
- [!code-csharp[S_UEChannels#21](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#21)]  
-  
- The following code example shows how to insert programmatically a client behavior prior to the creation of the channel object by the factory.  
-  
- [!code-csharp[ChannelFactoryBehaviors#10](~/samples/snippets/csharp/VS_Snippets_CFX/channelfactorybehaviors/cs/client.cs#10)]
- [!code-vb[ChannelFactoryBehaviors#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelfactorybehaviors/vb/client.vb#10)]  
-  
+The following sample shows how to create a channel factory and use it to create and manage channels.  
+ 
+[!code-csharp[S_UEChannels#21](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#21)]  
+ 
+The following code example shows how to insert programmatically a client behavior prior to the creation of the channel object by the factory.  
+ 
+[!code-csharp[ChannelFactoryBehaviors#10](~/samples/snippets/csharp/VS_Snippets_CFX/channelfactorybehaviors/cs/client.cs#10)]
+[!code-vb[ChannelFactoryBehaviors#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelfactorybehaviors/vb/client.vb#10)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
@@ -63,12 +63,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example shows how to create a new object of the <xref:System.ServiceModel.ChannelFactory%601> class with the `IRequestChannel` interface.  
-  
- [!code-csharp[S_UEChannels#24](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#24)]  
-  
+This example shows how to create a new object of the <xref:System.ServiceModel.ChannelFactory%601> class with the `IRequestChannel` interface.  
+ 
+[!code-csharp[S_UEChannels#24](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#24)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,10 +91,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when you want to pass the binding information programmatically rather than using an application configuration file.  
-  
+Use this constructor when you want to pass the binding information programmatically rather than using an application configuration file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,15 +117,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class that produces channels with a specified endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when you want to pass the service endpoint information programmatically rather than using an application configuration file.  
+Use this constructor when you want to pass the service endpoint information programmatically rather than using an application configuration file.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEChannels#25](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#25)]  
-  
+[!code-csharp[S_UEChannels#25](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#25)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="endpoint" /> is <see langword="null" />.</exception>
@@ -149,15 +149,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class with a specified endpoint configuration name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when there is more than one target endpoint in the application configuration file.  
+Use this constructor when there is more than one target endpoint in the application configuration file.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEChannels#23](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#23)]  
-  
+[!code-csharp[S_UEChannels#23](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#23)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -182,10 +182,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when you want to pass the channel type information programmatically rather than using an application configuration file. The `channelType` parameter must be an interface.  
-  
+Use this constructor when you want to pass the channel type information programmatically rather than using an application configuration file. The `channelType` parameter must be an interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="channelType" /> is <see langword="null" />.</exception>
@@ -212,15 +212,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class with a specified binding and endpoint address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when you want to pass the binding and address information programmatically rather than using an application configuration file.  
+Use this constructor when you want to pass the binding and address information programmatically rather than using an application configuration file.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEChannels#26](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#26)]  
-  
+[!code-csharp[S_UEChannels#26](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#26)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="binding" /> is <see langword="null" />.</exception>
@@ -246,15 +246,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class with a specified binding and remote address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when you want to pass the information about the remote address information with a string rather than as a typed object.  
+Use this constructor when you want to pass the information about the remote address information with a string rather than as a typed object.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEChannels#29](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#29)]  
-  
+[!code-csharp[S_UEChannels#29](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#29)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -281,10 +281,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ChannelFactory`1" /> class associated with a specified name for the endpoint configuration and remote address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UEChannels#24](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#24)]  
-  
+[!code-csharp[S_UEChannels#24](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#24)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -310,15 +310,15 @@
         <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a channel of type `TChannel`, the generic parameter for the class.  
+Creates a channel of type `TChannel`, the generic parameter for the class.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEChannels#30](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#30)]  
-  
+[!code-csharp[S_UEChannels#30](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#30)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,10 +345,10 @@
         <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UEChannels#27](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#27)]  
-  
+[!code-csharp[S_UEChannels#27](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#27)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -377,10 +377,10 @@
         <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UEChannels#21](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#21)]  
-  
+[!code-csharp[S_UEChannels#21](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#21)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ServiceModel.ChannelFactory" /> has duplex operations it does not support.</exception>
@@ -410,10 +410,10 @@
         <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UEChannels#31](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#31)]  
-  
+[!code-csharp[S_UEChannels#31](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#31)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ServiceModel.ChannelFactory" /> has duplex operations it does not support.</exception>
@@ -443,10 +443,10 @@
         <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UEChannels#28](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#28)]  
-  
+[!code-csharp[S_UEChannels#28](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#28)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -480,10 +480,10 @@
         <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_UEChannels#33](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#33)]  
-  
+[!code-csharp[S_UEChannels#33](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#33)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ServiceModel.ChannelFactory" /> has duplex operations it does not support.</exception>
@@ -736,10 +736,10 @@
         <summary>Creates a channel of a specified type to a specified endpoint address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a channel of type `TChannel`, the generic parameter for the class.  
-  
+Creates a channel of type `TChannel`, the generic parameter for the class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

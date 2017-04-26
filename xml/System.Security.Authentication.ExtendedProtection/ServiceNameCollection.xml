@@ -25,10 +25,10 @@
     <summary>The <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> class is a read-only collection of service principal names.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> class is used in an <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> when validating against a custom list of service provider names (SPNs).  
-  
+The <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> class is used in an <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> when validating against a custom list of service provider names (SPNs).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <summary>Initializes a new read-only instance of the <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> class based on an existing <see cref="T:System.Collections.ICollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> class that is initialized contains the specified values passed in the `items` parameter.  
-  
+The <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> class that is initialized contains the specified values passed in the `items` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -171,10 +171,10 @@
         <returns>A new <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> instance that contains the union of the existing <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> instance merged with the specified values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> class that is initialized contains the specified values passed in the `items` parameter.  
-  
+The <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> class that is initialized contains the specified values passed in the `items` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -213,10 +213,10 @@
         <returns>A new <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> instance that contains the union of the existing <see cref="T:System.Security.Authentication.ExtendedProtection.ServiceNameCollection" /> instance merged with the specified values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> class that is initialized contains the specified values passed in the `items` parameter.  
-  
+The <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> class that is initialized contains the specified values passed in the `items` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

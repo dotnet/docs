@@ -14,10 +14,10 @@
     <summary>Represents the <see langword="&lt;system.identityModel.services&gt;" /> section in a configuration file. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `<system.identityModel.services>` section configures authentication using WS-Federation protocol. It contains elements that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).  
-  
+The `<system.identityModel.services>` section configures authentication using WS-Federation protocol. It contains elements that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,10 +72,10 @@
         <value>The unnamed <see langword="&lt;federationConfiguration&gt;" /> element from the configuration file. <see langword="null" /> if the configuration file does not contain a <see langword="&lt;system.identityModel.services&gt;" /> section.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The unnamed `<federationConfiguration>` element does not have its `name` attribute set (<xref:System.IdentityModel.Services.Configuration.FederationConfigurationElement.Name%2A?displayProperty=fullName> property is `null`).  
-  
+The unnamed `<federationConfiguration>` element does not have its `name` attribute set (<xref:System.IdentityModel.Services.Configuration.FederationConfigurationElement.Name%2A?displayProperty=fullName> property is `null`).  
+ 
  ]]></format>
         </remarks>
       </Docs>

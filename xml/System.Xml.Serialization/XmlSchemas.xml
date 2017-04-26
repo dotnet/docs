@@ -186,18 +186,18 @@
         <summary>Processes the element and attribute names in the XML schemas and, optionally, validates the XML schemas.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following list identifies situations in which the <xref:System.Xml.Serialization.XmlSchemas.Compile%2A> method is called:  
-  
+The following list identifies situations in which the <xref:System.Xml.Serialization.XmlSchemas.Compile%2A> method is called:  
+ 
 -   By the <xref:System.Web.Services.Description.ServiceDescriptionReflector> class while creating <xref:System.Web.Services.Description.ServiceDescription> objects from classes that are identified as Web services.  
-  
+ 
 -   By the Wsdl.exe tool or the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class, while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document.  
-  
+ 
 -   By the Xsd.exe tool while generating XML schemas from types found in assemblies.  
-  
- Instead of calling the <xref:System.Xml.Serialization.XmlSchemas.Compile%2A> method directly, use the previously mentioned classes or tools.  
-  
+ 
+Instead of calling the <xref:System.Xml.Serialization.XmlSchemas.Compile%2A> method directly, use the previously mentioned classes or tools.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -346,10 +346,10 @@
         <returns>An <see cref="T:System.Collections.IList" /> implementation that contains the schemas.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method returns an <xref:System.Collections.ArrayList>.  
-  
+The method returns an <xref:System.Collections.ArrayList>.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -435,10 +435,10 @@
           <see langword="true" />, if the schemas have been compiled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can compile the schemas referenced in a <xref:System.Xml.Serialization.XmlSchemas> object by invoking the <xref:System.Xml.Serialization.XmlSchemas.Compile%2A> method.  
-  
+You can compile the schemas referenced in a <xref:System.Xml.Serialization.XmlSchemas> object by invoking the <xref:System.Xml.Serialization.XmlSchemas.Compile%2A> method.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -471,12 +471,12 @@
           <see langword="true" /> if the specified schema exists; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `IsDataSet` attribute comes from the namespace `urn:schemas-microsoft-com:xml-msdata`.  
-  
- The <xref:System.Xml.Serialization.XmlSchemas.IsDataSet%2A> method is called by the .NET Framework's XML serialization infrastructure and does not need to be called directly.  
-  
+The `IsDataSet` attribute comes from the namespace `urn:schemas-microsoft-com:xml-msdata`.  
+ 
+The <xref:System.Xml.Serialization.XmlSchemas.IsDataSet%2A> method is called by the .NET Framework's XML serialization infrastructure and does not need to be called directly.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

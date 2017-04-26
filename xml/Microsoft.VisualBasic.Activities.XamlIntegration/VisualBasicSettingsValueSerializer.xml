@@ -14,10 +14,10 @@
     <summary>Serializes <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instances to XAML.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer> facilitates the serialization of Visual Basic expressions to XAML.  
-  
+<xref:Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer> facilitates the serialization of Visual Basic expressions to XAML.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -63,10 +63,10 @@
           <see langword="true" /> if the specified <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance can be converted into a <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When called, this method promotes the specified <xref:Microsoft.VisualBasic.Activities.VisualBasicSettings> instance to namespace declarations and adds them to the serialization context.  
-  
+When called, this method promotes the specified <xref:Microsoft.VisualBasic.Activities.VisualBasicSettings> instance to namespace declarations and adds them to the serialization context.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

@@ -13,13 +13,13 @@
     <summary>Specifies how to draw the gradient outside a gradient brush's gradient vector or space.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following illustration shows the available spread methods and their effect on <xref:System.Windows.Media.LinearGradientBrush> and <xref:System.Windows.Media.RadialGradientBrush>. The red line indicates the gradient space. A <xref:System.Windows.Media.LinearGradientBrush> defines its gradient space with its <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> and <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> properties. A <xref:System.Windows.Media.RadialGradientBrush> defines its gradient space with its <xref:System.Windows.Media.RadialGradientBrush.Center%2A>, <xref:System.Windows.Media.RadialGradientBrush.RadiusX%2A>, and <xref:System.Windows.Media.RadialGradientBrush.RadiusY%2A> properties.  
-  
- ![Different GradientSpread settings](~/add/media/img-mmgraphics-gradientspread.png "Different GradientSpread settings")  
+The following illustration shows the available spread methods and their effect on <xref:System.Windows.Media.LinearGradientBrush> and <xref:System.Windows.Media.RadialGradientBrush>. The red line indicates the gradient space. A <xref:System.Windows.Media.LinearGradientBrush> defines its gradient space with its <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> and <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> properties. A <xref:System.Windows.Media.RadialGradientBrush> defines its gradient space with its <xref:System.Windows.Media.RadialGradientBrush.Center%2A>, <xref:System.Windows.Media.RadialGradientBrush.RadiusX%2A>, and <xref:System.Windows.Media.RadialGradientBrush.RadiusY%2A> properties.  
+ 
+![Different GradientSpread settings](~/add/media/img-mmgraphics-gradientspread.png "Different GradientSpread settings")  
 Gradient spread methods  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

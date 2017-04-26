@@ -84,10 +84,10 @@
         <value>A <see cref="T:System.Drawing.ContentAlignment" /> value that represents the annotation alignment to the anchor point.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The annotation must be anchored using either <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A>, or the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorY%2A> properties. Its <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.X%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.Y%2A> properties must be set to <xref:System.Double.NaN>.  
-  
+The annotation must be anchored using either <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A>, or the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorX%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorY%2A> properties. Its <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.X%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.Y%2A> properties must be set to <xref:System.Double.NaN>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
         <value>The annotation type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For internal use, should not be used.  
-  
+For internal use, should not be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -393,10 +393,10 @@
           <see langword="True" /> if the <see cref="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Width" /> and <see cref="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Height" /> of an annotation are always in chart relative coordinates, otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The width and height of an annotation may be set in relative chart or in axes coordinates. By default, relative chart coordinates are used. To use axes coordinates for the annotation size, set the <xref:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.IsSizeAlwaysRelative%2A> property to `false`. Then anchor the annotation to a data point or set the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisY%2A> properties.  
-  
+The width and height of an annotation may be set in relative chart or in axes coordinates. By default, relative chart coordinates are used. To use axes coordinates for the annotation size, set the <xref:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.IsSizeAlwaysRelative%2A> property to `false`. Then anchor the annotation to a data point or set the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisY%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>

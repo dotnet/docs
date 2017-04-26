@@ -170,14 +170,14 @@
         <value>Returns <see cref="T:System.Int32" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Count can be 0 in two cases:  
-  
+Count can be 0 in two cases:  
+ 
 1.  The WebSocket received an empty message. In this case the <xref:System.Net.WebSockets.WebSocketReceiveResult.CloseStatus%2A> property is None.  
-  
+ 
 2.  The WebSocket received a close message was received from the remote endpoint. In this case the <xref:System.Net.WebSockets.WebSocketReceiveResult.CloseStatus%2A> property is set to a value other than None.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

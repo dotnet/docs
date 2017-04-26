@@ -19,20 +19,20 @@
     <summary>Provides static methods used to draw user interface elements on activity designer surfaces. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates a way to use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class to draw a custom activity on the workflow design surface. A rounded rectangle is first drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method. Text is then drawn using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText%2A> and is placed at the location of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.TextRectangle%2A> of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. Additionally, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> associated with the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A> method of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class.  Finally, an expand button used by a <xref:System.Workflow.ComponentModel.CompositeActivity> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton%2A>.  
-  
- [!code-csharp[WF_Samples#78](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#78)]
- [!code-vb[WF_Samples#78](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#78)]  
-  
+The following example demonstrates a way to use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class to draw a custom activity on the workflow design surface. A rounded rectangle is first drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method. Text is then drawn using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText%2A> and is placed at the location of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.TextRectangle%2A> of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. Additionally, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> associated with the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A> method of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class.  Finally, an expand button used by a <xref:System.Workflow.ComponentModel.CompositeActivity> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton%2A>.  
+ 
+[!code-csharp[WF_Samples#78](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#78)]
+[!code-vb[WF_Samples#78](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#78)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -95,13 +95,13 @@
         <summary>Draws a button that is used to expand and collapse composite designers on the activity designer surface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates a way to use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class to draw a custom activity on the workflow design surface. A rounded rectangle is first drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method. Text is then drawn using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText%2A> and is placed at the location of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.TextRectangle%2A> of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. Additionally, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> associated with the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A> method of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class.  Finally, an expand button used by a <xref:System.Workflow.ComponentModel.CompositeActivity> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton%2A>.  
-  
- [!code-csharp[WF_Samples#78](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#78)]
- [!code-vb[WF_Samples#78](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#78)]  
-  
+The following example demonstrates a way to use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class to draw a custom activity on the workflow design surface. A rounded rectangle is first drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method. Text is then drawn using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText%2A> and is placed at the location of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.TextRectangle%2A> of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. Additionally, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> associated with the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A> method of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class.  Finally, an expand button used by a <xref:System.Workflow.ComponentModel.CompositeActivity> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton%2A>.  
+ 
+[!code-csharp[WF_Samples#78](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#78)]
+[!code-vb[WF_Samples#78](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#78)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -134,18 +134,18 @@
         <summary>Draws an image on the activity designer surface by using a <see cref="T:System.Drawing.Graphics" />, an <see cref="T:System.Drawing.Image" />, a <see cref="T:System.Drawing.Rectangle" />, and a <see cref="T:System.Workflow.ComponentModel.Design.DesignerContentAlignment" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you use this version of <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A>, the source rectangle is set to the size, in pixels, of the image, the transparency setting is set to 1.0f, and drawing grayscales is not allowed.  
+When you use this version of <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A>, the source rectangle is set to the size, in pixels, of the image, the transparency setting is set to 1.0f, and drawing grayscales is not allowed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates a way to use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class to draw a custom activity on the workflow design surface. A rounded rectangle is first drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method. Text is then drawn using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText%2A> and is placed at the location of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.TextRectangle%2A> of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. Additionally, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> associated with the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A> method of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class.  Finally, an expand button used by a <xref:System.Workflow.ComponentModel.CompositeActivity> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton%2A>.  
-  
- [!code-csharp[WF_Samples#78](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#78)]
- [!code-vb[WF_Samples#78](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#78)]  
-  
+The following example demonstrates a way to use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class to draw a custom activity on the workflow design surface. A rounded rectangle is first drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method. Text is then drawn using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText%2A> and is placed at the location of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.TextRectangle%2A> of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. Additionally, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> associated with the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A> method of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class.  Finally, an expand button used by a <xref:System.Workflow.ComponentModel.CompositeActivity> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton%2A>.  
+ 
+[!code-csharp[WF_Samples#78](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#78)]
+[!code-vb[WF_Samples#78](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#78)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -218,18 +218,18 @@
         <summary>Draws a rounded rectangle on the activity designer surface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> uses the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.GetRoundedRectanglePath%2A> method to obtain the path to draw.  
+<xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> uses the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.GetRoundedRectanglePath%2A> method to obtain the path to draw.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates a way to use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class to draw a custom activity on the workflow design surface. A rounded rectangle is first drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method. Text is then drawn using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText%2A> and is placed at the location of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.TextRectangle%2A> of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. Additionally, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> associated with the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A> method of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class.  Finally, an expand button used by a <xref:System.Workflow.ComponentModel.CompositeActivity> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton%2A>.  
-  
- [!code-csharp[WF_Samples#78](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#78)]
- [!code-vb[WF_Samples#78](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#78)]  
-  
+The following example demonstrates a way to use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class to draw a custom activity on the workflow design surface. A rounded rectangle is first drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method. Text is then drawn using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText%2A> and is placed at the location of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.TextRectangle%2A> of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. Additionally, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> associated with the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A> method of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class.  Finally, an expand button used by a <xref:System.Workflow.ComponentModel.CompositeActivity> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton%2A>.  
+ 
+[!code-csharp[WF_Samples#78](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#78)]
+[!code-vb[WF_Samples#78](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#78)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -268,13 +268,13 @@
         <summary>Draws text on the activity designer surface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates a way to use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class to draw a custom activity on the workflow design surface. A rounded rectangle is first drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method. Text is then drawn using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText%2A> and is placed at the location of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.TextRectangle%2A> of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. Additionally, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> associated with the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A> method of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class.  Finally, an expand button used by a <xref:System.Workflow.ComponentModel.CompositeActivity> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton%2A>.  
-  
- [!code-csharp[WF_Samples#78](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#78)]
- [!code-vb[WF_Samples#78](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#78)]  
-  
+The following example demonstrates a way to use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class to draw a custom activity on the workflow design surface. A rounded rectangle is first drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method. Text is then drawn using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText%2A> and is placed at the location of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.TextRectangle%2A> of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. Additionally, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> associated with the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A> method of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class.  Finally, an expand button used by a <xref:System.Workflow.ComponentModel.CompositeActivity> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton%2A>.  
+ 
+[!code-csharp[WF_Samples#78](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#78)]
+[!code-vb[WF_Samples#78](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#78)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -304,10 +304,10 @@
         <returns>A <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> that draws the rounded path of the specified rectangle.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method uses <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.GetRoundedRectanglePath%2A> to obtain the path to draw.  
-  
+The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method uses <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.GetRoundedRectanglePath%2A> to obtain the path to draw.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

@@ -25,10 +25,10 @@
     <summary>Provides the base class for ASP.NET mobile user controls. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class inherits from the <xref:System.Web.UI.UserControl> class. User controls are instantiated and cached in ways similar to <xref:System.Web.UI.Page> objects. ASP.NET mobile user controls must be contained in a mobile page in order to be rendered.  
-  
+This class inherits from the <xref:System.Web.UI.UserControl> class. User controls are instantiated and cached in ways similar to <xref:System.Web.UI.Page> objects. ASP.NET mobile user controls must be contained in a mobile page in order to be rendered.  
+ 
  ]]></format>
     </remarks>
   </Docs>

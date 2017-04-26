@@ -14,10 +14,10 @@
     <summary>Contains arguments for the <see cref="E:System.Windows.DragDrop.QueryContinueDrag" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.DragDrop.QueryContinueDrag> event occurs during a drag-and-drop operation and allows the drag source to determine whether the drag-and-drop operation should be canceled.  
-  
+The <xref:System.Windows.DragDrop.QueryContinueDrag> event occurs during a drag-and-drop operation and allows the drag source to determine whether the drag-and-drop operation should be canceled.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <value>A member of the <see cref="T:System.Windows.DragAction" /> enumeration indicating the current status of the associated drag-and-drop operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the <xref:System.Windows.DragDrop.QueryContinueDrag> event sets the <xref:System.Windows.QueryContinueDragEventArgs.Action%2A> property to `Cancel` if the ESC key is pressed, and sets <xref:System.Windows.QueryContinueDragEventArgs.Action%2A> to `Drop` if the left, middle, or right mouse button is released.  
-  
+By default, the <xref:System.Windows.DragDrop.QueryContinueDrag> event sets the <xref:System.Windows.QueryContinueDragEventArgs.Action%2A> property to `Cancel` if the ESC key is pressed, and sets <xref:System.Windows.QueryContinueDragEventArgs.Action%2A> to `Drop` if the left, middle, or right mouse button is released.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -64,10 +64,10 @@
         <value>A Boolean value indicating whether the ESC key has been pressed. <see langword="true" /> if the ESC was pressed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the <xref:System.Windows.DragDrop.QueryContinueDrag> event sets the <xref:System.Windows.QueryContinueDragEventArgs.Action%2A> property to `Cancel` if the ESC key is pressed.  
-  
+By default, the <xref:System.Windows.DragDrop.QueryContinueDrag> event sets the <xref:System.Windows.QueryContinueDragEventArgs.Action%2A> property to `Cancel` if the ESC key is pressed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <value>One or more members of the <see cref="T:System.Windows.DragDropKeyStates" /> flag enumeration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The effect of a drag-and-drop operation can be adjusted depending on the state of a particular key. For example, data may either be copied or moved depending on whether the CTRL or SHIFT keys are pressed during the drag-and-drop operation.  
-  
+The effect of a drag-and-drop operation can be adjusted depending on the state of a particular key. For example, data may either be copied or moved depending on whether the CTRL or SHIFT keys are pressed during the drag-and-drop operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

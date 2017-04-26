@@ -14,10 +14,10 @@
     <summary>Provides type conversion analogous behavior for <see cref="T:System.Windows.Setter" />, <see cref="T:System.Windows.Trigger" /> and <see cref="T:System.Windows.Condition" /> types that deal with <see cref="T:System.Windows.DependencyProperty" /> values. This converter only supports <see langword="ConvertFrom" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Markup.SetterTriggerConditionValueConverter> is not intended for use by user code, it supports WPF feature areas such as processing <xref:System.Windows.Setter>, <xref:System.Windows.Trigger> and <xref:System.Windows.Condition> in templates.  
-  
+<xref:System.Windows.Markup.SetterTriggerConditionValueConverter> is not intended for use by user code, it supports WPF feature areas such as processing <xref:System.Windows.Setter>, <xref:System.Windows.Trigger> and <xref:System.Windows.Condition> in templates.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
           <see langword="true" /> if the converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation only returns `true` for `sourceType` of <xref:System.String> or a byte array.  
-  
+This implementation only returns `true` for `sourceType` of <xref:System.String> or a byte array.  
+ 
  ]]></format>
         </remarks>
       </Docs>

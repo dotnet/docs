@@ -19,21 +19,21 @@
     <summary>Controls access to network information and traffic statistics for the local computer. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This permission is used to secure data returned by the classes in the <xref:System.Net.NetworkInformation> namespace.  
+This permission is used to secure data returned by the classes in the <xref:System.Net.NetworkInformation> namespace.  
+ 
+For declarative security, use the <xref:System.Net.NetworkInformation.NetworkInformationPermissionAttribute> class.  
+ 
   
- For declarative security, use the <xref:System.Net.NetworkInformation.NetworkInformationPermissionAttribute> class.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an unrestricted permission object.  
-  
- [!code-cpp[NclNetworkInfoPerms#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#1)]
- [!code-csharp[NclNetworkInfoPerms#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#1)]
- [!code-vb[NclNetworkInfoPerms#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#1)]  
-  
+The following example creates an unrestricted permission object.  
+ 
+[!code-cpp[NclNetworkInfoPerms#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#1)]
+[!code-csharp[NclNetworkInfoPerms#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#1)]
+[!code-vb[NclNetworkInfoPerms#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,19 +56,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.NetworkInformationPermission" /> class using the specified <see cref="T:System.Net.NetworkInformation.NetworkInformationAccess" /> value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The permission created by this constructor can be used to secure access to network information.  
+The permission created by this constructor can be used to secure access to network information.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a permission object that controls access to network information.  
-  
- [!code-cpp[NclNetworkInfoPerms#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#3)]
- [!code-csharp[NclNetworkInfoPerms#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#3)]
- [!code-vb[NclNetworkInfoPerms#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#3)]  
-  
+The following example creates a permission object that controls access to network information.  
+ 
+[!code-cpp[NclNetworkInfoPerms#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#3)]
+[!code-csharp[NclNetworkInfoPerms#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#3)]
+[!code-vb[NclNetworkInfoPerms#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,19 +91,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.NetworkInformationPermission" /> class with the specified <see cref="T:System.Security.Permissions.PermissionState" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The permission created by this constructor can be used to secure access to network information.  
+The permission created by this constructor can be used to secure access to network information.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an unrestricted permission object.  
-  
- [!code-cpp[NclNetworkInfoPerms#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#1)]
- [!code-csharp[NclNetworkInfoPerms#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#1)]
- [!code-vb[NclNetworkInfoPerms#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#1)]  
-  
+The following example creates an unrestricted permission object.  
+ 
+[!code-cpp[NclNetworkInfoPerms#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#1)]
+[!code-csharp[NclNetworkInfoPerms#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#1)]
+[!code-vb[NclNetworkInfoPerms#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,19 +126,19 @@
         <value>One of the <see cref="T:System.Net.NetworkInformation.NetworkInformationAccess" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Net.NetworkInformation.NetworkInformationPermission> created with <xref:System.Security.Permissions.PermissionState?displayProperty=fullName> is given <xref:System.Net.NetworkInformation.NetworkInformationAccess> &#124; <xref:System.Net.NetworkInformation.NetworkInformationAccess> access. A <xref:System.Net.NetworkInformation.NetworkInformationPermission> created with <xref:System.Security.Permissions.PermissionState?displayProperty=fullName> is given <xref:System.Net.NetworkInformation.NetworkInformationAccess> access.  
+A <xref:System.Net.NetworkInformation.NetworkInformationPermission> created with <xref:System.Security.Permissions.PermissionState?displayProperty=fullName> is given <xref:System.Net.NetworkInformation.NetworkInformationAccess> &#124; <xref:System.Net.NetworkInformation.NetworkInformationAccess> access. A <xref:System.Net.NetworkInformation.NetworkInformationPermission> created with <xref:System.Security.Permissions.PermissionState?displayProperty=fullName> is given <xref:System.Net.NetworkInformation.NetworkInformationAccess> access.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Net.NetworkInformation.NetworkInformationPermission>, adds a <xref:System.Net.NetworkInformation.NetworkInformationAccess> value to it, and displays the value of this property.  
-  
- [!code-cpp[NclNetworkInfoPerms#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#7)]
- [!code-csharp[NclNetworkInfoPerms#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#7)]
- [!code-vb[NclNetworkInfoPerms#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#7)]  
-  
+The following code example creates a <xref:System.Net.NetworkInformation.NetworkInformationPermission>, adds a <xref:System.Net.NetworkInformation.NetworkInformationAccess> value to it, and displays the value of this property.  
+ 
+[!code-cpp[NclNetworkInfoPerms#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#7)]
+[!code-csharp[NclNetworkInfoPerms#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#7)]
+[!code-vb[NclNetworkInfoPerms#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,19 +164,19 @@
         <summary>Adds the specified value to this permission.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to modify access to network information by adding to the state of the current permission.  
+Use this method to modify access to network information by adding to the state of the current permission.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an empty permission object and then adds to it.  
-  
- [!code-cpp[NclNetworkInfoPerms#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#7)]
- [!code-csharp[NclNetworkInfoPerms#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#7)]
- [!code-vb[NclNetworkInfoPerms#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#7)]  
-  
+The following example creates an empty permission object and then adds to it.  
+ 
+[!code-cpp[NclNetworkInfoPerms#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#7)]
+[!code-csharp[NclNetworkInfoPerms#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#7)]
+[!code-vb[NclNetworkInfoPerms#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,19 +200,19 @@
         <returns>A <see cref="T:System.Net.NetworkInformation.NetworkInformationPermission" /> that is identical to the current permission</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A copy of a permission represents the same access to resources as the original permission.  
+A copy of a permission represents the same access to resources as the original permission.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates copy of a permission object.  
-  
- [!code-cpp[NclNetworkInfoPerms#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#4)]
- [!code-csharp[NclNetworkInfoPerms#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#4)]
- [!code-vb[NclNetworkInfoPerms#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#4)]  
-  
+The following example creates copy of a permission object.  
+ 
+[!code-cpp[NclNetworkInfoPerms#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#4)]
+[!code-csharp[NclNetworkInfoPerms#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#4)]
+[!code-vb[NclNetworkInfoPerms#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,10 +238,10 @@
         <summary>Sets the state of this permission using the specified XML encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used by the security system and is not normally called by application code.  
-  
+This method is used by the security system and is not normally called by application code.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -280,19 +280,19 @@
         <returns>A <see cref="T:System.Net.NetworkInformation.NetworkInformationPermission" /> that represents the intersection of the current permission and the specified permission. This new permission is <see langword="null" /> if the intersection is empty or <paramref name="target" /> is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The intersection of two permissions is a permission that describes the state they both describe in common. Only a demand that passes both original permissions will pass the intersection.  
+The intersection of two permissions is a permission that describes the state they both describe in common. Only a demand that passes both original permissions will pass the intersection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a permission object that is the intersection of existing permission objects.  
-  
- [!code-cpp[NclNetworkInfoPerms#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#6)]
- [!code-csharp[NclNetworkInfoPerms#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#6)]
- [!code-vb[NclNetworkInfoPerms#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#6)]  
-  
+The following example creates a permission object that is the intersection of existing permission objects.  
+ 
+[!code-cpp[NclNetworkInfoPerms#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#6)]
+[!code-csharp[NclNetworkInfoPerms#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#6)]
+[!code-vb[NclNetworkInfoPerms#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -322,19 +322,19 @@
           <see langword="true" /> if the current permission is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current permission is a subset of the specified permission if the current permission specifies a state that is wholly contained by the specified permission. If this method returns true, the current permission represents no more access to the protected resource than does the specified permission.  
+The current permission is a subset of the specified permission if the current permission specifies a state that is wholly contained by the specified permission. If this method returns true, the current permission represents no more access to the protected resource than does the specified permission.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the subset relationship between two permissions.  
-  
- [!code-cpp[NclNetworkInfoPerms#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#5)]
- [!code-csharp[NclNetworkInfoPerms#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#5)]
- [!code-vb[NclNetworkInfoPerms#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#5)]  
-  
+The following code example displays the subset relationship between two permissions.  
+ 
+[!code-cpp[NclNetworkInfoPerms#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#5)]
+[!code-csharp[NclNetworkInfoPerms#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#5)]
+[!code-vb[NclNetworkInfoPerms#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,19 +359,19 @@
           <see langword="true" /> if the current permission is unrestricted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An unrestricted permission is created using the <xref:System.Net.NetworkInformation.NetworkInformationPermission.%23ctor%2A> constructor.  
+An unrestricted permission is created using the <xref:System.Net.NetworkInformation.NetworkInformationPermission.%23ctor%2A> constructor.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a permission object and displays its state.  
-  
- [!code-cpp[NclNetworkInfoPerms#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#2)]
- [!code-csharp[NclNetworkInfoPerms#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#2)]
- [!code-vb[NclNetworkInfoPerms#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#2)]  
-  
+The following example creates a permission object and displays its state.  
+ 
+[!code-cpp[NclNetworkInfoPerms#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#2)]
+[!code-csharp[NclNetworkInfoPerms#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#2)]
+[!code-vb[NclNetworkInfoPerms#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,10 +395,10 @@
         <returns>A <see cref="T:System.Security.SecurityElement" /> that contains the XML encoding of the current permission.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used by the security system and is not normally called by application code.  
-  
+This method is used by the security system and is not normally called by application code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -425,19 +425,19 @@
         <returns>A new permission that represents the union of the current permission and the specified permission.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.NetworkInformation.NetworkInformationPermission.Union%2A> method returns a permission that represents all the states represented by both the current permission and the specified permission. Any demand that passes either permission passes their union.  
+The <xref:System.Net.NetworkInformation.NetworkInformationPermission.Union%2A> method returns a permission that represents all the states represented by both the current permission and the specified permission. Any demand that passes either permission passes their union.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a permission object that is the union of existing permission objects.  
-  
- [!code-cpp[NclNetworkInfoPerms#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#5)]
- [!code-csharp[NclNetworkInfoPerms#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#5)]
- [!code-vb[NclNetworkInfoPerms#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#5)]  
-  
+The following example creates a permission object that is the union of existing permission objects.  
+ 
+[!code-cpp[NclNetworkInfoPerms#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetworkInfoPerms/CPP/NclNetworkInfoPerms.cpp#5)]
+[!code-csharp[NclNetworkInfoPerms#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetworkInfoPerms/CS/permissionexample.cs#5)]
+[!code-vb[NclNetworkInfoPerms#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetworkInfoPerms/VB/permissionexample.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

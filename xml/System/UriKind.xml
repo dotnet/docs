@@ -25,10 +25,10 @@
     <summary>Defines the kinds of <see cref="T:System.Uri" />s for the <see cref="M:System.Uri.IsWellFormedUriString(System.String,System.UriKind)" /> and several <see cref="Overload:System.Uri.#ctor" /> methods.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Absolute URIs are characterized by a complete reference to the resource (example: http://www.contoso.com/index.html), while a relative Uri depends on a previously defined base URI (example: /index.html).  
-  
+Absolute URIs are characterized by a complete reference to the resource (example: http://www.contoso.com/index.html), while a relative Uri depends on a previously defined base URI (example: /index.html).  
+ 
  ]]></format>
     </remarks>
   </Docs>

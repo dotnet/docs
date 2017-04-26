@@ -14,10 +14,10 @@
     <summary>Allows the compilation process to be customized or controlled.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Compilation.ControlBuilderInterceptor> class is an abstract class. A type that extends this class can be registered in the web.config file using a `ControlBuilderInterceptorType` property.  
-  
+The <xref:System.Web.Compilation.ControlBuilderInterceptor> class is an abstract class. A type that extends this class can be registered in the web.config file using a `ControlBuilderInterceptorType` property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -104,10 +104,10 @@
         <summary>Called before the <see cref="T:System.Web.UI.ControlBuilder" /> of an element in the markup is initialized.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `parentBuilder` parameter is typically the builder corresponding to the parent element in the markup.  
-  
+The `parentBuilder` parameter is typically the builder corresponding to the parent element in the markup.  
+ 
  ]]></format>
         </remarks>
       </Docs>

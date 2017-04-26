@@ -18,15 +18,15 @@
     <summary>Represents an object cache and provides the base methods and properties for accessing the object cache.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache> type is the primary type for the in-memory object cache. To develop a custom cache implementation, you derive from the <xref:System.Runtime.Caching.ObjectCache> class.  
-  
+The <xref:System.Runtime.Caching.ObjectCache> type is the primary type for the in-memory object cache. To develop a custom cache implementation, you derive from the <xref:System.Runtime.Caching.ObjectCache> class.  
+ 
 > [!NOTE]
 >  The <xref:System.Runtime.Caching.ObjectCache> class is new as of the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].  
-  
- The built-in <xref:System.Runtime.Caching.MemoryCache> class derives from the <xref:System.Runtime.Caching.ObjectCache> class. The <xref:System.Runtime.Caching.MemoryCache> class is the only concrete object cache implementation in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] that derives from the <xref:System.Runtime.Caching.ObjectCache> class.  
-  
+ 
+The built-in <xref:System.Runtime.Caching.MemoryCache> class derives from the <xref:System.Runtime.Caching.ObjectCache> class. The <xref:System.Runtime.Caching.MemoryCache> class is the only concrete object cache implementation in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] that derives from the <xref:System.Runtime.Caching.ObjectCache> class.  
+ 
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
@@ -83,10 +83,10 @@
           <see langword="true" /> if insertion succeeded, or <see langword="false" /> if there is an already an entry in the cache that has the same key as <paramref name="item" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads are virtual (not abstract) on the <xref:System.Runtime.Caching.ObjectCache> class, because the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method internally calls <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A>. This reduces the number of method overloads that a cache implementer has to provide. If a cache implementation does not require any special behavior for the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method, it can just implement the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads.  
-  
+The <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads are virtual (not abstract) on the <xref:System.Runtime.Caching.ObjectCache> class, because the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method internally calls <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A>. This reduces the number of method overloads that a cache implementer has to provide. If a cache implementation does not require any special behavior for the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method, it can just implement the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
           <see langword="true" /> if insertion succeeded, or <see langword="false" /> if there is an already an entry in the cache that has the same key as <paramref name="key" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads are virtual (not abstract) on the <xref:System.Runtime.Caching.ObjectCache> class, because the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method internally calls <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A>. This reduces the number of method overloads that a cache implementer has to provide. If a cache implementation does not require any special behavior for the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method, it can just implement the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads.  
-  
+The <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads are virtual (not abstract) on the <xref:System.Runtime.Caching.ObjectCache> class, because the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method internally calls <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A>. This reduces the number of method overloads that a cache implementer has to provide. If a cache implementation does not require any special behavior for the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method, it can just implement the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
           <see langword="true" /> if the insertion try succeeds, or <see langword="false" /> if there is an already an entry in the cache with the same key as <paramref name="key" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads are virtual (not abstract) on the <xref:System.Runtime.Caching.ObjectCache> class, because the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method internally calls <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A>. This reduces the number of method overloads that a cache implementer has to provide. If a cache implementation does not require any special behavior for the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method, it can just implement the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads.  
-  
+The <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads are virtual (not abstract) on the <xref:System.Runtime.Caching.ObjectCache> class, because the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method internally calls <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A>. This reduces the number of method overloads that a cache implementer has to provide. If a cache implementation does not require any special behavior for the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method, it can just implement the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,10 +214,10 @@
         <returns>If a cache entry with the same key exists, the specified cache entry's value; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%28System.String%2CSystem.Object%2CSystem.DateTimeOffset%2CSystem.String%29> method overload returns an object value, not a <xref:System.Runtime.Caching.CacheItem> object.  
-  
+This <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%28System.String%2CSystem.Object%2CSystem.DateTimeOffset%2CSystem.String%29> method overload returns an object value, not a <xref:System.Runtime.Caching.CacheItem> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,10 +249,10 @@
         <returns>If a cache entry with the same key exists, the specified cache entry's value; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%28System.String%2CSystem.Object%2CSystem.Runtime.Caching.CacheItemPolicy%2CSystem.String%29> method returns an object value, not a <xref:System.Runtime.Caching.CacheItem> object.  
-  
+The <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%28System.String%2CSystem.Object%2CSystem.Runtime.Caching.CacheItemPolicy%2CSystem.String%29> method returns an object value, not a <xref:System.Runtime.Caching.CacheItem> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -305,15 +305,15 @@
         <returns>A change monitor that monitors cache entries in the cache.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a derived <xref:System.Runtime.Caching.ObjectCache> class overrides the base <xref:System.Runtime.Caching.ObjectCache.CreateCacheEntryChangeMonitor%2A> method, the cache implementation must create a <xref:System.Runtime.Caching.CacheEntryChangeMonitor> object. This specialized change monitor notifies callers when there are changes to the cache entries that are specified in the `keys` parameter. For example, if a monitored item in the `keys` parameter is updated or removed from the cache, the change monitor created by this method triggers an event.  
-  
- If a cache implementation supports named cache regions, a string value can be specified as the `regionName` parameter. Otherwise, the parameter defaults to `null`.  
-  
+When a derived <xref:System.Runtime.Caching.ObjectCache> class overrides the base <xref:System.Runtime.Caching.ObjectCache.CreateCacheEntryChangeMonitor%2A> method, the cache implementation must create a <xref:System.Runtime.Caching.CacheEntryChangeMonitor> object. This specialized change monitor notifies callers when there are changes to the cache entries that are specified in the `keys` parameter. For example, if a monitored item in the `keys` parameter is updated or removed from the cache, the change monitor created by this method triggers an event.  
+ 
+If a cache implementation supports named cache regions, a string value can be specified as the `regionName` parameter. Otherwise, the parameter defaults to `null`.  
+ 
 > [!NOTE]
 >  Not all cache implementations support cache-entry change monitors. To determine whether your cache implementation supports <xref:System.Runtime.Caching.CacheEntryChangeMonitor> objects, see the documentation for the specific cache implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -383,12 +383,12 @@
         <returns>The cache entry that is identified by <paramref name="key" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overload exists because some cache implementations might extend the <xref:System.Runtime.Caching.CacheItem> class. In that case, the <xref:System.Runtime.Caching.ObjectCache.Get%28System.String%2CSystem.String%29> method overload will not necessarily return all the information about cached data. However, the <xref:System.Runtime.Caching.ObjectCache.GetCacheItem%28System.String%2CSystem.String%29> method overload enables custom caches to return more than just the cache value.  
-  
- The <xref:System.Runtime.Caching.ObjectCache.GetCacheItem%28System.String%2CSystem.String%29> method is like the <xref:System.Runtime.Caching.ObjectCache.Get%28System.String%2CSystem.String%29> method, except that the <xref:System.Runtime.Caching.ObjectCache.GetCacheItem%28System.String%2CSystem.String%29> method returns return the cache entry as a <xref:System.Runtime.Caching.CacheItem> instance.  
-  
+This method overload exists because some cache implementations might extend the <xref:System.Runtime.Caching.CacheItem> class. In that case, the <xref:System.Runtime.Caching.ObjectCache.Get%28System.String%2CSystem.String%29> method overload will not necessarily return all the information about cached data. However, the <xref:System.Runtime.Caching.ObjectCache.GetCacheItem%28System.String%2CSystem.String%29> method overload enables custom caches to return more than just the cache value.  
+ 
+The <xref:System.Runtime.Caching.ObjectCache.GetCacheItem%28System.String%2CSystem.String%29> method is like the <xref:System.Runtime.Caching.ObjectCache.Get%28System.String%2CSystem.String%29> method, except that the <xref:System.Runtime.Caching.ObjectCache.GetCacheItem%28System.String%2CSystem.String%29> method returns return the cache entry as a <xref:System.Runtime.Caching.CacheItem> instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -433,15 +433,15 @@
         <returns>The enumerator object that provides access to the cache entries in the cache.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Cache implementers can override and extend this method to provide a custom means of iterating through a collection of cache entries.  
-  
+Cache implementers can override and extend this method to provide a custom means of iterating through a collection of cache entries.  
+ 
 > [!NOTE]
 >  Returning an enumerator is typically a more expensive operation than returning the entire cache entry.  
-  
- This method is called by the explicit interface implementations that the <xref:System.Runtime.Caching.ObjectCache> class has for the <xref:System.Collections.IEnumerable.GetEnumerator%2A> and <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> methods.  
-  
+ 
+This method is called by the explicit interface implementations that the <xref:System.Runtime.Caching.ObjectCache> class has for the <xref:System.Collections.IEnumerable.GetEnumerator%2A> and <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -469,12 +469,12 @@
         <returns>A dictionary of key/value pairs that represent cache entries.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.GetValues%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method overload is a performance optimization for distributed caches that support fetching multiple cache entries from the cache during a single network call.  
-  
- Although a caller can pass one or more keys to the method, there is no guarantee that all keys represent entries in the cache. Therefore, the returned dictionary might contain fewer items than the number of keys that were passed to the method.  
-  
+The <xref:System.Runtime.Caching.ObjectCache.GetValues%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method overload is a performance optimization for distributed caches that support fetching multiple cache entries from the cache during a single network call.  
+ 
+Although a caller can pass one or more keys to the method, there is no guarantee that all keys represent entries in the cache. Therefore, the returned dictionary might contain fewer items than the number of keys that were passed to the method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -508,12 +508,12 @@
         <returns>A dictionary of key/value pairs that represent cache entries.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.GetValues%2A?displayProperty=fullName> method overload is like the <xref:System.Runtime.Caching.ObjectCache.GetValues%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method overload, but lets you pass the named region by using optional parameter syntax that is supported by managed languages such as C#.  
-  
- This method is a virtual method because the <xref:System.Runtime.Caching.ObjectCache> class provides a default implementation that passes the `params` array to the <xref:System.Runtime.Caching.ObjectCache.GetValues%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method overload.  
-  
+The <xref:System.Runtime.Caching.ObjectCache.GetValues%2A?displayProperty=fullName> method overload is like the <xref:System.Runtime.Caching.ObjectCache.GetValues%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method overload, but lets you pass the named region by using optional parameter syntax that is supported by managed languages such as C#.  
+ 
+This method is a virtual method because the <xref:System.Runtime.Caching.ObjectCache> class provides a default implementation that passes the `params` array to the <xref:System.Runtime.Caching.ObjectCache.GetValues%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -543,21 +543,21 @@
         <value>A reference to a cache-aware managed hosting environment.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.Host%2A> property is intended for use by [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] host environments and by cache implementations that implement behavior that depends on the .NET Framework host environment.  
-  
- The following table lists the set of host environment services that might be available from a managed hosting environment and that are available to <xref:System.Runtime.Caching.ObjectCache> implementations through the <xref:System.Runtime.Caching.ObjectCache.Host%2A> property:  
-  
+The <xref:System.Runtime.Caching.ObjectCache.Host%2A> property is intended for use by [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] host environments and by cache implementations that implement behavior that depends on the .NET Framework host environment.  
+ 
+The following table lists the set of host environment services that might be available from a managed hosting environment and that are available to <xref:System.Runtime.Caching.ObjectCache> implementations through the <xref:System.Runtime.Caching.ObjectCache.Host%2A> property:  
+ 
 |Service|Description|  
 |-------------|-----------------|  
 |<xref:System.Runtime.Caching.Hosting.IApplicationIdentifier>|Lets host environments provide application domain identifiers that might be needed by a cache implementation for features such as identifying performance counters.|  
 |<xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem>|Lets host environments provide a custom file-change notification system, instead of using the one provided in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].|  
 |<xref:System.Runtime.Caching.Hosting.IMemoryCacheManager>|Lets cache implementations report cache memory consumption to the host environment. This enables host environments to centrally manage memory consumption across multiple cache implementations.|  
-  
+ 
 > [!NOTE]
 >  Callers of this property value require unrestricted code access security permissions.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value being assigned to the property is <see langword="null" />.</exception>
@@ -581,10 +581,10 @@
         <summary>Gets a value that indicates that a cache entry has no absolute expiration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A cache entry that is inserted into the cache with the <xref:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration> field value set as the expiration value should never expire based on an absolute point in time. However, a cache entry with this setting can be evicted from the cache for other reasons that are determined by a particular cache implementation, such as a change-monitor event eviction caused by memory pressure.  
-  
+A cache entry that is inserted into the cache with the <xref:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration> field value set as the expiration value should never expire based on an absolute point in time. However, a cache entry with this setting can be evicted from the cache for other reasons that are determined by a particular cache implementation, such as a change-monitor event eviction caused by memory pressure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -610,12 +610,12 @@
         <value>A key that serves as an indexer into the cache instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The behavior of the set accessor of this property is like the <xref:System.Runtime.Caching.MemoryCache.Set%28System.String%2CSystem.Object%2CSystem.DateTimeOffset%2CSystem.String%29> method. Internally, a cache implementation could set the absolute expiration of the specified value to the <xref:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration> method. However this behavior is ultimately up to the cache implementation.  
-  
- The behavior of get accessor is like calling the <xref:System.Collections.Specialized.NameValueCollection.Get%28System.String%29> method and using `null` for the region name.  
-  
+The behavior of the set accessor of this property is like the <xref:System.Runtime.Caching.MemoryCache.Set%28System.String%2CSystem.Object%2CSystem.DateTimeOffset%2CSystem.String%29> method. Internally, a cache implementation could set the absolute expiration of the specified value to the <xref:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration> method. However this behavior is ultimately up to the cache implementation.  
+ 
+The behavior of get accessor is like calling the <xref:System.Collections.Specialized.NameValueCollection.Get%28System.String%29> method and using `null` for the region name.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -637,10 +637,10 @@
         <value>The name of a specific cache instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some cache implementations might support multiple instances of the cache that is running in a single application. This property lets cache implementers return a name that identifies a specific cache instance.  
-  
+Some cache implementations might support multiple instances of the cache that is running in a single application. This property lets cache implementers return a name that identifies a specific cache instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -661,12 +661,12 @@
         <summary>Indicates that a cache entry has no sliding expiration time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Expiration that is based on duration or a defined window of time is also referred to as sliding expiration. Normally, a cache implementation that evicts items that are based on sliding expiration will remove an item that has not been accessed in the specified window of time.  
-  
- A cache entry that is inserted into the cache with the <xref:System.Runtime.Caching.ObjectCache.NoSlidingExpiration> field value set as the expiration value should never be evicted because of non-activity in a sliding time window. However, a cache item can be evicted if it has an absolute expiration, or if some other eviction event occurs, such a change monitor or memory pressure.  
-  
+Expiration that is based on duration or a defined window of time is also referred to as sliding expiration. Normally, a cache implementation that evicts items that are based on sliding expiration will remove an item that has not been accessed in the specified window of time.  
+ 
+A cache entry that is inserted into the cache with the <xref:System.Runtime.Caching.ObjectCache.NoSlidingExpiration> field value set as the expiration value should never be evicted because of non-activity in a sliding time window. However, a cache item can be evicted if it has an absolute expiration, or if some other eviction event occurs, such a change monitor or memory pressure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -694,13 +694,13 @@
         <returns>An object that represents the value of the removed cache entry that was specified by the key, or <see langword="null" /> if the specified entry was not found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you override this method in a custom cache implementation, if there is a cache entry in the cache that corresponds to `key`, the value of the removed item should be returned. If nothing was removed from the cache, the method should return `null`.  
-  
+If you override this method in a custom cache implementation, if there is a cache entry in the cache that corresponds to `key`, the value of the removed item should be returned. If nothing was removed from the cache, the method should return `null`.  
+ 
 > [!NOTE]
 >  Some distributed cache implementations might not support the ability to return the value that was removed from the cache. This might be because the cache implementation does not support returning the value of a removed cache item. It might also be because marshaling the object as a return value is too expensive. In such cases, cache implementations can return `null`.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -727,10 +727,10 @@
         <summary>When overridden in a derived class, inserts the cache entry into the cache as a <see cref="T:System.Runtime.Caching.CacheItem" /> instance, specifying information about how the entry will be evicted.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the key for `item` does not exist, `item` is inserted as a new cache entry. If an item with a key that matches `item` exists, the value from `item` is used to update or overwrite the value of the existing cache entry.  
-  
+If the key for `item` does not exist, `item` is inserted as a new cache entry. If an item with a key that matches `item` exists, the value from `item` is used to update or overwrite the value of the existing cache entry.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -761,10 +761,10 @@
         <summary>When overridden in a derived class, inserts a cache entry into the cache, specifying time-based expiration details.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an item that matches `key` does not exist in the cache, `value` and `key` are used to insert as a new cache entry. If an item with a key that matches `item` exists, the cache entry is updated or overwritten by using `value`.  
-  
+If an item that matches `key` does not exist in the cache, `value` and `key` are used to insert as a new cache entry. If an item with a key that matches `item` exists, the cache entry is updated or overwritten by using `value`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -795,12 +795,12 @@
         <summary>When overridden in a derived class, inserts a cache entry into the cache.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overload lets you provide more eviction or expiration details than those that are available in time-based absolute expiration.  
-  
- If an item that matches `key` does not exist in the cache, `value` and `key` are used to insert as a new cache entry. If an item with a key that matches `item` exists, the cache entry is updated or overwritten by using `value`.  
-  
+This method overload lets you provide more eviction or expiration details than those that are available in time-based absolute expiration.  
+ 
+If an item that matches `key` does not exist in the cache, `value` and `key` are used to insert as a new cache entry. If an item with a key that matches `item` exists, the cache entry is updated or overwritten by using `value`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -842,14 +842,14 @@
         <returns>The enumerator object that provides access to the items in the cache.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when a derived <xref:System.Runtime.Caching.ObjectCache> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
- Developers can use this method to iterate through a generic collection of cache entries.  
-  
- This is the default <xref:System.Collections.IEnumerable.GetEnumerator%2A> implementation that internally calls the <xref:System.Runtime.Caching.ObjectCache.GetEnumerator%2A> method.  
-  
+This member is an explicit interface member implementation. It can be used only when a derived <xref:System.Runtime.Caching.ObjectCache> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
+Developers can use this method to iterate through a generic collection of cache entries.  
+ 
+This is the default <xref:System.Collections.IEnumerable.GetEnumerator%2A> implementation that internally calls the <xref:System.Runtime.Caching.ObjectCache.GetEnumerator%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -863,12 +863,12 @@
         <summary>When overridden in a derived class, tries to insert a cache entry into the cache, and returns an existing cache entry with a matching key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads insert an entry into the cache. If a cache entry with a matching key already exists, they return the existing entry. The cache entry can be a <xref:System.Runtime.Caching.CacheItem> object or a generic object.  
-  
- There is one difference between the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> overloads and the <xref:System.Runtime.Caching.ObjectCache.Add%2A> overloads. When these overloaded methods try to insert a cache entry, if an existing entry is found that has a key that matches an existing inserted cache entry, the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> overloads return the existing cache entry. The <xref:System.Runtime.Caching.ObjectCache.Add%2A> overloads do not.  
-  
+The <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads insert an entry into the cache. If a cache entry with a matching key already exists, they return the existing entry. The cache entry can be a <xref:System.Runtime.Caching.CacheItem> object or a generic object.  
+ 
+There is one difference between the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> overloads and the <xref:System.Runtime.Caching.ObjectCache.Add%2A> overloads. When these overloaded methods try to insert a cache entry, if an existing entry is found that has a key that matches an existing inserted cache entry, the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> overloads return the existing cache entry. The <xref:System.Runtime.Caching.ObjectCache.Add%2A> overloads do not.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -882,10 +882,10 @@
         <summary>When overridden in a derived class, inserts a cache entry into the cache.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The typical behavior of the <xref:System.Runtime.Caching.ObjectCache.Set%2A> overload methods is an insert-or-update operation. A cache entry is either inserted as a new entry if the specified entry does not exist, or the cache entry is updated with a new value if it already exists.  
-  
+The typical behavior of the <xref:System.Runtime.Caching.ObjectCache.Set%2A> overload methods is an insert-or-update operation. A cache entry is either inserted as a new entry if the specified entry does not exist, or the cache entry is updated with a new value if it already exists.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -899,12 +899,12 @@
         <summary>When overridden in a derived class, inserts a cache entry into the cache, without requiring that an existing cache entry with a matching key be returned.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads try to insert a cache entry into the cache, without overwriting or removing an existing cache entry that has the same key. The cache entry can be a typed <xref:System.Runtime.Caching.CacheItem> object or a generic object.  
-  
- The <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads and the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads have one significant difference. When these methods insert a cache entry, if a matching entry is found in the cache, the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads return the existing cache entry, but the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads do not. Having these different method overloads enables callers to optimize their code based on whether they need the existing cache entry. In distributed caches, returning an existing value by using the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method might be more expensive than returning a Boolean value by using <xref:System.Runtime.Caching.ObjectCache.Add%2A> method.  
-  
+The <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads try to insert a cache entry into the cache, without overwriting or removing an existing cache entry that has the same key. The cache entry can be a typed <xref:System.Runtime.Caching.CacheItem> object or a generic object.  
+ 
+The <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads and the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads have one significant difference. When these methods insert a cache entry, if a matching entry is found in the cache, the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads return the existing cache entry, but the <xref:System.Runtime.Caching.ObjectCache.Add%2A> method overloads do not. Having these different method overloads enables callers to optimize their code based on whether they need the existing cache entry. In distributed caches, returning an existing value by using the <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method might be more expensive than returning a Boolean value by using <xref:System.Runtime.Caching.ObjectCache.Add%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

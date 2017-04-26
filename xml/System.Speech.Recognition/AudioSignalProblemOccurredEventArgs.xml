@@ -14,29 +14,29 @@
     <summary>Provides data for the <c>AudioSignalProblemOccurred</c> event of a <see cref="T:System.Speech.Recognition.SpeechRecognizer" /> or a <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An instance of <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs> is created when the <xref:System.Speech.Recognition.SpeechRecognitionEngine> or <xref:System.Speech.Recognition.SpeechRecognizer> object raises an `AudioSignalProblemOccurred` event. To obtain information related to an `AudioSignalProblemOccurred` event, access the following properties in the handler for the event:  
-  
+An instance of <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs> is created when the <xref:System.Speech.Recognition.SpeechRecognitionEngine> or <xref:System.Speech.Recognition.SpeechRecognizer> object raises an `AudioSignalProblemOccurred` event. To obtain information related to an `AudioSignalProblemOccurred` event, access the following properties in the handler for the event:  
+ 
 -   <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioLevel%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioPosition%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioSignalProblem%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.RecognizerAudioPosition%2A>  
+ 
+The <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioPosition%2A> property references the input device's position in its generated audio stream. By contrast, the <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.RecognizerAudioPosition%2A> property references the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+ 
+The <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioSignalProblem%2A> property indicates which problem occurred.  
+ 
+<xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs> derives from <xref:System.EventArgs>.  
+ 
   
- The <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioPosition%2A> property references the input device's position in its generated audio stream. By contrast, the <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.RecognizerAudioPosition%2A> property references the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
-  
- The <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioSignalProblem%2A> property indicates which problem occurred.  
-  
- <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs> derives from <xref:System.EventArgs>.  
-  
-   
-  
+ 
 ## Examples  
- The following example defines an event handler that gathers information about an <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioSignalProblemOccurred> event.  
-  
+The following example defines an event handler that gathers information about an <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioSignalProblemOccurred> event.  
+ 
 ```csharp  
   
 private SpeechRecognitionEngine sre;  
@@ -68,7 +68,7 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
 }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -108,10 +108,10 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
         <value>The position in the input device's audio stream when the <c>AudioSignalProblemOccurred</c> event was raised.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioPosition%2A> property references the input device's position in its generated audio stream. By contrast, the <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.RecognizerAudioPosition%2A> property references the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
-  
+The <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioPosition%2A> property references the input device's position in its generated audio stream. By contrast, the <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.RecognizerAudioPosition%2A> property references the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,10 +151,10 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
         <value>The position in the audio input that the recognizer has received when the <c>AudioSignalProblemOccurred</c> event was raised.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioPosition%2A> property references the input device's position in its generated audio stream. By contrast, the <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.RecognizerAudioPosition%2A> property references the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
-  
+The <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioPosition%2A> property references the input device's position in its generated audio stream. By contrast, the <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.RecognizerAudioPosition%2A> property references the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+ 
  ]]></format>
         </remarks>
       </Docs>

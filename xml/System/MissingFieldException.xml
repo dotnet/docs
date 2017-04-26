@@ -29,23 +29,23 @@
     <summary>The exception that is thrown when there is an attempt to dynamically access a field that does not exist. If a field in a class library has been removed or renamed, recompile any assemblies that reference that library.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Normally a compilation error is generated if code attempts to access a nonexistent member of a class. <xref:System.MissingFieldException> is designed to handle cases where an attempt is made to dynamically access a renamed or deleted field of an assembly that is not referenced by its strong name. The <xref:System.MissingFieldException> is thrown when code in a dependent assembly attempts to access a missing field in an assembly that was modified.  
+Normally a compilation error is generated if code attempts to access a nonexistent member of a class. <xref:System.MissingFieldException> is designed to handle cases where an attempt is made to dynamically access a renamed or deleted field of an assembly that is not referenced by its strong name. The <xref:System.MissingFieldException> is thrown when code in a dependent assembly attempts to access a missing field in an assembly that was modified.  
+ 
+<xref:System.MissingFieldException> uses the HRESULT COR_E_MISSINGFIELD, that has the value 0x80131511.  
+ 
+For a list of initial property values for an instance of <xref:System.MissingFieldException>, see the <xref:System.MissingFieldException.%23ctor%2A> constructors.  
+ 
   
- <xref:System.MissingFieldException> uses the HRESULT COR_E_MISSINGFIELD, that has the value 0x80131511.  
-  
- For a list of initial property values for an instance of <xref:System.MissingFieldException>, see the <xref:System.MissingFieldException.%23ctor%2A> constructors.  
-  
-   
-  
+ 
 ## Examples  
- This example shows what happens if you attempt to use reflection to call a method that does not exist and access a field that does not exist. The application recovers by catching the <xref:System.MissingMethodException>, <xref:System.MissingFieldException>, and <xref:System.MissingMemberException>.  
-  
- [!code-cpp[MissingMethodException#1](~/samples/snippets/cpp/VS_Snippets_CLR/MissingMethodException/cpp/MissingMethodException.cpp#1)]
- [!code-csharp[MissingMethodException#1](~/samples/snippets/csharp/VS_Snippets_CLR/MissingMethodException/CS/MissingMethodException.cs#1)]
- [!code-vb[MissingMethodException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MissingMethodException/vb/missingmethodexception.vb#1)]  
-  
+This example shows what happens if you attempt to use reflection to call a method that does not exist and access a field that does not exist. The application recovers by catching the <xref:System.MissingMethodException>, <xref:System.MissingFieldException>, and <xref:System.MissingMemberException>.  
+ 
+[!code-cpp[MissingMethodException#1](~/samples/snippets/cpp/VS_Snippets_CLR/MissingMethodException/cpp/MissingMethodException.cpp#1)]
+[!code-csharp[MissingMethodException#1](~/samples/snippets/csharp/VS_Snippets_CLR/MissingMethodException/CS/MissingMethodException.cs#1)]
+[!code-vb[MissingMethodException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MissingMethodException/vb/missingmethodexception.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,17 +74,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.MissingFieldException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes <xref:System.MissingFieldException.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "Attempted to access a non-existing field." This message takes into account the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.MissingFieldException>.  
-  
+This constructor initializes <xref:System.MissingFieldException.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "Attempted to access a non-existing field." This message takes into account the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.MissingFieldException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
 |<xref:System.MissingFieldException.Message%2A>|The localized error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,17 +116,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.MissingFieldException" /> class with a specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of `message` should be understandable to the user. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- The following table shows the initial property values for an instance of <xref:System.MissingFieldException>.  
-  
+The content of `message` should be understandable to the user. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ 
+The following table shows the initial property values for an instance of <xref:System.MissingFieldException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
 |<xref:System.MissingFieldException.Message%2A>|The error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.MissingFieldException" /> class with serialized data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
-  
+This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,17 +192,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.MissingFieldException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception can include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or a null reference (`Nothing` in Visual Basic) if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.MissingFieldException>.  
-  
+An exception that is thrown as a direct result of a previous exception can include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or a null reference (`Nothing` in Visual Basic) if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.MissingFieldException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.MissingFieldException.Message%2A>|The error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -264,19 +264,19 @@
         <value>The error message string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the class name is not specified when the object is constructed, the default text string inherited from the base class is returned. This property overrides <xref:System.MissingMemberException.Message%2A>. The error message should be localized.  
+If the class name is not specified when the object is constructed, the default text string inherited from the base class is returned. This property overrides <xref:System.MissingMemberException.Message%2A>. The error message should be localized.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.MissingFieldException.Message%2A> property. This code example is part of a larger example provided for the <xref:System.MissingFieldException> class.  
-  
- [!code-cpp[MissingMethodException#3](~/samples/snippets/cpp/VS_Snippets_CLR/MissingMethodException/cpp/MissingMethodException.cpp#3)]
- [!code-csharp[MissingMethodException#3](~/samples/snippets/csharp/VS_Snippets_CLR/MissingMethodException/CS/MissingMethodException.cs#3)]
- [!code-vb[MissingMethodException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/MissingMethodException/vb/missingmethodexception.vb#3)]  
-  
+The following example demonstrates the <xref:System.MissingFieldException.Message%2A> property. This code example is part of a larger example provided for the <xref:System.MissingFieldException> class.  
+ 
+[!code-cpp[MissingMethodException#3](~/samples/snippets/cpp/VS_Snippets_CLR/MissingMethodException/cpp/MissingMethodException.cpp#3)]
+[!code-csharp[MissingMethodException#3](~/samples/snippets/csharp/VS_Snippets_CLR/MissingMethodException/CS/MissingMethodException.cs#3)]
+[!code-vb[MissingMethodException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/MissingMethodException/vb/missingmethodexception.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

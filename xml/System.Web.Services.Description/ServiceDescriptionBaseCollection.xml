@@ -15,12 +15,12 @@
     <summary>Forms the basis for the strongly typed collections that are members of the <see cref="N:System.Web.Services.Description" /> namespace.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionBaseCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionBaseCollection/CPP/servicedescriptionbasecollection.cpp#1)]
- [!code-csharp[ServiceDescriptionBaseCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionBaseCollection/CS/servicedescriptionbasecollection.cs#1)]
- [!code-vb[ServiceDescriptionBaseCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionBaseCollection/VB/servicedescriptionbasecollection.vb#1)]  
-  
+[!code-cpp[ServiceDescriptionBaseCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionBaseCollection/CPP/servicedescriptionbasecollection.cpp#1)]
+[!code-csharp[ServiceDescriptionBaseCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionBaseCollection/CS/servicedescriptionbasecollection.cs#1)]
+[!code-vb[ServiceDescriptionBaseCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionBaseCollection/VB/servicedescriptionbasecollection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,10 +47,10 @@
         <returns>A null reference.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method is intended to be overridden by a derived class in order to return the name of the key associated with the `value` parameter. The default implementation returns null (`Nothing` in Visual Basic). This protected method is accessible only through this class or a derived class.  
-  
+The default implementation of this method is intended to be overridden by a derived class in order to return the name of the key associated with the `value` parameter. The default implementation returns null (`Nothing` in Visual Basic). This protected method is accessible only through this class or a derived class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,10 +73,10 @@
         <summary>Clears the contents of the <see cref="T:System.Web.Services.Description.ServiceDescriptionBaseCollection" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is intended to be overridden to perform additional processes when clearing the contents of a derived collection. This protected method is accessible only through this class or a derived class.  
-  
+This method is intended to be overridden to perform additional processes when clearing the contents of a derived collection. This protected method is accessible only through this class or a derived class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,12 +104,12 @@
         <summary>Performs additional custom processes after inserting a new element into the <see cref="T:System.Web.Services.Description.ServiceDescriptionBaseCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method is intended to be overridden by a derived class to perform some action when the specified element is inserted. For example, a derived class might need additional validation.  
-  
- This protected method is accessible only through this class or a derived class.  
-  
+The default implementation of this method is intended to be overridden by a derived class to perform some action when the specified element is inserted. For example, a derived class might need additional validation.  
+ 
+This protected method is accessible only through this class or a derived class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,12 +137,12 @@
         <summary>Removes an element from the <see cref="T:System.Web.Services.Description.ServiceDescriptionBaseCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is intended to be overridden to perform additional processes, such as validation, when an element is removed from the collection.  
-  
- This protected method is accessible only through this class or a derived class.  
-  
+This method is intended to be overridden to perform additional processes, such as validation, when an element is removed from the collection.  
+ 
+This protected method is accessible only through this class or a derived class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,10 +172,10 @@
         <summary>Replaces one value with another within the <see cref="T:System.Web.Services.Description.ServiceDescriptionBaseCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method is intended to be overridden to perform additional processes, such as validation, when setting the value of an element in the collection. This protected method is accessible only through this class or a derived class.  
-  
+The default implementation of this method is intended to be overridden to perform additional processes, such as validation, when setting the value of an element in the collection. This protected method is accessible only through this class or a derived class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,10 +203,10 @@
         <summary>Sets the parent object of the <see cref="T:System.Web.Services.Description.ServiceDescriptionBaseCollection" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method is intended to be overridden by a derived class to set a parent of an appropriate class, based upon the Web Services Description Language (WSDL) specification. The default implementation performs no action. This protected method is accessible only through this class or a derived class.  
-  
+The default implementation of this method is intended to be overridden by a derived class to set a parent of an appropriate class, based upon the Web Services Description Language (WSDL) specification. The default implementation performs no action. This protected method is accessible only through this class or a derived class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,10 +229,10 @@
         <value>An interface that implements the association of the keys and values in the <see cref="T:System.Web.Services.Description.ServiceDescriptionBaseCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation returns a <xref:System.Collections.Hashtable> to associate the keys and values. This protected method is accessible only through this class or a derived class.  
-  
+The default implementation returns a <xref:System.Collections.Hashtable> to associate the keys and values. This protected method is accessible only through this class or a derived class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

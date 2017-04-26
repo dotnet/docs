@@ -26,10 +26,10 @@
     <summary>Manages the overflow behavior of a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there are more overflow items than can be displayed on the form, use the [ToolStrip Items Collection Editor](http://msdn.microsoft.com/en-us/e681f3ab-94ba-4b2b-ac64-1dfad46caa25) to manage this situation.  
-  
+If there are more overflow items than can be displayed on the form, use the [ToolStrip Items Collection Editor](http://msdn.microsoft.com/en-us/e681f3ab-94ba-4b2b-ac64-1dfad46caa25) to manage this situation.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,24 +70,24 @@
         <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not explicitly call the <xref:System.Windows.Forms.ToolStripOverflow.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.Control.AccessibilityObject%2A> property is referenced.  
-  
+If you do not explicitly call the <xref:System.Windows.Forms.ToolStripOverflow.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.Control.AccessibilityObject%2A> property is referenced.  
+ 
 > [!NOTE]
 >  To get or set the <xref:System.Windows.Forms.Control.AccessibilityObject%2A> property, you must add a reference to the `Accessibility` assembly installed with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This code excerpt demonstrates overriding the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-cpp[System.Windows.Forms.AccessibleObject#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#2)]
- [!code-csharp[System.Windows.Forms.AccessibleObject#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#2)]
- [!code-vb[System.Windows.Forms.AccessibleObject#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#2)]  
-  
+The following code example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+ 
+This code excerpt demonstrates overriding the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
+ 
+[!code-cpp[System.Windows.Forms.AccessibleObject#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#2)]
+[!code-csharp[System.Windows.Forms.AccessibleObject#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#2)]
+[!code-vb[System.Windows.Forms.AccessibleObject#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,10 +109,10 @@
         <value>A <see cref="T:System.Windows.Forms.ToolStripItemCollection" /> that includes all items on this <see cref="T:System.Windows.Forms.ToolStrip" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripOverflow.DisplayedItems%2A> property to get everything the <xref:System.Windows.Forms.ToolStrip> currently displays, including items the user did not add, such as a <xref:System.Windows.Forms.ToolStripOverflowButton>. Use the <xref:System.Windows.Forms.ToolStripOverflow.Items%2A> property to get all items on the <xref:System.Windows.Forms.ToolStrip>, including those not being displayed.  
-  
+Use the <xref:System.Windows.Forms.ToolStripOverflow.DisplayedItems%2A> property to get everything the <xref:System.Windows.Forms.ToolStrip> currently displays, including items the user did not add, such as a <xref:System.Windows.Forms.ToolStripOverflowButton>. Use the <xref:System.Windows.Forms.ToolStripOverflow.Items%2A> property to get all items on the <xref:System.Windows.Forms.ToolStrip>, including those not being displayed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,10 +156,10 @@
         <value>A <see cref="T:System.Windows.Forms.ToolStripItemCollection" /> containing all of the items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripOverflow.Items%2A> property to get all items on the <xref:System.Windows.Forms.ToolStrip>, including those not being displayed. Use the <xref:System.Windows.Forms.ToolStripOverflow.DisplayedItems%2A> property to get only those items that are currently displayed on the <xref:System.Windows.Forms.ToolStrip>.  
-  
+Use the <xref:System.Windows.Forms.ToolStripOverflow.Items%2A> property to get all items on the <xref:System.Windows.Forms.ToolStrip>, including those not being displayed. Use the <xref:System.Windows.Forms.ToolStripOverflow.DisplayedItems%2A> property to get only those items that are currently displayed on the <xref:System.Windows.Forms.ToolStrip>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,12 +202,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripOverflow.OnLayout%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripOverflow.OnLayout%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

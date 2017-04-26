@@ -23,12 +23,12 @@
     <summary>Defines the type of hash algorithm to use with the <see cref="T:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The subject key identifier (SKI) provides a unique identification for a certificate's subject when working with XML digital signing.  An SKI is an SHA-1 hash of the subject's public key information.  
-  
- Use the <xref:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm> enumeration to define the type of hash algorithm to use with the <xref:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension> class when creating an SKI.  
-  
+The subject key identifier (SKI) provides a unique identification for a certificate's subject when working with XML digital signing.  An SKI is an SHA-1 hash of the subject's public key information.  
+ 
+Use the <xref:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm> enumeration to define the type of hash algorithm to use with the <xref:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension> class when creating an SKI.  
+ 
  ]]></format>
     </remarks>
   </Docs>

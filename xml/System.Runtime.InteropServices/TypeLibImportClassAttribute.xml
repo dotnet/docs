@@ -23,10 +23,10 @@
     <summary>Specifies which <see cref="T:System.Type" /> exclusively uses an interface. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Apply the <xref:System.Runtime.InteropServices.TypeLibImportClassAttribute> attribute to a managed interface to specify which <xref:System.Type> object exclusively uses the interface.  This attribute allows COM interoperation to map the interface back to the original type when converting the interface from metadata to a type library and back again.  
-  
+Apply the <xref:System.Runtime.InteropServices.TypeLibImportClassAttribute> attribute to a managed interface to specify which <xref:System.Type> object exclusively uses the interface.  This attribute allows COM interoperation to map the interface back to the original type when converting the interface from metadata to a type library and back again.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,10 +49,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.TypeLibImportClassAttribute" /> class specifying the <see cref="T:System.Type" /> that exclusively uses an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Apply the <xref:System.Runtime.InteropServices.TypeLibImportClassAttribute> attribute to a managed interface to specify the <xref:System.Type> object that exclusively uses the interface.  
-  
+Apply the <xref:System.Runtime.InteropServices.TypeLibImportClassAttribute> attribute to a managed interface to specify the <xref:System.Type> object that exclusively uses the interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,10 +75,10 @@
         <value>The name of a <see cref="T:System.Type" /> object that exclusively uses an interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Apply the <xref:System.Runtime.InteropServices.TypeLibImportClassAttribute> attribute to a managed interface to specify the type that exclusively uses an interface.  
-  
+Apply the <xref:System.Runtime.InteropServices.TypeLibImportClassAttribute> attribute to a managed interface to specify the type that exclusively uses an interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

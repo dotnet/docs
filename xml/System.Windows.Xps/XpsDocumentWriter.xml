@@ -14,18 +14,18 @@
     <summary>Provides methods to write to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document or print queue.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.XpsDocumentWriter> has no constructor. To create an <xref:System.Windows.Xps.XpsDocumentWriter>, use the static <xref:System.Windows.Xps.Packaging.XpsDocument.CreateXpsDocumentWriter%2A> method of the <xref:System.Windows.Xps.Packaging.XpsDocument> class or use one of the static <xref:System.Printing.PrintQueue.CreateXpsDocumentWriter%2A> methods of the <xref:System.Printing.PrintQueue> class. The document or the queue that creates the <xref:System.Windows.Xps.XpsDocumentWriter> becomes the target to which it writes.  
+<xref:System.Windows.Xps.XpsDocumentWriter> has no constructor. To create an <xref:System.Windows.Xps.XpsDocumentWriter>, use the static <xref:System.Windows.Xps.Packaging.XpsDocument.CreateXpsDocumentWriter%2A> method of the <xref:System.Windows.Xps.Packaging.XpsDocument> class or use one of the static <xref:System.Printing.PrintQueue.CreateXpsDocumentWriter%2A> methods of the <xref:System.Printing.PrintQueue> class. The document or the queue that creates the <xref:System.Windows.Xps.XpsDocumentWriter> becomes the target to which it writes.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create an instance of the <xref:System.Windows.Xps.XpsDocumentWriter> class.  
-  
- [!code-csharp[XpsSave#CreateXpsDocumentWriter](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#createxpsdocumentwriter)]
- [!code-vb[XpsSave#CreateXpsDocumentWriter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#createxpsdocumentwriter)]  
-  
+The following example shows how to create an instance of the <xref:System.Windows.Xps.XpsDocumentWriter> class.  
+ 
+[!code-csharp[XpsSave#CreateXpsDocumentWriter](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#createxpsdocumentwriter)]
+[!code-vb[XpsSave#CreateXpsDocumentWriter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#createxpsdocumentwriter)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,18 +77,18 @@
         <returns>The new <see cref="T:System.Windows.Xps.VisualsToXpsDocument" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Xps.VisualsToXpsDocument> writes to the same target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> as the <xref:System.Windows.Xps.XpsDocumentWriter> that creates the <xref:System.Windows.Xps.VisualsToXpsDocument>.  
+The <xref:System.Windows.Xps.VisualsToXpsDocument> writes to the same target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> as the <xref:System.Windows.Xps.XpsDocumentWriter> that creates the <xref:System.Windows.Xps.VisualsToXpsDocument>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.CreateVisualsCollator%2A> method.  
-  
- [!code-csharp[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#createandwritetovisualscollator)]
- [!code-vb[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#createandwritetovisualscollator)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.CreateVisualsCollator%2A> method.  
+ 
+[!code-csharp[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#createandwritetovisualscollator)]
+[!code-vb[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#createandwritetovisualscollator)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,12 +121,12 @@
         <returns>The new <see cref="T:System.Windows.Xps.VisualsToXpsDocument" /> that writes <see cref="T:System.Windows.Media.Visual" /> elements with <see cref="T:System.Printing.PrintTicket" /> settings to the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Xps.VisualsToXpsDocument> writes to the same target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> as the <xref:System.Windows.Xps.XpsDocumentWriter> that creates the <xref:System.Windows.Xps.VisualsToXpsDocument>.  
-  
- This method does not validate or modify the specified `documentPrintTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and valid for a specified printer.  
-  
+The <xref:System.Windows.Xps.VisualsToXpsDocument> writes to the same target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> as the <xref:System.Windows.Xps.XpsDocumentWriter> that creates the <xref:System.Windows.Xps.VisualsToXpsDocument>.  
+ 
+This method does not validate or modify the specified `documentPrintTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,14 +156,14 @@
         <summary>Writes synchronously a specified [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds the <xref:System.Windows.Documents.FixedDocument> elements in the source to the set of <xref:System.Windows.Documents.FixedDocument> elements in the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue>.  
-  
- This <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> method will reserialize the specified [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document which will remove all content from the <xref:System.IO.Packaging.Package> that is not required to be preserved by the [XML Paper Specification](http://go.microsoft.com/fwlink/?LinkID=65761).  The reserialization will also remove all extensions from the <xref:System.Windows.Documents.FixedPage> markup, including any extended [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] content.  
-  
- By design this <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> method does not call the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> event.  
-  
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds the <xref:System.Windows.Documents.FixedDocument> elements in the source to the set of <xref:System.Windows.Documents.FixedDocument> elements in the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue>.  
+ 
+This <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> method will reserialize the specified [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document which will remove all content from the <xref:System.IO.Packaging.Package> that is not required to be preserved by the [XML Paper Specification](http://go.microsoft.com/fwlink/?LinkID=65761).  The reserialization will also remove all extensions from the <xref:System.Windows.Documents.FixedPage> markup, including any extended [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] content.  
+ 
+By design this <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> method does not call the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,13 +193,13 @@
         <summary>Writes synchronously paginated content from a specified <see cref="T:System.Windows.Documents.DocumentPaginator" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> method to write to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
-  
- [!code-csharp[XpsSave#WriteToXpsWithDocumentPaginator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writetoxpswithdocumentpaginator)]
- [!code-vb[XpsSave#WriteToXpsWithDocumentPaginator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writetoxpswithdocumentpaginator)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> method to write to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
+ 
+[!code-csharp[XpsSave#WriteToXpsWithDocumentPaginator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writetoxpswithdocumentpaginator)]
+[!code-vb[XpsSave#WriteToXpsWithDocumentPaginator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writetoxpswithdocumentpaginator)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,18 +229,18 @@
         <summary>Writes synchronously a specified <see cref="T:System.Windows.Documents.FixedDocument" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> to the set.  
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> to the set.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this method to write to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
-  
- [!code-csharp[XpsSave#WriteToXpsWithFixedDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writetoxpswithfixeddocument)]
- [!code-vb[XpsSave#WriteToXpsWithFixedDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writetoxpswithfixeddocument)]  
-  
+The following example shows how to use this method to write to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
+ 
+[!code-csharp[XpsSave#WriteToXpsWithFixedDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writetoxpswithfixeddocument)]
+[!code-vb[XpsSave#WriteToXpsWithFixedDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writetoxpswithfixeddocument)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,18 +270,18 @@
         <summary>Writes synchronously a specified <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> or a set of <xref:System.Windows.Documents.FixedDocument> elements to the existing set.  
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> or a set of <xref:System.Windows.Documents.FixedDocument> elements to the existing set.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> method to write a sequence of [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] documents.  
-  
- [!code-csharp[XpsSave#WriteToXpsWithFixedDocumentSequence](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writetoxpswithfixeddocumentsequence)]
- [!code-vb[XpsSave#WriteToXpsWithFixedDocumentSequence](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writetoxpswithfixeddocumentsequence)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> method to write a sequence of [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] documents.  
+ 
+[!code-csharp[XpsSave#WriteToXpsWithFixedDocumentSequence](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writetoxpswithfixeddocumentsequence)]
+[!code-vb[XpsSave#WriteToXpsWithFixedDocumentSequence](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writetoxpswithfixeddocumentsequence)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -337,18 +337,18 @@
         <summary>Writes synchronously a specified <see cref="T:System.Windows.Media.Visual" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To batch write a <xref:System.Windows.Media.Visual>, use <xref:System.Windows.Xps.VisualsToXpsDocument>.  
+To batch write a <xref:System.Windows.Media.Visual>, use <xref:System.Windows.Xps.VisualsToXpsDocument>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> method to write a <xref:System.Windows.Media.Visual> to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
-  
- [!code-csharp[XpsSave#WriteToXpsWithVisual](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writetoxpswithvisual)]
- [!code-vb[XpsSave#WriteToXpsWithVisual](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writetoxpswithvisual)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> method to write a <xref:System.Windows.Media.Visual> to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
+ 
+[!code-csharp[XpsSave#WriteToXpsWithVisual](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writetoxpswithvisual)]
+[!code-vb[XpsSave#WriteToXpsWithVisual](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writetoxpswithvisual)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -380,18 +380,18 @@
         <summary>Writes synchronously a specified [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When `notificationLevel` is disabled, the <xref:System.Windows.Xps.XpsDocumentWriter> copies the serialized[!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document to the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> that created the <xref:System.Windows.Xps.XpsDocumentWriter>. When `notificationLevel` is enabled, the <xref:System.Windows.Xps.XpsDocumentWriter> first deserializes the document, next reserializes it, and then writes it to the target with progress notifications as each page is output.  
-  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds the <xref:System.Windows.Documents.FixedDocument> elements in the source to the sequence of <xref:System.Windows.Documents.FixedDocument> elements in the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue>.  
-  
- If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel>, notifications are produced only when the document is serialized, not printed.  To receive notifications the document must be reserialized.  When a document is reserialized all content from the <xref:System.IO.Packaging.Package> that is not required to be preserved by the [XML Paper Specification (XPS)](http://go.microsoft.com/fwlink/?LinkID=65761) is removed.  The reserialization will also remove all extensions from the <xref:System.Windows.Documents.FixedPage> markup, including any extended [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] content.  
-  
- If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel> the document will not be reserialized and any extended content will be preserved, even when printed.  
-  
- By design this <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> method does not call the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> event.  
-  
+When `notificationLevel` is disabled, the <xref:System.Windows.Xps.XpsDocumentWriter> copies the serialized[!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document to the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> that created the <xref:System.Windows.Xps.XpsDocumentWriter>. When `notificationLevel` is enabled, the <xref:System.Windows.Xps.XpsDocumentWriter> first deserializes the document, next reserializes it, and then writes it to the target with progress notifications as each page is output.  
+ 
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds the <xref:System.Windows.Documents.FixedDocument> elements in the source to the sequence of <xref:System.Windows.Documents.FixedDocument> elements in the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue>.  
+ 
+If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel>, notifications are produced only when the document is serialized, not printed.  To receive notifications the document must be reserialized.  When a document is reserialized all content from the <xref:System.IO.Packaging.Package> that is not required to be preserved by the [XML Paper Specification (XPS)](http://go.microsoft.com/fwlink/?LinkID=65761) is removed.  The reserialization will also remove all extensions from the <xref:System.Windows.Documents.FixedPage> markup, including any extended [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] content.  
+ 
+If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel> the document will not be reserialized and any extended content will be preserved, even when printed.  
+ 
+By design this <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> method does not call the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,10 +423,10 @@
         <summary>Writes synchronously paginated content from a specified <see cref="T:System.Windows.Documents.DocumentPaginator" /> together with a <see cref="T:System.Printing.PrintTicket" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
+This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -458,12 +458,12 @@
         <summary>Writes synchronously a <see cref="T:System.Windows.Documents.FixedDocument" /> together with a <see cref="T:System.Printing.PrintTicket" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> to the set.  
-  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> to the set.  
+ 
+This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -495,12 +495,12 @@
         <summary>Writes synchronously a specified <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> together with a <see cref="T:System.Printing.PrintTicket" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> or a set of <xref:System.Windows.Documents.FixedDocument> elements to the existing set.  
-  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> or a set of <xref:System.Windows.Documents.FixedDocument> elements to the existing set.  
+ 
+This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -532,10 +532,10 @@
         <summary>Writes synchronously a specified <see cref="T:System.Windows.Documents.FixedPage" /> together with a <see cref="T:System.Printing.PrintTicket" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
+This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -567,12 +567,12 @@
         <summary>Writes synchronously a specified <see cref="T:System.Windows.Media.Visual" /> together with a <see cref="T:System.Printing.PrintTicket" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To batch write a <xref:System.Windows.Media.Visual>, use <xref:System.Windows.Xps.VisualsToXpsDocument>.  
-  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
+To batch write a <xref:System.Windows.Media.Visual>, use <xref:System.Windows.Xps.VisualsToXpsDocument>.  
+ 
+This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -602,14 +602,14 @@
         <summary>Writes asynchronously a specified [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds the <xref:System.Windows.Documents.FixedDocument> elements in the source to the set of <xref:System.Windows.Documents.FixedDocument> elements in the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue>.  
-  
- This <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> method will reserialize the specified [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document which will remove all content from the <xref:System.IO.Packaging.Package> that is not required to be preserved by the [XML Paper Specification](http://go.microsoft.com/fwlink/?LinkID=65761).  The reserialization will also remove all extensions from the <xref:System.Windows.Documents.FixedPage> markup, including any extended [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] content.  
-  
- By design this <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> method does not call the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> event.  
-  
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds the <xref:System.Windows.Documents.FixedDocument> elements in the source to the set of <xref:System.Windows.Documents.FixedDocument> elements in the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue>.  
+ 
+This <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> method will reserialize the specified [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document which will remove all content from the <xref:System.IO.Packaging.Package> that is not required to be preserved by the [XML Paper Specification](http://go.microsoft.com/fwlink/?LinkID=65761).  The reserialization will also remove all extensions from the <xref:System.Windows.Documents.FixedPage> markup, including any extended [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] content.  
+ 
+By design this <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> method does not call the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -639,13 +639,13 @@
         <summary>Writes asynchronously paginated content from a specified <see cref="T:System.Windows.Documents.DocumentPaginator" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to write to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
-  
- [!code-csharp[XpsSave#WriteAsyncToXpsWithDocumentPaginator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writeasynctoxpswithdocumentpaginator)]
- [!code-vb[XpsSave#WriteAsyncToXpsWithDocumentPaginator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writeasynctoxpswithdocumentpaginator)]  
-  
+The following example shows how to use this method to write to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
+ 
+[!code-csharp[XpsSave#WriteAsyncToXpsWithDocumentPaginator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writeasynctoxpswithdocumentpaginator)]
+[!code-vb[XpsSave#WriteAsyncToXpsWithDocumentPaginator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writeasynctoxpswithdocumentpaginator)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -675,18 +675,18 @@
         <summary>Writes asynchronously a specified <see cref="T:System.Windows.Documents.FixedDocument" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> to the set.  
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> to the set.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this method to write to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
-  
- [!code-csharp[XpsSave#WriteAsyncToXpsWithFixedDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writeasynctoxpswithfixeddocument)]
- [!code-vb[XpsSave#WriteAsyncToXpsWithFixedDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writeasynctoxpswithfixeddocument)]  
-  
+The following example shows how to use this method to write to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
+ 
+[!code-csharp[XpsSave#WriteAsyncToXpsWithFixedDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writeasynctoxpswithfixeddocument)]
+[!code-vb[XpsSave#WriteAsyncToXpsWithFixedDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writeasynctoxpswithfixeddocument)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -716,18 +716,18 @@
         <summary>Writes asynchronously a specified <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> or a set of <xref:System.Windows.Documents.FixedDocument> elements to the existing set.  
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> or a set of <xref:System.Windows.Documents.FixedDocument> elements to the existing set.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this method to write to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
-  
- [!code-csharp[XpsSave#WriteAsyncToXpsWithFixedDocumentSequence](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writeasynctoxpswithfixeddocumentsequence)]
- [!code-vb[XpsSave#WriteAsyncToXpsWithFixedDocumentSequence](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writeasynctoxpswithfixeddocumentsequence)]  
-  
+The following example shows how to use this method to write to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
+ 
+[!code-csharp[XpsSave#WriteAsyncToXpsWithFixedDocumentSequence](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writeasynctoxpswithfixeddocumentsequence)]
+[!code-vb[XpsSave#WriteAsyncToXpsWithFixedDocumentSequence](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writeasynctoxpswithfixeddocumentsequence)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -783,18 +783,18 @@
         <summary>Writes asynchronously a specified <see cref="T:System.Windows.Media.Visual" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To batch write a <xref:System.Windows.Media.Visual>, use <xref:System.Windows.Xps.VisualsToXpsDocument>.  
+To batch write a <xref:System.Windows.Media.Visual>, use <xref:System.Windows.Xps.VisualsToXpsDocument>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this method to write a <xref:System.Windows.Media.Visual> to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
-  
- [!code-csharp[XpsSave#WriteAsyncToXpsWithVisual](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writeasynctoxpswithvisual)]
- [!code-vb[XpsSave#WriteAsyncToXpsWithVisual](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writeasynctoxpswithvisual)]  
-  
+The following example shows how to use this method to write a <xref:System.Windows.Media.Visual> to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
+ 
+[!code-csharp[XpsSave#WriteAsyncToXpsWithVisual](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writeasynctoxpswithvisual)]
+[!code-vb[XpsSave#WriteAsyncToXpsWithVisual](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writeasynctoxpswithvisual)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -826,18 +826,18 @@
         <summary>Writes asynchronously a specified [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document with notification option to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When `notificationLevel` is disabled, the <xref:System.Windows.Xps.XpsDocumentWriter> copies the serialized [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document to the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> that created the <xref:System.Windows.Xps.XpsDocumentWriter>. When `notificationLevel` is enabled, the <xref:System.Windows.Xps.XpsDocumentWriter> first deserializes the document, next reserializes it, and then writes it to the target with progress notifications as each page is output.  
-  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds the <xref:System.Windows.Documents.FixedDocument> elements in the source to the sequence of <xref:System.Windows.Documents.FixedDocument> elements in the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue>.  
-  
- If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel>, notifications are produced only when the document is serialized, not printed.  To receive notifications the document must be reserialized.  When a document is reserialized all content from the <xref:System.IO.Packaging.Package> that is not required to be preserved by the [XML Paper Specification](http://go.microsoft.com/fwlink/?LinkID=65761) is removed.  The reserialization will also remove all extensions from the <xref:System.Windows.Documents.FixedPage> markup, including any extended [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] content.  
-  
- If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel> the document will not be reserialized and any extended content will be preserved, even when printed.  
-  
- By design this <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> method does not call the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> event.  
-  
+When `notificationLevel` is disabled, the <xref:System.Windows.Xps.XpsDocumentWriter> copies the serialized [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document to the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> that created the <xref:System.Windows.Xps.XpsDocumentWriter>. When `notificationLevel` is enabled, the <xref:System.Windows.Xps.XpsDocumentWriter> first deserializes the document, next reserializes it, and then writes it to the target with progress notifications as each page is output.  
+ 
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds the <xref:System.Windows.Documents.FixedDocument> elements in the source to the sequence of <xref:System.Windows.Documents.FixedDocument> elements in the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue>.  
+ 
+If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel>, notifications are produced only when the document is serialized, not printed.  To receive notifications the document must be reserialized.  When a document is reserialized all content from the <xref:System.IO.Packaging.Package> that is not required to be preserved by the [XML Paper Specification](http://go.microsoft.com/fwlink/?LinkID=65761) is removed.  The reserialization will also remove all extensions from the <xref:System.Windows.Documents.FixedPage> markup, including any extended [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] content.  
+ 
+If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel> the document will not be reserialized and any extended content will be preserved, even when printed.  
+ 
+By design this <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> method does not call the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -897,10 +897,10 @@
         <summary>Writes asynchronously paginated content from a specified <see cref="T:System.Windows.Documents.DocumentPaginator" /> together with a <see cref="T:System.Printing.PrintTicket" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
+This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -932,10 +932,10 @@
         <summary>Writes asynchronously a specified <see cref="T:System.Windows.Documents.FixedDocument" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> to the set.  
-  
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> to the set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -967,12 +967,12 @@
         <summary>Writes asynchronously a specified <see cref="T:System.Windows.Documents.FixedDocument" /> together with a <see cref="T:System.Printing.PrintTicket" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> to the set.  
-  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> to the set.  
+ 
+This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1004,10 +1004,10 @@
         <summary>Writes asynchronously a specified <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> or a set of <xref:System.Windows.Documents.FixedDocument> elements to the existing set.  
-  
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> or a set of <xref:System.Windows.Documents.FixedDocument> elements to the existing set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1039,12 +1039,12 @@
         <summary>Writes asynchronously a specified <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> together with a <see cref="T:System.Printing.PrintTicket" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> or a set of <xref:System.Windows.Documents.FixedDocument> elements to the existing set.  
-  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> or a set of <xref:System.Windows.Documents.FixedDocument> elements to the existing set.  
+ 
+This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1104,10 +1104,10 @@
         <summary>Writes asynchronously a specified <see cref="T:System.Windows.Documents.FixedPage" /> together with a <see cref="T:System.Printing.PrintTicket" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
+This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1139,10 +1139,10 @@
         <summary>Writes asynchronously a specified <see cref="T:System.Windows.Media.Visual" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To batch write a <xref:System.Windows.Media.Visual>, use <xref:System.Windows.Xps.VisualsToXpsDocument>.  
-  
+To batch write a <xref:System.Windows.Media.Visual>, use <xref:System.Windows.Xps.VisualsToXpsDocument>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1174,12 +1174,12 @@
         <summary>Writes asynchronously a specified <see cref="T:System.Windows.Media.Visual" /> together with a <see cref="T:System.Printing.PrintTicket" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To batch write a <xref:System.Windows.Media.Visual>, use <xref:System.Windows.Xps.VisualsToXpsDocument>.  
-  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
+To batch write a <xref:System.Windows.Media.Visual>, use <xref:System.Windows.Xps.VisualsToXpsDocument>.  
+ 
+This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1213,10 +1213,10 @@
         <summary>Writes asynchronously paginated content from a specified <see cref="T:System.Windows.Documents.DocumentPaginator" /> together with a <see cref="T:System.Printing.PrintTicket" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
+This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1250,12 +1250,12 @@
         <summary>Writes asynchronously a specified <see cref="T:System.Windows.Documents.FixedDocument" /> together with a <see cref="T:System.Printing.PrintTicket" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> to the set.  
-  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> to the set.  
+ 
+This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1289,14 +1289,14 @@
         <summary>Writes asynchronously a specified <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> together with a <see cref="T:System.Printing.PrintTicket" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> writes a set of documents asynchronously to the <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> that created the <xref:System.Windows.Xps.XpsDocumentWriter>. The data that is written includes a <xref:System.Printing.PrintTicket> and additional information that the caller wants to pass to an event handler.  
-  
- Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> or a set of <xref:System.Windows.Documents.FixedDocument> elements to the existing sequence.  
-  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
+<xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> writes a set of documents asynchronously to the <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> that created the <xref:System.Windows.Xps.XpsDocumentWriter>. The data that is written includes a <xref:System.Printing.PrintTicket> and additional information that the caller wants to pass to an event handler.  
+ 
+Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds a <xref:System.Windows.Documents.FixedDocument> or a set of <xref:System.Windows.Documents.FixedDocument> elements to the existing sequence.  
+ 
+This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1330,10 +1330,10 @@
         <summary>Writes asynchronously a specified <see cref="T:System.Windows.Documents.FixedPage" /> together with a <see cref="T:System.Printing.PrintTicket" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
+This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1367,12 +1367,12 @@
         <summary>Writes asynchronously a specified <see cref="T:System.Windows.Media.Visual" /> together with a <see cref="T:System.Printing.PrintTicket" /> to the target <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> or <see cref="T:System.Printing.PrintQueue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For writing multiple <xref:System.Windows.Media.Visual> elements, use <xref:System.Windows.Xps.VisualsToXpsDocument>.  
-  
- This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
-  
+For writing multiple <xref:System.Windows.Media.Visual> elements, use <xref:System.Windows.Xps.VisualsToXpsDocument>.  
+ 
+This method does not validate or modify the specified `printTicket` for a particular <xref:System.Printing.PrintQueue>. If necessary, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintTicket> that is specific to the <xref:System.Printing.PrintQueue> and is valid for a specified printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1410,13 +1410,13 @@
         <summary>Occurs when a write operation finishes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.WritingCompleted> event.  
-  
- [!code-csharp[XpsSave#WritingEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writingevents)]
- [!code-vb[XpsSave#WritingEvents](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writingevents)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.WritingCompleted> event.  
+ 
+[!code-csharp[XpsSave#WritingEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writingevents)]
+[!code-vb[XpsSave#WritingEvents](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writingevents)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1437,33 +1437,33 @@
         <summary>Occurs just before a <see cref="Overload:System.Windows.Xps.XpsDocumentWriter.Write" /> or <see cref="Overload:System.Windows.Xps.XpsDocumentWriter.WriteAsync" /> method adds a <see cref="T:System.Printing.PrintTicket" /> to a document or print queue.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> enables an event handler to substitute a new <xref:System.Printing.PrintTicket> for the one that is passed to the write operation.  
-  
- The following four <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods do not call the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> event:  
-  
+<xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> enables an event handler to substitute a new <xref:System.Printing.PrintTicket> for the one that is passed to the write operation.  
+ 
+The following four <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods do not call the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> event:  
+ 
 -   <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A>(String)  
-  
+ 
 -   <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A>(String, XpsDocumentNotificationLevel)  
-  
+ 
 -   <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A>(String)  
-  
+ 
 -   <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A>(String, XpsDocumentNotificationLevel)  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> event.  
-  
- [!code-csharp[XpsPrint#PrintMultipleFixedContentDocuments](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#printmultiplefixedcontentdocuments)]
- [!code-vb[XpsPrint#PrintMultipleFixedContentDocuments](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#printmultiplefixedcontentdocuments)]  
-  
- The event handler is created in the following example.  
-  
- [!code-csharp[XpsPrint#MultipleFixedContentDocuments_WritingPrintTicketRequired](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#multiplefixedcontentdocuments_writingprintticketrequired)]
- [!code-vb[XpsPrint#MultipleFixedContentDocuments_WritingPrintTicketRequired](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#multiplefixedcontentdocuments_writingprintticketrequired)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> event.  
+ 
+[!code-csharp[XpsPrint#PrintMultipleFixedContentDocuments](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#printmultiplefixedcontentdocuments)]
+[!code-vb[XpsPrint#PrintMultipleFixedContentDocuments](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#printmultiplefixedcontentdocuments)]  
+ 
+The event handler is created in the following example.  
+ 
+[!code-csharp[XpsPrint#MultipleFixedContentDocuments_WritingPrintTicketRequired](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#multiplefixedcontentdocuments_writingprintticketrequired)]
+[!code-vb[XpsPrint#MultipleFixedContentDocuments_WritingPrintTicketRequired](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#multiplefixedcontentdocuments_writingprintticketrequired)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1484,13 +1484,13 @@
         <summary>Occurs when the <see cref="T:System.Windows.Xps.XpsDocumentWriter" /> updates its progress.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create and use a <xref:System.Windows.Xps.XpsDocumentWriter.WritingProgressChanged> event handler.  
-  
- [!code-csharp[XpsSave#WritingEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writingevents)]
- [!code-vb[XpsSave#WritingEvents](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writingevents)]  
-  
+The following example shows how to create and use a <xref:System.Windows.Xps.XpsDocumentWriter.WritingProgressChanged> event handler.  
+ 
+[!code-csharp[XpsSave#WritingEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#writingevents)]
+[!code-vb[XpsSave#WritingEvents](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#writingevents)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1504,18 +1504,18 @@
         <summary>Returns a <see cref="T:System.Windows.Xps.VisualsToXpsDocument" /> that can write <see cref="T:System.Windows.Media.Visual" /> objects to a document or print queue.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Xps.VisualsToXpsDocument> writes to the same target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> as the <xref:System.Windows.Xps.XpsDocumentWriter> that creates the <xref:System.Windows.Xps.VisualsToXpsDocument>.  
+The <xref:System.Windows.Xps.VisualsToXpsDocument> writes to the same target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> as the <xref:System.Windows.Xps.XpsDocumentWriter> that creates the <xref:System.Windows.Xps.VisualsToXpsDocument>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.CreateVisualsCollator%2A> method.  
-  
- [!code-csharp[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#createandwritetovisualscollator)]
- [!code-vb[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#createandwritetovisualscollator)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.CreateVisualsCollator%2A> method.  
+ 
+[!code-csharp[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#createandwritetovisualscollator)]
+[!code-vb[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#createandwritetovisualscollator)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

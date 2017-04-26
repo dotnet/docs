@@ -14,13 +14,13 @@
     <summary>Specifies how data will be sent and received when reading and writing encrypted columns. Depending on your specific query, performance impact may be reduced by bypassing the Always Encrypted driver’s processing when non-encrypted columns are being used. Note that these settings cannot be used to bypass encryption and gain access to plaintext data. For details, see [Always Encrypted (Database Engine)](https://msdn.microsoft.com/library/mt163865.aspx)</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 -   If Always Encrypted is disabled for a query and the query has parameters that need to be encrypted (parameters that correspond to encrypted columns), the query will fail.  
-  
+ 
 -   If Always Encrypted is disabled for a query and the query returns results from encrypted columns, the query will return encrypted values. The encrypted values will have the varbinary datatype.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

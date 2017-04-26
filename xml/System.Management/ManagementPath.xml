@@ -23,13 +23,13 @@
     <summary>Provides a wrapper for parsing and building paths to WMI objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object.  The path that is parsed in the example is a path to an instance of a class.  
-  
- [!code-csharp[wminet_ManagementPath#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath/cs/ManagementPath.cs#1)]
- [!code-vb[wminet_ManagementPath#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath/vb/ManagementPath.vb#1)]  
-  
+The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object.  The path that is parsed in the example is a path to an instance of a class.  
+ 
+[!code-csharp[wminet_ManagementPath#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath/cs/ManagementPath.cs#1)]
+[!code-vb[wminet_ManagementPath#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath/vb/ManagementPath.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,12 +48,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementPath" /> class that is empty. This is the default constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,20 +75,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementPath" /> class for the given path.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object.  The path that is parsed in the example is a path to an instance of a class.  
-  
- [!code-csharp[wminet_ManagementPath(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath(S)/cs/ManagementPath(S).cs#1)]
- [!code-vb[wminet_ManagementPath(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath(S)/vb/ManagementPath(S).vb#1)]  
-  
+The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object.  The path that is parsed in the example is a path to an instance of a class.  
+ 
+[!code-csharp[wminet_ManagementPath(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath(S)/cs/ManagementPath(S).cs#1)]
+[!code-vb[wminet_ManagementPath(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath(S)/vb/ManagementPath(S).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,23 +115,23 @@
         <value>Returns a <see cref="T:System.String" /> value that holds the class portion of the path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- A string containing the name of the class.  
-  
+A string containing the name of the class.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object. The path that is parsed in the example is a path to an instance of a class.  
-  
- [!code-csharp[wminet_ManagementPath_ClassName#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath_ClassName/cs/ManagementPath_ClassName.cs#1)]
- [!code-vb[wminet_ManagementPath_ClassName#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath_ClassName/vb/ManagementPath_ClassName.vb#1)]  
-  
+The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object. The path that is parsed in the example is a path to an instance of a class.  
+ 
+[!code-csharp[wminet_ManagementPath_ClassName#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath_ClassName/cs/ManagementPath_ClassName.cs#1)]
+[!code-vb[wminet_ManagementPath_ClassName#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath_ClassName/vb/ManagementPath_ClassName.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,12 +154,12 @@
         <returns>The cloned object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,15 +181,15 @@
         <value>Returns a <see cref="T:System.Management.ManagementPath" /> that contains the default scope (namespace) path used when no scope is specified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- By default the scope value is \\\\.\root\cimv2, or a different scope path if the default was changed.  
-  
+By default the scope value is \\\\.\root\cimv2, or a different scope path if the default was changed.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,23 +211,23 @@
         <value>Returns a <see cref="T:System.Boolean" /> value indicating whether this is a class path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- `true` if this is a class path; otherwise, `false`.  
-  
+`true` if this is a class path; otherwise, `false`.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object. The path that is parsed in the example is a path to an instance of a class.  
-  
- [!code-csharp[wminet_ManagementPath_IsClass#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath_IsClass/cs/ManagementPath_IsClass.cs#1)]
- [!code-vb[wminet_ManagementPath_IsClass#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath_IsClass/vb/ManagementPath_IsClass.vb#1)]  
-  
+The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object. The path that is parsed in the example is a path to an instance of a class.  
+ 
+[!code-csharp[wminet_ManagementPath_IsClass#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath_IsClass/cs/ManagementPath_IsClass.cs#1)]
+[!code-vb[wminet_ManagementPath_IsClass#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath_IsClass/vb/ManagementPath_IsClass.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,23 +249,23 @@
         <value>Returns a <see cref="T:System.Boolean" /> value indicating whether this is an instance path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- `true` if this is an instance path; otherwise, `false`.  
-  
+`true` if this is an instance path; otherwise, `false`.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object. The path that is parsed in the example is a path to an instance of a class.  
-  
- [!code-csharp[wminet_ManagementPath_IsInstance#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath_IsInstance/cs/ManagementPath_IsInstance.cs#1)]
- [!code-vb[wminet_ManagementPath_IsInstance#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath_IsInstance/vb/ManagementPath_IsInstance.vb#1)]  
-  
+The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object. The path that is parsed in the example is a path to an instance of a class.  
+ 
+[!code-csharp[wminet_ManagementPath_IsInstance#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath_IsInstance/cs/ManagementPath_IsInstance.cs#1)]
+[!code-vb[wminet_ManagementPath_IsInstance#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath_IsInstance/vb/ManagementPath_IsInstance.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,15 +287,15 @@
         <value>Returns a <see cref="T:System.Boolean" /> value indicating whether this is a singleton instance path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- `true` if this is a singleton instance path; otherwise, `false`.  
-  
+`true` if this is a singleton instance path; otherwise, `false`.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -322,23 +322,23 @@
         <value>Returns a <see cref="T:System.String" /> value containing the namespace part of the path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- A string containing the namespace portion of the path represented in this object.  
-  
+A string containing the namespace portion of the path represented in this object.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object.  The path that is parsed in the example is a path to an instance of a class.  
-  
- [!code-csharp[wminet_ManagementPath_NamespacePath#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath_NamespacePath/cs/ManagementPath_NamespacePath.cs#1)]
- [!code-vb[wminet_ManagementPath_NamespacePath#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath_NamespacePath/vb/ManagementPath_NamespacePath.vb#1)]  
-  
+The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object.  The path that is parsed in the example is a path to an instance of a class.  
+ 
+[!code-csharp[wminet_ManagementPath_NamespacePath#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath_NamespacePath/cs/ManagementPath_NamespacePath.cs#1)]
+[!code-vb[wminet_ManagementPath_NamespacePath#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath_NamespacePath/vb/ManagementPath_NamespacePath.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -365,23 +365,23 @@
         <value>Returns a <see cref="T:System.String" /> value containing the full path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- A string containing the full path represented in this object.  
-  
+A string containing the full path represented in this object.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object.  The path that is parsed in the example is a path to an instance of a class.  
-  
- [!code-csharp[wminet_ManagementPath_Path#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath_Path/cs/ManagementPath_Path.cs#1)]
- [!code-vb[wminet_ManagementPath_Path#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath_Path/vb/ManagementPath_Path.vb#1)]  
-  
+The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object.  The path that is parsed in the example is a path to an instance of a class.  
+ 
+[!code-csharp[wminet_ManagementPath_Path#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath_Path/cs/ManagementPath_Path.cs#1)]
+[!code-vb[wminet_ManagementPath_Path#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath_Path/vb/ManagementPath_Path.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -408,23 +408,23 @@
         <value>Returns a <see cref="T:System.String" /> value containing the relative path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- A string containing the relative path (not including the server and namespace portions) represented in this object.  
-  
+A string containing the relative path (not including the server and namespace portions) represented in this object.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object.  The path that is parsed in the example is a path to an instance of a class.  
-  
- [!code-csharp[wminet_ManagementPath_RelativePath#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath_RelativePath/cs/ManagementPath_RelativePath.cs#1)]
- [!code-vb[wminet_ManagementPath_RelativePath#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath_RelativePath/vb/ManagementPath_RelativePath.vb#1)]  
-  
+The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object.  The path that is parsed in the example is a path to an instance of a class.  
+ 
+[!code-csharp[wminet_ManagementPath_RelativePath#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath_RelativePath/cs/ManagementPath_RelativePath.cs#1)]
+[!code-vb[wminet_ManagementPath_RelativePath#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath_RelativePath/vb/ManagementPath_RelativePath.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -451,23 +451,23 @@
         <value>Returns a <see cref="T:System.String" /> value containing the server name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- A string containing the server name from the path represented in this object.  
-  
+A string containing the server name from the path represented in this object.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object.  The path that is parsed in the example is a path to an instance of a class.  
-  
- [!code-csharp[wminet_ManagementPath_Server#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath_Server/cs/ManagementPath_Server.cs#1)]
- [!code-vb[wminet_ManagementPath_Server#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath_Server/vb/ManagementPath_Server.vb#1)]  
-  
+The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object.  The path that is parsed in the example is a path to an instance of a class.  
+ 
+[!code-csharp[wminet_ManagementPath_Server#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath_Server/cs/ManagementPath_Server.cs#1)]
+[!code-vb[wminet_ManagementPath_Server#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath_Server/vb/ManagementPath_Server.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -489,12 +489,12 @@
         <summary>Sets the path as a new class path. This means that the path must have a class name but not key values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -516,12 +516,12 @@
         <summary>Sets the path as a new *singleton* object path. This means that it is a path to an instance but there are no key values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -544,12 +544,12 @@
         <returns>A new object that is a copy of this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -572,12 +572,12 @@
         <returns>A string containing the full object path represented by this object. This value is equivalent to the value of the <see cref="P:System.Management.ManagementPath.Path" /> property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

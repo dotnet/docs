@@ -26,16 +26,16 @@
     <summary>Represents an Active Directory role in a Windows Workflow Foundation hosting environment. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- Typically, the Active Directory store is used for storing organizational information for personnel. The main purpose for the <xref:System.Workflow.Activities.ActiveDirectoryRole> is for making queries against such organizational information for business reasons.  
-  
- Active Directory roles typically correspond to a job function, title, or job skill within the context of the organization.  
-  
+ 
+Typically, the Active Directory store is used for storing organizational information for personnel. The main purpose for the <xref:System.Workflow.Activities.ActiveDirectoryRole> is for making queries against such organizational information for business reasons.  
+ 
+Active Directory roles typically correspond to a job function, title, or job skill within the context of the organization.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,10 +58,10 @@
         <returns>A <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> that contains all the roles that either directly or indirectly report to the current role.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.ActiveDirectoryRole.GetAllReports%2A> returns all nodes below the current node. Use <xref:System.Workflow.Activities.ActiveDirectoryRole.GetDirectReports%2A> to return only the nodes that are directly below the current node.  
-  
+<xref:System.Workflow.Activities.ActiveDirectoryRole.GetAllReports%2A> returns all nodes below the current node. Use <xref:System.Workflow.Activities.ActiveDirectoryRole.GetDirectReports%2A> to return only the nodes that are directly below the current node.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,10 +84,10 @@
         <returns>An <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> that contains all the roles that directly report to the current role.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.ActiveDirectoryRole.GetDirectReports%2A> returns only the nodes that are directly below the current node. To return all nodes below the current node use <xref:System.Workflow.Activities.ActiveDirectoryRole.GetAllReports%2A>.  
-  
+<xref:System.Workflow.Activities.ActiveDirectoryRole.GetDirectReports%2A> returns only the nodes that are directly below the current node. To return all nodes below the current node use <xref:System.Workflow.Activities.ActiveDirectoryRole.GetAllReports%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
         <returns>The generic <see cref="T:System.DirectoryServices.DirectoryEntry" /> collection that is associated with the current <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A role can be a general collection of security objects. As such, a role can contain multiple identities, for example use <xref:System.Workflow.Activities.ActiveDirectoryRole.GetEntries%2A> to return all directory objects associated with the role.  
-  
+A role can be a general collection of security objects. As such, a role can contain multiple identities, for example use <xref:System.Workflow.Activities.ActiveDirectoryRole.GetEntries%2A> to return all directory objects associated with the role.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,10 +136,10 @@
         <returns>A generic list of values that represent the Windows NT accounts associated with the <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.ActiveDirectoryRole.GetIdentities%2A> obtains all <xref:System.Security.Principal.SecurityIdentifier> objects associated with the <xref:System.Workflow.Activities.ActiveDirectoryRole> and converts each of them into a string value.  
-  
+<xref:System.Workflow.Activities.ActiveDirectoryRole.GetIdentities%2A> obtains all <xref:System.Security.Principal.SecurityIdentifier> objects associated with the <xref:System.Workflow.Activities.ActiveDirectoryRole> and converts each of them into a string value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,10 +162,10 @@
         <returns>The <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> that contains information about the manager of the current role.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.ActiveDirectoryRole.GetManager%2A> returns the direct manager for the current role. To return all roles above the current node, use <xref:System.Workflow.Activities.ActiveDirectoryRole.GetManagerialChain%2A>.  
-  
+<xref:System.Workflow.Activities.ActiveDirectoryRole.GetManager%2A> returns the direct manager for the current role. To return all roles above the current node, use <xref:System.Workflow.Activities.ActiveDirectoryRole.GetManagerialChain%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,10 +188,10 @@
         <returns>The <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> that contains information about the managerial chain associated with the current role.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.ActiveDirectoryRole.GetManagerialChain%2A> returns all nodes above the current role. To return just the direct manager of the current role, use <xref:System.Workflow.Activities.ActiveDirectoryRole.GetManager%2A>.  
-  
+<xref:System.Workflow.Activities.ActiveDirectoryRole.GetManagerialChain%2A> returns all nodes above the current role. To return just the direct manager of the current role, use <xref:System.Workflow.Activities.ActiveDirectoryRole.GetManager%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,10 +214,10 @@
         <returns>A <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> that contains information about all directory operations that are supervised by the manager of the current <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.Activities.ActiveDirectoryRole> returned contains information from all objects managed by the manager of this role but does not contain this information from the current role.  
-  
+The <xref:System.Workflow.Activities.ActiveDirectoryRole> returned contains information from all objects managed by the manager of this role but does not contain this information from the current role.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -240,10 +240,10 @@
         <returns>A generic list of <see cref="T:System.Security.Principal.SecurityIdentifier" /> objects associated with the current <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.ActiveDirectoryRole.GetSecurityIdentifiers%2A> checks each <xref:System.DirectoryServices.DirectoryEntry> returned by the <xref:System.Workflow.Activities.ActiveDirectoryRole.GetEntries%2A> method to see if the entry has a security identifier in its <xref:System.DirectoryServices.DirectoryEntry.Properties%2A> collection. If the <xref:System.DirectoryServices.DirectoryEntry> has such a property, <xref:System.Workflow.Activities.ActiveDirectoryRole.GetSecurityIdentifiers%2A> adds a <xref:System.Security.Principal.SecurityIdentifier> to the list it returns.  
-  
+<xref:System.Workflow.Activities.ActiveDirectoryRole.GetSecurityIdentifiers%2A> checks each <xref:System.DirectoryServices.DirectoryEntry> returned by the <xref:System.Workflow.Activities.ActiveDirectoryRole.GetEntries%2A> method to see if the entry has a security identifier in its <xref:System.DirectoryServices.DirectoryEntry.Properties%2A> collection. If the <xref:System.DirectoryServices.DirectoryEntry> has such a property, <xref:System.Workflow.Activities.ActiveDirectoryRole.GetSecurityIdentifiers%2A> adds a <xref:System.Security.Principal.SecurityIdentifier> to the list it returns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,10 +270,10 @@
           <see langword="true" /> to indicate that <paramref name="identity" /> is included in the <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because a role is a generalization of one or more objects, many identities may be described by a single role. Use <xref:System.Workflow.Activities.ActiveDirectoryRole.IncludesIdentity%2A> to test that a specified identity is included within this role.  
-  
+Because a role is a generalization of one or more objects, many identities may be described by a single role. Use <xref:System.Workflow.Activities.ActiveDirectoryRole.IncludesIdentity%2A> to test that a specified identity is included within this role.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,10 +295,10 @@
         <value>The Active Directory role name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the name to describe the role.  
-  
+Use the name to describe the role.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -320,10 +320,10 @@
         <value>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> that represents the root Active Directory node associated with the <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The root entry is the role up the chain of roles that has no manager.  
-  
+The root entry is the role up the chain of roles that has no manager.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -368,10 +368,10 @@
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data required to serialize the target object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The implementation of <xref:System.Workflow.Activities.ActiveDirectoryRole.System.Runtime.Serialization.ISerializable.GetObjectData%2A> allows this object to be serialized.  
-  
+The implementation of <xref:System.Workflow.Activities.ActiveDirectoryRole.System.Runtime.Serialization.ISerializable.GetObjectData%2A> allows this object to be serialized.  
+ 
  ]]></format>
         </remarks>
       </Docs>

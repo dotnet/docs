@@ -19,12 +19,12 @@
     <summary>Represents a variable-length argument list; that is, the parameters of a function that takes a variable number of arguments.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Developers who write compilers use the <xref:System.ArgIterator> structure to enumerate the mandatory and optional arguments in an argument list. The <xref:System.ArgIterator> structure is not generally useful for applications other than compilers.  
-  
- The functionality in the <xref:System.ArgIterator> structure is typically hidden in the syntax of a specific programming language. For example, in the C++ programming language you declare a variable-length argument list by specifying an ellipsis ("...") at the end of the argument list. The <xref:System.ArgIterator> structure is useful primarily when a development language does not provide direct support for accessing variable-length parameters.  
-  
+Developers who write compilers use the <xref:System.ArgIterator> structure to enumerate the mandatory and optional arguments in an argument list. The <xref:System.ArgIterator> structure is not generally useful for applications other than compilers.  
+ 
+The functionality in the <xref:System.ArgIterator> structure is typically hidden in the syntax of a specific programming language. For example, in the C++ programming language you declare a variable-length argument list by specifying an ellipsis ("...") at the end of the argument list. The <xref:System.ArgIterator> structure is useful primarily when a development language does not provide direct support for accessing variable-length parameters.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,10 +51,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ArgIterator" /> structure using the specified argument list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new <xref:System.ArgIterator> object enumerates the argument list starting from the first optional argument.  
-  
+The new <xref:System.ArgIterator> object enumerates the argument list starting from the first optional argument.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ArgIterator" /> structure using the specified argument list and a pointer to an item in the list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new <xref:System.ArgIterator> object enumerates the argument list starting from the argument specified by `ptr`, or the first mandatory argument if `ptr` is `null`.  
-  
+The new <xref:System.ArgIterator> object enumerates the argument list starting from the argument specified by `ptr`, or the first mandatory argument if `ptr` is `null`.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -119,12 +119,12 @@
         <summary>Concludes processing of the variable-length argument list represented by this instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conceptually, <xref:System.ArgIterator.End%2A> concludes the processing of a variable-length argument list. However, this method has no actual implementation; the <xref:System.ArgIterator.End%2A> method body is empty. You can use this method in your code as a marker to indicate where variable-length argument list processing logically ends.  
-  
- The <xref:System.ArgIterator.End%2A> method corresponds to the `va_end` method in the C standard library.  
-  
+Conceptually, <xref:System.ArgIterator.End%2A> concludes the processing of a variable-length argument list. However, this method has no actual implementation; the <xref:System.ArgIterator.End%2A> method body is empty. You can use this method in your code as a marker to indicate where variable-length argument list processing logically ends.  
+ 
+The <xref:System.ArgIterator.End%2A> method corresponds to the `va_end` method in the C standard library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,10 +209,10 @@
         <returns>The next argument as a <see cref="T:System.TypedReference" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The iterator is automatically advanced to the next argument.  
-  
+The iterator is automatically advanced to the next argument.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to read beyond the end of the list.</exception>
@@ -249,10 +249,10 @@
         <returns>The next argument as a <see cref="T:System.TypedReference" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The iterator is automatically advanced to the next argument.  
-  
+The iterator is automatically advanced to the next argument.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to read beyond the end of the list.</exception>
@@ -282,12 +282,12 @@
         <returns>The type of the next argument.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not advance the iterator to the next argument.  
-  
- <xref:System.ArgIterator.GetNextArgType%2A> returns the type of the argument as specified in the calling function. For example, if an argument is type <xref:System.String>, but the calling function specifies the argument as type <xref:System.Object>, <xref:System.ArgIterator.GetNextArgType%2A> reports the argument as type <xref:System.Object>.  
-  
+This method does not advance the iterator to the next argument.  
+ 
+<xref:System.ArgIterator.GetNextArgType%2A> returns the type of the argument as specified in the calling function. For example, if an argument is type <xref:System.String>, but the calling function specifies the argument as type <xref:System.Object>, <xref:System.ArgIterator.GetNextArgType%2A> reports the argument as type <xref:System.Object>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -30,29 +30,29 @@
     <summary>Represents a collection of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ComponentModel.PropertyDescriptorCollection> is read-only; it does not implement methods that add or remove properties. You must inherit from this class to implement these methods.  
+<xref:System.ComponentModel.PropertyDescriptorCollection> is read-only; it does not implement methods that add or remove properties. You must inherit from this class to implement these methods.  
+ 
+Using the properties available in the <xref:System.ComponentModel.PropertyDescriptorCollection> class, you can query the collection about its contents. Use the <xref:System.ComponentModel.PropertyDescriptorCollection.Count%2A> property to determine the number of elements in the collection. Use the <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property to get a specific property by index number or by name.  
+ 
+In addition to properties, you can use the <xref:System.ComponentModel.PropertyDescriptorCollection.Find%2A> method to get a description of the property with the specified name from the collection.  
+ 
   
- Using the properties available in the <xref:System.ComponentModel.PropertyDescriptorCollection> class, you can query the collection about its contents. Use the <xref:System.ComponentModel.PropertyDescriptorCollection.Count%2A> property to determine the number of elements in the collection. Use the <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property to get a specific property by index number or by name.  
-  
- In addition to properties, you can use the <xref:System.ComponentModel.PropertyDescriptorCollection.Find%2A> method to get a description of the property with the specified name from the collection.  
-  
-   
-  
+ 
 ## Examples  
- The following code example creates a new <xref:System.ComponentModel.PropertyDescriptorCollection> using the properties on `button1`. It requires that `button1` has been instantiated on a form.  
-  
- [!code-cpp[Classic PropertyDescriptorCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PropertyDescriptorCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyDescriptorCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/VB/source.vb#1)]  
-  
- The next example prints all the properties on a button in a text box. It requires that `button1` and `textBox1` have been instantiated on a form.  
-  
- [!code-cpp[Classic PropertyDescriptorCollection Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/CPP/source.cpp#2)]
- [!code-csharp[Classic PropertyDescriptorCollection Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/CS/source.cs#2)]
- [!code-vb[Classic PropertyDescriptorCollection Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/VB/source.vb#2)]  
-  
+The following code example creates a new <xref:System.ComponentModel.PropertyDescriptorCollection> using the properties on `button1`. It requires that `button1` has been instantiated on a form.  
+ 
+[!code-cpp[Classic PropertyDescriptorCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PropertyDescriptorCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyDescriptorCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/VB/source.vb#1)]  
+ 
+The next example prints all the properties on a button in a text box. It requires that `button1` and `textBox1` have been instantiated on a form.  
+ 
+[!code-cpp[Classic PropertyDescriptorCollection Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/CPP/source.cpp#2)]
+[!code-csharp[Classic PropertyDescriptorCollection Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/CS/source.cs#2)]
+[!code-vb[Classic PropertyDescriptorCollection Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection Example/VB/source.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -263,19 +263,19 @@
         <value>The number of property descriptors in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.ComponentModel.PropertyDescriptorCollection.Count%2A> property to set the limits of a loop that iterates through a collection of objects. Because the collection is zero-based, be sure to use `Count - 1` as the upper boundary of the loop.  
+You can use the <xref:System.ComponentModel.PropertyDescriptorCollection.Count%2A> property to set the limits of a loop that iterates through a collection of objects. Because the collection is zero-based, be sure to use `Count - 1` as the upper boundary of the loop.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.ComponentModel.PropertyDescriptorCollection.Count%2A> property to print the number of properties on `button1`. It requires that `button1` and `textBox1` have been instantiated on a form.  
-  
- [!code-cpp[Classic PropertyDescriptorCollection.Count Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Count Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PropertyDescriptorCollection.Count Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Count Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyDescriptorCollection.Count Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Count Example/VB/source.vb#1)]  
-  
+The following code example uses the <xref:System.ComponentModel.PropertyDescriptorCollection.Count%2A> property to print the number of properties on `button1`. It requires that `button1` and `textBox1` have been instantiated on a form.  
+ 
+[!code-cpp[Classic PropertyDescriptorCollection.Count Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Count Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PropertyDescriptorCollection.Count Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Count Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyDescriptorCollection.Count Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Count Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -339,14 +339,14 @@
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> with the specified name, or <see langword="null" /> if the property does not exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example finds a specific <xref:System.ComponentModel.PropertyDescriptor>. It prints the type of component for this <xref:System.ComponentModel.PropertyDescriptor> in a text box. It requires that `button1` and `textBox1` have been instantiated on a form.  
-  
- [!code-cpp[Classic PropertyDescriptorCollection.Find Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Find Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PropertyDescriptorCollection.Find Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Find Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyDescriptorCollection.Find Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Find Example/VB/source.vb#1)]  
-  
+The following code example finds a specific <xref:System.ComponentModel.PropertyDescriptor>. It prints the type of component for this <xref:System.ComponentModel.PropertyDescriptor> in a text box. It requires that `button1` and `textBox1` have been instantiated on a form.  
+ 
+[!code-cpp[Classic PropertyDescriptorCollection.Find Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Find Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PropertyDescriptorCollection.Find Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Find Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyDescriptorCollection.Find Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.Find Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -378,14 +378,14 @@
         <returns>An enumerator of type <see cref="T:System.Collections.IEnumerator" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example gets an enumerator for the properties on `button1`. It uses the enumerator to print the names of the properties in the collection. It requires that `button1` and `textBox1` have been instantiated on a form.  
-  
- [!code-cpp[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/VB/source.vb#1)]  
-  
+The following code example gets an enumerator for the properties on `button1`. It uses the enumerator to print the names of the properties in the collection. It requires that `button1` and `textBox1` have been instantiated on a form.  
+ 
+[!code-cpp[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -513,14 +513,14 @@
         <summary>Sorts the members of this collection. The specified order is applied first, followed by the default sort for this collection, which is usually alphabetical.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example defines the sort order for the <xref:System.ComponentModel.PropertyDescriptorCollection.InternalSort%2A> method. If the <xref:System.ComponentModel.PropertyDescriptorCollection> contains four <xref:System.ComponentModel.PropertyDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
-  
- [!code-cpp[Classic EventDescriptorCollection.InternalSort Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.InternalSort Example/CPP/source.cpp#1)]
- [!code-csharp[Classic EventDescriptorCollection.InternalSort Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.InternalSort Example/CS/source.cs#1)]
- [!code-vb[Classic EventDescriptorCollection.InternalSort Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.InternalSort Example/VB/source.vb#1)]  
-  
+The following code example defines the sort order for the <xref:System.ComponentModel.PropertyDescriptorCollection.InternalSort%2A> method. If the <xref:System.ComponentModel.PropertyDescriptorCollection> contains four <xref:System.ComponentModel.PropertyDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
+ 
+[!code-cpp[Classic EventDescriptorCollection.InternalSort Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.InternalSort Example/CPP/source.cpp#1)]
+[!code-csharp[Classic EventDescriptorCollection.InternalSort Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.InternalSort Example/CS/source.cs#1)]
+[!code-vb[Classic EventDescriptorCollection.InternalSort Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.InternalSort Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -555,19 +555,19 @@
         <value>The <see cref="T:System.ComponentModel.PropertyDescriptor" /> with the specified index number.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The index number is zero-based. Therefore, you must subtract 1 from the numerical position of a particular <xref:System.ComponentModel.PropertyDescriptor> to access that <xref:System.ComponentModel.PropertyDescriptor>. For example, to get the third <xref:System.ComponentModel.PropertyDescriptor>, you need to specify `myColl[2]`.  
+The index number is zero-based. Therefore, you must subtract 1 from the numerical position of a particular <xref:System.ComponentModel.PropertyDescriptor> to access that <xref:System.ComponentModel.PropertyDescriptor>. For example, to get the third <xref:System.ComponentModel.PropertyDescriptor>, you need to specify `myColl[2]`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property to print the name of the <xref:System.ComponentModel.PropertyDescriptor> specified by the index number in a text box. Because the index number is zero-based, this example prints the name of the second <xref:System.ComponentModel.PropertyDescriptor>. It requires that `button1` has been instantiated on a form.  
-  
- [!code-cpp[Classic PropertyDescriptorCollection.this Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PropertyDescriptorCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyDescriptorCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this Example/VB/source.vb#1)]  
-  
+The following code example uses the <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property to print the name of the <xref:System.ComponentModel.PropertyDescriptor> specified by the index number in a text box. Because the index number is zero-based, this example prints the name of the second <xref:System.ComponentModel.PropertyDescriptor>. It requires that `button1` has been instantiated on a form.  
+ 
+[!code-cpp[Classic PropertyDescriptorCollection.this Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PropertyDescriptorCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyDescriptorCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is not a valid index for <see cref="P:System.ComponentModel.PropertyDescriptorCollection.Item(System.Int32)" />.</exception>
@@ -603,19 +603,19 @@
         <value>The <see cref="T:System.ComponentModel.PropertyDescriptor" /> with the specified name, or <see langword="null" /> if the property does not exist.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property is case-sensitive when searching for names. That is, the names "Pname" and "pname" are considered to be two different properties.  
+The <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property is case-sensitive when searching for names. That is, the names "Pname" and "pname" are considered to be two different properties.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property to print the type of component for the <xref:System.ComponentModel.PropertyDescriptor> specified by the index. It requires that `button1` and `textBox1` have been instantiated on a form.  
-  
- [!code-cpp[Classic PropertyDescriptorCollection.this1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PropertyDescriptorCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this1 Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyDescriptorCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this1 Example/VB/source.vb#1)]  
-  
+The following code example uses the <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property to print the type of component for the <xref:System.ComponentModel.PropertyDescriptor> specified by the index. It requires that `button1` and `textBox1` have been instantiated on a form.  
+ 
+[!code-cpp[Classic PropertyDescriptorCollection.this1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PropertyDescriptorCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this1 Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyDescriptorCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.this1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -771,14 +771,14 @@
         <returns>A new <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the sorted <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example defines the sort order for the <xref:System.ComponentModel.PropertyDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.PropertyDescriptorCollection> contains four <xref:System.ComponentModel.PropertyDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
-  
- [!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
- [!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]
- [!code-vb[classic eventdescriptorcollection.sort example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/VB/source.vb#1)]  
-  
+The following code example defines the sort order for the <xref:System.ComponentModel.PropertyDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.PropertyDescriptorCollection> contains four <xref:System.ComponentModel.PropertyDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
+ 
+[!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
+[!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]
+[!code-vb[classic eventdescriptorcollection.sort example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -815,14 +815,14 @@
         <returns>A new <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the sorted <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example defines the sort order for the <xref:System.ComponentModel.PropertyDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.PropertyDescriptorCollection> contains four <xref:System.ComponentModel.PropertyDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
-  
- [!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
- [!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]
- [!code-vb[classic eventdescriptorcollection.sort example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/VB/source.vb#1)]  
-  
+The following code example defines the sort order for the <xref:System.ComponentModel.PropertyDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.PropertyDescriptorCollection> contains four <xref:System.ComponentModel.PropertyDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
+ 
+[!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
+[!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]
+[!code-vb[classic eventdescriptorcollection.sort example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1022,14 +1022,14 @@
         <returns>An enumerator of type <see cref="T:System.Collections.IEnumerator" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example gets an enumerator for the properties on `button1`. It uses the enumerator to print the names of the properties in the collection. It requires that `button1` and `textBox1` have been instantiated on a form.  
-  
- [!code-cpp[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/VB/source.vb#1)]  
-  
+The following code example gets an enumerator for the properties on `button1`. It uses the enumerator to print the names of the properties in the collection. It requires that `button1` and `textBox1` have been instantiated on a form.  
+ 
+[!code-cpp[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyDescriptorCollection.GetEnumerator Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

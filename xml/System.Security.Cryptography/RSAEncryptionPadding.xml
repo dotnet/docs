@@ -97,10 +97,10 @@
           <see langword="true" /> if <paramref name="obj" /> is equal to the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `obj` is equal to the current instance if it is a <xref:System.Security.Cryptography.RSAEncryptionPadding> object and the two objects have identical <xref:System.Security.Cryptography.RSAEncryptionPadding.Mode%2A> and <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm%2A> property values.  
-  
+`obj` is equal to the current instance if it is a <xref:System.Security.Cryptography.RSAEncryptionPadding> object and the two objects have identical <xref:System.Security.Cryptography.RSAEncryptionPadding.Mode%2A> and <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm%2A> property values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
           <see langword="true" /> if <paramref name="other" /> is equal to the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `instance` and the current instance are equal if they have identical <xref:System.Security.Cryptography.RSAEncryptionPadding.Mode%2A> and <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm%2A> property values.  
-  
+`instance` and the current instance are equal if they have identical <xref:System.Security.Cryptography.RSAEncryptionPadding.Mode%2A> and <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm%2A> property values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,10 +385,10 @@
           <see langword="true" /> if <see langword="left" /> and <see langword="right" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.Security.Cryptography.RSAEncryptionPadding> objects are equal if their <xref:System.Security.Cryptography.RSAEncryptionPadding.Mode%2A> and <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm%2A> property values are equal.  
-  
+Two <xref:System.Security.Cryptography.RSAEncryptionPadding> objects are equal if their <xref:System.Security.Cryptography.RSAEncryptionPadding.Mode%2A> and <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm%2A> property values are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -428,10 +428,10 @@
           <see langword="true" /> if <see langword="left" /> and <see langword="right" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.Security.Cryptography.RSAEncryptionPadding> objects are not equal if their <xref:System.Security.Cryptography.RSAEncryptionPadding.Mode%2A> and <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm%2A> property values are not equal.  
-  
+Two <xref:System.Security.Cryptography.RSAEncryptionPadding> objects are not equal if their <xref:System.Security.Cryptography.RSAEncryptionPadding.Mode%2A> and <xref:System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm%2A> property values are not equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -494,10 +494,10 @@
         <returns>The string representation of the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string representation of a <xref:System.Security.Cryptography.RSAEncryptionPadding> object is the concatenation of its <xref:System.Security.Cryptography.RSAEncryptionPadding.Mode%2A> and `OaepHashAlgorithm.Name` properties.  
-  
+The string representation of a <xref:System.Security.Cryptography.RSAEncryptionPadding> object is the concatenation of its <xref:System.Security.Cryptography.RSAEncryptionPadding.Mode%2A> and `OaepHashAlgorithm.Name` properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -28,23 +28,23 @@
     <summary>Specifies the name of the property that an implementer of <see cref="T:System.ComponentModel.IExtenderProvider" /> offers to other components. This class cannot be inherited</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you mark a class with this attribute, you tell the code generator to create an extender property with the name you provide. The marked class must implement <xref:System.ComponentModel.IExtenderProvider>. As a result, the new property can be used by other components in a container.  
+When you mark a class with this attribute, you tell the code generator to create an extender property with the name you provide. The marked class must implement <xref:System.ComponentModel.IExtenderProvider>. As a result, the new property can be used by other components in a container.  
+ 
+Within the marked class, you must implement `Get` \<name> and `Set` \<name> methods. For example, if you mark a class with [ProvideProperty("PropertyName")], you must implement `GetPropertyName` and `SetPropertyName` methods. To specify that the new property will be an extender property, you must implement from <xref:System.ComponentModel.IExtenderProvider>, you must also implement a `CanExtend` method.  
+ 
+For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
   
- Within the marked class, you must implement `Get` \<name> and `Set` \<name> methods. For example, if you mark a class with [ProvideProperty("PropertyName")], you must implement `GetPropertyName` and `SetPropertyName` methods. To specify that the new property will be an extender property, you must implement from <xref:System.ComponentModel.IExtenderProvider>, you must also implement a `CanExtend` method.  
-  
- For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
-   
-  
+ 
 ## Examples  
- The following example marks `MyClass` with a <xref:System.ComponentModel.ProvidePropertyAttribute> that tells the compiler to create a property called `MyProperty` from the `GetMyProperty` and `SetMyProperty` methods.  
-  
- [!code-cpp[Classic ProvidePropertyAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ProvidePropertyAttribute Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ProvidePropertyAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ProvidePropertyAttribute Example/CS/source.cs#1)]
- [!code-vb[Classic ProvidePropertyAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ProvidePropertyAttribute Example/VB/source.vb#1)]  
-  
+The following example marks `MyClass` with a <xref:System.ComponentModel.ProvidePropertyAttribute> that tells the compiler to create a property called `MyProperty` from the `GetMyProperty` and `SetMyProperty` methods.  
+ 
+[!code-cpp[Classic ProvidePropertyAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ProvidePropertyAttribute Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ProvidePropertyAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ProvidePropertyAttribute Example/CS/source.cs#1)]
+[!code-vb[Classic ProvidePropertyAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ProvidePropertyAttribute Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -23,12 +23,12 @@
     <summary>Represents an abstract class that [!INCLUDE[indigo1](~/includes/indigo1-md.md)] derives from <see cref="T:System.Xml.XmlWriter" /> to do serialization and deserialization.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can derive from this class to do other functions than serialization.  
-  
- Note that there is a known issue with the normalization of linefeed characters inside of CDATA sections that you may encounter.  
-  
+You can derive from this class to do other functions than serialization.  
+ 
+Note that there is a known issue with the normalization of linefeed characters inside of CDATA sections that you may encounter.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,10 +56,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlDictionaryWriter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Invoked only by its derived classes because this class is abstract.  
-  
+Invoked only by its derived classes because this class is abstract.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,10 +91,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns `true` if and only if this derived class of <xref:System.Xml.XmlDictionaryWriter> can canonicalize the XML content being written to it, according to the Exclusive XML Canonicalization rules as defined in [Exclusive XML Canonicalization Version 1.0](http://go.microsoft.com/fwlink/?LinkId=96655).  
-  
+Returns `true` if and only if this derived class of <xref:System.Xml.XmlDictionaryWriter> can canonicalize the XML content being written to it, according to the Exclusive XML Canonicalization rules as defined in [Exclusive XML Canonicalization Version 1.0](http://go.microsoft.com/fwlink/?LinkId=96655).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -375,10 +375,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The text writer writes the XML in UTF-8 format.  
-  
+The text writer writes the XML in UTF-8 format.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -415,10 +415,10 @@
         <returns>An instance of <see cref="T:System.Xml.XmlDictionaryWriter" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An instance of <xref:System.Xml.XmlDictionaryWriter>.  
-  
+An instance of <xref:System.Xml.XmlDictionaryWriter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -485,10 +485,10 @@
         <summary>When implemented by a derived class, it stops the canonicalization started by the matching <see cref="M:System.Xml.XmlDictionaryWriter.StartCanonicalization(System.IO.Stream,System.Boolean,System.String[])" /> call.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not yet implemented.  
-  
+This method is not yet implemented.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Method is not implemented yet.</exception>
@@ -528,10 +528,10 @@
         <summary>When implemented by a derived class, it starts the canonicalization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not yet implemented.  
-  
+This method is not yet implemented.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Method is not implemented yet.</exception>
@@ -1517,10 +1517,10 @@
         <returns>The task that represents the asynchronous <see langword="WriteBase64" /> operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To use this method, you must set the <xref:System.Xml.XmlWriterSettings.Async%2A> flag to `true`.  
-  
+To use this method, you must set the <xref:System.Xml.XmlWriterSettings.Async%2A> flag to `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
@@ -1697,12 +1697,12 @@
         <summary>Writes out the namespace-qualified name. This method looks up the prefix that is in scope for the given namespace.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the namespace maps to the current default namespace, no prefix is generated.  
-  
- When writing attribute values, this method generates a prefix if the namespace is not found. When writing element content, it throws an exception if the namespace is not found.  
-  
+If the namespace maps to the current default namespace, no prefix is generated.  
+ 
+When writing attribute values, this method generates a prefix if the namespace is not found. When writing element content, it throws an exception if the namespace is not found.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1905,10 +1905,10 @@
         <summary>Writes the text node that an <see cref="T:System.Xml.XmlDictionaryReader" /> is currently positioned on.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If positioned on element content, this method advances the XmlDictionaryReader.  
-  
+If positioned on element content, this method advances the XmlDictionaryReader.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1998,12 +1998,12 @@
         <summary>Writes a value from an <see cref="T:System.Xml.IStreamProvider" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contents of the stream provided by the `IStreamProvider` are written as Base64 data, unless this method is overridden in a derived class.  
-  
- For the asynchronous version of this method, see <xref:System.Xml.XmlDictionaryWriter.WriteValueAsync%2A>.  
-  
+The contents of the stream provided by the `IStreamProvider` are written as Base64 data, unless this method is overridden in a derived class.  
+ 
+For the asynchronous version of this method, see <xref:System.Xml.XmlDictionaryWriter.WriteValueAsync%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2101,10 +2101,10 @@
         <returns>The task that represents the asynchronous <see langword="WriteValue" /> operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the asynchronous version of <xref:System.Xml.XmlDictionaryWriter.WriteValue%2A>, with the same functionality. To use this method, you must set the <xref:System.Xml.XmlWriterSettings.Async%2A> flag to `true`.  
-  
+This is the asynchronous version of <xref:System.Xml.XmlDictionaryWriter.WriteValue%2A>, with the same functionality. To use this method, you must set the <xref:System.Xml.XmlWriterSettings.Async%2A> flag to `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
@@ -2252,10 +2252,10 @@
         <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes XML in the Message Transmission Optimization Mechanism (MTOM) format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- MTOM allows users to optimize the transmission of raw binary data within SOAP messages.  
-  
+MTOM allows users to optimize the transmission of raw binary data within SOAP messages.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2269,10 +2269,10 @@
         <summary>Writes a standard XML attribute in the current element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A standard XML attribute is one with the prefix "xml" in any casing. Examples are `xml:space` and `xml:lang`.  
-  
+A standard XML attribute is one with the prefix "xml" in any casing. Examples are `xml:space` and `xml:lang`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2286,10 +2286,10 @@
         <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryWriter" /> that writes [!INCLUDE[indigo2](~/includes/indigo2-md.md)] binary XML format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The binary format only supports one text node as the attribute value and therefore buffers the values written to it to emit a single node, as shown in the following sample code.  
-  
+The binary format only supports one text node as the attribute value and therefore buffers the values written to it to emit a single node, as shown in the following sample code.  
+ 
 ```  
 XmlWriter binarywriter = XmlDictionaryWriter.CreateBinaryWriter(Stream.Null);  
 binarywriter.WriteStartAttribute("StartAttribute");  
@@ -2301,9 +2301,9 @@ for (int i = 0; i < 10000; i++)
 binarywriter.WriteEndAttribute();  
   
 ```  
-  
- In the previous sample the code buffers about 1 GB of memory, while in the other writers it writes the values as they are provided.  
-  
+ 
+In the previous sample the code buffers about 1 GB of memory, while in the other writers it writes the values as they are provided.  
+ 
  ]]></format>
         </remarks>
       </Docs>

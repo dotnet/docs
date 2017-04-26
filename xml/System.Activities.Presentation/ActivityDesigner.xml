@@ -14,17 +14,17 @@
     <summary>Provides a base class for all activity designer components.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type provides the basic look-and-feel functionality for other activity designers and allows a developer to add additional capabilities to an activity designer surface. This is typically done in order to either display additional interesting information to the user of the activity, create a better on canvas editing experience  (for example, using the `ExpressionTextBox` on an `If` activity designer), or to allow contained elements to be edited (again, consider the <xref:System.Activities.Statements.If.Then%2A> and <xref:System.Activities.Statements.If.Else%2A> properties of the <xref:System.Activities.Statements.If> activity).  
+This type provides the basic look-and-feel functionality for other activity designers and allows a developer to add additional capabilities to an activity designer surface. This is typically done in order to either display additional interesting information to the user of the activity, create a better on canvas editing experience  (for example, using the `ExpressionTextBox` on an `If` activity designer), or to allow contained elements to be edited (again, consider the <xref:System.Activities.Statements.If.Then%2A> and <xref:System.Activities.Statements.If.Else%2A> properties of the <xref:System.Activities.Statements.If> activity).  
+ 
+The <xref:System.Activities.Presentation.ActivityDesigner> inherits from <xref:System.Activities.Presentation.WorkflowViewElement> and primarily adds the default styling, as well as the ability to customize the icon via the <xref:System.Activities.Presentation.ActivityDesigner.Icon%2A> property. It should be used whenever you are creating a designer for a type which derives from <xref:System.Activities.Activity>. When associated with an <xref:System.Activities.Activity> type, the <xref:System.Activities.Presentation.WorkflowViewElement.ModelItem%2A> property will point to the ModelItem hierarchy describing the instance of that type being edited.  
+ 
   
- The <xref:System.Activities.Presentation.ActivityDesigner> inherits from <xref:System.Activities.Presentation.WorkflowViewElement> and primarily adds the default styling, as well as the ability to customize the icon via the <xref:System.Activities.Presentation.ActivityDesigner.Icon%2A> property. It should be used whenever you are creating a designer for a type which derives from <xref:System.Activities.Activity>. When associated with an <xref:System.Activities.Activity> type, the <xref:System.Activities.Presentation.WorkflowViewElement.ModelItem%2A> property will point to the ModelItem hierarchy describing the instance of that type being edited.  
-  
-   
-  
+ 
 ## Examples  
- In the sample code below, a `First2of3` activity is defined first, then the code for the First2of3 designer is shown, and finally it is shown how to use the Designer attribute to associate the activity with the designer is provided.  
-  
+In the sample code below, a `First2of3` activity is defined first, then the code for the First2of3 designer is shown, and finally it is shown how to use the Designer attribute to associate the activity with the designer is provided.  
+ 
 ```  
   
 //The First2of3 activity  
@@ -114,7 +114,7 @@ namespace Microsoft.Activities.Documentation.ActivityTypes
 public sealed class First2of3 : NativeActivity  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

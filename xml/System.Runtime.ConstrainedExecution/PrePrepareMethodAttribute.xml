@@ -24,10 +24,10 @@
     <summary>Instructs the native image generation service to prepare a method for inclusion in a constrained execution region (CER).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Apply the <xref:System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute> attribute to a method or constructor to tell the native image generation service that the method (and its statically determinable call graph) is to be prepared for use in a CER. This attribute is useful if the method to which it is applied will be prepared explicitly at run time, and the author of the method knows this and wants to avoid the overhead of run-time preparation.  
-  
+Apply the <xref:System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute> attribute to a method or constructor to tell the native image generation service that the method (and its statically determinable call graph) is to be prepared for use in a CER. This attribute is useful if the method to which it is applied will be prepared explicitly at run time, and the author of the method knows this and wants to avoid the overhead of run-time preparation.  
+ 
  ]]></format>
     </remarks>
   </Docs>

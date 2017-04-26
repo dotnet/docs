@@ -11,10 +11,10 @@
     <summary>Defines the properties a class must implement to support collections of expressions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Control> class implements this interface. A control designer can query an instance of a class that derives from <xref:System.Web.UI.Control> to obtain the collection of expressions and properties that are bound to the control.  
-  
+The <xref:System.Web.UI.Control> class implements this interface. A control designer can query an instance of a class that derives from <xref:System.Web.UI.Control> to obtain the collection of expressions and properties that are bound to the control.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

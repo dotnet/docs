@@ -14,20 +14,20 @@
     <summary>Collects information relevant to a warning or error returned by the data source.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is created by the <xref:System.Data.Odbc.OdbcDataAdapter> whenever an error occurs. Each instance of <xref:System.Data.Odbc.OdbcError> created by the <xref:System.Data.Odbc.OdbcDataAdapter> is then managed by the <xref:System.Data.Odbc.OdbcErrorCollection> class, which in turn is created by the <xref:System.Data.Odbc.OdbcException> class.  
+This class is created by the <xref:System.Data.Odbc.OdbcDataAdapter> whenever an error occurs. Each instance of <xref:System.Data.Odbc.OdbcError> created by the <xref:System.Data.Odbc.OdbcDataAdapter> is then managed by the <xref:System.Data.Odbc.OdbcErrorCollection> class, which in turn is created by the <xref:System.Data.Odbc.OdbcException> class.  
+ 
+If the severity of the error is too great, the server may close the <xref:System.Data.Odbc.OdbcConnection>. However, the user can reopen the connection and continue.  
+ 
   
- If the severity of the error is too great, the server may close the <xref:System.Data.Odbc.OdbcConnection>. However, the user can reopen the connection and continue.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the properties of the <xref:System.Data.Odbc.OdbcError> class.  
-  
- [!code-csharp[Classic WebData OdbcError#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError/CS/source.cs#1)]
- [!code-vb[Classic WebData OdbcError#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError/VB/source.vb#1)]  
-  
+The following example displays the properties of the <xref:System.Data.Odbc.OdbcError> class.  
+ 
+[!code-csharp[Classic WebData OdbcError#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError/CS/source.cs#1)]
+[!code-vb[Classic WebData OdbcError#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,13 +49,13 @@
         <value>A description of the error.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays the properties of the <xref:System.Data.Odbc.OdbcError>.  
-  
- [!code-csharp[Classic WebData OdbcError#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError/CS/source.cs#1)]
- [!code-vb[Classic WebData OdbcError#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError/VB/source.vb#1)]  
-  
+The following example displays the properties of the <xref:System.Data.Odbc.OdbcError>.  
+ 
+[!code-csharp[Classic WebData OdbcError#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError/CS/source.cs#1)]
+[!code-vb[Classic WebData OdbcError#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,13 +77,13 @@
         <value>The data source-specific error information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays the properties of the <xref:System.Data.Odbc.OdbcError>.  
-  
- [!code-csharp[Classic WebData OdbcError#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError/CS/source.cs#1)]
- [!code-vb[Classic WebData OdbcError#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError/VB/source.vb#1)]  
-  
+The following example displays the properties of the <xref:System.Data.Odbc.OdbcError>.  
+ 
+[!code-csharp[Classic WebData OdbcError#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError/CS/source.cs#1)]
+[!code-vb[Classic WebData OdbcError#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,13 +105,13 @@
         <value>The name of the driver that generated the error.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays the properties of an <xref:System.Data.Odbc.OdbcError>.  
-  
- [!code-csharp[Classic WebData OdbcError#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError/CS/source.cs#1)]
- [!code-vb[Classic WebData OdbcError#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError/VB/source.vb#1)]  
-  
+The following example displays the properties of an <xref:System.Data.Odbc.OdbcError>.  
+ 
+[!code-csharp[Classic WebData OdbcError#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError/CS/source.cs#1)]
+[!code-vb[Classic WebData OdbcError#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,13 +133,13 @@
         <value>The five-character error code, which identifies the source of the error if the error can be issued from more than one place.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays the properties of the <xref:System.Data.Odbc.OdbcError>.  
-  
- [!code-csharp[Classic WebData OdbcError#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError/CS/source.cs#1)]
- [!code-vb[Classic WebData OdbcError#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError/VB/source.vb#1)]  
-  
+The following example displays the properties of the <xref:System.Data.Odbc.OdbcError>.  
+ 
+[!code-csharp[Classic WebData OdbcError#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError/CS/source.cs#1)]
+[!code-vb[Classic WebData OdbcError#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,13 +162,13 @@
         <returns>The complete text of the error.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays each <xref:System.Data.Odbc.OdbcError> within the <xref:System.Data.Odbc.OdbcErrorCollection> collection.  
-  
- [!code-csharp[Classic WebData OdbcError.ToString#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError.ToString/CS/source.cs#1)]
- [!code-vb[Classic WebData OdbcError.ToString#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError.ToString/VB/source.vb#1)]  
-  
+The following example displays each <xref:System.Data.Odbc.OdbcError> within the <xref:System.Data.Odbc.OdbcErrorCollection> collection.  
+ 
+[!code-csharp[Classic WebData OdbcError.ToString#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError.ToString/CS/source.cs#1)]
+[!code-vb[Classic WebData OdbcError.ToString#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError.ToString/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

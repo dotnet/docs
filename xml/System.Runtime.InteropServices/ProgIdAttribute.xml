@@ -27,21 +27,21 @@
     <summary>Allows the user to specify the ProgID of a class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can apply this attribute to classes.  
+You can apply this attribute to classes.  
+ 
+ProgIDs are automatically generated for a class by combining the namespace with the type name. This can produce an invalid ProgID however, as ProgIDs are limited to 39 characters and can contain no punctuation other than a period. In such case, a ProgID can be manually assigned to the class using <xref:System.Runtime.InteropServices.ProgIdAttribute>.  
+ 
   
- ProgIDs are automatically generated for a class by combining the namespace with the type name. This can produce an invalid ProgID however, as ProgIDs are limited to 39 characters and can contain no punctuation other than a period. In such case, a ProgID can be manually assigned to the class using <xref:System.Runtime.InteropServices.ProgIdAttribute>.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to apply `ProgIdAttribute` on a class. The application then gets all attributes of `MyClass`, and prints the <xref:System.Runtime.InteropServices.ProgIdAttribute.Value%2A> property of `ProgIdAttribute`.  
-  
- [!code-cpp[ProgIdAttribute_Value#1](~/samples/snippets/cpp/VS_Snippets_CLR/ProgIdAttribute_Value/CPP/progidattribute_value.cpp#1)]
- [!code-csharp[ProgIdAttribute_Value#1](~/samples/snippets/csharp/VS_Snippets_CLR/ProgIdAttribute_Value/CS/progidattribute_value.cs#1)]
- [!code-vb[ProgIdAttribute_Value#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ProgIdAttribute_Value/VB/progidattribute_value.vb#1)]  
-  
+The following example demonstrates how to apply `ProgIdAttribute` on a class. The application then gets all attributes of `MyClass`, and prints the <xref:System.Runtime.InteropServices.ProgIdAttribute.Value%2A> property of `ProgIdAttribute`.  
+ 
+[!code-cpp[ProgIdAttribute_Value#1](~/samples/snippets/cpp/VS_Snippets_CLR/ProgIdAttribute_Value/CPP/progidattribute_value.cpp#1)]
+[!code-csharp[ProgIdAttribute_Value#1](~/samples/snippets/csharp/VS_Snippets_CLR/ProgIdAttribute_Value/CS/progidattribute_value.cs#1)]
+[!code-vb[ProgIdAttribute_Value#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ProgIdAttribute_Value/VB/progidattribute_value.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

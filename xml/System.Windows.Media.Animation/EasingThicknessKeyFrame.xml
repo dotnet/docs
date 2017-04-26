@@ -14,12 +14,12 @@
     <summary>A class that enables you to associate easing functions with a <see cref="T:System.Windows.Media.Animation.ThicknessAnimationUsingKeyFrames" /> key frame animation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an example of using an object similar to this one, see <xref:System.Windows.Media.Animation.EasingDoubleKeyFrame>.  
-  
- This class is used as part of a <xref:System.Windows.Media.Animation.ThicknessKeyFrameCollection> in conjunction with a <xref:System.Windows.Media.Animation.ThicknessAnimationUsingKeyFrames> to animate a <xref:System.Windows.Thickness> property value along a set of key frames. This <xref:System.Windows.Media.Animation.ThicknessKeyFrame> interpolates between the <xref:System.Windows.Thickness> value of the previous key frame and its own value linearly with an easing function to produce its output value.  
-  
+For an example of using an object similar to this one, see <xref:System.Windows.Media.Animation.EasingDoubleKeyFrame>.  
+ 
+This class is used as part of a <xref:System.Windows.Media.Animation.ThicknessKeyFrameCollection> in conjunction with a <xref:System.Windows.Media.Animation.ThicknessAnimationUsingKeyFrames> to animate a <xref:System.Windows.Thickness> property value along a set of key frames. This <xref:System.Windows.Media.Animation.ThicknessKeyFrame> interpolates between the <xref:System.Windows.Thickness> value of the previous key frame and its own value linearly with an easing function to produce its output value.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -117,18 +117,18 @@
         <returns>The new instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Animation classes inherit indirectly from <xref:System.Windows.Freezable>. Because of this, you need to override the <xref:System.Windows.Media.Animation.BackEase.CreateInstanceCore%2A> method to construct a custom animation object.  
+Animation classes inherit indirectly from <xref:System.Windows.Freezable>. Because of this, you need to override the <xref:System.Windows.Media.Animation.BackEase.CreateInstanceCore%2A> method to construct a custom animation object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows a typical implementation of <xref:System.Windows.Freezable.CreateInstanceCore%2A>.  
-  
- [!code-csharp[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#createinstancecoreexample)]
- [!code-vb[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#createinstancecoreexample)]  
-  
+The following example shows a typical implementation of <xref:System.Windows.Freezable.CreateInstanceCore%2A>.  
+ 
+[!code-csharp[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#createinstancecoreexample)]
+[!code-vb[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#createinstancecoreexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

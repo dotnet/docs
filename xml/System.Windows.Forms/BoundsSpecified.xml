@@ -18,17 +18,17 @@
     <summary>Specifies the bounds of the control to use when defining a control's size and position.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the members of this enumeration when calling the <xref:System.Windows.Forms.Control.SetBoundsCore%2A> and <xref:System.Windows.Forms.Control.SetBounds%2A> methods of the <xref:System.Windows.Forms.Control> class.  
+Use the members of this enumeration when calling the <xref:System.Windows.Forms.Control.SetBoundsCore%2A> and <xref:System.Windows.Forms.Control.SetBounds%2A> methods of the <xref:System.Windows.Forms.Control> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[Control.Layout#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.Layout/CPP/layout.cpp#1)]
- [!code-csharp[Control.Layout#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.Layout/CS/layout.cs#1)]
- [!code-vb[Control.Layout#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.Layout/VB/layout.vb#1)]  
-  
+[!code-cpp[Control.Layout#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.Layout/CPP/layout.cpp#1)]
+[!code-csharp[Control.Layout#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.Layout/CS/layout.cs#1)]
+[!code-vb[Control.Layout#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.Layout/VB/layout.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

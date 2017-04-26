@@ -19,21 +19,21 @@
     <summary>Provides a managed implementation of the Advanced Encryption Standard (AES) symmetric algorithm.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The AES algorithm is essentially the Rijndael symmetric algorithm with a fixed block size and iteration count. This class functions the same way as the <xref:System.Security.Cryptography.RijndaelManaged> class but limits blocks to 128 bits and does not allow feedback modes.  
-  
+The AES algorithm is essentially the Rijndael symmetric algorithm with a fixed block size and iteration count. This class functions the same way as the <xref:System.Security.Cryptography.RijndaelManaged> class but limits blocks to 128 bits and does not allow feedback modes.  
+ 
 > [!NOTE]
 >  If the Windows security policy setting for Federal Information Processing Standards (FIPS)-compliant algorithms is enabled, using this algorithm throws a <xref:System.Security.Cryptography.CryptographicException>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to encrypt and decrypt sample data using the <xref:System.Security.Cryptography.AesManaged> class.  
-  
- [!code-csharp[AesManaged#1](~/samples/snippets/csharp/VS_Snippets_CLR/aesmanaged/cs/program.cs#1)]
- [!code-vb[AesManaged#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/aesmanaged/vb/program.vb#1)]  
-  
+The following example demonstrates how to encrypt and decrypt sample data using the <xref:System.Security.Cryptography.AesManaged> class.  
+ 
+[!code-csharp[AesManaged#1](~/samples/snippets/csharp/VS_Snippets_CLR/aesmanaged/cs/program.cs#1)]
+[!code-vb[AesManaged#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/aesmanaged/vb/program.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -112,13 +112,13 @@
         <returns>A symmetric decryptor object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Security.Cryptography.AesManaged.CreateDecryptor%2A?displayProperty=fullName> method to decrypt an encrypted message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesManaged> class.  
-  
- [!code-csharp[AesManaged#3](~/samples/snippets/csharp/VS_Snippets_CLR/aesmanaged/cs/program.cs#3)]
- [!code-vb[AesManaged#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/aesmanaged/vb/program.vb#3)]  
-  
+The following example shows how to use the <xref:System.Security.Cryptography.AesManaged.CreateDecryptor%2A?displayProperty=fullName> method to decrypt an encrypted message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesManaged> class.  
+ 
+[!code-csharp[AesManaged#3](~/samples/snippets/csharp/VS_Snippets_CLR/aesmanaged/cs/program.cs#3)]
+[!code-vb[AesManaged#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/aesmanaged/vb/program.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -179,13 +179,13 @@
         <returns>A symmetric encryptor object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Security.Cryptography.AesManaged.CreateEncryptor%2A> method to encrypt a message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesManaged> class.  
-  
- [!code-csharp[AesManaged#2](~/samples/snippets/csharp/VS_Snippets_CLR/aesmanaged/cs/program.cs#2)]
- [!code-vb[AesManaged#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/aesmanaged/vb/program.vb#2)]  
-  
+The following example shows how to use the <xref:System.Security.Cryptography.AesManaged.CreateEncryptor%2A> method to encrypt a message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesManaged> class.  
+ 
+[!code-csharp[AesManaged#2](~/samples/snippets/csharp/VS_Snippets_CLR/aesmanaged/cs/program.cs#2)]
+[!code-vb[AesManaged#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/aesmanaged/vb/program.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -242,13 +242,13 @@
         <value>The feedback size, in bits.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The maximum feedback size is 128 bits.  
-  
+The maximum feedback size is 128 bits.  
+ 
 > [!NOTE]
 >  Because this algorithm does not support feedback modes, using this property is discouraged.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -367,10 +367,10 @@
         <value>The size, in bits, of the key used by the symmetric algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The maximum size of the key is 256 bits.  
-  
+The maximum size of the key is 256 bits.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -397,10 +397,10 @@
         <value>One of the enumeration values that specifies the block cipher mode to use for encryption. The default is <see cref="F:System.Security.Cryptography.CipherMode.CBC" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.CipherMode> and <xref:System.Security.Cryptography.CipherMode> modes are not supported.  
-  
+The <xref:System.Security.Cryptography.CipherMode> and <xref:System.Security.Cryptography.CipherMode> modes are not supported.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">

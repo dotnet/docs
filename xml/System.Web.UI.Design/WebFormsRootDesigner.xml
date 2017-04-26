@@ -24,10 +24,10 @@
     <summary>Provides a base class for the design-time functionality of a Web Forms page and allows access to and manipulation of components and controls that are contained within the Web Forms page at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], must provide its own derived version of the <xref:System.Web.UI.Design.WebFormsRootDesigner> class to control designers through the <xref:System.Web.UI.Design.ControlDesigner.RootDesigner%2A> property of the designer. Control designers use the <xref:System.Web.UI.Design.ControlDesigner.RootDesigner%2A> property to access and manipulate the containing Web Forms page at design time.  
-  
+A design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], must provide its own derived version of the <xref:System.Web.UI.Design.WebFormsRootDesigner> class to control designers through the <xref:System.Web.UI.Design.ControlDesigner.RootDesigner%2A> property of the designer. Control designers use the <xref:System.Web.UI.Design.ControlDesigner.RootDesigner%2A> property to access and manipulate the containing Web Forms page at design time.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -100,10 +100,10 @@
         <returns>The ID of the control that was added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although a control might already have an ID assigned to it, if there is already a control in the Web Forms page with the same ID, a new ID is assigned.  
-  
+Although a control might already have an ID assigned to it, if there is already a control in the Web Forms page with the same ID, a new ID is assigned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,10 +125,10 @@
         <value>The component managed by the designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebFormsRootDesigner.Component%2A> property is set by the <xref:System.Web.UI.Design.WebFormsRootDesigner.Initialize%28System.ComponentModel.IComponent%29?displayProperty=fullName> method.  
-  
+The <xref:System.Web.UI.Design.WebFormsRootDesigner.Component%2A> property is set by the <xref:System.Web.UI.Design.WebFormsRootDesigner.Initialize%28System.ComponentModel.IComponent%29?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,10 +154,10 @@
         <returns>A design-time designer action service object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebFormsRootDesigner.CreateDesignerActionService%2A> method is called by a control designer and provides a way for action items for the control designer to be implemented in the Web Forms page through a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].  
-  
+The <xref:System.Web.UI.Design.WebFormsRootDesigner.CreateDesignerActionService%2A> method is called by a control designer and provides a way for action items for the control designer to be implemented in the Web Forms page through a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -278,10 +278,10 @@
         <returns>HTML markup for an empty control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebFormsRootDesigner.GenerateEmptyDesignTimeHtml%2A> method enables a consistent display of empty controls at design time.  
-  
+The <xref:System.Web.UI.Design.WebFormsRootDesigner.GenerateEmptyDesignTimeHtml%2A> method enables a consistent display of empty controls at design time.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -777,10 +777,10 @@
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.Design.IDesigner.DoDefaultAction" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesigner> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesigner> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -802,10 +802,10 @@
         <value>The design-time verbs that are supported by the designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesigner> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesigner> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -830,10 +830,10 @@
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.Design.IDesignerFilter.PostFilterAttributes(System.Collections.IDictionary)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -858,10 +858,10 @@
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.Design.IDesignerFilter.PostFilterEvents(System.Collections.IDictionary)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -886,10 +886,10 @@
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.Design.IDesignerFilter.PostFilterProperties(System.Collections.IDictionary)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -914,10 +914,10 @@
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.Design.IDesignerFilter.PreFilterAttributes(System.Collections.IDictionary)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -942,10 +942,10 @@
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.Design.IDesignerFilter.PreFilterEvents(System.Collections.IDictionary)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -970,10 +970,10 @@
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.Design.IDesignerFilter.PreFilterProperties(System.Collections.IDictionary)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -999,10 +999,10 @@
         <returns>The view object for the specified view technology.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IRootDesigner> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IRootDesigner> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1024,10 +1024,10 @@
         <value>An array of technologies that the designer component can support for its display.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IRootDesigner> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.ComponentModel.Design.IRootDesigner> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1049,10 +1049,10 @@
         <summary>For a description of this member, see <see cref="M:System.IDisposable.Dispose" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.IDisposable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebFormsRootDesigner> instance is cast to an <xref:System.IDisposable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1074,12 +1074,12 @@
         <value>An array of <see cref="T:System.ComponentModel.Design.DesignerVerb" /> objects supported by the designer; otherwise, <see langword="null" />, if the component has no verbs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Typically, a design-time environment provides a **Properties** command on a shortcut menu for a component. Therefore, do not include a similar entry in the collection of designer-specified verbs.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

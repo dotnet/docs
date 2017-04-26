@@ -23,18 +23,18 @@
     <summary>Specifies whether a service operation accepts incoming transactions from a client.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.TransactionFlowAttribute> is an attribute used declaratively to associate a specific transaction flow policy with a service operation. The <xref:System.ServiceModel.TransactionFlowOption> property of this attribute specifies whether the respective operation accepts a transaction flowed from the client, or if the operation requires the client to always flow a transaction. The <xref:System.ServiceModel.TransactionFlowAttribute> can also be used as an operation behavior to programmatically associate a transaction flow policy with a specific operation. In this case, it should be added to the `Behaviors` collection on the operation’s description.  
-  
+The <xref:System.ServiceModel.TransactionFlowAttribute> is an attribute used declaratively to associate a specific transaction flow policy with a service operation. The <xref:System.ServiceModel.TransactionFlowOption> property of this attribute specifies whether the respective operation accepts a transaction flowed from the client, or if the operation requires the client to always flow a transaction. The <xref:System.ServiceModel.TransactionFlowAttribute> can also be used as an operation behavior to programmatically associate a transaction flow policy with a specific operation. In this case, it should be added to the `Behaviors` collection on the operation’s description.  
+ 
 > [!NOTE]
 >  The `OperationContract` for each method that uses the <xref:System.ServiceModel.TransactionFlowAttribute> must provide a fully-qualified `Action` string. A value of "*" is not supported.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of this enumeration together with the <xref:System.ServiceModel.TransactionFlowOption> class at the operation level.  
-  
+The following code example shows the use of this enumeration together with the <xref:System.ServiceModel.TransactionFlowOption> class at the operation level.  
+ 
 ```  
 using System;  
 using System.ServiceModel;  
@@ -111,7 +111,7 @@ namespace Microsoft.WCF.Documentation
   }  
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -133,13 +133,13 @@ namespace Microsoft.WCF.Documentation
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.TransactionFlowAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of this enumeration together with the <xref:System.ServiceModel.TransactionFlowOption> class at the operation level.  
-  
- [!code-csharp[OperationBehaviorAttribute1#2](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/services.cs#2)]
- [!code-vb[OperationBehaviorAttribute1#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationbehaviorattribute1/vb/services.vb#2)]  
-  
+The following code example shows the use of this enumeration together with the <xref:System.ServiceModel.TransactionFlowOption> class at the operation level.  
+ 
+[!code-csharp[OperationBehaviorAttribute1#2](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/services.cs#2)]
+[!code-vb[OperationBehaviorAttribute1#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationbehaviorattribute1/vb/services.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,10 +166,10 @@ namespace Microsoft.WCF.Documentation
         <summary>Adds extra parameters (settings) to the binding context to support this operation’s behavior. This method cannot be inherited.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method provides a binding context with the extra parameters (settings) to support the required behavior for this operation. It is called internally by the infrastructure when a service is created.  
-  
+This method provides a binding context with the extra parameters (settings) to support the required behavior for this operation. It is called internally by the infrastructure when a service is created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,10 +196,10 @@ namespace Microsoft.WCF.Documentation
         <summary>Attaches the attribute functionality to the <see langword="ProxyOperation" /> object for the method that the attribute marks. This method cannot be inherited.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method allows you to view, modify, or add custom extensions to the client runtime across all messages, or for a specific operation. Note that in the case of the <xref:System.ServiceModel.TransactionFlowAttribute>, the implementation of this method is empty. This method is called internally by the infrastructure when a service proxy is created.  
-  
+This method allows you to view, modify, or add custom extensions to the client runtime across all messages, or for a specific operation. Note that in the case of the <xref:System.ServiceModel.TransactionFlowAttribute>, the implementation of this method is empty. This method is called internally by the infrastructure when a service proxy is created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -226,10 +226,10 @@ namespace Microsoft.WCF.Documentation
         <summary>Attaches the attribute functionality to the <see cref="T:System.ServiceModel.Dispatcher.DispatchOperation" /> object for the method that the attribute marks. This method cannot be inherited.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method allows you to view, modify, or add custom extensions to the client runtime across all messages, or for a specific operation. Note that in the case of the <xref:System.ServiceModel.TransactionFlowAttribute>, the implementation of this method is empty. This method is called internally by the infrastructure when a service is created.  
-  
+This method allows you to view, modify, or add custom extensions to the client runtime across all messages, or for a specific operation. Note that in the case of the <xref:System.ServiceModel.TransactionFlowAttribute>, the implementation of this method is empty. This method is called internally by the infrastructure when a service is created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,10 +254,10 @@ namespace Microsoft.WCF.Documentation
         <summary>Verifies that the operation can support this behavior. This method cannot be inherited.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method verifies whether the operation description is sufficient to support the transaction flow behavior. Note that in the case of the <xref:System.ServiceModel.TransactionFlowAttribute>, the implementation of this method is empty. This method is called internally by the infrastructure when a service is created.  
-  
+This method verifies whether the operation description is sufficient to support the transaction flow behavior. Note that in the case of the <xref:System.ServiceModel.TransactionFlowAttribute>, the implementation of this method is empty. This method is called internally by the infrastructure when a service is created.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,15 +19,15 @@
     <summary>Represents the World Wide Web Consortium (W3C) <see langword="selector" /> element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The W3C `field` element is a collection of `XmlSchemaXPath` classes.  
+The W3C `field` element is a collection of `XmlSchemaXPath` classes.  
+ 
   
-   
-  
+ 
 ## Examples  
- See <xref:System.Xml.Schema.XmlSchemaUnique> for an example using this class.  
-  
+See <xref:System.Xml.Schema.XmlSchemaUnique> for an example using this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -82,10 +82,10 @@
         <value>The string attribute value for the XPath expression.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An XPath expression that is relative to each element that is selected by the selector of the identity constraint. This expression must identify a single element or attribute whose content or value is used for the constraint. If the expression identifies an element, that element must be a simple type.  
-  
+An XPath expression that is relative to each element that is selected by the selector of the identity constraint. This expression must identify a single element or attribute whose content or value is used for the constraint. If the expression identifies an element, that element must be a simple type.  
+ 
  ]]></format>
         </remarks>
       </Docs>

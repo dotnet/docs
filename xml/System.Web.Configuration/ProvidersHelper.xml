@@ -73,10 +73,10 @@
         <summary>Initializes a collection of providers of the given type using the supplied settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls the <xref:System.Web.Configuration.ProvidersHelper.InstantiateProvider%2A> method, and any exceptions thrown by that method will bubble up through the <xref:System.Web.Configuration.ProvidersHelper.InstantiateProviders%2A> method.  
-  
+This method calls the <xref:System.Web.Configuration.ProvidersHelper.InstantiateProvider%2A> method, and any exceptions thrown by that method will bubble up through the <xref:System.Web.Configuration.ProvidersHelper.InstantiateProviders%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

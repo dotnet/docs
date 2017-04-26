@@ -19,21 +19,21 @@
     <summary>Defines identifiers for the standard set of commands that are available to most applications.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class defines <xref:System.ComponentModel.Design.CommandID> identifiers for standard commands that are available to designers.  
+This class defines <xref:System.ComponentModel.Design.CommandID> identifiers for standard commands that are available to designers.  
+ 
+To add a command from the <xref:System.ComponentModel.Design.StandardCommands> class to a designer menu, you must call the <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> method of an <xref:System.ComponentModel.Design.IMenuCommandService> and add a <xref:System.ComponentModel.Design.MenuCommand> that contains a <xref:System.ComponentModel.Design.CommandID> from <xref:System.ComponentModel.Design.StandardCommands>.  
+ 
   
- To add a command from the <xref:System.ComponentModel.Design.StandardCommands> class to a designer menu, you must call the <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> method of an <xref:System.ComponentModel.Design.IMenuCommandService> and add a <xref:System.ComponentModel.Design.MenuCommand> that contains a <xref:System.ComponentModel.Design.CommandID> from <xref:System.ComponentModel.Design.StandardCommands>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example illustrates how to add a member of the <xref:System.ComponentModel.Design.StandardCommands> class to a <xref:System.ComponentModel.Design.MenuCommand> and how to add the <xref:System.ComponentModel.Design.MenuCommand> to an <xref:System.ComponentModel.Design.IMenuCommandService>.  
-  
- [!code-cpp[MenuCommand Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MenuCommand Example/CPP/component1.cpp#1)]
- [!code-csharp[MenuCommand Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MenuCommand Example/CS/component1.cs#1)]
- [!code-vb[MenuCommand Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MenuCommand Example/VB/component1.vb#1)]  
-  
+The following code example illustrates how to add a member of the <xref:System.ComponentModel.Design.StandardCommands> class to a <xref:System.ComponentModel.Design.MenuCommand> and how to add the <xref:System.ComponentModel.Design.MenuCommand> to an <xref:System.ComponentModel.Design.IMenuCommandService>.  
+ 
+[!code-cpp[MenuCommand Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MenuCommand Example/CPP/component1.cpp#1)]
+[!code-csharp[MenuCommand Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MenuCommand Example/CS/component1.cs#1)]
+[!code-vb[MenuCommand Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MenuCommand Example/VB/component1.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -1114,14 +1114,14 @@
         <summary>Gets the first of a set of verbs. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a special <xref:System.ComponentModel.Design.CommandID> that identifies the first of a set of designer verbs.  
-  
- The Visual Studio Windows Forms Designer automatically maps designer verbs to the <xref:System.ComponentModel.Design.IDesigner.Verbs%2A> property on <xref:System.ComponentModel.Design.IDesigner>, so generally you do not need to access this command.  
-  
- All designer verbs for an object become commands with a <xref:System.ComponentModel.Design.CommandID> within a sequential range of IDs that begins with <xref:System.ComponentModel.Design.StandardCommands.VerbFirst> and ends with <xref:System.ComponentModel.Design.StandardCommands.VerbLast>.  
-  
+This is a special <xref:System.ComponentModel.Design.CommandID> that identifies the first of a set of designer verbs.  
+ 
+The Visual Studio Windows Forms Designer automatically maps designer verbs to the <xref:System.ComponentModel.Design.IDesigner.Verbs%2A> property on <xref:System.ComponentModel.Design.IDesigner>, so generally you do not need to access this command.  
+ 
+All designer verbs for an object become commands with a <xref:System.ComponentModel.Design.CommandID> within a sequential range of IDs that begins with <xref:System.ComponentModel.Design.StandardCommands.VerbFirst> and ends with <xref:System.ComponentModel.Design.StandardCommands.VerbLast>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1147,14 +1147,14 @@
         <summary>Gets the last of a set of verbs. This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a special <xref:System.ComponentModel.Design.CommandID> that identifies the last of a set of designer verbs.  
-  
- The Visual Studio Windows Forms Designer automatically maps designer verbs to the <xref:System.ComponentModel.Design.IDesigner.Verbs%2A> property on <xref:System.ComponentModel.Design.IDesigner>, so generally you do not need to access this command.  
-  
- All designer verbs for an object become commands with a <xref:System.ComponentModel.Design.CommandID> within a sequential range of IDs that begins with <xref:System.ComponentModel.Design.StandardCommands.VerbFirst> and ends with <xref:System.ComponentModel.Design.StandardCommands.VerbLast>.  
-  
+This is a special <xref:System.ComponentModel.Design.CommandID> that identifies the last of a set of designer verbs.  
+ 
+The Visual Studio Windows Forms Designer automatically maps designer verbs to the <xref:System.ComponentModel.Design.IDesigner.Verbs%2A> property on <xref:System.ComponentModel.Design.IDesigner>, so generally you do not need to access this command.  
+ 
+All designer verbs for an object become commands with a <xref:System.ComponentModel.Design.CommandID> within a sequential range of IDs that begins with <xref:System.ComponentModel.Design.StandardCommands.VerbFirst> and ends with <xref:System.ComponentModel.Design.StandardCommands.VerbLast>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

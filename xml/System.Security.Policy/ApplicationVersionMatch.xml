@@ -19,10 +19,10 @@
     <summary>Specifies how to match versions when locating application trusts in a collection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Policy.ApplicationTrustCollection.Remove%2A> and <xref:System.Security.Policy.ApplicationTrustCollection.Find%2A> methods of an <xref:System.Security.Policy.ApplicationTrustCollection> can act either on all versions of an application or on the exact version. The <xref:System.Security.Policy.ApplicationVersionMatch> enumeration allows the caller to specify the desired behavior.  
-  
+The <xref:System.Security.Policy.ApplicationTrustCollection.Remove%2A> and <xref:System.Security.Policy.ApplicationTrustCollection.Find%2A> methods of an <xref:System.Security.Policy.ApplicationTrustCollection> can act either on all versions of an application or on the exact version. The <xref:System.Security.Policy.ApplicationVersionMatch> enumeration allows the caller to specify the desired behavior.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -19,14 +19,14 @@
     <summary>Represents a class that provides data for the <see cref="M:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragDrop(System.Workflow.ComponentModel.Design.ActivityDragEventArgs)" />, <see cref="M:System.Workflow.ComponentModel.Design.ActivityPreviewDesigner.OnDragEnter(System.Workflow.ComponentModel.Design.ActivityDragEventArgs)" />, and <see cref="M:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragOver(System.Workflow.ComponentModel.Design.ActivityDragEventArgs)" /> events in the workflow designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- These event arguments are passed to <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> classes when a drag-and-drop operation is in progress on the workflow design surface. <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> classes can access the information contained in the <xref:System.Workflow.ComponentModel.Design.ActivityDragEventArgs> class to influence the behavior of the operation.  
-  
+ 
+These event arguments are passed to <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> classes when a drag-and-drop operation is in progress on the workflow design surface. <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> classes can access the information contained in the <xref:System.Workflow.ComponentModel.Design.ActivityDragEventArgs> class to influence the behavior of the operation.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
         <value>A <see cref="T:System.Drawing.Point" /> that defines the location on the workflow design surface where the activities will be dropped.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.ComponentModel.Design.WorkflowView> class creates a drag image for the activities being dragged. <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> objects can use the <xref:System.Workflow.ComponentModel.Design.ActivityDragEventArgs.DragImageSnapPoint%2A> property to snap the image to a target and drop the activities at the specified location.  
-  
+The <xref:System.Workflow.ComponentModel.Design.WorkflowView> class creates a drag image for the activities being dragged. <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> objects can use the <xref:System.Workflow.ComponentModel.Design.ActivityDragEventArgs.DragImageSnapPoint%2A> property to snap the image to a target and drop the activities at the specified location.  
+ 
  ]]></format>
         </remarks>
       </Docs>

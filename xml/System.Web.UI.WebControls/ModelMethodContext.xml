@@ -14,12 +14,12 @@
     <summary>Used to invoke the <see cref="M:System.Web.UI.Page.UpdateModel``1(``0)" /> or <see cref="M:System.Web.UI.Page.TryUpdateModel``1(``0)" /> method when the <see cref="T:System.Web.UI.Page" /> object is not directly accessible.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, a custom class can define the methods referred to by the `SelectMethod`, `UpdateMethod`, `DeleteMethod`, and `InsertMethod` properties for data binding, and those methods can have a parameter of this type and use it to invoke the <xref:System.Web.UI.Page.UpdateModel%2A> method. Alternatively, instead of a method parameter, the <xref:System.Web.UI.WebControls.ModelMethodContext.Current%2A> property can be used within a method to invoke the <xref:System.Web.UI.Page.UpdateModel%2A> method.  
-  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
+For example, a custom class can define the methods referred to by the `SelectMethod`, `UpdateMethod`, `DeleteMethod`, and `InsertMethod` properties for data binding, and those methods can have a parameter of this type and use it to invoke the <xref:System.Web.UI.Page.UpdateModel%2A> method. Alternatively, instead of a method parameter, the <xref:System.Web.UI.WebControls.ModelMethodContext.Current%2A> property can be used within a method to invoke the <xref:System.Web.UI.Page.UpdateModel%2A> method.  
+ 
+For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ModelMethodContext" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
+For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="page" /> parameter is <see langword="null" />.</exception>
@@ -67,10 +67,10 @@
         <value>The <see cref="T:System.Web.UI.WebControls.ModelMethodContext" /> object., or <see langword="null" /> if the current request is not for a page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
+For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,10 +92,10 @@
         <value>The model state.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
+For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,10 +130,10 @@
           <see langword="true" /> if model binding is successful; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
+For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
           <see langword="true" /> if model binding is successful; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
+For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@
         <summary>Updates the specified model instance using values from a value provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
+For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,10 +244,10 @@
         <summary>Updates the specified model instance using values from the specified value provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
+For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,10 +261,10 @@
         <summary>Updates the specified model instance using values from a value provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
+For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -278,10 +278,10 @@
         <summary>Updates the specified model instance using values from a value provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
+For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ 
  ]]></format>
         </remarks>
       </Docs>

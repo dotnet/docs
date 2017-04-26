@@ -18,12 +18,12 @@
     <summary>Enables a non-control component to emulate the data-binding behavior of a Windows Forms control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Forms.Binding> contains a reference to its <xref:System.Windows.Forms.IBindableComponent> owner through the <xref:System.Windows.Forms.Binding.BindableComponent%2A> property.  
-  
- The <xref:System.Windows.Forms.Control> class implements this interface, so if your bindable component inherits from <xref:System.Windows.Forms.Control>, you do not need to implement this interface.  
-  
+A <xref:System.Windows.Forms.Binding> contains a reference to its <xref:System.Windows.Forms.IBindableComponent> owner through the <xref:System.Windows.Forms.Binding.BindableComponent%2A> property.  
+ 
+The <xref:System.Windows.Forms.Control> class implements this interface, so if your bindable component inherits from <xref:System.Windows.Forms.Control>, you do not need to implement this interface.  
+ 
  ]]></format>
     </remarks>
   </Docs>

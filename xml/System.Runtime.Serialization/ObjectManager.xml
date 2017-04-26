@@ -24,19 +24,19 @@
     <summary>Keeps track of objects as they are deserialized.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- During deserialization, the <xref:System.Runtime.Serialization.Formatter> queries the <xref:System.Runtime.Serialization.ObjectManager> to determine whether a reference to an object in the serialized stream refers to an object that has already been deserialized (a backward reference), or to an object that has not yet been deserialized (a forward reference). If the reference in the serialized stream is a forward reference, then the <xref:System.Runtime.Serialization.Formatter> can register a fixup with the <xref:System.Runtime.Serialization.ObjectManager>. If the reference in the serialized stream is a backward reference, the <xref:System.Runtime.Serialization.Formatter> immediately completes the reference. Fixup refers to the process of finalizing object references not already completed during the object deserialization process. After the required object has been deserialized, the <xref:System.Runtime.Serialization.ObjectManager> will complete the reference.  
+During deserialization, the <xref:System.Runtime.Serialization.Formatter> queries the <xref:System.Runtime.Serialization.ObjectManager> to determine whether a reference to an object in the serialized stream refers to an object that has already been deserialized (a backward reference), or to an object that has not yet been deserialized (a forward reference). If the reference in the serialized stream is a forward reference, then the <xref:System.Runtime.Serialization.Formatter> can register a fixup with the <xref:System.Runtime.Serialization.ObjectManager>. If the reference in the serialized stream is a backward reference, the <xref:System.Runtime.Serialization.Formatter> immediately completes the reference. Fixup refers to the process of finalizing object references not already completed during the object deserialization process. After the required object has been deserialized, the <xref:System.Runtime.Serialization.ObjectManager> will complete the reference.  
+ 
+The <xref:System.Runtime.Serialization.ObjectManager> follows a set of rules that dictate the fixup order. All objects that implement <xref:System.Runtime.Serialization.ISerializable> or have a <xref:System.Runtime.Serialization.ISerializationSurrogate> can expect to have all the objects that they transmitted through <xref:System.Runtime.Serialization.SerializationInfo> available when the object tree is deserialized. However, a parent object cannot presume that all its child objects will be fully completed when it is fully deserialized. All child objects will be present but not all the grandchild objects will necessarily be present. If an object needs to take certain actions that depend on executing code on its child objects, it can delay these actions, implement the <xref:System.Runtime.Serialization.IDeserializationCallback> interface, and execute the code only when it is called back on this interface.  
+ 
   
- The <xref:System.Runtime.Serialization.ObjectManager> follows a set of rules that dictate the fixup order. All objects that implement <xref:System.Runtime.Serialization.ISerializable> or have a <xref:System.Runtime.Serialization.ISerializationSurrogate> can expect to have all the objects that they transmitted through <xref:System.Runtime.Serialization.SerializationInfo> available when the object tree is deserialized. However, a parent object cannot presume that all its child objects will be fully completed when it is fully deserialized. All child objects will be present but not all the grandchild objects will necessarily be present. If an object needs to take certain actions that depend on executing code on its child objects, it can delay these actions, implement the <xref:System.Runtime.Serialization.IDeserializationCallback> interface, and execute the code only when it is called back on this interface.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Serialization.ObjectManager> class to walk through an object graph, traversing to each object only once.  
-  
- [!code-csharp[ObjectManager#1](~/samples/snippets/csharp/VS_Snippets_Misc/ObjectManager/CS/ObjectManager.cs#1)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Serialization.ObjectManager> class to walk through an object graph, traversing to each object only once.  
+ 
+[!code-csharp[ObjectManager#1](~/samples/snippets/csharp/VS_Snippets_Misc/ObjectManager/CS/ObjectManager.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -100,10 +100,10 @@
         <summary>Performs all the recorded fixups.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The fixups are carried out by any appropriate surrogate, the object itself (if it implements <xref:System.Runtime.Serialization.ISerializable>), or the default implementation.  
-  
+The fixups are carried out by any appropriate surrogate, the object itself (if it implements <xref:System.Runtime.Serialization.ISerializable>), or the default implementation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.SerializationException">A fixup was not successfully completed.</exception>
@@ -135,10 +135,10 @@
         <returns>The object with the specified object ID if it has been previously stored or <see langword="null" /> if no such object has been registered.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An object can be registered and issued an object ID with a call to the <xref:System.Runtime.Serialization.ObjectManager.RegisterObject%2A> method.  
-  
+An object can be registered and issued an object ID with a call to the <xref:System.Runtime.Serialization.ObjectManager.RegisterObject%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="objectID" /> parameter is less than or equal to zero.</exception>
@@ -222,10 +222,10 @@
         <summary>Records a fixup for one element in an array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The fixup is for a specified element of a specified array. The value used during the fixup process is provided in the `objectRequired` parameter.  
-  
+The fixup is for a specified element of a specified array. The value used during the fixup process is provided in the `objectRequired` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="arrayToBeFixed" /> or <paramref name="objectRequired" /> parameter is less than or equal to zero.</exception>
@@ -261,10 +261,10 @@
         <summary>Records fixups for the specified elements in an array, to be executed later.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The fixup is for specified elements of a specified array. The value used during the fixup process is provided in the `objectRequired` parameter.  
-  
+The fixup is for specified elements of a specified array. The value used during the fixup process is provided in the `objectRequired` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="arrayToBeFixed" /> or <paramref name="objectRequired" /> parameter is less than or equal to zero.</exception>
@@ -300,10 +300,10 @@
         <summary>Records a fixup for an object member, to be executed later.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The fixup is for a specified member of a specified object. The value to be used during the fixup process is provided as the `objectRequired` argument.  
-  
+The fixup is for a specified member of a specified object. The value to be used during the fixup process is provided as the `objectRequired` argument.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -340,10 +340,10 @@
         <summary>Records a fixup for a member of an object, to be executed later.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The fixup is for a specified member of a specified object. The value to be used during the fixup process is provided as the `objectRequired` parameter.  
-  
+The fixup is for a specified member of a specified object. The value to be used during the fixup process is provided as the `objectRequired` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="objectToBeFixed" /> or <paramref name="objectRequired" /> parameter is less than or equal to zero.</exception>
@@ -382,10 +382,10 @@
         <summary>Registers an object as it is deserialized, associating it with <paramref name="objectID" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Runtime.Serialization.ObjectManager> retains information about both the object and its ID. Later during deserialization, <xref:System.Runtime.Serialization.ObjectManager.GetObject%2A> can be used to determine whether a particular object ID has already been deserialized, or whether it is a forward reference to an object that has not yet been deserialized.  
-  
+<xref:System.Runtime.Serialization.ObjectManager> retains information about both the object and its ID. Later during deserialization, <xref:System.Runtime.Serialization.ObjectManager.GetObject%2A> can be used to determine whether a particular object ID has already been deserialized, or whether it is a forward reference to an object that has not yet been deserialized.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
@@ -427,10 +427,10 @@
         <summary>Registers an object as it is deserialized, associating it with <paramref name="objectID" />, and recording the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> used with it.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Runtime.Serialization.ObjectManager> retains the information about both the object and its ID. Later during deserialization, you can use <xref:System.Runtime.Serialization.ObjectManager.GetObject%2A> to discover whether a particular object ID has already been deserialized, or if it is a forward reference to an object that has not yet been deserialized.  
-  
+<xref:System.Runtime.Serialization.ObjectManager> retains the information about both the object and its ID. Later during deserialization, you can use <xref:System.Runtime.Serialization.ObjectManager.GetObject%2A> to discover whether a particular object ID has already been deserialized, or if it is a forward reference to an object that has not yet been deserialized.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
@@ -476,12 +476,12 @@
         <summary>Registers a member of an object as it is deserialized, associating it with <paramref name="objectID" />, and recording the <see cref="T:System.Runtime.Serialization.SerializationInfo" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You need to provide the `member` and `idOfContainingObj` parameters if `obj` is a <xref:System.ValueType> because of the way fixups are performed on <xref:System.ValueType> objects. The space to store the information for a <xref:System.ValueType> is allocated inline with its containing object. However, when the <xref:System.ValueType> is boxed to be registered with the <xref:System.Runtime.Serialization.ObjectManager>, it loses the connection with its containing object. To guarantee that fixups occur in the instance of the <xref:System.ValueType> stored in the containing object and not in the boxed instance, the <xref:System.Runtime.Serialization.ObjectManager> retains some additional information.  
-  
- <xref:System.Runtime.Serialization.ObjectManager> retains information about both the object and its ID. Later during deserialization, <xref:System.Runtime.Serialization.ObjectManager.GetObject%2A> can be used to discover whether a particular object ID has already been deserialized, or whether it is a forward reference to an object not yet deserialized.  
-  
+You need to provide the `member` and `idOfContainingObj` parameters if `obj` is a <xref:System.ValueType> because of the way fixups are performed on <xref:System.ValueType> objects. The space to store the information for a <xref:System.ValueType> is allocated inline with its containing object. However, when the <xref:System.ValueType> is boxed to be registered with the <xref:System.Runtime.Serialization.ObjectManager>, it loses the connection with its containing object. To guarantee that fixups occur in the instance of the <xref:System.ValueType> stored in the containing object and not in the boxed instance, the <xref:System.Runtime.Serialization.ObjectManager> retains some additional information.  
+ 
+<xref:System.Runtime.Serialization.ObjectManager> retains information about both the object and its ID. Later during deserialization, <xref:System.Runtime.Serialization.ObjectManager.GetObject%2A> can be used to discover whether a particular object ID has already been deserialized, or whether it is a forward reference to an object not yet deserialized.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
@@ -529,12 +529,12 @@
         <summary>Registers a member of an array contained in an object while it is deserialized, associating it with <paramref name="objectID" />, and recording the <see cref="T:System.Runtime.Serialization.SerializationInfo" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You need to provide the `member` and `idOfContainingObj` parameters if `obj` is a <xref:System.ValueType> because of the way fixups are performed on <xref:System.ValueType> objects. The space to store the information for a <xref:System.ValueType> is allocated inline with its containing object. However, when the <xref:System.ValueType> is boxed to be registered with the <xref:System.Runtime.Serialization.ObjectManager>, it loses the connection with its containing object. To guarantee that fixups occur in the instance of the <xref:System.ValueType> stored in the containing object and not in the boxed instance, the <xref:System.Runtime.Serialization.ObjectManager> retains some additional information.  
-  
- <xref:System.Runtime.Serialization.ObjectManager> retains information about both the object and its ID. Later during deserialization, <xref:System.Runtime.Serialization.ObjectManager.GetObject%2A> can be used to discover whether a particular object ID has already been deserialized, or whether it is a forward reference to an object not yet deserialized.  
-  
+You need to provide the `member` and `idOfContainingObj` parameters if `obj` is a <xref:System.ValueType> because of the way fixups are performed on <xref:System.ValueType> objects. The space to store the information for a <xref:System.ValueType> is allocated inline with its containing object. However, when the <xref:System.ValueType> is boxed to be registered with the <xref:System.Runtime.Serialization.ObjectManager>, it loses the connection with its containing object. To guarantee that fixups occur in the instance of the <xref:System.ValueType> stored in the containing object and not in the boxed instance, the <xref:System.Runtime.Serialization.ObjectManager> retains some additional information.  
+ 
+<xref:System.Runtime.Serialization.ObjectManager> retains information about both the object and its ID. Later during deserialization, <xref:System.Runtime.Serialization.ObjectManager.GetObject%2A> can be used to discover whether a particular object ID has already been deserialized, or whether it is a forward reference to an object not yet deserialized.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>

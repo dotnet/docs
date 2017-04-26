@@ -19,10 +19,10 @@
     <summary>Represents a configuration element that corresponds to the <see cref="T:System.ServiceModel.NetTcpContextBinding" /> binding.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The XML element that corresponds to the `NetTcpContextBindingElement` can be used in the application configuration file under the `system.serviceModel/bindings/netTcpContextBinding` node.  
-  
+The XML element that corresponds to the `NetTcpContextBindingElement` can be used in the application configuration file under the `system.serviceModel/bindings/netTcpContextBinding` node.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -210,10 +210,10 @@
         <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Configuration.NetTcpContextBindingElement.ContextProtectionLevel%2A> property is also contained in this property collection.  
-  
+The <xref:System.ServiceModel.Configuration.NetTcpContextBindingElement.ContextProtectionLevel%2A> property is also contained in this property collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

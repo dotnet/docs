@@ -87,10 +87,10 @@
         <summary>Creates a new instance of the <see cref="T:System.Activities.WorkflowApplicationException" /> class with a text string description of the exception and with an additional exception that is the cause of the application exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The application exception is thrown in response to the inner exception and can use information from the inner exception to handle the error more appropriately.  
-  
+The application exception is thrown in response to the inner exception and can use information from the inner exception to handle the error more appropriately.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,10 +136,10 @@
         <summary>Creates a new instance of the <see cref="T:System.Activities.WorkflowApplicationException" /> class with a text string description of the exception, a unique identifier for it, and an additional exception that is the cause of the application exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The application exception is thrown in response to the inner exception and can use information from the inner exception to handle the error more appropriately.  
-  
+The application exception is thrown in response to the inner exception and can use information from the inner exception to handle the error more appropriately.  
+ 
  ]]></format>
         </remarks>
       </Docs>

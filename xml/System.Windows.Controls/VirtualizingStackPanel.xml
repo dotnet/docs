@@ -18,32 +18,32 @@
     <summary>Arranges and virtualizes content on a single line that is oriented either horizontally or vertically.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The standard layout system creates item containers and computes layout for each item associated with a list control. The word "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on-screen. Generating many [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements when only a few elements might be on the screen can adversely affect the performance of your application. The <xref:System.Windows.Controls.VirtualizingStackPanel> calculates the number of visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to create [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements only for visible items.  
+The standard layout system creates item containers and computes layout for each item associated with a list control. The word "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on-screen. Generating many [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements when only a few elements might be on the screen can adversely affect the performance of your application. The <xref:System.Windows.Controls.VirtualizingStackPanel> calculates the number of visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to create [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements only for visible items.  
+ 
+Virtualization in a <xref:System.Windows.Controls.StackPanel> only occurs when the items control contained in the panel creates its own item containers. You can ensure this happens by using data binding. In scenarios where item containers are created and added to the items control, a <xref:System.Windows.Controls.VirtualizingStackPanel> offers no performance advantage over a <xref:System.Windows.Controls.StackPanel>.  
+ 
+<xref:System.Windows.Controls.VirtualizingStackPanel> is the default items host for the <xref:System.Windows.Controls.ListBox> element. By default, the <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizing%2A> property is set to `true`.  
+ 
+When <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizing%2A> is set to `false`, a <xref:System.Windows.Controls.VirtualizingStackPanel> behaves the same as an ordinary <xref:System.Windows.Controls.StackPanel>.  
+ 
   
- Virtualization in a <xref:System.Windows.Controls.StackPanel> only occurs when the items control contained in the panel creates its own item containers. You can ensure this happens by using data binding. In scenarios where item containers are created and added to the items control, a <xref:System.Windows.Controls.VirtualizingStackPanel> offers no performance advantage over a <xref:System.Windows.Controls.StackPanel>.  
-  
- <xref:System.Windows.Controls.VirtualizingStackPanel> is the default items host for the <xref:System.Windows.Controls.ListBox> element. By default, the <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizing%2A> property is set to `true`.  
-  
- When <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizing%2A> is set to `false`, a <xref:System.Windows.Controls.VirtualizingStackPanel> behaves the same as an ordinary <xref:System.Windows.Controls.StackPanel>.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to bind to an XML data source and virtualize the items displayed in a <xref:System.Windows.Controls.ListBox> element using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]. Notice that the <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizing%2A> attached property is explicitly set to `true`.  
-  
- [!code-xml[VirtualizingStackPanel_Intro#2](~/samples/snippets/csharp/VS_Snippets_Wpf/VirtualizingStackPanel_Intro/CS/default.xaml#2)]  
-  
- The following example creates a <xref:System.Windows.Controls.ListBox> and sets the `VirtualizingStackPanel.VirtualizationMode` attached property to <xref:System.Windows.Controls.VirtualizationMode>.  
-  
- [!code-xml[RecycleItemContainerShippets#VirtualizationMode](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml#virtualizationmode)]  
-  
- The following example shows the data used in the previous example.  
-  
- [!code-csharp[RecycleItemContainerShippets#ListBoxData](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml.cs#listboxdata)]
- [!code-vb[RecycleItemContainerShippets#ListBoxData](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RecycleItemContainerShippets/visualbasic/window1.xaml.vb#listboxdata)]  
-  
+The following example shows how to bind to an XML data source and virtualize the items displayed in a <xref:System.Windows.Controls.ListBox> element using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]. Notice that the <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizing%2A> attached property is explicitly set to `true`.  
+ 
+[!code-xml[VirtualizingStackPanel_Intro#2](~/samples/snippets/csharp/VS_Snippets_Wpf/VirtualizingStackPanel_Intro/CS/default.xaml#2)]  
+ 
+The following example creates a <xref:System.Windows.Controls.ListBox> and sets the `VirtualizingStackPanel.VirtualizationMode` attached property to <xref:System.Windows.Controls.VirtualizationMode>.  
+ 
+[!code-xml[RecycleItemContainerShippets#VirtualizationMode](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml#virtualizationmode)]  
+ 
+The following example shows the data used in the previous example.  
+ 
+[!code-csharp[RecycleItemContainerShippets#ListBoxData](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml.cs#listboxdata)]
+[!code-vb[RecycleItemContainerShippets#ListBoxData](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RecycleItemContainerShippets/visualbasic/window1.xaml.vb#listboxdata)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -85,10 +85,10 @@
         <summary>Adds an event handler for the <see cref="E:System.Windows.Controls.VirtualizingStackPanel.CleanUpVirtualizedItem" /> attached event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The standard layout system creates item containers and computes layout for each item associated with a list control. The word "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on-screen. Generating many [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements when only a few elements might be on the screen can adversely affect the performance of your application. The <xref:System.Windows.Controls.VirtualizingStackPanel> calculates the number of visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to create [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements only for visible items.  
-  
+The standard layout system creates item containers and computes layout for each item associated with a list control. The word "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on-screen. Generating many [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements when only a few elements might be on the screen can adversely affect the performance of your application. The <xref:System.Windows.Controls.VirtualizingStackPanel> calculates the number of visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to create [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements only for visible items.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
         <returns>The <see cref="T:System.Windows.Size" /> that represents the arranged size of this <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> element and its child elements.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override the <xref:System.Windows.Controls.VirtualizingStackPanel.ArrangeOverride%2A>and <xref:System.Windows.Controls.VirtualizingStackPanel.MeasureOverride%2A> methods in a derived class for custom layout behavior.  
-  
+You can override the <xref:System.Windows.Controls.VirtualizingStackPanel.ArrangeOverride%2A>and <xref:System.Windows.Controls.VirtualizingStackPanel.MeasureOverride%2A> methods in a derived class for custom layout behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -303,10 +303,10 @@
         <value>This property always returns <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property always returns `true` because a <xref:System.Windows.Controls.VirtualizingStackPanel> must have either a vertical or horizontal orientation.  
-  
+This property always returns `true` because a <xref:System.Windows.Controls.VirtualizingStackPanel> must have either a vertical or horizontal orientation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -369,12 +369,12 @@
         <summary>Scrolls content downward by one logical unit.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override this method in a derived class to change how the stack panel scrolls content downward. For example, you can scroll content down by two units instead of one.  
-  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
-  
+You can override this method in a derived class to change how the stack panel scrolls content downward. For example, you can scroll content down by two units instead of one.  
+ 
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -396,12 +396,12 @@
         <summary>Scrolls content to the left by one logical unit.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override this method in a derived class to change how the stack panel scrolls content downward. For example, you can scroll content down by two units instead of one.  
-  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
-  
+You can override this method in a derived class to change how the stack panel scrolls content downward. For example, you can scroll content down by two units instead of one.  
+ 
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,12 +423,12 @@
         <summary>Scrolls content to the right by one logical unit.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override this method in a derived class to change how the stack panel scrolls content to the right. For example, you can scroll content right by two units instead of one.  
-  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
-  
+You can override this method in a derived class to change how the stack panel scrolls content to the right. For example, you can scroll content right by two units instead of one.  
+ 
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -450,12 +450,12 @@
         <summary>Scrolls content upward by one logical unit.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override this method in a derived class to change how the stack panel scrolls content upward. For example, you can scroll up two units instead of one.  
-  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
-  
+You can override this method in a derived class to change how the stack panel scrolls content upward. For example, you can scroll up two units instead of one.  
+ 
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -523,10 +523,10 @@
         <returns>The <see cref="T:System.Windows.Size" /> that represents the desired size of the element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When scrolling, <xref:System.Windows.Controls.VirtualizingStackPanel> does not grow in layout size, but effectively adds its descendants on a z-plane, which is normally clipped by a parent element (typically a <xref:System.Windows.Controls.ScrollContentPresenter>) to the size of the stack.  
-  
+When scrolling, <xref:System.Windows.Controls.VirtualizingStackPanel> does not grow in layout size, but effectively adds its descendants on a z-plane, which is normally clipped by a parent element (typically a <xref:System.Windows.Controls.ScrollContentPresenter>) to the size of the stack.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -548,12 +548,12 @@
         <summary>Scrolls content logically downward in response to a downward click of the mouse wheel button.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override <xref:System.Windows.Controls.VirtualizingStackPanel.MouseWheelDown%2A> in a derived class to change how the stack panel responds to the mouse wheel down action.  
-  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
-  
+You can override <xref:System.Windows.Controls.VirtualizingStackPanel.MouseWheelDown%2A> in a derived class to change how the stack panel responds to the mouse wheel down action.  
+ 
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -575,12 +575,12 @@
         <summary>Scrolls content logically to the left in response to a left click of the mouse wheel button.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override <xref:System.Windows.Controls.VirtualizingStackPanel.MouseWheelLeft%2A> in a derived class to change how the stack panel responds to the mouse wheel left action.  
-  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
-  
+You can override <xref:System.Windows.Controls.VirtualizingStackPanel.MouseWheelLeft%2A> in a derived class to change how the stack panel responds to the mouse wheel left action.  
+ 
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -602,12 +602,12 @@
         <summary>Scrolls content logically to the right in response to a right click of the mouse wheel button.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override <xref:System.Windows.Controls.VirtualizingStackPanel.MouseWheelRight%2A> in a derived class to change how the stack panel responds to the mouse wheel right action.  
-  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
-  
+You can override <xref:System.Windows.Controls.VirtualizingStackPanel.MouseWheelRight%2A> in a derived class to change how the stack panel responds to the mouse wheel right action.  
+ 
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -629,12 +629,12 @@
         <summary>Scrolls content logically upward in response to an upward click of the mouse wheel button.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override <xref:System.Windows.Controls.VirtualizingStackPanel.MouseWheelUp%2A> in a derived class to change how the stack panel responds to the mouse wheel up action.  
-  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
-  
+You can override <xref:System.Windows.Controls.VirtualizingStackPanel.MouseWheelUp%2A> in a derived class to change how the stack panel responds to the mouse wheel up action.  
+ 
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -659,10 +659,10 @@
         <summary>Called when an item that is hosted by the <see cref="T:System.Windows.Controls.VirtualizingStackPanel" /> is re-virtualized.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The standard layout system creates item containers and computes layout for each item associated with a list control. The word "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on-screen. Generating many [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements when only a few elements might be on the screen can adversely affect the performance of your application. The <xref:System.Windows.Controls.VirtualizingStackPanel> calculates the number of visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to create [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements only for visible items.  
-  
+The standard layout system creates item containers and computes layout for each item associated with a list control. The word "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on-screen. Generating many [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements when only a few elements might be on the screen can adversely affect the performance of your application. The <xref:System.Windows.Controls.VirtualizingStackPanel> calculates the number of visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to create [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements only for visible items.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -730,10 +730,10 @@
         <summary>Called when the offset of the viewport changes as a user scrolls through content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method, in a derived class, to detect and respond to changes in the viewport location.  
-  
+Use this method, in a derived class, to detect and respond to changes in the viewport location.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -760,10 +760,10 @@
         <summary>Called when the size of the viewport changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method, in a derived class, to detect and respond to changes in the viewport size.  
-  
+Use this method, in a derived class, to detect and respond to changes in the viewport size.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -785,17 +785,17 @@
         <value>The <see cref="T:System.Windows.Controls.Orientation" /> of child content. The default is <see cref="F:System.Windows.Controls.Orientation.Vertical" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Orientation"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.VirtualizingStackPanel.OrientationProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -834,12 +834,12 @@
         <summary>Scrolls content downward by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override <xref:System.Windows.Controls.VirtualizingStackPanel.PageDown%2A> in a derived class to change how the stack panel responds to the page down action.  
-  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
-  
+You can override <xref:System.Windows.Controls.VirtualizingStackPanel.PageDown%2A> in a derived class to change how the stack panel responds to the page down action.  
+ 
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -861,12 +861,12 @@
         <summary>Scrolls content to the left by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override <xref:System.Windows.Controls.VirtualizingStackPanel.PageLeft%2A> in a derived class to change how the stack panel responds to the page left action.  
-  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
-  
+You can override <xref:System.Windows.Controls.VirtualizingStackPanel.PageLeft%2A> in a derived class to change how the stack panel responds to the page left action.  
+ 
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -888,12 +888,12 @@
         <summary>Scrolls content to the right by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override <xref:System.Windows.Controls.VirtualizingStackPanel.PageRight%2A> in a derived class to change how the stack panel responds to the page right action.  
-  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
-  
+You can override <xref:System.Windows.Controls.VirtualizingStackPanel.PageRight%2A> in a derived class to change how the stack panel responds to the page right action.  
+ 
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -915,12 +915,12 @@
         <summary>Scrolls content upward by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override <xref:System.Windows.Controls.VirtualizingStackPanel.PageUp%2A> in a derived class to change how the stack panel responds to the page up action.  
-  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
-  
+You can override <xref:System.Windows.Controls.VirtualizingStackPanel.PageUp%2A> in a derived class to change how the stack panel responds to the page up action.  
+ 
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.VirtualizingStackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`. In this case, the <xref:System.Windows.Controls.ScrollViewer> provides scrolling, and virtualization is disabled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -947,10 +947,10 @@
         <summary>Removes an event handler for the <see cref="E:System.Windows.Controls.VirtualizingStackPanel.CleanUpVirtualizedItem" /> attached event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The standard layout system creates item containers and computes layout for each item associated with a list control. The word "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on-screen. Generating many [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements when only a few elements might be on the screen can adversely affect the performance of your application. The <xref:System.Windows.Controls.VirtualizingStackPanel> calculates the number of visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to create [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements only for visible items.  
-  
+The standard layout system creates item containers and computes layout for each item associated with a list control. The word "virtualize" refers to a technique by which a subset of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements are generated from a larger number of data items based on which items are visible on-screen. Generating many [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements when only a few elements might be on the screen can adversely affect the performance of your application. The <xref:System.Windows.Controls.VirtualizingStackPanel> calculates the number of visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to create [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements only for visible items.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -977,10 +977,10 @@
         <value>The <see cref="T:System.Windows.Controls.ScrollViewer" /> that owns scrolling for this <see cref="T:System.Windows.Controls.VirtualizingStackPanel" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a <xref:System.Windows.Controls.ScrollViewer> control is the <xref:System.Windows.Controls.VirtualizingStackPanel.ScrollOwner%2A>, physical scrolling is enabled. If a <xref:System.Windows.Controls.VirtualizingStackPanel> is the <xref:System.Windows.Controls.VirtualizingStackPanel.ScrollOwner%2A>, scrolling is logical by child element.  
-  
+If a <xref:System.Windows.Controls.ScrollViewer> control is the <xref:System.Windows.Controls.VirtualizingStackPanel.ScrollOwner%2A>, physical scrolling is enabled. If a <xref:System.Windows.Controls.VirtualizingStackPanel> is the <xref:System.Windows.Controls.VirtualizingStackPanel.ScrollOwner%2A>, scrolling is logical by child element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

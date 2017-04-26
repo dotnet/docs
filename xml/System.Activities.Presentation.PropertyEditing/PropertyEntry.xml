@@ -54,10 +54,10 @@
         <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> class that serves as a subproperty of the specified <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For host infrastructure derived classes.  
-  
+For host infrastructure derived classes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,10 +248,10 @@
           <see langword="true" /> if the target object matches the filter; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activities.Presentation.PropertyEditing.PropertyContainer> listens to changes made to this property.  
-  
+The <xref:System.Activities.Presentation.PropertyEditing.PropertyContainer> listens to changes made to this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,10 +359,10 @@
         <value>A parent <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is used only for subproperties, so its value can be `null`.  
-  
+This is used only for subproperties, so its value can be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

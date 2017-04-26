@@ -32,23 +32,23 @@
     <summary>Represents a collection of <see cref="T:System.ComponentModel.EventDescriptor" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ComponentModel.EventDescriptorCollection> is read-only; it does not implement methods that add or remove events. You must inherit from this class to implement these methods.  
+<xref:System.ComponentModel.EventDescriptorCollection> is read-only; it does not implement methods that add or remove events. You must inherit from this class to implement these methods.  
+ 
+Using the properties available in the <xref:System.ComponentModel.EventDescriptorCollection> class, you can query the collection about its contents. Use the <xref:System.ComponentModel.EventDescriptorCollection.Count%2A> property to determine the number of elements in the collection. Use the <xref:System.ComponentModel.EventDescriptorCollection.Item%2A> property to get a specific property by index number or by name.  
+ 
+You can also use the <xref:System.ComponentModel.EventDescriptorCollection.Find%2A> method to get a description of the event with the specified name from the collection.  
+ 
   
- Using the properties available in the <xref:System.ComponentModel.EventDescriptorCollection> class, you can query the collection about its contents. Use the <xref:System.ComponentModel.EventDescriptorCollection.Count%2A> property to determine the number of elements in the collection. Use the <xref:System.ComponentModel.EventDescriptorCollection.Item%2A> property to get a specific property by index number or by name.  
-  
- You can also use the <xref:System.ComponentModel.EventDescriptorCollection.Find%2A> method to get a description of the event with the specified name from the collection.  
-  
-   
-  
+ 
 ## Examples  
- The following code example prints all the events on a button in a text box. It requires that `button1` and `textBox1` have been instantiated on a form.  
-  
- [!code-cpp[Classic EventDescriptorCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection Example/CPP/source.cpp#1)]
- [!code-csharp[Classic EventDescriptorCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection Example/CS/source.cs#1)]
- [!code-vb[Classic EventDescriptorCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection Example/VB/source.vb#1)]  
-  
+The following code example prints all the events on a button in a text box. It requires that `button1` and `textBox1` have been instantiated on a form.  
+ 
+[!code-cpp[Classic EventDescriptorCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection Example/CPP/source.cpp#1)]
+[!code-csharp[Classic EventDescriptorCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection Example/CS/source.cs#1)]
+[!code-vb[Classic EventDescriptorCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,21 +79,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.EventDescriptorCollection" /> class with the given array of <see cref="T:System.ComponentModel.EventDescriptor" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `events` parameter is empty, this constructor creates an empty <xref:System.ComponentModel.EventDescriptorCollection> class.  
+If the `events` parameter is empty, this constructor creates an empty <xref:System.ComponentModel.EventDescriptorCollection> class.  
+ 
+The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this member has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
+ 
   
- The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this member has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example creates a new <xref:System.ComponentModel.EventDescriptorCollection> class using the events on `button1`. It requires that `button1` has been instantiated on a form.  
-  
- [!code-cpp[Classic EventDescriptorCollection.EventDescriptorCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.EventDescriptorCollection Example/CPP/source.cpp#1)]
- [!code-csharp[Classic EventDescriptorCollection.EventDescriptorCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.EventDescriptorCollection Example/CS/source.cs#1)]
- [!code-vb[Classic EventDescriptorCollection.EventDescriptorCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.EventDescriptorCollection Example/VB/source.vb#1)]  
-  
+The following code example creates a new <xref:System.ComponentModel.EventDescriptorCollection> class using the events on `button1`. It requires that `button1` has been instantiated on a form.  
+ 
+[!code-cpp[Classic EventDescriptorCollection.EventDescriptorCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.EventDescriptorCollection Example/CPP/source.cpp#1)]
+[!code-csharp[Classic EventDescriptorCollection.EventDescriptorCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.EventDescriptorCollection Example/CS/source.cs#1)]
+[!code-vb[Classic EventDescriptorCollection.EventDescriptorCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.EventDescriptorCollection Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,22 +127,22 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.EventDescriptorCollection" /> class with the given array of <see cref="T:System.ComponentModel.EventDescriptor" /> objects. The collection is optionally read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `events` parameter is empty, this constructor creates an empty <xref:System.ComponentModel.EventDescriptorCollection> class.  
-  
+If the `events` parameter is empty, this constructor creates an empty <xref:System.ComponentModel.EventDescriptorCollection> class.  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a new <xref:System.ComponentModel.EventDescriptorCollection> class using the events on `button1`. It requires that `button1` has been instantiated on a form.  
-  
- [!code-cpp[Classic EventDescriptorCollection.EventDescriptorCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.EventDescriptorCollection Example/CPP/source.cpp#1)]
- [!code-csharp[Classic EventDescriptorCollection.EventDescriptorCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.EventDescriptorCollection Example/CS/source.cs#1)]
- [!code-vb[Classic EventDescriptorCollection.EventDescriptorCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.EventDescriptorCollection Example/VB/source.vb#1)]  
-  
+The following code example creates a new <xref:System.ComponentModel.EventDescriptorCollection> class using the events on `button1`. It requires that `button1` has been instantiated on a form.  
+ 
+[!code-cpp[Classic EventDescriptorCollection.EventDescriptorCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.EventDescriptorCollection Example/CPP/source.cpp#1)]
+[!code-csharp[Classic EventDescriptorCollection.EventDescriptorCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.EventDescriptorCollection Example/CS/source.cs#1)]
+[!code-vb[Classic EventDescriptorCollection.EventDescriptorCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.EventDescriptorCollection Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,12 +177,12 @@
         <returns>The position of the <see cref="T:System.ComponentModel.EventDescriptor" /> within the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -214,12 +214,12 @@
         <summary>Removes all objects from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -256,12 +256,12 @@
           <see langword="true" /> if the collection contains the <paramref name="value" /> parameter given; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -292,22 +292,22 @@
         <value>The number of event descriptors in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.EventDescriptorCollection.Count%2A> property can be used to set the limits of a loop that iterates through a collection of objects. If the collection is zero-based, be sure to use `Count - 1` as the upper boundary of the loop.  
-  
+The <xref:System.ComponentModel.EventDescriptorCollection.Count%2A> property can be used to set the limits of a loop that iterates through a collection of objects. If the collection is zero-based, be sure to use `Count - 1` as the upper boundary of the loop.  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.ComponentModel.EventDescriptorCollection.Count%2A> property to print the number of events attached to `button1`. It requires that `button1` and `textBox1` have been instantiated on a form.  
-  
- [!code-cpp[Classic EventDescriptorCollection.Count Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Count Example/CPP/source.cpp#1)]
- [!code-csharp[Classic EventDescriptorCollection.Count Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Count Example/CS/source.cs#1)]
- [!code-vb[Classic EventDescriptorCollection.Count Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Count Example/VB/source.vb#1)]  
-  
+The following code example uses the <xref:System.ComponentModel.EventDescriptorCollection.Count%2A> property to print the number of events attached to `button1`. It requires that `button1` and `textBox1` have been instantiated on a form.  
+ 
+[!code-cpp[Classic EventDescriptorCollection.Count Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Count Example/CPP/source.cpp#1)]
+[!code-csharp[Classic EventDescriptorCollection.Count Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Count Example/CS/source.cs#1)]
+[!code-vb[Classic EventDescriptorCollection.Count Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Count Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -371,21 +371,21 @@
         <returns>The <see cref="T:System.ComponentModel.EventDescriptor" /> with the specified name, or <see langword="null" /> if the event does not exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example finds a specific <xref:System.ComponentModel.EventDescriptor>. It prints the type of component for this <xref:System.ComponentModel.EventDescriptor> in a text box. It requires that `button1` and `textBox1` have been instantiated on a form.  
-  
- [!code-cpp[Classic EventDescriptorCollection.Find Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Find Example/CPP/source.cpp#1)]
- [!code-csharp[Classic EventDescriptorCollection.Find Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Find Example/CS/source.cs#1)]
- [!code-vb[Classic EventDescriptorCollection.Find Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Find Example/VB/source.vb#1)]  
-  
+The following code example finds a specific <xref:System.ComponentModel.EventDescriptor>. It prints the type of component for this <xref:System.ComponentModel.EventDescriptor> in a text box. It requires that `button1` and `textBox1` have been instantiated on a form.  
+ 
+[!code-cpp[Classic EventDescriptorCollection.Find Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Find Example/CPP/source.cpp#1)]
+[!code-csharp[Classic EventDescriptorCollection.Find Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Find Example/CS/source.cs#1)]
+[!code-vb[Classic EventDescriptorCollection.Find Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Find Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -417,21 +417,21 @@
         <returns>An enumerator that implements <see cref="T:System.Collections.IEnumerator" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example gets an enumerator for the events on `button1`. It uses the enumerator to print the names of the events in the collection. It requires that `button1` and `textBox1` have been instantiated on a form.  
-  
- [!code-cpp[Classic EventDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.GetEnumerator Example/CPP/source.cpp#1)]
- [!code-csharp[Classic EventDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.GetEnumerator Example/CS/source.cs#1)]
- [!code-vb[Classic EventDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.GetEnumerator Example/VB/source.vb#1)]  
-  
+The following code example gets an enumerator for the events on `button1`. It uses the enumerator to print the names of the events in the collection. It requires that `button1` and `textBox1` have been instantiated on a form.  
+ 
+[!code-cpp[Classic EventDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.GetEnumerator Example/CPP/source.cpp#1)]
+[!code-csharp[Classic EventDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.GetEnumerator Example/CS/source.cs#1)]
+[!code-vb[Classic EventDescriptorCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.GetEnumerator Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -466,12 +466,12 @@
         <returns>The index of the given <see cref="T:System.ComponentModel.EventDescriptor" /> within the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -507,12 +507,12 @@
         <summary>Inserts an <see cref="T:System.ComponentModel.EventDescriptor" /> to the collection at a specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -547,13 +547,13 @@
         <summary>Sorts the members of this <see cref="T:System.ComponentModel.EventDescriptorCollection" />, using the specified <see cref="T:System.Collections.IComparer" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `sorter` parameter is `null`, the default sort order is used.  
-  
+If the `sorter` parameter is `null`, the default sort order is used.  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -587,21 +587,21 @@
         <summary>Sorts the members of this <see cref="T:System.ComponentModel.EventDescriptorCollection" />. The specified order is applied first, followed by the default sort for this collection, which is usually alphabetical.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example defines the sort order for the <xref:System.ComponentModel.EventDescriptorCollection.InternalSort%2A> method. If the <xref:System.ComponentModel.EventDescriptorCollection> contains four <xref:System.ComponentModel.EventDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of this <xref:System.ComponentModel.EventDescriptorCollection> would be sorted in the order `D`, `B`, `A`, and `C`.  
-  
- [!code-cpp[Classic EventDescriptorCollection.InternalSort Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.InternalSort Example/CPP/source.cpp#1)]
- [!code-csharp[Classic EventDescriptorCollection.InternalSort Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.InternalSort Example/CS/source.cs#1)]
- [!code-vb[Classic EventDescriptorCollection.InternalSort Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.InternalSort Example/VB/source.vb#1)]  
-  
+The following code example defines the sort order for the <xref:System.ComponentModel.EventDescriptorCollection.InternalSort%2A> method. If the <xref:System.ComponentModel.EventDescriptorCollection> contains four <xref:System.ComponentModel.EventDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of this <xref:System.ComponentModel.EventDescriptorCollection> would be sorted in the order `D`, `B`, `A`, and `C`.  
+ 
+[!code-cpp[Classic EventDescriptorCollection.InternalSort Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.InternalSort Example/CPP/source.cpp#1)]
+[!code-csharp[Classic EventDescriptorCollection.InternalSort Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.InternalSort Example/CS/source.cs#1)]
+[!code-vb[Classic EventDescriptorCollection.InternalSort Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.InternalSort Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -636,19 +636,19 @@
         <value>The <see cref="T:System.ComponentModel.EventDescriptor" /> with the specified index number.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The index number is zero-based. Therefore, you must subtract 1 from the numerical position of a particular <xref:System.ComponentModel.EventDescriptor> to access that <xref:System.ComponentModel.EventDescriptor>. For example, to get the third <xref:System.ComponentModel.EventDescriptor>, you need to specify `myColl[2]`.  
+The index number is zero-based. Therefore, you must subtract 1 from the numerical position of a particular <xref:System.ComponentModel.EventDescriptor> to access that <xref:System.ComponentModel.EventDescriptor>. For example, to get the third <xref:System.ComponentModel.EventDescriptor>, you need to specify `myColl[2]`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.ComponentModel.EventDescriptorCollection.Item%2A> property to print the name of the <xref:System.ComponentModel.EventDescriptor> specified by the index number in a text box. Because the index number is zero-based, this example prints the name of the second <xref:System.ComponentModel.EventDescriptor>. It requires that `button1` and `textBox1` have been instantiated on a form.  
-  
- [!code-cpp[Classic EventDescriptorCollection.this Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.this Example/CPP/source.cpp#1)]
- [!code-csharp[Classic EventDescriptorCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.this Example/CS/source.cs#1)]
- [!code-vb[Classic EventDescriptorCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.this Example/VB/source.vb#1)]  
-  
+The following code example uses the <xref:System.ComponentModel.EventDescriptorCollection.Item%2A> property to print the name of the <xref:System.ComponentModel.EventDescriptor> specified by the index number in a text box. Because the index number is zero-based, this example prints the name of the second <xref:System.ComponentModel.EventDescriptor>. It requires that `button1` and `textBox1` have been instantiated on a form.  
+ 
+[!code-cpp[Classic EventDescriptorCollection.this Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.this Example/CPP/source.cpp#1)]
+[!code-csharp[Classic EventDescriptorCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.this Example/CS/source.cs#1)]
+[!code-vb[Classic EventDescriptorCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.this Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">
@@ -685,22 +685,22 @@
         <value>The <see cref="T:System.ComponentModel.EventDescriptor" /> with the specified name, or <see langword="null" /> if the event does not exist.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.EventDescriptorCollection.Item%2A> property is case-sensitive when searching for names. That is, the names "Ename" and "ename" are considered to be two different events.  
-  
+The <xref:System.ComponentModel.EventDescriptorCollection.Item%2A> property is case-sensitive when searching for names. That is, the names "Ename" and "ename" are considered to be two different events.  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.ComponentModel.EventDescriptorCollection.Item%2A> property to print the type of the component for the <xref:System.ComponentModel.EventDescriptor> specified by the index. It requires that `button1` and `textBox1` have been instantiated on a form.  
-  
- [!code-cpp[Classic EventDescriptorCollection.this1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.this1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic EventDescriptorCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.this1 Example/CS/source.cs#1)]
- [!code-vb[Classic EventDescriptorCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.this1 Example/VB/source.vb#1)]  
-  
+The following code example uses the <xref:System.ComponentModel.EventDescriptorCollection.Item%2A> property to print the type of the component for the <xref:System.ComponentModel.EventDescriptor> specified by the index. It requires that `button1` and `textBox1` have been instantiated on a form.  
+ 
+[!code-cpp[Classic EventDescriptorCollection.this1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.this1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic EventDescriptorCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.this1 Example/CS/source.cs#1)]
+[!code-vb[Classic EventDescriptorCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.this1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -734,12 +734,12 @@
         <summary>Removes the specified <see cref="T:System.ComponentModel.EventDescriptor" /> from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -774,12 +774,12 @@
         <summary>Removes the <see cref="T:System.ComponentModel.EventDescriptor" /> at the specified index from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -812,21 +812,21 @@
         <returns>The new <see cref="T:System.ComponentModel.EventDescriptorCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example defines the sort order for the <xref:System.ComponentModel.EventDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.EventDescriptorCollection> contains four <xref:System.ComponentModel.EventDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
-  
- [!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
- [!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]
- [!code-vb[classic eventdescriptorcollection.sort example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/VB/source.vb#1)]  
-  
+The following code example defines the sort order for the <xref:System.ComponentModel.EventDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.EventDescriptorCollection> contains four <xref:System.ComponentModel.EventDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
+ 
+[!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
+[!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]
+[!code-vb[classic eventdescriptorcollection.sort example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -861,22 +861,22 @@
         <returns>The new <see cref="T:System.ComponentModel.EventDescriptorCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified <xref:System.Collections.IComparer> is applied first, followed by the default sort for this collection, which is usually alphabetical.  
-  
+The specified <xref:System.Collections.IComparer> is applied first, followed by the default sort for this collection, which is usually alphabetical.  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example defines the sort order for the <xref:System.ComponentModel.EventDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.EventDescriptorCollection> contains four <xref:System.ComponentModel.EventDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
-  
- [!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
- [!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]
- [!code-vb[classic eventdescriptorcollection.sort example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/VB/source.vb#1)]  
-  
+The following code example defines the sort order for the <xref:System.ComponentModel.EventDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.EventDescriptorCollection> contains four <xref:System.ComponentModel.EventDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
+ 
+[!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
+[!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]
+[!code-vb[classic eventdescriptorcollection.sort example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -911,22 +911,22 @@
         <returns>The new <see cref="T:System.ComponentModel.EventDescriptorCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified order is applied first, followed by the default sort for this collection, which is usually alphabetical.  
-  
+The specified order is applied first, followed by the default sort for this collection, which is usually alphabetical.  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example defines the sort order for the <xref:System.ComponentModel.EventDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.EventDescriptorCollection> contains four <xref:System.ComponentModel.EventDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
-  
- [!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
- [!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]
- [!code-vb[classic eventdescriptorcollection.sort example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/VB/source.vb#1)]  
-  
+The following code example defines the sort order for the <xref:System.ComponentModel.EventDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.EventDescriptorCollection> contains four <xref:System.ComponentModel.EventDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
+ 
+[!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
+[!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]
+[!code-vb[classic eventdescriptorcollection.sort example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -963,22 +963,22 @@
         <returns>The new <see cref="T:System.ComponentModel.EventDescriptorCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified sort order is applied first, followed by the sort using the specified <xref:System.Collections.IComparer>.  
-  
+The specified sort order is applied first, followed by the sort using the specified <xref:System.Collections.IComparer>.  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example defines the sort order for the <xref:System.ComponentModel.EventDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.EventDescriptorCollection> contains four <xref:System.ComponentModel.EventDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
-  
- [!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
- [!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]
- [!code-vb[classic eventdescriptorcollection.sort example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/VB/source.vb#1)]  
-  
+The following code example defines the sort order for the <xref:System.ComponentModel.EventDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.EventDescriptorCollection> contains four <xref:System.ComponentModel.EventDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
+ 
+[!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
+[!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]
+[!code-vb[classic eventdescriptorcollection.sort example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1014,12 +1014,12 @@
         <summary>Copies the elements of the collection to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1046,12 +1046,12 @@
         <value>The number of elements contained in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1083,12 +1083,12 @@
           <see langword="true" /> if access to the collection is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1119,12 +1119,12 @@
         <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1152,12 +1152,12 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1192,12 +1192,12 @@
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -1225,12 +1225,12 @@
         <summary>Removes all the items from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -1267,12 +1267,12 @@
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1307,12 +1307,12 @@
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1348,12 +1348,12 @@
         <summary>Inserts an item to the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -1386,12 +1386,12 @@
           <see langword="true" /> if the collection has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1423,12 +1423,12 @@
           <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1463,12 +1463,12 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -1509,12 +1509,12 @@
         <summary>Removes the first occurrence of a specific object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
@@ -1545,12 +1545,12 @@
         <summary>Removes the item at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>

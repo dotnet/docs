@@ -14,18 +14,18 @@
     <summary>Retrieves a dynamic resource during compilation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET automatically evaluates expressions during page parsing using the <xref:System.Web.Configuration.ExpressionBuilder> class. The <xref:System.Web.Configuration.ExpressionBuilderCollection> collection, which is made up of the `expressionBuilders` elements contained in the `compilation` section of the configuration. The <xref:System.Web.Configuration.ExpressionBuilder> contains specific values in key/value pairs.  
-  
- A value is retrieved by including an expression of the form  
-  
- `<%$ ExpressionPrefix: ExpressionKey %>`  
-  
- within the page. The `ExpressionPrefix` maps the type of expression to be retrieved as either a common expression-builder type (that is, <xref:System.Web.Compilation.AppSettingsExpressionBuilder>) or a custom expression builder type. The `ExpressionKey` specifies the key used to reference the returned value.  
-  
- If you choose to implement a common expression-builder type, you must map the expression builder to the associated section name in the configuration. If you choose to implement a custom expression-builder type, you must map your expression builder to your custom expression-builder class, which must derive from the <xref:System.Web.Configuration.ExpressionBuilder> class.  
-  
+ASP.NET automatically evaluates expressions during page parsing using the <xref:System.Web.Configuration.ExpressionBuilder> class. The <xref:System.Web.Configuration.ExpressionBuilderCollection> collection, which is made up of the `expressionBuilders` elements contained in the `compilation` section of the configuration. The <xref:System.Web.Configuration.ExpressionBuilder> contains specific values in key/value pairs.  
+ 
+A value is retrieved by including an expression of the form  
+ 
+`<%$ ExpressionPrefix: ExpressionKey %>`  
+ 
+within the page. The `ExpressionPrefix` maps the type of expression to be retrieved as either a common expression-builder type (that is, <xref:System.Web.Compilation.AppSettingsExpressionBuilder>) or a custom expression builder type. The `ExpressionKey` specifies the key used to reference the returned value.  
+ 
+If you choose to implement a common expression-builder type, you must map the expression builder to the associated section name in the configuration. If you choose to implement a custom expression-builder type, you must map your expression builder to your custom expression-builder class, which must derive from the <xref:System.Web.Configuration.ExpressionBuilder> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,13 +49,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ExpressionBuilder" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to create an <xref:System.Web.Configuration.ExpressionBuilder> object. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
-  
- [!code-csharp[System.Web.Configuration.ExpressionBuilderCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/CS/ExpressionBuilderCollection.cs#2)]
- [!code-vb[System.Web.Configuration.ExpressionBuilderCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/VB/ExpressionBuilderCollection.vb#2)]  
-  
+The following code example demonstrates how to create an <xref:System.Web.Configuration.ExpressionBuilder> object. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
+ 
+[!code-csharp[System.Web.Configuration.ExpressionBuilderCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/CS/ExpressionBuilderCollection.cs#2)]
+[!code-vb[System.Web.Configuration.ExpressionBuilderCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/VB/ExpressionBuilderCollection.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,10 +85,10 @@
         <value>A string that identifies the type of expression to retrieve.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.ExpressionBuilder.ExpressionPrefix%2A> maps the expression to the associated section name in the configuration for common expression types, or maps the expression to the custom expression class.  
-  
+The <xref:System.Web.Configuration.ExpressionBuilder.ExpressionPrefix%2A> maps the expression to the associated section name in the configuration for common expression types, or maps the expression to the custom expression class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,10 +136,10 @@
         <value>A string that specifies the expression type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.ExpressionBuilder.Type%2A> specifies the type of object used to determine the value of the expression. The type can specify either a section within the configuration, or a custom class.  
-  
+The <xref:System.Web.Configuration.ExpressionBuilder.Type%2A> specifies the type of object used to determine the value of the expression. The type can specify either a section within the configuration, or a custom class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

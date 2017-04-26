@@ -23,25 +23,25 @@
     <summary>Exposes a <see cref="T:System.IO.Stream" /> around a named pipe, which supports both synchronous and asynchronous read and write operations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Named pipes provide one-way or duplex pipes for communication between a pipe server and one or more pipe clients. Named pipes can be used for interprocess communication locally or over a network. A single pipe name can be shared by multiple <xref:System.IO.Pipes.NamedPipeClientStream> objects.  
-  
- Any process can act as either a named pipe server or client, or both.  
-  
+Named pipes provide one-way or duplex pipes for communication between a pipe server and one or more pipe clients. Named pipes can be used for interprocess communication locally or over a network. A single pipe name can be shared by multiple <xref:System.IO.Pipes.NamedPipeClientStream> objects.  
+ 
+Any process can act as either a named pipe server or client, or both.  
+ 
 > [!NOTE]
 >  For [!INCLUDE[winxppro](~/includes/winxppro-md.md)] and [!INCLUDE[win2kserver](~/includes/win2kserver-md.md)], a maximum of 10 pipes can simultaneously connect over the network.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates a way to send a string from a parent process to a child process on the same computer using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeServerStream> object in a parent process. The <xref:System.IO.Pipes.NamedPipeServerStream> object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>. The server then waits for a <xref:System.IO.Pipes.NamedPipeClientStream> object in a child process to connect to it. In this example, both processes are on the same computer and the <xref:System.IO.Pipes.NamedPipeClientStream> object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>. The parent process then sends a user-supplied string to the child process. The string is displayed to the console.  
-  
- This example is for the client process, which connects to the server process. For the entire code sample, including the code for both the pipe client and server, see [How to: Use Named Pipes for Network Interprocess Communication](~/docs/standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md).  
-  
- [!code-csharp[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/cs/Program.cs#01)]
- [!code-vb[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/vb/program.vb#01)]  
-  
+The following example demonstrates a way to send a string from a parent process to a child process on the same computer using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeServerStream> object in a parent process. The <xref:System.IO.Pipes.NamedPipeServerStream> object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>. The server then waits for a <xref:System.IO.Pipes.NamedPipeClientStream> object in a child process to connect to it. In this example, both processes are on the same computer and the <xref:System.IO.Pipes.NamedPipeClientStream> object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>. The parent process then sends a user-supplied string to the child process. The string is displayed to the console.  
+ 
+This example is for the client process, which connects to the server process. For the entire code sample, including the code for both the pipe client and server, see [How to: Use Named Pipes for Network Interprocess Communication](~/docs/standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md).  
+ 
+[!code-csharp[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/cs/Program.cs#01)]
+[!code-vb[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/vb/program.vb#01)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,20 +72,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> class with the specified pipe name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses the following default values:  
-  
+This constructor uses the following default values:  
+ 
 -   A default server name of ".".  
-  
+ 
 -   A default <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>.  
-  
+ 
 -   A default <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions>.  
-  
+ 
 -   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel>.  
-  
+ 
 -   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -125,18 +125,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> class with the specified pipe and server names.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses the following default values:  
-  
+This constructor uses the following default values:  
+ 
 -   A default <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>.  
-  
+ 
 -   A default <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions>.  
-  
+ 
 -   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel>.  
-  
+ 
 -   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -178,24 +178,24 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> class with the specified pipe and server names, and the specified pipe direction.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses the following default values:  
-  
+This constructor uses the following default values:  
+ 
 -   A default <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions>.  
-  
+ 
 -   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel>.  
-  
+ 
 -   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates a method to send a string from a parent process to a child process using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeClientStream> object in a child process, which then connects to a pipe on the local computer. The server example can be seen in the <xref:System.IO.Pipes.NamedPipeServerStream> class. This example is part of a larger example provided for the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes.  
-  
- [!code-csharp[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/cs/Program.cs#01)]
- [!code-vb[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/vb/program.vb#01)]  
-  
+The following example demonstrates a method to send a string from a parent process to a child process using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeClientStream> object in a child process, which then connects to a pipe on the local computer. The server example can be seen in the <xref:System.IO.Pipes.NamedPipeServerStream> class. This example is part of a larger example provided for the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes.  
+ 
+[!code-csharp[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/cs/Program.cs#01)]
+[!code-vb[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/vb/program.vb#01)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -286,14 +286,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> class with the specified pipe and server names, and the specified pipe direction and pipe options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses the following default values:  
-  
+This constructor uses the following default values:  
+ 
 -   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel>.  
-  
+ 
 -   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -347,10 +347,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> class with the specified pipe and server names, and the specified pipe direction, pipe options, and security impersonation level.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses a default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
-  
+This constructor uses a default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -402,10 +402,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> class with the specified pipe and server names, and the specified pipe options, security impersonation level, and inheritability mode.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The pipe direction for this constructor is determined by the `desiredAccessRights` parameter. If the `desiredAccessRights` value is <xref:System.IO.Pipes.PipeAccessRights>, the pipe direction will be <xref:System.IO.Pipes.PipeDirection>. If the value of `desiredAccessRights` is <xref:System.IO.Pipes.PipeAccessRights>, the pipe direction will be <xref:System.IO.Pipes.PipeDirection>. If the value of `desiredAccessRights` includes both <xref:System.IO.Pipes.PipeAccessRights> and <xref:System.IO.Pipes.PipeAccessRights>, the pipe direction will be <xref:System.IO.Pipes.PipeDirection>.  
-  
+The pipe direction for this constructor is determined by the `desiredAccessRights` parameter. If the `desiredAccessRights` value is <xref:System.IO.Pipes.PipeAccessRights>, the pipe direction will be <xref:System.IO.Pipes.PipeDirection>. If the value of `desiredAccessRights` is <xref:System.IO.Pipes.PipeAccessRights>, the pipe direction will be <xref:System.IO.Pipes.PipeDirection>. If the value of `desiredAccessRights` includes both <xref:System.IO.Pipes.PipeAccessRights> and <xref:System.IO.Pipes.PipeAccessRights>, the pipe direction will be <xref:System.IO.Pipes.PipeDirection>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -534,22 +534,22 @@
         <summary>Connects to a waiting server with an infinite time-out value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls the <xref:System.IO.Pipes.NamedPipeClientStream.Connect%28System.Int32%29> method with an infinite time-out value.  
+This method calls the <xref:System.IO.Pipes.NamedPipeClientStream.Connect%28System.Int32%29> method with an infinite time-out value.  
+ 
+This method waits for a pipe instance to become available. <xref:System.IO.Pipes.NamedPipeClientStream.Connect%2A> might return before <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A> is called from the <xref:System.IO.Pipes.NamedPipeServerStream> object, but <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A> will not return until <xref:System.IO.Pipes.NamedPipeClientStream.Connect%2A> has returned.  
+ 
+Any data written to the pipe after a <xref:System.IO.Pipes.NamedPipeClientStream> object has connected, but before the server has called <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A>, will be available to the server following the call to <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A>.  
+ 
   
- This method waits for a pipe instance to become available. <xref:System.IO.Pipes.NamedPipeClientStream.Connect%2A> might return before <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A> is called from the <xref:System.IO.Pipes.NamedPipeServerStream> object, but <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A> will not return until <xref:System.IO.Pipes.NamedPipeClientStream.Connect%2A> has returned.  
-  
- Any data written to the pipe after a <xref:System.IO.Pipes.NamedPipeClientStream> object has connected, but before the server has called <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A>, will be available to the server following the call to <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates a method to send a string from a parent process to a child process using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeClientStream> object in a child process, which then connects to a pipe on the local computer. The server example can be seen in the <xref:System.IO.Pipes.NamedPipeServerStream> class. This example is part of a larger example provided for the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes.  
-  
- [!code-csharp[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/cs/Program.cs#01)]
- [!code-vb[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/vb/program.vb#01)]  
-  
+The following example demonstrates a method to send a string from a parent process to a child process using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeClientStream> object in a child process, which then connects to a pipe on the local computer. The server example can be seen in the <xref:System.IO.Pipes.NamedPipeServerStream> class. This example is part of a larger example provided for the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes.  
+ 
+[!code-csharp[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/cs/Program.cs#01)]
+[!code-vb[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/vb/program.vb#01)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The client is already connected.</exception>
@@ -584,12 +584,12 @@
         <summary>Connects to a waiting server within the specified time-out period.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method waits for a pipe instance to become available. <xref:System.IO.Pipes.NamedPipeClientStream.Connect%2A> might return before <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A> is called from the <xref:System.IO.Pipes.NamedPipeServerStream>, but <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A> will not return until <xref:System.IO.Pipes.NamedPipeClientStream.Connect%2A> has returned. You set the `timeout` parameter to <xref:System.Threading.Timeout.Infinite> to specify an infinite time-out value.  
-  
- Any data written to the pipe after a <xref:System.IO.Pipes.NamedPipeClientStream> object has connected, but before the server has called <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A>, will be available to the server following the call to <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A>.  
-  
+This method waits for a pipe instance to become available. <xref:System.IO.Pipes.NamedPipeClientStream.Connect%2A> might return before <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A> is called from the <xref:System.IO.Pipes.NamedPipeServerStream>, but <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A> will not return until <xref:System.IO.Pipes.NamedPipeClientStream.Connect%2A> has returned. You set the `timeout` parameter to <xref:System.Threading.Timeout.Infinite> to specify an infinite time-out value.  
+ 
+Any data written to the pipe after a <xref:System.IO.Pipes.NamedPipeClientStream> object has connected, but before the server has called <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A>, will be available to the server following the call to <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.TimeoutException">Could not connect to the server within the specified <paramref name="timeout" /> period.</exception>
@@ -771,18 +771,18 @@
         <value>The number of server instances that share the same pipe name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the number of server instances for the <xref:System.IO.Pipes.NamedPipeServerStream> object that the current <xref:System.IO.Pipes.NamedPipeClientStream> object has a handle to or is connected to. If the current <xref:System.IO.Pipes.NamedPipeClientStream> object has not yet connected to a named pipe server, or if the current pipe handle has not yet been set, this property throws an <xref:System.InvalidOperationException>.  
+This property returns the number of server instances for the <xref:System.IO.Pipes.NamedPipeServerStream> object that the current <xref:System.IO.Pipes.NamedPipeClientStream> object has a handle to or is connected to. If the current <xref:System.IO.Pipes.NamedPipeClientStream> object has not yet connected to a named pipe server, or if the current pipe handle has not yet been set, this property throws an <xref:System.InvalidOperationException>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates a method to send a string from a parent process to a child process using named pipes. In this example, a <xref:System.IO.Pipes.NamedPipeClientStream> object is created in a child process, which then connects to a pipe on the local computer. The server example can be seen in the <xref:System.IO.Pipes.NamedPipeServerStream> class. This example is part of a larger example provided for the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes.  
-  
- [!code-csharp[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/cs/Program.cs#01)]
- [!code-vb[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/vb/program.vb#01)]  
-  
+The following example demonstrates a method to send a string from a parent process to a child process using named pipes. In this example, a <xref:System.IO.Pipes.NamedPipeClientStream> object is created in a child process, which then connects to a pipe on the local computer. The server example can be seen in the <xref:System.IO.Pipes.NamedPipeServerStream> class. This example is part of a larger example provided for the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes.  
+ 
+[!code-csharp[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/cs/Program.cs#01)]
+[!code-vb[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/vb/program.vb#01)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The pipe handle has not been set.  

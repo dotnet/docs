@@ -19,24 +19,24 @@
     <summary>Represents the base class for many visual elements of the chart such as the legend, title, and chart areas. Defines the position of the chart element in relative coordinates, which range from (0,0) to (100,100).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition> class is used to define the position of a chart element, and represents one rectangle using the <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.X%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Y%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Width%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Height%2A> properties.  
-  
- The <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition> class is always exposed as a `Position` property, such as <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.Position%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Position%2A>, and so forth. It is also exposed in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PrePaint> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PostPaint> events of the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control as a property of the <xref:System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs> object.  
-  
- The position of the applicable chart elements can be set automatically by setting the <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Auto%2A> property to `true`; chart elements can also be positioned at design time in the Design View.  
-  
- There are two major differences between this class and a <xref:System.Drawing.RectangleF> structure:  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition> class is used to define the position of a chart element, and represents one rectangle using the <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.X%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Y%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Width%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Height%2A> properties.  
+ 
+The <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition> class is always exposed as a `Position` property, such as <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.Position%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Position%2A>, and so forth. It is also exposed in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PrePaint> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PostPaint> events of the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control as a property of the <xref:System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs> object.  
+ 
+The position of the applicable chart elements can be set automatically by setting the <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Auto%2A> property to `true`; chart elements can also be positioned at design time in the Design View.  
+ 
+There are two major differences between this class and a <xref:System.Drawing.RectangleF> structure:  
+ 
 -   This class can use automatic positioning.  
-  
+ 
 -   This class only uses coordinates ranging from 0 to 100, otherwise an exception is thrown.  
-  
- The position of chart elements is described using relative coordinates, with the top-left corner of an element having coordinates of (0,0) and the bottom-right corner of an element having coordinates of (100,100).  
-  
- Elements that are plotted within a chart area use coordinates that are relative to the chart area, whereas elements outside a chart area use coordinates that are relative to the chart image.  
-  
+ 
+The position of chart elements is described using relative coordinates, with the top-left corner of an element having coordinates of (0,0) and the bottom-right corner of an element having coordinates of (100,100).  
+ 
+Elements that are plotted within a chart area use coordinates that are relative to the chart area, whereas elements outside a chart area use coordinates that are relative to the chart image.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -112,10 +112,10 @@
           <see langword="true" /> if an applicable chart element will be positioned automatically by the chart control; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to automatically position a chart element. For example, to position the legend automatically, set the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Position%2A> property to <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Auto%2A>.  
-  
+Use this property to automatically position a chart element. For example, to position the legend automatically, set the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Position%2A> property to <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Auto%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,12 +142,12 @@
         <value>A <see langword="float" /> value that represents the relative position of the bottom of a chart element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The bottom of the chart element is always expressed in relative coordinates, and is either relative to a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object if plotted within a chart area, or relative to the entire chart image if plotted outside of a chart area element.  
-  
- Chart coordinates use (0,0) for a top-left corner, and (100,100) for a bottom-right corner.  
-  
+The bottom of the chart element is always expressed in relative coordinates, and is either relative to a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object if plotted within a chart area, or relative to the entire chart image if plotted outside of a chart area element.  
+ 
+Chart coordinates use (0,0) for a top-left corner, and (100,100) for a bottom-right corner.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,10 +204,10 @@
         <value>A <see langword="float" /> value that represents the height of the chart element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Always uses relative coordinates. If you set a value outside of the 0-100 pixel range, an exception will be thrown.  
-  
+Always uses relative coordinates. If you set a value outside of the 0-100 pixel range, an exception will be thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -234,14 +234,14 @@
         <value>A <see langword="float" /> value that represents the relative position of the right side of a chart element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns a value that represents the relative position of the right side of an applicable chart element.  
-  
- The right side position is always expressed in relative coordinates, and is either relative to a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object if plotted within a chart area, or relative to the entire chart image if plotted outside of a chart area element.  
-  
- Chart coordinates use (0,0) for a top-left corner, and (100,100) for a bottom-right corner.  
-  
+Returns a value that represents the relative position of the right side of an applicable chart element.  
+ 
+The right side position is always expressed in relative coordinates, and is either relative to a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object if plotted within a chart area, or relative to the entire chart image if plotted outside of a chart area element.  
+ 
+Chart coordinates use (0,0) for a top-left corner, and (100,100) for a bottom-right corner.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,10 +287,10 @@
         <returns>A <see cref="T:System.Drawing.RectangleF" /> structure that represents the coordinates of an element position object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method converts the position of an element to a <xref:System.Drawing.RectangleF> structure.  
-  
+This method converts the position of an element to a <xref:System.Drawing.RectangleF> structure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,10 +326,10 @@
         <value>A <see langword="float" /> value that represents the width of a chart element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property always uses relative coordinates; if you set a value outside the 0-100 pixel range, an exception will be thrown.  
-  
+This property always uses relative coordinates; if you set a value outside the 0-100 pixel range, an exception will be thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -365,12 +365,12 @@
         <value>A <see langword="float" /> value that represents the X-coordinate of the top-left corner of an applicable chart element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.X%2A> property is always expressed in relative coordinates, and is either relative to a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object if plotted within a chart area, or relative to the entire chart image if plotted outside of a chart area element.  
-  
- This property always uses relative coordinates; if you set a value outside the 0-100 pixel range, an exception will be thrown.  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.X%2A> property is always expressed in relative coordinates, and is either relative to a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object if plotted within a chart area, or relative to the entire chart image if plotted outside of a chart area element.  
+ 
+This property always uses relative coordinates; if you set a value outside the 0-100 pixel range, an exception will be thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -406,12 +406,12 @@
         <value>A <see langword="float" /> value that represents the Y-coordinate of the top-left corner of an applicable chart element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Y%2A> property is always expressed in relative coordinates, and is either relative to a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object if plotted within a chart area, or relative to the entire chart image if plotted outside of a chart area element.  
-  
- This property always uses relative coordinates; if you set a value outside the 0-100 pixel range, an exception will be thrown.  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Y%2A> property is always expressed in relative coordinates, and is either relative to a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object if plotted within a chart area, or relative to the entire chart image if plotted outside of a chart area element.  
+ 
+This property always uses relative coordinates; if you set a value outside the 0-100 pixel range, an exception will be thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>

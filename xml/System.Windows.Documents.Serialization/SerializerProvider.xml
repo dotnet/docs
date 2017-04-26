@@ -34,19 +34,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Serialization.SerializerProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only fully trusted callers can create a <xref:System.Windows.Documents.Serialization.SerializerProvider>.  
+Only fully trusted callers can create a <xref:System.Windows.Documents.Serialization.SerializerProvider>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following examples show use of the <xref:System.Windows.Documents.Serialization.SerializerProvider> constructor.  
-  
- [!code-csharp[DocumentSerialize#DocSerializeFileFilter](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializefilefilter)]  
-  
- [!code-csharp[DocumentSerialize#DocSerializePlugIn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
-  
+The following examples show use of the <xref:System.Windows.Documents.Serialization.SerializerProvider> constructor.  
+ 
+[!code-csharp[DocumentSerialize#DocSerializeFileFilter](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializefilefilter)]  
+ 
+[!code-csharp[DocumentSerialize#DocSerializePlugIn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,17 +79,17 @@
         <returns>An object of a class derived from <see cref="T:System.Windows.Documents.Serialization.SerializerWriter" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only fully trusted applications can call <xref:System.Windows.Documents.Serialization.SerializerProvider.CreateSerializerWriter%2A>.  
+Only fully trusted applications can call <xref:System.Windows.Documents.Serialization.SerializerProvider.CreateSerializerWriter%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows using <xref:System.Windows.Documents.Serialization.SerializerProvider.CreateSerializerWriter%2A> to return a plug-in serialization writer for saving a file.  
-  
- [!code-csharp[DocumentSerialize#DocSerializePlugIn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
-  
+The following example shows using <xref:System.Windows.Documents.Serialization.SerializerProvider.CreateSerializerWriter%2A> to return a plug-in serialization writer for saving a file.  
+ 
+[!code-csharp[DocumentSerialize#DocSerializePlugIn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">One of the parameters is null.</exception>
@@ -125,14 +125,14 @@
         <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of the <see cref="T:System.Windows.Documents.Serialization.SerializerDescriptor" /> objects already registered.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following examples show using <xref:System.Windows.Documents.Serialization.SerializerProvider.InstalledSerializers%2A> to enumerate the plug-in serializers when saving a file.  
-  
- [!code-csharp[DocumentSerialize#DocSerializePlugIn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
-  
- [!code-csharp[DocumentSerialize#DocSerializeFileFilter](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializefilefilter)]  
-  
+The following examples show using <xref:System.Windows.Documents.Serialization.SerializerProvider.InstalledSerializers%2A> to enumerate the plug-in serializers when saving a file.  
+ 
+[!code-csharp[DocumentSerialize#DocSerializePlugIn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
+ 
+[!code-csharp[DocumentSerialize#DocSerializeFileFilter](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializefilefilter)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,12 +165,12 @@
         <summary>Registers a serializer plug-in.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only fully trusted callers can use this method.  
-  
- The method will interpret an already registered plug-in as the same one if it is the same in all these properties: <xref:System.Windows.Documents.Serialization.SerializerDescriptor.DisplayName%2A>, <xref:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyName%2A>, <xref:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyVersion%2A>, and <xref:System.Windows.Documents.Serialization.SerializerDescriptor.WinFXVersion%2A>.  
-  
+Only fully trusted callers can use this method.  
+ 
+The method will interpret an already registered plug-in as the same one if it is the same in all these properties: <xref:System.Windows.Documents.Serialization.SerializerDescriptor.DisplayName%2A>, <xref:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyName%2A>, <xref:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyVersion%2A>, and <xref:System.Windows.Documents.Serialization.SerializerDescriptor.WinFXVersion%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -204,12 +204,12 @@
         <summary>Deletes a serializer plug-in from the registry.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only fully trusted callers can use this method.  
-  
- The method will interpret a registered plug-in as the same one passed to this method only if it is the same in all these properties: <xref:System.Windows.Documents.Serialization.SerializerDescriptor.DisplayName%2A>, <xref:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyName%2A>, <xref:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyVersion%2A>, and <xref:System.Windows.Documents.Serialization.SerializerDescriptor.WinFXVersion%2A>.  
-  
+Only fully trusted callers can use this method.  
+ 
+The method will interpret a registered plug-in as the same one passed to this method only if it is the same in all these properties: <xref:System.Windows.Documents.Serialization.SerializerDescriptor.DisplayName%2A>, <xref:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyName%2A>, <xref:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyVersion%2A>, and <xref:System.Windows.Documents.Serialization.SerializerDescriptor.WinFXVersion%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

@@ -34,12 +34,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObjectSearcher" /> class. After some properties on this object are set, the object can be used to invoke a query for management information. This is the default constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -61,20 +61,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObjectSearcher" /> class used to invoke the specified query for management information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query.  
-  
- [!code-csharp[wminet_ManagementObjectSearcher(O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(O)/cs/ManagementObjectSearcher(O).cs#1)]
- [!code-vb[wminet_ManagementObjectSearcher(O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(O)/vb/ManagementObjectSearcher(O).vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query.  
+ 
+[!code-csharp[wminet_ManagementObjectSearcher(O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(O)/cs/ManagementObjectSearcher(O).cs#1)]
+[!code-vb[wminet_ManagementObjectSearcher(O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(O)/vb/ManagementObjectSearcher(O).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,20 +96,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObjectSearcher" /> class used to invoke the specified query for management information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query.  
-  
- [!code-csharp[wminet_ManagementObjectSearcher(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S)/cs/ManagementObjectSearcher(S).cs#1)]
- [!code-vb[wminet_ManagementObjectSearcher(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S)/vb/ManagementObjectSearcher(S).vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query.  
+ 
+[!code-csharp[wminet_ManagementObjectSearcher(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S)/cs/ManagementObjectSearcher(S).cs#1)]
+[!code-vb[wminet_ManagementObjectSearcher(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S)/vb/ManagementObjectSearcher(S).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,21 +133,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObjectSearcher" /> class used to invoke the specified query in the specified scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no scope is specified, the default scope (<xref:System.Management.ManagementPath.DefaultPath%2A>) is used.  
-  
+If no scope is specified, the default scope (<xref:System.Management.ManagementPath.DefaultPath%2A>) is used.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query and scope.  
-  
- [!code-csharp[wminet_ManagementObjectSearcher(M_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O)/cs/ManagementObjectSearcher(M_O).cs#1)]
- [!code-vb[wminet_ManagementObjectSearcher(M_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O)/vb/ManagementObjectSearcher(M_O).vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query and scope.  
+ 
+[!code-csharp[wminet_ManagementObjectSearcher(M_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O)/cs/ManagementObjectSearcher(M_O).cs#1)]
+[!code-vb[wminet_ManagementObjectSearcher(M_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O)/vb/ManagementObjectSearcher(M_O).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,21 +171,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObjectSearcher" /> class used to invoke the specified query in the specified scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no scope is specified, the default scope (<xref:System.Management.ManagementPath.DefaultPath%2A>) is used.  
-  
+If no scope is specified, the default scope (<xref:System.Management.ManagementPath.DefaultPath%2A>) is used.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query and scope.  
-  
- [!code-csharp[wminet_ManagementObjectSearcher(S_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S)/cs/ManagementObjectSearcher(S_S).cs#1)]
- [!code-vb[wminet_ManagementObjectSearcher(S_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S)/vb/ManagementObjectSearcher(S_S).vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query and scope.  
+ 
+[!code-csharp[wminet_ManagementObjectSearcher(S_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S)/cs/ManagementObjectSearcher(S_S).cs#1)]
+[!code-vb[wminet_ManagementObjectSearcher(S_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S)/vb/ManagementObjectSearcher(S_S).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,20 +211,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObjectSearcher" /> class to be used to invoke the specified query in the specified scope, with the specified options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query, scope, and enumeration options.  
-  
- [!code-csharp[wminet_ManagementObjectSearcher(M_O_E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O_E)/cs/ManagementObjectSearcher(M_O_E).cs#1)]
- [!code-vb[wminet_ManagementObjectSearcher(M_O_E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O_E)/vb/ManagementObjectSearcher(M_O_E).vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query, scope, and enumeration options.  
+ 
+[!code-csharp[wminet_ManagementObjectSearcher(M_O_E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O_E)/cs/ManagementObjectSearcher(M_O_E).cs#1)]
+[!code-vb[wminet_ManagementObjectSearcher(M_O_E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O_E)/vb/ManagementObjectSearcher(M_O_E).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,20 +250,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObjectSearcher" /> class used to invoke the specified query, in the specified scope, and with the specified options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query, scope, and enumeration options.  
-  
- [!code-csharp[wminet_ManagementObjectSearcher(S_S_E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S_E)/cs/ManagementObjectSearcher(S_S_E).cs#1)]
- [!code-vb[wminet_ManagementObjectSearcher(S_S_E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S_E)/vb/ManagementObjectSearcher(S_S_E).vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query, scope, and enumeration options.  
+ 
+[!code-csharp[wminet_ManagementObjectSearcher(S_S_E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S_E)/cs/ManagementObjectSearcher(S_S_E).cs#1)]
+[!code-vb[wminet_ManagementObjectSearcher(S_S_E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S_E)/vb/ManagementObjectSearcher(S_S_E).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,20 +286,20 @@
         <returns>A <see cref="T:System.Management.ManagementObjectCollection" /> containing the objects that match the specified query.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query, scope, and enumeration options.  
-  
- [!code-csharp[wminet_ManagementObjectSearcher_Get#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher_Get/cs/ManagementObjectSearcher_Get.cs#1)]
- [!code-vb[wminet_ManagementObjectSearcher_Get#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher_Get/vb/ManagementObjectSearcher_Get.vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query, scope, and enumeration options.  
+ 
+[!code-csharp[wminet_ManagementObjectSearcher_Get#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher_Get/cs/ManagementObjectSearcher_Get.cs#1)]
+[!code-vb[wminet_ManagementObjectSearcher_Get#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher_Get/vb/ManagementObjectSearcher_Get.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -324,12 +324,12 @@
         <summary>Invokes the WMI query asynchronously, and binds to a watcher to deliver the results.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,15 +351,15 @@
         <value>Returns an <see cref="T:System.Management.EnumerationOptions" /> that contains the options for searching for WMI objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- The options for how to search for objects.  
-  
+The options for how to search for objects.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -381,16 +381,16 @@
         <value>Returns an <see cref="T:System.Management.ObjectQuery" /> that contains the query to be invoked in the searcher.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the value of this property is changed, the <xref:System.Management.ManagementObjectSearcher> is reset to use the new query.  
-  
+When the value of this property is changed, the <xref:System.Management.ManagementObjectSearcher> is reset to use the new query.  
+ 
 ## Property Value  
- The criteria to apply to the query.  
-  
+The criteria to apply to the query.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -412,24 +412,24 @@
         <value>Returns a <see cref="T:System.Management.ManagementScope" /> that contains the scope (namespace) in which to look for the WMI objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the value of this property is changed, the <xref:System.Management.ManagementObjectSearcher> is re-bound to the new scope.  
-  
+When the value of this property is changed, the <xref:System.Management.ManagementObjectSearcher> is re-bound to the new scope.  
+ 
 ## Property Value  
- The scope (namespace) in which to look for objects.  
-  
+The scope (namespace) in which to look for objects.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query and then changes the scope of the instance.  
-  
- [!code-csharp[wminet_ManagementObjectSearcher_Scope#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher_Scope/cs/ManagementObjectSearcher_Scope.cs#1)]
- [!code-vb[wminet_ManagementObjectSearcher_Scope#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher_Scope/vb/ManagementObjectSearcher_Scope.vb#1)]  
-  
+The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query and then changes the scope of the instance.  
+ 
+[!code-csharp[wminet_ManagementObjectSearcher_Scope#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher_Scope/cs/ManagementObjectSearcher_Scope.cs#1)]
+[!code-vb[wminet_ManagementObjectSearcher_Scope#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher_Scope/vb/ManagementObjectSearcher_Scope.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

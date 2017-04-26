@@ -121,12 +121,12 @@
         <value>The priority of this entry. The default value is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The entries in the filter table are evaluated based on priority, with 0 being the lowest priority. All entries for a specific priority are evaluated simultaneously, if no matching entry is found for the current priority, the next priority level is evaluated.  
-  
- This value is optional.  
-  
+The entries in the filter table are evaluated based on priority, with 0 being the lowest priority. All entries for a specific priority are evaluated simultaneously, if no matching entry is found for the current priority, the next priority level is evaluated.  
+ 
+This value is optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>

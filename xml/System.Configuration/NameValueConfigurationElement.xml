@@ -14,12 +14,12 @@
     <summary>A configuration element that contains a <see cref="T:System.String" /> name and <see cref="T:System.String" /> value. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.NameValueConfigurationElement> inherits from the <xref:System.Configuration.ConfigurationElement> base class. The <xref:System.Configuration.ConfigurationElement> represents an element within a configuration file.  
-  
- There is a difference between the <xref:System.Configuration.NameValueConfigurationElement> class and <xref:System.Configuration.KeyValueConfigurationElement> class. The <xref:System.Configuration.NameValueConfigurationElement> class does not require the first string to be unique, whereas <xref:System.Configuration.KeyValueConfigurationElement> class requires the first string to be a key, and therefore unique in the collection.  
-  
+The <xref:System.Configuration.NameValueConfigurationElement> inherits from the <xref:System.Configuration.ConfigurationElement> base class. The <xref:System.Configuration.ConfigurationElement> represents an element within a configuration file.  
+ 
+There is a difference between the <xref:System.Configuration.NameValueConfigurationElement> class and <xref:System.Configuration.KeyValueConfigurationElement> class. The <xref:System.Configuration.NameValueConfigurationElement> class does not require the first string to be unique, whereas <xref:System.Configuration.KeyValueConfigurationElement> class requires the first string to be a key, and therefore unique in the collection.  
+ 
  ]]></format>
     </remarks>
   </Docs>

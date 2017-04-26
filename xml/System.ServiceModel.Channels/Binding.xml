@@ -19,12 +19,12 @@
     <summary>Contains the binding elements that specify the protocols, transports, and message encoders used for communication between clients and services.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Represents a collection of binding elements, each of which describes an aspect of how an endpoint communicates with other endpoints and that are built, consistently, into a channel factory on the client and into a channel listener on the service. A binding contains a collection of binding elements that correspond to protocol channels, transport channels, and message encoders. There can be any number of binding elements for protocol channels but one and only one binding element for each the transport and message encoder. There are commonly six layers of binding elements in a binding. Only the transport and encoding binding elements at the bottom of the stack are required. Because an encoding is required for each binding, if an encoding is not specified, [!INCLUDE[indigo1](~/includes/indigo1-md.md)] adds a default encoding for you. The default is Text/XML for the HTTP and HTTPS transports, and Binary for other transports.  
-  
- The following table summarizes the options for each layer.  
-  
+Represents a collection of binding elements, each of which describes an aspect of how an endpoint communicates with other endpoints and that are built, consistently, into a channel factory on the client and into a channel listener on the service. A binding contains a collection of binding elements that correspond to protocol channels, transport channels, and message encoders. There can be any number of binding elements for protocol channels but one and only one binding element for each the transport and message encoder. There are commonly six layers of binding elements in a binding. Only the transport and encoding binding elements at the bottom of the stack are required. Because an encoding is required for each binding, if an encoding is not specified, [!INCLUDE[indigo1](~/includes/indigo1-md.md)] adds a default encoding for you. The default is Text/XML for the HTTP and HTTPS transports, and Binary for other transports.  
+ 
+The following table summarizes the options for each layer.  
+ 
 |Layer|Options|Required|  
 |-----------|-------------|--------------|  
 |Transaction Flow|<xref:System.ServiceModel.Channels.TransactionFlowBindingElement>|No|  
@@ -34,29 +34,29 @@
 |Transport Upgrades|SSL stream, Windows stream, Peer Resolver|No|  
 |Encoding|Text, Binary, MTOM, Custom|Yes|  
 |Transport|TCP, Named Pipes, HTTP, HTTPS, MSMQ, Custom|Yes|  
-  
- Each binding element provides the specification for building a channel factory on the client and a channel listener on the service. When the channel factory stack is constructed, for example, there is one channel factory in the stack for each binding element in the binding. The same sort of mapping applies to the channel listeners in the stack on the service. Consistency on the client and service is critical for establishing the channel-based connection between these endpoints. Each factory and listener, in turn, processes the sending and accepting of the corresponding channels in the channel stack that connects them, and these channels can then send and receive the messages used to communicate.  
-  
- Each instance of a <xref:System.ServiceModel.Channels.Binding> has a <xref:System.ServiceModel.Channels.Binding.Name%2A> and <xref:System.ServiceModel.Channels.Binding.Namespace%2A> that together uniquely identify it in the metadata of the service. If no name or namespace is specified, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] adds a default values for you. The default name is `null` and the default namespace is http://tempuri.org/. This user name for the binding is distinct from the specification of the protocol name, which is specified by the <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property. If you want to add more HTTP bindings, for example, you can name them whatever you want and set all of their schemes to "http". There is no inherent application or machine dispatch based on the <xref:System.ServiceModel.Channels.Binding.Scheme%2A>. So you avoid the common problem of being unable to register additional handlers for well-known protocols. You can also easily work with multiple versions of a binding side-by-side by giving each version a different name.  
-  
- The <xref:System.ServiceModel.Channels.Binding> class implements the <xref:System.ServiceModel.IDefaultCommunicationTimeouts> interface to mitigate Denial of Service (DOS) attacks that rely on tying up resources for extended intervals of time. The implementation specifies the communication timeouts values for opening and closing connections and for the reading and writing operations associated with receiving and sending messages. The properties used to get and set these timeouts and their default values operations are summarized in the following table.  
-  
+ 
+Each binding element provides the specification for building a channel factory on the client and a channel listener on the service. When the channel factory stack is constructed, for example, there is one channel factory in the stack for each binding element in the binding. The same sort of mapping applies to the channel listeners in the stack on the service. Consistency on the client and service is critical for establishing the channel-based connection between these endpoints. Each factory and listener, in turn, processes the sending and accepting of the corresponding channels in the channel stack that connects them, and these channels can then send and receive the messages used to communicate.  
+ 
+Each instance of a <xref:System.ServiceModel.Channels.Binding> has a <xref:System.ServiceModel.Channels.Binding.Name%2A> and <xref:System.ServiceModel.Channels.Binding.Namespace%2A> that together uniquely identify it in the metadata of the service. If no name or namespace is specified, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] adds a default values for you. The default name is `null` and the default namespace is http://tempuri.org/. This user name for the binding is distinct from the specification of the protocol name, which is specified by the <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property. If you want to add more HTTP bindings, for example, you can name them whatever you want and set all of their schemes to "http". There is no inherent application or machine dispatch based on the <xref:System.ServiceModel.Channels.Binding.Scheme%2A>. So you avoid the common problem of being unable to register additional handlers for well-known protocols. You can also easily work with multiple versions of a binding side-by-side by giving each version a different name.  
+ 
+The <xref:System.ServiceModel.Channels.Binding> class implements the <xref:System.ServiceModel.IDefaultCommunicationTimeouts> interface to mitigate Denial of Service (DOS) attacks that rely on tying up resources for extended intervals of time. The implementation specifies the communication timeouts values for opening and closing connections and for the reading and writing operations associated with receiving and sending messages. The properties used to get and set these timeouts and their default values operations are summarized in the following table.  
+ 
 |Timeout Property|Default Value|  
 |----------------------|-------------------|  
 |<xref:System.ServiceModel.Channels.Binding.OpenTimeout%2A>|1 minute|  
 |<xref:System.ServiceModel.Channels.Binding.CloseTimeout%2A>|1 minute|  
 |<xref:System.ServiceModel.Channels.Binding.SendTimeout%2A>|1 minute|  
 |<xref:System.ServiceModel.Channels.Binding.ReceiveTimeout%2A>|10 minutes|  
+ 
+When you create a binding by inheriting from <xref:System.ServiceModel.Channels.Binding>, you must override <xref:System.ServiceModel.Channels.Binding.CreateBindingElements%2A>.  
+ 
+In addition, you can define your own binding elements and insert them between any of the defined layers in the preceding table. For more information, see the <xref:System.ServiceModel.Channels.CustomBinding> class.  
+ 
   
- When you create a binding by inheriting from <xref:System.ServiceModel.Channels.Binding>, you must override <xref:System.ServiceModel.Channels.Binding.CreateBindingElements%2A>.  
-  
- In addition, you can define your own binding elements and insert them between any of the defined layers in the preceding table. For more information, see the <xref:System.ServiceModel.Channels.CustomBinding> class.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEBinding#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebinding/cs/service.cs#11)]  
-  
+[!code-csharp[S_UEBinding#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebinding/cs/service.cs#11)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,16 +76,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.Binding" /> class with a default name and namespace.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default name is `null` and the default namespace is http://tempuri.org/.  
+The default name is `null` and the default namespace is http://tempuri.org/.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_UEBinding#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebinding/cs/service.cs#2)]
- [!code-vb[S_UEBinding#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uebinding/vb/service.vb#2)]  
-  
+[!code-csharp[S_UEBinding#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebinding/cs/service.cs#2)]
+[!code-vb[S_UEBinding#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uebinding/vb/service.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.Binding" /> class from a specified binding of the service.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.Binding.Name%2A> and <xref:System.ServiceModel.Channels.Binding.Namespace%2A> together uniquely identify an instance of a <xref:System.ServiceModel.Channels.Binding> in the metadata of the service.  
-  
+The <xref:System.ServiceModel.Channels.Binding.Name%2A> and <xref:System.ServiceModel.Channels.Binding.Namespace%2A> together uniquely identify an instance of a <xref:System.ServiceModel.Channels.Binding> in the metadata of the service.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -521,10 +521,10 @@
           <see langword="true" /> if the specified channel factory stack can be build on the client; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method if you want to check that the channel factory for channels of type `TChannel` can be build for the binding `parameters` specified before attempting to actually build the factory. Alternatively, try to build the channel factory by calling <xref:System.ServiceModel.Channels.Binding.BuildChannelFactory%60%601%28System.Object%5B%5D%29> and catch the exception generated if it cannot be built.  
-  
+Use this method if you want to check that the channel factory for channels of type `TChannel` can be build for the binding `parameters` specified before attempting to actually build the factory. Alternatively, try to build the channel factory by calling <xref:System.ServiceModel.Channels.Binding.BuildChannelFactory%60%601%28System.Object%5B%5D%29> and catch the exception generated if it cannot be built.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -556,10 +556,10 @@
           <see langword="true" /> if the specified channel factory stack can be build on the client; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method if you want to check that the channel factory for channels of type `TChannel` can be build for the binding `parameters` specified before attempting to actually build the factory. Alternatively, try to build the channel factory by calling <xref:System.ServiceModel.Channels.Binding.BuildChannelFactory%60%601%28System.ServiceModel.Channels.BindingParameterCollection%29> and catch the exception generated if it cannot be built.  
-  
+Use this method if you want to check that the channel factory for channels of type `TChannel` can be build for the binding `parameters` specified before attempting to actually build the factory. Alternatively, try to build the channel factory by calling <xref:System.ServiceModel.Channels.Binding.BuildChannelFactory%60%601%28System.ServiceModel.Channels.BindingParameterCollection%29> and catch the exception generated if it cannot be built.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -601,10 +601,10 @@
           <see langword="true" /> if the specified channel listener stack can be build on the service; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method if you want to check that the channel listener for channels of type `TChannel` can be build for the binding `parameters` specified before attempting to actually build the listener. Alternatively, try to build the channel listener by calling <xref:System.ServiceModel.Channels.Binding.BuildChannelListener%60%601%28System.Object%5B%5D%29> and catch the exception generated if it cannot be built.  
-  
+Use this method if you want to check that the channel listener for channels of type `TChannel` can be build for the binding `parameters` specified before attempting to actually build the listener. Alternatively, try to build the channel listener by calling <xref:System.ServiceModel.Channels.Binding.BuildChannelListener%60%601%28System.Object%5B%5D%29> and catch the exception generated if it cannot be built.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -640,10 +640,10 @@
           <see langword="true" /> if the specified channel listener stack can be build on the service; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method if you want to check that the channel listener for channels of type `TChannel` can be build for the binding `parameters` specified before attempting to actually build the listener. Alternatively, try to build the channel listener by calling <xref:System.ServiceModel.Channels.Binding.BuildChannelListener%60%601%28System.ServiceModel.Channels.BindingParameterCollection%29> and catch the exception generated if it cannot be built.  
-  
+Use this method if you want to check that the channel listener for channels of type `TChannel` can be build for the binding `parameters` specified before attempting to actually build the listener. Alternatively, try to build the channel listener by calling <xref:System.ServiceModel.Channels.Binding.BuildChannelListener%60%601%28System.ServiceModel.Channels.BindingParameterCollection%29> and catch the exception generated if it cannot be built.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -666,10 +666,10 @@
         <value>The <see cref="T:System.TimeSpan" /> that specifies how long the close operation has to complete before timing out. The default value is 1 minute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property is used by the channels and listeners produced by the factories of the binding.  
-  
+The value of this property is used by the channels and listeners produced by the factories of the binding.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero or too large.</exception>
@@ -694,10 +694,10 @@
         <returns>A <see cref="T:System.Collections.Generic.ICollection`1" /> object of type <see cref="T:System.ServiceModel.Channels.BindingElement" /> that contains the binding elements from the current binding object in the correct order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements should not reference any internal elements that the <xref:System.ServiceModel.Channels.Binding> object uses.  
-  
+The elements should not reference any internal elements that the <xref:System.ServiceModel.Channels.Binding> object uses.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -732,10 +732,10 @@
         <returns>The typed object <paramref name="T" /> requested if it is present or <see langword="null" /> if it is not.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a layer supports returning the requested object, it returns it. If not, it delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no layer supported the requested object, then the method returns `null`.  
-  
+If a layer supports returning the requested object, it returns it. If not, it delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no layer supported the requested object, then the method returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -777,12 +777,12 @@
         <value>The name of the binding. The default name is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each instance of a <xref:System.ServiceModel.Channels.Binding> has a <xref:System.ServiceModel.Channels.Binding.Name%2A> and <xref:System.ServiceModel.Channels.Binding.Namespace%2A> that together uniquely identify the user name for the binding in the metadata of the service.  
-  
- This user name for the binding is distinct from the specification of the protocol name, which is specified by the <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property. If you want to add more HTTP bindings, for example, you can name them whatever you want and set all of their schemes to "http". There is no inherent application or machine dispatch based on the <xref:System.ServiceModel.Channels.Binding.Scheme%2A>. So you avoid the common problem of being unable to register additional handlers for well-known protocols. You can also easily work with multiple versions of a binding side-by-side by giving each version a different name.  
-  
+Each instance of a <xref:System.ServiceModel.Channels.Binding> has a <xref:System.ServiceModel.Channels.Binding.Name%2A> and <xref:System.ServiceModel.Channels.Binding.Namespace%2A> that together uniquely identify the user name for the binding in the metadata of the service.  
+ 
+This user name for the binding is distinct from the specification of the protocol name, which is specified by the <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property. If you want to add more HTTP bindings, for example, you can name them whatever you want and set all of their schemes to "http". There is no inherent application or machine dispatch based on the <xref:System.ServiceModel.Channels.Binding.Scheme%2A>. So you avoid the common problem of being unable to register additional handlers for well-known protocols. You can also easily work with multiple versions of a binding side-by-side by giving each version a different name.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value set cannot be <see langword="null" /> or an empty string.</exception>
@@ -806,12 +806,12 @@
         <value>The XML namespace of the binding. The default value is "http://tempuri.org/".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each instance of a <xref:System.ServiceModel.Channels.Binding> has a <xref:System.ServiceModel.Channels.Binding.Name%2A> and <xref:System.ServiceModel.Channels.Binding.Namespace%2A> that together uniquely identify the user name for the binding in the metadata of the service.  
-  
- This user name for the binding is distinct from the specification of the protocol name, which is specified by the <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property. If you want to add more HTTP bindings, for example, you can name them whatever you want and set all of their schemes to "http". There is no inherent application or machine dispatch based on the <xref:System.ServiceModel.Channels.Binding.Scheme%2A>. So you avoid the common problem of being unable to register additional handlers for well-known protocols. You can also easily work with multiple versions of a binding side-by-side by giving each version a different name.  
-  
+Each instance of a <xref:System.ServiceModel.Channels.Binding> has a <xref:System.ServiceModel.Channels.Binding.Name%2A> and <xref:System.ServiceModel.Channels.Binding.Namespace%2A> that together uniquely identify the user name for the binding in the metadata of the service.  
+ 
+This user name for the binding is distinct from the specification of the protocol name, which is specified by the <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property. If you want to add more HTTP bindings, for example, you can name them whatever you want and set all of their schemes to "http". There is no inherent application or machine dispatch based on the <xref:System.ServiceModel.Channels.Binding.Scheme%2A>. So you avoid the common problem of being unable to register additional handlers for well-known protocols. You can also easily work with multiple versions of a binding side-by-side by giving each version a different name.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value set cannot be <see langword="null" />.</exception>
@@ -835,10 +835,10 @@
         <value>The <see cref="T:System.TimeSpan" /> that specifies how long the open operation has to complete before timing out. The default value is 1 minute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property is used by the channels and listeners produced by the factories of the binding.  
-  
+The value of this property is used by the channels and listeners produced by the factories of the binding.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero or too large.</exception>
@@ -862,20 +862,20 @@
         <value>The <see cref="T:System.TimeSpan" /> that specifies how long the application has to receive a message before timing out. The default value is 10 minute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When using a reliable session, there are two different inactivity timers that must be satisfied to keep the connection alive. If either of these inactivity timers goes off, then the connection is dropped.  
-  
+When using a reliable session, there are two different inactivity timers that must be satisfied to keep the connection alive. If either of these inactivity timers goes off, then the connection is dropped.  
+ 
 -   The first inactivity timer is on the reliable session and is called the <xref:System.ServiceModel.ReliableSession.InactivityTimeout%2A>. This inactivity timer fires if no messages, either application or infrastructure, are received within the timeout period. An infrastructure message is a message that is generated for the purpose of one of the protocols in the channel stack, such as a keep alive or an acknowledgment, rather than containing application data.  
-  
+ 
 -   The second inactivity timer is on the service and uses the <xref:System.ServiceModel.Channels.Binding.ReceiveTimeout%2A> setting of the binding. This inactivity timer fires if no application messages are received within the timeout period. This specifies, for example, the maximum time a client may take to send at least one message to the server before the server will close the channel used by a session. This behavior ensures that clients cannot hold on to server resources for arbitrary long periods.  
-  
- Since the connection is dropped if either inactivity timer fires, increasing <xref:System.ServiceModel.ReliableSession.InactivityTimeout%2A> once it is greater than <xref:System.ServiceModel.Channels.Binding.ReceiveTimeout%2A> has no effect. The default for both of these timeouts is 10 minutes, so you always have to increase both of them to make a difference when using a reliable session.  
-  
- If transaction flow is enabled on the binding or the channel, the operation may take longer to execute than the specified timeout. In these circumstances the operation fails due to the expired timeout and the transaction aborts appropriately.  
-  
- When security is used with sessions, the <xref:System.ServiceModel.Channels.Binding.ReceiveTimeout%2A> value set on the binding is also used as the session timeout.  
-  
+ 
+Since the connection is dropped if either inactivity timer fires, increasing <xref:System.ServiceModel.ReliableSession.InactivityTimeout%2A> once it is greater than <xref:System.ServiceModel.Channels.Binding.ReceiveTimeout%2A> has no effect. The default for both of these timeouts is 10 minutes, so you always have to increase both of them to make a difference when using a reliable session.  
+ 
+If transaction flow is enabled on the binding or the channel, the operation may take longer to execute than the specified timeout. In these circumstances the operation fails due to the expired timeout and the transaction aborts appropriately.  
+ 
+When security is used with sessions, the <xref:System.ServiceModel.Channels.Binding.ReceiveTimeout%2A> value set on the binding is also used as the session timeout.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero or too large.</exception>
@@ -899,10 +899,10 @@
         <value>The URI scheme that is used by the channels or listeners that are created by the factories built by the current binding.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This user name for the binding is distinct from the specification of the protocol name, which is specified by the <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property. Each instance of a <xref:System.ServiceModel.Channels.Binding> has a <xref:System.ServiceModel.Channels.Binding.Name%2A> and <xref:System.ServiceModel.Channels.Binding.Namespace%2A> that together uniquely identify the user name for the binding in the metadata of the service. If you want to add more HTTP bindings, for example, you can name them whatever you want and set all of their schemes to "http". There is no inherent application or machine dispatch based on the <xref:System.ServiceModel.Channels.Binding.Scheme%2A>. So you avoid the common problem of being unable to register additional handlers for well-known protocols. You can also easily work with multiple versions of a binding side-by-side by giving each version a different name.  
-  
+This user name for the binding is distinct from the specification of the protocol name, which is specified by the <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property. Each instance of a <xref:System.ServiceModel.Channels.Binding> has a <xref:System.ServiceModel.Channels.Binding.Name%2A> and <xref:System.ServiceModel.Channels.Binding.Namespace%2A> that together uniquely identify the user name for the binding in the metadata of the service. If you want to add more HTTP bindings, for example, you can name them whatever you want and set all of their schemes to "http". There is no inherent application or machine dispatch based on the <xref:System.ServiceModel.Channels.Binding.Scheme%2A>. So you avoid the common problem of being unable to register additional handlers for well-known protocols. You can also easily work with multiple versions of a binding side-by-side by giving each version a different name.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -925,10 +925,10 @@
         <value>The <see cref="T:System.TimeSpan" /> that specifies how long the write operation has to complete before timing out. The default value is 1 minute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If transaction flow is enabled on the binding or the channel, the operation may take longer to execute than the specified timeout. In these circumstances the operation fails due to the expired timeout and the transaction aborts appropriately.  
-  
+If transaction flow is enabled on the binding or the channel, the operation may take longer to execute than the specified timeout. In these circumstances the operation fails due to the expired timeout and the transaction aborts appropriately.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero or too large.</exception>
@@ -994,10 +994,10 @@
         <summary>Returns a value that indicates whether the current binding can build a channel factory stack on the client that satisfies some specific criteria.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method if you want to check that the channel factory for channels of type `TChannel` can be build for the `context` provided before attempting to actually build the factory. Alternatively, try to build the channel factory by calling <xref:System.ServiceModel.Channels.BindingElement.BuildChannelFactory%2A> and catch the exception generated if it cannot be built.  
-  
+Use this method if you want to check that the channel factory for channels of type `TChannel` can be build for the `context` provided before attempting to actually build the factory. Alternatively, try to build the channel factory by calling <xref:System.ServiceModel.Channels.BindingElement.BuildChannelFactory%2A> and catch the exception generated if it cannot be built.  
+ 
  ]]></format>
         </remarks>
       </Docs>

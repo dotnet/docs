@@ -186,10 +186,10 @@
           <see langword="true" /> if the state of the HTML5 <see langword="input" /> element changes because of the postback; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.HtmlControls.HtmlInputGenericControl> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.HtmlControls.HtmlInputGenericControl> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,10 +211,10 @@
         <summary>When implemented in a derived class, invokes the <see cref="M:System.Web.UI.HtmlControls.HtmlInputGenericControl.OnServerChange(System.EventArgs)" /> method when the posted data for the HTML5 <see langword="input" /> element has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.HtmlControls.HtmlInputGenericControl> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.HtmlControls.HtmlInputGenericControl> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

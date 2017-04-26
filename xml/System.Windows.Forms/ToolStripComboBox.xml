@@ -22,26 +22,26 @@
     <summary>Represents a <see cref="T:System.Windows.Forms.ToolStripComboBox" /> that is properly rendered in a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ToolStripComboBox> is the <xref:System.Windows.Forms.ComboBox> optimized for hosting in a <xref:System.Windows.Forms.ToolStrip>. A subset of the hosted control's properties and events are exposed at the <xref:System.Windows.Forms.ToolStripComboBox> level, but the underlying <xref:System.Windows.Forms.ComboBox> control is fully accessible through the <xref:System.Windows.Forms.ToolStripComboBox.ComboBox%2A> property.  
+<xref:System.Windows.Forms.ToolStripComboBox> is the <xref:System.Windows.Forms.ComboBox> optimized for hosting in a <xref:System.Windows.Forms.ToolStrip>. A subset of the hosted control's properties and events are exposed at the <xref:System.Windows.Forms.ToolStripComboBox> level, but the underlying <xref:System.Windows.Forms.ComboBox> control is fully accessible through the <xref:System.Windows.Forms.ToolStripComboBox.ComboBox%2A> property.  
+ 
+A <xref:System.Windows.Forms.ToolStripComboBox> displays an editing field combined with a <xref:System.Windows.Forms.ListBox>, allowing the user to select from the list or to enter new text. By default, a <xref:System.Windows.Forms.ToolStripComboBox> displays an edit field with a hidden drop-down list. The <xref:System.Windows.Forms.ToolStripComboBox.DropDownStyle%2A> property determines the style of combo box to display. You can enter a value that allows for a simple drop-down, where the list always displays, a drop-down list box, where the text portion is not editable and you must select an arrow to view the drop-down list box, or the default drop-down list box, where the text portion is editable and the user must press the arrow key to view the list. To always display a list that the user cannot edit, use a <xref:System.Windows.Forms.ListBox> control.  
+ 
+To add objects to the list at run time, assign an array of object references with the <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> method. The list then displays the default string value for each object. You can add individual objects with the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> method.  
+ 
+In addition to display and selection functionality, the <xref:System.Windows.Forms.ToolStripComboBox> also provides features that enable you to efficiently add items to the <xref:System.Windows.Forms.ToolStripComboBox> and to find text within the items of the list. The <xref:System.Windows.Forms.ToolStripComboBox.BeginUpdate%2A> and <xref:System.Windows.Forms.ToolStripComboBox.EndUpdate%2A> methods enable you to add a large number of items to the <xref:System.Windows.Forms.ToolStripComboBox> without the control being repainted each time an item is added to the list. The <xref:System.Windows.Forms.ToolStripComboBox.FindString%2A> and <xref:System.Windows.Forms.ToolStripComboBox.FindStringExact%2A> methods enable you to search for an item in the list that contains a specific search string.  
+ 
+Use the <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndex%2A> property to get or set the current item in the drop-down list, and use the <xref:System.Windows.Forms.ToolStripComboBox.SelectedItem%2A> property to get or set a reference to the current item in the drop-down list.  
+ 
   
- A <xref:System.Windows.Forms.ToolStripComboBox> displays an editing field combined with a <xref:System.Windows.Forms.ListBox>, allowing the user to select from the list or to enter new text. By default, a <xref:System.Windows.Forms.ToolStripComboBox> displays an edit field with a hidden drop-down list. The <xref:System.Windows.Forms.ToolStripComboBox.DropDownStyle%2A> property determines the style of combo box to display. You can enter a value that allows for a simple drop-down, where the list always displays, a drop-down list box, where the text portion is not editable and you must select an arrow to view the drop-down list box, or the default drop-down list box, where the text portion is editable and the user must press the arrow key to view the list. To always display a list that the user cannot edit, use a <xref:System.Windows.Forms.ListBox> control.  
-  
- To add objects to the list at run time, assign an array of object references with the <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> method. The list then displays the default string value for each object. You can add individual objects with the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> method.  
-  
- In addition to display and selection functionality, the <xref:System.Windows.Forms.ToolStripComboBox> also provides features that enable you to efficiently add items to the <xref:System.Windows.Forms.ToolStripComboBox> and to find text within the items of the list. The <xref:System.Windows.Forms.ToolStripComboBox.BeginUpdate%2A> and <xref:System.Windows.Forms.ToolStripComboBox.EndUpdate%2A> methods enable you to add a large number of items to the <xref:System.Windows.Forms.ToolStripComboBox> without the control being repainted each time an item is added to the list. The <xref:System.Windows.Forms.ToolStripComboBox.FindString%2A> and <xref:System.Windows.Forms.ToolStripComboBox.FindStringExact%2A> methods enable you to search for an item in the list that contains a specific search string.  
-  
- Use the <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndex%2A> property to get or set the current item in the drop-down list, and use the <xref:System.Windows.Forms.ToolStripComboBox.SelectedItem%2A> property to get or set a reference to the current item in the drop-down list.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a <xref:System.Windows.Forms.ToolStripComboBox> with various property settings, including automatic completion.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#0)]
- [!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#0)]  
-  
+The following code example demonstrates a <xref:System.Windows.Forms.ToolStripComboBox> with various property settings, including automatic completion.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#0)]
+[!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -137,22 +137,22 @@
         <value>An <see cref="T:System.Windows.Forms.AutoCompleteStringCollection" /> that contains the strings.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteCustomSource%2A>, <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteMode%2A>, and <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteSource%2A> properties to create a <xref:System.Windows.Forms.ToolStripComboBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.ToolStripComboBox> controls in which URLs, addresses, file names, or commands will be frequently entered.  
+Use the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteCustomSource%2A>, <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteMode%2A>, and <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteSource%2A> properties to create a <xref:System.Windows.Forms.ToolStripComboBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.ToolStripComboBox> controls in which URLs, addresses, file names, or commands will be frequently entered.  
+ 
+The use of the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteSource%2A> property to <xref:System.Windows.Forms.AutoCompleteSource> in order to use <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteCustomSource%2A>.  
+ 
+You must use the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteMode%2A> and <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteSource%2A> properties together.  
+ 
   
- The use of the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteSource%2A> property to <xref:System.Windows.Forms.AutoCompleteSource> in order to use <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteCustomSource%2A>.  
-  
- You must use the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteMode%2A> and <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteSource%2A> properties together.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteCustomSource%2A> property.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteCustomSource%2A> property.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,18 +185,18 @@
         <value>One of the <see cref="T:System.Windows.Forms.AutoCompleteMode" /> values. The default is <see cref="F:System.Windows.Forms.AutoCompleteMode.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteMode%2A> property to get or set the behavior of automatic completion.  
+Use the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteMode%2A> property to get or set the behavior of automatic completion.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteMode%2A> property.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteMode%2A> property.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,18 +229,18 @@
         <value>One of the <see cref="T:System.Windows.Forms.AutoCompleteSource" /> values. The default is <see cref="F:System.Windows.Forms.AutoCompleteSource.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteSource%2A> property to get or set automatic completion strings.  
+Use the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteSource%2A> property to get or set automatic completion strings.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteSource%2A> property.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.AutoCompleteSource%2A> property.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -273,10 +273,10 @@
         <value>The background image displayed in the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -309,10 +309,10 @@
         <value>One of the values of <see cref="T:System.Windows.Forms.ImageLayout" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant to this class.  
-  
+This property is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -334,12 +334,12 @@
         <summary>Maintains performance when items are added to the <see cref="T:System.Windows.Forms.ToolStripComboBox" /> one at a time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method prevents the control from painting until the <xref:System.Windows.Forms.ToolStripComboBox.EndUpdate%2A> method is called.  
-  
- The preferred way to add items to the <xref:System.Windows.Forms.ToolStripComboBox> is to use the <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> method through the <xref:System.Windows.Forms.ToolStripComboBox.Items%2A> property of the <xref:System.Windows.Forms.ToolStripComboBox>. This enables you to add an array of items to the list at one time. However, if you want to add items one at a time using the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> method, you can use the <xref:System.Windows.Forms.ToolStripComboBox.BeginUpdate%2A> method to prevent the control from repainting the <xref:System.Windows.Forms.ToolStripComboBox> each time an item is added to the list. Once you have completed the task of adding items to the list, call the <xref:System.Windows.Forms.ToolStripComboBox.EndUpdate%2A> method to enable the <xref:System.Windows.Forms.ToolStripComboBox> to repaint. This way of adding items can prevent flicker during the drawing of the <xref:System.Windows.Forms.ToolStripComboBox> when a large number of items are being added to the list.  
-  
+This method prevents the control from painting until the <xref:System.Windows.Forms.ToolStripComboBox.EndUpdate%2A> method is called.  
+ 
+The preferred way to add items to the <xref:System.Windows.Forms.ToolStripComboBox> is to use the <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> method through the <xref:System.Windows.Forms.ToolStripComboBox.Items%2A> property of the <xref:System.Windows.Forms.ToolStripComboBox>. This enables you to add an array of items to the list at one time. However, if you want to add items one at a time using the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> method, you can use the <xref:System.Windows.Forms.ToolStripComboBox.BeginUpdate%2A> method to prevent the control from repainting the <xref:System.Windows.Forms.ToolStripComboBox> each time an item is added to the list. Once you have completed the task of adding items to the list, call the <xref:System.Windows.Forms.ToolStripComboBox.EndUpdate%2A> method to enable the <xref:System.Windows.Forms.ToolStripComboBox> to repaint. This way of adding items can prevent flicker during the drawing of the <xref:System.Windows.Forms.ToolStripComboBox> when a large number of items are being added to the list.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -369,10 +369,10 @@
         <value>A <see cref="T:System.Windows.Forms.ComboBox" /> for a <see cref="T:System.Windows.Forms.ToolStrip" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripComboBox.ComboBox%2A> property to get <xref:System.Windows.Forms.ComboBox> properties, methods, and events that have not been wrapped into <xref:System.Windows.Forms.ToolStripComboBox>.  
-  
+Use the <xref:System.Windows.Forms.ToolStripComboBox.ComboBox%2A> property to get <xref:System.Windows.Forms.ComboBox> properties, methods, and events that have not been wrapped into <xref:System.Windows.Forms.ToolStripComboBox>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -394,10 +394,10 @@
         <value>A <see cref="T:System.Windows.Forms.Padding" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override the <xref:System.Windows.Forms.ToolStripComboBox.DefaultMargin%2A> property to configure a default size for your <xref:System.Windows.Forms.ToolStripComboBox>. This is more efficient than setting the size in the constructor.  
-  
+Override the <xref:System.Windows.Forms.ToolStripComboBox.DefaultMargin%2A> property to configure a default size for your <xref:System.Windows.Forms.ToolStripComboBox>. This is more efficient than setting the size in the constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -419,12 +419,12 @@
         <value>The default <see cref="T:System.Drawing.Size" /> of the <see cref="T:System.Windows.Forms.ToolStripTextBox" /> in pixels. The default size is 100 x 20 pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In order to maintain better performance, you should not set the <xref:System.Drawing.Size> of a <xref:System.Windows.Forms.ToolStripComboBox> in its constructor. The preferred method is to override the <xref:System.Windows.Forms.ToolStripComboBox.DefaultSize%2A> property.  
-  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -456,10 +456,10 @@
         <summary>This event is not relevant to this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant to this class.  
-  
+This event is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -480,20 +480,20 @@
         <summary>Occurs when the drop-down portion of a <see cref="T:System.Windows.Forms.ToolStripComboBox" /> is shown.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about event-handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about event-handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripComboBox.DropDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripComboBox> named `ToolStripComboBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripComboBox.DropDown> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#578](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#578)]
- [!code-vb[System.Windows.Forms.EventExamples#578](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#578)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripComboBox.DropDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripComboBox> named `ToolStripComboBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripComboBox.DropDown> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#578](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#578)]
+[!code-vb[System.Windows.Forms.EventExamples#578](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#578)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -514,20 +514,20 @@
         <summary>Occurs when the drop-down portion of the <see cref="T:System.Windows.Forms.ToolStripComboBox" /> has closed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripComboBox.DropDownClosed> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripComboBox> named `ToolStripComboBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripComboBox.DropDownClosed> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#579](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#579)]
- [!code-vb[System.Windows.Forms.EventExamples#579](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#579)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripComboBox.DropDownClosed> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripComboBox> named `ToolStripComboBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripComboBox.DropDownClosed> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#579](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#579)]
+[!code-vb[System.Windows.Forms.EventExamples#579](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#579)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -560,18 +560,18 @@
         <value>The height, in pixels, of the drop-down box.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Forms.ToolStripComboBox.DropDownHeight%2A> property resets the <xref:System.Windows.Forms.ToolStripComboBox.IntegralHeight%2A> property to `false`.  
+Setting the <xref:System.Windows.Forms.ToolStripComboBox.DropDownHeight%2A> property resets the <xref:System.Windows.Forms.ToolStripComboBox.IntegralHeight%2A> property to `false`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.DropDownHeight%2A> property.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.DropDownHeight%2A> property.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -601,18 +601,18 @@
         <value>One of the <see cref="T:System.Windows.Forms.ComboBoxStyle" /> values. The default is <see cref="F:System.Windows.Forms.ComboBoxStyle.DropDown" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripComboBox.DropDownStyle%2A> property controls the interface that is presented to the user. You can enter a value that allows for a simple drop-down list box, where the list always displays, a drop-down list box, where the text portion is not editable and you must select an arrow to view the drop-down, or the default drop-down list box, where the text portion is editable and the user must press the arrow key to view the list. To always display a list that the user cannot edit, use a <xref:System.Windows.Forms.ListBox> control.  
+The <xref:System.Windows.Forms.ToolStripComboBox.DropDownStyle%2A> property controls the interface that is presented to the user. You can enter a value that allows for a simple drop-down list box, where the list always displays, a drop-down list box, where the text portion is not editable and you must select an arrow to view the drop-down, or the default drop-down list box, where the text portion is editable and the user must press the arrow key to view the list. To always display a list that the user cannot edit, use a <xref:System.Windows.Forms.ListBox> control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.DropDownStyle%2A> property.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.DropDownStyle%2A> property.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -633,20 +633,20 @@
         <summary>Occurs when the <see cref="P:System.Windows.Forms.ToolStripComboBox.DropDownStyle" /> property has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripComboBox.DropDownStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripComboBox> named `ToolStripComboBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripComboBox.DropDownStyleChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#580](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#580)]
- [!code-vb[System.Windows.Forms.EventExamples#580](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#580)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripComboBox.DropDownStyleChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripComboBox> named `ToolStripComboBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripComboBox.DropDownStyleChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#580](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#580)]
+[!code-vb[System.Windows.Forms.EventExamples#580](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#580)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -668,18 +668,18 @@
         <value>The width, in pixels, of the drop-down box.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripComboBox.DropDownWidth%2A> property to get or set the width of the drop-down portion of a <xref:System.Windows.Forms.ToolStripComboBox>.  
+Use the <xref:System.Windows.Forms.ToolStripComboBox.DropDownWidth%2A> property to get or set the width of the drop-down portion of a <xref:System.Windows.Forms.ToolStripComboBox>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.DropDownWidth%2A> property.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.DropDownWidth%2A> property.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -728,10 +728,10 @@
         <summary>Resumes painting the <see cref="T:System.Windows.Forms.ToolStripComboBox" /> control after painting is suspended by the <see cref="M:System.Windows.Forms.ToolStripComboBox.BeginUpdate" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The preferred way to add items to the <xref:System.Windows.Forms.ToolStripComboBox> is to use the <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> method through the <xref:System.Windows.Forms.ToolStripComboBox.Items%2A> property of the <xref:System.Windows.Forms.ToolStripComboBox>. This enables you to add an array of items to the list at one time. However, if you want to add items one at a time using the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> method, you can use the <xref:System.Windows.Forms.ToolStripComboBox.BeginUpdate%2A> method to prevent the control from repainting the <xref:System.Windows.Forms.ToolStripComboBox> each time an item is added to the list. Once you have completed the task of adding items to the list, call the <xref:System.Windows.Forms.ToolStripComboBox.EndUpdate%2A> method to enable the <xref:System.Windows.Forms.ToolStripComboBox> to repaint. This way of adding items can prevent flicker during the drawing of the <xref:System.Windows.Forms.ToolStripComboBox> when a large number of items are being added to the list.  
-  
+The preferred way to add items to the <xref:System.Windows.Forms.ToolStripComboBox> is to use the <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> method through the <xref:System.Windows.Forms.ToolStripComboBox.Items%2A> property of the <xref:System.Windows.Forms.ToolStripComboBox>. This enables you to add an array of items to the list at one time. However, if you want to add items one at a time using the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> method, you can use the <xref:System.Windows.Forms.ToolStripComboBox.BeginUpdate%2A> method to prevent the control from repainting the <xref:System.Windows.Forms.ToolStripComboBox> each time an item is added to the list. Once you have completed the task of adding items to the list, call the <xref:System.Windows.Forms.ToolStripComboBox.EndUpdate%2A> method to enable the <xref:System.Windows.Forms.ToolStripComboBox> to repaint. This way of adding items can prevent flicker during the drawing of the <xref:System.Windows.Forms.ToolStripComboBox> when a large number of items are being added to the list.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -757,10 +757,10 @@
         <returns>The zero-based index of the first item found; returns -1 if no match is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The search performed by this method is not case-sensitive. The `s` parameter is a substring to compare against the text associated with the items in the combo box list. The search performs a partial match starting from the beginning of the text, and returning the first item in the list that matches the specified substring. You can then perform tasks, such as removing the item that contains the search text or changing the item's text. Once you have found the specified text, if you want to search for other instances of the text in the <xref:System.Windows.Forms.ToolStripComboBox>, use <xref:System.Windows.Forms.ToolStripComboBox.FindString%2A> method to specify a starting index within the <xref:System.Windows.Forms.ToolStripComboBox>. If you want to perform a search for an exact word match instead of a partial match, use the <xref:System.Windows.Forms.ToolStripComboBox.FindStringExact%2A> method.  
-  
+The search performed by this method is not case-sensitive. The `s` parameter is a substring to compare against the text associated with the items in the combo box list. The search performs a partial match starting from the beginning of the text, and returning the first item in the list that matches the specified substring. You can then perform tasks, such as removing the item that contains the search text or changing the item's text. Once you have found the specified text, if you want to search for other instances of the text in the <xref:System.Windows.Forms.ToolStripComboBox>, use <xref:System.Windows.Forms.ToolStripComboBox.FindString%2A> method to specify a starting index within the <xref:System.Windows.Forms.ToolStripComboBox>. If you want to perform a search for an exact word match instead of a partial match, use the <xref:System.Windows.Forms.ToolStripComboBox.FindStringExact%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -788,10 +788,10 @@
         <returns>The zero-based index of the first item found; returns -1 if no match is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The search performed by this method is not case-sensitive. The `s` parameter is a substring to compare against the text associated with the items in the combo box list. The search performs a partial match starting from the beginning of the text at the specified index, and returns the first item in the list that matches the specified substring. You can then perform tasks, such as removing the item that contains the search text or changing the item's text. Once you have found the specified text, if you want to search for other instances of the text in the <xref:System.Windows.Forms.ToolStripComboBox>, use this method to specify a starting index within the <xref:System.Windows.Forms.ToolStripComboBox>. If you want to perform a search for an exact word match instead of a partial match, use the <xref:System.Windows.Forms.ToolStripComboBox.FindStringExact%2A> method.  
-  
+The search performed by this method is not case-sensitive. The `s` parameter is a substring to compare against the text associated with the items in the combo box list. The search performs a partial match starting from the beginning of the text at the specified index, and returns the first item in the list that matches the specified substring. You can then perform tasks, such as removing the item that contains the search text or changing the item's text. Once you have found the specified text, if you want to search for other instances of the text in the <xref:System.Windows.Forms.ToolStripComboBox>, use this method to specify a starting index within the <xref:System.Windows.Forms.ToolStripComboBox>. If you want to perform a search for an exact word match instead of a partial match, use the <xref:System.Windows.Forms.ToolStripComboBox.FindStringExact%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -817,10 +817,10 @@
         <returns>The zero-based index of the first item found; -1 if no match is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The search performed by this method is not case-sensitive. The `s` parameter is a substring to compare against the text associated with the items in the combo box list. The search performs a partial match starting from the beginning of the text at the specified index, and returns the first item in the list that matches the specified substring. You can then perform tasks, such as removing the item that contains the search text or changing the item's text. Once you have found the specified text, if you want to search for other instances of the text in the <xref:System.Windows.Forms.ToolStripComboBox>, use <xref:System.Windows.Forms.ToolStripComboBox.FindString%2A> method to specify a starting index within the <xref:System.Windows.Forms.ToolStripComboBox>. If you want to search for a partial match instead of the exact word, use the <xref:System.Windows.Forms.ToolStripComboBox.FindString%2A> method.  
-  
+The search performed by this method is not case-sensitive. The `s` parameter is a substring to compare against the text associated with the items in the combo box list. The search performs a partial match starting from the beginning of the text at the specified index, and returns the first item in the list that matches the specified substring. You can then perform tasks, such as removing the item that contains the search text or changing the item's text. Once you have found the specified text, if you want to search for other instances of the text in the <xref:System.Windows.Forms.ToolStripComboBox>, use <xref:System.Windows.Forms.ToolStripComboBox.FindString%2A> method to specify a starting index within the <xref:System.Windows.Forms.ToolStripComboBox>. If you want to search for a partial match instead of the exact word, use the <xref:System.Windows.Forms.ToolStripComboBox.FindString%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -848,10 +848,10 @@
         <returns>The zero-based index of the first item found; returns -1 if no match is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The search performed by this method is not case-sensitive. The `s` parameter is a substring to compare against the text associated with the items in the combo box list. The search performs a partial match starting from the beginning of the text at the specified index, and returns the first item in the list that matches the specified substring. You can then perform tasks, such as removing the item that contains the search text or changing the item's text. Once you have found the specified text, if you want to search for other instances of exact text in the <xref:System.Windows.Forms.ToolStripComboBox>, use this method to specify a starting index within the <xref:System.Windows.Forms.ToolStripComboBox>. If you want to search for a partial match instead of the exact word, use the <xref:System.Windows.Forms.ToolStripComboBox.FindString%2A> method.  
-  
+The search performed by this method is not case-sensitive. The `s` parameter is a substring to compare against the text associated with the items in the combo box list. The search performs a partial match starting from the beginning of the text at the specified index, and returns the first item in the list that matches the specified substring. You can then perform tasks, such as removing the item that contains the search text or changing the item's text. Once you have found the specified text, if you want to search for other instances of exact text in the <xref:System.Windows.Forms.ToolStripComboBox>, use this method to specify a starting index within the <xref:System.Windows.Forms.ToolStripComboBox>. If you want to search for a partial match instead of the exact word, use the <xref:System.Windows.Forms.ToolStripComboBox.FindString%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -881,26 +881,26 @@
         <value>One of the values of <see cref="T:System.Windows.Forms.FlatStyle" />. The options are <see cref="F:System.Windows.Forms.FlatStyle.Flat" />, <see cref="F:System.Windows.Forms.FlatStyle.Popup" />, <see cref="F:System.Windows.Forms.FlatStyle.Standard" />, and <see cref="F:System.Windows.Forms.FlatStyle.System" />. The default is <see cref="F:System.Windows.Forms.FlatStyle.Popup" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripComboBox.FlatStyle%2A> property to get or set the display style of the <xref:System.Windows.Forms.ToolStripComboBox>.  
-  
- Starting with the .NET Framework 4.5.2, if the <xref:System.Windows.Forms.ToolStripComboBox.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle> or <xref:System.Windows.Forms.FlatStyle>, the drop-down arrow may be resized. Resizing is determined by the system DPI setting when the app.config file contains the following entry:  
-  
+Use the <xref:System.Windows.Forms.ToolStripComboBox.FlatStyle%2A> property to get or set the display style of the <xref:System.Windows.Forms.ToolStripComboBox>.  
+ 
+Starting with the .NET Framework 4.5.2, if the <xref:System.Windows.Forms.ToolStripComboBox.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle> or <xref:System.Windows.Forms.FlatStyle>, the drop-down arrow may be resized. Resizing is determined by the system DPI setting when the app.config file contains the following entry:  
+ 
 ```  
 <appSettings>  
   <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
 </appSettings>  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.FlatStyle%2A> property.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.FlatStyle%2A> property.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -975,12 +975,12 @@
           <see langword="true" /> if the list portion can contain only complete items; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to `true`, the control automatically resizes to ensure that an item is not partially displayed. If you want to maintain the original size of the <xref:System.Windows.Forms.ToolStripComboBox> based on the space requirements of your form, set this property to `false`. If the <xref:System.Windows.Forms.ToolStripComboBox> does not contain any items, this property has no effect.  
-  
- Setting the <xref:System.Windows.Forms.ToolStripComboBox.DropDownHeight%2A> property resets the <xref:System.Windows.Forms.ToolStripComboBox.IntegralHeight%2A> property to `false`.  
-  
+When this property is set to `true`, the control automatically resizes to ensure that an item is not partially displayed. If you want to maintain the original size of the <xref:System.Windows.Forms.ToolStripComboBox> based on the space requirements of your form, set this property to `false`. If the <xref:System.Windows.Forms.ToolStripComboBox> does not contain any items, this property has no effect.  
+ 
+Setting the <xref:System.Windows.Forms.ToolStripComboBox.DropDownHeight%2A> property resets the <xref:System.Windows.Forms.ToolStripComboBox.IntegralHeight%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1039,18 +1039,18 @@
         <value>The maximum number of items in the drop-down portion. The minimum for this property is 1 and the maximum is 100.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripComboBox.MaxDropDownItems%2A> property to get or set the maximum number of items to show in the drop-down portion of the <xref:System.Windows.Forms.ToolStripComboBox>.  
+Use the <xref:System.Windows.Forms.ToolStripComboBox.MaxDropDownItems%2A> property to get or set the maximum number of items to show in the drop-down portion of the <xref:System.Windows.Forms.ToolStripComboBox>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.MaxDropDownItems%2A> property.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.MaxDropDownItems%2A> property.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1101,12 +1101,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripComboBox.DropDown" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripComboBox.OnDropDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripComboBox.OnDropDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1134,12 +1134,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripComboBox.DropDownClosed" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripComboBox.OnDropDownClosed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripComboBox.OnDropDownClosed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1167,12 +1167,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripComboBox.DropDownStyleChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripComboBox.OnDropDownStyleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripComboBox.OnDropDownStyleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1200,12 +1200,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripComboBox.SelectedIndexChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripComboBox.OnSelectedIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripComboBox.OnSelectedIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1233,14 +1233,14 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ComboBox.SelectionChangeCommitted" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ComboBox.SelectionChangeCommitted> is raised only when the user changes the combo box selection. Do not use <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndexChanged> or <xref:System.Windows.Forms.ListControl.SelectedValueChanged> to capture user changes, because those events are also raised when the selection changes programmatically. This event is also raised when you set <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndex%2A>.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripComboBox.OnSelectionChangeCommitted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+<xref:System.Windows.Forms.ComboBox.SelectionChangeCommitted> is raised only when the user changes the combo box selection. Do not use <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndexChanged> or <xref:System.Windows.Forms.ListControl.SelectedValueChanged> to capture user changes, because those events are also raised when the selection changes programmatically. This event is also raised when you set <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndex%2A>.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripComboBox.OnSelectionChangeCommitted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1268,16 +1268,16 @@
         <summary>Subscribes events from the specified control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override the <xref:System.Windows.Forms.ToolStripComboBox.OnSubscribeControlEvents%2A> method to add or prevent the synchronizing of control events.  
-  
- If you override and hook up events here, unhook them by using the <xref:System.Windows.Forms.ToolStripComboBox.OnUnsubscribeControlEvents%2A> method.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripComboBox.OnSubscribeControlEvents%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Override the <xref:System.Windows.Forms.ToolStripComboBox.OnSubscribeControlEvents%2A> method to add or prevent the synchronizing of control events.  
+ 
+If you override and hook up events here, unhook them by using the <xref:System.Windows.Forms.ToolStripComboBox.OnUnsubscribeControlEvents%2A> method.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripComboBox.OnSubscribeControlEvents%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1305,12 +1305,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripComboBox.TextUpdate" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripComboBox.OnTextUpdate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripComboBox.OnTextUpdate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1338,14 +1338,14 @@
         <summary>Unsubscribes events from the specified control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override the <xref:System.Windows.Forms.ToolStripComboBox.OnSubscribeControlEvents%2A> method to unsubscribe events subscribed in <xref:System.Windows.Forms.ToolStripComboBox.OnSubscribeControlEvents%2A>.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripComboBox.OnUnsubscribeControlEvents%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Override the <xref:System.Windows.Forms.ToolStripComboBox.OnSubscribeControlEvents%2A> method to unsubscribe events subscribed in <xref:System.Windows.Forms.ToolStripComboBox.OnSubscribeControlEvents%2A>.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripComboBox.OnUnsubscribeControlEvents%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1375,10 +1375,10 @@
         <summary>Selects a range of text in the editable portion of the <see cref="T:System.Windows.Forms.ToolStripComboBox" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you want to set the start position to the first character in the control's text, set the `start` parameter to zero. You can use this method to select a substring of text, such as when searching through the text of the control and replacing information.  
-  
+If you want to set the start position to the first character in the control's text, set the `start` parameter to zero. You can use this method to select a substring of text, such as when searching through the text of the control and replacing information.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="start" /> is less than zero.  
@@ -1431,12 +1431,12 @@
         <value>A zero-based index of the currently selected item. A value of negative one (-1) is returned if no item is selected.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property indicates the zero-based index of the currently selected item in the combo box list. Setting a new index raises the <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndexChanged> event.  
-  
- **Note** To deselect the currently selected item, set the <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndex%2A> to -1.  
-  
+This property indicates the zero-based index of the currently selected item in the combo box list. Setting a new index raises the <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndexChanged> event.  
+ 
+**Note** To deselect the currently selected item, set the <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndex%2A> to -1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1457,20 +1457,20 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripComboBox.SelectedIndex" /> property has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndexChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripComboBox> named `ToolStripComboBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndexChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#581](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#581)]
- [!code-vb[System.Windows.Forms.EventExamples#581](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#581)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndexChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripComboBox> named `ToolStripComboBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndexChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#581](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#581)]
+[!code-vb[System.Windows.Forms.EventExamples#581](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#581)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1503,10 +1503,10 @@
         <value>The object that is the currently selected item or <see langword="null" /> if there is no currently selected item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you set the <xref:System.Windows.Forms.ToolStripComboBox.SelectedItem%2A> property to an object, the <xref:System.Windows.Forms.ToolStripComboBox> attempts to make that object the currently selected one in the list. If the object is found in the list, it is displayed in the edit portion of the <xref:System.Windows.Forms.ToolStripComboBox> and the <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndex%2A> property is set to the corresponding index. If the object does not exist in the list, the <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndex%2A> property is left at its current value.  
-  
+When you set the <xref:System.Windows.Forms.ToolStripComboBox.SelectedItem%2A> property to an object, the <xref:System.Windows.Forms.ToolStripComboBox> attempts to make that object the currently selected one in the list. If the object is found in the list, it is displayed in the edit portion of the <xref:System.Windows.Forms.ToolStripComboBox> and the <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndex%2A> property is set to the corresponding index. If the object does not exist in the list, the <xref:System.Windows.Forms.ToolStripComboBox.SelectedIndex%2A> property is left at its current value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1536,10 +1536,10 @@
         <value>A string that represents the currently selected text in the combo box. If <see cref="P:System.Windows.Forms.ToolStripComboBox.DropDownStyle" /> is set to <see langword="DropDownList" />, the return value is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can assign text to this property to change the text currently selected in the combo box. If no text is currently selected in the combo box, this property returns a zero-length string.  
-  
+You can assign text to this property to change the text currently selected in the combo box. If no text is currently selected in the combo box, this property returns a zero-length string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1569,10 +1569,10 @@
         <value>The number of characters selected in the <see cref="T:System.Windows.Forms.ToolStripComboBox" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this property to determine whether any characters are currently selected in the combo box control before performing operations on the selected text. When the value of the <xref:System.Windows.Forms.ToolStripComboBox.SelectionLength%2A> property is set to a value that is larger than the number of characters within the text of the control, the value of the <xref:System.Windows.Forms.ToolStripComboBox.SelectionLength%2A> property is set to the entire length of text within the control minus the value of the <xref:System.Windows.Forms.ToolStripComboBox.SelectionStart%2A> property (if any value is specified for the <xref:System.Windows.Forms.ToolStripComboBox.SelectionStart%2A> property).  
-  
+You can use this property to determine whether any characters are currently selected in the combo box control before performing operations on the selected text. When the value of the <xref:System.Windows.Forms.ToolStripComboBox.SelectionLength%2A> property is set to a value that is larger than the number of characters within the text of the control, the value of the <xref:System.Windows.Forms.ToolStripComboBox.SelectionLength%2A> property is set to the entire length of text within the control minus the value of the <xref:System.Windows.Forms.ToolStripComboBox.SelectionStart%2A> property (if any value is specified for the <xref:System.Windows.Forms.ToolStripComboBox.SelectionStart%2A> property).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1602,10 +1602,10 @@
         <value>The zero-based index of the first character in the string of the current text selection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no text is selected in the control, this property indicates the insertion point for new text. If you set this property to a location beyond the length of the text in the control, the selection start position is placed after the last character. When text is selected in the text box control, changing this property can release the value of the <xref:System.Windows.Forms.ToolStripComboBox.SelectionLength%2A> property. If the remaining text in the control after the position indicated by the <xref:System.Windows.Forms.ToolStripComboBox.SelectionStart%2A> property is less than the value of the <xref:System.Windows.Forms.ToolStripComboBox.SelectionLength%2A> property, the value of the <xref:System.Windows.Forms.ToolStripComboBox.SelectionLength%2A> property is automatically decreased. The value of the <xref:System.Windows.Forms.ToolStripComboBox.SelectionStart%2A> property never causes an increase in the <xref:System.Windows.Forms.ToolStripComboBox.SelectionLength%2A> property.  
-  
+If no text is selected in the control, this property indicates the insertion point for new text. If you set this property to a location beyond the length of the text in the control, the selection start position is placed after the last character. When text is selected in the text box control, changing this property can release the value of the <xref:System.Windows.Forms.ToolStripComboBox.SelectionLength%2A> property. If the remaining text in the control after the position indicated by the <xref:System.Windows.Forms.ToolStripComboBox.SelectionStart%2A> property is less than the value of the <xref:System.Windows.Forms.ToolStripComboBox.SelectionLength%2A> property, the value of the <xref:System.Windows.Forms.ToolStripComboBox.SelectionLength%2A> property is automatically decreased. The value of the <xref:System.Windows.Forms.ToolStripComboBox.SelectionStart%2A> property never causes an increase in the <xref:System.Windows.Forms.ToolStripComboBox.SelectionLength%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1633,18 +1633,18 @@
           <see langword="true" /> if the combo box is sorted; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property specifies whether the <xref:System.Windows.Forms.ToolStripComboBox> sorts existing entries and add new entries to the appropriate sorted position in the list. You can use this property to automatically sort items in a <xref:System.Windows.Forms.ToolStripComboBox>. As items are added to a sorted <xref:System.Windows.Forms.ToolStripComboBox>, the items are moved to the appropriate location in the sorted list. When you set the property to `false`, new items are added to the end of the existing list. The sort is case-insensitive and in alphabetically ascending order.  
+This property specifies whether the <xref:System.Windows.Forms.ToolStripComboBox> sorts existing entries and add new entries to the appropriate sorted position in the list. You can use this property to automatically sort items in a <xref:System.Windows.Forms.ToolStripComboBox>. As items are added to a sorted <xref:System.Windows.Forms.ToolStripComboBox>, the items are moved to the appropriate location in the sorted list. When you set the property to `false`, new items are added to the end of the existing list. The sort is case-insensitive and in alphabetically ascending order.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.Sorted%2A> property.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
-  
+The following code example demonstrates the syntax for setting various <xref:System.Windows.Forms.ToolStripComboBox> properties, including the <xref:System.Windows.Forms.ToolStripComboBox.Sorted%2A> property.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripComboBox.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripComboBox.CommonProps/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1665,20 +1665,20 @@
         <summary>Occurs when the <see cref="T:System.Windows.Forms.ToolStripComboBox" /> text has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripComboBox.TextUpdate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripComboBox> named `ToolStripComboBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripComboBox.TextUpdate> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#582](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#582)]
- [!code-vb[System.Windows.Forms.EventExamples#582](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#582)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripComboBox.TextUpdate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripComboBox> named `ToolStripComboBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripComboBox.TextUpdate> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#582](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#582)]
+[!code-vb[System.Windows.Forms.EventExamples#582](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#582)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

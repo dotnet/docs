@@ -14,17 +14,17 @@
     <summary>Provides a user interface for selecting a URL that references an image.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.Design.ImageUrlEditor> is a <xref:System.Drawing.Design.UITypeEditor> that provides a dialog box for selecting a URL property that references an image.  
+<xref:System.Web.UI.Design.ImageUrlEditor> is a <xref:System.Drawing.Design.UITypeEditor> that provides a dialog box for selecting a URL property that references an image.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[WebUITypeEditorsExample#5](~/samples/snippets/cpp/VS_Snippets_WebNet/WebUITypeEditorsExample/CPP/webcustomcontrol1.cpp#5)]
- [!code-csharp[WebUITypeEditorsExample#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebUITypeEditorsExample/CS/webcustomcontrol1.cs#5)]
- [!code-vb[WebUITypeEditorsExample#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebUITypeEditorsExample/VB/webcustomcontrol1.vb#5)]  
-  
+[!code-cpp[WebUITypeEditorsExample#5](~/samples/snippets/cpp/VS_Snippets_WebNet/WebUITypeEditorsExample/CPP/webcustomcontrol1.cpp#5)]
+[!code-csharp[WebUITypeEditorsExample#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebUITypeEditorsExample/CS/webcustomcontrol1.cs#5)]
+[!code-vb[WebUITypeEditorsExample#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebUITypeEditorsExample/VB/webcustomcontrol1.vb#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,16 +79,16 @@
         <value>The filter string that can be used to filter the file list of the dialog box.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.ImageUrlEditor.Filter%2A> property specifies a filter string with two filter options: one for common image file extensions (*.gif, *.jpg, *.jpeg, *.bmp, *.wmf, *.png), and one for all files (\*.\*).  
-  
- A filter string contains one or more filter options. Each filter option contains a description of the filter, followed by the vertical bar (&#124;) and the filter pattern. The strings for different filtering options are separated by the vertical bar.  
-  
- The following is an example of a filter string that contains two filter options: "`Bitmap Files (*.bmp)|*.bmp|All Files (*.*)|*.*`".  
-  
- You can specify several filter patterns in a filter option by separating the filter patterns with semicolons. The following is an example of a filter string in which the first filter option specifies three filter patterns: "`Image Files(*.bmp;*.jpg;*.gif)|*.bmp;*.jpg;*.gif|All Files (*.*)|*.*`".  
-  
+The <xref:System.Web.UI.Design.ImageUrlEditor.Filter%2A> property specifies a filter string with two filter options: one for common image file extensions (*.gif, *.jpg, *.jpeg, *.bmp, *.wmf, *.png), and one for all files (\*.\*).  
+ 
+A filter string contains one or more filter options. Each filter option contains a description of the filter, followed by the vertical bar (&#124;) and the filter pattern. The strings for different filtering options are separated by the vertical bar.  
+ 
+The following is an example of a filter string that contains two filter options: "`Bitmap Files (*.bmp)|*.bmp|All Files (*.*)|*.*`".  
+ 
+You can specify several filter patterns in a filter option by separating the filter patterns with semicolons. The following is an example of a filter string in which the first filter option specifies three filter patterns: "`Image Files(*.bmp;*.jpg;*.gif)|*.bmp;*.jpg;*.gif|All Files (*.*)|*.*`".  
+ 
  ]]></format>
         </remarks>
       </Docs>

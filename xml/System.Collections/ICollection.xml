@@ -32,18 +32,18 @@
     <summary>Defines size, enumerators, and synchronization methods for all nongeneric collections.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Collections.ICollection> interface is the base interface for classes in the <xref:System.Collections> namespace.  
-  
- The <xref:System.Collections.ICollection> interface extends <xref:System.Collections.IEnumerable>; <xref:System.Collections.IDictionary> and <xref:System.Collections.IList> are more specialized interfaces that extend <xref:System.Collections.ICollection>. An <xref:System.Collections.IDictionary> implementation is a collection of key/value pairs, like the <xref:System.Collections.Hashtable> class. An <xref:System.Collections.IList> implementation is a collection of values and its members can be accessed by index, like the <xref:System.Collections.ArrayList> class.  
-  
- Some collections that limit access to their elements, such as the <xref:System.Collections.Queue> class and the <xref:System.Collections.Stack> class, directly implement the <xref:System.Collections.ICollection> interface.  
-  
- If neither the <xref:System.Collections.IDictionary> interface nor the <xref:System.Collections.IList> interface meet the requirements of the required collection, derive the new collection class from the <xref:System.Collections.ICollection> interface instead for more flexibility.  
-  
- For the generic version of this interface, see <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>.  
-  
+The <xref:System.Collections.ICollection> interface is the base interface for classes in the <xref:System.Collections> namespace.  
+ 
+The <xref:System.Collections.ICollection> interface extends <xref:System.Collections.IEnumerable>; <xref:System.Collections.IDictionary> and <xref:System.Collections.IList> are more specialized interfaces that extend <xref:System.Collections.ICollection>. An <xref:System.Collections.IDictionary> implementation is a collection of key/value pairs, like the <xref:System.Collections.Hashtable> class. An <xref:System.Collections.IList> implementation is a collection of values and its members can be accessed by index, like the <xref:System.Collections.ArrayList> class.  
+ 
+Some collections that limit access to their elements, such as the <xref:System.Collections.Queue> class and the <xref:System.Collections.Stack> class, directly implement the <xref:System.Collections.ICollection> interface.  
+ 
+If neither the <xref:System.Collections.IDictionary> interface nor the <xref:System.Collections.IList> interface meet the requirements of the required collection, derive the new collection class from the <xref:System.Collections.ICollection> interface instead for more flexibility.  
+ 
+For the generic version of this interface, see <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -157,20 +157,20 @@
           <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Collections.ICollection.SyncRoot%2A> returns an object, which can be used to synchronize access to the <xref:System.Collections.ICollection>.  
-  
- Most collection classes in the <xref:System.Collections?displayProperty=fullName> namespace also implement a Synchronized method, which provides a synchronized wrapper around the underlying collection.  
-  
- Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
- The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property during the entire enumeration.  
-  
- [!code-cpp[System.Collections.ICollection#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.collections.icollection/cpp/remarks.cpp#1)]
- [!code-csharp[System.Collections.ICollection#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.icollection/cs/remarks.cs#1)]
- [!code-vb[System.Collections.ICollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.icollection/vb/remarks.vb#1)]  
-  
+<xref:System.Collections.ICollection.SyncRoot%2A> returns an object, which can be used to synchronize access to the <xref:System.Collections.ICollection>.  
+ 
+Most collection classes in the <xref:System.Collections?displayProperty=fullName> namespace also implement a Synchronized method, which provides a synchronized wrapper around the underlying collection.  
+ 
+Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+ 
+The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property during the entire enumeration.  
+ 
+[!code-cpp[System.Collections.ICollection#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.collections.icollection/cpp/remarks.cpp#1)]
+[!code-csharp[System.Collections.ICollection#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.icollection/cs/remarks.cs#1)]
+[!code-vb[System.Collections.ICollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.icollection/vb/remarks.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,26 +204,26 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For collections whose underlying store is not publicly available, the expected implementation is to return the current instance. Note that the pointer to the current instance might not be sufficient for collections that wrap other collections; those should return the underlying collection's `SyncRoot` property.  
-  
- Most collection classes in the <xref:System.Collections?displayProperty=fullName> namespace also implement a `Synchronized` method, which provides a synchronized wrapper around the underlying collection. However, derived classes can provide their own synchronized version of the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> property of the collection, not directly on the collection. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the collection instance.  
-  
- In the absence of a `Synchronized` method on a collection, the expected usage for <xref:System.Collections.ICollection.SyncRoot%2A> looks as follows:  
-  
- [!code-cpp[System.Collections.ICollection#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.collections.icollection/cpp/remarks.cpp#2)]
- [!code-csharp[System.Collections.ICollection#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.icollection/cs/remarks.cs#2)]
- [!code-vb[System.Collections.ICollection#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.icollection/vb/remarks.vb#2)]  
-  
- Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
- The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property during the entire enumeration.  
-  
- [!code-cpp[System.Collections.ICollection#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.collections.icollection/cpp/remarks.cpp#1)]
- [!code-csharp[System.Collections.ICollection#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.icollection/cs/remarks.cs#1)]
- [!code-vb[System.Collections.ICollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.icollection/vb/remarks.vb#1)]  
-  
+For collections whose underlying store is not publicly available, the expected implementation is to return the current instance. Note that the pointer to the current instance might not be sufficient for collections that wrap other collections; those should return the underlying collection's `SyncRoot` property.  
+ 
+Most collection classes in the <xref:System.Collections?displayProperty=fullName> namespace also implement a `Synchronized` method, which provides a synchronized wrapper around the underlying collection. However, derived classes can provide their own synchronized version of the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> property of the collection, not directly on the collection. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the collection instance.  
+ 
+In the absence of a `Synchronized` method on a collection, the expected usage for <xref:System.Collections.ICollection.SyncRoot%2A> looks as follows:  
+ 
+[!code-cpp[System.Collections.ICollection#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.collections.icollection/cpp/remarks.cpp#2)]
+[!code-csharp[System.Collections.ICollection#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.icollection/cs/remarks.cs#2)]
+[!code-vb[System.Collections.ICollection#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.icollection/vb/remarks.vb#2)]  
+ 
+Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+ 
+The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property during the entire enumeration.  
+ 
+[!code-cpp[System.Collections.ICollection#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.collections.icollection/cpp/remarks.cpp#1)]
+[!code-csharp[System.Collections.ICollection#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.icollection/cs/remarks.cs#1)]
+[!code-vb[System.Collections.ICollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.icollection/vb/remarks.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

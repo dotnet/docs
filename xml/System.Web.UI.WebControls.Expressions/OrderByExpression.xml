@@ -22,23 +22,23 @@
     <summary>Provides a way to apply a sort expression to an <see cref="T:System.Linq.IQueryable" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Expressions.OrderByExpression> class is used in the <xref:System.Web.UI.WebControls.QueryExtender> control to sort data in ascending or descending order. The sorting is performed by the default comparer for the type of the element.  
+The <xref:System.Web.UI.WebControls.Expressions.OrderByExpression> class is used in the <xref:System.Web.UI.WebControls.QueryExtender> control to sort data in ascending or descending order. The sorting is performed by the default comparer for the type of the element.  
+ 
+The <xref:System.Web.UI.WebControls.QueryExtender> control supports a variety of options that you can use to filter data. After you use the filter options, you can use the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression> object to sort the data.  
+ 
+You specify the data field to sort by using the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression.DataField%2A> property. You specify the sort direction by using the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression.Direction%2A> property. After the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression> object has been applied to the data source, you can use the <xref:System.Web.UI.WebControls.Expressions.ThenBy> expressions to perform a subsequent sort on another data field.  
+ 
   
- The <xref:System.Web.UI.WebControls.QueryExtender> control supports a variety of options that you can use to filter data. After you use the filter options, you can use the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression> object to sort the data.  
-  
- You specify the data field to sort by using the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression.DataField%2A> property. You specify the sort direction by using the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression.Direction%2A> property. After the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression> object has been applied to the data source, you can use the <xref:System.Web.UI.WebControls.Expressions.ThenBy> expressions to perform a subsequent sort on another data field.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to search the Products table of the AdventureWorks database for products that have names that start with the string that is specified in the `SearchTextBox` text box. The <xref:System.Web.UI.WebControls.Expressions.OrderByExpression> object sorts the data by the ListPrice data field in descending order and then by the product ID field in ascending order. The result of the query that is returned from the <xref:System.Web.UI.WebControls.LinqDataSource> control is displayed in a <xref:System.Web.UI.WebControls.GridView> control.  
-  
- This code example is part of a larger example that is provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
-  
-  
-  
+The following example shows how to search the Products table of the AdventureWorks database for products that have names that start with the string that is specified in the `SearchTextBox` text box. The <xref:System.Web.UI.WebControls.Expressions.OrderByExpression> object sorts the data by the ListPrice data field in descending order and then by the product ID field in ascending order. The result of the query that is returned from the <xref:System.Web.UI.WebControls.LinqDataSource> control is displayed in a <xref:System.Web.UI.WebControls.GridView> control.  
+ 
+This code example is part of a larger example that is provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
+ 
+ 
+ 
  ]]></format>
     </remarks>
     <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.Expressions.OrderByExpression.DataField" /> property is <see langword="null" />.</exception>
@@ -76,22 +76,22 @@
         <value>The property of the <see cref="T:System.Linq.IQueryable" /> data source object to sort by.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Expressions.OrderByExpression> object sorts the data in a data field. Subsequent sort operation can be performed on a different data field by using the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression.ThenByExpressions%2A> property.  
+The <xref:System.Web.UI.WebControls.Expressions.OrderByExpression> object sorts the data in a data field. Subsequent sort operation can be performed on a different data field by using the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression.ThenByExpressions%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to sort data by the ListPrice field in descending order and then by the product ID field in ascending order. This code example is part of a larger example that is provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
-  
+The following example shows how to sort data by the ListPrice field in descending order and then by the product ID field in ascending order. This code example is part of a larger example that is provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
+ 
 ```  
 <asp:OrderByExpression DataField="ListPrice"   
     Direction="Descending">  
   <asp:ThenBy DataField="ProductID" Direction="Ascending"/>  
 </asp:OrderByExpression>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,22 +113,22 @@
         <value>The sort direction of the data source object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Expressions.OrderByExpression> class is used in the <xref:System.Web.UI.WebControls.QueryExtender> control to sort data in ascending or descending order. The direction of the sort operation is specified by using the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression.Direction%2A> property.  
+The <xref:System.Web.UI.WebControls.Expressions.OrderByExpression> class is used in the <xref:System.Web.UI.WebControls.QueryExtender> control to sort data in ascending or descending order. The direction of the sort operation is specified by using the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression.Direction%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to sort data by the ListPrice field in descending order and then by the ProductID field in ascending order. This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
-  
+The following example shows how to sort data by the ListPrice field in descending order and then by the ProductID field in ascending order. This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
+ 
 ```  
 <asp:OrderByExpression DataField="ListPrice"   
     Direction="Descending">  
   <asp:ThenBy DataField="ProductID" Direction="Ascending"/>  
 </asp:OrderByExpression>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,22 +177,22 @@
         <value>The collection of <see cref="T:System.Web.UI.WebControls.Expressions.ThenBy" /> expressions to apply after the <see cref="T:System.Web.UI.WebControls.Expressions.OrderByExpression" /> is applied to the data source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After a sort operation is performed by using the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression> in the <xref:System.Web.UI.WebControls.QueryExtender> control, subsequent sort operations can be performed by using the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression.ThenByExpressions%2A> property.  
+After a sort operation is performed by using the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression> in the <xref:System.Web.UI.WebControls.QueryExtender> control, subsequent sort operations can be performed by using the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression.ThenByExpressions%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to sort data by the ListPrice field in descending order and then by the product ID field in ascending order using the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression.ThenByExpressions%2A>. This code example is part of a larger example that is provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
-  
+The following example shows how to sort data by the ListPrice field in descending order and then by the product ID field in ascending order using the <xref:System.Web.UI.WebControls.Expressions.OrderByExpression.ThenByExpressions%2A>. This code example is part of a larger example that is provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
+ 
 ```  
 <asp:OrderByExpression DataField="ListPrice"   
     Direction="Descending">  
   <asp:ThenBy DataField="ProductID" Direction="Ascending"/>  
 </asp:OrderByExpression>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,15 +18,15 @@
     <summary>Specifies values to indicate whether a property can be bound to a data element or another property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used at design time to indicate whether a designer should offer a property as available for data binding in a visual designer. This class does not affect whether the property can be data bound at runtime.  
+This class is used at design time to indicate whether a designer should offer a property as available for data binding in a visual designer. This class does not affect whether the property can be data bound at runtime.  
+ 
   
-   
-  
+ 
 ## Examples  
- For an example on how to use the <xref:System.ComponentModel.BindableSupport> enumeration to indicate whether a property can be bound, see the sample code in <xref:System.ComponentModel.BindableAttribute.%23ctor%2A?displayProperty=fullName>.  
-  
+For an example on how to use the <xref:System.ComponentModel.BindableSupport> enumeration to indicate whether a property can be bound, see the sample code in <xref:System.ComponentModel.BindableAttribute.%23ctor%2A?displayProperty=fullName>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

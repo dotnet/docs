@@ -14,10 +14,10 @@
     <summary>Represents a single row insert operation expressed as a command tree. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Data.Common.CommandTrees.DbInsertCommandTree.Returning%2A> property is set, the command returns a reader; otherwise, it returns a scalar value indicating the number of rows affected.  
-  
+When the <xref:System.Data.Common.CommandTrees.DbInsertCommandTree.Returning%2A> property is set, the command returns a reader; otherwise, it returns a scalar value indicating the number of rows affected.  
+ 
  ]]></format>
     </remarks>
   </Docs>

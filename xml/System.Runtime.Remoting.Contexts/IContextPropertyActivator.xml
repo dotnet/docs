@@ -17,12 +17,12 @@
     <summary>Indicates that the implementing property is interested in participating in activation and might not have provided a message sink.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Contexts.IContextPropertyActivator> interface is exposed on all <xref:System.Runtime.Remoting.Contexts.Context> properties that are interested in participating in activation and that might have not provided a message sink. Client <xref:System.Runtime.Remoting.Contexts.Context> properties send information in the construction message that their counterparts at the remote site could look for during activation.  
-  
- <xref:System.Runtime.Remoting.Contexts.IContextPropertyActivator> is also used to collect information from the client and server context property and to deliver information from the server context properties to the client context properties when returning to the client <xref:System.Runtime.Remoting.Contexts.Context>.  
-  
+The <xref:System.Runtime.Remoting.Contexts.IContextPropertyActivator> interface is exposed on all <xref:System.Runtime.Remoting.Contexts.Context> properties that are interested in participating in activation and that might have not provided a message sink. Client <xref:System.Runtime.Remoting.Contexts.Context> properties send information in the construction message that their counterparts at the remote site could look for during activation.  
+ 
+<xref:System.Runtime.Remoting.Contexts.IContextPropertyActivator> is also used to collect information from the client and server context property and to deliver information from the server context properties to the client context properties when returning to the client <xref:System.Runtime.Remoting.Contexts.Context>.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -49,10 +49,10 @@
         <summary>Called on each client context property that has this interface, before the construction request leaves the client.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The context property can examine and manipulate the contents of the <xref:System.Runtime.Remoting.Activation.IConstructionCallMessage>.  
-  
+The context property can examine and manipulate the contents of the <xref:System.Runtime.Remoting.Activation.IConstructionCallMessage>.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -79,10 +79,10 @@
         <summary>Called on each server context property that has this interface, before the construction response leaves the server for the client.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The context property can examine and manipulate the contents of the <xref:System.Runtime.Remoting.Activation.IConstructionReturnMessage>.  
-  
+The context property can examine and manipulate the contents of the <xref:System.Runtime.Remoting.Activation.IConstructionReturnMessage>.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -111,10 +111,10 @@
           <see langword="true" /> if successful; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current method is called on each server context property that implements the <xref:System.Runtime.Remoting.Contexts.IContextPropertyActivator> interface when a construction request arrives at a server. This allows the context property to examine the contents of each <xref:System.Runtime.Remoting.Activation.IConstructionCallMessage>.  
-  
+The current method is called on each server context property that implements the <xref:System.Runtime.Remoting.Contexts.IContextPropertyActivator> interface when a construction request arrives at a server. This allows the context property to examine the contents of each <xref:System.Runtime.Remoting.Activation.IConstructionCallMessage>.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -143,10 +143,10 @@
           <see langword="true" /> if successful; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The context property can examine the contents of the <xref:System.Runtime.Remoting.Activation.IConstructionReturnMessage>.  
-  
+The context property can examine the contents of the <xref:System.Runtime.Remoting.Activation.IConstructionReturnMessage>.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

@@ -160,10 +160,10 @@
           <see cref="T:System.ServiceModel.Channels.IChannelFactory" /> that contains the new channel factory of the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to get a channel factory for sending messages based on the configuration of the transport binding element.  
-  
+This method can be used to get a channel factory for sending messages based on the configuration of the transport binding element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
           <see cref="T:System.ServiceModel.Channels.IChannelListener" /> that contains the new channel listener of the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to get a channel listener for receiving messages based on the configuration of the transport binding element.  
-  
+This method can be used to get a channel listener for receiving messages based on the configuration of the transport binding element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -289,10 +289,10 @@
           <see cref="T:System.ServiceModel.Channels.BindingElement" /> that contains a copy of the current binding element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The object returned by this method can be reboxed as an object of the more specific <xref:System.ServiceModel.Channels.PeerCustomResolverBindingElement> type.  
-  
+The object returned by this method can be reboxed as an object of the more specific <xref:System.ServiceModel.Channels.PeerCustomResolverBindingElement> type.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,13 +14,13 @@
     <summary>Represents a <see cref="T:System.String" /> property (and its value) of a printing system hardware or software component.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this class to install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
-  
- [!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
- [!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
-  
+The following example shows how to use this class to install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
+ 
+[!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
+[!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -42,10 +42,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintStringProperty" /> class for the specified property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.String> property of a print system object, including casing. For example, the <xref:System.Printing.PrintSystemJobInfo.Submitter%2A> property of a <xref:System.Printing.PrintSystemJobInfo> object must be spelled "Submitter", not "submitter".  
-  
+The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.String> property of a print system object, including casing. For example, the <xref:System.Printing.PrintSystemJobInfo.Submitter%2A> property of a <xref:System.Printing.PrintSystemJobInfo> object must be spelled "Submitter", not "submitter".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -69,18 +69,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintStringProperty" /> class that has the specified value for the specified property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.String> property of a print system object, including casing. For example, the <xref:System.Printing.PrintSystemJobInfo.Submitter%2A> property of a <xref:System.Printing.PrintSystemJobInfo> object must be spelled "Submitter", not "submitter".  
+The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.String> property of a print system object, including casing. For example, the <xref:System.Printing.PrintSystemJobInfo.Submitter%2A> property of a <xref:System.Printing.PrintSystemJobInfo> object must be spelled "Submitter", not "submitter".  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this constructor to install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
-  
- [!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
- [!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
-  
+The following example shows how to use this constructor to install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
+ 
+[!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
+[!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

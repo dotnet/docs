@@ -19,14 +19,14 @@
     <summary>Represents a subscription to a timer event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.Runtime.TimerEventSubscription> objects are added to the timer queue associated with a workflow instance in order to send a message to a specific <xref:System.Workflow.Runtime.WorkflowQueue> at a specified time. When the time specified by <xref:System.Workflow.Runtime.TimerEventSubscription.ExpiresAt%2A> is reached, the workflow runtime engine sends a message containing the <xref:System.Workflow.Runtime.TimerEventSubscription.SubscriptionId%2A> to the <xref:System.Workflow.Runtime.WorkflowQueue> specified by <xref:System.Workflow.Runtime.TimerEventSubscription.QueueName%2A>. The timer queue associated with a workflow instance is contained in the <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection.TimerCollectionProperty>. You can examine <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection.TimerCollectionProperty> and the <xref:System.Workflow.Runtime.WorkflowQueueInfo> objects returned by <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A?displayProperty=fullName> to determine which activities are waiting on a specific <xref:System.Workflow.Runtime.TimerEventSubscription>. The <xref:System.Workflow.Activities.DelayActivity> and the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> both use timer event subscriptions to provide part of their functionality.  
-  
+ 
+<xref:System.Workflow.Runtime.TimerEventSubscription> objects are added to the timer queue associated with a workflow instance in order to send a message to a specific <xref:System.Workflow.Runtime.WorkflowQueue> at a specified time. When the time specified by <xref:System.Workflow.Runtime.TimerEventSubscription.ExpiresAt%2A> is reached, the workflow runtime engine sends a message containing the <xref:System.Workflow.Runtime.TimerEventSubscription.SubscriptionId%2A> to the <xref:System.Workflow.Runtime.WorkflowQueue> specified by <xref:System.Workflow.Runtime.TimerEventSubscription.QueueName%2A>. The timer queue associated with a workflow instance is contained in the <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection.TimerCollectionProperty>. You can examine <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection.TimerCollectionProperty> and the <xref:System.Workflow.Runtime.WorkflowQueueInfo> objects returned by <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A?displayProperty=fullName> to determine which activities are waiting on a specific <xref:System.Workflow.Runtime.TimerEventSubscription>. The <xref:System.Workflow.Activities.DelayActivity> and the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> both use timer event subscriptions to provide part of their functionality.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,19 +65,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.TimerEventSubscription" /> class by using the specified <see cref="T:System.Guid" /> of a workflow instance and the specified expiration <see cref="T:System.DateTime" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.TimerEventSubscription>.  
-  
+The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.TimerEventSubscription>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Workflow.Runtime.TimerEventSubscription.QueueName%2A>|A string representation of the system-supplied <xref:System.Guid> for <xref:System.Workflow.Runtime.TimerEventSubscription.SubscriptionId%2A>.|  
 |<xref:System.Workflow.Runtime.TimerEventSubscription.SubscriptionId%2A>|A system-supplied <xref:System.Guid>.|  
 |<xref:System.Workflow.Runtime.TimerEventSubscription.WorkflowInstanceId%2A>|The <xref:System.Guid> of the workflow instance, specified by `workflowInstanceId`.|  
 |<xref:System.Workflow.Runtime.TimerEventSubscription.ExpiresAt%2A>|The <xref:System.DateTime> specified by `expiresAt`.|  
-  
- <xref:System.Workflow.Runtime.TimerEventSubscription.QueueName%2A> is initialized to a string representation of <xref:System.Workflow.Runtime.TimerEventSubscription.SubscriptionId%2A> by this constructor.  
-  
+ 
+<xref:System.Workflow.Runtime.TimerEventSubscription.QueueName%2A> is initialized to a string representation of <xref:System.Workflow.Runtime.TimerEventSubscription.SubscriptionId%2A> by this constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,19 +103,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.TimerEventSubscription" /> class by using the specified subscription Id, the specified <see cref="T:System.Guid" /> of a workflow instance, and the specified expiration <see cref="T:System.DateTime" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.TimerEventSubscription>.  
-  
+The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.TimerEventSubscription>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Workflow.Runtime.TimerEventSubscription.QueueName%2A>|A string representation of the <xref:System.Guid> specified by `timerId`.|  
 |<xref:System.Workflow.Runtime.TimerEventSubscription.SubscriptionId%2A>|The <xref:System.Guid> specified by `timerId`.|  
 |<xref:System.Workflow.Runtime.TimerEventSubscription.WorkflowInstanceId%2A>|The <xref:System.Guid> of the workflow instance, specified by `workflowInstanceId`.|  
 |<xref:System.Workflow.Runtime.TimerEventSubscription.ExpiresAt%2A>|The <xref:System.DateTime> specified by `expiresAt`.|  
-  
- <xref:System.Workflow.Runtime.TimerEventSubscription.QueueName%2A> is initialized to a string representation of `timerId` by this constructor.  
-  
+ 
+<xref:System.Workflow.Runtime.TimerEventSubscription.QueueName%2A> is initialized to a string representation of `timerId` by this constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

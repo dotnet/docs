@@ -19,14 +19,14 @@
     <summary>Implements a markup extension that enables application authors to customize control styles based on the current system theme.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is a markup extension implementation. Markup extension classes exist mainly to provide infrastructure support for some aspect of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation, and the members exposed by a markup extension are not typically called from user code. This extension supports the [ThemeDictionary Markup Extension](~/docs/framework/wpf/advanced/themedictionary-markup-extension.md) usage from [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
+This class is a markup extension implementation. Markup extension classes exist mainly to provide infrastructure support for some aspect of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation, and the members exposed by a markup extension are not typically called from user code. This extension supports the [ThemeDictionary Markup Extension](~/docs/framework/wpf/advanced/themedictionary-markup-extension.md) usage from [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
 <a name="xamlTextUsage_ThemeDictionaryExtension"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [ThemeDictionary Markup Extension](~/docs/framework/wpf/advanced/themedictionary-markup-extension.md).  
-  
+For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [ThemeDictionary Markup Extension](~/docs/framework/wpf/advanced/themedictionary-markup-extension.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,13 +81,13 @@
         <value>The assembly name string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_AssemblyName"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [ThemeDictionary Markup Extension](~/docs/framework/wpf/advanced/themedictionary-markup-extension.md).  
-  
+For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [ThemeDictionary Markup Extension](~/docs/framework/wpf/advanced/themedictionary-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,12 +113,12 @@
         <returns>The object value to set on the property where the extension is applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method supports [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation, and is not intended to be called directly. The [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation uses this method for proper handling of `ThemeResourceDictionary` extension values during object creation.  
-  
- This implementation relies on services based on the passed `serviceProvider`. It must not be `null`. The `serviceProvider` object is expected to implement <xref:System.Windows.Markup.IXamlTypeResolver>.  
-  
+This method supports [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation, and is not intended to be called directly. The [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation uses this method for proper handling of `ThemeResourceDictionary` extension values during object creation.  
+ 
+This implementation relies on services based on the passed `serviceProvider`. It must not be `null`. The `serviceProvider` object is expected to implement <xref:System.Windows.Markup.IXamlTypeResolver>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.ThemeDictionaryExtension.AssemblyName" /> property is <see langword="null" />. You must set this value during construction or before using the <see cref="M:System.Windows.ThemeDictionaryExtension.ProvideValue(System.IServiceProvider)" /> method.  

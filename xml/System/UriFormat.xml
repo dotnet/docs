@@ -25,14 +25,14 @@
     <summary>Controls how URI information is escaped.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used by the <xref:System.Uri.GetComponents%2A> method to specify the level of character escaping in the returned URI.  
-  
- RFC 2396 defines the standard escaping for URIs, and is available at [http://rfc-editor.org](http://rfc-editor.org).  
-  
- SafeUnescaped leaves the following characters escaped if the character has a reserved meaning in the requested <xref:System.UriComponents>: "%", "#", "?", "/", "\\", and "@".  
-  
+This enumeration is used by the <xref:System.Uri.GetComponents%2A> method to specify the level of character escaping in the returned URI.  
+ 
+RFC 2396 defines the standard escaping for URIs, and is available at [http://rfc-editor.org](http://rfc-editor.org).  
+ 
+SafeUnescaped leaves the following characters escaped if the character has a reserved meaning in the requested <xref:System.UriComponents>: "%", "#", "?", "/", "\\", and "@".  
+ 
  ]]></format>
     </remarks>
   </Docs>

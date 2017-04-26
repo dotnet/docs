@@ -14,13 +14,13 @@
     <summary>Specifies all settings required to make a WMI connection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with default connection options.  
-  
- [!code-csharp[wminet_ConnectionOptions#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions/cs/ConnectionOptions.cs#1)]
- [!code-vb[wminet_ConnectionOptions#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions/vb/ConnectionOptions.vb#1)]  
-  
+The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with default connection options.  
+ 
+[!code-csharp[wminet_ConnectionOptions#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions/cs/ConnectionOptions.cs#1)]
+[!code-vb[wminet_ConnectionOptions#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions/vb/ConnectionOptions.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,20 +39,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ConnectionOptions" /> class for the connection operation, using default values. This is the default constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with default connection options.  
-  
- [!code-csharp[wminet_ConnectionOptions()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions()/cs/ConnectionOptions().cs#1)]
- [!code-vb[wminet_ConnectionOptions()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions()/vb/ConnectionOptions().vb#1)]  
-  
+The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with default connection options.  
+ 
+[!code-csharp[wminet_ConnectionOptions()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions()/cs/ConnectionOptions().cs#1)]
+[!code-vb[wminet_ConnectionOptions()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions()/vb/ConnectionOptions().vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,20 +125,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ConnectionOptions" /> class to be used for a WMI connection, using the specified values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
-  
- [!code-csharp[wminet_ConnectionOptions(9)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions(9)/cs/ConnectionOptions(9).cs#1)]
- [!code-vb[wminet_ConnectionOptions(9)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions(9)/vb/ConnectionOptions(9).vb#1)]  
-  
+The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
+ 
+[!code-csharp[wminet_ConnectionOptions(9)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions(9)/cs/ConnectionOptions(9).cs#1)]
+[!code-vb[wminet_ConnectionOptions(9)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions(9)/vb/ConnectionOptions(9).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,24 +160,24 @@
         <value>Returns an <see cref="T:System.Management.AuthenticationLevel" /> enumeration value indicating the COM authentication level used for a connection to the local or a remote computer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- On Windows 2000 and below, the WMI service will request Connect level authentication, while on Windows XP and higher it will request Packet level authentication. If the client requires a specific authentication setting, this property can be used to control the authentication level on this particular connection. For example, the property can be set to <xref:System.Management.AuthenticationLevel?displayProperty=fullName> if the client requires all communication to be encrypted.  
-  
+On Windows 2000 and below, the WMI service will request Connect level authentication, while on Windows XP and higher it will request Packet level authentication. If the client requires a specific authentication setting, this property can be used to control the authentication level on this particular connection. For example, the property can be set to <xref:System.Management.AuthenticationLevel?displayProperty=fullName> if the client requires all communication to be encrypted.  
+ 
 ## Property Value  
- The COM authentication level to be used for operations in this connection. The default value is <xref:System.Management.AuthenticationLevel?displayProperty=fullName>, which indicates that the client will use the authentication level requested by the server, according to the standard DCOM negotiation process.  
-  
+The COM authentication level to be used for operations in this connection. The default value is <xref:System.Management.AuthenticationLevel?displayProperty=fullName>, which indicates that the client will use the authentication level requested by the server, according to the standard DCOM negotiation process.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
-  
- [!code-csharp[wminet_ConnectionOptions_Authentication#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Authentication/cs/ConnectionOptions_Authentication.cs#1)]
- [!code-vb[wminet_ConnectionOptions_Authentication#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Authentication/vb/ConnectionOptions_Authentication.vb#1)]  
-  
+The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
+ 
+[!code-csharp[wminet_ConnectionOptions_Authentication#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Authentication/cs/ConnectionOptions_Authentication.cs#1)]
+[!code-vb[wminet_ConnectionOptions_Authentication#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Authentication/vb/ConnectionOptions_Authentication.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,36 +199,36 @@
         <value>Returns a <see cref="T:System.String" /> that defines the authority used to authenticate the specified user.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The property must be passed as follows: If it begins with the string "Kerberos:", Kerberos authentication will be used and this property should contain a Kerberos principal name. For example,  
-  
+The property must be passed as follows: If it begins with the string "Kerberos:", Kerberos authentication will be used and this property should contain a Kerberos principal name. For example,  
+ 
 ```  
 Kerberos:<principal name>  
 ```  
-  
- If the property value begins with the string "NTLMDOMAIN:", NTLM authentication will be used and the property should contain a NTLM domain name. For example,  
-  
+ 
+If the property value begins with the string "NTLMDOMAIN:", NTLM authentication will be used and the property should contain a NTLM domain name. For example,  
+ 
 ```  
 NTLMDOMAIN:<domain name>  
 ```  
-  
- If the property is null, NTLM authentication will be used and the NTLM domain of the current user will be used.  
-  
+ 
+If the property is null, NTLM authentication will be used and the NTLM domain of the current user will be used.  
+ 
 ## Property Value  
- If not `null`, this property can contain the name of the Windows NT/Windows 2000 domain in which to obtain the user to authenticate.  
-  
+If not `null`, this property can contain the name of the Windows NT/Windows 2000 domain in which to obtain the user to authenticate.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
-  
- [!code-csharp[wminet_ConnectionOptions_Authority#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Authority/cs/ConnectionOptions_Authority.cs#1)]
- [!code-vb[wminet_ConnectionOptions_Authority#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Authority/vb/ConnectionOptions_Authority.vb#1)]  
-  
+The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
+ 
+[!code-csharp[wminet_ConnectionOptions_Authority#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Authority/cs/ConnectionOptions_Authority.cs#1)]
+[!code-vb[wminet_ConnectionOptions_Authority#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Authority/vb/ConnectionOptions_Authority.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,12 +251,12 @@ NTLMDOMAIN:<domain name>
         <returns>The cloned object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -278,15 +278,15 @@ NTLMDOMAIN:<domain name>
         <value>Returns a <see cref="T:System.Boolean" /> value indicating whether user privileges need to be enabled for the connection operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- `true` if user privileges need to be enabled for the connection operation; otherwise, `false`. The default value is `false`.  
-  
+`true` if user privileges need to be enabled for the connection operation; otherwise, `false`. The default value is `false`.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -308,24 +308,24 @@ NTLMDOMAIN:<domain name>
         <value>Returns an <see cref="T:System.Management.ImpersonationLevel" /> enumeration value indicating the impersonation level used to connect to WMI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Management.ImpersonationLevel?displayProperty=fullName> setting is advantageous when the provider is a trusted application or service. It eliminates the need for the provider to perform client identity and access checks for the requested operations. However, if for some reason the provider cannot be trusted, allowing it to impersonate the client may constitute a security threat. In such cases, we recommend that this property be set by the client to a lower value, such as <xref:System.Management.ImpersonationLevel?displayProperty=fullName>. Note that this may cause failure of the provider to perform the requested operations, for lack of sufficient permissions or inability to perform access checks.  
-  
+The <xref:System.Management.ImpersonationLevel?displayProperty=fullName> setting is advantageous when the provider is a trusted application or service. It eliminates the need for the provider to perform client identity and access checks for the requested operations. However, if for some reason the provider cannot be trusted, allowing it to impersonate the client may constitute a security threat. In such cases, we recommend that this property be set by the client to a lower value, such as <xref:System.Management.ImpersonationLevel?displayProperty=fullName>. Note that this may cause failure of the provider to perform the requested operations, for lack of sufficient permissions or inability to perform access checks.  
+ 
 ## Property Value  
- The COM impersonation level to be used for operations in this connection. The default value is <xref:System.Management.ImpersonationLevel?displayProperty=fullName>, which indicates that the WMI provider can impersonate the client when performing the requested operations in this connection.  
-  
+The COM impersonation level to be used for operations in this connection. The default value is <xref:System.Management.ImpersonationLevel?displayProperty=fullName>, which indicates that the WMI provider can impersonate the client when performing the requested operations in this connection.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
-  
- [!code-csharp[wminet_ConnectionOptions_Impersonation#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Impersonation/cs/ConnectionOptions_Impersonation.cs#1)]
- [!code-vb[wminet_ConnectionOptions_Impersonation#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Impersonation/vb/ConnectionOptions_Impersonation.vb#1)]  
-  
+The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
+ 
+[!code-csharp[wminet_ConnectionOptions_Impersonation#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Impersonation/cs/ConnectionOptions_Impersonation.cs#1)]
+[!code-vb[wminet_ConnectionOptions_Impersonation#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Impersonation/vb/ConnectionOptions_Impersonation.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -347,24 +347,24 @@ NTLMDOMAIN:<domain name>
         <value>Returns a <see cref="T:System.String" /> value used for the locale in a connection to WMI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For Microsoft locale identifiers, the format of the string is "MS_*xxx*", where *xxx* is a string in hexadecimal form that indicates the Locale Identification (LCID); for example, American English would appear as "MS_409".  
-  
+For Microsoft locale identifiers, the format of the string is "MS_*xxx*", where *xxx* is a string in hexadecimal form that indicates the Locale Identification (LCID); for example, American English would appear as "MS_409".  
+ 
 ## Property Value  
- The default value is DEFAULTLOCALE.  
-  
+The default value is DEFAULTLOCALE.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
-  
- [!code-csharp[wminet_ConnectionOptions_Locale#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Locale/cs/ConnectionOptions_Locale.cs#1)]
- [!code-vb[wminet_ConnectionOptions_Locale#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Locale/vb/ConnectionOptions_Locale.vb#1)]  
-  
+The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
+ 
+[!code-csharp[wminet_ConnectionOptions_Locale#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Locale/cs/ConnectionOptions_Locale.cs#1)]
+[!code-vb[wminet_ConnectionOptions_Locale#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Locale/vb/ConnectionOptions_Locale.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -386,18 +386,18 @@ NTLMDOMAIN:<domain name>
         <value>Returns a <see cref="T:System.String" /> value used for the password in a connection to WMI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A blank string ("") specifies a valid zero-length password.  
-  
- Hard-coding a password is a security threat.  Use security precautions such as encrypting a password, or prompting the user for a password when you set the <xref:System.Management.ConnectionOptions.Password%2A> property.  
-  
+A blank string ("") specifies a valid zero-length password.  
+ 
+Hard-coding a password is a security threat.  Use security precautions such as encrypting a password, or prompting the user for a password when you set the <xref:System.Management.ConnectionOptions.Password%2A> property.  
+ 
 ## Property Value  
- The default value is `null`. If the user name is also `null`, the credentials used will be those of the currently logged-on user.  
-  
+The default value is `null`. If the user name is also `null`, the credentials used will be those of the currently logged-on user.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -437,24 +437,24 @@ NTLMDOMAIN:<domain name>
         <value>Returns a <see cref="T:System.String" /> value used as the user name in a connection to WMI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the user name is from a domain other than the current domain, the string may contain the domain name and user name, separated by a backslash: string 'username' = "EnterDomainHere\\\EnterUsernameHere". The `strUser` parameter cannot be an empty string.  
-  
+If the user name is from a domain other than the current domain, the string may contain the domain name and user name, separated by a backslash: string 'username' = "EnterDomainHere\\\EnterUsernameHere". The `strUser` parameter cannot be an empty string.  
+ 
 ## Property Value  
- `null` if the connection will use the currently logged-on user; otherwise, a string representing the user name. The default value is `null`.  
-  
+`null` if the connection will use the currently logged-on user; otherwise, a string representing the user name. The default value is `null`.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
-  
- [!code-csharp[wminet_ConnectionOptions_UserName#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions_UserName/cs/ConnectionOptions_Username.cs#1)]
- [!code-vb[wminet_ConnectionOptions_UserName#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions_UserName/vb/ConnectionOptions_Username.vb#1)]  
-  
+The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
+ 
+[!code-csharp[wminet_ConnectionOptions_UserName#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions_UserName/cs/ConnectionOptions_Username.cs#1)]
+[!code-vb[wminet_ConnectionOptions_UserName#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions_UserName/vb/ConnectionOptions_Username.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

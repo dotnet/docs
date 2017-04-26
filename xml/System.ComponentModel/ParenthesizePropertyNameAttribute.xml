@@ -28,10 +28,10 @@
     <summary>Indicates whether the name of the associated property is displayed with parentheses in the Properties window. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ComponentModel.ParenthesizePropertyNameAttribute> with a <xref:System.ComponentModel.ParenthesizePropertyNameAttribute.NeedParenthesis%2A> value of `true` indicates to the Properties window that the associated property should be displayed with parentheses around its name. The Properties window displays a property with parentheses around its name near the top of the list in alphabetical mode, or near the top of its category if the Properties window is in categorize mode.  
-  
+A <xref:System.ComponentModel.ParenthesizePropertyNameAttribute> with a <xref:System.ComponentModel.ParenthesizePropertyNameAttribute.NeedParenthesis%2A> value of `true` indicates to the Properties window that the associated property should be displayed with parentheses around its name. The Properties window displays a property with parentheses around its name near the top of the list in alphabetical mode, or near the top of its category if the Properties window is in categorize mode.  
+ 
  ]]></format>
     </remarks>
   </Docs>

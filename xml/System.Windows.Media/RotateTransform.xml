@@ -14,14 +14,14 @@
     <summary>Rotates an object clockwise about a specified point in a [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] x-y coordinate system.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.RotateTransform> rotates an object by a specified <xref:System.Windows.Media.RotateTransform.Angle%2A> about the point <xref:System.Windows.Media.RotateTransform.CenterX%2A>, <xref:System.Windows.Media.RotateTransform.CenterY%2A>.  
-  
- When you use a <xref:System.Windows.Media.RotateTransform>, realize that the transformation rotates the coordinate system for a particular object about the point (0, 0). Therefore, depending on the position of the object, it might not rotate in place (around its center). For example, if an object is positioned 200 units from 0 along the x-axis, a rotation of 30 degrees can swing the object 30 degrees along a circle that has a radius of 200, which is drawn around the origin. To rotate an object in place, set the <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> of the <xref:System.Windows.Media.RotateTransform> to the center of the object to rotate.  
-  
- **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.RotateTransform> class provides several special features: <xref:System.Windows.Media.RotateTransform> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
-  
+A <xref:System.Windows.Media.RotateTransform> rotates an object by a specified <xref:System.Windows.Media.RotateTransform.Angle%2A> about the point <xref:System.Windows.Media.RotateTransform.CenterX%2A>, <xref:System.Windows.Media.RotateTransform.CenterY%2A>.  
+ 
+When you use a <xref:System.Windows.Media.RotateTransform>, realize that the transformation rotates the coordinate system for a particular object about the point (0, 0). Therefore, depending on the position of the object, it might not rotate in place (around its center). For example, if an object is positioned 200 units from 0 along the x-axis, a rotation of 30 degrees can swing the object 30 degrees along a circle that has a radius of 200, which is drawn around the origin. To rotate an object in place, set the <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> of the <xref:System.Windows.Media.RotateTransform> to the center of the object to rotate.  
+ 
+**Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.RotateTransform> class provides several special features: <xref:System.Windows.Media.RotateTransform> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -98,18 +98,18 @@
         <value>The angle, in degrees, of clockwise rotation. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you use a <xref:System.Windows.Media.RotateTransform>, realize that the transformation rotates the coordinate system for a particular object about the point (0, 0). Therefore, depending on the position of the object, it might not rotate in place (around its center). For example, if an object is positioned 200 units from 0 along the x-axis, a rotation of 30 degrees can swing the object 30 degrees along a circle that has a radius of 200, which is drawn around the origin. To rotate an object in place, set the <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> of the <xref:System.Windows.Media.RotateTransform> to the center of the object to rotate.  
-  
+When you use a <xref:System.Windows.Media.RotateTransform>, realize that the transformation rotates the coordinate system for a particular object about the point (0, 0). Therefore, depending on the position of the object, it might not rotate in place (around its center). For example, if an object is positioned 200 units from 0 along the x-axis, a rotation of 30 degrees can swing the object 30 degrees along a circle that has a radius of 200, which is drawn around the origin. To rotate an object in place, set the <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> of the <xref:System.Windows.Media.RotateTransform> to the center of the object to rotate.  
+ 
 <a name="dependencyPropertyInfo_Angle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.RotateTransform.AngleProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,18 +148,18 @@
         <value>The x-coordinate of the center of rotation. The default is <c>0</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you use a <xref:System.Windows.Media.RotateTransform>, realize that the transformation rotates the coordinate system for a particular object about the point (0, 0). Therefore, depending on the position of the object, it might not rotate in place (around its center). For example, if an object is positioned 200 units from 0 along the x-axis, a rotation of 30 degrees can swing the object 30 degrees along a circle that has a radius of 200, which is drawn around the origin. To rotate an object in place, set the <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> of the <xref:System.Windows.Media.RotateTransform> to the center of the object to rotate.  
-  
+When you use a <xref:System.Windows.Media.RotateTransform>, realize that the transformation rotates the coordinate system for a particular object about the point (0, 0). Therefore, depending on the position of the object, it might not rotate in place (around its center). For example, if an object is positioned 200 units from 0 along the x-axis, a rotation of 30 degrees can swing the object 30 degrees along a circle that has a radius of 200, which is drawn around the origin. To rotate an object in place, set the <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> of the <xref:System.Windows.Media.RotateTransform> to the center of the object to rotate.  
+ 
 <a name="dependencyPropertyInfo_CenterX"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.RotateTransform.CenterXProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,18 +198,18 @@
         <value>The y-coordinate of the center of rotation. The default is <c>0</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you use a <xref:System.Windows.Media.RotateTransform>, realize that the transformation rotates the coordinate system for a particular object about the point (0, 0). Therefore, depending on the position of the object, it might not rotate in place (around its center). For example, if an object is positioned 200 units from 0 along the x-axis, a rotation of 30 degrees can swing the object 30 degrees along a circle that has a radius of 200, which is drawn around the origin. To rotate an object in place, set the <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> of the <xref:System.Windows.Media.RotateTransform> to the center of the object to rotate.  
-  
+When you use a <xref:System.Windows.Media.RotateTransform>, realize that the transformation rotates the coordinate system for a particular object about the point (0, 0). Therefore, depending on the position of the object, it might not rotate in place (around its center). For example, if an object is positioned 200 units from 0 along the x-axis, a rotation of 30 degrees can swing the object 30 degrees along a circle that has a radius of 200, which is drawn around the origin. To rotate an object in place, set the <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> of the <xref:System.Windows.Media.RotateTransform> to the center of the object to rotate.  
+ 
 <a name="dependencyPropertyInfo_CenterY"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.RotateTransform.CenterYProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,10 +230,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Media.RotateTransform.CenterY" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Media.RotateTransform.CenterY%2A> dependency property.  
-  
+The identifier for the <xref:System.Windows.Media.RotateTransform.CenterY%2A> dependency property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,14 +256,14 @@
         <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object returns <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- When this method copies dependency properties, it copies resource references and data bindings although they might no longer resolve. It does not copy animations or their current values.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+When this method copies dependency properties, it copies resource references and data bindings although they might no longer resolve. It does not copy animations or their current values.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,12 +286,12 @@
         <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object is <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -342,10 +342,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.RotateTransform" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The clockwise rotation angle is measured in degrees. The default center of rotation is the origin.  
-  
+The clockwise rotation angle is measured in degrees. The default center of rotation is the origin.  
+ 
  ]]></format>
         </remarks>
       </Docs>

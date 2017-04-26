@@ -22,24 +22,24 @@
     <summary>Represents a variable declaration.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeVariableDeclarationStatement> can be used to represent code that declares a variable.  
-  
- The <xref:System.CodeDom.CodeVariableDeclarationStatement.Type%2A> property specifies the type of the variable to declare. The <xref:System.CodeDom.CodeVariableDeclarationStatement.Name%2A> property specifies the name of the variable to declare. The <xref:System.CodeDom.CodeVariableDeclarationStatement.InitExpression%2A> property is optional, and specifies an initialization expression to assign to the variable after it is created.  
-  
+<xref:System.CodeDom.CodeVariableDeclarationStatement> can be used to represent code that declares a variable.  
+ 
+The <xref:System.CodeDom.CodeVariableDeclarationStatement.Type%2A> property specifies the type of the variable to declare. The <xref:System.CodeDom.CodeVariableDeclarationStatement.Name%2A> property specifies the name of the variable to declare. The <xref:System.CodeDom.CodeVariableDeclarationStatement.InitExpression%2A> property is optional, and specifies an initialization expression to assign to the variable after it is created.  
+ 
 > [!NOTE]
 >  Some languages can implement the optional variable initialization expression by making a separate assignment statement after the variable declaration.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example demonstrates using a <xref:System.CodeDom.CodeVariableDeclarationStatement> to declare a variable.  
-  
- [!code-cpp[CodeVariableDeclarationStatementExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeVariableDeclarationStatementExample/CPP/codevariabledeclarationstatementexample.cpp#2)]
- [!code-csharp[CodeVariableDeclarationStatementExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeVariableDeclarationStatementExample/CS/codevariabledeclarationstatementexample.cs#2)]
- [!code-vb[CodeVariableDeclarationStatementExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeVariableDeclarationStatementExample/VB/codevariabledeclarationstatementexample.vb#2)]  
-  
+This example demonstrates using a <xref:System.CodeDom.CodeVariableDeclarationStatement> to declare a variable.  
+ 
+[!code-cpp[CodeVariableDeclarationStatementExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeVariableDeclarationStatementExample/CPP/codevariabledeclarationstatementexample.cpp#2)]
+[!code-csharp[CodeVariableDeclarationStatementExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeVariableDeclarationStatementExample/CS/codevariabledeclarationstatementexample.cs#2)]
+[!code-vb[CodeVariableDeclarationStatementExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeVariableDeclarationStatementExample/VB/codevariabledeclarationstatementexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

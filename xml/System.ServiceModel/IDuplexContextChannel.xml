@@ -19,10 +19,10 @@
     <summary>Defines the interface a client channel must implement to exchange messages in a duplex session.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A duplex contract requires a session, because a context must be established to correlate the set of messages being sent between the client and the service.  
-  
+A duplex contract requires a session, because a context must be established to correlate the set of messages being sent between the client and the service.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
           <see langword="true" /> if the input session is shutdown automatically; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the remote side initiates shutdown, the channel is automatically closed for the user if <xref:System.ServiceModel.IDuplexContextChannel.AutomaticInputSessionShutdown%2A> is set to `true`. Setting it to `false` instead allow the user to send some final messages to the remote side on its output session before closing the channel.  
-  
+When the remote side initiates shutdown, the channel is automatically closed for the user if <xref:System.ServiceModel.IDuplexContextChannel.AutomaticInputSessionShutdown%2A> is set to `true`. Setting it to `false` instead allow the user to send some final messages to the remote side on its output session before closing the channel.  
+ 
  ]]></format>
         </remarks>
       </Docs>

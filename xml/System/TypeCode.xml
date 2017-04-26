@@ -28,21 +28,21 @@
     <summary>Specifies the type of an object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call the <xref:System.IConvertible.GetTypeCode%2A> method on classes that implement the <xref:System.IConvertible> interface to obtain the type code for an instance of that class.  
+Call the <xref:System.IConvertible.GetTypeCode%2A> method on classes that implement the <xref:System.IConvertible> interface to obtain the type code for an instance of that class.  
+ 
+Otherwise, call an object's <xref:System.Object.GetType%2A> method to obtain its <xref:System.Type> object, then call the `Type` object's <xref:System.Type.GetTypeCode%2A> method to obtain the object's type code.  
+ 
   
- Otherwise, call an object's <xref:System.Object.GetType%2A> method to obtain its <xref:System.Type> object, then call the `Type` object's <xref:System.Type.GetTypeCode%2A> method to obtain the object's type code.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how the <xref:System.TypeCode> enumeration can be used. In a decision block inside the WriteObjectInfo method, the <xref:System.TypeCode> of an <xref:System.Object> parameter is examined, and an appropriate message is written to the console.  
-  
- [!code-cpp[System.TypeCode#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.TypeCode/CPP/iconvertible.cpp#2)]
- [!code-csharp[System.TypeCode#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TypeCode/CS/iconvertible.cs#2)]
- [!code-vb[System.TypeCode#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TypeCode/VB/iconvertible.vb#2)]  
-  
+The following code example demonstrates how the <xref:System.TypeCode> enumeration can be used. In a decision block inside the WriteObjectInfo method, the <xref:System.TypeCode> of an <xref:System.Object> parameter is examined, and an appropriate message is written to the console.  
+ 
+[!code-cpp[System.TypeCode#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.TypeCode/CPP/iconvertible.cpp#2)]
+[!code-csharp[System.TypeCode#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TypeCode/CS/iconvertible.cs#2)]
+[!code-vb[System.TypeCode#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TypeCode/VB/iconvertible.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

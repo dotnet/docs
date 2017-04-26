@@ -13,21 +13,21 @@
     <summary>Identifies the source of an error that occurred within the Message Queuing application and generated a <see cref="T:System.Messaging.MessageQueueException" /> exception.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Messaging.MessageQueueErrorCode> enumeration gives detailed information about an error condition during a messaging operation.  
+The <xref:System.Messaging.MessageQueueErrorCode> enumeration gives detailed information about an error condition during a messaging operation.  
+ 
+The <xref:System.Messaging.MessageQueueException> uses the <xref:System.Messaging.MessageQueueException.MessageQueueErrorCode%2A> property to identify the nature of the Message Queuing error. The <xref:System.Messaging.MessageQueueErrorCode> value determines a text string to associate with the error.  
+ 
   
- The <xref:System.Messaging.MessageQueueException> uses the <xref:System.Messaging.MessageQueueException.MessageQueueErrorCode%2A> property to identify the nature of the Message Queuing error. The <xref:System.Messaging.MessageQueueErrorCode> value determines a text string to associate with the error.  
-  
-   
-  
+ 
 ## Examples  
- The following code example verifies whether a Message Queuing queue exists, and then deletes it.  
-  
- [!code-cpp[MessageQueue.ExistsDelete#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueue.ExistsDelete/CPP/mqexistsdelete.cpp#1)]
- [!code-csharp[MessageQueue.ExistsDelete#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueue.ExistsDelete/CS/mqexistsdelete.cs#1)]
- [!code-vb[MessageQueue.ExistsDelete#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessageQueue.ExistsDelete/VB/mqexistsdelete.vb#1)]  
-  
+The following code example verifies whether a Message Queuing queue exists, and then deletes it.  
+ 
+[!code-cpp[MessageQueue.ExistsDelete#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueue.ExistsDelete/CPP/mqexistsdelete.cpp#1)]
+[!code-csharp[MessageQueue.ExistsDelete#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueue.ExistsDelete/CS/mqexistsdelete.cs#1)]
+[!code-vb[MessageQueue.ExistsDelete#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessageQueue.ExistsDelete/VB/mqexistsdelete.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -49,10 +49,10 @@
         <summary>Message text: Access is denied.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if access to the specified queue or computer is denied. If this error is returned, verify that you have access rights for the operation, such as creating, deleting, or setting properties for a queue. For information about changing access rights for a queue, see the <xref:System.Messaging.MessageQueueAccessRights> and <xref:System.Messaging.MessageQueue.SetPermissions%2A?displayProperty=fullName> topics.  
-  
+Message Queuing returns this error if access to the specified queue or computer is denied. If this error is returned, verify that you have access rights for the operation, such as creating, deleting, or setting properties for a queue. For information about changing access rights for a queue, see the <xref:System.Messaging.MessageQueueAccessRights> and <xref:System.Messaging.MessageQueue.SetPermissions%2A?displayProperty=fullName> topics.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -74,10 +74,10 @@
         <summary>Message text: Bad security context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if the security context has become corrupted.  
-  
+Message Queuing returns this error if the security context has become corrupted.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -133,10 +133,10 @@
         <summary>Message text: Unable to create a certificate store for the internal certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if you do not have permission to manipulate your own profile.  
-  
+Message Queuing returns this error if you do not have permission to manipulate your own profile.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -158,10 +158,10 @@
         <summary>Message text: Unable to create a hash object for an authenticated message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.HashAlgorithm%2A> property for more information about hash algorithms.  
-  
+See the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.HashAlgorithm%2A> property for more information about hash algorithms.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -251,10 +251,10 @@
         <summary>Message text: The RPC server cannot impersonate the client application, hence security credentials could not be verified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if the directory service server cannot impersonate the client application. This is necessary to verify the security credentials.  
-  
+Message Queuing returns this error if the directory service server cannot impersonate the client application. This is necessary to verify the security credentials.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -310,10 +310,10 @@
         <summary>Message text: Unable to open the certificates store for the internal certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if you do not have permission to manipulate your own profile.  
-  
+Message Queuing returns this error if you do not have permission to manipulate your own profile.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -335,10 +335,10 @@
         <summary>Message text: Unable to set the security descriptor for the cryptographic keys.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For information about cryptographic providers, see the <xref:System.Messaging.CryptographicProviderType> and <xref:System.Messaging.Message.AuthenticationProviderType%2A?displayProperty=fullName> topics.  
-  
+For information about cryptographic providers, see the <xref:System.Messaging.CryptographicProviderType> and <xref:System.Messaging.Message.AuthenticationProviderType%2A?displayProperty=fullName> topics.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -360,10 +360,10 @@
         <summary>Message text: Unable to sign data before sending an authenticated message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.DigitalSignature%2A> property for more information about signing data.  
-  
+See the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.DigitalSignature%2A> property for more information about signing data.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -385,10 +385,10 @@
         <summary>Message text: A user attempted to send an authenticated message without a certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if the sending application attempts to use security context information to authenticate a message, and the security context does not include a certificate. For more information about certificates, see the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.SenderCertificate%2A> property.  
-  
+Message Queuing returns this error if the sending application attempts to use security context information to authenticate a message, and the security context does not include a certificate. For more information about certificates, see the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.SenderCertificate%2A> property.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -410,10 +410,10 @@
         <summary>Message text: The computer does not support encryption operations.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error when the application requests encryption and the computer (source or destination) does not support encryption operations. When this error is returned, the encryption operation fails. For more information about using encryption, see the <xref:System.Messaging.MessageQueue.EncryptionRequired%2A?displayProperty=fullName> and <xref:System.Messaging.Message.EncryptionAlgorithm%2A?displayProperty=fullName> topics.  
-  
+Message Queuing returns this error when the application requests encryption and the computer (source or destination) does not support encryption operations. When this error is returned, the encryption operation fails. For more information about using encryption, see the <xref:System.Messaging.MessageQueue.EncryptionRequired%2A?displayProperty=fullName> and <xref:System.Messaging.Message.EncryptionAlgorithm%2A?displayProperty=fullName> topics.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -435,10 +435,10 @@
         <summary>Message text: The internal Message Queuing certificate is corrupted.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This error applies only to Message Queuing 1.0.  
-  
+This error applies only to Message Queuing 1.0.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -460,10 +460,10 @@
         <summary>Message text: The personal certificate store is corrupted.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error when the Microsoft Internet Explorer personal certificate store is corrupted.  
-  
+Message Queuing returns this error when the Microsoft Internet Explorer personal certificate store is corrupted.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -536,10 +536,10 @@
         <summary>Message text: Could not get the SID information out of the thread token.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about sender identifiers, see the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.SenderId%2A> property.  
-  
+For more information about sender identifiers, see the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.SenderId%2A> property.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -561,10 +561,10 @@
         <summary>Message text: The connected network cannot be deleted; it is in use.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if it cannot delete the specified connected network because the network is defined in at least one other computer. Remove the connected network from all connected network lists and try again to delete it.  
-  
+Message Queuing returns this error if it cannot delete the specified connected network because the network is defined in at least one other computer. Remove the connected network from all connected network lists and try again to delete it.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -620,10 +620,10 @@
         <summary>Message text: Directory service is full.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if the information store is full. This error applies only to Message Queuing 1.0.  
-  
+Message Queuing returns this error if the information store is full. This error applies only to Message Queuing 1.0.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -645,10 +645,10 @@
         <summary>Message text: Cannot connect to MS DTC.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if it is unable to connect to the Microsoft Distributed Transaction Coordinator.  
-  
+Message Queuing returns this error if it is unable to connect to the Microsoft Distributed Transaction Coordinator.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -721,10 +721,10 @@
         <summary>Message text: Generic Error.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if it cannot identify a more specific source.  
-  
+Message Queuing returns this error if it cannot identify a more specific source.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -780,10 +780,10 @@
         <summary>Message text: Invalid MQCOLUMNS parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if you are using the `MessagePropertyFilter` class and have selected `false` for all Boolean values and zero (0) for all integer values.  
-  
+Message Queuing returns this error if you are using the `MessagePropertyFilter` class and have selected `false` for all Boolean values and zero (0) for all integer values.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -805,10 +805,10 @@
         <summary>Message text: MQ_ACTION_PEEK_NEXT specified to MQReceiveMessage can not be used with the current cursor position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `System.Messaging.MessageEnumerator.MoveNext` cannot be used with the current cursor position.  
-  
+`System.Messaging.MessageEnumerator.MoveNext` cannot be used with the current cursor position.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -847,10 +847,10 @@
         <summary>Message text: The given format name is invalid.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For valid format name syntax options, see the <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.FormatName%2A> property.  
-  
+For valid format name syntax options, see the <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.FormatName%2A> property.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -872,10 +872,10 @@
         <summary>Message text: Illegal MQQMPROPS parameter, either null or with zero properties.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Illegal message properties, either `null` or with zero properties.  
-  
+Illegal message properties, either `null` or with zero properties.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -948,10 +948,10 @@
         <summary>Message text: Illegal property buffer size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if the specified buffer for the message identifier or correlation identifier is not the correct size. See the Message class's Message.Id and Message.CorrelationId properties for more information about message identifiers.  
-  
+Message Queuing returns this error if the specified buffer for the message identifier or correlation identifier is not the correct size. See the Message class's Message.Id and Message.CorrelationId properties for more information about message identifiers.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1007,10 +1007,10 @@
         <summary>Message text: Invalid queue path name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.Path%2A> property for valid path syntax options.  
-  
+See the <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.Path%2A> property for valid path syntax options.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1032,12 +1032,12 @@
         <summary>Message text: Illegal MQQUEUEPROPS parameter, either null or with zero properties.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Illegal Queue Properties, either `null` or with zero properties.  
-  
- Message Queuing returns this error if you are using the <xref:System.Messaging.MessageQueueCriteria> class and have called <xref:System.Messaging.MessageQueueCriteria.ClearAll%2A> or have not specified any criteria to use when filtering queues. See the MessageQueueCriteria class or MessageQueue.GetPublicQueues for more information about filtering queue search criteria.  
-  
+Illegal Queue Properties, either `null` or with zero properties.  
+ 
+Message Queuing returns this error if you are using the <xref:System.Messaging.MessageQueueCriteria> class and have called <xref:System.Messaging.MessageQueueCriteria.ClearAll%2A> or have not specified any criteria to use when filtering queues. See the MessageQueueCriteria class or MessageQueue.GetPublicQueues for more information about filtering queue search criteria.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1076,10 +1076,10 @@
         <summary>Message text: Invalid propid value in MQRESTRICTION parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Invalid property identifier value for restriction.  
-  
+Invalid property identifier value for restriction.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1135,10 +1135,10 @@
         <summary>Message text: Invalid propid value in MQSORTSET.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Invalid property identifier value in for sort.  
-  
+Invalid property identifier value in for sort.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1160,10 +1160,10 @@
         <summary>Message text: The user has an invalid user name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if your application is connecting to it through an invalid user name.  
-  
+Message Queuing returns this error if your application is connecting to it through an invalid user name.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1202,10 +1202,10 @@
         <summary>Message text: Insufficient resources to perform operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error, for example, if there is not enough memory to complete the operation. When this error is returned, the operation fails.  
-  
+Message Queuing returns this error, for example, if there is not enough memory to complete the operation. When this error is returned, the operation fails.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1227,10 +1227,10 @@
         <summary>Message text: The user certificate is not valid.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if the security certificate specified in the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.SenderCertificate%2A> property is invalid, or if the certificate is not correctly placed in the Microsoft Internet Explorer personal certificate store.  
-  
+Message Queuing returns this error if the security certificate specified in the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.SenderCertificate%2A> property is invalid, or if the certificate is not correctly placed in the Microsoft Internet Explorer personal certificate store.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1252,10 +1252,10 @@
         <summary>Message text: An invalid handle passed to a function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if the specified queue handle is not valid.  
-  
+Message Queuing returns this error if the specified queue handle is not valid.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1277,10 +1277,10 @@
         <summary>Message text: Invalid object owner. For example CreateQueue failed because the Queue Manager object is invalid.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error, for example, if your application attempts to create a queue on a computer on which Message Queuing is not installed.  
-  
+Message Queuing returns this error, for example, if your application attempts to create a queue on a computer on which Message Queuing is not installed.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1302,10 +1302,10 @@
         <summary>Message text: An invalid parameter passed to a function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if one of the parameters supplied by the operation is not valid.  
-  
+Message Queuing returns this error if one of the parameters supplied by the operation is not valid.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1327,10 +1327,10 @@
         <summary>Message text: The receive or peek message time-out has expired.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if the time-out specified in a call to <xref:System.Messaging.MessageQueue.Receive%2A?displayProperty=fullName> or <xref:System.Messaging.MessageQueue.Peek%2A?displayProperty=fullName> expires before a new message arrives in the queue. This can only happen if there was no message already in the queue; both methods would return immediately if a message exists.  
-  
+Message Queuing returns this error if the time-out specified in a call to <xref:System.Messaging.MessageQueue.Receive%2A?displayProperty=fullName> or <xref:System.Messaging.MessageQueue.Peek%2A?displayProperty=fullName> expires before a new message arrives in the queue. This can only happen if there was no message already in the queue; both methods would return immediately if a message exists.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1386,10 +1386,10 @@
         <summary>Message text: The specified computer could not be found.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if it cannot find the queue's computer in the directory service.  
-  
+Message Queuing returns this error if it cannot find the queue's computer in the directory service.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1411,10 +1411,10 @@
         <summary>Message text: A message that is currently pointed at by the cursor has been removed from the queue by another process or by another call to receive the message without the use of this cursor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error when some other cursor, application, or the system administrator has already removed the message from the queue. This error is most likely to occur when using the <xref:System.Messaging.MessageEnumerator> class, such as the instance returned through a call to <xref:System.Messaging.MessageQueue.GetMessageEnumerator%2A?displayProperty=fullName> or <xref:System.Messaging.MessageQueue.GetEnumerator%2A?displayProperty=fullName>.  
-  
+Message Queuing returns this error when some other cursor, application, or the system administrator has already removed the message from the queue. This error is most likely to occur when using the <xref:System.Messaging.MessageEnumerator> class, such as the instance returned through a call to <xref:System.Messaging.MessageQueue.GetMessageEnumerator%2A?displayProperty=fullName> or <xref:System.Messaging.MessageQueue.GetEnumerator%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1436,10 +1436,10 @@
         <summary>Message text: The specified message could not be found.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if it cannot find the specified message in the queue.  
-  
+Message Queuing returns this error if it cannot find the specified message in the queue.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1461,10 +1461,10 @@
         <summary>Message text: Could not store a recoverable or journal message. Message was not sent.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if the local computer cannot store a recoverable message (one whose delivery is guaranteed in the case of a network problem) or a journal message. See the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.Recoverable%2A> and <xref:System.Messaging.Message.UseJournalQueue%2A> properties for more information about these message sending options.  
-  
+Message Queuing returns this error if the local computer cannot store a recoverable message (one whose delivery is guaranteed in the case of a network problem) or a journal message. See the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.Recoverable%2A> and <xref:System.Messaging.Message.UseJournalQueue%2A> properties for more information about these message sending options.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1486,10 +1486,10 @@
         <summary>Message text: Connector Type is mandatory when sending an Acknowledgment or secure message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error when the application sets a property typically set by Message Queuing, but does not specify the connector to use. For more information about connector types, see the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.ConnectorType%2A> property.  
-  
+Message Queuing returns this error when the application sets a property typically set by Message Queuing, but does not specify the connector to use. For more information about connector types, see the <xref:System.Messaging.Message> class's <xref:System.Messaging.Message.ConnectorType%2A> property.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1528,10 +1528,10 @@
         <summary>Message text: The list of MQIS servers (in registry) is empty.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This error applies only to Message Queuing 1.0.  
-  
+This error applies only to Message Queuing 1.0.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1553,10 +1553,10 @@
         <summary>Message text: No connection with this site's controller(s).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if the application cannot access the directory service. If this error is returned, verify permissions for accessing the directory service.  
-  
+Message Queuing returns this error if the application cannot access the directory service. If this error is returned, verify permissions for accessing the directory service.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1612,10 +1612,10 @@
         <summary>Message text: The internal Message Queuing certificate for the user does not exist.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if no internal certificate is registered or the registered certificate is corrupted.  
-  
+Message Queuing returns this error if no internal certificate is registered or the registered certificate is corrupted.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1671,10 +1671,10 @@
         <summary>Message text: No response from object owner.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if there is no response from the directory service server. When this error is returned, the status of the operation is unknown.  
-  
+Message Queuing returns this error if there is no response from the directory service server. When this error is returned, the status of the operation is unknown.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1696,10 +1696,10 @@
         <summary>Message text: Object owner is not reachable.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if the directory service server for the object is not available. When this error is returned, the operation fails.  
-  
+Message Queuing returns this error if the directory service server for the object is not available. When this error is returned, the operation fails.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1789,10 +1789,10 @@
         <summary>Message text: The passed buffer for the Provider name property is too small.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the Message class's AuthenticationProviderName property for more information about provider names.  
-  
+See the Message class's AuthenticationProviderName property for more information about provider names.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1814,10 +1814,10 @@
         <summary>Message text: The public key for the computer does not exist.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if it was able to query the directory service, but the enhanced key was not found. This error applies only to Message Queuing 2.0.  
-  
+Message Queuing returns this error if it was able to query the directory service, but the enhanced key was not found. This error applies only to Message Queuing 2.0.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1839,10 +1839,10 @@
         <summary>Message text: Unable to find the public key for computer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error, for example, if you are trying to retrieve the computer properties of a computer running Message Queuing 1.0 or if you are trying to get remote computer properties while working offline. This error applies only to Message Queuing 2.0.  
-  
+Message Queuing returns this error, for example, if you are trying to retrieve the computer properties of a computer running Message Queuing 1.0 or if you are trying to get remote computer properties while working offline. This error applies only to Message Queuing 2.0.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1864,10 +1864,10 @@
         <summary>DNS property is not supported as criteria to locate queues.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot retrieve the DNS path name of a queue.  
-  
+You cannot retrieve the DNS path name of a queue.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1906,10 +1906,10 @@
         <summary>Message text: A queue with the same pathname is already registered.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing registers public queues in the directory service, and registers private queues on the local computer.  
-  
+Message Queuing registers public queues in the directory service, and registers private queues on the local computer.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1948,10 +1948,10 @@
         <summary>Message text: The queue is not registered in the directory service.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if it cannot find the queue. This includes public queues not registered in the directory service and Internet queues that do not exist in the Message Queuing namespace.  
-  
+Message Queuing returns this error if it cannot find the queue. This includes public queues not registered in the directory service and Internet queues that do not exist in the Message Queuing namespace.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2007,10 +2007,10 @@
         <summary>Message text: The size of the buffer passed to MQGetQueueSecurity is too small.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if the supplied security buffer is too small for the security descriptor.  
-  
+Message Queuing returns this error if the supplied security buffer is too small for the security descriptor.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2032,10 +2032,10 @@
         <summary>Message text: The passed buffer for the user certificate property is too small.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the Message class's System.Messaging.Message.SenderCertificate property for more information about user certificates.  
-  
+See the Message class's System.Messaging.Message.SenderCertificate property for more information about user certificates.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2057,10 +2057,10 @@
         <summary>Message text: The passed buffer for the user identifier property is too small.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error when the supplied sender identification buffer is too small. See the Message class's System.Messaging.Message.SenderId property for more information about sender identifiers.  
-  
+Message Queuing returns this error when the supplied sender identification buffer is too small. See the Message class's System.Messaging.Message.SenderId property for more information about sender identifiers.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2082,10 +2082,10 @@
         <summary>Message text: The Message Queues service is not available.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if the application is unable to connect to the Queue Manager.  
-  
+Message Queuing returns this error if the application is unable to connect to the Queue Manager.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2107,10 +2107,10 @@
         <summary>Message text: Sharing violation. The queue is already opened for exclusive receive.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if an application is trying to open an already opened queue that has exclusive read rights. For more information about receiving messages exclusively from a queue, see the <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.DenySharedReceive%2A> property.  
-  
+Message Queuing returns this error if an application is trying to open an already opened queue that has exclusive read rights. For more information about receiving messages exclusively from a queue, see the <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.DenySharedReceive%2A> property.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2132,10 +2132,10 @@
         <summary>Message text: The passed buffer for the Signature property is too small.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the Message class's DigitalSignature property for more information about signatures.  
-  
+See the Message class's DigitalSignature property for more information about signatures.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2157,10 +2157,10 @@
         <summary>Message text: The Queue Manager service has been restarted. The queue handle is stale and should be closed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if the specified handle was obtained in a previous session of the Queue Manager service.  
-  
+Message Queuing returns this error if the specified handle was obtained in a previous session of the Queue Manager service.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2182,10 +2182,10 @@
         <summary>Message text: The passed buffer for the Symmetric key property is too small.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the Message class's DestinationSymmetricKey property for more information about symmetric keys.  
-  
+See the Message class's DestinationSymmetricKey property for more information about symmetric keys.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2258,10 +2258,10 @@
         <summary>Message text: Wrong transaction usage.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if an attempt was made to open a remote queue for read access from within a transaction, or an attempt was made to read a message from a non-transactional queue from within a transaction.  
-  
+Message Queuing returns this error if an attempt was made to open a remote queue for read access from within a transaction, or an attempt was made to read a message from a non-transactional queue from within a transaction.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2283,10 +2283,10 @@
         <summary>Message text: The specified access mode is not supported.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error if the access mode specified when opening the queue is set to an invalid value, or the access mode and the share mode specified are not compatible.  
-  
+Message Queuing returns this error if the access mode specified when opening the queue is set to an invalid value, or the access mode and the share mode specified are not compatible.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2308,10 +2308,10 @@
         <summary>Message text: The requested operation for the specified format name is not supported.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Message Queuing returns this error when the requested operation is not supported for the specified format name. Operations include trying to open a queue to receive messages by specifying a direct format name.  
-  
+Message Queuing returns this error when the requested operation is not supported for the specified format name. Operations include trying to open a queue to receive messages by specifying a direct format name.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

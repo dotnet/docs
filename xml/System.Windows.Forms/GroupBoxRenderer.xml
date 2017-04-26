@@ -14,23 +14,23 @@
     <summary>Provides methods used to render a group box control with or without visual styles. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.GroupBoxRenderer> class provides a set of `static` methods that can be used to render a group box control. Rendering a control refers to drawing the user interface of a control. To draw a group box, use one of the <xref:System.Windows.Forms.GroupBoxRenderer.DrawGroupBox%2A> methods. These methods provide a variety of text drawing options.  
+The <xref:System.Windows.Forms.GroupBoxRenderer> class provides a set of `static` methods that can be used to render a group box control. Rendering a control refers to drawing the user interface of a control. To draw a group box, use one of the <xref:System.Windows.Forms.GroupBoxRenderer.DrawGroupBox%2A> methods. These methods provide a variety of text drawing options.  
+ 
+If visual styles are enabled in the operating system and visual styles are applied to the current application, <xref:System.Windows.Forms.GroupBoxRenderer.DrawGroupBox%2A> will draw the group box with the current visual style. Otherwise, <xref:System.Windows.Forms.GroupBoxRenderer.DrawGroupBox%2A> will draw the group box with the classic Windows style. This is useful if you are drawing a custom control that should automatically match the current visual style setting of the operating system.  
+ 
+This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=fullName> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Button.GroupBox?displayProperty=fullName> class. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
+ 
   
- If visual styles are enabled in the operating system and visual styles are applied to the current application, <xref:System.Windows.Forms.GroupBoxRenderer.DrawGroupBox%2A> will draw the group box with the current visual style. Otherwise, <xref:System.Windows.Forms.GroupBoxRenderer.DrawGroupBox%2A> will draw the group box with the classic Windows style. This is useful if you are drawing a custom control that should automatically match the current visual style setting of the operating system.  
-  
- This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=fullName> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Button.GroupBox?displayProperty=fullName> class. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a custom control that uses the <xref:System.Windows.Forms.GroupBoxRenderer.DrawGroupBox%2A> method to draw a group box with a double border if visual styles are enabled.  
-  
- [!code-cpp[System.Windows.Forms.GroupBoxRenderer#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/cpp/form1.cpp#0)]
- [!code-csharp[System.Windows.Forms.GroupBoxRenderer#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/CS/form1.cs#0)]
- [!code-vb[System.Windows.Forms.GroupBoxRenderer#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/VB/form1.vb#0)]  
-  
+The following code example demonstrates how to create a custom control that uses the <xref:System.Windows.Forms.GroupBoxRenderer.DrawGroupBox%2A> method to draw a group box with a double border if visual styles are enabled.  
+ 
+[!code-cpp[System.Windows.Forms.GroupBoxRenderer#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/cpp/form1.cpp#0)]
+[!code-csharp[System.Windows.Forms.GroupBoxRenderer#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/CS/form1.cs#0)]
+[!code-vb[System.Windows.Forms.GroupBoxRenderer#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/VB/form1.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,19 +59,19 @@
         <summary>Draws a group box control in the specified state and bounds.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the group box with the current visual style. Otherwise, this method will draw the group box with the classic Windows style.  
+If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the group box with the current visual style. Otherwise, this method will draw the group box with the classic Windows style.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.GroupBoxRenderer.DrawGroupBox%28System.Drawing.Graphics%2CSystem.Drawing.Rectangle%2CSystem.Windows.Forms.VisualStyles.GroupBoxState%29> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a group box with a double border. This code example is part of a larger example provided for the <xref:System.Windows.Forms.GroupBoxRenderer> class.  
-  
- [!code-cpp[System.Windows.Forms.GroupBoxRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/cpp/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.GroupBoxRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.GroupBoxRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/VB/form1.vb#2)]  
-  
+The following code example uses the <xref:System.Windows.Forms.GroupBoxRenderer.DrawGroupBox%28System.Drawing.Graphics%2CSystem.Drawing.Rectangle%2CSystem.Windows.Forms.VisualStyles.GroupBoxState%29> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a group box with a double border. This code example is part of a larger example provided for the <xref:System.Windows.Forms.GroupBoxRenderer> class.  
+ 
+[!code-cpp[System.Windows.Forms.GroupBoxRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/cpp/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.GroupBoxRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.GroupBoxRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,19 +104,19 @@
         <summary>Draws a group box control in the specified state and bounds, with the specified text and font.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the group box with the current visual style. Otherwise, this method will draw the group box with the classic Windows style.  
+If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the group box with the current visual style. Otherwise, this method will draw the group box with the classic Windows style.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.GroupBoxRenderer.DrawGroupBox%28System.Drawing.Graphics%2CSystem.Drawing.Rectangle%2CSystem.String%2CSystem.Drawing.Font%2CSystem.Windows.Forms.VisualStyles.GroupBoxState%29> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a group box with a double border. This code example is part of a larger example provided for the <xref:System.Windows.Forms.GroupBoxRenderer> class.  
-  
- [!code-cpp[System.Windows.Forms.GroupBoxRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/cpp/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.GroupBoxRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.GroupBoxRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/VB/form1.vb#2)]  
-  
+The following code example uses the <xref:System.Windows.Forms.GroupBoxRenderer.DrawGroupBox%28System.Drawing.Graphics%2CSystem.Drawing.Rectangle%2CSystem.String%2CSystem.Drawing.Font%2CSystem.Windows.Forms.VisualStyles.GroupBoxState%29> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a group box with a double border. This code example is part of a larger example provided for the <xref:System.Windows.Forms.GroupBoxRenderer> class.  
+ 
+[!code-cpp[System.Windows.Forms.GroupBoxRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/cpp/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.GroupBoxRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.GroupBoxRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,10 +151,10 @@
         <summary>Draws a group box control in the specified state and bounds, with the specified text, font, and color.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the group box with the current visual style. Otherwise, this method will draw the group box with the classic Windows style.  
-  
+If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the group box with the current visual style. Otherwise, this method will draw the group box with the classic Windows style.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,10 +189,10 @@
         <summary>Draws a group box control in the specified state and bounds, with the specified text, font, and text formatting.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the group box with the current visual style. Otherwise, this method will draw the group box with the classic Windows style.  
-  
+If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the group box with the current visual style. Otherwise, this method will draw the group box with the classic Windows style.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,10 +229,10 @@
         <summary>Draws a group box control in the specified state and bounds, with the specified text, font, color, and text formatting.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the group box with the current visual style. Otherwise, this method will draw the group box with the classic Windows style.  
-  
+If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the group box with the current visual style. Otherwise, this method will draw the group box with the classic Windows style.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -303,18 +303,18 @@
           <see langword="true" /> if the application state is used to determine rendering style; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Forms.GroupBoxRenderer.RenderMatchingApplicationState%2A> is `true`, the <xref:System.Windows.Forms.GroupBoxRenderer> uses the setting from <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=fullName> to determine the rendering style. If <xref:System.Windows.Forms.GroupBoxRenderer.RenderMatchingApplicationState%2A> is `false`, the renderer will always render using visual styles.  
+If <xref:System.Windows.Forms.GroupBoxRenderer.RenderMatchingApplicationState%2A> is `true`, the <xref:System.Windows.Forms.GroupBoxRenderer> uses the setting from <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=fullName> to determine the rendering style. If <xref:System.Windows.Forms.GroupBoxRenderer.RenderMatchingApplicationState%2A> is `false`, the renderer will always render using visual styles.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.GroupBoxRenderer.RenderMatchingApplicationState%2A> property to change whether a group box is rendered using visual styles. This code example is part of a larger example provided for the <xref:System.Windows.Forms.GroupBoxRenderer> class.  
-  
- [!code-csharp[System.Windows.Forms.GroupBoxRenderer#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/CS/form1.cs#3)]
- [!code-vb[System.Windows.Forms.GroupBoxRenderer#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/VB/form1.vb#3)]  
-  
+The following code example uses the <xref:System.Windows.Forms.GroupBoxRenderer.RenderMatchingApplicationState%2A> property to change whether a group box is rendered using visual styles. This code example is part of a larger example provided for the <xref:System.Windows.Forms.GroupBoxRenderer> class.  
+ 
+[!code-csharp[System.Windows.Forms.GroupBoxRenderer#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/CS/form1.cs#3)]
+[!code-vb[System.Windows.Forms.GroupBoxRenderer#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GroupBoxRenderer/VB/form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

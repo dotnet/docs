@@ -22,12 +22,12 @@
     <summary>Represents the method that handles the <see cref="E:System.Web.SessionState.SessionStateModule.End" /> event of a session-state module.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SessionState.SessionStateItemExpireCallback> delegate is used to enable a <xref:System.Web.SessionState.SessionStateStoreProviderBase> implementation to call the `Session_OnEnd` event from the Global.asax file.  
-  
- For more information, see the remarks provided for the <xref:System.Web.SessionState.SessionStateStoreProviderBase.SetItemExpireCallback%2A> method.  
-  
+The <xref:System.Web.SessionState.SessionStateItemExpireCallback> delegate is used to enable a <xref:System.Web.SessionState.SessionStateStoreProviderBase> implementation to call the `Session_OnEnd` event from the Global.asax file.  
+ 
+For more information, see the remarks provided for the <xref:System.Web.SessionState.SessionStateStoreProviderBase.SetItemExpireCallback%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>

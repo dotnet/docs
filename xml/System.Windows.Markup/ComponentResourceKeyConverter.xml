@@ -14,10 +14,10 @@
     <summary>Implements a type converter for <see cref="T:System.Windows.ComponentResourceKey" /> objects, which deliberately have no type conversion pathways. The type converter enforces and reports that behavior.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.ComponentResourceKey> type should not use a type converter pathway to convert values. You should use markup extensions instead. For this reason, the <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception. The exceptions might possibly report invalid input, but even input that is considered valid will result in <xref:System.NotSupportedException>.  
-  
+The <xref:System.Windows.ComponentResourceKey> type should not use a type converter pathway to convert values. You should use markup extensions instead. For this reason, the <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception. The exceptions might possibly report invalid input, but even input that is considered valid will result in <xref:System.NotSupportedException>.  
+ 
 <a name="xamlTextUsage_ComponentResourceKeyConverter"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -65,10 +65,10 @@
           <see langword="false" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.ComponentResourceKey> type should not use a type converter pathway to convert values (should use markup extensions instead). For this reason, the <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception.  
-  
+The <xref:System.Windows.ComponentResourceKey> type should not use a type converter pathway to convert values (should use markup extensions instead). For this reason, the <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -100,10 +100,10 @@
           <see langword="false" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.ComponentResourceKey> type should not use a type converter pathway to convert values (should use markup extensions instead). For this reason, the <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception.  
-  
+The <xref:System.Windows.ComponentResourceKey> type should not use a type converter pathway to convert values (should use markup extensions instead). For this reason, the <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -136,10 +136,10 @@
         <returns>Throws an exception in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.ComponentResourceKey> type should not use a type converter pathway to convert values (should use markup extensions instead). For this reason, the <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception.  
-  
+The <xref:System.Windows.ComponentResourceKey> type should not use a type converter pathway to convert values (should use markup extensions instead). For this reason, the <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Cannot perform the conversion.</exception>
@@ -173,10 +173,10 @@
         <returns>Throws an exception in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.ComponentResourceKey> type should not use a type converter pathway to convert values. You should use markup extensions instead. For this reason, the <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception.  
-  
+The <xref:System.Windows.ComponentResourceKey> type should not use a type converter pathway to convert values. You should use markup extensions instead. For this reason, the <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Cannot perform the conversion.</exception>

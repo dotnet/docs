@@ -14,10 +14,10 @@
     <summary>Contains an event task that is defined in an event provider. The task identifies a portion of an application or a component that publishes an event. A task is a 16-bit value with 16 top values reserved.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class cannot be instantiated. A <xref:System.Diagnostics.Eventing.Reader.ProviderMetadata> object defies a list of <xref:System.Diagnostics.Eventing.Reader.EventTask> objects, one for each task defined in the provider. The standard task values and their meanings are defined in the <xref:System.Diagnostics.Eventing.Reader.StandardEventLevel> enumeration.  
-  
+This class cannot be instantiated. A <xref:System.Diagnostics.Eventing.Reader.ProviderMetadata> object defies a list of <xref:System.Diagnostics.Eventing.Reader.EventTask> objects, one for each task defined in the provider. The standard task values and their meanings are defined in the <xref:System.Diagnostics.Eventing.Reader.StandardEventLevel> enumeration.  
+ 
  ]]></format>
     </remarks>
   </Docs>

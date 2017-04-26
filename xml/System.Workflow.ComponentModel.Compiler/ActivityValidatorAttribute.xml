@@ -22,14 +22,14 @@
     <summary>Identifies the class that performs validation on an <see cref="T:System.Workflow.ComponentModel.Activity" /> that is subject to validation. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- For a list of initial property values for an instance of the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute> class, see the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute.%23ctor%2A> constructor.  
-  
+ 
+For a list of initial property values for an instance of the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute> class, see the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute.%23ctor%2A> constructor.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,10 +51,10 @@
         <summary>Initializes an instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute" /> class by using the type of the validator.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of initial property values for an instance of the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute> class, see the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute.%23ctor%2A> constructor.  
-  
+For a list of initial property values for an instance of the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute> class, see the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -76,10 +76,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute" /> class by using the specified validator type name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of initial property values for an instance of the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute> class, see the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute.%23ctor%2A> constructor.  
-  
+For a list of initial property values for an instance of the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute> class, see the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,14 +111,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the initial property values for an instance of the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute> class.  
-  
+The following table shows the initial property values for an instance of the <xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute> class.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Workflow.ComponentModel.Compiler.ActivityValidatorAttribute.ValidatorTypeName%2A>|`null` reference (`Nothing` in Visual Basic).|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

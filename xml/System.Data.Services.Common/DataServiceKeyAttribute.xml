@@ -20,10 +20,10 @@
     <summary>Denotes the key property or properties of an entity.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should only apply the <xref:System.Data.Services.Common.DataServiceKeyAttribute> attribute to a property that can be used to uniquely identify an instance of the entity type. This attribute is ignored when applied to a navigation property. For more information, see [Reflection Provider](~/docs/framework/data/wcf/reflection-provider-wcf-data-services.md).  
-  
+You should only apply the <xref:System.Data.Services.Common.DataServiceKeyAttribute> attribute to a property that can be used to uniquely identify an instance of the entity type. This attribute is ignored when applied to a navigation property. For more information, see [Reflection Provider](~/docs/framework/data/wcf/reflection-provider-wcf-data-services.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>

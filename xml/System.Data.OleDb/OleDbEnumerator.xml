@@ -48,10 +48,10 @@
         <returns>Returns a <see cref="T:System.Data.DataTable" /> that contains information about the visible OLE DB providers.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The table that is returned by this method contains the following columns, all of which contain strings:  
-  
+The table that is returned by this method contains the following columns, all of which contain strings:  
+ 
 |Column Ordinal|Column|Description|  
 |--------------------|------------|-----------------|  
 |0|SOURCES_NAME|The invariant name of the native OLEDB data source or enumerator.|  
@@ -60,12 +60,12 @@
 |3|SOURCES_TYPE|One of the following enumeration members: Binder (0), DataSource_MDP (1), DataSource_TDP (2), Enumerator (3). These correspond to the values returned in the SOURCES_TYPE column of the native OLE DB sources rowset.|  
 |4|SOURCES_ISPARENT|Applicable to enumerators only. If `true`, indicates that the entry applies to the same enumerator on which GetSourcesRowset was called, implying that it is also included in the sub-enumeration. Corresponds to the SOURCES_ISPARENT column of the native OLE DB sources rowset|  
 |5|SOURCES_CLSID|A human-readable name, that can be converted to a moniker using the native COM interface IParseDisplayName. Corresponds to the SOURCES_CLSID column returned by the native OLE DB sources rowset.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following console application retrieves information about all the visible OLE DB providers and displays the information in the console window.  
-  
+The following console application retrieves information about all the visible OLE DB providers and displays the information in the console window.  
+ 
 ```vb  
 Imports System.Data  
 Imports System.Data.OleDb  
@@ -92,7 +92,7 @@ Sub Main()
  End Sub  
 End Module  
 ```  
-  
+ 
 ```csharp  
 using System;  
 using System.Data;  
@@ -124,7 +124,7 @@ class Program
  }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The provider does not support ISourcesRowset.</exception>
@@ -152,10 +152,10 @@ class Program
         <returns>Returns an <see cref="T:System.Data.OleDb.OleDbDataReader" /> that contains information about the requested OLE DB providers, using the specified OLE DB enumerator.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The reader that is returned by this method contains the following columns, all of which contain strings:  
-  
+The reader that is returned by this method contains the following columns, all of which contain strings:  
+ 
 |Column ordinal|Column|Description|  
 |--------------------|------------|-----------------|  
 |0|SOURCES_NAME|The invariant name of the native OLE DB data source or enumerator.|  
@@ -163,14 +163,14 @@ class Program
 |2|SOURCES_DESCRIPTION|Description of the native OLE DB data source. Corresponds to the SOURCES_DESCRIPTION column returned by the native OLE DB sources rowset.|  
 |3|SOURCES_TYPE|One of the following enumeration members: Binder (0), DataSource_MDP (1), DataSource_TDP (2), Enumerator (3). These correspond to the values returned in the SOURCES_TYPE column of the native OLE DB sources rowset.|  
 |4|SOURCES_ISPARENT|Applicable to enumerators only. If `true`, indicates that the entry applies to the same enumerator on which **GetSourcesRowset** was called, implying that it is also included in the sub-enumeration. Corresponds to the SOURCES_ISPARENT column of the native OLE DB sources rowset|  
+ 
+OLE DB provides several enumerator components, including MSDAENUM, MSDASQL Enumerator, SQLNCLI Enumerator, SQLOLEDB Enumerator, and others. For more information about the enumerator components and how to use them, see the [OLE DB Programmer's Reference](http://go.microsoft.com/fwlink/?LinkId=45232).  
+ 
   
- OLE DB provides several enumerator components, including MSDAENUM, MSDASQL Enumerator, SQLNCLI Enumerator, SQLOLEDB Enumerator, and others. For more information about the enumerator components and how to use them, see the [OLE DB Programmer's Reference](http://go.microsoft.com/fwlink/?LinkId=45232).  
-  
-   
-  
+ 
 ## Examples  
- The following console application uses the MSDAENUM component to retrieve information about all the OLE DB providers and displays the information in the console window.  
-  
+The following console application uses the MSDAENUM component to retrieve information about all the OLE DB providers and displays the information in the console window.  
+ 
 ```vb  
 Imports System.Data  
 Imports System.Data.OleDb  
@@ -200,7 +200,7 @@ Module Module1
   End Sub  
 End Module  
 ```  
-  
+ 
 ```csharp  
 using System;  
 using System.Data;  
@@ -233,7 +233,7 @@ class Program
  }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The provider does not support **ISourcesRowset**.</exception>
@@ -258,10 +258,10 @@ class Program
         <returns>Returns a <see cref="T:System.Data.OleDb.OleDbDataReader" /> that contains information about the visible OLE DB providers.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The reader returned by this method contains the following columns, all of which contain strings:  
-  
+The reader returned by this method contains the following columns, all of which contain strings:  
+ 
 |Column Ordinal|Column|Description|  
 |--------------------|------------|-----------------|  
 |0|SOURCES_NAME|The invariant name of the native OLEDB data source or enumerator.|  
@@ -270,12 +270,12 @@ class Program
 |3|SOURCES_TYPE|One of the following enumeration members: Binder (0), DataSource_MDP (1), DataSource_TDP (2), Enumerator (3). These correspond to the values returned in the SOURCES_TYPE column of the native OLE DB sources rowset.|  
 |4|SOURCES_ISPARENT|Applicable to enumerators only. If `true`, indicates that the entry applies to the same enumerator on which GetSourcesRowset was called, implying that it is also included in the sub-enumeration. Corresponds to the SOURCES_ISPARENT column of the native OLE DB sources rowset|  
 |5|SOURCES_CLSID|A human-readable name, that can be converted to a moniker using the native COM interface IParseDisplayName. Corresponds to the SOURCES_CLSID column returned by the native OLE DB sources rowset.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following console application retrieves information about all the visible OLE DB providers and displays the information in the console window.  
-  
+The following console application retrieves information about all the visible OLE DB providers and displays the information in the console window.  
+ 
 ```vb  
 Imports System.Data  
 Imports System.Data.OleDb  
@@ -304,7 +304,7 @@ Module Module1
   End Sub  
 End Module  
 ```  
-  
+ 
 ```csharp  
 using System;  
 using System.Data;  
@@ -336,7 +336,7 @@ class Program
  }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The provider does not support ISourcesRowset.</exception>

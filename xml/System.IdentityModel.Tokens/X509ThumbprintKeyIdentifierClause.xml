@@ -14,20 +14,20 @@
     <summary>Represents a key identifier clause that identifies a <see cref="T:System.IdentityModel.Tokens.X509SecurityToken" /> security tokens using the X.509 certificate's thumbprint.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, the <xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens. Attached references refer to security tokens that are contained within the security header of a SOAP message token and unattached references reference security tokens that are not included within the security header of a SOAP message. These references typically affirm the authenticity of the issued security token. Use the <xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause> class to reference a <xref:System.IdentityModel.Tokens.X509SecurityToken> security token using the X.509 certificate's thumbprint. The <xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.GetX509Thumbprint%2A> method returns the thumbprint.  
-  
- [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] supports the following types of security token references for <xref:System.IdentityModel.Tokens.X509SecurityToken> security tokens.  
-  
+Typically, the <xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens. Attached references refer to security tokens that are contained within the security header of a SOAP message token and unattached references reference security tokens that are not included within the security header of a SOAP message. These references typically affirm the authenticity of the issued security token. Use the <xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause> class to reference a <xref:System.IdentityModel.Tokens.X509SecurityToken> security token using the X.509 certificate's thumbprint. The <xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.GetX509Thumbprint%2A> method returns the thumbprint.  
+ 
+[!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] supports the following types of security token references for <xref:System.IdentityModel.Tokens.X509SecurityToken> security tokens.  
+ 
 -   <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause>  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -73,10 +73,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" /> class using the specified X.509 certificate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor obtains the thumbprint (the SHA-1 hash value of the X.509 certificate raw data) by calling the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHash%2A> method.  
-  
+This constructor obtains the thumbprint (the SHA-1 hash value of the X.509 certificate raw data) by calling the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHash%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -143,10 +143,10 @@
         <returns>A <see cref="T:System.String" /> that represents the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.ToString%2A> method returns the thumbprint.  
-  
+The <xref:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.ToString%2A> method returns the thumbprint.  
+ 
  ]]></format>
         </remarks>
       </Docs>

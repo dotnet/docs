@@ -19,10 +19,10 @@
     <summary>Provides data for the <see cref="E:System.Net.WebClient.UploadValuesCompleted" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of this class are passed to the <xref:System.Net.UploadValuesCompletedEventHandler>.  
-  
+Instances of this class are passed to the <xref:System.Net.UploadValuesCompletedEventHandler>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,10 +49,10 @@
         <value>A <see cref="T:System.Byte" /> array containing the server reply.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> and <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> properties to determine whether the upload completed. If the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property's value is an <xref:System.Exception> object or the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property's value is `true`, the asynchronous operation did not complete correctly and the <xref:System.Net.UploadValuesCompletedEventArgs.Result%2A> property's value will not be valid.  
-  
+You should check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> and <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> properties to determine whether the upload completed. If the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property's value is an <xref:System.Exception> object or the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property's value is `true`, the asynchronous operation did not complete correctly and the <xref:System.Net.UploadValuesCompletedEventArgs.Result%2A> property's value will not be valid.  
+ 
  ]]></format>
         </remarks>
       </Docs>

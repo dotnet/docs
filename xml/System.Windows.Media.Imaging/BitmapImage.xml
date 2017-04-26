@@ -21,25 +21,25 @@
     <summary>Provides a specialized <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that is optimized for loading images using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapImage> primarily exists to support [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] syntax and introduces additional properties for bitmap loading that are not defined by <xref:System.Windows.Media.Imaging.BitmapSource>.  
+<xref:System.Windows.Media.Imaging.BitmapImage> primarily exists to support [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] syntax and introduces additional properties for bitmap loading that are not defined by <xref:System.Windows.Media.Imaging.BitmapSource>.  
+ 
+<xref:System.Windows.Media.Imaging.BitmapImage> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. Property changes can only occur during object initialization. Call <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> to signal that initialization has begun and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> to signal that initialization has completed. After initialization, property changes are ignored.  
+ 
+<xref:System.Windows.Media.Imaging.BitmapImage> objects created using the <xref:System.Windows.Media.Imaging.BitmapImage.%23ctor%2A> constructor are automatically initialized and property changes are ignored.  
+ 
   
- <xref:System.Windows.Media.Imaging.BitmapImage> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. Property changes can only occur during object initialization. Call <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> to signal that initialization has begun and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> to signal that initialization has completed. After initialization, property changes are ignored.  
-  
- <xref:System.Windows.Media.Imaging.BitmapImage> objects created using the <xref:System.Windows.Media.Imaging.BitmapImage.%23ctor%2A> constructor are automatically initialized and property changes are ignored.  
-  
-   
-  
+ 
 ## Examples  
- The following code examples demonstrate how to use a <xref:System.Windows.Media.Imaging.BitmapImage> in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
-  
- [!code-xml[ImageElementExample#SimpleXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/SimpleImageExample.xaml#simplexaml2)]
- [!code-xml[ImageElementExample#SimpleXAML2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample/VB/SimpleImageExample.xaml#simplexaml2)]  
-  
- [!code-csharp[ImageElementExample#SimpleCSharp1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/SimpleImageExample.xaml.cs#simplecsharp1)]
- [!code-vb[ImageElementExample#SimpleCSharp1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample/VB/SimpleImageExample.xaml.vb#simplecsharp1)]  
-  
+The following code examples demonstrate how to use a <xref:System.Windows.Media.Imaging.BitmapImage> in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
+ 
+[!code-xml[ImageElementExample#SimpleXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/SimpleImageExample.xaml#simplexaml2)]
+[!code-xml[ImageElementExample#SimpleXAML2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample/VB/SimpleImageExample.xaml#simplexaml2)]  
+ 
+[!code-csharp[ImageElementExample#SimpleCSharp1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/SimpleImageExample.xaml.cs#simplecsharp1)]
+[!code-vb[ImageElementExample#SimpleCSharp1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample/VB/SimpleImageExample.xaml.vb#simplecsharp1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,10 +58,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapImage> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. To initialize a <xref:System.Windows.Media.Imaging.BitmapImage> created using this constructor, you must perform property initialization between <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> calls.  
-  
+<xref:System.Windows.Media.Imaging.BitmapImage> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. To initialize a <xref:System.Windows.Media.Imaging.BitmapImage> created using this constructor, you must perform property initialization between <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> calls.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> class by using the supplied <see cref="T:System.Uri" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapImage> objects created using this constructor are automatically initialized. After initialization, property changes are ignored.  
-  
+<xref:System.Windows.Media.Imaging.BitmapImage> objects created using this constructor are automatically initialized. After initialization, property changes are ignored.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="uriSource" /> parameter is <see langword="null" />.</exception>
@@ -112,12 +112,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> class with an image whose source is a <see cref="T:System.Uri" />, and is cached according to the provided <see cref="T:System.Net.Cache.RequestCachePolicy" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapImage> objects created using this constructor are automatically initialized. After initialization, property changes are ignored.  
-  
- <xref:System.Windows.Media.Imaging.BitmapImage.%23ctor%28System.Uri%2CSystem.Net.Cache.RequestCachePolicy%29> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Windows.Media.Imaging.BitmapImage> objects created using this constructor are automatically initialized. After initialization, property changes are ignored.  
+ 
+<xref:System.Windows.Media.Imaging.BitmapImage.%23ctor%28System.Uri%2CSystem.Net.Cache.RequestCachePolicy%29> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="uriSource" /> parameter is <see langword="null" />.</exception>
@@ -159,18 +159,18 @@
         <summary>Signals the start of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> initialization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Property initialization must be done between <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> calls. Once the <xref:System.Windows.Media.Imaging.BitmapImage> has been initialized, property changes are ignored.  
+Property initialization must be done between <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> calls. Once the <xref:System.Windows.Media.Imaging.BitmapImage> has been initialized, property changes are ignored.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.BitmapImage> with a set of properties by using the <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> methods.  
-  
- [!code-csharp[BitmapImageProps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
- [!code-vb[BitmapImageProps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
-  
+The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.BitmapImage> with a set of properties by using the <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> methods.  
+ 
+[!code-csharp[BitmapImageProps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
+[!code-vb[BitmapImageProps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> is currently being initialized. <see cref="M:System.Windows.Media.Imaging.BitmapImage.BeginInit" /> has already been called.  
@@ -197,26 +197,26 @@
         <value>The <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" /> being used for the <see cref="T:System.Windows.Media.Imaging.BitmapImage" />. The default is <see cref="F:System.Windows.Media.Imaging.BitmapCacheOption.Default" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set the <xref:System.Windows.Media.Imaging.BitmapImage.CacheOption%2A> to <xref:System.Windows.Media.Imaging.BitmapCacheOption?displayProperty=fullName> if you wish to close a stream used to create the <xref:System.Windows.Media.Imaging.BitmapImage>. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option retains access to the stream until the image is needed, and cleanup is handled by the garbage collector.  
-  
+Set the <xref:System.Windows.Media.Imaging.BitmapImage.CacheOption%2A> to <xref:System.Windows.Media.Imaging.BitmapCacheOption?displayProperty=fullName> if you wish to close a stream used to create the <xref:System.Windows.Media.Imaging.BitmapImage>. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option retains access to the stream until the image is needed, and cleanup is handled by the garbage collector.  
+ 
 <a name="dependencyPropertyInfo_CacheOption"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to set the <xref:System.Windows.Media.Imaging.BitmapImage.CacheOption%2A> of a <xref:System.Windows.Media.Imaging.BitmapImage> by using code.  
-  
- [!code-csharp[BitmapImageProps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
- [!code-vb[BitmapImageProps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
-  
+The following code example demonstrates how to set the <xref:System.Windows.Media.Imaging.BitmapImage.CacheOption%2A> of a <xref:System.Windows.Media.Imaging.BitmapImage> by using code.  
+ 
+[!code-csharp[BitmapImageProps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
+[!code-vb[BitmapImageProps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,14 +256,14 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
- When copying dependency properties, this method copies resource references and data bindings (they might no longer resolve) but not animations or their current values.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
+When copying dependency properties, this method copies resource references and data bindings (they might no longer resolve) but not animations or their current values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -307,12 +307,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -374,25 +374,25 @@
         <value>The <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" /> used for this <see cref="T:System.Windows.Media.Imaging.BitmapImage" />. The default is <see cref="F:System.Windows.Media.Imaging.BitmapCreateOptions.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CreateOptions"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to set the <xref:System.Windows.Media.Imaging.BitmapImage.CreateOptions%2A> of a <xref:System.Windows.Media.Imaging.BitmapImage> by using code.  
-  
- [!code-csharp[BitmapImageProps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
- [!code-vb[BitmapImageProps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
-  
+The following code example demonstrates how to set the <xref:System.Windows.Media.Imaging.BitmapImage.CreateOptions%2A> of a <xref:System.Windows.Media.Imaging.BitmapImage> by using code.  
+ 
+[!code-csharp[BitmapImageProps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
+[!code-vb[BitmapImageProps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -431,28 +431,28 @@
         <value>The height, in pixels, that the image is decoded to. The default value is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> is also set, the aspect ratio of the bitmap is ignored. If <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> is not set, the aspect ratio remains the same.  
-  
- The [!INCLUDE[TLA#tla_jpeg](~/includes/tlasharptla-jpeg-md.md)] and [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] codecs natively decode the image to the specified size; other codecs decode the image at its original size and scale the image to the desired size.  
-  
+If <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> is also set, the aspect ratio of the bitmap is ignored. If <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> is not set, the aspect ratio remains the same.  
+ 
+The [!INCLUDE[TLA#tla_jpeg](~/includes/tlasharptla-jpeg-md.md)] and [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] codecs natively decode the image to the specified size; other codecs decode the image at its original size and scale the image to the desired size.  
+ 
 <a name="dependencyPropertyInfo_DecodePixelHeight"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeightProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to set the <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> property by using code.  
-  
- [!code-csharp[BitmapImageProps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
- [!code-vb[BitmapImageProps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
-  
+The following code example demonstrates how to set the <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> property by using code.  
+ 
+[!code-csharp[BitmapImageProps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
+[!code-vb[BitmapImageProps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -491,28 +491,28 @@
         <value>The width, in pixels, that the image is decoded to. The default value is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If<xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> is also set, the aspect ratio of the bitmap is ignored. If <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> is not set, the aspect ratio remains the same.  
-  
- The [!INCLUDE[TLA#tla_jpeg](~/includes/tlasharptla-jpeg-md.md)] and [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] codecs natively decode the image to the specified size; other codecs decode the image at its original size and scale the image to the desired size.  
-  
+If<xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> is also set, the aspect ratio of the bitmap is ignored. If <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> is not set, the aspect ratio remains the same.  
+ 
+The [!INCLUDE[TLA#tla_jpeg](~/includes/tlasharptla-jpeg-md.md)] and [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] codecs natively decode the image to the specified size; other codecs decode the image at its original size and scale the image to the desired size.  
+ 
 <a name="dependencyPropertyInfo_DecodePixelWidth"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidthProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to set the <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> property by using code.  
-  
- [!code-csharp[BitmapImageProps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
- [!code-vb[BitmapImageProps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
-  
+The following code example demonstrates how to set the <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> property by using code.  
+ 
+[!code-csharp[BitmapImageProps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
+[!code-vb[BitmapImageProps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -551,18 +551,18 @@
         <summary>Signals the end of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> initialization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Property initialization must be done between <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> calls. Once the <xref:System.Windows.Media.Imaging.BitmapImage> has been initialized, property changes are ignored.  
+Property initialization must be done between <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> calls. Once the <xref:System.Windows.Media.Imaging.BitmapImage> has been initialized, property changes are ignored.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.BitmapImage> with a set of properties by using the <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> methods.  
-  
- [!code-csharp[BitmapImageProps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
- [!code-vb[BitmapImageProps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
-  
+The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.BitmapImage> with a set of properties by using the <xref:System.Windows.Media.Imaging.BitmapImage.BeginInit%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.EndInit%2A> methods.  
+ 
+[!code-csharp[BitmapImageProps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
+[!code-vb[BitmapImageProps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Media.Imaging.BitmapImage.UriSource" /> or <see cref="P:System.Windows.Media.Imaging.BitmapImage.StreamSource" /> properties are <see langword="null" />.  
@@ -632,13 +632,13 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> is downloading content; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to check the value of the <xref:System.Windows.Media.Imaging.BitmapImage.IsDownloading%2A> property by using code. The value of the property is emitted to a <xref:System.Windows.MessageBox> as a <xref:System.String>.  
-  
- [!code-csharp[BitmapImageProps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
- [!code-vb[BitmapImageProps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
-  
+The following code example demonstrates how to check the value of the <xref:System.Windows.Media.Imaging.BitmapImage.IsDownloading%2A> property by using code. The value of the property is emitted to a <xref:System.Windows.MessageBox> as a <xref:System.String>.  
+ 
+[!code-csharp[BitmapImageProps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
+[!code-vb[BitmapImageProps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -679,28 +679,28 @@
         <value>The rotation that is used for the <see cref="T:System.Windows.Media.Imaging.BitmapImage" />. The default is <see cref="F:System.Windows.Media.Imaging.Rotation.Rotate0" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Rotation is performed after scaling. This means that an image that has a <xref:System.Windows.Media.Imaging.BitmapImage.Rotation%2A> of <xref:System.Windows.Media.Imaging.Rotation>, a <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> of 10, and <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> of 5 will result in an image that has a width of 5 and a height of 10.  
-  
+Rotation is performed after scaling. This means that an image that has a <xref:System.Windows.Media.Imaging.BitmapImage.Rotation%2A> of <xref:System.Windows.Media.Imaging.Rotation>, a <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> of 10, and <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> of 5 will result in an image that has a width of 5 and a height of 10.  
+ 
 <a name="dependencyPropertyInfo_Rotation"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.RotationProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to rotate an image by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
-  
- [!code-xml[ImageElementExample#TransformedXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/TransformedImageExample.xaml#transformedxaml2)]  
-  
- [!code-csharp[ImageElementExample#TransformedCSharp1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/TransformedImageExample.xaml.cs#transformedcsharp1)]
- [!code-vb[ImageElementExample#TransformedCSharp1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample/VB/TransformedImageExample.xaml.vb#transformedcsharp1)]  
-  
+The following code example demonstrates how to rotate an image by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
+ 
+[!code-xml[ImageElementExample#TransformedXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/TransformedImageExample.xaml#transformedxaml2)]  
+ 
+[!code-csharp[ImageElementExample#TransformedCSharp1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/TransformedImageExample.xaml.cs#transformedcsharp1)]
+[!code-vb[ImageElementExample#TransformedCSharp1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample/VB/TransformedImageExample.xaml.vb#transformedcsharp1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -739,17 +739,17 @@
         <value>The rectangle that is used as the source of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" />. The default is <see cref="P:System.Windows.Int32Rect.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_SourceRect"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -793,20 +793,20 @@
         <value>The stream source of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" />. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Media.Imaging.BitmapImage.StreamSource%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.UriSource%2A> are both set, the <xref:System.Windows.Media.Imaging.BitmapImage.StreamSource%2A> value is ignored.  
-  
- Set the <xref:System.Windows.Media.Imaging.BitmapImage.CacheOption%2A> property to <xref:System.Windows.Media.Imaging.BitmapCacheOption?displayProperty=fullName> if you wish to close the stream after the <xref:System.Windows.Media.Imaging.BitmapImage> is created. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option retains access to the stream until the bitmap is needed, and cleanup is handled by the garbage collector.  
-  
+If <xref:System.Windows.Media.Imaging.BitmapImage.StreamSource%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.UriSource%2A> are both set, the <xref:System.Windows.Media.Imaging.BitmapImage.StreamSource%2A> value is ignored.  
+ 
+Set the <xref:System.Windows.Media.Imaging.BitmapImage.CacheOption%2A> property to <xref:System.Windows.Media.Imaging.BitmapCacheOption?displayProperty=fullName> if you wish to close the stream after the <xref:System.Windows.Media.Imaging.BitmapImage> is created. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option retains access to the stream until the bitmap is needed, and cleanup is handled by the garbage collector.  
+ 
 <a name="dependencyPropertyInfo_StreamSource"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.StreamSourceProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -850,10 +850,10 @@
         <value>The base <see cref="T:System.Net.Cache.RequestCachePolicy" /> of the current context. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapImage.UriCachePolicy%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Windows.Media.Imaging.BitmapImage.UriCachePolicy%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -874,10 +874,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Media.Imaging.BitmapImage.UriCachePolicy" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapImage.UriCachePolicyProperty> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Windows.Media.Imaging.BitmapImage.UriCachePolicyProperty> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -899,29 +899,29 @@
         <value>The <see cref="T:System.Uri" /> source of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" />. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Media.Imaging.BitmapImage.StreamSource%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.UriSource%2A> are both set, the <xref:System.Windows.Media.Imaging.BitmapImage.StreamSource%2A> value is ignored.  
-  
+If <xref:System.Windows.Media.Imaging.BitmapImage.StreamSource%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.UriSource%2A> are both set, the <xref:System.Windows.Media.Imaging.BitmapImage.StreamSource%2A> value is ignored.  
+ 
 <a name="dependencyPropertyInfo_IsDownloading"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.UriSourceProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use the <xref:System.Windows.Media.Imaging.BitmapImage.UriSource%2A> property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
-  
- [!code-xml[imageelementexample#SimpleXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/SimpleImageExample.xaml#simplexaml2)]
- [!code-xml[imageelementexample#SimpleXAML2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample/VB/SimpleImageExample.xaml#simplexaml2)]  
-  
- [!code-csharp[imageelementexample#SimpleCSharp1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/SimpleImageExample.xaml.cs#simplecsharp1)]
- [!code-vb[imageelementexample#SimpleCSharp1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample/VB/SimpleImageExample.xaml.vb#simplecsharp1)]  
-  
+The following example demonstrates the use the <xref:System.Windows.Media.Imaging.BitmapImage.UriSource%2A> property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
+ 
+[!code-xml[imageelementexample#SimpleXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/SimpleImageExample.xaml#simplexaml2)]
+[!code-xml[imageelementexample#SimpleXAML2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample/VB/SimpleImageExample.xaml#simplexaml2)]  
+ 
+[!code-csharp[imageelementexample#SimpleCSharp1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/SimpleImageExample.xaml.cs#simplecsharp1)]
+[!code-vb[imageelementexample#SimpleCSharp1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample/VB/SimpleImageExample.xaml.vb#simplecsharp1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

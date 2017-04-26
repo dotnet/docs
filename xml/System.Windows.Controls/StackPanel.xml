@@ -18,16 +18,16 @@
     <summary>Arranges child elements into a single line that can be oriented horizontally or vertically.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.StackPanel> contains a collection of <xref:System.Windows.UIElement> objects, which are in the <xref:System.Windows.Controls.Panel.Children%2A> property.  
-  
- The default value is stretch for both <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> of content that is contained in a <xref:System.Windows.Controls.StackPanel>.  
-  
- Panel elements do not receive focus by default. To compel a panel element to receive focus, set the <xref:System.Windows.UIElement.Focusable%2A> property to `true`.  
-  
- <xref:System.Windows.Controls.StackPanel> implements the <xref:System.Windows.Controls.Primitives.IScrollInfo> interface to support logical scrolling. Logical scrolling is used to scroll to the next element in the logical tree. This is in contrast to physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.StackPanel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+A <xref:System.Windows.Controls.StackPanel> contains a collection of <xref:System.Windows.UIElement> objects, which are in the <xref:System.Windows.Controls.Panel.Children%2A> property.  
+ 
+The default value is stretch for both <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> of content that is contained in a <xref:System.Windows.Controls.StackPanel>.  
+ 
+Panel elements do not receive focus by default. To compel a panel element to receive focus, set the <xref:System.Windows.UIElement.Focusable%2A> property to `true`.  
+ 
+<xref:System.Windows.Controls.StackPanel> implements the <xref:System.Windows.Controls.Primitives.IScrollInfo> interface to support logical scrolling. Logical scrolling is used to scroll to the next element in the logical tree. This is in contrast to physical scrolling, which scrolls content by a defined physical increment in a given direction. If you require physical scrolling instead of logical scrolling, wrap the host <xref:System.Windows.Controls.StackPanel> element in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -92,12 +92,12 @@
           <see langword="true" /> if content can scroll in the horizontal dimension; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not intended to be used in your code. It is exposed publicly to fulfill an interface contract (<xref:System.Windows.Controls.Primitives.IScrollInfo>). Setting this property has no effect.  
-  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+This property is not intended to be used in your code. It is exposed publicly to fulfill an interface contract (<xref:System.Windows.Controls.Primitives.IScrollInfo>). Setting this property has no effect.  
+ 
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,12 +125,12 @@
           <see langword="true" /> if content can scroll in the vertical dimension; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not intended for use in your code. It is exposed publicly to fulfill an interface contract (<xref:System.Windows.Controls.Primitives.IScrollInfo>). Setting this property has no effect.  
-  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+This property is not intended for use in your code. It is exposed publicly to fulfill an interface contract (<xref:System.Windows.Controls.Primitives.IScrollInfo>). Setting this property has no effect.  
+ 
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,10 +152,10 @@
         <value>The <see cref="T:System.Double" /> that represents the vertical size of the extent. The default value is 0.0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value is described in Device Independent Pixels.  
-  
+The returned value is described in Device Independent Pixels.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,10 +178,10 @@
           <see cref="T:System.Double" /> that represents the horizontal size of the extent. The default value is 0.0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value is described in Device Independent Pixels.  
-  
+The returned value is described in Device Independent Pixels.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,10 +203,10 @@
         <value>This property always returns <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property always returns `true` because a <xref:System.Windows.Controls.StackPanel> must have either vertical or horizontal orientation.  
-  
+This property always returns `true` because a <xref:System.Windows.Controls.StackPanel> must have either vertical or horizontal orientation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,10 +233,10 @@
         <value>The <see cref="T:System.Double" /> that represents the horizontal offset of the scrolled content. The default value is 0.0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value is described in Device Independent Pixels.  
-  
+The returned value is described in Device Independent Pixels.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,10 +258,10 @@
         <summary>Scrolls content downward by one logical unit.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,10 +283,10 @@
         <summary>Scrolls content by one logical unit to the left.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -308,10 +308,10 @@
         <summary>Scrolls content by one logical unit to the right.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,10 +333,10 @@
         <summary>Scrolls content by one logical unit upward.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -422,10 +422,10 @@
         <summary>Scrolls content logically downward in response to a click of the mouse wheel button.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -447,10 +447,10 @@
         <summary>Scrolls content logically to the left in response to a click of the mouse wheel button.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -472,10 +472,10 @@
         <summary>Scrolls content logically to the right in response to a click of the mouse wheel button.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -497,10 +497,10 @@
         <summary>Scrolls content logically upward in response to a click of the mouse wheel button.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -522,29 +522,29 @@
         <value>The <see cref="T:System.Windows.Controls.Orientation" /> of child content.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Orientation"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.StackPanel.OrientationProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.StackPanel.Orientation%2A> property to specify how elements within a <xref:System.Windows.Controls.StackPanel> are stacked (one on top of the other or side by side).  
-  
- [!code-xml[StackPanel_snip#StackPanelOrientationExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/StackPanel_snip/CS/OrientationExample.xaml#stackpanelorientationexamplewholepage)]
- <!-- TODO: review snippet reference [!code-xml[StackPanel_snip#StackPanelOrientationExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/StackPanel_snip/XAML/OrientationExample.xaml#stackpanelorientationexamplewholepage)]  -->  
-  
- The screenshot below shows how this example renders.  
-  
- ![StackPanel orientation](~/add/media/layout-stackpanelorientationexample.gif "StackPanel orientation")  
-  
+The following example shows how to use the <xref:System.Windows.Controls.StackPanel.Orientation%2A> property to specify how elements within a <xref:System.Windows.Controls.StackPanel> are stacked (one on top of the other or side by side).  
+ 
+[!code-xml[StackPanel_snip#StackPanelOrientationExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/StackPanel_snip/CS/OrientationExample.xaml#stackpanelorientationexamplewholepage)]
+<!-- TODO: review snippet reference [!code-xml[StackPanel_snip#StackPanelOrientationExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/StackPanel_snip/XAML/OrientationExample.xaml#stackpanelorientationexamplewholepage)]  -->  
+ 
+The screenshot below shows how this example renders.  
+ 
+![StackPanel orientation](~/add/media/layout-stackpanelorientationexample.gif "StackPanel orientation")  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -583,10 +583,10 @@
         <summary>Scrolls content logically downward by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -608,10 +608,10 @@
         <summary>Scrolls content logically to the left by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -633,10 +633,10 @@
         <summary>Scrolls content logically to the right by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -658,10 +658,10 @@
         <summary>Scrolls content logically upward by one page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
-  
+If you require physical scrolling instead of logical scrolling, wrap the <xref:System.Windows.Controls.StackPanel> in a <xref:System.Windows.Controls.ScrollViewer> and set its <xref:System.Windows.Controls.ScrollViewer.CanContentScroll%2A> property to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -688,10 +688,10 @@
         <value>The <see cref="T:System.Windows.Controls.ScrollViewer" /> that owns scrolling for this <see cref="T:System.Windows.Controls.StackPanel" />. This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a <xref:System.Windows.Controls.ScrollViewer> control is the <xref:System.Windows.Controls.StackPanel.ScrollOwner%2A>, physical scrolling is enabled. If a <xref:System.Windows.Controls.StackPanel> is the <xref:System.Windows.Controls.StackPanel.ScrollOwner%2A>, scrolling is logical by child element.  
-  
+If a <xref:System.Windows.Controls.ScrollViewer> control is the <xref:System.Windows.Controls.StackPanel.ScrollOwner%2A>, physical scrolling is enabled. If a <xref:System.Windows.Controls.StackPanel> is the <xref:System.Windows.Controls.StackPanel.ScrollOwner%2A>, scrolling is logical by child element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -760,10 +760,10 @@
         <value>The <see cref="T:System.Double" /> that represents the vertical offset of the scrolled content. The default value is 0.0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value is described in Device Independent Pixels.  
-  
+The returned value is described in Device Independent Pixels.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -785,10 +785,10 @@
         <value>The <see cref="T:System.Double" /> that represents the vertical size of the content's viewport. The default value is 0.0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value is described in Device Independent Pixels.  
-  
+The returned value is described in Device Independent Pixels.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -810,10 +810,10 @@
         <value>The <see cref="T:System.Double" /> that represents the vertical size of the content's viewport. The default value is 0.0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value is described in Device Independent Pixels.  
-  
+The returned value is described in Device Independent Pixels.  
+ 
  ]]></format>
         </remarks>
       </Docs>

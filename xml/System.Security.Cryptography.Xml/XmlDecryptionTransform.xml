@@ -14,14 +14,14 @@
     <summary>Specifies the order of XML Digital Signature and XML Encryption operations when both are performed on the same document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform> class provides a transform that determines the order of XML Digital Signature and XML Encryption operations when both are performed on the same document.  
-  
- Use the <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform> class whenever you need to perform XML encryption and apply an XML digital signature to the same XML document.  
-  
- You must pass an <xref:System.Security.Cryptography.Xml.EncryptedXml> object to the <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform.EncryptedXml%2A> property that contains the necessary key information to decrypt the document.  
-  
+The <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform> class provides a transform that determines the order of XML Digital Signature and XML Encryption operations when both are performed on the same document.  
+ 
+Use the <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform> class whenever you need to perform XML encryption and apply an XML digital signature to the same XML document.  
+ 
+You must pass an <xref:System.Security.Cryptography.Xml.EncryptedXml> object to the <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform.EncryptedXml%2A> property that contains the necessary key information to decrypt the document.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,10 +80,10 @@
         <value>An <see cref="T:System.Security.Cryptography.Xml.EncryptedXml" /> object that contains information about the keys necessary to decrypt an XML document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must pass an <xref:System.Security.Cryptography.Xml.EncryptedXml> object to the <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform.EncryptedXml%2A> property that contains the necessary key information to decrypt the document.  
-  
+You must pass an <xref:System.Security.Cryptography.Xml.EncryptedXml> object to the <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform.EncryptedXml%2A> property that contains the necessary key information to decrypt the document.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,12 +167,12 @@
         <value>An array of valid input types for the current <see cref="T:System.Security.Cryptography.Xml.XmlDecryptionTransform" /> object; you can pass only objects of one of these types to the <see cref="M:System.Security.Cryptography.Xml.XmlDecryptionTransform.LoadInput(System.Object)" /> method of the current <see cref="T:System.Security.Cryptography.Xml.XmlDecryptionTransform" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The array returned by the <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform.InputTypes%2A> property must contain at least one element because every <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform> object must accept at least one type as valid input.  
-  
- An <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform> object typically accepts one or more of the following types as input: <xref:System.IO.Stream>, <xref:System.Xml.XmlDocument>, or <xref:System.Xml.XmlNodeList>.  
-  
+The array returned by the <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform.InputTypes%2A> property must contain at least one element because every <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform> object must accept at least one type as valid input.  
+ 
+An <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform> object typically accepts one or more of the following types as input: <xref:System.IO.Stream>, <xref:System.Xml.XmlDocument>, or <xref:System.Xml.XmlNodeList>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,10 +222,10 @@
         <summary>Parses the specified <see cref="T:System.Xml.XmlNodeList" /> object as transform-specific content of a <see langword="&lt;Transform&gt;" /> element and configures the internal state of the current <see cref="T:System.Security.Cryptography.Xml.XmlDecryptionTransform" /> object to match the <see langword="&lt;Transform&gt;" /> element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to process subelements of a `<Transform>` element.  
-  
+This method is used to process subelements of a `<Transform>` element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The <paramref name="nodeList" /> parameter is <see langword="null" />.  
@@ -263,10 +263,10 @@
         <summary>When overridden in a derived class, loads the specified input into the current <see cref="T:System.Security.Cryptography.Xml.XmlDecryptionTransform" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type of the input object must be one of the types in the <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform.InputTypes%2A> property.  
-  
+The type of the input object must be one of the types in the <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform.InputTypes%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
@@ -289,10 +289,10 @@
         <value>An array of valid output types for the current <see cref="T:System.Security.Cryptography.Xml.XmlDecryptionTransform" /> object; only objects of one of these types are returned from the <see cref="M:System.Security.Cryptography.Xml.XmlDecryptionTransform.GetOutput" /> methods of the current <see cref="T:System.Security.Cryptography.Xml.XmlDecryptionTransform" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The array returned by the <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform.OutputTypes%2A> property must contain at least one element because every transform must generate at least one type as output.  
-  
+The array returned by the <xref:System.Security.Cryptography.Xml.XmlDecryptionTransform.OutputTypes%2A> property must contain at least one element because every transform must generate at least one type as output.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -24,15 +24,15 @@
     <summary>Enables a .NET Framework enumeration to be mapped to a data column.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class lets you map the underlying value in a column to a corresponding enumeration constant name. This lets you define an enumeration that contains descriptive values that correspond to database values, and then use the enumeration constant names instead of the database values when data is displayed.  
+This class lets you map the underlying value in a column to a corresponding enumeration constant name. This lets you define an enumeration that contains descriptive values that correspond to database values, and then use the enumeration constant names instead of the database values when data is displayed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to replace the numeric value of an enumeration with the corresponding declaration.  
-  
+The following example shows how to replace the numeric value of an enumeration with the corresponding declaration.  
+ 
 ```csharp  
 public enum eReorderLvl {  
         zero = 0,  
@@ -51,7 +51,7 @@ public enum eReorderLvl {
         }  
     }  
 ```  
-  
+ 
 ```vb  
 Imports Public Enum eReorderLvl  
     zero = 0  
@@ -71,7 +71,7 @@ Public Class Product
     End Class  
 End Class  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

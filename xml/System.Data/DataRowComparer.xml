@@ -14,14 +14,14 @@
     <summary>Returns a singleton instance of the <see cref="T:System.Data.DataRowComparer`1" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataRowComparer%601> class is used to compare the values of the <xref:System.Data.DataRow> objects and does not compare the object references.  
-  
- This class cannot be directly instantiated.  Instead, the <xref:System.Data.DataRowComparer.Default%2A> property must be used to return a singleton instance of the <xref:System.Data.DataRowComparer%601> class.  
-  
- This class is stateless.  
-  
+The <xref:System.Data.DataRowComparer%601> class is used to compare the values of the <xref:System.Data.DataRow> objects and does not compare the object references.  
+ 
+This class cannot be directly instantiated.  Instead, the <xref:System.Data.DataRowComparer.Default%2A> property must be used to return a singleton instance of the <xref:System.Data.DataRowComparer%601> class.  
+ 
+This class is stateless.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,10 +43,10 @@
         <value>An instance of a <see cref="T:System.Data.DataRowComparer`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only.  
-  
+This property is read-only.  
+ 
  ]]></format>
         </remarks>
       </Docs>

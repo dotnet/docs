@@ -14,17 +14,17 @@
     <summary>Provides data about an aborted workflow instance.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a workflow hosted by a <xref:System.Activities.WorkflowApplication> is aborted, the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler is invoked and the <xref:System.Activities.WorkflowApplication.Completed%2A> handler is not invoked.  
+When a workflow hosted by a <xref:System.Activities.WorkflowApplication> is aborted, the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler is invoked and the <xref:System.Activities.WorkflowApplication.Completed%2A> handler is not invoked.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example inspects the <xref:System.Activities.WorkflowApplicationAbortedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about why workflow was aborted.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#5](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#5)]  
-  
+The following code example inspects the <xref:System.Activities.WorkflowApplicationAbortedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about why workflow was aborted.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#5](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,17 +46,17 @@
         <value>The exception that provides information about why the workflow instance was aborted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a workflow hosted by a <xref:System.Activities.WorkflowApplication> is aborted, the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler is invoked and the <xref:System.Activities.WorkflowApplication.Completed%2A> handler is not invoked.  
+When a workflow hosted by a <xref:System.Activities.WorkflowApplication> is aborted, the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler is invoked and the <xref:System.Activities.WorkflowApplication.Completed%2A> handler is not invoked.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example inspects the <xref:System.Activities.WorkflowApplicationAbortedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about why workflow was aborted.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#5](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#5)]  
-  
+The following code example inspects the <xref:System.Activities.WorkflowApplicationAbortedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about why workflow was aborted.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#5](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Authenticates a <see cref="T:System.IdentityModel.Tokens.KerberosReceiverSecurityToken" /> security token.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IdentityModel.Selectors.KerberosSecurityTokenAuthenticator> class to authenticate <xref:System.IdentityModel.Tokens.KerberosReceiverSecurityToken> security tokens.  
-  
+Use the <xref:System.IdentityModel.Selectors.KerberosSecurityTokenAuthenticator> class to authenticate <xref:System.IdentityModel.Tokens.KerberosReceiverSecurityToken> security tokens.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.KerberosSecurityTokenAuthenticator" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the user is authenticated the claims are added to identify the groups that the Windows user belongs to.  
-  
+When the user is authenticated the claims are added to identify the groups that the Windows user belongs to.  
+ 
  ]]></format>
         </remarks>
       </Docs>

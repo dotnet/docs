@@ -30,12 +30,12 @@
     <summary>Represents an expression that has a binary operator.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following tables summarize the factory methods that can be used to create a <xref:System.Linq.Expressions.BinaryExpression> that has a specific node type, represented by the <xref:System.Linq.Expressions.Expression.NodeType%2A> property. Each table contains information for a specific class of operations such as arithmetic or bitwise.  
-  
+The following tables summarize the factory methods that can be used to create a <xref:System.Linq.Expressions.BinaryExpression> that has a specific node type, represented by the <xref:System.Linq.Expressions.Expression.NodeType%2A> property. Each table contains information for a specific class of operations such as arithmetic or bitwise.  
+ 
 ## Binary Arithmetic Operations  
-  
+ 
 |Node Type|Factory Method|  
 |---------------|--------------------|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.Add%2A>|  
@@ -47,31 +47,31 @@
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.Power%2A>|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.Subtract%2A>|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.SubtractChecked%2A>|  
-  
+ 
 ## Bitwise Operations  
-  
+ 
 |Node Type|Factory Method|  
 |---------------|--------------------|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.And%2A>|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.Or%2A>|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.ExclusiveOr%2A>|  
-  
+ 
 ## Shift Operations  
-  
+ 
 |Node Type|Factory Method|  
 |---------------|--------------------|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.LeftShift%2A>|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.RightShift%2A>|  
-  
+ 
 ## Conditional Boolean Operations  
-  
+ 
 |Node Type|Factory Method|  
 |---------------|--------------------|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.AndAlso%2A>|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.OrElse%2A>|  
-  
+ 
 ## Comparison Operations  
-  
+ 
 |Node Type|Factory Method|  
 |---------------|--------------------|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.Equal%2A>|  
@@ -80,29 +80,29 @@
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.GreaterThan%2A>|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.LessThan%2A>|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.LessThanOrEqual%2A>|  
-  
+ 
 ## Coalescing Operations  
-  
+ 
 |Node Type|Factory Method|  
 |---------------|--------------------|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.Coalesce%2A>|  
-  
+ 
 ## Array Indexing Operations  
-  
+ 
 |Node Type|Factory Method|  
 |---------------|--------------------|  
 |<xref:System.Linq.Expressions.ExpressionType>|<xref:System.Linq.Expressions.Expression.ArrayIndex%2A>|  
+ 
+In addition, the <xref:System.Linq.Expressions.Expression.MakeBinary%2A> methods can also be used to create a <xref:System.Linq.Expressions.BinaryExpression>. These factory methods can be used to create a <xref:System.Linq.Expressions.BinaryExpression> of any node type that represents a binary operation. The parameter of these methods that is of type <xref:System.Linq.Expressions.Expression.NodeType%2A> specifies the desired node type.  
+ 
   
- In addition, the <xref:System.Linq.Expressions.Expression.MakeBinary%2A> methods can also be used to create a <xref:System.Linq.Expressions.BinaryExpression>. These factory methods can be used to create a <xref:System.Linq.Expressions.BinaryExpression> of any node type that represents a binary operation. The parameter of these methods that is of type <xref:System.Linq.Expressions.Expression.NodeType%2A> specifies the desired node type.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Linq.Expressions.BinaryExpression> object that represents the subtraction of one number from another.  
-  
- [!code-csharp[System.Linq.Expressions.Expression#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#8)]
- [!code-vb[System.Linq.Expressions.Expression#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#8)]  
-  
+The following example creates a <xref:System.Linq.Expressions.BinaryExpression> object that represents the subtraction of one number from another.  
+ 
+[!code-csharp[System.Linq.Expressions.Expression#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#8)]
+[!code-vb[System.Linq.Expressions.Expression#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#8)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -139,10 +139,10 @@
         <returns>The result of visiting this node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This default implementation for <xref:System.Linq.Expressions.ExpressionType> nodes calls <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>. Override this method to call into a more specific method on a derived visitor class of the <xref:System.Linq.Expressions.ExpressionVisitor> class. However, it should still support unknown visitors by calling <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>.  
-  
+This default implementation for <xref:System.Linq.Expressions.ExpressionType> nodes calls <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>. Override this method to call into a more specific method on a derived visitor class of the <xref:System.Linq.Expressions.ExpressionVisitor> class. However, it should still support unknown visitors by calling <xref:System.Linq.Expressions.ExpressionVisitor.VisitExtension%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,10 +204,10 @@
         <value>A <see cref="T:System.Linq.Expressions.LambdaExpression" /> that represents a type conversion function.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Linq.Expressions.BinaryExpression.Conversion%2A> property is `null` for any <xref:System.Linq.Expressions.BinaryExpression> whose <xref:System.Linq.Expressions.Expression.NodeType%2A> property is not <xref:System.Linq.Expressions.ExpressionType>.  
-  
+The <xref:System.Linq.Expressions.BinaryExpression.Conversion%2A> property is `null` for any <xref:System.Linq.Expressions.BinaryExpression> whose <xref:System.Linq.Expressions.Expression.NodeType%2A> property is not <xref:System.Linq.Expressions.ExpressionType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -241,10 +241,10 @@
           <see langword="true" /> if the node represents a lifted call; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An operator call is lifted if the operator expects non-nullable operands but nullable operands are passed to it.  
-  
+An operator call is lifted if the operator expects non-nullable operands but nullable operands are passed to it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -278,10 +278,10 @@
           <see langword="true" /> if the operator's return type is lifted to a nullable type; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An operator call is lifted if the operator expects non-nullable operands but nullable operands are passed to it. If the value of <xref:System.Linq.Expressions.BinaryExpression.IsLiftedToNull%2A> is `true`, the operator returns a nullable type, and if a nullable operand evaluates to `null`, the operator returns `null`.  
-  
+An operator call is lifted if the operator expects non-nullable operands but nullable operands are passed to it. If the value of <xref:System.Linq.Expressions.BinaryExpression.IsLiftedToNull%2A> is `true`, the operator returns a nullable type, and if a nullable operand evaluates to `null`, the operator returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -343,10 +343,10 @@
         <value>The <see cref="T:System.Reflection.MethodInfo" /> that represents the implementing method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a <xref:System.Linq.Expressions.BinaryExpression> represents an operation that uses a predefined operator, the <xref:System.Linq.Expressions.BinaryExpression.Method%2A> property is `null`.  
-  
+If a <xref:System.Linq.Expressions.BinaryExpression> represents an operation that uses a predefined operator, the <xref:System.Linq.Expressions.BinaryExpression.Method%2A> property is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -380,12 +380,12 @@
         <returns>The reduced expression.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If CanReduce returns true, this should return a valid expression.  
-  
- This method can return another node which itself must be reduced.  
-  
+If CanReduce returns true, this should return a valid expression.  
+ 
+This method can return another node which itself must be reduced.  
+ 
  ]]></format>
         </remarks>
       </Docs>

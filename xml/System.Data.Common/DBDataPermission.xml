@@ -123,10 +123,10 @@
         <summary>Initializes a new instance of a <see langword="DBDataPermission" /> class with the specified <see cref="T:System.Security.Permissions.PermissionState" /> value, and a value indicating whether a blank password is allowed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Permissions.PermissionState> enumeration takes precedence over the <xref:System.Data.Common.DBDataPermission.AllowBlankPassword%2A> property. Therefore, if you set <xref:System.Data.Common.DBDataPermission.AllowBlankPassword%2A> to `false`, you must also set <xref:System.Security.Permissions.PermissionState> to `None` to prevent a user from making a connection using a blank password.  
-  
+The <xref:System.Security.Permissions.PermissionState> enumeration takes precedence over the <xref:System.Data.Common.DBDataPermission.AllowBlankPassword%2A> property. Therefore, if you set <xref:System.Data.Common.DBDataPermission.AllowBlankPassword%2A> to `false`, you must also set <xref:System.Security.Permissions.PermissionState> to `None` to prevent a user from making a connection using a blank password.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,18 +156,18 @@
         <summary>Adds access for the specified connection string to the existing state of the <see langword="DBDataPermission" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be useful when implementing:  
-  
+This method can be useful when implementing:  
+ 
 -   A .NET framework data provider.  
-  
+ 
 -   An API that must assert for data access permission.  
-  
+ 
 -   An administrative tool or installation program that must modify security policy.  
-  
+ 
 -   When more than one rule is specified, the more restrictive rule is selected.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,10 +191,10 @@
           <see langword="true" /> if a blank password is allowed, otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Permissions.PermissionState> enumeration takes precedence over the <xref:System.Data.Common.DBDataPermission.AllowBlankPassword%2A> property. Therefore, if you set <xref:System.Data.Common.DBDataPermission.AllowBlankPassword%2A> to `false`, you must also set <xref:System.Security.Permissions.PermissionState> to `None` to prevent a user from making a connection using a blank password.  
-  
+The <xref:System.Security.Permissions.PermissionState> enumeration takes precedence over the <xref:System.Data.Common.DBDataPermission.AllowBlankPassword%2A> property. Therefore, if you set <xref:System.Data.Common.DBDataPermission.AllowBlankPassword%2A> to `false`, you must also set <xref:System.Security.Permissions.PermissionState> to `None` to prevent a user from making a connection using a blank password.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,10 +237,10 @@
         <returns>A copy of the current permission object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A copy of a permission object represents the same access to resources as the original permission object.  
-  
+A copy of a permission object represents the same access to resources as the original permission object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,10 +286,10 @@
         <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Custom code that extends security objects needs to implement the `ToXml` and `FromXml` methods to make the objects security encodable.  
-  
+Custom code that extends security objects needs to implement the `ToXml` and `FromXml` methods to make the objects security encodable.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -316,10 +316,10 @@
         <returns>A new permission object that represents the intersection of the current permission object and the specified permission object. This new permission object is a null reference (<see langword="Nothing" /> in Visual Basic) if the intersection is empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The intersection of two permissions is a permission that describes the set of operations they both describe. Only a demand that passes both original permissions will pass the intersection.  
-  
+The intersection of two permissions is a permission that describes the set of operations they both describe. Only a demand that passes both original permissions will pass the intersection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not a null reference (<see langword="Nothing" /> in Visual Basic) and is not an instance of the same class as the current permission object.</exception>
@@ -348,10 +348,10 @@
           <see langword="true" /> if the current permission object is a subset of the specified permission object, otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current permission object is a subset of the specified permission object if the current permission object specifies a set of operations that is wholly contained by the specified permission object. For example, a permission that represents access to C:\example.txt is a subset of a permission that represents access to C:\\. If this method returns `true`, the current permission object represents no more access to the protected resource than does the specified permission object.  
-  
+The current permission object is a subset of the specified permission object if the current permission object specifies a set of operations that is wholly contained by the specified permission object. For example, a permission that represents access to C:\example.txt is a subset of a permission that represents access to C:\\. If this method returns `true`, the current permission object represents no more access to the protected resource than does the specified permission object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is an object that is not of the same type as the current permission object.</exception>
@@ -397,10 +397,10 @@
         <returns>An XML encoding of the security object, including any state information.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Custom code that extends security objects must implement the <xref:System.Data.Common.DBDataPermission.ToXml%2A> and <xref:System.Data.Common.DBDataPermission.FromXml%2A> methods to make the objects security encodable.  
-  
+Custom code that extends security objects must implement the <xref:System.Data.Common.DBDataPermission.ToXml%2A> and <xref:System.Data.Common.DBDataPermission.FromXml%2A> methods to make the objects security encodable.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -427,10 +427,10 @@
         <returns>A new permission object that represents the union of the current permission object and the specified permission object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The result of a call to <xref:System.Data.Common.DBDataPermission.Union%2A> is a permission that represents all the operations permitted by both the current permission object and the specified permission object. Any demand that passes either permission passes their union.  
-  
+The result of a call to <xref:System.Data.Common.DBDataPermission.Union%2A> is a permission that represents all the operations permitted by both the current permission object and the specified permission object. Any demand that passes either permission passes their union.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> object is not the same type as the current permission object.</exception>

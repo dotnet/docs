@@ -23,12 +23,12 @@
     <summary>Serves as the base class for classes that contain HTTP-specific information about an individual HTTP request.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContextBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpContext> class. The <xref:System.Web.HttpContextBase> class enables you to create derived classes that are like the <xref:System.Web.HttpContext> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario you are testing.  
-  
- The <xref:System.Web.HttpContextWrapper> class derives from the <xref:System.Web.HttpContextBase> class. The <xref:System.Web.HttpContextWrapper> class serves as a wrapper for the <xref:System.Web.HttpContext> class. At run time, you typically use an instance of the <xref:System.Web.HttpContextWrapper> class to call members on the <xref:System.Web.HttpContext> object.  
-  
+The <xref:System.Web.HttpContextBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpContext> class. The <xref:System.Web.HttpContextBase> class enables you to create derived classes that are like the <xref:System.Web.HttpContext> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario you are testing.  
+ 
+The <xref:System.Web.HttpContextWrapper> class derives from the <xref:System.Web.HttpContextBase> class. The <xref:System.Web.HttpContextWrapper> class serves as a wrapper for the <xref:System.Web.HttpContext> class. At run time, you typically use an instance of the <xref:System.Web.HttpContextWrapper> class to call members on the <xref:System.Web.HttpContext> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -135,10 +135,10 @@
         <returns>The subscription token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event occurs before the <xref:System.Web.WebSockets.AspNetWebSocket> connection begins.  
-  
+This event occurs before the <xref:System.Web.WebSockets.AspNetWebSocket> connection begins.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,10 +185,10 @@
           <see langword="false" /> if ASP.NET will throw an exception when the asynchronous API is used at a time when it is not expected; otherwise, <see langword="true" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.Web.HttpContext.AllowAsyncDuringSyncStages%2A?displayProperty=fullName>.  
-  
+For more information, see <xref:System.Web.HttpContext.AllowAsyncDuringSyncStages%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -728,10 +728,10 @@
         <summary>When overridden in a derived class, specifies a handler for the request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you set `handler` to `null`, the default handler is used to process the request. You can set `handler` to either an asynchronous handler or to an synchronous handler. The handler must implement the <xref:System.Web.IHttpHandler> interface.  
-  
+If you set `handler` to `null`, the default handler is used to process the request. You can set `handler` to either an asynchronous handler or to an synchronous handler. The handler must implement the <xref:System.Web.IHttpHandler> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">A derived type fails to implement this method.</exception>
@@ -935,10 +935,10 @@
         <summary>When overridden in a derived class, sets the type of session state behavior that is required to support an HTTP request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContextBase.SetSessionStateBehavior%2A> method provides a base method that must be implemented by classes that inherit from this type. ASP.NET implements this method in the <xref:System.Web.HttpContextWrapper> and <xref:System.Web.HttpContext> classes.  
-  
+The <xref:System.Web.HttpContextBase.SetSessionStateBehavior%2A> method provides a base method that must be implemented by classes that inherit from this type. ASP.NET implements this method in the <xref:System.Web.HttpContextWrapper> and <xref:System.Web.HttpContext> classes.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">A derived type fails to implement this method.</exception>
@@ -982,10 +982,10 @@
           <see langword="true" /> if <see cref="M:System.Threading.Thread.Abort" /> will be called when the thread times out; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.Web.HttpContext.ThreadAbortOnTimeout%2A?displayProperty=fullName>.  
-  
+For more information, see <xref:System.Web.HttpContext.ThreadAbortOnTimeout%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

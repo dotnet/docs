@@ -24,19 +24,19 @@
     <summary>Defines a string that identifies a certificate's subject key identifier (SKI). This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There are several ways to identify a certificate: by the hash of the certificate, by the issuer and serial number, and by the subject key identifier (SKI). The SKI provides a unique identification for the certificate's subject and is often used when working with XML digital signing.  
+There are several ways to identify a certificate: by the hash of the certificate, by the issuer and serial number, and by the subject key identifier (SKI). The SKI provides a unique identification for the certificate's subject and is often used when working with XML digital signing.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension> class to display the information.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension> class to display the information.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,14 +65,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension> class to display the information.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates how to open a user’s personal certificate store and display information about each certificate in the store.  This example uses the <xref:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension> class to display the information.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension" /> class using encoded data and a value that identifies whether the extension is critical.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor if the information to create the extension is already in an <xref:System.Security.Cryptography.AsnEncodedData> object.  
-  
+Use this constructor if the information to create the extension is already in an <xref:System.Security.Cryptography.AsnEncodedData> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -207,10 +207,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension" /> class using a string and a value that identifies whether the extension is critical.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The subject key identifier (SKI) can be used to identify the certificate and is often used when working with XML digital signing.  
-  
+The subject key identifier (SKI) can be used to identify the certificate and is often used when working with XML digital signing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -306,10 +306,10 @@
         <value>A string, encoded in hexadecimal format, that represents the subject key identifier (SKI).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The subject key identifier (SKI) can be used to identify the certificate and is often used when working with XML digital signing.  
-  
+The subject key identifier (SKI) can be used to identify the certificate and is often used when working with XML digital signing.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The extension cannot be decoded.</exception>

@@ -14,10 +14,10 @@
     <summary>Represents a XAML reader behavior that loads and returns deferred content.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is not used as a base class by other XAML readers that are implemented by .NET Framework XAML Services. Instead, it is used internally for value-passing by readers such as <xref:System.Xaml.XamlObjectReader>; or it is used as a base class for a technology-specific implementation, such as <xref:System.Windows.TemplateContentLoader> from PresentationFramework.dll.  
-  
+This class is not used as a base class by other XAML readers that are implemented by .NET Framework XAML Services. Instead, it is used internally for value-passing by readers such as <xref:System.Xaml.XamlObjectReader>; or it is used as a base class for a technology-specific implementation, such as <xref:System.Windows.TemplateContentLoader> from PresentationFramework.dll.  
+ 
  ]]></format>
     </remarks>
   </Docs>

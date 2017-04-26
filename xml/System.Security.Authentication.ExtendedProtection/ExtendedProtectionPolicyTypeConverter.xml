@@ -24,10 +24,10 @@
     <summary>The <see cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicyTypeConverter" /> class represents the type converter for extended protection policy used by the server to validate incoming client connections.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicyTypeConverter> class is primarily used internally for XAML serialization of <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> objects, and does not normally need to be used directly by most applications.  
-  
+The <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicyTypeConverter> class is primarily used internally for XAML serialization of <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> objects, and does not normally need to be used directly by most applications.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -114,10 +114,10 @@
         <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the `context` parameter to extract additional information about the environment from which this converter is invoked. This parameter can be `null`, so always check it. Also, properties on the `context` object can return `null`.  
-  
+Use the `context` parameter to extract additional information about the environment from which this converter is invoked. This parameter can be `null`, so always check it. Also, properties on the `context` object can return `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="destinationType" /> parameter is <see langword="null" />.</exception>

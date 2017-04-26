@@ -52,10 +52,10 @@
           <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> on which the presence information has changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> specified by <xref:System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs.PeerEndPoint%2A> is not associated with a <xref:System.Net.PeerToPeer.Collaboration.PeerContact>, this value is `null`.  
-  
+If the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> specified by <xref:System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs.PeerEndPoint%2A> is not associated with a <xref:System.Net.PeerToPeer.Collaboration.PeerContact>, this value is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

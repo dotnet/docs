@@ -14,22 +14,22 @@
     <summary>Represents a compiler error or warning.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.Compiler.CompilerError> represents a compiler error or a warning that has been returned by the compiler.  
-  
+<xref:System.CodeDom.Compiler.CompilerError> represents a compiler error or a warning that has been returned by the compiler.  
+ 
 > [!NOTE]
 >  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about inheritance demands, see  [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example compiles a CodeDOM program graph and provides an example of how to programmatically access CompilerError data.  
-  
- [!code-cpp[Classic CompilerError Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic CompilerError Example/CPP/source.cpp#1)]
- [!code-csharp[Classic CompilerError Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic CompilerError Example/CS/source.cs#1)]
- [!code-vb[Classic CompilerError Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic CompilerError Example/VB/source.vb#1)]  
-  
+The following example compiles a CodeDOM program graph and provides an example of how to programmatically access CompilerError data.  
+ 
+[!code-cpp[Classic CompilerError Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic CompilerError Example/CPP/source.cpp#1)]
+[!code-csharp[Classic CompilerError Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic CompilerError Example/CS/source.cs#1)]
+[!code-vb[Classic CompilerError Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic CompilerError Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for deriving from the <see cref="T:System.CodeDom.Compiler.CompilerError" /> class. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; <see cref="T:System.Security.PermissionSet" />: <see langword="FullTrust" />.</permission>
@@ -93,10 +93,10 @@
         <value>The column number of the source file where the compiler encountered the error.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.CodeDom.Compiler.CompilerError.Column%2A> property can be set to zero for compilers that do not return column information.  
-  
+The <xref:System.CodeDom.Compiler.CompilerError.Column%2A> property can be set to zero for compilers that do not return column information.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
         <value>The error number as a string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.CodeDom.Compiler.CompilerError.ErrorNumber%2A> property can contain a string of any length.  
-  
+The <xref:System.CodeDom.Compiler.CompilerError.ErrorNumber%2A> property can contain a string of any length.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,10 +143,10 @@
         <value>The text of the error message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.CodeDom.Compiler.CompilerError.ErrorText%2A> property can be a string of any length.  
-  
+The <xref:System.CodeDom.Compiler.CompilerError.ErrorText%2A> property can be a string of any length.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,10 +224,10 @@
         <returns>A string representation of the compiler error.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is supported so <xref:System.CodeDom.Compiler.CompilerError> objects can be treated as objects for simplified debugging output.  
-  
+This method is supported so <xref:System.CodeDom.Compiler.CompilerError> objects can be treated as objects for simplified debugging output.  
+ 
  ]]></format>
         </remarks>
       </Docs>

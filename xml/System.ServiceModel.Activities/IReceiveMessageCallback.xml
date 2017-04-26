@@ -11,12 +11,12 @@
     <summary>Implements a callback to be executed when a service message is received by the <see cref="T:System.ServiceModel.Activities.Receive" /> and <see cref="T:System.ServiceModel.Activities.ReceiveParameters" /> activities.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to implement the <xref:System.ServiceModel.Activities.IReceiveMessageCallback> interface to access a message header when a message is received.  
-  
- [!code-csharp[AccessingOperationContext#1](~/samples/snippets/csharp/VS_Snippets_CFX/accessingoperationcontext/cs/receiveinstanceidcallback.cs#1)]  
-  
+The following example shows how to implement the <xref:System.ServiceModel.Activities.IReceiveMessageCallback> interface to access a message header when a message is received.  
+ 
+[!code-csharp[AccessingOperationContext#1](~/samples/snippets/csharp/VS_Snippets_CFX/accessingoperationcontext/cs/receiveinstanceidcallback.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,12 +43,12 @@
         <summary>Executed when a service message is received.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to implement the <xref:System.ServiceModel.Activities.IReceiveMessageCallback> interface to access a message header when a message is received.  
-  
- [!code-csharp[AccessingOperationContext#1](~/samples/snippets/csharp/VS_Snippets_CFX/accessingoperationcontext/cs/receiveinstanceidcallback.cs#1)]  
-  
+The following example shows how to implement the <xref:System.ServiceModel.Activities.IReceiveMessageCallback> interface to access a message header when a message is received.  
+ 
+[!code-csharp[AccessingOperationContext#1](~/samples/snippets/csharp/VS_Snippets_CFX/accessingoperationcontext/cs/receiveinstanceidcallback.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

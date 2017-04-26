@@ -72,10 +72,10 @@
         <summary>Initializes a new instance of <see cref="T:System.Threading.CountdownEvent" /> class with the specified count.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- iI `initialCount` is 0, the event is created in a signaled state.  
-  
+iI `initialCount` is 0, the event is created in a signaled state.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -210,15 +210,15 @@
         <summary>Releases all resources used by the current instance of the <see cref="T:System.Threading.CountdownEvent" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call `Dispose` when you are finished using the <xref:System.Threading.CountdownEvent>. The `Dispose` method leaves the <xref:System.Threading.CountdownEvent> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.CountdownEvent> so the garbage collector can reclaim the memory that the <xref:System.Threading.CountdownEvent> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call `Dispose` when you are finished using the <xref:System.Threading.CountdownEvent>. The `Dispose` method leaves the <xref:System.Threading.CountdownEvent> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.CountdownEvent> so the garbage collector can reclaim the memory that the <xref:System.Threading.CountdownEvent> was occupying.  
+ 
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Threading.CountdownEvent>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Threading.CountdownEvent> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -253,10 +253,10 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Threading.CountdownEvent" />, and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike most of the members of <xref:System.Threading.CountdownEvent>, <xref:System.Threading.CountdownEvent.Dispose%2A> is not thread-safe and may not be used concurrently with other members of this instance.  
-  
+Unlike most of the members of <xref:System.Threading.CountdownEvent>, <xref:System.Threading.CountdownEvent.Dispose%2A> is not thread-safe and may not be used concurrently with other members of this instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -317,10 +317,10 @@
           <see langword="true" /> if the current count is zero; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Threading.CountdownEvent> does not raise an event when the countdown has reached zero. Instead, the <xref:System.Threading.CountdownEvent.CurrentCount%2A> property equals zero, and the <xref:System.Threading.CountdownEvent.IsSet%2A> property equals `true`.  
-  
+The <xref:System.Threading.CountdownEvent> does not raise an event when the countdown has reached zero. Instead, the <xref:System.Threading.CountdownEvent.CurrentCount%2A> property equals zero, and the <xref:System.Threading.CountdownEvent.IsSet%2A> property equals `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -352,10 +352,10 @@
         <summary>Resets the <see cref="P:System.Threading.CountdownEvent.CurrentCount" /> to the value of <see cref="P:System.Threading.CountdownEvent.InitialCount" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike most of the members of <xref:System.Threading.CountdownEvent>, Reset is not thread-safe and may not be used concurrently with other members of this instance.  
-  
+Unlike most of the members of <xref:System.Threading.CountdownEvent>, Reset is not thread-safe and may not be used concurrently with other members of this instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed..</exception>
@@ -391,10 +391,10 @@
         <summary>Resets the <see cref="P:System.Threading.CountdownEvent.InitialCount" /> property to a specified value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method resets <xref:System.Threading.CountdownEvent.InitialCount%2A> for all subsequent accesses of the property on the current instance. Unlike most of the members of <xref:System.Threading.CountdownEvent>, Reset is not thread-safe and may not be used concurrently with other members of this instance.  
-  
+This method resets <xref:System.Threading.CountdownEvent.InitialCount%2A> for all subsequent accesses of the property on the current instance. Unlike most of the members of <xref:System.Threading.CountdownEvent>, Reset is not thread-safe and may not be used concurrently with other members of this instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has alread been disposed.</exception>
@@ -568,10 +568,10 @@
         <summary>Blocks the current thread until the <see cref="T:System.Threading.CountdownEvent" /> is set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The caller of this method blocks indefinitely until the current instance is set. The caller will return immediately if the event is currently in a set state.  
-  
+The caller of this method blocks indefinitely until the current instance is set. The caller will return immediately if the event is currently in a set state.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
@@ -642,10 +642,10 @@
         <summary>Blocks the current thread until the <see cref="T:System.Threading.CountdownEvent" /> is set, while observing a <see cref="T:System.Threading.CancellationToken" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The caller of this method blocks indefinitely until the current instance is set. The caller will return immediately if the event is currently in a set state. If the <xref:System.Threading.CancellationToken> being observed is canceled during the wait operation, an <xref:System.OperationCanceledException> will be thrown.  
-  
+The caller of this method blocks indefinitely until the current instance is set. The caller will return immediately if the event is currently in a set state. If the <xref:System.Threading.CancellationToken> being observed is canceled during the wait operation, an <xref:System.OperationCanceledException> will be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">
@@ -793,10 +793,10 @@
         <value>A <see cref="T:System.Threading.WaitHandle" /> that is used to wait for the event to be set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Threading.CountdownEvent.WaitHandle%2A> should only be used if it's needed for integration with code bases that rely on having a WaitHandle. If all that's needed is to wait for the <xref:System.Threading.CountdownEvent> to be set, the <xref:System.Threading.CountdownEvent.Wait%2A> method should be preferred.  
-  
+<xref:System.Threading.CountdownEvent.WaitHandle%2A> should only be used if it's needed for integration with code bases that rely on having a WaitHandle. If all that's needed is to wait for the <xref:System.Threading.CountdownEvent> to be set, the <xref:System.Threading.CountdownEvent.Wait%2A> method should be preferred.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>

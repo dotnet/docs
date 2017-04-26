@@ -19,23 +19,23 @@
     <summary>The <see langword="ComClassAttribute" /> attribute instructs the compiler to add metadata that allows a class to be exposed as a COM object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use `ComClassAttribute` to simplify the process of exposing COM components from Visual Basic. COM objects are very different from .NET Framework assemblies; without the `ComClassAttribute`, you need to follow a number of steps to generate a COM object from Visual Basic. For classes marked with `ComClassAttribute`, the compiler performs many of these steps automatically.  
-  
+Use `ComClassAttribute` to simplify the process of exposing COM components from Visual Basic. COM objects are very different from .NET Framework assemblies; without the `ComClassAttribute`, you need to follow a number of steps to generate a COM object from Visual Basic. For classes marked with `ComClassAttribute`, the compiler performs many of these steps automatically.  
+ 
 > [!NOTE]
 >  This attribute simplifies the creation of COM objects. To expose a class as a COM object, you must compile the project with the **Register for COM Interop** option selected in the **Build** section of the **Configuration Properties** dialog box.  
-  
+ 
 > [!NOTE]
 >  Although you can also expose a class created with Visual Basic as a COM object for unmanaged code to use, it is not a true COM object. For details, see [COM Interoperability in .NET Framework Applications](~/docs/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- To run this example, create a new **Class Library** application and add the following code to a class module.  
-  
- [!code-vb[VbCnAttributes#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbCnAttributes/VB/Class2.vb#21)]  
-  
+To run this example, create a new **Class Library** application and add the following code to a class module.  
+ 
+[!code-vb[VbCnAttributes#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbCnAttributes/VB/Class2.vb#21)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <summary>Initializes a new instance of the <see langword="ComClassAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the constructor for the `ComClassAttribute` class to set the `ClassID`, `InterfaceID`, or `EventID` properties when applying the `ComClassAttribute` to a class.  
-  
+Use the constructor for the `ComClassAttribute` class to set the `ClassID`, `InterfaceID`, or `EventID` properties when applying the `ComClassAttribute` to a class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,10 +79,10 @@
         <summary>Initializes a new instance of the <see langword="ComClassAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the constructor for the `ComClassAttribute` class to set the `ClassID`, `InterfaceID`, or `EventID` properties when applying the `ComClassAttribute` to a class.  
-  
+Use the constructor for the `ComClassAttribute` class to set the `ClassID`, `InterfaceID`, or `EventID` properties when applying the `ComClassAttribute` to a class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,10 +106,10 @@
         <summary>Initializes a new instance of the <see langword="ComClassAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the constructor for the `ComClassAttribute` class to set the `ClassID`, `InterfaceID`, or `EventID` properties when applying the `ComClassAttribute` to a class.  
-  
+Use the constructor for the `ComClassAttribute` class to set the `ClassID`, `InterfaceID`, or `EventID` properties when applying the `ComClassAttribute` to a class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,10 +135,10 @@
         <summary>Initializes a new instance of the <see langword="ComClassAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the constructor for the `ComClassAttribute` class to set the `ClassID`, `InterfaceID`, or `EventID` properties when applying the `ComClassAttribute` to a class.  
-  
+Use the constructor for the `ComClassAttribute` class to set the `ClassID`, `InterfaceID`, or `EventID` properties when applying the `ComClassAttribute` to a class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,10 +160,10 @@
         <value>Read-only. A string that can be used by the compiler to uniquely identify the class when a COM object is created.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor sets this property when the `ComClassAttribute` is applied to a class.  
-  
+The constructor sets this property when the `ComClassAttribute` is applied to a class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,10 +185,10 @@
         <value>Read only. A string that can be used by the compiler to uniquely identify an event for the class when a COM object is created.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor sets this property when the `ComClassAttribute` is applied to a class.  
-  
+The constructor sets this property when the `ComClassAttribute` is applied to a class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -210,10 +210,10 @@
         <value>Read-only. A string that can be used by the compiler to uniquely identify an interface for the class when a COM object is created.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor sets this property when the `ComClassAttribute` is applied to a class.  
-  
+The constructor sets this property when the `ComClassAttribute` is applied to a class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,10 +235,10 @@
         <value>A <see langword="Boolean" /> value that indicates that the COM interface name shadows another member of the class or base class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Shadowing is when a member uses the same name as another member.  
-  
+Shadowing is when a member uses the same name as another member.  
+ 
  ]]></format>
         </remarks>
       </Docs>

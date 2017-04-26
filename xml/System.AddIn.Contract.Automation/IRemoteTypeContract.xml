@@ -15,16 +15,16 @@
     <summary>Defines a contract that components can use to access type information and invoke members across application domain and process boundaries.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get an <xref:System.AddIn.Contract.Automation.IRemoteTypeContract>, components can call the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract.GetRemoteType%2A> method of an object that implements the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract> interface.  
-  
- To get information about the type of an object, components call the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetTypeData%2A> method.  
-  
- To get information about the members of an object, components call one of the methods that returns information about a particular kind of member. For example, to get information about the events of an object, components can use the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetEvent%2A> or <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetEvents%2A> method.  
-  
- To invoke a member of an object, components use the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.InvokeMember%2A> method.  
-  
+To get an <xref:System.AddIn.Contract.Automation.IRemoteTypeContract>, components can call the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract.GetRemoteType%2A> method of an object that implements the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract> interface.  
+ 
+To get information about the type of an object, components call the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetTypeData%2A> method.  
+ 
+To get information about the members of an object, components call one of the methods that returns information about a particular kind of member. For example, to get information about the events of an object, components can use the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetEvent%2A> or <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetEvents%2A> method.  
+ 
+To invoke a member of an object, components use the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.InvokeMember%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,12 +47,12 @@
         <returns>The canonical name of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The canonical name is a globally unique name, such as a fully qualified type name. Strings in the format \<*assembly name*>, \<*fully qualified type name*> are recommended for managed types. Strings in the format \<*type library name*>, \<*type name*> are recommended for COM types.  
-  
- Do not change the canonical name for a type after the type is published. Changing the canonical name for a type in a future version of a component breaks compatibility between the component and clients that are already using the type.  
-  
+The canonical name is a globally unique name, such as a fully qualified type name. Strings in the format \<*assembly name*>, \<*fully qualified type name*> are recommended for managed types. Strings in the format \<*type library name*>, \<*type name*> are recommended for COM types.  
+ 
+Do not change the canonical name for a type after the type is published. Changing the canonical name for a type in a future version of a component breaks compatibility between the component and clients that are already using the type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,12 +170,12 @@
         <returns>An <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> that represents the interface with the specified canonical name that this <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> implements. <see langword="null" /> if this <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> does not implement an interface with the specified canonical name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A canonical name is a globally unique name, such as a GUID. Strings in the format \<*assembly name*>, \<*fully qualified type name*> are recommended for managed types. Strings in the format \<*type library name*>, \<*type name*> are recommended for COM types.  
-  
- Do not change the canonical name for a type after the type is published. Changing the canonical name for a type in a future version of a component breaks compatibility between the component and clients that are already using the type.  
-  
+A canonical name is a globally unique name, such as a GUID. Strings in the format \<*assembly name*>, \<*fully qualified type name*> are recommended for managed types. Strings in the format \<*type library name*>, \<*type name*> are recommended for COM types.  
+ 
+Do not change the canonical name for a type after the type is published. Changing the canonical name for a type in a future version of a component breaks compatibility between the component and clients that are already using the type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,10 +224,10 @@
         <returns>An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.IContract" /> objects that represent the members of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> that have the specified name and that meet the criteria specified by the <paramref name="memberTypes" /> and <paramref name="bindingFlags" /> parameters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to get a single member, or to get multiple members that have the same name, such as constructor or method overloads.  
-  
+This method can be used to get a single member, or to get multiple members that have the same name, such as constructor or method overloads.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -402,12 +402,12 @@
         <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that represents the return value of the invoked member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `remoteArgModifiers` parameter is used only for components that are written using COM. Each value in the `remoteArgModifiers` parameter indicates whether the corresponding value in the `remoteArgs` parameter is passed by reference. The length of `remoteArgModifiers` should be the same as the length of `remoteArgs`.  
-  
- If you pass `null` for `remoteArgModifiers`, this method uses default logic to determine whether an argument is passed by reference.  
-  
+The `remoteArgModifiers` parameter is used only for components that are written using COM. Each value in the `remoteArgModifiers` parameter indicates whether the corresponding value in the `remoteArgs` parameter is passed by reference. The length of `remoteArgModifiers` should be the same as the length of `remoteArgs`.  
+ 
+If you pass `null` for `remoteArgModifiers`, this method uses default logic to determine whether an argument is passed by reference.  
+ 
  ]]></format>
         </remarks>
       </Docs>

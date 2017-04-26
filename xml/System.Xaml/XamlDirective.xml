@@ -14,37 +14,37 @@
     <summary>Provides the XAML type system identifier for a member if the member is also a XAML directive. XAML readers and XAML writers use the <see cref="T:System.Xaml.XamlDirective" /> identifier during processing of member nodes. The identifier is used when the XAML reader is positioned on a <see cref="F:System.Xaml.XamlNodeType.StartMember" /> and <see cref="P:System.Xaml.XamlMember.IsDirective" /> is <see langword="true" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xaml.XamlDirective> provides expected values for the XAML type system when the member is a XAML directive. By definition, a XAML directive has characteristics that always return the same results for a subset of the <xref:System.Xaml.XamlMember> properties, and the same XAML type system information is reported for all possible XAML directives. The reporting of XAML type system characteristics that are specific to directives is accomplished by internal behavior or through overrides of <xref:System.Xaml.XamlMember> `Lookup*` virtual members in the <xref:System.Xaml.XamlDirective> class.  
-  
- The following list shows the returned results of a XAML directive for <xref:System.Xaml.XamlMember> when the member is actually a <xref:System.Xaml.XamlDirective>:  
-  
+<xref:System.Xaml.XamlDirective> provides expected values for the XAML type system when the member is a XAML directive. By definition, a XAML directive has characteristics that always return the same results for a subset of the <xref:System.Xaml.XamlMember> properties, and the same XAML type system information is reported for all possible XAML directives. The reporting of XAML type system characteristics that are specific to directives is accomplished by internal behavior or through overrides of <xref:System.Xaml.XamlMember> `Lookup*` virtual members in the <xref:System.Xaml.XamlDirective> class.  
+ 
+The following list shows the returned results of a XAML directive for <xref:System.Xaml.XamlMember> when the member is actually a <xref:System.Xaml.XamlDirective>:  
+ 
 -   <xref:System.Xaml.XamlMember.LookupCustomAttributeProvider%2A> is always `null`.  
-  
+ 
 -   <xref:System.Xaml.XamlMember.DeferringLoader%2A> is always `null`.  
-  
+ 
 -   <xref:System.Xaml.XamlMember.DependsOn%2A> is always `null`.  
-  
+ 
 -   <xref:System.Xaml.XamlMember.IsAmbient%2A> is always `false`.  
-  
+ 
 -   <xref:System.Xaml.XamlMember.IsAttachable%2A> is always `false`.  
-  
+ 
 -   <xref:System.Xaml.XamlMember.IsDirective%2A> is always `true`.  
-  
+ 
 -   <xref:System.Xaml.XamlMember.IsEvent%2A> is always `false`.  
-  
+ 
 -   <xref:System.Xaml.XamlMember.IsReadOnly%2A> is always `false`.  
-  
+ 
 -   <xref:System.Xaml.XamlMember.IsReadPublic%2A> is always `true`.  
-  
+ 
 -   <xref:System.Xaml.XamlMember.IsWritePublic%2A> is always `true`.  
-  
- Also, the internal backing for <xref:System.Xaml.XamlMember.DeclaringType%2A> remains unset and returns `null`.  
-  
+ 
+Also, the internal backing for <xref:System.Xaml.XamlMember.DeclaringType%2A> remains unset and returns `null`.  
+ 
 > [!IMPORTANT]
 >  <xref:System.Xaml.XamlDirective> is a <xref:System.Xaml.XamlMember> subclass. As with <xref:System.Xaml.XamlMember>, <xref:System.Xaml.XamlDirective> has security considerations regarding how the XAML type system reports access. See Remarks in <xref:System.Xaml.XamlMember>.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,14 +68,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlDirective" /> class, specifying values for a name and a single XAML namespace. Use this signature only when you want or expect <see cref="P:System.Xaml.XamlMember.IsUnknown" /> to report <see langword="true" /> for the directive.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  This signature of the constructor always generates an identifier for the directive where <xref:System.Xaml.XamlMember.IsUnknown%2A> reports `true` for the XAML type system. If the necessary information is available (the backing type and a text syntax information item for conversion) and you want an identifier that can apply the directive, use the <xref:System.Xaml.XamlDirective.%23ctor%2A?displayProperty=fullName> constructor signature instead.  
-  
- If you use this signature, the <xref:System.Xaml.XamlDirective.AllowedLocation%2A> value for the instance is <xref:System.Xaml.Schema.AllowedMemberLocations>; and the <xref:System.Xaml.XamlMember.Type%2A> value and <xref:System.Xaml.XamlMember.TypeConverter%2A> value are both `null`.  
-  
+ 
+If you use this signature, the <xref:System.Xaml.XamlDirective.AllowedLocation%2A> value for the instance is <xref:System.Xaml.Schema.AllowedMemberLocations>; and the <xref:System.Xaml.XamlMember.Type%2A> value and <xref:System.Xaml.XamlMember.TypeConverter%2A> value are both `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,10 +105,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlDirective" /> class, specifying values for each per-case value of a <see cref="T:System.Xaml.XamlDirective" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must use this constructor to generate a <xref:System.Xaml.XamlDirective> that does not report <xref:System.Xaml.XamlMember.IsUnknown%2A> as `true`.  
-  
+You must use this constructor to generate a <xref:System.Xaml.XamlDirective> that does not report <xref:System.Xaml.XamlMember.IsUnknown%2A> as `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="xamlType" /> parameter is <see langword="null" />.</exception>
@@ -131,12 +131,12 @@
         <value>A value of the enumeration. The default is the enumeration default, which is <see cref="F:System.Xaml.Schema.AllowedMemberLocations.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set this value in the <xref:System.Xaml.XamlDirective.%23ctor%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%2CSystem.Xaml.XamlType%2CSystem.Xaml.Schema.XamlValueConverter%7BSystem.ComponentModel.TypeConverter%7D%2CSystem.Xaml.Schema.AllowedMemberLocations%29> constructor signature. If you construct by using the <xref:System.Xaml.XamlDirective.%23ctor%28System.String%2CSystem.String%29> constructor signature, the <xref:System.Xaml.XamlDirective.AllowedLocation%2A> value for the instance is <xref:System.Xaml.Schema.AllowedMemberLocations>. However, the instance always reports <xref:System.Xaml.XamlMember.IsUnknown%2A> as `true`. This behavior typically affects attempts to write object graphs and also affects other practical uses of a <xref:System.Xaml.XamlMember> value.  
-  
- You typically would not construct a XAML directive case where <xref:System.Xaml.XamlDirective.AllowedLocation%2A> is <xref:System.Xaml.Schema.AllowedMemberLocations?displayProperty=fullName>.  
-  
+You can set this value in the <xref:System.Xaml.XamlDirective.%23ctor%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%2CSystem.Xaml.XamlType%2CSystem.Xaml.Schema.XamlValueConverter%7BSystem.ComponentModel.TypeConverter%7D%2CSystem.Xaml.Schema.AllowedMemberLocations%29> constructor signature. If you construct by using the <xref:System.Xaml.XamlDirective.%23ctor%28System.String%2CSystem.String%29> constructor signature, the <xref:System.Xaml.XamlDirective.AllowedLocation%2A> value for the instance is <xref:System.Xaml.Schema.AllowedMemberLocations>. However, the instance always reports <xref:System.Xaml.XamlMember.IsUnknown%2A> as `true`. This behavior typically affects attempts to write object graphs and also affects other practical uses of a <xref:System.Xaml.XamlMember> value.  
+ 
+You typically would not construct a XAML directive case where <xref:System.Xaml.XamlDirective.AllowedLocation%2A> is <xref:System.Xaml.Schema.AllowedMemberLocations?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,10 +178,10 @@
         <returns>A list of XAML namespace identifiers, as strings.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The XAML namespace identifiers are strings that typically appear in the Uniform Resource Identifier (URI) string form according to the usual conventions for XAML and XML namespaces. If the list contains more than one item, the first item in the set is usually the relevant primary XAML namespace for processing purposes, and the other items are alternates. <xref:System.Xaml.XamlMember.PreferredXamlNamespace%2A?displayProperty=fullName> relies on this ordering.  
-  
+The XAML namespace identifiers are strings that typically appear in the Uniform Resource Identifier (URI) string form according to the usual conventions for XAML and XML namespaces. If the list contains more than one item, the first item in the set is usually the relevant primary XAML namespace for processing purposes, and the other items are alternates. <xref:System.Xaml.XamlMember.PreferredXamlNamespace%2A?displayProperty=fullName> relies on this ordering.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,10 +204,10 @@
         <returns>Always returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because a XAML directive cannot have custom attributes, this implementation always returns `null`. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+Because a XAML directive cannot have custom attributes, this implementation always returns `null`. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,10 +230,10 @@
         <returns>Always returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because a directive cannot have deferred loading, this implementation always returns `null`. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+Because a directive cannot have deferred loading, this implementation always returns `null`. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
         <returns>Always returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because a XAML directive cannot have initialization order, this implementation always returns `null`. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+Because a XAML directive cannot have initialization order, this implementation always returns `null`. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,12 +282,12 @@
         <returns>The <see cref="T:System.Xaml.Schema.XamlMemberInvoker" /> information for this <see cref="T:System.Xaml.XamlMember" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method may be invoked by calls to <xref:System.Xaml.XamlMember.Invoker%2A>.  
-  
- This implementation returns an internal static <xref:System.Xaml.Schema.XamlMemberInvoker> value that is specific to directives in the XAML type system. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+This method may be invoked by calls to <xref:System.Xaml.XamlMember.Invoker%2A>.  
+ 
+This implementation returns an internal static <xref:System.Xaml.Schema.XamlMemberInvoker> value that is specific to directives in the XAML type system. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -310,10 +310,10 @@
         <returns>Always returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because a XAML directive cannot be an ambient type, this implementation always returns `false`. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+Because a XAML directive cannot be an ambient type, this implementation always returns `false`. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -336,10 +336,10 @@
         <returns>Always returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+<xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -362,10 +362,10 @@
         <returns>Always returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By definition, directives are settable. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+By definition, directives are settable. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -388,10 +388,10 @@
         <returns>Always returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+<xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -415,10 +415,10 @@
           <see langword="true" /> if this <see cref="T:System.Xaml.XamlDirective" /> represents a non-resolvable member; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xaml.XamlDirective> implementation only calls base and does nothing more. The base implementation returns the results in this order: the results are based on internal reflection; or the results are based on checking for a null value of the <xref:System.Xaml.XamlMember.UnderlyingMember%2A>. The <xref:System.Xaml.XamlDirective> implementation seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+The <xref:System.Xaml.XamlDirective> implementation only calls base and does nothing more. The base implementation returns the results in this order: the results are based on internal reflection; or the results are based on checking for a null value of the <xref:System.Xaml.XamlMember.UnderlyingMember%2A>. The <xref:System.Xaml.XamlDirective> implementation seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -441,10 +441,10 @@
         <returns>Always returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+<xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -467,10 +467,10 @@
         <returns>Always returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+<xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -493,10 +493,10 @@
         <returns>Always returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Target types are not relevant for directives; therefore, this implementation always returns `null`. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+Target types are not relevant for directives; therefore, this implementation always returns `null`. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -519,12 +519,12 @@
         <returns>The <see cref="T:System.Xaml.XamlType" /> of the type that is used by the member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xaml.XamlDirective> implementation only calls base and does nothing more. The base implementation returns results based either on internal reflection, or checking for a null value of <xref:System.Xaml.XamlMember.UnderlyingMember%2A>, processing in that order. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
- See Remarks in <xref:System.Xaml.XamlMember.LookupType%2A?displayProperty=fullName> for more information about what information <xref:System.Xaml.XamlMember.Type%2A> carries.  
-  
+The <xref:System.Xaml.XamlDirective> implementation only calls base and does nothing more. The base implementation returns results based either on internal reflection, or checking for a null value of <xref:System.Xaml.XamlMember.UnderlyingMember%2A>, processing in that order. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
+See Remarks in <xref:System.Xaml.XamlMember.LookupType%2A?displayProperty=fullName> for more information about what information <xref:System.Xaml.XamlMember.Type%2A> carries.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -547,10 +547,10 @@
         <returns>A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> instance that has <see cref="T:System.ComponentModel.TypeConverter" /> constraint; or <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xaml.XamlDirective> implementation only calls base and does nothing more. See <xref:System.Xaml.XamlMember.LookupTypeConverter%2A?displayProperty=fullName>. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+The <xref:System.Xaml.XamlDirective> implementation only calls base and does nothing more. See <xref:System.Xaml.XamlMember.LookupTypeConverter%2A?displayProperty=fullName>. <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -573,10 +573,10 @@
         <returns>Always returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+<xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -599,10 +599,10 @@
         <returns>Always returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+<xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -625,10 +625,10 @@
         <returns>Always returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
-  
+<xref:System.Xaml.XamlDirective> seals this virtual member; therefore, all <xref:System.Xaml.XamlDirective> types and all predefined XAML directives must use this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -651,10 +651,10 @@
         <returns>A string representation of this <see cref="T:System.Xaml.XamlDirective" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If XAML namespace information is available, this implementation returns a string combination of <xref:System.Xaml.XamlMember.PreferredXamlNamespace%2A> and <xref:System.Xaml.XamlMember.Name%2A>. If XAML namespace information is unavailable, this implementation returns <xref:System.Xaml.XamlMember.Name%2A>.  
-  
+If XAML namespace information is available, this implementation returns a string combination of <xref:System.Xaml.XamlMember.PreferredXamlNamespace%2A> and <xref:System.Xaml.XamlMember.Name%2A>. If XAML namespace information is unavailable, this implementation returns <xref:System.Xaml.XamlMember.Name%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -35,12 +35,12 @@
     <summary>Invokes a Web service through a proxy class, which passes and receives parameters as specified. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -323,10 +323,10 @@
           <see cref="T:System.Type" /> of the proxy used to start the Web service. The default is an empty <see cref="T:System.String" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is set when the activity is in runtime mode a <xref:System.Data.ReadOnlyException> is thrown.  
-  
+If this property is set when the activity is in runtime mode a <xref:System.Data.ReadOnlyException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,10 +373,10 @@
         <value>An identifier that either contains the <see cref="P:System.Workflow.Activities.InvokeWebServiceActivity.SessionID" /> of a previous session or an empty <see cref="T:System.String" /> that indicates that a new session will be used. The default is an empty <see cref="T:System.String" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a previous <xref:System.Workflow.Activities.InvokeWebServiceActivity.SessionID%2A> is used, the session is shared.  
-  
+If a previous <xref:System.Workflow.Activities.InvokeWebServiceActivity.SessionID%2A> is used, the session is shared.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -421,10 +421,10 @@
         <returns>An <see cref="T:System.Workflow.ComponentModel.Compiler.AccessTypes" /> enumeration value that denotes the access level of the property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used at compile time to validate whether the properties are correctly bound to one other. Without this interface this information is inferred directly from property getter/setters.  
-  
+Used at compile time to validate whether the properties are correctly bound to one other. Without this interface this information is inferred directly from property getter/setters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -452,10 +452,10 @@
         <returns>The <see cref="T:System.Type" /> for the property whose name is passed as the <paramref name="propertyName " />parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used at compile time to validate whether the properties are correctly bound to one other.  
-  
+Used at compile time to validate whether the properties are correctly bound to one other.  
+ 
  ]]></format>
         </remarks>
       </Docs>

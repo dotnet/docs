@@ -19,10 +19,10 @@
     <summary>Indicates the MIME type of HTTP request.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The mechanism used to control the serialization format used for a request sent from a client to a data service is the `Content-Type` HTTP header. The default mechanism controlling the format used in a response from a data service is the `Accept` HTTP header. The `Accept` header is used to indicate that the response to the request is limited to a specific set of MIME types. The MIME type returned from parsing the accept header is then used as the response format.  
-  
+The mechanism used to control the serialization format used for a request sent from a client to a data service is the `Content-Type` HTTP header. The default mechanism controlling the format used in a response from a data service is the `Accept` HTTP header. The `Accept` header is used to indicate that the response to the request is limited to a specific set of MIME types. The MIME type returned from parsing the accept header is then used as the response format.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -18,13 +18,13 @@
     <summary>Represents the set of properties of a WMI object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example lists information about the **Win32_OperatingSystem** class using the <xref:System.Management.PropertyData> class. For more information about **Win32_OperatingSystem**, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
- [!code-csharp[wminet_PropertyDataCollection#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_PropertyDataCollection/cs/PropertyDataCollection.cs#1)]
- [!code-vb[wminet_PropertyDataCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_PropertyDataCollection/vb/PropertyDataCollection.vb#1)]  
-  
+The following example lists information about the **Win32_OperatingSystem** class using the <xref:System.Management.PropertyData> class. For more information about **Win32_OperatingSystem**, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
+[!code-csharp[wminet_PropertyDataCollection#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_PropertyDataCollection/cs/PropertyDataCollection.cs#1)]
+[!code-vb[wminet_PropertyDataCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_PropertyDataCollection/vb/PropertyDataCollection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,13 +51,13 @@
         <summary>Adds a new <see cref="T:System.Management.PropertyData" /> with the specified value. The value cannot be null and must be convertible to a Common Information Model (CIM) type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Properties can only be added to class definitions, not to instances. This method is only valid when invoked on a <xref:System.Management.PropertyDataCollection> in a <xref:System.Management.ManagementClass>.  
-  
+Properties can only be added to class definitions, not to instances. This method is only valid when invoked on a <xref:System.Management.PropertyDataCollection> in a <xref:System.Management.ManagementClass>.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,13 +87,13 @@
         <summary>Adds a new <see cref="T:System.Management.PropertyData" /> with no assigned value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Properties can only be added to class definitions, not to instances. This method is only valid when invoked on a <xref:System.Management.PropertyDataCollection> in a <xref:System.Management.ManagementClass>.  
-  
+Properties can only be added to class definitions, not to instances. This method is only valid when invoked on a <xref:System.Management.PropertyDataCollection> in a <xref:System.Management.ManagementClass>.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,13 +122,13 @@
         <summary>Adds a new <see cref="T:System.Management.PropertyData" /> with the specified value and Common Information Model (CIM) type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Properties can only be added to class definitions, not to instances. This method is only valid when invoked on a <xref:System.Management.PropertyDataCollection> in a <xref:System.Management.ManagementClass>.  
-  
+Properties can only be added to class definitions, not to instances. This method is only valid when invoked on a <xref:System.Management.PropertyDataCollection> in a <xref:System.Management.ManagementClass>.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,12 +155,12 @@
         <summary>Copies the <see cref="T:System.Management.PropertyDataCollection" /> into an array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,12 +187,12 @@
         <summary>Copies the <see cref="T:System.Management.PropertyDataCollection" /> to a specialized <see cref="T:System.Management.PropertyData" /> object array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,15 +214,15 @@
         <value>Returns an <see cref="T:System.Int32" /> value representing the number of objects in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- The number of objects in the collection.  
-  
+The number of objects in the collection.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -245,17 +245,17 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can only iterate (as in a Visual Basic .NET `For Each` statement or a C# `For` statement) through a forward-only enumerator one time. The memory containing the instances is released by WMI so that the enumerator cannot be rewound. Therefore, the <xref:System.Management.PropertyDataCollection.Count%2A> method cannot be used since it requires rewinding the enumerator.  
-  
- Forward-only enumerators are generally much faster and use less memory than conventional enumerators, but they do not allow calls to <xref:System.Management.PropertyDataCollection.PropertyDataEnumerator.Reset%2A>.  
-  
- If an enumerator is rewindable, the objects in the collection will be kept available for multiple enumerations.  
-  
+You can only iterate (as in a Visual Basic .NET `For Each` statement or a C# `For` statement) through a forward-only enumerator one time. The memory containing the instances is released by WMI so that the enumerator cannot be rewound. Therefore, the <xref:System.Management.PropertyDataCollection.Count%2A> method cannot be used since it requires rewinding the enumerator.  
+ 
+Forward-only enumerators are generally much faster and use less memory than conventional enumerators, but they do not allow calls to <xref:System.Management.PropertyDataCollection.PropertyDataEnumerator.Reset%2A>.  
+ 
+If an enumerator is rewindable, the objects in the collection will be kept available for multiple enumerations.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -277,15 +277,15 @@
         <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the object is synchronized.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- `true` if the object is synchronized; otherwise, `false`.  
-  
+`true` if the object is synchronized; otherwise, `false`.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,23 +311,23 @@
         <value>Returns a <see cref="T:System.Management.PropertyData" /> containing the data for a specified property in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- A <xref:System.Management.PropertyData>, based on the name specified.  
-  
+A <xref:System.Management.PropertyData>, based on the name specified.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example gets the **Freespace** property from a <xref:System.Management.ManagementClass>.  
-  
- [!code-csharp[wminet_PropertyDataCollection_Item#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_PropertyDataCollection_Item/cs/PropertyDataCollection_Item.cs#1)]
- [!code-vb[wminet_PropertyDataCollection_Item#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_PropertyDataCollection_Item/vb/PropertyDataCollection_Item.vb#1)]  
-  
+The following example gets the **Freespace** property from a <xref:System.Management.ManagementClass>.  
+ 
+[!code-csharp[wminet_PropertyDataCollection_Item#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_PropertyDataCollection_Item/cs/PropertyDataCollection_Item.cs#1)]
+[!code-vb[wminet_PropertyDataCollection_Item#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_PropertyDataCollection_Item/vb/PropertyDataCollection_Item.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -352,13 +352,13 @@
         <summary>Removes a <see cref="T:System.Management.PropertyData" /> from the <see cref="T:System.Management.PropertyDataCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Properties can only be removed from class definitions, not from instances. This method is only valid when invoked on a property collection in a <xref:System.Management.ManagementClass>.  
-  
+Properties can only be removed from class definitions, not from instances. This method is only valid when invoked on a property collection in a <xref:System.Management.ManagementClass>.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -380,15 +380,15 @@
         <value>Returns an <see cref="T:System.Object" /> value containing the object to be used for synchronization.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- The object to be used for synchronization.  
-  
+The object to be used for synchronization.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -411,26 +411,26 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Management.PropertyDataCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [Visual Basic, C#]  
-  
- The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
-  
- <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
-  
- If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
- This method is an O(1) operation.  
-  
+[Visual Basic, C#]  
+ 
+The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+ 
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ 
+<xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+ 
+If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+ 
+This method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

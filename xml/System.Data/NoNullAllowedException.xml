@@ -19,18 +19,18 @@
     <summary>Represents the exception that is thrown when you try to insert a null value into a column where <see cref="P:System.Data.DataColumn.AllowDBNull" /> is set to <see langword="false" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.NoNullAllowedException> is thrown when invoking the following methods or properties when you try to insert a null value into a column where <xref:System.Data.DataColumn.AllowDBNull%2A> is set to `false`.  
-  
+The <xref:System.Data.NoNullAllowedException> is thrown when invoking the following methods or properties when you try to insert a null value into a column where <xref:System.Data.DataColumn.AllowDBNull%2A> is set to `false`.  
+ 
 -   <xref:System.Data.DataRowCollection.Add%2A?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Data.DataRow.EndEdit%2A?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Data.DataRow.ItemArray%2A?displayProperty=fullName>  
-  
+ 
 -   <xref:System.Data.DataTable.LoadDataRow%2A?displayProperty=fullName>  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

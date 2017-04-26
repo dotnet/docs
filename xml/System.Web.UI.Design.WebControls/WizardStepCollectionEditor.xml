@@ -112,10 +112,10 @@
         <returns>An array of <see cref="T:System.Type" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation looks in the collection for the Item property and returns the returning Type of the item. Do not call this directly. Instead, use the <xref:System.ComponentModel.Design.CollectionEditor.NewItemTypes%2A> property of the base class. Use the <xref:System.Web.UI.Design.WebControls.WizardStepCollectionEditor.CreateNewItemTypes%2A> method to override the default implementation.  
-  
+The default implementation looks in the collection for the Item property and returns the returning Type of the item. Do not call this directly. Instead, use the <xref:System.ComponentModel.Design.CollectionEditor.NewItemTypes%2A> property of the base class. Use the <xref:System.Web.UI.Design.WebControls.WizardStepCollectionEditor.CreateNewItemTypes%2A> method to override the default implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

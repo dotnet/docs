@@ -29,51 +29,51 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Ink.Stroke" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection> enables you to perform functions such as hit testing, clipping, and erasing strokes. The <xref:System.Windows.Controls.InkCanvas> control performs many of these functions, but if you need more control than the <xref:System.Windows.Controls.InkCanvas> provides, the <xref:System.Windows.Ink.StrokeCollection> offers more options.  
-  
- The following table lists where to learn about managing digital ink on a custom control.  
-  
+The <xref:System.Windows.Ink.StrokeCollection> enables you to perform functions such as hit testing, clipping, and erasing strokes. The <xref:System.Windows.Controls.InkCanvas> control performs many of these functions, but if you need more control than the <xref:System.Windows.Controls.InkCanvas> provides, the <xref:System.Windows.Ink.StrokeCollection> offers more options.  
+ 
+The following table lists where to learn about managing digital ink on a custom control.  
+ 
 |To do this…|See this article|  
 |-----------------|----------------------|  
 |Create a control that collects digital ink|[Creating an Ink Input Control](~/docs/framework/wpf/advanced/creating-an-ink-input-control.md)|  
 |Create a control that enables the user to select ink|[How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md)|  
 |Create a control that enables the user to point-erase ink|[How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md)|  
-  
+ 
 <a name="xamlAttributeUsage_StrokeCollection"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object StrokeCollection="isfString"/>  
 ```  
-  
+ 
 <a name="xamlObjectElementUsage_StrokeCollection"></a>   
 ## XAML Object Element Usage  
-  
+ 
 ```  
 <object>isfString</object>  
 ```  
-  
+ 
 <a name="xamlValues_StrokeCollection"></a>   
 ## XAML Values  
-  
+ 
 |Term|Definition|  
 |----------|----------------|  
 |`isfString`|A string that represents the stroke in base-64, encoded Ink Serialized Format (ISF).|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to copy the ink in one <xref:System.Windows.Controls.InkCanvas> onto another <xref:System.Windows.Controls.InkCanvas>. This example assumes:  
-  
+The following example demonstrates how to copy the ink in one <xref:System.Windows.Controls.InkCanvas> onto another <xref:System.Windows.Controls.InkCanvas>. This example assumes:  
+ 
 -   There are two <xref:System.Windows.Controls.InkCanvas> objects called `inkCanvas1` and `inkCanvas2`.  
-  
+ 
 -   The <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event has been connected to the event handler.  
-  
- [!code-csharp[StrokeCollectionMethods#21](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#21)]
- [!code-vb[StrokeCollectionMethods#21](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#21)]  
-  
+ 
+[!code-csharp[StrokeCollectionMethods#21](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#21)]
+[!code-vb[StrokeCollectionMethods#21](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#21)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -128,15 +128,15 @@
         <summary>Initializes a <see cref="T:System.Windows.Ink.StrokeCollection" /> from the specified <see cref="T:System.IO.Stream" /> of Ink Serialized Format (ISF).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to save and load a <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
-  
- [!code-csharp[StrokeCollectionMethods#10](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#10)]
- [!code-vb[StrokeCollectionMethods#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#10)]  
+The following example demonstrates how to save and load a <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+ 
+[!code-csharp[StrokeCollectionMethods#10](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#10)]
+[!code-vb[StrokeCollectionMethods#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#10)]  
 [!code-csharp[StrokeCollectionMethods#11](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#11)]
 [!code-vb[StrokeCollectionMethods#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#11)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,22 +161,22 @@
         <summary>Adds the specified strokes to the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.Add%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event.  
+The <xref:System.Windows.Ink.StrokeCollection.Add%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to copy the ink in one <xref:System.Windows.Controls.InkCanvas> onto another <xref:System.Windows.Controls.InkCanvas>. This example assumes:  
-  
+The following example demonstrates how to copy the ink in one <xref:System.Windows.Controls.InkCanvas> onto another <xref:System.Windows.Controls.InkCanvas>. This example assumes:  
+ 
 -   There are two <xref:System.Windows.Controls.InkCanvas> objects called `inkCanvas1` and `inkCanvas2`.  
-  
+ 
 -   The <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event has been connected to the event handler.  
-  
- [!code-csharp[StrokeCollectionMethods#21](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#21)]
- [!code-vb[StrokeCollectionMethods#21](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#21)]  
-  
+ 
+[!code-csharp[StrokeCollectionMethods#21](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#21)]
+[!code-vb[StrokeCollectionMethods#21](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#21)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A <see cref="T:System.Windows.Ink.Stroke" /> in <paramref name="strokes" /> is already a member of the <see cref="T:System.Windows.Ink.StrokeCollection" />.</exception>
@@ -206,18 +206,18 @@
         <summary>Adds a custom property to the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.AddPropertyData%2A> method enables you to add custom properties to a <xref:System.Windows.Ink.StrokeCollection>. You can then include extra information with a <xref:System.Windows.Ink.StrokeCollection>.  
+The <xref:System.Windows.Ink.StrokeCollection.AddPropertyData%2A> method enables you to add custom properties to a <xref:System.Windows.Ink.StrokeCollection>. You can then include extra information with a <xref:System.Windows.Ink.StrokeCollection>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to add and get custom property data. The `AddTimeStamp_Click` method uses the <xref:System.Windows.Ink.StrokeCollection.AddPropertyData%2A> method to add the current time to the <xref:System.Windows.Ink.StrokeCollection>. The `GetTimeStap_Click` method uses the <xref:System.Windows.Ink.StrokeCollection.GetPropertyData%2A> method to retrieve the timestamp from the <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
-  
- [!code-csharp[StrokeCollectionMethods#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#12)]
- [!code-vb[StrokeCollectionMethods#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#12)]  
-  
+The following example demonstrates how to add and get custom property data. The `AddTimeStamp_Click` method uses the <xref:System.Windows.Ink.StrokeCollection.AddPropertyData%2A> method to add the current time to the <xref:System.Windows.Ink.StrokeCollection>. The `GetTimeStap_Click` method uses the <xref:System.Windows.Ink.StrokeCollection.GetPropertyData%2A> method to retrieve the timestamp from the <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+ 
+[!code-csharp[StrokeCollectionMethods#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#12)]
+[!code-vb[StrokeCollectionMethods#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#12)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -266,20 +266,20 @@
         <summary>Removes all strokes in the <see cref="T:System.Windows.Ink.StrokeCollection" /> that are outside the bounds of the specified <see cref="T:System.Drawing.Point" /> array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.Clip%2A> method connects the first and last points in `lassoPoints` to create the lasso.  
+The <xref:System.Windows.Ink.StrokeCollection.Clip%2A> method connects the first and last points in `lassoPoints` to create the lasso.  
+ 
+The <xref:System.Windows.Ink.StrokeCollection.Clip%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it clips.  
+ 
   
- The <xref:System.Windows.Ink.StrokeCollection.Clip%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it clips.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to clip the strokes in a <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
-  
- [!code-csharp[StrokeCollectionMethods#13](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#13)]
- [!code-vb[StrokeCollectionMethods#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#13)]  
-  
+The following example demonstrates how to clip the strokes in a <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+ 
+[!code-csharp[StrokeCollectionMethods#13](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#13)]
+[!code-vb[StrokeCollectionMethods#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,18 +304,18 @@
         <summary>Replaces all strokes that are clipped by the specified rectangle with new strokes that do not extend beyond the specified rectangle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All strokes that are entirely outside the specified rectangle are removed.  
+All strokes that are entirely outside the specified rectangle are removed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to erase the ink that is outside the bounds of a <xref:System.Windows.Rect>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
-  
- [!code-csharp[StrokeCollectionMethods#35](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#35)]
- [!code-vb[StrokeCollectionMethods#35](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#35)]  
-  
+The following example demonstrates how to erase the ink that is outside the bounds of a <xref:System.Windows.Rect>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+ 
+[!code-csharp[StrokeCollectionMethods#35](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#35)]
+[!code-vb[StrokeCollectionMethods#35](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#35)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,22 +338,22 @@
         <returns>A copy of the <see cref="T:System.Windows.Ink.StrokeCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.Clone%2A> method copies each <xref:System.Windows.Ink.Stroke> in the collection and the new <xref:System.Windows.Ink.StrokeCollection> references the new strokes.  
+The <xref:System.Windows.Ink.StrokeCollection.Clone%2A> method copies each <xref:System.Windows.Ink.Stroke> in the collection and the new <xref:System.Windows.Ink.StrokeCollection> references the new strokes.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to copy the ink in one <xref:System.Windows.Controls.InkCanvas> onto another <xref:System.Windows.Controls.InkCanvas>. This example assumes:  
-  
+The following example demonstrates how to copy the ink in one <xref:System.Windows.Controls.InkCanvas> onto another <xref:System.Windows.Controls.InkCanvas>. This example assumes:  
+ 
 -   There are two <xref:System.Windows.Controls.InkCanvas> objects called `inkCanvas1` and `inkCanvas2.`  
-  
+ 
 -   The <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event has been connected to the event handler.  
-  
- [!code-csharp[StrokeCollectionMethods#21](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#21)]
- [!code-vb[StrokeCollectionMethods#21](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#21)]  
-  
+ 
+[!code-csharp[StrokeCollectionMethods#21](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#21)]
+[!code-vb[StrokeCollectionMethods#21](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#21)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -380,13 +380,13 @@
           <see langword="true" /> if the specified custom property identifier is in the <see cref="T:System.Windows.Ink.StrokeCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to check for custom property in a <xref:System.Windows.Ink.StrokeCollection>. If a custom property has been associated with `timestamp`, the example gets that custom property and shows when the <xref:System.Windows.Ink.StrokeCollection> was saved. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
-  
- [!code-csharp[StrokeCollectionMethods#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#12)]
- [!code-vb[StrokeCollectionMethods#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#12)]  
-  
+The following example demonstrates how to check for custom property in a <xref:System.Windows.Ink.StrokeCollection>. If a custom property has been associated with `timestamp`, the example gets that custom property and shows when the <xref:System.Windows.Ink.StrokeCollection> was saved. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+ 
+[!code-csharp[StrokeCollectionMethods#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#12)]
+[!code-vb[StrokeCollectionMethods#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -411,13 +411,13 @@
         <summary>Draws the strokes in the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a custom element that displays a thumbnail view of an <xref:System.Windows.Controls.InkCanvas>. The custom element keeps a reference to an <xref:System.Windows.Controls.InkCanvas> and redraws itself when the <xref:System.Windows.Controls.InkCanvas.StrokeCollected> event occurs.  
-  
- [!code-csharp[StrokeCollectionMethods#33](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window3.xaml.cs#33)]
- [!code-vb[StrokeCollectionMethods#33](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window3.xaml.vb#33)]  
-  
+The following example creates a custom element that displays a thumbnail view of an <xref:System.Windows.Controls.InkCanvas>. The custom element keeps a reference to an <xref:System.Windows.Controls.InkCanvas> and redraws itself when the <xref:System.Windows.Controls.InkCanvas.StrokeCollected> event occurs.  
+ 
+[!code-csharp[StrokeCollectionMethods#33](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window3.xaml.cs#33)]
+[!code-vb[StrokeCollectionMethods#33](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window3.xaml.vb#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -442,22 +442,22 @@
         <summary>Removes the ink that is within the bounds of the specified area.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method connects the first and last points in `lassoPoints` to create the lasso.  
+The <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method connects the first and last points in `lassoPoints` to create the lasso.  
+ 
+The <xref:System.Windows.Ink.StrokeCollection> might contain new strokes after the <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method is called. For example, if the specified area is through the middle of a <xref:System.Windows.Ink.Stroke>, the erase method removes that <xref:System.Windows.Ink.Stroke> and creates two new strokes.  
+ 
+The <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it erases.  
+ 
   
- The <xref:System.Windows.Ink.StrokeCollection> might contain new strokes after the <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method is called. For example, if the specified area is through the middle of a <xref:System.Windows.Ink.Stroke>, the erase method removes that <xref:System.Windows.Ink.Stroke> and creates two new strokes.  
-  
- The <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it erases.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to erase strokes in a <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
-  
- [!code-csharp[StrokeCollectionMethods#2](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#2)]
- [!code-vb[StrokeCollectionMethods#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#2)]  
-  
+The following example demonstrates how to erase strokes in a <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+ 
+[!code-csharp[StrokeCollectionMethods#2](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#2)]
+[!code-vb[StrokeCollectionMethods#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -482,20 +482,20 @@
         <summary>Replaces all strokes that are clipped by the specified rectangle with new strokes that do not enter the bounds of the specified rectangle.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection> might contain new strokes after the <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method is called. For example, if the specified area is through the middle of a <xref:System.Windows.Ink.Stroke>, the erase method removes that <xref:System.Windows.Ink.Stroke> and creates two new strokes.  All strokes that are entirely inside the specified rectangle are removed.  
+The <xref:System.Windows.Ink.StrokeCollection> might contain new strokes after the <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method is called. For example, if the specified area is through the middle of a <xref:System.Windows.Ink.Stroke>, the erase method removes that <xref:System.Windows.Ink.Stroke> and creates two new strokes.  All strokes that are entirely inside the specified rectangle are removed.  
+ 
+The <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it erases.  
+ 
   
- The <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it erases.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to erase the ink within the <xref:System.Windows.Rect>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
-  
- [!code-csharp[StrokeCollectionMethods#34](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#34)]
- [!code-vb[StrokeCollectionMethods#34](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#34)]  
-  
+The following example demonstrates how to erase the ink within the <xref:System.Windows.Rect>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+ 
+[!code-csharp[StrokeCollectionMethods#34](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#34)]
+[!code-vb[StrokeCollectionMethods#34](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#34)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -522,20 +522,20 @@
         <summary>Replaces all strokes that are clipped by the region created by the specified <see cref="T:System.Windows.Ink.StylusShape" /> along the specified path with new Strokes that are not clipped by the region.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection> might contain new strokes after the <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method is called. For example, if `path` intersects the middle of a <xref:System.Windows.Ink.Stroke>, the erase method removes that <xref:System.Windows.Ink.Stroke> and creates two new strokes.  
+The <xref:System.Windows.Ink.StrokeCollection> might contain new strokes after the <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method is called. For example, if `path` intersects the middle of a <xref:System.Windows.Ink.Stroke>, the erase method removes that <xref:System.Windows.Ink.Stroke> and creates two new strokes.  
+ 
+The <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it erases.  
+ 
   
- The <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it erases.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to erase ink along a specific path. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
-  
- [!code-csharp[StrokeCollectionMethods#14](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#14)]
- [!code-vb[StrokeCollectionMethods#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#14)]  
-  
+The following example demonstrates how to erase ink along a specific path. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+ 
+[!code-csharp[StrokeCollectionMethods#14](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#14)]
+[!code-vb[StrokeCollectionMethods#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#14)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -558,18 +558,18 @@
         <returns>A <see cref="T:System.Windows.Rect" /> that contains the bounds of the strokes in the <see cref="T:System.Windows.Ink.StrokeCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.GetBounds%2A> method returns a <xref:System.Windows.Rect> that takes the appearance of the rendered <xref:System.Windows.Ink.Stroke>. For example, if <xref:System.Windows.Ink.Stroke> is 10 display independent pixels (DIP) wide, the <xref:System.Windows.Rect> includes the entire width of the <xref:System.Windows.Ink.Stroke>.  
+The <xref:System.Windows.Ink.StrokeCollection.GetBounds%2A> method returns a <xref:System.Windows.Rect> that takes the appearance of the rendered <xref:System.Windows.Ink.Stroke>. For example, if <xref:System.Windows.Ink.Stroke> is 10 display independent pixels (DIP) wide, the <xref:System.Windows.Rect> includes the entire width of the <xref:System.Windows.Ink.Stroke>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to get the bounds of the <xref:System.Windows.Ink.StrokeCollection> and draw them on the control. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
-  
- [!code-csharp[StrokeCollectionMethods#20](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#20)]
- [!code-vb[StrokeCollectionMethods#20](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#20)]  
-  
+The following example demonstrates how to get the bounds of the <xref:System.Windows.Ink.StrokeCollection> and draw them on the control. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+ 
+[!code-csharp[StrokeCollectionMethods#20](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#20)]
+[!code-vb[StrokeCollectionMethods#20](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#20)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -595,18 +595,18 @@
         <returns>An <see cref="T:System.Windows.Ink.IncrementalLassoHitTester" /> that hit tests the <see cref="T:System.Windows.Ink.StrokeCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.GetIncrementalLassoHitTester%2A> method returns an <xref:System.Windows.Ink.IncrementalLassoHitTester> that considers a <xref:System.Windows.Ink.Stroke> to be "hit" when the lasso path surrounds it. This is useful for implementing features, such as the ability to select a stroke with a lasso tool. The <xref:System.Windows.Controls.InkCanvas> uses an <xref:System.Windows.Ink.IncrementalLassoHitTester> to implement the lasso selection tool.  
+The <xref:System.Windows.Ink.StrokeCollection.GetIncrementalLassoHitTester%2A> method returns an <xref:System.Windows.Ink.IncrementalLassoHitTester> that considers a <xref:System.Windows.Ink.Stroke> to be "hit" when the lasso path surrounds it. This is useful for implementing features, such as the ability to select a stroke with a lasso tool. The <xref:System.Windows.Controls.InkCanvas> uses an <xref:System.Windows.Ink.IncrementalLassoHitTester> to implement the lasso selection tool.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to get an <xref:System.Windows.Ink.IncrementalLassoHitTester> that enables a user to select strokes with a lasso tool. To create a control that enables a user to select ink, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md).  
-  
- [!code-csharp[StrokeCollectionMethods#17](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/InkSelector.cs#17)]
- [!code-vb[StrokeCollectionMethods#17](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/InkSelector.vb#17)]  
-  
+The following example demonstrates how to get an <xref:System.Windows.Ink.IncrementalLassoHitTester> that enables a user to select strokes with a lasso tool. To create a control that enables a user to select ink, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md).  
+ 
+[!code-csharp[StrokeCollectionMethods#17](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/InkSelector.cs#17)]
+[!code-vb[StrokeCollectionMethods#17](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/InkSelector.vb#17)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -632,18 +632,18 @@
         <returns>An <see cref="T:System.Windows.Ink.IncrementalStrokeHitTester" /> that hit tests the <see cref="T:System.Windows.Ink.StrokeCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method returns an <xref:System.Windows.Ink.IncrementalStrokeHitTester> that considers a <xref:System.Windows.Ink.Stroke> to be "hit" when the eraser path intersects it. This is useful for implementing features, such as the ability to erase part of a <xref:System.Windows.Ink.Stroke>. The <xref:System.Windows.Controls.InkCanvas> uses an <xref:System.Windows.Ink.IncrementalStrokeHitTester> when the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode>.  
+The <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method returns an <xref:System.Windows.Ink.IncrementalStrokeHitTester> that considers a <xref:System.Windows.Ink.Stroke> to be "hit" when the eraser path intersects it. This is useful for implementing features, such as the ability to erase part of a <xref:System.Windows.Ink.Stroke>. The <xref:System.Windows.Controls.InkCanvas> uses an <xref:System.Windows.Ink.IncrementalStrokeHitTester> when the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to get an <xref:System.Windows.Ink.IncrementalStrokeHitTester> that can be used to erase part of a <xref:System.Windows.Ink.Stroke>. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
-  
- [!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
- [!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
-  
+The following example demonstrates how to get an <xref:System.Windows.Ink.IncrementalStrokeHitTester> that can be used to erase part of a <xref:System.Windows.Ink.Stroke>. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
+ 
+[!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
+[!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -669,18 +669,18 @@
         <returns>The value of the custom property associated with the specified <see cref="T:System.Guid" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.AddPropertyData%2A> and <xref:System.Windows.Ink.StrokeCollection.GetPropertyData%2A> methods enable you to add custom properties to a <xref:System.Windows.Ink.StrokeCollection>. You can then include extra information with a <xref:System.Windows.Ink.StrokeCollection>.  
+The <xref:System.Windows.Ink.StrokeCollection.AddPropertyData%2A> and <xref:System.Windows.Ink.StrokeCollection.GetPropertyData%2A> methods enable you to add custom properties to a <xref:System.Windows.Ink.StrokeCollection>. You can then include extra information with a <xref:System.Windows.Ink.StrokeCollection>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to add and get custom property data. The `AddTimeStamp_Click` method uses the <xref:System.Windows.Ink.StrokeCollection.AddPropertyData%2A> method to add the current time to the <xref:System.Windows.Ink.StrokeCollection>. The `GetTimeStap_Click` method uses the <xref:System.Windows.Ink.StrokeCollection.GetPropertyData%2A> method to retrieve the timestamp from the <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
-  
- [!code-csharp[StrokeCollectionMethods#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#12)]
- [!code-vb[StrokeCollectionMethods#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#12)]  
-  
+The following example demonstrates how to add and get custom property data. The `AddTimeStamp_Click` method uses the <xref:System.Windows.Ink.StrokeCollection.AddPropertyData%2A> method to add the current time to the <xref:System.Windows.Ink.StrokeCollection>. The `GetTimeStap_Click` method uses the <xref:System.Windows.Ink.StrokeCollection.GetPropertyData%2A> method to retrieve the timestamp from the <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+ 
+[!code-csharp[StrokeCollectionMethods#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#12)]
+[!code-vb[StrokeCollectionMethods#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#12)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -705,13 +705,13 @@
         <returns>An array of type <see cref="T:System.Guid" /> that represent the custom property identifiers.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to get the custom property identifiers from the <xref:System.Windows.Ink.StrokeCollection>.  
-  
- [!code-csharp[StrokeCollectionMethods#27](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#27)]
- [!code-vb[StrokeCollectionMethods#27](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#27)]  
-  
+The following example demonstrates how to get the custom property identifiers from the <xref:System.Windows.Ink.StrokeCollection>.  
+ 
+[!code-csharp[StrokeCollectionMethods#27](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#27)]
+[!code-vb[StrokeCollectionMethods#27](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#27)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -737,13 +737,13 @@
         <returns>A collection of <see cref="T:System.Windows.Ink.Stroke" /> objects that intersect the specified point.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to get the strokes that intersect the specified <xref:System.Windows.Point>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
-  
- [!code-csharp[StrokeCollectionMethods#15](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#15)]
- [!code-vb[StrokeCollectionMethods#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#15)]  
-  
+The following example demonstrates how to get the strokes that intersect the specified <xref:System.Windows.Point>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+ 
+[!code-csharp[StrokeCollectionMethods#15](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#15)]
+[!code-vb[StrokeCollectionMethods#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -771,13 +771,13 @@
         <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that has strokes with at least the specified percentage within the <see cref="T:System.Windows.Point" /> array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to remove all strokes that are at least 80 percent within the specified lasso from a <xref:System.Windows.Ink.StrokeCollection>. This is useful when a custom control enables the user to select ink with a lasso. To create a control that enables a user to select ink with a lasso, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md).  
-  
- [!code-csharp[StrokeCollectionMethods#16](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#16)]
- [!code-vb[StrokeCollectionMethods#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#16)]  
-  
+The following example demonstrates how to remove all strokes that are at least 80 percent within the specified lasso from a <xref:System.Windows.Ink.StrokeCollection>. This is useful when a custom control enables the user to select ink with a lasso. To create a control that enables a user to select ink with a lasso, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md).  
+ 
+[!code-csharp[StrokeCollectionMethods#16](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#16)]
+[!code-vb[StrokeCollectionMethods#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#16)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -815,13 +815,13 @@
         <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> of strokes that intersect with <paramref name="path" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example changes the color of all the strokes that intersect the path that is created by the <xref:System.Windows.Point> array.  This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
-  
- [!code-csharp[StrokeCollectionMethods#37](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#37)]
- [!code-vb[StrokeCollectionMethods#37](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#37)]  
-  
+The following example changes the color of all the strokes that intersect the path that is created by the <xref:System.Windows.Point> array.  This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+ 
+[!code-csharp[StrokeCollectionMethods#37](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#37)]
+[!code-vb[StrokeCollectionMethods#37](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#37)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -849,13 +849,13 @@
         <returns>A collection of <see cref="T:System.Windows.Ink.Stroke" /> objects that intersect the specified point.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to get the strokes that intersect the specified <xref:System.Windows.Point>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
-  
- [!code-csharp[StrokeCollectionMethods#15](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#15)]
- [!code-vb[StrokeCollectionMethods#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#15)]  
-  
+The following example demonstrates how to get the strokes that intersect the specified <xref:System.Windows.Point>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+ 
+[!code-csharp[StrokeCollectionMethods#15](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#15)]
+[!code-vb[StrokeCollectionMethods#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -883,13 +883,13 @@
         <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that has strokes with at least the specified percentage within the <see cref="T:System.Windows.Rect" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example erases the strokes that are at least 50% within the bounds of the <xref:System.Windows.Rect>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
-  
- [!code-csharp[StrokeCollectionMethods#36](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#36)]
- [!code-vb[StrokeCollectionMethods#36](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#36)]  
-  
+The following example erases the strokes that are at least 50% within the bounds of the <xref:System.Windows.Rect>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+ 
+[!code-csharp[StrokeCollectionMethods#36](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#36)]
+[!code-vb[StrokeCollectionMethods#36](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#36)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -915,10 +915,10 @@
         <returns>The index of the stroke.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.IndexOf%2A> method returns -1 if `stroke` is not a member of the <xref:System.Windows.Ink.StrokeCollection>.  
-  
+The <xref:System.Windows.Ink.StrokeCollection.IndexOf%2A> method returns -1 if `stroke` is not a member of the <xref:System.Windows.Ink.StrokeCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -939,18 +939,18 @@
         <summary>Represents the native persistence format for ink data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Ink.StrokeCollection.InkSerializedFormat> field to specify the format of the <xref:System.Windows.Ink.StrokeCollection> when you transfer data, such as when you copy the <xref:System.Windows.Ink.StrokeCollection> to the Clipboard.  
+Use the <xref:System.Windows.Ink.StrokeCollection.InkSerializedFormat> field to specify the format of the <xref:System.Windows.Ink.StrokeCollection> when you transfer data, such as when you copy the <xref:System.Windows.Ink.StrokeCollection> to the Clipboard.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to copy a <xref:System.Windows.Ink.StrokeCollection> to the Clipboard. The example specifies that the <xref:System.Windows.Ink.StrokeCollection> is in Ink Serialized Format (ISF), so that other programs, such as Microsoft Office Word can accept the copied data.  
-  
- [!code-csharp[StrokeCollectionMethods#5](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#5)]
- [!code-vb[StrokeCollectionMethods#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#5)]  
-  
+The following example demonstrates how to copy a <xref:System.Windows.Ink.StrokeCollection> to the Clipboard. The example specifies that the <xref:System.Windows.Ink.StrokeCollection> is in Ink Serialized Format (ISF), so that other programs, such as Microsoft Office Word can accept the copied data.  
+ 
+[!code-csharp[StrokeCollectionMethods#5](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#5)]
+[!code-vb[StrokeCollectionMethods#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1040,12 +1040,12 @@
         <summary>Raises the <see cref="E:System.Windows.Ink.StrokeCollection.StrokesChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate.  
-  
- The <xref:System.Windows.Ink.StrokeCollection.OnStrokesChanged%2A> method also allows derived classes to handle the event without attaching a delegate, which is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate.  
+ 
+The <xref:System.Windows.Ink.StrokeCollection.OnStrokesChanged%2A> method also allows derived classes to handle the event without attaching a delegate, which is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1069,13 +1069,13 @@
         <summary>Occurs when custom property is added or removed from the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to handle the <xref:System.Windows.Ink.StrokeCollection.PropertyDataChanged> event. This example assumes that there is a <xref:System.Guid> called `dateTimeGuid` and the <xref:System.Windows.Ink.StrokeCollection.PropertyDataChanged> event is connected to the event handler defined in this example.  
-  
- [!code-csharp[StrokeCollectionMethods#29](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#29)]
- [!code-vb[StrokeCollectionMethods#29](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#29)]  
-  
+The following example demonstrates how to handle the <xref:System.Windows.Ink.StrokeCollection.PropertyDataChanged> event. This example assumes that there is a <xref:System.Guid> called `dateTimeGuid` and the <xref:System.Windows.Ink.StrokeCollection.PropertyDataChanged> event is connected to the event handler defined in this example.  
+ 
+[!code-csharp[StrokeCollectionMethods#29](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#29)]
+[!code-vb[StrokeCollectionMethods#29](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#29)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1100,18 +1100,18 @@
         <summary>Removes the specified strokes from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.Remove%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it removes.  
+The <xref:System.Windows.Ink.StrokeCollection.Remove%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it removes.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to remove all strokes that are at least 80 percent within the specified lasso from a <xref:System.Windows.Ink.StrokeCollection>. This is useful when a custom control enables the user to select ink with a lasso. To create a control that enables a user to select ink with a lasso, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md).  
-  
- [!code-csharp[StrokeCollectionMethods#16](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#16)]
- [!code-vb[StrokeCollectionMethods#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#16)]  
-  
+The following example demonstrates how to remove all strokes that are at least 80 percent within the specified lasso from a <xref:System.Windows.Ink.StrokeCollection>. This is useful when a custom control enables the user to select ink with a lasso. To create a control that enables a user to select ink with a lasso, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md).  
+ 
+[!code-csharp[StrokeCollectionMethods#16](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#16)]
+[!code-vb[StrokeCollectionMethods#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1157,13 +1157,13 @@
         <summary>Removes the custom property associated with the specified <see cref="T:System.Guid" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to remove a custom property from the <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1` and a <xref:System.Guid> called `timestamp`.  
-  
- [!code-csharp[StrokeCollectionMethods#28](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#28)]
- [!code-vb[StrokeCollectionMethods#28](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#28)]  
-  
+The following example demonstrates how to remove a custom property from the <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1` and a <xref:System.Guid> called `timestamp`.  
+ 
+[!code-csharp[StrokeCollectionMethods#28](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#28)]
+[!code-vb[StrokeCollectionMethods#28](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#28)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1190,18 +1190,18 @@
         <summary>Replaces the specified <see cref="T:System.Windows.Ink.Stroke" /> with the specified <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.Replace%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event.  
+The <xref:System.Windows.Ink.StrokeCollection.Replace%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to replace the selected strokes on an <xref:System.Windows.Controls.InkCanvas> with another <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
-  
- [!code-csharp[StrokeCollectionMethods#7](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#7)]
- [!code-vb[StrokeCollectionMethods#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#7)]  
-  
+The following example demonstrates how to replace the selected strokes on an <xref:System.Windows.Controls.InkCanvas> with another <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+ 
+[!code-csharp[StrokeCollectionMethods#7](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#7)]
+[!code-vb[StrokeCollectionMethods#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1238,18 +1238,18 @@
         <summary>Replaces the specified <see cref="T:System.Windows.Ink.StrokeCollection" /> with a new <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.Replace%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it replaces.  
+The <xref:System.Windows.Ink.StrokeCollection.Replace%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it replaces.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to replace the selected strokes on an <xref:System.Windows.Controls.InkCanvas> with another <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
-  
- [!code-csharp[StrokeCollectionMethods#7](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#7)]
- [!code-vb[StrokeCollectionMethods#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#7)]  
-  
+The following example demonstrates how to replace the selected strokes on an <xref:System.Windows.Controls.InkCanvas> with another <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+ 
+[!code-csharp[StrokeCollectionMethods#7](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#7)]
+[!code-vb[StrokeCollectionMethods#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1288,18 +1288,18 @@
         <summary>Saves the <see cref="T:System.Windows.Ink.StrokeCollection" /> to the specified <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.Save%2A> method saves the <xref:System.Windows.Ink.StrokeCollection> as Ink Serialized Format (ISF).  
+The <xref:System.Windows.Ink.StrokeCollection.Save%2A> method saves the <xref:System.Windows.Ink.StrokeCollection> as Ink Serialized Format (ISF).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to save a <xref:System.Windows.Ink.StrokeCollection> to a file by using the <xref:System.Windows.Ink.StrokeCollection.Save%28System.IO.Stream%2CSystem.Boolean%29> method. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
-  
- [!code-csharp[StrokeCollectionMethods#10](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#10)]
- [!code-vb[StrokeCollectionMethods#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#10)]  
-  
+The following example demonstrates how to save a <xref:System.Windows.Ink.StrokeCollection> to a file by using the <xref:System.Windows.Ink.StrokeCollection.Save%28System.IO.Stream%2CSystem.Boolean%29> method. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+ 
+[!code-csharp[StrokeCollectionMethods#10](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#10)]
+[!code-vb[StrokeCollectionMethods#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1327,18 +1327,18 @@
         <summary>Saves the <see cref="T:System.Windows.Ink.StrokeCollection" /> to the specified <see cref="T:System.IO.Stream" /> and compresses it, when specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.Save%2A> method saves the <xref:System.Windows.Ink.StrokeCollection> as Ink Serialized Format (ISF).  
+The <xref:System.Windows.Ink.StrokeCollection.Save%2A> method saves the <xref:System.Windows.Ink.StrokeCollection> as Ink Serialized Format (ISF).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to save a <xref:System.Windows.Ink.StrokeCollection> to a file by using the <xref:System.Windows.Ink.StrokeCollection.Save%28System.IO.Stream%2CSystem.Boolean%29> method. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
-  
- [!code-csharp[StrokeCollectionMethods#10](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#10)]
- [!code-vb[StrokeCollectionMethods#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#10)]  
-  
+The following example demonstrates how to save a <xref:System.Windows.Ink.StrokeCollection> to a file by using the <xref:System.Windows.Ink.StrokeCollection.Save%28System.IO.Stream%2CSystem.Boolean%29> method. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+ 
+[!code-csharp[StrokeCollectionMethods#10](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#10)]
+[!code-vb[StrokeCollectionMethods#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1382,13 +1382,13 @@
         <summary>Occurs when a <see cref="T:System.Windows.Ink.Stroke" /> in the collection changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example adds the current time as a custom property to each new stroke in the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event handler. The example assumes that the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event is connected to the event handler defined in this example.  
-  
- [!code-csharp[DrawingAttributes#4](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#4)]
- [!code-vb[DrawingAttributes#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#4)]  
-  
+The following example adds the current time as a custom property to each new stroke in the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event handler. The example assumes that the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event is connected to the event handler defined in this example.  
+ 
+[!code-csharp[DrawingAttributes#4](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#4)]
+[!code-vb[DrawingAttributes#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1416,18 +1416,18 @@
         <summary>Modifies each of the <see cref="P:System.Windows.Ink.Stroke.StylusPoints" /> and optionally the <see cref="P:System.Windows.Ink.DrawingAttributes.StylusTipTransform" /> for each stroke in the <see cref="T:System.Windows.Ink.StrokeCollection" /> according to the specified <see cref="T:System.Windows.Media.Matrix" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When `applyToStylusTip` is `true`, the <xref:System.Windows.Ink.StrokeCollection.Transform%2A> method affects the shape of the stylus tip, as well as the position of the strokes. For example, if you rotate a <xref:System.Windows.Ink.StrokeCollection> 90 degrees, the strokes move around an axis and the height and width of the strokes appear to be inverted.  
+When `applyToStylusTip` is `true`, the <xref:System.Windows.Ink.StrokeCollection.Transform%2A> method affects the shape of the stylus tip, as well as the position of the strokes. For example, if you rotate a <xref:System.Windows.Ink.StrokeCollection> 90 degrees, the strokes move around an axis and the height and width of the strokes appear to be inverted.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to move all the strokes on an <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
-  
- [!code-csharp[StrokeCollectionMethods#9](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#9)]
- [!code-vb[StrokeCollectionMethods#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#9)]  
-  
+The following example demonstrates how to move all the strokes on an <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+ 
+[!code-csharp[StrokeCollectionMethods#9](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#9)]
+[!code-vb[StrokeCollectionMethods#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -15,10 +15,10 @@
     <summary>Provides a way for task authors to use a subset of the functionality of the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Build.Framework.IBuildEngine2> extends <xref:Microsoft.Build.Framework.IBuildEngine>, allowing you to build multiple project files in parallel on systems containing multiple processors, or processors with multiple cores.  
-  
+<xref:Microsoft.Build.Framework.IBuildEngine2> extends <xref:Microsoft.Build.Framework.IBuildEngine>, allowing you to build multiple project files in parallel on systems containing multiple processors, or processors with multiple cores.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,12 +53,12 @@
           <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no targets are specified, [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] builds the default targets of the project.  
-  
- Target outputs are returned as <xref:Microsoft.Build.Framework.ITaskItem> arrays indexed by target name.  
-  
+If no targets are specified, [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] builds the default targets of the project.  
+ 
+Target outputs are returned as <xref:Microsoft.Build.Framework.ITaskItem> arrays indexed by target name.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,10 +97,10 @@
           <see langword="True" /> if the build succeeded, <see langword="false" /> if otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Both `targetNames` and `targetOutputs` accept `null` values. If no targets are specified, then the default targets are built. Target outputs are returned as <xref:Microsoft.Build.Framework.ITaskItem> arrays indexed by target name.  
-  
+Both `targetNames` and `targetOutputs` accept `null` values. If no targets are specified, then the default targets are built. Target outputs are returned as <xref:Microsoft.Build.Framework.ITaskItem> arrays indexed by target name.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
           <see langword="true" /> if the system is running in multi-processor mode, <see langword="false" /> otherwise.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The build engine is in single-processor mode (`IsRunningMultipleNodes` = `false`) when it is initialized with the number of CPUs equal to 1 and the build engine is not a child engine. The build engine is in multi-processor mode (`IsRunningMultipleNodes` = `true`) when it is initialized with a number of CPUs greater than 1, or when the build engine is a child engine.  
-  
+The build engine is in single-processor mode (`IsRunningMultipleNodes` = `false`) when it is initialized with the number of CPUs equal to 1 and the build engine is not a child engine. The build engine is in multi-processor mode (`IsRunningMultipleNodes` = `true`) when it is initialized with a number of CPUs greater than 1, or when the build engine is a child engine.  
+ 
  ]]></format>
         </remarks>
       </Docs>

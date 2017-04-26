@@ -28,15 +28,15 @@
     <summary>Represents a set of properties for a message. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a message passes through the channel infrastructure, it passes through a number of logically separate processing entities. For instance, a message that is part of a reliable messaging stream can potentially pass through a <xref:System.ServiceModel.Channels.MessageEncoder>, a transport-level channel provider, the reliable-messaging channel provider, the streaming channel provider or any channel extensions. Sometimes these intermediaries annotate the message with the results of that processing by using the <xref:System.ServiceModel.Channels.MessageProperties> class. A <xref:System.ServiceModel.Channels.MessageProperties> instance is an annotation on a message and is stored as a set of name-to-object mappings in the <xref:System.ServiceModel.Channels.Message.Properties%2A> property of a <xref:System.ServiceModel.Channels.Message> instance.  
-  
+As a message passes through the channel infrastructure, it passes through a number of logically separate processing entities. For instance, a message that is part of a reliable messaging stream can potentially pass through a <xref:System.ServiceModel.Channels.MessageEncoder>, a transport-level channel provider, the reliable-messaging channel provider, the streaming channel provider or any channel extensions. Sometimes these intermediaries annotate the message with the results of that processing by using the <xref:System.ServiceModel.Channels.MessageProperties> class. A <xref:System.ServiceModel.Channels.MessageProperties> instance is an annotation on a message and is stored as a set of name-to-object mappings in the <xref:System.ServiceModel.Channels.Message.Properties%2A> property of a <xref:System.ServiceModel.Channels.Message> instance.  
+ 
 > [!NOTE]
 >  The message properties should be cleared out when the user gets the following error:  
 >   
 >  **The server committed a protocol violation. Section=ResponseBody Detail=Response chunk format is invalid**  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -222,13 +222,13 @@
         <summary>Releases all resources used by the <see cref="T:System.ServiceModel.Channels.MessageProperties" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.ServiceModel.Channels.MessageProperties.Dispose%2A> when you are finished using the <xref:System.ServiceModel.Channels.MessageProperties>. The <xref:System.ServiceModel.Channels.MessageProperties.Dispose%2A> method leaves the <xref:System.ServiceModel.Channels.MessageProperties> in an unusable state. After calling <xref:System.ServiceModel.Channels.MessageProperties.Dispose%2A>, you must release all references to the <xref:System.ServiceModel.Channels.MessageProperties> so the garbage collector can reclaim the memory that the <xref:System.ServiceModel.Channels.MessageProperties> occupied.  
-  
+Call <xref:System.ServiceModel.Channels.MessageProperties.Dispose%2A> when you are finished using the <xref:System.ServiceModel.Channels.MessageProperties>. The <xref:System.ServiceModel.Channels.MessageProperties.Dispose%2A> method leaves the <xref:System.ServiceModel.Channels.MessageProperties> in an unusable state. After calling <xref:System.ServiceModel.Channels.MessageProperties.Dispose%2A>, you must release all references to the <xref:System.ServiceModel.Channels.MessageProperties> so the garbage collector can reclaim the memory that the <xref:System.ServiceModel.Channels.MessageProperties> occupied.  
+ 
 > [!NOTE]
 >  Always call <xref:System.ServiceModel.Channels.MessageProperties.Dispose%2A> before you release your last reference to the <xref:System.ServiceModel.Channels.MessageProperties>. Otherwise, the resources it is using are not freed until the garbage collector calls the <xref:System.ServiceModel.Channels.MessageProperties> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,10 +251,10 @@
         <value>A <see cref="T:System.ServiceModel.Channels.MessageEncoder" /> that is used to write messages to a stream and to read messages from a stream.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property specifies a message encoder that can be used to serialize or deserialize the message instance this <xref:System.ServiceModel.Channels.MessageProperties> instance is attached to.  
-  
+This property specifies a message encoder that can be used to serialize or deserialize the message instance this <xref:System.ServiceModel.Channels.MessageProperties> instance is attached to.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,10 +382,10 @@
         <value>A <see cref="T:System.ServiceModel.Security.SecurityMessageProperty" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- HTTP client authentication results are translated into an instance of <xref:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenTypes.SecurityContext%2A>, which is attached to the message using a <xref:System.ServiceModel.Security.SecurityMessageProperty>. This property can be used by higher layers to implement arbitrary authorization logic.  
-  
+HTTP client authentication results are translated into an instance of <xref:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenTypes.SecurityContext%2A>, which is attached to the message using a <xref:System.ServiceModel.Security.SecurityMessageProperty>. This property can be used by higher layers to implement arbitrary authorization logic.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -585,10 +585,10 @@
         <value>A URI that contains the transport address that is used to send messages.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The transport channel owns the <xref:System.ServiceModel.Channels.MessageProperties.Via%2A> property and it overwrites whatever value you set for the message headers. You do have one opportunity to set the channel's `Via`, which is during the creation of the channel from the channel factory, for example, with <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%28System.ServiceModel.EndpointAddress%2CSystem.Uri%29>.  
-  
+The transport channel owns the <xref:System.ServiceModel.Channels.MessageProperties.Via%2A> property and it overwrites whatever value you set for the message headers. You do have one opportunity to set the channel's `Via`, which is during the creation of the channel from the channel factory, for example, with <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%28System.ServiceModel.EndpointAddress%2CSystem.Uri%29>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

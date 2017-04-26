@@ -11,10 +11,10 @@
     <summary>Defines the contract that class factories must implement to create new <see cref="T:System.Web.IHttpHandler" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A class that implements the <xref:System.Web.IHttpHandlerFactory> interface has no behavior except to dynamically manufacture new instances of classes that implement the <xref:System.Web.IHttpHandler> interface.  
-  
+A class that implements the <xref:System.Web.IHttpHandlerFactory> interface has no behavior except to dynamically manufacture new instances of classes that implement the <xref:System.Web.IHttpHandler> interface.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,21 +46,21 @@
         <returns>A new <see cref="T:System.Web.IHttpHandler" /> object that processes the request.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to create custom handler objects in response to a client request. The example has two parts:  
-  
+The following code example demonstrates how to create custom handler objects in response to a client request. The example has two parts:  
+ 
 -   A handler factory class.  
-  
+ 
 -   A Web.config file excerpt.  
-  
- The first part of the example shows how to create custom handler objects in response to a client request for a page named either abc.aspx or xyz.aspx. The handler factory class named `hwf` creates the appropriate handler object depending on the page requested.  
-  
- [!code-csharp[Classic IHttpHandlerFactory.GetHandler Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic IHttpHandlerFactory.GetHandler Example/CS/source.cs#1)]
- [!code-vb[Classic IHttpHandlerFactory.GetHandler Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic IHttpHandlerFactory.GetHandler Example/VB/source.vb#1)]  
-  
- The second part of the example shows a Web.config file excerpt. To use the above handler factory, add the following lines to the Web.config file.  
-  
+ 
+The first part of the example shows how to create custom handler objects in response to a client request for a page named either abc.aspx or xyz.aspx. The handler factory class named `hwf` creates the appropriate handler object depending on the page requested.  
+ 
+[!code-csharp[Classic IHttpHandlerFactory.GetHandler Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic IHttpHandlerFactory.GetHandler Example/CS/source.cs#1)]
+[!code-vb[Classic IHttpHandlerFactory.GetHandler Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic IHttpHandlerFactory.GetHandler Example/VB/source.vb#1)]  
+ 
+The second part of the example shows a Web.config file excerpt. To use the above handler factory, add the following lines to the Web.config file.  
+ 
 ```  
 <configuration>   
   <system.web>   
@@ -71,7 +71,7 @@
   </system.web>  
 </configuration>   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

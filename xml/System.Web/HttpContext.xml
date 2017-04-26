@@ -18,20 +18,20 @@
     <summary>Encapsulates all HTTP-specific information about an individual HTTP request.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that inherit the <xref:System.Web.IHttpModule> and <xref:System.Web.IHttpHandler> interfaces are provided a reference to an <xref:System.Web.HttpContext> object for the current HTTP request. The object provides access to the intrinsic <xref:System.Web.HttpContext.Request%2A>, <xref:System.Web.HttpContext.Response%2A>, and <xref:System.Web.HttpContext.Server%2A> properties for the request.  
+Classes that inherit the <xref:System.Web.IHttpModule> and <xref:System.Web.IHttpHandler> interfaces are provided a reference to an <xref:System.Web.HttpContext> object for the current HTTP request. The object provides access to the intrinsic <xref:System.Web.HttpContext.Request%2A>, <xref:System.Web.HttpContext.Response%2A>, and <xref:System.Web.HttpContext.Server%2A> properties for the request.  
+ 
   
-   
-  
+ 
 ## Examples  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=192422).  
-  
- The following example demonstrates how to access and display properties of the <xref:System.Web.HttpContext> object. The context of the current HTTP request is accessed by using the <xref:System.Web.UI.Page.Context%2A> property of the <xref:System.Web.UI.Page> object.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpContext#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext/cs/httpcontextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpContext#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpContext/vb/httpcontextvb.aspx#1)]  -->  
-  
+A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=192422).  
+ 
+The following example demonstrates how to access and display properties of the <xref:System.Web.HttpContext> object. The context of the current HTTP request is accessed by using the <xref:System.Web.UI.Page.Context%2A> property of the <xref:System.Web.UI.Page> object.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.HttpContext#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext/cs/httpcontextcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.HttpContext#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpContext/vb/httpcontextvb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -94,10 +94,10 @@
         <summary>Accepts an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> request using the specified user function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method is equivalent to calling the <xref:System.Web.HttpContext.AcceptWebSocketRequest%2A> method overload and passing `null` for the `options` parameter.  
-  
+Calling this method is equivalent to calling the <xref:System.Web.HttpContext.AcceptWebSocketRequest%2A> method overload and passing `null` for the `options` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="userFunc" /> parameter is <see langword="null" />.</exception>
@@ -171,10 +171,10 @@
         <returns>The subscription token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event occurs before the <xref:System.Web.WebSockets.AspNetWebSocket> connection begins.  
-  
+This event occurs before the <xref:System.Web.WebSockets.AspNetWebSocket> connection begins.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="callback" /> parameter is <see langword="null" />.</exception>
@@ -221,10 +221,10 @@
           <see langword="false" /> if ASP.NET will throw an exception when the asynchronous API is used at a time when it is not expected; otherwise, <see langword="true" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this flag is not set to `true`, ASP.NET will throw an exception when it detects the application misusing the async API. This can occur if you try to call an asynchronous method during a part of the request processing pipeline where asynchronous operations are not expected, or if there is still outstanding asynchronous work when an asynchronous module or handler signals completion. This behavior is meant as a safety net to let you know early on if you're writing async code that doesn't fit expected patterns and might have negative side effects.  
-  
+If this flag is not set to `true`, ASP.NET will throw an exception when it detects the application misusing the async API. This can occur if you try to call an asynchronous method during a part of the request processing pipeline where asynchronous operations are not expected, or if there is still outstanding asynchronous work when an asynchronous module or handler signals completion. This behavior is meant as a safety net to let you know early on if you're writing async code that doesn't fit expected patterns and might have negative side effects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,12 +287,12 @@
         <value>An object that contains flags that pertain to asynchronous preload mode.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The first time this property is accessed, the object that contains flags for asynchronous preload mode is loaded from the <xref:System.Web.Configuration.HttpRuntimeSection.AsyncPreloadMode%2A> setting in the configuration file.  
-  
- Although this property can be set programmatically, changing the property value only has effect if the property is set before the `ExecuteRequestHandler` step in the ASP.NET request pipeline.  
-  
+The first time this property is accessed, the object that contains flags for asynchronous preload mode is loaded from the <xref:System.Web.Configuration.HttpRuntimeSection.AsyncPreloadMode%2A> setting in the configuration file.  
+ 
+Although this property can be set programmatically, changing the property value only has effect if the property is set before the `ExecuteRequestHandler` step in the ASP.NET request pipeline.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -314,10 +314,10 @@
         <value>The <see cref="T:System.Web.Caching.Cache" /> for the current application domain.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is one instance of the <xref:System.Web.Caching.Cache> class per application domain. As a result, the <xref:System.Web.Caching.Cache> object that is returned by the <xref:System.Web.HttpContext.Cache%2A> property is the <xref:System.Web.Caching.Cache> object for all requests in the application domain.  
-  
+There is one instance of the <xref:System.Web.Caching.Cache> class per application domain. As a result, the <xref:System.Web.Caching.Cache> object that is returned by the <xref:System.Web.HttpContext.Cache%2A> property is the <xref:System.Web.Caching.Cache> object for all requests in the application domain.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -357,17 +357,17 @@
         <value>The <see cref="T:System.Web.HttpContext" /> instance for the current HTTP request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is a static property of the <xref:System.Web.HttpContext> class. The property stores the <xref:System.Web.HttpContext> instance that applies to the current request. The properties of this instance are the non-static properties of the <xref:System.Web.HttpContext> class.  
+This property is a static property of the <xref:System.Web.HttpContext> class. The property stores the <xref:System.Web.HttpContext> instance that applies to the current request. The properties of this instance are the non-static properties of the <xref:System.Web.HttpContext> class.  
+ 
+You can also use the <xref:System.Web.UI.Page.Context%2A?displayProperty=fullName> property to access the <xref:System.Web.HttpContext> object for the current HTTP request.  
+ 
   
- You can also use the <xref:System.Web.UI.Page.Context%2A?displayProperty=fullName> property to access the <xref:System.Web.HttpContext> object for the current HTTP request.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.HttpContext.Current%2A> property to access the <xref:System.Web.HttpContext.AddError%2A?displayProperty=fullName> and <xref:System.Web.HttpContext.ClearError%2A?displayProperty=fullName> methods and the <xref:System.Web.HttpContext.AllErrors%2A?displayProperty=fullName> property. The example creates three custom exceptions using the <xref:System.Web.HttpContext.AddError%2A> method and uses the <xref:System.Web.HttpContext.AllErrors%2A> property to load these exceptions to an array. It then writes the array to the containing page and uses the <xref:System.Web.HttpContext.ClearError%2A> method to clear all the errors from the <xref:System.Web.UI.Page.Context%2A> property.  
-  
+The following code example uses the <xref:System.Web.HttpContext.Current%2A> property to access the <xref:System.Web.HttpContext.AddError%2A?displayProperty=fullName> and <xref:System.Web.HttpContext.ClearError%2A?displayProperty=fullName> methods and the <xref:System.Web.HttpContext.AllErrors%2A?displayProperty=fullName> property. The example creates three custom exceptions using the <xref:System.Web.HttpContext.AddError%2A> method and uses the <xref:System.Web.HttpContext.AllErrors%2A> property to load these exceptions to an array. It then writes the array to the containing page and uses the <xref:System.Web.HttpContext.ClearError%2A> method to clear all the errors from the <xref:System.Web.UI.Page.Context%2A> property.  
+ 
 ```csharp  
 protected void Page_Load(object sender, EventArgs e)  
 {  
@@ -391,7 +391,7 @@ protected void Page_Load(object sender, EventArgs e)
     context.ClearError();  
 }  
 ```  
-  
+ 
 ```vb  
 Protected Sub Page_Load(sender As Object, e As EventArgs)  
 Dim context As HttpContext = HttpContext.Current  
@@ -414,7 +414,7 @@ context.ClearError()
 End Sub  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -436,10 +436,10 @@ End Sub
         <value>An <see cref="T:System.Web.IHttpHandler" /> that represents the currently executing handler.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The currently executing handler that is referenced by the <xref:System.Web.HttpContext.CurrentHandler%2A> property might be different than the handler that is referenced by the <xref:System.Web.HttpContext.Handler%2A> property. This can occur when another handler was requested by using the <xref:System.Web.HttpServerUtility.Execute%2A> method or the <xref:System.Web.HttpServerUtility.Transfer%2A> method. When the currently executing handler finishes processing, the previously determined handler is restored.  
-  
+The currently executing handler that is referenced by the <xref:System.Web.HttpContext.CurrentHandler%2A> property might be different than the handler that is referenced by the <xref:System.Web.HttpContext.Handler%2A> property. This can occur when another handler was requested by using the <xref:System.Web.HttpServerUtility.Execute%2A> method or the <xref:System.Web.HttpServerUtility.Transfer%2A> method. When the currently executing handler finishes processing, the previously determined handler is restored.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -461,22 +461,22 @@ End Sub
         <value>One of the <see cref="T:System.Web.RequestNotification" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.CurrentNotification%2A> property requires the integrated pipeline mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework version 3.0. When available, the property returns a <xref:System.Web.RequestNotification> value. The value of the <xref:System.Web.HttpContext.CurrentNotification%2A> property indicates which event in the <xref:System.Web.HttpApplication> instance is currently processing the request.  
+The <xref:System.Web.HttpContext.CurrentNotification%2A> property requires the integrated pipeline mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework version 3.0. When available, the property returns a <xref:System.Web.RequestNotification> value. The value of the <xref:System.Web.HttpContext.CurrentNotification%2A> property indicates which event in the <xref:System.Web.HttpApplication> instance is currently processing the request.  
+ 
+The <xref:System.Web.HttpContext.CurrentNotification%2A> property is not intended to be set. Instead, it is set by [!INCLUDE[iisver](~/includes/iisver-md.md)] during the processing of the request in the ASP.NET pipeline. Setting the <xref:System.Web.HttpContext.CurrentNotification%2A> property will result in a compilation error.  
+ 
+<xref:System.Web.HttpContext.CurrentNotification%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
   
- The <xref:System.Web.HttpContext.CurrentNotification%2A> property is not intended to be set. Instead, it is set by [!INCLUDE[iisver](~/includes/iisver-md.md)] during the processing of the request in the ASP.NET pipeline. Setting the <xref:System.Web.HttpContext.CurrentNotification%2A> property will result in a compilation error.  
-  
- <xref:System.Web.HttpContext.CurrentNotification%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.HttpContext.CurrentNotification%2A> property to determine what event of the <xref:System.Web.HttpApplication> object that is handling the current request is being processed. In the example, the event handler handles several events of the <xref:System.Web.HttpApplication> object, and the <xref:System.Web.HttpContext.CurrentNotification%2A> property determines what code is invoked for each event being handled.  
-  
- [!code-csharp[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/CS/App_Code/TestModule.cs#1)]
- [!code-vb[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/VB/App_Code/TestModule.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Web.HttpContext.CurrentNotification%2A> property to determine what event of the <xref:System.Web.HttpApplication> object that is handling the current request is being processed. In the example, the event handler handles several events of the <xref:System.Web.HttpApplication> object, and the <xref:System.Web.HttpContext.CurrentNotification%2A> property determines what code is invoked for each event being handled.  
+ 
+[!code-csharp[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/CS/App_Code/TestModule.cs#1)]
+[!code-vb[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/VB/App_Code/TestModule.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The operation requires integrated pipeline mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework version 3.0.</exception>
@@ -503,10 +503,10 @@ End Sub
         <returns>The subscription token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IDisposable.Dispose%2A> method of the target object is called after both the HTTP part of the request and the <xref:System.Web.WebSockets.AspNetWebSocket> connection have ended. The <xref:System.Web.HttpContext> object is not available for inspection.  
-  
+The <xref:System.IDisposable.Dispose%2A> method of the target object is called after both the HTTP part of the request and the <xref:System.Web.WebSockets.AspNetWebSocket> connection have ended. The <xref:System.Web.HttpContext> object is not available for inspection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -555,10 +555,10 @@ End Sub
         <returns>An object containing configuration information. (Cast the returned configuration section to the appropriate configuration type before use.)</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.GetAppConfig%2A> method has been deprecated. Use the <xref:System.Web.Configuration.WebConfigurationManager.GetWebApplicationSection%2A> method of the <xref:System.Web.Configuration.WebConfigurationManager> class to get configuration information for the current application.  
-  
+The <xref:System.Web.HttpContext.GetAppConfig%2A> method has been deprecated. Use the <xref:System.Web.Configuration.WebConfigurationManager.GetWebApplicationSection%2A> method of the <xref:System.Web.Configuration.WebConfigurationManager> class to get configuration information for the current application.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -589,10 +589,10 @@ End Sub
         <returns>The specified <see cref="T:System.Configuration.ConfigurationSection" />, <see langword="null" /> if the section does not exist, or an internal object if the section is not accessible at run time. (Cast the returned object to the appropriate configuration type before use.)</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.GetConfig%2A> method has been deprecated. Use the <xref:System.Web.HttpContext.GetSection%2A> method to get configuration information for the current HTTP request.  
-  
+The <xref:System.Web.HttpContext.GetConfig%2A> method has been deprecated. Use the <xref:System.Web.HttpContext.GetSection%2A> method to get configuration information for the current HTTP request.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -620,13 +620,13 @@ End Sub
         <returns>An <see cref="T:System.Object" /> that represents the requested application-level resource object; otherwise, null if a resource object is not found or if a resource object is found but it does not have the requested property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> method returns a global resource by using the culture that is specified in the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property.  
-  
+The <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> method returns a global resource by using the culture that is specified in the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property.  
+ 
 > [!NOTE]
 >  In some editing environments, such as [!INCLUDE[vwprvw](~/includes/vwprvw-md.md)], the editor might throw a design-time <xref:System.Resources.MissingManifestResourceException> exception if you use a period (.) in the global resource-key name. However, this does not affect your ability to edit or save the file, and you can ignore the error.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Resources.MissingManifestResourceException">A resource object with the specified <paramref name="classKey" /> parameter was not found.  
@@ -661,13 +661,13 @@ End Sub
         <returns>An <see cref="T:System.Object" /> that represents the requested application-level resource object, which is localized for the specified culture; otherwise, <see langword="null" /> if a resource object is not found or if a resource object is found but it does not have the requested property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Globalization.CultureInfo> object represents the culture for which the resource was localized. If the resource is not localized for this culture, the lookup will follow a fallback process to locate an appropriate resource. For more information, see [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
-  
+The <xref:System.Globalization.CultureInfo> object represents the culture for which the resource was localized. If the resource is not localized for this culture, the lookup will follow a fallback process to locate an appropriate resource. For more information, see [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
+ 
 > [!NOTE]
 >  In some editing environments, such as Visual Web Developer, the editor might throw a design-time <xref:System.Resources.MissingManifestResourceException> exception if you use a period (.) in the global resource-key name. However, this does not affect your ability to edit or save the file, and you can ignore the error.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Resources.MissingManifestResourceException">A resource object for which the specified <paramref name="classKey" /> parameter was not found.  
@@ -700,10 +700,10 @@ End Sub
         <returns>An <see cref="T:System.Object" /> that represents the requested page-level resource object; otherwise, <see langword="null" /> if a matching resource object is found but not a <paramref name="resourceKey" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.GetLocalResourceObject%2A> method returns a local resource by using the culture that is specified in the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property.  
-  
+The <xref:System.Web.HttpContext.GetLocalResourceObject%2A> method returns a local resource by using the culture that is specified in the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Resources.MissingManifestResourceException">A resource object was not found for the specified <paramref name="virtualPath" /> parameter.</exception>
@@ -736,10 +736,10 @@ End Sub
         <returns>An <see cref="T:System.Object" /> that represents the requested local resource object, which is localized for the specified culture; otherwise <see langword="null" /> if a matching resource object is found but not a <paramref name="resourceKey" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the resource is not localized for this culture, the lookup will follow a fallback process to locate an appropriate resource. For more information, see [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
-  
+If the resource is not localized for this culture, the lookup will follow a fallback process to locate an appropriate resource. For more information, see [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Resources.MissingManifestResourceException">A resource object was not found for the specified <paramref name="virtualPath" /> Parameter.</exception>
@@ -786,12 +786,12 @@ End Sub
         <value>An <see cref="T:System.Web.IHttpHandler" /> responsible for processing the HTTP request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.Handler%2A> property contains a reference to the handler that processes the HTTP request. The handler can be specified by using the  element, or by using a custom handler defined in user code. For more information about handlers, see [HTTP Handlers and HTTP Modules Overview](http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b).  
-  
- The reference to the <xref:System.Web.HttpContext.Handler%2A> property will remain the same even after the current page has been changed by a server-side method, such as the <xref:System.Web.HttpServerUtility.Execute%2A> method or the <xref:System.Web.HttpServerUtility.Transfer%2A> method.  
-  
+The <xref:System.Web.HttpContext.Handler%2A> property contains a reference to the handler that processes the HTTP request. The handler can be specified by using the  element, or by using a custom handler defined in user code. For more information about handlers, see [HTTP Handlers and HTTP Modules Overview](http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b).  
+ 
+The reference to the <xref:System.Web.HttpContext.Handler%2A> property will remain the same even after the current page has been changed by a server-side method, such as the <xref:System.Web.HttpServerUtility.Execute%2A> method or the <xref:System.Web.HttpServerUtility.Transfer%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -852,24 +852,24 @@ End Sub
           <see langword="true" /> if custom errors are enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.IsPostNotification%2A> property is only supported with the integrated mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework 3.0. When available, the property returns a Boolean value that indicates whether an event in the <xref:System.Web.HttpApplication> object has finished processing.  
+The <xref:System.Web.HttpContext.IsPostNotification%2A> property is only supported with the integrated mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework 3.0. When available, the property returns a Boolean value that indicates whether an event in the <xref:System.Web.HttpApplication> object has finished processing.  
+ 
+The <xref:System.Web.HttpContext.IsPostNotification%2A> property is not intended to be set. Instead, it is provided by [!INCLUDE[iisver](~/includes/iisver-md.md)] to the ASP.NET runtime for each notification. Setting the <xref:System.Web.HttpContext.IsPostNotification%2A> property will result in a compilation error.  
+ 
+In scenarios where multiple events of the <xref:System.Web.HttpApplication> object are handled by one event handler, you can use the <xref:System.Web.HttpContext.IsPostNotification%2A> property in combination with the <xref:System.Web.RequestNotification> enumeration to precisely determine where in the application lifecycle the current request is.  
+ 
+<xref:System.Web.HttpContext.IsPostNotification%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
   
- The <xref:System.Web.HttpContext.IsPostNotification%2A> property is not intended to be set. Instead, it is provided by [!INCLUDE[iisver](~/includes/iisver-md.md)] to the ASP.NET runtime for each notification. Setting the <xref:System.Web.HttpContext.IsPostNotification%2A> property will result in a compilation error.  
-  
- In scenarios where multiple events of the <xref:System.Web.HttpApplication> object are handled by one event handler, you can use the <xref:System.Web.HttpContext.IsPostNotification%2A> property in combination with the <xref:System.Web.RequestNotification> enumeration to precisely determine where in the application lifecycle the current request is.  
-  
- <xref:System.Web.HttpContext.IsPostNotification%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.HttpContext.IsPostNotification%2A> property to determine when an event of the <xref:System.Web.HttpApplication> object has finished processing all the associated event handlers. The custom event handler in this example handles several events of the <xref:System.Web.HttpApplication> object, and the <xref:System.Web.HttpContext.IsPostNotification%2A> property is used to determine what code is invoked after a specific event is handled.  
-  
- [!code-csharp[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/CS/App_Code/TestModule.cs#1)]
- [!code-vb[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/VB/App_Code/TestModule.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Web.HttpContext.IsPostNotification%2A> property to determine when an event of the <xref:System.Web.HttpApplication> object has finished processing all the associated event handlers. The custom event handler in this example handles several events of the <xref:System.Web.HttpApplication> object, and the <xref:System.Web.HttpContext.IsPostNotification%2A> property is used to determine what code is invoked after a specific event is handled.  
+ 
+[!code-csharp[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/CS/App_Code/TestModule.cs#1)]
+[!code-vb[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/VB/App_Code/TestModule.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The operation requires the integrated pipeline mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework 3.0.</exception>
@@ -893,10 +893,10 @@ End Sub
           <see langword="true" /> if the request is an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> request; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `true` if the request contains the initial <xref:System.Web.WebSockets.AspNetWebSocket> handshake and the `WebSocket` module of IIS is active.  
-  
+This method returns `true` if the request contains the initial <xref:System.Web.WebSockets.AspNetWebSocket> handshake and the `WebSocket` module of IIS is active.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -973,10 +973,10 @@ End Sub
         <value>An <see cref="T:System.Web.IHttpHandler" /> instance, or <see langword="null" /> if no previous handler was found.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.PreviousHandler%2A> property corresponds to the last handler before the current request was executed.  
-  
+The <xref:System.Web.HttpContext.PreviousHandler%2A> property corresponds to the last handler before the current request was executed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -998,10 +998,10 @@ End Sub
         <value>A <see cref="T:System.Web.Profile.ProfileBase" /> if the application configuration file contains a definition for the profile's properties; otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.HttpContext.Profile%2A> property is used for persistent storage of structured data using a type-safe API. When a <xref:System.Web.HttpContext.Profile%2A> property is accessed but no value is present, an empty instance is returned; `null` is not returned.  
-  
+A <xref:System.Web.HttpContext.Profile%2A> property is used for persistent storage of structured data using a type-safe API. When a <xref:System.Web.HttpContext.Profile%2A> property is accessed but no value is present, an empty instance is returned; `null` is not returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1026,10 +1026,10 @@ End Sub
         <summary>Enables you to specify a handler for the request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you set `handler` to `null`, the default handler is used to process the request. You can set `handler` to either an asynchronous handler or to an synchronous handler. The handler must implement the <xref:System.Web.IHttpHandler> interface.  
-  
+If you set `handler` to `null`, the default handler is used to process the request. You can set `handler` to either an asynchronous handler or to an synchronous handler. The handler must implement the <xref:System.Web.IHttpHandler> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.HttpContext.RemapHandler(System.Web.IHttpHandler)" /> method was called after the <see cref="E:System.Web.HttpApplication.MapRequestHandler" /> event occurred.</exception>
@@ -1052,13 +1052,13 @@ End Sub
         <value>The <see cref="T:System.Web.HttpRequest" /> for the current HTTP request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.Request%2A> property provides programmatic access to the properties and methods of the <xref:System.Web.HttpRequest> class. Because ASP.NET pages contain a default reference to the <xref:System.Web> namespace (which contains the <xref:System.Web.HttpContext> class), you can reference the members of <xref:System.Web.HttpRequest> on an .aspx page without using the fully qualified class reference to <xref:System.Web.HttpContext>. For example, you can use `Request.Browser` to get the capabilities of the client browser. However, if you want to use the members of <xref:System.Web.HttpRequest> from an ASP.NET code-behind module, you must include a reference to the <xref:System.Web> namespace in the module and a fully qualified reference to both the currently active request/response context and the class in <xref:System.Web> that you want to use. For example, in a code-behind page you must specify the fully qualified name `HttpContext.Current.Request.Browser`.  
-  
+The <xref:System.Web.HttpContext.Request%2A> property provides programmatic access to the properties and methods of the <xref:System.Web.HttpRequest> class. Because ASP.NET pages contain a default reference to the <xref:System.Web> namespace (which contains the <xref:System.Web.HttpContext> class), you can reference the members of <xref:System.Web.HttpRequest> on an .aspx page without using the fully qualified class reference to <xref:System.Web.HttpContext>. For example, you can use `Request.Browser` to get the capabilities of the client browser. However, if you want to use the members of <xref:System.Web.HttpRequest> from an ASP.NET code-behind module, you must include a reference to the <xref:System.Web> namespace in the module and a fully qualified reference to both the currently active request/response context and the class in <xref:System.Web> that you want to use. For example, in a code-behind page you must specify the fully qualified name `HttpContext.Current.Request.Browser`.  
+ 
 > [!NOTE]
 >  ASP.NET will throw an exception if you try to use this property when the <xref:System.Web.HttpRequest> object is not available. For example, this would be true in the Application_Start method of the Global.asax file, or in a method that is called from the Application_Start method. At that time no HTTP request has been created yet.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The Web application is running under IIS 7 in Integrated mode.</exception>
@@ -1081,10 +1081,10 @@ End Sub
         <value>The <see cref="T:System.Web.HttpResponse" /> for the current HTTP response.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.Response%2A> property provides programmatic access to the properties and methods of the <xref:System.Web.HttpResponse> class. Because ASP.NET pages contain a default reference to the <xref:System.Web> namespace (which contains the <xref:System.Web.HttpContext> class), you can reference the members of <xref:System.Web.HttpContext> on an .aspx page without using the fully qualified class reference to <xref:System.Web.HttpContext>. For example, you can use `Response.Write("some output")` to write output to an HTTP output stream. However, if you want to use the members of <xref:System.Web.HttpResponse> from an ASP.NET code-behind module, you must include a reference to the <xref:System.Web> namespace in the module and a fully qualified reference to the currently active request/response context and the class in <xref:System.Web> that you want to use. For example, in a code-behind page you must specify the fully qualified name `HttpContext.Current.Response.Write("some output")`.  
-  
+The <xref:System.Web.HttpContext.Response%2A> property provides programmatic access to the properties and methods of the <xref:System.Web.HttpResponse> class. Because ASP.NET pages contain a default reference to the <xref:System.Web> namespace (which contains the <xref:System.Web.HttpContext> class), you can reference the members of <xref:System.Web.HttpContext> on an .aspx page without using the fully qualified class reference to <xref:System.Web.HttpContext>. For example, you can use `Response.Write("some output")` to write output to an HTTP output stream. However, if you want to use the members of <xref:System.Web.HttpResponse> from an ASP.NET code-behind module, you must include a reference to the <xref:System.Web> namespace in the module and a fully qualified reference to the currently active request/response context and the class in <xref:System.Web> that you want to use. For example, in a code-behind page you must specify the fully qualified name `HttpContext.Current.Response.Write("some output")`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The Web application is running under IIS 7 in Integrated mode.</exception>
@@ -1110,25 +1110,25 @@ End Sub
         <summary>Rewrites the URL using the given path.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.RewritePath%28System.String%29> method redirects a request for a resource to a different path than the one that is indicated by the requested URL. If you have to reset the virtual path so that requests from the client for server resources resolve correctly, use the overload of this method that takes the `rebaseClientPath` parameter and set the parameter to `false`.  
+The <xref:System.Web.HttpContext.RewritePath%28System.String%29> method redirects a request for a resource to a different path than the one that is indicated by the requested URL. If you have to reset the virtual path so that requests from the client for server resources resolve correctly, use the overload of this method that takes the `rebaseClientPath` parameter and set the parameter to `false`.  
+ 
+URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
+ 
+If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ 
   
- URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
-  
- If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.HttpContext.RewritePath%2A> method to enable a Web site to respond to URLs that do not reflect the file structure in the Web site. The first block of code is an ASP.NET Web page that is named RewritePath.aspx. It requires a query string. If the name of your site is WebSite1, the URL `http://localhost/WebSite1/RewritePath.aspx?page=1` displays "Page 1" in the browser. The block of code that follows the Web page is the `Application_BeginRequest` event handler in the Global.asax file. This code intercepts requests for URLs such as `http://localhost/WebSite1/page1` and converts them to the form that is required for RewritePath.aspx before they are processed. Therefore, the URL `http://localhost/WebSite1/page1` invokes RewritePath.aspx with the query-string parameter that displays "Page 1" in the browser. If a URL such as `http://localhost/WebSite1/page1` is received, an overload of <xref:System.Web.HttpContext.RewritePath%2A> is invoked that enables you to provide a value for the <xref:System.Web.HttpRequest.PathInfo%2A> property as well as a query string parameter.  
-  
- <!-- TODO: review snippet reference [!code-csharp[HttpContext_RewritePath#2](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpContext_ReWritePath/CS/rewritepath.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpContext_RewritePath#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpContext_ReWritePath/VB/rewritepath.aspx#2)]  -->  
-  
- [!code-csharp[HttpContext_RewritePath#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpContext_ReWritePath/CS/global.asax#1)]
- [!code-vb[HttpContext_RewritePath#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpContext_ReWritePath/VB/global.asax#1)]  
-  
+The following example shows how to use the <xref:System.Web.HttpContext.RewritePath%2A> method to enable a Web site to respond to URLs that do not reflect the file structure in the Web site. The first block of code is an ASP.NET Web page that is named RewritePath.aspx. It requires a query string. If the name of your site is WebSite1, the URL `http://localhost/WebSite1/RewritePath.aspx?page=1` displays "Page 1" in the browser. The block of code that follows the Web page is the `Application_BeginRequest` event handler in the Global.asax file. This code intercepts requests for URLs such as `http://localhost/WebSite1/page1` and converts them to the form that is required for RewritePath.aspx before they are processed. Therefore, the URL `http://localhost/WebSite1/page1` invokes RewritePath.aspx with the query-string parameter that displays "Page 1" in the browser. If a URL such as `http://localhost/WebSite1/page1` is received, an overload of <xref:System.Web.HttpContext.RewritePath%2A> is invoked that enables you to provide a value for the <xref:System.Web.HttpRequest.PathInfo%2A> property as well as a query string parameter.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HttpContext_RewritePath#2](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpContext_ReWritePath/CS/rewritepath.aspx#2)]  -->
+<!-- TODO: review snippet reference [!code-vb[HttpContext_RewritePath#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpContext_ReWritePath/VB/rewritepath.aspx#2)]  -->  
+ 
+[!code-csharp[HttpContext_RewritePath#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpContext_ReWritePath/CS/global.asax#1)]
+[!code-vb[HttpContext_RewritePath#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpContext_ReWritePath/VB/global.asax#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is <see langword="null" />.</exception>
@@ -1158,19 +1158,19 @@ End Sub
         <summary>Rewrites the URL using the given path and a Boolean value that specifies whether the virtual path for server resources is modified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.RewritePath%28System.String%2CSystem.Boolean%29?displayProperty=fullName> method is called by the <xref:System.Web.HttpContext.RewritePath%28System.String%29?displayProperty=fullName> method with the `rebaseClientPath` parameter set to `true`. To ensure that the virtual path that is used to construct paths to resources is not modified, set the `rebaseClientPath` parameter to `false`. A common scenario in which you might want to set `rebaseClientPath` to `false` is when you need to rewrite the URL, and you are using themes and redirecting the URL to a resource located in a different folder than the requested resource.  
+The <xref:System.Web.HttpContext.RewritePath%28System.String%2CSystem.Boolean%29?displayProperty=fullName> method is called by the <xref:System.Web.HttpContext.RewritePath%28System.String%29?displayProperty=fullName> method with the `rebaseClientPath` parameter set to `true`. To ensure that the virtual path that is used to construct paths to resources is not modified, set the `rebaseClientPath` parameter to `false`. A common scenario in which you might want to set `rebaseClientPath` to `false` is when you need to rewrite the URL, and you are using themes and redirecting the URL to a resource located in a different folder than the requested resource.  
+ 
+URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
+ 
+If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ 
   
- URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
-  
- If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
-  
-   
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Web.HttpContext.RewritePath%28System.String%29> method overload.  
-  
+For a code example, see the <xref:System.Web.HttpContext.RewritePath%28System.String%29> method overload.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is <see langword="null" />.</exception>
@@ -1201,21 +1201,21 @@ End Sub
         <summary>Rewrites the URL by using the given path, path information, and query string information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.RewritePath%2A> method redirects a request for a resource to another resource without changing the URL.  
+The <xref:System.Web.HttpContext.RewritePath%2A> method redirects a request for a resource to another resource without changing the URL.  
+ 
+The `filePath` parameter does not include the `pathInfo` parameter content. For the URL http://www.microsoft.com/virdir/page.html/tail, the `filePath` parameter is http://www.microsoft.com/virdir/page.html, and the `pathInfo` parameter is tail.  
+ 
+URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
+ 
+If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ 
   
- The `filePath` parameter does not include the `pathInfo` parameter content. For the URL http://www.microsoft.com/virdir/page.html/tail, the `filePath` parameter is http://www.microsoft.com/virdir/page.html, and the `pathInfo` parameter is tail.  
-  
- URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
-  
- If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
-  
-   
-  
+ 
 ## Examples  
- For a code example, including an example of this method overload, see the <xref:System.Web.HttpContext.RewritePath%28System.String%29> method overload.  
-  
+For a code example, including an example of this method overload, see the <xref:System.Web.HttpContext.RewritePath%28System.String%29> method overload.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is not in the current application's root directory.</exception>
@@ -1249,21 +1249,21 @@ End Sub
         <summary>Rewrites the URL using the given virtual path, path information, query string information, and a Boolean value that specifies whether the client file path is set to the rewrite path.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `filePath` parameter does not include the content of the `pathInfo` parameter. For the URL http://www.microsoft.com/virdir/page.html/tail, the `filePath` parameter is http://www.microsoft.com/virdir/page.html, and the `pathInfo` parameter is tail.  
+The `filePath` parameter does not include the content of the `pathInfo` parameter. For the URL http://www.microsoft.com/virdir/page.html/tail, the `filePath` parameter is http://www.microsoft.com/virdir/page.html, and the `pathInfo` parameter is tail.  
+ 
+To ensure that the virtual path that is used to construct paths to resources is not modified, set the `setClientFilePath` parameter to `false`. A common scenario in which you might want to set `setClientFilePath` to `false` is when you need to rewrite the URL, and you are using themes and redirecting the URL to a resource located in a different folder than the requested resource.  
+ 
+URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
+ 
+If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ 
   
- To ensure that the virtual path that is used to construct paths to resources is not modified, set the `setClientFilePath` parameter to `false`. A common scenario in which you might want to set `setClientFilePath` to `false` is when you need to rewrite the URL, and you are using themes and redirecting the URL to a resource located in a different folder than the requested resource.  
-  
- URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
-  
- If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
-  
-   
-  
+ 
 ## Examples  
- For a code example, see the <xref:System.Web.HttpContext.RewritePath%28System.String%29> method overload.  
-  
+For a code example, see the <xref:System.Web.HttpContext.RewritePath%28System.String%29> method overload.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="path" /> parameter is not in the current application's root directory.</exception>
@@ -1287,10 +1287,10 @@ End Sub
         <value>The <see cref="T:System.Web.HttpServerUtility" /> for the current HTTP request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.Server%2A> property provides programmatic access to the properties and methods of the <xref:System.Web.HttpServerUtility> class. Because ASP.NET pages contain a default reference to the <xref:System.Web> namespace (which contains the <xref:System.Web.HttpContext> class), you can reference the members of <xref:System.Web.HttpContext> on an .aspx page without using the fully qualified class reference to <xref:System.Web.HttpContext>. For example, you can use `Server.CreateObject("MyCOMComponent")` to create an instance of a COM object on the server. However, if you want to use the members of <xref:System.Web.HttpServerUtility> from an ASP.NET code-behind module, you must include a reference to the <xref:System.Web> namespace in the module and a fully qualified reference to both the currently active request/response context and the class in <xref:System.Web> that you want to use. For example, in a code-behind page you must specify the fully qualified name `HttpContext.Current.Server.CreateObject("MyCOMComponent")`.  
-  
+The <xref:System.Web.HttpContext.Server%2A> property provides programmatic access to the properties and methods of the <xref:System.Web.HttpServerUtility> class. Because ASP.NET pages contain a default reference to the <xref:System.Web> namespace (which contains the <xref:System.Web.HttpContext> class), you can reference the members of <xref:System.Web.HttpContext> on an .aspx page without using the fully qualified class reference to <xref:System.Web.HttpContext>. For example, you can use `Server.CreateObject("MyCOMComponent")` to create an instance of a COM object on the server. However, if you want to use the members of <xref:System.Web.HttpServerUtility> from an ASP.NET code-behind module, you must include a reference to the <xref:System.Web> namespace in the module and a fully qualified reference to both the currently active request/response context and the class in <xref:System.Web> that you want to use. For example, in a code-behind page you must specify the fully qualified name `HttpContext.Current.Server.CreateObject("MyCOMComponent")`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1312,25 +1312,25 @@ End Sub
         <value>The <see cref="T:System.Web.SessionState.HttpSessionState" /> object for the current HTTP request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.Session%2A> property provides programmatic access to the properties and methods of the <xref:System.Web.SessionState.HttpSessionState> class.  
+The <xref:System.Web.HttpContext.Session%2A> property provides programmatic access to the properties and methods of the <xref:System.Web.SessionState.HttpSessionState> class.  
+ 
+In order to use session state you have to enable it. For information about how to enable session state, see **Configuring Session State** in [ASP.NET Session State Overview](http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
+ 
+For information about how to save values in session state, see [How to: Save Values in Session State](http://msdn.microsoft.com/library/a6cb2e3a-df49-4b12-9d9a-eed45541c165). For information about how to read values from session state, see [How to: Read Values from Session State](http://msdn.microsoft.com/library/2ef449bc-5c17-4785-b7cf-378c601af8f5).  
+ 
   
- In order to use session state you have to enable it. For information about how to enable session state, see **Configuring Session State** in [ASP.NET Session State Overview](http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
-  
- For information about how to save values in session state, see [How to: Save Values in Session State](http://msdn.microsoft.com/library/a6cb2e3a-df49-4b12-9d9a-eed45541c165). For information about how to read values from session state, see [How to: Read Values from Session State](http://msdn.microsoft.com/library/2ef449bc-5c17-4785-b7cf-378c601af8f5).  
-  
-   
-  
+ 
 ## Examples  
- The following examples show how to save values in session state and how to read values from session state.  
-  
- These examples require:  
-  
+The following examples show how to save values in session state and how to read values from session state.  
+ 
+These examples require:  
+ 
 -   An ASP.NET application that has session state enabled.  
-  
+ 
 -   A Web Forms page class that has access to the <xref:System.Web.UI.Page.Session%2A?displayProperty=fullName> property, or any class that has access to the <xref:System.Web.HttpContext.Current%2A?displayProperty=fullName> property.  
-  
+ 
 ```csharp  
 string firstName = "Jeff";  
 string lastName = "Smith";  
@@ -1352,7 +1352,7 @@ context.Session["FirstName"] = firstName;
 firstName = (string)(context.Session["FirstName"]);  
   
 ```  
-  
+ 
 ```vb  
 Dim firstName As String = "Jeff"  
 Dim lastName As String = "Smith"  
@@ -1374,7 +1374,7 @@ context.Session("FirstName") = firstName
 firstName = DirectCast(context.Session("FirstName"), String)  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1399,12 +1399,12 @@ firstName = DirectCast(context.Session("FirstName"), String)
         <summary>Sets the type of session state behavior that is required in order to support an HTTP request.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the ASP.NET default implementation, an HTTP request handler indicates whether it requires session state by implementing the <xref:System.Web.SessionState.IRequiresSessionState> interface or the <xref:System.Web.SessionState.IReadOnlySessionState> interface. The <xref:System.Web.HttpContext.SetSessionStateBehavior%2A> method and the <xref:System.Web.SessionState.SessionStateBehavior> enumeration let you provide more detail about what type of session state support is required in order to handle a request. For more information, see the <xref:System.Web.SessionState.SessionStateBehavior> enumeration.  
-  
- The <xref:System.Web.HttpContext.SetSessionStateBehavior%2A> method must be called before the <xref:System.Web.HttpApplication.AcquireRequestState> pipeline event. Calls that occur during or after this event will cause an <xref:System.InvalidOperationException> exception.  
-  
+In the ASP.NET default implementation, an HTTP request handler indicates whether it requires session state by implementing the <xref:System.Web.SessionState.IRequiresSessionState> interface or the <xref:System.Web.SessionState.IReadOnlySessionState> interface. The <xref:System.Web.HttpContext.SetSessionStateBehavior%2A> method and the <xref:System.Web.SessionState.SessionStateBehavior> enumeration let you provide more detail about what type of session state support is required in order to handle a request. For more information, see the <xref:System.Web.SessionState.SessionStateBehavior> enumeration.  
+ 
+The <xref:System.Web.HttpContext.SetSessionStateBehavior%2A> method must be called before the <xref:System.Web.HttpApplication.AcquireRequestState> pipeline event. Calls that occur during or after this event will cause an <xref:System.InvalidOperationException> exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The method was called after the <see cref="E:System.Web.HttpApplication.AcquireRequestState" /> event was raised.</exception>
@@ -1428,10 +1428,10 @@ firstName = DirectCast(context.Session("FirstName"), String)
           <see langword="true" /> if <see cref="T:System.Web.Security.UrlAuthorizationModule" /> should skip the authorization check; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.SkipAuthorization%2A> property is intended for advanced use by authentication modules that need to redirect to a page that allows anonymous connections. The Forms authentication module and Passport authentication module both set <xref:System.Web.HttpContext.SkipAuthorization%2A> when redirecting to a configured logon page. Setting <xref:System.Web.HttpContext.SkipAuthorization%2A> requires the `ControlPrincipal` flag to be set. For information about the `ControlPrincipal` flag, see <xref:System.Security.Permissions.SecurityPermissionFlag>.  
-  
+The <xref:System.Web.HttpContext.SkipAuthorization%2A> property is intended for advanced use by authentication modules that need to redirect to a page that allows anonymous connections. The Forms authentication module and Passport authentication module both set <xref:System.Web.HttpContext.SkipAuthorization%2A> when redirecting to a configured logon page. Setting <xref:System.Web.HttpContext.SkipAuthorization%2A> requires the `ControlPrincipal` flag to be set. For information about the `ControlPrincipal` flag, see <xref:System.Security.Permissions.SecurityPermissionFlag>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1457,10 +1457,10 @@ firstName = DirectCast(context.Session("FirstName"), String)
         <returns>A <see cref="T:System.Web.HttpContext" />; otherwise, <see langword="null" /> if no service is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is useful to gain access to the underlying <xref:System.Web.HttpWorkerRequest> object.  
-  
+This method is useful to gain access to the underlying <xref:System.Web.HttpWorkerRequest> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1483,12 +1483,12 @@ firstName = DirectCast(context.Session("FirstName"), String)
           <see langword="true" /> if <see cref="M:System.Threading.Thread.Abort" /> will be called when the thread times out; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In handlers and modules that are using the <xref:System.Web.HttpRequest.TimedOutToken%2A?displayProperty=fullName> property to implement cooperative cancellation, you might wish to disable the <xref:System.Threading.Thread.Abort%2A?displayProperty=fullName> behavior that ASP.NET performs by default when a request times out. Setting this property to `false` can help you make sure that cancellation and cleanup routines will run without being interrupted by ASP.NET.  
-  
- If you set this property to `false`, ASP.NET will not automatically display a "Request timed out" error page when a timeout occurs. The application is responsible for setting the response content appropriately.  
-  
+In handlers and modules that are using the <xref:System.Web.HttpRequest.TimedOutToken%2A?displayProperty=fullName> property to implement cooperative cancellation, you might wish to disable the <xref:System.Threading.Thread.Abort%2A?displayProperty=fullName> behavior that ASP.NET performs by default when a request times out. Setting this property to `false` can help you make sure that cancellation and cleanup routines will run without being interrupted by ASP.NET.  
+ 
+If you set this property to `false`, ASP.NET will not automatically display a "Request timed out" error page when a timeout occurs. The application is responsible for setting the response content appropriately.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1510,10 +1510,10 @@ firstName = DirectCast(context.Session("FirstName"), String)
         <value>The timestamp of the current HTTP request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The timestamp returned from the <xref:System.Web.HttpContext.Timestamp%2A> property is the local time of the server and is set during the instantiation of the <xref:System.Web.HttpContext> object. The local time is equal to the UTC time plus the UTC offset.  
-  
+The timestamp returned from the <xref:System.Web.HttpContext.Timestamp%2A> property is the local time of the server and is set during the instantiation of the <xref:System.Web.HttpContext> object. The local time is equal to the UTC time plus the UTC offset.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1553,22 +1553,22 @@ firstName = DirectCast(context.Session("FirstName"), String)
         <value>Security information for the current HTTP request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpContext.User%2A> property provides programmatic access to the properties and methods of the <xref:System.Security.Principal.IPrincipal> interface.  
+The <xref:System.Web.HttpContext.User%2A> property provides programmatic access to the properties and methods of the <xref:System.Security.Principal.IPrincipal> interface.  
+ 
+Because ASP.NET pages contain a default reference to the <xref:System.Web> namespace (which contains the <xref:System.Web.HttpContext> class), you can reference the members of <xref:System.Web.HttpContext> on an .aspx page without using the fully qualified class reference to <xref:System.Web.HttpContext>. For example, you can use `User.Identity.Name` to get the name of the user on whose behalf the current process is running. However, if you want to use the members of <xref:System.Security.Principal.IPrincipal> from an ASP.NET code-behind module, you must include a reference to the <xref:System.Web> namespace in the module and a fully qualified reference to both the currently active request/response context and the class in <xref:System.Web> that you want to use. For example, in a code-behind page you must specify the fully qualified name `HttpContext.Current.User.Identity.Name`.  
+ 
   
- Because ASP.NET pages contain a default reference to the <xref:System.Web> namespace (which contains the <xref:System.Web.HttpContext> class), you can reference the members of <xref:System.Web.HttpContext> on an .aspx page without using the fully qualified class reference to <xref:System.Web.HttpContext>. For example, you can use `User.Identity.Name` to get the name of the user on whose behalf the current process is running. However, if you want to use the members of <xref:System.Security.Principal.IPrincipal> from an ASP.NET code-behind module, you must include a reference to the <xref:System.Web> namespace in the module and a fully qualified reference to both the currently active request/response context and the class in <xref:System.Web> that you want to use. For example, in a code-behind page you must specify the fully qualified name `HttpContext.Current.User.Identity.Name`.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to access properties of the current user through the <xref:System.Web.HttpContext.User%2A> property. Those properties are used to set the title of the Web page.  
-  
- If the application uses Windows authentication, the user name includes the domain. For example, the page title would be “Home page for DOMAIN\username”.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpContext.User#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext.User/cs/Default.aspx.cs#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpContext.User#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpContext.User/vb/Default.aspx.vb#1)]  -->  
-  
+The following example shows how to access properties of the current user through the <xref:System.Web.HttpContext.User%2A> property. Those properties are used to set the title of the Web page.  
+ 
+If the application uses Windows authentication, the user name includes the domain. For example, the page title would be “Home page for DOMAIN\username”.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.HttpContext.User#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext.User/cs/Default.aspx.cs#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.HttpContext.User#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpContext.User/vb/Default.aspx.vb#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,10 +13,10 @@
     <summary>Specifies which GDI+ objects use color adjustment information.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Drawing.Bitmap>, <xref:System.Drawing.Brush>, and <xref:System.Drawing.Pen> objects use any color adjustments that have been set in the default <xref:System.Drawing.Imaging.ImageAttributes> object until their own color adjustments have been set.  
-  
+<xref:System.Drawing.Bitmap>, <xref:System.Drawing.Brush>, and <xref:System.Drawing.Pen> objects use any color adjustments that have been set in the default <xref:System.Drawing.Imaging.ImageAttributes> object until their own color adjustments have been set.  
+ 
  ]]></format>
     </remarks>
   </Docs>

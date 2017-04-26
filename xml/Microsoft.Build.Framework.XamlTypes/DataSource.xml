@@ -18,10 +18,10 @@
     <summary>Represents the location and grouping for a <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you manually instantiate this class, call <xref:Microsoft.Build.Framework.XamlTypes.DataSource.BeginInit%2A> before you set the first property of the object and <xref:Microsoft.Build.Framework.XamlTypes.DataSource.EndInit%2A> after you set the last property.  
-  
+If you manually instantiate this class, call <xref:Microsoft.Build.Framework.XamlTypes.DataSource.BeginInit%2A> before you set the first property of the object and <xref:Microsoft.Build.Framework.XamlTypes.DataSource.EndInit%2A> after you set the last property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -94,10 +94,10 @@
         <value>Returns <see langword="true" /> if a property is configuration-dependent; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is optional and has the default value `true`.  
-  
+This field is optional and has the default value `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <value>Returns the item type of the data source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty> is an item definition metadata or item metadata, this field specifies the item type of the item definition or the item, respectively. For common properties, this field must not be set.  
-  
+If a <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty> is an item definition metadata or item metadata, this field specifies the item type of the item definition or the item, respectively. For common properties, this field must not be set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <value>Returns the label of the property or item group.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is the empty string.  
-  
+The default value is the empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,16 +187,16 @@
         <value>Returns the actual MSBuild property name used to read/write the value of this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applicable only to <xref:Microsoft.Build.Framework.XamlTypes.DataSource> objects attached to properties.  
-  
- The persisted name will usually be the same as the property name as it appears in the <xref:Microsoft.Build.Framework.XamlTypes.Rule> and the value of this property can therefore be left at is default of `null`.  
-  
- Since property names must be unique but need not be unique in the persisted store (due to other differences in the data source such as item type) there may be times when Rule property names must be changed to be unique in the XAML file, but without changing how the property is persisted in the MSBuild file.  
-  
- It is in those cases where this property becomes useful.It may also be useful in specialized build environments where property names must differ from the normally used name in order to maintain compatibility with the project system.  
-  
+Applicable only to <xref:Microsoft.Build.Framework.XamlTypes.DataSource> objects attached to properties.  
+ 
+The persisted name will usually be the same as the property name as it appears in the <xref:Microsoft.Build.Framework.XamlTypes.Rule> and the value of this property can therefore be left at is default of `null`.  
+ 
+Since property names must be unique but need not be unique in the persisted store (due to other differences in the data source such as item type) there may be times when Rule property names must be changed to be unique in the XAML file, but without changing how the property is persisted in the MSBuild file.  
+ 
+It is in those cases where this property becomes useful.It may also be useful in specialized build environments where property names must differ from the normally used name in order to maintain compatibility with the project system.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -218,12 +218,12 @@
         <value>Returns the storage location for this data source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is mandatory and is culture-invariant.  
-  
- Current accepted values are `ProjectFile` and `UserFile`. `ProjectFile` causes the property value to be written to and read from the project manifest file or the property sheet, depending on which node in **Solution Explorer** or the **Properties** window is used to spawn the property pages UI. `UserFile` causes the property value to be written to and read from the .user file.  
-  
+This field is mandatory and is culture-invariant.  
+ 
+Current accepted values are `ProjectFile` and `UserFile`. `ProjectFile` causes the property value to be written to and read from the project manifest file or the property sheet, depending on which node in **Solution Explorer** or the **Properties** window is used to spawn the property pages UI. `UserFile` causes the property value to be written to and read from the .user file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,10 +263,10 @@
         <value>Returns the data type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically has the value `Item`, `ItemDefinition`, or `Property`.  
-  
+Typically has the value `Item`, `ItemDefinition`, or `Property`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

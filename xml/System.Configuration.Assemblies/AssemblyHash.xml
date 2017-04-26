@@ -27,10 +27,10 @@
     <summary>Represents a hash of an assembly manifest's contents.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Configuration.Assemblies.AssemblyHash> values are used throughout the common language runtime to detect a change in assembly contents.  
-  
+<xref:System.Configuration.Assemblies.AssemblyHash> values are used throughout the common language runtime to detect a change in assembly contents.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -108,10 +108,10 @@
         <value>An assembly hash algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The hash is made up of a byte array and a value from a class of supported algorithm types.  
-  
+The hash is made up of a byte array and a value from a class of supported algorithm types.  
+ 
  ]]></format>
         </remarks>
       </Docs>

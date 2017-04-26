@@ -18,12 +18,12 @@
     <summary>A service behavior that enables you to specify the action to take when an unhandled exception occurs within a workflow service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Both <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> and <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> dictate the behavior of the runtime when an exception is not handled in the workflow; however, <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> has the option of leaving a suspended workflow in the persistence store, while <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> does not. The reason for this is that what happens to a suspended workflow is host-specific, and <xref:System.Activities.WorkflowApplication> is not. To implement this functionality using <xref:System.Activities.WorkflowApplication>, create a custom <xref:System.Activities.Persistence.PersistenceParticipant> that has this behavior.  
-  
- For an example of how to use this behavior see [Workflow Service Host Extensibility](~/docs/framework/wcf/feature-details/workflow-service-host-extensibility.md).  
-  
+Both <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> and <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> dictate the behavior of the runtime when an exception is not handled in the workflow; however, <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> has the option of leaving a suspended workflow in the persistence store, while <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> does not. The reason for this is that what happens to a suspended workflow is host-specific, and <xref:System.Activities.WorkflowApplication> is not. To implement this functionality using <xref:System.Activities.WorkflowApplication>, create a custom <xref:System.Activities.Persistence.PersistenceParticipant> that has this behavior.  
+ 
+For an example of how to use this behavior see [Workflow Service Host Extensibility](~/docs/framework/wcf/feature-details/workflow-service-host-extensibility.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <value>A <see cref="T:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior.Action%2A> property can be set to one of the <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction> values.  
-  
+The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior.Action%2A> property can be set to one of the <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction> values.  
+ 
  ]]></format>
         </remarks>
       </Docs>

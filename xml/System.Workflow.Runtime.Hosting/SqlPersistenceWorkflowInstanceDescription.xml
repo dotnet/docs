@@ -19,12 +19,12 @@
     <summary>Describes the workflow instances that are stored in the <see cref="T:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -83,10 +83,10 @@
         <value>The status of the workflow instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Possible values are: Completed, Created, Running, Suspended, Terminated. For more information, see <xref:System.Workflow.Runtime.WorkflowStatus>.  
-  
+Possible values are: Completed, Created, Running, Suspended, Terminated. For more information, see <xref:System.Workflow.Runtime.WorkflowStatus>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

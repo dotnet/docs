@@ -21,18 +21,18 @@
     <summary>Specifies the user interface (UI) state of a element within a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although these different states, like Frozen, are enforced by the UI, they can be programmatically overruled.  
+Although these different states, like Frozen, are enforced by the UI, they can be programmatically overruled.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates the use of this type. For more information, see [How to: Perform a Custom Action Based on Changes in a Cell of a Windows Forms DataGridView Control](~/docs/framework/winforms/controls/perform-a-custom-action-based-on-changes-in-a-cell-of-a-datagrid.md).  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#135)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#135)]  
-  
+The following code example illustrates the use of this type. For more information, see [How to: Perform a Custom Action Based on Changes in a Cell of a Windows Forms DataGridView Control](~/docs/framework/winforms/controls/perform-a-custom-action-based-on-changes-in-a-cell-of-a-datagrid.md).  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#135)]
+[!code-vb[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#135)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

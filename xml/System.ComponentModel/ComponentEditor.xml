@@ -19,19 +19,19 @@
     <summary>Provides the base class for a custom component editor.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A component editor is used to edit a component as a whole and can be used to implement a user interface similar to that of the property pages. You associate a component editor with a component by using the <xref:System.ComponentModel.EditorAttribute> attribute.  
+A component editor is used to edit a component as a whole and can be used to implement a user interface similar to that of the property pages. You associate a component editor with a component by using the <xref:System.ComponentModel.EditorAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates an example <xref:System.ComponentModel.ComponentEditor> implementation.  
-  
- [!code-cpp[ComponentEditorExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentEditorExample/CPP/componenteditorexamplecomponent.cpp#1)]
- [!code-csharp[ComponentEditorExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentEditorExample/CS/componenteditorexamplecomponent.cs#1)]
- [!code-vb[ComponentEditorExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentEditorExample/VB/componenteditorexamplecomponent.vb#1)]  
-  
+The following code example demonstrates an example <xref:System.ComponentModel.ComponentEditor> implementation.  
+ 
+[!code-cpp[ComponentEditorExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentEditorExample/CPP/componenteditorexamplecomponent.cpp#1)]
+[!code-csharp[ComponentEditorExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentEditorExample/CS/componenteditorexamplecomponent.cs#1)]
+[!code-vb[ComponentEditorExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentEditorExample/VB/componenteditorexamplecomponent.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -86,10 +86,10 @@
           <see langword="true" /> if the component was modified; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method opens an advanced user interface that you can use to edit the component. The default implementation opens a dialog box with a collection of component editor control objects and a user interface.  
-  
+This method opens an advanced user interface that you can use to edit the component. The default implementation opens a dialog box with a collection of component editor control objects and a user interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
           <see langword="true" /> if the component was modified; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override this method to provide a custom editing user interface for a component. From within this method you can display a dialog box or other type of user interface.  
-  
+You can override this method to provide a custom editing user interface for a component. From within this method you can display a dialog box or other type of user interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

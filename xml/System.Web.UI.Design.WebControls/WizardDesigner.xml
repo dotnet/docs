@@ -300,10 +300,10 @@
         <summary>Called when the associated control changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.WizardDesigner.OnComponentChanged%2A> method is called when a property of the associated control is changed. This lets you perform any processing that is required after a property change.  
-  
+The <xref:System.Web.UI.Design.WebControls.WizardDesigner.OnComponentChanged%2A> method is called when a property of the associated control is changed. This lets you perform any processing that is required after a property change.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

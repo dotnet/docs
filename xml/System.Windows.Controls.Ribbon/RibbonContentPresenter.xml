@@ -47,18 +47,18 @@
         <value>The <see cref="T:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition" /> for this control. The default is null.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition> contains properties that specify size and visibility information for the image and label associated with a control.  
-  
+A <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition> contains properties that specify size and visibility information for the image and label associated with a control.  
+ 
 <a name="dependencyPropertyInfo_ControlSizeDefinition"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonContentPresenter.ControlSizeDefinitionProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,17 +98,17 @@
           <see langword="true" /> if the control is hosted in a <see cref="T:System.Windows.Controls.Ribbon.RibbonControlGroup" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsInControlGroup"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonContentPresenter.IsInControlGroupProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,17 +148,17 @@
           <see langword="true" /> if the control is hosted in the Quick Access Toolbar; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsInQuickAccessToolBar"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonContentPresenter.IsInQuickAccessToolBarProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
         <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Ribbon.RibbonContentPresenter" /> when a new template is applied.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
-  
+This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

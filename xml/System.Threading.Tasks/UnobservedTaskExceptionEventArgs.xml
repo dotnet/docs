@@ -24,10 +24,10 @@
     <summary>Provides data for the event that is raised when a faulted <see cref="T:System.Threading.Tasks.Task" />'s exception goes unobserved.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Exception property is used to examine the exception without marking it as observed, whereas the <xref:System.Threading.Tasks.UnobservedTaskExceptionEventArgs.SetObserved%2A> method is used to mark the exception as observed. Marking the exception as observed prevents it from triggering exception escalation policy which, by default, terminates the process.  
-  
+The Exception property is used to examine the exception without marking it as observed, whereas the <xref:System.Threading.Tasks.UnobservedTaskExceptionEventArgs.SetObserved%2A> method is used to mark the exception as observed. Marking the exception as observed prevents it from triggering exception escalation policy which, by default, terminates the process.  
+ 
  ]]></format>
     </remarks>
   </Docs>

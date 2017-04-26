@@ -26,39 +26,39 @@
     <summary>Represents a displacement in [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] space.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Point> represents a fixed position, but a <xref:System.Windows.Vector> represents a direction and a magnitude (for example, velocity or acceleration). Thus, the endpoints of a line segment are points but their difference is a vector; that is, the direction and length of that line segment.  
-  
- In XAML, the delimiter between the <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> values of a <xref:System.Windows.Vector> can be either a comma or a space.  
-  
- Some cultures might use the comma character as the decimal delimiter instead of the period character. XAML processing for invariant culture defaults to en-US in most XAML processor implementations, and expects the period to be the decimal delimiter. You should avoid using the comma character as the decimal delimiter if specifying a <xref:System.Windows.Vector> in XAML, because that will clash with the string type conversion of a <xref:System.Windows.Vector> attribute value into the <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> components.  
-  
+A <xref:System.Windows.Point> represents a fixed position, but a <xref:System.Windows.Vector> represents a direction and a magnitude (for example, velocity or acceleration). Thus, the endpoints of a line segment are points but their difference is a vector; that is, the direction and length of that line segment.  
+ 
+In XAML, the delimiter between the <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> values of a <xref:System.Windows.Vector> can be either a comma or a space.  
+ 
+Some cultures might use the comma character as the decimal delimiter instead of the period character. XAML processing for invariant culture defaults to en-US in most XAML processor implementations, and expects the period to be the decimal delimiter. You should avoid using the comma character as the decimal delimiter if specifying a <xref:System.Windows.Vector> in XAML, because that will clash with the string type conversion of a <xref:System.Windows.Vector> attribute value into the <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> components.  
+ 
 <a name="xamlAttributeUsage_Vector"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="x,y"/>  
 -or-  
 <object property="x y"/>  
 ```  
-  
+ 
 <a name="xamlValues_Vector"></a>   
 ## XAML Values  
- *x*  
- The vector's X component. For more information, see the <xref:System.Windows.Vector.X%2A> property.  
+*x*  
+The vector's X component. For more information, see the <xref:System.Windows.Vector.X%2A> property.  
+ 
+*y*  
+The vector's Y component. For more information, see the <xref:System.Windows.Vector.Y%2A> property.  
+ 
   
- *y*  
- The vector's Y component. For more information, see the <xref:System.Windows.Vector.Y%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to add two <xref:System.Windows.Vector> structures.  
-  
- [!code-csharp[VectorSample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorSample/CSharp/Window1.xaml.cs#10)]
- [!code-vb[VectorSample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorSample/visualbasic/window1.xaml.vb#10)]  
-  
+The following example shows how to add two <xref:System.Windows.Vector> structures.  
+ 
+[!code-csharp[VectorSample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorSample/CSharp/Window1.xaml.cs#10)]
+[!code-vb[VectorSample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorSample/visualbasic/window1.xaml.vb#10)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -82,12 +82,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Vector" /> structure.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create two vectors and add them together.  
-  
- [!code-csharp[VectorExamples_snip#AddTwoVectorsExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#addtwovectorsexample_csharp)]  
-  
+The following example shows how to create two vectors and add them together.  
+ 
+[!code-csharp[VectorExamples_snip#AddTwoVectorsExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#addtwovectorsexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,12 +115,12 @@
         <returns>The result of translating <paramref name="point" /> by <paramref name="vector" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to add a <xref:System.Windows.Point> structure to a <xref:System.Windows.Vector> structure.  
-  
- [!code-csharp[VectorExamples_snip#AddPointAndVectorExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#addpointandvectorexample_csharp)]  
-  
+The following example shows how to use this method to add a <xref:System.Windows.Point> structure to a <xref:System.Windows.Vector> structure.  
+ 
+[!code-csharp[VectorExamples_snip#AddPointAndVectorExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#addpointandvectorexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,12 +148,12 @@
         <returns>The sum of <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to add two <xref:System.Windows.Vector> structures.  
-  
- [!code-csharp[VectorExamples_snip#AddTwoVectorsExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#addtwovectorsexample_csharp)]  
-  
+The following example shows how to use this method to add two <xref:System.Windows.Vector> structures.  
+ 
+[!code-csharp[VectorExamples_snip#AddTwoVectorsExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#addtwovectorsexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,12 +181,12 @@
         <returns>The angle, in degrees, between <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to get the angle between two <xref:System.Windows.Vector> structures.  
-  
- [!code-csharp[VectorExamples_snip#AngleBetweenExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#anglebetweenexample_csharp)]  
-  
+The following example shows how to use this method to get the angle between two <xref:System.Windows.Vector> structures.  
+ 
+[!code-csharp[VectorExamples_snip#AngleBetweenExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#anglebetweenexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,12 +216,12 @@
  <c>(Vector1.X * Vector2.Y) - (Vector1.Y * Vector2.X)</c></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to calculate the cross product of two <xref:System.Windows.Vector> structures.  
-  
- [!code-csharp[VectorExamples_snip#CrossProductExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#crossproductexample_csharp)]  
-  
+The following example shows how to use this method to calculate the cross product of two <xref:System.Windows.Vector> structures.  
+ 
+[!code-csharp[VectorExamples_snip#CrossProductExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#crossproductexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,12 +249,12 @@
         <returns>The determinant of <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to calculate the determinant of two <xref:System.Windows.Vector> structures.  
-  
- [!code-csharp[VectorExamples_snip#DeterminantExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#determinantexample_csharp)]  
-  
+The following example shows how to calculate the determinant of two <xref:System.Windows.Vector> structures.  
+ 
+[!code-csharp[VectorExamples_snip#DeterminantExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#determinantexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,12 +282,12 @@
         <returns>The result of dividing <paramref name="vector" /> by <paramref name="scalar" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to divide a <xref:System.Windows.Vector> by a scalar.  
-  
- [!code-csharp[VectorExamples_snip#DivideExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#divideexample_csharp)]  
-  
+The following example shows how to use this method to divide a <xref:System.Windows.Vector> by a scalar.  
+ 
+[!code-csharp[VectorExamples_snip#DivideExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#divideexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -314,17 +314,17 @@
           <see langword="true" /> if <paramref name="o" /> is a <see cref="T:System.Windows.Vector" /> and has the same <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> values as this vector; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Windows.Vector> structures that are logically equal might fail.  
+A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Windows.Vector> structures that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this method to check whether a <xref:System.Windows.Vector> and an <xref:System.Object> are equal.  
-  
- [!code-csharp[VectorExamples_snip#EqualsExample2_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#equalsexample2_csharp)]  
-  
+The following example shows how to use this method to check whether a <xref:System.Windows.Vector> and an <xref:System.Object> are equal.  
+ 
+[!code-csharp[VectorExamples_snip#EqualsExample2_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#equalsexample2_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,17 +351,17 @@
           <see langword="true" /> if <paramref name="value" /> has the same <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> values as this vector; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Windows.Vector> structures that are logically equal might fail.  
+A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Windows.Vector> structures that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this method to check whether two <xref:System.Windows.Vector> structures are equal.  
-  
- [!code-csharp[VectorExamples_snip#EqualsExample2_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#equalsexample2_csharp)]  
-  
+The following example shows how to use this method to check whether two <xref:System.Windows.Vector> structures are equal.  
+ 
+[!code-csharp[VectorExamples_snip#EqualsExample2_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#equalsexample2_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -390,17 +390,17 @@
           <see langword="true" /> if t he <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> components of <paramref name="vector1" /> and <paramref name="vector2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Double> structures that are logically equal might fail.  
+A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Double> structures that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this method to check whether two <xref:System.Windows.Vector> structures are equal.  
-  
- [!code-csharp[VectorExamples_snip#EqualsExample1_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#equalsexample1_csharp)]  
-  
+The following example shows how to use this method to check whether two <xref:System.Windows.Vector> structures are equal.  
+ 
+[!code-csharp[VectorExamples_snip#EqualsExample1_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#equalsexample1_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,12 +423,12 @@
         <returns>The hash code for this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to get the hash code of a <xref:System.Windows.Vector>.  
-  
- [!code-csharp[VectorExamples_snip#GetHashCodeExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#gethashcodeexample_csharp)]  
-  
+The following example shows how to get the hash code of a <xref:System.Windows.Vector>.  
+ 
+[!code-csharp[VectorExamples_snip#GetHashCodeExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#gethashcodeexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -450,18 +450,18 @@
         <value>The length of this vector.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The length of a vector is sometimes referred to as the magnitude.  
+The length of a vector is sometimes referred to as the magnitude.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how use this property to get the length of a vector.  
-  
- [!code-csharp[VectorExamples_snip#LengthExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#lengthexample)]
- [!code-vb[VectorExamples_snip#LengthExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#lengthexample)]  
-  
+The following example shows how use this property to get the length of a vector.  
+ 
+[!code-csharp[VectorExamples_snip#LengthExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#lengthexample)]
+[!code-vb[VectorExamples_snip#LengthExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#lengthexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -483,18 +483,18 @@
         <value>The square of the <see cref="P:System.Windows.Vector.Length" /> of this vector.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The length of a vector is sometimes referred to as its magnitude.  
+The length of a vector is sometimes referred to as its magnitude.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this property to get the square of the length of a vector.  
-  
- [!code-csharp[VectorExamples_snip#LengthSquaredExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#lengthsquaredexample)]
- [!code-vb[VectorExamples_snip#LengthSquaredExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#lengthsquaredexample)]  
-  
+The following example shows how to use this property to get the square of the length of a vector.  
+ 
+[!code-csharp[VectorExamples_snip#LengthSquaredExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#lengthsquaredexample)]
+[!code-vb[VectorExamples_snip#LengthSquaredExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#lengthsquaredexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -522,12 +522,12 @@
         <returns>The result of multiplying <paramref name="scalar" /> and <paramref name="vector" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to multiply a scalar by a <xref:System.Windows.Vector>.  
-  
- [!code-csharp[VectorExamples_snip#MultiplyVectorByScalarExample2_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#multiplyvectorbyscalarexample2_csharp)]  
-  
+The following example shows how to use this method to multiply a scalar by a <xref:System.Windows.Vector>.  
+ 
+[!code-csharp[VectorExamples_snip#MultiplyVectorByScalarExample2_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#multiplyvectorbyscalarexample2_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -555,12 +555,12 @@
         <returns>The result of multiplying <paramref name="vector" /> and <paramref name="scalar" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to multiply a <xref:System.Windows.Vector> by a scalar.  
-  
- [!code-csharp[VectorExamples_snip#MultiplyVectorByScalarExample1_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#multiplyvectorbyscalarexample1_csharp)]  
-  
+The following example shows how to use this method to multiply a <xref:System.Windows.Vector> by a scalar.  
+ 
+[!code-csharp[VectorExamples_snip#MultiplyVectorByScalarExample1_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#multiplyvectorbyscalarexample1_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -588,12 +588,12 @@
         <returns>The result of transforming <paramref name="vector" /> by <paramref name="matrix" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to multiply a <xref:System.Windows.Vector> by a <xref:System.Windows.Media.Matrix>.  
-  
- [!code-csharp[VectorExamples_snip#MultiplyVectorByMatrixExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#multiplyvectorbymatrixexample_csharp)]  
-  
+The following example shows how to use this method to multiply a <xref:System.Windows.Vector> by a <xref:System.Windows.Media.Matrix>.  
+ 
+[!code-csharp[VectorExamples_snip#MultiplyVectorByMatrixExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#multiplyvectorbymatrixexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -623,12 +623,12 @@
  <c>(vector1.X * vector2.X) + (vector1.Y * vector2.Y)</c></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to multiply a <xref:System.Windows.Vector> by a <xref:System.Windows.Vector>.  
-  
- [!code-csharp[VectorExamples_snip#GetDotProductExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#getdotproductexample_csharp)]  
-  
+The following example shows how to use this method to multiply a <xref:System.Windows.Vector> by a <xref:System.Windows.Vector>.  
+ 
+[!code-csharp[VectorExamples_snip#GetDotProductExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#getdotproductexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -650,12 +650,12 @@
         <summary>Negates this vector. The vector has the same magnitude as before, but its direction is now opposite.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to negate a vector.  
-  
- [!code-csharp[VectorExamples_snip#NegateExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#negateexample_csharp)]  
-  
+The following example shows how to use this method to negate a vector.  
+ 
+[!code-csharp[VectorExamples_snip#NegateExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#negateexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -677,17 +677,17 @@
         <summary>Normalizes this vector.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A normalized vector maintains its direction but its <xref:System.Windows.Vector.Length%2A> becomes 1. The resulting vector is often called a unit vector. A vector is normalized by dividing the vector by its own <xref:System.Windows.Vector.Length%2A>.  
+A normalized vector maintains its direction but its <xref:System.Windows.Vector.Length%2A> becomes 1. The resulting vector is often called a unit vector. A vector is normalized by dividing the vector by its own <xref:System.Windows.Vector.Length%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this method to normalize a vector.  
-  
- [!code-csharp[VectorExamples_snip#NormalizeExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#normalizeexample_csharp)]  
-  
+The following example shows how to use this method to normalize a vector.  
+ 
+[!code-csharp[VectorExamples_snip#NormalizeExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#normalizeexample_csharp)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -715,13 +715,13 @@
         <returns>The result of translating <paramref name="point" /> by <paramref name="vector" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this operator (+) to translate a <xref:System.Windows.Point> structure to a <xref:System.Windows.Vector> structure.  
-  
- [!code-csharp[VectorExamples_snip#OverloadedAdditionOperatorExample2](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedadditionoperatorexample2)]
- [!code-vb[VectorExamples_snip#OverloadedAdditionOperatorExample2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedadditionoperatorexample2)]  
-  
+The following example shows how to use this operator (+) to translate a <xref:System.Windows.Point> structure to a <xref:System.Windows.Vector> structure.  
+ 
+[!code-csharp[VectorExamples_snip#OverloadedAdditionOperatorExample2](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedadditionoperatorexample2)]
+[!code-vb[VectorExamples_snip#OverloadedAdditionOperatorExample2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedadditionoperatorexample2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -749,13 +749,13 @@
         <returns>The sum of <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this operator (+) to add two <xref:System.Windows.Vector> structures and return a <xref:System.Windows.Vector>.  
-  
- [!code-csharp[VectorExamples_snip#OverloadedAdditionOperatorExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedadditionoperatorexample1)]
- [!code-vb[VectorExamples_snip#OverloadedAdditionOperatorExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedadditionoperatorexample1)]  
-  
+The following example shows how to use this operator (+) to add two <xref:System.Windows.Vector> structures and return a <xref:System.Windows.Vector>.  
+ 
+[!code-csharp[VectorExamples_snip#OverloadedAdditionOperatorExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedadditionoperatorexample1)]
+[!code-vb[VectorExamples_snip#OverloadedAdditionOperatorExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedadditionoperatorexample1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -783,13 +783,13 @@
         <returns>The result of dividing <paramref name="vector" /> by <paramref name="scalar" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this operator (/) to divide a <xref:System.Windows.Vector> structure by a scalar.  
-  
- [!code-csharp[VectorExamples_snip#OverloadedDivisionOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadeddivisionoperatorexample)]
- [!code-vb[VectorExamples_snip#OverloadedDivisionOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadeddivisionoperatorexample)]  
-  
+The following example shows how to use this operator (/) to divide a <xref:System.Windows.Vector> structure by a scalar.  
+ 
+[!code-csharp[VectorExamples_snip#OverloadedDivisionOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadeddivisionoperatorexample)]
+[!code-vb[VectorExamples_snip#OverloadedDivisionOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadeddivisionoperatorexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -818,18 +818,18 @@
           <see langword="true" /> if the <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> components of <paramref name="vector1" /> and <paramref name="vector2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Windows.Vector> structures that are logically equal might fail.  
+A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Windows.Vector> structures that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this operator (==) to check whether two <xref:System.Windows.Vector> structures are equal.  
-  
- [!code-csharp[VectorExamples_snip#OverloadedEqualityOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedequalityoperatorexample)]
- [!code-vb[VectorExamples_snip#OverloadedEqualityOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedequalityoperatorexample)]  
-  
+The following example shows how to use this operator (==) to check whether two <xref:System.Windows.Vector> structures are equal.  
+ 
+[!code-csharp[VectorExamples_snip#OverloadedEqualityOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedequalityoperatorexample)]
+[!code-vb[VectorExamples_snip#OverloadedEqualityOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedequalityoperatorexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -902,18 +902,18 @@
           <see langword="true" /> if the <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> components of <paramref name="vector1" /> and <paramref name="vector2" /> are different; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Windows.Vector> structures that are logically equal might fail.  
+A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Windows.Vector> structures that are logically equal might fail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this operator (!=) to check whether two <xref:System.Windows.Vector> structures are not equal.  
-  
- [!code-csharp[VectorExamples_snip#OverloadedInequalityOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedinequalityoperatorexample)]
- [!code-vb[VectorExamples_snip#OverloadedInequalityOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedinequalityoperatorexample)]  
-  
+The following example shows how to use this operator (!=) to check whether two <xref:System.Windows.Vector> structures are not equal.  
+ 
+[!code-csharp[VectorExamples_snip#OverloadedInequalityOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedinequalityoperatorexample)]
+[!code-vb[VectorExamples_snip#OverloadedInequalityOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedinequalityoperatorexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -941,13 +941,13 @@
         <returns>The result of multiplying <paramref name="scalar" /> and <paramref name="vector" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this operator (*) to multiply a scalar by a <xref:System.Windows.Vector> structure.  
-  
- [!code-csharp[VectorExamples_snip#OverloadedMultiplicationOperatorExample2](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedmultiplicationoperatorexample2)]
- [!code-vb[VectorExamples_snip#OverloadedMultiplicationOperatorExample2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedmultiplicationoperatorexample2)]  
-  
+The following example shows how to use this operator (*) to multiply a scalar by a <xref:System.Windows.Vector> structure.  
+ 
+[!code-csharp[VectorExamples_snip#OverloadedMultiplicationOperatorExample2](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedmultiplicationoperatorexample2)]
+[!code-vb[VectorExamples_snip#OverloadedMultiplicationOperatorExample2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedmultiplicationoperatorexample2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -975,13 +975,13 @@
         <returns>The result of multiplying <paramref name="vector" /> and <paramref name="scalar" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this operator (*) to multiply a <xref:System.Windows.Vector> structure by a scalar.  
-  
- [!code-csharp[VectorExamples_snip#OverloadedMultiplicationOperatorExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedmultiplicationoperatorexample1)]
- [!code-vb[VectorExamples_snip#OverloadedMultiplicationOperatorExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedmultiplicationoperatorexample1)]  
-  
+The following example shows how to use this operator (*) to multiply a <xref:System.Windows.Vector> structure by a scalar.  
+ 
+[!code-csharp[VectorExamples_snip#OverloadedMultiplicationOperatorExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedmultiplicationoperatorexample1)]
+[!code-vb[VectorExamples_snip#OverloadedMultiplicationOperatorExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedmultiplicationoperatorexample1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1009,13 +1009,13 @@
         <returns>The result of transforming <paramref name="vector" /> by <paramref name="matrix" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this operator (*) to multiply a <xref:System.Windows.Vector> structure by a <xref:System.Windows.Media.Matrix> structure.  
-  
- [!code-csharp[VectorExamples_snip#OverloadedMultiplyVectorByMatrixOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedmultiplyvectorbymatrixoperatorexample)]
- [!code-vb[VectorExamples_snip#OverloadedMultiplyVectorByMatrixOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedmultiplyvectorbymatrixoperatorexample)]  
-  
+The following example shows how to use this operator (*) to multiply a <xref:System.Windows.Vector> structure by a <xref:System.Windows.Media.Matrix> structure.  
+ 
+[!code-csharp[VectorExamples_snip#OverloadedMultiplyVectorByMatrixOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedmultiplyvectorbymatrixoperatorexample)]
+[!code-vb[VectorExamples_snip#OverloadedMultiplyVectorByMatrixOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedmultiplyvectorbymatrixoperatorexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1045,13 +1045,13 @@
  <c>vector1.X * vector2.X + vector1.Y * vector2.Y</c></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this operator (*) to multiply a <xref:System.Windows.Vector> structure by a <xref:System.Windows.Vector>.  
-  
- [!code-csharp[VectorExamples_snip#OverloadedOperatorGetDotProductExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedoperatorgetdotproductexample)]
- [!code-vb[VectorExamples_snip#OverloadedOperatorGetDotProductExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedoperatorgetdotproductexample)]  
-  
+The following example shows how to use this operator (*) to multiply a <xref:System.Windows.Vector> structure by a <xref:System.Windows.Vector>.  
+ 
+[!code-csharp[VectorExamples_snip#OverloadedOperatorGetDotProductExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedoperatorgetdotproductexample)]
+[!code-vb[VectorExamples_snip#OverloadedOperatorGetDotProductExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedoperatorgetdotproductexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1079,13 +1079,13 @@
         <returns>The difference between <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this operator (-) to subtract a <xref:System.Windows.Vector> structure from a <xref:System.Windows.Vector> structure.  
-  
- [!code-csharp[VectorExamples_snip#OverloadedSubtractionOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedsubtractionoperatorexample)]
- [!code-vb[VectorExamples_snip#OverloadedSubtractionOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedsubtractionoperatorexample)]  
-  
+The following example shows how to use this operator (-) to subtract a <xref:System.Windows.Vector> structure from a <xref:System.Windows.Vector> structure.  
+ 
+[!code-csharp[VectorExamples_snip#OverloadedSubtractionOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedsubtractionoperatorexample)]
+[!code-vb[VectorExamples_snip#OverloadedSubtractionOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedsubtractionoperatorexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1111,13 +1111,13 @@
         <returns>A vector with <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> values opposite of the <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> values of <paramref name="vector" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this negation operator to negate a <xref:System.Windows.Vector> structure.  
-  
- [!code-csharp[VectorExamples_snip#OverloadedNegationOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadednegationoperatorexample)]
- [!code-vb[VectorExamples_snip#OverloadedNegationOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadednegationoperatorexample)]  
-  
+The following example shows how to use this negation operator to negate a <xref:System.Windows.Vector> structure.  
+ 
+[!code-csharp[VectorExamples_snip#OverloadedNegationOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadednegationoperatorexample)]
+[!code-vb[VectorExamples_snip#OverloadedNegationOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadednegationoperatorexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1143,13 +1143,13 @@
         <returns>The equivalent <see cref="T:System.Windows.Vector" /> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to convert a string representation of a vector into a <xref:System.Windows.Vector> structure.  
-  
- [!code-csharp[VectorExamples_snip#ParseExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#parseexample)]
- [!code-vb[VectorExamples_snip#ParseExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#parseexample)]  
-  
+The following example shows how to use this method to convert a string representation of a vector into a <xref:System.Windows.Vector> structure.  
+ 
+[!code-csharp[VectorExamples_snip#ParseExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#parseexample)]
+[!code-vb[VectorExamples_snip#ParseExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#parseexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1177,13 +1177,13 @@
         <returns>The difference between <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to subtract a <xref:System.Windows.Vector> structure from a <xref:System.Windows.Vector> structure.  
-  
- [!code-csharp[VectorExamples_snip#SubtractExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#subtractexample)]
- [!code-vb[VectorExamples_snip#SubtractExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#subtractexample)]  
-  
+The following example shows how to use this method to subtract a <xref:System.Windows.Vector> structure from a <xref:System.Windows.Vector> structure.  
+ 
+[!code-csharp[VectorExamples_snip#SubtractExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#subtractexample)]
+[!code-vb[VectorExamples_snip#SubtractExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#subtractexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1238,13 +1238,13 @@
         <returns>A string that represents the <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> values of this <see cref="T:System.Windows.Vector" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this method to get a string representation of a <xref:System.Windows.Vector>.  
-  
- [!code-csharp[VectorExamples_snip#ToStringExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#tostringexample)]
- [!code-vb[VectorExamples_snip#ToStringExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#tostringexample)]  
-  
+The following example shows how to use this method to get a string representation of a <xref:System.Windows.Vector>.  
+ 
+[!code-csharp[VectorExamples_snip#ToStringExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#tostringexample)]
+[!code-vb[VectorExamples_snip#ToStringExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#tostringexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1288,13 +1288,13 @@
         <value>The <see cref="P:System.Windows.Vector.X" /> component of this vector. The default value is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to check two <xref:System.Windows.Vector> structures for equality.  
-  
- [!code-csharp[VectorExamples_snip#VectorEqualityExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#vectorequalityexample)]
- [!code-vb[VectorExamples_snip#VectorEqualityExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#vectorequalityexample)]  
-  
+The following example shows how to check two <xref:System.Windows.Vector> structures for equality.  
+ 
+[!code-csharp[VectorExamples_snip#VectorEqualityExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#vectorequalityexample)]
+[!code-vb[VectorExamples_snip#VectorEqualityExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#vectorequalityexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1316,13 +1316,13 @@
         <value>The <see cref="P:System.Windows.Vector.Y" /> component of this vector. The default value is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to check two <xref:System.Windows.Vector> structures for equality.  
-  
- [!code-csharp[VectorExamples_snip#VectorEqualityExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#vectorequalityexample)]
- [!code-vb[VectorExamples_snip#VectorEqualityExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#vectorequalityexample)]  
-  
+The following example shows how to check two <xref:System.Windows.Vector> structures for equality.  
+ 
+[!code-csharp[VectorExamples_snip#VectorEqualityExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#vectorequalityexample)]
+[!code-vb[VectorExamples_snip#VectorEqualityExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#vectorequalityexample)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1336,10 +1336,10 @@
         <summary>Compares two vectors for equality.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Double> structures that are logically equal might fail.  
-  
+A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Double> structures that are logically equal might fail.  
+ 
  ]]></format>
         </remarks>
       </Docs>

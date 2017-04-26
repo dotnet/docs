@@ -14,10 +14,10 @@
     <summary>Represents a WS-Federation Attribute Request message. This message is created when the wa parameter in the received message is “wattr1.0”.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the message that this class represents, see the WS-Federation specification.  
-  
+For more information about the message that this class represents, see the WS-Federation specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.AttributeRequestMessage" /> class with the specified base URL.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to “wattr1.0”.  
-  
+The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to “wattr1.0”.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -64,10 +64,10 @@
         <value>A string that contains the value of the wattr parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set to `null` or an empty string to remove the wattr parameter from the message.  
-  
+Set to `null` or an empty string to remove the wattr parameter from the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <value>A string that contains the value of the wattrptr parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set to `null` or an empty string to remove the wattrptr parameter from the message.  
-  
+Set to `null` or an empty string to remove the wattrptr parameter from the message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt to set a value that is not a valid URI occurs.</exception>
@@ -115,10 +115,10 @@
         <value>A string that contains the value of the wreply parameter. This is the URL to which the reply should be sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set to `null` or an empty string to remove the wreply parameter from the message.  
-  
+Set to `null` or an empty string to remove the wreply parameter from the message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt to set a value that is not a valid URI occurs.</exception>
@@ -141,10 +141,10 @@
         <value>A string that contains the value of the wresult parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set to `null` or an empty string to remove the wresult parameter from the message.  
-  
+Set to `null` or an empty string to remove the wresult parameter from the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,10 +166,10 @@
         <value>A string that contains the value of the wresultptr parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set to `null` or an empty string to remove the wresultptr parameter from the message.  
-  
+Set to `null` or an empty string to remove the wresultptr parameter from the message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt to set a value that is not a valid URI occurs.</exception>
@@ -192,10 +192,10 @@
         <summary>No validation is performed by the framework. Users of this class should validate externally.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No validation is performed by the framework. Users of this class should validate externally. For example, you may want to check that both the wresult parameter (the <xref:System.IdentityModel.Services.AttributeRequestMessage.Result%2A> property) and the wresultptr parameter (the <xref:System.IdentityModel.Services.AttributeRequestMessage.ResultPtr%2A> property) are not set in the same message.  
-  
+No validation is performed by the framework. Users of this class should validate externally. For example, you may want to check that both the wresult parameter (the <xref:System.IdentityModel.Services.AttributeRequestMessage.Result%2A> property) and the wresultptr parameter (the <xref:System.IdentityModel.Services.AttributeRequestMessage.ResultPtr%2A> property) are not set in the same message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -220,10 +220,10 @@
         <summary>Writes the message in query string form to the specified text writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls the <xref:System.IdentityModel.Services.AttributeRequestMessage.Validate%2A> method before writing the message.  
-  
+This method calls the <xref:System.IdentityModel.Services.AttributeRequestMessage.Validate%2A> method before writing the message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

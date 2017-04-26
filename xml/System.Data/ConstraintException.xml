@@ -19,14 +19,14 @@
     <summary>Represents the exception that is thrown when attempting an action that violates a constraint.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Tips:** Relax or turn off constraints in your DataSets. You can use the EnforceConstraints property to temporarily turn off constraints while filling tables in a DataSet object.  
-  
- Make sure you are not trying to assign a value to a primary key field where the primary key already exists in the data table. If the primary key exists, this exception is thrown.  
-  
- Clear datasets before loading them from view state. If there is data in the dataset when you load it, this exception may be thrown.  
-  
+**Tips:** Relax or turn off constraints in your DataSets. You can use the EnforceConstraints property to temporarily turn off constraints while filling tables in a DataSet object.  
+ 
+Make sure you are not trying to assign a value to a primary key field where the primary key already exists in the data table. If the primary key exists, this exception is thrown.  
+ 
+Clear datasets before loading them from view state. If there is data in the dataset when you load it, this exception may be thrown.  
+ 
  ]]></format>
     </remarks>
   </Docs>

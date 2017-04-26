@@ -20,16 +20,16 @@
     <summary>Provides static methods to aid with remoting channel registration, resolution, and URL discovery. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Channels transport messages between applications across such remoting boundaries as application domains, processes, and computers. These crossings can be inbound and outbound. A channel can listen on an endpoint for inbound messages, send to an endpoint for outbound messages, or both. This provides an extensibility point in the runtime to plug in a wide range of protocols, even though the runtime might not be at the other end of the channel. Run-time objects can be used to expose a wide range of semantics and entities. The channel provides the extensibility point to convert the messages to and from the specific protocols.  
-  
- Channels must expose the <xref:System.Runtime.Remoting.Channels.IChannel> interface, which provides informational properties such as the <xref:System.Runtime.Remoting.Channels.IChannel.ChannelName%2A> and <xref:System.Runtime.Remoting.Channels.IChannel.ChannelPriority%2A>. Channels are registered using the <xref:System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel%2A?displayProperty=fullName> method. Channels can also be loaded from the remoting configuration. (See [\<channel> Element (Template)](http://msdn.microsoft.com/en-us/73399d48-f0fd-46e9-828b-6cdafde5ffce) for details.)  
-  
- On the client side, messages are handed off to the client channel sink chain after they traverse the client <xref:System.Runtime.Remoting.Contexts.Context> chain. The first channel sink is typically a <xref:System.Runtime.Remoting.Channels.IClientFormatterSink>, which serializes the message into a stream that is passed down the channel sink chain to the client transport sink. The client transport sink then writes this stream out to the wire.  
-  
- On the server side, the server transport sink reads requests off the wire and passes the request stream to the server channel sink chain. The server formatter sink at the end of this chain will deserialize the request into a message. It will then hand this message off to the remoting infrastructure, which will dispatch it to the server <xref:System.Runtime.Remoting.Contexts.Context> chain.  
-  
+Channels transport messages between applications across such remoting boundaries as application domains, processes, and computers. These crossings can be inbound and outbound. A channel can listen on an endpoint for inbound messages, send to an endpoint for outbound messages, or both. This provides an extensibility point in the runtime to plug in a wide range of protocols, even though the runtime might not be at the other end of the channel. Run-time objects can be used to expose a wide range of semantics and entities. The channel provides the extensibility point to convert the messages to and from the specific protocols.  
+ 
+Channels must expose the <xref:System.Runtime.Remoting.Channels.IChannel> interface, which provides informational properties such as the <xref:System.Runtime.Remoting.Channels.IChannel.ChannelName%2A> and <xref:System.Runtime.Remoting.Channels.IChannel.ChannelPriority%2A>. Channels are registered using the <xref:System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel%2A?displayProperty=fullName> method. Channels can also be loaded from the remoting configuration. (See [\<channel> Element (Template)](http://msdn.microsoft.com/en-us/73399d48-f0fd-46e9-828b-6cdafde5ffce) for details.)  
+ 
+On the client side, messages are handed off to the client channel sink chain after they traverse the client <xref:System.Runtime.Remoting.Contexts.Context> chain. The first channel sink is typically a <xref:System.Runtime.Remoting.Channels.IClientFormatterSink>, which serializes the message into a stream that is passed down the channel sink chain to the client transport sink. The client transport sink then writes this stream out to the wire.  
+ 
+On the server side, the server transport sink reads requests off the wire and passes the request stream to the server channel sink chain. The server formatter sink at the end of this chain will deserialize the request into a message. It will then hand this message off to the remoting infrastructure, which will dispatch it to the server <xref:System.Runtime.Remoting.Contexts.Context> chain.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,10 +58,10 @@
         <returns>A <see cref="T:System.Runtime.Remoting.Messaging.IMessageCtrl" /> object used to control the asynchronously dispatched message.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current method returns immediately, whether the server processed the specified message or not.  
-  
+The current method returns immediately, whether the server processed the specified message or not.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="msg" /> parameter is <see langword="null" />.</exception>
@@ -122,10 +122,10 @@
         <returns>A <see cref="T:System.Runtime.Remoting.Channels.ServerProcessing" /> that gives the status of the server message processing.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used by channels to dispatch incoming remote calls.  
-  
+This method is used by channels to dispatch incoming remote calls.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="msg" /> parameter is <see langword="null" />.</exception>
@@ -155,12 +155,12 @@
         <returns>An interface to a registered channel, or <see langword="null" /> if the channel is not registered.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ChannelServices_GetChannel#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ChannelServices_GetChannel/CPP/channelservices_getchannel_client.cpp#1)]
- [!code-csharp[ChannelServices_GetChannel#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ChannelServices_GetChannel/CS/channelservices_getchannel_client.cs#1)]
- [!code-vb[ChannelServices_GetChannel#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ChannelServices_GetChannel/VB/channelservices_getchannel_client.vb#1)]  
-  
+[!code-cpp[ChannelServices_GetChannel#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ChannelServices_GetChannel/CPP/channelservices_getchannel_client.cpp#1)]
+[!code-csharp[ChannelServices_GetChannel#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ChannelServices_GetChannel/CS/channelservices_getchannel_client.cs#1)]
+[!code-vb[ChannelServices_GetChannel#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ChannelServices_GetChannel/VB/channelservices_getchannel_client.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -189,12 +189,12 @@
         <returns>An interface to the dictionary of properties, or <see langword="null" /> if no properties were found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ChannelServices_GetChannel#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ChannelServices_GetChannel/CPP/channelservices_getchannel_client.cpp#2)]
- [!code-csharp[ChannelServices_GetChannel#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ChannelServices_GetChannel/CS/channelservices_getchannel_client.cs#2)]
- [!code-vb[ChannelServices_GetChannel#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ChannelServices_GetChannel/VB/channelservices_getchannel_client.vb#2)]  
-  
+[!code-cpp[ChannelServices_GetChannel#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ChannelServices_GetChannel/CPP/channelservices_getchannel_client.cpp#2)]
+[!code-csharp[ChannelServices_GetChannel#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ChannelServices_GetChannel/CS/channelservices_getchannel_client.cs#2)]
+[!code-vb[ChannelServices_GetChannel#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ChannelServices_GetChannel/VB/channelservices_getchannel_client.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">At least one of the callers that is higher in the callstack does not have permission to configure remoting types and channels.</exception>
@@ -223,12 +223,12 @@
         <returns>An array of strings that contains the URLs that can be used to remotely identify the object, or <see langword="null" /> if none were found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ChannelServices_RegisteredChannels#4](~/samples/snippets/cpp/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/CPP/channelservices_registeredchannels_client.cpp#4)]
- [!code-csharp[ChannelServices_RegisteredChannels#4](~/samples/snippets/csharp/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/CS/channelservices_registeredchannels_client.cs#4)]
- [!code-vb[ChannelServices_RegisteredChannels#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/VB/channelservices_registeredchannels_client.vb#4)]  
-  
+[!code-cpp[ChannelServices_RegisteredChannels#4](~/samples/snippets/cpp/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/CPP/channelservices_registeredchannels_client.cpp#4)]
+[!code-csharp[ChannelServices_RegisteredChannels#4](~/samples/snippets/csharp/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/CS/channelservices_registeredchannels_client.cs#4)]
+[!code-vb[ChannelServices_RegisteredChannels#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/VB/channelservices_registeredchannels_client.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -261,25 +261,25 @@
         <summary>Registers a channel with the channel services. <see cref="M:System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel(System.Runtime.Remoting.Channels.IChannel)" /> is obsolete. Please use <see cref="M:System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel(System.Runtime.Remoting.Channels.IChannel,System.Boolean)" /> instead.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  <xref:System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel%28System.Runtime.Remoting.Channels.IChannel%29> is obsolete. Please use <xref:System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel%28System.Runtime.Remoting.Channels.IChannel%2CSystem.Boolean%29> instead.  
+ 
+The <xref:System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel%2A> method takes in the <xref:System.Runtime.Remoting.Channels.IChannel> interface from a channel object. The channel's <xref:System.Runtime.Remoting.Channels.IChannel.ChannelName%2A> must be unique, or the channel must be anonymous. A channel is anonymous if the <xref:System.Runtime.Remoting.Channels.IChannel.ChannelName%2A?displayProperty=fullName> is set to either `null` or <xref:System.String.Empty> by using the `name` configuration property.  
+ 
+You cannot register two channels with the same name in a <xref:System.AppDomain>. By default, the name of a <xref:System.Runtime.Remoting.Channels.Http.HttpChannel> is "http" and the name of a <xref:System.Runtime.Remoting.Channels.Tcp.TcpChannel> is "tcp." Therefore, if you want to register two channels of the same type, you must specify a different name for one of them through configuration properties.  
+ 
+For more information about channel configuration properties, see <xref:System.Runtime.Remoting.Channels.Http.HttpChannel>, and [\<channel> Element (Template)](http://msdn.microsoft.com/en-us/73399d48-f0fd-46e9-828b-6cdafde5ffce).  
+ 
   
- The <xref:System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel%2A> method takes in the <xref:System.Runtime.Remoting.Channels.IChannel> interface from a channel object. The channel's <xref:System.Runtime.Remoting.Channels.IChannel.ChannelName%2A> must be unique, or the channel must be anonymous. A channel is anonymous if the <xref:System.Runtime.Remoting.Channels.IChannel.ChannelName%2A?displayProperty=fullName> is set to either `null` or <xref:System.String.Empty> by using the `name` configuration property.  
-  
- You cannot register two channels with the same name in a <xref:System.AppDomain>. By default, the name of a <xref:System.Runtime.Remoting.Channels.Http.HttpChannel> is "http" and the name of a <xref:System.Runtime.Remoting.Channels.Tcp.TcpChannel> is "tcp." Therefore, if you want to register two channels of the same type, you must specify a different name for one of them through configuration properties.  
-  
- For more information about channel configuration properties, see <xref:System.Runtime.Remoting.Channels.Http.HttpChannel>, and [\<channel> Element (Template)](http://msdn.microsoft.com/en-us/73399d48-f0fd-46e9-828b-6cdafde5ffce).  
-  
-   
-  
+ 
 ## Examples  
- [!code-cpp[HttpChannel#1](~/samples/snippets/cpp/VS_Snippets_Remoting/HttpChannel/CPP/server.cpp#1)]
- [!code-csharp[HttpChannel#1](~/samples/snippets/csharp/VS_Snippets_Remoting/HttpChannel/CS/server.cs#1)]
- [!code-vb[HttpChannel#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/HttpChannel/VB/server.vb#1)]  
-  
+[!code-cpp[HttpChannel#1](~/samples/snippets/cpp/VS_Snippets_Remoting/HttpChannel/CPP/server.cpp#1)]
+[!code-csharp[HttpChannel#1](~/samples/snippets/csharp/VS_Snippets_Remoting/HttpChannel/CS/server.cs#1)]
+[!code-vb[HttpChannel#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/HttpChannel/VB/server.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="chnl" /> parameter is <see langword="null" />.</exception>
@@ -312,19 +312,19 @@
         <summary>Registers a channel with the channel services.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel%28System.Runtime.Remoting.Channels.IChannel%2CSystem.Boolean%29> method receives the <xref:System.Runtime.Remoting.Channels.IChannel> interface from a channel object. The channel's <xref:System.Runtime.Remoting.Channels.IChannel.ChannelName%2A> must be unique, or the channel must be anonymous. A channel is anonymous if the <xref:System.Runtime.Remoting.Channels.IChannel.ChannelName%2A?displayProperty=fullName> is set to either `null` or <xref:System.String.Empty> by using the `name` configuration property.  
-  
- You cannot register two channels with the same name in a <xref:System.AppDomain>. By default, the name of a <xref:System.Runtime.Remoting.Channels.Http.HttpChannel> is "http" and the name of a <xref:System.Runtime.Remoting.Channels.Tcp.TcpChannel> is "tcp". Therefore, if you want to register two channels of the same type, you must specify a different name for one of them through configuration properties.  
-  
- For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe) and [\<channel> Element (Template)](http://msdn.microsoft.com/en-us/73399d48-f0fd-46e9-828b-6cdafde5ffce).  
-  
- If the `ensureSecurity` parameter is set to `true`, the remoting system determines whether the channel implements <xref:System.Runtime.Remoting.Channels.ISecurableChannel>, and if so, enables encryption and digital signatures. An exception is thrown if the channel does not implement <xref:System.Runtime.Remoting.Channels.ISecurableChannel>.  
-  
+The <xref:System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel%28System.Runtime.Remoting.Channels.IChannel%2CSystem.Boolean%29> method receives the <xref:System.Runtime.Remoting.Channels.IChannel> interface from a channel object. The channel's <xref:System.Runtime.Remoting.Channels.IChannel.ChannelName%2A> must be unique, or the channel must be anonymous. A channel is anonymous if the <xref:System.Runtime.Remoting.Channels.IChannel.ChannelName%2A?displayProperty=fullName> is set to either `null` or <xref:System.String.Empty> by using the `name` configuration property.  
+ 
+You cannot register two channels with the same name in a <xref:System.AppDomain>. By default, the name of a <xref:System.Runtime.Remoting.Channels.Http.HttpChannel> is "http" and the name of a <xref:System.Runtime.Remoting.Channels.Tcp.TcpChannel> is "tcp". Therefore, if you want to register two channels of the same type, you must specify a different name for one of them through configuration properties.  
+ 
+For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe) and [\<channel> Element (Template)](http://msdn.microsoft.com/en-us/73399d48-f0fd-46e9-828b-6cdafde5ffce).  
+ 
+If the `ensureSecurity` parameter is set to `true`, the remoting system determines whether the channel implements <xref:System.Runtime.Remoting.Channels.ISecurableChannel>, and if so, enables encryption and digital signatures. An exception is thrown if the channel does not implement <xref:System.Runtime.Remoting.Channels.ISecurableChannel>.  
+ 
 > [!NOTE]
 >  Setting `ensureSecurity` to `true` throws a <xref:System.Runtime.Remoting.RemotingException> for the <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel> on Windows 98 (Since secure tcp channels are not supported on Windows 9x), and for the <xref:System.Runtime.Remoting.Channels.Http.HttpServerChannel> on all platforms (You must host your service in IIS if you want to use a secure http channel).  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="chnl" /> parameter is <see langword="null" />.</exception>
@@ -352,12 +352,12 @@
         <value>An array of all the currently registered channels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ChannelServices_RegisteredChannels#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/CPP/channelservices_registeredchannels_server.cpp#2)]
- [!code-csharp[ChannelServices_RegisteredChannels#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/CS/channelservices_registeredchannels_server.cs#2)]
- [!code-vb[ChannelServices_RegisteredChannels#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/VB/channelservices_registeredchannels_server.vb#2)]  
-  
+[!code-cpp[ChannelServices_RegisteredChannels#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/CPP/channelservices_registeredchannels_server.cpp#2)]
+[!code-csharp[ChannelServices_RegisteredChannels#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/CS/channelservices_registeredchannels_server.cs#2)]
+[!code-vb[ChannelServices_RegisteredChannels#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/VB/channelservices_registeredchannels_server.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -386,12 +386,12 @@
         <returns>A reply message is returned by the call to the server-side chain.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ChannelServices_SyncDispatchMessage#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ChannelServices_SyncDispatchMessage/CPP/channelservices_syncdispatchmessage_client.cpp#1)]
- [!code-csharp[ChannelServices_SyncDispatchMessage#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ChannelServices_SyncDispatchMessage/CS/channelservices_syncdispatchmessage_client.cs#1)]
- [!code-vb[ChannelServices_SyncDispatchMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ChannelServices_SyncDispatchMessage/VB/channelservices_syncdispatchmessage_client.vb#1)]  
-  
+[!code-cpp[ChannelServices_SyncDispatchMessage#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ChannelServices_SyncDispatchMessage/CPP/channelservices_syncdispatchmessage_client.cpp#1)]
+[!code-csharp[ChannelServices_SyncDispatchMessage#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ChannelServices_SyncDispatchMessage/CS/channelservices_syncdispatchmessage_client.cs#1)]
+[!code-vb[ChannelServices_SyncDispatchMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ChannelServices_SyncDispatchMessage/VB/channelservices_syncdispatchmessage_client.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="msg" /> parameter is <see langword="null" />.</exception>
@@ -420,12 +420,12 @@
         <summary>Unregisters a particular channel from the registered channels list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ChannelServices_RegisteredChannels#3](~/samples/snippets/cpp/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/CPP/channelservices_registeredchannels_server.cpp#3)]
- [!code-csharp[ChannelServices_RegisteredChannels#3](~/samples/snippets/csharp/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/CS/channelservices_registeredchannels_server.cs#3)]
- [!code-vb[ChannelServices_RegisteredChannels#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/VB/channelservices_registeredchannels_server.vb#3)]  
-  
+[!code-cpp[ChannelServices_RegisteredChannels#3](~/samples/snippets/cpp/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/CPP/channelservices_registeredchannels_server.cpp#3)]
+[!code-csharp[ChannelServices_RegisteredChannels#3](~/samples/snippets/csharp/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/CS/channelservices_registeredchannels_server.cs#3)]
+[!code-vb[ChannelServices_RegisteredChannels#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ChannelServices_RegisteredChannels/VB/channelservices_registeredchannels_server.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="chnl" /> parameter is <see langword="null" />.</exception>

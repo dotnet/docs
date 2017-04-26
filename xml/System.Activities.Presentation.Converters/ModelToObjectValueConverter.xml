@@ -18,10 +18,10 @@
     <summary>Converts a <see langword="ModelItem" /> to the value of the inner object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used when binding to a whole object in XAML.  
-  
+This class is used when binding to a whole object in XAML.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,10 +96,10 @@
         <returns>Returns a <see cref="T:System.Object" /> that contains the unmodified value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does nothing to the value because <xref:System.Activities.Presentation.Model.ModelProperty.SetValue%2A> can accept  the value without modification.  
-  
+This method does nothing to the value because <xref:System.Activities.Presentation.Model.ModelProperty.SetValue%2A> can accept  the value without modification.  
+ 
  ]]></format>
         </remarks>
       </Docs>

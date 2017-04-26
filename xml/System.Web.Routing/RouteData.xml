@@ -19,10 +19,10 @@
     <summary>Encapsulates information about a route.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Routing.RouteData> class contains the values for a requested route. Typically, you retrieve a <xref:System.Web.Routing.RouteData> object by calling the <xref:System.Web.Routing.RouteCollection.GetRouteData%2A> method.  
-  
+The <xref:System.Web.Routing.RouteData> class contains the values for a requested route. Typically, you retrieve a <xref:System.Web.Routing.RouteData> object by calling the <xref:System.Web.Routing.RouteCollection.GetRouteData%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,10 +79,10 @@
         <value>An object that contains custom values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.Web.Routing.RouteData.DataTokens%2A> property to retrieve values associated with the route that are not used when ASP.NET routing determines whether a route matches a request. A custom route handler might have to retrieve these values when it is processing the request.  
-  
+You use the <xref:System.Web.Routing.RouteData.DataTokens%2A> property to retrieve values associated with the route that are not used when ASP.NET routing determines whether a route matches a request. A custom route handler might have to retrieve these values when it is processing the request.  
+ 
  ]]></format>
         </remarks>
       </Docs>

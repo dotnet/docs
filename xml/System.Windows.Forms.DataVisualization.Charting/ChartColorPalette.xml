@@ -13,16 +13,16 @@
     <summary>Specifies a palette when setting a Palette property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette> enumeration represents the palettes to be used for the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object and any <xref:System.Windows.Forms.DataVisualization.Charting.Series> objects.  
-  
- If no colors are assigned to data points and their associated series, the default colors will be assigned to the data. For example:  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette> enumeration represents the palettes to be used for the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object and any <xref:System.Windows.Forms.DataVisualization.Charting.Series> objects.  
+ 
+If no colors are assigned to data points and their associated series, the default colors will be assigned to the data. For example:  
+ 
 -   If <xref:System.Windows.Forms.DataVisualization.Charting.Chart.Palette%2A> is set to None, then the default palette is set to <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PaletteCustomColors%2A> or BrightPastel.  
-  
- If.<xref:System.Windows.Forms.DataVisualization.Charting.Series.Palette%2A> is set to None, then the default palette for the chart is used (<xref:System.Windows.Forms.DataVisualization.Charting.Chart.Palette%2A>).  
-  
+ 
+If.<xref:System.Windows.Forms.DataVisualization.Charting.Series.Palette%2A> is set to None, then the default palette for the chart is used (<xref:System.Windows.Forms.DataVisualization.Charting.Chart.Palette%2A>).  
+ 
  ]]></format>
     </remarks>
   </Docs>

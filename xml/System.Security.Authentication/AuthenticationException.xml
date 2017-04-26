@@ -24,15 +24,15 @@
     <summary>The exception that is thrown when authentication fails for an authentication stream.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Security.NegotiateStream> and <xref:System.Net.Security.SslStream> classes throw this exception when the client or server cannot be authenticated. When this exception is thrown, you can retry the authentication with different credentials. If you cannot retry the authentication, a <xref:System.Security.Authentication.InvalidCredentialException> is thrown instead of the <xref:System.Security.Authentication.AuthenticationException>.  
+The <xref:System.Net.Security.NegotiateStream> and <xref:System.Net.Security.SslStream> classes throw this exception when the client or server cannot be authenticated. When this exception is thrown, you can retry the authentication with different credentials. If you cannot retry the authentication, a <xref:System.Security.Authentication.InvalidCredentialException> is thrown instead of the <xref:System.Security.Authentication.AuthenticationException>.  
+ 
   
-   
-  
+ 
 ## Examples  
- <xref:System.Net.Security.NegotiateStream> &#124; <xref:System.Net.Security.SslStream>  
-  
+<xref:System.Net.Security.NegotiateStream> &#124; <xref:System.Net.Security.SslStream>  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Authentication.AuthenticationException" /> class with no message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor does nothing.  
-  
+This constructor does nothing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,10 +94,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Authentication.AuthenticationException" /> class with the specified message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property with the text in the `message` parameter. The <xref:System.Exception.InnerException%2A> property is set to `null`.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A> property with the text in the `message` parameter. The <xref:System.Exception.InnerException%2A> property is set to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Authentication.AuthenticationException" /> class with the specified message and inner exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property with the text in the `message` parameter and initializes the <xref:System.Exception.InnerException%2A> property with the `innerException` parameter value.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A> property with the text in the `message` parameter and initializes the <xref:System.Exception.InnerException%2A> property with the `innerException` parameter value.  
+ 
  ]]></format>
         </remarks>
       </Docs>

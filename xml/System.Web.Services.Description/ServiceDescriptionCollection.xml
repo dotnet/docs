@@ -15,12 +15,12 @@
     <summary>Represents a collection of instances of the <see cref="T:System.Web.Services.Description.ServiceDescription" /> class. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection/CPP/servicedescriptioncollection.cpp#1)]
- [!code-csharp[ServiceDescriptionCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection/CS/servicedescriptioncollection.cs#1)]
- [!code-vb[ServiceDescriptionCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection/VB/servicedescriptioncollection.vb#1)]  
-  
+[!code-cpp[ServiceDescriptionCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection/CPP/servicedescriptioncollection.cpp#1)]
+[!code-csharp[ServiceDescriptionCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection/CS/servicedescriptioncollection.cs#1)]
+[!code-vb[ServiceDescriptionCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection/VB/servicedescriptioncollection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -40,12 +40,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.ServiceDescriptionCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionCollection_Constructor_Add_Item#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/CPP/sdcollection_constructor_add_item.cpp#1)]
- [!code-csharp[ServiceDescriptionCollection_Constructor_Add_Item#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/CS/servicedescriptioncollection_constructor_add_item.cs#1)]
- [!code-vb[ServiceDescriptionCollection_Constructor_Add_Item#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/VB/servicedescriptioncollection_constructor_add_item.vb#1)]  
-  
+[!code-cpp[ServiceDescriptionCollection_Constructor_Add_Item#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/CPP/sdcollection_constructor_add_item.cpp#1)]
+[!code-csharp[ServiceDescriptionCollection_Constructor_Add_Item#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/CS/servicedescriptioncollection_constructor_add_item.cs#1)]
+[!code-vb[ServiceDescriptionCollection_Constructor_Add_Item#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/VB/servicedescriptioncollection_constructor_add_item.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -72,12 +72,12 @@
         <returns>The zero-based index where the <see cref="T:System.Web.Services.Description.ServiceDescription" /> parameter has been added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionCollection_Constructor_Add_Item#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/CPP/sdcollection_constructor_add_item.cpp#2)]
- [!code-csharp[ServiceDescriptionCollection_Constructor_Add_Item#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/CS/servicedescriptioncollection_constructor_add_item.cs#2)]
- [!code-vb[ServiceDescriptionCollection_Constructor_Add_Item#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/VB/servicedescriptioncollection_constructor_add_item.vb#2)]  
-  
+[!code-cpp[ServiceDescriptionCollection_Constructor_Add_Item#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/CPP/sdcollection_constructor_add_item.cpp#2)]
+[!code-csharp[ServiceDescriptionCollection_Constructor_Add_Item#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/CS/servicedescriptioncollection_constructor_add_item.cs#2)]
+[!code-vb[ServiceDescriptionCollection_Constructor_Add_Item#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/VB/servicedescriptioncollection_constructor_add_item.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,11 +105,11 @@
           <see langword="true" /> if the <paramref name="serviceDescription" /> parameter is a member of the <see cref="T:System.Web.Services.Description.ServiceDescriptionCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[ServiceDescriptionCollection_Contains_IndexOf_Remove#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Contains_IndexOf_Remove/CS/servicedescriptioncollection_contains_indexof_remove.cs#1)]
- [!code-vb[ServiceDescriptionCollection_Contains_IndexOf_Remove#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Contains_IndexOf_Remove/VB/servicedescriptioncollection_contains_indexof_remove.vb#1)]  
-  
+[!code-csharp[ServiceDescriptionCollection_Contains_IndexOf_Remove#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Contains_IndexOf_Remove/CS/servicedescriptioncollection_contains_indexof_remove.cs#1)]
+[!code-vb[ServiceDescriptionCollection_Contains_IndexOf_Remove#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Contains_IndexOf_Remove/VB/servicedescriptioncollection_contains_indexof_remove.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,12 +137,12 @@
         <summary>Copies the entire <see cref="T:System.Web.Services.Description.ServiceDescriptionCollection" /> to a one-dimensional array of type <see cref="T:System.Web.Services.Description.ServiceDescription" />, starting at the specified zero-based index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionCollection_Insert_Item_CopyTo#3](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/CPP/sdcollection_insert_item_copyto.cpp#3)]
- [!code-csharp[ServiceDescriptionCollection_Insert_Item_CopyTo#3](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/CS/servicedescriptioncollection_insert_item_copyto.cs#3)]
- [!code-vb[ServiceDescriptionCollection_Insert_Item_CopyTo#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/VB/servicedescriptioncollection_insert_item_copyto.vb#3)]  
-  
+[!code-cpp[ServiceDescriptionCollection_Insert_Item_CopyTo#3](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/CPP/sdcollection_insert_item_copyto.cpp#3)]
+[!code-csharp[ServiceDescriptionCollection_Insert_Item_CopyTo#3](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/CS/servicedescriptioncollection_insert_item_copyto.cs#3)]
+[!code-vb[ServiceDescriptionCollection_Insert_Item_CopyTo#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/VB/servicedescriptioncollection_insert_item_copyto.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,12 +169,12 @@
         <returns>The binding with the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionCollection_GetBinding#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetBinding/CPP/servicedescriptioncollection_getbinding.cpp#1)]
- [!code-csharp[ServiceDescriptionCollection_GetBinding#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetBinding/CS/servicedescriptioncollection_getbinding.cs#1)]
- [!code-vb[ServiceDescriptionCollection_GetBinding#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_GetBinding/VB/servicedescriptioncollection_getbinding.vb#1)]  
-  
+[!code-cpp[ServiceDescriptionCollection_GetBinding#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetBinding/CPP/servicedescriptioncollection_getbinding.cpp#1)]
+[!code-csharp[ServiceDescriptionCollection_GetBinding#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetBinding/CS/servicedescriptioncollection_getbinding.cs#1)]
+[!code-vb[ServiceDescriptionCollection_GetBinding#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_GetBinding/VB/servicedescriptioncollection_getbinding.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The specified <see langword="Binding" /> is not a member of any <see cref="T:System.Web.Services.Description.ServiceDescription" /> instances within the collection.</exception>
@@ -225,12 +225,12 @@
         <returns>The message with the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionCollection_GetMessage#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetMessage/CPP/servicedescriptioncollection_getmessage.cpp#1)]
- [!code-csharp[ServiceDescriptionCollection_GetMessage#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetMessage/CS/servicedescriptioncollection_getmessage.cs#1)]
- [!code-vb[ServiceDescriptionCollection_GetMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_GetMessage/VB/servicedescriptioncollection_getmessage.vb#1)]  
-  
+[!code-cpp[ServiceDescriptionCollection_GetMessage#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetMessage/CPP/servicedescriptioncollection_getmessage.cpp#1)]
+[!code-csharp[ServiceDescriptionCollection_GetMessage#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetMessage/CS/servicedescriptioncollection_getmessage.cs#1)]
+[!code-vb[ServiceDescriptionCollection_GetMessage#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_GetMessage/VB/servicedescriptioncollection_getmessage.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The specified <see langword="Message" /> is not a member of any <see cref="T:System.Web.Services.Description.ServiceDescription" /> instances within the collection.</exception>
@@ -258,12 +258,12 @@
         <returns>The <see langword="PortType" /> with the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionCollection_GetPortType#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetPortType/CPP/servicedescriptioncollection_getporttype.cpp#1)]
- [!code-csharp[ServiceDescriptionCollection_GetPortType#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetPortType/CS/servicedescriptioncollection_getporttype.cs#1)]
- [!code-vb[ServiceDescriptionCollection_GetPortType#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_GetPortType/VB/servicedescriptioncollection_getporttype.vb#1)]  
-  
+[!code-cpp[ServiceDescriptionCollection_GetPortType#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetPortType/CPP/servicedescriptioncollection_getporttype.cpp#1)]
+[!code-csharp[ServiceDescriptionCollection_GetPortType#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetPortType/CS/servicedescriptioncollection_getporttype.cs#1)]
+[!code-vb[ServiceDescriptionCollection_GetPortType#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_GetPortType/VB/servicedescriptioncollection_getporttype.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The specified <see langword="PortType" /> is not a member of any <see cref="T:System.Web.Services.Description.ServiceDescription" /> instances within the collection.</exception>
@@ -291,12 +291,12 @@
         <returns>The service with the specified name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionCollection_GetService#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetService/CPP/servicedescriptioncollection_getservice.cpp#1)]
- [!code-csharp[ServiceDescriptionCollection_GetService#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetService/CS/servicedescriptioncollection_getservice.cs#1)]
- [!code-vb[ServiceDescriptionCollection_GetService#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_GetService/VB/servicedescriptioncollection_getservice.vb#1)]  
-  
+[!code-cpp[ServiceDescriptionCollection_GetService#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetService/CPP/servicedescriptioncollection_getservice.cpp#1)]
+[!code-csharp[ServiceDescriptionCollection_GetService#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_GetService/CS/servicedescriptioncollection_getservice.cs#1)]
+[!code-vb[ServiceDescriptionCollection_GetService#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_GetService/VB/servicedescriptioncollection_getservice.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The specified <see langword="Service" /> is not a member of any <see cref="T:System.Web.Services.Description.ServiceDescription" /> instances within the collection.</exception>
@@ -324,11 +324,11 @@
         <returns>The zero-based index of the specified service description, or -1 if the element was not found in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[ServiceDescriptionCollection_Contains_IndexOf_Remove#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Contains_IndexOf_Remove/CS/servicedescriptioncollection_contains_indexof_remove.cs#2)]
- [!code-vb[ServiceDescriptionCollection_Contains_IndexOf_Remove#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Contains_IndexOf_Remove/VB/servicedescriptioncollection_contains_indexof_remove.vb#2)]  
-  
+[!code-csharp[ServiceDescriptionCollection_Contains_IndexOf_Remove#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Contains_IndexOf_Remove/CS/servicedescriptioncollection_contains_indexof_remove.cs#2)]
+[!code-vb[ServiceDescriptionCollection_Contains_IndexOf_Remove#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Contains_IndexOf_Remove/VB/servicedescriptioncollection_contains_indexof_remove.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -356,21 +356,21 @@
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.ServiceDescription" /> instance to the <see cref="T:System.Web.Services.Description.ServiceDescriptionCollection" /> at the specified zero-based index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+ 
+If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `serviceDescription` parameter is added to the end of the <xref:System.Web.Services.Description.ServiceDescriptionCollection>.  
+ 
+The elements after the insertion point move down to accommodate the new element.  
+ 
   
- If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `serviceDescription` parameter is added to the end of the <xref:System.Web.Services.Description.ServiceDescriptionCollection>.  
-  
- The elements after the insertion point move down to accommodate the new element.  
-  
-   
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionCollection_Insert_Item_CopyTo#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/CPP/sdcollection_insert_item_copyto.cpp#1)]
- [!code-csharp[ServiceDescriptionCollection_Insert_Item_CopyTo#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/CS/servicedescriptioncollection_insert_item_copyto.cs#1)]
- [!code-vb[ServiceDescriptionCollection_Insert_Item_CopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/VB/servicedescriptioncollection_insert_item_copyto.vb#1)]  
-  
+[!code-cpp[ServiceDescriptionCollection_Insert_Item_CopyTo#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/CPP/sdcollection_insert_item_copyto.cpp#1)]
+[!code-csharp[ServiceDescriptionCollection_Insert_Item_CopyTo#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/CS/servicedescriptioncollection_insert_item_copyto.cs#1)]
+[!code-vb[ServiceDescriptionCollection_Insert_Item_CopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/VB/servicedescriptioncollection_insert_item_copyto.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is less than zero.  
@@ -402,12 +402,12 @@
         <value>The value of a <see cref="T:System.Web.Services.Description.ServiceDescription" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionCollection_Constructor_Add_Item#3](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/CPP/sdcollection_constructor_add_item.cpp#3)]
- [!code-csharp[ServiceDescriptionCollection_Constructor_Add_Item#3](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/CS/servicedescriptioncollection_constructor_add_item.cs#3)]
- [!code-vb[ServiceDescriptionCollection_Constructor_Add_Item#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/VB/servicedescriptioncollection_constructor_add_item.vb#3)]  
-  
+[!code-cpp[ServiceDescriptionCollection_Constructor_Add_Item#3](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/CPP/sdcollection_constructor_add_item.cpp#3)]
+[!code-csharp[ServiceDescriptionCollection_Constructor_Add_Item#3](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/CS/servicedescriptioncollection_constructor_add_item.cs#3)]
+[!code-vb[ServiceDescriptionCollection_Constructor_Add_Item#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Constructor_Add_Item/VB/servicedescriptioncollection_constructor_add_item.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -434,12 +434,12 @@
         <value>A <see cref="T:System.Web.Services.Description.ServiceDescription" /> specified by its namespace property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ServiceDescriptionCollection_Insert_Item_CopyTo#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/CPP/sdcollection_insert_item_copyto.cpp#2)]
- [!code-csharp[ServiceDescriptionCollection_Insert_Item_CopyTo#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/CS/servicedescriptioncollection_insert_item_copyto.cs#2)]
- [!code-vb[ServiceDescriptionCollection_Insert_Item_CopyTo#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/VB/servicedescriptioncollection_insert_item_copyto.vb#2)]  
-  
+[!code-cpp[ServiceDescriptionCollection_Insert_Item_CopyTo#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/CPP/sdcollection_insert_item_copyto.cpp#2)]
+[!code-csharp[ServiceDescriptionCollection_Insert_Item_CopyTo#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/CS/servicedescriptioncollection_insert_item_copyto.cs#2)]
+[!code-vb[ServiceDescriptionCollection_Insert_Item_CopyTo#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Insert_Item_CopyTo/VB/servicedescriptioncollection_insert_item_copyto.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -489,18 +489,18 @@
         <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.ServiceDescription" /> from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+ 
+The elements that follow the removed <xref:System.Web.Services.Description.ServiceDescription> move up to occupy the vacated spot.  
+ 
   
- The elements that follow the removed <xref:System.Web.Services.Description.ServiceDescription> move up to occupy the vacated spot.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[ServiceDescriptionCollection_Contains_IndexOf_Remove#3](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Contains_IndexOf_Remove/CS/servicedescriptioncollection_contains_indexof_remove.cs#3)]
- [!code-vb[ServiceDescriptionCollection_Contains_IndexOf_Remove#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Contains_IndexOf_Remove/VB/servicedescriptioncollection_contains_indexof_remove.vb#3)]  
-  
+[!code-csharp[ServiceDescriptionCollection_Contains_IndexOf_Remove#3](~/samples/snippets/csharp/VS_Snippets_Remoting/ServiceDescriptionCollection_Contains_IndexOf_Remove/CS/servicedescriptioncollection_contains_indexof_remove.cs#3)]
+[!code-vb[ServiceDescriptionCollection_Contains_IndexOf_Remove#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ServiceDescriptionCollection_Contains_IndexOf_Remove/VB/servicedescriptioncollection_contains_indexof_remove.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

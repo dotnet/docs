@@ -13,10 +13,10 @@
     <summary>Specifies the type of session support that is required in order to handle a request.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SessionState.SessionStateBehavior> enumeration is used with the <xref:System.Web.HttpContext.SetSessionStateBehavior%2A> method. You can call this method to indicate that session state support is needed to handle a request, and pass a <xref:System.Web.SessionState.SessionStateBehavior> enumeration value to specify what type of session state behavior applies to the request.  
-  
+The <xref:System.Web.SessionState.SessionStateBehavior> enumeration is used with the <xref:System.Web.HttpContext.SetSessionStateBehavior%2A> method. You can call this method to indicate that session state support is needed to handle a request, and pass a <xref:System.Web.SessionState.SessionStateBehavior> enumeration value to specify what type of session state behavior applies to the request.  
+ 
  ]]></format>
     </remarks>
   </Docs>

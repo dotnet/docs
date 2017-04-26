@@ -13,19 +13,19 @@
     <summary>Specifies the HTML tags that can be passed to an <see cref="T:System.Web.UI.HtmlTextWriter" /> or <see cref="T:System.Web.UI.Html32TextWriter" /> object output stream.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration allows the output stream to write HTML mark up, along with HTML server controls, in response to a Web request.  
+This enumeration allows the output stream to write HTML mark up, along with HTML server controls, in response to a Web request.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Web.UI.HtmlTextWriterTag> enumeration. The Img field is used during rendering of an <xref:System.Web.UI.HtmlTextWriter> named `writer`.  
-  
- [!code-cpp[System.Web.UI.HtmlTextWriter#3](~/samples/snippets/cpp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CPP/htmltextwriter.cpp#3)]
- [!code-csharp[System.Web.UI.HtmlTextWriter#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CS/htmltextwriter.cs#3)]
- [!code-vb[System.Web.UI.HtmlTextWriter#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/VB/htmltextwriter.vb#3)]  
-  
+The following example demonstrates the use of the <xref:System.Web.UI.HtmlTextWriterTag> enumeration. The Img field is used during rendering of an <xref:System.Web.UI.HtmlTextWriter> named `writer`.  
+ 
+[!code-cpp[System.Web.UI.HtmlTextWriter#3](~/samples/snippets/cpp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CPP/htmltextwriter.cpp#3)]
+[!code-csharp[System.Web.UI.HtmlTextWriter#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CS/htmltextwriter.cs#3)]
+[!code-vb[System.Web.UI.HtmlTextWriter#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/VB/htmltextwriter.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

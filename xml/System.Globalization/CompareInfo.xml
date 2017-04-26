@@ -33,40 +33,40 @@
     <summary>Implements a set of methods for culture-sensitive string comparisons.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conventions for comparing and sorting data vary from culture to culture. For example, sort order may be based on phonetics or on the visual representation of characters. In East Asian languages, characters are sorted by the stroke and radical of ideographs. Sorting also depends on the order languages and cultures use for the alphabet. For example, the Danish language has an "Æ" character that it sorts after "Z" in the alphabet. In addition, comparisons may be case-sensitive or case-insensitive, and casing rules may also differ by culture. The <xref:System.Globalization.CompareInfo> class is responsible for maintaining this culture-sensitive string comparison data and for performing culture-sensitive string operations.  
-  
- Typically, you do not have to instantiate a <xref:System.Globalization.CompareInfo> object directly, because one is used implicitly by all non-ordinal string comparison operations, including calls to the <xref:System.String.Compare%2A?displayProperty=fullName> method. However, if you do want to retrieve a <xref:System.Globalization.CompareInfo> object, you can do it in one of these ways:  
-  
+Conventions for comparing and sorting data vary from culture to culture. For example, sort order may be based on phonetics or on the visual representation of characters. In East Asian languages, characters are sorted by the stroke and radical of ideographs. Sorting also depends on the order languages and cultures use for the alphabet. For example, the Danish language has an "Æ" character that it sorts after "Z" in the alphabet. In addition, comparisons may be case-sensitive or case-insensitive, and casing rules may also differ by culture. The <xref:System.Globalization.CompareInfo> class is responsible for maintaining this culture-sensitive string comparison data and for performing culture-sensitive string operations.  
+ 
+Typically, you do not have to instantiate a <xref:System.Globalization.CompareInfo> object directly, because one is used implicitly by all non-ordinal string comparison operations, including calls to the <xref:System.String.Compare%2A?displayProperty=fullName> method. However, if you do want to retrieve a <xref:System.Globalization.CompareInfo> object, you can do it in one of these ways:  
+ 
 -   By retrieving the value of the <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=fullName> property for a particular culture.  
-  
+ 
 -   By calling the static <xref:System.Globalization.CompareInfo.GetCompareInfo%2A> method with a culture name. This allows for late-bound access to a <xref:System.Globalization.CompareInfo> object.  
-  
+ 
 ## Ignored search values  
- Character sets include ignorable characters, which are characters that are not considered when performing a linguistic or culture-sensitive comparison. Comparison methods such as <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> do not consider such characters when they perform a culture-sensitive comparison. Ignorable characters include:  
-  
+Character sets include ignorable characters, which are characters that are not considered when performing a linguistic or culture-sensitive comparison. Comparison methods such as <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> do not consider such characters when they perform a culture-sensitive comparison. Ignorable characters include:  
+ 
 -   <xref:System.String.Empty?displayProperty=fullName>. Culture-sensitive comparison methods will always find an empty string at the beginning (index zero) of the string being searched.  
-  
+ 
 -   A character or string consisting of characters with code points that are not considered in the operation because of comparison options, In particular, the  <xref:System.Globalization.CompareOptions?displayProperty=fullName> and <xref:System.Globalization.CompareOptions?displayProperty=fullName> options produce searches in which symbols and nonspacing combining characters are ignored.  
-  
+ 
 -   A string with code points that have no linguistic significance. For example, a soft hyphen (U+00AD) is always ignored in a culture-sensitive string comparison.  
-  
+ 
 ## Security considerations  
- If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent, regardless of the culture settings of the operating system.  
-  
+If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent, regardless of the culture settings of the operating system.  
+ 
 > [!NOTE]
 >  When possible, you should use string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how the <xref:System.Globalization.CompareInfo> object associated with a <xref:System.Globalization.CultureInfo> object affects string comparison.  
-  
- [!code-cpp[CompareInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/CompareInfo/cpp/CompareInfo.cpp#1)]
- [!code-csharp[CompareInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/CompareInfo/CS/CompareInfo.cs#1)]
- [!code-vb[CompareInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompareInfo/VB/CompareInfo.vb#1)]  
-  
+The following example shows how the <xref:System.Globalization.CompareInfo> object associated with a <xref:System.Globalization.CultureInfo> object affects string comparison.  
+ 
+[!code-cpp[CompareInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/CompareInfo/cpp/CompareInfo.cpp#1)]
+[!code-csharp[CompareInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/CompareInfo/CS/CompareInfo.cs#1)]
+[!code-vb[CompareInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompareInfo/VB/CompareInfo.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -139,34 +139,34 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the comparison is performed by using <xref:System.Globalization.CompareOptions?displayProperty=fullName>. If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
-  
+By default, the comparison is performed by using <xref:System.Globalization.CompareOptions?displayProperty=fullName>. If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example compares portions of two strings using the different <xref:System.Globalization.CompareInfo> objects:  
-  
+The following example compares portions of two strings using the different <xref:System.Globalization.CompareInfo> objects:  
+ 
 -   <xref:System.Globalization.CompareInfo> object associated with the Spanish (Spain) culture with international sort  
-  
+ 
 -   <xref:System.Globalization.CompareInfo> object associated with the Spanish (Spain) culture with traditional sort  
-  
+ 
 -   <xref:System.Globalization.CompareInfo> object associated with the <xref:System.Globalization.CultureInfo.InvariantCulture%2A>  
-  
- [!code-cpp[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/CPP/comparestrstr.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/CS/comparestrstr.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/VB/comparestrstr.vb#1)]  
-  
- The following example demonstrates calling the <xref:System.Globalization.CompareInfo.Compare%2A> method.  
-  
- [!code-cpp[CompareInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/CompareInfo/cpp/CompareInfo.cpp#1)]
- [!code-csharp[CompareInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/CompareInfo/CS/CompareInfo.cs#1)]
- [!code-vb[CompareInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompareInfo/VB/CompareInfo.vb#1)]  
-  
+ 
+[!code-cpp[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/CPP/comparestrstr.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/CS/comparestrstr.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/VB/comparestrstr.vb#1)]  
+ 
+The following example demonstrates calling the <xref:System.Globalization.CompareInfo.Compare%2A> method.  
+ 
+[!code-cpp[CompareInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/CompareInfo/cpp/CompareInfo.cpp#1)]
+[!code-csharp[CompareInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/CompareInfo/CS/CompareInfo.cs#1)]
+[!code-vb[CompareInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompareInfo/VB/CompareInfo.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
@@ -253,28 +253,28 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
-  
+If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example compares two strings using different <xref:System.Globalization.CompareOptions> settings.  
-  
- [!code-cpp[System.Globalization.CompareInfo.CompareStrStrOpt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStrOpt/CPP/comparestrstropt.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.CompareStrStrOpt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStrOpt/CS/comparestrstropt.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.CompareStrStrOpt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStrOpt/VB/comparestrstropt.vb#1)]  
-  
- The following example demonstrates calling the <xref:System.Globalization.CompareInfo.Compare%2A> method.  
-  
- [!code-cpp[CompareInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/CompareInfo/cpp/CompareInfo.cpp#1)]
- [!code-csharp[CompareInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/CompareInfo/CS/CompareInfo.cs#1)]
- [!code-vb[CompareInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompareInfo/VB/CompareInfo.vb#1)]  
-  
+The following example compares two strings using different <xref:System.Globalization.CompareOptions> settings.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.CompareStrStrOpt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStrOpt/CPP/comparestrstropt.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.CompareStrStrOpt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStrOpt/CS/comparestrstropt.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.CompareStrStrOpt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStrOpt/VB/comparestrstropt.vb#1)]  
+ 
+The following example demonstrates calling the <xref:System.Globalization.CompareInfo.Compare%2A> method.  
+ 
+[!code-cpp[CompareInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/CompareInfo/cpp/CompareInfo.cpp#1)]
+[!code-csharp[CompareInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/CompareInfo/CS/CompareInfo.cs#1)]
+[!code-vb[CompareInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompareInfo/VB/CompareInfo.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -356,28 +356,28 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
-  
+If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example compares portions of two strings using the different <xref:System.Globalization.CompareInfo> objects:  
-  
+The following example compares portions of two strings using the different <xref:System.Globalization.CompareInfo> objects:  
+ 
 -   <xref:System.Globalization.CompareInfo> object associated with the Spanish (Spain) culture with international sort  
-  
+ 
 -   <xref:System.Globalization.CompareInfo> object associated with the Spanish (Spain) culture with traditional sort  
-  
+ 
 -   <xref:System.Globalization.CompareInfo> object associated with the <xref:System.Globalization.CultureInfo.InvariantCulture%2A>  
-  
- [!code-cpp[System.Globalization.CompareInfo.CompareStrIntStrInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntStrInt/CPP/comparestrintstrint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.CompareStrIntStrInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntStrInt/CS/comparestrintstrint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.CompareStrIntStrInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntStrInt/VB/comparestrintstrint.vb#1)]  
-  
+ 
+[!code-cpp[System.Globalization.CompareInfo.CompareStrIntStrInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntStrInt/CPP/comparestrintstrint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.CompareStrIntStrInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntStrInt/CS/comparestrintstrint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.CompareStrIntStrInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntStrInt/VB/comparestrintstrint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -469,22 +469,22 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
-  
+If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example compares portions of two strings using different <xref:System.Globalization.CompareOptions> settings.  
-  
- [!code-cpp[System.Globalization.CompareInfo.CompareStrIntStrIntOpt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntStrIntOpt/CPP/comparestrintstrintopt.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.CompareStrIntStrIntOpt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntStrIntOpt/CS/comparestrintstrintopt.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.CompareStrIntStrIntOpt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntStrIntOpt/VB/comparestrintstrintopt.vb#1)]  
-  
+The following example compares portions of two strings using different <xref:System.Globalization.CompareOptions> settings.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.CompareStrIntStrIntOpt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntStrIntOpt/CPP/comparestrintstrintopt.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.CompareStrIntStrIntOpt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntStrIntOpt/CS/comparestrintstrintopt.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.CompareStrIntStrIntOpt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntStrIntOpt/VB/comparestrintstrintopt.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -580,28 +580,28 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
-  
+If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
+ 
 > [!NOTE]
 >  When possible, you should use string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example compares portions of two strings using the different <xref:System.Globalization.CompareInfo> objects:  
-  
+The following example compares portions of two strings using the different <xref:System.Globalization.CompareInfo> objects:  
+ 
 -   <xref:System.Globalization.CompareInfo> object associated with the Spanish (Spain) culture with international sort  
-  
+ 
 -   <xref:System.Globalization.CompareInfo> object associated with the Spanish (Spain) culture with traditional sort  
-  
+ 
 -   <xref:System.Globalization.CompareInfo> object associated with the <xref:System.Globalization.CultureInfo.InvariantCulture%2A>  
-  
- [!code-cpp[System.Globalization.CompareInfo.CompareStrIntIntStrIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntIntStrIntInt/CPP/comparestrintintstrintint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.CompareStrIntIntStrIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntIntStrIntInt/CS/comparestrintintstrintint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.CompareStrIntIntStrIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntIntStrIntInt/VB/comparestrintintstrintint.vb#1)]  
-  
+ 
+[!code-cpp[System.Globalization.CompareInfo.CompareStrIntIntStrIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntIntStrIntInt/CPP/comparestrintintstrintint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.CompareStrIntIntStrIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntIntStrIntInt/CS/comparestrintintstrintint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.CompareStrIntIntStrIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntIntStrIntInt/VB/comparestrintintstrintint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -710,22 +710,22 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
-  
+If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example compares portions of two strings using different <xref:System.Globalization.CompareOptions> settings.  
-  
- [!code-cpp[System.Globalization.CompareInfo.CompareStrIntIntStrIntIntOpt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntIntStrIntIntOpt/CPP/comparestrintintstrintintopt.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.CompareStrIntIntStrIntIntOpt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntIntStrIntIntOpt/CS/comparestrintintstrintintopt.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.CompareStrIntIntStrIntIntOpt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntIntStrIntIntOpt/VB/comparestrintintstrintintopt.vb#1)]  
-  
+The following example compares portions of two strings using different <xref:System.Globalization.CompareOptions> settings.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.CompareStrIntIntStrIntIntOpt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntIntStrIntIntOpt/CPP/comparestrintintstrintintopt.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.CompareStrIntIntStrIntIntOpt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntIntStrIntIntOpt/CS/comparestrintintstrintintopt.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.CompareStrIntIntStrIntIntOpt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrIntIntStrIntIntOpt/VB/comparestrintintstrintintopt.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -785,14 +785,14 @@
           <see langword="true" /> if the specified object is equal to the current <see cref="T:System.Globalization.CompareInfo" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.Globalization.CompareInfo> objects are equal if their <xref:System.Globalization.CompareInfo.LCID%2A> and <xref:System.Globalization.CompareInfo.Name%2A> properties are equal.  
-  
- This method overrides <xref:System.Object.Equals%2A?displayProperty=fullName>.  
-  
- If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
-  
+Two <xref:System.Globalization.CompareInfo> objects are equal if their <xref:System.Globalization.CompareInfo.LCID%2A> and <xref:System.Globalization.CompareInfo.Name%2A> properties are equal.  
+ 
+This method overrides <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ 
+If a security decision depends on a string comparison or a case change, you should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property to ensure that the behavior is consistent regardless of the culture settings of the operating system.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -823,20 +823,20 @@
         <returns>A new <see cref="T:System.Globalization.CompareInfo" /> object associated with the culture with the specified identifier and using string comparison methods in the current <see cref="T:System.Reflection.Assembly" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example compares portions of two strings using the different <xref:System.Globalization.CompareInfo> objects:  
-  
+The following example compares portions of two strings using the different <xref:System.Globalization.CompareInfo> objects:  
+ 
 -   <xref:System.Globalization.CompareInfo> object associated with the Spanish (Spain) culture with international sort  
-  
+ 
 -   <xref:System.Globalization.CompareInfo> object associated with the Spanish (Spain) culture with traditional sort  
-  
+ 
 -   <xref:System.Globalization.CompareInfo> object associated with the <xref:System.Globalization.CultureInfo.InvariantCulture%2A>  
-  
- [!code-cpp[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/CPP/comparestrstr.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/CS/comparestrstr.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/VB/comparestrstr.vb#1)]  
-  
+ 
+[!code-cpp[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/CPP/comparestrstr.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/CS/comparestrstr.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/VB/comparestrstr.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -872,20 +872,20 @@
         <returns>A new <see cref="T:System.Globalization.CompareInfo" /> object associated with the culture with the specified identifier and using string comparison methods in the current <see cref="T:System.Reflection.Assembly" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example compares portions of two strings using the different <xref:System.Globalization.CompareInfo> objects:  
-  
+The following example compares portions of two strings using the different <xref:System.Globalization.CompareInfo> objects:  
+ 
 -   <xref:System.Globalization.CompareInfo> object associated with the Spanish (Spain) culture with international sort  
-  
+ 
 -   <xref:System.Globalization.CompareInfo> object associated with the Spanish (Spain) culture with traditional sort  
-  
+ 
 -   <xref:System.Globalization.CompareInfo> object associated with the <xref:System.Globalization.CultureInfo.InvariantCulture%2A>  
-  
- [!code-cpp[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/CPP/comparestrstr.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/CS/comparestrstr.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/VB/comparestrstr.vb#1)]  
-  
+ 
+[!code-cpp[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/CPP/comparestrstr.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/CS/comparestrstr.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.CompareStrStr#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.CompareStrStr/VB/comparestrstr.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -922,14 +922,14 @@
         <returns>A new <see cref="T:System.Globalization.CompareInfo" /> object associated with the culture with the specified identifier and using string comparison methods in the current <see cref="T:System.Reflection.Assembly" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The behavior of this method is unpredictable. It is recommended for your application to use a version of this method that does not take an assembly input.  
-  
- The `assembly` parameter must be of the same type as <xref:System.Reflection.Module.Assembly%2A?displayProperty=fullName>.  
-  
+ 
+The `assembly` parameter must be of the same type as <xref:System.Reflection.Module.Assembly%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -966,14 +966,14 @@
         <returns>A new <see cref="T:System.Globalization.CompareInfo" /> object associated with the culture with the specified identifier and using string comparison methods in the current <see cref="T:System.Reflection.Assembly" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The behavior of this method is unpredictable. We recommend that you use a version of this method that does not take an assembly input.  
-  
- The `assembly` parameter must be of the same type as <xref:System.Reflection.Module.Assembly%2A?displayProperty=fullName>.  
-  
+ 
+The `assembly` parameter must be of the same type as <xref:System.Reflection.Module.Assembly%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1018,12 +1018,12 @@
         <returns>A hash code for the current <see cref="T:System.Globalization.CompareInfo" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
-  
- This method generates the same hash code for two objects that are equal according to the <xref:System.Globalization.CompareInfo.Equals%2A> method.  
-  
+This method overrides <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ 
+This method generates the same hash code for two objects that are equal according to the <xref:System.Globalization.CompareInfo.Equals%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1060,17 +1060,17 @@
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The behavior of <xref:System.Globalization.CompareInfo.GetHashCode%2A> is dependent on its implementation, which might change from one version of the common language runtime to another, or from one .NET Framework platform to another.  
-  
+The behavior of <xref:System.Globalization.CompareInfo.GetHashCode%2A> is dependent on its implementation, which might change from one version of the common language runtime to another, or from one .NET Framework platform to another.  
+ 
 > [!IMPORTANT]
 >  If two string objects are equal, the <xref:System.Globalization.CompareInfo.GetHashCode%2A> method returns identical values. However, there is not a unique hash code value for each unique string value. Different strings can return the same hash code.  
 >   
 >  The hash code itself is not guaranteed to be stable. Hash codes for identical strings can differ across versions of the .NET Framework and across platforms (such as 32-bit and 64-bit) for a single version of the .NET Framework. In some cases, they can even differ by application domain.  
 >   
 >  As a result, hash codes should never be used outside of the application domain in which they were created, they should never be used as key fields in a collection, and they should never be persisted.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1103,10 +1103,10 @@
         <returns>The <see cref="T:System.Globalization.SortKey" /> object that contains the sort key for the specified string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each character in a string is given several categories of sort weights, including script, alphabetic, case, and diacritic weights. A sort key is the repository of these weights for a particular string. For example, a sort key might contain a string of alphabetic weights, followed by a string of case weights, and so on. The <xref:System.Globalization.CompareInfo.GetSortKey%2A> method is equivalent to the Windows API method `LCMapString` with the LCMAP_SORTKEY flag.  
-  
+Each character in a string is given several categories of sort weights, including script, alphabetic, case, and diacritic weights. A sort key is the repository of these weights for a particular string. For example, a sort key might contain a string of alphabetic weights, followed by a string of case weights, and so on. The <xref:System.Globalization.CompareInfo.GetSortKey%2A> method is equivalent to the Windows API method `LCMapString` with the LCMAP_SORTKEY flag.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1139,10 +1139,10 @@
         <returns>The <see cref="T:System.Globalization.SortKey" /> object that contains the sort key for the specified string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each character in a string is given several categories of sort weights, including script, alphabetic, case, and diacritic weights. A sort key is the repository of these weights for a particular string. For example, a sort key might contain a string of alphabetic weights, followed by a string of case weights, and so on. The <xref:System.Globalization.CompareInfo.GetSortKey%2A> method is equivalent to the Windows API method `LCMapString` with the LCMAP_SORTKEY flag.  
-  
+Each character in a string is given several categories of sort weights, including script, alphabetic, case, and diacritic weights. A sort key is the repository of these weights for a particular string. For example, a sort key might contain a string of alphabetic weights, followed by a string of case weights, and so on. The <xref:System.Globalization.CompareInfo.GetSortKey%2A> method is equivalent to the Windows API method `LCMapString` with the LCMAP_SORTKEY flag.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1182,24 +1182,24 @@
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within <paramref name="source" />; otherwise, -1. Returns 0 (zero) if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method searches the source string from the beginning of the string to the end of the string.  
-  
- This overload performs a culture-sensitive search. If `value` represents a precomposed Unicode character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if their Unicode code points are the same, you should call an overload that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions?displayProperty=fullName> value. Unlike <xref:System.Globalization.CompareInfo.IndexOf%2A?displayProperty=fullName>, which performs a culture-sensitive comparison, overloads of the <xref:System.String.IndexOf%2A?displayProperty=fullName> method that search for a character perform an ordinal comparison and overloads that search for a string perform a culture-sensitive comparison.  
-  
+This method searches the source string from the beginning of the string to the end of the string.  
+ 
+This overload performs a culture-sensitive search. If `value` represents a precomposed Unicode character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if their Unicode code points are the same, you should call an overload that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions?displayProperty=fullName> value. Unlike <xref:System.Globalization.CompareInfo.IndexOf%2A?displayProperty=fullName>, which performs a culture-sensitive comparison, overloads of the <xref:System.String.IndexOf%2A?displayProperty=fullName> method that search for a character perform an ordinal comparison and overloads that search for a string perform a culture-sensitive comparison.  
+ 
 > [!NOTE]
 >  When possible, you should use string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1245,24 +1245,24 @@
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within <paramref name="source" />; otherwise, -1. Returns 0 (zero) if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched forward starting at the beginning of the string and ending at the end of the string.  
-  
- This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should use one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value.  
-  
+The source string is searched forward starting at the beginning of the string and ending at the end of the string.  
+ 
+This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should use one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1314,26 +1314,26 @@
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within <paramref name="source" />, using the specified comparison options; otherwise, -1. Returns 0 (zero) if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched forward starting at the beginning of the string and ending at the end of the string.  
-  
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
-  
- If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.IndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
-  
+The source string is searched forward starting at the beginning of the string and ending at the end of the string.  
+ 
+The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ 
+If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.IndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ 
 > [!NOTE]
 >  When possible, you should use string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1378,24 +1378,24 @@
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from <paramref name="startIndex" /> to the end of <paramref name="source" />; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched forward starting at `startIndex` and ending at the end of the string.  
-  
- This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value. Overloads of <xref:System.String.IndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
-  
+The source string is searched forward starting at `startIndex` and ending at the end of the string.  
+ 
+This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value. Overloads of <xref:System.String.IndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1445,26 +1445,26 @@
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within <paramref name="source" />, using the specified comparison options; otherwise, -1. Returns 0 (zero) if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched forward starting at the beginning of the string and ending at the end of the string.  
-  
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
-  
- If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
-  
+The source string is searched forward starting at the beginning of the string and ending at the end of the string.  
+ 
+The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ 
+If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1513,24 +1513,24 @@
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from <paramref name="startIndex" /> to the end of <paramref name="source" />; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched forward starting at `startIndex` and ending at the end of the string.  
-  
- This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value.  
-  
+The source string is searched forward starting at `startIndex` and ending at the end of the string.  
+ 
+This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1588,26 +1588,26 @@
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from <paramref name="startIndex" /> to the end of <paramref name="source" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched forward starting at `startIndex` and ending at the end of the string.  
-  
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
-  
- If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.IndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
-  
+The source string is searched forward starting at `startIndex` and ending at the end of the string.  
+ 
+The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ 
+If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.IndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1661,24 +1661,24 @@
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that starts at <paramref name="startIndex" /> and contains the number of elements specified by <paramref name="count" />; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched forward starting at `startIndex` and ending at `startIndex` + `count` - 1.  
-  
- This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value. Overloads of <xref:System.String.IndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
-  
+The source string is searched forward starting at `startIndex` and ending at `startIndex` + `count` - 1.  
+ 
+This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value. Overloads of <xref:System.String.IndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1738,26 +1738,26 @@
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from <paramref name="startIndex" /> to the end of <paramref name="source" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched forward starting at `startIndex` and ending at the end of the string.  
-  
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
-  
- If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
-  
+The source string is searched forward starting at `startIndex` and ending at the end of the string.  
+ 
+The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ 
+If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1817,24 +1817,24 @@
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that starts at <paramref name="startIndex" /> and contains the number of elements specified by <paramref name="count" />; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched forward starting at `startIndex` and ending at `startIndex` + `count` - 1.  
-  
- This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value.  
-  
+The source string is searched forward starting at `startIndex` and ending at `startIndex` + `count` - 1.  
+ 
+This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1907,26 +1907,26 @@
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that starts at <paramref name="startIndex" /> and contains the number of elements specified by <paramref name="count" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched forward starting at `startIndex` and ending at `startIndex` + `count` - 1.  
-  
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
-  
- If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.IndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
-  
+The source string is searched forward starting at `startIndex` and ending at `startIndex` + `count` - 1.  
+ 
+The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ 
+If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.IndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1995,26 +1995,26 @@
         <returns>The zero-based index of the first occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that starts at <paramref name="startIndex" /> and contains the number of elements specified by <paramref name="count" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched forward starting at `startIndex` and ending at `startIndex` + `count` - 1.  
-  
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
-  
- If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
-  
+The source string is searched forward starting at `startIndex` and ending at `startIndex` + `count` - 1.  
+ 
+The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ 
+If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2079,22 +2079,22 @@
           <see langword="true" /> if the length of <paramref name="prefix" /> is less than or equal to the length of <paramref name="source" /> and <paramref name="source" /> starts with <paramref name="prefix" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Every string starts and ends with an empty substring (""); therefore, if `prefix` is an empty string, this method returns `true`.  
-  
+Every string starts and ends with an empty substring (""); therefore, if `prefix` is an empty string, this method returns `true`.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines whether a string is the prefix or suffix of another string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IsPrefixSuffix#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffix/CPP/isprefixsuffix.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IsPrefixSuffix#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffix/CS/isprefixsuffix.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IsPrefixSuffix#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffix/VB/isprefixsuffix.vb#1)]  
-  
+The following example determines whether a string is the prefix or suffix of another string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IsPrefixSuffix#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffix/CPP/isprefixsuffix.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IsPrefixSuffix#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffix/CS/isprefixsuffix.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IsPrefixSuffix#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffix/VB/isprefixsuffix.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2146,24 +2146,24 @@
           <see langword="true" /> if the length of <paramref name="prefix" /> is less than or equal to the length of <paramref name="source" /> and <paramref name="source" /> starts with <paramref name="prefix" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Every string starts and ends with an empty substring (""); therefore, if `prefix` is an empty string, this method returns `true`.  
-  
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
-  
+Every string starts and ends with an empty substring (""); therefore, if `prefix` is an empty string, this method returns `true`.  
+ 
+The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines whether a string is the prefix or suffix of another string using <xref:System.Globalization.CompareOptions>.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IsPrefixSuffixOpt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffixOpt/CPP/isprefixsuffixopt.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IsPrefixSuffixOpt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffixOpt/CS/isprefixsuffixopt.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IsPrefixSuffixOpt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffixOpt/VB/isprefixsuffixopt.vb#1)]  
-  
+The following example determines whether a string is the prefix or suffix of another string using <xref:System.Globalization.CompareOptions>.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IsPrefixSuffixOpt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffixOpt/CPP/isprefixsuffixopt.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IsPrefixSuffixOpt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffixOpt/CS/isprefixsuffixopt.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IsPrefixSuffixOpt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffixOpt/VB/isprefixsuffixopt.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2208,10 +2208,10 @@
           <see langword="true" /> if the <paramref name="ch" /> parameter is sortable; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `ch` parameter is sortable if it is a Unicode character that is defined in an internal <xref:System.Globalization.CompareInfo> class sort table, and is not a private use or unpaired high or low surrogate character.  
-  
+The `ch` parameter is sortable if it is a Unicode character that is defined in an internal <xref:System.Globalization.CompareInfo> class sort table, and is not a private use or unpaired high or low surrogate character.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2251,10 +2251,10 @@
           <see langword="true" /> if the <paramref name="str" /> parameter is not an empty string ("") and all the Unicode characters in <paramref name="str" /> are sortable; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each Unicode character in the `str` parameter is represented by one or more UTF-16 encoded <xref:System.Char> objects. The `str` parameter is sortable if each Unicode character is defined in an internal <xref:System.Globalization.CompareInfo> class sort table, and is not a private use or unpaired high or low surrogate character.  
-  
+Each Unicode character in the `str` parameter is represented by one or more UTF-16 encoded <xref:System.Char> objects. The `str` parameter is sortable if each Unicode character is defined in an internal <xref:System.Globalization.CompareInfo> class sort table, and is not a private use or unpaired high or low surrogate character.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2295,22 +2295,22 @@
           <see langword="true" /> if the length of <paramref name="suffix" /> is less than or equal to the length of <paramref name="source" /> and <paramref name="source" /> ends with <paramref name="suffix" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Every string starts and ends with an empty substring (""); therefore, if `suffix` is an empty string, this method returns `true`.  
-  
+Every string starts and ends with an empty substring (""); therefore, if `suffix` is an empty string, this method returns `true`.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines whether a string is the prefix or suffix of another string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IsPrefixSuffix#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffix/CPP/isprefixsuffix.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IsPrefixSuffix#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffix/CS/isprefixsuffix.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IsPrefixSuffix#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffix/VB/isprefixsuffix.vb#1)]  
-  
+The following example determines whether a string is the prefix or suffix of another string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IsPrefixSuffix#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffix/CPP/isprefixsuffix.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IsPrefixSuffix#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffix/CS/isprefixsuffix.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IsPrefixSuffix#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffix/VB/isprefixsuffix.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2362,24 +2362,24 @@
           <see langword="true" /> if the length of <paramref name="suffix" /> is less than or equal to the length of <paramref name="source" /> and <paramref name="source" /> ends with <paramref name="suffix" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Every string starts and ends with an empty substring (""); therefore, if `suffix` is an empty string, this method returns `true`.  
-  
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
-  
+Every string starts and ends with an empty substring (""); therefore, if `suffix` is an empty string, this method returns `true`.  
+ 
+The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines whether a string is the prefix or suffix of another string using <xref:System.Globalization.CompareOptions>.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IsPrefixSuffixOpt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffixOpt/CPP/isprefixsuffixopt.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IsPrefixSuffixOpt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffixOpt/CS/isprefixsuffixopt.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IsPrefixSuffixOpt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffixOpt/VB/isprefixsuffixopt.vb#1)]  
-  
+The following example determines whether a string is the prefix or suffix of another string using <xref:System.Globalization.CompareOptions>.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IsPrefixSuffixOpt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffixOpt/CPP/isprefixsuffixopt.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IsPrefixSuffixOpt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffixOpt/CS/isprefixsuffixopt.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IsPrefixSuffixOpt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IsPrefixSuffixOpt/VB/isprefixsuffixopt.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2425,24 +2425,24 @@
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within <paramref name="source" />; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched backward starting at the end of the string and ending at the beginning of the string.  
-  
- This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
-  
+The source string is searched backward starting at the end of the string and ending at the beginning of the string.  
+ 
+This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2488,24 +2488,24 @@
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within <paramref name="source" />; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched backward starting at the end of the string and ending at the beginning of the string.  
-  
- This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions?displayProperty=fullName> value.  
-  
+The source string is searched backward starting at the end of the string and ending at the beginning of the string.  
+ 
+This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions?displayProperty=fullName> value.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2557,26 +2557,26 @@
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within <paramref name="source" />, using the specified comparison options; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched backward starting at the end of the string and ending at the beginning of the string.  
-  
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
-  
- If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
-  
+The source string is searched backward starting at the end of the string and ending at the beginning of the string.  
+ 
+The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ 
+If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2621,24 +2621,24 @@
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from the beginning of <paramref name="source" /> to <paramref name="startIndex" />; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched backward starting at `startIndex` and ending at the beginning of the string.  
-  
- This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
-  
+The source string is searched backward starting at `startIndex` and ending at the beginning of the string.  
+ 
+This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2688,26 +2688,26 @@
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within <paramref name="source" />, using the specified comparison options; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched backward starting at the end of the string and ending at the beginning of the string.  
-  
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
-  
- If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
-  
+The source string is searched backward starting at the end of the string and ending at the beginning of the string.  
+ 
+The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ 
+If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CPP/indexof.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/CS/indexof.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOf/VB/indexof.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2756,24 +2756,24 @@
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from the beginning of <paramref name="source" /> to <paramref name="startIndex" />; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched backward starting at `startIndex` and ending at the beginning of the string.  
-  
- This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions?displayProperty=fullName> value.  
-  
+The source string is searched backward starting at `startIndex` and ending at the beginning of the string.  
+ 
+This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions?displayProperty=fullName> value.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2829,26 +2829,26 @@
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from the beginning of <paramref name="source" /> to <paramref name="startIndex" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched backward starting at `startIndex` and ending at the beginning of the string.  
-  
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
-  
- If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
-  
+The source string is searched backward starting at `startIndex` and ending at the beginning of the string.  
+ 
+The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ 
+If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2902,24 +2902,24 @@
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that contains the number of elements specified by <paramref name="count" /> and that ends at <paramref name="startIndex" />; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched backward starting at `startIndex` and ending at `startIndex` - `count` + 1.  
-  
- This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
-  
+The source string is searched backward starting at `startIndex` and ending at `startIndex` - `count` + 1.  
+ 
+This overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where a character is considered equivalent to another character only if the Unicode values are the same, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2979,26 +2979,26 @@
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that extends from the beginning of <paramref name="source" /> to <paramref name="startIndex" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched backward starting at `startIndex` and ending at the beginning of the string.  
-  
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
-  
- If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
-  
+The source string is searched backward starting at `startIndex` and ending at the beginning of the string.  
+ 
+The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ 
+If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string. Note that <xref:System.Globalization.CompareInfo.IndexOf%2A> and <xref:System.Globalization.CompareInfo.LastIndexOf%2A> are searching in different portions of the string, even with the same `startIndex` parameter.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CPP/indexofint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/CS/indexofint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfInt/VB/indexofint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -3058,24 +3058,24 @@
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that contains the number of elements specified by <paramref name="count" /> and that ends at <paramref name="startIndex" />; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched backward starting at `startIndex` and ending at `startIndex` - `count` + 1.  
-  
- This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value.  
-  
+The source string is searched backward starting at `startIndex` and ending at `startIndex` - `count` + 1.  
+ 
+This overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. To perform an ordinal (culture-insensitive) search, where the Unicode values are compared, you should call one of the overloads that has a parameter of type <xref:System.Globalization.CompareOptions> and use the <xref:System.Globalization.CompareOptions> value.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons .  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -3148,26 +3148,26 @@
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that contains the number of elements specified by <paramref name="count" /> and that ends at <paramref name="startIndex" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched backward starting at `startIndex` and ending at `startIndex` - `count` + 1.  
-  
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
-  
- If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
-  
+The source string is searched backward starting at `startIndex` and ending at `startIndex` - `count` + 1.  
+ 
+The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ 
+If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. If the character is a Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), it might be considered equivalent to any occurrence of its components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search. A character is considered equivalent to another character only if the Unicode values are the same. Overloads of <xref:System.String.LastIndexOf%2A?displayProperty=fullName> that search for a character perform an ordinal search, whereas those that search for a string perform a culture-sensitive search.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -3236,26 +3236,26 @@
         <returns>The zero-based index of the last occurrence of <paramref name="value" />, if found, within the section of <paramref name="source" /> that contains the number of elements specified by <paramref name="count" /> and that ends at <paramref name="startIndex" />, using the specified comparison options; otherwise, -1. Returns <paramref name="startIndex" /> if <paramref name="value" /> is an ignorable character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source string is searched backward starting at `startIndex` and ending at `startIndex` - `count` + 1.  
-  
- The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
-  
- If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
-  
+The source string is searched backward starting at `startIndex` and ending at `startIndex` - `count` + 1.  
+ 
+The <xref:System.Globalization.CompareOptions?displayProperty=fullName> value is not valid for this method.  
+ 
+If `options` does not include the <xref:System.Globalization.CompareOptions> value, this overload performs a culture-sensitive search. A Unicode value representing a precomposed character, such as the ligature "Æ" (U+00C6), might be considered equivalent to any occurrence of the character's components in the correct sequence, such as "AE" (U+0041, U+0045), depending on the culture. If `options` includes the <xref:System.Globalization.CompareOptions> value, this overload performs an ordinal (culture-insensitive) search, where the Unicode values are compared.  
+ 
 > [!NOTE]
 >  When possible, you should call string comparison methods that have a parameter of type <xref:System.Globalization.CompareOptions> to specify the kind of comparison expected. As a general rule, use linguistic options (using the current culture) for comparing strings displayed in the user interface and specify <xref:System.Globalization.CompareOptions?displayProperty=fullName> or <xref:System.Globalization.CompareOptions?displayProperty=fullName> for security comparisons.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
-  
- [!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
- [!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
- [!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
-  
+The following example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.  
+ 
+[!code-cpp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CPP/indexofintint.cpp#1)]
+[!code-csharp[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/CS/indexofintint.cs#1)]
+[!code-vb[System.Globalization.CompareInfo.IndexOfIntInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareInfo.IndexOfIntInt/VB/indexofintint.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -3307,14 +3307,14 @@
         <value>The properly formed culture identifier for the current <see cref="T:System.Globalization.CompareInfo" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Globalization.CompareInfo.LCID%2A> property.  
-  
- [!code-cpp[CompareInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/CompareInfo/cpp/CompareInfo.cpp#1)]
- [!code-csharp[CompareInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/CompareInfo/CS/CompareInfo.cs#1)]
- [!code-vb[CompareInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompareInfo/VB/CompareInfo.vb#1)]  
-  
+The following example demonstrates the <xref:System.Globalization.CompareInfo.LCID%2A> property.  
+ 
+[!code-cpp[CompareInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/CompareInfo/cpp/CompareInfo.cpp#1)]
+[!code-csharp[CompareInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/CompareInfo/CS/CompareInfo.cs#1)]
+[!code-vb[CompareInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompareInfo/VB/CompareInfo.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3351,19 +3351,19 @@
         <value>The name of a culture.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Globalization.CompareInfo.Name%2A> and <xref:System.Globalization.CultureInfo.Name?displayProperty=fullName> properties can have different values. For example, an <xref:System.Globalization.CompareInfo.LCID%2A> property value of hexadecimal 0x10407 identifies an alternate sort culture that sorts names as they might appear in a German telephone book. The <xref:System.Globalization.CompareInfo.Name%2A> property has a value of "de-de_phoneb", whereas the <xref:System.Globalization.CultureInfo.Name?displayProperty=fullName> property of the associated German (Germany) culture has a value of "de-DE".  
+The <xref:System.Globalization.CompareInfo.Name%2A> and <xref:System.Globalization.CultureInfo.Name?displayProperty=fullName> properties can have different values. For example, an <xref:System.Globalization.CompareInfo.LCID%2A> property value of hexadecimal 0x10407 identifies an alternate sort culture that sorts names as they might appear in a German telephone book. The <xref:System.Globalization.CompareInfo.Name%2A> property has a value of "de-de_phoneb", whereas the <xref:System.Globalization.CultureInfo.Name?displayProperty=fullName> property of the associated German (Germany) culture has a value of "de-DE".  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example compares three strings using the fr-FR and ja-JP cultures. The <xref:System.Globalization.CultureInfo.Name%2A> property is used to display the name of each culture.  
-  
- [!code-cpp[CompareInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/CompareInfo/cpp/CompareInfo.cpp#1)]
- [!code-csharp[CompareInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/CompareInfo/CS/CompareInfo.cs#1)]
- [!code-vb[CompareInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompareInfo/VB/CompareInfo.vb#1)]  
-  
+The following example compares three strings using the fr-FR and ja-JP cultures. The <xref:System.Globalization.CultureInfo.Name%2A> property is used to display the name of each culture.  
+ 
+[!code-cpp[CompareInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/CompareInfo/cpp/CompareInfo.cpp#1)]
+[!code-csharp[CompareInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/CompareInfo/CS/CompareInfo.cs#1)]
+[!code-vb[CompareInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompareInfo/VB/CompareInfo.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3393,10 +3393,10 @@
         <summary>Runs when the entire object graph has been deserialized.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation that can be used only when the current <xref:System.Globalization.CompareInfo> object is cast to an <xref:System.Runtime.Serialization.IDeserializationCallback> interface. For more information, see the <xref:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization%2A> method.  
-  
+This member is an explicit interface member implementation that can be used only when the current <xref:System.Globalization.CompareInfo> object is cast to an <xref:System.Runtime.Serialization.IDeserializationCallback> interface. For more information, see the <xref:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3429,10 +3429,10 @@
         <returns>A string that represents the current <see cref="T:System.Globalization.CompareInfo" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides the <xref:System.Object.ToString%2A?displayProperty=fullName> method. It returns a string that consists of the class name and the value of the instance <xref:System.Globalization.CompareInfo.Name%2A> property, separated by a hyphen.  
-  
+This method overrides the <xref:System.Object.ToString%2A?displayProperty=fullName> method. It returns a string that consists of the class name and the value of the instance <xref:System.Globalization.CompareInfo.Name%2A> property, separated by a hyphen.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
@@ -3467,18 +3467,18 @@
         <value>An object that contains information about the Unicode version used for comparing and sorting strings.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The weight of individual characters, and therefore the way in which particular strings are compared or ordered, depends on the version of the Unicode specification that a particular version of the .NET Framework implements. In the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], this also depends on the host operating system, as the following table shows. Note that this list of supported Unicode versions applies to character comparison and sorting only; it does not apply to classification of Unicode characters by category.  
-  
+The weight of individual characters, and therefore the way in which particular strings are compared or ordered, depends on the version of the Unicode specification that a particular version of the .NET Framework implements. In the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], this also depends on the host operating system, as the following table shows. Note that this list of supported Unicode versions applies to character comparison and sorting only; it does not apply to classification of Unicode characters by category.  
+ 
 |.NET Framework version|Operating system|Unicode version|  
 |----------------------------|----------------------|---------------------|  
 |[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)]|All operating systems|Unicode 5.0|  
 |[!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later versions|[!INCLUDE[win7](~/includes/win7-md.md)]|Unicode 5.0|  
 |[!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later versions|[!INCLUDE[win8](~/includes/win8-md.md)] and later Windows operating system versions|Unicode 6.3|  
-  
- The <xref:System.Globalization.SortVersion> object returned by the <xref:System.Globalization.CompareInfo.Version%2A> property doesn't identify the precise Unicode version used to compare strings. It is useful only when comparing two <xref:System.Globalization.SortVersion> objects to determine whether they use the same Unicode version and culture to compare strings. For more information and an example, see the <xref:System.Globalization.SortVersion> reference page.  
-  
+ 
+The <xref:System.Globalization.SortVersion> object returned by the <xref:System.Globalization.CompareInfo.Version%2A> property doesn't identify the precise Unicode version used to compare strings. It is useful only when comparing two <xref:System.Globalization.SortVersion> objects to determine whether they use the same Unicode version and culture to compare strings. For more information and an example, see the <xref:System.Globalization.SortVersion> reference page.  
+ 
  ]]></format>
         </remarks>
       </Docs>

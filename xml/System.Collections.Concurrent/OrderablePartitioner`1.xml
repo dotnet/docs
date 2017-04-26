@@ -31,18 +31,18 @@
     <summary>Represents a particular manner of splitting an orderable data source into multiple partitions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The implementation of the derived class is responsible for ordering the elements into key-value pairs in whatever manner is appropriate. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+The implementation of the derived class is responsible for ordering the elements into key-value pairs in whatever manner is appropriate. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to implement an orderable partitioner that returns one element at a time:  
-  
- [!code-csharp[System.Collections.Concurrent.OrderablePartitioner#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.orderablepartitioner/cs/orderablepartitioner.cs#1)]
- [!code-vb[System.Collections.Concurrent.OrderablePartitioner#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.orderablepartitioner/vb/orderablepartitioner.vb#1)]  
-  
+The following example shows how to implement an orderable partitioner that returns one element at a time:  
+ 
+[!code-csharp[System.Collections.Concurrent.OrderablePartitioner#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.orderablepartitioner/cs/orderablepartitioner.cs#1)]
+[!code-vb[System.Collections.Concurrent.OrderablePartitioner#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.orderablepartitioner/vb/orderablepartitioner.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>All public members of <see cref="T:System.Collections.Concurrent.OrderablePartitioner`1" /> are thread-safe and may be called from multiple threads concurrently.</threadsafe>
@@ -79,10 +79,10 @@
         <summary>Called from constructors in derived classes to initialize the <see cref="T:System.Collections.Concurrent.OrderablePartitioner`1" /> class with the specified constraints on the index keys.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,16 +115,16 @@
         <returns>An object that can create partitions over the underlying data source.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned object implements the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interface. Calling <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> on the object creates another partition over the sequence.  
-  
- The default implementation provides the same behavior as <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderableDynamicPartitions%2A> except that the returned set of partitions does not provide the keys for the elements.  
-  
- The <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetDynamicPartitions%2A> method is only supported if the <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> property returns true.  
-  
- For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+The returned object implements the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interface. Calling <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> on the object creates another partition over the sequence.  
+ 
+The default implementation provides the same behavior as <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderableDynamicPartitions%2A> except that the returned set of partitions does not provide the keys for the elements.  
+ 
+The <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetDynamicPartitions%2A> method is only supported if the <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> property returns true.  
+ 
+For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Dynamic partitioning is not supported by the base class. It must be implemented in derived classes.</exception>
@@ -158,16 +158,16 @@
         <returns>An object that can create partitions over the underlying data source.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned object implements the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interface. Calling <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> on the object creates another partition over the sequence.  
-  
- Each partition is represented as an enumerator over key-value pairs. The value in the pair is the element itself, and the key is an integer which determines the relative ordering of this element against other elements.  
-  
- The <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderableDynamicPartitions%2A> method is only supported if the <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> property returns true.  
-  
- For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+The returned object implements the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interface. Calling <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> on the object creates another partition over the sequence.  
+ 
+Each partition is represented as an enumerator over key-value pairs. The value in the pair is the element itself, and the key is an integer which determines the relative ordering of this element against other elements.  
+ 
+The <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderableDynamicPartitions%2A> method is only supported if the <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> property returns true.  
+ 
+For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Dynamic partitioning is not supported by this partitioner.</exception>
@@ -204,14 +204,14 @@
         <returns>A list containing <paramref name="partitionCount" /> enumerators.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each partition is represented as an enumerator over key-value pairs.  
-  
- The value of the pair is the element itself, and the key is an integer which determines the relative ordering of this element against other elements in the data source.  
-  
- For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+Each partition is represented as an enumerator over key-value pairs.  
+ 
+The value of the pair is the element itself, and the key is an integer which determines the relative ordering of this element against other elements in the data source.  
+ 
+For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,12 +247,12 @@
         <returns>A list containing <paramref name="partitionCount" /> enumerators.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation provides the same behavior as <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderablePartitions%2A> except that the returned set of partitions does not provide the keys for the elements.  
-  
- For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+The default implementation provides the same behavior as <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderablePartitions%2A> except that the returned set of partitions does not provide the keys for the elements.  
+ 
+For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -284,12 +284,12 @@
         <value>true if the keys are normalized; otherwise false.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Collections.Concurrent.OrderablePartitioner%601.KeysNormalized%2A> returns true, all order keys are distinct integers in the range [0 .. numberOfElements-1]. If the property returns false, order keys must still be distinct, but only their relative order is considered, not their absolute values.  
-  
- For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+If <xref:System.Collections.Concurrent.OrderablePartitioner%601.KeysNormalized%2A> returns true, all order keys are distinct integers in the range [0 .. numberOfElements-1]. If the property returns false, order keys must still be distinct, but only their relative order is considered, not their absolute values.  
+ 
+For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -321,12 +321,12 @@
         <value>true if the elements in an earlier partition always come before elements in a later partition; otherwise false.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Collections.Concurrent.OrderablePartitioner%601.KeysOrderedAcrossPartitions%2A> returns true, each element in partition 0 has a smaller order key than any element in partition 1, each element in partition 1 has a smaller order key than any element in partition 2, and so on.  
-  
- For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+If <xref:System.Collections.Concurrent.OrderablePartitioner%601.KeysOrderedAcrossPartitions%2A> returns true, each element in partition 0 has a smaller order key than any element in partition 1, each element in partition 1 has a smaller order key than any element in partition 2, and so on.  
+ 
+For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,10 +358,10 @@
         <value>true if the elements in each partition are yielded in the order of increasing keys; otherwise false.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
-  
+For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Represents controls that provide, and are able to switch between, multiple representations of the same set of information or child controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Examples of controls that can present multiple views include the list view (which can show its contents as thumbnails, tiles, icons, or details), [!INCLUDE[TLA#tla_xl](~/includes/tlasharptla-xl-md.md)] charts (pie, line, bar, cell value with a formula), [!INCLUDE[TLA#tla_word](~/includes/tlasharptla-word-md.md)] documents (normal, Web layout, print layout, reading layout, outline), [!INCLUDE[TLA#tla_outlook](~/includes/tlasharptla-outlook-md.md)] calendar (year, month, week, day) and [!INCLUDE[TLA#tla_wmp](~/includes/tlasharptla-wmp-md.md)] skins. The supported views are determined by the control developer and are specific to each control.  
-  
+Examples of controls that can present multiple views include the list view (which can show its contents as thumbnails, tiles, icons, or details), [!INCLUDE[TLA#tla_xl](~/includes/tlasharptla-xl-md.md)] charts (pie, line, bar, cell value with a formula), [!INCLUDE[TLA#tla_word](~/includes/tlasharptla-word-md.md)] documents (normal, Web layout, print layout, reading layout, outline), [!INCLUDE[TLA#tla_outlook](~/includes/tlasharptla-outlook-md.md)] calendar (year, month, week, day) and [!INCLUDE[TLA#tla_wmp](~/includes/tlasharptla-wmp-md.md)] skins. The supported views are determined by the control developer and are specific to each control.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,12 +39,12 @@
         <value>A structure containing the cached [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property values for the control pattern.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Cached property values must have been previously requested using a <xref:System.Windows.Automation.CacheRequest>. Use <xref:System.Windows.Automation.MultipleViewPattern.Current%2A> to get the current value of a property.  
-  
- For information on the properties available and their use, see <xref:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation>.  
-  
+Cached property values must have been previously requested using a <xref:System.Windows.Automation.CacheRequest>. Use <xref:System.Windows.Automation.MultipleViewPattern.Current%2A> to get the current value of a property.  
+ 
+For information on the properties available and their use, see <xref:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The requested property is not in the cache.</exception>
@@ -67,12 +67,12 @@
         <value>A structure containing the current [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property values for the control pattern.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This pattern must be from an <xref:System.Windows.Automation.AutomationElement> with an <xref:System.Windows.Automation.AutomationElementMode> reference in order to get current values. If the <xref:System.Windows.Automation.AutomationElement> was obtained using <xref:System.Windows.Automation.AutomationElementMode>, it contains only cached data, and attempting to get the current value of any property raises an exception. Use <xref:System.Windows.Automation.MultipleViewPattern.Cached%2A> to get the cached value of a property that was previously specified using a <xref:System.Windows.Automation.CacheRequest>.  
-  
- For information on the properties available and their use, see <xref:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation>.  
-  
+This pattern must be from an <xref:System.Windows.Automation.AutomationElement> with an <xref:System.Windows.Automation.AutomationElementMode> reference in order to get current values. If the <xref:System.Windows.Automation.AutomationElement> was obtained using <xref:System.Windows.Automation.AutomationElementMode>, it contains only cached data, and attempting to get the current value of any property raises an exception. Use <xref:System.Windows.Automation.MultipleViewPattern.Cached%2A> to get the cached value of a property that was previously specified using a <xref:System.Windows.Automation.CacheRequest>.  
+ 
+For information on the properties available and their use, see <xref:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,20 +93,20 @@
         <summary>Identifies the <see cref="P:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation.CurrentView" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This identifier is used by UI automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.MultipleViewPatternIdentifiers>.  
+This identifier is used by UI automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.MultipleViewPatternIdentifiers>.  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, an integer is obtained that represents the current view for a control that supports <xref:System.Windows.Automation.MultipleViewPattern>.  
-  
- [!code-csharp[UIAMultipleViewPattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#100)]
- [!code-vb[UIAMultipleViewPattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#100)]  
+In the following example, an integer is obtained that represents the current view for a control that supports <xref:System.Windows.Automation.MultipleViewPattern>.  
+ 
+[!code-csharp[UIAMultipleViewPattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#100)]
+[!code-vb[UIAMultipleViewPattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#100)]  
 [!code-csharp[UIAMultipleViewPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#103)]
 [!code-vb[UIAMultipleViewPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#103)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,22 +132,22 @@
         <returns>A localized string representing the control-specific view name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- View identifiers can be retrieved by using <xref:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation.GetSupportedViews%2A>.  
+View identifiers can be retrieved by using <xref:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation.GetSupportedViews%2A>.  
+ 
+The control-specific collection of view identifiers is identical across instances.  
+ 
+View names are suitable for use in Text to Speech, Braille, and other accessible applications.  
+ 
   
- The control-specific collection of view identifiers is identical across instances.  
-  
- View names are suitable for use in Text to Speech, Braille, and other accessible applications.  
-  
-   
-  
+ 
 ## Examples  
- In the following example, the control-specific name of the current view is retrieved from a control that supports <xref:System.Windows.Automation.MultipleViewPattern>.  
-  
- [!code-csharp[UIAMultipleViewPattern_snip#105](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#105)]
- [!code-vb[UIAMultipleViewPattern_snip#105](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#105)]  
-  
+In the following example, the control-specific name of the current view is retrieved from a control that supports <xref:System.Windows.Automation.MultipleViewPattern>.  
+ 
+[!code-csharp[UIAMultipleViewPattern_snip#105](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#105)]
+[!code-vb[UIAMultipleViewPattern_snip#105](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#105)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -170,20 +170,20 @@
         <summary>Identifies the <see cref="T:System.Windows.Automation.MultipleViewPattern" /> control pattern.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.MultipleViewPatternIdentifiers>.  
+This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.MultipleViewPatternIdentifiers>.  
+ 
+The pattern identifier is passed to methods such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
+ 
   
- The pattern identifier is passed to methods such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
-  
-   
-  
+ 
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.MultipleViewPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement>.  
-  
- [!code-csharp[UIAMultipleViewPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#101)]
- [!code-vb[UIAMultipleViewPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#101)]  
-  
+In the following example, a <xref:System.Windows.Automation.MultipleViewPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement>.  
+ 
+[!code-csharp[UIAMultipleViewPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#101)]
+[!code-vb[UIAMultipleViewPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#101)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,20 +208,20 @@
         <summary>Sets the current control-specific view.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- View identifiers can be retrieved by using <xref:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation.GetSupportedViews%2A>.  
+View identifiers can be retrieved by using <xref:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation.GetSupportedViews%2A>.  
+ 
+The control-specific collection of view identifiers is identical across instances.  
+ 
   
- The control-specific collection of view identifiers is identical across instances.  
-  
-   
-  
+ 
 ## Examples  
- In the following example, the collection of views available for a control that supports the <xref:System.Windows.Automation.MultipleViewPattern>control pattern is retrieved. A member of the view identifiers collection is subsequently used to modify the current view of the control.  
-  
- [!code-csharp[UIAMultipleViewPattern_snip#104](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#104)]
- [!code-vb[UIAMultipleViewPattern_snip#104](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#104)]  
-  
+In the following example, the collection of views available for a control that supports the <xref:System.Windows.Automation.MultipleViewPattern>control pattern is retrieved. A member of the view identifiers collection is subsequently used to modify the current view of the control.  
+ 
+[!code-csharp[UIAMultipleViewPattern_snip#104](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#104)]
+[!code-vb[UIAMultipleViewPattern_snip#104](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#104)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -244,22 +244,22 @@
         <summary>Identifies the property that gets the control-specific collection of views.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This identifier is used by UI automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.MultipleViewPatternIdentifiers>.  
+This identifier is used by UI automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.MultipleViewPatternIdentifiers>.  
+ 
+This property is not present in <xref:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation> and must be retrieved by using <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> or <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>.  
+ 
   
- This property is not present in <xref:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation> and must be retrieved by using <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> or <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>.  
-  
-   
-  
+ 
 ## Examples  
- In the following example, a collection of integer identifiers is obtained that represents the current views available for a control that supports <xref:System.Windows.Automation.MultipleViewPattern>.  
-  
- [!code-csharp[UIAMultipleViewPattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#100)]
- [!code-vb[UIAMultipleViewPattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#100)]  
+In the following example, a collection of integer identifiers is obtained that represents the current views available for a control that supports <xref:System.Windows.Automation.MultipleViewPattern>.  
+ 
+[!code-csharp[UIAMultipleViewPattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#100)]
+[!code-vb[UIAMultipleViewPattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#100)]  
 [!code-csharp[UIAMultipleViewPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#102)]
 [!code-vb[UIAMultipleViewPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#102)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

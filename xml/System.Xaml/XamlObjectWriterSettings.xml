@@ -14,10 +14,10 @@
     <summary>Provides specific XAML writer settings for <see cref="T:System.Xaml.XamlObjectWriter" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Xaml.XamlObjectWriter> can function within specified <xref:System.Xaml.XamlObjectWriterSettings>. Where settings are not specified, an instance of <xref:System.Xaml.XamlObjectWriterSettings> exists that has default values for a constructed <xref:System.Xaml.XamlObjectWriter>, and this instance can be used in merges of settings for a derived class.  
-  
+A <xref:System.Xaml.XamlObjectWriter> can function within specified <xref:System.Xaml.XamlObjectWriterSettings>. Where settings are not specified, an instance of <xref:System.Xaml.XamlObjectWriterSettings> exists that has default values for a constructed <xref:System.Xaml.XamlObjectWriter>, and this instance can be used in merges of settings for a derived class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,10 +74,10 @@
         <value>The <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> permissions.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property indicates the expected access level for non-public members, which are accessed in partial trust through a partial-trust tolerant runtime.  
-  
+This property indicates the expected access level for non-public members, which are accessed in partial trust through a partial-trust tolerant runtime.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,13 +171,13 @@
         <value>The XAML namescope to use for registering names. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specific contexts for a <xref:System.Xaml.XamlObjectWriter> might use an external XAML namescope.  
-  
+Specific contexts for a <xref:System.Xaml.XamlObjectWriter> might use an external XAML namescope.  
+ 
 ## WPF Usage Notes  
- In the WPF XAML implementation, XAML writer operations that are initiated by <xref:System.Windows.FrameworkTemplate> specify a separate XAML namescope. In this WPF scenario, templates should not share a XAML namescope with the root of the XAML page that defines them. Instead, they should process into a separate, designated XAML namescope.  
-  
+In the WPF XAML implementation, XAML writer operations that are initiated by <xref:System.Windows.FrameworkTemplate> specify a separate XAML namescope. In this WPF scenario, templates should not share a XAML namescope with the root of the XAML page that defines them. Instead, they should process into a separate, designated XAML namescope.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,12 +200,12 @@
           <see langword="true" /> if the XAML writer ignores <see cref="M:System.ComponentModel.TypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" /> implementations; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.TypeConverter> class and its <xref:System.ComponentModel.TypeConverter.CanConvertFrom%2A> method are part of an overall design for type conversion in the CLR. In XAML systems, you can typically assume that type-converter input is identifiable by the XAML reader, and for purposes of input, is always a string. If you set this property to `true`, you enable a mode where this assumption is codified in the XAML object writer behavior.  
-  
- This mode supports a compatibility requirement for previous versions of WPF XAML.  
-  
+The <xref:System.ComponentModel.TypeConverter> class and its <xref:System.ComponentModel.TypeConverter.CanConvertFrom%2A> method are part of an overall design for type conversion in the CLR. In XAML systems, you can typically assume that type-converter input is identifiable by the XAML reader, and for purposes of input, is always a string. If you set this property to `true`, you enable a mode where this assumption is codified in the XAML object writer behavior.  
+ 
+This mode supports a compatibility requirement for previous versions of WPF XAML.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,10 +228,10 @@
           <see langword="true" /> if <paramref name="K" /> type conversion for a <see cref="T:System.Collections.Generic.Dictionary`2" /> object should be disabled. <see langword="false" /> if performing <paramref name="K" /> type conversion for a <see cref="T:System.Collections.Generic.Dictionary`2" /> object applies. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the `K` type conversion feature, see Remarks in <xref:System.Xaml.XamlObjectWriter>.  
-  
+For more information about the `K` type conversion feature, see Remarks in <xref:System.Xaml.XamlObjectWriter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -272,10 +272,10 @@
         <value>A preexisting root object for <see cref="T:System.Xaml.XamlObjectWriter" /> operations.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you set this value, the root object instance is used as an implicit <xref:System.Xaml.XamlObjectWriter.WriteStartObject%2A> call (with object input that is direct instead of coming from the reader) that precedes the first explicit node-write call by the <xref:System.Xaml.XamlObjectWriter>. Any error checking, such as verifying the XAML type of the provided root object, is deferred until that implicit <xref:System.Xaml.XamlObjectWriter.WriteStartObject%2A> call, instead of being checked when you set this settings property.  
-  
+If you set this value, the root object instance is used as an implicit <xref:System.Xaml.XamlObjectWriter.WriteStartObject%2A> call (with object input that is direct instead of coming from the reader) that precedes the first explicit node-write call by the <xref:System.Xaml.XamlObjectWriter>. Any error checking, such as verifying the XAML type of the provided root object, is deferred until that implicit <xref:System.Xaml.XamlObjectWriter.WriteStartObject%2A> call, instead of being checked when you set this settings property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -298,10 +298,10 @@
           <see langword="true" /> if the duplicate property check should be omitted; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified code path checks the currently assigned properties and throws an exception if a duplicate property set of the named ambient property is attempted. For more information, see <xref:System.Xaml.IAmbientProvider>.  
-  
+The specified code path checks the currently assigned properties and throws an exception if a duplicate property set of the named ambient property is attempted. For more information, see <xref:System.Xaml.IAmbientProvider>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -324,10 +324,10 @@
           <see langword="true" /> if the <see cref="T:System.Xaml.XamlObjectWriter" /> should omit to call <see langword="ProvideValue" /> on a markup extension; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This setting is used when the <xref:System.Xaml.XamlObjectWriter> processes the root node (<xref:System.Xaml.XamlObjectWriter.WriteEndObject%2A>, or members within the root node). This property is relevant for template and defer-load scenarios.  
-  
+This setting is used when the <xref:System.Xaml.XamlObjectWriter> processes the root node (<xref:System.Xaml.XamlObjectWriter.WriteEndObject%2A>, or members within the root node). This property is relevant for template and defer-load scenarios.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -349,10 +349,10 @@
         <value>A <see cref="T:System.Uri" /> to be used in place of the actual <see langword="BaseUri" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used internally to provide the correct info in the handler, while keeping runtime behavior fully compatible.  
-  
+Used internally to provide the correct info in the handler, while keeping runtime behavior fully compatible.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -374,10 +374,10 @@
         <value>A handler implementation that handles this case.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The event handler is based on the generic <xref:System.EventHandler%601> delegate that uses the <xref:System.Windows.Markup.XamlSetValueEventArgs> event data.  
-  
+The event handler is based on the generic <xref:System.EventHandler%601> delegate that uses the <xref:System.Windows.Markup.XamlSetValueEventArgs> event data.  
+ 
  ]]></format>
         </remarks>
       </Docs>

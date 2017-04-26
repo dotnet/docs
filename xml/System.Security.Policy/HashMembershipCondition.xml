@@ -81,10 +81,10 @@
           <see langword="true" /> if the specified evidence satisfies the membership condition; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This membership condition tests only the <xref:System.Security.Policy.Hash> evidence object. There should be no more than one <xref:System.Security.Policy.Hash> object in the evidence.  
-  
+This membership condition tests only the <xref:System.Security.Policy.Hash> evidence object. There should be no more than one <xref:System.Security.Policy.Hash> object in the evidence.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,10 +239,10 @@
         <value>The hash value for which the membership condition tests.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the number of bytes in the hash value is incorrect for the current hash algorithm, the membership condition never finds a match.  
-  
+If the number of bytes in the hash value is incorrect for the current hash algorithm, the membership condition never finds a match.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt is made to set <see cref="P:System.Security.Policy.HashMembershipCondition.HashValue" /> to <see langword="null" />.</exception>

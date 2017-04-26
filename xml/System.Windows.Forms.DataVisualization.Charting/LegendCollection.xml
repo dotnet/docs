@@ -17,14 +17,14 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Forms.DataVisualization.Charting.Legend" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.LegendCollection> class is implemented as the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.Legends%2A> collection property of the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object.  
-  
- <xref:System.Windows.Forms.DataVisualization.Charting.Legend> objects can be appended, inserted or removed from the collection at either design time or run time.  
-  
- The <xref:System.Windows.Forms.DataVisualization.Charting.LegendCollection.Count> property indicates the total number of items in the collection, and is commonly used to find the upper bound of the collection.  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.LegendCollection> class is implemented as the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.Legends%2A> collection property of the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object.  
+ 
+<xref:System.Windows.Forms.DataVisualization.Charting.Legend> objects can be appended, inserted or removed from the collection at either design time or run time.  
+ 
+The <xref:System.Windows.Forms.DataVisualization.Charting.LegendCollection.Count> property indicates the total number of items in the collection, and is commonly used to find the upper bound of the collection.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,18 +14,18 @@
     <summary>Provides information specifying how acceleration should be performed on a spin box (also known as an up-down control) when the up or down button is pressed for specified time period.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.NumericUpDownAcceleration> object is used by the <xref:System.Windows.Forms.NumericUpDown> control to optionally provide acceleration when incrementing or decrementing the control through a large quantity of numbers.  
+The <xref:System.Windows.Forms.NumericUpDownAcceleration> object is used by the <xref:System.Windows.Forms.NumericUpDown> control to optionally provide acceleration when incrementing or decrementing the control through a large quantity of numbers.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.NumericUpDownAcceleration> class. To run this example, paste the following code into a form and call the `InitializeAcceleratedUpDown` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler. While the code is running, press and hold the up or down arrow to see the acceleration occur.  
-  
- [!code-csharp[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/CS/Form1.cs#6)]
- [!code-vb[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/VB/form1.vb#6)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.NumericUpDownAcceleration> class. To run this example, paste the following code into a form and call the `InitializeAcceleratedUpDown` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler. While the code is running, press and hold the up or down arrow to see the acceleration occur.  
+ 
+[!code-csharp[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/CS/Form1.cs#6)]
+[!code-vb[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/VB/form1.vb#6)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

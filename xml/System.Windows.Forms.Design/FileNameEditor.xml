@@ -14,19 +14,19 @@
     <summary>Provides a user interface for selecting a file name.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.Design.FileNameEditor> provides a file selection dialog box for file name selection and editing.  
+<xref:System.Windows.Forms.Design.FileNameEditor> provides a file selection dialog box for file name selection and editing.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses an <xref:System.ComponentModel.EditorAttribute> to associate the <xref:System.Windows.Forms.Design.FileNameEditor> with a property.  
-  
- [!code-cpp[EditorAttributesExample#5](~/samples/snippets/cpp/VS_Snippets_Winforms/EditorAttributesExample/CPP/class1.cpp#5)]
- [!code-csharp[EditorAttributesExample#5](~/samples/snippets/csharp/VS_Snippets_Winforms/EditorAttributesExample/CS/class1.cs#5)]
- [!code-vb[EditorAttributesExample#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/EditorAttributesExample/VB/class1.vb#5)]  
-  
+The following code example uses an <xref:System.ComponentModel.EditorAttribute> to associate the <xref:System.Windows.Forms.Design.FileNameEditor> with a property.  
+ 
+[!code-cpp[EditorAttributesExample#5](~/samples/snippets/cpp/VS_Snippets_Winforms/EditorAttributesExample/CPP/class1.cpp#5)]
+[!code-csharp[EditorAttributesExample#5](~/samples/snippets/csharp/VS_Snippets_Winforms/EditorAttributesExample/CS/class1.cs#5)]
+[!code-vb[EditorAttributesExample#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/EditorAttributesExample/VB/class1.vb#5)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -74,10 +74,10 @@
         <returns>The new value of the object. If the value of the object hasn't changed, this should return the same object it was passed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A service provider is provided so that any required editing services can be obtained.  
-  
+A service provider is provided so that any required editing services can be obtained.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <returns>One of the <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> values indicating the provided editing style.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Forms.Design.FileNameEditor.EditValue%2A> method is not supported, this method will return <xref:System.Drawing.Design.UITypeEditorEditStyle>.  
-  
+If the <xref:System.Windows.Forms.Design.FileNameEditor.EditValue%2A> method is not supported, this method will return <xref:System.Drawing.Design.UITypeEditorEditStyle>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,10 +131,10 @@
         <summary>Initializes the open file dialog when it is created.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method configures the dialog box with a generic file filter and title.  
-  
+This method configures the dialog box with a generic file filter and title.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

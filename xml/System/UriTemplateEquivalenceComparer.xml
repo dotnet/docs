@@ -23,18 +23,18 @@
     <summary>A class used to compare <see cref="T:System.UriTemplate" /> instances for structural (instead of reference) equivalence.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.UriTemplate> instances are compared using reference equality by default. The <xref:System.UriTemplateEquivalenceComparer> class evaluates equivalence using <xref:System.UriTemplate.IsEquivalentTo%28System.UriTemplate%29> instead of the default reference equality check. This class is useful when you wish to compare two <xref:System.UriTemplate> instances based on the URIs they match instead of strict reference equality.  
+<xref:System.UriTemplate> instances are compared using reference equality by default. The <xref:System.UriTemplateEquivalenceComparer> class evaluates equivalence using <xref:System.UriTemplate.IsEquivalentTo%28System.UriTemplate%29> instead of the default reference equality check. This class is useful when you wish to compare two <xref:System.UriTemplate> instances based on the URIs they match instead of strict reference equality.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the difference between reference equality and structural equality. It also shows how to use the <xref:System.UriTemplateEquivalenceComparer> as a comparer in a dictionary.  
-  
- [!code-csharp[UriTemplateEquivalenceComparer#0](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplateequivalencecomparer/cs/program.cs#0)]
- [!code-vb[UriTemplateEquivalenceComparer#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplateequivalencecomparer/vb/program.vb#0)]  
-  
+The following example shows the difference between reference equality and structural equality. It also shows how to use the <xref:System.UriTemplateEquivalenceComparer> as a comparer in a dictionary.  
+ 
+[!code-csharp[UriTemplateEquivalenceComparer#0](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplateequivalencecomparer/cs/program.cs#0)]
+[!code-vb[UriTemplateEquivalenceComparer#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplateequivalencecomparer/vb/program.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,13 +58,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.UriTemplateEquivalenceComparer" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to call the constructor for this class.  
-  
- [!code-csharp[UriTemplateEquivalenceComparer#1](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplateequivalencecomparer/cs/program.cs#1)]
- [!code-vb[UriTemplateEquivalenceComparer#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplateequivalencecomparer/vb/program.vb#1)]  
-  
+The following example shows how to call the constructor for this class.  
+ 
+[!code-csharp[UriTemplateEquivalenceComparer#1](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplateequivalencecomparer/cs/program.cs#1)]
+[!code-vb[UriTemplateEquivalenceComparer#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplateequivalencecomparer/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,17 +97,17 @@
         <returns>A value that indicates whether the two <see cref="T:System.UriTemplate" /> instances are equivalent.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not normally called directly. It is called by another class that is comparing two <xref:System.UriTemplate> instances.  
+This method is not normally called directly. It is called by another class that is comparing two <xref:System.UriTemplate> instances.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to call the <xref:System.UriTemplateEquivalenceComparer.Equals%2A> method.  
-  
- [!code-csharp[UriTemplateEquivalenceComparer#2](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplateequivalencecomparer/cs/snippets.cs#2)]  
-  
+The following code shows how to call the <xref:System.UriTemplateEquivalenceComparer.Equals%2A> method.  
+ 
+[!code-csharp[UriTemplateEquivalenceComparer#2](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplateequivalencecomparer/cs/snippets.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
         <returns>The hash code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not normally called directly. It is called by another class that requires a hash of a <xref:System.UriTemplate> instance.  
-  
+This method is not normally called directly. It is called by another class that requires a hash of a <xref:System.UriTemplate> instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>

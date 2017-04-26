@@ -19,12 +19,12 @@
     <summary>Represents the base class for a page theme, which is a collection of resources that are used to define a consistent look across pages and controls in a Web site. The page theme can be set through configuration or the page directive.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Page and control developers do not use the <xref:System.Web.UI.ControlSkinDelegate>, <xref:System.Web.UI.ControlSkin>, or <xref:System.Web.UI.PageTheme> classes directly. These classes are used by the ASP.NET parser and runtime to apply style sheet elements that are defined in ASP.NET themes and control skins files to pages and specific types of controls.  
-  
- Page developers enable (or disable) page themes using the <xref:System.Web.UI.Page.Theme%2A> and <xref:System.Web.UI.Control.EnableTheming%2A> properties. For more information about page themes, see [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
-  
+Page and control developers do not use the <xref:System.Web.UI.ControlSkinDelegate>, <xref:System.Web.UI.ControlSkin>, or <xref:System.Web.UI.PageTheme> classes directly. These classes are used by the ASP.NET parser and runtime to apply style sheet elements that are defined in ASP.NET themes and control skins files to pages and specific types of controls.  
+ 
+Page developers enable (or disable) page themes using the <xref:System.Web.UI.Page.Theme%2A> and <xref:System.Web.UI.Control.EnableTheming%2A> properties. For more information about page themes, see [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
         <value>A string value containing the relative URL of the <see cref="T:System.Web.UI.PageTheme" /> directory.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PageTheme.AppRelativeTemplateSourceDirectory%2A> property is abstract. When compiled, a theme will generate code that overrides the <xref:System.Web.UI.PageTheme.AppRelativeTemplateSourceDirectory%2A> property. The <xref:System.Web.UI.Control.ResolveUrl%2A> method uses the <xref:System.Web.UI.PageTheme.AppRelativeTemplateSourceDirectory%2A> property to resolves a relative URL to an absolute URL.  
-  
+The <xref:System.Web.UI.PageTheme.AppRelativeTemplateSourceDirectory%2A> property is abstract. When compiled, a theme will generate code that overrides the <xref:System.Web.UI.PageTheme.AppRelativeTemplateSourceDirectory%2A> property. The <xref:System.Web.UI.Control.ResolveUrl%2A> method uses the <xref:System.Web.UI.PageTheme.AppRelativeTemplateSourceDirectory%2A> property to resolves a relative URL to an absolute URL.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,10 +86,10 @@
         <value>An <see cref="T:System.Collections.IDictionary" /> that represents the control skins associated with the current page theme.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PageTheme.ControlSkins%2A> property is abstract. When compiled, a theme will generate code that overrides this property.  
-  
+The <xref:System.Web.UI.PageTheme.ControlSkins%2A> property is abstract. When compiled, a theme will generate code that overrides this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,10 +141,10 @@
         <returns>An object that results from the evaluation of the data-binding expression.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PageTheme.Eval%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the data item container.  
-  
+The <xref:System.Web.UI.PageTheme.Eval%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the data item container.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,10 +172,10 @@
         <returns>A string that results from the evaluation of the data-binding expression and conversion to a string type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PageTheme.Eval%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the data item container.  
-  
+The <xref:System.Web.UI.PageTheme.Eval%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the data item container.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
         <value>A string array of style sheets linked to this page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PageTheme.LinkedStyleSheets%2A> property is abstract and must be implemented in a derived class. When compiled, a theme will generate code that overrides this property.  
-  
+The <xref:System.Web.UI.PageTheme.LinkedStyleSheets%2A> property is abstract and must be implemented in a derived class. When compiled, a theme will generate code that overrides this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,10 +222,10 @@
         <value>The <see cref="T:System.Web.UI.Page" /> associated with the <see cref="T:System.Web.UI.PageTheme" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PageTheme.Page%2A> property is read-only and is assigned internally when an instance of the <xref:System.Web.UI.PageTheme> class is created.  
-  
+The <xref:System.Web.UI.PageTheme.Page%2A> property is read-only and is assigned internally when an instance of the <xref:System.Web.UI.PageTheme> class is created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,10 +274,10 @@
         <returns>An object that results from the evaluation of the data-binding <paramref name="xPathExpression" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PageTheme.XPath%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
-  
+The <xref:System.Web.UI.PageTheme.XPath%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -305,10 +305,10 @@
         <returns>A string that results from the evaluation of the data-binding expression and conversion to a string type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PageTheme.XPath%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
-  
+The <xref:System.Web.UI.PageTheme.XPath%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -336,10 +336,10 @@
         <returns>An object that results from the evaluation of the data-binding <paramref name="xPathExpression" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PageTheme.XPath%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
-  
+The <xref:System.Web.UI.PageTheme.XPath%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -369,10 +369,10 @@
         <returns>A string that results from the evaluation of the data-binding expression and conversion to a string type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PageTheme.XPath%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
-  
+The <xref:System.Web.UI.PageTheme.XPath%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,10 +398,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerable" /> list of nodes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PageTheme.XPathSelect%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
-  
+The <xref:System.Web.UI.PageTheme.XPathSelect%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -429,10 +429,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerable" /> list of nodes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PageTheme.XPathSelect%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
-  
+The <xref:System.Web.UI.PageTheme.XPathSelect%2A> method uses the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,16 +19,16 @@
     <summary>An <see langword="abstract" /> base class representing a comparison that can be used to constrain an <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocation" /> or a <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingLocation" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.Runtime.Tracking.TrackingCondition> is the abstract base class from which <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition> is derived.  
-  
- <xref:System.Workflow.Runtime.Tracking.TrackingCondition> is evaluated by comparing the value of <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Member%2A> to <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Value%2A> by applying <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Operator%2A>.  
-  
+ 
+<xref:System.Workflow.Runtime.Tracking.TrackingCondition> is the abstract base class from which <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition> is derived.  
+ 
+<xref:System.Workflow.Runtime.Tracking.TrackingCondition> is evaluated by comparing the value of <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Member%2A> to <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Value%2A> by applying <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Operator%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,10 +65,10 @@
         <value>The name of the member to be compared.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Member%2A> will be compared to <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Value%2A> by applying the <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Operator%2A>.  
-  
+The value of <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Member%2A> will be compared to <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Value%2A> by applying the <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Operator%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,10 +90,10 @@
         <value>One of the <see cref="T:System.Workflow.Runtime.Tracking.ComparisonOperator" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Currently only <xref:System.Workflow.Runtime.Tracking.ComparisonOperator> and <xref:System.Workflow.Runtime.Tracking.ComparisonOperator> are supported.  
-  
+Currently only <xref:System.Workflow.Runtime.Tracking.ComparisonOperator> and <xref:System.Workflow.Runtime.Tracking.ComparisonOperator> are supported.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,10 +115,10 @@
         <value>The value to compare.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Value%2A> will be compared to the value of <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Member%2A> by applying the <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Operator%2A>.  
-  
+<xref:System.Workflow.Runtime.Tracking.TrackingCondition.Value%2A> will be compared to the value of <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Member%2A> by applying the <xref:System.Workflow.Runtime.Tracking.TrackingCondition.Operator%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

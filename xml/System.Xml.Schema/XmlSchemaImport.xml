@@ -19,15 +19,15 @@
     <summary>Represents the <see langword="import" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). This class is used to import schema components from other schemas.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `XmlSchemaImport` allows references to schema components from other schemas with different target namespaces.  
+`XmlSchemaImport` allows references to schema components from other schemas with different target namespaces.  
+ 
   
-   
-  
+ 
 ## Examples  
- See <xref:System.Xml.Schema.XmlSchemaInclude> for an example using this class.  
-  
+See <xref:System.Xml.Schema.XmlSchemaInclude> for an example using this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -109,10 +109,10 @@
  Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `namespace` attribute indicates that the containing schema document may contain qualified references to schema components in that namespace through one or more prefixes that are declared with `xmlns` attributes. If this attribute is absent, the containing schema can contain unqualified references to components in the imported namespace.  
-  
+The `namespace` attribute indicates that the containing schema document may contain qualified references to schema components in that namespace through one or more prefixes that are declared with `xmlns` attributes. If this attribute is absent, the containing schema can contain unqualified references to components in the imported namespace.  
+ 
  ]]></format>
         </remarks>
       </Docs>

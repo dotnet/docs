@@ -19,10 +19,10 @@
     <summary>Specifies a <see cref="T:System.Configuration.CallbackValidator" /> object to use for code validation. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.CallbackValidatorAttribute> attribute class provides an association between a <xref:System.Configuration.CallbackValidator> object and the code to validate. The <xref:System.Configuration.CallbackValidatorAttribute> class is derived from the <xref:System.Configuration.ConfigurationValidatorAttribute> class.  
-  
+The <xref:System.Configuration.CallbackValidatorAttribute> attribute class provides an association between a <xref:System.Configuration.CallbackValidator> object and the code to validate. The <xref:System.Configuration.CallbackValidatorAttribute> class is derived from the <xref:System.Configuration.ConfigurationValidatorAttribute> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>

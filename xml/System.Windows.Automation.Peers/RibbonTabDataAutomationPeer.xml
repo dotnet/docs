@@ -122,10 +122,10 @@
         <summary>Hides all nodes, controls, or content that are descendants of the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,10 +147,10 @@
         <summary>Displays all child nodes, controls, or content of the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,10 +172,10 @@
         <value>The state of the control that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
         <summary>Scrolls the content area of a container object in order to display the control within the visible region of the container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IScrollItemProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IScrollItemProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,10 +242,10 @@
         <summary>This API is not implemented.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" /> is selected.</exception>

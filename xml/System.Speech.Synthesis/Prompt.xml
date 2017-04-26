@@ -19,14 +19,14 @@
     <summary>Represents information about what can be rendered, either text or an audio file, by the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Speech.Synthesis.Prompt> object can contain plain text, text formatted with markup language, or audio files.  
-  
- An empty <xref:System.Speech.Synthesis.Prompt> object is created with each new instance of <xref:System.Speech.Synthesis.PromptBuilder>.  The <xref:System.Speech.Synthesis.PromptBuilder> class provides methods for adding content, including text, SSML markup, bookmarks, and prerecorded audio files (such as .wav files), to the empty <xref:System.Speech.Synthesis.Prompt> object that it contains. Typically, applications will use <xref:System.Speech.Synthesis.PromptBuilder>, rather than a <xref:System.Speech.Synthesis.Prompt> object, to create prompts and populate them with content.  
-  
- To generate speech from the contents of a <xref:System.Speech.Synthesis.Prompt> object, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method.  
-  
+A <xref:System.Speech.Synthesis.Prompt> object can contain plain text, text formatted with markup language, or audio files.  
+ 
+An empty <xref:System.Speech.Synthesis.Prompt> object is created with each new instance of <xref:System.Speech.Synthesis.PromptBuilder>.  The <xref:System.Speech.Synthesis.PromptBuilder> class provides methods for adding content, including text, SSML markup, bookmarks, and prerecorded audio files (such as .wav files), to the empty <xref:System.Speech.Synthesis.Prompt> object that it contains. Typically, applications will use <xref:System.Speech.Synthesis.PromptBuilder>, rather than a <xref:System.Speech.Synthesis.Prompt> object, to create prompts and populate them with content.  
+ 
+To generate speech from the contents of a <xref:System.Speech.Synthesis.Prompt> object, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
         <summary>Creates a new instance of the <see cref="T:System.Speech.Synthesis.Prompt" /> class and specifies the text to be spoken.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Speech.Synthesis.Prompt> object from a string and passes the object as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method.  
-  
+The following example creates a <xref:System.Speech.Synthesis.Prompt> object from a string and passes the object as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -102,7 +102,7 @@ namespace SampleSynthesis
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,15 +126,15 @@ namespace SampleSynthesis
         <summary>Creates a new instance of the <see cref="T:System.Speech.Synthesis.Prompt" /> class and specifies the text to be spoken and whether its format is plain text or markup language.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](http://msdn.microsoft.com/en-us/0c51279e-84d2-4f73-a924-8832039abf94).  
+The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](http://msdn.microsoft.com/en-us/0c51279e-84d2-4f73-a924-8832039abf94).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example builds a string that contains SSML markup, creates a <xref:System.Speech.Synthesis.Prompt> object from the string, and speaks the prompt.  
-  
+The following example builds a string that contains SSML markup, creates a <xref:System.Speech.Synthesis.Prompt> object from the string, and speaks the prompt.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -175,7 +175,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

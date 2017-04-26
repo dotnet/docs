@@ -14,10 +14,10 @@
     <summary>Represents a security token that is based upon a user name and password.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.IdentityModel.Tokens.UserNameSecurityToken> class to provide authentication credentials in the form of a user name and password.  
-  
+Use <xref:System.IdentityModel.Tokens.UserNameSecurityToken> class to provide authentication credentials in the form of a user name and password.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -97,10 +97,10 @@
         <value>A unique identifier of the security token.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.UserNameSecurityToken.Id%2A> property is usually in the format of a URI with a GUID.  
-  
+The <xref:System.IdentityModel.Tokens.UserNameSecurityToken.Id%2A> property is usually in the format of a URI with a GUID.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that contains the set of keys associated with the security token.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IdentityModel.Tokens.UserNameSecurityToken> security tokens cannot be used for cryptographic operations, by default, so the <xref:System.IdentityModel.Tokens.UserNameSecurityToken.SecurityKeys%2A> property returns an empty collection.  
-  
+<xref:System.IdentityModel.Tokens.UserNameSecurityToken> security tokens cannot be used for cryptographic operations, by default, so the <xref:System.IdentityModel.Tokens.UserNameSecurityToken.SecurityKeys%2A> property returns an empty collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,10 +183,10 @@
         <value>A <see cref="T:System.DateTime" /> that represents the instant in time at which this security token is first valid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo%2A> properties to determine the time period in which a <xref:System.IdentityModel.Tokens.UserNameSecurityToken> token is valid. The <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo%2A> properties represent the first and last instants in time in which the security token is valid, respectively.  
-  
+Use the <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo%2A> properties to determine the time period in which a <xref:System.IdentityModel.Tokens.UserNameSecurityToken> token is valid. The <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo%2A> properties represent the first and last instants in time in which the security token is valid, respectively.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
         <value>A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo%2A> properties to determine the time period in which a <xref:System.IdentityModel.Tokens.UserNameSecurityToken> token is valid. The <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo%2A> properties represent the first and last instants in time in which the security token is valid, respectively.  
-  
+Use the <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo%2A> properties to determine the time period in which a <xref:System.IdentityModel.Tokens.UserNameSecurityToken> token is valid. The <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.UserNameSecurityToken.ValidTo%2A> properties represent the first and last instants in time in which the security token is valid, respectively.  
+ 
  ]]></format>
         </remarks>
       </Docs>

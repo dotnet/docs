@@ -13,12 +13,12 @@
     <summary>Describes the behavior that caused a <see cref="E:System.Windows.Controls.Primitives.ScrollBar.Scroll" /> event for a <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The page buttons are not visible as buttons, but they occupy the space between the <xref:System.Windows.Controls.Primitives.Thumb> and the <xref:System.Windows.Controls.Primitives.RepeatButton> controls on either end of the <xref:System.Windows.Controls.Primitives.ScrollBar>. The user clicks a page button when clicking the left mouse button between the <xref:System.Windows.Controls.Primitives.Thumb> and a <xref:System.Windows.Controls.Primitives.RepeatButton>. The result of this action is to move the <xref:System.Windows.Controls.Primitives.Thumb> in the direction of the page button. For more information about the effect of the page buttons, see the descriptions of the LargeIncrement and LargeDecrement members. The following illustration shows the elements of a <xref:System.Windows.Controls.Primitives.ScrollBar>, including the page buttons.  
-  
- ![The different parts of a ScrollBar](~/add/media/scrollbarpagebutton.png "The different parts of a ScrollBar")  
-  
+The page buttons are not visible as buttons, but they occupy the space between the <xref:System.Windows.Controls.Primitives.Thumb> and the <xref:System.Windows.Controls.Primitives.RepeatButton> controls on either end of the <xref:System.Windows.Controls.Primitives.ScrollBar>. The user clicks a page button when clicking the left mouse button between the <xref:System.Windows.Controls.Primitives.Thumb> and a <xref:System.Windows.Controls.Primitives.RepeatButton>. The result of this action is to move the <xref:System.Windows.Controls.Primitives.Thumb> in the direction of the page button. For more information about the effect of the page buttons, see the descriptions of the LargeIncrement and LargeDecrement members. The following illustration shows the elements of a <xref:System.Windows.Controls.Primitives.ScrollBar>, including the page buttons.  
+ 
+![The different parts of a ScrollBar](~/add/media/scrollbarpagebutton.png "The different parts of a ScrollBar")  
+ 
  ]]></format>
     </remarks>
   </Docs>

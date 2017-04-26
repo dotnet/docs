@@ -18,18 +18,18 @@
     <summary>Specifies the meaning of time values that control caching behavior for resources obtained using <see cref="T:System.Net.HttpWebRequest" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used by members of the <xref:System.Net.Cache.HttpRequestCachePolicy> class to configure the time values for cache policies.  
+This enumeration is used by members of the <xref:System.Net.Cache.HttpRequestCachePolicy> class to configure the time values for cache policies.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a policy based on MaxAgeAndMinFresh.  
-  
- [!code-cpp[NclSimpleCache#9](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#9)]
- [!code-csharp[NclSimpleCache#9](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#9)]  
-  
+The following code example creates a policy based on MaxAgeAndMinFresh.  
+ 
+[!code-cpp[NclSimpleCache#9](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#9)]
+[!code-csharp[NclSimpleCache#9](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#9)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

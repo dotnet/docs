@@ -114,10 +114,10 @@
           <see langword="true" /> if the Boolean is <see langword="true" />; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a Boolean.  
-  
+No conversions are performed; therefore the data retrieved must already be a Boolean.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,10 +152,10 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a byte.  
-  
+No conversions are performed; therefore the data retrieved must already be a byte.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a byte array.  
-  
+No conversions are performed; therefore the data retrieved must already be a byte array.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -236,10 +236,10 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a character.  
-  
+No conversions are performed; therefore the data retrieved must already be a character.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,10 +282,10 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a character array.  
-  
+No conversions are performed; therefore the data retrieved must already be a character array.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,10 +382,10 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a <xref:System.DateTime> object.  
-  
+No conversions are performed; therefore the data retrieved must already be a <xref:System.DateTime> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -451,10 +451,10 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a <xref:System.Decimal> object.  
-  
+No conversions are performed; therefore the data retrieved must already be a <xref:System.Decimal> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -489,10 +489,10 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a double-precision floating-point number.  
-  
+No conversions are performed; therefore the data retrieved must already be a double-precision floating-point number.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -558,10 +558,10 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a single-precision floating-point number.  
-  
+No conversions are performed; therefore the data retrieved must already be a single-precision floating-point number.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -628,10 +628,10 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a 16-bit signed integer.  
-  
+No conversions are performed; therefore the data retrieved must already be a 16-bit signed integer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -666,10 +666,10 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a 32-bit signed integer.  
-  
+No conversions are performed; therefore the data retrieved must already be a 32-bit signed integer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -704,10 +704,10 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a 64-bit signed integer.  
-  
+No conversions are performed; therefore the data retrieved must already be a 64-bit signed integer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -804,10 +804,10 @@
         <returns>The value of the specified column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No conversions are performed; therefore the data retrieved must already be a string.  
-  
+No conversions are performed; therefore the data retrieved must already be a string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -873,10 +873,10 @@
         <returns>The number of instances of <see cref="T:System.Object" /> in the array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using this method may be more efficient for most applications then retrieving each field individually.  
-  
+Using this method may be more efficient for most applications then retrieving each field individually.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -912,10 +912,10 @@
           <see langword="true" /> if the specified column is equivalent to <see cref="T:System.DBNull" />; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method to check for null column values before calling the typed get methods (for example, <xref:System.Data.SqlClient.SqlDataReader.GetByte%2A>, <xref:System.Data.SqlClient.SqlDataReader.GetChar%2A>, and so on) to avoid raising an error.  
-  
+Call this method to check for null column values before calling the typed get methods (for example, <xref:System.Data.SqlClient.SqlDataReader.GetByte%2A>, <xref:System.Data.SqlClient.SqlDataReader.GetChar%2A>, and so on) to avoid raising an error.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1005,10 +1005,10 @@
         <returns>An <see cref="T:System.ComponentModel.AttributeCollection" /> that contains the attributes for this object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetAttributes%2A>.  
-  
+For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetAttributes%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1036,10 +1036,10 @@
         <returns>The class name of the object, or <see langword="null" /> if the class does not have a name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetClassName%2A>.  
-  
+For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetClassName%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1067,10 +1067,10 @@
         <returns>The name of the object, or <see langword="null" /> if the object does not have a name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetComponentName%2A>.  
-  
+For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetComponentName%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1098,10 +1098,10 @@
         <returns>A <see cref="T:System.ComponentModel.TypeConverter" /> that is the converter for this object, or <see langword="null" /> if there is no <see cref="T:System.ComponentModel.TypeConverter" /> for this object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetConverter%2A>.  
-  
+For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetConverter%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1129,10 +1129,10 @@
         <returns>An <see cref="T:System.ComponentModel.EventDescriptor" /> that represents the default event for this object, or <see langword="null" /> if this object does not have events.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent%2A>.  
-  
+For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1160,10 +1160,10 @@
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that represents the default property for this object, or <see langword="null" /> if this object does not have properties.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty%2A>.  
-  
+For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1194,10 +1194,10 @@
         <returns>An <see cref="T:System.Object" /> of the specified type that is the editor for this object, or <see langword="null" /> if the editor cannot be found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.ComponentModel.CustomTypeDescriptor.GetEditor%2A>.  
-  
+For more information, see <xref:System.ComponentModel.CustomTypeDescriptor.GetEditor%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1225,10 +1225,10 @@
         <returns>An <see cref="T:System.ComponentModel.EventDescriptorCollection" /> that represents the events for this component instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetEvents%2A>.  
-  
+For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetEvents%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1259,10 +1259,10 @@
         <returns>An <see cref="T:System.ComponentModel.EventDescriptorCollection" /> that represents the filtered events for this component instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetEvents.%2A>.  
-  
+For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetEvents.%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1290,10 +1290,10 @@
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that represents the properties for this component instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetProperties%2A>.  
-  
+For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetProperties%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1324,10 +1324,10 @@
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that represents the filtered properties for this component instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetProperties.%2A>.  
-  
+For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.GetProperties.%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1358,10 +1358,10 @@
         <returns>An <see cref="T:System.Object" /> that represents the owner of the specified property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.PropertyDescriptor%2A>.  
-  
+For more information, see <xref:System.ComponentModel.ICustomTypeDescriptor.PropertyDescriptor%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

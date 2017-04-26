@@ -19,14 +19,14 @@
     <summary>Provides methods and properties for all glyph classes that an <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> displays when it is selected on the workflow design surface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- Some glyphs that are displayed on an activity designer can be selected by the user while others cannot. When a user selects a glyph that can be selected, the glyph changes appearance on the activity design surface. The <xref:System.Workflow.ComponentModel.Design.SelectionGlyph> class is the base class for all glyph classes that change appearance when a user selects it on the activity design surface.  
-  
+ 
+Some glyphs that are displayed on an activity designer can be selected by the user while others cannot. When a user selects a glyph that can be selected, the glyph changes appearance on the activity design surface. The <xref:System.Workflow.ComponentModel.Design.SelectionGlyph> class is the base class for all glyph classes that change appearance when a user selects it on the activity design surface.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -73,10 +73,10 @@
         <returns>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds for the glyph.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unless overridden in a derived class, <xref:System.Workflow.ComponentModel.Design.SelectionGlyph.GetBounds%2A> returns a rectangle one-and-one-half times the size of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Bounds%2A> of `designer`.  
-  
+Unless overridden in a derived class, <xref:System.Workflow.ComponentModel.Design.SelectionGlyph.GetBounds%2A> returns a rectangle one-and-one-half times the size of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Bounds%2A> of `designer`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,10 +102,10 @@
         <returns>A <see cref="T:System.Drawing.Rectangle" /> array of the grab handles to display on the selected glyph.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Grab handles are the small boxes on the edge of a selected glyph that a user can grab and move to drag or resize the glyph.  
-  
+Grab handles are the small boxes on the edge of a selected glyph that a user can grab and move to drag or resize the glyph.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,10 +156,10 @@
         <summary>Performs any tasks required to render the glyph on the activity designer surface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.SelectionGlyph.OnPaint%2A> draws all elements of the glyph that the user selects, including the glyphs grab handles.  
-  
+<xref:System.Workflow.ComponentModel.Design.SelectionGlyph.OnPaint%2A> draws all elements of the glyph that the user selects, including the glyphs grab handles.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -181,12 +181,12 @@
         <value>An integer that represents the view priority of the glyph on the activity designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The possible priority settings are defined by the following <xref:System.Workflow.ComponentModel.Design.DesignerGlyph> fields:  
-  
- <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.HighestPriority>, <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.LowestPriority>, and <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.NormalPriority>.  
-  
+The possible priority settings are defined by the following <xref:System.Workflow.ComponentModel.Design.DesignerGlyph> fields:  
+ 
+<xref:System.Workflow.ComponentModel.Design.DesignerGlyph.HighestPriority>, <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.LowestPriority>, and <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.NormalPriority>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

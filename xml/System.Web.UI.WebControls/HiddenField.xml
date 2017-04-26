@@ -44,25 +44,25 @@
     <summary>Represents a hidden field used to store a non-displayed value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In this topic:  
-  
+In this topic:  
+ 
 -   [Introduction](#introduction)  
-  
+ 
 -   [Declarative Syntax](#declarative_syntax)  
-  
+ 
 <a name="introduction"></a>   
 ## Introduction  
- The <xref:System.Web.UI.WebControls.HiddenField> control is used to store a value that needs to be persisted across posts to the server. It is rendered as an `<input type= "hidden"/>` element.  
-  
- Normally view state, session state, and cookies are used to maintain the state of a Web Forms page. However, if these methods are disabled or are not available, you can use the <xref:System.Web.UI.WebControls.HiddenField> control to store state values.  
-  
- To specify the value for a <xref:System.Web.UI.WebControls.HiddenField> control, use the <xref:System.Web.UI.WebControls.HiddenField.Value%2A> property. You can provide a routine that gets called every time the value of the <xref:System.Web.UI.WebControls.HiddenField> control changes between posts to the server by creating an event handler for the <xref:System.Web.UI.WebControls.HiddenField.ValueChanged> event.  
-  
+The <xref:System.Web.UI.WebControls.HiddenField> control is used to store a value that needs to be persisted across posts to the server. It is rendered as an `<input type= "hidden"/>` element.  
+ 
+Normally view state, session state, and cookies are used to maintain the state of a Web Forms page. However, if these methods are disabled or are not available, you can use the <xref:System.Web.UI.WebControls.HiddenField> control to store state values.  
+ 
+To specify the value for a <xref:System.Web.UI.WebControls.HiddenField> control, use the <xref:System.Web.UI.WebControls.HiddenField.Value%2A> property. You can provide a routine that gets called every time the value of the <xref:System.Web.UI.WebControls.HiddenField> control changes between posts to the server by creating an event handler for the <xref:System.Web.UI.WebControls.HiddenField.ValueChanged> event.  
+ 
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
-  
+ 
 ```  
 <asp:HiddenField  
     EnableTheming="True|False"  
@@ -81,21 +81,21 @@
     Visible="True|False"  
 />  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following examples show how to use the <xref:System.Web.UI.WebControls.HiddenField> control to store the value of a <xref:System.Web.UI.WebControls.TextBox> control between posts to the server.  
-  
+The following examples show how to use the <xref:System.Web.UI.WebControls.HiddenField> control to store the value of a <xref:System.Web.UI.WebControls.TextBox> control between posts to the server.  
+ 
 > [!IMPORTANT]
 >  The examples have a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[HiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenField/CS/hiddenfieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenField/VB/hiddenfieldvb.aspx#1)]  -->  
-  
- <!-- TODO: review snippet reference [!code-csharp[HiddenFieldWebServerControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenFieldWebServerControl/CS/HiddenFieldWebServerControl.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HiddenFieldWebServerControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenFieldWebServerControl/VB/HiddenFieldWebServerControl.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenField/CS/hiddenfieldcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenField/VB/hiddenfieldvb.aspx#1)]  -->  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HiddenFieldWebServerControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenFieldWebServerControl/CS/HiddenFieldWebServerControl.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HiddenFieldWebServerControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenFieldWebServerControl/VB/HiddenFieldWebServerControl.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -114,10 +114,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.HiddenField" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create a new instance of a <xref:System.Web.UI.WebControls.HiddenField> class.  
-  
+Use this constructor to create a new instance of a <xref:System.Web.UI.WebControls.HiddenField> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <returns>Always returns an <see cref="T:System.Web.UI.EmptyControlCollection" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Control.CreateControlCollection%2A?displayProperty=fullName> method is normally used to create a <xref:System.Web.UI.ControlCollection?displayProperty=fullName> object for storing the child controls of a Web Server control. In this implementation of the method, an <xref:System.Web.UI.EmptyControlCollection?displayProperty=fullName> collection is always returned to indicate that child controls are not allowed.  
-  
+The <xref:System.Web.UI.Control.CreateControlCollection%2A?displayProperty=fullName> method is normally used to create a <xref:System.Web.UI.ControlCollection?displayProperty=fullName> object for storing the child controls of a Web Server control. In this implementation of the method, an <xref:System.Web.UI.EmptyControlCollection?displayProperty=fullName> collection is always returned to indicate that child controls are not allowed.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -176,10 +176,10 @@
         <value>Always returns <see langword="false" /> to indicate that this control does not support themes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.HiddenField> control does not support themes. This property has been overridden to always return `false`. If you attempt to set this property, a <xref:System.NotSupportedException> exception is thrown.  
-  
+The <xref:System.Web.UI.WebControls.HiddenField> control does not support themes. This property has been overridden to always return `false`. If you attempt to set this property, a <xref:System.NotSupportedException> exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to set this property.</exception>
@@ -207,10 +207,10 @@
         <summary>Sets input focus to this control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting focus to a <xref:System.Web.UI.WebControls.HiddenField> control is not supported. A <xref:System.NotSupportedException> is thrown if you attempt to call this method.  
-  
+Setting focus to a <xref:System.Web.UI.WebControls.HiddenField> control is not supported. A <xref:System.NotSupportedException> is thrown if you attempt to call this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to call this method.</exception>
@@ -240,10 +240,10 @@
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.HiddenField" /> control's state changes as a result of the postback; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Web Forms page framework tracks all the server controls that return `true` to this method call, then invokes the <xref:System.Web.UI.WebControls.HiddenField.RaisePostDataChangedEvent%2A> on those controls.  
-  
+The Web Forms page framework tracks all the server controls that return `true` to this method call, then invokes the <xref:System.Web.UI.WebControls.HiddenField.RaisePostDataChangedEvent%2A> on those controls.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -289,14 +289,14 @@
         <summary>Raises the <see cref="E:System.Web.UI.WebControls.HiddenField.ValueChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.HiddenField.ValueChanged> event is raised when the value of the <xref:System.Web.UI.WebControls.HiddenField> control changes between posts to the server. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The <xref:System.Web.UI.WebControls.HiddenField.OnValueChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+The <xref:System.Web.UI.WebControls.HiddenField.ValueChanged> event is raised when the value of the <xref:System.Web.UI.WebControls.HiddenField> control changes between posts to the server. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
+The <xref:System.Web.UI.WebControls.HiddenField.OnValueChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -321,10 +321,10 @@
         <summary>Notifies the ASP.NET application that the state of the <see cref="T:System.Web.UI.WebControls.HiddenField" /> control has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.HiddenField.RaisePostDataChangedEvent%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.HiddenField> class to notify the ASP.NET application that the state of the <xref:System.Web.UI.WebControls.HiddenField> control has changed.  
-  
+The <xref:System.Web.UI.WebControls.HiddenField.RaisePostDataChangedEvent%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.HiddenField> class to notify the ASP.NET application that the state of the <xref:System.Web.UI.WebControls.HiddenField> control has changed.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -352,10 +352,10 @@
         <summary>Renders the Web server control content to the client's browser using the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.HiddenField.Render%2A> method is used to render the server control content to the client's browser using the specified <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName> object.  
-  
+The <xref:System.Web.UI.WebControls.HiddenField.Render%2A> method is used to render the server control content to the client's browser using the specified <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName> object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -388,10 +388,10 @@
         <value>Always returns an empty string ("") to indicate that themes are not supported.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.HiddenField> control does not support themes. This property has been overridden to always return an empty string. If you attempt to set this property, a <xref:System.NotSupportedException> is thrown.  
-  
+The <xref:System.Web.UI.WebControls.HiddenField> control does not support themes. This property has been overridden to always return an empty string. If you attempt to set this property, a <xref:System.NotSupportedException> is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt is made to set this property.</exception>
@@ -421,10 +421,10 @@
           <see langword="true" /> if the server control's state changes as a result of the postback; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.HiddenField> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.HiddenField> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -446,10 +446,10 @@
         <summary>For a description of this member, see the <see cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.HiddenField> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.HiddenField> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -479,21 +479,21 @@
         <value>The value of the hidden field. The default is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.HiddenField.Value%2A> property to specify or determine the value of the <xref:System.Web.UI.WebControls.HiddenField> control.  
+Use the <xref:System.Web.UI.WebControls.HiddenField.Value%2A> property to specify or determine the value of the <xref:System.Web.UI.WebControls.HiddenField> control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.HiddenField.Value%2A> property to specify the value of the <xref:System.Web.UI.WebControls.HiddenField> control.  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.HiddenField.Value%2A> property to specify the value of the <xref:System.Web.UI.WebControls.HiddenField> control.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[HiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenField/CS/hiddenfieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenField/VB/hiddenfieldvb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenField/CS/hiddenfieldcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenField/VB/hiddenfieldvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -514,23 +514,23 @@
         <summary>Occurs when the value of the <see cref="T:System.Web.UI.WebControls.HiddenField" /> control changes between posts to the server.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.HiddenField.ValueChanged> event is raised when the value of the <xref:System.Web.UI.WebControls.HiddenField> control changes between posts to the server. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
+The <xref:System.Web.UI.WebControls.HiddenField.ValueChanged> event is raised when the value of the <xref:System.Web.UI.WebControls.HiddenField> control changes between posts to the server. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
+ 
+For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.HiddenField.ValueChanged> event to display the value of the <xref:System.Web.UI.WebControls.HiddenField> control.  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.HiddenField.ValueChanged> event to display the value of the <xref:System.Web.UI.WebControls.HiddenField> control.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[HiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenField/CS/hiddenfieldcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenField/VB/hiddenfieldvb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[HiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenField/CS/hiddenfieldcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[HiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenField/VB/hiddenfieldvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>

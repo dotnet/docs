@@ -16,12 +16,12 @@
     <summary>Enables the extension of specific behaviors of a control designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.IControlDesignerBehavior> interface is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag> and <xref:System.Web.UI.Design.IControlDesignerView> interfaces for equivalent control designer functionality.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,12 +43,12 @@
         <value>The view control object for the designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.IControlDesignerBehavior> interface is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag> and <xref:System.Web.UI.Design.IControlDesignerView> interfaces for equivalent control designer functionality.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -70,12 +70,12 @@
         <value>The HTML used at design time to format the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.IControlDesignerBehavior> interface is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag> and <xref:System.Web.UI.Design.IControlDesignerView> interfaces for equivalent control designer functionality.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,12 +97,12 @@
         <summary>Provides an opportunity to perform processing when the designer enters or exits template mode.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The <xref:System.Web.UI.Design.IControlDesignerBehavior.OnTemplateModeChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
+The <xref:System.Web.UI.Design.IControlDesignerBehavior.OnTemplateModeChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

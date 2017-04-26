@@ -19,12 +19,12 @@
     <summary>Represents a project that can be built using [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:Microsoft.Build.BuildEngine.Project> represents an [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project. It is a container for items, properties and targets. It can load project content from in-memory XML or from an XML file, and can save to an XML file, preserving most whitespace and all XML comments.  
-  
- Every <xref:Microsoft.Build.BuildEngine.Project> must be associated with an <xref:Microsoft.Build.BuildEngine.Engine> to access shared information. During a build, the <xref:Microsoft.Build.BuildEngine.Engine> object keeps track of which projects are currently building.  
-  
+A <xref:Microsoft.Build.BuildEngine.Project> represents an [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project. It is a container for items, properties and targets. It can load project content from in-memory XML or from an XML file, and can save to an XML file, preserving most whitespace and all XML comments.  
+ 
+Every <xref:Microsoft.Build.BuildEngine.Project> must be associated with an <xref:Microsoft.Build.BuildEngine.Engine> to access shared information. During a build, the <xref:Microsoft.Build.BuildEngine.Engine> object keeps track of which projects are currently building.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,13 +43,13 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Project" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty><xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
-  
- [!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
- [!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty><xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
+ 
+[!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
+[!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -71,13 +71,13 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Project" /> class using the supplied <see cref="T:Microsoft.Build.BuildEngine.Engine" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildItemGroupCollection> classes are used to add, remove, and change items in the project.  
-  
- [!code-csharp[msbuild_AddNewItem#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewItem/CS/Program.cs#1)]
- [!code-vb[msbuild_AddNewItem#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewItem/VB/Module1.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildItemGroupCollection> classes are used to add, remove, and change items in the project.  
+ 
+[!code-csharp[msbuild_AddNewItem#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewItem/CS/Program.cs#1)]
+[!code-vb[msbuild_AddNewItem#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewItem/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,10 +148,10 @@
         <returns>A <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> containing the created item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method attempts to add the item to the project near the other items in the item collection.  
-  
+This method attempts to add the item to the project near the other items in the item collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,10 +182,10 @@
         <returns>A <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> containing the created item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method attempts to add the item to the project near the other items in the item collection.  
-  
+This method attempts to add the item to the project near the other items in the item collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -414,10 +414,10 @@
           <see langword="true" /> if the project is enabled for building tasks and targets; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, this property uses value of the <xref:Microsoft.Build.BuildEngine.Engine.BuildEnabled%2A> property of the project's <xref:Microsoft.Build.BuildEngine.Project.ParentEngine%2A>.  
-  
+By default, this property uses value of the <xref:Microsoft.Build.BuildEngine.Engine.BuildEnabled%2A> property of the project's <xref:Microsoft.Build.BuildEngine.Project.ParentEngine%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -457,14 +457,14 @@
         <value>A string representing the Tools version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> attribute is not present on the [Project Element (MSBuild)](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653) element, getting the value returns the default Tools version of the parent <xref:Microsoft.Build.BuildEngine>.  
-  
- The <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> value can differ from the Tools version used during a build if its value is overridden during construction of the <xref:Microsoft.Build.BuildEngine.Project> instance or it is set to a specific value with the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> property. Setting the <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> value cannot change the Tools version if it has been overridden, but you can change the Tools version using the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> property.  
-  
- For more information about Tools versions, see `MSBuild Tool Set (ToolsVersion)`.  
-  
+If the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> attribute is not present on the [Project Element (MSBuild)](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653) element, getting the value returns the default Tools version of the parent <xref:Microsoft.Build.BuildEngine>.  
+ 
+The <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> value can differ from the Tools version used during a build if its value is overridden during construction of the <xref:Microsoft.Build.BuildEngine.Project> instance or it is set to a specific value with the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> property. Setting the <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> value cannot change the Tools version if it has been overridden, but you can change the Tools version using the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> property.  
+ 
+For more information about Tools versions, see `MSBuild Tool Set (ToolsVersion)`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -504,10 +504,10 @@
         <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" /> containing the items evaluated during the build.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned <xref:Microsoft.Build.BuildEngine.BuildItemGroup> contains all the evaluated items in the project after wildcard and property expansion. The items in this property represent the actual items used during the build process. This property value is generated every time something in the project changes. Changes to existing items in this collection will be reflected the next time the project is saved, but adding or deleting items will not impact the project.  
-  
+The returned <xref:Microsoft.Build.BuildEngine.BuildItemGroup> contains all the evaluated items in the project after wildcard and property expansion. The items in this property represent the actual items used during the build process. This property value is generated every time something in the project changes. Changes to existing items in this collection will be reflected the next time the project is saved, but adding or deleting items will not impact the project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -529,10 +529,10 @@
         <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" /> containing all items in a project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned <xref:Microsoft.Build.BuildEngine.BuildItemGroup> contains all items in the project after wildcard and property expansion, including those that were not used during the build process due to `Condition` attributes evaluating to `false`. This property value is only generated when certain changes occur, such as a new  element being added to the project. Adding or deleting items from this property does not impact the project.  
-  
+The returned <xref:Microsoft.Build.BuildEngine.BuildItemGroup> contains all items in the project after wildcard and property expansion, including those that were not used during the build process due to `Condition` attributes evaluating to `false`. This property value is only generated when certain changes occur, such as a new  element being added to the project. Adding or deleting items from this property does not impact the project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -554,13 +554,13 @@
         <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> containing the properties evaluated during the build.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> contains all the evaluated properties in the project after performing condition evaluation and property expansion. The properties in this collection include global properties, environment variables, reserved properties, and imported properties. Changes to existing properties in this collection will be reflected the next time the project is saved, but adding or deleting properties will not impact the project.  
-  
+The returned <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> contains all the evaluated properties in the project after performing condition evaluation and property expansion. The properties in this collection include global properties, environment variables, reserved properties, and imported properties. Changes to existing properties in this collection will be reflected the next time the project is saved, but adding or deleting properties will not impact the project.  
+ 
 > [!NOTE]
 >  Cloning a <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> can negatively impact performance. Only use a copy of this property when it is strictly necessary.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -582,10 +582,10 @@
         <value>The full path of the project file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is an empty `string` if the project does not have a file associated with it.  
-  
+This property is an empty `string` if the project does not have a file associated with it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -611,10 +611,10 @@
         <returns>The list of possible values for the property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method generates the list of possible values by inspecting all of the  attributes in the project that involve the property.  
-  
+This method generates the list of possible values by inspecting all of the  attributes in the project that involve the property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -684,10 +684,10 @@
         <returns>The value of the specified property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you need to retrieve a large number of property values, use the <xref:Microsoft.Build.BuildEngine.Project.EvaluatedProperties%2A> property.  
-  
+If you need to retrieve a large number of property values, use the <xref:Microsoft.Build.BuildEngine.Project.EvaluatedProperties%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -731,10 +731,10 @@
         <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> containing the global properties for the project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Global properties are properties set with the **/property** switch on the command line, or properties set by the integrated development environment before invoking [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)]. For more information, see [MSBuild Command-Line Reference](http://msdn.microsoft.com/library/edaa65ec-ab8a-42a1-84cb-d76d5b2f4584).  
-  
+Global properties are properties set with the **/property** switch on the command line, or properties set by the integrated development environment before invoking [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)]. For more information, see [MSBuild Command-Line Reference](http://msdn.microsoft.com/library/edaa65ec-ab8a-42a1-84cb-d76d5b2f4584).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -757,10 +757,10 @@
           <see langword="true" /> if the project has the ToolsVersion attribute; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An example ToolsVersion attribute is `Project ToolsVersion="3.5"`. This attribute enables projects to target .NET Framework versions, currently 2.0, 3.0, and 3.5. For more information about ToolsVersion, see [Building for Specific Versions of the .NET Framework](http://msdn.microsoft.com/en-us/24a6530c-e837-4774-9da0-6893614524d8).  
-  
+An example ToolsVersion attribute is `Project ToolsVersion="3.5"`. This attribute enables projects to target .NET Framework versions, currently 2.0, 3.0, and 3.5. For more information about ToolsVersion, see [Building for Specific Versions of the .NET Framework](http://msdn.microsoft.com/en-us/24a6530c-e837-4774-9da0-6893614524d8).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -782,10 +782,10 @@
         <value>An <see cref="T:Microsoft.Build.BuildEngine.ImportCollection" /> of the projects imported into this project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Imported projects are specified by the  element in the project.  
-  
+Imported projects are specified by the  element in the project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -863,18 +863,18 @@
         <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroupCollection" /> containing the item groups specifiied in the project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:Microsoft.Build.BuildEngine.BuildItemGroupCollection> returned by this property contains the item groups in this project and all imported projects.  
+The <xref:Microsoft.Build.BuildEngine.BuildItemGroupCollection> returned by this property contains the item groups in this project and all imported projects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty><xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
-  
- [!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
- [!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty><xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
+ 
+[!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
+[!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -921,13 +921,13 @@
         <summary>Loads the contents of the specified project file into the <see cref="T:Microsoft.Build.BuildEngine.Project" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty>,  <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
-  
- [!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
- [!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty>,  <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
+ 
+[!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
+[!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:Microsoft.Build.BuildEngine.InvalidProjectFileException">The file specified by <paramref name="projectFileName" /> is not a valid project file.</exception>
@@ -999,13 +999,13 @@
         <summary>Loads the contents of the specified string into the <see cref="T:Microsoft.Build.BuildEngine.Project" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildItemGroupCollection> classes are used to add, remove, and change items in the project.  
-  
- [!code-csharp[msbuild_AddNewItem#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewItem/CS/Program.cs#1)]
- [!code-vb[msbuild_AddNewItem#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewItem/VB/Module1.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildItemGroupCollection> classes are used to add, remove, and change items in the project.  
+ 
+[!code-csharp[msbuild_AddNewItem#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewItem/CS/Program.cs#1)]
+[!code-vb[msbuild_AddNewItem#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewItem/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:Microsoft.Build.BuildEngine.InvalidProjectFileException">The XML contained in <paramref name="projectXML" /> is not a valid project file.</exception>
@@ -1087,18 +1087,18 @@
         <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection" /> containing the property groups specifiied in the project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> returned by this property contains the property groups in this project and all imported projects.  
+The <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection> returned by this property contains the property groups in this project and all imported projects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty><xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
-  
- [!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
- [!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty><xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
+ 
+[!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
+[!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1308,10 +1308,10 @@
         <summary>Removes all &lt;PropertyGroup&gt;'s from the main project file that have a specific "Condition."</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This will not remove any property groups from imported project files.  
-  
+This will not remove any property groups from imported project files.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1504,10 +1504,10 @@
         <summary>Sets the value of a property in the specified imported project.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Sets the value of a property and optionally escapes it so that it will be treated as a literal value despite any special characters it may contain.  
-  
+Sets the value of a property and optionally escapes it so that it will be treated as a literal value despite any special characters it may contain.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1609,10 +1609,10 @@
         <summary>Sets the value of the specified property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Build.BuildEngine.Project.SetProperty%2A> is called from the integrated development environment (IDE) to set a particular property at the project level. This method searches the existing property groups for a property with this name. If one is found, it changes its value. Otherwise, it either adds a new property to that property group, or adds a new property group to the project. <xref:Microsoft.Build.BuildEngine.Project.SetProperty%2A> uses the `condition` parameter to determine the name of the property group place it in.  
-  
+<xref:Microsoft.Build.BuildEngine.Project.SetProperty%2A> is called from the integrated development environment (IDE) to set a particular property at the project level. This method searches the existing property groups for a property with this name. If one is found, it changes its value. Otherwise, it either adds a new property to that property group, or adds a new property group to the project. <xref:Microsoft.Build.BuildEngine.Project.SetProperty%2A> uses the `condition` parameter to determine the name of the property group place it in.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1664,10 +1664,10 @@
         <value>A <see cref="T:Microsoft.Build.BuildEngine.TargetCollection" /> of the targets in the project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Targets are specified by the  element in the project.  
-  
+Targets are specified by the  element in the project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1707,15 +1707,15 @@
         <value>A string representing the version number of the Toolset.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the Toolset version is overridden, that value becomes the effective Toolset version. If there is a ToolsVersion attribute on the Project element, then that is the effective Toolset version. Otherwise, the Toolset version is the same as the default Toolset version of the parent engine. When set, <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> overrides the current Toolset version of the project with the provided value.  
-  
- For more information about Toolsets, see [Standard and Custom Toolset Configurations](http://msdn.microsoft.com/library/15a048c8-5ad3-448e-b6e9-e3c5d7147ed2).  
-  
+If the Toolset version is overridden, that value becomes the effective Toolset version. If there is a ToolsVersion attribute on the Project element, then that is the effective Toolset version. Otherwise, the Toolset version is the same as the default Toolset version of the parent engine. When set, <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> overrides the current Toolset version of the project with the provided value.  
+ 
+For more information about Toolsets, see [Standard and Custom Toolset Configurations](http://msdn.microsoft.com/library/15a048c8-5ad3-448e-b6e9-e3c5d7147ed2).  
+ 
 > [!NOTE]
 >  To get or set the ToolsVersion attribute on the <xref:Microsoft.Build.BuildEngine.Project> element, use the <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1755,13 +1755,13 @@
         <value>The full XML representing the project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildItemGroupCollection> classes are used to add, remove, and change items in the project.  
-  
- [!code-csharp[msbuild_AddNewItem#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewItem/CS/Program.cs#1)]
- [!code-vb[msbuild_AddNewItem#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewItem/VB/Module1.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.Project.LoadXml%2A> method to add content to the project. The <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildItemGroupCollection> classes are used to add, remove, and change items in the project.  
+ 
+[!code-csharp[msbuild_AddNewItem#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_AddNewItem/CS/Program.cs#1)]
+[!code-vb[msbuild_AddNewItem#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_AddNewItem/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1775,13 +1775,13 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Project" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty><xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
-  
- [!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
- [!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty><xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
+ 
+[!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
+[!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1795,13 +1795,13 @@
         <summary>Loads the contents of a project file into the <see cref="T:Microsoft.Build.BuildEngine.Project" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
-  
- [!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
- [!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
+ 
+[!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
+[!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1815,10 +1815,10 @@
         <summary>Removes all &lt;PropertyGroup&gt;'s from the main project file that have a specific "Condition."</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This will not remove any property groups from imported project files.  
-  
+This will not remove any property groups from imported project files.  
+ 
  ]]></format>
         </remarks>
       </Docs>

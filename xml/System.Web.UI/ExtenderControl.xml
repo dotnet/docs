@@ -38,17 +38,17 @@
     <summary>Provides an abstract base class for an extender control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.ExtenderControl> class enables you to programmatically add AJAX functionality to an ASP.NET server control. The <xref:System.Web.UI.ExtenderControl> inherits from the <xref:System.Web.UI.Control> class and implements the <xref:System.Web.UI.IExtenderControl> interface. The <xref:System.Web.UI.Control> class defines the properties, methods, and events that are shared by all ASP.NET server controls. The <xref:System.Web.UI.IExtenderControl> interface is an abstract class, which you cannot instantiate directly. Instead, you create a derived type.  
+The <xref:System.Web.UI.ExtenderControl> class enables you to programmatically add AJAX functionality to an ASP.NET server control. The <xref:System.Web.UI.ExtenderControl> inherits from the <xref:System.Web.UI.Control> class and implements the <xref:System.Web.UI.IExtenderControl> interface. The <xref:System.Web.UI.Control> class defines the properties, methods, and events that are shared by all ASP.NET server controls. The <xref:System.Web.UI.IExtenderControl> interface is an abstract class, which you cannot instantiate directly. Instead, you create a derived type.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.UI.ExtenderControl> class. For a tutorial related to this example, see [Creating an Extender Control](http://msdn.microsoft.com/library/015b3b49-841a-4cd9-b80c-dfbddfc5be55).  
-  
+The following example shows how to use the <xref:System.Web.UI.ExtenderControl> class. For a tutorial related to this example, see [Creating an Extender Control](http://msdn.microsoft.com/library/015b3b49-841a-4cd9-b80c-dfbddfc5be55).  
+ 
 <!-- TODO: review snippet reference  [!CODE [run:ExtenderControlTutorial1](run:ExtenderControlTutorial1)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -129,10 +129,10 @@
         <summary>Raises the <see cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" /> event and registers the extender control with the <see cref="T:System.Web.UI.ScriptManager" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After the <xref:System.Web.UI.Control.PreRender> event of the base class is raised, the <xref:System.Web.UI.Control.OnPreRender%2A> method registers the extender control with the <xref:System.Web.UI.ScriptManager> control.  
-  
+After the <xref:System.Web.UI.Control.PreRender> event of the base class is raised, the <xref:System.Web.UI.Control.OnPreRender%2A> method registers the extender control with the <xref:System.Web.UI.ScriptManager> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>

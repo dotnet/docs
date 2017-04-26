@@ -21,43 +21,43 @@
     <summary>Represents a managed <see cref="T:System.Data.OracleClient.OracleBFile" /> object designed to work with the Oracle <see langword="BFILE" /> data type. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Oracle `BFILE` data type is an Oracle `LOB` data type that contains a reference to binary data with a maximum size of 4 gigabytes. An Oracle `BFILE` differs from other Oracle `LOB` data types in that its data is stored in a physical file in the operating system instead of on the server. Note that the `BFILE` data type provides read-only access to data. Therefore, write-oriented methods inherited from the <xref:System.IO.Stream> class are not supported.  
-  
- Other characteristics of a `BFILE` data type that distinguish it from a `LOB` data type are that it:  
-  
+The Oracle `BFILE` data type is an Oracle `LOB` data type that contains a reference to binary data with a maximum size of 4 gigabytes. An Oracle `BFILE` differs from other Oracle `LOB` data types in that its data is stored in a physical file in the operating system instead of on the server. Note that the `BFILE` data type provides read-only access to data. Therefore, write-oriented methods inherited from the <xref:System.IO.Stream> class are not supported.  
+ 
+Other characteristics of a `BFILE` data type that distinguish it from a `LOB` data type are that it:  
+ 
 -   Contains unstructured data.  
-  
+ 
 -   Supports server-side chunking.  
-  
+ 
 -   Uses reference copy semantics. For example, if you perform a copy operation on a `BFILE`, only the `BFILE` locator (which is a reference to the file) is copied. The data in the file is not copied.  
-  
- The `BFILE` data type should be used for referencing `LOB`s that are large in size, and therefore, not practical to store in the database. There is client, server, and communication overhead for using a `BFILE` data type compared to the `LOB` data type. It is more efficient to access a `BFILE` if you only need to obtain a small amount of data. It is more efficient to access database-resident `LOB`s if you need to obtain the entire object.  
-  
- Each non-NULL <xref:System.Data.OracleClient.OracleBFile> object is associated with two entities that define the location of the underlying physical file:  
-  
+ 
+The `BFILE` data type should be used for referencing `LOB`s that are large in size, and therefore, not practical to store in the database. There is client, server, and communication overhead for using a `BFILE` data type compared to the `LOB` data type. It is more efficient to access a `BFILE` if you only need to obtain a small amount of data. It is more efficient to access database-resident `LOB`s if you need to obtain the entire object.  
+ 
+Each non-NULL <xref:System.Data.OracleClient.OracleBFile> object is associated with two entities that define the location of the underlying physical file:  
+ 
 -   An Oracle DIRECTORY object, which is a database alias for a directory in the file system, and  
-  
+ 
 -   The file name of the underlying physical file, which is located in the directory associated with the DIRECTORY object.  
-  
- After a `BFILE` is created, you can retrieve its locator in the form of an <xref:System.Data.OracleClient.OracleBFile> object using the <xref:System.Data.OracleClient.OracleCommand.ExecuteReader%2A> or <xref:System.Data.OracleClient.OracleCommand.ExecuteScalar%2A> methods.  
-  
- To obtain an <xref:System.Data.OracleClient.OracleBFile> object, call the <xref:System.Data.OracleClient.OracleDataReader.GetOracleBFile%2A> method.  
-  
- The physical file that an <xref:System.Data.OracleClient.OracleBFile> object is associated with does not need to exist until you attempt to access it. An application can bind an <xref:System.Data.OracleClient.OracleBFile> to a nonexistent file, create the physical file in the expected location, and then call <xref:System.Data.OracleClient.OracleBFile.Read%2A>.  
-  
- Any attempt to access a closed <xref:System.Data.OracleClient.OracleBFile> using the <xref:System.Data.OracleClient.OracleBFile.Read%2A> or <xref:System.Data.OracleClient.OracleBFile.Seek%2A> methods reopens an <xref:System.Data.OracleClient.OracleBFile> stream automatically.  
-  
- The following C# example demonstrates how you can create a `BFILE` in an Oracle table, and then retrieve it in the form of an <xref:System.Data.OracleClient.OracleBFile> object. The example demonstrates the use of the <xref:System.Data.OracleClient.OracleDataReader> object and the <xref:System.Data.OracleClient.OracleBFile><xref:System.Data.OracleClient.OracleBFile.Seek%2A> and <xref:System.Data.OracleClient.OracleBFile.Read%2A> methods.  
-  
- [!code-csharp[DataWorks OracleClient.BFile#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks OracleClient.BFile/CS/source.cs#1)]  
-  
- For more information about creating and using an Oracle `BFILE`, see the appropriate topic in your Oracle documentation.  
-  
+ 
+After a `BFILE` is created, you can retrieve its locator in the form of an <xref:System.Data.OracleClient.OracleBFile> object using the <xref:System.Data.OracleClient.OracleCommand.ExecuteReader%2A> or <xref:System.Data.OracleClient.OracleCommand.ExecuteScalar%2A> methods.  
+ 
+To obtain an <xref:System.Data.OracleClient.OracleBFile> object, call the <xref:System.Data.OracleClient.OracleDataReader.GetOracleBFile%2A> method.  
+ 
+The physical file that an <xref:System.Data.OracleClient.OracleBFile> object is associated with does not need to exist until you attempt to access it. An application can bind an <xref:System.Data.OracleClient.OracleBFile> to a nonexistent file, create the physical file in the expected location, and then call <xref:System.Data.OracleClient.OracleBFile.Read%2A>.  
+ 
+Any attempt to access a closed <xref:System.Data.OracleClient.OracleBFile> using the <xref:System.Data.OracleClient.OracleBFile.Read%2A> or <xref:System.Data.OracleClient.OracleBFile.Seek%2A> methods reopens an <xref:System.Data.OracleClient.OracleBFile> stream automatically.  
+ 
+The following C# example demonstrates how you can create a `BFILE` in an Oracle table, and then retrieve it in the form of an <xref:System.Data.OracleClient.OracleBFile> object. The example demonstrates the use of the <xref:System.Data.OracleClient.OracleDataReader> object and the <xref:System.Data.OracleClient.OracleBFile><xref:System.Data.OracleClient.OracleBFile.Seek%2A> and <xref:System.Data.OracleClient.OracleBFile.Read%2A> methods.  
+ 
+[!code-csharp[DataWorks OracleClient.BFile#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks OracleClient.BFile/CS/source.cs#1)]  
+ 
+For more information about creating and using an Oracle `BFILE`, see the appropriate topic in your Oracle documentation.  
+ 
 > [!NOTE]
 >  The `BeginWrite`, `EndWrite`, and `WriteByte` methods, which are inherited from the `System.IO.Stream` class, are not supported because the `BFILE` data type is read-only.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -136,10 +136,10 @@
         <returns>A new <see cref="T:System.Data.OracleClient.OracleBFile" /> object associated with the same physical file as the original <see langword="OracleBFile" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The properties of the new <xref:System.Data.OracleClient.OracleBFile> object initially have the same values as those of the original object. However, after the <xref:System.Data.OracleClient.OracleBFile.Clone%2A> is complete, each <xref:System.Data.OracleClient.OracleBFile> object is independent from the other. For example, changing the value of the <xref:System.Data.OracleClient.OracleBFile.Position%2A> property on the original <xref:System.Data.OracleClient.OracleBFile> does not change the value of <xref:System.Data.OracleClient.OracleBFile.Position%2A> on the copy.  
-  
+The properties of the new <xref:System.Data.OracleClient.OracleBFile> object initially have the same values as those of the original object. However, after the <xref:System.Data.OracleClient.OracleBFile.Clone%2A> is complete, each <xref:System.Data.OracleClient.OracleBFile> object is independent from the other. For example, changing the value of the <xref:System.Data.OracleClient.OracleBFile.Position%2A> property on the original <xref:System.Data.OracleClient.OracleBFile> does not change the value of <xref:System.Data.OracleClient.OracleBFile.Position%2A> on the copy.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,12 +183,12 @@
         <returns>The number of bytes copied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The underlying data types of the source <xref:System.Data.OracleClient.OracleBFile> and the destination <xref:System.Data.OracleClient.OracleLob> must be compatible. For example, you cannot copy binary data to a destination <xref:System.Data.OracleClient.OracleLob> that has a character data type.  
-  
- You must have write access to the destination <xref:System.Data.OracleClient.OracleLob> for the <xref:System.Data.OracleClient.OracleBFile.CopyTo%2A> operation to execute correctly.  
-  
+The underlying data types of the source <xref:System.Data.OracleClient.OracleBFile> and the destination <xref:System.Data.OracleClient.OracleLob> must be compatible. For example, you cannot copy binary data to a destination <xref:System.Data.OracleClient.OracleLob> that has a character data type.  
+ 
+You must have write access to the destination <xref:System.Data.OracleClient.OracleLob> for the <xref:System.Data.OracleClient.OracleBFile.CopyTo%2A> operation to execute correctly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The destination <see langword="OracleLob" /> is a null object reference.</exception>
@@ -223,12 +223,12 @@
         <returns>The number of bytes copied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The underlying data types of the source <xref:System.Data.OracleClient.OracleBFile> and the destination <xref:System.Data.OracleClient.OracleLob> must be compatible. For example, you cannot copy binary data to a destination <xref:System.Data.OracleClient.OracleLob> that has a character data type.  
-  
- You must have write access to the destination <xref:System.Data.OracleClient.OracleLob> for the <xref:System.Data.OracleClient.OracleBFile.CopyTo%2A> operation to execute correctly.  
-  
+The underlying data types of the source <xref:System.Data.OracleClient.OracleBFile> and the destination <xref:System.Data.OracleClient.OracleLob> must be compatible. For example, you cannot copy binary data to a destination <xref:System.Data.OracleClient.OracleLob> that has a character data type.  
+ 
+You must have write access to the destination <xref:System.Data.OracleClient.OracleLob> for the <xref:System.Data.OracleClient.OracleBFile.CopyTo%2A> operation to execute correctly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The destination <see langword="OracleLob" /> is a null object reference.</exception>
@@ -267,12 +267,12 @@
         <returns>The number of bytes copied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The underlying data types of the source <xref:System.Data.OracleClient.OracleBFile> and the destination <xref:System.Data.OracleClient.OracleLob> must be compatible. For example, you cannot copy binary data to a destination <xref:System.Data.OracleClient.OracleLob> that has a character data type.  
-  
- You must have write access to the destination <xref:System.Data.OracleClient.OracleLob> for the <xref:System.Data.OracleClient.OracleBFile.CopyTo%2A> operation to execute correctly.  
-  
+The underlying data types of the source <xref:System.Data.OracleClient.OracleBFile> and the destination <xref:System.Data.OracleClient.OracleLob> must be compatible. For example, you cannot copy binary data to a destination <xref:System.Data.OracleClient.OracleLob> that has a character data type.  
+ 
+You must have write access to the destination <xref:System.Data.OracleClient.OracleLob> for the <xref:System.Data.OracleClient.OracleBFile.CopyTo%2A> operation to execute correctly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of the amount parameter is less than zero or greater than 4 gigabytes.</exception>
@@ -302,18 +302,18 @@
         <value>The name of the DIRECTORY object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each non-NULL <xref:System.Data.OracleClient.OracleBFile> object is associated with two entities that define the location of underlying physical file:  
-  
+Each non-NULL <xref:System.Data.OracleClient.OracleBFile> object is associated with two entities that define the location of underlying physical file:  
+ 
 -   An Oracle DIRECTORY object, which is a database alias for a directory in the file system, and  
-  
+ 
 -   The file name of the underlying physical file, which is located in the directory associated with the DIRECTORY object.  
-  
- The <xref:System.Data.OracleClient.OracleBFile.DirectoryName%2A> property returns the name of the DIRECTORY object from the Oracle database.  
-  
- For more information about creating and using an Oracle `BFILE`, see the appropriate topic in your Oracle documentation.  
-  
+ 
+The <xref:System.Data.OracleClient.OracleBFile.DirectoryName%2A> property returns the name of the DIRECTORY object from the Oracle database.  
+ 
+For more information about creating and using an Oracle `BFILE`, see the appropriate topic in your Oracle documentation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">Attempted to call <see langword="DirectoryName" /> on a closed or disposed <see langword="OracleBFile" /> object.</exception>
@@ -378,10 +378,10 @@
         <value>The name of the BFILE.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For <xref:System.Data.OracleClient.OracleBFile>, an empty string is returned.  
-  
+For <xref:System.Data.OracleClient.OracleBFile>, an empty string is returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Data.OracleClient.OracleBFile" /> object is closed or disposed.</exception>
@@ -459,12 +459,12 @@
         <summary>Represents a null <see cref="T:System.Data.OracleClient.OracleBFile" /> object that is not bound to a physical file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.OracleClient.OracleBFile.Null> can be useful when you want to perform a comparison operation on an <xref:System.Data.OracleClient.OracleBFile> to determine nullability.  
-  
- Any attempt to perform a read operation on a <xref:System.Data.OracleClient.OracleBFile.Null> object succeeds, but does not return any data. Any attempt to perform a write operation on a <xref:System.Data.OracleClient.OracleBFile.Null> object generates an exception. Selecting a `BFILE` column that contains a null value returns <xref:System.Data.OracleClient.OracleBFile.Null>.  
-  
+<xref:System.Data.OracleClient.OracleBFile.Null> can be useful when you want to perform a comparison operation on an <xref:System.Data.OracleClient.OracleBFile> to determine nullability.  
+ 
+Any attempt to perform a read operation on a <xref:System.Data.OracleClient.OracleBFile.Null> object succeeds, but does not return any data. Any attempt to perform a write operation on a <xref:System.Data.OracleClient.OracleBFile.Null> object generates an exception. Selecting a `BFILE` column that contains a null value returns <xref:System.Data.OracleClient.OracleBFile.Null>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -486,12 +486,12 @@
         <value>The current position within the <see cref="T:System.Data.OracleClient.OracleBFile" /> stream.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Seeking to any location beyond the length of the stream is not supported.  
-  
- The `Position` property does not keep track of the number of bytes from the stream that have been consumed, skipped, or both.  
-  
+Seeking to any location beyond the length of the stream is not supported.  
+ 
+The `Position` property does not keep track of the number of bytes from the stream that have been consumed, skipped, or both.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Attempted to set a position with a negative value or greater than the length of the stream.</exception>
@@ -523,20 +523,20 @@
         <returns>The total number of bytes read into the buffer. This may be less than the number of bytes requested if that many bytes are not currently available, or zero if the end of the file has been reached.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.OracleClient.OracleBFile.Read%2A> method read a maximum of `count` bytes from the current stream and store them in `buffer` beginning at `offset`. The current position within the stream is advanced by the number of bytes read; however, if an exception occurs, the current position within the stream remains unchanged. <xref:System.Data.OracleClient.OracleBFile.Read%2A> returns the number of bytes read. The return value is zero only if the position is currently at the end of the stream. <xref:System.Data.OracleClient.OracleBFile.Read%2A> will block until at least one byte of data can be read, in the event that no data is available. <xref:System.Data.OracleClient.OracleBFile.Read%2A> returns 0 only when the end of the file has been reached. <xref:System.Data.OracleClient.OracleBFile.Read%2A> is free to return fewer bytes than requested even if the end of the stream has not been reached.  
-  
- Any attempt to access a closed <xref:System.Data.OracleClient.OracleBFile> using the <xref:System.Data.OracleClient.OracleBFile.Read%2A> or <xref:System.Data.OracleClient.OracleBFile.Seek%2A> methods reopens an <xref:System.Data.OracleClient.OracleBFile> stream automatically.  
-  
- The following C# example assumes this schema in an Oracle table:  
-  
+The <xref:System.Data.OracleClient.OracleBFile.Read%2A> method read a maximum of `count` bytes from the current stream and store them in `buffer` beginning at `offset`. The current position within the stream is advanced by the number of bytes read; however, if an exception occurs, the current position within the stream remains unchanged. <xref:System.Data.OracleClient.OracleBFile.Read%2A> returns the number of bytes read. The return value is zero only if the position is currently at the end of the stream. <xref:System.Data.OracleClient.OracleBFile.Read%2A> will block until at least one byte of data can be read, in the event that no data is available. <xref:System.Data.OracleClient.OracleBFile.Read%2A> returns 0 only when the end of the file has been reached. <xref:System.Data.OracleClient.OracleBFile.Read%2A> is free to return fewer bytes than requested even if the end of the stream has not been reached.  
+ 
+Any attempt to access a closed <xref:System.Data.OracleClient.OracleBFile> using the <xref:System.Data.OracleClient.OracleBFile.Read%2A> or <xref:System.Data.OracleClient.OracleBFile.Seek%2A> methods reopens an <xref:System.Data.OracleClient.OracleBFile> stream automatically.  
+ 
+The following C# example assumes this schema in an Oracle table:  
+ 
 ```  
 (col1 number, col2 BFILE)  
 ```  
-  
- The example demonstrates using the <xref:System.Data.OracleClient.OracleBFile.Read%2A> and <xref:System.Data.OracleClient.OracleBFile.Seek%2A> methods to access an <xref:System.Data.OracleClient.OracleBFile> object.  
-  
+ 
+The example demonstrates using the <xref:System.Data.OracleClient.OracleBFile.Read%2A> and <xref:System.Data.OracleClient.OracleBFile.Seek%2A> methods to access an <xref:System.Data.OracleClient.OracleBFile> object.  
+ 
 ```  
 byte[] buffer = new byte[100];  
 OracleDataReader dataReader = command.ExecuteReader();  
@@ -550,7 +550,7 @@ using (dataReader) {
     }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The sum of <paramref name="offset" /> and <paramref name="count" /> is larger than the buffer length.</exception>
@@ -586,22 +586,22 @@ using (dataReader) {
         <returns>The new position within the current stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `offset` is negative, the new position is required to precede the position specified by `origin` by the number of bytes specified by `offset`. If `offset` is zero, the new position is required to be the position specified by `origin`. If `offset` is positive, the new position is required to follow the position specified by `origin` by the number of bytes specified by `offset`.  
-  
- Seeking to any location beyond the length of the stream is not supported.  
-  
- Any attempt to access a closed <xref:System.Data.OracleClient.OracleBFile> using the <xref:System.Data.OracleClient.OracleBFile.Read%2A> or <xref:System.Data.OracleClient.OracleBFile.Seek%2A> methods reopens an <xref:System.Data.OracleClient.OracleBFile> stream automatically.  
-  
- The following C# example assumes this schema in an Oracle table:  
-  
+If `offset` is negative, the new position is required to precede the position specified by `origin` by the number of bytes specified by `offset`. If `offset` is zero, the new position is required to be the position specified by `origin`. If `offset` is positive, the new position is required to follow the position specified by `origin` by the number of bytes specified by `offset`.  
+ 
+Seeking to any location beyond the length of the stream is not supported.  
+ 
+Any attempt to access a closed <xref:System.Data.OracleClient.OracleBFile> using the <xref:System.Data.OracleClient.OracleBFile.Read%2A> or <xref:System.Data.OracleClient.OracleBFile.Seek%2A> methods reopens an <xref:System.Data.OracleClient.OracleBFile> stream automatically.  
+ 
+The following C# example assumes this schema in an Oracle table:  
+ 
 ```  
 (col1 number, col2 BFILE)  
 ```  
-  
- The example demonstrates using the <xref:System.Data.OracleClient.OracleBFile.Read%2A> and <xref:System.Data.OracleClient.OracleBFile.Seek%2A> methods to access an <xref:System.Data.OracleClient.OracleBFile> object.  
-  
+ 
+The example demonstrates using the <xref:System.Data.OracleClient.OracleBFile.Read%2A> and <xref:System.Data.OracleClient.OracleBFile.Seek%2A> methods to access an <xref:System.Data.OracleClient.OracleBFile> object.  
+ 
 ```  
 byte[] buffer = new byte[100];  
 OracleDataReader dataReader = command.ExecuteReader();  
@@ -615,7 +615,7 @@ using (dataReader) {
     }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Attempted to set a position with a negative value or greater than the length of the stream.</exception>
@@ -644,22 +644,22 @@ using (dataReader) {
         <summary>Binds the <see cref="T:System.Data.OracleClient.OracleBFile" /> object to a different file in the operating system.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.OracleClient.OracleBFile.SetFileName%2A> operation must be within a transaction to succeed. Simply calling <xref:System.Data.OracleClient.OracleBFile.SetFileName%2A> on a `BFILE` associates the <xref:System.Data.OracleClient.OracleBFile> object with a different file, but does not update the Oracle table. To update the Oracle table after calling <xref:System.Data.OracleClient.OracleBFile.SetFileName%2A>, you must call the `Update` method of the <xref:System.Data.OracleClient.OracleDataAdapter> and then commit the transaction.  
-  
- Once you retrieve the <xref:System.Data.OracleClient.OracleBFile.DirectoryName%2A> or <xref:System.Data.OracleClient.OracleBFile.FileName%2A> property, they are cached in the <xref:System.Data.OracleClient.OracleBFile> object and are unaffected by any cloned <xref:System.Data.OracleClient.OracleBFile> objects' calls to <xref:System.Data.OracleClient.OracleBFile.SetFileName%2A>, or by any changes to the `BFILE` in the database. In other words, they might not represent the actual values of the `BFILE` object in the server.  
-  
- Furthermore, retrieving either property (<xref:System.Data.OracleClient.OracleBFile.DirectoryName%2A> or <xref:System.Data.OracleClient.OracleBFile.FileName%2A>) causes both property values to be retrieved from the server and cached in the <xref:System.Data.OracleClient.OracleBFile> object.  
-  
- The following C# example assumes this schema in an Oracle table:  
-  
+The <xref:System.Data.OracleClient.OracleBFile.SetFileName%2A> operation must be within a transaction to succeed. Simply calling <xref:System.Data.OracleClient.OracleBFile.SetFileName%2A> on a `BFILE` associates the <xref:System.Data.OracleClient.OracleBFile> object with a different file, but does not update the Oracle table. To update the Oracle table after calling <xref:System.Data.OracleClient.OracleBFile.SetFileName%2A>, you must call the `Update` method of the <xref:System.Data.OracleClient.OracleDataAdapter> and then commit the transaction.  
+ 
+Once you retrieve the <xref:System.Data.OracleClient.OracleBFile.DirectoryName%2A> or <xref:System.Data.OracleClient.OracleBFile.FileName%2A> property, they are cached in the <xref:System.Data.OracleClient.OracleBFile> object and are unaffected by any cloned <xref:System.Data.OracleClient.OracleBFile> objects' calls to <xref:System.Data.OracleClient.OracleBFile.SetFileName%2A>, or by any changes to the `BFILE` in the database. In other words, they might not represent the actual values of the `BFILE` object in the server.  
+ 
+Furthermore, retrieving either property (<xref:System.Data.OracleClient.OracleBFile.DirectoryName%2A> or <xref:System.Data.OracleClient.OracleBFile.FileName%2A>) causes both property values to be retrieved from the server and cached in the <xref:System.Data.OracleClient.OracleBFile> object.  
+ 
+The following C# example assumes this schema in an Oracle table:  
+ 
 ```  
 (col1 number, col2 BFILE)  
 ```  
-  
- The example demonstrates using the <xref:System.Data.OracleClient.OracleBFile.SetFileName%2A>, <xref:System.Data.OracleClient.OracleBFile.Read%2A> and <xref:System.Data.OracleClient.OracleBFile.Seek%2A> methods to access an <xref:System.Data.OracleClient.OracleBFile> object.  
-  
+ 
+The example demonstrates using the <xref:System.Data.OracleClient.OracleBFile.SetFileName%2A>, <xref:System.Data.OracleClient.OracleBFile.Read%2A> and <xref:System.Data.OracleClient.OracleBFile.Seek%2A> methods to access an <xref:System.Data.OracleClient.OracleBFile> object.  
+ 
 ```  
 byte[] buffer = new byte[100];  
 OracleDataReader dataReader = command.ExecuteReader();  
@@ -676,7 +676,7 @@ using (dataReader) {
     }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The operation must be within a transaction.</exception>
@@ -721,13 +721,13 @@ using (dataReader) {
         <value>An <see cref="T:System.Array" /> of type <see cref="T:System.Byte" /> that contains the <see cref="T:System.Data.OracleClient.OracleBFile" /> data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.OracleClient.OracleBFile.Value%2A> property reads the entire `BFILE` at one time.  
-  
+The <xref:System.Data.OracleClient.OracleBFile.Value%2A> property reads the entire `BFILE` at one time.  
+ 
 > [!NOTE]
 >  A benefit of using `BFILE`s is the ability to retrieve large amounts of data in chunks at the client. However, when you use <xref:System.Data.OracleClient.OracleBFile.Value%2A>, you obtain all the data for the BFILE column as one contiguous chunk, which can significantly increase application overhead.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

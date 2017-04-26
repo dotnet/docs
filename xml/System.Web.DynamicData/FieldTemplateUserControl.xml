@@ -21,19 +21,19 @@
     <summary>Represents the base class for all field template controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET Dynamic Data field templates are ASP.NET user controls that map data controls to data types in a data model. Field templates derive from <xref:System.Web.DynamicData.FieldTemplateUserControl>, the class that enables access to data fields, data columns, and metadata in data models. Dynamic Data projects provide field templates by default. You can modify the field templates provided by default or create custom field templates.  
+ASP.NET Dynamic Data field templates are ASP.NET user controls that map data controls to data types in a data model. Field templates derive from <xref:System.Web.DynamicData.FieldTemplateUserControl>, the class that enables access to data fields, data columns, and metadata in data models. Dynamic Data projects provide field templates by default. You can modify the field templates provided by default or create custom field templates.  
+ 
+This class inherits from the <xref:System.Web.UI.UserControl> Class.  
+ 
   
- This class inherits from the <xref:System.Web.UI.UserControl> Class.  
-  
-   
-  
+ 
 ## Examples  
- The following code example creates a field template that displays data fields that have a many-to-one relationship and renders a <xref:System.Web.UI.WebControls.HyperLink> control that redirects the user to the relationship page.  
-  
- The following example shows the code file for the ForeignKey.ascx user control.  
-  
+The following code example creates a field template that displays data fields that have a many-to-one relationship and renders a <xref:System.Web.UI.WebControls.HyperLink> control that redirects the user to the relationship page.  
+ 
+The following example shows the code file for the ForeignKey.ascx user control.  
+ 
 ```vb  
 Public Partial Class ForeignKeyField   
     Inherits System.Web.DynamicData.FieldTemplateUserControl   
@@ -50,7 +50,7 @@ Public Partial Class ForeignKeyField
     End Property   
 End Class   
 ```  
-  
+ 
 ```csharp  
 public partial class ForeignKeyField :   
                         System.Web.DynamicData.FieldTemplateUserControl   
@@ -67,29 +67,29 @@ public partial class ForeignKeyField :
     }  
 }  
 ```  
-  
- The following example shows the ForeignKey.aspx file.  
-  
+ 
+The following example shows the ForeignKey.aspx file.  
+ 
 ```vb  
 <%@ Control Language="VB" CodeFile="ForeignKey.ascx.vb" Inherits="ForeignKeyField" %>  
   
 <asp:HyperLink ID="HyperLink1" runat="server"  
     Text="<%# GetDisplayString() %>" />  
 ```  
-  
+ 
 ```csharp  
 <%@ Control Language="C#" CodeFile="ForeignKey.ascx.cs" Inherits="ForeignKeyField" %>  
   
 <asp:HyperLink ID="HyperLink1" runat="server"  
     Text="<%# GetDisplayString() %>" />  
 ```  
-  
- To compile the example code, you need the following:  
-  
+ 
+To compile the example code, you need the following:  
+ 
 -   [!INCLUDE[vs_dev10_long](~/includes/vs-dev10-long-md.md)] or [!INCLUDE[vwd_exp_dev10_long](~/includes/vwd-exp-dev10-long-md.md)].  
-  
+ 
 -   A Dynamic Data Web site. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](http://msdn.microsoft.com/library/1564aef2-9103-436a-9806-c8ad7abd616a).  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -130,10 +130,10 @@ public partial class ForeignKeyField :
         <returns>The URL that links the displayed page to the children page.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is similar to <xref:System.Web.DynamicData.FieldTemplateUserControl.ChildrenPath%2A>, except that it allows the path part of the URL to be overridden. This method is used if the pages are not located in the DynamicData\CustomPages folder of the Dynamic Data project. This method applies to Children columns only.  
-  
+This method is similar to <xref:System.Web.DynamicData.FieldTemplateUserControl.ChildrenPath%2A>, except that it allows the path part of the URL to be overridden. This method is used if the pages are not located in the DynamicData\CustomPages folder of the Dynamic Data project. This method applies to Children columns only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@ public partial class ForeignKeyField :
         <returns>The URL that links to the page that displays the details of the foreign key page.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is similar to <xref:System.Web.DynamicData.FieldTemplateUserControl.ForeignKeyPath%2A> except that it allows the path of the URL to be overridden. This property is used if the page is not located in the DynamicData\CustomPages folder your the Dynamic Data project.  
-  
+This method is similar to <xref:System.Web.DynamicData.FieldTemplateUserControl.ForeignKeyPath%2A> except that it allows the path of the URL to be overridden. This property is used if the page is not located in the DynamicData\CustomPages folder your the Dynamic Data project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,10 +189,10 @@ public partial class ForeignKeyField :
         <value>A column that represents a one-to-many relationship.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property casts a <xref:System.Web.DynamicData.MetaColumn> to a <xref:System.Web.DynamicData.MetaChildrenColumn>. If the <xref:System.Web.DynamicData.MetaColumn> class is not a children column, this property throws an exception.  
-  
+This property casts a <xref:System.Web.DynamicData.MetaColumn> to a <xref:System.Web.DynamicData.MetaChildrenColumn>. If the <xref:System.Web.DynamicData.MetaColumn> class is not a children column, this property throws an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -216,10 +216,10 @@ public partial class ForeignKeyField :
         <value>The URL that links the displayed page to the children entities.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a URL that links to a page that displays a list of children entities. For example, the products column in the ProductCategories table in the AdventureWorksLT sample database has URLs that link to the list of product that are in the selected category. This property only applies to children columns.  
-  
+This method returns a URL that links to a page that displays a list of children entities. For example, the products column in the ProductCategories table in the AdventureWorksLT sample database has URLs that link to the list of product that are in the selected category. This property only applies to children columns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,10 +291,10 @@ public partial class ForeignKeyField :
         <returns>The converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns <xref:System.Web.DynamicData.DynamicControl.ConvertEmptyStringToNull%2A> property and <xref:System.Web.DynamicData.DynamicField.NullDisplayText%2A> property which can be set via metadata or the <xref:System.Web.DynamicData.DynamicField> class or <xref:System.Web.DynamicData.DynamicControl>.  
-  
+This method returns <xref:System.Web.DynamicData.DynamicControl.ConvertEmptyStringToNull%2A> property and <xref:System.Web.DynamicData.DynamicField.NullDisplayText%2A> property which can be set via metadata or the <xref:System.Web.DynamicData.DynamicField> class or <xref:System.Web.DynamicData.DynamicControl>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -344,10 +344,10 @@ public partial class ForeignKeyField :
         <summary>Saves the value of foreign keys.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used when saving foreign key columns. The value of the foreign key is selected from the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property of a drop down list.  
-  
+This method is used when saving foreign key columns. The value of the foreign key is selected from the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property of a drop down list.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -372,10 +372,10 @@ public partial class ForeignKeyField :
         <summary>Provides dictionary access to all data in the current row.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method implements the <xref:System.Web.UI.IBindableControl.ExtractValues%2A> method.  
-  
+This method implements the <xref:System.Web.UI.IBindableControl.ExtractValues%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -425,10 +425,10 @@ public partial class ForeignKeyField :
         <value>The value of the column in the row that is edited.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If formatting is enabled the string is formatted after editing.  
-  
+If formatting is enabled the string is formatted after editing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -500,10 +500,10 @@ public partial class ForeignKeyField :
         <value>A column that represents a many-to-one relationship.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class converts the <xref:System.Web.DynamicData.MetaColumn> to a <xref:System.Web.DynamicData.MetaForeignKeyColumn>. The class throws an exception if <xref:System.Web.DynamicData.MetaColumn> is not a foreign key column.  
-  
+This class converts the <xref:System.Web.DynamicData.MetaColumn> to a <xref:System.Web.DynamicData.MetaForeignKeyColumn>. The class throws an exception if <xref:System.Web.DynamicData.MetaColumn> is not a foreign key column.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">If the <see cref="T:System.Web.DynamicData.MetaForeignKeyColumn" /> is not a foreign key column.</exception>
@@ -526,10 +526,10 @@ public partial class ForeignKeyField :
         <value>The URL that links to the details of the foreign key data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the data column has a many-to-one relationship, this property returns a URL that links to the page that displays the details of the foreign key entity. For example, in the Category column of the Product table in the Northwind Database, this method can return a link that goes to the details of the category that the product belongs to. This property applies to foreign key columns only.  
-  
+If the data column has a many-to-one relationship, this property returns a URL that links to the page that displays the details of the foreign key entity. For example, in the Category column of the Product table in the Northwind Database, this method can return a link that goes to the details of the category that the product belongs to. This property applies to foreign key columns only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -619,10 +619,10 @@ public partial class ForeignKeyField :
         <returns>If the column's current value is a foreign-key column or an enumeration column, a string representation of the selected value; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.FieldTemplateUserControl.GetSelectedValueString%2A> method is used to return a string representation of foreign-key or enumeration column types.  
-  
+The <xref:System.Web.DynamicData.FieldTemplateUserControl.GetSelectedValueString%2A> method is used to return a string representation of foreign-key or enumeration column types.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -670,10 +670,10 @@ public partial class ForeignKeyField :
         <summary>Allows a <see cref="T:System.Web.DynamicData.DynamicValidator" /> to ignore a specific type of model validation attribute.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method allows a <xref:System.Web.DynamicData.DynamicValidator> to ignore a specific type of model Validation attributes. This method is called when the attribute type is already handled by an ASP.NET validation controls. Without this call, the validation can occur two times, resulting in a duplicate error message.  
-  
+This method allows a <xref:System.Web.DynamicData.DynamicValidator> to ignore a specific type of model Validation attributes. This method is called when the attribute type is already handled by an ASP.NET validation controls. Without this call, the validation can occur two times, resulting in a duplicate error message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -723,10 +723,10 @@ public partial class ForeignKeyField :
         <value>The current mode of the field template.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataBoundControlMode> that field templates uses include `Insert`, `Edit`, and `ReadOnly`.  
-  
+The <xref:System.Web.UI.WebControls.DataBoundControlMode> that field templates uses include `Insert`, `Edit`, and `ReadOnly`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -751,10 +751,10 @@ public partial class ForeignKeyField :
         <summary>Populates a list control with all the values from a parent table.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method works with only foreign key columns.  
-  
+This method works with only foreign key columns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -781,10 +781,10 @@ public partial class ForeignKeyField :
         <value>The current data row object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The object returned by this the property and the <xref:System.Web.UI.Page.GetDataItem%2A> method are equivalent. This property uses the `Page.GetDataItem` method to return the data row object.  
-  
+The object returned by this the property and the <xref:System.Web.UI.Page.GetDataItem%2A> method are equivalent. This property uses the `Page.GetDataItem` method to return the data row object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -809,10 +809,10 @@ public partial class ForeignKeyField :
         <summary>Sets up a <see cref="P:System.Web.DynamicData.IFieldTemplateHost.ValidationGroup" /> on all validation controls.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method performs additional logic for specific validation control such as the <xref:System.Web.UI.WebControls.RangeValidator> and sets up a <xref:System.Web.DynamicData.DynamicControl.ValidationGroup%2A> on all validation controls.  
-  
+This method performs additional logic for specific validation control such as the <xref:System.Web.UI.WebControls.RangeValidator> and sets up a <xref:System.Web.DynamicData.DynamicControl.ValidationGroup%2A> on all validation controls.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -839,12 +839,12 @@ public partial class ForeignKeyField :
         <summary>Sets up a <see cref="T:System.Web.DynamicData.DynamicValidator" /> using the type of validator and the column to validate.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method used to set up <xref:System.Web.DynamicData.DynamicControl.ValidationGroup%2A> on all validators.  
-  
- It performs additional logic for specific validator types in this method. For example, if range values exit in the data model this method sets up <xref:System.Web.UI.WebControls.RangeValidator>.  
-  
+This method used to set up <xref:System.Web.DynamicData.DynamicControl.ValidationGroup%2A> on all validators.  
+ 
+It performs additional logic for specific validator types in this method. For example, if range values exit in the data model this method sets up <xref:System.Web.UI.WebControls.RangeValidator>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -869,10 +869,10 @@ public partial class ForeignKeyField :
         <summary>Associates a field template with the object that controls how the field template is used.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method implements the <xref:System.Web.DynamicData.IFieldTemplate.SetHost%2A> interface.  
-  
+This method implements the <xref:System.Web.DynamicData.IFieldTemplate.SetHost%2A> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

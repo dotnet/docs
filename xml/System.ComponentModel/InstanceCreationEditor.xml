@@ -19,10 +19,10 @@
     <summary>Creates an instance of a particular type of property from a drop-down box within the <see cref="T:System.Windows.Forms.PropertyGrid" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Usually, the text specified by <xref:System.ComponentModel.InstanceCreationEditor.Text%2A> is displayed on the drop-down box from the <xref:System.Windows.Forms.PropertyGrid> as a link or button. When clicked, the <xref:System.ComponentModel.InstanceCreationEditor.CreateInstance%2A> method is called with the <xref:System.Type> of the object to create.  
-  
+Usually, the text specified by <xref:System.ComponentModel.InstanceCreationEditor.Text%2A> is displayed on the drop-down box from the <xref:System.Windows.Forms.PropertyGrid> as a link or button. When clicked, the <xref:System.ComponentModel.InstanceCreationEditor.CreateInstance%2A> method is called with the <xref:System.Type> of the object to create.  
+ 
  ]]></format>
     </remarks>
   </Docs>

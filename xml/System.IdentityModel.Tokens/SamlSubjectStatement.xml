@@ -14,10 +14,10 @@
     <summary>Represents a claim for a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify the subject of the security token. The claims in a SAML assertion are represented by SAML statements. The SAML specification defines a set of SAML statement types and one of them is a <xref:System.IdentityModel.Tokens.SamlSubjectStatement>. A <xref:System.IdentityModel.Tokens.SamlSubjectStatement> asserts the principal that is the subject of the <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token. This principal is specified in the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject%2A> property.  
-  
+<xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify the subject of the security token. The claims in a SAML assertion are represented by SAML statements. The SAML specification defines a set of SAML statement types and one of them is a <xref:System.IdentityModel.Tokens.SamlSubjectStatement>. A <xref:System.IdentityModel.Tokens.SamlSubjectStatement> asserts the principal that is the subject of the <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token. This principal is specified in the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSubjectStatement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.IsReadOnly%2A> property.  
-  
+This constructor initializes the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.IsReadOnly%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSubjectStatement" /> class using the specified subject.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.IsReadOnly%2A> property.  
-  
+This constructor initializes the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.IsReadOnly%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <summary>Adds a claim based on the properties of this instance to the specified collection of claims.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlSubjectStatement.AddClaimsToList%2A> method adds a claim to the `claims` parameter based on the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject%2A> property.  
-  
+The <xref:System.IdentityModel.Tokens.SamlSubjectStatement.AddClaimsToList%2A> method adds a claim to the `claims` parameter based on the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -122,10 +122,10 @@
         <returns>An <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that represents an authorization policy for the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.CreatePolicy%2A> method to get an authorization policy for a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token.  
-  
+Use the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.CreatePolicy%2A> method to get an authorization policy for a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,10 +148,10 @@
           <see langword="true" /> if the properties of this instance are read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To make this instance of the <xref:System.IdentityModel.Tokens.SamlSubjectStatement> class read-only, call the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.MakeReadOnly%2A> method.  
-  
+To make this instance of the <xref:System.IdentityModel.Tokens.SamlSubjectStatement> class read-only, call the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.MakeReadOnly%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,10 +173,10 @@
         <summary>Causes this instance to be read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.IsReadOnly%2A> property is set to `true` and properties of this instance can no longer be set.  
-  
+When the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.IsReadOnly%2A> property is set to `true` and properties of this instance can no longer be set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
         <value>A <see cref="T:System.IdentityModel.Tokens.SamlSubject" /> that identifies the subject of a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject%2A> property corresponds to the `<saml:Subject>` element that is defined in the Assertions and Protocol for the OASIS SAML specification.  
-  
+The <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject%2A> property corresponds to the `<saml:Subject>` element that is defined in the Assertions and Protocol for the OASIS SAML specification.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject" /> property is set and the <see cref="P:System.IdentityModel.Tokens.SamlSubjectStatement.IsReadOnly" /> property is <see langword="true" />.</exception>
@@ -227,10 +227,10 @@
         <summary>Sets the subject of a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject%2A> property, the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SetSubject%2A> method can be called to set the subject of a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token when the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.IsReadOnly%2A> property is `true`.  
-  
+Unlike the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject%2A> property, the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SetSubject%2A> method can be called to set the subject of a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token when the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.IsReadOnly%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

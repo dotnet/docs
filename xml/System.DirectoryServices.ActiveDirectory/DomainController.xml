@@ -93,10 +93,10 @@
         <summary>Causes the object to release all managed and/or unmanaged resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `disposing` parameter affects only the release of the managed resources. The unmanaged resources are always released by this method.  
-  
+The `disposing` parameter affects only the release of the managed resources. The unmanaged resources are always released by this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.GlobalCatalog" /> object that represents the global catalog server.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.DirectoryServices.ActiveDirectory.GlobalCatalog.DisableGlobalCatalog%2A?displayProperty=fullName> method is used to demote the domain controller from a global catalog server.  
-  
+The <xref:System.DirectoryServices.ActiveDirectory.GlobalCatalog.DisableGlobalCatalog%2A?displayProperty=fullName> method is used to demote the domain controller from a global catalog server.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
@@ -723,10 +723,10 @@
         <summary>Causes this domain controller to take ownership of the specified role.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a destructive operation because it causes the role to be taken without the cooperation of the server that currently holds the role. The <xref:System.DirectoryServices.ActiveDirectory.DomainController.TransferRoleOwnership%2A?displayProperty=fullName> method should be used instead whenever possible.  
-  
+This method is a destructive operation because it causes the role to be taken without the cooperation of the server that currently holds the role. The <xref:System.DirectoryServices.ActiveDirectory.DomainController.TransferRoleOwnership%2A?displayProperty=fullName> method should be used instead whenever possible.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
@@ -797,10 +797,10 @@
         <summary>Causes this domain controller to synchronize the specified partition with all other domain controllers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the replication will only occur with the other domain controllers in the same site. If the `options` parameter contains the <xref:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions> value, then the replication will occur with all domain controllers in the forest.  
-  
+By default, the replication will only occur with the other domain controllers in the same site. If the `options` parameter contains the <xref:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions> value, then the replication will occur with all domain controllers in the forest.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

@@ -18,10 +18,10 @@
     <summary>Represents a variable in a workflow.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In this example, a <xref:System.Activities.Variable%601> is used to hold a message string. This message is written to the console window by a <xref:System.Activities.WriteLine> activity.  
-  
+In this example, a <xref:System.Activities.Variable%601> is used to hold a message string. This message is written to the console window by a <xref:System.Activities.WriteLine> activity.  
+ 
 ```csharp  
 Variable<string> msg =   
     new Variable<string>() { Default = "Hello World!" };  
@@ -41,7 +41,7 @@ Activity wf = new Sequence()
     }  
 };  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -159,10 +159,10 @@ Activity wf = new Sequence()
         <value>The default value for this <see cref="T:System.Activities.Variable`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
+This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>

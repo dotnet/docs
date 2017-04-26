@@ -14,31 +14,31 @@
     <summary>Provides an abstract base class for a page parser filter that is used by the ASP.NET parser to determine whether an item is allowed in the page at parse time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how you can create a class that derives from the <xref:System.Web.UI.PageParserFilter> class to govern the behavior of the ASP.NET page parser. The `CustomPageParserFilter` is a parser filter that explicitly rejects code in the page. It does this by overriding the <xref:System.Web.UI.PageParserFilter.AllowCode%2A> property.  
-  
- [!code-csharp[System.Web.UI.PageParserFilter#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PageParserFilter/CS/CustomPageParserFilter.cs#2)]
- [!code-vb[System.Web.UI.PageParserFilter#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PageParserFilter/VB/CustomPageParserFilter.vb#2)]  
-  
- To use the `CustomPageParserFilter` sample, place the class in your App_Code directory. You must configure the ASP.NET parsers to use the filter in the `pages` section of your site's Web.config configuration file. The following example configuration file shows the configuration for `CustomPageParserFilter`. When configured to use a parser filter, the ASP.NET parser throws an exception during the build if it encounters code in a page.  
-  
- `<?xml version="1.0" ?>`  
-  
- `<configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">`  
-  
- `<system.web>`  
-  
- `<pages`  
-  
- `pageParserFilterType="Samples.AspNet.CS.CustomPageParserFilter">`  
-  
- `</pages>`  
-  
- `</system.web>`  
-  
- `</configuration>`  
-  
+The following example demonstrates how you can create a class that derives from the <xref:System.Web.UI.PageParserFilter> class to govern the behavior of the ASP.NET page parser. The `CustomPageParserFilter` is a parser filter that explicitly rejects code in the page. It does this by overriding the <xref:System.Web.UI.PageParserFilter.AllowCode%2A> property.  
+ 
+[!code-csharp[System.Web.UI.PageParserFilter#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PageParserFilter/CS/CustomPageParserFilter.cs#2)]
+[!code-vb[System.Web.UI.PageParserFilter#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PageParserFilter/VB/CustomPageParserFilter.vb#2)]  
+ 
+To use the `CustomPageParserFilter` sample, place the class in your App_Code directory. You must configure the ASP.NET parsers to use the filter in the `pages` section of your site's Web.config configuration file. The following example configuration file shows the configuration for `CustomPageParserFilter`. When configured to use a parser filter, the ASP.NET parser throws an exception during the build if it encounters code in a page.  
+ 
+`<?xml version="1.0" ?>`  
+ 
+`<configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">`  
+ 
+`<system.web>`  
+ 
+`<pages`  
+ 
+`pageParserFilterType="Samples.AspNet.CS.CustomPageParserFilter">`  
+ 
+`</pages>`  
+ 
+`</system.web>`  
+ 
+`</configuration>`  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,10 +80,10 @@
         <summary>Adds a <see cref="T:System.Web.UI.ControlBuilder" /> object in the page control tree at the current page parser position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.PageParserFilter.AddControl%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.UI.PageParserFilter.AddControl%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
           <see langword="true" /> if the page can inherit from the specified type; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateParser> class determines whether a base type is permitted.  
-  
+The <xref:System.Web.UI.TemplateParser> class determines whether a base type is permitted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,10 +136,10 @@
           <see langword="true" /> if a parser filter permits code; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateParser> class checks any associated <xref:System.Web.UI.PageParserFilter> instance to determine whether a page can contain code that can be compiled.  
-  
+The <xref:System.Web.UI.TemplateParser> class checks any associated <xref:System.Web.UI.PageParserFilter> instance to determine whether a page can contain code that can be compiled.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,10 +168,10 @@
           <see langword="true" /> if the control can be used with the current page; otherwise, <see langword="false" />. The default value is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateParser> class checks to see whether controls are permitted in a page at parse time. Override the <xref:System.Web.UI.PageParserFilter.AllowControl%2A> method to reject or permit specific controls in your pages.  
-  
+The <xref:System.Web.UI.TemplateParser> class checks to see whether controls are permitted in a page at parse time. Override the <xref:System.Web.UI.PageParserFilter.AllowControl%2A> method to reject or permit specific controls in your pages.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
           <see langword="true" /> if a parser permits the specific server-side include; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Override the <xref:System.Web.UI.PageParserFilter.AllowServerSideInclude%2A> method to reject all or specific server-side includes. For more information about server-side include syntax, see [Server-Side Include Directive Syntax](http://msdn.microsoft.com/en-us/42a6925a-f68c-4690-a9c4-d710358886a9).  
-  
+Override the <xref:System.Web.UI.PageParserFilter.AllowServerSideInclude%2A> method to reject all or specific server-side includes. For more information about server-side include syntax, see [Server-Side Include Directive Syntax](http://msdn.microsoft.com/en-us/42a6925a-f68c-4690-a9c4-d710358886a9).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,10 +230,10 @@
           <see langword="true" /> if the parser permits a virtual reference to a specific type of resource; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateParser> class determines whether a particular type of resource can be referenced from a page.  
-  
+The <xref:System.Web.UI.TemplateParser> class determines whether a particular type of resource can be referenced from a page.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
           <see langword="true" /> if a parser filter was called from the page; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is set to `true` when an implementation of the <xref:System.Web.UI.PageParserFilter> class is invoked by calling the `ParseControl`method of the <xref:System.Web.UI.Page> class or by calling the `ParseControl` method of the `TemplateControl` reference of the <xref:System.Web.UI.Page> class.  
-  
+This property is set to `true` when an implementation of the <xref:System.Web.UI.PageParserFilter> class is invoked by calling the `ParseControl`method of the <xref:System.Web.UI.Page> class or by calling the `ParseControl` method of the `TemplateControl` reference of the <xref:System.Web.UI.Page> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -285,10 +285,10 @@
         <returns>One of the <see cref="T:System.Web.UI.CompilationMode" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateControlParser> class checks any associated <xref:System.Web.UI.PageParserFilter> instance to apply a compilation mode to the currently processed page. The default implementation of the <xref:System.Web.UI.PageParserFilter.GetCompilationMode%2A> method simply returns the <xref:System.Web.UI.CompilationMode> value that is passed in the current parameter. Override the <xref:System.Web.UI.PageParserFilter.GetCompilationMode%2A> method to use a specific or different <xref:System.Web.UI.CompilationMode> value.  
-  
+The <xref:System.Web.UI.TemplateControlParser> class checks any associated <xref:System.Web.UI.PageParserFilter> instance to apply a compilation mode to the currently processed page. The default implementation of the <xref:System.Web.UI.PageParserFilter.GetCompilationMode%2A> method simply returns the <xref:System.Web.UI.CompilationMode> value that is passed in the current parameter. Override the <xref:System.Web.UI.PageParserFilter.GetCompilationMode%2A> method to use a specific or different <xref:System.Web.UI.CompilationMode> value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,12 +311,12 @@
         <returns>The return <see cref="T:System.Type" /> that should be used for pages or controls that are not dynamically compiled. The default is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override the <xref:System.Web.UI.PageParserFilter.GetNoCompileUserControlType%2A> method to specify the return type of pages or controls that are treated as if they are not dynamically compiled. The default is `null`.  
-  
- <xref:System.Web.UI.PageParserFilter.GetNoCompileUserControlType%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+You can override the <xref:System.Web.UI.PageParserFilter.GetNoCompileUserControlType%2A> method to specify the return type of pages or controls that are treated as if they are not dynamically compiled. The default is `null`.  
+ 
+<xref:System.Web.UI.PageParserFilter.GetNoCompileUserControlType%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,10 +338,10 @@
         <summary>Initializes a filter used for a page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because the <xref:System.Web.UI.PageParserFilter> class does not expose well-defined public constructors, it is initialized by the page parsers that use the <xref:System.Web.UI.PageParserFilter.Initialize%2A> method. Override the <xref:System.Web.UI.PageParserFilter.Initialize%2A> method to add your own custom initialization steps when an instance of <xref:System.Web.UI.PageParserFilter> is created and used by ASP.NET. The `virtualPath` parameter passed to the <xref:System.Web.UI.PageParserFilter.Initialize%2A> method sets the <xref:System.Web.UI.PageParserFilter.VirtualPath%2A> property, and cannot be `null`.  
-  
+Because the <xref:System.Web.UI.PageParserFilter> class does not expose well-defined public constructors, it is initialized by the page parsers that use the <xref:System.Web.UI.PageParserFilter.Initialize%2A> method. Override the <xref:System.Web.UI.PageParserFilter.Initialize%2A> method to add your own custom initialization steps when an instance of <xref:System.Web.UI.PageParserFilter> is created and used by ASP.NET. The `virtualPath` parameter passed to the <xref:System.Web.UI.PageParserFilter.Initialize%2A> method sets the <xref:System.Web.UI.PageParserFilter.VirtualPath%2A> property, and cannot be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -363,12 +363,12 @@
         <value>The integer value representing the line in the file that the parser filter is currently processing.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a custom <xref:System.Web.UI.PageParserFilter> implementation, use the <xref:System.Web.UI.PageParserFilter.Line%2A> property to report where errors occur during parsing.  
-  
- <xref:System.Web.UI.PageParserFilter.Line%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+In a custom <xref:System.Web.UI.PageParserFilter> implementation, use the <xref:System.Web.UI.PageParserFilter.Line%2A> property to report where errors occur during parsing.  
+ 
+<xref:System.Web.UI.PageParserFilter.Line%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -390,10 +390,10 @@
         <value>The maximum number of controls a parser filter can parse for a page. The default value is 0, which indicates that no controls are parsed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The ASP.NET page parser keeps track of the controls it parses, and if the number exceeds the limit set by a <xref:System.Web.UI.PageParserFilter> instance, it throws an <xref:System.Web.HttpException> exception.  
-  
+The ASP.NET page parser keeps track of the controls it parses, and if the number exceeds the limit set by a <xref:System.Web.UI.PageParserFilter> instance, it throws an <xref:System.Web.HttpException> exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -415,10 +415,10 @@
         <value>The maximum number of direct file dependencies the page parser can parse for a page. The default is 0, which that indicates no dependencies are allowed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateParser> class keeps track of the number of direct and indirect file dependencies it parses, and if the number exceeds the limit set by a <xref:System.Web.UI.PageParserFilter> instance, it throws an exception.  
-  
+The <xref:System.Web.UI.TemplateParser> class keeps track of the number of direct and indirect file dependencies it parses, and if the number exceeds the limit set by a <xref:System.Web.UI.PageParserFilter> instance, it throws an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -466,10 +466,10 @@
         <summary>Allows the page parser filter to preprocess page directives.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The page parser calls the <xref:System.Web.UI.PageParserFilter.PreprocessDirective%2A> method for each directive encountered during parsing.  
-  
+The page parser calls the <xref:System.Web.UI.PageParserFilter.PreprocessDirective%2A> method for each directive encountered during parsing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -498,14 +498,14 @@
           <see langword="true" /> if the parser should process a code construct further; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override the <xref:System.Web.UI.PageParserFilter.ProcessCodeConstruct%2A> method to parse code contained in code constructs when implementing a custom <xref:System.Web.UI.PageParserFilter>. After processing the code, this method returns `true` if the parser should process the code further; otherwise, it returns `false`.  
-  
- The type of allowed code constructs are the <xref:System.Web.UI.CodeConstructType> enumeration values.  
-  
- <xref:System.Web.UI.PageParserFilter.ProcessCodeConstruct%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+You can override the <xref:System.Web.UI.PageParserFilter.ProcessCodeConstruct%2A> method to parse code contained in code constructs when implementing a custom <xref:System.Web.UI.PageParserFilter>. After processing the code, this method returns `true` if the parser should process the code further; otherwise, it returns `false`.  
+ 
+The type of allowed code constructs are the <xref:System.Web.UI.CodeConstructType> enumeration values.  
+ 
+<xref:System.Web.UI.PageParserFilter.ProcessCodeConstruct%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -536,12 +536,12 @@
           <see langword="true" /> if the parser filter processes data binding attributes; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override the <xref:System.Web.UI.PageParserFilter.ProcessDataBindingAttribute%2A> method to allow the parser filter to process data binding expressions when implementing a custom <xref:System.Web.UI.PageParserFilter> class. An example of a data binding expression used with an attribute is `<%# expression %>`.  
-  
- <xref:System.Web.UI.PageParserFilter.ProcessDataBindingAttribute%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+You can override the <xref:System.Web.UI.PageParserFilter.ProcessDataBindingAttribute%2A> method to allow the parser filter to process data binding expressions when implementing a custom <xref:System.Web.UI.PageParserFilter> class. An example of a data binding expression used with an attribute is `<%# expression %>`.  
+ 
+<xref:System.Web.UI.PageParserFilter.ProcessDataBindingAttribute%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -572,12 +572,12 @@
           <see langword="true" /> if the parser processes event handlers; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can override the <xref:System.Web.UI.PageParserFilter.ProcessEventHookup%2A> method to allow the parser to process event hookups when implementing a custom <xref:System.Web.UI.PageParserFilter> class. An example of an event handler is providing a handler for the <xref:System.Web.UI.WebControls.Button.Click> event of the <xref:System.Web.UI.WebControls.Button> control.  
-  
- <xref:System.Web.UI.PageParserFilter.ProcessEventHookup%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+You can override the <xref:System.Web.UI.PageParserFilter.ProcessEventHookup%2A> method to allow the parser to process event hookups when implementing a custom <xref:System.Web.UI.PageParserFilter> class. An example of an event handler is providing a handler for the <xref:System.Web.UI.WebControls.Button.Click> event of the <xref:System.Web.UI.WebControls.Button> control.  
+ 
+<xref:System.Web.UI.PageParserFilter.ProcessEventHookup%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -606,10 +606,10 @@
         <summary>Sets a property on a control derived from the <see cref="T:System.Web.UI.TemplateControl" /> class, which includes the <see cref="T:System.Web.UI.Page" />, <see cref="T:System.Web.UI.UserControl" />, and <see cref="T:System.Web.UI.MasterPage" /> controls.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.PageParserFilter.SetPageProperty%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.UI.PageParserFilter.SetPageProperty%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -631,10 +631,10 @@
         <value>The maximum number of direct and indirect file dependencies the page parser can parse for a page. The default is 0, which indicates that no dependencies are allowed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateParser> class keeps track of the number of direct and indirect file dependencies it parses, and if the number exceeds the limit set by a <xref:System.Web.UI.PageParserFilter> instance, it throws an exception.  
-  
+The <xref:System.Web.UI.TemplateParser> class keeps track of the number of direct and indirect file dependencies it parses, and if the number exceeds the limit set by a <xref:System.Web.UI.PageParserFilter> instance, it throws an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -656,10 +656,10 @@
         <value>A virtual path to an ASP.NET page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.PageParserFilter.VirtualPath%2A> property is never `null`.  
-  
+The <xref:System.Web.UI.PageParserFilter.VirtualPath%2A> property is never `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

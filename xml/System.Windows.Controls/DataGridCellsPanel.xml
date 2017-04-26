@@ -14,10 +14,10 @@
     <summary>Represents a panel that lays out cells and column headers in a data grid.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.DataGridCellsPanel> is used as the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> of the <xref:System.Windows.Controls.Primitives.DataGridCellsPresenter> to lay out cells in a row. It is used as the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> of the <xref:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter> to lay out column headers. The panel arranges cells horizontally and uses each cell's column information to determine the correct size for each cell.  
-  
+The <xref:System.Windows.Controls.DataGridCellsPanel> is used as the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> of the <xref:System.Windows.Controls.Primitives.DataGridCellsPresenter> to lay out cells in a row. It is used as the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> of the <xref:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter> to lay out column headers. The panel arranges cells horizontally and uses each cell's column information to determine the correct size for each cell.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,10 +58,10 @@
         <returns>The final size and placement of the panel.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.DataGridCellsPanel> class uses the <xref:System.Windows.Controls.DataGridCellsPanel.ArrangeOverride%2A> method to lay out the cells that are visible. Cells that are not visible are virtualized.  
-  
+The <xref:System.Windows.Controls.DataGridCellsPanel> class uses the <xref:System.Windows.Controls.DataGridCellsPanel.ArrangeOverride%2A> method to lay out the cells that are visible. Cells that are not visible are virtualized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <returns>The desired size of the panel.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.DataGridCellsPanel> class uses the <xref:System.Windows.Controls.DataGridCellsPanel.MeasureOverride%2A> method to determine which cells are visible and which cells are virtualized.  
-  
+The <xref:System.Windows.Controls.DataGridCellsPanel> class uses the <xref:System.Windows.Controls.DataGridCellsPanel.MeasureOverride%2A> method to determine which cells are visible and which cells are virtualized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,12 +189,12 @@
         <summary>Updates the visible cells when an item in the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The <xref:System.Windows.Controls.DataGridCellsPanel.OnItemsChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
+The <xref:System.Windows.Controls.DataGridCellsPanel.OnItemsChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

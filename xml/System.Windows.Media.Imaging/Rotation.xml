@@ -13,18 +13,18 @@
     <summary>Specifies the rotation to apply to a bitmap image.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only 90 degree increments are supported.  
+Only 90 degree increments are supported.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to apply a rotation to a bitmap image.  
-  
- [!code-csharp[bitmapimageprops#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
- [!code-vb[bitmapimageprops#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
-  
+The following example demonstrates how to apply a rotation to a bitmap image.  
+ 
+[!code-csharp[bitmapimageprops#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
+[!code-vb[bitmapimageprops#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

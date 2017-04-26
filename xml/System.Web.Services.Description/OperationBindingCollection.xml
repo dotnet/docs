@@ -15,17 +15,17 @@
     <summary>Represents a collection of instances of the <see cref="T:System.Web.Services.Description.OperationBinding" /> class. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Description.OperationBinding> class corresponds to the Web Services Description Language (WSDL) `<operation>` element enclosed by the `<binding>` element, which in turn corresponds to the <xref:System.Web.Services.Description.Binding> class. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+The <xref:System.Web.Services.Description.OperationBinding> class corresponds to the Web Services Description Language (WSDL) `<operation>` element enclosed by the `<binding>` element, which in turn corresponds to the <xref:System.Web.Services.Description.Binding> class. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[OperationBindingCollection_OperationBindingCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#1)]
- [!code-csharp[OperationBindingCollection_OperationBindingCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#1)]
- [!code-vb[OperationBindingCollection_OperationBindingCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#1)]  
-  
+[!code-cpp[OperationBindingCollection_OperationBindingCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#1)]
+[!code-csharp[OperationBindingCollection_OperationBindingCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#1)]
+[!code-vb[OperationBindingCollection_OperationBindingCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,14 +52,14 @@
         <returns>The zero-based index where the <paramref name="bindingOperation" /> parameter has been added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the `Add` method.  
-  
- [!code-cpp[OperationBindingCollection_OperationBindingCollection#3](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#3)]
- [!code-csharp[OperationBindingCollection_OperationBindingCollection#3](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#3)]
- [!code-vb[OperationBindingCollection_OperationBindingCollection#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#3)]  
-  
+The following example demonstrates the use of the `Add` method.  
+ 
+[!code-cpp[OperationBindingCollection_OperationBindingCollection#3](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#3)]
+[!code-csharp[OperationBindingCollection_OperationBindingCollection#3](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#3)]
+[!code-vb[OperationBindingCollection_OperationBindingCollection#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,14 +87,14 @@
           <see langword="true" /> if the <paramref name="bindingOperation" /> parameter is a member of the <see cref="T:System.Web.Services.Description.OperationBindingCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the `Contains` method.  
-  
- [!code-cpp[OperationBindingCollection_OperationBindingCollection#2](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#2)]
- [!code-csharp[OperationBindingCollection_OperationBindingCollection#2](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#2)]
- [!code-vb[OperationBindingCollection_OperationBindingCollection#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#2)]  
-  
+The following example demonstrates the use of the `Contains` method.  
+ 
+[!code-cpp[OperationBindingCollection_OperationBindingCollection#2](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#2)]
+[!code-csharp[OperationBindingCollection_OperationBindingCollection#2](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#2)]
+[!code-vb[OperationBindingCollection_OperationBindingCollection#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,14 +122,14 @@
         <summary>Copies the entire <see langword="OperationBindingCollection" /> to a compatible one-dimensional array of type <see cref="T:System.Web.Services.Description.OperationBinding" />, starting at the specified zero-based index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the `CopyTo` method.  
-  
- [!code-cpp[OperationBindingCollection_OperationBindingCollection#8](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#8)]
- [!code-csharp[OperationBindingCollection_OperationBindingCollection#8](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#8)]
- [!code-vb[OperationBindingCollection_OperationBindingCollection#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#8)]  
-  
+The following example demonstrates the use of the `CopyTo` method.  
+ 
+[!code-cpp[OperationBindingCollection_OperationBindingCollection#8](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#8)]
+[!code-csharp[OperationBindingCollection_OperationBindingCollection#8](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#8)]
+[!code-vb[OperationBindingCollection_OperationBindingCollection#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,14 +156,14 @@
         <returns>A 32-bit signed integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the `Insert` method.  
-  
- [!code-cpp[OperationBindingCollection_OperationBindingCollection#7](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#7)]
- [!code-csharp[OperationBindingCollection_OperationBindingCollection#7](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#7)]
- [!code-vb[OperationBindingCollection_OperationBindingCollection#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#7)]  
-  
+The following example demonstrates the use of the `Insert` method.  
+ 
+[!code-cpp[OperationBindingCollection_OperationBindingCollection#7](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#7)]
+[!code-csharp[OperationBindingCollection_OperationBindingCollection#7](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#7)]
+[!code-vb[OperationBindingCollection_OperationBindingCollection#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,23 +191,23 @@
         <summary>Adds the specified <see cref="T:System.Web.Services.Description.OperationBinding" /> instance to the <see cref="T:System.Web.Services.Description.OperationBindingCollection" /> at the specified zero-based index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+ 
+If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `bindingOperation` parameter is added to the end of the <xref:System.Web.Services.Description.OperationBindingCollection>.  
+ 
+The elements after the insertion point move down to accommodate the new element.  
+ 
   
- If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `bindingOperation` parameter is added to the end of the <xref:System.Web.Services.Description.OperationBindingCollection>.  
-  
- The elements after the insertion point move down to accommodate the new element.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the `Insert` method.  
-  
- [!code-cpp[OperationBindingCollection_OperationBindingCollection#6](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#6)]
- [!code-csharp[OperationBindingCollection_OperationBindingCollection#6](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#6)]
- [!code-vb[OperationBindingCollection_OperationBindingCollection#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#6)]  
-  
+The following example demonstrates the use of the `Insert` method.  
+ 
+[!code-cpp[OperationBindingCollection_OperationBindingCollection#6](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#6)]
+[!code-csharp[OperationBindingCollection_OperationBindingCollection#6](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#6)]
+[!code-vb[OperationBindingCollection_OperationBindingCollection#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -234,14 +234,14 @@
         <value>An <see langword="OperationBinding" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of a zero-based index to retrive a member of the `OperationBindingCollection`.  
-  
- [!code-cpp[OperationBindingCollection_OperationBindingCollection#4](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#4)]
- [!code-csharp[OperationBindingCollection_OperationBindingCollection#4](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#4)]
- [!code-vb[OperationBindingCollection_OperationBindingCollection#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#4)]  
-  
+The following example demonstrates the use of a zero-based index to retrive a member of the `OperationBindingCollection`.  
+ 
+[!code-cpp[OperationBindingCollection_OperationBindingCollection#4](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#4)]
+[!code-csharp[OperationBindingCollection_OperationBindingCollection#4](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#4)]
+[!code-vb[OperationBindingCollection_OperationBindingCollection#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,21 +267,21 @@
         <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.OperationBinding" /> from the <see cref="T:System.Web.Services.Description.OperationBindingCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+ 
+The elements that follow the removed <xref:System.Web.Services.Description.OperationBinding> move up to occupy the vacated spot.  
+ 
   
- The elements that follow the removed <xref:System.Web.Services.Description.OperationBinding> move up to occupy the vacated spot.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the `Remove` method.  
-  
- [!code-cpp[OperationBindingCollection_OperationBindingCollection#5](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#5)]
- [!code-csharp[OperationBindingCollection_OperationBindingCollection#5](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#5)]
- [!code-vb[OperationBindingCollection_OperationBindingCollection#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#5)]  
-  
+The following example demonstrates the use of the `Remove` method.  
+ 
+[!code-cpp[OperationBindingCollection_OperationBindingCollection#5](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CPP/operationbindingcollection_operationbindingcollection.cpp#5)]
+[!code-csharp[OperationBindingCollection_OperationBindingCollection#5](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/CS/operationbindingcollection_operationbindingcollection.cs#5)]
+[!code-vb[OperationBindingCollection_OperationBindingCollection#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationBindingCollection_OperationBindingCollection/VB/operationbindingcollection_operationbindingcollection.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

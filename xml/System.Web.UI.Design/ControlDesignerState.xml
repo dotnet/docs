@@ -14,10 +14,10 @@
     <summary>Provides access to the state of the control designer in the design host through the <see cref="T:System.ComponentModel.Design.IComponentDesignerStateService" /> interface. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.ControlDesignerState> class is a wrapper for the <xref:System.ComponentModel.Design.IComponentDesignerStateService> interface, which is the interface between a designer and a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].  
-  
+The <xref:System.Web.UI.Design.ControlDesignerState> class is a wrapper for the <xref:System.ComponentModel.Design.IComponentDesignerStateService> interface, which is the interface between a designer and a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].  
+ 
  ]]></format>
     </remarks>
   </Docs>

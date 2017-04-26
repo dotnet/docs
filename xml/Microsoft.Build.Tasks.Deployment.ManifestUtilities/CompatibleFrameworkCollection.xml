@@ -23,10 +23,10 @@
     <summary>Represents a collection of versions of the .NET Framework that an application prefers to run on.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an application can run on multiple versions of the .NET Framework, the versions should be listed in priority order from most preferred to least preferred. If a version of the .NET Framework listed in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFrameworkCollection> class is installed on the end-user computer, the application can install and run.  
-  
+If an application can run on multiple versions of the .NET Framework, the versions should be listed in priority order from most preferred to least preferred. If a version of the .NET Framework listed in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFrameworkCollection> class is installed on the end-user computer, the application can install and run.  
+ 
  ]]></format>
     </remarks>
   </Docs>

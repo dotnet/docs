@@ -19,10 +19,10 @@
     <summary>An abstract class. Provides information about the included schema.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- See <xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude>, and <xref:System.Xml.Schema.XmlSchemaRedefine> for an example using this class.  
-  
+See <xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude>, and <xref:System.Xml.Schema.XmlSchemaRedefine> for an example using this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -134,12 +134,12 @@
  Optional for imported schemas.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Imported schemas that do not have this attribute allow the imported schema's namespace to be determined by the XML document that is an instance of the containing schema or the application that is processing the schema.  
-  
- Included schemas use this attribute as the URI reference to the location of a schema document that should be included in the target namespace of the containing schema.  
-  
+Imported schemas that do not have this attribute allow the imported schema's namespace to be determined by the XML document that is an instance of the containing schema or the application that is processing the schema.  
+ 
+Included schemas use this attribute as the URI reference to the location of a schema document that should be included in the target namespace of the containing schema.  
+ 
  ]]></format>
         </remarks>
       </Docs>

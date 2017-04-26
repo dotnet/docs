@@ -14,22 +14,22 @@
     <summary>Converts between a string containing a list of font names and an array of strings representing the individual names.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom%2A> method of this class to convert a single string containing a list of font names to an array of strings containing the individual names. Each font name in the string must be separated by a comma. For example, the string "arial, times new roman, verdana", converts to an array that contains the strings "arial", "times new roman", and "verdana". Notice the commas are removed along with any white space at the beginning or end of the font name. White space in the middle of a font name is not removed.  
+Use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom%2A> method of this class to convert a single string containing a list of font names to an array of strings containing the individual names. Each font name in the string must be separated by a comma. For example, the string "arial, times new roman, verdana", converts to an array that contains the strings "arial", "times new roman", and "verdana". Notice the commas are removed along with any white space at the beginning or end of the font name. White space in the middle of a font name is not removed.  
+ 
+The <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertTo%2A> method performs the reverse operation. It converts an array of strings containing the individual font names to a single string containing a list of the names. For example, an array that contains the strings "arial", "times new roman", and "verdana" converts to the string "arial,times new roman,verdana". Notice that commas are automatically inserted between the font names without any white space.  
+ 
+Call the <xref:System.Web.UI.WebControls.FontNamesConverter.CanConvertFrom%2A> method to verify that the conversion can be made before calling the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom%2A> method.  
+ 
   
- The <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertTo%2A> method performs the reverse operation. It converts an array of strings containing the individual font names to a single string containing a list of the names. For example, an array that contains the strings "arial", "times new roman", and "verdana" converts to the string "arial,times new roman,verdana". Notice that commas are automatically inserted between the font names without any white space.  
-  
- Call the <xref:System.Web.UI.WebControls.FontNamesConverter.CanConvertFrom%2A> method to verify that the conversion can be made before calling the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter> class to convert a string with a list of font names to an array of strings containing the individual names. The array of strings is then converted back to a single string and displayed.  
-  
- <!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter> class to convert a string with a list of font names to an array of strings containing the individual names. The array of strings is then converted back to a single string and displayed.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FontNamesConverter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should never access a type converter directly. Instead, call the appropriate converter by using a <xref:System.ComponentModel.TypeDescriptor> object. For more information, see the examples in <xref:System.ComponentModel.TypeConverter>.  
-  
+You should never access a type converter directly. Instead, call the appropriate converter by using a <xref:System.ComponentModel.TypeDescriptor> object. For more information, see the examples in <xref:System.ComponentModel.TypeConverter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,23 +80,23 @@
           <see langword="true" /> if the type can be converted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontNamesConverter.CanConvertFrom%2A> method to determine whether the specified data type can be converted to an array of strings containing individual font names.  
-  
+Use the <xref:System.Web.UI.WebControls.FontNamesConverter.CanConvertFrom%2A> method to determine whether the specified data type can be converted to an array of strings containing individual font names.  
+ 
 > [!NOTE]
 >  This converter can convert only from a `string` data type. The `sourceType` parameter must be of type <xref:System.String>. Otherwise, this method returns `false` to indicate that the specified data type cannot be converted.  
+ 
+You can optionally pass in `null` for the `context` parameter.  
+ 
   
- You can optionally pass in `null` for the `context` parameter.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter.CanConvertFrom%2A> method. The example determines whether the specified data type can be converted to an array of strings that contains the individual font names before performing the conversion.  
-  
- <!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter.CanConvertFrom%2A> method. The example determines whether the specified data type can be converted to an array of strings that contains the individual font names before performing the conversion.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,21 +126,21 @@
         <returns>A <see cref="T:System.Object" /> instance that represents the array of strings containing the individual font names.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom%2A> method to convert a string containing a list of font names to an array of strings containing the individual names. Each font name in the string must be separated by a comma. For example, the string "arial, times new roman, verdana", converts to an array that contains the strings "arial", "times new roman", and "verdana". Notice that the commas are removed along with any white space at the beginning or end of the font name. White space in the middle of a font name is not removed.  
-  
+Use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom%2A> method to convert a string containing a list of font names to an array of strings containing the individual names. Each font name in the string must be separated by a comma. For example, the string "arial, times new roman, verdana", converts to an array that contains the strings "arial", "times new roman", and "verdana". Notice that the commas are removed along with any white space at the beginning or end of the font name. White space in the middle of a font name is not removed.  
+ 
 > [!NOTE]
 >  The `context` and `culture` parameters are not used in this version of the method; they are reserved for future versions of the method. You can optionally pass in `null` for these parameters.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom%2A> method to convert a string with a list of font names to an array of strings containing the individual names.  
-  
- <!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom%2A> method to convert a string with a list of font names to an array of strings containing the individual names.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="M:System.ComponentModel.TypeConverter.GetConvertFromException(System.Object)">
@@ -174,24 +174,24 @@
         <returns>A <see cref="T:System.Object" /> instance that represents a string containing a list of font names.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertTo%2A> method to convert an array of strings containing the individual font names to a single string containing a list of the names. For example, an array that contains the strings "arial", "times new roman", and "verdana" converts to the string "arial,times new roman,verdana". Notice that commas are automatically inserted between the font names without any white space.  
-  
+Use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertTo%2A> method to convert an array of strings containing the individual font names to a single string containing a list of the names. For example, an array that contains the strings "arial", "times new roman", and "verdana" converts to the string "arial,times new roman,verdana". Notice that commas are automatically inserted between the font names without any white space.  
+ 
 > [!NOTE]
 >  This converter can convert only to a `string` data type. The `destinationType` parameter must be of type <xref:System.String>.  
-  
+ 
 > [!NOTE]
 >  The `context` and `culture` parameters are not used in this version of the method; they are reserved for future versions of the method. You can optionally pass in `null` for these parameters.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertTo%2A> method to convert an array of strings containing the individual names to a single string that contains a list of font names.  
-  
- <!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertTo%2A> method to convert an array of strings containing the individual names to a single string that contains a list of font names.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="M:System.ComponentModel.TypeConverter.GetConvertToException(System.Object,System.Type)">

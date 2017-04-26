@@ -14,10 +14,10 @@
     <summary>Provides data for the <see cref="E:System.Drawing.Printing.PrintDocument.BeginPrint" /> and <see cref="E:System.Drawing.Printing.PrintDocument.EndPrint" /> events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about printing, see the <xref:System.Drawing.Printing> namespace overview.  
-  
+For more information about printing, see the <xref:System.Drawing.Printing> namespace overview.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,10 +55,10 @@
           <see cref="F:System.Drawing.Printing.PrintAction.PrintToFile" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.Printing.PrintEventArgs.PrintAction%2A> does not reliably indicate the type of print operation occurring, and returns <xref:System.Drawing.Printing.PrintAction> in all cases.  
-  
+The <xref:System.Drawing.Printing.PrintEventArgs.PrintAction%2A> does not reliably indicate the type of print operation occurring, and returns <xref:System.Drawing.Printing.PrintAction> in all cases.  
+ 
  ]]></format>
         </remarks>
       </Docs>

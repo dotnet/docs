@@ -18,12 +18,12 @@
     <summary>Enumerations for the content model of the complex type. This represents the content in the post-schema-validation information set (infoset).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `IsMixed` property is set to `true` on the `ContentModel` property that has the type `XmlSchemaComplexContent`, the value returned here is `Mixed`. If the `IsMixed` property is `false`, the value is either `Empty` or `ElementOnly`.  
-  
- If the type on the `ContentModel` property has the type `XmlSchemaSimpleContent`, this value is always `TextOnly`.  
-  
+If the `IsMixed` property is set to `true` on the `ContentModel` property that has the type `XmlSchemaComplexContent`, the value returned here is `Mixed`. If the `IsMixed` property is `false`, the value is either `Empty` or `ElementOnly`.  
+ 
+If the type on the `ContentModel` property has the type `XmlSchemaSimpleContent`, this value is always `TextOnly`.  
+ 
  ]]></format>
     </remarks>
   </Docs>

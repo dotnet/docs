@@ -11,10 +11,10 @@
     <summary>Provides a service that represents indexed node control for a simple implementation of a node-based XAML reader.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xaml.IXamlIndexingReader> maintains its own index in an externally provided list of nodes. The list can be accessed by using an Index delegate. This design enables multiple XAML readers to access the same fixed-index node set.  
-  
+<xref:System.Xaml.IXamlIndexingReader> maintains its own index in an externally provided list of nodes. The list can be accessed by using an Index delegate. This design enables multiple XAML readers to access the same fixed-index node set.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <value>The index number of the current reader position.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When using the <xref:System.Xaml.IXamlIndexingReader.CurrentIndex%2A> property, you are using a XAML node reader mode that does not have to use `Read` or `Skip` to traverse all intermediate nodes.  
-  
+When using the <xref:System.Xaml.IXamlIndexingReader.CurrentIndex%2A> property, you are using a XAML node reader mode that does not have to use `Read` or `Skip` to traverse all intermediate nodes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

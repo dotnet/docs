@@ -19,10 +19,10 @@
     <summary>Renders the <see cref="T:System.Windows.Media.Media3D.Visual3D" /> children within the specified 2D viewport bounds.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Viewport3DVisual> is a 2D Visual with 3D children. The <xref:System.Windows.Media.Media3D.Viewport3DVisual> provides necessary infrastructure for the <xref:System.Windows.Controls.Viewport3D> element.  Most users will want to use the <xref:System.Windows.Controls.Viewport3D> element.  
-  
+The <xref:System.Windows.Media.Media3D.Viewport3DVisual> is a 2D Visual with 3D children. The <xref:System.Windows.Media.Media3D.Viewport3DVisual> provides necessary infrastructure for the <xref:System.Windows.Controls.Viewport3D> element.  Most users will want to use the <xref:System.Windows.Controls.Viewport3D> element.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <value>BitmapEffect applied to the Viewport3DVisual.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Bitmap effects are software-rendered. Any object that applies an effect will also be rendered in software. Bitmap effects should not be applied to large visuals or animations as this can degrade performance.  
-  
+Bitmap effects are software-rendered. Any object that applies an effect will also be rendered in software. Bitmap effects should not be applied to large visuals or animations as this can degrade performance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,12 +94,12 @@
         <value>BitmapEffectInput applied to the Viewport3DVisual.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Effects.BitmapEffectInput> applies the <xref:System.Windows.Media.Effects.BitmapEffect> given in the <xref:System.Windows.Media.Media3D.Viewport3DVisual.BitmapEffect%2A> property to a specified region of the visual object.  
-  
- Bitmap effects are software-rendered. Any object that applies an effect will also be rendered in software. Bitmap effects should not be applied to large visuals or animations as this can degrade performance.  
-  
+<xref:System.Windows.Media.Effects.BitmapEffectInput> applies the <xref:System.Windows.Media.Effects.BitmapEffect> given in the <xref:System.Windows.Media.Media3D.Viewport3DVisual.BitmapEffect%2A> property to a specified region of the visual object.  
+ 
+Bitmap effects are software-rendered. Any object that applies an effect will also be rendered in software. Bitmap effects should not be applied to large visuals or animations as this can degrade performance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -265,10 +265,10 @@
         <summary>Initiate a hit test on the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" /> by using the <see cref="T:System.Windows.Media.HitTestFilterCallback" /> and <see cref="T:System.Windows.Media.HitTestResultCallback" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `filterCallback` parameter can be null, in which case, it is ignored. If `filterCallback` is not a null reference (`Nothing` in Visual Basic), it is invoked before `resultCallback`.  
-  
+The `filterCallback` parameter can be null, in which case, it is ignored. If `filterCallback` is not a null reference (`Nothing` in Visual Basic), it is invoked before `resultCallback`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -405,17 +405,17 @@
         <value>Rectangle in which the contents of the Viewport3D will be rendered.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Viewport"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.Viewport3DVisual>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

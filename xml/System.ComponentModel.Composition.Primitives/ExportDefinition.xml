@@ -31,10 +31,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.ExportDefinition" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived types that call this constructor must override the <xref:System.ComponentModel.Composition.Primitives.ExportDefinition.ContractName%2A> property and optionally, the <xref:System.ComponentModel.Composition.Primitives.ExportDefinition.Metadata%2A> property. By default, <xref:System.ComponentModel.Composition.Primitives.ExportDefinition.Metadata%2A> returns an empty, read-only dictionary.  
-  
+Derived types that call this constructor must override the <xref:System.ComponentModel.Composition.Primitives.ExportDefinition.ContractName%2A> property and optionally, the <xref:System.ComponentModel.Composition.Primitives.ExportDefinition.Metadata%2A> property. By default, <xref:System.ComponentModel.Composition.Primitives.ExportDefinition.Metadata%2A> returns an empty, read-only dictionary.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,10 +82,10 @@
         <value>The contract name of the <see cref="T:System.ComponentModel.Composition.Primitives.ExportDefinition" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Overrides of this property should never return `null` or an empty string ("").  
-  
+Overrides of this property should never return `null` or an empty string ("").  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The property was not overridden by a derived class.</exception>
@@ -109,12 +109,12 @@
         <value>The metadata of the <see cref="T:System.ComponentModel.Composition.Primitives.ExportDefinition" />. The default is an empty, read-only <see cref="T:System.Collections.Generic.IDictionary`2" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Overrides of this property should return a read-only <xref:System.Collections.Generic.IDictionary%602> object with a case-sensitive, non-linguistic comparer, such as <xref:System.StringComparer.Ordinal%2A>, and should never return `null`.  
-  
- If the <xref:System.ComponentModel.Composition.Primitives.ExportDefinition> does not contain metadata, return an empty <xref:System.Collections.Generic.IDictionary%602> instead.  
-  
+Overrides of this property should return a read-only <xref:System.Collections.Generic.IDictionary%602> object with a case-sensitive, non-linguistic comparer, such as <xref:System.StringComparer.Ordinal%2A>, and should never return `null`.  
+ 
+If the <xref:System.ComponentModel.Composition.Primitives.ExportDefinition> does not contain metadata, return an empty <xref:System.Collections.Generic.IDictionary%602> instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>

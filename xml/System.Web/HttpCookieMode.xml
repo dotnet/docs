@@ -13,12 +13,12 @@
     <summary>Specifies how cookies are used for a Web application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpCookieMode> enumeration is used to specify the value of the `cookieless` attribute in the `sessionState` configuration section. It is used by all features that support cookieless authentication.  
-  
- The <xref:System.Web.HttpCookieMode> enumeration values specify how a cookie should be used to maintain information about the user. When AutoDetect is used, ASP.NET queries the browser or device to determine whether it supports cookies. If the browser or device supports cookies, then cookies are used to persist user data; otherwise, an identifier is used in the query string.  
-  
+The <xref:System.Web.HttpCookieMode> enumeration is used to specify the value of the `cookieless` attribute in the `sessionState` configuration section. It is used by all features that support cookieless authentication.  
+ 
+The <xref:System.Web.HttpCookieMode> enumeration values specify how a cookie should be used to maintain information about the user. When AutoDetect is used, ASP.NET queries the browser or device to determine whether it supports cookies. If the browser or device supports cookies, then cookies are used to persist user data; otherwise, an identifier is used in the query string.  
+ 
  ]]></format>
     </remarks>
   </Docs>

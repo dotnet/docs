@@ -26,10 +26,10 @@
     <summary>Represents a variable within a symbol store.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.SymbolStore.SymVariable> object can be a parameter, a local variable, or a field.  
-  
+The <xref:System.Diagnostics.SymbolStore.SymVariable> object can be a parameter, a local variable, or a field.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,10 +69,10 @@
         <value>The first address of the variable.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the use of this property, see the <xref:System.Diagnostics.SymbolStore.SymAddressKind> enumeration.  
-  
+For more information about the use of this property, see the <xref:System.Diagnostics.SymbolStore.SymAddressKind> enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,10 +94,10 @@
         <value>The second address of the variable.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the use of this property, see the <xref:System.Diagnostics.SymbolStore.SymAddressKind> enumeration.  
-  
+For more information about the use of this property, see the <xref:System.Diagnostics.SymbolStore.SymAddressKind> enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <value>The third address of the variable.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the use of this property, see the <xref:System.Diagnostics.SymbolStore.SymAddressKind> enumeration.  
-  
+For more information about the use of this property, see the <xref:System.Diagnostics.SymbolStore.SymAddressKind> enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
         <summary>Called by the <see cref="M:System.Diagnostics.SymbolStore.SymVariable.Dispose" /> and <see cref="M:System.Diagnostics.SymbolStore.SymVariable.Finalize" /> methods to release the managed and unmanaged resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymVariable" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called only by the public <xref:System.Diagnostics.SymbolStore.SymVariable.Dispose%2A> and <xref:System.Diagnostics.SymbolStore.SymVariable.Finalize%2A> methods; do not call this method directly.  
-  
+This method is called only by the public <xref:System.Diagnostics.SymbolStore.SymVariable.Dispose%2A> and <xref:System.Diagnostics.SymbolStore.SymVariable.Finalize%2A> methods; do not call this method directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,10 +233,10 @@
         <value>The end offset of the variable.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property applies only to local variables.  
-  
+This property applies only to local variables.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,10 +258,10 @@
         <summary>Releases unmanaged resources and performs other cleanup operations before the <see cref="T:System.Diagnostics.SymbolStore.SymVariable" /> is reclaimed by garbage collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides  <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
-  
+This method overrides  <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -320,10 +320,10 @@
         <value>The start offset of the variable.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property applies only to the local variable.  
-  
+This property applies only to the local variable.  
+ 
  ]]></format>
         </remarks>
       </Docs>

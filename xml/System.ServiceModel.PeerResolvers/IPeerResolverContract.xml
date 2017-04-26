@@ -16,12 +16,12 @@
     <summary>Defines a contract for the basic operations of a peer resolver service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implementors of custom peer resolver services should consider deriving from the base <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService>  
-  
- type and overriding the virtual methods defined on it.  
-  
+Implementors of custom peer resolver services should consider deriving from the base <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService>  
+ 
+type and overriding the virtual methods defined on it.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,10 +79,10 @@
           <see cref="T:System.ServiceModel.PeerResolvers.RefreshResponseInfo" /> that contains the newly refreshed registration entry.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A "refresh" of an entry is implemented by updating the supplied entry's expiry timestamp. All information used to uniquely identify the entry must be supplied in the <xref:System.ServiceModel.PeerResolvers.RefreshInfo> object supplied to this method.  
-  
+A "refresh" of an entry is implemented by updating the supplied entry's expiry timestamp. All information used to uniquely identify the entry must be supplied in the <xref:System.ServiceModel.PeerResolvers.RefreshInfo> object supplied to this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,10 +115,10 @@
           <see cref="T:System.ServiceModel.PeerResolvers.RegisterResponseInfo" /> that contains a copy of the entry added to the peer resolver service's registration lookup table.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to add a peer node's registration information to the lookup table used by the peer resolver service.  
-  
+This method is used to add a peer node's registration information to the lookup table used by the peer resolver service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,10 +178,10 @@
         <summary>Removes a registration from the lookup table for a peer resolver service.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No value is returned by this operation.  
-  
+No value is returned by this operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

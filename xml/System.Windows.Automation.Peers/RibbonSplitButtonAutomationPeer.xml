@@ -80,24 +80,24 @@
         <returns>An object that supports the control pattern if <paramref name="patternInterface" /> is a supported value; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If one of the following cases occurs, this method returns an object that supports the specified control pattern.  
-  
+If one of the following cases occurs, this method returns an object that supports the specified control pattern.  
+ 
 -   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface> and the <xref:System.Windows.Controls.Ribbon.RibbonSplitButton> that is associated with this <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> can be checked.  
-  
+ 
 -   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface> and the <xref:System.Windows.Controls.Ribbon.RibbonSplitButton> that is associated with this <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> cannot be checked.  
-  
+ 
 -   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface>.  
-  
+ 
 -   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface>.  
-  
+ 
 -   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface>.  
-  
+ 
 -   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface>.  
-  
+ 
 -   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <summary>Sends a request to activate the <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IInvokeProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IInvokeProvider> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Windows.Automation.ElementNotEnabledException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> is not enabled.</exception>
@@ -146,10 +146,10 @@
         <summary>Cycles through the checked states of the <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IToggleProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IToggleProvider> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Windows.Automation.ElementNotEnabledException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> is not enabled.</exception>
@@ -173,10 +173,10 @@
         <value>The checked state of the <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IToggleProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IToggleProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

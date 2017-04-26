@@ -13,18 +13,18 @@
     <summary>Specifies the authentication mode to use in a Web application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> property to programmatically configure the type of authentication used by a Web application,  
+Use the <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> property to programmatically configure the type of authentication used by a Web application,  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to access the <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> property.  
-  
- [!code-csharp[System.Web.Configuration.AuthenticationSection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.AuthenticationSection/CS/authenticationsection.cs#4)]
- [!code-vb[System.Web.Configuration.AuthenticationSection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.AuthenticationSection/VB/authenticationsection.vb#4)]  
-  
+The following code example shows how to access the <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> property.  
+ 
+[!code-csharp[System.Web.Configuration.AuthenticationSection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.AuthenticationSection/CS/authenticationsection.cs#4)]
+[!code-vb[System.Web.Configuration.AuthenticationSection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.AuthenticationSection/VB/authenticationsection.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

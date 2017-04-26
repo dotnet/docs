@@ -14,18 +14,18 @@
     <summary>Specifies the different security modes for <see cref="T:System.ServiceModel.WSFederationHttpBinding" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration defines the security modes that the <xref:System.ServiceModel.WSFederationHttpBinding> supports.  
+This enumeration defines the security modes that the <xref:System.ServiceModel.WSFederationHttpBinding> supports.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to set <xref:System.ServiceModel.WSFederationHttpSecurity.Mode%2A> to a member of this enumeration.  
-  
- [!code-csharp[WSFederationHttpSecurity#3](~/samples/snippets/csharp/VS_Snippets_CFX/wsfederationhttpsecurity/cs/source.cs#3)]
- [!code-vb[WSFederationHttpSecurity#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/wsfederationhttpsecurity/vb/source.vb#3)]  
-  
+The following code shows how to set <xref:System.ServiceModel.WSFederationHttpSecurity.Mode%2A> to a member of this enumeration.  
+ 
+[!code-csharp[WSFederationHttpSecurity#3](~/samples/snippets/csharp/VS_Snippets_CFX/wsfederationhttpsecurity/cs/source.cs#3)]
+[!code-vb[WSFederationHttpSecurity#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/wsfederationhttpsecurity/vb/source.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

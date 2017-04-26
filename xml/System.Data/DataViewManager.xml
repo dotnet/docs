@@ -156,10 +156,10 @@
         <value>A value that is used for code persistence.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A user should not call <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> directly.  
-  
+A user should not call <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,10 +295,10 @@
         <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,10 +325,10 @@
         <value>For a description of this member, see <see cref="P:System.Collections.ICollection.Count" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -356,10 +356,10 @@
           <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -386,10 +386,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -417,10 +417,10 @@
         <returns>For a description of this member, see <see cref="M:System.Collections.IEnumerable.GetEnumerator" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -451,10 +451,10 @@
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -481,10 +481,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Clear" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -516,10 +516,10 @@
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Collections.IList" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -550,10 +550,10 @@
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -585,10 +585,10 @@
         <summary>Inserts an item to the <see cref="T:System.Collections.IList" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -616,10 +616,10 @@
           <see langword="true" /> if the <see cref="T:System.Collections.IList" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -646,10 +646,10 @@
         <value>For a description of this member, see <see cref="P:System.Collections.IList.IsReadOnly" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -680,10 +680,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -713,10 +713,10 @@
         <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.IList" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -746,10 +746,10 @@
         <summary>Removes the <see cref="T:System.Collections.IList" /> item at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -779,10 +779,10 @@
         <summary>Adds the <see cref="T:System.ComponentModel.PropertyDescriptor" /> to the indexes used for searching.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -810,10 +810,10 @@
         <returns>For a description of this member, see <see cref="M:System.ComponentModel.IBindingList.AddNew" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -840,10 +840,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.AllowEdit" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -870,10 +870,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.AllowNew" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -900,10 +900,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.AllowRemove" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -935,10 +935,10 @@
         <summary>Sorts the list based on a <see cref="T:System.ComponentModel.PropertyDescriptor" /> and a <see cref="T:System.ComponentModel.ListSortDirection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -971,10 +971,10 @@
         <returns>The index of the row that has the given <see cref="T:System.ComponentModel.PropertyDescriptor" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1001,10 +1001,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.IsSorted" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1034,10 +1034,10 @@
         <summary>Removes the <see cref="T:System.ComponentModel.PropertyDescriptor" /> from the indexes used for searching.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1064,10 +1064,10 @@
         <summary>Removes any sort applied using <see cref="M:System.ComponentModel.IBindingList.ApplySort(System.ComponentModel.PropertyDescriptor,System.ComponentModel.ListSortDirection)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1094,10 +1094,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.SortDirection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1124,10 +1124,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.SortProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1154,10 +1154,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.SupportsChangeNotification" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1184,10 +1184,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.SupportsSearching" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1214,10 +1214,10 @@
         <value>For a description of this member, see <see cref="P:System.ComponentModel.IBindingList.SupportsSorting" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.IBindingList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1248,10 +1248,10 @@
         <returns>The <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that represents the properties on each item used to bind data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.ITypedList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.ITypedList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1282,10 +1282,10 @@
         <returns>The name of the list.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.ITypedList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.DataViewManager> instance is cast to an <xref:System.ComponentModel.ITypedList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

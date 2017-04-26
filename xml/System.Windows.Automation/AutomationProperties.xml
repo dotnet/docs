@@ -131,10 +131,10 @@
         <returns>The [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] identifier for the specified element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Automation.AutomationProperties.AutomationId%2A> property isn't set, this method returns the <xref:System.Windows.FrameworkElement.Name%2A> property.  
-  
+If <xref:System.Windows.Automation.AutomationProperties.AutomationId%2A> property isn't set, this method returns the <xref:System.Windows.FrameworkElement.Name%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

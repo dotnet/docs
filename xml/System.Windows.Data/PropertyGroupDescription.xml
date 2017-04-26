@@ -14,14 +14,14 @@
     <summary>Describes the grouping of items using a property name as the criteria.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Views support the functionality of grouping, which allows the user to partition the collection in the collection view into logical groups. The groups can be explicit, where the user supplies a list of groups, or implicit, where the groups are generated dynamically depending on the data.  
-  
- <xref:System.Windows.Data.PropertyGroupDescription> allows you to create implicit groups based on a <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A>. If you simply want to group by a property you can set the <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A> property. If you want to change the value that is eventually used for group you can use the <xref:System.Windows.Data.PropertyGroupDescription.Converter%2A> property to supply a value converter. For example, you may want to group items based on the first letter of a name. If the <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A> property is not set, the item itself is passed to the value converter. The converter may return a collection, which indicates the items can appear in more than one group.  
-  
- You can also define how string comparison should take place using the <xref:System.Windows.Data.PropertyGroupDescription.StringComparison%2A> property.  
-  
+Views support the functionality of grouping, which allows the user to partition the collection in the collection view into logical groups. The groups can be explicit, where the user supplies a list of groups, or implicit, where the groups are generated dynamically depending on the data.  
+ 
+<xref:System.Windows.Data.PropertyGroupDescription> allows you to create implicit groups based on a <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A>. If you simply want to group by a property you can set the <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A> property. If you want to change the value that is eventually used for group you can use the <xref:System.Windows.Data.PropertyGroupDescription.Converter%2A> property to supply a value converter. For example, you may want to group items based on the first letter of a name. If the <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A> property is not set, the item itself is passed to the value converter. The converter may return a collection, which indicates the items can appear in more than one group.  
+ 
+You can also define how string comparison should take place using the <xref:System.Windows.Data.PropertyGroupDescription.StringComparison%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -40,15 +40,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.PropertyGroupDescription" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this constructor.  
-  
- [!code-csharp[DataBindingLab#6](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml.cs#6)]
- [!code-vb[DataBindingLab#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataBindingLab/VisualBasic/MainWindow.xaml.vb#6)]  
-  
- For the complete example see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703).  
-  
+The following example shows how to use this constructor.  
+ 
+[!code-csharp[DataBindingLab#6](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml.cs#6)]
+[!code-vb[DataBindingLab#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataBindingLab/VisualBasic/MainWindow.xaml.vb#6)]  
+ 
+For the complete example see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,10 +130,10 @@
         <value>An <see cref="T:System.Collections.IComparer" /> value that orders groups in ascending order of name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Data.PropertyGroupDescription.CompareNameAscending%2A> can be used as a value for <xref:System.ComponentModel.GroupDescription.CustomSort%2A>.  
-  
+<xref:System.Windows.Data.PropertyGroupDescription.CompareNameAscending%2A> can be used as a value for <xref:System.ComponentModel.GroupDescription.CustomSort%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <value>An <see cref="T:System.Collections.IComparer" /> value that orders groups in descending order of name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Data.PropertyGroupDescription.CompareNameDescending%2A> can be used as a value for <xref:System.ComponentModel.GroupDescription.CustomSort%2A>.  
-  
+<xref:System.Windows.Data.PropertyGroupDescription.CompareNameDescending%2A> can be used as a value for <xref:System.ComponentModel.GroupDescription.CustomSort%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,10 +185,10 @@
         <value>The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you want to change the value that is eventually used for group you can use the <xref:System.Windows.Data.PropertyGroupDescription.Converter%2A> property to supply a value converter. For example, you may want to group items based on the first letter of a name. If the <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A> property is not set, the item itself is passed to the value converter. The converter may return a collection, which indicates the items can appear in more than one group.  
-  
+If you want to change the value that is eventually used for group you can use the <xref:System.Windows.Data.PropertyGroupDescription.Converter%2A> property to supply a value converter. For example, you may want to group items based on the first letter of a name. If the <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A> property is not set, the item itself is passed to the value converter. The converter may return a collection, which indicates the items can appear in more than one group.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,12 +266,12 @@
         <value>The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Data.PropertyGroupDescription> allows you to create implicit groups based on a <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A>. If you simply want to group by a property you can set the <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A> property. If you want to change the value that is eventually used for group you can use the <xref:System.Windows.Data.PropertyGroupDescription.Converter%2A> property to supply a value converter. For example, you may want to group items based on the first letter of a name. If the <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A> property is not set, the item itself is passed to the value converter. The converter may return a collection, which indicates the items can appear in more than one group.  
-  
- You can also define how string comparison should take place using the <xref:System.Windows.Data.PropertyGroupDescription.StringComparison%2A> property.  
-  
+<xref:System.Windows.Data.PropertyGroupDescription> allows you to create implicit groups based on a <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A>. If you simply want to group by a property you can set the <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A> property. If you want to change the value that is eventually used for group you can use the <xref:System.Windows.Data.PropertyGroupDescription.Converter%2A> property to supply a value converter. For example, you may want to group items based on the first letter of a name. If the <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A> property is not set, the item itself is passed to the value converter. The converter may return a collection, which indicates the items can appear in more than one group.  
+ 
+You can also define how string comparison should take place using the <xref:System.Windows.Data.PropertyGroupDescription.StringComparison%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -298,10 +298,10 @@
         <value>The default value is <see cref="T:System.StringComparison" />.<see langword="Ordinal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is ignored unless both values in the comparison are strings.  
-  
+This is ignored unless both values in the comparison are strings.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,18 +13,18 @@
     <summary>Specifies the border styles that can be applied to the cells of a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView.AdvancedCellBorderStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control returns an object of type <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle>, which has properties of type <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle>.  
+The <xref:System.Windows.Forms.DataGridView.AdvancedCellBorderStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control returns an object of type <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle>, which has properties of type <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Windows.Forms.DataGridView.AdjustedTopLeftHeaderBorderStyle%2A?displayProperty=fullName> property to customize the borders of the upper-left cell. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle> class.  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/CS/advancedborderstyle.cs#12)]
- [!code-vb[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/VB/advancedborderstyle.vb#12)]  
-  
+The following code example demonstrates how to override the <xref:System.Windows.Forms.DataGridView.AdjustedTopLeftHeaderBorderStyle%2A?displayProperty=fullName> property to customize the borders of the upper-left cell. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle> class.  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/CS/advancedborderstyle.cs#12)]
+[!code-vb[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/VB/advancedborderstyle.vb#12)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

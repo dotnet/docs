@@ -22,19 +22,19 @@
     <summary>Represents an attribute declaration.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.CodeDom.CodeAttributeDeclaration> can be used to represent an expression that declares an attribute. The attribute name and the arguments for the attribute are stored as properties of the object. A <xref:System.CodeDom.CodeAttributeArgument> can be used to represent each argument for the attribute.  
+A <xref:System.CodeDom.CodeAttributeDeclaration> can be used to represent an expression that declares an attribute. The attribute name and the arguments for the attribute are stored as properties of the object. A <xref:System.CodeDom.CodeAttributeArgument> can be used to represent each argument for the attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.CodeDom.CodeAttributeDeclaration> that declares a <xref:System.CLSCompliantAttribute> with an argument of `false`:  
-  
- [!code-cpp[System.CodeDom.CodeAttributeDeclaration#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.codedom.codeattributedeclaration/cpp/source.cpp#1)]
- [!code-csharp[System.CodeDom.CodeAttributeDeclaration#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.codedom.codeattributedeclaration/cs/source.cs#1)]
- [!code-vb[System.CodeDom.CodeAttributeDeclaration#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.codedom.codeattributedeclaration/vb/source.vb#1)]  
-  
+The following code example creates a <xref:System.CodeDom.CodeAttributeDeclaration> that declares a <xref:System.CLSCompliantAttribute> with an argument of `false`:  
+ 
+[!code-cpp[System.CodeDom.CodeAttributeDeclaration#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.codedom.codeattributedeclaration/cpp/source.cpp#1)]
+[!code-csharp[System.CodeDom.CodeAttributeDeclaration#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.codedom.codeattributedeclaration/cs/source.cs#1)]
+[!code-vb[System.CodeDom.CodeAttributeDeclaration#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.codedom.codeattributedeclaration/vb/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,10 +71,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> class using the specified code type reference.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `attributeType` parameter is used to set the <xref:System.CodeDom.CodeAttributeDeclaration.AttributeType%2A> and <xref:System.CodeDom.CodeAttributeDeclaration.Name%2A> properties.  
-  
+The `attributeType` parameter is used to set the <xref:System.CodeDom.CodeAttributeDeclaration.AttributeType%2A> and <xref:System.CodeDom.CodeAttributeDeclaration.Name%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,10 +122,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeDeclaration" /> class using the specified code type reference and arguments.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `attributeType` parameter is used to set the <xref:System.CodeDom.CodeAttributeDeclaration.AttributeType%2A> and <xref:System.CodeDom.CodeAttributeDeclaration.Name%2A> properties, and the `arguments` parameter is used to set the <xref:System.CodeDom.CodeAttributeDeclaration.Arguments%2A> property for the <xref:System.CodeDom.CodeAttributeDeclaration>.  
-  
+The `attributeType` parameter is used to set the <xref:System.CodeDom.CodeAttributeDeclaration.AttributeType%2A> and <xref:System.CodeDom.CodeAttributeDeclaration.Name%2A> properties, and the `arguments` parameter is used to set the <xref:System.CodeDom.CodeAttributeDeclaration.Arguments%2A> property for the <xref:System.CodeDom.CodeAttributeDeclaration>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

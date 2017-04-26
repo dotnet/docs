@@ -20,10 +20,10 @@
     <summary>Defines utility methods for use by the .NET Framework remoting infrastructure.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
-  
+You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <summary>Sends a message concerning a remoting channel to an unmanaged debugger.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
-  
+You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,14 +100,14 @@
         <returns>The SOAP-related attribute for the specified class member or method parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
-  
- A `"_LOGGING"` preprocessing symbol is applied to the method by means of the <xref:System.Diagnostics.ConditionalAttribute> attribute.  
-  
- The <xref:System.Runtime.Remoting.Metadata.SoapAttribute> class is the base class for various SOAP-related attribute classes in the <xref:System.Runtime.Remoting.Metadata> namespace.  
-  
+You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
+ 
+A `"_LOGGING"` preprocessing symbol is applied to the method by means of the <xref:System.Diagnostics.ConditionalAttribute> attribute.  
+ 
+The <xref:System.Runtime.Remoting.Metadata.SoapAttribute> class is the base class for various SOAP-related attribute classes in the <xref:System.Runtime.Remoting.Metadata> namespace.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,12 +141,12 @@
         <summary>Instructs an internal debugger to check for a condition and display a message if the condition is <see langword="false" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
-  
- A `"_DEBUG"` preprocessing symbol is applied to the method by means of the <xref:System.Diagnostics.ConditionalAttribute> attribute.  
-  
+You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
+ 
+A `"_DEBUG"` preprocessing symbol is applied to the method by means of the <xref:System.Diagnostics.ConditionalAttribute> attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,12 +183,12 @@
         <summary>Sends any number of messages concerning remoting channels to an internal debugger.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
-  
- A `"_LOGGING"` preprocessing symbol is applied to the method by means of the <xref:System.Diagnostics.ConditionalAttribute> attribute.  
-  
+You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
+ 
+A `"_LOGGING"` preprocessing symbol is applied to the method by means of the <xref:System.Diagnostics.ConditionalAttribute> attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -221,10 +221,10 @@
         <summary>Sets internal identifying information for a remoted server object for each method call from client to server.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
-  
+You do not need to call the `static` methods of the <xref:System.Runtime.Remoting.InternalRemotingServices> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

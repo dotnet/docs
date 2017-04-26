@@ -21,12 +21,12 @@
     <summary>Represents a fault that can have an associated HTTP status code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When using a WCF REST endpoint (<xref:System.ServiceModel.WebHttpBinding> and <xref:System.ServiceModel.Description.WebHttpBehavior> or <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>) the HTTP status code on the response is set accordingly. However, <xref:System.ServiceModel.Web.WebFaultException> can be used with non-REST endpoints and behaves like a regular <xref:System.ServiceModel.FaultException>.  
-  
- Use this class to return error details using the same format as the operation.  
-  
+When using a WCF REST endpoint (<xref:System.ServiceModel.WebHttpBinding> and <xref:System.ServiceModel.Description.WebHttpBehavior> or <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>) the HTTP status code on the response is set accordingly. However, <xref:System.ServiceModel.Web.WebFaultException> can be used with non-REST endpoints and behaves like a regular <xref:System.ServiceModel.FaultException>.  
+ 
+Use this class to return error details using the same format as the operation.  
+ 
  ]]></format>
     </remarks>
   </Docs>

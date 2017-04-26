@@ -236,10 +236,10 @@
         <returns>A reference to the parent object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The parent is the object to which the script object delegates requests for properties or methods that it does not implement itself. For example, when you create a <xref:Microsoft.JScript.NumberObject> by using a <xref:Microsoft.JScript.NumberConstructor>, the parent is a <xref:Microsoft.JScript.NumberPrototype>.  
-  
+The parent is the object to which the script object delegates requests for properties or methods that it does not implement itself. For example, when you create a <xref:Microsoft.JScript.NumberObject> by using a <xref:Microsoft.JScript.NumberConstructor>, the parent is a <xref:Microsoft.JScript.NumberPrototype>.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -441,10 +441,10 @@
         <value>The value of the member that is specified in <paramref name="pars" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `pars` array has more than one element, the last element is the argument for this property.  
-  
+If the `pars` array has more than one element, the last element is the argument for this property.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -489,10 +489,10 @@
         <summary>Stores a reference to the parent object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The parent is the object to which the script object delegates requests for properties or methods that it does not implement itself. For example, when you create a <xref:Microsoft.JScript.NumberObject> by using a <xref:Microsoft.JScript.NumberConstructor>, the parent is a <xref:Microsoft.JScript.NumberPrototype>.  
-  
+The parent is the object to which the script object delegates requests for properties or methods that it does not implement itself. For example, when you create a <xref:Microsoft.JScript.NumberObject> by using a <xref:Microsoft.JScript.NumberConstructor>, the parent is a <xref:Microsoft.JScript.NumberPrototype>.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -540,10 +540,10 @@
         <returns>A one-element array that has a wrapped object that contains the member information and <paramref name="obj" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enables other objects that do not contain the member to store it and then return its value as if it were their own.  
-  
+This method enables other objects that do not contain the member to store it and then return its value as if it were their own.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -572,10 +572,10 @@
         <returns>An array of wrapped objects, each of which contains member information and a copy of <paramref name="obj" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enables other objects that do not contain these members to store them and then return their values as if they were their own.  
-  
+This method enables other objects that do not contain these members to store them and then return their values as if they were their own.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -606,10 +606,10 @@
         <returns>An array of wrapped objects, each of which contains member information and a copy of <paramref name="obj" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method enables other objects that do not contain these members to store them and then return their values as if they were their own.  
-  
+This method enables other objects that do not contain these members to store them and then return their values as if they were their own.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

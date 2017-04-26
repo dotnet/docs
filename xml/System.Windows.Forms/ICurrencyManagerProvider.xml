@@ -11,14 +11,14 @@
     <summary>Provides custom binding management for components.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface allows component authors to provide their own <xref:System.Windows.Forms.CurrencyManager> for components that will interact with the Windows Forms data-binding engine. It is rare for a component author to need to implement this interface.  
-  
- The <xref:System.Windows.Forms.BindingSource> class provides an example implementation of <xref:System.Windows.Forms.ICurrencyManagerProvider>.  
-  
- Note that for Smartphone applications, this class requires Windows Mobile Version 5.0 software for Smartphones.  
-  
+This interface allows component authors to provide their own <xref:System.Windows.Forms.CurrencyManager> for components that will interact with the Windows Forms data-binding engine. It is rare for a component author to need to implement this interface.  
+ 
+The <xref:System.Windows.Forms.BindingSource> class provides an example implementation of <xref:System.Windows.Forms.ICurrencyManagerProvider>.  
+ 
+Note that for Smartphone applications, this class requires Windows Mobile Version 5.0 software for Smartphones.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@
         <returns>The related <see cref="T:System.Windows.Forms.CurrencyManager" /> obtained from this <see cref="T:System.Windows.Forms.ICurrencyManagerProvider" /> and the specified data member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `dataMember` is `null` or an empty string (""), <xref:System.Windows.Forms.ICurrencyManagerProvider.GetRelatedCurrencyManager%2A> returns the main currency manager for this <xref:System.Windows.Forms.ICurrencyManagerProvider>, which is the same currency manager returned from the <xref:System.Windows.Forms.ICurrencyManagerProvider.CurrencyManager%2A> property.  
-  
+If `dataMember` is `null` or an empty string (""), <xref:System.Windows.Forms.ICurrencyManagerProvider.GetRelatedCurrencyManager%2A> returns the main currency manager for this <xref:System.Windows.Forms.ICurrencyManagerProvider>, which is the same currency manager returned from the <xref:System.Windows.Forms.ICurrencyManagerProvider.CurrencyManager%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

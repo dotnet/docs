@@ -87,10 +87,10 @@
         <returns>The meta-function that corresponds to a database function.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Database functions are user-defined functions, table-valued functions, and stored procedures.  
-  
+Database functions are user-defined functions, table-valued functions, and stored procedures.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,10 +212,10 @@
         <value>The provider type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is specified, an existing provider type can be used. This will eliminate a round trip to the server to obtain this information. [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] has to know the provider type to establish appropriate query translation rules. [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] supports <xref:System.Data.Linq.SqlClient.Sql2000Provider> and <xref:System.Data.Linq.SqlClient.Sql2005Provider> providers.  
-  
+If this property is specified, an existing provider type can be used. This will eliminate a round trip to the server to obtain this information. [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] has to know the provider type to establish appropriate query translation rules. [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] supports <xref:System.Data.Linq.SqlClient.Sql2000Provider> and <xref:System.Data.Linq.SqlClient.Sql2005Provider> providers.  
+ 
  ]]></format>
         </remarks>
       </Docs>

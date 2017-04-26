@@ -11,12 +11,12 @@
     <summary>Represents a service that can return the recommended prefix for a XAML namespace mapping to consumers. Consumers might include design environments or serializers.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface represents the service that returns the prefix for a particular XAML namespace. A technology reports a preferred prefix for XAML namespace mapping as part of assembly-level information. This service retrieves that information.  
-  
- The .NET Framework XAML Services implementation provides <xref:System.Windows.Markup.XmlnsPrefixAttribute> as a mechanism for applying preferred prefix information at the assembly level. Existing service providers that provide the <xref:System.Xaml.INamespacePrefixLookup> service can read information from that attribute if information is available.  
-  
+This interface represents the service that returns the prefix for a particular XAML namespace. A technology reports a preferred prefix for XAML namespace mapping as part of assembly-level information. This service retrieves that information.  
+ 
+The .NET Framework XAML Services implementation provides <xref:System.Windows.Markup.XmlnsPrefixAttribute> as a mechanism for applying preferred prefix information at the assembly level. Existing service providers that provide the <xref:System.Xaml.INamespacePrefixLookup> service can read information from that attribute if information is available.  
+ 
  ]]></format>
     </remarks>
   </Docs>

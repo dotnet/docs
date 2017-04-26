@@ -23,22 +23,22 @@
     <summary>Represents an item in the <see cref="T:System.Web.UI.WebControls.Repeater" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.UI.WebControls.RepeaterItem> object represents an item in the <xref:System.Web.UI.WebControls.Repeater> control, such as the heading section, footer section, or a data item.  
+A <xref:System.Web.UI.WebControls.RepeaterItem> object represents an item in the <xref:System.Web.UI.WebControls.Repeater> control, such as the heading section, footer section, or a data item.  
+ 
+The data items of the <xref:System.Web.UI.WebControls.Repeater> control are stored in a <xref:System.Web.UI.WebControls.RepeaterItemCollection> object that can be accessed by using the <xref:System.Web.UI.WebControls.Repeater.Items%2A> property of the <xref:System.Web.UI.WebControls.Repeater> control.  
+ 
+You can use a <xref:System.Web.UI.WebControls.RepeaterItem> object to programmatically access the properties of an item in the <xref:System.Web.UI.WebControls.Repeater> control.  
+ 
   
- The data items of the <xref:System.Web.UI.WebControls.Repeater> control are stored in a <xref:System.Web.UI.WebControls.RepeaterItemCollection> object that can be accessed by using the <xref:System.Web.UI.WebControls.Repeater.Items%2A> property of the <xref:System.Web.UI.WebControls.Repeater> control.  
-  
- You can use a <xref:System.Web.UI.WebControls.RepeaterItem> object to programmatically access the properties of an item in the <xref:System.Web.UI.WebControls.Repeater> control.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use a <xref:System.Web.UI.WebControls.RepeaterItem> object to display the contents of each data item in the <xref:System.Web.UI.WebControls.Repeater> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[Classic RepeaterItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItem Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RepeaterItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItem Example/VB/sourcevb.aspx#1)]  -->  
-  
+The following example demonstrates how to use a <xref:System.Web.UI.WebControls.RepeaterItem> object to display the contents of each data item in the <xref:System.Web.UI.WebControls.Repeater> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[Classic RepeaterItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItem Example/CS/sourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[Classic RepeaterItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItem Example/VB/sourcevb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,18 +62,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RepeaterItem" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.RepeaterItem> class.  
+Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.RepeaterItem> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.RepeaterItem> class.  
-  
- [!code-csharp[Classic RepeaterItem.RepeaterItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItem.RepeaterItem Example/CS/source.cs#1)]
- [!code-vb[Classic RepeaterItem.RepeaterItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItem.RepeaterItem Example/VB/source.vb#1)]  
-  
+The following example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.RepeaterItem> class.  
+ 
+[!code-csharp[Classic RepeaterItem.RepeaterItem Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItem.RepeaterItem Example/CS/source.cs#1)]
+[!code-vb[Classic RepeaterItem.RepeaterItem Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItem.RepeaterItem Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,13 +95,13 @@
         <value>A <see cref="T:System.Object" /> that represents a data item in the <see cref="T:System.Web.UI.WebControls.Repeater" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.RepeaterItem.DataItem%2A> property to specify or determine the properties of a data item associated with the <xref:System.Web.UI.WebControls.RepeaterItem> object in the <xref:System.Web.UI.WebControls.Repeater> control.  
-  
+Use the <xref:System.Web.UI.WebControls.RepeaterItem.DataItem%2A> property to specify or determine the properties of a data item associated with the <xref:System.Web.UI.WebControls.RepeaterItem> object in the <xref:System.Web.UI.WebControls.Repeater> control.  
+ 
 > [!NOTE]
 >  This property only applies to data items in the <xref:System.Web.UI.WebControls.Repeater> control. The <xref:System.Web.UI.WebControls.RepeaterItem.ItemType%2A> property must be set to `ListItemType.Item`, `ListItemType.AlternatingItem`, `ListItemType.SelectedItem`, or `ListItemType.EditItem`.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,21 +123,21 @@
         <value>The index of the item in the <see cref="T:System.Web.UI.WebControls.Repeater" /> control from the <see cref="P:System.Web.UI.WebControls.Repeater.Items" /> collection of the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.RepeaterItem.ItemIndex%2A> property to determine the index number of the item in the <xref:System.Web.UI.WebControls.Repeater> control from the <xref:System.Web.UI.WebControls.Repeater.Items%2A> collection of the control.  
-  
+Use the <xref:System.Web.UI.WebControls.RepeaterItem.ItemIndex%2A> property to determine the index number of the item in the <xref:System.Web.UI.WebControls.Repeater> control from the <xref:System.Web.UI.WebControls.Repeater.Items%2A> collection of the control.  
+ 
 > [!NOTE]
 >  This property only applies to data items in the <xref:System.Web.UI.WebControls.Repeater> control. The <xref:System.Web.UI.WebControls.RepeaterItem.ItemType%2A> property must be set to `ListItemType.Item`, `ListItemType.AlternatingItem`, `ListItemType.SelectedItem`, or `ListItemType.EditItem`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.RepeaterItem.ItemIndex%2A> property to display the index number of the item in the <xref:System.Web.UI.WebControls.Repeater> control from the <xref:System.Web.UI.WebControls.Repeater.Items%2A> collection of the control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[Classic RepeaterItem.ItemIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItem.ItemIndex Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RepeaterItem.ItemIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItem.ItemIndex Example/VB/sourcevb.aspx#1)]  -->  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.RepeaterItem.ItemIndex%2A> property to display the index number of the item in the <xref:System.Web.UI.WebControls.Repeater> control from the <xref:System.Web.UI.WebControls.Repeater.Items%2A> collection of the control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[Classic RepeaterItem.ItemIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItem.ItemIndex Example/CS/sourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[Classic RepeaterItem.ItemIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItem.ItemIndex Example/VB/sourcevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@
         <value>One of the <see cref="T:System.Web.UI.WebControls.ListItemType" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.RepeaterItem.ItemType%2A> property to determine the type of an item in the <xref:System.Web.UI.WebControls.Repeater> control. The following table lists the different item types.  
-  
+Use the <xref:System.Web.UI.WebControls.RepeaterItem.ItemType%2A> property to determine the type of an item in the <xref:System.Web.UI.WebControls.Repeater> control. The following table lists the different item types.  
+ 
 |Item Type|Description|  
 |---------------|-----------------|  
 |Header|The heading section of the <xref:System.Web.UI.WebControls.Repeater> control.|  
@@ -173,15 +173,15 @@
 |EditItem|The item selected for editing in the <xref:System.Web.UI.WebControls.Repeater> control.|  
 |Separator|A separator between the items of the <xref:System.Web.UI.WebControls.Repeater> control.|  
 |Pager|The page selection section of the <xref:System.Web.UI.WebControls.Repeater> control.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.RepeaterItem.ItemType%2A> property to determine the item type of an item in the <xref:System.Web.UI.WebControls.Repeater> control. The order that items are created in the <xref:System.Web.UI.WebControls.Repeater> control are displayed along with the item type.  
-  
- <!-- TODO: review snippet reference [!code-csharp[Classic RepeaterItem.ItemType Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItem.ItemType Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RepeaterItem.ItemType Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItem.ItemType Example/VB/sourcevb.aspx#1)]  -->  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.RepeaterItem.ItemType%2A> property to determine the item type of an item in the <xref:System.Web.UI.WebControls.Repeater> control. The order that items are created in the <xref:System.Web.UI.WebControls.Repeater> control are displayed along with the item type.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[Classic RepeaterItem.ItemType Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterItem.ItemType Example/CS/sourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[Classic RepeaterItem.ItemType Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterItem.ItemType Example/VB/sourcevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,10 +228,10 @@
         <value>An <see cref="P:System.Web.UI.WebControls.RepeaterItem.ItemIndex" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RepeaterItem> instance is cast to the <xref:System.Web.UI.IDataItemContainer> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RepeaterItem> instance is cast to the <xref:System.Web.UI.IDataItemContainer> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -253,10 +253,10 @@
         <value>An <see cref="P:System.Web.UI.WebControls.RepeaterItem.ItemIndex" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RepeaterItem> instance is cast to the <xref:System.Web.UI.IDataItemContainer> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RepeaterItem> instance is cast to the <xref:System.Web.UI.IDataItemContainer> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

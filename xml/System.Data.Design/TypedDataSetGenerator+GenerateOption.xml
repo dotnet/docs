@@ -18,17 +18,17 @@
     <summary>Provides the <see cref="T:System.Data.Design.TypedDataSetGenerator" />with information for creating typed datasets that support LINQ to DataSet and hierarchical update.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Design.TypedDataSetGenerator.GenerateOption> enumeration provides the <xref:System.Data.Design.TypedDataSetGenerator> with information about the type of typed dataset to create when the `TypedDataSetGenerator.Generate` method is called.  
-  
- The <xref:System.Data.Design.TypedDataSetGenerator.GenerateOption> enumeration enables you to implement new features in typed datasets without needing to create additional overloads to the `TypedDataSetGenerator.Generate` method.  
-  
+The <xref:System.Data.Design.TypedDataSetGenerator.GenerateOption> enumeration provides the <xref:System.Data.Design.TypedDataSetGenerator> with information about the type of typed dataset to create when the `TypedDataSetGenerator.Generate` method is called.  
+ 
+The <xref:System.Data.Design.TypedDataSetGenerator.GenerateOption> enumeration enables you to implement new features in typed datasets without needing to create additional overloads to the `TypedDataSetGenerator.Generate` method.  
+ 
 > [!NOTE]
 >  LINQ to DataSet and hierarchical update are features that were added in [!INCLUDE[vs_orcas_long](~/includes/vs-orcas-long-md.md)].  
 >   
 >  Also see [Hierarchical Update Overview](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

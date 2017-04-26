@@ -18,32 +18,32 @@
     <summary>Provides access to the functionality of an installed speech synthesis engine.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you create a new <xref:System.Speech.Synthesis.SpeechSynthesizer> object, it uses the default system voice. To configure the <xref:System.Speech.Synthesis.SpeechSynthesizer> to use one of the installed speech synthesis (text-to-speech) voices, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> or <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> method. To get information about which voices are installed, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and the <xref:System.Speech.Synthesis.VoiceInfo> class.  
-  
- This class also provides control over the following aspects of speech synthesis:  
-  
+When you create a new <xref:System.Speech.Synthesis.SpeechSynthesizer> object, it uses the default system voice. To configure the <xref:System.Speech.Synthesis.SpeechSynthesizer> to use one of the installed speech synthesis (text-to-speech) voices, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> or <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> method. To get information about which voices are installed, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and the <xref:System.Speech.Synthesis.VoiceInfo> class.  
+ 
+This class also provides control over the following aspects of speech synthesis:  
+ 
 -   To configure the output for the <xref:System.Speech.Synthesis.SpeechSynthesizer> object, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A> methods.  
-  
+ 
 -   To generate speech, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method. The <xref:System.Speech.Synthesis.SpeechSynthesizer> can produce speech from text, a <xref:System.Speech.Synthesis.Prompt> or <xref:System.Speech.Synthesis.PromptBuilder> object, or from [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763).  
-  
+ 
 -   To pause and resume speech synthesis, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Pause%2A> and <xref:System.Speech.Synthesis.SpeechSynthesizer.Resume%2A> methods.  
-  
+ 
 -   To add or remove lexicons, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.AddLexicon%2A> and <xref:System.Speech.Synthesis.SpeechSynthesizer.RemoveLexicon%2A> methods. The <xref:System.Speech.Synthesis.SpeechSynthesizer> can use one or more lexicons to guide its pronunciation of words.  
-  
+ 
 -   To modify the delivery of speech output, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Rate%2A> and <xref:System.Speech.Synthesis.SpeechSynthesizer.Volume%2A> properties.  
-  
- The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises events when it encounters certain features in prompts: (<xref:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached>, <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached>, <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress>). It also raises events that report on the start (<xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted>) and end (<xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted>) of speak operations and on the change of the speaking voice (<xref:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange>).  
-  
+ 
+The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises events when it encounters certain features in prompts: (<xref:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached>, <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached>, <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress>). It also raises events that report on the start (<xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted>) and end (<xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted>) of speak operations and on the change of the speaking voice (<xref:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange>).  
+ 
 > [!NOTE]
 >  Always call <xref:System.Speech.Synthesis.SpeechSynthesizer.Dispose%2A> before you release your last reference to the <xref:System.Speech.Synthesis.SpeechSynthesizer>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Speech.Synthesis.SpeechSynthesizer> object's <xref:System.Object.Finalize%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is part of a console application that initializes a <xref:System.Speech.Synthesis.SpeechSynthesizer> object and speaks a string.  
-  
+The following example is part of a console application that initializes a <xref:System.Speech.Synthesis.SpeechSynthesizer> object and speaks a string.  
+ 
 ```csharp  
   
 using System;  
@@ -73,7 +73,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -92,10 +92,10 @@ namespace SampleSynthesis
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you initialize a new <xref:System.Speech.Synthesis.SpeechSynthesizer> instance, it uses the default system voice. To configure the <xref:System.Speech.Synthesis.SpeechSynthesizer> to use one of the installed speech synthesis (text-to-speech) voices, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> or <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> method. To get information about which voices are installed, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and the <xref:System.Speech.Synthesis.VoiceInfo> class.  
-  
+When you initialize a new <xref:System.Speech.Synthesis.SpeechSynthesizer> instance, it uses the default system voice. To configure the <xref:System.Speech.Synthesis.SpeechSynthesizer> to use one of the installed speech synthesis (text-to-speech) voices, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> or <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> method. To get information about which voices are installed, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and the <xref:System.Speech.Synthesis.VoiceInfo> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,23 +122,23 @@ namespace SampleSynthesis
         <summary>Adds a lexicon to the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A pronunciation lexicon is a collection of words or phrases together with their pronunciations, which consist of letters and characters from a supported phonetic alphabet. You can use a lexicon to specify custom pronunciations for specialized vocabulary in your application.  
-  
- Pronunciations specified in an external lexicon file take precedence over the pronunciations of the speech synthesizer's internal lexicon or dictionary. However, pronunciations specified inline in prompts created with any of the <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithPronunciation%2A>, <xref:System.Speech.Synthesis.PromptBuilder.AppendSsmlMarkup%2A>, or <xref:System.Speech.Synthesis.PromptBuilder.AppendSsml%2A> methods take precedence over pronunciations specified in any lexicon. Inline pronunciations apply only to a single occurrence of a word. See [Lexicons and Phonetic Alphabets](http://msdn.microsoft.com/en-us/435e3c6f-6834-4e5a-b0f6-c17b2275dc51) for more information.  
-  
- You can add multiple lexicons to a <xref:System.Speech.Synthesis.SpeechSynthesizer> object.Two values are currently supported for the `mediaType` parameter:  
-  
+A pronunciation lexicon is a collection of words or phrases together with their pronunciations, which consist of letters and characters from a supported phonetic alphabet. You can use a lexicon to specify custom pronunciations for specialized vocabulary in your application.  
+ 
+Pronunciations specified in an external lexicon file take precedence over the pronunciations of the speech synthesizer's internal lexicon or dictionary. However, pronunciations specified inline in prompts created with any of the <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithPronunciation%2A>, <xref:System.Speech.Synthesis.PromptBuilder.AppendSsmlMarkup%2A>, or <xref:System.Speech.Synthesis.PromptBuilder.AppendSsml%2A> methods take precedence over pronunciations specified in any lexicon. Inline pronunciations apply only to a single occurrence of a word. See [Lexicons and Phonetic Alphabets](http://msdn.microsoft.com/en-us/435e3c6f-6834-4e5a-b0f6-c17b2275dc51) for more information.  
+ 
+You can add multiple lexicons to a <xref:System.Speech.Synthesis.SpeechSynthesizer> object.Two values are currently supported for the `mediaType` parameter:  
+ 
 -   The value `application/pls+xml` indicates that the lexicon conforms to the [Pronunciation Lexicon Specification (PLS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201766). This is the preferred format to use.  
-  
+ 
 -   The value `application/vdn.ms-sapi-lex` indicates that the lexicon format is Uncompressed Lexicon, which is a Microsoft-proprietary format. This is a legacy format and we recommend that you use the PLS format described above.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the effect of adding and removing a lexicon that contains a custom pronunciation for the word "blue". The lexicon defines the pronunciation of "blue" to sound like "bleep". While the lexicon is loaded, the speech synthesizer uses the pronunciation defined in the lexicon.  
-  
+The following example demonstrates the effect of adding and removing a lexicon that contains a custom pronunciation for the word "blue". The lexicon defines the pronunciation of "blue" to sound like "bleep". While the lexicon is loaded, the speech synthesizer uses the pronunciation defined in the lexicon.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -180,9 +180,9 @@ namespace SampleSynthesis
   }  
 }  
 ```  
-  
- Following are the contents of the lexicon file Blue.pls:  
-  
+ 
+Following are the contents of the lexicon file Blue.pls:  
+ 
 ```xml  
 <?xml version="1.0" encoding="UTF-8"?>  
   
@@ -197,7 +197,7 @@ namespace SampleSynthesis
   
 </lexicon>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -218,17 +218,17 @@ namespace SampleSynthesis
         <summary>Raised when the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> encounters a bookmark in a prompt.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises this event while processing any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> methods. For information about data associated with the event, see <xref:System.Speech.Synthesis.BookmarkReachedEventArgs>.  
+The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises this event while processing any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> methods. For information about data associated with the event, see <xref:System.Speech.Synthesis.BookmarkReachedEventArgs>.  
+ 
+You can add bookmarks using the <xref:System.Speech.Synthesis.PromptBuilder.AppendBookmark%2A> method.  
+ 
   
- You can add bookmarks using the <xref:System.Speech.Synthesis.PromptBuilder.AppendBookmark%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a prompt that includes two bookmarks and sends the output to a WAV file for playback. The handler for the <xref:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached> event writes the name of the bookmark and its position in the audio stream when the event was raised to the console.  
-  
+The following example creates a prompt that includes two bookmarks and sends the output to a WAV file for playback. The handler for the <xref:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached> event writes the name of the bookmark and its position in the audio stream when the event was raised to the console.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -285,7 +285,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -344,13 +344,13 @@ namespace SampleSynthesis
         <returns>Returns the prompt object that is currently being spoken.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
-  
+ 
 ```csharp  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,15 +373,15 @@ namespace SampleSynthesis
         <returns>Returns a read-only collection of the voices currently installed on the system.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A voice is an engine for speech synthesis (text-to-speech or TTS) that is installed on the system.  
+A voice is an engine for speech synthesis (text-to-speech or TTS) that is installed on the system.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is part of a console application that initializes a <xref:System.Speech.Synthesis.SpeechSynthesizer> object and outputs to the console a list of the installed voices (engines for speech synthesis) and demonstrates the information that is available for each voice.  
-  
+The following example is part of a console application that initializes a <xref:System.Speech.Synthesis.SpeechSynthesizer> object and outputs to the console a list of the installed voices (engines for speech synthesis) and demonstrates the information that is available for each voice.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -443,7 +443,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -469,25 +469,25 @@ namespace SampleSynthesis
         <returns>Returns a read-only collection of the voices currently installed on the system that support the specified locale.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If none of the installed voices support the specified locale, this method returns an empty collection.  
-  
- Microsoft Windows and the System.Speech API accept all valid language-country codes. To perform text-to-speech using the language specified in the Culture property, a speech synthesis engine that supports that language-country code must be installed. The speech synthesis engines that shipped with Microsoft Windows 7 work with the following language-country codes:  
-  
+If none of the installed voices support the specified locale, this method returns an empty collection.  
+ 
+Microsoft Windows and the System.Speech API accept all valid language-country codes. To perform text-to-speech using the language specified in the Culture property, a speech synthesis engine that supports that language-country code must be installed. The speech synthesis engines that shipped with Microsoft Windows 7 work with the following language-country codes:  
+ 
 -   en-US. English (United States)  
-  
+ 
 -   zh-CN. Chinese (China)  
-  
+ 
 -   zh-TW. Chinese (Taiwan)  
+ 
+Two-letter language codes such as "en" are also permitted.  
+ 
   
- Two-letter language codes such as "en" are also permitted.  
-  
-   
-  
+ 
 ## Examples  
- The following example is part of a console application that initializes a <xref:System.Speech.Synthesis.SpeechSynthesizer> object and outputs to the console a list of the installed voices that support the en-US locale.  
-  
+The following example is part of a console application that initializes a <xref:System.Speech.Synthesis.SpeechSynthesizer> object and outputs to the console a list of the installed voices that support the en-US locale.  
+ 
 ```csharp  
 using System;  
 using System.Globalization;  
@@ -536,7 +536,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -575,14 +575,14 @@ namespace SampleSynthesis
         <summary>Raised when a phoneme is reached.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A phoneme is a basic component of written language, typically a letter of an alphabet (or the combination of two letters) that represents one or more distinct sounds. For example, the letter “c” is a phoneme that may sound like “s” in “cinder”, or like “k” in “catch”. A written word is an assemblage of phonemes. Changing a phoneme in a word will alter its spelling.  
-  
- A <xref:System.Speech.Synthesis.SpeechSynthesizer> instance generates a <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> event for each portion of a word that constitutes a phoneme. For example, for the word “theme” would generate three <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> events; one for the “th” sound, one for the “e” sound, and one for the “m” sound (me).  
-  
- For an example and information about data associated with the event, see <xref:System.Speech.Synthesis.PhonemeReachedEventArgs>.  
-  
+A phoneme is a basic component of written language, typically a letter of an alphabet (or the combination of two letters) that represents one or more distinct sounds. For example, the letter “c” is a phoneme that may sound like “s” in “cinder”, or like “k” in “catch”. A written word is an assemblage of phonemes. Changing a phoneme in a word will alter its spelling.  
+ 
+A <xref:System.Speech.Synthesis.SpeechSynthesizer> instance generates a <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> event for each portion of a word that constitutes a phoneme. For example, for the word “theme” would generate three <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> events; one for the “th” sound, one for the “e” sound, and one for the “m” sound (me).  
+ 
+For an example and information about data associated with the event, see <xref:System.Speech.Synthesis.PhonemeReachedEventArgs>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -604,10 +604,10 @@ namespace SampleSynthesis
         <value>Returns the speaking rate of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object, from -10 through 10.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example speaks a string with the speaking rate set to -2.  
-  
+The following example speaks a string with the speaking rate set to -2.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -639,7 +639,7 @@ namespace SampleSynthesis
   }    
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -664,10 +664,10 @@ namespace SampleSynthesis
         <summary>Removes a lexicon from the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See <xref:System.Speech.Synthesis.SpeechSynthesizer.AddLexicon%2A> for an example.  
-  
+See <xref:System.Speech.Synthesis.SpeechSynthesizer.AddLexicon%2A> for an example.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -710,14 +710,14 @@ namespace SampleSynthesis
         <summary>Selects a specific voice by name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. To select a voice, pass the entire contents of the <xref:System.Speech.Synthesis.VoiceInfo.Name%2A> property as the argument for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice that contains `name` in the voice's <xref:System.Speech.Synthesis.VoiceInfo.Name%2A?displayProperty=fullName> property. The <xref:System.Speech.Synthesis.SpeechSynthesizer> performs a case-sensitive, substring comparison to determine if the voice matches the `name`.  
-  
- When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
-  
- To select a voice by gender, age, or locale, use one of the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods.  
-  
+Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. To select a voice, pass the entire contents of the <xref:System.Speech.Synthesis.VoiceInfo.Name%2A> property as the argument for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice that contains `name` in the voice's <xref:System.Speech.Synthesis.VoiceInfo.Name%2A?displayProperty=fullName> property. The <xref:System.Speech.Synthesis.SpeechSynthesizer> performs a case-sensitive, substring comparison to determine if the voice matches the `name`.  
+ 
+When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+ 
+To select a voice by gender, age, or locale, use one of the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -742,16 +742,16 @@ namespace SampleSynthesis
         <summary>Selects a voice with a specific gender.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice whose <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A> property matches the `gender` parameter.  
-  
- When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
-  
- To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods.  
-  
- To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method.  
-  
+Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice whose <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A> property matches the `gender` parameter.  
+ 
+When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+ 
+To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods.  
+ 
+To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -778,16 +778,16 @@ namespace SampleSynthesis
         <summary>Selects a voice with a specific gender and age.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice whose <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A> and <xref:System.Speech.Synthesis.VoiceInfo.Age%2A> properties match the `gender` and `age` parameters.  
-  
- When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
-  
- To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods.  
-  
- To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method.  
-  
+Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice whose <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A> and <xref:System.Speech.Synthesis.VoiceInfo.Age%2A> properties match the `gender` and `age` parameters.  
+ 
+When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+ 
+To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods.  
+ 
+To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -816,16 +816,16 @@ namespace SampleSynthesis
         <summary>Selects a voice with a specific gender and age, based on the position in which the voices are ordered.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object finds installed voices whose <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A> and <xref:System.Speech.Synthesis.VoiceInfo.Age%2A> properties match the `gender` and `age` parameters. The <xref:System.Speech.Synthesis.SpeechSynthesizer> counts the matches it finds, and returns the voice when the count equals the `voiceAlternate` parameter.  
-  
- When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
-  
- To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> overloads.  
-  
- To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method.  
-  
+Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object finds installed voices whose <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A> and <xref:System.Speech.Synthesis.VoiceInfo.Age%2A> properties match the `gender` and `age` parameters. The <xref:System.Speech.Synthesis.SpeechSynthesizer> counts the matches it finds, and returns the voice when the count equals the `voiceAlternate` parameter.  
+ 
+When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+ 
+To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> overloads.  
+ 
+To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -856,26 +856,26 @@ namespace SampleSynthesis
         <summary>Selects a voice with a specific gender, age, and locale, based on the position in which the voices are ordered.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Synthesis.SpeechSynthesizer> object finds voices whose <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A>, <xref:System.Speech.Synthesis.VoiceInfo.Age%2A>, and <xref:System.Speech.Synthesis.VoiceInfo.Culture%2A> properties match the `gender`, `age`, and `culture` parameters. The <xref:System.Speech.Synthesis.SpeechSynthesizer> counts the matches it finds, and returns the voice when the count equals the `voiceAlternate` parameter.  
-  
- Microsoft Windows and the System.Speech API accept all valid language-country codes. To perform text-to-speech using the language specified in the `culture` parameter, a speech synthesis engine that supports that language-country code must be installed. The speech synthesis engines that shipped with Microsoft Windows 7 work with the following language-country codes:  
-  
+The <xref:System.Speech.Synthesis.SpeechSynthesizer> object finds voices whose <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A>, <xref:System.Speech.Synthesis.VoiceInfo.Age%2A>, and <xref:System.Speech.Synthesis.VoiceInfo.Culture%2A> properties match the `gender`, `age`, and `culture` parameters. The <xref:System.Speech.Synthesis.SpeechSynthesizer> counts the matches it finds, and returns the voice when the count equals the `voiceAlternate` parameter.  
+ 
+Microsoft Windows and the System.Speech API accept all valid language-country codes. To perform text-to-speech using the language specified in the `culture` parameter, a speech synthesis engine that supports that language-country code must be installed. The speech synthesis engines that shipped with Microsoft Windows 7 work with the following language-country codes:  
+ 
 -   en-US. English (United States)  
-  
+ 
 -   zh-CN. Chinese (China)  
-  
+ 
 -   zh-TW. Chinese (Taiwan)  
-  
- Two-letter language codes such as "en" are also permitted.  
-  
- When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
-  
- To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> overloads.  
-  
- To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method.  
-  
+ 
+Two-letter language codes such as "en" are also permitted.  
+ 
+When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+ 
+To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> overloads.  
+ 
+To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -902,12 +902,12 @@ namespace SampleSynthesis
         <summary>Configures the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object to append output to an audio stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A> to release the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s  reference to the stream.  
-  
- For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> methods.  
-  
+Call <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A> to release the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s  reference to the stream.  
+ 
+For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -929,17 +929,17 @@ namespace SampleSynthesis
         <summary>Configures the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object to send output to the default audio device.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the  **Sound** window in the Windows **Control Panel** to configure the default audio device for the computer.  
+You can use the  **Sound** window in the Windows **Control Panel** to configure the default audio device for the computer.  
+ 
+For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> methods.  
+ 
   
- For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the synthesizer to speak a phrase to the default audio output.  
-  
+The following example uses the synthesizer to speak a phrase to the default audio output.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -970,7 +970,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -992,12 +992,12 @@ namespace SampleSynthesis
         <summary>Configures the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object to not send output from synthesis operations to a device, file, or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to release the <xref:System.Speech.Synthesis.SpeechSynthesizer> ‘s reference to a file or stream. See <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> for an example.  
-  
- For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> methods.  
-  
+Use this method to release the <xref:System.Speech.Synthesis.SpeechSynthesizer> ‘s reference to a file or stream. See <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> for an example.  
+ 
+For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1022,15 +1022,15 @@ namespace SampleSynthesis
         <summary>Configures the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object to append output to a file that contains Waveform format audio.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To configure the output and specify the audio format, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A> method.  
+To configure the output and specify the audio format, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses an instance of <xref:System.Media.SoundPlayer> to play a prompt that has been output to a .wav file. Because the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> call is asynchronous, the <xref:System.Media.SoundPlayer> instance is created (and the <xref:System.Media.SoundPlayer.Play%2A> method invoked) in the handler for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event.  
-  
+The following example uses an instance of <xref:System.Media.SoundPlayer> to play a prompt that has been output to a .wav file. Because the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> call is asynchronous, the <xref:System.Media.SoundPlayer> instance is created (and the <xref:System.Media.SoundPlayer.Play%2A> method invoked) in the handler for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -1077,7 +1077,7 @@ namespace SampleSynthesis
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1104,10 +1104,10 @@ namespace SampleSynthesis
         <summary>Configures the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object to append output to a Waveform audio format file in a specified format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example specifies the format of the output of speech synthesis and sends it to a WAV file.  
-  
+The following example specifies the format of the output of speech synthesis and sends it to a WAV file.  
+ 
 ```csharp  
 using System;  
 using System.IO;  
@@ -1150,7 +1150,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1175,17 +1175,17 @@ namespace SampleSynthesis
         <summary>Configures the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object to append output to a stream that contains Waveform format audio.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To release the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s reference to the stream, reconfigure the synthesizer's output, for example, by calling <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>.  
+To release the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s reference to the stream, reconfigure the synthesizer's output, for example, by calling <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>.  
+ 
+For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A> methods.  
+ 
   
- For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following example outputs a phrase to a WAV stream.  
-  
+The following example outputs a phrase to a WAV stream.  
+ 
 ```csharp  
 using System;  
 using System.IO;  
@@ -1230,7 +1230,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1255,15 +1255,15 @@ namespace SampleSynthesis
         <summary>Synchronously speaks the contents of a <see cref="T:System.Speech.Synthesis.Prompt" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To asynchronously speak the contents of a <xref:System.Speech.Synthesis.Prompt> object, use <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>.  
+To asynchronously speak the contents of a <xref:System.Speech.Synthesis.Prompt> object, use <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Speech.Synthesis.Prompt> object from a string and passes the object as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method.  
-  
+The following example creates a <xref:System.Speech.Synthesis.Prompt> object from a string and passes the object as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -1296,7 +1296,7 @@ namespace SampleSynthesis
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1321,15 +1321,15 @@ namespace SampleSynthesis
         <summary>Synchronously speaks the contents of a <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To asynchronously speak the contents of a <xref:System.Speech.Synthesis.PromptBuilder> object, use <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>.  
+To asynchronously speak the contents of a <xref:System.Speech.Synthesis.PromptBuilder> object, use <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Speech.Synthesis.PromptBuilder> object from a string and passes the object as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method.  
-  
+The following example creates a <xref:System.Speech.Synthesis.PromptBuilder> object from a string and passes the object as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -1363,7 +1363,7 @@ namespace SampleSynthesis
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1388,15 +1388,15 @@ namespace SampleSynthesis
         <summary>Synchronously speaks the contents of a string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To synchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method. To asynchronously speak the contents of a string, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> method.  
+To synchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method. To asynchronously speak the contents of a string, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- As shown in the following example, the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method provides the simplest means to generate speech output synchronously.  
-  
+As shown in the following example, the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method provides the simplest means to generate speech output synchronously.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -1426,7 +1426,7 @@ namespace SampleSynthesis
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1451,17 +1451,17 @@ namespace SampleSynthesis
         <summary>Asynchronously speaks the contents of a <see cref="T:System.Speech.Synthesis.Prompt" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can cancel the asynchronous speaking of a prompt with the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancel%2A> or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancelAll%2A> method.  
+You can cancel the asynchronous speaking of a prompt with the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancel%2A> or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancelAll%2A> method.  
+ 
+To synchronously speak the contents of a <xref:System.Speech.Synthesis.Prompt> object, use <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>.  
+ 
   
- To synchronously speak the contents of a <xref:System.Speech.Synthesis.Prompt> object, use <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Speech.Synthesis.Prompt> object from a string and passes the object as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> method.  
-  
+The following example creates a <xref:System.Speech.Synthesis.Prompt> object from a string and passes the object as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> method.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -1493,7 +1493,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1519,15 +1519,15 @@ namespace SampleSynthesis
         <returns>Returns the object that contains the content to speak.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To synchronously speak the contents of a <xref:System.Speech.Synthesis.PromptBuilder> object, use <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>.  
+To synchronously speak the contents of a <xref:System.Speech.Synthesis.PromptBuilder> object, use <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Speech.Synthesis.PromptBuilder> object from a string and passes the object as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> method.  
-  
+The following example creates a <xref:System.Speech.Synthesis.PromptBuilder> object from a string and passes the object as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> method.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -1560,7 +1560,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1586,15 +1586,15 @@ namespace SampleSynthesis
         <returns>Returns the object that contains the content to speak.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To asynchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method. To synchronously speak the contents of a string, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method. You can cancel the asynchronous speaking of a prompt with the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancel%2A> or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancelAll%2A> method.  
+To asynchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method. To synchronously speak the contents of a string, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method. You can cancel the asynchronous speaking of a prompt with the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancel%2A> or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancelAll%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- As shown in the following example, the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> method provides the simplest means to generate speech output asynchronously.  
-  
+As shown in the following example, the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> method provides the simplest means to generate speech output asynchronously.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -1623,7 +1623,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1648,18 +1648,18 @@ namespace SampleSynthesis
         <summary>Cancels the asynchronous synthesis operation for a queued prompt.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can also use this method to cancel an asynchronous speak operation for the following:  
-  
+You can also use this method to cancel an asynchronous speak operation for the following:  
+ 
 -   The contents of a <xref:System.String> specified by a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=fullName> method.  
-  
+ 
 -   The contents of a <xref:System.Speech.Synthesis.PromptBuilder> specified by a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=fullName> method.  
-  
+ 
 -   The contents of a <xref:System.String> containing SSML specified by a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method.  
-  
- When you call <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=fullName>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=fullName>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A>, System.Speech creates a <xref:System.Speech.Synthesis.Prompt> object and populates it with the contents of the method's parameter, and returns the <xref:System.Speech.Synthesis.Prompt> object. If you retain a copy of the returned <xref:System.Speech.Synthesis.Prompt>, you can pass it into <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancel%2A> to cancel speaking content specified in a <xref:System.String> or a <xref:System.Speech.Synthesis.PromptBuilder> object.  
-  
+ 
+When you call <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=fullName>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=fullName>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A>, System.Speech creates a <xref:System.Speech.Synthesis.Prompt> object and populates it with the contents of the method's parameter, and returns the <xref:System.Speech.Synthesis.Prompt> object. If you retain a copy of the returned <xref:System.Speech.Synthesis.Prompt>, you can pass it into <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancel%2A> to cancel speaking content specified in a <xref:System.String> or a <xref:System.Speech.Synthesis.PromptBuilder> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1681,10 +1681,10 @@ namespace SampleSynthesis
         <summary>Cancels all queued, asynchronous, speech synthesis operations.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example show a use of <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancelAll%2A> to cancel the asynchronous speaking of a prompt, so that a new prompt can be spoken. Note that the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event fires when a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> operation is cancelled.  
-  
+The following example show a use of <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancelAll%2A> to cancel the asynchronous speaking of a prompt, so that a new prompt can be spoken. Note that the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event fires when a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> operation is cancelled.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -1753,7 +1753,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1774,12 +1774,12 @@ namespace SampleSynthesis
         <summary>Raised when the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> completes the speaking of a prompt.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event at the completion of any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> or  <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> methods.  
-  
- The <xref:System.Speech.Synthesis.SpeakCompletedEventArgs> class has no properties, and does not return data from the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event. It is provided to enable application authors to write event handlers for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event.  
-  
+The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event at the completion of any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> or  <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> methods.  
+ 
+The <xref:System.Speech.Synthesis.SpeakCompletedEventArgs> class has no properties, and does not return data from the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event. It is provided to enable application authors to write event handlers for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1800,10 +1800,10 @@ namespace SampleSynthesis
         <summary>Raised after the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> speaks each individual word of a prompt.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises this event for each new word that it speaks in a prompt using any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> methods. For an example and more information about data associated with the event, see <xref:System.Speech.Synthesis.SpeakProgressEventArgs>.  
-  
+The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises this event for each new word that it speaks in a prompt using any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> methods. For an example and more information about data associated with the event, see <xref:System.Speech.Synthesis.SpeakProgressEventArgs>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1828,35 +1828,35 @@ namespace SampleSynthesis
         <summary>Synchronously speaks a <see cref="T:System.String" /> that contains SSML markup.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](http://msdn.microsoft.com/en-us/0c51279e-84d2-4f73-a924-8832039abf94).  
-  
- To asynchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method. You can use <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> to initiate the synchronous speaking of a string that does not contain SSML markup.  
-  
- During a call to this method, the <xref:System.Speech.Synthesis.SpeechSynthesizer> can raise the following events:  
-  
+The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](http://msdn.microsoft.com/en-us/0c51279e-84d2-4f73-a924-8832039abf94).  
+ 
+To asynchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method. You can use <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> to initiate the synchronous speaking of a string that does not contain SSML markup.  
+ 
+During a call to this method, the <xref:System.Speech.Synthesis.SpeechSynthesizer> can raise the following events:  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.StateChanged>. Raised when the speaking state of the synthesizer changes.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted>. Raised when the synthesizer begins generating speech.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached>. Raised each time the synthesizer reaches a letter or combination of letters that constitute a discreet sound of speech in a language.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress>. Raised each time the synthesizer completes speaking a word.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached>. Raised each time spoken output requires a change in the position of the mouth or the facial muscles used to produce speech.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached>. Raised when the synthesizer encounters a bookmark in a prompt.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange>. Raised when the speaking voice for the synthesizer changes.  
+ 
+The <xref:System.Speech.Synthesis.SpeechSynthesizer> does not raise the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event while processing the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method.  
+ 
   
- The <xref:System.Speech.Synthesis.SpeechSynthesizer> does not raise the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event while processing the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example renders the date 1/29/2009 as a date, in month, day, year order.  
-  
+The following example renders the date 1/29/2009 as a date, in month, day, year order.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -1890,7 +1890,7 @@ namespace SampleSynthesis
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1916,36 +1916,36 @@ namespace SampleSynthesis
         <returns>To be added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](http://msdn.microsoft.com/en-us/0c51279e-84d2-4f73-a924-8832039abf94).  
-  
- To synchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method. You can use <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> to initiate the asynchronous speaking of a string that does not contain SSML markup.  
-  
- During a call to this method, the <xref:System.Speech.Synthesis.SpeechSynthesizer> can raise the following events:  
-  
+The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](http://msdn.microsoft.com/en-us/0c51279e-84d2-4f73-a924-8832039abf94).  
+ 
+To synchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method. You can use <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> to initiate the asynchronous speaking of a string that does not contain SSML markup.  
+ 
+During a call to this method, the <xref:System.Speech.Synthesis.SpeechSynthesizer> can raise the following events:  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.StateChanged>. Raised when the speaking state of the synthesizer changes.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted>. Raised when the synthesizer begins generating speech.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached>. Raised each time the synthesizer reaches a letter or combination of letters that constitute a discreet sound of speech in a language.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress>. Raised each time the synthesizer completes speaking a word.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached>. Raised each time spoken output requires a change in the position of the mouth or the facial muscles used to produce speech.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached>. Raised when the synthesizer encounters a bookmark in a prompt.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange>. Raised when the speaking voice for the synthesizer changes.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted>. Raised when the synthesizer finishes processing a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> operation.  
+ 
+If your application dos not need to perform tasks while speaking, you can use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method to generate speech synchronously.  
+ 
   
- If your application dos not need to perform tasks while speaking, you can use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method to generate speech synchronously.  
-  
-   
-  
+ 
 ## Examples  
-  
+ 
 ```  
 using System;  
 using System.Speech.Synthesis;  
@@ -1979,7 +1979,7 @@ namespace SampleSynthesis
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2000,12 +2000,12 @@ namespace SampleSynthesis
         <summary>Raised when the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> begins the speaking of a prompt.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises this event when it begins processing a prompt using any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> methods.  
-  
- The <xref:System.Speech.Synthesis.SpeakStartedEventArgs> class has no properties, and does not return data from the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted> event. It is provided to enable application authors to write event handlers for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted> event.  
-  
+The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises this event when it begins processing a prompt using any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> methods.  
+ 
+The <xref:System.Speech.Synthesis.SpeakStartedEventArgs> class has no properties, and does not return data from the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted> event. It is provided to enable application authors to write event handlers for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2027,15 +2027,15 @@ namespace SampleSynthesis
         <value>Returns the current speaking state of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get the new state of the <xref:System.Speech.Synthesis.SpeechSynthesizer> after it changes, use the <xref:System.Speech.Synthesis.StateChangedEventArgs.State%2A> property of the <xref:System.Speech.Synthesis.StateChangedEventArgs> class.  
+To get the new state of the <xref:System.Speech.Synthesis.SpeechSynthesizer> after it changes, use the <xref:System.Speech.Synthesis.StateChangedEventArgs.State%2A> property of the <xref:System.Speech.Synthesis.StateChangedEventArgs> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates the state of the <xref:System.Speech.Synthesis.SpeechSynthesizer> before, during, and after speaking a prompt.  
-  
+The following example illustrates the state of the <xref:System.Speech.Synthesis.SpeechSynthesizer> before, during, and after speaking a prompt.  
+ 
 ```csharp  
 using System;  
 using System.Threading;  
@@ -2084,7 +2084,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2105,12 +2105,12 @@ namespace SampleSynthesis
         <summary>Raised when the state of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises this event when its speaking <xref:System.Speech.Synthesis.SpeechSynthesizer.State%2A> changes. For an example and more information about data associated with the event, see <xref:System.Speech.Synthesis.StateChangedEventArgs>.  
-  
- To pause and resume speech synthesis, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Pause%2A> and <xref:System.Speech.Synthesis.SpeechSynthesizer.Resume%2A> methods.  
-  
+The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises this event when its speaking <xref:System.Speech.Synthesis.SpeechSynthesizer.State%2A> changes. For an example and more information about data associated with the event, see <xref:System.Speech.Synthesis.StateChangedEventArgs>.  
+ 
+To pause and resume speech synthesis, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Pause%2A> and <xref:System.Speech.Synthesis.SpeechSynthesizer.Resume%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2131,14 +2131,14 @@ namespace SampleSynthesis
         <summary>Raised when a viseme is reached.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A viseme is the basic position of the mouth and face when pronouncing a phoneme. Visemes are visual representations of phonemes.  
-  
- System.Speech supports 21 visemes for US English, each of which corresponds to one or more phonemes.  <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> events are raised when a new phoneme reached has a different corresponding viseme than the previous phoneme reached. Since some visemes represent more than one phoneme, a <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> event is not generated if the next phoneme reached corresponds to the same viseme as the previous phoneme. For example, for the spoken words “this zone”, a <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> event is raised for the “s” in “this” and the “z” in “zone”. However, a <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> event is not raised for the “z” in “zone” because it corresponds to the same viseme as the “s” in “this”.  
-  
- The following is a list of the 21 SAPI phonemes and phoneme groups that correspond to a viseme in US English.  
-  
+A viseme is the basic position of the mouth and face when pronouncing a phoneme. Visemes are visual representations of phonemes.  
+ 
+System.Speech supports 21 visemes for US English, each of which corresponds to one or more phonemes.  <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> events are raised when a new phoneme reached has a different corresponding viseme than the previous phoneme reached. Since some visemes represent more than one phoneme, a <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> event is not generated if the next phoneme reached corresponds to the same viseme as the previous phoneme. For example, for the spoken words “this zone”, a <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> event is raised for the “s” in “this” and the “z” in “zone”. However, a <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> event is not raised for the “z” in “zone” because it corresponds to the same viseme as the “s” in “this”.  
+ 
+The following is a list of the 21 SAPI phonemes and phoneme groups that correspond to a viseme in US English.  
+ 
 |Viseme|Phoneme(s)|  
 |------------|------------------|  
 |0|silence|  
@@ -2163,9 +2163,9 @@ namespace SampleSynthesis
 |19|d, t, n|  
 |20|k, g, ng|  
 |21|p, b, m|  
-  
- For information about data associated with the `VisemeReached` event, see <xref:System.Speech.Synthesis.VisemeReachedEventArgs>.  
-  
+ 
+For information about data associated with the `VisemeReached` event, see <xref:System.Speech.Synthesis.VisemeReachedEventArgs>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2187,15 +2187,15 @@ namespace SampleSynthesis
         <value>Returns information about the current voice of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you initialize a new <xref:System.Speech.Synthesis.SpeechSynthesizer>, it uses the default system voice. To configure the <xref:System.Speech.Synthesis.SpeechSynthesizer> object to use one of the installed speech synthesis voices, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> or <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> method. To get information about which voices are installed, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and the <xref:System.Speech.Synthesis.VoiceInfo> class.  
+When you initialize a new <xref:System.Speech.Synthesis.SpeechSynthesizer>, it uses the default system voice. To configure the <xref:System.Speech.Synthesis.SpeechSynthesizer> object to use one of the installed speech synthesis voices, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> or <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> method. To get information about which voices are installed, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and the <xref:System.Speech.Synthesis.VoiceInfo> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example initializes an instance of <xref:System.Speech.Synthesis.SpeechSynthesizer>and gets information about the current voice.  
-  
+The following example initializes an instance of <xref:System.Speech.Synthesis.SpeechSynthesizer>and gets information about the current voice.  
+ 
 ```csharp  
 using System;  
 using System.IO;  
@@ -2257,7 +2257,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2278,12 +2278,12 @@ namespace SampleSynthesis
         <summary>Raised when the voice of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an example and information about data associated with the event, see <xref:System.Speech.Synthesis.VoiceChangeEventArgs>.  
-  
- You can change the voice that the <xref:System.Speech.Synthesis.SpeechSynthesizer> uses with any of the <xref:System.Speech.Synthesis.PromptBuilder>'s <xref:System.Speech.Synthesis.PromptBuilder.StartVoice%2A> methods or the <xref:System.Speech.Synthesis.SpeechSynthesizer>'s <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> or <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods.  
-  
+For an example and information about data associated with the event, see <xref:System.Speech.Synthesis.VoiceChangeEventArgs>.  
+ 
+You can change the voice that the <xref:System.Speech.Synthesis.SpeechSynthesizer> uses with any of the <xref:System.Speech.Synthesis.PromptBuilder>'s <xref:System.Speech.Synthesis.PromptBuilder.StartVoice%2A> methods or the <xref:System.Speech.Synthesis.SpeechSynthesizer>'s <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> or <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2305,10 +2305,10 @@ namespace SampleSynthesis
         <value>Returns the volume of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" />, from 0 through 100.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example sets the volume of the <xref:System.Speech.Synthesis.SpeechSynthesizer>'s audio output for the synthesized voice and the WAV file.  
-  
+The following example sets the volume of the <xref:System.Speech.Synthesis.SpeechSynthesizer>'s audio output for the synthesized voice and the WAV file.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -2348,7 +2348,7 @@ namespace SampleSynthesis
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2362,28 +2362,28 @@ namespace SampleSynthesis
         <summary>Generates speech output synchronously from a string, a <see cref="T:System.Speech.Synthesis.Prompt" /> object, or a <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> methods generate speech synchronously. The methods do not return until the content of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> instance has been completely spoken. This is the simplest way to generate speech. However, if your application needs to perform tasks while speaking, for example highlight text, paint animation, monitor controls, or other tasks, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> methods or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method to generate speech asynchronously.  
-  
- During a call to this method, the <xref:System.Speech.Synthesis.SpeechSynthesizer> can raise the following events:  
-  
+The <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> methods generate speech synchronously. The methods do not return until the content of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> instance has been completely spoken. This is the simplest way to generate speech. However, if your application needs to perform tasks while speaking, for example highlight text, paint animation, monitor controls, or other tasks, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> methods or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method to generate speech asynchronously.  
+ 
+During a call to this method, the <xref:System.Speech.Synthesis.SpeechSynthesizer> can raise the following events:  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.StateChanged>. Raised when the speaking state of the synthesizer changes.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted>. Raised when the synthesizer begins generating speech.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached>. Raised each time the synthesizer reaches a letter or combination of letters that constitute a discreet sound of speech in a language.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress>. Raised each time the synthesizer completes speaking a word.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached>. Raised each time spoken output requires a change in the position of the mouth or the facial muscles used to produce speech.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached>. Raised when the synthesizer encounters a bookmark in a prompt.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange>. Raised when the speaking voice for the synthesizer changes.  
-  
- The <xref:System.Speech.Synthesis.SpeechSynthesizer>does not raise the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event while processing any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> methods.  
-  
+ 
+The <xref:System.Speech.Synthesis.SpeechSynthesizer>does not raise the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event while processing any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2397,10 +2397,10 @@ namespace SampleSynthesis
         <summary>Returns the collection of speech synthesis (text-to-speech) voices that are currently installed on the system.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices (engines for text-to-speech) it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
-  
+When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices (engines for text-to-speech) it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2414,30 +2414,30 @@ namespace SampleSynthesis
         <summary>Generates speech output asynchronously from a string, a <see cref="T:System.Speech.Synthesis.Prompt" /> object, or a <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> methods generate speech asynchronously. The methods return immediately without waiting for the content of the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> object to finish speaking. Use <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> if your application needs to perform tasks while speaking, for example highlight text, paint animation, monitor controls, or other tasks.  
-  
- During a call to this method, the <xref:System.Speech.Synthesis.SpeechSynthesizer> can raise the following events:  
-  
+The <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> methods generate speech asynchronously. The methods return immediately without waiting for the content of the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> object to finish speaking. Use <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> if your application needs to perform tasks while speaking, for example highlight text, paint animation, monitor controls, or other tasks.  
+ 
+During a call to this method, the <xref:System.Speech.Synthesis.SpeechSynthesizer> can raise the following events:  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.StateChanged>. Raised when the speaking state of the synthesizer changes.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted>. Raised when the synthesizer begins generating speech.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached>. Raised each time the synthesizer reaches a letter or combination of letters that constitute a discreet sound of speech in a language.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress>. Raised each time the synthesizer completes speaking a word.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached>. Raised each time spoken output requires a change in the position of the mouth or the facial muscles used to produce speech.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached>. Raised when the synthesizer encounters a bookmark in a prompt.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange>. Raised when the speaking voice for the synthesizer changes.  
-  
+ 
 -   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted>. Raised when the synthesizer finishes a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> operation.  
-  
- If your application does not need to perform tasks while speaking, you can use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> methods or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method to generate speech synchronously.  
-  
+ 
+If your application does not need to perform tasks while speaking, you can use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> methods or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method to generate speech synchronously.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2451,12 +2451,12 @@ namespace SampleSynthesis
         <summary>Configures the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object to append output to a Waveform audio format file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To release the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s  reference to the file, reconfigure the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s output, for example, by calling <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>.  
-  
- For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> methods.  
-  
+To release the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s  reference to the file, reconfigure the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s output, for example, by calling <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>.  
+ 
+For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2470,14 +2470,14 @@ namespace SampleSynthesis
         <summary>Selects a voice with specific characteristics.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice that matches the specified characteristics.  
-  
- When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
-  
- To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method  
-  
+Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice that matches the specified characteristics.  
+ 
+When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+ 
+To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method  
+ 
  ]]></format>
         </remarks>
       </Docs>

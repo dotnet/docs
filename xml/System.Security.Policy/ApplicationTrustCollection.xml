@@ -24,10 +24,10 @@
     <summary>Represents a collection of <see cref="T:System.Security.Policy.ApplicationTrust" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Policy.ApplicationTrust> objects encapsulate security decisions about an application.  
-  
+<xref:System.Security.Policy.ApplicationTrust> objects encapsulate security decisions about an application.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -55,10 +55,10 @@
         <returns>The index at which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Policy.ApplicationTrust> object is added to the end of the collection.  To remove an application trust that you previously added, use the <xref:System.Security.Policy.ApplicationTrustCollection.Remove%2A> method.  
-  
+The <xref:System.Security.Policy.ApplicationTrust> object is added to the end of the collection.  To remove an application trust that you previously added, use the <xref:System.Security.Policy.ApplicationTrustCollection.Remove%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -87,12 +87,12 @@
         <summary>Copies the elements of the specified <see cref="T:System.Security.Policy.ApplicationTrust" /> array to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Policy.ApplicationTrust> objects contained in the `trusts` array are appended to the end of the collection.  
-  
- To remove a range of application trusts that you previously added, use the <xref:System.Security.Policy.ApplicationTrustCollection.RemoveRange%2A> method.  
-  
+The <xref:System.Security.Policy.ApplicationTrust> objects contained in the `trusts` array are appended to the end of the collection.  
+ 
+To remove a range of application trusts that you previously added, use the <xref:System.Security.Policy.ApplicationTrustCollection.RemoveRange%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -121,14 +121,14 @@
         <summary>Copies the elements of the specified <see cref="T:System.Security.Policy.ApplicationTrustCollection" /> to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Policy.ApplicationTrust> objects contained in `trusts` are appended to the end of the collection.  
-  
- You can use the <xref:System.Security.Policy.ApplicationTrustCollection.AddRange%2A> method to quickly add another collection of application trust objects to the collection instead of manually adding each application trust to the collection using the <xref:System.Security.Policy.ApplicationTrustCollection.Add%2A> method.  
-  
- To remove a range of application trusts that you previously added, use the <xref:System.Security.Policy.ApplicationTrustCollection.RemoveRange%2A> method.  
-  
+The <xref:System.Security.Policy.ApplicationTrust> objects contained in `trusts` are appended to the end of the collection.  
+ 
+You can use the <xref:System.Security.Policy.ApplicationTrustCollection.AddRange%2A> method to quickly add another collection of application trust objects to the collection instead of manually adding each application trust to the collection using the <xref:System.Security.Policy.ApplicationTrustCollection.Add%2A> method.  
+ 
+To remove a range of application trusts that you previously added, use the <xref:System.Security.Policy.ApplicationTrustCollection.RemoveRange%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -154,10 +154,10 @@
         <summary>Removes all the application trusts from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each <xref:System.Security.Policy.ApplicationTrust> in the collection is identified by its <xref:System.Security.Policy.ApplicationTrust.ApplicationIdentity%2A> property. If the value of the <xref:System.Security.Policy.ApplicationTrust.ApplicationIdentity%2A> property for any <xref:System.Security.Policy.ApplicationTrust> object in the collection is `null`, an <xref:System.ArgumentException> is thrown.  
-  
+Each <xref:System.Security.Policy.ApplicationTrust> in the collection is identified by its <xref:System.Security.Policy.ApplicationTrust.ApplicationIdentity%2A> property. If the value of the <xref:System.Security.Policy.ApplicationTrust.ApplicationIdentity%2A> property for any <xref:System.Security.Policy.ApplicationTrust> object in the collection is `null`, an <xref:System.ArgumentException> is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Policy.ApplicationTrust.ApplicationIdentity" /> property of an item in the collection is <see langword="null" />.</exception>
@@ -186,12 +186,12 @@
         <summary>Copies the entire collection to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!CAUTION]
 >  All the application trusts in the collection are copied into the array starting at the specified index location, overwriting any existing data within the range of objects copied into the array.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -249,10 +249,10 @@
         <returns>An <see cref="T:System.Security.Policy.ApplicationTrustCollection" /> containing all matching <see cref="T:System.Security.Policy.ApplicationTrust" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The application trust is optionally selected by an exact version match, based on the value of the `versionMatch` parameter.  
-  
+The application trust is optionally selected by an exact version match, based on the value of the `versionMatch` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -276,19 +276,19 @@
         <returns>An <see cref="T:System.Security.Policy.ApplicationTrustEnumerator" /> that can be used to iterate over the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Policy.ApplicationTrustEnumerator> implements the <xref:System.Collections.IEnumerator?displayProperty=fullName> interface that allows you to move within a collection.  
-  
- Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property to get the item currently pointed to in the collection.  
-  
- Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection.  
-  
- Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to its initial position.  
-  
+The <xref:System.Security.Policy.ApplicationTrustEnumerator> implements the <xref:System.Collections.IEnumerator?displayProperty=fullName> interface that allows you to move within a collection.  
+ 
+Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property to get the item currently pointed to in the collection.  
+ 
+Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection.  
+ 
+Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to its initial position.  
+ 
 > [!NOTE]
 >  After you create the enumerator, or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to reposition the enumerator to the start of the collection, you must then call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to position the enumerator to the first item. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -335,10 +335,10 @@
         <value>The <see cref="T:System.Security.Policy.ApplicationTrust" /> object at the specified index in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to get a <xref:System.Security.Policy.ApplicationTrust> object from the <xref:System.Security.Policy.ApplicationTrustCollection> at the specified index.  
-  
+Use this method to get a <xref:System.Security.Policy.ApplicationTrust> object from the <xref:System.Security.Policy.ApplicationTrustCollection> at the specified index.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -369,10 +369,10 @@
         <value>The <see cref="T:System.Security.Policy.ApplicationTrust" /> object for the specified application, or <see langword="null" /> if the object cannot be found.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Policy.ApplicationTrust.ApplicationIdentity%2A> property of each <xref:System.Security.Policy.ApplicationTrust> object in the collection is examined for a <xref:System.ApplicationIdentity.FullName%2A> property value that matches the application specified by the `appFullName` parameter.  
-  
+The <xref:System.Security.Policy.ApplicationTrust.ApplicationIdentity%2A> property of each <xref:System.Security.Policy.ApplicationTrust> object in the collection is examined for a <xref:System.ApplicationIdentity.FullName%2A> property value that matches the application specified by the `appFullName` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,12 +398,12 @@
         <summary>Removes the specified application trust from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The entire collection is searched, and all instances of the specified application trust are removed.  
-  
- The objects that follow the removed objects move up to occupy the vacated positions. The indexes of the objects that are moved are also updated.  
-  
+The entire collection is searched, and all instances of the specified application trust are removed.  
+ 
+The objects that follow the removed objects move up to occupy the vacated positions. The indexes of the objects that are moved are also updated.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -434,12 +434,12 @@
         <summary>Removes all application trust objects that match the specified criteria from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The application trust can be identified by an exact version match, dependent upon the value of the `versionMatch` parameter. The <xref:System.Security.Policy.ApplicationTrustCollection.Find%2A> method is used to locate all matching application trusts, and the matching items are removed from the collection.  
-  
- The objects that follow the removed objects move up to occupy the vacated positions. The indexes of the objects that are moved are also updated.  
-  
+The application trust can be identified by an exact version match, dependent upon the value of the `versionMatch` parameter. The <xref:System.Security.Policy.ApplicationTrustCollection.Find%2A> method is used to locate all matching application trusts, and the matching items are removed from the collection.  
+ 
+The objects that follow the removed objects move up to occupy the vacated positions. The indexes of the objects that are moved are also updated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -465,10 +465,10 @@
         <summary>Removes the application trust objects in the specified array from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The objects that follow the removed objects move up to occupy the vacated positions. The indexes of the objects that are moved are also updated.  
-  
+The objects that follow the removed objects move up to occupy the vacated positions. The indexes of the objects that are moved are also updated.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -496,10 +496,10 @@
         <summary>Removes the application trust objects in the specified collection from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The objects that follow the removed objects move up to occupy the vacated positions. The indexes of the objects that are moved are also updated.  
-  
+The objects that follow the removed objects move up to occupy the vacated positions. The indexes of the objects that are moved are also updated.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -524,10 +524,10 @@
         <value>The object to use to synchronize access to the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation returns the current application trust object.  
-  
+The default implementation returns the current application trust object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

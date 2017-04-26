@@ -14,10 +14,10 @@
     <summary>Provides data for input related events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Input.InputEventArgs> is the base class for [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] input event argument classes.  
-  
+<xref:System.Windows.Input.InputEventArgs> is the base class for [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] input event argument classes.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,12 +59,12 @@
         <value>The input device associated with this event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- <xref:System.Windows.Input.KeyboardDevice>  
-  
- <xref:System.Windows.Input.MouseDevice>  
-  
+<xref:System.Windows.Input.KeyboardDevice>  
+ 
+<xref:System.Windows.Input.MouseDevice>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,10 +91,10 @@
         <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation casts the generic handler as an <xref:System.Windows.Input.InputEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
-  
+This implementation casts the generic handler as an <xref:System.Windows.Input.InputEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

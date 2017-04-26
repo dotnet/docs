@@ -32,10 +32,10 @@
         <value>Returns a recursive depth-first enumerator over all child elements.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Recursion is possible because project element containers may contain children that are themselves project element containers.  
-  
+Recursion is possible because project element containers may contain children that are themselves project element containers.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -60,10 +60,10 @@
         <summary>Appends the <paramref name="child" /> element as the last child of this project container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws an exception if this project container is not parented, or if the `child` element is already parented, or if the `child` element was created by a different <xref:Microsoft.Build.Construction.ProjectRootElement>.  
-  
+Throws an exception if this project container is not parented, or if the `child` element is already parented, or if the `child` element was created by a different <xref:Microsoft.Build.Construction.ProjectRootElement>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,10 +162,10 @@
         <value>Returns the first child element. Returns null if no child element exists.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:Microsoft.Build.Construction.ProjectElementContainer.PrependChild%2A> to initialize this property.  
-  
+Use <xref:Microsoft.Build.Construction.ProjectElementContainer.PrependChild%2A> to initialize this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,12 +192,12 @@
         <summary>Inserts the <paramref name="child" /> element after the <paramref name="reference" /> element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `reference` element is null, this method is equivalent to <xref:Microsoft.Build.Construction.ProjectElementContainer.PrependChild%2A>.  
-  
- Throws an exception if this project container is not parented, or if the `child` element is already parented, or if the `child` element was created by a different <xref:Microsoft.Build.Construction.ProjectRootElement>, or if the `reference` element is not a child of this project container.  
-  
+If the `reference` element is null, this method is equivalent to <xref:Microsoft.Build.Construction.ProjectElementContainer.PrependChild%2A>.  
+ 
+Throws an exception if this project container is not parented, or if the `child` element is already parented, or if the `child` element was created by a different <xref:Microsoft.Build.Construction.ProjectRootElement>, or if the `reference` element is not a child of this project container.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,12 +224,12 @@
         <summary>Inserts the <paramref name="child" /> element before the <paramref name="reference" /> element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `reference` element is null, this method is equivalent to <xref:Microsoft.Build.Construction.ProjectElementContainer.AppendChild%2A>.  
-  
- Throws an exception if this project container is not parented, or if the `child` element is already parented, or if the `child` element was created by a different <xref:Microsoft.Build.Construction.ProjectRootElement>, or if the `reference` element is not a child of this project container.  
-  
+If the `reference` element is null, this method is equivalent to <xref:Microsoft.Build.Construction.ProjectElementContainer.AppendChild%2A>.  
+ 
+Throws an exception if this project container is not parented, or if the `child` element is already parented, or if the `child` element was created by a different <xref:Microsoft.Build.Construction.ProjectRootElement>, or if the `reference` element is not a child of this project container.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -259,10 +259,10 @@
         <value>Returns the last child element. Returns null if no child element exists.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:Microsoft.Build.Construction.ProjectElementContainer.AppendChild%2A> to initialize this property.  
-  
+Use <xref:Microsoft.Build.Construction.ProjectElementContainer.AppendChild%2A> to initialize this property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,10 +287,10 @@
         <summary>Prepends the <paramref name="child" /> element as the first child of this project container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws an exception if this project container is not parented, or if the `child` element is already parented, or if the `child` element was created by a different <xref:Microsoft.Build.Construction.ProjectRootElement>.  
-  
+Throws an exception if this project container is not parented, or if the `child` element is already parented, or if the `child` element was created by a different <xref:Microsoft.Build.Construction.ProjectRootElement>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,10 +312,10 @@
         <summary>Removes all the children, if any, from this project container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is safe to modify the children in this way during enumeration.  
-  
+It is safe to modify the children in this way during enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -340,10 +340,10 @@
         <summary>Removes a <paramref name="child" /> element from this project container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws an exception if the child element is not currently parented by this project container. It is safe to remove a child this way during enumeration.  
-  
+Throws an exception if the child element is not currently parented by this project container. It is safe to remove a child this way during enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -49,10 +49,10 @@
         <value>Additional metadata to attach to the output items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specify the metadata name and value for the item with the following syntax: *MetadataName*`=`*MetadataValue*. Multiple metadata name/value pairs should be separated with a semicolon. If either the name or the value contains a semicolon or any other special characters, they must be escaped. For more information, see [How to: Escape Special Characters in MSBuild](http://msdn.microsoft.com/library/1aa3669c-1647-4960-b770-752e2532102f).  
-  
+Specify the metadata name and value for the item with the following syntax: *MetadataName*`=`*MetadataValue*. Multiple metadata name/value pairs should be separated with a semicolon. If either the name or the value contains a semicolon or any other special characters, they must be escaped. For more information, see [How to: Escape Special Characters in MSBuild](http://msdn.microsoft.com/library/1aa3669c-1647-4960-b770-752e2532102f).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -75,10 +75,10 @@
         <value>The items to exclude from the output item collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can contain wildcard specifications. For more information, see [MSBuild Items](http://msdn.microsoft.com/library/d762eff4-c92a-4b5f-a944-1ca30aa22319) and [How to: Exclude Files from the Build](http://msdn.microsoft.com/library/1be36e45-01da-451c-972d-f9fc0e7d663c).  
-  
+This property can contain wildcard specifications. For more information, see [MSBuild Items](http://msdn.microsoft.com/library/d762eff4-c92a-4b5f-a944-1ca30aa22319) and [How to: Exclude Files from the Build](http://msdn.microsoft.com/library/1be36e45-01da-451c-972d-f9fc0e7d663c).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -127,10 +127,10 @@
         <value>The items to include in the output item collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can contain wildcard specifications.  
-  
+This property can contain wildcard specifications.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

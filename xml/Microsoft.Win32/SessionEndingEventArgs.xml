@@ -14,12 +14,12 @@
     <summary>Provides data for the <see cref="E:Microsoft.Win32.SystemEvents.SessionEnding" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:Microsoft.Win32.SystemEvents.SessionEnding> event is raised when the user is trying to log off or shut the system down.  
-  
- This <xref:Microsoft.Win32.SystemEvents.SessionEnding> event can sometimes be canceled. Setting the <xref:Microsoft.Win32.SessionEndingEventArgs.Cancel%2A> property of a <xref:Microsoft.Win32.SessionEndingEventArgs> to `false` will request that the session continue instead of ending. Making such a request provides no guarantee that the session will not end.  
-  
+A <xref:Microsoft.Win32.SystemEvents.SessionEnding> event is raised when the user is trying to log off or shut the system down.  
+ 
+This <xref:Microsoft.Win32.SystemEvents.SessionEnding> event can sometimes be canceled. Setting the <xref:Microsoft.Win32.SessionEndingEventArgs.Cancel%2A> property of a <xref:Microsoft.Win32.SessionEndingEventArgs> to `false` will request that the session continue instead of ending. Making such a request provides no guarantee that the session will not end.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
           <see langword="true" /> to cancel the user request to end the session; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When set to `true`, this property requests that the session continue to run. It provides no guarantee that the session will not end.  
-  
+When set to `true`, this property requests that the session continue to run. It provides no guarantee that the session will not end.  
+ 
  ]]></format>
         </remarks>
       </Docs>

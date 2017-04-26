@@ -15,19 +15,19 @@
     <summary>Represents a text pattern for which the HTTP transmission is searched. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the properties and methods exposed by the `MimeTextMatch` class.  
-  
- [!code-cpp[MimeText_Binding_Match_8#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#1)]
- [!code-csharp[MimeText_Binding_Match_8#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#1)]
- [!code-vb[MimeText_Binding_Match_8#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#1)]  
-  
+The following example demonstrates the use of the properties and methods exposed by the `MimeTextMatch` class.  
+ 
+[!code-cpp[MimeText_Binding_Match_8#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#1)]
+[!code-csharp[MimeText_Binding_Match_8#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#1)]
+[!code-vb[MimeText_Binding_Match_8#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,17 +74,17 @@
         <value>A 32-bit signed integer. The default value is 0, indicating that the <see cref="T:System.Web.Services.Description.MimeTextMatch" /> is the first instance within a group.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the <xref:System.Web.Services.Description.MimeTextMatch.Group%2A> and <xref:System.Web.Services.Description.MimeTextMatch.Matches%2A> properties.  
+For more information, see the <xref:System.Web.Services.Description.MimeTextMatch.Group%2A> and <xref:System.Web.Services.Description.MimeTextMatch.Matches%2A> properties.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[MimeTextMatch_5#2](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeTextMatch_5/CPP/mimetextmatch_5.cpp#2)]
- [!code-csharp[MimeTextMatch_5#2](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeTextMatch_5/CS/mimetextmatch_5.cs#2)]
- [!code-vb[MimeTextMatch_5#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeTextMatch_5/VB/mimetextmatch_5.vb#2)]  
-  
+[!code-cpp[MimeTextMatch_5#2](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeTextMatch_5/CPP/mimetextmatch_5.cpp#2)]
+[!code-csharp[MimeTextMatch_5#2](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeTextMatch_5/CS/mimetextmatch_5.cs#2)]
+[!code-vb[MimeTextMatch_5#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeTextMatch_5/VB/mimetextmatch_5.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property value is negative.</exception>
@@ -116,17 +116,17 @@
         <value>A 32-bit signed integer. The default value is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property must be less than or equal to the value of the <xref:System.Web.Services.Description.MimeTextMatch.Repeats%2A> property, or the XML Web service will not compile correctly.  
+The value of this property must be less than or equal to the value of the <xref:System.Web.Services.Description.MimeTextMatch.Repeats%2A> property, or the XML Web service will not compile correctly.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[MimeTextMatch_5#3](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeTextMatch_5/CPP/mimetextmatch_5.cpp#3)]
- [!code-csharp[MimeTextMatch_5#3](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeTextMatch_5/CS/mimetextmatch_5.cs#3)]
- [!code-vb[MimeTextMatch_5#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeTextMatch_5/VB/mimetextmatch_5.vb#3)]  
-  
+[!code-cpp[MimeTextMatch_5#3](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeTextMatch_5/CPP/mimetextmatch_5.cpp#3)]
+[!code-csharp[MimeTextMatch_5#3](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeTextMatch_5/CS/mimetextmatch_5.cs#3)]
+[!code-vb[MimeTextMatch_5#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeTextMatch_5/VB/mimetextmatch_5.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property value is negative.</exception>
@@ -156,12 +156,12 @@
           <see langword="true" /> if the search should disregard case; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[MimeText_Binding_Match_8#7](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#7)]
- [!code-csharp[MimeText_Binding_Match_8#7](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#7)]
- [!code-vb[MimeText_Binding_Match_8#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#7)]  
-  
+[!code-cpp[MimeText_Binding_Match_8#7](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#7)]
+[!code-csharp[MimeText_Binding_Match_8#7](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#7)]
+[!code-vb[MimeText_Binding_Match_8#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,12 +189,12 @@
         <value>A <see cref="T:System.Web.Services.Description.MimeTextMatchCollection" /> representing the members of the <see cref="P:System.Web.Services.Description.MimeTextMatch.Group" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[MimeText_Binding_Match_8#8](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#8)]
- [!code-csharp[MimeText_Binding_Match_8#8](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#8)]
- [!code-vb[MimeText_Binding_Match_8#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#8)]  
-  
+[!code-cpp[MimeText_Binding_Match_8#8](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#8)]
+[!code-csharp[MimeText_Binding_Match_8#8](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#8)]
+[!code-vb[MimeText_Binding_Match_8#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,12 +222,12 @@
         <value>The name of the <see cref="T:System.Web.Services.Description.MimeTextMatch" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[MimeText_Binding_Match_8#4](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#4)]
- [!code-csharp[MimeText_Binding_Match_8#4](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#4)]
- [!code-vb[MimeText_Binding_Match_8#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#4)]  
-  
+[!code-cpp[MimeText_Binding_Match_8#4](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#4)]
+[!code-csharp[MimeText_Binding_Match_8#4](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#4)]
+[!code-vb[MimeText_Binding_Match_8#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,17 +255,17 @@
         <value>A string representing the text for which to search the HTTP transmission. The default value is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property can contain wildcard characters.  
+The value of this property can contain wildcard characters.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[MimeText_Binding_Match_8#6](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#6)]
- [!code-csharp[MimeText_Binding_Match_8#6](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#6)]
- [!code-vb[MimeText_Binding_Match_8#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#6)]  
-  
+[!code-cpp[MimeText_Binding_Match_8#6](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CPP/mimetext_binding_match_8.cpp#6)]
+[!code-csharp[MimeText_Binding_Match_8#6](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeText_Binding_Match_8/CS/mimetext_binding_match_8.cs#6)]
+[!code-vb[MimeText_Binding_Match_8#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeText_Binding_Match_8/VB/mimetext_binding_match_8.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -293,19 +293,19 @@
         <value>A 32-bit signed integer. The default value is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a case where more than one match is possible, a property value of 1 will return only the first match found. A value of <xref:System.Int32> will return all matches.  
+In a case where more than one match is possible, a property value of 1 will return only the first match found. A value of <xref:System.Int32> will return all matches.  
+ 
+This property returns the same information as the <xref:System.Web.Services.Description.MimeTextMatch.RepeatsString%2A> property, but as a 32-bit signed integer rather than as a string.  
+ 
   
- This property returns the same information as the <xref:System.Web.Services.Description.MimeTextMatch.RepeatsString%2A> property, but as a 32-bit signed integer rather than as a string.  
-  
-   
-  
+ 
 ## Examples  
- [!code-cpp[MimeTextMatch_5#4](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeTextMatch_5/CPP/mimetextmatch_5.cpp#4)]
- [!code-csharp[MimeTextMatch_5#4](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeTextMatch_5/CS/mimetextmatch_5.cs#4)]
- [!code-vb[MimeTextMatch_5#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeTextMatch_5/VB/mimetextmatch_5.vb#4)]  
-  
+[!code-cpp[MimeTextMatch_5#4](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeTextMatch_5/CPP/mimetextmatch_5.cpp#4)]
+[!code-csharp[MimeTextMatch_5#4](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeTextMatch_5/CS/mimetextmatch_5.cs#4)]
+[!code-vb[MimeTextMatch_5#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeTextMatch_5/VB/mimetextmatch_5.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property value is negative.</exception>
@@ -337,17 +337,17 @@
         <value>A string indicating the number of times the search is to be performed. The default value is "1".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the same information as the <xref:System.Web.Services.Description.MimeTextMatch.Repeats%2A> property, but as a string rather than as a 32-bit signed integer. A value of "*" corresponds to <xref:System.Int32.MaxValue>.  
+This property returns the same information as the <xref:System.Web.Services.Description.MimeTextMatch.Repeats%2A> property, but as a string rather than as a 32-bit signed integer. A value of "*" corresponds to <xref:System.Int32.MaxValue>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[MimeTextMatch_5#5](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeTextMatch_5/CPP/mimetextmatch_5.cpp#5)]
- [!code-csharp[MimeTextMatch_5#5](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeTextMatch_5/CS/mimetextmatch_5.cs#5)]
- [!code-vb[MimeTextMatch_5#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeTextMatch_5/VB/mimetextmatch_5.vb#5)]  
-  
+[!code-cpp[MimeTextMatch_5#5](~/samples/snippets/cpp/VS_Snippets_Remoting/MimeTextMatch_5/CPP/mimetextmatch_5.cpp#5)]
+[!code-csharp[MimeTextMatch_5#5](~/samples/snippets/csharp/VS_Snippets_Remoting/MimeTextMatch_5/CS/mimetextmatch_5.cs#5)]
+[!code-vb[MimeTextMatch_5#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimeTextMatch_5/VB/mimetextmatch_5.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -375,15 +375,15 @@
         <value>A string indicating the MIME format of the text to be searched.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns an empty string ("") if its value has not been set.  
+This property returns an empty string ("") if its value has not been set.  
+ 
   
-   
-  
+ 
 ## Examples  
- MimeText_Binding_Match_8#5  
-  
+MimeText_Binding_Match_8#5  
+ 
  ]]></format>
         </remarks>
       </Docs>

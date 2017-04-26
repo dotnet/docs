@@ -32,18 +32,18 @@
         <value>The <see cref="T:System.Windows.Automation.ToggleState" /> of the <see cref="T:System.Windows.Automation.AutomationElement" />. The default value is <see cref="F:System.Windows.Automation.ToggleState.Indeterminate" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> must cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState> and, if supported, <xref:System.Windows.Automation.ToggleState>.  
+An <xref:System.Windows.Automation.AutomationElement> must cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState> and, if supported, <xref:System.Windows.Automation.ToggleState>.  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, a root element is passed to a function that returns a collection of automation elements that are descendants of the root and satisfy a set of property conditions.  
-  
- [!code-csharp[UIATogglePattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATogglePattern_snip/CSharp/UIATogglePattern_snippets.cs#100)]
- [!code-vb[UIATogglePattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATogglePattern_snip/VisualBasic/UIATogglePattern_snippets.vb#100)]  
-  
+In the following example, a root element is passed to a function that returns a collection of automation elements that are descendants of the root and satisfy a set of property conditions.  
+ 
+[!code-csharp[UIATogglePattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATogglePattern_snip/CSharp/UIATogglePattern_snippets.cs#100)]
+[!code-vb[UIATogglePattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATogglePattern_snip/VisualBasic/UIATogglePattern_snippets.vb#100)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

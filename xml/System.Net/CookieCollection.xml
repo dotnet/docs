@@ -29,10 +29,10 @@
     <summary>Provides a collection container for instances of the <see cref="T:System.Net.Cookie" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.CookieCollection> class implements an <xref:System.Collections.ICollection> interface to provide a general mechanism for handling collections of cookies. For example, this is useful in the case where an application is designed to store cookies for multiple servers.  
-  
+The <xref:System.Net.CookieCollection> class implements an <xref:System.Collections.ICollection> interface to provide a general mechanism for handling collections of cookies. For example, this is useful in the case where an application is designed to store cookies for multiple servers.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,16 +62,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.CookieCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows initial property values for an instance of <xref:System.Net.CookieCollection>.  
-  
+The following table shows initial property values for an instance of <xref:System.Net.CookieCollection>.  
+ 
 |Property|Default|  
 |--------------|-------------|  
 |<xref:System.Net.CookieCollection.IsReadOnly%2A>|`true`|  
 |<xref:System.Net.CookieCollection.Count%2A>|0|  
 |<xref:System.Net.CookieCollection.IsSynchronized%2A>|`false`|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,10 +141,10 @@
         <summary>Adds the contents of a <see cref="T:System.Net.CookieCollection" /> to the current instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each <xref:System.Net.Cookie> is read from the <xref:System.Net.CookieCollection>`cookies` parameter and added to the current instance.  
-  
+Each <xref:System.Net.Cookie> is read from the <xref:System.Net.CookieCollection>`cookies` parameter and added to the current instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -178,10 +178,10 @@
         <summary>Copies the elements of a <see cref="T:System.Net.CookieCollection" /> to an instance of the <see cref="T:System.Array" /> class, starting at a particular index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Array>`array` parameter must be one-dimensional with zero-based indexing.  
-  
+The <xref:System.Array>`array` parameter must be one-dimensional with zero-based indexing.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -224,10 +224,10 @@
         <summary>Copies the elements of this <see cref="T:System.Net.CookieCollection" /> to a <see cref="T:System.Net.Cookie" /> array starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Array>`array` parameter must be one-dimensional with zero-based indexing.  
-  
+The <xref:System.Array>`array` parameter must be one-dimensional with zero-based indexing.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -301,12 +301,12 @@
         <returns>An instance of an implementation of an <see cref="T:System.Collections.IEnumerator" /> interface that can iterate through a <see cref="T:System.Net.CookieCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should use an <xref:System.Collections.IEnumerator> only to read data in the collection. Enumerators cannot be used to modify the underlying collection. The enumerator does not have exclusive access to the collection.  
-  
- When an enumerator is created, it takes a snapshot of the current state of the collection. If changes are made to the collection, such as adding, modifying, or deleting elements, this snapshot gets out of sync and the enumerator throws an <xref:System.InvalidOperationException>. Two enumerators created from the same collection at the same time can produce different snapshots of the collection.  
-  
+You should use an <xref:System.Collections.IEnumerator> only to read data in the collection. Enumerators cannot be used to modify the underlying collection. The enumerator does not have exclusive access to the collection.  
+ 
+When an enumerator is created, it takes a snapshot of the current state of the collection. If changes are made to the collection, such as adding, modifying, or deleting elements, this snapshot gets out of sync and the enumerator throws an <xref:System.InvalidOperationException>. Two enumerators created from the same collection at the same time can produce different snapshots of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,17 +385,17 @@
         <value>A <see cref="T:System.Net.Cookie" /> with a specific index from a <see cref="T:System.Net.CookieCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this to iterate over the contents of a <xref:System.Net.CookieCollection>.  
+You can use this to iterate over the contents of a <xref:System.Net.CookieCollection>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[CookieCollection_Item_2#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CookieCollection_Item_2/CPP/CookieCollection_Item_2.cpp#1)]
- [!code-csharp[CookieCollection_Item_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CookieCollection_Item_2/CS/cookiecollection_item_2.cs#1)]
- [!code-vb[CookieCollection_Item_2#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CookieCollection_Item_2/VB/cookiecollection_item_2.vb#1)]  
-  
+[!code-cpp[CookieCollection_Item_2#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CookieCollection_Item_2/CPP/CookieCollection_Item_2.cpp#1)]
+[!code-csharp[CookieCollection_Item_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CookieCollection_Item_2/CS/cookiecollection_item_2.cs#1)]
+[!code-vb[CookieCollection_Item_2#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CookieCollection_Item_2/VB/cookiecollection_item_2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -434,17 +434,17 @@
         <value>The <see cref="T:System.Net.Cookie" /> with a specific name from a <see cref="T:System.Net.CookieCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this to iterate over the contents of a <xref:System.Net.CookieCollection>.  
+You can use this to iterate over the contents of a <xref:System.Net.CookieCollection>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[CookieCollection_Item_1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CookieCollection_Item_1/CPP/CookieCollection_Item_1.cpp#1)]
- [!code-csharp[CookieCollection_Item_1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CookieCollection_Item_1/CS/cookiecollection_item_1.cs#1)]
- [!code-vb[CookieCollection_Item_1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CookieCollection_Item_1/VB/cookiecollection_item_1.vb#1)]  
-  
+[!code-cpp[CookieCollection_Item_1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CookieCollection_Item_1/CPP/CookieCollection_Item_1.cpp#1)]
+[!code-csharp[CookieCollection_Item_1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CookieCollection_Item_1/CS/cookiecollection_item_1.cs#1)]
+[!code-vb[CookieCollection_Item_1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CookieCollection_Item_1/VB/cookiecollection_item_1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -473,10 +473,10 @@
         <value>An object to synchronize access to the <see cref="T:System.Net.CookieCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.CookieCollection.SyncRoot%2A> property returns an object that can be used to synchronize access to the <xref:System.Net.CookieCollection>.  
-  
+The <xref:System.Net.CookieCollection.SyncRoot%2A> property returns an object that can be used to synchronize access to the <xref:System.Net.CookieCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

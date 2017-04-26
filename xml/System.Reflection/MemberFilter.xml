@@ -38,12 +38,12 @@
       <see langword="true" /> to include the member in the filtered list; otherwise <see langword="false" />.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Every derived class of a <xref:System.Delegate> and <xref:System.MulticastDelegate> has a constructor and an `Invoke` method. (See the code example in `Delegate`.)  
-  
- The <xref:System.Type.FindMembers%2A> method uses this delegate to filter the list of members that it returns.  
-  
+Every derived class of a <xref:System.Delegate> and <xref:System.MulticastDelegate> has a constructor and an `Invoke` method. (See the code example in `Delegate`.)  
+ 
+The <xref:System.Type.FindMembers%2A> method uses this delegate to filter the list of members that it returns.  
+ 
  ]]></format>
     </remarks>
   </Docs>

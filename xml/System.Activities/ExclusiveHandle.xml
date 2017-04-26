@@ -78,10 +78,10 @@
         <summary>Adds the specified bookmark scope handle to the <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Activities.BookmarkScopeHandle" /> objects using the specified context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this method is called after a bookmark has been created under this exclusive scope, a <xref:System.InvalidOperationException> will be thrown.  
-  
+If this method is called after a bookmark has been created under this exclusive scope, a <xref:System.InvalidOperationException> will be thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,10 +124,10 @@
         <summary>Sets the registered bookmark scope handles back to the defaults.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this method is called when there are bookmarks registered with the exclusive handle, a <xref:System.InvalidOperationException> will be thrown.  
-  
+If this method is called when there are bookmarks registered with the exclusive handle, a <xref:System.InvalidOperationException> will be thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>

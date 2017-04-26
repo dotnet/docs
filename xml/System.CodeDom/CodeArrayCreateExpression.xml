@@ -22,23 +22,23 @@
     <summary>Represents an expression that creates an array.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeArrayCreateExpression> can be used to represent a code expression that creates an array. Expressions that create an array should specify either a number of elements, or a list of expressions to use to initialize the array.  
+<xref:System.CodeDom.CodeArrayCreateExpression> can be used to represent a code expression that creates an array. Expressions that create an array should specify either a number of elements, or a list of expressions to use to initialize the array.  
+ 
+Most arrays can be initialized immediately following declaration. The <xref:System.CodeDom.CodeArrayCreateExpression.Initializers%2A> property can be set to the expression to use to initialize the array.  
+ 
+A <xref:System.CodeDom.CodeArrayCreateExpression> only directly supports creating single-dimension arrays. If a language allows arrays of arrays, it is possible to create them by nesting a <xref:System.CodeDom.CodeArrayCreateExpression> within a <xref:System.CodeDom.CodeArrayCreateExpression>. Not all languages support arrays of arrays. You can check whether an <xref:System.CodeDom.Compiler.ICodeGenerator> for a language declares support for nested arrays by calling <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> with the <xref:System.CodeDom.Compiler.GeneratorSupport> flag.  
+ 
   
- Most arrays can be initialized immediately following declaration. The <xref:System.CodeDom.CodeArrayCreateExpression.Initializers%2A> property can be set to the expression to use to initialize the array.  
-  
- A <xref:System.CodeDom.CodeArrayCreateExpression> only directly supports creating single-dimension arrays. If a language allows arrays of arrays, it is possible to create them by nesting a <xref:System.CodeDom.CodeArrayCreateExpression> within a <xref:System.CodeDom.CodeArrayCreateExpression>. Not all languages support arrays of arrays. You can check whether an <xref:System.CodeDom.Compiler.ICodeGenerator> for a language declares support for nested arrays by calling <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> with the <xref:System.CodeDom.Compiler.GeneratorSupport> flag.  
-  
-   
-  
+ 
 ## Examples  
- The following code uses a <xref:System.CodeDom.CodeArrayCreateExpression> to create an array of integers with 10 indexes.  
-  
- [!code-cpp[CodeArrayCreateExpressionSnippet#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeArrayCreateExpressionSnippet/CPP/codearraycreateexpressionsnippet.cpp#1)]
- [!code-csharp[CodeArrayCreateExpressionSnippet#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeArrayCreateExpressionSnippet/CS/codearraycreateexpressionsnippet.cs#1)]
- [!code-vb[CodeArrayCreateExpressionSnippet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeArrayCreateExpressionSnippet/VB/codearraycreateexpressionsnippet.vb#1)]  
-  
+The following code uses a <xref:System.CodeDom.CodeArrayCreateExpression> to create an array of integers with 10 indexes.  
+ 
+[!code-cpp[CodeArrayCreateExpressionSnippet#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeArrayCreateExpressionSnippet/CPP/codearraycreateexpressionsnippet.cpp#1)]
+[!code-csharp[CodeArrayCreateExpressionSnippet#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeArrayCreateExpressionSnippet/CS/codearraycreateexpressionsnippet.cs#1)]
+[!code-vb[CodeArrayCreateExpressionSnippet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeArrayCreateExpressionSnippet/VB/codearraycreateexpressionsnippet.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -327,10 +327,10 @@
         <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the size of the array.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The size of the array can be represented with a <xref:System.CodeDom.CodeExpression>.  
-  
+The size of the array can be represented with a <xref:System.CodeDom.CodeExpression>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

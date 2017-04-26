@@ -14,13 +14,13 @@
     <summary>Contains a strongly typed collection of <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection>.  
-  
- [!code-cpp[MessageQueuePermissionEntryCollection#0](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#0)]
- [!code-csharp[MessageQueuePermissionEntryCollection#0](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#0)]  
-  
+The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection>.  
+ 
+[!code-cpp[MessageQueuePermissionEntryCollection#0](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#0)]
+[!code-csharp[MessageQueuePermissionEntryCollection#0](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,13 +46,13 @@
         <returns>The zero-based index of the added <see cref="T:System.Messaging.MessageQueuePermissionEntry" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.Add%2A>.  
-  
- [!code-cpp[MessageQueuePermissionEntryCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#1)]
- [!code-csharp[MessageQueuePermissionEntryCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#1)]  
-  
+The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.Add%2A>.  
+ 
+[!code-cpp[MessageQueuePermissionEntryCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#1)]
+[!code-csharp[MessageQueuePermissionEntryCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,13 +77,13 @@
         <summary>Appends a set of specified permission entries to this collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.AddRange%28System.Messaging.MessageQueuePermissionEntry%5B%5D%29>.  
-  
- [!code-cpp[MessageQueuePermissionEntryCollection#2](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#2)]
- [!code-csharp[MessageQueuePermissionEntryCollection#2](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#2)]  
-  
+The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.AddRange%28System.Messaging.MessageQueuePermissionEntry%5B%5D%29>.  
+ 
+[!code-cpp[MessageQueuePermissionEntryCollection#2](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#2)]
+[!code-csharp[MessageQueuePermissionEntryCollection#2](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,13 +108,13 @@
         <summary>Appends a set of specified permission entries to this collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.AddRange%28System.Messaging.MessageQueuePermissionEntryCollection%29>.  
-  
- [!code-cpp[MessageQueuePermissionEntryCollection#3](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#3)]
- [!code-csharp[MessageQueuePermissionEntryCollection#3](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#3)]  
-  
+The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.AddRange%28System.Messaging.MessageQueuePermissionEntryCollection%29>.  
+ 
+[!code-cpp[MessageQueuePermissionEntryCollection#3](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#3)]
+[!code-csharp[MessageQueuePermissionEntryCollection#3](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,13 +141,13 @@
           <see langword="true" /> if the specified <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> belongs to this collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.Contains%2A>.  
-  
- [!code-cpp[MessageQueuePermissionEntryCollection#4](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#4)]
- [!code-csharp[MessageQueuePermissionEntryCollection#4](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#4)]  
-  
+The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.Contains%2A>.  
+ 
+[!code-cpp[MessageQueuePermissionEntryCollection#4](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#4)]
+[!code-csharp[MessageQueuePermissionEntryCollection#4](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,13 +174,13 @@
         <summary>Copies the permission entries from this collection to an array, starting at a particular index of the array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.CopyTo%2A>.  
-  
- [!code-cpp[MessageQueuePermissionEntryCollection#5](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#5)]
- [!code-csharp[MessageQueuePermissionEntryCollection#5](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#5)]  
-  
+The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.CopyTo%2A>.  
+ 
+[!code-cpp[MessageQueuePermissionEntryCollection#5](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#5)]
+[!code-csharp[MessageQueuePermissionEntryCollection#5](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,13 +206,13 @@
         <returns>The zero-based index of the specified permission entry, or -1 if the permission entry was not found in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.IndexOf%2A>.  
-  
- [!code-cpp[MessageQueuePermissionEntryCollection#6](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#6)]
- [!code-csharp[MessageQueuePermissionEntryCollection#6](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#6)]  
-  
+The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.IndexOf%2A>.  
+ 
+[!code-cpp[MessageQueuePermissionEntryCollection#6](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#6)]
+[!code-csharp[MessageQueuePermissionEntryCollection#6](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,13 +239,13 @@
         <summary>Inserts a permission entry into this collection at a specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.Insert%2A>.  
-  
- [!code-cpp[MessageQueuePermissionEntryCollection#7](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#7)]
- [!code-csharp[MessageQueuePermissionEntryCollection#7](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#7)]  
-  
+The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.Insert%2A>.  
+ 
+[!code-cpp[MessageQueuePermissionEntryCollection#7](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#7)]
+[!code-csharp[MessageQueuePermissionEntryCollection#7](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,13 +271,13 @@
         <value>The <see cref="T:System.Messaging.MessageQueuePermissionEntry" /> that exists at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.Item%2A>.  
-  
- [!code-cpp[MessageQueuePermissionEntryCollection#8](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#8)]
- [!code-csharp[MessageQueuePermissionEntryCollection#8](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#8)]  
-  
+The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.Item%2A>.  
+ 
+[!code-cpp[MessageQueuePermissionEntryCollection#8](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#8)]
+[!code-csharp[MessageQueuePermissionEntryCollection#8](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -391,13 +391,13 @@
         <summary>Removes a specified permission entry from this collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.Remove%2A>.  
-  
- [!code-cpp[MessageQueuePermissionEntryCollection#9](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#9)]
- [!code-csharp[MessageQueuePermissionEntryCollection#9](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#9)]  
-  
+The following code example demonstrates the use of <xref:System.Messaging.MessageQueuePermissionEntryCollection.Remove%2A>.  
+ 
+[!code-cpp[MessageQueuePermissionEntryCollection#9](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/cpp/class1.cpp#9)]
+[!code-csharp[MessageQueuePermissionEntryCollection#9](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueuePermissionEntryCollection/CS/class1.cs#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

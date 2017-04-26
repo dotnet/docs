@@ -141,32 +141,32 @@
           <see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.SortDescription.Equals%28System.ComponentModel.SortDescription%2CSystem.ComponentModel.SortDescription%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.ComponentModel.SortDescription sd1, System.ComponentModel.SortDescription sd2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.ComponentModel.SortDescription sd1, valuetype System.ComponentModel.SortDescription sd2) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescription.op_Inequality(System.ComponentModel.SortDescription,System.ComponentModel.SortDescription)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="sd1" Type="System.ComponentModel.SortDescription" />
-        <Parameter Name="sd2" Type="System.ComponentModel.SortDescription" />
-      </Parameters>
-      <Docs>
-        <param name="sd1">The first instance to compare.</param>
-        <param name="sd2">The second instance to compare.</param>
-        <summary>Compares two <see cref="T:System.ComponentModel.SortDescription" /> objects for value inequality.</summary>
-        <returns>
-          <see langword="true" /> if the values are not equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (System.ComponentModel.SortDescription sd1, System.ComponentModel.SortDescription sd2);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.ComponentModel.SortDescription sd1, valuetype System.ComponentModel.SortDescription sd2) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescription.op_Inequality(System.ComponentModel.SortDescription,System.ComponentModel.SortDescription)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>WindowsBase</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="sd1" Type="System.ComponentModel.SortDescription" />
+       <Parameter Name="sd2" Type="System.ComponentModel.SortDescription" />
+     </Parameters>
+     <Docs>
+       <param name="sd1">The first instance to compare.</param>
+       <param name="sd2">The second instance to compare.</param>
+       <summary>Compares two <see cref="T:System.ComponentModel.SortDescription" /> objects for value inequality.</summary>
+       <returns>
+         <see langword="true" /> if the values are not equal; otherwise, <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.SortDescription.Compare%28System.ComponentModel.SortDescription%2CSystem.ComponentModel.SortDescription%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -188,12 +188,12 @@
         <value>The default value is null.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property should be a public property of the items in the underlying collection.  
-  
- The string is interpreted by the particular <xref:System.ComponentModel.ICollectionView> object involved in the sorting. <xref:System.Windows.Data.BindingListCollectionView> only supports simple column names. <xref:System.Windows.Data.ListCollectionView> supports general property paths and `XPath` for [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data. Therefore, when the view is a <xref:System.Windows.Data.ListCollectionView> object, you can sort [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] nodes in an <xref:System.Windows.Data.XmlDataProvider> based on an attribute of those nodes. For example, if the attribute name is `Cost`, you would specify "@Cost" for the <xref:System.ComponentModel.SortDescription.PropertyName%2A> in the <xref:System.ComponentModel.SortDescription>.  
-  
+This property should be a public property of the items in the underlying collection.  
+ 
+The string is interpreted by the particular <xref:System.ComponentModel.ICollectionView> object involved in the sorting. <xref:System.Windows.Data.BindingListCollectionView> only supports simple column names. <xref:System.Windows.Data.ListCollectionView> supports general property paths and `XPath` for [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data. Therefore, when the view is a <xref:System.Windows.Data.ListCollectionView> object, you can sort [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] nodes in an <xref:System.Windows.Data.XmlDataProvider> based on an attribute of those nodes. For example, if the attribute name is `Cost`, you would specify "@Cost" for the <xref:System.ComponentModel.SortDescription.PropertyName%2A> in the <xref:System.ComponentModel.SortDescription>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

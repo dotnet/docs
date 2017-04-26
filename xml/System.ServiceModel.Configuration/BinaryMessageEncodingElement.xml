@@ -14,16 +14,16 @@
     <summary>Represents a message encoder that encodes [!INCLUDE[indigo1](~/includes/indigo1-md.md)] messages in binary on the wire. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Encoding is the process of transforming a set of Unicode characters into a sequence of bytes.  
-  
- The <xref:System.ServiceModel.Configuration.BinaryMessageEncodingElement> class represents the configuration section that specifies the character encoding and message versioning used for binary-based XML messages. The binary message encoder encodes [!INCLUDE[indigo2](~/includes/indigo2-md.md)] messages in binary on the wire. While this encoding results in very fast transmission of messages, interoperability based on the WS-* standards is lost.  
-  
- The <xref:System.ServiceModel.Configuration.MtomMessageEncodingElement> class represents the configuration section that specifies the character encoding and message versioning used for a message using a Message Transmission Optimization Mechanism (MTOM) encoding. MTOM is an efficient technology for transmitting binary data in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] messages. The MTOM encoder attempts to balance between efficiency and interoperability. The MTOM encoding transmits most XML in textual form, but optimizes large blocks of binary data by transmitting them as-is, without conversion to text.  
-  
- The <xref:System.ServiceModel.Configuration.TextMessageEncodingElement> class represents a configuration section that specifies a text encoder used to create text-based messages on the wire. Messages produced by this encoder are suitable for WS-* based interoperability. Web service or Web service client can generally understand textual XML. However, transmitting large blocks of binary data as text is the least efficient method for encoding XML messages.  
-  
+Encoding is the process of transforming a set of Unicode characters into a sequence of bytes.  
+ 
+The <xref:System.ServiceModel.Configuration.BinaryMessageEncodingElement> class represents the configuration section that specifies the character encoding and message versioning used for binary-based XML messages. The binary message encoder encodes [!INCLUDE[indigo2](~/includes/indigo2-md.md)] messages in binary on the wire. While this encoding results in very fast transmission of messages, interoperability based on the WS-* standards is lost.  
+ 
+The <xref:System.ServiceModel.Configuration.MtomMessageEncodingElement> class represents the configuration section that specifies the character encoding and message versioning used for a message using a Message Transmission Optimization Mechanism (MTOM) encoding. MTOM is an efficient technology for transmitting binary data in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] messages. The MTOM encoder attempts to balance between efficiency and interoperability. The MTOM encoding transmits most XML in textual form, but optimizes large blocks of binary data by transmitting them as-is, without conversion to text.  
+ 
+The <xref:System.ServiceModel.Configuration.TextMessageEncodingElement> class represents a configuration section that specifies a text encoder used to create text-based messages on the wire. Messages produced by this encoder are suitable for WS-* based interoperability. Web service or Web service client can generally understand textual XML. However, transmitting large blocks of binary data as text is the least efficient method for encoding XML messages.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -191,10 +191,10 @@
         <value>The maximum number of messages that can be read simultaneously without allocating new readers. The default is 64.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Larger pool sizes make the system more tolerant to activity spikes at the cost of a larger working set.  
-  
+Larger pool sizes make the system more tolerant to activity spikes at the cost of a larger working set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,10 +224,10 @@
         <value>The size, in bytes, of the buffer used for encoding. The default is 2048.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A larger buffer increases encoding speed at the expense of the size of the working set.  
-  
+A larger buffer increases encoding speed at the expense of the size of the working set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -257,10 +257,10 @@
         <value>The maximum number of messages that can be sent simultaneously without allocating new writers. The default is 16.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Larger pool sizes make the system more tolerant to activity spikes at the cost of a larger working set.  
-  
+Larger pool sizes make the system more tolerant to activity spikes at the cost of a larger working set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -305,10 +305,10 @@
         <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that specifies the complexity constraints.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The complexity constraints include items such as a maximum element depth, a maximum length for string content within the message. The constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources.  
-  
+The complexity constraints include items such as a maximum element depth, a maximum length for string content within the message. The constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources.  
+ 
  ]]></format>
         </remarks>
       </Docs>

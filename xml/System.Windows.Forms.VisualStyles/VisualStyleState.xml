@@ -13,19 +13,19 @@
     <summary>Specifies how visual styles are applied to the current application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.Application.VisualStyleState%2A?displayProperty=fullName> property to specify whether visual styles are applied to client or nonclient areas of application windows.  
+This enumeration is used by the <xref:System.Windows.Forms.Application.VisualStyleState%2A?displayProperty=fullName> property to specify whether visual styles are applied to client or nonclient areas of application windows.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example is a simple program that applies visual styles in each of the four areas specified by the <xref:System.Windows.Forms.VisualStyles.VisualStyleState> values. To enable visual styles in a certain area, click the option button (also known as a radio button) that represents the area you want to enable, and click the **Update VisualStyleState** button to observe the changes in the window.  
-  
- [!code-cpp[System.Windows.Forms.VisualStyles.VisualStyleState#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleState/cpp/visualstylestate.cpp#0)]
- [!code-csharp[System.Windows.Forms.VisualStyles.VisualStyleState#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleState/CS/visualstylestate.cs#0)]
- [!code-vb[System.Windows.Forms.VisualStyles.VisualStyleState#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleState/VB/visualstylestate.vb#0)]  
-  
+The following code example is a simple program that applies visual styles in each of the four areas specified by the <xref:System.Windows.Forms.VisualStyles.VisualStyleState> values. To enable visual styles in a certain area, click the option button (also known as a radio button) that represents the area you want to enable, and click the **Update VisualStyleState** button to observe the changes in the window.  
+ 
+[!code-cpp[System.Windows.Forms.VisualStyles.VisualStyleState#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleState/cpp/visualstylestate.cpp#0)]
+[!code-csharp[System.Windows.Forms.VisualStyles.VisualStyleState#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleState/CS/visualstylestate.cs#0)]
+[!code-vb[System.Windows.Forms.VisualStyles.VisualStyleState#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleState/VB/visualstylestate.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -35,10 +35,10 @@
         <summary>Sets the keyboard focus on the specified designer item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified designer item is not visible in the model tree view, this method expands the model tree up to a parent that is no more than five levels up.  
-  
+If the specified designer item is not visible in the model tree view, this method expands the model tree up to a parent that is no more than five levels up.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -65,10 +65,10 @@
         <summary>Sets the keyboard focus on the specified designer item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the specified designer item is not visible in the model tree view, this method expands the model tree up to a parent that is no more than a maximum number of levels up specified by the `level` parameter.  
-  
+If the specified designer item is not visible in the model tree view, this method expands the model tree up to a parent that is no more than a maximum number of levels up specified by the `level` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>

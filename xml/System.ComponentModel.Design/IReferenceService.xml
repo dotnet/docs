@@ -16,27 +16,27 @@
     <summary>Provides an interface for obtaining references to objects within a project by name or type, obtaining the name of a specified object, and for locating the parent of a specified object within a designer project.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.IReferenceService> interface provides the following methods:  
-  
+The <xref:System.ComponentModel.Design.IReferenceService> interface provides the following methods:  
+ 
 -   The <xref:System.ComponentModel.Design.IReferenceService.GetReference%2A> method returns the component with the specified name, or `null` if no component with the specified name was found.  
-  
+ 
 -   The <xref:System.ComponentModel.Design.IReferenceService.GetName%2A> method returns the name associated with the specified component.  
-  
+ 
 -   The <xref:System.ComponentModel.Design.IReferenceService.GetComponent%2A> method returns the parent container of the specified component.  
-  
+ 
 -   The <xref:System.ComponentModel.Design.IReferenceService.GetReferences%2A> method returns an array of references to all project components, or all project components of an optionally specified type.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example control uses the <xref:System.ComponentModel.Design.IReferenceService.GetReferences%2A> method of the <xref:System.ComponentModel.Design.IReferenceService> interface to obtain a list of components in the current design mode project of the type of the currently selected component.  
-  
- [!code-cpp[IReferenceServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IReferenceServiceExample/CPP/ireferenceserviceexample.cpp#1)]
- [!code-csharp[IReferenceServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IReferenceServiceExample/CS/ireferenceserviceexample.cs#1)]
- [!code-vb[IReferenceServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IReferenceServiceExample/VB/ireferenceserviceexample.vb#1)]  
-  
+The following example control uses the <xref:System.ComponentModel.Design.IReferenceService.GetReferences%2A> method of the <xref:System.ComponentModel.Design.IReferenceService> interface to obtain a list of components in the current design mode project of the type of the currently selected component.  
+ 
+[!code-cpp[IReferenceServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IReferenceServiceExample/CPP/ireferenceserviceexample.cpp#1)]
+[!code-csharp[IReferenceServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IReferenceServiceExample/CS/ireferenceserviceexample.cs#1)]
+[!code-vb[IReferenceServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IReferenceServiceExample/VB/ireferenceserviceexample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -94,10 +94,10 @@
         <returns>The name of the object referenced, or <see langword="null" /> if the object reference is not valid.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of each component sited in a design time project is set in the <xref:System.ComponentModel.ISite.Name%2A> property of the <xref:System.ComponentModel.ISite> where the component is sited.  
-  
+The name of each component sited in a design time project is set in the <xref:System.ComponentModel.ISite.Name%2A> property of the <xref:System.ComponentModel.ISite> where the component is sited.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -26,31 +26,31 @@
     <summary>Refers to the density of a typeface, in terms of the lightness or heaviness of the strokes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Weight differences are generally differentiated by an increased stroke or thickness that is associated with a given character in a typeface, as compared to a "normal" character from that same typeface.  
-  
- **Note** Not all weights are available for all typefaces. When a weight is not available for a typeface, the closest matching weight is returned.  
-  
+Weight differences are generally differentiated by an increased stroke or thickness that is associated with a given character in a typeface, as compared to a "normal" character from that same typeface.  
+ 
+**Note** Not all weights are available for all typefaces. When a weight is not available for a typeface, the closest matching weight is returned.  
+ 
 <a name="xamlAttributeUsage_FontWeight"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object fontWeightProperty="fontWeightsValue"/>  
 ```  
-  
+ 
 <a name="xamlValues_FontWeight"></a>   
 ## XAML Values  
- *fontWeightsValue*  
- A <xref:System.Windows.FontWeights> property name, such as "Light", "Normal", or "UltraBold".  
+*fontWeightsValue*  
+A <xref:System.Windows.FontWeights> property name, such as "Light", "Normal", or "UltraBold".  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following code example, the <xref:System.Windows.FontWeight> is set to "UltraBold".  
-  
- [!code-xml[FontSnippets#FontSnippet12](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml#fontsnippet12)]  
-  
+In the following code example, the <xref:System.Windows.FontWeight> is set to "UltraBold".  
+ 
+[!code-xml[FontSnippets#FontSnippet12](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml#fontsnippet12)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,18 +78,18 @@
         <returns>An <see cref="T:System.Int32" /> value that indicates the relationship between the two instances of <see cref="T:System.Windows.FontWeight" />. When the return value is less than zero, <paramref name="left" /> is less than <paramref name="right" />. When this value is zero, it indicates that both operands are equal. When the value is greater than zero, it indicates that <paramref name="left" /> is greater than <paramref name="right" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Lighter font weights are lesser than heavier font weights. For example, a "Light" or "Normal" font weight is lesser than an "UltraBold" font weight.  
+Lighter font weights are lesser than heavier font weights. For example, a "Light" or "Normal" font weight is lesser than an "UltraBold" font weight.  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following code example, the <xref:System.Windows.FontWeight.Compare%2A> method is used to evaluate two <xref:System.Windows.FontWeight> objects.  
-  
- [!code-csharp[FontSnippets#FontSnippet11](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#fontsnippet11)]
- [!code-vb[FontSnippets#FontSnippet11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#fontsnippet11)]  
-  
+In the following code example, the <xref:System.Windows.FontWeight.Compare%2A> method is used to evaluate two <xref:System.Windows.FontWeight> objects.  
+ 
+[!code-csharp[FontSnippets#FontSnippet11](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#fontsnippet11)]
+[!code-vb[FontSnippets#FontSnippet11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#fontsnippet11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
         <returns>A new instance of <see cref="T:System.Windows.FontWeight" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] `usWeightClass` value , see the ["Font File Tables"](http://www.microsoft.com/typography/otspec/otff.htm) section of the OpenType specification.  
-  
+For more information about the [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] `usWeightClass` value , see the ["Font File Tables"](http://www.microsoft.com/typography/otspec/otff.htm) section of the OpenType specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,10 +187,10 @@
         <returns>A 32-bit hash code, which is a signed integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned value serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.  
-  
+The returned value serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,10 +244,10 @@
           <see langword="true" /> if <paramref name="left" /> is greater than <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Lighter font weights are lesser than heavier font weights. For example, a "Light" or "Normal" font weight is lesser than an "UltraBold" font weight.  
-  
+Lighter font weights are lesser than heavier font weights. For example, a "Light" or "Normal" font weight is lesser than an "UltraBold" font weight.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -276,10 +276,10 @@
           <see langword="true" /> if <paramref name="left" /> is greater than or equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Lighter font weights are lesser than heavier font weights. For example, a "Light" or "Normal" font weight is lesser than an "UltraBold" font weight.  
-  
+Lighter font weights are lesser than heavier font weights. For example, a "Light" or "Normal" font weight is lesser than an "UltraBold" font weight.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,10 +333,10 @@
           <see langword="true" /> if <paramref name="left" /> is less than <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Lighter font weights are lesser than heavier font weights. For example, a "Light" or "Normal" font weight is lesser than an "UltraBold" font weight.  
-  
+Lighter font weights are lesser than heavier font weights. For example, a "Light" or "Normal" font weight is lesser than an "UltraBold" font weight.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -365,10 +365,10 @@
           <see langword="true" /> if <paramref name="left" /> is less than or equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Lighter font weights are lesser than heavier font weights. For example, a "Light" or "Normal" font weight is lesser than an "UltraBold" font weight.  
-  
+Lighter font weights are lesser than heavier font weights. For example, a "Light" or "Normal" font weight is lesser than an "UltraBold" font weight.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,10 +423,10 @@
         <returns>An integer value between 1 and 999 that corresponds to the <c>usWeightClass</c> definition in the [!INCLUDE[TLA2#tla_opentype](~/includes/tla2sharptla-opentype-md.md)] specification.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] `usWeightClass` value, see the ["Font File Tables"](http://www.microsoft.com/typography/otspec/otff.htm) section of the OpenType specification.  
-  
+For more information about the [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] `usWeightClass` value, see the ["Font File Tables"](http://www.microsoft.com/typography/otspec/otff.htm) section of the OpenType specification.  
+ 
  ]]></format>
         </remarks>
       </Docs>

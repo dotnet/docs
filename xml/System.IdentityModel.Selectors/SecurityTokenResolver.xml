@@ -15,10 +15,10 @@
     <summary>Represents a utility class that can retrieve security tokens or keys when you have a key identifier or key identifier clause.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IdentityModel.Selectors.SecurityTokenResolver> class to retrieve a key or security token when you have a key identifier or key identifier clause. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> methods retrieve a token given that there is a key identifier or key identifier clause. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> retrieve a key given that there is a key identifier clause. The methods with a `Try` prefix return `false` when the retrieval is unsuccessful, whereas the methods without a `Try` prefix throw an exception.  
-  
+Use the <xref:System.IdentityModel.Selectors.SecurityTokenResolver> class to retrieve a key or security token when you have a key identifier or key identifier clause. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> methods retrieve a token given that there is a key identifier or key identifier clause. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> retrieve a key given that there is a key identifier clause. The methods with a `Try` prefix return `false` when the retrieval is unsuccessful, whereas the methods without a `Try` prefix throw an exception.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@
         <returns>A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that resolves key identifiers and clauses that match the security tokens specified in the <paramref name="tokens" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The security token resolver that is returned from this method, uses the <xref:System.IdentityModel.Tokens.SecurityToken.MatchesKeyIdentifierClause%2A> and <xref:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause%2A> methods on the specified security tokens to resolve key identifiers and key identifier clauses.  
-  
+The security token resolver that is returned from this method, uses the <xref:System.IdentityModel.Tokens.SecurityToken.MatchesKeyIdentifierClause%2A> and <xref:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause%2A> methods on the specified security tokens to resolve key identifiers and key identifier clauses.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,10 +90,10 @@
         <summary>When overridden in a derived class, loads custom configuration from XML.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, throws a <xref:System.NotImplementedException>. You can override this method to provide functionality in a derived class.  
-  
+By default, throws a <xref:System.NotImplementedException>. You can override this method to provide functionality in a derived class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that is the key referenced in the specified key identifier clause.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> methods differ in what happens when the key identifier clause cannot be resolved to a key. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> method returns `false`, whereas the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> method throws an exception.  
-  
+The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> methods differ in what happens when the key identifier clause cannot be resolved to a key. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> method returns `false`, whereas the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> method throws an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -151,10 +151,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the specified key identifier.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods differ in what happens when the key identifier cannot be resolved to a security token. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> method returns `false`, whereas the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> method throws an exception.  
-  
+The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods differ in what happens when the key identifier cannot be resolved to a security token. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> method returns `false`, whereas the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> method throws an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -183,10 +183,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the specified key identifier clause.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods differ in what happens when the key identifier clause cannot be resolved to a security token. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> method returns `false`, whereas the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> method throws an exception.  
-  
+The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods differ in what happens when the key identifier clause cannot be resolved to a security token. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> method returns `false`, whereas the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> method throws an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,10 +215,10 @@
           <see langword="true" /> when a key can be retrieved for the specified key identifier clause; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> methods differ in what happens when the key identifier clause cannot be resolved to a key. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> method returns `false`, whereas the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> method throws an exception.  
-  
+The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> methods differ in what happens when the key identifier clause cannot be resolved to a key. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> method returns `false`, whereas the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> method throws an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -249,10 +249,10 @@
           <see langword="true" /> when a key can be retrieved for the specified key identifier clause; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKeyCore%2A> method is called by the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> methods.  
-  
+The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKeyCore%2A> method is called by the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveSecurityKey%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveSecurityKey%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -281,10 +281,10 @@
           <see langword="true" /> when a security token can be retrieved for the specified key identifier; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods differ in what happens when the key identifier cannot be resolved to a security token. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> method returns `false`, whereas the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> method throws an exception.  
-  
+The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods differ in what happens when the key identifier cannot be resolved to a security token. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> method returns `false`, whereas the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> method throws an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -315,10 +315,10 @@
           <see langword="true" /> when a security token can be retrieved for the specified key identifier clause; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods differ in what happens when the key identifier clause cannot be resolved to a security token. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> method returns `false`, whereas the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> method throws an exception.  
-  
+The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods differ in what happens when the key identifier clause cannot be resolved to a security token. The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> method returns `false`, whereas the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> method throws an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -349,10 +349,10 @@
           <see langword="true" /> when a security token can be retrieved for the specified key identifier; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveTokenCore%2A> method is called by the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods.  
-  
+The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveTokenCore%2A> method is called by the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -381,10 +381,10 @@
           <see langword="true" /> when a security token can be retrieved for the specified key identifier clause; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveTokenCore%2A> method is called by the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods.  
-  
+The <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveTokenCore%2A> method is called by the <xref:System.IdentityModel.Selectors.SecurityTokenResolver.TryResolveToken%2A> and <xref:System.IdentityModel.Selectors.SecurityTokenResolver.ResolveToken%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>

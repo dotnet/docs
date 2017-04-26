@@ -35,12 +35,12 @@
         <summary>Clears all highlight annotations from the current selection of the viewer control associated with the given <see cref="T:System.Windows.Annotations.AnnotationService" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the current viewer selection is zero length or does not overlap any annotation highlights, <xref:System.Windows.Annotations.AnnotationHelper.ClearHighlightsForSelection%2A> performs no operation.  
-  
- If the current viewer selection overlaps a highlight only partially, only the portion of the selection that overlaps is cleared and the unselected portion of the annotation highlight remains.  
-  
+If the current viewer selection is zero length or does not overlap any annotation highlights, <xref:System.Windows.Annotations.AnnotationHelper.ClearHighlightsForSelection%2A> performs no operation.  
+ 
+If the current viewer selection overlaps a highlight only partially, only the portion of the selection that overlaps is cleared and the unselected portion of the annotation highlight remains.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -74,18 +74,18 @@
         <returns>The highlight annotation; or <see langword="null" />, if there is no selected content to highlight.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The highlight annotation is anchored to the content defined by the current selection of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, <xref:System.Windows.Controls.DocumentViewer>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, <xref:System.Windows.Controls.FlowDocumentScrollViewer>, or <xref:System.Windows.Controls.FlowDocumentReader> control specified to the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> constructor.  
-  
- If there is no selected content (the selection length is zero length), no annotation is created and an <xref:System.InvalidOperationException> is thrown.  
-  
- `author` can be specified as `null` in which case no author is defined.  
-  
- If `highlightBrush` is `null`, the default highlight brush of the given annotation `service` is used.  
-  
- The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=fullName> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.CreateHighlightForSelection%2A>.  
-  
+The highlight annotation is anchored to the content defined by the current selection of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, <xref:System.Windows.Controls.DocumentViewer>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, <xref:System.Windows.Controls.FlowDocumentScrollViewer>, or <xref:System.Windows.Controls.FlowDocumentReader> control specified to the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> constructor.  
+ 
+If there is no selected content (the selection length is zero length), no annotation is created and an <xref:System.InvalidOperationException> is thrown.  
+ 
+`author` can be specified as `null` in which case no author is defined.  
+ 
+If `highlightBrush` is `null`, the default highlight brush of the given annotation `service` is used.  
+ 
+The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=fullName> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.CreateHighlightForSelection%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -122,16 +122,16 @@
         <returns>The ink sticky note annotation; or <see langword="null" />, if there is no selected content to annotate.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The ink sticky note annotation is anchored to the content defined by the current selection of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, <xref:System.Windows.Controls.DocumentViewer>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, <xref:System.Windows.Controls.FlowDocumentScrollViewer>, or <xref:System.Windows.Controls.FlowDocumentReader> control specified to the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> constructor.  
-  
- If there is no user-selected content (the selection length is zero length), no annotation is created and an <xref:System.InvalidOperationException> is thrown.  
-  
- `author` can be specified as `null` in which case no author is defined.  
-  
- The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=fullName> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.CreateInkStickyNoteForSelection%2A>.  
-  
+The ink sticky note annotation is anchored to the content defined by the current selection of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, <xref:System.Windows.Controls.DocumentViewer>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, <xref:System.Windows.Controls.FlowDocumentScrollViewer>, or <xref:System.Windows.Controls.FlowDocumentReader> control specified to the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> constructor.  
+ 
+If there is no user-selected content (the selection length is zero length), no annotation is created and an <xref:System.InvalidOperationException> is thrown.  
+ 
+`author` can be specified as `null` in which case no author is defined.  
+ 
+The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=fullName> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.CreateInkStickyNoteForSelection%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -164,16 +164,16 @@
         <returns>The text sticky note annotation; or <see langword="null" />, if there is no selected content to annotate.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The text sticky note annotation is anchored to the content defined by the current selection of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, <xref:System.Windows.Controls.DocumentViewer>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, <xref:System.Windows.Controls.FlowDocumentScrollViewer>, or <xref:System.Windows.Controls.FlowDocumentReader> control specified to the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> constructor.  
-  
- If there is no user-selected content (the selection length is zero length), no annotation is created and an <xref:System.InvalidOperationException> is thrown.  
-  
- `author` can be specified as `null` in which case no author is defined.  
-  
- The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=fullName> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.CreateTextStickyNoteForSelection%2A>.  
-  
+The text sticky note annotation is anchored to the content defined by the current selection of the <xref:System.Windows.Controls.Primitives.DocumentViewerBase>, <xref:System.Windows.Controls.DocumentViewer>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, <xref:System.Windows.Controls.FlowDocumentScrollViewer>, or <xref:System.Windows.Controls.FlowDocumentReader> control specified to the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> constructor.  
+ 
+If there is no user-selected content (the selection length is zero length), no annotation is created and an <xref:System.InvalidOperationException> is thrown.  
+ 
+`author` can be specified as `null` in which case no author is defined.  
+ 
+The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=fullName> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.CreateTextStickyNoteForSelection%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -203,12 +203,12 @@
         <summary>Deletes ink sticky note annotations that are wholly contained within the current selection of the viewer control associated with the given <see cref="T:System.Windows.Annotations.AnnotationService" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the viewer control associated with the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> contains no user selection or the user selection does not wholly contain any ink sticky note annotations, <xref:System.Windows.Annotations.AnnotationHelper.DeleteInkStickyNotesForSelection%2A> performs no operation.  
-  
- The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=fullName> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.DeleteInkStickyNotesForSelection%2A>.  
-  
+If the viewer control associated with the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> contains no user selection or the user selection does not wholly contain any ink sticky note annotations, <xref:System.Windows.Annotations.AnnotationHelper.DeleteInkStickyNotesForSelection%2A> performs no operation.  
+ 
+The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=fullName> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.DeleteInkStickyNotesForSelection%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -237,12 +237,12 @@
         <summary>Deletes text sticky note annotations that are wholly contained within the current selection of the viewer control associated with the given <see cref="T:System.Windows.Annotations.AnnotationService" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the viewer control associated with the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> contains no user selection or the user selection does not wholly contain any text sticky note annotations, <xref:System.Windows.Annotations.AnnotationHelper.DeleteTextStickyNotesForSelection%2A> performs no operation.  
-  
- The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=fullName> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.DeleteTextStickyNotesForSelection%2A>.  
-  
+If the viewer control associated with the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> contains no user selection or the user selection does not wholly contain any text sticky note annotations, <xref:System.Windows.Annotations.AnnotationHelper.DeleteTextStickyNotesForSelection%2A> performs no operation.  
+ 
+The given annotation `service` must be enabled by means of a call to <xref:System.Windows.Annotations.AnnotationService.Enable%2A?displayProperty=fullName> prior to calling <xref:System.Windows.Annotations.AnnotationHelper.DeleteTextStickyNotesForSelection%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -274,20 +274,20 @@
         <returns>An <see cref="T:System.Windows.Annotations.IAnchorInfo" /> object that provides anchoring information about the specified annotation, or <see langword="null" /> if it cannot be resolved.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Annotations.AnnotationHelper.GetAnchorInfo%2A> is introduced in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+<xref:System.Windows.Annotations.AnnotationHelper.GetAnchorInfo%2A> is introduced in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- Consider a simple document reader application that has a comments pane. The comments pane might be a list box that displays the text from a list of annotations that are anchored to a document. If the user selects an item in the list box, then the application brings into view the paragraph in the document that the corresponding annotation object is anchored to.  
-  
- The following example demonstrates how to implement the event handler of such a list box that serves as the comments pane.  
-  
- [!code-csharp[FlowDocumentAnnotatedViewer#Handler](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentAnnotatedViewer/CSharp/Window1.xaml.cs#handler)]
- [!code-vb[FlowDocumentAnnotatedViewer#Handler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocumentAnnotatedViewer/visualbasic/window1.xaml.vb#handler)]  
-  
+Consider a simple document reader application that has a comments pane. The comments pane might be a list box that displays the text from a list of annotations that are anchored to a document. If the user selects an item in the list box, then the application brings into view the paragraph in the document that the corresponding annotation object is anchored to.  
+ 
+The following example demonstrates how to implement the event handler of such a list box that serves as the comments pane.  
+ 
+[!code-csharp[FlowDocumentAnnotatedViewer#Handler](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentAnnotatedViewer/CSharp/Window1.xaml.cs#handler)]
+[!code-vb[FlowDocumentAnnotatedViewer#Handler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocumentAnnotatedViewer/visualbasic/window1.xaml.vb#handler)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

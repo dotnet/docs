@@ -22,18 +22,18 @@
     <summary>Represents a code checksum pragma code entity.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.CodeDom.CodeChecksumPragma> class inherits from <xref:System.CodeDom.CodeDirective> and can be contained in a <xref:System.CodeDom.CodeDirectiveCollection>. <xref:System.CodeDom.CodeChecksumPragma> provides the unique identification of source files, including files that have been generated.  
+The <xref:System.CodeDom.CodeChecksumPragma> class inherits from <xref:System.CodeDom.CodeDirective> and can be contained in a <xref:System.CodeDom.CodeDirectiveCollection>. <xref:System.CodeDom.CodeChecksumPragma> provides the unique identification of source files, including files that have been generated.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.CodeDom.CodeChecksumPragma> class.  
-  
- [!code-csharp[System.CodeDom.CodeDirectives#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#1)]
- [!code-vb[System.CodeDom.CodeDirectives#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#1)]  
-  
+The following code example shows the use of the <xref:System.CodeDom.CodeChecksumPragma> class.  
+ 
+[!code-csharp[System.CodeDom.CodeDirectives#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#1)]
+[!code-vb[System.CodeDom.CodeDirectives#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,13 +52,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeChecksumPragma" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.CodeDom.CodeChecksumPragma.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.CodeDom.CodeChecksumPragma> class.  
-  
- [!code-csharp[System.CodeDom.CodeDirectives#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#4)]
- [!code-vb[System.CodeDom.CodeDirectives#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#4)]  
-  
+The following code example shows the use of the <xref:System.CodeDom.CodeChecksumPragma.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.CodeDom.CodeChecksumPragma> class.  
+ 
+[!code-csharp[System.CodeDom.CodeDirectives#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#4)]
+[!code-vb[System.CodeDom.CodeDirectives#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,18 +84,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeChecksumPragma" /> class using a file name, a GUID representing the checksum algorithm, and a byte stream representing the checksum data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information on the `checksumAlgorithmId` parameter, see the <xref:System.CodeDom.CodeChecksumPragma.ChecksumAlgorithmId%2A> property.  
+For more information on the `checksumAlgorithmId` parameter, see the <xref:System.CodeDom.CodeChecksumPragma.ChecksumAlgorithmId%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.CodeDom.CodeChecksumPragma.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.CodeDom.CodeChecksumPragma> class.  
-  
- [!code-csharp[System.CodeDom.CodeDirectives#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#8)]
- [!code-vb[System.CodeDom.CodeDirectives#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#8)]  
-  
+The following code example shows the use of the <xref:System.CodeDom.CodeChecksumPragma.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.CodeDom.CodeChecksumPragma> class.  
+ 
+[!code-csharp[System.CodeDom.CodeDirectives#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#8)]
+[!code-vb[System.CodeDom.CodeDirectives#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,20 +117,20 @@
         <value>A <see cref="T:System.Guid" /> that identifies the checksum algorithm to use.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Algorithms are provided for the MD5 and SHA1 hashes. The GUID value to use for the MD5 hash is {0x406ea660, 0x64cf, 0x4c82, 0xb6, 0xf0, 0x42, 0xd4, 0x81, 0x72, 0xa7, 0x99}. The GUID to use for the SHA1 hash is {0xff1816ec, 0xaa5e, 0x4d10, 0x87, 0xf7, 0x6f, 0x49, 0x63, 0x83, 0x34, 0x60}.  
+Algorithms are provided for the MD5 and SHA1 hashes. The GUID value to use for the MD5 hash is {0x406ea660, 0x64cf, 0x4c82, 0xb6, 0xf0, 0x42, 0xd4, 0x81, 0x72, 0xa7, 0x99}. The GUID to use for the SHA1 hash is {0xff1816ec, 0xaa5e, 0x4d10, 0x87, 0xf7, 0x6f, 0x49, 0x63, 0x83, 0x34, 0x60}.  
+ 
+The calculation of the checksum is language-specific. That is, the language vendor can use any of the hashing algorithms known to the debugger to calculate the checksum. The use of a GUID for this property provides hash algorithm extensibility.  
+ 
   
- The calculation of the checksum is language-specific. That is, the language vendor can use any of the hashing algorithms known to the debugger to calculate the checksum. The use of a GUID for this property provides hash algorithm extensibility.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows the setting of the <xref:System.CodeDom.CodeChecksumPragma.ChecksumAlgorithmId%2A> property. This code example is part of a larger example provided for the <xref:System.CodeDom.CodeChecksumPragma> class.  
-  
- [!code-csharp[System.CodeDom.CodeDirectives#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#6)]
- [!code-vb[System.CodeDom.CodeDirectives#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#6)]  
-  
+The following code example shows the setting of the <xref:System.CodeDom.CodeChecksumPragma.ChecksumAlgorithmId%2A> property. This code example is part of a larger example provided for the <xref:System.CodeDom.CodeChecksumPragma> class.  
+ 
+[!code-csharp[System.CodeDom.CodeDirectives#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#6)]
+[!code-vb[System.CodeDom.CodeDirectives#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,18 +152,18 @@
         <value>A byte array that contains the data for the checksum calculation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.CodeDom.CodeChecksumPragma.ChecksumData%2A> property contains data from the target file specified by the <xref:System.CodeDom.CodeChecksumPragma.FileName%2A> property.  
+The <xref:System.CodeDom.CodeChecksumPragma.ChecksumData%2A> property contains data from the target file specified by the <xref:System.CodeDom.CodeChecksumPragma.FileName%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the setting of the <xref:System.CodeDom.CodeChecksumPragma.ChecksumData%2A> property. This code example is part of a larger example provided for the <xref:System.CodeDom.CodeChecksumPragma> class  
-  
- [!code-csharp[System.CodeDom.CodeDirectives#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#7)]
- [!code-vb[System.CodeDom.CodeDirectives#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#7)]  
-  
+The following code example shows the setting of the <xref:System.CodeDom.CodeChecksumPragma.ChecksumData%2A> property. This code example is part of a larger example provided for the <xref:System.CodeDom.CodeChecksumPragma> class  
+ 
+[!code-csharp[System.CodeDom.CodeDirectives#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#7)]
+[!code-vb[System.CodeDom.CodeDirectives#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,18 +185,18 @@
         <value>The path to the checksum file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An example of a <xref:System.CodeDom.CodeChecksumPragma.FileName%2A> property value is "C:\Temp\Test\OuterLinePragma.txt".  
+An example of a <xref:System.CodeDom.CodeChecksumPragma.FileName%2A> property value is "C:\Temp\Test\OuterLinePragma.txt".  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the setting of the <xref:System.CodeDom.CodeChecksumPragma.FileName%2A> property. This code example is part of a larger example provided for the <xref:System.CodeDom.CodeChecksumPragma> class  
-  
- [!code-csharp[System.CodeDom.CodeDirectives#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#5)]
- [!code-vb[System.CodeDom.CodeDirectives#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#5)]  
-  
+The following code example shows the setting of the <xref:System.CodeDom.CodeChecksumPragma.FileName%2A> property. This code example is part of a larger example provided for the <xref:System.CodeDom.CodeChecksumPragma> class  
+ 
+[!code-csharp[System.CodeDom.CodeDirectives#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/CS/codedirective.cs#5)]
+[!code-vb[System.CodeDom.CodeDirectives#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.CodeDirectives/VB/codedirective.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

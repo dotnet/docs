@@ -34,24 +34,24 @@
     <summary>Describes and represents an enumeration type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  In the .NET Framework versions 1.0 and 1.1, it is necessary to define enumerations using <xref:System.Reflection.Emit.TypeBuilder> because <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements are of type <xref:System.Int32> instead of the enumeration type. In the .NET Framework version 2.0, <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements have the correct type.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the construction of an enumeration within a dynamic assembly, using `EnumBuilder`. The example defines an enumeration named `Elevation`, with an underlying type of <xref:System.Int32>, and creates two elements: `Low`, with a value of 0, and `High`, with a value of 1. After the type has been created, the assembly is saved with the name `TempAssembly.dll`. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the contents of this assembly.  
-  
+The following code example demonstrates the construction of an enumeration within a dynamic assembly, using `EnumBuilder`. The example defines an enumeration named `Elevation`, with an underlying type of <xref:System.Int32>, and creates two elements: `Low`, with a value of 0, and `High`, with a value of 1. After the type has been created, the assembly is saved with the name `TempAssembly.dll`. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the contents of this assembly.  
+ 
 > [!NOTE]
 >  Prior to the .NET Framework version 2.0, this code example does not produce a correct enumeration.  
-  
- [!code-cpp[ModuleBuilder_DefineEnum#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CPP/modulebuilder_defineenum.cpp#1)]
- [!code-csharp[ModuleBuilder_DefineEnum#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CS/modulebuilder_defineenum.cs#1)]
- [!code-vb[ModuleBuilder_DefineEnum#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineEnum/VB/modulebuilder_defineenum.vb#1)]  
-  
+ 
+[!code-cpp[ModuleBuilder_DefineEnum#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CPP/modulebuilder_defineenum.cpp#1)]
+[!code-csharp[ModuleBuilder_DefineEnum#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CS/modulebuilder_defineenum.cs#1)]
+[!code-vb[ModuleBuilder_DefineEnum#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineEnum/VB/modulebuilder_defineenum.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -93,14 +93,14 @@
         <value>Read-only. The dynamic assembly that contains this enum definition.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates the use of the `Assembly` property to reference the parent assembly of the current `EnumBuilder`.  
-  
- [!code-cpp[EnumBuilder_Properties_5#1](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_5/CPP/enumbuilder_properties_5.cpp#1)]
- [!code-csharp[EnumBuilder_Properties_5#1](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_5/CS/enumbuilder_properties_5.cs#1)]
- [!code-vb[EnumBuilder_Properties_5#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_5/VB/enumbuilder_properties_5.vb#1)]  
-  
+The following code sample demonstrates the use of the `Assembly` property to reference the parent assembly of the current `EnumBuilder`.  
+ 
+[!code-cpp[EnumBuilder_Properties_5#1](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_5/CPP/enumbuilder_properties_5.cpp#1)]
+[!code-csharp[EnumBuilder_Properties_5#1](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_5/CS/enumbuilder_properties_5.cs#1)]
+[!code-vb[EnumBuilder_Properties_5#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_5/VB/enumbuilder_properties_5.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,26 +127,26 @@
         <value>Read-only. The full path of this enum qualified by the display name of the parent assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The format of the returned string is:  
-  
- \<FullTypeName>, \<AssemblyDisplayName>  
-  
- See <xref:System.Reflection.AssemblyName> for a description of the format of the display name of an assembly.  
-  
+The format of the returned string is:  
+ 
+\<FullTypeName>, \<AssemblyDisplayName>  
+ 
+See <xref:System.Reflection.AssemblyName> for a description of the format of the display name of an assembly.  
+ 
 ## Version Information  
- In the .NET Framework version 1.1 and earlier, the return value of this property did not include the culture or public key.  
+In the .NET Framework version 1.1 and earlier, the return value of this property did not include the culture or public key.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates the use of the `AssemblyQualifiedName` property to reference the qualified parent assembly name of the current `EnumBuilder`.  
-  
- [!code-cpp[EnumBuilder_Properties_5#2](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_5/CPP/enumbuilder_properties_5.cpp#2)]
- [!code-csharp[EnumBuilder_Properties_5#2](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_5/CS/enumbuilder_properties_5.cs#2)]
- [!code-vb[EnumBuilder_Properties_5#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_5/VB/enumbuilder_properties_5.vb#2)]  
-  
+The following code sample demonstrates the use of the `AssemblyQualifiedName` property to reference the qualified parent assembly name of the current `EnumBuilder`.  
+ 
+[!code-cpp[EnumBuilder_Properties_5#2](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_5/CPP/enumbuilder_properties_5.cpp#2)]
+[!code-csharp[EnumBuilder_Properties_5#2](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_5/CS/enumbuilder_properties_5.cs#2)]
+[!code-vb[EnumBuilder_Properties_5#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_5/VB/enumbuilder_properties_5.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,25 +328,25 @@
         <returns>The defined field.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The defined field will have the field attributes <xref:System.Reflection.FieldAttributes>, <xref:System.Reflection.FieldAttributes>, and <xref:System.Reflection.FieldAttributes> set.  
-  
+The defined field will have the field attributes <xref:System.Reflection.FieldAttributes>, <xref:System.Reflection.FieldAttributes>, and <xref:System.Reflection.FieldAttributes> set.  
+ 
 > [!NOTE]
 >  In the .NET Framework versions 1.0 and 1.1, it is necessary to define enumerations using <xref:System.Reflection.Emit.TypeBuilder> because <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements are of type <xref:System.Int32> instead of the enumeration type. In the .NET Framework version 2.0, <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements have the correct type.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the construction of an enumeration within a dynamic assembly, using `EnumBuilder`. The example defines an enumeration named `Elevation`, with an underlying type of <xref:System.Int32>, and creates two elements: `Low`, with a value of 0, and `High`, with a value of 1. After the type has been created, the assembly is saved with the name `TempAssembly.dll`. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the contents of this assembly.  
-  
+The following code example demonstrates the construction of an enumeration within a dynamic assembly, using `EnumBuilder`. The example defines an enumeration named `Elevation`, with an underlying type of <xref:System.Int32>, and creates two elements: `Low`, with a value of 0, and `High`, with a value of 1. After the type has been created, the assembly is saved with the name `TempAssembly.dll`. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the contents of this assembly.  
+ 
 > [!NOTE]
 >  Prior to the .NET Framework version 2.0, this code example does not produce a correct enumeration.  
-  
- [!code-cpp[ModuleBuilder_DefineEnum#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CPP/modulebuilder_defineenum.cpp#1)]
- [!code-csharp[ModuleBuilder_DefineEnum#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CS/modulebuilder_defineenum.cs#1)]
- [!code-vb[ModuleBuilder_DefineEnum#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineEnum/VB/modulebuilder_defineenum.vb#1)]  
-  
+ 
+[!code-cpp[ModuleBuilder_DefineEnum#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CPP/modulebuilder_defineenum.cpp#1)]
+[!code-csharp[ModuleBuilder_DefineEnum#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineEnum/CS/modulebuilder_defineenum.cs#1)]
+[!code-vb[ModuleBuilder_DefineEnum#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineEnum/VB/modulebuilder_defineenum.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,10 +373,10 @@
         <value>Read-only. The full path of this enum.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned format is "enclosingTypeFullName+nestedTypeName" for nested types and "typeName" for non-nested types.  
-  
+The returned format is "enclosingTypeFullName+nestedTypeName" for nested types and "typeName" for non-nested types.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -532,10 +532,10 @@
         <returns>Returns an array of <see cref="T:System.Reflection.ConstructorInfo" /> objects representing the specified constructors defined for this class. If no constructors are defined, an empty array is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the constructor of a finished type, you can retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
-  
+As a workaround, to retrieve the constructor of a finished type, you can retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -563,16 +563,16 @@
         <returns>Returns an array of objects representing all the custom attributes of the constructor represented by this <see cref="T:System.Reflection.Emit.ConstructorBuilder" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the custom attributes of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> and call <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> on the returned <xref:System.Type>.  
-  
- The following code sample illustrates the use of `GetCustomAttribute` in the context of <xref:System.Reflection.Emit.EnumBuilder>.  
-  
- [!code-cpp[EnumBuilder_SetCustomAttribute2#1](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CPP/enumbuilder_setcustomattribute2.cpp#1)]
- [!code-csharp[EnumBuilder_SetCustomAttribute2#1](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CS/enumbuilder_setcustomattribute2.cs#1)]
- [!code-vb[EnumBuilder_SetCustomAttribute2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/VB/enumbuilder_setcustomattribute2.vb#1)]  
-  
+As a workaround, to retrieve the custom attributes of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> and call <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> on the returned <xref:System.Type>.  
+ 
+The following code sample illustrates the use of `GetCustomAttribute` in the context of <xref:System.Reflection.Emit.EnumBuilder>.  
+ 
+[!code-cpp[EnumBuilder_SetCustomAttribute2#1](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CPP/enumbuilder_setcustomattribute2.cpp#1)]
+[!code-csharp[EnumBuilder_SetCustomAttribute2#1](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CS/enumbuilder_setcustomattribute2.cs#1)]
+[!code-vb[EnumBuilder_SetCustomAttribute2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/VB/enumbuilder_setcustomattribute2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -602,16 +602,16 @@
         <returns>Returns an array of objects representing the attributes of this constructor that are of <see cref="T:System.Type" /><paramref name="attributeType" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the custom attributes of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> and call <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName> on the returned <xref:System.Type>.  
-  
- The following code sample illustrates the use of `GetCustomAttribute` in the context of <xref:System.Reflection.Emit.EnumBuilder>.  
-  
- [!code-cpp[EnumBuilder_SetCustomAttribute1#2](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute1/CPP/enumbuilder_setcustomattribute1.cpp#2)]
- [!code-csharp[EnumBuilder_SetCustomAttribute1#2](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute1/CS/enumbuilder_setcustomattribute1.cs#2)]
- [!code-vb[EnumBuilder_SetCustomAttribute1#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute1/VB/enumbuilder_setcustomattribute1.vb#2)]  
-  
+As a workaround, to retrieve the custom attributes of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> and call <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName> on the returned <xref:System.Type>.  
+ 
+The following code sample illustrates the use of `GetCustomAttribute` in the context of <xref:System.Reflection.Emit.EnumBuilder>.  
+ 
+[!code-cpp[EnumBuilder_SetCustomAttribute1#2](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute1/CPP/enumbuilder_setcustomattribute1.cpp#2)]
+[!code-csharp[EnumBuilder_SetCustomAttribute1#2](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute1/CS/enumbuilder_setcustomattribute1.cs#2)]
+[!code-vb[EnumBuilder_SetCustomAttribute1#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute1/VB/enumbuilder_setcustomattribute1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -686,10 +686,10 @@
         <returns>Returns an <see cref="T:System.Reflection.EventInfo" /> object representing the event declared or inherited by this type with the specified name. If there are no matches, <see langword="null" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the event of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
-  
+As a workaround, to retrieve the event of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -714,10 +714,10 @@
         <returns>Returns an array of <see cref="T:System.Reflection.EventInfo" /> objects representing the public events declared or inherited by this type. An empty array is returned if there are no public events.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the events of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
-  
+As a workaround, to retrieve the events of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -745,10 +745,10 @@
         <returns>Returns an array of <see cref="T:System.Reflection.EventInfo" /> objects representing the public and non-public events declared or inherited by this type. An empty array is returned if there are no events, as specified.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the events of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type to retrieve the events.  
-  
+As a workaround, to retrieve the events of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type to retrieve the events.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -778,10 +778,10 @@
         <returns>Returns the <see cref="T:System.Reflection.FieldInfo" /> object representing the field declared or inherited by this type with the specified name and public or non-public modifier. If there are no matches, then null is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the field of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A> and use reflection on the retrieved type.  
-  
+As a workaround, to retrieve the field of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A> and use reflection on the retrieved type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -809,12 +809,12 @@
         <returns>Returns an array of <see cref="T:System.Reflection.FieldInfo" /> objects representing the public and non-public fields declared or inherited by this type. An empty array is returned if there are no fields, as specified.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the field of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
-  
- The <xref:System.Reflection.Emit.EnumBuilder.GetFields%2A> method does not return fields in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which fields are returned, because that order can vary.  
-  
+As a workaround, to retrieve the field of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ 
+The <xref:System.Reflection.Emit.EnumBuilder.GetFields%2A> method does not return fields in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which fields are returned, because that order can vary.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -882,10 +882,10 @@
         <returns>Returns a <see cref="T:System.Type" /> object representing the implemented interface. Returns null if no interface matching name is found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the interface of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
-  
+As a workaround, to retrieve the interface of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -918,10 +918,10 @@
         <returns>The requested interface mapping.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the interface mapping types of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
-  
+As a workaround, to retrieve the interface mapping types of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The type does not implement the interface.</exception>
@@ -946,10 +946,10 @@
         <returns>Returns an array of <see cref="T:System.Type" /> objects representing the implemented interfaces. If none are defined, an empty array is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the interface of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
-  
+As a workaround, to retrieve the interface of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -980,10 +980,10 @@
         <returns>Returns an array of <see cref="T:System.Reflection.MemberInfo" /> objects representing the public and non-public members defined on this type if <paramref name="nonPublic" /> is used; otherwise, only the public members are returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the member of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
-  
+As a workaround, to retrieve the member of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -1011,10 +1011,10 @@
         <returns>Returns an array of <see cref="T:System.Reflection.MemberInfo" /> objects representing the public and non-public members declared or inherited by this type. An empty array is returned if there are no matching members.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the members of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
-  
+As a workaround, to retrieve the members of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -1075,10 +1075,10 @@
         <returns>Returns an array of <see cref="T:System.Reflection.MethodInfo" /> objects representing the public and non-public methods defined on this type if <paramref name="nonPublic" /> is used; otherwise, only the public methods are returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the methods of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
-  
+As a workaround, to retrieve the methods of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -1112,10 +1112,10 @@
         <returns>A <see cref="T:System.Type" /> object representing the nested type that matches the specified requirements, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the nested type of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
-  
+As a workaround, to retrieve the nested type of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -1145,10 +1145,10 @@
  An empty array of type <see cref="T:System.Type" />, if no types are nested within the current <see cref="T:System.Type" />, or if none of the nested types match the binding constraints.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the nested types of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
-  
+As a workaround, to retrieve the nested types of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -1176,10 +1176,10 @@
         <returns>Returns an array of <see cref="T:System.Reflection.PropertyInfo" /> objects representing the public and non-public properties defined on this type if <paramref name="nonPublic" /> is used; otherwise, only the public properties are returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to retrieve the properties of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
-  
+As a workaround, to retrieve the properties of a finished type, retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -1240,14 +1240,14 @@
         <value>Read-only. The GUID of this enum.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates the use of the `GUID` property to reference the associated <xref:System.Guid> of the current `EnumBuilder`.  
-  
- [!code-cpp[EnumBuilder_Properties_4.cs#4](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_4.cs/CPP/enumbuilder_properties_4.cpp#4)]
- [!code-csharp[EnumBuilder_Properties_4.cs#4](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_4.cs/CS/enumbuilder_properties_4.cs#4)]
- [!code-vb[EnumBuilder_Properties_4.cs#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_4.cs/VB/enumbuilder_properties_4.vb#4)]  
-  
+The following code sample demonstrates the use of the `GUID` property to reference the associated <xref:System.Guid> of the current `EnumBuilder`.  
+ 
+[!code-cpp[EnumBuilder_Properties_4.cs#4](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_4.cs/CPP/enumbuilder_properties_4.cpp#4)]
+[!code-csharp[EnumBuilder_Properties_4.cs#4](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_4.cs/CS/enumbuilder_properties_4.cs#4)]
+[!code-vb[EnumBuilder_Properties_4.cs#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_4.cs/VB/enumbuilder_properties_4.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -1309,10 +1309,10 @@
         <returns>Returns the return value of the invoked member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
-  
+You can retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -1451,10 +1451,10 @@
           <see langword="true" /> if one or more instance of <paramref name="attributeType" /> is defined on this member; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As a workaround, to check if a custom attribute is defined for a finished type, retrieve the type using <xref:System.Type.GetType%2A> and call <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> on the returned <xref:System.Type>.  
-  
+As a workaround, to check if a custom attribute is defined for a finished type, retrieve the type using <xref:System.Type.GetType%2A> and call <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> on the returned <xref:System.Type>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported in types that are not complete.</exception>
@@ -1761,14 +1761,14 @@
         <value>Read-only. The dynamic module that contains this <see cref="T:System.Reflection.Emit.EnumBuilder" /> definition.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates the use of the `Module` property to reference the parent module of the current `EnumBuilder`.  
-  
- [!code-cpp[EnumBuilder_Properties_5#3](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_5/CPP/enumbuilder_properties_5.cpp#3)]
- [!code-csharp[EnumBuilder_Properties_5#3](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_5/CS/enumbuilder_properties_5.cs#3)]
- [!code-vb[EnumBuilder_Properties_5#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_5/VB/enumbuilder_properties_5.vb#3)]  
-  
+The following code sample demonstrates the use of the `Module` property to reference the parent module of the current `EnumBuilder`.  
+ 
+[!code-cpp[EnumBuilder_Properties_5#3](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_5/CPP/enumbuilder_properties_5.cpp#3)]
+[!code-csharp[EnumBuilder_Properties_5#3](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_5/CS/enumbuilder_properties_5.cs#3)]
+[!code-vb[EnumBuilder_Properties_5#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_5/VB/enumbuilder_properties_5.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1795,14 +1795,14 @@
         <value>Read-only. The name of this enum.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates the use of the `Name` property to reference the name of the current `EnumBuilder`.  
-  
- [!code-cpp[EnumBuilder_Properties_5#4](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_5/CPP/enumbuilder_properties_5.cpp#4)]
- [!code-csharp[EnumBuilder_Properties_5#4](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_5/CS/enumbuilder_properties_5.cs#4)]
- [!code-vb[EnumBuilder_Properties_5#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_5/VB/enumbuilder_properties_5.vb#4)]  
-  
+The following code sample demonstrates the use of the `Name` property to reference the name of the current `EnumBuilder`.  
+ 
+[!code-cpp[EnumBuilder_Properties_5#4](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_5/CPP/enumbuilder_properties_5.cpp#4)]
+[!code-csharp[EnumBuilder_Properties_5#4](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_5/CS/enumbuilder_properties_5.cs#4)]
+[!code-vb[EnumBuilder_Properties_5#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_5/VB/enumbuilder_properties_5.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1829,14 +1829,14 @@
         <value>Read-only. The namespace of this enum.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates the use of the `Namespace` property to reference the associated namespace of the current `EnumBuilder`.  
-  
- [!code-cpp[EnumBuilder_Properties_5#5](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_5/CPP/enumbuilder_properties_5.cpp#5)]
- [!code-csharp[EnumBuilder_Properties_5#5](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_5/CS/enumbuilder_properties_5.cs#5)]
- [!code-vb[EnumBuilder_Properties_5#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_5/VB/enumbuilder_properties_5.vb#5)]  
-  
+The following code sample demonstrates the use of the `Namespace` property to reference the associated namespace of the current `EnumBuilder`.  
+ 
+[!code-cpp[EnumBuilder_Properties_5#5](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_Properties_5/CPP/enumbuilder_properties_5.cpp#5)]
+[!code-csharp[EnumBuilder_Properties_5#5](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_Properties_5/CS/enumbuilder_properties_5.cs#5)]
+[!code-vb[EnumBuilder_Properties_5#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_Properties_5/VB/enumbuilder_properties_5.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1885,14 +1885,14 @@
         <summary>Sets a custom attribute using a custom attribute builder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample illustrates the use of `SetCustomAttribute` in the context of <xref:System.Reflection.Emit.EnumBuilder>, passing a <xref:System.Reflection.Emit.CustomAttributeBuilder>.  
-  
- [!code-cpp[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CPP/enumbuilder_setcustomattribute2.cpp#2)]
- [!code-csharp[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CS/enumbuilder_setcustomattribute2.cs#2)]
- [!code-vb[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/VB/enumbuilder_setcustomattribute2.vb#2)]  
-  
+The following code sample illustrates the use of `SetCustomAttribute` in the context of <xref:System.Reflection.Emit.EnumBuilder>, passing a <xref:System.Reflection.Emit.CustomAttributeBuilder>.  
+ 
+[!code-cpp[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CPP/enumbuilder_setcustomattribute2.cpp#2)]
+[!code-csharp[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CS/enumbuilder_setcustomattribute2.cs#2)]
+[!code-vb[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/VB/enumbuilder_setcustomattribute2.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1931,19 +1931,19 @@
         <summary>Sets a custom attribute using a specified custom attribute blob.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the metadata specification in the ECMA Partition II documentation for details on how to format `binaryAttribute`. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+See the metadata specification in the ECMA Partition II documentation for details on how to format `binaryAttribute`. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample illustrates the use of `SetCustomAttribute` in the context of <xref:System.Reflection.Emit.EnumBuilder>, passing a byte blob.  
-  
- [!code-cpp[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CPP/enumbuilder_setcustomattribute2.cpp#2)]
- [!code-csharp[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CS/enumbuilder_setcustomattribute2.cs#2)]
- [!code-vb[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/VB/enumbuilder_setcustomattribute2.vb#2)]  
-  
+The following code sample illustrates the use of `SetCustomAttribute` in the context of <xref:System.Reflection.Emit.EnumBuilder>, passing a byte blob.  
+ 
+[!code-cpp[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/cpp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CPP/enumbuilder_setcustomattribute2.cpp#2)]
+[!code-csharp[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/csharp/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/CS/enumbuilder_setcustomattribute2.cs#2)]
+[!code-vb[EnumBuilder_SetCustomAttribute2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EnumBuilder_SetCustomAttribute2/VB/enumbuilder_setcustomattribute2.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1979,10 +1979,10 @@
         <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -2013,10 +2013,10 @@
         <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -2043,10 +2043,10 @@
         <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -2087,10 +2087,10 @@
         <summary>Provides access to properties and methods exposed by an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
-  
+This method is for access to managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
@@ -2114,12 +2114,12 @@
         <value>Read-only. The internal handle for this enum.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
-  
- Use this handle to access the underlying metadata handle.  
-  
+You can retrieve the type using <xref:System.Type.GetType%2A?displayProperty=fullName> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName> and use reflection on the retrieved type.  
+ 
+Use this handle to access the underlying metadata handle.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This property is not currently supported.</exception>

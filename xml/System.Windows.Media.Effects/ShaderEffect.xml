@@ -14,54 +14,54 @@
     <summary>Provides a custom bitmap effect by using a <see cref="T:System.Windows.Media.Effects.PixelShader" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derive from the <xref:System.Windows.Media.Effects.ShaderEffect> class to implement a custom effect based on a single pixel shader.  
-  
- The following steps show how to create a custom effect.  
-  
+Derive from the <xref:System.Windows.Media.Effects.ShaderEffect> class to implement a custom effect based on a single pixel shader.  
+ 
+The following steps show how to create a custom effect.  
+ 
 1.  Load a <xref:System.Windows.Media.Effects.PixelShader> from precompiled High Level Shading Language (HLSL) bytecode.  
-  
+ 
 2.  Define dependency properties that represent the parameters of the effect and the <xref:System.Windows.Media.Brush>-based surface inputs. Use one of the <xref:System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty%2A> overloads to associate these inputs with register numbers that are referenced in the HLSL bytecode.  
-  
- The number of samplers is limited to 4.  
-  
- The following restrictions apply when using a PS 3.0 shader.  
-  
+ 
+The number of samplers is limited to 4.  
+ 
+The following restrictions apply when using a PS 3.0 shader.  
+ 
 -   When a PS 3.0 shader is assigned, the number of samplers increases to 8. Assign the PS 3.0 shader before other shaders to enable registering 8 samplers.  
-  
+ 
 -   The full shader constant register limit of 224 for floats is used. For more information, see [ps_3_0](http://go.microsoft.com/fwlink/?LinkId=166292).  
-  
+ 
 -   The following data types are supported in PS 3.0 shaders only. An exception is thrown if these are used in lower shader versions.  
-  
-    -   `int` and types convertible to `int`: `uint`, `byte`, `sbyte`, `long`, `ulong`, `short`, `ushort`, `char`  
-  
-    -   `bool`  
-  
+ 
+   -   `int` and types convertible to `int`: `uint`, `byte`, `sbyte`, `long`, `ulong`, `short`, `ushort`, `char`  
+ 
+   -   `bool`  
+ 
 -   If a valid PS 3.0 shader is loaded on a computer that does not have hardware support for PS 3.0, the shader is ignored. If the shader is invalid, no exception is thrown.  
-  
+ 
 -   If a computer has more than one video card, the behavior is defined by the least capable video card. For example, if the computer has two video cards, one of which supports PS 3.0 and one of which does not, the behavior is the same as if the computer does not support PS 3.0.  
-  
+ 
 -   If a computer supports rendering PS 3.0 in hardware, but an invalid PS 3.0 shader is assigned, the <xref:System.Windows.Media.Effects.PixelShader.InvalidPixelShaderEncountered> event is raised. An example of an invalid PS 3.0 shader is one compiled with the `ps_3_sw` flag. The <xref:System.Windows.Media.Effects.ShaderEffect> class accepts only PS 3.0 shaders that are compiled with the `ps_3_0` flag passed to fxc.exe. For more information, see [Effect-Compiler Tool](http://go.microsoft.com/fwlink/?LinkId=166293).  
-  
+ 
 > [!NOTE]
 >  PS 2.0 shaders run when rendering in software. However, even if PS 3.0 is supported by the system's hardware, PS 3.0 shaders do not run during software rendering.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to derive from the <xref:System.Windows.Media.Effects.ShaderEffect> class.  
-  
- [!code-csharp[System.Windows.Media.Effects.ShaderEffect#1](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Media.Effects.ShaderEffect/CS/ThresholdEffect.cs#1)]  
-  
- The following code example shows a shader that corresponds to the previous <xref:System.Windows.Media.Effects.ShaderEffect> class.  
-  
- [!code-csharp[System.Windows.Media.Effects.ShaderEffect#10](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Media.Effects.ShaderEffect/CS/Threshold.fx#10)]  
-  
- The following XAML shows how to use the custom shader effect.  
-  
- [!code-xml[System.Windows.Media.Effects.ShaderEffect#1000](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Media.Effects.ShaderEffect/CS/Window1.xaml#1000)]  
-  
+The following code example shows how to derive from the <xref:System.Windows.Media.Effects.ShaderEffect> class.  
+ 
+[!code-csharp[System.Windows.Media.Effects.ShaderEffect#1](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Media.Effects.ShaderEffect/CS/ThresholdEffect.cs#1)]  
+ 
+The following code example shows a shader that corresponds to the previous <xref:System.Windows.Media.Effects.ShaderEffect> class.  
+ 
+[!code-csharp[System.Windows.Media.Effects.ShaderEffect#10](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Media.Effects.ShaderEffect/CS/Threshold.fx#10)]  
+ 
+The following XAML shows how to use the custom shader effect.  
+ 
+[!code-xml[System.Windows.Media.Effects.ShaderEffect#1000](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Media.Effects.ShaderEffect/CS/Window1.xaml#1000)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.UIPermission">for full access to UI resources. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -100,10 +100,10 @@
         <returns>A modifiable clone of this instance. The returned clone is effectively a deep copy of the current object. The clone's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Effects.ShaderEffect.Clone%2A> method can be used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited <xref:System.Windows.Freezable.Clone%2A> method to provide a strongly typed implementation.  
-  
+The <xref:System.Windows.Media.Effects.ShaderEffect.Clone%2A> method can be used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited <xref:System.Windows.Freezable.Clone%2A> method to provide a strongly typed implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,12 +147,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,10 +214,10 @@
         <value>The index of the register that contains the partial derivatives.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex%2A> property to specify the shader register that contains the partial derivatives of the texture coordinates with respect to screen space. For example, if <xref:System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex%2A> is set to 4, the shader register c4 is used. Register c4 contains four float fields. The following High Level Shading Language (HLSL) code shows how this register is used. The `nextPixelUV` value represents the next pixel to the right.  
-  
+Use the <xref:System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex%2A> property to specify the shader register that contains the partial derivatives of the texture coordinates with respect to screen space. For example, if <xref:System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex%2A> is set to 4, the shader register c4 is used. Register c4 contains four float fields. The following High Level Shading Language (HLSL) code shows how this register is used. The `nextPixelUV` value represents the next pixel to the right.  
+ 
 ```  
 float4 ddxUvDdyUv : register(c4);  
 SamplerState  sampler : register(S0);  
@@ -228,23 +228,23 @@ nextPixelUV.v = ddxUvDdyUv.y + v;
   
 tex2D(sampler, nextPixelUV);  
 ```  
-  
- The following table shows how the register specified for <xref:System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex%2A> is filled.  
-  
+ 
+The following table shows how the register specified for <xref:System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex%2A> is filled.  
+ 
 |Register Constant|Derivative Value|  
 |-----------------------|----------------------|  
 |x component|ddx(u)|  
 |y component|ddx(v)|  
 |z component|ddy(u)|  
 |w component|ddy(v)|  
-  
- Texture coordinates are denoted as `(u, v)`. `ddx(u)` is the constant partial derivative of the texture coordinate component `u` with respect to the screen-space x-coordinate. `ddy(u)` is the partial derivative of the texture coordinate `u` with respect to the screen-space y-coordinate. Similarly, `ddx(v)` and `ddy(v)` are the corresponding screen-space derivatives for the texture coordinate component `v`.  
-  
+ 
+Texture coordinates are denoted as `(u, v)`. `ddx(u)` is the constant partial derivative of the texture coordinate component `u` with respect to the screen-space x-coordinate. `ddy(u)` is the partial derivative of the texture coordinate `u` with respect to the screen-space y-coordinate. Similarly, `ddx(v)` and `ddy(v)` are the corresponding screen-space derivatives for the texture coordinate component `v`.  
+ 
 > [!NOTE]
 >  HLSL has the ddx and ddy instructions to calculate these values, but these instructions are not available on all PixelShader 2.0 hardware.  
-  
- You may think of these constants in the following way. If you step 1 pixel to the right in screen space (in the x direction), then `ddx(u)` is the amount that `u` changes in texture space, and `ddx(v)` is the amount that `v` changes in texture space. If the effect is axis-aligned when it is rendered, then `ddx(v)` is 0. If the effect is rotated when it is rendered, then `ddx(v)` is non-zero.  
-  
+ 
+You may think of these constants in the following way. If you step 1 pixel to the right in screen space (in the x direction), then `ddx(u)` is the amount that `u` changes in texture space, and `ddx(v)` is the amount that `v` changes in texture space. If the effect is axis-aligned when it is rendered, then `ddx(v)` is 0. If the effect is rotated when it is rendered, then `ddx(v)` is non-zero.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex" /> property more than one time or after initial processing of the effect.</exception>
@@ -385,17 +385,17 @@ tex2D(sampler, nextPixelUV);
         <value>The <see cref="T:System.Windows.Media.Effects.PixelShader" /> for the effect.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_PixelShader"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Effects.ShaderEffect.PixelShaderProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -421,10 +421,10 @@ tex2D(sampler, nextPixelUV);
         <returns>A <see cref="T:System.Windows.PropertyChangedCallback" /> delegate that associates a dependency property and the shader constant register specified by <paramref name="floatRegisterIndex" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Media.Effects.ShaderEffect.PixelShaderConstantCallback%2A> method when you register a dependency property for a shader constant. The <xref:System.Windows.Media.Effects.ShaderEffect.PixelShaderConstantCallback%2A> method constructs a <xref:System.Windows.PropertyChangedCallback> delegate that, when invoked, creates an association between the dependency property and the shader constant register specified by `floatRegisterIndex`.  
-  
+Use the <xref:System.Windows.Media.Effects.ShaderEffect.PixelShaderConstantCallback%2A> method when you register a dependency property for a shader constant. The <xref:System.Windows.Media.Effects.ShaderEffect.PixelShaderConstantCallback%2A> method constructs a <xref:System.Windows.PropertyChangedCallback> delegate that, when invoked, creates an association between the dependency property and the shader constant register specified by `floatRegisterIndex`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The dependency property is an unknown type.</exception>
@@ -470,10 +470,10 @@ tex2D(sampler, nextPixelUV);
         <returns>A <see cref="T:System.Windows.PropertyChangedCallback" /> delegate that associates a dependency property and the shader sampler register specified by <paramref name="samplerRegisterIndex" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback%2A> method when you register a <xref:System.Windows.Media.Brush>-valued dependency property for a shader sampler. The <xref:System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback%2A> method constructs a <xref:System.Windows.PropertyChangedCallback> delegate that, when invoked, creates an association between the dependency property and the shader sampler register specified by `samplerRegisterIndex`.  
-  
+Use the <xref:System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback%2A> method when you register a <xref:System.Windows.Media.Brush>-valued dependency property for a shader sampler. The <xref:System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback%2A> method constructs a <xref:System.Windows.PropertyChangedCallback> delegate that, when invoked, creates an association between the dependency property and the shader sampler register specified by `samplerRegisterIndex`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -501,10 +501,10 @@ tex2D(sampler, nextPixelUV);
         <returns>A <see cref="T:System.Windows.PropertyChangedCallback" /> delegate that associates a dependency property and the shader sampler register specified by <paramref name="samplerRegisterIndex" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty%2A> method when you register a <xref:System.Windows.Media.Brush>-valued dependency property for a shader sampler. The <xref:System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty%2A> method constructs a <xref:System.Windows.PropertyChangedCallback> delegate that, when invoked, creates an association between the dependency property and the shader sampler register specified by `samplerRegisterIndex`.  
-  
+Use the <xref:System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty%2A> method when you register a <xref:System.Windows.Media.Brush>-valued dependency property for a shader sampler. The <xref:System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty%2A> method constructs a <xref:System.Windows.PropertyChangedCallback> delegate that, when invoked, creates an association between the dependency property and the shader sampler register specified by `samplerRegisterIndex`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

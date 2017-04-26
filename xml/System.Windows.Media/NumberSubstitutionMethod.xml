@@ -13,20 +13,20 @@
     <summary>Defines an enumerator class that specifies the type of number substitution to perform on numbers in a text run.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Most cultures use the decimal system to represent numbers, but many cultures use different digit shapes. The following table shows several numbering systems used by different cultures.  
-  
- ![Table of number substitution glyphs](~/add/media/numbersubstitution01.png "Table of number substitution glyphs")  
+Most cultures use the decimal system to represent numbers, but many cultures use different digit shapes. The following table shows several numbering systems used by different cultures.  
+ 
+![Table of number substitution glyphs](~/add/media/numbersubstitution01.png "Table of number substitution glyphs")  
 Example of the appearance of digits in different cultures  
-  
- It is not sufficient to provide alternate Unicode code points for each set of digit shapes, because, unlike letters, digits are used in calculations. Every application, every operating system, and every run-time library contains code dedicated to converting an internal binary format numeric value to a string of characters, and vice versa. These conversion routines are coded to use Unicode digits "0030" through "0039".  
-  
- The <xref:System.Windows.Media.NumberSubstitution> class provides functionality that allows different cultures to substitute the appropriate digit shapes at rendering time. This functionality is similar to the one used for providing font substitution and language dependent font rendering.  
-  
+ 
+It is not sufficient to provide alternate Unicode code points for each set of digit shapes, because, unlike letters, digits are used in calculations. Every application, every operating system, and every run-time library contains code dedicated to converting an internal binary format numeric value to a string of characters, and vice versa. These conversion routines are coded to use Unicode digits "0030" through "0039".  
+ 
+The <xref:System.Windows.Media.NumberSubstitution> class provides functionality that allows different cultures to substitute the appropriate digit shapes at rendering time. This functionality is similar to the one used for providing font substitution and language dependent font rendering.  
+ 
 > [!NOTE]
 >  Many cultures are discarding their traditional digits shapes and adopting Western digits shapes, therefore the number substitution functionality recognizes the distinction for each culture between traditional digit shapes and national standard digit shapes.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

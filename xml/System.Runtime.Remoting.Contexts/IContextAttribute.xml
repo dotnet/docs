@@ -17,10 +17,10 @@
     <summary>Identifies a context attribute.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Contexts.IContextAttribute> class is exposed from all context attributes. The attributes contribute a property that resides in a context and enforces a specific policy for the objects created in that context. For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
+The <xref:System.Runtime.Remoting.Contexts.IContextAttribute> class is exposed from all context attributes. The attributes contribute a property that resides in a context and enforces a specific policy for the objects created in that context. For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -47,10 +47,10 @@
         <summary>Returns context properties to the caller in the given message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Contexts.IContextAttribute.GetPropertiesForNewContext%2A> method can add context properties directly to the <xref:System.Runtime.Remoting.Activation.IConstructionCallMessage.ContextProperties%2A> property list in the <xref:System.Runtime.Remoting.Activation.IConstructionCallMessage> interface. The default implementation in the <xref:System.Runtime.Remoting.Contexts.ContextAttribute> class will add this to the context property list. Context attributes are free to override <xref:System.Runtime.Remoting.Contexts.IContextAttribute.GetPropertiesForNewContext%2A> and can implement their own behavior. For example, they can add to the list a new class that implements the context property.  
-  
+The <xref:System.Runtime.Remoting.Contexts.IContextAttribute.GetPropertiesForNewContext%2A> method can add context properties directly to the <xref:System.Runtime.Remoting.Activation.IConstructionCallMessage.ContextProperties%2A> property list in the <xref:System.Runtime.Remoting.Activation.IConstructionCallMessage> interface. The default implementation in the <xref:System.Runtime.Remoting.Contexts.ContextAttribute> class will add this to the context property list. Context attributes are free to override <xref:System.Runtime.Remoting.Contexts.IContextAttribute.GetPropertiesForNewContext%2A> and can implement their own behavior. For example, they can add to the list a new class that implements the context property.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

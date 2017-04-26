@@ -118,10 +118,10 @@
         <returns>An object that implements the activation factory interface.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In addition to the exceptions in the Exceptions section, any `HRESULT` other than `S_OK` that is returned by the underlying factory method will be marshaled as an exception.  
-  
+In addition to the exceptions in the Exceptions section, any `HRESULT` other than `S_OK` that is returned by the underlying factory method will be marshaled as an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -259,10 +259,10 @@
         <returns>An unmanaged pointer to the new [HSTRING](http://go.microsoft.com/fwlink/p/?LinkId=246451), or <see cref="F:System.IntPtr.Zero" /> if <paramref name="s" /> is <see cref="F:System.String.Empty" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.FreeHString%2A> method to release the [HSTRING](http://go.microsoft.com/fwlink/p/?LinkId=246451) when you are done using it.  
-  
+Use the <xref:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.FreeHString%2A> method to release the [HSTRING](http://go.microsoft.com/fwlink/p/?LinkId=246451) when you are done using it.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The [!INCLUDE[wrt](~/includes/wrt-md.md)] is not supported on the current version of the operating system.</exception>

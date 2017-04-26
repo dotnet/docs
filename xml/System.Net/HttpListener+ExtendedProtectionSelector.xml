@@ -26,10 +26,10 @@
     <returns>An <see cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" /> object that specifies the extended protection policy to use for this request.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.HttpListener.ExtendedProtectionSelector> class is used with integrated Windows authentication to provide extended protection. For each request, the delegate can choose the settings that the <xref:System.Net.HttpListener> instance will use to provide extended protection.  
-  
+The <xref:System.Net.HttpListener.ExtendedProtectionSelector> class is used with integrated Windows authentication to provide extended protection. For each request, the delegate can choose the settings that the <xref:System.Net.HttpListener> instance will use to provide extended protection.  
+ 
  ]]></format>
     </remarks>
   </Docs>

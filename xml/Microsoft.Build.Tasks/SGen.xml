@@ -157,10 +157,10 @@
         <value>The container that holds a key pair.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `SGen` task will sign the assembly by inserting a public key into the assembly manifest, and then will then sign the final assembly with the private key.  
-  
+The `SGen` task will sign the assembly by inserting a public key into the assembly manifest, and then will then sign the final assembly with the private key.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -183,10 +183,10 @@
         <value>A key pair or a public key to use to sign an assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The compiler inserts the public key in the assembly manifest and then signs the final assembly with the private key.  
-  
+The compiler inserts the public key in the assembly manifest and then signs the final assembly with the private key.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -315,10 +315,10 @@
           <see langword="true" /> if the <c>SGen</c> task should generate a serialization assembly; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is `true`, the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine will execute the `SGen` task and generate a serialization assembly. If this property is false, the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine will not execute the `SGen` task.  
-  
+If this property is `true`, the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine will execute the `SGen` task and generate a serialization assembly. If this property is false, the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine will not execute the `SGen` task.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

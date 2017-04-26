@@ -22,23 +22,23 @@
     <summary>Represents a primitive data type value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodePrimitiveExpression> can be used to represent an expression that indicates a primitive data type value.  
+<xref:System.CodeDom.CodePrimitiveExpression> can be used to represent an expression that indicates a primitive data type value.  
+ 
+The <xref:System.CodeDom.CodePrimitiveExpression.Value%2A> property specifies the primitive data type value to represent.  
+ 
+Primitive data types that can be represented using <xref:System.CodeDom.CodePrimitiveExpression> include `null`; string; 16-, 32-, and 64-bit signed integers; and single-precision and double-precision floating-point numbers.  
+ 
   
- The <xref:System.CodeDom.CodePrimitiveExpression.Value%2A> property specifies the primitive data type value to represent.  
-  
- Primitive data types that can be represented using <xref:System.CodeDom.CodePrimitiveExpression> include `null`; string; 16-, 32-, and 64-bit signed integers; and single-precision and double-precision floating-point numbers.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates use of <xref:System.CodeDom.CodePrimitiveExpression> to represent values of several primitive types.  
-  
- [!code-cpp[CodePrimitiveExpressionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodePrimitiveExpressionExample/CPP/codeprimitiveexpressionexample.cpp#2)]
- [!code-csharp[CodePrimitiveExpressionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodePrimitiveExpressionExample/CS/codeprimitiveexpressionexample.cs#2)]
- [!code-vb[CodePrimitiveExpressionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodePrimitiveExpressionExample/VB/codeprimitiveexpressionexample.vb#2)]  
-  
+The following example demonstrates use of <xref:System.CodeDom.CodePrimitiveExpression> to represent values of several primitive types.  
+ 
+[!code-cpp[CodePrimitiveExpressionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodePrimitiveExpressionExample/CPP/codeprimitiveexpressionexample.cpp#2)]
+[!code-csharp[CodePrimitiveExpressionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodePrimitiveExpressionExample/CS/codeprimitiveexpressionexample.cs#2)]
+[!code-vb[CodePrimitiveExpressionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodePrimitiveExpressionExample/VB/codeprimitiveexpressionexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -93,10 +93,10 @@
         <value>The primitive data type instance to represent the value of.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any .NET Framework primitive type can be used here.  
-  
+Any .NET Framework primitive type can be used here.  
+ 
  ]]></format>
         </remarks>
       </Docs>

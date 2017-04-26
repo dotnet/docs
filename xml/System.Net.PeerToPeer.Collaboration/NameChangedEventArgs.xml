@@ -32,10 +32,10 @@
         <value>Gets the new <see cref="P:System.Net.PeerToPeer.Collaboration.PeerEndPoint.Name" /> for the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unless specified, the default value for this property is `null`.  
-  
+Unless specified, the default value for this property is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -57,12 +57,12 @@
         <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unless specified, the default value for this property is `null.`  
-  
- If the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> is not associated with a contact, this property returns `null`.  
-  
+Unless specified, the default value for this property is `null.`  
+ 
+If the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> is not associated with a contact, this property returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,12 +85,12 @@
           <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> associated with the <see cref="P:System.Net.PeerToPeer.Collaboration.PeerEndPoint.Name" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unless specified, the default value for this property is `null.`  
-  
- If the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> is not associated with a contact, this property returns `null`.  
-  
+Unless specified, the default value for this property is `null.`  
+ 
+If the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> is not associated with a contact, this property returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

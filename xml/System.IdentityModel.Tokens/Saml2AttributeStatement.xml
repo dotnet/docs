@@ -14,10 +14,10 @@
     <summary>Represents the AttributeStatement element specified in [Saml2Core, 2.7.3].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the element that this class represents, see the SAML V2.0 Core specification.  
-  
+For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -36,10 +36,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" /> class with no attributes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes%2A> property is initialized to an empty collection.  
-  
+The <xref:System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes%2A> property is initialized to an empty collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes%2A> property (collection) is initialized with the attributes in the specified collection.  
-  
+The <xref:System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes%2A> property (collection) is initialized with the attributes in the specified collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -92,10 +92,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes%2A> property (collection) is initialized with the specified attribute.  
-  
+The <xref:System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes%2A> property (collection) is initialized with the specified attribute.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -119,10 +119,10 @@
         <value>A collection of type <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> that contains the attributes in the statement.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection contains the Attribute elements contained in the AttributeStatement element.  
-  
+The collection contains the Attribute elements contained in the AttributeStatement element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

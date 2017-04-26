@@ -16,19 +16,19 @@
     <summary>Provides an interface to retrieve an assembly or type by name.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This service is used to load types at design time.  
+This service is used to load types at design time.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example control provides an interface to call methods of the <xref:System.ComponentModel.Design.ITypeResolutionService> from design mode.  
-  
- [!code-cpp[ITypeResolutionServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ITypeResolutionServiceExample/CPP/ityperesolutionservicecontrol.cpp#1)]
- [!code-csharp[ITypeResolutionServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ITypeResolutionServiceExample/CS/ityperesolutionservicecontrol.cs#1)]
- [!code-vb[ITypeResolutionServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ITypeResolutionServiceExample/VB/ityperesolutionservicecontrol.vb#1)]  
-  
+The following example control provides an interface to call methods of the <xref:System.ComponentModel.Design.ITypeResolutionService> from design mode.  
+ 
+[!code-cpp[ITypeResolutionServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ITypeResolutionServiceExample/CPP/ityperesolutionservicecontrol.cpp#1)]
+[!code-csharp[ITypeResolutionServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ITypeResolutionServiceExample/CS/ityperesolutionservicecontrol.cs#1)]
+[!code-vb[ITypeResolutionServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ITypeResolutionServiceExample/VB/ityperesolutionservicecontrol.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -173,10 +173,10 @@
         <returns>An instance of <see cref="T:System.Type" /> that corresponds to the specified name, or <see langword="null" /> if no type can be found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the type cannot be loaded and the `throwOnError` parameter is `true`, this will throw an exception.  
-  
+If the type cannot be loaded and the `throwOnError` parameter is `true`, this will throw an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,10 +213,10 @@
         <returns>An instance of <see cref="T:System.Type" /> that corresponds to the specified name, or <see langword="null" /> if no type can be found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the type cannot be loaded and the `throwOnError` parameter is `true`, this will throw an exception.  
-  
+If the type cannot be loaded and the `throwOnError` parameter is `true`, this will throw an exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,10 +246,10 @@
         <summary>Adds a reference to the specified assembly.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once a reference to an assembly has been added to this service, this service can load types from names that do not specify an assembly.  
-  
+Once a reference to an assembly has been added to this service, this service can load types from names that do not specify an assembly.  
+ 
  ]]></format>
         </remarks>
       </Docs>

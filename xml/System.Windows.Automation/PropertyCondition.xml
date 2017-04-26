@@ -34,18 +34,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.PropertyCondition" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `property` parameter cannot be <xref:System.Windows.Automation.AutomationElement.BoundingRectangleProperty>.  
+The `property` parameter cannot be <xref:System.Windows.Automation.AutomationElement.BoundingRectangleProperty>.  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.PropertyCondition> specifies that the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element to be found has a control type of <xref:System.Windows.Automation.ControlType.List>. The <xref:System.Windows.Automation.PropertyCondition> is then used to obtain the list element from a combo box.  
-  
- [!code-csharp[UIAClient_snip#180](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#180)]
- [!code-vb[UIAClient_snip#180](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#180)]  
-  
+In the following example, a <xref:System.Windows.Automation.PropertyCondition> specifies that the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element to be found has a control type of <xref:System.Windows.Automation.ControlType.List>. The <xref:System.Windows.Automation.PropertyCondition> is then used to obtain the list element from a combo box.  
+ 
+[!code-csharp[UIAClient_snip#180](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#180)]
+[!code-vb[UIAClient_snip#180](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#180)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -71,13 +71,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.PropertyCondition" /> class, with flags.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses a <xref:System.Windows.Automation.PropertyCondition> to retrieve the [!INCLUDE[TLA#tla_uiautomation](~/includes/tlasharptla-uiautomation-md.md)] element representing the main form of an application. The form is located by a case-insensitive search for its string identifier.  
-  
- [!code-csharp[UIAClient_snip#110](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#110)]
- [!code-vb[UIAClient_snip#110](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#110)]  
-  
+The following example uses a <xref:System.Windows.Automation.PropertyCondition> to retrieve the [!INCLUDE[TLA#tla_uiautomation](~/includes/tlasharptla-uiautomation-md.md)] element representing the main form of an application. The form is located by a case-insensitive search for its string identifier.  
+ 
+[!code-csharp[UIAClient_snip#110](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#110)]
+[!code-vb[UIAClient_snip#110](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#110)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

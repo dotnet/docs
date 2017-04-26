@@ -22,12 +22,12 @@
     <summary>Describes the original settings of the <see cref="T:System.Runtime.InteropServices.VARFLAGS" /> in the COM type library from which the variable was imported.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `TypeLibVarFlags` is used in conjunction with the <xref:System.Runtime.InteropServices.TypeLibVarAttribute>. The flags are retained for reference only. They are not used by the common language runtime.  
-  
- For more information, see `VARFLAGS` in the MSDN library.  
-  
+`TypeLibVarFlags` is used in conjunction with the <xref:System.Runtime.InteropServices.TypeLibVarAttribute>. The flags are retained for reference only. They are not used by the common language runtime.  
+ 
+For more information, see `VARFLAGS` in the MSDN library.  
+ 
  ]]></format>
     </remarks>
   </Docs>

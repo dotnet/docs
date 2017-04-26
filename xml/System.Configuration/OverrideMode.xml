@@ -13,10 +13,10 @@
     <summary>Specifies the override behavior of a configuration element for configuration elements in child directories.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Configuration.OverrideMode> enumeration values to set the <xref:System.Configuration.SectionInformation.OverrideMode%2A> property of the <xref:System.Configuration.SectionInformation> class. You set this property in order to programmatically specify override behavior of a configuration element or group. To declaratively set the override behavior for all configuration elements inside a  element, use the `allowOverride` attribute. The <xref:System.Configuration.SectionInformation.OverrideMode%2A> property gives you more granular control over the elements inside a `location` element.  
-  
+Use the <xref:System.Configuration.OverrideMode> enumeration values to set the <xref:System.Configuration.SectionInformation.OverrideMode%2A> property of the <xref:System.Configuration.SectionInformation> class. You set this property in order to programmatically specify override behavior of a configuration element or group. To declaratively set the override behavior for all configuration elements inside a  element, use the `allowOverride` attribute. The <xref:System.Configuration.SectionInformation.OverrideMode%2A> property gives you more granular control over the elements inside a `location` element.  
+ 
  ]]></format>
     </remarks>
   </Docs>

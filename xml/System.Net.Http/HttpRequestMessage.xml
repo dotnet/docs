@@ -24,10 +24,10 @@
     <summary>Represents a HTTP request message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Http.HttpRequestMessage> class contains headers, the HTTP verb, and potentially data.  
-  
+The <xref:System.Net.Http.HttpRequestMessage> class contains headers, the HTTP verb, and potentially data.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -128,24 +128,24 @@
         <value>The content of a message</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contents of an HTTP message corresponds to the entity body defined in RFC 2616.  
-  
- A number of classes can be used for HTTP content. These include the following.  
-  
+The contents of an HTTP message corresponds to the entity body defined in RFC 2616.  
+ 
+A number of classes can be used for HTTP content. These include the following.  
+ 
 1.  <xref:System.Net.Http.ByteArrayContent> - HTTP content based on a byte array.  
-  
+ 
 2.  <xref:System.Net.Http.FormUrlEncodedContent> - HTTP content of name/value tuples encoded using application/x-www-form-urlencoded MIME type.  
-  
+ 
 3.  <xref:System.Net.Http.MultipartContent> - HTTP content that gets serialized using the multipart/* content type specification.  
-  
+ 
 4.  <xref:System.Net.Http.MultipartFormDataContent> - HTTP content encoded using the multipart/form-data MIME type.  
-  
+ 
 5.  <xref:System.Net.Http.StreamContent> - HTTP content based on a stream.  
-  
+ 
 6.  <xref:System.Net.Http.StringContent> - HTTP content based on a string.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.HttpRequestMessage" /> and optionally disposes of the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Net.Http.HttpRequestMessage> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Net.Http.HttpRequestMessage> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,10 +304,10 @@
         <value>The <see cref="T:System.Uri" /> used for the HTTP request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the request <xref:System.Uri> is a relative Uri, it will be combined with the  <xref:System.Net.Http.HttpClient.BaseAddress%2A>.  
-  
+If the request <xref:System.Uri> is a relative Uri, it will be combined with the  <xref:System.Net.Http.HttpClient.BaseAddress%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -27,12 +27,12 @@
     <summary>Provides standard facilities for creating and managing a type-safe, ordered collection of <see cref="T:System.Windows.Documents.TableCell" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection supports standard zero-based indexing.  
-  
- The <xref:System.Windows.Documents.TableRow.Cells%2A> property provided by the <xref:System.Windows.Documents.TableRow> class returns a <xref:System.Windows.Documents.TableCellCollection>.  
-  
+This collection supports standard zero-based indexing.  
+ 
+The <xref:System.Windows.Documents.TableRow.Cells%2A> property provided by the <xref:System.Windows.Documents.TableRow> class returns a <xref:System.Windows.Documents.TableCellCollection>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,12 +77,12 @@
         <value>The preallocated collection item capacity for this collection. The default value is 8.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> property represents the number of preallocated slots for storing items in this collection, whereas the <xref:System.Windows.Documents.TableCellCollection.Count%2A> property represents the actual number of items currently in the collection. The value of <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> is always at least as large as the value of <xref:System.Windows.Documents.TableCellCollection.Count%2A>.  
-  
- When newly added collection items cause the collection count to exceed the collection capacity, the capacity is increased automatically to accommodate the newly added collection items.  Increasing the collection capacity involves allocating additional collection slots, which incurs both performance and memory overhead.  Use the <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> property to optimize the collection capacity in cases where the total or maximum number of collection items is known in advance. Use the <xref:System.Windows.Documents.TableCellCollection.TrimToSize%2A> method to cause the collection capacity to equalize with the current collection count.  
-  
+The <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> property represents the number of preallocated slots for storing items in this collection, whereas the <xref:System.Windows.Documents.TableCellCollection.Count%2A> property represents the actual number of items currently in the collection. The value of <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> is always at least as large as the value of <xref:System.Windows.Documents.TableCellCollection.Count%2A>.  
+ 
+When newly added collection items cause the collection count to exceed the collection capacity, the capacity is increased automatically to accommodate the newly added collection items.  Increasing the collection capacity involves allocating additional collection slots, which incurs both performance and memory overhead.  Use the <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> property to optimize the collection capacity in cases where the total or maximum number of collection items is known in advance. Use the <xref:System.Windows.Documents.TableCellCollection.TrimToSize%2A> method to cause the collection capacity to equalize with the current collection count.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Raised when an attempt is made to set <see cref="P:System.Windows.Documents.TableCellCollection.Capacity" /> to a value that is less than the current value of <see cref="P:System.Windows.Documents.TableCellCollection.Count" />.</exception>
@@ -105,10 +105,10 @@
         <summary>Clears all items from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After calling <xref:System.Windows.Documents.TableCellCollection.Clear%2A>, the value of the <xref:System.Windows.Documents.TableCellCollection.Count%2A> property becomes **0** and the value of the <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> property is unchanged. To set a new capacity, call <xref:System.Windows.Documents.TableCellCollection.TrimToSize%2A> or explicitly set a new capacity through the <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> property.  
-  
+After calling <xref:System.Windows.Documents.TableCellCollection.Clear%2A>, the value of the <xref:System.Windows.Documents.TableCellCollection.Count%2A> property becomes **0** and the value of the <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> property is unchanged. To set a new capacity, call <xref:System.Windows.Documents.TableCellCollection.TrimToSize%2A> or explicitly set a new capacity through the <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,12 +205,12 @@
         <value>The number of items currently contained by the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> property represents the number of pre-allocated slots for storing items in this collection, whereas the <xref:System.Windows.Documents.TableCellCollection.Count%2A> property represents the actual number of items currently in the collection.  The value of <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> is always at least as large as the value of <xref:System.Windows.Documents.TableCellCollection.Count%2A>.  
-  
- When newly added collection items cause the collection count to exceed the collection capacity, the capacity is increased automatically to accommodate the newly added collection items. Increasing the collection capacity involves allocating additional collection slots, which incurs both performance and memory overhead.  Use the <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> property to optimize the collection capacity in cases where the total or maximum number of collection items is known in advance. Use the <xref:System.Windows.Documents.TableCellCollection.TrimToSize%2A> method to cause the collection capacity to equalize with the current collection count.  
-  
+The <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> property represents the number of pre-allocated slots for storing items in this collection, whereas the <xref:System.Windows.Documents.TableCellCollection.Count%2A> property represents the actual number of items currently in the collection.  The value of <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> is always at least as large as the value of <xref:System.Windows.Documents.TableCellCollection.Count%2A>.  
+ 
+When newly added collection items cause the collection count to exceed the collection capacity, the capacity is increased automatically to accommodate the newly added collection items. Increasing the collection capacity involves allocating additional collection slots, which incurs both performance and memory overhead.  Use the <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> property to optimize the collection capacity in cases where the total or maximum number of collection items is known in advance. Use the <xref:System.Windows.Documents.TableCellCollection.TrimToSize%2A> method to cause the collection capacity to equalize with the current collection count.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -259,12 +259,12 @@
         <summary>Inserts a specified item in the collection at a specified index position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Documents.TableCellCollection.Count%2A> equals <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> for this collection, the collection capacity is increased automatically before the new item is inserted. Set `index` equal to the value of <xref:System.Windows.Documents.TableCellCollection.Count%2A> to append a new collection item to the collection.  
-  
- Indices for existing collection items might be adjusted to accommodate the newly inserted collection item.  
-  
+If <xref:System.Windows.Documents.TableCellCollection.Count%2A> equals <xref:System.Windows.Documents.TableCellCollection.Capacity%2A> for this collection, the collection capacity is increased automatically before the new item is inserted. Set `index` equal to the value of <xref:System.Windows.Documents.TableCellCollection.Count%2A> to append a new collection item to the collection.  
+ 
+Indices for existing collection items might be adjusted to accommodate the newly inserted collection item.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Raised when <paramref name="index" /> is less than 0.</exception>
@@ -328,10 +328,10 @@
         <value>The collection item at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is an indexed property that supports standard indexing syntax (similar to that used to access a particular cell in an array).  
-  
+This is an indexed property that supports standard indexing syntax (similar to that used to access a particular cell in an array).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Raised when <paramref name="index" /> is less than zero, or when <paramref name="index" /> is greater than or equal to <see cref="P:System.Windows.Documents.TableCellCollection.Count" />.</exception>
@@ -359,10 +359,10 @@
           <see langword="true" /> if the specified item was found and removed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Indices for remaining collection items might be adjusted to reflect the removed collection item.  
-  
+Indices for remaining collection items might be adjusted to reflect the removed collection item.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Raised if <paramref name="item" /> is not present in the collection.</exception>
@@ -389,10 +389,10 @@
         <summary>Removes an item, specified by index, from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Indices for remaining collection items might be adjusted to reflect the removed collection item.  
-  
+Indices for remaining collection items might be adjusted to reflect the removed collection item.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Raised when <paramref name="index" /> is less than zero, or when <paramref name="index" /> is greater than or equal to <see cref="P:System.Windows.Documents.TableCellCollection.Count" />.</exception>
@@ -420,10 +420,10 @@
         <summary>Removes a range of items, specified by beginning index and count, from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Indices for remaining collection items might be adjusted to reflect the removed collection items.  
-  
+Indices for remaining collection items might be adjusted to reflect the removed collection items.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Raised when <paramref name="index" /> or <paramref name="count" /> is less than zero, or when <paramref name="index" /> is greater than or equal to <see cref="P:System.Windows.Documents.TableCellCollection.Count" />.</exception>
@@ -466,10 +466,10 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -492,10 +492,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -521,10 +521,10 @@
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type-safe <xref:System.Windows.Documents.TableCellCollection.Add%2A> method instead.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type-safe <xref:System.Windows.Documents.TableCellCollection.Add%2A> method instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -546,10 +546,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Clear" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type-safe <xref:System.Windows.Documents.TableCellCollection.Clear%2A> method instead.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type-safe <xref:System.Windows.Documents.TableCellCollection.Clear%2A> method instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -576,10 +576,10 @@
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Documents.TableCellCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type-safe <xref:System.Windows.Documents.TableCellCollection.Contains%2A> method instead.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type-safe <xref:System.Windows.Documents.TableCellCollection.Contains%2A> method instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -605,10 +605,10 @@
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type-safe <xref:System.Windows.Documents.TableCellCollection.IndexOf%2A> method instead.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type-safe <xref:System.Windows.Documents.TableCellCollection.IndexOf%2A> method instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -635,10 +635,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type-safe <xref:System.Windows.Documents.TableCellCollection.Insert%2A> method instead.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type-safe <xref:System.Windows.Documents.TableCellCollection.Insert%2A> method instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -661,10 +661,10 @@
           <see langword="true" /> if the the <see cref="T:System.Windows.Documents.TableCellCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -687,10 +687,10 @@
           <see langword="true" /> if the the <see cref="T:System.Windows.Documents.TableCellCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -716,10 +716,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type-safe <xref:System.Windows.Documents.TableCellCollection.Item%2A> property instead.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type-safe <xref:System.Windows.Documents.TableCellCollection.Item%2A> property instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -744,10 +744,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type safe <xref:System.Windows.Documents.TableCellCollection.Remove%2A>, <xref:System.Windows.Documents.TableCellCollection.RemoveAt%2A>, or <xref:System.Windows.Documents.TableCellCollection.RemoveRange%2A> methods instead  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type safe <xref:System.Windows.Documents.TableCellCollection.Remove%2A>, <xref:System.Windows.Documents.TableCellCollection.RemoveAt%2A>, or <xref:System.Windows.Documents.TableCellCollection.RemoveRange%2A> methods instead  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -772,10 +772,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.RemoveAt(System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type safe <xref:System.Windows.Documents.TableCellCollection.Remove%2A>, <xref:System.Windows.Documents.TableCellCollection.RemoveAt%2A>, or <xref:System.Windows.Documents.TableCellCollection.RemoveRange%2A> methods instead.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.TableCellCollection> instance is cast to an <xref:System.Collections.IList> interface. Use the type safe <xref:System.Windows.Documents.TableCellCollection.Remove%2A>, <xref:System.Windows.Documents.TableCellCollection.RemoveAt%2A>, or <xref:System.Windows.Documents.TableCellCollection.RemoveRange%2A> methods instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -797,10 +797,10 @@
         <summary>Optimizes memory consumption for the collection by setting the underlying collection <see cref="P:System.Windows.Documents.TableCellCollection.Capacity" /> equal to the <see cref="P:System.Windows.Documents.TableCellCollection.Count" /> of items currently in the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to minimize memory overhead for a collection, particularly if the set of items contained by the collection is expected to be static.  
-  
+This method can be used to minimize memory overhead for a collection, particularly if the set of items contained by the collection is expected to be static.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,19 +14,19 @@
     <summary>Pens for all the standard colors. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.Pen> objects returned by this class are immutable, meaning their properties cannot be changed. To see the colors represented by pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+The <xref:System.Drawing.Pen> objects returned by this class are immutable, meaning their properties cannot be changed. To see the colors represented by pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following method demonstrates how to use the <xref:System.Drawing.Pens> class.  This example is designed to be used with Windows Forms.  Paste the code into a form and call the `UsePensClass` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.PensExample#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PensExample/CPP/form1.cpp#4)]
- [!code-csharp[System.Drawing.PensExample#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PensExample/CS/form1.cs#4)]
- [!code-vb[System.Drawing.PensExample#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PensExample/VB/form1.vb#4)]  
-  
+The following method demonstrates how to use the <xref:System.Drawing.Pens> class.  This example is designed to be used with Windows Forms.  Paste the code into a form and call the `UsePensClass` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.PensExample#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PensExample/CPP/form1.cpp#4)]
+[!code-csharp[System.Drawing.PensExample#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PensExample/CS/form1.cs#4)]
+[!code-vb[System.Drawing.PensExample#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PensExample/VB/form1.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,10 +73,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,10 +123,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,10 +148,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,10 +173,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,10 +223,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,10 +248,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -273,10 +273,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -298,10 +298,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -323,10 +323,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,10 +348,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,10 +373,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,10 +398,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,10 +423,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -448,10 +448,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -473,10 +473,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -498,10 +498,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -523,10 +523,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -548,10 +548,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -573,10 +573,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -598,10 +598,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -623,10 +623,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -648,10 +648,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -673,10 +673,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -698,10 +698,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -723,10 +723,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -748,10 +748,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -773,10 +773,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -798,10 +798,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -823,10 +823,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -848,10 +848,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -873,10 +873,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -898,10 +898,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -923,10 +923,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -948,10 +948,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -973,10 +973,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -998,10 +998,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1023,10 +1023,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1048,10 +1048,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1073,10 +1073,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1098,10 +1098,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1123,10 +1123,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1148,10 +1148,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1173,10 +1173,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1198,10 +1198,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1223,10 +1223,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1248,10 +1248,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1273,10 +1273,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1298,10 +1298,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1323,10 +1323,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1348,10 +1348,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1373,10 +1373,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1398,10 +1398,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1423,10 +1423,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1448,10 +1448,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1473,10 +1473,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1498,10 +1498,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1523,10 +1523,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1548,10 +1548,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1573,10 +1573,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1598,10 +1598,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1623,10 +1623,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1648,10 +1648,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1673,10 +1673,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1698,10 +1698,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1723,10 +1723,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1748,10 +1748,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1773,10 +1773,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1798,10 +1798,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1823,10 +1823,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1848,10 +1848,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1873,10 +1873,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1898,10 +1898,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1923,10 +1923,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1948,10 +1948,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1973,10 +1973,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1998,10 +1998,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2023,10 +2023,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2048,10 +2048,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2073,10 +2073,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2098,10 +2098,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2123,10 +2123,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2148,10 +2148,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2173,10 +2173,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2198,10 +2198,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2223,10 +2223,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2248,10 +2248,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2273,10 +2273,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2298,10 +2298,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2323,10 +2323,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2348,10 +2348,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2373,10 +2373,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2398,10 +2398,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2423,10 +2423,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2448,10 +2448,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2473,10 +2473,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2498,10 +2498,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2523,10 +2523,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2548,10 +2548,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2573,10 +2573,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2598,10 +2598,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2623,10 +2623,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2648,10 +2648,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2673,10 +2673,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2698,10 +2698,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2723,10 +2723,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2748,10 +2748,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2773,10 +2773,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2798,10 +2798,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2823,10 +2823,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2848,10 +2848,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2873,10 +2873,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2898,10 +2898,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2923,10 +2923,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2948,10 +2948,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2973,10 +2973,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2998,10 +2998,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3023,10 +3023,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3048,10 +3048,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3073,10 +3073,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3098,10 +3098,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3123,10 +3123,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3148,10 +3148,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3173,10 +3173,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3198,10 +3198,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3223,10 +3223,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3248,10 +3248,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3273,10 +3273,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3298,10 +3298,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3323,10 +3323,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3348,10 +3348,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3373,10 +3373,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3398,10 +3398,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3423,10 +3423,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3448,10 +3448,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3473,10 +3473,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3498,10 +3498,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3523,10 +3523,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3548,10 +3548,10 @@
         <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
-  
+To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+ 
  ]]></format>
         </remarks>
       </Docs>

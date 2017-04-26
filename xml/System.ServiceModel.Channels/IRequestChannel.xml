@@ -16,10 +16,10 @@
     <summary>Defines the contract that a channel must implement to be on the requesting side of a request-reply communication between messaging endpoints.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.IRequestChannel> defines synchronous and asynchronous variants of a <xref:System.ServiceModel.ClientBase%601.ChannelBase%601.System%23ServiceModel%23Channels%23IRequestChannel%23Request%2A> method that returns a response message. It also provides a <xref:System.ServiceModel.Channels.IRequestChannel.RemoteAddress%2A> and <xref:System.ServiceModel.Channels.IRequestChannel.Via%2A> properties to retrieve the endpoint address and URI to which the request message is sent.  
-  
+The <xref:System.ServiceModel.Channels.IRequestChannel> defines synchronous and asynchronous variants of a <xref:System.ServiceModel.ClientBase%601.ChannelBase%601.System%23ServiceModel%23Channels%23IRequestChannel%23Request%2A> method that returns a response message. It also provides a <xref:System.ServiceModel.Channels.IRequestChannel.RemoteAddress%2A> and <xref:System.ServiceModel.Channels.IRequestChannel.Via%2A> properties to retrieve the endpoint address and URI to which the request message is sent.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,17 +50,17 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous message transmission.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the request message is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+If the request message is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to implement this method.  
-  
- [!code-csharp[S_UE_HttpCookieSession#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#2)]  
-  
+The following code shows how to implement this method.  
+ 
+[!code-csharp[S_UE_HttpCookieSession#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,21 +93,21 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous message transmission.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the request message is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> should be thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+If the request message is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> should be thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+ 
+If a `timeout` is passed while calling the function then that value is used. If the <xref:System.ServiceModel.Channels.Binding.SendTimeout%2A> is set on the binding, then the value on the binding is used if no `timeout` is specified while calling the function.  
+ 
+The <xref:System.ServiceModel.Channels.ChannelBase.DefaultSendTimeout%2A> is used if no timeout is specified on either the binding or while calling the function. This default value is 1 minute.  
+ 
   
- If a `timeout` is passed while calling the function then that value is used. If the <xref:System.ServiceModel.Channels.Binding.SendTimeout%2A> is set on the binding, then the value on the binding is used if no `timeout` is specified while calling the function.  
-  
- The <xref:System.ServiceModel.Channels.ChannelBase.DefaultSendTimeout%2A> is used if no timeout is specified on either the binding or while calling the function. This default value is 1 minute.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to implement this method:  
-  
- [!code-csharp[S_UE_HttpCookieSession#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#3)]  
-  
+The following code shows how to implement this method:  
+ 
+[!code-csharp[S_UE_HttpCookieSession#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#3)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -137,17 +137,17 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.Message" /> received in response to the request.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the request message is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+If the request message is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to implement this method.  
-  
- [!code-csharp[S_UE_HttpCookieSession#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#4)]  
-  
+The following code shows how to implement this method.  
+ 
+[!code-csharp[S_UE_HttpCookieSession#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,17 +170,17 @@
         <value>The <see cref="T:System.ServiceModel.EndpointAddress" /> to which the request channel sends messages.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.EndpointAddress> serves as both the ultimate destination and the physical address if a <xref:System.ServiceModel.Channels.IRequestChannel.Via%2A> is not specified. If the <xref:System.ServiceModel.Channels.IRequestChannel.Via%2A> is specified, then that is the actual physical address to which the message is sent and through which the message must go to arrive at its destination.  
+The <xref:System.ServiceModel.EndpointAddress> serves as both the ultimate destination and the physical address if a <xref:System.ServiceModel.Channels.IRequestChannel.Via%2A> is not specified. If the <xref:System.ServiceModel.Channels.IRequestChannel.Via%2A> is specified, then that is the actual physical address to which the message is sent and through which the message must go to arrive at its destination.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to implement this property.  
-  
- [!code-csharp[S_UE_HttpCookieSession#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#0)]  
-  
+The following code shows how to implement this property.  
+ 
+[!code-csharp[S_UE_HttpCookieSession#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -207,25 +207,25 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.Message" /> received in response to the request.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implementations of <xref:System.ServiceModel.Channels.IRequestChannel> ensure that the response message is correlated with the request message.  
+Implementations of <xref:System.ServiceModel.Channels.IRequestChannel> ensure that the response message is correlated with the request message.  
+ 
+Generally, if an implementation of <xref:System.ServiceModel.Channels.IRequestChannel> receives a message that is not correlated to an outstanding request, it is dropped.  
+ 
+The <xref:System.ServiceModel.Channels.IRequestChannel.Request%2A> method can be called concurrently across multiple threads.  
+ 
+Passing the message into the request channel causes the message to be accessed. After you call <xref:System.ServiceModel.Channels.IRequestChannel.Request%2A>, you can no longer inspect the message or call <xref:System.ServiceModel.Channels.Message.Close%2A> on the message.  
+ 
+If the request message is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+ 
   
- Generally, if an implementation of <xref:System.ServiceModel.Channels.IRequestChannel> receives a message that is not correlated to an outstanding request, it is dropped.  
-  
- The <xref:System.ServiceModel.Channels.IRequestChannel.Request%2A> method can be called concurrently across multiple threads.  
-  
- Passing the message into the request channel causes the message to be accessed. After you call <xref:System.ServiceModel.Channels.IRequestChannel.Request%2A>, you can no longer inspect the message or call <xref:System.ServiceModel.Channels.Message.Close%2A> on the message.  
-  
- If the request message is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to implement this method:  
-  
- [!code-csharp[S_UE_HttpCookieSession#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#5)]  
-  
+The following code shows how to implement this method:  
+ 
+[!code-csharp[S_UE_HttpCookieSession#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,29 +254,29 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.Message" /> received in response to the request.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implementations of <xref:System.ServiceModel.Channels.IRequestChannel> ensure that the response message is correlated with the request message.  
+Implementations of <xref:System.ServiceModel.Channels.IRequestChannel> ensure that the response message is correlated with the request message.  
+ 
+Generally, if an implementation of <xref:System.ServiceModel.Channels.IRequestChannel> receives a message that is not correlated to an outstanding request, it is dropped.  
+ 
+The <xref:System.ServiceModel.Channels.IRequestChannel.Request%2A> method can be called concurrently across multiple threads.  
+ 
+Passing the message into the request channel causes the message to be accessed. After you call <xref:System.ServiceModel.Channels.IRequestChannel.Request%2A>, you can no longer inspect the message or call <xref:System.ServiceModel.Channels.Message.Close%2A> on the message.  
+ 
+If the request message is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+ 
+If a `timeout` is passed while calling the function then that value is used. If the <xref:System.ServiceModel.Channels.Binding.SendTimeout%2A> is set on the binding, then the value on the binding is used if no `timeout` is specified while calling the function.  
+ 
+The <xref:System.ServiceModel.Channels.ChannelBase.DefaultSendTimeout%2A> is used if no timeout is specified on either the binding or while calling the function. This default value is 1 minute.  
+ 
   
- Generally, if an implementation of <xref:System.ServiceModel.Channels.IRequestChannel> receives a message that is not correlated to an outstanding request, it is dropped.  
-  
- The <xref:System.ServiceModel.Channels.IRequestChannel.Request%2A> method can be called concurrently across multiple threads.  
-  
- Passing the message into the request channel causes the message to be accessed. After you call <xref:System.ServiceModel.Channels.IRequestChannel.Request%2A>, you can no longer inspect the message or call <xref:System.ServiceModel.Channels.Message.Close%2A> on the message.  
-  
- If the request message is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
-  
- If a `timeout` is passed while calling the function then that value is used. If the <xref:System.ServiceModel.Channels.Binding.SendTimeout%2A> is set on the binding, then the value on the binding is used if no `timeout` is specified while calling the function.  
-  
- The <xref:System.ServiceModel.Channels.ChannelBase.DefaultSendTimeout%2A> is used if no timeout is specified on either the binding or while calling the function. This default value is 1 minute.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to implement this method.  
-  
- [!code-csharp[S_UE_HttpCookieSession#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#6)]  
-  
+The following code shows how to implement this method.  
+ 
+[!code-csharp[S_UE_HttpCookieSession#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#6)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -302,17 +302,17 @@
         <value>The <see cref="T:System.Uri" /> that contains the transport address to which the message is sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.EndpointAddress> serves as both the ultimate destination and the physical address if a <xref:System.ServiceModel.Channels.IRequestChannel.Via%2A> is not specified. If the <xref:System.ServiceModel.Channels.IRequestChannel.Via%2A> is specified, then that is the actual physical address to which the message is sent and through which the message must go to arrive at its destination.  
+The <xref:System.ServiceModel.EndpointAddress> serves as both the ultimate destination and the physical address if a <xref:System.ServiceModel.Channels.IRequestChannel.Via%2A> is not specified. If the <xref:System.ServiceModel.Channels.IRequestChannel.Via%2A> is specified, then that is the actual physical address to which the message is sent and through which the message must go to arrive at its destination.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to implement this property.  
-  
- [!code-csharp[S_UE_HttpCookieSession#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#1)]  
-  
+The following code shows how to implement this property.  
+ 
+[!code-csharp[S_UE_HttpCookieSession#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

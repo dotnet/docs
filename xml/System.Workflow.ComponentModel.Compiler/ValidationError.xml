@@ -14,22 +14,22 @@
     <summary>Represents the base class for all validation errors.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create and manipulate validation errors as part of a custom validation routine.  
-  
- This code example is part of the Send Mail SDK Sample and is from the SendEMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
-  
- [!code-csharp[WF_Samples#235](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#235)]
- [!code-vb[WF_Samples#235](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#235)]  
-  
+The following example shows how to create and manipulate validation errors as part of a custom validation routine.  
+ 
+This code example is part of the Send Mail SDK Sample and is from the SendEMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+ 
+[!code-csharp[WF_Samples#235](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#235)]
+[!code-vb[WF_Samples#235](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#235)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -194,10 +194,10 @@
         <value>A <see cref="T:System.String" /> that contains the name of the property that failed to validate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used by the designer to display configuration errors and navigate the user to the properties that contain the errors.  
-  
+This property is used by the designer to display configuration errors and navigate the user to the properties that contain the errors.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,15 +248,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following example shows how to create and manipulate validation errors as part of a custom validation routine.  
-  
- This code example is part of the Send Mail SDK Sample and is from the SendEMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
-  
- [!code-csharp[WF_Samples#235](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#235)]
- [!code-vb[WF_Samples#235](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#235)]  
-  
+The following example shows how to create and manipulate validation errors as part of a custom validation routine.  
+ 
+This code example is part of the Send Mail SDK Sample and is from the SendEMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+ 
+[!code-csharp[WF_Samples#235](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#235)]
+[!code-vb[WF_Samples#235](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#235)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

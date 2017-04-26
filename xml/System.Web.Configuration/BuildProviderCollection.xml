@@ -19,17 +19,17 @@
     <summary>Represents a collection of <see cref="T:System.Web.Configuration.BuildProvider" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.BuildProviderCollection> is used to compile custom resource files. You can have any number of build providers. The <xref:System.Web.Configuration.BuildProviderCollection> does not refer to any actual element in the underlying configuration file. It is a construct that allows easy access to the compilation information it contains.  
+The <xref:System.Web.Configuration.BuildProviderCollection> is used to compile custom resource files. You can have any number of build providers. The <xref:System.Web.Configuration.BuildProviderCollection> does not refer to any actual element in the underlying configuration file. It is a construct that allows easy access to the compilation information it contains.  
+ 
   
-   
-  
+ 
 ## Examples  
- This section provides two code examples. The first demonstrates how to declaratively specify values for several properties of the <xref:System.Web.Configuration.BuildProviderCollection> class. The second demonstrates how to use members of the <xref:System.Web.Configuration.BuildProviderCollection> class.  
-  
- The following configuration file example shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.BuildProviderCollection> class.  
-  
+This section provides two code examples. The first demonstrates how to declaratively specify values for several properties of the <xref:System.Web.Configuration.BuildProviderCollection> class. The second demonstrates how to use members of the <xref:System.Web.Configuration.BuildProviderCollection> class.  
+ 
+The following configuration file example shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.BuildProviderCollection> class.  
+ 
 ```  
 <system.web>  
   <compilation>   
@@ -72,12 +72,12 @@
 </system.web>  
   
 ```  
-  
- The following code example demonstrates how to use members of the <xref:System.Web.Configuration.BuildProviderCollection> class.  
-  
- [!code-csharp[System.Web.Configuration.BuildProviderCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/CS/BuildProviderCollection.cs#1)]
- [!code-vb[System.Web.Configuration.BuildProviderCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/VB/BuildProviderCollection.vb#1)]  
-  
+ 
+The following code example demonstrates how to use members of the <xref:System.Web.Configuration.BuildProviderCollection> class.  
+ 
+[!code-csharp[System.Web.Configuration.BuildProviderCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/CS/BuildProviderCollection.cs#1)]
+[!code-vb[System.Web.Configuration.BuildProviderCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/VB/BuildProviderCollection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -117,18 +117,18 @@
         <summary>Adds a <see cref="T:System.Web.Configuration.BuildProvider" /> object to the <see cref="T:System.Web.Configuration.BuildProviderCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.Configuration.BuildProvider> object already exists in the collection, the build provider is ignored.  
+If the <xref:System.Web.Configuration.BuildProvider> object already exists in the collection, the build provider is ignored.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.Configuration.BuildProviderCollection.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.BuildProviderCollection> class.  
-  
- [!code-csharp[System.Web.Configuration.BuildProviderCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/CS/BuildProviderCollection.cs#4)]
- [!code-vb[System.Web.Configuration.BuildProviderCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/VB/BuildProviderCollection.vb#4)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.Configuration.BuildProviderCollection.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.BuildProviderCollection> class.  
+ 
+[!code-csharp[System.Web.Configuration.BuildProviderCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/CS/BuildProviderCollection.cs#4)]
+[!code-vb[System.Web.Configuration.BuildProviderCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/VB/BuildProviderCollection.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,18 +274,18 @@
         <summary>Removes a <see cref="T:System.Web.Configuration.BuildProvider" /> object from the <see cref="T:System.Web.Configuration.BuildProviderCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.Configuration.BuildProvider> does not exist in the collection, the build provider is ignored.  
+If the <xref:System.Web.Configuration.BuildProvider> does not exist in the collection, the build provider is ignored.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.Configuration.BuildProviderCollection.Remove%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.BuildProviderCollection> class.  
-  
- [!code-csharp[System.Web.Configuration.BuildProviderCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/CS/BuildProviderCollection.cs#5)]
- [!code-vb[System.Web.Configuration.BuildProviderCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/VB/BuildProviderCollection.vb#5)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.Configuration.BuildProviderCollection.Remove%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.BuildProviderCollection> class.  
+ 
+[!code-csharp[System.Web.Configuration.BuildProviderCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/CS/BuildProviderCollection.cs#5)]
+[!code-vb[System.Web.Configuration.BuildProviderCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/VB/BuildProviderCollection.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -310,18 +310,18 @@
         <summary>Removes the <see cref="T:System.Web.Configuration.BuildProvider" /> object at the specified index from the <see cref="T:System.Web.Configuration.BuildProviderCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the index does not specify a <xref:System.Web.Configuration.BuildProvider> in the collection, an out-of-range exception is thrown.  
+If the index does not specify a <xref:System.Web.Configuration.BuildProvider> in the collection, an out-of-range exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.Configuration.BuildProviderCollection.RemoveAt%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.BuildProviderCollection> class.  
-  
- [!code-csharp[System.Web.Configuration.BuildProviderCollection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/CS/BuildProviderCollection.cs#6)]
- [!code-vb[System.Web.Configuration.BuildProviderCollection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/VB/BuildProviderCollection.vb#6)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.Configuration.BuildProviderCollection.RemoveAt%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.BuildProviderCollection> class.  
+ 
+[!code-csharp[System.Web.Configuration.BuildProviderCollection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/CS/BuildProviderCollection.cs#6)]
+[!code-vb[System.Web.Configuration.BuildProviderCollection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/VB/BuildProviderCollection.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -45,15 +45,15 @@
         <returns>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the new entry.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You must call the <xref:System.DirectoryServices.DirectoryEntry.CommitChanges%2A> method on the new entry to make the creation permanent. When you call this method, you can then set mandatory property values on the new entry. The providers each have different requirements for properties that need to be set before a call to the <xref:System.DirectoryServices.DirectoryEntry.CommitChanges%2A> method is made. If those requirements are not met, the provider might throw an exception. Check with your provider to determine which properties must be set before committing changes.  
+You must call the <xref:System.DirectoryServices.DirectoryEntry.CommitChanges%2A> method on the new entry to make the creation permanent. When you call this method, you can then set mandatory property values on the new entry. The providers each have different requirements for properties that need to be set before a call to the <xref:System.DirectoryServices.DirectoryEntry.CommitChanges%2A> method is made. If those requirements are not met, the provider might throw an exception. Check with your provider to determine which properties must be set before committing changes.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following Visual Basic .NET example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with a specified path, then creates a new entry in the container and saves it.  
-  
+The following Visual Basic .NET example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with a specified path, then creates a new entry in the container and saves it.  
+ 
 ```vb  
 Dim strPath As String = "IIS://localhost/W3SVC/1/Root"  
 ' Create a new 'DirectoryEntry' object with the given path.  
@@ -65,11 +65,11 @@ Dim myDirectoryEntry As DirectoryEntry = myEntries.Add("CN=Sample", myDE.SchemaC
 myDirectoryEntry.CommitChanges()  
 Console.WriteLine(myDirectoryEntry.Name + " entry is created in container.")  
 ```  
-  
- The following C# example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with a specified path, then creates a new entry in the container and saves it.  
-  
- [C#]  
-  
+ 
+The following C# example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with a specified path, then creates a new entry in the container and saves it.  
+ 
+[C#]  
+ 
 ```  
 String strPath = "IIS://localhost/W3SVC/1/Root";  
   
@@ -84,9 +84,9 @@ DirectoryEntry myDirectoryEntry =
 myDirectoryEntry.CommitChanges();  
 Console.WriteLine (myDirectoryEntry.Name + " entry is created in container.");  
 ```  
-  
- The following C++ example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with a specified path, then creates a new entry in the container and saves it.  
-  
+ 
+The following C++ example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with a specified path, then creates a new entry in the container and saves it.  
+ 
 ```  
 String* strPath = S"IIS://localhost/W3SVC/1/Root";  
   
@@ -101,7 +101,7 @@ myDirectoryEntry->CommitChanges();
 Console::WriteLine("{0} entry is created in container.", myDirectoryEntry->Name);  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">An error occurred during the call to the underlying interface.</exception>
@@ -128,15 +128,15 @@ Console::WriteLine("{0} entry is created in container.", myDirectoryEntry->Name)
         <returns>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> that represents the child object that was found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If child objects of different types have the same name, the first matching child object is returned.  
-  
+If child objects of different types have the same name, the first matching child object is returned.  
+ 
 > [!NOTE]
 >  The Internet Information Services (IIS) provider does not support this method. Use the overloaded <xref:System.DirectoryServices.DirectoryEntries.Find%2A> method and specify an empty string ("") for the `schemaClassName` parameter.  
 >   
 >  If no matching result is found, a <xref:System.DirectoryServices.DirectoryServicesCOMException> with error code 0x2030 is thrown.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The Active Directory Domain Services object is not a container.</exception>
@@ -166,15 +166,15 @@ Console::WriteLine("{0} entry is created in container.", myDirectoryEntry->Name)
         <returns>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the child object that was found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no matching result is found, a <xref:System.DirectoryServices.DirectoryServicesCOMException> with error code 0x2030 is thrown.  
+If no matching result is found, a <xref:System.DirectoryServices.DirectoryServicesCOMException> with error code 0x2030 is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following Visual Basic .NET example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. It attempts to retrieve the newly created entry.  
-  
+The following Visual Basic .NET example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. It attempts to retrieve the newly created entry.  
+ 
 ```vb  
 Try  
      Dim myEntry1 As DirectoryEntry  
@@ -199,9 +199,9 @@ Try
           Console.WriteLine("The following exception was raised : {0}", e.Message.ToString())  
      End Try  
 ```  
-  
- The following C# example shows how to create a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. It attempts to retrieve the newly- created entry.  
-  
+ 
+The following C# example shows how to create a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. It attempts to retrieve the newly- created entry.  
+ 
 ```csharp  
 using System;  
 using System.DirectoryServices;   
@@ -239,9 +239,9 @@ class MyClass1
 }  
   
 ```  
-  
- The following C++ example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. It attempts to retrieve the new entry.  
-  
+ 
+The following C++ example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. It attempts to retrieve the new entry.  
+ 
 ```cpp#  
 #using <mscorlib.dll>  
 #using <System.dll>  
@@ -275,7 +275,7 @@ int main() {
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The Active Directory Domain Services object is not a container.</exception>
@@ -321,15 +321,15 @@ int main() {
         <summary>Deletes a member of this collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the entry to be removed is a container, the container must be empty. To delete a container and all its children, use the <xref:System.DirectoryServices.DirectoryEntry.DeleteTree%2A> method.  
+If the entry to be removed is a container, the container must be empty. To delete a container and all its children, use the <xref:System.DirectoryServices.DirectoryEntry.DeleteTree%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following Visual Basic .NET example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. Finally, it retrieves the new entry and deletes it.  
-  
+The following Visual Basic .NET example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. Finally, it retrieves the new entry and deletes it.  
+ 
 ```vb  
 Imports System  
 Imports System.DirectoryServices  
@@ -365,9 +365,9 @@ Class MyClass1
 End Class 'MyClass1  
   
 ```  
-  
- The following C# example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. Finally, it retrieves the new entry and deletes it.  
-  
+ 
+The following C# example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. Finally, it retrieves the new entry and deletes it.  
+ 
 ```csharp  
 using System;  
 using System.DirectoryServices;   
@@ -411,9 +411,9 @@ class MyClass1
 }  
   
 ```  
-  
- The following C++ example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. Finally, it retrieves the new entry and deletes it.  
-  
+ 
+The following C++ example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. Finally, it retrieves the new entry and deletes it.  
+ 
 ```cpp#  
 #using <mscorlib.dll>  
 #using <System.dll>  
@@ -450,7 +450,7 @@ int main() {
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">An error occurred during the call to the underlying interface.</exception>
@@ -473,10 +473,10 @@ int main() {
         <value>A <see cref="T:System.DirectoryServices.SchemaNameCollection" /> that specifies which child objects are contained in the <see cref="T:System.DirectoryServices.DirectoryEntries" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.DirectoryServices.DirectoryEntries.SchemaFilter%2A> property is empty, child objects of all types are visible in the collection; otherwise, only those of the specified types are visible.  
-  
+If the <xref:System.DirectoryServices.DirectoryEntries.SchemaFilter%2A> property is empty, child objects of all types are visible in the collection; otherwise, only those of the specified types are visible.  
+ 
  ]]></format>
         </remarks>
       </Docs>

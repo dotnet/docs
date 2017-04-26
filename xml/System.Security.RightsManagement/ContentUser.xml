@@ -19,18 +19,18 @@
     <summary>Represents a user or user-group for granting access to rights managed content.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As with other <xref:System.Security.RightsManagement> types, <xref:System.Security.RightsManagement.ContentUser> is only usable in full trust applications.  
+As with other <xref:System.Security.RightsManagement> types, <xref:System.Security.RightsManagement.ContentUser> is only usable in full trust applications.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use <xref:System.Security.RightsManagement.UnsignedPublishLicense.Owner%2A> property to assign a variable of this type.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgPubUnPubLic](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubunpublic)]
- [!code-vb[RightsManagedPackagePublish#RmPkgPubUnPubLic](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubunpublic)]  
-  
+The following example shows how to use <xref:System.Security.RightsManagement.UnsignedPublishLicense.Owner%2A> property to assign a variable of this type.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgPubUnPubLic](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubunpublic)]
+[!code-vb[RightsManagedPackagePublish#RmPkgPubUnPubLic](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubunpublic)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,18 +54,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.ContentUser" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The user or group `name` is often in the form of an individual e-mail address (such as johndoe@contoso.com) or an e-mail distribution list (such as marketing@contoso.com).  
+The user or group `name` is often in the form of an individual e-mail address (such as johndoe@contoso.com) or an e-mail distribution list (such as marketing@contoso.com).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this constructor to create a secure environment.  
-  
- [!code-csharp[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubsecenv)]
- [!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubsecenv)]  
-  
+The following example shows how to use this constructor to create a secure environment.  
+ 
+[!code-csharp[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubsecenv)]
+[!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubsecenv)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,12 +87,12 @@
         <value>An instance of the "Anyone" <see cref="T:System.Security.RightsManagement.ContentUser" /> persona.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.RightsManagement.ContentUser.AnyoneUser%2A> has <xref:System.Security.RightsManagement.ContentUser.AuthenticationType%2A> "Internal" and <xref:System.Security.RightsManagement.ContentUser.Name%2A> "Anyone".  
-  
- If <xref:System.Security.RightsManagement.ContentUser.AuthenticationType%2A> "Internal" with <xref:System.Security.RightsManagement.ContentUser.Name%2A> "Anyone" is granted rights during publishing, the authentication server will issue a <xref:System.Security.RightsManagement.UseLicense> to any request and will attach the license to the requesting user.  
-  
+<xref:System.Security.RightsManagement.ContentUser.AnyoneUser%2A> has <xref:System.Security.RightsManagement.ContentUser.AuthenticationType%2A> "Internal" and <xref:System.Security.RightsManagement.ContentUser.Name%2A> "Anyone".  
+ 
+If <xref:System.Security.RightsManagement.ContentUser.AuthenticationType%2A> "Internal" with <xref:System.Security.RightsManagement.ContentUser.Name%2A> "Anyone" is granted rights during publishing, the authentication server will issue a <xref:System.Security.RightsManagement.UseLicense> to any request and will attach the license to the requesting user.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,12 +176,12 @@
           <see langword="true" /> if the user is currently authenticated; otherwise, <see langword="false" />.  The default is <see langword="false" /> until authenticated.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The given user <xref:System.Security.RightsManagement.ContentUser.Name%2A> is authenticated based on the given <xref:System.Security.RightsManagement.ContentUser.AuthenticationType%2A>.  
-  
- After a user has been authenticated and <xref:System.Security.RightsManagement.ContentUser.IsAuthenticated%2A> is `true`, the user dialog and prompt to confirm authentication is no longer displayed when creating a <xref:System.Security.RightsManagement.SecureEnvironment>.  
-  
+The given user <xref:System.Security.RightsManagement.ContentUser.Name%2A> is authenticated based on the given <xref:System.Security.RightsManagement.ContentUser.AuthenticationType%2A>.  
+ 
+After a user has been authenticated and <xref:System.Security.RightsManagement.ContentUser.IsAuthenticated%2A> is `true`, the user dialog and prompt to confirm authentication is no longer displayed when creating a <xref:System.Security.RightsManagement.SecureEnvironment>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -221,12 +221,12 @@
         <value>An instance of the "Owner" <see cref="T:System.Security.RightsManagement.ContentUser" /> persona.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.RightsManagement.ContentUser.OwnerUser%2A> has <xref:System.Security.RightsManagement.ContentUser.AuthenticationType%2A> "Internal" and <xref:System.Security.RightsManagement.ContentUser.Name%2A> "Owner".  
-  
- <xref:System.Security.RightsManagement.ContentUser.OwnerUser%2A> is used by the server-side templates to give special rights to the content author or publisher when the protected document is created.  
-  
+<xref:System.Security.RightsManagement.ContentUser.OwnerUser%2A> has <xref:System.Security.RightsManagement.ContentUser.AuthenticationType%2A> "Internal" and <xref:System.Security.RightsManagement.ContentUser.Name%2A> "Owner".  
+ 
+<xref:System.Security.RightsManagement.ContentUser.OwnerUser%2A> is used by the server-side templates to give special rights to the content author or publisher when the protected document is created.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -28,17 +28,17 @@
     <summary>Defines a wrapper object to access the cryptographic service provider (CSP) implementation of the <see cref="T:System.Security.Cryptography.DSA" /> algorithm. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Security.Cryptography.DSACryptoServiceProvider> class to create digital signatures and protect the integrity of your data.  
-  
- To use a public-key system to digitally sign a message, the sender first applies a hash function to the message to create a message digest. The sender then encrypts the message digest with the sender's private key to create the sender's personal signature. Upon receiving the message and signature, the receiver decrypts the signature using the sender's public key to recover the message digest and hashes the message using the same hash algorithm that the sender used. If the message digest that the receiver computes exactly matches the message digest received from the sender, the receiver can be sure that the message was not altered while in transit. Note that a signature can be verified by anyone, because the sender's public key is common knowledge.  
-  
+You can use the <xref:System.Security.Cryptography.DSACryptoServiceProvider> class to create digital signatures and protect the integrity of your data.  
+ 
+To use a public-key system to digitally sign a message, the sender first applies a hash function to the message to create a message digest. The sender then encrypts the message digest with the sender's private key to create the sender's personal signature. Upon receiving the message and signature, the receiver decrypts the signature using the sender's public key to recover the message digest and hashes the message using the same hash algorithm that the sender used. If the message digest that the receiver computes exactly matches the message digest received from the sender, the receiver can be sure that the message was not altered while in transit. Note that a signature can be verified by anyone, because the sender's public key is common knowledge.  
+ 
 > [!NOTE]
 >  Newer asymmetric algorithms are available. Consider using the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class instead of the <xref:System.Security.Cryptography.DSACryptoServiceProvider> class. Use <xref:System.Security.Cryptography.DSACryptoServiceProvider> only for compatibility with legacy applications and data.  
-  
- This algorithm supports key lengths from 512 bits to 1024 bits in increments of 64 bits.  
-  
+ 
+This algorithm supports key lengths from 512 bits to 1024 bits in increments of 64 bits.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -199,12 +199,12 @@
         <value>A <see cref="T:System.Security.Cryptography.CspKeyContainerInfo" /> object that describes additional information about a cryptographic key pair.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Security.Cryptography.DSACryptoServiceProvider.CspKeyContainerInfo%2A> property to retrieve additional information about a cryptographic key pair.  The returned <xref:System.Security.Cryptography.CspKeyContainerInfo> object describes whether the key is exportable, and specifies the key container name, information about the provider, and other information.  
-  
- In cases where a random key is generated, a key container will not be created until you call a method that uses the key.  Some properties of the <xref:System.Security.Cryptography.CspKeyContainerInfo> object returned by the <xref:System.Security.Cryptography.DSACryptoServiceProvider.CspKeyContainerInfo%2A> property will throw a <xref:System.Security.Cryptography.CryptographicException> if a key container has not been created.  To make sure that a key container has been created, call a method such as <xref:System.Security.Cryptography.DSACryptoServiceProvider.SignData%2A>, <xref:System.Security.Cryptography.DSACryptoServiceProvider.SignHash%2A>, <xref:System.Security.Cryptography.DSACryptoServiceProvider.VerifyData%2A>, <xref:System.Security.Cryptography.DSACryptoServiceProvider.VerifyHash%2A>, and so on, before you call the <xref:System.Security.Cryptography.DSACryptoServiceProvider.CspKeyContainerInfo%2A> property.  
-  
+Use the <xref:System.Security.Cryptography.DSACryptoServiceProvider.CspKeyContainerInfo%2A> property to retrieve additional information about a cryptographic key pair.  The returned <xref:System.Security.Cryptography.CspKeyContainerInfo> object describes whether the key is exportable, and specifies the key container name, information about the provider, and other information.  
+ 
+In cases where a random key is generated, a key container will not be created until you call a method that uses the key.  Some properties of the <xref:System.Security.Cryptography.CspKeyContainerInfo> object returned by the <xref:System.Security.Cryptography.DSACryptoServiceProvider.CspKeyContainerInfo%2A> property will throw a <xref:System.Security.Cryptography.CryptographicException> if a key container has not been created.  To make sure that a key container has been created, call a method such as <xref:System.Security.Cryptography.DSACryptoServiceProvider.SignData%2A>, <xref:System.Security.Cryptography.DSACryptoServiceProvider.SignHash%2A>, <xref:System.Security.Cryptography.DSACryptoServiceProvider.VerifyData%2A>, <xref:System.Security.Cryptography.DSACryptoServiceProvider.VerifyHash%2A>, and so on, before you call the <xref:System.Security.Cryptography.DSACryptoServiceProvider.CspKeyContainerInfo%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,10 +267,10 @@
         <returns>A byte array containing the key information associated with a <see cref="T:System.Security.Cryptography.DSACryptoServiceProvider" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.DSACryptoServiceProvider.ExportCspBlob%2A> method returns a blob containing key information that is compatible with the unmanaged Microsoft Cryptographic API (CAPI).  
-  
+The <xref:System.Security.Cryptography.DSACryptoServiceProvider.ExportCspBlob%2A> method returns a blob containing key information that is compatible with the unmanaged Microsoft Cryptographic API (CAPI).  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to access a key container when exporting a private key. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Export" /></permission>
@@ -407,10 +407,10 @@
         <summary>Imports a blob that represents DSA key information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.DSACryptoServiceProvider.ImportCspBlob%2A> method initializes the key data of a <xref:System.Security.Cryptography.DSACryptoServiceProvider> object using a blob that is compatible with the unmanaged Microsoft Cryptographic API (CAPI).  
-  
+The <xref:System.Security.Cryptography.DSACryptoServiceProvider.ImportCspBlob%2A> method initializes the key data of a <xref:System.Security.Cryptography.DSACryptoServiceProvider> object using a blob that is compatible with the unmanaged Microsoft Cryptographic API (CAPI).  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to access a key container when importing a key. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Import" /></permission>
@@ -493,12 +493,12 @@
         <value>The size of the key used by the asymmetric algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This algorithm supports key lengths from 512 bits to 1024 bits in increments of 64 bits.  
-  
- The <xref:System.Security.Cryptography.DSACryptoServiceProvider> class does not allow you to change key sizes using the <xref:System.Security.Cryptography.DSACryptoServiceProvider.KeySize%2A> property.  Any value written to this property will fail to update the property without error.  To change the key size, use one of the constructor overloads.  
-  
+This algorithm supports key lengths from 512 bits to 1024 bits in increments of 64 bits.  
+ 
+The <xref:System.Security.Cryptography.DSACryptoServiceProvider> class does not allow you to change key sizes using the <xref:System.Security.Cryptography.DSACryptoServiceProvider.KeySize%2A> property.  Any value written to this property will fail to update the property without error.  To change the key size, use one of the constructor overloads.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -526,10 +526,10 @@
           <see langword="true" /> if the key should be persisted in the CSP; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property when you want to persist a key in a key container.  
-  
+Use this property when you want to persist a key in a key container.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntry">for permission to delete a key. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Delete" />  
@@ -567,10 +567,10 @@
           <see langword="true" /> if the <see cref="T:System.Security.Cryptography.DSACryptoServiceProvider" /> object contains only a public key; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.DSACryptoServiceProvider> class can be initialized either with a public key only or with both a public and private key.  Use the <xref:System.Security.Cryptography.DSACryptoServiceProvider.PublicOnly%2A> property to determine whether the current instance contains only a public key or both a public and private key.  
-  
+The <xref:System.Security.Cryptography.DSACryptoServiceProvider> class can be initialized either with a public key only or with both a public and private key.  Use the <xref:System.Security.Cryptography.DSACryptoServiceProvider.PublicOnly%2A> property to determine whether the current instance contains only a public key or both a public and private key.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -624,12 +624,12 @@
         <returns>The <see cref="T:System.Security.Cryptography.DSA" /> signature for the specified data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a digital signature that is verified using the <xref:System.Security.Cryptography.DSACryptoServiceProvider.VerifyData%2A> method.  
-  
- <xref:System.Security.Cryptography.DSA> uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
-  
+This method creates a digital signature that is verified using the <xref:System.Security.Cryptography.DSACryptoServiceProvider.VerifyData%2A> method.  
+ 
+<xref:System.Security.Cryptography.DSA> uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -660,10 +660,10 @@
         <returns>The <see cref="T:System.Security.Cryptography.DSA" /> signature for the specified data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Cryptography.DSA> uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
-  
+<xref:System.Security.Cryptography.DSA> uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -698,12 +698,12 @@
         <returns>The <see cref="T:System.Security.Cryptography.DSA" /> signature for the specified data.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a digital signature that is verified using the <xref:System.Security.Cryptography.DSACryptoServiceProvider.VerifyData%2A> method.  
-  
- <xref:System.Security.Cryptography.DSA> uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
-  
+This method creates a digital signature that is verified using the <xref:System.Security.Cryptography.DSACryptoServiceProvider.VerifyData%2A> method.  
+ 
+<xref:System.Security.Cryptography.DSA> uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -736,12 +736,12 @@
         <returns>The <see cref="T:System.Security.Cryptography.DSA" /> signature for the specified hash value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a digital signature that is verified using the <xref:System.Security.Cryptography.DSACryptoServiceProvider.VerifyHash%2A> method.  
-  
- <xref:System.Security.Cryptography.DSA> uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
-  
+This method creates a digital signature that is verified using the <xref:System.Security.Cryptography.DSACryptoServiceProvider.VerifyHash%2A> method.  
+ 
+<xref:System.Security.Cryptography.DSA> uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="rgbHash" /> parameter is <see langword="null" />.</exception>
@@ -776,10 +776,10 @@
           <see langword="true" /> if the key should be persisted in the computer key store; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property to true is equivalent to passing the <xref:System.Security.Cryptography.DSACryptoServiceProvider.UseMachineKeyStore%2A> flag to a <xref:System.Security.Cryptography.CspParameters> object. The <xref:System.Security.Cryptography.DSACryptoServiceProvider.UseMachineKeyStore%2A> property applies to all code in the current application domain, while the <xref:System.Security.Cryptography.CspParameters> object applies only to classes that explicitly reference it. These settings are useful when impersonating or running under an account whose user profile is not loaded.  
-  
+Setting this property to true is equivalent to passing the <xref:System.Security.Cryptography.DSACryptoServiceProvider.UseMachineKeyStore%2A> flag to a <xref:System.Security.Cryptography.CspParameters> object. The <xref:System.Security.Cryptography.DSACryptoServiceProvider.UseMachineKeyStore%2A> property applies to all code in the current application domain, while the <xref:System.Security.Cryptography.CspParameters> object applies only to classes that explicitly reference it. These settings are useful when impersonating or running under an account whose user profile is not loaded.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -813,12 +813,12 @@
           <see langword="true" /> if the signature verifies as valid; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method verifies the <xref:System.Security.Cryptography.DSA> digital signature produced by <xref:System.Security.Cryptography.DSACryptoServiceProvider.SignData%2A>.  
-  
- <xref:System.Security.Cryptography.DSA> uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
-  
+This method verifies the <xref:System.Security.Cryptography.DSA> digital signature produced by <xref:System.Security.Cryptography.DSACryptoServiceProvider.SignData%2A>.  
+ 
+<xref:System.Security.Cryptography.DSA> uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -854,12 +854,12 @@
           <see langword="true" /> if the signature verifies as valid; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method verifies the <xref:System.Security.Cryptography.DSA> digital signature produced by <xref:System.Security.Cryptography.DSACryptoServiceProvider.SignHash%2A>.  
-  
- If the `str` parameter is `null`, the default hash algorithm (SHA1) is used. The valid hash algorithms is <xref:System.Security.Cryptography.SHA1>.  
-  
+This method verifies the <xref:System.Security.Cryptography.DSA> digital signature produced by <xref:System.Security.Cryptography.DSACryptoServiceProvider.SignHash%2A>.  
+ 
+If the `str` parameter is `null`, the default hash algorithm (SHA1) is used. The valid hash algorithms is <xref:System.Security.Cryptography.SHA1>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="rgbHash" /> parameter is <see langword="null" />.  

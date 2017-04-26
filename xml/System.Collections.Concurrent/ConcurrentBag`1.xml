@@ -49,22 +49,22 @@
     <summary>Represents a thread-safe, unordered collection of objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Bags are useful for storing objects when ordering doesn't matter, and unlike sets, bags support duplicates. <xref:System.Collections.Concurrent.ConcurrentBag%601> is a thread-safe bag implementation, optimized for scenarios where the same thread will be both producing and consuming data stored in the bag.  
+Bags are useful for storing objects when ordering doesn't matter, and unlike sets, bags support duplicates. <xref:System.Collections.Concurrent.ConcurrentBag%601> is a thread-safe bag implementation, optimized for scenarios where the same thread will be both producing and consuming data stored in the bag.  
+ 
+<xref:System.Collections.Concurrent.ConcurrentBag%601> accepts `null` as a valid value for reference types.  
+ 
+For more information, see the entry [FAQ: Are all of the new concurrent collections lock-free?](http://blogs.msdn.com/b/pfxteam/archive/2010/01/26/9953725.aspx) in the Parallel Programming with .NET blog.  
+ 
   
- <xref:System.Collections.Concurrent.ConcurrentBag%601> accepts `null` as a valid value for reference types.  
-  
- For more information, see the entry [FAQ: Are all of the new concurrent collections lock-free?](http://blogs.msdn.com/b/pfxteam/archive/2010/01/26/9953725.aspx) in the Parallel Programming with .NET blog.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to add and remove items from a <xref:System.Collections.Concurrent.ConcurrentBag%601>:  
-  
- [!code-csharp[System.Collections.Concurrent.ConcurrentBag#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentbag/cs/concbag.cs#1)]
- [!code-vb[System.Collections.Concurrent.ConcurrentBag#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentbag/vb/concbag.vb#1)]  
-  
+The following example shows how to add and remove items from a <xref:System.Collections.Concurrent.ConcurrentBag%601>:  
+ 
+[!code-csharp[System.Collections.Concurrent.ConcurrentBag#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentbag/cs/concbag.cs#1)]
+[!code-vb[System.Collections.Concurrent.ConcurrentBag#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentbag/vb/concbag.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" /> are thread-safe and may be used concurrently from multiple threads. However, members accessed through one of the interfaces the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" /> implements, including extension methods, are not guaranteed to be thread safe and may need to be synchronized by the caller.</threadsafe>
@@ -222,10 +222,10 @@
         <value>The number of elements contained in the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The count returned represents a moment-in-time snapshot of the contents of the bag. It is possible that other threads might add or remove items immediately after you access the `Count` property.  
-  
+The count returned represents a moment-in-time snapshot of the contents of the bag. It is possible that other threads might add or remove items immediately after you access the `Count` property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,10 +258,10 @@
         <returns>An enumerator for the contents of the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The enumeration represents a moment-in-time snapshot of the contents of the bag. It does not reflect any updates to the collection after <xref:System.Collections.Concurrent.ConcurrentBag%601.GetEnumerator%2A> was called. The enumerator is safe to use concurrently with reads from and writes to the bag.  
-  
+The enumeration represents a moment-in-time snapshot of the contents of the bag. It does not reflect any updates to the collection after <xref:System.Collections.Concurrent.ConcurrentBag%601.GetEnumerator%2A> was called. The enumerator is safe to use concurrently with reads from and writes to the bag.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -450,10 +450,10 @@
         <returns>An enumerator for the contents of the <see cref="T:System.Collections.Concurrent.ConcurrentBag`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The items enumerated represent a moment-in-time snapshot of the contents of the bag. It does not reflect any update to the collection after <xref:System.Collections.Concurrent.ConcurrentBag%601.GetEnumerator%2A> was called.  
-  
+The items enumerated represent a moment-in-time snapshot of the contents of the bag. It does not reflect any update to the collection after <xref:System.Collections.Concurrent.ConcurrentBag%601.GetEnumerator%2A> was called.  
+ 
  ]]></format>
         </remarks>
       </Docs>

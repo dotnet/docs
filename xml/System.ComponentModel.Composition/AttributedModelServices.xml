@@ -602,10 +602,10 @@
         <returns>The composed part.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike ordinary composition, parts composed with this method are not guaranteed to remain valid if the catalog behind`compositionService` changes.  
-  
+Unlike ordinary composition, parts composed with this method are not guaranteed to remain valid if the catalog behind`compositionService` changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -22,34 +22,34 @@
     <summary>Represents a collection of <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerActionListCollection> class represents the aggregation of all the items in a smart tag panel. The <xref:System.ComponentModel.Design.DesignerActionListCollection> class contains zero or more <xref:System.ComponentModel.Design.DesignerActionList> objects. Each of these lists contains zero or more objects that represent the actual items in the panel and are derived from the <xref:System.ComponentModel.Design.DesignerActionItem> class.  
-  
- The following table shows the two techniques for supplying a <xref:System.ComponentModel.Design.DesignerActionListCollection> to populate the panel with items for components, including custom controls.  
-  
+The <xref:System.ComponentModel.Design.DesignerActionListCollection> class represents the aggregation of all the items in a smart tag panel. The <xref:System.ComponentModel.Design.DesignerActionListCollection> class contains zero or more <xref:System.ComponentModel.Design.DesignerActionList> objects. Each of these lists contains zero or more objects that represent the actual items in the panel and are derived from the <xref:System.ComponentModel.Design.DesignerActionItem> class.  
+ 
+The following table shows the two techniques for supplying a <xref:System.ComponentModel.Design.DesignerActionListCollection> to populate the panel with items for components, including custom controls.  
+ 
 |Technique|Description|  
 |---------------|-----------------|  
 |Pull model|The designer for the component class, which is derived from the <xref:System.ComponentModel.Design.ComponentDesigner> class, supplies this collection through the <xref:System.ComponentModel.Design.ComponentDesigner.ActionLists%2A> property. The designer infrastructure reads this property when it must display the panel.|  
 |Push model|A <xref:System.ComponentModel.Design.DesignerActionList> or <xref:System.ComponentModel.Design.DesignerActionListCollection> is supplied as a parameter in a call to the <xref:System.ComponentModel.Design.DesignerActionService.Add%2A> method of the <xref:System.ComponentModel.Design.DesignerActionService> associated with the component.|  
+ 
+The designer infrastructure constructs a panel by creating a smart tag panel, whose constructor takes two parameters of type <xref:System.ComponentModel.Design.DesignerActionListCollection>. The collections of lists, which contain the pulled and pushed items, are merged into one panel.  
+ 
+Because it derives from the <xref:System.Collections.CollectionBase?displayProperty=fullName> class, <xref:System.ComponentModel.Design.DesignerActionListCollection> uses an internal <xref:System.Collections.ArrayList> to store its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects.  
+ 
   
- The designer infrastructure constructs a panel by creating a smart tag panel, whose constructor takes two parameters of type <xref:System.ComponentModel.Design.DesignerActionListCollection>. The collections of lists, which contain the pulled and pushed items, are merged into one panel.  
-  
- Because it derives from the <xref:System.Collections.CollectionBase?displayProperty=fullName> class, <xref:System.ComponentModel.Design.DesignerActionListCollection> uses an internal <xref:System.Collections.ArrayList> to store its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects.  
-  
- For a full example, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
-  
- [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#8)]
- [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#8)]  
-  
- [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#9)]
- [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#9)]  
-  
+The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects.  
+ 
+For a full example, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
+ 
+[!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#8)]
+[!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#8)]  
+ 
+[!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#9)]
+[!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#9)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -69,10 +69,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> class with default settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerActionListCollection.%23ctor%2A> constructor creates an empty collection, containing zero <xref:System.ComponentModel.Design.DesignerActionList> objects.  
-  
+The <xref:System.ComponentModel.Design.DesignerActionListCollection.%23ctor%2A> constructor creates an empty collection, containing zero <xref:System.ComponentModel.Design.DesignerActionList> objects.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -95,10 +95,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> class with the specified panel items.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerActionListCollection.%23ctor%2A> constructor creates a collection that contains the supplied <xref:System.ComponentModel.Design.DesignerActionList> objects.  
-  
+The <xref:System.ComponentModel.Design.DesignerActionListCollection.%23ctor%2A> constructor creates a collection that contains the supplied <xref:System.ComponentModel.Design.DesignerActionList> objects.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -127,10 +127,10 @@
         <returns>The position into which the new element is inserted into the collection's internal list.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new element is added to the end of the internal list.  
-  
+The new element is added to the end of the internal list.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -156,12 +156,12 @@
         <summary>Adds the elements of the supplied <see cref="T:System.ComponentModel.Design.DesignerActionList" /> array to the end of the current collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new elements are added to the end of the internal list.  
-  
- After validating the `value` parameter, the <xref:System.ComponentModel.Design.DesignerActionListCollection.AddRange%2A> method makes a series of calls to the <xref:System.ComponentModel.Design.DesignerActionListCollection.Add%2A> method to individually add each element.  
-  
+The new elements are added to the end of the internal list.  
+ 
+After validating the `value` parameter, the <xref:System.ComponentModel.Design.DesignerActionListCollection.AddRange%2A> method makes a series of calls to the <xref:System.ComponentModel.Design.DesignerActionListCollection.Add%2A> method to individually add each element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -189,12 +189,12 @@
         <summary>Adds the elements of the supplied <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> to the end of the current collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new elements are added to the end of the internal list.  
-  
- After validating the `value` parameter, the <xref:System.ComponentModel.Design.DesignerActionListCollection.AddRange%2A>method makes a series of calls to the <xref:System.ComponentModel.Design.DesignerActionListCollection.Add%2A> method to individually add each element.  
-  
+The new elements are added to the end of the internal list.  
+ 
+After validating the `value` parameter, the <xref:System.ComponentModel.Design.DesignerActionListCollection.AddRange%2A>method makes a series of calls to the <xref:System.ComponentModel.Design.DesignerActionListCollection.Add%2A> method to individually add each element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -224,10 +224,10 @@
           <see langword="true" /> if the collection contains the specified value; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A match is determined by value, not identity, comparison.  
-  
+A match is determined by value, not identity, comparison.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -255,10 +255,10 @@
         <summary>Copies the elements of the current collection into the supplied array, starting at the specified array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.ComponentModel.Design.DesignerActionListCollection.CopyTo%2A> method throws an exception while copying, the state of the destination array is undefined. For example, if an <xref:System.ArgumentException> or <xref:System.InvalidCastException> occurs, the destination array may be left in a partially filled state.  
-  
+If the <xref:System.ComponentModel.Design.DesignerActionListCollection.CopyTo%2A> method throws an exception while copying, the state of the destination array is undefined. For example, if an <xref:System.ArgumentException> or <xref:System.InvalidCastException> occurs, the destination array may be left in a partially filled state.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -296,10 +296,10 @@
         <returns>The index of <paramref name="value" /> if found in the internal list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Internally, the <xref:System.ComponentModel.Design.DesignerActionListCollection> class uses a <xref:System.Collections.ArrayList?displayProperty=fullName> to contain its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects.  
-  
+Internally, the <xref:System.ComponentModel.Design.DesignerActionListCollection> class uses a <xref:System.Collections.ArrayList?displayProperty=fullName> to contain its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -327,12 +327,12 @@
         <summary>Inserts the supplied <see cref="T:System.ComponentModel.Design.DesignerActionList" /> into the collection at the specified position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `index` parameter is equal to the value of the <xref:System.Collections.CollectionBase.Count%2A> property, the new element is added to the end of the collection.  
-  
- Internally, the <xref:System.ComponentModel.Design.DesignerActionListCollection> class uses a <xref:System.Collections.ArrayList?displayProperty=fullName> to contain its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects. Because lists maintain contiguous elements, the elements that follow the insertion point move down to accommodate the new element. This rearrangement changes the index of the elements after the insertion point.  
-  
+If the `index` parameter is equal to the value of the <xref:System.Collections.CollectionBase.Count%2A> property, the new element is added to the end of the collection.  
+ 
+Internally, the <xref:System.ComponentModel.Design.DesignerActionListCollection> class uses a <xref:System.Collections.ArrayList?displayProperty=fullName> to contain its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects. Because lists maintain contiguous elements, the elements that follow the insertion point move down to accommodate the new element. This rearrangement changes the index of the elements after the insertion point.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -361,10 +361,10 @@
         <value>The <see cref="T:System.ComponentModel.Design.DesignerActionList" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting an element to `null` causes a design-time exception to be thrown when the smart tag panel is displayed.  
-  
+Setting an element to `null` causes a design-time exception to be thrown when the smart tag panel is displayed.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -504,10 +504,10 @@
         <summary>Removes the first occurrence of a specific <see cref="T:System.ComponentModel.Design.DesignerActionList" /> from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Internally, the <xref:System.ComponentModel.Design.DesignerActionListCollection> class uses a <xref:System.Collections.ArrayList?displayProperty=fullName> to contain its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects. Since lists maintain contiguous elements, the elements that follow the removal point move up to occupy the vacated spot. This rearrangement changes the index of the elements after the removal point.  
-  
+Internally, the <xref:System.ComponentModel.Design.DesignerActionListCollection> class uses a <xref:System.Collections.ArrayList?displayProperty=fullName> to contain its collection of <xref:System.ComponentModel.Design.DesignerActionList> objects. Since lists maintain contiguous elements, the elements that follow the removal point move up to occupy the vacated spot. This rearrangement changes the index of the elements after the removal point.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>

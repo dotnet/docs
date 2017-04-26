@@ -14,10 +14,10 @@
     <summary>Provides functionality to create new classes from values in a <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property is set to an expression that contains the `new` function, a class is dynamically created that contains only the properties specified in the `new` function. The parser creates the `new` class by extending the <xref:System.Web.Query.Dynamic.DynamicClass> class.  
-  
+When the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property is set to an expression that contains the `new` function, a class is dynamically created that contains only the properties specified in the `new` function. The parser creates the `new` class by extending the <xref:System.Web.Query.Dynamic.DynamicClass> class.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -57,10 +57,10 @@
         <returns>A string that represents the dynamic class and its properties.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property is set to an expression that contains the `new` function, a class is dynamically created that contains only the properties specified in the `new` function. The parser creates the `new` class by extending the <xref:System.Web.Query.Dynamic.DynamicClass> class. The <xref:System.Web.Query.Dynamic.DynamicClass.ToString%2A> methods creates a string representation of the properties in the class.  
-  
+When the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property is set to an expression that contains the `new` function, a class is dynamically created that contains only the properties specified in the `new` function. The parser creates the `new` class by extending the <xref:System.Web.Query.Dynamic.DynamicClass> class. The <xref:System.Web.Query.Dynamic.DynamicClass.ToString%2A> methods creates a string representation of the properties in the class.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

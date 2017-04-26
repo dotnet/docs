@@ -32,29 +32,29 @@
     <summary>Represents a collection of attributes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.AttributeCollection> class is read-only; it does not implement methods to add or remove attributes. You must inherit from this class to implement these methods.  
+The <xref:System.ComponentModel.AttributeCollection> class is read-only; it does not implement methods to add or remove attributes. You must inherit from this class to implement these methods.  
+ 
+Use the <xref:System.ComponentModel.AttributeCollection.Count%2A> property to find the number of attributes that exist in the collection.  
+ 
+You can also use the methods of this class to query the collection about its contents. Call the <xref:System.ComponentModel.AttributeCollection.Contains%2A> method to verify that a specified attribute or attribute array exists in the collection. Call the <xref:System.ComponentModel.AttributeCollection.Matches%2A> method to verify that a specified attribute or array of attributes exists in the collection, and that the values of the specified attributes are the same as the values in the collection.  
+ 
+While most attributes have default values, default values are not required. If an attribute has no default value, `null` is returned from the indexed property that takes a type. When defining your own attributes, you can declare a default value by either providing a constructor that takes no arguments, or defining a public static field of your attribute type named "Default".  
+ 
   
- Use the <xref:System.ComponentModel.AttributeCollection.Count%2A> property to find the number of attributes that exist in the collection.  
-  
- You can also use the methods of this class to query the collection about its contents. Call the <xref:System.ComponentModel.AttributeCollection.Contains%2A> method to verify that a specified attribute or attribute array exists in the collection. Call the <xref:System.ComponentModel.AttributeCollection.Matches%2A> method to verify that a specified attribute or array of attributes exists in the collection, and that the values of the specified attributes are the same as the values in the collection.  
-  
- While most attributes have default values, default values are not required. If an attribute has no default value, `null` is returned from the indexed property that takes a type. When defining your own attributes, you can declare a default value by either providing a constructor that takes no arguments, or defining a public static field of your attribute type named "Default".  
-  
-   
-  
+ 
 ## Examples  
- The first code example checks to see whether the <xref:System.ComponentModel.BrowsableAttribute> has been set in this collection. The second code example gets the actual value of the <xref:System.ComponentModel.DescriptionAttribute> for a button. Both examples require that `button1` and `textBox1` have been created on a form. When using attributes, verify that an attribute has been set, or access its value.  
-  
- [!code-cpp[Classic AttributeCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection Example/CPP/source.cpp#1)]
- [!code-csharp[Classic AttributeCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection Example/CS/source.cs#1)]
- [!code-vb[Classic AttributeCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection Example/VB/source.vb#1)]  
-  
- [!code-cpp[Classic AttributeCollection Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection Example/CPP/source.cpp#2)]
- [!code-csharp[Classic AttributeCollection Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection Example/CS/source.cs#2)]
- [!code-vb[Classic AttributeCollection Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection Example/VB/source.vb#2)]  
-  
+The first code example checks to see whether the <xref:System.ComponentModel.BrowsableAttribute> has been set in this collection. The second code example gets the actual value of the <xref:System.ComponentModel.DescriptionAttribute> for a button. Both examples require that `button1` and `textBox1` have been created on a form. When using attributes, verify that an attribute has been set, or access its value.  
+ 
+[!code-cpp[Classic AttributeCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection Example/CPP/source.cpp#1)]
+[!code-csharp[Classic AttributeCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection Example/CS/source.cs#1)]
+[!code-vb[Classic AttributeCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection Example/VB/source.vb#1)]  
+ 
+[!code-cpp[Classic AttributeCollection Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection Example/CPP/source.cpp#2)]
+[!code-csharp[Classic AttributeCollection Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection Example/CS/source.cs#2)]
+[!code-vb[Classic AttributeCollection Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection Example/VB/source.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -115,14 +115,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.AttributeCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a new <xref:System.ComponentModel.AttributeCollection> using the attributes on `button1`. It assumes that `button1` has been created on a form.  
-  
- [!code-cpp[Classic AttributeCollection.AttributeCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.AttributeCollection Example/CPP/source.cpp#1)]
- [!code-csharp[Classic AttributeCollection.AttributeCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.AttributeCollection Example/CS/source.cs#1)]
- [!code-vb[Classic AttributeCollection.AttributeCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.AttributeCollection Example/VB/source.vb#1)]  
-  
+The following code example creates a new <xref:System.ComponentModel.AttributeCollection> using the attributes on `button1`. It assumes that `button1` has been created on a form.  
+ 
+[!code-cpp[Classic AttributeCollection.AttributeCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.AttributeCollection Example/CPP/source.cpp#1)]
+[!code-csharp[Classic AttributeCollection.AttributeCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.AttributeCollection Example/CS/source.cs#1)]
+[!code-vb[Classic AttributeCollection.AttributeCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.AttributeCollection Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -187,23 +187,23 @@
           <see langword="true" /> if the collection contains the attribute or is the default attribute for the type of attribute; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection has the specified attribute if the specified type of attribute exists in the collection, and if the value of the specified attribute is the same as the value of the instance of the attribute in the collection.  
+This collection has the specified attribute if the specified type of attribute exists in the collection, and if the value of the specified attribute is the same as the value of the instance of the attribute in the collection.  
+ 
+The difference between the <xref:System.ComponentModel.AttributeCollection.Matches%2A> and <xref:System.ComponentModel.AttributeCollection.Contains%2A> methods is that <xref:System.ComponentModel.AttributeCollection.Matches%2A> calls the <xref:System.Attribute.Match%2A> method on an attribute, and <xref:System.ComponentModel.AttributeCollection.Contains%2A> calls the <xref:System.Object.Equals%2A> method.  
+ 
+For most attributes, these methods do the same thing. For attributes that may have multiple flags, however, <xref:System.Attribute.Match%2A> is typically implemented so that it returns `true` if any of the flags are satisfied. For example, consider a data binding attribute with the Boolean flags "SupportsSql", "SupportsOleDb", and "SupportsXml". This attribute may be present on a property that supports all three data-binding approaches. It will often be the case that a programmer needs to know only if a particular approach is available, not all three. Therefore, a programmer could use <xref:System.Attribute.Match%2A> with an instance of the attribute containing only the flags the programmer needs.  
+ 
   
- The difference between the <xref:System.ComponentModel.AttributeCollection.Matches%2A> and <xref:System.ComponentModel.AttributeCollection.Contains%2A> methods is that <xref:System.ComponentModel.AttributeCollection.Matches%2A> calls the <xref:System.Attribute.Match%2A> method on an attribute, and <xref:System.ComponentModel.AttributeCollection.Contains%2A> calls the <xref:System.Object.Equals%2A> method.  
-  
- For most attributes, these methods do the same thing. For attributes that may have multiple flags, however, <xref:System.Attribute.Match%2A> is typically implemented so that it returns `true` if any of the flags are satisfied. For example, consider a data binding attribute with the Boolean flags "SupportsSql", "SupportsOleDb", and "SupportsXml". This attribute may be present on a property that supports all three data-binding approaches. It will often be the case that a programmer needs to know only if a particular approach is available, not all three. Therefore, a programmer could use <xref:System.Attribute.Match%2A> with an instance of the attribute containing only the flags the programmer needs.  
-  
-   
-  
+ 
 ## Examples  
- The following code example checks to see whether the collection has a <xref:System.ComponentModel.BrowsableAttribute> set to `true`. It assumes that `button1` and `textBox1` have been created on a form.  
-  
- [!code-cpp[Classic AttributeCollection.Contains Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.Contains Example/CPP/source.cpp#1)]
- [!code-csharp[Classic AttributeCollection.Contains Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.Contains Example/CS/source.cs#1)]
- [!code-vb[Classic AttributeCollection.Contains Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.Contains Example/VB/source.vb#1)]  
-  
+The following code example checks to see whether the collection has a <xref:System.ComponentModel.BrowsableAttribute> set to `true`. It assumes that `button1` and `textBox1` have been created on a form.  
+ 
+[!code-cpp[Classic AttributeCollection.Contains Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.Contains Example/CPP/source.cpp#1)]
+[!code-csharp[Classic AttributeCollection.Contains Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.Contains Example/CS/source.cs#1)]
+[!code-vb[Classic AttributeCollection.Contains Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.Contains Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,19 +239,19 @@
           <see langword="true" /> if the collection contains all the attributes; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection has the specified array of attributes if all the specified attribute types exist in the collection and if each attribute in the specified array is the same as an attribute in the collection.  
+This collection has the specified array of attributes if all the specified attribute types exist in the collection and if each attribute in the specified array is the same as an attribute in the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example compares the attributes in `button1` and `textBox1` to see whether the attributes for the button are contained in the attributes for the text box. It assumes that both `button1` and `textBox1` have been created on a form.  
-  
- [!code-cpp[Classic AttributeCollection.Contains1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.Contains1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic AttributeCollection.Contains1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.Contains1 Example/CS/source.cs#1)]
- [!code-vb[Classic AttributeCollection.Contains1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.Contains1 Example/VB/source.vb#1)]  
-  
+The following code example compares the attributes in `button1` and `textBox1` to see whether the attributes for the button are contained in the attributes for the text box. It assumes that both `button1` and `textBox1` have been created on a form.  
+ 
+[!code-cpp[Classic AttributeCollection.Contains1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.Contains1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic AttributeCollection.Contains1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.Contains1 Example/CS/source.cs#1)]
+[!code-vb[Classic AttributeCollection.Contains1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.Contains1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -314,19 +314,19 @@
         <value>The number of attributes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.ComponentModel.AttributeCollection.Count%2A> property to set the limits of a loop that iterates through a collection of objects. If the collection is zero-based, be sure to use `Count - 1` as the upper boundary of the loop.  
+You can use the <xref:System.ComponentModel.AttributeCollection.Count%2A> property to set the limits of a loop that iterates through a collection of objects. If the collection is zero-based, be sure to use `Count - 1` as the upper boundary of the loop.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.ComponentModel.AttributeCollection.Count%2A> property to print the number of properties on `button1` in a text box. It assumes that `button1` and `textBox1` have been created on a form.  
-  
- [!code-cpp[Classic AttributeCollection.Count Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.Count Example/CPP/source.cpp#1)]
- [!code-csharp[Classic AttributeCollection.Count Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.Count Example/CS/source.cs#1)]
- [!code-vb[Classic AttributeCollection.Count Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.Count Example/VB/source.vb#1)]  
-  
+The following code example uses the <xref:System.ComponentModel.AttributeCollection.Count%2A> property to print the number of properties on `button1` in a text box. It assumes that `button1` and `textBox1` have been created on a form.  
+ 
+[!code-cpp[Classic AttributeCollection.Count Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.Count Example/CPP/source.cpp#1)]
+[!code-csharp[Classic AttributeCollection.Count Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.Count Example/CS/source.cs#1)]
+[!code-vb[Classic AttributeCollection.Count Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.Count Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,10 +395,10 @@
         <returns>A new <see cref="T:System.ComponentModel.AttributeCollection" /> that is a copy of <paramref name="existing" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `newAttributes` parameter is provided, its <xref:System.Attribute> entries are merged with those of the `existing` parameter.  
-  
+If the `newAttributes` parameter is provided, its <xref:System.Attribute> entries are merged with those of the `existing` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -463,14 +463,14 @@
         <returns>An enumerator of type <see cref="T:System.Collections.IEnumerator" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example gets an enumerator for the attributes on `button1`. It uses the enumerator to print the names of the attributes in the collection. It assumes that `button1` and `textBox1` have been created on a form.  
-  
- [!code-cpp[Classic AttributeCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.GetEnumerator Example/CPP/Source.cpp#1)]
- [!code-csharp[Classic AttributeCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.GetEnumerator Example/CS/source.cs#1)]
- [!code-vb[Classic AttributeCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.GetEnumerator Example/VB/source.vb#1)]  
-  
+The following code example gets an enumerator for the attributes on `button1`. It uses the enumerator to print the names of the attributes in the collection. It assumes that `button1` and `textBox1` have been created on a form.  
+ 
+[!code-cpp[Classic AttributeCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.GetEnumerator Example/CPP/Source.cpp#1)]
+[!code-csharp[Classic AttributeCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.GetEnumerator Example/CS/source.cs#1)]
+[!code-vb[Classic AttributeCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.GetEnumerator Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -505,19 +505,19 @@
         <value>The <see cref="T:System.Attribute" /> with the specified index number.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The index number is zero-based. Therefore, you must subtract 1 from the numerical position of a particular <xref:System.Attribute> to access that <xref:System.Attribute>. For example, to get the third <xref:System.Attribute>, you need to specify `myColl[2]`.  
+The index number is zero-based. Therefore, you must subtract 1 from the numerical position of a particular <xref:System.Attribute> to access that <xref:System.Attribute>. For example, to get the third <xref:System.Attribute>, you need to specify `myColl[2]`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.ComponentModel.AttributeCollection.Item%2A> property to print the name of the <xref:System.Attribute> specified by the index number in a text box. Because the index number is zero-based, this code example prints the name of the second <xref:System.Attribute> in a text box. It assumes `button1` and `textBox1` have been created on a form.  
-  
- [!code-cpp[Classic AttributeCollection.this Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.this Example/CPP/source.cpp#1)]
- [!code-csharp[Classic AttributeCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.this Example/CS/source.cs#1)]
- [!code-vb[Classic AttributeCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.this Example/VB/source.vb#1)]  
-  
+The following code example uses the <xref:System.ComponentModel.AttributeCollection.Item%2A> property to print the name of the <xref:System.Attribute> specified by the index number in a text box. Because the index number is zero-based, this code example prints the name of the second <xref:System.Attribute> in a text box. It assumes `button1` and `textBox1` have been created on a form.  
+ 
+[!code-cpp[Classic AttributeCollection.this Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.this Example/CPP/source.cpp#1)]
+[!code-csharp[Classic AttributeCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.this Example/CS/source.cs#1)]
+[!code-vb[Classic AttributeCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.this Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -552,21 +552,21 @@
         <value>The <see cref="T:System.Attribute" /> with the specified type or, if the attribute does not exist, the default value for the attribute type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the attribute does not exist in the collection, this property returns the default value for the attribute type.  
+If the attribute does not exist in the collection, this property returns the default value for the attribute type.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example gets the <xref:System.ComponentModel.DesignerAttribute> from the collection and prints its value. It assumes that `button1` and `textBox1` have been created on a form.  
-  
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
-  
- [!code-cpp[Classic AttributeCollection.this1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.this1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic AttributeCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.this1 Example/CS/source.cs#1)]
- [!code-vb[Classic AttributeCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.this1 Example/VB/source.vb#1)]  
-  
+The following code example gets the <xref:System.ComponentModel.DesignerAttribute> from the collection and prints its value. It assumes that `button1` and `textBox1` have been created on a form.  
+ 
+For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
+ 
+[!code-cpp[Classic AttributeCollection.this1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.this1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic AttributeCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.this1 Example/CS/source.cs#1)]
+[!code-vb[Classic AttributeCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.this1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -602,23 +602,23 @@
           <see langword="true" /> if the attribute is contained within the collection and has the same value as the attribute in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An attribute can provide support for matching.  
+An attribute can provide support for matching.  
+ 
+The difference between the <xref:System.ComponentModel.AttributeCollection.Matches%2A> and <xref:System.ComponentModel.AttributeCollection.Contains%2A> methods is that <xref:System.ComponentModel.AttributeCollection.Matches%2A> calls the <xref:System.Attribute.Match%2A> method on an attribute, and <xref:System.ComponentModel.AttributeCollection.Contains%2A> calls the <xref:System.Object.Equals%2A> method.  
+ 
+For most attributes, these methods do the same thing. For attributes that may have multiple flags, however, <xref:System.Attribute.Match%2A> is typically implemented so that it returns `true` if any of the flags are satisfied. For example, consider a data binding attribute with the Boolean flags "SupportsSql", "SupportsOleDb", and "SupportsXml". This attribute may be present on a property that supports all three data binding approaches. It will often be the case that a programmer needs to know only if a particular approach is available, not all three. Therefore, a programmer could use <xref:System.Attribute.Match%2A> with an instance of the attribute containing only the flags the programmer needs.  
+ 
   
- The difference between the <xref:System.ComponentModel.AttributeCollection.Matches%2A> and <xref:System.ComponentModel.AttributeCollection.Contains%2A> methods is that <xref:System.ComponentModel.AttributeCollection.Matches%2A> calls the <xref:System.Attribute.Match%2A> method on an attribute, and <xref:System.ComponentModel.AttributeCollection.Contains%2A> calls the <xref:System.Object.Equals%2A> method.  
-  
- For most attributes, these methods do the same thing. For attributes that may have multiple flags, however, <xref:System.Attribute.Match%2A> is typically implemented so that it returns `true` if any of the flags are satisfied. For example, consider a data binding attribute with the Boolean flags "SupportsSql", "SupportsOleDb", and "SupportsXml". This attribute may be present on a property that supports all three data binding approaches. It will often be the case that a programmer needs to know only if a particular approach is available, not all three. Therefore, a programmer could use <xref:System.Attribute.Match%2A> with an instance of the attribute containing only the flags the programmer needs.  
-  
-   
-  
+ 
 ## Examples  
- The following code example verifies that the <xref:System.ComponentModel.BrowsableAttribute> is a member of the collection and that it has been set to `true`. It assumes that `button1` and `textBox1` have been created on a form.  
-  
- [!code-cpp[Classic AttributeCollection.Matches Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.Matches Example/CPP/source.cpp#1)]
- [!code-csharp[Classic AttributeCollection.Matches Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.Matches Example/CS/source.cs#1)]
- [!code-vb[Classic AttributeCollection.Matches Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.Matches Example/VB/source.vb#1)]  
-  
+The following code example verifies that the <xref:System.ComponentModel.BrowsableAttribute> is a member of the collection and that it has been set to `true`. It assumes that `button1` and `textBox1` have been created on a form.  
+ 
+[!code-cpp[Classic AttributeCollection.Matches Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.Matches Example/CPP/source.cpp#1)]
+[!code-csharp[Classic AttributeCollection.Matches Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.Matches Example/CS/source.cs#1)]
+[!code-vb[Classic AttributeCollection.Matches Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.Matches Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -654,19 +654,19 @@
           <see langword="true" /> if all the attributes in the array are contained in the collection and have the same values as the attributes in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An attribute can provide support for matching.  
+An attribute can provide support for matching.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example compares the attributes in a button and a text box to see whether they match. It assumes that `button1` and `textBox1` have been created on a form.  
-  
- [!code-cpp[Classic AttributeCollection.Matches1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.Matches1 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic AttributeCollection.Matches1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.Matches1 Example/CS/source.cs#1)]
- [!code-vb[Classic AttributeCollection.Matches1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.Matches1 Example/VB/source.vb#1)]  
-  
+The following code example compares the attributes in a button and a text box to see whether they match. It assumes that `button1` and `textBox1` have been created on a form.  
+ 
+[!code-cpp[Classic AttributeCollection.Matches1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.Matches1 Example/CPP/source.cpp#1)]
+[!code-csharp[Classic AttributeCollection.Matches1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.Matches1 Example/CS/source.cs#1)]
+[!code-vb[Classic AttributeCollection.Matches1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.Matches1 Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

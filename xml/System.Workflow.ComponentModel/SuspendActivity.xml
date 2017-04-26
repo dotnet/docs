@@ -31,16 +31,16 @@
     <summary>Suspends the running workflow instance when executed. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.ComponentModel.SuspendActivity> causes a running workflow instance to pause in running, perhaps to reflect an error condition that requires attention beyond the scope of the workflow. All the state information for the workflow instance is saved, and will be reinstated when the administrator resumes the workflow instance.  
-  
- You cannot include a <xref:System.Workflow.ComponentModel.SuspendActivity> inside an atomic transaction.  
-  
+ 
+<xref:System.Workflow.ComponentModel.SuspendActivity> causes a running workflow instance to pause in running, perhaps to reflect an error condition that requires attention beyond the scope of the workflow. All the state information for the workflow instance is saved, and will be reinstated when the administrator resumes the workflow instance.  
+ 
+You cannot include a <xref:System.Workflow.ComponentModel.SuspendActivity> inside an atomic transaction.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,24 +59,24 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.SuspendActivity" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows initial property values for an instance of the <xref:System.Workflow.ComponentModel.SuspendActivity> class.  
-  
+The following table shows initial property values for an instance of the <xref:System.Workflow.ComponentModel.SuspendActivity> class.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Workflow.ComponentModel.SuspendActivity.Error%2A>|`Null` (`Nothing` in Visual Basic).|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example illustrates using the constructor for a <xref:System.Workflow.ComponentModel.SuspendActivity>, and other things discussed elsewhere within this type.  
-  
- This code example is part of the Suspend and Terminate SDK sample and is from the SuspendAndTerminateWorkflow.Designer.cs file. For more information, see [Using Suspend and Terminate](http://msdn.microsoft.com/en-us/f4dffa58-d01e-44fb-b5a1-3b283d2c4517).  
-  
- [!code-csharp[WF_Samples#173](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#173)]
- [!code-vb[WF_Samples#173](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#173)]  
-  
+This example illustrates using the constructor for a <xref:System.Workflow.ComponentModel.SuspendActivity>, and other things discussed elsewhere within this type.  
+ 
+This code example is part of the Suspend and Terminate SDK sample and is from the SuspendAndTerminateWorkflow.Designer.cs file. For more information, see [Using Suspend and Terminate](http://msdn.microsoft.com/en-us/f4dffa58-d01e-44fb-b5a1-3b283d2c4517).  
+ 
+[!code-csharp[WF_Samples#173](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#173)]
+[!code-vb[WF_Samples#173](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#173)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,20 +127,20 @@
         <value>An error message that provides the reason for the workflow instance suspension. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Propagation of this error message is determined by the host (the instance manager or the persistence provider).  
+Propagation of this error message is determined by the host (the instance manager or the persistence provider).  
+ 
   
-   
-  
+ 
 ## Examples  
- This example illustrates initializing the <xref:System.Workflow.ComponentModel.SuspendActivity.Error%2A> property of a <xref:System.Workflow.ComponentModel.SuspendActivity>, and other concepts discussed elsewhere in this type.  
-  
- This code example is part of the Suspend and Terminate SDK sample and is from the SuspendAndTerminateWorkflow.Designer.cs file. For more information, see [Using Suspend and Terminate](http://msdn.microsoft.com/en-us/f4dffa58-d01e-44fb-b5a1-3b283d2c4517).  
-  
- [!code-csharp[WF_Samples#173](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#173)]
- [!code-vb[WF_Samples#173](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#173)]  
-  
+This example illustrates initializing the <xref:System.Workflow.ComponentModel.SuspendActivity.Error%2A> property of a <xref:System.Workflow.ComponentModel.SuspendActivity>, and other concepts discussed elsewhere in this type.  
+ 
+This code example is part of the Suspend and Terminate SDK sample and is from the SuspendAndTerminateWorkflow.Designer.cs file. For more information, see [Using Suspend and Terminate](http://msdn.microsoft.com/en-us/f4dffa58-d01e-44fb-b5a1-3b283d2c4517).  
+ 
+[!code-csharp[WF_Samples#173](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#173)]
+[!code-vb[WF_Samples#173](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#173)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.ComponentModel.SuspendActivity.Error" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

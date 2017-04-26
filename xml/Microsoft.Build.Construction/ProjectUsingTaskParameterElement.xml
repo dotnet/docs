@@ -96,10 +96,10 @@
         <value>Returns the value of the Output attribute. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Represents a boolean flag that, if `true`, indicates that this parameter is both an input and an output parameter.  
-  
+Represents a boolean flag that, if `true`, indicates that this parameter is both an input and an output parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,10 +139,10 @@
         <value>Returns the value of the Type attribute. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Indicates the type of the parameter. The meaning of a type depends on the task factory of this inline task.  
-  
+Indicates the type of the parameter. The meaning of a type depends on the task factory of this inline task.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,10 +182,10 @@
         <value>Returns the value of the Required attribute. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Represents a boolean flag that, if "true", indicates that this parameter is required.  
-  
+Represents a boolean flag that, if "true", indicates that this parameter is required.  
+ 
  ]]></format>
         </remarks>
       </Docs>

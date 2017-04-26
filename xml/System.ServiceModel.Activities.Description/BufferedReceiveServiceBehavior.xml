@@ -18,10 +18,10 @@
     <summary>A service behavior that enables your service to use buffered receive processing.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffered receive feature enables a workflow service to process out-of-order messages. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Out-of-Order Message Processing](~/docs/framework/wcf/feature-details/out-of-order-message-processing.md).  
-  
+The buffered receive feature enables a workflow service to process out-of-order messages. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Out-of-Order Message Processing](~/docs/framework/wcf/feature-details/out-of-order-message-processing.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -108,10 +108,10 @@
         <value>The maximum number of pending messages.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is 512. This property limits the number of out-of-order messages that can be received by a workflow service.  
-  
+The default value is 512. This property limits the number of out-of-order messages that can be received by a workflow service.  
+ 
  ]]></format>
         </remarks>
       </Docs>

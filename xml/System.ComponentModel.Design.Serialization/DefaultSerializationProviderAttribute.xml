@@ -24,10 +24,10 @@
     <summary>The <see cref="T:System.ComponentModel.Design.Serialization.DefaultSerializationProviderAttribute" /> attribute is placed on a serializer to indicate the class to use as a default provider of that type of serializer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To be a default serialization provider, a class must implement the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationProvider> interface and have an empty constructor. The class itself can be internal to the assembly. This class cannot be inherited.  
-  
+To be a default serialization provider, a class must implement the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationProvider> interface and have an empty constructor. The class itself can be internal to the assembly. This class cannot be inherited.  
+ 
  ]]></format>
     </remarks>
   </Docs>

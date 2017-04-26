@@ -22,19 +22,19 @@
     <summary>Specifies categories of functionality potentially harmful to the host if invoked by a method or class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used by the <xref:System.Security.Permissions.HostProtectionAttribute> attribute.  
+This enumeration is used by the <xref:System.Security.Permissions.HostProtectionAttribute> attribute.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.HostProtectionResource> enumeration with the <xref:System.Security.Permissions.HostProtectionAttribute> attribute. This example is part of a larger example provided for the <xref:System.Security.Permissions.HostProtectionAttribute> class.  
-  
- [!code-cpp[System.Security.Permissions.HostProtectionAttribute.1.1#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.HostProtectionAttribute.1.1/CPP/hostprotectionattribute.cpp#2)]
- [!code-csharp[System.Security.Permissions.HostProtectionAttribute.1.1#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.HostProtectionAttribute.1.1/CS/hostprotectionattribute.cs#2)]
- [!code-vb[System.Security.Permissions.HostProtectionAttribute.1.1#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.HostProtectionAttribute.1.1/VB/hostprotectionattribute.vb#2)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.HostProtectionResource> enumeration with the <xref:System.Security.Permissions.HostProtectionAttribute> attribute. This example is part of a larger example provided for the <xref:System.Security.Permissions.HostProtectionAttribute> class.  
+ 
+[!code-cpp[System.Security.Permissions.HostProtectionAttribute.1.1#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.HostProtectionAttribute.1.1/CPP/hostprotectionattribute.cpp#2)]
+[!code-csharp[System.Security.Permissions.HostProtectionAttribute.1.1#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.HostProtectionAttribute.1.1/CS/hostprotectionattribute.cs#2)]
+[!code-vb[System.Security.Permissions.HostProtectionAttribute.1.1#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.HostProtectionAttribute.1.1/VB/hostprotectionattribute.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

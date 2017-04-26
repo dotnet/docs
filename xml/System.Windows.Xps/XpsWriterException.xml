@@ -14,10 +14,10 @@
     <summary>The exception that is thrown when a method of either an <see cref="T:System.Windows.Xps.XpsDocumentWriter" /> or a <see cref="T:System.Windows.Xps.VisualsToXpsDocument" /> object is called that is incompatible with the current state of the object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, this exception is thrown if the **CancelAsync** method of either object is called when the object is not performing an asynchronous write operation.  
-  
+For example, this exception is thrown if the **CancelAsync** method of either object is called when the object is not performing an asynchronous write operation.  
+ 
  ]]></format>
     </remarks>
   </Docs>

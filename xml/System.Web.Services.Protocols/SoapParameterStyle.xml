@@ -14,10 +14,10 @@
     <summary>Specifies how parameters are formatted in a SOAP message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Protocols.SoapParameterStyle> can be set when applying a <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> to an XML Web service method or a method of a client proxy class. The <xref:System.Web.Services.Protocols.SoapParameterStyle> can also be set by applying a <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute> to a class implementing an XML Web service.  
-  
+The <xref:System.Web.Services.Protocols.SoapParameterStyle> can be set when applying a <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> to an XML Web service method or a method of a client proxy class. The <xref:System.Web.Services.Protocols.SoapParameterStyle> can also be set by applying a <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute> to a class implementing an XML Web service.  
+ 
  ]]></format>
     </remarks>
   </Docs>

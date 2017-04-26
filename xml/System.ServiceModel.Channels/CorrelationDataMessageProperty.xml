@@ -18,10 +18,10 @@
     <summary>Provides a message property that accumulates additional correlation information for a message as protocols are applied, such as when data is returned from a <see cref="T:System.ServiceModel.MessageQuerySet" /> over the incoming message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The correlation data accumulated by the <xref:System.ServiceModel.Channels.CorrelationDataMessageProperty> augments the message contents when calculating instance keys that relate messages to other messages.  
-  
+The correlation data accumulated by the <xref:System.ServiceModel.Channels.CorrelationDataMessageProperty> augments the message contents when calculating instance keys that relate messages to other messages.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -88,10 +88,10 @@
         <summary>Adds correlation data to the specified message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the message has a <xref:System.ServiceModel.Channels.CorrelationDataMessageProperty> then the correlation data is added to the <xref:System.ServiceModel.Channels.CorrelationDataMessageProperty>; otherwise, a new <xref:System.ServiceModel.Channels.CorrelationDataMessageProperty> is added that includes the correlation data.  
-  
+If the message has a <xref:System.ServiceModel.Channels.CorrelationDataMessageProperty> then the correlation data is added to the <xref:System.ServiceModel.Channels.CorrelationDataMessageProperty>; otherwise, a new <xref:System.ServiceModel.Channels.CorrelationDataMessageProperty> is added that includes the correlation data.  
+ 
  ]]></format>
         </remarks>
       </Docs>

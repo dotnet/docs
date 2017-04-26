@@ -11,14 +11,14 @@
     <summary>Provides a format-independent mechanism for transferring data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.IDataObject> interface is used by the <xref:System.Windows.Clipboard> class for data transfer operations like drag-and-drop.  
-  
- When implemented by a class, the <xref:System.Windows.IDataObject> methods enable a single data object to offer data in multiple formats.  Offering data in multiple formats tends to make the data usable by a wider variety of applications than if only a single data format were supported.  
-  
- The <xref:System.Windows.DataObject> class provides a basic implementation of the <xref:System.Windows.IDataObject> interface.  
-  
+The <xref:System.Windows.IDataObject> interface is used by the <xref:System.Windows.Clipboard> class for data transfer operations like drag-and-drop.  
+ 
+When implemented by a class, the <xref:System.Windows.IDataObject> methods enable a single data object to offer data in multiple formats.  Offering data in multiple formats tends to make the data usable by a wider variety of applications than if only a single data format were supported.  
+ 
+The <xref:System.Windows.DataObject> class provides a basic implementation of the <xref:System.Windows.IDataObject> interface.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,10 +49,10 @@
         <returns>A data object with the data in the specified format, or **null** if the data is not available in the specified format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an implementation of this method, see <xref:System.Windows.DataObject.GetData%2A>.  
-  
+For an implementation of this method, see <xref:System.Windows.DataObject.GetData%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
         <returns>A data object with the data in the specified format, or **null** if the data is not available in the specified format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an implementation of this method, see <xref:System.Windows.DataObject.GetData%2A>.  
-  
+For an implementation of this method, see <xref:System.Windows.DataObject.GetData%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,10 +122,10 @@
         <returns>A data object with the data in the specified format, or **null** if the data is not available in the specified format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an implementation of this method, see <xref:System.Windows.DataObject.GetData%2A>.  
-  
+For an implementation of this method, see <xref:System.Windows.DataObject.GetData%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -157,14 +157,14 @@
           <see langword="true" /> if the data is in, or can be converted to, the specified format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an implementation of this method, see <xref:System.Windows.DataObject.GetDataPresent%2A>.  
-  
- Call **GetDataPresent** to determine whether a specified format is available in this data object before calling <xref:System.Windows.IDataObject.GetData%2A>.  
-  
- Call <xref:System.Windows.IDataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
-  
+For an implementation of this method, see <xref:System.Windows.DataObject.GetDataPresent%2A>.  
+ 
+Call **GetDataPresent** to determine whether a specified format is available in this data object before calling <xref:System.Windows.IDataObject.GetData%2A>.  
+ 
+Call <xref:System.Windows.IDataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,14 +196,14 @@
           <see langword="true" /> if the data is in, or can be converted to, the specified format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an implementation of this method, <xref:System.Windows.DataObject.GetDataPresent%2A>.  
-  
- Call **GetDataPresent** to determine whether a specified format is available in this data object before calling <xref:System.Windows.IDataObject.GetData%2A>.  
-  
- Call <xref:System.Windows.IDataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
-  
+For an implementation of this method, <xref:System.Windows.DataObject.GetDataPresent%2A>.  
+ 
+Call **GetDataPresent** to determine whether a specified format is available in this data object before calling <xref:System.Windows.IDataObject.GetData%2A>.  
+ 
+Call <xref:System.Windows.IDataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,26 +238,26 @@
           <see langword="true" /> if the data is in, or can be converted to, the specified format; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an implementation of this method, see <xref:System.Windows.DataObject.GetDataPresent%2A>.  
-  
- Call **GetDataPresent** to determine whether a specified format is available in this data object before calling <xref:System.Windows.IDataObject.GetData%2A>.  
-  
- Call <xref:System.Windows.IDataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
-  
- This method returns **true** when:  
-  
+For an implementation of this method, see <xref:System.Windows.DataObject.GetDataPresent%2A>.  
+ 
+Call **GetDataPresent** to determine whether a specified format is available in this data object before calling <xref:System.Windows.IDataObject.GetData%2A>.  
+ 
+Call <xref:System.Windows.IDataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
+ 
+This method returns **true** when:  
+ 
 -   The *autoConvert* parameter is **true** and the data is in the specified format, or it can be converted to the specified format.  
-  
+ 
 -   The *autoConvert* parameter is **false** and the data is in the specified format.  
-  
- This method returns **false** when:  
-  
+ 
+This method returns **false** when:  
+ 
 -   The *autoConvert* parameter is **true** and the data is not available in the specified format and cannot be converted to the specified format.  
-  
+ 
 -   The *autoConvert* parameter is **false**, and the data is not available in the specified format.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -285,10 +285,10 @@
         <returns>An array of strings, with each string specifying the name of a format supported by this data object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an implementation of this method, see <xref:System.Windows.DataObject.GetFormats%2A>.  
-  
+For an implementation of this method, see <xref:System.Windows.DataObject.GetFormats%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -320,10 +320,10 @@
         <returns>An array of strings, with each string specifying the name of a format supported by this data object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an implementation of this method, see <xref:System.Windows.DataObject.GetFormats%2A>.  
-  
+For an implementation of this method, see <xref:System.Windows.DataObject.GetFormats%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -353,10 +353,10 @@
         <summary>Stores the specified data in this data object, automatically converting the data format from the source object type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an implementation of this method, see <xref:System.Windows.DataObject.SetData%2A>.  
-  
+For an implementation of this method, see <xref:System.Windows.DataObject.SetData%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -388,10 +388,10 @@
         <summary>Stores the specified data in this data object, along with one or more specified data formats. The data format is specified by a string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an implementation of this method, see <xref:System.Windows.DataObject.SetData%2A>.  
-  
+For an implementation of this method, see <xref:System.Windows.DataObject.SetData%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,10 +423,10 @@
         <summary>Stores the specified data in this data object, along with one or more specified data formats. The data format is specified by a <see cref="T:System.Type" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an implementation of this method, see <xref:System.Windows.DataObject.SetData%2A>.  
-  
+For an implementation of this method, see <xref:System.Windows.DataObject.SetData%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -461,10 +461,10 @@
         <summary>Stores the specified data in this data object, along with one or more specified data formats. This overload includes a <see langword="Boolean" /> flag to indicate whether the data may be converted to another format on retrieval.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an implementation of this method, see <xref:System.Windows.DataObject.SetData%2A>.  
-  
+For an implementation of this method, see <xref:System.Windows.DataObject.SetData%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -478,12 +478,12 @@
         <summary>Checks to see whether the data is available in, or can be converted to, a specified format.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call **GetDataPresent** to determine whether a specified format is available in this data object before calling <xref:System.Windows.IDataObject.GetData%2A>.  
-  
- Call <xref:System.Windows.IDataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
-  
+Call **GetDataPresent** to determine whether a specified format is available in this data object before calling <xref:System.Windows.IDataObject.GetData%2A>.  
+ 
+Call <xref:System.Windows.IDataObject.GetFormats%2A> to obtain a list of all the formats that are available in this data object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

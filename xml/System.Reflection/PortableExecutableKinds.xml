@@ -26,13 +26,13 @@
     <summary>Identifies the nature of the code in an executable file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To obtain this value for a module, use the <xref:System.Reflection.Module.GetPEKind%2A?displayProperty=fullName> method.  
-  
+To obtain this value for a module, use the <xref:System.Reflection.Module.GetPEKind%2A?displayProperty=fullName> method.  
+ 
 > [!NOTE]
 >  This enumeration corresponds to the `CorPEKind` enumeration in the unmanaged reflection API, which is accessed by the unmanaged `GetPEKind` function.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

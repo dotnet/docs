@@ -14,14 +14,14 @@
     <summary>Provides methods for playing sounds.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the `My.Computer.Audio.Play` and `My.Computer.Audio.PlaySystemSound` methods to play .wav sound files and system sounds.  
-  
- For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
-  
+You can use the `My.Computer.Audio.Play` and `My.Computer.Audio.PlaySystemSound` methods to play .wav sound files and system sounds.  
+ 
+For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -31,20 +31,20 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- The `My.Computer.Audio.Play` method plays the specified sound in the background when `AudioPlayMode.Background` is specified.  
-  
- [!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
-  
- This code can run only within a Windows Forms application.  
-  
- The file name should reference a .wav sound file on your system.  
-  
- To simplify the management of your sound files, consider storing the files as application resources. The files can then be accessed through the `My.Resources` object.  
-  
+The `My.Computer.Audio.Play` method plays the specified sound in the background when `AudioPlayMode.Background` is specified.  
+ 
+[!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
+ 
+This code can run only within a Windows Forms application.  
+ 
+The file name should reference a .wav sound file on your system.  
+ 
+To simplify the management of your sound files, consider storing the files as application resources. The files can then be accessed through the `My.Resources` object.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,10 +63,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Devices.Audio" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [Objects](http://msdn.microsoft.com/library/651c73e4-dca8-402b-9c6b-e3902b3a3f4b)  
-  
+[Objects](http://msdn.microsoft.com/library/651c73e4-dca8-402b-9c6b-e3902b3a3f4b)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -91,24 +91,24 @@
         <summary>Plays a .wav sound file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Play` method plays the .wav sound file stored as a file at `location`, as a byte array in `data`, or as a stream in `stream`.  
-  
- If the overload that takes only the `location` parameter is used, the `Play` method plays the sound in the background. Otherwise, the `playMode` parameter determines how the sound will play.  
-  
+The `Play` method plays the .wav sound file stored as a file at `location`, as a byte array in `data`, or as a stream in `stream`.  
+ 
+If the overload that takes only the `location` parameter is used, the `Play` method plays the sound in the background. Otherwise, the `playMode` parameter determines how the sound will play.  
+ 
 |`playMode`|Description|  
 |-|-|  
 |`AudioPlayMode.Background`|Plays the sound in the background. The calling code continues to execute.|  
 |`AudioPlayMode.BackgroundLoop`|Plays the sound in the background until the <xref:Microsoft.VisualBasic.Devices.Audio.Stop%2A> method is called. The calling code continues to execute.|  
 |`AudioPlayMode.WaitToComplete`|Plays the sound and waits until it completes before the calling code continues.|  
-  
- Background playing lets the application execute other code while the sound plays.  
-  
- For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
-  
+ 
+Background playing lets the application execute other code while the sound plays.  
+ 
+For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -118,20 +118,20 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
-  
- [!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
-  
- This code example can only run within a Windows Forms application.  
-  
- The file name should reference a .wav sound file on your system.  
-  
- To simplify the management of your sound files, consider storing the files as application resources. They can then be accessed through the `My.Resources` object.  
-  
+The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
+ 
+[!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
+ 
+This code example can only run within a Windows Forms application.  
+ 
+The file name should reference a .wav sound file on your system.  
+ 
+To simplify the management of your sound files, consider storing the files as application resources. They can then be accessed through the `My.Resources` object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -168,24 +168,24 @@
         <summary>Plays a .wav sound file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Play` method plays the .wav sound file stored as a file at `location`, as a byte array in `data`, or as a stream in `stream`.  
-  
- If the overload that takes only the `location` parameter is used, the `Play` method plays the sound in the background. Otherwise, the `playMode` parameter determines how the sound will play.  
-  
+The `Play` method plays the .wav sound file stored as a file at `location`, as a byte array in `data`, or as a stream in `stream`.  
+ 
+If the overload that takes only the `location` parameter is used, the `Play` method plays the sound in the background. Otherwise, the `playMode` parameter determines how the sound will play.  
+ 
 |`playMode`|Description|  
 |-|-|  
 |`AudioPlayMode.Background`|Plays the sound in the background. The calling code continues to execute.|  
 |`AudioPlayMode.BackgroundLoop`|Plays the sound in the background until the <xref:Microsoft.VisualBasic.Devices.Audio.Stop%2A> method is called. The calling code continues to execute.|  
 |`AudioPlayMode.WaitToComplete`|Plays the sound and waits until it completes before the calling code continues.|  
-  
- Background playing lets the application execute other code while the sound plays.  
-  
- For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
-  
+ 
+Background playing lets the application execute other code while the sound plays.  
+ 
+For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -195,20 +195,20 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
-  
- [!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
-  
- This code example can only run within a Windows Forms application.  
-  
- The file name should reference a .wav sound file on your system.  
-  
- To simplify the management of your sound files, consider storing the files as application resources. They can then be accessed through the `My.Resources` object.  
-  
+The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
+ 
+[!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
+ 
+This code example can only run within a Windows Forms application.  
+ 
+The file name should reference a .wav sound file on your system.  
+ 
+To simplify the management of your sound files, consider storing the files as application resources. They can then be accessed through the `My.Resources` object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -243,24 +243,24 @@
         <summary>Plays a .wav sound file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Play` method plays the .wav sound file stored as a file at `location`, as a byte array in `data`, or as a stream in `stream`.  
-  
- If the overload that takes only the `location` parameter is used, the `Play` method plays the sound in the background. Otherwise, the `playMode` parameter determines how the sound will play.  
-  
+The `Play` method plays the .wav sound file stored as a file at `location`, as a byte array in `data`, or as a stream in `stream`.  
+ 
+If the overload that takes only the `location` parameter is used, the `Play` method plays the sound in the background. Otherwise, the `playMode` parameter determines how the sound will play.  
+ 
 |`playMode`|Description|  
 |-|-|  
 |`AudioPlayMode.Background`|Plays the sound in the background. The calling code continues to execute.|  
 |`AudioPlayMode.BackgroundLoop`|Plays the sound in the background until the <xref:Microsoft.VisualBasic.Devices.Audio.Stop%2A> method is called. The calling code continues to execute.|  
 |`AudioPlayMode.WaitToComplete`|Plays the sound and waits until it completes before the calling code continues.|  
-  
- Background playing lets the application execute other code while the sound plays.  
-  
- For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
-  
+ 
+Background playing lets the application execute other code while the sound plays.  
+ 
+For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -270,20 +270,20 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
-  
- [!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
-  
- This code example can only run within a Windows Forms application.  
-  
- The file name should reference a .wav sound file on your system.  
-  
- To simplify the management of your sound files, consider storing the files as application resources. They can then be accessed through the `My.Resources` object.  
-  
+The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
+ 
+[!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
+ 
+This code example can only run within a Windows Forms application.  
+ 
+The file name should reference a .wav sound file on your system.  
+ 
+To simplify the management of your sound files, consider storing the files as application resources. They can then be accessed through the `My.Resources` object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -317,24 +317,24 @@
         <summary>Plays a .wav sound file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Play` method plays the .wav sound file stored as a file at `location`, as a byte array in `data`, or as a stream in `stream`.  
-  
- If the overload that takes only the `location` parameter is used, the `Play` method plays the sound in the background. Otherwise, the `playMode` parameter determines how the sound will play.  
-  
+The `Play` method plays the .wav sound file stored as a file at `location`, as a byte array in `data`, or as a stream in `stream`.  
+ 
+If the overload that takes only the `location` parameter is used, the `Play` method plays the sound in the background. Otherwise, the `playMode` parameter determines how the sound will play.  
+ 
 |`playMode`|Description|  
 |-|-|  
 |`AudioPlayMode.Background`|Plays the sound in the background. The calling code continues to execute.|  
 |`AudioPlayMode.BackgroundLoop`|Plays the sound in the background until the <xref:Microsoft.VisualBasic.Devices.Audio.Stop%2A> method is called. The calling code continues to execute.|  
 |`AudioPlayMode.WaitToComplete`|Plays the sound and waits until it completes before the calling code continues.|  
-  
- Background playing lets the application execute other code while the sound plays.  
-  
- For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
-  
+ 
+Background playing lets the application execute other code while the sound plays.  
+ 
+For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -344,20 +344,20 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
-  
- [!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
-  
- This code example can only run within a Windows Forms application.  
-  
- The file name should reference a .wav sound file on your system.  
-  
- To simplify the management of your sound files, consider storing the files as application resources. They can then be accessed through the `My.Resources` object.  
-  
+The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
+ 
+[!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
+ 
+This code example can only run within a Windows Forms application.  
+ 
+The file name should reference a .wav sound file on your system.  
+ 
+To simplify the management of your sound files, consider storing the files as application resources. They can then be accessed through the `My.Resources` object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -393,26 +393,26 @@
         <summary>Plays a system sound.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `PlaySystemSound` method plays the system sound described by `systemSound`; the sound is played once, in the background.  
-  
- The value of `systemSound` must be one of the shared members from the <xref:System.Media.SystemSounds> class:  
-  
+The `PlaySystemSound` method plays the system sound described by `systemSound`; the sound is played once, in the background.  
+ 
+The value of `systemSound` must be one of the shared members from the <xref:System.Media.SystemSounds> class:  
+ 
 -   <xref:System.Media.SystemSounds.Asterisk%2A>  
-  
+ 
 -   <xref:System.Media.SystemSounds.Beep%2A>  
-  
+ 
 -   <xref:System.Media.SystemSounds.Exclamation%2A>  
-  
+ 
 -   <xref:System.Media.SystemSounds.Hand%2A>  
-  
+ 
 -   <xref:System.Media.SystemSounds.Question%2A>  
-  
- For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
-  
+ 
+For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -422,16 +422,16 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `My.Computer.Audio.PlaySystemSound` method to play a system sound.  
-  
- [!code-vb[VbVbalrMyComputer#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#17)]  
-  
- This code example can run only within a Windows Forms application.  
-  
+This example uses the `My.Computer.Audio.PlaySystemSound` method to play a system sound.  
+ 
+[!code-vb[VbVbalrMyComputer#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#17)]  
+ 
+This code example can run only within a Windows Forms application.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -455,16 +455,16 @@
         <summary>Stops a sound playing in the background.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `My.Computer.Audio.Stop` method stops a sound playing in the background that was started by the `My.Computer.Audio.Play` method.  
-  
- In general, when an application plays a looping sound, it should stop the sound at some point.  
-  
- For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
-  
+The `My.Computer.Audio.Stop` method stops a sound playing in the background that was started by the `My.Computer.Audio.Play` method.  
+ 
+In general, when an application plays a looping sound, it should stop the sound at some point.  
+ 
+For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -474,20 +474,20 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `My.Computer.Audio.Stop` method to stop the application currently playing background or looping sound and uses the `My.Computer.Audio.Play` method to play a looping sound in the background.  
-  
- [!code-vb[VbVbalrMyComputer#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#19)]  
-  
- This code example can run only within a Windows Forms application.  
-  
- The file name should reference a .wav sound file on your system.  
-  
- To simplify the management of your sound files, consider storing the files as application resources. These files can then be accessed through the `My.Resources` object.  
-  
+This example uses the `My.Computer.Audio.Stop` method to stop the application currently playing background or looping sound and uses the `My.Computer.Audio.Play` method to play a looping sound in the background.  
+ 
+[!code-vb[VbVbalrMyComputer#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#19)]  
+ 
+This code example can run only within a Windows Forms application.  
+ 
+The file name should reference a .wav sound file on your system.  
+ 
+To simplify the management of your sound files, consider storing the files as application resources. These files can then be accessed through the `My.Resources` object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

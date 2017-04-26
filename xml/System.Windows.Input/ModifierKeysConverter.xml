@@ -14,10 +14,10 @@
     <summary>Converts a <see cref="T:System.Windows.Input.ModifierKeys" /> object to and from other types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.ModifierKeysConverter> converts to and from a <xref:System.String> using the "+" character as the delimiter.  For example, the string `Control+ALT` would be converted into a <xref:System.Windows.Input.ModifierKeys> object consisting of the <xref:System.Windows.Input.ModifierKeys> and <xref:System.Windows.Input.ModifierKeys> keys. This behavior differs from the default XAML parser-level enumeration combine character of ",".  
-  
+The <xref:System.Windows.Input.ModifierKeysConverter> converts to and from a <xref:System.String> using the "+" character as the delimiter.  For example, the string `Control+ALT` would be converted into a <xref:System.Windows.Input.ModifierKeys> object consisting of the <xref:System.Windows.Input.ModifierKeys> and <xref:System.Windows.Input.ModifierKeys> keys. This behavior differs from the default XAML parser-level enumeration combine character of ",".  
+ 
 <a name="xamlTextUsage_ModifierKeysConverter"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -114,10 +114,10 @@
         <returns>The converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.ModifierKeysConverter> converts to and from a <xref:System.String> using the "+" key as the delimiter.  For example, the string `Control+ALT` would be converted into a <xref:System.Windows.Input.ModifierKeys> consisting of the <xref:System.Windows.Input.ModifierKeys> and <xref:System.Windows.Input.ModifierKeys> keys.  
-  
+The <xref:System.Windows.Input.ModifierKeysConverter> converts to and from a <xref:System.String> using the "+" key as the delimiter.  For example, the string `Control+ALT` would be converted into a <xref:System.Windows.Input.ModifierKeys> consisting of the <xref:System.Windows.Input.ModifierKeys> and <xref:System.Windows.Input.ModifierKeys> keys.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
@@ -151,12 +151,12 @@
         <returns>The converted object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `destinationType` must be <xref:System.String>.  
-  
- The <xref:System.Windows.Input.ModifierKeysConverter> converts to and from a <xref:System.String> using the "+" key as the delimiter.  For example, the string `Control+ALT` would be converted into a <xref:System.Windows.Input.ModifierKeys> consisting of the <xref:System.Windows.Input.ModifierKeys> and <xref:System.Windows.Input.ModifierKeys> keys.  
-  
+`destinationType` must be <xref:System.String>.  
+ 
+The <xref:System.Windows.Input.ModifierKeysConverter> converts to and from a <xref:System.String> using the "+" key as the delimiter.  For example, the string `Control+ALT` would be converted into a <xref:System.Windows.Input.ModifierKeys> consisting of the <xref:System.Windows.Input.ModifierKeys> and <xref:System.Windows.Input.ModifierKeys> keys.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

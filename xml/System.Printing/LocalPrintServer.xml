@@ -14,25 +14,25 @@
     <summary>Represents the local print server (the computer on which your application is running) and enables management of its print queues.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When your application writes a value to a property of the <xref:System.Printing.LocalPrintServer> object, that change has no effect until the value is passed to the computer that is represented by the <xref:System.Printing.LocalPrintServer> object. To ensure that the change in value takes effect, use the <xref:System.Printing.LocalPrintServer.Commit%2A> method.  
-  
- In addition, other applications may also change the print service properties of the computer. To ensure that the <xref:System.Printing.LocalPrintServer> object used by your application has the latest actual values, use the <xref:System.Printing.LocalPrintServer.Refresh%2A> method.  
-  
+When your application writes a value to a property of the <xref:System.Printing.LocalPrintServer> object, that change has no effect until the value is passed to the computer that is represented by the <xref:System.Printing.LocalPrintServer> object. To ensure that the change in value takes effect, use the <xref:System.Printing.LocalPrintServer.Commit%2A> method.  
+ 
+In addition, other applications may also change the print service properties of the computer. To ensure that the <xref:System.Printing.LocalPrintServer> object used by your application has the latest actual values, use the <xref:System.Printing.LocalPrintServer.Refresh%2A> method.  
+ 
 > [!CAUTION]
 >  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
+ 
+If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
+ 
   
- If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to create an instance of the <xref:System.Printing.LocalPrintServer> class.  
-  
- [!code-csharp[XpsPrint#PrintQueueSnip](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#printqueuesnip)]
- [!code-vb[XpsPrint#PrintQueueSnip](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#printqueuesnip)]  
-  
+The following example shows how to create an instance of the <xref:System.Printing.LocalPrintServer> class.  
+ 
+[!code-csharp[XpsPrint#PrintQueueSnip](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#printqueuesnip)]
+[!code-vb[XpsPrint#PrintQueueSnip](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#printqueuesnip)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,14 +51,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Printing.LocalPrintServer" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this constructor in code that tests a printer's capabilities and configures a print job to take advantage of them.  
-  
- [!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
- [!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
- [!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
-  
+The following example shows how to use this constructor in code that tests a printer's capabilities and configures a print job to take advantage of them.  
+ 
+[!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
+[!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
+[!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,13 +98,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Printing.LocalPrintServer" /> class that has the specified <see cref="T:System.Printing.PrintSystemDesiredAccess" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this constructor in code that will install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
-  
- [!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
- [!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
-  
+The following example shows how to use this constructor in code that will install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
+ 
+[!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
+[!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Printing.PrintServerException">
@@ -190,18 +190,18 @@
         <summary>Writes any changes that your application made to the properties of the <see cref="T:System.Printing.LocalPrintServer" /> to the actual print server that the object represents.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method requires that the <xref:System.Printing.LocalPrintServer> object be created with <xref:System.Printing.PrintSystemDesiredAccess> rights.  
+The method requires that the <xref:System.Printing.LocalPrintServer> object be created with <xref:System.Printing.PrintSystemDesiredAccess> rights.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this method in code that will install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
-  
- [!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
- [!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
-  
+The following example shows how to use this method in code that will install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
+ 
+[!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
+[!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Printing.PrintServerException">Some properties are not committed.</exception>
@@ -277,18 +277,18 @@
         <value>The <see cref="T:System.Printing.PrintQueue" /> that is designated as the default queue for the local computer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Your application will have only <xref:System.Printing.PrintSystemDesiredAccess> access to the default queue, even if you have <xref:System.Printing.PrintSystemDesiredAccess> rights to the print server. To open the queue with greater access, use one of the <xref:System.Printing.PrintQueue.%23ctor%2A> constructors that enables you to specify the desired access level.  
+Your application will have only <xref:System.Printing.PrintSystemDesiredAccess> access to the default queue, even if you have <xref:System.Printing.PrintSystemDesiredAccess> rights to the print server. To open the queue with greater access, use one of the <xref:System.Printing.PrintQueue.%23ctor%2A> constructors that enables you to specify the desired access level.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this property in code that will install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
-  
- [!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
- [!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
-  
+The following example shows how to use this property in code that will install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
+ 
+[!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
+[!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,18 +359,18 @@
         <returns>The default <see cref="T:System.Printing.PrintQueue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Your application will have only <xref:System.Printing.PrintSystemDesiredAccess> access to the default queue, even if you have <xref:System.Printing.PrintSystemDesiredAccess> rights to the print server. To open the queue with greater access, use one of the <xref:System.Printing.PrintQueue.%23ctor%2A> constructors that enables you to specify the desired access level.  
+Your application will have only <xref:System.Printing.PrintSystemDesiredAccess> access to the default queue, even if you have <xref:System.Printing.PrintSystemDesiredAccess> rights to the print server. To open the queue with greater access, use one of the <xref:System.Printing.PrintQueue.%23ctor%2A> constructors that enables you to specify the desired access level.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use this method to discover at run time the properties, and the types of those properties, of a print queue, without using reflection.  
-  
- [!code-csharp[GetPrintObjectPropertyTypesWithoutReflection#ShowPropertyTypesWithoutReflection](~/samples/snippets/csharp/VS_Snippets_Wpf/GetPrintObjectPropertyTypesWithoutReflection/CSharp/Program.cs#showpropertytypeswithoutreflection)]
- [!code-vb[GetPrintObjectPropertyTypesWithoutReflection#ShowPropertyTypesWithoutReflection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GetPrintObjectPropertyTypesWithoutReflection/visualbasic/program.vb#showpropertytypeswithoutreflection)]  
-  
+The following example shows how to use this method to discover at run time the properties, and the types of those properties, of a print queue, without using reflection.  
+ 
+[!code-csharp[GetPrintObjectPropertyTypesWithoutReflection#ShowPropertyTypesWithoutReflection](~/samples/snippets/csharp/VS_Snippets_Wpf/GetPrintObjectPropertyTypesWithoutReflection/CSharp/Program.cs#showpropertytypeswithoutreflection)]
+[!code-vb[GetPrintObjectPropertyTypesWithoutReflection#ShowPropertyTypesWithoutReflection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GetPrintObjectPropertyTypesWithoutReflection/visualbasic/program.vb#showpropertytypeswithoutreflection)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -392,10 +392,10 @@
         <summary>Updates the properties of the <see cref="T:System.Printing.LocalPrintServer" /> object so that their values match the values of the print server that the object represents.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any changes that you make to <xref:System.Printing.LocalPrintServer> properties that are not written to the print server by using the <xref:System.Printing.LocalPrintServer.Commit%2A> method are lost when <xref:System.Printing.LocalPrintServer.Refresh%2A> runs.  
-  
+Any changes that you make to <xref:System.Printing.LocalPrintServer> properties that are not written to the print server by using the <xref:System.Printing.LocalPrintServer.Commit%2A> method are lost when <xref:System.Printing.LocalPrintServer.Refresh%2A> runs.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Printing.PrintServerException">Some properties did not update.</exception>

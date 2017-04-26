@@ -11,12 +11,12 @@
     <summary>Describes a service for reporting text line information in XAML reader implementations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xaml.XamlXmlReader> implements <xref:System.Xaml.IXamlLineInfo>. <xref:System.Xaml.XamlXmlReader> returns <xref:System.Xaml.IXamlLineInfo> values that are based on the position of the XAML reader at the time of the call.  
-  
- Line number information might be reported in exceptions such as <xref:System.Xaml.XamlParseException>.  
-  
+<xref:System.Xaml.XamlXmlReader> implements <xref:System.Xaml.IXamlLineInfo>. <xref:System.Xaml.XamlXmlReader> returns <xref:System.Xaml.IXamlLineInfo> values that are based on the position of the XAML reader at the time of the call.  
+ 
+Line number information might be reported in exceptions such as <xref:System.Xaml.XamlParseException>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,10 +75,10 @@
         <value>The line position to report.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Line position is also known as "Column" in some text editors or text editing metaphors.  
-  
+Line position is also known as "Column" in some text editors or text editing metaphors.  
+ 
  ]]></format>
         </remarks>
       </Docs>

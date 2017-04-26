@@ -14,22 +14,22 @@
     <summary>Passed to the <see cref="M:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract(System.ServiceModel.Description.ServiceContractGenerationContext)" /> method to enable the modification of a service contract and its context prior to generating code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%2A?displayProperty=fullName> method to modify the code document object model prior to the generation of code. Typically, the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=fullName> interface is implemented on a custom <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName> implementation that is used to import custom WSDL elements or otherwise modify the code at the service or operation level. To modify the code at the operation level, see <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=fullName>.  
+Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%2A?displayProperty=fullName> method to modify the code document object model prior to the generation of code. Typically, the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=fullName> interface is implemented on a custom <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName> implementation that is used to import custom WSDL elements or otherwise modify the code at the service or operation level. To modify the code at the operation level, see <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the use of the <xref:System.ServiceModel.Description.ServiceContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%2A?displayProperty=fullName> method to add code comments extracted from custom WSDL elements.  
-  
- [!code-csharp[C_CustomWSDLExtensions#12](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#12)]  
-  
- The following code example shows the resulting code comments.  
-  
- [!code-csharp[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.cs#13)]
- [!code-vb[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.vb#13)]  
-  
+The following example shows the use of the <xref:System.ServiceModel.Description.ServiceContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%2A?displayProperty=fullName> method to add code comments extracted from custom WSDL elements.  
+ 
+[!code-csharp[C_CustomWSDLExtensions#12](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#12)]  
+ 
+The following code example shows the resulting code comments.  
+ 
+[!code-csharp[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.cs#13)]
+[!code-vb[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.vb#13)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -97,10 +97,10 @@
         <value>The <see cref="T:System.ServiceModel.Description.ContractDescription" /> for the current contract.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext.Contract%2A> property to examine the <xref:System.ServiceModel.Description.ContractDescription?displayProperty=fullName> for the current contract.  
-  
+Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext.Contract%2A> property to examine the <xref:System.ServiceModel.Description.ContractDescription?displayProperty=fullName> for the current contract.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,22 +122,22 @@
         <value>The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> for the current contract.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext.ContractType%2A> property to examine or modify the <xref:System.CodeDom.CodeTypeDeclaration?displayProperty=fullName> for the current contract before the code is generated.  
+Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext.ContractType%2A> property to examine or modify the <xref:System.CodeDom.CodeTypeDeclaration?displayProperty=fullName> for the current contract before the code is generated.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the use of the <xref:System.ServiceModel.Description.ServiceContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%2A?displayProperty=fullName> method to add code comments extracted from custom WSDL elements.  
-  
- [!code-csharp[C_CustomWSDLExtensions#12](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#12)]  
-  
- The following code example shows the resulting code comments.  
-  
- [!code-csharp[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.cs#13)]
- [!code-vb[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.vb#13)]  
-  
+The following example shows the use of the <xref:System.ServiceModel.Description.ServiceContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%2A?displayProperty=fullName> method to add code comments extracted from custom WSDL elements.  
+ 
+[!code-csharp[C_CustomWSDLExtensions#12](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#12)]  
+ 
+The following code example shows the resulting code comments.  
+ 
+[!code-csharp[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.cs#13)]
+[!code-vb[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,10 +159,10 @@
         <value>The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> for the duplex callback contract on the service contract.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext.DuplexCallbackType%2A> property to examine or modify the <xref:System.CodeDom.CodeTypeDeclaration?displayProperty=fullName> for the duplex callback contract on the service contract prior to generating code.  
-  
+Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext.DuplexCallbackType%2A> property to examine or modify the <xref:System.CodeDom.CodeTypeDeclaration?displayProperty=fullName> for the duplex callback contract on the service contract prior to generating code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,10 +184,10 @@
         <value>A collection of <see cref="T:System.ServiceModel.Description.OperationContractGenerationContext" /> objects that represent the contract operations.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext.Operations%2A> property to examine or modify the <xref:System.ServiceModel.Description.OperationContractGenerationContext?displayProperty=fullName> objects that represent the contract operations.  
-  
+Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext.Operations%2A> property to examine or modify the <xref:System.ServiceModel.Description.OperationContractGenerationContext?displayProperty=fullName> objects that represent the contract operations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,10 +209,10 @@
         <value>The <see cref="T:System.ServiceModel.Description.ServiceContractGenerator" /> that is to generate the contract.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext.ServiceContractGenerator%2A> property to examine or modify the code generator that is to create the contract code.  
-  
+Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext.ServiceContractGenerator%2A> property to examine or modify the code generator that is to create the contract code.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -32,24 +32,24 @@
     <summary>Provides the <see langword="abstract" /> base class for a strongly typed collection of key/value pairs.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The foreach statement of the C# language (for each in Visual Basic) returns an object of the type of the elements in the collection. Since each element of the <xref:System.Collections.DictionaryBase> is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.DictionaryEntry>.  
-  
- The `foreach` statement is a wrapper around the enumerator, which only allows reading from, not writing to, the collection.  
-  
+The foreach statement of the C# language (for each in Visual Basic) returns an object of the type of the elements in the collection. Since each element of the <xref:System.Collections.DictionaryBase> is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.DictionaryEntry>.  
+ 
+The `foreach` statement is a wrapper around the enumerator, which only allows reading from, not writing to, the collection.  
+ 
 > [!NOTE]
 >  Because keys can be inherited and their behavior changed, their absolute uniqueness cannot be guaranteed by comparisons using the <xref:System.Type.Equals%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
-  
- [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
- [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
- [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
-  
+The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+ 
+[!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+[!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+[!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>Public static (<see langword="Shared" /> in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
@@ -87,10 +87,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.DictionaryBase" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is an O(1) operation.  
-  
+This constructor is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,12 +121,12 @@
         <summary>Clears the contents of the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Collections.DictionaryBase.Count%2A> is set to zero, and references to other objects from elements of the collection are also released.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.DictionaryBase.Count%2A>.  
-  
+<xref:System.Collections.DictionaryBase.Count%2A> is set to zero, and references to other objects from elements of the collection are also released.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.DictionaryBase.Count%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,12 +162,12 @@
         <summary>Copies the <see cref="T:System.Collections.DictionaryBase" /> elements to a one-dimensional <see cref="T:System.Array" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.DictionaryBase>.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.DictionaryBase.Count%2A>.  
-  
+The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.DictionaryBase>.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.DictionaryBase.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -209,10 +209,10 @@
         <value>The number of elements contained in the <see cref="T:System.Collections.DictionaryBase" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Retrieving the value of this property is an O(1) operation.  
-  
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -243,21 +243,21 @@
         <value>An <see cref="T:System.Collections.IDictionary" /> representing the <see cref="T:System.Collections.DictionaryBase" /> instance itself.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
   
- Retrieving the value of this property is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
-  
- [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
- [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
- [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
-  
+The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+ 
+[!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+[!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+[!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -289,33 +289,33 @@
         <returns>An <see cref="T:System.Collections.IDictionaryEnumerator" /> for the <see cref="T:System.Collections.DictionaryBase" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+ 
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ 
+<xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+ 
+If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+ 
+This method is an O(1) operation.  
+ 
   
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
-  
- <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
-  
- If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
- This method is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
-  
- [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
- [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
- [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
-  
+The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+ 
+[!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+[!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+[!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -346,12 +346,12 @@
         <value>A <see cref="T:System.Collections.Hashtable" /> representing the <see cref="T:System.Collections.DictionaryBase" /> instance itself.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,14 +382,14 @@
         <summary>Performs additional custom processes before clearing the contents of the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method is intended to be overridden by a derived class to perform some action before the collection is cleared.  
-  
- The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
-  
- The default implementation of this method is an O(1) operation.  
-  
+The default implementation of this method is intended to be overridden by a derived class to perform some action before the collection is cleared.  
+ 
+The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+ 
+The default implementation of this method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -427,14 +427,14 @@
         <summary>Performs additional custom processes after clearing the contents of the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method is intended to be overridden by a derived class to perform some action after the collection is cleared.  
-  
- The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
-  
- The default implementation of this method is an O(1) operation.  
-  
+The default implementation of this method is intended to be overridden by a derived class to perform some action after the collection is cleared.  
+ 
+The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+ 
+The default implementation of this method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -476,14 +476,14 @@
         <returns>An <see cref="T:System.Object" /> containing the element with the specified key and value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method returns `currentValue`. It is intended to be overridden by a derived class to perform additional action when the specified element is retrieved.  
-  
- The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
-  
- The default implementation of this method is an O(1) operation.  
-  
+The default implementation of this method returns `currentValue`. It is intended to be overridden by a derived class to perform additional action when the specified element is retrieved.  
+ 
+The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+ 
+The default implementation of this method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -524,23 +524,23 @@
         <summary>Performs additional custom processes before inserting a new element into the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method is intended to be overridden by a derived class to perform some action before the specified element is inserted.  
+The default implementation of this method is intended to be overridden by a derived class to perform some action before the specified element is inserted.  
+ 
+The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+ 
+The default implementation of this method is an O(1) operation.  
+ 
   
- The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
-  
- The default implementation of this method is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
-  
- [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
- [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
- [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
-  
+The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+ 
+[!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+[!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+[!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -583,14 +583,14 @@
         <summary>Performs additional custom processes after inserting a new element into the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method is intended to be overridden by a derived class to perform some action after the specified element is inserted.  
-  
- The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
-  
- The default implementation of this method is an O(1) operation.  
-  
+The default implementation of this method is intended to be overridden by a derived class to perform some action after the specified element is inserted.  
+ 
+The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+ 
+The default implementation of this method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -631,23 +631,23 @@
         <summary>Performs additional custom processes before removing an element from the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method is intended to be overridden by a derived class to perform some action before the specified element is removed.  
+The default implementation of this method is intended to be overridden by a derived class to perform some action before the specified element is removed.  
+ 
+The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+ 
+The default implementation of this method is an O(1) operation.  
+ 
   
- The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
-  
- The default implementation of this method is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
-  
- [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
- [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
- [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
-  
+The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+ 
+[!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+[!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+[!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -690,14 +690,14 @@
         <summary>Performs additional custom processes after removing an element from the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method is intended to be overridden by a derived class to perform some action after the specified element is removed.  
-  
- The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
-  
- The default implementation of this method is an O(1) operation.  
-  
+The default implementation of this method is intended to be overridden by a derived class to perform some action after the specified element is removed.  
+ 
+The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+ 
+The default implementation of this method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -740,23 +740,23 @@
         <summary>Performs additional custom processes before setting a value in the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method is intended to be overridden by a derived class to perform some action before the specified element is set.  
+The default implementation of this method is intended to be overridden by a derived class to perform some action before the specified element is set.  
+ 
+The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+ 
+The default implementation of this method is an O(1) operation.  
+ 
   
- The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
-  
- The default implementation of this method is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
-  
- [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
- [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
- [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
-  
+The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+ 
+[!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+[!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+[!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -801,14 +801,14 @@
         <summary>Performs additional custom processes after setting a value in the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method is intended to be overridden by a derived class to perform some action after the specified element is set.  
-  
- The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
-  
- The default implementation of this method is an O(1) operation.  
-  
+The default implementation of this method is intended to be overridden by a derived class to perform some action after the specified element is set.  
+ 
+The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+ 
+The default implementation of this method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -849,23 +849,23 @@
         <summary>Performs additional custom processes when validating the element with the specified key and value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method is intended to be overridden by a derived class to perform some action when the specified element is validated.  
+The default implementation of this method is intended to be overridden by a derived class to perform some action when the specified element is validated.  
+ 
+The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+ 
+The default implementation of this method is an O(1) operation.  
+ 
   
- The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
-  
- The default implementation of this method is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
-  
- [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
- [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
- [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
-  
+The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+ 
+[!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+[!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+[!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -902,23 +902,23 @@
           <see langword="true" /> if access to the <see cref="T:System.Collections.DictionaryBase" /> object is synchronized (thread safe); otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Collections.DictionaryBase> object is not synchronized. Derived classes can provide a synchronized version of the <xref:System.Collections.DictionaryBase> class using the <xref:System.Collections.ICollection.SyncRoot%2A> property.  
+A <xref:System.Collections.DictionaryBase> object is not synchronized. Derived classes can provide a synchronized version of the <xref:System.Collections.DictionaryBase> class using the <xref:System.Collections.ICollection.SyncRoot%2A> property.  
+ 
+Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+ 
   
- Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property during the entire enumeration.  
-  
- [!code-cpp[System.Collections.DictionaryBase#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/source2.cpp#3)]
- [!code-csharp[System.Collections.DictionaryBase#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/source2.cs#3)]
- [!code-vb[System.Collections.DictionaryBase#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/source2.vb#3)]  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property during the entire enumeration.  
+ 
+[!code-cpp[System.Collections.DictionaryBase#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/source2.cpp#3)]
+[!code-csharp[System.Collections.DictionaryBase#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/source2.cs#3)]
+[!code-vb[System.Collections.DictionaryBase#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/source2.vb#3)]  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -949,23 +949,23 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.DictionaryBase" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived classes can provide their own synchronized version of the <xref:System.Collections.DictionaryBase> class using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> property of the <xref:System.Collections.DictionaryBase> object, not directly on the <xref:System.Collections.DictionaryBase> object. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Collections.DictionaryBase> object.  
+Derived classes can provide their own synchronized version of the <xref:System.Collections.DictionaryBase> class using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> property of the <xref:System.Collections.DictionaryBase> object, not directly on the <xref:System.Collections.DictionaryBase> object. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Collections.DictionaryBase> object.  
+ 
+Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+ 
   
- Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property during the entire enumeration.  
-  
- [!code-cpp[System.Collections.DictionaryBase#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/source2.cpp#3)]
- [!code-csharp[System.Collections.DictionaryBase#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/source2.cs#3)]
- [!code-vb[System.Collections.DictionaryBase#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/source2.vb#3)]  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property during the entire enumeration.  
+ 
+[!code-cpp[System.Collections.DictionaryBase#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/source2.cpp#3)]
+[!code-csharp[System.Collections.DictionaryBase#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/source2.cs#3)]
+[!code-vb[System.Collections.DictionaryBase#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/source2.vb#3)]  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1001,23 +1001,23 @@
         <summary>Adds an element with the specified key and value into the <see cref="T:System.Collections.DictionaryBase" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An object that has no correlation between its state and its hash code value should typically not be used as the key. For example, <xref:System.String> objects are better than <xref:System.Text.StringBuilder> objects for use as keys.  
+An object that has no correlation between its state and its hash code value should typically not be used as the key. For example, <xref:System.String> objects are better than <xref:System.Text.StringBuilder> objects for use as keys.  
+ 
+You can also use the <xref:System.Collections.IDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.DictionaryBase>; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the <xref:System.Collections.DictionaryBase>, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.IDictionary.Add%2A> method does not modify existing elements.  
+ 
+This method is an O(1) operation.  
+ 
   
- You can also use the <xref:System.Collections.IDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.DictionaryBase>; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the <xref:System.Collections.DictionaryBase>, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.IDictionary.Add%2A> method does not modify existing elements.  
-  
- This method is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
-  
- [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
- [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
- [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
-  
+The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+ 
+[!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+[!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+[!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1061,21 +1061,21 @@
           <see langword="true" /> if the <see cref="T:System.Collections.DictionaryBase" /> contains an element with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(1) operation.  
+This method is an O(1) operation.  
+ 
+Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `key` to determine whether `item` exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `key` parameter on the objects in the collection.  
+ 
   
- Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `key` to determine whether `item` exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `key` parameter on the objects in the collection.  
-  
-   
-  
+ 
 ## Examples  
- The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
-  
- [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
- [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
- [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
-  
+The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+ 
+[!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+[!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+[!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1109,14 +1109,14 @@
           <see langword="true" /> if the <see cref="T:System.Collections.DictionaryBase" /> object has a fixed size; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but does allow the modification of existing elements.  
-  
- A collection with a fixed size is simply a collection with a wrapper that prevents adding and removing elements; therefore, if changes are made to the underlying collection, including the addition or removal of elements, the fixed-size collection reflects those changes.  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but does allow the modification of existing elements.  
+ 
+A collection with a fixed size is simply a collection with a wrapper that prevents adding and removing elements; therefore, if changes are made to the underlying collection, including the addition or removal of elements, the fixed-size collection reflects those changes.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1148,14 +1148,14 @@
           <see langword="true" /> if the <see cref="T:System.Collections.DictionaryBase" /> object is read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
-  
- A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+ 
+A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1190,23 +1190,23 @@
         <value>The value associated with the specified key. If the specified key is not found, attempting to get it returns <see langword="null" />, and attempting to set it creates a new element using the specified key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[key]`.  
+This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[key]`.  
+ 
+You can also use the <xref:System.Collections.IDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.DictionaryBase>; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the <xref:System.Collections.DictionaryBase>, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.IDictionary.Add%2A> method does not modify existing elements.  
+ 
+Retrieving the value of this property is an O(1) operation; setting the property is also an O(1) operation.  
+ 
   
- You can also use the <xref:System.Collections.IDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.DictionaryBase>; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the <xref:System.Collections.DictionaryBase>, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.IDictionary.Add%2A> method does not modify existing elements.  
-  
- Retrieving the value of this property is an O(1) operation; setting the property is also an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
-  
- [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
- [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
- [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
-  
+The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+ 
+[!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+[!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+[!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1244,23 +1244,23 @@
         <value>An <see cref="T:System.Collections.ICollection" /> object containing the keys in the <see cref="T:System.Collections.DictionaryBase" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The order of the keys in the <xref:System.Collections.ICollection> object is unspecified, but is the same order as the associated values in the <xref:System.Collections.ICollection> object returned by the <xref:System.Collections.IDictionary.Values%2A> property.  
+The order of the keys in the <xref:System.Collections.ICollection> object is unspecified, but is the same order as the associated values in the <xref:System.Collections.ICollection> object returned by the <xref:System.Collections.IDictionary.Values%2A> property.  
+ 
+The returned <xref:System.Collections.ICollection> is not a static copy; instead, the <xref:System.Collections.ICollection> refers back to the keys in the original <xref:System.Collections.DictionaryBase> object. Therefore, changes to the <xref:System.Collections.DictionaryBase> continue to be reflected in the returned <xref:System.Collections.ICollection>.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
   
- The returned <xref:System.Collections.ICollection> is not a static copy; instead, the <xref:System.Collections.ICollection> refers back to the keys in the original <xref:System.Collections.DictionaryBase> object. Therefore, changes to the <xref:System.Collections.DictionaryBase> continue to be reflected in the returned <xref:System.Collections.ICollection>.  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> property of 5 characters or less.  
-  
- [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
- [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
- [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
-  
+The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> property of 5 characters or less.  
+ 
+[!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+[!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+[!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1294,21 +1294,21 @@
         <summary>Removes the element with the specified key from the <see cref="T:System.Collections.DictionaryBase" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Collections.DictionaryBase> does not contain an element with the specified key, the <xref:System.Collections.DictionaryBase> remains unchanged. No exception is thrown.  
+If the <xref:System.Collections.DictionaryBase> does not contain an element with the specified key, the <xref:System.Collections.DictionaryBase> remains unchanged. No exception is thrown.  
+ 
+This method is an O(1) operation.  
+ 
   
- This method is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
-  
- [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
- [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
- [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
-  
+The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+ 
+[!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+[!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+[!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1346,23 +1346,23 @@
         <value>An <see cref="T:System.Collections.ICollection" /> object containing the values in the <see cref="T:System.Collections.DictionaryBase" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The order of the values in the <xref:System.Collections.ICollection> object is unspecified, but is the same order as the associated keys in the <xref:System.Collections.ICollection> object returned by the <xref:System.Collections.IDictionary.Keys%2A> property.  
+The order of the values in the <xref:System.Collections.ICollection> object is unspecified, but is the same order as the associated keys in the <xref:System.Collections.ICollection> object returned by the <xref:System.Collections.IDictionary.Keys%2A> property.  
+ 
+The returned <xref:System.Collections.ICollection> is not a static copy; instead, the <xref:System.Collections.ICollection> refers back to the values in the original <xref:System.Collections.DictionaryBase> object. Therefore, changes to the <xref:System.Collections.DictionaryBase> continue to be reflected in the returned <xref:System.Collections.ICollection>.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
   
- The returned <xref:System.Collections.ICollection> is not a static copy; instead, the <xref:System.Collections.ICollection> refers back to the values in the original <xref:System.Collections.DictionaryBase> object. Therefore, changes to the <xref:System.Collections.DictionaryBase> continue to be reflected in the returned <xref:System.Collections.ICollection>.  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> property of 5 characters or less.  
-  
- [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
- [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
- [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
-  
+The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> property of 5 characters or less.  
+ 
+[!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+[!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+[!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1394,24 +1394,24 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Collections.DictionaryBase" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
-  
- <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
-  
- If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
- This method is an O(1) operation.  
-  
+The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+ 
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ 
+<xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+ 
+If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+ 
+This method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

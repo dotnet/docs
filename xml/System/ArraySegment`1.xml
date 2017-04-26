@@ -46,48 +46,48 @@
     <summary>Delimits a section of a one-dimensional array.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ArraySegment%601> is a wrapper around an array that delimits a range of elements in that array. Multiple <xref:System.ArraySegment%601> instances can refer to the same original array and can overlap. The original array must be one-dimensional and must have zero-based indexing.  
-  
+<xref:System.ArraySegment%601> is a wrapper around an array that delimits a range of elements in that array. Multiple <xref:System.ArraySegment%601> instances can refer to the same original array and can overlap. The original array must be one-dimensional and must have zero-based indexing.  
+ 
 > [!NOTE]
 >  <xref:System.ArraySegment%601> implements the <xref:System.Collections.Generic.IReadOnlyCollection%601> interface starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)]; in previous versions of the .NET Framework, the <xref:System.ArraySegment%601> structure did not implement this interface.  
-  
- The <xref:System.ArraySegment%601> structure is useful whenever the elements of an array will be manipulated in distinct segments. For example:  
-  
+ 
+The <xref:System.ArraySegment%601> structure is useful whenever the elements of an array will be manipulated in distinct segments. For example:  
+ 
 -   You can pass an <xref:System.ArraySegment%601> object that represents only a portion of an array as an argument to a method, rather than call a relatively expensive method like <xref:System.Array.Copy%2A> to pass a copy of a portion of an array.  
-  
+ 
 -   In a multithreaded app, you can use the <xref:System.ArraySegment%601> structure to have each thread operate on only a portion of the array.  
-  
+ 
 -   For task-based asynchronous operations, you can use an <xref:System.ArraySegment%601> object to ensure that each task operates on a distinct segment of the array. The following example divides an array into individual segments with up to ten elements. Each element in the segment is multiplied by its segment number. The result shows that using the <xref:System.ArraySegment%601> class to manipulate elements in this way changes the values of its underlying array.  
-  
-     [!code-csharp[System.ArraySegment#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/segmentexample.cs#2)]
-     [!code-vb[System.ArraySegment#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/segmentexample.vb#2)]  
-  
- Note, however, that although the <xref:System.ArraySegment%601> structure can be used to divide an array into distinct segments, the segments are not completely independent of one another. The <xref:System.ArraySegment%601.Array%2A> property returns the entire original array, not a copy of the array; therefore, changes made to the array returned by the <xref:System.ArraySegment%601.Array%2A> property are made to the original array. If this is undesirable, you should perform operations on a copy of the array, rather than an <xref:System.ArraySegment%601> object that represents a portion of the array.  
-  
- The<xref:System.ArraySegment%601.Equals%2A> method and the equality and inequality operators test for reference equality when they compare two <xref:System.ArraySegment%601> objects. For two <xref:System.ArraySegment%601> objects to be considered equal, they must meet all of the following conditions:  
-  
+ 
+    [!code-csharp[System.ArraySegment#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/segmentexample.cs#2)]
+    [!code-vb[System.ArraySegment#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/segmentexample.vb#2)]  
+ 
+Note, however, that although the <xref:System.ArraySegment%601> structure can be used to divide an array into distinct segments, the segments are not completely independent of one another. The <xref:System.ArraySegment%601.Array%2A> property returns the entire original array, not a copy of the array; therefore, changes made to the array returned by the <xref:System.ArraySegment%601.Array%2A> property are made to the original array. If this is undesirable, you should perform operations on a copy of the array, rather than an <xref:System.ArraySegment%601> object that represents a portion of the array.  
+ 
+The<xref:System.ArraySegment%601.Equals%2A> method and the equality and inequality operators test for reference equality when they compare two <xref:System.ArraySegment%601> objects. For two <xref:System.ArraySegment%601> objects to be considered equal, they must meet all of the following conditions:  
+ 
 -   Reference the same array.  
-  
+ 
 -   Begin at the same index in the array.  
-  
+ 
 -   Have the same number of elements.  
+ 
+If you want to retrieve an element by its index in the <xref:System.ArraySegment%601> object, you must cast it to an <xref:System.Collections.Generic.IList%601> object and retrieve it or modify it by using the <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName> property. The following example retrieves the element in an <xref:System.ArraySegment%601> object that delimits a section of a string array.  
+ 
+[!code-csharp[System.ArraySegment.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.arraysegment.class/cs/example1.cs#1)]
+[!code-vb[System.ArraySegment.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.arraysegment.class/vb/example1.vb#1)]  
+ 
   
- If you want to retrieve an element by its index in the <xref:System.ArraySegment%601> object, you must cast it to an <xref:System.Collections.Generic.IList%601> object and retrieve it or modify it by using the <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName> property. The following example retrieves the element in an <xref:System.ArraySegment%601> object that delimits a section of a string array.  
-  
- [!code-csharp[System.ArraySegment.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.arraysegment.class/cs/example1.cs#1)]
- [!code-vb[System.ArraySegment.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.arraysegment.class/vb/example1.vb#1)]  
-  
-   
-  
+ 
 ## Examples  
- The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
-  
- [!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
- [!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
- [!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
-  
+The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
+ 
+[!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
+[!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
+[!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -121,23 +121,23 @@
         <summary>Initializes a new instance of the <see cref="T:System.ArraySegment`1" /> structure that delimits all the elements in the specified array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates an <xref:System.ArraySegment%601> that delimits all the elements of `array`. That is, the <xref:System.ArraySegment%601.Offset%2A> property of the <xref:System.ArraySegment%601> is 0 and its <xref:System.ArraySegment%601.Count%2A> property is the length of `array`. To create an <xref:System.ArraySegment%601> that delimits only part of an array, use the <xref:System.ArraySegment%601.%23ctor%28%600%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor.  
+This constructor creates an <xref:System.ArraySegment%601> that delimits all the elements of `array`. That is, the <xref:System.ArraySegment%601.Offset%2A> property of the <xref:System.ArraySegment%601> is 0 and its <xref:System.ArraySegment%601.Count%2A> property is the length of `array`. To create an <xref:System.ArraySegment%601> that delimits only part of an array, use the <xref:System.ArraySegment%601.%23ctor%28%600%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor.  
+ 
+The original array must be one-dimensional and must have zero-based indexing.  
+ 
+Multiple <xref:System.ArraySegment%601> instances can refer to the same original array and can overlap.  
+ 
   
- The original array must be one-dimensional and must have zero-based indexing.  
-  
- Multiple <xref:System.ArraySegment%601> instances can refer to the same original array and can overlap.  
-  
-   
-  
+ 
 ## Examples  
- The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
-  
- [!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
- [!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
- [!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
-  
+The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
+ 
+[!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
+[!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
+[!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -177,21 +177,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.ArraySegment`1" /> structure that delimits the specified range of the elements in the specified array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The original array must be one-dimensional and must have zero-based indexing.  
+The original array must be one-dimensional and must have zero-based indexing.  
+ 
+Multiple <xref:System.ArraySegment%601> instances can refer to the same original array and can overlap.  
+ 
   
- Multiple <xref:System.ArraySegment%601> instances can refer to the same original array and can overlap.  
-  
-   
-  
+ 
 ## Examples  
- The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
-  
- [!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
- [!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
- [!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
-  
+The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
+ 
+[!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
+[!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
+[!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -231,19 +231,19 @@
         <value>The original array that was passed to the constructor, and that contains the range delimited by the <see cref="T:System.ArraySegment`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ArraySegment%601.Array%2A> property returns the original array, not a copy of the array; therefore, changes made through the property are made directly to the original array.  
+The <xref:System.ArraySegment%601.Array%2A> property returns the original array, not a copy of the array; therefore, changes made through the property are made directly to the original array.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example passes an <xref:System.ArraySegment%601> to a method.  
-  
- [!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
- [!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
- [!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
-  
+The following code example passes an <xref:System.ArraySegment%601> to a method.  
+ 
+[!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
+[!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
+[!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -277,14 +277,14 @@
         <value>The number of elements in the range delimited by the <see cref="T:System.ArraySegment`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
-  
- [!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
- [!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
- [!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
-  
+The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
+ 
+[!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
+[!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
+[!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -323,16 +323,16 @@
           <see langword="true" /> if the specified <see cref="T:System.ArraySegment`1" /> structure is equal to the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.ArraySegment%601> objects are considered to be equal if all the following conditions are met:  
-  
+Two <xref:System.ArraySegment%601> objects are considered to be equal if all the following conditions are met:  
+ 
 -   They reference the same array.  
-  
+ 
 -   They begin at the same index in the array.  
-  
+ 
 -   They have the same number of elements.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -371,16 +371,16 @@
           <see langword="true" /> if the specified object is a <see cref="T:System.ArraySegment`1" /> structure and is equal to the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.ArraySegment%601> objects are considered to be equal if all the following conditions are met:  
-  
+Two <xref:System.ArraySegment%601> objects are considered to be equal if all the following conditions are met:  
+ 
 -   They reference the same array.  
-  
+ 
 -   They begin at the same index in the array.  
-  
+ 
 -   They have the same number of elements.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -445,14 +445,14 @@
         <value>The position of the first element in the range delimited by the <see cref="T:System.ArraySegment`1" />, relative to the start of the original array.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
-  
- [!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
- [!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
- [!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
-  
+The following code example passes an <xref:System.ArraySegment%601> structure to a method.  
+ 
+[!code-cpp[System.ArraySegment#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArraySegment/CPP/arraysegment.cpp#1)]
+[!code-csharp[System.ArraySegment#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArraySegment/CS/arraysegment.cs#1)]
+[!code-vb[System.ArraySegment#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArraySegment/VB/arraysegment.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -493,16 +493,16 @@
           <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.ArraySegment%601> objects are considered to be equal if all the following conditions are met:  
-  
+Two <xref:System.ArraySegment%601> objects are considered to be equal if all the following conditions are met:  
+ 
 -   They reference the same array.  
-  
+ 
 -   They begin at the same index.  
-  
+ 
 -   They have the same number of elements.  
-  
+ 
  The equivalent method for this operator is <xref:System.ArraySegment%601.Equals%28System.ArraySegment%7B%600%7D%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -543,16 +543,16 @@
           <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.ArraySegment%601> objects are considered to be unequal if they are of the same closed generic type but any of the following conditions is true:  
-  
+Two <xref:System.ArraySegment%601> objects are considered to be unequal if they are of the same closed generic type but any of the following conditions is true:  
+ 
 -   They do not reference the same array.  
-  
+ 
 -   They have different starting indexes.  
-  
+ 
 -   They have a different number of elements.  
-  
+ 
  The equivalent method for this operator is <xref:System.ArraySegment%601.Equals%28System.ArraySegment%7B%600%7D%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -589,10 +589,10 @@
         <summary>Adds an item to the array segment.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The array segment is read-only.</exception>
@@ -627,10 +627,10 @@
         <summary>Removes all items from the array segment.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The array segment is read-only.</exception>
@@ -670,10 +670,10 @@
           <see langword="true" /> if <paramref name="item" /> is found in the array segment; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -712,10 +712,10 @@
         <summary>Copies the elements of the array segment to an array, starting at the specified array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -764,10 +764,10 @@
           <see langword="true" /> if the array segment is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -806,10 +806,10 @@
           <see langword="true" /> if <paramref name="item" /> was successfully removed from the array segment; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> is not found in the array segment.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The array segment is read-only.</exception>
@@ -845,10 +845,10 @@
         <returns>An enumerator that can be used to iterate through the array segment.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -886,10 +886,10 @@
         <returns>The index of <paramref name="item" /> if found in the list; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -928,10 +928,10 @@
         <summary>Inserts an item into the array segment at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -972,13 +972,13 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface, as the following example shows.  
-  
- [!code-csharp[System.ArraySegment.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.arraysegment.class/cs/example1.cs#1)]
- [!code-vb[System.ArraySegment.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.arraysegment.class/vb/example1.vb#1)]  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface, as the following example shows.  
+ 
+[!code-csharp[System.ArraySegment.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.arraysegment.class/cs/example1.cs#1)]
+[!code-vb[System.ArraySegment.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.arraysegment.class/vb/example1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1018,10 +1018,10 @@
         <summary>Removes the array segment item at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1062,10 +1062,10 @@
         <value>The element at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.IReadOnlyList%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.Generic.IReadOnlyList%601> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1103,10 +1103,10 @@
         <returns>An enumerator that can be used to iterate through the array segment.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ArraySegment%601> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

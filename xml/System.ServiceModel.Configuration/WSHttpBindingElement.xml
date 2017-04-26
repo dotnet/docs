@@ -14,10 +14,10 @@
     <summary>Represents an interoperable binding that supports distributed transactions and secure, reliable sessions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The wsHttpBinding is a secure, reliable, interoperable binding suitable for non-duplex service contracts. The binding implements the following specifications: WS-ReliableMessaging for reliability and WS-Security for message security and authentication. The transport is HTTP and message encoding is Text/XML encoding.  
-  
+The wsHttpBinding is a secure, reliable, interoperable binding suitable for non-duplex service contracts. The binding implements the following specifications: WS-ReliableMessaging for reliability and WS-Security for message security and authentication. The transport is HTTP and message encoding is Text/XML encoding.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,10 +78,10 @@
           <see langword="True" /> if automatic cookies processing is required; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting <xref:System.ServiceModel.Configuration.WSHttpBindingElement.AllowCookies%2A> to `true` is useful when a client is interacting with one web service that uses cookies.  If you are accessing multiple services with the same cookie, set <xref:System.ServiceModel.Configuration.WSHttpBindingElement.AllowCookies%2A> to `false` and you will have to manually add the cookie header to each outgoing message. The following code shows how to do this:  
-  
+Setting <xref:System.ServiceModel.Configuration.WSHttpBindingElement.AllowCookies%2A> to `true` is useful when a client is interacting with one web service that uses cookies.  If you are accessing multiple services with the same cookie, set <xref:System.ServiceModel.Configuration.WSHttpBindingElement.AllowCookies%2A> to `false` and you will have to manually add the cookie header to each outgoing message. The following code shows how to do this:  
+ 
 ```csharp  
 MyWebServiceClient client = new MyWebServiceClient();  
   
@@ -113,7 +113,7 @@ MyWebServiceClient client = new MyWebServiceClient();
         }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

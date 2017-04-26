@@ -32,36 +32,36 @@
     <summary>Represents a pop-up window that has content.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Content Model**:  <xref:System.Windows.Controls.Primitives.Popup> has one content property: <xref:System.Windows.Controls.Primitives.Popup.Child%2A>. A <xref:System.Windows.Controls.Primitives.Popup> can have a maximum of one child, which can be any <xref:System.Windows.UIElement>.  
+**Content Model**:  <xref:System.Windows.Controls.Primitives.Popup> has one content property: <xref:System.Windows.Controls.Primitives.Popup.Child%2A>. A <xref:System.Windows.Controls.Primitives.Popup> can have a maximum of one child, which can be any <xref:System.Windows.UIElement>.  
+ 
+The following illustration shows a <xref:System.Windows.Controls.Primitives.Popup> control that has a <xref:System.Windows.Controls.Button> as its parent.  
+ 
+![Popup illustration](~/add/media/popuppicture.JPG "Popup illustration")  
+ 
+You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md). When <xref:System.Windows.Controls.Primitives.Popup> is displayed on the screen, it does not reposition itself if its parent is repositioned.  
+ 
+A <xref:System.Windows.Controls.Primitives.Popup> displays its content in its own window on the screen. A <xref:System.Windows.Controls.Primitives.Popup> control supports animation when the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> property is set to `true` and the application is running with full trust. An application that is running with full trust has complete access to system resources and is typically installed on the user's system. For more information, see[Security (WPF)](~/docs/framework/wpf/security-wpf.md).  
+ 
+For bitmap and opacity effects to appear on the content of a <xref:System.Windows.Controls.Primitives.Popup>, you must set the effects directly on the <xref:System.Windows.Controls.Primitives.Popup> content. The content of a <xref:System.Windows.Controls.Primitives.Popup> does not inherit effects that are set on the <xref:System.Windows.Controls.Primitives.Popup> control or on any other element that is in the parent window.  
+ 
+A <xref:System.Windows.Controls.Primitives.Popup> is sized to its content by default. When this occurs, applying a <xref:System.Windows.UIElement.RenderTransform%2A> or bitmap effects may cause the <xref:System.Windows.Controls.Primitives.Popup> to be obscured. This occurs because the default size of the content does not provide enough area for the effects to display. If more space is required, you can define a margin around the <xref:System.Windows.Controls.Primitives.Popup> content to increase the area that is available to the control.  
+ 
+The <xref:System.Windows.FrameworkElement.Parent%2A> property must be set on the <xref:System.Windows.Controls.Primitives.Popup> when used in a [!INCLUDE[TLA#tla_winfxwebapp](~/includes/tlasharptla-winfxwebapp-md.md)].  
+ 
+To create a tooltip, use the <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> classes. For more information, see [ToolTip Overview](~/docs/framework/wpf/controls/tooltip-overview.md).  
+ 
   
- The following illustration shows a <xref:System.Windows.Controls.Primitives.Popup> control that has a <xref:System.Windows.Controls.Button> as its parent.  
-  
- ![Popup illustration](~/add/media/popuppicture.JPG "Popup illustration")  
-  
- You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md). When <xref:System.Windows.Controls.Primitives.Popup> is displayed on the screen, it does not reposition itself if its parent is repositioned.  
-  
- A <xref:System.Windows.Controls.Primitives.Popup> displays its content in its own window on the screen. A <xref:System.Windows.Controls.Primitives.Popup> control supports animation when the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> property is set to `true` and the application is running with full trust. An application that is running with full trust has complete access to system resources and is typically installed on the user's system. For more information, see[Security (WPF)](~/docs/framework/wpf/security-wpf.md).  
-  
- For bitmap and opacity effects to appear on the content of a <xref:System.Windows.Controls.Primitives.Popup>, you must set the effects directly on the <xref:System.Windows.Controls.Primitives.Popup> content. The content of a <xref:System.Windows.Controls.Primitives.Popup> does not inherit effects that are set on the <xref:System.Windows.Controls.Primitives.Popup> control or on any other element that is in the parent window.  
-  
- A <xref:System.Windows.Controls.Primitives.Popup> is sized to its content by default. When this occurs, applying a <xref:System.Windows.UIElement.RenderTransform%2A> or bitmap effects may cause the <xref:System.Windows.Controls.Primitives.Popup> to be obscured. This occurs because the default size of the content does not provide enough area for the effects to display. If more space is required, you can define a margin around the <xref:System.Windows.Controls.Primitives.Popup> content to increase the area that is available to the control.  
-  
- The <xref:System.Windows.FrameworkElement.Parent%2A> property must be set on the <xref:System.Windows.Controls.Primitives.Popup> when used in a [!INCLUDE[TLA#tla_winfxwebapp](~/includes/tlasharptla-winfxwebapp-md.md)].  
-  
- To create a tooltip, use the <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> classes. For more information, see [ToolTip Overview](~/docs/framework/wpf/controls/tooltip-overview.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Windows.Controls.Primitives.Popup> control.  
-  
- [!code-xml[PopupSimple#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSimple/CSharp/Window1.xaml#2)]  
-  
- [!code-csharp[PopupSimple#CreatePopup](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSimple/CSharp/Window1.xaml.cs#createpopup)]
- [!code-vb[PopupSimple#CreatePopup](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSimple/VisualBasic/Window1.xaml.vb#createpopup)]  
-  
+The following example shows how to create a <xref:System.Windows.Controls.Primitives.Popup> control.  
+ 
+[!code-xml[PopupSimple#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSimple/CSharp/Window1.xaml#2)]  
+ 
+[!code-csharp[PopupSimple#CreatePopup](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSimple/CSharp/Window1.xaml.cs#createpopup)]
+[!code-vb[PopupSimple#CreatePopup](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSimple/VisualBasic/Window1.xaml.vb#createpopup)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -99,31 +99,31 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control can contain transparent content; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Primitives.Popup> control can only contain transparent content when the application runs with full trust. An application that runs with full trust has complete access to system resources and is typically installed on the local system. For more information, see[Security (WPF)](~/docs/framework/wpf/security-wpf.md).  
-  
- This property cannot be set to `true` when the <xref:System.Windows.Controls.Primitives.Popup> is hosted in a [!INCLUDE[TLA#tla_winfxwebapp](~/includes/tlasharptla-winfxwebapp-md.md)].  
-  
- If the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> property is set to `true` in an application that does not run in full trust, the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> property value is changed to `false`. An application that is hosted in a browser is an example of an application that does not run in full trust.  
-  
+A <xref:System.Windows.Controls.Primitives.Popup> control can only contain transparent content when the application runs with full trust. An application that runs with full trust has complete access to system resources and is typically installed on the local system. For more information, see[Security (WPF)](~/docs/framework/wpf/security-wpf.md).  
+ 
+This property cannot be set to `true` when the <xref:System.Windows.Controls.Primitives.Popup> is hosted in a [!INCLUDE[TLA#tla_winfxwebapp](~/includes/tlasharptla-winfxwebapp-md.md)].  
+ 
+If the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> property is set to `true` in an application that does not run in full trust, the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> property value is changed to `false`. An application that is hosted in a browser is an example of an application that does not run in full trust.  
+ 
 <a name="dependencyPropertyInfo_AllowsTransparency"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Popup>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> property on a <xref:System.Windows.Controls.Primitives.Popup> control.  
-  
- [!code-csharp[PopupSnips#AllowsTransparency](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#allowstransparency)]
- [!code-vb[PopupSnips#AllowsTransparency](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#allowstransparency)]
- [!code-xml[PopupSnips#AllowsTransparency](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#allowstransparency)]  
-  
+The following example shows how to set the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> property on a <xref:System.Windows.Controls.Primitives.Popup> control.  
+ 
+[!code-csharp[PopupSnips#AllowsTransparency](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#allowstransparency)]
+[!code-vb[PopupSnips#AllowsTransparency](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#allowstransparency)]
+[!code-xml[PopupSnips#AllowsTransparency](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#allowstransparency)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for setting this property to <see langword="true" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -145,15 +145,15 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.Popup.AllowsTransparency" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> dependency property.  
+The identifier for the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> dependency property.  
+ 
   
-   
-  
+ 
 ## Examples  
- [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
-  
+[Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,29 +180,29 @@
         <value>The <see cref="T:System.Windows.UIElement" /> content of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Content Model**: The <xref:System.Windows.Controls.Primitives.Popup.Child%2A> property is the only content property for the <xref:System.Windows.Controls.Primitives.Popup> control. A <xref:System.Windows.Controls.Primitives.Popup> can only have one <xref:System.Windows.UIElement> as a child, but that child can contain complex embedded content. For example, the child can be a <xref:System.Windows.Controls.StackPanel> that contains an <xref:System.Windows.Controls.Image>, text, and other types of controls.  
-  
- When content is added to a <xref:System.Windows.Controls.Primitives.Popup> control, the <xref:System.Windows.Controls.Primitives.Popup> control becomes the logical parent to the content. Similarly, the <xref:System.Windows.Controls.Primitives.Popup> content is considered to be the logical child of the <xref:System.Windows.Controls.Primitives.Popup>. The child content is not added to the visual tree that contains the <xref:System.Windows.Controls.Primitives.Popup> control. Instead, the child content is rendered in a separate window with its own visual tree when the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> is set to `true`.  
-  
+**Content Model**: The <xref:System.Windows.Controls.Primitives.Popup.Child%2A> property is the only content property for the <xref:System.Windows.Controls.Primitives.Popup> control. A <xref:System.Windows.Controls.Primitives.Popup> can only have one <xref:System.Windows.UIElement> as a child, but that child can contain complex embedded content. For example, the child can be a <xref:System.Windows.Controls.StackPanel> that contains an <xref:System.Windows.Controls.Image>, text, and other types of controls.  
+ 
+When content is added to a <xref:System.Windows.Controls.Primitives.Popup> control, the <xref:System.Windows.Controls.Primitives.Popup> control becomes the logical parent to the content. Similarly, the <xref:System.Windows.Controls.Primitives.Popup> content is considered to be the logical child of the <xref:System.Windows.Controls.Primitives.Popup>. The child content is not added to the visual tree that contains the <xref:System.Windows.Controls.Primitives.Popup> control. Instead, the child content is rendered in a separate window with its own visual tree when the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> is set to `true`.  
+ 
 <a name="dependencyPropertyInfo_Child"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Popup.ChildProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to add content to a <xref:System.Windows.Controls.Primitives.Popup> control.  
-  
- [!code-csharp[PopupSnips#Child](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#child)]
- [!code-vb[PopupSnips#Child](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#child)]
- [!code-xml[PopupSnips#Child](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#child)]  
-  
+The following example shows how to add content to a <xref:System.Windows.Controls.Primitives.Popup> control.  
+ 
+[!code-csharp[PopupSnips#Child](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#child)]
+[!code-vb[PopupSnips#Child](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#child)]
+[!code-xml[PopupSnips#Child](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#child)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -240,19 +240,19 @@
         <summary>Occurs when the <see cref="P:System.Windows.Controls.Primitives.Popup.IsOpen" /> property changes to <see langword="false" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Primitives.Popup> is opened and closed by toggling the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property.  
+A <xref:System.Windows.Controls.Primitives.Popup> is opened and closed by toggling the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to define an event handler for the <xref:System.Windows.Controls.Primitives.Popup.Closed> event.  
-  
- [!code-csharp[PopupSnips#Closed](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#closed)]
- [!code-vb[PopupSnips#Closed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#closed)]
- [!code-xml[PopupSnips#Closed](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#closed)]  
-  
+The following example shows how to define an event handler for the <xref:System.Windows.Controls.Primitives.Popup.Closed> event.  
+ 
+[!code-csharp[PopupSnips#Closed](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#closed)]
+[!code-vb[PopupSnips#Closed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#closed)]
+[!code-xml[PopupSnips#Closed](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#closed)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -279,32 +279,32 @@
         <summary>Attaches a child element to a <see cref="T:System.Windows.Controls.Primitives.Popup" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You might want to create a custom control that has the same functionality as an existing control and also exhibits the behavior of a <xref:System.Windows.Controls.Primitives.Popup>.  You can make your control behave like a <xref:System.Windows.Controls.Primitives.Popup> by adding a <xref:System.Windows.Controls.Primitives.Popup> to your control and calling the <xref:System.Windows.Controls.Primitives.Popup.CreateRootPopup%2A> method.  
-  
- This method assigns `child` to the child property and binds the following properties to `child`.  
-  
+You might want to create a custom control that has the same functionality as an existing control and also exhibits the behavior of a <xref:System.Windows.Controls.Primitives.Popup>.  You can make your control behave like a <xref:System.Windows.Controls.Primitives.Popup> by adding a <xref:System.Windows.Controls.Primitives.Popup> to your control and calling the <xref:System.Windows.Controls.Primitives.Popup.CreateRootPopup%2A> method.  
+ 
+This method assigns `child` to the child property and binds the following properties to `child`.  
+ 
 -   <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A>  
-  
+ 
 -   <xref:System.Windows.Controls.Primitives.Popup.CustomPopupPlacementCallback%2A>  
-  
+ 
 -   <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>  
-  
+ 
 -   <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>  
-  
+ 
 -   <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>  
-  
+ 
 -   <xref:System.Windows.Controls.Primitives.Popup.StaysOpen%2A>  
-  
+ 
 -   <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>  
-  
+ 
 -   <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A>  
-  
- You should implement these as dependency properties in your control so it can be used the same way as a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Custom Dependency Properties](~/docs/framework/wpf/advanced/custom-dependency-properties.md).  
-  
- When you call <xref:System.Windows.Controls.Primitives.Popup.CreateRootPopup%2A>, `child` cannot be a child of a <xref:System.Windows.UIElement>. Also, `PlacementTarget` should be set on your control before you call this method.  
-  
+ 
+You should implement these as dependency properties in your control so it can be used the same way as a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Custom Dependency Properties](~/docs/framework/wpf/advanced/custom-dependency-properties.md).  
+ 
+When you call <xref:System.Windows.Controls.Primitives.Popup.CreateRootPopup%2A>, `child` cannot be a child of a <xref:System.Windows.UIElement>. Also, `PlacementTarget` should be set on your control before you call this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -334,28 +334,28 @@
         <value>The <see cref="T:System.Windows.Controls.Primitives.CustomPopupPlacementCallback" /> delegate method that provides placement information for the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CustomPopupPlacementCallback"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Popup>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set a <xref:System.Windows.Controls.Primitives.Popup.CustomPopupPlacementCallback%2A> delegate.  
-  
- [!code-csharp[PopupCustomPlacement#DelegateDefinition](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupCustomPlacement/CSharp/Window1.xaml.cs#delegatedefinition)]
- [!code-vb[PopupCustomPlacement#DelegateDefinition](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupCustomPlacement/visualbasic/window1.xaml.vb#delegatedefinition)]  
-  
- [!code-csharp[PopupCustomPlacement#DelegateInstance](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupCustomPlacement/CSharp/Window1.xaml.cs#delegateinstance)]
- [!code-vb[PopupCustomPlacement#DelegateInstance](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupCustomPlacement/visualbasic/window1.xaml.vb#delegateinstance)]  
-  
+The following example shows how to set a <xref:System.Windows.Controls.Primitives.Popup.CustomPopupPlacementCallback%2A> delegate.  
+ 
+[!code-csharp[PopupCustomPlacement#DelegateDefinition](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupCustomPlacement/CSharp/Window1.xaml.cs#delegatedefinition)]
+[!code-vb[PopupCustomPlacement#DelegateDefinition](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupCustomPlacement/visualbasic/window1.xaml.vb#delegatedefinition)]  
+ 
+[!code-csharp[PopupCustomPlacement#DelegateInstance](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupCustomPlacement/CSharp/Window1.xaml.cs#delegateinstance)]
+[!code-vb[PopupCustomPlacement#DelegateInstance](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupCustomPlacement/visualbasic/window1.xaml.vb#delegateinstance)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -414,26 +414,26 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.Primitives.Popup" /> is displayed with a drop shadow; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A drop shadow effect displays when the <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=fullName> property and the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A?displayProperty=fullName> property are set to `true`.  
-  
+A drop shadow effect displays when the <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=fullName> property and the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A?displayProperty=fullName> property are set to `true`.  
+ 
 <a name="dependencyPropertyInfo_HasDropShadow"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Popup.HasDropShadowProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to get the value of the <xref:System.Windows.Controls.Primitives.Popup.HasDropShadow%2A> property.  
-  
- [!code-csharp[PopupSnips#HasDropShadow](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#hasdropshadow)]
- [!code-vb[PopupSnips#HasDropShadow](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#hasdropshadow)]  
-  
+The following example shows how to get the value of the <xref:System.Windows.Controls.Primitives.Popup.HasDropShadow%2A> property.  
+ 
+[!code-csharp[PopupSnips#HasDropShadow](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#hasdropshadow)]
+[!code-vb[PopupSnips#HasDropShadow](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#hasdropshadow)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -454,15 +454,15 @@
         <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.Popup.HasDropShadow" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Controls.Primitives.Popup.HasDropShadow%2A> dependency property.  
+The identifier for the <xref:System.Windows.Controls.Primitives.Popup.HasDropShadow%2A> dependency property.  
+ 
   
-   
-  
+ 
 ## Examples  
- [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
-  
+[Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -495,55 +495,55 @@
         <value>The horizontal distance between the target origin and the popup alignment point. For information about the target origin and popup alignment point, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md). The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
-  
+You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+ 
 <a name="dependencyPropertyInfo_HorizontalOffset"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Popup.HorizontalOffsetProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
 <a name="xamlAttributeUsage_HorizontalOffset"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object HorizontalOffset="double"/>  
 - or -  
 <object HorizontalOffset="qualifiedDouble"/>  
 ```  
-  
+ 
 <a name="xamlValues_HorizontallOffset"></a>   
 ## XAML Values  
- `double`  
- <xref:System.Double>  
+`double`  
+<xref:System.Double>  
+ 
+A string representation of a <xref:System.Double> value. This is interpreted as a [!INCLUDE[TLA#tla_dipixel](~/includes/tlasharptla-dipixel-md.md)] measurement. Strings do not have to explicitly include decimal points. For example, a value of `1` is acceptable.  
+ 
+The same <xref:System.Double> range restrictions apply as those that are mentioned in the Property Value section of this topic.  
+ 
+`qualifiedDouble`  
+A `double` value as described earlier in this table, followed by one of the following unit declaration strings: `px`, `in`, `cm`, or `pt`.  
+ 
+`px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+ 
+`in` is inches; 1in=96px  
+ 
+`cm` is centimeters; 1cm=(96/2.54) px  
+ 
+`pt` is points; 1pt=(96/72) px  
+ 
   
- A string representation of a <xref:System.Double> value. This is interpreted as a [!INCLUDE[TLA#tla_dipixel](~/includes/tlasharptla-dipixel-md.md)] measurement. Strings do not have to explicitly include decimal points. For example, a value of `1` is acceptable.  
-  
- The same <xref:System.Double> range restrictions apply as those that are mentioned in the Property Value section of this topic.  
-  
- `qualifiedDouble`  
- A `double` value as described earlier in this table, followed by one of the following unit declaration strings: `px`, `in`, `cm`, or `pt`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in=96px  
-  
- `cm` is centimeters; 1cm=(96/2.54) px  
-  
- `pt` is points; 1pt=(96/72) px  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.Primitives.Popup> and sets the <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A> and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> properties to 20.  The <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode> (which is the default), so the target origin is the bottom left corner of the target area and the popup alignment point is the top left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
-  
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#5](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#5)]  -->
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#5)]  -->  
-  
+The following example creates a <xref:System.Windows.Controls.Primitives.Popup> and sets the <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A> and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> properties to 20.  The <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode> (which is the default), so the target origin is the bottom left corner of the target area and the popup alignment point is the top left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
+ 
+<!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#5](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#5)]  -->
+<!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#5)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -591,27 +591,27 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.Primitives.Popup" /> is visible; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a control uses a <xref:System.Windows.Controls.Primitives.Popup> as part of its default style, bind the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property of the <xref:System.Windows.Controls.Primitives.Popup> to a property of the control. For example, a <xref:System.Windows.Controls.ComboBox> can bind its <xref:System.Windows.Controls.ComboBox.IsDropDownOpen%2A> property to the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property of the <xref:System.Windows.Controls.Primitives.Popup>. This simplifies the logic for controlling when the <xref:System.Windows.Controls.Primitives.Popup> is visible.  
-  
+If a control uses a <xref:System.Windows.Controls.Primitives.Popup> as part of its default style, bind the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property of the <xref:System.Windows.Controls.Primitives.Popup> to a property of the control. For example, a <xref:System.Windows.Controls.ComboBox> can bind its <xref:System.Windows.Controls.ComboBox.IsDropDownOpen%2A> property to the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property of the <xref:System.Windows.Controls.Primitives.Popup>. This simplifies the logic for controlling when the <xref:System.Windows.Controls.Primitives.Popup> is visible.  
+ 
 <a name="dependencyPropertyInfo_IsOpen"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Popup.IsOpenProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property.  
-  
- [!code-csharp[PopupSnips#IsOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#isopen)]
- [!code-vb[PopupSnips#IsOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#isopen)]
- [!code-xml[PopupSnips#IsOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#isopen)]  
-  
+The following example shows how to set the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property.  
+ 
+[!code-csharp[PopupSnips#IsOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#isopen)]
+[!code-vb[PopupSnips#IsOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#isopen)]
+[!code-xml[PopupSnips#IsOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#isopen)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -650,10 +650,10 @@
         <value>An <see cref="T:System.Collections.IEnumerator" /> that you can use to access the logical child elements of a <see cref="T:System.Windows.Controls.Primitives.Popup" /> control. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you add content to a <xref:System.Windows.Controls.Primitives.Popup> control, the <xref:System.Windows.Controls.Primitives.Popup> control becomes the logical parent to the content. Similarly, the <xref:System.Windows.Controls.Primitives.Popup> content is considered to be the logical child of the <xref:System.Windows.Controls.Primitives.Popup>. The child content is not added to the visual tree that contains the <xref:System.Windows.Controls.Primitives.Popup> control. Instead, the child content is rendered in a separate window that has its own visual tree when the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property is set to `true`.  
-  
+When you add content to a <xref:System.Windows.Controls.Primitives.Popup> control, the <xref:System.Windows.Controls.Primitives.Popup> control becomes the logical parent to the content. Similarly, the <xref:System.Windows.Controls.Primitives.Popup> content is considered to be the logical child of the <xref:System.Windows.Controls.Primitives.Popup>. The child content is not added to the visual tree that contains the <xref:System.Windows.Controls.Primitives.Popup> control. Instead, the child content is rendered in a separate window that has its own visual tree when the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property is set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -679,10 +679,10 @@
         <returns>A <see cref="T:System.Windows.Size" /> structure that has the <see cref="P:System.Windows.Size.Height" /> and <see cref="P:System.Windows.Size.Width" /> properties both equal to zero (0).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method always returns a <xref:System.Windows.Size> that has a width and height of zero (0), because <xref:System.Windows.Controls.Primitives.Popup> content is not located in the visual tree of its logical parent or <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>. The child content is created in a different window that has its own visual tree.  
-  
+This method always returns a <xref:System.Windows.Size> that has a width and height of zero (0), because <xref:System.Windows.Controls.Primitives.Popup> content is not located in the visual tree of its logical parent or <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>. The child content is created in a different window that has its own visual tree.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -749,10 +749,10 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.PreviewMouseLeftButtonDown" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation makes sure that a <xref:System.Windows.Controls.Primitives.Popup> closes when a mouse event occurs outside the <xref:System.Windows.Controls.Primitives.Popup> when the <xref:System.Windows.Controls.Primitives.Popup.StaysOpen%2A> property is set to `false`.  
-  
+This implementation makes sure that a <xref:System.Windows.Controls.Primitives.Popup> closes when a mouse event occurs outside the <xref:System.Windows.Controls.Primitives.Popup> when the <xref:System.Windows.Controls.Primitives.Popup.StaysOpen%2A> property is set to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -777,10 +777,10 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.PreviewMouseLeftButtonUp" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation makes sure that a <xref:System.Windows.Controls.Primitives.Popup> closes when a mouse event occurs outside the <xref:System.Windows.Controls.Primitives.Popup> when the <xref:System.Windows.Controls.Primitives.Popup.StaysOpen%2A> property is set to `false`.  
-  
+This implementation makes sure that a <xref:System.Windows.Controls.Primitives.Popup> closes when a mouse event occurs outside the <xref:System.Windows.Controls.Primitives.Popup> when the <xref:System.Windows.Controls.Primitives.Popup.StaysOpen%2A> property is set to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -805,10 +805,10 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.PreviewMouseRightButtonUp" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation makes sure that a <xref:System.Windows.Controls.Primitives.Popup> closes when a mouse event occurs outside the <xref:System.Windows.Controls.Primitives.Popup> when the <xref:System.Windows.Controls.Primitives.Popup.StaysOpen%2A> property is set to `false`.  
-  
+This implementation makes sure that a <xref:System.Windows.Controls.Primitives.Popup> closes when a mouse event occurs outside the <xref:System.Windows.Controls.Primitives.Popup> when the <xref:System.Windows.Controls.Primitives.Popup.StaysOpen%2A> property is set to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -833,10 +833,10 @@
         <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.PreviewMouseRightButtonDown" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation makes sure that a <xref:System.Windows.Controls.Primitives.Popup> closes when a mouse event occurs outside the <xref:System.Windows.Controls.Primitives.Popup> when the <xref:System.Windows.Controls.Primitives.Popup.StaysOpen%2A> property is set to `false`.  
-  
+This implementation makes sure that a <xref:System.Windows.Controls.Primitives.Popup> closes when a mouse event occurs outside the <xref:System.Windows.Controls.Primitives.Popup> when the <xref:System.Windows.Controls.Primitives.Popup.StaysOpen%2A> property is set to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -857,19 +857,19 @@
         <summary>Occurs when the <see cref="P:System.Windows.Controls.Primitives.Popup.IsOpen" /> property changes to <see langword="true" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Primitives.Popup> is opened and closed by toggling the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property.  
+A <xref:System.Windows.Controls.Primitives.Popup> is opened and closed by toggling the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to define an event handler for the <xref:System.Windows.Controls.Primitives.Popup.Opened> event.  
-  
- [!code-csharp[PopupSnips#Opened](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#opened)]
- [!code-vb[PopupSnips#Opened](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#opened)]
- [!code-xml[PopupSnips#Opened](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#opened)]  
-  
+The following example shows how to define an event handler for the <xref:System.Windows.Controls.Primitives.Popup.Opened> event.  
+ 
+[!code-csharp[PopupSnips#Opened](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#opened)]
+[!code-vb[PopupSnips#Opened](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#opened)]
+[!code-xml[PopupSnips#Opened](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#opened)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -899,28 +899,28 @@
         <value>A <see cref="T:System.Windows.Controls.Primitives.PlacementMode" /> enumeration value that determines the orientation of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control when the control opens, and that specifies how the control interacts with screen boundaries. The default is <see cref="F:System.Windows.Controls.Primitives.PlacementMode.Bottom" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
-  
- If the <xref:System.Windows.SystemParameters.MenuDropAlignment%2A> property is `true`, setting <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> to <xref:System.Windows.Controls.Primitives.PlacementMode> or <xref:System.Windows.Controls.Primitives.PlacementMode> reverses the position of the <xref:System.Windows.Controls.Primitives.Popup>; a <xref:System.Windows.Controls.Primitives.Popup> with <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> set to <xref:System.Windows.Controls.Primitives.PlacementMode> aligns its left edge with the right edge of <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> and a <xref:System.Windows.Controls.Primitives.Popup> with <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> set to <xref:System.Windows.Controls.Primitives.PlacementMode> aligns its right edge with the left edge of <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>.  
-  
+You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+ 
+If the <xref:System.Windows.SystemParameters.MenuDropAlignment%2A> property is `true`, setting <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> to <xref:System.Windows.Controls.Primitives.PlacementMode> or <xref:System.Windows.Controls.Primitives.PlacementMode> reverses the position of the <xref:System.Windows.Controls.Primitives.Popup>; a <xref:System.Windows.Controls.Primitives.Popup> with <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> set to <xref:System.Windows.Controls.Primitives.PlacementMode> aligns its left edge with the right edge of <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> and a <xref:System.Windows.Controls.Primitives.Popup> with <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> set to <xref:System.Windows.Controls.Primitives.PlacementMode> aligns its right edge with the left edge of <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>.  
+ 
 <a name="dependencyPropertyInfo_Placement"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Popup.PlacementProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates four <xref:System.Windows.Controls.Primitives.Popup> controls that are relative to an image. Each <xref:System.Windows.Controls.Primitives.Popup> has a different value for the placement property.  
-  
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#3)]  -->
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#3)]  -->  
-  
+The following example creates four <xref:System.Windows.Controls.Primitives.Popup> controls that are relative to an image. Each <xref:System.Windows.Controls.Primitives.Popup> has a different value for the placement property.  
+ 
+<!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#3)]  -->
+<!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#3)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -967,26 +967,26 @@
         <value>The rectangle that is used to position the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
-  
+You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+ 
 <a name="dependencyPropertyInfo_PlacementRectangle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Popup.PlacementRectangleProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example sets the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> property of a <xref:System.Windows.Controls.Primitives.Popup>. The <xref:System.Windows.Rect.X%2A>, <xref:System.Windows.Rect.Y%2A>, <xref:System.Windows.Rect.Width%2A>, and <xref:System.Windows.Rect.Height%2A> properties of the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> are 50, 50, 50, and 100, respectively. The <xref:System.Windows.Controls.Primitives.Popup> is relative to the bounds of the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> property. Note that the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> property does not create a visible element in the application; the example creates a <xref:System.Windows.Shapes.Rectangle> with the same bounds to represent the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>.  
-  
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#6](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#6)]  -->
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#6](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#6)]  -->  
-  
+The following example sets the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> property of a <xref:System.Windows.Controls.Primitives.Popup>. The <xref:System.Windows.Rect.X%2A>, <xref:System.Windows.Rect.Y%2A>, <xref:System.Windows.Rect.Width%2A>, and <xref:System.Windows.Rect.Height%2A> properties of the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> are 50, 50, 50, and 100, respectively. The <xref:System.Windows.Controls.Primitives.Popup> is relative to the bounds of the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> property. Note that the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> property does not create a visible element in the application; the example creates a <xref:System.Windows.Shapes.Rectangle> with the same bounds to represent the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>.  
+ 
+<!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#6](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#6)]  -->
+<!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#6](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#6)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1036,26 +1036,26 @@
         <value>The <see cref="T:System.Windows.UIElement" /> that is the logical parent of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
-  
+You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+ 
 <a name="dependencyPropertyInfo_PlacementTarget"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Popup.PlacementTargetProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.Primitives.Popup> that is the child of a <xref:System.Windows.Controls.Canvas>, and sets <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> to `ellipse1`, so the popup is relative to the <xref:System.Windows.Shapes.Ellipse>.  
-  
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#2)]  -->
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#2)]  -->  
-  
+The following example creates a <xref:System.Windows.Controls.Primitives.Popup> that is the child of a <xref:System.Windows.Controls.Canvas>, and sets <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> to `ellipse1`, so the popup is relative to the <xref:System.Windows.Shapes.Ellipse>.  
+ 
+<!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#2)]  -->
+<!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#2)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1102,32 +1102,32 @@
         <value>The <see cref="T:System.Windows.Controls.Primitives.PopupAnimation" /> enumeration value that defines an animation to open and close a <see cref="T:System.Windows.Controls.Primitives.Popup" /> control. The default is <see cref="F:System.Windows.Controls.Primitives.PopupAnimation.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Primitives.Popup> can only animate when the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> property is set to `true`. This requires the application that creates the <xref:System.Windows.Controls.Primitives.Popup> control to run with full trust.  
-  
- If the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> is animated, the <xref:System.Windows.Controls.Primitives.Popup> will not be animated.  
-  
+A <xref:System.Windows.Controls.Primitives.Popup> can only animate when the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> property is set to `true`. This requires the application that creates the <xref:System.Windows.Controls.Primitives.Popup> control to run with full trust.  
+ 
+If the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> is animated, the <xref:System.Windows.Controls.Primitives.Popup> will not be animated.  
+ 
 <a name="dependencyPropertyInfo_PopupAnimation"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Popup.PopupAnimationProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Controls.Primitives.Popup.PopupAnimation%2A> property.  
-  
- [!code-csharp[PopupSnips#AllowsTransparency](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#allowstransparency)]
- [!code-vb[PopupSnips#AllowsTransparency](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#allowstransparency)]
- [!code-xml[PopupSnips#AllowsTransparency](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#allowstransparency)]  
-  
- [!code-csharp[PopupSnips#Animation](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#animation)]
- [!code-vb[PopupSnips#Animation](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#animation)]  
-  
+The following example shows how to set the <xref:System.Windows.Controls.Primitives.Popup.PopupAnimation%2A> property.  
+ 
+[!code-csharp[PopupSnips#AllowsTransparency](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#allowstransparency)]
+[!code-vb[PopupSnips#AllowsTransparency](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#allowstransparency)]
+[!code-xml[PopupSnips#AllowsTransparency](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#allowstransparency)]  
+ 
+[!code-csharp[PopupSnips#Animation](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#animation)]
+[!code-vb[PopupSnips#Animation](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#animation)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1175,27 +1175,27 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control closes when <see cref="P:System.Windows.Controls.Primitives.Popup.IsOpen" /> property is set to <see langword="false" />; <see langword="false" /> if the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control closes when a mouse or keyboard event occurs outside the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Windows.Controls.Primitives.Popup.StaysOpen%2A> property is set to `true`, <xref:System.Windows.Controls.Primitives.Popup> stays open until it is explicitly closed by setting the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property to `false`. When <xref:System.Windows.Controls.Primitives.Popup.StaysOpen%2A> is `false`, the <xref:System.Windows.Controls.Primitives.Popup> control intercepts all mouse and keyboard events to determine when one of these events occurs outside the <xref:System.Windows.Controls.Primitives.Popup> control.  
-  
+When the <xref:System.Windows.Controls.Primitives.Popup.StaysOpen%2A> property is set to `true`, <xref:System.Windows.Controls.Primitives.Popup> stays open until it is explicitly closed by setting the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property to `false`. When <xref:System.Windows.Controls.Primitives.Popup.StaysOpen%2A> is `false`, the <xref:System.Windows.Controls.Primitives.Popup> control intercepts all mouse and keyboard events to determine when one of these events occurs outside the <xref:System.Windows.Controls.Primitives.Popup> control.  
+ 
 <a name="dependencyPropertyInfo_StaysOpen"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Popup>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Controls.Primitives.Popup.StaysOpen%2A> property.  
-  
- [!code-csharp[PopupSnips#StaysOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#staysopen)]
- [!code-vb[PopupSnips#StaysOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#staysopen)]
- [!code-xml[PopupSnips#StaysOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#staysopen)]  
-  
+The following example shows how to set the <xref:System.Windows.Controls.Primitives.Popup.StaysOpen%2A> property.  
+ 
+[!code-csharp[PopupSnips#StaysOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#staysopen)]
+[!code-vb[PopupSnips#StaysOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#staysopen)]
+[!code-xml[PopupSnips#StaysOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#staysopen)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1287,55 +1287,55 @@
         <value>The vertical distance between the target origin and the popup alignment point. For information about the target origin and popup alignment point, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md). The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
-  
+You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+ 
 <a name="xamlAttributeUsage_VerticalOffset"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object VerticalOffset="double"/>  
 - or -  
 <object VerticalOffset="qualifiedDouble"/>  
 ```  
-  
+ 
 <a name="xamlValues_VerticalOffset"></a>   
 ## XAML Values  
- `double`  
- <xref:System.Double>  
-  
- A string representation of a <xref:System.Double> value. This is interpreted as a [!INCLUDE[TLA#tla_dipixel](~/includes/tlasharptla-dipixel-md.md)] measurement. Strings do not have to explicitly include decimal points. For example, a value of `1` is acceptable.  
-  
- The same <xref:System.Double> range restrictions apply as those that are mentioned in the Property Value section of this topic.  
-  
- `qualifiedDouble`  
- A `double` value as described earlier in this table, followed by one of the following unit declaration strings: `px`, `in`, `cm`, or `pt`.  
-  
- `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
-  
- `in` is inches; 1in=96px  
-  
- `cm` is centimeters; 1cm=(96/2.54) px  
-  
- `pt` is points; 1pt=(96/72) px  
-  
+`double`  
+<xref:System.Double>  
+ 
+A string representation of a <xref:System.Double> value. This is interpreted as a [!INCLUDE[TLA#tla_dipixel](~/includes/tlasharptla-dipixel-md.md)] measurement. Strings do not have to explicitly include decimal points. For example, a value of `1` is acceptable.  
+ 
+The same <xref:System.Double> range restrictions apply as those that are mentioned in the Property Value section of this topic.  
+ 
+`qualifiedDouble`  
+A `double` value as described earlier in this table, followed by one of the following unit declaration strings: `px`, `in`, `cm`, or `pt`.  
+ 
+`px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+ 
+`in` is inches; 1in=96px  
+ 
+`cm` is centimeters; 1cm=(96/2.54) px  
+ 
+`pt` is points; 1pt=(96/72) px  
+ 
 <a name="dependencyPropertyInfo_VerticalOffset"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.Primitives.Popup> and sets the <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A> and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> properties to 20.  The <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode> (which is the default), so the target origin is the bottom left corner of the target area, and the popup alignment point is the top left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
-  
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#5](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#5)]  -->
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#5)]  -->  
-  
+The following example creates a <xref:System.Windows.Controls.Primitives.Popup> and sets the <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A> and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> properties to 20.  The <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode> (which is the default), so the target origin is the bottom left corner of the target area, and the popup alignment point is the top left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
+ 
+<!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#5](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#5)]  -->
+<!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#5)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>

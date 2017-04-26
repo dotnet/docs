@@ -82,10 +82,10 @@
         <value>An integer value representing the number of <see cref="T:Microsoft.Build.BuildEngine.UsingTask" /> objects in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each <xref:Microsoft.Build.BuildEngine.UsingTask> object in the collection represents a  element in the project.  
-  
+Each <xref:Microsoft.Build.BuildEngine.UsingTask> object in the collection represents a  element in the project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,10 +108,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the entire <see cref="T:Microsoft.Build.BuildEngine.UsingTaskCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method allows the caller to use the `foreach` statement of the C# language (`for each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) to iterate through the individual <xref:Microsoft.Build.BuildEngine.UsingTask> objects in the <xref:Microsoft.Build.BuildEngine.UsingTaskCollection>.  
-  
+This method allows the caller to use the `foreach` statement of the C# language (`for each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) to iterate through the individual <xref:Microsoft.Build.BuildEngine.UsingTask> objects in the <xref:Microsoft.Build.BuildEngine.UsingTaskCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -55,10 +55,10 @@
         <returns>An <see cref="T:System.Object" /> representing the new value. If the value of the object has not changed, the <see cref="M:System.Windows.Forms.Design.ImageListImageEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" /> method returns the object that was passed to it.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This editor uses a service provider to obtain any necessary editing services.  
-  
+This editor uses a service provider to obtain any necessary editing services.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,10 +81,10 @@
         <returns>The description for the default file-list filter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The file dialog box description appears in the file-list filter drop-down list box.  
-  
+The file dialog box description appears in the file-list filter drop-down list box.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,10 +151,10 @@
         <summary>Paints a value indicated by the specified <see cref="T:System.Drawing.Design.PaintValueEventArgs" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To display the representation of the value in the typical property sheet format, paint within the boundaries of the <xref:System.Drawing.Rectangle> contained within the specified <xref:System.Drawing.Design.PaintValueEventArgs>.  
-  
+To display the representation of the value in the typical property sheet format, paint within the boundaries of the <xref:System.Drawing.Rectangle> contained within the specified <xref:System.Drawing.Design.PaintValueEventArgs>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

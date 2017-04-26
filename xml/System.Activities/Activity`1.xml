@@ -26,17 +26,17 @@
     <summary>An abstract base class used to create composite activities from pre-existing <see cref="T:System.Activities.Activity" /> objects, which specifies a result type using the activity’s type specifier.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Activity%601> is the base class in the activity type hierarchy. All other activity types with generic type definitions such as <xref:System.Activities.CodeActivity%601>, <xref:System.Activities.NativeActivity%601>, <xref:System.Activities.AsyncCodeActivity%601>, and <xref:System.Activities.DynamicActivity%601> derive from this class.  
+<xref:System.Activities.Activity%601> is the base class in the activity type hierarchy. All other activity types with generic type definitions such as <xref:System.Activities.CodeActivity%601>, <xref:System.Activities.NativeActivity%601>, <xref:System.Activities.AsyncCodeActivity%601>, and <xref:System.Activities.DynamicActivity%601> derive from this class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to derive a class from <xref:System.Activities.Activity%601>.  
-  
- [!code-csharp[HelloWorld#0](~/samples/snippets/csharp/VS_Snippets_CFX/helloworld/cs/appendstring.cs#0)]  
-  
+The following example shows how to derive a class from <xref:System.Activities.Activity%601>.  
+ 
+[!code-csharp[HelloWorld#0](~/samples/snippets/csharp/VS_Snippets_CFX/helloworld/cs/appendstring.cs#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -99,10 +99,10 @@
         <returns>A workflow expression that evaluates to the given variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the type of the <xref:System.Activities.Variable> is not compatible with the type of the <xref:System.Activities.Activity%601>, then an <xref:System.ArgumentException> is thrown.  
-  
+If the type of the <xref:System.Activities.Variable> is not compatible with the type of the <xref:System.Activities.Activity%601>, then an <xref:System.ArgumentException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -217,10 +217,10 @@
         <value>The result argument for the <see cref="T:System.Activities.Activity`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
-  
+This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
+ 
  ]]></format>
         </remarks>
       </Docs>

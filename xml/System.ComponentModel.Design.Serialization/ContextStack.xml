@@ -19,25 +19,25 @@
     <summary>Provides a stack object that can be used by a serializer to make information available to nested serializers.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some serializers require information about the context of an object to correctly persist their state. The <xref:System.ComponentModel.Design.Serialization.ContextStack> class enables a serializer to set data about the context of an object that is being serialized to a stack where another serializer can access it. The value of the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Context%2A> property is provided by an <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager> to share information of use to some serializers.  
+Some serializers require information about the context of an object to correctly persist their state. The <xref:System.ComponentModel.Design.Serialization.ContextStack> class enables a serializer to set data about the context of an object that is being serialized to a stack where another serializer can access it. The value of the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Context%2A> property is provided by an <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager> to share information of use to some serializers.  
+ 
+A context stack is useful because the process of serializing a design document can be deeply nested, and objects at each level of nesting may require context information to correctly persist the state of the object. A serializer can set a context object to the stack before invoking a nested serializer. Each object set to the stack should be removed by the serializer that set it after a call to a nested serializer returns.  
+ 
+Typically, the objects on the stack contain information about the context of the current object that is being serialized. A parent serializer adds context information to the stack about the next object to be serialized, calls an appropriate serializer and, when the serializer finishes executing on the object, removes the context information from the stack. It is up to the implementation of each serializer to determine what objects get pushed on this stack.  
+ 
+As an example, an object with a property named `Enabled` has a data type of <xref:System.Boolean>. If a serializer writes this value to a data stream, it might need to include the context or type of property it is writing. The serializer does not have this information, however, because it is only instructed to write the <xref:System.Boolean> value. To provide this information to the serializer, the parent serializer can push a <xref:System.ComponentModel.PropertyDescriptor> that points to the `Enabled` property on the context stack.  
+ 
   
- A context stack is useful because the process of serializing a design document can be deeply nested, and objects at each level of nesting may require context information to correctly persist the state of the object. A serializer can set a context object to the stack before invoking a nested serializer. Each object set to the stack should be removed by the serializer that set it after a call to a nested serializer returns.  
-  
- Typically, the objects on the stack contain information about the context of the current object that is being serialized. A parent serializer adds context information to the stack about the next object to be serialized, calls an appropriate serializer and, when the serializer finishes executing on the object, removes the context information from the stack. It is up to the implementation of each serializer to determine what objects get pushed on this stack.  
-  
- As an example, an object with a property named `Enabled` has a data type of <xref:System.Boolean>. If a serializer writes this value to a data stream, it might need to include the context or type of property it is writing. The serializer does not have this information, however, because it is only instructed to write the <xref:System.Boolean> value. To provide this information to the serializer, the parent serializer can push a <xref:System.ComponentModel.PropertyDescriptor> that points to the `Enabled` property on the context stack.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using a <xref:System.ComponentModel.Design.Serialization.ContextStack> to push and then remove 10 values.  
-  
- [!code-cpp[ContextStackExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ContextStackExample/CPP/class1.cpp#1)]
- [!code-csharp[ContextStackExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ContextStackExample/CS/class1.cs#1)]
- [!code-vb[ContextStackExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ContextStackExample/VB/class1.vb#1)]  
-  
+The following code example demonstrates using a <xref:System.ComponentModel.Design.Serialization.ContextStack> to push and then remove 10 values.  
+ 
+[!code-cpp[ContextStackExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ContextStackExample/CPP/class1.cpp#1)]
+[!code-csharp[ContextStackExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ContextStackExample/CS/class1.cs#1)]
+[!code-vb[ContextStackExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ContextStackExample/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -62,14 +62,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.ContextStack" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates creating a <xref:System.ComponentModel.Design.Serialization.ContextStack> instance.  
-  
- [!code-cpp[ContextStackExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/ContextStackExample/CPP/class1.cpp#2)]
- [!code-csharp[ContextStackExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ContextStackExample/CS/class1.cs#2)]
- [!code-vb[ContextStackExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ContextStackExample/VB/class1.vb#2)]  
-  
+The following code example demonstrates creating a <xref:System.ComponentModel.Design.Serialization.ContextStack> instance.  
+ 
+[!code-cpp[ContextStackExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/ContextStackExample/CPP/class1.cpp#2)]
+[!code-csharp[ContextStackExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ContextStackExample/CS/class1.cs#2)]
+[!code-vb[ContextStackExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ContextStackExample/VB/class1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,10 +99,10 @@
         <summary>Appends an object to the end of the stack, rather than pushing it onto the top of the stack.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method allows a serializer to communicate with other serializers by adding contextual data objects that do not have to be removed in order. There is no way to remove an object that was appended to the end of the stack without removing all other objects.  
-  
+This method allows a serializer to communicate with other serializers by adding contextual data objects that do not have to be removed in order. There is no way to remove an object that was appended to the end of the stack without removing all other objects.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -131,10 +131,10 @@
         <value>The current object on the stack, or <see langword="null" /> if no objects were pushed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current object is the object at the top of the stack, or the object last added to the stack.  
-  
+The current object is the object at the top of the stack, or the object last added to the stack.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,10 +194,10 @@
         <value>The first object on the stack that inherits from or implements the specified type, or <see langword="null" /> if no object on the stack implements the type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A check is made on each level of the stack, searching for an object that implements or inherits `type`. If a match is found, it is returned.  
-  
+A check is made on each level of the stack, searching for an object that implements or inherits `type`. If a match is found, it is returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -227,14 +227,14 @@
         <returns>The object removed from the stack; <see langword="null" /> if no objects are on the stack.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates removing a value from a <xref:System.ComponentModel.Design.Serialization.ContextStack>.  
-  
- [!code-cpp[ContextStackExample#4](~/samples/snippets/cpp/VS_Snippets_Winforms/ContextStackExample/CPP/class1.cpp#4)]
- [!code-csharp[ContextStackExample#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ContextStackExample/CS/class1.cs#4)]
- [!code-vb[ContextStackExample#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ContextStackExample/VB/class1.vb#4)]  
-  
+The following code example demonstrates removing a value from a <xref:System.ComponentModel.Design.Serialization.ContextStack>.  
+ 
+[!code-cpp[ContextStackExample#4](~/samples/snippets/cpp/VS_Snippets_Winforms/ContextStackExample/CPP/class1.cpp#4)]
+[!code-csharp[ContextStackExample#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ContextStackExample/CS/class1.cs#4)]
+[!code-vb[ContextStackExample#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ContextStackExample/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -264,14 +264,14 @@
         <summary>Pushes, or places, the specified object onto the stack.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates pushing values to a <xref:System.ComponentModel.Design.Serialization.ContextStack>.  
-  
- [!code-cpp[ContextStackExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/ContextStackExample/CPP/class1.cpp#3)]
- [!code-csharp[ContextStackExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ContextStackExample/CS/class1.cs#3)]
- [!code-vb[ContextStackExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ContextStackExample/VB/class1.vb#3)]  
-  
+The following code example demonstrates pushing values to a <xref:System.ComponentModel.Design.Serialization.ContextStack>.  
+ 
+[!code-cpp[ContextStackExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/ContextStackExample/CPP/class1.cpp#3)]
+[!code-csharp[ContextStackExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ContextStackExample/CS/class1.cs#3)]
+[!code-vb[ContextStackExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ContextStackExample/VB/class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

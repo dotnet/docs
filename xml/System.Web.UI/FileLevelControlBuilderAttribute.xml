@@ -19,10 +19,10 @@
     <summary>Allows a <see cref="T:System.Web.UI.TemplateControl" />-derived class to specify the control builder used at the top level of the builder tree when parsing the file. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Page> and <xref:System.Web.UI.UserControl> classes derive from the <xref:System.Web.UI.TemplateControl> class.  
-  
+The <xref:System.Web.UI.Page> and <xref:System.Web.UI.UserControl> classes derive from the <xref:System.Web.UI.TemplateControl> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,13 +44,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.FileLevelControlBuilderAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create a new instance of the <xref:System.Web.UI.FileLevelControlBuilderAttribute> class.  
-  
+Use this constructor to create a new instance of the <xref:System.Web.UI.FileLevelControlBuilderAttribute> class.  
+ 
 > [!NOTE]
 >  This constructor is used by ASP.NET when parsing the page and creating the control hierarchy. It is not intended for use in your code.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

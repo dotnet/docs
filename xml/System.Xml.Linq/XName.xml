@@ -36,54 +36,54 @@
     <summary>Represents a name of an XML element or attribute.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- XML names include a namespace and a local name. A *fully qualified name* is the combination of the namespace and local name.  
-  
+XML names include a namespace and a local name. A *fully qualified name* is the combination of the namespace and local name.  
+ 
 ## Creating an XName Object  
- <xref:System.Xml.Linq.XName> does not contain any public constructors. Instead, this class provides an implicit conversion from <xref:System.String> that allows you to create an <xref:System.Xml.Linq.XName>. The most common place you use this conversion is when constructing an element or attribute: The first argument to the <xref:System.Xml.Linq.XElement> constructor is an <xref:System.Xml.Linq.XName>. By passing a string, you take advantage of the implicit conversion. The following code creates an element with a name that is in no namespace:  
-  
+<xref:System.Xml.Linq.XName> does not contain any public constructors. Instead, this class provides an implicit conversion from <xref:System.String> that allows you to create an <xref:System.Xml.Linq.XName>. The most common place you use this conversion is when constructing an element or attribute: The first argument to the <xref:System.Xml.Linq.XElement> constructor is an <xref:System.Xml.Linq.XName>. By passing a string, you take advantage of the implicit conversion. The following code creates an element with a name that is in no namespace:  
+ 
 ```csharp  
   
                 XElement root = new XElement("ElementName", "content");  
 Console.WriteLine(root);  
 ```  
-  
- In Visual Basic, it is more appropriate to use XML literals:  
-  
+ 
+In Visual Basic, it is more appropriate to use XML literals:  
+ 
 ```vb  
   
                 Dim root As XElement = <ElementName>content</ElementName>  
 Console.WriteLine(root)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
 <ElementName>content</ElementName>  
 ```  
-  
- Assigning a string to an <xref:System.Xml.Linq.XName> uses the implicit conversion from <xref:System.String>.  
-  
- The Visual Basic example creates the <xref:System.Xml.Linq.XElement> using XML literals. Even though XML literals are used, an <xref:System.Xml.Linq.XName> object is created for the <xref:System.Xml.Linq.XElement>.  
-  
- In addition, you can call the <xref:System.Xml.Linq.XName.Get%2A> method for an <xref:System.Xml.Linq.XName> object. However, the recommended way is to use the implicit conversion from string.  
-  
+ 
+Assigning a string to an <xref:System.Xml.Linq.XName> uses the implicit conversion from <xref:System.String>.  
+ 
+The Visual Basic example creates the <xref:System.Xml.Linq.XElement> using XML literals. Even though XML literals are used, an <xref:System.Xml.Linq.XName> object is created for the <xref:System.Xml.Linq.XElement>.  
+ 
+In addition, you can call the <xref:System.Xml.Linq.XName.Get%2A> method for an <xref:System.Xml.Linq.XName> object. However, the recommended way is to use the implicit conversion from string.  
+ 
 ## Creating an XName in a Namespace  
- As with XML, an <xref:System.Xml.Linq.XName> can be in a namespace, or it can be in no namespace.  
-  
- For C#, the recommended approach for creating an <xref:System.Xml.Linq.XName> in a namespace is to declare the <xref:System.Xml.Linq.XNamespace> object, then use the override of the addition operator.  
-  
- For Visual Basic, the recommended approach is to use XML literals and global namespace declarations to create XML that is in a namespace.  
-  
+As with XML, an <xref:System.Xml.Linq.XName> can be in a namespace, or it can be in no namespace.  
+ 
+For C#, the recommended approach for creating an <xref:System.Xml.Linq.XName> in a namespace is to declare the <xref:System.Xml.Linq.XNamespace> object, then use the override of the addition operator.  
+ 
+For Visual Basic, the recommended approach is to use XML literals and global namespace declarations to create XML that is in a namespace.  
+ 
 ```csharp  
   
                 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "ElementName", "content");  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 Imports <xmlns="http://www.adventure-works.com">  
@@ -95,17 +95,17 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
 <ElementName xmlns="http://www.adventure-works.com">content</ElementName>  
 ```  
-  
+ 
 ## Creating an XName in no Namespace  
- The <xref:System.Xml.Linq.XName.Namespace%2A> property of an <xref:System.Xml.Linq.XName> object is guaranteed to not be null. If the <xref:System.Xml.Linq.XName> is in no namespace, then the <xref:System.Xml.Linq.XName.Namespace%2A> property will be set to <xref:System.Xml.Linq.XNamespace.None%2A>. The following code demonstrates this:  
-  
+The <xref:System.Xml.Linq.XName.Namespace%2A> property of an <xref:System.Xml.Linq.XName> object is guaranteed to not be null. If the <xref:System.Xml.Linq.XName> is in no namespace, then the <xref:System.Xml.Linq.XName.Namespace%2A> property will be set to <xref:System.Xml.Linq.XNamespace.None%2A>. The following code demonstrates this:  
+ 
 ```csharp  
   
                 XElement root = new XElement("ElementName", "content");  
@@ -114,7 +114,7 @@ if (root.Name.Namespace == XNamespace.None)
 else  
     Console.WriteLine("The element is in a namespace.");  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement = <ElementName>content</ElementName>  
@@ -124,44 +124,44 @@ Else
     Console.WriteLine("The element is in a namespace.")  
 End If  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 The element is in no namespace.  
 ```  
-  
+ 
 ## Using Expanded Names  
- You can also create an <xref:System.Xml.Linq.XName> from a expanded XML name in the form `{namespace}localname`:  
-  
+You can also create an <xref:System.Xml.Linq.XName> from a expanded XML name in the form `{namespace}localname`:  
+ 
 ```csharp  
   
                 XElement root = new XElement("{http://www.adventure-works.com}ElementName", "content");  
 Console.WriteLine(root);  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement = New XElement("{http://www.adventure-works.com}ElementName", "content")  
 Console.WriteLine(root)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
 <ElementName xmlns="http://www.adventure-works.com">content</ElementName>  
 ```  
-  
- Be aware that creating an <xref:System.Xml.Linq.XName> through an expanded name is less efficient than creating an <xref:System.Xml.Linq.XNamespace> object and using the override of the addition operator. It is also less efficient than importing a global namespace and using XML literals in Visual Basic.  
-  
- If you create an <xref:System.Xml.Linq.XName> using an expanded name, LINQ to XML must find the atomized instance of a namespace. This work must be repeated for every use of an expanded name. This additional time is likely to be negligible when writing LINQ queries; however, it might be significant when creating a large XML tree.  
-  
+ 
+Be aware that creating an <xref:System.Xml.Linq.XName> through an expanded name is less efficient than creating an <xref:System.Xml.Linq.XNamespace> object and using the override of the addition operator. It is also less efficient than importing a global namespace and using XML literals in Visual Basic.  
+ 
+If you create an <xref:System.Xml.Linq.XName> using an expanded name, LINQ to XML must find the atomized instance of a namespace. This work must be repeated for every use of an expanded name. This additional time is likely to be negligible when writing LINQ queries; however, it might be significant when creating a large XML tree.  
+ 
 ## XName Objects are Atomized  
- <xref:System.Xml.Linq.XName> objects are guaranteed to be atomized; that is, if two <xref:System.Xml.Linq.XName> objects have exactly the same namespace and exactly the same local name, they will share the same instance. The equality and comparison operators are also provided explicitly for this purpose.  
-  
- Among other benefits, this feature allows for faster execution of queries. When filtering on the name of elements or attributes, the comparisons expressed in predicates use identity comparison, not value comparison. It is much faster to determine that two references actually refer to the same object than to compare two strings.  
-  
+<xref:System.Xml.Linq.XName> objects are guaranteed to be atomized; that is, if two <xref:System.Xml.Linq.XName> objects have exactly the same namespace and exactly the same local name, they will share the same instance. The equality and comparison operators are also provided explicitly for this purpose.  
+ 
+Among other benefits, this feature allows for faster execution of queries. When filtering on the name of elements or attributes, the comparisons expressed in predicates use identity comparison, not value comparison. It is much faster to determine that two references actually refer to the same object than to compare two strings.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -198,10 +198,10 @@ Console.WriteLine(root)
           <see langword="true" /> if the specified <see cref="T:System.Xml.Linq.XName" /> is equal to the current <see cref="T:System.Xml.Linq.XName" />; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For two <xref:System.Xml.Linq.XName> objects to be equal, they must have the same expanded name.  
-  
+For two <xref:System.Xml.Linq.XName> objects to be equal, they must have the same expanded name.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,19 +237,19 @@ Console.WriteLine(root)
         <returns>An <see cref="T:System.Xml.Linq.XName" /> object constructed from the expanded name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method contains overloads that allow you to create an <xref:System.Xml.Linq.XName>. You can create it from a expanded XML name in the form `{namespace}localname`, or from a namespace and a local name, specified separately.  
+This method contains overloads that allow you to create an <xref:System.Xml.Linq.XName>. You can create it from a expanded XML name in the form `{namespace}localname`, or from a namespace and a local name, specified separately.  
+ 
+A much more common and easier way to create an <xref:System.Xml.Linq.XName> is to use the implicit conversion from string.  
+ 
+Because <xref:System.Xml.Linq.XName> are atomized, if there is an existing <xref:System.Xml.Linq.XName> with exactly the same name, the assigned variable will refer to the existing <xref:System.Xml.Linq.XName>. If there is no existing <xref:System.Xml.Linq.XName>, a new one will be created and initialized.  
+ 
   
- A much more common and easier way to create an <xref:System.Xml.Linq.XName> is to use the implicit conversion from string.  
-  
- Because <xref:System.Xml.Linq.XName> are atomized, if there is an existing <xref:System.Xml.Linq.XName> with exactly the same name, the assigned variable will refer to the existing <xref:System.Xml.Linq.XName>. If there is no existing <xref:System.Xml.Linq.XName>, a new one will be created and initialized.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows the use of this method.  
-  
+The following example shows the use of this method.  
+ 
 ```csharp  
   
                 XName name = XName.Get("{http://www.adventure-works.com}Root");  
@@ -262,7 +262,7 @@ XNamespace aw = "http://www.adventure-works.com";
 XElement el2 = new XElement(aw + "Root", "content");  
 Console.WriteLine(el2);  
 ```  
-  
+ 
 ```vb  
   
                 Imports <xmlns="http://www.adventure-works.com">  
@@ -280,14 +280,14 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 <Root xmlns="http://www.adventure-works.com">content</Root>  
 <Root xmlns="http://www.adventure-works.com">content</Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,19 +325,19 @@ End Module
         <returns>An <see cref="T:System.Xml.Linq.XName" /> object created from the specified local name and namespace.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method contains overloads that allow you to create an <xref:System.Xml.Linq.XName>. You can create it from an expanded XML name in the form `{namespace}localname`, or from a namespace and a local name, specified separately.  
+This method contains overloads that allow you to create an <xref:System.Xml.Linq.XName>. You can create it from an expanded XML name in the form `{namespace}localname`, or from a namespace and a local name, specified separately.  
+ 
+A much more common and easier way to create an <xref:System.Xml.Linq.XName> is to use the implicit conversion from string.  
+ 
+Because <xref:System.Xml.Linq.XName> are atomized, if there is an existing <xref:System.Xml.Linq.XName> with exactly the same name, the assigned variable will refer to the existing <xref:System.Xml.Linq.XName>. If there is no existing <xref:System.Xml.Linq.XName>, a new one will be created and initialized.  
+ 
   
- A much more common and easier way to create an <xref:System.Xml.Linq.XName> is to use the implicit conversion from string.  
-  
- Because <xref:System.Xml.Linq.XName> are atomized, if there is an existing <xref:System.Xml.Linq.XName> with exactly the same name, the assigned variable will refer to the existing <xref:System.Xml.Linq.XName>. If there is no existing <xref:System.Xml.Linq.XName>, a new one will be created and initialized.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows the use of this method.  
-  
+The following example shows the use of this method.  
+ 
 ```csharp  
   
                 XName name = XName.Get("Root", "http://www.adventure-works.com");  
@@ -349,7 +349,7 @@ XNamespace aw = "http://www.adventure-works.com";
 XElement el2 = new XElement(aw + "Root", "content");  
 Console.WriteLine(el2);  
 ```  
-  
+ 
 ```vb  
   
                 Imports <xmlns="http://www.adventure-works.com">  
@@ -367,14 +367,14 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 <Root xmlns="http://www.adventure-works.com">content</Root>  
 <Root xmlns="http://www.adventure-works.com">content</Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -407,10 +407,10 @@ End Module
         <returns>An <see cref="T:System.Int32" /> that contains the hash code for the <see cref="T:System.Xml.Linq.XName" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method serves as a hash function for <xref:System.Xml.Linq.XName>. You can use <xref:System.Xml.Linq.XName.GetHashCode%2A> in hashing algorithms, or in data structures such as a hash table.  
-  
+This method serves as a hash function for <xref:System.Xml.Linq.XName>. You can use <xref:System.Xml.Linq.XName.GetHashCode%2A> in hashing algorithms, or in data structures such as a hash table.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -442,15 +442,15 @@ End Module
         <value>A <see cref="T:System.String" /> that contains the local (unqualified) part of the name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is guaranteed to not be `null`.  
+This property is guaranteed to not be `null`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the use of this property.  
-  
+The following example shows the use of this property.  
+ 
 ```csharp  
   
                 XNamespace ns = "http://www.adventure-works.com";  
@@ -459,7 +459,7 @@ Console.WriteLine(root.Name);
 Console.WriteLine(root.Name.LocalName);  
 Console.WriteLine(root.Name.Namespace);  
 ```  
-  
+ 
 ```vb  
   
                 Imports <xmlns="http://www.adventure-works.com">  
@@ -473,15 +473,15 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 {http://www.adventure-works.com}Root  
 Root  
 http://www.adventure-works.com  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -513,15 +513,15 @@ http://www.adventure-works.com
         <value>An <see cref="T:System.Xml.Linq.XNamespace" /> that contains the namespace part of the name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Linq.XName.Namespace%2A> property is guaranteed to not be `null`. If an <xref:System.Xml.Linq.XName> is in no namespace, this property returns <xref:System.Xml.Linq.XNamespace.None%2A>.  
+The <xref:System.Xml.Linq.XName.Namespace%2A> property is guaranteed to not be `null`. If an <xref:System.Xml.Linq.XName> is in no namespace, this property returns <xref:System.Xml.Linq.XNamespace.None%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the use of this property.  
-  
+The following example shows the use of this property.  
+ 
 ```csharp  
   
                 XNamespace ns = "http://www.adventure-works.com";  
@@ -530,7 +530,7 @@ Console.WriteLine(root.Name);
 Console.WriteLine(root.Name.LocalName);  
 Console.WriteLine(root.Name.Namespace);  
 ```  
-  
+ 
 ```vb  
   
                 Imports <xmlns="http://www.adventure-works.com">  
@@ -544,15 +544,15 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 {http://www.adventure-works.com}Root  
 Root  
 http://www.adventure-works.com  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -584,22 +584,22 @@ http://www.adventure-works.com
         <value>The URI of the <see cref="T:System.Xml.Linq.XNamespace" /> for this <see cref="T:System.Xml.Linq.XName" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a convenience property to get the namespace name from an <xref:System.Xml.Linq.XName>.  
+This is a convenience property to get the namespace name from an <xref:System.Xml.Linq.XName>.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example creates an element in a namespace, and then prints the element's namespace.  
-  
+This example creates an element in a namespace, and then prints the element's namespace.  
+ 
 ```csharp  
   
                 XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root");  
 Console.WriteLine(root.Name.NamespaceName);  
 ```  
-  
+ 
 ```vb  
   
                 Imports <xmlns="http://www.adventure-works.com">  
@@ -611,13 +611,13 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 http://www.adventure-works.com  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -656,15 +656,15 @@ http://www.adventure-works.com
           <see langword="true" /> if <paramref name="left" /> and <paramref name="right" /> are equal; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The operator overloads `==` and `!=` are included to enable comparisons between <xref:System.Xml.Linq.XName> and a `string`, such as`element.Name == "SomeElementName"`. The predefined reference equality operators in C# require one operand to be convertible to the type of the other through reference conversions only. These operators do not consider the implicit conversion from string to <xref:System.Xml.Linq.XName>.  
-  
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
-  
+The operator overloads `==` and `!=` are included to enable comparisons between <xref:System.Xml.Linq.XName> and a `string`, such as`element.Name == "SomeElementName"`. The predefined reference equality operators in C# require one operand to be convertible to the type of the other through reference conversions only. These operators do not consider the implicit conversion from string to <xref:System.Xml.Linq.XName>.  
+ 
+The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+ 
 ## Examples  
- The following example shows some comparisons between <xref:System.Xml.Linq.XName> objects and strings.  
-  
+The following example shows some comparisons between <xref:System.Xml.Linq.XName> objects and strings.  
+ 
 ```csharp  
   
                 XName xn;  
@@ -677,7 +677,7 @@ Console.WriteLine(xn == "{http://www.adventure-works.com}Root");
 XElement root = new XElement("Root", "content");  
 Console.WriteLine(root.Name == "Root");  
 ```  
-  
+ 
 ```vb  
   
                 Dim xn As XName  
@@ -690,15 +690,15 @@ Console.WriteLine(xn = "{http://www.adventure-works.com}Root")
 Dim root As XElement = New XElement("Root", "content")  
 Console.WriteLine(root.Name = "Root")  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 True  
 True  
 True  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -774,15 +774,15 @@ True
           <see langword="true" /> if <paramref name="left" /> and <paramref name="right" /> are not equal; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The operator overloads `==` and `!=` are included to enable comparisons between <xref:System.Xml.Linq.XName> and a string, such as`element.Name == "SomeElementName"`. The predefined reference equality operators in C# require one operand to be convertible to the type of the other through reference conversions only. These operators do not consider the implicit conversion from string to <xref:System.Xml.Linq.XName>.  
-  
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
-  
+The operator overloads `==` and `!=` are included to enable comparisons between <xref:System.Xml.Linq.XName> and a string, such as`element.Name == "SomeElementName"`. The predefined reference equality operators in C# require one operand to be convertible to the type of the other through reference conversions only. These operators do not consider the implicit conversion from string to <xref:System.Xml.Linq.XName>.  
+ 
+The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+ 
 ## Examples  
- The following C# example compares an <xref:System.Xml.Linq.XName> object to a string, which invokes this operator.  
-  
+The following C# example compares an <xref:System.Xml.Linq.XName> object to a string, which invokes this operator.  
+ 
 ```csharp  
   
                 XNamespace aw = "http://www.adventure-works.com";  
@@ -793,7 +793,7 @@ Console.WriteLine(root.Name != "{http://www.adventure-works.com}Root");
 // the following is the preferred idiom  
 Console.WriteLine(root.Name != aw + "Root");  
 ```  
-  
+ 
 ```vb  
   
                 Imports <xmlns="http://www.adventure-works.com">  
@@ -808,14 +808,14 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 False  
 False  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -880,10 +880,10 @@ False
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data required to serialize the target object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used internally to serialize object graphs that contain LINQ to XML objects.  
-  
+This method is used internally to serialize object graphs that contain LINQ to XML objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -916,10 +916,10 @@ False
         <returns>A <see cref="T:System.String" /> that contains the expanded XML name in the format <c>{namespace}localname</c>.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example calls <xref:System.Console.WriteLine%2A>, passing an <xref:System.Xml.Linq.XName>. This causes the <xref:System.Xml.Linq.XName.ToString%2A> method to be called.  
-  
+The following example calls <xref:System.Console.WriteLine%2A>, passing an <xref:System.Xml.Linq.XName>. This causes the <xref:System.Xml.Linq.XName.ToString%2A> method to be called.  
+ 
 ```csharp  
   
                 XNamespace ns = "http://www.adventure-works.com";  
@@ -928,7 +928,7 @@ Console.WriteLine(root.Name);
 Console.WriteLine(root.Name.LocalName);  
 Console.WriteLine(root.Name.Namespace);  
 ```  
-  
+ 
 ```vb  
 Imports <xmlns="http://www.adventure-works.com">  
   
@@ -941,15 +941,15 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 {http://www.adventure-works.com}Root  
 Root  
 http://www.adventure-works.com  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -964,18 +964,18 @@ http://www.adventure-works.com
         <summary>Gets an <see cref="T:System.Xml.Linq.XName" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method provides overloads that allow you to create an <xref:System.Xml.Linq.XName> from a expanded XML name. You can create an <xref:System.Xml.Linq.XName> from a string in the form `{namespace}localname`, or from a namespace and a local name, specified separately.  
-  
- A much more common and easier way to create an <xref:System.Xml.Linq.XName> is to use the implicit conversion from string. To create a name that is in a namespace, the common approach is to use the addition operator overload that allows you to combine an <xref:System.Xml.Linq.XNamespace> object and a string.  
-  
- For more information and examples, see [How to: Create a Document with Namespaces (C#) (LINQ to XML)](http://msdn.microsoft.com/library/af4a595e-ffb2-4187-a61b-d5ed71642c4c).  
-  
- For more information on using namespaces in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], see [Namespaces in Visual Basic (LINQ to XML)](http://msdn.microsoft.com/library/10b7ba7b-518c-4f14-899f-892575d14dcc).  
-  
- Because <xref:System.Xml.Linq.XName> objects are atomized, if there is an existing <xref:System.Xml.Linq.XName> with exactly the same name, the assigned variable will refer to the existing <xref:System.Xml.Linq.XName>. If there is no existing <xref:System.Xml.Linq.XName>, a new one will be created and initialized.  
-  
+This method provides overloads that allow you to create an <xref:System.Xml.Linq.XName> from a expanded XML name. You can create an <xref:System.Xml.Linq.XName> from a string in the form `{namespace}localname`, or from a namespace and a local name, specified separately.  
+ 
+A much more common and easier way to create an <xref:System.Xml.Linq.XName> is to use the implicit conversion from string. To create a name that is in a namespace, the common approach is to use the addition operator overload that allows you to combine an <xref:System.Xml.Linq.XNamespace> object and a string.  
+ 
+For more information and examples, see [How to: Create a Document with Namespaces (C#) (LINQ to XML)](http://msdn.microsoft.com/library/af4a595e-ffb2-4187-a61b-d5ed71642c4c).  
+ 
+For more information on using namespaces in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], see [Namespaces in Visual Basic (LINQ to XML)](http://msdn.microsoft.com/library/10b7ba7b-518c-4f14-899f-892575d14dcc).  
+ 
+Because <xref:System.Xml.Linq.XName> objects are atomized, if there is an existing <xref:System.Xml.Linq.XName> with exactly the same name, the assigned variable will refer to the existing <xref:System.Xml.Linq.XName>. If there is no existing <xref:System.Xml.Linq.XName>, a new one will be created and initialized.  
+ 
  ]]></format>
         </remarks>
       </Docs>

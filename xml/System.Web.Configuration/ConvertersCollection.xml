@@ -19,10 +19,10 @@
     <summary>Represents a configuration collection that contains references to <see cref="T:System.Web.Configuration.Converter" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Web.Configuration.ConvertersCollection> to work with a collection of <xref:System.Web.Configuration.Converter> objects. Implement this class to add collections of custom <xref:System.Web.Configuration.Converter> elements to a <xref:System.Configuration.ConfigurationSection> object.  
-  
+You can use the <xref:System.Web.Configuration.ConvertersCollection> to work with a collection of <xref:System.Web.Configuration.Converter> objects. Implement this class to add collections of custom <xref:System.Web.Configuration.Converter> elements to a <xref:System.Configuration.ConfigurationSection> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@
         <summary>Adds a <see cref="T:System.Web.Configuration.Converter" /> object to the <see cref="T:System.Web.Configuration.ConvertersCollection" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds a <xref:System.Web.Configuration.Converter> object to the collection. If the <xref:System.Web.Configuration.Converter> object is already in the collection, the method is ignored.  
-  
+This method adds a <xref:System.Web.Configuration.Converter> object to the collection. If the <xref:System.Web.Configuration.Converter> object is already in the collection, the method is ignored.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,10 +87,10 @@
         <summary>Removes all <see cref="T:System.Web.Configuration.Converter" /> objects from a <see cref="T:System.Web.Configuration.ConvertersCollection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method inserts a `clear` directive into the appropriate section of the configuration file to remove all references to elements that are defined in a higher-level configuration file.  
-  
+This method inserts a `clear` directive into the appropriate section of the configuration file to remove all references to elements that are defined in a higher-level configuration file.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,14 +14,14 @@
     <summary>Represents a digital signature for an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Windows.Xps.Packaging.XpsDigitalSignature> instead of <xref:System.IO.Packaging.PackageDigitalSignature> when you work with an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  <xref:System.IO.Packaging.PackageDigitalSignature> is not [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)]-aware, and does not guarantee that all parts in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document are fully signed.  
-  
- For more information about digital signatures, see the MSDN article *Digital Signing Framework of the Open Packaging Conventions* available at [http://go.microsoft.com/fwlink/?LinkId=74494](http://go.microsoft.com/fwlink/?LinkId=74494).  
-  
- For more information about [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] see the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
-  
+Use <xref:System.Windows.Xps.Packaging.XpsDigitalSignature> instead of <xref:System.IO.Packaging.PackageDigitalSignature> when you work with an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  <xref:System.IO.Packaging.PackageDigitalSignature> is not [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)]-aware, and does not guarantee that all parts in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document are fully signed.  
+ 
+For more information about digital signatures, see the MSDN article *Digital Signing Framework of the Open Packaging Conventions* available at [http://go.microsoft.com/fwlink/?LinkId=74494](http://go.microsoft.com/fwlink/?LinkId=74494).  
+ 
+For more information about [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] see the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -82,13 +82,13 @@
         <value>The [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] of the signature.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDigitalSignature.Id%2A> property to display and update signature information.  
-  
- [!code-csharp[XpsReadWriteSign#IterateSignatureDefinitions](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#iteratesignaturedefinitions)]
- [!code-vb[XpsReadWriteSign#IterateSignatureDefinitions](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#iteratesignaturedefinitions)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDigitalSignature.Id%2A> property to display and update signature information.  
+ 
+[!code-csharp[XpsReadWriteSign#IterateSignatureDefinitions](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#iteratesignaturedefinitions)]
+[!code-vb[XpsReadWriteSign#IterateSignatureDefinitions](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#iteratesignaturedefinitions)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,12 +111,12 @@
           <see langword="true" /> if the X.509 certificate of the signer is embedded in the document <see cref="T:System.IO.Packaging.Package" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The X.509 certificate of the signer is embedded by the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method when called with the `embedCertificate` parameter set to `true`.  
-  
- For more information on digital signatures and certificates, see Section 3.3 Digital Signatures in the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
-  
+The X.509 certificate of the signer is embedded by the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method when called with the `embedCertificate` parameter set to `true`.  
+ 
+For more information on digital signatures and certificates, see Section 3.3 Digital Signatures in the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,14 +139,14 @@
           <see langword="true" /> if the signature is invalidated if an additional digital signature is applied; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The signature origin restriction is set by the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method when called with the `restrictions` parameter set to exclude the <xref:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions> part.  
-  
- If a document is to be signed by more than one person, the <xref:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions> part needs to be excluded from the signature when the document is first signed.  (Exclusions are specified in the `restrictions` parameter of the call to <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A>.)  If the <xref:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions> part is not excluded, any additional signatures invalidate the signature of the first signer.  
-  
- For more information on the Core Properties and Signature Origin parts, see Chapter 3 of the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
-  
+The signature origin restriction is set by the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method when called with the `restrictions` parameter set to exclude the <xref:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions> part.  
+ 
+If a document is to be signed by more than one person, the <xref:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions> part needs to be excluded from the signature when the document is first signed.  (Exclusions are specified in the `restrictions` parameter of the call to <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A>.)  If the <xref:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions> part is not excluded, any additional signatures invalidate the signature of the first signer.  
+ 
+For more information on the Core Properties and Signature Origin parts, see Chapter 3 of the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,12 +222,12 @@
         <value>The X.509 certificate of the signer; or <see langword="null" /> when there is no certificate embedded in the document package.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The X.509 certificate of the signer is embedded by the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method when called with the `embedCertificate` parameter set to `true`.  
-  
- For more information on digital signatures and certificates, see Section 3.3 Digital Signatures in the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
-  
+The X.509 certificate of the signer is embedded by the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method when called with the `embedCertificate` parameter set to `true`.  
+ 
+For more information on digital signatures and certificates, see Section 3.3 Digital Signatures in the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,12 +249,12 @@
         <value>The date and time when the pages, document, or document sequence was signed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.Packaging.XpsDigitalSignature.SigningTime%2A> is based on the system time of the computer where the signing took place.  
-  
- <xref:System.Windows.Xps.Packaging.XpsDigitalSignature.SigningTime%2A> is not a "secure Time Stamp" and is not from trusted Time Stamp Authority.  A secure TimeStamp must be obtained and applied through a trusted Time Stamp Authority.  
-  
+<xref:System.Windows.Xps.Packaging.XpsDigitalSignature.SigningTime%2A> is based on the system time of the computer where the signing took place.  
+ 
+<xref:System.Windows.Xps.Packaging.XpsDigitalSignature.SigningTime%2A> is not a "secure Time Stamp" and is not from trusted Time Stamp Authority.  A secure TimeStamp must be obtained and applied through a trusted Time Stamp Authority.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -277,10 +277,10 @@
         <returns>One of the <see cref="T:System.IO.Packaging.VerifyResult" /> enumeration values that specify the result of the verification attempt.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This overload method verifies the document digital signature against the X.509 certificate embedded by the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method when called with the `embedCertificate` parameter set to `true`.  
-  
+This overload method verifies the document digital signature against the X.509 certificate embedded by the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method when called with the `embedCertificate` parameter set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -330,14 +330,14 @@
         <returns>A bitwise combination of the enumeration values that specify the result of the verification attempt.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Your application will need to decide what flags are critical for verifying certificates.  
-  
- Some certificate verifications may require Internet connectivity.  
-  
- The X.509 certificate of the signer is embedded by the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method when called with the `embedCertificate` parameter set to `true`.  
-  
+Your application will need to decide what flags are critical for verifying certificates.  
+ 
+Some certificate verifications may require Internet connectivity.  
+ 
+The X.509 certificate of the signer is embedded by the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method when called with the `embedCertificate` parameter set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -368,12 +368,12 @@
         <returns>A bitwise combination of the enumeration values that specify the result of the verification attempt.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Your application will need to decide what flags are critical for verifying certificates.  
-  
- Some certificate verifications may require Internet connectivity.  
-  
+Your application will need to decide what flags are critical for verifying certificates.  
+ 
+Some certificate verifications may require Internet connectivity.  
+ 
  ]]></format>
         </remarks>
       </Docs>

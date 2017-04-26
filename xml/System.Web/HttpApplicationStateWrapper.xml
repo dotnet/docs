@@ -19,10 +19,10 @@
     <summary>Encapsulates the HTTP intrinsic object that enables information to be shared across multiple requests and sessions within an ASP.NET application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpApplicationStateWrapper> class derives from the <xref:System.Web.HttpApplicationStateBase> class and serves as a wrapper for the <xref:System.Web.HttpApplicationState> class. This class exposes the functionality of the <xref:System.Web.HttpApplicationState> class while also exposing the <xref:System.Web.HttpApplicationStateBase> type. The <xref:System.Web.HttpApplicationStateBase> class enables you to replace the original implementation of the <xref:System.Web.HttpApplicationState> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
-  
+The <xref:System.Web.HttpApplicationStateWrapper> class derives from the <xref:System.Web.HttpApplicationStateBase> class and serves as a wrapper for the <xref:System.Web.HttpApplicationState> class. This class exposes the functionality of the <xref:System.Web.HttpApplicationState> class while also exposing the <xref:System.Web.HttpApplicationStateBase> type. The <xref:System.Web.HttpApplicationStateBase> class enables you to replace the original implementation of the <xref:System.Web.HttpApplicationState> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -123,10 +123,10 @@
         <value>A reference to the <see cref="T:System.Web.HttpApplicationState" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides compatibility with earlier versions of ASP.  
-  
+This property provides compatibility with earlier versions of ASP.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -520,12 +520,12 @@
         <value>A collection of objects in the application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Application objects are defined in the Global.asax file inside an element that has syntax like the following:  
-  
- `<object runat="server" scope="Application">Object information</object>`  
-  
+Application objects are defined in the Global.asax file inside an element that has syntax like the following:  
+ 
+`<object runat="server" scope="Application">Object information</object>`  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,17 +19,17 @@
     <summary>Provides a type converter for <see cref="T:System.Web.UI.DataBindingCollection" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type converter calls the base <xref:System.ComponentModel.TypeConverter.ConvertTo%2A?displayProperty=fullName> method for all destination types except <xref:System.String>, for which an empty string ("") is returned.  
+This type converter calls the base <xref:System.ComponentModel.TypeConverter.ConvertTo%2A?displayProperty=fullName> method for all destination types except <xref:System.String>, for which an empty string ("") is returned.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[DataSourceTypeConverterExamples#1](~/samples/snippets/cpp/VS_Snippets_WebNet/DataSourceTypeConverterExamples/CPP/datasourcetypeconverterexamples.cpp#1)]
- [!code-csharp[DataSourceTypeConverterExamples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataSourceTypeConverterExamples/CS/datasourcetypeconverterexamples.cs#1)]
- [!code-vb[DataSourceTypeConverterExamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataSourceTypeConverterExamples/VB/datasourcetypeconverterexamples.vb#1)]  
-  
+[!code-cpp[DataSourceTypeConverterExamples#1](~/samples/snippets/cpp/VS_Snippets_WebNet/DataSourceTypeConverterExamples/CPP/datasourcetypeconverterexamples.cpp#1)]
+[!code-csharp[DataSourceTypeConverterExamples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataSourceTypeConverterExamples/CS/datasourcetypeconverterexamples.cs#1)]
+[!code-vb[DataSourceTypeConverterExamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataSourceTypeConverterExamples/VB/datasourcetypeconverterexamples.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,10 +76,10 @@
         <returns>The object produced by the type conversion. If the <paramref name="destinationType" /> parameter is of type <see cref="T:System.String" />, this method returns an empty string ("").</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns an empty string if the `destinationType` parameter is of type <xref:System.String>. Otherwise this method calls the <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> method of the base <xref:System.ComponentModel.TypeConverter> class.  
-  
+This method returns an empty string if the `destinationType` parameter is of type <xref:System.String>. Otherwise this method calls the <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> method of the base <xref:System.ComponentModel.TypeConverter> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

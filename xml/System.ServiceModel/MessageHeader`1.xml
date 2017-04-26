@@ -19,10 +19,10 @@
     <summary>Represents the content of a SOAP header.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A message header contains optional metadata that describe a message, encapsulated by the <xref:System.ServiceModel.Channels.Message> class.  
-  
+A message header contains optional metadata that describe a message, encapsulated by the <xref:System.ServiceModel.Channels.Message> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -105,10 +105,10 @@
         <value>The targeted recipient of the message header. The default is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is empty, the header is interpreted as targeted for the ultimate recipient of the message.  
-  
+If this property is empty, the header is interpreted as targeted for the ultimate recipient of the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,10 +176,10 @@
           <see langword="true" /> if the header must be understood; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is `true` and the message receiver cannot interpret the message header, the message is not processed and an exception is thrown. If this property is `false`, the receiver can ignore the message header and continue processing.  
-  
+If this property is `true` and the message receiver cannot interpret the message header, the message is not processed and an exception is thrown. If this property is `false`, the receiver can ignore the message header and continue processing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,10 +203,10 @@
           <see langword="true" /> if the header should be relayed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As stated in the SOAP 1.1 spec, this value is always `false`.  
-  
+As stated in the SOAP 1.1 spec, this value is always `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

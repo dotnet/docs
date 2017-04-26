@@ -14,10 +14,10 @@
     <summary>Provides a collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection> class is a collection of <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> objects, typically used by the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object to manage a set of <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> objects for a connection. The transformers related to a Web Parts connection can be retrieved through the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Transformers%2A> property.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection> class is a collection of <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> objects, typically used by the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object to manage a set of <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> objects for a connection. The transformers related to a Web Parts connection can be retrieved through the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Transformers%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,10 +80,10 @@
         <returns>A Boolean value that indicates whether a particular transformer is in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.Contains%2A> method enables you to check a particular <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object and determine whether it is part of a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection> object.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.Contains%2A> method enables you to check a particular <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object and determine whether it is part of a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
         <summary>Copies the collection to an array of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.CopyTo%2A> method is useful when you want to assemble a custom array that can contain all the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> objects in the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection> collection, a subset of those objects, or a superset of those objects.  
-  
+The <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.CopyTo%2A> method is useful when you want to assemble a custom array that can contain all the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> objects in the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection> collection, a subset of those objects, or a superset of those objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>

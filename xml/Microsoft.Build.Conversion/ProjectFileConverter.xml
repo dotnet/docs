@@ -155,10 +155,10 @@
         <returns>Returns the converted <see cref="T:Microsoft.Build.BuildEngine.Project" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns the converted <xref:Microsoft.Build.BuildEngine.Project>.  
-  
+Returns the converted <xref:Microsoft.Build.BuildEngine.Project>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -279,10 +279,10 @@
         <value>A string representing the new project file name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value must be set before running the <xref:Microsoft.Build.Conversion.ProjectFileConverter.Convert%2A> method.  
-  
+This value must be set before running the <xref:Microsoft.Build.Conversion.ProjectFileConverter.Convert%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,10 +304,10 @@
         <value>The old project file name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value must be set before running the <xref:Microsoft.Build.Conversion.ProjectFileConverter.Convert%2A> method.  
-  
+This value must be set before running the <xref:Microsoft.Build.Conversion.ProjectFileConverter.Convert%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -339,10 +339,10 @@
         <summary>Creates a new project in memory from the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns the converted <xref:Microsoft.Build.BuildEngine.Project>.  
-  
+Returns the converted <xref:Microsoft.Build.BuildEngine.Project>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

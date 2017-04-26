@@ -62,10 +62,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpFailedRecipientException" /> class with the specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses the `message` parameter to initialize the <xref:System.Exception.Message%2A> property.  
-  
+This constructor uses the `message` parameter to initialize the <xref:System.Exception.Message%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,10 +94,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpFailedRecipientException" /> class with the specified status code and e-mail address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses the `statusCode` parameter to initialize the <xref:System.Net.Mail.SmtpException.StatusCode%2A> property and uses the `failedRecipient` parameter to initialize the <xref:System.Net.Mail.SmtpFailedRecipientException.FailedRecipient%2A> property.  
-  
+This constructor uses the `statusCode` parameter to initialize the <xref:System.Net.Mail.SmtpException.StatusCode%2A> property and uses the `failedRecipient` parameter to initialize the <xref:System.Net.Mail.SmtpFailedRecipientException.FailedRecipient%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,10 +126,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpFailedRecipientException" /> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> classes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.Mail.SmtpFailedRecipientException> class.  
-  
+This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.Mail.SmtpFailedRecipientException> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,10 +185,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpFailedRecipientException" /> class with the specified status code, e-mail address, and server response.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses the `statusCode` parameter to initialize the <xref:System.Net.Mail.SmtpException.StatusCode%2A> property and uses the `failedRecipient` parameter to initialize the <xref:System.Net.Mail.SmtpFailedRecipientException.FailedRecipient%2A> property.  
-  
+This constructor uses the `statusCode` parameter to initialize the <xref:System.Net.Mail.SmtpException.StatusCode%2A> property and uses the `failedRecipient` parameter to initialize the <xref:System.Net.Mail.SmtpFailedRecipientException.FailedRecipient%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,10 +270,10 @@
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> instance with the data that is needed to serialize the <see cref="T:System.Net.Mail.SmtpFailedRecipientException" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any objects that are included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
-  
+Any objects that are included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
+ 
  ]]></format>
         </remarks>
       </Docs>

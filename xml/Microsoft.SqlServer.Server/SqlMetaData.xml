@@ -23,13 +23,13 @@
     <summary>Specifies and retrieves metadata information from parameters and columns of <see cref="T:Microsoft.SqlServer.Server.SqlDataRecord" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows the creation of several <xref:Microsoft.SqlServer.Server.SqlMetaData> objects, which describe the column metadata of a record, and the creation of a <xref:Microsoft.SqlServer.Server.SqlDataRecord>. The column values of the <xref:Microsoft.SqlServer.Server.SqlDataRecord> are set and the <xref:Microsoft.SqlServer.Server.SqlDataRecord> is sent to the calling program using the <xref:Microsoft.SqlServer.Server.SqlContext> class.  
-  
- [!code-csharp[DataWorks SqlMetaData Samples#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlMetaData Samples/CS/source.cs#1)]
- [!code-vb[DataWorks SqlMetaData Samples#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlMetaData Samples/VB/source.vb#1)]  
-  
+The following example shows the creation of several <xref:Microsoft.SqlServer.Server.SqlMetaData> objects, which describe the column metadata of a record, and the creation of a <xref:Microsoft.SqlServer.Server.SqlDataRecord>. The column values of the <xref:Microsoft.SqlServer.Server.SqlDataRecord> are set and the <xref:Microsoft.SqlServer.Server.SqlDataRecord> is sent to the calling program using the <xref:Microsoft.SqlServer.Server.SqlContext> class.  
+ 
+[!code-csharp[DataWorks SqlMetaData Samples#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlMetaData Samples/CS/source.cs#1)]
+[!code-vb[DataWorks SqlMetaData Samples#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlMetaData Samples/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,12 +62,12 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name and type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only the following are allowed to be passed to the constructor as `dbType`: `Bit`, `BigInt`, `DateTime`, `Decimal`, `Float`, `Int`, `Money`, `Numeric`, `SmallDateTime`, `SmallInt`, `SmallMoney`, `TimeStamp`, `TinyInt`, `UniqueIdentifier`, `Xml`.  
-  
- The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
-  
+Only the following are allowed to be passed to the constructor as `dbType`: `Bit`, `BigInt`, `DateTime`, `Decimal`, `Float`, `Int`, `Money`, `Numeric`, `SmallDateTime`, `SmallInt`, `SmallMoney`, `TimeStamp`, `TinyInt`, `UniqueIdentifier`, `Xml`.  
+ 
+The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
+ 
 |SqlDbType|Maximum length|Precision|Scale|Locale|Compare options|  
 |---------------|--------------------|---------------|-----------|------------|---------------------|  
 |`Bit`|1|1|0|0|None|  
@@ -85,15 +85,15 @@
 |`TinyInt`|1|3|0|0|None|  
 |`UniqueIdentifier`|16|0|0|0|None|  
 |`Xml`|Max (-1)|0|0|0|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a new <xref:Microsoft.SqlServer.Server.SqlMetaData> object by specifying the column name and a column data type of <xref:System.Data.SqlDbType>.`Int`.  
-  
- [!code-csharp[DataWorks SqlMetaData Samples#3](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlMetaData Samples/CS/source.cs#3)]
- [!code-vb[DataWorks SqlMetaData Samples#3](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlMetaData Samples/VB/source.vb#3)]  
-  
+The following example creates a new <xref:Microsoft.SqlServer.Server.SqlMetaData> object by specifying the column name and a column data type of <xref:System.Data.SqlDbType>.`Int`.  
+ 
+[!code-csharp[DataWorks SqlMetaData Samples#3](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlMetaData Samples/CS/source.cs#3)]
+[!code-vb[DataWorks SqlMetaData Samples#3](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlMetaData Samples/VB/source.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="Name" /> is <see langword="null" />.</exception>
@@ -130,16 +130,16 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, and maximum length.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only the following are allowed to be passed to the constructor as `dbType`: `Binary`, `Char`, `Image`, `NChar`, `Ntext`, `NVarChar`, `Text`, `VarBinary`, `VarChar`.  
-  
- Only a `maxLength` specification of <xref:Microsoft.SqlServer.Server.SqlMetaData.Max%2A>, or -1 is allowed for a `dbType` of `Text`, `NText`, or `Image`.  
-  
- For a `dbType` of `Varchar`, `Nvarchar`, or `VarBinary`, a length specification of <xref:Microsoft.SqlServer.Server.SqlMetaData.Max%2A>, or -1, declares the metadata as varchar(max), nvarchar(max), or nvarbinary(max), respectively.  
-  
- The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
-  
+Only the following are allowed to be passed to the constructor as `dbType`: `Binary`, `Char`, `Image`, `NChar`, `Ntext`, `NVarChar`, `Text`, `VarBinary`, `VarChar`.  
+ 
+Only a `maxLength` specification of <xref:Microsoft.SqlServer.Server.SqlMetaData.Max%2A>, or -1 is allowed for a `dbType` of `Text`, `NText`, or `Image`.  
+ 
+For a `dbType` of `Varchar`, `Nvarchar`, or `VarBinary`, a length specification of <xref:Microsoft.SqlServer.Server.SqlMetaData.Max%2A>, or -1, declares the metadata as varchar(max), nvarchar(max), or nvarbinary(max), respectively.  
+ 
+The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
+ 
 |SqlDbType|Precision|Scale|Locale|Compare options|  
 |---------------|---------------|-----------|------------|---------------------|  
 |Binary|0|0|0|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
@@ -151,15 +151,15 @@
 |Text|0|0|\<thread>|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
 |VarBinary|0|0||IgnoreCase, IgnoreKanaType, IgnoreWidth|  
 |VarChar|0|0|\<thread>|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a new <xref:Microsoft.SqlServer.Server.SqlMetaData> object by specifying the column name, a column data type of <xref:System.Data.SqlDbType>`.NVarChar`, and a maximum length of 12 characters.  
-  
- [!code-csharp[DataWorks SqlMetaData Samples#2](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlMetaData Samples/CS/source.cs#2)]
- [!code-vb[DataWorks SqlMetaData Samples#2](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlMetaData Samples/VB/source.vb#2)]  
-  
+The following example creates a new <xref:Microsoft.SqlServer.Server.SqlMetaData> object by specifying the column name, a column data type of <xref:System.Data.SqlDbType>`.NVarChar`, and a maximum length of 12 characters.  
+ 
+[!code-csharp[DataWorks SqlMetaData Samples#2](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlMetaData Samples/CS/source.cs#2)]
+[!code-vb[DataWorks SqlMetaData Samples#2](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlMetaData Samples/VB/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="Name" /> is <see langword="null" />.</exception>
@@ -188,16 +188,16 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, and user-defined type (UDT).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only the following `SqlDbType` is allowed to be passed to the constructor as `dbType`: `UDT`.  
-  
- The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
-  
+Only the following `SqlDbType` is allowed to be passed to the constructor as `dbType`: `UDT`.  
+ 
+The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
+ 
 |SqlDbType|Maximum length|Precision|Scale|Locale|Compare options|  
 |---------------|--------------------|---------------|-----------|------------|---------------------|  
 |UDT|\<Max length of the type> or -1|0|0|0|None|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="Name" /> is <see langword="null" />.</exception>
@@ -236,16 +236,16 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, precision, and scale.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only the following `SqlDbType` is allowed to be passed to the constructor as `dbType`: `Decimal`.  
-  
- The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
-  
+Only the following `SqlDbType` is allowed to be passed to the constructor as `dbType`: `Decimal`.  
+ 
+The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
+ 
 |SqlDbType|Maximum length|Precision|Scale|Locale|Compare options|  
 |---------------|--------------------|---------------|-----------|------------|---------------------|  
 |Decimal|9|18|0|0|None|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="Name" /> is <see langword="null" />.</exception>
@@ -310,16 +310,16 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, maximum length, locale, and compare options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only the following are allowed to be passed to the constructor as `dbType`: `Char`, `NChar`, `Ntext`, `NVarChar`, `Text`, `VarChar`.  
-  
- Only a `maxLength` specification of <xref:Microsoft.SqlServer.Server.SqlMetaData.Max%2A>, or -1, is allowed for a `dbType` of `Text` or `NText`.  
-  
- For a `dbType` of `Varchar` or `Nvarchar`, a length specification of <xref:Microsoft.SqlServer.Server.SqlMetaData.Max%2A>, or -1, declares the metadata as varchar(max) and nvarchar(max), respectively.  
-  
- The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
-  
+Only the following are allowed to be passed to the constructor as `dbType`: `Char`, `NChar`, `Ntext`, `NVarChar`, `Text`, `VarChar`.  
+ 
+Only a `maxLength` specification of <xref:Microsoft.SqlServer.Server.SqlMetaData.Max%2A>, or -1, is allowed for a `dbType` of `Text` or `NText`.  
+ 
+For a `dbType` of `Varchar` or `Nvarchar`, a length specification of <xref:Microsoft.SqlServer.Server.SqlMetaData.Max%2A>, or -1, declares the metadata as varchar(max) and nvarchar(max), respectively.  
+ 
+The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
+ 
 |SqlDbType|Precision|Scale|  
 |---------------|---------------|-----------|  
 |`Char`|0|0|  
@@ -328,7 +328,7 @@
 |`NVarChar`|0|0|  
 |`Text`|0|0|  
 |`VarChar`|0|0|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="Name" /> is <see langword="null" />.</exception>
@@ -369,16 +369,16 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, database name, owning schema, and object name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only the following `SqlDbType` is allowed to be passed to the constructor as `dbType`: `Xml`.  
-  
- The following are the default values assigned to `dbType`, depending on the `SqlDbType`:  
-  
+Only the following `SqlDbType` is allowed to be passed to the constructor as `dbType`: `Xml`.  
+ 
+The following are the default values assigned to `dbType`, depending on the `SqlDbType`:  
+ 
 |SqlDbType|Maximum length|Precision|Scale|Locale|Compare options|  
 |---------------|--------------------|---------------|-----------|------------|---------------------|  
 |`Xml`|Max (-1)|0|0|0|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="Name" /> is <see langword="null" />, or <paramref name="objectName" /> is <see langword="null" /> when <paramref name="database" /> and <paramref name="owningSchema" /> are non-<see langword="null" />.</exception>
@@ -421,10 +421,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, and default server. This form of the constructor supports table-valued parameters by allowing you to specify if the column is unique in the table-valued parameter, the sort order for the column, and the ordinal of the sort column.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
-  
+For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -467,10 +467,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, maximum length, and server default. This form of the constructor supports table-valued parameters by allowing you to specify if the column is unique in the table-valued parameter, the sort order for the column, and the ordinal of the sort column.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
-  
+For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -515,10 +515,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, precision, scale, and server default. This form of the constructor supports table-valued parameters by allowing you to specify if the column is unique in the table-valued parameter, the sort order for the column, and the ordinal of the sort column.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
-  
+For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -563,12 +563,12 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, maximum length, precision, scale, locale ID, compare options, and user-defined type (UDT).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only the following are allowed to be passed to the constructor as `dbType`: `BigInt`, `Bit`, `BitInt`, `DateTime`, `Decimal`, `Float`, `Image`, `Int`, `Money`, `Ntext`, `Numeric`, `Real`, `SmallDateTime`, `SmallInt`, `SmallMoney`, `Text`, `TimeStamp`, `TinyInt`, `UniqueIdentifier`, `Variant`, `Xml`.  
-  
- The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
-  
+Only the following are allowed to be passed to the constructor as `dbType`: `BigInt`, `Bit`, `BitInt`, `DateTime`, `Decimal`, `Float`, `Image`, `Int`, `Money`, `Ntext`, `Numeric`, `Real`, `SmallDateTime`, `SmallInt`, `SmallMoney`, `Text`, `TimeStamp`, `TinyInt`, `UniqueIdentifier`, `Variant`, `Xml`.  
+ 
+The following are the default values assigned to `dbType`, depending on the `SqlDbType` (the <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A>, <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A>, and <xref:Microsoft.SqlServer.Server.SqlMetaData.Type%2A> properties are set to `null`):  
+ 
 |SqlDbType|Maximum length|Precision|Scale|Locale|Compare options|  
 |---------------|--------------------|---------------|-----------|------------|---------------------|  
 |`BigInt`|8|19|0|0|None|  
@@ -592,7 +592,7 @@
 |`UDT`|\<Max length of the type> or -1|0|0|0|None|  
 |`Variant`|8016|0|0|0|None|  
 |`Xml`|Max (-1)|0|0|0|IgnoreCase, IgnoreKanaType, IgnoreWidth|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="Name" /> is <see langword="null" />.</exception>
@@ -630,10 +630,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, user-defined type, SQL Server type, and server default. This form of the constructor supports table-valued parameters by allowing you to specify if the column is unique in the table-valued parameter, the sort order for the column, and the ordinal of the sort column.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
-  
+For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -680,10 +680,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, maximum length, locale, compare options, and server default. This form of the constructor supports table-valued parameters by allowing you to specify if the column is unique in the table-valued parameter, the sort order for the column, and the ordinal of the sort column.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
-  
+For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -730,10 +730,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, database name, owning schema, object name, and default server. This form of the constructor supports table-valued parameters by allowing you to specify if the column is unique in the table-valued parameter, the sort order for the column, and the ordinal of the sort column.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
-  
+For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -786,10 +786,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Server.SqlMetaData" /> class with the specified column name, type, maximum length, precision, scale, locale ID, compare options, and user-defined type (UDT). This form of the constructor supports table-valued parameters by allowing you to specify if the column is unique in the table-valued parameter, the sort order for the column, and the ordinal of the sort column.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
-  
+For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1928,10 +1928,10 @@
         <value>The data type of the column or parameter as a <see cref="T:System.Data.DbType" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default type is <xref:System.Data.DbType>.`String`.  
-  
+The default type is <xref:System.Data.DbType>.`String`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1996,14 +1996,14 @@
         <value>A <see langword="Boolean" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default is `FALSE`.  
-  
- This property can only be set in one of the <xref:Microsoft.SqlServer.Server.SqlMetaData> constructors.  
-  
- For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
-  
+The default is `FALSE`.  
+ 
+This property can only be set in one of the <xref:Microsoft.SqlServer.Server.SqlMetaData> constructors.  
+ 
+For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2034,12 +2034,12 @@
         <value>The locale ID of the column or parameter as a <see cref="T:System.Int64" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is the current locale of the current thread for string-valued SqlDbTypes, and 0 for SqlDbTypes that do not support collation.  
-  
- Returns 0 if the collation of the underlying column type is not defined.  
-  
+The default value is the current locale of the current thread for string-valued SqlDbTypes, and 0 for SqlDbTypes that do not support collation.  
+ 
+Returns 0 if the collation of the underlying column type is not defined.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2070,10 +2070,10 @@
         <value>The length of <see langword="text" />, <see langword="ntext" />, and <see langword="image" /> data types.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is -1.  
-  
+The default value is -1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2104,14 +2104,14 @@
         <value>The maximum length of the column or parameter as a <see cref="T:System.Int64" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The potential maximum length for values of the specified column. Returns 0 for types other than fixed and varying length character and binary types. For variable size columns or parameters declared with the `Max` constructor parameter, it returns -1.  
-  
- For <xref:System.Data.DbType>.`Row` this returns the number of columns in the row metadata instance.  
-  
- The default value is 0.  
-  
+The potential maximum length for values of the specified column. Returns 0 for types other than fixed and varying length character and binary types. For variable size columns or parameters declared with the `Max` constructor parameter, it returns -1.  
+ 
+For <xref:System.Data.DbType>.`Row` this returns the number of columns in the row metadata instance.  
+ 
+The default value is 0.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2170,10 +2170,10 @@
         <value>The precision of the column or parameter as a <see cref="T:System.Byte" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns 0 if the precision of the underlying column type is not defined.  
-  
+Returns 0 if the precision of the underlying column type is not defined.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2204,10 +2204,10 @@
         <value>The scale of the column or parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns 0 if the scale of the underlying column type is not defined.  
-  
+Returns 0 if the scale of the underlying column type is not defined.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2238,12 +2238,12 @@
         <value>A <see cref="T:System.Data.SqlClient.SortOrder" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can only be set in one of the <xref:Microsoft.SqlServer.Server.SqlMetaData> constructors.  
-  
- For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
-  
+This property can only be set in one of the <xref:Microsoft.SqlServer.Server.SqlMetaData> constructors.  
+ 
+For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2274,14 +2274,14 @@
         <value>The ordinal of the sort column.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default is 1.  
-  
- This property can only be set in one of the <xref:Microsoft.SqlServer.Server.SqlMetaData> constructors.  
-  
- For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
-  
+The default is 1.  
+ 
+This property can only be set in one of the <xref:Microsoft.SqlServer.Server.SqlMetaData> constructors.  
+ 
+For more information, see [Table-Valued Parameters](~/docs/framework/data/adonet/sql/table-valued-parameters.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2312,10 +2312,10 @@
         <value>The data type of the column or parameter as a <see cref="T:System.Data.DbType" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `NVarChar`.  
-  
+The default value is `NVarChar`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2337,12 +2337,12 @@
         <value>The CLR type name of a user-defined type as a <see cref="T:System.Type" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `null`.  
-  
- Returns `null` if <xref:Microsoft.SqlServer.Server.SqlMetaData.SqlDbType%2A> is not a UDT type. `Null` may also returned for valid UDT result sets where the assembly is not available to the application.  
-  
+The default value is `null`.  
+ 
+Returns `null` if <xref:Microsoft.SqlServer.Server.SqlMetaData.SqlDbType%2A> is not a UDT type. `Null` may also returned for valid UDT result sets where the assembly is not available to the application.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2373,10 +2373,10 @@
         <value>The name of the UDT or SQL Server type as a <see cref="T:System.String" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `null`.  
-  
+The default value is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2407,12 +2407,12 @@
         <value>A <see langword="Boolean" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default is `FALSE`.  
-  
- This property can only be set in one of the <xref:Microsoft.SqlServer.Server.SqlMetaData> constructors.  
-  
+The default is `FALSE`.  
+ 
+This property can only be set in one of the <xref:Microsoft.SqlServer.Server.SqlMetaData> constructors.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2443,12 +2443,12 @@
         <value>The name of the database where the schema collection for this XML instance is located as a <see cref="T:System.String" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `null`.  
-  
- This property may be `null` if the collection is defined within the current database. It is also `null` if there is no schema collection, in which case <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A> and <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A> are also null.  
-  
+The default value is `null`.  
+ 
+This property may be `null` if the collection is defined within the current database. It is also `null` if there is no schema collection, in which case <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A> and <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A> are also null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2479,12 +2479,12 @@
         <value>The name of the schema collection for this XML instance as a <see cref="T:System.String" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `null`.  
-  
- This value is `null` if there is no associated schema collection. If the value is `null`, then <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A> and <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A> are also `null`.  
-  
+The default value is `null`.  
+ 
+This value is `null` if there is no associated schema collection. If the value is `null`, then <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A> and <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionOwningSchema%2A> are also `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2515,12 +2515,12 @@
         <value>The owning relational schema where the schema collection for this XML instance is located as a <see cref="T:System.String" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `null`.  
-  
- This value may be `null` if the collection is defined within the current database and default schema. It is also null if there is no schema collection, in which case <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A> and <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A> are also `null`.  
-  
+The default value is `null`.  
+ 
+This value may be `null` if the collection is defined within the current database and default schema. It is also null if there is no schema collection, in which case <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionDatabase%2A> and <xref:Microsoft.SqlServer.Server.SqlMetaData.XmlSchemaCollectionName%2A> are also `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

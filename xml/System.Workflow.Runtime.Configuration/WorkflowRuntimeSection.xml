@@ -19,16 +19,16 @@
     <summary>Represents a section, within a configuration file, that defines settings for the workflow run-time engine.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection> contains settings specified by a <`section`> of type <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection> in a configuration file. The settings specified in a <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection> are used to initialize the workflow run-time engine. Your application can call the <xref:System.Workflow.Runtime.WorkflowRuntime.%23ctor%28System.String%29?displayProperty=fullName> constructor to initialize the workflow run-time engine from the appropriately named section of the configuration file.  
-  
- If your application does not use configuration files, but you still want to initialize the workflow run-time engine from a <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection> you can configure a <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection> in your application and call the <xref:System.Workflow.Runtime.WorkflowRuntime.%23ctor%28System.Workflow.Runtime.Configuration.WorkflowRuntimeSection%29?displayProperty=fullName> constructor. For example, your application might store configuration parameters in a database or it might operate in a trusted environment where configuration files are not used  
-  
+ 
+<xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection> contains settings specified by a <`section`> of type <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection> in a configuration file. The settings specified in a <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection> are used to initialize the workflow run-time engine. Your application can call the <xref:System.Workflow.Runtime.WorkflowRuntime.%23ctor%28System.String%29?displayProperty=fullName> constructor to initialize the workflow run-time engine from the appropriately named section of the configuration file.  
+ 
+If your application does not use configuration files, but you still want to initialize the workflow run-time engine from a <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection> you can configure a <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection> in your application and call the <xref:System.Workflow.Runtime.WorkflowRuntime.%23ctor%28System.Workflow.Runtime.Configuration.WorkflowRuntimeSection%29?displayProperty=fullName> constructor. For example, your application might store configuration parameters in a database or it might operate in a trusted environment where configuration files are not used  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <value>The common parameters used by services. The default is a null reference (<see langword="Nothing" /> in Visual Basic).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.CommonParameters%2A> can contain, for example, a database connection string that might be shared by durable services.  
-  
+<xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeSection.CommonParameters%2A> can contain, for example, a database connection string that might be shared by durable services.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,10 +101,10 @@
           <see langword="true" /> if performance counters are enabled; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Performance counters provide information on various workflow-related statistics, but they cause a performance penalty when the workflow run-time engine starts and when workflow instances are running. The default value is `true`.  
-  
+Performance counters provide information on various workflow-related statistics, but they cause a performance penalty when the workflow run-time engine starts and when workflow instances are running. The default value is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,10 +131,10 @@
         <value>The name of the workflow run-time engine.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used to set <xref:System.Workflow.Runtime.WorkflowRuntime.Name%2A?displayProperty=fullName>. The default is an empty string.  
-  
+This property is used to set <xref:System.Workflow.Runtime.WorkflowRuntime.Name%2A?displayProperty=fullName>. The default is an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
         <value>The services to be added to the workflow run-time engine.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The services specified in the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection> are initialized by the workflow run-time engine and added to its services when the appropriate <xref:System.Workflow.Runtime.WorkflowRuntime> constructor is called. Therefore the services specified in the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection> must follow certain rules about the signatures of their constructors. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]<xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>.  
-  
+The services specified in the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection> are initialized by the workflow run-time engine and added to its services when the appropriate <xref:System.Workflow.Runtime.WorkflowRuntime> constructor is called. Therefore the services specified in the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection> must follow certain rules about the signatures of their constructors. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]<xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,14 +192,14 @@
           <see langword="true" /> if validation occurs on creation; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to `true`, the workflow validation is executed every time <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> is called. If validation errors are found, a <xref:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException> is thrown.  
-  
- When this property is set to `false`, <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> creates a workflow instance and skips validation. In this case, the host application must guarantee that the workflow is properly configured or the runtime error occurs.  
-  
- The default value for this property is `true`.  
-  
+When this property is set to `true`, the workflow validation is executed every time <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> is called. If validation errors are found, a <xref:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException> is thrown.  
+ 
+When this property is set to `false`, <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> creates a workflow instance and skips validation. In this case, the host application must guarantee that the workflow is properly configured or the runtime error occurs.  
+ 
+The default value for this property is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

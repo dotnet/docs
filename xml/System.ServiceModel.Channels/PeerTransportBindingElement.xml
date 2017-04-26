@@ -26,10 +26,10 @@
     <summary>Defines the binding element used to create a peer message transport channel.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This transport cannot be used with contracts that have request/reply operations.  
-  
+This transport cannot be used with contracts that have request/reply operations.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,15 +76,15 @@
           <see cref="T:System.ServiceModel.Channels.IChannelFactory" /> that contains the new channel factory of the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to get a channel factory based on the configuration of the transport binding element.  
+This method can be used to get a channel factory based on the configuration of the transport binding element.  
+ 
   
-   
-  
+ 
 ## Examples  
- This method can be used to get a channel factory for sending messages based on the configuration of the transport binding element.  
-  
+This method can be used to get a channel factory for sending messages based on the configuration of the transport binding element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="context" /> parameter is set to <see langword="null" />.</exception>
@@ -125,10 +125,10 @@
           <see cref="T:System.ServiceModel.Channels.IChannelListener" /> that contains the new channel listener of the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to get a channel listener for receiving messages based on the configuration of the transport binding element.  
-  
+This method can be used to get a channel listener for receiving messages based on the configuration of the transport binding element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="context" /> parameter is set to <see langword="null" />.</exception>
@@ -217,10 +217,10 @@
           <see cref="T:System.ServiceModel.Channels.BindingElement" /> that contains a copy of the current binding element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The object returned by this method can be re-boxed as an object of the more specific <xref:System.ServiceModel.Channels.PeerTransportBindingElement> type.  
-  
+The object returned by this method can be re-boxed as an object of the more specific <xref:System.ServiceModel.Channels.PeerTransportBindingElement> type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,16 +255,16 @@
         <returns>The property from the specified <see cref="T:System.ServiceModel.Channels.BindingContext" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following properties can be retrieved from <xref:System.ServiceModel.Channels.PeerTransportBindingElement>:  
-  
+The following properties can be retrieved from <xref:System.ServiceModel.Channels.PeerTransportBindingElement>:  
+ 
 -   <xref:System.ServiceModel.Channels.IBindingMulticastCapabilities>  
-  
+ 
 -   <xref:System.ServiceModel.Channels.ISecurityCapabilities>  
-  
+ 
 -   <xref:System.ServiceModel.Channels.IBindingDeliveryCapabilities>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -305,10 +305,10 @@
         <value>The maximum size of messages sent over transport channels created by this binding element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default message size is 65,536 bytes.  
-  
+The default message size is 65,536 bytes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -330,10 +330,10 @@
         <value>The network port on which peer message transports created by this binding element listen.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a port is not specified, then a port number is chosen from the set of available dynamic ports.  
-  
+If a port is not specified, then a port number is chosen from the set of available dynamic ports.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -355,10 +355,10 @@
         <value>The scheme for the protocol over which messages are transported by channels created by this binding element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value for this property is "p2p".  
-  
+The default value for this property is "p2p".  
+ 
  ]]></format>
         </remarks>
       </Docs>

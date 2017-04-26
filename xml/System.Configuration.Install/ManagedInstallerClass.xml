@@ -89,10 +89,10 @@
         <returns>The return code for installutil.exe. A successful installation returns 0. Other values indicate failure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Configuration.Install.ManagedInstallerClass> instance is cast to an <xref:System.Configuration.Install.IManagedInstaller> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Configuration.Install.ManagedInstallerClass> instance is cast to an <xref:System.Configuration.Install.IManagedInstaller> interface.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

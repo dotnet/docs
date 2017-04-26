@@ -13,36 +13,36 @@
     <summary>Describes the capital letter style for a <see cref="T:System.Windows.Documents.Typography" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Capitals are a set of typographical forms that render text in capital-styled glyphs. Typically, when text is rendered as all capitals, the spacing between letters can appear too tight, and the weight and proportion of the letters too heavy. OpenType supports a number of styling formats for capitals, including small capitals, petite capitals, titling, and capital spacing. These styling formats allow you to control the appearance of capitals.  
-  
- The following text displays standard capital letters for the Pescadero font, followed by the letters styled as "SmallCaps" and "AllSmallCaps". In this case, the same font size is used for all three words.  
-  
- ![Text using OpenType capitals](~/add/media/opentypefont11.gif "Text using OpenType capitals")  
+Capitals are a set of typographical forms that render text in capital-styled glyphs. Typically, when text is rendered as all capitals, the spacing between letters can appear too tight, and the weight and proportion of the letters too heavy. OpenType supports a number of styling formats for capitals, including small capitals, petite capitals, titling, and capital spacing. These styling formats allow you to control the appearance of capitals.  
+ 
+The following text displays standard capital letters for the Pescadero font, followed by the letters styled as "SmallCaps" and "AllSmallCaps". In this case, the same font size is used for all three words.  
+ 
+![Text using OpenType capitals](~/add/media/opentypefont11.gif "Text using OpenType capitals")  
 Example of capitals  
-  
- Titling capitals are lighter in weight and proportion and designed to give a more elegant look than normal capitals. Titling capitals are typically used in larger font sizes as headings. The following text displays normal and titling capitals for the Pescadero font. Notice the narrower stem widths of the text on the second line.  
-  
- ![Text using OpenType titling capitals](~/add/media/opentypefont20.gif "Text using OpenType titling capitals")  
+ 
+Titling capitals are lighter in weight and proportion and designed to give a more elegant look than normal capitals. Titling capitals are typically used in larger font sizes as headings. The following text displays normal and titling capitals for the Pescadero font. Notice the narrower stem widths of the text on the second line.  
+ 
+![Text using OpenType titling capitals](~/add/media/opentypefont20.gif "Text using OpenType titling capitals")  
 Example of normal and titling capitals  
-  
+ 
 > [!NOTE]
 >  Most OpenType fonts expose only a subset of the total OpenType features available.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to define capitals for the Pescadero font, using properties of the <xref:System.Windows.Documents.Typography> object. When the "SmallCaps" format is used, any leading capital letter is ignored.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#9](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#9)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#9](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#9)]  -->  
-  
- The following code example shows how to define titling capitals for the Pescadero font, using properties of the <xref:System.Windows.Documents.Typography> object.  
-  
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet17](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#opentypefontsnippet17)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet17](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#opentypefontsnippet17)]  -->  
-  
+The following code example shows how to define capitals for the Pescadero font, using properties of the <xref:System.Windows.Documents.Typography> object. When the "SmallCaps" format is used, any leading capital letter is ignored.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#9](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#9)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#9](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#9)]  -->  
+ 
+The following code example shows how to define titling capitals for the Pescadero font, using properties of the <xref:System.Windows.Documents.Typography> object.  
+ 
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet17](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#opentypefontsnippet17)]  -->
+<!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet17](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#opentypefontsnippet17)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>

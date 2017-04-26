@@ -14,22 +14,22 @@
     <summary>Specifies a rotation transformation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Rotations in [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] usually consist of two arguments: a point around which to rotate an object or set of objects, and a value in degrees or radians that determines the amount of rotation. In [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)], it is necessary to specify a <xref:System.Windows.Media.Media3D.Vector3D> rather than a point around which to rotate.  
+Rotations in [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] usually consist of two arguments: a point around which to rotate an object or set of objects, and a value in degrees or radians that determines the amount of rotation. In [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)], it is necessary to specify a <xref:System.Windows.Media.Media3D.Vector3D> rather than a point around which to rotate.  
+ 
+Rotations in [!INCLUDE[TLA2#tla_3d](~/includes/tla2sharptla-3d-md.md)] become more complicated when they are animated.  To animate a [!INCLUDE[TLA2#tla_3d](~/includes/tla2sharptla-3d-md.md)] rotation using <xref:System.Windows.Media.Media3D.RotateTransform3D>, you can animate the <xref:System.Windows.Media.Media3D.AxisAngleRotation3D.Angle%2A> or <xref:System.Windows.Media.Media3D.AxisAngleRotation3D.Axis%2A> properties of an <xref:System.Windows.Media.Media3D.AxisAngleRotation3D>, or specify a <xref:System.Windows.Media.Media3D.QuaternionRotation3D> for the transform..  
+ 
+Axis/angle rotations in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_3d](~/includes/tla2sharptla-3d-md.md)] are specified in degrees, not radians.  
+ 
   
- Rotations in [!INCLUDE[TLA2#tla_3d](~/includes/tla2sharptla-3d-md.md)] become more complicated when they are animated.  To animate a [!INCLUDE[TLA2#tla_3d](~/includes/tla2sharptla-3d-md.md)] rotation using <xref:System.Windows.Media.Media3D.RotateTransform3D>, you can animate the <xref:System.Windows.Media.Media3D.AxisAngleRotation3D.Angle%2A> or <xref:System.Windows.Media.Media3D.AxisAngleRotation3D.Axis%2A> properties of an <xref:System.Windows.Media.Media3D.AxisAngleRotation3D>, or specify a <xref:System.Windows.Media.Media3D.QuaternionRotation3D> for the transform..  
-  
- Axis/angle rotations in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_3d](~/includes/tla2sharptla-3d-md.md)] are specified in degrees, not radians.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[3doverview#3DOverview3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/3DOverview/CSharp/Window1.xaml.cs#3doverview3dn1)]
- [!code-vb[3doverview#3DOverview3DN1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DOverview/visualbasic/window1.xaml.vb#3doverview3dn1)]  
-  
- [!code-xml[animate3drotation#Animate3DRotation3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn1)]  
-  
+[!code-csharp[3doverview#3DOverview3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/3DOverview/CSharp/Window1.xaml.cs#3doverview3dn1)]
+[!code-vb[3doverview#3DOverview3DN1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DOverview/visualbasic/window1.xaml.vb#3doverview3dn1)]  
+ 
+[!code-xml[animate3drotation#Animate3DRotation3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,11 +66,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.RotateTransform3D" /> class with the specified rotation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[animate3drotationcode#Animate3DRotationCode3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotationCode/CSharp/Window1.xaml.cs#animate3drotationcode3dn1)]
- [!code-vb[animate3drotationcode#Animate3DRotationCode3DN1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Animate3DRotationCode/visualbasic/window1.xaml.vb#animate3drotationcode3dn1)]  
-  
+[!code-csharp[animate3drotationcode#Animate3DRotationCode3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotationCode/CSharp/Window1.xaml.cs#animate3drotationcode3dn1)]
+[!code-vb[animate3drotationcode#Animate3DRotationCode3DN1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Animate3DRotationCode/visualbasic/window1.xaml.vb#animate3drotationcode3dn1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,25 +136,25 @@
         <value>Double that represents the X coordinate of the <see cref="T:System.Windows.Media.Media3D.Point3D" /> about which to rotate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CenterX"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.RotateTransform3D.CenterXProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code uses this property to change the point around which a RotateTransform3D transforms the model.  
-  
- [!code-csharp[hittest3d#HitTest3D3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn13)]
- [!code-vb[hittest3d#HitTest3D3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn13)]  
-  
+The following code uses this property to change the point around which a RotateTransform3D transforms the model.  
+ 
+[!code-csharp[hittest3d#HitTest3D3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn13)]
+[!code-vb[hittest3d#HitTest3D3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,25 +193,25 @@
         <value>Double that represents the Y coordinate of the <see cref="T:System.Windows.Media.Media3D.Point3D" /> about which to rotate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CenterY"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.RotateTransform3D.CenterYProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code uses this property to change the point around which a RotateTransform3D transforms the model.  
-  
- [!code-csharp[hittest3d#HitTest3D3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn13)]
- [!code-vb[hittest3d#HitTest3D3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn13)]  
-  
+The following code uses this property to change the point around which a RotateTransform3D transforms the model.  
+ 
+[!code-csharp[hittest3d#HitTest3D3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn13)]
+[!code-vb[hittest3d#HitTest3D3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,13 +250,13 @@
         <value>Double that represents the Z coordinate of the <see cref="T:System.Windows.Media.Media3D.Point3D" /> about which to rotate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code uses this property to change the point around which a RotateTransform3D transforms the model.  
-  
- [!code-csharp[hittest3d#HitTest3D3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn13)]
- [!code-vb[hittest3d#HitTest3D3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn13)]  
-  
+The following code uses this property to change the point around which a RotateTransform3D transforms the model.  
+ 
+[!code-csharp[hittest3d#HitTest3D3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn13)]
+[!code-vb[hittest3d#HitTest3D3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,12 +296,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -324,12 +324,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -370,22 +370,22 @@
         <value>Rotation3D that specifies an angle of rotation about an axis.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Rotation"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Media3D.RotateTransform3D.RotationProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-xml[hittest3d#HitTest3D3DN2](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml#hittest3d3dn2)]  
-  
+[!code-xml[hittest3d#HitTest3D3DN2](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml#hittest3d3dn2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

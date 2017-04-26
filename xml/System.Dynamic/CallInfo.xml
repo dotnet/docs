@@ -23,19 +23,19 @@
     <summary>Describes arguments in the dynamic binding process.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `ArgumentCount` - all inclusive number of arguments.  
+`ArgumentCount` - all inclusive number of arguments.  
+ 
+`ArgumentNames` - names for those arguments that are named.  
+ 
+Argument names match to the argument values in left to right order and last name corresponds to the last argument.  
+ 
   
- `ArgumentNames` - names for those arguments that are named.  
-  
- Argument names match to the argument values in left to right order and last name corresponds to the last argument.  
-  
-   
-  
+ 
 ## Examples  
- `SampleMethod(arg1, arg2, arg3, name1 = arg4, name2 = arg5, name3 = arg6)` will correspond to `ArgumentCount: 6 ArgumentNames: {"name1", "name2", "name3"}`.  
-  
+`SampleMethod(arg1, arg2, arg3, name1 = arg4, name2 = arg5, name3 = arg6)` will correspond to `ArgumentCount: 6 ArgumentNames: {"name1", "name2", "name3"}`.  
+ 
  ]]></format>
     </remarks>
   </Docs>

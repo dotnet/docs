@@ -14,17 +14,17 @@
     <summary>Allows a logger to force the build to stop in an explicit way.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception can be used by a logger to indicate to a host that it has received invalid parameters, or can no longer continue logging for some reason, and wants to stop in a controlled way.  
+This exception can be used by a logger to indicate to a host that it has received invalid parameters, or can no longer continue logging for some reason, and wants to stop in a controlled way.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to write a basic logger that responds to build events.  
-  
- [!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
-  
+The following example shows how to write a basic logger that responds to build events.  
+ 
+[!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,12 +61,12 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.LoggerException" /> class with the specified values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to write a basic logger that responds to build events.  
-  
- [!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
-  
+The following example shows how to write a basic logger that responds to build events.  
+ 
+[!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,12 +203,12 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.LoggerException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to write a basic logger that responds to build events.  
-  
- [!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
-  
+The following example shows how to write a basic logger that responds to build events.  
+ 
+[!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

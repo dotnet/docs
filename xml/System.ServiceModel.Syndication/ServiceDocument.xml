@@ -18,10 +18,10 @@
     <summary>Represents a service document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A service document is a document retrieved from a service that indicates the capabilities and locations of the available collections. A service document may contain one or more workspaces. Each workspace may contain one or more collections.  
-  
+A service document is a document retrieved from a service that indicates the capabilities and locations of the available collections. A service document may contain one or more workspaces. Each workspace may contain one or more collections.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -155,14 +155,14 @@
         <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtensionCollection" /> instance containing the element extensions.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace.  
-  
+Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace.  
+ 
 ```  
 <mg:MyElement xmlns:mg="http://myserver/elements" />  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

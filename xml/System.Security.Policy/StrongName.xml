@@ -24,14 +24,14 @@
     <summary>Provides the strong name of a code assembly as evidence for policy evaluation. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Policy.StrongName> class represents evidence of a unique, cryptographically strong name of a code assembly. The strong name consists of a public key, a given name, and a version. The public key corresponds to the publisher's private key which is kept secret, and with which the assembly must be signed in order for the strong name to be valid.  
-  
- Strong names are typically assigned to assemblies using either <xref:System.Reflection.AssemblyKeyFileAttribute>, <xref:System.Reflection.AssemblyKeyNameAttribute> or <xref:System.Reflection.AssemblyDelaySignAttribute> in conjunction with the SN utility (see [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md)).  
-  
- <xref:System.Security.Permissions.StrongNameIdentityPermission> uses this class to confirm that calling code is in a particular strong-named code assembly.  
-  
+The <xref:System.Security.Policy.StrongName> class represents evidence of a unique, cryptographically strong name of a code assembly. The strong name consists of a public key, a given name, and a version. The public key corresponds to the publisher's private key which is kept secret, and with which the assembly must be signed in order for the strong name to be valid.  
+ 
+Strong names are typically assigned to assemblies using either <xref:System.Reflection.AssemblyKeyFileAttribute>, <xref:System.Reflection.AssemblyKeyNameAttribute> or <xref:System.Reflection.AssemblyDelaySignAttribute> in conjunction with the SN utility (see [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md)).  
+ 
+<xref:System.Security.Permissions.StrongNameIdentityPermission> uses this class to confirm that calling code is in a particular strong-named code assembly.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,12 +58,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.StrongName" /> class with the strong name public key blob, name, and version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `name` parameter can be `null`, but it cannot be an empty string ("").  
-  
- For more information about strong names, see <xref:System.Security.Permissions.StrongNameIdentityPermission> and <xref:System.Security.Permissions.StrongNamePublicKeyBlob>.  
-  
+The `name` parameter can be `null`, but it cannot be an empty string ("").  
+ 
+For more information about strong names, see <xref:System.Security.Permissions.StrongNameIdentityPermission> and <xref:System.Security.Permissions.StrongNamePublicKeyBlob>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="blob" /> parameter is <see langword="null" />.  
@@ -139,10 +139,10 @@
         <returns>A <see cref="T:System.Security.Permissions.StrongNameIdentityPermission" /> for the specified <see cref="T:System.Security.Policy.StrongName" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identity permission for a strong name can be used to determine whether calling code is in a particular strong named code assembly.  
-  
+The identity permission for a strong name can be used to determine whether calling code is in a particular strong named code assembly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,12 +228,12 @@
         <value>The <see cref="T:System.Security.Permissions.StrongNamePublicKeyBlob" /> of the current <see cref="T:System.Security.Policy.StrongName" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A blob is cryptographic information that uniquely specifies the public key of the software publisher.  
-  
- Blobs differ from certificates in that the blob only has information about the public key; the certificate also includes information that associates the name of the holder with the key as well as information to verify the certificate.  
-  
+A blob is cryptographic information that uniquely specifies the public key of the software publisher.  
+ 
+Blobs differ from certificates in that the blob only has information about the public key; the certificate also includes information that associates the name of the holder with the key as well as information to verify the certificate.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -257,10 +257,10 @@
         <returns>A representation of the current <see cref="T:System.Security.Policy.StrongName" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is useful during debugging to get an easy-to-read representation of the object.  
-  
+This method is useful during debugging to get an easy-to-read representation of the object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

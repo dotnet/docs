@@ -24,20 +24,20 @@
     <summary>Specifies the value to pass to a property to cause the property to get its value from another source. This is known as *ambience*. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a property on a control has ambient behavior, this attribute must be present. Ambient properties query their parent for their value, for example, a <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property or a <xref:System.Windows.Forms.Control.BackColor%2A?displayProperty=fullName> property.  
+If a property on a control has ambient behavior, this attribute must be present. Ambient properties query their parent for their value, for example, a <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property or a <xref:System.Windows.Forms.Control.BackColor%2A?displayProperty=fullName> property.  
+ 
+Typically, a visual designer uses the <xref:System.ComponentModel.AmbientValueAttribute> attribute to decide which value to persist for a property. This is usually a value that causes the property to get its value from another source. An example of an ambient value is <xref:System.Drawing.Color.Empty?displayProperty=fullName> as the ambient value for the <xref:System.Windows.Forms.Control.BackColor%2A> property. If you have a control on a form and the <xref:System.Windows.Forms.Control.BackColor%2A> property of the control is set to a different color than the <xref:System.Windows.Forms.Control.BackColor%2A> property of the form, you can reset the <xref:System.Windows.Forms.Control.BackColor%2A> property of the control to that of the form by setting the <xref:System.Windows.Forms.Control.BackColor%2A> of the control to <xref:System.Drawing.Color.Empty?displayProperty=fullName>.  
+ 
   
- Typically, a visual designer uses the <xref:System.ComponentModel.AmbientValueAttribute> attribute to decide which value to persist for a property. This is usually a value that causes the property to get its value from another source. An example of an ambient value is <xref:System.Drawing.Color.Empty?displayProperty=fullName> as the ambient value for the <xref:System.Windows.Forms.Control.BackColor%2A> property. If you have a control on a form and the <xref:System.Windows.Forms.Control.BackColor%2A> property of the control is set to a different color than the <xref:System.Windows.Forms.Control.BackColor%2A> property of the form, you can reset the <xref:System.Windows.Forms.Control.BackColor%2A> property of the control to that of the form by setting the <xref:System.Windows.Forms.Control.BackColor%2A> of the control to <xref:System.Drawing.Color.Empty?displayProperty=fullName>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using <xref:System.ComponentModel.AmbientValueAttribute> to enforce ambient behavior for a property called `AlertForeColor`. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
-  
- [!code-csharp[System.ComponentModel.AttributesDemoControl#23](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#23)]
- [!code-vb[System.ComponentModel.AttributesDemoControl#23](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#23)]  
-  
+The following code example demonstrates using <xref:System.ComponentModel.AmbientValueAttribute> to enforce ambient behavior for a property called `AlertForeColor`. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
+ 
+[!code-csharp[System.ComponentModel.AttributesDemoControl#23](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#23)]
+[!code-vb[System.ComponentModel.AttributesDemoControl#23](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#23)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -296,13 +296,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.AmbientValueAttribute" /> class, given the value and its type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates using <xref:System.ComponentModel.AmbientValueAttribute> to enforce ambient behavior for a property called `AlertForeColor`. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
-  
- [!code-csharp[System.ComponentModel.AttributesDemoControl#23](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#23)]
- [!code-vb[System.ComponentModel.AttributesDemoControl#23](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#23)]  
-  
+The following code example demonstrates using <xref:System.ComponentModel.AmbientValueAttribute> to enforce ambient behavior for a property called `AlertForeColor`. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
+ 
+[!code-csharp[System.ComponentModel.AttributesDemoControl#23](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#23)]
+[!code-vb[System.ComponentModel.AttributesDemoControl#23](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#23)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

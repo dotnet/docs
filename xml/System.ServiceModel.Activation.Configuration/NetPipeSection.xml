@@ -14,10 +14,10 @@
     <summary>Contains configuration elements for the NetPipeActivator sharing service. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Named Pipe Activation Service manages the lifetime of the named pipe connection, and handles activation requests that arrive over named pipes. This class contains properties that configure this service.  
-  
+The Named Pipe Activation Service manages the lifetime of the named pipe connection, and handles activation requests that arrive over named pipes. This class contains properties that configure this service.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -173,10 +173,10 @@
         <value>The default is 10 seconds.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property specifies the timeout for reading the framing data and performing connection dispatching from the underlying connections.  
-  
+This property specifies the timeout for reading the framing data and performing connection dispatching from the underlying connections.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -441,10 +441,10 @@
         <value>A string representing the processor architecture of the assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Valid values are `msil`, `x86`, `ia64`, `amd64`.  
-  
+Valid values are `msil`, `x86`, `ia64`, `amd64`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -513,10 +513,10 @@
         <value>A string indicating the type attribute of the assembly.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Valid values are `win32` or a blank string.  
-  
+Valid values are `win32` or a blank string.  
+ 
  ]]></format>
         </remarks>
       </Docs>

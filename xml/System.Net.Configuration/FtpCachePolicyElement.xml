@@ -14,14 +14,14 @@
     <summary>Represents the default FTP cache policy for network resources. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class corresponds to the [\&lt;defaultFtpCachePolicy\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/defaultftpcachepolicy-element-network-settings.md) configuration element.  
-  
- This class is used to specify the FTP caching configuration that applies to network resources that are obtained by using the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
-  
- This class provides programmatic access to information that can be stored in configuration files.  
-  
+This class corresponds to the [\&lt;defaultFtpCachePolicy\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/defaultftpcachepolicy-element-network-settings.md) configuration element.  
+ 
+This class is used to specify the FTP caching configuration that applies to network resources that are obtained by using the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
+ 
+This class provides programmatic access to information that can be stored in configuration files.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -91,10 +91,10 @@
         <value>A <see cref="T:System.Net.Cache.RequestCacheLevel" /> value that specifies the cache behavior.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applications typically use <xref:System.Net.Cache.RequestCacheLevel> as their cache policy level. The <xref:System.Net.WebRequest.CachePolicy%2A> property, if not `null`, determines the cache policy in effect for a request.  
-  
+Applications typically use <xref:System.Net.Cache.RequestCacheLevel> as their cache policy level. The <xref:System.Net.WebRequest.CachePolicy%2A> property, if not `null`, determines the cache policy in effect for a request.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -11,10 +11,10 @@
     <summary>Provides an interface for design-time access to a schema provider in a design host.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.IDataBindingSchemaProvider> class is implemented by design hosts, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], that host the data-binding dialog box to show schema.  
-  
+The <xref:System.Web.UI.Design.IDataBindingSchemaProvider> class is implemented by design hosts, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], that host the data-binding dialog box to show schema.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <summary>Refreshes the schema for the data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.IDataBindingSchemaProvider.RefreshSchema%2A> method is called by the design host only if the <xref:System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema%2A> property is `true`.  
-  
+The <xref:System.Web.UI.Design.IDataBindingSchemaProvider.RefreshSchema%2A> method is called by the design host only if the <xref:System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

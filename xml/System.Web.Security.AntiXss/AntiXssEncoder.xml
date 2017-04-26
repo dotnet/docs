@@ -14,20 +14,20 @@
     <summary>Encodes a string for use in HTML, XML, CSS, and URL strings.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Web.Security.AntiXss.AntiXssEncoder> class to override the <xref:System.Web.Util.HttpEncoder> class that is used by default to encode and decode strings in methods of classes such as <xref:System.Web.HttpUtility>, <xref:System.Web.HttpServerUtility>, and <xref:System.Net.HttpResponseHeader>.  
-  
- In the <xref:System.Web.Security.AntiXss.AntiXssEncoder> class, all characters that are not found in the safe list are encoded by the <xref:System.Web.Security.AntiXss.AntiXssEncoder.HtmlAttributeEncode%2A> and <xref:System.Web.Security.AntiXss.AntiXssEncoder.HtmlEncode%2A> methods.  
-  
- To replace the <xref:System.Web.Util.HttpEncoder> class with the <xref:System.Web.Security.AntiXss.AntiXssEncoder> class, register it using the `encoderType` attribute of the httpRuntime element in the Web.config file, as shown in following example:  
-  
+You can use the <xref:System.Web.Security.AntiXss.AntiXssEncoder> class to override the <xref:System.Web.Util.HttpEncoder> class that is used by default to encode and decode strings in methods of classes such as <xref:System.Web.HttpUtility>, <xref:System.Web.HttpServerUtility>, and <xref:System.Net.HttpResponseHeader>.  
+ 
+In the <xref:System.Web.Security.AntiXss.AntiXssEncoder> class, all characters that are not found in the safe list are encoded by the <xref:System.Web.Security.AntiXss.AntiXssEncoder.HtmlAttributeEncode%2A> and <xref:System.Web.Security.AntiXss.AntiXssEncoder.HtmlEncode%2A> methods.  
+ 
+To replace the <xref:System.Web.Util.HttpEncoder> class with the <xref:System.Web.Security.AntiXss.AntiXssEncoder> class, register it using the `encoderType` attribute of the httpRuntime element in the Web.config file, as shown in following example:  
+ 
 ```  
 <httpRuntime encoderType="System.Web.Security.AntiXss.AntiXssEncoder" />  
 ```  
-  
- A list of default safe characters for different encoding methods can be found in the remarks for the <xref:System.Web.Security.AntiXss.AntiXssEncoder.HtmlAttributeEncode%2A>, <xref:System.Web.Security.AntiXss.AntiXssEncoder.HtmlEncode%2A>, <xref:System.Web.Security.AntiXss.AntiXssEncoder.XmlAttributeEncode%2A>, and <xref:System.Web.Security.AntiXss.AntiXssEncoder.XmlEncode%2A> methods. The default safe list can be modified by using the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
-  
+ 
+A list of default safe characters for different encoding methods can be found in the remarks for the <xref:System.Web.Security.AntiXss.AntiXssEncoder.HtmlAttributeEncode%2A>, <xref:System.Web.Security.AntiXss.AntiXssEncoder.HtmlEncode%2A>, <xref:System.Web.Security.AntiXss.AntiXssEncoder.XmlAttributeEncode%2A>, and <xref:System.Web.Security.AntiXss.AntiXssEncoder.XmlEncode%2A> methods. The default safe list can be modified by using the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,31 +68,31 @@
         <returns>The encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method encodes all characters except those that are in the safe list.  
-  
+This method encodes all characters except those that are in the safe list.  
+ 
 > [!NOTE]
 >  Put quotation marks (" ") around the resulting string before you add it to a cascading style sheet.  
-  
- The following table lists the default safe characters.  
-  
+ 
+The following table lists the default safe characters.  
+ 
 |Unicode code chart|Character(s)|Description|  
 |------------------------|--------------------|-----------------|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|a-z|Lowercase alphabetic characters|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|0-9|Numbers|  
-  
- The following table lists examples of inputs and the corresponding encoded outputs.  
-  
+ 
+The following table lists examples of inputs and the corresponding encoded outputs.  
+ 
 |||  
 |-|-|  
 |`alert('XSS Attack!');`|`alert\000028\000027XSS\000020Attack\000021\000027\000029\00003B`|  
 |`user@contoso.com`|`user\000040contoso\00002Ecom`|  
 |`Anti-Cross Site Scripting Namespace`|`Anti\00002DCross\000020Site\000020Scripting\000020Namespace`|  
-  
- The CSS character escape sequence consists of a backslash character (\\) followed by up to six hexadecimal digits that represent a character code from the ISO 10646 standard. (The ISO 10646 standard is effectively equivalent to Unicode.) Any character other than a hexadecimal digit terminates the escape sequence. If a character that follows the escape sequence is also a valid hexadecimal digit, it must either include six digits in the escape sequence or use a whitespace character to terminate the escape sequence. For example, `\000020` denotes a space.  
-  
+ 
+The CSS character escape sequence consists of a backslash character (\\) followed by up to six hexadecimal digits that represent a character code from the ISO 10646 standard. (The ISO 10646 standard is effectively equivalent to Unicode.) Any character other than a hexadecimal digit terminates the escape sequence. If a character that follows the escape sequence is also a valid hexadecimal digit, it must either include six digits in the escape sequence or use a whitespace character to terminate the escape sequence. For example, `\000020` denotes a space.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
@@ -127,15 +127,15 @@
         <summary>Encodes and outputs the specified string for use in an HTML attribute.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method encodes all characters except those that are in the safe list. Characters are encoded by using `&#DECIMAL;` notation.  
-  
+This method encodes all characters except those that are in the safe list. Characters are encoded by using `&#DECIMAL;` notation.  
+ 
 > [!NOTE]
 >  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
-  
- The following table lists the default safe characters.  
-  
+ 
+The following table lists the default safe characters.  
+ 
 |Unicode code chart|Character(s)|Description|  
 |------------------------|--------------------|-----------------|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase Latin alphabetic characters|  
@@ -172,9 +172,9 @@
 |[IPA Extensions](http://www.unicode.org/charts/PDF/U0250.pdf)|0x0250 - 0x02AF|IPA Extension characters between 0x0250 (592 decimal) and 0x02AF (687 decimal).|  
 |[Spacing Modifier Letters](http://www.unicode.org/charts/PDF/U02B0.pdf)|0x02B0 - 0x02FF|Spacing modifier letter characters between 0x02B0 (688 decimal) and 0x02FF (767 decimal).|  
 Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300 - 0x036F|Combining diacritical mark characters between 0x0300 (768 decimal) and 0x036F (879 decimal).|  
-  
- The following table lists examples of inputs and the corresponding encoded outputs.  
-  
+ 
+The following table lists examples of inputs and the corresponding encoded outputs.  
+ 
 |||  
 |-|-|  
 |`alert('XSS Attack!');`|`alert(&#39;XSS&#32;Attack!&#39;);`|  
@@ -182,9 +182,9 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
 |`alert('XSSあAttack!');`|`alert(&#39;XSS&#12354;Attack!&#39;);`|  
 |`user@contoso.com`|`user@contoso.com`|  
 |`"Anti-Cross Site Scripting Namespace"`|`&quot;Anti-Cross&#32;Site&#32;Scripting&#32;Namespace&quot;`|  
-  
- To customize the safe list, call the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
-  
+ 
+To customize the safe list, call the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
@@ -221,15 +221,15 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
         <returns>The encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method encodes all characters except those that are in the safe list. Characters are encoded by using `&#DECIMAL;` notation.  
-  
+This method encodes all characters except those that are in the safe list. Characters are encoded by using `&#DECIMAL;` notation.  
+ 
 > [!NOTE]
 >  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
-  
- The following table lists the default safe characters.  
-  
+ 
+The following table lists the default safe characters.  
+ 
 |Unicode code chart|Character(s)|Description|  
 |------------------------|--------------------|-----------------|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase Latin alphabetic characters|  
@@ -267,9 +267,9 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
 |[IPA Extensions](http://www.unicode.org/charts/PDF/U0250.pdf)|0x0250 - 0x02AF|IPA Extension characters between 0x0250 (592 decimal) and 0x02AF (687 decimal).|  
 |[Spacing Modifier Letters](http://www.unicode.org/charts/PDF/U02B0.pdf)|0x02B0 - 0x02FF|Spacing modifier letter characters between 0x02B0 (688 decimal) and 0x02FF (767 decimal).|  
 Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300 - 0x036F|Combining diacritical mark characters between 0x0300 (768 decimal) and 0x036F (879 decimal).|  
-  
- The following table lists examples of inputs and the corresponding encoded outputs.  
-  
+ 
+The following table lists examples of inputs and the corresponding encoded outputs.  
+ 
 |||  
 |-|-|  
 |`alert('XSS Attack!');`|`alert(&#39;XSS&#32;Attack!&#39;);`|  
@@ -277,9 +277,9 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
 |`alert('XSSあAttack!');`|`alert(&#39;XSS&#12354;Attack!&#39;);`|  
 |`user@contoso.com`|`user@contoso.com`|  
 |`"Anti-Cross Site Scripting Namespace"`|`&quot;Anti-Cross&#32;Site&#32;Scripting&#32;Namespace&quot;`|  
-  
- To customize the safe list, call the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
-  
+ 
+To customize the safe list, call the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
@@ -314,15 +314,15 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
         <summary>Encodes the specified string for use as text in HTML markup and outputs the string by using the specified text writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method encodes all characters except those that are in the safe list. Characters are encoded by using `&#DECIMAL;` notation.  
-  
+This method encodes all characters except those that are in the safe list. Characters are encoded by using `&#DECIMAL;` notation.  
+ 
 > [!NOTE]
 >  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
-  
- The following table lists the default safe characters.  
-  
+ 
+The following table lists the default safe characters.  
+ 
 |Unicode code chart|Character(s)|Description|  
 |------------------------|--------------------|-----------------|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase Latin alphabetic characters|  
@@ -360,9 +360,9 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
 |[IPA Extensions](http://www.unicode.org/charts/PDF/U0250.pdf)|0x0250 - 0x02AF|IPA Extension characters between 0x0250 (592 decimal) and 0x02AF (687 decimal).|  
 |[Spacing Modifier Letters](http://www.unicode.org/charts/PDF/U02B0.pdf)|0x02B0 - 0x02FF|Spacing modifier letter characters between 0x02B0 (688 decimal) and 0x02FF (767 decimal).|  
 Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300 - 0x036F|Combining diacritical mark characters between 0x0300 (768 decimal) and 0x036F (879 decimal).|  
-  
- The following table lists examples of inputs and the corresponding encoded outputs.  
-  
+ 
+The following table lists examples of inputs and the corresponding encoded outputs.  
+ 
 |||  
 |-|-|  
 |`alert('XSS Attack!');`|`alert(&#39;XSS&#32;Attack!&#39;);`|  
@@ -370,9 +370,9 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
 |`alert('XSSあAttack!');`|`alert(&#39;XSS&#12354;Attack!&#39;);`|  
 |`user@contoso.com`|`user@contoso.com`|  
 |`"Anti-Cross Site Scripting Namespace"`|`&quot;Anti-Cross&#32;Site&#32;Scripting&#32;Namespace&quot;`|  
-  
- To customize the safe list, call the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
-  
+ 
+To customize the safe list, call the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
@@ -406,13 +406,13 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
         <returns>The encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
-  
+This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+ 
 > [!NOTE]
 >  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
-  
+ 
 |Unicode code chart|Character(s)|Description|  
 |------------------------|--------------------|-----------------|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
@@ -422,9 +422,9 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
-  
- The following table lists examples of inputs and the corresponding encoded outputs.  
-  
+ 
+The following table lists examples of inputs and the corresponding encoded outputs.  
+ 
 |||  
 |-|-|  
 |`alert('XSS Attack!');`|`alert%28%27XSS+Attack%21%27%29%3b`|  
@@ -432,7 +432,7 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
 |`alert('XSSあAttack!');`|`alert%28%27XSS%e3%81%82Attack%21%27%29%3b`|  
 |`user@contoso.com`|`user@contoso.com`|  
 |`Anti-Cross Site Scripting Namespace`|`Anti-Cross+Site+Scripting+Namespace`|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -460,15 +460,15 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
         <returns>The encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
-  
+This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+ 
 > [!NOTE]
 >  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
-  
- The following table lists the default safe characters.  
-  
+ 
+The following table lists the default safe characters.  
+ 
 |Unicode code chart|Character(s)|Description|  
 |------------------------|--------------------|-----------------|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
@@ -478,9 +478,9 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
-  
- The following table lists examples of inputs and the corresponding encoded outputs.  
-  
+ 
+The following table lists examples of inputs and the corresponding encoded outputs.  
+ 
 |||  
 |-|-|  
 |`alert('XSS Attack!');`|`alert%28%27XSS+Attack%21%27%29%3b`|  
@@ -488,7 +488,7 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
 |`alert('XSSあAttack!');`|`alert%28%27XSS%e3%81%82Attack%21%27%29%3b`|  
 |`user@contoso.com`|`user%40contoso.com`|  
 |`Anti-Cross Site Scripting Namespace`|`Anti-Cross+Site+Scripting+Namespace`|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -516,15 +516,15 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
         <returns>The encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
-  
+This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+ 
 > [!NOTE]
 >  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
-  
- The following table lists the default safe characters.  
-  
+ 
+The following table lists the default safe characters.  
+ 
 |Unicode code chart|Character(s)|Description|  
 |------------------------|--------------------|-----------------|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
@@ -534,9 +534,9 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
-  
- The following table lists examples of inputs and the corresponding encoded outputs.  
-  
+ 
+The following table lists examples of inputs and the corresponding encoded outputs.  
+ 
 |||  
 |-|-|  
 |`alert('XSS Attack!');`|`alert%28%27XSS+Attack%21%27%29%3b`|  
@@ -544,7 +544,7 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
 |`alert('XSSあAttack!');`|`alert%28%27XSS%e3%81%82Attack%21%27%29%3b`|  
 |`user@contoso.com`|`user%40contoso.com`|  
 |`Anti-Cross Site Scripting Namespace`|`Anti-Cross+Site+Scripting+Namespace`|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -577,14 +577,14 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
         <summary>Marks characters from the specified Unicode code charts as safe.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The safe list affects all HTML XML, CSS, and URL encoding methods.  
-  
- With some exceptions, Unicode code charts do not directly correspond to written languages. To add support for a specific language or set of languages often requires marking multiple code charts as safe.  
-  
- To add support for the Japanese language while continuing to allow English, use the following syntax:  
-  
+The safe list affects all HTML XML, CSS, and URL encoding methods.  
+ 
+With some exceptions, Unicode code charts do not directly correspond to written languages. To add support for a specific language or set of languages often requires marking multiple code charts as safe.  
+ 
+To add support for the Japanese language while continuing to allow English, use the following syntax:  
+ 
 ```  
   
 MarkAsSafe(  
@@ -600,10 +600,10 @@ MarkAsSafe(
             UpperMidCodeCharts.CjkUnifiedIdeographs,  
             UpperCodeCharts.None);  
 ```  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method must be called in the `Application_Start` method in the Global.asax file.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe(System.Web.Security.AntiXss.LowerCodeCharts,System.Web.Security.AntiXss.LowerMidCodeCharts,System.Web.Security.AntiXss.MidCodeCharts,System.Web.Security.AntiXss.UpperMidCodeCharts,System.Web.Security.AntiXss.UpperCodeCharts)" /> method was called outside the <see langword="Application_Start" /> method in the Global.asax file.</exception>
@@ -630,12 +630,12 @@ MarkAsSafe(
         <returns>The encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
-  
- The following table lists the default safe characters.  
-  
+This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+ 
+The following table lists the default safe characters.  
+ 
 |Unicode code chart|Character(s)|Description|  
 |------------------------|--------------------|-----------------|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
@@ -645,9 +645,9 @@ MarkAsSafe(
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
-  
- The following table lists examples of inputs and the corresponding encoded outputs.  
-  
+ 
+The following table lists examples of inputs and the corresponding encoded outputs.  
+ 
 |||  
 |-|-|  
 |`alert('XSS Attack!');`|`alert%28%27XSS%20Attack%21%27%29%3b`|  
@@ -655,7 +655,7 @@ MarkAsSafe(
 |`alert('XSSあAttack!');`|`alert%28%27XSS%e3%81%82Attack%21%27%29%3b`|  
 |`user@contoso.com`|`user%40contoso.com`|  
 |`"Anti-Cross Site Scripting Namespace"`|`%22Anti-Cross%20Site%20Scripting%20Namespace%22`|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -683,12 +683,12 @@ MarkAsSafe(
         <returns>The encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
-  
- The following table lists the default safe characters.  
-  
+This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+ 
+The following table lists the default safe characters.  
+ 
 |Unicode code chart|Character(s)|Description|  
 |------------------------|--------------------|-----------------|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
@@ -698,9 +698,9 @@ MarkAsSafe(
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
-  
- The following table lists examples of inputs and the corresponding encoded outputs.  
-  
+ 
+The following table lists examples of inputs and the corresponding encoded outputs.  
+ 
 |||  
 |-|-|  
 |`alert('XSS Attack!');`|`alert%28%27XSS%20Attack%21%27%29%3b`|  
@@ -708,7 +708,7 @@ MarkAsSafe(
 |`alert('XSSあAttack!');`|`alert%28%27XSS%e3%81%82Attack%21%27%29%3b`|  
 |`user@contoso.com`|`user%40contoso.com`|  
 |`"Anti-Cross Site Scripting Namespace"`|`%22Anti-Cross%20Site%20Scripting%20Namespace%22`|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -736,12 +736,12 @@ MarkAsSafe(
         <returns>The encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
-  
- The following table lists the default safe characters.  
-  
+This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+ 
+The following table lists the default safe characters.  
+ 
 |Unicode code chart|Character(s)|Description|  
 |------------------------|--------------------|-----------------|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
@@ -751,9 +751,9 @@ MarkAsSafe(
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
-  
- The following table lists examples of inputs and the corresponding encoded outputs.  
-  
+ 
+The following table lists examples of inputs and the corresponding encoded outputs.  
+ 
 |||  
 |-|-|  
 |`alert('XSS Attack!');`|`alert%28%27XSS%20Attack%21%27%29%3b`|  
@@ -761,7 +761,7 @@ MarkAsSafe(
 |`alert('XSSあAttack!');`|`alert%28%27XSS%e3%81%82Attack%21%27%29%3b`|  
 |`user@contoso.com`|`user%40contoso.com`|  
 |`"Anti-Cross Site Scripting Namespace"`|`%22Anti-Cross%20Site%20Scripting%20Namespace%22`|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -791,12 +791,12 @@ MarkAsSafe(
         <returns>The encoded byte array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
-  
- The following table lists the default safe characters.  
-  
+This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+ 
+The following table lists the default safe characters.  
+ 
 |Unicode code chart|Character(s)|Description|  
 |------------------------|--------------------|-----------------|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
@@ -806,9 +806,9 @@ MarkAsSafe(
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
-  
- The following table lists examples of inputs and the corresponding encoded outputs.  
-  
+ 
+The following table lists examples of inputs and the corresponding encoded outputs.  
+ 
 |||  
 |-|-|  
 |`alert('XSS Attack!');`|`alert%28%27XSS%20Attack%21%27%29%3b`|  
@@ -816,7 +816,7 @@ MarkAsSafe(
 |`alert('XSSあAttack!');`|`alert%28%27XSS%e3%81%82Attack%21%27%29%3b`|  
 |`user@contoso.com`|`user%40contoso.com`|  
 |`"Anti-Cross Site Scripting Namespace"`|`%22Anti-Cross%20Site%20Scripting%20Namespace%22`|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -842,10 +842,10 @@ MarkAsSafe(
         <returns>The URL that contains the encoded path.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
-  
+This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+ 
 |Unicode code chart|Character(s)|Description|  
 |------------------------|--------------------|-----------------|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
@@ -862,9 +862,9 @@ MarkAsSafe(
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|{ }|Braces, curly brackets|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|&#124;|Vertical line|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
-  
- The following table lists examples of inputs and the corresponding encoded outputs.  
-  
+ 
+The following table lists examples of inputs and the corresponding encoded outputs.  
+ 
 |||  
 |-|-|  
 |`http://www.contoso.com:8080/<en-us>/[page].htm?v={value1}#x=[amount]`|`http://www.contoso.com:8080/%3cen-us%3e/%5bpage%5d.htm?v={value1}#x=[amount]`|  
@@ -873,11 +873,11 @@ MarkAsSafe(
 |`alert('XSSあAttack!');`|`alert(%27XSS%e3%81%82Attack%21%27)%3b`|  
 |`user@contoso.com`|`user%40contoso.com`|  
 |`"Anti-Cross Site Scripting Namespace"`|`%22Anti-Cross%20Site%20Scripting%20Namespace%22`|  
-  
- This method encodes only the path of a URL. This method will not encode the scheme (for example, `http:`, `ftp:`, or `file:`), the authority (for example, `www.northwind.com` or `www.contoso.com:8080`), or the query or fragment (for example, `?v=s978dfs9#x=103`). If there is no scheme or authority in the string, the string is assumed to be a relative path, and the path is encoded. In the following URL, only the substring `/default.htm` is encoded:  
-  
- `http://www.contoso.com:8080/default.htm?v=s978dfs9#x=103`  
-  
+ 
+This method encodes only the path of a URL. This method will not encode the scheme (for example, `http:`, `ftp:`, or `file:`), the authority (for example, `www.northwind.com` or `www.contoso.com:8080`), or the query or fragment (for example, `?v=s978dfs9#x=103`). If there is no scheme or authority in the string, the string is assumed to be a relative path, and the path is encoded. In the following URL, only the substring `/default.htm` is encoded:  
+ 
+`http://www.contoso.com:8080/default.htm?v=s978dfs9#x=103`  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -903,15 +903,15 @@ MarkAsSafe(
         <returns>The encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method encodes all characters except those that are in the safe list. Characters are encoded by using `&#DECIMAL;` notation.  
-  
+This method encodes all characters except those that are in the safe list. Characters are encoded by using `&#DECIMAL;` notation.  
+ 
 > [!NOTE]
 >  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
-  
- The following table lists the default safe characters.  
-  
+ 
+The following table lists the default safe characters.  
+ 
 |Unicode code chart|Character(s)|Description|  
 |------------------------|--------------------|-----------------|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase Latin alphabetic characters|  
@@ -948,9 +948,9 @@ MarkAsSafe(
 |[IPA Extensions](http://www.unicode.org/charts/PDF/U0250.pdf)|0x0250 - 0x02AF|IPA Extension characters between 0x0250 (592 decimal) and 0x02AF (687 decimal).|  
 |[Spacing Modifier Letters](http://www.unicode.org/charts/PDF/U02B0.pdf)|0x02B0 - 0x02FF|Spacing modifier letter characters between 0x02B0 (688 decimal) and 0x02FF (767 decimal).|  
 Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300 - 0x036F|Combining diacritical mark characters between 0x0300 (768 decimal) and 0x036F (879 decimal).|  
-  
- The following table lists examples of inputs and the corresponding encoded outputs.  
-  
+ 
+The following table lists examples of inputs and the corresponding encoded outputs.  
+ 
 |||  
 |-|-|  
 |`alert('XSS Attack!');`|`alert(&apos;XSS&#32;Attack!&apos;);`|  
@@ -958,9 +958,9 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
 |`alert('XSSあAttack!');`|`alert(&apos;XSS&#12354;Attack!&apos;);`|  
 |`user@contoso.com`|`user@contoso.com`|  
 |`"Anti-Cross Site Scripting Namespace"`|`&quot;Anti-Cross&#32;Site&#32;Scripting&#32;Namespace&quot;`|  
-  
- To customize the safe list, call the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
-  
+ 
+To customize the safe list, call the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
@@ -994,15 +994,15 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
         <returns>The encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method encodes all characters except those that are in the safe list. Characters are encoded by using `&#DECIMAL;` notation.  
-  
+This method encodes all characters except those that are in the safe list. Characters are encoded by using `&#DECIMAL;` notation.  
+ 
 > [!NOTE]
 >  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
-  
- The following table lists the default safe characters.  
-  
+ 
+The following table lists the default safe characters.  
+ 
 |Unicode code chart|Character(s)|Description|  
 |------------------------|--------------------|-----------------|  
 |[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase Latin alphabetic characters|  
@@ -1040,9 +1040,9 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
 |[IPA Extensions](http://www.unicode.org/charts/PDF/U0250.pdf)|0x0250 - 0x02AF|IPA Extension characters between 0x0250 (592 decimal) and 0x02AF (687 decimal).|  
 |[Spacing Modifier Letters](http://www.unicode.org/charts/PDF/U02B0.pdf)|0x02B0 - 0x02FF|Spacing modifier letter characters between 0x02B0 (688 decimal) and 0x02FF (767 decimal).|  
 Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300 - 0x036F|Combining diacritical mark characters between 0x0300 (768 decimal) and 0x036F (879 decimal).|  
-  
- The following table lists examples of inputs and the corresponding encoded outputs.  
-  
+ 
+The following table lists examples of inputs and the corresponding encoded outputs.  
+ 
 |||  
 |-|-|  
 |`alert('XSS Attack!');`|`alert(&#39;XSS&#32;Attack!&#39;);`|  
@@ -1050,9 +1050,9 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
 |`alert('XSSあAttack!');`|`alert(&apos;XSS&#12354;Attack!&apos;);`|  
 |`user@contoso.com`|`user@contoso.com`|  
 |`"Anti-Cross Site Scripting Namespace"`|`&quot;Anti-Cross&#32;Site&#32;Scripting&#32;Namespace&quot;`|  
-  
- To customize the safe list, call the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
-  
+ 
+To customize the safe list, call the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">

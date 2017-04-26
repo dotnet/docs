@@ -14,15 +14,15 @@
     <summary>Paints an area with a <see cref="T:System.Windows.Media.Drawing" />, which can include shapes, text, video, images, or other drawings.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following illustration shows shapes and text that were painted with a <xref:System.Windows.Media.DrawingBrush>.  
-  
- ![DrawingBrush output examples](~/add/media/wcpsdk-mmgraphics-drawingbrushexamples.png "DrawingBrush output examples")  
+The following illustration shows shapes and text that were painted with a <xref:System.Windows.Media.DrawingBrush>.  
+ 
+![DrawingBrush output examples](~/add/media/wcpsdk-mmgraphics-drawingbrushexamples.png "DrawingBrush output examples")  
 Shapes and text painted with a drawing brush  
-  
- For more information and examples, see [Painting with Images, Drawings, and Visuals](~/docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md).  
-  
+ 
+For more information and examples, see [Painting with Images, Drawings, and Visuals](~/docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,12 +78,12 @@ Shapes and text painted with a drawing brush
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,12 +106,12 @@ Shapes and text painted with a drawing brush
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,17 +152,17 @@ Shapes and text painted with a drawing brush
         <value>The <see cref="T:System.Windows.Media.Drawing" /> that describes the contents of this <see cref="T:System.Windows.Media.DrawingBrush" />. The default is null reference (<see langword="Nothing" /> in Visual Basic).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Drawing"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.DrawingBrush>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

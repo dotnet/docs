@@ -53,10 +53,10 @@
         <summary>Adds builders to the <see cref="T:System.Web.UI.ControlBuilder" /> object for any child controls that belong to the <see cref="T:System.Web.UI.WebControls.MultiView" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds builders to the <xref:System.Web.UI.ControlBuilder> object for any child controls that belong to the <xref:System.Web.UI.WebControls.MultiView> control. A <xref:System.Web.UI.WebControls.MultiView> control can contain only <xref:System.Web.UI.WebControls.View> controls as child controls.  
-  
+This method adds builders to the <xref:System.Web.UI.ControlBuilder> object for any child controls that belong to the <xref:System.Web.UI.WebControls.MultiView> control. A <xref:System.Web.UI.WebControls.MultiView> control can contain only <xref:System.Web.UI.WebControls.View> controls as child controls.  
+ 
  ]]></format>
         </remarks>
       </Docs>

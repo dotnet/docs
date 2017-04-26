@@ -64,10 +64,10 @@
         <value>The name of the file to be installed after the required components are installed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Gets or sets the file to be installed after the bootstrapper installs the required components. By default, the file path is relative to the bootstrapper source path. Set this property to null if no application is to be installed.  
-  
+Gets or sets the file to be installed after the bootstrapper installs the required components. By default, the file path is relative to the bootstrapper source path. Set this property to null if no application is to be installed.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -90,10 +90,10 @@
         <value>The name of the application to be installed after the required components are installed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Gets or sets the name of the application to be installed after the bootstrapper installs all required components. Set this property to null if no application is to be installed.  
-  
+Gets or sets the name of the application to be installed after the bootstrapper installs all required components. Set this property to null if no application is to be installed.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -117,12 +117,12 @@
           <see langword="true" /> if the installed component runs with elevated permissions; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be set in the project file, but it is not exposed in the MSBuild schema.  
-  
- A component runs with elevated permissions when it writes a registry key or is installed to the global assembly cache. For example, if you are installing assemblies to the global assembly cache, you have to set this property to `true`.  
-  
+This property can be set in the project file, but it is not exposed in the MSBuild schema.  
+ 
+A component runs with elevated permissions when it writes a registry key or is installed to the global assembly cache. For example, if you are installing assemblies to the global assembly cache, you have to set this property to `true`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -145,14 +145,14 @@
         <value>A URL that represents the expected source location when the bootstrapper is published to a Web site.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you specify <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings.ApplicationFile%2A>, the bootstraper will be published to the location specified by this value.  
-  
- If <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings.ComponentsLocation%2A> is set to <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation>, required component files will be published to a location relative to this value.  
-  
- Set this value to null if Setup.exe is not to be published to the Web.  
-  
+If you specify <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings.ApplicationFile%2A>, the bootstraper will be published to the location specified by this value.  
+ 
+If <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings.ComponentsLocation%2A> is set to <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation>, required component files will be published to a location relative to this value.  
+ 
+Set this value to null if Setup.exe is not to be published to the Web.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -214,10 +214,10 @@
           <see langword="true" /> if the bootstrapper components will be copied to the build output directory; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `true`, the bootstrapper components will be copied. If `false`, the files will not be copied.  
-  
+If `true`, the bootstrapper components will be copied. If `false`, the files will not be copied.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -336,10 +336,10 @@
           <see langword="true" /> if the bootstrapper performs XML validation on the component manifests; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `true`, the bootstrapper validates component manifests; if `false`, the bootstrapper does not validate component manifests.  
-  
+If `true`, the bootstrapper validates component manifests; if `false`, the bootstrapper does not validate component manifests.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

@@ -18,10 +18,10 @@
     <summary>Represents a workspace within a service document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A workspace is a named group of collections.  
-  
+A workspace is a named group of collections.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -114,10 +114,10 @@
         <value>Returns <see cref="T:System.Collections.Generic.Dictionary`2" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An attribute extension is a valid XML attribute that is not specified in either the Atom 1.0 or RSS 2.0 specifications. When serialized to Atom 1.0, each custom attribute in the collection is written to the <`atom`> element. When serialized to RSS 2.0, each custom attribute is written to the <`channel`> element.  
-  
+An attribute extension is a valid XML attribute that is not specified in either the Atom 1.0 or RSS 2.0 specifications. When serialized to Atom 1.0, each custom attribute in the collection is written to the <`atom`> element. When serialized to RSS 2.0, each custom attribute is written to the <`channel`> element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

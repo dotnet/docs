@@ -14,18 +14,18 @@
     <summary>Provides a strongly typed collection of <see cref="T:System.Diagnostics.InstanceData" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.InstanceDataCollection> class represents a collection containing all the instance data for a counter. This collection is contained in the <xref:System.Diagnostics.InstanceDataCollectionCollection> when using the <xref:System.Diagnostics.PerformanceCounterCategory.ReadCategory%2A> method.  
+The <xref:System.Diagnostics.InstanceDataCollection> class represents a collection containing all the instance data for a counter. This collection is contained in the <xref:System.Diagnostics.InstanceDataCollectionCollection> when using the <xref:System.Diagnostics.PerformanceCounterCategory.ReadCategory%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the instance data for a particular <xref:System.Diagnostics.PerformanceCounterCategory> on the local computer. It first displays a numbered list of <xref:System.Diagnostics.PerformanceCounterCategory> names. After the user enters the number of one of the categories, the example gets the <xref:System.Diagnostics.InstanceDataCollectionCollection> for that <xref:System.Diagnostics.PerformanceCounterCategory>. It then converts the collection returned by <xref:System.Diagnostics.InstanceDataCollectionCollection.Values%2A> to an array of <xref:System.Diagnostics.InstanceDataCollection> objects. The example also displays the instance data associated with each <xref:System.Diagnostics.InstanceData> of each <xref:System.Diagnostics.InstanceDataCollection>.  
-  
- [!code-csharp[System.Diagnostics.InstanceData.KeysValues#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/CS/instdatakeysvalues.cs#1)]
- [!code-vb[System.Diagnostics.InstanceData.KeysValues#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/VB/instdatakeysvalues.vb#1)]  
-  
+The following code example displays the instance data for a particular <xref:System.Diagnostics.PerformanceCounterCategory> on the local computer. It first displays a numbered list of <xref:System.Diagnostics.PerformanceCounterCategory> names. After the user enters the number of one of the categories, the example gets the <xref:System.Diagnostics.InstanceDataCollectionCollection> for that <xref:System.Diagnostics.PerformanceCounterCategory>. It then converts the collection returned by <xref:System.Diagnostics.InstanceDataCollectionCollection.Values%2A> to an array of <xref:System.Diagnostics.InstanceDataCollection> objects. The example also displays the instance data associated with each <xref:System.Diagnostics.InstanceData> of each <xref:System.Diagnostics.InstanceDataCollection>.  
+ 
+[!code-csharp[System.Diagnostics.InstanceData.KeysValues#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/CS/instdatakeysvalues.cs#1)]
+[!code-vb[System.Diagnostics.InstanceData.KeysValues#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/VB/instdatakeysvalues.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,18 +76,18 @@
           <see langword="true" /> if the instance exists in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `instanceName` parameter is case-insensitive.  
+The `instanceName` parameter is case-insensitive.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example accepts a <xref:System.Diagnostics.PerformanceCounter> category name, counter name, and instance name from the command line. It gets the <xref:System.Diagnostics.InstanceDataCollectionCollection> for the category, which is a collection of <xref:System.Diagnostics.InstanceDataCollection> objects. From that it gets the particular <xref:System.Diagnostics.InstanceDataCollection> for the specified counter. It then uses the <xref:System.Diagnostics.InstanceDataCollection.Contains%2A> method to determine if the specified instance exists, using the default single-instance name if none is entered.  
-  
- [!code-csharp[System.Diagnostics.InstanceDataCollection.ItemContains#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceDataCollection.ItemContains/CS/instdatacolitemcontains.cs#2)]
- [!code-vb[System.Diagnostics.InstanceDataCollection.ItemContains#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceDataCollection.ItemContains/VB/instdatacolitemcontains.vb#2)]  
-  
+The following code example accepts a <xref:System.Diagnostics.PerformanceCounter> category name, counter name, and instance name from the command line. It gets the <xref:System.Diagnostics.InstanceDataCollectionCollection> for the category, which is a collection of <xref:System.Diagnostics.InstanceDataCollection> objects. From that it gets the particular <xref:System.Diagnostics.InstanceDataCollection> for the specified counter. It then uses the <xref:System.Diagnostics.InstanceDataCollection.Contains%2A> method to determine if the specified instance exists, using the default single-instance name if none is entered.  
+ 
+[!code-csharp[System.Diagnostics.InstanceDataCollection.ItemContains#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceDataCollection.ItemContains/CS/instdatacolitemcontains.cs#2)]
+[!code-vb[System.Diagnostics.InstanceDataCollection.ItemContains#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceDataCollection.ItemContains/VB/instdatacolitemcontains.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="instanceName" /> parameter is <see langword="null" />.</exception>
@@ -115,13 +115,13 @@
         <summary>Copies the items in the collection to the specified one-dimensional array at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Diagnostics.InstanceDataCollection.CopyTo%2A> method to convert an <xref:System.Diagnostics.InstanceDataCollection> into an array of <xref:System.Diagnostics.InstanceData> objects. The values of the <xref:System.Diagnostics.InstanceData.InstanceName%2A> and <xref:System.Diagnostics.InstanceData.Sample%2A> properties of each element of the array are passed to a function for further processing.  
-  
- [!code-csharp[System.Diagnostics.InstanceData.CopyTo#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/CS/instdatacopyto.cs#4)]
- [!code-vb[System.Diagnostics.InstanceData.CopyTo#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/VB/instdatacopyto.vb#4)]  
-  
+The following code example uses the <xref:System.Diagnostics.InstanceDataCollection.CopyTo%2A> method to convert an <xref:System.Diagnostics.InstanceDataCollection> into an array of <xref:System.Diagnostics.InstanceData> objects. The values of the <xref:System.Diagnostics.InstanceData.InstanceName%2A> and <xref:System.Diagnostics.InstanceData.Sample%2A> properties of each element of the array are passed to a function for further processing.  
+ 
+[!code-csharp[System.Diagnostics.InstanceData.CopyTo#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/CS/instdatacopyto.cs#4)]
+[!code-vb[System.Diagnostics.InstanceData.CopyTo#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/VB/instdatacopyto.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,13 +143,13 @@
         <value>The performance counter name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example displays the <xref:System.Diagnostics.InstanceDataCollection.CounterName%2A> property of an <xref:System.Diagnostics.InstanceDataCollection>.  
-  
- [!code-csharp[System.Diagnostics.InstanceData.CopyTo#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/CS/instdatacopyto.cs#4)]
- [!code-vb[System.Diagnostics.InstanceData.CopyTo#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/VB/instdatacopyto.vb#4)]  
-  
+The following code example displays the <xref:System.Diagnostics.InstanceDataCollection.CounterName%2A> property of an <xref:System.Diagnostics.InstanceDataCollection>.  
+ 
+[!code-csharp[System.Diagnostics.InstanceData.CopyTo#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/CS/instdatacopyto.cs#4)]
+[!code-vb[System.Diagnostics.InstanceData.CopyTo#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/VB/instdatacopyto.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,18 +175,18 @@
         <value>An <see cref="T:System.Diagnostics.InstanceData" /> item, by which the <see cref="T:System.Diagnostics.InstanceDataCollection" /> object is indexed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `instanceName` parameter is case-insensitive.  
+The `instanceName` parameter is case-insensitive.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example accepts a <xref:System.Diagnostics.PerformanceCounter> category name, counter name, and instance name from the command line. It gets the <xref:System.Diagnostics.InstanceDataCollectionCollection> for the category, which is a collection of <xref:System.Diagnostics.InstanceDataCollection> objects. From that it gets the particular <xref:System.Diagnostics.InstanceDataCollection> for the specified counter. Then, if the instance exists, the example uses the <xref:System.Diagnostics.InstanceDataCollection.Item%2A> property (referenced as an indexer) to obtain the associated <xref:System.Diagnostics.InstanceData> object.  
-  
- [!code-csharp[System.Diagnostics.InstanceDataCollection.ItemContains#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceDataCollection.ItemContains/CS/instdatacolitemcontains.cs#2)]
- [!code-vb[System.Diagnostics.InstanceDataCollection.ItemContains#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceDataCollection.ItemContains/VB/instdatacolitemcontains.vb#2)]  
-  
+The following code example accepts a <xref:System.Diagnostics.PerformanceCounter> category name, counter name, and instance name from the command line. It gets the <xref:System.Diagnostics.InstanceDataCollectionCollection> for the category, which is a collection of <xref:System.Diagnostics.InstanceDataCollection> objects. From that it gets the particular <xref:System.Diagnostics.InstanceDataCollection> for the specified counter. Then, if the instance exists, the example uses the <xref:System.Diagnostics.InstanceDataCollection.Item%2A> property (referenced as an indexer) to obtain the associated <xref:System.Diagnostics.InstanceData> object.  
+ 
+[!code-csharp[System.Diagnostics.InstanceDataCollection.ItemContains#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceDataCollection.ItemContains/CS/instdatacolitemcontains.cs#2)]
+[!code-vb[System.Diagnostics.InstanceDataCollection.ItemContains#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceDataCollection.ItemContains/VB/instdatacolitemcontains.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="instanceName" /> parameter is <see langword="null" />.</exception>
@@ -209,18 +209,18 @@
         <value>An <see cref="T:System.Collections.ICollection" /> that represents a set of object-specific registry keys.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each software component creates keys for its objects and counters when it is installed and writes counter data while it is executing. You can access this data as you would access any other registry data. However, although you use the registry to collect performance data, the data is not stored in the registry database. Instead, the system collects the data from the appropriate system object managers.  
+Each software component creates keys for its objects and counters when it is installed and writes counter data while it is executing. You can access this data as you would access any other registry data. However, although you use the registry to collect performance data, the data is not stored in the registry database. Instead, the system collects the data from the appropriate system object managers.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Diagnostics.InstanceDataCollection.Keys%2A> property of an <xref:System.Diagnostics.InstanceDataCollection> to return a collection of instance names, which it converts to an array of <xref:System.String>. It generates an array of <xref:System.Diagnostics.InstanceData> objects using the <xref:System.Diagnostics.InstanceDataCollection.Values%2A> property. For each element in the array of instance names, it displays the name and calls a function to process the associated <xref:System.Diagnostics.InstanceData> object.  
-  
- [!code-csharp[System.Diagnostics.InstanceData.KeysValues#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/CS/instdatakeysvalues.cs#3)]
- [!code-vb[System.Diagnostics.InstanceData.KeysValues#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/VB/instdatakeysvalues.vb#3)]  
-  
+The following code example uses the <xref:System.Diagnostics.InstanceDataCollection.Keys%2A> property of an <xref:System.Diagnostics.InstanceDataCollection> to return a collection of instance names, which it converts to an array of <xref:System.String>. It generates an array of <xref:System.Diagnostics.InstanceData> objects using the <xref:System.Diagnostics.InstanceDataCollection.Values%2A> property. For each element in the array of instance names, it displays the name and calls a function to process the associated <xref:System.Diagnostics.InstanceData> object.  
+ 
+[!code-csharp[System.Diagnostics.InstanceData.KeysValues#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/CS/instdatakeysvalues.cs#3)]
+[!code-vb[System.Diagnostics.InstanceData.KeysValues#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/VB/instdatakeysvalues.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,13 +242,13 @@
         <value>An <see cref="T:System.Collections.ICollection" /> that represents the counter's raw data values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Diagnostics.InstanceDataCollection.Values%2A> property of an <xref:System.Diagnostics.InstanceDataCollection> to return a collection of <xref:System.Diagnostics.InstanceData> objects, which it converts to an array. It generates an array of instance names using the <xref:System.Diagnostics.InstanceDataCollection.Keys%2A> property. For each element in the array of <xref:System.Diagnostics.InstanceData> objects, it displays the associated instance name and calls a function to process the <xref:System.Diagnostics.InstanceData> object.  
-  
- [!code-csharp[System.Diagnostics.InstanceData.KeysValues#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/CS/instdatakeysvalues.cs#3)]
- [!code-vb[System.Diagnostics.InstanceData.KeysValues#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/VB/instdatakeysvalues.vb#3)]  
-  
+The following code example uses the <xref:System.Diagnostics.InstanceDataCollection.Values%2A> property of an <xref:System.Diagnostics.InstanceDataCollection> to return a collection of <xref:System.Diagnostics.InstanceData> objects, which it converts to an array. It generates an array of instance names using the <xref:System.Diagnostics.InstanceDataCollection.Keys%2A> property. For each element in the array of <xref:System.Diagnostics.InstanceData> objects, it displays the associated instance name and calls a function to process the <xref:System.Diagnostics.InstanceData> object.  
+ 
+[!code-csharp[System.Diagnostics.InstanceData.KeysValues#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/CS/instdatakeysvalues.cs#3)]
+[!code-vb[System.Diagnostics.InstanceData.KeysValues#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/VB/instdatakeysvalues.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

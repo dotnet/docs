@@ -28,27 +28,27 @@
     <summary>Specifies the default event for a component.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ComponentModel.DefaultEventAttribute.Name%2A> property to get the name of the default event.  
+Use the <xref:System.ComponentModel.DefaultEventAttribute.Name%2A> property to get the name of the default event.  
+ 
+For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
   
- For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
-   
-  
+ 
 ## Examples  
- The following example defines a collection class named `MyCollection`. The class is marked with a <xref:System.ComponentModel.DefaultEventAttribute> that specifies `CollectionChanged` as the default event.  
-  
- [!code-cpp[Classic DefaultEventAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DefaultEventAttribute Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DefaultEventAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DefaultEventAttribute Example/CS/source.cs#1)]
- [!code-vb[Classic DefaultEventAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DefaultEventAttribute Example/VB/source.vb#1)]  
-  
- The next example creates an instance of `MyCollection`. Then it gets the attributes for the class, extracts the <xref:System.ComponentModel.DefaultEventAttribute>, and prints the name of the default event.  
-  
- [!code-cpp[Classic DefaultEventAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DefaultEventAttribute Example/CPP/source.cpp#2)]
- [!code-csharp[Classic DefaultEventAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DefaultEventAttribute Example/CS/source.cs#2)]
- [!code-vb[Classic DefaultEventAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DefaultEventAttribute Example/VB/source.vb#2)]  
-  
+The following example defines a collection class named `MyCollection`. The class is marked with a <xref:System.ComponentModel.DefaultEventAttribute> that specifies `CollectionChanged` as the default event.  
+ 
+[!code-cpp[Classic DefaultEventAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DefaultEventAttribute Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DefaultEventAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DefaultEventAttribute Example/CS/source.cs#1)]
+[!code-vb[Classic DefaultEventAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DefaultEventAttribute Example/VB/source.vb#1)]  
+ 
+The next example creates an instance of `MyCollection`. Then it gets the attributes for the class, extracts the <xref:System.ComponentModel.DefaultEventAttribute>, and prints the name of the default event.  
+ 
+[!code-cpp[Classic DefaultEventAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DefaultEventAttribute Example/CPP/source.cpp#2)]
+[!code-csharp[Classic DefaultEventAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DefaultEventAttribute Example/CS/source.cs#2)]
+[!code-vb[Classic DefaultEventAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DefaultEventAttribute Example/VB/source.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

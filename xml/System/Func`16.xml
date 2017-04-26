@@ -159,17 +159,17 @@
     <returns>The return value of the method that this delegate encapsulates.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this delegate to represent a method that can be passed as a parameter without explicitly declaring a custom delegate. The encapsulated method must correspond to the method signature that is defined by this delegate. This means that the encapsulated method must have 15 parameters, each of which is passed to it by value, and that it must return a value.  
-  
+You can use this delegate to represent a method that can be passed as a parameter without explicitly declaring a custom delegate. The encapsulated method must correspond to the method signature that is defined by this delegate. This means that the encapsulated method must have 15 parameters, each of which is passed to it by value, and that it must return a value.  
+ 
 > [!NOTE]
 >  To reference a method that has 15 parameters and returns `void` (or in Visual Basic, that is declared as a `Sub` rather than as a `Function`), use the generic <xref:System.Action%6015> delegate instead.  
-  
- You can also use the <xref:System.Func%6016> delegate with anonymous methods and lambda expressions.  
-  
- The underlying type of a lambda expression is one of the generic `Func` delegates. This makes it possible to pass a lambda expression as a parameter without explicitly assigning it to a delegate.  
-  
+ 
+You can also use the <xref:System.Func%6016> delegate with anonymous methods and lambda expressions.  
+ 
+The underlying type of a lambda expression is one of the generic `Func` delegates. This makes it possible to pass a lambda expression as a parameter without explicitly assigning it to a delegate.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -19,10 +19,10 @@
     <summary>Represents the <see langword="extension" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). This class is for complex types with complex content model derived by extension. It extends the complex type by adding attributes or elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- See <xref:System.Xml.Schema.XmlSchemaComplexContent> for an example using this class.  
-  
+See <xref:System.Xml.Schema.XmlSchemaComplexContent> for an example using this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -133,10 +133,10 @@
         <value>The name of the complex type from which this type is derived by extension.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value must be a QName. It is the name of the complex type specified by the base attribute of the `extension` element.  
-  
+The value must be a QName. It is the name of the complex type specified by the base attribute of the `extension` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

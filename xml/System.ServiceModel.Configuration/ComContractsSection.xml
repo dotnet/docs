@@ -14,16 +14,16 @@
     <summary>Represents a configuration section that contains elements for specifying the namespace and contract name for a COM+ integration contract. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The COM+ integration service contracts are currently restricted to the “http://tempuri.org” namespace, and contract name is derived from the supporting COM interface. You can, however, specify alternatives by using the `comContracts` section in the configuration file. For example, you can use the following configuration to specify the namespace and contract name for a service contract  
-  
-  
-  
- When the service is initialized, the specified namespaces and contract names are applied to the generated service descriptions.  
-  
- When this section is empty, the service initialization applies a default namespace and contract name taken from the supporting COM interface ID.  
-  
+The COM+ integration service contracts are currently restricted to the “http://tempuri.org” namespace, and contract name is derived from the supporting COM interface. You can, however, specify alternatives by using the `comContracts` section in the configuration file. For example, you can use the following configuration to specify the namespace and contract name for a service contract  
+ 
+ 
+ 
+When the service is initialized, the specified namespaces and contract names are applied to the generated service descriptions.  
+ 
+When this section is empty, the service initialization applies a default namespace and contract name taken from the supporting COM interface ID.  
+ 
  ]]></format>
     </remarks>
   </Docs>

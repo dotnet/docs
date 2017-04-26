@@ -14,10 +14,10 @@
     <summary>Provides data for the <see cref="E:System.Data.Odbc.OdbcConnection.InfoMessage" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Odbc.OdbcConnection.InfoMessage> event contains an <xref:System.Data.Odbc.OdbcErrorCollection> collection with warnings sent from the data source.  
-  
+The <xref:System.Data.Odbc.OdbcConnection.InfoMessage> event contains an <xref:System.Data.Odbc.OdbcErrorCollection> collection with warnings sent from the data source.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
         <value>The full text of the error.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a wrapper for the <xref:System.Data.Odbc.OdbcError.Message%2A> property of the first <xref:System.Data.Odbc.OdbcError> in the <xref:System.Data.Odbc.OdbcInfoMessageEventArgs.Errors%2A> collection.  
-  
+This is a wrapper for the <xref:System.Data.Odbc.OdbcError.Message%2A> property of the first <xref:System.Data.Odbc.OdbcError> in the <xref:System.Data.Odbc.OdbcInfoMessageEventArgs.Errors%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

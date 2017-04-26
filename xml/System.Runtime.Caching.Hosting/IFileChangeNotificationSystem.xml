@@ -11,16 +11,16 @@
     <summary>Defines a way to expose a custom <see cref="T:System.Runtime.Caching.FileChangeMonitor" /> object to a cache implementation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In ASP.NET, the <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface provides access to internal file-change notification management.  
-  
- The <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface is used internally by the <xref:System.Runtime.Caching.HostFileChangeMonitor> class.  
-  
- When a cache implementation runs in an ASP.NET application domain, ASP.NET implements an <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface through the <xref:System.Runtime.Caching.ObjectCache.Host%2A> property. The <xref:System.Runtime.Caching.HostFileChangeMonitor> class detects this property and uses the ASP.NET file-change notification system to evict cache entries based on file-change notification.  
-  
- In non-ASP.NET applications, there is no host environment that implements a custom <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface. As a result, the <xref:System.Runtime.Caching.HostFileChangeMonitor> class uses the <xref:System.IO.FileSystemWatcher> class of the CLR.  
-  
+In ASP.NET, the <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface provides access to internal file-change notification management.  
+ 
+The <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface is used internally by the <xref:System.Runtime.Caching.HostFileChangeMonitor> class.  
+ 
+When a cache implementation runs in an ASP.NET application domain, ASP.NET implements an <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface through the <xref:System.Runtime.Caching.ObjectCache.Host%2A> property. The <xref:System.Runtime.Caching.HostFileChangeMonitor> class detects this property and uses the ASP.NET file-change notification system to evict cache entries based on file-change notification.  
+ 
+In non-ASP.NET applications, there is no host environment that implements a custom <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface. As a result, the <xref:System.Runtime.Caching.HostFileChangeMonitor> class uses the <xref:System.IO.FileSystemWatcher> class of the CLR.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,10 +53,10 @@
         <summary>Registers a file path to monitor with the host environment.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used by custom cache objects and custom change monitors that implement the host environment's <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface in order to register file paths for monitoring with the host environment. The <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem.StartMonitoring%2A> method is called by implementers of the <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface in order to register a file or directory for change monitoring.  
-  
+This method is used by custom cache objects and custom change monitors that implement the host environment's <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface in order to register file paths for monitoring with the host environment. The <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem.StartMonitoring%2A> method is called by implementers of the <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem> interface in order to register a file or directory for change monitoring.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -83,10 +83,10 @@
         <summary>Ends change monitoring.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem.StopMonitoring%2A> method must be called by custom caches and custom change monitors that are being disposed by the host environment in order to stop monitoring file paths and directories.  
-  
+The <xref:System.Runtime.Caching.Hosting.IFileChangeNotificationSystem.StopMonitoring%2A> method must be called by custom caches and custom change monitors that are being disposed by the host environment in order to stop monitoring file paths and directories.  
+ 
  ]]></format>
         </remarks>
       </Docs>

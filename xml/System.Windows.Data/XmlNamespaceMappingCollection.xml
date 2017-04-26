@@ -26,10 +26,10 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Data.XmlNamespaceMapping> class provides a mapping between the namespace specified in your [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] binding source and a prefix you specify that you can use in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
-  
+The <xref:System.Windows.Data.XmlNamespaceMapping> class provides a mapping between the namespace specified in your [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] binding source and a prefix you specify that you can use in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -133,10 +133,10 @@
         <summary>Removes all <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> objects in this collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is potentially an expensive operation; consider just creating a new <xref:System.Windows.Data.XmlNamespaceMappingCollection> object.  
-  
+This is potentially an expensive operation; consider just creating a new <xref:System.Windows.Data.XmlNamespaceMappingCollection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,10 +269,10 @@
         <returns>A generic <see cref="T:System.Collections.Generic.IEnumerator`1" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a protected member that is for <xref:System.Collections.Generic.IEnumerable%601> implementations.  
-  
+This is a protected member that is for <xref:System.Collections.Generic.IEnumerable%601> implementations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -320,10 +320,10 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Data.XmlNamespaceMappingCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Data.XmlNamespaceMappingCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,10 +348,10 @@
         <summary>For a description of this member, see <see cref="M:System.Windows.Markup.IAddChild.AddChild(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Data.XmlNamespaceMappingCollection> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Data.XmlNamespaceMappingCollection> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -376,10 +376,10 @@
         <summary>For a description of this member, see <see cref="M:System.Windows.Markup.IAddChild.AddText(System.String)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Data.XmlNamespaceMappingCollection> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Data.XmlNamespaceMappingCollection> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

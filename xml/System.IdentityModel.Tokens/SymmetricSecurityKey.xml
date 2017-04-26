@@ -14,10 +14,10 @@
     <summary>Represents the abstract base class for all keys that are generated using symmetric algorithms.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, this class is used by the infrastructure to transform XML using a symmetric key.  
-  
+Typically, this class is used by the infrastructure to transform XML using a symmetric key.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
         <returns>An array of <see cref="T:System.Byte" /> that contains the derived key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To specify P-SHA1 as the cryptographic algorithm, use the <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivation> field.  
-  
+To specify P-SHA1 as the cryptographic algorithm, use the <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivation> field.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,10 +97,10 @@
         <returns>An <see cref="T:System.Security.Cryptography.ICryptoTransform" /> that represents the decryption transform.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the fields that represent decryption algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Use the fields that represent decryption algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,10 +128,10 @@
         <returns>An <see cref="T:System.Security.Cryptography.ICryptoTransform" /> that represents the encryption transform.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the fields that represent decryption algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Use the fields that represent decryption algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,10 +179,10 @@
         <returns>A <see cref="T:System.Security.Cryptography.KeyedHashAlgorithm" /> that represents the keyed hash algorithm.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the fields that represent keyed hash algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Use the fields that represent keyed hash algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,10 +208,10 @@
         <returns>A <see cref="T:System.Security.Cryptography.SymmetricAlgorithm" /> that represents the symmetric algorithm.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the fields that represent symmetric algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Use the fields that represent symmetric algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>

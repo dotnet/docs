@@ -28,10 +28,10 @@
     <summary>The exception that is thrown when trying to access a drive or share that is not available.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.DriveNotFoundException> class uses the HRESULT COR_E_DIRECTORYNOTFOUND. This exception can be thrown when a Win32 ERROR_PATH_NOT_FOUND HRESULT error is encountered.  
-  
+The <xref:System.IO.DriveNotFoundException> class uses the HRESULT COR_E_DIRECTORYNOTFOUND. This exception can be thrown when a Win32 ERROR_PATH_NOT_FOUND HRESULT error is encountered.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,12 +59,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.DriveNotFoundException" /> class with its message string set to a system-supplied message and its HRESULT set to COR_E_DIRECTORYNOTFOUND.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new instance to a system-supplied message that describes the error, such as "Could not find the specified directory." This message is localized based on the current system culture.  
-  
- The <xref:System.Exception.InnerException%2A?displayProperty=fullName> property of the new instance is initialized to `null`.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new instance to a system-supplied message that describes the error, such as "Could not find the specified directory." This message is localized based on the current system culture.  
+ 
+The <xref:System.Exception.InnerException%2A?displayProperty=fullName> property of the new instance is initialized to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,12 +95,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.DriveNotFoundException" /> class with the specified message string and the HRESULT set to COR_E_DIRECTORYNOTFOUND.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new instance using the `message` parameter.  
-  
- The <xref:System.Exception.InnerException%2A?displayProperty=fullName> property of the new instance is initialized to `null`.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new instance using the `message` parameter.  
+ 
+The <xref:System.Exception.InnerException%2A?displayProperty=fullName> property of the new instance is initialized to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,17 +158,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.DriveNotFoundException" /> class with the specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.IO.DirectoryNotFoundException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.IO.DirectoryNotFoundException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

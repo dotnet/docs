@@ -30,20 +30,20 @@
     <summary>Represents a constructor call that has a collection initializer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Linq.Expressions.Expression.ListInit%2A> factory methods to create a <xref:System.Linq.Expressions.ListInitExpression>.  
+Use the <xref:System.Linq.Expressions.Expression.ListInit%2A> factory methods to create a <xref:System.Linq.Expressions.ListInitExpression>.  
+ 
+The value of the <xref:System.Linq.Expressions.Expression.NodeType%2A> property of a <xref:System.Linq.Expressions.ListInitExpression> is <xref:System.Linq.Expressions.ExpressionType>.  
+ 
   
- The value of the <xref:System.Linq.Expressions.Expression.NodeType%2A> property of a <xref:System.Linq.Expressions.ListInitExpression> is <xref:System.Linq.Expressions.ExpressionType>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Linq.Expressions.ListInitExpression> that represents the initialization of a new dictionary instance that has two key-value pairs.  
-  
- [!code-csharp[System.Linq.Expressions.Expression#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#7)]
- [!code-vb[System.Linq.Expressions.Expression#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#7)]  
-  
+The following example creates a <xref:System.Linq.Expressions.ListInitExpression> that represents the initialization of a new dictionary instance that has two key-value pairs.  
+ 
+[!code-csharp[System.Linq.Expressions.Expression#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#7)]
+[!code-vb[System.Linq.Expressions.Expression#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#7)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -226,12 +226,12 @@
         <returns>The reduced expression.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `CanReduce` method returns true, this method should return a valid expression.  
-  
- This method is allowed to return another node which itself must be reduced.  
-  
+If the `CanReduce` method returns true, this method should return a valid expression.  
+ 
+This method is allowed to return another node which itself must be reduced.  
+ 
  ]]></format>
         </remarks>
       </Docs>

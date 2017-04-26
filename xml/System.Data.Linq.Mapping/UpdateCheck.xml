@@ -13,16 +13,16 @@
     <summary>Specifies when objects are to be tested for concurrency conflicts.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The code example after the table specifies that `HomePage` objects should never be tested.  
+The code example after the table specifies that `HomePage` objects should never be tested.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[System.Data.Linq.Mapping.UpdateCheck#1](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.mapping.updatecheck/cs/northwind.cs#1)]
- [!code-vb[System.Data.Linq.Mapping.UpdateCheck#1](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.mapping.updatecheck/vb/northwind.vb#1)]  
-  
+[!code-csharp[System.Data.Linq.Mapping.UpdateCheck#1](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.mapping.updatecheck/cs/northwind.cs#1)]
+[!code-vb[System.Data.Linq.Mapping.UpdateCheck#1](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.mapping.updatecheck/vb/northwind.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

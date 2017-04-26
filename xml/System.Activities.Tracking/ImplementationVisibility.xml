@@ -13,10 +13,10 @@
     <summary>Describes the visibility modes within a tracking profile.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Tracking records from activities that are contained within another activity can be filtered using the visibility modes described by **ImplementationVisibility**. The filter is applied to subscribe for tracking records for all activities or only the root activity and its implementation for a workflow. For more information, see <xref:System.Activities.Tracking.TrackingProfile.ImplementationVisibility%2A>.  
-  
+Tracking records from activities that are contained within another activity can be filtered using the visibility modes described by **ImplementationVisibility**. The filter is applied to subscribe for tracking records for all activities or only the root activity and its implementation for a workflow. For more information, see <xref:System.Activities.Tracking.TrackingProfile.ImplementationVisibility%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -35,26 +35,26 @@
     <summary>Provides a base class for implementations of the <see cref="T:System.Collections.Generic.IComparer`1" /> generic interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derive from this class to provide a custom implementation of the <xref:System.Collections.Generic.IComparer%601> interface for use with collection classes such as the <xref:System.Collections.Generic.SortedList%602> and <xref:System.Collections.Generic.SortedDictionary%602> generic classes.  
-  
- The difference between deriving from the <xref:System.Collections.Generic.Comparer%601> class and implementing the <xref:System.IComparable?displayProperty=fullName> interface is as follows:  
-  
+Derive from this class to provide a custom implementation of the <xref:System.Collections.Generic.IComparer%601> interface for use with collection classes such as the <xref:System.Collections.Generic.SortedList%602> and <xref:System.Collections.Generic.SortedDictionary%602> generic classes.  
+ 
+The difference between deriving from the <xref:System.Collections.Generic.Comparer%601> class and implementing the <xref:System.IComparable?displayProperty=fullName> interface is as follows:  
+ 
 -   To specify how two objects should be compared by default, implement the <xref:System.IComparable?displayProperty=fullName> interface in your class. This ensures that sort operations will use the default comparison code that you provided.  
-  
+ 
 -   To define a comparer to use instead of the default comparer, derive from the <xref:System.Collections.Generic.Comparer%601> class. You can then use this comparer in sort operations that take a comparer as a parameter.  
+ 
+The object returned by the <xref:System.Collections.Generic.Comparer%601.Default%2A> property uses the <xref:System.IComparable%601?displayProperty=fullName> generic interface (`IComparable<T>` in C#, `IComparable(Of T)` in Visual Basic) to compare two objects. If type `T` does not implement the <xref:System.IComparable%601?displayProperty=fullName> generic interface, the <xref:System.Collections.Generic.Comparer%601.Default%2A> property returns a <xref:System.Collections.Generic.Comparer%601> that uses the <xref:System.IComparable?displayProperty=fullName> interface.  
+ 
   
- The object returned by the <xref:System.Collections.Generic.Comparer%601.Default%2A> property uses the <xref:System.IComparable%601?displayProperty=fullName> generic interface (`IComparable<T>` in C#, `IComparable(Of T)` in Visual Basic) to compare two objects. If type `T` does not implement the <xref:System.IComparable%601?displayProperty=fullName> generic interface, the <xref:System.Collections.Generic.Comparer%601.Default%2A> property returns a <xref:System.Collections.Generic.Comparer%601> that uses the <xref:System.IComparable?displayProperty=fullName> interface.  
-  
-   
-  
+ 
 ## Examples  
- The following example derives a class, `BoxLengthFirst`, from the <xref:System.Collections.Generic.Comparer%601> class. This comparer compares two objects of type `Box`. It sorts them first by length, then by height, and then by width. The `Box` class implements the <xref:System.IComparable%601> interface to control the default comparison between two `Box` objects. This default implementation sorts first by height, then by length, and then by width. The example shows the differences between the two comparisons by sorting a list of `Box` objects first by using the `BoxLengthFirst` comparer and then by using the default comparer.  
-  
- [!code-csharp[System.Collections.Generic.BoxCompare#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#1)]
- [!code-vb[System.Collections.Generic.BoxCompare#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#1)]  
-  
+The following example derives a class, `BoxLengthFirst`, from the <xref:System.Collections.Generic.Comparer%601> class. This comparer compares two objects of type `Box`. It sorts them first by length, then by height, and then by width. The `Box` class implements the <xref:System.IComparable%601> interface to control the default comparison between two `Box` objects. This default implementation sorts first by height, then by length, and then by width. The example shows the differences between the two comparisons by sorting a list of `Box` objects first by using the `BoxLengthFirst` comparer and then by using the default comparer.  
+ 
+[!code-csharp[System.Collections.Generic.BoxCompare#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#1)]
+[!code-vb[System.Collections.Generic.BoxCompare#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -160,18 +160,18 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implement this method to provide a customized sort order comparison for type `T`.  
+Implement this method to provide a customized sort order comparison for type `T`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example defines a comparer of `Box` objects that can be used instead of the default comparer. This example is part of a larger example provided for the <xref:System.Collections.Generic.Comparer%601> class.  
-  
- [!code-csharp[System.Collections.Generic.BoxCompare#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#5)]
- [!code-vb[System.Collections.Generic.BoxCompare#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#5)]  
-  
+The following example defines a comparer of `Box` objects that can be used instead of the default comparer. This example is part of a larger example provided for the <xref:System.Collections.Generic.Comparer%601> class.  
+ 
+[!code-csharp[System.Collections.Generic.BoxCompare#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#5)]
+[!code-vb[System.Collections.Generic.BoxCompare#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Type <paramref name="T" /> does not implement either the <see cref="T:System.IComparable`1" /> generic interface or the <see cref="T:System.IComparable" /> interface.</exception>
@@ -241,18 +241,18 @@
         <value>An object that inherits <see cref="T:System.Collections.Generic.Comparer`1" /> and serves as a sort order comparer for type <paramref name="T" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Collections.Generic.Comparer%601> returned by this property uses the <xref:System.IComparable%601?displayProperty=fullName> generic interface (`IComparable<T>` in C#, `IComparable(Of T)` in Visual Basic) to compare two objects. If type `T` does not implement the <xref:System.IComparable%601?displayProperty=fullName> generic interface, this property returns a <xref:System.Collections.Generic.Comparer%601> that uses the <xref:System.IComparable?displayProperty=fullName> interface.  
+The <xref:System.Collections.Generic.Comparer%601> returned by this property uses the <xref:System.IComparable%601?displayProperty=fullName> generic interface (`IComparable<T>` in C#, `IComparable(Of T)` in Visual Basic) to compare two objects. If type `T` does not implement the <xref:System.IComparable%601?displayProperty=fullName> generic interface, this property returns a <xref:System.Collections.Generic.Comparer%601> that uses the <xref:System.IComparable?displayProperty=fullName> interface.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Collections.Generic.Comparer%601.Default%2A> property to get an object that performs the default comparison. This example is part of a larger example provided for the <xref:System.Collections.Generic.Comparer%601> class.  
-  
- [!code-csharp[System.Collections.Generic.BoxCompare#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#3)]
- [!code-vb[System.Collections.Generic.BoxCompare#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#3)]  
-  
+The following example shows how to use the <xref:System.Collections.Generic.Comparer%601.Default%2A> property to get an object that performs the default comparison. This example is part of a larger example provided for the <xref:System.Collections.Generic.Comparer%601> class.  
+ 
+[!code-csharp[System.Collections.Generic.BoxCompare#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#3)]
+[!code-vb[System.Collections.Generic.BoxCompare#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
@@ -330,20 +330,20 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a wrapper for the <xref:System.Collections.Generic.Comparer%601.Compare%28%600%2C%600%29> method, so `obj` must be cast to the type specified by the generic argument `T` of the current instance. If it cannot be cast to `T`, an <xref:System.ArgumentException> is thrown.  
+This method is a wrapper for the <xref:System.Collections.Generic.Comparer%601.Compare%28%600%2C%600%29> method, so `obj` must be cast to the type specified by the generic argument `T` of the current instance. If it cannot be cast to `T`, an <xref:System.ArgumentException> is thrown.  
+ 
+Comparing `null` with any reference type is allowed and does not generate an exception. When sorting, `null` is considered to be less than any other object.  
+ 
   
- Comparing `null` with any reference type is allowed and does not generate an exception. When sorting, `null` is considered to be less than any other object.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Collections.Generic.Comparer%601.System%23Collections%23IComparer%23Compare%2A> method to compare two objects. This example is part of a larger example provided for the <xref:System.Collections.Generic.Comparer%601> class.  
-  
- [!code-csharp[System.Collections.Generic.BoxCompare#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#4)]
- [!code-vb[System.Collections.Generic.BoxCompare#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#4)]  
-  
+The following example shows how to use the <xref:System.Collections.Generic.Comparer%601.System%23Collections%23IComparer%23Compare%2A> method to compare two objects. This example is part of a larger example provided for the <xref:System.Collections.Generic.Comparer%601> class.  
+ 
+[!code-csharp[System.Collections.Generic.BoxCompare#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#4)]
+[!code-vb[System.Collections.Generic.BoxCompare#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

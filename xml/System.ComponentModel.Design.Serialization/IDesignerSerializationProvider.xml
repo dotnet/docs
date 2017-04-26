@@ -16,10 +16,10 @@
     <summary>Provides an interface that enables access to a serializer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface has only one method, <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationProvider.GetSerializer%2A>, and no properties or events. This interface and this method exist so that the serialization manager and other objects can obtain a serializer for a given object type.  
-  
+This interface has only one method, <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationProvider.GetSerializer%2A>, and no properties or events. This interface and this method exist so that the serialization manager and other objects can obtain a serializer for a given object type.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,10 +56,10 @@
         <returns>An instance of a serializer of the type requested, or <see langword="null" /> if the request cannot be satisfied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The serialization manager calls this method when it is trying to locate a serializer for an object type. If this serialization provider can provide a serializer of the correct type, this provider returns it. Otherwise, it returns `null`.  
-  
+The serialization manager calls this method when it is trying to locate a serializer for an object type. If this serialization provider can provide a serializer of the correct type, this provider returns it. Otherwise, it returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

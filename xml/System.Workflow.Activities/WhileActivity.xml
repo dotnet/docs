@@ -35,24 +35,24 @@
     <summary>Runs a child activity iteratively as long as a certain condition is true.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+ 
+The <xref:System.Workflow.Activities.WhileActivity> is a <xref:System.Workflow.ComponentModel.CompositeActivity>, meaning the <xref:System.Workflow.Activities.WhileActivity> can contain other activities.  
+ 
+Before each iteration, the <xref:System.Workflow.Activities.WhileActivity.Condition%2A> property is evaluated. If the <xref:System.Workflow.Activities.WhileActivity.Condition%2A> property evaluates to `false`, the <xref:System.Workflow.Activities.WhileActivity> immediately finishes.  
+ 
   
- The <xref:System.Workflow.Activities.WhileActivity> is a <xref:System.Workflow.ComponentModel.CompositeActivity>, meaning the <xref:System.Workflow.Activities.WhileActivity> can contain other activities.  
-  
- Before each iteration, the <xref:System.Workflow.Activities.WhileActivity.Condition%2A> property is evaluated. If the <xref:System.Workflow.Activities.WhileActivity.Condition%2A> property evaluates to `false`, the <xref:System.Workflow.Activities.WhileActivity> immediately finishes.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.WhileActivity> class and add the <xref:System.Workflow.Activities.ParallelActivity> class to the <xref:System.Workflow.Activities.WhileActivity> class.  This code example is part of the WhileAndParallel SDK Sample from the WhileAndParallelWorkflow.Designer.cs file. For more information, see [Using While and Parallel](http://msdn.microsoft.com/en-us/776a25cc-6aed-4754-b680-996213831b84).  
-  
- [!code-csharp[wf_samples#275](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#275)]
- [!code-vb[wf_samples#275](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#275)]  
-  
+The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.WhileActivity> class and add the <xref:System.Workflow.Activities.ParallelActivity> class to the <xref:System.Workflow.Activities.WhileActivity> class.  This code example is part of the WhileAndParallel SDK Sample from the WhileAndParallelWorkflow.Designer.cs file. For more information, see [Using While and Parallel](http://msdn.microsoft.com/en-us/776a25cc-6aed-4754-b680-996213831b84).  
+ 
+[!code-csharp[wf_samples#275](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#275)]
+[!code-vb[wf_samples#275](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#275)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,13 +71,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WhileActivity" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.WhileActivity> class and add the <xref:System.Workflow.Activities.ParallelActivity> class to the <xref:System.Workflow.Activities.WhileActivity> class.  This code example is part of the WhileAndParallel SDK Sample from the WhileAndParallelWorkflow.Designer.cs file. For more information, see [Using While and Parallel](http://msdn.microsoft.com/en-us/776a25cc-6aed-4754-b680-996213831b84).  
-  
- [!code-csharp[wf_samples#275](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#275)]
- [!code-vb[wf_samples#275](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#275)]  
-  
+The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.WhileActivity> class and add the <xref:System.Workflow.Activities.ParallelActivity> class to the <xref:System.Workflow.Activities.WhileActivity> class.  This code example is part of the WhileAndParallel SDK Sample from the WhileAndParallelWorkflow.Designer.cs file. For more information, see [Using While and Parallel](http://msdn.microsoft.com/en-us/776a25cc-6aed-4754-b680-996213831b84).  
+ 
+[!code-csharp[wf_samples#275](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#275)]
+[!code-vb[wf_samples#275](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#275)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,13 +139,13 @@
         <value>When the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> property evaluates to <see langword="true" />, the <see cref="T:System.Workflow.Activities.WhileActivity" /> continues to run. When the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> evaluates to <see langword="false" />, the <see cref="T:System.Workflow.Activities.WhileActivity" /> finishes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.WhileActivity> class, add the <xref:System.Workflow.Activities.ParallelActivity> class to the <xref:System.Workflow.Activities.WhileActivity> class, and set the <xref:System.Workflow.Activities.WhileActivity.Condition%2A> property. This code example is part of the WhileAndParallel SDK Sample from the WhileAndParallelWorkflow.Designer.cs file. For more information, see [Using While and Parallel](http://msdn.microsoft.com/en-us/776a25cc-6aed-4754-b680-996213831b84).  
-  
- [!code-csharp[wf_samples#275](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#275)]
- [!code-vb[wf_samples#275](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#275)]  
-  
+The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.WhileActivity> class, add the <xref:System.Workflow.Activities.ParallelActivity> class to the <xref:System.Workflow.Activities.WhileActivity> class, and set the <xref:System.Workflow.Activities.WhileActivity.Condition%2A> property. This code example is part of the WhileAndParallel SDK Sample from the WhileAndParallelWorkflow.Designer.cs file. For more information, see [Using While and Parallel](http://msdn.microsoft.com/en-us/776a25cc-6aed-4754-b680-996213831b84).  
+ 
+[!code-csharp[wf_samples#275](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#275)]
+[!code-vb[wf_samples#275](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#275)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,10 +166,10 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.WhileActivity.Condition" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

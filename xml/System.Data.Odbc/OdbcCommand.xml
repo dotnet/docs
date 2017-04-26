@@ -29,28 +29,28 @@
     <summary>Represents an SQL statement or stored procedure to execute against a data source. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Odbc.OdbcCommand> class provides the following methods for executing commands against a data source:  
-  
+The <xref:System.Data.Odbc.OdbcCommand> class provides the following methods for executing commands against a data source:  
+ 
 |Item|Description|  
 |----------|-----------------|  
 |<xref:System.Data.Odbc.OdbcCommand.ExecuteReader%2A>|Executes commands that return rows.|  
 |<xref:System.Data.Odbc.OdbcCommand.ExecuteNonQuery%2A>|Executes commands such as SQL INSERT, DELETE, UPDATE, and SET statements.|  
 |<xref:System.Data.Odbc.OdbcCommand.ExecuteScalar%2A>|Retrieves a single value, for example, an aggregate value, from a database.|  
+ 
+You can reset the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> property and reuse the <xref:System.Data.Odbc.OdbcCommand> object. However, you must close the <xref:System.Data.Odbc.OdbcDataReader> before you can execute a new or previous command.  
+ 
+If execution of the command causes a fatal <xref:System.Data.Odbc.OdbcException> such as a SQL Server severity level of 20 or more, <xref:System.Data.Odbc.OdbcConnection> may close. However, the user can reopen the connection and continue.  
+ 
   
- You can reset the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> property and reuse the <xref:System.Data.Odbc.OdbcCommand> object. However, you must close the <xref:System.Data.Odbc.OdbcDataReader> before you can execute a new or previous command.  
-  
- If execution of the command causes a fatal <xref:System.Data.Odbc.OdbcException> such as a SQL Server severity level of 20 or more, <xref:System.Data.Odbc.OdbcConnection> may close. However, the user can reopen the connection and continue.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses <xref:System.Data.Odbc.OdbcCommand.ExecuteNonQuery%2A>.  
-  
- [!code-csharp[Classic WebData OdbcCommand#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcCommand/CS/source.cs#1)]
- [!code-vb[Classic WebData OdbcCommand#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcCommand/VB/source.vb#1)]  
-  
+The following example uses <xref:System.Data.Odbc.OdbcCommand.ExecuteNonQuery%2A>.  
+ 
+[!code-csharp[Classic WebData OdbcCommand#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcCommand/CS/source.cs#1)]
+[!code-vb[Classic WebData OdbcCommand#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcCommand/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,17 +69,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcCommand" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base constructor initializes all fields to their default values. The following table shows initial property values for an instance of <xref:System.Data.Odbc.OdbcCommand>.  
-  
+The base constructor initializes all fields to their default values. The following table shows initial property values for an instance of <xref:System.Data.Odbc.OdbcCommand>.  
+ 
 |Properties|Initial Value|  
 |----------------|-------------------|  
 |<xref:System.Data.Odbc.OdbcCommand.CommandText%2A>|empty string ("")|  
 |<xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A>|30|  
 |<xref:System.Data.Odbc.OdbcCommand.CommandType%2A>|`Text`|  
 |<xref:System.Data.Odbc.OdbcCommand.Connection%2A>|null|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,19 +143,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcCommand" /> class with the text of the query, an <see cref="T:System.Data.Odbc.OdbcConnection" /> object, and the <see cref="P:System.Data.Odbc.OdbcCommand.Transaction" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows initial property values for an instance of this implementation of the <xref:System.Data.Odbc.OdbcCommand>.  
-  
+The following table shows initial property values for an instance of this implementation of the <xref:System.Data.Odbc.OdbcCommand>.  
+ 
 |Properties|Initial Value|  
 |----------------|-------------------|  
 |<xref:System.Data.Odbc.OdbcCommand.CommandText%2A>|`cmdText`|  
 |<xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A>|30|  
 |<xref:System.Data.Odbc.OdbcCommand.CommandType%2A>|`Text`|  
 |<xref:System.Data.Odbc.OdbcCommand.Connection%2A>|A new <xref:System.Data.Odbc.OdbcConnection> that is the value for the `connection` parameter.|  
-  
- You can change the value for any one of these parameters by setting the related property.  
-  
+ 
+You can change the value for any one of these parameters by setting the related property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,12 +177,12 @@
         <summary>Tries to cancel the execution of an <see cref="T:System.Data.Odbc.OdbcCommand" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there is nothing to cancel, nothing occurs. However, if there is a command in process, and the cancellation try fails, no exception is generated.  
-  
- To cancel a query on one thread, <xref:System.Data.Odbc.OdbcCommand.Cancel%2A> must be called from another thread. Because you cannot execute commands asynchronously with <xref:System.Data.Odbc.OdbcCommand>, to cancel a command from another thread, one thread must be running synchronously. This means that the <xref:System.Data.Odbc.OdbcCommand> object must be accessible from both threads.  
-  
+If there is nothing to cancel, nothing occurs. However, if there is a command in process, and the cancellation try fails, no exception is generated.  
+ 
+To cancel a query on one thread, <xref:System.Data.Odbc.OdbcCommand.Cancel%2A> must be called from another thread. Because you cannot execute commands asynchronously with <xref:System.Data.Odbc.OdbcCommand>, to cancel a command from another thread, one thread must be running synchronously. This means that the <xref:System.Data.Odbc.OdbcCommand> object must be accessible from both threads.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,77 +215,77 @@
         <value>The SQL statement or stored procedure to execute. The default value is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Data.IDbCommand.CommandType%2A> property is set to `StoredProcedure`, the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> property should be set using standard ODBC stored procedure escape sequences. Setting the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> to the name of the stored procedure does not function as it does for other .NET Framework data providers.  
-  
- Many language features, such as outer joins and scalar function calls, are generally implemented by data sources. Even the syntax for these features is generally data source-specific. Therefore, ODBC defines escape sequences that contain standard syntax for the following language features:  
-  
+When the <xref:System.Data.IDbCommand.CommandType%2A> property is set to `StoredProcedure`, the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> property should be set using standard ODBC stored procedure escape sequences. Setting the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> to the name of the stored procedure does not function as it does for other .NET Framework data providers.  
+ 
+Many language features, such as outer joins and scalar function calls, are generally implemented by data sources. Even the syntax for these features is generally data source-specific. Therefore, ODBC defines escape sequences that contain standard syntax for the following language features:  
+ 
 -   Date, time, timestamp, and datetime interval literals  
-  
+ 
 -   Scalar functions such as numeric, string, and data type conversion functions  
-  
+ 
 -   LIKE predicate escape character  
-  
+ 
 -   Outer joins  
-  
+ 
 -   Procedure calls  
-  
- The escape sequence used by ODBC is as follows:  
-  
+ 
+The escape sequence used by ODBC is as follows:  
+ 
 ```  
 {extension}  
 ```  
-  
- This escape sequence is recognized and parsed by ODBC drivers. They then replace any escape sequences with data source-specific grammar.  
-  
- A procedure is an executable object stored at the data source. Generally, it is one or more SQL statements that have been precompiled. The escape sequence for calling a procedure is  
-  
+ 
+This escape sequence is recognized and parsed by ODBC drivers. They then replace any escape sequences with data source-specific grammar.  
+ 
+A procedure is an executable object stored at the data source. Generally, it is one or more SQL statements that have been precompiled. The escape sequence for calling a procedure is  
+ 
 ```  
 {[?=]call procedure-name[([parameter][,[parameter]]...)]}  
 ```  
-  
- where `procedure-name` specifies the name of a procedure and `parameter` specifies a procedure parameter.  
-  
- The command executes this stored procedure when you call one of the Execute methods (for example, <xref:System.Data.Odbc.OdbcCommand.ExecuteReader%2A> or <xref:System.Data.Odbc.OdbcCommand.ExecuteNonQuery%2A>).  
-  
- You cannot set the <xref:System.Data.Odbc.OdbcCommand.Connection%2A>, <xref:System.Data.Odbc.OdbcCommand.CommandType%2A> and <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> properties if the current connection is performing an execute or fetch operation.  
-  
- The ODBC.NET Provider does not support named parameters for passing parameters to an SQL statement or a stored procedure called by an <xref:System.Data.Odbc.OdbcCommand> when <xref:System.Data.Odbc.OdbcCommand.CommandType%2A> is set to `Text`. In this case, the question mark (?) placeholder must be used. For example:  
-  
+ 
+where `procedure-name` specifies the name of a procedure and `parameter` specifies a procedure parameter.  
+ 
+The command executes this stored procedure when you call one of the Execute methods (for example, <xref:System.Data.Odbc.OdbcCommand.ExecuteReader%2A> or <xref:System.Data.Odbc.OdbcCommand.ExecuteNonQuery%2A>).  
+ 
+You cannot set the <xref:System.Data.Odbc.OdbcCommand.Connection%2A>, <xref:System.Data.Odbc.OdbcCommand.CommandType%2A> and <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> properties if the current connection is performing an execute or fetch operation.  
+ 
+The ODBC.NET Provider does not support named parameters for passing parameters to an SQL statement or a stored procedure called by an <xref:System.Data.Odbc.OdbcCommand> when <xref:System.Data.Odbc.OdbcCommand.CommandType%2A> is set to `Text`. In this case, the question mark (?) placeholder must be used. For example:  
+ 
 ```  
 SELECT * FROM Customers WHERE CustomerID = ?  
 ```  
-  
- Therefore, the order in which <xref:System.Data.Odbc.OdbcParameter> objects are added to the <xref:System.Data.Odbc.OdbcParameterCollection> must directly correspond to the position of the question mark placeholder for the parameter.  
-  
- If a parameter contains a null value, the .NET Framework Data Provider for ODBC still binds that parameter, but uses a default parameter, if one has been defined by using SQL_DEFAULT_PARAM, instead of the null value. For example, the <xref:System.Data.Odbc.OdbcParameterCollection>:  
-  
+ 
+Therefore, the order in which <xref:System.Data.Odbc.OdbcParameter> objects are added to the <xref:System.Data.Odbc.OdbcParameterCollection> must directly correspond to the position of the question mark placeholder for the parameter.  
+ 
+If a parameter contains a null value, the .NET Framework Data Provider for ODBC still binds that parameter, but uses a default parameter, if one has been defined by using SQL_DEFAULT_PARAM, instead of the null value. For example, the <xref:System.Data.Odbc.OdbcParameterCollection>:  
+ 
 ```  
 {1, null, 2}  
 ```  
-  
- passed into the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> property:  
-  
+ 
+passed into the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> property:  
+ 
 ```  
 {call sp(?, ?, ?)}  
 ```  
-  
- causes the .NET Framework Data Provider for ODBC binding the first parameter to the value 1, the third parameter to the value 2, and the second parameter as SQL_DEFAULT_PARAM. However, this behavior is driver-dependent. If the driver does not support this functionality, just do not pass in a value for the parameter. For example, use the <xref:System.Data.Odbc.OdbcParameterCollection>:  
-  
+ 
+causes the .NET Framework Data Provider for ODBC binding the first parameter to the value 1, the third parameter to the value 2, and the second parameter as SQL_DEFAULT_PARAM. However, this behavior is driver-dependent. If the driver does not support this functionality, just do not pass in a value for the parameter. For example, use the <xref:System.Data.Odbc.OdbcParameterCollection>:  
+ 
 ```  
 {1, 2}  
 ```  
-  
- and set the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> property to the following:  
-  
+ 
+and set the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> property to the following:  
+ 
 ```  
 {call sp(?, null, ?)}  
 ```  
-  
+ 
 > [!NOTE]
 >  If a parameter is omitted, the comma delimiting it from other parameters must still appear. If an input or input/output parameter is omitted, the procedure uses the default value of the parameter. Another way to specify the default value of an input or input/output parameter is to set the value of the length/indicator buffer bound to the parameter to SQL_DEFAULT_PARAM.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -307,10 +307,10 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <value>The time in seconds to wait for the command to execute. The default is 30 seconds.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A value of zero (0) specifies no limit to the wait time, instead of no wait time, and therefore should be avoided.  
-  
+A value of zero (0) specifies no limit to the wait time, instead of no wait time, and therefore should be avoided.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -340,23 +340,23 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <value>One of the <see cref="T:System.Data.CommandType" /> values. The default is <see langword="Text" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Data.Odbc.OdbcCommand.CommandType%2A> property is set to `StoredProcedure`, you should set the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> property to the full ODBC call syntax. The command then executes this stored procedure when you call one of the Execute methods (for example, <xref:System.Data.Odbc.OdbcCommand.ExecuteReader%2A> or <xref:System.Data.Odbc.OdbcCommand.ExecuteNonQuery%2A>).  
-  
- The <xref:System.Data.Odbc.OdbcCommand.Connection%2A>, <xref:System.Data.Odbc.OdbcCommand.CommandType%2A> and <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> properties cannot be set if the current connection is performing an execute or fetch operation.  
-  
- The .NET Framework Data Provider for ODBC does not support passing named parameters to an SQL statement or to a stored procedure called by an <xref:System.Data.Odbc.OdbcCommand>. In either of these cases, use the question mark (?) placeholder. For example:  
-  
+When the <xref:System.Data.Odbc.OdbcCommand.CommandType%2A> property is set to `StoredProcedure`, you should set the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> property to the full ODBC call syntax. The command then executes this stored procedure when you call one of the Execute methods (for example, <xref:System.Data.Odbc.OdbcCommand.ExecuteReader%2A> or <xref:System.Data.Odbc.OdbcCommand.ExecuteNonQuery%2A>).  
+ 
+The <xref:System.Data.Odbc.OdbcCommand.Connection%2A>, <xref:System.Data.Odbc.OdbcCommand.CommandType%2A> and <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> properties cannot be set if the current connection is performing an execute or fetch operation.  
+ 
+The .NET Framework Data Provider for ODBC does not support passing named parameters to an SQL statement or to a stored procedure called by an <xref:System.Data.Odbc.OdbcCommand>. In either of these cases, use the question mark (?) placeholder. For example:  
+ 
 ```  
 SELECT * FROM Customers WHERE CustomerID = ?  
 ```  
-  
- The order in which <xref:System.Data.Odbc.OdbcParameter> objects are added to the <xref:System.Data.Odbc.OdbcParameterCollection> must directly correspond to the position of the question mark placeholder for the parameter.  
-  
+ 
+The order in which <xref:System.Data.Odbc.OdbcParameter> objects are added to the <xref:System.Data.Odbc.OdbcParameterCollection> must directly correspond to the position of the question mark placeholder for the parameter.  
+ 
 > [!NOTE]
 >  The .NET Framework Data Provider for ODBC does not support the <xref:System.Data.CommandType> setting of `TableDirect`.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value was not a valid <see cref="T:System.Data.CommandType" />.</exception>
@@ -387,12 +387,12 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <value>The connection to a data source. The default is a null value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot set the <xref:System.Data.Odbc.OdbcCommand.Connection%2A>, <xref:System.Data.Odbc.OdbcCommand.CommandType%2A>, and <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> properties if the current connection is performing an execute or fetch operation.  
-  
- If you set <xref:System.Data.Odbc.OdbcCommand.Connection%2A> while a transaction is in progress and the <xref:System.Data.Odbc.OdbcCommand.Transaction%2A> property is not null, an <xref:System.InvalidOperationException> is generated. If you set <xref:System.Data.Odbc.OdbcCommand.Connection%2A> after the transaction has been committed or rolled back, and the <xref:System.Data.Odbc.OdbcCommand.Transaction%2A> property is not null, the <xref:System.Data.Odbc.OdbcCommand.Transaction%2A> property is then set to a null value.  
-  
+You cannot set the <xref:System.Data.Odbc.OdbcCommand.Connection%2A>, <xref:System.Data.Odbc.OdbcCommand.CommandType%2A>, and <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> properties if the current connection is performing an execute or fetch operation.  
+ 
+If you set <xref:System.Data.Odbc.OdbcCommand.Connection%2A> while a transaction is in progress and the <xref:System.Data.Odbc.OdbcCommand.Transaction%2A> property is not null, an <xref:System.InvalidOperationException> is generated. If you set <xref:System.Data.Odbc.OdbcCommand.Connection%2A> after the transaction has been committed or rolled back, and the <xref:System.Data.Odbc.OdbcCommand.Transaction%2A> property is not null, the <xref:System.Data.Odbc.OdbcCommand.Transaction%2A> property is then set to a null value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Data.Odbc.OdbcCommand.Connection" /> property was changed while a transaction was in progress.</exception>
@@ -435,10 +435,10 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <returns>An <see cref="T:System.Data.Odbc.OdbcParameter" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Odbc.OdbcCommand.CreateParameter%2A> method is a strongly-typed version of <xref:System.Data.IDbCommand.CreateParameter%2A>.  
-  
+The <xref:System.Data.Odbc.OdbcCommand.CreateParameter%2A> method is a strongly-typed version of <xref:System.Data.IDbCommand.CreateParameter%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -590,18 +590,18 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <returns>For UPDATE, INSERT, and DELETE statements, the return value is the number of rows affected by the command. For all other types of statements, the return value is -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use <xref:System.Data.Odbc.OdbcCommand.ExecuteNonQuery%2A> to perform catalog operations (for example, querying the structure of a database or creating database objects such as tables); or to change the data in a database, without using a <xref:System.Data.DataSet>, by executing UPDATE, INSERT, or DELETE statements.  
-  
- You can also use <xref:System.Data.Odbc.OdbcCommand.ExecuteNonQuery%2A> to execute multiple SQL statements if the underlying ODBC driver supports this functionality. In this case, the return value is the number of rows affected by all statements in the command.  
-  
- Although <xref:System.Data.Odbc.OdbcCommand.ExecuteNonQuery%2A> returns no rows, any output parameters or return values mapped to parameters are populated with data.  
-  
- For UPDATE, INSERT, and DELETE statements, the return value is the number of rows affected by the command. For all other types of statements, the return value is -1. If a rollback occurs, the return value is also -1.  
-  
- When a trigger exists on a table and data is being added or changed in the table, the return value includes the number of rows affected by both the insert or update operation and the number of rows affected by the trigger or triggers.  
-  
+You can use <xref:System.Data.Odbc.OdbcCommand.ExecuteNonQuery%2A> to perform catalog operations (for example, querying the structure of a database or creating database objects such as tables); or to change the data in a database, without using a <xref:System.Data.DataSet>, by executing UPDATE, INSERT, or DELETE statements.  
+ 
+You can also use <xref:System.Data.Odbc.OdbcCommand.ExecuteNonQuery%2A> to execute multiple SQL statements if the underlying ODBC driver supports this functionality. In this case, the return value is the number of rows affected by all statements in the command.  
+ 
+Although <xref:System.Data.Odbc.OdbcCommand.ExecuteNonQuery%2A> returns no rows, any output parameters or return values mapped to parameters are populated with data.  
+ 
+For UPDATE, INSERT, and DELETE statements, the return value is the number of rows affected by the command. For all other types of statements, the return value is -1. If a rollback occurs, the return value is also -1.  
+ 
+When a trigger exists on a table and data is being added or changed in the table, the return value includes the number of rows affected by both the insert or update operation and the number of rows affected by the trigger or triggers.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection does not exist.  
@@ -629,12 +629,12 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <returns>An <see cref="T:System.Data.Odbc.OdbcDataReader" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should set the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> property to the full ODBC call syntax for stored procedures. The command executes this stored procedure when you call <xref:System.Data.Odbc.OdbcCommand.ExecuteReader%2A>.  
-  
- While the <xref:System.Data.Odbc.OdbcDataReader> is used, the associated <xref:System.Data.Odbc.OdbcConnection> is busy serving the <xref:System.Data.Odbc.OdbcDataReader>. While in this state, no other operations can be performed on the <xref:System.Data.Odbc.OdbcConnection> other than closing it. This is the case until the <xref:System.Data.Odbc.OdbcDataReader.Close%2A> method of the <xref:System.Data.Odbc.OdbcDataReader> is called.  
-  
+You should set the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> property to the full ODBC call syntax for stored procedures. The command executes this stored procedure when you call <xref:System.Data.Odbc.OdbcCommand.ExecuteReader%2A>.  
+ 
+While the <xref:System.Data.Odbc.OdbcDataReader> is used, the associated <xref:System.Data.Odbc.OdbcConnection> is busy serving the <xref:System.Data.Odbc.OdbcDataReader>. While in this state, no other operations can be performed on the <xref:System.Data.Odbc.OdbcConnection> other than closing it. This is the case until the <xref:System.Data.Odbc.OdbcDataReader.Close%2A> method of the <xref:System.Data.Odbc.OdbcDataReader> is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -660,19 +660,19 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <returns>An <see cref="T:System.Data.Odbc.OdbcDataReader" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you expect your SQL statement to return only a single row, specifying `SingleRow` as the <xref:System.Data.CommandBehavior> value may improve application performance.  
-  
- You should set the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> property to the full ODBC call syntax for stored procedures. The command executes this stored procedure when you call <xref:System.Data.Odbc.OdbcCommand.ExecuteReader%2A>.  
-  
- The <xref:System.Data.Odbc.OdbcDataReader> supports a special mode that enables large binary values to be read efficiently. For more information, see the `SequentialAccess` setting for <xref:System.Data.CommandBehavior>.  
-  
+If you expect your SQL statement to return only a single row, specifying `SingleRow` as the <xref:System.Data.CommandBehavior> value may improve application performance.  
+ 
+You should set the <xref:System.Data.Odbc.OdbcCommand.CommandText%2A> property to the full ODBC call syntax for stored procedures. The command executes this stored procedure when you call <xref:System.Data.Odbc.OdbcCommand.ExecuteReader%2A>.  
+ 
+The <xref:System.Data.Odbc.OdbcDataReader> supports a special mode that enables large binary values to be read efficiently. For more information, see the `SequentialAccess` setting for <xref:System.Data.CommandBehavior>.  
+ 
 > [!NOTE]
 >  The `SequentialAccess` value of <xref:System.Data.CommandBehavior> is not a limiting setting; it just means that you will have at least sequential access to the <xref:System.Data.Odbc.OdbcDataReader>. For example, when you use the SQL Server ODBC Driver in `SequentialAccess` mode, you can still move to the first column of an <xref:System.Data.Odbc.OdbcDataReader> row after having read through all the other columns sequentially.  
-  
- While the <xref:System.Data.Odbc.OdbcDataReader> is used, the associated <xref:System.Data.Odbc.OdbcConnection> is busy serving the <xref:System.Data.Odbc.OdbcDataReader>. While in this state, no other operations can be performed on the <xref:System.Data.Odbc.OdbcConnection> other than closing it. This is the case until you call the <xref:System.Data.Odbc.OdbcDataReader.Close%2A?displayProperty=fullName> method. If the <xref:System.Data.Odbc.OdbcDataReader> is created with <xref:System.Data.CommandBehavior> set to `CloseConnection`, closing the <xref:System.Data.Odbc.OdbcDataReader> closes the connection automatically.  
-  
+ 
+While the <xref:System.Data.Odbc.OdbcDataReader> is used, the associated <xref:System.Data.Odbc.OdbcConnection> is busy serving the <xref:System.Data.Odbc.OdbcDataReader>. While in this state, no other operations can be performed on the <xref:System.Data.Odbc.OdbcConnection> other than closing it. This is the case until you call the <xref:System.Data.Odbc.OdbcDataReader.Close%2A?displayProperty=fullName> method. If the <xref:System.Data.Odbc.OdbcDataReader> is created with <xref:System.Data.CommandBehavior> set to `CloseConnection`, closing the <xref:System.Data.Odbc.OdbcDataReader> closes the connection automatically.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -695,10 +695,10 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <returns>The first column of the first row in the result set, or a null reference if the result set is empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.Odbc.OdbcCommand.ExecuteScalar%2A> method to retrieve a single value (for example, an aggregate value) from a data source. This requires less code than using the <xref:System.Data.Odbc.OdbcCommand.ExecuteReader%2A> method, and then performing the operations required to generate the single value from the data returned by an <xref:System.Data.Odbc.OdbcDataReader>.  
-  
+Use the <xref:System.Data.Odbc.OdbcCommand.ExecuteScalar%2A> method to retrieve a single value (for example, an aggregate value) from a data source. This requires less code than using the <xref:System.Data.Odbc.OdbcCommand.ExecuteReader%2A> method, and then performing the operations required to generate the single value from the data returned by an <xref:System.Data.Odbc.OdbcDataReader>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -725,19 +725,19 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <value>The parameters of the SQL statement or stored procedure. The default is an empty collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.Data.Odbc.OdbcCommand.CommandType%2A> is set to `Text`, the .NET Framework Data Provider for ODBC does not support passing named parameters to an SQL statement or to a stored procedure called by an <xref:System.Data.Odbc.OdbcCommand>. In either of these cases, use the question mark (?) placeholder. For example:  
-  
+When <xref:System.Data.Odbc.OdbcCommand.CommandType%2A> is set to `Text`, the .NET Framework Data Provider for ODBC does not support passing named parameters to an SQL statement or to a stored procedure called by an <xref:System.Data.Odbc.OdbcCommand>. In either of these cases, use the question mark (?) placeholder. For example:  
+ 
 ```  
 SELECT * FROM Customers WHERE CustomerID = ?  
 ```  
-  
- The order in which <xref:System.Data.Odbc.OdbcParameter> objects are added to the <xref:System.Data.Odbc.OdbcParameterCollection> must directly correspond to the position of the question mark placeholder for the parameter in the command text.  
-  
+ 
+The order in which <xref:System.Data.Odbc.OdbcParameter> objects are added to the <xref:System.Data.Odbc.OdbcParameterCollection> must directly correspond to the position of the question mark placeholder for the parameter in the command text.  
+ 
 > [!NOTE]
 >  If the parameters in the collection do not match the requirements of the query to be executed, an error may result.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -759,14 +759,14 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <summary>Creates a prepared or compiled version of the command at the data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Odbc.OdbcCommand.Prepare%2A> method calls the ODBC `SQLPrepare` function. Depending on the capabilities of the underlying ODBC driver and data source, parameter information such as data types may be checked when the statement is prepared, if all parameters have been bound, or when it is executed if not all parameters have been bound. For maximum interoperability, an application should unbind all parameters that applied to a previous SQL statement before preparing a new SQL statement on the same <xref:System.Data.Odbc.OdbcCommand>. This prevents errors that are caused by previous parameter information being applied to the new SQL statement.  
-  
- If you call an Execute method after you call <xref:System.Data.Odbc.OdbcCommand.Prepare%2A>, any parameter value that is larger than the value specified by the <xref:System.Data.Odbc.OdbcParameter.Size%2A> property is automatically truncated to the original specified size of the parameter, and no truncation errors are returned.  
-  
- Output parameters (whether prepared or not) must have a user-specified data type. If you specify a variable length data type, you must also specify the maximum <xref:System.Data.Odbc.OdbcParameter.Size%2A>.  
-  
+The <xref:System.Data.Odbc.OdbcCommand.Prepare%2A> method calls the ODBC `SQLPrepare` function. Depending on the capabilities of the underlying ODBC driver and data source, parameter information such as data types may be checked when the statement is prepared, if all parameters have been bound, or when it is executed if not all parameters have been bound. For maximum interoperability, an application should unbind all parameters that applied to a previous SQL statement before preparing a new SQL statement on the same <xref:System.Data.Odbc.OdbcCommand>. This prevents errors that are caused by previous parameter information being applied to the new SQL statement.  
+ 
+If you call an Execute method after you call <xref:System.Data.Odbc.OdbcCommand.Prepare%2A>, any parameter value that is larger than the value specified by the <xref:System.Data.Odbc.OdbcParameter.Size%2A> property is automatically truncated to the original specified size of the parameter, and no truncation errors are returned.  
+ 
+Output parameters (whether prepared or not) must have a user-specified data type. If you specify a variable length data type, you must also specify the maximum <xref:System.Data.Odbc.OdbcParameter.Size%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Data.Odbc.OdbcCommand.Connection" /> is not set.  
@@ -793,10 +793,10 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <summary>Resets the <see cref="P:System.Data.Odbc.OdbcCommand.CommandTimeout" /> property to the default value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> is 30 seconds.  
-  
+The default value of the <xref:System.Data.Odbc.OdbcCommand.CommandTimeout%2A> is 30 seconds.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -819,10 +819,10 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <returns>A new <see cref="T;System.Object" /> that is a copy of this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Odbc.OdbcCommand> instance is cast to an <xref:InterfaceName> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Odbc.OdbcCommand> instance is cast to an <xref:InterfaceName> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -852,10 +852,10 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <value>An <see cref="T:System.Data.Odbc.OdbcTransaction" />. The default is a null value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot set the <xref:System.Data.Odbc.OdbcCommand.Transaction%2A> property if it is already set to a specific value, and the command is in the process of executing. If you set the transaction property to an <xref:System.Data.Odbc.OdbcTransaction> object that is not connected to the same <xref:System.Data.Odbc.OdbcConnection> as the <xref:System.Data.Odbc.OdbcCommand> object, an exception will be thrown the next time that you try to execute a statement.  
-  
+You cannot set the <xref:System.Data.Odbc.OdbcCommand.Transaction%2A> property if it is already set to a specific value, and the command is in the process of executing. If you set the transaction property to an <xref:System.Data.Odbc.OdbcTransaction> object that is not connected to the same <xref:System.Data.Odbc.OdbcConnection> as the <xref:System.Data.Odbc.OdbcCommand> object, an exception will be thrown the next time that you try to execute a statement.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -882,12 +882,12 @@ SELECT * FROM Customers WHERE CustomerID = ?
         <value>One of the <see cref="T:System.Data.UpdateRowSource" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default <xref:System.Data.UpdateRowSource> value is **Both** unless the command is automatically generated, as with the <xref:System.Data.Odbc.OdbcCommandBuilder>, in which case the default is **None**.  
-  
- For more information about how to use the <xref:System.Data.Odbc.OdbcCommand.UpdatedRowSource%2A> property, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
-  
+The default <xref:System.Data.UpdateRowSource> value is **Both** unless the command is automatically generated, as with the <xref:System.Data.Odbc.OdbcCommandBuilder>, in which case the default is **None**.  
+ 
+For more information about how to use the <xref:System.Data.Odbc.OdbcCommand.UpdatedRowSource%2A> property, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

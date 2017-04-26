@@ -29,10 +29,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509SecurityTokenHandler" /> class with default values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler.MapToWindows%2A> property is set to `false` and the <xref:System.IdentityModel.Selectors.X509CertificateValidator.PeerOrChainTrust%2A> validator is used as the default certificate validator.  
-  
+The <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler.MapToWindows%2A> property is set to `false` and the <xref:System.IdentityModel.Selectors.X509CertificateValidator.PeerOrChainTrust%2A> validator is used as the default certificate validator.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -55,10 +55,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509SecurityTokenHandler" /> class by using a value that indicates whether the certificate should be mapped to a Windows account.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Selectors.X509CertificateValidator.PeerOrChainTrust%2A> validator is used as the default certificate validator.  
-  
+The <xref:System.IdentityModel.Selectors.X509CertificateValidator.PeerOrChainTrust%2A> validator is used as the default certificate validator.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,10 +80,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509SecurityTokenHandler" /> class by using the specified certificate validator.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler.MapToWindows%2A> property is set to `false`.  
-  
+The <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler.MapToWindows%2A> property is set to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,16 +200,16 @@
           <see langword="true" /> if the <paramref name="securityKeyIdentifierClause" /> is supported and if the <see cref="P:System.IdentityModel.Tokens.X509SecurityTokenHandler.WriteXmlDSigDefinedClauseTypes" /> property is set to <see langword="true" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The supported key identifier clause types are:  
-  
+The supported key identifier clause types are:  
+ 
 1.  <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause>  
-  
+ 
 2.  <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause>  
-  
+ 
 3.  <xref:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause>  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -495,16 +495,16 @@
           <see langword="true" /> if XmlDsig-defined clause types are preferred; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Supported XmlDSig-defined <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause> types are:  
-  
+Supported XmlDSig-defined <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause> types are:  
+ 
 -   X509IssuerSerial  
-  
+ 
 -   X509SKI  
-  
+ 
 -   X509Certificate  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

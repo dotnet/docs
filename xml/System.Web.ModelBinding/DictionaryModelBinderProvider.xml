@@ -53,10 +53,10 @@
         <returns>The model binder, or <see langword="null" /> if the attempt to get a model binder is unsuccessful.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The attempt to get a model binder will be unsuccessful if the value provider's <xref:System.Web.ModelBinding.IValueProvider.ContainsPrefix%2A> method returns `false`.  
-  
+The attempt to get a model binder will be unsuccessful if the value provider's <xref:System.Web.ModelBinding.IValueProvider.ContainsPrefix%2A> method returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

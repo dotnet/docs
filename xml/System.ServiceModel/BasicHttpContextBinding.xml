@@ -70,10 +70,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.BasicHttpContextBinding" /> class with the specified binding configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `configName` parameter should be set to the name of the `<binding>` element in the configuration file that configures this binding.  
-  
+The `configName` parameter should be set to the name of the `<binding>` element in the configuration file that configures this binding.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <returns>A <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> that contains the ordered stack of binding elements described by the <see cref="T:System.ServiceModel.BasicHttpContextBinding" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection contains the <xref:System.ServiceModel.Channels.ContextBindingElement> that enables SOAP headers to be used to exchange context when HTTP cookies are not enabled; otherwise use HTTP cookies to exchange context.  
-  
+The collection contains the <xref:System.ServiceModel.Channels.ContextBindingElement> that enables SOAP headers to be used to exchange context when HTTP cookies are not enabled; otherwise use HTTP cookies to exchange context.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,25 +13,25 @@
     <summary>Defines values for specifying how the height of a row is adjusted.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView> control can resize its rows based on the preferred height of each row. The preferred row height is the minimum height required to display the largest cell value in that row. Different size modes let you indicate which cells are used to calculate the new heights (either header cells or non-header cells) and whether to resize all rows or only the rows that are currently displayed. Resizing a subset of rows is useful to avoid a performance penalty when working with many rows of data.  
+The <xref:System.Windows.Forms.DataGridView> control can resize its rows based on the preferred height of each row. The preferred row height is the minimum height required to display the largest cell value in that row. Different size modes let you indicate which cells are used to calculate the new heights (either header cells or non-header cells) and whether to resize all rows or only the rows that are currently displayed. Resizing a subset of rows is useful to avoid a performance penalty when working with many rows of data.  
+ 
+Content-based automatic resizing prevents users from adjusting row heights with the mouse.  
+ 
+This enumeration is used by the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.AutoResizeRow%2A> method.  
+ 
+For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
+ 
   
- Content-based automatic resizing prevents users from adjusting row heights with the mouse.  
-  
- This enumeration is used by the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.AutoResizeRow%2A> method.  
-  
- For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example resizes the third row in the control to fit the contents of its nonheader cells. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/programmatically-resize-cells-to-fit-content-in-the-datagrid.md).  
-  
- [!code-cpp[System.Windows.Forms.DataGridView.ProgrammaticResizing#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CPP/programmaticsizing.cpp#4)]
- [!code-csharp[System.Windows.Forms.DataGridView.ProgrammaticResizing#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CS/programmaticsizing.cs#4)]
- [!code-vb[System.Windows.Forms.DataGridView.ProgrammaticResizing#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/VB/programmaticsizing.vb#4)]  
-  
+The following code example resizes the third row in the control to fit the contents of its nonheader cells. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/programmatically-resize-cells-to-fit-content-in-the-datagrid.md).  
+ 
+[!code-cpp[System.Windows.Forms.DataGridView.ProgrammaticResizing#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CPP/programmaticsizing.cpp#4)]
+[!code-csharp[System.Windows.Forms.DataGridView.ProgrammaticResizing#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CS/programmaticsizing.cs#4)]
+[!code-vb[System.Windows.Forms.DataGridView.ProgrammaticResizing#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/VB/programmaticsizing.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

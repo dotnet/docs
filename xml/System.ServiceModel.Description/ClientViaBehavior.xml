@@ -18,14 +18,14 @@
     <summary>The <see cref="T:System.ServiceModel.Description.ClientViaBehavior" /> is used by clients to specify the URI for which the transport channel should be created.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If such a behavior exists in the behavior collection on a client endpoint, the transport uses the URI that it provides, while all the other channel layers in the stack use the <xref:System.ServiceModel.EndpointAddress> provided at <xref:System.ServiceModel.ChannelFactory> construction time. This <xref:System.ServiceModel.EndpointAddress> also becomes the WS-Addressing `To` header.  
-  
- Use this behavior when the immediate network destination is not the intended processor of the message to enable multiple-hop conversations when the calling application does not necessarily know the ultimate destination or when the destination `Via` header is not an address.  
-  
- You can also set this value using the [\&lt;clientVia\&gt;](~/docs/framework/configure-apps/file-schema/wcf/clientvia.md) element in a client application configuration file.  
-  
+If such a behavior exists in the behavior collection on a client endpoint, the transport uses the URI that it provides, while all the other channel layers in the stack use the <xref:System.ServiceModel.EndpointAddress> provided at <xref:System.ServiceModel.ChannelFactory> construction time. This <xref:System.ServiceModel.EndpointAddress> also becomes the WS-Addressing `To` header.  
+ 
+Use this behavior when the immediate network destination is not the intended processor of the message to enable multiple-hop conversations when the calling application does not necessarily know the ultimate destination or when the destination `Via` header is not an address.  
+ 
+You can also set this value using the [\&lt;clientVia\&gt;](~/docs/framework/configure-apps/file-schema/wcf/clientvia.md) element in a client application configuration file.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -116,10 +116,10 @@
         <summary>Implements a modification or extension of the service across an endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws an <xref:System.InvalidOperationException> because this operation should not be performed at the client end.  
-  
+Throws an <xref:System.InvalidOperationException> because this operation should not be performed at the client end.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,10 +162,10 @@
         <value>The URI for which the transport channel should be created.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can also set this value using the [\&lt;clientVia\&gt;](~/docs/framework/configure-apps/file-schema/wcf/clientvia.md) element in a client application configuration file.  
-  
+You can also set this value using the [\&lt;clientVia\&gt;](~/docs/framework/configure-apps/file-schema/wcf/clientvia.md) element in a client application configuration file.  
+ 
  ]]></format>
         </remarks>
       </Docs>

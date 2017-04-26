@@ -13,21 +13,21 @@
     <summary>Specifies the style of dashed lines drawn with a <see cref="T:System.Drawing.Pen" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To define a custom <xref:System.Drawing.Pen.DashStyle%2A>, set the <xref:System.Drawing.Pen.DashPattern%2A> property of the <xref:System.Drawing.Pen>.  
+To define a custom <xref:System.Drawing.Pen.DashStyle%2A>, set the <xref:System.Drawing.Pen.DashPattern%2A> property of the <xref:System.Drawing.Pen>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a pen and set its <xref:System.Drawing.Pen.DashStyle%2A> property using the <xref:System.Drawing.Drawing2D.DashStyle> enumeration.  
-  
- This example is designed to be used with Windows Forms. Create a form that contains a <xref:System.Windows.Forms.Button> named `Button3`. Paste the code into the form and associate the `Button3_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cpp[System.Drawing.ImageExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#3)]
- [!code-csharp[System.Drawing.ImageExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#3)]
- [!code-vb[System.Drawing.ImageExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#3)]  
-  
+The following code example demonstrates how to create a pen and set its <xref:System.Drawing.Pen.DashStyle%2A> property using the <xref:System.Drawing.Drawing2D.DashStyle> enumeration.  
+ 
+This example is designed to be used with Windows Forms. Create a form that contains a <xref:System.Windows.Forms.Button> named `Button3`. Paste the code into the form and associate the `Button3_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
+ 
+[!code-cpp[System.Drawing.ImageExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#3)]
+[!code-csharp[System.Drawing.ImageExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#3)]
+[!code-vb[System.Drawing.ImageExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -19,14 +19,14 @@
     <summary>Represents the default version of <see cref="T:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService" /> created by the workflow runtime engine if no other WorkflowCommitWorkBatch service is added.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- The <xref:System.Workflow.Runtime.WorkflowRuntime> class creates a <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService> object when the runtime engine is started if no other WorkflowCommitWorkBatch service has been added.  
-  
+ 
+The <xref:System.Workflow.Runtime.WorkflowRuntime> class creates a <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService> object when the runtime engine is started if no other WorkflowCommitWorkBatch service has been added.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -104,14 +104,14 @@
           <see langword="true" /> if the service should retry committing the work batch; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Retries of work batch commits for <xref:System.Workflow.ComponentModel.TransactionScopeActivity> activities must be modeled into the workflow (usually using a while loop and exception handler outside of the <xref:System.Workflow.ComponentModel.TransactionScopeActivity>). The <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService> cannot do retries in this case because it did not start (and therefore does not own) the transaction.  
-  
- Besides being set programmatically, this functionality can be enabled through a configuration file. For more information on how to set this property through a configuration file, see [Workflow Configuration Files](http://msdn.microsoft.com/en-us/ada4bb90-6c9d-4f3d-a9d0-b559bb0f9909).  
-  
- For general information on retrying work batch transactions, see [Batching State Information in Workflows](http://msdn.microsoft.com/en-us/ecda18ba-9140-4bd7-b13d-6787fdf5959d).  
-  
+Retries of work batch commits for <xref:System.Workflow.ComponentModel.TransactionScopeActivity> activities must be modeled into the workflow (usually using a while loop and exception handler outside of the <xref:System.Workflow.ComponentModel.TransactionScopeActivity>). The <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService> cannot do retries in this case because it did not start (and therefore does not own) the transaction.  
+ 
+Besides being set programmatically, this functionality can be enabled through a configuration file. For more information on how to set this property through a configuration file, see [Workflow Configuration Files](http://msdn.microsoft.com/en-us/ada4bb90-6c9d-4f3d-a9d0-b559bb0f9909).  
+ 
+For general information on retrying work batch transactions, see [Batching State Information in Workflows](http://msdn.microsoft.com/en-us/ecda18ba-9140-4bd7-b13d-6787fdf5959d).  
+ 
  ]]></format>
         </remarks>
       </Docs>

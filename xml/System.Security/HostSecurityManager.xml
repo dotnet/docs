@@ -20,18 +20,18 @@
     <summary>Allows the control and customization of security behavior for application domains.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you create a new <xref:System.AppDomain>, the common language runtime queries the <xref:System.AppDomainManager> for the presence of a <xref:System.Security.HostSecurityManager>, which participates in making security decisions for the <xref:System.AppDomain>.  Host providers should implement a host security manager that inherits from the <xref:System.Security.HostSecurityManager> class.  
+When you create a new <xref:System.AppDomain>, the common language runtime queries the <xref:System.AppDomainManager> for the presence of a <xref:System.Security.HostSecurityManager>, which participates in making security decisions for the <xref:System.AppDomain>.  Host providers should implement a host security manager that inherits from the <xref:System.Security.HostSecurityManager> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows a very simple implementation of a <xref:System.Security.HostSecurityManager>.  
-  
- [!code-csharp[System.Security.HostSecurityManager#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.HostSecurityManager/CS/customsecuritymanager.cs#1)]
- [!code-vb[System.Security.HostSecurityManager#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.HostSecurityManager/VB/customsecuritymanager.vb#1)]  
-  
+The following example shows a very simple implementation of a <xref:System.Security.HostSecurityManager>.  
+ 
+[!code-csharp[System.Security.HostSecurityManager#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.HostSecurityManager/CS/customsecuritymanager.cs#1)]
+[!code-vb[System.Security.HostSecurityManager#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.HostSecurityManager/VB/customsecuritymanager.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This class cannot be used by partially trusted or transparent code.</permission>
@@ -88,20 +88,20 @@
         <returns>An object that contains trust information about the application.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be overridden by a derived class. The base implementation calls the application security manager to determine if the application should be executed.  
+This method can be overridden by a derived class. The base implementation calls the application security manager to determine if the application should be executed.  
+ 
+The base implementation does not use the activator evidence. However, an overridden implementation could use the activator evidence to determine the security evidence for the application domain attempting to activate the application.  
+ 
   
- The base implementation does not use the activator evidence. However, an overridden implementation could use the activator evidence to determine the security evidence for the application domain attempting to activate the application.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to override the <xref:System.Security.HostSecurityManager.DetermineApplicationTrust%2A> method for a custom host security manager. This example is part of a larger example provided for the <xref:System.Security.HostSecurityManager> class.  
-  
- [!code-csharp[System.Security.HostSecurityManager#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.HostSecurityManager/CS/customsecuritymanager.cs#3)]
- [!code-vb[System.Security.HostSecurityManager#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.HostSecurityManager/VB/customsecuritymanager.vb#3)]  
-  
+The following example shows how to override the <xref:System.Security.HostSecurityManager.DetermineApplicationTrust%2A> method for a custom host security manager. This example is part of a larger example provided for the <xref:System.Security.HostSecurityManager> class.  
+ 
+[!code-csharp[System.Security.HostSecurityManager#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.HostSecurityManager/CS/customsecuritymanager.cs#3)]
+[!code-vb[System.Security.HostSecurityManager#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.HostSecurityManager/VB/customsecuritymanager.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -132,21 +132,21 @@
         <value>The security policy for the current application domain. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be overridden in a derived class. The base implementation always returns `null`.  
-  
- This property is called at <xref:System.AppDomain> creation time. It allows a host to supply a policy for the current <xref:System.AppDomain>.  A policy level consists of the following:  
-  
+This property can be overridden in a derived class. The base implementation always returns `null`.  
+ 
+This property is called at <xref:System.AppDomain> creation time. It allows a host to supply a policy for the current <xref:System.AppDomain>.  A policy level consists of the following:  
+ 
 -   A set of code groups organized into a single rooted tree.  
-  
+ 
 -   A set of named permission sets that are referenced by the code groups to specify permissions to be granted to code belonging to the code group.  
-  
+ 
 -   A list of fully trusted assemblies.  
-  
+ 
 > [!IMPORTANT]
 >  See the Notes to Inheritors for the <xref:System.Security.HostSecurityManager> class for critical implementation information.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
@@ -170,20 +170,20 @@
         <value>One of the enumeration values that specifies security policy components. The default is <see cref="F:System.Security.HostSecurityManagerOptions.AllFlags" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be overridden in a derived class. The base implementation always returns <xref:System.Security.HostSecurityManagerOptions>.  
+This property can be overridden in a derived class. The base implementation always returns <xref:System.Security.HostSecurityManagerOptions>.  
+ 
+The derived host can change the value of this property when only a subset of the <xref:System.Security.HostSecurityManagerOptions> is of interest.  The possible subsets include none, the refused set, the policy level, and assembly evidence.  
+ 
   
- The derived host can change the value of this property when only a subset of the <xref:System.Security.HostSecurityManagerOptions> is of interest.  The possible subsets include none, the refused set, the policy level, and assembly evidence.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to override the <xref:System.Security.HostSecurityManager.Flags%2A> property for a custom host security manager. This example is part of a larger example provided for the <xref:System.Security.HostSecurityManager> class.  
-  
- [!code-csharp[System.Security.HostSecurityManager#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.HostSecurityManager/CS/customsecuritymanager.cs#2)]
- [!code-vb[System.Security.HostSecurityManager#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.HostSecurityManager/VB/customsecuritymanager.vb#2)]  
-  
+The following example shows how to override the <xref:System.Security.HostSecurityManager.Flags%2A> property for a custom host security manager. This example is part of a larger example provided for the <xref:System.Security.HostSecurityManager> class.  
+ 
+[!code-csharp[System.Security.HostSecurityManager#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.HostSecurityManager/CS/customsecuritymanager.cs#2)]
+[!code-vb[System.Security.HostSecurityManager#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.HostSecurityManager/VB/customsecuritymanager.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,28 +209,28 @@
         <returns>The requested application domain evidence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be overridden by a derived class. The base implementation returns `null`.  
+This method can be overridden by a derived class. The base implementation returns `null`.  
+ 
+The common language runtime calls this method when evidence of the specified type is needed for the current <xref:System.AppDomain>. The returned value is used as host-supplied evidence, and is stored in the <xref:System.AppDomain.Evidence%2A> collection of the <xref:System.AppDomain.CurrentDomain%2A> property. You can use the <xref:System.Security.Policy.Evidence.GetAssemblyEvidence%2A?displayProperty=fullName> method to obtain the generated evidence from the collection.  
+ 
+To get a callback to this method, hosts must specify the <xref:System.Security.HostSecurityManagerOptions> flag in the <xref:System.Security.HostSecurityManager.Flags%2A> property.  
+ 
+This method of generating evidence allows hosts to delay evidence generation for an <xref:System.AppDomain> until the evidence is needed. In the .NET Framework version 3.5 and earlier versions, it was necessary to provide <xref:System.AppDomain> evidence at load time by overriding the <xref:System.Security.HostSecurityManager.ProvideAppDomainEvidence%2A> method. We recommend that you use <xref:System.Security.HostSecurityManager.GenerateAppDomainEvidence%2A> to provide evidence instead of overriding <xref:System.Security.HostSecurityManager.ProvideAppDomainEvidence%2A>.  
+ 
+The <xref:System.Security.HostSecurityManager.GenerateAppDomainEvidence%2A> method is called back into only for types of evidence that the host has specified in the override of the <xref:System.Security.HostSecurityManager.GetHostSuppliedAppDomainEvidenceTypes%2A> method.  
+ 
+A return value of `null` indicates that the host cannot generate evidence of this specific type.  
+ 
   
- The common language runtime calls this method when evidence of the specified type is needed for the current <xref:System.AppDomain>. The returned value is used as host-supplied evidence, and is stored in the <xref:System.AppDomain.Evidence%2A> collection of the <xref:System.AppDomain.CurrentDomain%2A> property. You can use the <xref:System.Security.Policy.Evidence.GetAssemblyEvidence%2A?displayProperty=fullName> method to obtain the generated evidence from the collection.  
-  
- To get a callback to this method, hosts must specify the <xref:System.Security.HostSecurityManagerOptions> flag in the <xref:System.Security.HostSecurityManager.Flags%2A> property.  
-  
- This method of generating evidence allows hosts to delay evidence generation for an <xref:System.AppDomain> until the evidence is needed. In the .NET Framework version 3.5 and earlier versions, it was necessary to provide <xref:System.AppDomain> evidence at load time by overriding the <xref:System.Security.HostSecurityManager.ProvideAppDomainEvidence%2A> method. We recommend that you use <xref:System.Security.HostSecurityManager.GenerateAppDomainEvidence%2A> to provide evidence instead of overriding <xref:System.Security.HostSecurityManager.ProvideAppDomainEvidence%2A>.  
-  
- The <xref:System.Security.HostSecurityManager.GenerateAppDomainEvidence%2A> method is called back into only for types of evidence that the host has specified in the override of the <xref:System.Security.HostSecurityManager.GetHostSuppliedAppDomainEvidenceTypes%2A> method.  
-  
- A return value of `null` indicates that the host cannot generate evidence of this specific type.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to override the <xref:System.Security.HostSecurityManager.ProvideAppDomainEvidence%2A> method for a custom host security manager. This example is part of a larger example provided for the <xref:System.Security.HostSecurityManager> class.  
-  
- [!code-csharp[System.Security.HostSecurityManager#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.HostSecurityManager/CS/customsecuritymanager.cs#6)]
- [!code-vb[System.Security.HostSecurityManager#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.HostSecurityManager/VB/customsecuritymanager.vb#6)]  
-  
+The following example shows how to override the <xref:System.Security.HostSecurityManager.ProvideAppDomainEvidence%2A> method for a custom host security manager. This example is part of a larger example provided for the <xref:System.Security.HostSecurityManager> class.  
+ 
+[!code-csharp[System.Security.HostSecurityManager#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.HostSecurityManager/CS/customsecuritymanager.cs#6)]
+[!code-vb[System.Security.HostSecurityManager#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.HostSecurityManager/VB/customsecuritymanager.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,20 +258,20 @@
         <returns>The requested assembly evidence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be overridden by a derived class. The base implementation returns `null`.  
-  
- The common language runtime calls this method when evidence of the specified type is needed for the current assembly. The returned value is used as host-supplied evidence, and is stored in the <xref:System.Reflection.Assembly.Evidence%2A> property. You can use the <xref:System.Security.Policy.Evidence.GetAssemblyEvidence%2A?displayProperty=fullName> method to obtain the generated evidence from the <xref:System.Reflection.Assembly.Evidence%2A> property.  
-  
- To get a callback to this method, hosts must specify the <xref:System.Security.HostSecurityManagerOptions> flag in the <xref:System.Security.HostSecurityManager.Flags%2A> property.  
-  
- This method of generating evidence allows hosts to delay evidence generation for an <xref:System.AppDomain> until the evidence is needed. In the .NET Framework 3.5 and earlier versions, it was necessary to provide <xref:System.AppDomain> evidence at load time by overriding the <xref:System.Security.HostSecurityManager.ProvideAppDomainEvidence%2A> method. We recommend that you use <xref:System.Security.HostSecurityManager.GenerateAssemblyEvidence%2A> to provide evidence instead of overriding <xref:System.Security.HostSecurityManager.ProvideAssemblyEvidence%2A>.  
-  
- The <xref:System.Security.HostSecurityManager.GenerateAssemblyEvidence%2A> method is called back into only for types of evidence that the host has specified in the override of the <xref:System.Security.HostSecurityManager.GetHostSuppliedAssemblyEvidenceTypes%2A> method.  
-  
- A return value of `null` indicates that the host cannot generate evidence of this specific type.  
-  
+This method can be overridden by a derived class. The base implementation returns `null`.  
+ 
+The common language runtime calls this method when evidence of the specified type is needed for the current assembly. The returned value is used as host-supplied evidence, and is stored in the <xref:System.Reflection.Assembly.Evidence%2A> property. You can use the <xref:System.Security.Policy.Evidence.GetAssemblyEvidence%2A?displayProperty=fullName> method to obtain the generated evidence from the <xref:System.Reflection.Assembly.Evidence%2A> property.  
+ 
+To get a callback to this method, hosts must specify the <xref:System.Security.HostSecurityManagerOptions> flag in the <xref:System.Security.HostSecurityManager.Flags%2A> property.  
+ 
+This method of generating evidence allows hosts to delay evidence generation for an <xref:System.AppDomain> until the evidence is needed. In the .NET Framework 3.5 and earlier versions, it was necessary to provide <xref:System.AppDomain> evidence at load time by overriding the <xref:System.Security.HostSecurityManager.ProvideAppDomainEvidence%2A> method. We recommend that you use <xref:System.Security.HostSecurityManager.GenerateAssemblyEvidence%2A> to provide evidence instead of overriding <xref:System.Security.HostSecurityManager.ProvideAssemblyEvidence%2A>.  
+ 
+The <xref:System.Security.HostSecurityManager.GenerateAssemblyEvidence%2A> method is called back into only for types of evidence that the host has specified in the override of the <xref:System.Security.HostSecurityManager.GetHostSuppliedAssemblyEvidenceTypes%2A> method.  
+ 
+A return value of `null` indicates that the host cannot generate evidence of this specific type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -294,12 +294,12 @@
         <returns>An array of evidence types.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be overridden by a derived class. The base implementation returns `null`.  
-  
- The types returned by this method determine whether the <xref:System.Security.HostSecurityManager.GenerateAppDomainEvidence%2A> method is called back into. The presence of a type in this list does not mean that the host must be able to generate this evidence type, but that it may be able to. For that reason, it is best to over-specify rather than under-specify the types in this list.  
-  
+This method can be overridden by a derived class. The base implementation returns `null`.  
+ 
+The types returned by this method determine whether the <xref:System.Security.HostSecurityManager.GenerateAppDomainEvidence%2A> method is called back into. The presence of a type in this list does not mean that the host must be able to generate this evidence type, but that it may be able to. For that reason, it is best to over-specify rather than under-specify the types in this list.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,12 +325,12 @@
         <returns>An array of evidence types.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be overridden by a derived class. The base implementation returns `null`.  
-  
- The types returned by this method determine whether the <xref:System.Security.HostSecurityManager.GenerateAssemblyEvidence%2A> method is called back into. The presence of a type in this list does not mean that the host must be able to generate this evidence type, but that it may be able to. For that reason, it is best to over-specify rather than under-specify the types in this list.  
-  
+This method can be overridden by a derived class. The base implementation returns `null`.  
+ 
+The types returned by this method determine whether the <xref:System.Security.HostSecurityManager.GenerateAssemblyEvidence%2A> method is called back into. The presence of a type in this list does not mean that the host must be able to generate this evidence type, but that it may be able to. For that reason, it is best to over-specify rather than under-specify the types in this list.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -357,15 +357,15 @@
         <returns>The evidence to be used for the <see cref="T:System.AppDomain" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be overridden in a derived class.  
-  
- This method is called whenever an <xref:System.AppDomain> object is created. The `inputEvidence` parameter is the computed evidence from the common language runtime. The host implementation can choose to extend or reduce the evidence. The return value is the evidence to be used for the application domain.  The base implementation always returns the evidence object passed in as the `inputEvidence` parameter.  
-  
+This method can be overridden in a derived class.  
+ 
+This method is called whenever an <xref:System.AppDomain> object is created. The `inputEvidence` parameter is the computed evidence from the common language runtime. The host implementation can choose to extend or reduce the evidence. The return value is the evidence to be used for the application domain.  The base implementation always returns the evidence object passed in as the `inputEvidence` parameter.  
+ 
 > [!IMPORTANT]
 >  See the Notes to Inheritors for the <xref:System.Security.HostSecurityManager> class for critical implementation information.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -394,23 +394,23 @@
         <returns>The evidence to be used for the assembly.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be overridden in a derived class.  
-  
- This method is called whenever an assembly is loaded, either implicitly or explicitly. The passed in parameters are the assembly being loaded, and the computed evidence from the common language runtime. The host implementation can choose to extend or reduce the evidence. The return value is the evidence to be used for the assembly.  The base implementation always returns the evidence object passed in as the `inputEvidence` parameter.  
-  
+This method can be overridden in a derived class.  
+ 
+This method is called whenever an assembly is loaded, either implicitly or explicitly. The passed in parameters are the assembly being loaded, and the computed evidence from the common language runtime. The host implementation can choose to extend or reduce the evidence. The return value is the evidence to be used for the assembly.  The base implementation always returns the evidence object passed in as the `inputEvidence` parameter.  
+ 
 > [!IMPORTANT]
 >  See the Notes to Inheritors for the <xref:System.Security.HostSecurityManager> class for critical implementation information.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to override the <xref:System.Security.HostSecurityManager.ProvideAssemblyEvidence%2A> method for a custom host security manager. This example is part of a larger example provided for the <xref:System.Security.HostSecurityManager> class.  
-  
- [!code-csharp[System.Security.HostSecurityManager#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.HostSecurityManager/CS/customsecuritymanager.cs#5)]
- [!code-vb[System.Security.HostSecurityManager#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.HostSecurityManager/VB/customsecuritymanager.vb#5)]  
-  
+The following example shows how to override the <xref:System.Security.HostSecurityManager.ProvideAssemblyEvidence%2A> method for a custom host security manager. This example is part of a larger example provided for the <xref:System.Security.HostSecurityManager> class.  
+ 
+[!code-csharp[System.Security.HostSecurityManager#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.HostSecurityManager/CS/customsecuritymanager.cs#5)]
+[!code-vb[System.Security.HostSecurityManager#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.HostSecurityManager/VB/customsecuritymanager.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -437,10 +437,10 @@
         <returns>The permission set that can be granted by the security system.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method invokes the security policy engine, providing it with the specified evidence. The result is determined by the security policy.  
-  
+This method invokes the security policy engine, providing it with the specified evidence. The result is determined by the security policy.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

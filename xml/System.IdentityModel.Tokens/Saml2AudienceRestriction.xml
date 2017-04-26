@@ -14,12 +14,12 @@
     <summary>Represents the AudienceRestriction element specified in [Saml2Core, 2.5.1.4].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.IdentityModel.Tokens.Saml2AudienceRestriction.Audiences%2A> collection is empty, an <xref:System.InvalidOperationException> will be thrown during serialization.  
-  
- For more information about the element that this class represents, see the SAML V2.0 Core specification.  
-  
+If the <xref:System.IdentityModel.Tokens.Saml2AudienceRestriction.Audiences%2A> collection is empty, an <xref:System.InvalidOperationException> will be thrown during serialization.  
+ 
+For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,10 +38,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AudienceRestriction" /> class with no Audience elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.Saml2AudienceRestriction.Audiences%2A> property is initialized to an empty collection.  
-  
+The <xref:System.IdentityModel.Tokens.Saml2AudienceRestriction.Audiences%2A> property is initialized to an empty collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -63,10 +63,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AudienceRestriction" /> class with the specified URIs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.Saml2AudienceRestriction.Audiences%2A> collection is initialized using the elements of the specified collection.  
-  
+The <xref:System.IdentityModel.Tokens.Saml2AudienceRestriction.Audiences%2A> collection is initialized using the elements of the specified collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AudienceRestriction" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.Saml2AudienceRestriction.Audiences%2A> collection is initialized with the specified Audience element.  
-  
+The <xref:System.IdentityModel.Tokens.Saml2AudienceRestriction.Audiences%2A> collection is initialized with the specified Audience element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,10 +113,10 @@
         <value>A collection of type <see cref="T:System.Uri" /> that specifies the audiences.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Audience elements contained by the AudienceRestriction element.  
-  
+The Audience elements contained by the AudienceRestriction element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -35,15 +35,15 @@
         <summary>Registers an assembly that contains client-side providers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called on startup by UI Automation clients that use client-side UI Automation providers loaded from an assembly. Applications that use providers implemented in their own assembly should call <xref:System.Windows.Automation.ClientSettings.RegisterClientSideProviders%2A>.  
+This method is called on startup by UI Automation clients that use client-side UI Automation providers loaded from an assembly. Applications that use providers implemented in their own assembly should call <xref:System.Windows.Automation.ClientSettings.RegisterClientSideProviders%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- For example code, see [Register a Client-Side Provider Assembly](~/docs/framework/ui-automation/register-a-client-side-provider-assembly.md).  
-  
+For example code, see [Register a Client-Side Provider Assembly](~/docs/framework/ui-automation/register-a-client-side-provider-assembly.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Windows.Automation.ProxyAssemblyNotLoadedException">The assembly could not be loaded.</exception>
@@ -69,15 +69,15 @@
         <summary>Registers client-side providers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called on startup by clients that implement their own client-side providers. Clients that use providers from a separate assembly  must call <xref:System.Windows.Automation.ClientSettings.RegisterClientSideProviderAssembly%2A>.  
+This method is called on startup by clients that implement their own client-side providers. Clients that use providers from a separate assembly  must call <xref:System.Windows.Automation.ClientSettings.RegisterClientSideProviderAssembly%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- For example code, see [Implement UI Automation Providers in a Client Application](~/docs/framework/ui-automation/implement-ui-automation-providers-in-a-client-application.md).  
-  
+For example code, see [Implement UI Automation Providers in a Client Application](~/docs/framework/ui-automation/implement-ui-automation-providers-in-a-client-application.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Windows.Automation.ProxyAssemblyNotLoadedException">The assembly could not be loaded.</exception>

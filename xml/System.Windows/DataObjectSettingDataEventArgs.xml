@@ -14,10 +14,10 @@
     <summary>Contains arguments for the <see cref="T:System.Windows.DataObject" />.<see cref="E:System.Windows.DataObject.SettingData" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.DataObject.SettingData> event occurs as part of a copy command or a drag command, once for each of the data formats to be added to the associated data object. Typically, this event is connected to a content control such as <xref:System.Windows.Controls.TextBox>.  
-  
+The <xref:System.Windows.DataObject.SettingData> event occurs as part of a copy command or a drag command, once for each of the data formats to be added to the associated data object. Typically, this event is connected to a content control such as <xref:System.Windows.Controls.TextBox>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

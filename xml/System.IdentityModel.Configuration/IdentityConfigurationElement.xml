@@ -52,10 +52,10 @@
         <value>The collection of audience URIs that are configured for this identity configuration element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<audienceUris>` element that is configured under the `<identityConfiguration>` element.  
-  
+Corresponds to the `<audienceUris>` element that is configured under the `<identityConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,10 +82,10 @@
         <value>The element that configures the token replay cache and the session security token cache for this identity configuration element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<caches>` element that is configured under the `<identityConfiguration>` element.  
-  
+Corresponds to the `<caches>` element that is configured under the `<identityConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <value>The element that configures the certificate validator and its properties for this identity configuration element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<certificateValidation>` element that is configured under the `<identityConfiguration>` element.  
-  
+Corresponds to the `<certificateValidation>` element that is configured under the `<identityConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,10 +142,10 @@
         <value>A custom type element that specifies the <see cref="T:System.Type" /> of the claims authentication manager. The type must derive from <see cref="T:System.Security.Claims.ClaimsAuthenticationManager" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<claimsAuthenticationManager>` element that is configured under the `<identityConfiguration>` element.  
-  
+Corresponds to the `<claimsAuthenticationManager>` element that is configured under the `<identityConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,10 +172,10 @@
         <value>A custom type element that specifies the <see cref="T:System.Type" /> of the claims authorization manager. The type must derive from <see cref="T:System.Security.Claims.ClaimsAuthorizationManager" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<claimsAuthorizationManager>` element that is configured under the `<identityConfiguration>` element.  
-  
+Corresponds to the `<claimsAuthorizationManager>` element that is configured under the `<identityConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,10 +202,10 @@
         <value>The element that configures the issuer name registry for this identity configuration element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<issuerNameRegistry>` element that is configured under the `<identityConfiguration>` element.  
-  
+Corresponds to the `<issuerNameRegistry>` element that is configured under the `<identityConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,10 +232,10 @@
         <value>A custom type element that specifies the <see cref="T:System.Type" /> of the issuer token resolver. The type must derive from <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<issuerTokenResolver>` element that is configured under the `<identityConfiguration>` element. The `<issuerTokenResolver>` element registers an issuer token resolver. This can be used to resolve Issuer key identifier clauses while deserializing a SAML token.  
-  
+Corresponds to the `<issuerTokenResolver>` element that is configured under the `<identityConfiguration>` element. The `<issuerTokenResolver>` element registers an issuer token resolver. This can be used to resolve Issuer key identifier clauses while deserializing a SAML token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -265,10 +265,10 @@
         <value>The maximum clock skew.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `maximumClockSkew` attribute of the `<identityConfiguration>` element. Controls the maximum allowed clock skew when performing time-sensitive operations, such as validating the expiration time of a sign-in session.  
-  
+Corresponds to the `maximumClockSkew` attribute of the `<identityConfiguration>` element. Controls the maximum allowed clock skew when performing time-sensitive operations, such as validating the expiration time of a sign-in session.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -298,10 +298,10 @@
         <value>The name of the identity configuration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `name` attribute of the `<identityConfiguration>` element.  
-  
+Corresponds to the `name` attribute of the `<identityConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,10 +329,10 @@
           <see langword="true" /> to save the <see cref="T:System.IdentityModel.Tokens.BootstrapContext" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `saveBootStrapContext` attribute of the `<identityConfiguration>` element.  
-  
+Corresponds to the `saveBootStrapContext` attribute of the `<identityConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,10 +359,10 @@
         <value>The security token handler collections configured for this identity configuration element..</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the set of `<securityTokenHandlers>` elements that are configured under the `<identityConfiguration>` element. The identity configuration element can have multiple `<securityTokenHandlers>` elements, each of which contains settings for a collection of security token handlers.  
-  
+Corresponds to the set of `<securityTokenHandlers>` elements that are configured under the `<identityConfiguration>` element. The identity configuration element can have multiple `<securityTokenHandlers>` elements, each of which contains settings for a collection of security token handlers.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -389,10 +389,10 @@
         <value>A custom type element that specifies the <see cref="T:System.Type" /> of the service token resolver. The type must derive from <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<serviceTokenResolver>` element that is configured under the `<identityConfiguration>` element. The `<serviceTokenResolver>` element registers a service token resolver. This can be used to resolve Issuer key identifier clauses while deserializing a SAML token.  
-  
+Corresponds to the `<serviceTokenResolver>` element that is configured under the `<identityConfiguration>` element. The `<serviceTokenResolver>` element registers a service token resolver. This can be used to resolve Issuer key identifier clauses while deserializing a SAML token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -419,10 +419,10 @@
         <value>The element that specifies whether token replay detection is enabled and specifies the maximum expiration period for tokens in the token replay cache.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<tokenReplayDetection>` element that is configured under the `<identityConfiguration>` element.  
-  
+Corresponds to the `<tokenReplayDetection>` element that is configured under the `<identityConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

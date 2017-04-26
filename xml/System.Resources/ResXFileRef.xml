@@ -19,12 +19,12 @@
     <summary>Represents a link to an external resource.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Resources.ResXFileRef> class is used to include references to files in an XML resource (.resx) file. A <xref:System.Resources.ResXFileRef> object represents a link to an external resource in an XML resource (.resx) file. You add the <xref:System.Resources.ResXFileRef> object to a .resx file by calling the <xref:System.Resources.ResXResourceWriter.AddResource%28System.Resources.ResXDataNode%29?displayProperty=fullName> method.  
-  
- In a data entry in a .resx file, the type is <xref:System.Resources.ResXFileRef>, and the value is the path location on disk. When the resource manager deserializes the object, the <xref:System.Resources.ResXFileRef> performs the I/O to get the file. The following is an example of a .resx file.  
-  
+The <xref:System.Resources.ResXFileRef> class is used to include references to files in an XML resource (.resx) file. A <xref:System.Resources.ResXFileRef> object represents a link to an external resource in an XML resource (.resx) file. You add the <xref:System.Resources.ResXFileRef> object to a .resx file by calling the <xref:System.Resources.ResXResourceWriter.AddResource%28System.Resources.ResXDataNode%29?displayProperty=fullName> method.  
+ 
+In a data entry in a .resx file, the type is <xref:System.Resources.ResXFileRef>, and the value is the path location on disk. When the resource manager deserializes the object, the <xref:System.Resources.ResXFileRef> performs the I/O to get the file. The following is an example of a .resx file.  
+ 
 ```  
 <data name="iconclip" type="System.Resources.ResXFileRef, System.Windows.Forms">  
  <value>lookout.bmp;System.Drawing.Bitmap, System.Drawing</value>  
@@ -36,11 +36,11 @@
  <value>xplogo.png;System.Drawing.Bitmap, System.Drawing</value>  
 </data>  
 ```  
-  
- To add a <xref:System.Resources.ResXFileRef> object to a .resx file programmatically, you call the <xref:System.Resources.ResXDataNode.%23ctor%28System.String%2CSystem.Resources.ResXFileRef%29?displayProperty=fullName> constructor to instantiate a <xref:System.Resources.ResXDataNode> object. You then pass this <xref:System.Resources.ResXDataNode> object to the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=fullName> method.  
-  
- When you compile a .resx file with [Resgen.exe (Resource File Generator)](~/docs/framework/tools/resgen-exe-resource-file-generator.md), the resources specified in the .resx file are embedded in the resulting document resource file.  
-  
+ 
+To add a <xref:System.Resources.ResXFileRef> object to a .resx file programmatically, you call the <xref:System.Resources.ResXDataNode.%23ctor%28System.String%2CSystem.Resources.ResXFileRef%29?displayProperty=fullName> constructor to instantiate a <xref:System.Resources.ResXDataNode> object. You then pass this <xref:System.Resources.ResXDataNode> object to the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=fullName> method.  
+ 
+When you compile a .resx file with [Resgen.exe (Resource File Generator)](~/docs/framework/tools/resgen-exe-resource-file-generator.md), the resources specified in the .resx file are embedded in the resulting document resource file.  
+ 
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
@@ -66,10 +66,10 @@
         <summary>Creates a new instance of the <see cref="T:System.Resources.ResXFileRef" /> class that references the specified file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type referred to by the `typeName` parameter must support a public constructor that accepts a <xref:System.IO.Stream> object as a parameter.  
-  
+The type referred to by the `typeName` parameter must support a public constructor that accepts a <xref:System.IO.Stream> object as a parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -98,10 +98,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXFileRef" /> class that references the specified file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type referred to by the `typeName` parameter must support a public constructor that accepts a <xref:System.IO.Stream> object as a parameter.  
-  
+The type referred to by the `typeName` parameter must support a public constructor that accepts a <xref:System.IO.Stream> object as a parameter.  
+ 
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>

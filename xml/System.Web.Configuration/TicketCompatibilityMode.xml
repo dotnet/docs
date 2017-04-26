@@ -13,15 +13,15 @@
     <summary>Defines whether to use Coordinated Universal Time (UTC) or local time for the ticket expiration date for forms authentication.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The ticket expiration date for ASP.NET forms authentication can be stored by using Coordinated Universal Time (UTC) or the local time. For compatibility between applications, and for compatibility between different versions of the .NET Framework, the ticket expiration time can be specified by using the `ticketCompatilityMode` attribute of the  element. The default value for the `ticketCompatibilityMode` attribute is Framework20.  
+The ticket expiration date for ASP.NET forms authentication can be stored by using Coordinated Universal Time (UTC) or the local time. For compatibility between applications, and for compatibility between different versions of the .NET Framework, the ticket expiration time can be specified by using the `ticketCompatilityMode` attribute of the  element. The default value for the `ticketCompatibilityMode` attribute is Framework20.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example configures the forms authentication ticket expiration date as UTC time.  
-  
+The following example configures the forms authentication ticket expiration date as UTC time.  
+ 
 ```  
 <system.web>  
   <authentication mode="Forms">   
@@ -30,7 +30,7 @@
   </authentication>  
 </system.web>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

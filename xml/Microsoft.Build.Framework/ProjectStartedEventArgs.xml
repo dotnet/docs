@@ -14,17 +14,17 @@
     <summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.ProjectStarted" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- WARNING: marking a type [Serializable] without implementing ISerializable imposes a serialization contract -- it is a promise to never change the type's fields i.e. the type is immutable; adding new fields in the next version of the type without following certain special FX guidelines, can break both forward and backward compatibility  
+WARNING: marking a type [Serializable] without implementing ISerializable imposes a serialization contract -- it is a promise to never change the type's fields i.e. the type is immutable; adding new fields in the next version of the type without following certain special FX guidelines, can break both forward and backward compatibility  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to write a basic logger that responds to build events.  
-  
- [!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
-  
+The following example shows how to write a basic logger that responds to build events.  
+ 
+[!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -259,13 +259,13 @@
         <value>The list of items for the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The items and metadata accessed through <xref:Microsoft.Build.Framework.ProjectStartedEventArgs.Items%2A> are kept up-to-date and can be enumerated throughout the build of the project. However, changing an item in this list will not affect the build process.  
-  
+The items and metadata accessed through <xref:Microsoft.Build.Framework.ProjectStartedEventArgs.Items%2A> are kept up-to-date and can be enumerated throughout the build of the project. However, changing an item in this list will not affect the build process.  
+ 
 > [!NOTE]
 >  This property does not work with multi-proc builds. To get proper results, you can turn off multi-proc building by specifying `/m:1` (which is the default).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -341,13 +341,13 @@
         <value>The list of properties for the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The property names and values accessed through <xref:Microsoft.Build.Framework.ProjectStartedEventArgs.Properties%2A> are kept up-to-date and can be enumerated throughout the build of the project. However, changing a property in this list will not affect the build process.  
-  
+The property names and values accessed through <xref:Microsoft.Build.Framework.ProjectStartedEventArgs.Properties%2A> are kept up-to-date and can be enumerated throughout the build of the project. However, changing a property in this list will not affect the build process.  
+ 
 > [!NOTE]
 >  This property does not work with multi-proc builds. To get proper results, you can either turn off multi-proc building by specifying `/m:1` (which is the default), or you can work around the limitation by setting an environment variable. For example, setting `MSBuildForwardPropertiesFromChild=configuration;platform` forwards the "configuration" and "platform" properties from the child nodes. Unless this environment variable is defined, nothing will be forwarded. For more information, see [How to: Use Environment Variables in a Build](http://msdn.microsoft.com/library/7f9e4469-8865-4b59-aab3-3ff26bd36e77).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -25,10 +25,10 @@
     <summary>Defines the basic functionality of an identity object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An identity object represents the user on whose behalf the code is running. This interface is implemented by the <xref:System.Security.Principal.GenericIdentity> and <xref:System.Security.Principal.WindowsIdentity> classes.  
-  
+An identity object represents the user on whose behalf the code is running. This interface is implemented by the <xref:System.Security.Principal.GenericIdentity> and <xref:System.Security.Principal.WindowsIdentity> classes.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <value>The type of authentication used to identify the user.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The authentication type is passed to the common language runtime by the operating system or by another authentication provider. Basic authentication, NTLM, Kerberos, and Passport are examples of authentication types.  
-  
+The authentication type is passed to the common language runtime by the operating system or by another authentication provider. Basic authentication, NTLM, Kerberos, and Passport are examples of authentication types.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,10 +94,10 @@
           <see langword="true" /> if the user was authenticated; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The setting for this property is determined by the Windows `SECURITY_AUTHENTICATED_USER_RID` security identifier (SID).  
-  
+The setting for this property is determined by the Windows `SECURITY_AUTHENTICATED_USER_RID` security identifier (SID).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,12 +128,12 @@
         <value>The name of the user on whose behalf the code is running.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The user name is passed to the common language runtime by the operating system or other authentication provider (such as ASP.NET).  
-  
- <xref:System.Security.Principal.IIdentity.Name%2A> is typically set to an empty string ("") for an unauthenticated entity, but can take other values.  
-  
+The user name is passed to the common language runtime by the operating system or other authentication provider (such as ASP.NET).  
+ 
+<xref:System.Security.Principal.IIdentity.Name%2A> is typically set to an empty string ("") for an unauthenticated entity, but can take other values.  
+ 
  ]]></format>
         </remarks>
       </Docs>

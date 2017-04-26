@@ -35,10 +35,10 @@
     <summary>Represents a typed entity set that is used to perform create, read, update, and delete operations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Objects.ObjectSet%601> class allows you to operate on a typed entity set without having to specify the entity set name as an argument to each method call. The <xref:System.Data.Objects.ObjectSet%601> class extends the functionality of the <xref:System.Data.Objects.ObjectQuery%601> class to provide object context functionality, such as adding and deleting objects, in the context of a typed entity set that is accessed from the <xref:System.Data.Objects.ObjectContext>.  
-  
+The <xref:System.Data.Objects.ObjectSet%601> class allows you to operate on a typed entity set without having to specify the entity set name as an argument to each method call. The <xref:System.Data.Objects.ObjectSet%601> class extends the functionality of the <xref:System.Data.Objects.ObjectQuery%601> class to provide object context functionality, such as adding and deleting objects, in the context of a typed entity set that is accessed from the <xref:System.Data.Objects.ObjectContext>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,10 +63,10 @@
         <summary>Adds an object to the object context in the current entity set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.AddObject%2A> method.  
-  
+This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.AddObject%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,10 +92,10 @@
         <returns>The updated object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.ApplyCurrentValues%2A> method.  
-  
+This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.ApplyCurrentValues%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +121,10 @@
         <returns>The updated object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.ApplyOriginalValues%2A> method.  
-  
+This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.ApplyOriginalValues%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,10 +149,10 @@
         <summary>Attaches an object or object graph to the object context in the current entity set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.AttachTo%2A> method.  
-  
+This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.AttachTo%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,10 +224,10 @@
         <summary>Marks an object for deletion.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.DeleteObject%2A> method.  
-  
+This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.DeleteObject%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,10 +252,10 @@
         <summary>Removes the object from the object context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.Detach%2A> method.  
-  
+This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.Detach%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

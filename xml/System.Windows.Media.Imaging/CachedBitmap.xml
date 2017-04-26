@@ -14,18 +14,18 @@
     <summary>Provides caching functionality for a <see cref="T:System.Windows.Media.Imaging.BitmapSource" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.Imaging.BitmapSource> does not cache bitmap data automatically. Using a <xref:System.Windows.Media.Imaging.CachedBitmap> can improve performance in scenarios where multiple operations (such as clipping an image or scaling) need to be performed on a single bitmap.  
+A <xref:System.Windows.Media.Imaging.BitmapSource> does not cache bitmap data automatically. Using a <xref:System.Windows.Media.Imaging.CachedBitmap> can improve performance in scenarios where multiple operations (such as clipping an image or scaling) need to be performed on a single bitmap.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to create and use a <xref:System.Windows.Media.Imaging.CachedBitmap> in code.  
-  
- [!code-csharp[CachedBitmap#4](~/samples/snippets/csharp/VS_Snippets_Wpf/CachedBitmap/CSharp/CachedBitmapExample.cs#4)]
- [!code-vb[CachedBitmap#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CachedBitmap/VB/CachedBitmapExample.vb#4)]  
-  
+The following code example shows how to create and use a <xref:System.Windows.Media.Imaging.CachedBitmap> in code.  
+ 
+[!code-csharp[CachedBitmap#4](~/samples/snippets/csharp/VS_Snippets_Wpf/CachedBitmap/CSharp/CachedBitmapExample.cs#4)]
+[!code-vb[CachedBitmap#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CachedBitmap/VB/CachedBitmapExample.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,13 +51,13 @@
         <summary>Initializes a new instance of <see cref="T:System.Windows.Media.Imaging.CachedBitmap" /> that has the specified source, bitmap create options, and bitmap cache option.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to create and use a <xref:System.Windows.Media.Imaging.CachedBitmap> in code.  
-  
- [!code-csharp[CachedBitmap#4](~/samples/snippets/csharp/VS_Snippets_Wpf/CachedBitmap/CSharp/CachedBitmapExample.cs#4)]
- [!code-vb[CachedBitmap#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CachedBitmap/VB/CachedBitmapExample.vb#4)]  
-  
+The following code example shows how to create and use a <xref:System.Windows.Media.Imaging.CachedBitmap> in code.  
+ 
+[!code-csharp[CachedBitmap#4](~/samples/snippets/csharp/VS_Snippets_Wpf/CachedBitmap/CSharp/CachedBitmapExample.cs#4)]
+[!code-vb[CachedBitmap#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CachedBitmap/VB/CachedBitmapExample.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Occurs when <paramref name="source" /> is <see langword="null" />.</exception>
@@ -81,12 +81,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,12 +138,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

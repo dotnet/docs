@@ -22,10 +22,10 @@
     <summary>A configuration element that contains a collection of scope elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following example shows how to add two scope URIs for an endpoint.  
-  
+The following example shows how to add two scope URIs for an endpoint.  
+ 
 ```  
 <configuration>  
     <system.serviceModel>  
@@ -65,7 +65,7 @@
     </system.serviceModel>  
 </configuration>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

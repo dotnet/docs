@@ -50,10 +50,10 @@
         <value>The value of the Accept header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No validation is performed on the value of the <xref:System.Data.Services.Client.DataServiceRequestArgs.AcceptContentType%2A> property. Therefore, make sure that the supplied value is a valid value for an HTTP Accept header.  
-  
+No validation is performed on the value of the <xref:System.Data.Services.Client.DataServiceRequestArgs.AcceptContentType%2A> property. Therefore, make sure that the supplied value is a valid value for an HTTP Accept header.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -76,10 +76,10 @@
         <value>The value of the Content-Type header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No validation is performed on the value of the <xref:System.Data.Services.Client.DataServiceRequestArgs.ContentType%2A> property. Therefore, make sure that the supplied value is a valid value for an HTTP Content-Type header.  
-  
+No validation is performed on the value of the <xref:System.Data.Services.Client.DataServiceRequestArgs.ContentType%2A> property. Therefore, make sure that the supplied value is a valid value for an HTTP Content-Type header.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,12 +102,12 @@
         <value>The headers in the request message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The response is a <xref:System.Collections.Generic.Dictionary%602> object that contains key-value pairs of strings for each header in the request.  
-  
- No validation is performed on the headers in the <xref:System.Data.Services.Client.DataServiceRequestArgs.Headers%2A> property. Therefore, make sure that you do not change an HTTP header in a way that changes the meaning of the request.  
-  
+The response is a <xref:System.Collections.Generic.Dictionary%602> object that contains key-value pairs of strings for each header in the request.  
+ 
+No validation is performed on the headers in the <xref:System.Data.Services.Client.DataServiceRequestArgs.Headers%2A> property. Therefore, make sure that you do not change an HTTP header in a way that changes the meaning of the request.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,10 +130,10 @@
         <value>A value that is the Slug header of the request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No validation is performed on the value of the <xref:System.Data.Services.Client.DataServiceRequestArgs.Slug%2A> property. Therefore, make sure that the supplied value is a valid value for an HTTP Slug header.  
-  
+No validation is performed on the value of the <xref:System.Data.Services.Client.DataServiceRequestArgs.Slug%2A> property. Therefore, make sure that the supplied value is a valid value for an HTTP Slug header.  
+ 
  ]]></format>
         </remarks>
       </Docs>

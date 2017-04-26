@@ -21,10 +21,10 @@
     <summary>Specifies the possible key values on a keyboard.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Information pertaining to key input can be obtained in several different ways in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  Key-related events, such as <xref:System.Windows.UIElement.KeyDown> and <xref:System.Windows.UIElement.KeyUp>, provide key state information through the ventArgs object that is passed to the event handler.  Key state information can also be obtained through the static methods on the oard class, such as oard.IsKeyUp(System.Windows.Input.Key) and oard.GetKeyStates(System.Windows.Input.Key).  The oard class reports the current state of the keyboard.  
-  
+Information pertaining to key input can be obtained in several different ways in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  Key-related events, such as <xref:System.Windows.UIElement.KeyDown> and <xref:System.Windows.UIElement.KeyUp>, provide key state information through the ventArgs object that is passed to the event handler.  Key state information can also be obtained through the static methods on the oard class, such as oard.IsKeyUp(System.Windows.Input.Key) and oard.GetKeyStates(System.Windows.Input.Key).  The oard class reports the current state of the keyboard.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,10 +14,10 @@
     <summary>Specifies the status of a message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As the body of a <xref:System.ServiceModel.Channels.Message> object is a stream, it can only be read or written once. This is enforced by maintaining the current state of the <xref:System.ServiceModel.Channels.Message> object. A <xref:System.ServiceModel.Channels.Message> object can be read/written/copied when in the Created state. Other states are Read, Written and Copied, which means that the respective action has been performed already once.  
-  
+As the body of a <xref:System.ServiceModel.Channels.Message> object is a stream, it can only be read or written once. This is enforced by maintaining the current state of the <xref:System.ServiceModel.Channels.Message> object. A <xref:System.ServiceModel.Channels.Message> object can be read/written/copied when in the Created state. Other states are Read, Written and Copied, which means that the respective action has been performed already once.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -35,36 +35,36 @@
     <summary>Provides a mutual exclusion lock primitive where a thread trying to acquire the lock waits in a loop repeatedly checking until the lock becomes available.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For an example of how to use a Spin Lock, see [How to: Use SpinLock for Low-Level Synchronization](~/docs/standard/threading/how-to-use-spinlock-for-low-level-synchronization.md).  
-  
- Spin locks can be used for leaf-level locks where the object allocation implied by using a <xref:System.Threading.Monitor>, in size or due to garbage collection pressure, is overly expensive. A spin lock can be useful in to avoid blocking; however, if you expect a significant amount of blocking, you should probably not use spin locks due to excessive spinning. Spinning can be beneficial when locks are fine-grained and large in number (for example, a lock per node in a linked list) and also when lock hold-times are always extremely short. In general, while holding a spin lock, one should avoid any of these actions:  
-  
+For an example of how to use a Spin Lock, see [How to: Use SpinLock for Low-Level Synchronization](~/docs/standard/threading/how-to-use-spinlock-for-low-level-synchronization.md).  
+ 
+Spin locks can be used for leaf-level locks where the object allocation implied by using a <xref:System.Threading.Monitor>, in size or due to garbage collection pressure, is overly expensive. A spin lock can be useful in to avoid blocking; however, if you expect a significant amount of blocking, you should probably not use spin locks due to excessive spinning. Spinning can be beneficial when locks are fine-grained and large in number (for example, a lock per node in a linked list) and also when lock hold-times are always extremely short. In general, while holding a spin lock, one should avoid any of these actions:  
+ 
 -   blocking,  
-  
+ 
 -   calling anything that itself may block,  
-  
+ 
 -   holding more than one spin lock at once,  
-  
+ 
 -   making dynamically dispatched calls (interface and virtuals),  
-  
+ 
 -   making statically dispatched calls into any code one doesn't own, or  
-  
+ 
 -   allocating memory.  
+ 
+<xref:System.Threading.SpinLock> should only be used after you have been determined that doing so will improve an application's performance. It is also important to note that <xref:System.Threading.SpinLock> is a value type, for performance reasons. For this reason, you must be very careful not to accidentally copy a <xref:System.Threading.SpinLock> instance, as the two instances (the original and the copy) would then be completely independent of one another, which would likely lead to erroneous behavior of the application. If a <xref:System.Threading.SpinLock> instance must be passed around, it should be passed by reference rather than by value.  
+ 
+Do not store <xref:System.Threading.SpinLock> instances in readonly fields.  
+ 
   
- <xref:System.Threading.SpinLock> should only be used after you have been determined that doing so will improve an application's performance. It is also important to note that <xref:System.Threading.SpinLock> is a value type, for performance reasons. For this reason, you must be very careful not to accidentally copy a <xref:System.Threading.SpinLock> instance, as the two instances (the original and the copy) would then be completely independent of one another, which would likely lead to erroneous behavior of the application. If a <xref:System.Threading.SpinLock> instance must be passed around, it should be passed by reference rather than by value.  
-  
- Do not store <xref:System.Threading.SpinLock> instances in readonly fields.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use a <xref:System.Threading.SpinLock>:  
-  
- [!code-csharp[System.Threading.SpinLock#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.spinlock/cs/spinlock.cs#01)]
- [!code-vb[System.Threading.SpinLock#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.spinlock/vb/spinlock.vb#01)]  
-  
+The following example shows how to use a <xref:System.Threading.SpinLock>:  
+ 
+[!code-csharp[System.Threading.SpinLock#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.spinlock/cs/spinlock.cs#01)]
+[!code-vb[System.Threading.SpinLock#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.spinlock/vb/spinlock.vb#01)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>All members of <see cref="T:System.Threading.SpinLock" /> are thread-safe and may be used from multiple threads concurrently.</threadsafe>
@@ -97,15 +97,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Threading.SpinLock" /> structure with the option to track thread IDs to improve debugging.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor for <xref:System.Threading.SpinLock> tracks thread ownership.  
+The default constructor for <xref:System.Threading.SpinLock> tracks thread ownership.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how a SpinLock may be used.  
-  
+The following example demonstrates how a SpinLock may be used.  
+ 
 ```  
 // C#  
 public class MyType  
@@ -127,7 +127,7 @@ public class MyType
     }  
 }  
 ```  
-  
+ 
 ```  
 ' Visual Basic  
   
@@ -145,7 +145,7 @@ Class MyType
    End Sub  
 End Class  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,12 +180,12 @@ End Class
         <summary>Acquires the lock in a reliable manner, such that even if an exception occurs within the method call, <paramref name="lockTaken" /> can be examined reliably to determine whether the lock was acquired.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Threading.SpinLock> is a non-reentrant lock, meaning that if a thread holds the lock, it is not allowed to enter the lock again. If thread ownership tracking is enabled (whether it's enabled is available through <xref:System.Threading.SpinLock.IsThreadOwnerTrackingEnabled%2A>), an exception will be thrown when a thread tries to re-enter a lock it already holds. However, if thread ownership tracking is disabled, attempting to enter a lock already held will result in deadlock.  
-  
- If you call <xref:System.Threading.SpinLock.Exit%2A> without having first called <xref:System.Threading.SpinLock.Enter%2A> the internal state of the <xref:System.Threading.SpinLock> can become corrupted.  
-  
+<xref:System.Threading.SpinLock> is a non-reentrant lock, meaning that if a thread holds the lock, it is not allowed to enter the lock again. If thread ownership tracking is enabled (whether it's enabled is available through <xref:System.Threading.SpinLock.IsThreadOwnerTrackingEnabled%2A>), an exception will be thrown when a thread tries to re-enter a lock it already holds. However, if thread ownership tracking is disabled, attempting to enter a lock already held will result in deadlock.  
+ 
+If you call <xref:System.Threading.SpinLock.Exit%2A> without having first called <xref:System.Threading.SpinLock.Enter%2A> the internal state of the <xref:System.Threading.SpinLock> can become corrupted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="lockTaken" /> argument must be initialized to false prior to calling Enter.</exception>
@@ -224,12 +224,12 @@ End Class
         <summary>Releases the lock.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default overload of <xref:System.Threading.SpinLock.Exit%2A> provides the same behavior as if calling <xref:System.Threading.SpinLock.Exit%2A> using true as the argument.  
-  
- If you call <xref:System.Threading.SpinLock.Exit%2A> without having first called <xref:System.Threading.SpinLock.Enter%2A> the internal state of the <xref:System.Threading.SpinLock> can become corrupted.  
-  
+The default overload of <xref:System.Threading.SpinLock.Exit%2A> provides the same behavior as if calling <xref:System.Threading.SpinLock.Exit%2A> using true as the argument.  
+ 
+If you call <xref:System.Threading.SpinLock.Exit%2A> without having first called <xref:System.Threading.SpinLock.Enter%2A> the internal state of the <xref:System.Threading.SpinLock> can become corrupted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Threading.SynchronizationLockException">Thread ownership tracking is enabled, and the current thread is not the owner of this lock.</exception>
@@ -270,12 +270,12 @@ End Class
         <summary>Releases the lock.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling <xref:System.Threading.SpinLock.Exit%2A> with the `useMemoryBarrier` argument set to true will improve the fairness of the lock at the expense of some performance. The default <xref:System.Threading.SpinLock.Exit%2A> overload behaves as if specifying true for `useMemoryBarrier`.  
-  
- If you call <xref:System.Threading.SpinLock.Exit%2A> without having first called <xref:System.Threading.SpinLock.Enter%2A> the internal state of the <xref:System.Threading.SpinLock> can become corrupted.  
-  
+Calling <xref:System.Threading.SpinLock.Exit%2A> with the `useMemoryBarrier` argument set to true will improve the fairness of the lock at the expense of some performance. The default <xref:System.Threading.SpinLock.Exit%2A> overload behaves as if specifying true for `useMemoryBarrier`.  
+ 
+If you call <xref:System.Threading.SpinLock.Exit%2A> without having first called <xref:System.Threading.SpinLock.Enter%2A> the internal state of the <xref:System.Threading.SpinLock> can become corrupted.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Threading.SynchronizationLockException">Thread ownership tracking is enabled, and the current thread is not the owner of this lock.</exception>
@@ -346,10 +346,10 @@ End Class
         <value>true if the lock is held by the current thread; otherwise false.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the lock was initialized to track owner threads, this will return whether the lock is acquired by the current thread. It is invalid to use this property when the lock was initialized to not track thread ownership.  
-  
+If the lock was initialized to track owner threads, this will return whether the lock is acquired by the current thread. It is invalid to use this property when the lock was initialized to not track thread ownership.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Thread ownership tracking is disabled.</exception>
@@ -418,10 +418,10 @@ End Class
         <summary>Attempts to acquire the lock in a reliable manner, such that even if an exception occurs within the method call, <paramref name="lockTaken" /> can be examined reliably to determine whether the lock was acquired.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike <xref:System.Threading.SpinLock.Enter%2A>, TryEnter will not block waiting for the lock to be available. If the lock is not available when TryEnter is called, it will return immediately without any further spinning.  
-  
+Unlike <xref:System.Threading.SpinLock.Enter%2A>, TryEnter will not block waiting for the lock to be available. If the lock is not available when TryEnter is called, it will return immediately without any further spinning.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="lockTaken" /> argument must be initialized to false prior to calling TryEnter.</exception>
@@ -460,10 +460,10 @@ End Class
         <summary>Attempts to acquire the lock in a reliable manner, such that even if an exception occurs within the method call, <paramref name="lockTaken" /> can be examined reliably to determine whether the lock was acquired.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike <xref:System.Threading.SpinLock.Enter%2A>, TryEnter will not block indefinitely waiting for the lock to be available. It will block until either the lock is available or until the `millisecondsTimeout` has expired.  
-  
+Unlike <xref:System.Threading.SpinLock.Enter%2A>, TryEnter will not block indefinitely waiting for the lock to be available. It will block until either the lock is available or until the `millisecondsTimeout` has expired.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -504,10 +504,10 @@ End Class
         <summary>Attempts to acquire the lock in a reliable manner, such that even if an exception occurs within the method call, <paramref name="lockTaken" /> can be examined reliably to determine whether the lock was acquired.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike <xref:System.Threading.SpinLock.Enter%2A>, TryEnter will not block indefinitely waiting for the lock to be available. It will block until either the lock is available or until the `timeout` has expired.  
-  
+Unlike <xref:System.Threading.SpinLock.Enter%2A>, TryEnter will not block indefinitely waiting for the lock to be available. It will block until either the lock is available or until the `timeout` has expired.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">

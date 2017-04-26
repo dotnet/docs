@@ -13,23 +13,23 @@
     <summary>Specifies the name of an axis.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.AxisName> enumeration represents the four different axes that can be used for a chart.  
-  
- Bar and stacked bar charts have their axes rotated 90 degrees clockwise. For example, the primary X-axis for these two charts is the left-vertical axis.  
-  
- For all charts except bar, stacked bar, pie and doughnut charts, the primary and secondary axes are as follows:  
-  
+The <xref:System.Web.UI.DataVisualization.Charting.AxisName> enumeration represents the four different axes that can be used for a chart.  
+ 
+Bar and stacked bar charts have their axes rotated 90 degrees clockwise. For example, the primary X-axis for these two charts is the left-vertical axis.  
+ 
+For all charts except bar, stacked bar, pie and doughnut charts, the primary and secondary axes are as follows:  
+ 
 |Axis Type|Description|  
 |---------------|-----------------|  
 |Primary X-Axis|Bottom horizontal axis.|  
 |Secondary X-Axis|Top horizontal axis.|  
 |Primary Y-Axis|Left vertical axis.|  
 |Secondary Y-Axis|Right vertical axis.|  
-  
- Bar and stacked bar charts have their axes rotated 90 degrees clockwise. For example, the primary X-axis for these two charts is the left-vertical axis.  
-  
+ 
+Bar and stacked bar charts have their axes rotated 90 degrees clockwise. For example, the primary X-axis for these two charts is the left-vertical axis.  
+ 
  ]]></format>
     </remarks>
   </Docs>

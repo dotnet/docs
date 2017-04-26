@@ -54,12 +54,12 @@
         <value>The list of <see cref="P:Microsoft.Build.Tasks.AssignCulture.Files" />, with a <c>Culture</c> metadata entry added to each item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the incoming item from the <xref:Microsoft.Build.Tasks.AssignCulture.Files%2A> property already contains a `Culture` metadata entry, the original metadata entry is used.  
-  
- The task only assigns a `Culture` metadata entry if the file name contains a valid culture identifier. The culture identifier must be between the last two dots in the filename.  
-  
+If the incoming item from the <xref:Microsoft.Build.Tasks.AssignCulture.Files%2A> property already contains a `Culture` metadata entry, the original metadata entry is used.  
+ 
+The task only assigns a `Culture` metadata entry if the file name contains a valid culture identifier. The culture identifier must be between the last two dots in the filename.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

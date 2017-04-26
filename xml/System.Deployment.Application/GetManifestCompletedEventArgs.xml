@@ -14,18 +14,18 @@
     <summary>Provides data for the <see cref="E:System.Deployment.Application.InPlaceHostingManager.GetManifestCompleted" /> event of <see cref="T:System.Deployment.Application.InPlaceHostingManager" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Deployment.Application.GetManifestCompletedEventArgs> to obtain information about a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application after the deployment and application manifests have been downloaded.  
+Use <xref:System.Deployment.Application.GetManifestCompletedEventArgs> to obtain information about a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application after the deployment and application manifests have been downloaded.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use <xref:System.Deployment.Application.InPlaceHostingManager> to install a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application programmatically on a client machine.  
-  
- [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
- [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  
-  
+The following code example shows how to use <xref:System.Deployment.Application.InPlaceHostingManager> to install a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application programmatically on a client machine.  
+ 
+[!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
+[!code-vb[System.Deployment.Application.InPlaceHostingManager#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -83,18 +83,18 @@
         <value>An <see cref="T:System.Xml.XmlReader" /> representing the application manifest.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this variable to grab any information you need from the application manifest, such as a list of dependencies, trust information, and so on. For more information on the structure of this document, see [ClickOnce Application Manifest](http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243).  
+You can use this variable to grab any information you need from the application manifest, such as a list of dependencies, trust information, and so on. For more information on the structure of this document, see [ClickOnce Application Manifest](http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to examine an application manifest from within a <xref:System.Deployment.Application.InPlaceHostingManager.GetManifestCompleted> event handler to determine whether the application requires full trust by default.  
-  
- [!code-csharp[System.Deployment.Application.InPlaceHostingManager#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#5)]
- [!code-vb[System.Deployment.Application.InPlaceHostingManager#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#5)]  
-  
+The following code example shows how to examine an application manifest from within a <xref:System.Deployment.Application.InPlaceHostingManager.GetManifestCompleted> event handler to determine whether the application requires full trust by default.  
+ 
+[!code-csharp[System.Deployment.Application.InPlaceHostingManager#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#5)]
+[!code-vb[System.Deployment.Application.InPlaceHostingManager#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

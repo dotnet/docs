@@ -13,23 +13,23 @@
     <summary>Specifies the validation comparison operators used by the <see cref="T:System.Web.UI.WebControls.CompareValidator" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ValidationCompareOperator> enumeration represents the comparison operations that can be performed by the <xref:System.Web.UI.WebControls.CompareValidator> control.  
-  
+The <xref:System.Web.UI.WebControls.ValidationCompareOperator> enumeration represents the comparison operations that can be performed by the <xref:System.Web.UI.WebControls.CompareValidator> control.  
+ 
 > [!NOTE]
 >  Unlike the other operators, `DataTypeCheck` is a unary operation. Only the data type of the input control being validated is checked. If the <xref:System.Web.UI.WebControls.CompareValidator.ControlToCompare%2A> or <xref:System.Web.UI.WebControls.CompareValidator.ValueToCompare%2A> properties are set when this operation is used, those values are not checked.  
+ 
   
-   
-  
+ 
 ## Examples  
-  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[Classic CompareValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CompareValidator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic CompareValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CompareValidator Example/VB/sourcevb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[Classic CompareValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CompareValidator Example/CS/sourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[Classic CompareValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CompareValidator Example/VB/sourcevb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -19,15 +19,15 @@
     <summary>Class for the identity constraints: <see langword="key" />, <see langword="keyref" />, and <see langword="unique" /> elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An association between a name and one of several varieties of identity constraint related to uniqueness and reference.  
+An association between a name and one of several varieties of identity constraint related to uniqueness and reference.  
+ 
   
-   
-  
+ 
 ## Examples  
- See <xref:System.Xml.Schema.XmlSchemaUnique> for an example using this class.  
-  
+See <xref:System.Xml.Schema.XmlSchemaUnique> for an example using this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,10 +79,10 @@
         <value>The collection of fields.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection of fields that apply as children. Each field in the collection specifies the node set under the context element that the identity constraint applies to.  
-  
+The collection of fields that apply as children. Each field in the collection specifies the node set under the context element that the identity constraint applies to.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
         <value>The XPath expression <see langword="selector" /> element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An XPath expression that is relative to the element being declared. This expression identifies the node set under the context element that the identity constraint applies to.  
-  
+An XPath expression that is relative to the element being declared. This expression identifies the node set under the context element that the identity constraint applies to.  
+ 
  ]]></format>
         </remarks>
       </Docs>

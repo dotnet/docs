@@ -23,31 +23,31 @@
     <summary>Contains <see cref="T:System.Net.IPAddress" /> values used to join and drop multicast groups.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use a <xref:System.Net.Sockets.MulticastOption> to store the <xref:System.Net.IPAddress> of a multicast group you want to join or drop. Use the <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=fullName> method with the following parameters to join a multicast group.  
-  
+Use a <xref:System.Net.Sockets.MulticastOption> to store the <xref:System.Net.IPAddress> of a multicast group you want to join or drop. Use the <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=fullName> method with the following parameters to join a multicast group.  
+ 
 |Parameter|Value|  
 |---------------|-----------|  
 |socketOptionLevel|<xref:System.Net.Sockets.SocketOptionLevel?displayProperty=fullName>|  
 |socketOptionName|<xref:System.Net.Sockets.SocketOptionName>|  
 |object|<xref:System.Net.Sockets.MulticastOption>|  
+ 
+Use <xref:System.Net.Sockets.SocketOptionName> to drop a multicast group.  
+ 
   
- Use <xref:System.Net.Sockets.SocketOptionName> to drop a multicast group.  
-  
-   
-  
+ 
 ## Examples  
- The following examples join the default IP interface to an IP multicast group. They assume the IP multicast group address in the range 224.0.0.0 to 239.255.255.255.  
-  
- [!code-cpp[System.Net.Sockets.MulticastOptionListener#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CPP/listener.cpp#1)]
- [!code-csharp[System.Net.Sockets.MulticastOptionListener#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CS/listener.cs#1)]
- [!code-vb[System.Net.Sockets.MulticastOptionListener#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/VB/listener.vb#1)]  
-  
- [!code-cpp[System.Net.Sockets.MulticastOptionSender#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionSender/CPP/sender.cpp#1)]
- [!code-csharp[System.Net.Sockets.MulticastOptionSender#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionSender/CS/sender.cs#1)]
- [!code-vb[System.Net.Sockets.MulticastOptionSender#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionSender/VB/sender.vb#1)]  
-  
+The following examples join the default IP interface to an IP multicast group. They assume the IP multicast group address in the range 224.0.0.0 to 239.255.255.255.  
+ 
+[!code-cpp[System.Net.Sockets.MulticastOptionListener#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CPP/listener.cpp#1)]
+[!code-csharp[System.Net.Sockets.MulticastOptionListener#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CS/listener.cs#1)]
+[!code-vb[System.Net.Sockets.MulticastOptionListener#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/VB/listener.vb#1)]  
+ 
+[!code-cpp[System.Net.Sockets.MulticastOptionSender#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionSender/CPP/sender.cpp#1)]
+[!code-csharp[System.Net.Sockets.MulticastOptionSender#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionSender/CS/sender.cs#1)]
+[!code-vb[System.Net.Sockets.MulticastOptionSender#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionSender/VB/sender.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,10 +78,10 @@
         <summary>Initializes a new version of the <see cref="T:System.Net.Sockets.MulticastOption" /> class for the specified IP multicast group.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For machines with multiple network cards, do not use this constructor. Use the constructor that takes a group and a local IP address.  
-  
+For machines with multiple network cards, do not use this constructor. Use the constructor that takes a group and a local IP address.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -145,19 +145,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.MulticastOption" /> class with the specified IP multicast group address and local IP address associated with a network interface.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For machines with multiple network cards, you must use this constructor to create <xref:System.Net.Sockets.MulticastOption> instances.  
+For machines with multiple network cards, you must use this constructor to create <xref:System.Net.Sockets.MulticastOption> instances.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Net.Sockets.MulticastOption> object.  
-  
- [!code-cpp[System.Net.Sockets.MulticastOptionListener#2](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CPP/listener.cpp#2)]
- [!code-csharp[System.Net.Sockets.MulticastOptionListener#2](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CS/listener.cs#2)]
- [!code-vb[System.Net.Sockets.MulticastOptionListener#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/VB/listener.vb#2)]  
-  
+The following example creates a <xref:System.Net.Sockets.MulticastOption> object.  
+ 
+[!code-cpp[System.Net.Sockets.MulticastOptionListener#2](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CPP/listener.cpp#2)]
+[!code-csharp[System.Net.Sockets.MulticastOptionListener#2](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CS/listener.cs#2)]
+[!code-vb[System.Net.Sockets.MulticastOptionListener#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/VB/listener.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -194,19 +194,19 @@
         <value>An <see cref="T:System.Net.IPAddress" /> that contains the Internet address of a multicast group.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Valid IP addresses for multicast packets are in the range 224.0.0.0 to 239.255.255.255.  
+Valid IP addresses for multicast packets are in the range 224.0.0.0 to 239.255.255.255.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[System.Net.Sockets.MulticastOptionListener#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CPP/listener.cpp#3)]
- [!code-csharp[System.Net.Sockets.MulticastOptionListener#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CS/listener.cs#3)]
- [!code-vb[System.Net.Sockets.MulticastOptionListener#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/VB/listener.vb#3)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[System.Net.Sockets.MulticastOptionListener#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CPP/listener.cpp#3)]
+[!code-csharp[System.Net.Sockets.MulticastOptionListener#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CS/listener.cs#3)]
+[!code-vb[System.Net.Sockets.MulticastOptionListener#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/VB/listener.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -264,19 +264,19 @@
         <value>An <see cref="T:System.Net.IPAddress" /> that contains the local address associated with a multicast group.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Sockets.MulticastOption.LocalAddress%2A> property contains the IP address of the interface associated with the multicast group membership. If <xref:System.Net.Sockets.MulticastOption.LocalAddress%2A> is set to <xref:System.Net.IPAddress>, the default interface is used.  
+The <xref:System.Net.Sockets.MulticastOption.LocalAddress%2A> property contains the IP address of the interface associated with the multicast group membership. If <xref:System.Net.Sockets.MulticastOption.LocalAddress%2A> is set to <xref:System.Net.IPAddress>, the default interface is used.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the value of this property.  
-  
- [!code-cpp[System.Net.Sockets.MulticastOptionListener#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CPP/listener.cpp#3)]
- [!code-csharp[System.Net.Sockets.MulticastOptionListener#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CS/listener.cs#3)]
- [!code-vb[System.Net.Sockets.MulticastOptionListener#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/VB/listener.vb#3)]  
-  
+The following example displays the value of this property.  
+ 
+[!code-cpp[System.Net.Sockets.MulticastOptionListener#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CPP/listener.cpp#3)]
+[!code-csharp[System.Net.Sockets.MulticastOptionListener#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/CS/listener.cs#3)]
+[!code-vb[System.Net.Sockets.MulticastOptionListener#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Sockets.MulticastOptionListener/VB/listener.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

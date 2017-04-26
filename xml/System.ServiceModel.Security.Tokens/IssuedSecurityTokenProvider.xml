@@ -18,10 +18,10 @@
     <summary>Represents a token provider for issued security tokens.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Care must be taken when caching and reusing security tokens that are returned from the <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore%2A> method, because the security token might become unusable when the channel that the token provider is associated with is closed. The security token becomes unusable when the requested key type is asymmetric and the thread is running under impersonated context when the <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore%2A> method is called.  
-  
+Care must be taken when caching and reusing security tokens that are returned from the <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore%2A> method, because the security token might become unusable when the channel that the token provider is associated with is closed. The security token becomes unusable when the requested key type is asymmetric and the thread is running under impersonated context when the <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore%2A> method is called.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -294,10 +294,10 @@
         <value>A <see cref="T:System.TimeSpan" /> that represents the default time-out for closing the connection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For internal use only.  
-  
+For internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -319,10 +319,10 @@
         <value>A <see cref="T:System.TimeSpan" /> that represents the default time-out for opening the connection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For internal use only.  
-  
+For internal use only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -447,10 +447,10 @@
         <returns>The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the token core.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Care must be taken when caching and reusing security tokens that are returned from the <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore%2A> method, because the security token might become unusable when the channel that the token provider is associated with is closed. The security token becomes unusable when the requested key type is asymmetric and the thread is running under impersonated context when the <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore%2A> method is called.  
-  
+Care must be taken when caching and reusing security tokens that are returned from the <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore%2A> method, because the security token might become unusable when the channel that the token provider is associated with is closed. The security token becomes unusable when the requested key type is asymmetric and the thread is running under impersonated context when the <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore%2A> method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -490,10 +490,10 @@
         <value>The issued token renewal threshold percentage.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This percentage controls how often the token provider contacts the SecurityTokenService for a new issued token. For example, if the percentage is 90 percent, then the token provider will contact the SecurityTokenService when 90 percent of the issued token's validity interval is over.  
-  
+This percentage controls how often the token provider contacts the SecurityTokenService for a new issued token. For example, if the percentage is 90 percent, then the token provider will contact the SecurityTokenService when 90 percent of the issued token's validity interval is over.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -551,10 +551,10 @@
         <value>A <see cref="T:System.Collections.Generic.KeyedByTypeCollection`1" /> that contains the behaviors for the issuer channel.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These channel behaviors are added to the channel used by the token provider for the SecurityTokenService. The key for this collection is the URL of the security token service.  
-  
+These channel behaviors are added to the channel used by the token provider for the SecurityTokenService. The key for this collection is the URL of the security token service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -576,10 +576,10 @@
         <value>The key entropy mode.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is the key entropy mode used by the token provider when negotiating a symmetric key with the SecurityTokenService to use with the issued token.  
-  
+This property is the key entropy mode used by the token provider when negotiating a symmetric key with the SecurityTokenService to use with the issued token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -619,10 +619,10 @@
         <value>The message security version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.MessageSecurityVersion> contains numerous properties that specify version numbers of different components of a message.  
-  
+The <xref:System.ServiceModel.MessageSecurityVersion> contains numerous properties that specify version numbers of different components of a message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -717,10 +717,10 @@
         <value>The security algorithm suite.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> object that is returned contains numerous properties that specify security algorithms to use in specific conditions. It also describes various security capabilities of the service.  
-  
+The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> object that is returned contains numerous properties that specify security algorithms to use in specific conditions. It also describes various security capabilities of the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -815,10 +815,10 @@
         <value>A collection of XML elements that represent the token request parameters.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a collection of XML elements that the token provider includes as part of the RequestSecurityToken it sends to the SecurityTokenService. These parameters can be set explicitly by the client or can be obtained from the relying party's security policy.  
-  
+This is a collection of XML elements that the token provider includes as part of the RequestSecurityToken it sends to the SecurityTokenService. These parameters can be set explicitly by the client or can be obtained from the relying party's security policy.  
+ 
  ]]></format>
         </remarks>
       </Docs>

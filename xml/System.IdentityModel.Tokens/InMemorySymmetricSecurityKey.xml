@@ -14,10 +14,10 @@
     <summary>Represents keys that are generated using symmetric algorithms and are only stored in the local computer's random access memory.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, this class is only used by the infrastructure to transform XML using a symmetric key.  
-  
+Typically, this class is only used by the infrastructure to transform XML using a symmetric key.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -91,10 +91,10 @@
         <returns>An array of <see cref="T:System.Byte" /> that contains the decrypted key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -124,10 +124,10 @@
         <returns>An array of <see cref="T:System.Byte" /> that contains the encrypted key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -163,10 +163,10 @@
         <returns>An array of <see cref="T:System.Byte" /> that contains the derived key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To specify P-SHA1 as the cryptographic algorithm, use the <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivation> field.  
-  
+To specify P-SHA1 as the cryptographic algorithm, use the <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivation> field.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -196,10 +196,10 @@
         <returns>An <see cref="T:System.Security.Cryptography.ICryptoTransform" /> that represents the decryption transform.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the fields that represent decryption algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Use the fields that represent decryption algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -229,10 +229,10 @@
         <returns>An <see cref="T:System.Security.Cryptography.ICryptoTransform" /> that represents the encryption transform.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the fields that represent encryption algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Use the fields that represent encryption algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -260,10 +260,10 @@
         <returns>The size, in bits, of the initialization vector (<see langword="IV" />) that is required for the cryptographic algorithm specified in the <paramref name="algorithm" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the fields that represent encryption algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Use the fields that represent encryption algorithms in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -382,30 +382,30 @@
           <see langword="true" /> when the specified algorithm is supported by this class; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The symmetric algorithms that are supported by this class are the algorithms represented by the following fields:  
-  
+The symmetric algorithms that are supported by this class are the algorithms represented by the following fields:  
+ 
 -   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.HmacSha1Signature>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivation>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128Encryption>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128KeyWrap>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192Encryption>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192KeyWrap>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256Encryption>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256KeyWrap>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesEncryption>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesKeyWrap>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

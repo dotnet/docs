@@ -42,16 +42,16 @@
         <value>The URI of the custom dead-letter queue.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A dead-letter queue is a queue managed by the sending application's queue manager that stores messages that have failed to be delivered or have expired. The <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> property allows you to specify a custom dead-letter queue rather than using the default system-wide dead-letter queue.  
-  
- The URI that is specified by <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> must use the `net.msmq scheme`.  
-  
- If <xref:System.ServiceModel.Channels.MsmqBindingElementBase.DeadLetterQueue%2A> is set to <xref:System.ServiceModel.DeadLetterQueue> or <xref:System.ServiceModel.DeadLetterQueue>, then <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> must be set to `null`. If <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> is not `null`, then <xref:System.ServiceModel.Channels.MsmqBindingElementBase.DeadLetterQueue%2A> must be set to <xref:System.ServiceModel.DeadLetterQueue>.  
-  
- The <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> property can be set only on operating systems starting with [!INCLUDE[wv](~/includes/wv-md.md)].  
-  
+A dead-letter queue is a queue managed by the sending application's queue manager that stores messages that have failed to be delivered or have expired. The <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> property allows you to specify a custom dead-letter queue rather than using the default system-wide dead-letter queue.  
+ 
+The URI that is specified by <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> must use the `net.msmq scheme`.  
+ 
+If <xref:System.ServiceModel.Channels.MsmqBindingElementBase.DeadLetterQueue%2A> is set to <xref:System.ServiceModel.DeadLetterQueue> or <xref:System.ServiceModel.DeadLetterQueue>, then <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> must be set to `null`. If <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> is not `null`, then <xref:System.ServiceModel.Channels.MsmqBindingElementBase.DeadLetterQueue%2A> must be set to <xref:System.ServiceModel.DeadLetterQueue>.  
+ 
+The <xref:System.ServiceModel.Channels.MsmqBindingElementBase.CustomDeadLetterQueue%2A> property can be set only on operating systems starting with [!INCLUDE[wv](~/includes/wv-md.md)].  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,30 +73,30 @@
         <value>The type of dead-letter queue to use, if any.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The dead-letter queue is a queue managed by the sending application's queue manager that stores messages that have failed to be delivered or have expired. The reasons that a message can fail to reach the receiving application include:  
-  
+The dead-letter queue is a queue managed by the sending application's queue manager that stores messages that have failed to be delivered or have expired. The reasons that a message can fail to reach the receiving application include:  
+ 
 -   A transactional message is sent to a non-transactional queue.  
-  
+ 
 -   A non-transactional message is sent to a transactional queue.  
-  
+ 
 -   An unauthenticated message is sent to a queue that accepts only authenticated messages.  
-  
+ 
 -   An unencrypted message is sent to a queue that accepts only encrypted messages.  
-  
+ 
 -   The message expires before the message is delivered to a receiver.  
-  
+ 
 -   The message storage quota of the target computer or the storage quota of the destination queue is exceeded, or there is no available storage space on the target computer when the message arrives.  
-  
+ 
 -   The sender does not have the [access rights](http://go.microsoft.com/fwlink/?LinkId=96167) required to place the message in the destination queue.  
-  
+ 
 -   The digital signature attached to the message is not valid.  
-  
+ 
 -   An encrypted message cannot be decrypted by the destination queue manager.  
-  
+ 
 -   The destination queue is purged or deleted before the message is retrieved.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not within the range of values defined in <see cref="T:System.ServiceModel.DeadLetterQueue" />.</exception>
@@ -120,10 +120,10 @@
           <see langword="true" /> if the messages processed by this binding are durable; <see langword="false" /> if they are volatile. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is set to `true`, messages are durable; otherwise, messages are volatile. Durable messages are not lost if the queue manager crashes. The default value for this property is `true`. When exactly once assurances are required (<xref:System.ServiceModel.Channels.MsmqBindingElementBase.ExactlyOnce%2A> is set to `true`), this property must be set to `true`.  
-  
+If this property is set to `true`, messages are durable; otherwise, messages are volatile. Durable messages are not lost if the queue manager crashes. The default value for this property is `true`. When exactly once assurances are required (<xref:System.ServiceModel.Channels.MsmqBindingElementBase.ExactlyOnce%2A> is set to `true`), this property must be set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,10 +146,10 @@
           <see langword="true" /> if messages sent with this binding have exactly once assurances; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.Channels.MsmqBindingElementBase.ExactlyOnce%2A>, when set to `true`, indicates that Message Queuing (MSMQ) ensures that a sent message is delivered to the receiving message queue once and only once, and, if delivery fails, the message is sent to the dead-letter queue, depending on the `DeadLetterQueue` property setting. Setting <xref:System.ServiceModel.Channels.MsmqBindingElementBase.ExactlyOnce%2A> to `true` requires the queue to be transactional.  
-  
+<xref:System.ServiceModel.Channels.MsmqBindingElementBase.ExactlyOnce%2A>, when set to `true`, indicates that Message Queuing (MSMQ) ensures that a sent message is delivered to the receiving message queue once and only once, and, if delivery fails, the message is sent to the dead-letter queue, depending on the `DeadLetterQueue` property setting. Setting <xref:System.ServiceModel.Channels.MsmqBindingElementBase.ExactlyOnce%2A> to `true` requires the queue to be transactional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,10 +183,10 @@
         <returns>The object of type <paramref name="T" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Provides the functionality to retrieve capabilities and protection requirements from the element.  
-  
+Provides the functionality to retrieve capabilities and protection requirements from the element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The context is <see langword="null" />.</exception>
@@ -209,10 +209,10 @@
         <value>A value that specifies the number of retry cycles to attempt prior to transferring a message to the poison-message queue.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A retry cycle is when a message is transferred from the retry queue to the application queue to attempt delivery to the application. Messages are placed in the retry queue after failing a number of immediate retries as specified by <xref:System.ServiceModel.Configuration.MsmqBindingElementBase.ReceiveRetryCount%2A>. `MaxRetryCycles` specifies the number of retry cycles and does not include the initial attempt to send the message. An attempt to deliver a message is made a maximum of (1 + MaxRetryCycles) * (ReceiveRetryCount + 1) times. For example, if ReceiveRetryCount = 0 and MaxRetryCycles is 1, there is a maximum of two attempts to deliver the message. This property is used only on operating systems starting with [!INCLUDE[wv](~/includes/wv-md.md)].  
-  
+A retry cycle is when a message is transferred from the retry queue to the application queue to attempt delivery to the application. Messages are placed in the retry queue after failing a number of immediate retries as specified by <xref:System.ServiceModel.Configuration.MsmqBindingElementBase.ReceiveRetryCount%2A>. `MaxRetryCycles` specifies the number of retry cycles and does not include the initial attempt to send the message. An attempt to deliver a message is made a maximum of (1 + MaxRetryCycles) * (ReceiveRetryCount + 1) times. For example, if ReceiveRetryCount = 0 and MaxRetryCycles is 1, there is a maximum of two attempts to deliver the message. This property is used only on operating systems starting with [!INCLUDE[wv](~/includes/wv-md.md)].  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
@@ -235,10 +235,10 @@
         <value>The <see cref="T:System.ServiceModel.MsmqTransportSecurity" /> that is associated with this binding element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.MsmqTransportSecurity> encapsulates the security settings for the MSMQ integration transport. The settings are the same for both the MSMQ integration and queued transports. <xref:System.ServiceModel.MsmqTransportSecurity> allows you to set the authentication mode, encryption algorithm, secure hash algorithm, and protection level.  
-  
+<xref:System.ServiceModel.MsmqTransportSecurity> encapsulates the security settings for the MSMQ integration transport. The settings are the same for both the MSMQ integration and queued transports. <xref:System.ServiceModel.MsmqTransportSecurity> allows you to set the authentication mode, encryption algorithm, secure hash algorithm, and protection level.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -279,16 +279,16 @@
         <value>A <see cref="T:System.ServiceModel.ReceiveErrorHandling" /> value that specifies how poison and other messages that cannot be dispatched are handled.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, the channel listener is faulted and a <xref:System.ServiceModel.ProtocolException> (wrapping a <xref:System.ServiceModel.MsmqPoisonMessageException>) is traced and thrown. The message is left in the queue and must be removed by some manual method. The <xref:System.ServiceModel.MsmqPoisonMessageException> contains a <xref:System.ServiceModel.MsmqPoisonMessageException.MessageLookupId%2A> that can be used to identify and manually remove the offending message from the poison-message queue.  
-  
- When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, the message is dropped.  
-  
- When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, a negative acknowledgment is sent to the client and the message is removed from the poison-message queue. This option is available only on Message Queuing 4.0.  
-  
- When set to <xref:System.ServiceModel.ReceiveErrorHandling>, the message is moved to the final poison sub-queue. This option is available only on Message Queuing 4.0.  
-  
+When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, the channel listener is faulted and a <xref:System.ServiceModel.ProtocolException> (wrapping a <xref:System.ServiceModel.MsmqPoisonMessageException>) is traced and thrown. The message is left in the queue and must be removed by some manual method. The <xref:System.ServiceModel.MsmqPoisonMessageException> contains a <xref:System.ServiceModel.MsmqPoisonMessageException.MessageLookupId%2A> that can be used to identify and manually remove the offending message from the poison-message queue.  
+ 
+When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, the message is dropped.  
+ 
+When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, a negative acknowledgment is sent to the client and the message is removed from the poison-message queue. This option is available only on Message Queuing 4.0.  
+ 
+When set to <xref:System.ServiceModel.ReceiveErrorHandling>, the message is moved to the final poison sub-queue. This option is available only on Message Queuing 4.0.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not within the range of values defined in <see cref="T:System.ServiceModel.ReceiveErrorHandling" />.</exception>
@@ -311,12 +311,12 @@
         <value>A value that specifies the maximum number of times the queue manager should attempt to send a message before transferring it to the retry queue.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the maximum number of delivery attempts is reached and the message is not accessed by the application, then the message is sent to a retry queue for redelivery at some later point in time. The amount of time before the message is transferred back to the sending queue is controlled by <xref:System.ServiceModel.Channels.MsmqBindingElementBase.RetryCycleDelay%2A>. If retry cycles reach the MaxRetryCycles value, then the message is dispatched based on the value of the <xref:System.ServiceModel.Channels.MsmqBindingElementBase.ReceiveErrorHandling%2A> property.  
-  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.MsmqBindingElementBase.MaxRetryCycles%2A> and <xref:System.ServiceModel.Channels.MsmqBindingElementBase.RetryCycleDelay%2A>.  
-  
+If the maximum number of delivery attempts is reached and the message is not accessed by the application, then the message is sent to a retry queue for redelivery at some later point in time. The amount of time before the message is transferred back to the sending queue is controlled by <xref:System.ServiceModel.Channels.MsmqBindingElementBase.RetryCycleDelay%2A>. If retry cycles reach the MaxRetryCycles value, then the message is dispatched based on the value of the <xref:System.ServiceModel.Channels.MsmqBindingElementBase.ReceiveErrorHandling%2A> property.  
+ 
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Channels.MsmqBindingElementBase.MaxRetryCycles%2A> and <xref:System.ServiceModel.Channels.MsmqBindingElementBase.RetryCycleDelay%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
@@ -339,10 +339,10 @@
         <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time to wait before starting the next cycle of delivery attempts to the receiving application. The default value is 30 (minutes).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A single retry cycle makes repeated attempts to deliver a message to the receiving application (specified by the <xref:System.ServiceModel.Configuration.MsmqBindingElementBase.MaxRetryCycles%2A> property). If all attempts fail, the message is placed back in the retry queue. This property specifies how long the message remains in the retry queue before it is transferred to the application queue for another retry cycle. This property can only be used on operating systems starting with [!INCLUDE[wv](~/includes/wv-md.md)].  
-  
+A single retry cycle makes repeated attempts to deliver a message to the receiving application (specified by the <xref:System.ServiceModel.Configuration.MsmqBindingElementBase.MaxRetryCycles%2A> property). If all attempts fail, the message is placed back in the retry queue. This property specifies how long the message remains in the retry queue before it is transferred to the application queue for another retry cycle. This property can only be used on operating systems starting with [!INCLUDE[wv](~/includes/wv-md.md)].  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not infinite and larger than Int32.MaxValue milliseconds.</exception>
@@ -370,10 +370,10 @@
         <summary>Exports custom policy assertions about bindings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Description.IPolicyExportExtension>.  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Description.IPolicyExportExtension>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -400,10 +400,10 @@
         <summary>Writes custom Web Services Description Language (WSDL) elements into the generated WSDL for a contract.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Description.IWsdlExportExtension>.  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Description.IWsdlExportExtension>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -430,10 +430,10 @@
         <summary>Writes custom Web Services Description Language (WSDL) elements into the generated WSDL for an endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Description.IWsdlExportExtension>.  
-  
+[!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Description.IWsdlExportExtension>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -455,10 +455,10 @@
         <value>A <see cref="T:System.TimeSpan" /> value that specifies how long messages are valid. The default value is 24 hours.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Queued applications work in a disconnected manner. This means that the sending and receiving applications may not be running at the same time; therefore, a message sent by the sending application may not be processed immediately by the receiving application. Some messages contain information that is valid only for a certain period of time. If such a message is not delivered within that period of time, it no longer contains useful information and should be dropped. This property enables you to specify a time limit for how long a message is kept prior to delivery to the application queue. If this time limit elapses prior to the message being delivered to the application queue, the message is placed in the dead-letter queue if one is available (determined by the <xref:System.ServiceModel.Configuration.MsmqBindingElementBase.DeadLetterQueue%2A> property); otherwise, the message is dropped.  
-  
+Queued applications work in a disconnected manner. This means that the sending and receiving applications may not be running at the same time; therefore, a message sent by the sending application may not be processed immediately by the receiving application. Some messages contain information that is valid only for a certain period of time. If such a message is not delivered within that period of time, it no longer contains useful information and should be dropped. This property enables you to specify a time limit for how long a message is kept prior to delivery to the application queue. If this time limit elapses prior to the message being delivered to the application queue, the message is placed in the dead-letter queue if one is available (determined by the <xref:System.ServiceModel.Configuration.MsmqBindingElementBase.DeadLetterQueue%2A> property); otherwise, the message is dropped.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not infinite and larger than Int32.MaxValue milliseconds.</exception>
@@ -482,12 +482,12 @@
           <see langword="true" /> if the binding requires a transaction for a receive operation; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The dispatcher accesses this property to determine whether a transaction is required for a receive operation.  
-  
- The queued transport in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] returns `true` for this property if, and only if, <xref:System.ServiceModel.Channels.MsmqBindingElementBase.ExactlyOnce%2A> is set to `true`.  
-  
+The dispatcher accesses this property to determine whether a transaction is required for a receive operation.  
+ 
+The queued transport in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] returns `true` for this property if, and only if, <xref:System.ServiceModel.Channels.MsmqBindingElementBase.ExactlyOnce%2A> is set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -510,10 +510,10 @@
           <see langword="true" /> if Message Queuing (MSMQ) built-in message tracing should be enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.ServiceModel.Configuration.MsmqBindingElementBase.UseMsmqTracing%2A> is set to `true`, the queued channel uses the Message Queuing built-in message tracing facility. Through this facility a report message is sent to a specified report queue each time a message enters and leaves a queue manager.  
-  
+When <xref:System.ServiceModel.Configuration.MsmqBindingElementBase.UseMsmqTracing%2A> is set to `true`, the queued channel uses the Message Queuing built-in message tracing facility. Through this facility a report message is sent to a specified report queue each time a message enters and leaves a queue manager.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -536,10 +536,10 @@
           <see langword="true" /> if messages processed by this binding are copied to the source journal queue; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Queued applications that keep a record of messages that have left the source computer's outgoing queue can have the messages copied to a journal queue. After a message leaves the outgoing queue and an acknowledgment is received that the message was received on the destination computer, a copy of the message is kept in the sending computer's system journal queue.  
-  
+Queued applications that keep a record of messages that have left the source computer's outgoing queue can have the messages copied to a journal queue. After a message leaves the outgoing queue and an acknowledgment is received that the message was received on the destination computer, a copy of the message is kept in the sending computer's system journal queue.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -561,13 +561,13 @@
         <value>The duration a message will be locked by the receive context feature.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is 5 minutes. Receive context locks the message for inspection until it is either consumed or released back onto the queue. The validity duration property specifies how long the message will remain locked by receive context before it is automatically released back onto the queue.  
-  
+The default value is 5 minutes. Receive context locks the message for inspection until it is either consumed or released back onto the queue. The validity duration property specifies how long the message will remain locked by receive context before it is automatically released back onto the queue.  
+ 
 > [!IMPORTANT]
 >  If <xref:System.ServiceModel.Channels.MsmqBindingElementBase.ValidityDuration%2A> expires for a message, any transaction that may be used for its processing will be aborted along with the workflow instance if the expiration occurs during the transaction.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero or is larger than Int32.MaxValue.</exception>

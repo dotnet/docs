@@ -14,13 +14,13 @@
     <summary>Contains system colors, system brushes, and system resource keys that correspond to system display elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_SystemColors"></a>   
 ## XAML Text Usage  
- You cannot declare this managed class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], but you can use its static properties to assign values in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
+You cannot declare this managed class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], but you can use its static properties to assign values in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -42,21 +42,21 @@
         <value>A <see cref="T:System.Windows.Media.SolidColorBrush" /> with its <see cref="P:System.Windows.Media.SolidColorBrush.Color" /> set to the color of the active window's border. The returned brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ActiveBorderBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ActiveBorderBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ActiveBorderBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -78,22 +78,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> used to paint the active window's border. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ActiveBorderBrushKey%2A> to create a dynamic reference to the active border system brush. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ActiveBorderBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ActiveBorderBrushKey%2A> to create a dynamic reference to the active border system brush. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ActiveBorderBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_ActiveBorderBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ActiveBorderBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,21 +115,21 @@
         <value>The color of the active window's border.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ActiveBorderColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ActiveBorderColor}" />  
 ```  
-  
+ 
 <a name="xamlValues_ActiveBorderColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,22 +151,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.Color" /> of the active window's border.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ActiveBorderColorKey%2A> to create a dynamic reference to the active border system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ActiveBorderColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ActiveBorderColorKey%2A> to create a dynamic reference to the active border system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ActiveBorderColor%2A>.  
+ 
 <a name="xamlAttributeUsage_ActiveBorderColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ActiveBorderColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,21 +188,21 @@
         <value>A <see cref="T:System.Windows.Media.SolidColorBrush" /> with its <see cref="P:System.Windows.Media.SolidColorBrush.Color" /> set to the background color of the active window's title bar. The returned brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ActiveCaptionBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ActiveCaptionBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ActiveCaptionBrush"></a>   
 ## XAML Values  
- *X:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*X:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,22 +224,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> used to paint the background of the active window's title bar. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ActiveCaptionBrushKey%2A> to create a dynamic reference to the active caption system brush. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ActiveCaptionBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ActiveCaptionBrushKey%2A> to create a dynamic reference to the active caption system brush. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ActiveCaptionBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_ActiveCaptionBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ActiveCaptionBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,21 +261,21 @@
         <value>The background color of the active window's title bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ActiveCaptionColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ActiveBorderColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ActiveCaptionColor"></a>   
 ## XAML Values  
- *X:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*X:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,22 +297,22 @@
         <value>The resource key for the background <see cref="T:System.Windows.Media.Color" /> of the active window's title bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ActiveCaptionColorKey%2A> to create a dynamic reference to the active caption system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ActiveCaptionColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ActiveCaptionColorKey%2A> to create a dynamic reference to the active caption system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ActiveCaptionColor%2A>.  
+ 
 <a name="xamlAttributeUsage_ActiveCaptionColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ActiveCaptionColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ActiveCaptionColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -334,21 +334,21 @@
         <value>A <see cref="T:System.Windows.Media.SolidColorBrush" /> with its <see cref="P:System.Windows.Media.SolidColorBrush.Color" /> set to the background color of the color of the text in the active window's title bar. The returned brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ActiveCaptionTextBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ActiveCaptionTextBrush}" ... />  
 ```  
-  
+ 
 <a name="xamlValues_ActiveCaptionTextBrush"></a>   
 ## XAML Values  
- *X:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*X:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -370,22 +370,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the text in the active window's title bar. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ActiveCaptionTextBrushKey%2A> to create a dynamic reference to the active caption text system brush. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ActiveCaptionTextBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ActiveCaptionTextBrushKey%2A> to create a dynamic reference to the active caption text system brush. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ActiveCaptionTextBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_ActiveCaptionTextBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ActiveCaptionTextBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -407,21 +407,21 @@
         <value>The color of the active window's title bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ActiveCaptionTextColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ActiveCaptionTextColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ActiveCaptionTextColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -443,22 +443,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.Color" /> of the text in the active window's title bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ActiveCaptionTextColorKey%2A> to create a dynamic reference to the active caption text system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ActiveCaptionTextColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ActiveCaptionTextColorKey%2A> to create a dynamic reference to the active caption text system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ActiveCaptionTextColor%2A>.  
+ 
 <a name="xamlAttributeUsage_ActiveCaptionTextColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ActiveCaptionTextColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -480,21 +480,21 @@
         <value>A <see cref="T:System.Windows.Media.SolidColorBrush" /> with its <see cref="P:System.Windows.Media.SolidColorBrush.Color" /> set to the color of the application workspace. The returned brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_AppWorkspaceBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.AppWorkspaceBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_AppWorkspaceBrush"></a>   
 ## XAML Values  
- *X:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*X:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -516,22 +516,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the application workspace. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.AppWorkspaceBrushKey%2A> to create a dynamic reference to the application worspace system brush. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.AppWorkspaceBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.AppWorkspaceBrushKey%2A> to create a dynamic reference to the application worspace system brush. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.AppWorkspaceBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_AppWorkspaceBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_AppWorkspaceBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -553,21 +553,21 @@
         <value>The color of the application workspace.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_AppWorkspaceColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.AppWorkspaceColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_AppWorkspaceColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -589,22 +589,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.Color" /> of the application workspace.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.AppWorkspaceColorKey%2A> to create a dynamic reference to the application workspace system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.AppWorkspaceColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.AppWorkspaceColorKey%2A> to create a dynamic reference to the application workspace system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.AppWorkspaceColor%2A>.  
+ 
 <a name="xamlAttributeUsage_AppWorkspaceColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_AppWorkspaceColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -626,21 +626,21 @@
         <value>A <see cref="T:System.Windows.Media.SolidColorBrush" /> with its <see cref="P:System.Windows.Media.SolidColorBrush.Color" /> set to the face color of a three-dimensional display element. The returned brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ControlBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ControlBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlBrush"></a>   
 ## XAML Values  
- *X:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*X:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -662,22 +662,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the face of a three-dimensional display element. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ControlBrushKey%2A> to create a dynamic reference to the control system brush. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ControlBrushKey%2A> to create a dynamic reference to the control system brush. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_ControlBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -699,21 +699,21 @@
         <value>The face color of a three-dimensional display element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ControlColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ControlColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -735,22 +735,22 @@
         <value>The resource key for the face <see cref="T:System.Windows.Media.Color" /> of a three-dimensional display element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ControlColorKey%2A> to create a dynamic reference to the control system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ControlColorKey%2A> to create a dynamic reference to the control system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlColor%2A>.  
+ 
 <a name="xamlAttributeUsage_ControlColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -772,21 +772,21 @@
         <value>A <see cref="T:System.Windows.Media.SolidColorBrush" /> with its <see cref="P:System.Windows.Media.SolidColorBrush.Color" /> set to the shadow color of a three-dimensional display element. The returned brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ControlDarkBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ControlDarkBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlDarkBrush"></a>   
 ## XAML Values  
- *X:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*X:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -808,22 +808,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the shadow of a three-dimensional display element. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ControlDarkBrushKey%2A> to create a dynamic reference to the system brush that paints the shadow of a three-dimensional display element. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlDarkBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ControlDarkBrushKey%2A> to create a dynamic reference to the system brush that paints the shadow of a three-dimensional display element. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlDarkBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_ControlDarkBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlDarkBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -845,21 +845,21 @@
         <value>The shadow color of a three-dimensional display element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ControlDarkColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ControlDarkColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlDarkColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -881,22 +881,22 @@
         <value>The resource key for the shadow <see cref="T:System.Windows.Media.Color" /> of a three-dimensional display element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ControlDarkColorKey%2A> to create a dynamic reference to the control dark system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlDarkColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ControlDarkColorKey%2A> to create a dynamic reference to the control dark system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlDarkColor%2A>.  
+ 
 <a name="xamlAttributeUsage_ControlDarkColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlDarkColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -918,21 +918,21 @@
         <value>A <see cref="T:System.Windows.Media.SolidColorBrush" /> with its <see cref="P:System.Windows.Media.SolidColorBrush.Color" /> set to the dark shadow color of a three-dimensional display element. The returned brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ControlDarkDarkBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ControlDarkDarkBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlDarkDarkBrush"></a>   
 ## XAML Values  
- *X:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*X:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -954,22 +954,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the dark shadow of a three-dimensional display element. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ControlDarkDarkBrushKey%2A> to create a dynamic reference to the system brush that paints the dark shadow of a three-dimensional display element. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlDarkDarkBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ControlDarkDarkBrushKey%2A> to create a dynamic reference to the system brush that paints the dark shadow of a three-dimensional display element. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlDarkDarkBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_ControlDarkDarkBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlDarkDarkBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -991,21 +991,21 @@
         <value>The dark shadow color of a three-dimensional display element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ControlDarkDarkColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ControlDarkDarkColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlDarkDarkColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1027,22 +1027,22 @@
         <value>The resource key for the dark shadow <see cref="T:System.Windows.Media.Color" /> of a three-dimensional display element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ControlDarkDarkColorKey%2A> to create a dynamic reference to the dark shadow color of a three-dimensional display element. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlDarkDarkColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ControlDarkDarkColorKey%2A> to create a dynamic reference to the dark shadow color of a three-dimensional display element. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlDarkDarkColor%2A>.  
+ 
 <a name="xamlAttributeUsage_ControlDarkDarkColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlDarkDarkColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1064,21 +1064,21 @@
         <value>A <see cref="T:System.Windows.Media.SolidColorBrush" /> with its <see cref="P:System.Windows.Media.SolidColorBrush.Color" /> set to the light color of a three-dimensional display element. The returned brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ControlLightBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ControlLightBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlLightBrush"></a>   
 ## XAML Values  
- *X:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*X:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1100,22 +1100,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the light area of a three-dimensional display element. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ControlLightBrushKey%2A> to create a dynamic reference to the system brush that paints the light area of a three-dimensional display element. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlLightBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ControlLightBrushKey%2A> to create a dynamic reference to the system brush that paints the light area of a three-dimensional display element. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlLightBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_ControlLightBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlLightBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1137,21 +1137,21 @@
         <value>The light color of a three-dimensional display element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ControlLightColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ControlLightColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlLightColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1173,22 +1173,22 @@
         <value>The resource key for the highlight <see cref="T:System.Windows.Media.Color" /> of a three-dimensional display element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ControlLightColorKey%2A> to create a dynamic reference to the control light system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlLightColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ControlLightColorKey%2A> to create a dynamic reference to the control light system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlLightColor%2A>.  
+ 
 <a name="xamlAttributeUsage_ControlLightColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlLightColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1210,21 +1210,21 @@
         <value>The highlight color of a three-dimensional display element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ControlLightLightBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ControlLightLightBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlLightLightBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1246,22 +1246,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the highlight of a three-dimensional display element. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ControlLightLightBrushKey%2A> to create a dynamic reference to the system brush that paints the highlight of a three-dimensional display element. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlLightLightBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ControlLightLightBrushKey%2A> to create a dynamic reference to the system brush that paints the highlight of a three-dimensional display element. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlLightLightBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_ControlLightLightBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlLightLightBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1283,21 +1283,21 @@
         <value>The highlight color of a three-dimensional display element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ControlLightLightColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ControlLightLightColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlLightLightColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1319,22 +1319,22 @@
         <value>The resource key for the highlight <see cref="T:System.Windows.Media.Color" /> of a three-dimensional display element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ControlLightLightColorKey%2A> to create a dynamic reference to the highlight color of a three-dimensional display element. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlLightLightColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ControlLightLightColorKey%2A> to create a dynamic reference to the highlight color of a three-dimensional display element. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlLightLightColor%2A>.  
+ 
 <a name="xamlAttributeUsage_ControlLightLightColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlLightLightColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1356,21 +1356,21 @@
         <value>The color of text in a three-dimensional display element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ControlTextBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ControlTextBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlTextBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1392,22 +1392,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints text in a three-dimensional display element. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ControlTextBrushKey%2A> to create a dynamic reference to the system brush that paints text in a three-dimensional display element. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlTextBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ControlTextBrushKey%2A> to create a dynamic reference to the system brush that paints text in a three-dimensional display element. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlTextBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_ControlTextBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlTextBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1429,21 +1429,21 @@
         <value>The color of text in a three-dimensional display element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ControlTextColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ControlTextColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlTextColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1465,22 +1465,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.Color" /> of text in a three-dimensional display element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ControlTextColorKey%2A> to create a dynamic reference to the color of text in a three-dimensional display element. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlTextColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ControlTextColorKey%2A> to create a dynamic reference to the color of text in a three-dimensional display element. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ControlTextColor%2A>.  
+ 
 <a name="xamlAttributeUsage_ControlTextColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ControlTextColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ControlTextColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1502,21 +1502,21 @@
         <value>The color of the desktop.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_DesktopBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.DesktopBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_DesktopBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1538,22 +1538,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the desktop. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.DesktopBrushKey%2A> to create a dynamic reference to the system brush that paints the desktop. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.DesktopBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.DesktopBrushKey%2A> to create a dynamic reference to the system brush that paints the desktop. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.DesktopBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_DesktopBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_DesktopBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1575,21 +1575,21 @@
         <value>The color of the desktop.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_DesktopColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.DesktopColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_DesktopColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1611,22 +1611,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.Color" /> of the desktop.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.DesktopColorKey%2A> to create a dynamic reference to the desktop system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.DesktopColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.DesktopColorKey%2A> to create a dynamic reference to the desktop system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.DesktopColor%2A>.  
+ 
 <a name="xamlAttributeUsage_DesktopColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.DesktopColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_DesktopColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1648,21 +1648,21 @@
         <value>The right side color in the gradient.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_GradientActiveCaptionBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.GradientActiveCaptionBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_GradientActiveCaptionBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1684,22 +1684,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that is the color of the right side of the gradient of an active window's title bar. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.GradientActiveCaptionBrushKey%2A> to create a dynamic reference to the system brush that paints the color of the right side of the gradient of an active window's title bar. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.GradientActiveCaptionBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.GradientActiveCaptionBrushKey%2A> to create a dynamic reference to the system brush that paints the color of the right side of the gradient of an active window's title bar. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.GradientActiveCaptionBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_GradientActiveCaptionTextBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_GradientActiveCaptionBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1721,21 +1721,21 @@
         <value>The right side color in the gradient.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_GradientActiveCaptionColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.GradientActiveCaptionColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_GradientActiveCaptionColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1757,22 +1757,22 @@
         <value>The resource key for the right-side <see cref="T:System.Windows.Media.Color" /> in the gradient of an active window's title bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.GradientActiveCaptionColorKey%2A> to create a dynamic reference to the gradient active caption system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.GradientActiveCaptionColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.GradientActiveCaptionColorKey%2A> to create a dynamic reference to the gradient active caption system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.GradientActiveCaptionColor%2A>.  
+ 
 <a name="xamlAttributeUsage_GradientActiveCaptionColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.GradientActiveCaptionColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_GradientActiveCaptionColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1794,21 +1794,21 @@
         <value>The right side color in the gradient.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_GradientInactiveCaptionBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.GradientInactiveCaptionBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_GradientInactiveCaptionBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1830,22 +1830,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> used to paint the background of the inactive window's title bar. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.GradientInactiveCaptionBrushKey%2A> to create a dynamic reference. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.GradientInactiveCaptionBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.GradientInactiveCaptionBrushKey%2A> to create a dynamic reference. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.GradientInactiveCaptionBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_GradientInactiveCaptionBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_GradientInactiveCaptionBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1867,21 +1867,21 @@
         <value>The right side color in the gradient.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_GradientInactiveCaptionColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.GradientInactiveCaptionColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_GradientInactiveCaptionColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1903,22 +1903,22 @@
         <value>The resource key for the right-side <see cref="T:System.Windows.Media.Color" /> in the gradient of an inactive window's title bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.GradientInactiveCaptionColorKey%2A> to create a dynamic reference to the gradient inactive caption system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.GradientInactiveCaptionColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.GradientInactiveCaptionColorKey%2A> to create a dynamic reference to the gradient inactive caption system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.GradientInactiveCaptionColor%2A>.  
+ 
 <a name="xamlAttributeUsage_GradientInactiveCaptionColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_GradientInactiveCaptionColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1940,21 +1940,21 @@
         <value>The color of disabled text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_GrayTextBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.GrayTextBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_GrayTextBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1976,22 +1976,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints disabled text. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.GrayTextBrushKey%2A> to create a dynamic reference to the brush that paints disabled text. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.GrayTextBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.GrayTextBrushKey%2A> to create a dynamic reference to the brush that paints disabled text. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.GrayTextBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_GrayTextBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_GrayTextBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2013,21 +2013,21 @@
         <value>The color of disabled text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_GrayTextColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.GrayTextColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_GrayTextColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2049,22 +2049,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.Color" /> of disabled text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.GrayTextColorKey%2A> to create a dynamic reference to the disabled text system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.GrayTextColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.GrayTextColorKey%2A> to create a dynamic reference to the disabled text system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.GrayTextColor%2A>.  
+ 
 <a name="xamlAttributeUsage_GrayTextColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.GrayTextColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_GrayTextColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2086,21 +2086,21 @@
         <value>The background color of selected items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_HighlightBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.HighlightBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_HighlightBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2122,22 +2122,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the background of selected items. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.HighlightBrushKey%2A> to create a dynamic reference to the brush that paints the background of selected items. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.HighlightBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.HighlightBrushKey%2A> to create a dynamic reference to the brush that paints the background of selected items. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.HighlightBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_HighlightBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_HighlightBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2159,21 +2159,21 @@
         <value>The background color of selected items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_HighlightColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.HighlightColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_HighlightColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2195,22 +2195,22 @@
         <value>The resource key for the background <see cref="T:System.Windows.Media.Color" /> of selected items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.HighlightColorKey%2A> to create a dynamic reference to the highlight system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.HighlightColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.HighlightColorKey%2A> to create a dynamic reference to the highlight system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.HighlightColor%2A>.  
+ 
 <a name="xamlAttributeUsage_HighlightColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_HighlightColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2232,21 +2232,21 @@
         <value>The color of the text of selected items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_HighlightTextBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.HighlightTextBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_HighlightTextBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2268,22 +2268,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the text of selected items. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.HighlightTextBrushKey%2A> to create a dynamic reference to the brush that paints the text of selected items. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.HighlightTextBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.HighlightTextBrushKey%2A> to create a dynamic reference to the brush that paints the text of selected items. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.HighlightTextBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_HighlightTextBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_HighlightTextBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2305,21 +2305,21 @@
         <value>The color of the text of selected items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_HighlightTextColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.HighlightTextColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_HighlightTextColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2341,22 +2341,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.Color" /> of a selected item's text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.HighlightTextColorKey%2A> to create a dynamic reference to the highlight text system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.HighlightTextColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.HighlightTextColorKey%2A> to create a dynamic reference to the highlight text system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.HighlightTextColor%2A>.  
+ 
 <a name="xamlAttributeUsage_HighlightTextColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_HighlightTextColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2378,21 +2378,21 @@
         <value>The color used to designate a hot-tracked item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_HotTrackBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.HotTrackBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_HotTrackBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2414,22 +2414,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints hot-tracked items. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.HotTrackBrushKey%2A> to create a dynamic reference to the brush that paints hot-tracked items. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.HotTrackBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.HotTrackBrushKey%2A> to create a dynamic reference to the brush that paints hot-tracked items. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.HotTrackBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_HotTrackBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" />  
 ```  
-  
+ 
 <a name="xamlValues_HotTrackBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2451,21 +2451,21 @@
         <value>The color used to designate a hot-tracked item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_HotTrackColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.HotTrackColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_HotTrackColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2487,22 +2487,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.Color" /> that designates a hot-tracked item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.HotTrackColorKey%2A> to create a dynamic reference to the hot track system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.HotTrackColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.HotTrackColorKey%2A> to create a dynamic reference to the hot track system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.HotTrackColor%2A>.  
+ 
 <a name="xamlAttributeUsage_HotTrackColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.HotTrackColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_HotTrackColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2524,21 +2524,21 @@
         <value>The color of an inactive window's border.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_InactiveBorderBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.InactiveBorderBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InactiveBorderBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2560,22 +2560,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the border of an inactive window. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.InactiveBorderBrushKey%2A> to create a dynamic reference to the brush that paints the border of an inactive window. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InactiveBorderBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.InactiveBorderBrushKey%2A> to create a dynamic reference to the brush that paints the border of an inactive window. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InactiveBorderBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_InactiveBorderBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InactiveBorderBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2597,21 +2597,21 @@
         <value>The color of an inactive window's border.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_InactiveBorderColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.InactiveBorderColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InactiveBorderColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2633,22 +2633,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.Color" /> of an inactive window's border.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.InactiveBorderColorKey%2A> to create a dynamic reference to the inactive border system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InactiveBorderColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.InactiveBorderColorKey%2A> to create a dynamic reference to the inactive border system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InactiveBorderColor%2A>.  
+ 
 <a name="xamlAttributeUsage_InactiveBorderColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.InactiveBorderColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InactiveBorderColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2670,21 +2670,21 @@
         <value>The background color of an inactive window's title bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_InactiveCaptionBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.InactiveCaptionBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InactiveCaptionBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2706,22 +2706,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the background of an inactive window's title bar. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.InactiveCaptionBrushKey%2A> to create a dynamic reference that paints the background of an inactive window's title bar. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InactiveCaptionBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.InactiveCaptionBrushKey%2A> to create a dynamic reference that paints the background of an inactive window's title bar. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InactiveCaptionBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_InactiveCaptionBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}" />  
 ```  
-  
+ 
 <a name="xamlValues_InactiveCaptionBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2743,21 +2743,21 @@
         <value>The background color of an inactive window's title bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_InactiveCaptionColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.InactiveCaptionColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InactiveCaptionColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2779,22 +2779,22 @@
         <value>The resource key for the background <see cref="T:System.Windows.Media.Color" /> of an inactive window's title bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.InactiveCaptionColorKey%2A> to create a dynamic reference to the active border system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InactiveCaptionColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.InactiveCaptionColorKey%2A> to create a dynamic reference to the active border system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InactiveCaptionColor%2A>.  
+ 
 <a name="xamlAttributeUsage_InactiveCaptionColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.InactiveCaptionColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InactiveCaptionColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2816,21 +2816,21 @@
         <value>The color of the text of an inactive window's title bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_InactiveCaptionTextBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.InactiveCaptionTextBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InactiveCaptionTextBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2852,22 +2852,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the text of an inactive window's title bar. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.InactiveCaptionTextBrushKey%2A> to create a dynamic reference to the brush that paints the text of an inactive window's title bar. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InactiveCaptionTextBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.InactiveCaptionTextBrushKey%2A> to create a dynamic reference to the brush that paints the text of an inactive window's title bar. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InactiveCaptionTextBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_InactiveCaptionTextBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.InactiveCaptionTextBrushKey}}" />  
 ```  
-  
+ 
 <a name="xamlValues_InactiveCaptionTextBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2889,21 +2889,21 @@
         <value>The color of the text of an inactive window's title bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_InactiveCaptionTextColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.InactiveCaptionTextColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InactiveCaptionTextColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2925,22 +2925,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.Color" /> of the text of an inactive window's title bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.InactiveCaptionTextColorKey%2A> to create a dynamic reference to the inactive caption text system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InactiveCaptionTextColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.InactiveCaptionTextColorKey%2A> to create a dynamic reference to the inactive caption text system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InactiveCaptionTextColor%2A>.  
+ 
 <a name="xamlAttributeUsage_InactiveCaptionTextColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.InactiveCaptionTextColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InactiveCaptionTextColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2962,21 +2962,21 @@
         <value>The color used to highlight an inactive selected item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_InactiveSelectionHighlightBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors. InactiveSelectionHighlightBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InactiveSelectionHighlightBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2998,21 +2998,21 @@
         <value>The <see cref="T:System.Windows.ResourceKey" /> for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the background of an inactive selected item. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_InactiveSelectionHighlightBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}" />  
 ```  
-  
+ 
 <a name="xamlValues_InactiveSelectionHighlightBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3034,21 +3034,21 @@
         <value>The color of an inactive selected item’s text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_InactiveSelectionHighlightTextBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors. InactiveSelectionHighlightTextBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InactiveSelectionHighlightTextBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3070,21 +3070,21 @@
         <value>The <see cref="T:System.Windows.ResourceKey" /> for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints a an inactive selected item’s text. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_InactiveSelectionHighlightTextBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightTextBrushKey}}" />  
 ```  
-  
+ 
 <a name="xamlValues_InactiveSelectionHighlightTextBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3106,21 +3106,21 @@
         <value>The background color for the <see cref="T:System.Windows.Controls.ToolTip" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_InfoBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.InfoBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InfoBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3142,22 +3142,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the background of the <see cref="T:System.Windows.Controls.ToolTip" /> control. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.InfoBrushKey%2A> to create a dynamic reference to the brush that paints the background of the <xref:System.Windows.Controls.ToolTip> control. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InfoBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.InfoBrushKey%2A> to create a dynamic reference to the brush that paints the background of the <xref:System.Windows.Controls.ToolTip> control. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InfoBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_InfoBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" />  
 ```  
-  
+ 
 <a name="xamlValues_InfoBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3179,21 +3179,21 @@
         <value>The background color for the <see cref="T:System.Windows.Controls.ToolTip" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_InfoColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.InfoColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InfoColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3215,22 +3215,22 @@
         <value>The resource key for the background <see cref="T:System.Windows.Media.Color" /> of the <see cref="T:System.Windows.Controls.ToolTip" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.InfoColorKey%2A> to create a dynamic reference to the active border system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InfoColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.InfoColorKey%2A> to create a dynamic reference to the active border system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InfoColor%2A>.  
+ 
 <a name="xamlAttributeUsage_InfoColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.InfoColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InfoColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3252,21 +3252,21 @@
         <value>The text color for the <see cref="T:System.Windows.Controls.ToolTip" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_InfoTextBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.InfoTextBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InfoTextBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3288,22 +3288,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the text in a <see cref="T:System.Windows.Controls.ToolTip" /> control. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.InfoTextBrushKey%2A> to create a dynamic reference to the brush that paints the text in a <xref:System.Windows.Controls.ToolTip> control. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InfoTextBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.InfoTextBrushKey%2A> to create a dynamic reference to the brush that paints the text in a <xref:System.Windows.Controls.ToolTip> control. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InfoTextBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_InfoTextBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.InfoTextBrushKey}}" />  
 ```  
-  
+ 
 <a name="xamlValues_InfoTextBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3325,21 +3325,21 @@
         <value>The text color for the <see cref="T:System.Windows.Controls.ToolTip" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_InfoTextColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.InfoTextColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InfoTextColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3361,22 +3361,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.Color" /> of the text in a <see cref="T:System.Windows.Controls.ToolTip" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.InfoTextColorKey%2A> to create a dynamic reference to the color of the text in a <xref:System.Windows.Controls.ToolTip> control. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InfoTextColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.InfoTextColorKey%2A> to create a dynamic reference to the color of the text in a <xref:System.Windows.Controls.ToolTip> control. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.InfoTextColor%2A>.  
+ 
 <a name="xamlAttributeUsage_InfoTextColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.InfoTextColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_InfoTextColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3398,21 +3398,21 @@
         <value>The background color for a menu bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuBarBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.MenuBarBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_MenuBarBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3434,22 +3434,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the background of a menu bar. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.MenuBarBrushKey%2A> to create a dynamic reference to the brush that paints the background of a menu bar. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuBarBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.MenuBarBrushKey%2A> to create a dynamic reference to the brush that paints the background of a menu bar. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuBarBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_MenuBarBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" />  
 ```  
-  
+ 
 <a name="xamlValues_MenuBarBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3471,21 +3471,21 @@
         <value>The background color for a menu bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuBarColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.MenuBarColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_MenuBarColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3507,22 +3507,22 @@
         <value>The resource key for the background <see cref="T:System.Windows.Media.Color" /> of a menu bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.MenuBarColorKey%2A> to create a dynamic reference to the color of a menu bar. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuBarColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.MenuBarColorKey%2A> to create a dynamic reference to the color of a menu bar. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuBarColor%2A>.  
+ 
 <a name="xamlAttributeUsage_MenuBarColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.MenuBarColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_MenuBarColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3544,21 +3544,21 @@
         <value>The color of a menu's background.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.MenuBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_MenuBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3580,22 +3580,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the background of a menu. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.MenuBrushKey%2A> to create a dynamic reference to the brush that paints the background of a menu. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.MenuBrushKey%2A> to create a dynamic reference to the brush that paints the background of a menu. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_MenuBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.MenuBrushKey}}" />  
 ```  
-  
+ 
 <a name="xamlValues_MenuBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3617,21 +3617,21 @@
         <value>The color of a menu's background.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.MenuColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_MenuColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3653,22 +3653,22 @@
         <value>The resource key for the background <see cref="T:System.Windows.Media.Color" /> of a menu.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.MenuColorKey%2A> to create a dynamic reference to the menu system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.MenuColorKey%2A> to create a dynamic reference to the menu system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuColor%2A>.  
+ 
 <a name="xamlAttributeUsage_MenuColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_MenuColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3690,21 +3690,21 @@
         <value>The color used to highlight a menu item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuHighlightBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.MenuHighlightBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_MenuHighlightBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3726,22 +3726,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints a highlighted menu item. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.MenuHighlightBrushKey%2A> to create a dynamic reference to the brush that paints a highlighted menu item. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuHighlightBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.MenuHighlightBrushKey%2A> to create a dynamic reference to the brush that paints a highlighted menu item. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuHighlightBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_MenuHighlightBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}" />  
 ```  
-  
+ 
 <a name="xamlValues_MenuHighlightBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3763,21 +3763,21 @@
         <value>The color used to highlight a menu item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuHighlightColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.MenuHighlightColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_MenuHighlightColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3799,22 +3799,22 @@
         <value>The resource key for the background <see cref="T:System.Windows.Media.Color" /> of a highlighted menu item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.MenuHighlightColorKey%2A> to create a dynamic reference to the menu highlight system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuHighlightColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.MenuHighlightColorKey%2A> to create a dynamic reference to the menu highlight system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuHighlightColor%2A>.  
+ 
 <a name="xamlAttributeUsage_MenuHighlightColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_MenuHighlightColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3836,21 +3836,21 @@
         <value>The color of a menu's text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuTextBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.MenuTextBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_MenuTextBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3872,22 +3872,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints a menu's text. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.MenuTextBrushKey%2A> to create a dynamic reference to the brush that paints a menu's text. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuTextBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.MenuTextBrushKey%2A> to create a dynamic reference to the brush that paints a menu's text. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuTextBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_MenuTextBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.MenuTextBrushKey}}" />  
 ```  
-  
+ 
 <a name="xamlValues_MenuTextBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3909,21 +3909,21 @@
         <value>The color of a menu's text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_MenuTextColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.MenuTextColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_MenuTextColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3945,22 +3945,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.Color" /> of a menu's text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.MenuTextColorKey%2A> to create a dynamic reference to the menu text system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuTextColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.MenuTextColorKey%2A> to create a dynamic reference to the menu text system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.MenuTextColor%2A>.  
+ 
 <a name="xamlAttributeUsage_MenuTextColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_MenuTextColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3982,21 +3982,21 @@
         <value>The background color of a scroll bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ScrollBarBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ScrollBarBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ScrollBarBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4018,22 +4018,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the background of a scroll bar. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ScrollBarBrushKey%2A> to create a dynamic reference to the brush that paints the background of a scroll bar. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ScrollBarBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ScrollBarBrushKey%2A> to create a dynamic reference to the brush that paints the background of a scroll bar. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ScrollBarBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_ScrollBarBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" />  
 ```  
-  
+ 
 <a name="xamlValues_ScrollBarBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4055,21 +4055,21 @@
         <value>The background color of a scroll bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_ScrollBarColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.ScrollBarColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ScrollBarColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4091,22 +4091,22 @@
         <value>The resource key for the background <see cref="T:System.Windows.Media.Color" /> of a scroll bar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.ScrollBarColorKey%2A> to create a dynamic reference to the scroll bar system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ScrollBarColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.ScrollBarColorKey%2A> to create a dynamic reference to the scroll bar system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.ScrollBarColor%2A>.  
+ 
 <a name="xamlAttributeUsage_ScrollBarColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_ScrollBarColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4128,21 +4128,21 @@
         <value>The background color in the client area of a window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_WindowBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.WindowBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_WindowBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4164,22 +4164,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the background of a window's client area. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.WindowBrushKey%2A> to create a dynamic reference to the brush that paints the background of a window's client area. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.WindowBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.WindowBrushKey%2A> to create a dynamic reference to the brush that paints the background of a window's client area. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.WindowBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_WindowBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" />  
 ```  
-  
+ 
 <a name="xamlValues_WindowBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4201,21 +4201,21 @@
         <value>The background color in the client area of a window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_WindowColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.WindowColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_WindowColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4237,22 +4237,22 @@
         <value>The resource key for the background <see cref="T:System.Windows.Media.Color" /> of a window's client area.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.WindowColorKey%2A> to create a dynamic reference to the window system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.WindowColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.WindowColorKey%2A> to create a dynamic reference to the window system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.WindowColor%2A>.  
+ 
 <a name="xamlAttributeUsage_WindowColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_WindowColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4274,21 +4274,21 @@
         <value>The color of a window frame.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_WindowFrameBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.WindowFrameBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_WindowFrameBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4310,22 +4310,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints a window frame. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.WindowBrushKey%2A> to create a dynamic reference to the brush that paints a window frame. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.WindowBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.WindowBrushKey%2A> to create a dynamic reference to the brush that paints a window frame. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.WindowBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_WindowFrameBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" />  
 ```  
-  
+ 
 <a name="xamlValues_WindowFrameBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4347,21 +4347,21 @@
         <value>The color of a window frame.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_WindowFrameColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.WindowFrameColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_WindowFrameColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4383,22 +4383,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.Color" /> of a window frame.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.WindowFrameColorKey%2A> to create a dynamic reference to the window frame system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.WindowFrameColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.WindowFrameColorKey%2A> to create a dynamic reference to the window frame system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.WindowFrameColor%2A>.  
+ 
 <a name="xamlAttributeUsage_WindowFrameColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_WindowFrameColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4420,21 +4420,21 @@
         <value>The color of the text in the client area of a window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_WindowTextBrush"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.WindowTextBrush}"/>  
 ```  
-  
+ 
 <a name="xamlValues_WindowTextBrush"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4456,22 +4456,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.SolidColorBrush" /> that paints the text in the client area of a window. This brush's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, so it cannot be modified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.WindowTextBrushKey%2A> to create a dynamic reference to the brush that paints the text in the client area of a window. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.WindowTextBrush%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.WindowTextBrushKey%2A> to create a dynamic reference to the brush that paints the text in the client area of a window. This dynamic reference will automatically update if the brush is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.WindowTextBrush%2A>.  
+ 
 <a name="xamlAttributeUsage_WindowTextBrushKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}" />  
 ```  
-  
+ 
 <a name="xamlValues_WindowTextBrushKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4493,21 +4493,21 @@
         <value>The color of the text in the client area of a window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_WindowTextColor"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{x:Static SystemColors.WindowTextColor}"/>  
 ```  
-  
+ 
 <a name="xamlValues_WindowTextColor"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4529,22 +4529,22 @@
         <value>The resource key for the <see cref="T:System.Windows.Media.Color" /> of text in a window's client area.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.SystemColors.WindowTextColorKey%2A> to create a dynamic reference to the window text system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.WindowTextColor%2A>.  
-  
+Use the <xref:System.Windows.SystemColors.WindowTextColorKey%2A> to create a dynamic reference to the window text system color. This dynamic reference will automatically update if the color is changed. To create a static reference that does not update automatically, use <xref:System.Windows.SystemColors.WindowTextColor%2A>.  
+ 
 <a name="xamlAttributeUsage_WindowTextColorKey"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="{DynamicResource {x:Static SystemColors.WindowTextColorKey}}"/>  
 ```  
-  
+ 
 <a name="xamlValues_WindowTextColorKey"></a>   
 ## XAML Values  
- *x:Static*  
- The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
-  
+*x:Static*  
+The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,10 +19,10 @@
     <summary>Represents information related to the scope of data provided by an input method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.FrameworkElement.InputScope%2A> and <xref:System.Windows.FrameworkContentElement.InputScope%2A> properties to get an <xref:System.Windows.Input.InputScope> for a particular element.  
-  
+Use the <xref:System.Windows.FrameworkElement.InputScope%2A> and <xref:System.Windows.FrameworkContentElement.InputScope%2A> properties to get an <xref:System.Windows.Input.InputScope> for a particular element.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
  The default value is <see cref="F:System.Windows.Input.InputScopeNameValue.Default" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using an input scope name is the simplest way to refer to an <xref:System.Windows.Input.InputScope> for an element.  
-  
+Using an input scope name is the simplest way to refer to an <xref:System.Windows.Input.InputScope> for an element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Raised when an attempt is made to set this property to any value other than a valid member of the <see cref="T:System.Windows.Input.InputScopeName" /> enumeration.</exception>
@@ -150,10 +150,10 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Currently, this property is only applicable to speech input.  
-  
+Currently, this property is only applicable to speech input.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised when an attempt is made to set this property to **null**.</exception>

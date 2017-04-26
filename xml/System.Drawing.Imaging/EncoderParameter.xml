@@ -18,20 +18,20 @@
     <summary>Used to pass a value, or an array of values, to an image encoder.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can also use an <xref:System.Drawing.Imaging.EncoderParameter> object to receive a list of possible values supported by a particular parameter of a particular image encoder.  
+You can also use an <xref:System.Drawing.Imaging.EncoderParameter> object to receive a list of possible values supported by a particular parameter of a particular image encoder.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Drawing.Imaging.EncoderParameter> using the <xref:System.Drawing.Imaging.EncoderParameter.%23ctor%2A> constructor. To run this example, paste the code into a Windows Form and call the `VaryQualityLevel` method from the form's constructor. This example requires an image file named `TestPhoto.jpg` located at **c:\\**.  
-  
- [!code-csharp[UsingImageEncodersDecoders#8](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#8)]
- [!code-vb[UsingImageEncodersDecoders#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#8)]  
+The following code example demonstrates how to create a <xref:System.Drawing.Imaging.EncoderParameter> using the <xref:System.Drawing.Imaging.EncoderParameter.%23ctor%2A> constructor. To run this example, paste the code into a Windows Form and call the `VaryQualityLevel` method from the form's constructor. This example requires an image file named `TestPhoto.jpg` located at **c:\\**.  
+ 
+[!code-csharp[UsingImageEncodersDecoders#8](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#8)]
+[!code-vb[UsingImageEncodersDecoders#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#8)]  
 [!code-csharp[UsingImageEncodersDecoders#6](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#6)]
 [!code-vb[UsingImageEncodersDecoders#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#6)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -135,15 +135,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and one 64-bit integer. Sets the <see cref="P:System.Drawing.Imaging.EncoderParameter.ValueType" /> property to <see cref="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeLong" /> (32 bits), and sets the <see cref="P:System.Drawing.Imaging.EncoderParameter.NumberOfValues" /> property to 1.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Drawing.Imaging.EncoderParameter> using the <xref:System.Drawing.Imaging.EncoderParameter.%23ctor%2A> constructor. To run this example, paste the code into a Windows Form and call the `VaryQualityLevel` method from the form's constructor. This example requires an image file named `TestPhoto.jpg` located at **c:\\**.  
-  
- [!code-csharp[UsingImageEncodersDecoders#8](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#8)]
- [!code-vb[UsingImageEncodersDecoders#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#8)]  
+The following code example demonstrates how to create a <xref:System.Drawing.Imaging.EncoderParameter> using the <xref:System.Drawing.Imaging.EncoderParameter.%23ctor%2A> constructor. To run this example, paste the code into a Windows Form and call the `VaryQualityLevel` method from the form's constructor. This example requires an image file named `TestPhoto.jpg` located at **c:\\**.  
+ 
+[!code-csharp[UsingImageEncodersDecoders#8](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#8)]
+[!code-vb[UsingImageEncodersDecoders#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#8)]  
 [!code-csharp[UsingImageEncodersDecoders#6](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#6)]
 [!code-vb[UsingImageEncodersDecoders#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#6)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -425,10 +425,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> class with the specified <see cref="T:System.Drawing.Imaging.Encoder" /> object and four arrays of 32-bit integers. The four arrays represent an array rational ranges. A rational range is the set of all fractions from a minimum fractional value through a maximum fractional value. Sets the <see cref="P:System.Drawing.Imaging.EncoderParameter.ValueType" /> property to <see cref="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeRationalRange" />, and sets the <see cref="P:System.Drawing.Imaging.EncoderParameter.NumberOfValues" /> property to the number of elements in the <paramref name="numerator1" /> array, which must be the same as the number of elements in the other three arrays.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The ith range consists of all fractional numbers from numerator1[i]/denominator1[i] through numerator2[i]/denominator2[i].  
-  
+The ith range consists of all fractional numbers from numerator1[i]/denominator1[i] through numerator2[i]/denominator2[i].  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -450,10 +450,10 @@
         <summary>Releases all resources used by this <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling <xref:System.Drawing.Imaging.EncoderParameter.Dispose%2A> allows the resources used by this <xref:System.Drawing.Imaging.EncoderParameter> object to be reallocated for other purposes.  
-  
+Calling <xref:System.Drawing.Imaging.EncoderParameter.Dispose%2A> allows the resources used by this <xref:System.Drawing.Imaging.EncoderParameter> object to be reallocated for other purposes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

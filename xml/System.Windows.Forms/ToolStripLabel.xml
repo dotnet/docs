@@ -19,24 +19,24 @@
     <summary>Represents a nonselectable <see cref="T:System.Windows.Forms.ToolStripItem" /> that renders text and images and can display hyperlinks.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripLabel> class to create a label that can render text and images that can implement the <xref:System.Windows.Forms.ToolStripItem.TextAlign%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ToolStripItem.ImageAlign%2A?displayProperty=fullName> properties. The <xref:System.Windows.Forms.ToolStripLabel> also has many properties that enable it to display one or more hyperlinks, and other properties that modify the appearance and behavior of hyperlinks.  
+Use the <xref:System.Windows.Forms.ToolStripLabel> class to create a label that can render text and images that can implement the <xref:System.Windows.Forms.ToolStripItem.TextAlign%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ToolStripItem.ImageAlign%2A?displayProperty=fullName> properties. The <xref:System.Windows.Forms.ToolStripLabel> also has many properties that enable it to display one or more hyperlinks, and other properties that modify the appearance and behavior of hyperlinks.  
+ 
+The <xref:System.Windows.Forms.ToolStripLabel> is like a <xref:System.Windows.Forms.ToolStripButton> that does not get focus by default and that does not render as pushed or highlighted.  
+ 
+<xref:System.Windows.Forms.ToolStripLabel> as a hosted item supports access keys.  
+ 
+Use the <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A>, and <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A> properties on a <xref:System.Windows.Forms.ToolStripLabel> to support link control in a <xref:System.Windows.Forms.ToolStrip>.  
+ 
   
- The <xref:System.Windows.Forms.ToolStripLabel> is like a <xref:System.Windows.Forms.ToolStripButton> that does not get focus by default and that does not render as pushed or highlighted.  
-  
- <xref:System.Windows.Forms.ToolStripLabel> as a hosted item supports access keys.  
-  
- Use the <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A>, and <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A> properties on a <xref:System.Windows.Forms.ToolStripLabel> to support link control in a <xref:System.Windows.Forms.ToolStrip>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ToolStripLabel> to contain a link by setting the <xref:System.Windows.Forms.ToolStripLabel.IsLink%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkVisited%2A> and <xref:System.Windows.Forms.ToolStripLabel.LinkBehavior%2A> properties.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ToolStripLabel> to contain a link by setting the <xref:System.Windows.Forms.ToolStripLabel.IsLink%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkVisited%2A> and <xref:System.Windows.Forms.ToolStripLabel.LinkBehavior%2A> properties.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -204,23 +204,23 @@
         <value>A <see cref="T:System.Drawing.Color" /> that represents the color to display an active link. The default color is specified by the system. Typically, this color is <see langword="Color.Red" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An active link is a link that is in the process of being clicked. This is similar to the depressed state of a <xref:System.Windows.Forms.Button> control. You can use this property to specify the color that the link is displayed in when the link is in the process of being clicked.  
-  
- There are a number of colors associated with a link. The <xref:System.Windows.Forms.LinkLabel.LinkColor%2A> specifies the color of all links displayed in the <xref:System.Windows.Forms.LinkLabel> control. The <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A> property enables you to specify the color of a link after it has been visited by the user.  
-  
+An active link is a link that is in the process of being clicked. This is similar to the depressed state of a <xref:System.Windows.Forms.Button> control. You can use this property to specify the color that the link is displayed in when the link is in the process of being clicked.  
+ 
+There are a number of colors associated with a link. The <xref:System.Windows.Forms.LinkLabel.LinkColor%2A> specifies the color of all links displayed in the <xref:System.Windows.Forms.LinkLabel> control. The <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A> property enables you to specify the color of a link after it has been visited by the user.  
+ 
 > [!NOTE]
 >  When setting this property, ensure that the color you are setting the property to does not conflict with the color of the control's background or the text does not display properly. For example, if the background color of the control is `Color.Red` and this property is set to `Color.Red`, the text is not shown properly when the link is in the process of being clicked.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ToolStripLabel> to contain a link by setting the <xref:System.Windows.Forms.ToolStripLabel.IsLink%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkVisited%2A> and <xref:System.Windows.Forms.ToolStripLabel.LinkBehavior%2A> properties.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ToolStripLabel> to contain a link by setting the <xref:System.Windows.Forms.ToolStripLabel.IsLink%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkVisited%2A> and <xref:System.Windows.Forms.ToolStripLabel.LinkBehavior%2A> properties.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -243,10 +243,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Forms.ToolStripLabel> is a nonselectable <xref:System.Windows.Forms.ToolStripItem>.  
-  
+A <xref:System.Windows.Forms.ToolStripLabel> is a nonselectable <xref:System.Windows.Forms.ToolStripItem>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -298,13 +298,13 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripLabel" /> is a hyperlink; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ToolStripLabel> to contain a link by setting the <xref:System.Windows.Forms.ToolStripLabel.IsLink%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkVisited%2A> and <xref:System.Windows.Forms.ToolStripLabel.LinkBehavior%2A> properties.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ToolStripLabel> to contain a link by setting the <xref:System.Windows.Forms.ToolStripLabel.IsLink%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkVisited%2A> and <xref:System.Windows.Forms.ToolStripLabel.LinkBehavior%2A> properties.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -331,18 +331,18 @@
         <value>One of the <see cref="T:System.Windows.Forms.LinkBehavior" /> values. The default is <see langword="LinkBehavior.SystemDefault" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property enables you to specify the behavior of links when they are displayed in the control. For example, if you want links to be displayed with an underline only when the mouse pointer is over a link, you can set this property to `LinkBehavior.HoverUnderline`. For more information about the types of behaviors that can be associated with a link, see <xref:System.Windows.Forms.LinkBehavior>.  
+This property enables you to specify the behavior of links when they are displayed in the control. For example, if you want links to be displayed with an underline only when the mouse pointer is over a link, you can set this property to `LinkBehavior.HoverUnderline`. For more information about the types of behaviors that can be associated with a link, see <xref:System.Windows.Forms.LinkBehavior>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ToolStripLabel> to contain a link by setting the <xref:System.Windows.Forms.ToolStripLabel.IsLink%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkVisited%2A> and <xref:System.Windows.Forms.ToolStripLabel.LinkBehavior%2A> properties.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ToolStripLabel> to contain a link by setting the <xref:System.Windows.Forms.ToolStripLabel.IsLink%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkVisited%2A> and <xref:System.Windows.Forms.ToolStripLabel.LinkBehavior%2A> properties.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -364,13 +364,13 @@
         <value>A <see cref="T:System.Drawing.Color" /> that represents the color used to displaying a normal link. The default color is specified by the system. Typically, this color is <see langword="Color.Blue" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ToolStripLabel> to contain a link by setting the <xref:System.Windows.Forms.ToolStripLabel.IsLink%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkVisited%2A> and <xref:System.Windows.Forms.ToolStripLabel.LinkBehavior%2A> properties.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ToolStripLabel> to contain a link by setting the <xref:System.Windows.Forms.ToolStripLabel.IsLink%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkVisited%2A> and <xref:System.Windows.Forms.ToolStripLabel.LinkBehavior%2A> properties.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,18 +398,18 @@
           <see langword="true" /> if links should display as though they were visited; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Forms.LinkLabel> control does not automatically denote that a link is a visited link. To display the link as a visited link, you can set the value of this property to `true` in an event handler for the click event of the <xref:System.Windows.Forms.LinkLabel>. A visited link is displayed using the color specified in the <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A> property of the <xref:System.Windows.Forms.ToolStripLabel> control.  
+A <xref:System.Windows.Forms.LinkLabel> control does not automatically denote that a link is a visited link. To display the link as a visited link, you can set the value of this property to `true` in an event handler for the click event of the <xref:System.Windows.Forms.LinkLabel>. A visited link is displayed using the color specified in the <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A> property of the <xref:System.Windows.Forms.ToolStripLabel> control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ToolStripLabel> to contain a link by setting the <xref:System.Windows.Forms.ToolStripLabel.IsLink%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkVisited%2A> and <xref:System.Windows.Forms.ToolStripLabel.LinkBehavior%2A> properties.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ToolStripLabel> to contain a link by setting the <xref:System.Windows.Forms.ToolStripLabel.IsLink%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkVisited%2A> and <xref:System.Windows.Forms.ToolStripLabel.LinkBehavior%2A> properties.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -434,12 +434,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripLabel.OnFontChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripLabel.OnFontChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -467,12 +467,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.MouseEnter" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripLabel.OnMouseEnter%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripLabel.OnMouseEnter%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -500,12 +500,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.MouseLeave" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripLabel.OnMouseLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripLabel.OnMouseLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -533,12 +533,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.Paint" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripLabel.OnPaint%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripLabel.OnPaint%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -568,12 +568,12 @@
           <see langword="true" /> if the character was processed as a mnemonic by the control; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called to give an item the opportunity to process a mnemonic character. The method should determine whether the item is in a state to process mnemonics and if whether the given character represents a mnemonic. If so, the method should perform the action associated with the mnemonic and return `true`. If not, the method should return `false`.  
-  
- The <xref:System.Windows.Forms.ToolStripLabel> implementation relies on the host <xref:System.Windows.Forms.ToolStrip> control to call the <xref:System.Windows.Forms.Control.IsMnemonic%2A> method to determine whether the given character matches a mnemonic in the item's text. In this case, the method selects the item associated with the label, or raises the <xref:System.Windows.Forms.ToolStripItem.Click> event if the item cannot be selected.  
-  
+This method is called to give an item the opportunity to process a mnemonic character. The method should determine whether the item is in a state to process mnemonics and if whether the given character represents a mnemonic. If so, the method should perform the action associated with the mnemonic and return `true`. If not, the method should return `false`.  
+ 
+The <xref:System.Windows.Forms.ToolStripLabel> implementation relies on the host <xref:System.Windows.Forms.ToolStrip> control to call the <xref:System.Windows.Forms.Control.IsMnemonic%2A> method to determine whether the given character matches a mnemonic in the item's text. In this case, the method selects the item associated with the label, or raises the <xref:System.Windows.Forms.ToolStripItem.Click> event if the item cannot be selected.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
@@ -596,21 +596,21 @@
         <value>A <see cref="T:System.Drawing.Color" /> that represents the color used to display links that have been visited. The default color is specified by the system. Typically, this color is <see langword="Color.Purple" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property enables you to specify the color that is displayed for all links in the <xref:System.Windows.Forms.ToolStripLabel> that have been visited by the user.  
-  
+This property enables you to specify the color that is displayed for all links in the <xref:System.Windows.Forms.ToolStripLabel> that have been visited by the user.  
+ 
 > [!NOTE]
 >  When setting this property, ensure that the color you are setting the property to does not conflict with the color of the control's background or the text does not display properly. For example, if the background color of the control is `Color.Red` and this property is set to `Color.Red`, the text is not shown properly when the link is displayed as a visited link.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ToolStripLabel> to contain a link by setting the <xref:System.Windows.Forms.ToolStripLabel.IsLink%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkVisited%2A> and <xref:System.Windows.Forms.ToolStripLabel.LinkBehavior%2A> properties.  
-  
- [!code-csharp[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ToolStripLabel> to contain a link by setting the <xref:System.Windows.Forms.ToolStripLabel.IsLink%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.VisitedLinkColor%2A>, <xref:System.Windows.Forms.ToolStripLabel.LinkVisited%2A> and <xref:System.Windows.Forms.ToolStripLabel.LinkBehavior%2A> properties.  
+ 
+[!code-csharp[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ToolStripLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripLabel/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

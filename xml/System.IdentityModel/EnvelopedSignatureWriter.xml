@@ -14,10 +14,10 @@
     <summary>Wraps a writer and generates a signature automatically when the envelope has been completely written. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default the generated signature is inserted as the last element in the envelope. This can be modified by explicitly calling the <xref:System.IdentityModel.EnvelopedSignatureWriter.WriteSignature%2A> method to indicate the location inside the envelope where the signature should be inserted.  
-  
+By default the generated signature is inserted as the last element in the envelope. This can be modified by explicitly calling the <xref:System.IdentityModel.EnvelopedSignatureWriter.WriteSignature%2A> method to indicate the location inside the envelope where the signature should be inserted.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,10 +96,10 @@
         <summary>Closes one element and pops the corresponding namespace scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the last element of the envelope is written, the signature is automatically computed over the envelope. If the <xref:System.IdentityModel.EnvelopedSignatureWriter.WriteSignature%2A> method was explicitly called, the signature is inserted at the appropriate position inside the envelope; otherwise, it is inserted at the end of the envelope.  
-  
+When the last element of the envelope is written, the signature is automatically computed over the envelope. If the <xref:System.IdentityModel.EnvelopedSignatureWriter.WriteSignature%2A> method was explicitly called, the signature is inserted at the appropriate position inside the envelope; otherwise, it is inserted at the end of the envelope.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +121,10 @@
         <summary>Closes one element and pops the corresponding namespace scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the last element of the envelope is written, the signature is automatically computed over the envelope. If the <xref:System.IdentityModel.EnvelopedSignatureWriter.WriteSignature%2A> method was explicitly called, the signature is inserted at the appropriate position inside the envelope; otherwise, it is inserted at the end of the envelope.  
-  
+When the last element of the envelope is written, the signature is automatically computed over the envelope. If the <xref:System.IdentityModel.EnvelopedSignatureWriter.WriteSignature%2A> method was explicitly called, the signature is inserted at the appropriate position inside the envelope; otherwise, it is inserted at the end of the envelope.  
+ 
  ]]></format>
         </remarks>
       </Docs>

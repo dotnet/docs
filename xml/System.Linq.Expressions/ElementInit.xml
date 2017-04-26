@@ -29,13 +29,13 @@
     <summary>Represents an initializer for a single element of an <see cref="T:System.Collections.IEnumerable" /> collection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Linq.Expressions.ElementInit> that represents the initialization of an element of a dictionary collection.  
-  
- [!code-csharp[System.Linq.Expressions.Expression#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#4)]
- [!code-vb[System.Linq.Expressions.Expression#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#4)]  
-  
+The following example creates an <xref:System.Linq.Expressions.ElementInit> that represents the initialization of an element of a dictionary collection.  
+ 
+[!code-csharp[System.Linq.Expressions.Expression#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#4)]
+[!code-vb[System.Linq.Expressions.Expression#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

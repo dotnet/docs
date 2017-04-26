@@ -18,12 +18,12 @@
     <summary>Represents the collection containing the indexes to the selected items in a <see cref="T:System.Windows.Forms.ListBox" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> class stores the indexes to the selected items in the <xref:System.Windows.Forms.ListBox>. The indexes stored in the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> are index positions within the <xref:System.Windows.Forms.ListBox.ObjectCollection> class. The <xref:System.Windows.Forms.ListBox.ObjectCollection> class stores all items displayed in the <xref:System.Windows.Forms.ListBox>.  
-  
- The following table is an example of how the <xref:System.Windows.Forms.ListBox.ObjectCollection> stores the items of the <xref:System.Windows.Forms.ListBox> as well as their selection states within an example <xref:System.Windows.Forms.ListBox>.  
-  
+The <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> class stores the indexes to the selected items in the <xref:System.Windows.Forms.ListBox>. The indexes stored in the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> are index positions within the <xref:System.Windows.Forms.ListBox.ObjectCollection> class. The <xref:System.Windows.Forms.ListBox.ObjectCollection> class stores all items displayed in the <xref:System.Windows.Forms.ListBox>.  
+ 
+The following table is an example of how the <xref:System.Windows.Forms.ListBox.ObjectCollection> stores the items of the <xref:System.Windows.Forms.ListBox> as well as their selection states within an example <xref:System.Windows.Forms.ListBox>.  
+ 
 |Index|Item|Selection state within the ListBox|  
 |-----------|----------|----------------------------------------|  
 |0|object1|Unselected|  
@@ -31,26 +31,26 @@
 |2|object3|Unselected|  
 |3|object4|Selected|  
 |4|object5|Selected|  
-  
- Based on the <xref:System.Windows.Forms.ListBox.ObjectCollection> example in the previous table, the following table demonstrates how the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> would appear.  
-  
+ 
+Based on the <xref:System.Windows.Forms.ListBox.ObjectCollection> example in the previous table, the following table demonstrates how the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> would appear.  
+ 
 |Index|Index of selected item in ObjectCollection|  
 |-----------|------------------------------------------------|  
 |0|1|  
 |1|3|  
 |2|4|  
+ 
+You can use the properties and methods of this class to perform a variety of tasks with the collection. The <xref:System.Windows.Forms.ListBox.SelectedIndexCollection.Contains%2A> method enables you to determine whether an index position from the <xref:System.Windows.Forms.ListBox.ObjectCollection> class is a member of the selected indexes stored in the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>. Once you know that the item is located within the collection, you can use the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection.IndexOf%2A> method to determine where a specific index position within the <xref:System.Windows.Forms.ListBox.ObjectCollection> for the <xref:System.Windows.Forms.ListBox> is stored.  
+ 
   
- You can use the properties and methods of this class to perform a variety of tasks with the collection. The <xref:System.Windows.Forms.ListBox.SelectedIndexCollection.Contains%2A> method enables you to determine whether an index position from the <xref:System.Windows.Forms.ListBox.ObjectCollection> class is a member of the selected indexes stored in the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>. Once you know that the item is located within the collection, you can use the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection.IndexOf%2A> method to determine where a specific index position within the <xref:System.Windows.Forms.ListBox.ObjectCollection> for the <xref:System.Windows.Forms.ListBox> is stored.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Forms.ListBox.FindString%2A> method to search for all instances of the search text in the items of the <xref:System.Windows.Forms.ListBox>. The example uses the version of the <xref:System.Windows.Forms.ListBox.FindString%2A> method that enables you to specify a starting search index from which to do a continual search of all items in the <xref:System.Windows.Forms.ListBox>. The example also demonstrates how to determine when the <xref:System.Windows.Forms.ListBox.FindString%2A> method begins searching from the top of the list after it reaches the bottom of the list of items to prevent a recursive search. Once items are found in the <xref:System.Windows.Forms.ListBox>, they are selected using the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method.  
-  
- [!code-cpp[ListBox.FindString#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.FindString/CPP/form1.cpp#1)]
- [!code-csharp[ListBox.FindString#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.FindString/CS/form1.cs#1)]
- [!code-vb[ListBox.FindString#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.FindString/VB/form1.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Forms.ListBox.FindString%2A> method to search for all instances of the search text in the items of the <xref:System.Windows.Forms.ListBox>. The example uses the version of the <xref:System.Windows.Forms.ListBox.FindString%2A> method that enables you to specify a starting search index from which to do a continual search of all items in the <xref:System.Windows.Forms.ListBox>. The example also demonstrates how to determine when the <xref:System.Windows.Forms.ListBox.FindString%2A> method begins searching from the top of the list after it reaches the bottom of the list of items to prevent a recursive search. Once items are found in the <xref:System.Windows.Forms.ListBox>, they are selected using the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method.  
+ 
+[!code-cpp[ListBox.FindString#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.FindString/CPP/form1.cpp#1)]
+[!code-csharp[ListBox.FindString#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.FindString/CS/form1.cs#1)]
+[!code-vb[ListBox.FindString#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.FindString/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,10 +72,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListBox.SelectedIndexCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot create an instance of this class without associating it with a <xref:System.Windows.Forms.ListBox> control.  
-  
+You cannot create an instance of this class without associating it with a <xref:System.Windows.Forms.ListBox> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,10 +141,10 @@
           <see langword="true" /> if the specified index from the <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" /> for the <see cref="T:System.Windows.Forms.ListBox" /> is an item in this collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListBox.SelectedIndexCollection.Contains%2A> method enables you to determine whether an index position from the <xref:System.Windows.Forms.ListBox.ObjectCollection> class is a member of the selected indexes stored in the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>. You can use this to determine whether a specific item in a multiple-selection <xref:System.Windows.Forms.ListBox> is selected.  
-  
+The <xref:System.Windows.Forms.ListBox.SelectedIndexCollection.Contains%2A> method enables you to determine whether an index position from the <xref:System.Windows.Forms.ListBox.ObjectCollection> class is a member of the selected indexes stored in the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>. You can use this to determine whether a specific item in a multiple-selection <xref:System.Windows.Forms.ListBox> is selected.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,10 +171,10 @@
         <summary>Copies the entire collection into an existing array at a specified location within the array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to combine the selected indexes from multiple collections into a single array.  
-  
+You can use this method to combine the selected indexes from multiple collections into a single array.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,19 +201,19 @@
         <value>The number of items in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property enables you to determine the number of selected items in the <xref:System.Windows.Forms.ListBox>. You can then use this value when looping through the values of the collection and you need to provide a number of iterations to perform the loop. Unless the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property of the <xref:System.Windows.Forms.ListBox> is set to `SelectionMode.MultiSimple` or `SelectionMode.MultiExtended`, this property always returns a value of zero (0) or one (1) depending on whether you have a selected item.  
+This property enables you to determine the number of selected items in the <xref:System.Windows.Forms.ListBox>. You can then use this value when looping through the values of the collection and you need to provide a number of iterations to perform the loop. Unless the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property of the <xref:System.Windows.Forms.ListBox> is set to `SelectionMode.MultiSimple` or `SelectionMode.MultiExtended`, this property always returns a value of zero (0) or one (1) depending on whether you have a selected item.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Forms.ListBox.FindString%2A> method to search for all instances of the search text in the items of the <xref:System.Windows.Forms.ListBox>. The example uses the version of the <xref:System.Windows.Forms.ListBox.FindString%2A> method that enables you to specify a starting search index from which to do a continual search of all items in the <xref:System.Windows.Forms.ListBox>. The example also demonstrates how to determine when the <xref:System.Windows.Forms.ListBox.FindString%2A> method begins searching from the top of the list after it reaches the bottom of the list of items to prevent a recursive search. Once items are found in the <xref:System.Windows.Forms.ListBox>, they are selected using the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method.  
-  
- [!code-cpp[ListBox.FindString#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.FindString/CPP/form1.cpp#1)]
- [!code-csharp[ListBox.FindString#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.FindString/CS/form1.cs#1)]
- [!code-vb[ListBox.FindString#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.FindString/VB/form1.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Forms.ListBox.FindString%2A> method to search for all instances of the search text in the items of the <xref:System.Windows.Forms.ListBox>. The example uses the version of the <xref:System.Windows.Forms.ListBox.FindString%2A> method that enables you to specify a starting search index from which to do a continual search of all items in the <xref:System.Windows.Forms.ListBox>. The example also demonstrates how to determine when the <xref:System.Windows.Forms.ListBox.FindString%2A> method begins searching from the top of the list after it reaches the bottom of the list of items to prevent a recursive search. Once items are found in the <xref:System.Windows.Forms.ListBox>, they are selected using the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method.  
+ 
+[!code-cpp[ListBox.FindString#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.FindString/CPP/form1.cpp#1)]
+[!code-csharp[ListBox.FindString#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.FindString/CS/form1.cs#1)]
+[!code-vb[ListBox.FindString#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.FindString/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,10 +258,10 @@
         <returns>The zero-based index in the collection where the specified index of the <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" /> was located within the <see cref="T:System.Windows.Forms.ListBox.SelectedIndexCollection" />; otherwise, negative one (-1).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once you know that an item is located within the collection (using the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection.Contains%2A> method), you can use the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection.IndexOf%2A> method to determine where a specific index position within the <xref:System.Windows.Forms.ListBox.ObjectCollection> for the <xref:System.Windows.Forms.ListBox> is stored within the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>.  
-  
+Once you know that an item is located within the collection (using the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection.Contains%2A> method), you can use the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection.IndexOf%2A> method to determine where a specific index position within the <xref:System.Windows.Forms.ListBox.ObjectCollection> for the <xref:System.Windows.Forms.ListBox> is stored within the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -284,10 +284,10 @@
           <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is always `true` for this collection. The items in this collection are modified only by the <xref:System.Windows.Forms.ListBox> control.  
-  
+This property is always `true` for this collection. The items in this collection are modified only by the <xref:System.Windows.Forms.ListBox> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -313,10 +313,10 @@
         <value>The index value from the <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" /> that is stored at the specified location.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This indexer enables you to get a specific selected index from the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>. The index stored in the collection is an index into the <xref:System.Windows.Forms.ListBox.ObjectCollection> of the <xref:System.Windows.Forms.ListBox> that represents a selected item in the <xref:System.Windows.Forms.ListBox>.  
-  
+This indexer enables you to get a specific selected index from the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>. The index stored in the collection is an index into the <xref:System.Windows.Forms.ListBox.ObjectCollection> of the <xref:System.Windows.Forms.ListBox> that represents a selected item in the <xref:System.Windows.Forms.ListBox>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListBox.SelectedIndexCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListBox.SelectedIndexCollection" /> class.</exception>
@@ -361,10 +361,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -386,10 +386,10 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Forms.ListBox.SelectedIndexCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -415,12 +415,12 @@
         <returns>The position into which the index was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- You cannot change the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> class directly. To add an item to the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>, use the <xref:System.Windows.Forms.ListBox.SelectedIndex%2A> property or the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
+You cannot change the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> class directly. To add an item to the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>, use the <xref:System.Windows.Forms.ListBox.SelectedIndex%2A> property or the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -442,10 +442,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Clear" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -472,12 +472,12 @@
           <see langword="true" /> if the specified index from the <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" /> for the <see cref="T:System.Windows.Forms.ListBox" /> is an item in this collection; otherwise, false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- The <xref:System.Windows.Forms.ListBox.SelectedIndexCollection.System%23Collections%23IList%23Contains%2A> method enables you to determine whether an index position from the <xref:System.Windows.Forms.ListBox.ObjectCollection> a member of the selected indexes stored in the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>. You can use this method to determine whether a specific item in a multiple-selection list box is selected.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
+The <xref:System.Windows.Forms.ListBox.SelectedIndexCollection.System%23Collections%23IList%23Contains%2A> method enables you to determine whether an index position from the <xref:System.Windows.Forms.ListBox.ObjectCollection> a member of the selected indexes stored in the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>. You can use this method to determine whether a specific item in a multiple-selection list box is selected.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -503,12 +503,12 @@
         <returns>The zero-based index in the collection where the specified index of the <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" /> is located if it is in the <see cref="T:System.Windows.Forms.ListBox.SelectedIndexCollection" />; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- The <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> contains the indexes of selected items in the <xref:System.Windows.Forms.ListBox.ObjectCollection> of the <xref:System.Windows.Forms.ListBox> control.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
+The <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> contains the indexes of selected items in the <xref:System.Windows.Forms.ListBox.ObjectCollection> of the <xref:System.Windows.Forms.ListBox> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -535,12 +535,12 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- You cannot change the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> class directly. To add an item to the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>, use the <xref:System.Windows.Forms.ListBox.SelectedItem%2A> property or the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
+You cannot change the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> class directly. To add an item to the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>, use the <xref:System.Windows.Forms.ListBox.SelectedItem%2A> property or the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -564,10 +564,10 @@
           <see langword="true" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -593,10 +593,10 @@
         <value>The index value from the <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" /> that is stored at the specified location.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -621,12 +621,12 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- You cannot change the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>, use the <xref:System.Windows.Forms.ListBox.SelectedIndex%2A> property or the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
+You cannot change the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>, use the <xref:System.Windows.Forms.ListBox.SelectedIndex%2A> property or the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
@@ -652,12 +652,12 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.RemoveAt(System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- You cannot change the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>, use the <xref:System.Windows.Forms.ListBox.SelectedIndex%2A> property or the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
+You cannot change the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> class directly. To remove an item from the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>, use the <xref:System.Windows.Forms.ListBox.SelectedIndex%2A> property or the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>

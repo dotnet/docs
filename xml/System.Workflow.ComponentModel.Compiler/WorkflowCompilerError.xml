@@ -19,12 +19,12 @@
     <summary>Represents a <see cref="T:System.CodeDom.Compiler.CompilerError" /> that is obtained during the workflow compilation process.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -109,10 +109,10 @@
         <value>The property associated with the compiler error.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value that is returned by this property is used to map and navigate to the property that caused the compilation failure.  
-  
+The value that is returned by this property is used to map and navigate to the property that caused the compilation failure.  
+ 
  ]]></format>
         </remarks>
       </Docs>

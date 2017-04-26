@@ -30,21 +30,21 @@
     <summary>Defines the attributes that can be associated with a parameter. These are defined in CorHdr.h.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get the `ParameterAttributes` value, first get the `Type`. From the `Type`, get the `ParameterInfo` array. The `ParameterAttributes` value is within the array.  
+To get the `ParameterAttributes` value, first get the `Type`. From the `Type`, get the `ParameterInfo` array. The `ParameterAttributes` value is within the array.  
+ 
+These enumerator values are dependent on optional metadata. Not all attributes are available from all compilers. See the appropriate compiler instructions to determine which enumerated values are available.  
+ 
   
- These enumerator values are dependent on optional metadata. Not all attributes are available from all compilers. See the appropriate compiler instructions to determine which enumerated values are available.  
-  
-   
-  
+ 
 ## Examples  
- The following example displays the attributes of the specified parameter.  
-  
- [!code-cpp[Classic ParameterAttributes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ParameterAttributes Example/CPP/source.cpp#1)]
- [!code-csharp[Classic ParameterAttributes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ParameterAttributes Example/CS/source.cs#1)]
- [!code-vb[Classic ParameterAttributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ParameterAttributes Example/VB/source.vb#1)]  
-  
+The following example displays the attributes of the specified parameter.  
+ 
+[!code-cpp[Classic ParameterAttributes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ParameterAttributes Example/CPP/source.cpp#1)]
+[!code-csharp[Classic ParameterAttributes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ParameterAttributes Example/CS/source.cs#1)]
+[!code-vb[Classic ParameterAttributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ParameterAttributes Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

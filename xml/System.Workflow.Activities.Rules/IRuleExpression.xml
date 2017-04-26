@@ -11,12 +11,12 @@
     <summary>Represents the base class from which custom expression writers must derive to write custom expressions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code creates an expression that can be used in declarative conditions and rule sets. The expression is named `TwoOfThree`, and takes 3 parameters, all of which must evaluate to Booleans. This expression returns `true` if 2 of the 3 expressions return `true`.  
-  
- To use this code, add it to a Class Library project and reference the library from your workflow project.  
-  
+The following code creates an expression that can be used in declarative conditions and rule sets. The expression is named `TwoOfThree`, and takes 3 parameters, all of which must evaluate to Booleans. This expression returns `true` if 2 of the 3 expressions return `true`.  
+ 
+To use this code, add it to a Class Library project and reference the library from your workflow project.  
+ 
 ```csharp  
 using System.CodeDom;  
 using System.Text;  
@@ -152,7 +152,7 @@ namespace TwoOfThreeRuleExpression
     }  
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

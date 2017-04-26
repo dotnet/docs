@@ -19,14 +19,14 @@
     <summary>Provides common designer loader functionality that can be used to implement custom workflow designer loaders.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- Designer loader classes are used to load the designer and save any changes to the state of the designer when the user so instructs. The <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> class can be implemented to support custom loading of a workflow designer and workflow designer components. A workflow designer loader is also responsible for writing changes to an open document back to the storage the loader used when loading the document after the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Flush%2A> method is called.  
-  
+ 
+Designer loader classes are used to load the designer and save any changes to the state of the designer when the user so instructs. The <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> class can be implemented to support custom loading of a workflow designer and workflow designer components. A workflow designer loader is also responsible for writing changes to an open document back to the storage the loader used when loading the document after the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Flush%2A> method is called.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -48,13 +48,13 @@
         <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create a new instance of a <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> object. In this case, the `WorkflowLoader` class is derived from <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader>. When the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> is created, a <xref:System.ComponentModel.Design.DesignSurface> is also created and associated with the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> using the `BeginLoad` method.  
-  
- [!code-csharp[WF_Samples#47](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#47)]
- [!code-vb[WF_Samples#47](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#47)]  
-  
+The following example demonstrates how to create a new instance of a <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> object. In this case, the `WorkflowLoader` class is derived from <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader>. When the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> is created, a <xref:System.ComponentModel.Design.DesignSurface> is also created and associated with the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> using the `BeginLoad` method.  
+ 
+[!code-csharp[WF_Samples#47](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#47)]
+[!code-vb[WF_Samples#47](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#47)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,13 +80,13 @@
         <summary>Adds an activity to the designer host after it has been added to the parent activities collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to add a <xref:System.Workflow.Activities.CodeActivity> to the designer. Before the activity is added to the designer using the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.AddActivityToDesigner%2A> method, it is first added to the Activities collection of the root activity within the workflow.  
-  
- [!code-csharp[WF_Samples#55](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#55)]
- [!code-vb[WF_Samples#55](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#55)]  
-  
+The following example demonstrates how to add a <xref:System.Workflow.Activities.CodeActivity> to the designer. Before the activity is added to the designer using the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.AddActivityToDesigner%2A> method, it is first added to the Activities collection of the root activity within the workflow.  
+ 
+[!code-csharp[WF_Samples#55](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#55)]
+[!code-vb[WF_Samples#55](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#55)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,18 +108,18 @@
         <summary>Releases all resources used by the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Dispose%2A> releases all services used by the designer host, but it does not write pending changes to the designer loader. If you want to save any pending changes prior to releasing all resources, call <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Flush%2A> before you call <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Dispose%2A>.  
+<xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Dispose%2A> releases all services used by the designer host, but it does not write pending changes to the designer loader. If you want to save any pending changes prior to releasing all resources, call <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Flush%2A> before you call <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Dispose%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates an implementation of the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Dispose%2A> method. In this implementation, various services that have been added to the LoaderHost object are removed in preparation for closing the application. This example is from the Tracking Profile Designer SDK sample. For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
-  
- [!code-csharp[WF_Samples#121](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#121)]
- [!code-vb[WF_Samples#121](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#121)]  
-  
+The following example demonstrates an implementation of the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Dispose%2A> method. In this implementation, various services that have been added to the LoaderHost object are removed in preparation for closing the application. This example is from the Tracking Profile Designer SDK sample. For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
+ 
+[!code-csharp[WF_Samples#121](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#121)]
+[!code-vb[WF_Samples#121](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#121)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,13 +141,13 @@
         <value>A string that contains the file name of the designer to load.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.FileName%2A> property to return the path of the currently loaded workflow file used by the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader>.  
-  
- [!code-csharp[WF_Samples#32](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#32)]
- [!code-vb[WF_Samples#32](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#32)]  
-  
+The following example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.FileName%2A> property to return the path of the currently loaded workflow file used by the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader>.  
+ 
+[!code-csharp[WF_Samples#32](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#32)]
+[!code-vb[WF_Samples#32](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#32)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,13 +169,13 @@
         <summary>Writes pending changes to the location that the designer was loaded from.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Flush%2A> method to serialize a workflow using the <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer>. In this example, the overridden <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Flush%2A> delegates to the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.PerformFlush%2A> method defined in the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> derived class.  
-  
- [!code-csharp[WF_Samples#35](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#35)]
- [!code-vb[WF_Samples#35](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#35)]  
-  
+The following example demonstrates how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Flush%2A> method to serialize a workflow using the <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer>. In this example, the overridden <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Flush%2A> delegates to the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.PerformFlush%2A> method defined in the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader> derived class.  
+ 
+[!code-csharp[WF_Samples#35](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#35)]
+[!code-vb[WF_Samples#35](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#35)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -219,13 +219,13 @@
         <returns>A <see cref="T:System.IO.TextReader" /> to read the specified file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create and return a `TextReader` object when the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.GetFileReader%2A> overloaded method is called.  
-  
- [!code-csharp[WF_Samples#33](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#33)]
- [!code-vb[WF_Samples#33](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#33)]  
-  
+The following example shows how to create and return a `TextReader` object when the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.GetFileReader%2A> overloaded method is called.  
+ 
+[!code-csharp[WF_Samples#33](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#33)]
+[!code-vb[WF_Samples#33](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#33)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,13 +251,13 @@
         <returns>A <see cref="T:System.IO.TextWriter" /> to write to the file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following example shows how to create and return a `TextWriter` object when the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.GetFileWriter%2A> overloaded method is called.  
-  
- [!code-csharp[WF_Samples#34](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#34)]
- [!code-vb[WF_Samples#34](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#34)]  
-  
+The following example shows how to create and return a `TextWriter` object when the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.GetFileWriter%2A> overloaded method is called.  
+ 
+[!code-csharp[WF_Samples#34](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#34)]
+[!code-vb[WF_Samples#34](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#34)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,13 +280,13 @@
           <see langword="true" /> if the workflow should be loaded in debug mode; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following method determines whether the workflow designer is locked by the debugger if the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.InDebugMode%2A> property of the current `WorkflowDesignerLoader` returns `true`.  
-  
- [!code-csharp[WF_Samples#54](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#54)]
- [!code-vb[WF_Samples#54](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#54)]  
-  
+The following method determines whether the workflow designer is locked by the debugger if the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.InDebugMode%2A> property of the current `WorkflowDesignerLoader` returns `true`.  
+ 
+[!code-csharp[WF_Samples#54](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#54)]
+[!code-vb[WF_Samples#54](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#54)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -308,13 +308,13 @@
         <summary>Initializes the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader" /> with any services required by the designer loader host.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Initialize%2A> method in a derived class to add the services needed for the designer. The services can vary based on the level of service support required by your application.  
-  
- [!code-csharp[WF_Samples#31](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#31)]
- [!code-vb[WF_Samples#31](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#31)]  
-  
+The following example shows how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Initialize%2A> method in a derived class to add the services needed for the designer. The services can vary based on the level of service support required by your application.  
+ 
+[!code-csharp[WF_Samples#31](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#31)]
+[!code-vb[WF_Samples#31](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#31)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -341,13 +341,13 @@
         <summary>Applies the serialized layout to the root designer in the current designer host.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example shows how to load the layout for a specific workflow definition using the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.LoadDesignerLayout%2A> method. An <xref:System.Xml.XmlReader> object is created using the file name of a designer layout file that was created using <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.SaveDesignerLayout%2A>. When the layout has finished loading, any errors that might have occurred are displayed to the user.  
-  
- [!code-csharp[WF_Samples#39](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#39)]
- [!code-vb[WF_Samples#39](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#39)]  
-  
+This example shows how to load the layout for a specific workflow definition using the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.LoadDesignerLayout%2A> method. An <xref:System.Xml.XmlReader> object is created using the file name of a designer layout file that was created using <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.SaveDesignerLayout%2A>. When the layout has finished loading, any errors that might have occurred are displayed to the user.  
+ 
+[!code-csharp[WF_Samples#39](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#39)]
+[!code-vb[WF_Samples#39](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#39)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -401,13 +401,13 @@
         <summary>Called when loading of the designer is completed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.OnEndLoad%2A> method to display errors that might have occurred during the loading of a workflow.  
-  
- [!code-csharp[WF_Samples#36](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#36)]
- [!code-vb[WF_Samples#36](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#36)]  
-  
+The following example demonstrates how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.OnEndLoad%2A> method to display errors that might have occurred during the loading of a workflow.  
+ 
+[!code-csharp[WF_Samples#36](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#36)]
+[!code-vb[WF_Samples#36](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#36)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -432,13 +432,13 @@
         <summary>Writes cached changes to the location that the designer was loaded from.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.PerformFlush%2A> method to serialize the workflow using the <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer>.  
-  
- [!code-csharp[WF_Samples#35](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#35)]
- [!code-vb[WF_Samples#35](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#35)]  
-  
+The following example demonstrates how to override the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.PerformFlush%2A> method to serialize the workflow using the <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer>.  
+ 
+[!code-csharp[WF_Samples#35](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#35)]
+[!code-vb[WF_Samples#35](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#35)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -463,13 +463,13 @@
         <summary>Loads the designer from a design document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to override the `PerformLoad` method to deserialize a workflow and load it in the designer using the `AddObjectGraphToDesignerHost` helper method.  
-  
- [!code-csharp[WF_Samples#37](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#37)]
- [!code-vb[WF_Samples#37](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#37)]  
-  
+The following example shows how to override the `PerformLoad` method to deserialize a workflow and load it in the designer using the `AddObjectGraphToDesignerHost` helper method.  
+ 
+[!code-csharp[WF_Samples#37](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#37)]
+[!code-vb[WF_Samples#37](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#37)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -494,13 +494,13 @@
         <summary>Removes an activity from the designer host after it has been added to the parent activities collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to remove an activity from the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader>. Before the last child activity in the workflow is removed from the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader>, it is first removed from the workflow <xref:System.Workflow.ComponentModel.CompositeActivity.Activities%2A> collection.  
-  
- [!code-csharp[WF_Samples#40](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#40)]
- [!code-vb[WF_Samples#40](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#40)]  
-  
+The following example shows how to remove an activity from the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader>. Before the last child activity in the workflow is removed from the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader>, it is first removed from the workflow <xref:System.Workflow.ComponentModel.CompositeActivity.Activities%2A> collection.  
+ 
+[!code-csharp[WF_Samples#40](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#40)]
+[!code-vb[WF_Samples#40](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#40)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -530,13 +530,13 @@
         <summary>Serializes the designer layout.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to save the design layout information of a workflow using the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.SaveDesignerLayout%2A> method. After the <xref:System.Xml.XmlWriter> object is created, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> for the `RootComponent` of the workflow is retrieved and passed to the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.SaveDesignerLayout%2A> method. To load the layout file that is generated by this method, see <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.LoadDesignerLayout%2A>.  
-  
- [!code-csharp[WF_Samples#38](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#38)]
- [!code-vb[WF_Samples#38](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#38)]  
-  
+The following example demonstrates how to save the design layout information of a workflow using the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.SaveDesignerLayout%2A> method. After the <xref:System.Xml.XmlWriter> object is created, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> for the `RootComponent` of the workflow is retrieved and passed to the <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.SaveDesignerLayout%2A> method. To load the layout file that is generated by this method, see <xref:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.LoadDesignerLayout%2A>.  
+ 
+[!code-csharp[WF_Samples#38](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#38)]
+[!code-vb[WF_Samples#38](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#38)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

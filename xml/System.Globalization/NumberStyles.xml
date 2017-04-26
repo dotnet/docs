@@ -33,20 +33,20 @@
     <summary>Determines the styles permitted in numeric string arguments that are passed to the <see langword="Parse" /> and <see langword="TryParse" /> methods of the integral and floating-point numeric types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Globalization.NumberStyles> enumeration consists of two kinds of enumeration values that are used to parse the string representations of numeric values:  
-  
+The <xref:System.Globalization.NumberStyles> enumeration consists of two kinds of enumeration values that are used to parse the string representations of numeric values:  
+ 
 -   Individual field flags, which define specific style elements (such as white space and group separators) that can be present in the parsed string.  
-  
+ 
 -   Composite number styles, which consist of multiple field flags that define the style elements that can be present in the parsed string.  
-  
- Except for AllowHexSpecifier, the individual field flags in the <xref:System.Globalization.NumberStyles> enumeration define style elements that are used when parsing the string representation of a decimal number. None indicates that only digits can be present in the parsed string. The remaining individual field flags define style elements that may be, but do not have to be, present in the string representation of a decimal number for the parse operation to succeed. In contrast, the AllowHexSpecifier flag indicates that the string to be parsed is always interpreted as a hexadecimal value. The only individual field flags that can be used with AllowHexSpecifier are AllowLeadingWhite and AllowTrailingWhite. The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, HexNumber, that consists of all three flags.  
-  
- The symbols (such as the currency symbol, the group separator, the decimal separator, and the positive and negative signs) that can appear in the string to be parsed are defined by the members of the <xref:System.Globalization.NumberFormatInfo?displayProperty=fullName> object that is passed either implicitly or explicitly to the `Parse` method. The members table in this topic provides a description of each individual flag and indicates its relationship to <xref:System.Globalization.NumberFormatInfo> properties.  
-  
- The following table lists the composite number styles and indicates which individual field flags they include. A "1" in a cell indicates that the composite number style includes the individual number style in that row. A "0" indicates that the composite number style does not include the individual number style.  
-  
+ 
+Except for AllowHexSpecifier, the individual field flags in the <xref:System.Globalization.NumberStyles> enumeration define style elements that are used when parsing the string representation of a decimal number. None indicates that only digits can be present in the parsed string. The remaining individual field flags define style elements that may be, but do not have to be, present in the string representation of a decimal number for the parse operation to succeed. In contrast, the AllowHexSpecifier flag indicates that the string to be parsed is always interpreted as a hexadecimal value. The only individual field flags that can be used with AllowHexSpecifier are AllowLeadingWhite and AllowTrailingWhite. The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, HexNumber, that consists of all three flags.  
+ 
+The symbols (such as the currency symbol, the group separator, the decimal separator, and the positive and negative signs) that can appear in the string to be parsed are defined by the members of the <xref:System.Globalization.NumberFormatInfo?displayProperty=fullName> object that is passed either implicitly or explicitly to the `Parse` method. The members table in this topic provides a description of each individual flag and indicates its relationship to <xref:System.Globalization.NumberFormatInfo> properties.  
+ 
+The following table lists the composite number styles and indicates which individual field flags they include. A "1" in a cell indicates that the composite number style includes the individual number style in that row. A "0" indicates that the composite number style does not include the individual number style.  
+ 
 ||Any|Currency|Float|Integer|Number|HexNumber|  
 |-|---------|--------------|-----------|-------------|------------|---------------|  
 |AllowHexSpecifier (0x0200)|0|0|0|0|0|1|  
@@ -60,16 +60,16 @@
 |AllowTrailingWhite (0x0002)|1|1|1|1|1|1|  
 |AllowLeadingWhite (0x0001)|1|1|1|1|1|1|  
 ||(0x1ff)|(0x17f)|(0x0a7)|(0x007)|(0x06f)|(0x203)|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example shows how to parse a string into a 32-bit integer by using various <xref:System.Globalization.NumberStyles> flags.  
-  
- [!code-cpp[NumberStyles#1](~/samples/snippets/cpp/VS_Snippets_CLR/NumberStyles/cpp/NumberStyles.cpp#1)]
- [!code-csharp[NumberStyles#1](~/samples/snippets/csharp/VS_Snippets_CLR/NumberStyles/CS/NumberStyles.cs#1)]
- [!code-vb[NumberStyles#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/NumberStyles/vb/numberstyles.vb#1)]  
-  
+This example shows how to parse a string into a 32-bit integer by using various <xref:System.Globalization.NumberStyles> flags.  
+ 
+[!code-cpp[NumberStyles#1](~/samples/snippets/cpp/VS_Snippets_CLR/NumberStyles/cpp/NumberStyles.cpp#1)]
+[!code-csharp[NumberStyles#1](~/samples/snippets/csharp/VS_Snippets_CLR/NumberStyles/CS/NumberStyles.cs#1)]
+[!code-vb[NumberStyles#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/NumberStyles/vb/numberstyles.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

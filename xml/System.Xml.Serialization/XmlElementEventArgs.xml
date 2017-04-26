@@ -19,17 +19,17 @@
     <summary>Provides data for the <see cref="E:System.Xml.Serialization.XmlSerializer.UnknownElement" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115) and [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115) and [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
+The <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs only when you call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.  
+ 
   
- The <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs only when you call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example deserializes a class named `Group` from a file named UnknownElements.xml. Whenever an element is found in the file that has no corresponding member in the class, the <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs. To try the example, paste the following XML code into a file named UnknownElements.xml.  
-  
+The following example deserializes a class named `Group` from a file named UnknownElements.xml. Whenever an element is found in the file that has no corresponding member in the class, the <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs. To try the example, paste the following XML code into a file named UnknownElements.xml.  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
@@ -39,11 +39,11 @@
   <GroupBase>West</GroupBase>  
 </Group>  
 ```  
-  
- [!code-cpp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CPP/unknownelement.cpp#1)]
- [!code-csharp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CS/unknownelement.cs#1)]
- [!code-vb[XmlSerializer.UnknownElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/VB/unknownelement.vb#1)]  
-  
+ 
+[!code-cpp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CPP/unknownelement.cpp#1)]
+[!code-csharp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CS/unknownelement.cs#1)]
+[!code-vb[XmlSerializer.UnknownElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/VB/unknownelement.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <value>The object that represents the unknown XML element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example deserializes a class named `Group` from a file named UnknownElements.xml. Whenever an element is found in the file that has no corresponding member in the class, the <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs. To try the example, paste the following XML code into a file named UnknownElements.xml.  
-  
+The following example deserializes a class named `Group` from a file named UnknownElements.xml. Whenever an element is found in the file that has no corresponding member in the class, the <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs. To try the example, paste the following XML code into a file named UnknownElements.xml.  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
@@ -83,11 +83,11 @@
   <GroupBase>West</GroupBase>  
 </Group>  
 ```  
-  
- [!code-cpp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CPP/unknownelement.cpp#1)]
- [!code-csharp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CS/unknownelement.cs#1)]
- [!code-vb[XmlSerializer.UnknownElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/VB/unknownelement.vb#1)]  
-  
+ 
+[!code-cpp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CPP/unknownelement.cpp#1)]
+[!code-csharp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CS/unknownelement.cs#1)]
+[!code-vb[XmlSerializer.UnknownElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/VB/unknownelement.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,15 +137,15 @@
         <value>The line number where the unknown element was encountered if the XML reader is an <see cref="T:System.Xml.XmlTextReader" />; otherwise, -1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlElementEventArgs.LineNumber%2A> property returns a value only if the underlying XML reader is an <xref:System.Xml.XmlTextReader>.  
+The <xref:System.Xml.Serialization.XmlElementEventArgs.LineNumber%2A> property returns a value only if the underlying XML reader is an <xref:System.Xml.XmlTextReader>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example deserializes a class named `Group` from a file named UnknownElements.xml. Whenever an element is found in the file that has no corresponding member in the class, the <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs. To try the example, paste the following XML code into a file named UnknownElements.xml.  
-  
+The following example deserializes a class named `Group` from a file named UnknownElements.xml. Whenever an element is found in the file that has no corresponding member in the class, the <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs. To try the example, paste the following XML code into a file named UnknownElements.xml.  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
@@ -155,11 +155,11 @@
   <GroupBase>West</GroupBase>  
 </Group>  
 ```  
-  
- [!code-cpp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CPP/unknownelement.cpp#1)]
- [!code-csharp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CS/unknownelement.cs#1)]
- [!code-vb[XmlSerializer.UnknownElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/VB/unknownelement.vb#1)]  
-  
+ 
+[!code-cpp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CPP/unknownelement.cpp#1)]
+[!code-csharp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CS/unknownelement.cs#1)]
+[!code-vb[XmlSerializer.UnknownElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/VB/unknownelement.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,10 +186,10 @@
         <value>The number in the line where the unknown element occurs if the XML reader is an <see cref="T:System.Xml.XmlTextReader" />; otherwise, -1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example deserializes a class named `Group` from a file named UnknownElements.xml. Whenever an element is found in the file that has no corresponding member in the class, the <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs. To try the example, paste the following XML code into a file named UnknownElements.xml.  
-  
+The following example deserializes a class named `Group` from a file named UnknownElements.xml. Whenever an element is found in the file that has no corresponding member in the class, the <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs. To try the example, paste the following XML code into a file named UnknownElements.xml.  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
@@ -199,11 +199,11 @@
   <GroupBase>West</GroupBase>  
 </Group>  
 ```  
-  
- [!code-cpp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CPP/unknownelement.cpp#1)]
- [!code-csharp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CS/unknownelement.cs#1)]
- [!code-vb[XmlSerializer.UnknownElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/VB/unknownelement.vb#1)]  
-  
+ 
+[!code-cpp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CPP/unknownelement.cpp#1)]
+[!code-csharp[XmlSerializer.UnknownElement Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/CS/unknownelement.cs#1)]
+[!code-vb[XmlSerializer.UnknownElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/XmlSerializer.UnknownElement Example/VB/unknownelement.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,10 +230,10 @@
         <value>The object that is being deserialized by the <see cref="T:System.Xml.Serialization.XmlSerializer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example deserializes a class named `Group` from a file named UnknownElements.xml. Whenever an element is found in the file that has no corresponding member in the class, the <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs. To try the example, paste the following XML code into a file named UnknownElements.xml.  
-  
+The following example deserializes a class named `Group` from a file named UnknownElements.xml. Whenever an element is found in the file that has no corresponding member in the class, the <xref:System.Xml.Serialization.XmlSerializer.UnknownElement> event occurs. To try the example, paste the following XML code into a file named UnknownElements.xml.  
+ 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
@@ -243,9 +243,9 @@
   <GroupBase>West</GroupBase>  
 </Group>  
 ```  
-  
- XmlSerializer.UnknownElement Example#1  
-  
+ 
+XmlSerializer.UnknownElement Example#1  
+ 
  ]]></format>
         </remarks>
       </Docs>

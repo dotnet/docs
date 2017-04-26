@@ -87,10 +87,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaValidationException" /> class with the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> objects specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called by derived class constructors to initialize state in this type.  
-  
+This constructor is called by derived class constructors to initialize state in this type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@
         <summary>Sets the XML node that causes the error.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Exception.Source%2A> property instead.  
-  
+Use the <xref:System.Exception.Source%2A> property instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -236,12 +236,12 @@
         <value>The XML node that caused this <see cref="T:System.Xml.Schema.XmlSchemaValidationException" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When an <xref:System.Xml.Schema.XmlSchemaValidationException> is thrown during validation of a class that implements the <xref:System.Xml.XPath.IXPathNavigable> interface such as the <xref:System.Xml.XPath.XPathNavigator> or <xref:System.Xml.XmlNode> class, the object returned by the <xref:System.Xml.Schema.XmlSchemaValidationException.SourceObject%2A> property is an instance of a class that implements the <xref:System.Xml.XPath.IXPathNavigable> interface.  
-  
- When an <xref:System.Xml.Schema.XmlSchemaValidationException> is thrown during validation by a validating <xref:System.Xml.XmlReader> object, the value of the <xref:System.Xml.Schema.XmlSchemaValidationException.SourceObject%2A> property is `null`.  
-  
+When an <xref:System.Xml.Schema.XmlSchemaValidationException> is thrown during validation of a class that implements the <xref:System.Xml.XPath.IXPathNavigable> interface such as the <xref:System.Xml.XPath.XPathNavigator> or <xref:System.Xml.XmlNode> class, the object returned by the <xref:System.Xml.Schema.XmlSchemaValidationException.SourceObject%2A> property is an instance of a class that implements the <xref:System.Xml.XPath.IXPathNavigable> interface.  
+ 
+When an <xref:System.Xml.Schema.XmlSchemaValidationException> is thrown during validation by a validating <xref:System.Xml.XmlReader> object, the value of the <xref:System.Xml.Schema.XmlSchemaValidationException.SourceObject%2A> property is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

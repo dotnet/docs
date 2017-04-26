@@ -19,18 +19,18 @@
     <summary>Creates a new verb to be used with the designer using the associated verb group, text and event handler.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerVerb> describes an action to take against a workflow component. <xref:System.Workflow.ComponentModel.Design.ActivityDesignerVerb> options are displayed in the menu bar and right-click context menus during design time.  
-  
- The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerVerb> will be grouped with other verbs associated with the same <xref:System.Workflow.ComponentModel.Design.DesignerVerbGroup> and are displayed in the corresponding sub-menu at design time.  
-  
- The event handler passed when creating a new verb will be invoked when this verb is chosen from the menu.  
-  
+ 
+The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerVerb> describes an action to take against a workflow component. <xref:System.Workflow.ComponentModel.Design.ActivityDesignerVerb> options are displayed in the menu bar and right-click context menus during design time.  
+ 
+The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerVerb> will be grouped with other verbs associated with the same <xref:System.Workflow.ComponentModel.Design.DesignerVerbGroup> and are displayed in the corresponding sub-menu at design time.  
+ 
+The event handler passed when creating a new verb will be invoked when this verb is chosen from the menu.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -108,10 +108,10 @@
         <value>A new <see cref="P:System.Workflow.ComponentModel.Design.ActivityDesignerVerb.CommandID" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.CommandID> is useful for placing items on a menu bar or context menu.  
-  
+The <xref:System.ComponentModel.Design.CommandID> is useful for placing items on a menu bar or context menu.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,10 +133,10 @@
         <value>A <see cref="T:System.Workflow.ComponentModel.Design.DesignerVerbGroup" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Workflow.ComponentModel.Design.DesignerVerbGroup> to associate verbs together on a menu bar or context menu.  
-  
+Use the <xref:System.Workflow.ComponentModel.Design.DesignerVerbGroup> to associate verbs together on a menu bar or context menu.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,10 +158,10 @@
         <value>An <see langword="int" /> that describes the <see langword="OleStatus" /> of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerVerb" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `OleStatus` contains a mixture of flags that reflect the state of this menu item.  
-  
+The `OleStatus` contains a mixture of flags that reflect the state of this menu item.  
+ 
  ]]></format>
         </remarks>
       </Docs>

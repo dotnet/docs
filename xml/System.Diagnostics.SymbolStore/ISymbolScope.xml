@@ -21,13 +21,13 @@
     <summary>Represents a lexical scope within <see cref="T:System.Diagnostics.SymbolStore.ISymbolMethod" />, providing access to the start and end offsets of the scope, as well as its child and parent scopes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.SymbolStore.ISymbolScope> interface also provides access to all locals defined within the current scope.  
-  
+The <xref:System.Diagnostics.SymbolStore.ISymbolScope> interface also provides access to all locals defined within the current scope.  
+ 
 > [!NOTE]
 >  This interface is the managed counterpart of the `ISymUnmanagedScope` interface, which is one of the unmanaged symbol store interfaces that provide an alternate way to read and write debug symbol information.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -102,10 +102,10 @@
         <returns>The local variables within the current lexical scope.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The local variables are returned in no particular order. If a local variable changes its address within the current scope, that variable is returned multiple times, each with a different offset range.  
-  
+The local variables are returned in no particular order. If a local variable changes its address within the current scope, that variable is returned multiple times, each with a different offset range.  
+ 
  ]]></format>
         </remarks>
       </Docs>

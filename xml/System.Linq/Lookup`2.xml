@@ -38,23 +38,23 @@
     <summary>Represents a collection of keys each mapped to one or more values.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Linq.Lookup%602> resembles a <xref:System.Collections.Generic.Dictionary%602>. The difference is that a <xref:System.Collections.Generic.Dictionary%602> maps keys to single values, whereas a <xref:System.Linq.Lookup%602> maps keys to collections of values.  
-  
- You can create an instance of a <xref:System.Linq.Lookup%602> by calling <xref:System.Linq.Enumerable.ToLookup%2A> on an object that implements <xref:System.Collections.Generic.IEnumerable%601>.  
-  
+A <xref:System.Linq.Lookup%602> resembles a <xref:System.Collections.Generic.Dictionary%602>. The difference is that a <xref:System.Collections.Generic.Dictionary%602> maps keys to single values, whereas a <xref:System.Linq.Lookup%602> maps keys to collections of values.  
+ 
+You can create an instance of a <xref:System.Linq.Lookup%602> by calling <xref:System.Linq.Enumerable.ToLookup%2A> on an object that implements <xref:System.Collections.Generic.IEnumerable%601>.  
+ 
 > [!NOTE]
 >  There is no public constructor to create a new instance of a <xref:System.Linq.Lookup%602>. Additionally, <xref:System.Linq.Lookup%602> objects are immutable, that is, you cannot add or remove elements or keys from a <xref:System.Linq.Lookup%602> object after it has been created.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Linq.Lookup%602> from a collection of objects. It then enumerates the <xref:System.Linq.Lookup%602> and outputs each key and each value in the key's associated collection of values. It also demonstrates how to use the properties <xref:System.Linq.Lookup%602.Count%2A> and <xref:System.Linq.Lookup%602.Item%2A> and the methods <xref:System.Linq.Lookup%602.Contains%2A> and <xref:System.Linq.Lookup%602.GetEnumerator%2A>.  
-  
- [!code-csharp[System.Linq.Lookup#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Lookup/CS/lookup.cs#1)]
- [!code-vb[System.Linq.Lookup#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Lookup/VB/Lookup.vb#1)]  
-  
+The following example creates a <xref:System.Linq.Lookup%602> from a collection of objects. It then enumerates the <xref:System.Linq.Lookup%602> and outputs each key and each value in the key's associated collection of values. It also demonstrates how to use the properties <xref:System.Linq.Lookup%602.Count%2A> and <xref:System.Linq.Lookup%602.Item%2A> and the methods <xref:System.Linq.Lookup%602.Contains%2A> and <xref:System.Linq.Lookup%602.GetEnumerator%2A>.  
+ 
+[!code-csharp[System.Linq.Lookup#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Lookup/CS/lookup.cs#1)]
+[!code-vb[System.Linq.Lookup#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Lookup/VB/Lookup.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -129,13 +129,13 @@
           <see langword="true" /> if <paramref name="key" /> is in the <see cref="T:System.Linq.Lookup`2" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use <xref:System.Linq.Lookup%602.Contains%2A> to determine whether a <xref:System.Linq.Lookup%602> contains a specified key. This code example is part of a larger example provided for the <xref:System.Linq.Lookup%602> class.  
-  
- [!code-csharp[System.Linq.Lookup#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Lookup/CS/lookup.cs#4)]
- [!code-vb[System.Linq.Lookup#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Lookup/VB/Lookup.vb#4)]  
-  
+The following example demonstrates how to use <xref:System.Linq.Lookup%602.Contains%2A> to determine whether a <xref:System.Linq.Lookup%602> contains a specified key. This code example is part of a larger example provided for the <xref:System.Linq.Lookup%602> class.  
+ 
+[!code-csharp[System.Linq.Lookup#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Lookup/CS/lookup.cs#4)]
+[!code-vb[System.Linq.Lookup#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Lookup/VB/Lookup.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,18 +168,18 @@
         <value>The number of key/value collection pairs in the <see cref="T:System.Linq.Lookup`2" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the <xref:System.Linq.Lookup%602.Count%2A> property does not change because items cannot be added to or removed from a <xref:System.Linq.Lookup%602> object after it has been created.  
+The value of the <xref:System.Linq.Lookup%602.Count%2A> property does not change because items cannot be added to or removed from a <xref:System.Linq.Lookup%602> object after it has been created.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use <xref:System.Linq.Lookup%602.Count%2A> to determine the number of key/value collection pairs in a <xref:System.Linq.Lookup%602>. This code example is part of a larger example provided for the <xref:System.Linq.Lookup%602> class.  
-  
- [!code-csharp[System.Linq.Lookup#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Lookup/CS/lookup.cs#2)]
- [!code-vb[System.Linq.Lookup#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Lookup/VB/Lookup.vb#2)]  
-  
+The following example demonstrates how to use <xref:System.Linq.Lookup%602.Count%2A> to determine the number of key/value collection pairs in a <xref:System.Linq.Lookup%602>. This code example is part of a larger example provided for the <xref:System.Linq.Lookup%602> class.  
+ 
+[!code-csharp[System.Linq.Lookup#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Lookup/CS/lookup.cs#2)]
+[!code-vb[System.Linq.Lookup#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Lookup/VB/Lookup.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,13 +213,13 @@
         <returns>An enumerator for the <see cref="T:System.Linq.Lookup`2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use <xref:System.Linq.Lookup%602.GetEnumerator%2A> to iterate through the keys and values of a <xref:System.Linq.Lookup%602>. This code example is part of a larger example provided for the <xref:System.Linq.Lookup%602> class.  
-  
- [!code-csharp[System.Linq.Lookup#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Lookup/CS/lookup.cs#5)]
- [!code-vb[System.Linq.Lookup#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Lookup/VB/Lookup.vb#5)]  
-  
+The following example demonstrates how to use <xref:System.Linq.Lookup%602.GetEnumerator%2A> to iterate through the keys and values of a <xref:System.Linq.Lookup%602>. This code example is part of a larger example provided for the <xref:System.Linq.Lookup%602> class.  
+ 
+[!code-csharp[System.Linq.Lookup#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Lookup/CS/lookup.cs#5)]
+[!code-vb[System.Linq.Lookup#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Lookup/VB/Lookup.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,18 +256,18 @@
         <value>The collection of values indexed by the specified key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This indexed property provides the ability to index a specific collection of values in the <xref:System.Linq.Lookup%602> by using the following syntax: `myLookup[key]` in [!INCLUDE[csprcs](~/includes/csprcs-md.md)] or `myLookup(key)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. If the `key` is not found in the collection, an empty sequence is returned.  
+This indexed property provides the ability to index a specific collection of values in the <xref:System.Linq.Lookup%602> by using the following syntax: `myLookup[key]` in [!INCLUDE[csprcs](~/includes/csprcs-md.md)] or `myLookup(key)` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. If the `key` is not found in the collection, an empty sequence is returned.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use <xref:System.Linq.Lookup%602.Item%2A> to index directly into a <xref:System.Linq.Lookup%602>. This code example is part of a larger example provided for the <xref:System.Linq.Lookup%602> class.  
-  
- [!code-csharp[System.Linq.Lookup#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Lookup/CS/lookup.cs#3)]
- [!code-vb[System.Linq.Lookup#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Lookup/VB/Lookup.vb#3)]  
-  
+The following example demonstrates how to use <xref:System.Linq.Lookup%602.Item%2A> to index directly into a <xref:System.Linq.Lookup%602>. This code example is part of a larger example provided for the <xref:System.Linq.Lookup%602> class.  
+ 
+[!code-csharp[System.Linq.Lookup#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Lookup/CS/lookup.cs#3)]
+[!code-vb[System.Linq.Lookup#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Lookup/VB/Lookup.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

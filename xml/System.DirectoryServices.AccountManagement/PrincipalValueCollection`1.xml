@@ -179,10 +179,10 @@
         <returns>An <see langword="integer" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws an <xref:System.ArgumentNullException> if `value` is `null`.  
-  
+Throws an <xref:System.ArgumentNullException> if `value` is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,10 +328,10 @@
         <summary>Removes the object at the specified index from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws an <xref:System.ArgumentOutOfRangeException> if `index` is less than zero, or greater than or equal to the length of the collection.  
-  
+Throws an <xref:System.ArgumentOutOfRangeException> if `index` is less than zero, or greater than or equal to the length of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

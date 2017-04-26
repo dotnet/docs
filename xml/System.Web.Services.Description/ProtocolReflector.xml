@@ -14,16 +14,16 @@
     <summary>Provides common functionality across communication protocols for creating <see cref="T:System.Web.Services.Description.ServiceDescription" /> objects from classes that are identified as Web services.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The abstract <xref:System.Web.Services.Description.ProtocolReflector> class and its concrete derived classes create <xref:System.Web.Services.Description.ServiceDescription> objects from classes that are identified as Web services with the <xref:System.Web.Services.WebServiceAttribute> attribute. Each concrete <xref:System.Web.Services.Description.ProtocolReflector>-derived class generates <xref:System.Web.Services.Description.ServiceDescription> objects according to a specified communication protocol; <xref:System.Web.Services.Description.ProtocolReflector> provides common functionality regardless of the protocol.  
-  
- An output <xref:System.Web.Services.Description.ServiceDescription> instance can be used to generate a Web Services Description Language (WSDL) document with the <xref:System.Web.Services.Description.ServiceDescription.Write%2A> method or one of the available overloads. The <xref:System.Web.Services.Description.ServiceDescription> instance can also be used by the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class and related classes to generate client proxy code or abstract server code.  
-  
- The <xref:System.Web.Services.Description.ProtocolReflector> class uses the <xref:System.Web.Services.WebServiceBindingAttribute> to create a <xref:System.Web.Services.Description.ServiceDescription> for each binding it identifies in the Web service class. If that attribute is not present, the <xref:System.Web.Services.Description.ProtocolReflector> class creates a single binding for the entire class. For each Web service method (a method in the Web service class appearing with the <xref:System.Web.Services.WebMethodAttribute>) belonging to a binding, a class derived from <xref:System.Web.Services.Description.ProtocolReflector> generates an operation and associated messages that are added to the <xref:System.Web.Services.Description.ServiceDescription> object.  
-  
- Typically, a developer uses these classes indirectly through the <xref:System.Web.Services.Description.ServiceDescriptionReflector> class, instead of directly invoking classes derived from <xref:System.Web.Services.Description.ProtocolReflector>.  
-  
+The abstract <xref:System.Web.Services.Description.ProtocolReflector> class and its concrete derived classes create <xref:System.Web.Services.Description.ServiceDescription> objects from classes that are identified as Web services with the <xref:System.Web.Services.WebServiceAttribute> attribute. Each concrete <xref:System.Web.Services.Description.ProtocolReflector>-derived class generates <xref:System.Web.Services.Description.ServiceDescription> objects according to a specified communication protocol; <xref:System.Web.Services.Description.ProtocolReflector> provides common functionality regardless of the protocol.  
+ 
+An output <xref:System.Web.Services.Description.ServiceDescription> instance can be used to generate a Web Services Description Language (WSDL) document with the <xref:System.Web.Services.Description.ServiceDescription.Write%2A> method or one of the available overloads. The <xref:System.Web.Services.Description.ServiceDescription> instance can also be used by the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class and related classes to generate client proxy code or abstract server code.  
+ 
+The <xref:System.Web.Services.Description.ProtocolReflector> class uses the <xref:System.Web.Services.WebServiceBindingAttribute> to create a <xref:System.Web.Services.Description.ServiceDescription> for each binding it identifies in the Web service class. If that attribute is not present, the <xref:System.Web.Services.Description.ProtocolReflector> class creates a single binding for the entire class. For each Web service method (a method in the Web service class appearing with the <xref:System.Web.Services.WebMethodAttribute>) belonging to a binding, a class derived from <xref:System.Web.Services.Description.ProtocolReflector> generates an operation and associated messages that are added to the <xref:System.Web.Services.Description.ServiceDescription> object.  
+ 
+Typically, a developer uses these classes indirectly through the <xref:System.Web.Services.Description.ServiceDescriptionReflector> class, instead of directly invoking classes derived from <xref:System.Web.Services.Description.ProtocolReflector>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -136,10 +136,10 @@
         <returns>A <see cref="T:System.Web.Services.Description.ServiceDescription" /> object for a given XML namespace and the applicable communication protocol.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Description.ServiceDescription> instance obtained subsequently gets populated with objects that correspond to WSDL entities that are reflected from the input Web service class.  
-  
+The <xref:System.Web.Services.Description.ServiceDescription> instance obtained subsequently gets populated with objects that correspond to WSDL entities that are reflected from the input Web service class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,10 +233,10 @@
         <value>The Web service methods belonging to the Web service class, as identified by the associated <see cref="T:System.Web.Services.Description.ProtocolReflector" /> object's <see cref="P:System.Web.Services.Description.ProtocolReflector.Methods" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Web service methods are identified by the <xref:System.Web.Services.WebMethodAttribute>.  
-  
+Web service methods are identified by the <xref:System.Web.Services.WebMethodAttribute>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,10 +258,10 @@
         <value>The abstract Web Services Description Language (WSDL) operation that the protocol reflector is currently generating from a Web service method</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The operation appears as a child of the `portType` element in a WSDL document. Web service methods are identified by the <xref:System.Web.Services.WebMethodAttribute>.  
-  
+The operation appears as a child of the `portType` element in a WSDL document. Web service methods are identified by the <xref:System.Web.Services.WebMethodAttribute>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,10 +283,10 @@
         <value>The Web Services Description Language (WSDL) operation binding that the protocol importer is currently generating from a Web service method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Web service methods are identified by the <xref:System.Web.Services.WebMethodAttribute>.  
-  
+Web service methods are identified by the <xref:System.Web.Services.WebMethodAttribute>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -417,10 +417,10 @@
         <returns>Method-specific information that gets placed in a <see cref="T:System.Web.Services.Description.ServiceDescription" /> object corresponding to a binding.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An implementation of the <xref:System.Web.Services.Description.ProtocolReflector.ReflectMethod%2A> method should generate information such as operation binding, abstract operation, and messages.  
-  
+An implementation of the <xref:System.Web.Services.Description.ProtocolReflector.ReflectMethod%2A> method should generate information such as operation binding, abstract operation, and messages.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -533,10 +533,10 @@
         <value>The <see cref="T:System.Web.Services.Description.ServiceDescription" /> objects that have so far been created and added to the corresponding to the <see cref="T:System.Web.Services.Description.ServiceDescriptionCollection" /> obtained through the <see cref="P:System.Web.Services.Description.ServiceDescriptionReflector.ServiceDescriptions" /> property of the associated <see cref="T:System.Web.Services.Description.ServiceDescriptionReflector" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Description.ProtocolReflector> class creates a <xref:System.Web.Services.Description.ServiceDescription> object for each binding, with a distinct namespace, that it finds in a Web service class.  
-  
+The <xref:System.Web.Services.Description.ProtocolReflector> class creates a <xref:System.Web.Services.Description.ServiceDescription> object for each binding, with a distinct namespace, that it finds in a Web service class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -558,10 +558,10 @@
         <value>The type of the Web service class being reflected to produce <see cref="T:System.Web.Services.Description.ServiceDescription" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A Web service class is identified by the <xref:System.Web.Services.WebServiceAttribute>.  
-  
+A Web service class is identified by the <xref:System.Web.Services.WebServiceAttribute>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

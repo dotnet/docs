@@ -13,10 +13,10 @@
     <summary>Enumerates values for volume levels (loudness) in prompts.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Members of the <xref:System.Speech.Synthesis.PromptVolume> enumeration are used by the <xref:System.Speech.Synthesis.PromptStyle.%23ctor%2A> constructor, by the <xref:System.Speech.Synthesis.PromptBuilder.AppendText%2A> method, and by the <xref:System.Speech.Synthesis.PromptBuilder.StartStyle%2A> method to specify the volume level for spoken text. The <xref:System.Speech.Synthesis.PromptStyle.Volume%2A> property gets the volume for a <xref:System.Speech.Synthesis.PromptStyle> object using a <xref:System.Speech.Synthesis.PromptVolume> instance.  
-  
+Members of the <xref:System.Speech.Synthesis.PromptVolume> enumeration are used by the <xref:System.Speech.Synthesis.PromptStyle.%23ctor%2A> constructor, by the <xref:System.Speech.Synthesis.PromptBuilder.AppendText%2A> method, and by the <xref:System.Speech.Synthesis.PromptBuilder.StartStyle%2A> method to specify the volume level for spoken text. The <xref:System.Speech.Synthesis.PromptStyle.Volume%2A> property gets the volume for a <xref:System.Speech.Synthesis.PromptStyle> object using a <xref:System.Speech.Synthesis.PromptVolume> instance.  
+ 
  ]]></format>
     </remarks>
   </Docs>

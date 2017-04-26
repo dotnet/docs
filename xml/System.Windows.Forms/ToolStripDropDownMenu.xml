@@ -25,21 +25,21 @@
     <summary>Provides basic functionality for the <see cref="T:System.Windows.Forms.ContextMenuStrip" /> control. Although <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> and <see cref="T:System.Windows.Forms.ToolStripDropDown" /> replace and add functionality to the <see cref="T:System.Windows.Forms.Menu" /> control of previous versions, <see cref="T:System.Windows.Forms.Menu" /> is retained for both backward compatibility and future use if you choose.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ToolStripDropDownMenu> is the base class for <xref:System.Windows.Forms.ContextMenuStrip>, providing necessary painting and layout properties and methods. The properties of this class that you are most likely to use directly are the <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowCheckMargin%2A> and <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> properties, which determine whether the shortcut menu will be able to display a check mark, an image, or both.  
+<xref:System.Windows.Forms.ToolStripDropDownMenu> is the base class for <xref:System.Windows.Forms.ContextMenuStrip>, providing necessary painting and layout properties and methods. The properties of this class that you are most likely to use directly are the <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowCheckMargin%2A> and <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> properties, which determine whether the shortcut menu will be able to display a check mark, an image, or both.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create and initialize a <xref:System.Windows.Forms.ContextMenuStrip> control by setting the check and image margins.  
-  
+The following code example demonstrates how to create and initialize a <xref:System.Windows.Forms.ContextMenuStrip> control by setting the check and image margins.  
+ 
 > [!IMPORTANT]
 >  This code is not a complete sample so it will not compile. For a full code listing, see [How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls](~/docs/framework/winforms/controls/how-to-enable-check-margins-and-image-margins-in-contextmenustrip-controls.md).  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.Misc#61](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#61)]
- [!code-vb[System.Windows.Forms.ToolStrip.Misc#61](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#61)]  
-  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.Misc#61](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#61)]
+[!code-vb[System.Windows.Forms.ToolStrip.Misc#61](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#61)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,13 +58,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to create and initialize a <xref:System.Windows.Forms.ContextMenuStrip> control. For a full code listing, see [How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls](~/docs/framework/winforms/controls/how-to-enable-check-margins-and-image-margins-in-contextmenustrip-controls.md).  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.Misc#62](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#62)]
- [!code-vb[System.Windows.Forms.ToolStrip.Misc#62](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#62)]  
-  
+The following code example demonstrates how to create and initialize a <xref:System.Windows.Forms.ContextMenuStrip> control. For a full code listing, see [How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls](~/docs/framework/winforms/controls/how-to-enable-check-margins-and-image-margins-in-contextmenustrip-controls.md).  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.Misc#62](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#62)]
+[!code-vb[System.Windows.Forms.ToolStrip.Misc#62](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#62)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,10 +94,10 @@
         <returns>A <see cref="T:System.Windows.Forms.ToolStripMenuItem" />, or a <see cref="T:System.Windows.Forms.ToolStripSeparator" /> if the <paramref name="text" /> parameter is a hyphen (-).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripDropDownMenu.CreateDefaultItem%2A> method to add a <xref:System.Windows.Forms.ToolStripMenuItem> with commonly used characteristics to a <xref:System.Windows.Forms.ToolStripDropDownMenu>.  
-  
+Use the <xref:System.Windows.Forms.ToolStripDropDownMenu.CreateDefaultItem%2A> method to add a <xref:System.Windows.Forms.ToolStripMenuItem> with commonly used characteristics to a <xref:System.Windows.Forms.ToolStripDropDownMenu>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,10 +178,10 @@
         <value>One of the <see cref="T:System.Windows.Forms.ToolStripLayoutStyle" /> values. The default is <see cref="F:System.Windows.Forms.ToolStripLayoutStyle.Flow" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, <xref:System.Windows.Forms.ContextMenuStrip> items flow horizontally or vertically as necessary. See the <xref:System.Windows.Forms.ToolStripLayoutStyle> enumeration for the other possibilities.  
-  
+By default, <xref:System.Windows.Forms.ContextMenuStrip> items flow horizontally or vertically as necessary. See the <xref:System.Windows.Forms.ToolStripLayoutStyle> enumeration for the other possibilities.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,12 +224,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripDropDown.FontChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDownMenu.OnFontChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDownMenu.OnFontChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -257,12 +257,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripDropDownMenu.OnLayout%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripDropDownMenu.OnLayout%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -332,18 +332,18 @@
           <see langword="true" /> if the check margin is shown; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set the <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowCheckMargin%2A> property to `true` to display a check mark when the user chooses the <xref:System.Windows.Forms.ToolStripMenuItem>.  
+Set the <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowCheckMargin%2A> property to `true` to display a check mark when the user chooses the <xref:System.Windows.Forms.ToolStripMenuItem>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create and initialize a <xref:System.Windows.Forms.ContextMenuStrip> control by setting the check and image margins. For a full code listing, see [How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls](~/docs/framework/winforms/controls/how-to-enable-check-margins-and-image-margins-in-contextmenustrip-controls.md).  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.Misc#61](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#61)]
- [!code-vb[System.Windows.Forms.ToolStrip.Misc#61](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#61)]  
-  
+The following code example demonstrates how to create and initialize a <xref:System.Windows.Forms.ContextMenuStrip> control by setting the check and image margins. For a full code listing, see [How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls](~/docs/framework/winforms/controls/how-to-enable-check-margins-and-image-margins-in-contextmenustrip-controls.md).  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.Misc#61](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#61)]
+[!code-vb[System.Windows.Forms.ToolStrip.Misc#61](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#61)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -371,18 +371,18 @@
           <see langword="true" /> if the image margin is shown; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set the <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> property to `true` to display a graphic image with the <xref:System.Windows.Forms.ToolStripMenuItem>.  
+Set the <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> property to `true` to display a graphic image with the <xref:System.Windows.Forms.ToolStripMenuItem>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create and initialize a <xref:System.Windows.Forms.ContextMenuStrip> control by setting the check and image margins. For a full code listing, see [How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls](~/docs/framework/winforms/controls/how-to-enable-check-margins-and-image-margins-in-contextmenustrip-controls.md).  
-  
- [!code-csharp[System.Windows.Forms.ToolStrip.Misc#61](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#61)]
- [!code-vb[System.Windows.Forms.ToolStrip.Misc#61](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#61)]  
-  
+The following code example demonstrates how to create and initialize a <xref:System.Windows.Forms.ContextMenuStrip> control by setting the check and image margins. For a full code listing, see [How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls](~/docs/framework/winforms/controls/how-to-enable-check-margins-and-image-margins-in-contextmenustrip-controls.md).  
+ 
+[!code-csharp[System.Windows.Forms.ToolStrip.Misc#61](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#61)]
+[!code-vb[System.Windows.Forms.ToolStrip.Misc#61](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#61)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

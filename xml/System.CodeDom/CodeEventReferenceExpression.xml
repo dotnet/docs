@@ -22,21 +22,21 @@
     <summary>Represents a reference to an event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeEventReferenceExpression> can be used to represent a reference to an event.  
+<xref:System.CodeDom.CodeEventReferenceExpression> can be used to represent a reference to an event.  
+ 
+The <xref:System.CodeDom.CodeEventReferenceExpression.TargetObject%2A> property specifies the object that contains the event. The <xref:System.CodeDom.CodeEventReferenceExpression.EventName%2A> property specifies the name of the event.  
+ 
   
- The <xref:System.CodeDom.CodeEventReferenceExpression.TargetObject%2A> property specifies the object that contains the event. The <xref:System.CodeDom.CodeEventReferenceExpression.EventName%2A> property specifies the name of the event.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates use of <xref:System.CodeDom.CodeEventReferenceExpression> to reference an event named TestEvent.  
-  
- [!code-cpp[CodeMultiExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMultiExample/CPP/codemultiexample.cpp#2)]
- [!code-csharp[CodeMultiExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMultiExample/CS/codemultiexample.cs#2)]
- [!code-vb[CodeMultiExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMultiExample/VB/codemultiexample.vb#2)]  
-  
+The following example demonstrates use of <xref:System.CodeDom.CodeEventReferenceExpression> to reference an event named TestEvent.  
+ 
+[!code-cpp[CodeMultiExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMultiExample/CPP/codemultiexample.cpp#2)]
+[!code-csharp[CodeMultiExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMultiExample/CS/codemultiexample.cs#2)]
+[!code-vb[CodeMultiExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMultiExample/VB/codemultiexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

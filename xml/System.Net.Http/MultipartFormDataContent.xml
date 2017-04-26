@@ -20,10 +20,10 @@
     <summary>Provides a container for content encoded using multipart/form-data MIME type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type is derived from <xref:System.Net.Http.MultipartContent> type. All <xref:System.Net.Http.MultipartFormDataContent> does is provide methods to add required Content-Disposition headers to content object added to the collection.  
-  
+This type is derived from <xref:System.Net.Http.MultipartContent> type. All <xref:System.Net.Http.MultipartFormDataContent> does is provide methods to add required Content-Disposition headers to content object added to the collection.  
+ 
  ]]></format>
     </remarks>
   </Docs>

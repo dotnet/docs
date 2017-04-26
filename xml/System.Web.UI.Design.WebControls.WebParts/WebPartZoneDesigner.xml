@@ -14,12 +14,12 @@
     <summary>Provides design-time support for <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" /> controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner> provides design-time rendering of <xref:System.Web.UI.WebControls.WebParts.WebPartZone> controls. It includes support for editable designer regions, templates, and auto-formats to allow a page developer to easily alter the appearance of the control.  
-  
- The public <xref:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.AutoFormats%2A> and <xref:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.TemplateGroups%2A> collections provide quick formatting options for the page developer and can be safely overridden to change the default appearance of a custom control.  
-  
+<xref:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner> provides design-time rendering of <xref:System.Web.UI.WebControls.WebParts.WebPartZone> controls. It includes support for editable designer regions, templates, and auto-formats to allow a page developer to easily alter the appearance of the control.  
+ 
+The public <xref:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.AutoFormats%2A> and <xref:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.TemplateGroups%2A> collections provide quick formatting options for the page developer and can be safely overridden to change the default appearance of a custom control.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -59,10 +59,10 @@
         <value>A pre-specified <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> with a default WebPartZone scheme.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.AutoFormats%2A> property overrides its base implementation to return a collection that is specific to the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> class.  
-  
+The <xref:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.AutoFormats%2A> property overrides its base implementation to return a collection that is specific to the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,10 +216,10 @@
         <value>A pre-specified <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> object with default settings for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" /> environment.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.TemplateGroups%2A> property overrides its base implementation to returns a collection that is specific to the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> class.  
-  
+The <xref:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.TemplateGroups%2A> property overrides its base implementation to returns a collection that is specific to the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

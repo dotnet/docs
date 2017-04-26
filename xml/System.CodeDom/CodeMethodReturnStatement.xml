@@ -22,19 +22,19 @@
     <summary>Represents a return value statement.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeMethodReturnStatement> can be used to represent a return value statement. The <xref:System.CodeDom.CodeMethodReturnStatement.Expression%2A> property specifies the value to return.  
+<xref:System.CodeDom.CodeMethodReturnStatement> can be used to represent a return value statement. The <xref:System.CodeDom.CodeMethodReturnStatement.Expression%2A> property specifies the value to return.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates use of a <xref:System.CodeDom.CodeMethodReturnStatement> to return a value from a method.  
-  
- [!code-cpp[CodeMemberMethodExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMemberMethodExample/CPP/codemembermethodexample.cpp#2)]
- [!code-csharp[CodeMemberMethodExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMemberMethodExample/CS/codemembermethodexample.cs#2)]
- [!code-vb[CodeMemberMethodExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMemberMethodExample/VB/codemembermethodexample.vb#2)]  
-  
+The following example demonstrates use of a <xref:System.CodeDom.CodeMethodReturnStatement> to return a value from a method.  
+ 
+[!code-cpp[CodeMemberMethodExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMemberMethodExample/CPP/codemembermethodexample.cpp#2)]
+[!code-csharp[CodeMemberMethodExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMemberMethodExample/CS/codemembermethodexample.cs#2)]
+[!code-vb[CodeMemberMethodExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMemberMethodExample/VB/codemembermethodexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
         <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the value to return for the return statement, or <see langword="null" /> if the statement is part of a subroutine.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property should be `null` for subroutines and be set to something other than `null` for functions.  
-  
+This property should be `null` for subroutines and be set to something other than `null` for functions.  
+ 
  ]]></format>
         </remarks>
       </Docs>

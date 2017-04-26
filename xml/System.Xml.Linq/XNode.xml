@@ -24,33 +24,33 @@
     <summary>Represents the abstract concept of a node (element, comment, document type, processing instruction, or text node) in the XML tree.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xml.Linq.XNode> is an abstract common base class for the following types:  
-  
+<xref:System.Xml.Linq.XNode> is an abstract common base class for the following types:  
+ 
 -   <xref:System.Xml.Linq.XComment>  
-  
+ 
 -   <xref:System.Xml.Linq.XContainer>  
-  
+ 
 -   <xref:System.Xml.Linq.XDocumentType>  
-  
+ 
 -   <xref:System.Xml.Linq.XProcessingInstruction>  
-  
+ 
 -   <xref:System.Xml.Linq.XText>  
-  
- <xref:System.Xml.Linq.XContainer> is an abstract common base class for the following types:  
-  
+ 
+<xref:System.Xml.Linq.XContainer> is an abstract common base class for the following types:  
+ 
 -   <xref:System.Xml.Linq.XDocument>  
-  
+ 
 -   <xref:System.Xml.Linq.XElement>  
-  
- Objects of classes that derive from <xref:System.Xml.Linq.XContainer> can contain child nodes.  
-  
+ 
+Objects of classes that derive from <xref:System.Xml.Linq.XContainer> can contain child nodes.  
+ 
 > [!NOTE]
 >  An <xref:System.Xml.Linq.XAttribute> is not an <xref:System.Xml.Linq.XNode>. Attributes are maintained as a list of name/value pairs on an element.  
-  
- If you are writing a complex XML application, such as an XML editor or a word processor that stores content as XML, you will often work at the node level. Typical activities when working at the node level include adding nodes, deleting nodes, transforming nodes, and iterating through axes that return collections of nodes.  
-  
+ 
+If you are writing a complex XML application, such as an XML editor or a word processor that stores content as XML, you will often work at the node level. Typical activities when working at the node level include adding nodes, deleting nodes, transforming nodes, and iterating through axes that return collections of nodes.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -85,17 +85,17 @@
         <summary>Adds the specified content immediately after this node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+<xref:System.Xml.Linq.XObject.Changing> events.  
+ 
   
- <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses this method to add an element into the tree.  
-  
+The following example uses this method to add an element into the tree.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -111,7 +111,7 @@ child1.AddAfterSelf(
 );  
 Console.WriteLine(xmlTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -127,9 +127,9 @@ Dim child1 As XElement = xmlTree.<Child1>(0)
 child1.AddAfterSelf(New XElement("NewChild", 10))  
 Console.WriteLine(xmlTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -141,7 +141,7 @@ Console.WriteLine(xmlTree)
   <Child5>5</Child5>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
@@ -183,17 +183,17 @@ Console.WriteLine(xmlTree)
         <summary>Adds the specified content immediately after this node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
   
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
-  
+The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -218,7 +218,7 @@ child1.AddAfterSelf(
 );  
 Console.WriteLine(xmlTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _   
@@ -246,9 +246,9 @@ child1.AddAfterSelf( _
     Select el)  
 Console.WriteLine(xmlTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -261,7 +261,7 @@ Console.WriteLine(xmlTree)
   <Child5>5</Child5>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
@@ -297,19 +297,19 @@ Console.WriteLine(xmlTree)
         <summary>Adds the specified content immediately before this node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
+The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might  affect your performance.  
+ 
   
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might  affect your performance.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses this method to add an element into the tree.  
-  
+The following example uses this method to add an element into the tree.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -325,7 +325,7 @@ child1.AddBeforeSelf(
 );  
 Console.WriteLine(xmlTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -341,9 +341,9 @@ Dim child1 As XElement = xmlTree.<Child1>(0)
 child1.AddBeforeSelf(New XElement("NewChild", 10))  
 Console.WriteLine(xmlTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -355,7 +355,7 @@ Console.WriteLine(xmlTree)
   <Child5>5</Child5>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
@@ -397,19 +397,19 @@ Console.WriteLine(xmlTree)
         <summary>Adds the specified content immediately before this node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
+The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this function might affect your performance.  
+ 
   
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this function might affect your performance.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
-  
+The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -434,7 +434,7 @@ child1.AddBeforeSelf(
 );  
 Console.WriteLine(xmlTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _   
@@ -463,9 +463,9 @@ child1.AddBeforeSelf( _
   
 Console.WriteLine(xmlTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -478,7 +478,7 @@ Console.WriteLine(xmlTree)
   <Child5>5</Child5>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
@@ -512,19 +512,19 @@ Console.WriteLine(xmlTree)
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> of the ancestor elements of this node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method does not return itself in the results.  
+This method does not return itself in the results.  
+ 
+The nodes in the returned collection are in reverse document order.  
+ 
+This method uses deferred execution.  
+ 
   
- The nodes in the returned collection are in reverse document order.  
-  
- This method uses deferred execution.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses this method to enumerate the ancestors of a node.  
-  
+The following example uses this method to enumerate the ancestors of a node.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -536,7 +536,7 @@ IEnumerable<XElement> grandChild = xmlTree.Descendants("GrandChild");
 foreach (XElement el in grandChild.Ancestors())  
     Console.WriteLine(el.Name);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -551,15 +551,15 @@ For Each el In grandChild.Ancestors()
     Console.WriteLine(el.Name)  
 Next  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 Child  
 Root  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -599,15 +599,15 @@ Root
  This method uses deferred execution.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will not return itself in the results.  
+This method will not return itself in the results.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses this method.  
-  
+The following example uses this method.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -619,7 +619,7 @@ IEnumerable<XElement> grandChild = xmlTree.Descendants("GrandChild");
 foreach (XElement el in grandChild.Ancestors("Child"))  
     Console.WriteLine(el.Name);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -634,14 +634,14 @@ For Each el In grandChild.Ancestors("Child")
     Console.WriteLine(el.Name)  
 Next  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Child  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -679,15 +679,15 @@ Child
         <returns>An <see langword="int" /> containing 0 if the nodes are equal; -1 if <paramref name="n1" /> is before <paramref name="n2" />; 1 if <paramref name="n1" /> is after <paramref name="n2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.CompareDocumentOrder%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent’s child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
+The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.CompareDocumentOrder%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent’s child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses this method.  
-  
+The following example uses this method.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -711,7 +711,7 @@ else if (XElement.CompareDocumentOrder(el1, el2) > 0)
 else  
     Console.WriteLine("el1 is before el2");  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -739,14 +739,14 @@ Else
     Console.WriteLine("el1 is before el2")  
 End If  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 el1 is before el2  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The two nodes do not share a common ancestor.</exception>
@@ -780,25 +780,25 @@ el1 is before el2
         <returns>An <see cref="T:System.Xml.XmlReader" /> that can be used to read this node and its descendants.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You typically use this method when you have to supply another component with an <xref:System.Xml.XmlReader>. For example, you can create an <xref:System.Xml.XmlReader> from a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] tree, and then pass that reader to <xref:System.Xml.XmlDocument.Load%2A>.  
+You typically use this method when you have to supply another component with an <xref:System.Xml.XmlReader>. For example, you can create an <xref:System.Xml.XmlReader> from a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] tree, and then pass that reader to <xref:System.Xml.XmlDocument.Load%2A>.  
+ 
+All of the readers returned by <xref:System.Xml.XmlReader.Create%2A> are normalizing readers. They always perform line break normalization and full normalization of attributes. In contrast, the <xref:System.Xml.XmlReader> returned by <xref:System.Xml.Linq.XNode.CreateReader%2A> is not a normalizing reader. It does not transform any white space. It also returns attributes in the order that they were added, not in attribute name order.  
+ 
+[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] does not keep information about whether attributes are default attributes. <xref:System.Xml.XmlReader.IsDefault%2A> will always return false regardless of whether the attribute was populated from a default value or not.  
+ 
+The the `PUBLIC` and `SYSTEM` pseudo attributes on <xref:System.Xml.Linq.XDocumentType> are not available through the <xref:System.Xml.XmlReader.MoveToAttribute%2A?displayProperty=fullName> method. They are only available through the <xref:System.Xml.XmlReader.GetAttribute%2A?displayProperty=fullName> method that takes the qualified name of the attribute as a parameter. If you have to retrieve the `PUBLIC` or `SYSTEM` attributes, you should use the <xref:System.Xml.XmlReader.GetAttribute%2A?displayProperty=fullName> method.  
+ 
+Base64 and BinHex data are not supported. If you attempt to retrieve these types of data (for example, by calling <xref:System.Xml.XmlReader.ReadElementContentAsBase64%2A>), the reader will throw <xref:System.NotSupportedException>.  
+ 
+The `xml` declaration is not surfaced by the reader. While reading, you will not encounter a node of type <xref:System.Xml.XmlNodeType>.  
+ 
   
- All of the readers returned by <xref:System.Xml.XmlReader.Create%2A> are normalizing readers. They always perform line break normalization and full normalization of attributes. In contrast, the <xref:System.Xml.XmlReader> returned by <xref:System.Xml.Linq.XNode.CreateReader%2A> is not a normalizing reader. It does not transform any white space. It also returns attributes in the order that they were added, not in attribute name order.  
-  
- [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] does not keep information about whether attributes are default attributes. <xref:System.Xml.XmlReader.IsDefault%2A> will always return false regardless of whether the attribute was populated from a default value or not.  
-  
- The the `PUBLIC` and `SYSTEM` pseudo attributes on <xref:System.Xml.Linq.XDocumentType> are not available through the <xref:System.Xml.XmlReader.MoveToAttribute%2A?displayProperty=fullName> method. They are only available through the <xref:System.Xml.XmlReader.GetAttribute%2A?displayProperty=fullName> method that takes the qualified name of the attribute as a parameter. If you have to retrieve the `PUBLIC` or `SYSTEM` attributes, you should use the <xref:System.Xml.XmlReader.GetAttribute%2A?displayProperty=fullName> method.  
-  
- Base64 and BinHex data are not supported. If you attempt to retrieve these types of data (for example, by calling <xref:System.Xml.XmlReader.ReadElementContentAsBase64%2A>), the reader will throw <xref:System.NotSupportedException>.  
-  
- The `xml` declaration is not surfaced by the reader. While reading, you will not encounter a node of type <xref:System.Xml.XmlNodeType>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree, creates an <xref:System.Xml.XmlReader> by using the <xref:System.Xml.Linq.XNode.CreateReader%2A> method, and creates an <xref:System.Xml.XmlDocument> by using the reader.  
-  
+The following example creates an XML tree, creates an <xref:System.Xml.XmlReader> by using the <xref:System.Xml.Linq.XNode.CreateReader%2A> method, and creates an <xref:System.Xml.XmlDocument> by using the reader.  
+ 
 ```csharp  
   
                 XDocument xmlTree = new XDocument(  
@@ -815,7 +815,7 @@ XmlNode cd = doc.ReadNode(reader);
 doc.AppendChild(cd);  
 Console.WriteLine(doc.OuterXml);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XDocument =  _   
@@ -831,16 +831,16 @@ Dim cd As XmlNode = doc.ReadNode(reader)
 doc.AppendChild(cd)  
 Console.WriteLine(doc.OuterXml)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
 <Root Att1="Attribute Content"><Child1>1</Child1><Child2>2</Child2></Root>  
 ```  
-  
- Another use for this method is to do an XSLT transformation. You can create an XML tree, create an <xref:System.Xml.XmlReader> from the XML tree, create a new document, and create an <xref:System.Xml.XmlWriter> that will write into the new document. Then, you can invoke the XSLT transformation, passing the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter> to the transformation. After the transformation successfully completes, the new XML tree is populated with the results of the transform.  
-  
+ 
+Another use for this method is to do an XSLT transformation. You can create an XML tree, create an <xref:System.Xml.XmlReader> from the XML tree, create a new document, and create an <xref:System.Xml.XmlWriter> that will write into the new document. Then, you can invoke the XSLT transformation, passing the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter> to the transformation. After the transformation successfully completes, the new XML tree is populated with the results of the transform.  
+ 
 ```csharp  
   
                 string xslMarkup = @"<?xml version='1.0'?>  
@@ -876,7 +876,7 @@ using (XmlWriter writer = newTree.CreateWriter()) {
   
 Console.WriteLine(newTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xslMarkup As XDocument = _   
@@ -914,9 +914,9 @@ End Using
   
 Console.WriteLine(newTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -924,7 +924,7 @@ Console.WriteLine(newTree)
   <C2>Child2 data</C2>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -995,31 +995,31 @@ Console.WriteLine(newTree)
           <see langword="true" /> if the nodes are equal; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following criteria determine whether two nodes are equal:  
-  
+The following criteria determine whether two nodes are equal:  
+ 
 -   A `null` node is equal to another `null` node but unequal to a non-`null` node.  
-  
+ 
 -   Two <xref:System.Xml.Linq.XNode> objects of different types are never equal.  
-  
+ 
 -   Two <xref:System.Xml.Linq.XText> nodes are equal if they contain the same text.  
-  
+ 
 -   Two <xref:System.Xml.Linq.XElement> nodes are equal if they have the same tag name, the same set of attributes with the same values, and (ignoring comments and processing instructions) contain two equal length sequences of equal content nodes.  
-  
+ 
 -   Two <xref:System.Xml.Linq.XDocument> nodes are equal if their root nodes are equal.  
-  
+ 
 -   Two <xref:System.Xml.Linq.XComment> nodes are equal if they contain the same comment text.  
-  
+ 
 -   Two <xref:System.Xml.Linq.XProcessingInstruction> nodes are equal if they have the same target and data.  
-  
+ 
 -   Two <xref:System.Xml.Linq.XDocumentType> nodes are equal if the have the same name, public ID, system ID, and internal subset.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses this method to compare two XML trees.  
-  
+The following example uses this method to compare two XML trees.  
+ 
 ```csharp  
   
                 XElement xmlTree1 = new XElement("Root",  
@@ -1036,7 +1036,7 @@ XElement xmlTree2 = new XElement("Root",
 );  
 Console.WriteLine(XNode.DeepEquals(xmlTree1, xmlTree2));  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree1 As XElement = _   
@@ -1053,14 +1053,14 @@ Dim xmlTree2 As XElement = _
   
 Console.WriteLine(XNode.DeepEquals(xmlTree1, xmlTree2))  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 True  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1092,15 +1092,15 @@ True
         <value>An <see cref="T:System.Xml.Linq.XNodeDocumentOrderComparer" /> that can compare the relative position of two nodes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is primarily used internally for implementing the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> extension method. The recommended approach is to use that extension method instead of using this property directly.  
+This property is primarily used internally for implementing the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> extension method. The recommended approach is to use that extension method instead of using this property directly.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree with some elements. It then creates a <xref:System.Collections.Generic.List%601> of <xref:System.Xml.Linq.XNode> that contains some elements from the XML tree at random. It sorts the list, using this property to retrieve a <xref:System.Xml.Linq.XNodeDocumentOrderComparer>, which implements the <xref:System.Collections.IComparer?displayProperty=fullName> and <xref:System.Collections.Generic.IComparer%601?displayProperty=fullName> interfaces.  
-  
+The following example creates an XML tree with some elements. It then creates a <xref:System.Collections.Generic.List%601> of <xref:System.Xml.Linq.XNode> that contains some elements from the XML tree at random. It sorts the list, using this property to retrieve a <xref:System.Xml.Linq.XNodeDocumentOrderComparer>, which implements the <xref:System.Collections.IComparer?displayProperty=fullName> and <xref:System.Collections.Generic.IComparer%601?displayProperty=fullName> interfaces.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1122,7 +1122,7 @@ nodeList.Sort(XNode.DocumentOrderComparer);
 foreach (XElement el in nodeList)  
     Console.WriteLine(el);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -1146,16 +1146,16 @@ For Each el In nodeList
     Console.WriteLine(el)  
 Next  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <Child1>1</Child1>  
 <Child3>3</Child3>  
 <Child5>5</Child5>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1188,17 +1188,17 @@ Next
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> of the sibling elements after this node, in document order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method only includes siblings in the returned collection. It does not include descendants.  
+This method only includes siblings in the returned collection. It does not include descendants.  
+ 
+This method uses deferred execution.  
+ 
   
- This method uses deferred execution.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an element with some complex content. It then uses this method to retrieve the nodes in document order.  
-  
+The following example creates an element with some complex content. It then uses this method to retrieve the nodes in document order.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1215,7 +1215,7 @@ IEnumerable<XElement> elements = child.ElementsAfterSelf();
 foreach (XElement el in elements)  
     Console.WriteLine(el.Name);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _  
@@ -1233,15 +1233,15 @@ For Each el In elements
     Console.WriteLine(el.Name)  
 Next  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 Child4  
 Child5  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1277,17 +1277,17 @@ Child5
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> of the sibling elements after this node, in document order. Only elements that have a matching <see cref="T:System.Xml.Linq.XName" /> are included in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method only includes siblings in the returned collection. It does not include descendants.  
+This method only includes siblings in the returned collection. It does not include descendants.  
+ 
+This method uses deferred execution.  
+ 
   
- This method uses deferred execution.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an element with some complex content. It then uses this method to retrieve the sibling elements, in document order.  
-  
+The following example creates an element with some complex content. It then uses this method to retrieve the sibling elements, in document order.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1304,7 +1304,7 @@ IEnumerable<XElement> elements = child.ElementsAfterSelf("Child4");
 foreach (XElement el in elements)  
     Console.WriteLine(el.Name);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -1323,14 +1323,14 @@ For Each el In elements
     Console.WriteLine(el.Name)  
 Next  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Child4  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1363,17 +1363,17 @@ Child4
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> of the sibling elements before this node, in document order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method only includes siblings in the returned collection. It does not include descendants.  
+This method only includes siblings in the returned collection. It does not include descendants.  
+ 
+This method uses deferred execution.  
+ 
   
- This method uses deferred execution.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses this axis method.  
-  
+The following example uses this axis method.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1390,7 +1390,7 @@ IEnumerable<XElement> elements = child.ElementsBeforeSelf();
 foreach (XElement el in elements)  
     Console.WriteLine(el.Name);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -1409,15 +1409,15 @@ For Each el In elements
     Console.WriteLine(el.Name)  
 Next  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 Child1  
 Child2  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1453,17 +1453,17 @@ Child2
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> of the sibling elements before this node, in document order. Only elements that have a matching <see cref="T:System.Xml.Linq.XName" /> are included in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method only includes siblings in the returned collection. It does not include descendants.  
+This method only includes siblings in the returned collection. It does not include descendants.  
+ 
+This method uses deferred execution.  
+ 
   
- This method uses deferred execution.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses this method.  
-  
+The following example uses this method.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1480,7 +1480,7 @@ IEnumerable<XElement> elements = child.ElementsBeforeSelf("Child2");
 foreach (XElement el in elements)  
     Console.WriteLine(el.Name);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -1499,14 +1499,14 @@ For Each el In elements
     Console.WriteLine(el.Name)  
 Next  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Child2  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1538,10 +1538,10 @@ Child2
         <value>A <see cref="T:System.Xml.Linq.XNodeEqualityComparer" /> that can compare two nodes for value equality.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses this property to retrieve an <xref:System.Xml.Linq.XNodeEqualityComparer>, which implements the <xref:System.Collections.IEqualityComparer?displayProperty=fullName> and <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName> interfaces. It creates a dictionary that uses this property.  
-  
+The following example uses this property to retrieve an <xref:System.Xml.Linq.XNodeEqualityComparer>, which implements the <xref:System.Collections.IEqualityComparer?displayProperty=fullName> and <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName> interfaces. It creates a dictionary that uses this property.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1560,7 +1560,7 @@ nodeDictionary.Add(xmlTree.Element("Child1"), "Child 1 Information");
 string str = nodeDictionary[xmlTree.Element("Child3")];  
 Console.WriteLine(str);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -1580,14 +1580,14 @@ nodeDictionary.Add(xmlTree.Element("Child1"), "Child 1 Information")
 Dim str As String = nodeDictionary(xmlTree.Element("Child3"))  
 Console.WriteLine(str)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Child 3 Information  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1624,15 +1624,15 @@ Child 3 Information
           <see langword="true" /> if this node appears after the specified node; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.CompareDocumentOrder%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent’s child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
+The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.CompareDocumentOrder%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent’s child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses this method.  
-  
+The following example uses this method.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1651,7 +1651,7 @@ if (child5.IsAfter(child3))
 else  
     Console.WriteLine("Child5 is not after Child3");  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -1671,14 +1671,14 @@ Else
     Console.WriteLine("Child5 is not after Child3")  
 End If  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Child5 is after Child3  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1715,15 +1715,15 @@ Child5 is after Child3
           <see langword="true" /> if this node appears before the specified node; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.IsBefore%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent’s child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
+The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.IsBefore%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent’s child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses this method.  
-  
+The following example uses this method.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1742,9 +1742,9 @@ if (child5.IsBefore(child3))
 else  
     Console.WriteLine("Child5 is not before Child3");  
 ```  
-  
- [vb]  
-  
+ 
+[vb]  
+ 
 ```  
   
                 Dim xmlTree As XElement = _   
@@ -1764,14 +1764,14 @@ Else
     Console.WriteLine("Child5 is not before Child3")  
 End If  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 Child5 is not before Child3  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1803,15 +1803,15 @@ Child5 is not before Child3
         <value>The <see cref="T:System.Xml.Linq.XNode" /> that contains the next sibling node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this <xref:System.Xml.Linq.XNode> does not have a parent, or if there is no next node, this property returns `null`.  
+If this <xref:System.Xml.Linq.XNode> does not have a parent, or if there is no next node, this property returns `null`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses this property to loop through nodes.  
-  
+The following example uses this property to loop through nodes.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1844,7 +1844,7 @@ do {
 }  
 while ((node = node.NextNode) != null);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -1874,16 +1874,16 @@ Do
     node = node.NextNode  
 Loop While (Not (node Is Nothing))  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 NodeType: Element   Child2  
 NodeType: Comment   a comment  
 NodeType: Element   Child3  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1916,17 +1916,17 @@ NodeType: Element   Child3
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XNode" /> of the sibling nodes after this node, in document order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method only includes siblings in the returned collection. It does not include descendants.  
+This method only includes siblings in the returned collection. It does not include descendants.  
+ 
+This method uses deferred execution.  
+ 
   
- This method uses deferred execution.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree, and then queries the tree using this axis method.  
-  
+The following example creates an XML tree, and then queries the tree using this axis method.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -1947,7 +1947,7 @@ foreach (XNode node in nodes)
         node.NodeType == XmlNodeType.Text ? (node as XText).Value : "");  
 }  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = New XElement("Root", _New XText("Text content."), _  
@@ -1969,15 +1969,15 @@ For Each node As XNode In nodes
     Console.WriteLine("Node type: {0}  {1}", node.NodeType, s)  
 Next  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 Node type: Text  More text content.  
 Node type: Element  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2010,17 +2010,17 @@ Node type: Element
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XNode" /> of the sibling nodes before this node, in document order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method only includes siblings in the returned collection. It does not include descendants.  
+This method only includes siblings in the returned collection. It does not include descendants.  
+ 
+This method uses deferred execution.  
+ 
   
- This method uses deferred execution.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree, and then queries the tree using this axis method.  
-  
+The following example creates an XML tree, and then queries the tree using this axis method.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -2039,7 +2039,7 @@ foreach (XNode node in nodes)
         node.NodeType,  
         node.NodeType == XmlNodeType.Text ? (node as XText).Value : "");  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = New XElement("Root", _  
@@ -2062,15 +2062,15 @@ For Each node As XNode In nodes
     Console.WriteLine("Node type: {0}  {1}", node.NodeType, s)  
 Next  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 Node type: Text  Text content.  
 Node type: Element  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2102,17 +2102,17 @@ Node type: Element
         <value>The <see cref="T:System.Xml.Linq.XNode" /> that contains the previous sibling node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this <xref:System.Xml.Linq.XNode> does not have a parent, or if there is no previous node, this property returns `null`.  
+If this <xref:System.Xml.Linq.XNode> does not have a parent, or if there is no previous node, this property returns `null`.  
+ 
+The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.PreviousNode%2A> property must traverse the list of direct child nodes under the parent container. Therefore, using this property might affect your performance.  
+ 
   
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.PreviousNode%2A> property must traverse the list of direct child nodes under the parent container. Therefore, using this property might affect your performance.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses this property to loop through nodes.  
-  
+The following example uses this property to loop through nodes.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -2145,7 +2145,7 @@ do {
 }  
 while ((node = node.PreviousNode) != null);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _  
@@ -2174,16 +2174,16 @@ Do
     node = node.PreviousNode  
 Loop While (Not (node Is Nothing))  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 NodeType: Element   Child2  
 NodeType: Text      Some Text  
 NodeType: Element   Child1  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2219,23 +2219,23 @@ NodeType: Element   Child1
         <returns>An <see cref="T:System.Xml.Linq.XNode" /> that contains the node and its descendant nodes that were read from the reader. The runtime type of the node is determined by the node type (<see cref="P:System.Xml.Linq.XObject.NodeType" />) of the first node encountered in the reader.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to write a method that returns a collection of nodes, yielding each node as the node is read from the reader. This method enables you to process arbitrarily large XML files with a very small memory footprint.  
+You can use this method to write a method that returns a collection of nodes, yielding each node as the node is read from the reader. This method enables you to process arbitrarily large XML files with a very small memory footprint.  
+ 
+The reader that you pass to this method might throw exceptions. <xref:System.Xml.Linq.XNode.ReadFrom%2A> does not catch all exceptions thrown by the reader; the unhandled exceptions bubble up to the code that called <xref:System.Xml.Linq.XNode.ReadFrom%2A>. In particular, your code should be prepared to handle <xref:System.Xml.XmlException>.  
+ 
+For an example of how to stream a more complex document, see [How to: Stream XML Fragments with Access to Header Information](http://msdn.microsoft.com/library/01311522-9d03-4977-8641-2932c6f56092).  
+ 
+Certain standard query operators, such as <xref:System.Linq.Enumerable.OrderBy%2A>, iterate their source, collect all of the data, sort it, and then finally yield the first item in the sequence. If you use a query operator that materializes its source before yielding the first item, you will not retain a small memory footprint.  
+ 
+For an example of using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to transform extremely large XML documents while maintaining a small memory footprint, see [How to: Perform Streaming Transform of Large XML Documents](http://msdn.microsoft.com/library/0759e428-6e59-4d80-a506-365d3a6a2b73).  
+ 
   
- The reader that you pass to this method might throw exceptions. <xref:System.Xml.Linq.XNode.ReadFrom%2A> does not catch all exceptions thrown by the reader; the unhandled exceptions bubble up to the code that called <xref:System.Xml.Linq.XNode.ReadFrom%2A>. In particular, your code should be prepared to handle <xref:System.Xml.XmlException>.  
-  
- For an example of how to stream a more complex document, see [How to: Stream XML Fragments with Access to Header Information](http://msdn.microsoft.com/library/01311522-9d03-4977-8641-2932c6f56092).  
-  
- Certain standard query operators, such as <xref:System.Linq.Enumerable.OrderBy%2A>, iterate their source, collect all of the data, sort it, and then finally yield the first item in the sequence. If you use a query operator that materializes its source before yielding the first item, you will not retain a small memory footprint.  
-  
- For an example of using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to transform extremely large XML documents while maintaining a small memory footprint, see [How to: Perform Streaming Transform of Large XML Documents](http://msdn.microsoft.com/library/0759e428-6e59-4d80-a506-365d3a6a2b73).  
-  
-   
-  
+ 
 ## Examples  
- This example uses the following XML file, named Source.xml:  
-  
+This example uses the following XML file, named Source.xml:  
+ 
 ```xml  
   
                 <?xml version="1.0" encoding="utf-8" ?>   
@@ -2251,12 +2251,12 @@ NodeType: Element   Child1
   </Child>  
 </Root>  
 ```  
-  
- This example creates a custom axis method that uses <xref:System.Xml.Linq.XNode.ReadFrom%2A>. You can query the custom axis by using a LINQ query.  
-  
+ 
+This example creates a custom axis method that uses <xref:System.Xml.Linq.XNode.ReadFrom%2A>. You can query the custom axis by using a LINQ query.  
+ 
 > [!NOTE]
 >  The following example uses the yield return construct of C#. Because there is no equivalent feature in [!INCLUDE[vb_orcas_long](~/includes/vb-orcas-long-md.md)], this example is provided only in C#.  
-  
+ 
 ```csharp  
   
                 class Program  
@@ -2296,15 +2296,15 @@ NodeType: Element   Child1
     }  
 }  
 ```  
-  
- This example produces the following output.  
-  
+ 
+This example produces the following output.  
+ 
 ```  
   
                 bbb  
 ccc  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Xml.XmlReader" /> is not positioned on a recognized node type.</exception>
@@ -2338,21 +2338,21 @@ ccc
         <summary>Removes this node from its parent.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] programming, you should not manipulate or modify a set of nodes while you are querying for nodes in that set. In practical terms, this means that you should not iterate over a set of nodes and remove them. Instead, you should materialize them into a <xref:System.Collections.Generic.List%601> by using the <xref:System.Linq.Enumerable.ToList%2A> extension method. Then, you can iterate over the list to remove the nodes. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](http://msdn.microsoft.com/library/d9a5c404-2b0e-46cd-a358-0e78773b3094).  
+In [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] programming, you should not manipulate or modify a set of nodes while you are querying for nodes in that set. In practical terms, this means that you should not iterate over a set of nodes and remove them. Instead, you should materialize them into a <xref:System.Collections.Generic.List%601> by using the <xref:System.Linq.Enumerable.ToList%2A> extension method. Then, you can iterate over the list to remove the nodes. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](http://msdn.microsoft.com/library/d9a5c404-2b0e-46cd-a358-0e78773b3094).  
+ 
+Alternatively, if you want to remove a set of nodes, it is recommended that you use the <xref:System.Xml.Linq.Extensions.Remove%2A?displayProperty=fullName> method. This method copies the nodes to a list, and then iterates over the list to remove the nodes.  
+ 
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
+The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.Remove%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
+ 
   
- Alternatively, if you want to remove a set of nodes, it is recommended that you use the <xref:System.Xml.Linq.Extensions.Remove%2A?displayProperty=fullName> method. This method copies the nodes to a list, and then iterates over the list to remove the nodes.  
-  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.Remove%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
-  
-   
-  
+ 
 ## Examples  
- The following example removes a node from its parent.  
-  
+The following example removes a node from its parent.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -2366,7 +2366,7 @@ XElement child3 = xmlTree.Element("Child3");
 child3.Remove();  
 Console.WriteLine(xmlTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -2382,9 +2382,9 @@ Dim child3 As XElement = xmlTree.<Child3>(0)
 child3.Remove()  
 Console.WriteLine(xmlTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -2394,7 +2394,7 @@ Console.WriteLine(xmlTree)
   <Child5>child5 content</Child5>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
@@ -2430,21 +2430,21 @@ Console.WriteLine(xmlTree)
         <summary>Replaces this node with the specified content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method first removes this node from its parent, and then adds the specified content to this node's parent, in the place of this node.  
+This method first removes this node from its parent, and then adds the specified content to this node's parent, in the place of this node.  
+ 
+The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
+ 
+For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
   
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
-  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses this method to replace the contents of a node with different content.  
-  
+The following example uses this method to replace the contents of a node with different content.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -2460,7 +2460,7 @@ child3.ReplaceWith(
 );  
 Console.WriteLine(xmlTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -2476,9 +2476,9 @@ Dim child3 As XElement = xmlTree.<Child3>(0)
 child3.ReplaceWith(<NewChild>new content</NewChild>)  
 Console.WriteLine(xmlTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -2489,7 +2489,7 @@ Console.WriteLine(xmlTree)
   <Child5>child5 content</Child5>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2530,21 +2530,21 @@ Console.WriteLine(xmlTree)
         <summary>Replaces this node with the specified content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method first removes this node from its parent, and then adds the specified content to this node's parent, in the place of this node.  
+This method first removes this node from its parent, and then adds the specified content to this node's parent, in the place of this node.  
+ 
+The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
+ 
+For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
   
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
-  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows using the results of a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] query as the input to this method.  
-  
+The following example shows using the results of a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] query as the input to this method.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -2569,7 +2569,7 @@ child3.ReplaceWith(
 );  
 Console.WriteLine(xmlTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _   
@@ -2598,9 +2598,9 @@ child3.ReplaceWith( _
   
 Console.WriteLine(xmlTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -2612,7 +2612,7 @@ Console.WriteLine(xmlTree)
   <Child5>5</Child5>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2645,10 +2645,10 @@ Console.WriteLine(xmlTree)
         <returns>A <see cref="T:System.String" /> containing the indented XML.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses this method to retrieve indented XML.  
-  
+The following example uses this method to retrieve indented XML.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -2656,7 +2656,7 @@ Console.WriteLine(xmlTree)
 );  
 Console.WriteLine(xmlTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -2666,16 +2666,16 @@ Console.WriteLine(xmlTree);
   
 Console.WriteLine(xmlTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
   <Child1>1</Child1>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2711,10 +2711,10 @@ Console.WriteLine(xmlTree)
         <returns>A <see cref="T:System.String" /> containing the XML.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example uses this method to retrieve unformatted and formatted XML.  
-  
+The following example uses this method to retrieve unformatted and formatted XML.  
+ 
 ```csharp  
   
                 XElement root = XElement.Parse("<Root><Child/></Root>");  
@@ -2722,7 +2722,7 @@ Console.WriteLine(root.ToString(SaveOptions.DisableFormatting));
 Console.WriteLine("---");  
 Console.WriteLine(root.ToString(SaveOptions.None));  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement = <Root>  
@@ -2732,9 +2732,9 @@ Console.WriteLine(root.ToString(SaveOptions.DisableFormatting))
 Console.WriteLine("---")  
 Console.WriteLine(root.ToString(SaveOptions.None))  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <Root><Child /></Root>  
@@ -2743,7 +2743,7 @@ Console.WriteLine(root.ToString(SaveOptions.None))
   <Child />  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2778,15 +2778,15 @@ Console.WriteLine(root.ToString(SaveOptions.None))
         <summary>Writes this node to an <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to write code that does a streaming transform of a very large document. For more information, see [How to: Perform Streaming Transform of Large XML Documents](http://msdn.microsoft.com/library/0759e428-6e59-4d80-a506-365d3a6a2b73).  
+You can use this method to write code that does a streaming transform of a very large document. For more information, see [How to: Perform Streaming Transform of Large XML Documents](http://msdn.microsoft.com/library/0759e428-6e59-4d80-a506-365d3a6a2b73).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Xml.XmlWriter> that writes to a <xref:System.Text.StringBuilder>. It then uses this method to write two XML trees to the writer.  
-  
+The following example creates an <xref:System.Xml.XmlWriter> that writes to a <xref:System.Text.StringBuilder>. It then uses this method to write two XML trees to the writer.  
+ 
 ```csharp  
   
                 StringBuilder sb = new StringBuilder();  
@@ -2808,7 +2808,7 @@ using (XmlWriter xw = XmlWriter.Create(sb, xws)) {
 }  
 Console.WriteLine(sb.ToString());  
 ```  
-  
+ 
 ```vb  
   
                 Dim sb As StringBuilder = New StringBuilder()  
@@ -2831,9 +2831,9 @@ End Using
   
 Console.WriteLine(sb.ToString())  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -2845,7 +2845,7 @@ Console.WriteLine(sb.ToString())
   </AnotherChild>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2860,14 +2860,14 @@ Console.WriteLine(sb.ToString())
         <summary>Returns a collection of the ancestor elements of this node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Optionally a node name can be specified to filter for ancestor elements with a specific name.  
-  
- The nodes in the returned collection are in reverse document order.  
-  
- This method uses deferred execution.  
-  
+Optionally a node name can be specified to filter for ancestor elements with a specific name.  
+ 
+The nodes in the returned collection are in reverse document order.  
+ 
+This method uses deferred execution.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2882,10 +2882,10 @@ Console.WriteLine(sb.ToString())
         <summary>Returns a collection of the sibling elements after this node, in document order.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses deferred execution.  
-  
+This method uses deferred execution.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2900,19 +2900,19 @@ Console.WriteLine(sb.ToString())
         <summary>Replaces this node with the specified content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
+The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must  traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
+ 
   
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must  traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses this method to replace the contents of a node with different content.  
-  
+The following example uses this method to replace the contents of a node with different content.  
+ 
 ```csharp  
   
                 XElement xmlTree = new XElement("Root",  
@@ -2928,7 +2928,7 @@ child3.ReplaceWith(
 );  
 Console.WriteLine(xmlTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xmlTree As XElement = _   
@@ -2944,9 +2944,9 @@ Dim child3 As XElement = xmlTree.<Child3>(0)
 child3.ReplaceWith(<NewChild>new content</NewChild>)  
 Console.WriteLine(xmlTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -2957,7 +2957,7 @@ Console.WriteLine(xmlTree)
   <Child5>child5 content</Child5>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2972,17 +2972,17 @@ Console.WriteLine(xmlTree)
         <summary>Adds the specified content immediately after this node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
   
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
-  
+The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -3007,7 +3007,7 @@ child1.AddAfterSelf(
 );  
 Console.WriteLine(xmlTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _  
@@ -3036,9 +3036,9 @@ child1.AddAfterSelf( _
 )  
 Console.WriteLine(xmlTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -3051,7 +3051,7 @@ Console.WriteLine(xmlTree)
   <Child5>5</Child5>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3066,10 +3066,10 @@ Console.WriteLine(xmlTree)
         <summary>Returns a collection of the sibling elements before this node, in document order.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses deferred execution.  
-  
+This method uses deferred execution.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3084,19 +3084,19 @@ Console.WriteLine(xmlTree)
         <summary>Adds the specified content immediately before this node.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
+This method will raise the <xref:System.Xml.Linq.XObject.Changed> and <xref:System.Xml.Linq.XObject.Changing> events.  
+ 
+The <xref:System.Xml.Linq.XContainer> stores its child notes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might  affect your performance.  
+ 
   
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and <xref:System.Xml.Linq.XObject.Changing> events.  
-  
- The <xref:System.Xml.Linq.XContainer> stores its child notes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might  affect your performance.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
-  
+The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -3121,7 +3121,7 @@ child1.AddBeforeSelf(
 );  
 Console.WriteLine(xmlTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _   
@@ -3150,9 +3150,9 @@ Select el)
   
 Console.WriteLine(xmlTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -3165,7 +3165,7 @@ Console.WriteLine(xmlTree)
   <Child5>5</Child5>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

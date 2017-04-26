@@ -35,10 +35,10 @@
     <summary>Represents a field using an internal metadata token.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of an instance of the <xref:System.RuntimeFieldHandle> structure is a handle to the field represented by the instance.  
-  
+The value of an instance of the <xref:System.RuntimeFieldHandle> structure is a handle to the field represented by the instance.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -181,12 +181,12 @@
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data necessary to deserialize the field represented by the current instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter is reserved; it does not currently participate in this operation.  
-  
- For more information, see the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%2A?displayProperty=fullName> method.  
-  
+The `context` parameter is reserved; it does not currently participate in this operation.  
+ 
+For more information, see the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -231,44 +231,44 @@
           <see langword="true" /> if <paramref name="left" /> is equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeFieldHandle.Equals%28System.RuntimeFieldHandle%2CSystem.RuntimeFieldHandle%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (RuntimeFieldHandle left, RuntimeFieldHandle right);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.RuntimeFieldHandle left, valuetype System.RuntimeFieldHandle right) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.RuntimeFieldHandle.op_Inequality(System.RuntimeFieldHandle,System.RuntimeFieldHandle)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="left" Type="System.RuntimeFieldHandle" />
-        <Parameter Name="right" Type="System.RuntimeFieldHandle" />
-      </Parameters>
-      <Docs>
-        <param name="left">The <see cref="T:System.RuntimeFieldHandle" /> to compare to <c>right</c>.</param>
-        <param name="right">The <see cref="T:System.RuntimeFieldHandle" /> to compare to <c>left</c>.</param>
-        <summary>Indicates whether two <see cref="T:System.RuntimeFieldHandle" /> structures are not equal.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="left" /> is not equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (RuntimeFieldHandle left, RuntimeFieldHandle right);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.RuntimeFieldHandle left, valuetype System.RuntimeFieldHandle right) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.RuntimeFieldHandle.op_Inequality(System.RuntimeFieldHandle,System.RuntimeFieldHandle)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Runtime</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+       <AssemblyVersion>4.0.10.0</AssemblyVersion>
+       <AssemblyVersion>4.0.20.0</AssemblyVersion>
+       <AssemblyVersion>4.1.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>mscorlib</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="left" Type="System.RuntimeFieldHandle" />
+       <Parameter Name="right" Type="System.RuntimeFieldHandle" />
+     </Parameters>
+     <Docs>
+       <param name="left">The <see cref="T:System.RuntimeFieldHandle" /> to compare to <c>right</c>.</param>
+       <param name="right">The <see cref="T:System.RuntimeFieldHandle" /> to compare to <c>left</c>.</param>
+       <summary>Indicates whether two <see cref="T:System.RuntimeFieldHandle" /> structures are not equal.</summary>
+       <returns>
+         <see langword="true" /> if <paramref name="left" /> is not equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeFieldHandle.Compare%2A> dHandle,System.RuntimeFieldHandle)?qualifyHint=True&autoUpgrade=False]]></format>
         </remarks>
       </Docs>

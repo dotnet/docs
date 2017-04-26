@@ -18,10 +18,10 @@
     <summary>Represents the contents of the <see langword="wsc:CallbackContext" /> message header when using a channel that supports the context exchange protocol.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The context exchange protocol allows for duplex communication between durable services.  
-  
+The context exchange protocol allows for duplex communication between durable services.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> class with the specified <see cref="T:System.ServiceModel.EndpointAddress" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The callback address is the endpoint address that the service uses to call back to the client.  
-  
+The callback address is the endpoint address that the service uses to call back to the client.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> class with the specified <see cref="T:System.ServiceModel.EndpointAddress" /> and a <see cref="T:System.Collections.Generic.IDictionary`2" /> that contains context information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The context information may include client instance and conversation information.  
-  
+The context information may include client instance and conversation information.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,10 +195,10 @@
         <value>An <see cref="T:System.ServiceModel.EndpointAddress" /> that contains the callback address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The callback address is the endpoint address the server uses to call the client.  
-  
+The callback address is the endpoint address the server uses to call the client.  
+ 
  ]]></format>
         </remarks>
       </Docs>

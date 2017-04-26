@@ -14,10 +14,10 @@
     <summary>Provides UI support for working with extender controls at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.ExtenderControlDesigner> class enables you to interact with extender controls on the page at design time in an IDE such as [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)]. Only control developers and IDE developers have to interact with this class directly.  
-  
+The <xref:System.Web.UI.Design.ExtenderControlDesigner> class enables you to interact with extender controls on the page at design time in an IDE such as [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)]. Only control developers and IDE developers have to interact with this class directly.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,12 +58,12 @@
         <summary>Releases the unmanaged resources that are used by the <see cref="T:System.Web.UI.Design.ExtenderControlDesigner" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources that are held by any managed objects that this <xref:System.Web.UI.Design.ExtenderControlDesigner> references. This method invokes the `Dispose` method of each referenced object.  
-  
+This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is `true`, this method releases all resources that are held by any managed objects that this <xref:System.Web.UI.Design.ExtenderControlDesigner> references. This method invokes the `Dispose` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

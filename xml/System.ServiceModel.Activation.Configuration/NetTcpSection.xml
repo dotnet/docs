@@ -14,10 +14,10 @@
     <summary>Contains configuration elements for the NetTcpPortSharing sharing service. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The NET.TCP Port Sharing Service allows multiple processes to share the same TCP port. This class contains properties that configure this service.  
-  
+The NET.TCP Port Sharing Service allows multiple processes to share the same TCP port. This class contains properties that configure this service.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -155,10 +155,10 @@
         <value>The maximum number of pending connections for this sharing service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is 100.  
-  
+The default value is 100.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@
         <value>The default is 10 seconds.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property specifies the timeout for reading the framing data and performing connection dispatching from the underlying connections.  
-  
+This property specifies the timeout for reading the framing data and performing connection dispatching from the underlying connections.  
+ 
  ]]></format>
         </remarks>
       </Docs>

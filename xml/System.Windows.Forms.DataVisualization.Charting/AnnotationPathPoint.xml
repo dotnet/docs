@@ -14,10 +14,10 @@
     <summary>Represents a path point of a <see cref="T:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation" /> or <see cref="T:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation" />, which is stored in their <c>PathPoints</c> property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- At run time, use the <xref:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPath> or <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.GraphicsPath> class to set the path of a polyline or polygon.  
-  
+At run time, use the <xref:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPath> or <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.GraphicsPath> class to set the path of a polyline or polygon.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -139,10 +139,10 @@
         <value>A <see langword="byte " />value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the <xref:System.Drawing.Drawing2D.PathPointType> enumeration for more details.  
-  
+See the <xref:System.Drawing.Drawing2D.PathPointType> enumeration for more details.  
+ 
  ]]></format>
         </remarks>
       </Docs>

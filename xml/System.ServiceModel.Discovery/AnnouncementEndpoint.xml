@@ -14,12 +14,12 @@
     <summary>A standard endpoint that is used by services to send announcement messages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class represents an endpoint that has a fixed contract so when you create announcement endpoints you only specify the binding and the address.  <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> supports two discovery protocols versions: WS-Discovery April 2005 and WS-Discovery July 2008. Any instance of the endpoint supports only one of these versions. You choose which version is supported by the endpoint by providing the `discoveryVersion` parameter to the appropriate `AnnouncementEndpoint` constructor. The default discovery version is WS-Discovery April 2005.  
-  
- <xref:System.ServiceModel.Discovery.AnnouncementClient> uses <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> to send announcements.  <xref:System.ServiceModel.Discovery.AnnouncementService> and all classes derived from it use <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> to listen for announcements.  
-  
+This class represents an endpoint that has a fixed contract so when you create announcement endpoints you only specify the binding and the address.  <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> supports two discovery protocols versions: WS-Discovery April 2005 and WS-Discovery July 2008. Any instance of the endpoint supports only one of these versions. You choose which version is supported by the endpoint by providing the `discoveryVersion` parameter to the appropriate `AnnouncementEndpoint` constructor. The default discovery version is WS-Discovery April 2005.  
+ 
+<xref:System.ServiceModel.Discovery.AnnouncementClient> uses <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> to send announcements.  <xref:System.ServiceModel.Discovery.AnnouncementService> and all classes derived from it use <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> to listen for announcements.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,10 +56,10 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.AnnouncementEndpoint" /> class that supports the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> supports two discovery protocols versions: WS-Discovery April 2005 and WS-Discovery July 2008. The version supported by a specific instance is specified by this or any constructor that takes a <xref:System.ServiceModel.Discovery.DiscoveryVersion> parameter.  
-  
+<xref:System.ServiceModel.Discovery.DiscoveryEndpoint> supports two discovery protocols versions: WS-Discovery April 2005 and WS-Discovery July 2008. The version supported by a specific instance is specified by this or any constructor that takes a <xref:System.ServiceModel.Discovery.DiscoveryVersion> parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,10 +105,10 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.AnnouncementEndpoint" /> class that supports the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> with the specified binding and address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> supports two discovery protocols versions: WS-Discovery April 2005 and WS-Discovery July 2008. The version supported by a specific instance is specified by this or any constructor that takes a <xref:System.ServiceModel.Discovery.DiscoveryVersion> parameter.  
-  
+<xref:System.ServiceModel.Discovery.DiscoveryEndpoint> supports two discovery protocols versions: WS-Discovery April 2005 and WS-Discovery July 2008. The version supported by a specific instance is specified by this or any constructor that takes a <xref:System.ServiceModel.Discovery.DiscoveryVersion> parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,10 +148,10 @@
         <value>A <see cref="T:System.TimeSpan" /> instance that contains the maximum announcement delay.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is a <xref:System.TimeSpan> that specifies a small, random delay to prevent network storms when a network goes out and all services come back online at the same time. See the [WS-Discovery April 2005 specification](http://go.microsoft.com/fwlink/?LinkId=127029) section 2.4 Protocol Assignments for more details.  
-  
+This value is a <xref:System.TimeSpan> that specifies a small, random delay to prevent network storms when a network goes out and all services come back online at the same time. See the [WS-Discovery April 2005 specification](http://go.microsoft.com/fwlink/?LinkId=127029) section 2.4 Protocol Assignments for more details.  
+ 
  ]]></format>
         </remarks>
       </Docs>

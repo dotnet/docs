@@ -22,10 +22,10 @@
     <summary>Represents the method that will handle the <see cref="E:System.Configuration.ApplicationSettingsBase.SettingChanging" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> event occurs before the value of an application settings property is changed, typically through a call to the <xref:System.Configuration.ApplicationSettingsBase.Item%2A> method. <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> can be canceled through the <xref:System.Configuration.SettingChangingEventArgs> event data class.  
-  
+The <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> event occurs before the value of an application settings property is changed, typically through a call to the <xref:System.Configuration.ApplicationSettingsBase.Item%2A> method. <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> can be canceled through the <xref:System.Configuration.SettingChangingEventArgs> event data class.  
+ 
  ]]></format>
     </remarks>
   </Docs>

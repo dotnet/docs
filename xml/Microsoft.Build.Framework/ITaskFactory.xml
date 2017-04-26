@@ -119,12 +119,12 @@
         <returns>A value indicating whether initialization was successful.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The MSBuild engine calls this method to initialize the factory. After initialization, the factory can be asked whether or not task names can be created by the factory.  
-  
- The `taskFactoryLoggingHost` will log messages in the context of the target where the task is first used.  
-  
+The MSBuild engine calls this method to initialize the factory. After initialization, the factory can be asked whether or not task names can be created by the factory.  
+ 
+The `taskFactoryLoggingHost` will log messages in the context of the target where the task is first used.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,22 +19,22 @@
     <summary>A block-level flow content element used for grouping other <see cref="T:System.Windows.Documents.Block" /> elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Content Model:**  <xref:System.Windows.Documents.Section> enforces a strong content model for child content. Child elements contained in a <xref:System.Windows.Documents.Section> element must be derived from <xref:System.Windows.Documents.Block>.  Valid child elements include:  
-  
+**Content Model:**  <xref:System.Windows.Documents.Section> enforces a strong content model for child content. Child elements contained in a <xref:System.Windows.Documents.Section> element must be derived from <xref:System.Windows.Documents.Block>.  Valid child elements include:  
+ 
 -   <xref:System.Windows.Documents.BlockUIContainer>  
-  
+ 
 -   <xref:System.Windows.Documents.List>  
-  
+ 
 -   <xref:System.Windows.Documents.Paragraph>  
-  
+ 
 -   <xref:System.Windows.Documents.Section>  
-  
+ 
 -   <xref:System.Windows.Documents.Table>  
-  
- See [TextElement Content Model Overview](~/docs/framework/wpf/advanced/textelement-content-model-overview.md) for more information on the <xref:System.Windows.Documents.Section> object model.  
-  
+ 
+See [TextElement Content Model Overview](~/docs/framework/wpf/advanced/textelement-content-model-overview.md) for more information on the <xref:System.Windows.Documents.Section> object model.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,13 +71,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Section" /> class, taking a specified <see cref="T:System.Windows.Documents.Block" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.Section" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates usage of this constructor.  
-  
- [!code-csharp[SpanSnippets#_Section_Const1](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_section_const1)]
- [!code-vb[SpanSnippets#_Section_Const1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_section_const1)]  
-  
+The following example demonstrates usage of this constructor.  
+ 
+[!code-csharp[SpanSnippets#_Section_Const1](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_section_const1)]
+[!code-vb[SpanSnippets#_Section_Const1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_section_const1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,10 +106,10 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Documents.BlockCollection> returned by this property to enumerate or manipulate the contents of a <xref:System.Windows.Documents.Section> element.  
-  
+Use the <xref:System.Windows.Documents.BlockCollection> returned by this property to enumerate or manipulate the contents of a <xref:System.Windows.Documents.Section> element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,10 +139,10 @@
         <value>**true** to indicate that a trailing paragraph break should be included; otherwise, **false**.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is only applicable to the root <xref:System.Windows.Documents.Section> element within flow content.  This property has no effect on non-root <xref:System.Windows.Documents.Section> elements contained within flow content.  
-  
+This property is only applicable to the root <xref:System.Windows.Documents.Section> element within flow content.  This property has no effect on non-root <xref:System.Windows.Documents.Section> elements contained within flow content.  
+ 
  ]]></format>
         </remarks>
       </Docs>

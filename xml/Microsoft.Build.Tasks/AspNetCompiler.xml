@@ -72,10 +72,10 @@
           <see langword="true" /> if the <see cref="T:System.Security.AllowPartiallyTrustedCallersAttribute" /> should be applied to the strongly named assembly that Aspnet_compiler.exe generates; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property must be combined with the <xref:Microsoft.Build.Tasks.AspNetCompiler.KeyFile%2A> or <xref:Microsoft.Build.Tasks.AspNetCompiler.KeyContainer%2A> properties.  
-  
+This property must be combined with the <xref:Microsoft.Build.Tasks.AspNetCompiler.KeyFile%2A> or <xref:Microsoft.Build.Tasks.AspNetCompiler.KeyContainer%2A> properties.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -99,10 +99,10 @@
           <see langword="true" /> if the precompiled application will be built clean; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is `true`, any previously compiled components will be recompiled. The default value is `false`.  
-  
+If this property is `true`, any previously compiled components will be recompiled. The default value is `false`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -126,10 +126,10 @@
           <see langword="true" /> if the debug information (.PDB file) is emitted during compilation; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `false`.  
-  
+The default value is `false`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -194,12 +194,12 @@
           <see langword="true" /> if one assembly should be generated for each page in the application; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each assembly is named with the virtual path of the original page unless the name would exceed the operating system limit for file names, in which case a hash is generated and used for the assembly name.  
-  
- You cannot use this property for in-place compilation; in-place compilation honors configuration settings for compilation batch mode.  
-  
+Each assembly is named with the virtual path of the original page unless the name would exceed the operating system limit for file names, in which case a hash is generated and used for the assembly name.  
+ 
+You cannot use this property for in-place compilation; in-place compilation honors configuration settings for compilation batch mode.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -263,10 +263,10 @@
           <see langword="true" /> if the <see cref="T:System.Reflection.AssemblyKeyNameAttribute" /> should be applied to the compiled assembly; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property must be combined with <xref:Microsoft.Build.Tasks.AspNetCompiler.AllowPartiallyTrustedCallers%2A> property.  
-  
+This property must be combined with <xref:Microsoft.Build.Tasks.AspNetCompiler.AllowPartiallyTrustedCallers%2A> property.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -290,10 +290,10 @@
           <see langword="true" /> if the <see cref="T:System.Reflection.AssemblyKeyFileAttribute" /> should be applied to the compiled assembly; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property must be combined with <xref:Microsoft.Build.Tasks.AspNetCompiler.AllowPartiallyTrustedCallers%2A> property.  
-  
+This property must be combined with <xref:Microsoft.Build.Tasks.AspNetCompiler.AllowPartiallyTrustedCallers%2A> property.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -335,10 +335,10 @@
         <value>The physical path of the application to be compiled.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is missing, the IIS metabase is used to locate the application.  
-  
+If this property is missing, the IIS metabase is used to locate the application.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -361,10 +361,10 @@
         <value>Returns the TargetFrameworkMoniker.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only accepts .NET Framework monikers.  
-  
+Only accepts .NET Framework monikers.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -387,10 +387,10 @@
         <value>The physical path to which the application is compiled.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If not specified, the application is precompiled in-place.  
-  
+If not specified, the application is precompiled in-place.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -433,10 +433,10 @@
           <see langword="true" /> if the precompiled application will be updateable; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `false`.  
-  
+The default value is `false`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -480,10 +480,10 @@
         <value>The virtual path of the application to be compiled.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `PhysicalPath` specified, the physical path is used to locate the application. Otherwise, the IIS metabase is used, and the application is assumed to be in the default site.  
-  
+If `PhysicalPath` specified, the physical path is used to locate the application. Otherwise, the IIS metabase is used, and the application is assumed to be in the default site.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

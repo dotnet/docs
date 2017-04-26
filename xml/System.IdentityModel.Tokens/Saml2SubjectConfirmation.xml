@@ -14,10 +14,10 @@
     <summary>Represents the SubjectConfirmation element specified in [Saml2Core, 2.4.1.1].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the element that this class represents, see the SAML V2.0 Core specification.  
-  
+For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmation" /> class with the specified confirmation method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.Saml2SubjectConfirmation.SubjectConfirmationData%2A> property is initialized to `null`.  
-  
+The <xref:System.IdentityModel.Tokens.Saml2SubjectConfirmation.SubjectConfirmationData%2A> property is initialized to `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -92,10 +92,10 @@
         <value>A <see cref="T:System.Uri" /> that represents the reference.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contents of the required Method attribute.  
-  
+The contents of the required Method attribute.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
@@ -137,10 +137,10 @@
         <value>A <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmationData" /> that contains information to be used with the confirmation method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contents of the optional SubjectConfirmationData element.  
-  
+The contents of the optional SubjectConfirmationData element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

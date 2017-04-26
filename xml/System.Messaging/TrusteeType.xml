@@ -13,10 +13,10 @@
     <summary>Specifies the type of a trustee.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A trustee is often a user or group, but it might also be a computer on the network or a recognized domain. When you want to grant or set access rights, specify the trustee type in the <xref:System.Messaging.Trustee.TrusteeType%2A> member of a <xref:System.Messaging.Trustee>.  
-  
+A trustee is often a user or group, but it might also be a computer on the network or a recognized domain. When you want to grant or set access rights, specify the trustee type in the <xref:System.Messaging.Trustee.TrusteeType%2A> member of a <xref:System.Messaging.Trustee>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

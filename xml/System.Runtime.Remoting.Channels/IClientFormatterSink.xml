@@ -24,10 +24,10 @@
     <summary>Marks a sink as a client formatter sink that serializes messages into a stream.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Formatter sinks must implement both <xref:System.Runtime.Remoting.Messaging.IMessageSink> and <xref:System.Runtime.Remoting.Channels.IClientChannelSink>. <xref:System.Runtime.Remoting.Channels.IClientFormatterSink> combines these into one interface.  
-  
+Formatter sinks must implement both <xref:System.Runtime.Remoting.Messaging.IMessageSink> and <xref:System.Runtime.Remoting.Channels.IClientChannelSink>. <xref:System.Runtime.Remoting.Channels.IClientFormatterSink> combines these into one interface.  
+ 
  ]]></format>
     </remarks>
   </Docs>

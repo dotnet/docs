@@ -40,10 +40,10 @@
           <see langword="true" /> if this validated XML node was set as the result of a default being applied during schema validation; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Schema.IXmlSchemaInfo> property does not report document type definition (DTD) defaults  
-  
+The <xref:System.Xml.Schema.IXmlSchemaInfo> property does not report document type definition (DTD) defaults  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,10 +94,10 @@
         <value>An <see cref="T:System.Xml.Schema.XmlSchemaSimpleType" /> object that represents the dynamic schema type for this validated XML node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Schema.IXmlSchemaInfo.MemberType%2A> property is set only if the static type of the XML node is a union type in which case the <xref:System.Xml.Schema.IXmlSchemaInfo.MemberType%2A> property will return the type from the union the XML node validated against.  
-  
+The <xref:System.Xml.Schema.IXmlSchemaInfo.MemberType%2A> property is set only if the static type of the XML node is a union type in which case the <xref:System.Xml.Schema.IXmlSchemaInfo.MemberType%2A> property will return the type from the union the XML node validated against.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
         <value>An <see cref="T:System.Xml.Schema.XmlSchemaType" /> of this validated XML node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The static type of an XML node is the type that was declared in the XSD schema.  
-  
+The static type of an XML node is the type that was declared in the XSD schema.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,10 +200,10 @@
         <value>An <see cref="T:System.Xml.Schema.XmlSchemaValidity" /> value of this validated XML node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The possible <xref:System.Xml.Schema.XmlSchemaValidity> values for this XML node are <xref:System.Xml.Schema.XmlSchemaValidity>, <xref:System.Xml.Schema.XmlSchemaValidity>, and <xref:System.Xml.Schema.XmlSchemaValidity>.  
-  
+The possible <xref:System.Xml.Schema.XmlSchemaValidity> values for this XML node are <xref:System.Xml.Schema.XmlSchemaValidity>, <xref:System.Xml.Schema.XmlSchemaValidity>, and <xref:System.Xml.Schema.XmlSchemaValidity>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

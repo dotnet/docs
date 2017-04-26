@@ -51,10 +51,10 @@
         <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior" /> class using the connection string passed as a parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor internally initializes an instance of the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> object using the connection string.  
-  
+This constructor internally initializes an instance of the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> object using the connection string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,10 +163,10 @@
           <see langword="true" /> if the instance state information is kept in the persistence database; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Keeping instances after completion causes the persistence database to grow rapidly and this affects the performance of the database. You should configure a database purge policy to delete these records periodically to ensure that the performance of the database is at the level that satisfy your performance requirements.  
-  
+Keeping instances after completion causes the persistence database to grow rapidly and this affects the performance of the database. You should configure a database purge policy to delete these records periodically to ensure that the performance of the database is at the level that satisfy your performance requirements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -207,16 +207,16 @@
         <value>The action a service host should take when receiving a <see cref="T:System.Runtime.DurableInstancing.InstanceLockedException" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The options allowed for this field are: None, Basic Retry, and Aggressive Retry. The default value is None. The following list provides you with the descriptions for these three options:  
-  
+The options allowed for this field are: None, Basic Retry, and Aggressive Retry. The default value is None. The following list provides you with the descriptions for these three options:  
+ 
 -   None. The service host does not attempt to lock the instance and passes the <xref:System.Runtime.DurableInstancing.InstanceLockedException> to the caller.  
-  
+ 
 -   Basic Retry. The service host reattempts to lock the instance with a linear retry interval and passes the exception to the caller at the end of the sequence.  
-  
+ 
 -   Aggressive Retry. The service host reattempts to lock the instance with an exponentially increasing delay and passes the <xref:System.Runtime.DurableInstancing.InstanceLockedException> to the caller at the end of the sequence.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

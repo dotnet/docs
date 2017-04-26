@@ -14,10 +14,10 @@
     <summary>Represents a group of annotations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup> class represents a collection of annotations. This class can be used to manipulate annotations relative to each other.  
-  
+The <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup> class represents a collection of annotations. This class can be used to manipulate annotations relative to each other.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@
         <value>A <see cref="T:System.Drawing.ContentAlignment" /> value that represents the content alignment of an annotation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used to align text for <xref:System.Windows.Forms.DataVisualization.Charting.TextAnnotation>, <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation>, <xref:System.Windows.Forms.DataVisualization.Charting.EllipseAnnotation> and <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation> objects, and to align a nonscaled image inside an <xref:System.Windows.Forms.DataVisualization.Charting.ImageAnnotation> object.  
-  
+This property is used to align text for <xref:System.Windows.Forms.DataVisualization.Charting.TextAnnotation>, <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation>, <xref:System.Windows.Forms.DataVisualization.Charting.EllipseAnnotation> and <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation> objects, and to align a nonscaled image inside an <xref:System.Windows.Forms.DataVisualization.Charting.ImageAnnotation> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,10 +239,10 @@
         <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AnnotationCollection" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that the coordinates of all annotations in the group are relative to the group annotation.  
-  
+Note that the coordinates of all annotations in the group are relative to the group annotation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -278,10 +278,10 @@
         <value>The annotation type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used to get the name of each annotation type, for example. Line, Rectangle, Ellipse, and so forth.  
-  
+This property is used to get the name of each annotation type, for example. Line, Rectangle, Ellipse, and so forth.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -352,10 +352,10 @@
         <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> value used to draw the background of an annotation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two colors are used to draw the gradient, <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackColor%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackSecondaryColor%2A>.  
-  
+Two colors are used to draw the gradient, <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackColor%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackSecondaryColor%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -391,10 +391,10 @@
         <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> value used to draw the background of an annotation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two colors are used to draw the hatching, <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackColor%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackSecondaryColor%2A>.  
-  
+Two colors are used to draw the hatching, <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackColor%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackSecondaryColor%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -433,10 +433,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value used to draw the background with hatching or gradient fill.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A secondary color is used with <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackColor%2A> when <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackHatchStyle%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackGradientStyle%2A> are used.  
-  
+A secondary color is used with <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackColor%2A> when <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackHatchStyle%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackGradientStyle%2A> are used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -469,12 +469,12 @@
         <value>A <see langword="string" /> that represents the name of an existing chart area.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a chart area name is specified, the annotation will only be drawn inside the plotting area of that chart area. All parts of the annotation outside of the plotting area will be clipped.  
-  
- To disable chart area clipping, set this property to <xref:System.Double.NaN> or an empty string.  
-  
+If a chart area name is specified, the annotation will only be drawn inside the plotting area of that chart area. All parts of the annotation outside of the plotting area will be clipped.  
+ 
+To disable chart area clipping, set this property to <xref:System.Double.NaN> or an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -609,12 +609,12 @@
           <see langword="True" /> if the <see cref="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Width" /> and <see cref="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Height" /> of an annotation are always in chart relative coordinates, otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The height and width of an annotation may be set in relative chart or in axes coordinates. By default, relative chart coordinates are used.  
-  
- To use axes coordinates, set the <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.IsSizeAlwaysRelative%2A> property to `false`. Then either anchor the annotation to a data point or set the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisY%2A> properties.  
-  
+The height and width of an annotation may be set in relative chart or in axes coordinates. By default, relative chart coordinates are used.  
+ 
+To use axes coordinates, set the <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.IsSizeAlwaysRelative%2A> property to `false`. Then either anchor the annotation to a data point or set the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisY%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>

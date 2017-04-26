@@ -19,13 +19,13 @@
     <summary>Performs symmetric encryption and decryption using the Cryptographic Application Programming Interfaces (CAPI) implementation of the Advanced Encryption Standard (AES) algorithm.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to encrypt and decrypt sample data using the <xref:System.Security.Cryptography.AesCryptoServiceProvider> class.  
-  
- [!code-csharp[AesCryptoServProvider#1](~/samples/snippets/csharp/VS_Snippets_CLR/aescryptoservprovider/cs/program.cs#1)]
- [!code-vb[AesCryptoServProvider#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/aescryptoservprovider/vb/program.vb#1)]  
-  
+The following example demonstrates how to encrypt and decrypt sample data using the <xref:System.Security.Cryptography.AesCryptoServiceProvider> class.  
+ 
+[!code-csharp[AesCryptoServProvider#1](~/samples/snippets/csharp/VS_Snippets_CLR/aescryptoservprovider/cs/program.cs#1)]
+[!code-vb[AesCryptoServProvider#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/aescryptoservprovider/vb/program.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -104,13 +104,13 @@
         <returns>A symmetric AES decryptor object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor%2A?displayProperty=fullName> method to decrypt an encrypted message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesCryptoServiceProvider> class.  
-  
- [!code-csharp[AesCryptoServProvider#3](~/samples/snippets/csharp/VS_Snippets_CLR/aescryptoservprovider/cs/program.cs#3)]
- [!code-vb[AesCryptoServProvider#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/aescryptoservprovider/vb/program.vb#3)]  
-  
+The following example shows how to use the <xref:System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor%2A?displayProperty=fullName> method to decrypt an encrypted message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesCryptoServiceProvider> class.  
+ 
+[!code-csharp[AesCryptoServProvider#3](~/samples/snippets/csharp/VS_Snippets_CLR/aescryptoservprovider/cs/program.cs#3)]
+[!code-vb[AesCryptoServProvider#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/aescryptoservprovider/vb/program.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -171,18 +171,18 @@
         <returns>A symmetric AES encryptor object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See the code examples in the <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes%2A> and <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizes%2A> properties to determine the size of the `key` and `iv` parameters.  
+See the code examples in the <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes%2A> and <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizes%2A> properties to determine the size of the `key` and `iv` parameters.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Security.Cryptography.AesCryptoServiceProvider.CreateEncryptor%2A?displayProperty=fullName> method to encrypt a message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesCryptoServiceProvider> class.  
-  
- [!code-csharp[AesCryptoServProvider#2](~/samples/snippets/csharp/VS_Snippets_CLR/aescryptoservprovider/cs/program.cs#2)]
- [!code-vb[AesCryptoServProvider#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/aescryptoservprovider/vb/program.vb#2)]  
-  
+The following example shows how to use the <xref:System.Security.Cryptography.AesCryptoServiceProvider.CreateEncryptor%2A?displayProperty=fullName> method to encrypt a message. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AesCryptoServiceProvider> class.  
+ 
+[!code-csharp[AesCryptoServProvider#2](~/samples/snippets/csharp/VS_Snippets_CLR/aescryptoservprovider/cs/program.cs#2)]
+[!code-vb[AesCryptoServProvider#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/aescryptoservprovider/vb/program.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> or <paramref name="iv" /> parameter is <see langword="null" />.</exception>
@@ -349,10 +349,10 @@
         <value>The size, in bits, of the key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The minimum size of the key is 128 bits, and the maximum size is 256 bits.  
-  
+The minimum size of the key is 128 bits, and the maximum size is 256 bits.  
+ 
  ]]></format>
         </remarks>
       </Docs>

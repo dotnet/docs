@@ -14,12 +14,12 @@
     <summary>The exception that is thrown when the <see cref="M:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadFields" /> method cannot parse a row using the specified format.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Check to ensure that the `TextFieldType` and `Delimiter` parameters are defined properly.  
-  
- If the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadFields%2A> method cannot parse a row using the specified format, the <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exception is thrown. The exception contains the line number of the malformed line.  
-  
+Check to ensure that the `TextFieldType` and `Delimiter` parameters are defined properly.  
+ 
+If the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadFields%2A> method cannot parse a row using the specified format, the <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exception is thrown. The exception contains the line number of the malformed line.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,17 +38,17 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.FileIO.MalformedLineException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The exception indicates that the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadFields%2A> method cannot parse a row using the specified format.  
-  
- The following table shows the initial property values for an instance of <xref:Microsoft.VisualBasic.FileIO.MalformedLineException>.  
-  
+The exception indicates that the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadFields%2A> method cannot parse a row using the specified format.  
+ 
+The following table shows the initial property values for an instance of <xref:Microsoft.VisualBasic.FileIO.MalformedLineException>.  
+ 
 |Property|Value|  
 |-|-|  
 |<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
 |<xref:System.Exception.Message%2A>|The localized error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -70,17 +70,17 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.FileIO.MalformedLineException" /> class with a specified error message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> inherits from the <xref:System.Exception> class. This constructor sets the properties of the <xref:System.Exception> object as shown in the following table.  
-  
+The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ 
+<xref:Microsoft.VisualBasic.FileIO.MalformedLineException> inherits from the <xref:System.Exception> class. This constructor sets the properties of the <xref:System.Exception> object as shown in the following table.  
+ 
 |Property|Value|  
 |-|-|  
 |<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic)|  
 |<xref:System.Exception.Message%2A>|The `message` string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,10 +109,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.FileIO.MalformedLineException" /> class with serialized data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.  
-  
+This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,19 +136,19 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.FileIO.MalformedLineException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
-  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or a null reference if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.ApplicationException>.  
-  
+The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+ 
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or a null reference if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.ApplicationException>.  
+ 
 |Property|Value|  
 |-|-|  
 |<xref:System.Exception.InnerException%2A>|The `innerException` reference.|  
 |<xref:System.Exception.Message%2A>|The `message` string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,17 +172,17 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.FileIO.MalformedLineException" /> class with a specified error message and a line number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture. The `lineNumber` parameter initializes the <xref:Microsoft.VisualBasic.FileIO.MalformedLineException.LineNumber%2A> property.  
-  
- <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> inherits from the <xref:System.Exception>. This constructor sets the properties of the <xref:System.Exception> object as shown in the following table.  
-  
+The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture. The `lineNumber` parameter initializes the <xref:Microsoft.VisualBasic.FileIO.MalformedLineException.LineNumber%2A> property.  
+ 
+<xref:Microsoft.VisualBasic.FileIO.MalformedLineException> inherits from the <xref:System.Exception>. This constructor sets the properties of the <xref:System.Exception> object as shown in the following table.  
+ 
 |Property|Value|  
 |-|-|  
 |<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic)|  
 |<xref:System.Exception.Message%2A>|The `message` string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,19 +208,19 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.FileIO.MalformedLineException" /> class with a specified error message, a line number, and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture. The `lineNumber` parameter initializes the <xref:Microsoft.VisualBasic.FileIO.MalformedLineException.LineNumber%2A> property.  
-  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or a null reference if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.ApplicationException>.  
-  
+The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture. The `lineNumber` parameter initializes the <xref:Microsoft.VisualBasic.FileIO.MalformedLineException.LineNumber%2A> property.  
+ 
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or a null reference if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.ApplicationException>.  
+ 
 |Property|Value|  
 |-|-|  
 |<xref:System.Exception.InnerException%2A>|The `innerException` reference.|  
 |<xref:System.Exception.Message%2A>|The `message` string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,10 +255,10 @@
         <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with information about the exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method sets a <xref:System.Runtime.Serialization.SerializationInfo> object with all the exception object data targeted for serialization. During deserialization, the exception is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> transmitted over the stream.  
-  
+This method sets a <xref:System.Runtime.Serialization.SerializationInfo> object with all the exception object data targeted for serialization. During deserialization, the exception is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> transmitted over the stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -285,10 +285,10 @@
         <value>The line number of the malformed line.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadFields%2A> method cannot parse a row using the specified format, the <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exception is thrown. The exception contains the line number of the malformed line.  
-  
+If the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadFields%2A> method cannot parse a row using the specified format, the <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exception is thrown. The exception contains the line number of the malformed line.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,16 +311,16 @@
         <returns>A string representation of the current exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.VisualBasic.FileIO.MalformedLineException.ToString%2A> returns a representation of the current exception that is intended to be understood by humans. Where the exception contains culture-sensitive data, the string representation returned by <xref:Microsoft.VisualBasic.FileIO.MalformedLineException.ToString%2A> is required to take into account the current system culture. Although there are no exact requirements for the format of the returned string, it should attempt to reflect the value of the object as perceived by the user.  
-  
- The default implementation of <xref:Microsoft.VisualBasic.FileIO.MalformedLineException.ToString%2A> obtains the name of the class that threw the current exception, the message, the result of calling <xref:Microsoft.VisualBasic.FileIO.MalformedLineException.ToString%2A> on the inner exception, the result of calling <xref:System.Environment.StackTrace%2A>, and the line number of the malformed line If any of these members is a null reference (`Nothing` in Visual Basic), its value is not included in the returned string.  
-  
- If there is no error message or if it is an empty string (""), then no error message is returned. The name of the inner exception and the stack trace are returned only if they are not a null reference (`Nothing` in Visual Basic).  
-  
- This method overrides <xref:System.Exception.ToString%2A?displayProperty=fullName>.  
-  
+<xref:Microsoft.VisualBasic.FileIO.MalformedLineException.ToString%2A> returns a representation of the current exception that is intended to be understood by humans. Where the exception contains culture-sensitive data, the string representation returned by <xref:Microsoft.VisualBasic.FileIO.MalformedLineException.ToString%2A> is required to take into account the current system culture. Although there are no exact requirements for the format of the returned string, it should attempt to reflect the value of the object as perceived by the user.  
+ 
+The default implementation of <xref:Microsoft.VisualBasic.FileIO.MalformedLineException.ToString%2A> obtains the name of the class that threw the current exception, the message, the result of calling <xref:Microsoft.VisualBasic.FileIO.MalformedLineException.ToString%2A> on the inner exception, the result of calling <xref:System.Environment.StackTrace%2A>, and the line number of the malformed line If any of these members is a null reference (`Nothing` in Visual Basic), its value is not included in the returned string.  
+ 
+If there is no error message or if it is an empty string (""), then no error message is returned. The name of the inner exception and the stack trace are returned only if they are not a null reference (`Nothing` in Visual Basic).  
+ 
+This method overrides <xref:System.Exception.ToString%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

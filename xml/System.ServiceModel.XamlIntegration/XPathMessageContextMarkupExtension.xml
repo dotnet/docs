@@ -19,10 +19,10 @@
     <summary>Provides an extension of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageContext" /> to contain namespaces when serializing XPath message queries into XAML.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used in conjunction with the <xref:System.ServiceModel.XamlIntegration.XPathMessageContextTypeConverter> to convert an <xref:System.ServiceModel.Dispatcher.XPathMessageContext> into the <xref:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension> type. That class converts the XPath query context information from an XML file into a format that can be serialized as XAML.  
-  
+This class is used in conjunction with the <xref:System.ServiceModel.XamlIntegration.XPathMessageContextTypeConverter> to convert an <xref:System.ServiceModel.Dispatcher.XPathMessageContext> into the <xref:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension> type. That class converts the XPath query context information from an XML file into a format that can be serialized as XAML.  
+ 
  ]]></format>
     </remarks>
   </Docs>

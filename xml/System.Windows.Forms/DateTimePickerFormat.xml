@@ -13,22 +13,22 @@
     <summary>Specifies the date and time format the <see cref="T:System.Windows.Forms.DateTimePicker" /> control displays.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used by members such as <xref:System.Windows.Forms.DateTimePicker.Format%2A?displayProperty=fullName>.  
-  
+This enumeration is used by members such as <xref:System.Windows.Forms.DateTimePicker.Format%2A?displayProperty=fullName>.  
+ 
 > [!NOTE]
 >  The actual date/time formats are determined by the date, time, and regional settings set in the user's operating system.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates initializing a <xref:System.Windows.Forms.DateTimePicker> object by setting the <xref:System.Windows.Forms.DateTimePicker.Format%2A> to a <xref:System.Windows.Forms.DateTimePickerFormat> value. To run this example paste the following code in a form and call `InitializeDateTimePicker` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
-  
- [!code-cpp[System.Windows.Forms.DateTimePicker#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DateTimePicker/CPP/form1.cpp#1)]
- [!code-csharp[System.Windows.Forms.DateTimePicker#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DateTimePicker/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.DateTimePicker#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DateTimePicker/VB/form1.vb#1)]  
-  
+The following code example demonstrates initializing a <xref:System.Windows.Forms.DateTimePicker> object by setting the <xref:System.Windows.Forms.DateTimePicker.Format%2A> to a <xref:System.Windows.Forms.DateTimePickerFormat> value. To run this example paste the following code in a form and call `InitializeDateTimePicker` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+ 
+[!code-cpp[System.Windows.Forms.DateTimePicker#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DateTimePicker/CPP/form1.cpp#1)]
+[!code-csharp[System.Windows.Forms.DateTimePicker#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DateTimePicker/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.DateTimePicker#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DateTimePicker/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

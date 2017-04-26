@@ -19,13 +19,13 @@
     <summary>Subscribes to temporary event notifications based on a specified *event query*.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
-  
- [!code-csharp[wminet_ManagementEventWatcher#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher/cs/ManagementEventWatcher.cs#1)]
- [!code-vb[wminet_ManagementEventWatcher#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher/vb/ManagementEventWatcher.vb#1)]  
-  
+The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ 
+[!code-csharp[wminet_ManagementEventWatcher#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher/cs/ManagementEventWatcher.cs#1)]
+[!code-vb[wminet_ManagementEventWatcher#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher/vb/ManagementEventWatcher.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,20 +44,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementEventWatcher" /> class. For further initialization, set the properties on the object. This is the default constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
-  
- [!code-csharp[wminet_ManagementEventWatcher()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher()/cs/ManagementEventWatcher().cs#1)]
- [!code-vb[wminet_ManagementEventWatcher()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher()/vb/ManagementEventWatcher().vb#1)]  
-  
+The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ 
+[!code-csharp[wminet_ManagementEventWatcher()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher()/cs/ManagementEventWatcher().cs#1)]
+[!code-vb[wminet_ManagementEventWatcher()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher()/vb/ManagementEventWatcher().vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,21 +79,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementEventWatcher" /> class when given a WMI *event query*.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The namespace in which the watcher will be listening for events is the default namespace that is currently set.  
-  
+The namespace in which the watcher will be listening for events is the default namespace that is currently set.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- In this code example, the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
-  
- [!code-csharp[wminet_ManagementEventWatcher(E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(E)/cs/ManagementEventWatcher(E).cs#1)]
- [!code-vb[wminet_ManagementEventWatcher(E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(E)/vb/ManagementEventWatcher(E).vb#1)]  
-  
+In this code example, the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ 
+[!code-csharp[wminet_ManagementEventWatcher(E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(E)/cs/ManagementEventWatcher(E).cs#1)]
+[!code-vb[wminet_ManagementEventWatcher(E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(E)/vb/ManagementEventWatcher(E).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,21 +115,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementEventWatcher" /> class when given a WMI *event query* in the form of a string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The namespace in which the watcher will be listening for events is the default namespace that is currently set.  
-  
+The namespace in which the watcher will be listening for events is the default namespace that is currently set.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
-  
- [!code-csharp[wminet_ManagementEventWatcher(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(S)/cs/ManagementEventWatcher(S).cs#1)]
- [!code-vb[wminet_ManagementEventWatcher(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(S)/vb/ManagementEventWatcher(S).vb#1)]  
-  
+The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ 
+[!code-csharp[wminet_ManagementEventWatcher(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(S)/cs/ManagementEventWatcher(S).cs#1)]
+[!code-vb[wminet_ManagementEventWatcher(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(S)/vb/ManagementEventWatcher(S).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,20 +153,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementEventWatcher" /> class that listens for events conforming to the given WMI *event query*.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- In this code example, the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
-  
- [!code-csharp[wminet_ManagementEventWatcher(M_E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(M_E)/cs/ManagementEventWatcher(M_E).cs#1)]
- [!code-vb[wminet_ManagementEventWatcher(M_E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(M_E)/vb/ManagementEventWatcher(M_E).vb#1)]  
-  
+In this code example, the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ 
+[!code-csharp[wminet_ManagementEventWatcher(M_E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(M_E)/cs/ManagementEventWatcher(M_E).cs#1)]
+[!code-vb[wminet_ManagementEventWatcher(M_E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(M_E)/vb/ManagementEventWatcher(M_E).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,20 +190,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementEventWatcher" /> class that listens for events conforming to the given WMI *event query*. For this variant, the query and the scope are specified as strings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
-  
- [!code-csharp[wminet_ManagementEventWatcher(S_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(S_S)/cs/ManagementEventWatcher(S_S).cs#1)]
- [!code-vb[wminet_ManagementEventWatcher(S_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(S_S)/vb/ManagementEventWatcher(S_S).vb#1)]  
-  
+The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ 
+[!code-csharp[wminet_ManagementEventWatcher(S_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(S_S)/cs/ManagementEventWatcher(S_S).cs#1)]
+[!code-vb[wminet_ManagementEventWatcher(S_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(S_S)/vb/ManagementEventWatcher(S_S).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,20 +229,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementEventWatcher" /> class that listens for events conforming to the given WMI event query, according to the specified options. For this variant, the query and the scope are specified objects. The options object can specify options such as time-out and context information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
-  
- [!code-csharp[wminet_ManagementEventWatcher(M_E_E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(M_E_E)/cs/ManagementEventWatcher(M_E_E).cs#1)]
- [!code-vb[wminet_ManagementEventWatcher(M_E_E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(M_E_E)/vb/ManagementEventWatcher(M_E_E).vb#1)]  
-  
+The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ 
+[!code-csharp[wminet_ManagementEventWatcher(M_E_E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(M_E_E)/cs/ManagementEventWatcher(M_E_E).cs#1)]
+[!code-vb[wminet_ManagementEventWatcher(M_E_E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(M_E_E)/vb/ManagementEventWatcher(M_E_E).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -268,20 +268,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementEventWatcher" /> class that listens for events conforming to the given WMI *event query*, according to the specified options. For this variant, the query and the scope are specified as strings. The options object can specify options such as a time-out and context information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
-  
- [!code-csharp[wminet_ManagementEventWatcher(S_S_E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(S_S_E)/cs/ManagementEventWatcher(S_S_E).cs#1)]
- [!code-vb[wminet_ManagementEventWatcher(S_S_E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(S_S_E)/vb/ManagementEventWatcher(S_S_E).vb#1)]  
-  
+The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ 
+[!code-csharp[wminet_ManagementEventWatcher(S_S_E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(S_S_E)/cs/ManagementEventWatcher(S_S_E).cs#1)]
+[!code-vb[wminet_ManagementEventWatcher(S_S_E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher(S_S_E)/vb/ManagementEventWatcher(S_S_E).vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -302,20 +302,20 @@
         <summary>Occurs when a new event arrives.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Event Data  
- The event handler receives an argument of type <xref:System.Management.EventArrivedEventArgs> containing data related to this event. The following <xref:System.Management.EventArrivedEventArgs> properties provide information specific to this event.  
-  
+The event handler receives an argument of type <xref:System.Management.EventArrivedEventArgs> containing data related to this event. The following <xref:System.Management.EventArrivedEventArgs> properties provide information specific to this event.  
+ 
 |Property|Description|  
 |--------------|-----------------|  
 |<xref:System.Management.ManagementEventArgs.Context%2A> (inherited from <xref:System.Management.ManagementEventArgs>)|Gets the operation context echoed back from the operation that triggered the event.|  
 |<xref:System.Management.EventArrivedEventArgs.NewEvent%2A>|Gets the WMI event that was delivered.|  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -337,12 +337,12 @@
         <summary>Ensures that outstanding calls are cleared. This is the destructor for the object. In C#, finalizers are expressed using destructor syntax.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -364,23 +364,23 @@
         <value>Returns an <see cref="T:System.Management.EventWatcherOptions" /> that contains the event options used to watch for events.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- The options used to watch for events.  
-  
+The options used to watch for events.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
-  
- [!code-csharp[wminet_ManagementEventWatcher_Options#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Options/cs/ManagementEventWatcher_Options.cs#1)]
- [!code-vb[wminet_ManagementEventWatcher_Options#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Options/vb/ManagementEventWatcher_Options.vb#1)]  
-  
+The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ 
+[!code-csharp[wminet_ManagementEventWatcher_Options#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Options/cs/ManagementEventWatcher_Options.cs#1)]
+[!code-vb[wminet_ManagementEventWatcher_Options#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Options/vb/ManagementEventWatcher_Options.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -402,23 +402,23 @@
         <value>Returns an <see cref="T:System.Management.EventQuery" /> that contains the query to apply to events.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- The criteria to apply to the events, which is equal to the *event query*.  
-  
+The criteria to apply to the events, which is equal to the *event query*.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
-  
- [!code-csharp[wminet_ManagementEventWatcher_Query#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Query/cs/ManagementEventWatcher_Query.cs#1)]
- [!code-vb[wminet_ManagementEventWatcher_Query#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Query/vb/ManagementEventWatcher_Query.vb#1)]  
-  
+The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ 
+[!code-csharp[wminet_ManagementEventWatcher_Query#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Query/cs/ManagementEventWatcher_Query.cs#1)]
+[!code-vb[wminet_ManagementEventWatcher_Query#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Query/vb/ManagementEventWatcher_Query.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -440,23 +440,23 @@
         <value>Returns a <see cref="T:System.Management.ManagementScope" /> that contains the scope the in which to watch for events.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- The scope in which to watch for events (namespace or scope).  
-  
+The scope in which to watch for events (namespace or scope).  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
-  
- [!code-csharp[wminet_ManagementEventWatcher_Scope#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Scope/cs/ManagementEventWatcher_Scope.cs#1)]
- [!code-vb[wminet_ManagementEventWatcher_Scope#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Scope/vb/ManagementEventWatcher_Scope.vb#1)]  
-  
+The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ 
+[!code-csharp[wminet_ManagementEventWatcher_Scope#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Scope/cs/ManagementEventWatcher_Scope.cs#1)]
+[!code-vb[wminet_ManagementEventWatcher_Scope#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Scope/vb/ManagementEventWatcher_Scope.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -478,12 +478,12 @@
         <summary>Subscribes to events with the given query and delivers them, asynchronously, through the <see cref="E:System.Management.ManagementEventWatcher.EventArrived" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -505,20 +505,20 @@
         <summary>Cancels the subscription whether it is synchronous or asynchronous.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
-  
- [!code-csharp[wminet_ManagementEventWatcher_Stop#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Stop/cs/ManagementEventWatcher_Stop.cs#1)]
- [!code-vb[wminet_ManagementEventWatcher_Stop#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Stop/vb/ManagementEventWatcher_Stop.vb#1)]  
-  
+The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ 
+[!code-csharp[wminet_ManagementEventWatcher_Stop#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Stop/cs/ManagementEventWatcher_Stop.cs#1)]
+[!code-vb[wminet_ManagementEventWatcher_Stop#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_Stop/vb/ManagementEventWatcher_Stop.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -539,20 +539,20 @@
         <summary>Occurs when a subscription is canceled.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Event Data  
- The event handler receives an argument of type <xref:System.Management.StoppedEventArgs> containing data related to this event. The following <xref:System.Management.StoppedEventArgs> properties provide information specific to this event.  
-  
+The event handler receives an argument of type <xref:System.Management.StoppedEventArgs> containing data related to this event. The following <xref:System.Management.StoppedEventArgs> properties provide information specific to this event.  
+ 
 |Property|Description|  
 |--------------|-----------------|  
 |<xref:System.Management.ManagementEventArgs.Context%2A> (inherited from <xref:System.Management.ManagementEventArgs>)|Gets the operation context echoed back from the operation that triggered the event.|  
 |<xref:System.Management.StoppedEventArgs.Status%2A>|Gets the completion status of the operation.|  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -575,21 +575,21 @@
         <returns>A <see cref="T:System.Management.ManagementBaseObject" /> representing the newly arrived event.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the event watcher object contains options with a specified time-out, the API will wait for the next event only for the specified amount of time; otherwise, the API will be blocked until the next event occurs.  
-  
+If the event watcher object contains options with a specified time-out, the API will wait for the next event only for the specified amount of time; otherwise, the API will be blocked until the next event occurs.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
-  
- [!code-csharp[wminet_ManagementEventWatcher_WaitForNextEvent#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_WaitForNextEvent/cs/ManagementEventWatcher_WaitForNextEvent.cs#1)]
- [!code-vb[wminet_ManagementEventWatcher_WaitForNextEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_WaitForNextEvent/vb/ManagementEventWatcher_WaitForNextEvent.vb#1)]  
-  
+The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ 
+[!code-csharp[wminet_ManagementEventWatcher_WaitForNextEvent#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_WaitForNextEvent/cs/ManagementEventWatcher_WaitForNextEvent.cs#1)]
+[!code-vb[wminet_ManagementEventWatcher_WaitForNextEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementEventWatcher_WaitForNextEvent/vb/ManagementEventWatcher_WaitForNextEvent.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

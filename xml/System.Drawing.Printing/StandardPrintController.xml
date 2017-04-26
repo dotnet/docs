@@ -14,12 +14,12 @@
     <summary>Specifies a print controller that sends information to a printer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Drawing.Printing.PrintDocument> uses this class.  
-  
- For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
-  
+<xref:System.Drawing.Printing.PrintDocument> uses this class.  
+ 
+For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,14 +61,14 @@
         <summary>Completes the control sequence that determines when and how to print a page of a document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. If an exception is thrown inside a <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of a <xref:System.Drawing.Printing.PrintDocument>, <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> is not called.  
-  
- <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.StandardPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> method deallocates the object.  
-  
- When <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> is called from a printing context of a <xref:System.Windows.Forms.PrintDialog> a <xref:System.Drawing.Printing.PrintingPermission> of <xref:System.Drawing.Printing.PrintingPermissionLevel> is required. Printing to the default printer requires a <xref:System.Drawing.Printing.PrintingPermission> of <xref:System.Drawing.Printing.PrintingPermissionLevel>. All other calls this method requires a <xref:System.Drawing.Printing.PrintingPermission> of <xref:System.Drawing.Printing.PrintingPermissionLevel>  
-  
+<xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. If an exception is thrown inside a <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of a <xref:System.Drawing.Printing.PrintDocument>, <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> is not called.  
+ 
+<xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.StandardPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> method deallocates the object.  
+ 
+When <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> is called from a printing context of a <xref:System.Windows.Forms.PrintDialog> a <xref:System.Drawing.Printing.PrintingPermission> of <xref:System.Drawing.Printing.PrintingPermissionLevel> is required. Printing to the default printer requires a <xref:System.Drawing.Printing.PrintingPermission> of <xref:System.Drawing.Printing.PrintingPermissionLevel>. All other calls this method requires a <xref:System.Drawing.Printing.PrintingPermission> of <xref:System.Drawing.Printing.PrintingPermissionLevel>  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">The native Win32 Application Programming Interface (API) could not finish writing to a page.</exception>
@@ -97,12 +97,12 @@
         <summary>Completes the control sequence that determines when and how to print a document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> is called immediately after <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event. Even if an uncaught exception was thrown during the printing process, <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> is called.  
-  
- <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.StandardPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> method deallocates the object.  
-  
+<xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> is called immediately after <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event. Even if an uncaught exception was thrown during the printing process, <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> is called.  
+ 
+<xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.StandardPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> method deallocates the object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">The native Win32 Application Programming Interface (API) could not complete the print job.  
@@ -136,12 +136,12 @@
         <returns>A <see cref="T:System.Drawing.Graphics" /> object that represents a page from a <see cref="T:System.Drawing.Printing.PrintDocument" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Drawing.Printing.StandardPrintController.OnStartPage%2A> is called immediately before <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.  
-  
- <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> object used in printing. After <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.StandardPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> method deallocates the object.  
-  
+<xref:System.Drawing.Printing.StandardPrintController.OnStartPage%2A> is called immediately before <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.  
+ 
+<xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> object used in printing. After <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.StandardPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> method deallocates the object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">The native Win32 Application Programming Interface (API) could not prepare the printer driver to accept data.  
@@ -174,14 +174,14 @@
         <summary>Begins the control sequence that determines when and how to print a document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> is called immediately after <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> event.  
-  
- <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> object used in printing. After <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.StandardPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> method deallocates the object.  
-  
- <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> verifies that the printer settings are valid.  
-  
+<xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> is called immediately after <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> event.  
+ 
+<xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> object used in printing. After <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.StandardPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> method deallocates the object.  
+ 
+<xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> verifies that the printer settings are valid.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer settings are not valid.</exception>

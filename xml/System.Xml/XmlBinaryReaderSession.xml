@@ -27,16 +27,16 @@
     <summary>Enables optimized strings to be managed in a dynamic way.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Session objects (this class together with <xref:System.Xml.XmlBinaryWriterSession>) enable dynamic string atomization that can span an entire conversation. These session objects manage dynamic dictionaries of <xref:System.Xml.XmlDictionaryString> instances. For more information about dynamic dictionaries see <xref:System.Xml.XmlDictionary>.  
-  
- Due to asynchronous processing, it is possible for messages that arrive synchronously to be processed in a different order than they order in which they were sent. String atomization that spans messages must ensure the messages are processed in the original order, or the atomized strings must be conveyed using a different mechanism.  
-  
- To use them you create a session object and pass it to the constructor or initializer for a binary XML reader or writer.  
-  
- To reuse a dynamic dictionary simply pass the same session object to all subsequent readers and/or writers.  
-  
+Session objects (this class together with <xref:System.Xml.XmlBinaryWriterSession>) enable dynamic string atomization that can span an entire conversation. These session objects manage dynamic dictionaries of <xref:System.Xml.XmlDictionaryString> instances. For more information about dynamic dictionaries see <xref:System.Xml.XmlDictionary>.  
+ 
+Due to asynchronous processing, it is possible for messages that arrive synchronously to be processed in a different order than they order in which they were sent. String atomization that spans messages must ensure the messages are processed in the original order, or the atomized strings must be conveyed using a different mechanism.  
+ 
+To use them you create a session object and pass it to the constructor or initializer for a binary XML reader or writer.  
+ 
+To reuse a dynamic dictionary simply pass the same session object to all subsequent readers and/or writers.  
+ 
  ]]></format>
     </remarks>
   </Docs>

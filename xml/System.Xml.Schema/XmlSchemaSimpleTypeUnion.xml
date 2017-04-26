@@ -19,23 +19,23 @@
     <summary>Represents the <see langword="union" /> element for simple types from XML Schema as specified by the World Wide Web Consortium (W3C). A <see langword="union" /> datatype can be used to specify the content of a <see langword="simpleType" />. The value of the <see langword="simpleType" /> element must be any one of a set of alternative datatypes specified in the union. Union types are always derived types and must comprise at least two alternative datatypes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A `union` type enables an element or attribute value to be one or more instances of one type drawn from the union of multiple atomic and list types.  
+A `union` type enables an element or attribute value to be one or more instances of one type drawn from the union of multiple atomic and list types.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the use of `XmlSchemaSimpleTypeUnion` class.  
-  
- [!code-cpp[Classic WebData XmlSchemaSimpleTypeUnion Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic Webdata XmlSchemaSimpleTypeUnion Example/CPP/simpletypeunion.cpp#1)]
- [!code-csharp[Classic WebData XmlSchemaSimpleTypeUnion Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic Webdata XmlSchemaSimpleTypeUnion Example/CS/simpletypeunion.cs#1)]
- [!code-vb[Classic WebData XmlSchemaSimpleTypeUnion Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic Webdata XmlSchemaSimpleTypeUnion Example/VB/simpletypeunion.vb#1)]  
-  
- The following XML file is generated for this code example.  
-  
- [!code-xml[Classic WebData XmlSchemaSimpleTypeUnion Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic Webdata XmlSchemaSimpleTypeUnion Example/XML/example.xsd#2)]  
-  
+The following example shows the use of `XmlSchemaSimpleTypeUnion` class.  
+ 
+[!code-cpp[Classic WebData XmlSchemaSimpleTypeUnion Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic Webdata XmlSchemaSimpleTypeUnion Example/CPP/simpletypeunion.cpp#1)]
+[!code-csharp[Classic WebData XmlSchemaSimpleTypeUnion Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic Webdata XmlSchemaSimpleTypeUnion Example/CS/simpletypeunion.cs#1)]
+[!code-vb[Classic WebData XmlSchemaSimpleTypeUnion Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic Webdata XmlSchemaSimpleTypeUnion Example/VB/simpletypeunion.vb#1)]  
+ 
+The following XML file is generated for this code example.  
+ 
+[!code-xml[Classic WebData XmlSchemaSimpleTypeUnion Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic Webdata XmlSchemaSimpleTypeUnion Example/XML/example.xsd#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,10 +87,10 @@
         <value>An array of <see cref="T:System.Xml.Schema.XmlSchemaSimpleType" /> objects representing the type of the <see langword="simpleType" /> element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is a post-schema-compilation-infoset property.  
-  
+This property is a post-schema-compilation-infoset property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

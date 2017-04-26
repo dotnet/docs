@@ -19,26 +19,26 @@
     <summary>Generates mappings to XML schema element declarations, including literal XML Schema Definition (XSD) message parts in a Web Services Description Language (WSDL) document, for .NET Framework types or Web service method information.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlReflectionImporter> class is not used directly. Instead, it is used as follows:  
-  
+The <xref:System.Xml.Serialization.XmlReflectionImporter> class is not used directly. Instead, it is used as follows:  
+ 
 -   By the <xref:System.Web.Services.Description.ServiceDescriptionReflector> class while it creates <xref:System.Web.Services.Description.ServiceDescription> objects from classes that are identified as Web services.  
-  
+ 
 -   By a Web service or client, including during initialization.  
-  
+ 
 -   To initialize an <xref:System.Xml.Serialization.XmlSerializer> object.  
-  
+ 
 -   By the XML Schema Definition tool (Xsd.exe) while the tool generates XML schemas from types in a run-time assembly file.  
-  
+ 
 -   By the Web Services Description Language tool (Wsdl.exe) while the tool generates client proxy classes or abstract server classes from a WSDL document.  
-  
- The <xref:System.Xml.Serialization.XmlReflectionImporter> class is used for Web services when a service or client specifies:  
-  
+ 
+The <xref:System.Xml.Serialization.XmlReflectionImporter> class is used for Web services when a service or client specifies:  
+ 
 -   Literal use, which indicates that the contents of SOAP message parameters and return values (or request and response documents) are literally specified with XML schema definitions.  
-  
+ 
 -   Non-SOAP implementations of Web services using the HTTP-GET and HTTP-POST operations.  
-  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -63,10 +63,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlReflectionImporter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You do not need to create an instance of an <xref:System.Xml.Serialization.XmlReflectionImporter> object directly.  
-  
+You do not need to create an instance of an <xref:System.Xml.Serialization.XmlReflectionImporter> object directly.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -94,10 +94,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlReflectionImporter" /> class using the specified default XML namespace.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is not necessary to create an instance of the <xref:System.Xml.Serialization.XmlReflectionImporter> class directly.  
-  
+It is not necessary to create an instance of the <xref:System.Xml.Serialization.XmlReflectionImporter> class directly.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -125,10 +125,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlReflectionImporter" /> class using the specified XML serialization overrides.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is not necessary to create an instance of the <xref:System.Xml.Serialization.XmlReflectionImporter> class directly.  
-  
+It is not necessary to create an instance of the <xref:System.Xml.Serialization.XmlReflectionImporter> class directly.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -158,10 +158,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlReflectionImporter" /> class using the specified XML serialization overrides and default XML namespace.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is not necessary to create an instance of the <xref:System.Xml.Serialization.XmlReflectionImporter> class directly.  
-  
+It is not necessary to create an instance of the <xref:System.Xml.Serialization.XmlReflectionImporter> class directly.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -200,20 +200,20 @@
         <returns>An <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> with mappings to the element parts of a WSDL message definition.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlReflectionImporter.ImportMembersMapping%2A> method is called while initializing a Web service or client, or reflecting a Web service. It is not necessary to call it directly.  
-  
- The <xref:System.Xml.Serialization.XmlReflectionMember> array parameter can consist of any one of the following:  
-  
+The <xref:System.Xml.Serialization.XmlReflectionImporter.ImportMembersMapping%2A> method is called while initializing a Web service or client, or reflecting a Web service. It is not necessary to call it directly.  
+ 
+The <xref:System.Xml.Serialization.XmlReflectionMember> array parameter can consist of any one of the following:  
+ 
 -   Web service method input parameters.  
-  
+ 
 -   Web service method output parameters, plus the return type, if not void, at index 0.  
-  
+ 
 -   SOAP input headers.  
-  
+ 
 -   SOAP output headers.  
-  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -367,10 +367,10 @@
         <returns>Internal .NET Framework mapping of a type to an XML Schema element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is not necessary to call the <xref:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping%2A> method directly.  
-  
+It is not necessary to call the <xref:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping%2A> method directly.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -404,10 +404,10 @@
         <returns>Internal .NET Framework mapping of a type to an XML Schema element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is not necessary to call the <xref:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping%2A> method directly.  
-  
+It is not necessary to call the <xref:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping%2A> method directly.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -441,10 +441,10 @@
         <returns>An <see cref="T:System.Xml.Serialization.XmlTypeMapping" /> that represents a mapping of a .NET Framework type to an XML Schema element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is not necessary to call the <xref:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping%2A> method directly.  
-  
+It is not necessary to call the <xref:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping%2A> method directly.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -480,10 +480,10 @@
         <returns>An <see cref="T:System.Xml.Serialization.XmlTypeMapping" /> that contains the internal .NET Framework mapping of a type to an XML Schema element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is not necessary to call the <xref:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping%2A> method directly.  
-  
+It is not necessary to call the <xref:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping%2A> method directly.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -514,10 +514,10 @@
         <summary>Includes mappings for a type for later use when import methods are invoked.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is not necessary to call the <xref:System.Xml.Serialization.XmlReflectionImporter.IncludeType%2A> method directly.  
-  
+It is not necessary to call the <xref:System.Xml.Serialization.XmlReflectionImporter.IncludeType%2A> method directly.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

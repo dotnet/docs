@@ -13,10 +13,10 @@
     <summary>Provides enumerated values that are used to set revalidation-specific <see langword="Cache-Control" /> HTTP headers.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpCacheRevalidation> enumeration is used to set revalidation-specific HTTP headers, and is set using the <xref:System.Web.HttpCachePolicy.SetRevalidation%2A> method. If the <xref:System.Web.HttpCachePolicy.SetRevalidation%2A> method is not called, no `Cache-Control` HTTP header is set.  
-  
+The <xref:System.Web.HttpCacheRevalidation> enumeration is used to set revalidation-specific HTTP headers, and is set using the <xref:System.Web.HttpCachePolicy.SetRevalidation%2A> method. If the <xref:System.Web.HttpCachePolicy.SetRevalidation%2A> method is not called, no `Cache-Control` HTTP header is set.  
+ 
  ]]></format>
     </remarks>
   </Docs>

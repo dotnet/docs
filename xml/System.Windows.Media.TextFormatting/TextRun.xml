@@ -14,12 +14,12 @@
     <summary>Represents a sequence of characters that share a single property set.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A text run is a sequence of characters sharing a single property set. Any change to the format, such as font style, foreground color, font family, or any other formatting effect, breaks the text run. The following example illustrates how changes in formatting to a text string results in a series of text runs—each text run has a common set of formatting properties.  
-  
- The <xref:System.Windows.Media.TextFormatting.TextRun> class is the root of a type hierarchy representing several types of text content processed by <xref:System.Windows.Media.TextFormatting.TextFormatter>. Each class that is derived from <xref:System.Windows.Media.TextFormatting.TextRun> represents a distinct type of text content.  
-  
+A text run is a sequence of characters sharing a single property set. Any change to the format, such as font style, foreground color, font family, or any other formatting effect, breaks the text run. The following example illustrates how changes in formatting to a text string results in a series of text runs—each text run has a common set of formatting properties.  
+ 
+The <xref:System.Windows.Media.TextFormatting.TextRun> class is the root of a type hierarchy representing several types of text content processed by <xref:System.Windows.Media.TextFormatting.TextFormatter>. Each class that is derived from <xref:System.Windows.Media.TextFormatting.TextRun> represents a distinct type of text content.  
+ 
 |Class|Description|  
 |-----------|-----------------|  
 |<xref:System.Windows.Media.TextFormatting.TextRun>|Root of the hierarchy. Defines a group of characters that share the same set of character properties.|  
@@ -30,15 +30,15 @@
 |<xref:System.Windows.Media.TextFormatting.TextEndOfSegment>|Defines a segment break marker.|  
 |<xref:System.Windows.Media.TextFormatting.TextHidden>|Defines a range of non-visible characters.|  
 |<xref:System.Windows.Media.TextFormatting.TextModifier>|Defines the beginning of a modification scope.|  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, an override for the <xref:System.Windows.Media.TextFormatting.TextSource.GetTextRun%2A> method is implemented.  
-  
- [!code-csharp[TextFormattingSnippets#TextFormattingSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/TextFormattingSnippets/CSharp/CustomTextClasses.cs#textformattingsnippet4)]
- [!code-vb[TextFormattingSnippets#TextFormattingSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextFormattingSnippets/visualbasic/customtextclasses.vb#textformattingsnippet4)]  
-  
+In the following example, an override for the <xref:System.Windows.Media.TextFormatting.TextSource.GetTextRun%2A> method is implemented.  
+ 
+[!code-csharp[TextFormattingSnippets#TextFormattingSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/TextFormattingSnippets/CSharp/CustomTextClasses.cs#textformattingsnippet4)]
+[!code-vb[TextFormattingSnippets#TextFormattingSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextFormattingSnippets/visualbasic/customtextclasses.vb#textformattingsnippet4)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

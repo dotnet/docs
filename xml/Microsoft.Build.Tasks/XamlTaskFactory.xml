@@ -54,10 +54,10 @@
         <summary>Cleans up any context or state that may have been built up for a given task.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some factories may create an AppDomain as part of an individual task instance. Such factories use this method to shutdown the AppDomain.  
-  
+Some factories may create an AppDomain as part of an individual task instance. Such factories use this method to shutdown the AppDomain.  
+ 
  ]]></format>
         </remarks>
       </Docs>

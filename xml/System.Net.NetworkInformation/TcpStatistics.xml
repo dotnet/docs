@@ -23,20 +23,20 @@
     <summary>Provides Transmission Control Protocol (TCP) statistical data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of this class are returned by the <xref:System.Net.NetworkInformation.IPGlobalProperties.GetTcpIPv4Statistics%2A> and <xref:System.Net.NetworkInformation.IPGlobalProperties.GetTcpIPv6Statistics%2A> methods, to give applications access to TCP traffic information.  
+Instances of this class are returned by the <xref:System.Net.NetworkInformation.IPGlobalProperties.GetTcpIPv4Statistics%2A> and <xref:System.Net.NetworkInformation.IPGlobalProperties.GetTcpIPv6Statistics%2A> methods, to give applications access to TCP traffic information.  
+ 
+The information in this class correlates to the management information objects described in [http://www.ietf.org/rfc/rfc2012.txt](http://www.ietf.org/rfc/rfc2012.txt).  
+ 
   
- The information in this class correlates to the management information objects described in [http://www.ietf.org/rfc/rfc2012.txt](http://www.ietf.org/rfc/rfc2012.txt).  
-  
-   
-  
+ 
 ## Examples  
- The following code example displays the TCP statistics for the specified address family.  
-  
- [!code-cpp[NCLNetInfoReport#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#2)]
- [!code-csharp[NCLNetInfoReport#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#2)]  
-  
+The following code example displays the TCP statistics for the specified address family.  
+ 
+[!code-cpp[NCLNetInfoReport#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#2)]
+[!code-csharp[NCLNetInfoReport#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.TcpStatistics" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor can be called only by classes that derive from the <xref:System.Net.NetworkInformation.TcpStatistics> class.  
-  
+This constructor can be called only by classes that derive from the <xref:System.Net.NetworkInformation.TcpStatistics> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,19 +98,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP connection requests accepted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- IETF RFC 2012 formally defines this value as, "The number of times TCP connections have made a direct transition to the SYN-RCVD state from the LISTEN state."  
+IETF RFC 2012 formally defines this value as, "The number of times TCP connections have made a direct transition to the SYN-RCVD state from the LISTEN state."  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays connection information.  
-  
- [!code-cpp[NCLNetInfo2#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#6)]
- [!code-csharp[NCLNetInfo2#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#6)]
- [!code-vb[NCLNetInfo2#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#6)]  
-  
+The following code example displays connection information.  
+ 
+[!code-cpp[NCLNetInfo2#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#6)]
+[!code-csharp[NCLNetInfo2#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#6)]
+[!code-vb[NCLNetInfo2#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,19 +141,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP connections initiated by clients.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- IETF RFC 2012 formally defines this value as, "The number of times TCP connections have made a direct transition to the SYN-SENT state from the CLOSED state."  
+IETF RFC 2012 formally defines this value as, "The number of times TCP connections have made a direct transition to the SYN-SENT state from the CLOSED state."  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays connection information.  
-  
- [!code-cpp[NCLNetInfo2#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#6)]
- [!code-csharp[NCLNetInfo2#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#6)]
- [!code-vb[NCLNetInfo2#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#6)]  
-  
+The following code example displays connection information.  
+ 
+[!code-cpp[NCLNetInfo2#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#6)]
+[!code-csharp[NCLNetInfo2#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#6)]
+[!code-vb[NCLNetInfo2#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,14 +184,14 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of connections established.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example displays connection information.  
-  
- [!code-cpp[NCLNetInfo2#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#6)]
- [!code-csharp[NCLNetInfo2#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#6)]
- [!code-vb[NCLNetInfo2#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#6)]  
-  
+The following code example displays connection information.  
+ 
+[!code-cpp[NCLNetInfo2#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#6)]
+[!code-csharp[NCLNetInfo2#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#6)]
+[!code-vb[NCLNetInfo2#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,19 +222,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of current TCP connections.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- IETF RFC 2012 formally defines this value as, "The number of TCP connections for which the current state is either ESTABLISHED or CLOSE-WAIT."  
+IETF RFC 2012 formally defines this value as, "The number of TCP connections for which the current state is either ESTABLISHED or CLOSE-WAIT."  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays connection information.  
-  
- [!code-cpp[NCLNetInfo2#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#6)]
- [!code-csharp[NCLNetInfo2#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#6)]
- [!code-vb[NCLNetInfo2#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#6)]  
-  
+The following code example displays connection information.  
+ 
+[!code-cpp[NCLNetInfo2#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#6)]
+[!code-csharp[NCLNetInfo2#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#6)]
+[!code-vb[NCLNetInfo2#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -265,14 +265,14 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP errors received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example displays connection information.  
-  
- [!code-cpp[NCLNetInfo2#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#6)]
- [!code-csharp[NCLNetInfo2#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#6)]
- [!code-vb[NCLNetInfo2#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#6)]  
-  
+The following code example displays connection information.  
+ 
+[!code-cpp[NCLNetInfo2#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#6)]
+[!code-csharp[NCLNetInfo2#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#6)]
+[!code-vb[NCLNetInfo2#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -303,19 +303,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of failed TCP connection attempts.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- IETF RFC 2012 formally defines this value as, "The number of times TCP connections have made a direct transition to the CLOSED state from either the SYN-SENT state or the SYN-RCVD state, plus the number of times TCP connections have made a direct transition to the LISTEN state from the SYN-RCVD state."  
+IETF RFC 2012 formally defines this value as, "The number of times TCP connections have made a direct transition to the CLOSED state from either the SYN-SENT state or the SYN-RCVD state, plus the number of times TCP connections have made a direct transition to the LISTEN state from the SYN-RCVD state."  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays connection information.  
-  
- [!code-cpp[NCLNetInfo2#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#6)]
- [!code-csharp[NCLNetInfo2#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#6)]
- [!code-vb[NCLNetInfo2#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#6)]  
-  
+The following code example displays connection information.  
+ 
+[!code-cpp[NCLNetInfo2#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#6)]
+[!code-csharp[NCLNetInfo2#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#6)]
+[!code-vb[NCLNetInfo2#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -346,19 +346,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP connections that can be supported.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the maximum number of connections is dynamic, this property returns -1.  
+If the maximum number of connections is dynamic, this property returns -1.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays time-out and maximum connection information.  
-  
- [!code-cpp[NCLNetInfo2#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#5)]
- [!code-csharp[NCLNetInfo2#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#5)]
- [!code-vb[NCLNetInfo2#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#5)]  
-  
+The following code example displays time-out and maximum connection information.  
+ 
+[!code-cpp[NCLNetInfo2#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#5)]
+[!code-csharp[NCLNetInfo2#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#5)]
+[!code-vb[NCLNetInfo2#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -389,19 +389,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the maximum number of milliseconds permitted by a TCP implementation for the retransmission time-out value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- TCP starts a retransmission timer when each outbound segment is passed to the network layer (IP). If no acknowledgement is received for the data in the segment before the timer expires, the segment is retransmitted. The timer can be set to any value between the <xref:System.Net.NetworkInformation.TcpStatistics.MinimumTransmissionTimeout%2A> value and the <xref:System.Net.NetworkInformation.TcpStatistics.MaximumTransmissionTimeout%2A> value.  
+TCP starts a retransmission timer when each outbound segment is passed to the network layer (IP). If no acknowledgement is received for the data in the segment before the timer expires, the segment is retransmitted. The timer can be set to any value between the <xref:System.Net.NetworkInformation.TcpStatistics.MinimumTransmissionTimeout%2A> value and the <xref:System.Net.NetworkInformation.TcpStatistics.MaximumTransmissionTimeout%2A> value.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays time-out and maximum connection information.  
-  
- [!code-cpp[NCLNetInfo2#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#5)]
- [!code-csharp[NCLNetInfo2#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#5)]
- [!code-vb[NCLNetInfo2#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#5)]  
-  
+The following code example displays time-out and maximum connection information.  
+ 
+[!code-cpp[NCLNetInfo2#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#5)]
+[!code-csharp[NCLNetInfo2#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#5)]
+[!code-vb[NCLNetInfo2#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -432,19 +432,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the minimum number of milliseconds permitted by a TCP implementation for the retransmission time-out value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- TCP starts a retransmission timer when each outbound segment is passed to the network layer (IP). If no acknowledgement is received for the data in the segment before the timer expires, the segment is retransmitted. The timer The timer can be set to any value between the <xref:System.Net.NetworkInformation.TcpStatistics.MinimumTransmissionTimeout%2A> value and the <xref:System.Net.NetworkInformation.TcpStatistics.MaximumTransmissionTimeout%2A> value.  
+TCP starts a retransmission timer when each outbound segment is passed to the network layer (IP). If no acknowledgement is received for the data in the segment before the timer expires, the segment is retransmitted. The timer The timer can be set to any value between the <xref:System.Net.NetworkInformation.TcpStatistics.MinimumTransmissionTimeout%2A> value and the <xref:System.Net.NetworkInformation.TcpStatistics.MaximumTransmissionTimeout%2A> value.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays time-out and maximum connection information.  
-  
- [!code-cpp[NCLNetInfo2#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#5)]
- [!code-csharp[NCLNetInfo2#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#5)]
- [!code-vb[NCLNetInfo2#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#5)]  
-  
+The following code example displays time-out and maximum connection information.  
+ 
+[!code-cpp[NCLNetInfo2#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#5)]
+[!code-csharp[NCLNetInfo2#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#5)]
+[!code-vb[NCLNetInfo2#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -475,19 +475,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of reset TCP connections.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- IETF RFC 2012 formally defines this value as, "The number of times TCP connections have made a direct transition to the CLOSED state from either the ESTABLISHED state or the CLOSE-WAIT state."  
+IETF RFC 2012 formally defines this value as, "The number of times TCP connections have made a direct transition to the CLOSED state from either the ESTABLISHED state or the CLOSE-WAIT state."  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays connection information.  
-  
- [!code-cpp[NCLNetInfo2#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#6)]
- [!code-csharp[NCLNetInfo2#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#6)]
- [!code-vb[NCLNetInfo2#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#6)]  
-  
+The following code example displays connection information.  
+ 
+[!code-cpp[NCLNetInfo2#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#6)]
+[!code-csharp[NCLNetInfo2#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#6)]
+[!code-vb[NCLNetInfo2#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -518,19 +518,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP segments sent with the reset flag set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- TCP resets are specified using the reset (RST) control bit in the TCP header.  
+TCP resets are specified using the reset (RST) control bit in the TCP header.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays segment information.  
-  
- [!code-cpp[NCLNetInfo2#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#7)]
- [!code-csharp[NCLNetInfo2#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#7)]
- [!code-vb[NCLNetInfo2#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#7)]  
-  
+The following code example displays segment information.  
+ 
+[!code-cpp[NCLNetInfo2#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#7)]
+[!code-csharp[NCLNetInfo2#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#7)]
+[!code-vb[NCLNetInfo2#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -561,19 +561,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP segments received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This data includes segments with errors and segments received on currently established connections.  
+This data includes segments with errors and segments received on currently established connections.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays segment information.  
-  
- [!code-cpp[NCLNetInfo2#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#7)]
- [!code-csharp[NCLNetInfo2#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#7)]
- [!code-vb[NCLNetInfo2#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#7)]  
-  
+The following code example displays segment information.  
+ 
+[!code-cpp[NCLNetInfo2#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#7)]
+[!code-csharp[NCLNetInfo2#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#7)]
+[!code-vb[NCLNetInfo2#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -604,19 +604,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP segments retransmitted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- TCP segments that are not acknowledged as being received at the destination are retransmitted.  
+TCP segments that are not acknowledged as being received at the destination are retransmitted.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays segment information.  
-  
- [!code-cpp[NCLNetInfo2#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#7)]
- [!code-csharp[NCLNetInfo2#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#7)]
- [!code-vb[NCLNetInfo2#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#7)]  
-  
+The following code example displays segment information.  
+ 
+[!code-cpp[NCLNetInfo2#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#7)]
+[!code-csharp[NCLNetInfo2#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#7)]
+[!code-vb[NCLNetInfo2#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -647,19 +647,19 @@
         <value>An <see cref="T:System.Int64" /> value that specifies the total number of TCP segments sent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This data includes segments sent for currently established connections but does not include segments containing only retransmitted octets.  
+This data includes segments sent for currently established connections but does not include segments containing only retransmitted octets.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays segment information.  
-  
- [!code-cpp[NCLNetInfo2#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#7)]
- [!code-csharp[NCLNetInfo2#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#7)]
- [!code-vb[NCLNetInfo2#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#7)]  
-  
+The following code example displays segment information.  
+ 
+[!code-cpp[NCLNetInfo2#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#7)]
+[!code-csharp[NCLNetInfo2#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#7)]
+[!code-vb[NCLNetInfo2#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

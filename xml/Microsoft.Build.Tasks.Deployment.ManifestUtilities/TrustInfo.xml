@@ -70,10 +70,10 @@
         <value>A Boolean value indicating whether the application has permission to call unmanaged code.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- "Application" refers to the application for which the manifest is being read. You can read the deployment manifest using <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A> or <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A>.  
-  
+"Application" refers to the application for which the manifest is being read. You can read the deployment manifest using <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A> or <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
         <value>A Boolean value indicating whether the application is full trust or partial trust.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- "Application" refers to the application for which the manifest is being read. You can read the deployment manifest using <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A> or <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A>.  
-  
+"Application" refers to the application for which the manifest is being read. You can read the deployment manifest using <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A> or <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,14 +138,14 @@
         <value>A Boolean value indicating whether to preserve partial trust permission when the full trust flag is set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Normally when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.IsFullTrust%2A> is set to `True`, all permission settings are deleted. If you want to preserve these settings (typically during design time), you can call this method to persist the permission settings even when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.IsFullTrust%2A> is set to `True`.  
-  
- `PreserveFullTrustPermissionSet` should not be set to `True` for ClickOnce deployments because this violates ClickOnce schema requirements.  
-  
- If this property is set to `False` with full trust specified, then any permissions defined in the permission set object will be dropped on save.  
-  
+Normally when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.IsFullTrust%2A> is set to `True`, all permission settings are deleted. If you want to preserve these settings (typically during design time), you can call this method to persist the permission settings even when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.IsFullTrust%2A> is set to `True`.  
+ 
+`PreserveFullTrustPermissionSet` should not be set to `True` for ClickOnce deployments because this violates ClickOnce schema requirements.  
+ 
+If this property is set to `False` with full trust specified, then any permissions defined in the permission set object will be dropped on save.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
         <summary>Reads the application trust from an XML file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The data stream must contain only a \<TrustInfo> section and no other data.  
-  
+The data stream must contain only a \<TrustInfo> section and no other data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
         <summary>Reads the application trust from an XML file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified string must contain only a \<TrustInfo> section and no other data.  
-  
+The specified string must contain only a \<TrustInfo> section and no other data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,10 +271,10 @@
  "Application" refers to the application for which the manifest is being read (using <see cref="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest(System.IO.Stream)" />).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- "Application" refers to the application for which the manifest is being read. You can read the deployment manifest using <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A> or <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A>.  
-  
+"Application" refers to the application for which the manifest is being read. You can read the deployment manifest using <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A> or <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -318,12 +318,12 @@
         <summary>Writes the application trust to an XML file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method updates only the \<TrustInfo> section in a file containing only the \<TrustInfo> section and nothing else.  
-  
- The specified stream must contain only a \<TrustInfo> section and no other data.  
-  
+This method updates only the \<TrustInfo> section in a file containing only the \<TrustInfo> section and nothing else.  
+ 
+The specified stream must contain only a \<TrustInfo> section and no other data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,12 +348,12 @@
         <summary>Writes the application trust to an XML file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method updates only the \<TrustInfo> section in a file containing only the \<TrustInfo> section and nothing else.  
-  
- The specified string must contain only a \<TrustInfo> section and no other data.  
-  
+This method updates only the \<TrustInfo> section in a file containing only the \<TrustInfo> section and nothing else.  
+ 
+The specified string must contain only a \<TrustInfo> section and no other data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -378,10 +378,10 @@
         <summary>Writes the application trust to a new template ClickOnce application manifest.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method updates only the \<TrustInfo> section in a file containing only the top-level manifest header, the \<TrustInfo> section, and nothing else.  
-  
+This method updates only the \<TrustInfo> section in a file containing only the top-level manifest header, the \<TrustInfo> section, and nothing else.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -406,12 +406,12 @@
         <summary>Writes the application trust to a ClickOnce application manifest.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method updates only the \<TrustInfo> section in a file containing only the top-level manifest header, the \<TrustInfo> section, and nothing else.  
-  
- This overload of the method will update the file in place (that is, the input file is the same as the output file). If the file exists, the trust section will be updated. If the file does not exist, a new template manifest with the specified trust will be created.  
-  
+This method updates only the \<TrustInfo> section in a file containing only the top-level manifest header, the \<TrustInfo> section, and nothing else.  
+ 
+This overload of the method will update the file in place (that is, the input file is the same as the output file). If the file exists, the trust section will be updated. If the file does not exist, a new template manifest with the specified trust will be created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -438,10 +438,10 @@
         <summary>Updates an existing ClickOnce application manifest with the specified trust.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method updates only the \<TrustInfo> section in a file containing only the top-level manifest header, the \<TrustInfo> section, and nothing else.  
-  
+This method updates only the \<TrustInfo> section in a file containing only the top-level manifest header, the \<TrustInfo> section, and nothing else.  
+ 
  ]]></format>
         </remarks>
       </Docs>

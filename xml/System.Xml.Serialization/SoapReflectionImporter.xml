@@ -19,19 +19,19 @@
     <summary>Generates mappings to SOAP-encoded messages from .NET Framework types or Web service method information.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapReflectionImporter> class provides type mappings to SOAP-encoded message parts, as defined in a Web Services Description Language (WSDL) document. It is used only when a Web service or client specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification.  
+The <xref:System.Xml.Serialization.SoapReflectionImporter> class provides type mappings to SOAP-encoded message parts, as defined in a Web Services Description Language (WSDL) document. It is used only when a Web service or client specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example serializes a class named `Group`. The serialization of the `GroupName` and `IgnoreThis` fields and the members of the `GroupType` enumeration are overridden. In the `CreateOverrideSerializer` method, a <xref:System.Xml.Serialization.SoapAttributeOverrides> is created, and for each overridden member or enumeration, a <xref:System.Xml.Serialization.SoapAttributes> is created with the appropriate property set and added to the <xref:System.Xml.Serialization.SoapAttributeOverrides>. An <xref:System.Xml.Serialization.XmlTypeMapping> is created using the <xref:System.Xml.Serialization.SoapAttributeOverrides>, and that <xref:System.Xml.Serialization.XmlTypeMapping> is used to create the <xref:System.Xml.Serialization.XmlSerializer> that overrides the default serialization.  
-  
- [!code-cpp[SoapAttributesOverrides#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapAttributesOverrides/CPP/soapover.cpp#1)]
- [!code-csharp[SoapAttributesOverrides#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapAttributesOverrides/CS/soapover.cs#1)]
- [!code-vb[SoapAttributesOverrides#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapAttributesOverrides/VB/SoapOver.vb#1)]  
-  
+The following example serializes a class named `Group`. The serialization of the `GroupName` and `IgnoreThis` fields and the members of the `GroupType` enumeration are overridden. In the `CreateOverrideSerializer` method, a <xref:System.Xml.Serialization.SoapAttributeOverrides> is created, and for each overridden member or enumeration, a <xref:System.Xml.Serialization.SoapAttributes> is created with the appropriate property set and added to the <xref:System.Xml.Serialization.SoapAttributeOverrides>. An <xref:System.Xml.Serialization.XmlTypeMapping> is created using the <xref:System.Xml.Serialization.SoapAttributeOverrides>, and that <xref:System.Xml.Serialization.XmlTypeMapping> is used to create the <xref:System.Xml.Serialization.XmlSerializer> that overrides the default serialization.  
+ 
+[!code-cpp[SoapAttributesOverrides#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapAttributesOverrides/CPP/soapover.cpp#1)]
+[!code-csharp[SoapAttributesOverrides#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapAttributesOverrides/CS/soapover.cs#1)]
+[!code-vb[SoapAttributesOverrides#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapAttributesOverrides/VB/SoapOver.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -157,20 +157,20 @@
         <returns>Internal .NET Framework type mappings to the element parts of a WSDL message definition.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping%2A> method is called while initializing a Web service or client, or reflecting a Web service. You do not need to call it directly.  
-  
- The following list describes possible values for the `members` parameter:  
-  
+The <xref:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping%2A> method is called while initializing a Web service or client, or reflecting a Web service. You do not need to call it directly.  
+ 
+The following list describes possible values for the `members` parameter:  
+ 
 -   Web service method input parameters.  
-  
+ 
 -   Web service method output parameters, plus the return type, if not void, at index zero.  
-  
+ 
 -   SOAP input headers.  
-  
+ 
 -   SOAP output headers.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,20 +211,20 @@
         <returns>Internal .NET Framework type mappings to the element parts of a WSDL message definition.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping%2A> method is called while initializing a Web service or client, or reflecting a Web service. You do not need to call it directly.  
-  
- The following list describes possible values for the `members` parameter:  
-  
+The <xref:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping%2A> method is called while initializing a Web service or client, or reflecting a Web service. You do not need to call it directly.  
+ 
+The following list describes possible values for the `members` parameter:  
+ 
 -   Web service method input parameters.  
-  
+ 
 -   Web service method output parameters, plus the return type, if not void, at index zero.  
-  
+ 
 -   SOAP input headers.  
-  
+ 
 -   SOAP output headers.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -268,20 +268,20 @@
         <returns>Internal .NET Framework type mappings to the element parts of a WSDL message definition.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping%2A> method is called while initializing a Web service or client, or reflecting a Web service. You do not need to call it directly.  
-  
- The following list describes possible values for the `members` parameter:  
-  
+The <xref:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping%2A> method is called while initializing a Web service or client, or reflecting a Web service. You do not need to call it directly.  
+ 
+The following list describes possible values for the `members` parameter:  
+ 
 -   Web service method input parameters.  
-  
+ 
 -   Web service method output parameters, plus the return type, if not void, at index zero.  
-  
+ 
 -   SOAP input headers.  
-  
+ 
 -   SOAP output headers.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,20 +327,20 @@
         <returns>Internal .NET Framework type mappings to the element parts of a WSDL message definition.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping%2A> method is called while initializing a Web service or client, or reflecting a Web service. You do not need to call it directly.  
-  
- The following list describes possible values for the `members` parameter:  
-  
+The <xref:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping%2A> method is called while initializing a Web service or client, or reflecting a Web service. You do not need to call it directly.  
+ 
+The following list describes possible values for the `members` parameter:  
+ 
 -   Web service method input parameters.  
-  
+ 
 -   Web service method output parameters, plus the return type, if not void, at index zero.  
-  
+ 
 -   SOAP input headers.  
-  
+ 
 -   SOAP output headers.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -371,12 +371,12 @@
         <returns>Internal .NET Framework mapping of a type to an XML Schema element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The XML Schema element is serialized using SOAP encoding.  
-  
- You do not need to call the <xref:System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping%2A> method directly.  
-  
+The XML Schema element is serialized using SOAP encoding.  
+ 
+You do not need to call the <xref:System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping%2A> method directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -409,12 +409,12 @@
         <returns>Internal .NET Framework mapping of a type to an XML Schema element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The XML Schema element is serialized using SOAP encoding.  
-  
- You do not need to call the <xref:System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping%2A> method directly.  
-  
+The XML Schema element is serialized using SOAP encoding.  
+ 
+You do not need to call the <xref:System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping%2A> method directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -444,10 +444,10 @@
         <summary>Places mappings for a type in the <see cref="T:System.Xml.Serialization.SoapReflectionImporter" /> instance's context for later use when import methods are invoked.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You do not need to call the <xref:System.Xml.Serialization.SoapReflectionImporter.IncludeType%2A> method directly.  
-  
+You do not need to call the <xref:System.Xml.Serialization.SoapReflectionImporter.IncludeType%2A> method directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,12 +14,12 @@
     <summary>Represents a collection of <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> objects that are the cells of an <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlTableRow.HtmlTableCellControlCollection> class represents a collection of <xref:System.Web.UI.HtmlControls.HtmlTableCell> objects for an <xref:System.Web.UI.HtmlControls.HtmlTableRow> control. Controls can be added at the end of a collection with the <xref:System.Web.UI.HtmlControls.HtmlTableRow.HtmlTableCellControlCollection.Add%2A> method or at a specified index location in the collection with the <xref:System.Web.UI.HtmlControls.HtmlTableRow.HtmlTableCellControlCollection.AddAt%2A> method.  
-  
- Only controls of type <xref:System.Web.UI.HtmlControls.HtmlTableCell> can be added to the <xref:System.Web.UI.HtmlControls.HtmlTableRow.HtmlTableCellControlCollection> collection.  
-  
+The <xref:System.Web.UI.HtmlControls.HtmlTableRow.HtmlTableCellControlCollection> class represents a collection of <xref:System.Web.UI.HtmlControls.HtmlTableCell> objects for an <xref:System.Web.UI.HtmlControls.HtmlTableRow> control. Controls can be added at the end of a collection with the <xref:System.Web.UI.HtmlControls.HtmlTableRow.HtmlTableCellControlCollection.Add%2A> method or at a specified index location in the collection with the <xref:System.Web.UI.HtmlControls.HtmlTableRow.HtmlTableCellControlCollection.AddAt%2A> method.  
+ 
+Only controls of type <xref:System.Web.UI.HtmlControls.HtmlTableCell> can be added to the <xref:System.Web.UI.HtmlControls.HtmlTableRow.HtmlTableCellControlCollection> collection.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,10 +44,10 @@
         <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The added control can only be an <xref:System.Web.UI.HtmlControls.HtmlTableCell> control; otherwise, an <xref:System.ArgumentException> exception is thrown.  
-  
+The added control can only be an <xref:System.Web.UI.HtmlControls.HtmlTableCell> control; otherwise, an <xref:System.ArgumentException> exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The added control must be of type <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />.</exception>
@@ -75,10 +75,10 @@
         <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the collection at the specified index location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The added control can only be an <xref:System.Web.UI.HtmlControls.HtmlTableCell> control; otherwise, an <xref:System.ArgumentException> exception is thrown.  
-  
+The added control can only be an <xref:System.Web.UI.HtmlControls.HtmlTableCell> control; otherwise, an <xref:System.ArgumentException> exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The added control must be of type <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />.</exception>

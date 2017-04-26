@@ -14,25 +14,25 @@
     <summary>Specifies whether a service class supports single-threaded or multi-threaded modes of operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.ConcurrencyMode> is used in conjunction with the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> property to specify whether a service class supports single-threaded or multi-threaded modes of operation. A single-threaded operation can be either reentrant or non-reentrant.  
-  
- The following table shows when [!INCLUDE[indigo1](~/includes/indigo1-md.md)] permits an operation to be invoked while another one is in progress, depending upon the <xref:System.ServiceModel.ConcurrencyMode>.  
-  
+<xref:System.ServiceModel.ConcurrencyMode> is used in conjunction with the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> property to specify whether a service class supports single-threaded or multi-threaded modes of operation. A single-threaded operation can be either reentrant or non-reentrant.  
+ 
+The following table shows when [!INCLUDE[indigo1](~/includes/indigo1-md.md)] permits an operation to be invoked while another one is in progress, depending upon the <xref:System.ServiceModel.ConcurrencyMode>.  
+ 
 |ConcurrencyMode Value|Can a new operation be invoked?|  
 |---------------------------|-------------------------------------|  
 |Single|Never.|  
 |Reentrant|Only while invoking another service or a callback.|  
 |Multiple|Always.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the different between using Single, Reentrant, and Multiple. This sample does not compile without a real implementation behind it, but does demonstrate the kind of threading guarantees that [!INCLUDE[indigo2](~/includes/indigo2-md.md)] makes and what that means for your operation code.  
-  
- [!code-csharp[C_BestPractices-Concurrency#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_bestpractices-concurrency/cs/reentrantandmultiple.cs#1)]  
-  
+The following code example demonstrates the different between using Single, Reentrant, and Multiple. This sample does not compile without a real implementation behind it, but does demonstrate the kind of threading guarantees that [!INCLUDE[indigo2](~/includes/indigo2-md.md)] makes and what that means for your operation code.  
+ 
+[!code-csharp[C_BestPractices-Concurrency#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_bestpractices-concurrency/cs/reentrantandmultiple.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

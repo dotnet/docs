@@ -19,17 +19,17 @@
     <summary>An activity that executes all child activities simultaneously and asynchronously.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Activities.Statements.Parallel> activity operates by simultaneously scheduling each <xref:System.Activities.Activity> in its <xref:System.Activities.Statements.Parallel.Branches%2A> collection at the start. It completes when all of its <xref:System.Activities.Statements.Parallel.Branches%2A> complete or when its <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> property evaluates to `true`. While all the <xref:System.Activities.Activity> objects run asynchronously, they do not execute on separate threads, so each successive activity only executes when the previously scheduled activity completes or goes idle. If none of the child activities of this activity go idle, this activity execute in the same way that a <xref:System.Activities.Statements.Sequence> activity does.  
+A <xref:System.Activities.Statements.Parallel> activity operates by simultaneously scheduling each <xref:System.Activities.Activity> in its <xref:System.Activities.Statements.Parallel.Branches%2A> collection at the start. It completes when all of its <xref:System.Activities.Statements.Parallel.Branches%2A> complete or when its <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> property evaluates to `true`. While all the <xref:System.Activities.Activity> objects run asynchronously, they do not execute on separate threads, so each successive activity only executes when the previously scheduled activity completes or goes idle. If none of the child activities of this activity go idle, this activity execute in the same way that a <xref:System.Activities.Statements.Sequence> activity does.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.Parallel> activity. This example is from the [Cancellation Handler on Compensable Activity](~/docs/framework/windows-workflow-foundation/samples/cancellation-handler-on-compensable-activity.md) sample.  
-  
- [!code-csharp[wfs_CompensationCancellation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_compensationcancellation/cs/program.cs#1)]  
-  
+The following code sample demonstrates creating a <xref:System.Activities.Statements.Parallel> activity. This example is from the [Cancellation Handler on Compensable Activity](~/docs/framework/windows-workflow-foundation/samples/cancellation-handler-on-compensable-activity.md) sample.  
+ 
+[!code-csharp[wfs_CompensationCancellation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_compensationcancellation/cs/program.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,12 +48,12 @@
         <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.Parallel" /> activity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.Parallel> activity. This example is from the [Cancellation Handler on Compensable Activity](~/docs/framework/windows-workflow-foundation/samples/cancellation-handler-on-compensable-activity.md) sample.  
-  
- [!code-csharp[wfs_CompensationCancellation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_compensationcancellation/cs/program.cs#1)]  
-  
+The following code sample demonstrates creating a <xref:System.Activities.Statements.Parallel> activity. This example is from the [Cancellation Handler on Compensable Activity](~/docs/framework/windows-workflow-foundation/samples/cancellation-handler-on-compensable-activity.md) sample.  
+ 
+[!code-csharp[wfs_CompensationCancellation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_compensationcancellation/cs/program.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,12 +80,12 @@
         <value>The elements.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates setting the Branches property of a <xref:System.Activities.Statements.Parallel> activity. This example is from the [Cancellation Handler on Compensable Activity](~/docs/framework/windows-workflow-foundation/samples/cancellation-handler-on-compensable-activity.md) sample.  
-  
- [!code-csharp[wfs_CompensationCancellation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_compensationcancellation/cs/program.cs#1)]  
-  
+The following code sample demonstrates setting the Branches property of a <xref:System.Activities.Statements.Parallel> activity. This example is from the [Cancellation Handler on Compensable Activity](~/docs/framework/windows-workflow-foundation/samples/cancellation-handler-on-compensable-activity.md) sample.  
+ 
+[!code-csharp[wfs_CompensationCancellation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_compensationcancellation/cs/program.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -157,17 +157,17 @@
         <value>The completion expression.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property evaluates to `true`, then the other scheduled elements in the <xref:System.Activities.Statements.Parallel.Branches%2A> collection are canceled. If this property is not set, all <xref:System.Activities.Activity> objects in the <xref:System.Activities.Statements.Parallel.Branches%2A> collection execute until completion.  
+If this property evaluates to `true`, then the other scheduled elements in the <xref:System.Activities.Statements.Parallel.Branches%2A> collection are canceled. If this property is not set, all <xref:System.Activities.Activity> objects in the <xref:System.Activities.Statements.Parallel.Branches%2A> collection execute until completion.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates setting the CompletionCondition property of a <xref:System.Activities.Statements.Parallel> activity. This example is from the [Cancellation Handler on Compensable Activity](~/docs/framework/windows-workflow-foundation/samples/cancellation-handler-on-compensable-activity.md) sample.  
-  
- [!code-csharp[wfs_CompensationCancellation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_compensationcancellation/cs/program.cs#1)]  
-  
+The following code sample demonstrates setting the CompletionCondition property of a <xref:System.Activities.Statements.Parallel> activity. This example is from the [Cancellation Handler on Compensable Activity](~/docs/framework/windows-workflow-foundation/samples/cancellation-handler-on-compensable-activity.md) sample.  
+ 
+[!code-csharp[wfs_CompensationCancellation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_compensationcancellation/cs/program.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

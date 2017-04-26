@@ -19,17 +19,17 @@
     <summary>A class used to send a single item (message) to or from a workflow service. The item can be a built-in type such as primitive types, <see cref="T:System.ServiceModel.Channels.Message" />, or <see cref="T:System.Xml.Linq.XElement" />; or an application-defined data contract, message contract, or XML serializable type.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When using this class, messages serialized on the wire are unwrapped, unless the data is a message contract type or of type <xref:System.ServiceModel.Channels.Message>.  
+When using this class, messages serialized on the wire are unwrapped, unless the data is a message contract type or of type <xref:System.ServiceModel.Channels.Message>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use a <xref:System.ServiceModel.Activities.SendMessageContent> instance with a <xref:System.ServiceModel.Activities.Send> activity.  
-  
- [!code-csharp[ContentBasedCorrelation#0](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/client.cs#0)]  
-  
+The following example shows how to use a <xref:System.ServiceModel.Activities.SendMessageContent> instance with a <xref:System.ServiceModel.Activities.Send> activity.  
+ 
+[!code-csharp[ContentBasedCorrelation#0](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/client.cs#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,12 +66,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.SendMessageContent" /> class with the specified data to send.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use this constructor.  
-  
- [!code-csharp[ContentBasedCorrelation#0](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/client.cs#0)]  
-  
+The following example shows how to use this constructor.  
+ 
+[!code-csharp[ContentBasedCorrelation#0](~/samples/snippets/csharp/VS_Snippets_CFX/contentbasedcorrelation/cs/client.cs#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
         <value>The declared message type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.Activities.SendMessageContent.DeclaredMessageType%2A>is the data type that will appear on the service description and WSDL. You may want the service description to contain the base class type so that various derived classes can be sent and received by the service at runtime. <xref:System.ServiceModel.Activities.SendMessageContent.DeclaredMessageType%2A> must be either the same as the argument type of the Message property or its base type.  
-  
+<xref:System.ServiceModel.Activities.SendMessageContent.DeclaredMessageType%2A>is the data type that will appear on the service description and WSDL. You may want the service description to contain the base class type so that various derived classes can be sent and received by the service at runtime. <xref:System.ServiceModel.Activities.SendMessageContent.DeclaredMessageType%2A> must be either the same as the argument type of the Message property or its base type.  
+ 
  ]]></format>
         </remarks>
       </Docs>

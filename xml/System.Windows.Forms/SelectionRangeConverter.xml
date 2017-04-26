@@ -14,15 +14,15 @@
     <summary>Provides a type converter to convert <see cref="T:System.Windows.Forms.SelectionRange" /> objects to and from various other types.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.SelectionRange> class represents a single date or a range of dates. This class is commonly associated with the <xref:System.Windows.Forms.MonthCalendar> control, where it represents the selected and highlighted dates. The <xref:System.Windows.Forms.SelectionRangeConverter> class is an adjunct class to <xref:System.Windows.Forms.SelectionRange> that enables you to convert to and from other types, most often strings.  
-  
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class, [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada), and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
-  
+The <xref:System.Windows.Forms.SelectionRange> class represents a single date or a range of dates. This class is commonly associated with the <xref:System.Windows.Forms.MonthCalendar> control, where it represents the selected and highlighted dates. The <xref:System.Windows.Forms.SelectionRangeConverter> class is an adjunct class to <xref:System.Windows.Forms.SelectionRange> that enables you to convert to and from other types, most often strings.  
+ 
+For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class, [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada), and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ 
 > [!NOTE]
 >  You should never create a <xref:System.Windows.Forms.SelectionRangeConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,12 +41,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.SelectionRangeConverter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.SelectionRangeConverter.%23ctor%2A> is the default constructor supplied by the compiler.  
-  
- You should never create a <xref:System.Windows.Forms.SelectionRangeConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
-  
+<xref:System.Windows.Forms.SelectionRangeConverter.%23ctor%2A> is the default constructor supplied by the compiler.  
+ 
+You should never create a <xref:System.Windows.Forms.SelectionRangeConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,10 +75,10 @@
           <see langword="true" /> if the converter can perform the specified conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.SelectionRangeConverter> class is specialized to convert between the types <xref:System.String> and <xref:System.Windows.Forms.SelectionRange>. As a result, the <xref:System.Windows.Forms.SelectionRangeConverter.CanConvertFrom%2A> method returns `true` if the `sourceType` parameter is of type <xref:System.String>. Otherwise, it defers the call to the base implementation of this method, <xref:System.ComponentModel.TypeConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29?displayProperty=fullName>.  
-  
+The <xref:System.Windows.Forms.SelectionRangeConverter> class is specialized to convert between the types <xref:System.String> and <xref:System.Windows.Forms.SelectionRange>. As a result, the <xref:System.Windows.Forms.SelectionRangeConverter.CanConvertFrom%2A> method returns `true` if the `sourceType` parameter is of type <xref:System.String>. Otherwise, it defers the call to the base implementation of this method, <xref:System.ComponentModel.TypeConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -112,10 +112,10 @@
           <see langword="true" /> if this converter can perform the specified conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.SelectionRangeConverter.CanConvertTo%2A> method returns `true` if the `destinationType` parameter is of type <xref:System.String> or <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor>. Otherwise, it defers the call to the base implementation of this method, <xref:System.ComponentModel.TypeConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29?displayProperty=fullName>.  
-  
+The <xref:System.Windows.Forms.SelectionRangeConverter.CanConvertTo%2A> method returns `true` if the `destinationType` parameter is of type <xref:System.String> or <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor>. Otherwise, it defers the call to the base implementation of this method, <xref:System.ComponentModel.TypeConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -150,10 +150,10 @@
         <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.SelectionRangeConverter.ConvertFrom%2A> method is specialized to convert <xref:System.String> values that represent a range of dates to their <xref:System.Windows.Forms.SelectionRange> representations. Types other than <xref:System.String> are passed to the base class implementation of this method.  
-  
+The <xref:System.Windows.Forms.SelectionRangeConverter.ConvertFrom%2A> method is specialized to convert <xref:System.String> values that represent a range of dates to their <xref:System.Windows.Forms.SelectionRange> representations. Types other than <xref:System.String> are passed to the base class implementation of this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -194,10 +194,10 @@
         <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.SelectionRangeConverter.ConvertTo%2A> method is specialized to convert <xref:System.Windows.Forms.SelectionRange> values to their <xref:System.String> or <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> representations. Other types are passed to the base class implementation of this method.  
-  
+The <xref:System.Windows.Forms.SelectionRangeConverter.ConvertTo%2A> method is specialized to convert <xref:System.Windows.Forms.SelectionRange> values to their <xref:System.String> or <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> representations. Other types are passed to the base class implementation of this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -234,10 +234,10 @@
         <returns>If successful, the newly created <see cref="T:System.Windows.Forms.SelectionRange" />; otherwise, this method throws an exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.SelectionRangeConverter.CreateInstance%2A> method to make changes to an existing immutable object by creating a modified version of it. This method expects the `propertyValues` parameter to have elements with key values of `Start` and `End`, each with the corresponding <xref:System.DateTime> value.  
-  
+Use the <xref:System.Windows.Forms.SelectionRangeConverter.CreateInstance%2A> method to make changes to an existing immutable object by creating a modified version of it. This method expects the `propertyValues` parameter to have elements with key values of `Start` and `End`, each with the corresponding <xref:System.DateTime> value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -266,10 +266,10 @@
           <see langword="true" /> if <see cref="Overload:System.Windows.Forms.SelectionRangeConverter.CreateInstance" /> must be called to make a change to one or more properties; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation always returns `true`.  
-  
+The default implementation always returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,10 +299,10 @@
         <returns>If successful, the set of properties that should be exposed for the <see cref="T:System.Windows.Forms.SelectionRange" /> type; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method does not use the `context` or `value` parameters, but simply refers the call to the TypeDescriptor.<xref:System.ComponentModel.TypeDescriptor.GetProperties%28System.Type%2CSystem.Attribute%5B%5D%29?displayProperty=fullName> method.  
-  
+The default implementation of this method does not use the `context` or `value` parameters, but simply refers the call to the TypeDescriptor.<xref:System.ComponentModel.TypeDescriptor.GetProperties%28System.Type%2CSystem.Attribute%5B%5D%29?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,10 +329,10 @@
           <see langword="true" /> if <see cref="Overload:System.Windows.Forms.SelectionRangeConverter.GetProperties" /> can be called to find the properties of a <see cref="T:System.Windows.Forms.SelectionRange" /> object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation always returns `true`.  
-  
+The default implementation always returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

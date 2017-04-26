@@ -20,10 +20,10 @@
     <summary>Specifies which constructor should be used when creating a part.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, only a parameter-less constructor will be used to construct an attributed part. Use <xref:System.ComponentModel.Composition.ImportingConstructorAttribute> to indicate that a specific constructor should be used instead. Parameters to the decorated constructor will be treated as imports.  
-  
+By default, only a parameter-less constructor will be used to construct an attributed part. Use <xref:System.ComponentModel.Composition.ImportingConstructorAttribute> to indicate that a specific constructor should be used instead. Parameters to the decorated constructor will be treated as imports.  
+ 
  ]]></format>
     </remarks>
   </Docs>

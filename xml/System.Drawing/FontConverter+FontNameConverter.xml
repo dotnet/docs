@@ -136,10 +136,10 @@
           <see langword="true" /> if the collection returned from <see cref="Overload:System.Drawing.FontConverter.FontNameConverter.GetStandardValues" />is an exclusive list of possible values; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the list is exclusive, no other values are valid, such as in an enumeration data type. If the list is not exclusive, then there are other valid values besides the list of standard values <xref:System.Drawing.FontConverter.FontNameConverter.GetStandardValues%2A> provides.  
-  
+If the list is exclusive, no other values are valid, such as in an enumeration data type. If the list is not exclusive, then there are other valid values besides the list of standard values <xref:System.Drawing.FontConverter.FontNameConverter.GetStandardValues%2A> provides.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

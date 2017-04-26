@@ -23,10 +23,10 @@
     <summary>Identifies the scope of a sharable resource.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A resource is an object that holds state. Examples of resources include a file on disk, a message queue for a process, and a named <xref:System.Threading.Mutex>. Knowing an object is a resource does not indicate its appropriate use; the important property of a resource is the scope of the resource. The scope includes both the type and the visibility of the resource. The resource type specifies whether the resource is a machine-level resource, such as a file on disk, a process-wide resource, such as a block of non-shared memory, or an application domain-level resource, such as a lock on an instance of a non-marshal by reference object.  The visibility scopes are Assembly and Private, the default is `Public`, which is implicit if Private or Assembly are not indicated.  There is no enumeration value for `Public`.  
-  
+A resource is an object that holds state. Examples of resources include a file on disk, a message queue for a process, and a named <xref:System.Threading.Mutex>. Knowing an object is a resource does not indicate its appropriate use; the important property of a resource is the scope of the resource. The scope includes both the type and the visibility of the resource. The resource type specifies whether the resource is a machine-level resource, such as a file on disk, a process-wide resource, such as a block of non-shared memory, or an application domain-level resource, such as a lock on an instance of a non-marshal by reference object.  The visibility scopes are Assembly and Private, the default is `Public`, which is implicit if Private or Assembly are not indicated.  There is no enumeration value for `Public`.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

@@ -32,12 +32,12 @@
         <value>A structure containing the cached [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property values for the control pattern.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Cached property values must have been previously requested using a <xref:System.Windows.Automation.CacheRequest>. Use <xref:System.Windows.Automation.TogglePattern.Current%2A> to get the current value of a property.  
-  
- For information on the properties available and their use, see <xref:System.Windows.Automation.TogglePattern.TogglePatternInformation>.  
-  
+Cached property values must have been previously requested using a <xref:System.Windows.Automation.CacheRequest>. Use <xref:System.Windows.Automation.TogglePattern.Current%2A> to get the current value of a property.  
+ 
+For information on the properties available and their use, see <xref:System.Windows.Automation.TogglePattern.TogglePatternInformation>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The requested property is not in the cache.</exception>
@@ -60,12 +60,12 @@
         <value>A structure containing the current [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property values for the control pattern.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This pattern must be from an <xref:System.Windows.Automation.AutomationElement> with an <xref:System.Windows.Automation.AutomationElementMode> reference in order to get current values. If the <xref:System.Windows.Automation.AutomationElement> was obtained using <xref:System.Windows.Automation.AutomationElementMode>, it contains only cached data, and attempting to get the current value of any property raises an exception. Use <xref:System.Windows.Automation.TogglePattern.Cached%2A> to get the cached value of a property that was previously specified using a <xref:System.Windows.Automation.CacheRequest>.  
-  
- For information on the properties available and their use, see <xref:System.Windows.Automation.TogglePattern.TogglePatternInformation>.  
-  
+This pattern must be from an <xref:System.Windows.Automation.AutomationElement> with an <xref:System.Windows.Automation.AutomationElementMode> reference in order to get current values. If the <xref:System.Windows.Automation.AutomationElement> was obtained using <xref:System.Windows.Automation.AutomationElementMode>, it contains only cached data, and attempting to get the current value of any property raises an exception. Use <xref:System.Windows.Automation.TogglePattern.Cached%2A> to get the cached value of a property that was previously specified using a <xref:System.Windows.Automation.CacheRequest>.  
+ 
+For information on the properties available and their use, see <xref:System.Windows.Automation.TogglePattern.TogglePatternInformation>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,20 +86,20 @@
         <summary>Identifies the <see cref="T:System.Windows.Automation.TogglePattern" /> control pattern.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TogglePatternIdentifiers>.  
+This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TogglePatternIdentifiers>.  
+ 
+The pattern identifier is passed to methods such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
+ 
   
- The pattern identifier is passed to methods such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
-  
-   
-  
+ 
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.TogglePattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement>.  
-  
- [!code-csharp[UIATogglePattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATogglePattern_snip/CSharp/UIATogglePattern_snippets.cs#101)]
- [!code-vb[UIATogglePattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATogglePattern_snip/VisualBasic/UIATogglePattern_snippets.vb#101)]  
-  
+In the following example, a <xref:System.Windows.Automation.TogglePattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement>.  
+ 
+[!code-csharp[UIATogglePattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATogglePattern_snip/CSharp/UIATogglePattern_snippets.cs#101)]
+[!code-vb[UIATogglePattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATogglePattern_snip/VisualBasic/UIATogglePattern_snippets.vb#101)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,20 +121,20 @@
         <summary>Cycles through the toggle states of an <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A control will cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState> and, if supported, <xref:System.Windows.Automation.ToggleState>.  
+A control will cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState> and, if supported, <xref:System.Windows.Automation.ToggleState>.  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, a <xref:System.Windows.Automation.TogglePattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to toggle the <xref:System.Windows.Automation.AutomationElement>.  
-  
- [!code-csharp[UIATogglePattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATogglePattern_snip/CSharp/UIATogglePattern_snippets.cs#101)]
- [!code-vb[UIATogglePattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATogglePattern_snip/VisualBasic/UIATogglePattern_snippets.vb#101)]  
+In the following example, a <xref:System.Windows.Automation.TogglePattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and is subsequently used to toggle the <xref:System.Windows.Automation.AutomationElement>.  
+ 
+[!code-csharp[UIATogglePattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATogglePattern_snip/CSharp/UIATogglePattern_snippets.cs#101)]
+[!code-vb[UIATogglePattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATogglePattern_snip/VisualBasic/UIATogglePattern_snippets.vb#101)]  
 [!code-csharp[UIATogglePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATogglePattern_snip/CSharp/UIATogglePattern_snippets.cs#102)]
 [!code-vb[UIATogglePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATogglePattern_snip/VisualBasic/UIATogglePattern_snippets.vb#102)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,20 +155,20 @@
         <summary>Identifies the <see cref="P:System.Windows.Automation.TogglePattern.TogglePatternInformation.ToggleState" />property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TogglePatternIdentifiers>.  
+This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TogglePatternIdentifiers>.  
+ 
+An <xref:System.Windows.Automation.AutomationElement> must cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState> and, if supported, <xref:System.Windows.Automation.ToggleState>.  
+ 
   
- An <xref:System.Windows.Automation.AutomationElement> must cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState> and, if supported, <xref:System.Windows.Automation.ToggleState>.  
-  
-   
-  
+ 
 ## Examples  
- In the following example, a root element is passed to a function that returns a collection of automation elements that are descendants of the root and satisfy a set of property conditions.  
-  
- [!code-csharp[UIATogglePattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATogglePattern_snip/CSharp/UIATogglePattern_snippets.cs#100)]
- [!code-vb[UIATogglePattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATogglePattern_snip/VisualBasic/UIATogglePattern_snippets.vb#100)]  
-  
+In the following example, a root element is passed to a function that returns a collection of automation elements that are descendants of the root and satisfy a set of property conditions.  
+ 
+[!code-csharp[UIATogglePattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATogglePattern_snip/CSharp/UIATogglePattern_snippets.cs#100)]
+[!code-vb[UIATogglePattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATogglePattern_snip/VisualBasic/UIATogglePattern_snippets.vb#100)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

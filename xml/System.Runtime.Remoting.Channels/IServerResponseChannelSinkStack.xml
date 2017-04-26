@@ -44,10 +44,10 @@
         <summary>Requests asynchronous processing of a method call on the sinks in the current sink stack.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack.AsyncProcessResponse%2A> method initializes asynchronous processing on the top sink in the current sink stack. For additional information, see the <xref:System.Runtime.Remoting.Channels.IServerChannelSink.AsyncProcessResponse%2A> method.  
-  
+The <xref:System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack.AsyncProcessResponse%2A> method initializes asynchronous processing on the top sink in the current sink stack. For additional information, see the <xref:System.Runtime.Remoting.Channels.IServerChannelSink.AsyncProcessResponse%2A> method.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>

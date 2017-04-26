@@ -48,12 +48,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.CommonSecurityDescriptor" /> class from the specified <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the underlying security descriptor from which the new <xref:System.Security.AccessControl.RawSecurityDescriptor> object is created contains `null` for its discretionary access control list (DACL), a single access control entry (ACE) that allows everyone full access (AEFA) is added to the DACL. If an application modifies the DACL of a security descriptor to which an AEFA ACE has been added, the AEFA ACE is persisted with the DACL when that DACL is persisted.  
-  
- This can result in an application unintentionally allowing access to principals. Because of this, an application should check for the existence of an AEFA ACE and remove it before modifying any security descriptor.  
-  
+If the underlying security descriptor from which the new <xref:System.Security.AccessControl.RawSecurityDescriptor> object is created contains `null` for its discretionary access control list (DACL), a single access control entry (ACE) that allows everyone full access (AEFA) is added to the DACL. If an application modifies the DACL of a security descriptor to which an AEFA ACE has been added, the AEFA ACE is persisted with the DACL when that DACL is persisted.  
+ 
+This can result in an application unintentionally allowing access to principals. Because of this, an application should check for the existence of an AEFA ACE and remove it before modifying any security descriptor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,12 +86,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.CommonSecurityDescriptor" /> class from the specified Security Descriptor Definition Language (SDDL) string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the underlying security descriptor from which the new <xref:System.Security.AccessControl.RawSecurityDescriptor> object is created contains `null` for its discretionary access control list (DACL), a single access control entry (ACE) that allows everyone full access (AEFA) is added to the DACL. If an application modifies the DACL of a security descriptor to which an AEFA ACE has been added, the AEFA ACE is persisted with the DACL when that DACL is persisted.  
-  
- This can result in an application unintentionally allowing access to principals. Because of this, an application should check for the existence of an AEFA ACE and remove it before modifying any security descriptor.  
-  
+If the underlying security descriptor from which the new <xref:System.Security.AccessControl.RawSecurityDescriptor> object is created contains `null` for its discretionary access control list (DACL), a single access control entry (ACE) that allows everyone full access (AEFA) is added to the DACL. If an application modifies the DACL of a security descriptor to which an AEFA ACE has been added, the AEFA ACE is persisted with the DACL when that DACL is persisted.  
+ 
+This can result in an application unintentionally allowing access to principals. Because of this, an application should check for the existence of an AEFA ACE and remove it before modifying any security descriptor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,12 +126,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.CommonSecurityDescriptor" /> class from the specified array of byte values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the underlying security descriptor from which the new <xref:System.Security.AccessControl.RawSecurityDescriptor> object is created contains `null` for its discretionary access control list (DACL),a single access control entry (ACE) that allows everyone full access (AEFA) is added to the DACL. If an application modifies the DACL of a security descriptor to which an AEFA ACE has been added, the AEFA ACE is persisted with the DACL when that DACL is persisted.  
-  
- This can result in an application unintentionally allowing access to principals. Because of this, an application should check for the existence of an AEFA ACE and remove it before modifying any security descriptor.  
-  
+If the underlying security descriptor from which the new <xref:System.Security.AccessControl.RawSecurityDescriptor> object is created contains `null` for its discretionary access control list (DACL),a single access control entry (ACE) that allows everyone full access (AEFA) is added to the DACL. If an application modifies the DACL of a security descriptor to which an AEFA ACE has been added, the AEFA ACE is persisted with the DACL when that DACL is persisted.  
+ 
+This can result in an application unintentionally allowing access to principals. Because of this, an application should check for the existence of an AEFA ACE and remove it before modifying any security descriptor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,12 +172,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.CommonSecurityDescriptor" /> class from the specified information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the underlying security descriptor from which the new <xref:System.Security.AccessControl.RawSecurityDescriptor> object is created contains `null` for its discretionary access control list (DACL), a single access control entry (ACE) that allows everyone full access (AEFA) is added to the DACL. If an application modifies the DACL of a security descriptor to which an AEFA ACE has been added, the AEFA ACE is persisted with the DACL when that DACL is persisted.  
-  
- This can result in an application unintentionally allowing access to principals. Because of this, an application should check for the existence of an AEFA ACE and remove it before modifying any security descriptor.  
-  
+If the underlying security descriptor from which the new <xref:System.Security.AccessControl.RawSecurityDescriptor> object is created contains `null` for its discretionary access control list (DACL), a single access control entry (ACE) that allows everyone full access (AEFA) is added to the DACL. If an application modifies the DACL of a security descriptor to which an AEFA ACE has been added, the AEFA ACE is persisted with the DACL when that DACL is persisted.  
+ 
+This can result in an application unintentionally allowing access to principals. Because of this, an application should check for the existence of an AEFA ACE and remove it before modifying any security descriptor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,10 +209,10 @@
         <summary>Sets the <see cref="P:System.Security.AccessControl.CommonSecurityDescriptor.DiscretionaryAcl" /> property for this <see cref="T:System.Security.AccessControl.CommonSecurityDescriptor" /> instance and sets the <see cref="F:System.Security.AccessControl.ControlFlags.DiscretionaryAclPresent" /> flag.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor for the <xref:System.Security.AccessControl.DiscretionaryAcl> uses the <xref:System.Security.AccessControl.CommonSecurityDescriptor.IsContainer%2A> and <xref:System.Security.AccessControl.CommonSecurityDescriptor.IsDS%2A> properties for this <xref:System.Security.AccessControl.CommonSecurityDescriptor>.  
-  
+The constructor for the <xref:System.Security.AccessControl.DiscretionaryAcl> uses the <xref:System.Security.AccessControl.CommonSecurityDescriptor.IsContainer%2A> and <xref:System.Security.AccessControl.CommonSecurityDescriptor.IsDS%2A> properties for this <xref:System.Security.AccessControl.CommonSecurityDescriptor>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,10 +244,10 @@
         <summary>Sets the <see cref="P:System.Security.AccessControl.CommonSecurityDescriptor.SystemAcl" /> property for this <see cref="T:System.Security.AccessControl.CommonSecurityDescriptor" /> instance and sets the <see cref="F:System.Security.AccessControl.ControlFlags.SystemAclPresent" /> flag.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The constructor for the <xref:System.Security.AccessControl.SystemAcl> uses the <xref:System.Security.AccessControl.CommonSecurityDescriptor.IsContainer%2A> and <xref:System.Security.AccessControl.CommonSecurityDescriptor.IsDS%2A> properties for this <xref:System.Security.AccessControl.CommonSecurityDescriptor>.  
-  
+The constructor for the <xref:System.Security.AccessControl.SystemAcl> uses the <xref:System.Security.AccessControl.CommonSecurityDescriptor.IsContainer%2A> and <xref:System.Security.AccessControl.CommonSecurityDescriptor.IsDS%2A> properties for this <xref:System.Security.AccessControl.CommonSecurityDescriptor>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,12 +297,12 @@
         <value>The DACL for this <see cref="T:System.Security.AccessControl.CommonSecurityDescriptor" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is set to `null`, a single access control entry (ACE) that allows everyone full access (AEFA) is added to the DACL. If an application modifies the DACL of a security descriptor to which an AEFA ACE has been added, the AEFA ACE is persisted with the DACL when that DACL is persisted.  
-  
- This can result in an application unintentionally allowing access to principals. Because of this, an application should check for the existence of an AEFA ACE and remove it before modifying any security descriptor.  
-  
+If this property is set to `null`, a single access control entry (ACE) that allows everyone full access (AEFA) is added to the DACL. If an application modifies the DACL of a security descriptor to which an AEFA ACE has been added, the AEFA ACE is persisted with the DACL when that DACL is persisted.  
+ 
+This can result in an application unintentionally allowing access to principals. Because of this, an application should check for the existence of an AEFA ACE and remove it before modifying any security descriptor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -474,10 +474,10 @@
         <summary>Removes all access rules for the specified security identifier from the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.CommonSecurityDescriptor" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To avoid unintentionally allowing access to principals, applications should check for the existence of an allow everyone full access (AEFA) access control entry (ACE) and remove it before modifying a DACL.  
-  
+To avoid unintentionally allowing access to principals, applications should check for the existence of an allow everyone full access (AEFA) access control entry (ACE) and remove it before modifying a DACL.  
+ 
  ]]></format>
         </remarks>
       </Docs>

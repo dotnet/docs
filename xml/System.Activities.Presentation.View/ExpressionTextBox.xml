@@ -18,31 +18,31 @@
     <summary>Describes a control that enables the user to edit an expression in an activity designer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], the <xref:System.Activities.Presentation.View.ExpressionTextBox> provides features such as IntelliSense when editing an expression. Such features are provided by a component called the hostable editor. The expression editing interface is extensible and the editor used for editing expressions can be replaced.  
-  
+In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], the <xref:System.Activities.Presentation.View.ExpressionTextBox> provides features such as IntelliSense when editing an expression. Such features are provided by a component called the hostable editor. The expression editing interface is extensible and the editor used for editing expressions can be replaced.  
+ 
 > [!NOTE]
 >  This component is not available for use in applications that are being re-hosted outside [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
-  
- **ExpressionTextBlock** works in the following manner when you edit an expression.  
-  
+ 
+**ExpressionTextBlock** works in the following manner when you edit an expression.  
+ 
 1.  When you click on an **ExpressionTextBox**, an <xref:System.Activities.Presentation.View.IExpressionEditorInstance> object is created and a hostable editor session is instantiated in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
-  
+ 
 2.  When you type inside a hostable editor, note that the features have two sorts of availability.  
-  
-    1.  IntelliSense, completion and colorization support is available immediately.  
-  
-    2.  Validation is called in the background and is available only after a short interval of time elapses. Then, if your expression is invalid, the hosted compiler reports the error and the red error icon displays to the right of your expression.  
-  
+ 
+   1.  IntelliSense, completion and colorization support is available immediately.  
+ 
+   2.  Validation is called in the background and is available only after a short interval of time elapses. Then, if your expression is invalid, the hosted compiler reports the error and the red error icon displays to the right of your expression.  
+ 
 3.  Press the **Enter** key when the **ExpressionTextBox** has the focus to insert new lines in the <xref:System.Activities.Presentation.View.IExpressionEditorInstance> object. This causes a line commit to occur inside the hostable editor, which triggers a pretty listing and the display of squiggles.  
-  
+ 
 4.  The editor instance is destroyed when the **ExpressionTextBox** loses the focus, and the display reverts to a **TextBlock**. If you are on the designer surface or in the property grid, the change to the model item is committed and all <xref:System.Activities.Presentation.View.ExpressionTextBox> controls displaying that same expression are synchronized. However, if you are in a dialog box, the change to the model item is not committed until you click OK. When the model item is committed, <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> is invoked and the entire workflow is validated.  
-  
+ 
 5.  When you click on the **ExpressionTextBox** again, a new editor instance is created. In the hostable editor, pretty listing, colorization, and squiggling occurs before you begin editing.  
-  
- To bind the expression text box to **OwnerActivity**, use <xref:System.Activities.Presentation.Converters.ModelPropertyEntryToModelItemConverter> to set the data context correctly. The following code sample demonstrates setting the data context correctly for binding to **OwnerActivity**.  
-  
+ 
+To bind the expression text box to **OwnerActivity**, use <xref:System.Activities.Presentation.Converters.ModelPropertyEntryToModelItemConverter> to set the data context correctly. The following code sample demonstrates setting the data context correctly for binding to **OwnerActivity**.  
+ 
 ```  
 <sapc:ModelPropertyEntryToModelItemConverter x:Key="ModelPropertyEntryToContainerConverter"/>  
   
@@ -56,16 +56,16 @@
         </Grid>  
     </DataTemplate>  
 ```  
+ 
+For more information, see <xref:System.Activities.Presentation.View.IExpressionEditorInstance> and <xref:System.Activities.Presentation.View.IExpressionEditorService>. Also see the [Using the ExpressionTextBox in a Custom Activity Designer](~/docs/framework/windows-workflow-foundation/samples/using-the-expressiontextbox-in-a-custom-activity-designer.md) sample topic.  
+ 
   
- For more information, see <xref:System.Activities.Presentation.View.IExpressionEditorInstance> and <xref:System.Activities.Presentation.View.IExpressionEditorService>. Also see the [Using the ExpressionTextBox in a Custom Activity Designer](~/docs/framework/windows-workflow-foundation/samples/using-the-expressiontextbox-in-a-custom-activity-designer.md) sample topic.  
-  
-   
-  
+ 
 ## Examples  
- The <xref:System.Activities.Presentation.View.ExpressionTextBox> is usually used declaratively when creating custom activity designers. For sample code, see the [ExpressionTextBox101](http://go.microsoft.com/fwlink/?LinkId=193145) blog.  
-  
+The <xref:System.Activities.Presentation.View.ExpressionTextBox> is usually used declaratively when creating custom activity designers. For sample code, see the [ExpressionTextBox101](http://go.microsoft.com/fwlink/?LinkId=193145) blog.  
+ 
 <!-- TODO: review snippet reference  [!CODE [WFD_ExpressionTextBox#0](WFD_ExpressionTextBox#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -260,10 +260,10 @@
         <summary>Occurs when the expression editor loses logical focus.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Logical focus differs from keyboard focus if focus is deliberately forced away by using a method call but the previous keyboard focus exists in a different scope.  
-  
+Logical focus differs from keyboard focus if focus is deliberately forced away by using a method call but the previous keyboard focus exists in a different scope.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -337,15 +337,15 @@
         <value>Returns a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that contains the expression.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.View.ExpressionTextBox.Expression%2A> is always required. When using the <xref:System.Activities.Presentation.View.ExpressionTextBox> declaratively to bind to arguments, you must always use the <xref:System.Activities.Presentation.Converters.ArgumentToExpressionConverter> to bind the expression to the argument, setting the `ConverterParameter` to `In` or `Out` depending on the direction of the argument.  
+<xref:System.Activities.Presentation.View.ExpressionTextBox.Expression%2A> is always required. When using the <xref:System.Activities.Presentation.View.ExpressionTextBox> declaratively to bind to arguments, you must always use the <xref:System.Activities.Presentation.Converters.ArgumentToExpressionConverter> to bind the expression to the argument, setting the `ConverterParameter` to `In` or `Out` depending on the direction of the argument.  
+ 
   
-   
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_ExpressionTextBox#10](WFD_ExpressionTextBox#10)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -459,15 +459,15 @@
         <value>Returns a <see cref="T:System.Type" /> that contains the expression type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the type is strongly recommended. If you do not set <xref:System.Activities.Presentation.View.ExpressionTextBox.ExpressionType%2A>, you can’t use the <xref:System.Activities.Presentation.View.ExpressionTextBox> to bind to delegate types and you do not get validation from the hosted compiler. This compiler validation checks to see if the type of the entered expression matches the expected type, and displays a red box around the **ExpressionTextBox** when invalid data is entered into it on an activity designer.  
+Setting the type is strongly recommended. If you do not set <xref:System.Activities.Presentation.View.ExpressionTextBox.ExpressionType%2A>, you can’t use the <xref:System.Activities.Presentation.View.ExpressionTextBox> to bind to delegate types and you do not get validation from the hosted compiler. This compiler validation checks to see if the type of the entered expression matches the expected type, and displays a red box around the **ExpressionTextBox** when invalid data is entered into it on an activity designer.  
+ 
   
-   
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_ExpressionTextBox#11](WFD_ExpressionTextBox#11)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -618,10 +618,10 @@
         <summary>Initializes this form.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is intended for use only by the markup compiler.  
-  
+This method is intended for use only by the markup compiler.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -845,10 +845,10 @@
         <value>Returns a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that contains the owner activity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_ExpressionTextBox#15](WFD_ExpressionTextBox#15)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -997,10 +997,10 @@
         <summary>Attaches events and names to compiled content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is intended for use only by the markup compiler.  
-  
+This class is intended for use only by the markup compiler.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1023,10 +1023,10 @@
           <see langword="true" /> if this instance uses the location expression; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A *location expression* (or L-value expression) is a type of expression that evaluates to an identifier and can be placed on the left hand side of an assignment statement. When you are binding the <xref:System.Activities.Presentation.View.ExpressionTextBox> to an `Out` argument, you would set this property to `True`.  
-  
+A *location expression* (or L-value expression) is a type of expression that evaluates to an identifier and can be placed on the left hand side of an assignment statement. When you are binding the <xref:System.Activities.Presentation.View.ExpressionTextBox> to an `Out` argument, you would set this property to `True`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

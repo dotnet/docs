@@ -19,10 +19,10 @@
     <summary>Represents a design-time license context that can support a license provider at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides methods for managing license keys of the associated context and a property for representing the licensing mode of the associated context.  
-  
+This class provides methods for managing license keys of the associated context and a property for representing the licensing mode of the associated context.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -104,10 +104,10 @@
         <summary>Sets a saved license key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method sets the specified license key to this license context.  
-  
+This method sets the specified license key to this license context.  
+ 
  ]]></format>
         </remarks>
       </Docs>

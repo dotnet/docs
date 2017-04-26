@@ -19,19 +19,19 @@
     <summary>The <see cref="T:System.Data.Services.ChangeInterceptorAttribute" /> on a method is used to process updates on the specified entity set name.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Resource-level change authorization and validation is implemented by methods annotated on the <xref:System.Data.Services.ChangeInterceptorAttribute>. [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] provides the infrastructure required for service developers to write per-entity change processing rules and validation.  
-  
- Entity-level access control and validation can be enforced through query interceptors. For more information, see <xref:System.Data.Services.QueryInterceptorAttribute>.  
-  
+Resource-level change authorization and validation is implemented by methods annotated on the <xref:System.Data.Services.ChangeInterceptorAttribute>. [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] provides the infrastructure required for service developers to write per-entity change processing rules and validation.  
+ 
+Entity-level access control and validation can be enforced through query interceptors. For more information, see <xref:System.Data.Services.QueryInterceptorAttribute>.  
+ 
 -  
+ 
   
-   
-  
+ 
 ## Examples  
- For more information, see the example in the <xref:System.Data.Services.QueryInterceptorAttribute> topic.  
-  
+For more information, see the example in the <xref:System.Data.Services.QueryInterceptorAttribute> topic.  
+ 
  ]]></format>
     </remarks>
   </Docs>

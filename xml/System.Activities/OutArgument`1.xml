@@ -29,26 +29,26 @@
     <summary>A binding terminal that represents the flow of data out of an activity.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Activities.OutArgument%601> is used to flow data out of an activity. If the activity is the root activity of a workflow, then it is also used to flow data out of the workflow to the workflow host. In this example, a custom `Divide` activity that has two input arguments and one output argument is used as the root activity of a workflow. The host application passes two values into the workflow and then retrieves the result of the division after the workflow completes.  
-  
- [!code-csharp[CFX_WorkflowInvokerExample#20](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowinvokerexample/cs/program.cs#20)]  
-  
- The `Divide` activity uses arguments to receive the input values and to provide the computed result values. The `Remainder` <xref:System.Activities.OutArgument%601> is used to pass out the remainder of the division, and the <xref:System.Activities.Activity%601.Result%2A> output argument provided by <xref:System.Activities.Activity%601> derived activities is used to pass out the quotient.  
-  
+An <xref:System.Activities.OutArgument%601> is used to flow data out of an activity. If the activity is the root activity of a workflow, then it is also used to flow data out of the workflow to the workflow host. In this example, a custom `Divide` activity that has two input arguments and one output argument is used as the root activity of a workflow. The host application passes two values into the workflow and then retrieves the result of the division after the workflow completes.  
+ 
+[!code-csharp[CFX_WorkflowInvokerExample#20](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowinvokerexample/cs/program.cs#20)]  
+ 
+The `Divide` activity uses arguments to receive the input values and to provide the computed result values. The `Remainder` <xref:System.Activities.OutArgument%601> is used to pass out the remainder of the division, and the <xref:System.Activities.Activity%601.Result%2A> output argument provided by <xref:System.Activities.Activity%601> derived activities is used to pass out the quotient.  
+ 
 > [!NOTE]
 >  If your custom activity is derived from the generic <xref:System.Activities.CodeActivity%601> with an <xref:System.Int32> as its generic type argument, when you invoke the activity with the <xref:System.Activities.WorkflowInvoker> Invoke method, it returns an <xref:System.Int32> value. In Addition, the <xref:System.Activities.CodeActivity%601.Execute%2A?displayProperty=fullName> method will return an <xref:System.Int32> value instead of `void` and you do not need to set a return value.  
+ 
+[!code-csharp[CFX_WorkflowApplicationExample#120](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#120)]  
+ 
   
- [!code-csharp[CFX_WorkflowApplicationExample#120](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#120)]  
-  
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates creating an <xref:System.Activities.OutArgument%601>. This example is from the Formatter sample.  
-  
- [!code-csharp[wfs_Formatter#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_formatter/cs/program.cs#1)]  
-  
+The following code sample demonstrates creating an <xref:System.Activities.OutArgument%601>. This example is from the Formatter sample.  
+ 
+[!code-csharp[wfs_Formatter#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_formatter/cs/program.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,12 +67,12 @@
         <summary>Initialize a new instance of the <see cref="T:System.Activities.OutArgument`1" /> class using default values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates creating an <xref:System.Activities.OutArgument%601>. This example is from the Formatter sample.  
-  
- [!code-csharp[wfs_Formatter#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_formatter/cs/program.cs#1)]  
-  
+The following code sample demonstrates creating an <xref:System.Activities.OutArgument%601>. This example is from the Formatter sample.  
+ 
+[!code-csharp[wfs_Formatter#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_formatter/cs/program.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

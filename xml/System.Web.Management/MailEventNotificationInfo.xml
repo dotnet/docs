@@ -14,12 +14,12 @@
     <summary>Provides information to the <see cref="T:System.Web.Management.TemplatedMailWebEventProvider" /> object about the current event notification.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used to pass information to the e-mail template for a <xref:System.Web.Management.TemplatedMailWebEventProvider> object when an event notification occurs. The e-mail template then formats the event information for the e-mail message body.  
-  
- A notification occurs when buffering is disabled, the event-buffering system sends out messages for accumulated events, or an event occurs and the event-buffering system is disabled.  
-  
+This class is used to pass information to the e-mail template for a <xref:System.Web.Management.TemplatedMailWebEventProvider> object when an event notification occurs. The e-mail template then formats the event information for the e-mail message body.  
+ 
+A notification occurs when buffering is disabled, the event-buffering system sends out messages for accumulated events, or an event occurs and the event-buffering system is disabled.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <value>The number of events discarded by the buffer since the last notification.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Events are discarded if the buffer has overloaded since the last notification.  
-  
+Events are discarded if the buffer has overloaded since the last notification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -84,12 +84,12 @@
         <value>The number of events discarded by the buffer because the buffer has exceeded the message limit for the current notification.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The message limit specifies the maximum number of messages that are sent during a single notification, which is the maximum number of messages per notification multiplied by the maximum number of events allowed per message. These values are specified by the `maxEventsPerMessage` and the `maxMessagesPerNotification` attributes in the appropriate provider sub-section of the `healthMonitoring` section in a configuration file.  
-  
- A notification occurs when the event-buffering system sends out messages for accumulated events. This may occur because the buffer has accumulated the maximum allowed number of events, because the time interval between sending events has expired, or because the health-monitoring system has requested a buffer flush. The entire event buffer is sent to the recipients in as few messages as possible, based on the `maxEventsPerMessage` value. Buffer settings are specified in the `bufferModes` subsection of the `healthMonitoring` section in a configuration file.  
-  
+The message limit specifies the maximum number of messages that are sent during a single notification, which is the maximum number of messages per notification multiplied by the maximum number of events allowed per message. These values are specified by the `maxEventsPerMessage` and the `maxMessagesPerNotification` attributes in the appropriate provider sub-section of the `healthMonitoring` section in a configuration file.  
+ 
+A notification occurs when the event-buffering system sends out messages for accumulated events. This may occur because the buffer has accumulated the maximum allowed number of events, because the time interval between sending events has expired, or because the health-monitoring system has requested a buffer flush. The entire event buffer is sent to the recipients in as few messages as possible, based on the `maxEventsPerMessage` value. Buffer settings are specified in the `bufferModes` subsection of the `healthMonitoring` section in a configuration file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,10 +129,10 @@
         <value>The number of events being processed for the current notification.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This count only includes events for the current notification and does not include events dropped by the buffer or excluded because of the message limit.  
-  
+This count only includes events for the current notification and does not include events dropped by the buffer or excluded because of the message limit.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,10 +154,10 @@
         <value>The number of events remaining in the buffer after the current notification.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This count does not include events dropped by the buffer or excluded because of the message limit.  
-  
+This count does not include events dropped by the buffer or excluded because of the message limit.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
         <value>A <see cref="T:System.Web.Mail.MailMessage" /> that specifies the e-mail message to send.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Mail.MailMessage> object provided by this property is complete except for the message body, which is the part the template creates. The template can modify the values of the <xref:System.Web.Mail.MailMessage> object, if appropriate.  
-  
+The <xref:System.Web.Mail.MailMessage> object provided by this property is complete except for the message body, which is the part the template creates. The template can modify the values of the <xref:System.Web.Mail.MailMessage> object, if appropriate.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,12 +222,12 @@
         <value>The position of this message in the sequence for the current notification.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The sequence numbers start at 1 for the first message.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,12 +267,12 @@
         <value>The position of this notification within the total number of notifications made to date.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  The sequence numbers start at 1 for the first notification.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

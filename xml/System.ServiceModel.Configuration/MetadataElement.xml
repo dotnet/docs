@@ -90,10 +90,10 @@
         <value>A <see cref="T:System.ServiceModel.Configuration.PolicyImporterElementCollection" /> that specifies the import of custom policy assertions about bindings.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A policy importer is used to search custom policy assertions about binding features, as well as attach a custom binding element that implements the features the assertion requires.  
-  
+A policy importer is used to search custom policy assertions about binding features, as well as attach a custom binding element that implements the features the assertion requires.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,12 +138,12 @@
         <value>A collection of WSDL importers that imports Web Services Description Language (WSDL) 1.1 metadata with WS Policy attachments.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ServiceModel.Description.WsdlImporter> is used to import metadata as well as convert that information into various classes that represent contract and endpoint information.  
-  
- It can selectively import contract and endpoint information and properties that expose any import errors and accept type information relevant to the import and conversion process. It also supports importing binding information and properties that provide access to any policy documents, WSDL documents, WSDL extensions, and XML schema documents.  
-  
+A <xref:System.ServiceModel.Description.WsdlImporter> is used to import metadata as well as convert that information into various classes that represent contract and endpoint information.  
+ 
+It can selectively import contract and endpoint information and properties that expose any import errors and accept type information relevant to the import and conversion process. It also supports importing binding information and properties that provide access to any policy documents, WSDL documents, WSDL extensions, and XML schema documents.  
+ 
  ]]></format>
         </remarks>
       </Docs>

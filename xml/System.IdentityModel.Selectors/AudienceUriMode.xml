@@ -13,16 +13,16 @@
     <summary>Specifies whether the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token's <see cref="T:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition" /> should be validated.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IdentityModel.Selectors.AudienceUriMode> property in a federated application that utilizes a security token service (STS) that issues <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens. When the STS issues the security token, it can specify the URI of the Web services for which the security token is intended by adding a <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> to the security token. That allows the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> for the recipient Web service to verify that the issued security token is intended for this Web service by specifying that this check should happen by doing the following:  
-  
+Use the <xref:System.IdentityModel.Selectors.AudienceUriMode> property in a federated application that utilizes a security token service (STS) that issues <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens. When the STS issues the security token, it can specify the URI of the Web services for which the security token is intended by adding a <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> to the security token. That allows the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> for the recipient Web service to verify that the issued security token is intended for this Web service by specifying that this check should happen by doing the following:  
+ 
 -   Set the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A> property to Always or BearerKeyOnly.  
-  
+ 
 -   Specify the set of valid URIs, by adding the URIs to the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A> collection.  
-  
- Optionally, override the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ValidateAudienceRestriction%2A> method to specify the validation algorithm to use for the allowed URI.  
-  
+ 
+Optionally, override the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.ValidateAudienceRestriction%2A> method to specify the validation algorithm to use for the allowed URI.  
+ 
  ]]></format>
     </remarks>
   </Docs>

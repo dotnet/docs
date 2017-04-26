@@ -172,10 +172,10 @@
         <value>A <see cref="T:System.IO.Stream" /> object representing the input stream from which the manifest was read.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter> uses this property to reconstitute input that is not represented in the object representation.  
-  
+<xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter> uses this property to reconstitute input that is not represented in the object representation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,10 +225,10 @@
         <value>A <see langword="Boolean" /> value indicating whether the manifest is operating in read-only or read-write mode.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you only need to read a manifest, set this flag to `True`. If you need to write a new manifest, set this flag to `False`. The default is `False`. This property provides additional context for the manifest generator, and affects how some error messages are reported.  
-  
+If you only need to read a manifest, set this flag to `True`. If you need to write a new manifest, set this flag to `False`. The default is `False`. This property provides additional context for the manifest generator, and affects how some error messages are reported.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,10 +250,10 @@
         <summary>Locates all specified assembly and file references by searching in the same directory as the loaded manifest, or in the current directory.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The location of each referenced assembly and file is required for hash computation and assembly identity resolution. Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
-  
+The location of each referenced assembly and file is required for hash computation and assembly identity resolution. Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -278,10 +278,10 @@
         <summary>Locates all specified assembly and file references by searching in the specified directories.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The location of each referenced assembly and file is required for hash computation and assembly identity resolution. Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
-  
+The location of each referenced assembly and file is required for hash computation and assembly identity resolution. Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -345,10 +345,10 @@
         <summary>Updates file information for each referenced assembly and file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The file information includes a hash computation and a file size for each referenced file and assembly. Also, the assembly identity is obtained for any referenced assemblies with an unspecified assembly identity. Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
-  
+The file information includes a hash computation and a file size for each referenced file and assembly. Also, the assembly identity is obtained for any referenced assemblies with an unspecified assembly identity. Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,10 +373,10 @@
         <summary>Updates file information for each referenced assembly and file, using the specified version of the target framework.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The file information includes a hash computation and a file size for each referenced file and assembly. Also, the assembly identity is obtained for any referenced assemblies with an unspecified assembly identity. Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
-  
+The file information includes a hash computation and a file size for each referenced file and assembly. Also, the assembly identity is obtained for any referenced assemblies with an unspecified assembly identity. Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,10 +398,10 @@
         <summary>Performs various checks to verify the validity of the manifest.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
-  
+Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -423,10 +423,10 @@
         <summary>Validates the manifest platform.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
-  
+Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -585,10 +585,10 @@
         <summary>Updates file information for each referenced assembly and file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The file information includes a hash computation and a file size for each referenced file and assembly. Also, the assembly identity is obtained for any referenced assemblies with an unspecified assembly identity. Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
-  
+The file information includes a hash computation and a file size for each referenced file and assembly. Also, the assembly identity is obtained for any referenced assemblies with an unspecified assembly identity. Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

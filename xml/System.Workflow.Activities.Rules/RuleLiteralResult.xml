@@ -50,10 +50,10 @@
         <value>The result of the expression.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.InvalidOperationException> is thrown every time an attempt to set <xref:System.Workflow.Activities.Rules.RuleLiteralResult.Value%2A> occurs.  
-  
+The <xref:System.InvalidOperationException> is thrown every time an attempt to set <xref:System.Workflow.Activities.Rules.RuleLiteralResult.Value%2A> occurs.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">

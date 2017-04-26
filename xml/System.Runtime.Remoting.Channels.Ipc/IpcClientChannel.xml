@@ -21,33 +21,33 @@
     <summary>Implements a client channel for remote calls that uses the IPC protocol to transmit messages.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Channels are used by the.NET Framework remoting infrastructure to transport remote calls. When a client calls a remote object, the call is serialized into a message that is sent by a client channel and received by a server channel. After the message is received, it is deserialized and processed. Any returned values are transmitted by the server channel and received by the client channel.  
+Channels are used by the.NET Framework remoting infrastructure to transport remote calls. When a client calls a remote object, the call is serialized into a message that is sent by a client channel and received by a server channel. After the message is received, it is deserialized and processed. Any returned values are transmitted by the server channel and received by the client channel.  
+ 
+The <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel> class uses the Windows interprocess communication (IPC) system to transport messages between application domains on the same computer. When communicating between application domains on the same computer, the IPC channel is much faster than the TCP or HTTP channels.  
+ 
+To perform additional processing of messages on the client side, you can specify an implementation of the <xref:System.Runtime.Remoting.Channels.IClientChannelSinkProvider> interface through which all messages processed by the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel> object will be passed.  
+ 
+By default, the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel> class uses a binary formatter to serialize all messages.  
+ 
+A <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=fullName> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.%23ctor%2A> constructor). For a list of these configuration properties, see the documentation for the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.%23ctor%2A> constructor.  
+ 
   
- The <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel> class uses the Windows interprocess communication (IPC) system to transport messages between application domains on the same computer. When communicating between application domains on the same computer, the IPC channel is much faster than the TCP or HTTP channels.  
-  
- To perform additional processing of messages on the client side, you can specify an implementation of the <xref:System.Runtime.Remoting.Channels.IClientChannelSinkProvider> interface through which all messages processed by the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel> object will be passed.  
-  
- By default, the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel> class uses a binary formatter to serialize all messages.  
-  
- A <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=fullName> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.%23ctor%2A> constructor). For a list of these configuration properties, see the documentation for the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.%23ctor%2A> constructor.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel> class.  
-  
- [!code-cpp[Remoting_Ipc#20](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Ipc/CPP/client.cpp#20)]
- [!code-csharp[Remoting_Ipc#20](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Ipc/CS/client.cs#20)]  
-  
- The preceding code uses the following remote object.  
-  
- [!code-cpp[Remoting_Ipc#0](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Ipc/CPP/counter.cpp#0)]
- [!code-csharp[Remoting_Ipc#0](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Ipc/CS/counter.cs#0)]  
-  
- For an example of a server that exposes this object remotely, see <xref:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel>.  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel> class.  
+ 
+[!code-cpp[Remoting_Ipc#20](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Ipc/CPP/client.cpp#20)]
+[!code-csharp[Remoting_Ipc#20](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Ipc/CS/client.cs#20)]  
+ 
+The preceding code uses the following remote object.  
+ 
+[!code-cpp[Remoting_Ipc#0](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Ipc/CPP/counter.cpp#0)]
+[!code-csharp[Remoting_Ipc#0](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Ipc/CS/counter.cs#0)]  
+ 
+For an example of a server that exposes this object remotely, see <xref:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,23 +66,23 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Ipc.IpcServerChannel" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The configuration properties of the <xref:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel> instance returned by this constructor are all set to their default values. The following table shows the default value for each configuration property.  
-  
+The configuration properties of the <xref:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel> instance returned by this constructor are all set to their default values. The following table shows the default value for each configuration property.  
+ 
 |Configuration property|Description|  
 |----------------------------|-----------------|  
 |`name`|The default name is "ipc client". Each channel must have a unique name.|  
 |`priority`|The default priority is 1.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cpp[Remoting_Ipc#21](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Ipc/CPP/client.cpp#21)]
- [!code-csharp[Remoting_Ipc#21](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Ipc/CS/client.cs#21)]  
-  
+The following code example shows how to use this constructor.  
+ 
+[!code-cpp[Remoting_Ipc#21](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Ipc/CPP/client.cpp#21)]
+[!code-csharp[Remoting_Ipc#21](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Ipc/CS/client.cs#21)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,20 +106,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel" /> class with the specified configuration properties and sink.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ 
+If you do not require sink functionality, set the `sinkProvider` parameter to `null`.  
+ 
   
- If you do not require sink functionality, set the `sinkProvider` parameter to `null`.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#41](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CPP/client2.cpp#41)]
- [!code-csharp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#41](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CS/client2.cs#41)]  
-  
+The following code example shows how to use this constructor.  
+ 
+[!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#41](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CPP/client2.cpp#41)]
+[!code-csharp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#41](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CS/client2.cs#41)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,20 +143,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel" /> class with the specified name and sink.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.ChannelName%2A> property by using the `name` parameter. If you want to register more than one channel, each channel must have a unique name.  
+This constructor sets the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.ChannelName%2A> property by using the `name` parameter. If you want to register more than one channel, each channel must have a unique name.  
+ 
+If you do not require sink functionality, set the `sinkProvider` parameter to `null`.  
+ 
   
- If you do not require sink functionality, set the `sinkProvider` parameter to `null`.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use this constructor.  
-  
- [!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#42](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CPP/client2.cpp#42)]
- [!code-csharp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#42](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CS/client2.cs#42)]  
-  
+The following code example shows how to use this constructor.  
+ 
+[!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#42](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CPP/client2.cpp#42)]
+[!code-csharp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#42](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CS/client2.cs#42)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,18 +178,18 @@
         <value>A <see cref="T:System.String" /> instance that contains the name of the channel.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Every registered channel has a unique name. The name is used to retrieve a specific channel when calling the <xref:System.Runtime.Remoting.Channels.ChannelServices.GetChannel%2A?displayProperty=fullName> method. The default name is "ipc client".  
+Every registered channel has a unique name. The name is used to retrieve a specific channel when calling the <xref:System.Runtime.Remoting.Channels.ChannelServices.GetChannel%2A?displayProperty=fullName> method. The default name is "ipc client".  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.ChannelName%2A> property.  
-  
- [!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#21](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CPP/client.cpp#21)]
- [!code-csharp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#21](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CS/client.cs#21)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.ChannelName%2A> property.  
+ 
+[!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#21](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CPP/client.cpp#21)]
+[!code-csharp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#21](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CS/client.cs#21)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,18 +211,18 @@
         <value>An integer that indicates the priority assigned to the channel.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The priority controls the order in which competing clients connect to a given endpoint; higher priority channels connect before lower priority channels. The default priority is 1; negative priorities are allowed.  
+The priority controls the order in which competing clients connect to a given endpoint; higher priority channels connect before lower priority channels. The default priority is 1; negative priorities are allowed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.ChannelPriority%2A> property.  
-  
- [!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#23](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CPP/client.cpp#23)]
- [!code-csharp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#23](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CS/client.cs#23)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.ChannelPriority%2A> property.  
+ 
+[!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#23](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CPP/client.cpp#23)]
+[!code-csharp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#23](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CS/client.cs#23)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,18 +252,18 @@
         <returns>A channel message sink that delivers messages to the specified URL or channel data object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.CreateMessageSink%2A> method returns a channel message sink that delivers messages to either the specified URL or the channel data object. If the `uri` parameter is `null`, `remoteChannelData` is used as a target for the sink. Either the `url` or `remoteChannelData` parameters can be `null`, but not both.  
+The <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.CreateMessageSink%2A> method returns a channel message sink that delivers messages to either the specified URL or the channel data object. If the `uri` parameter is `null`, `remoteChannelData` is used as a target for the sink. Either the `url` or `remoteChannelData` parameters can be `null`, but not both.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.CreateMessageSink%2A> method.  
-  
- [!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#22](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CPP/client.cpp#22)]
- [!code-csharp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#22](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CS/client.cs#22)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.CreateMessageSink%2A> method.  
+ 
+[!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#22](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CPP/client.cpp#22)]
+[!code-csharp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#22](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CS/client.cs#22)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Remoting.RemotingException">The provided sink does not implement <see cref="T:System.Runtime.Remoting.Messaging.IMessageSink" />.</exception>
@@ -310,13 +310,13 @@
         <returns>A <see cref="T:System.String" /> that contains the channel URI.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.Parse%2A> method.  
-  
- [!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#24](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CPP/client.cpp#24)]
- [!code-csharp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#24](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CS/client.cs#24)]  
-  
+The following code example shows how to use the <xref:System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.Parse%2A> method.  
+ 
+[!code-cpp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#24](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CPP/client.cpp#24)]
+[!code-csharp[System.Runtime.Remoting.Channels.Ipc.IpcClientChannel#24](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Channels.Ipc.IpcClientChannel/CS/client.cs#24)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

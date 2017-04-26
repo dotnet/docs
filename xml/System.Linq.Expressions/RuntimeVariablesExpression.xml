@@ -30,10 +30,10 @@
     <summary>An expression that provides runtime read/write permission for variables.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type is necessary for implementing "eval" in dynamic languages. It evaluates to an instance of <xref:System.Collections.Generic.IList%601> at run time.  
-  
+This type is necessary for implementing "eval" in dynamic languages. It evaluates to an instance of <xref:System.Collections.Generic.IList%601> at run time.  
+ 
  ]]></format>
     </remarks>
   </Docs>

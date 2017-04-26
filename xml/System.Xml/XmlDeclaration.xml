@@ -23,10 +23,10 @@
     <summary>Represents the XML declaration node &lt;?xml version='1.0'...?&gt;.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is a Microsoft extension to the Document Object Model (DOM).  
-  
+This class is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,10 +63,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlDeclaration" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not instantiate an <xref:System.Xml.XmlDeclaration> directly; instead, use methods such as <xref:System.Xml.XmlDocument.CreateNode%2A>.  
-  
+Do not instantiate an <xref:System.Xml.XmlDeclaration> directly; instead, use methods such as <xref:System.Xml.XmlDocument.CreateNode%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,12 +102,12 @@
         <returns>The cloned node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `CloneNode` serves as a copy constructor for nodes. To see how this method behaves with other node types, see <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=fullName>.  
-  
- The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
-  
+`CloneNode` serves as a copy constructor for nodes. To see how this method behaves with other node types, see <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=fullName>.  
+ 
+The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,19 +185,19 @@
  If an encoding attribute is not included, UTF-8 encoding is assumed when the document is written or saved out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike most XML attributes, encoding attribute values are not case-sensitive. This is because encoding character names follow ISO and Internet Assigned Numbers Authority (IANA) standards.  
+Unlike most XML attributes, encoding attribute values are not case-sensitive. This is because encoding character names follow ISO and Internet Assigned Numbers Authority (IANA) standards.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an `XmlDeclaration` node and adds it to an XML document.  
-  
- [!code-cpp[Classic WebData XmlDeclaration.Encoding Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDeclaration.Encoding Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDeclaration.Encoding Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDeclaration.Encoding Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDeclaration.Encoding Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDeclaration.Encoding Example/VB/source.vb#1)]  
-  
+The following example creates an `XmlDeclaration` node and adds it to an XML document.  
+ 
+[!code-cpp[Classic WebData XmlDeclaration.Encoding Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDeclaration.Encoding Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDeclaration.Encoding Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDeclaration.Encoding Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDeclaration.Encoding Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDeclaration.Encoding Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -336,14 +336,14 @@
         <value>Valid values are <see langword="yes" /> if all entity declarations required by the XML document are contained within the document or <see langword="no" /> if an external document type definition (DTD) is required. If a standalone attribute is not present in the XML declaration, this property returns String.Empty.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an `XmlDeclaration` node and adds it to an XML document.  
-  
- [!code-cpp[Classic WebData XmlDeclaration.Standalone Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDeclaration.Standalone Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlDeclaration.Standalone Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDeclaration.Standalone Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlDeclaration.Standalone Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDeclaration.Standalone Example/VB/source.vb#1)]  
-  
+The following example creates an `XmlDeclaration` node and adds it to an XML document.  
+ 
+[!code-cpp[Classic WebData XmlDeclaration.Standalone Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDeclaration.Standalone Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlDeclaration.Standalone Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDeclaration.Standalone Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlDeclaration.Standalone Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDeclaration.Standalone Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -461,10 +461,10 @@
         <summary>Saves the node to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the encoding and standalone attributes are determined by the <xref:System.Xml.XmlDeclaration.Encoding%2A> and <xref:System.Xml.XmlDeclaration.Standalone%2A> properties. If either of the properties is not set, the corresponding attribute is not written. The version attribute is always written out with a value of 1.0.  
-  
+The value of the encoding and standalone attributes are determined by the <xref:System.Xml.XmlDeclaration.Encoding%2A> and <xref:System.Xml.XmlDeclaration.Standalone%2A> properties. If either of the properties is not set, the corresponding attribute is not written. The version attribute is always written out with a value of 1.0.  
+ 
  ]]></format>
         </remarks>
       </Docs>

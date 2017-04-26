@@ -19,19 +19,19 @@
     <summary>Classes that derive from this abstract base class define 3D geometric shapes. The <see cref="T:System.Windows.Media.Media3D.Geometry3D" /> class of objects can be used for hit-testing and rendering 3D graphic data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.Media3D.Geometry3D> by itself has no appearance. To render a <xref:System.Windows.Media.Media3D.Geometry3D>, use a <xref:System.Windows.Media.Media3D.GeometryModel3D> to combine the <xref:System.Windows.Media.Media3D.Geometry3D> with a <xref:System.Windows.Media.Media3D.Material>.  
+A <xref:System.Windows.Media.Media3D.Geometry3D> by itself has no appearance. To render a <xref:System.Windows.Media.Media3D.Geometry3D>, use a <xref:System.Windows.Media.Media3D.GeometryModel3D> to combine the <xref:System.Windows.Media.Media3D.Geometry3D> with a <xref:System.Windows.Media.Media3D.Material>.  
+ 
+<xref:System.Windows.Media.Media3D.MeshGeometry3D> is the concrete instance of a <xref:System.Windows.Media.Media3D.Geometry3D>.  To render a 3D shape, compose a <xref:System.Windows.Media.Media3D.GeometryModel3D> by specifying a MeshGeometry3D and a Material.  
+ 
   
- <xref:System.Windows.Media.Media3D.MeshGeometry3D> is the concrete instance of a <xref:System.Windows.Media.Media3D.Geometry3D>.  To render a 3D shape, compose a <xref:System.Windows.Media.Media3D.GeometryModel3D> by specifying a MeshGeometry3D and a Material.  
-  
-   
-  
+ 
 ## Examples  
- The following example illustrates how a <xref:System.Windows.Media.Media3D.MeshGeometry3D> is combined with a <xref:System.Windows.Media.Media3D.Material> using a <xref:System.Windows.Media.Media3D.GeometryModel3D>.  
-  
- [!code-xml[basic3d#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
-  
+The following example illustrates how a <xref:System.Windows.Media.Media3D.MeshGeometry3D> is combined with a <xref:System.Windows.Media.Media3D.Material> using a <xref:System.Windows.Media.Media3D.GeometryModel3D>.  
+ 
+[!code-xml[basic3d#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,12 +72,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,12 +100,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,10 +19,10 @@
     <summary>Represents a collection of message headers that are understood. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class contains a collection of message headers that are understood. SOAP processors at various layers (Security, Reliability, Transaction and application dispatcher) must add their MustUnderstand headers to this collection after processing the headers. The dispatcher throws a `MessageHeader` fault if a header exists in the `Message.Headers` collection that must be understood, but is not found in this collection.  
-  
+This class contains a collection of message headers that are understood. SOAP processors at various layers (Security, Reliability, Transaction and application dispatcher) must add their MustUnderstand headers to this collection after processing the headers. The dispatcher throws a `MessageHeader` fault if a header exists in the `Message.Headers` collection that must be understood, but is not found in this collection.  
+ 
  ]]></format>
     </remarks>
   </Docs>

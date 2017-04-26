@@ -23,10 +23,10 @@
     <summary>The exception that is thrown when an error is made while using a network protocol.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Net.ProtocolViolationException> is thrown by descendants of <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> to indicate an error using the underlying protocol. For example, the <xref:System.Net.HttpWebRequest> and <xref:System.Net.HttpWebResponse> classes throw a <xref:System.Net.ProtocolViolationException> to indicate an error using HTTP.  
-  
+A <xref:System.Net.ProtocolViolationException> is thrown by descendants of <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> to indicate an error using the underlying protocol. For example, the <xref:System.Net.HttpWebRequest> and <xref:System.Net.HttpWebResponse> classes throw a <xref:System.Net.ProtocolViolationException> to indicate an error using HTTP.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.ProtocolViolationException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Exception.Message%2A> property is initialized to a system-supplied message that describes the error. The <xref:System.Exception.InnerException%2A> property is initialized to `null`.  
-  
+The <xref:System.Exception.Message%2A> property is initialized to a system-supplied message that describes the error. The <xref:System.Exception.InnerException%2A> property is initialized to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.ProtocolViolationException" /> class with the specified message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes a new instance of the <xref:System.Net.ProtocolViolationException> class with the <xref:System.Exception.Message%2A> property set to the value of the `message` parameter. If `message` is a null reference, the `Message` property is initialized to a system-supplied message. The `InnerException` property is initialized to `null`.  
-  
+This constructor initializes a new instance of the <xref:System.Net.ProtocolViolationException> class with the <xref:System.Exception.Message%2A> property set to the value of the `message` parameter. If `message` is a null reference, the `Message` property is initialized to a system-supplied message. The `InnerException` property is initialized to `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.ProtocolViolationException" /> class from the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> instances.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.ProtocolViolationException> class.  
-  
+This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.ProtocolViolationException> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data required to serialize the target object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any objects included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
-  
+Any objects included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
+ 
  ]]></format>
         </remarks>
       </Docs>

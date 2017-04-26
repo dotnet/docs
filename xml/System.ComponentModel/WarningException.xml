@@ -19,19 +19,19 @@
     <summary>Specifies an exception that is handled as a warning instead of an error.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this exception is not caught, it is presented to the user as a warning message. In the <xref:System.ComponentModel.WarningException> constructor, you can specify the Help file and Help topic to display if the user requests more information.  
+If this exception is not caught, it is presented to the user as a warning message. In the <xref:System.ComponentModel.WarningException> constructor, you can specify the Help file and Help topic to display if the user requests more information.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to catch a warning and interpret its warning message.  
-  
- [!code-cpp[WarningException#1](~/samples/snippets/cpp/VS_Snippets_Winforms/WarningException/CPP/warningex_doc.cpp#1)]
- [!code-csharp[WarningException#1](~/samples/snippets/csharp/VS_Snippets_Winforms/WarningException/CS/warningex_doc.cs#1)]
- [!code-vb[WarningException#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/WarningException/VB/warningex_doc.vb#1)]  
-  
+The following code example shows how to catch a warning and interpret its warning message.  
+ 
+[!code-cpp[WarningException#1](~/samples/snippets/cpp/VS_Snippets_Winforms/WarningException/CPP/warningex_doc.cpp#1)]
+[!code-csharp[WarningException#1](~/samples/snippets/csharp/VS_Snippets_Winforms/WarningException/CS/warningex_doc.cs#1)]
+[!code-vb[WarningException#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/WarningException/VB/warningex_doc.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

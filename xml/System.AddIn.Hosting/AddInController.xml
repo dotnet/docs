@@ -14,28 +14,28 @@
     <summary>Provides access to an add-in for a variety of tasks.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this class to perform the following tasks:  
-  
+Use this class to perform the following tasks:  
+ 
 -   Use the <xref:System.AddIn.Hosting.AddInController.AddInEnvironment%2A> property to obtain an <xref:System.AddIn.Hosting.AddInEnvironment> object for an add-in. Then use that object to activate other add-ins in the same application domain and process as the original add-in.  
-  
+ 
 -   Use the <xref:System.AddIn.Hosting.AddInController.AppDomain%2A> property to obtain an <xref:System.AppDomain> object for an add-in. Then use that object to activate other add-ins in the same application domain as the original add-in. Note that because of limitations in cross-process remoting, this scenario will not work with add-ins that are activated in a separate process.  
-  
+ 
 -   Use the <xref:System.AddIn.Hosting.AddInController.Token%2A> property to obtain an <xref:System.AddIn.Hosting.AddInToken> object that represents an add-in.  
-  
+ 
 -   Shut down an add-in with the <xref:System.AddIn.Hosting.AddInController.Shutdown%2A> method.  
+ 
+To obtain the controller for an add-in, call the <xref:System.AddIn.Hosting.AddInController.GetAddInController%2A> method and pass an instance of the add-in as its parameter.  
+ 
   
- To obtain the controller for an add-in, call the <xref:System.AddIn.Hosting.AddInController.GetAddInController%2A> method and pass an instance of the add-in as its parameter.  
-  
-   
-  
+ 
 ## Examples  
- The following example activates an add-in within the same environment as a previously activated add-in by using an <xref:System.AddIn.Hosting.AddInController> object.  
-  
- [!code-csharp[AddInP3Host#8](~/samples/snippets/csharp/VS_Snippets_CLR/addinP3Host/cs/P3Host.cs#8)]
- [!code-vb[AddInP3Host#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/addinP3Host/vb/p3host.vb#8)]  
-  
+The following example activates an add-in within the same environment as a previously activated add-in by using an <xref:System.AddIn.Hosting.AddInController> object.  
+ 
+[!code-csharp[AddInP3Host#8](~/samples/snippets/csharp/VS_Snippets_CLR/addinP3Host/cs/P3Host.cs#8)]
+[!code-vb[AddInP3Host#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/addinP3Host/vb/p3host.vb#8)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,18 +57,18 @@
         <value>An object that can be used to activate other add-ins in the same environment as the original add-in.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to get the <xref:System.AddIn.Hosting.AddInEnvironment> object for an add-in. Then use that object to activate other add-ins in the same application domain and process as the original add-in.  
+Use this property to get the <xref:System.AddIn.Hosting.AddInEnvironment> object for an add-in. Then use that object to activate other add-ins in the same application domain and process as the original add-in.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example activates a second add-in within the same environment as the first add-in.  
-  
- [!code-csharp[AddInP3Host#8](~/samples/snippets/csharp/VS_Snippets_CLR/addinP3Host/cs/P3Host.cs#8)]
- [!code-vb[AddInP3Host#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/addinP3Host/vb/p3host.vb#8)]  
-  
+The following example activates a second add-in within the same environment as the first add-in.  
+ 
+[!code-csharp[AddInP3Host#8](~/samples/snippets/csharp/VS_Snippets_CLR/addinP3Host/cs/P3Host.cs#8)]
+[!code-vb[AddInP3Host#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/addinP3Host/vb/p3host.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,18 +90,18 @@
         <value>The application domain of the add-in.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to obtain an add-in's <xref:System.AppDomain> object and to activate other add-ins in the same application domain.  
+Use this property to obtain an add-in's <xref:System.AppDomain> object and to activate other add-ins in the same application domain.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example activates a second add-in in the same application domain as the first add-in.  
-  
- [!code-csharp[AddInP3Host#9](~/samples/snippets/csharp/VS_Snippets_CLR/addinP3Host/cs/P3Host.cs#9)]
- [!code-vb[AddInP3Host#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/addinP3Host/vb/p3host.vb#9)]  
-  
+The following example activates a second add-in in the same application domain as the first add-in.  
+ 
+[!code-csharp[AddInP3Host#9](~/samples/snippets/csharp/VS_Snippets_CLR/addinP3Host/cs/P3Host.cs#9)]
+[!code-vb[AddInP3Host#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/addinP3Host/vb/p3host.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,10 +127,10 @@
         <returns>The controller for the add-in.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.AddIn.Hosting.AddInToken.Activate%2A> methods return an object that represents the host's view of the add-in.  
-  
+The <xref:System.AddIn.Hosting.AddInToken.Activate%2A> methods return an object that represents the host's view of the add-in.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -157,24 +157,24 @@
         <summary>Disables an add-in.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method breaks the communication pipeline between an add-in and its host. If the add-in was activated in an automatically generated application domain by using the <xref:System.AddIn.Hosting.AddInToken.Activate%60%601%28System.AddIn.Hosting.AddInSecurityLevel%29> or <xref:System.AddIn.Hosting.AddInToken.Activate%60%601%28System.Security.PermissionSet%29> methods, the <xref:System.AddIn.Hosting.AddInController.Shutdown%2A> method also unloads the application domain.  
+This method breaks the communication pipeline between an add-in and its host. If the add-in was activated in an automatically generated application domain by using the <xref:System.AddIn.Hosting.AddInToken.Activate%60%601%28System.AddIn.Hosting.AddInSecurityLevel%29> or <xref:System.AddIn.Hosting.AddInToken.Activate%60%601%28System.Security.PermissionSet%29> methods, the <xref:System.AddIn.Hosting.AddInController.Shutdown%2A> method also unloads the application domain.  
+ 
+If the add-in was loaded into its own application domain, the <xref:System.AddIn.Hosting.AddInController.Shutdown%2A> method also unloads the application domain.  
+ 
+If the add-in was loaded into an existing application domain, the host and pipeline segments will no longer have any references to that add-in. In this case, the add-in will be eligible to be reclaimed by garbage collection.  
+ 
+You can also use this class to shut down an add-in that is activated in an external process.  
+ 
   
- If the add-in was loaded into its own application domain, the <xref:System.AddIn.Hosting.AddInController.Shutdown%2A> method also unloads the application domain.  
-  
- If the add-in was loaded into an existing application domain, the host and pipeline segments will no longer have any references to that add-in. In this case, the add-in will be eligible to be reclaimed by garbage collection.  
-  
- You can also use this class to shut down an add-in that is activated in an external process.  
-  
-   
-  
+ 
 ## Examples  
- The following example obtains the <xref:System.AddIn.Hosting.AddInController> object for a host view named `manager` and then shuts down the add-in.  
-  
- [!code-csharp[AddInCollectionPipelineHost#6](~/samples/snippets/csharp/VS_Snippets_CLR/AddInCollectionPipelineHost/cs/Program.cs#6)]
- [!code-vb[AddInCollectionPipelineHost#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddInCollectionPipelineHost/vb/Program.vb#6)]  
-  
+The following example obtains the <xref:System.AddIn.Hosting.AddInController> object for a host view named `manager` and then shuts down the add-in.  
+ 
+[!code-csharp[AddInCollectionPipelineHost#6](~/samples/snippets/csharp/VS_Snippets_CLR/AddInCollectionPipelineHost/cs/Program.cs#6)]
+[!code-vb[AddInCollectionPipelineHost#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddInCollectionPipelineHost/vb/Program.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,10 +196,10 @@
         <value>An object that represents the add-in.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, you use this property to obtain a token to activate an add-in at a later time.  
-  
+Typically, you use this property to obtain a token to activate an add-in at a later time.  
+ 
  ]]></format>
         </remarks>
       </Docs>

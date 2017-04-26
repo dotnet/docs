@@ -18,28 +18,28 @@
     <summary>Changes the color space of a <see cref="T:System.Windows.Media.Imaging.BitmapSource" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For XAML usage information, see [ColorConvertedBitmap Markup Extension](~/docs/framework/wpf/advanced/colorconvertedbitmap-markup-extension.md).  
-  
- <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. Property changes can only occur during object initialization. Call <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> to signal that initialization has begun and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> to signal that initialization has completed. After initialization, property changes are ignored.  
-  
- <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> objects created using the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.%23ctor%28System.Windows.Media.Imaging.BitmapSource%2CSystem.Windows.Media.ColorContext%2CSystem.Windows.Media.ColorContext%2CSystem.Windows.Media.PixelFormat%29> constructor are automatically initialized, and property changes are ignored.  
-  
- A <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> is never cached.  
-  
+For XAML usage information, see [ColorConvertedBitmap Markup Extension](~/docs/framework/wpf/advanced/colorconvertedbitmap-markup-extension.md).  
+ 
+<xref:System.Windows.Media.Imaging.ColorConvertedBitmap> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. Property changes can only occur during object initialization. Call <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> to signal that initialization has begun and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> to signal that initialization has completed. After initialization, property changes are ignored.  
+ 
+<xref:System.Windows.Media.Imaging.ColorConvertedBitmap> objects created using the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.%23ctor%28System.Windows.Media.Imaging.BitmapSource%2CSystem.Windows.Media.ColorContext%2CSystem.Windows.Media.ColorContext%2CSystem.Windows.Media.PixelFormat%29> constructor are automatically initialized, and property changes are ignored.  
+ 
+A <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> is never cached.  
+ 
 <a name="xamlTextUsage_ColorConvertedBitmap"></a>   
 ## XAML Text Usage  
- See Remarks  
+See Remarks  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create an instance of <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> and use it to convert color.  
-  
- [!code-csharp[bitmapimageprops#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#2)]
- [!code-vb[bitmapimageprops#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#2)]  
-  
+The following example shows how to create an instance of <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> and use it to convert color.  
+ 
+[!code-csharp[bitmapimageprops#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#2)]
+[!code-vb[bitmapimageprops#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,10 +58,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. To initialize a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> created using this constructor, you must perform property initialization between <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> calls.  
-  
+<xref:System.Windows.Media.Imaging.ColorConvertedBitmap> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. To initialize a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> created using this constructor, you must perform property initialization between <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> calls.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,18 +89,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> class by using the specified values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> objects created using this constructor are automatically initialized. After initialization, property changes are ignored.  
+<xref:System.Windows.Media.Imaging.ColorConvertedBitmap> objects created using this constructor are automatically initialized. After initialization, property changes are ignored.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize an instance of <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> by using the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.%23ctor%28System.Windows.Media.Imaging.BitmapSource%2CSystem.Windows.Media.ColorContext%2CSystem.Windows.Media.ColorContext%2CSystem.Windows.Media.PixelFormat%29> constructor.  
-  
- [!code-csharp[bitmapimageprops#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#2)]
- [!code-vb[bitmapimageprops#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#2)]  
-  
+The following example shows how to initialize an instance of <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> by using the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.%23ctor%28System.Windows.Media.Imaging.BitmapSource%2CSystem.Windows.Media.ColorContext%2CSystem.Windows.Media.ColorContext%2CSystem.Windows.Media.PixelFormat%29> constructor.  
+ 
+[!code-csharp[bitmapimageprops#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#2)]
+[!code-vb[bitmapimageprops#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,18 +122,18 @@
         <summary>Signals the start of the <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> initialization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Property initialization must be done between <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> calls. After the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> has been initialized, property changes are ignored.  
+Property initialization must be done between <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> calls. After the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> has been initialized, property changes are ignored.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> with a set of properties by using the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> methods.  
-  
- [!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
- [!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
-  
+The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> with a set of properties by using the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> methods.  
+ 
+[!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
+[!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> is currently being initialized. <see cref="M:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit" /> has already been called.  
@@ -161,12 +161,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -210,12 +210,12 @@
         <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -277,29 +277,29 @@
         <value>An instance of <see cref="T:System.Windows.Media.ColorContext" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
-  
+When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
+ 
 <a name="xamlTextUsage_Property"></a>   
 ## XAML Text Usage  
-  
+ 
 <a name="dependencyPropertyInfo_DestinationColorContext"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Imaging.ColorConvertedBitmap.DestinationColorContextProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the value of the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.DestinationColorContext%2A> property.  
-  
- [!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
- [!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
-  
+The following example shows how to set the value of the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.DestinationColorContext%2A> property.  
+ 
+[!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
+[!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,29 +338,29 @@
         <value>An instance of <see cref="T:System.Windows.Media.PixelFormat" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
-  
+When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
+ 
 <a name="xamlTextUsage_Property2"></a>   
 ## XAML Text Usage  
-  
+ 
 <a name="dependencyPropertyInfo_DestinationFormat"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Imaging.ColorConvertedBitmap.DestinationFormatProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the value of the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.DestinationFormat%2A> property.  
-  
- [!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
- [!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
-  
+The following example shows how to set the value of the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.DestinationFormat%2A> property.  
+ 
+[!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
+[!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -404,18 +404,18 @@
         <summary>Signals the end of the <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> initialization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Property initialization must be done between <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> calls. After the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> has been initialized, property changes are ignored.  
+Property initialization must be done between <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> calls. After the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> has been initialized, property changes are ignored.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> method in order to change the properties of a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>.  
-  
- [!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
- [!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
-  
+The following example shows how to use the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> method in order to change the properties of a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>.  
+ 
+[!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
+[!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Media.Imaging.ColorConvertedBitmap.Source" />, <see cref="P:System.Windows.Media.Imaging.ColorConvertedBitmap.SourceColorContext" />, or <see cref="P:System.Windows.Media.Imaging.ColorConvertedBitmap.DestinationColorContext" /> property is <see langword="null" />.  
@@ -484,29 +484,29 @@
         <value>A value that identifies the source bitmap that is converted.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
-  
+When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
+ 
 <a name="xamlTextUsage_Property3"></a>   
 ## XAML Text Usage  
-  
+ 
 <a name="dependencyPropertyInfo_Source"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Imaging.ColorConvertedBitmap.SourceProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the value of the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.Source%2A> property.  
-  
- [!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
- [!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
-  
+The following example shows how to set the value of the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.Source%2A> property.  
+ 
+[!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
+[!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -528,29 +528,29 @@
         <value>An instance of <see cref="T:System.Windows.Media.ColorContext" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
-  
+When you make property changes to a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap>, the changes must be done within a <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> block.  
+ 
 <a name="xamlTextUsage_Property4"></a>   
 ## XAML Text Usage  
-  
+ 
 <a name="dependencyPropertyInfo_SourceColorContext"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.Imaging.ColorConvertedBitmap.SourceColorContextProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set the value of the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.SourceColorContext%2A> property.  
-  
- [!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
- [!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
-  
+The following example shows how to set the value of the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.SourceColorContext%2A> property.  
+ 
+[!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
+[!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -571,10 +571,10 @@
         <summary>Identifies the <see cref="P:System.Windows.Media.Imaging.ColorConvertedBitmap.SourceColorContext" /> dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier for the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.SourceColorContext%2A> dependency property.  
-  
+The identifier for the <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.SourceColorContext%2A> dependency property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -29,10 +29,10 @@
     <summary>A binding terminal that represents the flow of data into an activity.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In this example, a workflow is created that consists of a single <xref:System.Activities.Statements.WriteLine> activity. The <xref:System.Activities.Statements.WriteLine> activity has an <xref:System.Activities.InArgument%601> named <xref:System.Activities.Statements.WriteLine.Text%2A>. The host application creates an instance of the workflow and passes a string, which maps to the <xref:System.Activities.Statements.WriteLine.Text%2A> argument of the <xref:System.Activities.Statements.WriteLine> and is used by the <xref:System.Activities.Statements.WriteLine> activity.  
-  
+In this example, a workflow is created that consists of a single <xref:System.Activities.Statements.WriteLine> activity. The <xref:System.Activities.Statements.WriteLine> activity has an <xref:System.Activities.InArgument%601> named <xref:System.Activities.Statements.WriteLine.Text%2A>. The host application creates an instance of the workflow and passes a string, which maps to the <xref:System.Activities.Statements.WriteLine.Text%2A> argument of the <xref:System.Activities.Statements.WriteLine> and is used by the <xref:System.Activities.Statements.WriteLine> activity.  
+ 
 ```csharp  
 Activity wf = new WriteLine();  
   
@@ -42,7 +42,7 @@ wfParams.Add("Text", "Hello World!");
 WorkflowInvoker.Invoke(wf, wfParams);  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -151,10 +151,10 @@ WorkflowInvoker.Invoke(wf, wfParams);
         <summary>Initializes a new instance of the <see cref="T:System.Activities.InArgument`1" /> class using the specified value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `constValue` parameter is shared across all workflow instances using this workflow definition. For example, if a `List<string>` was provided as a `constValue` and three instances were created then all three instances would be accessing the same `List<string>`.  
-  
+The `constValue` parameter is shared across all workflow instances using this workflow definition. For example, if a `List<string>` was provided as a `constValue` and three instances were created then all three instances would be accessing the same `List<string>`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

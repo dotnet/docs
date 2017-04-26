@@ -22,12 +22,12 @@
     <summary>Exposes methods and properties to support UI Automation client access to controls that can be moved, resized, or rotated within a two-dimensional space.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.TransformPattern> control pattern.  
-  
- Support for this control pattern is not limited to objects on the desktop. This control pattern must also be implemented by the children of a container object as long as the children can be moved, resized, or rotated freely within the boundaries of the container.  
-  
+Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.TransformPattern> control pattern.  
+ 
+Support for this control pattern is not limited to objects on the desktop. This control pattern must also be implemented by the children of a container object as long as the children can be moved, resized, or rotated freely within the boundaries of the container.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,13 +50,13 @@
           <see langword="true" /> if the element can be moved; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows an implementation of this method for a control that can be moved.  
-  
- [!code-csharp[UIAITransformProvider_snip#CanMove](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAITransformProvider_snip/CSharp/TransformFragment.cs#canmove)]
- [!code-vb[UIAITransformProvider_snip#CanMove](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAITransformProvider_snip/visualbasic/transformfragment.vb#canmove)]  
-  
+The following example shows an implementation of this method for a control that can be moved.  
+ 
+[!code-csharp[UIAITransformProvider_snip#CanMove](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAITransformProvider_snip/CSharp/TransformFragment.cs#canmove)]
+[!code-vb[UIAITransformProvider_snip#CanMove](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAITransformProvider_snip/visualbasic/transformfragment.vb#canmove)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,13 +79,13 @@
           <see langword="true" /> if the element can be resized; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows an implementation of this method for a control that can be resized.  
-  
- [!code-csharp[UIAITransformProvider_snip#CanResize](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAITransformProvider_snip/CSharp/TransformFragment.cs#canresize)]
- [!code-vb[UIAITransformProvider_snip#CanResize](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAITransformProvider_snip/visualbasic/transformfragment.vb#canresize)]  
-  
+The following example shows an implementation of this method for a control that can be resized.  
+ 
+[!code-csharp[UIAITransformProvider_snip#CanResize](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAITransformProvider_snip/CSharp/TransformFragment.cs#canresize)]
+[!code-vb[UIAITransformProvider_snip#CanResize](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAITransformProvider_snip/visualbasic/transformfragment.vb#canresize)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,13 +108,13 @@
           <see langword="true" /> if the element can be rotated; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows an implementation of this method for a control that cannot be rotated.  
-  
- [!code-csharp[UIAITransformProvider_snip#CanRotate](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAITransformProvider_snip/CSharp/TransformFragment.cs#canrotate)]
- [!code-vb[UIAITransformProvider_snip#CanRotate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAITransformProvider_snip/visualbasic/transformfragment.vb#canrotate)]  
-  
+The following example shows an implementation of this method for a control that cannot be rotated.  
+ 
+[!code-csharp[UIAITransformProvider_snip#CanRotate](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAITransformProvider_snip/CSharp/TransformFragment.cs#canrotate)]
+[!code-vb[UIAITransformProvider_snip#CanRotate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAITransformProvider_snip/visualbasic/transformfragment.vb#canrotate)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,18 +141,18 @@
         <summary>Moves the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An object cannot be moved, resized, or rotated such that its resulting screen location would be completely outside the coordinates of its container and inaccessible to keyboard or mouse. For example, when a top-level window is moved completely off-screen or a child object is moved outside the boundaries of the container's viewport. In these cases the object is placed as close to the requested screen coordinates as possible with the top or left coordinates overridden to be within the container boundaries.  
+An object cannot be moved, resized, or rotated such that its resulting screen location would be completely outside the coordinates of its container and inaccessible to keyboard or mouse. For example, when a top-level window is moved completely off-screen or a child object is moved outside the boundaries of the container's viewport. In these cases the object is placed as close to the requested screen coordinates as possible with the top or left coordinates overridden to be within the container boundaries.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows one possible implementation of this method for a custom control that can be moved.  
-  
- [!code-csharp[UIAITransformProvider_snip#Move](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAITransformProvider_snip/CSharp/TransformFragment.cs#move)]
- [!code-vb[UIAITransformProvider_snip#Move](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAITransformProvider_snip/visualbasic/transformfragment.vb#move)]  
-  
+The following example shows one possible implementation of this method for a custom control that can be moved.  
+ 
+[!code-csharp[UIAITransformProvider_snip#Move](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAITransformProvider_snip/CSharp/TransformFragment.cs#move)]
+[!code-vb[UIAITransformProvider_snip#Move](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAITransformProvider_snip/visualbasic/transformfragment.vb#move)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">If the <see cref="P:System.Windows.Automation.Provider.ITransformProvider.CanMove" /> property is false.</exception>
@@ -180,20 +180,20 @@
         <summary>Resizes the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When called on a control that supports split panes, this method can have the side effect of resizing other contiguous panes.  
+When called on a control that supports split panes, this method can have the side effect of resizing other contiguous panes.  
+ 
+An object cannot be moved, resized, or rotated such that its resulting screen location would be completely outside the coordinates of its container and inaccessible to keyboard or mouse. For example, when a top-level window is moved completely off-screen or a child object is moved outside the boundaries of the container's viewport. In these cases the object is placed as close to the requested screen coordinates as possible with the top or left coordinates overridden to be within the container boundaries.  
+ 
   
- An object cannot be moved, resized, or rotated such that its resulting screen location would be completely outside the coordinates of its container and inaccessible to keyboard or mouse. For example, when a top-level window is moved completely off-screen or a child object is moved outside the boundaries of the container's viewport. In these cases the object is placed as close to the requested screen coordinates as possible with the top or left coordinates overridden to be within the container boundaries.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows one possible implementation of this method for a custom control that can be resized.  
-  
- [!code-csharp[UIAITransformProvider_snip#Resize](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAITransformProvider_snip/CSharp/TransformFragment.cs#resize)]
- [!code-vb[UIAITransformProvider_snip#Resize](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAITransformProvider_snip/visualbasic/transformfragment.vb#resize)]  
-  
+The following example shows one possible implementation of this method for a custom control that can be resized.  
+ 
+[!code-csharp[UIAITransformProvider_snip#Resize](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAITransformProvider_snip/CSharp/TransformFragment.cs#resize)]
+[!code-vb[UIAITransformProvider_snip#Resize](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAITransformProvider_snip/visualbasic/transformfragment.vb#resize)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">If the <see cref="P:System.Windows.Automation.Provider.ITransformProvider.CanResize" /> property is false.</exception>
@@ -219,18 +219,18 @@
         <summary>Rotates the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An object cannot be moved, resized or rotated such that its resulting screen location would be completely outside the coordinates of its container and inaccessible to keyboard or mouse. For example, when a top-level window is moved completely off-screen or a child object is moved outside the boundaries of the container's viewport. In these cases the object is placed as close to the requested screen coordinates as possible with the top or left coordinates overridden to be within the container boundaries.  
+An object cannot be moved, resized or rotated such that its resulting screen location would be completely outside the coordinates of its container and inaccessible to keyboard or mouse. For example, when a top-level window is moved completely off-screen or a child object is moved outside the boundaries of the container's viewport. In these cases the object is placed as close to the requested screen coordinates as possible with the top or left coordinates overridden to be within the container boundaries.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows one possible implementation of this method for a custom control that cannot be rotated.  
-  
- [!code-csharp[UIAITransformProvider_snip#Rotate](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAITransformProvider_snip/CSharp/TransformFragment.cs#rotate)]
- [!code-vb[UIAITransformProvider_snip#Rotate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAITransformProvider_snip/visualbasic/transformfragment.vb#rotate)]  
-  
+The following example shows one possible implementation of this method for a custom control that cannot be rotated.  
+ 
+[!code-csharp[UIAITransformProvider_snip#Rotate](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAITransformProvider_snip/CSharp/TransformFragment.cs#rotate)]
+[!code-vb[UIAITransformProvider_snip#Rotate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAITransformProvider_snip/visualbasic/transformfragment.vb#rotate)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">If the <see cref="P:System.Windows.Automation.Provider.ITransformProvider.CanRotate" /> property is false.</exception>

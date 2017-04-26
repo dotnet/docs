@@ -13,10 +13,10 @@
     <summary>Specifies whether to use the local system proxy settings to determine whether the proxy is bypassed for local resources.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Local resources include the local server (http://localhost, http://loopback, or http://127.0.0.1) and a URI without a period (http://webserver).  
-  
+Local resources include the local server (http://localhost, http://loopback, or http://127.0.0.1) and a URI without a period (http://webserver).  
+ 
  ]]></format>
     </remarks>
   </Docs>

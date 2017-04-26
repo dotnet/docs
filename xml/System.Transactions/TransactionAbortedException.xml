@@ -19,12 +19,12 @@
     <summary>The exception that is thrown when an operation is attempted on a transaction that has already been rolled back, or an attempt is made to commit the transaction and the transaction aborts.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception is thrown when an action is attempted on a transaction that has already been rolled back, for example, when you attempt to call the <xref:System.Transactions.CommittableTransaction.Commit%2A> method on a transaction that has already timed out. This exception is also thrown when an attempt is made to commit the transaction and the transaction aborts.  
-  
- This is a recoverable error.  
-  
+This exception is thrown when an action is attempted on a transaction that has already been rolled back, for example, when you attempt to call the <xref:System.Transactions.CommittableTransaction.Commit%2A> method on a transaction that has already timed out. This exception is also thrown when an attempt is made to commit the transaction and the transaction aborts.  
+ 
+This is a recoverable error.  
+ 
  ]]></format>
     </remarks>
   </Docs>

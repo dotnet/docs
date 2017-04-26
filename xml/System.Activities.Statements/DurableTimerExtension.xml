@@ -21,14 +21,14 @@
     <summary>Represents an activity timer extension that can be persisted.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Activities.Statements.DurableTimerExtension> object can only be associated with a single workflow instance. If a <xref:System.Activities.Statements.DurableTimerExtension> object is used with more than one workflow instance, an <xref:System.InvalidOperationException> is thrown with the following message:  
-  
+A <xref:System.Activities.Statements.DurableTimerExtension> object can only be associated with a single workflow instance. If a <xref:System.Activities.Statements.DurableTimerExtension> object is used with more than one workflow instance, an <xref:System.InvalidOperationException> is thrown with the following message:  
+ 
 ```Output  
 This TimerExtension has already been attached to a workflow instance.  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -154,14 +154,14 @@ This TimerExtension has already been attached to a workflow instance.
         <summary>Establishes the specified workflow instance as the current instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Activities.Statements.DurableTimerExtension> object can only be associated with a single workflow instance. If a <xref:System.Activities.Statements.DurableTimerExtension> object is used with more than one workflow instance, an <xref:System.InvalidOperationException> is thrown with the following message:  
-  
+A <xref:System.Activities.Statements.DurableTimerExtension> object can only be associated with a single workflow instance. If a <xref:System.Activities.Statements.DurableTimerExtension> object is used with more than one workflow instance, an <xref:System.InvalidOperationException> is thrown with the following message:  
+ 
 ```Output  
 This TimerExtension has already been attached to a workflow instance.  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

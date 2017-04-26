@@ -16,19 +16,19 @@
     <summary>Provides a basic, component site-specific, key-value pair dictionary through a service that a designer can use to store user-defined data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This service provides a simple interface to set, retrieve, and look up objects with associated keys.  
+This service provides a simple interface to set, retrieve, and look up objects with associated keys.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example control and designer use the <xref:System.ComponentModel.Design.IDictionaryService> to share data through its site-specific key-value pair dictionary.  
-  
- [!code-cpp[IDictionaryServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IDictionaryServiceExample/CPP/source.cpp#1)]
- [!code-csharp[IDictionaryServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IDictionaryServiceExample/CS/source.cs#1)]
- [!code-vb[IDictionaryServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IDictionaryServiceExample/VB/source.vb#1)]  
-  
+The following example control and designer use the <xref:System.ComponentModel.Design.IDictionaryService> to share data through its site-specific key-value pair dictionary.  
+ 
+[!code-cpp[IDictionaryServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IDictionaryServiceExample/CPP/source.cpp#1)]
+[!code-csharp[IDictionaryServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IDictionaryServiceExample/CS/source.cs#1)]
+[!code-vb[IDictionaryServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IDictionaryServiceExample/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

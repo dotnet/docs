@@ -14,10 +14,10 @@
     <summary>Contains the configuration section for the SMSvcHost.exe tool. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class encapsulates the various configuration elements for the SMSvcHost.exe tool. Specifically, it represents the configuration elements that can be configured in the SMSvcHost.exe.config file.  
-  
+This class encapsulates the various configuration elements for the SMSvcHost.exe tool. Specifically, it represents the configuration elements that can be configured in the SMSvcHost.exe.config file.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,10 +76,10 @@
         <returns>A <see cref="T:System.ServiceModel.Activation.Configuration.ServiceModelActivationSectionGroup" /> that represents the <see langword="System.ServiceModel.Activation" /> settings in the configuration file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to extract the activation configuration settings from a configuration file.  
-  
+You can use this method to extract the activation configuration settings from a configuration file.  
+ 
  ]]></format>
         </remarks>
       </Docs>

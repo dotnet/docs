@@ -20,10 +20,10 @@
     <summary>Provides the application directory as evidence for policy evaluation. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The domain host can associate a file directory with an application domain. The evidence for policy evaluation is provided only when the application domain is associated with a file directory.  
-  
+The domain host can associate a file directory with an application domain. The evidence for policy evaluation is provided only when the application domain is associated with a file directory.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.ApplicationDirectory" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Application code does not need to create instances of this class.  
-  
+Application code does not need to create instances of this class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
@@ -136,10 +136,10 @@
           <see langword="true" /> if the two instances are equivalent; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The directory values of the two instances must match exactly. Equivalent noncanonical paths are not resolved. For example, C:\app and C:\temp\\...\app are not equal directory values.  
-  
+The directory values of the two instances must match exactly. Equivalent noncanonical paths are not resolved. For example, C:\app and C:\temp\\...\app are not equal directory values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,10 +183,10 @@
         <returns>A representation of the state of the <see cref="T:System.Security.Policy.ApplicationDirectory" /> evidence object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is useful during debugging to get an easy-to-read representation of the object.  
-  
+This method is useful during debugging to get an easy-to-read representation of the object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

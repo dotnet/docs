@@ -18,10 +18,10 @@
     <summary>Task to move one or more files.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This does not support moving directories (ie, xcopy).  
-  
+This does not support moving directories (ie, xcopy).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -159,10 +159,10 @@
         <value>Returns true if the files can be overwritten, false otherwise.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default is to not allow files to be overwritten.  
-  
+The default is to not allow files to be overwritten.  
+ 
  ]]></format>
         </remarks>
       </Docs>

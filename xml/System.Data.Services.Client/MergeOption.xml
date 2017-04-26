@@ -14,10 +14,10 @@
     <summary>Determines the synchronization option for sending or receiving entities to or from [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is used when materializing objects. Set this property to the appropriate materialization option before executing any queries or updates to the data service. The default value is `MergeOption.AppendOnly`.  
-  
+This value is used when materializing objects. Set this property to the appropriate materialization option before executing any queries or updates to the data service. The default value is `MergeOption.AppendOnly`.  
+ 
  ]]></format>
     </remarks>
   </Docs>

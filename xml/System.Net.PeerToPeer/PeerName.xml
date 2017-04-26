@@ -62,10 +62,10 @@
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the data needed to serialize the <see cref="T:System.Net.PeerToPeer.PeerName" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is required for deserialization of this type.  
-  
+This constructor is required for deserialization of this type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">One or more parameters are <see langword="null" />.</exception>
@@ -97,12 +97,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.PeerName" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor returns an object of type <xref:System.Net.PeerToPeer.PeerName> that contains the fully qualified name of the peer. It also specifies whether the peer name is secured or unsecured.  
-  
- This instance uses the default peer identity for the current user and the specified <xref:System.Net.PeerToPeer.PeerName.Classifier%2A>, in addition to the type of peer name to create with the specified classifier and type.  
-  
+This constructor returns an object of type <xref:System.Net.PeerToPeer.PeerName> that contains the fully qualified name of the peer. It also specifies whether the peer name is secured or unsecured.  
+ 
+This instance uses the default peer identity for the current user and the specified <xref:System.Net.PeerToPeer.PeerName.Classifier%2A>, in addition to the type of peer name to create with the specified classifier and type.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Net.PeerToPeer.PeerName.Classifier" /> includes one or more illegal characters.</exception>
@@ -129,12 +129,12 @@
         <value>The string which contains the authentication portion of the specified <see cref="T:System.Net.PeerToPeer.PeerName" />. For secured peer names, this property contains the public key as a forty-character hexadecimal string. For unsecured peer names, this property is set to zero (0).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only the owner, or peer host, can register a secured peer name. A peer name is considered secured if it is backed by a self-signed certificate.  
-  
- Peer names are case-sensitive and the format of a peer name is: *Authority.Classifier*. For example, "0.MyPeerName" is a well-formed peer name.  
-  
+Only the owner, or peer host, can register a secured peer name. A peer name is considered secured if it is backed by a self-signed certificate.  
+ 
+Peer names are case-sensitive and the format of a peer name is: *Authority.Classifier*. For example, "0.MyPeerName" is a well-formed peer name.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
@@ -161,12 +161,12 @@
  Unless explicitly specified, the default value for all properties is <see langword="null" /> for reference types and zero (0) for properties of type <see langword="int" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The format of a peer name is: *Authority.Classifier*. The peer name *Classifier* component can be set to any string that contains 149 or fewer Unicode characters, including the `null` ("\0") terminator. Peer name strings are case-sensitive.  
-  
- For secured peer names, the classifier and the dot (period) after the authority are optional. For unsecured peer names, the classifier is not optional.  
-  
+The format of a peer name is: *Authority.Classifier*. The peer name *Classifier* component can be set to any string that contains 149 or fewer Unicode characters, including the `null` ("\0") terminator. Peer name strings are case-sensitive.  
+ 
+For secured peer names, the classifier and the dot (period) after the authority are optional. For unsecured peer names, the classifier is not optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,12 +197,12 @@
         <returns>A <see cref="T:System.Net.PeerToPeer.PeerName" /> object that represents the specified peer host name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The peer-to-peer host is the "seed node" responsible for initiating the peer-to-peer networking session, inviting peers to participate in applications for which this type of network connectivity is most appropriate for communications such as chat groups or game sessions.  
-  
- This method can be used to create a <xref:System.Net.PeerToPeer.PeerName> object based on the <xref:System.Net.PeerToPeer.PeerName.PeerHostName%2A> property. This peer name is not associated with the identity of the calling node.  
-  
+The peer-to-peer host is the "seed node" responsible for initiating the peer-to-peer networking session, inviting peers to participate in applications for which this type of network connectivity is most appropriate for communications such as chat groups or game sessions.  
+ 
+This method can be used to create a <xref:System.Net.PeerToPeer.PeerName> object based on the <xref:System.Net.PeerToPeer.PeerName.PeerHostName%2A> property. This peer name is not associated with the identity of the calling node.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.String" /> provided is not a valid peer host name string.</exception>
@@ -239,10 +239,10 @@
         <returns>The new <see cref="T:System.Net.PeerToPeer.PeerName" /> object that contains the updated classifier.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.PeerToPeer.PeerName.Classifier%2A> is appended to the existing <xref:System.Net.PeerToPeer.PeerName.Authority%2A> portion of the <xref:System.Net.PeerToPeer.PeerName>. This string is no more than 149 characters long, including the `null` terminator. Specify `null` to return the peer name of the identity.  
-  
+The <xref:System.Net.PeerToPeer.PeerName.Classifier%2A> is appended to the existing <xref:System.Net.PeerToPeer.PeerName.Authority%2A> portion of the <xref:System.Net.PeerToPeer.PeerName>. This string is no more than 149 characters long, including the `null` terminator. Specify `null` to return the peer name of the identity.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.String" /> provided is not a valid peer name classifier.</exception>
@@ -273,12 +273,12 @@
  This method also returns <see langword="False" /> if <paramref name="other" /> is set to <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two peer names are considered equal if they contain identical characters in their <xref:System.Net.PeerToPeer.PeerName.Authority%2A> and <xref:System.Net.PeerToPeer.PeerName.Classifier%2A> components.  
-  
- No normalizations are performed on the strings prior to comparison.  All normalization should have been completed while or before constructing the peer name objects.  
-  
+Two peer names are considered equal if they contain identical characters in their <xref:System.Net.PeerToPeer.PeerName.Authority%2A> and <xref:System.Net.PeerToPeer.PeerName.Classifier%2A> components.  
+ 
+No normalizations are performed on the strings prior to comparison.  All normalization should have been completed while or before constructing the peer name objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -305,10 +305,10 @@
           <see langword="True" /> if the <see cref="T:System.Net.PeerToPeer.PeerName" /> and the comparison object contain the same information; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method inherits the default signature and behavior from <xref:System.Object>.  
-  
+This method inherits the default signature and behavior from <xref:System.Object>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -331,10 +331,10 @@
         <returns>A hashcode for the current <see cref="T:System.Object" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two objects are considered equal if this method returns the same hashcode for both of them.  
-  
+Two objects are considered equal if this method returns the same hashcode for both of them.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -361,10 +361,10 @@
         <summary>Populates a serialization information object with the data needed to serialize the <see cref="T:System.Net.PeerToPeer.PeerName" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A derived type must call the base type <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> method.  
-  
+A derived type must call the base type <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -388,12 +388,12 @@
  Unless explicitly specified, the default value for all properties is <see langword="null" /> for reference types and zero (0) for properties of type <see langword="int" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A peer name is considered secured if it is backed by a self-signed certificate.  
-  
- Only the owner can register a secured peer name with PNRP.  
-  
+A peer name is considered secured if it is backed by a self-signed certificate.  
+ 
+Only the owner can register a secured peer name with PNRP.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
@@ -423,12 +423,12 @@
         <value>A <see cref="T:System.String" /> value that is the name of the peer-to-peer host. Unless explicitly specified, the default value for all properties is <see langword="null" /> for reference types.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The peer-to-peer host is the "seed node" responsible for initiating the peer-to-peer networking session, inviting peers to participate in applications for which this type of network connectivity is most appropriate for communications such as chat groups or game sessions.  
-  
- The <xref:System.Net.PeerToPeer.PeerName.PeerHostName%2A> property specifies the name of a peer that created the peer-to-peer networking session, and which is considered the host of the session.  The host of a peer-to-peer networking session may collect peers into more than one <xref:System.Net.PeerToPeer.Cloud>. Also, a peer may simultaneously be hosted by more than one peer host.  
-  
+The peer-to-peer host is the "seed node" responsible for initiating the peer-to-peer networking session, inviting peers to participate in applications for which this type of network connectivity is most appropriate for communications such as chat groups or game sessions.  
+ 
+The <xref:System.Net.PeerToPeer.PeerName.PeerHostName%2A> property specifies the name of a peer that created the peer-to-peer networking session, and which is considered the host of the session.  The host of a peer-to-peer networking session may collect peers into more than one <xref:System.Net.PeerToPeer.Cloud>. Also, a peer may simultaneously be hosted by more than one peer host.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -479,10 +479,10 @@
         <returns>A string that represents the current <see cref="T:System.Net.PeerToPeer.PeerName" />, and specified in the following format: *Authority.Classifier*. For example, "0.MyInternetPeer".</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method inherits the default signature and behavior from <xref:System.Object>.  
-  
+This method inherits the default signature and behavior from <xref:System.Object>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -496,10 +496,10 @@
         <summary>Determines whether the content of this <see cref="T:System.Net.PeerToPeer.PeerName" /> object is equivalent to the content of another object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The implementation of Equals is defined by IEquatable\<T>.  
-  
+The implementation of Equals is defined by IEquatable\<T>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

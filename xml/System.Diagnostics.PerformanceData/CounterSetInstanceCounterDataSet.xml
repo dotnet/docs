@@ -18,10 +18,10 @@
     <summary>Contains the collection of counter values.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Diagnostics.PerformanceData.CounterSetInstance.Counters%2A?displayProperty=fullName> property returns an instance of this class.  
-  
+The <xref:System.Diagnostics.PerformanceData.CounterSetInstance.Counters%2A?displayProperty=fullName> property returns an instance of this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -93,10 +93,10 @@
         <value>The counter data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implemented as an indexer in C#.  
-  
+Implemented as an indexer in C#.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -122,12 +122,12 @@
         <value>The counter data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implemented as an indexer in C#.  
-  
- To use this overload, you must use the <xref:System.Diagnostics.PerformanceData.CounterSet.AddCounter%28System.Int32%2CSystem.Diagnostics.PerformanceData.CounterType%2CSystem.String%29?displayProperty=fullName> method to add the counter to the counter set.  
-  
+Implemented as an indexer in C#.  
+ 
+To use this overload, you must use the <xref:System.Diagnostics.PerformanceData.CounterSet.AddCounter%28System.Int32%2CSystem.Diagnostics.PerformanceData.CounterType%2CSystem.String%29?displayProperty=fullName> method to add the counter to the counter set.  
+ 
  ]]></format>
         </remarks>
       </Docs>

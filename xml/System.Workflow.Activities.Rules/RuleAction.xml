@@ -14,25 +14,25 @@
     <summary>Represents an abstract class that defines an action to be executed if the associated <see cref="P:System.Workflow.Activities.Rules.Rule.Condition" /> evaluates to <see langword="true" />, for <see cref="P:System.Workflow.Activities.Rules.Rule.ThenActions" />, or <see langword="false" />, for <see cref="P:System.Workflow.Activities.Rules.Rule.ElseActions" />. This class must be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.Rules.RuleStatementAction> objects (which can be used as both <xref:System.Workflow.Activities.Rules.Rule.ThenActions%2A> and <xref:System.Workflow.Activities.Rules.Rule.ElseActions%2A>) typically set a variable value on one of the properties of the activity, call a method of the activity, or call static methods on types in referenced assemblies.  
-  
- <xref:System.Workflow.Activities.Rules.RuleAction> is the base type that <xref:System.Workflow.Activities.Rules.RuleStatementAction>, <xref:System.Workflow.Activities.Rules.RuleHaltAction>, and <xref:System.Workflow.Activities.Rules.RuleUpdateAction> classes derive from. The uses of these classes is as follows:  
-  
+<xref:System.Workflow.Activities.Rules.RuleStatementAction> objects (which can be used as both <xref:System.Workflow.Activities.Rules.Rule.ThenActions%2A> and <xref:System.Workflow.Activities.Rules.Rule.ElseActions%2A>) typically set a variable value on one of the properties of the activity, call a method of the activity, or call static methods on types in referenced assemblies.  
+ 
+<xref:System.Workflow.Activities.Rules.RuleAction> is the base type that <xref:System.Workflow.Activities.Rules.RuleStatementAction>, <xref:System.Workflow.Activities.Rules.RuleHaltAction>, and <xref:System.Workflow.Activities.Rules.RuleUpdateAction> classes derive from. The uses of these classes is as follows:  
+ 
 -   A <xref:System.Workflow.Activities.Rules.RuleStatementAction> modifies a property or calls a method.  
-  
+ 
 -   A <xref:System.Workflow.Activities.Rules.RuleHaltAction> causes the <xref:System.Workflow.Activities.Rules.RuleSet> to stop executing and returns control to the calling method.  
-  
+ 
 -   A <xref:System.Workflow.Activities.Rules.RuleUpdateAction> explicitly indicates that a rule is updating a variable. This causes the re-evaluation of any affected rules.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code creates an action that can be used in rule sets. The action is named `Log`, and takes a single parameter, which must evaluate to a string. This action outputs the string to the Console.  
-  
- To use this code, add it to a Class Library project and reference the library from your workflow project.  
-  
+The following code creates an action that can be used in rule sets. The action is named `Log`, and takes a single parameter, which must evaluate to a string. This action outputs the string to the Console.  
+ 
+To use this code, add it to a Class Library project and reference the library from your workflow project.  
+ 
 ```csharp  
 using System;  
 using System.CodeDom;  
@@ -119,7 +119,7 @@ namespace LogRuleAction
     }  
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -223,10 +223,10 @@ namespace LogRuleAction
           <see langword="true" /> to show that the <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> validated correctly and has no errors; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Workflow.Activities.Rules.RuleAction> contains errors (the `Validate` method returns `false`), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=fullName> will contain the list of errors encountered.  
-  
+If the <xref:System.Workflow.Activities.Rules.RuleAction> contains errors (the `Validate` method returns `false`), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=fullName> will contain the list of errors encountered.  
+ 
  ]]></format>
         </remarks>
       </Docs>

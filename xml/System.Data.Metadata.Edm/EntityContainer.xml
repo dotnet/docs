@@ -14,19 +14,19 @@
     <summary>Represents an entity container in a conceptual model. An <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> is a logical grouping of entity sets and association sets.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- On the conceptual level, the <xref:System.Data.Metadata.Edm.EntityContainer> class represents a container that will be mapped to a database object in the storage metadata schema. In the storage level, the <xref:System.Data.Metadata.Edm.EntityContainer> class represents a description of the table and/or key relationships that persist data for applications built on the model. For more information about the entity containers in a conceptual model, see [Entity Containers (EDM)](http://msdn.microsoft.com/en-us/9afa762f-59b8-4a70-b76d-89d90760144c).  
+On the conceptual level, the <xref:System.Data.Metadata.Edm.EntityContainer> class represents a container that will be mapped to a database object in the storage metadata schema. In the storage level, the <xref:System.Data.Metadata.Edm.EntityContainer> class represents a description of the table and/or key relationships that persist data for applications built on the model. For more information about the entity containers in a conceptual model, see [Entity Containers (EDM)](http://msdn.microsoft.com/en-us/9afa762f-59b8-4a70-b76d-89d90760144c).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates how to get a metadata workspace from the connection and then use that metadata workspace to retrieve information about the entity containers in the specified data model. Note that the metadata workspace is a runtime service component that provides support for retrieving metadata.  
-  
- The code sample uses a <xref:System.Data.Metadata.Edm.DataSpace> and a <xref:System.Data.Metadata.Edm.DataSpace> to specify the model. The <xref:System.Data.Metadata.Edm.DataSpace> represents the default name for the conceptual model. The <xref:System.Data.Metadata.Edm.DataSpace> represents the default name for the storage model.  
-  
- The `GetEntityContainers` method gets a collection of entity containers and then iterates through the collection to get each entity set and association set in the specified container. The code sample uses the AdventureWorks Model that is provided in the [Adventure Works Model (EDM)](http://msdn.microsoft.com/en-us/da87d29e-8c89-4310-bbac-5cbd062930a7)topic. For an example of the application config file, see [Adventure Works Object Model in Applications (EDM)](http://msdn.microsoft.com/en-us/84c01270-90ba-467b-ad24-df10c1ca8f45).  
-  
+The following code sample demonstrates how to get a metadata workspace from the connection and then use that metadata workspace to retrieve information about the entity containers in the specified data model. Note that the metadata workspace is a runtime service component that provides support for retrieving metadata.  
+ 
+The code sample uses a <xref:System.Data.Metadata.Edm.DataSpace> and a <xref:System.Data.Metadata.Edm.DataSpace> to specify the model. The <xref:System.Data.Metadata.Edm.DataSpace> represents the default name for the conceptual model. The <xref:System.Data.Metadata.Edm.DataSpace> represents the default name for the storage model.  
+ 
+The `GetEntityContainers` method gets a collection of entity containers and then iterates through the collection to get each entity set and association set in the specified container. The code sample uses the AdventureWorks Model that is provided in the [Adventure Works Model (EDM)](http://msdn.microsoft.com/en-us/da87d29e-8c89-4310-bbac-5cbd062930a7)topic. For an example of the application config file, see [Adventure Works Object Model in Applications (EDM)](http://msdn.microsoft.com/en-us/84c01270-90ba-467b-ad24-df10c1ca8f45).  
+ 
 ```csharp  
 using System;  
 using System.Data;  
@@ -125,7 +125,7 @@ class GetEntityContainerExample
   }  
 }  
 ```  
-  
+ 
 ```vb  
 Imports System  
 Imports System.Collections.ObjectModel  
@@ -213,7 +213,7 @@ Class GetEntityContainerExample
   End Sub  
 End Class  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

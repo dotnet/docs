@@ -59,10 +59,10 @@
         <value>The number of keys in the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Retrieving the value of this property is an O(1) operation.  
-  
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,10 +97,10 @@
         <returns>A <see cref="T:System.String" /> that contains the key at the specified index of the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(1) operation.  
-  
+This method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -134,26 +134,26 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumerator returns the keys of the collection as strings.  
-  
- The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
-  
- Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
-  
- Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
-  
- <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
-  
- If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
-  
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
-  
- The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
-  
- This method is an O(1) operation.  
-  
+This enumerator returns the keys of the collection as strings.  
+ 
+The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+ 
+Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+ 
+Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ 
+<xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+ 
+If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+ 
+An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ 
+The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+ 
+This method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,14 +188,14 @@
         <value>The <see cref="T:System.String" /> key of the entry at the specified index of the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]` (In Visual Basic, `myCollection(index)`).  
-  
- The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Item%2A> property. Visual Basic implements <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Item%2A> as a default property, which provides the same indexing functionality.  
-  
- Retrieving the value of this property is an O(1) operation; setting the property is also an O(1) operation.  
-  
+This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]` (In Visual Basic, `myCollection(index)`).  
+ 
+The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Item%2A> property. Visual Basic implements <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Item%2A> as a default property, which provides the same indexing functionality.  
+ 
+Retrieving the value of this property is an O(1) operation; setting the property is also an O(1) operation.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -233,14 +233,14 @@
         <summary>Copies the entire <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified array must be of a compatible type.  
-  
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
-  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Count%2A>.  
-  
+The specified array must be of a compatible type.  
+ 
+This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ 
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -283,23 +283,23 @@
           <see langword="true" /> if access to the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> is synchronized (thread safe); otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived classes can provide their own synchronized version of the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection> using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> of the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection>, not directly on the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection>. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection> object.  
+Derived classes can provide their own synchronized version of the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection> using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> of the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection>, not directly on the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection>. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection> object.  
+ 
+Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+ 
   
- Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> during the entire enumeration.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/cpp/source.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/cs/source.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/vb/source.vb#1)]  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> during the entire enumeration.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/cpp/source.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/cs/source.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/vb/source.vb#1)]  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -330,23 +330,23 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived classes can provide their own synchronized version of the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection> using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> of the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection>, not directly on the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection>. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection> object.  
+Derived classes can provide their own synchronized version of the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection> using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> of the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection>, not directly on the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection>. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection> object.  
+ 
+Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+ 
   
- Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> during the entire enumeration.  
-  
- [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/cpp/source.cpp#1)]
- [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/cs/source.cs#1)]
- [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/vb/source.vb#1)]  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> during the entire enumeration.  
+ 
+[!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/cpp/source.cpp#1)]
+[!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/cs/source.cs#1)]
+[!code-vb[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/vb/source.vb#1)]  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

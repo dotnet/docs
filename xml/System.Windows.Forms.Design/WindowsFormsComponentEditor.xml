@@ -14,14 +14,14 @@
     <summary>Provides a base class for editors that use a modal dialog to display a properties page similar to an ActiveX control's property page.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates an example <xref:System.Windows.Forms.Design.WindowsFormsComponentEditor> implementation.  
-  
- [!code-cpp[ComponentEditorExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentEditorExample/CPP/componenteditorexamplecomponent.cpp#1)]
- [!code-csharp[ComponentEditorExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentEditorExample/CS/componenteditorexamplecomponent.cs#1)]
- [!code-vb[ComponentEditorExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentEditorExample/VB/componenteditorexamplecomponent.vb#1)]  
-  
+The following code example demonstrates an example <xref:System.Windows.Forms.Design.WindowsFormsComponentEditor> implementation.  
+ 
+[!code-cpp[ComponentEditorExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentEditorExample/CPP/componenteditorexamplecomponent.cpp#1)]
+[!code-csharp[ComponentEditorExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentEditorExample/CS/componenteditorexamplecomponent.cs#1)]
+[!code-vb[ComponentEditorExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentEditorExample/VB/componenteditorexamplecomponent.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -137,14 +137,14 @@
         <returns>An array of component editor pages.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates an example implementation of a <xref:System.Windows.Forms.Design.WindowsFormsComponentEditor.GetComponentEditorPages%2A> method override.  
-  
- [!code-cpp[ComponentEditorExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentEditorExample/CPP/componenteditorexamplecomponent.cpp#2)]
- [!code-csharp[ComponentEditorExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentEditorExample/CS/componenteditorexamplecomponent.cs#2)]
- [!code-vb[ComponentEditorExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentEditorExample/VB/componenteditorexamplecomponent.vb#2)]  
-  
+The following code example demonstrates an example implementation of a <xref:System.Windows.Forms.Design.WindowsFormsComponentEditor.GetComponentEditorPages%2A> method override.  
+ 
+[!code-cpp[ComponentEditorExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentEditorExample/CPP/componenteditorexamplecomponent.cpp#2)]
+[!code-csharp[ComponentEditorExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentEditorExample/CS/componenteditorexamplecomponent.cs#2)]
+[!code-vb[ComponentEditorExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentEditorExample/VB/componenteditorexamplecomponent.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -170,14 +170,14 @@
         <returns>The index of the component editor page that the component editor will initially display.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates an example implementation of a <xref:System.Windows.Forms.Design.WindowsFormsComponentEditor.GetInitialComponentEditorPageIndex%2A> method override.  
-  
- [!code-cpp[ComponentEditorExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentEditorExample/CPP/componenteditorexamplecomponent.cpp#3)]
- [!code-csharp[ComponentEditorExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentEditorExample/CS/componenteditorexamplecomponent.cs#3)]
- [!code-vb[ComponentEditorExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentEditorExample/VB/componenteditorexamplecomponent.vb#3)]  
-  
+The following code example demonstrates an example implementation of a <xref:System.Windows.Forms.Design.WindowsFormsComponentEditor.GetInitialComponentEditorPageIndex%2A> method override.  
+ 
+[!code-cpp[ComponentEditorExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentEditorExample/CPP/componenteditorexamplecomponent.cpp#3)]
+[!code-csharp[ComponentEditorExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentEditorExample/CS/componenteditorexamplecomponent.cs#3)]
+[!code-vb[ComponentEditorExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentEditorExample/VB/componenteditorexamplecomponent.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

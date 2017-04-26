@@ -18,13 +18,13 @@
     <summary>Represents syndication content that consists of a URL to another resource.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.ServiceModel.Syndication.UrlSyndicationContent> class.  
-  
- [!code-csharp[SyndicationContent#3](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcontent/cs/program.cs#3)]
- [!code-vb[SyndicationContent#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcontent/vb/snippets.vb#3)]  
-  
+The following example demonstrates how to use the <xref:System.ServiceModel.Syndication.UrlSyndicationContent> class.  
+ 
+[!code-csharp[SyndicationContent#3](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcontent/cs/program.cs#3)]
+[!code-vb[SyndicationContent#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcontent/vb/snippets.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,18 +74,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" /> class with the specified <see cref="T:System.Uri" /> and media type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The media type parameter can be set to any known MIME type value as defined in [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95720).  
+The media type parameter can be set to any known MIME type value as defined in [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95720).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to call this constructor.  
-  
- [!code-csharp[SyndicationContent#3](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcontent/cs/program.cs#3)]
- [!code-vb[SyndicationContent#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcontent/vb/snippets.vb#3)]  
-  
+The following example demonstrates how to call this constructor.  
+ 
+[!code-csharp[SyndicationContent#3](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcontent/cs/program.cs#3)]
+[!code-vb[SyndicationContent#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcontent/vb/snippets.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -134,10 +134,10 @@
         <value>The content type of the <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content type can be set to any known MIME type value as defined in [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95720).  
-  
+The content type can be set to any known MIME type value as defined in [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95720).  
+ 
  ]]></format>
         </remarks>
       </Docs>

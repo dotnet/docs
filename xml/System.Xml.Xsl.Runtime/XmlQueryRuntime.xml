@@ -187,10 +187,10 @@
         <returns>An array of <see langword="string" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The format of the returned array is `{namespace}prefix:local-name`.  
-  
+The format of the returned array is `{namespace}prefix:local-name`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -701,10 +701,10 @@
           <see langword="true" /> if the names are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Xsl.Runtime.XmlQueryRuntime.IsQNameEqual%2A> method calls the <xref:System.Xml.Xsl.Runtime.XmlQueryRuntime.GetAtomizedName%2A> method to get the local name and the namespace URI based on the `indexLocalName` and `indexNamespaceUri`.  
-  
+The <xref:System.Xml.Xsl.Runtime.XmlQueryRuntime.IsQNameEqual%2A> method calls the <xref:System.Xml.Xsl.Runtime.XmlQueryRuntime.GetAtomizedName%2A> method to get the local name and the namespace URI based on the `indexLocalName` and `indexNamespaceUri`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

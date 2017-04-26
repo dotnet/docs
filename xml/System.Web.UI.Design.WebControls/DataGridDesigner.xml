@@ -19,16 +19,16 @@
     <summary>Extends design-time behavior for the <see cref="T:System.Web.UI.WebControls.DataGrid" /> Web server control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to extend the <xref:System.Web.UI.Design.WebControls.DataGridDesigner> class. The code overrides the <xref:System.Web.UI.Design.WebControls.DataGridDesigner.GetDesignTimeHtml%2A> method to customize the <xref:System.Web.UI.WebControls.BaseDataList.CellPadding%2A>, <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A>, and <xref:System.Web.UI.WebControls.WebControl.BorderColor%2A> properties when the <xref:System.Web.UI.WebControls.DataGrid> control is rendered on a design surface.  
-  
- [!code-vb[DataListDesigner_Sample2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListDesigner_Sample2/VB/simpledatalistdesigner.vb#1)]  
-  
- The following example shows how to use the <xref:System.ComponentModel.DesignerAttribute> attribute to associate the designer with the <xref:System.Web.UI.WebControls.DataGrid> control.  
-  
- [!code-vb[DataListDesigner_Sample2#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListDesigner_Sample2/VB/simpledatalistdesigner.vb#5)]  
-  
+The following code example demonstrates how to extend the <xref:System.Web.UI.Design.WebControls.DataGridDesigner> class. The code overrides the <xref:System.Web.UI.Design.WebControls.DataGridDesigner.GetDesignTimeHtml%2A> method to customize the <xref:System.Web.UI.WebControls.BaseDataList.CellPadding%2A>, <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A>, and <xref:System.Web.UI.WebControls.WebControl.BorderColor%2A> properties when the <xref:System.Web.UI.WebControls.DataGrid> control is rendered on a design surface.  
+ 
+[!code-vb[DataListDesigner_Sample2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListDesigner_Sample2/VB/simpledatalistdesigner.vb#1)]  
+ 
+The following example shows how to use the <xref:System.ComponentModel.DesignerAttribute> attribute to associate the designer with the <xref:System.Web.UI.WebControls.DataGrid> control.  
+ 
+[!code-vb[DataListDesigner_Sample2#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListDesigner_Sample2/VB/simpledatalistdesigner.vb#5)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -114,10 +114,10 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Web.UI.Design.WebControls.DataGridDesigner" /> object and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the `disposing` parameter is `true`, the <xref:System.Web.UI.Design.WebControls.DataGridDesigner.Dispose%2A> method releases all the resources held by the managed objects that this <xref:System.Web.UI.Design.WebControls.DataGridDesigner> object references.  
-  
+When the `disposing` parameter is `true`, the <xref:System.Web.UI.Design.WebControls.DataGridDesigner.Dispose%2A> method releases all the resources held by the managed objects that this <xref:System.Web.UI.Design.WebControls.DataGridDesigner> object references.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -169,22 +169,22 @@
         <returns>The HTML markup that is used to represent the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control at design time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.DataGridDesigner.GetDesignTimeHtml%2A> method to alter the appearance of the <xref:System.Web.UI.WebControls.DataGrid> control on the design surface.  
-  
- The code uses `Try...Catch...Finally` syntax to do the following:  
-  
+The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.DataGridDesigner.GetDesignTimeHtml%2A> method to alter the appearance of the <xref:System.Web.UI.WebControls.DataGrid> control on the design surface.  
+ 
+The code uses `Try...Catch...Finally` syntax to do the following:  
+ 
 -   The `Try` section changes the values of the properties of the data grid control.  
-  
+ 
 -   The `Catch` section catches any exceptions and sends them to the <xref:System.Web.UI.Design.WebControls.DataGridDesigner.GetErrorDesignTimeHtml%2A> method.  
-  
+ 
 -   The `Finally` section sets the properties to their original values.  
-  
- This example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.DataGridDesigner> class.  
-  
- [!code-vb[DataListDesigner_Sample2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListDesigner_Sample2/VB/simpledatalistdesigner.vb#2)]  
-  
+ 
+This example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.DataGridDesigner> class.  
+ 
+[!code-vb[DataListDesigner_Sample2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListDesigner_Sample2/VB/simpledatalistdesigner.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,14 +229,14 @@
         <returns>The HTML markup displayed at design time for the specified exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.DataGridDesigner.GetErrorDesignTimeHtml%2A> method to modify the appearance of the <xref:System.Web.UI.WebControls.DataGrid> control on the design surface when an exception occurs.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.DataGridDesigner> class.  
-  
- [!code-vb[DataListDesigner_Sample2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListDesigner_Sample2/VB/simpledatalistdesigner.vb#3)]  
-  
+The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.DataGridDesigner.GetErrorDesignTimeHtml%2A> method to modify the appearance of the <xref:System.Web.UI.WebControls.DataGrid> control on the design surface when an exception occurs.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.DataGridDesigner> class.  
+ 
+[!code-vb[DataListDesigner_Sample2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListDesigner_Sample2/VB/simpledatalistdesigner.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,10 +267,10 @@
         <returns>The data item property of the container of the template.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.DataGridDesigner.GetTemplateContainerDataItemProperty%2A> method is obsolete. To access the template metadata, see <xref:System.Web.UI.Design.TemplateDefinition>.  
-  
+The <xref:System.Web.UI.Design.WebControls.DataGridDesigner.GetTemplateContainerDataItemProperty%2A> method is obsolete. To access the template metadata, see <xref:System.Web.UI.Design.TemplateDefinition>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,10 +333,10 @@
         <returns>The <see cref="T:System.Type" /> corresponding to the parent of the specified template.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.DataGridDesigner.GetTemplatePropertyParentType%2A> method is obsolete. To access the template metadata, see <xref:System.Web.UI.Design.TemplateDefinition>.  
-  
+The <xref:System.Web.UI.Design.WebControls.DataGridDesigner.GetTemplatePropertyParentType%2A> method is obsolete. To access the template metadata, see <xref:System.Web.UI.Design.TemplateDefinition>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -361,14 +361,14 @@
         <summary>Initializes the designer with the specified <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.DataGridDesigner.Initialize%2A> method to ensure that the designer is only initialized with instances of the `SimpleDataGrid` class.  
-  
- This code example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.DataGridDesigner> class.  
-  
- [!code-vb[DataListDesigner_Sample2#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListDesigner_Sample2/VB/simpledatalistdesigner.vb#5)]  
-  
+The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.DataGridDesigner.Initialize%2A> method to ensure that the designer is only initialized with instances of the `SimpleDataGrid` class.  
+ 
+This code example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.DataGridDesigner> class.  
+ 
+[!code-vb[DataListDesigner_Sample2#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListDesigner_Sample2/VB/simpledatalistdesigner.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

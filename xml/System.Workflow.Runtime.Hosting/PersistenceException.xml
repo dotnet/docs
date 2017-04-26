@@ -19,18 +19,18 @@
     <summary>The exception that is thrown when the persistence service cannot fulfill a request.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- The <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> throws a <xref:System.Workflow.Runtime.Hosting.PersistenceException> if it cannot complete a request to commit either a completed scope or the workflow instance state to its database.  
-  
- If you implement a persistence service by deriving from the <xref:System.Workflow.Runtime.Hosting.WorkflowPersistenceService> class or the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> class, you can throw the <xref:System.Workflow.Runtime.Hosting.PersistenceException> with an appropriate message to indicate any error condition encountered by your service that prevents it from fulfilling a request made by the workflow runtime engine.  
-  
- See the <xref:System.Workflow.Runtime.Hosting.WorkflowPersistenceService> class for more information.  
-  
+ 
+The <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> throws a <xref:System.Workflow.Runtime.Hosting.PersistenceException> if it cannot complete a request to commit either a completed scope or the workflow instance state to its database.  
+ 
+If you implement a persistence service by deriving from the <xref:System.Workflow.Runtime.Hosting.WorkflowPersistenceService> class or the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> class, you can throw the <xref:System.Workflow.Runtime.Hosting.PersistenceException> with an appropriate message to indicate any error condition encountered by your service that prevents it from fulfilling a request made by the workflow runtime engine.  
+ 
+See the <xref:System.Workflow.Runtime.Hosting.WorkflowPersistenceService> class for more information.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,10 +87,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.PersistenceException" /> class by using the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and the specified <see cref="T:System.Runtime.Serialization.StreamingContext" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](http://go.microsoft.com/fwlink/?LinkID=108569&clcid=0x409).  
-  
+This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](http://go.microsoft.com/fwlink/?LinkID=108569&clcid=0x409).  
+ 
  ]]></format>
         </remarks>
       </Docs>

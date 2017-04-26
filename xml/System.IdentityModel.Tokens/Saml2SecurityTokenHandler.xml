@@ -14,14 +14,14 @@
     <summary>Represents a security token handler that creates security tokens from SAML 2.0 Assertions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> class serializes and deserializes security tokens backed by SAML 2.0 Assertions into <xref:System.IdentityModel.Tokens.Saml2SecurityToken> objects. Security token handlers are responsible for creating, reading, writing, and validating tokens.  
-  
- You can configure a security token service (STS) or relying party (RP) application to process SAML 2.0 Assertion-backed security tokens by adding an instance of the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> class to the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerCollection> object configured for the service (or application). This can be done either programmatically or in the configuration file. The handler itself is configured from the configuration specified for the collection through the collection’s <xref:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.Configuration%2A> property when it is added to the collection. While it is possible to configure the handler individually by setting its <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property, this is not normally necessary; however, if the handler must be configured individually, the property should be set after the handler is added to the collection.  
-  
- For many scenarios, the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> class can be used as-is; however, the class provides many extension points through the methods it exposes. By deriving from the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> and overriding specific methods, you can modify the functionality of the token processing provided in the default implementation, or you can add processing for extensions to the SAML Assertion specification that may be needed in some custom scenarios.  
-  
+The <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> class serializes and deserializes security tokens backed by SAML 2.0 Assertions into <xref:System.IdentityModel.Tokens.Saml2SecurityToken> objects. Security token handlers are responsible for creating, reading, writing, and validating tokens.  
+ 
+You can configure a security token service (STS) or relying party (RP) application to process SAML 2.0 Assertion-backed security tokens by adding an instance of the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> class to the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerCollection> object configured for the service (or application). This can be done either programmatically or in the configuration file. The handler itself is configured from the configuration specified for the collection through the collection’s <xref:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.Configuration%2A> property when it is added to the collection. While it is possible to configure the handler individually by setting its <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property, this is not normally necessary; however, if the handler must be configured individually, the property should be set after the handler is added to the collection.  
+ 
+For many scenarios, the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> class can be used as-is; however, the class provides many extension points through the methods it exposes. By deriving from the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> and overriding specific methods, you can modify the functionality of the token processing provided in the default implementation, or you can add processing for extensions to the SAML Assertion specification that may be needed in some custom scenarios.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -40,10 +40,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SecurityTokenHandler" /> class with default security token requirements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.SamlSecurityTokenRequirement%2A> property is set to an instance of <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement> that is crated with the default constructor.  
-  
+The <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.SamlSecurityTokenRequirement%2A> property is set to an instance of <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement> that is crated with the default constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,10 +163,10 @@
           <see langword="true" />, which indicates that the handler can validate tokens of type <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides the base class method and always returns `true`.  
-  
+This method overrides the base class method and always returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,10 +212,10 @@
           <see langword="true" />; which indicates that the handler can serialize tokens of type <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides the base class method and always returns `true`.  
-  
+This method overrides the base class method and always returns `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -281,10 +281,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Advice" /> object. The default is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, this method returns `null`.  
-  
+By default, this method returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,10 +338,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" /> that contains the converted claims.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method may return `null` if the token descriptor does not contain any subject or the subject does not have any claims.  
-  
+This method may return `null` if the token descriptor does not contain any subject or the subject does not have any claims.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -433,12 +433,12 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Conditions" /> object that contains the conditions for the assertion.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Generally, conditions should be included in assertions to limit the impact of misuse of the assertion. Specifying the NotBefore and NotOnOrAfter conditions can limit the period of vulnerability in the case of a compromised assertion. The AudienceRestrictionCondition can be used to explicitly state the intended relying party or parties of the assertion, which coupled with appropriate audience restriction enforcement at relying parties can help to mitigate spoofing attacks between relying parties.  
-  
- The default implementation creates NotBefore and NotOnOrAfter conditions based on the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.Lifetime%2A> property of the `tokenDescriptor`. It will also generate an AudienceRestrictionCondition limiting consumption of the assertion to the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.AppliesToAddress%2A> property of the `tokenDescriptor`.  
-  
+Generally, conditions should be included in assertions to limit the impact of misuse of the assertion. Specifying the NotBefore and NotOnOrAfter conditions can limit the period of vulnerability in the case of a compromised assertion. The AudienceRestrictionCondition can be used to explicitly state the intended relying party or parties of the assertion, which coupled with appropriate audience restriction enforcement at relying parties can help to mitigate spoofing attacks between relying parties.  
+ 
+The default implementation creates NotBefore and NotOnOrAfter conditions based on the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.Lifetime%2A> property of the `tokenDescriptor`. It will also generate an AudienceRestrictionCondition limiting consumption of the assertion to the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.AppliesToAddress%2A> property of the `tokenDescriptor`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -464,12 +464,12 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> that represents the name identifier.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- SAML2 assertions must contain a name identifier for the issuer. This method may not return `null`.  
-  
- The default implementation creates a simple name identifier from the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.TokenIssuerName%2A> property of the `tokenDescriptor`.  
-  
+SAML2 assertions must contain a name identifier for the issuer. This method may not return `null`.  
+ 
+The default implementation creates a simple name identifier from the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.TokenIssuerName%2A> property of the `tokenDescriptor`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -547,10 +547,10 @@
         <returns>An enumeration of <see cref="T:System.IdentityModel.Tokens.Saml2Statement" /> that contains the statements.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Statements are not required in a SAML 2.0 assertion. This method may return an empty collection.  
-  
+Statements are not required in a SAML 2.0 assertion. This method may return an empty collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -626,10 +626,10 @@
         <returns>A well-formed XML string constructed using the attributes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string is of the form "\<Actor>\<Attribute name, ns>\<AttributeValue>...\</AttributeValue>, ...\</Attribute>...\</Actor>"  
-  
+The string is of the form "\<Actor>\<Attribute name, ns>\<AttributeValue>...\</AttributeValue>, ...\</Attribute>...\</Actor>"  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -676,10 +676,10 @@
         <summary>Throws an exception if the specified token already exists in the token replay cache; otherwise the token is added to the cache.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default behavior is to only check bearer tokens (tokens that do not have keys). The token replay cache is the <xref:System.IdentityModel.Tokens.TokenReplayCache> object configured for this handler through the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.Caches%2A> property of the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration> object referenced through the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property.  
-  
+The default behavior is to only check bearer tokens (tokens that do not have keys). The token replay cache is the <xref:System.IdentityModel.Tokens.TokenReplayCache> object configured for this handler through the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.Caches%2A> property of the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration> object referenced through the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -738,10 +738,10 @@
         <returns>An <see cref="T:System.IdentityModel.Tokens.EncryptingCredentials" /> that represents the token encrypting credentials.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation retrieves the encrypting credentials from the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.EncryptingCredentials%2A> property of the `tokenDescriptor`.  
-  
+The default implementation retrieves the encrypting credentials from the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.EncryptingCredentials%2A> property of the `tokenDescriptor`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -770,12 +770,12 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.SigningCredentials" /> that represents the credentials for signing the assertion.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- SAML2 assertions used as security tokens should be signed.  
-  
- The default implementation uses the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.SigningCredentials%2A> property of the `tokenDescriptor` to retrieve the credentials.  
-  
+SAML2 assertions used as security tokens should be signed.  
+ 
+The default implementation uses the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.SigningCredentials%2A> property of the `tokenDescriptor` to retrieve the credentials.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -803,14 +803,14 @@
         <returns>A <see cref="T:System.DateTime" /> that represents the expiration time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, this method returns the NotOnOrAfter of the SAML Condition if present.  
-  
- If that value does not exist, it returns the NotOnOrAfter of the first SubjectConfirmationData.  
-  
- This function will never return a value further from the current time (<xref:System.DateTime.Now%2A>) than Configuration.TokenReplayCacheExpirationPeriod.  
-  
+By default, this method returns the NotOnOrAfter of the SAML Condition if present.  
+ 
+If that value does not exist, it returns the NotOnOrAfter of the first SubjectConfirmationData.  
+ 
+This function will never return a value further from the current time (<xref:System.DateTime.Now%2A>) than Configuration.TokenReplayCacheExpirationPeriod.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -853,10 +853,10 @@
         <value>A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that represents the serializer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Serializes and deserializes <xref:System.IdentityModel.Tokens.SecurityKeyIdentifier> objects.  
-  
+Serializes and deserializes <xref:System.IdentityModel.Tokens.SecurityKeyIdentifier> objects.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the value to <see langword="null" /> occurs.</exception>
@@ -932,10 +932,10 @@
         <summary>Creates claims from a SAML 2.0 attribute statement and adds them to the specified subject.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The created claims are added to the subject.  
-  
+The created claims are added to the subject.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1001,10 +1001,10 @@
         <summary>Creates claims from a SAML 2.0 authorization decision statement and adds them to the specified subject.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation does nothing.  
-  
+The default implementation does nothing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1112,10 +1112,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Advice" /> that represents the Advice element that is read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Advice element has an extensibility point to allow XML elements from non-SAML 2.0 namespaces to be included. By default, because the Advice may be ignored without affecting the semantics of the assertion, any such elements are ignored. To handle the processing of those elements, override this method.  
-  
+The Advice element has an extensibility point to allow XML elements from non-SAML 2.0 namespaces to be included. By default, because the Advice may be ignored without affecting the semantics of the assertion, any such elements are ignored. To handle the processing of those elements, override this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1167,10 +1167,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> that represents the Assertion element that is read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation requires that the content of the Attribute element be a simple string. To handle complex content or content of declared simple types other than xs:string, override this method.  
-  
+The default implementation requires that the content of the Attribute element be a simple string. To handle complex content or content of declared simple types other than xs:string, override this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1272,10 +1272,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2AuthenticationContext" /> that represents the AuthnContext element that is read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation does not handle the optional \<saml:AuthnContextDecl> element. To handle by-value authentication context declarations, override this method.  
-  
+The default implementation does not handle the optional \<saml:AuthnContextDecl> element. To handle by-value authentication context declarations, override this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1351,10 +1351,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Conditions" /> that represents the Conditions element that is read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To handle custom \<saml:Condition> elements, override this method.  
-  
+To handle custom \<saml:Condition> elements, override this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1530,10 +1530,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2ProxyRestriction" /> that represents the element that was read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the default implementation, the maximum value of the Count attribute is limited to Int32.MaxValue.  
-  
+In the default implementation, the maximum value of the Count attribute is limited to Int32.MaxValue.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1587,10 +1587,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Statement" /> that represents the Statement element that was read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation only handles Statement elements that specify an xsi:type of saml:AttributeStatementType, saml:AuthnStatementType, and saml:AuthzDecisionStatementType. To handle custom statements, override this method.  
-  
+The default implementation only handles Statement elements that specify an xsi:type of saml:AttributeStatementType, saml:AuthnStatementType, and saml:AuthzDecisionStatementType. To handle custom statements, override this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1618,10 +1618,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Subject" /> that represents the Subject element that was read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation does not handle the optional \<EncryptedID> element. To handle encryped IDs in the Subject, override this method.  
-  
+The default implementation does not handle the optional \<EncryptedID> element. To handle encryped IDs in the Subject, override this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1673,10 +1673,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmationData" /> that represents the SubjectConfirmationData element that was read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation handles the unextended element as well as the extended type saml:KeyInfoConfirmationDataType.  
-  
+The default implementation handles the unextended element as well as the extended type saml:KeyInfoConfirmationDataType.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1972,10 +1972,10 @@
         <summary>Validates the specified <see cref="T:System.IdentityModel.Tokens.Saml2Conditions" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws an appropriate exception if the condition is not valid. The token may not be valid for a number of reasons. For example, the current time may not be within the token's validity period, the token may contain data that is contradictory or not valid, or the token may contain unsupported SAML 2.0 elements.  
-  
+Throws an appropriate exception if the condition is not valid. The token may not be valid for a number of reasons. For example, the current time may not be within the token's validity period, the token may contain data that is contradictory or not valid, or the token may contain unsupported SAML 2.0 elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2000,10 +2000,10 @@
         <summary>Validates the specified <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmationData" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws an appropriate exception if the confirmation data is not valid.  
-  
+Throws an appropriate exception if the confirmation data is not valid.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2029,10 +2029,10 @@
         <returns>The identities contained in the token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws an appropriate exception if the token is not valid.  
-  
+Throws an appropriate exception if the token is not valid.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2216,10 +2216,10 @@
         <summary>Writes the saml:Attribute value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default the method writes the value as a string.  
-  
+By default the method writes the value as a string.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2598,10 +2598,10 @@
         <summary>Writes a Saml2Statement.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method may write a \<saml:AttributeStatement>, \<saml:AuthnStatement>, or \<saml:AuthzDecisionStatement> element. To handle custom <xref:System.IdentityModel.Tokens.Saml2Statement> classes for writing a \<saml:Statement> element, override this method.  
-  
+This method may write a \<saml:AttributeStatement>, \<saml:AuthnStatement>, or \<saml:AuthzDecisionStatement> element. To handle custom <xref:System.IdentityModel.Tokens.Saml2Statement> classes for writing a \<saml:Statement> element, override this method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2692,10 +2692,10 @@
         <summary>Writes the &lt;saml:SubjectConfirmationData&gt; element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the data.KeyIdentifiers collection is not empty, an xsi:type attribute will be written specifying the saml:KeyInfoConfirmationDataType.  
-  
+When the data.KeyIdentifiers collection is not empty, an xsi:type attribute will be written specifying the saml:KeyInfoConfirmationDataType.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

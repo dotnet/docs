@@ -14,15 +14,15 @@
     <summary>Provides data for the <see langword="RecognizeCompleted" /> event raised by a <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> or a <see cref="T:System.Speech.Recognition.SpeechRecognizer" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An instance of <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> is created when the <xref:System.Speech.Recognition.SpeechRecognitionEngine> or the <xref:System.Speech.Recognition.SpeechRecognizer> object raises its `SpeechRecognized` event after completing a `RecognizeAsync` operation. For more information about speech recognition events, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+An instance of <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> is created when the <xref:System.Speech.Recognition.SpeechRecognitionEngine> or the <xref:System.Speech.Recognition.SpeechRecognizer> object raises its `SpeechRecognized` event after completing a `RecognizeAsync` operation. For more information about speech recognition events, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
-  
+The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -133,7 +133,7 @@ namespace SampleRecognition
   }            
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -155,15 +155,15 @@ namespace SampleRecognition
         <value>The location in the input device's audio stream associated with the <see cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" /> event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property references the position at the beginning of the recognized phrase in the input device's generated audio stream. By contrast, the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> property references the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+This property references the position at the beginning of the recognized phrase in the input device's generated audio stream. By contrast, the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> property references the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
-  
+The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -275,7 +275,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -298,10 +298,10 @@ namespace SampleRecognition
           <see langword="true" /> if the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> has detected only background noise for longer than was specified by its <see cref="P:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout" /> property; otherwise <see langword="false." /></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
-  
+The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -413,7 +413,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -436,10 +436,10 @@ namespace SampleRecognition
           <see langword="true" /> if the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> has detected only silence for a longer time period than was specified by its <see cref="P:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout" /> property; otherwise <see langword="false." /></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
-  
+The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -551,7 +551,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -574,15 +574,15 @@ namespace SampleRecognition
           <see langword="true" /> if the recognizer no longer has audio input; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The recognizer sets this property to `true` when a file provides the input stream for the recognizer and the end of the file is reached. The end of the input stream can coincide with a successful recognition operation. For more information about using a file as the input stream, see the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToAudioStream%2A> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveFile%2A> methods.  
+The recognizer sets this property to `true` when a file provides the input stream for the recognizer and the end of the file is reached. The end of the input stream can coincide with a successful recognition operation. For more information about using a file as the input stream, see the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToAudioStream%2A> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveFile%2A> methods.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
-  
+The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -694,7 +694,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -716,15 +716,15 @@ namespace SampleRecognition
         <value>The recognition result if the recognition operation succeeded; otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Recognition.RecognitionResult> object derives from <xref:System.Speech.Recognition.RecognizedPhrase> and contains full information about a phrase returned by a recognition operation.  
+The <xref:System.Speech.Recognition.RecognitionResult> object derives from <xref:System.Speech.Recognition.RecognizedPhrase> and contains full information about a phrase returned by a recognition operation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
-  
+The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -836,7 +836,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

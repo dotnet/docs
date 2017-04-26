@@ -14,62 +14,62 @@
     <summary>Provides access to system event notifications. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:Microsoft.Win32.SystemEvents> class provides the ability to respond to specific types of system events.  
-  
- When a system event is raised, any delegates attached to the event are called using the thread that monitors for system events. Therefore, you should make any calls from your event handlers thread-safe. If you need to call a system event that is not exposed as a member of this class, you can use the <xref:Microsoft.Win32.SystemEvents.InvokeOnEventsThread%2A> method.  
-  
+The <xref:Microsoft.Win32.SystemEvents> class provides the ability to respond to specific types of system events.  
+ 
+When a system event is raised, any delegates attached to the event are called using the thread that monitors for system events. Therefore, you should make any calls from your event handlers thread-safe. If you need to call a system event that is not exposed as a member of this class, you can use the <xref:Microsoft.Win32.SystemEvents.InvokeOnEventsThread%2A> method.  
+ 
 > [!CAUTION]
 >  Do not perform time-consuming processing on the thread that raises a system event handler because it might prevent other applications from functioning.  
-  
+ 
 > [!NOTE]
 >  Some system events might not be raised on [!INCLUDE[windowsver](~/includes/windowsver-md.md)]. Be sure to verify that your application works as expected on [!INCLUDE[windowsver](~/includes/windowsver-md.md)].  
+ 
   
-   
-  
+ 
 ## Examples  
- This section contains two examples. The first example shows how to use system events in an ordinary application, and the second example shows how to use system events in a Windows service.  
-  
- **Example 1**  
-  
- The following code example registers interest in some system events and then waits for any of those events to occur. The output shown occurs if the user changes the display resolution.  
-  
- [!code-cpp[SystemEvents#1](~/samples/snippets/cpp/VS_Snippets_Winforms/SystemEvents/cpp/SystemEvents.cpp#1)]
- [!code-csharp[SystemEvents#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SystemEvents/CS/SystemEvents.cs#1)]
- [!code-vb[SystemEvents#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SystemEvents/VB/SystemEvents.vb#1)]  
-  
- **Example 2**  
-  
- The following code example demonstrates a very simple Windows service that handles the <xref:Microsoft.Win32.SystemEvents.TimeChanged> and <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged> events. The example includes a service named `SimpleService`, a form named `HiddenForm`, and an installer. The form provides the message loop that is required by system events.  
-  
+This section contains two examples. The first example shows how to use system events in an ordinary application, and the second example shows how to use system events in a Windows service.  
+ 
+**Example 1**  
+ 
+The following code example registers interest in some system events and then waits for any of those events to occur. The output shown occurs if the user changes the display resolution.  
+ 
+[!code-cpp[SystemEvents#1](~/samples/snippets/cpp/VS_Snippets_Winforms/SystemEvents/cpp/SystemEvents.cpp#1)]
+[!code-csharp[SystemEvents#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SystemEvents/CS/SystemEvents.cs#1)]
+[!code-vb[SystemEvents#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SystemEvents/VB/SystemEvents.vb#1)]  
+ 
+**Example 2**  
+ 
+The following code example demonstrates a very simple Windows service that handles the <xref:Microsoft.Win32.SystemEvents.TimeChanged> and <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged> events. The example includes a service named `SimpleService`, a form named `HiddenForm`, and an installer. The form provides the message loop that is required by system events.  
+ 
 > [!NOTE]
 >  Services do not have message loops, unless they are allowed to interact with the desktop. If the message loop is not provided by a hidden form, as in this example, the service must be run under the local system account, and manual intervention is required to enable interaction with the desktop. That is, the administrator must manually check the **Allow service to interact with desktop** check box on the **Log On** tab of the service properties dialog box. In that case, a message loop is automatically provided. This option is available only when the service is run under the local system account. Interaction with the desktop cannot be enabled programmatically.  
-  
- The service in this example starts a thread that runs an instance of `HiddenForm`. The events are hooked up and handled in the form. The events must be hooked up in the load event of the form, to make sure that the form is completely loaded first; otherwise the events will not be raised.  
-  
+ 
+The service in this example starts a thread that runs an instance of `HiddenForm`. The events are hooked up and handled in the form. The events must be hooked up in the load event of the form, to make sure that the form is completely loaded first; otherwise the events will not be raised.  
+ 
 > [!NOTE]
 >  The example provides all the necessary code, including the form initialization code typically generated by [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] designers. If you are developing your service in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], you can omit the second partial class and use the **Properties** window to set the height and width of the hidden form to zero, the border style to <xref:System.Windows.Forms.FormBorderStyle?displayProperty=fullName>, and the window state to <xref:System.Windows.Forms.FormWindowState?displayProperty=fullName>.  
-  
- To run the example:  
-  
+ 
+To run the example:  
+ 
 1.  Compile the code from the command line. The name that you use for the source file is not important.  
-  
+ 
 2.  Install the service from the command line using the [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md) utility. For example, `InstallUtil example.exe` if the source file name is `example.cs` or `example.vb`. You must be an administrator to install the service.  
-  
+ 
 3.  Use the Services console to start the service.  
-  
+ 
 4.  Change the system time, or change user preferences, such as mouse properties.  
-  
+ 
 5.  View the messages in the **Application** category of Event Viewer.  
-  
+ 
 6.  Use the Services console to stop the service.  
-  
+ 
 7.  Uninstall the service from the command line by using the `/u` option. For example, `InstallUtil /u example.exe`.  
-  
- [!code-csharp[ManagedWindowsService#1](~/samples/snippets/csharp/VS_Snippets_CLR/ManagedWindowsService/cs/source.cs#1)]
- [!code-vb[ManagedWindowsService#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ManagedWindowsService/VB/source.vb#1)]  
-  
+ 
+[!code-csharp[ManagedWindowsService#1](~/samples/snippets/csharp/VS_Snippets_CLR/ManagedWindowsService/cs/source.cs#1)]
+[!code-vb[ManagedWindowsService#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ManagedWindowsService/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated state:</permission>
@@ -121,21 +121,21 @@
         <summary>Occurs when the user changes the display settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!CAUTION]
 >  Because this is a static event, you must detach your event handlers when your application is disposed, or memory leaks will result.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to monitor the <xref:Microsoft.Win32.SystemEvents.DisplaySettingsChanged> event. This code example is part of a larger example provided for the <xref:Microsoft.Win32.SystemEvents> class.  
-  
- [!code-cpp[SystemEvents#2](~/samples/snippets/cpp/VS_Snippets_Winforms/SystemEvents/cpp/SystemEvents.cpp#2)]
- [!code-csharp[SystemEvents#2](~/samples/snippets/csharp/VS_Snippets_Winforms/SystemEvents/CS/SystemEvents.cs#2)]
- [!code-vb[SystemEvents#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SystemEvents/VB/SystemEvents.vb#2)]  
-  
+The following code example demonstrates how to monitor the <xref:Microsoft.Win32.SystemEvents.DisplaySettingsChanged> event. This code example is part of a larger example provided for the <xref:Microsoft.Win32.SystemEvents> class.  
+ 
+[!code-cpp[SystemEvents#2](~/samples/snippets/cpp/VS_Snippets_Winforms/SystemEvents/cpp/SystemEvents.cpp#2)]
+[!code-csharp[SystemEvents#2](~/samples/snippets/csharp/VS_Snippets_Winforms/SystemEvents/CS/SystemEvents.cs#2)]
+[!code-vb[SystemEvents#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SystemEvents/VB/SystemEvents.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">System event notifications are not supported under the current context. Server processes, for example, might not support global system event notifications.</exception>
@@ -163,12 +163,12 @@
         <summary>Occurs when the display settings are changing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!CAUTION]
 >  Because this is a static event, you must detach your event handlers when your application is disposed, or memory leaks will result.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">System event notifications are not supported under the current context. Server processes, for example, might not support global system event notifications.</exception>
@@ -196,13 +196,13 @@
         <summary>Occurs before the thread that listens for system events is terminated.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is raised as the thread that listens for system events is about to be terminated. System event delegates are invoked using the thread that listens for system events.  
-  
+This event is raised as the thread that listens for system events is about to be terminated. System event delegates are invoked using the thread that listens for system events.  
+ 
 > [!CAUTION]
 >  Because this is a static event, you must detach your event handlers when your application is disposed, or memory leaks will result.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">System event notifications are not supported under the current context. Server processes, for example, might not support global system event notifications.</exception>
@@ -230,12 +230,12 @@
         <summary>Occurs when the user adds fonts to or removes fonts from the system.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!CAUTION]
 >  Because this is a static event, you must detach your event handlers when your application is disposed, or memory leaks will result.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">System event notifications are not supported under the current context. Server processes, for example, might not support global system event notifications.</exception>
@@ -267,12 +267,12 @@
         <summary>Invokes the specified delegate using the thread that listens for system events.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method any time that you need to handle a system event that is not exposed otherwise by the <xref:Microsoft.Win32.SystemEvents> class.  
-  
- When you call this method, the specified delegate will be invoked by the thread that your application is using to process system events.  
-  
+You can use this method any time that you need to handle a system event that is not exposed otherwise by the <xref:Microsoft.Win32.SystemEvents> class.  
+ 
+When you call this method, the specified delegate will be invoked by the thread that your application is using to process system events.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">System event notifications are not supported under the current context. Server processes, for example, might not support global system event notifications.</exception>
@@ -332,16 +332,16 @@
         <summary>Occurs when the system is running out of available RAM.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event wraps the WM_COMPACTING message. This message is sent to all top-level windows when the system detects more than 12.5 percent of system time over a 30- to 60-second interval is being spent compacting memory. This indicates that system memory is low.  
-  
+This event wraps the WM_COMPACTING message. This message is sent to all top-level windows when the system detects more than 12.5 percent of system time over a 30- to 60-second interval is being spent compacting memory. This indicates that system memory is low.  
+ 
 > [!NOTE]
 >  This event is only raised if the message pump is running. In a Windows service, unless a hidden form is used or the message pump has been started manually, this event will not be raised. For a code example that shows how to handle system events by using a hidden form in a Windows service, see the <xref:Microsoft.Win32.SystemEvents> class.  
-  
+ 
 > [!CAUTION]
 >  Because this is a static event, you must detach your event handlers when your application is disposed, or memory leaks will result.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">System event notifications are not supported under the current context. Server processes, for example, might not support global system event notifications.</exception>
@@ -372,24 +372,24 @@
         <summary>Occurs when the user switches to an application that uses a different palette.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This event is only raised if the message pump is running. In a Windows service, unless a hidden form is used or the message pump has been started manually, this event will not be raised. For a code example that shows how to handle system events by using a hidden form in a Windows service, see the <xref:Microsoft.Win32.SystemEvents> class.  
-  
+ 
 > [!CAUTION]
 >  Because this is a static event, you must detach your event handlers when your application is disposed, or memory leaks will result.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to monitor the <xref:Microsoft.Win32.SystemEvents.PaletteChanged> event. This code example is part of a larger example provided for the <xref:Microsoft.Win32.SystemEvents> class.  
-  
- [!code-cpp[SystemEvents#2](~/samples/snippets/cpp/VS_Snippets_Winforms/SystemEvents/cpp/SystemEvents.cpp#2)]
- [!code-csharp[SystemEvents#2](~/samples/snippets/csharp/VS_Snippets_Winforms/SystemEvents/CS/SystemEvents.cs#2)]
- [!code-vb[SystemEvents#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SystemEvents/VB/SystemEvents.vb#2)]  
-  
+The following code example demonstrates how to monitor the <xref:Microsoft.Win32.SystemEvents.PaletteChanged> event. This code example is part of a larger example provided for the <xref:Microsoft.Win32.SystemEvents> class.  
+ 
+[!code-cpp[SystemEvents#2](~/samples/snippets/cpp/VS_Snippets_Winforms/SystemEvents/cpp/SystemEvents.cpp#2)]
+[!code-csharp[SystemEvents#2](~/samples/snippets/csharp/VS_Snippets_Winforms/SystemEvents/CS/SystemEvents.cs#2)]
+[!code-vb[SystemEvents#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SystemEvents/VB/SystemEvents.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">System event notifications are not supported under the current context. Server processes, for example, might not support global system event notifications.</exception>
@@ -417,15 +417,15 @@
         <summary>Occurs when the user suspends or resumes the system.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This event is only raised if the message pump is running. In a Windows service, unless a hidden form is used or the message pump has been started manually, this event will not be raised. For a code example that shows how to handle system events by using a hidden form in a Windows service, see the <xref:Microsoft.Win32.SystemEvents> class.  
-  
+ 
 > [!CAUTION]
 >  Because this is a static event, you must detach your event handlers when your application is disposed, or memory leaks will result.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">System event notifications are not supported under the current context. Server processes, for example, might not support global system event notifications.</exception>
@@ -453,15 +453,15 @@
         <summary>Occurs when the user is logging off or shutting down the system.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This event is only raised if the message pump is running. In a Windows service, unless a hidden form is used or the message pump has been started manually, this event will not be raised. For a code example that shows how to handle system events by using a hidden form in a Windows service, see the <xref:Microsoft.Win32.SystemEvents> class.  
-  
+ 
 > [!CAUTION]
 >  Because this is a static event, you must detach your event handlers when your application is disposed, or memory leaks will result.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">System event notifications are not supported under the current context. Server processes, for example, might not support global system event notifications.</exception>
@@ -489,14 +489,14 @@
         <summary>Occurs when the user is trying to log off or shut down the system.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a cancelable event. Setting the <xref:Microsoft.Win32.SessionEndingEventArgs.Cancel%2A> property to `true` will request that the session continues to run. It provides no guarantee that the session will not end.  
-  
- If you are using <xref:Microsoft.Win32.SystemEvents.SessionEnding> in a Windows form to detect a system logoff or reboot, there is no deterministic way to decide whether the <xref:System.Windows.Forms.Form.Closing> event will fire before this event.  
-  
- If you want to perform some special tasks before <xref:System.Windows.Forms.Form.Closing> is fired, you need to ensure that <xref:Microsoft.Win32.SystemEvents.SessionEnding> fires before <xref:System.Windows.Forms.Form.Closing>. To do this, you need to trap the `WM_QUERYENDSESSION` in the form by overriding the `WndProc` function.  This example demonstrates how to do this.  
-  
+This is a cancelable event. Setting the <xref:Microsoft.Win32.SessionEndingEventArgs.Cancel%2A> property to `true` will request that the session continues to run. It provides no guarantee that the session will not end.  
+ 
+If you are using <xref:Microsoft.Win32.SystemEvents.SessionEnding> in a Windows form to detect a system logoff or reboot, there is no deterministic way to decide whether the <xref:System.Windows.Forms.Form.Closing> event will fire before this event.  
+ 
+If you want to perform some special tasks before <xref:System.Windows.Forms.Form.Closing> is fired, you need to ensure that <xref:Microsoft.Win32.SystemEvents.SessionEnding> fires before <xref:System.Windows.Forms.Form.Closing>. To do this, you need to trap the `WM_QUERYENDSESSION` in the form by overriding the `WndProc` function.  This example demonstrates how to do this.  
+ 
 ```vb  
 Private Shared WM_QUERYENDSESSION As Integer = &H11  
  Private Shared systemShutdown As Boolean = False  
@@ -522,7 +522,7 @@ Private Shared WM_QUERYENDSESSION As Integer = &H11
  End Sub  
   
 ```  
-  
+ 
 ```csharp  
 private static int WM_QUERYENDSESSION = 0x11;  
 private static bool systemShutdown = false;  
@@ -562,16 +562,16 @@ private void Form1_Closing(
     }  
 }  
 ```  
-  
+ 
 > [!IMPORTANT]
 >  Console applications do not raise the <xref:Microsoft.Win32.SystemEvents.SessionEnding> event.  
-  
+ 
 > [!NOTE]
 >  This event is only raised if the message pump is running. In a Windows service, unless a hidden form is used or the message pump has been started manually, this event will not be raised. For a code example that shows how to handle system events by using a hidden form in a Windows service, see the <xref:Microsoft.Win32.SystemEvents> class.  
-  
+ 
 > [!CAUTION]
 >  Because this is a static event, you must detach your event handlers when your application is disposed, or memory leaks will result.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">System event notifications are not supported under the current context. Server processes, for example, might not support global system event notifications.</exception>
@@ -599,15 +599,15 @@ private void Form1_Closing(
         <summary>Occurs when the currently logged-in user has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This event is only raised if the message pump is running. In a Windows service, unless a hidden form is used or the message pump has been started manually, this event will not be raised. For a code example that shows how to handle system events by using a hidden form in a Windows service, see the <xref:Microsoft.Win32.SystemEvents> class.  
-  
+ 
 > [!CAUTION]
 >  Because this is a static event, you must detach your event handlers when your application is disposed, or memory leaks will result.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">System event notifications are not supported under the current context. Server processes, for example, might not support global system event notifications.</exception>
@@ -635,15 +635,15 @@ private void Form1_Closing(
         <summary>Occurs when the user changes the time on the system clock.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This event is only raised if the message pump is running. In a Windows service, unless a hidden form is used or the message pump has been started manually, this event will not be raised. For a code example that shows how to handle system events by using a hidden form in a Windows service, see the <xref:Microsoft.Win32.SystemEvents> class.  
-  
+ 
 > [!CAUTION]
 >  Because this is a static event, you must detach your event handlers when your application is disposed, or memory leaks will result.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">System event notifications are not supported under the current context. Server processes, for example, might not support global system event notifications.</exception>
@@ -666,15 +666,15 @@ private void Form1_Closing(
         <summary>Occurs when a windows timer interval has expired.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This event is only raised if the message pump is running. In a Windows service, unless a hidden form is used or the message pump has been started manually, this event will not be raised. For a code example that shows how to handle system events by using a hidden form in a Windows service, see the <xref:Microsoft.Win32.SystemEvents> class.  
-  
+ 
 > [!CAUTION]
 >  Because this is a static event, you must detach your event handlers when your application is disposed, or memory leaks will result.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">System event notifications are not supported under the current context. Server processes, for example, might not support global system event notifications.</exception>
@@ -702,15 +702,15 @@ private void Form1_Closing(
         <summary>Occurs when a user preference has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This event is only raised if the message pump is running. In a Windows service, unless a hidden form is used or the message pump has been started manually, this event will not be raised. For a code example that shows how to handle system events by using a hidden form in a Windows service, see the <xref:Microsoft.Win32.SystemEvents> class.  
-  
+ 
 > [!CAUTION]
 >  Because this is a static event, you must detach your event handlers when your application is disposed, or memory leaks will result.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">System event notifications are not supported under the current context. Server processes, for example, might not support global system event notifications.</exception>
@@ -738,24 +738,24 @@ private void Form1_Closing(
         <summary>Occurs when a user preference is changing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This event is only raised if the message pump is running. In a Windows service, unless a hidden form is used or the message pump has been started manually, this event will not be raised. For a code example that shows how to handle system events by using a hidden form in a Windows service, see the <xref:Microsoft.Win32.SystemEvents> class.  
-  
+ 
 > [!CAUTION]
 >  Because this is a static event, you must detach your event handlers when your application is disposed, or memory leaks will result.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to monitor the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging> event. This code example is part of a larger example provided for the <xref:Microsoft.Win32.SystemEvents> class.  
-  
- [!code-cpp[SystemEvents#2](~/samples/snippets/cpp/VS_Snippets_Winforms/SystemEvents/cpp/SystemEvents.cpp#2)]
- [!code-csharp[SystemEvents#2](~/samples/snippets/csharp/VS_Snippets_Winforms/SystemEvents/CS/SystemEvents.cs#2)]
- [!code-vb[SystemEvents#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SystemEvents/VB/SystemEvents.vb#2)]  
-  
+The following code example demonstrates how to monitor the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging> event. This code example is part of a larger example provided for the <xref:Microsoft.Win32.SystemEvents> class.  
+ 
+[!code-cpp[SystemEvents#2](~/samples/snippets/cpp/VS_Snippets_Winforms/SystemEvents/cpp/SystemEvents.cpp#2)]
+[!code-csharp[SystemEvents#2](~/samples/snippets/csharp/VS_Snippets_Winforms/SystemEvents/CS/SystemEvents.cs#2)]
+[!code-vb[SystemEvents#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SystemEvents/VB/SystemEvents.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">System event notifications are not supported under the current context. Server processes, for example, might not support global system event notifications.</exception>

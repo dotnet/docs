@@ -19,10 +19,10 @@
     <summary>Represents a container for Web request module configuration elements. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This collection holds instances of the [\&lt;webRequestModules\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/webrequestmodules-element-network-settings.md) configuration element, which are used to specify modules registered to create requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
-  
+This collection holds instances of the [\&lt;webRequestModules\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/webrequestmodules-element-network-settings.md) configuration element, which are used to specify modules registered to create requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.WebRequestModuleElementCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor does nothing.  
-  
+This constructor does nothing.  
+ 
  ]]></format>
         </remarks>
       </Docs>

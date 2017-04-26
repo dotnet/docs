@@ -27,14 +27,14 @@
     <summary>Specifies socket send and receive behaviors.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example sends data and specifies None for <xref:System.Net.Sockets.SocketFlags>.  
-  
- [!code-cpp[Socket_Sync_Send_Receive#3](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Sync_Send_Receive/CPP/source.cpp#3)]
- [!code-csharp[Socket_Sync_Send_Receive#3](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Sync_Send_Receive/CS/source.cs#3)]
- [!code-vb[Socket_Sync_Send_Receive#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Sync_Send_Receive/VB/source.vb#3)]  
-  
+The following example sends data and specifies None for <xref:System.Net.Sockets.SocketFlags>.  
+ 
+[!code-cpp[Socket_Sync_Send_Receive#3](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Sync_Send_Receive/CPP/source.cpp#3)]
+[!code-csharp[Socket_Sync_Send_Receive#3](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Sync_Send_Receive/CS/source.cs#3)]
+[!code-vb[Socket_Sync_Send_Receive#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Sync_Send_Receive/VB/source.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

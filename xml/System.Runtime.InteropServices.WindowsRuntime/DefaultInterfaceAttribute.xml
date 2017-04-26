@@ -24,18 +24,18 @@
     <summary>Specifies the default interface of a managed [!INCLUDE[wrt](~/includes/wrt-md.md)] class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you develop [!INCLUDE[wrt](~/includes/wrt-md.md)] Components, use this attribute when you want to specify the default interface that is used to marshal the class the attribute is applied to. This is not necessary if you allow the class interfaces to be generated automatically.  
-  
- A [!INCLUDE[wrt](~/includes/wrt-md.md)] class must have a default interface. If the WinMdExp.exe utility does not detect a default interface for a class when it builds your [!INCLUDE[wrt](~/includes/wrt-md.md)]component, it chooses an interface as follows:  
-  
+When you develop [!INCLUDE[wrt](~/includes/wrt-md.md)] Components, use this attribute when you want to specify the default interface that is used to marshal the class the attribute is applied to. This is not necessary if you allow the class interfaces to be generated automatically.  
+ 
+A [!INCLUDE[wrt](~/includes/wrt-md.md)] class must have a default interface. If the WinMdExp.exe utility does not detect a default interface for a class when it builds your [!INCLUDE[wrt](~/includes/wrt-md.md)]component, it chooses an interface as follows:  
+ 
 -   If the class has automatically generated interfaces, it uses the first one as the default.  
-  
+ 
 -   If the class doesn't have any automatically generated interfaces, it uses the first interface in the class's interface implementation list.  
-  
- You can apply the <xref:System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute> attribute to the class, or apply the `Windows.Foundations.Metadata.DefaultAttribute` attribute to an interface. The latter takes precedence if both attributes are supplied.  
-  
+ 
+You can apply the <xref:System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute> attribute to the class, or apply the `Windows.Foundations.Metadata.DefaultAttribute` attribute to an interface. The latter takes precedence if both attributes are supplied.  
+ 
  ]]></format>
     </remarks>
   </Docs>

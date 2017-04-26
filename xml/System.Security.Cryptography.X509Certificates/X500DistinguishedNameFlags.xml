@@ -28,21 +28,21 @@
     <summary>Specifies characteristics of the X.500 distinguished name.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used with the <xref:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags> class to indicate special characters contained in the distinguished name.  
+This enumeration is used with the <xref:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags> class to indicate special characters contained in the distinguished name.  
+ 
+Several values are mutually exclusive in this enumeration; use only one of these values to define the special characteristics of an X.500 distinguished name. For example, specify only one of the UseCommas, UseNewLines , and UseSemicolons values. You would also specify either UseT61Encoding or UseUTF8Encoding .  
+ 
   
- Several values are mutually exclusive in this enumeration; use only one of these values to define the special characteristics of an X.500 distinguished name. For example, specify only one of the UseCommas, UseNewLines , and UseSemicolons values. You would also specify either UseT61Encoding or UseUTF8Encoding .  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags> enumeration.  
-  
- [!code-cpp[Cryptography.X509Certificates.X500DistinguishedName#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X500DistinguishedName/CPP/x500.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X500DistinguishedName#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X500DistinguishedName/CS/x500.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X500DistinguishedName#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X500DistinguishedName/VB/x500.vb#1)]  
-  
+The following code example shows how to use the <xref:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags> enumeration.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X500DistinguishedName#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X500DistinguishedName/CPP/x500.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X500DistinguishedName#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X500DistinguishedName/CS/x500.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X500DistinguishedName#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X500DistinguishedName/VB/x500.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

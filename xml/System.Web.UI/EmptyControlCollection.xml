@@ -14,16 +14,16 @@
     <summary>Provides standard support for a <see cref="T:System.Web.UI.ControlCollection" /> collection that is always empty.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used when you want to define a custom control that does not allow child controls.  
+This class is used when you want to define a custom control that does not allow child controls.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[SystemWebUI_EmptyControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_EmptyControlCollection/CS/emptycontrolcollection.cs#1)]
- [!code-vb[SystemWebUI_EmptyControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_EmptyControlCollection/VB/emptycontrolcollection.vb#1)]  
-  
+[!code-csharp[SystemWebUI_EmptyControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_EmptyControlCollection/CS/emptycontrolcollection.cs#1)]
+[!code-vb[SystemWebUI_EmptyControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_EmptyControlCollection/VB/emptycontrolcollection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,26 +45,26 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.EmptyControlCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example attempts to populate a control with child controls, causing an exception. This is because the container control does not allow child controls. The following is the command line used to build the executable.  
-  
+The following code example attempts to populate a control with child controls, causing an exception. This is because the container control does not allow child controls. The following is the command line used to build the executable.  
+ 
 ```vb  
 vbc /r:System.dll /r:System.Web.dll /t:library  
        /out:myWebAppPath/bin/vb_myEmptyControlCollection.dll  
        myEmptyControlCollection.vb  
 ```  
-  
+ 
 ```csharp  
 csc /t:library /out:myWebAppPath/bin/cs_myEmptyControlCollection.dll  
     myEmptyControlCollection.cs  
 ```  
-  
- [!code-csharp[SystemWebUI_EmptyControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_EmptyControlCollection/CS/emptycontrolcollection.cs#1)]
- [!code-vb[SystemWebUI_EmptyControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_EmptyControlCollection/VB/emptycontrolcollection.vb#1)]  
-  
- The following code example uses the empty custom control defined above. When running this example, you will get an exception. Notice that the values shown in the `Register` directive reflect the previous command line.  
-  
+ 
+[!code-csharp[SystemWebUI_EmptyControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_EmptyControlCollection/CS/emptycontrolcollection.cs#1)]
+[!code-vb[SystemWebUI_EmptyControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_EmptyControlCollection/VB/emptycontrolcollection.vb#1)]  
+ 
+The following code example uses the empty custom control defined above. When running this example, you will get an exception. Notice that the values shown in the `Register` directive reflect the previous command line.  
+ 
 ```vb  
 <%@ Register TagPrefix="custom" Assembly="vb_myEmptyControlCollection" Namespace="CustomControls" %>  
  <html>  
@@ -74,7 +74,7 @@ csc /t:library /out:myWebAppPath/bin/cs_myEmptyControlCollection.dll
   </body>  
  </html>  
 ```  
-  
+ 
 ```csharp  
 <%@ Register TagPrefix="custom" Assembly="cs_myEmptyControlCollection" Namespace="CustomControls" %>  
  <html>  
@@ -84,7 +84,7 @@ csc /t:library /out:myWebAppPath/bin/cs_myEmptyControlCollection.dll
   </body>  
  </html>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

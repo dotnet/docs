@@ -230,10 +230,10 @@
           <see langword="true" /> if a data source expression object is tracking its view state changes; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.Expressions.DataSourceExpression> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.Expressions.DataSourceExpression> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,10 +258,10 @@
         <summary>When implemented by a class, loads the previously saved view state of the data source expression object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.Expressions.DataSourceExpression> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.Expressions.DataSourceExpression> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -284,10 +284,10 @@
         <returns>The object that contains the view state changes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.Expressions.DataSourceExpression> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.Expressions.DataSourceExpression> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -309,10 +309,10 @@
         <summary>When implemented by a class, tracks view state changes of the <see cref="T:System.Web.UI.WebControls.Expressions.DataSourceExpression" /> object so that the changes can be stored in the <see cref="T:System.Web.UI.StateBag" /> object for the data source expression object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.Expressions.DataSourceExpression> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.Expressions.DataSourceExpression> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

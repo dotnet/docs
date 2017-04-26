@@ -16,10 +16,10 @@
     <summary>Establishes a <see cref="P:System.Xml.Serialization.IXmlTextParser.Normalized" /> property for use by the .NET Framework infrastructure.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should not implement the <xref:System.Xml.Serialization.IXmlTextParser> interface in your code. Instead use the <xref:System.Xml.XmlTextReader.Normalization%2A> property of the <xref:System.Xml.XmlTextReader> class.  
-  
+You should not implement the <xref:System.Xml.Serialization.IXmlTextParser> interface in your code. Instead use the <xref:System.Xml.XmlTextReader.Normalization%2A> property of the <xref:System.Xml.XmlTextReader> class.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -48,10 +48,10 @@
           <see langword="true" /> if white space attributes values are normalized; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should not implement the <xref:System.Xml.Serialization.IXmlTextParser> interface and <xref:System.Xml.Serialization.IXmlTextParser.Normalized%2A> property in your code. Instead use the <xref:System.Xml.XmlTextReader.Normalization%2A> property of the <xref:System.Xml.XmlTextReader> class.  
-  
+You should not implement the <xref:System.Xml.Serialization.IXmlTextParser> interface and <xref:System.Xml.Serialization.IXmlTextParser.Normalized%2A> property in your code. Instead use the <xref:System.Xml.XmlTextReader.Normalization%2A> property of the <xref:System.Xml.XmlTextReader> class.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -79,10 +79,10 @@
         <value>A member of the <see cref="T:System.Xml.WhitespaceHandling" /> enumeration that describes how whites pace is handled when parsing XML.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should not implement the <xref:System.Xml.Serialization.IXmlTextParser> interface and <xref:System.Xml.Serialization.IXmlTextParser.Normalized%2A> property in your code. Instead use the <xref:System.Xml.XmlTextReader.Normalization%2A> property of the <xref:System.Xml.XmlTextReader> class.  
-  
+You should not implement the <xref:System.Xml.Serialization.IXmlTextParser> interface and <xref:System.Xml.Serialization.IXmlTextParser.Normalized%2A> property in your code. Instead use the <xref:System.Xml.XmlTextReader.Normalization%2A> property of the <xref:System.Xml.XmlTextReader> class.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

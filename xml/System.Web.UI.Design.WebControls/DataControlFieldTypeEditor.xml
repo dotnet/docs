@@ -14,10 +14,10 @@
     <summary>Provides an editing user interface (UI) for a data control field.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This editor is used internally by the <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView> controls.  
-  
+This editor is used internally by the <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView> controls.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,10 +84,10 @@
         <returns>The <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> value representing the editing style of this editor. The default value is <see langword="Modal" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Always returns the value `Modal`.  
-  
+Always returns the value `Modal`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

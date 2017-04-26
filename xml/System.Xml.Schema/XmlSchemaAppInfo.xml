@@ -19,23 +19,23 @@
     <summary>Represents the World Wide Web Consortium (W3C) <see langword="appinfo" /> element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `appinfo` element defines application-specific information within an annotation  
+The `appinfo` element defines application-specific information within an annotation  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an `appinfo` element.  
-  
- [!code-cpp[Classic WebData XmlSchemaAppInfo Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaAppInfo Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlSchemaAppInfo Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaAppInfo Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlSchemaAppInfo Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaAppInfo Example/VB/source.vb#1)]  
-  
- The following XML file is generated for the preceding code example.  
-  
- [!code-xml[Classic WebData XmlSchemaAppInfo Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaAppInfo Example/XML/source.xml#2)]  
-  
+The following example creates an `appinfo` element.  
+ 
+[!code-cpp[Classic WebData XmlSchemaAppInfo Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaAppInfo Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlSchemaAppInfo Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaAppInfo Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlSchemaAppInfo Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaAppInfo Example/VB/source.vb#1)]  
+ 
+The following XML file is generated for the preceding code example.  
+ 
+[!code-xml[Classic WebData XmlSchemaAppInfo Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaAppInfo Example/XML/source.xml#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -120,10 +120,10 @@
  Optional.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source must be a URI reference. Optional.  
-  
+The source must be a URI reference. Optional.  
+ 
  ]]></format>
         </remarks>
       </Docs>

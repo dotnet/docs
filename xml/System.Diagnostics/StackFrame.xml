@@ -28,26 +28,26 @@
     <summary>Provides information about a <see cref="T:System.Diagnostics.StackFrame" />, which represents a function call on the call stack for the current thread.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Diagnostics.StackFrame> is created and pushed on the call stack for every function call made during the execution of a thread. The stack frame always includes <xref:System.Reflection.MethodBase> information, and optionally includes file name, line number, and column number information.  
+A <xref:System.Diagnostics.StackFrame> is created and pushed on the call stack for every function call made during the execution of a thread. The stack frame always includes <xref:System.Reflection.MethodBase> information, and optionally includes file name, line number, and column number information.  
+ 
+<xref:System.Diagnostics.StackFrame> information will be most informative with Debug build configurations. By default, Debug builds include debug symbols, while Release builds do not. The debug symbols contain most of the file, method name, line number, and column information used in constructing <xref:System.Diagnostics.StackFrame> objects.  
+ 
   
- <xref:System.Diagnostics.StackFrame> information will be most informative with Debug build configurations. By default, Debug builds include debug symbols, while Release builds do not. The debug symbols contain most of the file, method name, line number, and column information used in constructing <xref:System.Diagnostics.StackFrame> objects.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame> class to provide the stack frame information for a stack trace.  
-  
- [!code-csharp[StackFrameSample2#1](~/samples/snippets/csharp/VS_Snippets_CLR/stackframesample2/cs/program.cs#1)]
- [!code-vb[StackFrameSample2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/stackframesample2/vb/program.vb#1)]  
-  
- The following example demonstrates the use of  the members of the <xref:System.Diagnostics.StackFrame> class.  
-  
- [!code-cpp[StackFrameSample1#1](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#1)]
- [!code-csharp[StackFrameSample1#1](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#1)]
- [!code-vb[StackFrameSample1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#1)]  
-  
+The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame> class to provide the stack frame information for a stack trace.  
+ 
+[!code-csharp[StackFrameSample2#1](~/samples/snippets/csharp/VS_Snippets_CLR/stackframesample2/cs/program.cs#1)]
+[!code-vb[StackFrameSample2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/stackframesample2/vb/program.vb#1)]  
+ 
+The following example demonstrates the use of  the members of the <xref:System.Diagnostics.StackFrame> class.  
+ 
+[!code-cpp[StackFrameSample1#1](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#1)]
+[!code-csharp[StackFrameSample1#1](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#1)]
+[!code-vb[StackFrameSample1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for the ability of inheritors to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />. This class cannot be inherited by partially trusted code.</permission>
@@ -96,14 +96,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackFrame" /> class, optionally capturing source information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.%23ctor%28System.Boolean%29> constructor. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
-  
- [!code-cpp[StackFrameSample1#2](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#2)]
- [!code-csharp[StackFrameSample1#2](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#2)]
- [!code-vb[StackFrameSample1#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#2)]  
-  
+The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.%23ctor%28System.Boolean%29> constructor. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
+ 
+[!code-cpp[StackFrameSample1#2](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#2)]
+[!code-csharp[StackFrameSample1#2](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#2)]
+[!code-vb[StackFrameSample1#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -130,14 +130,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackFrame" /> class that corresponds to a frame above the current stack frame.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.%23ctor%28System.Int32%29> constructor. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
-  
- [!code-cpp[StackFrameSample1#3](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#3)]
- [!code-csharp[StackFrameSample1#3](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#3)]
- [!code-vb[StackFrameSample1#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#3)]  
-  
+The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.%23ctor%28System.Int32%29> constructor. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
+ 
+[!code-cpp[StackFrameSample1#3](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#3)]
+[!code-csharp[StackFrameSample1#3](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#3)]
+[!code-vb[StackFrameSample1#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,14 +167,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackFrame" /> class that corresponds to a frame above the current stack frame, optionally capturing source information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.%23ctor%28System.Int32%2CSystem.Boolean%29> constructor. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
-  
- [!code-cpp[StackFrameSample1#4](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#4)]
- [!code-csharp[StackFrameSample1#4](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#4)]
- [!code-vb[StackFrameSample1#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#4)]  
-  
+The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.%23ctor%28System.Int32%2CSystem.Boolean%29> constructor. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
+ 
+[!code-cpp[StackFrameSample1#4](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#4)]
+[!code-csharp[StackFrameSample1#4](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#4)]
+[!code-vb[StackFrameSample1#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,19 +203,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackFrame" /> class that contains only the given file name and line number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when you do not want to use the debugger's line mapping logic.  
+Use this constructor when you do not want to use the debugger's line mapping logic.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.%23ctor%28System.String%2CSystem.Int32%29> constructor. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
-  
- [!code-cpp[StackFrameSample1#5](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#5)]
- [!code-csharp[StackFrameSample1#5](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#5)]
- [!code-vb[StackFrameSample1#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#5)]  
-  
+The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.%23ctor%28System.String%2CSystem.Int32%29> constructor. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
+ 
+[!code-cpp[StackFrameSample1#5](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#5)]
+[!code-csharp[StackFrameSample1#5](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#5)]
+[!code-vb[StackFrameSample1#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,19 +246,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackFrame" /> class that contains only the given file name, line number, and column number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor when you do not want to use the debugger's line mapping logic.  
+Use this constructor when you do not want to use the debugger's line mapping logic.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
-  
- [!code-cpp[StackFrameSample1#6](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#6)]
- [!code-csharp[StackFrameSample1#6](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#6)]
- [!code-vb[StackFrameSample1#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#6)]  
-  
+The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
+ 
+[!code-cpp[StackFrameSample1#6](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#6)]
+[!code-csharp[StackFrameSample1#6](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#6)]
+[!code-vb[StackFrameSample1#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -290,14 +290,14 @@
         <returns>The file column number, or 0 (zero) if the file column number cannot be determined.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.GetFileColumnNumber%2A> method. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
-  
- [!code-cpp[StackFrameSample1#7](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#7)]
- [!code-csharp[StackFrameSample1#7](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#7)]
- [!code-vb[StackFrameSample1#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#7)]  
-  
+The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.GetFileColumnNumber%2A> method. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
+ 
+[!code-cpp[StackFrameSample1#7](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#7)]
+[!code-csharp[StackFrameSample1#7](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#7)]
+[!code-vb[StackFrameSample1#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,14 +329,14 @@
         <returns>The file line number, or 0 (zero) if the file line number cannot be determined.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.GetFileLineNumber%2A> method. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
-  
- [!code-cpp[StackFrameSample1#7](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#7)]
- [!code-csharp[StackFrameSample1#7](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#7)]
- [!code-vb[StackFrameSample1#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#7)]  
-  
+The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.GetFileLineNumber%2A> method. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
+ 
+[!code-cpp[StackFrameSample1#7](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#7)]
+[!code-csharp[StackFrameSample1#7](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#7)]
+[!code-vb[StackFrameSample1#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -368,14 +368,14 @@
         <returns>The file name, or <see langword="null" /> if the file name cannot be determined.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.GetFileName%2A> method. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
-  
- [!code-cpp[StackFrameSample1#7](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#7)]
- [!code-csharp[StackFrameSample1#7](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#7)]
- [!code-vb[StackFrameSample1#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#7)]  
-  
+The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.GetFileName%2A> method. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
+ 
+[!code-cpp[StackFrameSample1#7](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#7)]
+[!code-csharp[StackFrameSample1#7](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#7)]
+[!code-vb[StackFrameSample1#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration:  <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
@@ -408,14 +408,14 @@
         <returns>The offset from the start of the MSIL code for the method that is executing.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.GetILOffset%2A> method. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
-  
- [!code-cpp[StackFrameSample1#7](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#7)]
- [!code-csharp[StackFrameSample1#7](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#7)]
- [!code-vb[StackFrameSample1#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#7)]  
-  
+The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.GetILOffset%2A> method. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
+ 
+[!code-cpp[StackFrameSample1#7](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#7)]
+[!code-csharp[StackFrameSample1#7](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#7)]
+[!code-vb[StackFrameSample1#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -447,19 +447,19 @@
         <returns>The method in which the frame is executing.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method that is currently executing may be inherited from a base class, although it is called in a derived class. In this case, the <xref:System.Reflection.MemberInfo.ReflectedType%2A> property of the <xref:System.Reflection.MethodBase> object that is returned by <xref:System.Diagnostics.StackFrame.GetMethod%2A> identifies the base class, not the derived class.  
+The method that is currently executing may be inherited from a base class, although it is called in a derived class. In this case, the <xref:System.Reflection.MemberInfo.ReflectedType%2A> property of the <xref:System.Reflection.MethodBase> object that is returned by <xref:System.Diagnostics.StackFrame.GetMethod%2A> identifies the base class, not the derived class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.GetMethod%2A> method. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
-  
- [!code-cpp[StackTraceSample3#6](~/samples/snippets/cpp/VS_Snippets_CLR/StackTraceSample3/CPP/stacktracesample3.cpp#6)]
- [!code-csharp[StackTraceSample3#6](~/samples/snippets/csharp/VS_Snippets_CLR/StackTraceSample3/CS/stacktracesample3.cs#6)]
- [!code-vb[StackTraceSample3#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackTraceSample3/VB/stacktracesample3.vb#6)]  
-  
+The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.GetMethod%2A> method. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
+ 
+[!code-cpp[StackTraceSample3#6](~/samples/snippets/cpp/VS_Snippets_CLR/StackTraceSample3/CPP/stacktracesample3.cpp#6)]
+[!code-csharp[StackTraceSample3#6](~/samples/snippets/csharp/VS_Snippets_CLR/StackTraceSample3/CS/stacktracesample3.cs#6)]
+[!code-vb[StackTraceSample3#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackTraceSample3/VB/stacktracesample3.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -487,14 +487,14 @@
         <returns>The offset from the start of the JIT-compiled code for the method that is being executed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.GetNativeOffset%2A> method. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
-  
- [!code-cpp[StackFrameSample1#7](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#7)]
- [!code-csharp[StackFrameSample1#7](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#7)]
- [!code-vb[StackFrameSample1#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#7)]  
-  
+The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.GetNativeOffset%2A> method. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
+ 
+[!code-cpp[StackFrameSample1#7](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#7)]
+[!code-csharp[StackFrameSample1#7](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#7)]
+[!code-vb[StackFrameSample1#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -525,10 +525,10 @@
         <summary>Defines the value that is returned from the <see cref="M:System.Diagnostics.StackFrame.GetNativeOffset" /> or <see cref="M:System.Diagnostics.StackFrame.GetILOffset" /> method when the native or Microsoft intermediate language (MSIL) offset is unknown. This field is constant.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this constant is -1.  
-  
+The value of this constant is -1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -560,14 +560,14 @@
         <returns>A readable representation of the stack trace.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.ToString%2A> method. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
-  
- [!code-cpp[StackFrameSample1#3](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#3)]
- [!code-csharp[StackFrameSample1#3](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#3)]
- [!code-vb[StackFrameSample1#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#3)]  
-  
+The following example demonstrates the use of the <xref:System.Diagnostics.StackFrame.ToString%2A> method. This code example is part of a larger example provided for the <xref:System.Diagnostics.StackFrame> class.  
+ 
+[!code-cpp[StackFrameSample1#3](~/samples/snippets/cpp/VS_Snippets_CLR/StackFrameSample1/CPP/source.cpp#3)]
+[!code-csharp[StackFrameSample1#3](~/samples/snippets/csharp/VS_Snippets_CLR/StackFrameSample1/CS/source.cs#3)]
+[!code-vb[StackFrameSample1#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/StackFrameSample1/VB/source.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>

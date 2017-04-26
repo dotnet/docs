@@ -18,35 +18,35 @@
     <summary>Defines a flexible grid area that consists of columns and rows.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Grid> contains a collection of <xref:System.Windows.UIElement> objects, which are in the <xref:System.Windows.Controls.Panel.Children%2A> property.  
+A <xref:System.Windows.Controls.Grid> contains a collection of <xref:System.Windows.UIElement> objects, which are in the <xref:System.Windows.Controls.Panel.Children%2A> property.  
+ 
+Columns and rows that are defined within a <xref:System.Windows.Controls.Grid> can take advantage of <xref:System.Windows.GridUnitType> sizing to distribute remaining space proportionally. When <xref:System.Windows.GridUnitType> is selected as the height or width of a row or column, that column or row receives a weighted proportion of the remaining available space. This is in contrast to <xref:System.Windows.GridUnitType>, which distributes space evenly based on the size of the content that is within a column or row. This value is expressed as `*` or `2*` when you use [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]. In the first case, the row or column would receive one times the available space, while in the second case, the row or column would receive two times the available space, and so on. By combining this technique to proportionally distribute space with a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> value of `Stretch`, it is possible to partition layout space by percentage of screen space. <xref:System.Windows.Controls.Grid> is the only layout panel that can distribute space in this manner.  
+ 
+By default, rows and columns take up the least amount of space necessary to accommodate the largest content within any cell contained in a given row or column. For example, if a column has one cell with a long word like "hippopotamus" contained within it but all the other cells in the column have smaller words like "dog", the width of the column will be the width of the largest word (hippopotamus).  
+ 
+You can precisely position child elements of a <xref:System.Windows.Controls.Grid> by using a combination of the <xref:System.Windows.FrameworkElement.Margin%2A> property and alignment properties.  
+ 
+Child elements of a <xref:System.Windows.Controls.Grid> are drawn in the order in which they appear in markup or code. As a consequence, layered order (also known as z-order) can be achieved when elements share the same coordinates.  
+ 
+<xref:System.Windows.Controls.Grid> and <xref:System.Windows.Documents.Table> share some common functionality, but each can be applied in appropriate scenarios to better use its built-in features. <xref:System.Windows.Controls.Grid> adds elements based on a row and column index; <xref:System.Windows.Documents.Table> does not. The <xref:System.Windows.Controls.Grid> element allows layering of content, where more than one element can exist within a single cell. <xref:System.Windows.Documents.Table> does not support layering. Child elements of a <xref:System.Windows.Controls.Grid> can be absolutely positioned relative to the upper-left corner of their "cell" boundaries. <xref:System.Windows.Documents.Table> does not support this feature. <xref:System.Windows.Controls.Grid> also offers more flexible resizing behavior than <xref:System.Windows.Documents.Table>.  
+ 
+<xref:System.Windows.Controls.Grid> uses the <xref:System.Windows.GridLength> object to define the sizing characteristics of a <xref:System.Windows.Controls.RowDefinition> or <xref:System.Windows.Controls.ColumnDefinition>. For a definition of each unit type, see <xref:System.Windows.GridUnitType>.  
+ 
+If a child element is added to a column within a <xref:System.Windows.Controls.Grid>, and the column has its <xref:System.Windows.Controls.ColumnDefinition.Width%2A> property set to `Auto`, the child will be measured without restrictions. This behavior can prevent horizontal scroll bars from displaying if a <xref:System.Windows.Controls.ScrollViewer> is being used, as the child element is measured as unbounded. For purposes of display, the child is clipped rather than scrolled.  
+ 
+Panel elements do not receive focus by default. To compel a panel element to receive focus, set the <xref:System.Windows.UIElement.Focusable%2A> property to `true`.  
+ 
   
- Columns and rows that are defined within a <xref:System.Windows.Controls.Grid> can take advantage of <xref:System.Windows.GridUnitType> sizing to distribute remaining space proportionally. When <xref:System.Windows.GridUnitType> is selected as the height or width of a row or column, that column or row receives a weighted proportion of the remaining available space. This is in contrast to <xref:System.Windows.GridUnitType>, which distributes space evenly based on the size of the content that is within a column or row. This value is expressed as `*` or `2*` when you use [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]. In the first case, the row or column would receive one times the available space, while in the second case, the row or column would receive two times the available space, and so on. By combining this technique to proportionally distribute space with a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> value of `Stretch`, it is possible to partition layout space by percentage of screen space. <xref:System.Windows.Controls.Grid> is the only layout panel that can distribute space in this manner.  
-  
- By default, rows and columns take up the least amount of space necessary to accommodate the largest content within any cell contained in a given row or column. For example, if a column has one cell with a long word like "hippopotamus" contained within it but all the other cells in the column have smaller words like "dog", the width of the column will be the width of the largest word (hippopotamus).  
-  
- You can precisely position child elements of a <xref:System.Windows.Controls.Grid> by using a combination of the <xref:System.Windows.FrameworkElement.Margin%2A> property and alignment properties.  
-  
- Child elements of a <xref:System.Windows.Controls.Grid> are drawn in the order in which they appear in markup or code. As a consequence, layered order (also known as z-order) can be achieved when elements share the same coordinates.  
-  
- <xref:System.Windows.Controls.Grid> and <xref:System.Windows.Documents.Table> share some common functionality, but each can be applied in appropriate scenarios to better use its built-in features. <xref:System.Windows.Controls.Grid> adds elements based on a row and column index; <xref:System.Windows.Documents.Table> does not. The <xref:System.Windows.Controls.Grid> element allows layering of content, where more than one element can exist within a single cell. <xref:System.Windows.Documents.Table> does not support layering. Child elements of a <xref:System.Windows.Controls.Grid> can be absolutely positioned relative to the upper-left corner of their "cell" boundaries. <xref:System.Windows.Documents.Table> does not support this feature. <xref:System.Windows.Controls.Grid> also offers more flexible resizing behavior than <xref:System.Windows.Documents.Table>.  
-  
- <xref:System.Windows.Controls.Grid> uses the <xref:System.Windows.GridLength> object to define the sizing characteristics of a <xref:System.Windows.Controls.RowDefinition> or <xref:System.Windows.Controls.ColumnDefinition>. For a definition of each unit type, see <xref:System.Windows.GridUnitType>.  
-  
- If a child element is added to a column within a <xref:System.Windows.Controls.Grid>, and the column has its <xref:System.Windows.Controls.ColumnDefinition.Width%2A> property set to `Auto`, the child will be measured without restrictions. This behavior can prevent horizontal scroll bars from displaying if a <xref:System.Windows.Controls.ScrollViewer> is being used, as the child element is measured as unbounded. For purposes of display, the child is clipped rather than scrolled.  
-  
- Panel elements do not receive focus by default. To compel a panel element to receive focus, set the <xref:System.Windows.UIElement.Focusable%2A> property to `true`.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to create a grid. In this case, the grid defines three <xref:System.Windows.Controls.ColumnDefinition> elements and four <xref:System.Windows.Controls.RowDefinition> elements that host child content.  
-  
- [!code-csharp[Grid#3](~/samples/snippets/csharp/VS_Snippets_Wpf/Grid/CSharp/Grid_Code.cs#3)]
- [!code-vb[Grid#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Grid/VisualBasic/grid_vb.vb#3)]
- [!code-xml[Grid#3](~/samples/snippets/xaml/VS_Snippets_Wpf/Grid/XAML/default.xaml#3)]  
-  
+The following example demonstrates how to create a grid. In this case, the grid defines three <xref:System.Windows.Controls.ColumnDefinition> elements and four <xref:System.Windows.Controls.RowDefinition> elements that host child content.  
+ 
+[!code-csharp[Grid#3](~/samples/snippets/csharp/VS_Snippets_Wpf/Grid/CSharp/Grid_Code.cs#3)]
+[!code-vb[Grid#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Grid/VisualBasic/grid_vb.vb#3)]
+[!code-xml[Grid#3](~/samples/snippets/xaml/VS_Snippets_Wpf/Grid/XAML/default.xaml#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -111,12 +111,12 @@
         <value>A <see cref="T:System.Windows.Controls.ColumnDefinitionCollection" /> defined on this instance of <see cref="T:System.Windows.Controls.Grid" /></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlPropertyElementUsage_ColumnDefinitions"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
   <object.ColumnDefinitions>  
@@ -125,12 +125,12 @@
 </object>  
   
 ```  
-  
+ 
 <a name="xamlValues_ColumnDefinitions"></a>   
 ## XAML Values  
- *OneOrMoreColumnDefinitions*  
- One or more <xref:System.Windows.Controls.ColumnDefinition> elements. Each such <xref:System.Windows.Controls.ColumnDefinition> becomes a placeholder representing a column in the final grid layout.  
-  
+*OneOrMoreColumnDefinitions*  
+One or more <xref:System.Windows.Controls.ColumnDefinition> elements. Each such <xref:System.Windows.Controls.ColumnDefinition> becomes a placeholder representing a column in the final grid layout.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -320,10 +320,10 @@
         <returns>The child <see cref="T:System.Windows.Media.Visual" /> at the specified <paramref name="index" /> position.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The visual tree must not be modified while this method is called.  
-  
+The visual tree must not be modified while this method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -431,12 +431,12 @@
         <value>A <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> defined on this instance of <see cref="T:System.Windows.Controls.Grid" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlPropertyElementUsage_RowDefinitions"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
   <object.RowDefinitions>  
@@ -444,12 +444,12 @@
   </object.RowDefinitions>  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_RowDefinitions"></a>   
 ## XAML Values  
- *OneOrMoreRowDefinitions*  
- One or more <xref:System.Windows.Controls.RowDefinition> elements. Each such <xref:System.Windows.Controls.RowDefinition> becomes a placeholder representing a row in the final grid layout.  
-  
+*OneOrMoreRowDefinitions*  
+One or more <xref:System.Windows.Controls.RowDefinition> elements. Each such <xref:System.Windows.Controls.RowDefinition> becomes a placeholder representing a row in the final grid layout.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -669,18 +669,18 @@
           <see langword="true" /> if grid lines are visible; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enabling grid lines creates dotted lines around all the elements within a <xref:System.Windows.Controls.Grid>. Only dotted lines are available because this property is intended as a design tool to debug layout problems and is not intended for use in production quality code. If you want lines inside a <xref:System.Windows.Controls.Grid>, style the elements within the <xref:System.Windows.Controls.Grid> to have borders.  
-  
+Enabling grid lines creates dotted lines around all the elements within a <xref:System.Windows.Controls.Grid>. Only dotted lines are available because this property is intended as a design tool to debug layout problems and is not intended for use in production quality code. If you want lines inside a <xref:System.Windows.Controls.Grid>, style the elements within the <xref:System.Windows.Controls.Grid> to have borders.  
+ 
 <a name="dependencyPropertyInfo_ShowGridLines"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Grid>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -762,10 +762,10 @@
           <see cref="T:System.Int32" /> that represents the total number of child <see cref="T:System.Windows.Media.Visual" /> objects. The default value is zero.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The visual tree must not be modified during a call to this method.  
-  
+The visual tree must not be modified during a call to this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -11,10 +11,10 @@
     <summary>Represents a service that generates a <see cref="T:System.Xaml.XamlObjectWriter" /> that is based on the current internal parser context.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An internal factory class implements this service for .NET Framework XAML Services. By obtaining the service from an existing XAML object writer, you can call <xref:System.Xaml.IXamlObjectWriterFactory.GetXamlObjectWriter%2A> to construct a new compatible XAML object writer. The factory-constructed object writer can resume writing to the object graph after the first write operation is suspended.  
-  
+An internal factory class implements this service for .NET Framework XAML Services. By obtaining the service from an existing XAML object writer, you can call <xref:System.Xaml.IXamlObjectWriterFactory.GetXamlObjectWriter%2A> to construct a new compatible XAML object writer. The factory-constructed object writer can resume writing to the object graph after the first write operation is suspended.  
+ 
  ]]></format>
     </remarks>
   </Docs>

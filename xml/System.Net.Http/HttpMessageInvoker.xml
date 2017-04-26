@@ -24,12 +24,12 @@
     <summary>A specialty class that allows applications to call the <see cref="M:System.Net.Http.HttpMessageInvoker.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" /> method on an Http handler chain.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is the base type for <xref:System.Net.Http.HttpClient> and other message originators.  
-  
- Most applications that are connecting to a web site will use one of the <xref:System.Net.Http.HttpClient.SendAsync%2A> methods on the <xref:System.Net.Http.HttpClient> class.  
-  
+This class is the base type for <xref:System.Net.Http.HttpClient> and other message originators.  
+ 
+Most applications that are connecting to a web site will use one of the <xref:System.Net.Http.HttpClient.SendAsync%2A> methods on the <xref:System.Net.Http.HttpClient> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -166,12 +166,12 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete once the entire response including content is read.  
-  
- Most applications that are connecting to a web site will use one of the <xref:System.Net.Http.HttpClient.SendAsync%2A> methods on the <xref:System.Net.Http.HttpClient> class.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete once the entire response including content is read.  
+ 
+Most applications that are connecting to a web site will use one of the <xref:System.Net.Http.HttpClient.SendAsync%2A> methods on the <xref:System.Net.Http.HttpClient> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was <see langword="null" />.</exception>

@@ -40,10 +40,10 @@
         <returns>The first item that matches the search criterion; otherwise, <see langword="null" /> if no items match.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set the `propertyId` parameter to `0` to retrieve the next item after `startAfter`, regardless of the value specified in `value`. Set `startAfter` to `null` to start the search with the first item.  
-  
+Set the `propertyId` parameter to `0` to retrieve the next item after `startAfter`, regardless of the value specified in `value`. Set `startAfter` to `null` to start the search with the first item.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -64,12 +64,12 @@
         <summary>Identifies the <see cref="T:System.Windows.Automation.ItemContainerPattern" /> control pattern.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.SynchronizedInputPatternIdentifiers>.  
-  
- The pattern identifier is passed to methods, such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A>, to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
-  
+This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.SynchronizedInputPatternIdentifiers>.  
+ 
+The pattern identifier is passed to methods, such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A>, to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -15,10 +15,10 @@
     <summary>Represents a request for notification for a given command.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides low-level access to the query notification services exposed by SQL Server 2005. For most applications the <xref:System.Data.SqlClient.SqlDependency> class provides a simpler way of using query notifications. However, if you need fine control over when notifications occur, or you need to customize the message data returned as part of a notification, the <xref:System.Data.Sql.SqlNotificationRequest> class is the one to use.  
-  
+This class provides low-level access to the query notification services exposed by SQL Server 2005. For most applications the <xref:System.Data.SqlClient.SqlDependency> class provides a simpler way of using query notifications. However, if you need fine control over when notifications occur, or you need to customize the message data returned as part of a notification, the <xref:System.Data.Sql.SqlNotificationRequest> class is the one to use.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,10 +38,10 @@
         <summary>Creates a new instance of the <see cref="T:System.Data.Sql.SqlNotificationRequest" /> class with default values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the default constructor is used to create a <xref:System.Data.Sql.SqlNotificationRequest> object, that instance must have its <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A> and <xref:System.Data.Sql.SqlNotificationRequest.Options%2A> properties initialized before assigning the object to a <xref:System.Data.SqlClient.SqlCommand> object's <xref:System.Data.SqlClient.SqlCommand.Notification%2A> property. The default values used by the constructor are NULL (`Nothing` in Visual Basic) for the <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A>, an empty string for the <xref:System.Data.Sql.SqlNotificationRequest.Options%2A>, and zero for the <xref:System.Data.Sql.SqlNotificationRequest.Timeout%2A>.  
-  
+If the default constructor is used to create a <xref:System.Data.Sql.SqlNotificationRequest> object, that instance must have its <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A> and <xref:System.Data.Sql.SqlNotificationRequest.Options%2A> properties initialized before assigning the object to a <xref:System.Data.SqlClient.SqlCommand> object's <xref:System.Data.SqlClient.SqlCommand.Notification%2A> property. The default values used by the constructor are NULL (`Nothing` in Visual Basic) for the <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A>, an empty string for the <xref:System.Data.Sql.SqlNotificationRequest.Options%2A>, and zero for the <xref:System.Data.Sql.SqlNotificationRequest.Timeout%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -70,10 +70,10 @@
         <summary>Creates a new instance of the <see cref="T:System.Data.Sql.SqlNotificationRequest" /> class with a user-defined string that identifies a particular notification request, the name of a predefined SQL Server 2005 Service Broker service name, and the time-out period, measured in seconds.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor allows you to initialize a new <xref:System.Data.Sql.SqlNotificationRequest> instance, providing your own identifier, the SQL Server 2005 Service Broker service name, and a time-out value.  
-  
+This constructor allows you to initialize a new <xref:System.Data.Sql.SqlNotificationRequest> instance, providing your own identifier, the SQL Server 2005 Service Broker service name, and a time-out value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value of the <paramref name="options" /> parameter is NULL.</exception>
@@ -99,18 +99,18 @@
           <see langword="string" /> that contains the SQL Server 2005 Service Broker service name where notification messages are posted and the database or service broker instance GUID to scope the server name lookup.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the <xref:System.Data.Sql.SqlNotificationRequest.Options%2A> property has the following format:  
-  
- `service=<service-name>{;(local database=<database>|broker instance=<broker instance>)}`  
-  
- For example, if you use the service "myservice" in the database "AdventureWorks" the format is:  
-  
- `service=myservice;local database=AdventureWorks`  
-  
- The SQL Server Service Broker service must be previously configured on the server. In addition, a Service Broker service and queue must be defined and security access granted as needed. See the SQL Server 2005 documentation for more information.  
-  
+The value of the <xref:System.Data.Sql.SqlNotificationRequest.Options%2A> property has the following format:  
+ 
+`service=<service-name>{;(local database=<database>|broker instance=<broker instance>)}`  
+ 
+For example, if you use the service "myservice" in the database "AdventureWorks" the format is:  
+ 
+`service=myservice;local database=AdventureWorks`  
+ 
+The SQL Server Service Broker service must be previously configured on the server. In addition, a Service Broker service and queue must be defined and security access granted as needed. See the SQL Server 2005 documentation for more information.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value is NULL.</exception>
@@ -135,10 +135,10 @@
         <value>A signed integer value that specifies, in seconds, how long SQL Server waits for a change to occur before the operation times out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- After the time-out period expires, the notification is sent even if no change takes place. The <xref:System.Data.Sql.SqlNotificationRequest.Timeout%2A> property defaults to the value set on the server.  
-  
+After the time-out period expires, the notification is sent even if no change takes place. The <xref:System.Data.Sql.SqlNotificationRequest.Timeout%2A> property defaults to the value set on the server.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
@@ -162,10 +162,10 @@
         <value>A <see langword="string" /> value of the application-specific identifier for this notification.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is not used by the notifications infrastructure. Instead, it is a mechanism that allows an application to associate notifications with application state. The value specified in the <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A> property is included in the SQL Server 2005 queue message.  
-  
+This value is not used by the notifications infrastructure. Instead, it is a mechanism that allows an application to associate notifications with application state. The value specified in the <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A> property is included in the SQL Server 2005 queue message.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value is longer than <see langword="uint16.MaxValue" />.</exception>

@@ -100,12 +100,12 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:Microsoft.Build.BuildEngine.BuildTask" /> objects in the <see cref="T:Microsoft.Build.BuildEngine.Target" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method allows the caller to use the `foreach` statement of the C# language (`for each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) to iterate through the individual <xref:Microsoft.Build.BuildEngine.BuildTask> objects in the <xref:Microsoft.Build.BuildEngine.Target>.  
-  
- A <xref:Microsoft.Build.BuildEngine.BuildTask> object represents a child  element of the `Target` element.  
-  
+This method allows the caller to use the `foreach` statement of the C# language (`for each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) to iterate through the individual <xref:Microsoft.Build.BuildEngine.BuildTask> objects in the <xref:Microsoft.Build.BuildEngine.Target>.  
+ 
+A <xref:Microsoft.Build.BuildEngine.BuildTask> object represents a child  element of the `Target` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,10 +127,10 @@
         <value>A string representing the items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Items inside this target attribute are used as the inputs in the top level dependency analysis.  
-  
+Items inside this target attribute are used as the inputs in the top level dependency analysis.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,10 +189,10 @@
         <value>A string representing the outputs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can apply transforms to this target attribute to transform a set of input items into a set of output items. This attribute is used not only for top level dependency analysis but also for the purposes of defining this targets outputs.  
-  
+You can apply transforms to this target attribute to transform a set of input items into a set of output items. This attribute is used not only for top level dependency analysis but also for the purposes of defining this targets outputs.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -217,10 +217,10 @@
         <summary>Removes the specified [Task](http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299) element from the [Target](http://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca) element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:Microsoft.Build.BuildEngine.BuildTask> object represents a child `Task` element of the `Target` element.  
-  
+A <xref:Microsoft.Build.BuildEngine.BuildTask> object represents a child `Task` element of the `Target` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

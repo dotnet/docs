@@ -19,16 +19,16 @@
     <summary>The exception that is thrown when an event that is raised from the host cannot be delivered to the workflow instance. Typically the event is raised from an <see cref="T:System.Workflow.Activities.ExternalDataExchangeService" /> on a workflow instance. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- The following string is added to the event log when this exception is thrown: Event "{1}" on interface type "{0}" for instance id "{2}" cannot be delivered.  
-  
- When using a state machine workflow, you might get an exception with the message "Queue '{0}' is not enabled." This happens when the current state of the state machine does not know how to handle a specific event. For example, when some state other than the current state contains the <xref:System.Workflow.Activities.EventDrivenActivity> that contains the <xref:System.Workflow.Activities.HandleExternalEventActivity> that is represented by the queue '{0}'.  
-  
+ 
+The following string is added to the event log when this exception is thrown: Event "{1}" on interface type "{0}" for instance id "{2}" cannot be delivered.  
+ 
+When using a state machine workflow, you might get an exception with the message "Queue '{0}' is not enabled." This happens when the current state of the state machine does not know how to handle a specific event. For example, when some state other than the current state contains the <xref:System.Workflow.Activities.EventDrivenActivity> that contains the <xref:System.Workflow.Activities.HandleExternalEventActivity> that is represented by the queue '{0}'.  
+ 
  ]]></format>
     </remarks>
   </Docs>

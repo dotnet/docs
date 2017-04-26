@@ -19,14 +19,14 @@
     <summary>Provides <see cref="T:System.Workflow.ComponentModel.DependencyObject" /> objects with CodeDOM serialization services. This is the base class from which other CodeDOM serializers, such as the <see cref="T:System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializer" />, are inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- <xref:System.Workflow.ComponentModel.Serialization.DependencyObjectCodeDomSerializer> controls the generation of component initialization code for the <xref:System.Workflow.ComponentModel.DependencyObject> class at design time.  
-  
+ 
+<xref:System.Workflow.ComponentModel.Serialization.DependencyObjectCodeDomSerializer> controls the generation of component initialization code for the <xref:System.Workflow.ComponentModel.DependencyObject> class at design time.  
+ 
  ]]></format>
     </remarks>
   </Docs>

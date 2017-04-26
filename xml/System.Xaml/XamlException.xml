@@ -14,10 +14,10 @@
     <summary>The exception that is thrown for a general XAML reader or XAML writer exception. See Remarks.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- More specific exceptions such as <xref:System.Xaml.XamlParseException> exist and are often thrown instead of <xref:System.Xaml.XamlException>. Specific exceptions typically provide more precise exception information as properties of the exception, or just because the specific exception was raised.  
-  
+More specific exceptions such as <xref:System.Xaml.XamlParseException> exist and are often thrown instead of <xref:System.Xaml.XamlException>. Specific exceptions typically provide more precise exception information as properties of the exception, or just because the specific exception was raised.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,10 +96,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlException" /> class. The instance contains a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown because a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor; or it returns `null`if the <xref:System.Exception.InnerException%2A> property does not provide the inner exception value to the constructor.  
-  
+An exception that is thrown because a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor; or it returns `null`if the <xref:System.Exception.InnerException%2A> property does not provide the inner exception value to the constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,10 +212,10 @@
         <value>The exception message that includes the appended line information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xaml.XamlException> overrides this property so that line information is directly included in the message and is therefore more easily visible for debuggers or other exception consumers. If line information is available, this property includes the line information. If line information is unavailable, the message is the same as the base message.  
-  
+<xref:System.Xaml.XamlException> overrides this property so that line information is directly included in the message and is therefore more easily visible for debuggers or other exception consumers. If line information is available, this property includes the line information. If line information is unavailable, the message is the same as the base message.  
+ 
  ]]></format>
         </remarks>
       </Docs>

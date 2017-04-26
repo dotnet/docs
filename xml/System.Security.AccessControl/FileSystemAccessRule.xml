@@ -19,21 +19,21 @@
     <summary>Represents an abstraction of an access control entry (ACE) that defines an access rule for a file or directory. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.AccessControl.FileSystemAccessRule> class represents an abstraction of an underlying access control entry (ACE) that specifies a user account, the type of access to provide (read, write, and so on), and whether to allow or deny that right.  This class can also specify how access rules are propagated to child objects.  
+The <xref:System.Security.AccessControl.FileSystemAccessRule> class represents an abstraction of an underlying access control entry (ACE) that specifies a user account, the type of access to provide (read, write, and so on), and whether to allow or deny that right.  This class can also specify how access rules are propagated to child objects.  
+ 
+Use the <xref:System.Security.AccessControl.FileSystemAccessRule> class to create a new access rule.  You can persist the rule using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  
+ 
   
- Use the <xref:System.Security.AccessControl.FileSystemAccessRule> class to create a new access rule.  You can persist the rule using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Security.AccessControl.FileSecurity> class to add and then remove an access control entry (ACE) from a file.  You must supply a valid user or group account to run this example.  
-  
- [!code-cpp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/cpp/sample.cpp#1)]
- [!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]
- [!code-vb[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/VB/sample.vb#1)]  
-  
+The following code example uses the <xref:System.Security.AccessControl.FileSecurity> class to add and then remove an access control entry (ACE) from a file.  You must supply a valid user or group account to run this example.  
+ 
+[!code-cpp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/cpp/sample.cpp#1)]
+[!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]
+[!code-vb[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/VB/sample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> class using a reference to a user account, a value that specifies the type of operation associated with the access rule, and a value that specifies whether to allow or deny the operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.  
-  
+Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="identity" /> parameter is not an <see cref="T:System.Security.Principal.IdentityReference" /> object.</exception>
@@ -101,21 +101,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> class using the name of a user account, a value that specifies the type of operation associated with the access rule, and a value that describes whether to allow or deny the operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.  
+Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.  
+ 
+The `identity` parameter must identify a valid account on the current computer or domain.  The string takes the following form, where `DOMAIN` is the name of a valid domain or computer name and `account` is the name of a valid user account on a domain or computer: `DOMAIN\account`.  
+ 
   
- The `identity` parameter must identify a valid account on the current computer or domain.  The string takes the following form, where `DOMAIN` is the name of a valid domain or computer name and `account` is the name of a valid user account on a domain or computer: `DOMAIN\account`.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Security.AccessControl.FileSecurity> class to add and then remove an access control entry (ACE) from a file.  You must supply a valid user or group account to run this example.  
-  
- [!code-cpp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/cpp/sample.cpp#1)]
- [!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]
- [!code-vb[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/VB/sample.vb#1)]  
-  
+The following code example uses the <xref:System.Security.AccessControl.FileSecurity> class to add and then remove an access control entry (ACE) from a file.  You must supply a valid user or group account to run this example.  
+ 
+[!code-cpp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/cpp/sample.cpp#1)]
+[!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]
+[!code-vb[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="identity" /> parameter is <see langword="null" />.</exception>
@@ -152,10 +152,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> class using a reference to a user account, a value that specifies the type of operation associated with the access rule, a value that determines how rights are inherited, a value that determines how rights are propagated, and a value that specifies whether to allow or deny the operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.  
-  
+Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="identity" /> parameter is not an <see cref="T:System.Security.Principal.IdentityReference" /> object.</exception>
@@ -201,12 +201,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> class using the name of a user account, a value that specifies the type of operation associated with the access rule, a value that determines how rights are inherited, a value that determines how rights are propagated, and a value that specifies whether to allow or deny the operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.  
-  
- The `identity` parameter must identify a valid account on the current computer or domain.  The string takes the following form, where `DOMAIN` is the name of a valid domain or computer name and `account` is the name of a valid user account on a domain or computer: `DOMAIN\account`.  
-  
+Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.  
+ 
+The `identity` parameter must identify a valid account on the current computer or domain.  The string takes the following form, where `DOMAIN` is the name of a valid domain or computer name and `account` is the name of a valid user account on a domain or computer: `DOMAIN\account`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="identity" /> parameter is <see langword="null" />.</exception>

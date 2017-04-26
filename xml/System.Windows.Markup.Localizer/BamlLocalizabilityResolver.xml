@@ -14,24 +14,24 @@
     <summary>Resolves localizable settings for classes and properties in [!INCLUDE[TLA#tla_baml](~/includes/tlasharptla-baml-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Markup.Localizer.BamlLocalizabilityResolver> is used by the <xref:System.Windows.Markup.Localizer.BamlLocalizer> in order to resolve localizability settings for classes and properties in [!INCLUDE[TLA2#tla_baml](~/includes/tla2sharptla-baml-md.md)]. The resolver is called both at the time of resource extraction as well as when localized [!INCLUDE[TLA2#tla_baml](~/includes/tla2sharptla-baml-md.md)] is updated.  
-  
- At the time of resource extraction (<xref:System.Windows.Markup.Localizer.BamlLocalizer.ExtractResources%2A>), the resolver:  
-  
+<xref:System.Windows.Markup.Localizer.BamlLocalizabilityResolver> is used by the <xref:System.Windows.Markup.Localizer.BamlLocalizer> in order to resolve localizability settings for classes and properties in [!INCLUDE[TLA2#tla_baml](~/includes/tla2sharptla-baml-md.md)]. The resolver is called both at the time of resource extraction as well as when localized [!INCLUDE[TLA2#tla_baml](~/includes/tla2sharptla-baml-md.md)] is updated.  
+ 
+At the time of resource extraction (<xref:System.Windows.Markup.Localizer.BamlLocalizer.ExtractResources%2A>), the resolver:  
+ 
 -   Provides <xref:System.Windows.LocalizabilityAttribute> for classes and properties in [!INCLUDE[TLA2#tla_baml](~/includes/tla2sharptla-baml-md.md)] when the <xref:System.Windows.Markup.Localizer.BamlLocalizer> is constructing localizable resources.  
-  
+ 
 -   Provides formatting preferences for elements in [!INCLUDE[TLA2#tla_baml](~/includes/tla2sharptla-baml-md.md)] so elements are formatted as inline tags.  
-  
- At the time at which localized [!INCLUDE[TLA2#tla_baml](~/includes/tla2sharptla-baml-md.md)] is updated (<xref:System.Windows.Markup.Localizer.BamlLocalizer.UpdateBaml%2A>), the resolver:  
-  
+ 
+At the time at which localized [!INCLUDE[TLA2#tla_baml](~/includes/tla2sharptla-baml-md.md)] is updated (<xref:System.Windows.Markup.Localizer.BamlLocalizer.UpdateBaml%2A>), the resolver:  
+ 
 -   Resolves formatting tags back into classes.  
-  
+ 
 -   Resolves the name of the assembly that contains class definition.  
-  
+ 
 -   <xref:System.Windows.Markup.Localizer.BamlLocalizabilityResolver> is subclassed by an internal class that performs the practical aspects of the class functions for <xref:System.Windows.Markup.Localizer.BamlLocalizer>.  
-  
+ 
 <a name="xamlTextUsage_BamlLocalizabilityResolver"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -146,10 +146,10 @@
         <returns>The full class name associated with the tag.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when a <xref:System.Windows.Markup.Localizer.BamlLocalizer> or an equivalent is applying substitutions to localizable resources. If a formatting tag is encountered in the substitutions, this method is called to resolve the formatting tag back to a class name.  
-  
+This method is called when a <xref:System.Windows.Markup.Localizer.BamlLocalizer> or an equivalent is applying substitutions to localizable resources. If a formatting tag is encountered in the substitutions, this method is called to resolve the formatting tag back to a class name.  
+ 
  ]]></format>
         </remarks>
       </Docs>

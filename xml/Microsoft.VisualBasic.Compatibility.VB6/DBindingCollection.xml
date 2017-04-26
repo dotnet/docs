@@ -23,10 +23,10 @@
     <summary>Provides an interface to replace COM-based data binding in an application upgraded from Visual Basic 6.0.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
     </remarks>
     <altCompliant cref="T:System.Windows.Forms.BindingsCollection" />
@@ -61,10 +61,10 @@
         <returns>A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBinding" /> interface.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,10 +86,10 @@
         <summary>Clears the collection of binding objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,10 +111,10 @@
         <value>An <see langword="Integer" /> that contains the count.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,10 +136,10 @@
         <value>A string that contains the name of the data member.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,10 +166,10 @@
         <value>A COM-based <see langword="msdatasrc.DataSource" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
         <altCompliant cref="T:System.Windows.Forms.BindingSource" />
@@ -196,10 +196,10 @@
         <value>A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBinding" /> interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,10 +224,10 @@
         <summary>Removes a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBinding" /> interface from a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBindingCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,10 +249,10 @@
         <summary>Gets the current row from the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBindingCollection" /> object's data source and resets the contents of controls bound through the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -274,10 +274,10 @@
         <value>An <see cref="P:Microsoft.VisualBasic.Compatibility.VB6.DBindingCollection.UpdateMode" /> enumeration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
-  
+[!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

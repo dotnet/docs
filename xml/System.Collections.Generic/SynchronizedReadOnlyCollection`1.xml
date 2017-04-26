@@ -37,10 +37,10 @@
     <summary>Provides a thread-safe, read-only collection that contains objects of a type specified by the generic parameter as elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Collections.Generic.SynchronizedReadOnlyCollection%601> stores data in an <xref:System.Collections.Generic.IList%601> container and provides an object that can be set and used to synchronize access to the collection so that it is thread safe. The <xref:System.Collections.Generic.IList%601> container can be recovered using the <xref:System.Collections.Generic.SynchronizedReadOnlyCollection%601.Items%2A> property. The synchronized object can be recovered using the <xref:System.Collections.Generic.SynchronizedReadOnlyCollection%601.System.Collections.ICollection.SyncRoot%2A> property. It can only be set using one of the constructors that take the `syncRoot` parameter.  
-  
+The <xref:System.Collections.Generic.SynchronizedReadOnlyCollection%601> stores data in an <xref:System.Collections.Generic.IList%601> container and provides an object that can be set and used to synchronize access to the collection so that it is thread safe. The <xref:System.Collections.Generic.IList%601> container can be recovered using the <xref:System.Collections.Generic.SynchronizedReadOnlyCollection%601.Items%2A> property. The synchronized object can be recovered using the <xref:System.Collections.Generic.SynchronizedReadOnlyCollection%601.System.Collections.ICollection.SyncRoot%2A> property. It can only be set using one of the constructors that take the `syncRoot` parameter.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,10 +79,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedReadOnlyCollection`1" /> class with the object used to synchronize access to the thread-safe, read-only collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If multiple instances of the <xref:System.Collections.Generic.SynchronizedReadOnlyCollection%601> are created using the same `syncRoot`, then access is protected across all instances.  
-  
+If multiple instances of the <xref:System.Collections.Generic.SynchronizedReadOnlyCollection%601> are created using the same `syncRoot`, then access is protected across all instances.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -339,10 +339,10 @@
         <summary>Throws a <see cref="T:System.NotSupportedException" /> if called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Items cannot be added to a read-only collection.  
-  
+Items cannot be added to a read-only collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Items cannot be set in a read-only collection.</exception>
@@ -366,10 +366,10 @@
         <summary>Throws a <see cref="T:System.NotSupportedException" /> if called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Items cannot be cleared from a read-only collection.  
-  
+Items cannot be cleared from a read-only collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Items cannot be cleared from a read-only collection.</exception>
@@ -561,10 +561,10 @@
  The object used to synchronize access to the thread-safe, read-only collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this `syncRoot` object can be set when creating the thread-safe collection using the <xref:System.Collections.Generic.SynchronizedReadOnlyCollection%601.%23ctor%28System.Object%29> constructor.  
-  
+The value of this `syncRoot` object can be set when creating the thread-safe collection using the <xref:System.Collections.Generic.SynchronizedReadOnlyCollection%601.%23ctor%28System.Object%29> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -611,10 +611,10 @@
         <returns>Returns <see cref="T:System.Int32" />. The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Items cannot be added to a read-only collection.  
-  
+Items cannot be added to a read-only collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Items cannot be set in a read-only collection.</exception>
@@ -638,10 +638,10 @@
         <summary>Items cannot be cleared from a read-only collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Items cannot be cleared from a read-only collection.  
-  
+Items cannot be cleared from a read-only collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Items cannot be cleared from a read-only collection.</exception>
@@ -671,10 +671,10 @@
  True if the object is located in the collection; otherwise false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Returns `true` if the element `value` is found in the collection; otherwise `false`.  
-  
+Returns `true` if the element `value` is found in the collection; otherwise `false`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -729,10 +729,10 @@
         <summary>Items cannot be inserted into a read-only collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws a <xref:System.NotSupportedException> if called.  
-  
+Throws a <xref:System.NotSupportedException> if called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Items cannot be inserted into a read-only collection.</exception>
@@ -827,10 +827,10 @@
         <summary>Retrieves the specified element from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws a <xref:System.NotSupportedException> if called.  
-  
+Throws a <xref:System.NotSupportedException> if called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Items cannot be removed from a read-only collection.</exception>
@@ -857,10 +857,10 @@
         <summary>Items cannot be removed from a read-only collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws a <xref:System.NotSupportedException> if called.  
-  
+Throws a <xref:System.NotSupportedException> if called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Items cannot be removed from a read-only collection.</exception>

@@ -15,10 +15,10 @@
     <summary>Obtains the file locations of XML Schema documents for use in populating a Web services discovery document. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Discovery.XmlSchemaSearchPattern> class inherits from the abstract <xref:System.Web.Services.Discovery.DiscoverySearchPattern> class and is employed by the <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class's <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method, which handles an HTTP request for a discovery document. Normally, none of these classes need to be used directly by a developer.  
-  
+The <xref:System.Web.Services.Discovery.XmlSchemaSearchPattern> class inherits from the abstract <xref:System.Web.Services.Discovery.DiscoverySearchPattern> class and is employed by the <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class's <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method, which handles an HTTP request for a discovery document. Normally, none of these classes need to be used directly by a developer.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,12 +61,12 @@
         <returns>A <see cref="T:System.Web.Services.Discovery.SchemaReference" /> object that specifies the file name for an XML Schema document.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The concrete <xref:System.Web.Services.Discovery.SchemaReference> class inherits from the abstract <xref:System.Web.Services.Discovery.DiscoveryReference> class.  
-  
- A <xref:System.Web.Services.Discovery.SchemaReference> instance contains the location of the .xsd file.  
-  
+The concrete <xref:System.Web.Services.Discovery.SchemaReference> class inherits from the abstract <xref:System.Web.Services.Discovery.DiscoveryReference> class.  
+ 
+A <xref:System.Web.Services.Discovery.SchemaReference> instance contains the location of the .xsd file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <value>The literal string "*.xsd".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The pattern "*.xsd" indicates an XML Schema document extension.  
-  
+The pattern "*.xsd" indicates an XML Schema document extension.  
+ 
  ]]></format>
         </remarks>
       </Docs>

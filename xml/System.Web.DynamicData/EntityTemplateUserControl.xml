@@ -14,10 +14,10 @@
     <summary>Defines the base class for entity templates.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Entity templates are user controls that apply to an entity (a table) instead of to a single data field, as with field templates. An entity template typically contains several <xref:System.Web.DynamicData.DynamicControl> controls for rendering data fields.  
-  
+Entity templates are user controls that apply to an entity (a table) instead of to a single data field, as with field templates. An entity template typically contains several <xref:System.Web.DynamicData.DynamicControl> controls for rendering data fields.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,12 +54,12 @@
         <value>The type that contains the template.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.EntityTemplateUserControl.ContainerType%2A> class provides information about the context (the control type) in which the <xref:System.Web.DynamicData.EntityTemplateUserControl> class is contained. This type can be a list control, such as a <xref:System.Web.UI.WebControls.GridView> or <xref:System.Web.UI.WebControls.ListView> control. It can also be a single-item control, such as a <xref:System.Web.UI.WebControls.DetailsView> or <xref:System.Web.UI.WebControls.FormView> control.  
-  
- You can customize the behavior of an application depending on the <xref:System.Web.DynamicData.EntityTemplateUserControl.ContainerType%2A> value, such as conditionally displaying or hiding specific UI elements.  
-  
+The <xref:System.Web.DynamicData.EntityTemplateUserControl.ContainerType%2A> class provides information about the context (the control type) in which the <xref:System.Web.DynamicData.EntityTemplateUserControl> class is contained. This type can be a list control, such as a <xref:System.Web.UI.WebControls.GridView> or <xref:System.Web.UI.WebControls.ListView> control. It can also be a single-item control, such as a <xref:System.Web.UI.WebControls.DetailsView> or <xref:System.Web.UI.WebControls.FormView> control.  
+ 
+You can customize the behavior of an application depending on the <xref:System.Web.DynamicData.EntityTemplateUserControl.ContainerType%2A> value, such as conditionally displaying or hiding specific UI elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>

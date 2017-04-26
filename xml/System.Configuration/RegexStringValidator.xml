@@ -14,20 +14,20 @@
     <summary>Provides validation of a string based on the rules provided by a regular expression.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.RegexStringValidator> object contains the rules necessary to validate a string object based on a regular expression. The rules are established when an instance of the <xref:System.Configuration.RegexStringValidator> class is created.  
+The <xref:System.Configuration.RegexStringValidator> object contains the rules necessary to validate a string object based on a regular expression. The rules are established when an instance of the <xref:System.Configuration.RegexStringValidator> class is created.  
+ 
+The <xref:System.Configuration.RegexStringValidator.CanValidate%2A> method determines whether the object type being validated matches the expected type. The object being validated is passed as a parameter of the <xref:System.Configuration.RegexStringValidator.Validate%2A> method.  
+ 
   
- The <xref:System.Configuration.RegexStringValidator.CanValidate%2A> method determines whether the object type being validated matches the expected type. The object being validated is passed as a parameter of the <xref:System.Configuration.RegexStringValidator.Validate%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Configuration.RegexStringValidator> type.  
-  
- [!code-csharp[System.Configuration.RegexStringValidator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/CS/RegexStringValidator.cs#1)]
- [!code-vb[System.Configuration.RegexStringValidator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/VB/RegexStringValidator.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Configuration.RegexStringValidator> type.  
+ 
+[!code-csharp[System.Configuration.RegexStringValidator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/CS/RegexStringValidator.cs#1)]
+[!code-vb[System.Configuration.RegexStringValidator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/VB/RegexStringValidator.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -74,18 +74,18 @@
           <see langword="true" /> if the <paramref name="type" /> parameter matches a string; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception is thrown if the validation fails.  
+An exception is thrown if the validation fails.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Configuration.RegexStringValidator.CanValidate%2A> method. This code example is part of a larger example that is provided for the <xref:System.Configuration.RegexStringValidator> class.  
-  
- [!code-csharp[System.Configuration.RegexStringValidator#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/CS/RegexStringValidator.cs#3)]
- [!code-vb[System.Configuration.RegexStringValidator#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/VB/RegexStringValidator.vb#3)]  
-  
+The following example demonstrates how to use the <xref:System.Configuration.RegexStringValidator.CanValidate%2A> method. This code example is part of a larger example that is provided for the <xref:System.Configuration.RegexStringValidator> class.  
+ 
+[!code-csharp[System.Configuration.RegexStringValidator#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/CS/RegexStringValidator.cs#3)]
+[!code-vb[System.Configuration.RegexStringValidator#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/VB/RegexStringValidator.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,18 +110,18 @@
         <summary>Determines whether the value of an object is valid.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Configuration.RegexStringValidator> object contains the rules necessary to validate a string object based on a regular expression. The rules are established when an instance of the <xref:System.Configuration.RegexStringValidator> class is created. The string object to validate is passed as a parameter of the <xref:System.Configuration.RegexStringValidator.Validate%2A> method.  
+A <xref:System.Configuration.RegexStringValidator> object contains the rules necessary to validate a string object based on a regular expression. The rules are established when an instance of the <xref:System.Configuration.RegexStringValidator> class is created. The string object to validate is passed as a parameter of the <xref:System.Configuration.RegexStringValidator.Validate%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Configuration.RegexStringValidator.Validate%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.RegexStringValidator> class.  
-  
- [!code-csharp[System.Configuration.RegexStringValidator#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/CS/RegexStringValidator.cs#4)]
- [!code-vb[System.Configuration.RegexStringValidator#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/VB/RegexStringValidator.vb#4)]  
-  
+The following code example demonstrates how to use the <xref:System.Configuration.RegexStringValidator.Validate%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.RegexStringValidator> class.  
+ 
+[!code-csharp[System.Configuration.RegexStringValidator#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/CS/RegexStringValidator.cs#4)]
+[!code-vb[System.Configuration.RegexStringValidator#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/VB/RegexStringValidator.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

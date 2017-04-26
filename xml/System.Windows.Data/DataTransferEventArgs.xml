@@ -14,12 +14,12 @@
     <summary>Encapsulates arguments for data transfer events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Data.Binding.TargetUpdated> event occurs when a value is transferred from the binding source to the binding target, but only for bindings with the <xref:System.Windows.Data.Binding.NotifyOnTargetUpdated%2A> value set to `true`.  
-  
- The <xref:System.Windows.Data.Binding.SourceUpdated> event occurs when a value is transferred from the target to the source, but only for bindings with the <xref:System.Windows.Data.Binding.NotifyOnSourceUpdated%2A> value set to `true`.  
-  
+The <xref:System.Windows.Data.Binding.TargetUpdated> event occurs when a value is transferred from the binding source to the binding target, but only for bindings with the <xref:System.Windows.Data.Binding.NotifyOnTargetUpdated%2A> value set to `true`.  
+ 
+The <xref:System.Windows.Data.Binding.SourceUpdated> event occurs when a value is transferred from the target to the source, but only for bindings with the <xref:System.Windows.Data.Binding.NotifyOnSourceUpdated%2A> value set to `true`.  
+ 
  ]]></format>
     </remarks>
   </Docs>

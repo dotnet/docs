@@ -14,10 +14,10 @@
     <summary>Represents a configuration element that enables a client application to automatically search for a discoverable workflow service and find its address at runtime.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a sealed class.  
-  
+This is a sealed class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,10 +75,10 @@
         <value>A type object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> is the binding element that can be added to a client application to take advantage of the Discovery Client Channel that enables a client application to access a discoverable service without knowing the endpoint address in advance.  
-  
+The <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> is the binding element that can be added to a client application to take advantage of the Discovery Client Channel that enables a client application to access a discoverable service without knowing the endpoint address in advance.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -15,10 +15,10 @@
     <summary>Provides properties that control authentication parameters and protection level for the TCP transport.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used by <xref:System.ServiceModel.NetTcpSecurity.Transport%2A> to set the transport-level security settings for a binding.  
-  
+This class is used by <xref:System.ServiceModel.NetTcpSecurity.Transport%2A> to set the transport-level security settings for a binding.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,30 +57,30 @@
         <value>Returns the <see cref="T:System.ServiceModel.TcpClientCredentialType" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value can be one of the following enumeration members:  
-  
+The return value can be one of the following enumeration members:  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
-  
+ 
 -   <xref:System.ServiceModel.HttpClientCredentialType>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to access and set this property.  
-  
- [!code-csharp[c_ProgrammingSecurity#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#13)]
- [!code-vb[c_ProgrammingSecurity#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#13)]  
-  
+The following code shows how to access and set this property.  
+ 
+[!code-csharp[c_ProgrammingSecurity#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#13)]
+[!code-vb[c_ProgrammingSecurity#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,14 +165,14 @@
         <value>Returns <see cref="T:System.Security.Authentication.SslProtocols" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is Ssl3 &#124; Tls &#124; Tls11 &#124; Tls12. Versions of the framework prior to 4.6 only support Ssl3 and Tls. If these are not included, communication with earlier versions of the framework will not be possible. Specifying Tls11 and/or Tls12 will disable the usage of Ssl3, even if it has been included.  
+The default value is Ssl3 &#124; Tls &#124; Tls11 &#124; Tls12. Versions of the framework prior to 4.6 only support Ssl3 and Tls. If these are not included, communication with earlier versions of the framework will not be possible. Specifying Tls11 and/or Tls12 will disable the usage of Ssl3, even if it has been included.  
+ 
   
-   
-  
+ 
 ## Examples  
-  
+ 
 ```csharp  
 NetTcpBinding b = new NetTcpBinding();  
 b.Security.Mode = SecurityMode.Transport;  
@@ -186,7 +186,7 @@ cf.Credentials.ClientCertificate.SetCertificate(
     X509FindType.FindByThumbprint,  
     "0000000000000000000000000000000000000000");  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

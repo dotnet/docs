@@ -18,24 +18,24 @@
     <summary>Controls access permissions in ASP.NET hosted environments. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.AspNetHostingPermission> class is used in conjunction with code access security to help protect public types in the System.Web namespaces. Code must be assigned at least the <xref:System.Web.AspNetHostingPermissionLevel> trust level to access protected ASP.NET classes.  
+The <xref:System.Web.AspNetHostingPermission> class is used in conjunction with code access security to help protect public types in the System.Web namespaces. Code must be assigned at least the <xref:System.Web.AspNetHostingPermissionLevel> trust level to access protected ASP.NET classes.  
+ 
+The <xref:System.Web.AspNetHostingPermission> class's <xref:System.Web.AspNetHostingPermission.Level%2A> property is set by configuring the appropriate trust level in the  configuration element. By default, the `level` attribute of the `trust` configuration element is set to `Full`. That is, by default, ASP.NET applications run under the <xref:System.Web.AspNetHostingPermissionLevel> level. When an ASP.NET application domain is created, ASP.NET reads the value specified for the `level` attribute of the `trust` configuration element, creates an instance of the <xref:System.Web.AspNetHostingPermission> class with the specified <xref:System.Web.AspNetHostingPermission.Level%2A> attribute, and then adds the class to the permission set for the application domain. For more information, see [ASP.NET Trust Levels and Policy Files](http://msdn.microsoft.com/library/f897c794-10d3-414c-86b7-59b66564bbf1).  
+ 
+It is recommended that you set the `level` attribute of the `trust` configuration element to `High` for sites that are trusted. For sites that are not trusted, such as a Web server that hosts sites that run code from an external customer, it is recommended that you set the `level` attribute of the `trust` configuration element to `Medium`.  
+ 
+The permission sets that are defined by default for the .NET Framework (for example, LocalIntranet, Internet, and so on) do not include the <xref:System.Web.AspNetHostingPermission> permission. That is, the <xref:System.Web.AspNetHostingPermission> permission is only assigned, by default, to applications that are running under `Full` trust.  
+ 
   
- The <xref:System.Web.AspNetHostingPermission> class's <xref:System.Web.AspNetHostingPermission.Level%2A> property is set by configuring the appropriate trust level in the  configuration element. By default, the `level` attribute of the `trust` configuration element is set to `Full`. That is, by default, ASP.NET applications run under the <xref:System.Web.AspNetHostingPermissionLevel> level. When an ASP.NET application domain is created, ASP.NET reads the value specified for the `level` attribute of the `trust` configuration element, creates an instance of the <xref:System.Web.AspNetHostingPermission> class with the specified <xref:System.Web.AspNetHostingPermission.Level%2A> attribute, and then adds the class to the permission set for the application domain. For more information, see [ASP.NET Trust Levels and Policy Files](http://msdn.microsoft.com/library/f897c794-10d3-414c-86b7-59b66564bbf1).  
-  
- It is recommended that you set the `level` attribute of the `trust` configuration element to `High` for sites that are trusted. For sites that are not trusted, such as a Web server that hosts sites that run code from an external customer, it is recommended that you set the `level` attribute of the `trust` configuration element to `Medium`.  
-  
- The permission sets that are defined by default for the .NET Framework (for example, LocalIntranet, Internet, and so on) do not include the <xref:System.Web.AspNetHostingPermission> permission. That is, the <xref:System.Web.AspNetHostingPermission> permission is only assigned, by default, to applications that are running under `Full` trust.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows a class protected using the <xref:System.Web.AspNetHostingPermission> permission. Code must be running with at least <xref:System.Web.AspNetHostingPermissionLevel><xref:System.Web.AspNetHostingPermission> permission <xref:System.Web.AspNetHostingPermission.Level%2A> in order to create an instance of the class.  
-  
- [!code-csharp[System.Web.AspNetHostingPermission#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.AspNetHostingPermission/CS/CustomAspNetClass.cs#1)]
- [!code-vb[System.Web.AspNetHostingPermission#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.AspNetHostingPermission/VB/CustomAspNetClass.vb#1)]  
-  
+The following code example shows a class protected using the <xref:System.Web.AspNetHostingPermission> permission. Code must be running with at least <xref:System.Web.AspNetHostingPermissionLevel><xref:System.Web.AspNetHostingPermission> permission <xref:System.Web.AspNetHostingPermission.Level%2A> in order to create an instance of the class.  
+ 
+[!code-csharp[System.Web.AspNetHostingPermission#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.AspNetHostingPermission/CS/CustomAspNetClass.cs#1)]
+[!code-vb[System.Web.AspNetHostingPermission#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.AspNetHostingPermission/VB/CustomAspNetClass.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -117,10 +117,10 @@
         <summary>Reconstructs a permission object with a specified state from an XML encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For details about formatting the XML representation of permission object state, see [Implementing a Custom Permission](http://msdn.microsoft.com/en-us/e3d0416b-7a3d-4074-9263-c7d6cd815585).  
-  
+For details about formatting the XML representation of permission object state, see [Implementing a Custom Permission](http://msdn.microsoft.com/en-us/e3d0416b-7a3d-4074-9263-c7d6cd815585).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

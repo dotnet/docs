@@ -20,18 +20,18 @@
     <summary>Applying the optional <see cref="T:System.Web.Services.Protocols.SoapDocumentServiceAttribute" /> to an XML Web service sets the default format of SOAP requests and responses sent to and from XML Web service methods within the XML Web service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute> allows you to set the default formatting styles for XML Web service methods within an XML Web service. If an individual XML Web service method must change these defaults, apply a <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> to that XML Web service method.  
-  
- Web Services Description Language (WSDL) defines two styles for how an XML Web service method, which it calls an operation, can be formatted in a SOAP request or a SOAP response: `RPC` and `Document`. Exactly how the individual message parts is determined by the <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute.Use%2A> and <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute.ParameterStyle%2A> properties. The <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute.Use%2A> property determines whether parameters are formatted `Encoded` or `Literal`. The <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute.ParameterStyle%2A> determines whether the parameters are encapsulated within a single message part beneath the `Body` element, or whether each parameter is an individual message part.  
-  
- To set the default method level formatting to `RPC`, apply a <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> to the class implementing the XML Web service.  
-  
- For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/en-us/1d777288-c0d9-4e6a-b638-f010da031952).  
-  
- This attribute can be applied to a class implementing an XML Web service.  
-  
+The <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute> allows you to set the default formatting styles for XML Web service methods within an XML Web service. If an individual XML Web service method must change these defaults, apply a <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> to that XML Web service method.  
+ 
+Web Services Description Language (WSDL) defines two styles for how an XML Web service method, which it calls an operation, can be formatted in a SOAP request or a SOAP response: `RPC` and `Document`. Exactly how the individual message parts is determined by the <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute.Use%2A> and <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute.ParameterStyle%2A> properties. The <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute.Use%2A> property determines whether parameters are formatted `Encoded` or `Literal`. The <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute.ParameterStyle%2A> determines whether the parameters are encapsulated within a single message part beneath the `Body` element, or whether each parameter is an individual message part.  
+ 
+To set the default method level formatting to `RPC`, apply a <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> to the class implementing the XML Web service.  
+ 
+For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/en-us/1d777288-c0d9-4e6a-b638-f010da031952).  
+ 
+This attribute can be applied to a class implementing an XML Web service.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -148,12 +148,12 @@
         <value>The default <see cref="T:System.Web.Services.Description.SoapBindingUse" /> for the XML Web service. If not set, the default is <see cref="F:System.Web.Services.Description.SoapBindingUse.Literal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Web Services Description Language (WSDL) defines two formatting styles for parameters sent to and from XML Web services: <xref:System.Web.Services.Description.SoapBindingUse> and <xref:System.Web.Services.Description.SoapBindingUse>. <xref:System.Web.Services.Description.SoapBindingUse> refers to formatting the parameters using the SOAP encoding outlined in the SOAP specification in section 5. <xref:System.Web.Services.Description.SoapBindingUse> refers to formatting the parameters using a predefined XSD schema for each parameter.  
-  
- For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/en-us/1d777288-c0d9-4e6a-b638-f010da031952).  
-  
+The Web Services Description Language (WSDL) defines two formatting styles for parameters sent to and from XML Web services: <xref:System.Web.Services.Description.SoapBindingUse> and <xref:System.Web.Services.Description.SoapBindingUse>. <xref:System.Web.Services.Description.SoapBindingUse> refers to formatting the parameters using the SOAP encoding outlined in the SOAP specification in section 5. <xref:System.Web.Services.Description.SoapBindingUse> refers to formatting the parameters using a predefined XSD schema for each parameter.  
+ 
+For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/en-us/1d777288-c0d9-4e6a-b638-f010da031952).  
+ 
  ]]></format>
         </remarks>
       </Docs>

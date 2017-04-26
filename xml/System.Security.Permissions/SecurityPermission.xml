@@ -24,10 +24,10 @@
     <summary>Describes a set of security permissions applied to code. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This permission uses the <xref:System.Security.Permissions.SecurityPermissionFlag> enumeration. The values for this enumeration can be found in its documentation.  
-  
+This permission uses the <xref:System.Security.Permissions.SecurityPermissionFlag> enumeration. The values for this enumeration can be found in its documentation.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,10 +50,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.SecurityPermission" /> class with either restricted or unrestricted permission as specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates either fully restricted (`None`) or `Unrestricted` access to all security permissions.  
-  
+Creates either fully restricted (`None`) or `Unrestricted` access to all security permissions.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="state" /> parameter is not a valid value of <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
@@ -77,14 +77,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.SecurityPermission" /> class with the specified initial set state of the flags.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.SecurityPermission.%23ctor%2A> constructor to create instances of the <xref:System.Security.Permissions.SecurityPermission> class that are used to demand security permissions.  For the complete code example, see the <xref:System.Security.Permissions.SecurityPermissionAttribute.%23ctor%28System.Security.Permissions.SecurityAction%29> constructor.  
-  
- [!code-cpp[System.Security.Permissions.SecurityPermissionAttribute#18](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.SecurityPermissionAttribute/CPP/securitypermissionattribute.cpp#18)]
- [!code-csharp[System.Security.Permissions.SecurityPermissionAttribute#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.SecurityPermissionAttribute/CS/securitypermissionattribute.cs#18)]
- [!code-vb[System.Security.Permissions.SecurityPermissionAttribute#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.SecurityPermissionAttribute/VB/securitypermissionattribute.vb#18)]  
-  
+The following code example shows the use of the <xref:System.Security.Permissions.SecurityPermission.%23ctor%2A> constructor to create instances of the <xref:System.Security.Permissions.SecurityPermission> class that are used to demand security permissions.  For the complete code example, see the <xref:System.Security.Permissions.SecurityPermissionAttribute.%23ctor%28System.Security.Permissions.SecurityAction%29> constructor.  
+ 
+[!code-cpp[System.Security.Permissions.SecurityPermissionAttribute#18](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.SecurityPermissionAttribute/CPP/securitypermissionattribute.cpp#18)]
+[!code-csharp[System.Security.Permissions.SecurityPermissionAttribute#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.SecurityPermissionAttribute/CS/securitypermissionattribute.cs#18)]
+[!code-vb[System.Security.Permissions.SecurityPermissionAttribute#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.SecurityPermissionAttribute/VB/securitypermissionattribute.vb#18)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="flag" /> parameter is not a valid value of <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</exception>
@@ -109,10 +109,10 @@
         <returns>A copy of the current permission.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A copy of a permission represents the same access to resources as the original permission.  
-  
+A copy of a permission represents the same access to resources as the original permission.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,10 +135,10 @@
         <value>The state of the current permission, represented by a bitwise OR combination of any permission bits defined by <see cref="T:System.Security.Permissions.SecurityPermissionFlag" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Individual permission bits can be determined by performing an AND operation against this value and checking for nonzero.  
-  
+Individual permission bits can be determined by performing an AND operation against this value and checking for nonzero.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt is made to set this property to an invalid value. See <see cref="T:System.Security.Permissions.SecurityPermissionFlag" /> for the valid values.</exception>
@@ -194,10 +194,10 @@
         <returns>A new permission object that represents the intersection of the current permission and the specified permission. This new permission is <see langword="null" /> if the intersection is empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The intersection of two permissions is a permission that describes the state that they both describe in common. Only a demand that passes both original permissions will pass the intersection.  
-  
+The intersection of two permissions is a permission that describes the state that they both describe in common. Only a demand that passes both original permissions will pass the intersection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>
@@ -226,10 +226,10 @@
           <see langword="true" /> if the current permission is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current permission is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained by the specified permission. For example, a permission that represents access to C:\example.txt is a subset of a permission that represents access to C:\\. If this method returns `true`, the current permission represents no more access to the protected resource than does the specified permission.  
-  
+The current permission is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained by the specified permission. For example, a permission that represents access to C:\example.txt is a subset of a permission that represents access to C:\\. If this method returns `true`, the current permission represents no more access to the protected resource than does the specified permission.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>
@@ -255,10 +255,10 @@
           <see langword="true" /> if the current permission is unrestricted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An unrestricted permission represents access to any and all resources protected by the permission.  
-  
+An unrestricted permission represents access to any and all resources protected by the permission.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -305,10 +305,10 @@
         <returns>A new permission that represents the union of the current permission and the specified permission.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The result of a call to <xref:System.Security.Permissions.SecurityPermission.Union%2A> is a permission that represents all the operations represented by both the current permission and the specified permission. Any demand that passes either permission passes their union.  
-  
+The result of a call to <xref:System.Security.Permissions.SecurityPermission.Union%2A> is a permission that represents all the operations represented by both the current permission and the specified permission. Any demand that passes either permission passes their union.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>

@@ -19,18 +19,18 @@
     <summary>Contains a collection of <see cref="T:System.Web.Configuration.TrustLevel" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.TrustLevel> objects are used to map specific security levels to named policy files.  
+<xref:System.Web.Configuration.TrustLevel> objects are used to map specific security levels to named policy files.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.Configuration.TrustLevelCollection> class.  
-  
- [!code-csharp[System.Web.Configuration.TrustLevelCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/CS/trustlevelcollection.cs#1)]
- [!code-vb[System.Web.Configuration.TrustLevelCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/VB/trustlevelcollection.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.Configuration.TrustLevelCollection> class.  
+ 
+[!code-csharp[System.Web.Configuration.TrustLevelCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/CS/trustlevelcollection.cs#1)]
+[!code-vb[System.Web.Configuration.TrustLevelCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/VB/trustlevelcollection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,13 +70,13 @@
         <summary>Adds a <see cref="T:System.Web.Configuration.TrustLevel" /> object to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.Configuration.TrustLevelCollection.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.TrustLevelCollection> class.  
-  
- [!code-csharp[System.Web.Configuration.TrustLevelCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/CS/trustlevelcollection.cs#2)]
- [!code-vb[System.Web.Configuration.TrustLevelCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/VB/trustlevelcollection.vb#2)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.Configuration.TrustLevelCollection.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.TrustLevelCollection> class.  
+ 
+[!code-csharp[System.Web.Configuration.TrustLevelCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/CS/trustlevelcollection.cs#2)]
+[!code-vb[System.Web.Configuration.TrustLevelCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/VB/trustlevelcollection.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <summary>Removes all <see cref="T:System.Web.Configuration.TrustLevel" /> objects from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Web.Configuration.TrustLevelCollection> entries exist in the local node collection, all entries are deleted.  
-  
+If <xref:System.Web.Configuration.TrustLevelCollection> entries exist in the local node collection, all entries are deleted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -182,13 +182,13 @@
         <returns>The <see cref="T:System.Web.Configuration.TrustLevel" /> at the specified index.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.Configuration.TrustLevelCollection.Get%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.TrustLevelCollection> class.  
-  
- [!code-csharp[System.Web.Configuration.TrustLevelCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/CS/trustlevelcollection.cs#4)]
- [!code-vb[System.Web.Configuration.TrustLevelCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/VB/trustlevelcollection.vb#4)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.Configuration.TrustLevelCollection.Get%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.TrustLevelCollection> class.  
+ 
+[!code-csharp[System.Web.Configuration.TrustLevelCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/CS/trustlevelcollection.cs#4)]
+[!code-vb[System.Web.Configuration.TrustLevelCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/VB/trustlevelcollection.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,10 +258,10 @@
         <value>A <see cref="T:System.Web.Configuration.TrustLevel" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a <xref:System.Web.Configuration.TrustLevel> object exists at the specified index, the <xref:System.Web.Configuration.TrustLevel> object is removed and a new one is added. If no <xref:System.Web.Configuration.TrustLevel> object exists at the index, a new one is added.  
-  
+If a <xref:System.Web.Configuration.TrustLevel> object exists at the specified index, the <xref:System.Web.Configuration.TrustLevel> object is removed and a new one is added. If no <xref:System.Web.Configuration.TrustLevel> object exists at the index, a new one is added.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,10 +287,10 @@
         <value>A <see cref="T:System.Web.Configuration.TrustLevel" /> that exists at the specified index of the <see cref="T:System.Web.Configuration.TrustLevelCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.Configuration.TrustLevel> object must exist at the specified index within the <xref:System.Web.Configuration.TrustLevelCollection> object.  
-  
+A <xref:System.Web.Configuration.TrustLevel> object must exist at the specified index within the <xref:System.Web.Configuration.TrustLevelCollection> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,10 +333,10 @@
         <summary>Removes a <see cref="T:System.Web.Configuration.TrustLevel" /> object from the <see cref="T:System.Web.Configuration.TrustLevelCollection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Web.Configuration.TrustLevel> object does not exist in the local node collection, no error is raised.  
-  
+If the <xref:System.Web.Configuration.TrustLevel> object does not exist in the local node collection, no error is raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -384,13 +384,13 @@
         <summary>Adds the specified <see cref="T:System.Web.Configuration.TrustLevel" /> object to the <see cref="T:System.Web.Configuration.TrustLevelCollection" /> object at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.Configuration.TrustLevelCollection.Set%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.TrustLevelCollection> class.  
-  
- [!code-csharp[System.Web.Configuration.TrustLevelCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/CS/trustlevelcollection.cs#3)]
- [!code-vb[System.Web.Configuration.TrustLevelCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/VB/trustlevelcollection.vb#3)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.Configuration.TrustLevelCollection.Set%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.TrustLevelCollection> class.  
+ 
+[!code-csharp[System.Web.Configuration.TrustLevelCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/CS/trustlevelcollection.cs#3)]
+[!code-vb[System.Web.Configuration.TrustLevelCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.TrustLevelCollection/VB/trustlevelcollection.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

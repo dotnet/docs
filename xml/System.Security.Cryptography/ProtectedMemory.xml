@@ -14,21 +14,21 @@
     <summary>Provides methods for protecting and unprotecting memory. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides access to the Data Protection API (DPAPI) available in the Windows XP and later operating systems. This is a service that is provided by the operating system and does not require additional libraries. It provides encryption for sensitive data in memory.  
+This class provides access to the Data Protection API (DPAPI) available in the Windows XP and later operating systems. This is a service that is provided by the operating system and does not require additional libraries. It provides encryption for sensitive data in memory.  
+ 
+The class consists of two wrappers for the unmanaged DPAPI, <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A> and <xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A>. These two methods can be used to encrypt and decrypt data in memory.  
+ 
   
- The class consists of two wrappers for the unmanaged DPAPI, <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A> and <xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A>. These two methods can be used to encrypt and decrypt data in memory.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use data protection.  
-  
- [!code-cpp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CPP/memoryprotectionsample.cpp#1)]
- [!code-csharp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CS/memoryprotectionsample.cs#1)]
- [!code-vb[Cryptography.MemoryProtectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/vb/memoryprotectionsample.vb#1)]  
-  
+The following example shows how to use data protection.  
+ 
+[!code-cpp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CPP/memoryprotectionsample.cpp#1)]
+[!code-csharp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CS/memoryprotectionsample.cs#1)]
+[!code-vb[Cryptography.MemoryProtectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/vb/memoryprotectionsample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,21 +55,21 @@
         <summary>Protects the specified data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to protect data in memory. Note that the method does not make a copy of the data, but encrypts the byte array in place. The `userData` parameter must be 16 bytes in length or a multiple of 16 bytes.  
+This method can be used to protect data in memory. Note that the method does not make a copy of the data, but encrypts the byte array in place. The `userData` parameter must be 16 bytes in length or a multiple of 16 bytes.  
+ 
+Support for this method is available in the Windows XP and later operating systems.  
+ 
   
- Support for this method is available in the Windows XP and later operating systems.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to use data protection.  
-  
- [!code-cpp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CPP/memoryprotectionsample.cpp#1)]
- [!code-csharp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CS/memoryprotectionsample.cs#1)]
- [!code-vb[Cryptography.MemoryProtectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/vb/memoryprotectionsample.vb#1)]  
-  
+The following code example shows how to use data protection.  
+ 
+[!code-cpp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CPP/memoryprotectionsample.cpp#1)]
+[!code-csharp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CS/memoryprotectionsample.cs#1)]
+[!code-vb[Cryptography.MemoryProtectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/vb/memoryprotectionsample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
@@ -101,21 +101,21 @@
         <summary>Unprotects data in memory that was protected using the <see cref="M:System.Security.Cryptography.ProtectedMemory.Protect(System.Byte[],System.Security.Cryptography.MemoryProtectionScope)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used to unencrypt data in memory that was encrypted using the <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A> method.  
+This method can be used to unencrypt data in memory that was encrypted using the <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A> method.  
+ 
+Support for this method is available in the Windows XP and later operating systems.  
+ 
   
- Support for this method is available in the Windows XP and later operating systems.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use data protection.  
-  
- [!code-cpp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CPP/memoryprotectionsample.cpp#1)]
- [!code-csharp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CS/memoryprotectionsample.cs#1)]
- [!code-vb[Cryptography.MemoryProtectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/vb/memoryprotectionsample.vb#1)]  
-  
+The following example shows how to use data protection.  
+ 
+[!code-cpp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CPP/memoryprotectionsample.cpp#1)]
+[!code-csharp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CS/memoryprotectionsample.cs#1)]
+[!code-vb[Cryptography.MemoryProtectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/vb/memoryprotectionsample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The operating system does not support this method. This method can be used only with the Windows 2000 or later operating systems.</exception>

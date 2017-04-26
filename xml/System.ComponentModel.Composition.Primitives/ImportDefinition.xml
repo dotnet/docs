@@ -31,10 +31,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.ImportDefinition" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived types that call this constructor must override the <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.Constraint%2A> property, and optionally, the <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.Cardinality%2A>, <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.IsPrerequisite%2A> and <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.IsRecomposable%2A> properties.  
-  
+Derived types that call this constructor must override the <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.Constraint%2A> property, and optionally, the <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.Cardinality%2A>, <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.IsPrerequisite%2A> and <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.IsRecomposable%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <value>An expression that contains a <see cref="T:System.Func`2" /> object that defines the conditions an <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> must satisfy to match the <see cref="T:System.ComponentModel.Composition.Primitives.ImportDefinition" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Overrides of this property should never return `null`.  
-  
+Overrides of this property should never return `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotImplementedException">The property was not overridden by a derived class.</exception>
@@ -250,10 +250,10 @@
         <value>A collection that contains the metadata associated with this import.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property should never return null. Imports with no metadata should return an empty <xref:System.Collections.Generic.IDictionary%602> collection.  
-  
+This property should never return null. Imports with no metadata should return an empty <xref:System.Collections.Generic.IDictionary%602> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -20,12 +20,12 @@
     <summary>Provides the base interface for creating <see cref="T:System.Net.WebRequest" /> instances.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.IWebRequestCreate> interface defines the method that <xref:System.Net.WebRequest> descendants must use to register with the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method.  
-  
- Classes that implement the <xref:System.Net.IWebRequestCreate> interface can be registered with the <xref:System.Net.WebRequest> class and associated with a specific URI scheme so that the <xref:System.Net.WebRequest> calls the class's <xref:System.Net.IWebRequestCreate.Create%2A> method when a URI that matches that scheme is requested.  
-  
+The <xref:System.Net.IWebRequestCreate> interface defines the method that <xref:System.Net.WebRequest> descendants must use to register with the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method.  
+ 
+Classes that implement the <xref:System.Net.IWebRequestCreate> interface can be registered with the <xref:System.Net.WebRequest> class and associated with a specific URI scheme so that the <xref:System.Net.WebRequest> calls the class's <xref:System.Net.IWebRequestCreate.Create%2A> method when a URI that matches that scheme is requested.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,10 +60,10 @@
         <returns>A <see cref="T:System.Net.WebRequest" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.IWebRequestCreate.Create%2A> method must return an initialized instance of the <xref:System.Net.WebRequest> descendant that is capable of performing a standard request/response transaction for the protocol without needing any protocol-specific fields modified.  
-  
+The <xref:System.Net.IWebRequestCreate.Create%2A> method must return an initialized instance of the <xref:System.Net.WebRequest> descendant that is capable of performing a standard request/response transaction for the protocol without needing any protocol-specific fields modified.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The request scheme specified in <paramref name="uri" /> is not supported by this <see cref="T:System.Net.IWebRequestCreate" /> instance.</exception>

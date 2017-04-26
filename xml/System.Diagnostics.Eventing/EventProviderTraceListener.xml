@@ -14,42 +14,42 @@
     <summary>A listener for <see cref="T:System.Diagnostics.TraceSource" /> that writes events to the ETW subsytem.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All event data (trace or debug) from the source event is written to the ETW subsystem as a string. The data elements are delimited using a comma. To specify a different delimiter, use the <xref:System.Diagnostics.Eventing.EventProviderTraceListener.Delimiter%2A> property.  
-  
- Adding the listener to <xref:System.Diagnostics.TraceSource?displayProperty=fullName> registers the provider with the ETW subsystem. You must create an ETW trace session using the Logman.exe executable program (or something similar) to write the events to a log file.  
-  
- You do not need a manifest to consume events from the listener because the event data is a single string.  
-  
- When you call the <xref:System.Diagnostics.TraceSource?displayProperty=fullName> methods to write events, you pass a <xref:System.Diagnostics.TraceEventType?displayProperty=fullName> enumeration value. The enumeration contains both level and keyword values. When you enable a trace listener provider from an ETW session, the level value that you specify can be the value associated with one of the following <xref:System.Diagnostics.TraceEventType?displayProperty=fullName> enumeration values:  
-  
+All event data (trace or debug) from the source event is written to the ETW subsystem as a string. The data elements are delimited using a comma. To specify a different delimiter, use the <xref:System.Diagnostics.Eventing.EventProviderTraceListener.Delimiter%2A> property.  
+ 
+Adding the listener to <xref:System.Diagnostics.TraceSource?displayProperty=fullName> registers the provider with the ETW subsystem. You must create an ETW trace session using the Logman.exe executable program (or something similar) to write the events to a log file.  
+ 
+You do not need a manifest to consume events from the listener because the event data is a single string.  
+ 
+When you call the <xref:System.Diagnostics.TraceSource?displayProperty=fullName> methods to write events, you pass a <xref:System.Diagnostics.TraceEventType?displayProperty=fullName> enumeration value. The enumeration contains both level and keyword values. When you enable a trace listener provider from an ETW session, the level value that you specify can be the value associated with one of the following <xref:System.Diagnostics.TraceEventType?displayProperty=fullName> enumeration values:  
+ 
 -   Critical (value is 1)  
-  
+ 
 -   Error (value is 2)  
-  
+ 
 -   Information (value is 8)  
-  
+ 
 -   Verbose (value is 16)  
-  
+ 
 -   Warning (value is 4)  
-  
- The keyword value that you specify for the session can be the value associated with one of the following <xref:System.Diagnostics.TraceEventType?displayProperty=fullName> enumeration values:  
-  
+ 
+The keyword value that you specify for the session can be the value associated with one of the following <xref:System.Diagnostics.TraceEventType?displayProperty=fullName> enumeration values:  
+ 
 -   Resume (value is 2,048)  
-  
+ 
 -   Start (value is 256)  
-  
+ 
 -   Stop (value is 512)  
-  
+ 
 -   Suspend (value is 1,024)  
-  
+ 
 -   Transfer (value is 4,096)  
+ 
   
-   
-  
+ 
 ## Examples  
-  
+ 
 ```  
 private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B}");  
   
@@ -68,7 +68,7 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
   
     source.TraceInformation("string {0}, bool {1}, int {2}, ushort {3}", new object[] { "abc", false, 123, (UInt32)5 });  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -132,11 +132,11 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.EventProviderTraceListener" /> class using the specified provider identifier, name of the listener, and delimiter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 -  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,18 +176,18 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
         <value>The delimiter used to delimit the event data. The default delimiter is a comma.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The listener converts the data elements to strings and then concatenates the strings together, using the specified delimiter to delimit each data element in the string. The string is then written as the event data in the ETW subsystem.  
-  
- To successfully parse the string, the consumer must know the delimiter that was used.  
-  
- If the data contains a string that may contain a comma, specify an appropriate delimiter, so that the event data can be correctly parsed.  
-  
- You do not need a manifest to consume events from the listener because the event data is a single string.  
-  
- The delimiter applies to event data written using the <xref:System.Diagnostics.TraceSource.TraceData%2A?displayProperty=fullName> method.  
-  
+The listener converts the data elements to strings and then concatenates the strings together, using the specified delimiter to delimit each data element in the string. The string is then written as the event data in the ETW subsystem.  
+ 
+To successfully parse the string, the consumer must know the delimiter that was used.  
+ 
+If the data contains a string that may contain a comma, specify an appropriate delimiter, so that the event data can be correctly parsed.  
+ 
+You do not need a manifest to consume events from the listener because the event data is a single string.  
+ 
+The delimiter applies to event data written using the <xref:System.Diagnostics.TraceSource.TraceData%2A?displayProperty=fullName> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

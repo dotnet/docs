@@ -65,10 +65,10 @@
         <value>A <see cref="T:System.Drawing.Bitmap" /> image that represents the group.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Drawing.Bitmap> image that represents the group is typically used in design-time pickers. The image may be `null`.  
-  
+A <xref:System.Drawing.Bitmap> image that represents the group is typically used in design-time pickers. The image may be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,10 +109,10 @@
         <value>The name of the group.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The name of the group must be unique across all data sources groups at the `EnvDTE.Project` level.  
-  
+The name of the group must be unique across all data sources groups at the `EnvDTE.Project` level.  
+ 
  ]]></format>
         </remarks>
       </Docs>

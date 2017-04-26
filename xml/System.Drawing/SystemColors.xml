@@ -14,19 +14,19 @@
     <summary>Each property of the <see cref="T:System.Drawing.SystemColors" /> class is a <see cref="T:System.Drawing.Color" /> structure that is the color of a Windows display element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Better performance is achieved by using the properties of the <xref:System.Drawing.SystemPens> or <xref:System.Drawing.SystemBrushes> classes rather than creating a new pen or brush based on a value from <xref:System.Drawing.SystemColors>. For example, if you wanted to get a brush for the face color of a 3-D element, use the <xref:System.Drawing.SystemBrushes.Control%2A?displayProperty=fullName> property because it gets a brush that already exists, whereas calling the <xref:System.Drawing.SolidBrush.%23ctor%2A> constructor with a parameter value of <xref:System.Drawing.SystemColors.Control%2A?displayProperty=fullName> will create a new brush.  
+Better performance is achieved by using the properties of the <xref:System.Drawing.SystemPens> or <xref:System.Drawing.SystemBrushes> classes rather than creating a new pen or brush based on a value from <xref:System.Drawing.SystemColors>. For example, if you wanted to get a brush for the face color of a 3-D element, use the <xref:System.Drawing.SystemBrushes.Control%2A?displayProperty=fullName> property because it gets a brush that already exists, whereas calling the <xref:System.Drawing.SolidBrush.%23ctor%2A> constructor with a parameter value of <xref:System.Drawing.SystemColors.Control%2A?displayProperty=fullName> will create a new brush.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Drawing.Color.op_Equality%2A> operator and the <xref:System.Drawing.SystemColors> class. This example is designed to be used with a Windows Form that contains a button named `Button1`. Paste the following code into your form and associate the `Button1_Click` method with the button's `Click` event.  
-  
- [!code-cpp[System.Drawing.CharacterRangeExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.CharacterRangeExample/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.CharacterRangeExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.CharacterRangeExample/CS/form1.cs#2)]
- [!code-vb[System.Drawing.CharacterRangeExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.CharacterRangeExample/VB/form1.vb#2)]  
-  
+The following code example demonstrates the <xref:System.Drawing.Color.op_Equality%2A> operator and the <xref:System.Drawing.SystemColors> class. This example is designed to be used with a Windows Form that contains a button named `Button1`. Paste the following code into your form and associate the `Button1_Click` method with the button's `Click` event.  
+ 
+[!code-cpp[System.Drawing.CharacterRangeExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.CharacterRangeExample/CPP/form1.cpp#2)]
+[!code-csharp[System.Drawing.CharacterRangeExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.CharacterRangeExample/CS/form1.cs#2)]
+[!code-vb[System.Drawing.CharacterRangeExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.CharacterRangeExample/VB/form1.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -102,10 +102,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the color of the application workspace.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The application workspace is the area in a multiple-document view that is not being occupied by documents.  
-  
+The application workspace is the area in a multiple-document view that is not being occupied by documents.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,10 +145,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the highlight color of a 3-D element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This color is applied to parts of a 3-D element that face the light source.  
-  
+This color is applied to parts of a 3-D element that face the light source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the shadow color of a 3-D element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This color is applied to parts of a 3-D element that face away from the light source.  
-  
+This color is applied to parts of a 3-D element that face away from the light source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,10 +213,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the shadow color of a 3-D element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This color is applied to parts of a 3-D element that face away from the light source.  
-  
+This color is applied to parts of a 3-D element that face away from the light source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,10 +238,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the dark shadow color of a 3-D element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This color is applied to the parts of a 3-D element that are the darkest color.  
-  
+This color is applied to the parts of a 3-D element that are the darkest color.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,10 +263,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the light color of a 3-D element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This color is applied to parts of a 3-D element that face the light source.  
-  
+This color is applied to parts of a 3-D element that face the light source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -288,10 +288,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the highlight color of a 3-D element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This color is applied to the parts of a 3-D element that are the lightest color.  
-  
+This color is applied to the parts of a 3-D element that are the lightest color.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -385,10 +385,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the color of dimmed text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Items in a list that are disabled are displayed in dimmed text.  
-  
+Items in a list that are disabled are displayed in dimmed text.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -410,10 +410,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the color of the background of selected items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Selected items may include menu items as well as selected text. For example, the <xref:System.Drawing.Color> structure may be the color used for the background of selected items in a list box.  
-  
+Selected items may include menu items as well as selected text. For example, the <xref:System.Drawing.Color> structure may be the color used for the background of selected items in a list box.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -435,10 +435,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the color of the text of selected items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, this color is used for the text of selected items in a list box.  
-  
+For example, this color is used for the text of selected items in a list box.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -460,10 +460,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> that is the color used to designate a hot-tracked item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Single-clicking a hot-tracked item executes the item.  
-  
+Single-clicking a hot-tracked item executes the item.  
+ 
  ]]></format>
         </remarks>
       </Docs>

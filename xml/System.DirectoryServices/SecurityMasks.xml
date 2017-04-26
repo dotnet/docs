@@ -18,9 +18,9 @@
     <summary>Specifies the available options for examining security information of a directory object. This enumeration is used with the <see cref="P:System.DirectoryServices.DirectorySearcher.SecurityMasks" /> and <see cref="P:System.DirectoryServices.DirectoryEntryConfiguration.SecurityMasks" /> properties.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
-  
+ 
 ```  
 using System.DirectoryServices;  
 ...  
@@ -30,7 +30,7 @@ src.SecurityMasks = SecurityMasks.Dacl | SecurityMasks.Owner;
 SearchResultCollection res = src.FindAll();  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

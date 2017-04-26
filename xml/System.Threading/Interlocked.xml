@@ -24,31 +24,31 @@
     <summary>Provides atomic operations for variables that are shared by multiple threads.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The methods of this class help protect against errors that can occur when the scheduler switches contexts while a thread is updating a variable that can be accessed by other threads, or when two threads are executing concurrently on separate processors. The members of this class do not throw exceptions.  
-  
- The <xref:System.Threading.Interlocked.Increment%2A> and <xref:System.Threading.Interlocked.Decrement%2A> methods increment or decrement a variable and store the resulting value in a single operation. On most computers, incrementing a variable is not an atomic operation, requiring the following steps:  
-  
+The methods of this class help protect against errors that can occur when the scheduler switches contexts while a thread is updating a variable that can be accessed by other threads, or when two threads are executing concurrently on separate processors. The members of this class do not throw exceptions.  
+ 
+The <xref:System.Threading.Interlocked.Increment%2A> and <xref:System.Threading.Interlocked.Decrement%2A> methods increment or decrement a variable and store the resulting value in a single operation. On most computers, incrementing a variable is not an atomic operation, requiring the following steps:  
+ 
 1.  Load a value from an instance variable into a register.  
-  
+ 
 2.  Increment or decrement the value.  
-  
+ 
 3.  Store the value in the instance variable.  
+ 
+If you do not use <xref:System.Threading.Interlocked.Increment%2A> and <xref:System.Threading.Interlocked.Decrement%2A>, a thread can be preempted after executing the first two steps. Another thread can then execute all three steps. When the first thread resumes execution, it overwrites the value in the instance variable, and the effect of the increment or decrement performed by the second thread is lost.  
+ 
+The <xref:System.Threading.Interlocked.Exchange%2A> method atomically exchanges the values of the specified variables. The <xref:System.Threading.Interlocked.CompareExchange%2A> method combines two operations: comparing two values and storing a third value in one of the variables, based on the outcome of the comparison. The compare and exchange operations are performed as an atomic operation.  
+ 
   
- If you do not use <xref:System.Threading.Interlocked.Increment%2A> and <xref:System.Threading.Interlocked.Decrement%2A>, a thread can be preempted after executing the first two steps. Another thread can then execute all three steps. When the first thread resumes execution, it overwrites the value in the instance variable, and the effect of the increment or decrement performed by the second thread is lost.  
-  
- The <xref:System.Threading.Interlocked.Exchange%2A> method atomically exchanges the values of the specified variables. The <xref:System.Threading.Interlocked.CompareExchange%2A> method combines two operations: comparing two values and storing a third value in one of the variables, based on the outcome of the comparison. The compare and exchange operations are performed as an atomic operation.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows a thread-safe resource locking mechanism.  
-  
- [!code-cpp[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CS/class1.cs#1)]
- [!code-vb[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/VB/class1.vb#1)]  
-  
+The following code example shows a thread-safe resource locking mechanism.  
+ 
+[!code-cpp[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CPP/class1.cpp#1)]
+[!code-csharp[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CS/class1.cs#1)]
+[!code-vb[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
@@ -92,10 +92,10 @@
         <returns>The new value stored at <paramref name="location1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int32?displayProperty=fullName> and `value` is 1, the result is <xref:System.Int32?displayProperty=fullName>; if `value` is 2, the result is (<xref:System.Int32?displayProperty=fullName> + 1); and so on. No exception is thrown.  
-  
+This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int32?displayProperty=fullName> and `value` is 1, the result is <xref:System.Int32?displayProperty=fullName>; if `value` is 2, the result is (<xref:System.Int32?displayProperty=fullName> + 1); and so on. No exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
@@ -139,12 +139,12 @@
         <returns>The new value stored at <paramref name="location1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int64?displayProperty=fullName> and `value` is 1, the result is <xref:System.Int64?displayProperty=fullName>; if `value` is 2, the result is (<xref:System.Int64?displayProperty=fullName> + 1); and so on. No exception is thrown.  
-  
- The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=fullName> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
-  
+This method handles an overflow condition by wrapping: if the value at `location1` is <xref:System.Int64?displayProperty=fullName> and `value` is 1, the result is <xref:System.Int64?displayProperty=fullName>; if `value` is 2, the result is (<xref:System.Int64?displayProperty=fullName> + 1); and so on. No exception is thrown.  
+ 
+The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=fullName> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
@@ -185,20 +185,20 @@
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `comparand` and the value in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of <xref:System.Threading.Interlocked.CompareExchange%2A> is the original value in `location1`, whether or not the exchange takes place.  
+If `comparand` and the value in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of <xref:System.Threading.Interlocked.CompareExchange%2A> is the original value in `location1`, whether or not the exchange takes place.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a thread-safe method that accumulates a running total of <xref:System.Double> values. Two threads add a series of <xref:System.Double> values using the thread-safe method and ordinary addition, and when the threads complete the totals are compared. On a dual-processor computer, there is a significant difference in the totals.  
-  
- In the thread-safe method, the initial value of the running total is saved, and then the <xref:System.Threading.Interlocked.CompareExchange%2A> method is used to exchange the newly computed total with the old total. If the return value is not equal to the saved value of the running total, then another thread has updated the total in the meantime. In that case, the attempt to update the running total must be repeated.  
-  
- [!code-csharp[System.Threading.Interlocked CompareExchange Double#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Double/cs/source.cs#1)]
- [!code-vb[System.Threading.Interlocked CompareExchange Double#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Double/vb/source.vb#1)]  
-  
+The following code example demonstrates a thread-safe method that accumulates a running total of <xref:System.Double> values. Two threads add a series of <xref:System.Double> values using the thread-safe method and ordinary addition, and when the threads complete the totals are compared. On a dual-processor computer, there is a significant difference in the totals.  
+ 
+In the thread-safe method, the initial value of the running total is saved, and then the <xref:System.Threading.Interlocked.CompareExchange%2A> method is used to exchange the newly computed total with the old total. If the return value is not equal to the saved value of the running total, then another thread has updated the total in the meantime. In that case, the attempt to update the running total must be repeated.  
+ 
+[!code-csharp[System.Threading.Interlocked CompareExchange Double#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Double/cs/source.cs#1)]
+[!code-vb[System.Threading.Interlocked CompareExchange Double#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Double/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
@@ -244,22 +244,22 @@
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `comparand` and the value in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of <xref:System.Threading.Interlocked.CompareExchange%2A> is the original value in `location1`, whether or not the exchange takes place.  
+If `comparand` and the value in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of <xref:System.Threading.Interlocked.CompareExchange%2A> is the original value in `location1`, whether or not the exchange takes place.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a thread-safe method that accumulates a running total. The initial value of the running total is saved, and then the <xref:System.Threading.Interlocked.CompareExchange%2A> method is used to exchange the newly computed total with the old total. If the return value is not equal to the saved value of the running total, then another thread has updated the total in the meantime. In that case, the attempt to update the running total must be repeated.  
-  
+The following code example demonstrates a thread-safe method that accumulates a running total. The initial value of the running total is saved, and then the <xref:System.Threading.Interlocked.CompareExchange%2A> method is used to exchange the newly computed total with the old total. If the return value is not equal to the saved value of the running total, then another thread has updated the total in the meantime. In that case, the attempt to update the running total must be repeated.  
+ 
 > [!NOTE]
 >  The <xref:System.Threading.Interlocked.Add%2A> method, introduced in version 2.0 of the .NET Framework, provides a more convenient way to accumulate thread-safe running totals for integers.  
-  
- [!code-cpp[System.Threading.Interlocked CompareExchange0#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange0/CPP/source.cpp#1)]
- [!code-csharp[System.Threading.Interlocked CompareExchange0#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange0/CS/source.cs#1)]
- [!code-vb[System.Threading.Interlocked CompareExchange0#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange0/VB/source.vb#1)]  
-  
+ 
+[!code-cpp[System.Threading.Interlocked CompareExchange0#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange0/CPP/source.cpp#1)]
+[!code-csharp[System.Threading.Interlocked CompareExchange0#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange0/CS/source.cs#1)]
+[!code-vb[System.Threading.Interlocked CompareExchange0#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange0/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
@@ -300,10 +300,10 @@
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `comparand` and the value in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of <xref:System.Threading.Interlocked.CompareExchange%2A> is the original value in `location1`, whether or not the exchange takes place.  
-  
+If `comparand` and the value in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of <xref:System.Threading.Interlocked.CompareExchange%2A> is the original value in `location1`, whether or not the exchange takes place.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
@@ -349,13 +349,13 @@
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `comparand` and the value in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of this method is the original value in `location1`, whether or not the exchange takes place.  
-  
+If `comparand` and the value in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of this method is the original value in `location1`, whether or not the exchange takes place.  
+ 
 > [!NOTE]
 >  <xref:System.IntPtr> is a platform-specific type.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
@@ -401,15 +401,15 @@
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `comparand` and the object in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of <xref:System.Threading.Interlocked.CompareExchange%2A> is the original value in `location1`, whether or not the exchange takes place.  
-  
- Beginning with .NET Framework version 2.0, the <xref:System.Threading.Interlocked.CompareExchange%60%601%28%60%600%40%2C%60%600%2C%60%600%29> method overload provides a type-safe alternative for reference types.  
-  
+If `comparand` and the object in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of <xref:System.Threading.Interlocked.CompareExchange%2A> is the original value in `location1`, whether or not the exchange takes place.  
+ 
+Beginning with .NET Framework version 2.0, the <xref:System.Threading.Interlocked.CompareExchange%60%601%28%60%600%40%2C%60%600%2C%60%600%29> method overload provides a type-safe alternative for reference types.  
+ 
 > [!NOTE]
 >  The objects are compared for reference equality, rather than <xref:System.Object.Equals%2A?displayProperty=fullName>. As a result, two boxed instances of the same value type (for example, the integer 3) always appear to be unequal, and no operation is performed. Do not use this overload with value types.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location1" /> is a null pointer.</exception>
@@ -450,20 +450,20 @@
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `comparand` and the value in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of <xref:System.Threading.Interlocked.CompareExchange%2A> is the original value in `location1`, whether or not the exchange takes place.  
+If `comparand` and the value in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The compare and exchange operations are performed as an atomic operation. The return value of <xref:System.Threading.Interlocked.CompareExchange%2A> is the original value in `location1`, whether or not the exchange takes place.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a thread-safe method that accumulates a running total of <xref:System.Single> values. Two threads add a series of <xref:System.Single> values using the thread-safe method and ordinary addition, and when the threads complete the totals are compared. On a dual-processor computer, there is a significant difference in the totals.  
-  
- In the thread-safe method, the initial value of the running total is saved, and then the <xref:System.Threading.Interlocked.CompareExchange%2A> method is used to exchange the newly computed total with the old total. If the return value is not equal to the saved value of the running total, then another thread has updated the total in the meantime. In that case, the attempt to update the running total must be repeated.  
-  
- [!code-csharp[System.Threading.Interlocked CompareExchange Single#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Single/cs/source.cs#1)]
- [!code-vb[System.Threading.Interlocked CompareExchange Single#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Single/vb/source.vb#1)]  
-  
+The following code example demonstrates a thread-safe method that accumulates a running total of <xref:System.Single> values. Two threads add a series of <xref:System.Single> values using the thread-safe method and ordinary addition, and when the threads complete the totals are compared. On a dual-processor computer, there is a significant difference in the totals.  
+ 
+In the thread-safe method, the initial value of the running total is saved, and then the <xref:System.Threading.Interlocked.CompareExchange%2A> method is used to exchange the newly computed total with the old total. If the return value is not equal to the saved value of the running total, then another thread has updated the total in the meantime. In that case, the attempt to update the running total must be repeated.  
+ 
+[!code-csharp[System.Threading.Interlocked CompareExchange Single#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Single/cs/source.cs#1)]
+[!code-vb[System.Threading.Interlocked CompareExchange Single#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked CompareExchange Single/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
@@ -520,15 +520,15 @@
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `comparand` and the value in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The comparison and the exchange are performed as an atomic operation. The return value of this method is the original value in `location1`, whether or not the exchange takes place.  
-  
- This method only supports reference types. There are overloads of the <xref:System.Threading.Interlocked.CompareExchange%2A> method for the value types <xref:System.Int32>, <xref:System.Int64>, <xref:System.IntPtr>, <xref:System.Single>, and <xref:System.Double>, but there is no support for other value types.  
-  
+If `comparand` and the value in `location1` are equal, then `value` is stored in `location1`. Otherwise, no operation is performed. The comparison and the exchange are performed as an atomic operation. The return value of this method is the original value in `location1`, whether or not the exchange takes place.  
+ 
+This method only supports reference types. There are overloads of the <xref:System.Threading.Interlocked.CompareExchange%2A> method for the value types <xref:System.Int32>, <xref:System.Int64>, <xref:System.IntPtr>, <xref:System.Single>, and <xref:System.Double>, but there is no support for other value types.  
+ 
 > [!NOTE]
 >  This method overload is preferable to the <xref:System.Threading.Interlocked.CompareExchange%28System.Object%40%2CSystem.Object%2CSystem.Object%29> method overload, because the latter requires the destination object to be accessed late-bound.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
@@ -570,23 +570,23 @@
         <returns>The decremented value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method handles an overflow condition by wrapping: If `location` = <xref:System.Int32?displayProperty=fullName>, `location` - 1 = <xref:System.Int32?displayProperty=fullName>. No exception is thrown.  
+This method handles an overflow condition by wrapping: If `location` = <xref:System.Int32?displayProperty=fullName>, `location` - 1 = <xref:System.Int32?displayProperty=fullName>. No exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines how many random numbers that range from 0 to 1,000 are required to generate 1,000 random numbers with a midpoint value. To keep track of the number of midpoint values, a variable, `midpointCount`, is set equal to 1,000 and decremented each time the random number generator returns a midpoint value. Because three threads generate the random numbers, the <xref:System.Threading.Interlocked.Decrement%28System.Int32%40%29> method is called to ensure that multiple threads don't update `midpointCount` concurrently. Note that a lock is also used to protect the random number generator, and that a <xref:System.Threading.CountdownEvent> object is used to ensure that the `Main` method doesn't finish execution before the three threads.  
-  
- [!code-csharp[System.Threading.Interlocked.Decrement#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.decrement/cs/decrement1.cs#1)]
- [!code-vb[System.Threading.Interlocked.Decrement#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.decrement/vb/decrement1.vb#1)]  
-  
- The following example is similar to the previous one, except that it uses the  instead of a thread procedure to generate 50,000 random midpoint integers. In this example, a lambda expression replaces the `GenerateNumbers` thread procedure, and the call to the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=fullName> method eliminates the need for the <xref:System.Threading.CountdownEvent> object.  
-  
- [!code-csharp[System.Threading.Interlocked.Decrement#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.decrement/cs/decrement2.cs#2)]
- [!code-vb[System.Threading.Interlocked.Decrement#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.decrement/vb/decrement2.vb#2)]  
-  
+The following example determines how many random numbers that range from 0 to 1,000 are required to generate 1,000 random numbers with a midpoint value. To keep track of the number of midpoint values, a variable, `midpointCount`, is set equal to 1,000 and decremented each time the random number generator returns a midpoint value. Because three threads generate the random numbers, the <xref:System.Threading.Interlocked.Decrement%28System.Int32%40%29> method is called to ensure that multiple threads don't update `midpointCount` concurrently. Note that a lock is also used to protect the random number generator, and that a <xref:System.Threading.CountdownEvent> object is used to ensure that the `Main` method doesn't finish execution before the three threads.  
+ 
+[!code-csharp[System.Threading.Interlocked.Decrement#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.decrement/cs/decrement1.cs#1)]
+[!code-vb[System.Threading.Interlocked.Decrement#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.decrement/vb/decrement1.vb#1)]  
+ 
+The following example is similar to the previous one, except that it uses the  instead of a thread procedure to generate 50,000 random midpoint integers. In this example, a lambda expression replaces the `GenerateNumbers` thread procedure, and the call to the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=fullName> method eliminates the need for the <xref:System.Threading.CountdownEvent> object.  
+ 
+[!code-csharp[System.Threading.Interlocked.Decrement#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.decrement/cs/decrement2.cs#2)]
+[!code-vb[System.Threading.Interlocked.Decrement#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.decrement/vb/decrement2.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location" /> is a null pointer.</exception>
@@ -623,12 +623,12 @@
         <returns>The decremented value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64?displayProperty=fullName>, `location` - 1 = <xref:System.Int64?displayProperty=fullName>. No exception is thrown.  
-  
- The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=fullName> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
-  
+This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64?displayProperty=fullName>, `location` - 1 = <xref:System.Int64?displayProperty=fullName>. No exception is thrown.  
+ 
+The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=fullName> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location" /> is a null pointer.</exception>
@@ -707,14 +707,14 @@
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows a thread-safe resource locking mechanism.  
-  
- [!code-cpp[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CPP/class1.cpp#1)]
- [!code-csharp[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CS/class1.cs#1)]
- [!code-vb[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/VB/class1.vb#1)]  
-  
+The following code example shows a thread-safe resource locking mechanism.  
+ 
+[!code-cpp[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CPP/class1.cpp#1)]
+[!code-csharp[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/CS/class1.cs#1)]
+[!code-vb[System.Threading.Interlocked.Exchange Int32 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange Int32 Example/VB/class1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location1" /> is a null pointer.</exception>
@@ -833,19 +833,19 @@
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Beginning with .NET Framework version 2.0, the <xref:System.Threading.Interlocked.Exchange%60%601%28%60%600%40%2C%60%600%29> method overload provides a type-safe alternative for reference types.  
+Beginning with .NET Framework version 2.0, the <xref:System.Threading.Interlocked.Exchange%60%601%28%60%600%40%2C%60%600%29> method overload provides a type-safe alternative for reference types.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the syntax for using `Exchange` with any reference type object.  
-  
- [!code-cpp[System.Threading.Interlocked.Exchange#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange/CPP/source.cpp#1)]
- [!code-csharp[System.Threading.Interlocked.Exchange#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange/CS/source.cs#1)]
- [!code-vb[System.Threading.Interlocked.Exchange#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange/VB/source.vb#1)]  
-  
+The following code example shows the syntax for using `Exchange` with any reference type object.  
+ 
+[!code-cpp[System.Threading.Interlocked.Exchange#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange/CPP/source.cpp#1)]
+[!code-csharp[System.Threading.Interlocked.Exchange#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange/CS/source.cs#1)]
+[!code-vb[System.Threading.Interlocked.Exchange#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location1" /> is a null pointer.</exception>
@@ -935,23 +935,23 @@
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method only supports reference types. There are overloads of the <xref:System.Threading.Interlocked.Exchange%2A> method for the <xref:System.Int32>, <xref:System.Int64>, <xref:System.IntPtr>, <xref:System.Single>, and <xref:System.Double> value types, but there is no support for other value types.  
-  
+This method only supports reference types. There are overloads of the <xref:System.Threading.Interlocked.Exchange%2A> method for the <xref:System.Int32>, <xref:System.Int64>, <xref:System.IntPtr>, <xref:System.Single>, and <xref:System.Double> value types, but there is no support for other value types.  
+ 
 > [!NOTE]
 >  This method overload is preferable to the <xref:System.Threading.Interlocked.Exchange%28System.Object%40%2CSystem.Object%29> method overload, because the latter requires late-bound access to the destination object .  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example launches ten tasks, each of which generates  100 ten-character part numbers. It then the part number that is first alphabetically.  
-  
- [!code-csharp[System.Threading.Interlocked.Exchange#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange/CS/Exchange5.cs#2)]
- [!code-vb[System.Threading.Interlocked.Exchange#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange/VB/Exchange5.vb#2)]  
-  
- The example uses the `firstWidget` variable to store the ID that occurs first in the sort order. It compares each ID that it generates with the `firstWidget` value.  If the new value precedes the current value of `firstWidget` in the sort order, the example calls the <xref:System.Threading.Interlocked.Exchange%2A> method to assign the new value to `firstWidget`.  
-  
+The following example launches ten tasks, each of which generates  100 ten-character part numbers. It then the part number that is first alphabetically.  
+ 
+[!code-csharp[System.Threading.Interlocked.Exchange#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange/CS/Exchange5.cs#2)]
+[!code-vb[System.Threading.Interlocked.Exchange#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange/VB/Exchange5.vb#2)]  
+ 
+The example uses the `firstWidget` variable to store the ID that occurs first in the sort order. It compares each ID that it generates with the `firstWidget` value.  If the new value precedes the current value of `firstWidget` in the sort order, the example calls the <xref:System.Threading.Interlocked.Exchange%2A> method to assign the new value to `firstWidget`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
@@ -993,23 +993,23 @@
         <returns>The incremented value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method handles an overflow condition by wrapping: if `location` = <xref:System.Int32?displayProperty=fullName>, `location` + 1 = <xref:System.Int32?displayProperty=fullName>. No exception is thrown.  
+This method handles an overflow condition by wrapping: if `location` = <xref:System.Int32?displayProperty=fullName>, `location` + 1 = <xref:System.Int32?displayProperty=fullName>. No exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example determines how many random numbers that range from 0 to 1,000 are required to generate 1,000 random numbers with a midpoint value. To keep track of the number of midpoint values, a variable, `midpointCount`, is set equal to 0 and incremented each time the random number generator returns a midpoint value until it reaches 10,000. Because three threads generate the random numbers, the <xref:System.Threading.Interlocked.Increment%28System.Int32%40%29> method is called to ensure that multiple threads don't update `midpointCount` concurrently. Note that a lock is also used to protect the random number generator, and that a <xref:System.Threading.CountdownEvent> object is used to ensure that the `Main` method doesn't finish execution before the three threads.  
-  
- [!code-csharp[System.Threading.Interlocked.Increment2#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.increment2/cs/increment3.cs#3)]
- [!code-vb[System.Threading.Interlocked.Increment2#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.increment2/vb/Increment3.vb#3)]  
-  
- The following example is similar to the previous one, except that it uses the  instead of a thread procedure to generate 50,000 random midpoint integers. In this example, a lambda expression replaces the `GenerateNumbers` thread procedure, and the call to the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=fullName> method eliminates the need for the <xref:System.Threading.CountdownEvent> object.  
-  
- [!code-csharp[System.Threading.Interlocked.Increment2#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.increment2/cs/increment4.cs#4)]
- [!code-vb[System.Threading.Interlocked.Increment2#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.increment2/vb/Increment4.vb#4)]  
-  
+The following example determines how many random numbers that range from 0 to 1,000 are required to generate 1,000 random numbers with a midpoint value. To keep track of the number of midpoint values, a variable, `midpointCount`, is set equal to 0 and incremented each time the random number generator returns a midpoint value until it reaches 10,000. Because three threads generate the random numbers, the <xref:System.Threading.Interlocked.Increment%28System.Int32%40%29> method is called to ensure that multiple threads don't update `midpointCount` concurrently. Note that a lock is also used to protect the random number generator, and that a <xref:System.Threading.CountdownEvent> object is used to ensure that the `Main` method doesn't finish execution before the three threads.  
+ 
+[!code-csharp[System.Threading.Interlocked.Increment2#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.increment2/cs/increment3.cs#3)]
+[!code-vb[System.Threading.Interlocked.Increment2#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.increment2/vb/Increment3.vb#3)]  
+ 
+The following example is similar to the previous one, except that it uses the  instead of a thread procedure to generate 50,000 random midpoint integers. In this example, a lambda expression replaces the `GenerateNumbers` thread procedure, and the call to the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=fullName> method eliminates the need for the <xref:System.Threading.CountdownEvent> object.  
+ 
+[!code-csharp[System.Threading.Interlocked.Increment2#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.increment2/cs/increment4.cs#4)]
+[!code-vb[System.Threading.Interlocked.Increment2#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.increment2/vb/Increment4.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a null pointer.</exception>
@@ -1051,12 +1051,12 @@
         <returns>The incremented value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64?displayProperty=fullName>, `location` + 1 = <xref:System.Int64?displayProperty=fullName>. No exception is thrown.  
-  
- The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=fullName> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
-  
+This method handles an overflow condition by wrapping: if `location` = <xref:System.Int64?displayProperty=fullName>, `location` + 1 = <xref:System.Int64?displayProperty=fullName>. No exception is thrown.  
+ 
+The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=fullName> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a null pointer.</exception>
@@ -1089,14 +1089,14 @@
         <summary>Synchronizes memory access as follows: The processor that executes the current thread cannot reorder instructions in such a way that memory accesses before the call to <see cref="M:System.Threading.Interlocked.MemoryBarrier" /> execute after memory accesses that follow the call to <see cref="M:System.Threading.Interlocked.MemoryBarrier" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method was added to the <xref:System.Threading.Interlocked> class in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] as a convenience; it's a wrapper for the <xref:System.Threading.Thread.MemoryBarrier%2A?displayProperty=fullName> method.  
-  
- <xref:System.Threading.Interlocked.MemoryBarrier%2A> is required only on multiprocessor systems that have weak memory ordering (for example, a system that employs multiple Intel Itanium processors).  
-  
- For most purposes, the C# `lock` statement, the Visual Basic `SyncLock` statement, or the <xref:System.Threading.Monitor> class provide easier ways to synchronize data.  
-  
+This method was added to the <xref:System.Threading.Interlocked> class in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] as a convenience; it's a wrapper for the <xref:System.Threading.Thread.MemoryBarrier%2A?displayProperty=fullName> method.  
+ 
+<xref:System.Threading.Interlocked.MemoryBarrier%2A> is required only on multiprocessor systems that have weak memory ordering (for example, a system that employs multiple Intel Itanium processors).  
+ 
+For most purposes, the C# `lock` statement, the Visual Basic `SyncLock` statement, or the <xref:System.Threading.Monitor> class provide easier ways to synchronize data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1132,15 +1132,15 @@
         <returns>The loaded value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Threading.Interlocked.Read%2A> method is unnecessary on 64-bit systems, because 64-bit read operations are already atomic. On 32-bit systems, 64-bit read operations are not atomic unless performed using <xref:System.Threading.Interlocked.Read%2A>.  
-  
- The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=fullName> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
-  
+The <xref:System.Threading.Interlocked.Read%2A> method is unnecessary on 64-bit systems, because 64-bit read operations are already atomic. On 32-bit systems, 64-bit read operations are not atomic unless performed using <xref:System.Threading.Interlocked.Read%2A>.  
+ 
+The <xref:System.Threading.Interlocked.Read%2A> method and the 64-bit overloads of the <xref:System.Threading.Interlocked.Increment%2A>, <xref:System.Threading.Interlocked.Decrement%2A>, and <xref:System.Threading.Interlocked.Add%2A> methods are truly atomic only on systems where a <xref:System.IntPtr?displayProperty=fullName> is 64 bits long. On other systems, these methods are atomic with respect to each other, but not with respect to other means of accessing the data. Thus, to be thread safe on 32-bit systems, any access to a 64-bit value must be made through the members of the <xref:System.Threading.Interlocked> class.  
+ 
 > [!NOTE]
 >  <xref:System.IntPtr> is a platform-specific type.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

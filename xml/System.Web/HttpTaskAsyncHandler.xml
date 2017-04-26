@@ -18,10 +18,10 @@
     <summary>Provides methods that a derived task handler class can implement in order to process an asynchronous task.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The<xref:System.Web.HttpTaskAsyncHandler> class provides a simplified way to handle asynchronous tasks without having to implement the <xref:System.Web.IHttpAsyncHandler.BeginProcessRequest%2A> and <xref:System.Web.IHttpAsyncHandler.EndProcessRequest%2A> methods.  To create a handler for an asynchronous task, you can override the <xref:System.Web.HttpTaskAsyncHandler.ProcessRequestAsync%2A> method and implement custom task handling code.  
-  
+The<xref:System.Web.HttpTaskAsyncHandler> class provides a simplified way to handle asynchronous tasks without having to implement the <xref:System.Web.IHttpAsyncHandler.BeginProcessRequest%2A> and <xref:System.Web.IHttpAsyncHandler.EndProcessRequest%2A> methods.  To create a handler for an asynchronous task, you can override the <xref:System.Web.HttpTaskAsyncHandler.ProcessRequestAsync%2A> method and implement custom task handling code.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -108,10 +108,10 @@
         <returns>The asynchronous task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To create a custom handler for an asynchronous task, override the <xref:System.Web.HttpTaskAsyncHandler.ProcessRequestAsync%2A> method.  
-  
+To create a custom handler for an asynchronous task, override the <xref:System.Web.HttpTaskAsyncHandler.ProcessRequestAsync%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,10 +141,10 @@
         <returns>An object that contains status data about the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.HttpTaskAsyncHandler> instance is cast to an <xref:System.Web.IHttpAsyncHandler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.HttpTaskAsyncHandler> instance is cast to an <xref:System.Web.IHttpAsyncHandler> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,10 +169,10 @@
         <summary>Ends asynchronous processing of a task in an HTTP task handler.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.HttpTaskAsyncHandler> instance is cast to an <xref:System.Web.IHttpAsyncHandler> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.HttpTaskAsyncHandler> instance is cast to an <xref:System.Web.IHttpAsyncHandler> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

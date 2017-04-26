@@ -74,14 +74,14 @@
         <summary>Adds the specified header and its values into the <see cref="T:System.Net.Http.Headers.HttpHeaders" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The header `values` will be parsed and validated.  
-  
- If the specified header does not exist, the <xref:System.Net.Http.Headers.HttpHeaders.Add%2A> method inserts a new header into the list of header name/value pairs.  
-  
- If the specified header is already present, `values` are added to the comma-separated list of values associated with the header.  
-  
+The header `values` will be parsed and validated.  
+ 
+If the specified header does not exist, the <xref:System.Net.Http.Headers.HttpHeaders.Add%2A> method inserts a new header into the list of header name/value pairs.  
+ 
+If the specified header is already present, `values` are added to the comma-separated list of values associated with the header.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,14 +114,14 @@
         <summary>Adds the specified header and its value into the <see cref="T:System.Net.Http.Headers.HttpHeaders" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The header `value` will be parsed and validated.  
-  
- If the specified header does not exist, the <xref:System.Net.Http.Headers.HttpHeaders.Add%2A> method inserts a new header into the list of header name/value pairs.  
-  
- If the specified header is already present, `value` is added to the comma-separated list of values associated with the header.  
-  
+The header `value` will be parsed and validated.  
+ 
+If the specified header does not exist, the <xref:System.Net.Http.Headers.HttpHeaders.Add%2A> method inserts a new header into the list of header name/value pairs.  
+ 
+If the specified header is already present, `value` is added to the comma-separated list of values associated with the header.  
+ 
  ]]></format>
         </remarks>
       </Docs>

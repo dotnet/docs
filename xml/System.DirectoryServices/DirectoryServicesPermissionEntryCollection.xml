@@ -192,12 +192,12 @@
         <value>The <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> object that exists at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In C#, this property is the indexer for the <xref:System.DirectoryServices.DirectoryServicesPermissionEntryCollection> class.  
-  
- In JScript, you can use the default indexed properties defined by a type, but you cannot explicitly define your own. However, specifying the expando attribute on a class automatically provides a default indexed property with a type of Object and with an index type of <xref:System.String>.  
-  
+In C#, this property is the indexer for the <xref:System.DirectoryServices.DirectoryServicesPermissionEntryCollection> class.  
+ 
+In JScript, you can use the default indexed properties defined by a type, but you cannot explicitly define your own. However, specifying the expando attribute on a class automatically provides a default indexed property with a type of Object and with an index type of <xref:System.String>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

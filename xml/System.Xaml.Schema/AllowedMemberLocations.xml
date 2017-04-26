@@ -18,10 +18,10 @@
     <summary>Specifies the syntax restrictions enforced on a property when it is set in XAML, as reported by a <see cref="T:System.Xaml.XamlDirective" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Information reported by this property does not account for any possible markup extensions. Markup extensions are processed first and can potentially return objects from within an attribute usage, even for properties that are notated as MemberElement only.  
-  
+Information reported by this property does not account for any possible markup extensions. Markup extensions are processed first and can potentially return objects from within an attribute usage, even for properties that are notated as MemberElement only.  
+ 
  ]]></format>
     </remarks>
   </Docs>

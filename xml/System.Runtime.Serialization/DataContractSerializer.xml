@@ -23,54 +23,54 @@
     <summary>Serializes and deserializes an instance of a type into an XML stream or document using a supplied data contract. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Runtime.Serialization.DataContractSerializer> class to serialize and deserialize instances of a type into an XML stream or document. For example, you can create a type named `Person` with properties that contain essential data, such as a name and address. You can then create and manipulate an instance of the `Person` class and write all of its property values in an XML document for later retrieval, or in an XML stream for immediate transport. Most important, the <xref:System.Runtime.Serialization.DataContractSerializer> is used to serialize and deserialize data sent in [!INCLUDE[indigo1](~/includes/indigo1-md.md)] messages. Apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to classes, and the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to class members to specify properties and fields that are serialized.  
-  
- [!INCLUDE[crlist](~/includes/crlist-md.md)] types that can be serialized, see [Types Supported by the Data Contract Serializer](~/docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
-  
- To use the <xref:System.Runtime.Serialization.DataContractSerializer>, first create an instance of a class and an object appropriate to writing or reading the format; for example, an instance of the <xref:System.Xml.XmlDictionaryWriter>. Then call the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method to persist the data. To retrieve data, create an object appropriate to reading the data format (such as an <xref:System.Xml.XmlDictionaryReader> for an XML document) and call the <xref:System.Runtime.Serialization.DataContractSerializer.ReadObject%2A> method.  
-  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using the <xref:System.Runtime.Serialization.DataContractSerializer>, see [Serialization and Deserialization](~/docs/framework/wcf/feature-details/serialization-and-deserialization.md).  
-  
- You can set the type of a data contract serializer using the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) element in a client application configuration file.  
-  
+Use the <xref:System.Runtime.Serialization.DataContractSerializer> class to serialize and deserialize instances of a type into an XML stream or document. For example, you can create a type named `Person` with properties that contain essential data, such as a name and address. You can then create and manipulate an instance of the `Person` class and write all of its property values in an XML document for later retrieval, or in an XML stream for immediate transport. Most important, the <xref:System.Runtime.Serialization.DataContractSerializer> is used to serialize and deserialize data sent in [!INCLUDE[indigo1](~/includes/indigo1-md.md)] messages. Apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to classes, and the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to class members to specify properties and fields that are serialized.  
+ 
+[!INCLUDE[crlist](~/includes/crlist-md.md)] types that can be serialized, see [Types Supported by the Data Contract Serializer](~/docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
+ 
+To use the <xref:System.Runtime.Serialization.DataContractSerializer>, first create an instance of a class and an object appropriate to writing or reading the format; for example, an instance of the <xref:System.Xml.XmlDictionaryWriter>. Then call the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method to persist the data. To retrieve data, create an object appropriate to reading the data format (such as an <xref:System.Xml.XmlDictionaryReader> for an XML document) and call the <xref:System.Runtime.Serialization.DataContractSerializer.ReadObject%2A> method.  
+ 
+[!INCLUDE[crabout](~/includes/crabout-md.md)] using the <xref:System.Runtime.Serialization.DataContractSerializer>, see [Serialization and Deserialization](~/docs/framework/wcf/feature-details/serialization-and-deserialization.md).  
+ 
+You can set the type of a data contract serializer using the [\&lt;dataContractSerializer\&gt;](~/docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) element in a client application configuration file.  
+ 
 ## Preparing Classes for Serialization or Deserialization  
- The <xref:System.Runtime.Serialization.DataContractSerializer> is used in combination with the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> classes. To prepare a class for serialization, apply the <xref:System.Runtime.Serialization.DataContractAttribute> to the class.  For each member of the class that returns data that you want to serialize, apply the <xref:System.Runtime.Serialization.DataMemberAttribute>. You can serialize fields and properties, regardless of accessibility: private, protected, internal, protected internal, or public.  
-  
- For example, your schema specifies a `Customer` with an `ID` property, but you already have an existing application that uses a type named `Person` with a `Name` property. To create a type that conforms to the contract, first apply the <xref:System.Runtime.Serialization.DataContractAttribute> to the class.  Then apply the <xref:System.Runtime.Serialization.DataMemberAttribute> to every field or property that you want to serialize.  
-  
+The <xref:System.Runtime.Serialization.DataContractSerializer> is used in combination with the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> classes. To prepare a class for serialization, apply the <xref:System.Runtime.Serialization.DataContractAttribute> to the class.  For each member of the class that returns data that you want to serialize, apply the <xref:System.Runtime.Serialization.DataMemberAttribute>. You can serialize fields and properties, regardless of accessibility: private, protected, internal, protected internal, or public.  
+ 
+For example, your schema specifies a `Customer` with an `ID` property, but you already have an existing application that uses a type named `Person` with a `Name` property. To create a type that conforms to the contract, first apply the <xref:System.Runtime.Serialization.DataContractAttribute> to the class.  Then apply the <xref:System.Runtime.Serialization.DataMemberAttribute> to every field or property that you want to serialize.  
+ 
 > [!NOTE]
 >  You can apply the <xref:System.Runtime.Serialization.DataMemberAttribute> to both private and public members.  
-  
- The final format of the XML need not be text. Instead, the <xref:System.Runtime.Serialization.DataContractSerializer> writes the data as an XML infoset, which allows you to write the data to any format recognized by the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter>. It is recommended that you use the <xref:System.Xml.XmlDictionaryReader> and <xref:System.Xml.XmlDictionaryWriter> classes to read and write, because both are optimized to work with the <xref:System.Runtime.Serialization.DataContractSerializer>.  
-  
- If you are creating a class that has fields or properties that must be populated before the serialization or deserialization occurs, use callback attributes, as described in [Version-Tolerant Serialization Callbacks](~/docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md).  
-  
+ 
+The final format of the XML need not be text. Instead, the <xref:System.Runtime.Serialization.DataContractSerializer> writes the data as an XML infoset, which allows you to write the data to any format recognized by the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter>. It is recommended that you use the <xref:System.Xml.XmlDictionaryReader> and <xref:System.Xml.XmlDictionaryWriter> classes to read and write, because both are optimized to work with the <xref:System.Runtime.Serialization.DataContractSerializer>.  
+ 
+If you are creating a class that has fields or properties that must be populated before the serialization or deserialization occurs, use callback attributes, as described in [Version-Tolerant Serialization Callbacks](~/docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md).  
+ 
 ## Adding to the Collection of Known Types  
- When serializing or deserializing an object, it is required that the type is "known" to the <xref:System.Runtime.Serialization.DataContractSerializer>. Begin by creating an instance of a class that implements <xref:System.Collections.Generic.IEnumerable%601> (such as <xref:System.Collections.Generic.List%601>) and adding the known types to the collection. Then create an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> using one of the overloads that takes the <xref:System.Collections.Generic.IEnumerable%601> (for example, <xref:System.Runtime.Serialization.DataContractSerializer.%23ctor%28System.Type%2CSystem.Collections.Generic.IEnumerable%7BSystem.Type%7D%29>.  
-  
+When serializing or deserializing an object, it is required that the type is "known" to the <xref:System.Runtime.Serialization.DataContractSerializer>. Begin by creating an instance of a class that implements <xref:System.Collections.Generic.IEnumerable%601> (such as <xref:System.Collections.Generic.List%601>) and adding the known types to the collection. Then create an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> using one of the overloads that takes the <xref:System.Collections.Generic.IEnumerable%601> (for example, <xref:System.Runtime.Serialization.DataContractSerializer.%23ctor%28System.Type%2CSystem.Collections.Generic.IEnumerable%7BSystem.Type%7D%29>.  
+ 
 > [!NOTE]
 >  Unlike other primitive types, the <xref:System.DateTimeOffset> structure is not a known type by default, so it must be manually added to the list of known types (see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md)).  
-  
+ 
 ## Forward Compatibility  
- The <xref:System.Runtime.Serialization.DataContractSerializer> understands data contracts that have been designed to be compatible with future versions of the contract. Such types implement the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. The interface features the <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A> property that returns an <xref:System.Runtime.Serialization.ExtensionDataObject> object. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Forward-Compatible Data Contracts](~/docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
-  
+The <xref:System.Runtime.Serialization.DataContractSerializer> understands data contracts that have been designed to be compatible with future versions of the contract. Such types implement the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. The interface features the <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A> property that returns an <xref:System.Runtime.Serialization.ExtensionDataObject> object. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Forward-Compatible Data Contracts](~/docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+ 
 ## Running under Partial Trust  
- When instantiating the target object during deserialization, the <xref:System.Runtime.Serialization.DataContractSerializer> does not call the constructor of the target object. If you author a *[DataContract]* type that is accessible from partial trust (that is, it is public and in an assembly that has the `AllowPartiallyTrustedCallers` attribute applied) and that performs some security-related actions, you must be aware that the constructor is not called. In particular, the following techniques do not work:  
-  
+When instantiating the target object during deserialization, the <xref:System.Runtime.Serialization.DataContractSerializer> does not call the constructor of the target object. If you author a *[DataContract]* type that is accessible from partial trust (that is, it is public and in an assembly that has the `AllowPartiallyTrustedCallers` attribute applied) and that performs some security-related actions, you must be aware that the constructor is not called. In particular, the following techniques do not work:  
+ 
 -   If you try to restrict partial trust access by making the constructor internal or private, or by adding a `LinkDemand` to the constructor -- neither of these have any effect during deserialization under partial trust.  
-  
+ 
 -   If you code the class that assumes the constructor has run, the class may get into an invalid internal state that is exploitable.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example code shows a type named `Person` that is serialized by the <xref:System.Runtime.Serialization.DataContractSerializer>. The <xref:System.Runtime.Serialization.DataContractAttribute> attribute is applied to the class, and the <xref:System.Runtime.Serialization.DataMemberAttribute> is applied to members to instruct the <xref:System.Runtime.Serialization.DataContractSerializer> what to serialize.  
-  
- [!code-csharp[DataContractSerializer#0](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#0)]
- [!code-vb[DataContractSerializer#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#0)]  
-  
+The following example code shows a type named `Person` that is serialized by the <xref:System.Runtime.Serialization.DataContractSerializer>. The <xref:System.Runtime.Serialization.DataContractAttribute> attribute is applied to the class, and the <xref:System.Runtime.Serialization.DataMemberAttribute> is applied to members to instruct the <xref:System.Runtime.Serialization.DataContractSerializer> what to serialize.  
+ 
+[!code-csharp[DataContractSerializer#0](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#0)]
+[!code-vb[DataContractSerializer#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#0)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>Instances of this class are thread safe except when the instance is used with an implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> or <see cref="T:System.Runtime.Serialization.DataContractResolver" />.</threadsafe>
@@ -102,13 +102,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize.  
-  
- [!code-csharp[DataContractSerializer#8](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#8)]
- [!code-vb[DataContractSerializer#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#8)]  
-  
+The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize.  
+ 
+[!code-csharp[DataContractSerializer#8](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#8)]
+[!code-vb[DataContractSerializer#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,13 +141,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type, and a collection of known types that may be present in the object graph.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize and a collection of known types that can be used in the object graph.  
-  
- [!code-csharp[DataContractSerializer#9](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#9)]
- [!code-vb[DataContractSerializer#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#9)]  
-  
+The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize and a collection of known types that can be used in the object graph.  
+ 
+[!code-csharp[DataContractSerializer#9](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#9)]
+[!code-vb[DataContractSerializer#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -211,13 +211,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type using the supplied XML root element and namespace.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize as well as the XML name and namespace to read from or write to the XML document.  
-  
- [!code-csharp[DataContractSerializer#10](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#10)]
- [!code-vb[DataContractSerializer#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#10)]  
-  
+The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize as well as the XML name and namespace to read from or write to the XML document.  
+ 
+[!code-csharp[DataContractSerializer#10](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#10)]
+[!code-vb[DataContractSerializer#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,13 +252,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type using the XML root element and namespace specified through the parameters of type <see cref="T:System.Xml.XmlDictionaryString" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize as well as the XML name and namespace (as <xref:System.Xml.XmlDictionaryString> objects) to read from or write to the XML document.  
-  
- [!code-csharp[DataContractSerializer#11](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#11)]
- [!code-vb[DataContractSerializer#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#11)]  
-  
+The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize as well as the XML name and namespace (as <xref:System.Xml.XmlDictionaryString> objects) to read from or write to the XML document.  
+ 
+[!code-csharp[DataContractSerializer#11](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#11)]
+[!code-vb[DataContractSerializer#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,13 +295,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies the root XML element and namespace in two string parameters as well as a list of known types that may be present in the object graph.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize as well as the XML name and namespace to read from or write to the XML document. The code also creates an instance of a <xref:System.Collections.Generic.IEnumerable%601> to contain the known types used during serialization or deserialization.  
-  
- [!code-csharp[DataContractSerializer#12](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#12)]
- [!code-vb[DataContractSerializer#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#12)]  
-  
+The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize as well as the XML name and namespace to read from or write to the XML document. The code also creates an instance of a <xref:System.Collections.Generic.IEnumerable%601> to contain the known types used during serialization or deserialization.  
+ 
+[!code-csharp[DataContractSerializer#12](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#12)]
+[!code-vb[DataContractSerializer#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,13 +338,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies the root XML element and namespace in two <see cref="T:System.Xml.XmlDictionaryString" /> parameters as well as a list of known types that may be present in the object graph.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize as well as the XML name and namespace (as <xref:System.Xml.XmlDictionaryString> objects) to read from or write to the XML document. The code also creates an instance of a <xref:System.Collections.Generic.IEnumerable%601> to contain the known types used during serialization or deserialization.  
-  
- [!code-csharp[DataContractSerializer#13](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#13)]
- [!code-vb[DataContractSerializer#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#13)]  
-  
+The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize as well as the XML name and namespace (as <xref:System.Xml.XmlDictionaryString> objects) to read from or write to the XML document. The code also creates an instance of a <xref:System.Collections.Generic.IEnumerable%601> to contain the known types used during serialization or deserialization.  
+ 
+[!code-csharp[DataContractSerializer#13](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#13)]
+[!code-vb[DataContractSerializer#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -379,13 +379,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies a list of known types that may be present in the object graph, the maximum number of graph items to serialize, parameters to ignore unexpected data, whether to use non-standard XML constructs to preserve object reference data in the graph, and a surrogate for custom serialization.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize and an instance of a <xref:System.Collections.Generic.IEnumerable%601> to contain the known types used during serialization or deserialization. The code also sets the `ignoreExtensionDataObject` and `preserveObjectReferences` parameters to `true`, and specifies an implementation of the <xref:System.Runtime.Serialization.IDataContractSurrogate> interface to handle legacy types (types that do not have the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied). [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the <xref:System.Runtime.Serialization.IDataContractSurrogate> documentation.  
-  
- [!code-csharp[DataContractSerializer#14](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#14)]
- [!code-vb[DataContractSerializer#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#14)]  
-  
+The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize and an instance of a <xref:System.Collections.Generic.IEnumerable%601> to contain the known types used during serialization or deserialization. The code also sets the `ignoreExtensionDataObject` and `preserveObjectReferences` parameters to `true`, and specifies an implementation of the <xref:System.Runtime.Serialization.IDataContractSurrogate> interface to handle legacy types (types that do not have the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied). [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the <xref:System.Runtime.Serialization.IDataContractSurrogate> documentation.  
+ 
+[!code-csharp[DataContractSerializer#14](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#14)]
+[!code-vb[DataContractSerializer#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#14)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of items exceeds the maximum value.</exception>
@@ -423,12 +423,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies a list of known types that may be present in the object graph, the maximum number of graph items to serialize, parameters to ignore unexpected data, whether to use non-standard XML constructs to preserve object reference data in the graph, a surrogate for custom serialization, and an alternative for mapping <see langword="xsi:type" /> declarations at run time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!WARNING]
 >  This method is not available in Windows Store apps.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -467,13 +467,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies a list of known types that may be present in the object graph, the maximum number of graph items to serialize, parameters to ignore unexpected data, whether to use non-standard XML constructs to preserve object reference data in the graph, a surrogate for custom serialization, and the XML element and namespace that contain the content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize, the root XML element and namespace, and an instance of a <xref:System.Collections.Generic.IEnumerable%601> that contains the types used during deserialization. The code also sets the `ignoreExtensionDataObject` and `preserveObjectReferences` parameters to `true`, and specifies an implementation of the <xref:System.Runtime.Serialization.IDataContractSurrogate> interface to handle legacy types (types that do not have the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied). [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the <xref:System.Runtime.Serialization.IDataContractSurrogate> documentation.  
-  
- [!code-csharp[DataContractSerializer#15](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#15)]
- [!code-vb[DataContractSerializer#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#15)]  
-  
+The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize, the root XML element and namespace, and an instance of a <xref:System.Collections.Generic.IEnumerable%601> that contains the types used during deserialization. The code also sets the `ignoreExtensionDataObject` and `preserveObjectReferences` parameters to `true`, and specifies an implementation of the <xref:System.Runtime.Serialization.IDataContractSurrogate> interface to handle legacy types (types that do not have the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied). [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the <xref:System.Runtime.Serialization.IDataContractSurrogate> documentation.  
+ 
+[!code-csharp[DataContractSerializer#15](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#15)]
+[!code-vb[DataContractSerializer#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#15)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of items exceeds the maximum value.</exception>
@@ -513,13 +513,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies a list of known types that may be present in the object graph, the maximum number of graph items to serialize, parameters to ignore unexpected data, whether to use non-standard XML constructs to preserve object reference data in the graph, a surrogate for custom serialization, and parameters of <see cref="T:System.Xml.XmlDictionaryString" /> that specify the XML element and namespace that contain the content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize, the root XML element and namespace (as <xref:System.Xml.XmlDictionaryString> parameters), and an instance of a <xref:System.Collections.Generic.IEnumerable%601> that contains the types used during deserialization. The code also sets the `ignoreExtensionDataObject` and `preserveObjectReferences` parameters to `true`, and specifies an implementation of the <xref:System.Runtime.Serialization.IDataContractSurrogate> interface to handle legacy types (types that do not have the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied). [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the <xref:System.Runtime.Serialization.IDataContractSurrogate> documentation.  
-  
- [!code-csharp[DataContractSerializer#16](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#16)]
- [!code-vb[DataContractSerializer#16](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#16)]  
-  
+The following example creates an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> that specifies the type to serialize or deserialize, the root XML element and namespace (as <xref:System.Xml.XmlDictionaryString> parameters), and an instance of a <xref:System.Collections.Generic.IEnumerable%601> that contains the types used during deserialization. The code also sets the `ignoreExtensionDataObject` and `preserveObjectReferences` parameters to `true`, and specifies an implementation of the <xref:System.Runtime.Serialization.IDataContractSurrogate> interface to handle legacy types (types that do not have the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied). [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the <xref:System.Runtime.Serialization.IDataContractSurrogate> documentation.  
+ 
+[!code-csharp[DataContractSerializer#16](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#16)]
+[!code-vb[DataContractSerializer#16](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#16)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of items exceeds the maximum value.</exception>
@@ -621,10 +621,10 @@
         <value>An implementation of the <see cref="T:System.Runtime.Serialization.DataContractResolver" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.DataContractResolver> is set using a <xref:System.Runtime.Serialization.DataContractSerializer> constructor.  
-  
+The <xref:System.Runtime.Serialization.DataContractResolver> is set using a <xref:System.Runtime.Serialization.DataContractSerializer> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -647,10 +647,10 @@
         <value>An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.IDataContractSurrogate> can be used to customize how instances of a type are serialized and deserialized. For example, it can be used to enable the serialization of legacy types that are not serializable, that is, types to which the <xref:System.Runtime.Serialization.DataContractAttribute> attribute has not been applied.  
-  
+The <xref:System.Runtime.Serialization.IDataContractSurrogate> can be used to customize how instances of a type are serialized and deserialized. For example, it can be used to enable the serialization of legacy types that are not serializable, that is, types to which the <xref:System.Runtime.Serialization.DataContractAttribute> attribute has not been applied.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -682,10 +682,10 @@
           <see langword="true" /> to omit the extension data; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject%2A> property is used when the class to which a <xref:System.Runtime.Serialization.DataContractAttribute> has been applied also implements the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. In this case, the data added in a future version of the contract is ignored on read and write. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Forward-Compatible Data Contracts](~/docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
-  
+The <xref:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject%2A> property is used when the class to which a <xref:System.Runtime.Serialization.DataContractAttribute> has been applied also implements the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. In this case, the data added in a future version of the contract is ignored on read and write. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Forward-Compatible Data Contracts](~/docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -721,18 +721,18 @@
           <see langword="true" /> if the reader is at the start element of the stream to read; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.DataContractSerializer.IsStartObject%2A> determines whether it can read an object by checking that it is positioned on an XML element. It also examines the name and namespace of the XML element that the reader is positioned at and compares the values to the expected name and namespace. The expected name and namespace can be set with the following: the data contract name and namespace of the type passed into the constructor, or the `rootName` and `rootNamespace` values passed into the constructor (if present).  
+The <xref:System.Runtime.Serialization.DataContractSerializer.IsStartObject%2A> determines whether it can read an object by checking that it is positioned on an XML element. It also examines the name and namespace of the XML element that the reader is positioned at and compares the values to the expected name and namespace. The expected name and namespace can be set with the following: the data contract name and namespace of the type passed into the constructor, or the `rootName` and `rootNamespace` values passed into the constructor (if present).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Runtime.Serialization.DataContractSerializer.IsStartObject%2A> property to determine whether the start of the data has been found.  
-  
- [!code-csharp[DataContractSerializer#6](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#6)]
- [!code-vb[DataContractSerializer#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#6)]  
-  
+The following example uses the <xref:System.Runtime.Serialization.DataContractSerializer.IsStartObject%2A> property to determine whether the start of the data has been found.  
+ 
+[!code-csharp[DataContractSerializer#6](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#6)]
+[!code-vb[DataContractSerializer#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -795,10 +795,10 @@
         <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains the expected types passed in as known types to the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> constructor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.DataContractSerializer.KnownTypes%2A> property provides the set of known types that are used for serialization and deserialization. For example, if an instance of the <xref:System.Collections.Hashtable> class contains instances of a `Person` class, add the `Person` type to an instance of the <xref:System.Collections.Generic.List%601> class and use the instance to construct an instance of the <xref:System.Runtime.Serialization.DataContractSerializer>. If you know of other types to add to the <xref:System.Collections.Hashtable>, then add those types to the collection.  
-  
+The <xref:System.Runtime.Serialization.DataContractSerializer.KnownTypes%2A> property provides the set of known types that are used for serialization and deserialization. For example, if an instance of the <xref:System.Collections.Hashtable> class contains instances of a `Person` class, add the `Person` type to an instance of the <xref:System.Collections.Generic.List%601> class and use the instance to construct an instance of the <xref:System.Runtime.Serialization.DataContractSerializer>. If you know of other types to add to the <xref:System.Collections.Hashtable>, then add those types to the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -829,22 +829,22 @@
         <value>The maximum number of items to serialize or deserialize. The default is <see cref="F:System.Int32.MaxValue" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be set in configuration or imperatively in code. To set it in configuration, add a custom behavior to the behaviors section and add the following setting.  
-  
+This property can be set in configuration or imperatively in code. To set it in configuration, add a custom behavior to the behaviors section and add the following setting.  
+ 
 ```  
 <behaviors>    <behavior name="MyServiceBehavior">        <dataContractSerializer maxItemsInObjectGraph="3" />    </behavior></behaviors>  
 ```  
-  
- To set this property imperatively in code find the operation description of the service, then get the operation behavior, finally set the property as shown in the following code.  
-  
+ 
+To set this property imperatively in code find the operation description of the service, then get the operation behavior, finally set the property as shown in the following code.  
+ 
 ```  
 OperationDescription operation = host.Description.Endpoints[0].Contract.Operations.Find("MyOperationName");operation.Behaviors.Find<DataContractSerializerOperationBehavior>().MaxItemsInObjectGraph = 3;  
 ```  
-  
- The <xref:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph%2A> property specifies the maximum number of objects that the serializer serializes or deserializes in a single <xref:System.Runtime.Serialization.DataContractSerializer.ReadObject%2A> method call. (The method always reads one root object, but this object may have other objects in its data members. Those objects may have other objects, and so on.) The default is <xref:System.Int32.MaxValue>. Note that when serializing or deserializing arrays, every array entry counts as a separate object. Also, note that some objects may have a large memory representation and so this quota alone may not be sufficient to prevent Denial of Service attacks. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md). If you need to increase this quota beyond its default value, it is important to do so both on the sending (serializing) and receiving (deserializing) sides. It applies both when reading and writing data.  
-  
+ 
+The <xref:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph%2A> property specifies the maximum number of objects that the serializer serializes or deserializes in a single <xref:System.Runtime.Serialization.DataContractSerializer.ReadObject%2A> method call. (The method always reads one root object, but this object may have other objects in its data members. Those objects may have other objects, and so on.) The default is <xref:System.Int32.MaxValue>. Note that when serializing or deserializing arrays, every array entry counts as a separate object. Also, note that some objects may have a large memory representation and so this quota alone may not be sufficient to prevent Denial of Service attacks. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md). If you need to increase this quota beyond its default value, it is important to do so both on the sending (serializing) and receiving (deserializing) sides. It applies both when reading and writing data.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of items exceeds the maximum value.</exception>
@@ -942,13 +942,13 @@ OperationDescription operation = host.Description.Endpoints[0].Contract.Operatio
         <returns>The deserialized object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example reads an XML document and deserializes an instance of an object.  
-  
- [!code-csharp[DataContractSerializer#2](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#2)]
- [!code-vb[DataContractSerializer#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#2)]  
-  
+The following example reads an XML document and deserializes an instance of an object.  
+ 
+[!code-csharp[DataContractSerializer#2](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#2)]
+[!code-vb[DataContractSerializer#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The <paramref name="verifyObjectName" /> parameter is set to <see langword="true" />, and the element name and namespace do not correspond to the values set in the constructor.</exception>
@@ -1078,13 +1078,13 @@ OperationDescription operation = host.Description.Endpoints[0].Contract.Operatio
         <summary>Writes the closing XML element using an <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an object to serialize, an instance of the <xref:System.Runtime.Serialization.DataContractSerializer>, and an instance of the <xref:System.Xml.XmlDictionaryWriter> class.  The example uses the <xref:System.Runtime.Serialization.DataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A> methods to write the object data into the XML document. Making these calls is equivalent to making a single call of the <xref:System.Runtime.Serialization.DataContractSerializer.WriteObject%2A> method. For example, a user might make the calls separately to insert additional XML attributes into the XML after calling the <xref:System.Runtime.Serialization.DataContractSerializer.WriteStartObject%2A> method.  
-  
- [!code-csharp[DataContractSerializer#7](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#7)]
- [!code-vb[DataContractSerializer#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#7)]  
-  
+The following example creates an object to serialize, an instance of the <xref:System.Runtime.Serialization.DataContractSerializer>, and an instance of the <xref:System.Xml.XmlDictionaryWriter> class.  The example uses the <xref:System.Runtime.Serialization.DataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A> methods to write the object data into the XML document. Making these calls is equivalent to making a single call of the <xref:System.Runtime.Serialization.DataContractSerializer.WriteObject%2A> method. For example, a user might make the calls separately to insert additional XML attributes into the XML after calling the <xref:System.Runtime.Serialization.DataContractSerializer.WriteStartObject%2A> method.  
+ 
+[!code-csharp[DataContractSerializer#7](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#7)]
+[!code-vb[DataContractSerializer#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
@@ -1218,13 +1218,13 @@ OperationDescription operation = host.Description.Endpoints[0].Contract.Operatio
         <summary>Writes the XML content using an <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an object to serialize, an instance of the <xref:System.Runtime.Serialization.DataContractSerializer>, and an instance of the <xref:System.Xml.XmlDictionaryWriter> class.  The example uses the <xref:System.Runtime.Serialization.DataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A> methods to write the object data into the XML document.  
-  
- [!code-csharp[DataContractSerializer#7](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#7)]
- [!code-vb[DataContractSerializer#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#7)]  
-  
+The following example creates an object to serialize, an instance of the <xref:System.Runtime.Serialization.DataContractSerializer>, and an instance of the <xref:System.Xml.XmlDictionaryWriter> class.  The example uses the <xref:System.Runtime.Serialization.DataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A> methods to write the object data into the XML document.  
+ 
+[!code-csharp[DataContractSerializer#7](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#7)]
+[!code-vb[DataContractSerializer#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
@@ -1296,13 +1296,13 @@ OperationDescription operation = host.Description.Endpoints[0].Contract.Operatio
         <summary>Writes the opening XML element using an <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an object to serialize, an instance of the <xref:System.Runtime.Serialization.DataContractSerializer>, and an instance of the <xref:System.Xml.XmlDictionaryWriter> class.  The example uses the <xref:System.Runtime.Serialization.DataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A> methods to write the object data into the XML document.  
-  
- [!code-csharp[DataContractSerializer#7](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#7)]
- [!code-vb[DataContractSerializer#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#7)]  
-  
+The following example creates an object to serialize, an instance of the <xref:System.Runtime.Serialization.DataContractSerializer>, and an instance of the <xref:System.Xml.XmlDictionaryWriter> class.  The example uses the <xref:System.Runtime.Serialization.DataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A> methods to write the object data into the XML document.  
+ 
+[!code-csharp[DataContractSerializer#7](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializer/cs/source.cs#7)]
+[!code-vb[DataContractSerializer#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializer/vb/source.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

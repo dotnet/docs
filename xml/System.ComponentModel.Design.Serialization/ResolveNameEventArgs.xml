@@ -19,19 +19,19 @@
     <summary>Provides data for the <see cref="E:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ComponentModel.Design.Serialization.ResolveNameEventArgs> is used by the serialization process to match a name to an object instance.  
+<xref:System.ComponentModel.Design.Serialization.ResolveNameEventArgs> is used by the serialization process to match a name to an object instance.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example method returns a <xref:System.ComponentModel.Design.Serialization.ResolveNameEventArgs> that indicates the name of an object that could not be resolved by a serialization process.  
-  
- [!code-cpp[MoreEventArgsExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MoreEventArgsExamples/CPP/class1.cpp#1)]
- [!code-csharp[MoreEventArgsExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MoreEventArgsExamples/CS/class1.cs#1)]
- [!code-vb[MoreEventArgsExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MoreEventArgsExamples/VB/class1.vb#1)]  
-  
+The following example method returns a <xref:System.ComponentModel.Design.Serialization.ResolveNameEventArgs> that indicates the name of an object that could not be resolved by a serialization process.  
+ 
+[!code-cpp[MoreEventArgsExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MoreEventArgsExamples/CPP/class1.cpp#1)]
+[!code-csharp[MoreEventArgsExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MoreEventArgsExamples/CS/class1.cs#1)]
+[!code-vb[MoreEventArgsExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MoreEventArgsExamples/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

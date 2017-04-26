@@ -13,12 +13,12 @@
     <summary>Specifies the type of change that occurred on the <see cref="T:System.IO.Ports.SerialPort" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used with the <xref:System.IO.Ports.SerialPort.PinChanged> event.  
-  
- A serial port pin changes state when it is asserted or unasserted.  
-  
+This enumeration is used with the <xref:System.IO.Ports.SerialPort.PinChanged> event.  
+ 
+A serial port pin changes state when it is asserted or unasserted.  
+ 
  ]]></format>
     </remarks>
   </Docs>

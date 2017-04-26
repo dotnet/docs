@@ -23,12 +23,12 @@
     <summary>Identifies the operating system, or platform, supported by an assembly.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Environment.OSVersion%2A?displayProperty=fullName> and <xref:System.OperatingSystem.Platform%2A?displayProperty=fullName> properties to obtain the <xref:System.PlatformID> enumeration for the currently executing operating system or development platform. Use the <xref:System.PlatformID> enumeration to help determine whether the current operating system or development platform supports your application.  
-  
- You can use the underlying integer value of each <xref:System.PlatformID> enumeration member, as shown in the table, as the `PlatformId` argument for the [SignTool.exe (Sign Tool)](~/docs/framework/tools/signtool-exe.md) utility.  
-  
+Use the <xref:System.Environment.OSVersion%2A?displayProperty=fullName> and <xref:System.OperatingSystem.Platform%2A?displayProperty=fullName> properties to obtain the <xref:System.PlatformID> enumeration for the currently executing operating system or development platform. Use the <xref:System.PlatformID> enumeration to help determine whether the current operating system or development platform supports your application.  
+ 
+You can use the underlying integer value of each <xref:System.PlatformID> enumeration member, as shown in the table, as the `PlatformId` argument for the [SignTool.exe (Sign Tool)](~/docs/framework/tools/signtool-exe.md) utility.  
+ 
 |Member|Underlying value|  
 |------------|----------------------|  
 |Win32S|0|  
@@ -38,16 +38,16 @@
 |Unix|4|  
 |Xbox|5|  
 |MacOSX|6|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates using the <xref:System.PlatformID> class to identify the currently executing operating system.  
-  
- [!code-cpp[PlatformID.class#1](~/samples/snippets/cpp/VS_Snippets_CLR/platformID.class/CPP/pid.cpp#1)]
- [!code-csharp[PlatformID.class#1](~/samples/snippets/csharp/VS_Snippets_CLR/platformID.class/CS/pid.cs#1)]
- [!code-vb[PlatformID.class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/platformID.class/VB/pid.vb#1)]  
-  
+The following example demonstrates using the <xref:System.PlatformID> class to identify the currently executing operating system.  
+ 
+[!code-cpp[PlatformID.class#1](~/samples/snippets/cpp/VS_Snippets_CLR/platformID.class/CPP/pid.cpp#1)]
+[!code-csharp[PlatformID.class#1](~/samples/snippets/csharp/VS_Snippets_CLR/platformID.class/CS/pid.cs#1)]
+[!code-vb[PlatformID.class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/platformID.class/VB/pid.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

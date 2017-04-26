@@ -15,10 +15,10 @@
     <summary>Represents the parameters for supporting security tokens required by the security binding element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is a collection of token properties and methods, and is used in creating security binding elements and tokens. Supporting tokens specify encryption and signing requirements.  
-  
+This class is a collection of token properties and methods, and is used in creating security binding elements and tokens. Supporting tokens specify encryption and signing requirements.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,16 +38,16 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SupportingTokenParameters" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new instance property values are set to their defaults:  
-  
+The new instance property values are set to their defaults:  
+ 
 -   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode>.  
-  
+ 
 -   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.ReferenceStyle%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle>.  
-  
+ 
 -   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.RequireDerivedKeys%2A> is set to `true`.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,10 +109,10 @@
         <value>A collection of <see cref="T:System.ServiceModel.Security.Tokens.SecurityTokenParameters" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Endorsing tokens sign the message signature.  
-  
+Endorsing tokens sign the message signature.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
         <summary>Sets a value that indicates whether all endorsing or signed endorsing token parameters require derived keys.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters> in <xref:System.ServiceModel.Security.Tokens.SupportingTokenParameters.Endorsing%2A> or in <xref:System.ServiceModel.Security.Tokens.SupportingTokenParameters.SignedEndorsing%2A> has its <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.RequireDerivedKeys%2A> property set to `requireDerivedKeys`.  
-  
+Each <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters> in <xref:System.ServiceModel.Security.Tokens.SupportingTokenParameters.Endorsing%2A> or in <xref:System.ServiceModel.Security.Tokens.SupportingTokenParameters.SignedEndorsing%2A> has its <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.RequireDerivedKeys%2A> property set to `requireDerivedKeys`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,10 +164,10 @@
         <value>A collection of <see cref="T:System.ServiceModel.Security.Tokens.SecurityTokenParameters" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Signed tokens are included in the message signature.  
-  
+Signed tokens are included in the message signature.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,10 +190,10 @@
         <value>A collection of <see cref="T:System.ServiceModel.Security.Tokens.SecurityTokenParameters" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Signed tokens are included in the message signature and are encrypted.  
-  
+Signed tokens are included in the message signature and are encrypted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -216,10 +216,10 @@
         <value>A collection of <see cref="T:System.ServiceModel.Security.Tokens.SecurityTokenParameters" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Signed endorsing tokens sign the message signature token and are themselves signed by the message signature.  
-  
+Signed endorsing tokens sign the message signature token and are themselves signed by the message signature.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -243,10 +243,10 @@
         <returns>A text representation of this instance of this class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The output string displays the result of performing the `ToString()` method on each of the tokens in <xref:System.ServiceModel.Security.Tokens.SupportingTokenParameters.Endorsing%2A>, <xref:System.ServiceModel.Security.Tokens.SupportingTokenParameters.Signed%2A>, <xref:System.ServiceModel.Security.Tokens.SupportingTokenParameters.SignedEncrypted%2A>, and <xref:System.ServiceModel.Security.Tokens.SupportingTokenParameters.SignedEndorsing%2A>.  
-  
+The output string displays the result of performing the `ToString()` method on each of the tokens in <xref:System.ServiceModel.Security.Tokens.SupportingTokenParameters.Endorsing%2A>, <xref:System.ServiceModel.Security.Tokens.SupportingTokenParameters.Signed%2A>, <xref:System.ServiceModel.Security.Tokens.SupportingTokenParameters.SignedEncrypted%2A>, and <xref:System.ServiceModel.Security.Tokens.SupportingTokenParameters.SignedEndorsing%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

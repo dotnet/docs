@@ -14,12 +14,12 @@
     <summary>Scales an object in the [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] x-y coordinate system.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use a <xref:System.Windows.Media.ScaleTransform> to stretch or shrink an object horizontally or vertically.  The <xref:System.Windows.Media.ScaleTransform.ScaleX%2A> property specifies by how much to stretch or shrink an object along the x-axis, and the <xref:System.Windows.Media.ScaleTransform.ScaleY%2A> property specifies by how much to stretch or shrink an object along the y-axis. Scale operations are centered on the point specified by the <xref:System.Windows.Media.ScaleTransform.CenterX%2A> and <xref:System.Windows.Media.ScaleTransform.CenterY%2A> properties.  
-  
- **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.ScaleTransform> class provides several special features: <xref:System.Windows.Media.ScaleTransform> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
-  
+Use a <xref:System.Windows.Media.ScaleTransform> to stretch or shrink an object horizontally or vertically.  The <xref:System.Windows.Media.ScaleTransform.ScaleX%2A> property specifies by how much to stretch or shrink an object along the x-axis, and the <xref:System.Windows.Media.ScaleTransform.ScaleY%2A> property specifies by how much to stretch or shrink an object along the y-axis. Scale operations are centered on the point specified by the <xref:System.Windows.Media.ScaleTransform.CenterX%2A> and <xref:System.Windows.Media.ScaleTransform.CenterY%2A> properties.  
+ 
+**Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.ScaleTransform> class provides several special features: <xref:System.Windows.Media.ScaleTransform> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -100,17 +100,17 @@
         <value>The x-coordinate of the center point of this <see cref="T:System.Windows.Media.ScaleTransform" />. The default is <c>0</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CenterX"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.ScaleTransform>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,17 +149,17 @@
         <value>The y-coordinate of the center point of this <see cref="T:System.Windows.Media.ScaleTransform" />. The default is <c>0</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_CenterY"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.ScaleTransform>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,14 +199,14 @@
         <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object returns <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- When this method copies dependency properties, it copies resource references and data bindings although they might no longer resolve. It does not copy animations or their current values.  
-  
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
+Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+When this method copies dependency properties, it copies resource references and data bindings although they might no longer resolve. It does not copy animations or their current values.  
+ 
+For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,12 +229,12 @@
         <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object is <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
-  
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
-  
+Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+ 
+For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,22 +275,22 @@
         <value>The scale factor along the x-axis. The default is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Values between 0 and 1 decrease the width of the scaled object; values greater than 1 increase the width of the scaled object. A value of 1 indicates that the object is not scaled in the x-direction.  
-  
- Negative values flip the scaled object horizontally. Values between 0 and -1 flip the scale object and decrease its width. Values less than -1 flip the object and increase its width. A value of -1 flips the scaled object but does not change its horizontal size.  
-  
- For more information and examples, see [How to: Scale an Element](~/docs/framework/wpf/graphics-multimedia/how-to-scale-an-element.md) and [How to: Flip a UIElement Horizontally or Vertically](~/docs/framework/wpf/advanced/how-to-flip-a-uielement-horizontally-or-vertically.md).  
-  
+Values between 0 and 1 decrease the width of the scaled object; values greater than 1 increase the width of the scaled object. A value of 1 indicates that the object is not scaled in the x-direction.  
+ 
+Negative values flip the scaled object horizontally. Values between 0 and -1 flip the scale object and decrease its width. Values less than -1 flip the object and increase its width. A value of -1 flips the scaled object but does not change its horizontal size.  
+ 
+For more information and examples, see [How to: Scale an Element](~/docs/framework/wpf/graphics-multimedia/how-to-scale-an-element.md) and [How to: Flip a UIElement Horizontally or Vertically](~/docs/framework/wpf/advanced/how-to-flip-a-uielement-horizontally-or-vertically.md).  
+ 
 <a name="dependencyPropertyInfo_ScaleX"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.ScaleTransform.ScaleXProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,22 +329,22 @@
         <value>The scale factor along the y-axis. The default is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Values between 0 and 1 decrease the height of the scaled object; values greater than 1 increase the height of the scaled object. A value of 1 indicates that the object is not scaled in the y-direction.  
-  
- Negative values flip the scaled object vertically. Values between 0 and -1 flip the scale object and decrease its height. Values less than -1 flip the object and increase its height. A value of -1 flips the scaled object but does not change its vertical size.  
-  
- For more information and for examples, see [How to: Scale an Element](~/docs/framework/wpf/graphics-multimedia/how-to-scale-an-element.md) and [How to: Flip a UIElement Horizontally or Vertically](~/docs/framework/wpf/advanced/how-to-flip-a-uielement-horizontally-or-vertically.md)).  
-  
+Values between 0 and 1 decrease the height of the scaled object; values greater than 1 increase the height of the scaled object. A value of 1 indicates that the object is not scaled in the y-direction.  
+ 
+Negative values flip the scaled object vertically. Values between 0 and -1 flip the scale object and decrease its height. Values less than -1 flip the object and increase its height. A value of -1 flips the scaled object but does not change its vertical size.  
+ 
+For more information and for examples, see [How to: Scale an Element](~/docs/framework/wpf/graphics-multimedia/how-to-scale-an-element.md) and [How to: Flip a UIElement Horizontally or Vertically](~/docs/framework/wpf/advanced/how-to-flip-a-uielement-horizontally-or-vertically.md)).  
+ 
 <a name="dependencyPropertyInfo_ScaleY"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Media.ScaleTransform.ScaleYProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

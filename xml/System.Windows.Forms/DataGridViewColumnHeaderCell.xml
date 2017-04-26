@@ -32,10 +32,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewColumnHeaderCell" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A> property to <xref:System.Windows.Forms.SortOrder>.  
-  
+This constructor initializes the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A> property to <xref:System.Windows.Forms.SortOrder>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,13 +77,13 @@
         <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the <see cref="T:System.Windows.Forms.DataGridViewColumnHeaderCell" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you do not explicitly call the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.DataGridViewCell.AccessibilityObject%2A> property is referenced.  
-  
+If you do not explicitly call the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.DataGridViewCell.AccessibilityObject%2A> property is referenced.  
+ 
 > [!NOTE]
 >  To get or set <xref:System.Windows.Forms.DataGridViewCell.AccessibilityObject%2A>, you must add a reference to the `Accessibility` assembly installed with the .NET Framework.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,16 +123,16 @@
         <returns>A <see cref="T:System.Object" /> that represents the value of the cell to copy to the <see cref="T:System.Windows.Forms.Clipboard" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Depending on the value of the <xref:System.Windows.Forms.DataGridView.ClipboardCopyMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control, this method is called by the control's <xref:System.Windows.Forms.DataGridView.GetClipboardContent%2A> method to retrieve a clipboard-formatted value that represents the cell.  
-  
- The position-related parameters of this method indicate where this cell is located in the table of data representing the region defined by the selected cells in the <xref:System.Windows.Forms.DataGridView> control. Depending on the cell's position, formatting information may be returned by this method in addition to the cell value. For example, the HTML format for a cell in the first column of a row will include the tag that indicates the beginning of a row.  
-  
- The supported clipboard formats include <xref:System.Windows.Forms.DataFormats.Text?displayProperty=fullName>, <xref:System.Windows.Forms.DataFormats.UnicodeText?displayProperty=fullName>, <xref:System.Windows.Forms.DataFormats.Html?displayProperty=fullName>, and <xref:System.Windows.Forms.DataFormats.CommaSeparatedValue?displayProperty=fullName>.  
-  
- For more information, see the <xref:System.Windows.Forms.Clipboard> class.  
-  
+Depending on the value of the <xref:System.Windows.Forms.DataGridView.ClipboardCopyMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control, this method is called by the control's <xref:System.Windows.Forms.DataGridView.GetClipboardContent%2A> method to retrieve a clipboard-formatted value that represents the cell.  
+ 
+The position-related parameters of this method indicate where this cell is located in the table of data representing the region defined by the selected cells in the <xref:System.Windows.Forms.DataGridView> control. Depending on the cell's position, formatting information may be returned by this method in addition to the cell value. For example, the HTML format for a cell in the first column of a row will include the tag that indicates the beginning of a row.  
+ 
+The supported clipboard formats include <xref:System.Windows.Forms.DataFormats.Text?displayProperty=fullName>, <xref:System.Windows.Forms.DataFormats.UnicodeText?displayProperty=fullName>, <xref:System.Windows.Forms.DataFormats.Html?displayProperty=fullName>, and <xref:System.Windows.Forms.DataFormats.CommaSeparatedValue?displayProperty=fullName>.  
+ 
+For more information, see the <xref:System.Windows.Forms.Clipboard> class.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -164,10 +164,10 @@
         <returns>The <see cref="T:System.Drawing.Rectangle" /> that bounds the cell's contents.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The size of the cell's contents is computed dynamically when this method is called. This method is called internally when the <xref:System.Windows.Forms.DataGridViewCell.ContentBounds%2A> property is read.  
-  
+The size of the cell's contents is computed dynamically when this method is called. This method is called internally when the <xref:System.Windows.Forms.DataGridViewCell.ContentBounds%2A> property is read.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -224,10 +224,10 @@
         <returns>A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> that includes the style settings of the cell inherited from the cell's parent row, column, and <see cref="T:System.Windows.Forms.DataGridView" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a <xref:System.Windows.Forms.DataGridViewCellStyle> that inherits its settings from the <xref:System.Windows.Forms.DataGridViewCellStyle> objects returned by the <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A> and <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> properties of the <xref:System.Windows.Forms.DataGridView>. For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
-  
+This method returns a <xref:System.Windows.Forms.DataGridViewCellStyle> that inherits its settings from the <xref:System.Windows.Forms.DataGridViewCellStyle> objects returned by the <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A> and <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> properties of the <xref:System.Windows.Forms.DataGridView>. For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -378,18 +378,18 @@
         <value>A <see cref="T:System.Windows.Forms.SortOrder" /> value representing the current glyph. The default is <see cref="F:System.Windows.Forms.SortOrder.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is set automatically for columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=fullName>. You must set this property yourself when sorting by columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=fullName>.  
+This property is set automatically for columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=fullName>. You must set this property yourself when sorting by columns with the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property set to <xref:System.Windows.Forms.DataGridViewColumnSortMode?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code demonstrates how to use the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A> property in a programmatic sort.  
-  
- [!code-csharp[System.Windows.Forms.DataGridViewProgrammaticSort#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewProgrammaticSort/CS/form1.cs#10)]
- [!code-vb[System.Windows.Forms.DataGridViewProgrammaticSort#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewProgrammaticSort/VB/form1.vb#10)]  
-  
+The following code demonstrates how to use the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A> property in a programmatic sort.  
+ 
+[!code-csharp[System.Windows.Forms.DataGridViewProgrammaticSort#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewProgrammaticSort/CS/form1.cs#10)]
+[!code-vb[System.Windows.Forms.DataGridViewProgrammaticSort#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewProgrammaticSort/VB/form1.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.SortOrder" /> value.</exception>

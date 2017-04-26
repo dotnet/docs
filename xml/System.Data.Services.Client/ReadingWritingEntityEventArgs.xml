@@ -15,10 +15,10 @@
     <summary>Gives access to the entity and an <see langword="XLinq" /> object that represents an Atom entry. <see cref="T:System.Data.Services.Client.ReadingWritingEntityEventArgs" /> is used with the <see cref="E:System.Data.Services.Client.DataServiceContext.ReadingEntity" /> and <see cref="E:System.Data.Services.Client.DataServiceContext.WritingEntity" /> events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Services.Client.ReadingWritingEntityEventArgs> are used with the <xref:System.Data.Services.Client.DataServiceContext.ReadingEntity> and <xref:System.Data.Services.Client.DataServiceContext.WritingEntity> events.  
-  
+<xref:System.Data.Services.Client.ReadingWritingEntityEventArgs> are used with the <xref:System.Data.Services.Client.DataServiceContext.ReadingEntity> and <xref:System.Data.Services.Client.DataServiceContext.WritingEntity> events.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         </value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Atom entry or feed data is read from a GET request or a POST request about to be sent to the data service.  
-  
+The Atom entry or feed data is read from a GET request or a POST request about to be sent to the data service.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -75,10 +75,10 @@
           <see cref="T:System.Object" /> representation of the <see cref="P:System.Data.Services.Client.ReadingWritingEntityEventArgs.Data" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This object is populated for both incoming and outgoing entities.  
-  
+This object is populated for both incoming and outgoing entities.  
+ 
  ]]></format>
         </remarks>
       </Docs>

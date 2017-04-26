@@ -19,25 +19,25 @@
     <summary>Contains information about a speech synthesis voice installed in Windows.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this class to get information about an installed voice, including its culture, name, gender, age, and whether it is enabled.  
-  
- To perform text-to-speech using the language specified in the <xref:System.Speech.Synthesis.PromptBuilder.Culture%2A> property, a speech synthesis engine that supports that language-country code must be installed. The speech synthesis engines that shipped with Microsoft Windows 7 work with the following language-country codes:  
-  
+Use this class to get information about an installed voice, including its culture, name, gender, age, and whether it is enabled.  
+ 
+To perform text-to-speech using the language specified in the <xref:System.Speech.Synthesis.PromptBuilder.Culture%2A> property, a speech synthesis engine that supports that language-country code must be installed. The speech synthesis engines that shipped with Microsoft Windows 7 work with the following language-country codes:  
+ 
 -   en-US. English (United States)  
-  
+ 
 -   zh-CN. Chinese (China)  
-  
+ 
 -   zh-TW. Chinese (Taiwan)  
+ 
+Two-letter language codes such as "en" are also permitted.  
+ 
   
- Two-letter language codes such as "en" are also permitted.  
-  
-   
-  
+ 
 ## Examples  
- The following example is part of a console application that initializes a <xref:System.Speech.Synthesis.SpeechSynthesizer> object and outputs to the console a list of the installed voices (engines for speech synthesis) and demonstrates the information that is available for each voice.  
-  
+The following example is part of a console application that initializes a <xref:System.Speech.Synthesis.SpeechSynthesizer> object and outputs to the console a list of the installed voices (engines for speech synthesis) and demonstrates the information that is available for each voice.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Synthesis;  
@@ -99,7 +99,7 @@ namespace SampleSynthesis
 }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -121,10 +121,10 @@ namespace SampleSynthesis
         <value>Returns a <see langword="bool" /> that represents the enabled state of the voice.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `true` by default. When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `false`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `false`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
-  
+The value of the <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `true` by default. When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `false`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `false`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,10 +150,10 @@ namespace SampleSynthesis
         <returns>Returns <see langword="true" /> if the current instance of <see cref="T:System.Speech.Synthesis.InstalledVoice" /> and that obtained from the <paramref name="obj" /> argument are equal, otherwise returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method returns false if the <xref:System.Object> provided by the `obj` argument cannot be cast to <xref:System.Speech.Synthesis.InstalledVoice>.  
-  
+The method returns false if the <xref:System.Object> provided by the `obj` argument cannot be cast to <xref:System.Speech.Synthesis.InstalledVoice>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

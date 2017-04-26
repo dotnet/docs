@@ -18,12 +18,12 @@
     <summary>Processes XAML markup from XML files by using an <see cref="T:System.Xml.XmlReader" /> intermediary, and produces a XAML node stream.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you construct a <xref:System.Xaml.XamlXmlReader>, an <xref:System.Xml.XmlReader> is required. The purpose of this design is to use established [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] APIs for XML processing in order to handle stream input, to obtain a stream from a file, and so on.  
-  
- <xref:System.Xml.XmlReader> is the first component of the standard load path for XAML operations and is incorporated by <xref:System.Xaml.XamlServices.Load%2A?displayProperty=fullName> as well as by several existing framework XAML implementations for loading XAML.  
-  
+When you construct a <xref:System.Xaml.XamlXmlReader>, an <xref:System.Xml.XmlReader> is required. The purpose of this design is to use established [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] APIs for XML processing in order to handle stream input, to obtain a stream from a file, and so on.  
+ 
+<xref:System.Xml.XmlReader> is the first component of the standard load path for XAML operations and is incorporated by <xref:System.Xaml.XamlServices.Load%2A?displayProperty=fullName> as well as by several existing framework XAML implementations for loading XAML.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -105,10 +105,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlReader" /> class using the provided <see cref="T:System.Xml.XmlReader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Initializing with this constructor also sets a default XAML schema context and default reader settings.  
-  
+Initializing with this constructor also sets a default XAML schema context and default reader settings.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -156,10 +156,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlReader" /> class, based on a stream, with XAML-specific settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Initializing with this constructor attempts to merge some of the settings from the default reader together with the XAML-specific settings in `settings`. For more information, see <xref:System.Xaml.XamlXmlReaderSettings>.  
-  
+Initializing with this constructor attempts to merge some of the settings from the default reader together with the XAML-specific settings in `settings`. For more information, see <xref:System.Xaml.XamlXmlReaderSettings>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -211,10 +211,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlReader" /> class, based on a <see cref="T:System.IO.TextReader" />, and using XAML-specific settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Initializing with this constructor attempts to merge some of the settings from the default reader together with the XAML-specific settings in `settings`. For more information, see <xref:System.Xaml.XamlXmlReaderSettings>.  
-  
+Initializing with this constructor attempts to merge some of the settings from the default reader together with the XAML-specific settings in `settings`. For more information, see <xref:System.Xaml.XamlXmlReaderSettings>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -284,10 +284,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlReader" /> class using the provided <see cref="T:System.Xml.XmlReader" /> and schema context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Initializing with this constructor also sets default reader settings.  
-  
+Initializing with this constructor also sets default reader settings.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -313,10 +313,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlReader" /> class, using the provided <see cref="T:System.Xml.XmlReader" /> and reader settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Initializing with this constructor attempts to merge some of the settings from the provided `xmlReader` together with the XAML-specific settings in `settings`. Initializing with this constructor also sets default reader settings. For more information, see <xref:System.Xaml.XamlXmlReaderSettings>.  
-  
+Initializing with this constructor attempts to merge some of the settings from the provided `xmlReader` together with the XAML-specific settings in `settings`. Initializing with this constructor also sets default reader settings. For more information, see <xref:System.Xaml.XamlXmlReaderSettings>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -344,10 +344,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlReader" /> class, based on a stream, with a supplied XAML schema context and XAML-specific settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Initializing with this constructor attempts to merge some of the settings from the default reader together with the XAML-specific settings in `settings`. For more information, see <xref:System.Xaml.XamlXmlReaderSettings>.  
-  
+Initializing with this constructor attempts to merge some of the settings from the default reader together with the XAML-specific settings in `settings`. For more information, see <xref:System.Xaml.XamlXmlReaderSettings>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -375,10 +375,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlReader" /> class, based on a <see cref="T:System.IO.TextReader" />, and using a supplied schema context and XAML-specific settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Initializing with this constructor attempts to merge some of the settings from the default reader together with the XAML-specific settings in `settings`. For more information, see <xref:System.Xaml.XamlXmlReaderSettings>.  
-  
+Initializing with this constructor attempts to merge some of the settings from the default reader together with the XAML-specific settings in `settings`. For more information, see <xref:System.Xaml.XamlXmlReaderSettings>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -410,10 +410,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlReader" /> class, based on the file name of a file to load into a default XML reader, and using a supplied XAML schema context and XAML-specific reader settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Initializing with this constructor attempts to merge some of the settings from the default reader together with the XAML-specific settings in `settings`. For more information, see <xref:System.Xaml.XamlXmlReaderSettings>.  
-  
+Initializing with this constructor attempts to merge some of the settings from the default reader together with the XAML-specific settings in `settings`. For more information, see <xref:System.Xaml.XamlXmlReaderSettings>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -445,10 +445,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlReader" /> class using the provided <see cref="T:System.Xml.XmlReader" />, schema context, and reader settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Initializing with this constructor attempts to merge some of the settings from the provided `xmlReader` together with the XAML-specific settings in `settings`. For more information, see <xref:System.Xaml.XamlXmlReaderSettings>.  
-  
+Initializing with this constructor attempts to merge some of the settings from the provided `xmlReader` together with the XAML-specific settings in `settings`. For more information, see <xref:System.Xaml.XamlXmlReaderSettings>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -473,10 +473,10 @@
           <see langword="true" /> if line information is available; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is part of the <xref:System.Xaml.IXamlLineInfo> implementation. The result is partially based on the reader settings that were used to initialize this <xref:System.Xaml.XamlXmlReader>.  
-  
+This property is part of the <xref:System.Xaml.IXamlLineInfo> implementation. The result is partially based on the reader settings that were used to initialize this <xref:System.Xaml.XamlXmlReader>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -499,10 +499,10 @@
           <see langword="true" /> if the position is at the conceptual end-of-file in the node stream; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you are currently using a subtree reader, the subtree reader reports <xref:System.Xaml.XamlXmlReader.IsEof%2A> after exiting the bounds of the subtree. For more information, see <xref:System.Xaml.XamlReader.ReadSubtree%2A>.  
-  
+If you are currently using a subtree reader, the subtree reader reports <xref:System.Xaml.XamlXmlReader.IsEof%2A> after exiting the bounds of the subtree. For more information, see <xref:System.Xaml.XamlReader.ReadSubtree%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -524,10 +524,10 @@
         <value>The line number to report.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is part of the <xref:System.Xaml.IXamlLineInfo> implementation. Node types of <xref:System.Xaml.XamlNodeType>, <xref:System.Xaml.XamlNodeType>, <xref:System.Xaml.XamlNodeType>, or <xref:System.Xaml.XamlNodeType> can return a line number. Other node types return a value of 0. All node types return 0 if <xref:System.Xaml.XamlXmlReader.HasLineInfo%2A> is `false`.  
-  
+This property is part of the <xref:System.Xaml.IXamlLineInfo> implementation. Node types of <xref:System.Xaml.XamlNodeType>, <xref:System.Xaml.XamlNodeType>, <xref:System.Xaml.XamlNodeType>, or <xref:System.Xaml.XamlNodeType> can return a line number. Other node types return a value of 0. All node types return 0 if <xref:System.Xaml.XamlXmlReader.HasLineInfo%2A> is `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -549,10 +549,10 @@
         <value>The line position to report.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is part of the <xref:System.Xaml.IXamlLineInfo> implementation. Node types of <xref:System.Xaml.XamlNodeType>, <xref:System.Xaml.XamlNodeType>, <xref:System.Xaml.XamlNodeType>, or <xref:System.Xaml.XamlNodeType> can return a line position. Other node types return a value of 0. All node types return 0 if <xref:System.Xaml.XamlXmlReader.HasLineInfo%2A> is `false`.  
-  
+This property is part of the <xref:System.Xaml.IXamlLineInfo> implementation. Node types of <xref:System.Xaml.XamlNodeType>, <xref:System.Xaml.XamlNodeType>, <xref:System.Xaml.XamlNodeType>, or <xref:System.Xaml.XamlNodeType> can return a line position. Other node types return a value of 0. All node types return 0 if <xref:System.Xaml.XamlXmlReader.HasLineInfo%2A> is `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -592,10 +592,10 @@
         <value>The XAML namespace from the current node, if it is available; otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property only has a non-null result if the <xref:System.Xaml.XamlXmlReader.NodeType%2A> of the current position is <xref:System.Xaml.XamlNodeType>. This property does not report the XAML namespace that applies to objects or members in a general scoping sense. Your implementation should cache XAML namespace information if you need it for specific operations. For default operations that involve the loaded XAML schema context, the acting XAML namespace is internally cached by XAML writer implementations.  
-  
+This property only has a non-null result if the <xref:System.Xaml.XamlXmlReader.NodeType%2A> of the current position is <xref:System.Xaml.XamlNodeType>. This property does not report the XAML namespace that applies to objects or members in a general scoping sense. Your implementation should cache XAML namespace information if you need it for specific operations. For default operations that involve the loaded XAML schema context, the acting XAML namespace is internally cached by XAML writer implementations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -637,14 +637,14 @@
           <see langword="true" /> if a node is available; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A node where <xref:System.Xaml.XamlXmlReader.Read%2A> returns `false` also returns `true` for <xref:System.Xaml.XamlXmlReader.IsEof%2A>.  
-  
- Calling <xref:System.Xaml.XamlXmlReader.Read%2A> generally has the side effect of advancing the <xref:System.Xaml.XamlXmlReader.LineNumber%2A> or <xref:System.Xaml.XamlXmlReader.LinePosition%2A>.  
-  
- The next operation after calling <xref:System.Xaml.XamlXmlReader.Read%2A> and getting a `true` result is typically to check <xref:System.Xaml.XamlXmlReader.NodeType%2A>. For more information about XAML node stream concepts, see [Understanding XAML Node Stream Structures and Concepts](~/docs/framework/xaml-services/understanding-xaml-node-stream-structures-and-concepts.md).  
-  
+A node where <xref:System.Xaml.XamlXmlReader.Read%2A> returns `false` also returns `true` for <xref:System.Xaml.XamlXmlReader.IsEof%2A>.  
+ 
+Calling <xref:System.Xaml.XamlXmlReader.Read%2A> generally has the side effect of advancing the <xref:System.Xaml.XamlXmlReader.LineNumber%2A> or <xref:System.Xaml.XamlXmlReader.LinePosition%2A>.  
+ 
+The next operation after calling <xref:System.Xaml.XamlXmlReader.Read%2A> and getting a `true` result is typically to check <xref:System.Xaml.XamlXmlReader.NodeType%2A>. For more information about XAML node stream concepts, see [Understanding XAML Node Stream Structures and Concepts](~/docs/framework/xaml-services/understanding-xaml-node-stream-structures-and-concepts.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -666,10 +666,10 @@
         <value>An object that provides schema information for the information set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is either the default XAML schema context or a specifically derived XAML schema context that is provided as constructor information. Schema context affects many aspects of XAML processing behavior. In particular, the <xref:System.Xaml.XamlXmlReader.SchemaContext%2A> of the reader is generally used by any associated writer.  
-  
+This value is either the default XAML schema context or a specifically derived XAML schema context that is provided as constructor information. Schema context affects many aspects of XAML processing behavior. In particular, the <xref:System.Xaml.XamlXmlReader.SchemaContext%2A> of the reader is generally used by any associated writer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -691,10 +691,10 @@
         <value>The <see cref="T:System.Xaml.XamlType" /> of the current node; or <see langword="null" />, if the position is not on an object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property only has a non-null result if the <xref:System.Xaml.XamlXmlReader.NodeType%2A> of the current position is <xref:System.Xaml.XamlNodeType>.  
-  
+This property only has a non-null result if the <xref:System.Xaml.XamlXmlReader.NodeType%2A> of the current position is <xref:System.Xaml.XamlNodeType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

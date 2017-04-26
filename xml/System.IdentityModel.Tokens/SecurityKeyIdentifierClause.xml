@@ -14,10 +14,10 @@
     <summary>Represents an abstract base class for a key identifier clause.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens. Attached references refer to security tokens that are contained within the security header of a SOAP message and unattached references reference security tokens that are not included within the security header of a SOAP message. These references typically affirm the authenticity of the issued security token.  
-  
+Typically, the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens. Attached references refer to security tokens that are contained within the security header of a SOAP message and unattached references reference security tokens that are not included within the security header of a SOAP message. These references typically affirm the authenticity of the issued security token.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> class using the specified key identifier clause type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this security key identifier is serialized into XML, the `clauseType` parameter is serialized as the `ValueType` attribute of the `<SecurityTokenReference>` element.  
-  
+When this security key identifier is serialized into XML, the `clauseType` parameter is serialized as the `ValueType` attribute of the `<SecurityTokenReference>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -68,10 +68,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> class using the specified key identifier clause type, nonce, and the derived key length.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] does not support the creation of implied derived key identifiers. However, [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] processes incoming SOAP messages that contain implied key identifier.  
-  
+[!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] does not support the creation of implied derived key identifiers. However, [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] processes incoming SOAP messages that contain implied key identifier.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,10 +94,10 @@
           <see langword="true" /> if a key can be created; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a key can be created using the parameters passed into a constructor, override the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CanCreateKey%2A> method to return `true` and implement the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CreateKey%2A> method.  
-  
+When a key can be created using the parameters passed into a constructor, override the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CanCreateKey%2A> method to return `true` and implement the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CreateKey%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
         <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that contains the created key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a key can be created using the parameters passed into a constructor, override the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CanCreateKey%2A> method to return `true` and implement the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CreateKey%2A> method.  
-  
+When a key can be created using the parameters passed into a constructor, override the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CanCreateKey%2A> method to return `true` and implement the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.CreateKey%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,10 +163,10 @@
         <value>The size of the derived key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] does not support the creation of implied derived key identifiers. However, [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] processes incoming SOAP messages that contain implied key identifier.  
-  
+[!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] does not support the creation of implied derived key identifiers. However, [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] processes incoming SOAP messages that contain implied key identifier.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,10 +189,10 @@
         <returns>An array of <see cref="T:System.Byte" /> that contains the nonce that was used to generate the derived key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] does not support the creation of implied derived key identifiers. However, [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] processes incoming SOAP messages that contain implied key identifier.  
-  
+[!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] does not support the creation of implied derived key identifiers. However, [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] processes incoming SOAP messages that contain implied key identifier.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,10 +214,10 @@
         <value>The key identifier clause ID. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this security key identifier is serialized into XML, the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.Id%2A> property is serialized as the `Id` attribute of the `<SecurityTokenReference>` element. If the property is `null`, an `Id` attribute is not included in the `<SecurityTokenReference>` element.  
-  
+When this security key identifier is serialized into XML, the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.Id%2A> property is serialized as the `Id` attribute of the `<SecurityTokenReference>` element. If the property is `null`, an `Id` attribute is not included in the `<SecurityTokenReference>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

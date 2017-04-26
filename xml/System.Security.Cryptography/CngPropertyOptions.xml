@@ -27,12 +27,12 @@
     <summary>Specifies Cryptography Next Generation (CNG) key property options.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These options are used to initialize <xref:System.Security.Cryptography.CngProperty> objects, which are then used in <xref:System.Security.Cryptography.CngKey.SetProperty%2A> calls. You also use these options when you query for the value of properties with the <xref:System.Security.Cryptography.CngKey.GetProperty%2A> method.  
-  
- Properties must be queried with the <xref:System.Security.Cryptography.CngPropertyOptions> they are stored with. Otherwise, they will not be found.  
-  
+These options are used to initialize <xref:System.Security.Cryptography.CngProperty> objects, which are then used in <xref:System.Security.Cryptography.CngKey.SetProperty%2A> calls. You also use these options when you query for the value of properties with the <xref:System.Security.Cryptography.CngKey.GetProperty%2A> method.  
+ 
+Properties must be queried with the <xref:System.Security.Cryptography.CngPropertyOptions> they are stored with. Otherwise, they will not be found.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -31,10 +31,10 @@
     <summary>Represents a callback delegate that has been registered with a <see cref="T:System.Threading.CancellationToken" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The callback is called when the token is canceled. To unregister a callback, dispose the corresponding Registration instance. For more information and code examples see [Cancellation in Managed Threads](~/docs/standard/threading/cancellation-in-managed-threads.md).  
-  
+The callback is called when the token is canceled. To unregister a callback, dispose the corresponding Registration instance. For more information and code examples see [Cancellation in Managed Threads](~/docs/standard/threading/cancellation-in-managed-threads.md).  
+ 
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Threading.CancellationTokenRegistration" /> are thread-safe and may be used concurrently from multiple threads, with the exception of Dispose, which must only be used when all other operations on the <see cref="T:System.Threading.CancellationTokenRegistration" /> have completed.</threadsafe>
@@ -67,15 +67,15 @@
         <summary>Releases all resources used by the current instance of the <see cref="T:System.Threading.CancellationTokenRegistration" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call `Dispose` when you are finished using the <xref:System.Threading.CancellationTokenRegistration>. The `Dispose` method leaves the <xref:System.Threading.CancellationTokenRegistration> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.CancellationTokenRegistration> so the garbage collector can reclaim the memory that the <xref:System.Threading.CancellationTokenRegistration> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call `Dispose` when you are finished using the <xref:System.Threading.CancellationTokenRegistration>. The `Dispose` method leaves the <xref:System.Threading.CancellationTokenRegistration> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.CancellationTokenRegistration> so the garbage collector can reclaim the memory that the <xref:System.Threading.CancellationTokenRegistration> was occupying.  
+ 
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Threading.CancellationTokenRegistration>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Threading.CancellationTokenRegistration> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

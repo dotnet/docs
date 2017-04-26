@@ -14,15 +14,15 @@
     <summary>Enables the <see cref="T:System.ServiceModel.Description.WebHttpBehavior" /> for an endpoint through configuration.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Configuration.WebHttpElement> is a <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> sub-type that can be used to include the <xref:System.ServiceModel.Description.WebHttpBehavior> on an endpoint through configuration. The <xref:System.ServiceModel.Description.WebHttpBehavior> behavior, when used in conjunction with the <xref:System.ServiceModel.WebHttpBinding> binding, enables the Web programming model for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service. Note that the <xref:System.ServiceModel.Web.WebServiceHost> automatically adds this behavior to endpoints that use the <xref:System.ServiceModel.WebHttpBinding>.  
+The <xref:System.ServiceModel.Configuration.WebHttpElement> is a <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> sub-type that can be used to include the <xref:System.ServiceModel.Description.WebHttpBehavior> on an endpoint through configuration. The <xref:System.ServiceModel.Description.WebHttpBehavior> behavior, when used in conjunction with the <xref:System.ServiceModel.WebHttpBinding> binding, enables the Web programming model for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service. Note that the <xref:System.ServiceModel.Web.WebServiceHost> automatically adds this behavior to endpoints that use the <xref:System.ServiceModel.WebHttpBinding>.  
+ 
   
-   
-  
+ 
 ## Examples  
- This sample returns the type <xref:System.ServiceModel.Configuration.WebHttpElement>.  
-  
+This sample returns the type <xref:System.ServiceModel.Configuration.WebHttpElement>.  
+ 
 ```  
 using System;  
 using System.ServiceModel;  
@@ -40,7 +40,7 @@ using System.ServiceModel.Configuration;
         }  
     }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@ using System.ServiceModel.Configuration;
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WebHttpElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This sample returns the type <xref:System.ServiceModel.Configuration.WebHttpElement>.  
-  
+This sample returns the type <xref:System.ServiceModel.Configuration.WebHttpElement>.  
+ 
 ```  
 using System;  
 using System.ServiceModel;  
@@ -80,7 +80,7 @@ using System.ServiceModel.Configuration;
         }  
     }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,10 +126,10 @@ using System.ServiceModel.Configuration;
         <value>The <see cref="T:System.Type" /> for the behavior enabled with the configuration element: <see cref="T:System.ServiceModel.Description.WebHttpBehavior" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This sample returns the type <xref:System.ServiceModel.Configuration.WebHttpElement>.  
-  
+This sample returns the type <xref:System.ServiceModel.Configuration.WebHttpElement>.  
+ 
 ```  
 using System;  
 using System.ServiceModel;  
@@ -147,7 +147,7 @@ using System.ServiceModel.Configuration;
         }  
     }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

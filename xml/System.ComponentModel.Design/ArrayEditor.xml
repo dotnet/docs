@@ -14,19 +14,19 @@
     <summary>Provides a user interface for editing arrays at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This editor can be used to edit arrays within the design-time environment.  
+This editor can be used to edit arrays within the design-time environment.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates applying the <xref:System.ComponentModel.EditorAttribute?displayProperty=fullName> to a property.  
-  
- [!code-cpp[ArrayEditorExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ArrayEditorExample/CPP/class1.cpp#1)]
- [!code-csharp[ArrayEditorExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ArrayEditorExample/CS/class1.cs#1)]
- [!code-vb[ArrayEditorExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ArrayEditorExample/VB/class1.vb#1)]  
-  
+The following code example demonstrates applying the <xref:System.ComponentModel.EditorAttribute?displayProperty=fullName> to a property.  
+ 
+[!code-cpp[ArrayEditorExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ArrayEditorExample/CPP/class1.cpp#1)]
+[!code-csharp[ArrayEditorExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ArrayEditorExample/CS/class1.cs#1)]
+[!code-vb[ArrayEditorExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ArrayEditorExample/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,10 +67,10 @@
         <returns>A <see cref="T:System.Type" /> that indicates the data type that the collection is designed to contain.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation returns the item type of the array.  
-  
+The default implementation returns the item type of the array.  
+ 
  ]]></format>
         </remarks>
       </Docs>

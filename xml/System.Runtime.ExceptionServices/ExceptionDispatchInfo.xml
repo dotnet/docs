@@ -26,12 +26,12 @@
     <summary>Represents an exception whose state is captured at a certain point in code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo> object stores the stack trace information and Watson information that the exception contains at the point where it is captured. The exception can be thrown at another time and possibly on another thread by calling the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw%2A?displayProperty=fullName> method. The exception is thrown as if it had flowed from the point where it was captured to the point where the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw%2A> method is called.  
-  
- <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo> cannot be serialized and is not intended to cross application domain boundaries.  
-  
+The <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo> object stores the stack trace information and Watson information that the exception contains at the point where it is captured. The exception can be thrown at another time and possibly on another thread by calling the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw%2A?displayProperty=fullName> method. The exception is thrown as if it had flowed from the point where it was captured to the point where the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw%2A> method is called.  
+ 
+<xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo> cannot be serialized and is not intended to cross application domain boundaries.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,12 +69,12 @@
         <returns>An object that represents the specified exception at the current point in code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo> object that is returned by this method at another time and possibly on another thread to rethrow the specified exception, as if the exception had flowed from this point where it was captured to the point where it is rethrown.  
-  
- If the exception is active when it is captured, the current stack trace information and Watson information that is contained in the exception is stored.  If it is inactive, that is, if it has not been thrown, it will not have any stack trace information or Watson information.  
-  
+You can use the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo> object that is returned by this method at another time and possibly on another thread to rethrow the specified exception, as if the exception had flowed from this point where it was captured to the point where it is rethrown.  
+ 
+If the exception is active when it is captured, the current stack trace information and Watson information that is contained in the exception is stored.  If it is inactive, that is, if it has not been thrown, it will not have any stack trace information or Watson information.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -110,10 +110,10 @@
         <value>The exception that is represented by the current instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used by the Task Parallel Library, for example, to combine multiple exceptions in an <xref:System.AggregateException> object. It is not intended to be used by application code. Use the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw%2A> method to restore the state of the captured exception and throw it.  
-  
+This property is used by the Task Parallel Library, for example, to combine multiple exceptions in an <xref:System.AggregateException> object. It is not intended to be used by application code. Use the <xref:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw%2A> method to restore the state of the captured exception and throw it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,10 +147,10 @@
         <summary>Throws the exception that is represented by the current <see cref="T:System.Runtime.ExceptionServices.ExceptionDispatchInfo" /> object, after restoring the state that was saved when the exception was captured.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the exception is restored, the following string is inserted in the stack trace to indicate the restore point: "End of stack trace from the previous location where the exception was thrown". This is similar to the way inner exceptions or marshaled exceptions are indicated in stack traces.  
-  
+When the exception is restored, the following string is inserted in the stack trace to indicate the restore point: "End of stack trace from the previous location where the exception was thrown". This is similar to the way inner exceptions or marshaled exceptions are indicated in stack traces.  
+ 
  ]]></format>
         </remarks>
       </Docs>

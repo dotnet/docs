@@ -14,17 +14,17 @@
     <summary>Specifies the size of the paper (or other media), the size of the imageable area, and the location of the imageable area.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Most laser and inkjet printers do not support borderless printing. They must leave an unprinted area around the edges of the paper to prevent toner from getting on the parts of the printer that move the paper. For printers that do not support borderless printing, the imageable area of the paper is smaller than the paper dimensions.  
-  
- Use <xref:System.Printing.PrintDocumentImageableArea> objects primarily as parameters to the <xref:System.Printing.PrintQueue.CreateXpsDocumentWriter%2A> methods.  
-  
+Most laser and inkjet printers do not support borderless printing. They must leave an unprinted area around the edges of the paper to prevent toner from getting on the parts of the printer that move the paper. For printers that do not support borderless printing, the imageable area of the paper is smaller than the paper dimensions.  
+ 
+Use <xref:System.Printing.PrintDocumentImageableArea> objects primarily as parameters to the <xref:System.Printing.PrintQueue.CreateXpsDocumentWriter%2A> methods.  
+ 
 > [!CAUTION]
 >  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
-  
- If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
-  
+ 
+If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,10 +46,10 @@
         <value>A <see cref="T:System.Double" /> that represents the distance from the origin.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Printing.PrintDocumentImageableArea.ExtentHeight%2A> property gets the distance from the upper-left corner of the imageable area (also called the 'origin' of the imageable area) to the lower-left corner of the imageable area.  
-  
+The <xref:System.Printing.PrintDocumentImageableArea.ExtentHeight%2A> property gets the distance from the upper-left corner of the imageable area (also called the 'origin' of the imageable area) to the lower-left corner of the imageable area.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -71,10 +71,10 @@
         <value>A <see cref="T:System.Double" /> that represents the distance from the origin.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Printing.PrintDocumentImageableArea.ExtentWidth%2A> property gets the distance from the upper-left corner of the imageable area (also called the 'origin' of the imageable area) to the upper-right corner of the imageable area.  
-  
+The <xref:System.Printing.PrintDocumentImageableArea.ExtentWidth%2A> property gets the distance from the upper-left corner of the imageable area (also called the 'origin' of the imageable area) to the upper-right corner of the imageable area.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Represents the change to a <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> for dynamic updates. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class can be used by a tracking service to determine which RuleSets have been changed during a dynamic update. An instance of this object will be generated for every RuleSet that existed before the dynamic update and remains afterwards, and has changes applied to one or more rules.  
-  
+This class can be used by a tracking service to determine which RuleSets have been changed during a dynamic update. An instance of this object will be generated for every RuleSet that existed before the dynamic update and remains afterwards, and has changes applied to one or more rules.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -103,10 +103,10 @@
         <value>The original <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is settable so that the <xref:System.Workflow.Activities.Rules.UpdatedRuleSetAction> class can be deserialized. There should be no need to set this property. Changing it during a dynamic update might lead to unexpected results.  
-  
+This property is settable so that the <xref:System.Workflow.Activities.Rules.UpdatedRuleSetAction> class can be deserialized. There should be no need to set this property. Changing it during a dynamic update might lead to unexpected results.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The original <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
@@ -152,10 +152,10 @@
         <value>The updated <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is settable so that the <xref:System.Workflow.Activities.Rules.UpdatedRuleSetAction> class can be deserialized. There should be no need to set this property. Changing it during a dynamic update might lead to unexpected results.  
-  
+This property is settable so that the <xref:System.Workflow.Activities.Rules.UpdatedRuleSetAction> class can be deserialized. There should be no need to set this property. Changing it during a dynamic update might lead to unexpected results.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The updated <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>

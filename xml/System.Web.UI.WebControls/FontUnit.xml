@@ -19,23 +19,23 @@
     <summary>Represents the size of a font.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>, see the <xref:System.Web.UI.WebControls.FontUnit.%23ctor%2A> constructor.  
+For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>, see the <xref:System.Web.UI.WebControls.FontUnit.%23ctor%2A> constructor.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties for multiple controls at one time. Each time one of the `Style` property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Not all the controls included in this example support all the properties that are demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
-  
+The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.Style> object to change the style properties for multiple controls at one time. Each time one of the `Style` property values changes, each control must call its <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method. Not all the controls included in this example support all the properties that are demonstrated. If a control does not support a particular property, the appearance of the control will not change when the property value is changed.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  -->  
+ 
+<!-- TODO: review snippet reference [!code-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  -->  
 <!-- TODO: review snippet reference [!code-csharp[StyleClass#3](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#3)]  -->
 <!-- TODO: review snippet reference [!code-vb[StyleClass#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#3)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,15 +57,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FontUnit" /> class with the specified font size in points.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.%23ctor%2A> constructor to create and initialize an instance of the <xref:System.Web.UI.WebControls.FontUnit> class using the specified font size. The following table shows initial property values for the <xref:System.Web.UI.WebControls.FontUnit> object that is created.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.%23ctor%2A> constructor to create and initialize an instance of the <xref:System.Web.UI.WebControls.FontUnit> class using the specified font size. The following table shows initial property values for the <xref:System.Web.UI.WebControls.FontUnit> object that is created.  
+ 
 |Property|Initial value|  
 |--------------|-------------------|  
 |`Type`|The <xref:System.Web.UI.WebControls.FontSize> value.|  
 |`Unit`|A <xref:System.Web.UI.WebControls.Unit> with the <xref:System.Web.UI.WebControls.Unit.Value%2A> property equal to `value` and the <xref:System.Web.UI.WebControls.Unit.Type%2A> property equal to the <xref:System.Web.UI.WebControls.UnitType> value.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -89,17 +89,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FontUnit" /> class with the specified font size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.FontUnit> class using the specified font size.  
-  
- The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>.  
-  
+Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.FontUnit> class using the specified font size.  
+ 
+The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|`FontSize.AsUnit`|  
 |`Unit`|A <xref:System.Web.UI.WebControls.Unit> with its <xref:System.Web.UI.WebControls.Unit.Value%2A> property set to the font size specified by the `value` parameter.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +121,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FontUnit" /> class with the specified string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.FontUnit.%23ctor%2A> constructor calls the <xref:System.Web.UI.WebControls.FontUnit.%23ctor%2A> constructor, using the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property for the <xref:System.Globalization.CultureInfo> parameter.  
-  
+The <xref:System.Web.UI.WebControls.FontUnit.%23ctor%2A> constructor calls the <xref:System.Web.UI.WebControls.FontUnit.%23ctor%2A> constructor, using the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property for the <xref:System.Globalization.CultureInfo> parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,24 +146,24 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FontUnit" /> class with the specified <see cref="T:System.Web.UI.WebControls.FontSize" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.FontUnit> class using the specified <xref:System.Web.UI.WebControls.FontSize> object.  
-  
- If the `type` parameter contains the value `FontSize.AsUnit`, the following table shows the initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>.  
-  
+Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.FontUnit> class using the specified <xref:System.Web.UI.WebControls.FontSize> object.  
+ 
+If the `type` parameter contains the value `FontSize.AsUnit`, the following table shows the initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|`FontSize.AsUnit`|  
 |`Unit`|A <xref:System.Web.UI.WebControls.Unit> object with its <xref:System.Web.UI.WebControls.Unit.Value%2A> property set to `10`.|  
-  
- If the `type` parameter contains any other <xref:System.Web.UI.WebControls.FontSize> value, the following table shows the initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>.  
-  
+ 
+If the `type` parameter contains any other <xref:System.Web.UI.WebControls.FontSize> value, the following table shows the initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|The value of the `type` parameter.|  
 |`Unit`|<xref:System.Web.UI.WebControls.Unit.Empty>|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified font size is not one of the <see cref="T:System.Web.UI.WebControls.FontSize" /> values.</exception>
@@ -186,24 +186,24 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FontUnit" /> class with the specified <see cref="T:System.Web.UI.WebControls.Unit" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.FontUnit> class using the specified <xref:System.Web.UI.WebControls.Unit>.  
-  
- If the <xref:System.Web.UI.WebControls.Unit.IsEmpty%2A> property of the <xref:System.Web.UI.WebControls.Unit> passed in the `value` parameter is `true`, the following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>.  
-  
+Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.FontUnit> class using the specified <xref:System.Web.UI.WebControls.Unit>.  
+ 
+If the <xref:System.Web.UI.WebControls.Unit.IsEmpty%2A> property of the <xref:System.Web.UI.WebControls.Unit> passed in the `value` parameter is `true`, the following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|`FontSize.NotSet`|  
 |`Unit`|<xref:System.Web.UI.WebControls.Unit.Empty>|  
-  
- If the <xref:System.Web.UI.WebControls.Unit.IsEmpty%2A> property of the <xref:System.Web.UI.WebControls.Unit> passed in the `value` parameter is `false`, the following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>.  
-  
+ 
+If the <xref:System.Web.UI.WebControls.Unit.IsEmpty%2A> property of the <xref:System.Web.UI.WebControls.Unit> passed in the `value` parameter is `false`, the following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|`FontSize.AsUnit`|  
 |`Unit`|The value of the `value` parameter.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,17 +227,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FontUnit" /> class with the specified font size and <see cref="T:System.Web.UI.WebControls.UnitType" /> value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.%23ctor%2A> constructor to create and initialize an instance of the <xref:System.Web.UI.WebControls.FontUnit> class using the specified font size and measuring unit, such as point or pixel.  
-  
- The following table shows the initial property values for a <xref:System.Web.UI.WebControls.FontUnit> object.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.%23ctor%2A> constructor to create and initialize an instance of the <xref:System.Web.UI.WebControls.FontUnit> class using the specified font size and measuring unit, such as point or pixel.  
+ 
+The following table shows the initial property values for a <xref:System.Web.UI.WebControls.FontUnit> object.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|The <xref:System.Web.UI.WebControls.FontSize> value.|  
 |`Unit`|A <xref:System.Web.UI.WebControls.Unit> with the <xref:System.Web.UI.WebControls.Unit.Value%2A> property equal to `value` and the <xref:System.Web.UI.WebControls.Unit.Type%2A> property equal to `type`.|  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -263,10 +263,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FontUnit" /> class with the specified string using the specified <see cref="T:System.Globalization.CultureInfo" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.FontUnit.%23ctor%2A> constructor recognizes the strings for `value` that are shown in the following table to create a new instance of the <xref:System.Web.UI.WebControls.FontUnit> class.  
-  
+The <xref:System.Web.UI.WebControls.FontUnit.%23ctor%2A> constructor recognizes the strings for `value` that are shown in the following table to create a new instance of the <xref:System.Web.UI.WebControls.FontUnit> class.  
+ 
 |String value|<xref:System.Web.UI.WebControls.FontUnit>|  
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|  
 |`xx-small`, `xxsmall`|<xref:System.Web.UI.WebControls.FontUnit>|  
@@ -278,11 +278,11 @@
 |`large`|<xref:System.Web.UI.WebControls.FontUnit.Large>|  
 |`larger`|<xref:System.Web.UI.WebControls.FontUnit.Larger>|  
 |`medium`|<xref:System.Web.UI.WebControls.FontUnit.Medium>|  
-  
- In all cases, the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property has the value <xref:System.Web.UI.WebControls.FontSize>. The string comparison is case insensitive.  
-  
- For all other values of `value`, a new instance of the <xref:System.Web.UI.WebControls.FontUnit> class is created by treating `value` as a font size and setting the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property to <xref:System.Web.UI.WebControls.UnitType>.  
-  
+ 
+In all cases, the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property has the value <xref:System.Web.UI.WebControls.FontSize>. The string comparison is case insensitive.  
+ 
+For all other values of `value`, a new instance of the <xref:System.Web.UI.WebControls.FontUnit> class is created by treating `value` as a font size and setting the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property to <xref:System.Web.UI.WebControls.UnitType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -303,10 +303,10 @@
         <summary>Represents an empty <see cref="T:System.Web.UI.WebControls.FontUnit" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.Empty> field to represent an empty <xref:System.Web.UI.WebControls.FontUnit> object. No HTML rendered output is created when this field is used.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.Empty> field to represent an empty <xref:System.Web.UI.WebControls.FontUnit> object. No HTML rendered output is created when this field is used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,10 +333,10 @@
           <see langword="true" /> if the specified <see cref="T:System.Object" /> is equivalent to the instance of the <see cref="T:System.Web.UI.WebControls.FontUnit" /> class that this method is called from; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.Equals%2A> method to determine whether the specified <xref:System.Object?displayProperty=fullName> is equivalent to the instance of the <xref:System.Web.UI.WebControls.FontUnit> class that this method is called from. For the specified <xref:System.Object?displayProperty=fullName> to be equivalent, the object must be a <xref:System.Web.UI.WebControls.FontUnit> that contains the same values for the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> and <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> properties as the instance of the <xref:System.Web.UI.WebControls.FontUnit> class that this method is called from.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.Equals%2A> method to determine whether the specified <xref:System.Object?displayProperty=fullName> is equivalent to the instance of the <xref:System.Web.UI.WebControls.FontUnit> class that this method is called from. For the specified <xref:System.Object?displayProperty=fullName> to be equivalent, the object must be a <xref:System.Web.UI.WebControls.FontUnit> that contains the same values for the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> and <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> properties as the instance of the <xref:System.Web.UI.WebControls.FontUnit> class that this method is called from.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -378,10 +378,10 @@
           <see langword="true" /> if the font size has not been set; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.IsEmpty%2A> property to determine whether the font size has been set.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.IsEmpty%2A> property to determine whether the font size has been set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -402,12 +402,12 @@
         <summary>Represents a <see cref="T:System.Web.UI.WebControls.FontUnit" /> object with the <see cref="P:System.Web.UI.WebControls.FontUnit.Type" /> property set to <see langword="FontSize.Large" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.Large> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.Large`.  
-  
- In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:Large"`. In browsers earlier than Internet Explorer 4.0, the HTML rendered output is `<font size="5">`.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.Large> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.Large`.  
+ 
+In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:Large"`. In browsers earlier than Internet Explorer 4.0, the HTML rendered output is `<font size="5">`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -428,15 +428,15 @@
         <summary>Represents a <see cref="T:System.Web.UI.WebControls.FontUnit" /> object with the <see cref="P:System.Web.UI.WebControls.FontUnit.Type" /> property set to <see langword="FontSize.Larger" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.Larger> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.Larger`.  
-  
- In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:Larger"`. In browsers earlier than Internet Explorer 4.0, no HTML rendered output is created.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.Larger> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.Larger`.  
+ 
+In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:Larger"`. In browsers earlier than Internet Explorer 4.0, no HTML rendered output is created.  
+ 
 > [!NOTE]
 >  Some browers do not recognize the <xref:System.Web.UI.WebControls.FontSize> font size. Check your browser for compatibility.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -457,12 +457,12 @@
         <summary>Represents a <see cref="T:System.Web.UI.WebControls.FontUnit" /> object with the <see cref="P:System.Web.UI.WebControls.FontUnit.Type" /> property set to <see langword="FontSize.Medium" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.Medium> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.Medium`.  
-  
- In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:Medium"`. In browsers earlier than Internet Explorer 4.0, the HTML rendered output is `<font size="4">`.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.Medium> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.Medium`.  
+ 
+In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:Medium"`. In browsers earlier than Internet Explorer 4.0, the HTML rendered output is `<font size="4">`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -491,10 +491,10 @@
           <see langword="true" /> if both <see cref="T:System.Web.UI.WebControls.FontUnit" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the <xref:System.Web.UI.WebControls.FontUnit> objects to be equivalent, each object must have the same values for the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> and <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> properties.  
-  
+For the <xref:System.Web.UI.WebControls.FontUnit> objects to be equivalent, each object must have the same values for the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> and <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> properties.  
+ 
  The equivalent method for this operator is <xref:System.Web.UI.WebControls.FontUnit.Equals%28System.Object%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -545,10 +545,10 @@
           <see langword="true" /> if both <see cref="T:System.Web.UI.WebControls.FontUnit" /> objects are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the <xref:System.Web.UI.WebControls.FontUnit> objects to be not equal to each other, each object must either have different values for the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property or the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property.  
-  
+For the <xref:System.Web.UI.WebControls.FontUnit> objects to be not equal to each other, each object must either have different values for the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property or the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property.  
+ 
  The equivalent method for this operator is <xref:System.Web.UI.WebControls.FontUnit.Equals%28System.Object%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -574,39 +574,39 @@
         <returns>A <see cref="T:System.Web.UI.WebControls.FontUnit" /> that represents the font size specified by the <paramref name="s" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the static <xref:System.Web.UI.WebControls.FontUnit.Parse%2A> method to convert the specified string to its <xref:System.Web.UI.WebControls.FontUnit> equivalent.  
-  
- If the value of the `s` parameter is not `null`, not <xref:System.String?displayProperty=fullName>, and a valid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
-  
+Use the static <xref:System.Web.UI.WebControls.FontUnit.Parse%2A> method to convert the specified string to its <xref:System.Web.UI.WebControls.FontUnit> equivalent.  
+ 
+If the value of the `s` parameter is not `null`, not <xref:System.String?displayProperty=fullName>, and a valid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|The <xref:System.Web.UI.WebControls.FontSize> enumeration equivalent of the `s` parameter.|  
 |`Unit`|<xref:System.Web.UI.WebControls.Unit.Empty>|  
-  
- If the value of the `s` parameter is not `null`, not <xref:System.String.Empty?displayProperty=fullName>, and an invalid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
-  
+ 
+If the value of the `s` parameter is not `null`, not <xref:System.String.Empty?displayProperty=fullName>, and an invalid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|`FontSize.AsUnit`|  
 |`Unit`|A <xref:System.Web.UI.WebControls.Unit> object with its <xref:System.Web.UI.WebControls.Unit.Value%2A> property initialized with the `s` parameter in the current thread's culture.|  
-  
- If the value of the `s` parameter is `null` or <xref:System.String.Empty?displayProperty=fullName>, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
-  
+ 
+If the value of the `s` parameter is `null` or <xref:System.String.Empty?displayProperty=fullName>, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|`FontSize.NotSet`|  
 |`Unit`|<xref:System.Web.UI.WebControls.Unit.Empty>|  
+ 
   
-   
-  
+ 
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  -->  
+<!-- TODO: review snippet reference [!code-csharp[StyleClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[StyleClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#1)]  -->  
 <!-- TODO: review snippet reference [!code-csharp[StyleClass#3](~/samples/snippets/csharp/VS_Snippets_WebNet/StyleClass/CS/styleclasscs.aspx#3)]  -->
 <!-- TODO: review snippet reference [!code-vb[StyleClass#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/StyleClass/VB/styleclassvb.aspx#3)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -634,31 +634,31 @@
         <returns>A <see cref="T:System.Web.UI.WebControls.FontUnit" /> that represents the font size specified by the <paramref name="s" /> parameter in the culture specified by the <paramref name="culture" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the static <xref:System.Web.UI.WebControls.FontUnit.Parse%2A> method to convert the specified string and culture to its <xref:System.Web.UI.WebControls.FontUnit> equivalent.  
-  
- If the value of the `s` parameter is not `null`, not <xref:System.String.Empty?displayProperty=fullName>, and a valid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
-  
+Use the static <xref:System.Web.UI.WebControls.FontUnit.Parse%2A> method to convert the specified string and culture to its <xref:System.Web.UI.WebControls.FontUnit> equivalent.  
+ 
+If the value of the `s` parameter is not `null`, not <xref:System.String.Empty?displayProperty=fullName>, and a valid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|The <xref:System.Web.UI.WebControls.FontSize> enumeration equivalent of the `s` parameter.|  
 |`Unit`|<xref:System.Web.UI.WebControls.Unit.Empty>|  
-  
- If the value of the `s` parameter is not `null`, not <xref:System.String.Empty?displayProperty=fullName>, and an invalid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
-  
+ 
+If the value of the `s` parameter is not `null`, not <xref:System.String.Empty?displayProperty=fullName>, and an invalid <xref:System.Web.UI.WebControls.FontSize> value, the following table shows initial property values for the new instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|`FontSize.AsUnit`|  
 |`Unit`|A <xref:System.Web.UI.WebControls.Unit> object with its <xref:System.Web.UI.WebControls.Unit.Value%2A> property initialized with the `s` parameter in the specified culture.|  
-  
- If the value of the `s` parameter is `null` or <xref:System.String.Empty?displayProperty=fullName>, the following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>.  
-  
+ 
+If the value of the `s` parameter is `null` or <xref:System.String.Empty?displayProperty=fullName>, the following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.FontUnit>.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |`Type`|`FontSize.NotSet`|  
 |`Unit`|<xref:System.Web.UI.WebControls.Unit.Empty>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -684,10 +684,10 @@
         <returns>A <see cref="T:System.Web.UI.WebControls.FontUnit" /> that represents the font size specified by the <paramref name="n" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the static <xref:System.Web.UI.WebControls.FontUnit.Point%2A> method to create a <xref:System.Web.UI.WebControls.FontUnit> that represents the font size specified by the `n` parameter.  
-  
+Use the static <xref:System.Web.UI.WebControls.FontUnit.Point%2A> method to create a <xref:System.Web.UI.WebControls.FontUnit> that represents the font size specified by the `n` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -708,12 +708,12 @@
         <summary>Represents a <see cref="T:System.Web.UI.WebControls.FontUnit" /> object with the <see cref="P:System.Web.UI.WebControls.FontUnit.Type" /> property set to <see langword="FontSize.Small" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.Small> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.Small`.  
-  
- In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:Small"`. In browsers earlier than Internet Explorer 4.0, the HTML rendered output is `<font size="3">`.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.Small> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.Small`.  
+ 
+In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:Small"`. In browsers earlier than Internet Explorer 4.0, the HTML rendered output is `<font size="3">`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -734,15 +734,15 @@
         <summary>Represents a <see cref="T:System.Web.UI.WebControls.FontUnit" /> object with the <see cref="P:System.Web.UI.WebControls.FontUnit.Type" /> property set to <see langword="FontSize.Smaller" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.Smaller> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.Smaller`.  
-  
- In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:Smaller"`. In browsers earlier than Internet Explorer 4.0, no HTML rendered output is created.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.Smaller> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.Smaller`.  
+ 
+In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:Smaller"`. In browsers earlier than Internet Explorer 4.0, no HTML rendered output is created.  
+ 
 > [!NOTE]
 >  Some browers do not recognize the <xref:System.Web.UI.WebControls.FontSize> font size. Check your browser for compatibility.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -765,10 +765,10 @@
         <returns>The string representation of the <see cref="T:System.Web.UI.WebControls.FontUnit" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.ToString%2A> method to retrieve the string representation of the <xref:System.Web.UI.WebControls.FontUnit>. If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to `FontSize.AsUnit`, the returned string is the string equivalent of the <xref:System.Web.UI.WebControls.Unit> contained in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property. If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to any other <xref:System.Web.UI.WebControls.FontSize> value, the returned string is the string equivalent of the <xref:System.Web.UI.WebControls.FontSize> value.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.ToString%2A> method to retrieve the string representation of the <xref:System.Web.UI.WebControls.FontUnit>. If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to `FontSize.AsUnit`, the returned string is the string equivalent of the <xref:System.Web.UI.WebControls.Unit> contained in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property. If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to any other <xref:System.Web.UI.WebControls.FontSize> value, the returned string is the string equivalent of the <xref:System.Web.UI.WebControls.FontSize> value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -794,10 +794,10 @@
         <returns>The string representation of the <see cref="T:System.Web.UI.WebControls.FontUnit" /> object in the specified culture.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.ToString%2A> method to retrieve the string representation of the <xref:System.Web.UI.WebControls.FontUnit> in the specified culture. If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to `FontSize.AsUnit`, the returned string is the string equivalent of the <xref:System.Web.UI.WebControls.Unit> contained in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property. If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to any other <xref:System.Web.UI.WebControls.FontSize> value, the returned string is the string equivalent of the <xref:System.Web.UI.WebControls.FontSize> value.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.ToString%2A> method to retrieve the string representation of the <xref:System.Web.UI.WebControls.FontUnit> in the specified culture. If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to `FontSize.AsUnit`, the returned string is the string equivalent of the <xref:System.Web.UI.WebControls.Unit> contained in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property. If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to any other <xref:System.Web.UI.WebControls.FontSize> value, the returned string is the string equivalent of the <xref:System.Web.UI.WebControls.FontSize> value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -823,14 +823,14 @@
         <returns>A string that represents this <see cref="T:System.Web.UI.WebControls.FontUnit" />, with any numeric unit value in the format specified by <paramref name="formatProvider" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.ToString%2A> method to retrieve the string representation of the <xref:System.Web.UI.WebControls.FontUnit> object using a culture-specific format provider for any numeric values that are in the string.  
-  
- If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to the <xref:System.Web.UI.WebControls.FontSize> value, the returned string is the string equivalent of the unit value that is contained in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property. The numeric portion of the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> value is formatted using the specified `formatProvider`. In other words, when the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to the <xref:System.Web.UI.WebControls.FontSize> value, the returned string representation is generated using the <xref:System.Web.UI.WebControls.Unit.ToString%28System.IFormatProvider%29?displayProperty=fullName> method on the unit object that is stored in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property.  
-  
- If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to any other <xref:System.Web.UI.WebControls.FontSize> value, the returned string is the string equivalent of the <xref:System.Web.UI.WebControls.FontSize> value.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.ToString%2A> method to retrieve the string representation of the <xref:System.Web.UI.WebControls.FontUnit> object using a culture-specific format provider for any numeric values that are in the string.  
+ 
+If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to the <xref:System.Web.UI.WebControls.FontSize> value, the returned string is the string equivalent of the unit value that is contained in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property. The numeric portion of the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> value is formatted using the specified `formatProvider`. In other words, when the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to the <xref:System.Web.UI.WebControls.FontSize> value, the returned string representation is generated using the <xref:System.Web.UI.WebControls.Unit.ToString%28System.IFormatProvider%29?displayProperty=fullName> method on the unit object that is stored in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property.  
+ 
+If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to any other <xref:System.Web.UI.WebControls.FontSize> value, the returned string is the string equivalent of the <xref:System.Web.UI.WebControls.FontSize> value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -852,10 +852,10 @@
         <value>One of the <see cref="T:System.Web.UI.WebControls.FontSize" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property to retrieve a <xref:System.Web.UI.WebControls.FontSize> enumeration value that represents the font size.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property to retrieve a <xref:System.Web.UI.WebControls.FontSize> enumeration value that represents the font size.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -877,10 +877,10 @@
         <value>A <see cref="T:System.Web.UI.WebControls.Unit" /> object that specifies the font size.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property to retrieve a <xref:System.Web.UI.WebControls.Unit> that represents the font size.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property to retrieve a <xref:System.Web.UI.WebControls.Unit> that represents the font size.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -901,12 +901,12 @@
         <summary>Represents a <see cref="T:System.Web.UI.WebControls.FontUnit" /> object with the <see cref="P:System.Web.UI.WebControls.FontUnit.Type" /> property set to <see langword="FontSize.XLarge" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.XLarge> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.XLarge`.  
-  
- In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:X-Large"`. In browsers earlier than Internet Explorer 4.0, the HTML rendered output is `<font size="6">`.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.XLarge> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.XLarge`.  
+ 
+In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:X-Large"`. In browsers earlier than Internet Explorer 4.0, the HTML rendered output is `<font size="6">`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -927,12 +927,12 @@
         <summary>Represents a <see cref="T:System.Web.UI.WebControls.FontUnit" /> object with the <see cref="P:System.Web.UI.WebControls.FontUnit.Type" /> property set to <see langword="FontSize.XSmall" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.XSmall> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.XSmall`.  
-  
- In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:X-Small"`. In browsers earlier than Internet Explorer 4.0, the HTML rendered output is `<font size="2">`.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.XSmall> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.XSmall`.  
+ 
+In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:X-Small"`. In browsers earlier than Internet Explorer 4.0, the HTML rendered output is `<font size="2">`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -953,12 +953,12 @@
         <summary>Represents a <see cref="T:System.Web.UI.WebControls.FontUnit" /> object with the <see cref="P:System.Web.UI.WebControls.FontUnit.Type" /> property set to <see langword="FontSize.XXLarge" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.XXLarge> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.XXLarge`.  
-  
- In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:XX-Large"`. In browsers earlier than Internet Explorer 4.0, the HTML rendered output is `<font size="7">`.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.XXLarge> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.XXLarge`.  
+ 
+In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:XX-Large"`. In browsers earlier than Internet Explorer 4.0, the HTML rendered output is `<font size="7">`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -979,12 +979,12 @@
         <summary>Represents a <see cref="T:System.Web.UI.WebControls.FontUnit" /> object with the <see cref="P:System.Web.UI.WebControls.FontUnit.Type" /> property set to <see langword="FontSize.XXSmall" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.FontUnit.XXSmall> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.XXSmall`.  
-  
- In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:XX-Small"`. In browsers earlier than Internet Explorer 4.0, the HTML rendered output is `<font size="1">`.  
-  
+Use the <xref:System.Web.UI.WebControls.FontUnit.XXSmall> field to represent a <xref:System.Web.UI.WebControls.FontUnit> object with the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property set to `FontSize.XXSmall`.  
+ 
+In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:XX-Small"`. In browsers earlier than Internet Explorer 4.0, the HTML rendered output is `<font size="1">`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

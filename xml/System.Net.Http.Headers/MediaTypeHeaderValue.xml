@@ -24,12 +24,12 @@
     <summary>Represents a media type used in a Content-Type header as defined in the RFC 2616.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Http.Headers.MediaTypeHeaderValue> class provides support for the media type used in a Content-Type header as defined in [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
-  
- An example of a media-type would be "text/plain; charset=iso-8859-5.  
-  
+The <xref:System.Net.Http.Headers.MediaTypeHeaderValue> class provides support for the media type used in a Content-Type header as defined in [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
+ 
+An example of a media-type would be "text/plain; charset=iso-8859-5.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -159,12 +159,12 @@
         <returns>A hash code for the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
-  
- The <xref:System.Net.Http.Headers.MediaTypeHeaderValue.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures such as a hash table.  
-  
+A hash code is a numeric value that is used to identify an object during equality testing. It can also serve as an index for an object in a collection.  
+ 
+The <xref:System.Net.Http.Headers.MediaTypeHeaderValue.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures such as a hash table.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,10 +192,10 @@
         <value>The media-type header value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The media-type is used in the Content-Type and Accept header fields in order to provide open and extensible data typing and type negotiation.  
-  
+The media-type is used in the Content-Type and Accept header fields in order to provide open and extensible data typing and type negotiation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

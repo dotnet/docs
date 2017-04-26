@@ -18,21 +18,21 @@
     <summary>Specifies attributes of print queues.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use these values with the <xref:System.Printing.PrintServer.GetPrintQueues%2A> method to list subsets of available print queues.  
+Use these values with the <xref:System.Printing.PrintServer.GetPrintQueues%2A> method to list subsets of available print queues.  
+ 
+PushedMachineConnection and PushedUserConnection refer to policies that enable automated connection of machines and users to printers. See the section "Deploying Printers to Users or Computers by Using Group Policy" in the [Step-by-Step Guide for Print Management](http://technet2.microsoft.com/WindowsServer/en/Library/312b10cb-73ec-40c7-a4df-63dd7248d93d1033.mspx).  
+ 
   
- PushedMachineConnection and PushedUserConnection refer to policies that enable automated connection of machines and users to printers. See the section "Deploying Printers to Users or Computers by Using Group Policy" in the [Step-by-Step Guide for Print Management](http://technet2.microsoft.com/WindowsServer/en/Library/312b10cb-73ec-40c7-a4df-63dd7248d93d1033.mspx).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Printing.EnumeratedPrintQueueTypes> enumeration to get a subset of available print queues.  
-  
- [!code-cpp[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/cpp/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/CPP/Program.cpp#listsubsetofprintqueues)]
- [!code-csharp[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/csharp/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/CSharp/Program.cs#listsubsetofprintqueues)]
- [!code-vb[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/visualbasic/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/visualbasic/program.vb#listsubsetofprintqueues)]  
-  
+The following example shows how to use the <xref:System.Printing.EnumeratedPrintQueueTypes> enumeration to get a subset of available print queues.  
+ 
+[!code-cpp[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/cpp/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/CPP/Program.cpp#listsubsetofprintqueues)]
+[!code-csharp[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/csharp/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/CSharp/Program.cs#listsubsetofprintqueues)]
+[!code-vb[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/visualbasic/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/visualbasic/program.vb#listsubsetofprintqueues)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

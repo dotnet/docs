@@ -14,10 +14,10 @@
     <summary>Base class for asymmetric keys.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot use this class when [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] is running under partial trust.  
-  
+You cannot use this class when [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] is running under partial trust.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,10 +63,10 @@
  Typically, <see langword="true" /> is passed into the <paramref name="privateKey" /> parameter, as a private key is typically required for decryption.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,10 +92,10 @@
         <returns>A <see cref="T:System.Security.Cryptography.HashAlgorithm" /> that generates hashes for digital signatures.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,12 +121,12 @@
         <returns>An <see cref="T:System.Security.Cryptography.AsymmetricSignatureDeformatter" /> that represents the deformatter algorithm for the digital signature.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A signature deformatter is typically used to verify a digital signature.  
-  
- Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+A signature deformatter is typically used to verify a digital signature.  
+ 
+Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,12 +152,12 @@
         <returns>An <see cref="T:System.Security.Cryptography.AsymmetricSignatureFormatter" /> that represents the formatter algorithm for the digital signature.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, a signature formatter is used to generate a digital signature.  
-  
- Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
-  
+Typically, a signature formatter is used to generate a digital signature.  
+ 
+Use the static fields of the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
       </Docs>

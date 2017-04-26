@@ -19,10 +19,10 @@
     <summary>Specifies the kind of application data in an e-mail message attachment.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Mime.MediaTypeNames.Application> media type designates that the attachment data should be processed by an application, such as a Postscript processor, a spreadsheet, or a word processor. The data is usually something other than simple text, such as an image, or an audio or video file.  
-  
+The <xref:System.Net.Mime.MediaTypeNames.Application> media type designates that the attachment data should be processed by an application, such as a Postscript processor, a spreadsheet, or a word processor. The data is usually something other than simple text, such as an image, or an audio or video file.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <summary>Specifies that the <see cref="T:System.Net.Mime.MediaTypeNames.Application" /> data is not interpreted.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.Mime.MediaTypeNames.Application.Octet> member designates that the attachment contains generic binary data.  
-  
+The <xref:System.Net.Mime.MediaTypeNames.Application.Octet> member designates that the attachment contains generic binary data.  
+ 
  ]]></format>
         </remarks>
       </Docs>

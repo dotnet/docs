@@ -132,33 +132,33 @@
           <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.PropertyToken.Equals%28System.Reflection.Emit.PropertyToken%2CSystem.Reflection.Emit.PropertyToken%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Emit.PropertyToken a, System.Reflection.Emit.PropertyToken b);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Emit.PropertyToken a, valuetype System.Reflection.Emit.PropertyToken b) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyToken.op_Inequality(System.Reflection.Emit.PropertyToken,System.Reflection.Emit.PropertyToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="a" Type="System.Reflection.Emit.PropertyToken" />
-        <Parameter Name="b" Type="System.Reflection.Emit.PropertyToken" />
-      </Parameters>
-      <Docs>
-        <param name="a">The <see cref="T:System.Reflection.Emit.PropertyToken" /> to compare to <c>b</c>.</param>
-        <param name="b">The <see cref="T:System.Reflection.Emit.PropertyToken" /> to compare to <c>a</c>.</param>
-        <summary>Indicates whether two <see cref="T:System.Reflection.Emit.PropertyToken" /> structures are not equal.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Emit.PropertyToken a, System.Reflection.Emit.PropertyToken b);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Emit.PropertyToken a, valuetype System.Reflection.Emit.PropertyToken b) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyToken.op_Inequality(System.Reflection.Emit.PropertyToken,System.Reflection.Emit.PropertyToken)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>mscorlib</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="a" Type="System.Reflection.Emit.PropertyToken" />
+       <Parameter Name="b" Type="System.Reflection.Emit.PropertyToken" />
+     </Parameters>
+     <Docs>
+       <param name="a">The <see cref="T:System.Reflection.Emit.PropertyToken" /> to compare to <c>b</c>.</param>
+       <param name="b">The <see cref="T:System.Reflection.Emit.PropertyToken" /> to compare to <c>a</c>.</param>
+       <summary>Indicates whether two <see cref="T:System.Reflection.Emit.PropertyToken" /> structures are not equal.</summary>
+       <returns>
+         <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.Emit.PropertyToken.Compare%28System.Reflection.Emit.PropertyToken%2CSystem.Reflection.Emit.PropertyToken%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>

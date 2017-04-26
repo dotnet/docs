@@ -36,10 +36,10 @@
         <returns>The converted value of the specified string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Certain characters have special meaning in [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project files. Examples of the characters include semicolons (;) and asterisks (*). In order to use these special characters as literals, they must be specified with the syntax %nn, where nn represents the ASCII hexadecimal value of the character. This method performs that conversion.  
-  
+Certain characters have special meaning in [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project files. Examples of the characters include semicolons (;) and asterisks (*). In order to use these special characters as literals, they must be specified with the syntax %nn, where nn represents the ASCII hexadecimal value of the character. This method performs that conversion.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -16,14 +16,14 @@
     <summary>Defines the interface that receives workflow instance creation, execution, and termination status information from a <see cref="T:System.Workflow.Runtime.DebugEngine.DebugController" /> object running inside the workflow host application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- This interface is implemented by a .NET remoting object hosted by the debugger.  
-  
+ 
+This interface is implemented by a .NET remoting object hosted by the debugger.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -315,10 +315,10 @@
         <summary>Called to set the initial status of the activities in a workflow.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when a workflow instance is loaded from a persistence store or when the debugger is attached to a workflow host that has workflow instance already running.  
-  
+This method is called when a workflow instance is loaded from a persistence store or when the debugger is attached to a workflow host that has workflow instance already running.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,14 +19,14 @@
     <summary>Defines the counter type, name, and Help string for a custom counter.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Diagnostics.CounterCreationData> class to define custom counters. This example creates counters that display how many items are processed in an operation. The example initializes the counters, collects information from them, and then calculates and displays the results to the console.  
-  
- [!code-cpp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CPP/averagecount32.cpp#1)]
- [!code-csharp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CS/averagecount32.cs#1)]
- [!code-vb[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/VB/averagecount32.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Diagnostics.CounterCreationData> class to define custom counters. This example creates counters that display how many items are processed in an operation. The example initializes the counters, collects information from them, and then calculates and displays the results to the console.  
+ 
+[!code-cpp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CPP/averagecount32.cpp#1)]
+[!code-csharp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CS/averagecount32.cs#1)]
+[!code-vb[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/VB/averagecount32.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,14 +45,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.CounterCreationData" /> class, to a counter of type <see langword="NumberOfItems32" />, and with empty name and help strings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to create an empty instance of the <xref:System.Diagnostics.CounterCreationData> class. Because the example does not pass in any parameters, the <xref:System.Diagnostics.CounterCreationData.CounterHelp%2A>, <xref:System.Diagnostics.CounterCreationData.CounterName%2A>, and <xref:System.Diagnostics.CounterCreationData.CounterType%2A> properties are not specified and must be defined later.  
-  
- [!code-cpp[Diagnostics_CounterCreationData#3](~/samples/snippets/cpp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CPP/diagnostics_countercreationdata.cpp#3)]
- [!code-csharp[Diagnostics_CounterCreationData#3](~/samples/snippets/csharp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CS/diagnostics_countercreationdata.cs#3)]
- [!code-vb[Diagnostics_CounterCreationData#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/Diagnostics_CounterCreationData/VB/diagnostics_countercreationdata.vb#3)]  
-  
+The following code example shows how to create an empty instance of the <xref:System.Diagnostics.CounterCreationData> class. Because the example does not pass in any parameters, the <xref:System.Diagnostics.CounterCreationData.CounterHelp%2A>, <xref:System.Diagnostics.CounterCreationData.CounterName%2A>, and <xref:System.Diagnostics.CounterCreationData.CounterType%2A> properties are not specified and must be defined later.  
+ 
+[!code-cpp[Diagnostics_CounterCreationData#3](~/samples/snippets/cpp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CPP/diagnostics_countercreationdata.cpp#3)]
+[!code-csharp[Diagnostics_CounterCreationData#3](~/samples/snippets/csharp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CS/diagnostics_countercreationdata.cs#3)]
+[!code-vb[Diagnostics_CounterCreationData#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/Diagnostics_CounterCreationData/VB/diagnostics_countercreationdata.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -78,14 +78,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.CounterCreationData" /> class, to a counter of the specified type, using the specified counter name and Help strings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to create an instance of the <xref:System.Diagnostics.CounterCreationData> class, and pass in parameters to set the <xref:System.Diagnostics.CounterCreationData.CounterHelp%2A>, <xref:System.Diagnostics.CounterCreationData.CounterName%2A> and <xref:System.Diagnostics.CounterCreationData.CounterType%2A> properties of the object when it is initialized.  
-  
- [!code-cpp[Diagnostics_CounterCreationData#2](~/samples/snippets/cpp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CPP/diagnostics_countercreationdata.cpp#2)]
- [!code-csharp[Diagnostics_CounterCreationData#2](~/samples/snippets/csharp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CS/diagnostics_countercreationdata.cs#2)]
- [!code-vb[Diagnostics_CounterCreationData#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Diagnostics_CounterCreationData/VB/diagnostics_countercreationdata.vb#2)]  
-  
+The following code example shows how to create an instance of the <xref:System.Diagnostics.CounterCreationData> class, and pass in parameters to set the <xref:System.Diagnostics.CounterCreationData.CounterHelp%2A>, <xref:System.Diagnostics.CounterCreationData.CounterName%2A> and <xref:System.Diagnostics.CounterCreationData.CounterType%2A> properties of the object when it is initialized.  
+ 
+[!code-cpp[Diagnostics_CounterCreationData#2](~/samples/snippets/cpp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CPP/diagnostics_countercreationdata.cpp#2)]
+[!code-csharp[Diagnostics_CounterCreationData#2](~/samples/snippets/csharp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CS/diagnostics_countercreationdata.cs#2)]
+[!code-vb[Diagnostics_CounterCreationData#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Diagnostics_CounterCreationData/VB/diagnostics_countercreationdata.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">You have specified a value for <paramref name="counterType" /> that is not a member of the <see cref="T:System.Diagnostics.PerformanceCounterType" /> enumeration.</exception>
@@ -118,14 +118,14 @@
         <value>The text that describes the counter's behavior.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to get and set the <xref:System.Diagnostics.CounterCreationData.CounterHelp%2A> property. This example creates two counters and sets their <xref:System.Diagnostics.CounterCreationData.CounterHelp%2A> property by using different techniques. When the first counter is initialized, the <xref:System.Diagnostics.CounterCreationData.CounterHelp%2A> data is passed to the constructor, whereas the second counter sets the property explicitly.  
-  
- [!code-cpp[Diagnostics_CounterCreationData#5](~/samples/snippets/cpp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CPP/diagnostics_countercreationdata.cpp#5)]
- [!code-csharp[Diagnostics_CounterCreationData#5](~/samples/snippets/csharp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CS/diagnostics_countercreationdata.cs#5)]
- [!code-vb[Diagnostics_CounterCreationData#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/Diagnostics_CounterCreationData/VB/diagnostics_countercreationdata.vb#5)]  
-  
+The following code example demonstrates how to get and set the <xref:System.Diagnostics.CounterCreationData.CounterHelp%2A> property. This example creates two counters and sets their <xref:System.Diagnostics.CounterCreationData.CounterHelp%2A> property by using different techniques. When the first counter is initialized, the <xref:System.Diagnostics.CounterCreationData.CounterHelp%2A> data is passed to the constructor, whereas the second counter sets the property explicitly.  
+ 
+[!code-cpp[Diagnostics_CounterCreationData#5](~/samples/snippets/cpp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CPP/diagnostics_countercreationdata.cpp#5)]
+[!code-csharp[Diagnostics_CounterCreationData#5](~/samples/snippets/csharp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CS/diagnostics_countercreationdata.cs#5)]
+[!code-vb[Diagnostics_CounterCreationData#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/Diagnostics_CounterCreationData/VB/diagnostics_countercreationdata.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified value is <see langword="null" />.</exception>
@@ -159,14 +159,14 @@
         <value>A name for the counter, which is unique in its category.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to get and set the <xref:System.Diagnostics.CounterCreationData.CounterName%2A> property. This example creates two counters and sets their <xref:System.Diagnostics.CounterCreationData.CounterName%2A> property by using different techniques. When the first counter is initialized, the <xref:System.Diagnostics.CounterCreationData.CounterName%2A> data is passed to the constructor, whereas the second counter sets the property explicitly.  
-  
- [!code-cpp[Diagnostics_CounterCreationData#4](~/samples/snippets/cpp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CPP/diagnostics_countercreationdata.cpp#4)]
- [!code-csharp[Diagnostics_CounterCreationData#4](~/samples/snippets/csharp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CS/diagnostics_countercreationdata.cs#4)]
- [!code-vb[Diagnostics_CounterCreationData#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/Diagnostics_CounterCreationData/VB/diagnostics_countercreationdata.vb#4)]  
-  
+The following code example demonstrates how to get and set the <xref:System.Diagnostics.CounterCreationData.CounterName%2A> property. This example creates two counters and sets their <xref:System.Diagnostics.CounterCreationData.CounterName%2A> property by using different techniques. When the first counter is initialized, the <xref:System.Diagnostics.CounterCreationData.CounterName%2A> data is passed to the constructor, whereas the second counter sets the property explicitly.  
+ 
+[!code-cpp[Diagnostics_CounterCreationData#4](~/samples/snippets/cpp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CPP/diagnostics_countercreationdata.cpp#4)]
+[!code-csharp[Diagnostics_CounterCreationData#4](~/samples/snippets/csharp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CS/diagnostics_countercreationdata.cs#4)]
+[!code-vb[Diagnostics_CounterCreationData#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/Diagnostics_CounterCreationData/VB/diagnostics_countercreationdata.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The specified value is <see langword="null" />.</exception>
@@ -198,14 +198,14 @@
         <value>A <see cref="T:System.Diagnostics.PerformanceCounterType" /> that defines the behavior of the performance counter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to get and set the <xref:System.Diagnostics.CounterCreationData.CounterType%2A> property. This example creates two counters and sets their <xref:System.Diagnostics.CounterCreationData.CounterType%2A> property by using different techniques. When the first counter is initialized, the <xref:System.Diagnostics.CounterCreationData.CounterType%2A> data is passed to the constructor, whereas the second counter sets the property explicitly.  
-  
- [!code-cpp[Diagnostics_CounterCreationData#6](~/samples/snippets/cpp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CPP/diagnostics_countercreationdata.cpp#6)]
- [!code-csharp[Diagnostics_CounterCreationData#6](~/samples/snippets/csharp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CS/diagnostics_countercreationdata.cs#6)]
- [!code-vb[Diagnostics_CounterCreationData#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/Diagnostics_CounterCreationData/VB/diagnostics_countercreationdata.vb#6)]  
-  
+The following code example demonstrates how to get and set the <xref:System.Diagnostics.CounterCreationData.CounterType%2A> property. This example creates two counters and sets their <xref:System.Diagnostics.CounterCreationData.CounterType%2A> property by using different techniques. When the first counter is initialized, the <xref:System.Diagnostics.CounterCreationData.CounterType%2A> data is passed to the constructor, whereas the second counter sets the property explicitly.  
+ 
+[!code-cpp[Diagnostics_CounterCreationData#6](~/samples/snippets/cpp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CPP/diagnostics_countercreationdata.cpp#6)]
+[!code-csharp[Diagnostics_CounterCreationData#6](~/samples/snippets/csharp/VS_Snippets_CLR/Diagnostics_CounterCreationData/CS/diagnostics_countercreationdata.cs#6)]
+[!code-vb[Diagnostics_CounterCreationData#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/Diagnostics_CounterCreationData/VB/diagnostics_countercreationdata.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">You have specified a type that is not a member of the <see cref="T:System.Diagnostics.PerformanceCounterType" /> enumeration.</exception>

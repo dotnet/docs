@@ -20,20 +20,20 @@
     <summary>Used to mark a method definition in an assembly as a stored procedure. The properties on the attribute reflect the physical characteristics used when the type is registered with SQL Server. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.SqlServer.Server.SqlProcedureAttribute> is used only by Microsoft Visual Studio to automatically register the specified method as a stored procedure. It is not used by SQL Server.  
+<xref:Microsoft.SqlServer.Server.SqlProcedureAttribute> is used only by Microsoft Visual Studio to automatically register the specified method as a stored procedure. It is not used by SQL Server.  
+ 
+See "CLR Stored Procedures" in SQL Server 2005 Books Online for more information on CLR stored procedures and examples.  
+ 
   
- See "CLR Stored Procedures" in SQL Server 2005 Books Online for more information on CLR stored procedures and examples.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows a method declaration in an assembly that has been attributed as a stored procedure. The <xref:Microsoft.SqlServer.Server.SqlProcedureAttribute> property has been set to the name of the stored procedure.  
-  
- [!code-csharp[DataWorks SqlProcedureAttribute#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlProcedureAttribute/CS/source.cs#1)]
- [!code-vb[DataWorks SqlProcedureAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlProcedureAttribute/VB/source.vb#1)]  
-  
+The following example shows a method declaration in an assembly that has been attributed as a stored procedure. The <xref:Microsoft.SqlServer.Server.SqlProcedureAttribute> property has been set to the name of the stored procedure.  
+ 
+[!code-csharp[DataWorks SqlProcedureAttribute#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlProcedureAttribute/CS/source.cs#1)]
+[!code-vb[DataWorks SqlProcedureAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlProcedureAttribute/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,18 +72,18 @@
         <value>A <see cref="T:System.String" /> representing the name of the stored procedure.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The property is optional.  
+The property is optional.  
+ 
+The following example specifies that the stored procedure is referenced using the name `sp_sqlName`.  
+ 
   
- The following example specifies that the stored procedure is referenced using the name `sp_sqlName`.  
-  
-   
-  
+ 
 ## Examples  
- [!code-csharp[VbRaddataSQLObjects#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSQLObjects/CS/InsertCurrency.cs#7)]
- [!code-vb[VbRaddataSQLObjects#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSQLObjects/VB/InsertCurrency.vb#7)]  
-  
+[!code-csharp[VbRaddataSQLObjects#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSQLObjects/CS/InsertCurrency.cs#7)]
+[!code-vb[VbRaddataSQLObjects#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSQLObjects/VB/InsertCurrency.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

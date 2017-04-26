@@ -14,12 +14,12 @@
     <summary>Used within the .NET Framework to generate internal mappings to .NET Framework types for SOAP-encoded message parts in a WSDL document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the [Web Services Description Language Tool (Wsdl.exe)](http://msdn.microsoft.com/en-us/b9210348-8bc2-4367-8c91-d1a04b403e88), and the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class, while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of using this class directly, use Wsdl.exe.  
-  
- The <xref:System.Xml.Serialization.SoapSchemaImporter> class has methods to generate internal mappings to .NET Framework types for part elements defined in a WSDL document. The class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification.  
-  
+The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the [Web Services Description Language Tool (Wsdl.exe)](http://msdn.microsoft.com/en-us/b9210348-8bc2-4367-8c91-d1a04b403e88), and the <xref:System.Web.Services.Description.ServiceDescriptionImporter> class, while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of using this class directly, use Wsdl.exe.  
+ 
+The <xref:System.Xml.Serialization.SoapSchemaImporter> class has methods to generate internal mappings to .NET Framework types for part elements defined in a WSDL document. The class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -42,12 +42,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapSchemaImporter" /> class, specifying <see cref="T:System.Xml.Schema.XmlSchema" /> objects representing the XML schemas used by SOAP encoded messages defined in a WSDL document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- SOAP encoding, as defined in Section 5 of the SOAP 1.1 specification, is specified in a WSDL document.  
-  
- Instead of creating an instance of the <xref:System.Xml.Serialization.SoapSchemaImporter> class directly, use Wsdl.exe.  
-  
+SOAP encoding, as defined in Section 5 of the SOAP 1.1 specification, is specified in a WSDL document.  
+ 
+Instead of creating an instance of the <xref:System.Xml.Serialization.SoapSchemaImporter> class directly, use Wsdl.exe.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -72,12 +72,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapSchemaImporter" /> class, specifying <see cref="T:System.Xml.Schema.XmlSchema" /> objects representing the XML schemas used by SOAP encoded messages, plus classes being generated for bindings defined in a WSDL document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- SOAP encoding, as defined in Section 5 of the SOAP 1.1 specification, is specified in a WSDL document.  
-  
- Instead of creating an instance of the <xref:System.Xml.Serialization.SoapSchemaImporter> class directly, use Wsdl.exe.  
-  
+SOAP encoding, as defined in Section 5 of the SOAP 1.1 specification, is specified in a WSDL document.  
+ 
+Instead of creating an instance of the <xref:System.Xml.Serialization.SoapSchemaImporter> class directly, use Wsdl.exe.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -180,12 +180,12 @@
         <returns>The .NET Framework type mapping information for a derived type corresponding to a WSDL message part.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapSchemaImporter.ImportDerivedTypeMapping%2A> method of the <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the [Web Services Description Language Tool (Wsdl.exe)](http://msdn.microsoft.com/en-us/b9210348-8bc2-4367-8c91-d1a04b403e88) while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe.  
-  
- The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification.  
-  
+The <xref:System.Xml.Serialization.SoapSchemaImporter.ImportDerivedTypeMapping%2A> method of the <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the [Web Services Description Language Tool (Wsdl.exe)](http://msdn.microsoft.com/en-us/b9210348-8bc2-4367-8c91-d1a04b403e88) while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe.  
+ 
+The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -216,12 +216,12 @@
         <returns>The .NET Framework type mapping for a single element part of a WSDL message definition.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method of the <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the Wsdl.exe tool while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe.  
-  
- The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification. This signature of the <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method is used when a WSDL message is wrapped within a single part element.  
-  
+The <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method of the <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the Wsdl.exe tool while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe.  
+ 
+The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification. This signature of the <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method is used when a WSDL message is wrapped within a single part element.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -252,12 +252,12 @@
         <returns>The .NET Framework type mappings for the element parts of a WSDL message definition.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method of the <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the Wsdl.exe tool while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe.  
-  
- The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification. The parameter values to the <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method are taken from a message definition in a WSDL document, including the part elements the message element contains.  
-  
+The <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method of the <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the Wsdl.exe tool while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe.  
+ 
+The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification. The parameter values to the <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method are taken from a message definition in a WSDL document, including the part elements the message element contains.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -291,12 +291,12 @@
         <returns>The .NET Framework type mappings for the element parts of a WSDL message definition.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method of the <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the Wsdl.exe tool while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe.  
-  
- The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification. The parameter values to the <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method are taken from a message definition in a WSDL document, including the part elements the message element contains.  
-  
+The <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method of the <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the Wsdl.exe tool while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe.  
+ 
+The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification. The parameter values to the <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method are taken from a message definition in a WSDL document, including the part elements the message element contains.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -335,12 +335,12 @@
         <returns>The .NET Framework type mappings for the element parts of a WSDL message definition.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method of the <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the Wsdl.exe tool while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe.  
-  
- The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification. The parameter values to the <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method are taken from a message definition in a WSDL document, including the part elements the message element contains.  
-  
+The <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method of the <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the Wsdl.exe tool while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe.  
+ 
+The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification. The parameter values to the <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method are taken from a message definition in a WSDL document, including the part elements the message element contains.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

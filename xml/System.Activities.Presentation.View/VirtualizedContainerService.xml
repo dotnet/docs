@@ -14,15 +14,15 @@
     <summary>Represents a virtual container service associated with an editing context and design view. The virtual container service is used to customize the UI virtualization behavior.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- UI virtualization is used to render only the areas of the designer canvas that are currently in view, making the designer more responsive and less memory consuming. By default, both procedural and flowchart designers are virtualization aware, but if you were to construct a control flow designer that would be larger than an individual screen, that designer could benefit from virtualization.  
+UI virtualization is used to render only the areas of the designer canvas that are currently in view, making the designer more responsive and less memory consuming. By default, both procedural and flowchart designers are virtualization aware, but if you were to construct a control flow designer that would be larger than an individual screen, that designer could benefit from virtualization.  
+ 
   
-   
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_VirtualizedContainerService#0](WFD_VirtualizedContainerService#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -90,10 +90,10 @@
         <returns>The destination <see cref="T:System.Object" /> for the value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Presentation.View.VirtualizedContainerService.GetHintSize%2A> does not throw an exception if the property is not found in the store.  
-  
+<xref:System.Activities.Presentation.View.VirtualizedContainerService.GetHintSize%2A> does not throw an exception if the property is not found in the store.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,10 +138,10 @@
         <summary>Provides a XAML type system identifier.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The identifier is a string that consists of the <xref:System.Activities.Presentation.View.VirtualizedContainerService> type plus "HintSize".  
-  
+The identifier is a string that consists of the <xref:System.Activities.Presentation.View.VirtualizedContainerService> type plus "HintSize".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,10 +168,10 @@
         <summary>Attempts to set a value for the Hint Size Name property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method parses the assigned `value` into a <xref:System.Windows.Size> object; therefore the string must be formatted using en-us culture.  
-  
+This method parses the assigned `value` into a <xref:System.Windows.Size> object; therefore the string must be formatted using en-us culture.  
+ 
  ]]></format>
         </remarks>
       </Docs>

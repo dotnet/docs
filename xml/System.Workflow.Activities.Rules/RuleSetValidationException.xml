@@ -14,10 +14,10 @@
     <summary>Represents the exception thrown when processing cannot continue because a rule set cannot be validated.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Workflow.Activities.Rules.RuleSetValidationException> is thrown by the <xref:System.Workflow.Activities.Rules.RuleEngine> constructor if the <xref:System.Workflow.Activities.Rules.RuleSet> that is used has validation errors.  
-  
+A <xref:System.Workflow.Activities.Rules.RuleSetValidationException> is thrown by the <xref:System.Workflow.Activities.Rules.RuleEngine> constructor if the <xref:System.Workflow.Activities.Rules.RuleSet> that is used has validation errors.  
+ 
  ]]></format>
     </remarks>
   </Docs>

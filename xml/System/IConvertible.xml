@@ -29,25 +29,25 @@
     <summary>Defines methods that convert the value of the implementing reference or value type to a common language runtime type that has an equivalent value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface provides methods to convert the value of an instance of an implementing type to a common language runtime type that has an equivalent value. The common language runtime types are <xref:System.Boolean>, <xref:System.SByte>, <xref:System.Byte>, <xref:System.Int16>, <xref:System.UInt16>, <xref:System.Int32>, <xref:System.UInt32>, <xref:System.Int64>, <xref:System.UInt64>, <xref:System.Single>, <xref:System.Double>, <xref:System.Decimal>, <xref:System.DateTime>, <xref:System.Char>, and <xref:System.String>.  
+This interface provides methods to convert the value of an instance of an implementing type to a common language runtime type that has an equivalent value. The common language runtime types are <xref:System.Boolean>, <xref:System.SByte>, <xref:System.Byte>, <xref:System.Int16>, <xref:System.UInt16>, <xref:System.Int32>, <xref:System.UInt32>, <xref:System.Int64>, <xref:System.UInt64>, <xref:System.Single>, <xref:System.Double>, <xref:System.Decimal>, <xref:System.DateTime>, <xref:System.Char>, and <xref:System.String>.  
+ 
+If there is no meaningful conversion to a common language runtime type, then a particular interface method implementation throws <xref:System.InvalidCastException>. For example, if this interface is implemented on a Boolean type, the implementation of the <xref:System.IConvertible.ToDateTime%2A> method throws an exception because there is no meaningful <xref:System.DateTime> equivalent to a Boolean type.  
+ 
+The common language runtime typically exposes the <xref:System.IConvertible> interface through the <xref:System.Convert> class. The common language runtime also uses the <xref:System.IConvertible> interface internally, in explicit interface implementations, to simplify the code used to support conversions in the <xref:System.Convert> class and basic common language runtime types.  
+ 
+In addition to the <xref:System.IConvertible> interface, the .NET Framework provides classes called type converters for converting user-defined data types to other data types. For more information, see the [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada) topic.  
+ 
   
- If there is no meaningful conversion to a common language runtime type, then a particular interface method implementation throws <xref:System.InvalidCastException>. For example, if this interface is implemented on a Boolean type, the implementation of the <xref:System.IConvertible.ToDateTime%2A> method throws an exception because there is no meaningful <xref:System.DateTime> equivalent to a Boolean type.  
-  
- The common language runtime typically exposes the <xref:System.IConvertible> interface through the <xref:System.Convert> class. The common language runtime also uses the <xref:System.IConvertible> interface internally, in explicit interface implementations, to simplify the code used to support conversions in the <xref:System.Convert> class and basic common language runtime types.  
-  
- In addition to the <xref:System.IConvertible> interface, the .NET Framework provides classes called type converters for converting user-defined data types to other data types. For more information, see the [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada) topic.  
-  
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates an implementation of <xref:System.IConvertible> for a Complex number class, allowing it to be cast first as a <xref:System.Double> and then calling the static <xref:System.Convert> members on that <xref:System.Double>.  
-  
- [!code-cpp[System.IConvertible#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IConvertible/CPP/iconvertible.cpp#1)]
- [!code-csharp[System.IConvertible#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IConvertible/CS/iconvertible.cs#1)]
- [!code-vb[System.IConvertible#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IConvertible/VB/iconvertible.vb#1)]  
-  
+The following code sample demonstrates an implementation of <xref:System.IConvertible> for a Complex number class, allowing it to be cast first as a <xref:System.Double> and then calling the static <xref:System.Convert> members on that <xref:System.Double>.  
+ 
+[!code-cpp[System.IConvertible#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IConvertible/CPP/iconvertible.cpp#1)]
+[!code-csharp[System.IConvertible#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IConvertible/CS/iconvertible.cs#1)]
+[!code-vb[System.IConvertible#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IConvertible/VB/iconvertible.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">

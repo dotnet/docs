@@ -32,10 +32,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause" /> class by using the specified XML element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.ClauseType%2A> property is initialized to `null` and the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.DerivationLength%2A> property is initialized to zero in the new instance.  
-  
+The <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.ClauseType%2A> property is initialized to `null` and the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.DerivationLength%2A> property is initialized to zero in the new instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -63,10 +63,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause" /> class by using the specified XML element, nonce, and derivation length.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.ClauseType%2A> property is initialized to `null` in the new instance.  
-  
+The <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.ClauseType%2A> property is initialized to `null` in the new instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -95,10 +95,10 @@
           <see langword="true" /> if the specified key identifier clause matches the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the match to succeed, the specified key identifier clause must be assignable from <xref:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause> and its markup (XML) must match that of this instance. (The <xref:System.Xml.XmlNode.OuterXml%2A> property of the element specified by the <xref:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.ReferenceXml%2A> property is compared for the two instances.)  
-  
+For the match to succeed, the specified key identifier clause must be assignable from <xref:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause> and its markup (XML) must match that of this instance. (The <xref:System.Xml.XmlNode.OuterXml%2A> property of the element specified by the <xref:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.ReferenceXml%2A> property is compared for the two instances.)  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -30,28 +30,28 @@
     <summary>Represents a try/catch/finally/fault block.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The body block is protected by the try block.  
+The body block is protected by the try block.  
+ 
+The handlers consist of a set of <xref:System.Linq.Expressions.CatchBlock> expressions that can be either catch statements or filters.  
+ 
+The fault block runs if an exception is thrown.  
+ 
+The finally block runs regardless of how control exits the body.  
+ 
+Only one of fault or finally blocks can be supplied.  
+ 
+The return type of the try block must match the return type of any associated catch statements.  
+ 
   
- The handlers consist of a set of <xref:System.Linq.Expressions.CatchBlock> expressions that can be either catch statements or filters.  
-  
- The fault block runs if an exception is thrown.  
-  
- The finally block runs regardless of how control exits the body.  
-  
- Only one of fault or finally blocks can be supplied.  
-  
- The return type of the try block must match the return type of any associated catch statements.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to create a <xref:System.Linq.Expressions.TryExpression> object that contains a catch statement by using the <xref:System.Linq.Expressions.Expression.TryCatch%2A> method.  
-  
- [!code-csharp[System.Linq.Expressions.ExpressionDev10#47](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#47)]
- [!code-vb[System.Linq.Expressions.ExpressionDev10#47](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#47)]  
-  
+The following example demonstrates how to create a <xref:System.Linq.Expressions.TryExpression> object that contains a catch statement by using the <xref:System.Linq.Expressions.Expression.TryCatch%2A> method.  
+ 
+[!code-csharp[System.Linq.Expressions.ExpressionDev10#47](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#47)]
+[!code-vb[System.Linq.Expressions.ExpressionDev10#47](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#47)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

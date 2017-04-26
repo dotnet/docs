@@ -22,17 +22,17 @@
     <summary>Specifies that a XAML namespace can be subsumed by another XAML namespace. Typically, the subsuming XAML namespace is indicated in a previously defined <see cref="T:System.Windows.Markup.XmlnsDefinitionAttribute" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applying the <xref:System.Windows.Markup.XmlnsCompatibleWithAttribute> enables an assembly to provide a new and compatible namespace for another XAML namespace, as previously indicated by <xref:System.Windows.Markup.XmlnsDefinitionAttribute>.  For example, `"http://www.adatum.com/2003/controls"` could be marked compatible with a defined XAML namespace identified as `"http://www.adatum.com/2005/controls"` through the following assembly-level attributes:  
-  
+Applying the <xref:System.Windows.Markup.XmlnsCompatibleWithAttribute> enables an assembly to provide a new and compatible namespace for another XAML namespace, as previously indicated by <xref:System.Windows.Markup.XmlnsDefinitionAttribute>.  For example, `"http://www.adatum.com/2003/controls"` could be marked compatible with a defined XAML namespace identified as `"http://www.adatum.com/2005/controls"` through the following assembly-level attributes:  
+ 
 ```  
 [assembly:System.Windows.Markup.XmlnsDefinition("http://www.adatum.com/2005/controls", "Adatum.Controls")]  
 [assembly: System.Windows.Markup.XmlnsCompatibleWith("http://www.adatum.com/2003/controls", "http://www.adatum.com/2005/controls")]  
 ```  
-  
- In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.XmlnsCompatibleWithAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
-  
+ 
+In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.XmlnsCompatibleWithAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>

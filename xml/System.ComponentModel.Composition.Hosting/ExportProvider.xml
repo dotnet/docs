@@ -91,12 +91,12 @@
         <returns>The export with the contract name derived from the specified type parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Composition.ImportCardinalityMismatchException">There are zero <see cref="T:System.Lazy`1" /> objects with the contract name derived from <paramref name="T" /> in the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> object.  
@@ -133,12 +133,12 @@
         <returns>The export with the specified contract name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Composition.ImportCardinalityMismatchException">There are zero <see cref="T:System.Lazy`1" /> objects with the contract name derived from <paramref name="T" /> in the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> object.  
@@ -174,12 +174,12 @@
         <returns>System.Lazy`2</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Composition.ImportCardinalityMismatchException">There are zero <see cref="T:System.Lazy`2" /> objects with the contract name derived from <paramref name="T" /> in the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> object.  
@@ -220,12 +220,12 @@
         <returns>The export with the specified contract name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Composition.ImportCardinalityMismatchException">There are zero <see cref="T:System.Lazy`2" /> objects with the contract name derived from <paramref name="T" /> in the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> object.  
@@ -261,12 +261,12 @@
         <returns>The exported object with the contract name derived from the specified type parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Composition.ImportCardinalityMismatchException">There are zero exported objects with the contract name derived from <paramref name="T" /> in the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" />.  
@@ -305,12 +305,12 @@
         <returns>The exported object with the specified contract name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Composition.ImportCardinalityMismatchException">There are zero exported objects with the contract name derived from <paramref name="T" /> in the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" />.  
@@ -346,14 +346,14 @@
         <returns>The exported object with the contract name derived from <paramref name="T" />, if found; otherwise, the default value for <paramref name="T" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the exported object is not found, this method returns the appropriate default value for `T`; for example, zero for integer types, `false` for Boolean types, and `null` for reference types.  
-  
- The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+If the exported object is not found, this method returns the appropriate default value for `T`; for example, zero for integer types, `false` for Boolean types, and `null` for reference types.  
+ 
+The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Composition.ImportCardinalityMismatchException">There is more than one exported object with the contract name derived from <paramref name="T" /> in the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" />.</exception>
@@ -388,14 +388,14 @@
         <returns>The exported object with the specified contract name, if found; otherwise, the default value for <paramref name="T" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the exported object is not found, this method returns the appropriate default value for `T`; for example, zero for integer types, `false` for Boolean types, and `null` for reference types.  
-  
- The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+If the exported object is not found, this method returns the appropriate default value for `T`; for example, zero for integer types, `false` for Boolean types, and `null` for reference types.  
+ 
+The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Composition.ImportCardinalityMismatchException">There is more than one exported object with the specified contract name in the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" />.</exception>
@@ -427,12 +427,12 @@
         <returns>The exported objects with the contract name derived from the specified type parameter, if found; otherwise, an empty <see cref="T:System.Collections.ObjectModel.Collection`1" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> object has been disposed of.</exception>
@@ -466,12 +466,12 @@
         <returns>The exported objects with the specified contract name, if found; otherwise, an empty <see cref="T:System.Collections.ObjectModel.Collection`1" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> object has been disposed of.</exception>
@@ -573,12 +573,12 @@
         <returns>A collection of all the <see cref="T:System.Lazy`2" /> objects for the contract matching <paramref name="contractName" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `type`.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `type`.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> object has been disposed of.</exception>
@@ -611,12 +611,12 @@
         <returns>The <see cref="T:System.Lazy`1" /> objects with the contract name derived from <paramref name="T" />, if found; otherwise, an empty <see cref="T:System.Collections.Generic.IEnumerable`1" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> object has been disposed of.</exception>
@@ -648,12 +648,12 @@
         <returns>The <see cref="T:System.Lazy`1" /> objects with the specified contract name, if found; otherwise, an empty <see cref="T:System.Collections.Generic.IEnumerable`1" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> object has been disposed of.</exception>
@@ -684,12 +684,12 @@
         <returns>The <see cref="T:System.Lazy`2" /> objects with the contract name derived from <paramref name="T" />, if found; otherwise, an empty <see cref="T:System.Collections.Generic.IEnumerable`1" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> object has been disposed of.</exception>
@@ -725,12 +725,12 @@
         <returns>The <see cref="T:System.Lazy`2" /> objects with the specified contract name if found; otherwise, an empty <see cref="T:System.Collections.Generic.IEnumerable`1" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `T`.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> object has been disposed of.</exception>
@@ -762,10 +762,10 @@
         <returns>A collection that contains all the exports that match the specified condition.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Overrides of this method should not treat cardinality-related mismatches as errors, and should not throw exceptions in those cases. For example, if <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.Cardinality%2A> is <xref:System.ComponentModel.Composition.Primitives.ImportCardinality> and there are zero <xref:System.ComponentModel.Composition.Primitives.Export> objects that match the conditions of the specified <xref:System.ComponentModel.Composition.Primitives.ImportDefinition>, an empty <xref:System.Collections.Generic.IEnumerable%601> collection should be returned.  
-  
+Overrides of this method should not treat cardinality-related mismatches as errors, and should not throw exceptions in those cases. For example, if <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.Cardinality%2A> is <xref:System.ComponentModel.Composition.Primitives.ImportCardinality> and there are zero <xref:System.ComponentModel.Composition.Primitives.Export> objects that match the conditions of the specified <xref:System.ComponentModel.Composition.Primitives.ImportDefinition>, an empty <xref:System.Collections.Generic.IEnumerable%601> collection should be returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>

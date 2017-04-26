@@ -32,15 +32,15 @@
         <value>A zero-based ordinal number representing the column containing the table cell or item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
-  
- [!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
- [!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
+In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
+ 
+[!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
+[!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
 [!code-csharp[UIATableItemPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#103)]
 [!code-vb[UIATableItemPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#103)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -62,15 +62,15 @@
         <value>The number of columns spanned. The default value is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
-  
- [!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
- [!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
+In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
+ 
+[!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
+[!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
 [!code-csharp[UIATableItemPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#103)]
 [!code-vb[UIATableItemPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#103)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,15 +92,15 @@
         <value>A [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element that supports the GridPattern control pattern and represents the table cell or item container.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
-  
- [!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
- [!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
+In the following example, an <xref:System.Windows.Automation.AutomationElement> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
+ 
+[!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
+[!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
 [!code-csharp[UIATableItemPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#103)]
 [!code-vb[UIATableItemPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#103)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -123,15 +123,15 @@
         <returns>A collection of column header elements. The default is an empty array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
-  
- [!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
- [!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
+In the following example, an <xref:System.Windows.Automation.AutomationElement> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
+ 
+[!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
+[!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
 [!code-csharp[UIATableItemPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#103)]
 [!code-vb[UIATableItemPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#103)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,15 +154,15 @@
         <returns>A collection of row header elements. The default is an empty array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
-  
- [!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
- [!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
+In the following example, an <xref:System.Windows.Automation.AutomationElement> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
+ 
+[!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
+[!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
 [!code-csharp[UIATableItemPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#103)]
 [!code-vb[UIATableItemPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#103)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,15 +184,15 @@
         <value>A zero-based ordinal number representing the column containing the table cell or item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
-  
- [!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
- [!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
+In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
+ 
+[!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
+[!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
 [!code-csharp[UIATableItemPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#103)]
 [!code-vb[UIATableItemPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#103)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,15 +214,15 @@
         <value>The number of columns spanned. The default value is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
-  
- [!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
- [!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
+In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
+ 
+[!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
+[!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
 [!code-csharp[UIATableItemPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#103)]
 [!code-vb[UIATableItemPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#103)]  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

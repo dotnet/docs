@@ -17,10 +17,10 @@
     <summary>Indicates that the implementing message sink will be provided by dynamically registered properties.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Dynamic message sinks are provided with notifications of call start and call finish with flags indicating whether the call is currently on the client side or server side (this is useful for the context level sinks).  
-  
+Dynamic message sinks are provided with notifications of call start and call finish with flags indicating whether the call is currently on the client side or server side (this is useful for the context level sinks).  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -51,10 +51,10 @@
         <summary>Indicates that a call is returning.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Boolean parameters indicate whether the sink is located on the client side or the server side and whether the call is using the <xref:System.Runtime.Remoting.Messaging.IMessageSink.AsyncProcessMessage%2A> method.  
-  
+The Boolean parameters indicate whether the sink is located on the client side or the server side and whether the call is using the <xref:System.Runtime.Remoting.Messaging.IMessageSink.AsyncProcessMessage%2A> method.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -85,10 +85,10 @@
         <summary>Indicates that a call is starting.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Boolean parameters indicate whether the sink is located on the client side or the server side and whether the call is using the <xref:System.Runtime.Remoting.Messaging.IMessageSink.AsyncProcessMessage%2A> method.  
-  
+The Boolean parameters indicate whether the sink is located on the client side or the server side and whether the call is using the <xref:System.Runtime.Remoting.Messaging.IMessageSink.AsyncProcessMessage%2A> method.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

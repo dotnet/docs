@@ -32,10 +32,10 @@
         <value>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that contains the strokes that have been removed from the lasso path since the last time the <see cref="E:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged" /> event was raised.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Ink.Stroke> is removed from the lasso path when it is no longer within the bounds of the lasso path.  
-  
+A <xref:System.Windows.Ink.Stroke> is removed from the lasso path when it is no longer within the bounds of the lasso path.  
+ 
  ]]></format>
         </remarks>
       </Docs>

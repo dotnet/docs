@@ -36,18 +36,18 @@
     <summary>Enables multiple tasks to cooperatively work on an algorithm in parallel through multiple phases.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A group of tasks cooperate by moving through a series of phases, where each in the group signals it has arrived at the <xref:System.Threading.Barrier> in a given phase and implicitly waits for all others to arrive. The same <xref:System.Threading.Barrier> can be used for multiple phases.  
+A group of tasks cooperate by moving through a series of phases, where each in the group signals it has arrived at the <xref:System.Threading.Barrier> in a given phase and implicitly waits for all others to arrive. The same <xref:System.Threading.Barrier> can be used for multiple phases.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use a barrier:  
-  
- [!code-csharp[System.Threading.Barrier#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.barrier/cs/barrier.cs#01)]
- [!code-vb[System.Threading.Barrier#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.barrier/vb/barrier.vb#01)]  
-  
+The following example shows how to use a barrier:  
+ 
+[!code-csharp[System.Threading.Barrier#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.barrier/cs/barrier.cs#01)]
+[!code-vb[System.Threading.Barrier#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.barrier/vb/barrier.vb#01)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Threading.Barrier" /> are thread-safe and may be used concurrently from multiple threads, with the exception of Dispose, which must only be used when all other operations on the <see cref="T:System.Threading.Barrier" /> have completed.</threadsafe>
@@ -112,10 +112,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Barrier" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `postPhaseAction` delegate will be executed after all participants have arrived at the barrier in one phase. The participants will not be released to the next phase until the postPhaseAction delegate has completed execution.  
-  
+The `postPhaseAction` delegate will be executed after all participants have arrived at the barrier in one phase. The participants will not be released to the next phase until the postPhaseAction delegate has completed execution.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -150,10 +150,10 @@
         <returns>The phase number of the barrier in which the new participants will first participate.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the barrier is currently executing a post phase action, this call is blocked until the post phase action completes and the barrier has moved on to the next phase.  
-  
+If the barrier is currently executing a post phase action, this call is blocked until the post phase action completes and the barrier has moved on to the next phase.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
@@ -195,10 +195,10 @@
         <returns>The phase number of the barrier in which the new participants will first participate.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the barrier is currently executing a post phase action, this call is blocked until the post phase action completes and the barrier has moved on to the next phase.  
-  
+If the barrier is currently executing a post phase action, this call is blocked until the post phase action completes and the barrier has moved on to the next phase.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
@@ -266,15 +266,15 @@
         <summary>Releases all resources used by the current instance of the <see cref="T:System.Threading.Barrier" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call `Dispose` when you are finished using the <xref:System.Threading.Barrier>. The `Dispose` method leaves the <xref:System.Threading.Barrier> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.Barrier> so the garbage collector can reclaim the memory that the <xref:System.Threading.Barrier> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call `Dispose` when you are finished using the <xref:System.Threading.Barrier>. The `Dispose` method leaves the <xref:System.Threading.Barrier> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.Barrier> so the garbage collector can reclaim the memory that the <xref:System.Threading.Barrier> was occupying.  
+ 
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Threading.Barrier>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Threading.Barrier> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The method was invoked from within a post-phase action.</exception>
@@ -310,10 +310,10 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Threading.Barrier" />, and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike most of the members of <xref:System.Threading.Barrier>, Dispose is not thread-safe and may not be used concurrently with other members of this instance.  
-  
+Unlike most of the members of <xref:System.Threading.Barrier>, Dispose is not thread-safe and may not be used concurrently with other members of this instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -373,10 +373,10 @@
         <value>Returns the number of participants in the barrier that haven’t yet signaled in the current phase.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This could be 0 during a post-phase action delegate execution or if the ParticipantCount is 0.  
-  
+This could be 0 during a post-phase action delegate execution or if the ParticipantCount is 0.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -445,10 +445,10 @@
         <summary>Notifies the <see cref="T:System.Threading.Barrier" /> that there will be fewer participants.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `participantCount` participants are already waiting on the barrier, this removal fulfills the barrier, the post phase action is executed and all of the participants are woken as if this participant being removed had successfully reached the barrier.  
-  
+If `participantCount` participants are already waiting on the barrier, this removal fulfills the barrier, the post phase action is executed and all of the participants are woken as if this participant being removed had successfully reached the barrier.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
@@ -636,10 +636,10 @@
         <returns>if all participants reached the barrier within the specified time; otherwise false</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `cancellationToken` was canceled before the signal took effect, then an <xref:System.OperationCanceledException> is thrown and the <xref:System.Threading.Barrier.ParticipantsRemaining%2A> value is not decreased. If the `cancellationToken` is not canceled or is canceled after the signal takes effect then <xref:System.Threading.Barrier.ParticipantsRemaining%2A> is decreased and no <xref:System.OperationCanceledException> is thrown.  
-  
+If the `cancellationToken` was canceled before the signal took effect, then an <xref:System.OperationCanceledException> is thrown and the <xref:System.Threading.Barrier.ParticipantsRemaining%2A> value is not decreased. If the `cancellationToken` is not canceled or is canceled after the signal takes effect then <xref:System.Threading.Barrier.ParticipantsRemaining%2A> is decreased and no <xref:System.OperationCanceledException> is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">

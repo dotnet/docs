@@ -19,12 +19,12 @@
     <summary>Represents a substitute input string that is used when the original input character cannot be encoded. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It might not be possible to convert a character to an equivalent encoded byte sequence if no suitable encoding exists. A common reason for an encoding to fail is if the conversion operation uses a code page that cannot represent the character to encode.  
-  
- If the input character cannot be converted to an output byte sequence, a <xref:System.Text.EncoderReplacementFallback?displayProperty=fullName> object provides a replacement string that is substituted for the original input character. The replacement string initializes the value of the <xref:System.Text.EncoderReplacementFallback> object, and the value of the <xref:System.Text.EncoderReplacementFallback> object initializes the value of an <xref:System.Text.EncoderReplacementFallbackBuffer> object. The value of an <xref:System.Text.EncoderReplacementFallbackBuffer> object is called the replacement fallback buffer. The conversion operation encodes the replacement fallback buffer instead of the original input character, then continues to process the remainder of the input.  
-  
+It might not be possible to convert a character to an equivalent encoded byte sequence if no suitable encoding exists. A common reason for an encoding to fail is if the conversion operation uses a code page that cannot represent the character to encode.  
+ 
+If the input character cannot be converted to an output byte sequence, a <xref:System.Text.EncoderReplacementFallback?displayProperty=fullName> object provides a replacement string that is substituted for the original input character. The replacement string initializes the value of the <xref:System.Text.EncoderReplacementFallback> object, and the value of the <xref:System.Text.EncoderReplacementFallback> object initializes the value of an <xref:System.Text.EncoderReplacementFallbackBuffer> object. The value of an <xref:System.Text.EncoderReplacementFallbackBuffer> object is called the replacement fallback buffer. The conversion operation encodes the replacement fallback buffer instead of the original input character, then continues to process the remainder of the input.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,10 +81,10 @@
           <see langword="true" /> if the replacement string is not empty; <see langword="false" /> if the replacement string is empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Text.Encoding.GetBytes%2A> and <xref:System.Text.Encoder.Convert%2A> methods call <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> if they encounter an unknown character in their input. If the return value of <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> is `true`, the calling method can invoke the <xref:System.Text.EncoderReplacementFallbackBuffer.GetNextChar%2A> method to obtain each character in the replacement fallback buffer.  
-  
+The <xref:System.Text.Encoding.GetBytes%2A> and <xref:System.Text.Encoder.Convert%2A> methods call <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> if they encounter an unknown character in their input. If the return value of <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> is `true`, the calling method can invoke the <xref:System.Text.EncoderReplacementFallbackBuffer.GetNextChar%2A> method to obtain each character in the replacement fallback buffer.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">This method is called again before the <see cref="M:System.Text.EncoderReplacementFallbackBuffer.GetNextChar" /> method has read all the characters in the replacement fallback buffer.</exception>
@@ -121,10 +121,10 @@
           <see langword="true" /> if the replacement string is not empty; <see langword="false" /> if the replacement string is empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Text.Encoding.GetBytes%2A> and <xref:System.Text.Encoder.Convert%2A> methods call <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> if they encounter an unknown character in their input. If the return value of <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> is `true`, the calling method can invoke the <xref:System.Text.EncoderReplacementFallbackBuffer.GetNextChar%2A> method to obtain each character in the replacement fallback buffer.  
-  
+The <xref:System.Text.Encoding.GetBytes%2A> and <xref:System.Text.Encoder.Convert%2A> methods call <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> if they encounter an unknown character in their input. If the return value of <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> is `true`, the calling method can invoke the <xref:System.Text.EncoderReplacementFallbackBuffer.GetNextChar%2A> method to obtain each character in the replacement fallback buffer.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">This method is called again before the <see cref="M:System.Text.EncoderReplacementFallbackBuffer.GetNextChar" /> method has read all the replacement string characters.</exception>
@@ -158,10 +158,10 @@
         <returns>The next Unicode character in the replacement fallback buffer that the application can encode.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Text.Encoding.GetBytes%2A> and <xref:System.Text.Encoder.Convert%2A> methods call <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> if they encounter an unknown surrogate pair or character in their input. If the return value of <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> is `true`, the calling method can invoke <xref:System.Text.EncoderReplacementFallbackBuffer.GetNextChar%2A> to obtain each character in the replacement fallback buffer.  
-  
+The <xref:System.Text.Encoding.GetBytes%2A> and <xref:System.Text.Encoder.Convert%2A> methods call <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> if they encounter an unknown surrogate pair or character in their input. If the return value of <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> is `true`, the calling method can invoke <xref:System.Text.EncoderReplacementFallbackBuffer.GetNextChar%2A> to obtain each character in the replacement fallback buffer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,10 +213,10 @@
         <value>The number of characters in the replacement fallback buffer that have not yet been processed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> method returns `true` if the <xref:System.Text.EncoderReplacementFallbackBuffer.Remaining%2A> property is nonzero.  
-  
+The <xref:System.Text.EncoderReplacementFallbackBuffer.Fallback%2A> method returns `true` if the <xref:System.Text.EncoderReplacementFallbackBuffer.Remaining%2A> property is nonzero.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,10 +248,10 @@
         <summary>Initializes all internal state information and data in this instance of <see cref="T:System.Text.EncoderReplacementFallbackBuffer" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Text.EncoderReplacementFallbackBuffer.Reset%2A> method discards any persisted state information and data that govern emitting a replacement string. Unpredictable results occur if the encoding operation continues after the <xref:System.Text.EncoderReplacementFallbackBuffer.Reset%2A> method is invoked.  
-  
+The <xref:System.Text.EncoderReplacementFallbackBuffer.Reset%2A> method discards any persisted state information and data that govern emitting a replacement string. Unpredictable results occur if the encoding operation continues after the <xref:System.Text.EncoderReplacementFallbackBuffer.Reset%2A> method is invoked.  
+ 
  ]]></format>
         </remarks>
       </Docs>

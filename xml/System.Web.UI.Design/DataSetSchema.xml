@@ -18,20 +18,20 @@
     <summary>The <see cref="T:System.Web.UI.Design.DataSetSchema" /> class represents the structure, or schema, of a data source. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.Design.DataSetSchema> class to list the elements of a data source at design time. This implementation of <xref:System.Web.UI.Design.IDataSourceSchema> uses a <xref:System.Data.DataSet> to list the views and fields.  
-  
- The <xref:System.Web.UI.Design.DataSetSchema> class is used by custom control designer components to provide lists of views and fields for data-bound controls at design time.  
-  
- To examine the components of data using a <xref:System.Data.DataSet>, use the following classes:  
-  
+Use the <xref:System.Web.UI.Design.DataSetSchema> class to list the elements of a data source at design time. This implementation of <xref:System.Web.UI.Design.IDataSourceSchema> uses a <xref:System.Data.DataSet> to list the views and fields.  
+ 
+The <xref:System.Web.UI.Design.DataSetSchema> class is used by custom control designer components to provide lists of views and fields for data-bound controls at design time.  
+ 
+To examine the components of data using a <xref:System.Data.DataSet>, use the following classes:  
+ 
 -   <xref:System.Web.UI.Design.DataSetSchema>  
-  
+ 
 -   <xref:System.Web.UI.Design.DataSetViewSchema>  
-  
+ 
 -   <xref:System.Web.UI.Design.DataSetFieldSchema>  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,10 +72,10 @@
         <returns>An array of <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each of the <xref:System.Web.UI.Design.IDataSourceViewSchema> objects returned by this method can be converted to a <xref:System.Web.UI.Design.DataSetViewSchema> object.  
-  
+Each of the <xref:System.Web.UI.Design.IDataSourceViewSchema> objects returned by this method can be converted to a <xref:System.Web.UI.Design.DataSetViewSchema> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

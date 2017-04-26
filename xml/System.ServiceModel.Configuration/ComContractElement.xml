@@ -14,19 +14,19 @@
     <summary>Specifies a COM+ integration service contract. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- COM+ integration service contracts are currently restricted to the “http://tempuri.org” namespace, and the contract name is derived from the supporting COM interface. You can, however, specify alternatives by using the `comContracts` section in the configuration file.  
+COM+ integration service contracts are currently restricted to the “http://tempuri.org” namespace, and the contract name is derived from the supporting COM interface. You can, however, specify alternatives by using the `comContracts` section in the configuration file.  
+ 
   
-   
-  
+ 
 ## Examples  
- You can use the following configuration to specify the namespace, contract name, and user defined types to be included. You can also specify other settings for a service contract  
-  
- <!-- TODO: review snippet reference [!code[S_UEComContractElement#100](~/samples/snippets/common/VS_Snippets_CFX/s_uecomcontractelement/common/app.config#100)]  -->  
-  
- When the service is initialized, the specified namespaces and contract names are applied to the generated service descriptions.  
-  
+You can use the following configuration to specify the namespace, contract name, and user defined types to be included. You can also specify other settings for a service contract  
+ 
+<!-- TODO: review snippet reference [!code[S_UEComContractElement#100](~/samples/snippets/common/VS_Snippets_CFX/s_uecomcontractelement/common/app.config#100)]  -->  
+ 
+When the service is initialized, the specified namespaces and contract names are applied to the generated service descriptions.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -112,22 +112,22 @@
         <value>The collection of COM+ methods that are exposed when the interface on a COM+ component is exposed as a Web service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The COM+ integration configuration tool (ComSvcConfig.exe) can be used to add specific methods from a COM interface to appear on the generated service contract.  
-  
- For example, you can use the following command to add the three named methods from the `IFinances` COM interface on the `ItemOrders.Financial` component, to the generated service contract.  
-  
+The COM+ integration configuration tool (ComSvcConfig.exe) can be used to add specific methods from a COM interface to appear on the generated service contract.  
+ 
+For example, you can use the following command to add the three named methods from the `IFinances` COM interface on the `ItemOrders.Financial` component, to the generated service contract.  
+ 
 ```  
 ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFinances.{TransferFunds,AddFunds,RemoveFunds} /hosting:complus  
 ```  
-  
- When you run the ComSvcConfig.exe tool, it then generates the following service contract listing the previously mentioned methods as `exposedMethod` elements.  
-  
- <!-- TODO: review snippet reference [!code[S_UEComContractElement#101](~/samples/snippets/common/VS_Snippets_CFX/s_uecomcontractelement/common/app2.config#101)]  -->  
-  
- At service initialization time, the runtime attempts to generate a service contract by reflecting over and adding only the methods included in the list of `exposedMethod` elements. A trace is produced for every interface method that is not included on the service contract.  
-  
+ 
+When you run the ComSvcConfig.exe tool, it then generates the following service contract listing the previously mentioned methods as `exposedMethod` elements.  
+ 
+<!-- TODO: review snippet reference [!code[S_UEComContractElement#101](~/samples/snippets/common/VS_Snippets_CFX/s_uecomcontractelement/common/app2.config#101)]  -->  
+ 
+At service initialization time, the runtime attempts to generate a service contract by reflecting over and adding only the methods included in the list of `exposedMethod` elements. A trace is produced for every interface method that is not included on the service contract.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,10 +248,10 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
           <see langword="true" /> if the contract can only be used on sessionful bindings; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the service is initialized, the integration runtime ensures that this setting is consistent with the type of binding to be used. An exception is generated if one or more of the bindings for the contract are in conflict. If this property is `false`, a one-way channel is in use and there are any [out] parameters, an exception is also generated.  
-  
+When the service is initialized, the integration runtime ensures that this setting is consistent with the type of binding to be used. An exception is generated if one or more of the bindings for the contract are in conflict. If this property is `false`, a one-way channel is in use and there are any [out] parameters, an exception is also generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -278,31 +278,31 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
         <value>The collection of User Defined Types (UDT).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The COM+ integration runtime creates services by inspecting the type library. When a COM+ component contains methods that pass a VARIANT, the system cannot determine the actual types to be passed prior to runtime. Therefore, when you attempt to pass a User Defined Type (UDT) within a VARIANT, it fails because it is not a known type for serialization.  
+The COM+ integration runtime creates services by inspecting the type library. When a COM+ component contains methods that pass a VARIANT, the system cannot determine the actual types to be passed prior to runtime. Therefore, when you attempt to pass a User Defined Type (UDT) within a VARIANT, it fails because it is not a known type for serialization.  
+ 
+To circumvent this problem, you can add the UDTs to the configuration file so that they can be included as known types on the appropriate service contract. In order to do so, you have to uniquely identify the UDT and the contract(s), that is, the original COM interface(s) that uses it.  
+ 
   
- To circumvent this problem, you can add the UDTs to the configuration file so that they can be included as known types on the appropriate service contract. In order to do so, you have to uniquely identify the UDT and the contract(s), that is, the original COM interface(s) that uses it.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates adding two specific UDTs to the <`userDefinedTypes`> section of the configuration file for this purpose.  
-  
- <!-- TODO: review snippet reference [!code[S_UEComContractElement#102](~/samples/snippets/common/VS_Snippets_CFX/s_uecomcontractelement/common/app3.config#102)]  -->  
-  
- The attributes of the <`userDefinedType`> element are defined as follows:  
-  
+The following example demonstrates adding two specific UDTs to the <`userDefinedTypes`> section of the configuration file for this purpose.  
+ 
+<!-- TODO: review snippet reference [!code[S_UEComContractElement#102](~/samples/snippets/common/VS_Snippets_CFX/s_uecomcontractelement/common/app3.config#102)]  -->  
+ 
+The attributes of the <`userDefinedType`> element are defined as follows:  
+ 
 -   `typeName`: An optional attribute that provides the readable type name. This is not used by the runtime but helps a reader to distinguish the types.  
-  
+ 
 -   `typeLibID`: A GUID string that specifies the registered type library that defines the type.  
-  
+ 
 -   `typeLibVersion`: A string that specifies the type library version that defines the type.  
-  
+ 
 -   `typeDefID`: A GUID string that specifies the specific UDT type within the registered type library.  
-  
- When the service is initialized, the integration runtime looks up the specified types and adds them to the known types collection for the specified contracts.  
-  
+ 
+When the service is initialized, the integration runtime looks up the specified types and adds them to the known types collection for the specified contracts.  
+ 
  ]]></format>
         </remarks>
       </Docs>

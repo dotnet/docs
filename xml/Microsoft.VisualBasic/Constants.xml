@@ -19,10 +19,10 @@
     <summary>The <see langword="Constants" /> module contains miscellaneous constants. These constants can be used anywhere in your code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This module supports the Visual Basic language constants that correspond to the members of many Visual Basic enumerations:  
-  
+This module supports the Visual Basic language constants that correspond to the members of many Visual Basic enumerations:  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,12 +44,12 @@
         <summary>Indicates that the <see langword="Abort" /> button was clicked in a message box. Returned by the <see langword="MsgBox" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
-  
- The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
+ 
+The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -71,10 +71,10 @@
         <summary>Indicates that the <see langword="Abort" />, <see langword="Retry" />, and <see langword="Ignore" /> buttons will be displayed when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,10 +96,10 @@
         <summary>Indicates that the message box will be displayed as a modal dialog box when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,14 +121,14 @@
         <summary>Indicates that the file has changed since the last backup operation for file-access functions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
-  
- The `Attributes` argument takes the `FileAttribute` enumeration members.  
-  
- When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
-  
+When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
+ 
+The `Attributes` argument takes the `FileAttribute` enumeration members.  
+ 
+When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,12 +150,12 @@
         <summary>Indicates that the type of a variant object is an array. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,12 +194,12 @@
         <summary>Specifies that a binary comparison should be performed when comparison functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call comparison functions, you can use the <xref:Microsoft.VisualBasic.CompareMethod> enumeration in your code in place of the actual values. The `Compare` argument takes the `CompareMethod` enumeration members.  
-  
- For binary and text comparisons, see [Option Compare Statement](~/docs/visual-basic/language-reference/statements/option-compare-statement.md).  
-  
+When you call comparison functions, you can use the <xref:Microsoft.VisualBasic.CompareMethod> enumeration in your code in place of the actual values. The `Compare` argument takes the `CompareMethod` enumeration members.  
+ 
+For binary and text comparisons, see [Option Compare Statement](~/docs/visual-basic/language-reference/statements/option-compare-statement.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -221,12 +221,12 @@
         <summary>Indicates that the type of a variant object is <see langword="Boolean" />. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -248,12 +248,12 @@
         <summary>Indicates that the type of a variant object is <see langword="Byte" />. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,12 +275,12 @@
         <summary>Indicates that the <see langword="Cancel" /> button was clicked in a message box. Returned by the <see langword="MsgBox" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
-  
- The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
+ 
+The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -319,10 +319,10 @@
         <summary>Indicates that the critical message icon will be displayed when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -361,12 +361,12 @@
         <summary>Indicates that the type of a variant object is <see langword="Currency" />. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -388,12 +388,12 @@
         <summary>Indicates that the type of a variant object is <see langword="Date" />. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -415,12 +415,12 @@
         <summary>Indicates that the type of a variant object is <see langword="Decimal" />. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -442,15 +442,15 @@
         <summary>Indicates that the leftmost button is selected as the default button when the message box appears.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-vb[VbVbalrConstants#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConstants/VB/Class1.vb#4)]  
-  
+[!code-vb[VbVbalrConstants#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConstants/VB/Class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -472,15 +472,15 @@
         <summary>Indicates that the second button from the left is selected as the default button when the message box appears.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-vb[VbVbalrConstants#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConstants/VB/Class1.vb#5)]  
-  
+[!code-vb[VbVbalrConstants#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConstants/VB/Class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -502,15 +502,15 @@
         <summary>Indicates that the third button from the left is selected as the default button when the message box appears.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-vb[VbVbalrConstants#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConstants/VB/Class1.vb#6)]  
-  
+[!code-vb[VbVbalrConstants#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConstants/VB/Class1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -532,14 +532,14 @@
         <summary>Indicates that the file is a directory or folder for file-access functions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
-  
- The `Attributes` argument takes the `FileAttribute` enumeration members.  
-  
- When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
-  
+When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
+ 
+The `Attributes` argument takes the `FileAttribute` enumeration members.  
+ 
+When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -561,12 +561,12 @@
         <summary>Indicates that the type of a variant object is <see langword="Double" />. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -588,12 +588,12 @@
         <summary>Indicates that the type of a variant object is <see langword="Empty" />. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -615,10 +615,10 @@
         <summary>Indicates that the exclamation icon will be displayed when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -640,10 +640,10 @@
         <summary>Indicates that a <see langword="Boolean" /> value of <see langword="False" /> should be used when number-formatting functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call number-formatting functions, you can use the following enumeration members in your code in place of the actual values.  
-  
+When you call number-formatting functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -665,14 +665,14 @@
         <summary>Indicates that the first week of the year that has at least four days should be used when date-related functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstWeekOfYear` enumeration specifies the valid values for the `WeekOfYear` arguments, as well as the possible return values from the functions.  
-  
- The `WeekOfYear` argument takes the `FirstWeekOfYear` enumeration members.  
-  
+When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
+Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstWeekOfYear` enumeration specifies the valid values for the `WeekOfYear` arguments, as well as the possible return values from the functions.  
+ 
+The `WeekOfYear` argument takes the `FirstWeekOfYear` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -694,14 +694,14 @@
         <summary>Indicates that the first full week of the year should be used when date-related functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstWeekOfYear` enumeration specifies the valid values for the `WeekOfYear` arguments, as well as the possible return values from the functions.  
-  
- The `WeekOfYear` argument takes the `FirstWeekOfYear` enumeration members.  
-  
+When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
+Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstWeekOfYear` enumeration specifies the valid values for the `WeekOfYear` arguments, as well as the possible return values from the functions.  
+ 
+The `WeekOfYear` argument takes the `FirstWeekOfYear` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -723,14 +723,14 @@
         <summary>Indicates that the week of the year in which January 1 occurs should be used when date-related functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstWeekOfYear` enumeration specifies the valid values for the `WeekOfYear` arguments, as well as the possible return values from the functions.  
-  
- The `WeekOfYear` argument takes the `FirstWeekOfYear` enumeration members.  
-  
+When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
+Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstWeekOfYear` enumeration specifies the valid values for the `WeekOfYear` arguments, as well as the possible return values from the functions.  
+ 
+The `WeekOfYear` argument takes the `FirstWeekOfYear` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -769,16 +769,16 @@
         <summary>Specifies that Friday should be used as the first day of the week when date-related functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
-  
- The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
-  
- Date-related functions also return `FirstDayOfWeek` values (except `System`).  
-  
+When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
+Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
+ 
+The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
+ 
+Date-related functions also return `FirstDayOfWeek` values (except `System`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -800,13 +800,13 @@
         <summary>Indicates that the general date format for the current culture should be used when the <see langword="FormatDateTime" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `FormatDateTime` function, you can use the following enumeration members in your code in place of the actual values.  
-  
+When you call the `FormatDateTime` function, you can use the following enumeration members in your code in place of the actual values.  
+ 
 > [!NOTE]
 >  You can access your computer's regional settings by double-clicking the **Regional Options** icon, found in **Control Panel**.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -828,10 +828,10 @@
         <summary>Specifies that a property value should be retrieved when the <see langword="CallByName" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `CallByName` function, you can use the following `CallType` enumeration members in your code in place of the actual values. The `UseCallType` argument takes the `CallType` enumeration members.  
-  
+When you call the `CallByName` function, you can use the following `CallType` enumeration members in your code in place of the actual values. The `UseCallType` argument takes the `CallType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -853,14 +853,14 @@
         <summary>Indicates that the file is a hidden file for file-access functions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
-  
- The `Attributes` argument takes the `FileAttribute` enumeration members.  
-  
- When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
-  
+When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
+ 
+The `Attributes` argument takes the `FileAttribute` enumeration members.  
+ 
+When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -882,12 +882,12 @@
         <summary>Indicates that the window style is hidden for the invoked program when the <see langword="Shell" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you issue `Shell` commands, you can use the following enumeration members in your code in place of the actual values.  
-  
- The `Style` argument takes the `AppWinStyle` enumeration members.  
-  
+When you issue `Shell` commands, you can use the following enumeration members in your code in place of the actual values.  
+ 
+The `Style` argument takes the `AppWinStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -909,10 +909,10 @@
         <summary>Indicates Hiragana characters should be converted to Katakana characters when the <see langword="StrConv" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
-  
+When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -934,12 +934,12 @@
         <summary>Indicates that the <see langword="Ignore" /> button was clicked in a message box. Returned by the <see langword="MsgBox" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
-  
- The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
+ 
+The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -961,10 +961,10 @@
         <summary>Indicates that the information icon will display when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -986,12 +986,12 @@
         <summary>Indicates that the type of a variant object is <see langword="Integer" />. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1013,10 +1013,10 @@
         <summary>Indicates that Katakana characters should be converted to Hiragana characters when the <see langword="StrConv" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
-  
+When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1038,10 +1038,10 @@
         <summary>Indicates that a property value should be set to an object instance when the <see langword="CallByName" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `CallByName` function, you can use the following `CallType` enumeration members in your code in place of the actual values. The `UseCallType` argument takes the `CallType` enumeration members.  
-  
+When you call the `CallByName` function, you can use the following `CallType` enumeration members in your code in place of the actual values. The `UseCallType` argument takes the `CallType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1080,10 +1080,10 @@
         <summary>Indicates that characters should be converted to use linguistic rules for casing instead of file system rules for casing to when the <see langword="StrConv" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
-  
+When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1105,12 +1105,12 @@
         <summary>Indicates the type of a variant object is <see langword="Long" />. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1132,13 +1132,13 @@
         <summary>Indicates that the long date format for the current culture should be used when the <see langword="FormatDateTime" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `FormatDateTime` function, you can use the following enumeration members in your code in place of the actual values.  
-  
+When you call the `FormatDateTime` function, you can use the following enumeration members in your code in place of the actual values.  
+ 
 > [!NOTE]
 >  You can access your computer's regional settings by double-clicking the **Regional Options** icon, found in **Control Panel**.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1160,13 +1160,13 @@
         <summary>Indicates that the long time format for the current culture should be used when the <see langword="FormatDateTime" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `FormatDateTime` function, you can use the following enumeration members in your code in place of the actual values.  
-  
+When you call the `FormatDateTime` function, you can use the following enumeration members in your code in place of the actual values.  
+ 
 > [!NOTE]
 >  You can access your computer's regional settings by double-clicking the **Regional Options** icon, found in **Control Panel**.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1188,10 +1188,10 @@
         <summary>Indicates that characters should be converted to lowercase when the <see langword="StrConv" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
-  
+When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1213,12 +1213,12 @@
         <summary>Indicates that the window style is maximized with focus for the invoked program when the <see langword="Shell" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you issue `Shell` commands, you can use the following enumeration members in your code in place of the actual values.  
-  
- The `Style` argument takes the `AppWinStyle` enumeration members.  
-  
+When you issue `Shell` commands, you can use the following enumeration members in your code in place of the actual values.  
+ 
+The `Style` argument takes the `AppWinStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1240,10 +1240,10 @@
         <summary>Specifies that a method should be called when the <see langword="CallByName" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `CallByName` function, you can use the following `CallType` enumeration members in your code in place of the actual values. The `UseCallType` argument takes the `CallType` enumeration members.  
-  
+When you call the `CallByName` function, you can use the following `CallType` enumeration members in your code in place of the actual values. The `UseCallType` argument takes the `CallType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1265,12 +1265,12 @@
         <summary>Indicates that the window style is minimized with focus for the invoked program when the <see langword="Shell" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you issue `Shell` commands, you can use the following enumeration members in your code in place of the actual values.  
-  
- The `Style` argument takes the `AppWinStyle` enumeration members.  
-  
+When you issue `Shell` commands, you can use the following enumeration members in your code in place of the actual values.  
+ 
+The `Style` argument takes the `AppWinStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1292,12 +1292,12 @@
         <summary>Indicates that the window style is minimized without focus for the invoked program when the <see langword="Shell" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you issue `Shell` commands, you can use the following enumeration members in your code in place of the actual values.  
-  
- The `Style` argument takes the `AppWinStyle` enumeration members.  
-  
+When you issue `Shell` commands, you can use the following enumeration members in your code in place of the actual values.  
+ 
+The `Style` argument takes the `AppWinStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1319,16 +1319,16 @@
         <summary>Specifies that Monday should be used as the first day of the week when date-related functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
-  
- The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
-  
- Date-related functions also return `FirstDayOfWeek` values (except `System`).  
-  
+When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
+Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
+ 
+The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
+ 
+Date-related functions also return `FirstDayOfWeek` values (except `System`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1350,10 +1350,10 @@
         <summary>Indicates that the <see langword="Help" /> button will be displayed when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1375,10 +1375,10 @@
         <summary>Indicates that text will be right-aligned when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1400,10 +1400,10 @@
         <summary>Indicates that right-to-left reading text (Hebrew and Arabic systems) will be displayed when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1425,10 +1425,10 @@
         <summary>Indicates that the message box will display in the foreground when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1450,10 +1450,10 @@
         <summary>Indicates that wide (double-byte) characters should be converted to narrow (single-byte) characters when the <see langword="StrConv" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
-  
+When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1492,12 +1492,12 @@
         <summary>Indicates that the <see langword="No" /> button was clicked in a message box. Returned by the <see langword="MsgBox" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
-  
- The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
+ 
+The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1519,14 +1519,14 @@
         <summary>Indicates that the file is a normal file for file-access functions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
-  
- The `Attributes` argument takes the `FileAttribute` enumeration members.  
-  
- When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
-  
+When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
+ 
+The `Attributes` argument takes the `FileAttribute` enumeration members.  
+ 
+When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1548,12 +1548,12 @@
         <summary>Indicates that the window style is normal with focus for the invoked program when the <see langword="Shell" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you issue `Shell` commands, you can use the following enumeration members in your code in place of the actual values.  
-  
- The `Style` argument takes the `AppWinStyle` enumeration members.  
-  
+When you issue `Shell` commands, you can use the following enumeration members in your code in place of the actual values.  
+ 
+The `Style` argument takes the `AppWinStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1575,12 +1575,12 @@
         <summary>Indicates that the window style is normal without focus for the invoked program when the <see langword="Shell" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you issue `Shell` commands, you can use the following enumeration members in your code in place of the actual values.  
-  
- The `Style` argument takes the `AppWinStyle` enumeration members.  
-  
+When you issue `Shell` commands, you can use the following enumeration members in your code in place of the actual values.  
+ 
+The `Style` argument takes the `AppWinStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1602,12 +1602,12 @@
         <summary>Indicates that the type of a variant object is <see langword="Nothing" />. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1664,12 +1664,12 @@
         <summary>Indicates that the type of a variant object is <see langword="Object" />. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1709,12 +1709,12 @@
         <summary>Indicates that the <see langword="OK" /> button was clicked in a message box. Returned by the <see langword="MsgBox" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
-  
- The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
+ 
+The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1736,10 +1736,10 @@
         <summary>Indicates that the <see langword="OK" /> and <see langword="Cancel" /> buttons will be displayed when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1761,10 +1761,10 @@
         <summary>Indicates that only the <see langword="OK" /> button will be displayed when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1786,10 +1786,10 @@
         <summary>Indicates that the first letter of every word in a string should be converted to uppercase and the remaining characters to lowercase when the <see langword="StrConv" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
-  
+When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1811,10 +1811,10 @@
         <summary>Indicates that the question icon will be displayed when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1836,14 +1836,14 @@
         <summary>Indicates that the file is a read-only file for file-access functions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
-  
- The `Attributes` argument takes the `FileAttribute` enumeration members.  
-  
- When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
-  
+When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
+ 
+The `Attributes` argument takes the `FileAttribute` enumeration members.  
+ 
+When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1865,12 +1865,12 @@
         <summary>Indicates that the <see langword="Retry" /> button was clicked in a message box. Returned by the <see langword="MsgBox" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
-  
- The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
+ 
+The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1892,10 +1892,10 @@
         <summary>Indicates that the <see langword="Retry" /> and <see langword="Cancel" /> buttons will be displayed when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1917,16 +1917,16 @@
         <summary>Specifies that Saturday should be used as the first day of the week when date-related functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
-  
- The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
-  
- Date-related functions also return `FirstDayOfWeek` values (except `System`).  
-  
+When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
+Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
+ 
+The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
+ 
+Date-related functions also return `FirstDayOfWeek` values (except `System`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1948,10 +1948,10 @@
         <summary>Indicates that a property value should be set when the <see langword="CallByName" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `CallByName` function, you can use the following `CallType` enumeration members in your code in place of the actual values. The `UseCallType` argument takes the `CallType` enumeration members.  
-  
+When you call the `CallByName` function, you can use the following `CallType` enumeration members in your code in place of the actual values. The `UseCallType` argument takes the `CallType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1973,13 +1973,13 @@
         <summary>Indicates that the short-date format for the current culture should be used when the <see langword="FormatDateTime" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `FormatDateTime` function, you can use the following enumeration members in your code in place of the actual values.  
-  
+When you call the `FormatDateTime` function, you can use the following enumeration members in your code in place of the actual values.  
+ 
 > [!NOTE]
 >  You can access your computer's regional settings by double-clicking the **Regional Options** icon, found in **Control Panel**.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2001,13 +2001,13 @@
         <summary>Indicates that the short-time format for the current culture should be used when the <see langword="FormatDateTime" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `FormatDateTime` function, you can use the following enumeration members in your code in place of the actual values.  
-  
+When you call the `FormatDateTime` function, you can use the following enumeration members in your code in place of the actual values.  
+ 
 > [!NOTE]
 >  You can access your computer's regional settings by double-clicking the **Regional Options** icon, found in **Control Panel**.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2029,10 +2029,10 @@
         <summary>Indicates that characters should be converted to Simplified Chinese when the <see langword="StrConv" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
-  
+When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2054,12 +2054,12 @@
         <summary>Indicates that the type of a variant object is <see langword="Single" />. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2081,12 +2081,12 @@
         <summary>Indicates that the type of a variant object is <see langword="String" />. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2108,16 +2108,16 @@
         <summary>Specifies that Sunday should be used as the first day of the week when date-related functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
-  
- The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
-  
- Date-related functions also return `FirstDayOfWeek` values (except `System`).  
-  
+When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
+Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
+ 
+The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
+ 
+Date-related functions also return `FirstDayOfWeek` values (except `System`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2139,14 +2139,14 @@
         <summary>Indicates that the file is a system file for file-access functions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
-  
- The `Attributes` argument takes the `FileAttribute` enumeration members.  
-  
- When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
-  
+When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
+ 
+The `Attributes` argument takes the `FileAttribute` enumeration members.  
+ 
+When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2168,10 +2168,10 @@
         <summary>Indicates that the message box will be displayed as a modal dialog box when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2210,12 +2210,12 @@
         <summary>Indicates that a text comparison should be performed when comparison functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call comparison functions, you can use the <xref:Microsoft.VisualBasic.CompareMethod> enumeration in your code in place of the actual values. The `Compare` argument takes the `CompareMethod` enumeration members.  
-  
- For more information about more information about binary and text comparisons, see [Option Compare Statement](~/docs/visual-basic/language-reference/statements/option-compare-statement.md).  
-  
+When you call comparison functions, you can use the <xref:Microsoft.VisualBasic.CompareMethod> enumeration in your code in place of the actual values. The `Compare` argument takes the `CompareMethod` enumeration members.  
+ 
+For more information about more information about binary and text comparisons, see [Option Compare Statement](~/docs/visual-basic/language-reference/statements/option-compare-statement.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2237,16 +2237,16 @@
         <summary>Specifies that Thursday should be used as the first day of the week when date-related functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
-  
- The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
-  
- Date-related functions also return `FirstDayOfWeek` values (except `System`).  
-  
+When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
+Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
+ 
+The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
+ 
+Date-related functions also return `FirstDayOfWeek` values (except `System`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2268,10 +2268,10 @@
         <summary>Indicates that characters should be converted to Traditional Chinese when the <see langword="StrConv" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
-  
+When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2293,10 +2293,10 @@
         <summary>Indicates that a <see langword="Boolean" /> value of <see langword="True" /> should be used when number-formatting functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call number-formatting functions, you can use the following enumeration members in your code in place of the actual values.  
-  
+When you call number-formatting functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2318,16 +2318,16 @@
         <summary>Specifies that Tuesday should be used as the first day of the week when date-related functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
-  
- The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
-  
- Date-related functions also return `FirstDayOfWeek` values (except `System`).  
-  
+When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
+Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
+ 
+The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
+ 
+Date-related functions also return `FirstDayOfWeek` values (except `System`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2349,10 +2349,10 @@
         <summary>Indicates that characters should be converted to uppercase when the <see langword="StrConv" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
-  
+When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2374,10 +2374,10 @@
         <summary>Indicates that the default <see langword="Boolean" /> value should be used when number-formatting functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call number-formatting functions, you can use the following enumeration members in your code in place of the actual values.  
-  
+When you call number-formatting functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2399,12 +2399,12 @@
         <summary>Indicates that the type of a variant object is a user-defined type. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2426,14 +2426,14 @@
         <summary>Indicates that the week specified by your system as the first week of the year should be used when date-related functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstWeekOfYear` enumeration specifies the valid values for the `WeekOfYear` arguments, as well as the possible return values from the functions.  
-  
- The `WeekOfYear` argument takes the `FirstWeekOfYear` enumeration members.  
-  
+When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
+Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstWeekOfYear` enumeration specifies the valid values for the `WeekOfYear` arguments, as well as the possible return values from the functions.  
+ 
+The `WeekOfYear` argument takes the `FirstWeekOfYear` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2455,16 +2455,16 @@
         <summary>Indicates that the day specified by your system as the first day of the week should be used when date-related functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
-  
- The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
-  
- Date-related functions also return `FirstDayOfWeek` values (except `System`).  
-  
+When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
+Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
+ 
+The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
+ 
+Date-related functions also return `FirstDayOfWeek` values (except `System`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2486,12 +2486,12 @@
         <summary>Indicates that the type of a variant object is <see langword="Variant" />. Returned by the <see langword="VarType" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
-  
- The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
-  
+When you call the `VarType` function, you can use enumeration members in your code in place of the actual values.  
+ 
+The `VariantType` enumeration defines constants used to identify possible `Variant` types. The following table lists the `VariantType` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2530,16 +2530,16 @@
         <summary>Indicates the volume label file attribute for file-access functions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This attribute is not valid for the `SetAttr` function.  
-  
- When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
-  
- The `Attributes` argument takes the `FileAttribute` enumeration members.  
-  
- When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
-  
+This attribute is not valid for the `SetAttr` function.  
+ 
+When you call the `Dir`, `GetAttr`, or `SetAttr` functions, you can use the `FileAttribute` enumeration in your code in place of the actual values.  
+ 
+The `Attributes` argument takes the `FileAttribute` enumeration members.  
+ 
+When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2561,16 +2561,16 @@
         <summary>Specifies that Wednesday should be used as the first day of the week when date-related functions are called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
-  
- Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
-  
- The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
-  
- Date-related functions also return `FirstDayOfWeek` values (except `System`).  
-  
+When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
+ 
+Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstDayOfWeek` enumeration specifies the valid values for the `DayOfWeek` arguments, as well as the possible return values from the functions.  
+ 
+The `DayOfWeek` argument takes the `FirstDayOfWeek` enumeration members.  
+ 
+Date-related functions also return `FirstDayOfWeek` values (except `System`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2592,10 +2592,10 @@
         <summary>Indicates that narrow (single-byte) characters should be converted to wide (double-byte) characters when the <see langword="StrConv" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
-  
+When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2617,12 +2617,12 @@
         <summary>Indicates that the <see langword="Yes" /> button was clicked in a message box. Returned by the <see langword="MsgBox" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
-  
- The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
+ 
+The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2644,10 +2644,10 @@
         <summary>Indicates that the <see langword="Yes" /> and <see langword="No" /> buttons will be displayed when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2669,10 +2669,10 @@
         <summary>Indicates that the <see langword="Yes" />, <see langword="No" />, and <see langword="Cancel" /> buttons will be displayed when the <see langword="MsgBox" /> function is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
-  
+When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+ 
  ]]></format>
         </remarks>
       </Docs>

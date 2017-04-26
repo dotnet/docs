@@ -19,10 +19,10 @@
     <summary>The <see cref="T:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo" /> class defines key transport recipient information.        *Key transport* algorithms typically use the RSA algorithm, in which  an originator establishes a shared cryptographic key with a recipient by generating that key and  then transporting it to the recipient. This is in contrast to *key agreement* algorithms, in which the two parties that will be using a cryptographic key both take part in its generation, thereby mutually agreeing to that key.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class does not have a public constructor; therefore, it cannot be publicly instantiated. It is a read-only class accessible from the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=fullName> property.  
-  
+This class does not have a public constructor; therefore, it cannot be publicly instantiated. It is a read-only class accessible from the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -118,10 +118,10 @@
         <value>An int value that represents the version of the key transport <see cref="T:System.Security.Cryptography.Pkcs.RecipientInfo" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The version determines whether the message in which this <xref:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo> is contained is a PKCS #7  message or a Cryptographic Message Syntax (CMS) message. CMS is a newer superset of PKCS #7.  
-  
+The version determines whether the message in which this <xref:System.Security.Cryptography.Pkcs.KeyTransRecipientInfo> is contained is a PKCS #7  message or a Cryptographic Message Syntax (CMS) message. CMS is a newer superset of PKCS #7.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,10 +19,10 @@
     <summary>Converts the value of an object into a different data type. This class cannot be inherited. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The more generic <xref:System.Configuration.TypeNameConverter> class does not look up the type names in the mobile assembly. Therefore, the <xref:System.Web.UI.MobileControls.MobileTypeNameConverter> class was created to enable type-name conversion in the mobile-related namespaces.  
-  
+The more generic <xref:System.Configuration.TypeNameConverter> class does not look up the type names in the mobile assembly. Therefore, the <xref:System.Web.UI.MobileControls.MobileTypeNameConverter> class was created to enable type-name conversion in the mobile-related namespaces.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,10 +67,10 @@
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation of <xref:System.Web.UI.MobileControls.MobileTypeNameConverter.ConvertFrom%2A> casts `data` as a string and then calls the <xref:System.Type.GetType%2A> method on it. The result, a new <xref:System.Type>, is then returned. However, if the result is `null`, an exception will be thrown.  
-  
+This implementation of <xref:System.Web.UI.MobileControls.MobileTypeNameConverter.ConvertFrom%2A> casts `data` as a string and then calls the <xref:System.Type.GetType%2A> method on it. The result, a new <xref:System.Type>, is then returned. However, if the result is `null`, an exception will be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">Calling <see cref="M:System.Type.GetType" /> on <paramref name="data" /> returns <see langword="null" />.</exception>
@@ -103,10 +103,10 @@
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation of <xref:System.Web.UI.MobileControls.MobileTypeNameConverter.ConvertTo%2A> uses the `as` operator to convert the `value` to a <xref:System.Type>, and then returns the <xref:System.Type.FullName%2A> property of that object.  
-  
+This implementation of <xref:System.Web.UI.MobileControls.MobileTypeNameConverter.ConvertTo%2A> uses the `as` operator to convert the `value` to a <xref:System.Type>, and then returns the <xref:System.Type.FullName%2A> property of that object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

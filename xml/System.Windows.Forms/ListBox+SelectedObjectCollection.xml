@@ -18,12 +18,12 @@
     <summary>Represents the collection of selected items in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> class stores the selected items in the <xref:System.Windows.Forms.ListBox>. The items stored in the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> are items contained within the <xref:System.Windows.Forms.ListBox.ObjectCollection> class. The <xref:System.Windows.Forms.ListBox.ObjectCollection> class stores all items displayed in the <xref:System.Windows.Forms.ListBox>.  
-  
- The following table is an example of how the <xref:System.Windows.Forms.ListBox.ObjectCollection> stores the items of the <xref:System.Windows.Forms.ListBox> as well as their selection states within an example <xref:System.Windows.Forms.ListBox>.  
-  
+The <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> class stores the selected items in the <xref:System.Windows.Forms.ListBox>. The items stored in the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> are items contained within the <xref:System.Windows.Forms.ListBox.ObjectCollection> class. The <xref:System.Windows.Forms.ListBox.ObjectCollection> class stores all items displayed in the <xref:System.Windows.Forms.ListBox>.  
+ 
+The following table is an example of how the <xref:System.Windows.Forms.ListBox.ObjectCollection> stores the items of the <xref:System.Windows.Forms.ListBox> as well as their selection states within an example <xref:System.Windows.Forms.ListBox>.  
+ 
 |Index|Item|Selection state within the ListBox|  
 |-----------|----------|----------------------------------------|  
 |0|object1|Unselected|  
@@ -31,17 +31,17 @@
 |2|object3|Unselected|  
 |3|object4|Selected|  
 |4|object5|Selected|  
-  
- Based on the <xref:System.Windows.Forms.ListBox.ObjectCollection> demonstrated in the previous table, the following table demonstrates how the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> would appear.  
-  
+ 
+Based on the <xref:System.Windows.Forms.ListBox.ObjectCollection> demonstrated in the previous table, the following table demonstrates how the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> would appear.  
+ 
 |Index|Selected item from ObjectCollection|  
 |-----------|-----------------------------------------|  
 |0|object2|  
 |1|object4|  
 |2|object5|  
-  
- You can use the properties and methods of this class to perform a variety of tasks with the collection. The <xref:System.Windows.Forms.ListBox.SelectedObjectCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListBox.ObjectCollection> class is a member of the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>. Once you know that the item is located within the collection, you can use the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection.IndexOf%2A> method to determine where a specific item within the <xref:System.Windows.Forms.ListBox.ObjectCollection> for the <xref:System.Windows.Forms.ListBox> is stored within the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>.  
-  
+ 
+You can use the properties and methods of this class to perform a variety of tasks with the collection. The <xref:System.Windows.Forms.ListBox.SelectedObjectCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListBox.ObjectCollection> class is a member of the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>. Once you know that the item is located within the collection, you can use the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection.IndexOf%2A> method to determine where a specific item within the <xref:System.Windows.Forms.ListBox.ObjectCollection> for the <xref:System.Windows.Forms.ListBox> is stored within the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,10 +63,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListBox.SelectedObjectCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An instance of this class cannot be created without associating it with a <xref:System.Windows.Forms.ListBox> control.  
-  
+An instance of this class cannot be created without associating it with a <xref:System.Windows.Forms.ListBox> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,10 +132,10 @@
           <see langword="true" /> if the specified item is located in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ListBox.SelectedObjectCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListBox.ObjectCollection> class is a member of the selected items stored in the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>. You can use this to determine if a specific item in a multiple-selection <xref:System.Windows.Forms.ListBox> is selected.  
-  
+The <xref:System.Windows.Forms.ListBox.SelectedObjectCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListBox.ObjectCollection> class is a member of the selected items stored in the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>. You can use this to determine if a specific item in a multiple-selection <xref:System.Windows.Forms.ListBox> is selected.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,10 +162,10 @@
         <summary>Copies the entire collection into an existing array at a specified location within the array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to combine the selected items from multiple collections into a single array.  
-  
+You can use this method to combine the selected items from multiple collections into a single array.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,10 +187,10 @@
         <value>The number of items in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property enables you to determine the number of selected items in the <xref:System.Windows.Forms.ListBox>. You can then use this value when looping through the values of the collection and you need to provide a number of iterations to perform the loop. Unless the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property of the <xref:System.Windows.Forms.ListBox> is set to `SelectionMode.MultiSimple` or `SelectionMode.MultiExtended`, this property always returns a value of zero (0) or one (1) depending on whether you have a selected item.  
-  
+This property enables you to determine the number of selected items in the <xref:System.Windows.Forms.ListBox>. You can then use this value when looping through the values of the collection and you need to provide a number of iterations to perform the loop. Unless the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property of the <xref:System.Windows.Forms.ListBox> is set to `SelectionMode.MultiSimple` or `SelectionMode.MultiExtended`, this property always returns a value of zero (0) or one (1) depending on whether you have a selected item.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,10 +235,10 @@
         <returns>The zero-based index of the item in the collection; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Once you know that an item is located within the collection (using the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection.Contains%2A> method), you can use the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection.IndexOf%2A> method to determine where a specific item within the <xref:System.Windows.Forms.ListBox.ObjectCollection> for the <xref:System.Windows.Forms.ListBox> is stored within the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>.  
-  
+Once you know that an item is located within the collection (using the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection.Contains%2A> method), you can use the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection.IndexOf%2A> method to determine where a specific item within the <xref:System.Windows.Forms.ListBox.ObjectCollection> for the <xref:System.Windows.Forms.ListBox> is stored within the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,10 +261,10 @@
           <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is always `true` for this collection.  
-  
+This property is always `true` for this collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -298,10 +298,10 @@
         <value>An object representing the item located at the specified index within the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This indexer enables you to get a specific item from the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>. The item stored in this collection is an item within the <xref:System.Windows.Forms.ListBox.ObjectCollection> of the <xref:System.Windows.Forms.ListBox> that represents a selected item in the <xref:System.Windows.Forms.ListBox>.  
-  
+This indexer enables you to get a specific item from the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>. The item stored in this collection is an item within the <xref:System.Windows.Forms.ListBox.ObjectCollection> of the <xref:System.Windows.Forms.ListBox> that represents a selected item in the <xref:System.Windows.Forms.ListBox>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListBox.ObjectCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListBox.SelectedObjectCollection" /> class.</exception>
@@ -346,10 +346,10 @@
           <see langword="true" /> if the list is synchronized; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -371,10 +371,10 @@
         <value>An object that can be used to synchronize access to the underlying list.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -400,10 +400,10 @@
         <returns>The position into which the object was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -425,10 +425,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Clear" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -455,10 +455,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -481,10 +481,10 @@
           <see langword="true" /> if the underlying list has a fixed size; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -509,10 +509,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -537,10 +537,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.RemoveAt(System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -29,10 +29,10 @@
     <summary>Specifies a type to be passed to the <see cref="M:System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions,``0)" /> method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Diagnostics.Tracing.EventSource.Write%2A> requires T to be an anonymous type or marked with the <xref:System.Diagnostics.Tracing.EventDataAttribute> attribute. In addition, the properties of `T` must be a supported property type; either a simple framework type such as <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.String>, <xref:System.Guid>, <xref:System.DateTime> or <xref:System.DateTimeOffset>, or an array of primitive types.  
-  
+<xref:System.Diagnostics.Tracing.EventSource.Write%2A> requires T to be an anonymous type or marked with the <xref:System.Diagnostics.Tracing.EventDataAttribute> attribute. In addition, the properties of `T` must be a supported property type; either a simple framework type such as <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.String>, <xref:System.Guid>, <xref:System.DateTime> or <xref:System.DateTimeOffset>, or an array of primitive types.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
         <value>The name to apply to the event or property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you call <xref:System.Diagnostics.Tracing.EventSource.Write%2A>, passing `null` for `eventName`, the event name is automatically derived from <xref:System.Diagnostics.Tracing.EventDataAttribute.Name%2A> or determined based on the name of type `T`.  
-  
+If you call <xref:System.Diagnostics.Tracing.EventSource.Write%2A>, passing `null` for `eventName`, the event name is automatically derived from <xref:System.Diagnostics.Tracing.EventDataAttribute.Name%2A> or determined based on the name of type `T`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,19 +14,19 @@
     <summary>Provides properties for accessing the current state of the keyboard, such as what keys are currently pressed, and provides a method to send keystrokes to the active window.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `My.Computer.Keyboard` object provides an interface to the computer's keyboard. The properties of the `My.Computer.Keyboard` provide information about the state of several special keys. The `My.Computer.Keyboard.SendKeys` method lets you send keys to the active window as if they have been typed at the keyboard.  
-  
+The `My.Computer.Keyboard` object provides an interface to the computer's keyboard. The properties of the `My.Computer.Keyboard` provide information about the state of several special keys. The `My.Computer.Keyboard.SendKeys` method lets you send keys to the active window as if they have been typed at the keyboard.  
+ 
 ## Tasks  
- The following table lists an example of a task involving the `My.Computer.Keyboard` object.  
-  
+The following table lists an example of a task involving the `My.Computer.Keyboard` object.  
+ 
 |To|See|  
 |-|-|  
 |Send keystrokes to an application|[How to: Start an Application and Send it Keystrokes (Visual Basic)](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-start-an-application-and-send-it-keystrokes.md)|  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -36,14 +36,14 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `My.Computer.Keyboard.CtrlKeyDown` property to determine if the computer's CTRL key is pressed.  
-  
- [!code-vb[VbVbalrMyComputer#36](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#36)]  
-  
+This example uses the `My.Computer.Keyboard.CtrlKeyDown` property to determine if the computer's CTRL key is pressed.  
+ 
+[!code-vb[VbVbalrMyComputer#36](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#36)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,12 +80,12 @@
         <value>A <see langword="Boolean" /> value: <see langword="True" /> if the ALT key is down; otherwise <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `My.Computer.Keyboard.AltKeyDown` property provides functionality similar to the <xref:System.Windows.Forms.Control.ModifierKeys%2A> property.  
-  
+The `My.Computer.Keyboard.AltKeyDown` property provides functionality similar to the <xref:System.Windows.Forms.Control.ModifierKeys%2A> property.  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -95,14 +95,14 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `My.Computer.Keyboard.AltKeyDown` property to determine if the computer's ALT key is down.  
-  
- [!code-vb[VbVbalrMyComputer#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#23)]  
-  
+This example uses the `My.Computer.Keyboard.AltKeyDown` property to determine if the computer's ALT key is down.  
+ 
+[!code-vb[VbVbalrMyComputer#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#23)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,12 +129,12 @@
         <value>A <see langword="Boolean" /> value: <see langword="True" /> if CAPS LOCK is turned on; otherwise <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only the state of CAPS LOCK is returned.  
-  
+Only the state of CAPS LOCK is returned.  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -144,14 +144,14 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `My.Computer.Keyboard.CapsLock` property to determine if the computer's CAPS LOCK is turned on.  
-  
- [!code-vb[VbVbalrMyComputer#50](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#50)]  
-  
+This example uses the `My.Computer.Keyboard.CapsLock` property to determine if the computer's CAPS LOCK is turned on.  
+ 
+[!code-vb[VbVbalrMyComputer#50](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#50)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,12 +173,12 @@
         <value>A <see langword="Boolean" /> value. <see langword="True" /> if a CTRL key is down; otherwise <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `My.Computer.Keyboard.CtrlKeyDown` property provides functionality similar to the <xref:System.Windows.Forms.Control.ModifierKeys%2A> property.  
-  
+The `My.Computer.Keyboard.CtrlKeyDown` property provides functionality similar to the <xref:System.Windows.Forms.Control.ModifierKeys%2A> property.  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -188,14 +188,14 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `My.Computer.Keyboard.CtrlKeyDown` property to determine if the computer's CTRL key is down.  
-  
- [!code-vb[VbVbalrMyComputer#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#34)]  
-  
+This example uses the `My.Computer.Keyboard.CtrlKeyDown` property to determine if the computer's CTRL key is down.  
+ 
+[!code-vb[VbVbalrMyComputer#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#34)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,12 +222,12 @@
         <value>A <see langword="Boolean" /> value. <see langword="True" /> if NUM LOCK is on; otherwise <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only the state of the NUM LOCK key is returned.  
-  
+Only the state of the NUM LOCK key is returned.  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -237,14 +237,14 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `My.Computer.Keyboard.NumLock` property to determine if the computer's NUM LOCK key is on.  
-  
- [!code-vb[VbVbalrMyComputer#48](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#48)]  
-  
+This example uses the `My.Computer.Keyboard.NumLock` property to determine if the computer's NUM LOCK key is on.  
+ 
+[!code-vb[VbVbalrMyComputer#48](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#48)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -271,12 +271,12 @@
         <value>A <see langword="Boolean" /> value. <see langword="True" /> if SCROLL LOCK is on; otherwise <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only the state of the SCROLL LOCK key is returned.  
-  
+Only the state of the SCROLL LOCK key is returned.  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -286,14 +286,14 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `My.Computer.Keyboard.ScrollLock` property to determine if the computer's SCROLL LOCK key is on.  
-  
- [!code-vb[VbVbalrMyComputer#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#31)]  
-  
+This example uses the `My.Computer.Keyboard.ScrollLock` property to determine if the computer's SCROLL LOCK key is on.  
+ 
+[!code-vb[VbVbalrMyComputer#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#31)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -318,21 +318,21 @@
         <summary>Sends one or more keystrokes to the active window, as if typed on the keyboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `My.Computer.Keyboard.SendKeys` method provides functionality similar to the <xref:System.Windows.Forms.SendKeys.Send%2A> and <xref:System.Windows.Forms.SendKeys.SendWait%2A> methods.  
-  
- The `wait` argument is useful if the other application must finish before your application can continue.  
-  
+The `My.Computer.Keyboard.SendKeys` method provides functionality similar to the <xref:System.Windows.Forms.SendKeys.Send%2A> and <xref:System.Windows.Forms.SendKeys.SendWait%2A> methods.  
+ 
+The `wait` argument is useful if the other application must finish before your application can continue.  
+ 
 > [!NOTE]
 >  Because there is no managed method to activate another application, you can either use this class within the current application, manually select the window to send the keys to, or use Windows API methods, such as `FindWindow` and `SetForegroundWindow`, to force focus on other applications. For more information, see [Walkthrough: Calling Windows APIs](~/docs/visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md).  
-  
- The `keys` argument can specify any single key or any key combined with ALT, CTRL, or SHIFT (or any combination of those keys). Each key is represented by one or more characters, such as `a` for the character "a", or `{ENTER}` for the ENTER key.  
-  
- To combine a key with SHIFT, precede the key code with `+` (plus sign). To combine a key with CTRL, precede the key code with `^` (caret). To combine a key with ALT, precede the key code with `%` (percent sign). To specify repeating keys, use the form `{`*key number*`}`. You must put a space between *key* and *number*. For example, `{LEFT 42}` means "press the LEFT ARROW key 42 times"; `{h 10}` means "press 'h' 10 times."  
-  
- The following table lists the codes that can be used to specify characters that are not displayed when you press the corresponding key (such as ENTER or TAB).  
-  
+ 
+The `keys` argument can specify any single key or any key combined with ALT, CTRL, or SHIFT (or any combination of those keys). Each key is represented by one or more characters, such as `a` for the character "a", or `{ENTER}` for the ENTER key.  
+ 
+To combine a key with SHIFT, precede the key code with `+` (plus sign). To combine a key with CTRL, precede the key code with `^` (caret). To combine a key with ALT, precede the key code with `%` (percent sign). To specify repeating keys, use the form `{`*key number*`}`. You must put a space between *key* and *number*. For example, `{LEFT 42}` means "press the LEFT ARROW key 42 times"; `{h 10}` means "press 'h' 10 times."  
+ 
+The following table lists the codes that can be used to specify characters that are not displayed when you press the corresponding key (such as ENTER or TAB).  
+ 
 |Key|Code|  
 |-|-|  
 |BACKSPACE|{BACKSPACE} or {BS}|  
@@ -358,9 +358,9 @@
 |TAB|{TAB}|  
 |UP ARROW|{UP}|  
 |F1 through F15|{F1} through {F15}|  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -370,18 +370,18 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `My.Computer.Keyboard.SendKeys` method to send keystrokes to an external application, the Calculator application, started by the `Shell` function.  
-  
- [!code-vb[VbVbalrMyComputer#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#25)]  
-  
- A <xref:System.ArgumentException> exception is raised if an application with the requested process identifier cannot be found.  
-  
- The call to the `Shell` function requires full trust (<xref:System.Security.SecurityException> class).  
-  
+This example uses the `My.Computer.Keyboard.SendKeys` method to send keystrokes to an external application, the Calculator application, started by the `Shell` function.  
+ 
+[!code-vb[VbVbalrMyComputer#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#25)]  
+ 
+A <xref:System.ArgumentException> exception is raised if an application with the requested process identifier cannot be found.  
+ 
+The call to the `Shell` function requires full trust (<xref:System.Security.SecurityException> class).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">A partial-trust situation exists in which the user lacks necessary permissions.</exception>
@@ -411,21 +411,21 @@
         <summary>Sends one or more keystrokes to the active window, as if typed on the keyboard.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `My.Computer.Keyboard.SendKeys` method provides functionality similar to the <xref:System.Windows.Forms.SendKeys.Send%2A> and <xref:System.Windows.Forms.SendKeys.SendWait%2A> methods.  
-  
- The `wait` argument is useful if the other application must finish before your application can continue.  
-  
+The `My.Computer.Keyboard.SendKeys` method provides functionality similar to the <xref:System.Windows.Forms.SendKeys.Send%2A> and <xref:System.Windows.Forms.SendKeys.SendWait%2A> methods.  
+ 
+The `wait` argument is useful if the other application must finish before your application can continue.  
+ 
 > [!NOTE]
 >  Because there is no managed method to activate another application, you can either use this class within the current application, manually select the window to send the keys to, or use Windows API methods, such as `FindWindow` and `SetForegroundWindow`, to force focus on other applications. For more information, see [Walkthrough: Calling Windows APIs](~/docs/visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md).  
-  
- The `keys` argument can specify any single key or any key combined with ALT, CTRL, or SHIFT (or any combination of those keys). Each key is represented by one or more characters, such as `a` for the character "a", or `{ENTER}` for the ENTER key.  
-  
- To combine a key with SHIFT, precede the key code with `+` (plus sign). To combine a key with CTRL, precede the key code with `^` (caret). To combine a key with ALT, precede the key code with `%` (percent sign). To specify repeating keys, use the form `{`*key number*`}`. You must put a space between *key* and *number*. For example, `{LEFT 42}` means "press the LEFT ARROW key 42 times"; `{h 10}` means "press 'h' 10 times."  
-  
- The following table lists the codes that can be used to specify characters that are not displayed when you press the corresponding key (such as ENTER or TAB).  
-  
+ 
+The `keys` argument can specify any single key or any key combined with ALT, CTRL, or SHIFT (or any combination of those keys). Each key is represented by one or more characters, such as `a` for the character "a", or `{ENTER}` for the ENTER key.  
+ 
+To combine a key with SHIFT, precede the key code with `+` (plus sign). To combine a key with CTRL, precede the key code with `^` (caret). To combine a key with ALT, precede the key code with `%` (percent sign). To specify repeating keys, use the form `{`*key number*`}`. You must put a space between *key* and *number*. For example, `{LEFT 42}` means "press the LEFT ARROW key 42 times"; `{h 10}` means "press 'h' 10 times."  
+ 
+The following table lists the codes that can be used to specify characters that are not displayed when you press the corresponding key (such as ENTER or TAB).  
+ 
 |Key|Code|  
 |-|-|  
 |BACKSPACE|{BACKSPACE} or {BS}|  
@@ -451,9 +451,9 @@
 |TAB|{TAB}|  
 |UP ARROW|{UP}|  
 |F1 through F15|{F1} through {F15}|  
-  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -463,18 +463,18 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `My.Computer.Keyboard.SendKeys` method to send keystrokes to an external application, the Calculator application, started by the `Shell` function.  
-  
- [!code-vb[VbVbalrMyComputer#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#25)]  
-  
- A <xref:System.ArgumentException> exception is raised if an application with the requested process identifier cannot be found.  
-  
- The call to the `Shell` function requires full trust (<xref:System.Security.SecurityException> class).  
-  
+This example uses the `My.Computer.Keyboard.SendKeys` method to send keystrokes to an external application, the Calculator application, started by the `Shell` function.  
+ 
+[!code-vb[VbVbalrMyComputer#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#25)]  
+ 
+A <xref:System.ArgumentException> exception is raised if an application with the requested process identifier cannot be found.  
+ 
+The call to the `Shell` function requires full trust (<xref:System.Security.SecurityException> class).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">A partial-trust situation exists in which the user lacks necessary permissions.</exception>
@@ -499,12 +499,12 @@
         <value>A <see langword="Boolean" /> value. <see langword="True" /> if a SHIFT key is down; otherwise <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `My.Computer.Keyboard.ShiftKeyDown` property provides functionality similar to the <xref:System.Windows.Forms.Control.ModifierKeys%2A> property.  
-  
+The `My.Computer.Keyboard.ShiftKeyDown` property provides functionality similar to the <xref:System.Windows.Forms.Control.ModifierKeys%2A> property.  
+ 
 ## Availability by Project Type  
-  
+ 
 |Project type|Available|  
 |-|-|  
 |Windows Application|**Yes**|  
@@ -514,14 +514,14 @@
 |Web Control Library|No|  
 |Windows Service|**Yes**|  
 |Web Site|No|  
+ 
   
-   
-  
+ 
 ## Examples  
- This example uses the `My.Computer.Keyboard.ShiftKeyDown` property to determine if one of the computer's SHIFT keys is down.  
-  
- [!code-vb[VbVbalrMyComputer#47](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#47)]  
-  
+This example uses the `My.Computer.Keyboard.ShiftKeyDown` property to determine if one of the computer's SHIFT keys is down.  
+ 
+[!code-vb[VbVbalrMyComputer#47](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#47)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,20 +18,20 @@
     <summary>Represents a collection of <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> classes used in XML encryption. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.EncryptionProperty> class encapsulates the `<EncryptionProperty>` element defined by the World Wide Web Consortium XML Encryption specification located at http://www.w3.org/TR/xmlenc-core/.  
+The <xref:System.Security.Cryptography.Xml.EncryptionProperty> class encapsulates the `<EncryptionProperty>` element defined by the World Wide Web Consortium XML Encryption specification located at http://www.w3.org/TR/xmlenc-core/.  
+ 
+Use the <xref:System.Security.Cryptography.Xml.EncryptionProperty> class to provide additional encryption information related to the <xref:System.Security.Cryptography.Xml.EncryptedData> and <xref:System.Security.Cryptography.Xml.EncryptedKey> elements.  For example, you can use this class to specify a time stamp.  
+ 
   
- Use the <xref:System.Security.Cryptography.Xml.EncryptionProperty> class to provide additional encryption information related to the <xref:System.Security.Cryptography.Xml.EncryptedData> and <xref:System.Security.Cryptography.Xml.EncryptedKey> elements.  For example, you can use this class to specify a time stamp.  
-  
-   
-  
+ 
 ## Examples  
- The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
-  
- [!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
- [!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
-  
+The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
+ 
+[!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
+[!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,13 +50,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
-  
- [!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
- [!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
-  
+The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
+ 
+[!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
+[!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,13 +82,13 @@
         <returns>The position at which the new element is inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
-  
- [!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
- [!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
-  
+The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
+ 
+[!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
+[!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,13 +197,13 @@
         <value>The number of elements contained in the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
-  
- [!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
- [!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
-  
+The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
+ 
+[!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
+[!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -226,10 +226,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through an <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Enumerators allow only reading the data in the collection. Enumerators cannot be used to modify the underlying collection.  
-  
+Enumerators allow only reading the data in the collection. Enumerators cannot be used to modify the underlying collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,12 +297,12 @@
           <see langword="true" /> if the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but does allow the modification of existing elements.  
-  
- A collection with a fixed size is simply a collection with a wrapper that prevents adding and removing elements. Therefore, if changes are made to the underlying collection, including the addition or removal of elements, the fixed-size collection reflects those changes.  
-  
+A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but does allow the modification of existing elements.  
+ 
+A collection with a fixed size is simply a collection with a wrapper that prevents adding and removing elements. Therefore, if changes are made to the underlying collection, including the addition or removal of elements, the fixed-size collection reflects those changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -325,12 +325,12 @@
           <see langword="true" /> if the <see cref="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" /> object is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
-  
- A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
-  
+A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+ 
+A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

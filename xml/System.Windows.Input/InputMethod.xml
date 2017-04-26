@@ -14,13 +14,13 @@
     <summary>Provides facilities for managing and interacting with the Text Services Framework, which provides support for alternate text input methods such as speech and handwriting.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use an <xref:System.Windows.Input.InputMethod> object.  
-  
- [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
- [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
-  
+The following example demonstrates how to use an <xref:System.Windows.Input.InputMethod> object.  
+ 
+[!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+[!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,13 +44,13 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.CanShowConfigurationUI%2A> property to determine if the configuration UI is viewable.  
-  
- [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
- [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.CanShowConfigurationUI%2A> property to determine if the configuration UI is viewable.  
+ 
+[!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+[!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,13 +94,13 @@
  This property has no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.Current%2A> property.  
-  
- [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
- [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.Current%2A> property.  
+ 
+[!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+[!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -300,13 +300,13 @@
  The default value is <see cref="F:System.Windows.Input.InputMethodState.Off" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.Current%2A> property.  
-  
- [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
- [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.Current%2A> property.  
+ 
+[!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+[!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -366,13 +366,13 @@
  The default value is <see cref="F:System.Windows.Input.ImeSentenceModeValues.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.ImeSentenceMode%2A> property.  
-  
- [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
- [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.ImeSentenceMode%2A> property.  
+ 
+[!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+[!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -558,13 +558,13 @@
         <summary>Sets the value of the <see cref="P:System.Windows.Input.InputMethod.InputScope" /> attached property on the specified dependency object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.SetInputScope%2A> method to determine the <xref:System.Windows.Input.InputScope> associated with a <xref:System.Windows.Controls.TextBox> object.  
-  
- [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
- [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.SetInputScope%2A> method to determine the <xref:System.Windows.Input.InputScope> associated with a <xref:System.Windows.Controls.TextBox> object.  
+ 
+[!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+[!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="target" /> is **null**.</exception>
@@ -767,10 +767,10 @@
         <summary>Displays word registration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] associated with the currently active keyboard text service.  Accepts a specified string as the default value to register.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically the value specified by *registeredText* is used to pre-populate the word registration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
-  
+Typically the value specified by *registeredText* is used to pre-populate the word registration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -797,10 +797,10 @@
         <summary>Displays word registration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] associated with the currently active keyboard text service.  Accepts a specified string as the default value to register, and a specified <see cref="T:System.Windows.UIElement" /> as the parent element for the configuration [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically the value specified by *registeredText* is used to pre-populate the word registration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
-  
+Typically the value specified by *registeredText* is used to pre-populate the word registration [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -832,13 +832,13 @@
  The default value is <see cref="F:System.Windows.Input.SpeechMode.Indeterminate" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.SpeechMode%2A> property.  
-  
- [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
- [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
-  
+The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.SpeechMode%2A> property.  
+ 
+[!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+[!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for access to information about the speech mode settings.  Associated enumeration:  <see cref="T:System.Security.Permissions.PermissionState" />.**Unrestricted**.</permission>

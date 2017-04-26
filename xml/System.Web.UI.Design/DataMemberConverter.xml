@@ -14,24 +14,24 @@
     <summary>Provides a type converter that can retrieve a list of data members from the current component's selected data source.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.UI.Design.DataMemberConverter> provides methods that can retrieve a list of data members from the current data source of a design-time component.  
-  
- This type converter is used by [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] to provide the values that appear in the list of data members in the Properties window.  
-  
+<xref:System.Web.UI.Design.DataMemberConverter> provides methods that can retrieve a list of data members from the current data source of a design-time component.  
+ 
+This type converter is used by [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] to provide the values that appear in the list of data members in the Properties window.  
+ 
 > [!CAUTION]
 >  You should never access a type converter directly. Instead, call the appropriate converter by using <xref:System.ComponentModel.TypeDescriptor>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+ 
+For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ 
   
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
-  
-   
-  
+ 
 ## Examples  
- [!code-cpp[DataSourceTypeConverterExamples#2](~/samples/snippets/cpp/VS_Snippets_WebNet/DataSourceTypeConverterExamples/CPP/datasourcetypeconverterexamples.cpp#2)]
- [!code-csharp[DataSourceTypeConverterExamples#2](~/samples/snippets/csharp/VS_Snippets_WebNet/DataSourceTypeConverterExamples/CS/datasourcetypeconverterexamples.cs#2)]
- [!code-vb[DataSourceTypeConverterExamples#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataSourceTypeConverterExamples/VB/datasourcetypeconverterexamples.vb#2)]  
-  
+[!code-cpp[DataSourceTypeConverterExamples#2](~/samples/snippets/cpp/VS_Snippets_WebNet/DataSourceTypeConverterExamples/CPP/datasourcetypeconverterexamples.cpp#2)]
+[!code-csharp[DataSourceTypeConverterExamples#2](~/samples/snippets/csharp/VS_Snippets_WebNet/DataSourceTypeConverterExamples/CS/datasourcetypeconverterexamples.cs#2)]
+[!code-vb[DataSourceTypeConverterExamples#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataSourceTypeConverterExamples/VB/datasourcetypeconverterexamples.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -134,10 +134,10 @@
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> listing the data members of the data source selected for the component.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The converter uses the <xref:System.Web.UI.Design.IDataSourceProvider> implementation of the associated component's designer to retrieve the current data source selection.  
-  
+The converter uses the <xref:System.Web.UI.Design.IDataSourceProvider> implementation of the associated component's designer to retrieve the current data source selection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,10 +166,10 @@
  As implemented in this class, this method always returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the list is exclusive, such as in an enumeration data type, then no other values are valid. If the list is not exclusive, then there are other valid values besides the list of standard values that <xref:System.ComponentModel.TypeConverter.GetStandardValues%2A> provides.  
-  
+If the list is exclusive, such as in an enumeration data type, then no other values are valid. If the list is not exclusive, then there are other valid values besides the list of standard values that <xref:System.ComponentModel.TypeConverter.GetStandardValues%2A> provides.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

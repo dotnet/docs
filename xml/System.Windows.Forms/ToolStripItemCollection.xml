@@ -26,12 +26,12 @@
     <summary>Represents a collection of <see cref="T:System.Windows.Forms.ToolStripItem" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A>, <xref:System.Windows.Forms.ToolStripItemCollection.Remove%2A>, and <xref:System.Windows.Forms.ToolStripItemCollection.RemoveAt%2A> methods enable you to add and remove individual controls from the collection. You can also use the <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> or <xref:System.Windows.Forms.ToolStripItemCollection.Clear%2A> methods to add or remove all the controls from the collection.  
-  
- You can determine whether a <xref:System.Windows.Forms.ToolStripItem> is a member of the collection by passing the control into the <xref:System.Windows.Forms.ToolStripItemCollection.Contains%2A> method. To get the index value of the location of a <xref:System.Windows.Forms.ToolStripItem> in the collection, pass the control into the <xref:System.Windows.Forms.ToolStripItemCollection.IndexOf%2A> method. The collection can be copied into an array by calling the <xref:System.Windows.Forms.ToolStripItemCollection.CopyTo%2A> method.  
-  
+The <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A>, <xref:System.Windows.Forms.ToolStripItemCollection.Remove%2A>, and <xref:System.Windows.Forms.ToolStripItemCollection.RemoveAt%2A> methods enable you to add and remove individual controls from the collection. You can also use the <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> or <xref:System.Windows.Forms.ToolStripItemCollection.Clear%2A> methods to add or remove all the controls from the collection.  
+ 
+You can determine whether a <xref:System.Windows.Forms.ToolStripItem> is a member of the collection by passing the control into the <xref:System.Windows.Forms.ToolStripItemCollection.Contains%2A> method. To get the index value of the location of a <xref:System.Windows.Forms.ToolStripItem> in the collection, pass the control into the <xref:System.Windows.Forms.ToolStripItemCollection.IndexOf%2A> method. The collection can be copied into an array by calling the <xref:System.Windows.Forms.ToolStripItemCollection.CopyTo%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -194,10 +194,10 @@
         <summary>Adds an array of <see cref="T:System.Windows.Forms.ToolStripItem" /> controls to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this overload of <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> to copy a <xref:System.Windows.Forms.ToolStripItem> array to a <xref:System.Windows.Forms.ToolStripItemCollection>. Use the overload of <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> that takes a <xref:System.Windows.Forms.ToolStripItemCollection> parameter to merge one <xref:System.Windows.Forms.ToolStripItemCollection> with another.  
-  
+Use this overload of <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> to copy a <xref:System.Windows.Forms.ToolStripItem> array to a <xref:System.Windows.Forms.ToolStripItemCollection>. Use the overload of <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> that takes a <xref:System.Windows.Forms.ToolStripItemCollection> parameter to merge one <xref:System.Windows.Forms.ToolStripItemCollection> with another.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="toolStripItems" /> parameter is <see langword="null" />.</exception>
@@ -224,12 +224,12 @@
         <summary>Adds a <see cref="T:System.Windows.Forms.ToolStripItemCollection" /> to the current collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this overload of <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> to merge one <xref:System.Windows.Forms.ToolStripItemCollection> with another. You typically use this method with <xref:System.Windows.Forms.ToolStripOverflow>, and you can easily use the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A>, <xref:System.Windows.Forms.ToolStripItemCollection.Insert%2A>, and <xref:System.Windows.Forms.ToolStripItemCollection.Remove%2A> methods to modify the merged <xref:System.Windows.Forms.ToolStripItemCollection>.  
-  
- Use the overload of <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> that takes a <xref:System.Windows.Forms.ToolStripItem> array to copy an array of <xref:System.Windows.Forms.ToolStripItem> controls to a <xref:System.Windows.Forms.ToolStripItemCollection>.  
-  
+Use this overload of <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> to merge one <xref:System.Windows.Forms.ToolStripItemCollection> with another. You typically use this method with <xref:System.Windows.Forms.ToolStripOverflow>, and you can easily use the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A>, <xref:System.Windows.Forms.ToolStripItemCollection.Insert%2A>, and <xref:System.Windows.Forms.ToolStripItemCollection.Remove%2A> methods to modify the merged <xref:System.Windows.Forms.ToolStripItemCollection>.  
+ 
+Use the overload of <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> that takes a <xref:System.Windows.Forms.ToolStripItem> array to copy an array of <xref:System.Windows.Forms.ToolStripItem> controls to a <xref:System.Windows.Forms.ToolStripItemCollection>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="toolStripItems" /> parameter is <see langword="null" />.</exception>
@@ -253,14 +253,14 @@
         <summary>Removes all items from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripItemCollection.Clear%2A> method to remove the entire collection of controls from a parent control.  
-  
- To remove an individual control from the collection, use the <xref:System.Windows.Forms.ToolStripItemCollection.Remove%2A> or <xref:System.Windows.Forms.ToolStripItemCollection.RemoveAt%2A> method.  
-  
- To add new <xref:System.Windows.Forms.ToolStripItem> controls to the <xref:System.Windows.Forms.ToolStripItemCollection>, use the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> or <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> method.  
-  
+Use the <xref:System.Windows.Forms.ToolStripItemCollection.Clear%2A> method to remove the entire collection of controls from a parent control.  
+ 
+To remove an individual control from the collection, use the <xref:System.Windows.Forms.ToolStripItemCollection.Remove%2A> or <xref:System.Windows.Forms.ToolStripItemCollection.RemoveAt%2A> method.  
+ 
+To add new <xref:System.Windows.Forms.ToolStripItem> controls to the <xref:System.Windows.Forms.ToolStripItemCollection>, use the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> or <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Forms.ToolStripItemCollection" /> is read-only.</exception>
@@ -314,10 +314,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripItemCollection" /> contains a <see cref="T:System.Windows.Forms.ToolStripItem" /> with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=fullName> property.  
-  
+The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -414,12 +414,12 @@
         <returns>A zero-based index value that represents the position of the first occurrence of the <see cref="T:System.Windows.Forms.ToolStripItem" /> specified by the <paramref name="key" /> parameter, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=fullName> property.  
-  
- If <xref:System.Windows.Forms.ToolStripItemCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
-  
+The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=fullName> property.  
+ 
+If <xref:System.Windows.Forms.ToolStripItemCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -531,14 +531,14 @@
         <summary>Removes the specified item from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a <xref:System.Windows.Forms.ToolStripItem> is removed from the <xref:System.Windows.Forms.ToolStripItemCollection>, all subsequent controls are moved up one position in the collection.  
-  
- You can also remove a <xref:System.Windows.Forms.ToolStripItem> by using the <xref:System.Windows.Forms.ToolStripItemCollection.RemoveAt%2A> method, or remove all controls by using the <xref:System.Windows.Forms.ToolStripItemCollection.Clear%2A> method.  
-  
- To add new <xref:System.Windows.Forms.ToolStripItem> objects to the collection, use the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> or <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> methods.  
-  
+When a <xref:System.Windows.Forms.ToolStripItem> is removed from the <xref:System.Windows.Forms.ToolStripItemCollection>, all subsequent controls are moved up one position in the collection.  
+ 
+You can also remove a <xref:System.Windows.Forms.ToolStripItem> by using the <xref:System.Windows.Forms.ToolStripItemCollection.RemoveAt%2A> method, or remove all controls by using the <xref:System.Windows.Forms.ToolStripItemCollection.Clear%2A> method.  
+ 
+To add new <xref:System.Windows.Forms.ToolStripItem> objects to the collection, use the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> or <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Forms.ToolStripItemCollection" /> is read-only.</exception>
@@ -564,14 +564,14 @@
         <summary>Removes an item from the specified index in the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a <xref:System.Windows.Forms.ToolStripItem> is removed from the <xref:System.Windows.Forms.ToolStripItemCollection>, all subsequent controls are moved up one position in the collection.  
-  
- You can also remove a <xref:System.Windows.Forms.ToolStripItem> by using the <xref:System.Windows.Forms.ToolStripItemCollection.Remove%2A> method, or remove all controls by using the <xref:System.Windows.Forms.ToolStripItemCollection.Clear%2A> method.  
-  
- To add new <xref:System.Windows.Forms.ToolStripItem> objects to the collection, use the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> or <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> methods.  
-  
+When a <xref:System.Windows.Forms.ToolStripItem> is removed from the <xref:System.Windows.Forms.ToolStripItemCollection>, all subsequent controls are moved up one position in the collection.  
+ 
+You can also remove a <xref:System.Windows.Forms.ToolStripItem> by using the <xref:System.Windows.Forms.ToolStripItemCollection.Remove%2A> method, or remove all controls by using the <xref:System.Windows.Forms.ToolStripItemCollection.Clear%2A> method.  
+ 
+To add new <xref:System.Windows.Forms.ToolStripItem> objects to the collection, use the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> or <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> methods.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Forms.ToolStripItemCollection" /> is read-only.</exception>
@@ -597,10 +597,10 @@
         <summary>Removes the item that has the specified key.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=fullName> property.  
-  
+The `key` parameter value corresponds to the <xref:System.Windows.Forms.ToolStripItem.Name%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Forms.ToolStripItemCollection" /> is read-only.</exception>
@@ -627,10 +627,10 @@
         <returns>The location at which <paramref name="value" /> was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -652,10 +652,10 @@
         <summary>Removes all items from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -682,10 +682,10 @@
           <see langword="true" /> if <paramref name="value" /> is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -711,10 +711,10 @@
         <returns>The index of the item in the collection, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -741,10 +741,10 @@
         <summary>Inserts an item into the collection at a specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -767,10 +767,10 @@
           <see langword="true" /> if the collection has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -796,10 +796,10 @@
         <value>The <see cref="T:System.Windows.Forms.ToolStripItem" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -824,10 +824,10 @@
         <summary>Removes the first occurrence of a specified item from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -852,10 +852,10 @@
         <summary>Removes an item from the collection at a specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ToolStripItemCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

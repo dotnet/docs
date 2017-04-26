@@ -46,10 +46,10 @@
         <value>The full name of the component in this site.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.INestedSite.FullName%2A> property returns the full name of the component in this site in the format of [*owner*].[*component*]*.* If this component's site has a null name, the property also returns `null`.  
-  
+The <xref:System.ComponentModel.INestedSite.FullName%2A> property returns the full name of the component in this site in the format of [*owner*].[*component*]*.* If this component's site has a null name, the property also returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

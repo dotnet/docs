@@ -36,12 +36,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ImportManyAttribute" /> class, importing the set of exports with the default contract name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on the type of the property, field, or parameter that is marked with this attribute.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on the type of the property, field, or parameter that is marked with this attribute.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -64,12 +64,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ImportManyAttribute" /> class, importing the set of exports with the specified contract name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on the property, field, or parameter type that is marked with this attribute.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on the property, field, or parameter type that is marked with this attribute.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,14 +92,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ImportManyAttribute" /> class, importing the set of exports with the contract name derived from the specified type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `contractType`.  
-  
- The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on the property, field, or parameter type that is marked with this attribute.  
-  
- The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
-  
+The contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on `contractType`.  
+ 
+The default contract name is the result of calling the <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName%2A> method on the property, field, or parameter type that is marked with this attribute.  
+ 
+The contract name is compared by using the <xref:System.StringComparer.Ordinal%2A> property to perform a case-sensitive, non-linguistic comparison.  
+ 
  ]]></format>
         </remarks>
       </Docs>

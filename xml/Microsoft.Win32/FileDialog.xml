@@ -86,10 +86,10 @@
           <see langword="true" /> if warnings are displayed; otherwise, <see langword="false" />. The default in this base class is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:Microsoft.Win32.OpenFileDialog> class sets this property to `true` in its constructor.  
-  
+The <xref:Microsoft.Win32.OpenFileDialog> class sets this property to `true` in its constructor.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">to reset the dialog user interface. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
@@ -137,10 +137,10 @@
         <value>The list of custom places.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Starting in [!INCLUDE[TLA2#tla_winvista](~/includes/tla2sharptla-winvista-md.md)], open and save file dialog boxes have a **Favorite Links** panel on the left side of the dialog box that allows the user to quickly navigate to a different location. These links are called custom places. This property allows you to modify the list that appears when your application uses a file dialog box.  
-  
+Starting in [!INCLUDE[TLA2#tla_winvista](~/includes/tla2sharptla-winvista-md.md)], open and save file dialog boxes have a **Favorite Links** panel on the left side of the dialog box that allows the user to quickly navigate to a different location. These links are called custom places. This property allows you to modify the list that appears when your application uses a file dialog box.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,20 +162,20 @@
         <value>The default extension string. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The extension string must contain the leading period. For example, set the <xref:Microsoft.Win32.FileDialog.DefaultExt%2A> property to ".txt" to select all text files.  
+The extension string must contain the leading period. For example, set the <xref:Microsoft.Win32.FileDialog.DefaultExt%2A> property to ".txt" to select all text files.  
+ 
+By default, the <xref:Microsoft.Win32.FileDialog.AddExtension%2A> property attempts to determine the extension to filter the displayed file list from the <xref:Microsoft.Win32.FileDialog.Filter%2A> property. If the extension cannot be determined from the <xref:Microsoft.Win32.FileDialog.Filter%2A> property, <xref:Microsoft.Win32.FileDialog.DefaultExt%2A> will be used instead.  
+ 
   
- By default, the <xref:Microsoft.Win32.FileDialog.AddExtension%2A> property attempts to determine the extension to filter the displayed file list from the <xref:Microsoft.Win32.FileDialog.Filter%2A> property. If the extension cannot be determined from the <xref:Microsoft.Win32.FileDialog.Filter%2A> property, <xref:Microsoft.Win32.FileDialog.DefaultExt%2A> will be used instead.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to create an <xref:Microsoft.Win32.OpenFileDialog> that contains a default file name and extension type.  
-  
- [!code-csharp[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/CSharp/Window1.xaml.cs#openfiledialogboxcodebehind)]
- [!code-vb[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/VisualBasic/window1.xaml.vb#openfiledialogboxcodebehind)]  
-  
+The following example shows how to create an <xref:Microsoft.Win32.OpenFileDialog> that contains a default file name and extension type.  
+ 
+[!code-csharp[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/CSharp/Window1.xaml.cs#openfiledialogboxcodebehind)]
+[!code-vb[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/VisualBasic/window1.xaml.vb#openfiledialogboxcodebehind)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,10 +230,10 @@
         <value>A <see cref="T:System.String" /> that is the full path of the file selected in the file dialog. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If more than one file name is selected (length of <xref:Microsoft.Win32.FileDialog.FileNames%2A> is greater than one) then <xref:Microsoft.Win32.FileDialog.FileName%2A> contains the first selected file name. If no file name is selected, this property contains <xref:System.String.Empty> rather than `null`.  
-  
+If more than one file name is selected (length of <xref:Microsoft.Win32.FileDialog.FileNames%2A> is greater than one) then <xref:Microsoft.Win32.FileDialog.FileName%2A> contains the first selected file name. If no file name is selected, this property contains <xref:System.String.Empty> rather than `null`.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">to either get or set the path in the dialog. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
@@ -279,10 +279,10 @@
         <summary>Occurs when the user selects a file name by either clicking the **Open** button of the <see cref="T:Microsoft.Win32.OpenFileDialog" /> or the **Save** button of the <see cref="T:Microsoft.Win32.SaveFileDialog" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Win32.FileDialog.FileOk> is raised after the user selects a file name, but before the dialog closes, which allows you to process the selection. If required, the user's selection can be cancelled by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.ComponentModel.CancelEventArgs> argument to `true`.  
-  
+<xref:Microsoft.Win32.FileDialog.FileOk> is raised after the user selects a file name, but before the dialog closes, which allows you to process the selection. If required, the user's selection can be cancelled by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.ComponentModel.CancelEventArgs> argument to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,121 +304,121 @@
         <value>A <see cref="T:System.String" /> that contains the filter. The default is <see cref="F:System.String.Empty" />, which means that no filter is applied and all file types are displayed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:Microsoft.Win32.FileDialog.Filter%2A> is either `null` or <xref:System.String>, all files are displayed, and folders are always displayed.  
-  
- You can specify a subset of file types to be displayed by setting the <xref:Microsoft.Win32.FileDialog.Filter%2A> property. Each file type can represent a specific type of file, such as the following:  
-  
+If <xref:Microsoft.Win32.FileDialog.Filter%2A> is either `null` or <xref:System.String>, all files are displayed, and folders are always displayed.  
+ 
+You can specify a subset of file types to be displayed by setting the <xref:Microsoft.Win32.FileDialog.Filter%2A> property. Each file type can represent a specific type of file, such as the following:  
+ 
 -   Word Documents (*.doc)  
-  
+ 
 -   Excel Worksheets (*.xls)  
-  
+ 
 -   PowerPoint Presentations (*.ppt)  
-  
- Alternatively, a file type can represent a group of related file types, such as the following:  
-  
+ 
+Alternatively, a file type can represent a group of related file types, such as the following:  
+ 
 -   Office Files (*.doc, *.xls, *.ppt)  
-  
+ 
 -   All Files (*.\*)  
-  
- To specify a subset of the types of files that are displayed, you set the <xref:Microsoft.Win32.FileDialog.Filter%2A> property with a string value (the *filter string*) that specifies one or more types of files to filter by. The following shows the expected format of the filter string:  
-  
- `FileType1[[|FileType2]...[|FileTypeN]]`  
-  
- You use the following format to describe each file type:  
-  
- `Label|Extension1[[;Extension2]...[;ExtensionN]]`  
-  
- The *Label* part is a human-readable string value that describes the file type, such as the following:  
-  
+ 
+To specify a subset of the types of files that are displayed, you set the <xref:Microsoft.Win32.FileDialog.Filter%2A> property with a string value (the *filter string*) that specifies one or more types of files to filter by. The following shows the expected format of the filter string:  
+ 
+`FileType1[[|FileType2]...[|FileTypeN]]`  
+ 
+You use the following format to describe each file type:  
+ 
+`Label|Extension1[[;Extension2]...[;ExtensionN]]`  
+ 
+The *Label* part is a human-readable string value that describes the file type, such as the following:  
+ 
 -   "Word Documents"  
-  
+ 
 -   "Excel Worksheets"  
-  
+ 
 -   "PowerPoint Presentations"  
-  
+ 
 -   "Office Files"  
-  
+ 
 -   "All Files"  
-  
- Each file type must be described by at least one *Extension*. If more than one *Extension* is used, each *Extension* must be separated by a semicolon (";"). For example:  
-  
+ 
+Each file type must be described by at least one *Extension*. If more than one *Extension* is used, each *Extension* must be separated by a semicolon (";"). For example:  
+ 
 -   "*.doc"  
-  
+ 
 -   "*.xls;"  
-  
+ 
 -   "*.ppt"  
-  
+ 
 -   "*.doc;\*.xls;\*.ppt"  
-  
+ 
 -   "*.\*"  
-  
- The following are complete examples of valid <xref:Microsoft.Win32.FileDialog.Filter%2A> string values:  
-  
+ 
+The following are complete examples of valid <xref:Microsoft.Win32.FileDialog.Filter%2A> string values:  
+ 
 -   `Word Documents|*.doc`  
-  
+ 
 -   `Excel Worksheets|*.xls`  
-  
+ 
 -   `PowerPoint Presentations|*.ppt`  
-  
+ 
 -   `Office Files|*.doc;*.xls;*.ppt`  
-  
+ 
 -   `All Files|*.*`  
-  
+ 
 -   `Word Documents|*.doc|Excel Worksheets|*.xls|PowerPoint Presentations|*.ppt|Office Files|*.doc;*.xls;*.ppt|All Files|*.*`  
+ 
+Each file type that is included in the filter is added as a separate item to the **Files of type:** drop-down list in the <xref:Microsoft.Win32.OpenFileDialog> or <xref:Microsoft.Win32.SaveFileDialog>, as shown in the following figure.  
+ 
+![Using the FileDialog.Filter in the Open Dialog Box](~/add/media/filedialogfilterfigure1.png "Using the FileDialog.Filter in the Open Dialog Box")  
+ 
+The user can choose a file type from this list to filter by. By default, the first item in the list (for example, the first file type) is selected when the <xref:Microsoft.Win32.OpenFileDialog> or <xref:Microsoft.Win32.SaveFileDialog> is displayed. To specify that another file type to be selected, you set the <xref:Microsoft.Win32.FileDialog.FilterIndex%2A> property before showing the <xref:Microsoft.Win32.OpenFileDialog> or <xref:Microsoft.Win32.SaveFileDialog> (by calling <xref:Microsoft.Win32.CommonDialog.ShowDialog%2A>).  
+ 
   
- Each file type that is included in the filter is added as a separate item to the **Files of type:** drop-down list in the <xref:Microsoft.Win32.OpenFileDialog> or <xref:Microsoft.Win32.SaveFileDialog>, as shown in the following figure.  
-  
- ![Using the FileDialog.Filter in the Open Dialog Box](~/add/media/filedialogfilterfigure1.png "Using the FileDialog.Filter in the Open Dialog Box")  
-  
- The user can choose a file type from this list to filter by. By default, the first item in the list (for example, the first file type) is selected when the <xref:Microsoft.Win32.OpenFileDialog> or <xref:Microsoft.Win32.SaveFileDialog> is displayed. To specify that another file type to be selected, you set the <xref:Microsoft.Win32.FileDialog.FilterIndex%2A> property before showing the <xref:Microsoft.Win32.OpenFileDialog> or <xref:Microsoft.Win32.SaveFileDialog> (by calling <xref:Microsoft.Win32.CommonDialog.ShowDialog%2A>).  
-  
-   
-  
+ 
 ## Examples  
- The following examples demonstrate several types of filter strings that can be set by using the <xref:Microsoft.Win32.FileDialog.Filter%2A> property.  
-  
- [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
- [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+The following examples demonstrate several types of filter strings that can be set by using the <xref:Microsoft.Win32.FileDialog.Filter%2A> property.  
+ 
+[!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+[!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
 [!code-csharp[FileDialogFilterSnippets#FilterString1](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring1)]
 [!code-vb[FileDialogFilterSnippets#FilterString1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring1)]  
-  
- [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
- [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+ 
+[!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+[!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
 [!code-csharp[FileDialogFilterSnippets#FilterString2](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring2)]
 [!code-vb[FileDialogFilterSnippets#FilterString2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring2)]  
-  
- [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
- [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+ 
+[!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+[!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
 [!code-csharp[FileDialogFilterSnippets#FilterString3](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring3)]
 [!code-vb[FileDialogFilterSnippets#FilterString3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring3)]  
-  
- [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
- [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+ 
+[!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+[!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
 [!code-csharp[FileDialogFilterSnippets#FilterString4](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring4)]
 [!code-vb[FileDialogFilterSnippets#FilterString4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring4)]  
-  
- [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
- [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+ 
+[!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+[!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
 [!code-csharp[FileDialogFilterSnippets#FilterString5](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring5)]
 [!code-vb[FileDialogFilterSnippets#FilterString5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring5)]  
-  
- [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
- [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+ 
+[!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+[!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
 [!code-csharp[FileDialogFilterSnippets#FilterString6](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring6)]
 [!code-vb[FileDialogFilterSnippets#FilterString6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring6)]  
-  
- [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
- [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+ 
+[!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+[!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
 [!code-csharp[FileDialogFilterSnippets#FilterString7](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring7)]
 [!code-vb[FileDialogFilterSnippets#FilterString7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring7)]  
-  
- [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
- [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+ 
+[!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+[!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
 [!code-csharp[FileDialogFilterSnippets#FilterString8](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring8)]
 [!code-vb[FileDialogFilterSnippets#FilterString8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring8)]  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The filter string is invalid.</exception>
@@ -441,10 +441,10 @@
         <value>The <see cref="T:System.Int32" /> that is the index of the selected filter. The default is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This index is 1-based, not 0-based, due to compatibility requirements with the underlying [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] [!INCLUDE[TLA#tla_api](~/includes/tlasharptla-api-md.md)].  
-  
+This index is 1-based, not 0-based, due to compatibility requirements with the underlying [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] [!INCLUDE[TLA#tla_api](~/includes/tlasharptla-api-md.md)].  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -504,10 +504,10 @@
         <value>A <see cref="T:System.String" /> that contains the initial directory. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there is no initial directory set, this property will contain <xref:System.String> rather than a null string.  
-  
+If there is no initial directory set, this property will contain <xref:System.String> rather than a null string.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">to set the initial directory value. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
@@ -533,12 +533,12 @@
         <summary>Raises the <see cref="E:Microsoft.Win32.FileDialog.FileOk" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.Win32.FileDialog.OnFileOk%2A> raises the <xref:Microsoft.Win32.FileDialog.FileOk> event.  
-  
- A type that derives from <xref:Microsoft.Win32.FileDialog> may override <xref:Microsoft.Win32.FileDialog.OnFileOk%2A>. The overridden method must call <xref:Microsoft.Win32.FileDialog.OnFileOk%2A> on the base class if <xref:Microsoft.Win32.FileDialog.FileOk> needs to be raised.  
-  
+<xref:Microsoft.Win32.FileDialog.OnFileOk%2A> raises the <xref:Microsoft.Win32.FileDialog.FileOk> event.  
+ 
+A type that derives from <xref:Microsoft.Win32.FileDialog> may override <xref:Microsoft.Win32.FileDialog.OnFileOk%2A>. The overridden method must call <xref:Microsoft.Win32.FileDialog.OnFileOk%2A> on the base class if <xref:Microsoft.Win32.FileDialog.FileOk> needs to be raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -560,10 +560,10 @@
         <value>A <see cref="T:System.Int32" /> that contains the [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] common file dialog flags that are used by file dialogs for initialization.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is used to display a file dialog with the current set of property values. The actual options are exposed as properties on the specific dialogs, but not documented as public flag values at this level, so the uses of this property are mainly internal, for use when implementing the derived classes <xref:Microsoft.Win32.OpenFileDialog> and <xref:Microsoft.Win32.SaveFileDialog>.  
-  
+This value is used to display a file dialog with the current set of property values. The actual options are exposed as properties on the specific dialogs, but not documented as public flag values at this level, so the uses of this property are mainly internal, for use when implementing the derived classes <xref:Microsoft.Win32.OpenFileDialog> and <xref:Microsoft.Win32.SaveFileDialog>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -646,10 +646,10 @@
           <see langword="true" /> if the user clicks the **OK** button of the dialog that is displayed (for example, <see cref="T:Microsoft.Win32.OpenFileDialog" />, <see cref="T:Microsoft.Win32.SaveFileDialog" />); otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The dialog that is eventually shown is assigned an owner window, which is specified by the `hwndOwner` parameter.  
-  
+The dialog that is eventually shown is assigned an owner window, which is specified by the `hwndOwner` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -676,14 +676,14 @@
         <value>A <see cref="T:System.String" /> that only contains the file name for the selected file. The default is <see cref="F:System.String.Empty" />, which is also the value when either no file is selected or a directory is selected.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is the <xref:Microsoft.Win32.FileDialog.FileName%2A> with all path information removed. Removing the paths makes the value appropriate for use in partial trust applications, since it prevents applications from discovering information about the local file system.  
-  
- If more than one file name is selected (length of <xref:Microsoft.Win32.FileDialog.SafeFileNames%2A> is greater than one) then this property contains only the first selected file name.  
-  
- See [Safe File Upload from an XBAP Sample](http://msdn.microsoft.com/en-us/01206dd3-acc7-45ff-aeb9-502c20aaad2c).  
-  
+This value is the <xref:Microsoft.Win32.FileDialog.FileName%2A> with all path information removed. Removing the paths makes the value appropriate for use in partial trust applications, since it prevents applications from discovering information about the local file system.  
+ 
+If more than one file name is selected (length of <xref:Microsoft.Win32.FileDialog.SafeFileNames%2A> is greater than one) then this property contains only the first selected file name.  
+ 
+See [Safe File Upload from an XBAP Sample](http://msdn.microsoft.com/en-us/01206dd3-acc7-45ff-aeb9-502c20aaad2c).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -710,10 +710,10 @@
         <value>An array of <see cref="T:System.String" /> that contains one safe file name for each selected file. The default is an array with a single item whose value is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See <xref:Microsoft.Win32.FileDialog.SafeFileName%2A>.  
-  
+See <xref:Microsoft.Win32.FileDialog.SafeFileName%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -740,10 +740,10 @@
         <value>A <see cref="T:System.String" /> that is the text that appears in the title bar of a file dialog. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:Microsoft.Win32.FileDialog.Title%2A> is null or <xref:System.String>, a default, localized value is used, such as "Save As" or "Open".  
-  
+If <xref:Microsoft.Win32.FileDialog.Title%2A> is null or <xref:System.String>, a default, localized value is used, such as "Save As" or "Open".  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">to set the dialog title. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>

@@ -58,10 +58,10 @@
         <returns>An array of <see cref="T:System.Byte" /> that contains the decrypted key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url> or <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl> fields to specify the algorithm.  
-  
+Use the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url> or <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl> fields to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The X.509 certificate specified in the constructor does not have a private key.  
@@ -102,10 +102,10 @@
         <returns>An array of <see cref="T:System.Byte" /> that contains the encrypted key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url> or <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl> fields to specify the algorithm.  
-  
+Use the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url> or <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl> fields to specify the algorithm.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The X.509 certificate specified in the constructor has a public key that was not generated using the <see cref="T:System.Security.Cryptography.RSA" /> algorithm.  
@@ -139,10 +139,10 @@
         <returns>An <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> that represents the specified asymmetric cryptographic algorithm.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>, <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url>, <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> fields to specify the `algorithm` parameter.  
-  
+Use the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>, <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url>, <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> fields to specify the `algorithm` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
@@ -182,10 +182,10 @@
         <returns>A <see cref="T:System.Security.Cryptography.HashAlgorithm" /> that generates hashes for digital signatures.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> fields to specify the `algorithm` parameter.  
-  
+Use the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> fields to specify the `algorithm` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
@@ -213,10 +213,10 @@
         <returns>An <see cref="T:System.Security.Cryptography.AsymmetricSignatureDeformatter" /> that represents the de-formatter algorithm for the digital signature.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> fields to specify the `algorithm` parameter.  
-  
+Use the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> fields to specify the `algorithm` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
@@ -254,10 +254,10 @@
         <returns>An <see cref="T:System.Security.Cryptography.AsymmetricSignatureDeformatter" /> that represents the formatter algorithm for the digital signature.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> fields to specify the `algorithm` parameter.  
-  
+Use the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> fields to specify the `algorithm` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The X.509 certificate specified in the constructor does not have a private key.  
@@ -342,14 +342,14 @@
           <see langword="true" /> when the specified algorithm is <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl" />, <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url" />, <see cref="F:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl" />, <see cref="F:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url" />, or <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" /> and the public key is of the right type; otherwise, <see langword="false" />. See the remarks for details.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.X509AsymmetricSecurityKey.IsSupportedAlgorithm%2A> method returns `true` when one of the following is true:  
-  
+The <xref:System.IdentityModel.Tokens.X509AsymmetricSecurityKey.IsSupportedAlgorithm%2A> method returns `true` when one of the following is true:  
+ 
 -   The `algorithm` parameter is <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl> and the public key for the X.509 certificate specified in the constructor is of type <xref:System.Security.Cryptography.DSA>.  
-  
+ 
 -   The `algorithm` parameter is <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url>, <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> and the public key for the X.509 certificate specified in the constructor is of type <xref:System.Security.Cryptography.RSA>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

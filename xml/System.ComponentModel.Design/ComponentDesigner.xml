@@ -27,31 +27,31 @@
     <summary>Extends the design mode behavior of a component.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.ComponentDesigner> base designer class provides a simple designer that can extend the behavior of an associated component in design mode.  
-  
- <xref:System.ComponentModel.Design.ComponentDesigner> provides an empty <xref:System.ComponentModel.Design.IDesignerFilter> interface implementation, whose methods can be overridden to adjust the attributes, properties and events of the associated component at design time.  
-  
- You can associate a designer with a type using a <xref:System.ComponentModel.DesignerAttribute>. For an overview of customizing design-time behavior, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
-  
- The <xref:System.ComponentModel.Design.ComponentDesigner> class implements a special behavior for the property descriptors of inherited components. An internal type named `InheritedPropertyDescriptor` is used by the default <xref:System.ComponentModel.Design.ComponentDesigner> implementation to stand in for properties that are inherited from a base class. There are two cases in which these property descriptors are added.  
-  
+The <xref:System.ComponentModel.Design.ComponentDesigner> base designer class provides a simple designer that can extend the behavior of an associated component in design mode.  
+ 
+<xref:System.ComponentModel.Design.ComponentDesigner> provides an empty <xref:System.ComponentModel.Design.IDesignerFilter> interface implementation, whose methods can be overridden to adjust the attributes, properties and events of the associated component at design time.  
+ 
+You can associate a designer with a type using a <xref:System.ComponentModel.DesignerAttribute>. For an overview of customizing design-time behavior, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+ 
+The <xref:System.ComponentModel.Design.ComponentDesigner> class implements a special behavior for the property descriptors of inherited components. An internal type named `InheritedPropertyDescriptor` is used by the default <xref:System.ComponentModel.Design.ComponentDesigner> implementation to stand in for properties that are inherited from a base class. There are two cases in which these property descriptors are added.  
+ 
 1.  To the root object itself, which is returned by the <xref:System.ComponentModel.Design.IDesignerHost.RootComponent%2A?displayProperty=fullName> property, because you are inheriting from its base class.  
-  
+ 
 2.  To fields found in the base class of the root object. Public and protected fields from the base class are added to the designer so that they can be manipulated by the user.  
+ 
+The `InheritedPropertyDescriptor` class modifies the default value of a property, so that the default value is the current value at object instantiation. This is because the property is inherited from another instance. The designer defines resetting the property value as setting it to the value that was set by the inherited class. This value may differ from the default value stored in metadata.  
+ 
   
- The `InheritedPropertyDescriptor` class modifies the default value of a property, so that the default value is the current value at object instantiation. This is because the property is inherited from another instance. The designer defines resetting the property value as setting it to the value that was set by the inherited class. This value may differ from the default value stored in metadata.  
-  
-   
-  
+ 
 ## Examples  
- The following code example provides an example <xref:System.ComponentModel.Design.ComponentDesigner> implementation and an example component associated with the designer. The designer implements an override of the <xref:System.ComponentModel.Design.ComponentDesigner.Initialize%2A> method that calls the base `Initialize` method, an override of the <xref:System.ComponentModel.Design.ComponentDesigner.DoDefaultAction%2A> method that displays a <xref:System.Windows.Forms.MessageBox> when the component is double-clicked, and an override of the <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> property accessor that supplies a custom <xref:System.ComponentModel.Design.DesignerVerb> menu command to the shortcut menu for the component.  
-  
- [!code-cpp[ComponentDesignerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentDesignerExample/CPP/examplecomponent.cpp#1)]
- [!code-csharp[ComponentDesignerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentDesignerExample/CS/examplecomponent.cs#1)]
- [!code-vb[ComponentDesignerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentDesignerExample/VB/examplecomponent.vb#1)]  
-  
+The following code example provides an example <xref:System.ComponentModel.Design.ComponentDesigner> implementation and an example component associated with the designer. The designer implements an override of the <xref:System.ComponentModel.Design.ComponentDesigner.Initialize%2A> method that calls the base `Initialize` method, an override of the <xref:System.ComponentModel.Design.ComponentDesigner.DoDefaultAction%2A> method that displays a <xref:System.Windows.Forms.MessageBox> when the component is double-clicked, and an override of the <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> property accessor that supplies a custom <xref:System.ComponentModel.Design.DesignerVerb> menu command to the shortcut menu for the component.  
+ 
+[!code-cpp[ComponentDesignerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentDesignerExample/CPP/examplecomponent.cpp#1)]
+[!code-csharp[ComponentDesignerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentDesignerExample/CS/examplecomponent.cs#1)]
+[!code-vb[ComponentDesignerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentDesignerExample/VB/examplecomponent.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -106,14 +106,14 @@
         <value>The components that are associated with the component managed by the designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property indicates any components to copy or move along with the component managed by the designer during a copy, drag, or move operation.  
-  
- If this collection contains references to other components in the current design mode document, those components will be copied along with the component managed by the designer during a copy operation.  
-  
- When the component managed by the designer is selected, this collection is filled with any nested controls. This collection can also include other components, such as the buttons of a toolbar.  
-  
+This property indicates any components to copy or move along with the component managed by the designer during a copy, drag, or move operation.  
+ 
+If this collection contains references to other components in the current design mode document, those components will be copied along with the component managed by the designer during a copy operation.  
+ 
+When the component managed by the designer is selected, this collection is filled with any nested controls. This collection can also include other components, such as the buttons of a toolbar.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,13 +135,13 @@
         <value>The component managed by the designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.ComponentDesigner.Initialize%2A> method of <xref:System.ComponentModel.Design.ComponentDesigner> sets this property.  
-  
+The <xref:System.ComponentModel.Design.ComponentDesigner.Initialize%2A> method of <xref:System.ComponentModel.Design.ComponentDesigner> sets this property.  
+ 
 > [!NOTE]
 >  When overriding the <xref:System.ComponentModel.Design.ComponentDesigner.Initialize%2A> method, be sure to call the base class <xref:System.ComponentModel.Design.ComponentDesigner.Initialize%2A> method before using this property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,13 +163,13 @@
         <summary>Releases all resources used by the <see cref="T:System.ComponentModel.Design.ComponentDesigner" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.ComponentModel.Design.ComponentDesigner.Dispose%2A> when you are finished using the <xref:System.ComponentModel.Design.ComponentDesigner>. The <xref:System.ComponentModel.Design.ComponentDesigner.Dispose%2A> method leaves the <xref:System.ComponentModel.Design.ComponentDesigner> in an unusable state. After calling <xref:System.ComponentModel.Design.ComponentDesigner.Dispose%2A>, you must release all references to the <xref:System.ComponentModel.Design.ComponentDesigner> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Design.ComponentDesigner> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call <xref:System.ComponentModel.Design.ComponentDesigner.Dispose%2A> when you are finished using the <xref:System.ComponentModel.Design.ComponentDesigner>. The <xref:System.ComponentModel.Design.ComponentDesigner.Dispose%2A> method leaves the <xref:System.ComponentModel.Design.ComponentDesigner> in an unusable state. After calling <xref:System.ComponentModel.Design.ComponentDesigner.Dispose%2A>, you must release all references to the <xref:System.ComponentModel.Design.ComponentDesigner> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Design.ComponentDesigner> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call <xref:System.ComponentModel.Design.ComponentDesigner.Dispose%2A> before you release your last reference to the <xref:System.ComponentModel.Design.ComponentDesigner>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.ComponentModel.Design.ComponentDesigner> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,12 +195,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.ComponentModel.Design.ComponentDesigner" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.ComponentModel.Design.ComponentDesigner> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.ComponentModel.Design.ComponentDesigner> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -228,10 +228,10 @@
         <summary>Creates a method signature in the source code file for the default event on the component and navigates the user's cursor to that location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In Windows Forms and Web Forms designers, this method is invoked when a user double-clicks a component.  
-  
+In Windows Forms and Web Forms designers, this method is invoked when a user double-clicks a component.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Design.CheckoutException">An attempt to check out a file that is checked into a source code management program failed.</exception>
@@ -254,14 +254,14 @@
         <summary>Attempts to free resources by calling <see langword="Dispose(false)" /> before the object is reclaimed by garbage collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.Object.Finalize%2A?displayProperty=fullName> and cleans up resources by calling `Dispose(false)`. Override `Dispose(Boolean)` to customize the cleanup.  
-  
- Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method.  
-  
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
-  
+This method overrides <xref:System.Object.Finalize%2A?displayProperty=fullName> and cleans up resources by calling `Dispose(false)`. Override `Dispose(Boolean)` to customize the cleanup.  
+ 
+Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method.  
+ 
+For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,18 +287,18 @@
         <returns>An object implementing the requested service, or <see langword="null" /> if the service cannot be resolved.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this method requests the service from the site of the component.  
+The default implementation of this method requests the service from the site of the component.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.ComponentModel.Design.ComponentDesigner.GetService%2A> method to access designer services.  
-  
- [!code-csharp[System.ComponentModel.Design.DesignerServices#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerServices/CS/Form1.cs#7)]
- [!code-vb[System.ComponentModel.Design.DesignerServices#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerServices/VB/Form1.vb#7)]  
-  
+The following code example demonstrates the use of the <xref:System.ComponentModel.Design.ComponentDesigner.GetService%2A> method to access designer services.  
+ 
+[!code-csharp[System.ComponentModel.Design.DesignerServices#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerServices/CS/Form1.cs#7)]
+[!code-vb[System.ComponentModel.Design.DesignerServices#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerServices/VB/Form1.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -360,10 +360,10 @@
         <summary>Prepares the designer to view, edit, and design the specified component.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The designer host calls this method when it is ready to use the designer.  
-  
+The designer host calls this method when it is ready to use the designer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -388,14 +388,14 @@
         <summary>Reinitializes an existing component.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.ComponentDesigner.InitializeExistingComponent%2A> method is called when an existing component is being reinitialized. For example, this may occur after the user drags a component to another container.  
-  
- You may use the `defaultValues` dictionary to apply recommended defaults to properties; however, you should not modify component properties aside from those stored in the dictionary, because this existing component may already have properties set on it.  
-  
- The default implementation of this method does nothing.  
-  
+The <xref:System.ComponentModel.Design.ComponentDesigner.InitializeExistingComponent%2A> method is called when an existing component is being reinitialized. For example, this may occur after the user drags a component to another container.  
+ 
+You may use the `defaultValues` dictionary to apply recommended defaults to properties; however, you should not modify component properties aside from those stored in the dictionary, because this existing component may already have properties set on it.  
+ 
+The default implementation of this method does nothing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -420,14 +420,14 @@
         <summary>Initializes a newly created component.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.ComponentDesigner.InitializeNewComponent%2A> method is called when a component is first initialized, typically after being first added to a design surface.  
-  
- You may perform any necessary initialization of this component, and you may ignore the `defaultValues` dictionary altogether.  
-  
- The default implementation of this method does nothing.  
-  
+The <xref:System.ComponentModel.Design.ComponentDesigner.InitializeNewComponent%2A> method is called when a component is first initialized, typically after being first added to a design surface.  
+ 
+You may perform any necessary initialization of this component, and you may ignore the `defaultValues` dictionary altogether.  
+ 
+The default implementation of this method does nothing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -454,10 +454,10 @@
         <summary>Initializes the settings for an imported component that is already initialized to settings other than the defaults.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called when the designer is associated with a control that is not in its default state, such as a control that you paste or move with a drag-and-drop operation onto the designer. This method provides an opportunity for implementers to modify or shadow the properties of the component rather than initialize the properties for the component to their defaults. This method is called after the other initialization functions.  
-  
+This method is called when the designer is associated with a control that is not in its default state, such as a control that you paste or move with a drag-and-drop operation onto the designer. This method provides an opportunity for implementers to modify or shadow the properties of the component rather than initialize the properties for the component to their defaults. This method is called after the other initialization functions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -506,14 +506,14 @@
         <summary>Sets the default properties for the component.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ComponentModel.Design.ComponentDesigner.OnSetComponentDefaults%2A> is called when the designer is initialized. This allows the designer to provide default values for the base component.  
-  
- This method is called only once: when you first create the component by dragging it from the Toolbox to the design surface. Subsequent initializations of the designer do not invoke this method.  
-  
- The default implementation of this method sets the default property of the component to the name of the component if the default property is a string and the property is not already set. This method can be implemented in a derived class to customize the initialization of the component that this designer is designing.  
-  
+<xref:System.ComponentModel.Design.ComponentDesigner.OnSetComponentDefaults%2A> is called when the designer is initialized. This allows the designer to provide default values for the base component.  
+ 
+This method is called only once: when you first create the component by dragging it from the Toolbox to the design surface. Subsequent initializations of the designer do not invoke this method.  
+ 
+The default implementation of this method sets the default property of the component to the name of the component if the default property is a string and the property is not already set. This method can be implemented in a derived class to customize the initialization of the component that this designer is designing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -535,10 +535,10 @@
         <value>The parent component for this designer, or <see langword="null" /> if this designer is the root component.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides a generic mechanism for discovering parent relationships within designers, and is used by the <xref:System.ComponentModel.Design.ComponentDesigner> object's <xref:System.ComponentModel.Design.ITreeDesigner> interface implementation. This property should only return `null` when this designer is the root component. The default implementation of this property returns the root component for all components that are not the root component, and it returns `null` for the root component.  
-  
+This property provides a generic mechanism for discovering parent relationships within designers, and is used by the <xref:System.ComponentModel.Design.ComponentDesigner> object's <xref:System.ComponentModel.Design.ITreeDesigner> interface implementation. This property should only return `null` when this designer is the root component. The default implementation of this property returns the root component for all components that are not the root component, and it returns `null` for the root component.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -563,12 +563,12 @@
         <summary>Allows a designer to change or remove items from the set of attributes that it exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method provides a way to change or remove the items within the dictionary of attributes that are exposed through a <xref:System.ComponentModel.TypeDescriptor>.  
-  
- The keys in the dictionary of attributes are the type identifiers of the attributes, as specified by the value of their <xref:System.Attribute.TypeId%2A> property. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>. This method is called immediately after the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterAttributes%2A> method.  
-  
+This method provides a way to change or remove the items within the dictionary of attributes that are exposed through a <xref:System.ComponentModel.TypeDescriptor>.  
+ 
+The keys in the dictionary of attributes are the type identifiers of the attributes, as specified by the value of their <xref:System.Attribute.TypeId%2A> property. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>. This method is called immediately after the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterAttributes%2A> method.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -596,12 +596,12 @@
         <summary>Allows a designer to change or remove items from the set of events that it exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method provides a way to change or remove the items within the dictionary of events that are exposed through a <xref:System.ComponentModel.TypeDescriptor>.  
-  
- The keys in the dictionary of events are the names of the events. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>. This method is called immediately after the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterEvents%2A> method.  
-  
+This method provides a way to change or remove the items within the dictionary of events that are exposed through a <xref:System.ComponentModel.TypeDescriptor>.  
+ 
+The keys in the dictionary of events are the names of the events. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>. This method is called immediately after the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterEvents%2A> method.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -629,12 +629,12 @@
         <summary>Allows a designer to change or remove items from the set of properties that it exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method provides a way to change or remove the items within the dictionary of properties that are exposed through a <xref:System.ComponentModel.TypeDescriptor>.  
-  
- The keys in the dictionary of properties are the names of the properties. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>. This method is called immediately after the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A> method.  
-  
+This method provides a way to change or remove the items within the dictionary of properties that are exposed through a <xref:System.ComponentModel.TypeDescriptor>.  
+ 
+The keys in the dictionary of properties are the names of the properties. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>. This method is called immediately after the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A> method.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -662,12 +662,12 @@
         <summary>Allows a designer to add to the set of attributes that it exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method provides a way to add items to the dictionary of attributes that a designer exposes through a <xref:System.ComponentModel.TypeDescriptor>.  
-  
- The keys in the dictionary of attributes are the type identifiers of the attributes, as specified by the value of their <xref:System.Attribute.TypeId%2A> property. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>. This method is called immediately before the <xref:System.ComponentModel.Design.ComponentDesigner.PostFilterAttributes%2A> method.  
-  
+This method provides a way to add items to the dictionary of attributes that a designer exposes through a <xref:System.ComponentModel.TypeDescriptor>.  
+ 
+The keys in the dictionary of attributes are the type identifiers of the attributes, as specified by the value of their <xref:System.Attribute.TypeId%2A> property. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>. This method is called immediately before the <xref:System.ComponentModel.Design.ComponentDesigner.PostFilterAttributes%2A> method.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -695,12 +695,12 @@
         <summary>Allows a designer to add to the set of events that it exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method provides a way to add items to the dictionary of events that a designer exposes through a <xref:System.ComponentModel.TypeDescriptor>.  
-  
- The keys in the dictionary of events are the names of the events. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>. This method is called immediately before the <xref:System.ComponentModel.Design.ComponentDesigner.PostFilterEvents%2A> method.  
-  
+This method provides a way to add items to the dictionary of events that a designer exposes through a <xref:System.ComponentModel.TypeDescriptor>.  
+ 
+The keys in the dictionary of events are the names of the events. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>. This method is called immediately before the <xref:System.ComponentModel.Design.ComponentDesigner.PostFilterEvents%2A> method.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -728,12 +728,12 @@
         <summary>Allows a designer to add to the set of properties that it exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method provides a way to add items to the dictionary of properties that a designer exposes through a <xref:System.ComponentModel.TypeDescriptor>.  
-  
- The keys in the dictionary of properties are the names of the properties. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>. This method is called immediately before the <xref:System.ComponentModel.Design.ComponentDesigner.PostFilterProperties%2A> method.  
-  
+This method provides a way to add items to the dictionary of properties that a designer exposes through a <xref:System.ComponentModel.TypeDescriptor>.  
+ 
+The keys in the dictionary of properties are the names of the properties. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>. This method is called immediately before the <xref:System.ComponentModel.Design.ComponentDesigner.PostFilterProperties%2A> method.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -765,10 +765,10 @@
         <summary>Notifies the <see cref="T:System.ComponentModel.Design.IComponentChangeService" /> that this component has been changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method only when you affect component properties directly and not through the accessors provided by <xref:System.ComponentModel.MemberDescriptor>.  
-  
+Call this method only when you affect component properties directly and not through the accessors provided by <xref:System.ComponentModel.MemberDescriptor>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -793,10 +793,10 @@
         <summary>Notifies the <see cref="T:System.ComponentModel.Design.IComponentChangeService" /> that this component is about to be changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call this method only when you affect component properties directly and not through accessors provided by <xref:System.ComponentModel.MemberDescriptor>.  
-  
+Call this method only when you affect component properties directly and not through accessors provided by <xref:System.ComponentModel.MemberDescriptor>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -839,10 +839,10 @@
         <summary>For a description of this member, see the <see cref="M:System.ComponentModel.Design.IDesignerFilter.PostFilterAttributes(System.Collections.IDictionary)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -867,10 +867,10 @@
         <summary>For a description of this member, see the <see cref="M:System.ComponentModel.Design.IDesignerFilter.PostFilterEvents(System.Collections.IDictionary)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -895,10 +895,10 @@
         <summary>For a description of this member, see the <see cref="M:System.ComponentModel.Design.IDesignerFilter.PostFilterProperties(System.Collections.IDictionary)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -923,10 +923,10 @@
         <summary>For a description of this member, see the <see cref="M:System.ComponentModel.Design.IDesignerFilter.PreFilterAttributes(System.Collections.IDictionary)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -951,10 +951,10 @@
         <summary>For a description of this member, see the <see cref="M:System.ComponentModel.Design.IDesignerFilter.PreFilterEvents(System.Collections.IDictionary)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -979,10 +979,10 @@
         <summary>For a description of this member, see the <see cref="M:System.ComponentModel.Design.IDesignerFilter.PreFilterProperties(System.Collections.IDictionary)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.IDesignerFilter> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1004,10 +1004,10 @@
         <value>An <see cref="T:System.Collections.ICollection" /> that contains the collection of <see cref="T:System.ComponentModel.Design.IDesigner" /> designers contained in the current parent designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.ITreeDesigner> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.ITreeDesigner> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1029,10 +1029,10 @@
         <value>An <see cref="T:System.ComponentModel.Design.IDesigner" /> representing the parent designer, or <see langword="null" /> if there is no parent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.ITreeDesigner> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.ComponentDesigner> instance is cast to an <xref:System.ComponentModel.Design.ITreeDesigner> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1054,15 +1054,15 @@
         <value>A <see cref="T:System.ComponentModel.Design.DesignerVerbCollection" /> of <see cref="T:System.ComponentModel.Design.DesignerVerb" /> objects, or <see langword="null" /> if no designer verbs are available. This default implementation always returns <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `null` if the component has no design-time verbs.  
-  
- The design-time environment typically displays verbs returned by this method in a shortcut (right-click) menu. When a user selects one of the verbs, the <xref:System.ComponentModel.Design.MenuCommand.Invoke%2A> method of the corresponding <xref:System.ComponentModel.Design.DesignerVerb> is invoked.  
-  
+This method returns `null` if the component has no design-time verbs.  
+ 
+The design-time environment typically displays verbs returned by this method in a shortcut (right-click) menu. When a user selects one of the verbs, the <xref:System.ComponentModel.Design.MenuCommand.Invoke%2A> method of the corresponding <xref:System.ComponentModel.Design.DesignerVerb> is invoked.  
+ 
 > [!NOTE]
 >  A design-time environment typically provides a **Properties** command on a component's shortcut menu. Therefore, do not include such an entry in the collection of designer-specified verbs.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

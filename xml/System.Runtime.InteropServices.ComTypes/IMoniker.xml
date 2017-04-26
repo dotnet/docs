@@ -32,12 +32,12 @@
     <summary>Provides the managed definition of the <see langword="IMoniker" /> interface, with COM functionality from <see langword="IPersist" /> and <see langword="IPersistStream" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the `IMoniker`, `IPersist`, and `IPersistStream` interfaces, see the MSDN Library.  
-  
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
-  
+For more information about the `IMoniker`, `IPersist`, and `IPersistStream` interfaces, see the MSDN Library.  
+ 
+The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,10 +81,10 @@
         <summary>Uses the moniker to bind to the object that it identifies.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IMoniker::BindToObject`, see the MSDN Library.  
-  
+For more information about `IMoniker::BindToObject`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,10 +128,10 @@
         <summary>Retrieves an interface pointer to the storage that contains the object identified by the moniker.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IMoniker::BindToStorage`, see the MSDN Library.  
-  
+For more information about `IMoniker::BindToStorage`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,10 +171,10 @@
         <summary>Creates a new moniker based on the common prefix that this moniker shares with another moniker.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IMoniker::CommonPrefixWith`, see the MSDN Library.  
-  
+For more information about `IMoniker::CommonPrefixWith`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -217,10 +217,10 @@
         <summary>Combines the current moniker with another moniker, creating a new composite moniker.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IMoniker::ComposeWith`, see the MSDN Library.  
-  
+For more information about `IMoniker::ComposeWith`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,10 +261,10 @@
         <summary>Supplies a pointer to an enumerator that can enumerate the components of a composite moniker.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IMoniker::Enum`, see the MSDN Library.  
-  
+For more information about `IMoniker::Enum`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -302,10 +302,10 @@
         <summary>Retrieves the class identifier (CLSID) of an object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IPersist::GetClassID`, see the MSDN Library.  
-  
+For more information about `IPersist::GetClassID`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -347,10 +347,10 @@
         <summary>Gets the display name, which is a user-readable representation of the current moniker.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IMoniker::GetDisplayName`, see the MSDN Library.  
-  
+For more information about `IMoniker::GetDisplayName`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -388,10 +388,10 @@
         <summary>Returns the size, in bytes, of the stream needed to save the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IPersistStream::GetSizeMax`, see the MSDN Library.  
-  
+For more information about `IPersistStream::GetSizeMax`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -433,10 +433,10 @@
         <summary>Provides a number representing the time that the object identified by the current moniker was last changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IMoniker::GetTimeOfLastChange`, see the MSDN Library.  
-  
+For more information about `IMoniker::GetTimeOfLastChange`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -474,10 +474,10 @@
         <summary>Calculates a 32-bit integer using the internal state of the moniker.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IMoniker::Hash`, see the MSDN Library.  
-  
+For more information about `IMoniker::Hash`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -515,10 +515,10 @@
         <summary>Provides a moniker that, when composed to the right of the current moniker or one of similar structure, composes to nothing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IMoniker::Inverse`, see the MSDN Library.  
-  
+For more information about `IMoniker::Inverse`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -554,10 +554,10 @@
         <returns>An <see langword="S_OK" /><see langword="HRESULT" /> value if the object has changed; otherwise, an <see langword="S_FALSE" /><see langword="HRESULT" /> value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IPersistStream::IsDirty`, see the MSDN Library.  
-  
+For more information about `IPersistStream::IsDirty`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -596,10 +596,10 @@
         <returns>An <see langword="S_OK" /><see langword="HRESULT" /> value if the monikers are identical; otherwise, an <see langword="S_FALSE" /><see langword="HRESULT" /> value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IMoniker::IsEqual`, see the MSDN Library.  
-  
+For more information about `IMoniker::IsEqual`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -642,10 +642,10 @@
         <returns>An <see langword="S_OK" /><see langword="HRESULT" /> value if the moniker is running; an <see langword="S_FALSE" /><see langword="HRESULT" /> value if the moniker is not running; or an <see langword="E_UNEXPECTED" /><see langword="HRESULT" /> value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IMoniker::IsRunning`, see the MSDN Library.  
-  
+For more information about `IMoniker::IsRunning`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -684,10 +684,10 @@
         <returns>An <see langword="S_OK" /><see langword="HRESULT" /> value if the moniker is a system moniker; otherwise, an <see langword="S_FALSE" /><see langword="HRESULT" /> value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For details on the values of the `MKSYS` enumeration and for information about `IMoniker::IsSystemMoniker`, see the MSDN Library.  
-  
+For details on the values of the `MKSYS` enumeration and for information about `IMoniker::IsSystemMoniker`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -725,10 +725,10 @@
         <summary>Initializes an object from the stream where it was previously saved.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IPersistStream::Load`, see the MSDN Library.  
-  
+For more information about `IPersistStream::Load`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -774,10 +774,10 @@
         <summary>Reads as many characters of the specified display name as the <see cref="M:System.Runtime.InteropServices.ComTypes.IMoniker.ParseDisplayName(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Runtime.InteropServices.ComTypes.IMoniker,System.String,System.Int32@,System.Runtime.InteropServices.ComTypes.IMoniker@)" /> understands and builds a moniker corresponding to the portion read.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IMoniker::ParseDisplayName`, see the MSDN Library.  
-  
+For more information about `IMoniker::ParseDisplayName`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -821,10 +821,10 @@
         <summary>Returns a reduced moniker, which is another moniker that refers to the same object as the current moniker but can be bound with equal or greater efficiency.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IMoniker::Reduce`, see the MSDN Library.  
-  
+For more information about `IMoniker::Reduce`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -864,10 +864,10 @@
         <summary>Supplies a moniker that, when appended to the current moniker (or one with a similar structure), yields the specified moniker.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IMoniker::RelativePath`, see the MSDN Library.  
-  
+For more information about `IMoniker::RelativePath`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -908,10 +908,10 @@
         <summary>Saves an object to the specified stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about `IPersistStream::Save`, see the MSDN Library.  
-  
+For more information about `IPersistStream::Save`, see the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

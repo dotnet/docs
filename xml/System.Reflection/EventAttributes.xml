@@ -30,21 +30,21 @@
     <summary>Specifies the attributes of an event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `EventAttributes` values may be combined using the bitwise OR operation to get the appropriate combination.  
+`EventAttributes` values may be combined using the bitwise OR operation to get the appropriate combination.  
+ 
+These enums are defined in the corhdr.h file and are a combination of bits and enumerators.  
+ 
   
- These enums are defined in the corhdr.h file and are a combination of bits and enumerators.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses reflection emit to create a type with two events. It uses None to specify that the events have no attributes.  
-  
- [!code-cpp[TypeBuilder_GetEvents1#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeBuilder_GetEvents1/CPP/typebuilder_getevents1.cpp#1)]
- [!code-csharp[TypeBuilder_GetEvents1#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeBuilder_GetEvents1/CS/typebuilder_getevents1.cs#1)]
- [!code-vb[TypeBuilder_GetEvents1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeBuilder_GetEvents1/VB/typebuilder_getevents1.vb#1)]  
-  
+The following example uses reflection emit to create a type with two events. It uses None to specify that the events have no attributes.  
+ 
+[!code-cpp[TypeBuilder_GetEvents1#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeBuilder_GetEvents1/CPP/typebuilder_getevents1.cpp#1)]
+[!code-csharp[TypeBuilder_GetEvents1#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeBuilder_GetEvents1/CS/typebuilder_getevents1.cs#1)]
+[!code-vb[TypeBuilder_GetEvents1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeBuilder_GetEvents1/VB/typebuilder_getevents1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

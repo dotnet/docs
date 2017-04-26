@@ -82,10 +82,10 @@
         <summary>Attempts to cancels the execution of a <see cref="T:System.Data.Common.DbCommand" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there is nothing to cancel, nothing happens. However, if there is a command in process, and the attempt to cancel fails, no exception is generated.  
-  
+If there is nothing to cancel, nothing happens. However, if there is a command in process, and the attempt to cancel fails, no exception is generated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,10 +124,10 @@
         <value>The text command to execute. The default value is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you set the <xref:System.Data.CommandType> to `StoredProcedure`, you should set the <xref:System.Data.Common.DbCommand.CommandText%2A> property to the name of the stored procedure. The command executes this stored procedure when you call one of the `Execute` methods.  
-  
+When you set the <xref:System.Data.CommandType> to `StoredProcedure`, you should set the <xref:System.Data.Common.DbCommand.CommandText%2A> property to the name of the stored procedure. The command executes this stored procedure when you call one of the `Execute` methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,12 +158,12 @@
         <value>The time in seconds to wait for the command to execute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.ArgumentException> is generated if the assigned <xref:System.Data.Common.DbCommand.CommandTimeout%2A> property value is less than 0.  
-  
- Note to implementers, it is recommended that 0 means no timeout.  
-  
+An <xref:System.ArgumentException> is generated if the assigned <xref:System.Data.Common.DbCommand.CommandTimeout%2A> property value is less than 0.  
+ 
+Note to implementers, it is recommended that 0 means no timeout.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,10 +202,10 @@
         <value>One of the <see cref="T:System.Data.CommandType" /> values. The default is <see langword="Text" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you set the <xref:System.Data.CommandType> to `StoredProcedure`, you should set the <xref:System.Data.Common.DbCommand.CommandText%2A> property to the name of the stored procedure. The command executes this stored procedure when you call one of the `Execute` methods.  
-  
+When you set the <xref:System.Data.CommandType> to `StoredProcedure`, you should set the <xref:System.Data.Common.DbCommand.CommandText%2A> property to the name of the stored procedure. The command executes this stored procedure when you call one of the `Execute` methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -535,10 +535,10 @@
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
@@ -572,14 +572,14 @@
         <returns>The number of rows affected.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use <xref:System.Data.Common.DbCommand.ExecuteNonQuery%2A> to perform catalog operations (for example, querying the structure of a database or creating database objects such as tables), or to change the data in a database by executing UPDATE, INSERT, or DELETE statements.  
-  
- Although <xref:System.Data.Common.DbCommand.ExecuteNonQuery%2A> does not return any rows, any output parameters or return values mapped to parameters are populated with data.  
-  
- For UPDATE, INSERT, and DELETE statements, the return value is the number of rows affected by the command. For all other types of statements, the return value is -1.  
-  
+You can use <xref:System.Data.Common.DbCommand.ExecuteNonQuery%2A> to perform catalog operations (for example, querying the structure of a database or creating database objects such as tables), or to change the data in a database by executing UPDATE, INSERT, or DELETE statements.  
+ 
+Although <xref:System.Data.Common.DbCommand.ExecuteNonQuery%2A> does not return any rows, any output parameters or return values mapped to parameters are populated with data.  
+ 
+For UPDATE, INSERT, and DELETE statements, the return value is the number of rows affected by the command. For all other types of statements, the return value is -1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -613,10 +613,10 @@
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
@@ -656,10 +656,10 @@
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
@@ -753,10 +753,10 @@
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Managed provider implementers must call <xref:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync%2A> in <xref:System.Data.Common.DbCommand.ExecuteReaderAsync%2A>. For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+Managed provider implementers must call <xref:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync%2A> in <xref:System.Data.Common.DbCommand.ExecuteReaderAsync%2A>. For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
@@ -795,10 +795,10 @@
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Managed provider implementers must call <xref:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync%2A> in <xref:System.Data.Common.DbCommand.ExecuteReaderAsync%2A>. For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+Managed provider implementers must call <xref:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync%2A> in <xref:System.Data.Common.DbCommand.ExecuteReaderAsync%2A>. For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
@@ -837,10 +837,10 @@
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Managed provider implementers must call <xref:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync%2A> in <xref:System.Data.Common.DbCommand.ExecuteReaderAsync%2A>. For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+Managed provider implementers must call <xref:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync%2A> in <xref:System.Data.Common.DbCommand.ExecuteReaderAsync%2A>. For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
@@ -879,10 +879,10 @@
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Managed provider implementers must call <xref:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync%2A> in <xref:System.Data.Common.DbCommand.ExecuteReaderAsync%2A>. For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+Managed provider implementers must call <xref:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync%2A> in <xref:System.Data.Common.DbCommand.ExecuteReaderAsync%2A>. For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
@@ -916,12 +916,12 @@
         <returns>The first column of the first row in the result set.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.Common.DbCommand.ExecuteScalar%2A> method to retrieve a single value (for example, an aggregate value) from a database. This requires less code than using the <xref:System.Data.Common.DbCommand.ExecuteReader%2A> method and performing the operations necessary to generate the single value using the data returned by a <xref:System.Data.Common.DbDataReader>.  
-  
- If the first column of the first row in the result set is not found, a null reference (`Nothing` in Visual Basic) is returned. If the value in the database is `null`, the query returns `DBNull.Value`.  
-  
+Use the <xref:System.Data.Common.DbCommand.ExecuteScalar%2A> method to retrieve a single value (for example, an aggregate value) from a database. This requires less code than using the <xref:System.Data.Common.DbCommand.ExecuteReader%2A> method and performing the operations necessary to generate the single value using the data returned by a <xref:System.Data.Common.DbDataReader>.  
+ 
+If the first column of the first row in the result set is not found, a null reference (`Nothing` in Visual Basic) is returned. If the value in the database is `null`, the query returns `DBNull.Value`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -955,10 +955,10 @@
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
@@ -998,10 +998,10 @@
         <returns>A task representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
@@ -1068,10 +1068,10 @@
         <summary>Creates a prepared (or compiled) version of the command on the data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Data.Common.DbCommand.CommandType%2A> property is set to `TableDirect`, `Prepare` does nothing. If <xref:System.Data.Common.DbCommand.CommandType%2A> is set to `StoredProcedure`, the call to `Prepare` should succeed, although it may result in a no-op.  
-  
+If the <xref:System.Data.Common.DbCommand.CommandType%2A> property is set to `TableDirect`, `Prepare` does nothing. If <xref:System.Data.Common.DbCommand.CommandType%2A> is set to `StoredProcedure`, the call to `Prepare` should succeed, although it may result in a no-op.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1102,10 +1102,10 @@
         <value>The connection to the data source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.Data.IDbCommand.Connection%2A>.  
-  
+For more information, see <xref:System.Data.IDbCommand.Connection%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1137,12 +1137,12 @@
         <returns>An <see langword="IDbDataParameter" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbCommand> instance is cast to an <xref:System.Data.IDbCommand> interface.  
-  
- For more information, see <xref:System.Data.IDbCommand.CreateParameter%2A>.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbCommand> instance is cast to an <xref:System.Data.IDbCommand> interface.  
+ 
+For more information, see <xref:System.Data.IDbCommand.CreateParameter%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1174,12 +1174,12 @@
         <returns>An <see cref="T:System.Data.IDataReader" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbCommand> instance is cast to an <xref:System.Data.IDbCommand> interface.  
-  
- For more information, see <xref:System.Data.IDbCommand.ExecuteReader%2A>.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbCommand> instance is cast to an <xref:System.Data.IDbCommand> interface.  
+ 
+For more information, see <xref:System.Data.IDbCommand.ExecuteReader%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1214,12 +1214,12 @@
         <returns>An <see cref="T:System.Data.IDataReader" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbCommand> instance is cast to an <xref:System.Data.IDbCommand> interface.  
-  
- For more information, see <xref:System.Data.IDbCommand.ExecuteReader%2A>.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbCommand> instance is cast to an <xref:System.Data.IDbCommand> interface.  
+ 
+For more information, see <xref:System.Data.IDbCommand.ExecuteReader%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1250,12 +1250,12 @@
         <value>The parameters of the SQL statement or stored procedure.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbCommand> instance is cast to an <xref:System.Data.IDbCommand> interface.  
-  
- For more information, see <xref:System.Data.IDbCommand.Parameters%2A>.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbCommand> instance is cast to an <xref:System.Data.IDbCommand> interface.  
+ 
+For more information, see <xref:System.Data.IDbCommand.Parameters%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1286,10 +1286,10 @@
         <value>The transaction within which a <see langword="Command" /> object of a .NET Framework data provider executes. The default value is a null reference (<see langword="Nothing" /> in Visual Basic).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.Data.IDbCommand.Ttransaction%2A>.  
-  
+For more information, see <xref:System.Data.IDbCommand.Ttransaction%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1363,10 +1363,10 @@
         <value>One of the <see cref="T:System.Data.UpdateRowSource" /> values. The default is <see langword="Both" /> unless the command is automatically generated. Then the default is <see langword="None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Throws a <xref:System.ArgumentException> if the value entered was not one of the <xref:System.Data.UpdateRowSource> values.  
-  
+Throws a <xref:System.ArgumentException> if the value entered was not one of the <xref:System.Data.UpdateRowSource> values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1380,10 +1380,10 @@
         <summary>This method implements the asynchronous version of <see cref="M:System.Data.Common.DbCommand.ExecuteNonQuery" />, but returns a <see cref="T:System.Threading.Tasks.Task" /> synchronously, blocking the calling thread.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1397,10 +1397,10 @@
         <summary>An asynchronous version of <see cref="Overload:System.Data.Common.DbCommand.ExecuteReader" />, which executes the <see cref="P:System.Data.Common.DbCommand.CommandText" /> against the <see cref="P:System.Data.Common.DbCommand.Connection" /> and returns a <see cref="T:System.Data.Common.DbDataReader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Managed provider implementers must call <xref:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync%2A> in <xref:System.Data.Common.DbCommand.ExecuteReaderAsync%2A>. For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+Managed provider implementers must call <xref:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync%2A> in <xref:System.Data.Common.DbCommand.ExecuteReaderAsync%2A>. For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1414,10 +1414,10 @@
         <summary>Implements the asynchronous version of <see cref="M:System.Data.Common.DbCommand.ExecuteScalar" />, but returns a <see cref="T:System.Threading.Tasks.Task" /> synchronously, blocking the calling thread.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
-  
+For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>

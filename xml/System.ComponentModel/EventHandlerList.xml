@@ -27,15 +27,15 @@
     <summary>Provides a simple list of delegates. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class uses a linear search algorithm to find entries in the list of delegates. A linear search algorithm is inefficient when working with a large number of entries. Therefore, when you have a large list, finding entries is slow.  
+This class uses a linear search algorithm to find entries in the list of delegates. A linear search algorithm is inefficient when working with a large number of entries. Therefore, when you have a large list, finding entries is slow.  
+ 
   
-   
-  
+ 
 ## Examples  
- For an example of using an <xref:System.ComponentModel.EventHandlerList>, see [How to: Handle Multiple Events Using Event Properties](~/docs/standard/events/how-to-handle-multiple-events-using-event-properties.md).  
-  
+For an example of using an <xref:System.ComponentModel.EventHandlerList>, see [How to: Handle Multiple Events Using Event Properties](~/docs/standard/events/how-to-handle-multiple-events-using-event-properties.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -152,13 +152,13 @@
         <summary>Disposes the delegate list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.ComponentModel.EventHandlerList.Dispose%2A> when you are finished using the <xref:System.ComponentModel.EventHandlerList>. The <xref:System.ComponentModel.EventHandlerList.Dispose%2A> method leaves the <xref:System.ComponentModel.EventHandlerList> in an unusable state. After calling <xref:System.ComponentModel.EventHandlerList.Dispose%2A>, you must release all references to the <xref:System.ComponentModel.EventHandlerList> so the memory it was occupying can be reclaimed by garbage collection.  
-  
+Call <xref:System.ComponentModel.EventHandlerList.Dispose%2A> when you are finished using the <xref:System.ComponentModel.EventHandlerList>. The <xref:System.ComponentModel.EventHandlerList.Dispose%2A> method leaves the <xref:System.ComponentModel.EventHandlerList> in an unusable state. After calling <xref:System.ComponentModel.EventHandlerList.Dispose%2A>, you must release all references to the <xref:System.ComponentModel.EventHandlerList> so the memory it was occupying can be reclaimed by garbage collection.  
+ 
 > [!NOTE]
 >  Always call <xref:System.ComponentModel.EventHandlerList.Dispose%2A> before you release your last reference to the <xref:System.ComponentModel.EventHandlerList>. Otherwise, the resources the <xref:System.ComponentModel.EventHandlerList> is using will not be freed until garbage collection calls the <xref:System.ComponentModel.EventHandlerList> object's destructor.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -193,10 +193,10 @@
         <value>The delegate for the specified key, or <see langword="null" /> if a delegate does not exist.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the key is not found in the list and you provide a delegate to set the value of the key, then the key is added to the top of the list and assigned to the delegate as its value.  
-  
+When the key is not found in the list and you provide a delegate to set the value of the key, then the key is added to the top of the list and assigned to the delegate as its value.  
+ 
  ]]></format>
         </remarks>
       </Docs>

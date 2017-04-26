@@ -20,33 +20,33 @@
     <summary>Grants Web permission to the site from which the assembly was downloaded. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Code groups are the building blocks of code access security policy. Each policy level consists of a root code group that can have one or more child code groups. Each child code group can have its own child code groups; this behavior extends to any number of levels, forming a tree. Each code group has a membership condition that determines if a given assembly belongs to the group, based on the evidence for that assembly. Only code groups whose membership conditions match a given assembly, along with their child code groups, apply code access security policy.  
-  
- <xref:System.Security.Policy.NetCodeGroup> has the same merge semantics as that of <xref:System.Security.Policy.UnionCodeGroup>; it forms the union of the <xref:System.Security.Policy.PolicyStatement> objects of all matching child code groups and the <xref:System.Security.Policy.PolicyStatement> it generates from the input <xref:System.Security.Policy.Url> evidence. However, <xref:System.Security.Policy.NetCodeGroup> returns a permission containing a dynamically calculated <xref:System.Net.WebPermission> that grants connect access to the site from which the code is run; <xref:System.Security.Policy.UnionCodeGroup> simply returns a static permission set.  
-  
- When a <xref:System.Security.Policy.NetCodeGroup> is created, it contains the default connection access rules shown in the following table.  
-  
+Code groups are the building blocks of code access security policy. Each policy level consists of a root code group that can have one or more child code groups. Each child code group can have its own child code groups; this behavior extends to any number of levels, forming a tree. Each code group has a membership condition that determines if a given assembly belongs to the group, based on the evidence for that assembly. Only code groups whose membership conditions match a given assembly, along with their child code groups, apply code access security policy.  
+ 
+<xref:System.Security.Policy.NetCodeGroup> has the same merge semantics as that of <xref:System.Security.Policy.UnionCodeGroup>; it forms the union of the <xref:System.Security.Policy.PolicyStatement> objects of all matching child code groups and the <xref:System.Security.Policy.PolicyStatement> it generates from the input <xref:System.Security.Policy.Url> evidence. However, <xref:System.Security.Policy.NetCodeGroup> returns a permission containing a dynamically calculated <xref:System.Net.WebPermission> that grants connect access to the site from which the code is run; <xref:System.Security.Policy.UnionCodeGroup> simply returns a static permission set.  
+ 
+When a <xref:System.Security.Policy.NetCodeGroup> is created, it contains the default connection access rules shown in the following table.  
+ 
 |URI Scheme|Rule|  
 |----------------|----------|  
 |file|No connection access to the origin server is permitted.|  
 |http|HTTP and HTTPS access is permitted using the origin port.|  
 |https|HTTPS access is permitted using the origin port.|  
-  
- You can control the scheme and port that code is permitted to use when connecting back to its site of origin by passing a <xref:System.Security.Policy.CodeConnectAccess> object with the appropriate <xref:System.Security.Policy.CodeConnectAccess.Scheme%2A> and <xref:System.Security.Policy.CodeConnectAccess.Port%2A> property values to the <xref:System.Security.Policy.NetCodeGroup.AddConnectAccess%2A> method. You can create a connection access rule that applies when the origin scheme is not present in the evidence or is not recognized by specifying <xref:System.Security.Policy.NetCodeGroup.AbsentOriginScheme> ("") as the scheme. You can also create a connection access rule that applies when there is no connection access rule with a matching scheme by specifying <xref:System.Security.Policy.NetCodeGroup.AnyOtherOriginScheme> ("*") as the scheme.  
-  
+ 
+You can control the scheme and port that code is permitted to use when connecting back to its site of origin by passing a <xref:System.Security.Policy.CodeConnectAccess> object with the appropriate <xref:System.Security.Policy.CodeConnectAccess.Scheme%2A> and <xref:System.Security.Policy.CodeConnectAccess.Port%2A> property values to the <xref:System.Security.Policy.NetCodeGroup.AddConnectAccess%2A> method. You can create a connection access rule that applies when the origin scheme is not present in the evidence or is not recognized by specifying <xref:System.Security.Policy.NetCodeGroup.AbsentOriginScheme> ("") as the scheme. You can also create a connection access rule that applies when there is no connection access rule with a matching scheme by specifying <xref:System.Security.Policy.NetCodeGroup.AnyOtherOriginScheme> ("*") as the scheme.  
+ 
 > [!NOTE]
 >  If code does not submit the URI scheme as evidence, access is permitted using any scheme back to the origin site.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates creating a <xref:System.Security.Policy.NetCodeGroup> and adding <xref:System.Security.Policy.CodeConnectAccess> objects for code downloaded using the HTTP scheme.  
-  
- [!code-cpp[NclCodeGroup#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#3)]
- [!code-csharp[NclCodeGroup#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#3)]  
-  
+The following code example demonstrates creating a <xref:System.Security.Policy.NetCodeGroup> and adding <xref:System.Security.Policy.CodeConnectAccess> objects for code downloaded using the HTTP scheme.  
+ 
+[!code-cpp[NclCodeGroup#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#3)]
+[!code-csharp[NclCodeGroup#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,24 +69,24 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.NetCodeGroup" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a <xref:System.Security.Policy.NetCodeGroup> is created, it contains the default connection access rules shown in the following table.  
-  
+When a <xref:System.Security.Policy.NetCodeGroup> is created, it contains the default connection access rules shown in the following table.  
+ 
 |Scheme|Rule|  
 |------------|----------|  
 |file|No connection access to the origin server is permitted.|  
 |http|HTTP and HTTPS access is permitted using the origin port.|  
 |https|HTTPS access is permitted using the origin port.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates creating a <xref:System.Security.Policy.NetCodeGroup> and adding <xref:System.Security.Policy.CodeConnectAccess> objects for code downloaded using the HTTP scheme.  
-  
- [!code-cpp[NclCodeGroup#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#3)]
- [!code-csharp[NclCodeGroup#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#3)]  
-  
+The following code example demonstrates creating a <xref:System.Security.Policy.NetCodeGroup> and adding <xref:System.Security.Policy.CodeConnectAccess> objects for code downloaded using the HTTP scheme.  
+ 
+[!code-cpp[NclCodeGroup#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#3)]
+[!code-csharp[NclCodeGroup#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="membershipCondition" /> parameter is <see langword="null" />.</exception>
@@ -110,14 +110,14 @@
         <summary>Contains a value used to specify connection access for code with an unknown or unrecognized origin scheme.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When calling the <xref:System.Security.Policy.NetCodeGroup.AddConnectAccess%2A> method, you specify a scheme and an associated <xref:System.Security.Policy.CodeConnectAccess> object. Any <xref:System.Security.Policy.CodeConnectAccess> objects that you add to the <xref:System.Security.Policy.NetCodeGroup> using <xref:System.Security.Policy.NetCodeGroup.AbsentOriginScheme> as the origin scheme are applied when the code's origin scheme is not present in its evidence, or is not a scheme recognized by the <xref:System.Security.Policy.NetCodeGroup> object.  
-  
- To specify the <xref:System.Security.Policy.CodeConnectAccess> objects to use when the code's origin scheme does not match any of the schemes contained in the set of origin schemes added to the current <xref:System.Security.Policy.NetCodeGroup> object, use the <xref:System.Security.Policy.NetCodeGroup.AnyOtherOriginScheme> value.  
-  
- The value of the <xref:System.Security.Policy.NetCodeGroup.AbsentOriginScheme> field is an empty string ("").  
-  
+When calling the <xref:System.Security.Policy.NetCodeGroup.AddConnectAccess%2A> method, you specify a scheme and an associated <xref:System.Security.Policy.CodeConnectAccess> object. Any <xref:System.Security.Policy.CodeConnectAccess> objects that you add to the <xref:System.Security.Policy.NetCodeGroup> using <xref:System.Security.Policy.NetCodeGroup.AbsentOriginScheme> as the origin scheme are applied when the code's origin scheme is not present in its evidence, or is not a scheme recognized by the <xref:System.Security.Policy.NetCodeGroup> object.  
+ 
+To specify the <xref:System.Security.Policy.CodeConnectAccess> objects to use when the code's origin scheme does not match any of the schemes contained in the set of origin schemes added to the current <xref:System.Security.Policy.NetCodeGroup> object, use the <xref:System.Security.Policy.NetCodeGroup.AnyOtherOriginScheme> value.  
+ 
+The value of the <xref:System.Security.Policy.NetCodeGroup.AbsentOriginScheme> field is an empty string ("").  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,18 +145,18 @@
         <summary>Adds the specified connection access to the current code group.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can add multiple <xref:System.Security.Policy.CodeConnectAccess> objects for the same `origin scheme`. If an `origin scheme` already has one or more associated <xref:System.Security.Policy.CodeConnectAccess> objects, specifying `null` for `connectAccess` has no effect. If the origin scheme does not have associated <xref:System.Security.Policy.CodeConnectAccess> objects, specifying `null` for `connectAccess` prevents code with an origin scheme that matches `originScheme` from accessing its origin server.  
+You can add multiple <xref:System.Security.Policy.CodeConnectAccess> objects for the same `origin scheme`. If an `origin scheme` already has one or more associated <xref:System.Security.Policy.CodeConnectAccess> objects, specifying `null` for `connectAccess` has no effect. If the origin scheme does not have associated <xref:System.Security.Policy.CodeConnectAccess> objects, specifying `null` for `connectAccess` prevents code with an origin scheme that matches `originScheme` from accessing its origin server.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates creating and adding <xref:System.Security.Policy.CodeConnectAccess> objects to a <xref:System.Security.Policy.NetCodeGroup>.  
-  
- [!code-cpp[NclCodeGroup#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#3)]
- [!code-csharp[NclCodeGroup#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#3)]  
-  
+The following code example demonstrates creating and adding <xref:System.Security.Policy.CodeConnectAccess> objects to a <xref:System.Security.Policy.NetCodeGroup>.  
+ 
+[!code-cpp[NclCodeGroup#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#3)]
+[!code-csharp[NclCodeGroup#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -186,16 +186,16 @@
         <summary>Contains a value used to specify any other unspecified origin scheme.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When calling the <xref:System.Security.Policy.NetCodeGroup.AddConnectAccess%2A> method, you specify a scheme and an associated <xref:System.Security.Policy.CodeConnectAccess> object. You can use the value of the <xref:System.Security.Policy.NetCodeGroup.AnyOtherOriginScheme> field to specify the <xref:System.Security.Policy.CodeConnectAccess> objects that should be used for any scheme that is not explicitly contained in the set of origin schemes added to the current <xref:System.Security.Policy.NetCodeGroup> object.  
-  
- The <xref:System.Security.Policy.CodeConnectAccess> objects specified with the <xref:System.Security.Policy.NetCodeGroup.AnyOtherOriginScheme> field are only used if the code's origin scheme does not match any of the schemes contained in the set of origin schemes added to the current <xref:System.Security.Policy.NetCodeGroup> object.  
-  
- To specify the <xref:System.Security.Policy.CodeConnectAccess> objects to apply when the code's origin scheme is not available in its evidence or is not recognized, use the <xref:System.Security.Policy.NetCodeGroup.AbsentOriginScheme> value.  
-  
- The value of the <xref:System.Security.Policy.NetCodeGroup.AnyOtherOriginScheme> field is "*".  
-  
+When calling the <xref:System.Security.Policy.NetCodeGroup.AddConnectAccess%2A> method, you specify a scheme and an associated <xref:System.Security.Policy.CodeConnectAccess> object. You can use the value of the <xref:System.Security.Policy.NetCodeGroup.AnyOtherOriginScheme> field to specify the <xref:System.Security.Policy.CodeConnectAccess> objects that should be used for any scheme that is not explicitly contained in the set of origin schemes added to the current <xref:System.Security.Policy.NetCodeGroup> object.  
+ 
+The <xref:System.Security.Policy.CodeConnectAccess> objects specified with the <xref:System.Security.Policy.NetCodeGroup.AnyOtherOriginScheme> field are only used if the code's origin scheme does not match any of the schemes contained in the set of origin schemes added to the current <xref:System.Security.Policy.NetCodeGroup> object.  
+ 
+To specify the <xref:System.Security.Policy.CodeConnectAccess> objects to apply when the code's origin scheme is not available in its evidence or is not recognized, use the <xref:System.Security.Policy.NetCodeGroup.AbsentOriginScheme> value.  
+ 
+The value of the <xref:System.Security.Policy.NetCodeGroup.AnyOtherOriginScheme> field is "*".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,10 +238,10 @@
         <returns>An equivalent copy of the current code group, including its membership conditions and child code groups.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method makes a deep copy of the code group, meaning that copies of all objects the code group contains are also made.  
-  
+This method makes a deep copy of the code group, meaning that copies of all objects the code group contains are also made.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -293,16 +293,16 @@
           <see langword="true" /> if the specified code group is equivalent to the current code group; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following data are used to determine the equality of two <xref:System.Security.Policy.NetCodeGroup> objects:  
-  
+The following data are used to determine the equality of two <xref:System.Security.Policy.NetCodeGroup> objects:  
+ 
 -   The <xref:System.Security.Policy.CodeGroup.Name%2A> and <xref:System.Security.Policy.CodeGroup.Description%2A> properties.  
-  
+ 
 -   The <xref:System.Security.Policy.CodeGroup.MembershipCondition%2A> property.  
-  
+ 
 -   The set of origin schemes and the associated <xref:System.Security.Policy.CodeConnectAccess> objects.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,18 +326,18 @@
         <returns>A <see cref="T:System.Collections.DictionaryEntry" /> array containing connection access information.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In each dictionary entry, the <xref:System.Collections.DictionaryEntry.Key%2A> property value is the origin scheme, and the <xref:System.Collections.DictionaryEntry.Value%2A> property value is the array of associated <xref:System.Security.Policy.CodeConnectAccess> objects. If there are no associated <xref:System.Security.Policy.CodeConnectAccess> objects, <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> returns an empty array.  
+In each dictionary entry, the <xref:System.Collections.DictionaryEntry.Key%2A> property value is the origin scheme, and the <xref:System.Collections.DictionaryEntry.Value%2A> property value is the array of associated <xref:System.Security.Policy.CodeConnectAccess> objects. If there are no associated <xref:System.Security.Policy.CodeConnectAccess> objects, <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> returns an empty array.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates displaying the connection access rules for a <xref:System.Security.Policy.NetCodeGroup> object.  
-  
- [!code-cpp[NclCodeGroup#8](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#8)]
- [!code-csharp[NclCodeGroup#8](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#8)]  
-  
+The following code example demonstrates displaying the connection access rules for a <xref:System.Security.Policy.NetCodeGroup> object.  
+ 
+[!code-cpp[NclCodeGroup#8](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#8)]
+[!code-csharp[NclCodeGroup#8](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -442,26 +442,26 @@
         <summary>Removes all connection access information for the current code group.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to remove the system-supplied default connection access rules.  
-  
- The default rules are shown in the following table.  
-  
+Use this method to remove the system-supplied default connection access rules.  
+ 
+The default rules are shown in the following table.  
+ 
 |Scheme|Rule|  
 |------------|----------|  
 |file|No connection access to the origin server is permitted.|  
 |http|HTTP and HTTPS access is permitted using the origin port.|  
 |https|HTTPS access is permitted using the origin port.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates calling this method to remove the default code access connection rules.  
-  
- [!code-cpp[NclCodeGroup#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#3)]
- [!code-csharp[NclCodeGroup#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#3)]  
-  
+The following code example demonstrates calling this method to remove the default code access connection rules.  
+ 
+[!code-cpp[NclCodeGroup#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#3)]
+[!code-csharp[NclCodeGroup#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -488,14 +488,14 @@
         <returns>A <see cref="T:System.Security.Policy.PolicyStatement" /> that consists of the permissions granted by the code group with optional attributes, or <see langword="null" /> if the code group does not apply (the membership condition does not match the specified evidence).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Given evidence for an assembly to be loaded, this method evaluates the code group by first checking the membership condition against the specified evidence. If there is a match, this method returns a policy statement for the code group, including evaluation of child code groups.  
-  
- The operation of this method is as follows:  
-  
- If the membership condition does not match the specified evidence, return `null`; otherwise, set the permission set to be returned (P) equal to the code group's policy statement and continue. For each child code group, resolve the code group with the same evidence; if the result is not `null`, return that policy statement. If no child code group matched, return P (the parent's policy statement).  
-  
+Given evidence for an assembly to be loaded, this method evaluates the code group by first checking the membership condition against the specified evidence. If there is a match, this method returns a policy statement for the code group, including evaluation of child code groups.  
+ 
+The operation of this method is as follows:  
+ 
+If the membership condition does not match the specified evidence, return `null`; otherwise, set the permission set to be returned (P) equal to the code group's policy statement and continue. For each child code group, resolve the code group with the same evidence; if the result is not `null`, return that policy statement. If no child code group matched, return P (the parent's policy statement).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="evidence" /> parameter is <see langword="null" />.</exception>
@@ -524,10 +524,10 @@
         <returns>The complete set of code groups that were matched by the evidence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Given evidence for an assembly to be loaded, this method evaluates the code group by first checking the membership condition against the specified evidence. If there is a match, this method returns a root code group. The code group that is returned may contain child code groups, which, in turn, may also have child code groups, so the return value reflects the complete set of code groups that were matched by the evidence provided.  
-  
+Given evidence for an assembly to be loaded, this method evaluates the code group by first checking the membership condition against the specified evidence. If there is a match, this method returns a root code group. The code group that is returned may contain child code groups, which, in turn, may also have child code groups, so the return value reflects the complete set of code groups that were matched by the evidence provided.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="evidence" /> parameter is <see langword="null" />.</exception>

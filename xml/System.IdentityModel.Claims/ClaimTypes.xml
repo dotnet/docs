@@ -14,16 +14,16 @@
     <summary>Represents the pre-defined types of claims that an entity can claim. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IdentityModel.Claims.ClaimTypes> class to search for a particular type of claim in a <xref:System.IdentityModel.Claims.ClaimSet> or to create a claim. To search for a particular type of claim in a <xref:System.IdentityModel.Claims.ClaimSet>, use the <xref:System.IdentityModel.Claims.ClaimSet.FindClaims%28System.String%2CSystem.String%29> method and use the properties of this class to specify the claim type for the `claimType` parameter. When the constructor for the <xref:System.IdentityModel.Claims.Claim> class is used to create a new claim, use the properties of the <xref:System.IdentityModel.Claims.ClaimTypes> class to specify the `claimType` parameter. For many of the claim types, the <xref:System.IdentityModel.Claims.Claim> class has static properties that return a claim of a specific type. For instance, the <xref:System.IdentityModel.Claims.Claim.CreateHashClaim%28System.Byte%5B%5D%29> method returns a claim using the <xref:System.IdentityModel.Claims.ClaimTypes.Hash%2A> claim type.  
+Use the <xref:System.IdentityModel.Claims.ClaimTypes> class to search for a particular type of claim in a <xref:System.IdentityModel.Claims.ClaimSet> or to create a claim. To search for a particular type of claim in a <xref:System.IdentityModel.Claims.ClaimSet>, use the <xref:System.IdentityModel.Claims.ClaimSet.FindClaims%28System.String%2CSystem.String%29> method and use the properties of this class to specify the claim type for the `claimType` parameter. When the constructor for the <xref:System.IdentityModel.Claims.Claim> class is used to create a new claim, use the properties of the <xref:System.IdentityModel.Claims.ClaimTypes> class to specify the `claimType` parameter. For many of the claim types, the <xref:System.IdentityModel.Claims.Claim> class has static properties that return a claim of a specific type. For instance, the <xref:System.IdentityModel.Claims.Claim.CreateHashClaim%28System.Byte%5B%5D%29> method returns a claim using the <xref:System.IdentityModel.Claims.ClaimTypes.Hash%2A> claim type.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[c_ClaimTypes#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_claimtypes/cs/service.cs#1)]
- [!code-vb[c_ClaimTypes#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claimtypes/vb/service.vb#1)]  
-  
+[!code-csharp[c_ClaimTypes#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_claimtypes/cs/service.cs#1)]
+[!code-vb[c_ClaimTypes#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claimtypes/vb/service.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <value>The URI for a claim that specifies the anonymous user.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/anonymous.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/anonymous.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -70,10 +70,10 @@
         <value>The URI for a claim that specifies details about whether an identity is authenticated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/authentication.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/authentication.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
         <value>The URI for a claim that specifies an authorization decision on an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/authorizationdecision.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/authorizationdecision.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <value>The URI for a claim that specifies a country/region in which an entity resides.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,10 +145,10 @@
         <value>The URI for a claim that specifies the date of birth of an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/dateofbirth.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/dateofbirth.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,12 +170,12 @@
         <value>The URI for a claim that specifies a deny-only SID for an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A deny-only SID denies the specified entity to a securable object.  
-  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/denyonlysid.  
-  
+A deny-only SID denies the specified entity to a securable object.  
+ 
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/denyonlysid.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
         <value>The URI for a claim that specifies the DNS name associated with the computer name or with the alternative name of either the subject or issuer of an X.509 certificate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/dns.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/dns.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,10 +222,10 @@
         <value>The URI for a claim that specifies the email address of an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,10 +247,10 @@
         <value>The URI for a claim that specifies the gender of an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/gender.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/gender.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -272,10 +272,10 @@
         <value>The URI for a claim that specifies the given name of an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,10 +297,10 @@
         <value>The URI for a claim that specifies a hash value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/hash.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/hash.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -322,10 +322,10 @@
         <value>The URI for a claim that specifies the home phone number of an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/homephone.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/homephone.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -347,10 +347,10 @@
         <value>The URI for a claim that specifies the locale in which an entity resides.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/locality.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/locality.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -372,10 +372,10 @@
         <value>The URI for a claim that specifies the mobile phone number of an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/mobilephone.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/mobilephone.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -397,10 +397,10 @@
         <value>The URI for a claim that specifies the name of an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -422,10 +422,10 @@
         <value>The URI for a claim that specifies the name of an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -447,10 +447,10 @@
         <value>The URI for a claim that specifies the alternative phone number of an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/otherphone.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/otherphone.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -472,10 +472,10 @@
         <value>The URI for a claim that specifies the postal code of an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/postalcode.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/postalcode.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -497,10 +497,10 @@
         <value>The URI for a claim that specifies the private personal identifier (PPI) of an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/privatepersonalidentifier.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/privatepersonalidentifier.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -522,10 +522,10 @@
         <value>The URI for a claim that specifies an RSA key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/rsa.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/rsa.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -547,10 +547,10 @@
         <value>The URI for a claim that specifies a security identifier (SID).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/sid.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/sid.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -572,10 +572,10 @@
         <value>The URI for a claim that specifies a service principal name (SPN) claim.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/spn.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/spn.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -597,10 +597,10 @@
         <value>The URI for a claim that specifies the state or province in which an entity resides.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/stateorprovince.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/stateorprovince.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -622,10 +622,10 @@
         <value>The URI for a claim that specifies the street address of an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/streetaddress.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/streetaddress.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -647,10 +647,10 @@
         <value>The URI for a claim that specifies the surname of an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -672,12 +672,12 @@
         <value>The URI for a claim that identifies the system entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IdentityModel.Claims.ClaimTypes.System%2A> is typically used to identify the issuer of a claim when the issuer is the current application.  
-  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/system.  
-  
+The <xref:System.IdentityModel.Claims.ClaimTypes.System%2A> is typically used to identify the issuer of a claim when the issuer is the current application.  
+ 
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/system.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -699,12 +699,12 @@
         <value>The URI for a claim that specifies a thumbprint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A thumbprint is a globally unique SHA-1 hash of an X.509 certificate.  
-  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/thumbprint.  
-  
+A thumbprint is a globally unique SHA-1 hash of an X.509 certificate.  
+ 
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/thumbprint.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -726,15 +726,15 @@
         <value>The URI for a claim that specifies UPN.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn.  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn.  
+ 
   
-   
-  
+ 
 ## Examples  
- //  \<snippet1>  
-  
+//  \<snippet1>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -756,10 +756,10 @@
         <value>The URI for a claim that specifies a URI.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/uri.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/uri.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -781,10 +781,10 @@
         <value>The URI for a claim that specifies the Web page of an entity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/webpage.  
-  
+The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/webpage.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -806,10 +806,10 @@
         <value>The URI for a distinguished name claim of an X.509 certificate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The X.500 standard defines the methodology for defining distinguished names that is used by X.509 certificates.  
-  
+The X.500 standard defines the methodology for defining distinguished names that is used by X.509 certificates.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -15,13 +15,13 @@
     <summary>Defines methods for reading the parts of a <see cref="T:System.Windows.Documents.FixedPage" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to obtain an <xref:System.Windows.Xps.Packaging.IXpsFixedPageReader> collection from an <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader>. The sample also shows how to use the fixed-page reader to add a new <xref:System.Windows.Documents.DocumentStructures.StoryFragment> that defines the document structure of the page.  
-  
- [!code-csharp[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Window1.xaml.cs#docstrucfixeddoc)]
- [!code-vb[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocumentStructure/visualbasic/window1.xaml.vb#docstrucfixeddoc)]  
-  
+The following example shows how to obtain an <xref:System.Windows.Xps.Packaging.IXpsFixedPageReader> collection from an <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentReader>. The sample also shows how to use the fixed-page reader to add a new <xref:System.Windows.Documents.DocumentStructures.StoryFragment> that defines the document structure of the page.  
+ 
+[!code-csharp[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Window1.xaml.cs#docstrucfixeddoc)]
+[!code-vb[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocumentStructure/visualbasic/window1.xaml.vb#docstrucfixeddoc)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -149,10 +149,10 @@
         <returns>The resource that has the specified Uri.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method when you do not know the specific type of the resource with the specified [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)]. When you do know the type, use one of the type-specific methods that is provided by this class.  
-  
+Use this method when you do not know the specific type of the resource with the specified [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)]. When you do know the type, use one of the type-specific methods that is provided by this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,10 +232,10 @@
         <value>A <see cref="T:System.Printing.PrintTicket" /> that contains the default printing options for the page; or <see langword="null" /> if no <see cref="T:System.Printing.PrintTicket" /> exists for the page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the <xref:System.Printing.PrintTicket> part of an [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] page, see chapter 2 in the [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] specification, which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
-  
+For more information about the <xref:System.Printing.PrintTicket> part of an [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] page, see chapter 2 in the [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] specification, which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,10 +275,10 @@
         <value>An <see cref="T:System.Windows.Xps.Packaging.XpsStructure" /> that represents a <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" /> element in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] package.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> element of an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] package, see chapter 9 in the [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] specification, which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
-  
+For more information about the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> element of an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] package, see chapter 9 in the [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] specification, which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
+ 
  ]]></format>
         </remarks>
       </Docs>

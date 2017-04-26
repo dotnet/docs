@@ -15,14 +15,14 @@
     <summary>Defines methods for writing <see cref="T:System.Windows.Documents.FixedPage" /> parts to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentWriter.AddFixedPage%2A> method to obtain a fixed-page writer for adding pages to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cpp[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateadddoccontent)]
- [!code-csharp[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateadddoccontent)]
- [!code-vb[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateadddoccontent)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentWriter.AddFixedPage%2A> method to obtain a fixed-page writer for adding pages to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+ 
+[!code-cpp[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateadddoccontent)]
+[!code-csharp[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateadddoccontent)]
+[!code-vb[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateadddoccontent)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <returns>The new color context resource that was added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddColorContext%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsColorContext> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
-  
+<xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddColorContext%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsColorContext> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
@@ -73,19 +73,19 @@
         <returns>The new font resource that was added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsFont> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+<xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsFont> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> method to add a font resource to a page.  
-  
- [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
- [!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
- [!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> method to add a font resource to a page.  
+ 
+[!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
+[!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
+[!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
@@ -114,23 +114,23 @@
         <returns>The new font resource that was added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsFont> with optional obfuscation to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+<xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsFont> with optional obfuscation to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+ 
+Set the `obfuscate` parameter to `true` when you are legally obligated to obfuscate a licensed proprietary font.  While obfuscation does not encrypt the font, it inhibits unzipping proprietary fonts and installing them separately for other uses.  
+ 
+For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ 
   
- Set the `obfuscate` parameter to `true` when you are legally obligated to obfuscate a licensed proprietary font.  While obfuscation does not encrypt the font, it inhibits unzipping proprietary fonts and installing them separately for other uses.  
-  
- For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> method in order to add a font resource to a page.  
-  
- [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
- [!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
- [!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> method in order to add a font resource to a page.  
+ 
+[!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
+[!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
+[!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
@@ -162,23 +162,23 @@
         <returns>The new font resource that was added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsFont> with optional obfuscation or restrictions to the document package, and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+<xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsFont> with optional obfuscation or restrictions to the document package, and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+ 
+Set the `obfuscate` parameter to `true` when you are legally obligated to obfuscate a licensed proprietary font.  While obfuscation does not encrypt the font, it inhibits unzipping proprietary fonts and installing them separately for other uses.  
+ 
+For more information about font obfuscation and the use of restricted fonts see the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ 
   
- Set the `obfuscate` parameter to `true` when you are legally obligated to obfuscate a licensed proprietary font.  While obfuscation does not encrypt the font, it inhibits unzipping proprietary fonts and installing them separately for other uses.  
-  
- For more information about font obfuscation and the use of restricted fonts see the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> method to add a font resource to a page.  
-  
- [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
- [!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
- [!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> method to add a font resource to a page.  
+ 
+[!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
+[!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
+[!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
@@ -206,19 +206,19 @@
         <returns>The new image resource that was added to the page</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsImage> with a specified `mimeType` to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+<xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsImage> with a specified `mimeType` to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage%2A> method to add an image resource to a page.  
-  
- [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
- [!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
- [!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage%2A> method to add an image resource to a page.  
+ 
+[!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
+[!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
+[!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
@@ -250,21 +250,21 @@
         <returns>The new image resource that was added to the page</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsImage> with the specified <xref:System.Windows.Xps.Packaging.XpsImageType> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+<xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsImage> with the specified <xref:System.Windows.Xps.Packaging.XpsImageType> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+ 
+For example, `imageType` can be <xref:System.Windows.Xps.Packaging.XpsImageType> or <xref:System.Windows.Xps.Packaging.XpsImageType>. to add  a JPEG or PNG <xref:System.Windows.Xps.Packaging.XpsImage>, respectively.  
+ 
   
- For example, `imageType` can be <xref:System.Windows.Xps.Packaging.XpsImageType> or <xref:System.Windows.Xps.Packaging.XpsImageType>. to add  a JPEG or PNG <xref:System.Windows.Xps.Packaging.XpsImage>, respectively.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage%2A> method to add an image resource to a page.  
-  
- [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
- [!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
- [!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage%2A> method to add an image resource to a page.  
+ 
+[!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
+[!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
+[!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
@@ -294,12 +294,12 @@
         <returns>The new [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] resource that was added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResource%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsResource> to the document package, and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
-  
- If `resourceUri` is `null`, a unique resource <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.Uri%2A> is automatically created.  
-  
+<xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResource%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsResource> to the document package, and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+ 
+If `resourceUri` is `null`, a unique resource <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.Uri%2A> is automatically created.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -328,10 +328,10 @@
         <returns>The <see cref="T:System.Windows.Xps.Packaging.XpsResourceDictionary" /> that was added to the page.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResourceDictionary%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsResourceDictionary> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
-  
+<xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResourceDictionary%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsResourceDictionary> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
@@ -359,12 +359,12 @@
         <returns>The new thumbnail image resource that was added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddThumbnail%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsImageType> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
-  
- For example, `imageType` can be <xref:System.Windows.Xps.Packaging.XpsImageType> or <xref:System.Windows.Xps.Packaging.XpsImageType>. to add  a JPEG or PNG thumbnail image, respectively.  
-  
+<xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddThumbnail%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsImageType> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+ 
+For example, `imageType` can be <xref:System.Windows.Xps.Packaging.XpsImageType> or <xref:System.Windows.Xps.Packaging.XpsImageType>. to add  a JPEG or PNG thumbnail image, respectively.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -393,19 +393,19 @@
         <summary>Flushes and closes the fixed-page writer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Based on settings of <xref:System.Windows.Xps.Serialization.XpsSerializationManager> and <xref:System.Windows.Xps.Serialization.XpsPackagingPolicy>, such as <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> and <xref:System.Windows.Xps.Packaging.PackageInterleavingOrder>, the flush operation of the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.Commit%2A> method may be delayed until the complete <xref:System.Windows.Xps.Packaging.XpsDocument> is closed.  
+Based on settings of <xref:System.Windows.Xps.Serialization.XpsSerializationManager> and <xref:System.Windows.Xps.Serialization.XpsPackagingPolicy>, such as <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> and <xref:System.Windows.Xps.Packaging.PackageInterleavingOrder>, the flush operation of the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.Commit%2A> method may be delayed until the complete <xref:System.Windows.Xps.Packaging.XpsDocument> is closed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to flush and close the fixed-page writer with the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.Commit%2A> method.  
-  
- [!code-cpp[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateadddoccontent)]
- [!code-csharp[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateadddoccontent)]
- [!code-vb[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateadddoccontent)]  
-  
+The following example shows how to flush and close the fixed-page writer with the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.Commit%2A> method.  
+ 
+[!code-cpp[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateadddoccontent)]
+[!code-csharp[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateadddoccontent)]
+[!code-vb[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateadddoccontent)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -427,12 +427,12 @@
         <value>A list of strings that identify the <see cref="T:System.Windows.Documents.LinkTarget" /> hyperlink points that are contained in the page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The list of <xref:System.Windows.Documents.LinkTarget> hyperlink points is available after the page has been written and the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.Commit%2A> method has been called.  
-  
- For information about <xref:System.Windows.Documents.LinkTarget> elements see Section 3.2.3 "\<LinkTarget> Element" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
-  
+The list of <xref:System.Windows.Documents.LinkTarget> hyperlink points is available after the page has been written and the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.Commit%2A> method has been called.  
+ 
+For information about <xref:System.Windows.Documents.LinkTarget> elements see Section 3.2.3 "\<LinkTarget> Element" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -454,10 +454,10 @@
         <value>The zero-based page number of this page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.PageNumber%2A> property returns the zero-based page number for this <xref:System.Windows.Documents.FixedPage> of the document.  (<xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.PageNumber%2A> value of zero is the first page.)  
-  
+The <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.PageNumber%2A> property returns the zero-based page number for this <xref:System.Windows.Documents.FixedPage> of the document.  (<xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.PageNumber%2A> value of zero is the first page.)  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -515,14 +515,14 @@
         <value>The <see cref="T:System.Xml.XmlWriter" /> for writing [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] markup to the page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.XmlWriter%2A> method to obtain an <xref:System.Xml.XmlWriter>.  
-  
- [!code-cpp[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateadddoccontent)]
- [!code-csharp[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateadddoccontent)]
- [!code-vb[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateadddoccontent)]  
-  
+The following example shows how to use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.XmlWriter%2A> method to obtain an <xref:System.Xml.XmlWriter>.  
+ 
+[!code-cpp[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateadddoccontent)]
+[!code-csharp[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateadddoccontent)]
+[!code-vb[XpsCreate#XpsCreateAddDocContent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateadddoccontent)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -536,10 +536,10 @@
         <summary>Adds a new <see cref="T:System.Windows.Xps.Packaging.XpsImage" /> to the current page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsImage> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
-  
+<xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsImage> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -553,10 +553,10 @@
         <summary>Adds a new <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> to the current page.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsFont> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
-  
+<xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsFont> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

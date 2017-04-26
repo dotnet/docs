@@ -14,28 +14,28 @@
     <summary>Manages all the input systems in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.InputManager> class is responsible for coordinating all of the input systems in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  
-  
- A filter is any code that listens to <xref:System.Windows.Input.InputManager.PreProcessInput> or <xref:System.Windows.Input.InputManager.PostProcessInput>.  Filters can modify the input staging area.  
-  
- A monitor is any code that listens to <xref:System.Windows.Input.InputManager.PreNotifyInput> or <xref:System.Windows.Input.InputManager.PostNotifyInput>.  Monitors cannot modify the input staging area.  
-  
- The <xref:System.Windows.Input.InputManager> controls the input staging area.  The input staging area processes input into [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] events.  
-  
- Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
-  
+The <xref:System.Windows.Input.InputManager> class is responsible for coordinating all of the input systems in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  
+ 
+A filter is any code that listens to <xref:System.Windows.Input.InputManager.PreProcessInput> or <xref:System.Windows.Input.InputManager.PostProcessInput>.  Filters can modify the input staging area.  
+ 
+A monitor is any code that listens to <xref:System.Windows.Input.InputManager.PreNotifyInput> or <xref:System.Windows.Input.InputManager.PostNotifyInput>.  Monitors cannot modify the input staging area.  
+ 
+The <xref:System.Windows.Input.InputManager> controls the input staging area.  The input staging area processes input into [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] events.  
+ 
+Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
+ 
 1.  Pre-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreProcessInput> event.  
-  
+ 
 2.  Pre-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreNotifyInput> event.  
-  
+ 
 3.  The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] input event or events are raised.  
-  
+ 
 4.  Post-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostNotifyInput> event.  
-  
+ 
 5.  Post-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostProcessInput> event.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@
         <value>The input manager.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class will not be available in Internet zone.  
-  
+This class will not be available in Internet zone.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for getting the current input manager. Associated enumerations: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
@@ -87,10 +87,10 @@
         <summary>Occurs when a control enters menu mode by calling the <see cref="M:System.Windows.Input.InputManager.PushMenuMode(System.Windows.PresentationSource)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Components register delegates with this event to respond to a control entering the input manager’s menu mode.  
-  
+Components register delegates with this event to respond to a control entering the input manager’s menu mode.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,10 +154,10 @@
           <see langword="true" /> if this <see cref="T:System.Windows.Interop.ComponentDispatcher" /> is in menu mode; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.InputManager.IsInMenuMode%2A> property returns `true` if any menus are open, and it returns `false` if no menus are open.  
-  
+The <xref:System.Windows.Input.InputManager.IsInMenuMode%2A> property returns `true` if any menus are open, and it returns `false` if no menus are open.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -178,10 +178,10 @@
         <summary>Occurs when a control leaves menu mode by calling the <see cref="M:System.Windows.Input.InputManager.PopMenuMode(System.Windows.PresentationSource)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Components register delegates with this event to respond to a control leaving the input manager’s menu mode.  
-  
+Components register delegates with this event to respond to a control leaving the input manager’s menu mode.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,12 +224,12 @@
         <summary>Called by components to leave menu mode.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A component calls this method to leave the input manager’s menu mode. The `menuSite` releases privileged access to window messages.  
-  
- Calling this method causes the internal count of open menus to decrement and sets the <xref:System.Windows.Input.InputManager.IsInMenuMode%2A> property to `false`, if this is the last menu to close.  
-  
+A component calls this method to leave the input manager’s menu mode. The `menuSite` releases privileged access to window messages.  
+ 
+Calling this method causes the internal count of open menus to decrement and sets the <xref:System.Windows.Input.InputManager.IsInMenuMode%2A> property to `false`, if this is the last menu to close.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -260,24 +260,24 @@
         <summary>Occurs after the <see cref="E:System.Windows.Input.InputManager.PreNotifyInput" /> handlers have finished processing the input and the corresponding [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] events have been raised.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A monitor is any code that listens to <xref:System.Windows.Input.InputManager.PreNotifyInput> or <xref:System.Windows.Input.InputManager.PostNotifyInput>.  Monitors cannot modify the input staging area.  
-  
- The handlers attached to <xref:System.Windows.Input.InputManager.PostNotifyInput> are invoked in reverse order so that handlers added by the users are invoked before handlers in the system.  
-  
- Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
-  
+A monitor is any code that listens to <xref:System.Windows.Input.InputManager.PreNotifyInput> or <xref:System.Windows.Input.InputManager.PostNotifyInput>.  Monitors cannot modify the input staging area.  
+ 
+The handlers attached to <xref:System.Windows.Input.InputManager.PostNotifyInput> are invoked in reverse order so that handlers added by the users are invoked before handlers in the system.  
+ 
+Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
+ 
 1.  Pre-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreProcessInput> event.  
-  
+ 
 2.  Pre-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreNotifyInput> event.  
-  
+ 
 3.  The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] input event or events are raised.  
-  
+ 
 4.  Post-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostNotifyInput> event.  
-  
+ 
 5.  Post-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostProcessInput> event.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing an event handler.  Associated enumerations: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
@@ -307,24 +307,24 @@
         <summary>Occurs after the <see cref="E:System.Windows.Input.InputManager.PreNotifyInput" /> handlers have finished processing the input.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A filter is any code that listens to <xref:System.Windows.Input.InputManager.PreProcessInput> or <xref:System.Windows.Input.InputManager.PostProcessInput>.  Filters can modify the input staging area.  
-  
- The handlers attached to <xref:System.Windows.Input.InputManager.PostProcessInput> are invoked in reverse order so that handlers added by the users are invoked before handlers in the system.  
-  
- Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
-  
+A filter is any code that listens to <xref:System.Windows.Input.InputManager.PreProcessInput> or <xref:System.Windows.Input.InputManager.PostProcessInput>.  Filters can modify the input staging area.  
+ 
+The handlers attached to <xref:System.Windows.Input.InputManager.PostProcessInput> are invoked in reverse order so that handlers added by the users are invoked before handlers in the system.  
+ 
+Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
+ 
 1.  Pre-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreProcessInput> event.  
-  
+ 
 2.  Pre-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreNotifyInput> event.  
-  
+ 
 3.  The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] input event or events are raised.  
-  
+ 
 4.  Post-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostNotifyInput> event.  
-  
+ 
 5.  Post-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostProcessInput> event.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing an event handler. Associated enumerations: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
@@ -354,24 +354,24 @@
         <summary>Occurs when the <see cref="E:System.Windows.Input.InputManager.PreProcessInput" /> handlers have finished processing the input, if the input was not canceled.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A monitor is any code that listens to <xref:System.Windows.Input.InputManager.PreNotifyInput> or <xref:System.Windows.Input.InputManager.PostNotifyInput>.  Monitors cannot modify the input staging area.  
-  
- The handlers attached to <xref:System.Windows.Input.InputManager.PreNotifyInput> are invoked in reverse order so that handlers added by the users are invoked before handlers in the system.  
-  
- Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
-  
+A monitor is any code that listens to <xref:System.Windows.Input.InputManager.PreNotifyInput> or <xref:System.Windows.Input.InputManager.PostNotifyInput>.  Monitors cannot modify the input staging area.  
+ 
+The handlers attached to <xref:System.Windows.Input.InputManager.PreNotifyInput> are invoked in reverse order so that handlers added by the users are invoked before handlers in the system.  
+ 
+Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
+ 
 1.  Pre-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreProcessInput> event.  
-  
+ 
 2.  Pre-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreNotifyInput> event.  
-  
+ 
 3.  The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] input event or events are raised.  
-  
+ 
 4.  Post-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostNotifyInput> event.  
-  
+ 
 5.  Post-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostProcessInput> event.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing an event handler. Associated enumerations: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
@@ -401,26 +401,26 @@
         <summary>Occurs when the <see cref="T:System.Windows.Input.InputManager" /> starts to process the input item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A filter is any code that listens to <xref:System.Windows.Input.InputManager.PreProcessInput> or <xref:System.Windows.Input.InputManager.PostProcessInput>.  Filters can modify the input staging area.  
-  
- The handlers attached to <xref:System.Windows.Input.InputManager.PreProcessInput> are invoked in reverse order so that handlers added by the users are invoked before handlers in the system.  
-  
- Calling <xref:System.Windows.Input.PreProcessInputEventArgs.Cancel%2A> on the <xref:System.Windows.Input.PreProcessInputEventArgs> passed to the <xref:System.Windows.Input.PreProcessInputEventHandler> will cancel the processing of the input.  
-  
- Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
-  
+A filter is any code that listens to <xref:System.Windows.Input.InputManager.PreProcessInput> or <xref:System.Windows.Input.InputManager.PostProcessInput>.  Filters can modify the input staging area.  
+ 
+The handlers attached to <xref:System.Windows.Input.InputManager.PreProcessInput> are invoked in reverse order so that handlers added by the users are invoked before handlers in the system.  
+ 
+Calling <xref:System.Windows.Input.PreProcessInputEventArgs.Cancel%2A> on the <xref:System.Windows.Input.PreProcessInputEventArgs> passed to the <xref:System.Windows.Input.PreProcessInputEventHandler> will cancel the processing of the input.  
+ 
+Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
+ 
 1.  Pre-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreProcessInput> event.  
-  
+ 
 2.  Pre-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreNotifyInput> event.  
-  
+ 
 3.  The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] input event or events are raised.  
-  
+ 
 4.  Post-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostNotifyInput> event.  
-  
+ 
 5.  Post-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostProcessInput> event.  
-  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for adding or removing an event handler. Associated enumerations: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
@@ -489,26 +489,26 @@
           <see langword="true" /> if all input events were handled; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A filter is any code that listens to <xref:System.Windows.Input.InputManager.PreProcessInput> or <xref:System.Windows.Input.InputManager.PostProcessInput>.  Filters can modify the input staging area.  
-  
- A monitor is any code that listens to <xref:System.Windows.Input.InputManager.PreNotifyInput> or <xref:System.Windows.Input.InputManager.PostNotifyInput>.  Monitors cannot modify the input staging area.  
-  
- The specified input is processed by all the filters and monitors and is finally dispatched to the appropriate element as an input event.  
-  
- Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
-  
+A filter is any code that listens to <xref:System.Windows.Input.InputManager.PreProcessInput> or <xref:System.Windows.Input.InputManager.PostProcessInput>.  Filters can modify the input staging area.  
+ 
+A monitor is any code that listens to <xref:System.Windows.Input.InputManager.PreNotifyInput> or <xref:System.Windows.Input.InputManager.PostNotifyInput>.  Monitors cannot modify the input staging area.  
+ 
+The specified input is processed by all the filters and monitors and is finally dispatched to the appropriate element as an input event.  
+ 
+Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
+ 
 1.  Pre-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreProcessInput> event.  
-  
+ 
 2.  Pre-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreNotifyInput> event.  
-  
+ 
 3.  The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] input event or events are raised.  
-  
+ 
 4.  Post-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostNotifyInput> event.  
-  
+ 
 5.  Post-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostProcessInput> event.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -536,10 +536,10 @@
         <summary>Called by components to enter menu mode.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A component calls this method to enter the input manager’s menu mode. The `menuSite` gets privileged access to window messages. Calling this method causes the internal count of open menus to increment and sets the <xref:System.Windows.Input.InputManager.IsInMenuMode%2A> property to `true`, if this is the first menu to open.  
-  
+A component calls this method to enter the input manager’s menu mode. The `menuSite` gets privileged access to window messages. Calling this method causes the internal count of open menus to increment and sets the <xref:System.Windows.Input.InputManager.IsInMenuMode%2A> property to `true`, if this is the first menu to open.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

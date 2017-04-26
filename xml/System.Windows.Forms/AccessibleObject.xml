@@ -26,34 +26,34 @@
     <summary>Provides information that accessibility applications use to adjust an application's user interface (UI) for users with impairments.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Accessibility applications can adjust features of the application to improve usability for users with disabilities.  
-  
- For users who are visually impaired, you can adjust software and operating system features to comply with their needs. For example, you can enlarge text and images and render them with a contrast. In addition, you can accommodate color-blindness with the appropriate use of colors. For users who are severely visually impaired, computers are accessible with screen review aids that translate on-screen text to speech or to a dynamic, refreshable, Braille display.  
-  
- For users who are hard of hearing, you can design programs that use visual cues, such as a flashing toolbar; or you can display spoken messages as text. For example, when turned on, the `SoundSentry` feature, an accessibility option in Control Panel, provides a visual warning whenever the system makes an alarm sound.  
-  
- For users with motion disabilities, you can design controls that refine or eliminate keyboard and mouse use, thereby improving computer accessibility. Control Panel offers assistance. For example, one alternative is to use the numeric keypad instead of the mouse for navigation. Another option, called `StickyKeys`, enables users who cannot hold down two or more keys at a time (such as CTRL+P) to get the same result by typing one key at a time.  
-  
- For users with cognitive and language disabilities, you can design software programs to better accommodate their needs. For example, using conspicuous or cued sequencing, uncomplicated displays, fewer words, and a reading level targeted to elementary school standards can benefit these users.  
-  
- For users with seizure disorders, you can design software programs to eliminate seizure provoking patterns.  
-  
- For more information about accessibility, including information about accessibility applications, see the documentation for Microsoft Accessibility in the MSDN library or at the Microsoft Web site.  
-  
+Accessibility applications can adjust features of the application to improve usability for users with disabilities.  
+ 
+For users who are visually impaired, you can adjust software and operating system features to comply with their needs. For example, you can enlarge text and images and render them with a contrast. In addition, you can accommodate color-blindness with the appropriate use of colors. For users who are severely visually impaired, computers are accessible with screen review aids that translate on-screen text to speech or to a dynamic, refreshable, Braille display.  
+ 
+For users who are hard of hearing, you can design programs that use visual cues, such as a flashing toolbar; or you can display spoken messages as text. For example, when turned on, the `SoundSentry` feature, an accessibility option in Control Panel, provides a visual warning whenever the system makes an alarm sound.  
+ 
+For users with motion disabilities, you can design controls that refine or eliminate keyboard and mouse use, thereby improving computer accessibility. Control Panel offers assistance. For example, one alternative is to use the numeric keypad instead of the mouse for navigation. Another option, called `StickyKeys`, enables users who cannot hold down two or more keys at a time (such as CTRL+P) to get the same result by typing one key at a time.  
+ 
+For users with cognitive and language disabilities, you can design software programs to better accommodate their needs. For example, using conspicuous or cued sequencing, uncomplicated displays, fewer words, and a reading level targeted to elementary school standards can benefit these users.  
+ 
+For users with seizure disorders, you can design software programs to eliminate seizure provoking patterns.  
+ 
+For more information about accessibility, including information about accessibility applications, see the documentation for Microsoft Accessibility in the MSDN library or at the Microsoft Web site.  
+ 
 > [!NOTE]
 >  To use the <xref:System.Windows.Forms.AccessibleObject>, you must add a reference to the `Accessibility` assembly installed with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. Windows Forms only supports Active Accessibility 2.0.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Because the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- [!code-cpp[System.Windows.Forms.AccessibleObject#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#1)]
- [!code-csharp[System.Windows.Forms.AccessibleObject#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#1)]
- [!code-vb[System.Windows.Forms.AccessibleObject#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#1)]  
-  
+The following code example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Because the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+ 
+[!code-cpp[System.Windows.Forms.AccessibleObject#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#1)]
+[!code-csharp[System.Windows.Forms.AccessibleObject#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#1)]
+[!code-vb[System.Windows.Forms.AccessibleObject#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -75,10 +75,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AccessibleObject" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, when you use this method to create an accessible object, you are providing your own implementations of the properties and methods of the class to provide functionality specific to your application.  
-  
+Typically, when you use this method to create an accessible object, you are providing your own implementations of the properties and methods of the class to provide functionality specific to your application.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,10 +100,10 @@
         <value>The number of child accessible objects that belong to this object. If the object has no child objects, this value is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,10 +128,10 @@
         <summary>Performs the specified object's default action. Not all objects have a default action. For a description of this member, see <see cref="M:Accessibility.IAccessible.accDoDefaultAction(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,18 +153,18 @@
         <value>The object that has keyboard focus.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value type of the <xref:System.Windows.Forms.AccessibleObject.Accessibility%23IAccessible%23accFocus%2A> property depends on the object that has keyboard focus. The following table describes the object types that the <xref:System.Windows.Forms.AccessibleObject.Accessibility%23IAccessible%23accFocus%2A> property returns.  
-  
+The return value type of the <xref:System.Windows.Forms.AccessibleObject.Accessibility%23IAccessible%23accFocus%2A> property depends on the object that has keyboard focus. The following table describes the object types that the <xref:System.Windows.Forms.AccessibleObject.Accessibility%23IAccessible%23accFocus%2A> property returns.  
+ 
 |Type|Description|  
 |----------|-----------------|  
 |`null`|This object does not have the keyboard focus itself and does not contain a child that has the keyboard focus.|  
 |integer|0 if the current object has keyboard focus; otherwise, the child ID of the child accessible object with keyboard focus.|  
 |<xref:Accessibility.IAccessible>|The child accessible object that has the keyboard focus.|  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
-  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,17 +192,17 @@
         <returns>The accessible object at the point specified by <paramref name="xLeft" /> and <paramref name="yTop" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table describes the object types that the <xref:System.Windows.Forms.AccessibleObject.Accessibility%23IAccessible%23accHitTest%2A> method can return.  
-  
+The following table describes the object types that the <xref:System.Windows.Forms.AccessibleObject.Accessibility%23IAccessible%23accHitTest%2A> method can return.  
+ 
 |Type|Description|  
 |----------|-----------------|  
 |<xref:Accessibility.IAccessible>|The accessible object at the specified direction.|  
 |integer|0 if the point specified is either the current object or outside the object’s boundaries; otherwise, the child ID that identifies the accessible object at the specified direction.|  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
-  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,10 +235,10 @@
         <summary>Gets the object's current screen location. For a description of this member, see <see cref="M:Accessibility.IAccessible.accLocation(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -266,18 +266,18 @@
         <returns>The accessible object positioned at the value specified by <paramref name="navDir" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table describes the object types that the <xref:System.Windows.Forms.AccessibleObject.Accessibility%23IAccessible%23accNavigate%2A> method can return.  
-  
+The following table describes the object types that the <xref:System.Windows.Forms.AccessibleObject.Accessibility%23IAccessible%23accNavigate%2A> method can return.  
+ 
 |Type|Description|  
 |----------|-----------------|  
 |`null`|There is not an accessible object at the specified direction.|  
 |<xref:Accessibility.IAccessible>|The accessible object at the specified direction.|  
 |integer|The child ID that identifies the accessible object at the specified direction. Use the parent <xref:Accessibility.IAccessible> and the child ID to access the accessible object.|  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
-  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,10 +299,10 @@
         <value>An <see cref="T:Accessibility.IAccessible" /> that represents the parent of the accessible object, or <see langword="null" /> if there is no parent object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface..  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface..  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,10 +329,10 @@
         <summary>Modifies the selection or moves the keyboard focus of the accessible object. For a description of this member, see <see cref="M:Accessibility.IAccessible.accSelect(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following describes which <xref:System.Windows.Forms.AccessibleSelection> values to specify when calling `Select` to perform complex selection operations.  
-  
+The following describes which <xref:System.Windows.Forms.AccessibleSelection> values to specify when calling `Select` to perform complex selection operations.  
+ 
 |Operation|Flag Combination|  
 |---------------|----------------------|  
 |To simulate a click|<xref:System.Windows.Forms.AccessibleSelection> OR <xref:System.Windows.Forms.AccessibleSelection>|  
@@ -341,9 +341,9 @@
 |To simulate SHIFT+click|<xref:System.Windows.Forms.AccessibleSelection> OR <xref:System.Windows.Forms.AccessibleSelection>|  
 |To select a range of objects and put focus on the last object|Specify <xref:System.Windows.Forms.AccessibleSelection> on the starting object to set the selection anchor. Then call Select again and specify <xref:System.Windows.Forms.AccessibleSelection> OR <xref:System.Windows.Forms.AccessibleSelection> on the last object.|  
 |To deselect all objects|Specify <xref:System.Windows.Forms.AccessibleSelection> on any object. This flag deselects all selected objects except the one just selected. Then call Select again and specify <xref:System.Windows.Forms.AccessibleSelection> on the same object.|  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
-  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -365,19 +365,19 @@
         <value>The selected child objects of an accessible object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table describes the object types that the <xref:System.Windows.Forms.AccessibleObject.Accessibility%23IAccessible%23accSelection%2A> property returns  
-  
+The following table describes the object types that the <xref:System.Windows.Forms.AccessibleObject.Accessibility%23IAccessible%23accSelection%2A> property returns  
+ 
 |Type|Description|  
 |----------|-----------------|  
 |`null`|No child objects are selected.|  
 |<xref:Accessibility.IAccessible>|The child accessible object that is selected.|  
 |integer|The child ID that identifies the accessible object that is selected. Use the parent <xref:Accessibility.IAccessible> and the child ID to access the accessible object.|  
 |`IEnumVARIANT`|A list of child objects that are selected.|  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
-  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -667,21 +667,21 @@
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the accessible object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.AccessibleObject.Bounds%2A> property retrieves the object's bounding rectangle in screen coordinates. If the object has a nonrectangular shape, then this property represents the smallest rectangle that completely encompasses the entire object region. Therefore, for nonrectangular objects such as list view items, the coordinates of the object's bounding rectangle can fail, if tested, by calling the <xref:System.Windows.Forms.AccessibleObject.HitTest%2A> method, because <xref:System.Windows.Forms.AccessibleObject.HitTest%2A> determines the object's boundaries on a pixel-by-pixel basis.  
+The <xref:System.Windows.Forms.AccessibleObject.Bounds%2A> property retrieves the object's bounding rectangle in screen coordinates. If the object has a nonrectangular shape, then this property represents the smallest rectangle that completely encompasses the entire object region. Therefore, for nonrectangular objects such as list view items, the coordinates of the object's bounding rectangle can fail, if tested, by calling the <xref:System.Windows.Forms.AccessibleObject.HitTest%2A> method, because <xref:System.Windows.Forms.AccessibleObject.HitTest%2A> determines the object's boundaries on a pixel-by-pixel basis.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This code excerpt demonstrates overriding the <xref:System.Windows.Forms.AccessibleObject.Bounds%2A> property. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-cpp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#6)]
- [!code-csharp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#6)]
- [!code-vb[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#6)]  
-  
+The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+ 
+This code excerpt demonstrates overriding the <xref:System.Windows.Forms.AccessibleObject.Bounds%2A> property. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
+ 
+[!code-cpp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#6)]
+[!code-csharp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#6)]
+[!code-vb[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">The bounds of control cannot be retrieved.</exception>
@@ -707,10 +707,10 @@
         <value>A description of the default action for an object, or <see langword="null" /> if this object has no default action.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The string describes the action that is performed on an object, not what the object does as a result. That is, a toolbar button that prints a document has a default action of "Press" rather than "Prints the current document." Do not confuse an object's default action with its value.  
-  
+The string describes the action that is performed on an object, not what the object does as a result. That is, a toolbar button that prints a document has a default action of "Press" rather than "Prints the current document." Do not confuse an object's default action with its value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">The default action for the control cannot be retrieved.</exception>
@@ -736,10 +736,10 @@
         <value>A description of the object's visual appearance to the user, or <see langword="null" /> if the object does not have a description.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property describes the object's visual appearance to the user.  
-  
+This property describes the object's visual appearance to the user.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">The description for the control cannot be retrieved.</exception>
@@ -765,10 +765,10 @@
         <summary>Performs the default action associated with this accessible object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Clients can retrieve the object's default action by inspecting an object's <xref:System.Windows.Forms.AccessibleObject.DefaultAction%2A> property. A client can use automation (if supported) instead of <xref:System.Windows.Forms.AccessibleObject.DoDefaultAction%2A> to perform an object's default action. However, <xref:System.Windows.Forms.AccessibleObject.DoDefaultAction%2A> provides an easy way to perform an object's most commonly used action.  
-  
+Clients can retrieve the object's default action by inspecting an object's <xref:System.Windows.Forms.AccessibleObject.DefaultAction%2A> property. A client can use automation (if supported) instead of <xref:System.Windows.Forms.AccessibleObject.DoDefaultAction%2A> to perform an object's default action. However, <xref:System.Windows.Forms.AccessibleObject.DoDefaultAction%2A> provides an easy way to perform an object's most commonly used action.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">The default action for the control cannot be performed.</exception>
@@ -798,16 +798,16 @@
         <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the accessible child corresponding to the specified index.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This code excerpt demonstrates overriding the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-cpp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#4)]
- [!code-csharp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#4)]
- [!code-vb[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#4)]  
-  
+The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+ 
+This code excerpt demonstrates overriding the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
+ 
+[!code-cpp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#4)]
+[!code-csharp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#4)]
+[!code-vb[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -833,16 +833,16 @@
         <returns>The number of children belonging to an accessible object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This code demonstrates shows overriding the <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-cpp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#4)]
- [!code-csharp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#4)]
- [!code-vb[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#4)]  
-  
+The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+ 
+This code demonstrates shows overriding the <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
+ 
+[!code-cpp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#4)]
+[!code-csharp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#4)]
+[!code-vb[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -868,12 +868,12 @@
         <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that specifies the currently focused child. This method returns the calling object if the object itself is focused. Returns <see langword="null" /> if no object has focus.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The concept of keyboard focus is related to that of an active window. An active window is the foreground window in which the user is working. The object with the keyboard focus is either the active window or a child object of the active window.  
-  
- Only one object or item within a container can have the focus at any one time. The object with the keyboard focus is not necessarily the selected object.  
-  
+The concept of keyboard focus is related to that of an active window. An active window is the foreground window in which the user is working. The object with the keyboard focus is either the active window or a child object of the active window.  
+ 
+Only one object or item within a container can have the focus at any one time. The object with the keyboard focus is not necessarily the selected object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">The control cannot be retrieved.</exception>
@@ -903,10 +903,10 @@
         <returns>An identifier for a Help topic, or -1 if there is no Help topic. On return, the <paramref name="fileName" /> parameter contains the path to the Help file associated with this accessible object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To display help for the <xref:System.Windows.Forms.AccessibleObject> using the Windows Help system, you can pass the file name and topic ID to the appropriate <xref:System.Windows.Forms.Help.ShowHelp%2A?displayProperty=fullName> method of <xref:System.Windows.Forms.Help>.  
-  
+To display help for the <xref:System.Windows.Forms.AccessibleObject> using the Windows Help system, you can pass the file name and topic ID to the appropriate <xref:System.Windows.Forms.Help.ShowHelp%2A?displayProperty=fullName> method of <xref:System.Windows.Forms.Help>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">The Help topic for the control cannot be retrieved.</exception>
@@ -983,10 +983,10 @@
         <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the child object at the given screen coordinates. This method returns the calling object if the object itself is at the location specified. Returns <see langword="null" /> if no object is at the tested location.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For nonrectangular objects such as list view items, the coordinates of the object's bounding rectangle retrieved by <xref:System.Windows.Forms.AccessibleObject.Bounds%2A> can fail if tested with <xref:System.Windows.Forms.AccessibleObject.HitTest%2A>, because <xref:System.Windows.Forms.AccessibleObject.HitTest%2A> determines the object's boundaries on a pixel-by-pixel basis.  
-  
+For nonrectangular objects such as list view items, the coordinates of the object's bounding rectangle retrieved by <xref:System.Windows.Forms.AccessibleObject.Bounds%2A> can fail if tested with <xref:System.Windows.Forms.AccessibleObject.HitTest%2A>, because <xref:System.Windows.Forms.AccessibleObject.HitTest%2A> determines the object's boundaries on a pixel-by-pixel basis.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">The control cannot be hit tested.</exception>
@@ -1012,10 +1012,10 @@
         <value>The shortcut key or access key for the accessible object, or <see langword="null" /> if there is no shortcut key associated with the object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An access key, also known as a mnemonic, is an underlined character in the text of a menu, menu item, label of a button, or some other control. For example, a user can display a menu by pressing the ALT key while also pressing the indicated underlined key, such as ALT+F, to open the `File` menu. To use the access key of a menu item, the menu containing the item must be active. Controls such as toolbar buttons and menu items often have an associated shortcut key. A menu item can have both an access key and a shortcut key associated with it. If the value of the <xref:System.Windows.Forms.AccessibleObject.KeyboardShortcut%2A> property is a single character, you can assume it is an access key.  
-  
+An access key, also known as a mnemonic, is an underlined character in the text of a menu, menu item, label of a button, or some other control. For example, a user can display a menu by pressing the ALT key while also pressing the indicated underlined key, such as ALT+F, to open the `File` menu. To use the access key of a menu item, the menu containing the item must be active. Controls such as toolbar buttons and menu items often have an associated shortcut key. A menu item can have both an access key and a shortcut key associated with it. If the value of the <xref:System.Windows.Forms.AccessibleObject.KeyboardShortcut%2A> property is a single character, you can assume it is an access key.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">The shortcut for the control cannot be retrieved.</exception>
@@ -1041,21 +1041,21 @@
         <value>The object name, or <see langword="null" /> if the property has not been set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.AccessibleObject.Name%2A> property is a string used by clients to identify, find, or announce an object for the user. To access the name of a child object, you must first call <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> with the index of the child whose name you are retrieving.  
+The <xref:System.Windows.Forms.AccessibleObject.Name%2A> property is a string used by clients to identify, find, or announce an object for the user. To access the name of a child object, you must first call <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> with the index of the child whose name you are retrieving.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This code excerpt demonstrates overriding the <xref:System.Windows.Forms.AccessibleObject.Name%2A> property. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-cpp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#6)]
- [!code-csharp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#6)]
- [!code-vb[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#6)]  
-  
+The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+ 
+This code excerpt demonstrates overriding the <xref:System.Windows.Forms.AccessibleObject.Name%2A> property. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
+ 
+[!code-cpp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#6)]
+[!code-csharp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#6)]
+[!code-vb[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">The name of the control cannot be retrieved or set.</exception>
@@ -1087,21 +1087,21 @@
         <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents one of the <see cref="T:System.Windows.Forms.AccessibleNavigation" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Navigation, both spatial and logical, is always restricted to the user interface elements within a container. With spatial navigation, clients can navigate only to a sibling of the starting object. Depending on the navigational flag used with logical navigation, clients can navigate to either a child or to a sibling of the starting object. This method does not change the selection or focus. To change the focus or to select an object, use <xref:System.Windows.Forms.AccessibleObject.Select%2A>. The <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> method retrieves only user interface elements that have a defined screen location.  
+Navigation, both spatial and logical, is always restricted to the user interface elements within a container. With spatial navigation, clients can navigate only to a sibling of the starting object. Depending on the navigational flag used with logical navigation, clients can navigate to either a child or to a sibling of the starting object. This method does not change the selection or focus. To change the focus or to select an object, use <xref:System.Windows.Forms.AccessibleObject.Select%2A>. The <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> method retrieves only user interface elements that have a defined screen location.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This code demonstrates shows overriding the <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-cpp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#6)]
- [!code-csharp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#6)]
- [!code-vb[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#6)]  
-  
+The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+ 
+This code demonstrates shows overriding the <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
+ 
+[!code-cpp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#6)]
+[!code-csharp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#6)]
+[!code-vb[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">The navigation attempt fails.</exception>
@@ -1127,16 +1127,16 @@
         <value>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the parent of an accessible object, or <see langword="null" /> if there is no parent object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This code excerpt demonstrates overriding the <xref:System.Windows.Forms.AccessibleObject.Parent%2A> property. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-cpp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#6)]
- [!code-csharp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#6)]
- [!code-vb[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#6)]  
-  
+The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+ 
+This code excerpt demonstrates overriding the <xref:System.Windows.Forms.AccessibleObject.Parent%2A> property. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
+ 
+[!code-cpp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#6)]
+[!code-csharp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#6)]
+[!code-vb[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1161,21 +1161,21 @@
         <value>One of the <see cref="T:System.Windows.Forms.AccessibleRole" /> values, or <see cref="F:System.Windows.Forms.AccessibleRole.None" /> if no role has been specified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The role of the object helps describe the function of the object.  
+The role of the object helps describe the function of the object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This code excerpt demonstrates overriding the <xref:System.Windows.Forms.AccessibleObject.Role%2A> property. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-cpp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#4)]
- [!code-csharp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#4)]
- [!code-vb[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#4)]  
-  
+The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+ 
+This code excerpt demonstrates overriding the <xref:System.Windows.Forms.AccessibleObject.Role%2A> property. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
+ 
+[!code-cpp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#4)]
+[!code-csharp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#4)]
+[!code-vb[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1203,12 +1203,12 @@
         <summary>Modifies the selection or moves the keyboard focus of the accessible object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applications can use this method to perform complex selection operations.  
-  
- The following describes which <xref:System.Windows.Forms.AccessibleSelection> values to specify when calling <xref:System.Windows.Forms.AccessibleObject.Select%2A> to perform complex selection operations.  
-  
+Applications can use this method to perform complex selection operations.  
+ 
+The following describes which <xref:System.Windows.Forms.AccessibleSelection> values to specify when calling <xref:System.Windows.Forms.AccessibleObject.Select%2A> to perform complex selection operations.  
+ 
 |Operation|Flag Combination|  
 |---------------|----------------------|  
 |To simulate a click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> **Note:**  This combination will not select the desired control if called from within your own application. It will have the desired effect, however, if called from an external application.|  
@@ -1217,18 +1217,18 @@
 |To simulate SHIFT + click|<xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> `OR` <xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName>|  
 |To select a range of objects and put focus on the last object|Specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> on the starting object to set the selection anchor. Then call <xref:System.Windows.Forms.AccessibleObject.Select%2A> again and specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName>`OR`<xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> on the last object.|  
 |To deselect all objects|Specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> on any object. This flag deselects all selected objects except the one just selected. Then call <xref:System.Windows.Forms.AccessibleObject.Select%2A> again and specify <xref:System.Windows.Forms.AccessibleSelection?displayProperty=fullName> on the same object.|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This code demonstrates shows overriding the <xref:System.Windows.Forms.AccessibleObject.Select%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-cpp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#6)]
- [!code-csharp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#6)]
- [!code-vb[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#6)]  
-  
+The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+ 
+This code demonstrates shows overriding the <xref:System.Windows.Forms.AccessibleObject.Select%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
+ 
+[!code-cpp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#6)]
+[!code-csharp[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#6)]
+[!code-vb[System.Windows.Forms.AccessibleObject#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">The selection cannot be performed.</exception>
@@ -1254,16 +1254,16 @@
         <value>One of the <see cref="T:System.Windows.Forms.AccessibleStates" /> values, or <see cref="F:System.Windows.Forms.AccessibleStates.None" />, if no state has been set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
-  
- This code excerpt demonstrates overriding the <xref:System.Windows.Forms.AccessibleObject.State%2A> property. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
-  
- [!code-cpp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#4)]
- [!code-csharp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#4)]
- [!code-vb[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#4)]  
-  
+The following example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Since the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not have any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+ 
+This code excerpt demonstrates overriding the <xref:System.Windows.Forms.AccessibleObject.State%2A> property. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
+ 
+[!code-cpp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#4)]
+[!code-csharp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#4)]
+[!code-vb[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1294,10 +1294,10 @@
         <returns>A <see cref="T:System.Reflection.FieldInfo" /> object containing the field information for the named object that meets the search constraints specified in <paramref name="bindingAttr" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.AmbiguousMatchException">The object implements multiple fields with the same name.</exception>
@@ -1324,12 +1324,12 @@
         <returns>An array of <see cref="T:System.Reflection.FieldInfo" /> objects containing all the field information for this reflection object that meets the search constraints specified in <paramref name="bindingAttr" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each field must have a unique name. The <xref:System.Reflection.BindingFlags?displayProperty=fullName> flag specifies that nonpublic fields are included in the search. The <xref:System.Reflection.BindingFlags?displayProperty=fullName> flag specifies that public fields are included in the search.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
-  
+Each field must have a unique name. The <xref:System.Reflection.BindingFlags?displayProperty=fullName> flag specifies that nonpublic fields are included in the search. The <xref:System.Reflection.BindingFlags?displayProperty=fullName> flag specifies that public fields are included in the search.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1357,10 +1357,10 @@
         <returns>An array of <see cref="T:System.Reflection.MemberInfo" /> objects matching the name parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1386,10 +1386,10 @@
         <returns>An array of <see cref="T:System.Reflection.MemberInfo" /> objects containing all the member information for this reflection object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1417,10 +1417,10 @@
         <returns>A <see cref="T:System.Reflection.MethodInfo" /> object containing the method information, with the match being based on the method name and search constraints specified in <paramref name="bindingAttr" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.AmbiguousMatchException">The object implements multiple methods with the same name.</exception>
@@ -1455,12 +1455,12 @@
         <returns>The requested method that matches all the specified parameters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value is a match based on the method name, the <xref:System.Reflection.BindingFlags?displayProperty=fullName> enumeration, the kind of type conversion specified by the `binder` parameter, the overload, and the <xref:System.Reflection.ParameterInfo?displayProperty=fullName> that describes the signature of the method.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
-  
+The return value is a match based on the method name, the <xref:System.Reflection.BindingFlags?displayProperty=fullName> enumeration, the kind of type conversion specified by the `binder` parameter, the overload, and the <xref:System.Reflection.ParameterInfo?displayProperty=fullName> that describes the signature of the method.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.AmbiguousMatchException">The object implements multiple methods with the same name.</exception>
@@ -1487,10 +1487,10 @@
         <returns>An array of <see cref="T:System.Reflection.MethodInfo" /> objects containing all the methods defined for this reflection object that meet the search constraints specified in <see langword="bindingAttr" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1516,10 +1516,10 @@
         <returns>An array of <see cref="T:System.Reflection.PropertyInfo" /> objects for all the properties defined on the reflection object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1547,10 +1547,10 @@
         <returns>A <see cref="T:System.Reflection.PropertyInfo" /> object for the located property that meets the search constraints specified in <paramref name="bindingAttr" />, or <see langword="null" /> if the property was not located.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.AmbiguousMatchException">The object implements multiple methods with the same name.</exception>
@@ -1587,10 +1587,10 @@
         <returns>A <see cref="T:System.Reflection.PropertyInfo" /> object for the located property, if a property with the specified name was located in this reflection object, or <see langword="null" /> if the property was not located.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1630,14 +1630,14 @@
         <returns>The specified member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `invokeAttr` parameter may be a constructor, method, property, or field. A suitable invocation attribute must be specified. Invoke the default member of a class by passing the empty string ("") as the name of the member.  
-  
- The `modifiers` parameter has the same length as the `args` parameter, representing the invoked member's argument attributes in the metadata. A parameter can have the following attributes: pdIn, pdOut, pdRetval, pdOptional, and pdHasDefault. These represent [In], [Out], [retval], [optional], and a default parameter, respectively.  
-  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
-  
+The `invokeAttr` parameter may be a constructor, method, property, or field. A suitable invocation attribute must be specified. Invoke the default member of a class by passing the empty string ("") as the name of the member.  
+ 
+The `modifiers` parameter has the same length as the `args` parameter, representing the invoked member's argument attributes in the metadata. A parameter can have the following attributes: pdIn, pdOut, pdRetval, pdOptional, and pdHasDefault. These represent [In], [Out], [retval], [optional], and a default parameter, respectively.  
+ 
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">More than one argument is specified for a field set operation.</exception>
@@ -1663,10 +1663,10 @@
         <value>The underlying type that represents the <see cref="T:System.Reflection.IReflect" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:System.Reflection.IReflect> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1691,12 +1691,12 @@
         <summary>Associates an object with an instance of an <see cref="T:System.Windows.Forms.AccessibleObject" /> based on the handle of the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Server applications can call this function when they contain a custom UI object that is similar to a system-provided object. Server applications call `CreateStdAccessibleObject` and override the <xref:Accessibility.IAccessible> methods and properties as needed to match their custom object. This approach saves server developers the work of fully implementing all the <xref:Accessibility.IAccessible> properties and methods. This function is similar to `CreateStdAccessibleProxy`, except that `CreateStdAccessibleProxy` enables you to specify the class name as a parameter, whereas `CreateStdAccessibleObject` uses the class name associated with the `hwnd`.  
-  
- Calling this version of the `UseStdAccessible` is the same as calling the two parameter version with an objid of CLIENT.  
-  
+Server applications can call this function when they contain a custom UI object that is similar to a system-provided object. Server applications call `CreateStdAccessibleObject` and override the <xref:Accessibility.IAccessible> methods and properties as needed to match their custom object. This approach saves server developers the work of fully implementing all the <xref:Accessibility.IAccessible> properties and methods. This function is similar to `CreateStdAccessibleProxy`, except that `CreateStdAccessibleProxy` enables you to specify the class name as a parameter, whereas `CreateStdAccessibleObject` uses the class name associated with the `hwnd`.  
+ 
+Calling this version of the `UseStdAccessible` is the same as calling the two parameter version with an objid of CLIENT.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1723,14 +1723,14 @@
         <summary>Associates an object with an instance of an <see cref="T:System.Windows.Forms.AccessibleObject" /> based on the handle and the object id of the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates an accessible object with the methods and properties for the specified type of system-provided user interface element.  
-  
- Server applications can call this function when they contain a custom UI object that is similar to a system-provided object. Server applications call `CreateStdAccessibleObject` and override the <xref:Accessibility.IAccessible> methods and properties as needed to match their custom object. This approach saves server developers the work of fully implementing all the <xref:Accessibility.IAccessible> properties and methods.  
-  
- Valid `objid` values.  
-  
+Creates an accessible object with the methods and properties for the specified type of system-provided user interface element.  
+ 
+Server applications can call this function when they contain a custom UI object that is similar to a system-provided object. Server applications call `CreateStdAccessibleObject` and override the <xref:Accessibility.IAccessible> methods and properties as needed to match their custom object. This approach saves server developers the work of fully implementing all the <xref:Accessibility.IAccessible> properties and methods.  
+ 
+Valid `objid` values.  
+ 
 |Object|Value|Description|  
 |------------|-----------|-----------------|  
 |ALERT|0xFFFFFFF6|Refers to a message associated with a window or application.|  
@@ -1745,7 +1745,7 @@
 |TITLEBAR|0xFFFFFFFE|Refers to the window's title bar.|  
 |VSCROLL|0xFFFFFFFB|Refers to the window's vertical scroll bar.|  
 |WINDOW|0x00000000|Refers to the window itself rather than to a child object.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1767,17 +1767,17 @@
         <value>The value of an accessible object, or <see langword="null" /> if the object has no value set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, the <xref:System.Windows.Forms.AccessibleObject.Value%2A> property represents visual information contained by the object. Not all objects support the <xref:System.Windows.Forms.AccessibleObject.Value%2A> property.  
-  
- In most cases, the <xref:System.Windows.Forms.AccessibleObject.Value%2A> property is used to tell the client about what visual information an object contains. For example, the value for an edit control is the text it contains, but a menu item has no value.  
-  
- The <xref:System.Windows.Forms.AccessibleObject.Value%2A> property can provide hierarchical information in cases such as a tree view control. Although the parent object in the tree view control does not provide information in the <xref:System.Windows.Forms.AccessibleObject.Value%2A> property, each item within the control has a zero-based value that represents its level within the hierarchy. Top-level items have a value of zero, second-level items have a value of one, and so on.  
-  
+Typically, the <xref:System.Windows.Forms.AccessibleObject.Value%2A> property represents visual information contained by the object. Not all objects support the <xref:System.Windows.Forms.AccessibleObject.Value%2A> property.  
+ 
+In most cases, the <xref:System.Windows.Forms.AccessibleObject.Value%2A> property is used to tell the client about what visual information an object contains. For example, the value for an edit control is the text it contains, but a menu item has no value.  
+ 
+The <xref:System.Windows.Forms.AccessibleObject.Value%2A> property can provide hierarchical information in cases such as a tree view control. Although the parent object in the tree view control does not provide information in the <xref:System.Windows.Forms.AccessibleObject.Value%2A> property, each item within the control has a zero-based value that represents its level within the hierarchy. Top-level items have a value of zero, second-level items have a value of one, and so on.  
+ 
 > [!NOTE]
 >  The values returned from scroll bar and trackbar accessible objects indicate percentages, so they are integers between 0 and 100, inclusive.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.InteropServices.COMException">The value cannot be set or retrieved.</exception>

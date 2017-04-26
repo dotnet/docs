@@ -19,24 +19,24 @@
     <summary>Enables plain-text XML, JavaScript Object Notation (JSON) message encodings and "raw" binary content to be read and written when used in a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] binding.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Encoding is the process of transforming a message into a sequence of bytes. Decoding is the reverse process. These processes require the specification of a character encoding. The <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> works by delegating to a series of inner encoders to handle the plain-text XML and JSON encodings, and "raw" binary data. This delegation is done by a composite message encoder.  
-  
- This binding element and its composite encoder are used to control the encoding in scenarios that do not use SOAP messaging used by the <xref:System.ServiceModel.WebHttpBinding>. These scenarios include "Plain Old XML" (POX), Representational State Transfer (REST), Really Simple Syndication (RSS) and Atom syndication, and Asynchronous JavaScript and XML (AJAX). The composite message encoder does not support SOAP or WS-Addressing, and so <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MessageVersion%2A> always returns <xref:System.ServiceModel.Channels.MessageVersion.None%2A>.  
-  
- The binding element can be configured with a write character encoding at construction time using the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.%23ctor%28System.Text.Encoding%29> constructor. The <xref:System.Text.Encoding> value specifies the behavior on write for the JSON and Textual XML cases. On read, any valid message encoding and text encoding is understood.  
-  
- This constructor sets default values on the maximum number of readers and writers that are allocated to pools and that are respectively available to process incoming and outgoing messages without allocating new readers or writers. The properties <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxReadPoolSize%2A> and <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxWritePoolSize%2A> can also be used to set the maximum number of readers and writers to be allocated respectively. By default 64 readers and 16 writers are allocated.  
-  
- Default complexity constraints are also set by this constructor on the <xref:System.Xml.XmlDictionaryReaderQuotas> associated with this encoding by the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.ReaderQuotas%2A> property to protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources.  
-  
- The <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> has a <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.CreateMessageEncoderFactory%2A> method that creates a message encoder factory that produces JSON, XML or Raw message decoders and encoders as appropriate depending on the content type specified.  
-  
- The <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> also provides the methods to build the factories and listeners for the channels through which the HTTP requests flow.  
-  
- The composite encoder and its associated classes and configuration components are usable in partial trust and this use does not require any special permissions.  
-  
+Encoding is the process of transforming a message into a sequence of bytes. Decoding is the reverse process. These processes require the specification of a character encoding. The <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> works by delegating to a series of inner encoders to handle the plain-text XML and JSON encodings, and "raw" binary data. This delegation is done by a composite message encoder.  
+ 
+This binding element and its composite encoder are used to control the encoding in scenarios that do not use SOAP messaging used by the <xref:System.ServiceModel.WebHttpBinding>. These scenarios include "Plain Old XML" (POX), Representational State Transfer (REST), Really Simple Syndication (RSS) and Atom syndication, and Asynchronous JavaScript and XML (AJAX). The composite message encoder does not support SOAP or WS-Addressing, and so <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MessageVersion%2A> always returns <xref:System.ServiceModel.Channels.MessageVersion.None%2A>.  
+ 
+The binding element can be configured with a write character encoding at construction time using the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.%23ctor%28System.Text.Encoding%29> constructor. The <xref:System.Text.Encoding> value specifies the behavior on write for the JSON and Textual XML cases. On read, any valid message encoding and text encoding is understood.  
+ 
+This constructor sets default values on the maximum number of readers and writers that are allocated to pools and that are respectively available to process incoming and outgoing messages without allocating new readers or writers. The properties <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxReadPoolSize%2A> and <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxWritePoolSize%2A> can also be used to set the maximum number of readers and writers to be allocated respectively. By default 64 readers and 16 writers are allocated.  
+ 
+Default complexity constraints are also set by this constructor on the <xref:System.Xml.XmlDictionaryReaderQuotas> associated with this encoding by the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.ReaderQuotas%2A> property to protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources.  
+ 
+The <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> has a <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.CreateMessageEncoderFactory%2A> method that creates a message encoder factory that produces JSON, XML or Raw message decoders and encoders as appropriate depending on the content type specified.  
+ 
+The <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> also provides the methods to build the factories and listeners for the channels through which the HTTP requests flow.  
+ 
+The composite encoder and its associated classes and configuration components are usable in partial trust and this use does not require any special permissions.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,24 +56,24 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.WebMessageEncodingBindingElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses <xref:System.Text.UTF8Encoding> as the default character encoding. So use this constructor when you want this character encoding. If you want another character encoding, use the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.%23ctor%28System.Text.Encoding%29> constructor.  
-  
- This constructor sets default values on the maximum number of readers and writers that are allocated to pools and that are respectively available to process incoming and outgoing messages without allocating new readers or writers. There are 64 readers allocated by default for the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxReadPoolSize%2A> property and there are 16 writers allocated by default for the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxWritePoolSize%2A> property.  
-  
- Default complexity constraints are also set by this constructor on the <xref:System.Xml.XmlDictionaryReaderQuotas> associated with this message encoding by the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.ReaderQuotas%2A> property to protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources. The properties that express these constraints and their default values (in bytes) are as follows:  
-  
+This constructor uses <xref:System.Text.UTF8Encoding> as the default character encoding. So use this constructor when you want this character encoding. If you want another character encoding, use the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.%23ctor%28System.Text.Encoding%29> constructor.  
+ 
+This constructor sets default values on the maximum number of readers and writers that are allocated to pools and that are respectively available to process incoming and outgoing messages without allocating new readers or writers. There are 64 readers allocated by default for the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxReadPoolSize%2A> property and there are 16 writers allocated by default for the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxWritePoolSize%2A> property.  
+ 
+Default complexity constraints are also set by this constructor on the <xref:System.Xml.XmlDictionaryReaderQuotas> associated with this message encoding by the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.ReaderQuotas%2A> property to protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources. The properties that express these constraints and their default values (in bytes) are as follows:  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxDepth%2A> = 32  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength%2A> = 8192  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength%2A> = 16384  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxBytesPerRead%2A> = 4096  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxNameTableCharCount%2A> = 16384  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,24 +96,24 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.WebMessageEncodingBindingElement" /> class with a specified write character encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The message text encodings supported are UTF-8, Unicode, and Big-Endian Unicode. If another text encoding is specified, an <xref:System.ArgumentException> is thrown.  
-  
- This constructor sets default values on the maximum number of readers and writers that are allocated to pools and that are respectively available to process incoming and outgoing messages without allocating new readers or writers. There are 64 readers allocated by default for the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxReadPoolSize%2A> property and there are 16 writers allocated by default for the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxWritePoolSize%2A> property.  
-  
- Default complexity constraints are also set by this constructor on the <xref:System.Xml.XmlDictionaryReaderQuotas> associated with this message encoding by the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.ReaderQuotas%2A> property to protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources. The properties that express these constraints and their default values (in bytes) are as follows:  
-  
+The message text encodings supported are UTF-8, Unicode, and Big-Endian Unicode. If another text encoding is specified, an <xref:System.ArgumentException> is thrown.  
+ 
+This constructor sets default values on the maximum number of readers and writers that are allocated to pools and that are respectively available to process incoming and outgoing messages without allocating new readers or writers. There are 64 readers allocated by default for the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxReadPoolSize%2A> property and there are 16 writers allocated by default for the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxWritePoolSize%2A> property.  
+ 
+Default complexity constraints are also set by this constructor on the <xref:System.Xml.XmlDictionaryReaderQuotas> associated with this message encoding by the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.ReaderQuotas%2A> property to protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources. The properties that express these constraints and their default values (in bytes) are as follows:  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxDepth%2A> = 32  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength%2A> = 8192  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength%2A> = 16384  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxBytesPerRead%2A> = 4096  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxNameTableCharCount%2A> = 16384  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -233,10 +233,10 @@
         <returns>A <see cref="T:System.ServiceModel.Channels.WebMessageEncodingBindingElement" /> object with property values equal to those of the current element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This creates a complete copy of the current binding element object tree, also called a deep clone. A deep clone of an object creates a copy of the object and a copy of everything directly or indirectly referenced by that object. This is called copying the entire object graph. Returning a deep clone enables the runtime to support the case in which multiple custom bindings share a custom binding element. If a deep clone is not returned, the run-time behavior is undefined. A shallow clone of an object, by contrast, is a copy of the object only. If the object contains references to other objects, the shallow copy does not create copies of the referred objects; instead, it copies only the references to the original objects.  
-  
+This creates a complete copy of the current binding element object tree, also called a deep clone. A deep clone of an object creates a copy of the object and a copy of everything directly or indirectly referenced by that object. This is called copying the entire object graph. Returning a deep clone enables the runtime to support the case in which multiple custom bindings share a custom binding element. If a deep clone is not returned, the run-time behavior is undefined. A shallow clone of an object, by contrast, is a copy of the object only. If the object contains references to other objects, the shallow copy does not create copies of the referred objects; instead, it copies only the references to the original objects.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -279,14 +279,14 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.MessageEncoderFactory" /> that encodes JSON, XML or "raw" binary messages.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.WriteEncoding%2A> property determines the character encoding used to write the message.  
-  
- The maximum number of readers and writers that are allocated to pools and that is respectively available to process incoming and outgoing messages without allocating new readers are specified by the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxReadPoolSize%2A> and <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxWritePoolSize%2A> properties.  
-  
- The default complexity constraints that are used by the message encoders produced by the <xref:System.ServiceModel.Channels.MessageEncoderFactory> can be obtained from the <xref:System.Xml.XmlDictionaryReaderQuotas> associated with this encoding by the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.ReaderQuotas%2A> property to protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources.  
-  
+The value of the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.WriteEncoding%2A> property determines the character encoding used to write the message.  
+ 
+The maximum number of readers and writers that are allocated to pools and that is respectively available to process incoming and outgoing messages without allocating new readers are specified by the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxReadPoolSize%2A> and <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxWritePoolSize%2A> properties.  
+ 
+The default complexity constraints that are used by the message encoders produced by the <xref:System.ServiceModel.Channels.MessageEncoderFactory> can be obtained from the <xref:System.Xml.XmlDictionaryReaderQuotas> associated with this encoding by the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.ReaderQuotas%2A> property to protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -340,10 +340,10 @@
         <returns>The typed object <paramref name="T" /> requested if it is present or <see langword="null" /> if it is not.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This override adds one property to the base <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.GetProperty%60%601%28System.ServiceModel.Channels.BindingContext%29> implementation: when `T` is <xref:System.Xml.XmlDictionaryReaderQuotas>, the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.ReaderQuotas%2A> property is returned.  
-  
+This override adds one property to the base <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.GetProperty%60%601%28System.ServiceModel.Channels.BindingContext%29> implementation: when `T` is <xref:System.Xml.XmlDictionaryReaderQuotas>, the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.ReaderQuotas%2A> property is returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -368,10 +368,10 @@
         <value>The maximum number of readers available to process incoming messages. The default value is 64 readers of each type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Increasing this number increases memory consumption, but prepares the encoder to deal with sudden bursts of incoming messages because it is able to use readers from the pool that are already created instead of creating new ones.  
-  
+Increasing this number increases memory consumption, but prepares the encoder to deal with sudden bursts of incoming messages because it is able to use readers from the pool that are already created instead of creating new ones.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than or equal to zero.</exception>
@@ -395,10 +395,10 @@
         <value>The maximum number of writers available to process outgoing messages. The default is 16 writers of each type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Increasing this number increases memory consumption, but prepares the encoder to deal with sudden bursts of outgoing messages because it is able to use writers from the pool that are already created instead of creating new ones.  
-  
+Increasing this number increases memory consumption, but prepares the encoder to deal with sudden bursts of outgoing messages because it is able to use writers from the pool that are already created instead of creating new ones.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than or equal to zero.</exception>
@@ -424,10 +424,10 @@
         </value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The JSON message encoding does not support either SOAP or WS-Addressing. The <xref:System.ServiceModel.Channels.MessageVersion.None%2A> contains <xref:System.ServiceModel.EnvelopeVersion.None%2A> and <xref:System.ServiceModel.Channels.AddressingVersion.None%2A>, which respectively specifies this non-support.  
-  
+The JSON message encoding does not support either SOAP or WS-Addressing. The <xref:System.ServiceModel.Channels.MessageVersion.None%2A> contains <xref:System.ServiceModel.EnvelopeVersion.None%2A> and <xref:System.ServiceModel.Channels.AddressingVersion.None%2A>, which respectively specifies this non-support.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value set is <see langword="null" />.</exception>
@@ -452,20 +452,20 @@
         <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that specifies the complexity constraints on SOAP messages that are exchanged. The default values for these constraints are provided in the following Remarks section.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The complexity constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources. The properties that express these constraints and their default values (in bytes) are as follows:  
-  
+The complexity constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources. The properties that express these constraints and their default values (in bytes) are as follows:  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxDepth%2A> = 32  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength%2A> = 8192  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength%2A> = 16384  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxBytesPerRead%2A> = 4096  
-  
+ 
 -   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxNameTableCharCount%2A> = 16384  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value set is <see langword="null" />.</exception>
@@ -493,10 +493,10 @@
         <summary>Generates WSDL contract information from encoding policies contained in the binding element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> is responsible for setting information about the message version in the WSDL.  
-  
+The <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> is responsible for setting information about the message version in the WSDL.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -523,10 +523,10 @@
         <summary>Generates WSDL contract information from encoding policies contained in the binding element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> is responsible for setting information about the message version in the WSDL. But this is done by the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.System%23ServiceModel%23Description%23IWsdlExportExtension%23ExportEndpoint%28System.ServiceModel.Description.WsdlExporter%2CSystem.ServiceModel.Description.WsdlEndpointConversionContext%29>method.  
-  
+The <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> is responsible for setting information about the message version in the WSDL. But this is done by the <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement.System%23ServiceModel%23Description%23IWsdlExportExtension%23ExportEndpoint%28System.ServiceModel.Description.WsdlExporter%2CSystem.ServiceModel.Description.WsdlEndpointConversionContext%29>method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

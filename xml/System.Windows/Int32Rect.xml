@@ -26,44 +26,44 @@
     <summary>Describes the width, height, and location of an integer rectangle.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlAttributeUsage_Duration"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="X,Y,Width,Height"/>  
 - or   
 <object property="Empty"/>  
 ```  
-  
+ 
 <a name="xamlValues_MinWidth"></a>   
 ## XAML Values  
- *X*  
- <xref:System.Int32?displayProperty=fullName>  
-  
- The x-coordinate of the top-left corner of the rectangle.  
-  
- *Y*  
- <xref:System.Int32?displayProperty=fullName>  
-  
- The y-coordinate of the top-left corner of the rectangle.  
-  
- *Width*  
- <xref:System.Int32?displayProperty=fullName>  
-  
- The width of the rectangle.  
-  
- *Height*  
- <xref:System.Int32?displayProperty=fullName>  
-  
- The height of the rectangle.  
-  
+*X*  
+<xref:System.Int32?displayProperty=fullName>  
+ 
+The x-coordinate of the top-left corner of the rectangle.  
+ 
+*Y*  
+<xref:System.Int32?displayProperty=fullName>  
+ 
+The y-coordinate of the top-left corner of the rectangle.  
+ 
+*Width*  
+<xref:System.Int32?displayProperty=fullName>  
+ 
+The width of the rectangle.  
+ 
+*Height*  
+<xref:System.Int32?displayProperty=fullName>  
+ 
+The height of the rectangle.  
+ 
 <a name="xamlTextUsage_Int32Rect"></a>   
 ## XAML Text Usage  
- You can also use whitespace instead of commas to delimit values. Whitespace can also be used with a comma delimited value set.  
-  
+You can also use whitespace instead of commas to delimit values. Whitespace can also be used with a comma delimited value set.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -109,22 +109,22 @@
         <value>An empty rectangle with no position or area.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is the same as calling the constructor using 0 for all parameter values.  
-  
+This property is the same as calling the constructor using 0 for all parameter values.  
+ 
 <a name="xamlAttributeUsage_Automatic"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object property="Empty" />  
 ```  
-  
+ 
 <a name="xamlValues_Automatic"></a>   
 ## XAML Values  
- *property*  
- A property that accepts a <xref:System.Windows.Int32Rect> value.  
-  
+*property*  
+A property that accepts a <xref:System.Windows.Int32Rect> value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,10 +150,10 @@
         <returns>**true** if *o* is an <see cref="T:System.Windows.Int32Rect" /> and the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" /> as this rectangle; otherwise, **false**.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation tests for object equality.  
-  
+This operation tests for object equality.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,10 +179,10 @@
         <returns>**true** if both rectangles have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" /> as this rectangle; otherwise, **false**.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation tests for object equality.  
-  
+This operation tests for object equality.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -210,10 +210,10 @@
         <returns>**true** if *int32Rect1* and *int32Rect2* have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" />; otherwise, **false**.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation tests for object equality.  
-  
+This operation tests for object equality.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -314,31 +314,31 @@
         <returns>**true** if *int32Rect1* and *int32Rect2* have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" />; otherwise, **false**.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Int32Rect.Equals%28System.Windows.Int32Rect%2CSystem.Windows.Int32Rect%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Int32Rect int32Rect1, System.Windows.Int32Rect int32Rect2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Int32Rect int32Rect1, valuetype System.Windows.Int32Rect int32Rect2) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.op_Inequality(System.Windows.Int32Rect,System.Windows.Int32Rect)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="int32Rect1" Type="System.Windows.Int32Rect" />
-        <Parameter Name="int32Rect2" Type="System.Windows.Int32Rect" />
-      </Parameters>
-      <Docs>
-        <param name="int32Rect1">The first rectangle to compare.</param>
-        <param name="int32Rect2">The second rectangle to compare.</param>
-        <summary>Compares two rectangles for inequality.</summary>
-        <returns>**false** if *int32Rect1* and *int32Rect2* have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" />; otherwise, if all of these values are the same, then **true**.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Int32Rect int32Rect1, System.Windows.Int32Rect int32Rect2);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Int32Rect int32Rect1, valuetype System.Windows.Int32Rect int32Rect2) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.op_Inequality(System.Windows.Int32Rect,System.Windows.Int32Rect)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>WindowsBase</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="int32Rect1" Type="System.Windows.Int32Rect" />
+       <Parameter Name="int32Rect2" Type="System.Windows.Int32Rect" />
+     </Parameters>
+     <Docs>
+       <param name="int32Rect1">The first rectangle to compare.</param>
+       <param name="int32Rect2">The second rectangle to compare.</param>
+       <summary>Compares two rectangles for inequality.</summary>
+       <returns>**false** if *int32Rect1* and *int32Rect2* have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" />; otherwise, if all of these values are the same, then **true**.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Int32Rect.Compare%28System.Windows.Int32Rect%2CSystem.Windows.Int32Rect%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -388,10 +388,10 @@
         <returns>The value of the current instance in the specified format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Int32Rect> instance is cast to an <xref:System.IFormattable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Int32Rect> instance is cast to an <xref:System.IFormattable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

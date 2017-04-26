@@ -22,21 +22,21 @@
     <summary>Represents a reference to a field.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeFieldReferenceExpression> can be used to represent a reference to a field.  
+<xref:System.CodeDom.CodeFieldReferenceExpression> can be used to represent a reference to a field.  
+ 
+The <xref:System.CodeDom.CodeFieldReferenceExpression.TargetObject%2A> property specifies the object that contains the field. The <xref:System.CodeDom.CodeFieldReferenceExpression.FieldName%2A> property specifies the name of the field to reference.  
+ 
   
- The <xref:System.CodeDom.CodeFieldReferenceExpression.TargetObject%2A> property specifies the object that contains the field. The <xref:System.CodeDom.CodeFieldReferenceExpression.FieldName%2A> property specifies the name of the field to reference.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates use of a <xref:System.CodeDom.CodeFieldReferenceExpression> to reference a field.  
-  
- [!code-cpp[CodeReferenceExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeReferenceExample/CPP/codereferenceexample.cpp#2)]
- [!code-csharp[CodeReferenceExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeReferenceExample/CS/codereferenceexample.cs#2)]
- [!code-vb[CodeReferenceExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeReferenceExample/VB/codereferenceexample.vb#2)]  
-  
+The following example demonstrates use of a <xref:System.CodeDom.CodeFieldReferenceExpression> to reference a field.  
+ 
+[!code-cpp[CodeReferenceExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeReferenceExample/CPP/codereferenceexample.cpp#2)]
+[!code-csharp[CodeReferenceExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeReferenceExample/CS/codereferenceexample.cs#2)]
+[!code-vb[CodeReferenceExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeReferenceExample/VB/codereferenceexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

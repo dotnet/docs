@@ -26,27 +26,27 @@
     <summary>Provides a base class for elements that apply effects onto or around a single child element, such as <see cref="T:System.Windows.Controls.Border" /> or <see cref="T:System.Windows.Controls.Viewbox" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Decorator> contains a single <xref:System.Windows.UIElement>, which is specified by the <xref:System.Windows.Controls.Decorator.Child%2A> property. The <xref:System.Windows.Controls.Decorator> affects, or decorates, the <xref:System.Windows.UIElement>.  The <xref:System.Windows.Controls.Decorator> may or may not have an appearance.  For example, a <xref:System.Windows.Controls.Border> puts a rectangle around a control, but a <xref:System.Windows.Controls.Viewbox> has no visual presence.  
+A <xref:System.Windows.Controls.Decorator> contains a single <xref:System.Windows.UIElement>, which is specified by the <xref:System.Windows.Controls.Decorator.Child%2A> property. The <xref:System.Windows.Controls.Decorator> affects, or decorates, the <xref:System.Windows.UIElement>.  The <xref:System.Windows.Controls.Decorator> may or may not have an appearance.  For example, a <xref:System.Windows.Controls.Border> puts a rectangle around a control, but a <xref:System.Windows.Controls.Viewbox> has no visual presence.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example adds a <xref:System.Windows.Controls.TextBox> the <xref:System.Windows.Controls.Decorator.Child%2A> property of a <xref:System.Windows.Controls.Border>.  
-  
- **Note** The [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] version of the example could use the `<Border.Child>` tags around the content of the <xref:System.Windows.Controls.Border>, but it is not necessary because the <xref:System.Windows.Controls.Decorator> applies the <xref:System.Windows.Markup.ContentPropertyAttribute> to the <xref:System.Windows.Controls.Decorator.Child%2A> property. For more information, see [XAML Overview (WPF)](~/docs/framework/wpf/advanced/xaml-overview-wpf.md).  
-  
- [!code-xml[Border_snip#SimpleBorderWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Border_snip/CS/simpleborder.xaml#simpleborderwholepage)]  
-  
- [!code-csharp[Border_Procedural_snip#BasicBorderCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Border_Procedural_snip/CSharp/BasicBorderExample.cs#basicbordercodeexamplewholepage)]
- [!code-vb[Border_Procedural_snip#BasicBorderCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Border_Procedural_snip/visualbasic/basicborderexample.vb#basicbordercodeexamplewholepage)]  
-  
- The preceding example produces output that is similar to the following illustration.  
-  
- ![TextBox with black border](~/add/media/layout-border-around-textbox.png "TextBox with black border")  
+The following example adds a <xref:System.Windows.Controls.TextBox> the <xref:System.Windows.Controls.Decorator.Child%2A> property of a <xref:System.Windows.Controls.Border>.  
+ 
+**Note** The [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] version of the example could use the `<Border.Child>` tags around the content of the <xref:System.Windows.Controls.Border>, but it is not necessary because the <xref:System.Windows.Controls.Decorator> applies the <xref:System.Windows.Markup.ContentPropertyAttribute> to the <xref:System.Windows.Controls.Decorator.Child%2A> property. For more information, see [XAML Overview (WPF)](~/docs/framework/wpf/advanced/xaml-overview-wpf.md).  
+ 
+[!code-xml[Border_snip#SimpleBorderWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Border_snip/CS/simpleborder.xaml#simpleborderwholepage)]  
+ 
+[!code-csharp[Border_Procedural_snip#BasicBorderCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Border_Procedural_snip/CSharp/BasicBorderExample.cs#basicbordercodeexamplewholepage)]
+[!code-vb[Border_Procedural_snip#BasicBorderCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Border_Procedural_snip/visualbasic/basicborderexample.vb#basicbordercodeexamplewholepage)]  
+ 
+The preceding example produces output that is similar to the following illustration.  
+ 
+![TextBox with black border](~/add/media/layout-border-around-textbox.png "TextBox with black border")  
 Border around a TextBox  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -110,10 +110,10 @@ Border around a TextBox
         <value>The single child element of a <see cref="T:System.Windows.Controls.Decorator" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Decorator> enforces a strong content model for child content. The <xref:System.Windows.Controls.Decorator.Child%2A> property of a <xref:System.Windows.Controls.Decorator> must be a single <xref:System.Windows.UIElement>.  
-  
+<xref:System.Windows.Controls.Decorator> enforces a strong content model for child content. The <xref:System.Windows.Controls.Decorator.Child%2A> property of a <xref:System.Windows.Controls.Decorator> must be a single <xref:System.Windows.UIElement>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -139,10 +139,10 @@ Border around a TextBox
         <returns>The child element at the specified <paramref name="index" /> position.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because <xref:System.Windows.Controls.Decorator.Child%2A> can equal only 0 or 1, specifying an `index` position greater than 1 or less than 0 results in an <xref:System.ArgumentOutOfRangeException>.  
-  
+Because <xref:System.Windows.Controls.Decorator.Child%2A> can equal only 0 or 1, specifying an `index` position greater than 1 or less than 0 results in an <xref:System.ArgumentOutOfRangeException>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -188,10 +188,10 @@ Border around a TextBox
         <returns>The target <see cref="T:System.Windows.Size" /> of the element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.Decorator> determines its desired size by analyzing its child element's sizing properties, margin, and requested size.  
-  
+A <xref:System.Windows.Controls.Decorator> determines its desired size by analyzing its child element's sizing properties, margin, and requested size.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,10 +255,10 @@ Border around a TextBox
         <value>The number of visual child elements.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because a <xref:System.Windows.Controls.Decorator> can have only one child object in its child collection, this property always reports  0 or 1.  
-  
+Because a <xref:System.Windows.Controls.Decorator> can have only one child object in its child collection, this property always reports  0 or 1.  
+ 
  ]]></format>
         </remarks>
       </Docs>

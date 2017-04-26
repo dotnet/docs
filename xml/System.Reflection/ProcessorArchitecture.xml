@@ -28,10 +28,10 @@
     <summary>Identifies the processor and bits-per-word of the platform targeted by an executable.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Not all combinations of <xref:System.Reflection.PortableExecutableKinds> and <xref:System.Reflection.ImageFileMachine> describe valid PE file types. <xref:System.Reflection.ProcessorArchitecture> is the set of combinations of <xref:System.Reflection.PortableExecutableKinds> and <xref:System.Reflection.ImageFileMachine> that describe valid PE file types for managed code.  
-  
+Not all combinations of <xref:System.Reflection.PortableExecutableKinds> and <xref:System.Reflection.ImageFileMachine> describe valid PE file types. <xref:System.Reflection.ProcessorArchitecture> is the set of combinations of <xref:System.Reflection.PortableExecutableKinds> and <xref:System.Reflection.ImageFileMachine> that describe valid PE file types for managed code.  
+ 
  ]]></format>
     </remarks>
   </Docs>

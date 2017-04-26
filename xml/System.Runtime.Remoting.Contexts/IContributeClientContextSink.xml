@@ -17,12 +17,12 @@
     <summary>Contributes an interception sink at the context boundary on the client end of a remoting call.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Contexts.IContributeClientContextSink> interface is implemented by context properties in a <xref:System.Runtime.Remoting.Contexts.Context> class that want to contribute an interception sink at the context boundary on the client end of a remoting call.  
-  
- The client context chain is composed from those properties in the client context that implement <xref:System.Runtime.Remoting.Contexts.IContributeClientContextSink>, which contributes to a sink through the <xref:System.Runtime.Remoting.Contexts.IContributeClientContextSink.GetClientContextSink%2A> method call. This chain is cached for future use.  
-  
+The <xref:System.Runtime.Remoting.Contexts.IContributeClientContextSink> interface is implemented by context properties in a <xref:System.Runtime.Remoting.Contexts.Context> class that want to contribute an interception sink at the context boundary on the client end of a remoting call.  
+ 
+The client context chain is composed from those properties in the client context that implement <xref:System.Runtime.Remoting.Contexts.IContributeClientContextSink>, which contributes to a sink through the <xref:System.Runtime.Remoting.Contexts.IContributeClientContextSink.GetClientContextSink%2A> method call. This chain is cached for future use.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

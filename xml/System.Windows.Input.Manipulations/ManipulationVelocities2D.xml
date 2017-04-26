@@ -14,10 +14,10 @@
     <summary>Represents a set of velocities calculated by the manipulation and inertia processors.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Input.Manipulations.ManipulationVelocities2D> object is used in the event arguments of <xref:System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs> and <xref:System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs> to inform the event handler of the velocities involved in the manipulation.  
-  
+A <xref:System.Windows.Input.Manipulations.ManipulationVelocities2D> object is used in the event arguments of <xref:System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs> and <xref:System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs> to inform the event handler of the velocities involved in the manipulation.  
+ 
  ]]></format>
     </remarks>
   </Docs>

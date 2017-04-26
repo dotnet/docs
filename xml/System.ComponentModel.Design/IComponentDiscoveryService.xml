@@ -16,20 +16,20 @@
     <summary>Enables enumeration of components at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of the <xref:System.ComponentModel.Design.IComponentDiscoveryService> interface enables design-time enumeration of components in the Toolbox.  
+The default implementation of the <xref:System.ComponentModel.Design.IComponentDiscoveryService> interface enables design-time enumeration of components in the Toolbox.  
+ 
+You could provide a custom implementation that enumerates across other types available at design time. For example, your implementation could enumerate the components that are present in a particular designer.  
+ 
   
- You could provide a custom implementation that enumerates across other types available at design time. For example, your implementation could enumerate the components that are present in a particular designer.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use <xref:System.ComponentModel.Design.IComponentDiscoveryService> to find all the types that derive from the <xref:System.Windows.Forms.ScrollableControl> type.  
-  
- [!code-csharp[System.ComponentModel.Design.DesignerServices#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerServices/CS/Form1.cs#13)]
- [!code-vb[System.ComponentModel.Design.DesignerServices#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerServices/VB/Form1.vb#13)]  
-  
+The following code example demonstrates how to use <xref:System.ComponentModel.Design.IComponentDiscoveryService> to find all the types that derive from the <xref:System.Windows.Forms.ScrollableControl> type.  
+ 
+[!code-csharp[System.ComponentModel.Design.DesignerServices#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerServices/CS/Form1.cs#13)]
+[!code-vb[System.ComponentModel.Design.DesignerServices#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerServices/VB/Form1.vb#13)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,22 +62,22 @@
         <returns>The list of available component types.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.IComponentDiscoveryService.GetComponentTypes%2A> method retrieves the list of available component types, which are types implementing the <xref:System.ComponentModel.IComponent> interface. If the `baseType` parameter is `null`, all components are retrieved; otherwise, only component types derived from `baseType` are returned.  
+The <xref:System.ComponentModel.Design.IComponentDiscoveryService.GetComponentTypes%2A> method retrieves the list of available component types, which are types implementing the <xref:System.ComponentModel.IComponent> interface. If the `baseType` parameter is `null`, all components are retrieved; otherwise, only component types derived from `baseType` are returned.  
+ 
+When you pass in a value for the `designerHost` parameter, type resolution is scoped to `designerHost`. This means that if there is a <xref:System.Drawing.Design.ToolboxItem> whose type is on disk, and not in the global assembly cache, its type will fail to load through `designerHost`.  
+ 
+If you pass in `null` for `designerHost`, it returns all types that can be queried from the global assembly cache or the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method.  
+ 
   
- When you pass in a value for the `designerHost` parameter, type resolution is scoped to `designerHost`. This means that if there is a <xref:System.Drawing.Design.ToolboxItem> whose type is on disk, and not in the global assembly cache, its type will fail to load through `designerHost`.  
-  
- If you pass in `null` for `designerHost`, it returns all types that can be queried from the global assembly cache or the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.ComponentModel.Design.IComponentDiscoveryService.GetComponentTypes%2A> method to find all the types that derive from the <xref:System.Windows.Forms.ScrollableControl> type.  
-  
- [!code-csharp[System.ComponentModel.Design.DesignerServices#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerServices/CS/Form1.cs#13)]
- [!code-vb[System.ComponentModel.Design.DesignerServices#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerServices/VB/Form1.vb#13)]  
-  
+The following code example demonstrates how to use the <xref:System.ComponentModel.Design.IComponentDiscoveryService.GetComponentTypes%2A> method to find all the types that derive from the <xref:System.Windows.Forms.ScrollableControl> type.  
+ 
+[!code-csharp[System.ComponentModel.Design.DesignerServices#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerServices/CS/Form1.cs#13)]
+[!code-vb[System.ComponentModel.Design.DesignerServices#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerServices/VB/Form1.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

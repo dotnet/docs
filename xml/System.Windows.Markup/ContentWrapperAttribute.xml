@@ -22,14 +22,14 @@
     <summary>Specifies one or more types on the associated collection type that will be used to wrap foreign content.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Foreign content refers to cases where the type system constraints on the type of the content property do not capture all of the possible content cases that XAML usage for the owning type would support. For example, XAML support for content of a particular type might support strings in a strongly typed generic <xref:System.Collections.ObjectModel.Collection%601>.  
-  
- <xref:System.Windows.Documents.InlineCollection> is an example of a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] class that has the <xref:System.Windows.Markup.ContentWrapperAttribute> attribute applied. In this case there are two separate attributed wrapper classes.  
-  
- In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.ContentWrapperAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
-  
+Foreign content refers to cases where the type system constraints on the type of the content property do not capture all of the possible content cases that XAML usage for the owning type would support. For example, XAML support for content of a particular type might support strings in a strongly typed generic <xref:System.Collections.ObjectModel.Collection%601>.  
+ 
+<xref:System.Windows.Documents.InlineCollection> is an example of a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] class that has the <xref:System.Windows.Markup.ContentWrapperAttribute> attribute applied. In this case there are two separate attributed wrapper classes.  
+ 
+In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.ContentWrapperAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>

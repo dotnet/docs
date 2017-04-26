@@ -18,21 +18,21 @@
     <summary>Specifies the base class for any UI element that appears on the [!INCLUDE[wf2](~/includes/wf2-md.md)] designer canvas and that visually represents an instance of an atomic item that can be edited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Examples of items represented by a <xref:System.Activities.Presentation.WorkflowViewElement> include <xref:System.Activities.Activity> and <xref:System.Activities.Statements.FlowNode>. `WorkflowViewElement` provides a common contract that the designer uses to render the visual element onto the designer surface and to interact with it through the various editing actions.  
+Examples of items represented by a <xref:System.Activities.Presentation.WorkflowViewElement> include <xref:System.Activities.Activity> and <xref:System.Activities.Statements.FlowNode>. `WorkflowViewElement` provides a common contract that the designer uses to render the visual element onto the designer surface and to interact with it through the various editing actions.  
+ 
+If you are building a designer for an <xref:System.Activities.Activity>, you should use the <xref:System.Activities.Presentation.ActivityDesigner> base type. If there are non-activity elements that need to be treated as first class items on the designer canvas, such as a toolbox item that needs to be draggable throughout the canvas, or for cut-and-paste scenarios, use `WorkflowViewElement` as the base class. If you do not want to use the standard activity chrome for an activity designer, `WorkflowViewElement` should be used as the base type to provide the most flexibility.  
+ 
+A <xref:System.Activities.Presentation.WorkflowViewElement> represents a <xref:System.Activities.Presentation.Model.ModelItem> in the UI and provides code access to the model item and an <xref:System.Activities.Presentation.EditingContext> that allows changes to be made.  
+ 
   
- If you are building a designer for an <xref:System.Activities.Activity>, you should use the <xref:System.Activities.Presentation.ActivityDesigner> base type. If there are non-activity elements that need to be treated as first class items on the designer canvas, such as a toolbox item that needs to be draggable throughout the canvas, or for cut-and-paste scenarios, use `WorkflowViewElement` as the base class. If you do not want to use the standard activity chrome for an activity designer, `WorkflowViewElement` should be used as the base type to provide the most flexibility.  
-  
- A <xref:System.Activities.Presentation.WorkflowViewElement> represents a <xref:System.Activities.Presentation.Model.ModelItem> in the UI and provides code access to the model item and an <xref:System.Activities.Presentation.EditingContext> that allows changes to be made.  
-  
-   
-  
+ 
 ## Examples  
- For a code sample showing how to create a new <xref:System.Activities.Activity> and an <xref:System.Activities.Presentation.ActivityDesigner>, and then how to associate them, see the sample in the <xref:System.Activities.Presentation.ActivityDesigner> documentation.  
-  
+For a code sample showing how to create a new <xref:System.Activities.Activity> and an <xref:System.Activities.Presentation.ActivityDesigner>, and then how to associate them, see the sample in the <xref:System.Activities.Presentation.ActivityDesigner> documentation.  
+ 
 <!-- TODO: review snippet reference  [!CODE [WorkflowViewElement#1](WorkflowViewElement#1)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,10 +51,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activities.Presentation.WorkflowViewElement.Collapsible%2A> property is set to `false` by default.  
-  
+The <xref:System.Activities.Presentation.WorkflowViewElement.Collapsible%2A> property is set to `false` by default.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,10 +113,10 @@
         <value>The <see cref="T:System.Activities.Presentation.EditingContext" /> object for the workflow designer that contains the workflow view element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activities.Presentation.EditingContext> object is a collection of services shared between all elements contained in the designer and used to interact between the host and the designer. Services are published and requested through the <xref:System.Activities.Presentation.EditingContext>.  
-  
+The <xref:System.Activities.Presentation.EditingContext> object is a collection of services shared between all elements contained in the designer and used to interact between the host and the designer. Services are published and requested through the <xref:System.Activities.Presentation.EditingContext>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,10 +246,10 @@
         <returns>The default implementation is to return an empty <see cref="T:System.String" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implement this method in your derived class to add your own handling.  
-  
+Implement this method in your derived class to add your own handling.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -272,10 +272,10 @@
         <returns>The name to use as automation ID. The base class always returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implement this method in your derived class to add your own handling that specifies a property of a model item to be used to identify the model item to automation.  
-  
+Implement this method in your derived class to add your own handling that specifies a property of a model item to be used to identify the model item to automation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -354,10 +354,10 @@
         <value>A <see cref="T:System.Activities.Presentation.Model.ModelItem" /> object that is a wrapper around a model instance or an in-memory representation of the underlying workflow.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activities.Presentation.Model.ModelItem> object provides notification of changes even if the model instance does not provide change notification.  
-  
+The <xref:System.Activities.Presentation.Model.ModelItem> object provides notification of changes even if the model instance does not provide change notification.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -499,10 +499,10 @@
         <summary>Raises the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this virtual method raises the event as described above. Overrides should call the base implementation to preserve this behavior.  
-  
+The default implementation of this virtual method raises the event as described above. Overrides should call the base implementation to preserve this behavior.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -527,10 +527,10 @@
         <summary>Invoked when the underlying model item is changed. Implement this method in a derived class to handle this event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is no default implementation.  
-  
+There is no default implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -682,10 +682,10 @@
         <summary>Invoked when the read-only property is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is no default implementation.  
-  
+There is no default implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -711,10 +711,10 @@
         <summary>Invoked when the show expanded property is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is no default implementation.  
-  
+There is no default implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -892,10 +892,10 @@
         <value>The view service associated with the workflow view element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can also be accessed with the <xref:System.Activities.Presentation.EditingContext.Services%2A> property.  
-  
+This property can also be accessed with the <xref:System.Activities.Presentation.EditingContext.Services%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,20 +14,20 @@
     <summary>Represents the <see langword="&lt;EncryptionProperty&gt;" /> element used in XML encryption. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.EncryptionProperty> class encapsulates the `<EncryptionProperty>` element defined by the World Wide Web Consortium XML Encryption specification located at http://www.w3.org/TR/xmlenc-core/.  
+The <xref:System.Security.Cryptography.Xml.EncryptionProperty> class encapsulates the `<EncryptionProperty>` element defined by the World Wide Web Consortium XML Encryption specification located at http://www.w3.org/TR/xmlenc-core/.  
+ 
+Use the <xref:System.Security.Cryptography.Xml.EncryptionProperty> class to provide additional encryption information related to the <xref:System.Security.Cryptography.Xml.EncryptedData> and <xref:System.Security.Cryptography.Xml.EncryptedKey> elements.  For example, use this class to specify a time stamp.  
+ 
   
- Use the <xref:System.Security.Cryptography.Xml.EncryptionProperty> class to provide additional encryption information related to the <xref:System.Security.Cryptography.Xml.EncryptedData> and <xref:System.Security.Cryptography.Xml.EncryptedKey> elements.  For example, use this class to specify a time stamp.  
-  
-   
-  
+ 
 ## Examples  
- The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
-  
- [!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
- [!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
-  
+The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
+ 
+[!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
+[!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,13 +64,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> class using an <see cref="T:System.Xml.XmlElement" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
-  
- [!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
- [!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
-  
+The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
+ 
+[!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
+[!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="elementProperty" /> parameter is <see langword="null" />.</exception>
@@ -99,10 +99,10 @@
         <returns>An <see cref="T:System.Xml.XmlElement" /> object that encapsulates an instance of the <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.EncryptionProperty.GetXml%2A> method returns a representation of the `<EncryptionProperty>` element.  
-  
+The <xref:System.Security.Cryptography.Xml.EncryptionProperty.GetXml%2A> method returns a representation of the `<EncryptionProperty>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,18 +124,18 @@
         <value>The ID of the current <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The ID is used to reference the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object from another location.  
+The ID is used to reference the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object from another location.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
-  
- [!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
- [!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
-  
+The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
+ 
+[!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
+[!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,10 +160,10 @@
         <summary>Parses the input <see cref="T:System.Xml.XmlElement" /> and configures the internal state of the <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object to match.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.EncryptionProperty.LoadXml%2A> method configures the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to match the state of an <xref:System.Xml.XmlElement> object.  
-  
+The <xref:System.Security.Cryptography.Xml.EncryptionProperty.LoadXml%2A> method configures the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to match the state of an <xref:System.Xml.XmlElement> object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
@@ -191,13 +191,13 @@
         <value>An <see cref="T:System.Xml.XmlElement" /> object that represents an <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
-  
- [!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
- [!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
-  
+The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
+ 
+[!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
+[!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Security.Cryptography.Xml.EncryptionProperty.PropertyElement" /> property was set to <see langword="null" />.</exception>
@@ -225,13 +225,13 @@
         <value>The target of the <see cref="T:System.Security.Cryptography.Xml.EncryptionProperty" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
-  
- [!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
- [!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
-  
+The following code example encrypts and decrypts an XML document.  This code example creates an <xref:System.Security.Cryptography.Xml.EncryptionProperty> object that contains custom information about the <xref:System.Security.Cryptography.Xml.EncryptedKey> element, and adds the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object to the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  Finally, this code example displays information about the <xref:System.Security.Cryptography.Xml.EncryptionProperty> object and the <xref:System.Security.Cryptography.Xml.EncryptionPropertyCollection> collection.  
+ 
+[!code-csharp[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/cs/sample.cs#1)]
+[!code-vb[Cryptography.XML.EncryptionProperty#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptionProperty/vb/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

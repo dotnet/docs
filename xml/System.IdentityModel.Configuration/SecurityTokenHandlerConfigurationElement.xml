@@ -14,10 +14,10 @@
     <summary>Represents a <see langword="&lt;securityTokenHandlerConfiguration&gt;" /> element in a configuration file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `<securityTokenHandlerConfiguration>` element provides default configuration settings for the collection of security token handlers configured under a `<securityTokenHandlers>` element. The `<securityTokenHandlers>` element is represented by the <xref:System.IdentityModel.Configuration.SecurityTokenHandlerElement> class.  
-  
+The `<securityTokenHandlerConfiguration>` element provides default configuration settings for the collection of security token handlers configured under a `<securityTokenHandlers>` element. The `<securityTokenHandlers>` element is represented by the <xref:System.IdentityModel.Configuration.SecurityTokenHandlerElement> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <value>The collection of audience URIs that are configured for this token handler configuration element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<audienceUris>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
-  
+Corresponds to the `<audienceUris>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <value>The element that configures the token replay cache and the session security token cache for this token handler configuration element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<caches>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
-  
+Corresponds to the `<caches>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <value>The element that configures the certificate validator and its properties for this token handler configuration element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<certificateValidator>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
-  
+Corresponds to the `<certificateValidator>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,10 +167,10 @@
         <value>The element that configures the issuer name registry for this token handler configuration element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<issuerNameRegistry>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
-  
+Corresponds to the `<issuerNameRegistry>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
         <value>A custom type element that specifies the <see cref="T:System.Type" /> of the issuer token resolver. The type must derive from <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<issuerTokenResolver>` element that is configured under the `<securityTokenHandlerConfiguration>` element. The `<issuerTokenResolver>` element registers an issuer token resolver. This can be used to resolve Issuer key identifier clauses while deserializing a SAML token.  
-  
+Corresponds to the `<issuerTokenResolver>` element that is configured under the `<securityTokenHandlerConfiguration>` element. The `<issuerTokenResolver>` element registers an issuer token resolver. This can be used to resolve Issuer key identifier clauses while deserializing a SAML token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,10 +230,10 @@
         <value>The maximum clock skew.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `maxClockSkew` attribute of the `<securityTokenHandlerConfiguration>` element.  
-  
+Corresponds to the `maxClockSkew` attribute of the `<securityTokenHandlerConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -263,10 +263,10 @@
         <value>The name of the identity configuration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `name` attribute of the `<securityTokenHandlerConfiguration>` element.  
-  
+Corresponds to the `name` attribute of the `<securityTokenHandlerConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -312,10 +312,10 @@
           <see langword="true" /> to save the <see cref="T:System.IdentityModel.Tokens.BootstrapContext" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `saveBootstrapContext` attribute of the `<securityTokenHandlerConfiguration>` element.  
-  
+Corresponds to the `saveBootstrapContext` attribute of the `<securityTokenHandlerConfiguration>` element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -342,10 +342,10 @@
         <value>A custom type element that specifies the <see cref="T:System.Type" /> of the service token resolver. The type must derive from <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Corresponds to the `<serviceTokenResolver>` element that is configured under the `<securityTokenHandlerConfiguration>` element. The `<serviceTokenResolver>` element registers a service token resolver. This can be used to resolve Issuer key identifier clauses while deserializing a SAML token.  
-  
+Corresponds to the `<serviceTokenResolver>` element that is configured under the `<securityTokenHandlerConfiguration>` element. The `<serviceTokenResolver>` element registers a service token resolver. This can be used to resolve Issuer key identifier clauses while deserializing a SAML token.  
+ 
  ]]></format>
         </remarks>
       </Docs>

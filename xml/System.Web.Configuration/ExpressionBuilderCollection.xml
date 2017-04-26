@@ -19,17 +19,17 @@
     <summary>Represents a collection of <see cref="T:System.Web.Configuration.ExpressionBuilder" /> objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.ExpressionBuilderCollection> class does not refer to any actual element in the underlying configuration file. It is a construct that allows easy access to the compilation information it contains.  
+The <xref:System.Web.Configuration.ExpressionBuilderCollection> class does not refer to any actual element in the underlying configuration file. It is a construct that allows easy access to the compilation information it contains.  
+ 
   
-   
-  
+ 
 ## Examples  
- This section provides two code examples. The first demonstrates how to declaratively specify values for several properties of the <xref:System.Web.Configuration.ExpressionBuilderCollection> class. The second demonstrates how to use members of the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
-  
- The following configuration file example shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
-  
+This section provides two code examples. The first demonstrates how to declaratively specify values for several properties of the <xref:System.Web.Configuration.ExpressionBuilderCollection> class. The second demonstrates how to use members of the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
+ 
+The following configuration file example shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
+ 
 ```  
 <system.web>  
   <compilation>   
@@ -47,12 +47,12 @@
   </compilation>  
 </system.web>  
 ```  
-  
- The following code example demonstrates how to use members of the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
-  
- [!code-csharp[System.Web.Configuration.ExpressionBuilderCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/CS/ExpressionBuilderCollection.cs#1)]
- [!code-vb[System.Web.Configuration.ExpressionBuilderCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/VB/ExpressionBuilderCollection.vb#1)]  
-  
+ 
+The following code example demonstrates how to use members of the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
+ 
+[!code-csharp[System.Web.Configuration.ExpressionBuilderCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/CS/ExpressionBuilderCollection.cs#1)]
+[!code-vb[System.Web.Configuration.ExpressionBuilderCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/VB/ExpressionBuilderCollection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -92,18 +92,18 @@
         <summary>Adds an <see cref="T:System.Web.Configuration.ExpressionBuilder" /> object to the <see cref="T:System.Web.Configuration.ExpressionBuilderCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adds an <xref:System.Web.Configuration.ExpressionBuilder> object to the collection. If the assembly object is not initialized with assembly information, an exception is thrown. If the assembly object already exists in the collection, the statement is ignored.  
+Adds an <xref:System.Web.Configuration.ExpressionBuilder> object to the collection. If the assembly object is not initialized with assembly information, an exception is thrown. If the assembly object already exists in the collection, the statement is ignored.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.Configuration.ExpressionBuilderCollection.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
-  
- [!code-csharp[System.Web.Configuration.ExpressionBuilderCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/CS/ExpressionBuilderCollection.cs#4)]
- [!code-vb[System.Web.Configuration.ExpressionBuilderCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/VB/ExpressionBuilderCollection.vb#4)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.Configuration.ExpressionBuilderCollection.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
+ 
+[!code-csharp[System.Web.Configuration.ExpressionBuilderCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/CS/ExpressionBuilderCollection.cs#4)]
+[!code-vb[System.Web.Configuration.ExpressionBuilderCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/VB/ExpressionBuilderCollection.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.ExpressionBuilder" /> object to add already exists in the collection, or the collection is read-only.</exception>
@@ -250,18 +250,18 @@
         <summary>Removes an <see cref="T:System.Web.Configuration.ExpressionBuilder" /> object from the <see cref="T:System.Web.Configuration.ExpressionBuilderCollection" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the assembly does not exist in the collection, the statement is ignored.  
+If the assembly does not exist in the collection, the statement is ignored.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.Configuration.ExpressionBuilderCollection.Remove%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
-  
- [!code-csharp[System.Web.Configuration.ExpressionBuilderCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/CS/ExpressionBuilderCollection.cs#5)]
- [!code-vb[System.Web.Configuration.ExpressionBuilderCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/VB/ExpressionBuilderCollection.vb#5)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.Configuration.ExpressionBuilderCollection.Remove%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
+ 
+[!code-csharp[System.Web.Configuration.ExpressionBuilderCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/CS/ExpressionBuilderCollection.cs#5)]
+[!code-vb[System.Web.Configuration.ExpressionBuilderCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/VB/ExpressionBuilderCollection.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,18 +286,18 @@
         <summary>Removes an <see cref="T:System.Web.Configuration.ExpressionBuilder" /> object from the <see cref="T:System.Web.Configuration.ExpressionBuilderCollection" /> collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the assembly does not exist in the collection, an out-of-range exception is thrown.  
+If the assembly does not exist in the collection, an out-of-range exception is thrown.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.Configuration.ExpressionBuilderCollection.RemoveAt%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
-  
- [!code-csharp[System.Web.Configuration.ExpressionBuilderCollection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/CS/ExpressionBuilderCollection.cs#6)]
- [!code-vb[System.Web.Configuration.ExpressionBuilderCollection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/VB/ExpressionBuilderCollection.vb#6)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.Configuration.ExpressionBuilderCollection.RemoveAt%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
+ 
+[!code-csharp[System.Web.Configuration.ExpressionBuilderCollection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/CS/ExpressionBuilderCollection.cs#6)]
+[!code-vb[System.Web.Configuration.ExpressionBuilderCollection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/VB/ExpressionBuilderCollection.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,10 +311,10 @@
         <summary>Gets or sets the specified <see cref="T:System.Web.Configuration.ExpressionBuilder" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Configuration.ExpressionBuilder>  
-  
+<xref:System.Web.Configuration.ExpressionBuilder>  
+ 
  ]]></format>
         </remarks>
       </Docs>

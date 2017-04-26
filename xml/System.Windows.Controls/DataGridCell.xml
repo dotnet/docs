@@ -51,10 +51,10 @@
         <returns>The final size of the control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.DataGridCell.ArrangeOverride%2A> method determines the arrangement of the cell content with a gridline on the right.  
-  
+The <xref:System.Windows.Controls.DataGridCell.ArrangeOverride%2A> method determines the arrangement of the cell content with a gridline on the right.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,10 +148,10 @@
           <see langword="true" /> if the cell cannot be put in edit mode; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set the <xref:System.Windows.Controls.DataGridCell.IsReadOnly%2A> property to `true` to make an individual cell read-only. Set the <xref:System.Windows.Controls.DataGridColumn.IsReadOnly%2A?displayProperty=fullName> property to `true` to make all cells in an individual column read-only. Set the <xref:System.Windows.Controls.DataGrid.IsReadOnly%2A?displayProperty=fullName> property to `true` to make all cells in the <xref:System.Windows.Controls.DataGrid> read-only If there is a conflict between the settings at the <xref:System.Windows.Controls.DataGrid>, column, and cell levels, a value of `true` takes precedence over a value of `false`.  
-  
+Set the <xref:System.Windows.Controls.DataGridCell.IsReadOnly%2A> property to `true` to make an individual cell read-only. Set the <xref:System.Windows.Controls.DataGridColumn.IsReadOnly%2A?displayProperty=fullName> property to `true` to make all cells in an individual column read-only. Set the <xref:System.Windows.Controls.DataGrid.IsReadOnly%2A?displayProperty=fullName> property to `true` to make all cells in the <xref:System.Windows.Controls.DataGrid> read-only If there is a conflict between the settings at the <xref:System.Windows.Controls.DataGrid>, column, and cell levels, a value of `true` takes precedence over a value of `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,12 +191,12 @@
           <see langword="true" /> if the cell is selected; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see <see cref="T:System.Windows.DependencyProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.DataGridCell.Selected> event occurs when the <xref:System.Windows.Controls.DataGridCell.IsSelected%2A> property is set to `true`.  
-  
- The <xref:System.Windows.Controls.DataGridCell.Unselected> event occurs when the <xref:System.Windows.Controls.DataGridCell.IsSelected%2A> property is set to `false`.  
-  
+The <xref:System.Windows.Controls.DataGridCell.Selected> event occurs when the <xref:System.Windows.Controls.DataGridCell.IsSelected%2A> property is set to `true`.  
+ 
+The <xref:System.Windows.Controls.DataGridCell.Unselected> event occurs when the <xref:System.Windows.Controls.DataGridCell.IsSelected%2A> property is set to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,10 +239,10 @@
         <returns>The desired size of the <see cref="T:System.Windows.Controls.DataGridCell" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.DataGridCell.MeasureOverride%2A> method measures the area needed for the cell and the gridline on the right.  
-  
+The <xref:System.Windows.Controls.DataGridCell.MeasureOverride%2A> method measures the area needed for the cell and the gridline on the right.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,10 +269,10 @@
         <summary>Called when the cell's <see cref="P:System.Windows.Controls.DataGridCell.Column" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not called if changes are made to the current column definition. It is called only if the <xref:System.Windows.Controls.DataGridCell.Column%2A> property is set.  
-  
+This method is not called if changes are made to the current column definition. It is called only if the <xref:System.Windows.Controls.DataGridCell.Column%2A> property is set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,10 +295,10 @@
         <returns>The automation peer for this <see cref="T:System.Windows.Controls.DataGridCell" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Automation.Peers.DataGridCellAutomationPeer> exposes the <xref:System.Windows.Controls.DataGrid> to [!INCLUDE[TLA#tla_uiautomation#initcap](~/includes/tlasharptla-uiautomationsharpinitcap-md.md)].  
-  
+The <xref:System.Windows.Automation.Peers.DataGridCellAutomationPeer> exposes the <xref:System.Windows.Controls.DataGrid> to [!INCLUDE[TLA#tla_uiautomation#initcap](~/includes/tlasharptla-uiautomationsharpinitcap-md.md)].  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -323,10 +323,10 @@
         <summary>Called when the <see cref="P:System.Windows.Controls.DataGridCell.IsEditing" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method changes the visual state of the cell between the Editing and Display states.  
-  
+This method changes the visual state of the cell between the Editing and Display states.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,10 +351,10 @@
         <summary>Reports that a key was pressed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method passes keyboard input to the <xref:System.Windows.Controls.DataGridCell.Column%2A> that contains the cell. Each column handles the input in a way that is appropriate for the column type.  
-  
+This method passes keyboard input to the <xref:System.Windows.Controls.DataGridCell.Column%2A> that contains the cell. Each column handles the input in a way that is appropriate for the column type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -379,10 +379,10 @@
         <summary>Reports that a key was pressed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method passes keyboard input to the <xref:System.Windows.Controls.DataGridCell.Column%2A> that contains the cell. Each column handles the input in a way that is appropriate for the column type.  
-  
+This method passes keyboard input to the <xref:System.Windows.Controls.DataGridCell.Column%2A> that contains the cell. Each column handles the input in a way that is appropriate for the column type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -428,12 +428,12 @@
         <summary>Raises the <see cref="E:System.Windows.Controls.DataGridCell.Selected" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The <xref:System.Windows.Controls.DataGridCell.OnSelected%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
+The <xref:System.Windows.Controls.DataGridCell.OnSelected%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -461,10 +461,10 @@
         <summary>Reports text composition.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method passes text input to the <xref:System.Windows.Controls.DataGridCell.Column%2A> that contains the cell. Each column handles the input in a way that is appropriate for the column type.  
-  
+This method passes text input to the <xref:System.Windows.Controls.DataGridCell.Column%2A> that contains the cell. Each column handles the input in a way that is appropriate for the column type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -489,12 +489,12 @@
         <summary>Raises the <see cref="E:System.Windows.Controls.DataGridCell.Unselected" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
-  
- The <xref:System.Windows.Controls.DataGridCell.OnUnselected%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ 
+The <xref:System.Windows.Controls.DataGridCell.OnUnselected%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -518,10 +518,10 @@
         <summary>Occurs when the cell is selected.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event occurs when the <xref:System.Windows.Controls.DataGridCell.IsSelected%2A> property is set to `true`.  
-  
+This event occurs when the <xref:System.Windows.Controls.DataGridCell.IsSelected%2A> property is set to `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -559,10 +559,10 @@
         <summary>Occurs when the cell selection is cleared.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event occurs when the <xref:System.Windows.Controls.DataGridCell.IsSelected%2A> property is set to `false`.  
-  
+This event occurs when the <xref:System.Windows.Controls.DataGridCell.IsSelected%2A> property is set to `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

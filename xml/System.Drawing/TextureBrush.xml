@@ -14,16 +14,16 @@
     <summary>Each property of the <see cref="T:System.Drawing.TextureBrush" /> class is a <see cref="T:System.Drawing.Brush" /> object that uses an image to fill the interior of a shape. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to obtain a new bitmap using the <xref:System.Drawing.Image.FromFile%2A> method. It also demonstrates a <xref:System.Drawing.TextureBrush>.  
-  
- This example is designed to be used with Windows Forms. Create a form containing a button named Button2. Paste the code into the form and associate the Button2_Click method with the button's `Click` event.  
-  
- [!code-cpp[System.Drawing.ImageExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.ImageExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#2)]
- [!code-vb[System.Drawing.ImageExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#2)]  
-  
+The following code example demonstrates how to obtain a new bitmap using the <xref:System.Drawing.Image.FromFile%2A> method. It also demonstrates a <xref:System.Drawing.TextureBrush>.  
+ 
+This example is designed to be used with Windows Forms. Create a form containing a button named Button2. Paste the code into the form and associate the Button2_Click method with the button's `Click` event.  
+ 
+[!code-cpp[System.Drawing.ImageExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#2)]
+[!code-csharp[System.Drawing.ImageExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#2)]
+[!code-vb[System.Drawing.ImageExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,16 +45,16 @@
         <summary>Initializes a new <see cref="T:System.Drawing.TextureBrush" /> object that uses the specified image.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to obtain a new bitmap using the <xref:System.Drawing.Image.FromFile%2A> method. It also demonstrates a <xref:System.Drawing.TextureBrush>.  
-  
- This example is designed to be used with Windows Forms. Create a form containing a button named Button2. Paste the code into the form and associate the Button2_Click method with the button's `Click` event.  
-  
- [!code-cpp[System.Drawing.ImageExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.ImageExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#2)]
- [!code-vb[System.Drawing.ImageExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#2)]  
-  
+The following code example demonstrates how to obtain a new bitmap using the <xref:System.Drawing.Image.FromFile%2A> method. It also demonstrates a <xref:System.Drawing.TextureBrush>.  
+ 
+This example is designed to be used with Windows Forms. Create a form containing a button named Button2. Paste the code into the form and associate the Button2_Click method with the button's `Click` event.  
+ 
+[!code-cpp[System.Drawing.ImageExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#2)]
+[!code-csharp[System.Drawing.ImageExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#2)]
+[!code-vb[System.Drawing.ImageExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,14 +225,14 @@
         <returns>The <see cref="T:System.Drawing.TextureBrush" /> object this method creates, cast as an <see cref="T:System.Object" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code creates a <xref:System.Drawing.TextureBrush> object and an exact copy of that texture brush, and then uses the copy to fill a rectangle on the screen.  
-  
- [!code-cpp[System.Drawing.ClassicTextureBrushExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.ClassicTextureBrushExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#1)]
- [!code-vb[System.Drawing.ClassicTextureBrushExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#1)]  
-  
+The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code creates a <xref:System.Drawing.TextureBrush> object and an exact copy of that texture brush, and then uses the copy to fill a rectangle on the screen.  
+ 
+[!code-cpp[System.Drawing.ClassicTextureBrushExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#1)]
+[!code-csharp[System.Drawing.ClassicTextureBrushExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#1)]
+[!code-vb[System.Drawing.ClassicTextureBrushExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,27 +275,27 @@
         <summary>Multiplies the <see cref="T:System.Drawing.Drawing2D.Matrix" /> object that represents the local geometric transformation of this <see cref="T:System.Drawing.TextureBrush" /> object by the specified <see cref="T:System.Drawing.Drawing2D.Matrix" /> object by prepending the specified <see cref="T:System.Drawing.Drawing2D.Matrix" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The transformation matrix of a <xref:System.Drawing.TextureBrush> object specifies how the image that defines the texture is transformed. For example, if the transformation matrix specifies a rotation of 90 degrees clockwise, the texture image is rotated by 90 degrees clockwise.  
+The transformation matrix of a <xref:System.Drawing.TextureBrush> object specifies how the image that defines the texture is transformed. For example, if the transformation matrix specifies a rotation of 90 degrees clockwise, the texture image is rotated by 90 degrees clockwise.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
-  
+The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.TextureBrush> object.  
-  
+ 
 -   Creates a new matrix that specifies a translation of 50 units in the x-direction.  
-  
+ 
 -   Multiplies the matrix with the transformation matrix of the texture brush.  
-  
+ 
 -   Fills a rectangle, using the texture brush.  
-  
- [!code-cpp[System.Drawing.ClassicTextureBrushExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.ClassicTextureBrushExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#2)]
- [!code-vb[System.Drawing.ClassicTextureBrushExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#2)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicTextureBrushExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#2)]
+[!code-csharp[System.Drawing.ClassicTextureBrushExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#2)]
+[!code-vb[System.Drawing.ClassicTextureBrushExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -322,27 +322,27 @@
         <summary>Multiplies the <see cref="T:System.Drawing.Drawing2D.Matrix" /> object that represents the local geometric transformation of this <see cref="T:System.Drawing.TextureBrush" /> object by the specified <see cref="T:System.Drawing.Drawing2D.Matrix" /> object in the specified order.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The transformation matrix of a <xref:System.Drawing.TextureBrush> object specifies how the image that defines the texture is transformed. For example, if the transformation matrix specifies a rotation of 90 degrees clockwise, the texture image is rotated by 90 degrees clockwise.  
+The transformation matrix of a <xref:System.Drawing.TextureBrush> object specifies how the image that defines the texture is transformed. For example, if the transformation matrix specifies a rotation of 90 degrees clockwise, the texture image is rotated by 90 degrees clockwise.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
-  
+The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.TextureBrush> object.  
-  
+ 
 -   Creates a new matrix that specifies a translation of 50 units in the x-direction.  
-  
+ 
 -   Multiplies the matrix with the transformation matrix of the texture brush.  
-  
+ 
 -   Fills a rectangle, using the texture brush.  
-  
- [!code-cpp[System.Drawing.ClassicTextureBrushExamples#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#3)]
- [!code-csharp[System.Drawing.ClassicTextureBrushExamples#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#3)]
- [!code-vb[System.Drawing.ClassicTextureBrushExamples#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#3)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicTextureBrushExamples#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#3)]
+[!code-csharp[System.Drawing.ClassicTextureBrushExamples#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#3)]
+[!code-vb[System.Drawing.ClassicTextureBrushExamples#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -364,24 +364,24 @@
         <summary>Resets the <see langword="Transform" /> property of this <see cref="T:System.Drawing.TextureBrush" /> object to identity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
-  
+The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.TextureBrush> object.  
-  
+ 
 -   Rotates the texture image by 90 degrees.  
-  
+ 
 -   Fills a rectangle.  
-  
+ 
 -   Resets the transformation matrix to identity.  
-  
+ 
 -   Fills a second rectangle.  
-  
- [!code-cpp[System.Drawing.ClassicTextureBrushExamples#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#4)]
- [!code-csharp[System.Drawing.ClassicTextureBrushExamples#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#4)]
- [!code-vb[System.Drawing.ClassicTextureBrushExamples#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#4)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicTextureBrushExamples#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#4)]
+[!code-csharp[System.Drawing.ClassicTextureBrushExamples#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#4)]
+[!code-vb[System.Drawing.ClassicTextureBrushExamples#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -406,20 +406,20 @@
         <summary>Rotates the local geometric transformation of this <see cref="T:System.Drawing.TextureBrush" /> object by the specified amount. This method prepends the rotation to the transformation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
-  
+The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.TextureBrush> object.  
-  
+ 
 -   Rotates the texture image by 90 degrees.  
-  
+ 
 -   Fills a rectangle.  
-  
- [!code-cpp[System.Drawing.ClassicTextureBrushExamples#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#5)]
- [!code-csharp[System.Drawing.ClassicTextureBrushExamples#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#5)]
- [!code-vb[System.Drawing.ClassicTextureBrushExamples#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#5)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicTextureBrushExamples#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#5)]
+[!code-csharp[System.Drawing.ClassicTextureBrushExamples#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#5)]
+[!code-vb[System.Drawing.ClassicTextureBrushExamples#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -446,20 +446,20 @@
         <summary>Rotates the local geometric transformation of this <see cref="T:System.Drawing.TextureBrush" /> object by the specified amount in the specified order.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
-  
+The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.TextureBrush> object.  
-  
+ 
 -   Rotates the texture image by 90 degrees.  
-  
+ 
 -   Fills a rectangle.  
-  
- [!code-cpp[System.Drawing.ClassicTextureBrushExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#6)]
- [!code-csharp[System.Drawing.ClassicTextureBrushExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#6)]
- [!code-vb[System.Drawing.ClassicTextureBrushExamples#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#6)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicTextureBrushExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#6)]
+[!code-csharp[System.Drawing.ClassicTextureBrushExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#6)]
+[!code-vb[System.Drawing.ClassicTextureBrushExamples#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -486,20 +486,20 @@
         <summary>Scales the local geometric transformation of this <see cref="T:System.Drawing.TextureBrush" /> object by the specified amounts. This method prepends the scaling matrix to the transformation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
-  
+The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.TextureBrush> object.  
-  
+ 
 -   Scales the texture image by two times in the x-direction.  
-  
+ 
 -   Fills a rectangle on the screen, using the texture brush.  
-  
- [!code-cpp[System.Drawing.ClassicTextureBrushExamples#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#7)]
- [!code-csharp[System.Drawing.ClassicTextureBrushExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#7)]
- [!code-vb[System.Drawing.ClassicTextureBrushExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#7)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicTextureBrushExamples#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#7)]
+[!code-csharp[System.Drawing.ClassicTextureBrushExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#7)]
+[!code-vb[System.Drawing.ClassicTextureBrushExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -528,20 +528,20 @@
         <summary>Scales the local geometric transformation of this <see cref="T:System.Drawing.TextureBrush" /> object by the specified amounts in the specified order.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
-  
+The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.TextureBrush> object.  
-  
+ 
 -   Scales the texture image by two times in the x-direction.  
-  
+ 
 -   Fills a rectangle on the screen, using the texture brush.  
-  
- [!code-cpp[System.Drawing.ClassicTextureBrushExamples#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#8)]
- [!code-csharp[System.Drawing.ClassicTextureBrushExamples#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#8)]
- [!code-vb[System.Drawing.ClassicTextureBrushExamples#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#8)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicTextureBrushExamples#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#8)]
+[!code-csharp[System.Drawing.ClassicTextureBrushExamples#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#8)]
+[!code-vb[System.Drawing.ClassicTextureBrushExamples#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -563,10 +563,10 @@
         <value>A copy of the <see cref="T:System.Drawing.Drawing2D.Matrix" /> object that defines a geometric transformation that applies only to fills drawn by using this <see cref="T:System.Drawing.TextureBrush" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A geometric transformation can be used to translate, scale, rotate, or skew the image that defines the texture of this brush. Because the matrix returned and by the <xref:System.Drawing.TextureBrush.Transform%2A> property is a copy of the brush's geometric transform, you should dispose of the matrix when you no longer need it.  
-  
+A geometric transformation can be used to translate, scale, rotate, or skew the image that defines the texture of this brush. Because the matrix returned and by the <xref:System.Drawing.TextureBrush.Transform%2A> property is a copy of the brush's geometric transform, you should dispose of the matrix when you no longer need it.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -593,20 +593,20 @@
         <summary>Translates the local geometric transformation of this <see cref="T:System.Drawing.TextureBrush" /> object by the specified dimensions. This method prepends the translation to the transformation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
-  
+The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.TextureBrush> object.  
-  
+ 
 -   Translates the texture image 50 units in the x-direction.  
-  
+ 
 -   Fills a rectangle on the screen, using the texture brush.  
-  
- [!code-cpp[System.Drawing.ClassicTextureBrushExamples#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#9)]
- [!code-csharp[System.Drawing.ClassicTextureBrushExamples#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#9)]
- [!code-vb[System.Drawing.ClassicTextureBrushExamples#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#9)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicTextureBrushExamples#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#9)]
+[!code-csharp[System.Drawing.ClassicTextureBrushExamples#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#9)]
+[!code-vb[System.Drawing.ClassicTextureBrushExamples#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -635,20 +635,20 @@
         <summary>Translates the local geometric transformation of this <see cref="T:System.Drawing.TextureBrush" /> object by the specified dimensions in the specified order.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
-  
+The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Paint` event handler. The code performs the following actions:  
+ 
 -   Creates a <xref:System.Drawing.TextureBrush> object.  
-  
+ 
 -   Translates the texture image 50 units in the x-direction.  
-  
+ 
 -   Fills a rectangle on the screen, using the texture brush.  
-  
- [!code-cpp[System.Drawing.ClassicTextureBrushExamples#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#10)]
- [!code-csharp[System.Drawing.ClassicTextureBrushExamples#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#10)]
- [!code-vb[System.Drawing.ClassicTextureBrushExamples#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#10)]  
-  
+ 
+[!code-cpp[System.Drawing.ClassicTextureBrushExamples#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CPP/form1.cpp#10)]
+[!code-csharp[System.Drawing.ClassicTextureBrushExamples#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/CS/form1.cs#10)]
+[!code-vb[System.Drawing.ClassicTextureBrushExamples#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicTextureBrushExamples/VB/form1.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -670,16 +670,16 @@
         <value>A <see cref="T:System.Drawing.Drawing2D.WrapMode" /> enumeration that specifies how fills drawn by using this <see cref="T:System.Drawing.Drawing2D.LinearGradientBrush" /> object are tiled.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to obtain a new bitmap using the <xref:System.Drawing.Image.FromFile%2A> method. It also demonstrates the <xref:System.Drawing.TextureBrush.WrapMode%2A> property and the <xref:System.Drawing.Drawing2D.WrapMode> enumeration.  
-  
- This example is designed to be used with Windows Forms. Create a form containing a button named Button2. Paste the code into the form and associate the Button2_Click method with the button's `Click` event.  
-  
- [!code-cpp[System.Drawing.ImageExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.ImageExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#2)]
- [!code-vb[System.Drawing.ImageExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#2)]  
-  
+The following code example demonstrates how to obtain a new bitmap using the <xref:System.Drawing.Image.FromFile%2A> method. It also demonstrates the <xref:System.Drawing.TextureBrush.WrapMode%2A> property and the <xref:System.Drawing.Drawing2D.WrapMode> enumeration.  
+ 
+This example is designed to be used with Windows Forms. Create a form containing a button named Button2. Paste the code into the form and associate the Button2_Click method with the button's `Click` event.  
+ 
+[!code-cpp[System.Drawing.ImageExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#2)]
+[!code-csharp[System.Drawing.ImageExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#2)]
+[!code-vb[System.Drawing.ImageExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

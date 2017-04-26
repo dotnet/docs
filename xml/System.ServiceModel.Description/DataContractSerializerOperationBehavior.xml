@@ -22,20 +22,20 @@
     <summary>Represents the run-time behavior of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> enables the control of <xref:System.Runtime.Serialization.DataContractSerializer> options, such as the <xref:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph%2A> and <xref:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject%2A> properties. Some of these properties can be set only using the constructor of the class.  In that case, the <xref:System.Runtime.Serialization.DataContractSerializer> can be replaced using the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior.CreateSerializer%2A> method. [!INCLUDE[crabout](~/includes/crabout-md.md)] data contracts, see [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
+The <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> enables the control of <xref:System.Runtime.Serialization.DataContractSerializer> options, such as the <xref:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph%2A> and <xref:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject%2A> properties. Some of these properties can be set only using the constructor of the class.  In that case, the <xref:System.Runtime.Serialization.DataContractSerializer> can be replaced using the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior.CreateSerializer%2A> method. [!INCLUDE[crabout](~/includes/crabout-md.md)] data contracts, see [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
+ 
+[!INCLUDE[crabout](~/includes/crabout-md.md)] using the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> to replace the <xref:System.Runtime.Serialization.IDataContractSurrogate> returned by the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractSurrogate%2A> property, see [Data Contract Surrogates](~/docs/framework/wcf/extending/data-contract-surrogates.md).  
+ 
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> to replace the <xref:System.Runtime.Serialization.IDataContractSurrogate> returned by the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractSurrogate%2A> property, see [Data Contract Surrogates](~/docs/framework/wcf/extending/data-contract-surrogates.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example finds the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> in the collection of behaviors for an operation and resets the <xref:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph%2A> and <xref:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject%2A> properties.  
-  
- [!code-csharp[DataContractSerializerOperationBehavior#1](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializeroperationbehavior/cs/source.cs#1)]
- [!code-vb[DataContractSerializerOperationBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializeroperationbehavior/vb/source.vb#1)]  
-  
+The following example finds the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> in the collection of behaviors for an operation and resets the <xref:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph%2A> and <xref:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject%2A> properties.  
+ 
+[!code-csharp[DataContractSerializerOperationBehavior#1](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializeroperationbehavior/cs/source.cs#1)]
+[!code-vb[DataContractSerializerOperationBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializeroperationbehavior/vb/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -108,10 +108,10 @@
         <returns>An instance of a class that inherits from the <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Both the <xref:System.Runtime.Serialization.NetDataContractSerializer> and the <xref:System.Runtime.Serialization.DataContractSerializer> inherit from the <xref:System.Runtime.Serialization.XmlObjectSerializer> class.  
-  
+Both the <xref:System.Runtime.Serialization.NetDataContractSerializer> and the <xref:System.Runtime.Serialization.DataContractSerializer> inherit from the <xref:System.Runtime.Serialization.XmlObjectSerializer> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <returns>An instance of a class that inherits from the <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Runtime.Serialization.NetDataContractSerializer> inherit from the <xref:System.Runtime.Serialization.XmlObjectSerializer> class.  
-  
+Both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Runtime.Serialization.NetDataContractSerializer> inherit from the <xref:System.Runtime.Serialization.XmlObjectSerializer> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,10 +191,10 @@
  A class that maps an <see langword="xsi:type" /> to a known data contract type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the <xref:System.Runtime.Serialization.DataContractResolver> class document.  
-  
+For more information, see the <xref:System.Runtime.Serialization.DataContractResolver> class document.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -236,10 +236,10 @@
           <see langword="true" /> to ignore the data; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When set to `true`, the extra data is returned with any other serialized data. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface.  
-  
+When set to `true`, the extra data is returned with any other serialized data. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

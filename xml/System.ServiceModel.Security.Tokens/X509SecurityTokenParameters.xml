@@ -14,10 +14,10 @@
     <summary>Represents the parameters for an X.509 security token.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is a collection of token properties and methods, and is used in creating security binding elements and tokens.  
-  
+This class is a collection of token properties and methods, and is used in creating security binding elements and tokens.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,20 +54,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.X509SecurityTokenParameters" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- X509ReferenceStyle describes the kinds of security key identifier clauses that can be used to refer to the X509 security token. By default, references by `Thumbprint`, `IssuerSerial`, `SubjectKeyIdentifier`, and `RawDataKeyIdentifier` are accepted.  
-  
- The following new instance property values are set to their defaults:  
-  
+X509ReferenceStyle describes the kinds of security key identifier clauses that can be used to refer to the X509 security token. By default, references by `Thumbprint`, `IssuerSerial`, `SubjectKeyIdentifier`, and `RawDataKeyIdentifier` are accepted.  
+ 
+The following new instance property values are set to their defaults:  
+ 
 -   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode%2A> is set to <xref:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType>.  
-  
+ 
 -   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.ReferenceStyle%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle>.  
-  
+ 
 -   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.RequireDerivedKeys%2A> is set to `true`.  
-  
- The corresponding properties are set to the values in the input parameters.  
-  
+ 
+The corresponding properties are set to the values in the input parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.X509SecurityTokenParameters" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new instance property values are set to the corresponding values in `other`.  
-  
+The new instance property values are set to the corresponding values in `other`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -118,18 +118,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.X509SecurityTokenParameters" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following new instance property values are set to their defaults:  
-  
+The following new instance property values are set to their defaults:  
+ 
 -   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode%2A> is set to `inclusionMode`.  
-  
+ 
 -   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.ReferenceStyle%2A> is set to `x509ReferenceStyle`.  
-  
+ 
 -   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.RequireDerivedKeys%2A> is set to `true`.  
-  
- The corresponding properties are set to the values in the input parameters.  
-  
+ 
+The corresponding properties are set to the values in the input parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,14 +152,14 @@
         <returns>A new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecurityTokenParameters" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.Clone%2A> and <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CloneCore%2A> methods follow the Core design pattern.  
-  
- <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CloneCore%2A> is an `abstract` class which is overridden by <xref:System.ServiceModel.Security.Tokens.X509SecurityTokenParameters.CloneCore%2A>.  
-  
- The <xref:System.ServiceModel.Security.Tokens.X509SecurityTokenParameters.CloneCore%2A> method calls the <xref:System.ServiceModel.Security.Tokens.X509SecurityTokenParameters.%23ctor%2A> constructor.  
-  
+The <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.Clone%2A> and <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CloneCore%2A> methods follow the Core design pattern.  
+ 
+<xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CloneCore%2A> is an `abstract` class which is overridden by <xref:System.ServiceModel.Security.Tokens.X509SecurityTokenParameters.CloneCore%2A>.  
+ 
+The <xref:System.ServiceModel.Security.Tokens.X509SecurityTokenParameters.CloneCore%2A> method calls the <xref:System.ServiceModel.Security.Tokens.X509SecurityTokenParameters.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,10 +206,10 @@
           <see langword="True" /> if the token has an asymmetric key; otherwise, <see langword="false" />. Always returns <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Asymmetric keys are used in public-key cryptography, which uses two keys, a public key and a private key, which are related mathematically. The public key is distributed widely, but the private key is kept secret. In public-key cryptography, there is no need to exchange a common key.  
-  
+Asymmetric keys are used in public-key cryptography, which uses two keys, a public key and a private key, which are related mathematically. The public key is distributed widely, but the private key is kept secret. In public-key cryptography, there is no need to exchange a common key.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -234,16 +234,16 @@
         <summary>Initializes a security token requirement.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following properties of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> are initialized:  
-  
+The following properties of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> are initialized:  
+ 
 -   <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenType%2A> = <xref:System.IdentityModel.Tokens.SecurityTokenTypes.X509Certificate%2A>.  
-  
+ 
 -   <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.RequireCryptographicToken%2A> = `true`.  
-  
- <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyType%2A> = <xref:System.IdentityModel.Tokens.SecurityKeyType>.  
-  
+ 
+<xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyType%2A> = <xref:System.IdentityModel.Tokens.SecurityKeyType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -341,13 +341,13 @@
         <value>An <see cref="T:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to set this property.  
-  
- [!code-csharp[S_UEAssymetricSecurityBindingElement#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/cs/source.cs#4)]
- [!code-vb[S_UEAssymetricSecurityBindingElement#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/vb/source.vb#4)]  
-  
+The following code shows how to set this property.  
+ 
+[!code-csharp[S_UEAssymetricSecurityBindingElement#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/cs/source.cs#4)]
+[!code-vb[S_UEAssymetricSecurityBindingElement#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/vb/source.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

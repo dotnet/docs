@@ -19,14 +19,14 @@
     <summary>Provides a glyph for an <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to display when the activity associated with the designer cannot be modified.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- An activity designer displays <xref:System.Workflow.ComponentModel.Design.LockedActivityGlyph> when the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.IsLocked%2A> property is set to `true`.  
-  
+ 
+An activity designer displays <xref:System.Workflow.ComponentModel.Design.LockedActivityGlyph> when the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.IsLocked%2A> property is set to `true`.  
+ 
  ]]></format>
     </remarks>
   </Docs>

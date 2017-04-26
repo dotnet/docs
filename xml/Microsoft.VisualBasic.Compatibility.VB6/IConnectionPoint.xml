@@ -22,13 +22,13 @@
     <summary>Provides an implementation of the OLE DB <see langword="IConnectionPoint" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
-  
+For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -55,13 +55,13 @@
         <summary>Establishes an advisory connection between the connection point and the caller's sink object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
-  
+For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,13 +86,13 @@
         <summary>Creates an enumerator object for iteration through the connections that exist to this connection point.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
-  
+For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,13 +117,13 @@
         <summary>Returns the IID of the outgoing interface managed by this connection point.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
-  
+For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,13 +148,13 @@
         <summary>Retrieves the <see langword="IConnectionPointContainer" /> interface pointer to the connectable object that conceptually owns this connection point.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
-  
+For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,13 +179,13 @@
         <summary>Closes an advisory connection that was previously established through the <see cref="M:Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint.Advise(System.IntPtr,System.Int32@)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
-  
+For new development, see <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>.  
+ 
 > [!NOTE]
 >  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

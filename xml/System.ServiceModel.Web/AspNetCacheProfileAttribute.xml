@@ -23,19 +23,19 @@
     <summary>When applied to a service operation, indicates the ASP.NET output cache profile in the configuration file that should be used by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to cache responses from the operation in the ASP .NET Output Cache.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] the kinds of setting you can make with the Output Cache Profile, see [ASP.NET Cache Settings](http://go.microsoft.com/fwlink/?LinkId=179061).  
+[!INCLUDE[crabout](~/includes/crabout-md.md)] the kinds of setting you can make with the Output Cache Profile, see [ASP.NET Cache Settings](http://go.microsoft.com/fwlink/?LinkId=179061).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to apply the <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> attribute to a service operation. In this case, the cache profile named “CacheFor60Seconds” will be used for the `GetCustomer` operation  
-  
+The following example shows how to apply the <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> attribute to a service operation. In this case, the cache profile named “CacheFor60Seconds” will be used for the `GetCustomer` operation  
+ 
 <!-- TODO: review snippet reference  [!CODE [AspNetCacheIntegration#0](AspNetCacheIntegration#0)]  -->  
-  
- The following configuration snippet shows how the “CacheFor60Seconds” cache profile is specified.  
-  
+ 
+The following configuration snippet shows how the “CacheFor60Seconds” cache profile is specified.  
+ 
 ```xml  
 <configuration>  
     <system.web>  
@@ -51,7 +51,7 @@
 </configuration>  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

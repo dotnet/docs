@@ -12,15 +12,15 @@
     <summary>Defines the interface that bindings must implement to describe and advertise the capabilities that clients and services may require.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.IBindingDeliveryCapabilities> interface must be implemented by a binding if clients and services are to be able to stipulate, as part of their contract, that the features they require are provided by the binding.  
+The <xref:System.ServiceModel.Channels.IBindingDeliveryCapabilities> interface must be implemented by a binding if clients and services are to be able to stipulate, as part of their contract, that the features they require are provided by the binding.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following sample requires that `CalculatorService` must use a <xref:System.ServiceModel.WSHttpBinding> with ordered message delivery. Reliable sessions and queued delivery are not used by default with this binding, but can be enabled.  
-  
+The following sample requires that `CalculatorService` must use a <xref:System.ServiceModel.WSHttpBinding> with ordered message delivery. Reliable sessions and queued delivery are not used by default with this binding, but can be enabled.  
+ 
 ```csharp  
 <!-- Here is the configuration for a CalculatorService using a WSHttpBinding with ordered message delivery required. -->  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -92,7 +92,7 @@ class CalculatorService: ICalculatorService
   }  
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -116,15 +116,15 @@ class CalculatorService: ICalculatorService
           <see langword="true" /> if messages must be delivered in the order in which they were sent; <see langword="false" />, if the messages might not be delivered in this order.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this <xref:System.ServiceModel.Channels.IBindingDeliveryCapabilities.AssuresOrderedDelivery%2A> property is consumed by the <xref:System.ServiceModel.DeliveryRequirementsAttribute.RequireOrderedDelivery%2A> when the description of the service is loaded at runtime. This check is done to determine whether the ordered delivery requirements of the service are satisfied by the binding selected or created for the service.  
+The value of this <xref:System.ServiceModel.Channels.IBindingDeliveryCapabilities.AssuresOrderedDelivery%2A> property is consumed by the <xref:System.ServiceModel.DeliveryRequirementsAttribute.RequireOrderedDelivery%2A> when the description of the service is loaded at runtime. This check is done to determine whether the ordered delivery requirements of the service are satisfied by the binding selected or created for the service.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following sample requires that `CalculatorService` must use a <xref:System.ServiceModel.WSHttpBinding> with ordered message delivery. Reliable sessions and queued delivery are not used by default with this binding, but can be enabled.  
-  
+The following sample requires that `CalculatorService` must use a <xref:System.ServiceModel.WSHttpBinding> with ordered message delivery. Reliable sessions and queued delivery are not used by default with this binding, but can be enabled.  
+ 
 ```csharp  
 <!-- Here is the configuration for a CalculatorService using a WSHttpBinding with ordered message delivery required. -->  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -196,7 +196,7 @@ class CalculatorService: ICalculatorService
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -220,10 +220,10 @@ class CalculatorService: ICalculatorService
           <see langword="true" /> if queued messages delivery is supported; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this <xref:System.ServiceModel.Channels.IBindingDeliveryCapabilities.QueuedDelivery%2A> property is consumed when the description of the service is loaded at runtime. This check is done to determine whether the queued delivery requirements of the service are satisfied by the binding selected or created for the service.  
-  
+The value of this <xref:System.ServiceModel.Channels.IBindingDeliveryCapabilities.QueuedDelivery%2A> property is consumed when the description of the service is loaded at runtime. This check is done to determine whether the queued delivery requirements of the service are satisfied by the binding selected or created for the service.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,18 +18,18 @@
     <summary>Represents the set of glyphs that are used for rendering fixed text.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.Glyphs> element represents the output of a <xref:System.Windows.Media.GlyphRun> in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. The following markup syntax is used to describe the <xref:System.Windows.Documents.Glyphs> element.  
-  
- <!-- TODO: review snippet reference [!code-xml[GlyphsOvwSamp1#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSamp1/CS/default.xaml#1)]  -->
- <!-- TODO: review snippet reference [!code-xml[GlyphsOvwSamp1#1](~/samples/snippets/xaml/VS_Snippets_Wpf/GlyphsOvwSamp1/XAML/default.xaml#1)]  -->  
-  
- Each glyph defines metrics that specify how it aligns with other <xref:System.Windows.Documents.Glyphs>. The following graphic defines the various typographic qualities of two different glyph characters.  
-  
- ![Diagraph of glyph measurements](~/add/media/glyph-example.png "Diagraph of glyph measurements")  
+The <xref:System.Windows.Documents.Glyphs> element represents the output of a <xref:System.Windows.Media.GlyphRun> in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. The following markup syntax is used to describe the <xref:System.Windows.Documents.Glyphs> element.  
+ 
+<!-- TODO: review snippet reference [!code-xml[GlyphsOvwSamp1#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSamp1/CS/default.xaml#1)]  -->
+<!-- TODO: review snippet reference [!code-xml[GlyphsOvwSamp1#1](~/samples/snippets/xaml/VS_Snippets_Wpf/GlyphsOvwSamp1/XAML/default.xaml#1)]  -->  
+ 
+Each glyph defines metrics that specify how it aligns with other <xref:System.Windows.Documents.Glyphs>. The following graphic defines the various typographic qualities of two different glyph characters.  
+ 
+![Diagraph of glyph measurements](~/add/media/glyph-example.png "Diagraph of glyph measurements")  
 Various typographic qualities of two different glyph characters  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -88,17 +88,17 @@ Various typographic qualities of two different glyph characters
         <value>An <see cref="T:System.Int32" /> value that represents the bidirectional nesting level.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_BidiLevel"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Glyphs>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,18 +137,18 @@ Various typographic qualities of two different glyph characters
         <value>A value of type <see cref="T:System.String" /> that represents whether the code points have caret stops.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value is a string of hexadecimal digits that describe an array of <xref:System.Boolean> values that correspond to every code point in the value represented by the <xref:System.Windows.Documents.Glyphs.UnicodeString%2A> property.  
-  
+The return value is a string of hexadecimal digits that describe an array of <xref:System.Boolean> values that correspond to every code point in the value represented by the <xref:System.Windows.Documents.Glyphs.UnicodeString%2A> property.  
+ 
 <a name="dependencyPropertyInfo_CaretStops"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Glyphs.CaretStopsProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,18 +187,18 @@ Various typographic qualities of two different glyph characters
         <value>A <see cref="T:System.String" /> value that represents the name of the device font.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a <xref:System.Windows.Documents.Glyphs> is rendered on a device that has built-in support for the named device font, the <xref:System.Windows.Documents.Glyphs> should be rendered using a device specific mechanism for selecting that font, and by sending Unicode code points rather than glyph indices. When rendering onto a device that does not include built-in support for the named device font, <xref:System.Windows.Documents.Glyphs.DeviceFontName%2A> should be ignored.  
-  
+When a <xref:System.Windows.Documents.Glyphs> is rendered on a device that has built-in support for the named device font, the <xref:System.Windows.Documents.Glyphs> should be rendered using a device specific mechanism for selecting that font, and by sending Unicode code points rather than glyph indices. When rendering onto a device that does not include built-in support for the named device font, <xref:System.Windows.Documents.Glyphs.DeviceFontName%2A> should be ignored.  
+ 
 <a name="dependencyPropertyInfo_DeviceFontName"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Glyphs>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,17 +237,17 @@ Various typographic qualities of two different glyph characters
         <value>A <see cref="T:System.Windows.Media.Brush" /> that is used for the fill of the <see cref="T:System.Windows.Documents.Glyphs" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Fill"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Glyphs>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,17 +291,17 @@ Various typographic qualities of two different glyph characters
         <value>A <see cref="T:System.Double" /> value that represents the em size used for rendering.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_FontRenderingEmSize"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Glyphs>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -340,17 +340,17 @@ Various typographic qualities of two different glyph characters
         <value>A <see cref="T:System.Uri" /> that represents the location of the font used for rendering the <see cref="T:System.Windows.Documents.Glyphs" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_FontUri"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Glyphs>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -389,32 +389,32 @@ Various typographic qualities of two different glyph characters
         <value>A collection of glyph specifications that represents the <see cref="T:System.Windows.Documents.Glyphs" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A sequence of glyphs forms a single cluster. The specification of the first glyph in the cluster is preceded by a specification of how many glyphs and how many code points combine to form the cluster. The <xref:System.Windows.Documents.Glyphs.Indices%2A> property collects in one string the following properties.  
-  
+A sequence of glyphs forms a single cluster. The specification of the first glyph in the cluster is preceded by a specification of how many glyphs and how many code points combine to form the cluster. The <xref:System.Windows.Documents.Glyphs.Indices%2A> property collects in one string the following properties.  
+ 
 -   Glyph indices  
-  
+ 
 -   Glyph advance widths  
-  
+ 
 -   Combining glyph attachment vectors  
-  
+ 
 -   Cluster mapping from code points to glyphs  
-  
+ 
 -   Glyph flags  
-  
- Each glyph specification has the following form.  
-  
- `[GlyphIndex][,[Advance][,[uOffset][,[vOffset][,[Flags]]]]]`  
-  
+ 
+Each glyph specification has the following form.  
+ 
+`[GlyphIndex][,[Advance][,[uOffset][,[vOffset][,[Flags]]]]]`  
+ 
 <a name="dependencyPropertyInfo_Indices"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Glyphs>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -454,17 +454,17 @@ Various typographic qualities of two different glyph characters
           <see langword="true" /> if the glyphs that make up the <see cref="T:System.Windows.Documents.Glyphs" /> object are rotated 90° counter-clockwise; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsSideways"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Glyphs>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -551,17 +551,17 @@ Various typographic qualities of two different glyph characters
         <value>The x origin for the <see cref="T:System.Windows.Documents.Glyphs" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_OriginX"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Glyphs>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -605,17 +605,17 @@ Various typographic qualities of two different glyph characters
         <value>The y origin for the <see cref="T:System.Windows.Documents.Glyphs" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_OriginY"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Glyphs>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -654,17 +654,17 @@ Various typographic qualities of two different glyph characters
         <value>The <see cref="T:System.Windows.Media.StyleSimulations" /> for the <see cref="T:System.Windows.Documents.Glyphs" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_StyleSimulations"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Glyphs>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -703,10 +703,10 @@ Various typographic qualities of two different glyph characters
         <value>The base [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the current context.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.Glyphs> instance is cast to an <xref:System.Windows.Markup.IUriContext> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.Glyphs> instance is cast to an <xref:System.Windows.Markup.IUriContext> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -747,17 +747,17 @@ Various typographic qualities of two different glyph characters
         <value>A Unicode string for the <see cref="T:System.Windows.Documents.Glyphs" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_UnicodeString"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Documents.Glyphs>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

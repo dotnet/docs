@@ -14,14 +14,14 @@
     <summary>Represents a print processor on a print server.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!CAUTION]
 >  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
-  
- If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
-  
+ 
+If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
+ 
  ]]></format>
     </remarks>
   </Docs>

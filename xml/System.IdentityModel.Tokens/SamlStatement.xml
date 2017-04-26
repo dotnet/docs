@@ -14,20 +14,20 @@
     <summary>Represents a claim for a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify when the subject was authenticated. The claims in a SAML assertion are represented by SAML statements, which are represented by the <xref:System.IdentityModel.Tokens.SamlStatement> class.  
-  
- The SAML specification defines the following statement types:  
-  
+<xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify when the subject was authenticated. The claims in a SAML assertion are represented by SAML statements, which are represented by the <xref:System.IdentityModel.Tokens.SamlStatement> class.  
+ 
+The SAML specification defines the following statement types:  
+ 
 -   <xref:System.IdentityModel.Tokens.SamlAttributeStatement>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement>  
-  
+ 
 -   <xref:System.IdentityModel.Tokens.SamlSubjectStatement>  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <returns>An <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that represents an authorization policy for the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IdentityModel.Tokens.SamlStatement.CreatePolicy%2A> method to get an authorization policy for a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token.  
-  
+Use the <xref:System.IdentityModel.Tokens.SamlStatement.CreatePolicy%2A> method to get an authorization policy for a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,10 +96,10 @@
           <see langword="true" /> if the properties of this instance are read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that derive from the <xref:System.IdentityModel.Tokens.SamlStatement> class, should set the <xref:System.IdentityModel.Tokens.SamlStatement.IsReadOnly%2A> property to `true` when the <xref:System.IdentityModel.Tokens.SamlStatement.MakeReadOnly%2A> method is called.  
-  
+Classes that derive from the <xref:System.IdentityModel.Tokens.SamlStatement> class, should set the <xref:System.IdentityModel.Tokens.SamlStatement.IsReadOnly%2A> property to `true` when the <xref:System.IdentityModel.Tokens.SamlStatement.MakeReadOnly%2A> method is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +121,10 @@
         <summary>Causes this instance to be read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.IdentityModel.Tokens.SamlStatement.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlStatement.IsReadOnly%2A> property is set to `true` and properties of this instance can no longer be set.  
-  
+When the <xref:System.IdentityModel.Tokens.SamlStatement.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlStatement.IsReadOnly%2A> property is set to `true` and properties of this instance can no longer be set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <summary>When overridden in a derived class, reads the SAML statement from the specified XML reader.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IdentityModel.Tokens.SamlStatement.ReadXml%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Tokens.SamlSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method to read in a SAML statement, validate the XML, and set the appropriate properties that correspond to the attributes and elements.  
-  
+Use the <xref:System.IdentityModel.Tokens.SamlStatement.ReadXml%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Tokens.SamlSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method to read in a SAML statement, validate the XML, and set the appropriate properties that correspond to the attributes and elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>

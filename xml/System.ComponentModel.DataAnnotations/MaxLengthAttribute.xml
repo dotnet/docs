@@ -44,10 +44,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.MaxLengthAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The maximum allowable length supported by the database will be used.  
-  
+The maximum allowable length supported by the database will be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,10 +129,10 @@
           <see langword="true" /> if the value is null, or if the value is less than or equal to the specified maximum length; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns `true` if the `value` parameter is null.  
-  
+This method returns `true` if the `value` parameter is null.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Length is zero or less than negative one.</exception>

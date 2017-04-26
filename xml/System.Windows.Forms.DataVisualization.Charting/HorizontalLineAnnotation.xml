@@ -61,12 +61,12 @@
         <value>The annotation type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This abstract property is used to get the name of each annotation type, for example, <xref:System.Windows.Forms.DataVisualization.Charting.LineAnnotation>, <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation>, <xref:System.Windows.Forms.DataVisualization.Charting.EllipseAnnotation>, and so forth.  
-  
- This property is for internal use.  
-  
+This abstract property is used to get the name of each annotation type, for example, <xref:System.Windows.Forms.DataVisualization.Charting.LineAnnotation>, <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation>, <xref:System.Windows.Forms.DataVisualization.Charting.EllipseAnnotation>, and so forth.  
+ 
+This property is for internal use.  
+ 
  ]]></format>
         </remarks>
       </Docs>

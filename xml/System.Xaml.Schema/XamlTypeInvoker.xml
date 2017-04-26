@@ -14,14 +14,14 @@
     <summary>Provides an extension point that can construct instances of a XAML type through techniques other than reflection and constructors.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The purpose of <xref:System.Xaml.Schema.XamlTypeInvoker> is to enable an extensible XAML type system, schema, and a working run time that does not rely as fully on CLR features such as CLR attributes, reflection information through <xref:System.Type> and <xref:System.Reflection.MemberInfo>, and so on. Subclasses of <xref:System.Xaml.Schema.XamlTypeInvoker> are used as input parameters for the alternate constructors of XAML schema classes such as <xref:System.Xaml.XamlType>. You subclass <xref:System.Xaml.XamlType> and pass the <xref:System.Xaml.Schema.XamlTypeInvoker> through to the base constructor. Along with defining a <xref:System.Xaml.Schema.XamlTypeInvoker> for the constructor, you must also provide overrides for at least some of the `Lookup` methods of <xref:System.Xaml.XamlType>.  
-  
- <xref:System.Xaml.Schema.XamlTypeInvoker> has a default implementation. The default implementation follows a similar model to the default implementation of XAML schema types <xref:System.Xaml.XamlType> and <xref:System.Xaml.XamlMember>: the CLR type system is used for instantiation, values and lookups, including using CLR attributes, <xref:System.Type> and <xref:System.Reflection.MemberInfo>, and so on.  
-  
- <xref:System.Xaml.Schema.XamlTypeInvoker> provides methods for basic instantiation (<xref:System.Xaml.Schema.XamlTypeInvoker.CreateInstance%2A>) and methods that are relevant for types where the <xref:System.Xaml.XamlType> represents a collection, dictionary or array (<xref:System.Xaml.Schema.XamlTypeInvoker.AddToCollection%2A>; <xref:System.Xaml.Schema.XamlTypeInvoker.AddToDictionary%2A>; <xref:System.Xaml.Schema.XamlTypeInvoker.GetAddMethod%2A>; <xref:System.Xaml.Schema.XamlTypeInvoker.GetEnumeratorMethod%2A>; <xref:System.Xaml.Schema.XamlTypeInvoker.GetItems%2A>).  
-  
+The purpose of <xref:System.Xaml.Schema.XamlTypeInvoker> is to enable an extensible XAML type system, schema, and a working run time that does not rely as fully on CLR features such as CLR attributes, reflection information through <xref:System.Type> and <xref:System.Reflection.MemberInfo>, and so on. Subclasses of <xref:System.Xaml.Schema.XamlTypeInvoker> are used as input parameters for the alternate constructors of XAML schema classes such as <xref:System.Xaml.XamlType>. You subclass <xref:System.Xaml.XamlType> and pass the <xref:System.Xaml.Schema.XamlTypeInvoker> through to the base constructor. Along with defining a <xref:System.Xaml.Schema.XamlTypeInvoker> for the constructor, you must also provide overrides for at least some of the `Lookup` methods of <xref:System.Xaml.XamlType>.  
+ 
+<xref:System.Xaml.Schema.XamlTypeInvoker> has a default implementation. The default implementation follows a similar model to the default implementation of XAML schema types <xref:System.Xaml.XamlType> and <xref:System.Xaml.XamlMember>: the CLR type system is used for instantiation, values and lookups, including using CLR attributes, <xref:System.Type> and <xref:System.Reflection.MemberInfo>, and so on.  
+ 
+<xref:System.Xaml.Schema.XamlTypeInvoker> provides methods for basic instantiation (<xref:System.Xaml.Schema.XamlTypeInvoker.CreateInstance%2A>) and methods that are relevant for types where the <xref:System.Xaml.XamlType> represents a collection, dictionary or array (<xref:System.Xaml.Schema.XamlTypeInvoker.AddToCollection%2A>; <xref:System.Xaml.Schema.XamlTypeInvoker.AddToDictionary%2A>; <xref:System.Xaml.Schema.XamlTypeInvoker.GetAddMethod%2A>; <xref:System.Xaml.Schema.XamlTypeInvoker.GetEnumeratorMethod%2A>; <xref:System.Xaml.Schema.XamlTypeInvoker.GetItems%2A>).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -40,12 +40,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlTypeInvoker" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation is empty.  
-  
- This constructor is invoked internally to provide a value for <xref:System.Xaml.Schema.XamlTypeInvoker.UnknownInvoker%2A>. For a <xref:System.Xaml.Schema.XamlTypeInvoker> subclass, it is expected that you either use the <xref:System.Xaml.Schema.XamlTypeInvoker.%23ctor%28System.Xaml.XamlType%29> signature for construction or provide an override that calls <xref:System.Xaml.Schema.XamlTypeInvoker.%23ctor%28System.Xaml.XamlType%29> as base. Providing the <xref:System.Xaml.XamlType> implements a default pattern where <xref:System.Xaml.Schema.XamlTypeInvoker> is immutable.  
-  
+The default implementation is empty.  
+ 
+This constructor is invoked internally to provide a value for <xref:System.Xaml.Schema.XamlTypeInvoker.UnknownInvoker%2A>. For a <xref:System.Xaml.Schema.XamlTypeInvoker> subclass, it is expected that you either use the <xref:System.Xaml.Schema.XamlTypeInvoker.%23ctor%28System.Xaml.XamlType%29> signature for construction or provide an override that calls <xref:System.Xaml.Schema.XamlTypeInvoker.%23ctor%28System.Xaml.XamlType%29> as base. Providing the <xref:System.Xaml.XamlType> implements a default pattern where <xref:System.Xaml.Schema.XamlTypeInvoker> is immutable.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -67,10 +67,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlTypeInvoker" /> class, based on a provided <see cref="T:System.Xaml.XamlType" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called internally based on the <xref:System.Xaml.XamlType> where the <xref:System.Xaml.Schema.XamlTypeInvoker> is used for construction. The `type` provided here is relevant to all other method calls for <xref:System.Xaml.Schema.XamlTypeInvoker>.  
-  
+This constructor is called internally based on the <xref:System.Xaml.XamlType> where the <xref:System.Xaml.Schema.XamlTypeInvoker> is used for construction. The `type` provided here is relevant to all other method calls for <xref:System.Xaml.Schema.XamlTypeInvoker>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -99,10 +99,10 @@
         <summary>Adds the provided item to an instance of the type that is relevant to this <see cref="T:System.Xaml.Schema.XamlTypeInvoker" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should only call this method on a <xref:System.Xaml.XamlType> that represents a collection.  
-  
+You should only call this method on a <xref:System.Xaml.XamlType> that represents a collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Invoked this method on a <see cref="T:System.Xaml.Schema.XamlTypeInvoker" /> that is based on an unknown <see cref="T:System.Xaml.XamlType" />.  
@@ -149,10 +149,10 @@
         <summary>Adds the provided key and item value to an instance of the type that is relevant to this <see cref="T:System.Xaml.Schema.XamlTypeInvoker" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should only call this method on a <xref:System.Xaml.XamlType> that represents a dictionary.  
-  
+You should only call this method on a <xref:System.Xaml.XamlType> that represents a dictionary.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Invoked this method on a <see cref="T:System.Xaml.Schema.XamlTypeInvoker" /> that is based on an unknown <see cref="T:System.Xaml.XamlType" />.  
@@ -223,13 +223,13 @@
         <returns>CLR <see cref="T:System.Reflection.MethodInfo" /> information for the <see langword="Add" /> method, or null.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method should return `null` for cases where the <xref:System.Xaml.XamlType> for this <xref:System.Xaml.Schema.XamlTypeInvoker> is not a writeable collection or dictionary. Specifically, should return `null` for cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A?displayProperty=fullName> returns `None`.  
-  
+This method should return `null` for cases where the <xref:System.Xaml.XamlType> for this <xref:System.Xaml.Schema.XamlTypeInvoker> is not a writeable collection or dictionary. Specifically, should return `null` for cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A?displayProperty=fullName> returns `None`.  
+ 
 > [!IMPORTANT]
 >  If you are not accessing a fully trusted XAML type system, this method has the potential to report false <xref:System.Reflection.MethodInfo> information to callers.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -260,13 +260,13 @@
           <see cref="T:System.Reflection.MethodInfo" /> for an enumerator method, or <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Should return `null` for cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A?displayProperty=fullName> returns `None`.  
-  
+Should return `null` for cases where <xref:System.Xaml.XamlType.LookupCollectionKind%2A?displayProperty=fullName> returns `None`.  
+ 
 > [!IMPORTANT]
 >  If you are not accessing a fully trusted XAML type system, this method has the potential to report false <xref:System.Reflection.MethodInfo> information to callers.  
-  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -325,14 +325,14 @@
         <value>A handler implementation that handles this case.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The event handler is based on <xref:System.EventHandler%601> constrained with <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> event data.  
-  
- The value returned invokes the <xref:System.Xaml.XamlType.LookupSetMarkupExtensionHandler%2A> behavior of the <xref:System.Xaml.XamlType> that the <xref:System.Xaml.Schema.XamlTypeInvoker> is based on.  
-  
- The return value is `null` for a <xref:System.Xaml.Schema.XamlTypeInvoker> that is based on an unknown <xref:System.Xaml.XamlType>.  
-  
+The event handler is based on <xref:System.EventHandler%601> constrained with <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> event data.  
+ 
+The value returned invokes the <xref:System.Xaml.XamlType.LookupSetMarkupExtensionHandler%2A> behavior of the <xref:System.Xaml.XamlType> that the <xref:System.Xaml.Schema.XamlTypeInvoker> is based on.  
+ 
+The return value is `null` for a <xref:System.Xaml.Schema.XamlTypeInvoker> that is based on an unknown <xref:System.Xaml.XamlType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -354,14 +354,14 @@
         <value>A handler implementation that handles this case.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The event handler is based on <xref:System.EventHandler%601> constrained with <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> event data.  
-  
- The value returned invokes the <xref:System.Xaml.XamlType.LookupSetTypeConverterHandler%2A> behavior of the <xref:System.Xaml.XamlType> that the <xref:System.Xaml.Schema.XamlTypeInvoker> is based on.  
-  
- The return value is `null` for a <xref:System.Xaml.Schema.XamlTypeInvoker> that is based on an unknown <xref:System.Xaml.XamlType>.  
-  
+The event handler is based on <xref:System.EventHandler%601> constrained with <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> event data.  
+ 
+The value returned invokes the <xref:System.Xaml.XamlType.LookupSetTypeConverterHandler%2A> behavior of the <xref:System.Xaml.XamlType> that the <xref:System.Xaml.Schema.XamlTypeInvoker> is based on.  
+ 
+The return value is `null` for a <xref:System.Xaml.Schema.XamlTypeInvoker> that is based on an unknown <xref:System.Xaml.XamlType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -383,10 +383,10 @@
         <value>A static value that represents an unknown, not fully implemented <see cref="T:System.Xaml.Schema.XamlTypeInvoker" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Supplying this value for a <xref:System.Xaml.Schema.XamlTypeInvoker> parameter of System.Xaml defined API will typically cause the called code to throw exceptions.  
-  
+Supplying this value for a <xref:System.Xaml.Schema.XamlTypeInvoker> parameter of System.Xaml defined API will typically cause the called code to throw exceptions.  
+ 
  ]]></format>
         </remarks>
       </Docs>

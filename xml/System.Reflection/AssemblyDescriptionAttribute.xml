@@ -34,20 +34,20 @@
     <summary>Provides a text description for an assembly.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you create a project in [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)], this attribute is automatically applied with an empty string value. You can set its value in [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] by selecting the **Properties** for the project from the **File** menu, and then by clicking **Assembly Information**. The attribute is saved in the AssemblyInfo file in your project, and it must be removed before you can specify it in code; otherwise, you will get an error that the attribute cannot be applied multiple times.  
+When you create a project in [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)], this attribute is automatically applied with an empty string value. You can set its value in [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] by selecting the **Properties** for the project from the **File** menu, and then by clicking **Assembly Information**. The attribute is saved in the AssemblyInfo file in your project, and it must be removed before you can specify it in code; otherwise, you will get an error that the attribute cannot be applied multiple times.  
+ 
+When you right-click the assembly file in File Explorer, this attribute appears as the **Comments** value on the **Version** tab of the file properties dialog box.  
+ 
   
- When you right-click the assembly file in File Explorer, this attribute appears as the **Comments** value on the **Version** tab of the file properties dialog box.  
-  
-   
-  
+ 
 ## Examples  
- The following code example sets the <xref:System.Reflection.AssemblyDescriptionAttribute> for a simple assembly and indicates whether or not it was defined.  
-  
- [!code-csharp[System.Reflection.AssemblyDescriptionAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.assemblydescriptionattribute/CS/DescrAttr.cs#1)]
- [!code-vb[System.Reflection.AssemblyDescriptionAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.assemblydescriptionattribute/VB/DescrAttr.vb#1)]  
-  
+The following code example sets the <xref:System.Reflection.AssemblyDescriptionAttribute> for a simple assembly and indicates whether or not it was defined.  
+ 
+[!code-csharp[System.Reflection.AssemblyDescriptionAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.assemblydescriptionattribute/CS/DescrAttr.cs#1)]
+[!code-vb[System.Reflection.AssemblyDescriptionAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.assemblydescriptionattribute/VB/DescrAttr.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

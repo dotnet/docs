@@ -71,10 +71,10 @@
         <summary>When overridden in a derived class, handles situations in which the binding reference is to a member that cannot be found.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can do nothing and allow late binding to resolve the reference, or it can throw an exception.  
-  
+This method can do nothing and allow late binding to resolve the reference, or it can throw an exception.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -96,10 +96,10 @@
         <summary>Stores a value that indicates whether the binding reference is to a default indexed property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A binding reference that contains square brackets and that does not reference a default indexed property references an array element.  
-  
+A binding reference that contains square brackets and that does not reference a default indexed property references an array element.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

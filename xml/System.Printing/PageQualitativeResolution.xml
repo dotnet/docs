@@ -13,12 +13,12 @@
     <summary>Specifies the page resolution as a qualitative, non-numerical, value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this type as an alternative, or supplement, to stating resolution in dots per inch (dpi).  
-  
- This enumeration is used to provide values for the <xref:System.Printing.PageResolution.QualitativeResolution%2A> property. The <xref:System.Printing.PageResolution> class, in turn, is used to provide values for the <xref:System.Printing.PrintCapabilities.PageResolutionCapability%2A> property where it specifies the various resolutions that a printer supports, and the <xref:System.Printing.PrintTicket.PageResolution%2A> property, where it instructs a printer what resolution to use.  
-  
+You can use this type as an alternative, or supplement, to stating resolution in dots per inch (dpi).  
+ 
+This enumeration is used to provide values for the <xref:System.Printing.PageResolution.QualitativeResolution%2A> property. The <xref:System.Printing.PageResolution> class, in turn, is used to provide values for the <xref:System.Printing.PrintCapabilities.PageResolutionCapability%2A> property where it specifies the various resolutions that a printer supports, and the <xref:System.Printing.PrintTicket.PageResolution%2A> property, where it instructs a printer what resolution to use.  
+ 
  ]]></format>
     </remarks>
   </Docs>

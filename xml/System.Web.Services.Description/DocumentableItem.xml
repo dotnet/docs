@@ -15,36 +15,36 @@
     <summary>Represents the abstract base class from which several classes in the <see cref="N:System.Web.Services.Description" /> namespace are derived.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Several classes are derived from this class:  
-  
+Several classes are derived from this class:  
+ 
 -   <xref:System.Web.Services.Description.Binding>  
-  
+ 
 -   <xref:System.Web.Services.Description.Import>  
-  
+ 
 -   <xref:System.Web.Services.Description.Message>  
-  
+ 
 -   <xref:System.Web.Services.Description.MessagePart>  
-  
+ 
 -   <xref:System.Web.Services.Description.Operation>  
-  
+ 
 -   <xref:System.Web.Services.Description.OperationBinding>  
-  
+ 
 -   <xref:System.Web.Services.Description.OperationMessage>  
-  
+ 
 -   <xref:System.Web.Services.Description.Port>  
-  
+ 
 -   <xref:System.Web.Services.Description.PortType>  
-  
+ 
 -   <xref:System.Web.Services.Description.Service>  
-  
+ 
 -   <xref:System.Web.Services.Description.Types>  
-  
- This base class contains only one property, the <xref:System.Web.Services.Description.DocumentableItem.Documentation%2A> property, which represents the text documentation for a specific WSDL (Web Services Description Language) element.  
-  
- For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
-  
+ 
+This base class contains only one property, the <xref:System.Web.Services.Description.DocumentableItem.Documentation%2A> property, which represents the text documentation for a specific WSDL (Web Services Description Language) element.  
+ 
+For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -88,19 +88,19 @@
         <value>A string that represents the documentation for the <see cref="T:System.Web.Services.Description.DocumentableItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a derived class, this property represents the text comments added to an element of the XML Web service. The default implementation is an empty string ("").  
+In a derived class, this property represents the text comments added to an element of the XML Web service. The default implementation is an empty string ("").  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates a typical usage of the <xref:System.Web.Services.Description.DocumentableItem.Documentation%2A> property.  
-  
- [!code-cpp[DocumentableItemsample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DocumentableItemsample/CPP/documentableitemsample.cpp#1)]
- [!code-csharp[DocumentableItemsample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DocumentableItemsample/CS/documentableitemsample.cs#1)]
- [!code-vb[DocumentableItemsample#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DocumentableItemsample/VB/documentableitemsample.vb#1)]  
-  
+The following code example demonstrates a typical usage of the <xref:System.Web.Services.Description.DocumentableItem.Documentation%2A> property.  
+ 
+[!code-cpp[DocumentableItemsample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DocumentableItemsample/CPP/documentableitemsample.cpp#1)]
+[!code-csharp[DocumentableItemsample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DocumentableItemsample/CS/documentableitemsample.cs#1)]
+[!code-vb[DocumentableItemsample#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DocumentableItemsample/VB/documentableitemsample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,10 +131,10 @@
         <value>A <see cref="T:System.Xml.XmlElement" /> that represents the documentation for the <see cref="T:System.Web.Services.Description.DocumentableItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property contains XML elements that are added to a description of an XML Web service to document it.  
-  
+This property contains XML elements that are added to a description of an XML Web service to document it.  
+ 
  ]]></format>
         </remarks>
       </Docs>

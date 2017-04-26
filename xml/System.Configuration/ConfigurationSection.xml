@@ -14,41 +14,41 @@
     <summary>Represents a section within a configuration file.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.Configuration.ConfigurationSection> class to implement a custom section type. Extend the <xref:System.Configuration.ConfigurationSection> class to provide custom handling and programmatic access to custom configuration sections. For information about how use custom configuration sections, see [How to: Create Custom Configuration Sections Using ConfigurationSection](http://msdn.microsoft.com/library/febaca98-c727-4017-95ed-82e2fb6cf234).  
-  
- A section registers its handling type with an entry in the `configSections` element. For an example, see the configuration file excerpt shown in the Example section.  
-  
+You use the <xref:System.Configuration.ConfigurationSection> class to implement a custom section type. Extend the <xref:System.Configuration.ConfigurationSection> class to provide custom handling and programmatic access to custom configuration sections. For information about how use custom configuration sections, see [How to: Create Custom Configuration Sections Using ConfigurationSection](http://msdn.microsoft.com/library/febaca98-c727-4017-95ed-82e2fb6cf234).  
+ 
+A section registers its handling type with an entry in the `configSections` element. For an example, see the configuration file excerpt shown in the Example section.  
+ 
 > [!NOTE]
 >  In previous versions of the .NET Framework, configuration section handlers were used to make changes to configuration settings programmatically. Now, all the default configuration sections are represented by classes that extend the <xref:System.Configuration.ConfigurationSection> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to implement a custom section programmatically.  
-  
- For a complete example that shows how to implement and use a custom section implemented using the attributed model, see <xref:System.Configuration.ConfigurationElement>.  
-  
- [!code-csharp[System.Configuration.ConfigurationSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/CS/CustomConfigurationSection.cs#1)]
- [!code-vb[System.Configuration.ConfigurationSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/VB/CustomConfigurationSection.vb#1)]  
-  
- The following example is an excerpt of the configuration file as it applies to the previous example.  
-  
- `<?xml version="1.0" encoding="utf-8"?>`  
-  
- `<configuration>`  
-  
- `<configSections>`  
-  
- `<section name="CustomSection" type="Samples.AspNet. CustomSection, CustomConfigurationSection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" allowDefinition="Everywhere" allowExeDefinition="MachineToApplication" restartOnExternalChanges="true" />`  
-  
- `</configSections>`  
-  
- `<CustomSection fileName="default.txt" maxUsers="1000" maxIdleTime="00:15:00" />`  
-  
- `</configuration>`  
-  
+The following example shows how to implement a custom section programmatically.  
+ 
+For a complete example that shows how to implement and use a custom section implemented using the attributed model, see <xref:System.Configuration.ConfigurationElement>.  
+ 
+[!code-csharp[System.Configuration.ConfigurationSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/CS/CustomConfigurationSection.cs#1)]
+[!code-vb[System.Configuration.ConfigurationSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/VB/CustomConfigurationSection.vb#1)]  
+ 
+The following example is an excerpt of the configuration file as it applies to the previous example.  
+ 
+`<?xml version="1.0" encoding="utf-8"?>`  
+ 
+`<configuration>`  
+ 
+`<configSections>`  
+ 
+`<section name="CustomSection" type="Samples.AspNet. CustomSection, CustomConfigurationSection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" allowDefinition="Everywhere" allowExeDefinition="MachineToApplication" restartOnExternalChanges="true" />`  
+ 
+`</configSections>`  
+ 
+`<CustomSection fileName="default.txt" maxUsers="1000" maxIdleTime="00:15:00" />`  
+ 
+`</configuration>`  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -99,18 +99,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationSection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To use the <xref:System.Configuration.ConfigurationSection.%23ctor%2A> constructor, you need to define a custom section type first. For an example see the <xref:System.Configuration.ConfigurationSection> class overview.  
+To use the <xref:System.Configuration.ConfigurationSection.%23ctor%2A> constructor, you need to define a custom section type first. For an example see the <xref:System.Configuration.ConfigurationSection> class overview.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationSection.%23ctor%2A> constructor. This example assumes that you have created a custom section class named `CustomSection`. For an example of such a class, see the <xref:System.Configuration.ConfigurationSection> class overview.  
-  
- [!code-csharp[System.Configuration.ConfigurationSection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/CS/CustomConfigurationSection.cs#2)]
- [!code-vb[System.Configuration.ConfigurationSection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/VB/CustomConfigurationSection.vb#2)]  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationSection.%23ctor%2A> constructor. This example assumes that you have created a custom section class named `CustomSection`. For an example of such a class, see the <xref:System.Configuration.ConfigurationSection> class overview.  
+ 
+[!code-csharp[System.Configuration.ConfigurationSection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/CS/CustomConfigurationSection.cs#2)]
+[!code-vb[System.Configuration.ConfigurationSection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/VB/CustomConfigurationSection.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,10 +135,10 @@
         <summary>Reads XML from the configuration file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Deserialization refers to the reading of XML data from a configuration file, its transformation into real-time data, and its storage in an object.  
-  
+Deserialization refers to the reading of XML data from a configuration file, its transformation into real-time data, and its storage in an object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">
@@ -163,20 +163,20 @@
         <returns>The object representing the section.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Configuration.Configuration.GetSection%2A> method is called at run time, the configuration system first creates an appropriate instance of the <xref:System.Configuration.ConfigurationSection> class, and then returns the object it obtains from the <xref:System.Configuration.ConfigurationSection.GetRuntimeObject%2A> method.  
+When the <xref:System.Configuration.Configuration.GetSection%2A> method is called at run time, the configuration system first creates an appropriate instance of the <xref:System.Configuration.ConfigurationSection> class, and then returns the object it obtains from the <xref:System.Configuration.ConfigurationSection.GetRuntimeObject%2A> method.  
+ 
+By default, <xref:System.Configuration.ConfigurationSection.GetRuntimeObject%2A> simply returns the object that represents the <xref:System.Configuration.ConfigurationSection> from which it is called.  
+ 
   
- By default, <xref:System.Configuration.ConfigurationSection.GetRuntimeObject%2A> simply returns the object that represents the <xref:System.Configuration.ConfigurationSection> from which it is called.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationSection.GetRuntimeObject%2A> method.  
-  
- [!code-csharp[System.Configuration.ConfigurationSection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/CS/CustomConfigurationSection.cs#4)]
- [!code-vb[System.Configuration.ConfigurationSection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/VB/CustomConfigurationSection.vb#4)]  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationSection.GetRuntimeObject%2A> method.  
+ 
+[!code-csharp[System.Configuration.ConfigurationSection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/CS/CustomConfigurationSection.cs#4)]
+[!code-vb[System.Configuration.ConfigurationSection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/VB/CustomConfigurationSection.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -243,13 +243,13 @@
         <value>A <see cref="T:System.Configuration.SectionInformation" /> that contains the non-customizable information and functionality of the <see cref="T:System.Configuration.ConfigurationSection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Configuration.ConfigurationSection.SectionInformation%2A> property.  
-  
- [!code-csharp[System.Configuration.ConfigurationSection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/CS/CustomConfigurationSection.cs#3)]
- [!code-vb[System.Configuration.ConfigurationSection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/VB/CustomConfigurationSection.vb#3)]  
-  
+The following example shows how to use the <xref:System.Configuration.ConfigurationSection.SectionInformation%2A> property.  
+ 
+[!code-csharp[System.Configuration.ConfigurationSection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/CS/CustomConfigurationSection.cs#3)]
+[!code-vb[System.Configuration.ConfigurationSection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationSection/VB/CustomConfigurationSection.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -279,10 +279,10 @@
         <returns>An XML string containing an unmerged view of the <see cref="T:System.Configuration.ConfigurationSection" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Serialization refers to the transformation of real-time data, contained in an object, to XML format and its storage to a configuration file.  
-  
+Serialization refers to the transformation of real-time data, contained in an object, to XML format and its storage to a configuration file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -313,12 +313,12 @@
           <see langword="true" /> if the <paramref name="element" /> should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each configuration section that is created for the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] and later versions must explicitly override this method and return `true`, but only if the specified element is valid for the specified version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. Existing configuration sections that were created for earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] do not have to be changed.  
-  
- The base type contains a default implementation of this method that always returns `true`. If you implement a configuration section and you do not override this method, by default all configuration elements that are contained in the configuration section will be serialized for all framework versions.  
-  
+Each configuration section that is created for the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] and later versions must explicitly override this method and return `true`, but only if the specified element is valid for the specified version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. Existing configuration sections that were created for earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] do not have to be changed.  
+ 
+The base type contains a default implementation of this method that always returns `true`. If you implement a configuration section and you do not override this method, by default all configuration elements that are contained in the configuration section will be serialized for all framework versions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,12 +351,12 @@
           <see langword="true" /> if the <paramref name="property" /> should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each configuration section that is created for the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] and later versions must explicitly override this method and return `true`, but only if the specified property is valid for the specified version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. Existing configuration sections that were created for earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] do not have to be changed.  
-  
- The base type contains a default implementation of this method that always returns `true`. If you implement a configuration section and you do not override this method, by default all configuration properties that are contained in the configuration section will be serialized for all framework versions.  
-  
+Each configuration section that is created for the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] and later versions must explicitly override this method and return `true`, but only if the specified property is valid for the specified version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. Existing configuration sections that were created for earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] do not have to be changed.  
+ 
+The base type contains a default implementation of this method that always returns `true`. If you implement a configuration section and you do not override this method, by default all configuration properties that are contained in the configuration section will be serialized for all framework versions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -383,12 +383,12 @@
           <see langword="true" /> if the current section should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each configuration section that is created for the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] and later versions must explicitly override this method and return `true`, but only if the configuration section is valid for the specified version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. Existing configuration sections that were created for earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] do not have to be changed.  
-  
- The base type contains a default implementation of this method that always returns `true`. If you implement a configuration section and you do not override this method, by default the configuration section will be serialized for all framework versions.  
-  
+Each configuration section that is created for the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] and later versions must explicitly override this method and return `true`, but only if the configuration section is valid for the specified version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. Existing configuration sections that were created for earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] do not have to be changed.  
+ 
+The base type contains a default implementation of this method that always returns `true`. If you implement a configuration section and you do not override this method, by default the configuration section will be serialized for all framework versions.  
+ 
  ]]></format>
         </remarks>
       </Docs>

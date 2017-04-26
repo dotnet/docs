@@ -23,21 +23,21 @@
     <summary>Represents the post-schema-validation infoset of a validated XML node.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
-  
- [!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
- [!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
-  
- The example takes the `contosoBooks.xml` file as input.  
-  
- [!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
-  
- The example also takes the `contosoBooks.xsd` as an input.  
-  
- [!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
-  
+The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
+ 
+[!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
+[!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
+ 
+The example takes the `contosoBooks.xml` file as input.  
+ 
+[!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
+ 
+The example also takes the `contosoBooks.xsd` as an input.  
+ 
+[!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaInfo" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For an example of the <xref:System.Xml.Schema.XmlSchemaInfo.%23ctor%2A> constructor, see the <xref:System.Xml.Schema.XmlSchemaInfo> class reference topic.  
-  
+For an example of the <xref:System.Xml.Schema.XmlSchemaInfo.%23ctor%2A> constructor, see the <xref:System.Xml.Schema.XmlSchemaInfo> class reference topic.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,10 +114,10 @@
         <value>A <see langword="bool" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Schema.XmlSchemaInfo.IsDefault%2A> property does not report DTD defaults.  
-  
+The <xref:System.Xml.Schema.XmlSchemaInfo.IsDefault%2A> property does not report DTD defaults.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <value>A <see langword="bool" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of an XML node is nil if its `xsi:nil` attribute is `true`.  
-  
+The value of an XML node is nil if its `xsi:nil` attribute is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,10 +174,10 @@
         <value>An <see cref="T:System.Xml.Schema.XmlSchemaSimpleType" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Schema.XmlSchemaInfo.MemberType%2A> property is set only if the static type of the XML node is a union type in which case the <xref:System.Xml.Schema.XmlSchemaInfo.MemberType%2A> property will return the type from the union the XML node validated against.  
-  
+The <xref:System.Xml.Schema.XmlSchemaInfo.MemberType%2A> property is set only if the static type of the XML node is a union type in which case the <xref:System.Xml.Schema.XmlSchemaInfo.MemberType%2A> property will return the type from the union the XML node validated against.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,21 +204,21 @@
         <value>An <see cref="T:System.Xml.Schema.XmlSchemaAttribute" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
-  
- [!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
- [!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
-  
- The example takes the `contosoBooks.xml` file as input.  
-  
- [!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
-  
- The example also takes the `contosoBooks.xsd` as an input.  
-  
- [!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
-  
+The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
+ 
+[!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
+[!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
+ 
+The example takes the `contosoBooks.xml` file as input.  
+ 
+[!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
+ 
+The example also takes the `contosoBooks.xsd` as an input.  
+ 
+[!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -245,21 +245,21 @@
         <value>An <see cref="T:System.Xml.Schema.XmlSchemaElement" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
-  
- [!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
- [!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
-  
- The example takes the `contosoBooks.xml` file as input.  
-  
- [!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
-  
- The example also takes the `contosoBooks.xsd` as an input.  
-  
- [!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
-  
+The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
+ 
+[!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
+[!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
+ 
+The example takes the `contosoBooks.xml` file as input.  
+ 
+[!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
+ 
+The example also takes the `contosoBooks.xsd` as an input.  
+ 
+[!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,26 +286,26 @@
         <value>An <see cref="T:System.Xml.Schema.XmlSchemaType" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The static type of an XML node is the type that was declared in the XSD schema.  
+The static type of an XML node is the type that was declared in the XSD schema.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
-  
- [!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
- [!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
-  
- The example takes the `contosoBooks.xml` file as input.  
-  
- [!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
-  
- The example also takes the `contosoBooks.xsd` as an input.  
-  
- [!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
-  
+The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
+ 
+[!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
+[!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
+ 
+The example takes the `contosoBooks.xml` file as input.  
+ 
+[!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
+ 
+The example also takes the `contosoBooks.xsd` as an input.  
+ 
+[!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -332,26 +332,26 @@
         <value>An <see cref="T:System.Xml.Schema.XmlSchemaValidity" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The possible <xref:System.Xml.Schema.XmlSchemaValidity> values for this XML node are <xref:System.Xml.Schema.XmlSchemaValidity>, <xref:System.Xml.Schema.XmlSchemaValidity>, and <xref:System.Xml.Schema.XmlSchemaValidity>.  
+The possible <xref:System.Xml.Schema.XmlSchemaValidity> values for this XML node are <xref:System.Xml.Schema.XmlSchemaValidity>, <xref:System.Xml.Schema.XmlSchemaValidity>, and <xref:System.Xml.Schema.XmlSchemaValidity>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
-  
- [!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
- [!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
-  
- The example takes the `contosoBooks.xml` file as input.  
-  
- [!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
-  
- The example also takes the `contosoBooks.xsd` as an input.  
-  
- [!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
-  
+The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
+ 
+[!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
+[!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
+ 
+The example takes the `contosoBooks.xml` file as input.  
+ 
+[!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
+ 
+The example also takes the `contosoBooks.xsd` as an input.  
+ 
+[!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

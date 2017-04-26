@@ -19,10 +19,10 @@
     <summary>Specifies the default docking behavior for a control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can create new controls in Windows Forms derived either from an existing control or from <xref:System.Windows.Forms.UserControl>. Use this attribute on new controls to describe how the control should dock by default when placed on a form.  
-  
+You can create new controls in Windows Forms derived either from an existing control or from <xref:System.Windows.Forms.UserControl>. Use this attribute on new controls to describe how the control should dock by default when placed on a form.  
+ 
  ]]></format>
     </remarks>
   </Docs>

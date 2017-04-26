@@ -19,10 +19,10 @@
     <summary>Indicates that a class can use a type converter to provide a value, and references a handler to use for type converter setting cases.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- XAML behavior that interprets CLR attributes uses this attribute to determine if there is an intentional callback for all type converter usages of a type or member. For example, a <xref:System.Xaml.XamlServices> load or parse, or a <xref:System.Xaml.XamlXmlReader> / <xref:System.Xaml.XamlObjectWriter> sequence, will use this attribute and invoke the named callback as part of the operation whenever writing an object node based on an attributed and invoked type converter.  
-  
+XAML behavior that interprets CLR attributes uses this attribute to determine if there is an intentional callback for all type converter usages of a type or member. For example, a <xref:System.Xaml.XamlServices> load or parse, or a <xref:System.Xaml.XamlXmlReader> / <xref:System.Xaml.XamlObjectWriter> sequence, will use this attribute and invoke the named callback as part of the operation whenever writing an object node based on an attributed and invoked type converter.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -44,10 +44,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlSetTypeConverterAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method referenced by name through the `xamlSetTypeConverterHandler` value a generic <xref:System.EventHandler%601> delegate with <xref:System.Windows.Markup.XamlSetTypeConverterEventArgs> event data constraint.  
-  
+The method referenced by name through the `xamlSetTypeConverterHandler` value a generic <xref:System.EventHandler%601> delegate with <xref:System.Windows.Markup.XamlSetTypeConverterEventArgs> event data constraint.  
+ 
  ]]></format>
         </remarks>
       </Docs>

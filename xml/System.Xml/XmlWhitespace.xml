@@ -23,10 +23,10 @@
     <summary>Represents white space in element content.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is a Microsoft extension to the Document Object Model (DOM).  
-  
+This class is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,10 +59,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlWhitespace" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called by derived class constructors to initialize state in this type.  
-  
+This constructor is called by derived class constructors to initialize state in this type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,12 +98,12 @@
         <returns>The cloned node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xml.XmlWhitespace.CloneNode%2A> serves as a copy constructor for nodes. To see how this method behaves with other node types, see <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=fullName>.  
-  
- The cloned node has no parent. <xref:System.Xml.XmlNode.ParentNode%2A> returns `null`.  
-  
+<xref:System.Xml.XmlWhitespace.CloneNode%2A> serves as a copy constructor for nodes. To see how this method behaves with other node types, see <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=fullName>.  
+ 
+The cloned node has no parent. <xref:System.Xml.XmlNode.ParentNode%2A> returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,14 +188,14 @@
         <value>For <see langword="XmlWhitespace" /> nodes, the value is <see cref="F:System.Xml.XmlNodeType.Whitespace" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example adds a white space node to the document.  
-  
- [!code-cpp[Classic WebData XmlWhitespace.NodeType Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlWhitespace.NodeType Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlWhitespace.NodeType Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlWhitespace.NodeType Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlWhitespace.NodeType Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlWhitespace.NodeType Example/VB/source.vb#1)]  
-  
+The following example adds a white space node to the document.  
+ 
+[!code-cpp[Classic WebData XmlWhitespace.NodeType Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlWhitespace.NodeType Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlWhitespace.NodeType Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlWhitespace.NodeType Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlWhitespace.NodeType Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlWhitespace.NodeType Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,10 +280,10 @@
         <value>The white space characters found in the node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When setting this property, valid white space characters must be specified. White space can consist of one or more space characters, carriage returns, line feeds, or tabs.  
-  
+When setting this property, valid white space characters must be specified. White space can consist of one or more space characters, carriage returns, line feeds, or tabs.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Setting <see cref="P:System.Xml.XmlWhitespace.Value" /> to invalid white space characters.</exception>
@@ -318,10 +318,10 @@
         <summary>Saves all the children of the node to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -355,10 +355,10 @@
         <summary>Saves the node to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>

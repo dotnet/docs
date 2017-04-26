@@ -56,10 +56,10 @@
           <see langword="true" /> if the enumerator successfully advanced to the next element; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method also returns `false` if the enumerator has passed the final element in the collection.  
-  
+This method also returns `false` if the enumerator has passed the final element in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,10 +99,10 @@
         <value>The current element in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.TextDecorationCollection.Enumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.TextDecorationCollection.Enumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,10 +124,10 @@
         <summary>For a description of this members, see <see cref="M:System.IDisposable.Dispose" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.TextDecorationCollection.Enumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.TextDecorationCollection.Enumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

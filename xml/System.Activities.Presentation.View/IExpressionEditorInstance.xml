@@ -11,15 +11,15 @@
     <summary>Represents an expression editor instance.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a detailed description of an expression editor instance, see <xref:System.Activities.Presentation.View.IExpressionEditorService>.  
+For a detailed description of an expression editor instance, see <xref:System.Activities.Presentation.View.IExpressionEditorService>.  
+ 
   
-   
-  
+ 
 ## Examples  
 <!-- TODO: review snippet reference  [!CODE [WFD_IExpressionEditorInstance#0](WFD_IExpressionEditorInstance#0)]  -->  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -503,10 +503,10 @@
           <see langword="true" /> if the editor instance has aggregate focus; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instance has aggregate focus when the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> or any other control created by the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> has focus.  
-  
+The instance has aggregate focus when the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> or any other control created by the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> has focus.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -583,10 +583,10 @@
         <summary>Represents an event that is raised when the expression editor instance loses aggregate focus.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The instance loses aggregate focus when the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> and every control created by the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> loose focus.  
-  
+The instance loses aggregate focus when the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> and every control created by the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> loose focus.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -608,10 +608,10 @@
         <value>Returns an <see cref="T:System.Int32" /> that containing the maximum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Activities.Presentation.View.IExpressionEditorInstance.MaxHeight%2A> is set, it will override `MaxLines`.  
-  
+If <xref:System.Activities.Presentation.View.IExpressionEditorInstance.MaxHeight%2A> is set, it will override `MaxLines`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -633,10 +633,10 @@
         <value>Returns an<see cref="T:System.Int32" /> that contains the minimum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Activities.Presentation.View.IExpressionEditorInstance.MinHeight%2A> is set, then it will override MinLines.  
-  
+If <xref:System.Activities.Presentation.View.IExpressionEditorInstance.MinHeight%2A> is set, then it will override MinLines.  
+ 
  ]]></format>
         </remarks>
       </Docs>

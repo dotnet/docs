@@ -34,10 +34,10 @@
         <summary>Constructs an empty project using the global project collection global properties and default tools version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This project is added to the global project collection when it is given the full path to the source project file, typically by saving the project.  
-  
+This project is added to the global project collection when it is given the full path to the source project file, typically by saving the project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -59,12 +59,12 @@
         <summary>Constructs an empty project and evaluates it using the given project root and the global project collection global properties and default tools version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This project is added to the global project collection when either this project or the given project root is given the full path to the source project file.  
-  
- Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
-  
+This project is added to the global project collection when either this project or the given project root is given the full path to the source project file.  
+ 
+Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,10 +86,10 @@
         <summary>Constructs an empty project using the given project collection global properties and default tools version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This project is added to the given project collection when it is given the full path to the source project file, typically by saving the project.  
-  
+This project is added to the given project collection when it is given the full path to the source project file, typically by saving the project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -111,12 +111,12 @@
         <summary>Constructs a project and evaluates it from the given source project file and with the global project collection global properties and default tools version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The project is added to the global project collection.  
-  
- Throws InvalidOperationException if there is already a project in the project collection that evaluates this source project file. May throw IO-related exceptions.  
-  
+The project is added to the global project collection.  
+ 
+Throws InvalidOperationException if there is already a project in the project collection that evaluates this source project file. May throw IO-related exceptions.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:Microsoft.Build.Exceptions.InvalidProjectFileException">If the evaluation fails.</exception>
@@ -139,12 +139,12 @@
         <summary>Constructs a project and evaluates the source code from the given XML reader. The source code is evaluated with the global project collection global properties and default tools version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This project is added to the global project collection when it is given the full path to the source project file, typically by saving the project.  
-  
- Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
-  
+This project is added to the global project collection when it is given the full path to the source project file, typically by saving the project.  
+ 
+Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,12 +170,12 @@
         <summary>Constructs an empty project and evaluates it using the given project root and with the given global properties and given tools version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This project is added to the global project collection when either this project or the given project root is given the full path to the source project file.  
-  
- Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
-  
+This project is added to the global project collection when either this project or the given project root is given the full path to the source project file.  
+ 
+Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
         <summary>Constructs an empty project, to be evaluated with the given project collection and with the given global properties and given tools version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The project is added to the specified project collection when it is given the full path to the source project file, typically by saving the project.  
-  
+The project is added to the specified project collection when it is given the full path to the source project file, typically by saving the project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -230,12 +230,12 @@
         <summary>Constructs a project and evaluates it from the given source project file and with the given global properties and given tools version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The project is added to the global project collection.  
-  
- Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection. May throw IO-related exceptions.  
-  
+The project is added to the global project collection.  
+ 
+Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection. May throw IO-related exceptions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,12 +261,12 @@
         <summary>Constructs a project and evaluates the source code from the given XML reader. The source code is evaluated with the given global properties and given tools version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This project is added to the global project collection when it is given the full path to the source project file, typically by saving the project.  
-  
- Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
-  
+This project is added to the global project collection when it is given the full path to the source project file, typically by saving the project.  
+ 
+Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -294,12 +294,12 @@
         <summary>Constructs a project and evaluates it using the given project root and with the given global properties and given tools version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This project is added to the given project collection when either this project or the given project root is given the full path to the source project file.  
-  
- Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
-  
+This project is added to the given project collection when either this project or the given project root is given the full path to the source project file.  
+ 
+Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -327,12 +327,12 @@
         <summary>Constructs a project and evaluates it from the given source project file and with the given global properties and given tools version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The project is added to the given project collection.  
-  
- Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection. May throw IO-related exceptions.  
-  
+The project is added to the given project collection.  
+ 
+Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection. May throw IO-related exceptions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -360,12 +360,12 @@
         <summary>Constructs a project and evaluates the source code from the given XML reader. The source code is evaluated with the given global properties and given tools version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This project is added to the given project collection when either this project or the given project root is given the full path to the source project file.  
-  
- Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
-  
+This project is added to the given project collection when either this project or the given project root is given the full path to the source project file.  
+ 
+Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -395,12 +395,12 @@
         <summary>Constructs a project and evaluates it using the given project root and with the given global properties, given tools version, and given load settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This project is added to the given project collection when either this project or the given project root is given the full path to the source project file.  
-  
- Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
-  
+This project is added to the given project collection when either this project or the given project root is given the full path to the source project file.  
+ 
+Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -430,12 +430,12 @@
         <summary>Constructs a project and evaluates it from the given source project file and with the given global properties, given tools version, and given load settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The project is added to the given project collection.  
-  
- Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection. May throw IO-related exceptions.  
-  
+The project is added to the given project collection.  
+ 
+Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection. May throw IO-related exceptions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -465,12 +465,12 @@
         <summary>Constructs a project and evaluates the source code from the given XML reader. The source code is evaluated with the given global properties and given tools version.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This project is added to the given project collection when either this project or the given project root is given the full path to the source project file.  
-  
- Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
-  
+This project is added to the given project collection when either this project or the given project root is given the full path to the source project file.  
+ 
+Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -502,12 +502,12 @@
         <summary>Constructs a project and evaluates it using the given project root and with the given global properties, tools and sub-toolset versions, project collection, and load settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This project is added to the given project collection when either this project or the given project root is given the full path to the source project file.  
-  
- Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
-  
+This project is added to the given project collection when either this project or the given project root is given the full path to the source project file.  
+ 
+Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -539,12 +539,12 @@
         <summary>Constructs a project and evaluates it from the given source project file and with the given global properties, tools and sub-toolset versions, project collection, and load settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The project is added to the given project collection.  
-  
- Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection. May throw IO-related exceptions.  
-  
+The project is added to the given project collection.  
+ 
+Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection. May throw IO-related exceptions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -576,12 +576,12 @@
         <summary>Constructs a project and evaluates the source code from the given XML reader. The source code is evaluated with the given global properties, tools and sub-toolset versions, project collection, and load settings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This project is added to the given project collection when either this project or the given project root is given the full path to the source project file.  
-  
- Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
-  
+This project is added to the given project collection when either this project or the given project root is given the full path to the source project file.  
+ 
+Throws InvalidProjectFileException if the evaluation fails. Throws InvalidOperationException if there is already an equivalent project loaded in the project collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -609,12 +609,12 @@
         <returns>Returns the added item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any metadata can be added later. Does not modify the project source if a wildcard expression already includes the new item.  
-  
- Evaluation takes place on a best-effort basis. Items that are defined in the project source following the new item may be used for evaluation. Only this item is evaluated. Other items that might depend on it are not affected.  
-  
+Any metadata can be added later. Does not modify the project source if a wildcard expression already includes the new item.  
+ 
+Evaluation takes place on a best-effort basis. Items that are defined in the project source following the new item may be used for evaluation. Only this item is evaluated. Other items that might depend on it are not affected.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -644,12 +644,12 @@
         <returns>Returns the added item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The metadata may be null, which indicates no metadata.  
-  
- Evaluation takes place on a best-effort basis. Items that are defined in the project source following the new item may be used for evaluation. Only this item is evaluated. Other items that might depend on it are not affected.  
-  
+The metadata may be null, which indicates no metadata.  
+ 
+Evaluation takes place on a best-effort basis. Items that are defined in the project source following the new item may be used for evaluation. Only this item is evaluated. Other items that might depend on it are not affected.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -677,16 +677,16 @@
         <returns>Returns a list of the project items added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Appends the item to the first item group that does not have a condition and has either no children or whose first child is an item of the same type.  
-  
- Evaluates on a best-effort basis: -expands with all items. Items that are defined in the XML below the new item may be used, even though in a real evaluation they would not be.  
-  
- Only this item is evaluated. Other items that might depend on it are not affected.  
-  
- This is a convenience that it is understood does not necessarily leave the project in a perfectly self consistent state until reevaluation.  
-  
+Appends the item to the first item group that does not have a condition and has either no children or whose first child is an item of the same type.  
+ 
+Evaluates on a best-effort basis: -expands with all items. Items that are defined in the XML below the new item may be used, even though in a real evaluation they would not be.  
+ 
+Only this item is evaluated. Other items that might depend on it are not affected.  
+ 
+This is a convenience that it is understood does not necessarily leave the project in a perfectly self consistent state until reevaluation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -716,16 +716,16 @@
         <returns>Returns a list of the project items added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Appends the item to the first item group that does not have a condition and has either no children or whose first child is an item of the same type.  
-  
- Evaluates on a best-effort basis: -expands with all items. Items that are defined in the XML below the new item may be used, even though in a real evaluation they would not be.  
-  
- Only this item is evaluated. Other items that might depend on it is not affected.  
-  
- This is a convenience that it is understood does not necessarily leave the project in a perfectly self consistent state until reevaluation.  
-  
+Appends the item to the first item group that does not have a condition and has either no children or whose first child is an item of the same type.  
+ 
+Evaluates on a best-effort basis: -expands with all items. Items that are defined in the XML below the new item may be used, even though in a real evaluation they would not be.  
+ 
+Only this item is evaluated. Other items that might depend on it is not affected.  
+ 
+This is a convenience that it is understood does not necessarily leave the project in a perfectly self consistent state until reevaluation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -747,10 +747,10 @@
         <value>Returns all item definition metadata encountered during evaluation. This does not include any elements whose conditions did not evaluate to true, nor any item definition metadata added since the last evaluation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Item metadata is read during the second evaluation pass. Unlike metadata returned by the ItemDefinitions property, this metadata is ordered, and includes any metadata subsequently overridden with the same name and item type.  
-  
+Item metadata is read during the second evaluation pass. Unlike metadata returned by the ItemDefinitions property, this metadata is ordered, and includes any metadata subsequently overridden with the same name and item type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -772,14 +772,14 @@
         <value>Returns an enumerator over all items encountered during evaluation. These are read during the third evaluation pass.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unlike those items returned by the Items property, these are ordered with respect to all other items encountered during evaluation, not just ordered with respect to items of the same item type.  
-  
- In some applications, this complete mutual ordering is significant, and such hosts can use this property.  
-  
- The enumeration does not include any elements whose conditions did not evaluate to true, nor does it include any items added since the last evaluation.  
-  
+Unlike those items returned by the Items property, these are ordered with respect to all other items encountered during evaluation, not just ordered with respect to items of the same item type.  
+ 
+In some applications, this complete mutual ordering is significant, and such hosts can use this property.  
+ 
+The enumeration does not include any elements whose conditions did not evaluate to true, nor does it include any items added since the last evaluation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -801,10 +801,10 @@
         <value>Returns all properties encountered during evaluation. This does not include any properties whose conditions did not evaluate to true, nor any properties added since the last evaluation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These properties are read during the first evaluation pass. Unlike properties returned by the Properties property, these are ordered, and includes any properties subsequently overridden with the same name.  
-  
+These properties are read during the first evaluation pass. Unlike properties returned by the Properties property, these are ordered, and includes any properties subsequently overridden with the same name.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -827,10 +827,10 @@
         <returns>Returns true on success; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
-  
+To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -856,10 +856,10 @@
         <returns>Returns true on success; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
-  
+To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -885,10 +885,10 @@
         <returns>Returns true on success; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
-  
+To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -914,10 +914,10 @@
         <returns>Returns true on success; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
-  
+To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -943,10 +943,10 @@
         <returns>Returns true on success; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
-  
+To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -974,10 +974,10 @@
         <returns>Returns true on success; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
-  
+To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1005,10 +1005,10 @@
         <returns>Returns true on success; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
-  
+To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1036,10 +1036,10 @@
         <returns>Returns true on success; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
-  
+To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1069,10 +1069,10 @@
         <returns>Returns true on success; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
-  
+To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1102,10 +1102,10 @@
         <returns>Returns true on success; false otherwise.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
-  
+To set or get virtual items for build purposes, clone a project instance explicitly and build that. This method does not modify the project object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1132,10 +1132,10 @@
         <value>Returns a collection of possible property values for properties used to evaluate conditions found on properties, property groups, imports, and whens. The collection is in canonical form. The name of the entry is the name of the property to be evaluated, and the value is a list of possible property values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, if the following conditions existed on properties in a project: Condition="'$(Configuration)&#124;$(Platform)' == 'Debug&#124;x86'" Condition="'$(Configuration)' == 'Release'" the table would be populated with { "Configuration", { "Debug", "Release" }} { "Platform", { "x86" }} This collection is used by Visual Studio to determine the configurations defined in the project  
-  
+For example, if the following conditions existed on properties in a project: Condition="'$(Configuration)&#124;$(Platform)' == 'Debug&#124;x86'" Condition="'$(Configuration)' == 'Release'" the table would be populated with { "Configuration", { "Debug", "Release" }} { "Platform", { "x86" }} This collection is used by Visual Studio to determine the configurations defined in the project  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1158,10 +1158,10 @@
         <returns>Returns the project instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Can be used to build independently. The original project is evaluated before creating the instance, if necessary, so that the original project is marked as unmodified.  
-  
+Can be used to build independently. The original project is evaluated before creating the instance, if necessary, so that the original project is marked as unmodified.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1187,10 +1187,10 @@
         <returns>Returns the project instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Can be used to build independently. The original project is evaluated before creating the instance, if necessary, so that the original project is marked as unmodified.  
-  
+Can be used to build independently. The original project is evaluated before creating the instance, if necessary, so that the original project is marked as unmodified.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1253,10 +1253,10 @@
         <value>Returns the incremented value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value should be compared with previous values to see if the project has been re-evaluated. It should not be used to determine how many times the project has been re-evaluated since it may be incremented by more than one for a given re-evaluation.  
-  
+This value should be compared with previous values to see if the project has been re-evaluated. It should not be used to determine how many times the project has been re-evaluated since it may be incremented by more than one for a given re-evaluation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1282,10 +1282,10 @@
         <returns>Returns the evaluated string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method can be used when best-effort evaluation is sufficient.  
-  
+This method can be used when best-effort evaluation is sufficient.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1315,10 +1315,10 @@
         <value>Returns the full path to the project source file. Returns an empty string if the project was not loaded from disk.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property on a project in a project collection renames the project.  
-  
+Setting this property on a project in a project collection renames the project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1388,10 +1388,10 @@
         <returns>Returns all the items in the project of the given item type. Returns an empty list if there are no items with the given item name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use AddItem or RemoveItem to modify items in this project.  
-  
+Use AddItem or RemoveItem to modify items in this project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1417,10 +1417,10 @@
         <returns>Returns all items that have the given evaluated Include attribute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, this method might return all items that have the evaluated Include attribute "component.cpp". Typically zero or one items are returned. However, there may be multiple items with the same path and different item types, or even with the same item types.  
-  
+For example, this method might return all items that have the evaluated Include attribute "component.cpp". Typically zero or one items are returned. However, there may be multiple items with the same path and different item types, or even with the same item types.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1446,10 +1446,10 @@
         <returns>Returns all the items in the project of the given type, whether or not their Condition attribute evaluates to true.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a read-only list. Use AddItem or RemoveItem to modify items in this project.  
-  
+This is a read-only list. Use AddItem or RemoveItem to modify items in this project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1472,10 +1472,10 @@
         <returns>Returns an enumerator over all the elements in the "logical project".</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The logical project is defined as the unevaluated project obtained from the single MSBuild file that is the result of including inline the text of all imports of the original MSBuild project manifest file.  
-  
+The logical project is defined as the unevaluated project obtained from the single MSBuild file that is the result of including inline the text of all imports of the original MSBuild project manifest file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1598,10 +1598,10 @@
         <returns>Returns the value of the given property in this project. Return an empty string if no property of that name exists. Escape sequences are converted before returning the string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A property with a value of empty string and no property at all are not distinguished between by this method. To determine if a property is set at all in the project, use GetProperty(name).  
-  
+A property with a value of empty string and no property at all are not distinguished between by this method. To determine if a property is set at all in the project, use GetProperty(name).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1650,12 +1650,12 @@
         <value>Returns a dictionary of the global properties used for the evaluation of this project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the publicly exposed getter, that translates into a read-only dead IDictionary\<string, string>.  
-  
- In order to easily tell when we're dirtied, setting and removing global properties is done with <xref:Microsoft.Build.Evaluation.Project.SetGlobalProperty%2A> and <xref:Microsoft.Build.Evaluation.Project.RemoveGlobalProperty%2A>.  
-  
+This is the publicly exposed getter, that translates into a read-only dead IDictionary\<string, string>.  
+ 
+In order to easily tell when we're dirtied, setting and removing global properties is done with <xref:Microsoft.Build.Evaluation.Project.SetGlobalProperty%2A> and <xref:Microsoft.Build.Evaluation.Project.RemoveGlobalProperty%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1679,10 +1679,10 @@
  The name of each item is the Import element that caused the file to be imported. The value of each item is the project root of the imported project. Import elements whose Condition attribute evaluated to false are not included.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The project root of this project is not included.  
-  
+The project root of this project is not included.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1722,10 +1722,10 @@
         <value>Returns true if the targets and tasks of this project can be built; false otherwise.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Can be used for security purposes. By default, a new project has the same IsBuildEnabled setting as the parent project collection that contains it. When IsBuildEnabled is false, the Build method on this project fails.  
-  
+Can be used for security purposes. By default, a new project has the same IsBuildEnabled setting as the parent project collection that contains it. When IsBuildEnabled is false, the Build method on this project fails.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1747,10 +1747,10 @@
         <value>Returns a property that indicates whether this project has been modified so that it must be reevaluated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A project is modified and must be reevaluated when the underlying project source code, including changes to imported files. A project is also modified must be reevaluated if the project tool set changes.  
-  
+A project is modified and must be reevaluated when the underlying project source code, including changes to imported files. A project is also modified must be reevaluated if the project tool set changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1823,10 +1823,10 @@
         <value>Returns an enumerator over all items in this project., ordered within groups of item types, including items whose conditions evaluate to false, or are contained within item groups whose condition evaluates to false.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Can be used to display all items, even if they are not part of the build in the current configuration.  
-  
+Can be used to display all items, even if they are not part of the build in the current configuration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1871,14 +1871,14 @@
         <summary>Marks this project as modified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is seldom necessary to call this method explicitly, because all edits affecting a project automatically mark it as modified.  
-  
- Sometimes, however, this method must be called. For example, a project may have an Import element whose condition depends on a file that exists on a disk. If that file does not exist at evaluation time, and it is created after evaluation, then the project must be explicitly marked as modified.  
-  
- The <xref:Microsoft.Build.Evaluation.Project.ReevaluateIfNecessary%2A> method uses this property to determine if an evaluation is necessary.  
-  
+It is seldom necessary to call this method explicitly, because all edits affecting a project automatically mark it as modified.  
+ 
+Sometimes, however, this method must be called. For example, a project may have an Import element whose condition depends on a file that exists on a disk. If that file does not exist at evaluation time, and it is created after evaluation, then the project must be explicitly marked as modified.  
+ 
+The <xref:Microsoft.Build.Evaluation.Project.ReevaluateIfNecessary%2A> method uses this property to determine if an evaluation is necessary.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1964,12 +1964,12 @@
         <summary>Reevaluates the project to incorporate any changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The project is reevaluated only if it is marked as modified. Reevaluation incorporates all changes made to the project source code.  
-  
- Throws InvalidProjectFileException if the evaluation fails.  
-  
+The project is reevaluated only if it is marked as modified. Reevaluation incorporates all changes made to the project source code.  
+ 
+Throws InvalidProjectFileException if the evaluation fails.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2017,14 +2017,14 @@
         <returns>Returns true if the item is present in this evaluated project; otherwise false. Normally this method returns true, since if the requested item is not present, the method throws an exception. If the item is present only in the ItemsIgnoringCondition collection, however, the method returns false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the item group containing the item becomes empty, it is also removed.  
-  
- If the item originates from a wildcard or semicolon-separated expression, the expression is first expanded into multiple items.  
-  
- The project is updated, but no further evaluation occurs until reevaluation. For example, if an item of type "i" is removed, "j" which is evaluated from "@(i)" is not modified until reevaluation.  
-  
+If the item group containing the item becomes empty, it is also removed.  
+ 
+If the item originates from a wildcard or semicolon-separated expression, the expression is first expanded into multiple items.  
+ 
+The project is updated, but no further evaluation occurs until reevaluation. For example, if an item of type "i" is removed, "j" which is evaluated from "@(i)" is not modified until reevaluation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2049,10 +2049,10 @@
         <summary>Removes all the given items from the project, unless they originate from an imported project.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an item originates from an imported project, it is simply skipped.  
-  
+If an item originates from an imported project, it is simply skipped.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2078,12 +2078,12 @@
         <returns>Returns true if the property is present in this evaluated project; otherwise false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the property group containing the property becomes empty, it is also removed.  
-  
- The project is updated, but no further evaluation occurs until reevaluation. For example, if "p" is removed, "q" which is evaluated from "$(p)" is not modified until reevaluation.  
-  
+If the property group containing the property becomes empty, it is also removed.  
+ 
+The project is updated, but no further evaluation occurs until reevaluation. For example, if "p" is removed, "q" which is evaluated from "$(p)" is not modified until reevaluation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2260,14 +2260,14 @@
         <returns>Returns the property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If there is no property with the given name, updates the last existing property with the given name that has no condition on itself or its property group, unless it originated in an imported file.  
-  
- Otherwise, adds a new property in the first property group without a condition, creating a property group if necessary after the last existing property group, else at the start of the project.  
-  
- Evaluation takes place on a best-effort basis. Properties that are defined in the project source following the new property may be used for evaluation. Only this property is evaluated. Other properties that might depend on it are not affected.  
-  
+If there is no property with the given name, updates the last existing property with the given name that has no condition on itself or its property group, unless it originated in an imported file.  
+ 
+Otherwise, adds a new property in the first property group without a condition, creating a property group if necessary after the last existing property group, else at the start of the project.  
+ 
+Evaluation takes place on a best-effort basis. Properties that are defined in the project source following the new property may be used for evaluation. Only this property is evaluated. Other properties that might depend on it are not affected.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2348,10 +2348,10 @@
         <value>Gets the tools version that this project was evaluated with, if any.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set by the constructor. This is not necessarily the same as the tools version on the Project tag, if any; it may have been externally specified, for example with a /tv switch on the command line. The actual tools version on the Project tag can be obtained from <xref:Microsoft.Build.Evaluation.Project.Xml%2A>. The tools version cannot be changed once the project has been created.  
-  
+Set by the constructor. This is not necessarily the same as the tools version on the Project tag, if any; it may have been externally specified, for example with a /tv switch on the command line. The actual tools version on the Project tag can be obtained from <xref:Microsoft.Build.Evaluation.Project.Xml%2A>. The tools version cannot be changed once the project has been created.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2378,10 +2378,10 @@
         <value>Returns the root project associated with this project, which can never be null.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is no way to set this property. If you have a new project root, evaluate it into a new project.  
-  
+There is no way to set this property. If you have a new project root, evaluate it into a new project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2395,10 +2395,10 @@
         <summary>Creates a project instance based on this project, but completely disconnected from it.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Can be used to build independently. The original project is evaluated before creating the instance, if necessary, so that the original project is marked as unmodified.  
-  
+Can be used to build independently. The original project is evaluated before creating the instance, if necessary, so that the original project is marked as unmodified.  
+ 
  ]]></format>
         </remarks>
       </Docs>

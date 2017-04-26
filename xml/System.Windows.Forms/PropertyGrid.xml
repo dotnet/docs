@@ -29,36 +29,36 @@
     <summary>Provides a user interface for browsing the properties of an object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To use the property grid, you create a new instance of the <xref:System.Windows.Forms.PropertyGrid> class on a parent control and set <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> to the object to display the properties for.  
-  
- The information displayed in the grid is a snapshot of the properties at the time the object is assigned. If a property value of the object specified by the <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> is changed in code at run time, the new value is not displayed until an action is taken in the grid that causes the grid to refresh.  
-  
- The property tabs within the property grid appear as buttons on the toolbar at the top of the <xref:System.Windows.Forms.PropertyGrid>, and can vary in scope as defined in the <xref:System.ComponentModel.PropertyTabScope>.  
-  
- You can use the <xref:System.Windows.Forms.PropertyGrid.LargeButtons%2A> property to display large buttons instead of the default smaller ones. Large buttons are 32-by-32 pixels rather than the standard 16-by-16 pixels. The large and small buttons and the property list expander icons (the plus or minus icons) are resized according to the system DPI setting when the app.config file contains the following entry:  
-  
+To use the property grid, you create a new instance of the <xref:System.Windows.Forms.PropertyGrid> class on a parent control and set <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> to the object to display the properties for.  
+ 
+The information displayed in the grid is a snapshot of the properties at the time the object is assigned. If a property value of the object specified by the <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> is changed in code at run time, the new value is not displayed until an action is taken in the grid that causes the grid to refresh.  
+ 
+The property tabs within the property grid appear as buttons on the toolbar at the top of the <xref:System.Windows.Forms.PropertyGrid>, and can vary in scope as defined in the <xref:System.ComponentModel.PropertyTabScope>.  
+ 
+You can use the <xref:System.Windows.Forms.PropertyGrid.LargeButtons%2A> property to display large buttons instead of the default smaller ones. Large buttons are 32-by-32 pixels rather than the standard 16-by-16 pixels. The large and small buttons and the property list expander icons (the plus or minus icons) are resized according to the system DPI setting when the app.config file contains the following entry:  
+ 
 ```  
 <appSettings>  
   <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
 </appSettings>  
   
 ```  
+ 
+The <xref:System.Windows.Forms.PropertyGrid> control is not initially presented in the toolbox in the development environment. You can add a property grid to the toolbox, which enables you to drag a <xref:System.Windows.Forms.PropertyGrid> onto your form. You can also define an instance of <xref:System.Windows.Forms.PropertyGrid> by adding the appropriate code in your source code.  
+ 
+All public properties of the <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> will be displayed in the <xref:System.Windows.Forms.PropertyGrid> by default. You can hide a property so that it is not displayed in the <xref:System.Windows.Forms.PropertyGrid> control by decorating it with the <xref:System.ComponentModel.BrowsableAttribute> and setting the value to `false`. You can specify the category that a property appears in by providing a category with the <xref:System.ComponentModel.CategoryAttribute>. You can provide descriptive text for your property that appears at the bottom of the <xref:System.Windows.Forms.PropertyGrid> control by using the <xref:System.ComponentModel.DescriptionAttribute>.  
+ 
   
- The <xref:System.Windows.Forms.PropertyGrid> control is not initially presented in the toolbox in the development environment. You can add a property grid to the toolbox, which enables you to drag a <xref:System.Windows.Forms.PropertyGrid> onto your form. You can also define an instance of <xref:System.Windows.Forms.PropertyGrid> by adding the appropriate code in your source code.  
-  
- All public properties of the <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> will be displayed in the <xref:System.Windows.Forms.PropertyGrid> by default. You can hide a property so that it is not displayed in the <xref:System.Windows.Forms.PropertyGrid> control by decorating it with the <xref:System.ComponentModel.BrowsableAttribute> and setting the value to `false`. You can specify the category that a property appears in by providing a category with the <xref:System.ComponentModel.CategoryAttribute>. You can provide descriptive text for your property that appears at the bottom of the <xref:System.Windows.Forms.PropertyGrid> control by using the <xref:System.ComponentModel.DescriptionAttribute>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example illustrates creating a property grid and setting its location on a form. This example requires that you have a form with a <xref:System.Windows.Forms.TextBox> on it.  
-  
- [!code-cpp[Classic PropertyGrid Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyGrid Example/CPP/source.cpp#1)]
- [!code-csharp[Classic PropertyGrid Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyGrid Example/CS/source.cs#1)]
- [!code-vb[Classic PropertyGrid Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyGrid Example/VB/source.vb#1)]  
-  
+The following code example illustrates creating a property grid and setting its location on a form. This example requires that you have a form with a <xref:System.Windows.Forms.TextBox> on it.  
+ 
+[!code-cpp[Classic PropertyGrid Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PropertyGrid Example/CPP/source.cpp#1)]
+[!code-csharp[Classic PropertyGrid Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PropertyGrid Example/CS/source.cs#1)]
+[!code-vb[Classic PropertyGrid Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PropertyGrid Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityAction">for full trust. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />.</permission>
@@ -78,10 +78,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PropertyGrid" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To populate the grid, you must set the <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> property.  
-  
+To populate the grid, you must set the <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant for this class.  
-  
+This property is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,10 +163,10 @@
         <value>The background image of the property grid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant for this class.  
-  
+This property is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,10 +195,10 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.PropertyGrid.BackgroundImage" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant for this class.  
-  
+This event is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,10 +228,10 @@
         <value>The background image layout of the property grid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant for this class.  
-  
+This property is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,10 +260,10 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.PropertyGrid.BackgroundImageLayout" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant for this class.  
-  
+This event is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,12 +296,12 @@
         <value>The collection of browsable attributes associated with the object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Only properties with attributes matching the values specified are displayed in the <xref:System.Windows.Forms.PropertyGrid>. The default is an <xref:System.ComponentModel.AttributeCollection> containing only <xref:System.ComponentModel.BrowsableAttribute.Yes?displayProperty=fullName>.  
-  
- Assigning an attribute collection that is empty or is `null` causes a new <xref:System.ComponentModel.AttributeCollection> to be created with <xref:System.ComponentModel.BrowsableAttribute.Yes?displayProperty=fullName> set.  
-  
+Only properties with attributes matching the values specified are displayed in the <xref:System.Windows.Forms.PropertyGrid>. The default is an <xref:System.ComponentModel.AttributeCollection> containing only <xref:System.ComponentModel.BrowsableAttribute.Yes?displayProperty=fullName>.  
+ 
+Assigning an attribute collection that is empty or is `null` causes a new <xref:System.ComponentModel.AttributeCollection> to be created with <xref:System.ComponentModel.BrowsableAttribute.Yes?displayProperty=fullName> set.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -332,10 +332,10 @@
           <see langword="true" /> if the commands pane can be made visible; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is `true` if <xref:System.Windows.Forms.PropertyGrid.CommandsVisibleIfAvailable%2A> is `true` and the object has commands available.  
-  
+This property is `true` if <xref:System.Windows.Forms.PropertyGrid.CommandsVisibleIfAvailable%2A> is `true` and the object has commands available.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -386,10 +386,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> structure representing the text color.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The background color of category headings is determined by the <xref:System.Windows.Forms.PropertyGrid.LineColor%2A> property.  
-  
+The background color of category headings is determined by the <xref:System.Windows.Forms.PropertyGrid.LineColor%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -434,10 +434,10 @@
         <summary>Collapses all the categories in the <see cref="T:System.Windows.Forms.PropertyGrid" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method collapses the categories in the grid. Those categories that have grid items in the category have a plus sign (+) displayed next to that category.  
-  
+The method collapses the categories in the grid. Those categories that have grid items in the category have a plus sign (+) displayed next to that category.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -581,10 +581,10 @@
           <see langword="true" /> if the commands pane is visible; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is `true` if the selected object has commands available and the <xref:System.Windows.Forms.PropertyGrid.CommandsVisibleIfAvailable%2A> property is `true`.  
-  
+This property is `true` if the selected object has commands available and the <xref:System.Windows.Forms.PropertyGrid.CommandsVisibleIfAvailable%2A> property is `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -641,10 +641,10 @@
         <value>The default location for the shortcut menu if the command is invoked. Typically, this is centered over the selected property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The shortcut menu location is the center of the active property label in the grid. You can use this information to position the shortcut menu when the menu is invoked using the keyboard.  
-  
+The shortcut menu location is the center of the active property label in the grid. You can use this information to position the shortcut menu when the menu is invoked using the keyboard.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -677,10 +677,10 @@
         <value>The controls associated with the property grid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant for this class.  
-  
+This property is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -706,10 +706,10 @@
         <returns>The newly created property tab. Returns <see langword="null" /> in its default implementation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See <xref:System.Windows.Forms.Design.PropertyTab> for more information about creating property tabs.  
-  
+See <xref:System.Windows.Forms.Design.PropertyTab> for more information about creating property tabs.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -760,10 +760,10 @@
         <value>A <see cref="T:System.Type" /> representing the default tab.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation of this property returns <xref:System.Windows.Forms.Design.PropertyTab>. Override this property to specify a modified version of the <xref:System.Windows.Forms.Design.PropertyTab>.  
-  
+The default implementation of this property returns <xref:System.Windows.Forms.Design.PropertyTab>. Override this property to specify a modified version of the <xref:System.Windows.Forms.Design.PropertyTab>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -812,13 +812,13 @@
         <summary>Disposes of the resources (other than memory) used by the <see cref="T:System.Windows.Forms.PropertyGrid" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call <xref:System.Windows.Forms.PropertyGrid.Dispose%2A> when you are finished using the <xref:System.Windows.Forms.PropertyGrid>. The <xref:System.Windows.Forms.PropertyGrid.Dispose%2A> method leaves the <xref:System.Windows.Forms.PropertyGrid> in an unusable state. After calling <xref:System.Windows.Forms.PropertyGrid.Dispose%2A>, you must release all references to the <xref:System.Windows.Forms.PropertyGrid> so the memory it was occupying can be reclaimed by garbage collection.  
-  
+Call <xref:System.Windows.Forms.PropertyGrid.Dispose%2A> when you are finished using the <xref:System.Windows.Forms.PropertyGrid>. The <xref:System.Windows.Forms.PropertyGrid.Dispose%2A> method leaves the <xref:System.Windows.Forms.PropertyGrid> in an unusable state. After calling <xref:System.Windows.Forms.PropertyGrid.Dispose%2A>, you must release all references to the <xref:System.Windows.Forms.PropertyGrid> so the memory it was occupying can be reclaimed by garbage collection.  
+ 
 > [!NOTE]
 >  Always call <xref:System.Windows.Forms.PropertyGrid.Dispose%2A> before you release your last reference to the <xref:System.Windows.Forms.PropertyGrid>. Otherwise, the resources the <xref:System.Windows.Forms.PropertyGrid> is using will not be freed until garbage collection calls the destructor of <xref:System.Windows.Forms.PropertyGrid>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -885,10 +885,10 @@
         <value>The foreground color of the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant for this class.  
-  
+This property is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -917,10 +917,10 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.PropertyGrid.ForeColor" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event is not relevant for this class.  
-  
+This event is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1020,10 +1020,10 @@
           <see langword="true" /> if the help text is visible; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property enables the display of any available Help text associated with the selected property in the grid.  
-  
+This property enables the display of any available Help text associated with the selected property in the grid.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1052,20 +1052,20 @@
         <summary>Occurs when a key is first pressed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.KeyDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.KeyDown> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#522](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#522)]
- [!code-vb[System.Windows.Forms.EventExamples#522](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#522)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.KeyDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.KeyDown> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#522](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#522)]
+[!code-vb[System.Windows.Forms.EventExamples#522](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#522)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1094,20 +1094,20 @@
         <summary>Occurs when a key is pressed while the control has focus.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.KeyPress> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.KeyPress> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#523](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#523)]
- [!code-vb[System.Windows.Forms.EventExamples#523](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#523)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.KeyPress> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.KeyPress> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#523](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#523)]
+[!code-vb[System.Windows.Forms.EventExamples#523](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#523)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1136,20 +1136,20 @@
         <summary>Occurs when a key is released while the control has focus.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.KeyUp> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.KeyUp> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#524](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#524)]
- [!code-vb[System.Windows.Forms.EventExamples#524](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#524)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.KeyUp> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.KeyUp> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#524](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#524)]
+[!code-vb[System.Windows.Forms.EventExamples#524](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#524)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1177,17 +1177,17 @@
           <see langword="true" /> if buttons on the control appear large; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this property to enhance accessibility. Large buttons are 32-by-32 pixels rather than the standard 16-by-16 pixels. Both the large and small buttons are resized according to the system DPI setting when the app.config file contains the following entry:  
-  
+You can use this property to enhance accessibility. Large buttons are 32-by-32 pixels rather than the standard 16-by-16 pixels. Both the large and small buttons are resized according to the system DPI setting when the app.config file contains the following entry:  
+ 
 ```  
 <appSettings>  
   <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
 </appSettings>  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1239,10 +1239,10 @@
         <summary>Occurs when the user clicks the <see cref="T:System.Windows.Forms.PropertyGrid" /> control with the mouse.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1271,10 +1271,10 @@
         <summary>Occurs when the mouse pointer enters the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1303,10 +1303,10 @@
         <summary>Occurs when the mouse pointer leaves the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1335,10 +1335,10 @@
         <summary>Occurs when the mouse pointer moves over the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1367,10 +1367,10 @@
         <summary>Occurs when the mouse pointer is over the control and the user releases a mouse button.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1395,12 +1395,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.ComComponentNameChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnComComponentNameChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnComComponentNameChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1428,12 +1428,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.EnabledChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnEnabledChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnEnabledChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1482,12 +1482,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.GotFocus" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnGotFocus%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnGotFocus%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1515,12 +1515,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnHandleCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnHandleCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1569,12 +1569,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseDown" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnMouseDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnMouseDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1602,12 +1602,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseMove" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnMouseMove%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnMouseMove%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1635,12 +1635,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseUp" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnMouseUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnMouseUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1670,12 +1670,12 @@
         <summary>Raises the <see cref="M:System.Drawing.Design.IPropertyValueUIService.NotifyPropertyValueUIItemsChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnNotifyPropertyValueUIItemsChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnNotifyPropertyValueUIItemsChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1703,12 +1703,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnPaint%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnPaint%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1736,12 +1736,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.PropertyGrid.PropertySortChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnPropertySortChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnPropertySortChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1769,12 +1769,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.PropertyGrid.PropertyTabChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnPropertyTabChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnPropertyTabChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1802,12 +1802,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.PropertyGrid.PropertyValueChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnPropertyValueChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnPropertyValueChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1835,12 +1835,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnResize%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnResize%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1868,12 +1868,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.PropertyGrid.SelectedGridItemChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnSelectedGridItemChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnSelectedGridItemChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1901,12 +1901,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.PropertyGrid.SelectedObjectsChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnSelectedObjectsChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnSelectedObjectsChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1934,12 +1934,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.SystemColorsChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnSystemColorsChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnSystemColorsChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1967,12 +1967,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.VisibleChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.PropertyGrid.OnVisibleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.PropertyGrid.OnVisibleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -2008,10 +2008,10 @@
         <value>A <see cref="T:System.Windows.Forms.Padding" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not relevant for this class.  
-  
+This property is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2040,10 +2040,10 @@
         <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.PropertyGrid.Padding" /> property changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2093,24 +2093,24 @@
         <value>One of the <see cref="T:System.Windows.Forms.PropertySort" /> values. The default is <see cref="F:System.Windows.Forms.PropertySort.Categorized" /> or <see cref="F:System.Windows.Forms.PropertySort.Alphabetical" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you set the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> property, the appearance of the property sort buttons on the grid changes to reflect the current state of the property. Setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to <xref:System.Windows.Forms.PropertySort?displayProperty=fullName> causes the properties to be displayed in the order they were retrieved.  
-  
- Setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to both <xref:System.Windows.Forms.PropertySort> and <xref:System.Windows.Forms.PropertySort> is the same as setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to <xref:System.Windows.Forms.PropertySort> alone. The categorized view is always shown as alphabetical.  
-  
+When you set the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> property, the appearance of the property sort buttons on the grid changes to reflect the current state of the property. Setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to <xref:System.Windows.Forms.PropertySort?displayProperty=fullName> causes the properties to be displayed in the order they were retrieved.  
+ 
+Setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to both <xref:System.Windows.Forms.PropertySort> and <xref:System.Windows.Forms.PropertySort> is the same as setting <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> to <xref:System.Windows.Forms.PropertySort> alone. The categorized view is always shown as alphabetical.  
+ 
 > [!NOTE]
 >  To do custom sorting, implement <xref:System.ComponentModel.ICustomTypeDescriptor> on the component to return the properties in the desired order.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates initializing a <xref:System.Windows.Forms.PropertyGrid> control using the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A>, <xref:System.Windows.Forms.PropertyGrid.ToolbarVisible%2A> properties. In addition, this example sets the <xref:System.Windows.Forms.PropertyGrid> control's <xref:System.Windows.Forms.Control.Visible%2A> property to `false` so the grid will not be visible when the example is run. To run this example paste the following code in a form and call the `InitializePropertyGrid` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method. To view the property grid when the form is running, change the grid's <xref:System.Windows.Forms.Control.Visible%2A> property to `true`, recompile, and rerun the form.  
-  
- [!code-cpp[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CPP/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/VB/form1.vb#2)]  
-  
+The following code example demonstrates initializing a <xref:System.Windows.Forms.PropertyGrid> control using the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A>, <xref:System.Windows.Forms.PropertyGrid.ToolbarVisible%2A> properties. In addition, this example sets the <xref:System.Windows.Forms.PropertyGrid> control's <xref:System.Windows.Forms.Control.Visible%2A> property to `false` so the grid will not be visible when the example is run. To run this example paste the following code in a form and call the `InitializePropertyGrid` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method. To view the property grid when the form is running, change the grid's <xref:System.Windows.Forms.Control.Visible%2A> property to `true`, recompile, and rerun the form.  
+ 
+[!code-cpp[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CPP/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.PropertySort" /> values.</exception>
@@ -2132,20 +2132,20 @@
         <summary>Occurs when the sort mode is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.PropertySortChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.PropertySortChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#532](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#532)]
- [!code-vb[System.Windows.Forms.EventExamples#532](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#532)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.PropertySortChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.PropertySortChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#532](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#532)]
+[!code-vb[System.Windows.Forms.EventExamples#532](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#532)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2166,20 +2166,20 @@
         <summary>Occurs when a property tab changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.PropertyTabChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.PropertyTabChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#531](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#531)]
- [!code-vb[System.Windows.Forms.EventExamples#531](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#531)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.PropertyTabChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.PropertyTabChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#531](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#531)]
+[!code-vb[System.Windows.Forms.EventExamples#531](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#531)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2212,10 +2212,10 @@
         <value>A <see cref="T:System.Windows.Forms.PropertyGrid.PropertyTabCollection" /> containing the collection of <see cref="T:System.Windows.Forms.Design.PropertyTab" /> objects being displayed by the <see cref="T:System.Windows.Forms.PropertyGrid" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All property tabs derive from the <xref:System.Windows.Forms.Design.PropertyTab> class.  
-  
+All property tabs derive from the <xref:System.Windows.Forms.Design.PropertyTab> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2236,20 +2236,20 @@
         <summary>Occurs when a property value changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.PropertyValueChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.PropertyValueChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#530](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#530)]
- [!code-vb[System.Windows.Forms.EventExamples#530](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#530)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.PropertyValueChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.PropertyValueChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#530](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#530)]
+[!code-vb[System.Windows.Forms.EventExamples#530](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#530)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2292,10 +2292,10 @@
         <summary>Refreshes the property tabs of the specified scope.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.PropertyGrid.RefreshTabs%2A> method first deletes the property tabs of the specified scope, it then requires the objects and documents to rebuild the tabs.  
-  
+The <xref:System.Windows.Forms.PropertyGrid.RefreshTabs%2A> method first deletes the property tabs of the specified scope, it then requires the objects and documents to rebuild the tabs.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="tabScope" /> parameter is not the <see langword="Component" /> or <see langword="Document" /> value of <see cref="T:System.ComponentModel.PropertyTabScope" />.</exception>
@@ -2318,10 +2318,10 @@
         <summary>Resets the selected property to its default value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, the <xref:System.Windows.Forms.PropertyGrid.ResetSelectedProperty%2A> method is invoked by right clicking on the property. This method discards changes and attempts to reset the property to its default value.  
-  
+Typically, the <xref:System.Windows.Forms.PropertyGrid.ResetSelectedProperty%2A> method is invoked by right clicking on the property. This method discards changes and attempts to reset the property to its default value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2353,10 +2353,10 @@
         <summary>This method is not relevant for this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not relevant for this class.  
-  
+This method is not relevant for this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2389,12 +2389,12 @@
         <value>The currently selected row in the property grid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each <xref:System.Windows.Forms.GridItem> corresponds to a property of the <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A>.  
-  
- You can use the returned <xref:System.Windows.Forms.GridItem> to view type information, the <xref:System.ComponentModel.PropertyDescriptor>, the parent, and the children of the selected object.  
-  
+Each <xref:System.Windows.Forms.GridItem> corresponds to a property of the <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A>.  
+ 
+You can use the returned <xref:System.Windows.Forms.GridItem> to view type information, the <xref:System.ComponentModel.PropertyDescriptor>, the parent, and the children of the selected object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2415,20 +2415,20 @@
         <summary>Occurs when the selected <see cref="T:System.Windows.Forms.GridItem" /> is changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.SelectedGridItemChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.SelectedGridItemChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#533](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#533)]
- [!code-vb[System.Windows.Forms.EventExamples#533](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#533)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.SelectedGridItemChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.SelectedGridItemChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#533](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#533)]
+[!code-vb[System.Windows.Forms.EventExamples#533](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#533)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2504,10 +2504,10 @@
         <value>The first object in the object list. If there is no currently selected object the return is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> property sets a single object into the grid to be browsed. If multiple objects are being browsed, this property returns the first one in the list. If no objects are selected, `null` is returned.  
-  
+The <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> property sets a single object into the grid to be browsed. If multiple objects are being browsed, this property returns the first one in the list. If no objects are selected, `null` is returned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2537,10 +2537,10 @@
         <value>An array of type <see cref="T:System.Object" />. The default is an empty array.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.PropertyGrid> only displays the properties that are common to all the objects that are in the array. Assigning an array to the <xref:System.Windows.Forms.PropertyGrid.SelectedObjects%2A> replaces the reference to any <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> you might make.  
-  
+The <xref:System.Windows.Forms.PropertyGrid> only displays the properties that are common to all the objects that are in the array. Assigning an array to the <xref:System.Windows.Forms.PropertyGrid.SelectedObjects%2A> replaces the reference to any <xref:System.Windows.Forms.PropertyGrid.SelectedObject%2A> you might make.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One of the items in the array of objects had a null value.</exception>
@@ -2562,20 +2562,20 @@
         <summary>Occurs when the objects selected by the <see cref="P:System.Windows.Forms.PropertyGrid.SelectedObjects" /> property have changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.SelectedObjectsChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.SelectedObjectsChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#534](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#534)]
- [!code-vb[System.Windows.Forms.EventExamples#534](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#534)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.SelectedObjectsChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.SelectedObjectsChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#534](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#534)]
+[!code-vb[System.Windows.Forms.EventExamples#534](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#534)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2608,10 +2608,10 @@
         <value>The <see cref="T:System.Windows.Forms.Design.PropertyTab" /> that is providing the selected view.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All property tabs derive from the <xref:System.Windows.Forms.Design.PropertyTab> class.  
-  
+All property tabs derive from the <xref:System.Windows.Forms.Design.PropertyTab> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2779,10 +2779,10 @@
         <summary>Closes any open drop-down controls on the <see cref="T:System.Windows.Forms.PropertyGrid" /> control. For a description of this member, see <see cref="M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.DropDownDone" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2806,10 +2806,10 @@
           <see langword="true" /> if all the <see cref="T:System.Windows.Forms.PropertyGrid" /> successfully commits changes; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2831,10 +2831,10 @@
         <summary>Activates the <see cref="T:System.Windows.Forms.PropertyGrid" /> control when the user chooses properties for a control in Design view. For a description of this member, see <see cref="M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.HandleF4" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2857,10 +2857,10 @@
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.PropertyGrid" /> control is currently setting one of the properties of its selected object; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2885,12 +2885,12 @@
         <summary>Loads user states from the registry into the <see cref="T:System.Windows.Forms.PropertyGrid" /> control. For a description of this member, see <see cref="M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.LoadState(Microsoft.Win32.RegistryKey)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
-  
- [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] saves some of the <xref:System.Windows.Forms.PropertyGrid> control states, such as the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> and <xref:System.Windows.Forms.PropertyGrid.HelpVisible%2A> properties, to the registry and loads them the next time the user runs the application.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
+ 
+[!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] saves some of the <xref:System.Windows.Forms.PropertyGrid> control states, such as the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> and <xref:System.Windows.Forms.PropertyGrid.HelpVisible%2A> properties, to the registry and loads them the next time the user runs the application.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2915,12 +2915,12 @@
         <summary>Saves user states from the <see cref="T:System.Windows.Forms.PropertyGrid" /> control to the registry. For a description of this member, see <see cref="M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.SaveState(Microsoft.Win32.RegistryKey)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
-  
- [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] saves some of the <xref:System.Windows.Forms.PropertyGrid> control states, such as the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> and <xref:System.Windows.Forms.PropertyGrid.HelpVisible%2A> properties, to the registry and loads them the next time the user runs the application.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid> instance is cast to an <xref:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser> interface.  
+ 
+[!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] saves some of the <xref:System.Windows.Forms.PropertyGrid> control states, such as the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> and <xref:System.Windows.Forms.PropertyGrid.HelpVisible%2A> properties, to the registry and loads them the next time the user runs the application.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2972,20 +2972,20 @@
         <summary>Occurs when the text of the <see cref="T:System.Windows.Forms.PropertyGrid" /> changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.TextChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.TextChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#521](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#521)]
- [!code-vb[System.Windows.Forms.EventExamples#521](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#521)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.PropertyGrid.TextChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.PropertyGrid> named `PropertyGrid1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.PropertyGrid.TextChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#521](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#521)]
+[!code-vb[System.Windows.Forms.EventExamples#521](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#521)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3013,14 +3013,14 @@
           <see langword="true" /> if the toolbar is visible; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates initializing a <xref:System.Windows.Forms.PropertyGrid> control using the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A>, <xref:System.Windows.Forms.PropertyGrid.ToolbarVisible%2A> properties. In addition, this example sets the <xref:System.Windows.Forms.PropertyGrid> control's <xref:System.Windows.Forms.Control.Visible%2A> property to `false` so the grid will not be visible when the example is run. To run this example paste the following code in a form and call the `InitializePropertyGrid` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method. To view the property grid when the form is running, change the grid's <xref:System.Windows.Forms.Control.Visible%2A> property to `true`, recompile, and rerun the form.  
-  
- [!code-cpp[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CPP/form1.cpp#2)]
- [!code-csharp[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CS/form1.cs#2)]
- [!code-vb[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/VB/form1.vb#2)]  
-  
+The following code example demonstrates initializing a <xref:System.Windows.Forms.PropertyGrid> control using the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A>, <xref:System.Windows.Forms.PropertyGrid.ToolbarVisible%2A> properties. In addition, this example sets the <xref:System.Windows.Forms.PropertyGrid> control's <xref:System.Windows.Forms.Control.Visible%2A> property to `false` so the grid will not be visible when the example is run. To run this example paste the following code in a form and call the `InitializePropertyGrid` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method. To view the property grid when the form is running, change the grid's <xref:System.Windows.Forms.Control.Visible%2A> property to `true`, recompile, and rerun the form.  
+ 
+[!code-cpp[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CPP/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.PropertyGridExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3066,12 +3066,12 @@
           <see langword="true" /> if the <see cref="T:System.Drawing.Graphics" /> class should be used to perform text rendering for compatibility with versions 1.0 and 1.1. of the .NET Framework; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `UseCompatibleTextRendering` property is intended to provide visual compatibility between Windows Forms controls that render text using the <xref:System.Windows.Forms.TextRenderer> class and [!INCLUDE[net_v10_short](~/includes/net-v10-short-md.md)] and [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)] applications that perform custom text rendering using the <xref:System.Drawing.Graphics> class. In most cases, if your application is not being upgraded from [!INCLUDE[net_v10_short](~/includes/net-v10-short-md.md)] or [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)], it is recommended that you leave `UseCompatibleTextRendering` set to the default value of `false`.  
-  
- The [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] based <xref:System.Windows.Forms.TextRenderer> class was introduced in the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] to improve performance, make text look better, and improve support for international fonts. In earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] based <xref:System.Drawing.Graphics> class was used to perform all text rendering. [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] calculates character spacing and word wrapping differently from [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)]. In a Windows Forms application that uses the <xref:System.Drawing.Graphics> class to render text, this could cause the text for controls that use <xref:System.Windows.Forms.TextRenderer> to appear different from the other text in the application. To resolve this incompatibility, you can set the `UseCompatibleTextRendering` property to `true` for a specific control. To set `UseCompatibleTextRendering` to `true` for all supported controls in the application, call the <xref:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault%2A?displayProperty=fullName> method with a parameter of `true`.  
-  
+The `UseCompatibleTextRendering` property is intended to provide visual compatibility between Windows Forms controls that render text using the <xref:System.Windows.Forms.TextRenderer> class and [!INCLUDE[net_v10_short](~/includes/net-v10-short-md.md)] and [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)] applications that perform custom text rendering using the <xref:System.Drawing.Graphics> class. In most cases, if your application is not being upgraded from [!INCLUDE[net_v10_short](~/includes/net-v10-short-md.md)] or [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)], it is recommended that you leave `UseCompatibleTextRendering` set to the default value of `false`.  
+ 
+The [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] based <xref:System.Windows.Forms.TextRenderer> class was introduced in the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] to improve performance, make text look better, and improve support for international fonts. In earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] based <xref:System.Drawing.Graphics> class was used to perform all text rendering. [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] calculates character spacing and word wrapping differently from [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)]. In a Windows Forms application that uses the <xref:System.Drawing.Graphics> class to render text, this could cause the text for controls that use <xref:System.Windows.Forms.TextRenderer> to appear different from the other text in the application. To resolve this incompatibility, you can set the `UseCompatibleTextRendering` property to `true` for a specific control. To set `UseCompatibleTextRendering` to `true` for all supported controls in the application, call the <xref:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault%2A?displayProperty=fullName> method with a parameter of `true`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

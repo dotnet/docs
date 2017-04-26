@@ -14,12 +14,12 @@
     <summary>Represents a database field that indicates a one-to-many relationship.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In ASP.NET Dynamic Data applications, the <xref:System.Web.DynamicData.MetaChildrenColumn> class represents a database field that indicates a one-to-many relationship or a parent-child relationship.  
-  
- The <xref:System.Web.DynamicData.MetaChildrenColumn> class represents the field in the parent table of the one-to-many relationship. However, you can access the child table object by using the <xref:System.Web.DynamicData.MetaChildrenColumn.ChildTable%2A> property. You can also retrieve the foreign-key field in the child table by using the <xref:System.Web.DynamicData.MetaChildrenColumn.ColumnInOtherTable%2A> property.  
-  
+In ASP.NET Dynamic Data applications, the <xref:System.Web.DynamicData.MetaChildrenColumn> class represents a database field that indicates a one-to-many relationship or a parent-child relationship.  
+ 
+The <xref:System.Web.DynamicData.MetaChildrenColumn> class represents the field in the parent table of the one-to-many relationship. However, you can access the child table object by using the <xref:System.Web.DynamicData.MetaChildrenColumn.ChildTable%2A> property. You can also retrieve the foreign-key field in the child table by using the <xref:System.Web.DynamicData.MetaChildrenColumn.ColumnInOtherTable%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
         <value>An object that represents the child table of the one-to-many relationship.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.DynamicData.MetaChildrenColumn.ChildTable%2A> property to get an object that represents the child table of the one-to-many relationship. You can access the parent table by using the <xref:System.Web.DynamicData.MetaColumn.Table%2A> property.  
-  
+Use the <xref:System.Web.DynamicData.MetaChildrenColumn.ChildTable%2A> property to get an object that represents the child table of the one-to-many relationship. You can access the parent table by using the <xref:System.Web.DynamicData.MetaColumn.Table%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -86,10 +86,10 @@
         <value>An object that represents the foreign-key field in the child table.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.MetaChildrenColumn.ColumnInOtherTable%2A> property enables you to get a reference to the field in the child table.  
-  
+The <xref:System.Web.DynamicData.MetaChildrenColumn.ColumnInOtherTable%2A> property enables you to get a reference to the field in the child table.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,12 +115,12 @@
         <returns>The path of the list-action page for the child table.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenListPath%2A> method when you want to retrieve the list-action page for the child table using the specified row as a parent. The path is obtained by appending a query-string value to the URL that contains the foreign-key field value specified in the `row` parameter.  
-  
- Using the <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenListPath%2A> method is the same as invoking the <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath%28System.String%2CSystem.Object%29> method and passing the <xref:System.Web.DynamicData.PageAction.List%2A> action as the first parameter.  
-  
+Use the <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenListPath%2A> method when you want to retrieve the list-action page for the child table using the specified row as a parent. The path is obtained by appending a query-string value to the URL that contains the foreign-key field value specified in the `row` parameter.  
+ 
+Using the <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenListPath%2A> method is the same as invoking the <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath%28System.String%2CSystem.Object%29> method and passing the <xref:System.Web.DynamicData.PageAction.List%2A> action as the first parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,14 +148,14 @@
         <returns>The path of the specified action page of the child table.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath%28System.String%2CSystem.Object%29> method returns the path of the specified action page for the child table. The path returned is based on the routes that are defined for the ASP.NET Dynamic Data application and has the specified row as a parent. The path is obtained by appending a query-string value to the URL that contains the foreign-key field value specified in the `row` parameter.  
-  
- If `row` is `null`, his method returns an empty string.  
-  
- You can use the values defined in the <xref:System.Web.DynamicData.PageAction> class for the `action` parameter.  
-  
+The <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath%28System.String%2CSystem.Object%29> method returns the path of the specified action page for the child table. The path returned is based on the routes that are defined for the ASP.NET Dynamic Data application and has the specified row as a parent. The path is obtained by appending a query-string value to the URL that contains the foreign-key field value specified in the `row` parameter.  
+ 
+If `row` is `null`, his method returns an empty string.  
+ 
+You can use the values defined in the <xref:System.Web.DynamicData.PageAction> class for the `action` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,14 +185,14 @@
         <returns>The path of the specified action page of the child table.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath%28System.String%2CSystem.Object%2CSystem.String%29> method returns the path of the specified action page for the child table. The path is based on the specified path with the specified row as a parent. The path is obtained by appending a query-string value to the URL that contains the foreign-key field value specified in the `row` parameter.  
-  
- If `row` is `null`, this method returns an empty string. If `path` is `null`, the <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath%28System.String%2CSystem.Object%2CSystem.String%29> method returns the path based on the routes defined for the ASP.NET Dynamic Data application.  
-  
- You can use the values defined in the <xref:System.Web.DynamicData.PageAction> class for the `action` parameter.  
-  
+The <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath%28System.String%2CSystem.Object%2CSystem.String%29> method returns the path of the specified action page for the child table. The path is based on the specified path with the specified row as a parent. The path is obtained by appending a query-string value to the URL that contains the foreign-key field value specified in the `row` parameter.  
+ 
+If `row` is `null`, this method returns an empty string. If `path` is `null`, the <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath%28System.String%2CSystem.Object%2CSystem.String%29> method returns the path based on the routes defined for the ASP.NET Dynamic Data application.  
+ 
+You can use the values defined in the <xref:System.Web.DynamicData.PageAction> class for the `action` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,10 +214,10 @@
         <summary>Initializes data that might not be available when the constructor is called.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method cannot be called directly. To customize initialization, you can derive from this class and override the `Initialize` method. If you override this method, call the base control's `Initialize` method.  
-  
+This method cannot be called directly. To customize initialization, you can derive from this class and override the `Initialize` method. If you override this method, call the base control's `Initialize` method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

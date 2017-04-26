@@ -30,53 +30,53 @@
  To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/filestream.cs#e23a38af5d11ddd3).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/filestream.cs#e23a38af5d11ddd3). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
- Use the <xref:System.IO.FileStream> class to read from, write to, open, and close files on a file system, and to manipulate other file-related operating system handles, including pipes, standard input, and standard output. You can use the <xref:System.IO.FileStream.Read%2A>, <xref:System.IO.FileStream.Write%2A>, <xref:System.IO.Stream.CopyTo%2A>, and <xref:System.IO.FileStream.Flush%2A> methods to perform synchronous operations, or the <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.FileStream.FlushAsync%2A> methods to perform asynchronous operations. Use the asynchronous methods to perform resource-intensive file operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. <xref:System.IO.FileStream> buffers input and output for better performance.  
-  
+ 
+Use the <xref:System.IO.FileStream> class to read from, write to, open, and close files on a file system, and to manipulate other file-related operating system handles, including pipes, standard input, and standard output. You can use the <xref:System.IO.FileStream.Read%2A>, <xref:System.IO.FileStream.Write%2A>, <xref:System.IO.Stream.CopyTo%2A>, and <xref:System.IO.FileStream.Flush%2A> methods to perform synchronous operations, or the <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.FileStream.FlushAsync%2A> methods to perform asynchronous operations. Use the asynchronous methods to perform resource-intensive file operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. <xref:System.IO.FileStream> buffers input and output for better performance.  
+ 
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
- The <xref:System.IO.FileStream.IsAsync%2A> property detects whether the file handle was opened asynchronously. You specify this value when you create an instance of the <xref:System.IO.FileStream> class using a constructor that has an `isAsync`, `useAsync`, or `options` parameter. When the property is `true`, the stream utilizes overlapped I/O to perform file operations asynchronously. However, the <xref:System.IO.FileStream.IsAsync%2A> property does not have to be `true` to call the <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, or <xref:System.IO.Stream.CopyToAsync%2A> method. When the <xref:System.IO.FileStream.IsAsync%2A> property is `false` and you call the asynchronous read and write operations, the UI thread is still not blocked, but the actual I/O operation is performed synchronously.  
-  
- The <xref:System.IO.FileStream.Seek%2A> method supports random access to files. <xref:System.IO.FileStream.Seek%2A> allows the read/write position to be moved to any position within the file. This is done with byte offset reference point parameters. The byte offset is relative to the seek reference point, which can be the beginning, the current position, or the end of the underlying file, as represented by the three members of the <xref:System.IO.SeekOrigin> enumeration.  
-  
+ 
+The <xref:System.IO.FileStream.IsAsync%2A> property detects whether the file handle was opened asynchronously. You specify this value when you create an instance of the <xref:System.IO.FileStream> class using a constructor that has an `isAsync`, `useAsync`, or `options` parameter. When the property is `true`, the stream utilizes overlapped I/O to perform file operations asynchronously. However, the <xref:System.IO.FileStream.IsAsync%2A> property does not have to be `true` to call the <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, or <xref:System.IO.Stream.CopyToAsync%2A> method. When the <xref:System.IO.FileStream.IsAsync%2A> property is `false` and you call the asynchronous read and write operations, the UI thread is still not blocked, but the actual I/O operation is performed synchronously.  
+ 
+The <xref:System.IO.FileStream.Seek%2A> method supports random access to files. <xref:System.IO.FileStream.Seek%2A> allows the read/write position to be moved to any position within the file. This is done with byte offset reference point parameters. The byte offset is relative to the seek reference point, which can be the beginning, the current position, or the end of the underlying file, as represented by the three members of the <xref:System.IO.SeekOrigin> enumeration.  
+ 
 > [!NOTE]
 >  Disk files always support random access. At the time of construction, the <xref:System.IO.FileStream.CanSeek%2A> property value is set to `true` or `false` depending on the underlying file type.If the underlying file type is FILE_TYPE_DISK, as defined in winbase.h, the <xref:System.IO.FileStream.CanSeek%2A> property value is `true`. Otherwise, the <xref:System.IO.FileStream.CanSeek%2A> property value is `false`.  
-  
- If a process terminates with part of a file locked or closes a file that has outstanding locks, the behavior is undefined.  
-  
- For directory operations and other file operations, see the <xref:System.IO.File>, <xref:System.IO.Directory>, and <xref:System.IO.Path> classes. The <xref:System.IO.File> class is a utility class that has static methods primarily for the creation of <xref:System.IO.FileStream> objects based on file paths. The <xref:System.IO.MemoryStream> class creates a stream from a byte array and is similar to the <xref:System.IO.FileStream> class.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+ 
+If a process terminates with part of a file locked or closes a file that has outstanding locks, the behavior is undefined.  
+ 
+For directory operations and other file operations, see the <xref:System.IO.File>, <xref:System.IO.Directory>, and <xref:System.IO.Path> classes. The <xref:System.IO.File> class is a utility class that has static methods primarily for the creation of <xref:System.IO.FileStream> objects based on file paths. The <xref:System.IO.MemoryStream> class creates a stream from a byte array and is similar to the <xref:System.IO.FileStream> class.  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
 ## Detection of Stream Position Changes  
- When a <xref:System.IO.FileStream> object does not have an exclusive hold on its handle, another thread could access the file handle concurrently and change the position of the operating system's file pointer that is associated with the file handle. In this case, the cached position in the <xref:System.IO.FileStream> object and the cached data in the buffer could be compromised. The <xref:System.IO.FileStream> object routinely performs checks on methods that access the cached buffer to ensure that the operating system's handle position is the same as the cached position used by the <xref:System.IO.FileStream> object.  
+When a <xref:System.IO.FileStream> object does not have an exclusive hold on its handle, another thread could access the file handle concurrently and change the position of the operating system's file pointer that is associated with the file handle. In this case, the cached position in the <xref:System.IO.FileStream> object and the cached data in the buffer could be compromised. The <xref:System.IO.FileStream> object routinely performs checks on methods that access the cached buffer to ensure that the operating system's handle position is the same as the cached position used by the <xref:System.IO.FileStream> object.  
+ 
+If an unexpected change in the handle position is detected in a call to the <xref:System.IO.FileStream.Read%2A> method, the .NET Framework discards the contents of the buffer and reads the stream from the file again. This can affect performance, depending on the size of the file and any other processes that could affect the position of the file stream.  
+ 
+If an unexpected change in the handle position is detected in a call to the <xref:System.IO.FileStream.Write%2A> method, the contents of the buffer are discarded and an <xref:System.IO.IOException> exception is thrown.  
+ 
+A <xref:System.IO.FileStream> object will not have an exclusive hold on its handle when either the <xref:System.IO.FileStream.SafeFileHandle%2A> property is accessed to expose the handle or the <xref:System.IO.FileStream> object is given the <xref:System.IO.FileStream.SafeFileHandle%2A> property in its constructor.  
+ 
   
- If an unexpected change in the handle position is detected in a call to the <xref:System.IO.FileStream.Read%2A> method, the .NET Framework discards the contents of the buffer and reads the stream from the file again. This can affect performance, depending on the size of the file and any other processes that could affect the position of the file stream.  
-  
- If an unexpected change in the handle position is detected in a call to the <xref:System.IO.FileStream.Write%2A> method, the contents of the buffer are discarded and an <xref:System.IO.IOException> exception is thrown.  
-  
- A <xref:System.IO.FileStream> object will not have an exclusive hold on its handle when either the <xref:System.IO.FileStream.SafeFileHandle%2A> property is accessed to expose the handle or the <xref:System.IO.FileStream> object is given the <xref:System.IO.FileStream.SafeFileHandle%2A> property in its constructor.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates some of the <xref:System.IO.FileStream> constructors.  
-  
- [!code-cpp[fstream class#1](~/samples/snippets/cpp/VS_Snippets_CLR/FStream Class/CPP/fstream class.cpp#1)]
- [!code-csharp[fstream class#1](~/samples/snippets/csharp/VS_Snippets_CLR/FStream Class/CS/fstream class.cs#1)]
- [!code-vb[fstream class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FStream Class/VB/fstream class.vb#1)]  
-  
- The following example shows how to write to a file asynchronously. This code runs in a WPF app that has a TextBlock named UserInput and a button hooked up to a Click event handler that is named Button_Click. The file path needs to be changed to a file than exits on the computer.  
-  
- [!code-csharp[Asynchronous_File_IO_async#3](~/samples/snippets/csharp/VS_Snippets_CLR/Asynchronous_File_IO_async/cs/example3.cs#3)]
- [!code-vb[Asynchronous_File_IO_async#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/Asynchronous_File_IO_async/vb/example3.vb#3)]  
-  
+The following example demonstrates some of the <xref:System.IO.FileStream> constructors.  
+ 
+[!code-cpp[fstream class#1](~/samples/snippets/cpp/VS_Snippets_CLR/FStream Class/CPP/fstream class.cpp#1)]
+[!code-csharp[fstream class#1](~/samples/snippets/csharp/VS_Snippets_CLR/FStream Class/CS/fstream class.cs#1)]
+[!code-vb[fstream class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FStream Class/VB/fstream class.vb#1)]  
+ 
+The following example shows how to write to a file asynchronously. This code runs in a WPF app that has a TextBlock named UserInput and a button hooked up to a Click event handler that is named Button_Click. The file path needs to be changed to a file than exits on the computer.  
+ 
+[!code-csharp[Asynchronous_File_IO_async#3](~/samples/snippets/csharp/VS_Snippets_CLR/Asynchronous_File_IO_async/cs/example3.cs#3)]
+[!code-vb[Asynchronous_File_IO_async#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/Asynchronous_File_IO_async/vb/example3.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -109,19 +109,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class for the specified file handle, with the specified read/write permission.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.IO.Stream.Close%2A> is called, the handle is also closed and the file's handle count is decremented.  
-  
- `FileStream` assumes that it has exclusive control over the handle. Reading, writing, or seeking while a `FileStream` is also holding a handle could result in data corruption. For data safety, call <xref:System.IO.FileStream.Flush%2A> before using the handle, and avoid calling any methods other than `Close` after you are done using the handle.  
-  
+When <xref:System.IO.Stream.Close%2A> is called, the handle is also closed and the file's handle count is decremented.  
+ 
+`FileStream` assumes that it has exclusive control over the handle. Reading, writing, or seeking while a `FileStream` is also holding a handle could result in data corruption. For data safety, call <xref:System.IO.FileStream.Flush%2A> before using the handle, and avoid calling any methods other than `Close` after you are done using the handle.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
-  
- `FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+ 
+`FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -165,19 +165,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class for the specified file handle, with the specified read/write permission.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When <xref:System.IO.Stream.Close%2A> is called, the handle is also closed and the file's handle count is decremented.  
-  
- `FileStream` assumes that it has exclusive control over the handle. Reading, writing, or seeking while a `FileStream` is also holding a handle could result in data corruption. For data safety, call <xref:System.IO.FileStream.Flush%2A> before using the handle, and avoid calling any methods other than `Close` after you are done using the handle.  
-  
+When <xref:System.IO.Stream.Close%2A> is called, the handle is also closed and the file's handle count is decremented.  
+ 
+`FileStream` assumes that it has exclusive control over the handle. Reading, writing, or seeking while a `FileStream` is also holding a handle could result in data corruption. For data safety, call <xref:System.IO.FileStream.Flush%2A> before using the handle, and avoid calling any methods other than `Close` after you are done using the handle.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
-  
- `FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+ 
+`FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -220,41 +220,41 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class with the specified path and creation mode.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
-  
- The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
-  
- The constructor is given read/write access to the file, and it is opened sharing Read access (that is, requests to open the file for writing by this or another process will fail until the `FileStream` object has been closed, but read attempts will succeed).  
-  
- You cannot use this constructor to open read-only files; instead, you must use a constructor that accepts a `FileAccess` parameter with the value set to `FileAccess.Read`.  
-  
- The buffer size is set to the default size of 4096 bytes (4 KB).  
-  
+The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
+ 
+The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
+ 
+The constructor is given read/write access to the file, and it is opened sharing Read access (that is, requests to open the file for writing by this or another process will fail until the `FileStream` object has been closed, but read attempts will succeed).  
+ 
+You cannot use this constructor to open read-only files; instead, you must use a constructor that accepts a `FileAccess` parameter with the value set to `FileAccess.Read`.  
+ 
+The buffer size is set to the default size of 4096 bytes (4 KB).  
+ 
 > [!NOTE]
 >  `path` is not required to be a file stored on disk; it can be any part of a system that supports access through streams. For example, depending on the system, this class can access a physical device.  
-  
- <xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
-  
- `FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
-  
- For constructors without a <xref:System.IO.FileAccess> parameter, if the `mode` parameter is set to <xref:System.IO.FileMode>, <xref:System.IO.FileAccess> is the default access. Otherwise, the access is set to <xref:System.IO.FileAccess>.  
-  
+ 
+<xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
+ 
+`FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
+ 
+For constructors without a <xref:System.IO.FileAccess> parameter, if the `mode` parameter is set to <xref:System.IO.FileMode>, <xref:System.IO.FileAccess> is the default access. Otherwise, the access is set to <xref:System.IO.FileAccess>.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to write data to a file, byte by byte, and then verify that the data was written correctly.  
-  
- [!code-cpp[System.IO.FileStream1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream1/CPP/source.cpp#1)]
- [!code-csharp[System.IO.FileStream1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream1/CS/source.cs#1)]
- [!code-vb[System.IO.FileStream1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream1/VB/source.vb#1)]  
-  
+The following code example shows how to write data to a file, byte by byte, and then verify that the data was written correctly.  
+ 
+[!code-cpp[System.IO.FileStream1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream1/CPP/source.cpp#1)]
+[!code-csharp[System.IO.FileStream1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream1/CS/source.cs#1)]
+[!code-vb[System.IO.FileStream1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream1/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -311,17 +311,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class for the specified file handle, with the specified read/write permission, and buffer size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `FileStream` assumes that it has exclusive control over the handle. Reading, writing, or seeking while a `FileStream` is also holding a handle could result in data corruption. For data safety, call <xref:System.IO.FileStream.Flush%2A> before using the handle, and avoid calling any methods other than `Close` after you are done using the handle. Alternately, read and write to the handle before calling this `FileStream` constructor.  
-  
- `FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
-  
+`FileStream` assumes that it has exclusive control over the handle. Reading, writing, or seeking while a `FileStream` is also holding a handle could result in data corruption. For data safety, call <xref:System.IO.FileStream.Flush%2A> before using the handle, and avoid calling any methods other than `Close` after you are done using the handle. Alternately, read and write to the handle before calling this `FileStream` constructor.  
+ 
+`FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="handle" /> parameter is an invalid handle.  
@@ -373,19 +373,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class for the specified file handle, with the specified read/write permission and <see langword="FileStream" /> instance ownership.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `FileStream` object is given the specified access to the file. The ownership of the handle will be as specified. If this process owns the handle, a call to the <xref:System.IO.Stream.Close%2A> method will also close the handle and the file's handle count is decremented. The `FileStream` object is given the default buffer size of 4096 bytes.  
-  
- `FileStream` assumes that it has exclusive control over the handle. Reading, writing, or seeking while a `FileStream` is also holding a handle could result in data corruption. For data safety, call <xref:System.IO.FileStream.Flush%2A> before using the handle, and avoid calling methods other than `Close` after you are done using the handle.  
-  
- `FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
-  
+The `FileStream` object is given the specified access to the file. The ownership of the handle will be as specified. If this process owns the handle, a call to the <xref:System.IO.Stream.Close%2A> method will also close the handle and the file's handle count is decremented. The `FileStream` object is given the default buffer size of 4096 bytes.  
+ 
+`FileStream` assumes that it has exclusive control over the handle. Reading, writing, or seeking while a `FileStream` is also holding a handle could result in data corruption. For data safety, call <xref:System.IO.FileStream.Flush%2A> before using the handle, and avoid calling methods other than `Close` after you are done using the handle.  
+ 
+`FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -430,26 +430,26 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class with the specified path, creation mode, and read/write permission.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
-  
- The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
-  
- The constructor is given read/write access to the file, and it is opened sharing Read access (that is, requests to open the file for writing by this or another process will fail until the `FileStream` object has been closed, but read attempts will succeed). The buffer size is set to the default size of 4096 bytes (4 KB).  
-  
+The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
+ 
+The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
+ 
+The constructor is given read/write access to the file, and it is opened sharing Read access (that is, requests to open the file for writing by this or another process will fail until the `FileStream` object has been closed, but read attempts will succeed). The buffer size is set to the default size of 4096 bytes (4 KB).  
+ 
 > [!NOTE]
 >  `path` is not required to be a file stored on disk; it can be any part of a system that supports access through streams. For example, depending on the system, this class can access a physical device.  
-  
- <xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
-  
- `FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
-  
+ 
+<xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
+ 
+`FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -510,19 +510,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class for the specified file handle, with the specified read/write permission, buffer size, and synchronous or asynchronous state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You set the `isAsync` parameter to `true` to open the file handle asynchronously. When the parameter is `true`, the stream utilizes overlapped I/O to perform file operations asynchronously. However, the parameter does not have to be `true` to call the <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, or <xref:System.IO.Stream.CopyToAsync%2A> method. When the `isAsync` parameter is `false` and you call the asynchronous read and write operations, the UI thread is still not blocked, but the actual I/O operation is performed synchronously.  
-  
- `FileStream` assumes that it has exclusive control over the handle. Reading, writing, or seeking while a `FileStream` is also holding a handle could result in data corruption. For data safety, call <xref:System.IO.FileStream.Flush%2A> before using the handle, and avoid calling any methods other than `Close` after you are done using the handle. Alternately, read and write to the handle before calling this `FileStream` constructor.  
-  
- `FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
-  
+You set the `isAsync` parameter to `true` to open the file handle asynchronously. When the parameter is `true`, the stream utilizes overlapped I/O to perform file operations asynchronously. However, the parameter does not have to be `true` to call the <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, or <xref:System.IO.Stream.CopyToAsync%2A> method. When the `isAsync` parameter is `false` and you call the asynchronous read and write operations, the UI thread is still not blocked, but the actual I/O operation is performed synchronously.  
+ 
+`FileStream` assumes that it has exclusive control over the handle. Reading, writing, or seeking while a `FileStream` is also holding a handle could result in data corruption. For data safety, call <xref:System.IO.FileStream.Flush%2A> before using the handle, and avoid calling any methods other than `Close` after you are done using the handle. Alternately, read and write to the handle before calling this `FileStream` constructor.  
+ 
+`FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="handle" /> parameter is an invalid handle.  
@@ -576,19 +576,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class for the specified file handle, with the specified read/write permission, <see langword="FileStream" /> instance ownership, and buffer size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `FileStream` object is given the specified access to the file. The ownership of the handle will be as specified. If this `FileStream` owns the handle, a call to the <xref:System.IO.Stream.Close%2A> method will also close the handle. In particular, the file's handle count is decremented. The `FileStream` object is given the specified buffer size.  
-  
- `FileStream` assumes that it has exclusive control over the handle. Reading, writing, or seeking while a `FileStream` is also holding a handle could result in data corruption. For data safety, call <xref:System.IO.FileStream.Flush%2A> before using the handle, and avoid calling any methods other than `Close` after you are done using the handle. Alternately, read and write to the handle before calling this `FileStream` constructor.  
-  
- `FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
-  
+The `FileStream` object is given the specified access to the file. The ownership of the handle will be as specified. If this `FileStream` owns the handle, a call to the <xref:System.IO.Stream.Close%2A> method will also close the handle. In particular, the file's handle count is decremented. The `FileStream` object is given the specified buffer size.  
+ 
+`FileStream` assumes that it has exclusive control over the handle. Reading, writing, or seeking while a `FileStream` is also holding a handle could result in data corruption. For data safety, call <xref:System.IO.FileStream.Flush%2A> before using the handle, and avoid calling any methods other than `Close` after you are done using the handle. Alternately, read and write to the handle before calling this `FileStream` constructor.  
+ 
+`FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -635,33 +635,33 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class with the specified path, creation mode, read/write permission, and sharing permission.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
-  
- The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
-  
- The constructor is given read/write access to the file, and it is opened sharing Read access (that is, requests to open the file for writing by this or another process will fail until the `FileStream` object has been closed, but read attempts will succeed). The buffer size is set to the default size of 4096 bytes (4 KB).  
-  
+The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
+ 
+The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
+ 
+The constructor is given read/write access to the file, and it is opened sharing Read access (that is, requests to open the file for writing by this or another process will fail until the `FileStream` object has been closed, but read attempts will succeed). The buffer size is set to the default size of 4096 bytes (4 KB).  
+ 
 > [!NOTE]
 >  `path` is not required to be a file stored on disk; it can be any part of a system that supports access through streams. For example, depending on the system, this class can access a physical device.  
-  
- <xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
-  
+ 
+<xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.FileStream.Lock%2A> method.  
-  
- [!code-cpp[System.IO.FileStream3#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream3/CPP/fstreamlock.cpp#2)]
- [!code-csharp[System.IO.FileStream3#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream3/CS/fstreamlock.cs#2)]
- [!code-vb[System.IO.FileStream3#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream3/VB/fstreamlock.vb#2)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.FileStream.Lock%2A> method.  
+ 
+[!code-cpp[System.IO.FileStream3#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream3/CPP/fstreamlock.cpp#2)]
+[!code-csharp[System.IO.FileStream3#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream3/CS/fstreamlock.cs#2)]
+[!code-vb[System.IO.FileStream3#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream3/VB/fstreamlock.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -730,19 +730,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class for the specified file handle, with the specified read/write permission, <see langword="FileStream" /> instance ownership, buffer size, and synchronous or asynchronous state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `FileStream` object is given the specified access to the file. The ownership of the handle will be as specified. If this `FileStream` owns the handle, a call to the <xref:System.IO.Stream.Close%2A> method will also close the handle. In particular, the file's handle count is decremented. The `FileStream` object is given the specified buffer size.  
-  
- `FileStream` assumes that it has exclusive control over the handle. Reading, writing, or seeking while a `FileStream` is also holding a handle could result in data corruption. For data safety, call <xref:System.IO.FileStream.Flush%2A> before using the handle, and avoid calling any methods other than `Close` after you are done using the handle. Alternately, read and write to the handle before calling this `FileStream` constructor.  
-  
- `FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
-  
+The `FileStream` object is given the specified access to the file. The ownership of the handle will be as specified. If this `FileStream` owns the handle, a call to the <xref:System.IO.Stream.Close%2A> method will also close the handle. In particular, the file's handle count is decremented. The `FileStream` object is given the specified buffer size.  
+ 
+`FileStream` assumes that it has exclusive control over the handle. Reading, writing, or seeking while a `FileStream` is also holding a handle could result in data corruption. For data safety, call <xref:System.IO.FileStream.Flush%2A> before using the handle, and avoid calling any methods other than `Close` after you are done using the handle. Alternately, read and write to the handle before calling this `FileStream` constructor.  
+ 
+`FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -792,22 +792,22 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class with the specified path, creation mode, read/write and sharing permission, and buffer size.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
-  
- The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
-  
+The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
+ 
+The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
+ 
 > [!NOTE]
 >  `path` is not required to be a file stored on disk; it can be any part of a system that supports access through streams. For example, depending on the system, this class can access a physical device.  
-  
- <xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
-  
+ 
+<xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -879,31 +879,31 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class with the specified path, creation mode, read/write and sharing permission, buffer size, and synchronous or asynchronous state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
-  
- The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
-  
+The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
+ 
+The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
+ 
 > [!NOTE]
 >  `path` is not required to be a file stored on disk; it can be any part of a system that supports access through streams. For example, depending on the system, this class can access a physical device.  
-  
- <xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
-  
+ 
+<xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to asynchronously write data to a file and then verify that the data was written correctly. A `State` object is created to pass information from the main thread to the `EndReadCallback` and `EndWriteCallback` methods.  
-  
- [!code-cpp[System.IO.FileStream2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream2/CPP/source.cpp#1)]
- [!code-csharp[System.IO.FileStream2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream2/CS/source.cs#1)]
- [!code-vb[System.IO.FileStream2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream2/VB/source.vb#1)]  
-  
+The following code example shows how to asynchronously write data to a file and then verify that the data was written correctly. A `State` object is created to pass information from the main thread to the `EndReadCallback` and `EndWriteCallback` methods.  
+ 
+[!code-cpp[System.IO.FileStream2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream2/CPP/source.cpp#1)]
+[!code-csharp[System.IO.FileStream2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream2/CS/source.cs#1)]
+[!code-vb[System.IO.FileStream2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream2/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -975,33 +975,33 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class with the specified path, creation mode, read/write and sharing permission, the access other FileStreams can have to the same file, the buffer size, and additional file options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
-  
- The `fileOptions` parameter is used to provide access to more advanced operations that can be leveraged when creating a <xref:System.IO.FileStream> object.  
-  
- The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
-  
+The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
+ 
+The `fileOptions` parameter is used to provide access to more advanced operations that can be leveraged when creating a <xref:System.IO.FileStream> object.  
+ 
+The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
+ 
 > [!NOTE]
 >  `path` is not required to be a file stored on disk; it can be any part of a system that supports access through streams. For example, depending on the system, this class can access a physical device.  
-  
- <xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
-  
+ 
+<xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example writes data to a file and then reads the data using the <xref:System.IO.FileStream> object.  
-  
- [!code-cpp[IO.FileStream.ctor1#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.FileStream.ctor1/cpp/example.cpp#1)]
- [!code-csharp[IO.FileStream.ctor1#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.FileStream.ctor1/CS/example.cs#1)]
- [!code-vb[IO.FileStream.ctor1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.FileStream.ctor1/VB/example.vb#1)]  
-  
+The following example writes data to a file and then reads the data using the <xref:System.IO.FileStream> object.  
+ 
+[!code-cpp[IO.FileStream.ctor1#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.FileStream.ctor1/cpp/example.cpp#1)]
+[!code-csharp[IO.FileStream.ctor1#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.FileStream.ctor1/CS/example.cs#1)]
+[!code-vb[IO.FileStream.ctor1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.FileStream.ctor1/VB/example.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1065,26 +1065,26 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class with the specified path, creation mode, access rights and sharing permission, the buffer size, and additional file options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
-  
- Use this <xref:System.IO.FileStream.%23ctor%2A> constructor to apply access rights at the point of creation of a file. To access or modify rights on an existing file, consider using the <xref:System.IO.File.GetAccessControl%2A> and <xref:System.IO.File.SetAccessControl%2A> methods.  
-  
- The `fileOptions` parameter is used to provide access to more advanced operations that can be leveraged when creating a <xref:System.IO.FileStream> object.  
-  
- The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
-  
+The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
+ 
+Use this <xref:System.IO.FileStream.%23ctor%2A> constructor to apply access rights at the point of creation of a file. To access or modify rights on an existing file, consider using the <xref:System.IO.File.GetAccessControl%2A> and <xref:System.IO.File.SetAccessControl%2A> methods.  
+ 
+The `fileOptions` parameter is used to provide access to more advanced operations that can be leveraged when creating a <xref:System.IO.FileStream> object.  
+ 
+The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
+ 
 > [!NOTE]
 >  `path` is not required to be a file stored on disk; it can be any part of a system that supports access through streams. For example, depending on the system, this class can access a physical device.  
-  
- <xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
-  
+ 
+<xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1151,35 +1151,35 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileStream" /> class with the specified path, creation mode, access rights and sharing permission, the buffer size, additional file options, access control and audit security.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
-  
- Use this <xref:System.IO.FileStream.%23ctor%2A> constructor to apply access rights at the point of creation of a file. To access or modify rights on an existing file, consider using the <xref:System.IO.File.GetAccessControl%2A> and <xref:System.IO.File.SetAccessControl%2A> methods.  
-  
- The `fileOptions` parameter is used to provide access to more advanced operations that can be leveraged when creating a <xref:System.IO.FileStream> object.  
-  
- The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
-  
+The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
+ 
+Use this <xref:System.IO.FileStream.%23ctor%2A> constructor to apply access rights at the point of creation of a file. To access or modify rights on an existing file, consider using the <xref:System.IO.File.GetAccessControl%2A> and <xref:System.IO.File.SetAccessControl%2A> methods.  
+ 
+The `fileOptions` parameter is used to provide access to more advanced operations that can be leveraged when creating a <xref:System.IO.FileStream> object.  
+ 
+The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
+ 
 > [!NOTE]
 >  `path` is not required to be a file stored on disk; it can be any part of a system that supports access through streams. For example, depending on the system, this class can access a physical device.  
-  
- <xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
-  
+ 
+<xref:System.IO.Stream.CanSeek%2A> is `true` for all <xref:System.IO.FileStream> objects that encapsulate files. If `path` indicates a device that does not support seeking, the <xref:System.IO.FileStream.CanSeek%2A> property on the resulting <xref:System.IO.FileStream> is `false`. For additional information, see <xref:System.IO.Stream.CanSeek%2A>.  
+ 
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example writes data to a file and then reads the data using the <xref:System.IO.FileStream> object.  
-  
- [!code-cpp[IO.FileStream.ctor2#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.FileStream.ctor2/cpp/example.cpp#1)]
- [!code-csharp[IO.FileStream.ctor2#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.FileStream.ctor2/CS/example.cs#1)]
- [!code-vb[IO.FileStream.ctor2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.FileStream.ctor2/VB/example.vb#1)]  
-  
+The following example writes data to a file and then reads the data using the <xref:System.IO.FileStream> object.  
+ 
+[!code-cpp[IO.FileStream.ctor2#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.FileStream.ctor2/cpp/example.cpp#1)]
+[!code-csharp[IO.FileStream.ctor2#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.FileStream.ctor2/CS/example.cs#1)]
+[!code-vb[IO.FileStream.ctor2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.FileStream.ctor2/VB/example.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1250,34 +1250,34 @@
         <returns>An object that references the asynchronous read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.FileStream.BeginRead%2A> and <xref:System.IO.FileStream.EndRead%2A> to implement asynchronous file operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.FileStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
-  
- <xref:System.IO.FileStream.EndRead%2A> must be called exactly once for every call to <xref:System.IO.FileStream.BeginRead%2A>. Failing to end a read process before beginning another read can cause undesirable behavior such as deadlock.  
-  
- <xref:System.IO.FileStream> provides two different modes of operation: synchronous I/O and asynchronous I/O. While either can be used, the underlying operating system resources might allow access in only one of these modes. By default, <xref:System.IO.FileStream> opens the operating system handle synchronously. In Windows, this slows down asynchronous methods. If asynchronous methods are used, use the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
-  
+In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.FileStream.BeginRead%2A> and <xref:System.IO.FileStream.EndRead%2A> to implement asynchronous file operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.FileStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
+ 
+<xref:System.IO.FileStream.EndRead%2A> must be called exactly once for every call to <xref:System.IO.FileStream.BeginRead%2A>. Failing to end a read process before beginning another read can cause undesirable behavior such as deadlock.  
+ 
+<xref:System.IO.FileStream> provides two different modes of operation: synchronous I/O and asynchronous I/O. While either can be used, the underlying operating system resources might allow access in only one of these modes. By default, <xref:System.IO.FileStream> opens the operating system handle synchronously. In Windows, this slows down asynchronous methods. If asynchronous methods are used, use the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
+ 
 > [!NOTE]
 >  Use the <xref:System.IO.FileStream.CanRead%2A> property to determine whether the current instance supports reading. For additional information, see <xref:System.IO.Stream.CanRead%2A>.  
+ 
+If a stream is closed or you pass an invalid argument, exceptions are thrown immediately from <xref:System.IO.FileStream.BeginRead%2A>. Errors that occur during an asynchronous read request, such as a disk failure during the IO request, occur on the thread pool thread and become visible upon a call to <xref:System.IO.FileStream.EndRead%2A>.  
+ 
+<xref:System.IO.Stream.EndRead%2A> must be called with this <xref:System.IAsyncResult> to find out how many bytes were read.  
+ 
+Multiple simultaneous asynchronous requests render the request completion order uncertain.  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- If a stream is closed or you pass an invalid argument, exceptions are thrown immediately from <xref:System.IO.FileStream.BeginRead%2A>. Errors that occur during an asynchronous read request, such as a disk failure during the IO request, occur on the thread pool thread and become visible upon a call to <xref:System.IO.FileStream.EndRead%2A>.  
-  
- <xref:System.IO.Stream.EndRead%2A> must be called with this <xref:System.IAsyncResult> to find out how many bytes were read.  
-  
- Multiple simultaneous asynchronous requests render the request completion order uncertain.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
-  
- [!code-cpp[System.IO.FileStream2#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream2/CPP/source.cpp#3)]
- [!code-csharp[System.IO.FileStream2#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream2/CS/source.cs#3)]
- [!code-vb[System.IO.FileStream2#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream2/VB/source.vb#3)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
+ 
+[!code-cpp[System.IO.FileStream2#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream2/CPP/source.cpp#3)]
+[!code-csharp[System.IO.FileStream2#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream2/CS/source.cs#3)]
+[!code-vb[System.IO.FileStream2#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream2/VB/source.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The array length minus <paramref name="offset" /> is less than <paramref name="numBytes" />.</exception>
@@ -1322,31 +1322,31 @@
         <returns>An object that references the asynchronous write.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.FileStream.BeginWrite%2A> and <xref:System.IO.FileStream.EndWrite%2A> to implement asynchronous file operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.FileStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
+In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.FileStream.BeginWrite%2A> and <xref:System.IO.FileStream.EndWrite%2A> to implement asynchronous file operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.FileStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
+ 
+<xref:System.IO.FileStream.EndWrite%2A> must be called exactly once on every <xref:System.IAsyncResult> from <xref:System.IO.FileStream.BeginWrite%2A>. <xref:System.IO.FileStream.EndWrite%2A> will block until the I/O operation has completed.  
+ 
+This method overrides <xref:System.IO.Stream.BeginWrite%2A>.  
+ 
+<xref:System.IO.FileStream> provides two different modes of operation: synchronous I/O and asynchronous I/O. While either can be used, the underlying operating system resources might allow access in only one of these modes. By default, <xref:System.IO.FileStream> opens the operating system handle synchronously. In Windows, this slows down asynchronous methods. If asynchronous methods are used, use the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
+ 
+If a stream is closed or you pass an invalid argument, exceptions are thrown immediately from <xref:System.IO.FileStream.BeginWrite%2A>. Errors that occur during an asynchronous write request, such as a disk failure during the IO request, occur on the thread pool thread and become visible upon a call to <xref:System.IO.FileStream.EndWrite%2A>.  
+ 
+Multiple simultaneous asynchronous requests render the request completion order uncertain.  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- <xref:System.IO.FileStream.EndWrite%2A> must be called exactly once on every <xref:System.IAsyncResult> from <xref:System.IO.FileStream.BeginWrite%2A>. <xref:System.IO.FileStream.EndWrite%2A> will block until the I/O operation has completed.  
-  
- This method overrides <xref:System.IO.Stream.BeginWrite%2A>.  
-  
- <xref:System.IO.FileStream> provides two different modes of operation: synchronous I/O and asynchronous I/O. While either can be used, the underlying operating system resources might allow access in only one of these modes. By default, <xref:System.IO.FileStream> opens the operating system handle synchronously. In Windows, this slows down asynchronous methods. If asynchronous methods are used, use the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
-  
- If a stream is closed or you pass an invalid argument, exceptions are thrown immediately from <xref:System.IO.FileStream.BeginWrite%2A>. Errors that occur during an asynchronous write request, such as a disk failure during the IO request, occur on the thread pool thread and become visible upon a call to <xref:System.IO.FileStream.EndWrite%2A>.  
-  
- Multiple simultaneous asynchronous requests render the request completion order uncertain.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
-  
- [!code-cpp[System.IO.FileStream2#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream2/CPP/source.cpp#2)]
- [!code-csharp[System.IO.FileStream2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream2/CS/source.cs#2)]
- [!code-vb[System.IO.FileStream2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream2/VB/source.vb#2)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
+ 
+[!code-cpp[System.IO.FileStream2#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream2/CPP/source.cpp#2)]
+[!code-csharp[System.IO.FileStream2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream2/CS/source.cs#2)]
+[!code-vb[System.IO.FileStream2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream2/VB/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1387,21 +1387,21 @@
           <see langword="true" /> if the stream supports reading; <see langword="false" /> if the stream is closed or was opened with write-only access.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a class derived from <xref:System.IO.Stream> does not support reading, calls to the <xref:System.IO.FileStream.Read%2A>, <xref:System.IO.FileStream.ReadByte%2A>, and <xref:System.IO.FileStream.BeginRead%2A> methods throw a <xref:System.NotSupportedException>.  
+If a class derived from <xref:System.IO.Stream> does not support reading, calls to the <xref:System.IO.FileStream.Read%2A>, <xref:System.IO.FileStream.ReadByte%2A>, and <xref:System.IO.FileStream.BeginRead%2A> methods throw a <xref:System.NotSupportedException>.  
+ 
+If the stream is closed, this property returns `false`.  
+ 
   
- If the stream is closed, this property returns `false`.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates a use of the `CanRead` property. The output of this code is "MyFile.txt is not writable." To get the output message "MyFile.txt can be both written to and read from.", change the `FileAccess` parameter to `ReadWrite` in the `FileStream` constructor.  
-  
- [!code-cpp[Classic FileStream.CanRead Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileStream.CanRead Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileStream.CanRead Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileStream.CanRead Example/CS/source.cs#1)]
- [!code-vb[Classic FileStream.CanRead Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileStream.CanRead Example/VB/source.vb#1)]  
-  
+The following example demonstrates a use of the `CanRead` property. The output of this code is "MyFile.txt is not writable." To get the output message "MyFile.txt can be both written to and read from.", change the `FileAccess` parameter to `ReadWrite` in the `FileStream` constructor.  
+ 
+[!code-cpp[Classic FileStream.CanRead Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileStream.CanRead Example/CPP/source.cpp#1)]
+[!code-csharp[Classic FileStream.CanRead Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileStream.CanRead Example/CS/source.cs#1)]
+[!code-vb[Classic FileStream.CanRead Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileStream.CanRead Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1433,21 +1433,21 @@
           <see langword="true" /> if the stream supports seeking; <see langword="false" /> if the stream is closed or if the <see langword="FileStream" /> was constructed from an operating-system handle such as a pipe or output to the console.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a class derived from <xref:System.IO.Stream> does not support seeking, calls to <xref:System.IO.FileStream.Length%2A>, <xref:System.IO.FileStream.SetLength%2A>, <xref:System.IO.FileStream.Position%2A>, and <xref:System.IO.FileStream.Seek%2A> throw a <xref:System.NotSupportedException>.  
+If a class derived from <xref:System.IO.Stream> does not support seeking, calls to <xref:System.IO.FileStream.Length%2A>, <xref:System.IO.FileStream.SetLength%2A>, <xref:System.IO.FileStream.Position%2A>, and <xref:System.IO.FileStream.Seek%2A> throw a <xref:System.NotSupportedException>.  
+ 
+If the stream is closed, this property returns `false`.  
+ 
   
- If the stream is closed, this property returns `false`.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the `CanSeek` property to check whether a stream supports seeking.  
-  
- [!code-cpp[fstream canseek#1](~/samples/snippets/cpp/VS_Snippets_CLR/FStream CanSeek/CPP/fstream canseek.cpp#1)]
- [!code-csharp[fstream canseek#1](~/samples/snippets/csharp/VS_Snippets_CLR/FStream CanSeek/CS/fstream canseek.cs#1)]
- [!code-vb[fstream canseek#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FStream CanSeek/VB/fstream canseek.vb#1)]  
-  
+The following example uses the `CanSeek` property to check whether a stream supports seeking.  
+ 
+[!code-cpp[fstream canseek#1](~/samples/snippets/cpp/VS_Snippets_CLR/FStream CanSeek/CPP/fstream canseek.cpp#1)]
+[!code-csharp[fstream canseek#1](~/samples/snippets/csharp/VS_Snippets_CLR/FStream CanSeek/CS/fstream canseek.cs#1)]
+[!code-vb[fstream canseek#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FStream CanSeek/VB/fstream canseek.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1479,27 +1479,27 @@
           <see langword="true" /> if the stream supports writing; <see langword="false" /> if the stream is closed or was opened with read-only access.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a class derived from <xref:System.IO.Stream> does not support writing, a call to <xref:System.IO.FileStream.SetLength%2A>, <xref:System.IO.FileStream.Write%2A>, <xref:System.IO.FileStream.BeginWrite%2A>, or <xref:System.IO.FileStream.WriteByte%2A> throws a <xref:System.NotSupportedException>.  
+If a class derived from <xref:System.IO.Stream> does not support writing, a call to <xref:System.IO.FileStream.SetLength%2A>, <xref:System.IO.FileStream.Write%2A>, <xref:System.IO.FileStream.BeginWrite%2A>, or <xref:System.IO.FileStream.WriteByte%2A> throws a <xref:System.NotSupportedException>.  
+ 
+If the stream is closed, this property returns `false`.  
+ 
   
- If the stream is closed, this property returns `false`.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the `CanWrite` property to check whether a stream supports writing.  
-  
- [!code-cpp[fstream canwrite#1](~/samples/snippets/cpp/VS_Snippets_CLR/FStream CanWrite/CPP/fstream canwrite.cpp#1)]
- [!code-csharp[fstream canwrite#1](~/samples/snippets/csharp/VS_Snippets_CLR/FStream CanWrite/CS/fstream canwrite.cs#1)]
- [!code-vb[fstream canwrite#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FStream CanWrite/VB/fstream canwrite.vb#1)]  
-  
- The following is an example using the `CanWrite` property. The output of this code is "MyFile.txt is writable." To get the output message "MyFile.txt can be both written to and read from.", change the `FileAccess` parameter to `ReadWrite` in the `FileStream` constructor.  
-  
- [!code-cpp[Classic FileStream.CanWrite Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileStream.CanWrite Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileStream.CanWrite Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileStream.CanWrite Example/CS/source.cs#1)]
- [!code-vb[Classic FileStream.CanWrite Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileStream.CanWrite Example/VB/source.vb#1)]  
-  
+The following example uses the `CanWrite` property to check whether a stream supports writing.  
+ 
+[!code-cpp[fstream canwrite#1](~/samples/snippets/cpp/VS_Snippets_CLR/FStream CanWrite/CPP/fstream canwrite.cpp#1)]
+[!code-csharp[fstream canwrite#1](~/samples/snippets/csharp/VS_Snippets_CLR/FStream CanWrite/CS/fstream canwrite.cs#1)]
+[!code-vb[fstream canwrite#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FStream CanWrite/VB/fstream canwrite.vb#1)]  
+ 
+The following is an example using the `CanWrite` property. The output of this code is "MyFile.txt is writable." To get the output message "MyFile.txt can be both written to and read from.", change the `FileAccess` parameter to `ReadWrite` in the `FileStream` constructor.  
+ 
+[!code-cpp[Classic FileStream.CanWrite Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileStream.CanWrite Example/CPP/source.cpp#1)]
+[!code-csharp[Classic FileStream.CanWrite Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileStream.CanWrite Example/CS/source.cs#1)]
+[!code-vb[Classic FileStream.CanWrite Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileStream.CanWrite Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1534,12 +1534,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.IO.FileStream" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public <xref:System.ComponentModel.Component.Dispose%2A> method and the <xref:System.Object.Finalize%2A> method. <xref:System.ComponentModel.Component.Dispose%2A> invokes the protected <xref:System.IO.FileStream.Dispose%2A> method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes <xref:System.IO.FileStream.Dispose%2A> with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.IO.FileStream> references. This method invokes the <xref:System.ComponentModel.Component.Dispose%2A> method of each referenced object.  
-  
+This method is called by the public <xref:System.ComponentModel.Component.Dispose%2A> method and the <xref:System.Object.Finalize%2A> method. <xref:System.ComponentModel.Component.Dispose%2A> invokes the protected <xref:System.IO.FileStream.Dispose%2A> method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes <xref:System.IO.FileStream.Dispose%2A> with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.IO.FileStream> references. This method invokes the <xref:System.ComponentModel.Component.Dispose%2A> method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1576,25 +1576,25 @@
         <returns>The number of bytes read from the stream, between 0 and the number of bytes you requested. Streams only return 0 at the end of the stream, otherwise, they should block until at least 1 byte is available.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.FileStream.BeginRead%2A> and <xref:System.IO.FileStream.EndRead%2A> to implement asynchronous file operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.FileStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
+In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.FileStream.BeginRead%2A> and <xref:System.IO.FileStream.EndRead%2A> to implement asynchronous file operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.FileStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
+ 
+<xref:System.IO.FileStream.EndRead%2A> must be called exactly for every call to <xref:System.IO.FileStream.BeginRead%2A>. Failing to end a read process before beginning another read can cause undesirable behavior such as deadlock.  
+ 
+This method overrides <xref:System.IO.Stream.EndRead%2A>.  
+ 
+<xref:System.IO.FileStream.EndRead%2A> can be called on every <xref:System.IAsyncResult> from <xref:System.IO.FileStream.BeginRead%2A>. Calling <xref:System.IO.FileStream.EndRead%2A> tells you how many bytes were read from the stream. <xref:System.IO.FileStream.EndRead%2A> will block until the I/O operation has completed.  
+ 
   
- <xref:System.IO.FileStream.EndRead%2A> must be called exactly for every call to <xref:System.IO.FileStream.BeginRead%2A>. Failing to end a read process before beginning another read can cause undesirable behavior such as deadlock.  
-  
- This method overrides <xref:System.IO.Stream.EndRead%2A>.  
-  
- <xref:System.IO.FileStream.EndRead%2A> can be called on every <xref:System.IAsyncResult> from <xref:System.IO.FileStream.BeginRead%2A>. Calling <xref:System.IO.FileStream.EndRead%2A> tells you how many bytes were read from the stream. <xref:System.IO.FileStream.EndRead%2A> will block until the I/O operation has completed.  
-  
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
-  
- [!code-cpp[System.IO.FileStream2#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream2/CPP/source.cpp#4)]
- [!code-csharp[System.IO.FileStream2#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream2/CS/source.cs#4)]
- [!code-vb[System.IO.FileStream2#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream2/VB/source.vb#4)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
+ 
+[!code-cpp[System.IO.FileStream2#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream2/CPP/source.cpp#4)]
+[!code-csharp[System.IO.FileStream2#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream2/CS/source.cs#4)]
+[!code-vb[System.IO.FileStream2#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream2/VB/source.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1630,23 +1630,23 @@
         <summary>Ends an asynchronous write operation and blocks until the I/O operation is complete. (Consider using <see cref="M:System.IO.FileStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" /> instead; see the Remarks section.)</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.FileStream.BeginWrite%2A> and <xref:System.IO.FileStream.EndWrite%2A> to implement asynchronous file operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.FileStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
+In the .NET Framework 4 and earlier versions, you have to use methods such as <xref:System.IO.FileStream.BeginWrite%2A> and <xref:System.IO.FileStream.EndWrite%2A> to implement asynchronous file operations. These methods are still available in the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] to support legacy code; however, the new async methods, such as <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.FileStream.FlushAsync%2A>, help you implement asynchronous file operations more easily.  
+ 
+This method overrides <xref:System.IO.Stream.EndWrite%2A>.  
+ 
+<xref:System.IO.FileStream.EndWrite%2A> must be called exactly once on every <xref:System.IAsyncResult> from <xref:System.IO.FileStream.BeginWrite%2A>. <xref:System.IO.FileStream.EndWrite%2A> will block until the I/O operation has completed.  
+ 
   
- This method overrides <xref:System.IO.Stream.EndWrite%2A>.  
-  
- <xref:System.IO.FileStream.EndWrite%2A> must be called exactly once on every <xref:System.IAsyncResult> from <xref:System.IO.FileStream.BeginWrite%2A>. <xref:System.IO.FileStream.EndWrite%2A> will block until the I/O operation has completed.  
-  
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
-  
- [!code-cpp[System.IO.FileStream2#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream2/CPP/source.cpp#3)]
- [!code-csharp[System.IO.FileStream2#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream2/CS/source.cs#3)]
- [!code-vb[System.IO.FileStream2#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream2/VB/source.vb#3)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
+ 
+[!code-cpp[System.IO.FileStream2#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream2/CPP/source.cpp#3)]
+[!code-csharp[System.IO.FileStream2#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream2/CS/source.cs#3)]
+[!code-vb[System.IO.FileStream2#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream2/VB/source.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1683,10 +1683,10 @@
         <summary>Ensures that resources are freed and other cleanup operations are performed when the garbage collector reclaims the <see langword="FileStream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The garbage collector calls `Finalize` when the current object is ready to be finalized. `Finalize` closes the `FileStream`.  
-  
+The garbage collector calls `Finalize` when the current object is ready to be finalized. `Finalize` closes the `FileStream`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1717,31 +1717,31 @@
         <summary>Clears buffers for this stream and causes any buffered data to be written to the file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.IO.Stream.Flush%2A?displayProperty=fullName>.  
-  
- When you call the <xref:System.IO.FileStream.Flush%2A?displayProperty=fullName> method, the operating system I/O buffer is also flushed.  
-  
- A stream’s encoder is not flushed unless you explicitly call <xref:System.IO.FileStream.Flush%2A> or dispose of the object. Setting <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=fullName> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
-  
- Because a buffer can be used for either reading or writing, <xref:System.IO.FileStream.Flush> performs the following two functions:  
-  
+This method overrides <xref:System.IO.Stream.Flush%2A?displayProperty=fullName>.  
+ 
+When you call the <xref:System.IO.FileStream.Flush%2A?displayProperty=fullName> method, the operating system I/O buffer is also flushed.  
+ 
+A stream’s encoder is not flushed unless you explicitly call <xref:System.IO.FileStream.Flush%2A> or dispose of the object. Setting <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=fullName> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
+ 
+Because a buffer can be used for either reading or writing, <xref:System.IO.FileStream.Flush> performs the following two functions:  
+ 
 -   Any data previously written to the buffer is copied to the file and the buffer is cleared except for its encoder state.  
-  
+ 
 -   If <xref:System.IO.BufferedStream.CanSeek%2A?displayProperty=fullName> is `true` and data was previously copied from the file to the buffer for reading, the current position within the file is decremented by the number of unread bytes in the buffer. The buffer is then cleared.  
+ 
+Use the <xref:System.IO.FileStream.Flush%28System.Boolean%29> method overload when you want to ensure that all buffered data in intermediate file buffers is written to disk.  
+ 
   
- Use the <xref:System.IO.FileStream.Flush%28System.Boolean%29> method overload when you want to ensure that all buffered data in intermediate file buffers is written to disk.  
-  
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.FileStream.Lock%2A> method.  
-  
- [!code-cpp[System.IO.FileStream3#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream3/CPP/fstreamlock.cpp#4)]
- [!code-csharp[System.IO.FileStream3#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream3/CS/fstreamlock.cs#4)]
- [!code-vb[System.IO.FileStream3#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream3/VB/fstreamlock.vb#4)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.FileStream.Lock%2A> method.  
+ 
+[!code-cpp[System.IO.FileStream3#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream3/CPP/fstreamlock.cpp#4)]
+[!code-csharp[System.IO.FileStream3#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream3/CS/fstreamlock.cs#4)]
+[!code-vb[System.IO.FileStream3#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream3/VB/fstreamlock.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
@@ -1778,12 +1778,12 @@
         <summary>Clears buffers for this stream and causes any buffered data to be written to the file, and also clears all intermediate file buffers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this overload when you want to ensure that all buffered data in intermediate file buffers is written to disk.  
-  
- When you call the <xref:System.IO.FileStream.Flush%2A> method, the operating system I/O buffer is also flushed.  
-  
+Use this overload when you want to ensure that all buffered data in intermediate file buffers is written to disk.  
+ 
+When you call the <xref:System.IO.FileStream.Flush%2A> method, the operating system I/O buffer is also flushed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1818,12 +1818,12 @@
         <returns>A task that represents the asynchronous flush operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you call the <xref:System.IO.FileStream.FlushAsync%2A> method, the operating system I/O buffer is also flushed.  
-  
- If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property. If the handle to the file is disposed, the returned task contains the <xref:System.ObjectDisposedException> exception in the <xref:System.Threading.Tasks.Task.Exception%2A> property.  
-  
+When you call the <xref:System.IO.FileStream.FlushAsync%2A> method, the operating system I/O buffer is also flushed.  
+ 
+If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property. If the handle to the file is disposed, the returned task contains the <xref:System.ObjectDisposedException> exception in the <xref:System.Threading.Tasks.Task.Exception%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The stream has been disposed.</exception>
@@ -1848,14 +1848,14 @@
         <returns>An object that encapsulates the access control settings for the file described by the current <see cref="T:System.IO.FileStream" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- While the <xref:System.IO.FileStream> class and <xref:System.IO.FileStream.GetAccessControl%2A> can be used to retrieve the access control list (ACL) entries of an existing file, consider using <xref:System.IO.File.GetAccessControl%2A?displayProperty=fullName> method, as it is easier to use.  
-  
- Use the <xref:System.IO.FileStream.GetAccessControl%2A> method to retrieve the ACL entries for a file.  
-  
- An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
-  
+While the <xref:System.IO.FileStream> class and <xref:System.IO.FileStream.GetAccessControl%2A> can be used to retrieve the access control list (ACL) entries of an existing file, consider using <xref:System.IO.File.GetAccessControl%2A?displayProperty=fullName> method, as it is easier to use.  
+ 
+Use the <xref:System.IO.FileStream.GetAccessControl%2A> method to retrieve the ACL entries for a file.  
+ 
+An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The file is closed.</exception>
@@ -1895,15 +1895,15 @@
         <value>The operating system file handle for the file encapsulated by this <see langword="FileStream" /> object, or -1 if the <see langword="FileStream" /> has been closed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is an operating system handle for use with operating-system-provided system calls (such as `ReadFile` on Windows). It will not work with C library functions that expect a file descriptor, such as `fread`.  
-  
- The operating system handle might have been opened synchronously or asynchronously, depending on which `FileStream` constructor was called. Use the <xref:System.IO.FileStream.IsAsync%2A> property to discover whether this handle was opened asynchronously. In Win32, this means the handle was opened for overlapped IO, and it requires different parameters to `ReadFile` and `WriteFile`.  
-  
+This property is an operating system handle for use with operating-system-provided system calls (such as `ReadFile` on Windows). It will not work with C library functions that expect a file descriptor, such as `fread`.  
+ 
+The operating system handle might have been opened synchronously or asynchronously, depending on which `FileStream` constructor was called. Use the <xref:System.IO.FileStream.IsAsync%2A> property to discover whether this handle was opened asynchronously. In Win32, this means the handle was opened for overlapped IO, and it requires different parameters to `ReadFile` and `WriteFile`.  
+ 
 > [!CAUTION]
 >  Data corruption might occur if a `FileStream` is created, its handle is passed, some operation moves the handle's file pointer, and then the `FileStream` is used again. Multiple threads cannot safely write to the same file simultaneously, and `FileStream` buffering code assumes that it exclusively controls the handle. `FileStream` might throw an <xref:System.IO.IOException> if `FileStream` detects that some other process has moved the file pointer. To avoid this, do not write any data into a portion of the file that `FileStream` might have buffered, and restore the file pointer to the location it had when methods were last called on `FileStream`.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
@@ -1938,21 +1938,21 @@
           <see langword="true" /> if the <see langword="FileStream" /> was opened asynchronously; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `IsAsync` property detects whether the `FileStream` handle was opened asynchronously, enabling your code to use the <xref:System.IO.FileStream.Handle%2A> property correctly. In Win32, `IsAsync` being true means the handle was opened for overlapped I/O, and thus requires different parameters to `ReadFile` and `WriteFile`.  
+The `IsAsync` property detects whether the `FileStream` handle was opened asynchronously, enabling your code to use the <xref:System.IO.FileStream.Handle%2A> property correctly. In Win32, `IsAsync` being true means the handle was opened for overlapped I/O, and thus requires different parameters to `ReadFile` and `WriteFile`.  
+ 
+You specify this value when you create an instance of the <xref:System.IO.FileStream> class using a constructor that has an `isAsync`, `useAsync`, or `options` parameter. When the property is `true`, the stream utilizes overlapped I/O to perform file operations asynchronously. However, the <xref:System.IO.FileStream.IsAsync%2A> property does not have to be `true` to call the <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, or <xref:System.IO.Stream.CopyToAsync%2A> method. When the <xref:System.IO.FileStream.IsAsync%2A> property is `false` and you call the asynchronous read and write operations, the UI thread is still not blocked, but the actual I/O operation is performed synchronously.  
+ 
   
- You specify this value when you create an instance of the <xref:System.IO.FileStream> class using a constructor that has an `isAsync`, `useAsync`, or `options` parameter. When the property is `true`, the stream utilizes overlapped I/O to perform file operations asynchronously. However, the <xref:System.IO.FileStream.IsAsync%2A> property does not have to be `true` to call the <xref:System.IO.FileStream.ReadAsync%2A>, <xref:System.IO.FileStream.WriteAsync%2A>, or <xref:System.IO.Stream.CopyToAsync%2A> method. When the <xref:System.IO.FileStream.IsAsync%2A> property is `false` and you call the asynchronous read and write operations, the UI thread is still not blocked, but the actual I/O operation is performed synchronously.  
-  
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
-  
- [!code-cpp[System.IO.FileStream2#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream2/CPP/source.cpp#2)]
- [!code-csharp[System.IO.FileStream2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream2/CS/source.cs#2)]
- [!code-vb[System.IO.FileStream2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream2/VB/source.vb#2)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
+ 
+[!code-cpp[System.IO.FileStream2#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream2/CPP/source.cpp#2)]
+[!code-csharp[System.IO.FileStream2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream2/CS/source.cs#2)]
+[!code-vb[System.IO.FileStream2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream2/VB/source.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1983,19 +1983,19 @@
         <value>A long value representing the length of the stream in bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the `Length` and `Position` properties to check for an end-of-file condition.  
-  
- [!code-cpp[Classic FileStream.Length Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileStream.Length Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileStream.Length Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileStream.Length Example/CS/source.cs#1)]
- [!code-vb[Classic FileStream.Length Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileStream.Length Example/VB/source.vb#1)]  
-  
+The following example uses the `Length` and `Position` properties to check for an end-of-file condition.  
+ 
+[!code-cpp[Classic FileStream.Length Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileStream.Length Example/CPP/source.cpp#1)]
+[!code-csharp[Classic FileStream.Length Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileStream.Length Example/CS/source.cs#1)]
+[!code-vb[Classic FileStream.Length Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileStream.Length Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
@@ -2030,21 +2030,21 @@
         <summary>Prevents other processes from reading from or writing to the <see cref="T:System.IO.FileStream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Locking a range of a file stream gives the threads of the locking process exclusive access to that range of the file stream.  
+Locking a range of a file stream gives the threads of the locking process exclusive access to that range of the file stream.  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to lock part of a file so another process cannot access that part of the file even though it has read/write access to the file. Run the program simultaneously in different command windows and investigate using the different console input options.  
-  
- [!code-cpp[System.IO.FileStream3#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream3/CPP/fstreamlock.cpp#1)]
- [!code-csharp[System.IO.FileStream3#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream3/CS/fstreamlock.cs#1)]
- [!code-vb[System.IO.FileStream3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream3/VB/fstreamlock.vb#1)]  
-  
+The following code example demonstrates how to lock part of a file so another process cannot access that part of the file even though it has read/write access to the file. Run the program simultaneously in different command windows and investigate using the different console input options.  
+ 
+[!code-cpp[System.IO.FileStream3#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream3/CPP/fstreamlock.cpp#1)]
+[!code-csharp[System.IO.FileStream3#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream3/CS/fstreamlock.cs#1)]
+[!code-vb[System.IO.FileStream3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream3/VB/fstreamlock.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -2079,19 +2079,19 @@
         <value>A string that is the name of the <see langword="FileStream" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
-  
- [!code-cpp[System.IO.FileStream2#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream2/CPP/source.cpp#4)]
- [!code-csharp[System.IO.FileStream2#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream2/CS/source.cs#4)]
- [!code-vb[System.IO.FileStream2#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream2/VB/source.vb#4)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%2CSystem.Boolean%29> constructor.  
+ 
+[!code-cpp[System.IO.FileStream2#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream2/CPP/source.cpp#4)]
+[!code-csharp[System.IO.FileStream2#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream2/CS/source.cs#4)]
+[!code-vb[System.IO.FileStream2#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream2/VB/source.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
@@ -2123,21 +2123,21 @@
         <value>The current position of this stream.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Seeking to any location beyond the length of the stream is supported.  When you seek beyond the length of the file, the file size grows.  In Microsoft Windows NT and newer, any data added to the end of the file is set to zero.  In Microsoft Windows 98 or earlier, any data added to the end of the file is not set to zero, which means that previously deleted data is visible to the stream. Setting the position of the stream to a large value beyond the end of the stream in Windows 98 or earlier may result in an exception being raised.  
+Seeking to any location beyond the length of the stream is supported.  When you seek beyond the length of the file, the file size grows.  In Microsoft Windows NT and newer, any data added to the end of the file is set to zero.  In Microsoft Windows 98 or earlier, any data added to the end of the file is not set to zero, which means that previously deleted data is visible to the stream. Setting the position of the stream to a large value beyond the end of the stream in Windows 98 or earlier may result in an exception being raised.  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the `Length` and `Position` properties to check for an end-of-file condition.  
-  
- [!code-cpp[Classic FileStream.Length Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileStream.Length Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileStream.Length Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileStream.Length Example/CS/source.cs#1)]
- [!code-vb[Classic FileStream.Length Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileStream.Length Example/VB/source.vb#1)]  
-  
+The following example uses the `Length` and `Position` properties to check for an end-of-file condition.  
+ 
+[!code-cpp[Classic FileStream.Length Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileStream.Length Example/CPP/source.cpp#1)]
+[!code-csharp[Classic FileStream.Length Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileStream.Length Example/CS/source.cs#1)]
+[!code-vb[Classic FileStream.Length Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileStream.Length Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The stream does not support seeking.</exception>
@@ -2184,28 +2184,28 @@
         <returns>The total number of bytes read into the buffer. This might be less than the number of bytes requested if that number of bytes are not currently available, or zero if the end of the stream is reached.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.IO.Stream.Read%2A>.  
+This method overrides <xref:System.IO.Stream.Read%2A>.  
+ 
+The `offset` parameter gives the offset of the byte in `array` (the buffer index) at which to begin reading, and the `count` parameter gives the maximum number of bytes to be read from this stream. The returned value is the actual number of bytes read, or zero if the end of the stream is reached. If the read operation is successful, the current position of the stream is advanced by the number of bytes read. If an exception occurs, the current position of the stream is unchanged.  
+ 
+The <xref:System.IO.FileStream.Read%2A> method returns zero only after reaching the end of the stream. Otherwise, <xref:System.IO.FileStream.Read%2A> always reads at least one byte from the stream before returning. If no data is available from the stream upon a call to <xref:System.IO.FileStream.Read%2A>, the method will block until at least one byte of data can be returned. An implementation is free to return fewer bytes than requested even if the end of the stream has not been reached.  
+ 
+Use <xref:System.IO.BinaryReader> for reading primitive data types.  
+ 
+Do not interrupt a thread that is performing a read operation. Although the application may appear to run successfully after the thread is unblocked, the interruption can decrease your application's performance and reliability.  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- The `offset` parameter gives the offset of the byte in `array` (the buffer index) at which to begin reading, and the `count` parameter gives the maximum number of bytes to be read from this stream. The returned value is the actual number of bytes read, or zero if the end of the stream is reached. If the read operation is successful, the current position of the stream is advanced by the number of bytes read. If an exception occurs, the current position of the stream is unchanged.  
-  
- The <xref:System.IO.FileStream.Read%2A> method returns zero only after reaching the end of the stream. Otherwise, <xref:System.IO.FileStream.Read%2A> always reads at least one byte from the stream before returning. If no data is available from the stream upon a call to <xref:System.IO.FileStream.Read%2A>, the method will block until at least one byte of data can be returned. An implementation is free to return fewer bytes than requested even if the end of the stream has not been reached.  
-  
- Use <xref:System.IO.BinaryReader> for reading primitive data types.  
-  
- Do not interrupt a thread that is performing a read operation. Although the application may appear to run successfully after the thread is unblocked, the interruption can decrease your application's performance and reliability.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example reads the contents from a <xref:System.IO.FileStream> and writes it into another <xref:System.IO.FileStream>.  
-  
- [!code-csharp[FSRead#1](~/samples/snippets/csharp/VS_Snippets_CLR/FSRead/CS/fsread.cs#1)]
- [!code-vb[FSRead#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FSRead/VB/fsread.vb#1)]  
-  
+The following example reads the contents from a <xref:System.IO.FileStream> and writes it into another <xref:System.IO.FileStream>.  
+ 
+[!code-csharp[FSRead#1](~/samples/snippets/csharp/VS_Snippets_CLR/FSRead/CS/fsread.cs#1)]
+[!code-vb[FSRead#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FSRead/VB/fsread.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2255,22 +2255,22 @@
         <returns>A task that represents the asynchronous read operation. The value of the <paramref name="TResult" /> parameter contains the total number of bytes read into the buffer. The result value can be less than the number of bytes requested if the number of bytes currently available is less than the requested number, or it can be 0 (zero) if the end of the stream has been reached.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.FileStream.ReadAsync%2A> method enables you to perform resource-intensive file operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
+The <xref:System.IO.FileStream.ReadAsync%2A> method enables you to perform resource-intensive file operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
+ 
+Use the <xref:System.IO.FileStream.CanRead%2A> property to determine whether the current instance supports reading.  
+ 
+If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property. If the handle to the file is disposed, the returned task contains the <xref:System.ObjectDisposedException> exception in the <xref:System.Threading.Tasks.Task.Exception%2A> property.  
+ 
   
- Use the <xref:System.IO.FileStream.CanRead%2A> property to determine whether the current instance supports reading.  
-  
- If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property. If the handle to the file is disposed, the returned task contains the <xref:System.ObjectDisposedException> exception in the <xref:System.Threading.Tasks.Task.Exception%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to read from a file asynchronously.  
-  
- [!code-csharp[Asynchronous_File_IO_async#4](~/samples/snippets/csharp/VS_Snippets_CLR/Asynchronous_File_IO_async/cs/example4.cs#4)]
- [!code-vb[Asynchronous_File_IO_async#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/Asynchronous_File_IO_async/vb/example4.vb#4)]  
-  
+The following example shows how to read from a file asynchronously.  
+ 
+[!code-csharp[Asynchronous_File_IO_async#4](~/samples/snippets/csharp/VS_Snippets_CLR/Asynchronous_File_IO_async/cs/example4.cs#4)]
+[!code-vb[Asynchronous_File_IO_async#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/Asynchronous_File_IO_async/vb/example4.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2310,22 +2310,22 @@
         <returns>The byte, cast to an <see cref="T:System.Int32" />, or -1 if the end of the stream has been reached.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.IO.Stream.ReadByte%2A>.  
-  
+This method overrides <xref:System.IO.Stream.ReadByte%2A>.  
+ 
 > [!NOTE]
 >  Use the <xref:System.IO.FileStream.CanRead%2A> property to determine whether the current instance supports reading. For additional information, see <xref:System.IO.Stream.CanRead%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to write data to a file, byte by byte, and then verify that the data was written correctly.  
-  
- [!code-cpp[System.IO.FileStream1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream1/CPP/source.cpp#1)]
- [!code-csharp[System.IO.FileStream1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream1/CS/source.cs#1)]
- [!code-vb[System.IO.FileStream1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream1/VB/source.vb#1)]  
-  
+The following code example shows how to write data to a file, byte by byte, and then verify that the data was written correctly.  
+ 
+[!code-cpp[System.IO.FileStream1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream1/CPP/source.cpp#1)]
+[!code-csharp[System.IO.FileStream1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream1/CS/source.cs#1)]
+[!code-vb[System.IO.FileStream1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream1/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The current stream does not support reading.</exception>
@@ -2363,10 +2363,10 @@
         <value>An object that represents the operating system file handle for the file that the current <see cref="T:System.IO.FileStream" /> object encapsulates.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.FileStream.SafeFileHandle%2A> property automatically flushes the stream and sets the current stream position to 0.  This allows the file to be moved or the stream position to be reset by another stream using the <xref:System.IO.FileStream.SafeFileHandle%2A> returned by this property.  
-  
+The <xref:System.IO.FileStream.SafeFileHandle%2A> property automatically flushes the stream and sets the current stream position to 0.  This allows the file to be moved or the stream position to be reset by another stream using the <xref:System.IO.FileStream.SafeFileHandle%2A> returned by this property.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code.  
@@ -2409,31 +2409,31 @@
         <returns>The new position in the stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.IO.Stream.Seek%2A?displayProperty=fullName>.  
-  
+This method overrides <xref:System.IO.Stream.Seek%2A?displayProperty=fullName>.  
+ 
 > [!NOTE]
 >  Use the <xref:System.IO.FileStream.CanSeek%2A?displayProperty=fullName> property to determine whether the current instance supports seeking. For additional information, see <xref:System.IO.Stream.CanSeek%2A?displayProperty=fullName>.  
+ 
+You can seek to any location beyond the length of the stream. When you seek beyond the length of the file, the file size grows. In Windows NT and later versions, data added to the end of the file is set to zero. In Windows 98 or earlier versions, data added to the end of the file is not set to zero, which means that previously deleted data is visible to the stream.  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- You can seek to any location beyond the length of the stream. When you seek beyond the length of the file, the file size grows. In Windows NT and later versions, data added to the end of the file is set to zero. In Windows 98 or earlier versions, data added to the end of the file is not set to zero, which means that previously deleted data is visible to the stream.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to write data to a file, byte by byte, and then verify that the data was written correctly.  
-  
- [!code-cpp[System.IO.FileStream1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream1/CPP/source.cpp#1)]
- [!code-csharp[System.IO.FileStream1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream1/CS/source.cs#1)]
- [!code-vb[System.IO.FileStream1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream1/VB/source.vb#1)]  
-  
- The following example reads text in the reverse direction, from the end of file to the beginning of the file, by using the various <xref:System.IO.SeekOrigin> values with the <xref:System.IO.FileStream.Seek%2A> method.  
-  
- [!code-csharp[System.IO.FileStream.Seek#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.filestream.seek/cs/source.cs#1)]
- [!code-vb[System.IO.FileStream.Seek#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.filestream.seek/vb/source.vb#1)]  
-  
+The following example shows how to write data to a file, byte by byte, and then verify that the data was written correctly.  
+ 
+[!code-cpp[System.IO.FileStream1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream1/CPP/source.cpp#1)]
+[!code-csharp[System.IO.FileStream1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream1/CS/source.cs#1)]
+[!code-vb[System.IO.FileStream1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream1/VB/source.vb#1)]  
+ 
+The following example reads text in the reverse direction, from the end of file to the beginning of the file, by using the various <xref:System.IO.SeekOrigin> values with the <xref:System.IO.FileStream.Seek%2A> method.  
+ 
+[!code-csharp[System.IO.FileStream.Seek#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.filestream.seek/cs/source.cs#1)]
+[!code-vb[System.IO.FileStream.Seek#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.filestream.seek/vb/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
@@ -2463,17 +2463,17 @@
         <summary>Applies access control list (ACL) entries described by a <see cref="T:System.Security.AccessControl.FileSecurity" /> object to the file described by the current <see cref="T:System.IO.FileStream" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- While the <xref:System.IO.FileStream> class and <xref:System.IO.FileStream.SetAccessControl%2A> can be used on an existing file, consider using the <xref:System.IO.File.SetAccessControl%2A?displayProperty=fullName> method as it is easier to use.  
-  
- The <xref:System.IO.FileStream.SetAccessControl%2A> method applies access control list (ACL) entries to a file that represents the noninherited ACL list.  
-  
+While the <xref:System.IO.FileStream> class and <xref:System.IO.FileStream.SetAccessControl%2A> can be used on an existing file, consider using the <xref:System.IO.File.SetAccessControl%2A?displayProperty=fullName> method as it is easier to use.  
+ 
+The <xref:System.IO.FileStream.SetAccessControl%2A> method applies access control list (ACL) entries to a file that represents the noninherited ACL list.  
+ 
 > [!CAUTION]
 >  The ACL specified for the `fileSecurity` parameter replaces the existing ACL for the file. To add permissions for a new user, use the <xref:System.IO.FileStream.GetAccessControl%2A> method to obtain the existing ACL, modify it, and then use <xref:System.IO.FileStream.SetAccessControl%2A> to apply it back to the file.  
-  
- An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
-  
+ 
+An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The file is closed.</exception>
@@ -2511,19 +2511,19 @@
         <summary>Sets the length of this stream to the given value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.IO.Stream.SetLength%2A>.  
-  
- If the given value is less than the current length of the stream, the stream is truncated. In this scenario, if the current position is greater than the new length, the current position is moved to the last byte of the stream. If the given value is larger than the current length of the stream, the stream is expanded, and the current position remains the same. If the stream is expanded, the contents of the stream between the old and the new length are undefined.  
-  
- A stream must support both writing and seeking for `SetLength` to work.  
-  
+This method overrides <xref:System.IO.Stream.SetLength%2A>.  
+ 
+If the given value is less than the current length of the stream, the stream is truncated. In this scenario, if the current position is greater than the new length, the current position is moved to the last byte of the stream. If the given value is larger than the current length of the stream, the stream is expanded, and the current position remains the same. If the stream is expanded, the contents of the stream between the old and the new length are undefined.  
+ 
+A stream must support both writing and seeking for `SetLength` to work.  
+ 
 > [!NOTE]
 >  Use the <xref:System.IO.FileStream.CanWrite%2A> property to determine whether the current instance supports writing, and the <xref:System.IO.FileStream.CanSeek%2A> property to determine whether seeking is supported. For additional information, see <xref:System.IO.Stream.CanWrite%2A> and <xref:System.IO.Stream.CanSeek%2A>.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error has occurred.</exception>
@@ -2558,19 +2558,19 @@
         <summary>Allows access by other processes to all or part of a file that was previously locked.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to lock part of a file so another process cannot access that part of the file even though it has read/write access to the file, and then unlock the specified part of the file . Run the program simultaneously in different command windows and investigate using the different console input options.  
-  
- [!code-cpp[System.IO.FileStream3#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream3/CPP/fstreamlock.cpp#1)]
- [!code-csharp[System.IO.FileStream3#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream3/CS/fstreamlock.cs#1)]
- [!code-vb[System.IO.FileStream3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream3/VB/fstreamlock.vb#1)]  
-  
+The following code example demonstrates how to lock part of a file so another process cannot access that part of the file even though it has read/write access to the file, and then unlock the specified part of the file . Run the program simultaneously in different command windows and investigate using the different console input options.  
+ 
+[!code-cpp[System.IO.FileStream3#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream3/CPP/fstreamlock.cpp#1)]
+[!code-csharp[System.IO.FileStream3#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream3/CS/fstreamlock.cs#1)]
+[!code-vb[System.IO.FileStream3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream3/VB/fstreamlock.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -2610,28 +2610,28 @@
         <summary>Writes a block of bytes to the file stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.IO.Stream.Write%2A>.  
-  
- The `offset` parameter gives the offset of the byte in `array` (the buffer index) at which to begin copying, and the `count` parameter gives the number of bytes that will be written to the stream. If the write operation is successful, the current position of the stream is advanced by the number of bytes written. If an exception occurs, the current position of the stream is unchanged.  
-  
+This method overrides <xref:System.IO.Stream.Write%2A>.  
+ 
+The `offset` parameter gives the offset of the byte in `array` (the buffer index) at which to begin copying, and the `count` parameter gives the number of bytes that will be written to the stream. If the write operation is successful, the current position of the stream is advanced by the number of bytes written. If an exception occurs, the current position of the stream is unchanged.  
+ 
 > [!NOTE]
 >  Use the <xref:System.IO.FileStream.CanWrite%2A> property to determine whether the current instance supports writing. For additional information, see <xref:System.IO.Stream.CanWrite%2A>.  
+ 
+Do not interrupt a thread that is performing a write operation. Although the application may appear to run successfully after the thread is unblocked, the interruption can decrease your application's performance and reliability.  
+ 
+For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- Do not interrupt a thread that is performing a write operation. Although the application may appear to run successfully after the thread is unblocked, the interruption can decrease your application's performance and reliability.  
-  
- For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- This code example is part of a larger example provided for the <xref:System.IO.FileStream.Lock%2A> method.  
-  
- [!code-cpp[System.IO.FileStream3#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream3/CPP/fstreamlock.cpp#3)]
- [!code-csharp[System.IO.FileStream3#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream3/CS/fstreamlock.cs#3)]
- [!code-vb[System.IO.FileStream3#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream3/VB/fstreamlock.vb#3)]  
-  
+This code example is part of a larger example provided for the <xref:System.IO.FileStream.Lock%2A> method.  
+ 
+[!code-cpp[System.IO.FileStream3#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream3/CPP/fstreamlock.cpp#3)]
+[!code-csharp[System.IO.FileStream3#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream3/CS/fstreamlock.cs#3)]
+[!code-vb[System.IO.FileStream3#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream3/VB/fstreamlock.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2685,22 +2685,22 @@
         <returns>A task that represents the asynchronous write operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.FileStream.WriteAsync%2A> method enables you to perform resource-intensive file operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
+The <xref:System.IO.FileStream.WriteAsync%2A> method enables you to perform resource-intensive file operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
+ 
+Use the <xref:System.IO.FileStream.CanWrite%2A> property to determine whether the current instance supports reading.  
+ 
+If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property. If the handle to the file is disposed, the returned task contains the <xref:System.ObjectDisposedException> exception in the <xref:System.Threading.Tasks.Task.Exception%2A> property.  
+ 
   
- Use the <xref:System.IO.FileStream.CanWrite%2A> property to determine whether the current instance supports reading.  
-  
- If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus> value for the <xref:System.Threading.Tasks.Task.Status%2A> property. If the handle to the file is disposed, the returned task contains the <xref:System.ObjectDisposedException> exception in the <xref:System.Threading.Tasks.Task.Exception%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to write asynchronously to a file.  
-  
- [!code-csharp[Asynchronous_File_IO_async#3](~/samples/snippets/csharp/VS_Snippets_CLR/Asynchronous_File_IO_async/cs/example3.cs#3)]
- [!code-vb[Asynchronous_File_IO_async#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/Asynchronous_File_IO_async/vb/example3.vb#3)]  
-  
+The following example shows how to write asynchronously to a file.  
+ 
+[!code-csharp[Asynchronous_File_IO_async#3](~/samples/snippets/csharp/VS_Snippets_CLR/Asynchronous_File_IO_async/cs/example3.cs#3)]
+[!code-vb[Asynchronous_File_IO_async#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/Asynchronous_File_IO_async/vb/example3.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2742,24 +2742,24 @@
         <summary>Writes a byte to the current position in the file stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.IO.Stream.WriteByte%2A>.  
-  
- Use `WriteByte` to write a byte to a `FileStream` efficiently. If the stream is closed or not writable, an exception will be thrown.  
-  
+This method overrides <xref:System.IO.Stream.WriteByte%2A>.  
+ 
+Use `WriteByte` to write a byte to a `FileStream` efficiently. If the stream is closed or not writable, an exception will be thrown.  
+ 
 > [!NOTE]
 >  Use the <xref:System.IO.FileStream.CanWrite%2A> property to determine whether the current instance supports writing. For additional information, see <xref:System.IO.Stream.CanWrite%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to write data to a file, byte by byte, and then verify that the data was written correctly.  
-  
- [!code-cpp[System.IO.FileStream1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream1/CPP/source.cpp#1)]
- [!code-csharp[System.IO.FileStream1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream1/CS/source.cs#1)]
- [!code-vb[System.IO.FileStream1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream1/VB/source.vb#1)]  
-  
+The following code example shows how to write data to a file, byte by byte, and then verify that the data was written correctly.  
+ 
+[!code-cpp[System.IO.FileStream1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.FileStream1/CPP/source.cpp#1)]
+[!code-csharp[System.IO.FileStream1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.FileStream1/CS/source.cs#1)]
+[!code-vb[System.IO.FileStream1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.FileStream1/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>

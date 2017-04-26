@@ -32,10 +32,10 @@
     <summary>A formatter that serializes classes derived from a <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> instance to and from XML using Atom 1.0 formats.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you want to serialize or deserialized a <xref:System.ServiceModel.Syndication.ServiceDocument> instance instead of an object derived from this an instance of <xref:System.ServiceModel.Syndication.ServiceDocument>, use the <xref:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter> formatter instead.  
-  
+If you want to serialize or deserialized a <xref:System.ServiceModel.Syndication.ServiceDocument> instance instead of an object derived from this an instance of <xref:System.ServiceModel.Syndication.ServiceDocument>, use the <xref:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter> formatter instead.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -80,10 +80,10 @@
         <summary>Creates a new instance of the Atom 1.0-based <see cref="T:System.ServiceModel.Syndication.ServiceDocumentFormatter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `documentToWrite` can be serialized to an XML representation or deserialized from an XML representation by the formatter using Atom 1.0 formats.  
-  
+The `documentToWrite` can be serialized to an XML representation or deserialized from an XML representation by the formatter using Atom 1.0 formats.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

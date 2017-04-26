@@ -24,10 +24,10 @@
     <summary>Computes masks according to PKCS #1 for use by key exchange algorithms.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is only used by implementations of key exchange algorithms for mask generation. Application code does not use this class directly.  
-  
+This class is only used by implementations of key exchange algorithms for mask generation. Application code does not use this class directly.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,10 +51,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.PKCS1MaskGenerationMethod" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets <xref:System.Security.Cryptography.PKCS1MaskGenerationMethod.HashName%2A> to the default hash algorithm name (SHA1).  
-  
+This constructor sets <xref:System.Security.Cryptography.PKCS1MaskGenerationMethod.HashName%2A> to the default hash algorithm name (SHA1).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,10 +87,10 @@
         <returns>A randomly generated mask whose length is equal to the <paramref name="cbReturn" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Masks are used in key exchange computation and generally are not used by applications.  
-  
+Masks are used in key exchange computation and generally are not used by applications.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,10 +117,10 @@
         <value>The name of the type that implements the hash algorithm to use for computing the mask.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If no hash algorithm is specified, <xref:System.Security.Cryptography.SHA1> is used by default.  
-  
+If no hash algorithm is specified, <xref:System.Security.Cryptography.SHA1> is used by default.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -27,28 +27,28 @@
     <summary>Discovers attributed parts in the assemblies in a specified directory.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use a <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog> object to parse the contents of a designated directory. Any attributed parts contained in dynamic link library (DLL) files are extracted and made available through the catalog.To restrict parsing to specific DLLs, you can specify a search pattern by using the same syntax as the <xref:System.IO.Directory.GetFiles%2A?displayProperty=fullName> method.  
-  
+You can use a <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog> object to parse the contents of a designated directory. Any attributed parts contained in dynamic link library (DLL) files are extracted and made available through the catalog.To restrict parsing to specific DLLs, you can specify a search pattern by using the same syntax as the <xref:System.IO.Directory.GetFiles%2A?displayProperty=fullName> method.  
+ 
 > [!WARNING]
 >  The designated directory should not allow access to non-administrators. For example, using a folder that contains temporary Internet files could create vulnerabilities in your application.  
+ 
+This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+ 
   
- This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog> object that searches the directory the application runs from for parts. It uses a simple import to test the catalog. To fulfill this import, a DLL in the directory must have a matching export, as illustrated in the second code block.  
-  
- [!code-csharp[Composition.DirectoryCatalog#1](~/samples/snippets/csharp/VS_Snippets_Misc/composition.directorycatalog/cs/consoleapplication7/program.cs#1)]
- [!code-vb[Composition.DirectoryCatalog#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/composition.directorycatalog/vb/consoleapplication8/module1.vb#1)]  
-  
- To create the matching export, the following code must be in a DLL file. To create a DLL file in Visual Studio, add a new project of the type "Class Library" to your solution, and place this code in it.  
-  
- [!code-csharp[Composition.DirectoryCatalog#2](~/samples/snippets/csharp/VS_Snippets_Misc/composition.directorycatalog/cs/classlibrary1/class1.cs#2)]
- [!code-vb[Composition.DirectoryCatalog#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/composition.directorycatalog/vb/classlibrary1/class1.vb#2)]  
-  
+The following example creates a <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog> object that searches the directory the application runs from for parts. It uses a simple import to test the catalog. To fulfill this import, a DLL in the directory must have a matching export, as illustrated in the second code block.  
+ 
+[!code-csharp[Composition.DirectoryCatalog#1](~/samples/snippets/csharp/VS_Snippets_Misc/composition.directorycatalog/cs/consoleapplication7/program.cs#1)]
+[!code-vb[Composition.DirectoryCatalog#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/composition.directorycatalog/vb/consoleapplication8/module1.vb#1)]  
+ 
+To create the matching export, the following code must be in a DLL file. To create a DLL file in Visual Studio, add a new project of the type "Class Library" to your solution, and place this code in it.  
+ 
+[!code-csharp[Composition.DirectoryCatalog#2](~/samples/snippets/csharp/VS_Snippets_Misc/composition.directorycatalog/cs/classlibrary1/class1.cs#2)]
+[!code-vb[Composition.DirectoryCatalog#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/composition.directorycatalog/vb/classlibrary1/class1.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -541,10 +541,10 @@
         <summary>Refreshes the <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartDefinition" /> objects with the latest files in the directory that match the search pattern.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If files were added to the directory, they are also added to the catalog. If files were removed from the directory, they are also removed from the catalog. For files that have been removed, the assembly cannot be unloaded from the process, so <xref:System.ComponentModel.Composition.Primitives.ComposablePartDefinition> objects for those files will be removed only from the catalog.  
-  
+If files were added to the directory, they are also added to the catalog. If files were removed from the directory, they are also removed from the catalog. For files that have been removed, the assembly cannot be unloaded from the process, so <xref:System.ComponentModel.Composition.Primitives.ComposablePartDefinition> objects for those files will be removed only from the catalog.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -586,10 +586,10 @@
         <value>A string that contains a human-readable display name of the directory catalog.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog> instance is cast to an <xref:System.ComponentModel.Composition.Primitives.ICompositionElement> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog> instance is cast to an <xref:System.ComponentModel.Composition.Primitives.ICompositionElement> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -612,10 +612,10 @@
         <value>Always <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog> instance is cast to an <xref:System.ComponentModel.Composition.Primitives.ICompositionElement> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog> instance is cast to an <xref:System.ComponentModel.Composition.Primitives.ICompositionElement> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -18,13 +18,13 @@
     <summary>Contains the <see cref="T:System.Windows.Input.TabletDevice" /> objects that represent the digitizer devices of a tablet device.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection> class.  
-  
- [!code-csharp[HwCaps#15](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#15)]
- [!code-vb[HwCaps#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#15)]  
-  
+The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection> class.  
+ 
+[!code-csharp[HwCaps#15](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#15)]
+[!code-vb[HwCaps#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#15)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,13 +66,13 @@
         <summary>Copies all elements in the current collection to the specified one-dimensional array, starting at the specified destination array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection.CopyTo%2A> method.  
-  
- [!code-csharp[HwCaps#18](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#18)]
- [!code-vb[HwCaps#18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#18)]  
-  
+The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection.CopyTo%2A> method.  
+ 
+[!code-csharp[HwCaps#18](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#18)]
+[!code-vb[HwCaps#18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#18)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">If <paramref name="index" /> + collection count is greater than or equal to <paramref name="array.length" />.</exception>
@@ -97,13 +97,13 @@
         <value>The number of <see cref="T:System.Windows.Input.TabletDevice" /> objects in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection.Count%2A> property.  
-  
- [!code-csharp[HwCaps#16](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#16)]
- [!code-vb[HwCaps#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#16)]  
-  
+The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection.Count%2A> property.  
+ 
+[!code-csharp[HwCaps#16](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#16)]
+[!code-vb[HwCaps#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,13 +126,13 @@
           <see langword="true" /> if access to the collection is synchronized (thread safe); otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection.IsSynchronized%2A> property.  
-  
- [!code-csharp[HwCaps#17](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#17)]
- [!code-vb[HwCaps#17](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#17)]  
-  
+The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection.IsSynchronized%2A> property.  
+ 
+[!code-csharp[HwCaps#17](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#17)]
+[!code-vb[HwCaps#17](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#17)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,13 +158,13 @@
         <value>The <see cref="T:System.Windows.Input.TabletDevice" /> object at the specified index within the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection.Item%2A> property.  
-  
- [!code-csharp[HwCaps#19](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#19)]
- [!code-vb[HwCaps#19](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#19)]  
-  
+The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection.Item%2A> property.  
+ 
+[!code-csharp[HwCaps#19](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#19)]
+[!code-vb[HwCaps#19](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#19)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">If <paramref name="index" /> is less than 0 or <paramref name="index" /> is greater than or equal to the number of <see cref="T:System.Windows.Input.TabletDeviceCollection" /> objects in the collection.</exception>
@@ -187,13 +187,13 @@
         <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection.SyncRoot%2A> property.  
-  
- [!code-csharp[HwCaps#17](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#17)]
- [!code-vb[HwCaps#17](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#17)]  
-  
+The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection.SyncRoot%2A> property.  
+ 
+[!code-csharp[HwCaps#17](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#17)]
+[!code-vb[HwCaps#17](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#17)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

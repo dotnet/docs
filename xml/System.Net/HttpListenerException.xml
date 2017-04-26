@@ -19,21 +19,21 @@
     <summary>The exception that is thrown when an error occurs processing an HTTP request.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception is thrown by the <xref:System.Net.HttpListener> class and its associated classes when an error occurs during initialization of the <xref:System.Net.HttpListener> or while creating or sending a response to an HTTP request. For example, this exception is thrown if the <xref:System.Net.HttpListener> attempts to register a Uniform Resource Identifier (URI) prefix that is already registered.  
-  
- **Associated Tips**  
-  
- Make sure you are not attempting to register a URI prefix that is already registered.  
- If the URI prefix is already registered, this exception will occur.  
-  
- Make sure your HTTP request is valid.  
- This exception is thrown by the <xref:System.Net.HttpListener> class and its associated classes when an error occurs during the initialization of the <xref:System.Net.HttpListener> or while creating or sending a response to an HTTP request.  
-  
- If you are using the `HttpListenerPrefixCollection.Add` method, make sure the `uriPrefix` has not been already added.  
- This exception will be thrown if another <xref:System.Net.HttpListener> has already added the prefix `uriPrefix`.  
-  
+This exception is thrown by the <xref:System.Net.HttpListener> class and its associated classes when an error occurs during initialization of the <xref:System.Net.HttpListener> or while creating or sending a response to an HTTP request. For example, this exception is thrown if the <xref:System.Net.HttpListener> attempts to register a Uniform Resource Identifier (URI) prefix that is already registered.  
+ 
+**Associated Tips**  
+ 
+Make sure you are not attempting to register a URI prefix that is already registered.  
+If the URI prefix is already registered, this exception will occur.  
+ 
+Make sure your HTTP request is valid.  
+This exception is thrown by the <xref:System.Net.HttpListener> class and its associated classes when an error occurs during the initialization of the <xref:System.Net.HttpListener> or while creating or sending a response to an HTTP request.  
+ 
+If you are using the `HttpListenerPrefixCollection.Add` method, make sure the `uriPrefix` has not been already added.  
+This exception will be thrown if another <xref:System.Net.HttpListener> has already added the prefix `uriPrefix`.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.HttpListenerException" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the <xref:System.Net.HttpListenerException.ErrorCode%2A> and <xref:System.Exception.Message%2A> properties using the most recent Windows error.  
-  
+This constructor sets the <xref:System.Net.HttpListenerException.ErrorCode%2A> and <xref:System.Exception.Message%2A> properties using the most recent Windows error.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,10 +87,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.HttpListenerException" /> class using the specified error code.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of `errorCode` is used to set the <xref:System.Net.HttpListenerException.ErrorCode%2A> property.  
-  
+The value of `errorCode` is used to set the <xref:System.Net.HttpListenerException.ErrorCode%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,10 +119,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.HttpListenerException" /> class using the specified error code and message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of `errorCode` is used to set the <xref:System.Net.HttpListenerException.ErrorCode%2A> property. The `message` parameter is used to set the <xref:System.Exception.Message%2A> property.  
-  
+The value of `errorCode` is used to set the <xref:System.Net.HttpListenerException.ErrorCode%2A> property. The `message` parameter is used to set the <xref:System.Exception.Message%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -174,10 +174,10 @@
         <value>A <see cref="T:System.Int32" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the Windows error code associated with this exception.  
-  
+This property returns the Windows error code associated with this exception.  
+ 
  ]]></format>
         </remarks>
       </Docs>

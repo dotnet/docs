@@ -14,30 +14,30 @@
     <summary>Encapsulates the information needed when creating a control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The information in a <xref:System.Windows.Forms.CreateParams> can be used to pass information about the initial state and appearance of a control. Most <xref:System.Windows.Forms.Control> derived controls override the <xref:System.Windows.Forms.Control.CreateParams%2A> property to pass in the appropriate values or include additional information in the <xref:System.Windows.Forms.CreateParams>.  
-  
- For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
-  
+The information in a <xref:System.Windows.Forms.CreateParams> can be used to pass information about the initial state and appearance of a control. Most <xref:System.Windows.Forms.Control> derived controls override the <xref:System.Windows.Forms.Control.CreateParams%2A> property to pass in the appropriate values or include additional information in the <xref:System.Windows.Forms.CreateParams>.  
+ 
+For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
+ 
 > [!NOTE]
 >  The constants used to set the <xref:System.Windows.Forms.CreateParams.Style%2A>, <xref:System.Windows.Forms.CreateParams.ExStyle%2A>, and <xref:System.Windows.Forms.CreateParams.ClassStyle%2A> properties are defined in the Winuser.h header file. This file is installed by the Platform SDK or Visual Studio.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.Button> derived class named `MyIconButton` and provides the implementation needed for the button to display an Icon rather than an Image. The <xref:System.Windows.Forms.Control.CreateParams%2A> property is extended and a value added to the <xref:System.Windows.Forms.CreateParams.Style%2A> property that causes the button to display an <xref:System.Drawing.Icon> rather than an <xref:System.Drawing.Image>.  
-  
- [!code-cpp[CreateParams#1](~/samples/snippets/cpp/VS_Snippets_Winforms/CreateParams/CPP/createparams.cpp#1)]
- [!code-csharp[CreateParams#1](~/samples/snippets/csharp/VS_Snippets_Winforms/CreateParams/CS/createparams.cs#1)]
- [!code-vb[CreateParams#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CreateParams/VB/createparams.vb#1)]  
-  
- The following code example creates an instance of a standard <xref:System.Windows.Forms.Button> control and an instance of the derived control, `MyIconButton`, created in the example above. This example requires that there is an <xref:System.Drawing.Icon> file named Default.ico in the same location as the application. When the application starts, the `Default` icon is displayed on the `MyIconButton` button. If the `Default` icon is not present, the button face is blank. When the standard <xref:System.Windows.Forms.Button> is clicked, an <xref:System.Windows.Forms.OpenFileDialog> box will appear so you can select a new Icon to display on the `MyIconButton`.  
-  
- [!code-cpp[CreateParams#2](~/samples/snippets/cpp/VS_Snippets_Winforms/CreateParams/CPP/createparams.cpp#2)]
- [!code-csharp[CreateParams#2](~/samples/snippets/csharp/VS_Snippets_Winforms/CreateParams/CS/createparams.cs#2)]
- [!code-vb[CreateParams#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CreateParams/VB/createparams.vb#2)]  
-  
+The following code example creates a <xref:System.Windows.Forms.Button> derived class named `MyIconButton` and provides the implementation needed for the button to display an Icon rather than an Image. The <xref:System.Windows.Forms.Control.CreateParams%2A> property is extended and a value added to the <xref:System.Windows.Forms.CreateParams.Style%2A> property that causes the button to display an <xref:System.Drawing.Icon> rather than an <xref:System.Drawing.Image>.  
+ 
+[!code-cpp[CreateParams#1](~/samples/snippets/cpp/VS_Snippets_Winforms/CreateParams/CPP/createparams.cpp#1)]
+[!code-csharp[CreateParams#1](~/samples/snippets/csharp/VS_Snippets_Winforms/CreateParams/CS/createparams.cs#1)]
+[!code-vb[CreateParams#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CreateParams/VB/createparams.vb#1)]  
+ 
+The following code example creates an instance of a standard <xref:System.Windows.Forms.Button> control and an instance of the derived control, `MyIconButton`, created in the example above. This example requires that there is an <xref:System.Drawing.Icon> file named Default.ico in the same location as the application. When the application starts, the `Default` icon is displayed on the `MyIconButton` button. If the `Default` icon is not present, the button face is blank. When the standard <xref:System.Windows.Forms.Button> is clicked, an <xref:System.Windows.Forms.OpenFileDialog> box will appear so you can select a new Icon to display on the `MyIconButton`.  
+ 
+[!code-cpp[CreateParams#2](~/samples/snippets/cpp/VS_Snippets_Winforms/CreateParams/CPP/createparams.cpp#2)]
+[!code-csharp[CreateParams#2](~/samples/snippets/csharp/VS_Snippets_Winforms/CreateParams/CS/createparams.cs#2)]
+[!code-vb[CreateParams#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CreateParams/VB/createparams.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -92,10 +92,10 @@
         <value>The name of the Windows class to derive the control from.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value for this property is `null`, indicating that the control is not derived from an existing control class. To derive from an existing control class, store the system class name in this property. For example, to derive from the standard <xref:System.Windows.Forms.Button> control, set this property to "BUTTON".  
-  
+The default value for this property is `null`, indicating that the control is not derived from an existing control class. To derive from an existing control class, store the system class name in this property. For example, to derive from the standard <xref:System.Windows.Forms.Button> control, set this property to "BUTTON".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,15 +117,15 @@
         <value>A bitwise combination of the class style values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.CreateParams.ClassStyle%2A> property is ignored if the <xref:System.Windows.Forms.CreateParams.ClassName%2A> property is not `null`.  
-  
- For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
-  
+The <xref:System.Windows.Forms.CreateParams.ClassStyle%2A> property is ignored if the <xref:System.Windows.Forms.CreateParams.ClassName%2A> property is not `null`.  
+ 
+For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
+ 
 > [!NOTE]
 >  The constants used to set the <xref:System.Windows.Forms.CreateParams.Style%2A>, <xref:System.Windows.Forms.CreateParams.ExStyle%2A>, and <xref:System.Windows.Forms.CreateParams.ClassStyle%2A> properties are defined in the Winuser.h header file. This file is installed by the Platform SDK or Visual Studio.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,15 +147,15 @@
         <value>A bitwise combination of the extended window style values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.CreateParams.ExStyle%2A> property supports extended appearance and initial state values to apply to the control.  
-  
- For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
-  
+The <xref:System.Windows.Forms.CreateParams.ExStyle%2A> property supports extended appearance and initial state values to apply to the control.  
+ 
+For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
+ 
 > [!NOTE]
 >  The constants used to set the <xref:System.Windows.Forms.CreateParams.Style%2A>, <xref:System.Windows.Forms.CreateParams.ExStyle%2A>, and <xref:System.Windows.Forms.CreateParams.ClassStyle%2A> properties are defined in the Winuser.h header file. This file is installed by the Platform SDK or Visual Studio.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,12 +195,12 @@
         <value>The <see cref="T:System.Object" /> that holds additional parameter information needed to create the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you are creating a multiple document interface (MDI) client window, the <xref:System.Windows.Forms.CreateParams.Param%2A> property must reference a `CLIENTCREATESTRUCT` structure.  
-  
- For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CLIENTCREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
-  
+If you are creating a multiple document interface (MDI) client window, the <xref:System.Windows.Forms.CreateParams.Param%2A> property must reference a `CLIENTCREATESTRUCT` structure.  
+ 
+For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CLIENTCREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -240,24 +240,24 @@
         <value>A bitwise combination of the window style values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.CreateParams.Style%2A> property controls the appearance of the control and its initial state.  
-  
- For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
-  
+The <xref:System.Windows.Forms.CreateParams.Style%2A> property controls the appearance of the control and its initial state.  
+ 
+For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library.  
+ 
 > [!NOTE]
 >  The constants used to set the <xref:System.Windows.Forms.CreateParams.Style%2A>, <xref:System.Windows.Forms.CreateParams.ExStyle%2A>, and <xref:System.Windows.Forms.CreateParams.ClassStyle%2A> properties are defined in the Winuser.h header file. This file is installed by the Platform SDK or Visual Studio.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.Button> derived class named `MyIconButton` and provides the implementation needed for the button to display an icon rather than an image. The <xref:System.Windows.Forms.Control.CreateParams%2A> property is extended and a value added to the <xref:System.Windows.Forms.CreateParams.Style%2A> property that causes the button to display an <xref:System.Drawing.Icon> rather than an <xref:System.Drawing.Image>.  
-  
- [!code-cpp[CreateParams#1](~/samples/snippets/cpp/VS_Snippets_Winforms/CreateParams/CPP/createparams.cpp#1)]
- [!code-csharp[CreateParams#1](~/samples/snippets/csharp/VS_Snippets_Winforms/CreateParams/CS/createparams.cs#1)]
- [!code-vb[CreateParams#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CreateParams/VB/createparams.vb#1)]  
-  
+The following code example creates a <xref:System.Windows.Forms.Button> derived class named `MyIconButton` and provides the implementation needed for the button to display an icon rather than an image. The <xref:System.Windows.Forms.Control.CreateParams%2A> property is extended and a value added to the <xref:System.Windows.Forms.CreateParams.Style%2A> property that causes the button to display an <xref:System.Drawing.Icon> rather than an <xref:System.Drawing.Image>.  
+ 
+[!code-cpp[CreateParams#1](~/samples/snippets/cpp/VS_Snippets_Winforms/CreateParams/CPP/createparams.cpp#1)]
+[!code-csharp[CreateParams#1](~/samples/snippets/csharp/VS_Snippets_Winforms/CreateParams/CS/createparams.cs#1)]
+[!code-vb[CreateParams#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CreateParams/VB/createparams.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

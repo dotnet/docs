@@ -24,12 +24,12 @@
     <summary>Specifies the installer for a type that installs components.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The class used for the installer must implement the <xref:System.ComponentModel.Design.IDesigner> interface. Use the <xref:System.ComponentModel.InstallerTypeAttribute.InstallerType%2A> property to get the installer associated with this attribute.  
-  
- For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
+The class used for the installer must implement the <xref:System.ComponentModel.Design.IDesigner> interface. Use the <xref:System.ComponentModel.InstallerTypeAttribute.InstallerType%2A> property to get the installer associated with this attribute.  
+ 
+For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
  ]]></format>
     </remarks>
   </Docs>

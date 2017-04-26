@@ -22,12 +22,12 @@
     <summary>Represents a collection of script references to combine into a single composite script.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The number of script references that a <xref:System.Web.UI.CompositeScriptReference> instance can contain is limited by the size of the resulting URL. The URL cannot be longer than 1024 characters.  
-  
- If you have to work around this limitation, you have two options. The first option is to reduce the number of <xref:System.Web.UI.ScriptReference> objects that the composite script contains. The second option is to manually combine the scripts into a single static file. In that case, you can set the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property to the location of the static file.  
-  
+The number of script references that a <xref:System.Web.UI.CompositeScriptReference> instance can contain is limited by the size of the resulting URL. The URL cannot be longer than 1024 characters.  
+ 
+If you have to work around this limitation, you have two options. The first option is to reduce the number of <xref:System.Web.UI.ScriptReference> objects that the composite script contains. The second option is to manually combine the scripts into a single static file. In that case, you can set the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property to the location of the static file.  
+ 
  ]]></format>
     </remarks>
   </Docs>

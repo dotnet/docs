@@ -18,10 +18,10 @@
     <summary>Supports the page parser in building a template and the child controls it contains.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To use a custom <xref:System.Web.UI.TemplateBuilder> class for a control, create a custom <xref:System.Web.UI.ControlBuilder> for the control, and then return the custom <xref:System.Web.UI.TemplateBuilder> control from the <xref:System.Web.UI.ControlBuilder.GetChildControlType%2A> method.  
-  
+To use a custom <xref:System.Web.UI.TemplateBuilder> class for a control, create a custom <xref:System.Web.UI.ControlBuilder> for the control, and then return the custom <xref:System.Web.UI.TemplateBuilder> control from the <xref:System.Web.UI.ControlBuilder.GetChildControlType%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -129,10 +129,10 @@
         <summary>Defines the <see cref="T:System.Web.UI.Control" /> object that child controls and templates belong to in design time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateBuilder.InstantiateIn%2A> method is required when implementing the <xref:System.Web.UI.ITemplate> interface. The <xref:System.Web.UI.TemplateBuilder.InstantiateIn%2A> method is used only in design time.  
-  
+The <xref:System.Web.UI.TemplateBuilder.InstantiateIn%2A> method is required when implementing the <xref:System.Web.UI.ITemplate> interface. The <xref:System.Web.UI.TemplateBuilder.InstantiateIn%2A> method is used only in design time.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,10 +156,10 @@
           <see langword="true" /> if the control builder needs to get its inner text. The default is <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateBuilder.SetTagInnerText%2A> method needs to be called when we are in design time. The <xref:System.Web.UI.TemplateBuilder.NeedsTagInnerText%2A> method returns the value of the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property of the base <xref:System.Web.UI.ControlBuilder> class.  
-  
+The <xref:System.Web.UI.TemplateBuilder.SetTagInnerText%2A> method needs to be called when we are in design time. The <xref:System.Web.UI.TemplateBuilder.NeedsTagInnerText%2A> method returns the value of the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property of the base <xref:System.Web.UI.ControlBuilder> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,10 +184,10 @@
         <summary>Saves the inner text of the template tag.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateBuilder.SetTagInnerText%2A> method overrides the base class's <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A?displayProperty=fullName> method and sets the value of the <xref:System.Web.UI.TemplateBuilder.Text%2A> property.  
-  
+The <xref:System.Web.UI.TemplateBuilder.SetTagInnerText%2A> method overrides the base class's <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A?displayProperty=fullName> method and sets the value of the <xref:System.Web.UI.TemplateBuilder.Text%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,10 +209,10 @@
         <value>The text that appears between the opening and closing tags of the template.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.TemplateBuilder.Text%2A> property is used by the designer to specify or determine the text that appears between the opening and closing tags of the template.  
-  
+The <xref:System.Web.UI.TemplateBuilder.Text%2A> property is used by the designer to specify or determine the text that appears between the opening and closing tags of the template.  
+ 
  ]]></format>
         </remarks>
       </Docs>

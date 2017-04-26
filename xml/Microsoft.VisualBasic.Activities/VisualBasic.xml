@@ -14,10 +14,10 @@
     <summary>Provides an attached property store for <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.VisualBasic.Activities.VisualBasic> allows for an instance of <xref:Microsoft.VisualBasic.Activities.VisualBasicSettings> to be attached to the top level activity in a workflow defined in a XAML file, thus defining the settings for all <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601> and <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> expressions in that workflow.  
-  
+<xref:Microsoft.VisualBasic.Activities.VisualBasic> allows for an instance of <xref:Microsoft.VisualBasic.Activities.VisualBasicSettings> to be attached to the top level activity in a workflow defined in a XAML file, thus defining the settings for all <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601> and <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> expressions in that workflow.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
         <summary>Attaches a <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance to an object for use by its implementation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:Microsoft.VisualBasic.Activities.VisualBasic.SetSettingsForImplementation%2A> exists for the activity author who is creating a new activity in a class. Any <xref:Microsoft.VisualBasic.Activities.VisualBasicSettings> required by the new activity’s implementation should be attached to the activity in the constructor using <xref:Microsoft.VisualBasic.Activities.VisualBasic.SetSettingsForImplementation%2A>.  
-  
+<xref:Microsoft.VisualBasic.Activities.VisualBasic.SetSettingsForImplementation%2A> exists for the activity author who is creating a new activity in a class. Any <xref:Microsoft.VisualBasic.Activities.VisualBasicSettings> required by the new activity’s implementation should be attached to the activity in the constructor using <xref:Microsoft.VisualBasic.Activities.VisualBasic.SetSettingsForImplementation%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

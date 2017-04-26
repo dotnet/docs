@@ -14,10 +14,10 @@
     <summary>Provides managed to unmanaged interoperation support for creating image objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides creation mechanisms for the primary bitmap imaging class in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)], <xref:System.Windows.Media.Imaging.BitmapSource>. This includes methods that create a <xref:System.Windows.Media.Imaging.BitmapSource> based on [!INCLUDE[TLA#tla_gdi](~/includes/tlasharptla-gdi-md.md)] objects , and memory sections.  
-  
+This class provides creation mechanisms for the primary bitmap imaging class in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)], <xref:System.Windows.Media.Imaging.BitmapSource>. This includes methods that create a <xref:System.Windows.Media.Imaging.BitmapSource> based on [!INCLUDE[TLA#tla_gdi](~/includes/tlasharptla-gdi-md.md)] objects , and memory sections.  
+ 
  ]]></format>
     </remarks>
   </Docs>

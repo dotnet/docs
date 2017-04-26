@@ -21,18 +21,18 @@
     <summary>Represents a record sequence stored in a <see cref="T:System.IO.Log.LogStore" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.Log.LogRecordSequence> class provides an implementation of the record sequence interface on top of a Common Log File System (CLFS) log. In addition to the standard record-oriented features, it provides a policy model for avoiding log-full conditions, and multiplexing of clients on the same physical file. It works with the <xref:System.IO.Log.LogStore> class, which provides an interface for directly manipulating and managing a CLFS log file. The relationship between the <xref:System.IO.Log.LogStore> class and the <xref:System.IO.Log.LogRecordSequence> class is similar to the relationship between a disk file and a <xref:System.IO.FileStream> object. The disk file provides the concrete storage, and has attributes such as length and last access time; while the <xref:System.IO.FileStream> object provides a view on the file that can be used to read from it and write to it. Similarly, the <xref:System.IO.Log.LogStore> class has attributes like a policy and a collection of disk extents; and the <xref:System.IO.Log.LogRecordSequence> class provides a record-oriented mechanism for reading and writing data.  
+The <xref:System.IO.Log.LogRecordSequence> class provides an implementation of the record sequence interface on top of a Common Log File System (CLFS) log. In addition to the standard record-oriented features, it provides a policy model for avoiding log-full conditions, and multiplexing of clients on the same physical file. It works with the <xref:System.IO.Log.LogStore> class, which provides an interface for directly manipulating and managing a CLFS log file. The relationship between the <xref:System.IO.Log.LogStore> class and the <xref:System.IO.Log.LogRecordSequence> class is similar to the relationship between a disk file and a <xref:System.IO.FileStream> object. The disk file provides the concrete storage, and has attributes such as length and last access time; while the <xref:System.IO.FileStream> object provides a view on the file that can be used to read from it and write to it. Similarly, the <xref:System.IO.Log.LogStore> class has attributes like a policy and a collection of disk extents; and the <xref:System.IO.Log.LogRecordSequence> class provides a record-oriented mechanism for reading and writing data.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.IO.Log.LogRecordSequence> class:  
-  
- [!code-csharp[S_UELogRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#0)]
- [!code-vb[S_UELogRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#0)]  
-  
+This example shows how to use the <xref:System.IO.Log.LogRecordSequence> class:  
+ 
+[!code-csharp[S_UELogRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#0)]
+[!code-vb[S_UELogRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Log.LogRecordSequence" /> class with the specified log store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The buffer size determines the maximum size of the record that can be appended or read. In this constructor, a default value of 64 is set. The desired number of buffers is set to 10.  
-  
+The buffer size determines the maximum size of the record that can be appended or read. In this constructor, a default value of 64 is set. The desired number of buffers is set to 10.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -83,10 +83,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Log.LogRecordSequence" /> class with a specified path to the log store and the access mode.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes a new <xref:System.IO.Log.LogRecordSequence> on a new <xref:System.IO.Log.LogStore> object that it opens with the specified path and mode. It is given read/write access to the store, and the store is opened sharing Read access.  
-  
+This constructor initializes a new <xref:System.IO.Log.LogRecordSequence> on a new <xref:System.IO.Log.LogStore> object that it opens with the specified path and mode. It is given read/write access to the store, and the store is opened sharing Read access.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -133,10 +133,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Log.LogRecordSequence" /> class with the specified log store, buffer size for each record, and buffer number.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor if you want to specify values for `bufferSize` and `bufferCount` and do not want to use the default value of 64 for `bufferSize` and 10 for `bufferCount`.  
-  
+Use this constructor if you want to specify values for `bufferSize` and `bufferCount` and do not want to use the default value of 64 for `bufferSize` and 10 for `bufferCount`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -170,10 +170,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Log.LogRecordSequence" /> class with a specified path to the log store and the access and share modes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes a new <xref:System.IO.Log.LogRecordSequence> on a new <xref:System.IO.Log.LogStore> object that it opens with the specified path, mode, and access. The store is opened sharing Read access.  
-  
+This constructor initializes a new <xref:System.IO.Log.LogRecordSequence> on a new <xref:System.IO.Log.LogStore> object that it opens with the specified path, mode, and access. The store is opened sharing Read access.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -222,18 +222,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Log.LogRecordSequence" /> class with a specified path to the log store and the access mode.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes a new <xref:System.IO.Log.LogRecordSequence> on a new <xref:System.IO.Log.LogStore> object that it opens with the specified path, mode, and access. The store is opened sharing the specified access.  
+This constructor initializes a new <xref:System.IO.Log.LogRecordSequence> on a new <xref:System.IO.Log.LogStore> object that it opens with the specified path, mode, and access. The store is opened sharing the specified access.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example shows how to use this <xref:System.IO.Log.LogRecordSequence> constructor:  
-  
- [!code-csharp[S_UELogRecordSequence#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#1)]
- [!code-vb[S_UELogRecordSequence#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#1)]  
-  
+This example shows how to use this <xref:System.IO.Log.LogRecordSequence> constructor:  
+ 
+[!code-csharp[S_UELogRecordSequence#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#1)]
+[!code-vb[S_UELogRecordSequence#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -286,10 +286,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.Log.LogRecordSequence" /> class with a specified path to the log store, file permission, access and share modes, and the buffer size and count for records.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes a new <xref:System.IO.Log.LogRecordSequence> on a new <xref:System.IO.Log.LogStore> object that it opens with the specified path, mode, and access. The store is opened sharing the specified access.  
-  
+This constructor initializes a new <xref:System.IO.Log.LogRecordSequence> on a new <xref:System.IO.Log.LogStore> object that it opens with the specified path, mode, and access. The store is opened sharing the specified access.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -405,17 +405,17 @@
         <summary>Moves the base sequence number of the log forward. This method cannot be inherited.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is often used with the <xref:System.IO.Log.LogRecordSequence.TailPinned> event to free up space in a record. The <xref:System.IO.Log.LogRecordSequence.TailPinned> event indicates that the tail of the sequence (that is, the base sequence number) needs to be moved forward to free up space. Freeing space can be done by either writing restart areas using the <xref:System.IO.Log.LogRecordSequence.WriteRestartArea%2A> method, or truncating the log and using the <xref:System.IO.Log.LogRecordSequence.AdvanceBaseSequenceNumber%2A> method to advance the base sequence number of a log to the one specified by the `newBaseSequenceNumber` parameter. The code sample in the Example section demonstrates the second approach.  
+This method is often used with the <xref:System.IO.Log.LogRecordSequence.TailPinned> event to free up space in a record. The <xref:System.IO.Log.LogRecordSequence.TailPinned> event indicates that the tail of the sequence (that is, the base sequence number) needs to be moved forward to free up space. Freeing space can be done by either writing restart areas using the <xref:System.IO.Log.LogRecordSequence.WriteRestartArea%2A> method, or truncating the log and using the <xref:System.IO.Log.LogRecordSequence.AdvanceBaseSequenceNumber%2A> method to advance the base sequence number of a log to the one specified by the `newBaseSequenceNumber` parameter. The code sample in the Example section demonstrates the second approach.  
+ 
+Note that calling this method is the same as setting a new base sequence number using the <xref:System.IO.Log.LogRecordSequence.WriteRestartArea%2A> method, except that no restart record is written to the log.  
+ 
   
- Note that calling this method is the same as setting a new base sequence number using the <xref:System.IO.Log.LogRecordSequence.WriteRestartArea%2A> method, except that no restart record is written to the log.  
-  
-   
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.IO.Log.LogRecordSequence.AdvanceBaseSequenceNumber%2A> method with the <xref:System.IO.Log.LogRecordSequence.TailPinned> event to free up space in a log sequence.  
-  
+This example shows how to use the <xref:System.IO.Log.LogRecordSequence.AdvanceBaseSequenceNumber%2A> method with the <xref:System.IO.Log.LogRecordSequence.TailPinned> event to free up space in a log sequence.  
+ 
 ```  
 recordSequence.RetryAppend = true;  
 recordSequence.TailPinned += new EventHandler<TailPinnedEventArgs>(HandleTailPinned);  
@@ -435,7 +435,7 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
   
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -484,20 +484,20 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>The sequence number of the appended log record.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+ 
+Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
+ 
   
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use this method to append a log record to the sequence.  
-  
- [!code-csharp[S_UELogRecordSequence#13](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mymultiplexlog.cs#13)]
- [!code-vb[S_UELogRecordSequence#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mymultiplexlog.vb#13)]  
-  
+The following example demonstrates how to use this method to append a log record to the sequence.  
+ 
+[!code-csharp[S_UELogRecordSequence#13](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mymultiplexlog.cs#13)]
+[!code-vb[S_UELogRecordSequence#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mymultiplexlog.vb#13)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -552,12 +552,12 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>The sequence number of the appended log record.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
-  
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
-  
+Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+ 
+Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -614,14 +614,14 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>The sequence number of the appended log record.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
-  
- The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
-  
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
-  
+Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+ 
+The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
+ 
+Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -679,14 +679,14 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>The sequence number of the appended log record.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
-  
- The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
-  
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.IRecordSequence.Flush%2A> method.  
-  
+Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+ 
+The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
+ 
+Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.IRecordSequence.Flush%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -732,20 +732,20 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <value>The lowest sequence number that corresponds to a valid record in the <see cref="T:System.IO.Log.LogRecordSequence" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Valid sequence numbers are greater than or equal to <xref:System.IO.Log.LogRecordSequence.BaseSequenceNumber%2A> and less than <xref:System.IO.Log.LogRecordSequence.LastSequenceNumber%2A>.  
+Valid sequence numbers are greater than or equal to <xref:System.IO.Log.LogRecordSequence.BaseSequenceNumber%2A> and less than <xref:System.IO.Log.LogRecordSequence.LastSequenceNumber%2A>.  
+ 
+The value of this property can be changed by calling the <xref:System.IO.Log.LogRecordSequence.WriteRestartArea%2A> method or <xref:System.IO.Log.LogRecordSequence.AdvanceBaseSequenceNumber%2A> method.  
+ 
   
- The value of this property can be changed by calling the <xref:System.IO.Log.LogRecordSequence.WriteRestartArea%2A> method or <xref:System.IO.Log.LogRecordSequence.AdvanceBaseSequenceNumber%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.IO.Log.LogRecordSequence.BaseSequenceNumber%2A> member in a loop.  
-  
- [!code-csharp[S_UELogRecordSequence#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mymultiplexlog.cs#10)]
- [!code-vb[S_UELogRecordSequence#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mymultiplexlog.vb#10)]  
-  
+This example shows how to use the <xref:System.IO.Log.LogRecordSequence.BaseSequenceNumber%2A> member in a loop.  
+ 
+[!code-csharp[S_UELogRecordSequence#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mymultiplexlog.cs#10)]
+[!code-vb[S_UELogRecordSequence#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mymultiplexlog.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
@@ -782,14 +782,14 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous append, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
-  
- Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
-  
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
-  
+You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+ 
+Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+ 
+Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -848,14 +848,14 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous append, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
-  
- Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
-  
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
-  
+You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+ 
+Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+ 
+Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -916,16 +916,16 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous append, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
-  
- Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
-  
- The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
-  
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
-  
+You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+ 
+Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+ 
+The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
+ 
+Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -987,16 +987,16 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous append, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
-  
- Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
-  
- The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
-  
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
-  
+You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+ 
+Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+ 
+The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
+ 
+Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1050,14 +1050,14 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous flush operation, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should pass the <xref:System.IAsyncResult> returned by the current method to the <xref:System.IO.Log.LogRecordSequence.EndFlush%2A> method to ensure that the flush completes and resources are freed appropriately. If an error occurs during an asynchronous flush, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndFlush%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
-  
- Calling this method ensures that all records that have been appended to the <xref:System.IO.Log.LogRecordSequence> are durably written.  
-  
- If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous flush request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndFlush%2A> method is called.  
-  
+You should pass the <xref:System.IAsyncResult> returned by the current method to the <xref:System.IO.Log.LogRecordSequence.EndFlush%2A> method to ensure that the flush completes and resources are freed appropriately. If an error occurs during an asynchronous flush, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndFlush%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+ 
+Calling this method ensures that all records that have been appended to the <xref:System.IO.Log.LogRecordSequence> are durably written.  
+ 
+If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous flush request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndFlush%2A> method is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1108,18 +1108,18 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>An <see cref="T:System.IAsyncResult" /> that represents this asynchronous operation, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
-  
- Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
-  
- The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
-  
- Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
-  
- If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called.  
-  
+You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+ 
+Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+ 
+The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
+ 
+Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
+ 
+If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1183,18 +1183,18 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>An <see cref="T:System.IAsyncResult" /> that represents this asynchronous operation, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
-  
- Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
-  
- The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
-  
- Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
-  
- If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called.  
-  
+You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+ 
+Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+ 
+The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
+ 
+Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
+ 
+If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One or more of the arguments is invalid.</exception>
@@ -1232,18 +1232,18 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous restart area write operation, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndWriteRestartArea%2A> method to ensure that the restart area write operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous restart area write operation, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndWriteRestartArea%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
-  
- Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
-  
- When the operation successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
-  
- If a <xref:System.IO.Log.ReservationCollection> is specified, the written restart area will consume space that has been previously reserved, using a reservation contained in the collection. If the method succeeds, it will consume the smallest reservation that can hold the data, and that reservation will be removed from the collection.  
-  
- If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndWriteRestartArea%2A> method is called.  
-  
+You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndWriteRestartArea%2A> method to ensure that the restart area write operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous restart area write operation, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndWriteRestartArea%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+ 
+Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+ 
+When the operation successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
+ 
+If a <xref:System.IO.Log.ReservationCollection> is specified, the written restart area will consume space that has been previously reserved, using a reservation contained in the collection. If the method succeeds, it will consume the smallest reservation that can hold the data, and that reservation will be removed from the collection.  
+ 
+If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndWriteRestartArea%2A> method is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1306,18 +1306,18 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous restart area write operation, which could still be pending.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndWriteRestartArea%2A> method to ensure that the restart area write operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous restart area write operation, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndWriteRestartArea%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
-  
- Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
-  
- When the operation successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
-  
- If a <xref:System.IO.Log.ReservationCollection> is specified, the written restart area will consume space that has been previously reserved, using a reservation contained in the collection. If the method succeeds, it will consume the smallest reservation that can hold the data, and that reservation will be removed from the collection.  
-  
- If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndWriteRestartArea%2A> method is called.  
-  
+You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.LogRecordSequence.EndWriteRestartArea%2A> method to ensure that the restart area write operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous restart area write operation, an exception is not thrown until the <xref:System.IO.Log.LogRecordSequence.EndWriteRestartArea%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+ 
+Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+ 
+When the operation successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
+ 
+If a <xref:System.IO.Log.ReservationCollection> is specified, the written restart area will consume space that has been previously reserved, using a reservation contained in the collection. If the method succeeds, it will consume the smallest reservation that can hold the data, and that reservation will be removed from the collection.  
+ 
+If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndWriteRestartArea%2A> method is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1369,10 +1369,10 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>The newly created <see cref="T:System.IO.Log.ReservationCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- Reservations can be performed in two ways as shown in the following examples. You can adopt the practices in the samples for robust processing. Notice that this task can only be performed when using the CLFS-based <xref:System.IO.Log.LogRecordSequence> class.  
-  
+Reservations can be performed in two ways as shown in the following examples. You can adopt the practices in the samples for robust processing. Notice that this task can only be performed when using the CLFS-based <xref:System.IO.Log.LogRecordSequence> class.  
+ 
 ```  
 //Using the ReserveAndAppend Method  
 ReservationCollection reservations = recordSequence.CreateReservationCollection();  
@@ -1404,7 +1404,7 @@ catch (Exception)
   
 recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.ForceFlush, reservations);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
@@ -1427,16 +1427,16 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <summary>Releases the resources used by the component.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example shows how to use <xref:System.IO.Log.LogRecordSequence.Dispose%2A> to release resource:  
-  
- [!code-csharp[S_UELogRecordSequence#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mymultiplexlog.cs#11)]
- [!code-vb[S_UELogRecordSequence#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mymultiplexlog.vb#11)]  
-  
- <!-- TODO: review snippet reference [!code-csharp[S_UELogRecordSequence#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mymultiplexlog.cs#12)]  -->
- <!-- TODO: review snippet reference [!code-vb[S_UELogRecordSequence#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mymultiplexlog.vb#12)]  -->  
-  
+This example shows how to use <xref:System.IO.Log.LogRecordSequence.Dispose%2A> to release resource:  
+ 
+[!code-csharp[S_UELogRecordSequence#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mymultiplexlog.cs#11)]
+[!code-vb[S_UELogRecordSequence#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mymultiplexlog.vb#11)]  
+ 
+<!-- TODO: review snippet reference [!code-csharp[S_UELogRecordSequence#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mymultiplexlog.cs#12)]  -->
+<!-- TODO: review snippet reference [!code-vb[S_UELogRecordSequence#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mymultiplexlog.vb#12)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
@@ -1464,12 +1464,12 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <returns>The sequence number of the appended log record.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method blocks until the I/O operation has completed. Errors that occur during an asynchronous write request, such as a disk failure during the I/O request, become visible when <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> is called.  
-  
- This method must be called exactly once on every <xref:System.IAsyncResult> returned by the <xref:System.IO.Log.LogRecordSequence.BeginAppend%2A> method.  
-  
+This method blocks until the I/O operation has completed. Errors that occur during an asynchronous write request, such as a disk failure during the I/O request, become visible when <xref:System.IO.Log.LogRecordSequence.EndAppend%2A> is called.  
+ 
+This method must be called exactly once on every <xref:System.IAsyncResult> returned by the <xref:System.IO.Log.LogRecordSequence.BeginAppend%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1509,12 +1509,12 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <returns>The sequence number of the last record written.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method blocks until the I/O operation has completed. Errors that occur during an asynchronous flush request, such as a disk failure during the I/O request, become visible when <xref:System.IO.Log.LogRecordSequence.EndFlush%2A> is called.  
-  
- This method must be called exactly once on every <xref:System.IAsyncResult> returned by the <xref:System.IO.Log.LogRecordSequence.BeginFlush%2A> method.  
-  
+This method blocks until the I/O operation has completed. Errors that occur during an asynchronous flush request, such as a disk failure during the I/O request, become visible when <xref:System.IO.Log.LogRecordSequence.EndFlush%2A> is called.  
+ 
+This method must be called exactly once on every <xref:System.IAsyncResult> returned by the <xref:System.IO.Log.LogRecordSequence.BeginFlush%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1550,12 +1550,12 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <returns>The sequence number of the appended log record.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method blocks until the I/O operation has completed. Errors that occur during an asynchronous write request, such as a disk failure during the I/O request, become visible when <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> is called.  
-  
- This method must be called exactly once on every <xref:System.IAsyncResult> returned by the <xref:System.IO.Log.LogRecordSequence.BeginReserveAndAppend%2A> method.  
-  
+This method blocks until the I/O operation has completed. Errors that occur during an asynchronous write request, such as a disk failure during the I/O request, become visible when <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> is called.  
+ 
+This method must be called exactly once on every <xref:System.IAsyncResult> returned by the <xref:System.IO.Log.LogRecordSequence.BeginReserveAndAppend%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1595,12 +1595,12 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <returns>The sequence number of the written log record.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method blocks until the I/O operation has completed. Errors that occur during an asynchronous write request, such as a disk failure during the I/O request, become visible when <xref:System.IO.Log.LogRecordSequence.EndWriteRestartArea%2A> is called.  
-  
- This method must be called exactly once on every <xref:System.IAsyncResult> returned by the <xref:System.IO.Log.LogRecordSequence.BeginWriteRestartArea%2A> method.  
-  
+This method blocks until the I/O operation has completed. Errors that occur during an asynchronous write request, such as a disk failure during the I/O request, become visible when <xref:System.IO.Log.LogRecordSequence.EndWriteRestartArea%2A> is called.  
+ 
+This method must be called exactly once on every <xref:System.IAsyncResult> returned by the <xref:System.IO.Log.LogRecordSequence.BeginWriteRestartArea%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1633,10 +1633,10 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <returns>The sequence number of the last record written.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method ensures that all records that have been appended to the <xref:System.IO.Log.LogRecordSequence> have been durably written.  
-  
+Calling this method ensures that all records that have been appended to the <xref:System.IO.Log.LogRecordSequence> have been durably written.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred while flushing the data.</exception>
@@ -1669,10 +1669,10 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <returns>The sequence number of the last record written.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method ensures that all records with sequence numbers up to and including the specified sequence number have been durably written.  
-  
+Calling this method ensures that all records with sequence numbers up to and including the specified sequence number have been durably written.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1705,10 +1705,10 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <value>A sequence number which is greater than the last record appended.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property contains a sequence number that is guaranteed to be larger than the sequence number of the last appended record. Valid sequence numbers are greater than or equal to <xref:System.IO.Log.LogRecordSequence.BaseSequenceNumber%2A> and less than <xref:System.IO.Log.LogRecordSequence.LastSequenceNumber%2A>. All other sequence numbers are invalid.  
-  
+This property contains a sequence number that is guaranteed to be larger than the sequence number of the last appended record. Valid sequence numbers are greater than or equal to <xref:System.IO.Log.LogRecordSequence.BaseSequenceNumber%2A> and less than <xref:System.IO.Log.LogRecordSequence.LastSequenceNumber%2A>. All other sequence numbers are invalid.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
@@ -1731,13 +1731,13 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <value>The <see cref="T:System.IO.Log.LogStore" /> that contains the data for this record sequence.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.IO.Log.LogRecordSequence.LogStore%2A> member to add extents.  
-  
- [!code-csharp[S_UELogRecordSequence#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mymultiplexlog.cs#11)]
- [!code-vb[S_UELogRecordSequence#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mymultiplexlog.vb#11)]  
-  
+This example shows how to use the <xref:System.IO.Log.LogRecordSequence.LogStore%2A> member to add extents.  
+ 
+[!code-csharp[S_UELogRecordSequence#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mymultiplexlog.cs#11)]
+[!code-vb[S_UELogRecordSequence#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mymultiplexlog.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1783,18 +1783,18 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <returns>An enumerable collection of records in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns an enumerable collection of records in the sequence. The order of the enumerated records depends on the value of the `logRecordEnum` parameter.  
+This method returns an enumerable collection of records in the sequence. The order of the enumerated records depends on the value of the `logRecordEnum` parameter.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example shows how to use <xref:System.IO.Log.LogRecordSequence.ReadLogRecords%2A> in a loop.  
-  
- [!code-csharp[S_UELogRecordSequence#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mymultiplexlog.cs#10)]
- [!code-vb[S_UELogRecordSequence#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mymultiplexlog.vb#10)]  
-  
+This example shows how to use <xref:System.IO.Log.LogRecordSequence.ReadLogRecords%2A> in a loop.  
+ 
+[!code-csharp[S_UELogRecordSequence#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mymultiplexlog.cs#10)]
+[!code-vb[S_UELogRecordSequence#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mymultiplexlog.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1854,10 +1854,10 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <returns>An enumerable collection of the restart areas in the sequence.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The restart areas are enumerated in reverse sequence number order, that is, from the highest sequence number to the lowest sequence number. Only restart areas with sequence numbers between the last sequence number and the base sequence number are enumerated.  
-  
+The restart areas are enumerated in reverse sequence number order, that is, from the highest sequence number to the lowest sequence number. Only restart areas with sequence numbers between the last sequence number and the base sequence number are enumerated.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1930,19 +1930,19 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
         <returns>The sequence number of the appended log record.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+ 
+The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
+ 
+Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
+ 
   
- The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
-  
- Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use this method to make reservations. Notice that this task can only be performed when using the CLFS-based <xref:System.IO.Log.LogRecordSequence> class.  
-  
+The following example shows how to use this method to make reservations. Notice that this task can only be performed when using the CLFS-based <xref:System.IO.Log.LogRecordSequence> class.  
+ 
 ```  
 ReservationCollection reservations = recordSequence.CreateReservationCollection();  
 long[] lengthOfUndoRecords = new long[] { 1000 };  
@@ -1958,7 +1958,7 @@ recordSequence.Append(undoRecordData,    // If necessary …
                                     RecordSequenceAppendOptions.ForceFlush,  
                                     reservations);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2024,14 +2024,14 @@ recordSequence.Append(undoRecordData,    // If necessary …
         <returns>The sequence number of the appended log record.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
-  
- The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
-  
- Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
-  
+Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+ 
+The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
+ 
+Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.LogRecordSequence.Flush%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One or more of the arguments is invalid.</exception>
@@ -2083,12 +2083,12 @@ recordSequence.Append(undoRecordData,    // If necessary …
         <value>The sequence number of the restart area closest to the end of the log.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
-  
- Using the <xref:System.IO.Log.LogRecordSequence.SetLastRecord%2A> method, you can remove the most recently written restart area.  
-  
+A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+ 
+Using the <xref:System.IO.Log.LogRecordSequence.SetLastRecord%2A> method, you can remove the most recently written restart area.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
@@ -2112,18 +2112,18 @@ recordSequence.Append(undoRecordData,    // If necessary …
           <see langword="true" /> if appends are automatically retried if the log is full; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the value of this property is `true`, and an <xref:System.IO.Log.LogRecordSequence.Append%2A> call fails because there is not enough space in the sequence, the record sequence will try to free space and retry the append.  
+If the value of this property is `true`, and an <xref:System.IO.Log.LogRecordSequence.Append%2A> call fails because there is not enough space in the sequence, the record sequence will try to free space and retry the append.  
+ 
   
-   
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.IO.Log.LogRecordSequence.RetryAppend%2A> property.  
-  
- [!code-csharp[S_UELogRecordSequence#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#3)]
- [!code-vb[S_UELogRecordSequence#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#3)]  
-  
+This example shows how to use the <xref:System.IO.Log.LogRecordSequence.RetryAppend%2A> property.  
+ 
+[!code-csharp[S_UELogRecordSequence#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#3)]
+[!code-vb[S_UELogRecordSequence#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
@@ -2151,12 +2151,12 @@ recordSequence.Append(undoRecordData,    // If necessary …
         <summary>Sets the last record in the <see cref="T:System.IO.Log.LogRecordSequence" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specified sequence number must be larger than the base sequence number.  
-  
- When this method completes, all records that had previously been appended with sequence numbers greater than the specified sequence number are inaccessible.  
-  
+The specified sequence number must be larger than the base sequence number.  
+ 
+When this method completes, all records that had previously been appended with sequence numbers greater than the specified sequence number are inaccessible.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2196,19 +2196,19 @@ recordSequence.Append(undoRecordData,    // If necessary …
         <summary>Signals the need to move the tail of the sequence.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can fire this event when the record sequence has run out of space. When this event is fired, the tail of the sequence (that is, the base sequence number) is moved forward to free up space.  
+You can fire this event when the record sequence has run out of space. When this event is fired, the tail of the sequence (that is, the base sequence number) is moved forward to free up space.  
+ 
+The event can be fired at any time when the record sequence decides that it must free up space, for any reason. For example, the CLFS policy engine may decide to fire the event when it determines that the tails of two log clients sharing the same log file are too far apart. Freeing space can be done by either writing restart areas, or truncating the log and using the <xref:System.IO.Log.LogRecordSequence.AdvanceBaseSequenceNumber%2A> method to clear space. The code sample in the Example section demonstrates the second approach.  
+ 
+You can also call the <xref:System.IO.Log.FileRecordSequence.WriteRestartArea%2A> method outside of the <xref:System.IO.Log.LogRecordSequence.TailPinned> event to free space. A restart area is similar to a checkpoint in other log processing systems. Calling this method indicates that the application considers all prior records before the restart area as fully completed, and usable for future record appends. Similar to any other records, the record written by this method requires actual free space in the log to function.  
+ 
   
- The event can be fired at any time when the record sequence decides that it must free up space, for any reason. For example, the CLFS policy engine may decide to fire the event when it determines that the tails of two log clients sharing the same log file are too far apart. Freeing space can be done by either writing restart areas, or truncating the log and using the <xref:System.IO.Log.LogRecordSequence.AdvanceBaseSequenceNumber%2A> method to clear space. The code sample in the Example section demonstrates the second approach.  
-  
- You can also call the <xref:System.IO.Log.FileRecordSequence.WriteRestartArea%2A> method outside of the <xref:System.IO.Log.LogRecordSequence.TailPinned> event to free space. A restart area is similar to a checkpoint in other log processing systems. Calling this method indicates that the application considers all prior records before the restart area as fully completed, and usable for future record appends. Similar to any other records, the record written by this method requires actual free space in the log to function.  
-  
-   
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.IO.Log.LogRecordSequence.TailPinned> event.  
-  
+This example shows how to use the <xref:System.IO.Log.LogRecordSequence.TailPinned> event.  
+ 
 ```  
 recordSequence.RetryAppend = true;  
 recordSequence.TailPinned += new EventHandler<TailPinnedEventArgs>(HandleTailPinned);  
@@ -2228,7 +2228,7 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
   
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2254,14 +2254,14 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>The sequence number of the written restart area.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
-  
- A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
-  
- The data in the byte array segments will be concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
-  
+A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+ 
+A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
+ 
+The data in the byte array segments will be concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One or more of the arguments is invalid.</exception>
@@ -2294,14 +2294,14 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>The sequence number of the written restart area.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
-  
- A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
-  
- The data in the byte array segments will be concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
-  
+A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+ 
+A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
+ 
+The data in the byte array segments will be concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One or more of the arguments is invalid.</exception>
@@ -2336,18 +2336,18 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>The sequence number of the written restart area.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
-  
- A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
-  
- When a restart area is written, the data in the byte array segments are concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
-  
- When this method successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
-  
- If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called.  
-  
+A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+ 
+A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
+ 
+When a restart area is written, the data in the byte array segments are concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
+ 
+When this method successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
+ 
+If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One or more of the arguments is invalid.</exception>
@@ -2379,18 +2379,18 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>The sequence number of the written restart area.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
-  
- A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
-  
- When a restart area is written, the data in the byte array segments are concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
-  
- When this method successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
-  
- If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called.  
-  
+A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+ 
+A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
+ 
+When a restart area is written, the data in the byte array segments are concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
+ 
+When this method successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
+ 
+If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One or more of the arguments is invalid.</exception>
@@ -2424,20 +2424,20 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>The sequence number of the written restart area.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
-  
- A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
-  
- When a restart area is written, the data in the byte array segments are concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
-  
- If a reservation is specified, the written restart area will consume space that has been previously reserved, using a reservation contained in the collection. If the method succeeds, it will consume the smallest reservation that can contain the data, and that reservation will be removed from the collection.  
-  
- When this method successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
-  
- If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called.  
-  
+A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+ 
+A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
+ 
+When a restart area is written, the data in the byte array segments are concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
+ 
+If a reservation is specified, the written restart area will consume space that has been previously reserved, using a reservation contained in the collection. If the method succeeds, it will consume the smallest reservation that can contain the data, and that reservation will be removed from the collection.  
+ 
+When this method successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
+ 
+If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">One or more of the arguments is invalid.</exception>
@@ -2471,20 +2471,20 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <returns>The sequence number of the written restart area.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
-  
- A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
-  
- When a restart area is written, the data in the byte array segments are concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
-  
- If a reservation is specified, the written restart area will consume space that has been previously reserved, using a reservation contained in the collection. If the method succeeds, it will consume the smallest reservation that can contain the data, and that reservation will be removed from the collection.  
-  
- When this method successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
-  
- If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called.  
-  
+A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+ 
+A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
+ 
+When a restart area is written, the data in the byte array segments are concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
+ 
+If a reservation is specified, the written restart area will consume space that has been previously reserved, using a reservation contained in the collection. If the method succeeds, it will consume the smallest reservation that can contain the data, and that reservation will be removed from the collection.  
+ 
+When this method successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
+ 
+If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.LogRecordSequence.EndReserveAndAppend%2A> method is called.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2527,12 +2527,12 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <summary>Writes a restart area to the <see cref="T:System.IO.Log.LogRecordSequence" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
-  
- A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
-  
+A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+ 
+A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2546,13 +2546,13 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <summary>Writes a log record to the <see cref="T:System.IO.Log.IRecordSequence" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example shows how to use the <xref:System.IO.Log.LogRecordSequence.Append%2A> member  
-  
- [!code-csharp[S_UELogRecordSequence#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#5)]
- [!code-vb[S_UELogRecordSequence#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#5)]  
-  
+This example shows how to use the <xref:System.IO.Log.LogRecordSequence.Append%2A> member  
+ 
+[!code-csharp[S_UELogRecordSequence#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#5)]
+[!code-vb[S_UELogRecordSequence#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

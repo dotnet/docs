@@ -13,10 +13,10 @@
     <summary>Contains values that each expression class uses to denote the operation it represents. The <see cref="P:System.Data.Common.CommandTrees.DbExpression.ExpressionKind" /> property of an <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> can be retrieved to determine which operation that expression represents.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Data.Common.CommandTrees.DbExpressionKind> enumeration to specify the various kinds of expressions. The Members table lists the functions that are members of this class and the type of expressions they specify.  
-  
+Use the <xref:System.Data.Common.CommandTrees.DbExpressionKind> enumeration to specify the various kinds of expressions. The Members table lists the functions that are members of this class and the type of expressions they specify.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -19,10 +19,10 @@
     <summary>Provides a cached dictionary that associates resource dictionaries with their URIs.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implements the <xref:System.Windows.Markup.MarkupExtensions> class that provides XAML markup extensions. Markup extensions return objects based on string attribute values or markup elements in XAML. The <xref:System.Activities.Presentation.CachedResourceDictionaryExtension.ProvideValue%2A> method of each extension can use an <xref:System.IServiceProvider> object at run time that can provide context.  
-  
+Implements the <xref:System.Windows.Markup.MarkupExtensions> class that provides XAML markup extensions. Markup extensions return objects based on string attribute values or markup elements in XAML. The <xref:System.Activities.Presentation.CachedResourceDictionaryExtension.ProvideValue%2A> method of each extension can use an <xref:System.IServiceProvider> object at run time that can provide context.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,10 +63,10 @@
         <returns>The <see cref="T:System.Object" /> value to set on the property where the extension is applied.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Activities.Presentation.CachedResourceDictionaryExtension.ProvideValue%2A> method of each extension can use an <xref:System.IServiceProvider> object at run time that can provide context.  
-  
+The <xref:System.Activities.Presentation.CachedResourceDictionaryExtension.ProvideValue%2A> method of each extension can use an <xref:System.IServiceProvider> object at run time that can provide context.  
+ 
  ]]></format>
         </remarks>
       </Docs>

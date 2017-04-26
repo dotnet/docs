@@ -58,22 +58,22 @@
     <summary>Represents a collection of objects that is maintained in sorted order.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Collections.Generic.SortedSet%601> object maintains a sorted order without affecting performance as elements are inserted and deleted. Duplicate elements are not allowed. Changing the sort values of existing items is not supported and may lead to unexpected behavior.  
+A <xref:System.Collections.Generic.SortedSet%601> object maintains a sorted order without affecting performance as elements are inserted and deleted. Duplicate elements are not allowed. Changing the sort values of existing items is not supported and may lead to unexpected behavior.  
+ 
+For a thread safe alternative to <xref:System.Collections.Generic.SortedSet%601>, see <xref:System.Collections.Immutable.ImmutableSortedSet%601>  
+ 
   
- For a thread safe alternative to <xref:System.Collections.Generic.SortedSet%601>, see <xref:System.Collections.Immutable.ImmutableSortedSet%601>  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates a <xref:System.Collections.Generic.SortedSet%601> class that is created with the constructor that takes an <xref:System.Collections.Generic.IComparer%601> as a parameter. This comparer (`ByFileExtension`) is used to sort a list of file names by their extensions.  
-  
- This example demonstrates how to create a sorted set of media file names, remove unwanted elements, view a range of elements, and compare the set with another sorted set.  
-  
- [!code-csharp[System.Collections.Generic.SortedSet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#1)]
- [!code-vb[System.Collections.Generic.SortedSet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#1)]  
-  
+The following example demonstrates a <xref:System.Collections.Generic.SortedSet%601> class that is created with the constructor that takes an <xref:System.Collections.Generic.IComparer%601> as a parameter. This comparer (`ByFileExtension`) is used to sort a list of file names by their extensions.  
+ 
+This example demonstrates how to create a sorted set of media file names, remove unwanted elements, view a range of elements, and compare the set with another sorted set.  
+ 
+[!code-csharp[System.Collections.Generic.SortedSet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#1)]
+[!code-vb[System.Collections.Generic.SortedSet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -130,20 +130,20 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SortedSet`1" /> class that uses a specified comparer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `comparer` does not implement <xref:System.IComparable%601>, you must specify an <xref:System.Collections.Generic.IComparer%601> object to be used.  
+If `comparer` does not implement <xref:System.IComparable%601>, you must specify an <xref:System.Collections.Generic.IComparer%601> object to be used.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example defines a comparer (`ByFileExtension`) that is used to construct a sorted set that sorts file names by their extensions. This code example is part of a larger example provided for the <xref:System.Collections.Generic.SortedSet%601> class.  
-  
- [!code-csharp[System.Collections.Generic.SortedSet#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#2)]
- [!code-vb[System.Collections.Generic.SortedSet#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#2)]  
+The following example defines a comparer (`ByFileExtension`) that is used to construct a sorted set that sorts file names by their extensions. This code example is part of a larger example provided for the <xref:System.Collections.Generic.SortedSet%601> class.  
+ 
+[!code-csharp[System.Collections.Generic.SortedSet#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#2)]
+[!code-vb[System.Collections.Generic.SortedSet#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#2)]  
 [!code-csharp[System.Collections.Generic.SortedSet#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#9)]
 [!code-vb[System.Collections.Generic.SortedSet#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#9)]  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -177,12 +177,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SortedSet`1" /> class that contains elements copied from a specified enumerable collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Duplicate elements in the enumerable collection are not copied into the new instance of the <xref:System.Collections.Generic.SortedSet%601> class, and no exceptions are thrown.  
-  
- This constructor is an O(`n` log `n`) operation, where `n` is the number of elements in the `collection` parameter.  
-  
+Duplicate elements in the enumerable collection are not copied into the new instance of the <xref:System.Collections.Generic.SortedSet%601> class, and no exceptions are thrown.  
+ 
+This constructor is an O(`n` log `n`) operation, where `n` is the number of elements in the `collection` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -243,10 +243,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SortedSet`1" /> class that contains serialized data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to reconstitute an object that is transmitted over a stream.  
-  
+This constructor is called during deserialization to reconstitute an object that is transmitted over a stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,20 +283,20 @@
           <see langword="true" /> if <paramref name="item" /> is added to the set; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Collections.Generic.SortedSet%601> class does not accept duplicate elements. If `item` is already in the set, this method returns `false` and does not throw an exception.  
+The <xref:System.Collections.Generic.SortedSet%601> class does not accept duplicate elements. If `item` is already in the set, this method returns `false` and does not throw an exception.  
+ 
+If <xref:System.Collections.Generic.SortedSet%601.Count%2A> already equals the capacity of the <xref:System.Collections.Generic.SortedSet%601> object, the capacity is automatically adjusted to accommodate the new item.  
+ 
   
- If <xref:System.Collections.Generic.SortedSet%601.Count%2A> already equals the capacity of the <xref:System.Collections.Generic.SortedSet%601> object, the capacity is automatically adjusted to accommodate the new item.  
-  
-   
-  
+ 
 ## Examples  
- The following example adds elements to a sorted set. This code example is part of a larger example provided for the <xref:System.Collections.Generic.SortedSet%601> class.  
-  
- [!code-csharp[System.Collections.Generic.SortedSet#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#3)]
- [!code-vb[System.Collections.Generic.SortedSet#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#3)]  
-  
+The following example adds elements to a sorted set. This code example is part of a larger example provided for the <xref:System.Collections.Generic.SortedSet%601> class.  
+ 
+[!code-csharp[System.Collections.Generic.SortedSet#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#3)]
+[!code-vb[System.Collections.Generic.SortedSet#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -328,10 +328,10 @@
         <summary>Removes all elements from the set.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
-  
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -363,12 +363,12 @@
         <value>The comparer that is used to order the values in the <see cref="T:System.Collections.Generic.SortedSet`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned comparer can be either the default comparer of the type for a <xref:System.Collections.Generic.SortedSet%601>, or the comparer used for its constructor.  
-  
- Retrieving the value of this property is an O(1) operation.  
-  
+The returned comparer can be either the default comparer of the type for a <xref:System.Collections.Generic.SortedSet%601>, or the comparer used for its constructor.  
+ 
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -405,10 +405,10 @@
           <see langword="true" /> if the set contains <paramref name="item" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(ln n) operation.  
-  
+This method is an O(ln n) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -443,10 +443,10 @@
         <summary>Copies the complete <see cref="T:System.Collections.Generic.SortedSet`1" /> to a compatible one-dimensional array, starting at the beginning of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The indexing of `array` must be zero-based.  
-  
+The indexing of `array` must be zero-based.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The number of elements in the source <see cref="T:System.Collections.Generic.SortedSet`1" /> exceeds the number of elements that the destination array can contain.</exception>
@@ -486,10 +486,10 @@
         <summary>Copies the complete <see cref="T:System.Collections.Generic.SortedSet`1" /> to a compatible one-dimensional array, starting at the specified array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
-  
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The number of elements in the source array is greater than the available space from <paramref name="index" /> to the end of the destination array.</exception>
@@ -533,10 +533,10 @@
         <summary>Copies a specified number of elements from <see cref="T:System.Collections.Generic.SortedSet`1" /> to a compatible one-dimensional array, starting at the specified array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(`n`) operation, where `n` is `count`.  
-  
+This method is an O(`n`) operation, where `n` is `count`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The number of elements in the source array is greater than the available space from <paramref name="index" /> to the end of the destination array.</exception>
@@ -577,10 +577,10 @@
         <value>The number of elements in the <see cref="T:System.Collections.Generic.SortedSet`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Retrieving the value of this property is an O(1) operation.  
-  
+Retrieving the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -608,12 +608,12 @@
         <returns>A comparer for creating a collection of sets.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Collections.IEqualityComparer> object checks for equality at only one level; however, you can chain together comparers at additional levels to perform deeper equality testing.  
-  
- Calling this method is an O(1) operation.  
-  
+The <xref:System.Collections.IEqualityComparer> object checks for equality at only one level; however, you can chain together comparers at additional levels to perform deeper equality testing.  
+ 
+Calling this method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -644,20 +644,20 @@
         <returns>A comparer for creating a collection of sets.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `memberEqualityComparer` and the current <xref:System.Collections.Generic.SortedSet%601> must have the same definition of equality.  
+The `memberEqualityComparer` and the current <xref:System.Collections.Generic.SortedSet%601> must have the same definition of equality.  
+ 
+You can use the comparer returned by this method in the <xref:System.Collections.Generic.SortedSet%601.%23ctor%28System.Collections.Generic.IEnumerable%7B%600%7D%2CSystem.Collections.Generic.IComparer%7B%600%7D%29?displayProperty=fullName> constructor to create a hash table of individual sets.  
+ 
   
- You can use the comparer returned by this method in the <xref:System.Collections.Generic.SortedSet%601.%23ctor%28System.Collections.Generic.IEnumerable%7B%600%7D%2CSystem.Collections.Generic.IComparer%7B%600%7D%29?displayProperty=fullName> constructor to create a hash table of individual sets.  
-  
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Collections.Generic.SortedSet%601.CreateSetComparer%2A> method to create a set of sets. This code example is part of a larger example provided for the <xref:System.Collections.Generic.SortedSet%601> class.  
-  
- [!code-csharp[System.Collections.Generic.SortedSet#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#7)]
- [!code-vb[System.Collections.Generic.SortedSet#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#7)]  
-  
+The following example uses the <xref:System.Collections.Generic.SortedSet%601.CreateSetComparer%2A> method to create a set of sets. This code example is part of a larger example provided for the <xref:System.Collections.Generic.SortedSet%601> class.  
+ 
+[!code-csharp[System.Collections.Generic.SortedSet#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#7)]
+[!code-vb[System.Collections.Generic.SortedSet#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -692,20 +692,20 @@
         <summary>Removes all elements that are in a specified collection from the current <see cref="T:System.Collections.Generic.SortedSet`1" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method removes any element in the current <xref:System.Collections.Generic.SortedSet%601> that is also in `other`. Duplicate values in `other` are ignored.  
+This method removes any element in the current <xref:System.Collections.Generic.SortedSet%601> that is also in `other`. Duplicate values in `other` are ignored.  
+ 
+This method is an O(`n`) operation, where `n` is the number of elements in the `other` parameter.  
+ 
   
- This method is an O(`n`) operation, where `n` is the number of elements in the `other` parameter.  
-  
-   
-  
+ 
 ## Examples  
- The following example removes elements from a sorted set that are duplicated in another sorted set. This code example is part of a larger example provided for the <xref:System.Collections.Generic.SortedSet%601> class.  
-  
- [!code-csharp[System.Collections.Generic.SortedSet#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#6)]
- [!code-vb[System.Collections.Generic.SortedSet#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#6)]  
-  
+The following example removes elements from a sorted set that are duplicated in another sorted set. This code example is part of a larger example provided for the <xref:System.Collections.Generic.SortedSet%601> class.  
+ 
+[!code-csharp[System.Collections.Generic.SortedSet#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#6)]
+[!code-vb[System.Collections.Generic.SortedSet#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -740,12 +740,12 @@
         <returns>An enumerator that iterates through the <see cref="T:System.Collections.Generic.SortedSet`1" /> in sorted order.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any changes to the <xref:System.Collections.Generic.SortedSet%601> will invalidate the enumerator.  
-  
- This method is an O(log n) operation.  
-  
+Any changes to the <xref:System.Collections.Generic.SortedSet%601> will invalidate the enumerator.  
+ 
+This method is an O(log n) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -777,10 +777,10 @@
         <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and returns the data that you must have to serialize a <see cref="T:System.Collections.Generic.SortedSet`1" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
-  
+Calling this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -821,18 +821,18 @@
         <returns>A subset view that contains only the values in the specified range.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns a view of the range of elements that fall between `lowerValue` and `upperValue`, as defined by the comparer. This method does not copy elements from the <xref:System.Collections.Generic.SortedSet%601>, but provides a window into the underlying <xref:System.Collections.Generic.SortedSet%601> itself. You can make changes in both the view and in the underlying <xref:System.Collections.Generic.SortedSet%601>.  
+This method returns a view of the range of elements that fall between `lowerValue` and `upperValue`, as defined by the comparer. This method does not copy elements from the <xref:System.Collections.Generic.SortedSet%601>, but provides a window into the underlying <xref:System.Collections.Generic.SortedSet%601> itself. You can make changes in both the view and in the underlying <xref:System.Collections.Generic.SortedSet%601>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Collections.Generic.SortedSet%601.GetViewBetween%2A> method to list only the AVI files from a sorted set of media file names. The comparer evaluates file names according to their extensions. The `lowerValue` is "AVI" and the `upperValue` is only one value higher, "AVJ", to get the view of all AVI files. This code example is part of a larger example provided for the <xref:System.Collections.Generic.SortedSet%601> class.  
-  
- [!code-csharp[System.Collections.Generic.SortedSet#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#5)]
- [!code-vb[System.Collections.Generic.SortedSet#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#5)]  
-  
+The following example uses the <xref:System.Collections.Generic.SortedSet%601.GetViewBetween%2A> method to list only the AVI files from a sorted set of media file names. The comparer evaluates file names according to their extensions. The `lowerValue` is "AVI" and the `upperValue` is only one value higher, "AVJ", to get the view of all AVI files. This code example is part of a larger example provided for the <xref:System.Collections.Generic.SortedSet%601> class.  
+ 
+[!code-csharp[System.Collections.Generic.SortedSet#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#5)]
+[!code-vb[System.Collections.Generic.SortedSet#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -870,12 +870,12 @@
         <summary>Modifies the current <see cref="T:System.Collections.Generic.SortedSet`1" /> object so that it contains only elements that are also in a specified collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method ignores any duplicate elements in `other`.  
-  
- If the collection represented by the `other` parameter is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A> and `m` is the number of elements in `other`.  
-  
+This method ignores any duplicate elements in `other`.  
+ 
+If the collection represented by the `other` parameter is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A> and `m` is the number of elements in `other`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -919,14 +919,14 @@
           <see langword="true" /> if the <see cref="T:System.Collections.Generic.SortedSet`1" /> object is a proper subset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An empty set is a proper subset of any other collection. Therefore, this method returns `true` if the collection represented by the current <xref:System.Collections.Generic.SortedSet%601> object is empty unless the `other` parameter is also an empty set.  
-  
- This method always returns `false` if <xref:System.Collections.Generic.SortedSet%601.Count%2A> is greater than or equal to the number of elements in `other`.  
-  
- If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, then this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A> and `m` is the number of elements in `other`.  
-  
+An empty set is a proper subset of any other collection. Therefore, this method returns `true` if the collection represented by the current <xref:System.Collections.Generic.SortedSet%601> object is empty unless the `other` parameter is also an empty set.  
+ 
+This method always returns `false` if <xref:System.Collections.Generic.SortedSet%601.Count%2A> is greater than or equal to the number of elements in `other`.  
+ 
+If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, then this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A> and `m` is the number of elements in `other`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -970,14 +970,14 @@
           <see langword="true" /> if the <see cref="T:System.Collections.Generic.SortedSet`1" /> object is a proper superset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An empty set is a proper superset of any other collection. Therefore, this method returns `true` if the collection represented by the `other` parameter is empty unless the current <xref:System.Collections.Generic.SortedSet%601> collection is also empty.  
-  
- This method always returns `false` if <xref:System.Collections.Generic.SortedSet%601.Count%2A> is less than or equal to the number of elements in `other`.  
-  
- If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
-  
+An empty set is a proper superset of any other collection. Therefore, this method returns `true` if the collection represented by the `other` parameter is empty unless the current <xref:System.Collections.Generic.SortedSet%601> collection is also empty.  
+ 
+This method always returns `false` if <xref:System.Collections.Generic.SortedSet%601.Count%2A> is less than or equal to the number of elements in `other`.  
+ 
+If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1021,14 +1021,14 @@
           <see langword="true" /> if the current <see cref="T:System.Collections.Generic.SortedSet`1" /> object is a subset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An empty set is a subset of any other collection, including an empty set; therefore, this method returns `true` if the collection represented by the current <xref:System.Collections.Generic.SortedSet%601> object is empty, even if the `other` parameter is an empty set.  
-  
- This method always returns `false` if <xref:System.Collections.Generic.SortedSet%601.Count%2A> is greater than the number of elements in `other`.  
-  
- If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A> and `m` is the number of elements in `other`.  
-  
+An empty set is a subset of any other collection, including an empty set; therefore, this method returns `true` if the collection represented by the current <xref:System.Collections.Generic.SortedSet%601> object is empty, even if the `other` parameter is an empty set.  
+ 
+This method always returns `false` if <xref:System.Collections.Generic.SortedSet%601.Count%2A> is greater than the number of elements in `other`.  
+ 
+If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A> and `m` is the number of elements in `other`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1067,14 +1067,14 @@
           <see langword="true" /> if the <see cref="T:System.Collections.Generic.SortedSet`1" /> object is a superset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- All collections, including the empty set, are supersets of the empty set. Therefore, this method returns `true` if the collection represented by the `other` parameter is empty, even if the current <xref:System.Collections.Generic.SortedSet%601> object is empty.  
-  
- This method always returns `false` if <xref:System.Collections.Generic.SortedSet%601.Count%2A> is less than the number of elements in `other`.  
-  
- If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
-  
+All collections, including the empty set, are supersets of the empty set. Therefore, this method returns `true` if the collection represented by the `other` parameter is empty, even if the current <xref:System.Collections.Generic.SortedSet%601> object is empty.  
+ 
+This method always returns `false` if <xref:System.Collections.Generic.SortedSet%601.Count%2A> is less than the number of elements in `other`.  
+ 
+If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1162,10 +1162,10 @@
         <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface, and raises the deserialization event when the deserialization is completed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
-  
+Calling this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object associated with the current <see cref="T:System.Collections.Generic.SortedSet`1" /> object is invalid.</exception>
@@ -1203,12 +1203,12 @@
           <see langword="true" /> if the <see cref="T:System.Collections.Generic.SortedSet`1" /> object and <paramref name="other" /> share at least one common element; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any duplicate elements in `other` are ignored.  
-  
- This method is an O(`n`) operation, where `n` is the number of elements in `other`.  
-  
+Any duplicate elements in `other` are ignored.  
+ 
+This method is an O(`n`) operation, where `n` is the number of elements in `other`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1247,14 +1247,14 @@
           <see langword="true" /> if the element is found and successfully removed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Collections.Generic.SortedSet%601> object does not contain the specified element, the object remains unchanged and no exception is thrown.  
-  
- `item` can be `null` for reference types.  
-  
- This method is an O(log n) operation.  
-  
+If the <xref:System.Collections.Generic.SortedSet%601> object does not contain the specified element, the object remains unchanged and no exception is thrown.  
+ 
+`item` can be `null` for reference types.  
+ 
+This method is an O(log n) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1290,22 +1290,22 @@
         <returns>The number of elements that were removed from the <see cref="T:System.Collections.Generic.SortedSet`1" /> collection..</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `match` must not modify the <xref:System.Collections.Generic.SortedSet%601>. Doing so can cause unexpected results.  
+`match` must not modify the <xref:System.Collections.Generic.SortedSet%601>. Doing so can cause unexpected results.  
+ 
+Calling this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ 
   
- Calling this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following example removes unwanted elements from a sorted set. This code example is part of a larger example provided for the <xref:System.Collections.Generic.SortedSet%601> class.  
-  
- [!code-csharp[System.Collections.Generic.SortedSet#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#4)]
- [!code-vb[System.Collections.Generic.SortedSet#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#4)]  
+The following example removes unwanted elements from a sorted set. This code example is part of a larger example provided for the <xref:System.Collections.Generic.SortedSet%601> class.  
+ 
+[!code-csharp[System.Collections.Generic.SortedSet#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#4)]
+[!code-vb[System.Collections.Generic.SortedSet#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#4)]  
 [!code-csharp[System.Collections.Generic.SortedSet#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.sortedset/cs/program.cs#8)]
 [!code-vb[System.Collections.Generic.SortedSet#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.sortedset/vb/program.vb#8)]  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1378,12 +1378,12 @@
           <see langword="true" /> if the current <see cref="T:System.Collections.Generic.SortedSet`1" /> object is equal to <paramref name="other" />; otherwise, false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method ignores the order of elements and any duplicate elements in `other`.  
-  
- If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(log`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
-  
+This method ignores the order of elements and any duplicate elements in `other`.  
+ 
+If the collection represented by `other` is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(log`n`) operation. Otherwise, this method is an O(`n` + `m`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1420,12 +1420,12 @@
         <summary>Modifies the current <see cref="T:System.Collections.Generic.SortedSet`1" /> object so that it contains only elements that are present either in the current object or in the specified collection, but not both.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any duplicate elements in `other` are ignored.  
-  
- If the `other` parameter is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(n log `m`) operation. Otherwise, this method is an O(`n` log `m`) + O(`n` log `n`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
-  
+Any duplicate elements in `other` are ignored.  
+ 
+If the `other` parameter is a <xref:System.Collections.Generic.SortedSet%601> collection with the same equality comparer as the current <xref:System.Collections.Generic.SortedSet%601> object, this method is an O(n log `m`) operation. Otherwise, this method is an O(`n` log `m`) + O(`n` log `n`) operation, where `n` is the number of elements in `other` and `m` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1462,12 +1462,12 @@
         <summary>Adds an item to an <see cref="T:System.Collections.Generic.ICollection`1" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
- If <xref:System.Collections.Generic.List%601.Count%2A> is less than <xref:System.Collections.Generic.List%601.Capacity%2A>, this method is an O(1) operation. If the capacity must be increased to accommodate the new element, this method becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
+If <xref:System.Collections.Generic.List%601.Count%2A> is less than <xref:System.Collections.Generic.List%601.Capacity%2A>, this method is an O(1) operation. If the capacity must be increased to accommodate the new element, this method becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</exception>
@@ -1501,16 +1501,16 @@
           <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
- A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
-  
- A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
-  
- Getting the value of this property is an O(1) operation.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+ 
+A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+ 
+A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
+ 
+Getting the value of this property is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1543,10 +1543,10 @@
         <returns>An enumerator that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1583,10 +1583,10 @@
         <summary>Copies the complete <see cref="T:System.Collections.Generic.SortedSet`1" /> to a compatible one-dimensional array, starting at the specified array index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The number of elements in the source array is greater than the available space from <paramref name="index" /> to the end of the destination array.</exception>
@@ -1624,10 +1624,10 @@
           <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1659,12 +1659,12 @@
         <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />. In the default implementation of <see cref="T:System.Collections.Generic.Dictionary`2.KeyCollection" />, this property always returns the current instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- This method is an O(1) operation.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
+This method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1697,12 +1697,12 @@
         <returns>An enumerator that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
- This method is an O(1) operation.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
+This method is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1732,10 +1732,10 @@
         <summary>Implements the <see cref="T:System.Runtime.Serialization.IDeserializationCallback" /> interface, and raises the deserialization event when the deserialization is completed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Runtime.Serialization.IDeserializationCallback> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Runtime.Serialization.IDeserializationCallback> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object associated with the current <see cref="T:System.Collections.Generic.SortedSet`1" /> instance is invalid.</exception>
@@ -1768,10 +1768,10 @@
         <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface, and returns the data that you need to serialize the <see cref="T:System.Collections.Generic.SortedSet`1" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Runtime.Serialization.ISerializable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Generic.SortedSet%601> instance is cast to an <xref:System.Runtime.Serialization.ISerializable> interface.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1809,10 +1809,10 @@
         <summary>Modifies the current <see cref="T:System.Collections.Generic.SortedSet`1" /> object so that it contains all elements that are present in either the current object or the specified collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any duplicate elements in `other` are ignored.  
-  
+Any duplicate elements in `other` are ignored.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1829,10 +1829,10 @@
         <summary>Copies a portion or all of a <see cref="T:System.Collections.Generic.SortedSet`1" /> to a compatible one-dimensional array, starting at the beginning of the destination array or at a specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
-  
+This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.SortedSet%601.Count%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1847,10 +1847,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SortedSet`1" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is an O(1) operation.  
-  
+This constructor is an O(1) operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

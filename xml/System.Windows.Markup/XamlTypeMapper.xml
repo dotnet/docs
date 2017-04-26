@@ -14,17 +14,17 @@
     <summary>Maps a XAML element name to the appropriate CLR <see cref="T:System.Type" /> in assemblies.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Markup.XamlTypeMapper> is part of an advanced WPF scenario that supplies alternate context for <xref:System.Windows.Markup.XamlReader> and <xref:System.Windows.Markup.XamlWriter>. For [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] WPF applications, you should consider overriding <xref:System.Xaml.XamlSchemaContext> for this scenario, rather than attempting to use <xref:System.Windows.Markup.XamlTypeMapper>.  
-  
- <xref:System.Windows.Markup.XamlTypeMapper> can be used to provide the XAML parser with custom mapping information through a more direct technique than the application of <xref:System.Windows.Markup.XmlnsDefinitionAttribute> values on the assembly code. This might be useful for consolidation of all CLR namespaces in an assembly, or for referencing types that are XAML-ready in an existing assembly without having to recompile it just to add <xref:System.Windows.Markup.XmlnsDefinitionAttribute> attributing.  
-  
- You typically create a <xref:System.Windows.Markup.XamlTypeMapper> instance in order to specify the <xref:System.Windows.Markup.ParserContext.XamlTypeMapper%2A> property value for a <xref:System.Windows.Markup.ParserContext>. The <xref:System.Windows.Markup.ParserContext> in turn can be used as the context for a <xref:System.Windows.Markup.XamlReader.Load%28System.IO.Stream%2CSystem.Windows.Markup.ParserContext%29?displayProperty=fullName>call.  
-  
+<xref:System.Windows.Markup.XamlTypeMapper> is part of an advanced WPF scenario that supplies alternate context for <xref:System.Windows.Markup.XamlReader> and <xref:System.Windows.Markup.XamlWriter>. For [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] WPF applications, you should consider overriding <xref:System.Xaml.XamlSchemaContext> for this scenario, rather than attempting to use <xref:System.Windows.Markup.XamlTypeMapper>.  
+ 
+<xref:System.Windows.Markup.XamlTypeMapper> can be used to provide the XAML parser with custom mapping information through a more direct technique than the application of <xref:System.Windows.Markup.XmlnsDefinitionAttribute> values on the assembly code. This might be useful for consolidation of all CLR namespaces in an assembly, or for referencing types that are XAML-ready in an existing assembly without having to recompile it just to add <xref:System.Windows.Markup.XmlnsDefinitionAttribute> attributing.  
+ 
+You typically create a <xref:System.Windows.Markup.XamlTypeMapper> instance in order to specify the <xref:System.Windows.Markup.ParserContext.XamlTypeMapper%2A> property value for a <xref:System.Windows.Markup.ParserContext>. The <xref:System.Windows.Markup.ParserContext> in turn can be used as the context for a <xref:System.Windows.Markup.XamlReader.Load%28System.IO.Stream%2CSystem.Windows.Markup.ParserContext%29?displayProperty=fullName>call.  
+ 
 ## Default Mapper  
- You can obtain a default mapper using the <xref:System.Windows.Markup.XamlTypeMapper.DefaultMapper%2A> static property. The default mapper only works on a default assembly list. No specific information about assemblies (as is specified in <xref:System.Windows.Markup.XamlTypeMapper> constructors) is used.  
-  
+You can obtain a default mapper using the <xref:System.Windows.Markup.XamlTypeMapper.DefaultMapper%2A> static property. The default mapper only works on a default assembly list. No specific information about assemblies (as is specified in <xref:System.Windows.Markup.XamlTypeMapper> constructors) is used.  
+ 
 <a name="xamlTextUsage_XamlTypeMapper"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -97,17 +97,17 @@
         <summary>Defines a mapping between an XML namespace and CLR namespaces in assemblies, and adds these to the <see cref="T:System.Windows.Markup.XamlTypeMapper" /> information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Markup.XamlTypeMapper.AddMappingProcessingInstruction%2A> is a programmatic way to add a mapping.  For example, the different parts of the following XAML mapping instruction correspond to the parameters of the <xref:System.Windows.Markup.XamlTypeMapper.AddMappingProcessingInstruction%2A>:  
-  
+<xref:System.Windows.Markup.XamlTypeMapper.AddMappingProcessingInstruction%2A> is a programmatic way to add a mapping.  For example, the different parts of the following XAML mapping instruction correspond to the parameters of the <xref:System.Windows.Markup.XamlTypeMapper.AddMappingProcessingInstruction%2A>:  
+ 
 ```  
 <Window xmlns:SDK="clr-namespace:Samples;assembly=SDKSamples">  
 ...  
 ```  
-  
- The `xmlNamespace` is `SDK`, the `clrNamespace` is `Samples`, and the `assemblyName` is `SDKSamples`.  
-  
+ 
+The `xmlNamespace` is `SDK`, the `clrNamespace` is `Samples`, and the `assemblyName` is `SDKSamples`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -144,12 +144,12 @@
           <see langword="true" /> if the internal type can be accessed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If not overridden by a subclass, <xref:System.Windows.Markup.XamlTypeMapper.AllowInternalType%2A> always returns `false`.  
-  
- When overridden by a subclass, the behavior should be that <xref:System.Windows.Markup.XamlTypeMapper.AllowInternalType%2A> should return `true` if the internal type can be accessed; otherwise, `false`.  
-  
+If not overridden by a subclass, <xref:System.Windows.Markup.XamlTypeMapper.AllowInternalType%2A> always returns `false`.  
+ 
+When overridden by a subclass, the behavior should be that <xref:System.Windows.Markup.XamlTypeMapper.AllowInternalType%2A> should return `true` if the internal type can be accessed; otherwise, `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,12 +171,12 @@
         <value>The default type mapper.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default mapper only works on a default assembly list. No specific information about assemblies (as is specified in <xref:System.Windows.Markup.XamlTypeMapper> constructors) is used. In the current implementation the default assembly list is: `WindowsBase`, `PresentationCore`, `PresentationFramework`.  
-  
- Using the default mapper does not mean that you cannot use custom assemblies/types in XAML at all. It only means that if you do use custom types/assemblies, you must then use the conventional XAML technique of creating the mappings as `xmlns` attributes in each XAML page where the types/assemblies are referenced, as opposed to a type mapper API. For more information, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
-  
+The default mapper only works on a default assembly list. No specific information about assemblies (as is specified in <xref:System.Windows.Markup.XamlTypeMapper> constructors) is used. In the current implementation the default assembly list is: `WindowsBase`, `PresentationCore`, `PresentationFramework`.  
+ 
+Using the default mapper does not mean that you cannot use custom assemblies/types in XAML at all. It only means that if you do use custom types/assemblies, you must then use the conventional XAML technique of creating the mappings as `xmlns` attributes in each XAML page where the types/assemblies are referenced, as opposed to a type mapper API. For more information, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,12 +204,12 @@
         <returns>The <see cref="T:System.Type" /> for the object, or <see langword="null" /> if no mapping could be resolved.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a type cannot be found that maps to the provided information, `null` is returned.  
-  
- Do not include the prefix as part of `localName`. For any prefixed XAML element information, separate it into `xmlNamespace` and `localName` components for this API call.  
-  
+If a type cannot be found that maps to the provided information, `null` is returned.  
+ 
+Do not include the prefix as part of `localName`. For any prefixed XAML element information, separate it into `xmlNamespace` and `localName` components for this API call.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

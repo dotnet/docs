@@ -24,23 +24,23 @@
     <summary>Discovers attributed parts in a managed code assembly.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.ComponentModel.Composition.Hosting.AssemblyCatalog> is used to parse all the parts present in a specified assembly. The target assembly can be indicated either by object reference or by path.  
-  
+An <xref:System.ComponentModel.Composition.Hosting.AssemblyCatalog> is used to parse all the parts present in a specified assembly. The target assembly can be indicated either by object reference or by path.  
+ 
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+ 
+This type is thread safe.  
+ 
   
- This type is thread safe.  
-  
-   
-  
+ 
 ## Examples  
- The following code demonstrates the common scenario of an application creating an <xref:System.ComponentModel.Composition.Hosting.AssemblyCatalog> to parse its own assembly. This is a straightforward way to load parts contained in a single project into the Managed Extensibility Framework (MEF).  
-  
- [!code-csharp[Composition.CompositionContainer#1](~/samples/snippets/csharp/VS_Snippets_Misc/composition.compositioncontainer/cs/program.cs#1)]
- [!code-vb[Composition.CompositionContainer#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/composition.compositioncontainer/vb/module1.vb#1)]  
-  
+The following code demonstrates the common scenario of an application creating an <xref:System.ComponentModel.Composition.Hosting.AssemblyCatalog> to parse its own assembly. This is a straightforward way to load parts contained in a single project into the Managed Extensibility Framework (MEF).  
+ 
+[!code-csharp[Composition.CompositionContainer#1](~/samples/snippets/csharp/VS_Snippets_Misc/composition.compositioncontainer/cs/program.cs#1)]
+[!code-vb[Composition.CompositionContainer#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/composition.compositioncontainer/vb/module1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -88,10 +88,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> class with the specified code base.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The assembly referenced by `codeBase` is loaded into the load context.  
-  
+The assembly referenced by `codeBase` is loaded into the load context.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.BadImageFormatException">
@@ -427,10 +427,10 @@
         <value>A string that represents the type and assembly of this <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Hosting.AssemblyCatalog> instance is cast to an <xref:System.ComponentModel.Composition.Primitives.ICompositionElement> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Hosting.AssemblyCatalog> instance is cast to an <xref:System.ComponentModel.Composition.Primitives.ICompositionElement> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -453,10 +453,10 @@
         <value>Always <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Hosting.AssemblyCatalog> instance is cast to an <xref:System.ComponentModel.Composition.Primitives.ICompositionElement> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Composition.Hosting.AssemblyCatalog> instance is cast to an <xref:System.ComponentModel.Composition.Primitives.ICompositionElement> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

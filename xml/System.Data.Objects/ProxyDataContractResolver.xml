@@ -14,10 +14,10 @@
     <summary>This class helps resolve proxy types that were created for [persistence-ignorant](http://msdn.microsoft.com/en-us/5e0fb82a-b6d1-41a1-b37b-c12db61629d3) data classes to the actual types of persistence-ignorant objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Objects.ProxyDataContractResolver> class is used with the <xref:System.Runtime.Serialization.DataContractSerializer>.  
-  
+The <xref:System.Data.Objects.ProxyDataContractResolver> class is used with the <xref:System.Runtime.Serialization.DataContractSerializer>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,10 +64,10 @@
         <returns>Returns the type that the <see langword="xsi:type" /> is mapped to. Returns <see langword="null" /> if no known type was found that matches the <see langword="xsi:type" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see: [Working with POCO Entities](http://msdn.microsoft.com/en-us/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
-  
+For more information, see: [Working with POCO Entities](http://msdn.microsoft.com/en-us/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,10 +102,10 @@
           <see langword="true" /> if the type was resolved; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see: [Working with POCO Entities](http://msdn.microsoft.com/en-us/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
-  
+For more information, see: [Working with POCO Entities](http://msdn.microsoft.com/en-us/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
+ 
  ]]></format>
         </remarks>
       </Docs>

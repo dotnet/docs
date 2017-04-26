@@ -47,10 +47,10 @@
         <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> that represents the properties of the providers for the protected configuration data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Configuration.ProtectedProviderSettings.Providers%2A> property to access the properties of the providers for protected configuration data.  
-  
+Use the <xref:System.Configuration.ProtectedProviderSettings.Providers%2A> property to access the properties of the providers for protected configuration data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,10 +77,10 @@
         <value>A collection of <see cref="T:System.Configuration.ProviderSettings" /> objects that represent the properties of the providers for the protected configuration data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to access the properties of the providers for protected configuration data instead of the <xref:System.Configuration.ProtectedProviderSettings.Properties%2A> property.  
-  
+Use this property to access the properties of the providers for protected configuration data instead of the <xref:System.Configuration.ProtectedProviderSettings.Properties%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

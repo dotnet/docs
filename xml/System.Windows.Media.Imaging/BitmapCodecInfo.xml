@@ -14,18 +14,18 @@
     <summary>Provides information about an imaging codec.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Media.Imaging.BitmapCodecInfo> can be obtain for each codec in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] by using the <xref:System.Windows.Media.Imaging.BitmapDecoder.CodecInfo%2A> or the <xref:System.Windows.Media.Imaging.BitmapEncoder.CodecInfo%2A> properties.  
+A <xref:System.Windows.Media.Imaging.BitmapCodecInfo> can be obtain for each codec in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] by using the <xref:System.Windows.Media.Imaging.BitmapDecoder.CodecInfo%2A> or the <xref:System.Windows.Media.Imaging.BitmapEncoder.CodecInfo%2A> properties.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>.  
-  
- [!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
- [!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
-  
+The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>.  
+ 
+[!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
+[!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,13 +67,13 @@
         <value>The author of the codec.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>.  
-  
- [!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
- [!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
-  
+The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>.  
+ 
+[!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
+[!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
@@ -101,13 +101,13 @@
         <value>The container format of the codec.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
-  
- [!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
- [!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
-  
+The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
+ 
+[!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
+[!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
@@ -135,13 +135,13 @@
         <value>The device manufacturer of the codec.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
-  
- [!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
- [!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
-  
+The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
+ 
+[!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
+[!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
@@ -169,13 +169,13 @@
         <value>The device model of the codec.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
-  
- [!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
- [!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
-  
+The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
+ 
+[!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
+[!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
@@ -203,13 +203,13 @@
         <value>The file extensions associated with the codec.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
-  
- [!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
- [!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
-  
+The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
+ 
+[!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
+[!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
@@ -237,13 +237,13 @@
         <value>The friendly name of the codec.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
-  
- [!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
- [!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
-  
+The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
+ 
+[!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
+[!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
@@ -271,13 +271,13 @@
         <value>The [!INCLUDE[TLA#tla_mime](~/includes/tlasharptla-mime-md.md)] types associated with the codec.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
-  
- [!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
- [!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
-  
+The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
+ 
+[!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
+[!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
@@ -305,13 +305,13 @@
         <value>The specification version of the codec.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
-  
- [!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
- [!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
-  
+The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
+ 
+[!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
+[!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>
@@ -414,13 +414,13 @@
         <value>The version of the codec.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
-  
- [!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
- [!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
-  
+The following example demonstrates how to retrieve the <xref:System.Windows.Media.Imaging.BitmapCodecInfo.Author%2A> property of a given <xref:System.Windows.Media.Imaging.BitmapEncoder>. You can use the same approach to retrieve other <xref:System.Windows.Media.Imaging.BitmapCodecInfo>.  
+ 
+[!code-csharp[BitmapFrameExample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
+[!code-vb[BitmapFrameExample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.RegistryPermission">Callers must have <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> registry permission to retrieve data from the registry.</permission>

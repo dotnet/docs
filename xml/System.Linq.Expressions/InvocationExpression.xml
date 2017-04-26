@@ -34,20 +34,20 @@
     <summary>Represents an expression that applies a delegate or lambda expression to a list of argument expressions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Linq.Expressions.Expression.Invoke%2A> factory methods to create an <xref:System.Linq.Expressions.InvocationExpression>.  
+Use the <xref:System.Linq.Expressions.Expression.Invoke%2A> factory methods to create an <xref:System.Linq.Expressions.InvocationExpression>.  
+ 
+The <xref:System.Linq.Expressions.Expression.NodeType%2A> of an <xref:System.Linq.Expressions.InvocationExpression> is <xref:System.Linq.Expressions.ExpressionType>.  
+ 
   
- The <xref:System.Linq.Expressions.Expression.NodeType%2A> of an <xref:System.Linq.Expressions.InvocationExpression> is <xref:System.Linq.Expressions.ExpressionType>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Linq.Expressions.InvocationExpression> that represents invoking a lambda expression with specified arguments.  
-  
- [!code-csharp[System.Linq.Expressions.Expression#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#6)]
- [!code-vb[System.Linq.Expressions.Expression#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#6)]  
-  
+The following example creates an <xref:System.Linq.Expressions.InvocationExpression> that represents invoking a lambda expression with specified arguments.  
+ 
+[!code-csharp[System.Linq.Expressions.Expression#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#6)]
+[!code-vb[System.Linq.Expressions.Expression#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#6)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

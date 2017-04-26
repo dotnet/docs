@@ -14,18 +14,18 @@
     <summary>An enumeration that is used with the <see cref="T:System.ServiceModel.TransactionFlowAttribute" /> to specify the transaction flow policy for a service operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used to instantiate an instance of the <xref:System.ServiceModel.TransactionFlowAttribute> class, which is used to mark a service contract method to indicate its transaction flow policy.  
+This enumeration is used to instantiate an instance of the <xref:System.ServiceModel.TransactionFlowAttribute> class, which is used to mark a service contract method to indicate its transaction flow policy.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this enumeration together with the <xref:System.ServiceModel.TransactionFlowOption> class at the operation level.  
-  
- [!code-csharp[OperationBehaviorAttribute1#2](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/services.cs#2)]
- [!code-vb[OperationBehaviorAttribute1#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationbehaviorattribute1/vb/services.vb#2)]  
-  
+The following code example demonstrates the use of this enumeration together with the <xref:System.ServiceModel.TransactionFlowOption> class at the operation level.  
+ 
+[!code-csharp[OperationBehaviorAttribute1#2](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/services.cs#2)]
+[!code-vb[OperationBehaviorAttribute1#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationbehaviorattribute1/vb/services.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

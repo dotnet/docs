@@ -142,12 +142,12 @@
         <value>The authentication realm. The default value is "".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An authentication realm is a string that contains at least the name of the host performing the authentication. It can also specify a collection of users that has access.  
-  
- A user can query the authentication realm to understand which one of the several possible usernames and passwords can be used.  
-  
+An authentication realm is a string that contains at least the name of the host performing the authentication. It can also specify a collection of users that has access.  
+ 
+A user can query the authentication realm to understand which one of the several possible usernames and passwords can be used.  
+ 
  ]]></format>
         </remarks>
       </Docs>

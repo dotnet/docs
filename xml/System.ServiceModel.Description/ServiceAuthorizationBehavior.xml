@@ -18,10 +18,10 @@
     <summary>Provides properties related to service authorization behavior.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Authorization occurs at the service level and at the operation level. This class contains properties related to authorization at the service level.  
-  
+Authorization occurs at the service level and at the operation level. This class contains properties related to authorization at the service level.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -40,18 +40,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceAuthorizationBehavior" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, applications do not call the constructor directly. Instead they retrieve an instance of this class by calling `ServiceHostBase.Description.Behaviors.Find<ServiceAuthorizationBehavior>`.  
+Typically, applications do not call the constructor directly. Instead they retrieve an instance of this class by calling `ServiceHostBase.Description.Behaviors.Find<ServiceAuthorizationBehavior>`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to retrieve an instance of this class.  
-  
- [!code-csharp[c_ImpersonationAndDelegation#3](~/samples/snippets/csharp/VS_Snippets_CFX/c_impersonationanddelegation/cs/source.cs#3)]
- [!code-vb[c_ImpersonationAndDelegation#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_impersonationanddelegation/vb/source.vb#3)]  
-  
+The following code shows how to retrieve an instance of this class.  
+ 
+[!code-csharp[c_ImpersonationAndDelegation#3](~/samples/snippets/csharp/VS_Snippets_CFX/c_impersonationanddelegation/cs/source.cs#3)]
+[!code-vb[c_ImpersonationAndDelegation#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_impersonationanddelegation/vb/source.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,18 +73,18 @@
         <value>A collection of external authorization policies.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The external authorization policies participate in the policy evaluation process resulting in a user <xref:System.ServiceModel.ServiceSecurityContext>.  
+The external authorization policies participate in the policy evaluation process resulting in a user <xref:System.ServiceModel.ServiceSecurityContext>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to set this property to use a set of external authorization policies.  
-  
- [!code-csharp[PrincipalPermissionMode#3](~/samples/snippets/csharp/VS_Snippets_CFX/principalpermissionmode/cs/source.cs#3)]
- [!code-vb[PrincipalPermissionMode#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/principalpermissionmode/vb/source.vb#3)]  
-  
+The following code shows how to set this property to use a set of external authorization policies.  
+ 
+[!code-csharp[PrincipalPermissionMode#3](~/samples/snippets/csharp/VS_Snippets_CFX/principalpermissionmode/cs/source.cs#3)]
+[!code-vb[PrincipalPermissionMode#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/principalpermissionmode/vb/source.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Behavior is read-only.</exception>
@@ -113,18 +113,18 @@
           <see langword="true" /> if the service performs impersonation for all the operations that it supports; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A value of `false` indicates that impersonation is specified for each operation.  
+A value of `false` indicates that impersonation is specified for each operation.  
+ 
   
-   
-  
+ 
 ## Examples  
- This code shows how to set this property.  
-  
- [!code-csharp[c_ImpersonationAndDelegation#3](~/samples/snippets/csharp/VS_Snippets_CFX/c_impersonationanddelegation/cs/source.cs#3)]
- [!code-vb[c_ImpersonationAndDelegation#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_impersonationanddelegation/vb/source.vb#3)]  
-  
+This code shows how to set this property.  
+ 
+[!code-csharp[c_ImpersonationAndDelegation#3](~/samples/snippets/csharp/VS_Snippets_CFX/c_impersonationanddelegation/cs/source.cs#3)]
+[!code-vb[c_ImpersonationAndDelegation#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_impersonationanddelegation/vb/source.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Behavior is read-only.</exception>
@@ -176,26 +176,26 @@
         <value>The principal permission mode.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property contains one of the members of the <xref:System.ServiceModel.Description.PrincipalPermissionMode> enumeration. Valid values are:  
-  
+This property contains one of the members of the <xref:System.ServiceModel.Description.PrincipalPermissionMode> enumeration. Valid values are:  
+ 
 -   <xref:System.ServiceModel.Description.PrincipalPermissionMode>. A custom `IAuthorizationPolicy` implementation is used to populate `Thread.CurrentPrincipal`.  
-  
+ 
 -   <xref:System.ServiceModel.Description.PrincipalPermissionMode>. The `Thread.CurrentPrincipal` property is not set.  
-  
+ 
 -   <xref:System.ServiceModel.Description.PrincipalPermissionMode>. The `Thread.CurrentPrincipal` property is set to an `IPrincipal` based on ASP.NET role information.  
-  
+ 
 -   <xref:System.ServiceModel.Description.PrincipalPermissionMode>. The `Thread.CurrentPrincipal` property is set to a `WindowsPrincipal` based on the user credentials of the incoming message.  
+ 
   
-   
-  
+ 
 ## Examples  
- This code shows how to set this property.  
-  
- [!code-csharp[c_PrincipalPermissionAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/c_principalpermissionattribute/cs/source.cs#3)]
- [!code-vb[c_PrincipalPermissionAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_principalpermissionattribute/vb/source.vb#3)]  
-  
+This code shows how to set this property.  
+ 
+[!code-csharp[c_PrincipalPermissionAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/c_principalpermissionattribute/cs/source.cs#3)]
+[!code-vb[c_PrincipalPermissionAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_principalpermissionattribute/vb/source.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,18 +222,18 @@
         <value>A custom role provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned <xref:System.Web.Security.RoleProvider> object is an implementation of a custom role provider.  
+The returned <xref:System.Web.Security.RoleProvider> object is an implementation of a custom role provider.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to get this property.  
-  
- [!code-csharp[PrincipalPermissionMode#6](~/samples/snippets/csharp/VS_Snippets_CFX/principalpermissionmode/cs/source.cs#6)]
- [!code-vb[PrincipalPermissionMode#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/principalpermissionmode/vb/source.vb#6)]  
-  
+The following code shows how to get this property.  
+ 
+[!code-csharp[PrincipalPermissionMode#6](~/samples/snippets/csharp/VS_Snippets_CFX/principalpermissionmode/cs/source.cs#6)]
+[!code-vb[PrincipalPermissionMode#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/principalpermissionmode/vb/source.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Behavior is read-only.</exception>
@@ -256,18 +256,18 @@
         <value>The service authorization manager.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.ServiceAuthorizationManager> class is responsible for evaluating all policies, chaining forward and backward, optionally connecting the resulting <xref:System.IdentityModel.Policy.AuthorizationContext> to the <xref:System.ServiceModel.ServiceSecurityContext> and returning the authorization decision of `true` or `false` to allow or deny access.  
+The <xref:System.ServiceModel.ServiceAuthorizationManager> class is responsible for evaluating all policies, chaining forward and backward, optionally connecting the resulting <xref:System.IdentityModel.Policy.AuthorizationContext> to the <xref:System.ServiceModel.ServiceSecurityContext> and returning the authorization decision of `true` or `false` to allow or deny access.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to set this property to use a custom service authorization manager.  
-  
- [!code-csharp[PrincipalPermissionMode#3](~/samples/snippets/csharp/VS_Snippets_CFX/principalpermissionmode/cs/source.cs#3)]
- [!code-vb[PrincipalPermissionMode#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/principalpermissionmode/vb/source.vb#3)]  
-  
+The following code shows how to set this property to use a custom service authorization manager.  
+ 
+[!code-csharp[PrincipalPermissionMode#3](~/samples/snippets/csharp/VS_Snippets_CFX/principalpermissionmode/cs/source.cs#3)]
+[!code-vb[PrincipalPermissionMode#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/principalpermissionmode/vb/source.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,10 +338,10 @@
         <summary>Provides the ability to pass custom data to binding elements to support the contract implementation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> instance is cast to an <xref:System.ServiceModel.Description.IServiceBehavior> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> instance is cast to an <xref:System.ServiceModel.Description.IServiceBehavior> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -368,10 +368,10 @@
         <summary>Defines an explicit interface implementation that adds dispatch behaviors to configure the binding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> instance is cast to an <xref:System.ServiceModel.Description.IServiceBehavior> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> instance is cast to an <xref:System.ServiceModel.Description.IServiceBehavior> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,10 +398,10 @@
         <summary>Provides the ability to inspect the service host and the service description to confirm that the service can run successfully.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> instance is cast to an <xref:System.ServiceModel.Description.IServiceBehavior> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> instance is cast to an <xref:System.ServiceModel.Description.IServiceBehavior> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

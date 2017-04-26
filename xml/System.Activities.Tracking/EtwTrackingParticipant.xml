@@ -114,10 +114,10 @@
         <value>The provider ID.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default ETW provider ID is built into the functionality. All applications that do not specify an ETW provider ID in their configuration emit application trace and tracking events that use the default provider ID. An ETW session can listen with the default provider ID and receive events from multiple services. If isolation of events is required, the application should specify an application-specific ETW provider ID in the configuration.  
-  
+The default ETW provider ID is built into the functionality. All applications that do not specify an ETW provider ID in their configuration emit application trace and tracking events that use the default provider ID. An ETW session can listen with the default provider ID and receive events from multiple services. If isolation of events is required, the application should specify an application-specific ETW provider ID in the configuration.  
+ 
  ]]></format>
         </remarks>
       </Docs>

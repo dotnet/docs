@@ -17,17 +17,17 @@
     <summary>Stores channel data for the remoting channels.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Channels that want to use the channel sink architecture must implement this interface on their `ChannelData` object.  
+Channels that want to use the channel sink architecture must implement this interface on their `ChannelData` object.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[IChannelDataStore_Item#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IChannelDataStore_Item/CPP/ichanneldatastore.cpp#1)]
- [!code-csharp[IChannelDataStore_Item#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IChannelDataStore_Item/CS/ichanneldatastore.cs#1)]
- [!code-vb[IChannelDataStore_Item#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IChannelDataStore_Item/VB/ichanneldatastore.vb#1)]  
-  
+[!code-cpp[IChannelDataStore_Item#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IChannelDataStore_Item/CPP/ichanneldatastore.cpp#1)]
+[!code-csharp[IChannelDataStore_Item#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IChannelDataStore_Item/CS/ichanneldatastore.cs#1)]
+[!code-vb[IChannelDataStore_Item#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IChannelDataStore_Item/VB/ichanneldatastore.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -19,10 +19,10 @@
     <summary>Represents an Access Control Entry (ACE), and is the base class for all other ACE classes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An ACE contains both an ACE header and a binary blob. The header contains information about the type of the ACE, various flags, and the size of the binary blob.  
-  
+An ACE contains both an ACE header and a binary blob. The header contains information about the type of the ACE, various flags, and the size of the binary blob.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,10 +49,10 @@
         <value>The <see cref="T:System.Security.AccessControl.AceFlags" /> associated with this <see cref="T:System.Security.AccessControl.GenericAce" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Security.AccessControl.AceFlags> object contains flags that specify information about the inheritance, inheritance propagation, and auditing conditions for an Access Control Entry (ACE).  
-  
+An <xref:System.Security.AccessControl.AceFlags> object contains flags that specify information about the inheritance, inheritance propagation, and auditing conditions for an Access Control Entry (ACE).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -337,37 +337,37 @@
           <see langword="true" /> if the two <see cref="T:System.Security.AccessControl.GenericAce" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.AccessControl.GenericAce.Equals%28System.Security.AccessControl.GenericAce%2CSystem.Security.AccessControl.GenericAce%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Security.AccessControl.GenericAce left, System.Security.AccessControl.GenericAce right);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Security.AccessControl.GenericAce left, class System.Security.AccessControl.GenericAce right) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.op_Inequality(System.Security.AccessControl.GenericAce,System.Security.AccessControl.GenericAce)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Security.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="left" Type="System.Security.AccessControl.GenericAce" />
-        <Parameter Name="right" Type="System.Security.AccessControl.GenericAce" />
-      </Parameters>
-      <Docs>
-        <param name="left">The first <see cref="T:System.Security.AccessControl.GenericAce" /> object to compare.</param>
-        <param name="right">The second <see cref="T:System.Security.AccessControl.GenericAce" /> to compare.</param>
-        <summary>Determines whether the specified <see cref="T:System.Security.AccessControl.GenericAce" /> objects are considered unequal.</summary>
-        <returns>
-          <see langword="true" /> if the two <see cref="T:System.Security.AccessControl.GenericAce" /> objects are unequal; otherwise, <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Security.AccessControl.GenericAce left, System.Security.AccessControl.GenericAce right);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Security.AccessControl.GenericAce left, class System.Security.AccessControl.GenericAce right) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.GenericAce.op_Inequality(System.Security.AccessControl.GenericAce,System.Security.AccessControl.GenericAce)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Security.AccessControl</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>mscorlib</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="left" Type="System.Security.AccessControl.GenericAce" />
+       <Parameter Name="right" Type="System.Security.AccessControl.GenericAce" />
+     </Parameters>
+     <Docs>
+       <param name="left">The first <see cref="T:System.Security.AccessControl.GenericAce" /> object to compare.</param>
+       <param name="right">The second <see cref="T:System.Security.AccessControl.GenericAce" /> to compare.</param>
+       <summary>Determines whether the specified <see cref="T:System.Security.AccessControl.GenericAce" /> objects are considered unequal.</summary>
+       <returns>
+         <see langword="true" /> if the two <see cref="T:System.Security.AccessControl.GenericAce" /> objects are unequal; otherwise, <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.AccessControl.GenericAce.Compare%28System.Security.AccessControl.GenericAce%2CSystem.Security.AccessControl.GenericAce%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>

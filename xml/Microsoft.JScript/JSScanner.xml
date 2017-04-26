@@ -131,10 +131,10 @@
         <returns>The source code to scan.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The source code is specified to the <xref:Microsoft.JScript.JSScanner.%23ctor%28Microsoft.JScript.Context%29> method or to the <xref:Microsoft.JScript.JSScanner.SetSource%2A> method.  
-  
+The source code is specified to the <xref:Microsoft.JScript.JSScanner.%23ctor%28Microsoft.JScript.Context%29> method or to the <xref:Microsoft.JScript.JSScanner.SetSource%2A> method.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -270,10 +270,10 @@
         <summary>Sets a flag that indicates whether the scanner is operating in authoring mode.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An example of operating in authoring mode occurs when a host scans the code in an editor to colorize it.  
-  
+An example of operating in authoring mode occurs when a host scans the code in an editor to colorize it.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

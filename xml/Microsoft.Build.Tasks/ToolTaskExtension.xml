@@ -142,10 +142,10 @@
         <returns>The parameter value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `parameterName` does not exist in the <xref:Microsoft.Build.Tasks.ToolTaskExtension.Bag%2A>, `defaultValue` is returned.  
-  
+If `parameterName` does not exist in the <xref:Microsoft.Build.Tasks.ToolTaskExtension.Bag%2A>, `defaultValue` is returned.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -174,10 +174,10 @@
         <returns>The parameter value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `parameterName` does not exist in the <xref:Microsoft.Build.Tasks.ToolTaskExtension.Bag%2A>, `defaultValue` is returned.  
-  
+If `parameterName` does not exist in the <xref:Microsoft.Build.Tasks.ToolTaskExtension.Bag%2A>, `defaultValue` is returned.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

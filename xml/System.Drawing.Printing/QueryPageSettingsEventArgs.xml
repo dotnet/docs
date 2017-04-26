@@ -14,21 +14,21 @@
     <summary>Provides data for the <see cref="E:System.Drawing.Printing.PrintDocument.QueryPageSettings" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is possible to print each page of a document using different page settings. You set page settings by modifying individual properties of the <xref:System.Drawing.Printing.QueryPageSettingsEventArgs.PageSettings%2A> property or by setting the property to a <xref:System.Drawing.Printing.PageSettings>. The print job can also be canceled by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
+It is possible to print each page of a document using different page settings. You set page settings by modifying individual properties of the <xref:System.Drawing.Printing.QueryPageSettingsEventArgs.PageSettings%2A> property or by setting the property to a <xref:System.Drawing.Printing.PageSettings>. The print job can also be canceled by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example prints a document with the first page in color, if the printer supports it. The example assumes that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` has been created, and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> and <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> events are handled.  
-  
- Use the <xref:System.Drawing> and <xref:System.Drawing.Printing> namespaces for this example.  
-  
- [!code-cpp[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/cpp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CPP/source.cpp#6)]
- [!code-csharp[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/csharp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CS/source.cs#6)]
- [!code-vb[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/VB/source.vb#6)]  
-  
+The following code example prints a document with the first page in color, if the printer supports it. The example assumes that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` has been created, and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> and <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> events are handled.  
+ 
+Use the <xref:System.Drawing> and <xref:System.Drawing.Printing> namespaces for this example.  
+ 
+[!code-cpp[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/cpp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CPP/source.cpp#6)]
+[!code-csharp[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/csharp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CS/source.cs#6)]
+[!code-vb[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/VB/source.vb#6)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -68,21 +68,21 @@
         <value>The page settings for the page to be printed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is possible to print each page of a document using different page settings. You set page settings by modifying individual properties of the <xref:System.Drawing.Printing.QueryPageSettingsEventArgs.PageSettings%2A> property or by setting the property to a <xref:System.Drawing.Printing.PageSettings>. The print job can also be canceled by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
+It is possible to print each page of a document using different page settings. You set page settings by modifying individual properties of the <xref:System.Drawing.Printing.QueryPageSettingsEventArgs.PageSettings%2A> property or by setting the property to a <xref:System.Drawing.Printing.PageSettings>. The print job can also be canceled by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example prints a document with the first page in color, if the printer supports it. The example assumes that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` has been created, and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> and <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> events are handled.  
-  
- Use the <xref:System.Drawing> and <xref:System.Drawing.Printing> namespaces for this example.  
-  
- [!code-cpp[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/cpp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CPP/source.cpp#6)]
- [!code-csharp[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/csharp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CS/source.cs#6)]
- [!code-vb[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/VB/source.vb#6)]  
-  
+The following code example prints a document with the first page in color, if the printer supports it. The example assumes that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` has been created, and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> and <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> events are handled.  
+ 
+Use the <xref:System.Drawing> and <xref:System.Drawing.Printing> namespaces for this example.  
+ 
+[!code-cpp[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/cpp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CPP/source.cpp#6)]
+[!code-csharp[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/csharp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CS/source.cs#6)]
+[!code-vb[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/VB/source.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

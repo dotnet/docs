@@ -26,12 +26,12 @@
     <summary>Defines identifiers that indicate the type of a selection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Components of a designer document can be selected using the <xref:System.ComponentModel.Design.ISelectionService.SetSelectedComponents%2A> method of the <xref:System.ComponentModel.Design.ISelectionService>. Some types of actions can operate on a selected component or group of selected components. The <xref:System.ComponentModel.Design.ISelectionService> keeps track of the selection type of the current selection. These selection type identifiers indicate whether the selection was completed using a single click, a mouse down or mouse up selection, whether the selection should replace the previous selection, or use the default selection mode.  
-  
- Use the <xref:System.ComponentModel.Design.SelectionTypes> enumeration to specify the type of a selection when setting a new selection using the <xref:System.ComponentModel.Design.ISelectionService.SetSelectedComponents%2A> method.  
-  
+Components of a designer document can be selected using the <xref:System.ComponentModel.Design.ISelectionService.SetSelectedComponents%2A> method of the <xref:System.ComponentModel.Design.ISelectionService>. Some types of actions can operate on a selected component or group of selected components. The <xref:System.ComponentModel.Design.ISelectionService> keeps track of the selection type of the current selection. These selection type identifiers indicate whether the selection was completed using a single click, a mouse down or mouse up selection, whether the selection should replace the previous selection, or use the default selection mode.  
+ 
+Use the <xref:System.ComponentModel.Design.SelectionTypes> enumeration to specify the type of a selection when setting a new selection using the <xref:System.ComponentModel.Design.ISelectionService.SetSelectedComponents%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>

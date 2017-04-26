@@ -14,16 +14,16 @@
     <summary>Represents a surface for rendering adorners.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An adorner layer is guaranteed to be at a higher Z-order than the element(s) being adorned, so adorners are always rendered on top of the adorned element.  
-  
+An adorner layer is guaranteed to be at a higher Z-order than the element(s) being adorned, so adorners are always rendered on top of the adorned element.  
+ 
 > [!NOTE]
 >  The parent of an <xref:System.Windows.Documents.Adorner> is the <xref:System.Windows.Documents.AdornerLayer> that renders the **Adorner**, not the element being adorned.  
-  
+ 
 > [!NOTE]
 >  Anything placed in the adorner layer is rendered on top of the rest of any styles you have set. In other words, adorners are always visually on top and cannot be overridden using z-order.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -71,10 +71,10 @@
         <returns>An <see cref="T:System.Windows.Media.AdornerHitTestResult" /> for the specified point.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Media.AdornerHitTestResult> contains the <xref:System.Windows.Media.Visual> that was hit, and the adorner that the visual is part of.  
-  
+An <xref:System.Windows.Media.AdornerHitTestResult> contains the <xref:System.Windows.Media.Visual> that was hit, and the adorner that the visual is part of.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,10 +100,10 @@
         <returns>The actual size needed by the element.  This return value is typically the same as the value passed to *finalSize*.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.Windows.FrameworkElement.ArrangeOverride%2A>.  
-  
+This method overrides <xref:System.Windows.FrameworkElement.ArrangeOverride%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,10 +129,10 @@
         <returns>An adorner layer for the specified visual, or **null** if no adorner layer can be found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This `static` method traverses up the visual tree starting at the specified <xref:System.Windows.Media.Visual> and returns the first adorner layer found.  
-  
+This `static` method traverses up the visual tree starting at the specified <xref:System.Windows.Media.Visual> and returns the first adorner layer found.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised when *visual* is **null**.</exception>
@@ -181,10 +181,10 @@
         <returns>A <see cref="T:System.Windows.Media.Visual" /> child of the parent <see cref="T:System.Windows.Documents.AdornerLayer" /> element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A derived class must implement this method to support <xref:System.Windows.Media.Visual> children. The method must return the child at the specified index. The index must be between `0` and (<xref:System.Windows.Documents.AdornerLayer.VisualChildrenCount%2A>`-1`).  
-  
+A derived class must implement this method to support <xref:System.Windows.Media.Visual> children. The method must return the child at the specified index. The index must be between `0` and (<xref:System.Windows.Documents.AdornerLayer.VisualChildrenCount%2A>`-1`).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,12 +228,12 @@
         <returns>This method always returns a <see cref="T:System.Windows.Size" /> of (0,0).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Documents.AdornerLayer> should be the same size as its parent and consume no layout space.  
-  
- This method overrides <xref:System.Windows.FrameworkElement.MeasureOverride%2A>.  
-  
+The <xref:System.Windows.Documents.AdornerLayer> should be the same size as its parent and consume no layout space.  
+ 
+This method overrides <xref:System.Windows.FrameworkElement.MeasureOverride%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,10 +258,10 @@
         <summary>Removes the specified <see cref="T:System.Windows.Documents.Adorner" /> from the adorner layer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method simply returns if the specified adorner does not exist.  
-  
+This method simply returns if the specified adorner does not exist.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised when *adorner* is **null**.</exception>
@@ -325,10 +325,10 @@
         <value>The number of child <see cref="T:System.Windows.Media.Visual" /> objects in this instance of <see cref="T:System.Windows.Documents.AdornerLayer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Derived classes override this property to enable the Visual code to enumerate the Visual children. Derived classes need to return the number of children from this method.  
-  
+Derived classes override this property to enable the Visual code to enumerate the Visual children. Derived classes need to return the number of children from this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

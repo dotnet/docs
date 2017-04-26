@@ -32,10 +32,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SecurityContextKeyIdentifierClause" /> class using the specified context identifier.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more about the `contextId` parameter, see <xref:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.ContextId%2A>.  
-  
+For more about the `contextId` parameter, see <xref:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.ContextId%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -59,12 +59,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SecurityContextKeyIdentifierClause" /> class using the specified context identifier and generation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more about the `contextId` parameter, see <xref:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.ContextId%2A>.  
-  
- For more about the `generation` parameter, see <xref:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.KeyGeneration%2A>.  
-  
+For more about the `contextId` parameter, see <xref:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.ContextId%2A>.  
+ 
+For more about the `generation` parameter, see <xref:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.KeyGeneration%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,10 +92,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SecurityContextKeyIdentifierClause" /> class with the specified values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `derivationNonce` and `derivationLength` are used for implied derived keys. This is supported only on the sending side.  
-  
+`derivationNonce` and `derivationLength` are used for implied derived keys. This is supported only on the sending side.  
+ 
  ]]></format>
         </remarks>
       </Docs>

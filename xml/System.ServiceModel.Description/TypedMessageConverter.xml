@@ -14,10 +14,10 @@
     <summary>Converts a typed message to an untyped message, or an untyped message to a typed message.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides functionalities to convert a typed message to an untyped message, or an untyped message to a typed message. A typed message is an instance of a type that has the <xref:System.ServiceModel.MessageContractAttribute> attribute annotated. An untyped message is one that is an instance of the <xref:System.ServiceModel.Channels.Message> class.  You can annotate a type with the <xref:System.ServiceModel.MessageContractAttribute> to create a custom message type, and then use the methods provided by this class to convert it to an untyped <xref:System.ServiceModel.Channels.Message> instance.  
-  
+This class provides functionalities to convert a typed message to an untyped message, or an untyped message to a typed message. A typed message is an instance of a type that has the <xref:System.ServiceModel.MessageContractAttribute> attribute annotated. An untyped message is one that is an instance of the <xref:System.ServiceModel.Channels.Message> class.  You can annotate a type with the <xref:System.ServiceModel.MessageContractAttribute> to create a custom message type, and then use the methods provided by this class to convert it to an untyped <xref:System.ServiceModel.Channels.Message> instance.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -228,10 +228,10 @@
         <returns>An object that is a typed message.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method takes an untyped [!INCLUDE[indigo1](~/includes/indigo1-md.md)] message, that is, an instance of <xref:System.ServiceModel.Channels.Message>, and converts it into a typed message, that is, an instance of a type that is annotated by the <xref:System.ServiceModel.MessageContractAttribute>.  
-  
+This method takes an untyped [!INCLUDE[indigo1](~/includes/indigo1-md.md)] message, that is, an instance of <xref:System.ServiceModel.Channels.Message>, and converts it into a typed message, that is, an instance of a type that is annotated by the <xref:System.ServiceModel.MessageContractAttribute>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

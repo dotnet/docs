@@ -14,15 +14,15 @@
     <summary>Provides data for the <see cref="E:System.Windows.Forms.ToolStripContentPanel.RendererChanged" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#586](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#586)]
- [!code-vb[System.Windows.Forms.EventExamples#586](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#586)]  
-  
+The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ 
+To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#586](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#586)]
+[!code-vb[System.Windows.Forms.EventExamples#586](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#586)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,15 +64,15 @@
         <value>The <see cref="T:System.Drawing.Graphics" /> to use for drawing.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#586](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#586)]
- [!code-vb[System.Windows.Forms.EventExamples#586](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#586)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ 
+To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#586](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#586)]
+[!code-vb[System.Windows.Forms.EventExamples#586](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#586)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,15 +95,15 @@
           <see langword="true" /> if the event was handled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#586](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#586)]
- [!code-vb[System.Windows.Forms.EventExamples#586](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#586)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ 
+To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#586](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#586)]
+[!code-vb[System.Windows.Forms.EventExamples#586](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#586)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,15 +125,15 @@
         <value>A <see cref="T:System.Windows.Forms.ToolStripContentPanel" /> object affected by the click.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
-  
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground?displayProperty=fullName> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#586](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#586)]
- [!code-vb[System.Windows.Forms.EventExamples#586](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#586)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ 
+To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripContentPanelBackground?displayProperty=fullName> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#586](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#586)]
+[!code-vb[System.Windows.Forms.EventExamples#586](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#586)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

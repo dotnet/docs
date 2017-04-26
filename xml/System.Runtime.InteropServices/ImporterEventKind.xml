@@ -19,10 +19,10 @@
     <summary>Describes the callbacks that the type library importer makes when importing a type library.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The type library importer passes the values of this enumeration to the <xref:System.Runtime.InteropServices.ITypeLibExporterNotifySink.ReportEvent%2A> method of an object which implements the <xref:System.Runtime.InteropServices.ITypeLibExporterNotifySink> interface. The value passed identifies the specific kind of event being reported.  
-  
+The type library importer passes the values of this enumeration to the <xref:System.Runtime.InteropServices.ITypeLibExporterNotifySink.ReportEvent%2A> method of an object which implements the <xref:System.Runtime.InteropServices.ITypeLibExporterNotifySink> interface. The value passed identifies the specific kind of event being reported.  
+ 
  ]]></format>
     </remarks>
   </Docs>

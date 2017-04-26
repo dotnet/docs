@@ -14,34 +14,34 @@
     <summary>Represents an attribute or a child of a configuration element. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the case of a simple <xref:System.Configuration.ConfigurationElement>, such as the `CustomSection` shown in the next example, the <xref:System.Configuration.ConfigurationProperty> objects represent attributes such as `fileName`.  
+In the case of a simple <xref:System.Configuration.ConfigurationElement>, such as the `CustomSection` shown in the next example, the <xref:System.Configuration.ConfigurationProperty> objects represent attributes such as `fileName`.  
+ 
+In the case of more complex configuration elements such as a section containing subsections, for instance `authentication`, the <xref:System.Configuration.ConfigurationProperty> objects can represent <xref:System.Configuration.ConfigurationElement> objects as well as attributes.  
+ 
+The <xref:System.Configuration.ConfigurationPropertyCollection> class represents the collection of the <xref:System.Configuration.ConfigurationProperty> objects that can be either attributes or <xref:System.Configuration.ConfigurationElement> objects of a configuration element.  
+ 
+The <xref:System.Configuration.ConfigurationProperty> class represents an individual configuration setting. This class allows you to get or set the name, type, and default value for a particular configuration entity (attribute or element) and specify whether the attribute is required, is an element key, or represents a default element collection.  
+ 
   
- In the case of more complex configuration elements such as a section containing subsections, for instance `authentication`, the <xref:System.Configuration.ConfigurationProperty> objects can represent <xref:System.Configuration.ConfigurationElement> objects as well as attributes.  
-  
- The <xref:System.Configuration.ConfigurationPropertyCollection> class represents the collection of the <xref:System.Configuration.ConfigurationProperty> objects that can be either attributes or <xref:System.Configuration.ConfigurationElement> objects of a configuration element.  
-  
- The <xref:System.Configuration.ConfigurationProperty> class represents an individual configuration setting. This class allows you to get or set the name, type, and default value for a particular configuration entity (attribute or element) and specify whether the attribute is required, is an element key, or represents a default element collection.  
-  
-   
-  
+ 
 ## Examples  
-  
+ 
 1.  The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty> when you create a custom section.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#1)]
- [!code-vb[System.Configuration.ConfigurationProperty#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#1)]  
-  
- The following is an excerpt of the configuration file used by the code in the previous example.  
-  
-  
-  
- The following example shows how to create the previous section in code.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#30](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#30)]
- [!code-vb[System.Configuration.ConfigurationProperty#30](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#30)]  
-  
+ 
+[!code-csharp[System.Configuration.ConfigurationProperty#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#1)]
+[!code-vb[System.Configuration.ConfigurationProperty#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#1)]  
+ 
+The following is an excerpt of the configuration file used by the code in the previous example.  
+ 
+ 
+ 
+The following example shows how to create the previous section in code.  
+ 
+[!code-csharp[System.Configuration.ConfigurationProperty#30](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#30)]
+[!code-vb[System.Configuration.ConfigurationProperty#30](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#30)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -100,18 +100,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you instantiate a <xref:System.Configuration.ConfigurationProperty> object using this constructor, the <xref:System.Configuration.ConfigurationProperty.IsRequired%2A> and <xref:System.Configuration.ConfigurationProperty.IsKey%2A> properties are set to `false`. Additionally, an instance made with this constructor will not function as a default collection-key property.  
+When you instantiate a <xref:System.Configuration.ConfigurationProperty> object using this constructor, the <xref:System.Configuration.ConfigurationProperty.IsRequired%2A> and <xref:System.Configuration.ConfigurationProperty.IsKey%2A> properties are set to `false`. Additionally, an instance made with this constructor will not function as a default collection-key property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%29?displayProperty=fullName> constructor to instantiate a configuration-property object.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#2)]
- [!code-vb[System.Configuration.ConfigurationProperty#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#2)]  
-  
+The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%29?displayProperty=fullName> constructor to instantiate a configuration-property object.  
+ 
+[!code-csharp[System.Configuration.ConfigurationProperty#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#2)]
+[!code-vb[System.Configuration.ConfigurationProperty#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -140,13 +140,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.Configuration.ConfigurationPropertyOptions%29?displayProperty=fullName> constructor to instantiate a configuration-property object.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#3)]
- [!code-vb[System.Configuration.ConfigurationProperty#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#3)]  
-  
+The following code example shows how to use <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.Configuration.ConfigurationPropertyOptions%29?displayProperty=fullName> constructor to instantiate a configuration-property object.  
+ 
+[!code-csharp[System.Configuration.ConfigurationProperty#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#3)]
+[!code-vb[System.Configuration.ConfigurationProperty#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -179,13 +179,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the kind of parameters to use when calling the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.ComponentModel.TypeConverter%2CSystem.Configuration.ConfigurationValidatorBase%2CSystem.Configuration.ConfigurationPropertyOptions%29?displayProperty=fullName> constructor.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#4)]
- [!code-vb[System.Configuration.ConfigurationProperty#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#4)]  
-  
+The following code example shows the kind of parameters to use when calling the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.ComponentModel.TypeConverter%2CSystem.Configuration.ConfigurationValidatorBase%2CSystem.Configuration.ConfigurationPropertyOptions%29?displayProperty=fullName> constructor.  
+ 
+[!code-csharp[System.Configuration.ConfigurationProperty#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#4)]
+[!code-vb[System.Configuration.ConfigurationProperty#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -220,13 +220,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.ComponentModel.TypeConverter%2CSystem.Configuration.ConfigurationValidatorBase%2CSystem.Configuration.ConfigurationPropertyOptions%2CSystem.String%29?displayProperty=fullName> constructor to instantiate a configuration-property object.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#4)]
- [!code-vb[System.Configuration.ConfigurationProperty#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#4)]  
-  
+The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.ComponentModel.TypeConverter%2CSystem.Configuration.ConfigurationValidatorBase%2CSystem.Configuration.ConfigurationPropertyOptions%2CSystem.String%29?displayProperty=fullName> constructor to instantiate a configuration-property object.  
+ 
+[!code-csharp[System.Configuration.ConfigurationProperty#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#4)]
+[!code-vb[System.Configuration.ConfigurationProperty#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -249,13 +249,13 @@
         <value>A <see cref="T:System.ComponentModel.TypeConverter" /> used to convert this <see cref="T:System.Configuration.ConfigurationProperty" /> into an XML representation for writing to the configuration file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.Converter%2A> property to get the <xref:System.ComponentModel.TypeConverter> for a specified configuration-property object.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#5)]
- [!code-vb[System.Configuration.ConfigurationProperty#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#5)]  
-  
+The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.Converter%2A> property to get the <xref:System.ComponentModel.TypeConverter> for a specified configuration-property object.  
+ 
+[!code-csharp[System.Configuration.ConfigurationProperty#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#5)]
+[!code-vb[System.Configuration.ConfigurationProperty#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">This <see cref="T:System.Configuration.ConfigurationProperty" /> cannot be converted.</exception>
@@ -279,18 +279,18 @@
         <value>An <see cref="T:System.Object" /> that can be cast to the type specified by the <see cref="P:System.Configuration.ConfigurationProperty.Type" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value of a new <xref:System.Configuration.ConfigurationProperty> object is passed into its constructor. That same object will be returned by the <xref:System.Configuration.ConfigurationProperty.DefaultValue%2A> property.  
+The default value of a new <xref:System.Configuration.ConfigurationProperty> object is passed into its constructor. That same object will be returned by the <xref:System.Configuration.ConfigurationProperty.DefaultValue%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.DefaultValue%2A> for a specified property.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#6)]
- [!code-vb[System.Configuration.ConfigurationProperty#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#6)]  
-  
+The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.DefaultValue%2A> for a specified property.  
+ 
+[!code-csharp[System.Configuration.ConfigurationProperty#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#6)]
+[!code-vb[System.Configuration.ConfigurationProperty#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -313,13 +313,13 @@
         <value>A <see langword="string" /> value that describes the property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.Description%2A> for a specified property.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#11)]
- [!code-vb[System.Configuration.ConfigurationProperty#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#11)]  
-  
+The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.Description%2A> for a specified property.  
+ 
+[!code-csharp[System.Configuration.ConfigurationProperty#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#11)]
+[!code-vb[System.Configuration.ConfigurationProperty#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#11)]  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -343,10 +343,10 @@
           <see langword="true" /> if the property requires assembly name transformation; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use <xref:System.Configuration.ConfigurationPropertyOptions> to set this property when you call a constructor that includes a <xref:System.Configuration.ConfigurationPropertyOptions> parameter. This value is ignored if the property does not contain an assembly name string.  
-  
+You use <xref:System.Configuration.ConfigurationPropertyOptions> to set this property when you call a constructor that includes a <xref:System.Configuration.ConfigurationPropertyOptions> parameter. This value is ignored if the property does not contain an assembly name string.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -370,10 +370,10 @@
           <see langword="true" /> if the property is the default collection of an element; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is ignored if the property is not a collection.  
-  
+This value is ignored if the property is not a collection.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -397,18 +397,18 @@
           <see langword="true" /> if this <see cref="T:System.Configuration.ConfigurationProperty" /> object is the key for the containing element; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can define a new <xref:System.Configuration.ConfigurationProperty> object to be the key for the containing element when implementing the <xref:System.Configuration.ConfigurationElement> element. If this flag is not used, the <xref:System.Configuration.ConfigurationProperty.IsKey%2A> property will return `false`.  
+You can define a new <xref:System.Configuration.ConfigurationProperty> object to be the key for the containing element when implementing the <xref:System.Configuration.ConfigurationElement> element. If this flag is not used, the <xref:System.Configuration.ConfigurationProperty.IsKey%2A> property will return `false`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.IsKey%2A> property for a specified property.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#7)]
- [!code-vb[System.Configuration.ConfigurationProperty#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#7)]  
-  
+The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.IsKey%2A> property for a specified property.  
+ 
+[!code-csharp[System.Configuration.ConfigurationProperty#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#7)]
+[!code-vb[System.Configuration.ConfigurationProperty#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -432,13 +432,13 @@
           <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationProperty" /> is required; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.IsRequired%2A> property value for a specified configuration-property object.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#8)]
- [!code-vb[System.Configuration.ConfigurationProperty#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#8)]  
-  
+The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.IsRequired%2A> property value for a specified configuration-property object.  
+ 
+[!code-csharp[System.Configuration.ConfigurationProperty#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#8)]
+[!code-vb[System.Configuration.ConfigurationProperty#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#8)]  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -462,10 +462,10 @@
           <see langword="true" /> if the property requires type-name transformation; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use <xref:System.Configuration.ConfigurationPropertyOptions> to set this property when you call a constructor that includes a <xref:System.Configuration.ConfigurationPropertyOptions> parameter. This value is ignored if the property does not contain a type-name string.  
-  
+You use <xref:System.Configuration.ConfigurationPropertyOptions> to set this property when you call a constructor that includes a <xref:System.Configuration.ConfigurationPropertyOptions> parameter. This value is ignored if the property does not contain a type-name string.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -489,12 +489,12 @@
           <see langword="true" /> if the parent configuration section should be queried; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you are creating a configuration property for the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] or later versions, and if the property value should not be serialized to XML when an earlier version of the framework is targeted, set this property to `true`.  
-  
- You use <xref:System.Configuration.ConfigurationPropertyOptions> to set this property when you call a constructor that includes a <xref:System.Configuration.ConfigurationPropertyOptions> parameter.  
-  
+If you are creating a configuration property for the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] or later versions, and if the property value should not be serialized to XML when an earlier version of the framework is targeted, set this property to `true`.  
+ 
+You use <xref:System.Configuration.ConfigurationPropertyOptions> to set this property when you call a constructor that includes a <xref:System.Configuration.ConfigurationPropertyOptions> parameter.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -517,18 +517,18 @@
         <value>The name of the <see cref="T:System.Configuration.ConfigurationProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an instance of a <xref:System.Configuration.ConfigurationProperty> is a default collection, its name will be automatically defined to be an empty string.  
+If an instance of a <xref:System.Configuration.ConfigurationProperty> is a default collection, its name will be automatically defined to be an empty string.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.Name%2A> for a specified property.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#9)]
- [!code-vb[System.Configuration.ConfigurationProperty#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#9)]  
-  
+The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.Name%2A> for a specified property.  
+ 
+[!code-csharp[System.Configuration.ConfigurationProperty#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#9)]
+[!code-vb[System.Configuration.ConfigurationProperty#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -551,18 +551,18 @@
         <value>A <see cref="T:System.Type" /> representing the type of this <see cref="T:System.Configuration.ConfigurationProperty" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use `Type` to determine the fully qualified namespace and class name for this derived instance of <xref:System.Configuration.ConfigurationProperty>.  
+Use `Type` to determine the fully qualified namespace and class name for this derived instance of <xref:System.Configuration.ConfigurationProperty>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to get the <xref:System.Configuration.ConfigurationProperty.Type%2A> property value for a specified configuration-property object.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#10)]
- [!code-vb[System.Configuration.ConfigurationProperty#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#10)]  
-  
+The following example shows how to get the <xref:System.Configuration.ConfigurationProperty.Type%2A> property value for a specified configuration-property object.  
+ 
+[!code-csharp[System.Configuration.ConfigurationProperty#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#10)]
+[!code-vb[System.Configuration.ConfigurationProperty#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -585,13 +585,13 @@
         <value>The <see cref="T:System.Configuration.ConfigurationValidatorBase" /> validator, which is used to validate this <see cref="T:System.Configuration.ConfigurationProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.Validator%2A> for a specified property.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#12)]
- [!code-vb[System.Configuration.ConfigurationProperty#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#12)]  
-  
+The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.Validator%2A> for a specified property.  
+ 
+[!code-csharp[System.Configuration.ConfigurationProperty#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#12)]
+[!code-vb[System.Configuration.ConfigurationProperty#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#12)]  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

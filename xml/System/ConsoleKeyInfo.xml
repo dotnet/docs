@@ -23,21 +23,21 @@
     <summary>Describes the console key that was pressed, including the character represented by the console key and the state of the SHIFT, ALT, and CTRL modifier keys.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ConsoleKeyInfo> type is not intended to be created by users. Instead, it is returned to the user in response to calling the <xref:System.Console.ReadKey%2A?displayProperty=fullName> method.  
+The <xref:System.ConsoleKeyInfo> type is not intended to be created by users. Instead, it is returned to the user in response to calling the <xref:System.Console.ReadKey%2A?displayProperty=fullName> method.  
+ 
+The <xref:System.ConsoleKeyInfo> object describes the <xref:System.ConsoleKey> constant and Unicode character, if any, that correspond to the pressed console key. The <xref:System.ConsoleKeyInfo> object also describes, in a bitwise combination of <xref:System.ConsoleModifiers> values, whether one or more SHIFT, ALT, or CTRL modifier keys was pressed simultaneously with the console key.  
+ 
   
- The <xref:System.ConsoleKeyInfo> object describes the <xref:System.ConsoleKey> constant and Unicode character, if any, that correspond to the pressed console key. The <xref:System.ConsoleKeyInfo> object also describes, in a bitwise combination of <xref:System.ConsoleModifiers> values, whether one or more SHIFT, ALT, or CTRL modifier keys was pressed simultaneously with the console key.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates using a <xref:System.ConsoleKeyInfo> object in a read operation.  
-  
- [!code-cpp[console.readkey1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.readkey1/CPP/rk.cpp#1)]
- [!code-csharp[console.readkey1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.readkey1/CS/rk.cs#1)]
- [!code-vb[console.readkey1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.readkey1/VB/rk.vb#1)]  
-  
+The following example demonstrates using a <xref:System.ConsoleKeyInfo> object in a read operation.  
+ 
+[!code-cpp[console.readkey1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.readkey1/CPP/rk.cpp#1)]
+[!code-csharp[console.readkey1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.readkey1/CS/rk.cs#1)]
+[!code-vb[console.readkey1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.readkey1/VB/rk.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -79,12 +79,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ConsoleKeyInfo" /> structure using the specified character, console key, and modifier keys.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type is not intended to be created by users. Instead, it is returned to the user in response to calling the <xref:System.Console.ReadKey%2A?displayProperty=fullName> method.  
-  
- The <xref:System.ConsoleKeyInfo> type does not specify whether the left or right SHIFT, ALT, or CTRL modifier key was pressed.  
-  
+This type is not intended to be created by users. Instead, it is returned to the user in response to calling the <xref:System.Console.ReadKey%2A?displayProperty=fullName> method.  
+ 
+The <xref:System.ConsoleKeyInfo> type does not specify whether the left or right SHIFT, ALT, or CTRL modifier key was pressed.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The numeric value of the <paramref name="key" /> parameter is less than 0 or greater than 255.</exception>
@@ -121,12 +121,12 @@
           <see langword="true" /> if <paramref name="obj" /> is equal to the current <see cref="T:System.ConsoleKeyInfo" /> object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.ConsoleKeyInfo> objects are equal if their corresponding <xref:System.ConsoleKeyInfo.KeyChar%2A>, <xref:System.ConsoleKeyInfo.Key%2A>, and <xref:System.ConsoleKeyInfo.Modifiers%2A> properties are equal.  
-  
- The <xref:System.ConsoleKeyInfo.Equals%2A> method performs slightly better than the <xref:System.ConsoleKeyInfo.Equals%28System.Object%29?displayProperty=fullName> method because it does not have to convert `obj` to an object.  
-  
+Two <xref:System.ConsoleKeyInfo> objects are equal if their corresponding <xref:System.ConsoleKeyInfo.KeyChar%2A>, <xref:System.ConsoleKeyInfo.Key%2A>, and <xref:System.ConsoleKeyInfo.Modifiers%2A> properties are equal.  
+ 
+The <xref:System.ConsoleKeyInfo.Equals%2A> method performs slightly better than the <xref:System.ConsoleKeyInfo.Equals%28System.Object%29?displayProperty=fullName> method because it does not have to convert `obj` to an object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -162,19 +162,19 @@
           <see langword="true" /> if <paramref name="value" /> is a <see cref="T:System.ConsoleKeyInfo" /> object and is equal to the current <see cref="T:System.ConsoleKeyInfo" /> object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.ConsoleKeyInfo> objects are equal if their corresponding <xref:System.ConsoleKeyInfo.KeyChar%2A>, <xref:System.ConsoleKeyInfo.Key%2A>, and <xref:System.ConsoleKeyInfo.Modifiers%2A> properties are equal.  
+Two <xref:System.ConsoleKeyInfo> objects are equal if their corresponding <xref:System.ConsoleKeyInfo.KeyChar%2A>, <xref:System.ConsoleKeyInfo.Key%2A>, and <xref:System.ConsoleKeyInfo.Modifiers%2A> properties are equal.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.ConsoleKeyInfo.Equals%2A> method.  
-  
- [!code-cpp[system.ConsoleKeyInfo.Equals#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ConsoleKeyInfo.Equals/cpp/consolekeyinfo.equals.cpp#1)]
- [!code-csharp[system.ConsoleKeyInfo.Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ConsoleKeyInfo.Equals/cs/equals.cs#1)]
- [!code-vb[system.ConsoleKeyInfo.Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ConsoleKeyInfo.Equals/vb/equals.vb#1)]  
-  
+The following example demonstrates the <xref:System.ConsoleKeyInfo.Equals%2A> method.  
+ 
+[!code-cpp[system.ConsoleKeyInfo.Equals#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ConsoleKeyInfo.Equals/cpp/consolekeyinfo.equals.cpp#1)]
+[!code-csharp[system.ConsoleKeyInfo.Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ConsoleKeyInfo.Equals/cs/equals.cs#1)]
+[!code-vb[system.ConsoleKeyInfo.Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ConsoleKeyInfo.Equals/vb/equals.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,19 +206,19 @@
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value returned by the <xref:System.ConsoleKeyInfo.GetHashCode%2A> method is not suitable for distinguishing one <xref:System.ConsoleKeyInfo> object from another. If your application needs a unique hash code, override the <xref:System.ConsoleKeyInfo.GetHashCode%2A> method with your own method.  
+The value returned by the <xref:System.ConsoleKeyInfo.GetHashCode%2A> method is not suitable for distinguishing one <xref:System.ConsoleKeyInfo> object from another. If your application needs a unique hash code, override the <xref:System.ConsoleKeyInfo.GetHashCode%2A> method with your own method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.ConsoleKeyInfo.GetHashCode%2A> method.  
-  
- [!code-cpp[System.ConsoleKeyInfo.GetHashCode#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ConsoleKeyInfo.GetHashcode/cpp/hash.cpp#1)]
- [!code-csharp[System.ConsoleKeyInfo.GetHashCode#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ConsoleKeyInfo.GetHashcode/cs/hash.cs#1)]
- [!code-vb[System.ConsoleKeyInfo.GetHashCode#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ConsoleKeyInfo.GetHashcode/vb/hash.vb#1)]  
-  
+The following example demonstrates the <xref:System.ConsoleKeyInfo.GetHashCode%2A> method.  
+ 
+[!code-cpp[System.ConsoleKeyInfo.GetHashCode#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ConsoleKeyInfo.GetHashcode/cpp/hash.cpp#1)]
+[!code-csharp[System.ConsoleKeyInfo.GetHashCode#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ConsoleKeyInfo.GetHashcode/cs/hash.cs#1)]
+[!code-vb[System.ConsoleKeyInfo.GetHashCode#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ConsoleKeyInfo.GetHashcode/vb/hash.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,14 +249,14 @@
         <value>A value that identifies the console key that was pressed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates using a <xref:System.ConsoleKeyInfo.Key%2A> property in a read operation.  
-  
- [!code-cpp[console.readkey1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.readkey1/CPP/rk.cpp#1)]
- [!code-csharp[console.readkey1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.readkey1/CS/rk.cs#1)]
- [!code-vb[console.readkey1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.readkey1/VB/rk.vb#1)]  
-  
+The following example demonstrates using a <xref:System.ConsoleKeyInfo.Key%2A> property in a read operation.  
+ 
+[!code-cpp[console.readkey1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.readkey1/CPP/rk.cpp#1)]
+[!code-csharp[console.readkey1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.readkey1/CS/rk.cs#1)]
+[!code-vb[console.readkey1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.readkey1/VB/rk.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,18 +287,18 @@
         <value>An object that corresponds to the console key represented by the current <see cref="T:System.ConsoleKeyInfo" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the key pressed does not map to a Unicode character (for example, if the user presses the **F1** key or the **Home** key), the value of the <xref:System.ConsoleKeyInfo.KeyChar%2A> property is \U0000.  
+If the key pressed does not map to a Unicode character (for example, if the user presses the **F1** key or the **Home** key), the value of the <xref:System.ConsoleKeyInfo.KeyChar%2A> property is \U0000.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.ConsoleKeyInfo.KeyChar%2A> property to add the characters input by the user into a string. The example ignores special keys other than **ENTER**, **ESC**, and **BACKSPACE**.  
-  
- [!code-csharp[System.ConsoleKeyInfo.KeyChar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.consolekeyinfo.keychar/cs/keychar1.cs#1)]
- [!code-vb[System.ConsoleKeyInfo.KeyChar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.consolekeyinfo.keychar/vb/keychar1.vb#1)]  
-  
+The following example uses the <xref:System.ConsoleKeyInfo.KeyChar%2A> property to add the characters input by the user into a string. The example ignores special keys other than **ENTER**, **ESC**, and **BACKSPACE**.  
+ 
+[!code-csharp[System.ConsoleKeyInfo.KeyChar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.consolekeyinfo.keychar/cs/keychar1.cs#1)]
+[!code-vb[System.ConsoleKeyInfo.KeyChar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.consolekeyinfo.keychar/vb/keychar1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -329,14 +329,14 @@
         <value>A bitwise combination of the enumeration values. There is no default value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates using a <xref:System.ConsoleKeyInfo.Modifiers%2A> property in a read operation.  
-  
- [!code-cpp[console.readkey1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.readkey1/CPP/rk.cpp#1)]
- [!code-csharp[console.readkey1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.readkey1/CS/rk.cs#1)]
- [!code-vb[console.readkey1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.readkey1/VB/rk.vb#1)]  
-  
+The following example demonstrates using a <xref:System.ConsoleKeyInfo.Modifiers%2A> property in a read operation.  
+ 
+[!code-cpp[console.readkey1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.readkey1/CPP/rk.cpp#1)]
+[!code-csharp[console.readkey1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.readkey1/CS/rk.cs#1)]
+[!code-vb[console.readkey1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.readkey1/VB/rk.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -374,10 +374,10 @@
           <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.ConsoleKeyInfo> objects are equal if their corresponding <xref:System.ConsoleKeyInfo.KeyChar%2A>, <xref:System.ConsoleKeyInfo.Key%2A>, and <xref:System.ConsoleKeyInfo.Modifiers%2A> properties are equal.  
-  
+Two <xref:System.ConsoleKeyInfo> objects are equal if their corresponding <xref:System.ConsoleKeyInfo.KeyChar%2A>, <xref:System.ConsoleKeyInfo.Key%2A>, and <xref:System.ConsoleKeyInfo.Modifiers%2A> properties are equal.  
+ 
  The equivalent method for this operator is <xref:System.ConsoleKeyInfo.Equals%28System.ConsoleKeyInfo%2CSystem.ConsoleKeyInfo%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -415,10 +415,10 @@
           <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.ConsoleKeyInfo> objects are equal if their corresponding <xref:System.ConsoleKeyInfo.KeyChar%2A>, <xref:System.ConsoleKeyInfo.Key%2A>, and <xref:System.ConsoleKeyInfo.Modifiers%2A> properties are equal.  
-  
+Two <xref:System.ConsoleKeyInfo> objects are equal if their corresponding <xref:System.ConsoleKeyInfo.KeyChar%2A>, <xref:System.ConsoleKeyInfo.Key%2A>, and <xref:System.ConsoleKeyInfo.Modifiers%2A> properties are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>

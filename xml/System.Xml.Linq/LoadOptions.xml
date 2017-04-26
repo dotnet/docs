@@ -28,23 +28,23 @@
     <summary>Specifies load options when parsing XML.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you preserve white space when loading, all insignificant white space in the XML tree is materialized in the XML tree as is. If you do not preserve white space, then all insignificant white space is discarded.  
+If you preserve white space when loading, all insignificant white space in the XML tree is materialized in the XML tree as is. If you do not preserve white space, then all insignificant white space is discarded.  
+ 
+There is a performance penalty if you set the SetBaseUri and the SetLineInfo flags.  
+ 
+The base URI and the line information are accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the base URI and line information may become meaningless.  
+ 
+If the underlying <xref:System.Xml.XmlReader> does not have base URI or line information, setting the SetBaseUri and the SetLineInfo flags will have no effect.  
+ 
+This type allows you to control how LINQ to XML handles white space when loading or parsing. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ 
   
- There is a performance penalty if you set the SetBaseUri and the SetLineInfo flags.  
-  
- The base URI and the line information are accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the base URI and line information may become meaningless.  
-  
- If the underlying <xref:System.Xml.XmlReader> does not have base URI or line information, setting the SetBaseUri and the SetLineInfo flags will have no effect.  
-  
- This type allows you to control how LINQ to XML handles white space when loading or parsing. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
-  
-   
-  
+ 
 ## Examples  
- This example loads a small XML tree from a file, setting the options to set base URI and retain line information. It then adds another element that does not have line information. It then prints the line information for each element in the tree.  
-  
+This example loads a small XML tree from a file, setting the options to set base URI and retain line information. It then adds another element that does not have line information. It then prints the line information for each element in the tree.  
+ 
 ```csharp  
   
                 string markup = @"<Root>  
@@ -83,7 +83,7 @@ foreach (XElement e in po.DescendantsAndSelf())
             ((IXmlLineInfo)e).LinePosition.ToString() :  
             "No Line Information");  
 ```  
-  
+ 
 ```vb  
   
                 Dim markup As String = _  
@@ -123,9 +123,9 @@ For Each e As XElement In po.DescendantsAndSelf()
             "No Line Information"))  
 Next  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 BaseUri: Test.xml  
   
@@ -137,7 +137,7 @@ Root                1    2
   Child3            No Line Information  
   Child4            4    6  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

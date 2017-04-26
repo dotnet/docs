@@ -18,10 +18,10 @@
     <summary>Defines the set of values that form a peer name record object. This record includes items such as the peer name and the collection of endpoints with which it communicates. Peer name records are used to define the individual peer nodes within a <see cref="T:System.Net.PeerToPeer.Cloud" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Net.PeerToPeer.PeerNameRecord> objects are used to define individual nodes or peers within a <xref:System.Net.PeerToPeer.Cloud>. A peer name record object encapsulates all information published about a peer into a PNRP <xref:System.Net.PeerToPeer.Cloud>, including its name.  The PeerNameRecord class is designed for use with the <xref:System.Net.PeerToPeer.PeerNameResolver> class.  
-  
+<xref:System.Net.PeerToPeer.PeerNameRecord> objects are used to define individual nodes or peers within a <xref:System.Net.PeerToPeer.Cloud>. A peer name record object encapsulates all information published about a peer into a PNRP <xref:System.Net.PeerToPeer.Cloud>, including its name.  The PeerNameRecord class is designed for use with the <xref:System.Net.PeerToPeer.PeerNameResolver> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -78,10 +78,10 @@
         <value>The comment associated with the <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> object. The default value for this property is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The maximum length of the comment is 39 Unicode characters.  
-  
+The maximum length of the comment is 39 Unicode characters.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The comment to set is either larger than 39 Unicode characters or less than one character.</exception>
@@ -105,10 +105,10 @@
         <value>An array of bytes that holds the binary data associated with the entry. The default value for this property is an empty (zero-length) array instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The maximum amount of data that can be supplied is 4096 bytes. This property cannot be `null`.  
-  
+The maximum amount of data that can be supplied is 4096 bytes. This property cannot be `null`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The length of the binary data array to set is either greater than 4096 or less than 1.</exception>
@@ -132,10 +132,10 @@
         <value>A <see cref="T:System.Net.IPEndPointCollection" /> object that contains a collection of <see cref="T:System.Net.IPEndPoint" /> objects. These objects contain the endpoints of other peers participating within the associated peer cloud. The default value for this property is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property contains the set of endpoints, or peers in the <xref:System.Net.PeerToPeer.Cloud>, nearest to the peer named in this <xref:System.Net.PeerToPeer.PeerNameRecord>. These are the ones with which this peer communicates directly, rather than through an intermediary. For each endpoint an IP address and port must be provided.  The maximum number of endpoints that can be provided is ten.  
-  
+This property contains the set of endpoints, or peers in the <xref:System.Net.PeerToPeer.Cloud>, nearest to the peer named in this <xref:System.Net.PeerToPeer.PeerNameRecord>. These are the ones with which this peer communicates directly, rather than through an intermediary. For each endpoint an IP address and port must be provided.  The maximum number of endpoints that can be provided is ten.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -218,10 +218,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.PeerNameRecord" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An object of type <xref:System.Net.PeerToPeer.PeerNameRecord>, whose name is the fully qualified name of the <xref:System.Net.PeerToPeer.PeerName> object within it.  
-  
+An object of type <xref:System.Net.PeerToPeer.PeerNameRecord>, whose name is the fully qualified name of the <xref:System.Net.PeerToPeer.PeerName> object within it.  
+ 
  ]]></format>
         </remarks>
       </Docs>

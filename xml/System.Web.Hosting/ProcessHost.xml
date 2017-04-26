@@ -30,10 +30,10 @@
     <summary>Represents a process host.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Hosting.ProcessHost> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Hosting.ProcessHost> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -79,10 +79,10 @@
         <returns>Returns a <see langword="null" /> value to indicate that the lease never expires.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Hosting.ProcessHost.InitializeLifetimeService%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Hosting.ProcessHost.InitializeLifetimeService%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -107,10 +107,10 @@
           <see langword="true" /> if the process host is idle; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Hosting.ProcessHost.IsIdle%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Hosting.ProcessHost.IsIdle%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -136,10 +136,10 @@
         <summary>Pings a process.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Hosting.ProcessHost.Ping%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Hosting.ProcessHost.Ping%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -170,13 +170,13 @@
         <summary>Notifies ASP.NET that a particular application that is running on [!INCLUDE[iisver](~/includes/iisver-md.md)] is configured to be preloaded.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method implements the <xref:System.Web.Hosting.IApplicationPreloadManager.SetApplicationPreloadState%2A> method of the <xref:System.Web.Hosting.IApplicationPreloadManager> interface. [!INCLUDE[iisver](~/includes/iisver-md.md)] calls the <xref:System.Web.Hosting.IApplicationPreloadManager.SetApplicationPreloadState%2A> method to notify ASP.NET whether the application that is being loaded supports preloading.  
-  
+This method implements the <xref:System.Web.Hosting.IApplicationPreloadManager.SetApplicationPreloadState%2A> method of the <xref:System.Web.Hosting.IApplicationPreloadManager> interface. [!INCLUDE[iisver](~/includes/iisver-md.md)] calls the <xref:System.Web.Hosting.IApplicationPreloadManager.SetApplicationPreloadState%2A> method to notify ASP.NET whether the application that is being loaded supports preloading.  
+ 
 > [!NOTE]
 >  This method applies only to applications that run on [!INCLUDE[iisver](~/includes/iisver-md.md)].  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -204,13 +204,13 @@
         <summary>Creates a type that calls [!INCLUDE[iisver](~/includes/iisver-md.md)] to get information that is required in order to preload an application.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method implements the <xref:System.Web.Hosting.IApplicationPreloadManager.SetApplicationPreloadUtil%2A> method of the <xref:System.Web.Hosting.IApplicationPreloadManager> interface. The method creates an instance of the <xref:System.Web.Hosting.IApplicationPreloadUtil> type, which calls into [!INCLUDE[iisver](~/includes/iisver-md.md)] to get preloading information.  
-  
+This method implements the <xref:System.Web.Hosting.IApplicationPreloadManager.SetApplicationPreloadUtil%2A> method of the <xref:System.Web.Hosting.IApplicationPreloadManager> interface. The method creates an instance of the <xref:System.Web.Hosting.IApplicationPreloadUtil> type, which calls into [!INCLUDE[iisver](~/includes/iisver-md.md)] to get preloading information.  
+ 
 > [!NOTE]
 >  This method applies only to applications that run on [!INCLUDE[iisver](~/includes/iisver-md.md)].  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.Hosting.IApplicationPreloadUtil" /> instance that contains information for preloading the application is not <see langword="null" />.</exception>
@@ -256,10 +256,10 @@
         <summary>Shuts down the specified application.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Hosting.ProcessHost.ShutdownApplication%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Hosting.ProcessHost.ShutdownApplication%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -365,10 +365,10 @@
         <summary>Stops an application domain protocol listener channel.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Hosting.ProcessHost.StopAppDomainProtocol%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Hosting.ProcessHost.StopAppDomainProtocol%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -424,10 +424,10 @@
         <summary>Stops a process protocol.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.Hosting.ProcessHost.StopProcessProtocol%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
+<xref:System.Web.Hosting.ProcessHost.StopProcessProtocol%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

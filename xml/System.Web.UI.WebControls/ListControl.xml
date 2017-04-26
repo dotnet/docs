@@ -35,29 +35,29 @@
     <summary>Serves as the abstract base class that defines the properties, methods, and events common for all list-type controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An instance of the <xref:System.Web.UI.WebControls.ListControl> abstract class cannot be created directly. Instead, this class is inherited by other classes, such as the <xref:System.Web.UI.WebControls.CheckBoxList>, <xref:System.Web.UI.WebControls.DropDownList>, <xref:System.Web.UI.WebControls.ListBox>, and <xref:System.Web.UI.WebControls.RadioButtonList> classes, to provide common basic functionality.  
+An instance of the <xref:System.Web.UI.WebControls.ListControl> abstract class cannot be created directly. Instead, this class is inherited by other classes, such as the <xref:System.Web.UI.WebControls.CheckBoxList>, <xref:System.Web.UI.WebControls.DropDownList>, <xref:System.Web.UI.WebControls.ListBox>, and <xref:System.Web.UI.WebControls.RadioButtonList> classes, to provide common basic functionality.  
+ 
+The properties of the <xref:System.Web.UI.WebControls.ListControl> class allow you to specify the source of the data to populate the list control. Use the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property to specify the data source to bind to the list control. If the data source contains more than one table, use the <xref:System.Web.UI.WebControls.DataBoundControl.DataMember%2A> property to specify the table to use. You can bind different fields in the data source to the <xref:System.Web.UI.WebControls.ListItem.Text%2A?displayProperty=fullName> and <xref:System.Web.UI.WebControls.ListItem.Value%2A?displayProperty=fullName> properties of the items in the list control by setting the <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> and <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> properties, respectively. The text displayed for each item in the list control can by formatted by setting the <xref:System.Web.UI.WebControls.ListControl.DataTextFormatString%2A> property.  
+ 
+All items displayed in the list control are stored in the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection. You can programmatically specify or determine the index of a selected item in the list control by using the <xref:System.Web.UI.WebControls.ListControl.SelectedIndex%2A> property. The properties of the selected item can be accessed by using the <xref:System.Web.UI.WebControls.ListControl.SelectedItem%2A> property.  
+ 
+The <xref:System.Web.UI.WebControls.ListControl> class provides the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event, which is raised when the selection in the list control changes between posts to the server. This allows you to provide a custom handler for this event. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
+The <xref:System.Web.UI.WebControls.ListControl> class implements the <xref:System.Web.UI.IEditableTextControl> interface so that derived list-type controls can be used in the template mode of other controls.  
+ 
   
- The properties of the <xref:System.Web.UI.WebControls.ListControl> class allow you to specify the source of the data to populate the list control. Use the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property to specify the data source to bind to the list control. If the data source contains more than one table, use the <xref:System.Web.UI.WebControls.DataBoundControl.DataMember%2A> property to specify the table to use. You can bind different fields in the data source to the <xref:System.Web.UI.WebControls.ListItem.Text%2A?displayProperty=fullName> and <xref:System.Web.UI.WebControls.ListItem.Value%2A?displayProperty=fullName> properties of the items in the list control by setting the <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> and <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> properties, respectively. The text displayed for each item in the list control can by formatted by setting the <xref:System.Web.UI.WebControls.ListControl.DataTextFormatString%2A> property.  
-  
- All items displayed in the list control are stored in the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection. You can programmatically specify or determine the index of a selected item in the list control by using the <xref:System.Web.UI.WebControls.ListControl.SelectedIndex%2A> property. The properties of the selected item can be accessed by using the <xref:System.Web.UI.WebControls.ListControl.SelectedItem%2A> property.  
-  
- The <xref:System.Web.UI.WebControls.ListControl> class provides the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event, which is raised when the selection in the list control changes between posts to the server. This allows you to provide a custom handler for this event. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- The <xref:System.Web.UI.WebControls.ListControl> class implements the <xref:System.Web.UI.IEditableTextControl> interface so that derived list-type controls can be used in the template mode of other controls.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to select items in a <xref:System.Web.UI.WebControls.ListBox> control. If the item is found in the text box, the item is selected and a message is displayed stating the name of the selected item. If the item is not found, no item is selected and a message is displayed stating that the item was not found.  
-  
+The following code example demonstrates how to select items in a <xref:System.Web.UI.WebControls.ListBox> control. If the item is found in the text box, the item is selected and a message is displayed stating the name of the selected item. If the item is not found, no item is selected and a message is displayed stating that the item was not found.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[ListControlSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlSelectedValue/CS/listcontrolselectedvaluecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlSelectedValue/VB/listcontrolselectedvaluevb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ListControlSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlSelectedValue/CS/listcontrolselectedvaluecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[ListControlSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlSelectedValue/VB/listcontrolselectedvaluevb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -76,15 +76,15 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ListControl" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to programmatically  
-  
- create a <xref:System.Web.UI.WebControls.ListBox> control. The example uses a <xref:System.Web.UI.WebControls.PlaceHolder> control as a container for the <xref:System.Web.UI.WebControls.ListBox>.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ListControlctor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlctor/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlctor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlctor/VB/sourcevb.aspx#1)]  -->  
-  
+The following code example demonstrates how to programmatically  
+ 
+create a <xref:System.Web.UI.WebControls.ListBox> control. The example uses a <xref:System.Web.UI.WebControls.PlaceHolder> control as a container for the <xref:System.Web.UI.WebControls.ListBox>.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ListControlctor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlctor/CS/sourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[ListControlctor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlctor/VB/sourcevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,10 +109,10 @@
         <summary>Applies HTML attributes and styles to render to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListControl.AddAttributesToRender%2A> method is used primarily by control developers to insert the additional attributes and styles into the <xref:System.Web.UI.HtmlTextWriter> output stream for controls that are derived from the <xref:System.Web.UI.WebControls.ListControl> class.  
-  
+The <xref:System.Web.UI.WebControls.ListControl.AddAttributesToRender%2A> method is used primarily by control developers to insert the additional attributes and styles into the <xref:System.Web.UI.HtmlTextWriter> output stream for controls that are derived from the <xref:System.Web.UI.WebControls.ListControl> class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -146,22 +146,22 @@
           <see langword="true" /> if list items are not cleared before data binding; otherwise, <see langword="false" />, if the items collection is cleared before data binding is performed. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListControl.AppendDataBoundItems%2A> property allows you to add items to the <xref:System.Web.UI.WebControls.ListControl> object before data binding occurs. After data binding, the items collection contains both the items from the data source and the previously added items.  
+The <xref:System.Web.UI.WebControls.ListControl.AppendDataBoundItems%2A> property allows you to add items to the <xref:System.Web.UI.WebControls.ListControl> object before data binding occurs. After data binding, the items collection contains both the items from the data source and the previously added items.  
+ 
+The value of this property is stored in view state.  
+ 
+This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ 
   
- The value of this property is stored in view state.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to include both data-bound items and items that are not data-bound in a <xref:System.Web.UI.WebControls.ListBox> control. In the <xref:System.Web.UI.Control.Load> event for the <xref:System.Web.UI.Page>, one item is added to the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection and the <xref:System.Web.UI.WebControls.ListControl.AppendDataBoundItems%2A> property is set to `true`. Then, the <xref:System.Web.UI.WebControls.ListBox> control is bound to a <xref:System.Data.DataTable> control. The resulting <xref:System.Web.UI.WebControls.ListBox> control contains both the data-bound items and the item that was added individually.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ListControlAppendDataBoundItems#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlAppendDataBoundItems/CS/AppendItemsCs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlAppendDataBoundItems#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlAppendDataBoundItems/VB/AppendItemsVb.aspx#1)]  -->  
-  
+The following code example demonstrates how to include both data-bound items and items that are not data-bound in a <xref:System.Web.UI.WebControls.ListBox> control. In the <xref:System.Web.UI.Control.Load> event for the <xref:System.Web.UI.Page>, one item is added to the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection and the <xref:System.Web.UI.WebControls.ListControl.AppendDataBoundItems%2A> property is set to `true`. Then, the <xref:System.Web.UI.WebControls.ListBox> control is bound to a <xref:System.Data.DataTable> control. The resulting <xref:System.Web.UI.WebControls.ListBox> control contains both the data-bound items and the item that was added individually.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ListControlAppendDataBoundItems#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlAppendDataBoundItems/CS/AppendItemsCs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[ListControlAppendDataBoundItems#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlAppendDataBoundItems/VB/AppendItemsVb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,24 +192,24 @@
           <see langword="true" /> if a postback to the server automatically occurs whenever the user changes the selection of the list; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set this property to `true` if the server needs to capture the selection as soon as it is made. For example, other controls on the Web page can be automatically filled depending on the user's selection from a list control.  
+Set this property to `true` if the server needs to capture the selection as soon as it is made. For example, other controls on the Web page can be automatically filled depending on the user's selection from a list control.  
+ 
+This property can be used to allow automatic population of other controls on the Web page based on a user's selection from a list.  
+ 
+The value of this property is stored in view state.  
+ 
+This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ 
   
- This property can be used to allow automatic population of other controls on the Web page based on a user's selection from a list.  
-  
- The value of this property is stored in view state.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to enable <xref:System.Web.UI.WebControls.ListControl.AutoPostBack%2A> for the <xref:System.Web.UI.WebControls.ListBox> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ListControlAutoPostBack#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlAutoPostBack/CS/ListControlAutoPostBackcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlAutoPostBack#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlAutoPostBack/VB/ListControlAutoPostBackvb.aspx#1)]  -->  
-  
+The following example demonstrates how to enable <xref:System.Web.UI.WebControls.ListControl.AutoPostBack%2A> for the <xref:System.Web.UI.WebControls.ListBox> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ListControlAutoPostBack#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlAutoPostBack/CS/ListControlAutoPostBackcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[ListControlAutoPostBack#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlAutoPostBack/VB/ListControlAutoPostBackvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -240,18 +240,18 @@
           <see langword="true" /> if validation is performed when the <see cref="T:System.Web.UI.WebControls.ListControl" /> control is clicked; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.ListControl.CausesValidation%2A> property to determine whether validation is performed when a <xref:System.Web.UI.WebControls.ListControl> control is clicked. Page validation determines whether the input controls that are associated with a validation control on the page all pass the validation rules that are specified by the validation control.  
-  
- By default, clicking a control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class does not cause page validation. To perform page validation when the control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class is clicked, set the <xref:System.Web.UI.WebControls.ListControl.CausesValidation%2A> property to `true`.  
-  
- When the value of the <xref:System.Web.UI.WebControls.ListControl.CausesValidation%2A> property is set to `true`, you can also use the <xref:System.Web.UI.WebControls.ListControl.ValidationGroup%2A> property to specify the name of the validation group for which the <xref:System.Web.UI.WebControls.ListControl> control causes validation.  
-  
- The value of this property is stored in view state.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
-  
+Use the <xref:System.Web.UI.WebControls.ListControl.CausesValidation%2A> property to determine whether validation is performed when a <xref:System.Web.UI.WebControls.ListControl> control is clicked. Page validation determines whether the input controls that are associated with a validation control on the page all pass the validation rules that are specified by the validation control.  
+ 
+By default, clicking a control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class does not cause page validation. To perform page validation when the control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class is clicked, set the <xref:System.Web.UI.WebControls.ListControl.CausesValidation%2A> property to `true`.  
+ 
+When the value of the <xref:System.Web.UI.WebControls.ListControl.CausesValidation%2A> property is set to `true`, you can also use the <xref:System.Web.UI.WebControls.ListControl.ValidationGroup%2A> property to specify the name of the validation group for which the <xref:System.Web.UI.WebControls.ListControl> control causes validation.  
+ 
+The value of this property is stored in view state.  
+ 
+This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -273,10 +273,10 @@
         <summary>Clears out the list selection and sets the <see cref="P:System.Web.UI.WebControls.ListItem.Selected" /> property of all items to false.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to reset the control so that no items are selected.  
-  
+Use this method to reset the control so that no items are selected.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -306,22 +306,22 @@
         <value>The field of the data source that provides the text content of the list items. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to specify a field in the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property to display as the items of the list in a list control.  
+Use this property to specify a field in the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property to display as the items of the list in a list control.  
+ 
+The value of this property is stored in view state.  
+ 
+This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ 
   
- The value of this property is stored in view state.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to specify the <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> for the <xref:System.Web.UI.WebControls.RadioButtonList> control. The <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> is the text that is displayed in the <xref:System.Web.UI.WebControls.RadioButtonList>.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  -->  
-  
+The following example demonstrates how to specify the <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> for the <xref:System.Web.UI.WebControls.RadioButtonList> control. The <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> is the text that is displayed in the <xref:System.Web.UI.WebControls.RadioButtonList>.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,22 +351,22 @@
         <value>The formatting string for data bound to the control. The default value is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.ListControl.DataTextFormatString%2A> property to provide a custom display format the items in a list control.  
-  
- The data format string consists of two parts, separated by a colon, in the form { `A` : `Bxx` }. For example, the formatting string {0:F2} would format the cell to display a fixed point number with two decimal places.  
-  
+Use the <xref:System.Web.UI.WebControls.ListControl.DataTextFormatString%2A> property to provide a custom display format the items in a list control.  
+ 
+The data format string consists of two parts, separated by a colon, in the form { `A` : `Bxx` }. For example, the formatting string {0:F2} would format the cell to display a fixed point number with two decimal places.  
+ 
 > [!NOTE]
 >  The entire string must be enclosed in braces to indicate that it is a format string and not a literal string. Any text outside the braces is displayed as literal text.  
-  
- The value before the colon (`A` in the general example) specifies the parameter index in a zero-based list of parameters.  
-  
+ 
+The value before the colon (`A` in the general example) specifies the parameter index in a zero-based list of parameters.  
+ 
 > [!NOTE]
 >  This value can only be set to 0 because there is only one value in each cell.  
-  
- The character after the colon (`B` in the general example) specifies the format to display the value in. The following table lists the common formats.  
-  
+ 
+The character after the colon (`B` in the general example) specifies the format to display the value in. The following table lists the common formats.  
+ 
 |Format character|Description|  
 |----------------------|-----------------|  
 |`C`|Displays numeric values in currency format.|  
@@ -376,14 +376,14 @@
 |`G`|Displays numeric values in general format.|  
 |`N`|Displays numeric values in number format.|  
 |`X`|Displays numeric values in hexadecimal format.|  
-  
+ 
 > [!NOTE]
 >  The format character is not case-sensitive, except for `X`, which displays the hexadecimal characters in the case specified.  
-  
- The value after the format character (`xx` in the general example) specifies the number of significant digits or decimal places to display.  
-  
- The following table contains examples of formatting strings and the results. It assumes standard English settings.  
-  
+ 
+The value after the format character (`xx` in the general example) specifies the number of significant digits or decimal places to display.  
+ 
+The following table contains examples of formatting strings and the results. It assumes standard English settings.  
+ 
 |Numeric Value|Format String|Result|  
 |-------------------|-------------------|------------|  
 |12345.6789|"{0:C}"|$12,345.68|  
@@ -399,13 +399,13 @@
 |12345.6789|"{0:N}"|12,345.68|  
 |123456789|"{0:N4}"|123,456,789.0000|  
 |12345.6789|"Total: {0:C}"|Total: $12345.68|  
-  
- For more information on formatting strings, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
-  
- The value of this property is stored in view state.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
-  
+ 
+For more information on formatting strings, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+ 
+The value of this property is stored in view state.  
+ 
+This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -435,22 +435,22 @@
         <value>The field of the data source that provides the value of each list item. The default is <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to specify the field that contains the value of each item in a list control.  
+Use this property to specify the field that contains the value of each item in a list control.  
+ 
+The value of this property is stored in view state.  
+ 
+This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ 
   
- The value of this property is stored in view state.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to specify the <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> for the <xref:System.Web.UI.WebControls.RadioButtonList> control. The <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> is the value for the each item in the <xref:System.Web.UI.WebControls.RadioButtonList>.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  -->  
-  
+The following example demonstrates how to specify the <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> for the <xref:System.Web.UI.WebControls.RadioButtonList> control. The <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> is the value for the each item in the <xref:System.Web.UI.WebControls.RadioButtonList>.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -486,18 +486,18 @@
         <value>The items within the list. The default is an empty list.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to get the properties of items in the list control. This property can be used to determine the selected items in the list control.  
+Use this property to get the properties of items in the list control. This property can be used to determine the selected items in the list control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ListControl.Items%2A> property to determine the selected items in a <xref:System.Web.UI.WebControls.CheckBoxList> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ListControlItems#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlItems/CS/ListControlItemscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlItems#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlItems/VB/ListControlItemsvb.aspx#1)]  -->  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ListControl.Items%2A> property to determine the selected items in a <xref:System.Web.UI.WebControls.CheckBoxList> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ListControlItems#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlItems/CS/ListControlItemscs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[ListControlItems#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlItems/VB/ListControlItemsvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -522,13 +522,13 @@
         <summary>Loads the previously saved view state of the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListControl.LoadViewState%2A> method is used to load the previously saved view state of the <xref:System.Web.UI.WebControls.ListControl> -derived control.  
-  
+The <xref:System.Web.UI.WebControls.ListControl.LoadViewState%2A> method is used to load the previously saved view state of the <xref:System.Web.UI.WebControls.ListControl> -derived control.  
+ 
 > [!NOTE]
 >  This method is used primarily by control developers when extending the <xref:System.Web.UI.WebControls.ListControl> control.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -574,12 +574,12 @@
         <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method notifies the server control to perform any necessary prerendering steps prior to saving view state and rendering content .It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.ListControl> class.  
-  
- The <xref:System.Web.UI.WebControls.ListControl.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+This method notifies the server control to perform any necessary prerendering steps prior to saving view state and rendering content .It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.ListControl> class.  
+ 
+The <xref:System.Web.UI.WebControls.ListControl.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -607,25 +607,25 @@
         <summary>Raises the <see cref="E:System.Web.UI.WebControls.ListControl.SelectedIndexChanged" /> event. This allows you to provide a custom handler for the event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event is raised when the selection from the list control changes between posts to the server.  
-  
+The <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event is raised when the selection from the list control changes between posts to the server.  
+ 
 > [!NOTE]
 >  A list control must persist some values between posts to the server for this event to work correctly. Be sure that view state is enabled for the list control.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
+The <xref:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- The <xref:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event to display the selection made by the user.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  -->  
-  
+The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event to display the selection made by the user.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -653,12 +653,12 @@
         <summary>Raises the <see cref="E:System.Web.UI.WebControls.ListControl.TextChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListControl.OnTextChanged%2A> method is called by the control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class to raise the <xref:System.Web.UI.WebControls.ListControl.TextChanged> event. Generally, the <xref:System.Web.UI.WebControls.ListControl.OnTextChanged%2A> method is used by control developers when extending the <xref:System.Web.UI.WebControls.ListControl> class.  
-  
- The <xref:System.Web.UI.WebControls.ListControl.OnTextChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+The <xref:System.Web.UI.WebControls.ListControl.OnTextChanged%2A> method is called by the control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class to raise the <xref:System.Web.UI.WebControls.ListControl.TextChanged> event. Generally, the <xref:System.Web.UI.WebControls.ListControl.OnTextChanged%2A> method is used by control developers when extending the <xref:System.Web.UI.WebControls.ListControl> class.  
+ 
+The <xref:System.Web.UI.WebControls.ListControl.OnTextChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -686,10 +686,10 @@
         <summary>Binds the specified data source to the control that is derived from the <see cref="T:System.Web.UI.WebControls.ListControl" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListControl.PerformDataBinding%2A> method is a helper method that is called by the control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class to bind the specified data source to the control.  
-  
+The <xref:System.Web.UI.WebControls.ListControl.PerformDataBinding%2A> method is a helper method that is called by the control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class to bind the specified data source to the control.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The cached value of <see cref="P:System.Web.UI.WebControls.ListControl.SelectedIndex" /> is out of range.</exception>
@@ -713,10 +713,10 @@
         <summary>Retrieves data from the associated data source.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListControl.PerformSelect%2A> method calls the <xref:System.Web.UI.WebControls.ListControl.PerformDataBinding%2A> method after data is retrieved to bind data to elements of the data-bound control. For more information, see <xref:System.Web.UI.WebControls.DataBoundControl.PerformSelect%2A?displayProperty=fullName>.  
-  
+The <xref:System.Web.UI.WebControls.ListControl.PerformSelect%2A> method calls the <xref:System.Web.UI.WebControls.ListControl.PerformDataBinding%2A> method after data is retrieved to bind data to elements of the data-bound control. For more information, see <xref:System.Web.UI.WebControls.DataBoundControl.PerformSelect%2A?displayProperty=fullName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -741,10 +741,10 @@
         <summary>Renders the items in the <see cref="T:System.Web.UI.WebControls.ListControl" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.ListControl.RenderContents%2A> method to render the items in the <xref:System.Web.UI.WebControls.ListControl> control to the client.  
-  
+Use the <xref:System.Web.UI.WebControls.ListControl.RenderContents%2A> method to render the items in the <xref:System.Web.UI.WebControls.ListControl> control to the client.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -767,13 +767,13 @@
         <returns>An <see cref="T:System.Object" /> that contains the saved state of the <see cref="T:System.Web.UI.WebControls.ListControl" /> control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DetailsView.SaveViewState%2A> method is a helper method called by the <xref:System.Web.UI.WebControls.ListControl> control to save the state of the control.  
-  
+The <xref:System.Web.UI.WebControls.DetailsView.SaveViewState%2A> method is a helper method called by the <xref:System.Web.UI.WebControls.ListControl> control to save the state of the control.  
+ 
 > [!NOTE]
 >  This method is used primarily by control developers when extending the <xref:System.Web.UI.WebControls.ListControl> control.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -812,22 +812,22 @@
         <value>The lowest ordinal index of the selected items in the list. The default is -1, which indicates that nothing is selected.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to determine the index of the currently selected item in the list if the list control allows only one selection. If the list control supports multiple selections, use this property to determine the lowest index of the selected items.  
+Use this property to determine the index of the currently selected item in the list if the list control allows only one selection. If the list control supports multiple selections, use this property to determine the lowest index of the selected items.  
+ 
+The value of the <xref:System.Web.UI.WebControls.ListControl.SelectedIndex%2A> property is not specifically saved on postback. It is restored on postback using the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property. For example, if the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property is 4, on postback, the <xref:System.Web.UI.WebControls.ListControl.SelectedIndex%2A> property is set to the index of the <xref:System.Web.UI.WebControls.ListItem> object that has a <xref:System.Web.UI.WebControls.ListItem.Value%2A> property of 4. If more than one <xref:System.Web.UI.WebControls.ListItem> object has a <xref:System.Web.UI.WebControls.ListItem.Value%2A> property of 4, the first item in the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection is selected.  
+ 
+This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ 
   
- The value of the <xref:System.Web.UI.WebControls.ListControl.SelectedIndex%2A> property is not specifically saved on postback. It is restored on postback using the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property. For example, if the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property is 4, on postback, the <xref:System.Web.UI.WebControls.ListControl.SelectedIndex%2A> property is set to the index of the <xref:System.Web.UI.WebControls.ListItem> object that has a <xref:System.Web.UI.WebControls.ListItem.Value%2A> property of 4. If more than one <xref:System.Web.UI.WebControls.ListItem> object has a <xref:System.Web.UI.WebControls.ListItem.Value%2A> property of 4, the first item in the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection is selected.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use <xref:System.Web.UI.WebControls.ListControl.SelectedIndex%2A> to determine the lowest index of the selected items in the <xref:System.Web.UI.WebControls.CheckBoxList>.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ListControlSelectedIndex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlSelectedIndex/CS/ListControlSelectedIndexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlSelectedIndex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlSelectedIndex/VB/ListControlSelectedIndexvb.aspx#1)]  -->  
-  
+The following example demonstrates how to use <xref:System.Web.UI.WebControls.ListControl.SelectedIndex%2A> to determine the lowest index of the selected items in the <xref:System.Web.UI.WebControls.CheckBoxList>.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ListControlSelectedIndex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlSelectedIndex/CS/ListControlSelectedIndexcs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[ListControlSelectedIndex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlSelectedIndex/VB/ListControlSelectedIndexvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The index was set to less than -1, or greater than or equal to the number of items on the list at the time the list is rendered.</exception>
@@ -849,23 +849,23 @@
         <summary>Occurs when the selection from the list control changes between posts to the server.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event is raised when the selection from the list control changes between posts to the server.  
-  
+The <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event is raised when the selection from the list control changes between posts to the server.  
+ 
 > [!NOTE]
 >  A list control must persist some values between posts to the server for this event to work correctly. Be sure that view state is enabled for the list control.  
+ 
+For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event to display the selection made by the user.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  -->  
-  
+The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event to display the selection made by the user.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -898,18 +898,18 @@
         <value>The lowest indexed item selected from the list control. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the list control allows only a single selection, use this property to get the individual properties of the selected item. If the list control allows multiple selections, use this property to get the properties of the lowest indexed item selected from the list control.  
+If the list control allows only a single selection, use this property to get the individual properties of the selected item. If the list control allows multiple selections, use this property to get the properties of the lowest indexed item selected from the list control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use <xref:System.Web.UI.WebControls.ListControl.SelectedItem%2A> to get the individual properties of the currently selected item in the <xref:System.Web.UI.WebControls.RadioButtonList> and to display that item and its value.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  -->  
-  
+The following example demonstrates how to use <xref:System.Web.UI.WebControls.ListControl.SelectedItem%2A> to get the individual properties of the currently selected item in the <xref:System.Web.UI.WebControls.RadioButtonList> and to display that item and its value.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ListControlDataSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDataSource/CS/ListControlDataSourcecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[ListControlDataSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDataSource/VB/ListControlDataSourcevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -948,41 +948,41 @@
         <value>The value of the selected item in the list control. The default is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the <xref:System.Web.UI.WebControls.ListItem.Value%2A> property of the selected <xref:System.Web.UI.WebControls.ListItem>. The <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property is commonly used to determine the value of the selected item in the list control. If multiple items are selected, the value of the selected item with the lowest index is returned. If no item is selected, an empty string ("") is returned.  
-  
- The <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property can also be used to select an item in the list control by setting it with the value of the item.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
-  
- When the selected value is not in the list of available values and a postback is performed, an <xref:System.ArgumentOutOfRangeException> exception is thrown. The following example shows how to catch an invalid value before postback occurs:  
-  
+This property returns the <xref:System.Web.UI.WebControls.ListItem.Value%2A> property of the selected <xref:System.Web.UI.WebControls.ListItem>. The <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property is commonly used to determine the value of the selected item in the list control. If multiple items are selected, the value of the selected item with the lowest index is returned. If no item is selected, an empty string ("") is returned.  
+ 
+The <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property can also be used to select an item in the list control by setting it with the value of the item.  
+ 
+This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ 
+When the selected value is not in the list of available values and a postback is performed, an <xref:System.ArgumentOutOfRangeException> exception is thrown. The following example shows how to catch an invalid value before postback occurs:  
+ 
 ```vb  
 Me.DropDownList1.Items.Add(New ListItem( Text="Hello", Value="1" ))   
 If DropDownList1.Items.FindByValue("2") IsNot Nothing Then   
     Response.Write("Found")   
 End If  
 ```  
-  
+ 
 ```csharp  
 this.DropDownList1.Items.Add(new ListItem{ Text="Hello", Value="1" });  
 if(DropDownList1.Items.FindByValue("2") != null) {  
     Response.Write("Found");  
 }  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property to select an item in a <xref:System.Web.UI.WebControls.ListBox> control. Notice that this property can also be used to retrieve the value of the selected item.  
-  
+The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property to select an item in a <xref:System.Web.UI.WebControls.ListBox> control. Notice that this property can also be used to retrieve the value of the selected item.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[ListControlSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlSelectedValue/CS/listcontrolselectedvaluecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListControlSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlSelectedValue/VB/listcontrolselectedvaluevb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ListControlSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlSelectedValue/CS/listcontrolselectedvaluecs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[ListControlSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlSelectedValue/VB/listcontrolselectedvaluevb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not in the list of available values and view state or other state has been loaded (a postback has been performed). For more information, see the Remarks section.</exception>
@@ -1008,10 +1008,10 @@ if(DropDownList1.Items.FindByValue("2") != null) {
         <summary>Sets the <see cref="P:System.Web.UI.WebControls.ListItem.Selected" /> property of a <see cref="T:System.Web.UI.WebControls.ListItem" /> control after a page is posted.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListControl.SetPostDataSelection%2A> method is a helper method that maintains the selected item in the <xref:System.Web.UI.WebControls.ListControl> control after a page is posted.  
-  
+The <xref:System.Web.UI.WebControls.ListControl.SetPostDataSelection%2A> method is a helper method that maintains the selected item in the <xref:System.Web.UI.WebControls.ListControl> control after a page is posted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1033,10 +1033,10 @@ if(DropDownList1.Items.FindByValue("2") != null) {
         <value>The <see cref="T:System.Web.UI.HtmlTextWriterTag" /> value for the <see cref="T:System.Web.UI.WebControls.ListControl" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListControl.TagKey%2A> property allows the output stream to write the appropriate HTML markup for the control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class.  
-  
+The <xref:System.Web.UI.WebControls.ListControl.TagKey%2A> property allows the output stream to write the appropriate HTML markup for the control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1075,18 +1075,18 @@ if(DropDownList1.Items.FindByValue("2") != null) {
         <value>The <see cref="P:System.Web.UI.WebControls.ListControl.SelectedValue" /> of the <see cref="T:System.Web.UI.WebControls.ListControl" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListControl.Text%2A> property gets and sets the same value that the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A>e property does.  
-  
- The <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property is commonly used to determine the value of the selected item in the <xref:System.Web.UI.WebControls.ListControl> control. If no item is selected, an empty string ("") is returned.  
-  
- You can also use the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property to select an item in the <xref:System.Web.UI.WebControls.ListControl> control by setting it with the value of the item. If no items in the <xref:System.Web.UI.WebControls.ListControl> control contain the specified value, an <xref:System.ArgumentOutOfRangeException?displayProperty=fullName> exception is thrown.  
-  
- Control developers can override the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property to support features that are not related to the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
-  
+The <xref:System.Web.UI.WebControls.ListControl.Text%2A> property gets and sets the same value that the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A>e property does.  
+ 
+The <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property is commonly used to determine the value of the selected item in the <xref:System.Web.UI.WebControls.ListControl> control. If no item is selected, an empty string ("") is returned.  
+ 
+You can also use the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property to select an item in the <xref:System.Web.UI.WebControls.ListControl> control by setting it with the value of the item. If no items in the <xref:System.Web.UI.WebControls.ListControl> control contain the specified value, an <xref:System.ArgumentOutOfRangeException?displayProperty=fullName> exception is thrown.  
+ 
+Control developers can override the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property to support features that are not related to the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property.  
+ 
+This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1107,14 +1107,14 @@ if(DropDownList1.Items.FindByValue("2") != null) {
         <summary>Occurs when the <see cref="P:System.Web.UI.WebControls.ListControl.Text" /> and <see cref="P:System.Web.UI.WebControls.ListControl.SelectedValue" /> properties change.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListControl.TextChanged> event is raised when the <xref:System.Web.UI.WebControls.ListControl.Text%2A> and <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> properties change.  
-  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- The <xref:System.Web.UI.WebControls.ListControl.OnTextChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+The <xref:System.Web.UI.WebControls.ListControl.TextChanged> event is raised when the <xref:System.Web.UI.WebControls.ListControl.Text%2A> and <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> properties change.  
+ 
+Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
+The <xref:System.Web.UI.WebControls.ListControl.OnTextChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -1139,13 +1139,13 @@ if(DropDownList1.Items.FindByValue("2") != null) {
         <summary>Marks the starting point to begin tracking and saving view-state changes to a <see cref="T:System.Web.UI.WebControls.ListControl" /> -derived control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is overridden to mark the starting point to begin tracking and saving changes to the control as part of the control's view state.  
-  
+This method is overridden to mark the starting point to begin tracking and saving changes to the control as part of the control's view state.  
+ 
 > [!NOTE]
 >  This method is used primarily by control developers when extending <xref:System.Web.UI.WebControls.ListControl>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1175,16 +1175,16 @@ if(DropDownList1.Items.FindByValue("2") != null) {
         <value>The group of controls for which the derived <see cref="T:System.Web.UI.WebControls.ListControl" /> causes validation when it posts back to the server. The default is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Validation groups allow you to assign validation controls on a page to a specific category. Each validation group can be validated independently from other validation groups on the page. Use the <xref:System.Web.UI.WebControls.ListControl.ValidationGroup%2A> property to specify the name of the validation group for which the control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class causes validation when it posts back to the server.  
-  
- The <xref:System.Web.UI.WebControls.ListControl.ValidationGroup%2A> property has an effect only when the value of the <xref:System.Web.UI.WebControls.ListControl.CausesValidation%2A> property is set to `true`. When you specify a value for the <xref:System.Web.UI.WebControls.ListControl.ValidationGroup%2A> property, only the validation controls that are part of the specified group are validated when the <xref:System.Web.UI.WebControls.ListControl> control posts back to the server. If you do not specify a value for the <xref:System.Web.UI.WebControls.ListControl.ValidationGroup%2A> property and the <xref:System.Web.UI.WebControls.ListControl.CausesValidation%2A> property is set to `true`, all validation controls on the page that are not assigned to a validation group are validated when the control posts back to the server.  
-  
- The value of this property is stored in view state.  
-  
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
-  
+Validation groups allow you to assign validation controls on a page to a specific category. Each validation group can be validated independently from other validation groups on the page. Use the <xref:System.Web.UI.WebControls.ListControl.ValidationGroup%2A> property to specify the name of the validation group for which the control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class causes validation when it posts back to the server.  
+ 
+The <xref:System.Web.UI.WebControls.ListControl.ValidationGroup%2A> property has an effect only when the value of the <xref:System.Web.UI.WebControls.ListControl.CausesValidation%2A> property is set to `true`. When you specify a value for the <xref:System.Web.UI.WebControls.ListControl.ValidationGroup%2A> property, only the validation controls that are part of the specified group are validated when the <xref:System.Web.UI.WebControls.ListControl> control posts back to the server. If you do not specify a value for the <xref:System.Web.UI.WebControls.ListControl.ValidationGroup%2A> property and the <xref:System.Web.UI.WebControls.ListControl.CausesValidation%2A> property is set to `true`, all validation controls on the page that are not assigned to a validation group are validated when the control posts back to the server.  
+ 
+The value of this property is stored in view state.  
+ 
+This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1206,10 +1206,10 @@ if(DropDownList1.Items.FindByValue("2") != null) {
         <summary>Determines whether the list control supports multiselection mode.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListControl.VerifyMultiSelect%2A> method does nothing if multiselection is supported. Otherwise, it throws an <xref:System.Web.HttpException> exception.  
-  
+The <xref:System.Web.UI.WebControls.ListControl.VerifyMultiSelect%2A> method does nothing if multiselection is supported. Otherwise, it throws an <xref:System.Web.HttpException> exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">

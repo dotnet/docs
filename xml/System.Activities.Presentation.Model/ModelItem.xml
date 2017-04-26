@@ -18,20 +18,20 @@
     <summary>Represents a single item in the editing model. An item can be anything from a complex data structure down to a color or integer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can access the item’s properties through its <xref:System.Activities.Presentation.Model.ModelItem.Properties%2A> collection and make changes to the values of the properties.  
-  
- A <xref:System.Activities.Presentation.Model.ModelItem> is a wrapper around the underlying data model of the designer. You can access the underlying model through the <xref:System.Activities.Presentation.Model.ModelItem.GetCurrentValue%2A> method.  
-  
+You can access the item’s properties through its <xref:System.Activities.Presentation.Model.ModelItem.Properties%2A> collection and make changes to the values of the properties.  
+ 
+A <xref:System.Activities.Presentation.Model.ModelItem> is a wrapper around the underlying data model of the designer. You can access the underlying model through the <xref:System.Activities.Presentation.Model.ModelItem.GetCurrentValue%2A> method.  
+ 
 > [!NOTE]
 >  Any changes you make to an object returned from the <xref:System.Activities.Presentation.Model.ModelItem.GetCurrentValue%2A> method will not be reflected by the serialization and undo systems of the designer.  
+ 
   
-   
-  
+ 
 ## Examples  
- The <xref:System.Activities.Presentation.Model.ModelItem> can be thought of as a thin proxy for an object at which it points. First define a simple `Animal` object.  
-  
+The <xref:System.Activities.Presentation.Model.ModelItem> can be thought of as a thin proxy for an object at which it points. First define a simple `Animal` object.  
+ 
 ```  
   
 public class Animal  
@@ -54,9 +54,9 @@ public class Location
 }  
   
 ```  
-  
- Secondly, create an instance of that `Animal` and a <xref:System.Activities.Presentation.Model.ModelItem> that is a proxy for it. The object can then be retrieved by calling <xref:System.Activities.Presentation.Model.ModelItem.GetCurrentValue%2A>. The following code also shows how to use other properties defined by <xref:System.Activities.Presentation.Model.ModelItem>.  
-  
+ 
+Secondly, create an instance of that `Animal` and a <xref:System.Activities.Presentation.Model.ModelItem> that is a proxy for it. The object can then be retrieved by calling <xref:System.Activities.Presentation.Model.ModelItem.GetCurrentValue%2A>. The following code also shows how to use other properties defined by <xref:System.Activities.Presentation.Model.ModelItem>.  
+ 
 ```  
   
 EditingContext ec = new EditingContext();  
@@ -99,7 +99,7 @@ ModelItem location = root.Properties["Residence"].Value;
 Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to the right place");  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -155,12 +155,12 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
         <returns>A <see cref="T:System.Activities.Presentation.Model.ModelEditingScope" />, which must be either completed or reverted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An editing scope allows multiple changes to the model to be applied as a single transaction. All of the changes made within the editing scope can be reverted at any time before the transaction is completed.  
-  
- Editing scopes are global to the designer. An editing scope can be created for any item in the designer; you do not need to create an editing scope for the specific item you are changing.  
-  
+An editing scope allows multiple changes to the model to be applied as a single transaction. All of the changes made within the editing scope can be reverted at any time before the transaction is completed.  
+ 
+Editing scopes are global to the designer. An editing scope can be created for any item in the designer; you do not need to create an editing scope for the specific item you are changing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -209,12 +209,12 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
         <returns>A <see cref="T:System.Activities.Presentation.Model.ModelEditingScope" />, which must be either completed or reverted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An editing scope allows multiple changes to the model to be applied as a single transaction. All of the changes made within the editing scope can be reverted at any time before the transaction is completed.  
-  
- Editing scopes are global to the designer. An editing scope can be created for any item in the designer; you do not need to create an editing scope for the specific item you are changing.  
-  
+An editing scope allows multiple changes to the model to be applied as a single transaction. All of the changes made within the editing scope can be reverted at any time before the transaction is completed.  
+ 
+Editing scopes are global to the designer. An editing scope can be created for any item in the designer; you do not need to create an editing scope for the specific item you are changing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,10 +280,10 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
         <returns>The current value of the underlying model object that the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> is wrapping as an <see cref="T:System.Object" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can inspect this object, but you should not make any changes to it. Changes made to the object returned will not be incorporated into the designer. The <xref:System.Activities.Presentation.Model.ModelItem.GetCurrentValue%2A> method can return either an existing or new cloned instance of the object.  
-  
+You can inspect this object, but you should not make any changes to it. Changes made to the object returned will not be incorporated into the designer. The <xref:System.Activities.Presentation.Model.ModelItem.GetCurrentValue%2A> method can return either an existing or new cloned instance of the object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -323,10 +323,10 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
         <value>The name or ID of the item as a <see cref="T:System.String" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Not all items need to have names, so this might return `null`. Depending on the type of item and where it sits in the hierarchy, it might not always be legal to set the <xref:System.Activities.Presentation.Model.ModelItem.Name%2A> on an item. If the <xref:System.Activities.Presentation.Model.ModelItem.ItemType%2A> of this item declares a `RuntimeNamePropertyAttribute`, the  <xref:System.Activities.Presentation.Model.ModelItem.Name%2A> property is a direct mapping to the property dictated by that attribute.  
-  
+Not all items need to have names, so this might return `null`. Depending on the type of item and where it sits in the hierarchy, it might not always be legal to set the <xref:System.Activities.Presentation.Model.ModelItem.Name%2A> on an item. If the <xref:System.Activities.Presentation.Model.ModelItem.ItemType%2A> of this item declares a `RuntimeNamePropertyAttribute`, the  <xref:System.Activities.Presentation.Model.ModelItem.Name%2A> property is a direct mapping to the property dictated by that attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -384,10 +384,10 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
         <value>A <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" /> that contains the public properties of this item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The set of properties returned might change based on attached properties or changes to the editing scope.  
-  
+The set of properties returned might change based on attached properties or changes to the editing scope.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -408,10 +408,10 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
         <summary>Implements <see langword="INotifyPropertyChanged" />. Use this event to listen for changes to the model. This is also used by the data binding features of WPF.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Disconnect events from items when you are finished with them. Otherwise, you might prevent the garbage collector from disposing of an item that is no longer in use.  
-  
+Disconnect events from items when you are finished with them. Otherwise, you might prevent the garbage collector from disposing of an item that is no longer in use.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -451,10 +451,10 @@ Assert.AreEqual(root.Properties["Residence"], location.Source, "sources point to
         <value>A <see cref="T:System.Activities.Presentation.Model.ModelProperty" /> that indicates the source of this value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the item represents the root of the object graph, this will return `null`. If an item is a member of a collection or dictionary, the property returned from Source will be a pseudo-property provided by the collection or dictionary. For other values, the Source property returns the property where the value was actually set. Therefore, if a value is being inherited, Source allows you to find out who originally provided the value.  
-  
+If the item represents the root of the object graph, this will return `null`. If an item is a member of a collection or dictionary, the property returned from Source will be a pseudo-property provided by the collection or dictionary. For other values, the Source property returns the property where the value was actually set. Therefore, if a value is being inherited, Source allows you to find out who originally provided the value.  
+ 
  ]]></format>
         </remarks>
       </Docs>

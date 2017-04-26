@@ -19,18 +19,18 @@
     <summary>Represents the root class for the Xml schema object model hierarchy and serves as a base class for classes such as the <see cref="T:System.Xml.Schema.XmlSchema" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays each schema object.  
-  
- [!code-cpp[Classic WebData XmlSchemaObject Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaObject Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlSchemaObject Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaObject Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlSchemaObject Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaObject Example/VB/source.vb#1)]  
-  
- The example uses the `example.xsd` file as input.  
-  
- [!code-xml[Classic WebData XmlSchemaObject Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaObject Example/XML/example.xsd#2)]  
-  
+The following example displays each schema object.  
+ 
+[!code-cpp[Classic WebData XmlSchemaObject Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaObject Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlSchemaObject Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaObject Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlSchemaObject Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaObject Example/VB/source.vb#1)]  
+ 
+The example uses the `example.xsd` file as input.  
+ 
+[!code-xml[Classic WebData XmlSchemaObject Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaObject Example/XML/example.xsd#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaObject" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called by derived class constructors to initialize state in this type.  
-  
+This constructor is called by derived class constructors to initialize state in this type.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <value>The line number.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `LineNumber` is used to store the line number when a schema is read from a file. This is reported through <xref:System.Xml.Schema.XmlSchemaException> for error handling.  
-  
+`LineNumber` is used to store the line number when a schema is read from a file. This is reported through <xref:System.Xml.Schema.XmlSchemaException> for error handling.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,10 +124,10 @@
         <value>The line position.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is used to store the line position when a schema is read from a file. This is reported through <xref:System.Xml.Schema.XmlSchemaException> for error handling.  
-  
+This is used to store the line position when a schema is read from a file. This is reported through <xref:System.Xml.Schema.XmlSchemaException> for error handling.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -159,37 +159,37 @@
         <value>The <see cref="T:System.Xml.Serialization.XmlSerializerNamespaces" /> property for the schema object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This gives the Schema Object Model (SOM) the ability to add xmlns declarations. This is useful when you want to declare a prefix to qualify declarations from an imported schema or use in the xpath attribute of the xs:selector element.  
-  
- You can also use the <xref:System.Xml.Schema.XmlSchemaObject.Namespaces%2A> property to change namespace prefixes in a schema. For example, you can change the prefix used by a schema for the W3C XML Schema namespace from xs to xsd as illustrated in the following example.  
-  
+This gives the Schema Object Model (SOM) the ability to add xmlns declarations. This is useful when you want to declare a prefix to qualify declarations from an imported schema or use in the xpath attribute of the xs:selector element.  
+ 
+You can also use the <xref:System.Xml.Schema.XmlSchemaObject.Namespaces%2A> property to change namespace prefixes in a schema. For example, you can change the prefix used by a schema for the W3C XML Schema namespace from xs to xsd as illustrated in the following example.  
+ 
 ```vb  
 Dim namespaces As XmlSerializerNamespaces = New XmlSerializerNamespaces()  
 namespaces.Add("myChangedPrefix", "myImportNamespace");  
 s.Namespaces = namespaces;  
 ```  
-  
+ 
 ```csharp  
 XmlSerializerNamespaces namespaces = new XmlSerializerNamespaces();  
 namespaces.Add("myChangedPrefix", "myImportNamespace");  
 s.Namespaces = namespaces;  
 ```  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, the prefix myImpPrefix is added at the schema element level. The prefix is then used to qualify definitions that are imported from myImportNamespace.  
-  
- [!code-cpp[Classic WebData XmlSchemaObject.Namespaces Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaObject.Namespaces Example/CPP/namespaces.cpp#1)]
- [!code-csharp[Classic WebData XmlSchemaObject.Namespaces Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaObject.Namespaces Example/CS/namespaces.cs#1)]
- [!code-vb[Classic WebData XmlSchemaObject.Namespaces Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaObject.Namespaces Example/VB/namespaces.vb#1)]  
-  
- The example produces the following XML.  
-  
- [!code-xml[Classic WebData XmlSchemaObject.Namespaces Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaObject.Namespaces Example/XML/example.xml#2)]  
-  
+In the following example, the prefix myImpPrefix is added at the schema element level. The prefix is then used to qualify definitions that are imported from myImportNamespace.  
+ 
+[!code-cpp[Classic WebData XmlSchemaObject.Namespaces Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaObject.Namespaces Example/CPP/namespaces.cpp#1)]
+[!code-csharp[Classic WebData XmlSchemaObject.Namespaces Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaObject.Namespaces Example/CS/namespaces.cs#1)]
+[!code-vb[Classic WebData XmlSchemaObject.Namespaces Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaObject.Namespaces Example/VB/namespaces.vb#1)]  
+ 
+The example produces the following XML.  
+ 
+[!code-xml[Classic WebData XmlSchemaObject.Namespaces Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaObject.Namespaces Example/XML/example.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,10 +249,10 @@ s.Namespaces = namespaces;
         <value>The source location (URI) for the file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Provides information for exception handling.  
-  
+Provides information for exception handling.  
+ 
  ]]></format>
         </remarks>
       </Docs>

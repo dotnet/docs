@@ -22,10 +22,10 @@
     <summary>The delegate when implemented is called before a renewed token is returned to the client.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The client makes renewal requests for a token when the token is about to expire. The delegate provides an extensibility point to inspect the token being renewed.  
-  
+The client makes renewal requests for a token when the token is about to expire. The delegate provides an extensibility point to inspect the token being renewed.  
+ 
  ]]></format>
     </remarks>
   </Docs>

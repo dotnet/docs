@@ -246,10 +246,10 @@
         <returns>The manifest file reference that matches the specified item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the file reference does not exist in the manifest for the specified item, then this method adds a file reference for this item.  
-  
+If the file reference does not exist in the manifest for the specified item, then this method adds a file reference for this item.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -359,10 +359,10 @@
           <see langword="true" /> if no errors occurred when the manifest properties are set; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, resolved manifest properties are the publisher and product.  
-  
+For example, resolved manifest properties are the publisher and product.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -409,10 +409,10 @@
         <value>The manifest platform.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The manifest platform can have one of the following values: `x86`, `x64`, `Itanium`, or `AnyCPU`.  
-  
+The manifest platform can have one of the following values: `x86`, `x64`, `Itanium`, or `AnyCPU`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -435,10 +435,10 @@
         <value>The manifest target culture code.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Valid values for the target culture are any valid values for <xref:System.Globalization.CultureInfo>, and also "neutral" or "*" for neutral cultures.  
-  
+Valid values for the target culture are any valid values for <xref:System.Globalization.CultureInfo>, and also "neutral" or "*" for neutral cultures.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -480,10 +480,10 @@
         <value>A string that represents the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is empty, which means there is no filtering for the references based on the target framework.  
-  
+The default value is empty, which means there is no filtering for the references based on the target framework.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

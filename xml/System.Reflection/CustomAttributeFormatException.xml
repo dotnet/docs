@@ -24,12 +24,12 @@
     <summary>The exception that is thrown when the binary format of a custom attribute is invalid.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `CustomAttributeFormatException` uses the HRESULT COR_E_FORMAT which has the value 0x80131537.  
-  
- `CustomAttributeFormatException` is thrown if a custom attribute on a data type is formatted incorrectly, possibly because of a bug in the tool used to create the data type.  
-  
+`CustomAttributeFormatException` uses the HRESULT COR_E_FORMAT which has the value 0x80131537.  
+ 
+`CustomAttributeFormatException` is thrown if a custom attribute on a data type is formatted incorrectly, possibly because of a bug in the tool used to create the data type.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,17 +53,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.CustomAttributeFormatException" /> class with the default properties.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes an instance of `CustomAttributeFormatException` with an empty message string and the root cause exception set to `null`.  
-  
- This constructor sets the properties of the `Exception` object as follows:  
-  
+This constructor initializes an instance of `CustomAttributeFormatException` with an empty message string and the root cause exception set to `null`.  
+ 
+This constructor sets the properties of the `Exception` object as follows:  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|null|  
 |<xref:System.Exception.Message%2A>|The empty string ("").|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -90,14 +90,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.CustomAttributeFormatException" /> class with the specified message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor sets the properties of the Exception object as follows:  
-  
+This constructor sets the properties of the Exception object as follows:  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|`null`|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -151,17 +151,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.CustomAttributeFormatException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.Reflection.CustomAttributeFormatException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.Reflection.CustomAttributeFormatException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The `inner` exception.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

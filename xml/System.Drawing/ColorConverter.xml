@@ -14,19 +14,19 @@
     <summary>Converts colors from one data type to another. Access this class through the <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When converting from a string to a <xref:System.Drawing.Color> the <xref:System.Drawing.ColorConverter> expects the unqualified color name; otherwise, an exception will occur in the conversion process. For example, you should pass "Blue", not "System.Drawing.Color.Blue" or "Color.Blue", to the <xref:System.Drawing.ColorConverter.ConvertFrom%2A> method.  
+When converting from a string to a <xref:System.Drawing.Color> the <xref:System.Drawing.ColorConverter> expects the unqualified color name; otherwise, an exception will occur in the conversion process. For example, you should pass "Blue", not "System.Drawing.Color.Blue" or "Color.Blue", to the <xref:System.Drawing.ColorConverter.ConvertFrom%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.ComponentModel.TypeConverter.ConvertToString%2A> method. This example is designed to be used with Windows Forms. Paste this code into a form and call the `ShowColorConverter` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.Converters#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Converters/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.Converters#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Converters/CS/form1.cs#2)]
- [!code-vb[System.Drawing.Converters#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Converters/VB/form1.vb#2)]  
-  
+The following code example demonstrates how to use the <xref:System.ComponentModel.TypeConverter.ConvertToString%2A> method. This example is designed to be used with Windows Forms. Paste this code into a form and call the `ShowColorConverter` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.Converters#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Converters/CPP/form1.cpp#2)]
+[!code-csharp[System.Drawing.Converters#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Converters/CS/form1.cs#2)]
+[!code-vb[System.Drawing.Converters#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Converters/VB/form1.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -121,10 +121,10 @@
         <returns>An <see cref="T:System.Object" /> representing the converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When converting from a string to a <xref:System.Drawing.Color> the <xref:System.Drawing.ColorConverter> expects the unqualified color name; otherwise, an exception will occur in the conversion process. For example, you should pass "Blue", not "System.Drawing.Color.Blue" or "Color.Blue", to the <xref:System.Drawing.ColorConverter.ConvertFrom%2A> method.  
-  
+When converting from a string to a <xref:System.Drawing.Color> the <xref:System.Drawing.ColorConverter> expects the unqualified color name; otherwise, an exception will occur in the conversion process. For example, you should pass "Blue", not "System.Drawing.Color.Blue" or "Color.Blue", to the <xref:System.Drawing.ColorConverter.ConvertFrom%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The conversion cannot be performed.</exception>
@@ -157,10 +157,10 @@
         <returns>An <see cref="T:System.Object" /> representing the converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The most common conversion is to or from a string.  
-  
+The most common conversion is to or from a string.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

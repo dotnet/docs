@@ -24,17 +24,17 @@
     <summary>Specifies the minimum and maximum length of characters that are allowed in a data field.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET Dynamic Data enables CRUD (Create, Read, Update and Delete) operations in a data model. You can specify the minimum and maximum length of characters for each field when data is being inserted or updated. For character data types, the <xref:System.ComponentModel.DataAnnotations.StringLengthAttribute.MinimumLength%2A> and <xref:System.ComponentModel.DataAnnotations.StringLengthAttribute.MaximumLength%2A> properties identify the largest number of bytes that are required in order to store a string.  
+ASP.NET Dynamic Data enables CRUD (Create, Read, Update and Delete) operations in a data model. You can specify the minimum and maximum length of characters for each field when data is being inserted or updated. For character data types, the <xref:System.ComponentModel.DataAnnotations.StringLengthAttribute.MinimumLength%2A> and <xref:System.ComponentModel.DataAnnotations.StringLengthAttribute.MaximumLength%2A> properties identify the largest number of bytes that are required in order to store a string.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to limit the number of characters in a field. This example works with the ThumbnailPhotoFileName field in the Products table in the AdventureWorksLT database. The field is limited 4 characters by applying the <xref:System.ComponentModel.DataAnnotations.StringLengthAttribute> attribute to the partial class that represents the Product entity.  
-  
+The following example shows how to limit the number of characters in a field. This example works with the ThumbnailPhotoFileName field in the Products table in the AdventureWorksLT database. The field is limited 4 characters by applying the <xref:System.ComponentModel.DataAnnotations.StringLengthAttribute> attribute to the partial class that represents the Product entity.  
+ 
 <!-- TODO: review snippet reference  [!CODE [System.ComponentModel.DataAnnotations.StringLengthAttribute#1](System.ComponentModel.DataAnnotations.StringLengthAttribute#1)]  -->  
-  
+ 
 ```vb  
 <MetadataType(GetType(ProductMetadata))> _   
 Public Partial Class Product   
@@ -50,7 +50,7 @@ Public Class ProductMetadata
 End Class  
   
 ```  
-  
+ 
 ```csharp  
 [MetadataType(typeof(ProductMetadata))]  
 public partial class Product  
@@ -67,7 +67,7 @@ public class ProductMetadata
   
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -155,10 +155,10 @@ public class ProductMetadata
           <see langword="true" /> if the specified object is valid; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method determines whether an object is valid. If the value of the object is `null`, the method automatically validates object.  
-  
+This method determines whether an object is valid. If the value of the object is `null`, the method automatically validates object.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">

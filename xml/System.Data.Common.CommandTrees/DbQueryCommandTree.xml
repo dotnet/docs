@@ -14,10 +14,10 @@
     <summary>Represents a query operation expressed as a command tree. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Common.CommandTrees.DbQueryCommandTree> describes a query.  
-  
+The <xref:System.Data.Common.CommandTrees.DbQueryCommandTree> describes a query.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <value>An <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the logic of the query operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Common.CommandTrees.DbQueryCommandTree.Query%2A> property describes the root of the expression tree that defines the query. The <xref:System.Data.Common.CommandTrees.DbCommandTree> is in an invalid state until the <xref:System.Data.Common.CommandTrees.DbQueryCommandTree.Query%2A> property is set to a valid value.  
-  
+The <xref:System.Data.Common.CommandTrees.DbQueryCommandTree.Query%2A> property describes the root of the expression tree that defines the query. The <xref:System.Data.Common.CommandTrees.DbCommandTree> is in an invalid state until the <xref:System.Data.Common.CommandTrees.DbQueryCommandTree.Query%2A> property is set to a valid value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The expression is <see langword="null" />.</exception>

@@ -13,13 +13,13 @@
     <summary>Enumerates values for levels of emphasis in prompts.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Members of the <xref:System.Speech.Synthesis.PromptEmphasis> enumeration are used by the <xref:System.Speech.Synthesis.PromptStyle.%23ctor%2A> constructor, by the <xref:System.Speech.Synthesis.PromptBuilder.AppendText%2A> method, and by the <xref:System.Speech.Synthesis.PromptBuilder.StartStyle%2A> method to specify the level of emphasis for spoken text. The <xref:System.Speech.Synthesis.PromptStyle.Emphasis%2A> property gets the emphasis for a <xref:System.Speech.Synthesis.PromptStyle> object using a <xref:System.Speech.Synthesis.PromptEmphasis> instance.  
-  
+Members of the <xref:System.Speech.Synthesis.PromptEmphasis> enumeration are used by the <xref:System.Speech.Synthesis.PromptStyle.%23ctor%2A> constructor, by the <xref:System.Speech.Synthesis.PromptBuilder.AppendText%2A> method, and by the <xref:System.Speech.Synthesis.PromptBuilder.StartStyle%2A> method to specify the level of emphasis for spoken text. The <xref:System.Speech.Synthesis.PromptStyle.Emphasis%2A> property gets the emphasis for a <xref:System.Speech.Synthesis.PromptStyle> object using a <xref:System.Speech.Synthesis.PromptEmphasis> instance.  
+ 
 > [!NOTE]
 >  The speech synthesis engines in Windows do not support variations in the emphasis of speech output at this time. Setting values for emphasis using a member of the <xref:System.Speech.Synthesis.PromptEmphasis> enumeration will produce no audible change in the synthesized speech output.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

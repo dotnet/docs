@@ -23,10 +23,10 @@
     <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.BIND_OPTS" /> instead.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IBindCtx` in the com subfolder of the MSDN library.  
-  
+For more information, please see the existing documentation for `IBindCtx` in the com subfolder of the MSDN library.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,10 +52,10 @@
         <summary>Enumerate the strings which are the keys of the internally-maintained table of contextual object parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IBindCtx::EnumObjectParam` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IBindCtx::EnumObjectParam` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -81,10 +81,10 @@
         <summary>Return the current binding options stored in this bind context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IBindCtx::GetBindOptions` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IBindCtx::GetBindOptions` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <summary>Lookup the given key in the internally-maintained table of contextual object parameters and return the corresponding object, if one exists.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IBindCtx::GetObjectParam` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IBindCtx::GetObjectParam` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -141,10 +141,10 @@
         <summary>Return access to the Running Object Table (ROT) relevant to this binding process.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IBindCtx::GetRunningObjectTable` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IBindCtx::GetRunningObjectTable` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
         <summary>Register the passed object as one of the objects that has been bound during a moniker operation and which should be released when it is complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IBindCtx::RegisterObjectBound` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IBindCtx::RegisterObjectBound` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,10 +201,10 @@
         <summary>Register the given object pointer under the specified name in the internally-maintained table of object pointers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IBindCtx::RegisterObjectParam` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IBindCtx::RegisterObjectParam` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,10 +227,10 @@
         <summary>Releases all the objects currently registered with the bind context by <see cref="M:System.Runtime.InteropServices.UCOMIBindCtx.RegisterObjectBound(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IBindCtx::ReleaseBoundObjects` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IBindCtx::ReleaseBoundObjects` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
         <summary>Removes the object from the set of registered objects that need to be released.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IBindCtx::RevokeObjectBound` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IBindCtx::RevokeObjectBound` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -285,10 +285,10 @@
         <summary>Revoke the registration of the object currently found under this key in the internally-maintained table of contextual object parameters, if any such key is currently registered.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IBindCtx::RevokeObjectParam` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IBindCtx::RevokeObjectParam` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -314,10 +314,10 @@
         <summary>Store in the bind context a block of parameters that will apply to later <see langword="UCOMIMoniker" /> operations using this bind context.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, please see the existing documentation for `IBindCtx::SetBindOptions` in the MSDN library.  
-  
+For more information, please see the existing documentation for `IBindCtx::SetBindOptions` in the MSDN library.  
+ 
  ]]></format>
         </remarks>
       </Docs>

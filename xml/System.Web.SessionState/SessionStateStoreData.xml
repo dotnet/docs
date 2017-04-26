@@ -14,12 +14,12 @@
     <summary>Represents session-state data for a session store.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SessionState.SessionStateStoreData> class is used by ASP.NET and implementers of a custom session-state store to pass session-state information to and from the <xref:System.Web.SessionState.SessionStateModule>.  
-  
- The <xref:System.Web.SessionState.SessionStateStoreData> class is used to represent session-state data for a session store to the <xref:System.Web.SessionState.SessionStateModule>. The <xref:System.Web.SessionState.SessionStateStoreData> object contains the session-state variable names and values, static object references, and <xref:System.Web.SessionState.SessionStateStoreData.Timeout%2A> information for the current session.  
-  
+The <xref:System.Web.SessionState.SessionStateStoreData> class is used by ASP.NET and implementers of a custom session-state store to pass session-state information to and from the <xref:System.Web.SessionState.SessionStateModule>.  
+ 
+The <xref:System.Web.SessionState.SessionStateStoreData> class is used to represent session-state data for a session store to the <xref:System.Web.SessionState.SessionStateModule>. The <xref:System.Web.SessionState.SessionStateStoreData> object contains the session-state variable names and values, static object references, and <xref:System.Web.SessionState.SessionStateStoreData.Timeout%2A> information for the current session.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,14 +45,14 @@
         <summary>Creates a new instance of the <see cref="T:System.Web.SessionState.SessionStateStoreData" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SessionState.SessionStateStoreData> class is used to represent session-state data for a session store to the <xref:System.Web.SessionState.SessionStateModule>. The <xref:System.Web.SessionState.SessionStateStoreData> object contains the session-state variable names and values, static object references, and <xref:System.Web.SessionState.SessionStateStoreData.Timeout%2A> information for the current session.  
-  
- The <xref:System.Web.SessionState.SessionStateStoreData> class is used by ASP.NET and implementers of a custom session-state store to pass session-state information to and from the <xref:System.Web.SessionState.SessionStateModule>.  
-  
- Custom session-store implementers construct a <xref:System.Web.SessionState.SessionStateStoreData> object in implementations of the <xref:System.Web.SessionState.SessionStateStoreProviderBase.GetItem%2A>, <xref:System.Web.SessionState.SessionStateStoreProviderBase.GetItemExclusive%2A>, and <xref:System.Web.SessionState.SessionStateStoreProviderBase.CreateNewStoreData%2A> methods.  
-  
+The <xref:System.Web.SessionState.SessionStateStoreData> class is used to represent session-state data for a session store to the <xref:System.Web.SessionState.SessionStateModule>. The <xref:System.Web.SessionState.SessionStateStoreData> object contains the session-state variable names and values, static object references, and <xref:System.Web.SessionState.SessionStateStoreData.Timeout%2A> information for the current session.  
+ 
+The <xref:System.Web.SessionState.SessionStateStoreData> class is used by ASP.NET and implementers of a custom session-state store to pass session-state information to and from the <xref:System.Web.SessionState.SessionStateModule>.  
+ 
+Custom session-store implementers construct a <xref:System.Web.SessionState.SessionStateStoreData> object in implementations of the <xref:System.Web.SessionState.SessionStateStoreProviderBase.GetItem%2A>, <xref:System.Web.SessionState.SessionStateStoreProviderBase.GetItemExclusive%2A>, and <xref:System.Web.SessionState.SessionStateStoreProviderBase.CreateNewStoreData%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -74,12 +74,12 @@
         <value>An <see cref="T:System.Web.SessionState.ISessionStateItemCollection" /> object that contains variables and values for the current session.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.SessionState.SessionStateStoreData.Items%2A> property references the session-state variables that are exposed to ASP.NET application code using the <xref:System.Web.SessionState.HttpSessionState> class, which is accessed using the <xref:System.Web.HttpContext.Session%2A> property of the current <xref:System.Web.HttpContext> or the <xref:System.Web.UI.Page> instance.  
-  
- By default, session-state variables are managed using the <xref:System.Web.SessionState.SessionStateItemCollection> object. Custom session-store implementers can supply their own implementation of the <xref:System.Web.SessionState.ISessionStateItemCollection> interface.  
-  
+The <xref:System.Web.SessionState.SessionStateStoreData.Items%2A> property references the session-state variables that are exposed to ASP.NET application code using the <xref:System.Web.SessionState.HttpSessionState> class, which is accessed using the <xref:System.Web.HttpContext.Session%2A> property of the current <xref:System.Web.HttpContext> or the <xref:System.Web.UI.Page> instance.  
+ 
+By default, session-state variables are managed using the <xref:System.Web.SessionState.SessionStateItemCollection> object. Custom session-store implementers can supply their own implementation of the <xref:System.Web.SessionState.ISessionStateItemCollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -101,17 +101,17 @@
         <value>An <see cref="T:System.Web.HttpStaticObjectsCollection" /> containing objects declared in the Global.asax file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The  
-  
- <xref:System.Web.SessionState.SessionStateStoreData.StaticObjects%2A> property is provided for compatibility with earlier versions of ASP.  
-  
- Custom session-store implementers can obtain a reference to the <xref:System.Web.HttpStaticObjectsCollection> class for the current <xref:System.Web.HttpContext> instance using the <xref:System.Web.SessionState.SessionStateUtility.GetSessionStaticObjects%2A> method.  
-  
+The  
+ 
+<xref:System.Web.SessionState.SessionStateStoreData.StaticObjects%2A> property is provided for compatibility with earlier versions of ASP.  
+ 
+Custom session-store implementers can obtain a reference to the <xref:System.Web.HttpStaticObjectsCollection> class for the current <xref:System.Web.HttpContext> instance using the <xref:System.Web.SessionState.SessionStateUtility.GetSessionStaticObjects%2A> method.  
+ 
 > [!NOTE]
 >  Custom objects stored in the <xref:System.Web.SessionState.SessionStateStoreData.StaticObjects%2A> collection must support binary serialization. For more information, see [Binary Serialization](~/docs/framework/serialization/binary-serialization.md).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,10 +19,10 @@
     <summary>A token that is returned when an event handler is added to a [!INCLUDE[wrt](~/includes/wrt-md.md)] event. The token is used to remove the event handler from the event at a later time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken> structure only if you use native [!INCLUDE[wrt](~/includes/wrt-md.md)] techniques to add and remove event handlers for [!INCLUDE[wrt](~/includes/wrt-md.md)] events. If you use the syntax that is provided by the C# or Visual Basic languages to add and remove event handlers, <xref:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken> is an implementation detail handled by the compilers.  
-  
+Use the <xref:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken> structure only if you use native [!INCLUDE[wrt](~/includes/wrt-md.md)] techniques to add and remove event handlers for [!INCLUDE[wrt](~/includes/wrt-md.md)] events. If you use the syntax that is provided by the C# or Visual Basic languages to add and remove event handlers, <xref:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken> is an implementation detail handled by the compilers.  
+ 
  ]]></format>
     </remarks>
   </Docs>

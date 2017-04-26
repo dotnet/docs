@@ -14,30 +14,30 @@
     <summary>The <see cref="T:System.Web.UI.WebControls.DataControlCommands" /> class contains public fields that all ASP.NET data-bound controls use, to promote a consistent user interface (UI). This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataControlCommands> class contains public fields for data-bound control command names. The class constructor is private, so you cannot create an instance of the class. However, because it only contains `const` string resources, you can use the class constructor and its public fields just as you would any `static` class.  
-  
- Using the command names of the <xref:System.Web.UI.WebControls.DataControlCommands> class enables all the ASP.NET data-bound controls and their respective designer classes to use the same string resources for common commands, such as "Edit" or "Update", and to correctly handle events that are posted by an <xref:System.Web.UI.IPostBackEventHandler> instance. The following classes use <xref:System.Web.UI.WebControls.DataControlCommands>:  
-  
+The <xref:System.Web.UI.WebControls.DataControlCommands> class contains public fields for data-bound control command names. The class constructor is private, so you cannot create an instance of the class. However, because it only contains `const` string resources, you can use the class constructor and its public fields just as you would any `static` class.  
+ 
+Using the command names of the <xref:System.Web.UI.WebControls.DataControlCommands> class enables all the ASP.NET data-bound controls and their respective designer classes to use the same string resources for common commands, such as "Edit" or "Update", and to correctly handle events that are posted by an <xref:System.Web.UI.IPostBackEventHandler> instance. The following classes use <xref:System.Web.UI.WebControls.DataControlCommands>:  
+ 
 -   <xref:System.Web.UI.WebControls.CommandField>  
-  
+ 
 -   <xref:System.Web.UI.WebControls.DataControlField>  
-  
+ 
 -   <xref:System.Web.UI.WebControls.GridView>  
-  
+ 
 -   <xref:System.Web.UI.WebControls.DetailsView>  
-  
+ 
 -   <xref:System.Web.UI.WebControls.FormView>  
-  
+ 
 -   <xref:System.Web.UI.WebControls.ListView>  
-  
+ 
 -   <xref:System.Web.UI.WebControls.NextPreviousPagerField>  
-  
+ 
 -   <xref:System.Web.UI.WebControls.NumericPagerField>  
-  
+ 
 -   <xref:System.Web.UI.Design.WebControls.FormViewDesigner>  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

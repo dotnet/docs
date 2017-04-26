@@ -14,12 +14,12 @@
     <summary>Builds the path of a field or property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To build the path `this/wkflwprop/childprop/`, use  
-  
- `new RulePathQualifier(“this”, new RulePathQualifier(“workflowprop”, new RulePathQualifier(“childprop”, null)))`.  
-  
+To build the path `this/wkflwprop/childprop/`, use  
+ 
+`new RulePathQualifier(“this”, new RulePathQualifier(“workflowprop”, new RulePathQualifier(“childprop”, null)))`.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,12 +43,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RulePathQualifier" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To build the path `this/wkflwprop/childprop/`, use  
-  
- `new RulePathQualifier(“this”, new RulePathQualifier(“workflowprop”, new RulePathQualifier(“childprop”, null)))`.  
-  
+To build the path `this/wkflwprop/childprop/`, use  
+ 
+`new RulePathQualifier(“this”, new RulePathQualifier(“workflowprop”, new RulePathQualifier(“childprop”, null)))`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <value>The next entity, or the field or property, for the path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.Rules.RulePathQualifier.Next%2A> is null if <xref:System.Workflow.Activities.Rules.RulePathQualifier.Name%2A> is the name of the property or field at the root of the path.  
-  
+<xref:System.Workflow.Activities.Rules.RulePathQualifier.Next%2A> is null if <xref:System.Workflow.Activities.Rules.RulePathQualifier.Name%2A> is the name of the property or field at the root of the path.  
+ 
  ]]></format>
         </remarks>
       </Docs>

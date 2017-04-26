@@ -31,10 +31,10 @@
     <summary>Specifies that a field can be used in method contracts when the field has less visibility than the method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you apply the <xref:System.Diagnostics.Contracts.ContractPublicPropertyNameAttribute> attribute to a field, that field can be used in the code contracts for a method when the field has less visibility than the method. There must be a visible property that is equivalent to the value of the field. For example, you can use this attribute if the method is public, but the field is private.  
-  
+When you apply the <xref:System.Diagnostics.Contracts.ContractPublicPropertyNameAttribute> attribute to a field, that field can be used in the code contracts for a method when the field has less visibility than the method. There must be a visible property that is equivalent to the value of the field. For example, you can use this attribute if the method is public, but the field is private.  
+ 
  ]]></format>
     </remarks>
   </Docs>

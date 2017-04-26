@@ -18,10 +18,10 @@
     <summary>Declares permissions for loading types from assemblies that are used by a XAML reader or writer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xaml.Permissions.XamlLoadPermission> is relevant for scenarios such as whether internal types are permitted to load under partial trust.  
-  
+<xref:System.Xaml.Permissions.XamlLoadPermission> is relevant for scenarios such as whether internal types are permitted to load under partial trust.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,10 +43,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> class, using an enumerable set of specific <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A call to this constructor initializes the <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> collection with each `allowedAccess` entry as an item, and sets the return for <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> to `false` in the created instance.  
-  
+A call to this constructor initializes the <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> collection with each `allowedAccess` entry as an item, and sets the return for <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> to `false` in the created instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -72,10 +72,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> class, using existing permissions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Permissions.PermissionState> sets the return for <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> to `true` in the created instance. Any call to this constructor sets the <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> collection to `null` because it is not relevant if permissions are being reported rather than <xref:System.Xaml.Permissions.XamlAccessLevel>.  
-  
+<xref:System.Security.Permissions.PermissionState> sets the return for <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> to `true` in the created instance. Any call to this constructor sets the <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> collection to `null` because it is not relevant if permissions are being reported rather than <xref:System.Xaml.Permissions.XamlAccessLevel>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,10 +97,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> class, using a single <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A call to this constructor initializes the <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> collection with `allowedAccess` as the only item, and sets the return for <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> to `false` in the created instance.  
-  
+A call to this constructor initializes the <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> collection with `allowedAccess` as the only item, and sets the return for <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> to `false` in the created instance.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -124,10 +124,10 @@
         <value>A read-only list of <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> values, or <see langword="null" />. See Remarks.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the current <xref:System.Xaml.Permissions.XamlLoadPermission> is initialized such that <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> is `true`, <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> may be `null`.  
-  
+If the current <xref:System.Xaml.Permissions.XamlLoadPermission> is initialized such that <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> is `true`, <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> may be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -150,10 +150,10 @@
         <returns>A copy of the current <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Per the interface contract of <xref:System.Security.IPermission> this value is <xref:System.Security.IPermission> in the signature but can be cast to <xref:System.Xaml.Permissions.XamlLoadPermission>.  
-  
+Per the interface contract of <xref:System.Security.IPermission> this value is <xref:System.Security.IPermission> in the signature but can be cast to <xref:System.Xaml.Permissions.XamlLoadPermission>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,10 +233,10 @@
         <returns>A new permission that represents the intersection of the current <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> and the specified <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />. This new permission is <see langword="null" /> if the intersection is empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For union, intersect, and subset logic, <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> is checked first, and might return a result based solely on that check. Next, <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> is checked.  
-  
+For union, intersect, and subset logic, <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> is checked first, and might return a result based solely on that check. Next, <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> is checked.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -265,12 +265,12 @@
           <see langword="true" /> if the current <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For union, intersect, and subset logic, <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> is checked first, and might return a result based solely on that check. Next, <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> is checked.  
-  
- If `target` is `null` and the current <xref:System.Xaml.Permissions.XamlLoadPermission> is both <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> `false` and has an empty <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> list, this method returns `true`.  
-  
+For union, intersect, and subset logic, <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> is checked first, and might return a result based solely on that check. Next, <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> is checked.  
+ 
+If `target` is `null` and the current <xref:System.Xaml.Permissions.XamlLoadPermission> is both <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> `false` and has an empty <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> list, this method returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -337,12 +337,12 @@
         <returns>A new <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> that represents the union of the current <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> and the specified <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For union, intersect, and subset logic, <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> is checked first, and might return a result based solely on that check. Next, <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> is checked.  
-  
- If `other` is `null`, the current <xref:System.Xaml.Permissions.XamlLoadPermission> is returned.  
-  
+For union, intersect, and subset logic, <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> is checked first, and might return a result based solely on that check. Next, <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> is checked.  
+ 
+If `other` is `null`, the current <xref:System.Xaml.Permissions.XamlLoadPermission> is returned.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

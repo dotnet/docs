@@ -65,10 +65,10 @@
         <value>The default printer settings to use when the document is printed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket%2A> property does not validate or modify the specified <xref:System.Printing.PrintTicket> for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
-  
+Setting the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket%2A> property does not validate or modify the specified <xref:System.Printing.PrintTicket> for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
         <value>An enumeration that indicates the scope of the <see cref="E:System.Windows.Documents.Serialization.SerializerWriter.WritingPrintTicketRequired" /> event as for a sequence of documents, a single document, or a single page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel%2A> property is <xref:System.Windows.Xps.Serialization.PrintTicketLevel>, the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence%2A> property specifies the number of documents output with the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket%2A>.  For other <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel%2A> values, the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence%2A> property specifies the number of pages output with the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket%2A>.  
-  
+When the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel%2A> property is <xref:System.Windows.Xps.Serialization.PrintTicketLevel>, the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence%2A> property specifies the number of documents output with the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket%2A>.  For other <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel%2A> values, the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence%2A> property specifies the number of pages output with the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -120,10 +120,10 @@
         <value>The number of documents or pages output with the <see cref="P:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel%2A> property is <xref:System.Windows.Xps.Serialization.PrintTicketLevel>, the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence%2A> property specifies the number of documents output with the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket%2A>.  For other <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel%2A> values, the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence%2A> property specifies the number of pages output with the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket%2A>.  
-  
+When the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel%2A> property is <xref:System.Windows.Xps.Serialization.PrintTicketLevel>, the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence%2A> property specifies the number of documents output with the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket%2A>.  For other <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel%2A> values, the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence%2A> property specifies the number of pages output with the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

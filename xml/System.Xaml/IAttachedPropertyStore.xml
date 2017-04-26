@@ -11,10 +11,10 @@
     <summary>Represents an attachable member store for an object where attachable members are set. This attachable member store can then be referenced with <see cref="T:System.Xaml.AttachablePropertyServices" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An attachable member is typically implemented and used as an attachable property. The term "attachable member" provides for the possibility that a technology also defines a system for attachable events. As an item in a property store, an attachable event stores a reference to the handler that is assigned through attachable member usage. An attachable event in XAML can use the same store as the attachable properties do, even if the attachable event is not truly a property to the underlying type system or as it is considered in real-world use.  
-  
+An attachable member is typically implemented and used as an attachable property. The term "attachable member" provides for the possibility that a technology also defines a system for attachable events. As an item in a property store, an attachable event stores a reference to the handler that is assigned through attachable member usage. An attachable event in XAML can use the same store as the attachable properties do, even if the attachable event is not truly a property to the underlying type system or as it is considered in real-world use.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -105,10 +105,10 @@
         <summary>Sets a value for the specified attachable member in the specified store.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An implementation should not throw an exception if the specific attachable member already exists. If a member already exists, the implementation should overwrite any existing value with `value`.  
-  
+An implementation should not throw an exception if the specific attachable member already exists. If a member already exists, the implementation should overwrite any existing value with `value`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,10 +137,10 @@
           <see langword="true" /> if an attachable member entry for <paramref name="attachableMemberIdentifier" /> was found in the store and a value was posted to <paramref name="value" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An implementation should not throw an exception if the specific attachable member is not located in the store.  
-  
+An implementation should not throw an exception if the specific attachable member is not located in the store.  
+ 
  ]]></format>
         </remarks>
       </Docs>

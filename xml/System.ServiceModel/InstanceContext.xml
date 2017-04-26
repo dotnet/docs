@@ -19,12 +19,12 @@
     <summary>Represents the context information for a service instance.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code illustrates how to obtain instance context information from a service:  
-  
- [!code-csharp[S_ServiceInstanceContext#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/service.cs#1)]  
-  
+The following code illustrates how to obtain instance context information from a service:  
+ 
+[!code-csharp[S_ServiceInstanceContext#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/service.cs#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,17 +47,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.InstanceContext" /> class for a specified object that implements the service instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This sets the service host associated with the instance context to `null`.  
+This sets the service host associated with the instance context to `null`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code shows how to construct an <xref:System.ServiceModel.InstanceContext> object by passing in a <xref:System.ServiceModel.ServiceHost> instance:  
-  
- [!code-csharp[S_ServiceInstanceContext#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#2)]  
-  
+The following code shows how to construct an <xref:System.ServiceModel.InstanceContext> object by passing in a <xref:System.ServiceModel.ServiceHost> instance:  
+ 
+[!code-csharp[S_ServiceInstanceContext#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,12 +79,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.InstanceContext" /> class for a service hosted by a specified host.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to construct an <xref:System.ServiceModel.InstanceContext> object by passing in a <xref:System.ServiceModel.ServiceHost> instance:  
-  
- [!code-csharp[S_ServiceInstanceContext#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#2)]  
-  
+The following code shows how to construct an <xref:System.ServiceModel.InstanceContext> object by passing in a <xref:System.ServiceModel.ServiceHost> instance:  
+ 
+[!code-csharp[S_ServiceInstanceContext#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -110,12 +110,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.InstanceContext" /> class for a specified object that implements the service instance and is hosted by a specified host.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code illustrates how to create an <xref:System.ServiceModel.InstanceContext> object by first creating the service object and <xref:System.ServiceModel.ServiceHost> object:  
-  
- [!code-csharp[S_ServiceInstanceContext#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#3)]  
-  
+The following code illustrates how to create an <xref:System.ServiceModel.InstanceContext> object by first creating the service object and <xref:System.ServiceModel.ServiceHost> object:  
+ 
+[!code-csharp[S_ServiceInstanceContext#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,12 +175,12 @@
         <value>The <see cref="T:System.ServiceModel.IExtensionCollection`1" /> of type <see cref="T:System.ServiceModel.InstanceContext" /> that contains the instance contexts for the extensions of the service instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to access the <xref:System.ServiceModel.InstanceContext.Extensions%2A> property:  
-  
- [!code-csharp[S_ServiceInstanceContext#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#4)]  
-  
+The following code shows how to access the <xref:System.ServiceModel.InstanceContext.Extensions%2A> property:  
+ 
+[!code-csharp[S_ServiceInstanceContext#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The service instance associated with this context is closed, but was not aborted.</exception>
@@ -205,10 +205,10 @@
         <returns>The object that represents the service instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_ServiceInstanceContext#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#10)]  
-  
+[!code-csharp[S_ServiceInstanceContext#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The service instance is in a created or opening state or is not initialized.</exception>
@@ -239,15 +239,15 @@
         <returns>The object that represents the service instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The general idea is that you only create an instance of the service when a message directed at it arrives, by calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>; then if no message arrives, no <xref:System.ServiceModel.InstanceContext> is created and no service object is created, and so resources are not deployed until actually required.  
+The general idea is that you only create an instance of the service when a message directed at it arrives, by calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>; then if no message arrives, no <xref:System.ServiceModel.InstanceContext> is created and no service object is created, and so resources are not deployed until actually required.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_ServiceInstanceContext#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#11)]  
-  
+[!code-csharp[S_ServiceInstanceContext#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#11)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The service instance is in a created or opening state or is not initialized.</exception>
@@ -273,12 +273,12 @@
         <value>The <see cref="T:System.ServiceModel.ServiceHostBase" /> that hosts the service instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code shows how to access the <xref:System.ServiceModel.InstanceContext.Host%2A> property:  
-  
- [!code-csharp[S_ServiceInstanceContext#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#5)]  
-  
+The following code shows how to access the <xref:System.ServiceModel.InstanceContext.Host%2A> property:  
+ 
+[!code-csharp[S_ServiceInstanceContext#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The service instance associated with this context is closed, but was not aborted.</exception>
@@ -302,13 +302,13 @@
         <value>The <see cref="T:System.Collections.Generic.ICollection`1" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> that contains the sessionful channels incoming to the service instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code illustrates how to access the <xref:System.ServiceModel.InstanceContext.IncomingChannels%2A> property:  
-  
- [!code-csharp[S_ServiceInstanceContext#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/service.cs#6)]
- [!code-csharp[S_ServiceInstanceContext#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#6)]  
-  
+The following code illustrates how to access the <xref:System.ServiceModel.InstanceContext.IncomingChannels%2A> property:  
+ 
+[!code-csharp[S_ServiceInstanceContext#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/service.cs#6)]
+[!code-csharp[S_ServiceInstanceContext#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The service instance is closed and cannot be used.</exception>
@@ -336,10 +336,10 @@
         <returns>The new limit on the number of messages, after <paramref name="incrementBy" /> is added, that can be processed by the service instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_ServiceInstanceContext#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#12)]  
-  
+[!code-csharp[S_ServiceInstanceContext#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -361,15 +361,15 @@
         <value>The number of messages that can be processed by the instance context.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.ServiceModel.InstanceContext.ManualFlowControlLimit%2A> value reaches zero no more messages can be processed.  
+When the <xref:System.ServiceModel.InstanceContext.ManualFlowControlLimit%2A> value reaches zero no more messages can be processed.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[S_ServiceInstanceContext#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#9)]  
-  
+[!code-csharp[S_ServiceInstanceContext#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -628,12 +628,12 @@
         <value>The <see cref="T:System.Collections.Generic.ICollection`1" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> that contains the sessionful channels outgoing from the service instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code illustrates how to access the <xref:System.ServiceModel.InstanceContext.OutgoingChannels%2A> property:  
-  
- [!code-csharp[S_ServiceInstanceContext#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/service.cs#7)]  
-  
+The following code illustrates how to access the <xref:System.ServiceModel.InstanceContext.OutgoingChannels%2A> property:  
+ 
+[!code-csharp[S_ServiceInstanceContext#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/service.cs#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The service instance is closed and cannot be used.</exception>
@@ -657,10 +657,10 @@
         <summary>Releases the service instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_ServiceInstanceContext#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#8)]  
-  
+[!code-csharp[S_ServiceInstanceContext#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#8)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The service instance is in a created or opening state and cannot be used.</exception>
@@ -687,10 +687,10 @@
         <value>The <see cref="T:System.Threading.SynchronizationContext" /> used for thread synchronization with the current instance context.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[S_ServiceInstanceContext#13](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#13)]  
-  
+[!code-csharp[S_ServiceInstanceContext#13](~/samples/snippets/csharp/VS_Snippets_CFX/s_serviceinstancecontext/cs/snippets.cs#13)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The communication object is opened or closing and cannot be modified in these states.</exception>

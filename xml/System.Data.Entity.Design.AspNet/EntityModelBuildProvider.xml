@@ -55,10 +55,10 @@
         <summary>Generates source code for the entity model build provider, and adds the source code to a specified assembly builder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.Entity.Design.AspNet.EntityModelBuildProvider.GenerateCode%2A> method embeds the CSDL file as a resource in the dynamically compiled assembly and also generates classes from CSDL file.  
-  
+The <xref:System.Data.Entity.Design.AspNet.EntityModelBuildProvider.GenerateCode%2A> method embeds the CSDL file as a resource in the dynamically compiled assembly and also generates classes from CSDL file.  
+ 
  ]]></format>
         </remarks>
       </Docs>

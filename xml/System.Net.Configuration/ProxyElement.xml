@@ -14,10 +14,10 @@
     <summary>Identifies the configuration settings for Web proxy server. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following table shows the configuration attributes of the [\&lt;proxy\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/proxy-element-network-settings.md) configuration element to which this class corresponds.  
-  
+The following table shows the configuration attributes of the [\&lt;proxy\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/proxy-element-network-settings.md) configuration element to which this class corresponds.  
+ 
 |Element|Description|  
 |-------------|-----------------|  
 |`proxyaddress`|A URI that identifies the Web proxy server to use.|  
@@ -27,11 +27,11 @@
 |`scriptDownloadInterval`|Specifies the number of seconds that elapse before the configuration script is refreshed.|  
 |`scriptDownloadTimeout`|Specifies the number of seconds allowed for the configuration script to be downloaded.|  
 |`useDefaultCredentials`|Controls whether default credentials are used when accessing the Web proxy.|  
-  
- This class is used to specify and configure the Web proxy server to use for requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
-  
- This class provides programmatic access to information that can be stored in configuration files.  
-  
+ 
+This class is used to specify and configure the Web proxy server to use for requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
+ 
+This class provides programmatic access to information that can be stored in configuration files.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,11 +50,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.ProxyElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 -  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,10 +107,10 @@
  Avalue that indicates whether local resources are retrieved by using a Web proxy server.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This configuration element controls whether requests for resources on the LAN are sent to the proxy server or sent directly to the host where the resource resides.  
-  
+This configuration element controls whether requests for resources on the LAN are sent to the proxy server or sent directly to the host where the resource resides.  
+ 
  ]]></format>
         </remarks>
       </Docs>

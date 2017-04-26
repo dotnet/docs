@@ -24,14 +24,14 @@
     <summary>Performs a cryptographic transformation of data. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use members of the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
-  
- [!code-cpp[System.Security.Cryptography.CryptoAPITransform#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#1)]
- [!code-csharp[System.Security.Cryptography.CryptoAPITransform#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#1)]
- [!code-vb[System.Security.Cryptography.CryptoAPITransform#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#1)]  
-  
+The following code example demonstrates how to use members of the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.CryptoAPITransform#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#1)]
+[!code-csharp[System.Security.Cryptography.CryptoAPITransform#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#1)]
+[!code-vb[System.Security.Cryptography.CryptoAPITransform#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,14 +54,14 @@
         <value>Always <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.CanReuseTransform%2A> property to determine if the current transform can be reused. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
-  
- [!code-cpp[System.Security.Cryptography.CryptoAPITransform#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#2)]
- [!code-csharp[System.Security.Cryptography.CryptoAPITransform#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#2)]
- [!code-vb[System.Security.Cryptography.CryptoAPITransform#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#2)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.CanReuseTransform%2A> property to determine if the current transform can be reused. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.CryptoAPITransform#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#2)]
+[!code-csharp[System.Security.Cryptography.CryptoAPITransform#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#2)]
+[!code-vb[System.Security.Cryptography.CryptoAPITransform#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,14 +85,14 @@
           <see langword="true" /> if multiple blocks can be transformed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.CanTransformMultipleBlocks%2A> property to determine if multiple blocks can be transformed. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
-  
- [!code-cpp[System.Security.Cryptography.CryptoAPITransform#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#3)]
- [!code-csharp[System.Security.Cryptography.CryptoAPITransform#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#3)]
- [!code-vb[System.Security.Cryptography.CryptoAPITransform#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#3)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.CanTransformMultipleBlocks%2A> property to determine if multiple blocks can be transformed. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.CryptoAPITransform#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#3)]
+[!code-csharp[System.Security.Cryptography.CryptoAPITransform#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#3)]
+[!code-vb[System.Security.Cryptography.CryptoAPITransform#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -115,21 +115,21 @@
         <summary>Releases all resources used by the <see cref="T:System.Security.Cryptography.CryptoAPITransform" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a simple call to <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>.  
+This method is a simple call to <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>.  
+ 
+Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.CryptoAPITransform> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
+ 
   
- Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.CryptoAPITransform> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.Clear%2A> method to release the resources used by the current transform. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
-  
- [!code-cpp[System.Security.Cryptography.CryptoAPITransform#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#7)]
- [!code-csharp[System.Security.Cryptography.CryptoAPITransform#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#7)]
- [!code-vb[System.Security.Cryptography.CryptoAPITransform#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#7)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.Clear%2A> method to release the resources used by the current transform. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.CryptoAPITransform#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#7)]
+[!code-csharp[System.Security.Cryptography.CryptoAPITransform#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#7)]
+[!code-vb[System.Security.Cryptography.CryptoAPITransform#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,15 +152,15 @@
         <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.CryptoAPITransform" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call `Dispose` when you are finished using the <xref:System.Security.Cryptography.CryptoAPITransform>. The `Dispose` method leaves the <xref:System.Security.Cryptography.CryptoAPITransform> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Security.Cryptography.CryptoAPITransform> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.CryptoAPITransform> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call `Dispose` when you are finished using the <xref:System.Security.Cryptography.CryptoAPITransform>. The `Dispose` method leaves the <xref:System.Security.Cryptography.CryptoAPITransform> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Security.Cryptography.CryptoAPITransform> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.CryptoAPITransform> was occupying.  
+ 
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Security.Cryptography.CryptoAPITransform>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.Cryptography.CryptoAPITransform> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,14 +183,14 @@
         <value>The input block size in bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.InputBlockSize%2A> property to retrieve the input block size. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
-  
- [!code-cpp[System.Security.Cryptography.CryptoAPITransform#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#4)]
- [!code-csharp[System.Security.Cryptography.CryptoAPITransform#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#4)]
- [!code-vb[System.Security.Cryptography.CryptoAPITransform#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#4)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.InputBlockSize%2A> property to retrieve the input block size. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.CryptoAPITransform#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#4)]
+[!code-csharp[System.Security.Cryptography.CryptoAPITransform#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#4)]
+[!code-vb[System.Security.Cryptography.CryptoAPITransform#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -233,14 +233,14 @@
         <value>The output block size in bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.OutputBlockSize%2A> property to retrieve the output block size. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
-  
- [!code-cpp[System.Security.Cryptography.CryptoAPITransform#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#6)]
- [!code-csharp[System.Security.Cryptography.CryptoAPITransform#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#6)]
- [!code-vb[System.Security.Cryptography.CryptoAPITransform#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#6)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.OutputBlockSize%2A> property to retrieve the output block size. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.CryptoAPITransform#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#6)]
+[!code-csharp[System.Security.Cryptography.CryptoAPITransform#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#6)]
+[!code-vb[System.Security.Cryptography.CryptoAPITransform#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -268,10 +268,10 @@
         <summary>Resets the internal state of <see cref="T:System.Security.Cryptography.CryptoAPITransform" /> so that it can be used again to do a different encryption or decryption.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.CryptoAPITransform.Reset%2A> method is called automatically when you call TransformFinalBlock. The `Reset` method is not called when, for example, the encrypted input data is garbage and cannot be decrypted. In this case, an exception is thrown and `Reset` is not called. You can choose to manually call the `Reset` method in this case.  
-  
+The <xref:System.Security.Cryptography.CryptoAPITransform.Reset%2A> method is called automatically when you call TransformFinalBlock. The `Reset` method is not called when, for example, the encrypted input data is garbage and cannot be decrypted. In this case, an exception is thrown and `Reset` is not called. You can choose to manually call the `Reset` method in this case.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -306,14 +306,14 @@
         <returns>The number of bytes written.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.TransformBlock%2A> method to transform the bytes from `currentPosition` in the `sourceBytes` array, writing the bytes to the `targetBytes` array. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
-  
- [!code-cpp[System.Security.Cryptography.CryptoAPITransform#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#8)]
- [!code-csharp[System.Security.Cryptography.CryptoAPITransform#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#8)]
- [!code-vb[System.Security.Cryptography.CryptoAPITransform#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#8)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.TransformBlock%2A> method to transform the bytes from `currentPosition` in the `sourceBytes` array, writing the bytes to the `targetBytes` array. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.CryptoAPITransform#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#8)]
+[!code-csharp[System.Security.Cryptography.CryptoAPITransform#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#8)]
+[!code-vb[System.Security.Cryptography.CryptoAPITransform#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#8)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="inputBuffer" /> parameter is <see langword="null" />.  
@@ -352,14 +352,14 @@
         <returns>The computed transformation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock%2A> method to transform the final block of bytes. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
-  
- [!code-cpp[System.Security.Cryptography.CryptoAPITransform#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#9)]
- [!code-csharp[System.Security.Cryptography.CryptoAPITransform#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#9)]
- [!code-vb[System.Security.Cryptography.CryptoAPITransform#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#9)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock%2A> method to transform the final block of bytes. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.CryptoAPITransform#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#9)]
+[!code-csharp[System.Security.Cryptography.CryptoAPITransform#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#9)]
+[!code-vb[System.Security.Cryptography.CryptoAPITransform#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="inputBuffer" /> parameter is <see langword="null" />.</exception>

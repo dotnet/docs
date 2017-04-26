@@ -26,24 +26,24 @@
     <summary>Describes the version of data in a <see cref="T:System.Data.DataRow" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.DataViewRowState> values are used either to retrieve a particular version of data from a <xref:System.Data.DataRow>, or to determine what versions exist.  
+The <xref:System.Data.DataViewRowState> values are used either to retrieve a particular version of data from a <xref:System.Data.DataRow>, or to determine what versions exist.  
+ 
+Set the <xref:System.Data.DataView.RowStateFilter%2A> property of the <xref:System.Data.DataView> to specify which version or versions of data you want to view.  
+ 
+You can use the Boolean operator Or with the values to get more than one version.  
+ 
+The <xref:System.Data.DataTable> uses <xref:System.Data.DataViewRowState> in the <xref:System.Data.DataTable.Select%2A> method.  
+ 
   
- Set the <xref:System.Data.DataView.RowStateFilter%2A> property of the <xref:System.Data.DataView> to specify which version or versions of data you want to view.  
-  
- You can use the Boolean operator Or with the values to get more than one version.  
-  
- The <xref:System.Data.DataTable> uses <xref:System.Data.DataViewRowState> in the <xref:System.Data.DataTable.Select%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- In the following example <xref:System.Data.DataTable> is created with a single column. The data is changed, and the <xref:System.Data.DataView.RowStateFilter%2A> of the <xref:System.Data.DataView> is set to display different row sets, depending on the <xref:System.Data.DataViewRowState>.  
-  
- [!code-csharp[Classic WebData DataView.RowStateFilter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.RowStateFilter Example/CS/source.cs#1)]
- [!code-vb[Classic WebData DataView.RowStateFilter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.RowStateFilter Example/VB/source.vb#1)]  
-  
+In the following example <xref:System.Data.DataTable> is created with a single column. The data is changed, and the <xref:System.Data.DataView.RowStateFilter%2A> of the <xref:System.Data.DataView> is set to display different row sets, depending on the <xref:System.Data.DataViewRowState>.  
+ 
+[!code-csharp[Classic WebData DataView.RowStateFilter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.RowStateFilter Example/CS/source.cs#1)]
+[!code-vb[Classic WebData DataView.RowStateFilter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.RowStateFilter Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

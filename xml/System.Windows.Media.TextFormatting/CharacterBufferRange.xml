@@ -46,10 +46,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferRange" /> structure from a unmanaged character string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The caller needs unmanaged code permission in order to invoke the <xref:System.Windows.Media.TextFormatting.CharacterBufferRange.%23ctor%2A> method.  
-  
+The caller needs unmanaged code permission in order to invoke the <xref:System.Windows.Media.TextFormatting.CharacterBufferRange.%23ctor%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,10 +156,10 @@
           <see langword="true" /> if <paramref name="o" /> is equal to the current <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferRange" /> object; otherwise, <see langword="false" />. If <paramref name="o" /> is not a <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferRange" /> object, <see langword="false" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.Windows.Media.TextFormatting.CharacterBufferRange> objects are equal if the <xref:System.Windows.Media.TextFormatting.CharacterBufferRange.CharacterBufferReference%2A> properties are equal.  
-  
+Two <xref:System.Windows.Media.TextFormatting.CharacterBufferRange> objects are equal if the <xref:System.Windows.Media.TextFormatting.CharacterBufferRange.CharacterBufferReference%2A> properties are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,10 +186,10 @@
           <see langword="true" /> if <paramref name="value" /> is equal to the current <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferRange" /> object; otherwise, <see langword="false" />. If <paramref name="value" /> is not a <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferRange" /> object, <see langword="false" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.Windows.Media.TextFormatting.CharacterBufferRange> objects are equal if the <xref:System.Windows.Media.TextFormatting.CharacterBufferRange.CharacterBufferReference%2A> properties are equal.  
-  
+Two <xref:System.Windows.Media.TextFormatting.CharacterBufferRange> objects are equal if the <xref:System.Windows.Media.TextFormatting.CharacterBufferRange.CharacterBufferReference%2A> properties are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -19,10 +19,10 @@
     <summary>Represents a class that is used to prepopulate the cache with DTDs or XML streams.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Resolvers.XmlPreloadedResolver> type is used as a resolver when automatic calls to the network are not desired or are not possible. For example, this type can be used for loading cached external DTDs. Or, you might use <xref:System.Xml.Resolvers.XmlPreloadedResolver> to preload well-known DTDs that are defined in XHTML 1.0. Preloading well-known DTDs does not start any network connections because these DTDs are already embedded in the System.Xml.Utils assembly. Currently, <xref:System.Xml.Resolvers.XmlPreloadedResolver> includes the DTDs that are defined in XHTML 1.0 and RSS 0.91.  
-  
+The <xref:System.Xml.Resolvers.XmlPreloadedResolver> type is used as a resolver when automatic calls to the network are not desired or are not possible. For example, this type can be used for loading cached external DTDs. Or, you might use <xref:System.Xml.Resolvers.XmlPreloadedResolver> to preload well-known DTDs that are defined in XHTML 1.0. Preloading well-known DTDs does not start any network connections because these DTDs are already embedded in the System.Xml.Utils assembly. Currently, <xref:System.Xml.Resolvers.XmlPreloadedResolver> includes the DTDs that are defined in XHTML 1.0 and RSS 0.91.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -144,10 +144,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Resolvers.XmlPreloadedResolver" /> class with the specified fallback resolver, preloaded well-known DTDs, and URI equality comparer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor overload if you want to customize URI comparison.  
-  
+Use this constructor overload if you want to customize URI comparison.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -335,10 +335,10 @@
         <returns>A <see cref="T:System.IO.Stream" /> or <see cref="T:System.IO.TextReader" /> object that corresponds to the actual source.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Resolvers.XmlPreloadedResolver> will first try to look up the resource in its store of preloaded data. If it cannot find it, it will call the fallback resolver's `GetEntity` method. If no fallback resolver was provided in the <xref:System.Xml.Resolvers.XmlPreloadedResolver> constructor, an exception is thrown.  
-  
+The <xref:System.Xml.Resolvers.XmlPreloadedResolver> will first try to look up the resource in its store of preloaded data. If it cannot find it, it will call the fallback resolver's `GetEntity` method. If no fallback resolver was provided in the <xref:System.Xml.Resolvers.XmlPreloadedResolver> constructor, an exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -429,10 +429,10 @@
         <summary>Removes the data that corresponds to the URI from the <see cref="T:System.Xml.Resolvers.XmlPreloadedResolver" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- No exception is thrown if the data does not exist in the store.  
-  
+No exception is thrown if the data does not exist in the store.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

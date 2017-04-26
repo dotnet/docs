@@ -19,10 +19,10 @@
     <summary>Manages serialization processes at run time. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class performs similar tasks as the <xref:System.Runtime.Serialization.ObjectManager>. The main difference is that the <xref:System.Runtime.Serialization.SerializationObjectManager> performs its tasks during serialization while the <xref:System.Runtime.Serialization.ObjectManager> performs its tasks during deserialization.  
-  
+This class performs similar tasks as the <xref:System.Runtime.Serialization.ObjectManager>. The main difference is that the <xref:System.Runtime.Serialization.SerializationObjectManager> performs its tasks during serialization while the <xref:System.Runtime.Serialization.ObjectManager> performs its tasks during deserialization.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,10 +72,10 @@
         <summary>Invokes the OnSerializing callback event if the type of the object has one; and registers the object for raising the OnSerialized event if the type of the object has one.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The OnSerializing callback event is created by applying the <xref:System.Runtime.Serialization.OnSerializingAttribute> attribute to a method on the registered object. Similarly, the OnSerialized event is created by applying the <xref:System.Runtime.Serialization.OnSerializedAttribute> attribute to a method on the registered object.  
-  
+The OnSerializing callback event is created by applying the <xref:System.Runtime.Serialization.OnSerializingAttribute> attribute to a method on the registered object. Similarly, the OnSerialized event is created by applying the <xref:System.Runtime.Serialization.OnSerializedAttribute> attribute to a method on the registered object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
         <summary>Registers the object upon which events will be raised.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.SerializationObjectManager.RaiseOnSerializedEvent%2A> method will be called on the registered object.  
-  
+The <xref:System.Runtime.Serialization.SerializationObjectManager.RaiseOnSerializedEvent%2A> method will be called on the registered object.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermissionAttribute">for providing serialization services. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />.</permission>

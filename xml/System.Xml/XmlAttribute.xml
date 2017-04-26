@@ -23,12 +23,12 @@
     <summary>Represents an attribute. Valid and default values for the attribute are defined in a document type definition (DTD) or schema.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attributes can be associated with an element. Use the <xref:System.Xml.XmlAttribute.OwnerElement%2A> property to get the <xref:System.Xml.XmlElement> to which the attribute belongs.  
-  
- The `XmlElement` class has several methods which allow you to access attribute nodes (<xref:System.Xml.XmlElement.GetAttribute%2A?displayProperty=fullName>, <xref:System.Xml.XmlElement.SetAttribute%2A?displayProperty=fullName>, <xref:System.Xml.XmlElement.RemoveAttribute%2A?displayProperty=fullName>, and so on). Additionally, you can call the <xref:System.Xml.XmlElement.Attributes%2A?displayProperty=fullName> property, which returns an <xref:System.Xml.XmlAttributeCollection> enabling you to access attributes by name or index from the collection.  
-  
+Attributes can be associated with an element. Use the <xref:System.Xml.XmlAttribute.OwnerElement%2A> property to get the <xref:System.Xml.XmlElement> to which the attribute belongs.  
+ 
+The `XmlElement` class has several methods which allow you to access attribute nodes (<xref:System.Xml.XmlElement.GetAttribute%2A?displayProperty=fullName>, <xref:System.Xml.XmlElement.SetAttribute%2A?displayProperty=fullName>, <xref:System.Xml.XmlElement.RemoveAttribute%2A?displayProperty=fullName>, and so on). Additionally, you can call the <xref:System.Xml.XmlElement.Attributes%2A?displayProperty=fullName> property, which returns an <xref:System.Xml.XmlAttributeCollection> enabling you to access attributes by name or index from the collection.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,10 +65,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlAttribute" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Do not instantiate an <xref:System.Xml.XmlAttribute> directly; instead, use methods such as <xref:System.Xml.XmlDocument.CreateAttribute%2A>.  
-  
+Do not instantiate an <xref:System.Xml.XmlAttribute> directly; instead, use methods such as <xref:System.Xml.XmlDocument.CreateAttribute%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,17 +103,17 @@
         <returns>The <see cref="T:System.Xml.XmlNode" /> added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `newChild` is already in the tree, it is first removed.  
+If the `newChild` is already in the tree, it is first removed.  
+ 
+If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ 
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
-  
-   
-  
+ 
 ## Examples  
- For an example of the <xref:System.Xml.XmlAttribute.AppendChild%2A> method, see the <xref:System.Xml.XmlNode.AppendChild%2A> method.  
-  
+For an example of the <xref:System.Xml.XmlAttribute.AppendChild%2A> method, see the <xref:System.Xml.XmlNode.AppendChild%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This node is of a type that does not allow child nodes of the type of the <paramref name="newChild" /> node.  
@@ -150,27 +150,27 @@
         <value>The location from which the node was loaded or String.Empty if the node has no base URI. Attribute nodes have the same base URI as their owner element. If an attribute node does not have an owner element, <see langword="BaseURI" /> returns String.Empty.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A networked XML document is comprised of chunks of data aggregated using various World Wide Web Consortium (W3C) standard inclusion mechanisms and therefore contains nodes that come from different places. The `BaseURI` tells you where these nodes came from.  
+A networked XML document is comprised of chunks of data aggregated using various World Wide Web Consortium (W3C) standard inclusion mechanisms and therefore contains nodes that come from different places. The `BaseURI` tells you where these nodes came from.  
+ 
+For additional information on `BaseURI` and how it behaves with other node types, see <xref:System.Xml.XmlNode.BaseURI%2A?displayProperty=fullName>.  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- For additional information on `BaseURI` and how it behaves with other node types, see <xref:System.Xml.XmlNode.BaseURI%2A?displayProperty=fullName>.  
-  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- The following example displays information on the attribute node, including its base URI.  
-  
- [!code-cpp[Classic WebData XmlAttribute.BaseURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.BaseURI Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlAttribute.BaseURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.BaseURI Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlAttribute.BaseURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.BaseURI Example/VB/source.vb#1)]  
-  
- The sample uses the file, `baseuri.xml`, as input.  
-  
- [!code-xml[Classic WebData XmlAttribute.BaseURI Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlAttribute.BaseURI Example/XML/source.xml#2)]  
-  
+The following example displays information on the attribute node, including its base URI.  
+ 
+[!code-cpp[Classic WebData XmlAttribute.BaseURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.BaseURI Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlAttribute.BaseURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.BaseURI Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlAttribute.BaseURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.BaseURI Example/VB/source.vb#1)]  
+ 
+The sample uses the file, `baseuri.xml`, as input.  
+ 
+[!code-xml[Classic WebData XmlAttribute.BaseURI Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlAttribute.BaseURI Example/XML/source.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -206,25 +206,25 @@
         <returns>The duplicate node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method serves as a copy constructor for nodes. The cloned node has no parent (<xref:System.Xml.XmlAttribute.ParentNode%2A> returns `null`).  
+This method serves as a copy constructor for nodes. The cloned node has no parent (<xref:System.Xml.XmlAttribute.ParentNode%2A> returns `null`).  
+ 
+Cloning an unspecified attribute returns a specified attribute (<xref:System.Xml.XmlAttribute.Specified%2A> returns `true`).  
+ 
   
- Cloning an unspecified attribute returns a specified attribute (<xref:System.Xml.XmlAttribute.Specified%2A> returns `true`).  
-  
-   
-  
+ 
 ## Examples  
- The following example uses `CloneNode` to add an attribute to two different element nodes.  
-  
- [!code-cpp[Classic WebData XmlAttribute.CloneNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.CloneNode Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlAttribute.CloneNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.CloneNode Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlAttribute.CloneNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.CloneNode Example/VB/source.vb#1)]  
-  
- The example uses the file, `2elems.xml`, as input.  
-  
- [!code-xml[Classic WebData XmlAttribute.CloneNode Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlAttribute.CloneNode Example/XML/source.xml#2)]  
-  
+The following example uses `CloneNode` to add an attribute to two different element nodes.  
+ 
+[!code-cpp[Classic WebData XmlAttribute.CloneNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.CloneNode Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlAttribute.CloneNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.CloneNode Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlAttribute.CloneNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.CloneNode Example/VB/source.vb#1)]  
+ 
+The example uses the file, `2elems.xml`, as input.  
+ 
+[!code-xml[Classic WebData XmlAttribute.CloneNode Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlAttribute.CloneNode Example/XML/source.xml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,12 +255,12 @@
         <value>The concatenated values of the node and all its children. For attribute nodes, this property has the same functionality as the <see cref="P:System.Xml.XmlAttribute.Value" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property replaces all the children with the parsed contents of the given string.  
-  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
+Setting this property replaces all the children with the parsed contents of the given string.  
+ 
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,10 +291,10 @@
         <value>The attribute value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is a Microsoft extension to the Document Object Model (DOM).  
-  
+This property is a Microsoft extension to the Document Object Model (DOM).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">The XML specified when setting this property is not well-formed.</exception>
@@ -332,19 +332,19 @@
         <returns>The <see cref="T:System.Xml.XmlNode" /> inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `refChild` is `null`, insert `newChild` at the beginning of the list of child nodes. If `newChild` is an <xref:System.Xml.XmlDocumentFragment> object, its child nodes are inserted, in the same order, after `refChild`. If the `newChild` is already in the tree, it is first removed.  
+If `refChild` is `null`, insert `newChild` at the beginning of the list of child nodes. If `newChild` is an <xref:System.Xml.XmlDocumentFragment> object, its child nodes are inserted, in the same order, after `refChild`. If the `newChild` is already in the tree, it is first removed.  
+ 
+If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- For an example of the <xref:System.Xml.XmlAttribute.InsertAfter%2A> method see the <xref:System.Xml.XmlNode.InsertAfter%2A> method.  
-  
+For an example of the <xref:System.Xml.XmlAttribute.InsertAfter%2A> method see the <xref:System.Xml.XmlNode.InsertAfter%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This node is of a type that does not allow child nodes of the type of the <paramref name="newChild" /> node.  
@@ -389,17 +389,17 @@
         <returns>The <see cref="T:System.Xml.XmlNode" /> inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `refChild` is `null`, insert `newChild` at the end of the list of child nodes. If `newChild` is an <xref:System.Xml.XmlDocumentFragment> object, its child nodes are inserted, in the same order, before `refChild`. If the `newChild` is already in the tree, it is first removed.  
+If `refChild` is `null`, insert `newChild` at the end of the list of child nodes. If `newChild` is an <xref:System.Xml.XmlDocumentFragment> object, its child nodes are inserted, in the same order, before `refChild`. If the `newChild` is already in the tree, it is first removed.  
+ 
+If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ 
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
-  
-   
-  
+ 
 ## Examples  
- For an example of the <xref:System.Xml.XmlAttribute.InsertBefore%2A> method, see the <xref:System.Xml.XmlNode.InsertBefore%2A> method.  
-  
+For an example of the <xref:System.Xml.XmlAttribute.InsertBefore%2A> method, see the <xref:System.Xml.XmlNode.InsertBefore%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current node is of a type that does not allow child nodes of the type of the <paramref name="newChild" /> node.  
@@ -438,19 +438,19 @@
         <value>The name of the attribute node with the prefix removed. In the following example &lt;book bk:genre= 'novel'&gt;, the <see langword="LocalName" /> of the attribute is <see langword="genre" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the node does not have a prefix, `LocalName` is the same as <xref:System.Xml.XmlAttribute.Name%2A>.  
+If the node does not have a prefix, `LocalName` is the same as <xref:System.Xml.XmlAttribute.Name%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays information on each of the nodes in the attribute collection.  
-  
- [!code-cpp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/VB/source.vb#1)]  
-  
+The following example displays information on each of the nodes in the attribute collection.  
+ 
+[!code-cpp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -481,14 +481,14 @@
         <value>The qualified name of the attribute node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays information on each of the nodes in the attribute collection.  
-  
- [!code-cpp[Classic WebData XmlAttribute.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.Name Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlAttribute.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.Name Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlAttribute.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.Name Example/VB/source.vb#1)]  
-  
+The following example displays information on each of the nodes in the attribute collection.  
+ 
+[!code-cpp[Classic WebData XmlAttribute.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.Name Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlAttribute.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.Name Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlAttribute.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.Name Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -519,19 +519,19 @@
         <value>The namespace URI of this node. If the attribute is not explicitly given a namespace, this property returns String.Empty.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An attribute does not inherit its namespace from the element it is attached to. If an attribute is not explicitly given a namespace, the namespace URI is considered to be String.Empty.  
+An attribute does not inherit its namespace from the element it is attached to. If an attribute is not explicitly given a namespace, the namespace URI is considered to be String.Empty.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays information on each of the nodes in the attribute collection.  
-  
- [!code-cpp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/VB/source.vb#1)]  
-  
+The following example displays information on each of the nodes in the attribute collection.  
+ 
+[!code-cpp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -589,14 +589,14 @@
         <value>An XML document to which this node belongs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an attribute and displays its `OwnerDocument`.  
-  
- [!code-cpp[Classic WebData XmlAttribute.OwnerDocument Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.OwnerDocument Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlAttribute.OwnerDocument Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.OwnerDocument Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlAttribute.OwnerDocument Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.OwnerDocument Example/VB/source.vb#1)]  
-  
+The following example creates an attribute and displays its `OwnerDocument`.  
+ 
+[!code-cpp[Classic WebData XmlAttribute.OwnerDocument Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.OwnerDocument Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlAttribute.OwnerDocument Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.OwnerDocument Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlAttribute.OwnerDocument Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.OwnerDocument Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -627,14 +627,14 @@
         <value>The <see langword="XmlElement" /> that the attribute belongs to or <see langword="null" /> if this attribute is not part of an <see langword="XmlElement" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an attribute and displays the `OwnerElement` of the attribute.  
-  
- [!code-cpp[Classic WebData XmlAttribute.OwnerElement Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.OwnerElement Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlAttribute.OwnerElement Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.OwnerElement Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlAttribute.OwnerElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.OwnerElement Example/VB/source.vb#1)]  
-  
+The following example creates an attribute and displays the `OwnerElement` of the attribute.  
+ 
+[!code-cpp[Classic WebData XmlAttribute.OwnerElement Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.OwnerElement Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlAttribute.OwnerElement Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.OwnerElement Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlAttribute.OwnerElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.OwnerElement Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -665,10 +665,10 @@
         <value>For <see langword="XmlAttribute" /> nodes, this property always returns <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Xml.XmlAttribute.OwnerElement%2A> property to get the <xref:System.Xml.XmlElement> to which the attribute belongs.  
-  
+Use the <xref:System.Xml.XmlAttribute.OwnerElement%2A> property to get the <xref:System.Xml.XmlElement> to which the attribute belongs.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -699,19 +699,19 @@
         <value>The namespace prefix of this node. If there is no prefix, this property returns String.Empty.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because changing the prefix of an attribute does not change its namespace URI, changing the prefix of an attribute that is known to have a default value does not create a new attribute with the default value and the original prefix.  
+Because changing the prefix of an attribute does not change its namespace URI, changing the prefix of an attribute that is known to have a default value does not create a new attribute with the default value and the original prefix.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays information on each of the nodes in the attribute collection.  
-  
- [!code-cpp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/VB/source.vb#1)]  
-  
+The following example displays information on each of the nodes in the attribute collection.  
+ 
+[!code-cpp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">This node is read-only.</exception>
@@ -758,19 +758,19 @@
         <returns>The <see cref="T:System.Xml.XmlNode" /> added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `newChild` is already in the tree, it is first removed.  
+If the `newChild` is already in the tree, it is first removed.  
+ 
+If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ 
+This method is a Microsoft extension to the Document Object Model (DOM).  
+ 
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
-  
- This method is a Microsoft extension to the Document Object Model (DOM).  
-  
-   
-  
+ 
 ## Examples  
- For an example of the <xref:System.Xml.XmlAttribute.PrependChild%2A> method, see the <xref:System.Xml.XmlNode.PrependChild%2A> method.  
-  
+For an example of the <xref:System.Xml.XmlAttribute.PrependChild%2A> method, see the <xref:System.Xml.XmlNode.PrependChild%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This node is of a type that does not allow child nodes of the type of the <paramref name="newChild" /> node.  
@@ -811,10 +811,10 @@
         <returns>The <see cref="T:System.Xml.XmlNode" /> removed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- For an example of the <xref:System.Xml.XmlAttribute.RemoveChild%2A> method, see the <xref:System.Xml.XmlNode.RemoveChild%2A> method.  
-  
+For an example of the <xref:System.Xml.XmlAttribute.RemoveChild%2A> method, see the <xref:System.Xml.XmlNode.RemoveChild%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="oldChild" /> is not a child of this node. Or this node is read-only.</exception>
@@ -852,17 +852,17 @@
         <returns>The <see cref="T:System.Xml.XmlNode" /> replaced.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the `newChild` is already in the tree, it is first removed.  
+If the `newChild` is already in the tree, it is first removed.  
+ 
+If the `newChild` was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document.  
+ 
   
- If the `newChild` was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document.  
-  
-   
-  
+ 
 ## Examples  
- For an example of the <xref:System.Xml.XmlAttribute.ReplaceChild%2A> method, see the <xref:System.Xml.XmlNode.ReplaceChild%2A> method.  
-  
+For an example of the <xref:System.Xml.XmlAttribute.ReplaceChild%2A> method, see the <xref:System.Xml.XmlNode.ReplaceChild%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This node is of a type that does not allow child nodes of the type of the <paramref name="newChild" /> node.  
@@ -897,10 +897,10 @@
         <value>An <see cref="T:System.Xml.Schema.IXmlSchemaInfo" /> containing the post-schema-validation-infoset of this node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlAttribute.SchemaInfo%2A> property is set when this node is validated.  
-  
+The <xref:System.Xml.XmlAttribute.SchemaInfo%2A> property is set when this node is validated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -932,18 +932,18 @@
           <see langword="true" /> if this attribute was explicitly given a value in the original instance document; otherwise, <see langword="false" />. A value of <see langword="false" /> indicates that the value of the attribute came from the DTD.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The implementation is in charge of this property, not the user. If the user changes the value of the attribute (even if it ends up having the same value as the default/fixed value), then the specified flag is automatically flipped to `true`. To re-specify the attribute as the default/fixed value from the DTD, the user must delete the attribute. The implementation then makes a new attribute available with specified set to `false` and the default/fixed value (if one exists).  
-  
- In summary:  
-  
+The implementation is in charge of this property, not the user. If the user changes the value of the attribute (even if it ends up having the same value as the default/fixed value), then the specified flag is automatically flipped to `true`. To re-specify the attribute as the default/fixed value from the DTD, the user must delete the attribute. The implementation then makes a new attribute available with specified set to `false` and the default/fixed value (if one exists).  
+ 
+In summary:  
+ 
 1.  If the attribute has an assigned value in the document, `Specified` is `true`, and the value is the assigned value.  
-  
+ 
 2.  If the attribute has no assigned value in the document and has a default/fixed value in the DTD, `Specified` is `false`, and the value is the default/fixed value in the DTD.  
-  
+ 
 3.  Otherwise, the attribute does not appear in the structure model of the document.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -974,14 +974,14 @@
         <value>The value returned depends on the <see cref="P:System.Xml.XmlNode.NodeType" /> of the node. For <see langword="XmlAttribute" /> nodes, this property is the value of attribute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example displays information on each of the nodes in the attribute collection.  
-  
- [!code-cpp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/VB/source.vb#1)]  
-  
+The following example displays information on each of the nodes in the attribute collection.  
+ 
+[!code-cpp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlAttribute.NamespaceURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlAttribute.NamespaceURI Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The node is read-only and a set operation is called.</exception>
@@ -1016,10 +1016,10 @@
         <summary>Saves all the children of the node to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlAttribute.InnerXml%2A> property.  
-  
+This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlAttribute.InnerXml%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1053,10 +1053,10 @@
         <summary>Saves the node to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlNode.OuterXml%2A?displayProperty=fullName> property.  
-  
+This method is a Microsoft extension to the Document Object Model (DOM). It is functionally equivalent to the <xref:System.Xml.XmlNode.OuterXml%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

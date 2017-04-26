@@ -24,10 +24,10 @@
     <summary>Holds the stack of server channel sinks.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class makes a link demand. A security exception is thrown if the immediate caller does not have infrastructure permission. See [Link Demands](~/docs/framework/misc/link-demands.md) for more information.  
-  
+This class makes a link demand. A security exception is thrown if the immediate caller does not have infrastructure permission. See [Link Demands](~/docs/framework/misc/link-demands.md) for more information.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
@@ -74,10 +74,10 @@
         <summary>Requests asynchronous processing of a method call on the sinks in the current sink stack.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method initializes asynchronous processing on the top sink in the current sink stack. For additional information, see the <xref:System.Runtime.Remoting.Channels.IServerChannelSink.AsyncProcessResponse%2A> method.  
-  
+This method initializes asynchronous processing on the top sink in the current sink stack. For additional information, see the <xref:System.Runtime.Remoting.Channels.IServerChannelSink.AsyncProcessResponse%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Remoting.RemotingException">The current sink stack is empty.</exception>
@@ -108,10 +108,10 @@
         <returns>The <see cref="T:System.IO.Stream" /> onto which the specified message is to be serialized.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns the stream returned by the <xref:System.Runtime.Remoting.Channels.IServerChannelSink.GetResponseStream%2A?displayProperty=fullName> called with the `msg` and `headers` parameters (<xref:System.Runtime.Remoting.Channels.IServerChannelSink.GetResponseStream%2A> (`msg`, `headers`)) on the top sink in the current sink stack. The top sink in the sink stack remains unchanged.  
-  
+This method returns the stream returned by the <xref:System.Runtime.Remoting.Channels.IServerChannelSink.GetResponseStream%2A?displayProperty=fullName> called with the `msg` and `headers` parameters (<xref:System.Runtime.Remoting.Channels.IServerChannelSink.GetResponseStream%2A> (`msg`, `headers`)) on the top sink in the current sink stack. The top sink in the sink stack remains unchanged.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Remoting.RemotingException">The sink stack is empty.</exception>
@@ -166,10 +166,10 @@
         <summary>Pushes the specified sink and information associated with it onto the sink stack.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The information generated on the request side and specified in the `state` parameter is returned in the `state` parameter of the <xref:System.Runtime.Remoting.Channels.IServerChannelSink.AsyncProcessResponse%2A> method on the corresponding sink.  
-  
+The information generated on the request side and specified in the `state` parameter is returned in the `state` parameter of the <xref:System.Runtime.Remoting.Channels.IServerChannelSink.AsyncProcessResponse%2A> method on the corresponding sink.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
@@ -196,12 +196,12 @@
         <summary>Provides a <see cref="T:System.AsyncCallback" /> delegate to handle a callback after a message has been dispatched asynchronously.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The dispatched message represents a request method call on a remote object.  
-  
- The <xref:System.Runtime.Remoting.Channels.ServerChannelSinkStack.ServerCallback%2A> method is intended for use only by the .NET Framework remoting infrastructure. You should not call it directly.  
-  
+The dispatched message represents a request method call on a remote object.  
+ 
+The <xref:System.Runtime.Remoting.Channels.ServerChannelSinkStack.ServerCallback%2A> method is intended for use only by the .NET Framework remoting infrastructure. You should not call it directly.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
@@ -230,10 +230,10 @@
         <summary>Stores a message sink and its associated state for later asynchronous processing.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Channels.ServerChannelSinkStack.Store%2A> method is intended for use only by the .NET Framework remoting infrastructure. You should not call it directly.  
-  
+The <xref:System.Runtime.Remoting.Channels.ServerChannelSinkStack.Store%2A> method is intended for use only by the .NET Framework remoting infrastructure. You should not call it directly.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Remoting.RemotingException">The current sink stack is empty.  
@@ -267,12 +267,12 @@
         <summary>Stores a message sink and its associated state, and then dispatches a message asynchronously, using the sink just stored and any other stored sinks.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Channels.ServerChannelSinkStack.StoreAndDispatch%2A> method is intended for use only by the .NET Framework remoting infrastructure. You should not call it directly.  
-  
- The method should be only called by a transport sink to complete an asynchronous dispatch.  
-  
+The <xref:System.Runtime.Remoting.Channels.ServerChannelSinkStack.StoreAndDispatch%2A> method is intended for use only by the .NET Framework remoting infrastructure. You should not call it directly.  
+ 
+The method should be only called by a transport sink to complete an asynchronous dispatch.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>

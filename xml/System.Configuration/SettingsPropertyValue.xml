@@ -14,10 +14,10 @@
     <summary>Contains the value of a settings property that can be loaded and stored by an instance of <see cref="T:System.Configuration.SettingsBase" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A class representation of the actual piece of profile data. A <xref:System.Configuration.SettingsProperty> instance describes a value stored within an instance of a <xref:System.Configuration.SettingsPropertyValue> object.  
-  
+A class representation of the actual piece of profile data. A <xref:System.Configuration.SettingsProperty> instance describes a value stored within an instance of a <xref:System.Configuration.SettingsPropertyValue> object.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,14 +39,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingsPropertyValue" /> class, based on supplied parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- The <xref:System.Configuration.SettingsProperty> object describes information about the value stored by the <xref:System.Configuration.SettingsPropertyValue> object.  
-  
+ 
+The <xref:System.Configuration.SettingsProperty> object describes information about the value stored by the <xref:System.Configuration.SettingsPropertyValue> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -69,10 +69,10 @@
           <see langword="true" /> if the value of a <see cref="T:System.Configuration.SettingsProperty" /> object has been deserialized; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Deserialization of property values is only performed on demand.  
-  
+Deserialization of property values is only performed on demand.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,14 +95,14 @@
           <see langword="true" /> if the value of a <see cref="T:System.Configuration.SettingsProperty" /> object has changed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Configuration.SettingsPropertyValue.IsDirty%2A> property indicates that the value stored by this class has changed. The default is `false`. The <xref:System.Configuration.SettingsPropertyValue.IsDirty%2A> property is set to `true` under the following conditions:  
-  
+The <xref:System.Configuration.SettingsPropertyValue.IsDirty%2A> property indicates that the value stored by this class has changed. The default is `false`. The <xref:System.Configuration.SettingsPropertyValue.IsDirty%2A> property is set to `true` under the following conditions:  
+ 
 1.  The value contained in the <xref:System.Configuration.SettingsPropertyValue> object is changed.  
-  
+ 
 2.  The value contained in the <xref:System.Configuration.SettingsPropertyValue> object is accessed, and the value is not a string or a primitive type such as `int`, `float`, `real`, or `DateTime`. When the value managed by a <xref:System.Configuration.SettingsPropertyValue> object is a complex type (for example an <xref:System.Collections.ArrayList>), there is no way for a <xref:System.Configuration.SettingsPropertyValue> object to detect when changes have been made. As a result, the <xref:System.Configuration.SettingsPropertyValue> object pessimistically assumes that a complex type is dirty once it has been accessed from the <xref:System.Configuration.SettingsPropertyValue.PropertyValue%2A> property.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,15 +185,15 @@
         <value>The serialized value of a <see cref="T:System.Configuration.SettingsProperty" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Configuration.SettingsPropertyValue> instance detects that the <xref:System.Configuration.SettingsPropertyValue.PropertyValue%2A> property has changed since the last time the <xref:System.Configuration.SettingsPropertyValue.SerializedValue%2A> property was called, it will cause <xref:System.Configuration.SettingsPropertyValue.PropertyValue%2A> property to be converted to its serialized representation. The specific serialization mechanism to be used is defined by the <xref:System.Configuration.SettingsProperty.SerializeAs%2A> property on the <xref:System.Configuration.SettingsProperty> instance associated with the <xref:System.Configuration.SettingsPropertyValue> instance. The current supported serialization options are to convert the object to a string using a string type converter, serialize using the <xref:System.Xml.Serialization.XmlSerializer>, or perform binary serialization.  
-  
+If the <xref:System.Configuration.SettingsPropertyValue> instance detects that the <xref:System.Configuration.SettingsPropertyValue.PropertyValue%2A> property has changed since the last time the <xref:System.Configuration.SettingsPropertyValue.SerializedValue%2A> property was called, it will cause <xref:System.Configuration.SettingsPropertyValue.PropertyValue%2A> property to be converted to its serialized representation. The specific serialization mechanism to be used is defined by the <xref:System.Configuration.SettingsProperty.SerializeAs%2A> property on the <xref:System.Configuration.SettingsProperty> instance associated with the <xref:System.Configuration.SettingsPropertyValue> instance. The current supported serialization options are to convert the object to a string using a string type converter, serialize using the <xref:System.Xml.Serialization.XmlSerializer>, or perform binary serialization.  
+ 
 > [!NOTE]
 >  The underlying serializers may throw exceptions during the serialization process.  
-  
- The immediate caller code requires the <xref:System.Security.Permissions.SecurityPermissionFlag> permission (one of the permissions available as part of <xref:System.Security.Permissions.SecurityPermission>) to call either the getter or setter for this property.  This permission is enforced with a <xref:System.Security.Permissions.SecurityAction> enumeration value.  
-  
+ 
+The immediate caller code requires the <xref:System.Security.Permissions.SecurityPermissionFlag> permission (one of the permissions available as part of <xref:System.Security.Permissions.SecurityPermission>) to call either the getter or setter for this property.  This permission is enforced with a <xref:System.Security.Permissions.SecurityAction> enumeration value.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The serialization options for the property indicated the use of a string type converter, but a type converter was not available.</exception>

@@ -49,10 +49,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpItemsRejectedEventArgs" /> class that has the specified parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Every rejected item must have a corresponding rejection reason.  
-  
+Every rejected item must have a corresponding rejection reason.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The count of <paramref name="rejectedItems " />does not equal the count of rejection <paramref name="reasons" />.</exception>

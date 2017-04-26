@@ -60,10 +60,10 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Xaml.XamlBackgroundReader" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In addition to calling the base implementation, this `Dispose` implementation disposes related writers and event handlers.  
-  
+In addition to calling the base implementation, this `Dispose` implementation disposes related writers and event handlers.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,10 +251,10 @@
         <summary>Creates and starts a new <see cref="T:System.Threading.Thread" /> (constructed from <see cref="T:System.Threading.ParameterizedThreadStart" />) that handles a named thread for the <see cref="T:System.Xaml.XamlReader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default, the thread is named `XAML reader thread`.  
-  
+By default, the thread is named `XAML reader thread`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The thread is already started.</exception>

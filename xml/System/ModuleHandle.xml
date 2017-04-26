@@ -24,10 +24,10 @@
     <summary>Represents a runtime handle for a module.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ModuleHandle.ResolveFieldHandle%2A>, <xref:System.ModuleHandle.ResolveMethodHandle%2A>, and <xref:System.ModuleHandle.ResolveTypeHandle%2A> methods provide efficient resolution of metadata tokens to runtime handles for fields, methods, and types in the current module.  
-  
+The <xref:System.ModuleHandle.ResolveFieldHandle%2A>, <xref:System.ModuleHandle.ResolveMethodHandle%2A>, and <xref:System.ModuleHandle.ResolveTypeHandle%2A> methods provide efficient resolution of metadata tokens to runtime handles for fields, methods, and types in the current module.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -247,12 +247,12 @@
         <value>A 32-bit integer representing the metadata stream version. The high-order two bytes represent the major version number, and the low-order two bytes represent the minor version number.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  For more information on the metadata header, see the Partition II: Metadata Definition and Semantics documentation. The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -286,37 +286,37 @@
           <see langword="true" /> if the <see cref="T:System.ModuleHandle" /> structures are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ModuleHandle.Equals%28System.ModuleHandle%2CSystem.ModuleHandle%29?displayProperty=fullName>]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (ModuleHandle left, ModuleHandle right);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.ModuleHandle left, valuetype System.ModuleHandle right) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ModuleHandle.op_Inequality(System.ModuleHandle,System.ModuleHandle)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="left" Type="System.ModuleHandle" />
-        <Parameter Name="right" Type="System.ModuleHandle" />
-      </Parameters>
-      <Docs>
-        <param name="left">The <see cref="T:System.ModuleHandle" /> structure to the left of the inequality operator.</param>
-        <param name="right">The <see cref="T:System.ModuleHandle" /> structure to the right of the inequality operator.</param>
-        <summary>Tests whether two <see cref="T:System.ModuleHandle" /> structures are unequal.</summary>
-        <returns>
-          <see langword="true" /> if the <see cref="T:System.ModuleHandle" /> structures are unequal; otherwise, <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (ModuleHandle left, ModuleHandle right);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.ModuleHandle left, valuetype System.ModuleHandle right) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.ModuleHandle.op_Inequality(System.ModuleHandle,System.ModuleHandle)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>mscorlib</AssemblyName>
+       <AssemblyVersion>2.0.5.0</AssemblyVersion>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <AssemblyInfo>
+       <AssemblyName>netstandard</AssemblyName>
+       <AssemblyVersion>2.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="left" Type="System.ModuleHandle" />
+       <Parameter Name="right" Type="System.ModuleHandle" />
+     </Parameters>
+     <Docs>
+       <param name="left">The <see cref="T:System.ModuleHandle" /> structure to the left of the inequality operator.</param>
+       <param name="right">The <see cref="T:System.ModuleHandle" /> structure to the right of the inequality operator.</param>
+       <summary>Tests whether two <see cref="T:System.ModuleHandle" /> structures are unequal.</summary>
+       <returns>
+         <see langword="true" /> if the <see cref="T:System.ModuleHandle" /> structures are unequal; otherwise, <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ModuleHandle.Equals%28System.ModuleHandle%2CSystem.ModuleHandle%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -347,13 +347,13 @@
         <returns>A <see cref="T:System.RuntimeFieldHandle" /> for the field identified by <paramref name="fieldToken" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To resolve a metadata token that identifies a field whose parent `TypeSpec` has a signature containing element type `var` or `mvar`, use the <xref:System.ModuleHandle.ResolveFieldHandle%28System.Int32%2CSystem.RuntimeTypeHandle%5B%5D%2CSystem.RuntimeTypeHandle%5B%5D%29> method overload, which allows you to supply the necessary context.  
-  
+To resolve a metadata token that identifies a field whose parent `TypeSpec` has a signature containing element type `var` or `mvar`, use the <xref:System.ModuleHandle.ResolveFieldHandle%28System.Int32%2CSystem.RuntimeTypeHandle%5B%5D%2CSystem.RuntimeTypeHandle%5B%5D%29> method overload, which allows you to supply the necessary context.  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.BadImageFormatException">
@@ -399,12 +399,12 @@
         <returns>A <see cref="T:System.RuntimeFieldHandle" /> for the field identified by <paramref name="fieldToken" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.BadImageFormatException">
@@ -448,13 +448,13 @@
         <returns>A <see cref="T:System.RuntimeMethodHandle" /> for the method or constructor identified by <paramref name="methodToken" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To resolve a metadata token for a `MethodSpec` whose signature contains element type `var` or `mvar`, use the <xref:System.ModuleHandle.ResolveMethodHandle%28System.Int32%2CSystem.RuntimeTypeHandle%5B%5D%2CSystem.RuntimeTypeHandle%5B%5D%29> method overload, which allows you to supply the necessary context.  
-  
+To resolve a metadata token for a `MethodSpec` whose signature contains element type `var` or `mvar`, use the <xref:System.ModuleHandle.ResolveMethodHandle%28System.Int32%2CSystem.RuntimeTypeHandle%5B%5D%2CSystem.RuntimeTypeHandle%5B%5D%29> method overload, which allows you to supply the necessary context.  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.BadImageFormatException">
@@ -500,12 +500,12 @@
         <returns>A <see cref="T:System.RuntimeMethodHandle" /> for the method or constructor identified by <paramref name="methodToken" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.BadImageFormatException">
@@ -549,13 +549,13 @@
         <returns>A <see cref="T:System.RuntimeTypeHandle" /> for the type identified by <paramref name="typeToken" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To resolve a metadata token for a `TypeSpec` whose signature contains element type `var` or `mvar`, use the <xref:System.ModuleHandle.ResolveTypeHandle%28System.Int32%2CSystem.RuntimeTypeHandle%5B%5D%2CSystem.RuntimeTypeHandle%5B%5D%29> method overload, which allows you to supply the necessary context.  
-  
+To resolve a metadata token for a `TypeSpec` whose signature contains element type `var` or `mvar`, use the <xref:System.ModuleHandle.ResolveTypeHandle%28System.Int32%2CSystem.RuntimeTypeHandle%5B%5D%2CSystem.RuntimeTypeHandle%5B%5D%29> method overload, which allows you to supply the necessary context.  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.BadImageFormatException">
@@ -601,12 +601,12 @@
         <returns>A <see cref="T:System.RuntimeTypeHandle" /> for the type identified by <paramref name="typeToken" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.BadImageFormatException">

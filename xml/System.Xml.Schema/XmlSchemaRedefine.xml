@@ -19,18 +19,18 @@
     <summary>Represents the <see langword="redefine" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). This class can be used to allow simple and complex types, groups and attribute groups from external schema files to be redefined in the current schema. This class can also be used to provide versioning for the schema elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class does the following:  
-  
- The `redefine` element requires that the external elements exist in the same target namespace as the redefining schema. Schemas without a namespace can also be redefined using the `redefine` element, in which case the redefined components become part of the target namespace of the schema.  
-  
- The definitions within the `redefine` element itself must use their current definitions as their base type definition. Attribute group definitions and model group definitions must include one and only one reference to themselves. Note that not all the definitions of the redefined schema document must be redefined.  
-  
- Redefining elements may cause unexpected results, such as ill-formed definitions, on other type definitions that are based on the redefined definitions.  
-  
- This provides a mechanism for versioning of schema types.  
-  
+This class does the following:  
+ 
+The `redefine` element requires that the external elements exist in the same target namespace as the redefining schema. Schemas without a namespace can also be redefined using the `redefine` element, in which case the redefined components become part of the target namespace of the schema.  
+ 
+The definitions within the `redefine` element itself must use their current definitions as their base type definition. Attribute group definitions and model group definitions must include one and only one reference to themselves. Note that not all the definitions of the redefined schema document must be redefined.  
+ 
+Redefining elements may cause unexpected results, such as ill-formed definitions, on other type definitions that are based on the redefined definitions.  
+ 
+This provides a mechanism for versioning of schema types.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -33,10 +33,10 @@
           <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object for which a subscription was requested.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is `null` if the subscription is completed for an instance of <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> that does not have an associated <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
-  
+This value is `null` if the subscription is completed for an instance of <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> that does not have an associated <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -59,10 +59,10 @@
           <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object for which a subscription was requested.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is `null` if the subscription is requested on an instance of <xref:System.Net.PeerToPeer.Collaboration.PeerContact> that does not exist in the "People Near Me" scope.  
-  
+This value is `null` if the subscription is requested on an instance of <xref:System.Net.PeerToPeer.Collaboration.PeerContact> that does not exist in the "People Near Me" scope.  
+ 
  ]]></format>
         </remarks>
       </Docs>

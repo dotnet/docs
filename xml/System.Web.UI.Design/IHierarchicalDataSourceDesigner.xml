@@ -11,10 +11,10 @@
     <summary>Provides design-time support in a visual designer for a class that is derived from the <see cref="T:System.Web.UI.HierarchicalDataSourceControl" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, when creating a new data source class for hierarchical data and an accompanying designer, you would inherit the <xref:System.Web.UI.Design.HierarchicalDataSourceDesigner> class rather than implement the <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner> interface.  
-  
+Typically, when creating a new data source class for hierarchical data and an accompanying designer, you would inherit the <xref:System.Web.UI.Design.HierarchicalDataSourceDesigner> class rather than implement the <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner> interface.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -37,10 +37,10 @@
           <see langword="true" /> if the underlying data source has a configuration wizard that can be launched with <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" />, otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanConfigure%2A> property is used by a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], to determine whether to display a **Configure** command at design time.  
-  
+The <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanConfigure%2A> property is used by a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], to determine whether to display a **Configure** command at design time.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -66,10 +66,10 @@
           <see langword="true" /> if <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> can be called; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema%2A> property is used by a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], to determine whether to display a **Refresh Schema** command at design time.  
-  
+The <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema%2A> property is used by a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], to determine whether to display a **Refresh Schema** command at design time.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -219,10 +219,10 @@
         <summary>Turns off events in the data source control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can restore events with the <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner.ResumeDataSourceEvents%2A> method.  
-  
+You can restore events with the <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner.ResumeDataSourceEvents%2A> method.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

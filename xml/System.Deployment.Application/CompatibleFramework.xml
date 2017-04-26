@@ -32,10 +32,10 @@
         <value>A string that represents the profile.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the .NET Framework version is [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)], the <xref:System.Deployment.Application.CompatibleFramework.Profile%2A> property returns "Client". If the .NET Framework version is [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Deployment.Application.CompatibleFramework.Profile%2A> property returns "Full".  
-  
+If the .NET Framework version is [!INCLUDE[net_client_v40_long](~/includes/net-client-v40-long-md.md)], the <xref:System.Deployment.Application.CompatibleFramework.Profile%2A> property returns "Client". If the .NET Framework version is [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Deployment.Application.CompatibleFramework.Profile%2A> property returns "Full".  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -57,10 +57,10 @@
         <value>A string that represents the runtime version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- New versions of the .NET Framework may operate on previously-released versions of the runtime.  
-  
+New versions of the .NET Framework may operate on previously-released versions of the runtime.  
+ 
  ]]></format>
         </remarks>
       </Docs>

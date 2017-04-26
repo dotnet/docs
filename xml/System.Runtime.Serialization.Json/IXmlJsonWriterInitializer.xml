@@ -21,10 +21,10 @@
     <summary>Specifies the interface for initializing a JavaScript Object Notation (JSON) writer when reusing them to write to a particular output stream.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlDictionaryWriter> objects created by the <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter%2A> methods implement this interface and when created are immediately ready to write JSON-encoded data. But if a user wants to reuse the same <xref:System.Xml.XmlDictionaryWriter> object to write a new JSON document to another output stream, then the writer must be initialized to the appropriate stream by using the <xref:System.Runtime.Serialization.Json.IXmlJsonWriterInitializer.SetOutput%28System.IO.Stream%2CSystem.Text.Encoding%2CSystem.Boolean%29> method.  
-  
+The <xref:System.Xml.XmlDictionaryWriter> objects created by the <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter%2A> methods implement this interface and when created are immediately ready to write JSON-encoded data. But if a user wants to reuse the same <xref:System.Xml.XmlDictionaryWriter> object to write a new JSON document to another output stream, then the writer must be initialized to the appropriate stream by using the <xref:System.Runtime.Serialization.Json.IXmlJsonWriterInitializer.SetOutput%28System.IO.Stream%2CSystem.Text.Encoding%2CSystem.Boolean%29> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -58,12 +58,12 @@
         <summary>Initializes (or reinitializes) a JavaScript Object Notation (JSON) writer to a specified output stream with specified character encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlDictionaryWriter> objects created by the <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter%2A> methods implement this interface and when created are immediately ready to write JSON-encoded data. But if a user wants to reuse the same <xref:System.Xml.XmlDictionaryWriter> object to write a new JSON document to another output stream, then the writer must be initialized to the appropriate stream by using the <xref:System.Runtime.Serialization.Json.IXmlJsonWriterInitializer.SetOutput%28System.IO.Stream%2CSystem.Text.Encoding%2CSystem.Boolean%29> method.  
-  
- The writers created by <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory> can handle the UTF-8 and the UTF-16 (big- or little-endian) encodings.  
-  
+The <xref:System.Xml.XmlDictionaryWriter> objects created by the <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory.CreateJsonWriter%2A> methods implement this interface and when created are immediately ready to write JSON-encoded data. But if a user wants to reuse the same <xref:System.Xml.XmlDictionaryWriter> object to write a new JSON document to another output stream, then the writer must be initialized to the appropriate stream by using the <xref:System.Runtime.Serialization.Json.IXmlJsonWriterInitializer.SetOutput%28System.IO.Stream%2CSystem.Text.Encoding%2CSystem.Boolean%29> method.  
+ 
+The writers created by <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory> can handle the UTF-8 and the UTF-16 (big- or little-endian) encodings.  
+ 
  ]]></format>
         </remarks>
       </Docs>

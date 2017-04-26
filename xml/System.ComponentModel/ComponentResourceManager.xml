@@ -19,13 +19,13 @@
     <summary>Provides simple functionality for enumerating resources for a component or object. The <see cref="T:System.ComponentModel.ComponentResourceManager" /> class is a <see cref="T:System.Resources.ResourceManager" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use <xref:System.ComponentModel.ComponentResourceManager> to assign image resources to the <xref:System.Windows.Forms.ToolStripItem.Image%2A> property of <xref:System.Windows.Forms.ToolStripButton> controls.  
-  
- [!code-csharp[System.Windows.Forms.ContextMenuStrip#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStrip/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ContextMenuStrip#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStrip/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use <xref:System.ComponentModel.ComponentResourceManager> to assign image resources to the <xref:System.Windows.Forms.ToolStripItem.Image%2A> property of <xref:System.Windows.Forms.ToolStripButton> controls.  
+ 
+[!code-csharp[System.Windows.Forms.ContextMenuStrip#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStrip/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ContextMenuStrip#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStrip/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -72,13 +72,13 @@
         <summary>Creates a <see cref="T:System.ComponentModel.ComponentResourceManager" /> that looks up resources in satellite assemblies based on information from the specified <see cref="T:System.Type" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use <xref:System.ComponentModel.ComponentResourceManager> to assign image resources to the <xref:System.Windows.Forms.ToolStripItem.Image%2A> property of <xref:System.Windows.Forms.ToolStripButton> controls.  
-  
- [!code-csharp[System.Windows.Forms.ContextMenuStrip#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStrip/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.ContextMenuStrip#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStrip/VB/form1.vb#1)]  
-  
+The following code example demonstrates how to use <xref:System.ComponentModel.ComponentResourceManager> to assign image resources to the <xref:System.Windows.Forms.ToolStripItem.Image%2A> property of <xref:System.Windows.Forms.ToolStripButton> controls.  
+ 
+[!code-csharp[System.Windows.Forms.ContextMenuStrip#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStrip/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.ContextMenuStrip#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStrip/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
         <summary>Applies a resource's value to the corresponding property of the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method examines all the resources for the current culture used in the development environment. It attempts to find a resource with a key in the format of `objectName``.propertyName`, where `objectName` is passed in as a parameter and `propertyName` is the name of a property. It will then apply that resource's `value` to the corresponding property of the object. If there is no matching property, the resource will be ignored.  
-  
+This method examines all the resources for the current culture used in the development environment. It attempts to find a resource with a key in the format of `objectName``.propertyName`, where `objectName` is passed in as a parameter and `propertyName` is the name of a property. It will then apply that resource's `value` to the corresponding property of the object. If there is no matching property, the resource will be ignored.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -149,12 +149,12 @@
         <summary>Applies a resource's value to the corresponding property of the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method examines all the resources for the provided culture. If `culture` is `null`, the current culture is assumed.  
-  
- The <xref:System.ComponentModel.ComponentResourceManager.ApplyResources%2A> method attempts to find a resource with a key in the format of `objectName``.propertyName`, where `objectName` is passed in as a parameter and `propertyName` is the name of a property. It will then apply that resource's `value` to the corresponding property of the object. If there is no matching property, the resource will be ignored.  
-  
+This method examines all the resources for the provided culture. If `culture` is `null`, the current culture is assumed.  
+ 
+The <xref:System.ComponentModel.ComponentResourceManager.ApplyResources%2A> method attempts to find a resource with a key in the format of `objectName``.propertyName`, where `objectName` is passed in as a parameter and `propertyName` is the name of a property. It will then apply that resource's `value` to the corresponding property of the object. If there is no matching property, the resource will be ignored.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

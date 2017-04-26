@@ -19,10 +19,10 @@
     <summary>Encapsulates the information that is necessary to duplicate a <see cref="T:System.Net.Sockets.Socket" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Net.Sockets.Socket.DuplicateAndClose%2A?displayProperty=fullName> creates a <xref:System.Net.Sockets.SocketInformation> instance for use with the <xref:System.Net.Sockets.Socket.%23ctor%28System.Net.Sockets.SocketInformation%29?displayProperty=fullName> constructor.  
-  
+<xref:System.Net.Sockets.Socket.DuplicateAndClose%2A?displayProperty=fullName> creates a <xref:System.Net.Sockets.SocketInformation> instance for use with the <xref:System.Net.Sockets.Socket.%23ctor%28System.Net.Sockets.SocketInformation%29?displayProperty=fullName> constructor.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,10 +49,10 @@
         <value>A <see cref="T:System.Net.Sockets.SocketInformationOptions" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Options include <xref:System.Net.Sockets.SocketInformationOptions>, <xref:System.Net.Sockets.SocketInformationOptions>, <xref:System.Net.Sockets.SocketInformationOptions>, and <xref:System.Net.Sockets.SocketInformationOptions>.  
-  
+Options include <xref:System.Net.Sockets.SocketInformationOptions>, <xref:System.Net.Sockets.SocketInformationOptions>, <xref:System.Net.Sockets.SocketInformationOptions>, and <xref:System.Net.Sockets.SocketInformationOptions>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

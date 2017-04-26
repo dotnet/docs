@@ -15,32 +15,32 @@
     <summary>Used to modify or extend the execution behavior of a specific service operation in a service endpoint. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.DispatchOperation> class is the location for run-time modifications and insertion point for custom extensions that are scoped to only one service operation. (To modify service run-time behavior for all messages in a contract, use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> class.)  
-  
- Install <xref:System.ServiceModel.Dispatcher.DispatchOperation> modifications using a custom operation behavior object or a behavior at a larger scope in order to modify operations across a contract.  
-  
- Use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.Operations%2A> property to locate the <xref:System.ServiceModel.Dispatcher.DispatchOperation> object that represents a particular service operation.  
-  
+The <xref:System.ServiceModel.Dispatcher.DispatchOperation> class is the location for run-time modifications and insertion point for custom extensions that are scoped to only one service operation. (To modify service run-time behavior for all messages in a contract, use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> class.)  
+ 
+Install <xref:System.ServiceModel.Dispatcher.DispatchOperation> modifications using a custom operation behavior object or a behavior at a larger scope in order to modify operations across a contract.  
+ 
+Use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.Operations%2A> property to locate the <xref:System.ServiceModel.Dispatcher.DispatchOperation> object that represents a particular service operation.  
+ 
 -   The <xref:System.ServiceModel.Dispatcher.DispatchOperation.Action%2A>, <xref:System.ServiceModel.Dispatcher.DispatchOperation.ReplyAction%2A>, <xref:System.ServiceModel.Dispatcher.DispatchOperation.FaultContractInfos%2A>, <xref:System.ServiceModel.Dispatcher.DispatchOperation.IsOneWay%2A>, <xref:System.ServiceModel.Dispatcher.DispatchOperation.IsTerminating%2A>, and <xref:System.ServiceModel.Dispatcher.DispatchOperation.Name%2A> properties obtain the respective values for the operation.  
-  
+ 
 -   The <xref:System.ServiceModel.Dispatcher.DispatchOperation.TransactionAutoComplete%2A> and <xref:System.ServiceModel.Dispatcher.DispatchOperation.TransactionRequired%2A> properties specify transaction behavior.  
-  
+ 
 -   The <xref:System.ServiceModel.Dispatcher.DispatchOperation.ReleaseInstanceBeforeCall%2A> and <xref:System.ServiceModel.Dispatcher.DispatchOperation.ReleaseInstanceAfterCall%2A> properties control the lifetime of the user-defined service object relative to the <xref:System.ServiceModel.InstanceContext>.  
-  
+ 
 -   The <xref:System.ServiceModel.Dispatcher.DispatchOperation.DeserializeRequest%2A>, <xref:System.ServiceModel.Dispatcher.DispatchOperation.SerializeReply%2A>, and the <xref:System.ServiceModel.Dispatcher.DispatchOperation.Formatter%2A> properties enable explicit control over the conversion from messages to objects and vice versa.  
-  
+ 
 -   The <xref:System.ServiceModel.Dispatcher.DispatchOperation.Impersonation%2A> property specifies the operation impersonation level.  
-  
+ 
 -   The <xref:System.ServiceModel.Dispatcher.DispatchOperation.CallContextInitializers%2A> property inserts custom call context extensions for the operation. For more information, see <xref:System.ServiceModel.Dispatcher.ICallContextInitializer>.  
-  
+ 
 -   The <xref:System.ServiceModel.Dispatcher.DispatchOperation.AutoDisposeParameters%2A> property controls whether parameter objects are disposed when the service operation is completed.  
-  
+ 
 -   The <xref:System.ServiceModel.Dispatcher.DispatchOperation.Invoker%2A> property to insert a custom invoker object.  
-  
+ 
 -   The <xref:System.ServiceModel.Dispatcher.DispatchOperation.ParameterInspectors%2A> property enables you to insert a custom parameter inspector that you can use to inspect or modify parameters and return values.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,10 +67,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.DispatchOperation" /> class using the specified dispatch run-time, name, and action values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor for a service operation that follows the one-way pattern.  
-  
+Use this constructor for a service operation that follows the one-way pattern.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -99,10 +99,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.DispatchOperation" /> class using the specified dispatch run-time, name, action, and reply action values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor for a service operation that follows the request-reply pattern.  
-  
+Use this constructor for a service operation that follows the request-reply pattern.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,10 +145,10 @@
           <see langword="true" /> if the parameters are to be automatically disposed; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property determines whether the service disposes all <xref:System.IDisposable?displayProperty=fullName> parameters (input, output or reference parameters) that were created while processing a message. The default value is `true`. Set this property to `false` to prevent the system from disposing resources. In this case, you are responsible for the parameter lifetimes. See the <xref:System.ServiceModel.OperationContext.OperationCompleted> event if you need to dispose parameters when the operation completes.  
-  
+This property determines whether the service disposes all <xref:System.IDisposable?displayProperty=fullName> parameters (input, output or reference parameters) that were created while processing a message. The default value is `true`. Set this property to `false` to prevent the system from disposing resources. In this case, you are responsible for the parameter lifetimes. See the <xref:System.ServiceModel.OperationContext.OperationCompleted> event if you need to dispose parameters when the operation completes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
         <value>A collection of <see cref="T:System.ServiceModel.Dispatcher.ICallContextInitializer" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.DispatchOperation.CallContextInitializers%2A> property to add custom <xref:System.ServiceModel.Dispatcher.ICallContextInitializer> objects that add state to the call context for the duration of the call and can retrieve it subsequent to the completion of the call but prior to returning the message.  
-  
+Use the <xref:System.ServiceModel.Dispatcher.DispatchOperation.CallContextInitializers%2A> property to add custom <xref:System.ServiceModel.Dispatcher.ICallContextInitializer> objects that add state to the call context for the duration of the call and can retrieve it subsequent to the completion of the call but prior to returning the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,12 +197,12 @@
           <see langword="false" /> if the return type is of type <see cref="T:System.ServiceModel.Channels.Message" /> and there are no out parameters; otherwise, <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.DispatchOperation.DeserializeRequest%2A> property to control whether the formatter deserializes the return value from an inbound message or whether the inbound message is returned directly as the return value.  
-  
+Use the <xref:System.ServiceModel.Dispatcher.DispatchOperation.DeserializeRequest%2A> property to control whether the formatter deserializes the return value from an inbound message or whether the inbound message is returned directly as the return value.  
+ 
 -   **Note** If `false`, the return type must be of type <xref:System.ServiceModel.Channels.Message> and there can be no out parameters or an <xref:System.InvalidCastException> is thrown at run-time.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,10 +224,10 @@
         <value>A collection of SOAP faults specified for this operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.FaultContractInfos%2A> property to get a collection of all contractually specified SOAP faults.  
-  
+Use the <xref:System.ServiceModel.Dispatcher.ClientOperation.FaultContractInfos%2A> property to get a collection of all contractually specified SOAP faults.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,12 +250,12 @@
         <value>An <see cref="T:System.ServiceModel.Dispatcher.IDispatchMessageFormatter" /> implementation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.DispatchOperation.Formatter%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> implementation for an operation or modify the current formatter. In the case of strongly-typed message operations, the use of the formatter can be controlled by the <xref:System.ServiceModel.Dispatcher.DispatchOperation.SerializeReply%2A> and <xref:System.ServiceModel.Dispatcher.DispatchOperation.DeserializeRequest%2A> properties.  
-  
- The <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> interface defines the <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter.SerializeReply%2A> and <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter.DeserializeRequest%2A> methods, which are used to convert a set of object parameters to a message and from a message to a set of return values, respectively.  
-  
+Use the <xref:System.ServiceModel.Dispatcher.DispatchOperation.Formatter%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> implementation for an operation or modify the current formatter. In the case of strongly-typed message operations, the use of the formatter can be controlled by the <xref:System.ServiceModel.Dispatcher.DispatchOperation.SerializeReply%2A> and <xref:System.ServiceModel.Dispatcher.DispatchOperation.DeserializeRequest%2A> properties.  
+ 
+The <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> interface defines the <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter.SerializeReply%2A> and <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter.DeserializeRequest%2A> methods, which are used to convert a set of object parameters to a message and from a message to a set of return values, respectively.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -295,10 +295,10 @@
         <value>The <see cref="T:System.ServiceModel.Dispatcher.IOperationInvoker" /> object that invokes the user-defined method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.ServiceModel.Dispatcher.IOperationInvoker>.  
-  
+For more information, see <xref:System.ServiceModel.Dispatcher.IOperationInvoker>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -397,10 +397,10 @@
         <value>A collection of <see cref="T:System.ServiceModel.Dispatcher.IParameterInspector" /> implementations.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.DispatchOperation.ParameterInspectors%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation or to modify the current one. Parameter inspectors are invoked in the order in which they are added to the collection for requests and in the reverse order for replies.  
-  
+Use the <xref:System.ServiceModel.Dispatcher.DispatchOperation.ParameterInspectors%2A> property to insert a custom <xref:System.ServiceModel.Dispatcher.IParameterInspector> implementation or to modify the current one. Parameter inspectors are invoked in the order in which they are added to the collection for requests and in the reverse order for replies.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -499,13 +499,13 @@
           <see langword="true" /> if the <see cref="P:System.ServiceModel.Dispatcher.DispatchOperation.Formatter" /> property serializes the return values into a reply message; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.DispatchOperation.SerializeReply%2A> property to indicate whether the formatter serializes operation parameters into a reply message or whether the first parameter is sent as the outbound message.  
-  
+Use the <xref:System.ServiceModel.Dispatcher.DispatchOperation.SerializeReply%2A> property to indicate whether the formatter serializes operation parameters into a reply message or whether the first parameter is sent as the outbound message.  
+ 
 > [!NOTE]
 >  If set to `false`, the return value of the operation must be of type <xref:System.ServiceModel.Channels.Message> or an exception is thrown.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -547,10 +547,10 @@
           <see langword="true" /> if the operation must execute within the scope of a transaction; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.ServiceModel.Dispatcher.DispatchOperation.TransactionRequired%2A> property is `true`,  [!INCLUDE[indigo2](~/includes/indigo2-md.md)] sets the current transaction to the transaction used to receive the message if using a transacted transport; or the transaction flowed over the channel if the message had a transaction; or the dispatcher will create a new one.  
-  
+If the <xref:System.ServiceModel.Dispatcher.DispatchOperation.TransactionRequired%2A> property is `true`,  [!INCLUDE[indigo2](~/includes/indigo2-md.md)] sets the current transaction to the transaction used to receive the message if using a transacted transport; or the transaction flowed over the channel if the message had a transaction; or the dispatcher will create a new one.  
+ 
  ]]></format>
         </remarks>
       </Docs>

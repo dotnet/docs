@@ -11,10 +11,10 @@
     <summary>Provides an interface for access to the visual representation and content of a control at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface is intended for use by design host developers.  
-  
+This interface is intended for use by design host developers.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -198,16 +198,16 @@
         <summary>An event raised by the design host for the view and designer component.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent> is raised by the design host if any of the following occur:  
-  
+The <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent> is raised by the design host if any of the following occur:  
+ 
 -   The user clicks on the view in the design host,  
-  
+ 
 -   The design host repaints the client region on the design surface,  
-  
+ 
 -   The user has elected to change the editing mode of an editable region corresponding to a template.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

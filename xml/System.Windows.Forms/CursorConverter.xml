@@ -14,13 +14,13 @@
     <summary>Provides a type converter to convert <see cref="T:System.Windows.Forms.Cursor" /> objects to and from various other representations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and "Implementing a Type Converter".  
-  
+For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and "Implementing a Type Converter".  
+ 
 > [!NOTE]
 >  You should never create an instance of the <xref:System.Windows.Forms.CursorConverter> class. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A?displayProperty=fullName> method. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
-  
+The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

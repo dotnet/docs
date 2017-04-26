@@ -30,13 +30,13 @@
     <summary>Represents a control expression that handles multiple selections by passing control to <see cref="T:System.Linq.Expressions.SwitchCase" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates how to create an expression that represents a switch statement that has a default case by using the <xref:System.Linq.Expressions.Expression.Switch%2A> method.  
-  
- [!code-csharp[System.Linq.Expressions.ExpressionDev10#35](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#35)]
- [!code-vb[System.Linq.Expressions.ExpressionDev10#35](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#35)]  
-  
+The following example demonstrates how to create an expression that represents a switch statement that has a default case by using the <xref:System.Linq.Expressions.Expression.Switch%2A> method.  
+ 
+[!code-csharp[System.Linq.Expressions.ExpressionDev10#35](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#35)]
+[!code-vb[System.Linq.Expressions.ExpressionDev10#35](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#35)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

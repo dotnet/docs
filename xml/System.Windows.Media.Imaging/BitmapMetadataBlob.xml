@@ -14,10 +14,10 @@
     <summary>Provides a placeholder for metadata items that cannot be converted from [!INCLUDE[TLA#tla_cshrp](~/includes/tlasharptla-cshrp-md.md)] to an underlying data type that persists metadata. The blob is converted into an array of bytes to preserve the content.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] supports the following image metadata schemas: [!INCLUDE[TLA#tla_exif](~/includes/tlasharptla-exif-md.md)], tEXt ([!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] Textual Data), [!INCLUDE[TLA#tla_ifd](~/includes/tlasharptla-ifd-md.md)], [!INCLUDE[TLA#tla_iptc](~/includes/tlasharptla-iptc-md.md)], and [!INCLUDE[TLA#tla_xmp](~/includes/tlasharptla-xmp-md.md)].  
-  
+[!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] supports the following image metadata schemas: [!INCLUDE[TLA#tla_exif](~/includes/tlasharptla-exif-md.md)], tEXt ([!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] Textual Data), [!INCLUDE[TLA#tla_ifd](~/includes/tlasharptla-ifd-md.md)], [!INCLUDE[TLA#tla_iptc](~/includes/tlasharptla-iptc-md.md)], and [!INCLUDE[TLA#tla_xmp](~/includes/tlasharptla-xmp-md.md)].  
+ 
  ]]></format>
     </remarks>
   </Docs>

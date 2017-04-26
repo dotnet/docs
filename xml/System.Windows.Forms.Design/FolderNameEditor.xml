@@ -14,10 +14,10 @@
     <summary>Provides a user interface for choosing a folder from the file system.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You may customize the folder options by inheriting from this class and overriding <xref:System.Windows.Forms.Design.FolderNameEditor.InitializeDialog%2A>.  
-  
+You may customize the folder options by inheriting from this class and overriding <xref:System.Windows.Forms.Design.FolderNameEditor.InitializeDialog%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,10 +84,10 @@
         <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> enumeration value indicating the provided editing style.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.Forms.Design.FolderNameEditor.EditValue%2A> method is not supported, this will return <xref:System.Drawing.Design.UITypeEditorEditStyle>.  
-  
+If the <xref:System.Windows.Forms.Design.FolderNameEditor.EditValue%2A> method is not supported, this will return <xref:System.Drawing.Design.UITypeEditorEditStyle>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -112,10 +112,10 @@
         <summary>Initializes the folder browser dialog.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation provides a generic folder browser.  
-  
+The default implementation provides a generic folder browser.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

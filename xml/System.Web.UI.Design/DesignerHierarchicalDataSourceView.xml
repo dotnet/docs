@@ -14,10 +14,10 @@
     <summary>Provides a base class for designers for data views based on hierarchical data. This class must be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerHierarchicalDataSourceView> class is used by developers of custom data source designers.  
-  
+The <xref:System.Web.UI.Design.DesignerHierarchicalDataSourceView> class is used by developers of custom data source designers.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -91,12 +91,12 @@
         <returns>This implementation always returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerHierarchicalDataSourceView.GetDesignTimeData%2A> method should provide a design-time version of data for use by the associated data-bound control designer.  
-  
- It is not expected nor recommended that the designer perform actual data access at design time. Instead, the designer should create sample data that matches the schema of the data source.  
-  
+The <xref:System.Web.UI.Design.DesignerHierarchicalDataSourceView.GetDesignTimeData%2A> method should provide a design-time version of data for use by the associated data-bound control designer.  
+ 
+It is not expected nor recommended that the designer perform actual data access at design time. Instead, the designer should create sample data that matches the schema of the data source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
         <value>The path provided when creating the <see cref="T:System.Web.UI.Design.DesignerHierarchicalDataSourceView" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The specific nature of the <xref:System.Web.UI.Design.DesignerHierarchicalDataSourceView.Path%2A> property is determined by the nature of the data. For XML data, it would be an XPath query, but for other kinds of data it could be a URL or some other unique identifying path.  
-  
+The specific nature of the <xref:System.Web.UI.Design.DesignerHierarchicalDataSourceView.Path%2A> property is determined by the nature of the data. For XML data, it would be an XPath query, but for other kinds of data it could be a URL or some other unique identifying path.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,15 +143,15 @@
         <value>This implementation always returns <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.DesignerHierarchicalDataSourceView.Schema%2A> property allows the control designer of a data-bound control to provide intelligent choices based on the design-time data source view that is selected for data binding.  
+The <xref:System.Web.UI.Design.DesignerHierarchicalDataSourceView.Schema%2A> property allows the control designer of a data-bound control to provide intelligent choices based on the design-time data source view that is selected for data binding.  
+ 
   
-   
-  
+ 
 ## Examples  
- For a complete example of using the <xref:System.Web.UI.Design.DesignerHierarchicalDataSourceView.Schema%2A> method with views and schemas and a data source designer, see <xref:System.Web.UI.Design.DataSourceDesigner>.  
-  
+For a complete example of using the <xref:System.Web.UI.Design.DesignerHierarchicalDataSourceView.Schema%2A> method with views and schemas and a data source designer, see <xref:System.Web.UI.Design.DataSourceDesigner>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

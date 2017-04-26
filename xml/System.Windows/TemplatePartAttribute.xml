@@ -19,18 +19,18 @@
     <summary>Represents an attribute that is applied to the class definition to identify the types of the named parts that are used for templating.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Control authors apply this attribute to the class definition to inform template authors the types of the parts to use for styling the class. These parts are usually required in the template and have a specific predefined name. There can only be one element with a given name in any template.  
-  
- For example, if you look at the class declaration of the <xref:System.Windows.Controls.ComboBox> class, you can see that the parts `PART_EditableTextBox` and `PART_Popup` are of types <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.Primitives.Popup> respectively.  
-  
- For more information, see [Guidelines for Designing Stylable Controls](~/docs/framework/wpf/controls/guidelines-for-designing-stylable-controls.md)  
-  
+Control authors apply this attribute to the class definition to inform template authors the types of the parts to use for styling the class. These parts are usually required in the template and have a specific predefined name. There can only be one element with a given name in any template.  
+ 
+For example, if you look at the class declaration of the <xref:System.Windows.Controls.ComboBox> class, you can see that the parts `PART_EditableTextBox` and `PART_Popup` are of types <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.Primitives.Popup> respectively.  
+ 
+For more information, see [Guidelines for Designing Stylable Controls](~/docs/framework/wpf/controls/guidelines-for-designing-stylable-controls.md)  
+ 
 <a name="xamlTextUsage_TemplatePartAttribute"></a>   
 ## XAML Text Usage  
- You cannot use this class or its properties in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
+You cannot use this class or its properties in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -67,13 +67,13 @@
         <value>The pre-defined name of the part.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_Name"></a>   
 ## XAML Text Usage  
- You cannot use this property in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
+You cannot use this property in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,13 +95,13 @@
         <value>The type of the named part this attribute is identifying.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="xamlTextUsage_Type"></a>   
 ## XAML Text Usage  
- You cannot use this property in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
+You cannot use this property in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
  ]]></format>
         </remarks>
       </Docs>

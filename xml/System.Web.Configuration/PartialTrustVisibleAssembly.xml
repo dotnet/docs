@@ -14,10 +14,10 @@
     <summary>Configures a partial-trust assembly. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Configuration.PartialTrustVisibleAssembly> configures an assembly that is marked with the Partially Trusted Callers Attribute (APTCA) for use in a partial-trust ASP.NET application. For more information, see <xref:System.Security.AllowPartiallyTrustedCallersAttribute>.  
-  
+The <xref:System.Web.Configuration.PartialTrustVisibleAssembly> configures an assembly that is marked with the Partially Trusted Callers Attribute (APTCA) for use in a partial-trust ASP.NET application. For more information, see <xref:System.Security.AllowPartiallyTrustedCallersAttribute>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

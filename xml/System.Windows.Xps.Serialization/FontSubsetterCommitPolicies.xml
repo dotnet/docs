@@ -18,10 +18,10 @@
     <summary>Specifies the granularity at which font glyph subsets are saved in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When font glyphs for text in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document are saved in the document package, the document text displays identically on any computer or printer.  If glyphs are not saved in document and the required font is not installed on the local computer or printer, the rendering device must substitute glyphs from another font.  Substituting glyphs can change the appearance of the text when a different font is used.  
-  
+When font glyphs for text in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document are saved in the document package, the document text displays identically on any computer or printer.  If glyphs are not saved in document and the required font is not installed on the local computer or printer, the rendering device must substitute glyphs from another font.  Substituting glyphs can change the appearance of the text when a different font is used.  
+ 
  ]]></format>
     </remarks>
   </Docs>

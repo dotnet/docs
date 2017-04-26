@@ -21,10 +21,10 @@
     <summary>Represents the AppSequence header defined in the WS-Discovery protocol.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class allows a receiver of discovery messages to process those messages in order even though they were received out of order.  
-  
+This class allows a receiver of discovery messages to process those messages in order even though they were received out of order.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -155,10 +155,10 @@
         <value>The instance ID.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is incremented each time the service is shut down or loses state.  
-  
+This value is incremented each time the service is shut down or loses state.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,10 +180,10 @@
         <value>The message number.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value identifies a message within the context of a sequence identifier and an instance identifier.  
-  
+This value identifies a message within the context of a sequence identifier and an instance identifier.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -255,10 +255,10 @@
         <value>The sequence ID.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value identifies a sequence within the context of an instance identifier.  
-  
+This value identifies a sequence within the context of an instance identifier.  
+ 
  ]]></format>
         </remarks>
       </Docs>

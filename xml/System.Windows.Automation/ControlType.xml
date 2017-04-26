@@ -14,18 +14,18 @@
     <summary>Identifies the type of a [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Automation.ControlType> inherits from <xref:System.Windows.Automation.AutomationIdentifier> and is used to identify the type of a control represented by an <xref:System.Windows.Automation.AutomationElement>. The control type is determined by the developer of the UI Automation provider.  
-  
- This class contains static fields, which are themselves <xref:System.Windows.Automation.ControlType> objects, to identify the standard types of controls. There is also a <xref:System.Windows.Automation.ControlType.Custom> type for controls that do not match one of the defined types.  
-  
- The only case where a control's control type might change at run time is where the control supports <xref:System.Windows.Automation.MultipleViewPattern>. An example is the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] list view, which can be a <xref:System.Windows.Automation.ControlType.DataGrid> or <xref:System.Windows.Automation.ControlType.List>, depending on the current view.  
-  
- Control types do not have a one-to-one equivalence to control patterns. A control can be of only one type, but it may support multiple patterns or no patterns at all, depending on its specific functionality.  
-  
- For detailed information on the various control types, see [UI Automation Control Types](~/docs/framework/ui-automation/ui-automation-control-types.md).  
-  
+<xref:System.Windows.Automation.ControlType> inherits from <xref:System.Windows.Automation.AutomationIdentifier> and is used to identify the type of a control represented by an <xref:System.Windows.Automation.AutomationElement>. The control type is determined by the developer of the UI Automation provider.  
+ 
+This class contains static fields, which are themselves <xref:System.Windows.Automation.ControlType> objects, to identify the standard types of controls. There is also a <xref:System.Windows.Automation.ControlType.Custom> type for controls that do not match one of the defined types.  
+ 
+The only case where a control's control type might change at run time is where the control supports <xref:System.Windows.Automation.MultipleViewPattern>. An example is the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] list view, which can be a <xref:System.Windows.Automation.ControlType.DataGrid> or <xref:System.Windows.Automation.ControlType.List>, depending on the current view.  
+ 
+Control types do not have a one-to-one equivalence to control patterns. A control can be of only one type, but it may support multiple patterns or no patterns at all, depending on its specific functionality.  
+ 
+For detailed information on the various control types, see [UI Automation Control Types](~/docs/framework/ui-automation/ui-automation-control-types.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -46,12 +46,12 @@
         <summary>Identifies a button control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Buttons perform a single action when clicked.  
-  
- A button can be used as a standalone control or as a subcontrol in another control type. For example, the drop-down arrow in a combo box control is a button. When used as a subcontrol, a button is in the control view of the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree (not in the content view).  
-  
+Buttons perform a single action when clicked.  
+ 
+A button can be used as a standalone control or as a subcontrol in another control type. For example, the drop-down arrow in a combo box control is a button. When used as a subcontrol, a button is in the control view of the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree (not in the content view).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <summary>Identifies a check box control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A check box can be used as a standalone control or as a subcontrol in another control type.  For example, a check box at the beginning of a row in a grid control that is used to select the row (used to manipulate the content) appears in the control view but not in the content view. However, a labeled checkbox in a form that represents data is in the content and control views.  
-  
+A check box can be used as a standalone control or as a subcontrol in another control type.  For example, a check box at the beginning of a row in a grid control that is used to select the row (used to manipulate the content) appears in the control view but not in the content view. However, a labeled checkbox in a form that represents data is in the content and control views.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,10 +113,10 @@
         <summary>Identifies a combo box control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There are two variations of combo box controls. A simple combo box presents a list that a user can select from. An editable combo box presents a list of choices and also has an editable text area where a user can type in a choice instead of being limited to selecting from the choices in the list.  
-  
+There are two variations of combo box controls. A simple combo box presents a list that a user can select from. An editable combo box presents a list of choices and also has an editable text area where a user can type in a choice instead of being limited to selecting from the choices in the list.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,14 +137,14 @@
         <summary>Identifies a control that is not one of the defined control types.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Automation.ControlType.Custom> control type indicates a control that is not identified as one of the predefined control types (such as <xref:System.Windows.Automation.ControlType> or <xref:System.Windows.Automation.ControlType>).  
-  
- Control developers should check the other control types before designating their control as a <xref:System.Windows.Automation.ControlType.Custom> control type to be sure that their control does not provide the same functionality as one of the defined control types.  
-  
- A <xref:System.Windows.Automation.ControlType.Custom> control type requires extra work for the provider to implement [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)]. Also, UI Automation client products will not be able to anticipate the control structure, keyboard interaction, and possible control patterns based on the control type of the control.  
-  
+The <xref:System.Windows.Automation.ControlType.Custom> control type indicates a control that is not identified as one of the predefined control types (such as <xref:System.Windows.Automation.ControlType> or <xref:System.Windows.Automation.ControlType>).  
+ 
+Control developers should check the other control types before designating their control as a <xref:System.Windows.Automation.ControlType.Custom> control type to be sure that their control does not provide the same functionality as one of the defined control types.  
+ 
+A <xref:System.Windows.Automation.ControlType.Custom> control type requires extra work for the provider to implement [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)]. Also, UI Automation client products will not be able to anticipate the control structure, keyboard interaction, and possible control patterns based on the control type of the control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
         <summary>Identifies a data grid control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the cells contain only text, the control type should be <xref:System.Windows.Automation.ControlType>.  
-  
+When the cells contain only text, the control type should be <xref:System.Windows.Automation.ControlType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,10 +189,10 @@
         <summary>Identifies a data item control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.DataItem> is a complex item that can contain many other controls.  
-  
+A <xref:System.Windows.Automation.ControlType.DataItem> is a complex item that can contain many other controls.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,10 +213,10 @@
         <summary>Identifies a document control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A document contains text content of more than one line.  
-  
+A document contains text content of more than one line.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -237,12 +237,12 @@
         <summary>Identifies an edit control, such as a text box.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.ControlType.Edit> control can be used as a standalone control or as a subcontrol in another control type.  For example, the area where a user can type in a value in a combo box control is an <xref:System.Windows.Automation.ControlType.Edit> control, and in this case the control is not part of the content view.  
-  
- <xref:System.Windows.Automation.ControlType.Edit> controls can also represent controls that contain passwords. The <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsPassword%2A> property enables products such as screen readers to know whether to reveal the contents.  
-  
+An <xref:System.Windows.Automation.ControlType.Edit> control can be used as a standalone control or as a subcontrol in another control type.  For example, the area where a user can type in a value in a combo box control is an <xref:System.Windows.Automation.ControlType.Edit> control, and in this case the control is not part of the content view.  
+ 
+<xref:System.Windows.Automation.ControlType.Edit> controls can also represent controls that contain passwords. The <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsPassword%2A> property enables products such as screen readers to know whether to reveal the contents.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -265,18 +265,18 @@
         <returns>An array of [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] pattern identifiers.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is useful for UI Automation clients such as test frameworks for a provider implementation that need to find all control patterns that are not permitted on this control type.  
+This method is useful for UI Automation clients such as test frameworks for a provider implementation that need to find all control patterns that are not permitted on this control type.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example calls <xref:System.Windows.Automation.ControlType.GetNeverSupportedPatterns%2A> on every kind of <xref:System.Windows.Automation.ControlType> contained as a static field in the <xref:System.Windows.Automation.ControlType> class.  
-  
- [!code-csharp[UIAControlTypePatterns_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAControlTypePatterns_snip/CSharp/GetPatternsForm.cs#101)]
- [!code-vb[UIAControlTypePatterns_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAControlTypePatterns_snip/visualbasic/getpatternsform.vb#101)]  
-  
+The following example calls <xref:System.Windows.Automation.ControlType.GetNeverSupportedPatterns%2A> on every kind of <xref:System.Windows.Automation.ControlType> contained as a static field in the <xref:System.Windows.Automation.ControlType> class.  
+ 
+[!code-csharp[UIAControlTypePatterns_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAControlTypePatterns_snip/CSharp/GetPatternsForm.cs#101)]
+[!code-vb[UIAControlTypePatterns_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAControlTypePatterns_snip/visualbasic/getpatternsform.vb#101)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,20 +299,20 @@
         <returns>An array of sets of required patterns.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each element of the array contains an array of patterns, and each element that has this control type must support at least one of these arrays.  
+Each element of the array contains an array of patterns, and each element that has this control type must support at least one of these arrays.  
+ 
+This method is useful for UI Automation clients that need to find all possible patterns, such as testing frameworks for a provider implementation.  
+ 
   
- This method is useful for UI Automation clients that need to find all possible patterns, such as testing frameworks for a provider implementation.  
-  
-   
-  
+ 
 ## Examples  
- The following example calls <xref:System.Windows.Automation.ControlType.GetRequiredPatternSets%2A> on every kind of <xref:System.Windows.Automation.ControlType> contained as a static field in the <xref:System.Windows.Automation.ControlType> class.  
-  
- [!code-csharp[UIAControlTypePatterns_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAControlTypePatterns_snip/CSharp/GetPatternsForm.cs#101)]
- [!code-vb[UIAControlTypePatterns_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAControlTypePatterns_snip/visualbasic/getpatternsform.vb#101)]  
-  
+The following example calls <xref:System.Windows.Automation.ControlType.GetRequiredPatternSets%2A> on every kind of <xref:System.Windows.Automation.ControlType> contained as a static field in the <xref:System.Windows.Automation.ControlType> class.  
+ 
+[!code-csharp[UIAControlTypePatterns_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAControlTypePatterns_snip/CSharp/GetPatternsForm.cs#101)]
+[!code-vb[UIAControlTypePatterns_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAControlTypePatterns_snip/visualbasic/getpatternsform.vb#101)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -335,10 +335,10 @@
         <returns>An array of property [!INCLUDE[TLA2#tla_id#plural](~/includes/tla2sharptla-idsharpplural-md.md)].</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is useful for UI Automation clients that need to find all possible properties, such as testing frameworks for a provider implementation.  
-  
+This method is useful for UI Automation clients that need to find all possible properties, such as testing frameworks for a provider implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -359,10 +359,10 @@
         <summary>Identifies a group control, which acts as a container for other controls.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A group is a container control that contains different control types and is used to logically associate those controls.  
-  
+A group is a container control that contains different control types and is used to logically associate those controls.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -417,10 +417,10 @@
         <summary>Identifies a hyperlink control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A hyperlink control navigates to a specified [!INCLUDE[TLA#tla_url](~/includes/tlasharptla-url-md.md)] when a user clicks on the control.  
-  
+A hyperlink control navigates to a specified [!INCLUDE[TLA#tla_url](~/includes/tlasharptla-url-md.md)] when a user clicks on the control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -441,12 +441,12 @@
         <summary>Identifies an image control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Automation.ControlType.Image> control type can be used as a standalone control or as a subcontrol in another control type.  For example, a button can use an image rather than text to indicate its functionality to the user.  
-  
- When used only for decorative purposes, an image appears in the control view of the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree (not in the content view).  
-  
+An <xref:System.Windows.Automation.ControlType.Image> control type can be used as a standalone control or as a subcontrol in another control type.  For example, a button can use an image rather than text to indicate its functionality to the user.  
+ 
+When used only for decorative purposes, an image appears in the control view of the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree (not in the content view).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -467,16 +467,16 @@
         <summary>Identifies a list control, such as a list box.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.List> is a control type that contains <xref:System.Windows.Automation.ControlType> and (perhaps) <xref:System.Windows.Automation.ControlType> control types.  
-  
- A <xref:System.Windows.Automation.ControlType.List> control can be used as a standalone control or as a subcontrol in another control type. For example, a combo box has a <xref:System.Windows.Automation.ControlType.List> control that contains choices that appear when the drop-down button is clicked. When used as a subcontrol, a <xref:System.Windows.Automation.ControlType.List> is only in the control view of the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree (not in content view).  
-  
- When used as a subcontrol, a <xref:System.Windows.Automation.ControlType.List> does not have a `Name` property assigned.  
-  
- A <xref:System.Windows.Automation.ControlType.List> can contain <xref:System.Windows.Automation.ControlType> controls.  
-  
+A <xref:System.Windows.Automation.ControlType.List> is a control type that contains <xref:System.Windows.Automation.ControlType> and (perhaps) <xref:System.Windows.Automation.ControlType> control types.  
+ 
+A <xref:System.Windows.Automation.ControlType.List> control can be used as a standalone control or as a subcontrol in another control type. For example, a combo box has a <xref:System.Windows.Automation.ControlType.List> control that contains choices that appear when the drop-down button is clicked. When used as a subcontrol, a <xref:System.Windows.Automation.ControlType.List> is only in the control view of the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree (not in content view).  
+ 
+When used as a subcontrol, a <xref:System.Windows.Automation.ControlType.List> does not have a `Name` property assigned.  
+ 
+A <xref:System.Windows.Automation.ControlType.List> can contain <xref:System.Windows.Automation.ControlType> controls.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -497,10 +497,10 @@
         <summary>Identifies a list item control, which is a child item of a list control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType> can also be a child of a list control.  
-  
+A <xref:System.Windows.Automation.ControlType> can also be a child of a list control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -522,13 +522,13 @@
         <value>A localized description of the control type, such as "button".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, all control types are found by reflection, and their <xref:System.Windows.Automation.ControlType.LocalizedControlType%2A> properties are output along with other information.  
-  
- [!code-csharp[UIAControlTypePatterns_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAControlTypePatterns_snip/CSharp/GetPatternsForm.cs#101)]
- [!code-vb[UIAControlTypePatterns_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAControlTypePatterns_snip/visualbasic/getpatternsform.vb#101)]  
-  
+In the following example, all control types are found by reflection, and their <xref:System.Windows.Automation.ControlType.LocalizedControlType%2A> properties are output along with other information.  
+ 
+[!code-csharp[UIAControlTypePatterns_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAControlTypePatterns_snip/CSharp/GetPatternsForm.cs#101)]
+[!code-vb[UIAControlTypePatterns_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAControlTypePatterns_snip/visualbasic/getpatternsform.vb#101)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -554,10 +554,10 @@
         <returns>To be added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Normally the type of a control is identified by a <xref:System.Windows.Automation.ControlType> object. This method enables you to construct such an object when only the numerical identifier is known.  
-  
+Normally the type of a control is identified by a <xref:System.Windows.Automation.ControlType> object. This method enables you to construct such an object when only the numerical identifier is known.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -578,10 +578,10 @@
         <summary>Identifies a menu control, such as a top-level menu in an application window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A menu is a container for a collection of menu items; for instance, the control that appears beneath **File** when you click on it and that contains **New**, **Open**, and so on.  
-  
+A menu is a container for a collection of menu items; for instance, the control that appears beneath **File** when you click on it and that contains **New**, **Open**, and so on.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -602,10 +602,10 @@
         <summary>Identifies a menu bar control, which generally contains a set of top-level menus.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.MenuBar> control type represents the container for the set of top-level menus of an application.  
-  
+A <xref:System.Windows.Automation.ControlType.MenuBar> control type represents the container for the set of top-level menus of an application.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -626,10 +626,10 @@
         <summary>Identifies a menu item control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.MenuItem> is a child of a <xref:System.Windows.Automation.ControlType> or <xref:System.Windows.Automation.ControlType> control.  
-  
+A <xref:System.Windows.Automation.ControlType.MenuItem> is a child of a <xref:System.Windows.Automation.ControlType> or <xref:System.Windows.Automation.ControlType> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -650,10 +650,10 @@
         <summary>Identifies a pane control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.Pane> is used to visually separate content within a <xref:System.Windows.Automation.ControlType>. The user typically navigates between panes by pressing TAB, F6, or CTRL+TAB, depending on the context.  
-  
+A <xref:System.Windows.Automation.ControlType.Pane> is used to visually separate content within a <xref:System.Windows.Automation.ControlType>. The user typically navigates between panes by pressing TAB, F6, or CTRL+TAB, depending on the context.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -708,12 +708,12 @@
         <summary>Identifies a scroll bar control, such as a scroll bar in an application window.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.ScrollBar> control type contains a set of buttons and a thumb control that enable a user using a mouse to scroll the contents of a window or item container.  
-  
- Use the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.AutomationId%2A> property to differentiate between the <xref:System.Windows.Automation.ControlType.Button> elements that correspond to the large-increment, large-decrement, small-increment, and small-decrement buttons.  
-  
+A <xref:System.Windows.Automation.ControlType.ScrollBar> control type contains a set of buttons and a thumb control that enable a user using a mouse to scroll the contents of a window or item container.  
+ 
+Use the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.AutomationId%2A> property to differentiate between the <xref:System.Windows.Automation.ControlType.Button> elements that correspond to the large-increment, large-decrement, small-increment, and small-decrement buttons.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -751,10 +751,10 @@
         <summary>Identifies a slider control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.Slider> control type consists of a set of buttons associated with an <xref:System.Windows.Automation.ControlType> control that enable a user to select from a set of items or set a numerical value from within a range.  
-  
+A <xref:System.Windows.Automation.ControlType.Slider> control type consists of a set of buttons associated with an <xref:System.Windows.Automation.ControlType> control that enable a user to select from a set of items or set a numerical value from within a range.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -775,10 +775,10 @@
         <summary>Identifies a spinner control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.Spinner> control type consists of a set of buttons that enable a user to select from a set of items or set a numerical value from within a range.  
-  
+A <xref:System.Windows.Automation.ControlType.Spinner> control type consists of a set of buttons that enable a user to select from a set of items or set a numerical value from within a range.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -816,10 +816,10 @@
         <summary>Identifies a status bar control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Automation.ControlType.StatusBar> control types are generally subcontrols of <xref:System.Windows.Automation.ControlType> control type [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements.  
-  
+<xref:System.Windows.Automation.ControlType.StatusBar> control types are generally subcontrols of <xref:System.Windows.Automation.ControlType> control type [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -840,10 +840,10 @@
         <summary>Identifies a tab control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.Tab> is a control type that contains at least one <xref:System.Windows.Automation.ControlType> child control.  
-  
+A <xref:System.Windows.Automation.ControlType.Tab> is a control type that contains at least one <xref:System.Windows.Automation.ControlType> child control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -881,10 +881,10 @@
         <summary>Identifies a table.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.Table> control type is similar to a <xref:System.Windows.Automation.ControlType> but contains only text. Tables can also contain <xref:System.Windows.Automation.ControlType> control types.  
-  
+A <xref:System.Windows.Automation.ControlType.Table> control type is similar to a <xref:System.Windows.Automation.ControlType> but contains only text. Tables can also contain <xref:System.Windows.Automation.ControlType> control types.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -905,10 +905,10 @@
         <summary>Identifies an edit control, such as a text box or rich text box.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.Text> control can be used as a standalone control, such as an <xref:System.Windows.Automation.ControlType> control, or as a subcomponent, such as the area of a <xref:System.Windows.Automation.ControlType> where a user can type in a value.  
-  
+A <xref:System.Windows.Automation.ControlType.Text> control can be used as a standalone control, such as an <xref:System.Windows.Automation.ControlType> control, or as a subcomponent, such as the area of a <xref:System.Windows.Automation.ControlType> where a user can type in a value.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -929,10 +929,10 @@
         <summary>Identifies the control in a scrollbar that can be dragged to a different position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.Thumb> control is used as a subcontrol in a <xref:System.Windows.Automation.ControlType> control type. As a subcontrol, a <xref:System.Windows.Automation.ControlType.Thumb> does not have a <xref:System.Windows.Automation.AutomationElement.NameProperty>.  
-  
+A <xref:System.Windows.Automation.ControlType.Thumb> control is used as a subcontrol in a <xref:System.Windows.Automation.ControlType> control type. As a subcontrol, a <xref:System.Windows.Automation.ControlType.Thumb> does not have a <xref:System.Windows.Automation.AutomationElement.NameProperty>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1004,12 +1004,12 @@
         <summary>Identifies a tree control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.Tree> control type is a container for a hierarchical arrangement of <xref:System.Windows.Automation.ControlType> or <xref:System.Windows.Automation.ControlType> control types.  
-  
- Each node of a tree can contain other nodes.  A node that contains child nodes can be displayed as expanded or collapsed.  
-  
+A <xref:System.Windows.Automation.ControlType.Tree> control type is a container for a hierarchical arrangement of <xref:System.Windows.Automation.ControlType> or <xref:System.Windows.Automation.ControlType> control types.  
+ 
+Each node of a tree can contain other nodes.  A node that contains child nodes can be displayed as expanded or collapsed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1030,10 +1030,10 @@
         <summary>Identifies a node in a <see cref="F:System.Windows.Automation.ControlType.TreeItem" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Automation.ControlType.TreeItem> control type can be used only as a subcontrol of a <xref:System.Windows.Automation.ControlType> control.  
-  
+A <xref:System.Windows.Automation.ControlType.TreeItem> control type can be used only as a subcontrol of a <xref:System.Windows.Automation.ControlType> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1054,10 +1054,10 @@
         <summary>Identifies a window frame, which contains child objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Controls of this type always support <xref:System.Windows.Automation.WindowPattern>.  
-  
+Controls of this type always support <xref:System.Windows.Automation.WindowPattern>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

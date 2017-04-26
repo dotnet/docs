@@ -24,22 +24,22 @@
     <summary>Provides a default implementation for a lifetime sponsor class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current lifetime sponsor implementation can be used to sponsor objects by specifying the required renewal <xref:System.TimeSpan>.  
-  
+The current lifetime sponsor implementation can be used to sponsor objects by specifying the required renewal <xref:System.TimeSpan>.  
+ 
 > [!NOTE]
 >  This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example illustrates the ClientSponsor class to extend the life of a class-activated remote object.  
-  
- [!code-cpp[ClientSponsor_Register#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ClientSponsor_Register/CPP/clientsponsor_client.cpp#1)]
- [!code-csharp[ClientSponsor_Register#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ClientSponsor_Register/CS/clientsponsor_client.cs#1)]
- [!code-vb[ClientSponsor_Register#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ClientSponsor_Register/VB/clientsponsor_client.vb#1)]  
-  
+The following example illustrates the ClientSponsor class to extend the life of a class-activated remote object.  
+ 
+[!code-cpp[ClientSponsor_Register#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ClientSponsor_Register/CPP/clientsponsor_client.cpp#1)]
+[!code-csharp[ClientSponsor_Register#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ClientSponsor_Register/CS/clientsponsor_client.cs#1)]
+[!code-vb[ClientSponsor_Register#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ClientSponsor_Register/VB/clientsponsor_client.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
@@ -60,10 +60,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Lifetime.ClientSponsor" /> class with default values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default time by which the lifetime of a sponsored object is increased when renewal is requested to 2 minutes. For more information on the renewal time, see the <xref:System.Runtime.Remoting.Lifetime.LifetimeServices.RenewOnCallTime%2A?displayProperty=fullName> property.  
-  
+The default time by which the lifetime of a sponsored object is increased when renewal is requested to 2 minutes. For more information on the renewal time, see the <xref:System.Runtime.Remoting.Lifetime.LifetimeServices.RenewOnCallTime%2A?displayProperty=fullName> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,12 +105,12 @@
         <summary>Empties the list objects registered with the current <see cref="T:System.Runtime.Remoting.Lifetime.ClientSponsor" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ClientSponsor_Register#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ClientSponsor_Register/CPP/clientsponsor_client.cpp#2)]
- [!code-csharp[ClientSponsor_Register#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ClientSponsor_Register/CS/clientsponsor_client.cs#2)]
- [!code-vb[ClientSponsor_Register#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ClientSponsor_Register/VB/clientsponsor_client.vb#2)]  
-  
+[!code-cpp[ClientSponsor_Register#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ClientSponsor_Register/CPP/clientsponsor_client.cpp#2)]
+[!code-csharp[ClientSponsor_Register#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ClientSponsor_Register/CS/clientsponsor_client.cs#2)]
+[!code-vb[ClientSponsor_Register#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ClientSponsor_Register/VB/clientsponsor_client.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -153,17 +153,17 @@
         <returns>An <see cref="T:System.Runtime.Remoting.Lifetime.ILease" /> for the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see <xref:System.MarshalByRefObject.InitializeLifetimeService%2A?displayProperty=fullName>.  
+For more information, see <xref:System.MarshalByRefObject.InitializeLifetimeService%2A?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[ClientSponsor_Register#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ClientSponsor_Register/CPP/clientsponsor_client.cpp#2)]
- [!code-csharp[ClientSponsor_Register#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ClientSponsor_Register/CS/clientsponsor_client.cs#2)]
- [!code-vb[ClientSponsor_Register#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ClientSponsor_Register/VB/clientsponsor_client.vb#2)]  
-  
+[!code-cpp[ClientSponsor_Register#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ClientSponsor_Register/CPP/clientsponsor_client.cpp#2)]
+[!code-csharp[ClientSponsor_Register#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ClientSponsor_Register/CS/clientsponsor_client.cs#2)]
+[!code-vb[ClientSponsor_Register#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ClientSponsor_Register/VB/clientsponsor_client.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,12 +191,12 @@
           <see langword="true" /> if registration succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ClientSponsor_Register#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ClientSponsor_Register/CPP/clientsponsor_client.cpp#2)]
- [!code-csharp[ClientSponsor_Register#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ClientSponsor_Register/CS/clientsponsor_client.cs#2)]
- [!code-vb[ClientSponsor_Register#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ClientSponsor_Register/VB/clientsponsor_client.vb#2)]  
-  
+[!code-cpp[ClientSponsor_Register#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ClientSponsor_Register/CPP/clientsponsor_client.cpp#2)]
+[!code-csharp[ClientSponsor_Register#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ClientSponsor_Register/CS/clientsponsor_client.cs#2)]
+[!code-vb[ClientSponsor_Register#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ClientSponsor_Register/VB/clientsponsor_client.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,17 +223,17 @@
         <returns>The additional lease time for the specified object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Lifetime.ISponsor.Renewal%2A> method is called by the distributed garbage collector to renew the lease for the specified object.  
+The <xref:System.Runtime.Remoting.Lifetime.ISponsor.Renewal%2A> method is called by the distributed garbage collector to renew the lease for the specified object.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[ClientSponsor_Register#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ClientSponsor_Register/CPP/clientsponsor_client.cpp#2)]
- [!code-csharp[ClientSponsor_Register#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ClientSponsor_Register/CS/clientsponsor_client.cs#2)]
- [!code-vb[ClientSponsor_Register#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ClientSponsor_Register/VB/clientsponsor_client.vb#2)]  
-  
+[!code-cpp[ClientSponsor_Register#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ClientSponsor_Register/CPP/clientsponsor_client.cpp#2)]
+[!code-csharp[ClientSponsor_Register#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ClientSponsor_Register/CS/clientsponsor_client.cs#2)]
+[!code-vb[ClientSponsor_Register#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ClientSponsor_Register/VB/clientsponsor_client.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,12 +256,12 @@
         <value>The <see cref="T:System.TimeSpan" /> by which to increase the lifetime of the sponsored objects when renewal is requested.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ClientSponsor_Register#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ClientSponsor_Register/CPP/clientsponsor_client.cpp#2)]
- [!code-csharp[ClientSponsor_Register#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ClientSponsor_Register/CS/clientsponsor_client.cs#2)]
- [!code-vb[ClientSponsor_Register#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ClientSponsor_Register/VB/clientsponsor_client.vb#2)]  
-  
+[!code-cpp[ClientSponsor_Register#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ClientSponsor_Register/CPP/clientsponsor_client.cpp#2)]
+[!code-csharp[ClientSponsor_Register#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ClientSponsor_Register/CS/clientsponsor_client.cs#2)]
+[!code-vb[ClientSponsor_Register#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ClientSponsor_Register/VB/clientsponsor_client.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,12 +287,12 @@
         <summary>Unregisters the specified <see cref="T:System.MarshalByRefObject" /> from the list of objects sponsored by the current <see cref="T:System.Runtime.Remoting.Lifetime.ClientSponsor" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[ClientSponsor_Register#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ClientSponsor_Register/CPP/clientsponsor_client.cpp#2)]
- [!code-csharp[ClientSponsor_Register#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ClientSponsor_Register/CS/clientsponsor_client.cs#2)]
- [!code-vb[ClientSponsor_Register#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ClientSponsor_Register/VB/clientsponsor_client.vb#2)]  
-  
+[!code-cpp[ClientSponsor_Register#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ClientSponsor_Register/CPP/clientsponsor_client.cpp#2)]
+[!code-csharp[ClientSponsor_Register#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ClientSponsor_Register/CS/clientsponsor_client.cs#2)]
+[!code-vb[ClientSponsor_Register#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ClientSponsor_Register/VB/clientsponsor_client.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -27,16 +27,16 @@
     <summary>Describes objects that contain both a managed pointer to a location and a runtime representation of the type that may be stored at that location.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A typed reference is a type/value combination used for varargs and other support. `TypedReference` is a built-in value type that can be used for parameters and local variables.  
-  
- Arrays of `TypedReference` objects cannot be created. For example, the following call is invalid:  
-  
- [!code-cpp[System.TypedReference#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.typedreference/cpp/source.cpp#1)]
- [!code-csharp[System.TypedReference#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.typedreference/cs/source.cs#1)]
- [!code-vb[System.TypedReference#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.typedreference/vb/source.vb#1)]  
-  
+A typed reference is a type/value combination used for varargs and other support. `TypedReference` is a built-in value type that can be used for parameters and local variables.  
+ 
+Arrays of `TypedReference` objects cannot be created. For example, the following call is invalid:  
+ 
+[!code-cpp[System.TypedReference#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.typedreference/cpp/source.cpp#1)]
+[!code-csharp[System.TypedReference#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.typedreference/cs/source.cs#1)]
+[!code-vb[System.TypedReference#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.typedreference/vb/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -157,15 +157,15 @@
         <returns>A <see cref="T:System.TypedReference" /> for the field described by the last element of <paramref name="flds" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.TypedReference.MakeTypedReference%2A> method returns a typed reference to some terminal field, where the `target` parameter contains the field described by the first element of `flds`, the field described by the first element of `flds` contains the field described by the second element of `flds`, and so on until the terminal field is reached.  
-  
+The <xref:System.TypedReference.MakeTypedReference%2A> method returns a typed reference to some terminal field, where the `target` parameter contains the field described by the first element of `flds`, the field described by the first element of `flds` contains the field described by the second element of `flds`, and so on until the terminal field is reached.  
+ 
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -226,10 +226,10 @@
         <summary>Converts the specified value to a <see langword="TypedReference" />. This method is not supported.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method always throws <xref:System.NotSupportedException>.  
-  
+This method always throws <xref:System.NotSupportedException>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">In all cases.</exception>
@@ -293,10 +293,10 @@
         <returns>An <see cref="T:System.Object" /> converted from a <see langword="TypedReference" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This might be a boxing operation.  
-  
+This might be a boxing operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>

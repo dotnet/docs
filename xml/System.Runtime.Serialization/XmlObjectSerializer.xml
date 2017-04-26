@@ -23,18 +23,18 @@
     <summary>Provides the base class used to serialize objects as XML streams or documents. This class is abstract.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Extend the <xref:System.Runtime.Serialization.XmlObjectSerializer> to create your own serializer to serialize and deserialize objects. Both the <xref:System.Runtime.Serialization.DataContractSerializer> class and the <xref:System.Runtime.Serialization.NetDataContractSerializer> class inherit from the <xref:System.Runtime.Serialization.XmlObjectSerializer> and are used to serialize and deserialize objects that conform to data contract rules (objects created using the <xref:System.Runtime.Serialization.DataContractAttribute> and the <xref:System.Runtime.Serialization.DataMemberAttribute>).  
+Extend the <xref:System.Runtime.Serialization.XmlObjectSerializer> to create your own serializer to serialize and deserialize objects. Both the <xref:System.Runtime.Serialization.DataContractSerializer> class and the <xref:System.Runtime.Serialization.NetDataContractSerializer> class inherit from the <xref:System.Runtime.Serialization.XmlObjectSerializer> and are used to serialize and deserialize objects that conform to data contract rules (objects created using the <xref:System.Runtime.Serialization.DataContractAttribute> and the <xref:System.Runtime.Serialization.DataMemberAttribute>).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows a method named `WriteObjectWithInstance` that includes an <xref:System.Runtime.Serialization.XmlObjectSerializer> as a parameter. The method serializes an object using either the <xref:System.Runtime.Serialization.DataContractSerializer> or <xref:System.Runtime.Serialization.NetDataContractSerializer> by calling the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method.  
-  
- [!code-csharp[XmlObjectSerializer#1](~/samples/snippets/csharp/VS_Snippets_CFX/xmlobjectserializer/cs/source.cs#1)]
- [!code-vb[XmlObjectSerializer#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/xmlobjectserializer/vb/source.vb#1)]  
-  
+The following example shows a method named `WriteObjectWithInstance` that includes an <xref:System.Runtime.Serialization.XmlObjectSerializer> as a parameter. The method serializes an object using either the <xref:System.Runtime.Serialization.DataContractSerializer> or <xref:System.Runtime.Serialization.NetDataContractSerializer> by calling the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method.  
+ 
+[!code-csharp[XmlObjectSerializer#1](~/samples/snippets/csharp/VS_Snippets_CFX/xmlobjectserializer/cs/source.cs#1)]
+[!code-vb[XmlObjectSerializer#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/xmlobjectserializer/vb/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
@@ -67,10 +67,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is marked protected to allow derived classes to chain constructors.  
-  
+This constructor is marked protected to allow derived classes to chain constructors.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -106,12 +106,12 @@
           <see langword="true" /> if the reader can read the data; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method checks if the reader is positioned on an element to read, and returns `true` if the element is the top-level element for the object found in the XML stream or document. The <xref:System.Runtime.Serialization.XmlObjectSerializer> implementation determines when to return `true`. Implementations may check that they are positioned on an element or look for an expected element name. One implementation of the <xref:System.Runtime.Serialization.XmlObjectSerializer>, the <xref:System.Runtime.Serialization.DataContractSerializer>, checks that it is positioned on an element and also checks that the element name is the top level expected name for the type currently being deserialized.  
-  
- If needed, additional attributes in the XML stream can be read while positioned on the top level element before reading XML contents using the <xref:System.Runtime.Serialization.XmlObjectSerializer.ReadObject%2A> method.  
-  
+This method checks if the reader is positioned on an element to read, and returns `true` if the element is the top-level element for the object found in the XML stream or document. The <xref:System.Runtime.Serialization.XmlObjectSerializer> implementation determines when to return `true`. Implementations may check that they are positioned on an element or look for an expected element name. One implementation of the <xref:System.Runtime.Serialization.XmlObjectSerializer>, the <xref:System.Runtime.Serialization.DataContractSerializer>, checks that it is positioned on an element and also checks that the element name is the top level expected name for the type currently being deserialized.  
+ 
+If needed, additional attributes in the XML stream can be read while positioned on the top level element before reading XML contents using the <xref:System.Runtime.Serialization.XmlObjectSerializer.ReadObject%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -147,12 +147,12 @@
           <see langword="true" /> if the reader is positioned over the starting element; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method checks whether the reader is positioned on an element to read, and returns `true` if the element is the top-level element for the object found in the XML stream or document. To return `true`, the found element must have an expected name. The actual expected element name depends on the implementation of the serializer.  
-  
- With the <xref:System.Runtime.Serialization.DataContractSerializer>, the starting element is specified in the constructor of the extension class.  For an example, see the constructors for the <xref:System.Runtime.Serialization.DataContractSerializer> class.  
-  
+This method checks whether the reader is positioned on an element to read, and returns `true` if the element is the top-level element for the object found in the XML stream or document. To return `true`, the found element must have an expected name. The actual expected element name depends on the implementation of the serializer.  
+ 
+With the <xref:System.Runtime.Serialization.DataContractSerializer>, the starting element is specified in the constructor of the extension class.  For an example, see the constructors for the <xref:System.Runtime.Serialization.DataContractSerializer> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,10 +187,10 @@
         <returns>The deserialized object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a virtual method, and has a default implementation that creates a dictionary reader to read the underlying stream and deserialize it. The default implementation assumes the stream is text or XML.  
-  
+This method is a virtual method, and has a default implementation that creates a dictionary reader to read the underlying stream and deserialize it. The default implementation assumes the stream is text or XML.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,10 +225,10 @@
         <returns>The deserialized object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a virtual method, and has a default implementation that creates a dictionary reader to read the underlying stream and deserialize it. The default implementation assumes the stream is text or XML.  
-  
+This method is a virtual method, and has a default implementation that creates a dictionary reader to read the underlying stream and deserialize it. The default implementation assumes the stream is text or XML.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -297,10 +297,10 @@
         <returns>The deserialized object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `verifyObjectName` parameter uses the same code as the <xref:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject%2A> method to determine whether the element is the start of the object.  
-  
+The `verifyObjectName` parameter uses the same code as the <xref:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject%2A> method to determine whether the element is the start of the object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,10 +338,10 @@
         <returns>The deserialized object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `verifyObjectName` parameter uses the same code as the <xref:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject%2A> method to determine whether the element is the start of the object.  
-  
+The `verifyObjectName` parameter uses the same code as the <xref:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject%2A> method to determine whether the element is the start of the object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -478,10 +478,10 @@
         <summary>Writes the complete content (start, content, and end) of the object to the XML document or stream with the specified <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a virtual method and has a default implementation that calls the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> methods. Because of this, this method is intended to be the most commonly used method on a serializer.  
-  
+This is a virtual method and has a default implementation that calls the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> methods. Because of this, this method is intended to be the most commonly used method on a serializer.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
@@ -520,10 +520,10 @@
         <summary>Writes the complete content (start, content, and end) of the object to the XML document or stream with the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a virtual method, and has a default implementation that delegates writing to the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%28System.Xml.XmlDictionaryWriter%2CSystem.Object%29?displayProperty=fullName> overload.  
-  
+This is a virtual method, and has a default implementation that delegates writing to the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%28System.Xml.XmlDictionaryWriter%2CSystem.Object%29?displayProperty=fullName> overload.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
@@ -680,12 +680,12 @@
         <summary>Gets a value that specifies whether the serializer can read the object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method checks whether the reader is positioned on an element to read, and returns `true` if the element is the top-level element for the object found in the XML stream or document. To return `true`, the found element must have an expected name. The actual expected element name depends on the implementation of the serializer.  
-  
- With the <xref:System.Runtime.Serialization.DataContractSerializer>, the starting element is specified in the constructor of the extension class.  For an example, see the constructors for the <xref:System.Runtime.Serialization.DataContractSerializer> class.  
-  
+This method checks whether the reader is positioned on an element to read, and returns `true` if the element is the top-level element for the object found in the XML stream or document. To return `true`, the found element must have an expected name. The actual expected element name depends on the implementation of the serializer.  
+ 
+With the <xref:System.Runtime.Serialization.DataContractSerializer>, the starting element is specified in the constructor of the extension class.  For an example, see the constructors for the <xref:System.Runtime.Serialization.DataContractSerializer> class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -699,10 +699,10 @@
         <summary>Writes the closing XML element to an XML stream or document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> methods must be implemented. The three methods are used in succession to write the complete serialization using the pattern: write start, write content, and write end. Users can insert XML attributes during the writing of the object between the calls to <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A> and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A>. The three methods are also called by the virtual implementation of the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method.  
-  
+The <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> methods must be implemented. The three methods are used in succession to write the complete serialization using the pattern: write start, write content, and write end. Users can insert XML attributes during the writing of the object between the calls to <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A> and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A>. The three methods are also called by the virtual implementation of the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -716,10 +716,10 @@
         <summary>Writes only the starting XML element to an XML document or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> methods must be implemented. The three methods are used in succession to write the complete serialization using the pattern: write start, write content, and write end. If the implementation writes using XML elements, attributes can be inserted before writing the contents of the object. The three methods are also called by the virtual implementation of the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method.  
-  
+The <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> methods must be implemented. The three methods are used in succession to write the complete serialization using the pattern: write start, write content, and write end. If the implementation writes using XML elements, attributes can be inserted before writing the contents of the object. The three methods are also called by the virtual implementation of the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -733,10 +733,10 @@
         <summary>Writes only the content of an object to an XML document or stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> methods must be implemented. The three methods are used in succession to write the complete serialization using the pattern: write start, write content, and write end. If the implementation writes using XML elements, attributes can be inserted before writing the contents of the object. The three methods are also called by the virtual implementation of the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method.  
-  
+The <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> methods must be implemented. The three methods are used in succession to write the complete serialization using the pattern: write start, write content, and write end. If the implementation writes using XML elements, attributes can be inserted before writing the contents of the object. The three methods are also called by the virtual implementation of the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

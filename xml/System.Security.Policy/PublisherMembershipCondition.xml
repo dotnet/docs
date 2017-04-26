@@ -24,12 +24,12 @@
     <summary>Determines whether an assembly belongs to a code group by testing its software publisher's Authenticode X.509v3 certificate. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A code assembly satisfies a publisher membership condition if that code is signed by the specified software publisher.  
-  
- By default, code access security (CAS) does not check for <xref:System.Security.Policy.Publisher> evidence. Unless your computer has a custom code group based on the <xref:System.Security.Policy.PublisherMembershipCondition> class, you can improve performance by bypassing Authenticode signature verification. This is accomplished by configuring the runtime to not provide <xref:System.Security.Policy.Publisher> evidence for CAS. For more information about how to configure this option and which applications can use it, see the  element.  
-  
+A code assembly satisfies a publisher membership condition if that code is signed by the specified software publisher.  
+ 
+By default, code access security (CAS) does not check for <xref:System.Security.Policy.Publisher> evidence. Unless your computer has a custom code group based on the <xref:System.Security.Policy.PublisherMembershipCondition> class, you can improve performance by bypassing Authenticode signature verification. This is accomplished by configuring the runtime to not provide <xref:System.Security.Policy.Publisher> evidence for CAS. For more information about how to configure this option and which applications can use it, see the  element.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,10 +52,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.PublisherMembershipCondition" /> class with the Authenticode X.509v3 certificate that determines membership.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Code satisfies the membership condition if it is signed by the software publisher with the private key that corresponds to the specified public key certificate.  
-  
+Code satisfies the membership condition if it is signed by the software publisher with the private key that corresponds to the specified public key certificate.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="certificate" /> parameter is <see langword="null" />.</exception>
@@ -104,10 +104,10 @@
           <see langword="true" /> if the specified evidence satisfies the membership condition; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This membership condition tests only <xref:System.Security.Policy.Publisher> evidence.  
-  
+This membership condition tests only <xref:System.Security.Policy.Publisher> evidence.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Security.Policy.PublisherMembershipCondition.Certificate" /> property is <see langword="null" />.</exception>
@@ -157,10 +157,10 @@
           <see langword="true" /> if the publisher certificate from the specified object is equivalent to the publisher certificate contained in the current <see cref="T:System.Security.Policy.PublisherMembershipCondition" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the two publisher certificates are equal, they represent the same <xref:System.Security.Policy.Publisher>.  
-  
+If the two publisher certificates are equal, they represent the same <xref:System.Security.Policy.Publisher>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Security.Policy.PublisherMembershipCondition.Certificate" /> property is <see langword="null" />.</exception>

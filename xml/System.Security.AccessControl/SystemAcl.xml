@@ -77,10 +77,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.SystemAcl" /> class with the specified values from the specified <see cref="T:System.Security.AccessControl.RawAcl" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Access Control Entries (ACEs) in the <xref:System.Security.AccessControl.RawAcl> object are cloned.  
-  
+The Access Control Entries (ACEs) in the <xref:System.Security.AccessControl.RawAcl> object are cloned.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -143,10 +143,10 @@
         <summary>Adds an audit rule to the current <see cref="T:System.Security.AccessControl.SystemAcl" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adding an audit rule might cause one or more existing Access Control Entries (ACEs) to be combined.  
-  
+Adding an audit rule might cause one or more existing Access Control Entries (ACEs) to be combined.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,10 +184,10 @@
         <summary>Adds an audit rule to the current <see cref="T:System.Security.AccessControl.SystemAcl" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adding an audit rule might cause one or more existing Access Control Entries (ACEs) to be combined.  
-  
+Adding an audit rule might cause one or more existing Access Control Entries (ACEs) to be combined.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -261,10 +261,10 @@
           <see langword="true" /> if this method successfully removes the specified audit rule; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Audit removal is accomplished by using a complex algorithm that might add ACEs in addition to removing them.  
-  
+Audit removal is accomplished by using a complex algorithm that might add ACEs in addition to removing them.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -304,10 +304,10 @@
           <see langword="true" /> if this method successfully removes the specified audit rule; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Audit removal is accomplished by using a complex algorithm that might add ACEs in addition to removing them.  
-  
+Audit removal is accomplished by using a complex algorithm that might add ACEs in addition to removing them.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -353,10 +353,10 @@
           <see langword="true" /> if this method successfully removes the specified audit rule; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Audit removal is accomplished by using a complex algorithm that might add ACEs in addition to removing them.  
-  
+Audit removal is accomplished by using a complex algorithm that might add ACEs in addition to removing them.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -524,10 +524,10 @@
         <summary>Sets the specified audit rule for the specified <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method removes all existing Access Control Entries (ACEs) that match both specified <xref:System.Security.Principal.SecurityIdentifier> object and the specified audit condition.  
-  
+This method removes all existing Access Control Entries (ACEs) that match both specified <xref:System.Security.Principal.SecurityIdentifier> object and the specified audit condition.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -571,10 +571,10 @@
         <summary>Sets the specified audit rule for the specified <see cref="T:System.Security.Principal.SecurityIdentifier" /> object. Use this method for directory object Access Control Lists (ACLs) when specifying the object type or the inherited object type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method removes all existing Access Control Entries (ACEs) that match both specified <xref:System.Security.Principal.SecurityIdentifier> object and the specified audit condition.  
-  
+This method removes all existing Access Control Entries (ACEs) that match both specified <xref:System.Security.Principal.SecurityIdentifier> object and the specified audit condition.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -588,10 +588,10 @@
         <summary>Adds an audit rule to the current <see cref="T:System.Security.AccessControl.SystemAcl" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adding an audit rule might cause one or more existing Access Control Entries (ACEs) to be combined.  
-  
+Adding an audit rule might cause one or more existing Access Control Entries (ACEs) to be combined.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -605,10 +605,10 @@
         <summary>Removes the specified audit rule from the current <see cref="T:System.Security.AccessControl.SystemAcl" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Audit removal is accomplished by using a complex algorithm that might add ACEs in addition to removing them.  
-  
+Audit removal is accomplished by using a complex algorithm that might add ACEs in addition to removing them.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -622,10 +622,10 @@
         <summary>Sets the specified audit rule for the specified <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These methods remove all existing Access Control Entries (ACEs) that match both specified <xref:System.Security.Principal.SecurityIdentifier> object and the specified audit condition.  
-  
+These methods remove all existing Access Control Entries (ACEs) that match both specified <xref:System.Security.Principal.SecurityIdentifier> object and the specified audit condition.  
+ 
  ]]></format>
         </remarks>
       </Docs>

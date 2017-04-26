@@ -14,16 +14,16 @@
     <summary>Provides information associated with health events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=fullName> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
-  
- Instances of the <xref:System.Web.Management.WebApplicationInformation> class contain information that is obtained using any of the types derived from the <xref:System.Web.Management.WebManagementEvent> type.  
-  
- Your application needs the appropriate permissions to access protected information provided by this type.  
-  
- The following is an excerpt of a configuration file you could use to enable ASP.NET to log error events that contain application information.  
-  
+ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=fullName> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+ 
+Instances of the <xref:System.Web.Management.WebApplicationInformation> class contain information that is obtained using any of the types derived from the <xref:System.Web.Management.WebManagementEvent> type.  
+ 
+Your application needs the appropriate permissions to access protected information provided by this type.  
+ 
+The following is an excerpt of a configuration file you could use to enable ASP.NET to log error events that contain application information.  
+ 
 ```  
 <healthMonitoring   
   enabled="true" heartBeatInterval="0">  
@@ -39,17 +39,17 @@
   
 </healthMonitoring>  
 ```  
-  
+ 
 > [!NOTE]
 >  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `healthMonitoring` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of creating a custom event class, see the example provided in this topic.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example has two parts. The first part is an excerpt of the configuration file that enables ASP.NET to use a custom event. The second shows how to create that custom event by using the <xref:System.Web.Management.WebApplicationInformation> class.  
-  
- Ensure that your custom event is raised at the proper time, that is, when the equivalent system health event it replaces would be raised.  
-  
+The following code example has two parts. The first part is an excerpt of the configuration file that enables ASP.NET to use a custom event. The second shows how to create that custom event by using the <xref:System.Web.Management.WebApplicationInformation> class.  
+ 
+Ensure that your custom event is raised at the proper time, that is, when the equivalent system health event it replaces would be raised.  
+ 
 ```  
 <healthMonitoring   
   enabled="true" heartBeatInterval="0">  
@@ -68,10 +68,10 @@
   
 </healthMonitoring>  
 ```  
-  
- [!code-csharp[System.Web.Management.WebApplicationInformation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#1)]
- [!code-vb[System.Web.Management.WebApplicationInformation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#1)]  
-  
+ 
+[!code-csharp[System.Web.Management.WebApplicationInformation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#1)]
+[!code-vb[System.Web.Management.WebApplicationInformation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -93,13 +93,13 @@
         <value>Gets the application domain name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to obtain the application domain name.  
-  
- [!code-csharp[System.Web.Management.WebApplicationInformation#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#4)]
- [!code-vb[System.Web.Management.WebApplicationInformation#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#4)]  
-  
+The following code example shows how to obtain the application domain name.  
+ 
+[!code-csharp[System.Web.Management.WebApplicationInformation#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#4)]
+[!code-vb[System.Web.Management.WebApplicationInformation#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,18 +121,18 @@
         <value>The application physical path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property requires appropriate permissions to be accessed. Refer to the Permissions section.  
+This property requires appropriate permissions to be accessed. Refer to the Permissions section.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to obtain the application physical path.  
-  
- [!code-csharp[System.Web.Management.WebApplicationInformation#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#5)]
- [!code-vb[System.Web.Management.WebApplicationInformation#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#5)]  
-  
+The following code example shows how to obtain the application physical path.  
+ 
+[!code-csharp[System.Web.Management.WebApplicationInformation#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#5)]
+[!code-vb[System.Web.Management.WebApplicationInformation#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,13 +154,13 @@
         <value>The application logical path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to obtain the application logical path.  
-  
- [!code-csharp[System.Web.Management.WebApplicationInformation#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#6)]
- [!code-vb[System.Web.Management.WebApplicationInformation#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#6)]  
-  
+The following code example shows how to obtain the application logical path.  
+ 
+[!code-csharp[System.Web.Management.WebApplicationInformation#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#6)]
+[!code-vb[System.Web.Management.WebApplicationInformation#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -185,21 +185,21 @@
         <summary>Formats the application information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Management.WebApplicationInformation.FormatToString%2A> method provides a uniform format for event information, which is useful if the event data must be logged and later presented to the user. It is called internally when the provider invokes one of the <xref:System.Web.Management.WebBaseEvent.ToString%2A> methods.  
-  
+The <xref:System.Web.Management.WebApplicationInformation.FormatToString%2A> method provides a uniform format for event information, which is useful if the event data must be logged and later presented to the user. It is called internally when the provider invokes one of the <xref:System.Web.Management.WebBaseEvent.ToString%2A> methods.  
+ 
 > [!NOTE]
 >  When formatting your custom event information for display, override the <xref:System.Web.Management.WebApplicationInformation.FormatToString%2A> method rather than the <xref:System.Web.Management.WebApplicationInformation.ToString%2A> method. This will avoid overwriting or tampering with sensitive system information.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to format custom information.  
-  
- [!code-csharp[System.Web.Management.WebApplicationInformation#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#9)]
- [!code-vb[System.Web.Management.WebApplicationInformation#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#9)]  
-  
+The following code example shows how to format custom information.  
+ 
+[!code-csharp[System.Web.Management.WebApplicationInformation#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#9)]
+[!code-vb[System.Web.Management.WebApplicationInformation#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -221,13 +221,13 @@
         <value>The name of the machine where the application is running.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to obtain the machine name.  
-  
- [!code-csharp[System.Web.Management.WebApplicationInformation#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#7)]
- [!code-vb[System.Web.Management.WebApplicationInformation#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#7)]  
-  
+The following code example shows how to obtain the machine name.  
+ 
+[!code-csharp[System.Web.Management.WebApplicationInformation#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#7)]
+[!code-vb[System.Web.Management.WebApplicationInformation#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,18 +250,18 @@
         <returns>The event information.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Management.WebBaseEvent.ToString%2A> method formats event information by calling the <xref:System.Web.Management.WebApplicationInformation.FormatToString%2A> method.  
-  
+The <xref:System.Web.Management.WebBaseEvent.ToString%2A> method formats event information by calling the <xref:System.Web.Management.WebApplicationInformation.FormatToString%2A> method.  
+ 
 > [!NOTE]
 >  When formatting your custom event information for display, override the <xref:System.Web.Management.WebApplicationInformation.FormatToString%2A> method rather than this <xref:System.Web.Management.WebApplicationInformation.ToString%2A> method. This will avoid overwriting or tampering with sensitive system information.  
+ 
   
-   
-  
+ 
 ## Examples  
- For an example of using the <xref:System.Web.Management.WebApplicationInformation.ToString%2A> method, see <xref:System.Web.Management.WebEventProvider>.  
-  
+For an example of using the <xref:System.Web.Management.WebApplicationInformation.ToString%2A> method, see <xref:System.Web.Management.WebEventProvider>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,18 +283,18 @@
         <value>The application trust level.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property requires appropriate permissions to be accessed. Refer to the Permissions section.  
+This property requires appropriate permissions to be accessed. Refer to the Permissions section.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to obtain the application-trust-level information.  
-  
- [!code-csharp[System.Web.Management.WebApplicationInformation#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#8)]
- [!code-vb[System.Web.Management.WebApplicationInformation#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#8)]  
-  
+The following example shows how to obtain the application-trust-level information.  
+ 
+[!code-csharp[System.Web.Management.WebApplicationInformation#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#8)]
+[!code-vb[System.Web.Management.WebApplicationInformation#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

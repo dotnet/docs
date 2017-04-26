@@ -14,10 +14,10 @@
     <summary>Provides data for the <see cref="E:System.Data.OleDb.OleDbConnection.InfoMessage" /> event. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Data.OleDb.OleDbConnection.InfoMessage> event contains an <xref:System.Data.OleDb.OleDbErrorCollection> collection with warnings sent from the data source.  
-  
+The <xref:System.Data.OleDb.OleDbConnection.InfoMessage> event contains an <xref:System.Data.OleDb.OleDbErrorCollection> collection with warnings sent from the data source.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <value>The HRESULT, which identifies the source of the error, if the error can be issued from more than one place.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a wrapper for the <xref:System.Data.OleDb.OleDbError.SQLState%2A> property of the first <xref:System.Data.OleDb.OleDbError> in the <xref:System.Data.OleDb.OleDbInfoMessageEventArgs.Errors%2A> collection.  
-  
+This is a wrapper for the <xref:System.Data.OleDb.OleDbError.SQLState%2A> property of the first <xref:System.Data.OleDb.OleDbError> in the <xref:System.Data.OleDb.OleDbInfoMessageEventArgs.Errors%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -82,10 +82,10 @@
         <value>The full text of the error.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a wrapper for the <xref:System.Data.OleDb.OleDbError.Message%2A> property of the first <xref:System.Data.OleDb.OleDbError> in the <xref:System.Data.OleDb.OleDbInfoMessageEventArgs.Errors%2A> collection.  
-  
+This is a wrapper for the <xref:System.Data.OleDb.OleDbError.Message%2A> property of the first <xref:System.Data.OleDb.OleDbError> in the <xref:System.Data.OleDb.OleDbInfoMessageEventArgs.Errors%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,10 +107,10 @@
         <value>The name of the object that generated the error.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a wrapper for the <xref:System.Data.OleDb.OleDbError.Source%2A> property of the first <xref:System.Data.OleDb.OleDbError> in the <xref:System.Data.OleDb.OleDbInfoMessageEventArgs.Errors%2A> collection.  
-  
+This is a wrapper for the <xref:System.Data.OleDb.OleDbError.Source%2A> property of the first <xref:System.Data.OleDb.OleDbError> in the <xref:System.Data.OleDb.OleDbInfoMessageEventArgs.Errors%2A> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

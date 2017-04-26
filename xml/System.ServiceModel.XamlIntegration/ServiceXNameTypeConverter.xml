@@ -105,10 +105,10 @@
         <returns>The converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method will not add a default namespace if one is not specified in the object being converted.  
-  
+This method will not add a default namespace if one is not specified in the object being converted.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -140,10 +140,10 @@
         <returns>The converted value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns an unqualified local name if no namespace has been provided in the <xref:System.Xml.Linq.XName> being converted. An unqualified local name is a <xref:System.Xml.Linq.XName> that contains no namespace.  
-  
+This method returns an unqualified local name if no namespace has been provided in the <xref:System.Xml.Linq.XName> being converted. An unqualified local name is a <xref:System.Xml.Linq.XName> that contains no namespace.  
+ 
  ]]></format>
         </remarks>
       </Docs>

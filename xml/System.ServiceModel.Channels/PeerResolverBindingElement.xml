@@ -14,10 +14,10 @@
     <summary>Defines the abstract base class for binding elements used to create peer resolver objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class defines the abstract base class for all binding elements used to create peer resolver objects. For specific implementations of this class, please see the documentation for <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement> and <xref:System.ServiceModel.Channels.PeerCustomResolverBindingElement>.  
-  
+This class defines the abstract base class for all binding elements used to create peer resolver objects. For specific implementations of this class, please see the documentation for <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement> and <xref:System.ServiceModel.Channels.PeerCustomResolverBindingElement>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,24 +14,24 @@
     <summary>Enables ASP.NET to read the HTTP values sent by a client during a Web request.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The methods and properties of the <xref:System.Web.HttpRequest> class are exposed through the `Request` properties of the <xref:System.Web.HttpApplication>, <xref:System.Web.HttpContext>, <xref:System.Web.UI.Page>, and <xref:System.Web.UI.UserControl> classes.  
-  
- To access data from the <xref:System.Web.HttpRequest.QueryString%2A>, <xref:System.Web.HttpRequest.Form%2A>, <xref:System.Web.HttpRequest.Cookies%2A>, or <xref:System.Web.HttpRequest.ServerVariables%2A> collections, you can write `Request["key"]`, as shown in the example for the <xref:System.Web.HttpRequest.QueryString%2A> property.  
-  
+The methods and properties of the <xref:System.Web.HttpRequest> class are exposed through the `Request` properties of the <xref:System.Web.HttpApplication>, <xref:System.Web.HttpContext>, <xref:System.Web.UI.Page>, and <xref:System.Web.UI.UserControl> classes.  
+ 
+To access data from the <xref:System.Web.HttpRequest.QueryString%2A>, <xref:System.Web.HttpRequest.Form%2A>, <xref:System.Web.HttpRequest.Cookies%2A>, or <xref:System.Web.HttpRequest.ServerVariables%2A> collections, you can write `Request["key"]`, as shown in the example for the <xref:System.Web.HttpRequest.QueryString%2A> property.  
+ 
 > [!NOTE]
 >  Unicode support for <xref:System.Web.HttpRequest> class members requires IIS version 6.0 or later.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following examples access the <xref:System.Web.HttpRequest> instance for the current request by using the <xref:System.Web.UI.Page.Request%2A> property of the <xref:System.Web.UI.Page> class.  
-  
- You can use simplified syntax for accessing data from the <xref:System.Web.HttpRequest.QueryString%2A>, <xref:System.Web.HttpRequest.Form%2A>, <xref:System.Web.HttpRequest.Cookies%2A>, or <xref:System.Web.HttpRequest.ServerVariables%2A> collections. You can write `Request["key"]`.  
-  
- The first example shows how to retrieve a query string value when loading a page.  
-  
+The following examples access the <xref:System.Web.HttpRequest> instance for the current request by using the <xref:System.Web.UI.Page.Request%2A> property of the <xref:System.Web.UI.Page> class.  
+ 
+You can use simplified syntax for accessing data from the <xref:System.Web.HttpRequest.QueryString%2A>, <xref:System.Web.HttpRequest.Form%2A>, <xref:System.Web.HttpRequest.Cookies%2A>, or <xref:System.Web.HttpRequest.ServerVariables%2A> collections. You can write `Request["key"]`.  
+ 
+The first example shows how to retrieve a query string value when loading a page.  
+ 
 ```csharp  
 public partial class AddToCart : Page  
 {  
@@ -54,7 +54,7 @@ public partial class AddToCart : Page
     }  
 }  
 ```  
-  
+ 
 ```vb  
 Public Class AddToCart  
     Inherits Page  
@@ -74,9 +74,9 @@ Public Class AddToCart
     End Sub  
 End Class  
 ```  
-  
- The next example shows how to check if the request is authenticated and retrieve the raw URL.  
-  
+ 
+The next example shows how to check if the request is authenticated and retrieve the raw URL.  
+ 
 ```csharp  
 public partial class RestrictedPage : Page  
 {  
@@ -90,7 +90,7 @@ public partial class RestrictedPage : Page
     }  
 }  
 ```  
-  
+ 
 ```vb  
 Public Class RestrictedPage  
     Inherits Page  
@@ -103,17 +103,17 @@ Public Class RestrictedPage
     End Sub  
 End Class  
 ```  
-  
- A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkID=191455).  
-  
- This example uses the <xref:System.IO.StreamWriter> class to write the values of several <xref:System.Web.HttpRequest> class properties to a file. For properties that are of type string, the values are HTML encoded as they are written to the file. Properties that represent a collection are looped through, and each key/value pair that they contain is written to the file.  
-  
+ 
+A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkID=191455).  
+ 
+This example uses the <xref:System.IO.StreamWriter> class to write the values of several <xref:System.Web.HttpRequest> class properties to a file. For properties that are of type string, the values are HTML encoded as they are written to the file. Properties that represent a collection are looped through, and each key/value pair that they contain is written to the file.  
+ 
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest_Sample1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest_Sample1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#1)]  -->  
-  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest_Sample1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest_Sample1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#1)]  -->  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -139,10 +139,10 @@ End Class
         <summary>Initializes an <see cref="T:System.Web.HttpRequest" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You do not need to create your own instance of the <xref:System.Web.HttpRequest> class. The methods and properties of the <xref:System.Web.HttpRequest> class are exposed through the `Request` property of the <xref:System.Web.HttpApplication>, <xref:System.Web.HttpContext>, <xref:System.Web.UI.Page>, and <xref:System.Web.UI.UserControl> classes.  
-  
+You do not need to create your own instance of the <xref:System.Web.HttpRequest> class. The methods and properties of the <xref:System.Web.HttpRequest> class are exposed through the `Request` property of the <xref:System.Web.HttpApplication>, <xref:System.Web.HttpContext>, <xref:System.Web.UI.Page>, and <xref:System.Web.UI.UserControl> classes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -164,12 +164,12 @@ End Class
         <summary>Forcibly terminates the underlying TCP connection, causing any outstanding I/O to fail. You might use this method in response to an attack by a malicious HTTP client.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is thread-safe. Any thread may call it at any time.  
-  
- This method can only be used in integrated mode. If you invoke it in classic mode, an exception is thrown. To determine the pipeline mode, use <xref:System.Web.HttpRuntime.UsingIntegratedPipeline%2A>.  
-  
+This method is thread-safe. Any thread may call it at any time.  
+ 
+This method can only be used in integrated mode. If you invoke it in classic mode, an exception is thrown. To determine the pipeline mode, use <xref:System.Web.HttpRuntime.UsingIntegratedPipeline%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -191,13 +191,13 @@ End Class
         <value>A string array of client-supported MIME accept types.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example captures the multiple values returned by the <xref:System.Web.HttpRequest.AcceptTypes%2A> property into an object variable and writes the number and name of each valueto a separate line of HTTP output.  
-  
- [!code-csharp[Classic HttpRequest.AcceptTypes Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.AcceptTypes Example/CS/source.cs#1)]
- [!code-vb[Classic HttpRequest.AcceptTypes Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.AcceptTypes Example/VB/source.vb#1)]  
-  
+The following code example captures the multiple values returned by the <xref:System.Web.HttpRequest.AcceptTypes%2A> property into an object variable and writes the number and name of each valueto a separate line of HTTP output.  
+ 
+[!code-csharp[Classic HttpRequest.AcceptTypes Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.AcceptTypes Example/CS/source.cs#1)]
+[!code-vb[Classic HttpRequest.AcceptTypes Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.AcceptTypes Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -219,31 +219,31 @@ End Class
         <value>A string representing the current anonymous user identifier.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpRequest.AnonymousID%2A> property assigns a long-lived unique identifier to a non-authenticated user, which can be used to track the user or assign profile properties to that user without storing data in a `Session` object. By default, the <xref:System.Web.HttpRequest.AnonymousID%2A> property is tracked using a cookie, but it can be set to use the URI when the <xref:System.Web.Configuration.SessionStateSection.Cookieless%2A> attribute in the anonymous identification configuration section is set to either the <xref:System.Web.HttpCookieMode>, <xref:System.Web.HttpCookieMode>, or <xref:System.Web.HttpCookieMode> value. You must explicitly clear the cookie if you no longer want it available, for example when an anonymous user is authenticated.  
+The <xref:System.Web.HttpRequest.AnonymousID%2A> property assigns a long-lived unique identifier to a non-authenticated user, which can be used to track the user or assign profile properties to that user without storing data in a `Session` object. By default, the <xref:System.Web.HttpRequest.AnonymousID%2A> property is tracked using a cookie, but it can be set to use the URI when the <xref:System.Web.Configuration.SessionStateSection.Cookieless%2A> attribute in the anonymous identification configuration section is set to either the <xref:System.Web.HttpCookieMode>, <xref:System.Web.HttpCookieMode>, or <xref:System.Web.HttpCookieMode> value. You must explicitly clear the cookie if you no longer want it available, for example when an anonymous user is authenticated.  
+ 
+Anonymous identification is used when there is a need to identify entities that are not authenticated and when authorization is required. For more information, see [anonymousIdentification Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/2bd927ef-9057-4703-9c55-4cfb6d7d0929)  
+ 
   
- Anonymous identification is used when there is a need to identify entities that are not authenticated and when authorization is required. For more information, see [anonymousIdentification Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/2bd927ef-9057-4703-9c55-4cfb6d7d0929)  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to use the <xref:System.Web.HttpRequest.AnonymousID%2A> property by handling the <xref:System.Web.Security.AnonymousIdentificationModule.Creating> event in the Global.asax file. This example has two parts:  
-  
+The following example shows how to use the <xref:System.Web.HttpRequest.AnonymousID%2A> property by handling the <xref:System.Web.Security.AnonymousIdentificationModule.Creating> event in the Global.asax file. This example has two parts:  
+ 
 -   A method in the Global.asax file that handles the <xref:System.Web.Security.AnonymousIdentificationModule.Creating> event.  
-  
+ 
 -   A Web Forms page.  
-  
- The first part of the code example shows how to set the <xref:System.Web.HttpRequest.AnonymousID%2A> property by handling the <xref:System.Web.Security.AnonymousIdentificationModule.Creating> event in the Global.asax file. The method that is named `AnonymousIdentification_Creating` sets the <xref:System.Web.HttpRequest.AnonymousID%2A> property when an anonymous ID is created.  
-  
- [!code-csharp[System.Web.HttpRequest_AnonymousID#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_AnonymousID/CS/global_asax.cs#2)]
- [!code-vb[System.Web.HttpRequest_AnonymousID#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_AnonymousID/vb/global_asax.vb#2)]  
-  
- The second part of the code example shows how to display the new <xref:System.Web.HttpRequest.AnonymousID%2A> that is created by the `AnonymousIdentification_Creating` event handler in the preceding example.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest_AnonymousID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_AnonymousID/CS/anonid_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest_AnonymousID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_AnonymousID/vb/anonid_vb.aspx#1)]  -->  
-  
+ 
+The first part of the code example shows how to set the <xref:System.Web.HttpRequest.AnonymousID%2A> property by handling the <xref:System.Web.Security.AnonymousIdentificationModule.Creating> event in the Global.asax file. The method that is named `AnonymousIdentification_Creating` sets the <xref:System.Web.HttpRequest.AnonymousID%2A> property when an anonymous ID is created.  
+ 
+[!code-csharp[System.Web.HttpRequest_AnonymousID#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_AnonymousID/CS/global_asax.cs#2)]
+[!code-vb[System.Web.HttpRequest_AnonymousID#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_AnonymousID/vb/global_asax.vb#2)]  
+ 
+The second part of the code example shows how to display the new <xref:System.Web.HttpRequest.AnonymousID%2A> that is created by the `AnonymousIdentification_Creating` event handler in the preceding example.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest_AnonymousID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_AnonymousID/CS/anonid_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest_AnonymousID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_AnonymousID/vb/anonid_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -265,25 +265,25 @@ End Class
         <value>The virtual path of the current application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to construct a URL relative to the application root from a page or Web user control that is not in the root directory. This allows pages and shared controls that exist at different levels of a directory structure to use the same code to link to resources at fixed locations in the application.  
+Use this property to construct a URL relative to the application root from a page or Web user control that is not in the root directory. This allows pages and shared controls that exist at different levels of a directory structure to use the same code to link to resources at fixed locations in the application.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.IO.StreamWriter.Write%2A> method to HTML-encode and then write the value of the <xref:System.Web.HttpRequest.ApplicationPath%2A> property to a text file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class. It assumes the existence of a <xref:System.IO.StreamWriter> object named `sw`.  
-  
- [!code-csharp[System.Web.HttpRequest_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#2)]
- [!code-vb[System.Web.HttpRequest_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#2)]  
-  
- The following example uses the <xref:System.Web.HttpRequest.ApplicationPath%2A> property to programmatically construct a path to a resource that is in a fixed location in the application. The page that references the resource does not have to be located in the same directory as the resource.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest.ApplicationPath#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/CS/ApplicationPath.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest.ApplicationPath#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/VB/ApplicationPath.aspx#2)]  -->  
-  
- If you run this example in a Web application that is named WebSite1,  `/WebSite1` will be displayed as the value of the <xref:System.Web.HttpRequest.ApplicationPath%2A> property and `/WebSite1/images/Image1.gif` will be displayed as the complete path of the image.  
-  
+The following example uses the <xref:System.IO.StreamWriter.Write%2A> method to HTML-encode and then write the value of the <xref:System.Web.HttpRequest.ApplicationPath%2A> property to a text file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class. It assumes the existence of a <xref:System.IO.StreamWriter> object named `sw`.  
+ 
+[!code-csharp[System.Web.HttpRequest_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#2)]
+[!code-vb[System.Web.HttpRequest_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#2)]  
+ 
+The following example uses the <xref:System.Web.HttpRequest.ApplicationPath%2A> property to programmatically construct a path to a resource that is in a fixed location in the application. The page that references the resource does not have to be located in the same directory as the resource.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest.ApplicationPath#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/CS/ApplicationPath.aspx#2)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest.ApplicationPath#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/VB/ApplicationPath.aspx#2)]  -->  
+ 
+If you run this example in a Web application that is named WebSite1,  `/WebSite1` will be displayed as the value of the <xref:System.Web.HttpRequest.ApplicationPath%2A> property and `/WebSite1/images/Image1.gif` will be displayed as the complete path of the image.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -305,23 +305,23 @@ End Class
         <value>The virtual path of the application root for the current request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to provide URL information that will stay the same even if the application changes location. This allows the same URL-mapping code to be used in a test environment and in the final deployment environment, or to be used by copies of Web applications in different domains.  
+Use this property to provide URL information that will stay the same even if the application changes location. This allows the same URL-mapping code to be used in a test environment and in the final deployment environment, or to be used by copies of Web applications in different domains.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Web.HttpRequest.AppRelativeCurrentExecutionFilePath%2A> property to set the URL of an <xref:System.Web.UI.WebControls.Image> control to an image in the same directory as the page. Run this page at different levels of a directory structure to see the resulting <xref:System.Web.HttpRequest.AppRelativeCurrentExecutionFilePath%2A> property values.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest.AppRelativeCurrentExecutionPath#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.AppRelativeCurrentExecutionPath/CS/AppRelativeCurrentExecutionPathCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest.AppRelativeCurrentExecutionPath#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.AppRelativeCurrentExecutionPath/VB/AppRelativeCurrentExecutionPathVB.aspx#1)]  -->  
-  
- The following example uses the <xref:System.Web.HttpRequest.AppRelativeCurrentExecutionFilePath%2A> property to programmatically set the path to a resource, based on the current path of the page.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest.ApplicationPath#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/CS/apprelativecurrentexecutionfilepath.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest.ApplicationPath#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/VB/apprelativecurrentexecutionfilepath.aspx#1)]  -->  
-  
+The following example uses the <xref:System.Web.HttpRequest.AppRelativeCurrentExecutionFilePath%2A> property to set the URL of an <xref:System.Web.UI.WebControls.Image> control to an image in the same directory as the page. Run this page at different levels of a directory structure to see the resulting <xref:System.Web.HttpRequest.AppRelativeCurrentExecutionFilePath%2A> property values.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest.AppRelativeCurrentExecutionPath#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.AppRelativeCurrentExecutionPath/CS/AppRelativeCurrentExecutionPathCS.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest.AppRelativeCurrentExecutionPath#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.AppRelativeCurrentExecutionPath/VB/AppRelativeCurrentExecutionPathVB.aspx#1)]  -->  
+ 
+The following example uses the <xref:System.Web.HttpRequest.AppRelativeCurrentExecutionFilePath%2A> property to programmatically set the path to a resource, based on the current path of the page.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest.ApplicationPath#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/CS/apprelativecurrentexecutionfilepath.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest.ApplicationPath#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/VB/apprelativecurrentexecutionfilepath.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -347,10 +347,10 @@ End Class
         <returns>A byte array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpRequest.BinaryRead%2A> method is provided for compatibility with ASP.  
-  
+The <xref:System.Web.HttpRequest.BinaryRead%2A> method is provided for compatibility with ASP.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -378,13 +378,13 @@ End Class
         <value>An <see cref="T:System.Web.HttpBrowserCapabilities" /> object listing the capabilities of the client's browser.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example sends a list of the browser's capabilities back to the client in an HTML page.  
-  
- [!code-csharp[Classic HttpRequest.Browser Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.Browser Example/CS/source.cs#1)]
- [!code-vb[Classic HttpRequest.Browser Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.Browser Example/VB/source.vb#1)]  
-  
+The following code example sends a list of the browser's capabilities back to the client in an HTML page.  
+ 
+[!code-csharp[Classic HttpRequest.Browser Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.Browser Example/CS/source.cs#1)]
+[!code-vb[Classic HttpRequest.Browser Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.Browser Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -406,13 +406,13 @@ End Class
         <value>An <see cref="T:System.Web.HttpClientCertificate" /> object containing information about the client's security certificate settings.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example sends the client's certificate settings back to the client in an HTML page.  
-  
- [!code-csharp[Classic HttpRequest.ClientCertificate Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.ClientCertificate Example/CS/source.cs#1)]
- [!code-vb[Classic HttpRequest.ClientCertificate Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.ClientCertificate Example/VB/source.vb#1)]  
-  
+The following code example sends the client's certificate settings back to the client in an HTML page.  
+ 
+[!code-csharp[Classic HttpRequest.ClientCertificate Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.ClientCertificate Example/CS/source.cs#1)]
+[!code-vb[Classic HttpRequest.ClientCertificate Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.ClientCertificate Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -434,18 +434,18 @@ End Class
         <value>An <see cref="T:System.Text.Encoding" /> object representing the client's character set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Default content encoding can be specified in the [globalization Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) of a configuration file. If content encoding is also specified by the client, the default configuration settings are overridden.  
+Default content encoding can be specified in the [globalization Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) of a configuration file. If content encoding is also specified by the client, the default configuration settings are overridden.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example assigns a value representing the description of the current HTTP encoding to a string variable.  
-  
- [!code-csharp[Classic HttpRequest.ContentEncoding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.ContentEncoding Example/CS/source.cs#1)]
- [!code-vb[Classic HttpRequest.ContentEncoding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.ContentEncoding Example/VB/source.vb#1)]  
-  
+The following code example assigns a value representing the description of the current HTTP encoding to a string variable.  
+ 
+[!code-csharp[Classic HttpRequest.ContentEncoding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.ContentEncoding Example/CS/source.cs#1)]
+[!code-vb[Classic HttpRequest.ContentEncoding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.ContentEncoding Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -467,13 +467,13 @@ End Class
         <value>The length, in bytes, of content sent by the client.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example assigns the value representing the content length of the incoming request to an integer variable.  
-  
- [!code-csharp[Classic HttpRequest.ContentLength Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.ContentLength Example/CS/source.cs#1)]
- [!code-vb[Classic HttpRequest.ContentLength Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.ContentLength Example/VB/source.vb#1)]  
-  
+The following code example assigns the value representing the content length of the incoming request to an integer variable.  
+ 
+[!code-csharp[Classic HttpRequest.ContentLength Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.ContentLength Example/CS/source.cs#1)]
+[!code-vb[Classic HttpRequest.ContentLength Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.ContentLength Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -495,23 +495,23 @@ End Class
         <value>A string representing the MIME content type of the incoming request, for example, "text/html". Additional common MIME types include "audio.wav", "image/gif", and "application/pdf".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example assigns the value representing the content type of the incoming request to a string variable.  
-  
- [!code-csharp[Classic HttpRequest.ContentType Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.ContentType Example/CS/source.cs#1)]
- [!code-vb[Classic HttpRequest.ContentType Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.ContentType Example/VB/source.vb#1)]  
-  
- The following example shows output that might be produced by this code.  
-  
- `GET`  
-  
- `127.0.0.1`  
-  
- `127.0.0.1`  
-  
- `GET`  
-  
+The following code example assigns the value representing the content type of the incoming request to a string variable.  
+ 
+[!code-csharp[Classic HttpRequest.ContentType Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.ContentType Example/CS/source.cs#1)]
+[!code-vb[Classic HttpRequest.ContentType Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.ContentType Example/VB/source.vb#1)]  
+ 
+The following example shows output that might be produced by this code.  
+ 
+`GET`  
+ 
+`127.0.0.1`  
+ 
+`127.0.0.1`  
+ 
+`GET`  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -533,21 +533,21 @@ End Class
         <value>An <see cref="T:System.Web.HttpCookieCollection" /> object representing the client's cookie variables.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ASP.NET includes two intrinsic cookie collections. The collection accessed through the <xref:System.Web.HttpRequest.Cookies%2A> collection of <xref:System.Web.HttpRequest> contains cookies transmitted by the client to the server in the `Cookie` header. The collection accessed through the <xref:System.Web.HttpResponse.Cookies%2A> collection of <xref:System.Web.HttpResponse> contains new cookies created on the server and transmitted to the client in the `Set-Cookie` header.  
-  
+ASP.NET includes two intrinsic cookie collections. The collection accessed through the <xref:System.Web.HttpRequest.Cookies%2A> collection of <xref:System.Web.HttpRequest> contains cookies transmitted by the client to the server in the `Cookie` header. The collection accessed through the <xref:System.Web.HttpResponse.Cookies%2A> collection of <xref:System.Web.HttpResponse> contains new cookies created on the server and transmitted to the client in the `Set-Cookie` header.  
+ 
 > [!NOTE]
 >  After you add a cookie by using the <xref:System.Web.HttpResponse.Cookies%2A?displayProperty=fullName> collection, the cookie is immediately available in the <xref:System.Web.HttpRequest.Cookies%2A?displayProperty=fullName> collection, even if the response has not been sent to the client.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example loops through all cookies sent by the client and sends the name, expiration date, security parameter, and values of each cookie to the HTTP output.  
-  
- [!code-csharp[Classic HttpRequest.Cookies Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.Cookies Example/CS/source.cs#1)]
- [!code-vb[Classic HttpRequest.Cookies Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.Cookies Example/VB/source.vb#1)]  
-  
+The following code example loops through all cookies sent by the client and sends the name, expiration date, security parameter, and values of each cookie to the HTTP output.  
+ 
+[!code-csharp[Classic HttpRequest.Cookies Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.Cookies Example/CS/source.cs#1)]
+[!code-vb[Classic HttpRequest.Cookies Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.Cookies Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -569,18 +569,18 @@ End Class
         <value>The virtual path of the current request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Web.HttpRequest.CurrentExecutionFilePath%2A> returns the file path to the currently executing page handler. For redirect scenarios using <xref:System.Web.HttpServerUtility.Execute%2A> and <xref:System.Web.HttpServerUtility.Transfer%2A> methods this means that the <xref:System.Web.HttpRequest.CurrentExecutionFilePath%2A> property returns the path to the page redirected to (child page). However, when the client is redirected to another page, the <xref:System.Web.HttpRequest.FilePath%2A> property returns the path to the original page.  
+<xref:System.Web.HttpRequest.CurrentExecutionFilePath%2A> returns the file path to the currently executing page handler. For redirect scenarios using <xref:System.Web.HttpServerUtility.Execute%2A> and <xref:System.Web.HttpServerUtility.Transfer%2A> methods this means that the <xref:System.Web.HttpRequest.CurrentExecutionFilePath%2A> property returns the path to the page redirected to (child page). However, when the client is redirected to another page, the <xref:System.Web.HttpRequest.FilePath%2A> property returns the path to the original page.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.CurrentExecutionFilePath%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
-  
- [!code-csharp[System.Web.HttpRequest_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#2)]
- [!code-vb[System.Web.HttpRequest_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#2)]  
-  
+The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.CurrentExecutionFilePath%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
+ 
+[!code-csharp[System.Web.HttpRequest_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#2)]
+[!code-vb[System.Web.HttpRequest_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -620,18 +620,18 @@ End Class
         <value>The virtual path of the current request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpRequest.FilePath%2A> property does not include the <xref:System.Web.HttpRequest.PathInfo%2A> trailer. For example, for the URL http://www.contoso.com/virdir/page.html/tail, the <xref:System.Web.HttpRequest.FilePath%2A> value is /virdir/page.html.  
+The <xref:System.Web.HttpRequest.FilePath%2A> property does not include the <xref:System.Web.HttpRequest.PathInfo%2A> trailer. For example, for the URL http://www.contoso.com/virdir/page.html/tail, the <xref:System.Web.HttpRequest.FilePath%2A> value is /virdir/page.html.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.FilePath%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
-  
- [!code-csharp[System.Web.HttpRequest_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#2)]
- [!code-vb[System.Web.HttpRequest_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#2)]  
-  
+The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.FilePath%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
+ 
+[!code-csharp[System.Web.HttpRequest_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#2)]
+[!code-vb[System.Web.HttpRequest_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -653,18 +653,18 @@ End Class
         <value>An <see cref="T:System.Web.HttpFileCollection" /> object representing a collection of files uploaded by the client. The items of the <see cref="T:System.Web.HttpFileCollection" /> object are of type <see cref="T:System.Web.HttpPostedFile" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The file collection is populated only when the HTTP request `Content-Type` value is "multipart/form-data".  
+The file collection is populated only when the HTTP request `Content-Type` value is "multipart/form-data".  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the names of all files in the <xref:System.Web.HttpRequest.Files%2A> collection.  
-  
- [!code-csharp[Classic HttpRequest.Files Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.Files Example/CS/source.cs#1)]
- [!code-vb[Classic HttpRequest.Files Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.Files Example/VB/source.vb#1)]  
-  
+The following code example displays the names of all files in the <xref:System.Web.HttpRequest.Files%2A> collection.  
+ 
+[!code-csharp[Classic HttpRequest.Files Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.Files Example/CS/source.cs#1)]
+[!code-vb[Classic HttpRequest.Files Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.Files Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -686,13 +686,13 @@ End Class
         <value>A <see cref="T:System.IO.Stream" /> object to be used as the filter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates two new classes, `QQQ1` and `QQQ2` that filter the <xref:System.Web.HttpRequest.InputStream%2A>. Put the classes into the Global.asax file in an ASP.NET application's directory so that all input for all ASP.NET Web pages in the application will be filtered.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest.Filter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.Filter/CS/systemwebhttprequestfilter.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest.Filter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.Filter/VB/systemwebhttprequestfilter.vb.aspx#1)]  -->  
-  
+The following code example creates two new classes, `QQQ1` and `QQQ2` that filter the <xref:System.Web.HttpRequest.InputStream%2A>. Put the classes into the Global.asax file in an ASP.NET application's directory so that all input for all ASP.NET Web pages in the application will be filtered.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest.Filter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.Filter/CS/systemwebhttprequestfilter.cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest.Filter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.Filter/VB/systemwebhttprequestfilter.vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The specified <see cref="T:System.IO.Stream" /> is invalid.</exception>
@@ -715,18 +715,18 @@ End Class
         <value>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> representing a collection of form variables.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpRequest.Form%2A> property is populated when the HTTP request `Content-Type` value is either "application/x-www-form-urlencoded" or "multipart/form-data".  
+The <xref:System.Web.HttpRequest.Form%2A> property is populated when the HTTP request `Content-Type` value is either "application/x-www-form-urlencoded" or "multipart/form-data".  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to read the values in the form collection posted from a browser. Each name/value pair in the collection represents a control in the form and its value.  
-  
- [!code-csharp[Classic HttpRequest.Form Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.Form Example/CS/source.cs#1)]
- [!code-vb[Classic HttpRequest.Form Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.Form Example/VB/source.vb#1)]  
-  
+The following example shows how to read the values in the form collection posted from a browser. Each name/value pair in the collection represents a control in the form and its value.  
+ 
+[!code-csharp[Classic HttpRequest.Form Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.Form Example/CS/source.cs#1)]
+[!code-vb[Classic HttpRequest.Form Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.Form Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -749,10 +749,10 @@ End Class
         <returns>A <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is identical to <xref:System.Web.HttpRequest.GetBufferlessInputStream%2A> except that it also copies the bytes that are read to the internal storage that is used by ASP.NET to populate the <xref:System.Web.HttpRequest.Form%2A>, <xref:System.Web.HttpRequest.Files%2A>, and <xref:System.Web.HttpRequest.InputStream%2A> properties. Because this information is preserved, downstream code such as ASP.NET Web Forms pages (.aspx files) will run successfully. This is not the case with the <xref:System.Web.HttpRequest.GetBufferlessInputStream%2A> method.  
-  
+This method is identical to <xref:System.Web.HttpRequest.GetBufferlessInputStream%2A> except that it also copies the bytes that are read to the internal storage that is used by ASP.NET to populate the <xref:System.Web.HttpRequest.Form%2A>, <xref:System.Web.HttpRequest.Files%2A>, and <xref:System.Web.HttpRequest.InputStream%2A> properties. Because this information is preserved, downstream code such as ASP.NET Web Forms pages (.aspx files) will run successfully. This is not the case with the <xref:System.Web.HttpRequest.GetBufferlessInputStream%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The request's entity body has already been loaded and parsed. Examples of properties that cause the entity body to be loaded and parsed include the following:  
@@ -786,16 +786,16 @@ End Class
         <returns>A <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method provides an alternative to using the <xref:System.Web.HttpRequest.InputStream%2A> property. The <xref:System.Web.HttpRequest.InputStream%2A> property waits until the whole request has been received before it returns a <xref:System.IO.Stream> object. In contrast, the <xref:System.Web.HttpRequest.GetBufferlessInputStream%2A> method returns the <xref:System.IO.Stream> object immediately. You can use the method to begin processing the entity body before the complete contents of the body have been received.  
-  
- The entity body (or as much of it as you request and has been received) is returned only when you use the object that is returned by this method to read the stream, by calling methods such as the <xref:System.IO.Stream.Read%2A> method. You use parameters of the <xref:System.IO.Stream.Read%2A> method to specify how much of the entity body to read.  
-  
- The <xref:System.IO.Stream> object returned by ASP.NET from this method supports both synchronous and asynchronous read methods. The <xref:System.IO.Stream> object implements both the <xref:System.IO.Stream.BeginRead%2A> and <xref:System.IO.Stream.EndRead%2A> methods. The asynchronous methods let you asynchronously read the request entity in chunks, while ASP.NET releases the current thread in between each iteration of an asynchronous read loop.  
-  
- This method can be useful if the request is uploading a large file and you want to begin accessing the file contents before the upload is finished. However, you should only use this method for scenarios where you want to take over all processing of the entity body. This means that you cannot use this method from an .aspx page, because by the time an .aspx page runs, the entity body has already been read.  
-  
+This method provides an alternative to using the <xref:System.Web.HttpRequest.InputStream%2A> property. The <xref:System.Web.HttpRequest.InputStream%2A> property waits until the whole request has been received before it returns a <xref:System.IO.Stream> object. In contrast, the <xref:System.Web.HttpRequest.GetBufferlessInputStream%2A> method returns the <xref:System.IO.Stream> object immediately. You can use the method to begin processing the entity body before the complete contents of the body have been received.  
+ 
+The entity body (or as much of it as you request and has been received) is returned only when you use the object that is returned by this method to read the stream, by calling methods such as the <xref:System.IO.Stream.Read%2A> method. You use parameters of the <xref:System.IO.Stream.Read%2A> method to specify how much of the entity body to read.  
+ 
+The <xref:System.IO.Stream> object returned by ASP.NET from this method supports both synchronous and asynchronous read methods. The <xref:System.IO.Stream> object implements both the <xref:System.IO.Stream.BeginRead%2A> and <xref:System.IO.Stream.EndRead%2A> methods. The asynchronous methods let you asynchronously read the request entity in chunks, while ASP.NET releases the current thread in between each iteration of an asynchronous read loop.  
+ 
+This method can be useful if the request is uploading a large file and you want to begin accessing the file contents before the upload is finished. However, you should only use this method for scenarios where you want to take over all processing of the entity body. This means that you cannot use this method from an .aspx page, because by the time an .aspx page runs, the entity body has already been read.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The request's entity body has already been loaded and parsed. Examples of properties that cause the entity body to be loaded and parsed include the following:  
@@ -833,10 +833,10 @@ End Class
         <returns>A <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about this method, see the <xref:System.Web.HttpRequest.GetBufferlessInputStream> overload.  
-  
+For more information about this method, see the <xref:System.Web.HttpRequest.GetBufferlessInputStream> overload.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The request's entity body has already been loaded and parsed. Examples of properties that cause the entity body to be loaded and parsed include the following:  
@@ -869,18 +869,18 @@ End Class
         <value>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> of headers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a listing of all possible headers, see [Request Header Fields](http://go.microsoft.com/fwlink/?LinkId=73147) on the W3C Web site.  
+For a listing of all possible headers, see [Request Header Fields](http://go.microsoft.com/fwlink/?LinkId=73147) on the W3C Web site.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the names and values of all headers in the HTTP request.  
-  
- [!code-csharp[Classic HttpRequest.Headers Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.Headers Example/CS/source.cs#1)]
- [!code-vb[Classic HttpRequest.Headers Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.Headers Example/VB/source.vb#1)]  
-  
+The following code example displays the names and values of all headers in the HTTP request.  
+ 
+[!code-csharp[Classic HttpRequest.Headers Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.Headers Example/CS/source.cs#1)]
+[!code-vb[Classic HttpRequest.Headers Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.Headers Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -921,23 +921,23 @@ End Class
         <value>The HTTP data transfer method used by the client.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.HttpMethod%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
-  
- [!code-csharp[System.Web.HttpRequest_Sample1#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#7)]
- [!code-vb[System.Web.HttpRequest_Sample1#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#7)]  
-  
- The following example shows output that is produced by this code.  
-  
- `GET`  
-  
- `127.0.0.1`  
-  
- `127.0.0.1`  
-  
- `GET`  
-  
+The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.HttpMethod%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
+ 
+[!code-csharp[System.Web.HttpRequest_Sample1#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#7)]
+[!code-vb[System.Web.HttpRequest_Sample1#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#7)]  
+ 
+The following example shows output that is produced by this code.  
+ 
+`GET`  
+ 
+`127.0.0.1`  
+ 
+`127.0.0.1`  
+ 
+`GET`  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -959,13 +959,13 @@ End Class
         <value>A <see cref="T:System.IO.Stream" /> object representing the contents of the incoming HTTP content body.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example copies the contents of an <xref:System.Web.HttpRequest.InputStream%2A> into a string.  
-  
- [!code-csharp[Classic HttpRequest.InputStream Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.InputStream Example/cs/source.aspx#1)]
- [!code-vb[Classic HttpRequest.InputStream Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.InputStream Example/VB/source.vb#1)]  
-  
+The following code example copies the contents of an <xref:System.Web.HttpRequest.InputStream%2A> into a string.  
+ 
+[!code-csharp[Classic HttpRequest.InputStream Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.InputStream Example/cs/source.aspx#1)]
+[!code-vb[Classic HttpRequest.InputStream Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.InputStream Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -987,12 +987,12 @@ End Class
         <summary>Provides IIS with a copy of the HTTP request entity body.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- IIS does not maintain a copy of the request after it has been read. Therefore, it is recommended that only the handler for an HTTP request should read the request entity.  
-  
- The <xref:System.Web.HttpRequest.InsertEntityBody%2A?displayProperty=fullName> method overload provides IIS with a copy of the request entity if it was previously read by ASP.NET. This method overload is useful for cases where ASP.NET has read the entity request and you want to reuse the existing request data.  
-  
+IIS does not maintain a copy of the request after it has been read. Therefore, it is recommended that only the handler for an HTTP request should read the request entity.  
+ 
+The <xref:System.Web.HttpRequest.InsertEntityBody%2A?displayProperty=fullName> method overload provides IIS with a copy of the request entity if it was previously read by ASP.NET. This method overload is useful for cases where ASP.NET has read the entity request and you want to reuse the existing request data.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The method was invoked on a version of IIS earlier than IIS 7.0.</exception>
@@ -1023,12 +1023,12 @@ End Class
         <summary>Provides IIS with a copy of the HTTP request entity body and with information about the request entity object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- IIS does not maintain a copy of the request after it has been read. Therefore, it is recommended that only the handler for an HTTP request should read the request entity.  
-  
- The <xref:System.Web.HttpRequest.InsertEntityBody%2A?displayProperty=fullName> method overload is useful when you want to perform custom processing, such as inserting a different entity body into memory.  
-  
+IIS does not maintain a copy of the request after it has been read. Therefore, it is recommended that only the handler for an HTTP request should read the request entity.  
+ 
+The <xref:System.Web.HttpRequest.InsertEntityBody%2A?displayProperty=fullName> method overload is useful when you want to perform custom processing, such as inserting a different entity body into memory.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The method was invoked on a version of IIS earlier than IIS 7.0.</exception>
@@ -1058,13 +1058,13 @@ End Class
           <see langword="true" /> if the request is authenticated; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.HttpRequest.IsAuthenticated%2A> property to determine whether the current request has been authenticated. If it has not been authenticated, the request is redirected to another page where users can enter their credentials into the Web application. This is a common technique used in the default page for an application.  
-  
- [!code-csharp[System.Web.HttpRequest_Sample3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample3/CS/isauthenticatedcs.aspx#1)]
- [!code-vb[System.Web.HttpRequest_Sample3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample3/VB/isauthenticatedvb.aspx#1)]  
-  
+The following code example uses the <xref:System.Web.HttpRequest.IsAuthenticated%2A> property to determine whether the current request has been authenticated. If it has not been authenticated, the request is redirected to another page where users can enter their credentials into the Web application. This is a common technique used in the default page for an application.  
+ 
+[!code-csharp[System.Web.HttpRequest_Sample3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample3/CS/isauthenticatedcs.aspx#1)]
+[!code-vb[System.Web.HttpRequest_Sample3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample3/VB/isauthenticatedvb.aspx#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1087,10 +1087,10 @@ End Class
           <see langword="true" /> if the request is from the local computer; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpRequest.IsLocal%2A> property returns `true` if the IP address of the request originator is 127.0.0.1 or if the IP address of the request is the same as the server's IP address.  
-  
+The <xref:System.Web.HttpRequest.IsLocal%2A> property returns `true` if the IP address of the request originator is 127.0.0.1 or if the IP address of the request is the same as the server's IP address.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1113,13 +1113,13 @@ End Class
           <see langword="true" /> if the connection is an SSL connection; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example determines whether the <xref:System.Web.HttpRequest.IsSecureConnection%2A> property is set to false. If it is, the <xref:System.Web.HttpResponse.SuppressContent%2A> property is set to true to stop the response from being sent.  
-  
- [!code-csharp[System.Web.HttpResponse_Sample5#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/CS/httpresponsesuppresscontentcs.aspx#3)]
- [!code-vb[System.Web.HttpResponse_Sample5#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/VB/httpresponsesuppresscontentvb.aspx#3)]  
-  
+The following code example determines whether the <xref:System.Web.HttpRequest.IsSecureConnection%2A> property is set to false. If it is, the <xref:System.Web.HttpResponse.SuppressContent%2A> property is set to true to stop the response from being sent.  
+ 
+[!code-csharp[System.Web.HttpResponse_Sample5#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/CS/httpresponsesuppresscontentcs.aspx#3)]
+[!code-vb[System.Web.HttpResponse_Sample5#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse_Sample5/VB/httpresponsesuppresscontentvb.aspx#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1163,18 +1163,18 @@ End Class
         <value>A <see cref="T:System.Security.Principal.WindowsIdentity" /> object for the current Microsoft Internet Information Services (IIS) authentication settings.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpRequest.LogonUserIdentity%2A> property exposes the properties and methods of the <xref:System.Security.Principal.WindowsIdentity> object for the currently connected user to Microsoft Internet Information Services (IIS). The instance of the <xref:System.Security.Principal.WindowsIdentity> class that is exposed by <xref:System.Web.HttpRequest.LogonUserIdentity%2A> tracks the IIS request token and provides easy access to this token for the current HTTP request being processed inside of ASP.NET. An instance of the <xref:System.Security.Principal.WindowsIdentity> class is automatically created so it does not need to be constructed to in order to gain access to its methods and properties.  
+The <xref:System.Web.HttpRequest.LogonUserIdentity%2A> property exposes the properties and methods of the <xref:System.Security.Principal.WindowsIdentity> object for the currently connected user to Microsoft Internet Information Services (IIS). The instance of the <xref:System.Security.Principal.WindowsIdentity> class that is exposed by <xref:System.Web.HttpRequest.LogonUserIdentity%2A> tracks the IIS request token and provides easy access to this token for the current HTTP request being processed inside of ASP.NET. An instance of the <xref:System.Security.Principal.WindowsIdentity> class is automatically created so it does not need to be constructed to in order to gain access to its methods and properties.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to retrieve the <xref:System.Web.HttpRequest.LogonUserIdentity%2A> property for the current user and write out the values of each item in a text file. Place this code on the ASP.NET page referenced by the form's `ACTION` attribute.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest_LogonUserIdentity#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_LogonUserIdentity/CS/logonuseridentity_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest_LogonUserIdentity#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_LogonUserIdentity/VB/logonuseridentity_vb.aspx#1)]  -->  
-  
+The following code example shows how to retrieve the <xref:System.Web.HttpRequest.LogonUserIdentity%2A> property for the current user and write out the values of each item in a text file. Place this code on the ASP.NET page referenced by the form's `ACTION` attribute.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest_LogonUserIdentity#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_LogonUserIdentity/CS/logonuseridentity_cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest_LogonUserIdentity#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_LogonUserIdentity/VB/logonuseridentity_vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The Web application is running in IIS 7 integrated mode and the <see cref="E:System.Web.HttpApplication.PostAuthenticateRequest" /> event has not yet been raised.</exception>
@@ -1223,31 +1223,31 @@ End Class
         <returns>The physical path on the server specified by <paramref name="virtualPath" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!CAUTION]
 >  The <xref:System.Web.HttpRequest.MapPath%2A> property potentially contains sensitive information about the hosting environment. The return value should not be displayed to users.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.HttpRequest.MapPath%2A> method to convert a virtual path to a fully qualified physical path on the server. This example has two parts:  
-  
+The following code example uses the <xref:System.Web.HttpRequest.MapPath%2A> method to convert a virtual path to a fully qualified physical path on the server. This example has two parts:  
+ 
 -   An .aspx page maps the path, reads the file, and displays results of the read operation.  
-  
+ 
 -   A class, `UpperCaseFilterStream`, that changes all characters passed through it to uppercase.  
-  
- The first part of the example shows how to convert a virtual path to a fully qualified physical path using the <xref:System.Web.HttpRequest.MapPath%2A> method. This physical path is then passed to a <xref:System.IO.StreamReader> object, which obtains the contents of the file. The <xref:System.Web.HttpResponse.Write%2A> method is then called to display the content of the file on the page. The <xref:System.Web.HttpResponse.Filter%2A> property is used to attach a filter to the response stream that makes the text displayed to the page all uppercase.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest_Samples2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/CS/requestsamples2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest_Samples2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/VB/requestsamples2vb.aspx#1)]  -->  
-  
- The second part of the example shows a class that inherits from <xref:System.IO.Stream> and converts all characters in a stream to uppercase. Put this code in the `App_Code` folder for your application.  
-  
- [!code-csharp[System.Web.HttpRequest_Samples2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/CS/responsefilter.cs#2)]
- [!code-vb[System.Web.HttpRequest_Samples2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/VB/responsefilter.vb#2)]  
-  
+ 
+The first part of the example shows how to convert a virtual path to a fully qualified physical path using the <xref:System.Web.HttpRequest.MapPath%2A> method. This physical path is then passed to a <xref:System.IO.StreamReader> object, which obtains the contents of the file. The <xref:System.Web.HttpResponse.Write%2A> method is then called to display the content of the file on the page. The <xref:System.Web.HttpResponse.Filter%2A> property is used to attach a filter to the response stream that makes the text displayed to the page all uppercase.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest_Samples2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/CS/requestsamples2cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest_Samples2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/VB/requestsamples2vb.aspx#1)]  -->  
+ 
+The second part of the example shows a class that inherits from <xref:System.IO.Stream> and converts all characters in a stream to uppercase. Put this code in the `App_Code` folder for your application.  
+ 
+[!code-csharp[System.Web.HttpRequest_Samples2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/CS/responsefilter.cs#2)]
+[!code-vb[System.Web.HttpRequest_Samples2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/VB/responsefilter.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">No <see cref="T:System.Web.HttpContext" /> object is defined for the request.</exception>
@@ -1279,12 +1279,12 @@ End Class
         <returns>The physical path on the server.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!CAUTION]
 >  The <xref:System.Web.HttpRequest.MapPath%2A> property potentially contains sensitive information about the hosting environment. The return value should not be displayed to users.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">No <see cref="T:System.Web.HttpContext" /> object is defined for the request.</exception>
@@ -1329,26 +1329,26 @@ End Class
         <value>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Name-value pairs are added to the collection in the following order:  
-  
+Name-value pairs are added to the collection in the following order:  
+ 
 1.  Query-string parameters.  
-  
+ 
 2.  Form fields.  
-  
+ 
 3.  Cookies.  
-  
+ 
 4.  Server variables.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to loop through the <xref:System.Web.HttpRequest.Params%2A> property for a page and how to display each key/value pair.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest.Params#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.Params/CS/requestparamscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest.Params#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.Params/VB/requestparamsvb.aspx#1)]  -->  
-  
+The following code example shows how to loop through the <xref:System.Web.HttpRequest.Params%2A> property for a page and how to display each key/value pair.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest.Params#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.Params/CS/requestparamscs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest.Params#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.Params/VB/requestparamsvb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1370,18 +1370,18 @@ End Class
         <value>The virtual path of the current request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpRequest.Path%2A> is the concatenation of the <xref:System.Web.HttpRequest.FilePath%2A> and the <xref:System.Web.HttpRequest.PathInfo%2A> trailer. For example, for the URL http://www.contoso.com/virdir/page.html/tail, the <xref:System.Web.HttpRequest.Path%2A> is /virdir/page.html/tail.  
+The <xref:System.Web.HttpRequest.Path%2A> is the concatenation of the <xref:System.Web.HttpRequest.FilePath%2A> and the <xref:System.Web.HttpRequest.PathInfo%2A> trailer. For example, for the URL http://www.contoso.com/virdir/page.html/tail, the <xref:System.Web.HttpRequest.Path%2A> is /virdir/page.html/tail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.Path%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
-  
- [!code-csharp[System.Web.HttpRequest_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#2)]
- [!code-vb[System.Web.HttpRequest_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#2)]  
-  
+The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.Path%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
+ 
+[!code-csharp[System.Web.HttpRequest_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#2)]
+[!code-vb[System.Web.HttpRequest_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1403,18 +1403,18 @@ End Class
         <value>The additional path information for a resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the URL Http://www.contoso.com/virdir/page.html/tail, the <xref:System.Web.HttpRequest.PathInfo%2A> value is /tail.  
+For the URL Http://www.contoso.com/virdir/page.html/tail, the <xref:System.Web.HttpRequest.PathInfo%2A> value is /tail.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example determines whether the <xref:System.Web.HttpRequest.PathInfo%2A> property contains an empty string. If it does, the <xref:System.IO.StreamWriter.Write%2A> method writes a string indicating this to a file. If it does not, the <xref:System.Web.HttpUtility.HtmlEncode%2A> method HTML-encodes the value of the <xref:System.Web.HttpRequest.PathInfo%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method writes the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
-  
- [!code-csharp[System.Web.HttpRequest_Sample1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#4)]
- [!code-vb[System.Web.HttpRequest_Sample1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#4)]  
-  
+The following code example determines whether the <xref:System.Web.HttpRequest.PathInfo%2A> property contains an empty string. If it does, the <xref:System.IO.StreamWriter.Write%2A> method writes a string indicating this to a file. If it does not, the <xref:System.Web.HttpUtility.HtmlEncode%2A> method HTML-encodes the value of the <xref:System.Web.HttpRequest.PathInfo%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method writes the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
+ 
+[!code-csharp[System.Web.HttpRequest_Sample1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#4)]
+[!code-vb[System.Web.HttpRequest_Sample1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1436,13 +1436,13 @@ End Class
         <value>The file system path of the current application's root directory.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.PhysicalApplicationPath%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
-  
- [!code-csharp[System.Web.HttpRequest_Sample1#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#5)]
- [!code-vb[System.Web.HttpRequest_Sample1#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#5)]  
-  
+The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.PhysicalApplicationPath%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
+ 
+[!code-csharp[System.Web.HttpRequest_Sample1#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#5)]
+[!code-vb[System.Web.HttpRequest_Sample1#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1464,18 +1464,18 @@ End Class
         <value>The file system path of the current request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In redirect scenarios using <xref:System.Web.HttpServerUtility.Execute%2A> and <xref:System.Web.HttpServerUtility.Transfer%2A>, the <xref:System.Web.HttpRequest.PhysicalPath%2A> property returns the path to the original page. To find the physical path of the currently executing page use the <xref:System.Web.HttpRequest.MapPath%2A> method with the input argument set as the <xref:System.Web.HttpRequest.CurrentExecutionFilePath%2A> property.  
+In redirect scenarios using <xref:System.Web.HttpServerUtility.Execute%2A> and <xref:System.Web.HttpServerUtility.Transfer%2A>, the <xref:System.Web.HttpRequest.PhysicalPath%2A> property returns the path to the original page. To find the physical path of the currently executing page use the <xref:System.Web.HttpRequest.MapPath%2A> method with the input argument set as the <xref:System.Web.HttpRequest.CurrentExecutionFilePath%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.PhysicalPath%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
-  
- [!code-csharp[System.Web.HttpRequest_Sample1#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#5)]
- [!code-vb[System.Web.HttpRequest_Sample1#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#5)]  
-  
+The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.PhysicalPath%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
+ 
+[!code-csharp[System.Web.HttpRequest_Sample1#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#5)]
+[!code-vb[System.Web.HttpRequest_Sample1#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1497,23 +1497,23 @@ End Class
         <value>The query string variables sent by the client. Keys and values are URL-decoded.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows two ways to get the value of a query string variable named “fullname”. In each case, if the URL is `http://www.contoso.com/default.aspx?fullname=Fadi%20Fakhouri`, then the value returned is "Fadi Fakhouri" because the `%20` is URL-decoded into a space character. If the URL doesn’t have a `fullname` query string ID, the returned value would be `null`.  
-  
- The first line of code looks for the key “fullname” only in the query string; the second line looks for the key “fullname” in all of the HTTP request collections. For more information about the second line, see <xref:System.Web.HttpRequest.Item%2A>.  
-  
+The following code example shows two ways to get the value of a query string variable named “fullname”. In each case, if the URL is `http://www.contoso.com/default.aspx?fullname=Fadi%20Fakhouri`, then the value returned is "Fadi Fakhouri" because the `%20` is URL-decoded into a space character. If the URL doesn’t have a `fullname` query string ID, the returned value would be `null`.  
+ 
+The first line of code looks for the key “fullname” only in the query string; the second line looks for the key “fullname” in all of the HTTP request collections. For more information about the second line, see <xref:System.Web.HttpRequest.Item%2A>.  
+ 
 ```csharp  
 string fullname1 = Request.QueryString["fullname"];  
 string fullname2 = Request["fullname"];  
   
 ```  
-  
+ 
 ```vb  
 Dim fullname1 As String = Request.QueryString("fullname")  
 Dim fullname2 As String = Request("fullname")  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1535,18 +1535,18 @@ Dim fullname2 As String = Request("fullname")
         <value>The raw URL of the current request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The raw URL is defined as the part of the URL following the domain information. In the URL string http://www.contoso.com/articles/recent.aspx, the raw URL is /articles/recent.aspx. The raw URL includes the query string, if present.  
+The raw URL is defined as the part of the URL following the domain information. In the URL string http://www.contoso.com/articles/recent.aspx, the raw URL is /articles/recent.aspx. The raw URL includes the query string, if present.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.RawUrl%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
-  
- [!code-csharp[System.Web.HttpRequest_Sample1#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#5)]
- [!code-vb[System.Web.HttpRequest_Sample1#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#5)]  
-  
+The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.RawUrl%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
+ 
+[!code-csharp[System.Web.HttpRequest_Sample1#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#5)]
+[!code-vb[System.Web.HttpRequest_Sample1#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1568,20 +1568,20 @@ Dim fullname2 As String = Request("fullname")
         <value>The value that indicates how the request entity body was read, or that it has not been read.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is used to avoid the exception that is thrown if the entity body has already been read and an attempt is made to read it by using an incompatible method. Methods and properties that read the entity body include the following:  
-  
+This method is used to avoid the exception that is thrown if the entity body has already been read and an attempt is made to read it by using an incompatible method. Methods and properties that read the entity body include the following:  
+ 
 -   The <xref:System.Web.HttpRequest.Form%2A> property.  
-  
+ 
 -   The <xref:System.Web.HttpRequest.Files%2A> property.  
-  
+ 
 -   The <xref:System.Web.HttpRequest.InputStream%2A> property.  
-  
+ 
 -   The <xref:System.Web.HttpRequest.GetBufferedInputStream%2A> method.  
-  
+ 
 -   The <xref:System.Web.HttpRequest.GetBufferlessInputStream%2A> method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1603,10 +1603,10 @@ Dim fullname2 As String = Request("fullname")
         <value>The <see cref="T:System.Web.Routing.RequestContext" /> instance of the current request. For non-routed requests, the <see cref="T:System.Web.Routing.RequestContext" /> object that is returned is empty.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property provides access to the <xref:System.Web.Routing.RouteData> object for the current request. For more information about ASP.NET routing, see.[ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
-  
+This property provides access to the <xref:System.Web.Routing.RouteData> object for the current request. For more information about ASP.NET routing, see.[ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1628,13 +1628,13 @@ Dim fullname2 As String = Request("fullname")
         <value>A string representing the HTTP invocation type sent by the client.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.RequestType%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
-  
- [!code-csharp[System.Web.HttpRequest_Sample1#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#7)]
- [!code-vb[System.Web.HttpRequest_Sample1#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#7)]  
-  
+The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.RequestType%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
+ 
+[!code-csharp[System.Web.HttpRequest_Sample1#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#7)]
+[!code-vb[System.Web.HttpRequest_Sample1#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1661,18 +1661,18 @@ Dim fullname2 As String = Request("fullname")
         <summary>Saves an HTTP request to disk.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Saving the request context to disk can be useful in debugging.  
+Saving the request context to disk can be useful in debugging.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example calls the <xref:System.Web.HttpRequest.SaveAs%2A> method when a page is loaded. The call specifies that the request be saved as a text file in a directory where the ASP.NET process identity has been granted write permissions, and that any header information included in the request is included in the file.  
-  
- [!code-csharp[System.Web.HttpRequest_Sample6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample6/cs/requestsample6cs.aspx#1)]
- [!code-vb[System.Web.HttpRequest_Sample6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample6/vb/requestsample6vb.aspx#1)]  
-  
+The following code example calls the <xref:System.Web.HttpRequest.SaveAs%2A> method when a page is loaded. The call specifies that the request be saved as a text file in a directory where the ASP.NET process identity has been granted write permissions, and that any header information included in the request is included in the file.  
+ 
+[!code-csharp[System.Web.HttpRequest_Sample6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample6/cs/requestsample6cs.aspx#1)]
+[!code-vb[System.Web.HttpRequest_Sample6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample6/vb/requestsample6vb.aspx#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.Configuration.HttpRuntimeSection.RequireRootedSaveAsPath" /> property of the <see cref="T:System.Web.Configuration.HttpRuntimeSection" /> is set to <see langword="true" /> but <paramref name="filename" /> is not an absolute path.</exception>
@@ -1695,18 +1695,18 @@ Dim fullname2 As String = Request("fullname")
         <value>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> of server variables.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of server variables supported by IIS, see [IIS Server Variables](http://go.microsoft.com/fwlink/?LinkId=52471).  
+For a list of server variables supported by IIS, see [IIS Server Variables](http://go.microsoft.com/fwlink/?LinkId=52471).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the names and values of all named server variables.  
-  
- [!code-csharp[Classic HttpRequest.ServerVariables Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.ServerVariables Example/CS/source.cs#1)]
- [!code-vb[Classic HttpRequest.ServerVariables Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.ServerVariables Example/VB/source.vb#1)]  
-  
+The following code example displays the names and values of all named server variables.  
+ 
+[!code-csharp[Classic HttpRequest.ServerVariables Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.ServerVariables Example/CS/source.cs#1)]
+[!code-vb[Classic HttpRequest.ServerVariables Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.ServerVariables Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1728,16 +1728,16 @@ Dim fullname2 As String = Request("fullname")
         <value>The cancellation token.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The timeout period can be specified in the Web.config file (see <xref:System.Web.Configuration.HttpRuntimeSection.ExecutionTimeout%2A?displayProperty=fullName>) or programmatically (see <xref:System.Web.HttpServerUtility.ScriptTimeout%2A?displayProperty=fullName>). The timeout period is measured from the time the request comes in. If the default timeout of 110 seconds is in effect, the cancellation token will be tripped no earlier than 110 seconds after request processing begins. You can change the <xref:System.Web.HttpServerUtility.ScriptTimeout%2A?displayProperty=fullName> property value, and as long this token hasn't tripped yet, the new timeout value will be respected.  
-  
- Currently the token only provides 15 second granularity, which means that if the timeout value is 110 seconds, the token will be tripped sometime between 110 and 125 seconds after request processing begins. The granularity may change in the future.  
-  
- Even though this property is thread-safe, there are restrictions on its use. For more information, see <xref:System.Web.HttpResponse.ClientDisconnectedToken%2A?displayProperty=fullName>.  
-  
- This property is meaningless if WebSockets request processing has started.  
-  
+The timeout period can be specified in the Web.config file (see <xref:System.Web.Configuration.HttpRuntimeSection.ExecutionTimeout%2A?displayProperty=fullName>) or programmatically (see <xref:System.Web.HttpServerUtility.ScriptTimeout%2A?displayProperty=fullName>). The timeout period is measured from the time the request comes in. If the default timeout of 110 seconds is in effect, the cancellation token will be tripped no earlier than 110 seconds after request processing begins. You can change the <xref:System.Web.HttpServerUtility.ScriptTimeout%2A?displayProperty=fullName> property value, and as long this token hasn't tripped yet, the new timeout value will be respected.  
+ 
+Currently the token only provides 15 second granularity, which means that if the timeout value is 110 seconds, the token will be tripped sometime between 110 and 125 seconds after request processing begins. The granularity may change in the future.  
+ 
+Even though this property is thread-safe, there are restrictions on its use. For more information, see <xref:System.Web.HttpResponse.ClientDisconnectedToken%2A?displayProperty=fullName>.  
+ 
+This property is meaningless if WebSockets request processing has started.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1759,10 +1759,10 @@ Dim fullname2 As String = Request("fullname")
         <value>The binding token for the current connection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns `null` on non-windows10 platforms.  
-  
+This property returns `null` on non-windows10 platforms.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1784,13 +1784,13 @@ Dim fullname2 As String = Request("fullname")
         <value>The number of bytes in the input stream.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example determines whether the <xref:System.Web.HttpRequest.TotalBytes%2A> property value is greater than 1000 bytes and writes that information to a file.  
-  
- [!code-csharp[System.Web.HttpRequest_Sample1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#6)]
- [!code-vb[System.Web.HttpRequest_Sample1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#6)]  
-  
+The following code example determines whether the <xref:System.Web.HttpRequest.TotalBytes%2A> property value is greater than 1000 bytes and writes that information to a file.  
+ 
+[!code-csharp[System.Web.HttpRequest_Sample1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#6)]
+[!code-vb[System.Web.HttpRequest_Sample1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1812,13 +1812,13 @@ Dim fullname2 As String = Request("fullname")
         <value>The HTTP request values that have not been checked using request validation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Request validation checks for HTML markup and script that might indicate a potential cross-site scripting attack. By default, all values are checked using request validation and if any values contain markup or script, ASP.NET throws an <xref:System.Web.HttpRequestValidationException> exception. Use this method if you anticipate that the request will contain markup (for example, you are allowing users to post content that contains markup) and you want to get the raw value of a request.  
-  
+Request validation checks for HTML markup and script that might indicate a potential cross-site scripting attack. By default, all values are checked using request validation and if any values contain markup or script, ASP.NET throws an <xref:System.Web.HttpRequestValidationException> exception. Use this method if you anticipate that the request will contain markup (for example, you are allowing users to post content that contains markup) and you want to get the raw value of a request.  
+ 
 > [!IMPORTANT]
 >  If you use this property, you must manually check the data for potential cross-site scripting attacks.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1840,13 +1840,13 @@ Dim fullname2 As String = Request("fullname")
         <value>A <see cref="T:System.Uri" /> object that contains the URL of the current request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example assigns the <xref:System.Uri> object of the current request to an object variable and displays the value of two properties of the URL object to the HTTP output.  
-  
- [!code-csharp[Classic HttpRequest.Url Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.Url Example/CS/source.cs#1)]
- [!code-vb[Classic HttpRequest.Url Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.Url Example/VB/source.vb#1)]  
-  
+The following code example assigns the <xref:System.Uri> object of the current request to an object variable and displays the value of two properties of the URL object to the HTTP output.  
+ 
+[!code-csharp[Classic HttpRequest.Url Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.Url Example/CS/source.cs#1)]
+[!code-vb[Classic HttpRequest.Url Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.Url Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1868,13 +1868,13 @@ Dim fullname2 As String = Request("fullname")
         <value>A <see cref="T:System.Uri" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example displays the value of two properties of the URL that referred the client to the current application.  
-  
- [!code-csharp[Classic HttpRequest.UrlReferrer Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.UrlReferrer Example/CS/source.cs#1)]
- [!code-vb[Classic HttpRequest.UrlReferrer Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.UrlReferrer Example/VB/source.vb#1)]  
-  
+The following code example displays the value of two properties of the URL that referred the client to the current application.  
+ 
+[!code-csharp[Classic HttpRequest.UrlReferrer Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.UrlReferrer Example/CS/source.cs#1)]
+[!code-vb[Classic HttpRequest.UrlReferrer Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.UrlReferrer Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UriFormatException">The HTTP <see langword="Referer" /> request header is malformed and cannot be converted to a <see cref="T:System.Uri" /> object.</exception>
@@ -1897,13 +1897,13 @@ Dim fullname2 As String = Request("fullname")
         <value>The raw user agent string of the client browser.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example assigns the type identification of the requesting browser to a string variable.  
-  
- [!code-csharp[Classic HttpRequest.UserAgent Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.UserAgent Example/CS/source.cs#1)]
- [!code-vb[Classic HttpRequest.UserAgent Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.UserAgent Example/VB/source.vb#1)]  
-  
+The following code example assigns the type identification of the requesting browser to a string variable.  
+ 
+[!code-csharp[Classic HttpRequest.UserAgent Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.UserAgent Example/CS/source.cs#1)]
+[!code-vb[Classic HttpRequest.UserAgent Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.UserAgent Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1925,13 +1925,13 @@ Dim fullname2 As String = Request("fullname")
         <value>The IP address of the remote client.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.UserHostAddress%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
-  
- [!code-csharp[System.Web.HttpRequest_Sample1#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#7)]
- [!code-vb[System.Web.HttpRequest_Sample1#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#7)]  
-  
+The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.UserHostAddress%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
+ 
+[!code-csharp[System.Web.HttpRequest_Sample1#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#7)]
+[!code-vb[System.Web.HttpRequest_Sample1#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1953,13 +1953,13 @@ Dim fullname2 As String = Request("fullname")
         <value>The DNS name of the remote client.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.UserHostName%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
-  
- [!code-csharp[System.Web.HttpRequest_Sample1#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#7)]
- [!code-vb[System.Web.HttpRequest_Sample1#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#7)]  
-  
+The following code example uses the <xref:System.Web.HttpUtility.HtmlEncode%2A> method to HTML-encode the value of the <xref:System.Web.HttpRequest.UserHostName%2A> property and the <xref:System.IO.TextWriter.WriteLine%2A> method to write the encoded value to the file. This code example is part of a larger example provided for the <xref:System.Web.HttpRequest> class.  
+ 
+[!code-csharp[System.Web.HttpRequest_Sample1#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#7)]
+[!code-vb[System.Web.HttpRequest_Sample1#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1981,15 +1981,15 @@ Dim fullname2 As String = Request("fullname")
         <value>A sorted string array of client language preferences, or <see langword="null" /> if empty.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example captures the multiple values returned by the <xref:System.Web.HttpRequest.UserLanguages%2A> property into a string array and writes each language name to a separate line of HTTP output.  
-  
- The language names are provided by the browser, and there is no definitive list of all possible codes.  Typically these consist of a two-character codes for the language, a hyphen, and a two-character code for the culture, such as "en-us" for U.S. English and "fr-ca" for Canadian French.  
-  
- [!code-csharp[Classic HttpRequest.UserLanguages Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.UserLanguages Example/CS/source.cs#1)]
- [!code-vb[Classic HttpRequest.UserLanguages Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.UserLanguages Example/VB/source.vb#1)]  
-  
+The following code example captures the multiple values returned by the <xref:System.Web.HttpRequest.UserLanguages%2A> property into a string array and writes each language name to a separate line of HTTP output.  
+ 
+The language names are provided by the browser, and there is no definitive list of all possible codes.  Typically these consist of a two-character codes for the language, a hyphen, and a two-character code for the culture, such as "en-us" for U.S. English and "fr-ca" for Canadian French.  
+ 
+[!code-csharp[Classic HttpRequest.UserLanguages Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpRequest.UserLanguages Example/CS/source.cs#1)]
+[!code-vb[Classic HttpRequest.UserLanguages Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpRequest.UserLanguages Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2011,12 +2011,12 @@ Dim fullname2 As String = Request("fullname")
         <summary>Causes validation to occur for the collections accessed through the <see cref="P:System.Web.HttpRequest.Cookies" />, <see cref="P:System.Web.HttpRequest.Form" />, and <see cref="P:System.Web.HttpRequest.QueryString" /> properties.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpRequest> class uses input validation flags to track whether to perform validation on the request collections accessed through the <xref:System.Web.HttpRequest.Cookies%2A>, <xref:System.Web.HttpRequest.Form%2A>, and <xref:System.Web.HttpRequest.QueryString%2A> properties. The <xref:System.Web.HttpRequest.ValidateInput%2A> method sets these flags so that when the get accessors for the <xref:System.Web.HttpRequest.Cookies%2A>, <xref:System.Web.HttpRequest.Form%2A>, or <xref:System.Web.HttpRequest.QueryString%2A> property are invoked, input validation is performed. Validation works by checking all input data against a hard-coded list of potentially dangerous data.  
-  
- If the validation feature is enabled by page directive or configuration, this method is called during the page's `ProcessRequest` processing phase. The <xref:System.Web.HttpRequest.ValidateInput%2A> method can be called by your code if the validation feature is not enabled.  
-  
+The <xref:System.Web.HttpRequest> class uses input validation flags to track whether to perform validation on the request collections accessed through the <xref:System.Web.HttpRequest.Cookies%2A>, <xref:System.Web.HttpRequest.Form%2A>, and <xref:System.Web.HttpRequest.QueryString%2A> properties. The <xref:System.Web.HttpRequest.ValidateInput%2A> method sets these flags so that when the get accessors for the <xref:System.Web.HttpRequest.Cookies%2A>, <xref:System.Web.HttpRequest.Form%2A>, or <xref:System.Web.HttpRequest.QueryString%2A> property are invoked, input validation is performed. Validation works by checking all input data against a hard-coded list of potentially dangerous data.  
+ 
+If the validation feature is enabled by page directive or configuration, this method is called during the page's `ProcessRequest` processing phase. The <xref:System.Web.HttpRequest.ValidateInput%2A> method can be called by your code if the validation feature is not enabled.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpRequestValidationException">Potentially dangerous data was received from the client.</exception>
@@ -2031,13 +2031,13 @@ Dim fullname2 As String = Request("fullname")
         <summary>Provides a managed wrapper for the IIS method that inserts an HTTP request entity body into memory.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpRequest.InsertEntityBody%2A> method overloads provide managed access to the IIS 7 `IHttpRequest::InsertEntityBody` method. The IIS method inserts an HTTP request entity body (the data that is posted by a client) into memory. This is useful because IIS does not maintain a copy of the request entity after it has been read. The <xref:System.Web.HttpRequest.InsertEntityBody%2A> methods create a copy of the HTTP request entity data and make it available to IIS for additional custom handling.  
-  
+The <xref:System.Web.HttpRequest.InsertEntityBody%2A> method overloads provide managed access to the IIS 7 `IHttpRequest::InsertEntityBody` method. The IIS method inserts an HTTP request entity body (the data that is posted by a client) into memory. This is useful because IIS does not maintain a copy of the request entity after it has been read. The <xref:System.Web.HttpRequest.InsertEntityBody%2A> methods create a copy of the HTTP request entity data and make it available to IIS for additional custom handling.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.HttpRequest.InsertEntityBody%2A> method overloads work only on IIS 7.0 or later, because the `IHttpRequest::InsertEntityBody` method was added in IIS 7.0.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

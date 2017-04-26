@@ -15,16 +15,16 @@
     <summary>Defines the interface that a channel must implement to be on the receiving side of a request-reply communication between messaging endpoints.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.IReplyChannel> interface includes synchronous and asynchronous variants of a <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> method return an <xref:System.ServiceModel.Channels.RequestContext> that can be used to construct replies to received requests.  
-  
- The contract includes synchronous and asynchronous variants of receive, try-to-receive and wait-for-a-message functionality.  
-  
- An <xref:System.ServiceModel.Channels.IReplyChannel> is not necessarily bound to a single sender. Other channels and channel interfaces provide correlation between the sender and the reply channel, but the base contract makes no such restriction.  
-  
- The pull model is used with an <xref:System.ServiceModel.Channels.IReplyChannel> to receive messages. This model consists of calling <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> (or one of its variants) and then waiting for a message to arrive.  
-  
+The <xref:System.ServiceModel.Channels.IReplyChannel> interface includes synchronous and asynchronous variants of a <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> method return an <xref:System.ServiceModel.Channels.RequestContext> that can be used to construct replies to received requests.  
+ 
+The contract includes synchronous and asynchronous variants of receive, try-to-receive and wait-for-a-message functionality.  
+ 
+An <xref:System.ServiceModel.Channels.IReplyChannel> is not necessarily bound to a single sender. Other channels and channel interfaces provide correlation between the sender and the reply channel, but the base contract makes no such restriction.  
+ 
+The pull model is used with an <xref:System.ServiceModel.Channels.IReplyChannel> to receive messages. This model consists of calling <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> (or one of its variants) and then waiting for a message to arrive.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,19 +52,19 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous reception of the request.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.IReplyChannel.BeginReceiveRequest%28System.AsyncCallback%2CSystem.Object%29> method implements the standard pattern for invoking <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest> asynchronously. The default timeout is 1 minute. If a receive timeout is set on the binding used to configure the connection, then that value is used. Use <xref:System.ServiceModel.Channels.IReplyChannel.BeginReceiveRequest%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> if you want to specify an explicit timeout with the call that overrides these other values.  
+The <xref:System.ServiceModel.Channels.IReplyChannel.BeginReceiveRequest%28System.AsyncCallback%2CSystem.Object%29> method implements the standard pattern for invoking <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest> asynchronously. The default timeout is 1 minute. If a receive timeout is set on the binding used to configure the connection, then that value is used. Use <xref:System.ServiceModel.Channels.IReplyChannel.BeginReceiveRequest%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> if you want to specify an explicit timeout with the call that overrides these other values.  
+ 
+If the request message received is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+ 
   
- If the request message received is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
-  
-   
-  
+ 
 ## Examples  
- The following code illustrates how to implement this method:  
-  
- [!code-csharp[S_UE_MessageInterceptor#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#1)]  
-  
+The following code illustrates how to implement this method:  
+ 
+[!code-csharp[S_UE_MessageInterceptor#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -94,19 +94,19 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous reception of the request.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.IReplyChannel.BeginReceiveRequest%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> method implements the standard pattern for invoking <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%28System.TimeSpan%29>asynchronously. The timeout set on this method overrides a receive timeout set on the binding that is used to configure the connection.  
+The <xref:System.ServiceModel.Channels.IReplyChannel.BeginReceiveRequest%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> method implements the standard pattern for invoking <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%28System.TimeSpan%29>asynchronously. The timeout set on this method overrides a receive timeout set on the binding that is used to configure the connection.  
+ 
+If the request message received is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+ 
   
- If the request message received is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
-  
-   
-  
+ 
 ## Examples  
- The following code illustrates how to implement this method:  
-  
- [!code-csharp[S_UE_MessageInterceptor#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#2)]  
-  
+The following code illustrates how to implement this method:  
+ 
+[!code-csharp[S_UE_MessageInterceptor#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -136,19 +136,19 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous receive request operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the asynchronous <xref:System.ServiceModel.Channels.IReplyChannel.BeginTryReceiveRequest%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> method when you need the application processing to continue without waiting. Use one of the synchronous <xref:System.ServiceModel.Channels.IReplyChannel.TryReceiveRequest%28System.TimeSpan%2CSystem.ServiceModel.Channels.RequestContext%40%29> methods when it is acceptable for the current thread to be blocked while it replies to the request message or until the timeout interval is exceeded.  
+Use the asynchronous <xref:System.ServiceModel.Channels.IReplyChannel.BeginTryReceiveRequest%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> method when you need the application processing to continue without waiting. Use one of the synchronous <xref:System.ServiceModel.Channels.IReplyChannel.TryReceiveRequest%28System.TimeSpan%2CSystem.ServiceModel.Channels.RequestContext%40%29> methods when it is acceptable for the current thread to be blocked while it replies to the request message or until the timeout interval is exceeded.  
+ 
+This method receives notification, through a callback, of the identity of the event handler for the operation. The operation is not complete until either a message becomes available in the channel or the time out occurs.  
+ 
   
- This method receives notification, through a callback, of the identity of the event handler for the operation. The operation is not complete until either a message becomes available in the channel or the time out occurs.  
-  
-   
-  
+ 
 ## Examples  
- The following code illustrates how to implement this method:  
-  
- [!code-csharp[S_UE_MessageInterceptor#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#5)]  
-  
+The following code illustrates how to implement this method:  
+ 
+[!code-csharp[S_UE_MessageInterceptor#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#5)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -181,19 +181,19 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation to wait for a request message to arrive.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the synchronous <xref:System.ServiceModel.Channels.IReplyChannel.WaitForRequest%28System.TimeSpan%29> method when it is acceptable for the current thread to be blocked while it waits for a request message to arrive in the queue. The thread is blocked up to the specified `timeout`.  
+Use the synchronous <xref:System.ServiceModel.Channels.IReplyChannel.WaitForRequest%28System.TimeSpan%29> method when it is acceptable for the current thread to be blocked while it waits for a request message to arrive in the queue. The thread is blocked up to the specified `timeout`.  
+ 
+This method receives notification, through a callback, of the identity of the event handler for the operation. The operation is not complete until either a request message becomes available in the channel or the time out occurs.  
+ 
   
- This method receives notification, through a callback, of the identity of the event handler for the operation. The operation is not complete until either a request message becomes available in the channel or the time out occurs.  
-  
-   
-  
+ 
 ## Examples  
- The following code illustrates how to implement this method:  
-  
- [!code-csharp[S_UE_MessageInterceptor#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#10)]  
-  
+The following code illustrates how to implement this method:  
+ 
+[!code-csharp[S_UE_MessageInterceptor#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#10)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -222,17 +222,17 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.RequestContext" /> used to construct a reply to the request.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the request message received is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+If the request message received is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code illustrates how to implement this method:  
-  
- [!code-csharp[S_UE_MessageInterceptor#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#3)]  
-  
+The following code illustrates how to implement this method:  
+ 
+[!code-csharp[S_UE_MessageInterceptor#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#3)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -264,12 +264,12 @@
           <see langword="true" /> if a request message is received before the specified interval of time elapses; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code illustrates how to implement this method:  
-  
- [!code-csharp[S_UE_MessageInterceptor#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#6)]  
-  
+The following code illustrates how to implement this method:  
+ 
+[!code-csharp[S_UE_MessageInterceptor#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -296,12 +296,12 @@
           <see langword="true" /> if a request is received before the specified interval of time elapses; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code illustrates how to implement this method:  
-  
- [!code-csharp[S_UE_MessageInterceptor#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#11)]  
-  
+The following code illustrates how to implement this method:  
+ 
+[!code-csharp[S_UE_MessageInterceptor#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -323,12 +323,12 @@
         <value>The <see cref="T:System.ServiceModel.EndpointAddress" /> on which this reply channel receives messages.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code illustrates how to implement this property:  
-  
- [!code-csharp[S_UE_MessageInterceptor#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#0)]  
-  
+The following code illustrates how to implement this property:  
+ 
+[!code-csharp[S_UE_MessageInterceptor#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -351,21 +351,21 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.RequestContext" /> used to construct replies.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.Channels.RequestContext> encapsulates the request message and a mechanism for replying to that message.  
+<xref:System.ServiceModel.Channels.RequestContext> encapsulates the request message and a mechanism for replying to that message.  
+ 
+<xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> can be called multiple times or concurrently. Only one <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> call completes per request received.  
+ 
+If the request message received is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+ 
   
- <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> can be called multiple times or concurrently. Only one <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> call completes per request received.  
-  
- If the request message received is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
-  
-   
-  
+ 
 ## Examples  
- The following code illustrates how to implement this method:  
-  
- [!code-csharp[S_UE_MessageInterceptor#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#7)]  
-  
+The following code illustrates how to implement this method:  
+ 
+[!code-csharp[S_UE_MessageInterceptor#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -391,21 +391,21 @@
         <returns>The <see cref="T:System.ServiceModel.Channels.RequestContext" /> used to construct replies.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.Channels.RequestContext> encapsulates the request message and a mechanism for replying to that message.  
+<xref:System.ServiceModel.Channels.RequestContext> encapsulates the request message and a mechanism for replying to that message.  
+ 
+<xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> can be called multiple times or concurrently. Only one <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> call completes per request received.  
+ 
+If the request message received is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+ 
   
- <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> can be called multiple times or concurrently. Only one <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> call completes per request received.  
-  
- If the request message received is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
-  
-   
-  
+ 
 ## Examples  
- The following code illustrates how to implement this method:  
-  
- [!code-csharp[S_UE_MessageInterceptor#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#8)]  
-  
+The following code illustrates how to implement this method:  
+ 
+[!code-csharp[S_UE_MessageInterceptor#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -434,17 +434,17 @@
           <see langword="true" /> if a request message is received before the specified interval of time elapses; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.ServiceModel.Channels.IReplyChannel.TryReceiveRequest%28System.TimeSpan%2CSystem.ServiceModel.Channels.RequestContext%40%29> when it is acceptable for the current thread to be blocked while it waits for a request message to arrive in the queue. The thread is blocked up to the specified `timeout`. If you need the application processing to continue without waiting, use the asynchronous <xref:System.ServiceModel.Channels.IReplyChannel.BeginTryReceiveRequest%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> method.  
+Use <xref:System.ServiceModel.Channels.IReplyChannel.TryReceiveRequest%28System.TimeSpan%2CSystem.ServiceModel.Channels.RequestContext%40%29> when it is acceptable for the current thread to be blocked while it waits for a request message to arrive in the queue. The thread is blocked up to the specified `timeout`. If you need the application processing to continue without waiting, use the asynchronous <xref:System.ServiceModel.Channels.IReplyChannel.BeginTryReceiveRequest%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code illustrates how to implement this method:  
-  
- [!code-csharp[S_UE_MessageInterceptor#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#4)]  
-  
+The following code illustrates how to implement this method:  
+ 
+[!code-csharp[S_UE_MessageInterceptor#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#4)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -474,23 +474,23 @@
           <see langword="true" /> if a request is received before the specified interval of time elapses; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling <xref:System.ServiceModel.Channels.IReplyChannel.WaitForRequest%28System.TimeSpan%29> does not result in a request message being received or processed in any way.  
+Calling <xref:System.ServiceModel.Channels.IReplyChannel.WaitForRequest%28System.TimeSpan%29> does not result in a request message being received or processed in any way.  
+ 
+The <xref:System.ServiceModel.Channels.IReplyChannel.BeginWaitForRequest%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> method exists primarily for transacted scenarios where the user wants to receive the message using a transaction. When using just <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> normally for this, the user must create the transaction, and then call <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> and hope the message arrives before the transaction times out, which may not be possible.  
+ 
+Instead, the user can call <xref:System.ServiceModel.Channels.IReplyChannel.WaitForRequest%28System.TimeSpan%29> and specify the time out (even infinite), then when a message arrives they can open the transaction, call <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> and be confident that they can get the message back before the transaction expires.  
+ 
+Use <xref:System.ServiceModel.Channels.IReplyChannel.WaitForRequest%28System.TimeSpan%29> when it is acceptable for the current thread to be blocked while it waits for a message to arrive in the queue. The thread is blocked up to the specified `timeout`. If you need the application processing to continue without waiting, use the asynchronous <xref:System.ServiceModel.Channels.IReplyChannel.BeginWaitForRequest%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> method.  
+ 
   
- The <xref:System.ServiceModel.Channels.IReplyChannel.BeginWaitForRequest%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> method exists primarily for transacted scenarios where the user wants to receive the message using a transaction. When using just <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> normally for this, the user must create the transaction, and then call <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> and hope the message arrives before the transaction times out, which may not be possible.  
-  
- Instead, the user can call <xref:System.ServiceModel.Channels.IReplyChannel.WaitForRequest%28System.TimeSpan%29> and specify the time out (even infinite), then when a message arrives they can open the transaction, call <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A> and be confident that they can get the message back before the transaction expires.  
-  
- Use <xref:System.ServiceModel.Channels.IReplyChannel.WaitForRequest%28System.TimeSpan%29> when it is acceptable for the current thread to be blocked while it waits for a message to arrive in the queue. The thread is blocked up to the specified `timeout`. If you need the application processing to continue without waiting, use the asynchronous <xref:System.ServiceModel.Channels.IReplyChannel.BeginWaitForRequest%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code illustrates how to implement this method:  
-  
- [!code-csharp[S_UE_MessageInterceptor#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#9)]  
-  
+The following code illustrates how to implement this method:  
+ 
+[!code-csharp[S_UE_MessageInterceptor#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingchannellistener.cs#9)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

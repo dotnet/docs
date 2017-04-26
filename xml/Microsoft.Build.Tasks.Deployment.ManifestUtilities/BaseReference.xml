@@ -185,10 +185,10 @@
         <value>The name to sort by.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is used to sort the referenced assemblies in the application manifest. The manifest lists prerequisite assemblies in alphabetical order first, followed by installed assemblies in alphabetical order. The assemblies are sorted according to the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.SortName%2A> of the reference.  
-  
+This property is used to sort the referenced assemblies in the application manifest. The manifest lists prerequisite assemblies in alphabetical order first, followed by installed assemblies in alphabetical order. The assemblies are sorted according to the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.SortName%2A> of the reference.  
+ 
  ]]></format>
         </remarks>
       </Docs>

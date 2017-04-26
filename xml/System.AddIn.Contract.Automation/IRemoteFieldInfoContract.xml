@@ -15,12 +15,12 @@
     <summary>Defines a contract that components can use to access information about a field across application domain and process boundaries.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.AddIn.Contract.Automation.IRemoteFieldInfoContract> represents a field of a remote object that implements the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract> interface.  
-  
- To access one or more fields of a remote object, use the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract.GetRemoteType%2A> method to get an <xref:System.AddIn.Contract.Automation.IRemoteTypeContract> that represents the type of the remote object. Then, call the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetField%2A> or <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetFields%2A> method.  
-  
+An <xref:System.AddIn.Contract.Automation.IRemoteFieldInfoContract> represents a field of a remote object that implements the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract> interface.  
+ 
+To access one or more fields of a remote object, use the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract.GetRemoteType%2A> method to get an <xref:System.AddIn.Contract.Automation.IRemoteTypeContract> that represents the type of the remote object. Then, call the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetField%2A> or <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetFields%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,10 +43,10 @@
         <returns>A <see cref="T:System.AddIn.Contract.Automation.RemoteFieldData" /> that provides information about the field that this <see cref="T:System.AddIn.Contract.Automation.IRemoteFieldInfoContract" /> identifies.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The information provided by the <xref:System.AddIn.Contract.Automation.RemoteFieldData> structure includes an <xref:System.AddIn.Contract.Automation.IRemoteTypeContract> that specifies the type of the field.  
-  
+The information provided by the <xref:System.AddIn.Contract.Automation.RemoteFieldData> structure includes an <xref:System.AddIn.Contract.Automation.IRemoteTypeContract> that specifies the type of the field.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,10 +14,10 @@
     <summary>Represents a control property that is data-bound to an expression.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a page is parsed, the page parser retains information about an expression and the property it is bound to in a <xref:System.Web.UI.BoundPropertyEntry> object.  
-  
+When a page is parsed, the page parser retains information about an expression and the property it is bound to in a <xref:System.Web.UI.BoundPropertyEntry> object.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />

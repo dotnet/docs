@@ -19,20 +19,20 @@
     <summary>Identifies an object as an add-in-side adapter segment of the pipeline.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.AddIn.Hosting.AddInStore.Rebuild%2A> and <xref:System.AddIn.Hosting.AddInStore.Update%2A> methods, which maintain the store of information about available pipeline segments, use this attribute to identify an add-in-side adapter.  
+The <xref:System.AddIn.Hosting.AddInStore.Rebuild%2A> and <xref:System.AddIn.Hosting.AddInStore.Update%2A> methods, which maintain the store of information about available pipeline segments, use this attribute to identify an add-in-side adapter.  
+ 
+This attribute should be used only on types that activate the segments of the pipeline. Types that represent objects passed between the host and the add-in do not need this attribute.  
+ 
   
- This attribute should be used only on types that activate the segments of the pipeline. Types that represent objects passed between the host and the add-in do not need this attribute.  
-  
-   
-  
+ 
 ## Examples  
- The following example identifies an add-in-side adapter.  
-  
- [!code-csharp[AddInP1AddInSideAdapters#2](~/samples/snippets/csharp/VS_Snippets_CLR/AddInP1AddInSideAdapters/cs/Calc1ViewToContractAddInSideAdapter.cs#2)]
- [!code-vb[AddInP1AddInSideAdapters#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddInP1AddInSideAdapters/vb/Calc1ViewToContractAddInSideAdapter.vb#2)]  
-  
+The following example identifies an add-in-side adapter.  
+ 
+[!code-csharp[AddInP1AddInSideAdapters#2](~/samples/snippets/csharp/VS_Snippets_CLR/AddInP1AddInSideAdapters/cs/Calc1ViewToContractAddInSideAdapter.cs#2)]
+[!code-vb[AddInP1AddInSideAdapters#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddInP1AddInSideAdapters/vb/Calc1ViewToContractAddInSideAdapter.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

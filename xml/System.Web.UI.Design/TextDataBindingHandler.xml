@@ -14,10 +14,10 @@
     <summary>Provides a data-binding handler for a data-bound control at design time.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.TextDataBindingHandler> object is a data-binding handler that can provide data to a data-bound text property at design time. Data-binding handlers are used when there is no designer for the control present that would otherwise provide the data for the data bound property.  
-  
+The <xref:System.Web.UI.Design.TextDataBindingHandler> object is a data-binding handler that can provide data to a data-bound text property at design time. Data-binding handlers are used when there is no designer for the control present that would otherwise provide the data for the data bound property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -59,12 +59,12 @@
         <summary>Data-binds the specified control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.Design.TextDataBindingHandler.DataBindControl%2A> method of <xref:System.Web.UI.Design.TextDataBindingHandler> sets the `Text` property of the control, if it exists, to a sample data string.  
-  
- This method should be implemented in a derived class to provide functionality to a custom data-binding handler. The logic for the data-binding should be implemented within this method, and can be specific to the type or types that the handler is binding a property or properties on.  
-  
+The <xref:System.Web.UI.Design.TextDataBindingHandler.DataBindControl%2A> method of <xref:System.Web.UI.Design.TextDataBindingHandler> sets the `Text` property of the control, if it exists, to a sample data string.  
+ 
+This method should be implemented in a derived class to provide functionality to a custom data-binding handler. The logic for the data-binding should be implemented within this method, and can be specific to the type or types that the handler is binding a property or properties on.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

@@ -14,10 +14,10 @@
     <summary>Represents a configuration element that contains user accounts for processes that host WCF services, and are granted connection access to the sharing service. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The security identifier specifies a unique identifier used to identify a user account. The default values are LocalSystem, Administrators, NS, LS, and IIS_USRS.  
-  
+The security identifier specifies a unique identifier used to identify a user account. The default values are LocalSystem, Administrators, NS, LS, and IIS_USRS.  
+ 
  ]]></format>
     </remarks>
   </Docs>

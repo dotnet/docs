@@ -16,14 +16,14 @@
     <summary>Provides an interface that can invoke serialization and deserialization.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This service provides methods to convert a collection of objects to a serializable object that represents them, and to convert serialization data to the object or objects that it represents.  
-  
- All components that support a designer must support serialization of each component's type. This occurs when the designer scans the public properties, methods, and events of each type and represents these within a type descriptor.  
-  
- This interface uses the technique of scanning members to convert a collection of components into a single object that supports run-time serialization. This does not necessarily provide for the serialization of custom types that belong to the class. Many objects require a custom serializer to have their values serialized at run time. To specify a serializer for a custom type, use a <xref:System.ComponentModel.Design.Serialization.DesignerSerializerAttribute> attribute or implement an <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationProvider>.  
-  
+This service provides methods to convert a collection of objects to a serializable object that represents them, and to convert serialization data to the object or objects that it represents.  
+ 
+All components that support a designer must support serialization of each component's type. This occurs when the designer scans the public properties, methods, and events of each type and represents these within a type descriptor.  
+ 
+This interface uses the technique of scanning members to convert a collection of components into a single object that supports run-time serialization. This does not necessarily provide for the serialization of custom types that belong to the class. Many objects require a custom serializer to have their values serialized at run time. To specify a serializer for a custom type, use a <xref:System.ComponentModel.Design.Serialization.DesignerSerializerAttribute> attribute or implement an <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationProvider>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -81,12 +81,12 @@
         <returns>An object that contains the serialized state of the specified collection of objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned object fully supports run-time serialization.  
-  
- The object returned from this method contains live references to objects in the collection. This object can then be passed to any run-time serialization mechanism. The object itself serializes components the same way designers write source for them, by storing their state, property by property.  
-  
+The returned object fully supports run-time serialization.  
+ 
+The object returned from this method contains live references to objects in the collection. This object can then be passed to any run-time serialization mechanism. The object itself serializes components the same way designers write source for them, by storing their state, property by property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

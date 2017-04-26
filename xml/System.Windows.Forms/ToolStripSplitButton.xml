@@ -22,12 +22,12 @@
     <summary>Represents a combination of a standard button on the left and a drop-down button on the right, or the other way around if the value of <see cref="T:System.Windows.Forms.RightToLeft" /> is <see langword="Yes" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Forms.ToolStripSplitButton> combines button and drop-down button functionality.  
-  
- Use the <xref:System.Windows.Forms.ToolStripSplitButton.DefaultItem%2A> property to synchronize the <xref:System.Windows.Forms.Control.Click> event of the chosen drop-down item with the item shown on the button.  
-  
+<xref:System.Windows.Forms.ToolStripSplitButton> combines button and drop-down button functionality.  
+ 
+Use the <xref:System.Windows.Forms.ToolStripSplitButton.DefaultItem%2A> property to synchronize the <xref:System.Windows.Forms.Control.Click> event of the chosen drop-down item with the item shown on the button.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -200,10 +200,10 @@
           <see langword="true" /> if default <see cref="T:System.Windows.Forms.ToolTip" /> text is displayed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Set the <xref:System.Windows.Forms.ToolStripSplitButton.AutoToolTip%2A> property to `false` to display custom text on a <xref:System.Windows.Forms.ToolStripSplitButton>.  
-  
+Set the <xref:System.Windows.Forms.ToolStripSplitButton.AutoToolTip%2A> property to `false` to display custom text on a <xref:System.Windows.Forms.ToolStripSplitButton>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,20 +247,20 @@
         <summary>Occurs when the standard button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is clicked.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripSplitButton.ButtonClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripSplitButton> named `ToolStripSplitButton1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripSplitButton.ButtonClick> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#609](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#609)]
- [!code-vb[System.Windows.Forms.EventExamples#609](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#609)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripSplitButton.ButtonClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripSplitButton> named `ToolStripSplitButton1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripSplitButton.ButtonClick> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#609](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#609)]
+[!code-vb[System.Windows.Forms.EventExamples#609](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#609)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -281,20 +281,20 @@
         <summary>Occurs when the standard button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is double-clicked.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripSplitButton.ButtonDoubleClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripSplitButton> named `ToolStripSplitButton1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripSplitButton.ButtonDoubleClick> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#610](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#610)]
- [!code-vb[System.Windows.Forms.EventExamples#610](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#610)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripSplitButton.ButtonDoubleClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripSplitButton> named `ToolStripSplitButton1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripSplitButton.ButtonDoubleClick> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#610](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#610)]
+[!code-vb[System.Windows.Forms.EventExamples#610](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#610)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -429,12 +429,12 @@
         <value>A <see langword="Forms.ToolStripItem" /> representing the portion of the <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> that is activated when first selected. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a <xref:System.Windows.Forms.ToolStripSplitButton> has a <xref:System.Windows.Forms.ToolStripSplitButton.DefaultItem%2A>, the ENTER key activates the button. Otherwise, the ENTER key activates the drop-down.  
-  
- Use the <xref:System.Windows.Forms.ToolStripSplitButton.DefaultItem%2A> property to synchronize the <xref:System.Windows.Forms.Control.Click> event of the chosen drop-down item with the item shown on the button.  
-  
+If a <xref:System.Windows.Forms.ToolStripSplitButton> has a <xref:System.Windows.Forms.ToolStripSplitButton.DefaultItem%2A>, the ENTER key activates the button. Otherwise, the ENTER key activates the drop-down.  
+ 
+Use the <xref:System.Windows.Forms.ToolStripSplitButton.DefaultItem%2A> property to synchronize the <xref:System.Windows.Forms.Control.Click> event of the chosen drop-down item with the item shown on the button.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -455,20 +455,20 @@
         <summary>Occurs when the <see cref="P:System.Windows.Forms.ToolStripSplitButton.DefaultItem" /> has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripSplitButton.DefaultItemChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
-  
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripSplitButton> named `ToolStripSplitButton1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripSplitButton.DefaultItemChanged> event.  
-  
- [!code-csharp[System.Windows.Forms.EventExamples#611](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#611)]
- [!code-vb[System.Windows.Forms.EventExamples#611](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#611)]  
-  
+The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripSplitButton.DefaultItemChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ 
+To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripSplitButton> named `ToolStripSplitButton1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripSplitButton.DefaultItemChanged> event.  
+ 
+[!code-csharp[System.Windows.Forms.EventExamples#611](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#611)]
+[!code-vb[System.Windows.Forms.EventExamples#611](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#611)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -624,12 +624,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripSplitButton.ButtonClick" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripSplitButton.OnButtonClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripSplitButton.OnButtonClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -657,12 +657,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripSplitButton.ButtonDoubleClick" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripSplitButton.OnButtonDoubleClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripSplitButton.OnButtonDoubleClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -690,12 +690,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripSplitButton.DefaultItemChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripSplitButton.OnDefaultItemChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripSplitButton.OnDefaultItemChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -723,12 +723,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseDown" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripSplitButton.OnMouseDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripSplitButton.OnMouseDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -756,12 +756,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseLeave" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripSplitButton.OnMouseLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripSplitButton.OnMouseLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -789,12 +789,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseUp" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripSplitButton.OnMouseUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripSplitButton.OnMouseUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -843,12 +843,12 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.RightToLeftChanged" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
-  
- The <xref:System.Windows.Forms.ToolStripSplitButton.OnRightToLeftChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
-  
+Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ 
+The <xref:System.Windows.Forms.ToolStripSplitButton.OnRightToLeftChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -896,12 +896,12 @@
           <see langword="true" /> if the key was processed by the item; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called during message preprocessing to handle the ENTER and SPACEBAR keys in order to raise the <xref:System.Windows.Forms.ToolStripItem.Click> event. However, if the <xref:System.Windows.Forms.ToolStripSplitButton> is not enabled, this method calls the base class implementation instead.  
-  
- This method is called only if the <xref:System.Windows.Forms.Control.IsInputKey%2A> method indicates that the item is not processing the key.  
-  
+This method is called during message preprocessing to handle the ENTER and SPACEBAR keys in order to raise the <xref:System.Windows.Forms.ToolStripItem.Click> event. However, if the <xref:System.Windows.Forms.ToolStripSplitButton> is not enabled, this method calls the base class implementation instead.  
+ 
+This method is called only if the <xref:System.Windows.Forms.Control.IsInputKey%2A> method indicates that the item is not processing the key.  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see langword="AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
@@ -955,10 +955,10 @@
         <summary>This method is not relevant to this class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not relevant to this class.  
-  
+This method is not relevant to this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -985,10 +985,10 @@
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the size and location of the separator.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.ToolStripSplitButton.SplitterBounds%2A> property to do custom painting.  
-  
+Use the <xref:System.Windows.Forms.ToolStripSplitButton.SplitterBounds%2A> property to do custom painting.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -38,19 +38,19 @@
     <summary>Provides a hash table / dictionary implementation that contains [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] resources used by components and other elements of a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The items in a <xref:System.Windows.ResourceDictionary> are not immediately processed when application code is loaded by a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] loader. Instead, the <xref:System.Windows.ResourceDictionary> persists as an object, and the individual values are processed only when they are specifically requested.  
-  
- The <xref:System.Windows.ResourceDictionary> class is not derived from <xref:System.Collections.DictionaryBase>. Instead, the <xref:System.Windows.ResourceDictionary> class implements <xref:System.Collections.IDictionary> but relies on a <xref:System.Collections.Hashtable> internally.  
-  
- In [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], the <xref:System.Windows.ResourceDictionary> class is typically an implicit collection element that is the object element value of several `Resources` properties, when given in property element syntax. For details on implicit collections in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], see [XAML Syntax In Detail](~/docs/framework/wpf/advanced/xaml-syntax-in-detail.md). An exception is when you want to specify a merged dictionary; for details, see [Merged Resource Dictionaries](~/docs/framework/wpf/advanced/merged-resource-dictionaries.md).  
-  
- Another possible [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage is to declare a resource dictionary as a discrete [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] file, and either load it at run time with <xref:System.Windows.Markup.XamlReader.Load%2A> or include it in a (full-trust) project as a resource or loose file. In this case, <xref:System.Windows.ResourceDictionary> can be declared as an object element, serving as the root element of the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. You must map the appropriate XML namespace values (default for the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] namespace and typically `x:` for the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] namespace) onto the <xref:System.Windows.ResourceDictionary> element if you plan to use it as the root element. Then you can add child elements that define the resources, each with an  value.  
-  
+The items in a <xref:System.Windows.ResourceDictionary> are not immediately processed when application code is loaded by a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] loader. Instead, the <xref:System.Windows.ResourceDictionary> persists as an object, and the individual values are processed only when they are specifically requested.  
+ 
+The <xref:System.Windows.ResourceDictionary> class is not derived from <xref:System.Collections.DictionaryBase>. Instead, the <xref:System.Windows.ResourceDictionary> class implements <xref:System.Collections.IDictionary> but relies on a <xref:System.Collections.Hashtable> internally.  
+ 
+In [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], the <xref:System.Windows.ResourceDictionary> class is typically an implicit collection element that is the object element value of several `Resources` properties, when given in property element syntax. For details on implicit collections in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], see [XAML Syntax In Detail](~/docs/framework/wpf/advanced/xaml-syntax-in-detail.md). An exception is when you want to specify a merged dictionary; for details, see [Merged Resource Dictionaries](~/docs/framework/wpf/advanced/merged-resource-dictionaries.md).  
+ 
+Another possible [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage is to declare a resource dictionary as a discrete [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] file, and either load it at run time with <xref:System.Windows.Markup.XamlReader.Load%2A> or include it in a (full-trust) project as a resource or loose file. In this case, <xref:System.Windows.ResourceDictionary> can be declared as an object element, serving as the root element of the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. You must map the appropriate XML namespace values (default for the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] namespace and typically `x:` for the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] namespace) onto the <xref:System.Windows.ResourceDictionary> element if you plan to use it as the root element. Then you can add child elements that define the resources, each with an  value.  
+ 
 <a name="xamlImplicitCollectionUsage_ResourceDictionary"></a>   
 ## XAML Implicit Collection Usage  
-  
+ 
 ```  
 <object>  
   <object.resourcesProperty>  
@@ -58,15 +58,15 @@
   </object.resourcesProperty>  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_ResourceDictionary"></a>   
 ## XAML Values  
- *resourcesProperty*  
- A property specifying a property element, where the value type of that property is <xref:System.Windows.ResourceDictionary>. Typically, this is the `Resources` property of <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>, or of <xref:System.Windows.Application> in an application resources case.  
-  
- *oneOrMoreResources*  
- One or more resources specified as object elements. Each resource that you specify must have an [x:Key Directive](~/docs/framework/xaml-services/x-key-directive.md) assigned.  
-  
+*resourcesProperty*  
+A property specifying a property element, where the value type of that property is <xref:System.Windows.ResourceDictionary>. Typically, this is the `Resources` property of <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>, or of <xref:System.Windows.Application> in an application resources case.  
+ 
+*oneOrMoreResources*  
+One or more resources specified as object elements. Each resource that you specify must have an [x:Key Directive](~/docs/framework/xaml-services/x-key-directive.md) assigned.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -108,12 +108,12 @@
         <summary>Adds a resource by key to this <see cref="T:System.Windows.ResourceDictionary" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Attempting to add a duplicate key raises an exception.  
-  
- Keys are always added to the base dictionary. Keys in <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> within the current <xref:System.Windows.ResourceDictionary> are not checked for duplication, only the base dictionary is checked for duplicates.  
-  
+Attempting to add a duplicate key raises an exception.  
+ 
+Keys are always added to the base dictionary. Keys in <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> within the current <xref:System.Windows.ResourceDictionary> are not checked for duplication, only the base dictionary is checked for duplicates.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.ResourceDictionary" /> is locked or read-only.</exception>
@@ -137,12 +137,12 @@
         <summary>Begins the initialization phase for this <see cref="T:System.Windows.ResourceDictionary" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method is an indication that the contents of the <xref:System.Windows.ResourceDictionary> are about to be loaded. The next step in the process is to call <xref:System.Windows.ResourceDictionary.EndInit%2A>.  
-  
- Do not call <xref:System.Windows.ResourceDictionary.BeginInit%2A> more than once, before calling  <xref:System.Windows.ResourceDictionary.EndInit%2A>. Doing so will raise an exception.  
-  
+Calling this method is an indication that the contents of the <xref:System.Windows.ResourceDictionary> are about to be loaded. The next step in the process is to call <xref:System.Windows.ResourceDictionary.EndInit%2A>.  
+ 
+Do not call <xref:System.Windows.ResourceDictionary.BeginInit%2A> more than once, before calling  <xref:System.Windows.ResourceDictionary.EndInit%2A>. Doing so will raise an exception.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Called <see cref="M:System.Windows.ResourceDictionary.BeginInit" /> more than once before <see cref="M:System.Windows.ResourceDictionary.EndInit" /> was called.</exception>
@@ -165,10 +165,10 @@
         <summary>Clears all keys (and values) in the base <see cref="T:System.Windows.ResourceDictionary" />. This does not clear any merged dictionary items.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you need to clear merged dictionary items, obtain the particular dictionary from <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection and specifically call <xref:System.Windows.ResourceDictionary.Clear%2A> on that <xref:System.Windows.ResourceDictionary>, although typically the dictionaries are remote and you might not have access. Alternatively, remove the entire <xref:System.Windows.ResourceDictionary> from <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> by calling Remove on the generic collection.  
-  
+If you need to clear merged dictionary items, obtain the particular dictionary from <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection and specifically call <xref:System.Windows.ResourceDictionary.Clear%2A> on that <xref:System.Windows.ResourceDictionary>, although typically the dictionaries are remote and you might not have access. Alternatively, remove the entire <xref:System.Windows.ResourceDictionary> from <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> by calling Remove on the generic collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,10 +195,10 @@
           <see langword="true" /> if <see cref="T:System.Windows.ResourceDictionary" /> contains a key-value pair with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the requested key is not in this resource dictionary, the resource lookup logic will also check the merged dictionaries.  
-  
+If the requested key is not in this resource dictionary, the resource lookup logic will also check the merged dictionaries.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -225,10 +225,10 @@
         <summary>Copies the <see cref="T:System.Windows.ResourceDictionary" /> elements to a one-dimensional <see cref="T:System.Collections.DictionaryEntry" /> at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This copies only the base dictionary. The result array will have no <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> if it is reconstituted to be a <xref:System.Windows.ResourceDictionary> again.  
-  
+This copies only the base dictionary. The result array will have no <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> if it is reconstituted to be a <xref:System.Windows.ResourceDictionary> again.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,10 +291,10 @@
         <summary>Ends the initialization phase, and invalidates the previous tree such that all changes made to keys during the initialization phase can be accounted for.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.ResourceDictionary.BeginInit%2A> and <xref:System.Windows.ResourceDictionary.EndInit%2A> follow a transaction model. <xref:System.Windows.ResourceDictionary.BeginInit%2A> marks the dictionary uninitialized and <xref:System.Windows.ResourceDictionary.EndInit%2A> marks it initialized.  
-  
+<xref:System.Windows.ResourceDictionary.BeginInit%2A> and <xref:System.Windows.ResourceDictionary.EndInit%2A> follow a transaction model. <xref:System.Windows.ResourceDictionary.BeginInit%2A> marks the dictionary uninitialized and <xref:System.Windows.ResourceDictionary.EndInit%2A> marks it initialized.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -320,10 +320,10 @@
         <returns>Always returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.ResourceDictionary> class does not support registering by name. It uses keys instead.  
-  
+The <xref:System.Windows.ResourceDictionary> class does not support registering by name. It uses keys instead.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -346,10 +346,10 @@
         <returns>A specialized enumerator for the <see cref="T:System.Windows.ResourceDictionary" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The iterator is for the base dictionary only.  
-  
+The iterator is for the base dictionary only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -372,10 +372,10 @@
           <see langword="true" /> if the hash table is fixed-size; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default implementation returns the <xref:System.Collections.Hashtable> default, which is `false`.  
-  
+The default implementation returns the <xref:System.Collections.Hashtable> default, which is `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -398,10 +398,10 @@
           <see langword="true" /> if the hash table is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property returns the <xref:System.Collections.Hashtable> default, which is `false`.  
-  
+This property returns the <xref:System.Collections.Hashtable> default, which is `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -427,20 +427,20 @@
         <value>Value of the key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the requested key is not in this resource dictionary, the framework resource system will also check the merged dictionaries.  
-  
- Checking a <xref:System.Windows.ResourceDictionary> by item or index is not generally the preferred way to retrieve resources. You should instead call methods that are capable of participating in the full resource lookup process and look up resources by their keys, and that can find the resources in applications or themes. <xref:System.Windows.FrameworkElement.FindResource%2A> is such a method, and is present on any <xref:System.Windows.FrameworkElement>. Otherwise your attempt to find the resource does not match the true run-time behavior.  
-  
- However, obtaining resources directly from an individual dictionary might be appropriate if you are retrieving resources from a known <xref:System.Windows.ResourceDictionary> location, and are doing so to avoid the possible performance and scope implications of run-time key lookup.  
-  
- You do not use indexers to define collection members in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Instead, you create child elements in markup. The child elements are either child elements of <xref:System.Windows.ResourceDictionary>, or of a property element where the property type is `ResourceDictionary`. For details, see the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage sections in <xref:System.Windows.ResourceDictionary>.  
-  
+If the requested key is not in this resource dictionary, the framework resource system will also check the merged dictionaries.  
+ 
+Checking a <xref:System.Windows.ResourceDictionary> by item or index is not generally the preferred way to retrieve resources. You should instead call methods that are capable of participating in the full resource lookup process and look up resources by their keys, and that can find the resources in applications or themes. <xref:System.Windows.FrameworkElement.FindResource%2A> is such a method, and is present on any <xref:System.Windows.FrameworkElement>. Otherwise your attempt to find the resource does not match the true run-time behavior.  
+ 
+However, obtaining resources directly from an individual dictionary might be appropriate if you are retrieving resources from a known <xref:System.Windows.ResourceDictionary> location, and are doing so to avoid the possible performance and scope implications of run-time key lookup.  
+ 
+You do not use indexers to define collection members in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Instead, you create child elements in markup. The child elements are either child elements of <xref:System.Windows.ResourceDictionary>, or of a property element where the property type is `ResourceDictionary`. For details, see the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage sections in <xref:System.Windows.ResourceDictionary>.  
+ 
 <a name="xamlTextUsage_Item"></a>   
 ## XAML Text Usage  
- See Remarks.  
-  
+See Remarks.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -462,12 +462,12 @@
         <value>The collection of all keys.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property exists because it is required by <xref:System.Collections.IDictionary>, but <xref:System.Windows.ResourceDictionary.Keys%2A> generally is not useful for most <xref:System.Windows.ResourceDictionary> scenarios.  
-  
- The returned keys do not include keys within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A>. Also the keys collection is a snapshot of the keys in the base dictionary. If you subsequently make changes to this <xref:System.Windows.ResourceDictionary>, a stored <xref:System.Windows.ResourceDictionary.Keys%2A> will not reflect the changes.  
-  
+This property exists because it is required by <xref:System.Collections.IDictionary>, but <xref:System.Windows.ResourceDictionary.Keys%2A> generally is not useful for most <xref:System.Windows.ResourceDictionary> scenarios.  
+ 
+The returned keys do not include keys within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A>. Also the keys collection is a snapshot of the keys in the base dictionary. If you subsequently make changes to this <xref:System.Windows.ResourceDictionary>, a stored <xref:System.Windows.ResourceDictionary.Keys%2A> will not reflect the changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -489,17 +489,17 @@
         <value>The collection of merged dictionaries.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Dictionaries are merged by adding a <xref:System.Windows.ResourceDictionary> to the generic collection referenced by <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A>. A merged <xref:System.Windows.ResourceDictionary> does not have resource elements defined within it in markup. Instead, the merged dictionary is a <xref:System.Windows.ResourceDictionary> with no markup child elements defined (or with no elements added through code), but with a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] specified for <xref:System.Windows.ResourceDictionary.Source%2A>. The <xref:System.Windows.ResourceDictionary.Source%2A> designation enables the merged dictionary to come from an external source, such as a separate resource assembly that ships with the application, "loose [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]", or a specific localization or global resources assembly.  
-  
- Specifying resource elements within a <xref:System.Windows.ResourceDictionary> that has <xref:System.Windows.ResourceDictionary.Source%2A> specified is not supported.  
-  
- Lookup behavior within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection will search the last-added <xref:System.Windows.ResourceDictionary> first, and the search stops as soon as a requested key is found. Duplicate keys across the collection of merged dictionaries are not illegal. For more information on merged dictionary behavior, see [Merged Resource Dictionaries](~/docs/framework/wpf/advanced/merged-resource-dictionaries.md).  
-  
+Dictionaries are merged by adding a <xref:System.Windows.ResourceDictionary> to the generic collection referenced by <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A>. A merged <xref:System.Windows.ResourceDictionary> does not have resource elements defined within it in markup. Instead, the merged dictionary is a <xref:System.Windows.ResourceDictionary> with no markup child elements defined (or with no elements added through code), but with a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] specified for <xref:System.Windows.ResourceDictionary.Source%2A>. The <xref:System.Windows.ResourceDictionary.Source%2A> designation enables the merged dictionary to come from an external source, such as a separate resource assembly that ships with the application, "loose [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]", or a specific localization or global resources assembly.  
+ 
+Specifying resource elements within a <xref:System.Windows.ResourceDictionary> that has <xref:System.Windows.ResourceDictionary.Source%2A> specified is not supported.  
+ 
+Lookup behavior within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection will search the last-added <xref:System.Windows.ResourceDictionary> first, and the search stops as soon as a requested key is found. Duplicate keys across the collection of merged dictionaries are not illegal. For more information on merged dictionary behavior, see [Merged Resource Dictionaries](~/docs/framework/wpf/advanced/merged-resource-dictionaries.md).  
+ 
 <a name="xamlPropertyElementUsage_MergedDictionaries"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
   <object.MergedDictionaries>  
@@ -508,20 +508,20 @@
 </object>  
   
 ```  
-  
+ 
 <a name="xamlValues_MergedDictionaries"></a>   
 ## XAML Values  
- *oneOrMoreResourceDictionaries*  
- One or more <xref:System.Windows.ResourceDictionary> object elements. A <xref:System.Windows.ResourceDictionary> used for <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> does not have collection content, and specifies a <xref:System.Windows.ResourceDictionary.Source%2A> attribute that references the complete <xref:System.Windows.ResourceDictionary> remotely.  
+*oneOrMoreResourceDictionaries*  
+One or more <xref:System.Windows.ResourceDictionary> object elements. A <xref:System.Windows.ResourceDictionary> used for <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> does not have collection content, and specifies a <xref:System.Windows.ResourceDictionary.Source%2A> attribute that references the complete <xref:System.Windows.ResourceDictionary> remotely.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example specifies two <xref:System.Windows.ResourceDictionary> elements to be merged into the primary <xref:System.Windows.ResourceDictionary>.  
-  
- <!-- TODO: review snippet reference [!code-xml[ResourceMerge#MergedXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ResourceMerge/CS/default.xaml#mergedxaml)]  -->
- <!-- TODO: review snippet reference [!code-xml[ResourceMerge#MergedXAML](~/samples/snippets/xaml/VS_Snippets_Wpf/ResourceMerge/xaml/default.xaml#mergedxaml)]  -->  
-  
+The following example specifies two <xref:System.Windows.ResourceDictionary> elements to be merged into the primary <xref:System.Windows.ResourceDictionary>.  
+ 
+<!-- TODO: review snippet reference [!code-xml[ResourceMerge#MergedXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ResourceMerge/CS/default.xaml#mergedxaml)]  -->
+<!-- TODO: review snippet reference [!code-xml[ResourceMerge#MergedXAML](~/samples/snippets/xaml/VS_Snippets_Wpf/ResourceMerge/xaml/default.xaml#mergedxaml)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -574,12 +574,12 @@
         <summary>Not supported by this Dictionary implementation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.ResourceDictionary> class does not support registering by name. It uses keys instead. The XAML namescope methods are implemented as inoperative versions in <xref:System.Windows.ResourceDictionary> to make it clear that XAML names do not apply to resources.  
-  
- Calling this method will cause a <xref:System.NotSupportedException> to be thrown.  
-  
+The <xref:System.Windows.ResourceDictionary> class does not support registering by name. It uses keys instead. The XAML namescope methods are implemented as inoperative versions in <xref:System.Windows.ResourceDictionary> to make it clear that XAML names do not apply to resources.  
+ 
+Calling this method will cause a <xref:System.NotSupportedException> to be thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">In all cases when this method is called.</exception>
@@ -605,12 +605,12 @@
         <summary>Removes the entry with the specified key from the base dictionary.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.Windows.ResourceDictionary> does not contain an element with the specified key, the <xref:System.Windows.ResourceDictionary> remains unchanged. No exception is raised.  
-  
- This method does not remove keys from the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A>. You must obtain the specific <xref:System.Windows.ResourceDictionary> from the collection to remove those keys, but that might not be possible because you are typically accessing such a dictionary remotely.  
-  
+If the <xref:System.Windows.ResourceDictionary> does not contain an element with the specified key, the <xref:System.Windows.ResourceDictionary> remains unchanged. No exception is raised.  
+ 
+This method does not remove keys from the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A>. You must obtain the specific <xref:System.Windows.ResourceDictionary> from the collection to remove those keys, but that might not be possible because you are typically accessing such a dictionary remotely.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.ResourceDictionary" /> is locked or read-only.</exception>
@@ -638,20 +638,20 @@
         <value>The source location of an external resource dictionary.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, <xref:System.Windows.ResourceDictionary.Source%2A> is specified as a Pack URI, which references the location of a resource dictionary that is included as a noncompiled Resource or Content build action by your application building project. For details on the Pack URI format, see [Pack URIs in WPF](~/docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
+Typically, <xref:System.Windows.ResourceDictionary.Source%2A> is specified as a Pack URI, which references the location of a resource dictionary that is included as a noncompiled Resource or Content build action by your application building project. For details on the Pack URI format, see [Pack URIs in WPF](~/docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
+ 
+Generally, the <xref:System.Windows.ResourceDictionary.Source%2A> property is set only for a <xref:System.Windows.ResourceDictionary> that is specified for the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> property (either as a property element in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], or as a <xref:System.Windows.ResourceDictionary> item of the collection in code). In this context, setting the value for <xref:System.Windows.ResourceDictionary.Source%2A> will merge the dictionary contents found at the supplied [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] into the current <xref:System.Windows.ResourceDictionary>. Any load failures will cause an exception to be thrown.  
+ 
   
- Generally, the <xref:System.Windows.ResourceDictionary.Source%2A> property is set only for a <xref:System.Windows.ResourceDictionary> that is specified for the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> property (either as a property element in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], or as a <xref:System.Windows.ResourceDictionary> item of the collection in code). In this context, setting the value for <xref:System.Windows.ResourceDictionary.Source%2A> will merge the dictionary contents found at the supplied [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] into the current <xref:System.Windows.ResourceDictionary>. Any load failures will cause an exception to be thrown.  
-  
-   
-  
+ 
 ## Examples  
- The following example specifies two <xref:System.Windows.ResourceDictionary> elements to be merged into the primary <xref:System.Windows.ResourceDictionary>.  
-  
- <!-- TODO: review snippet reference [!code-xml[ResourceMerge#MergedXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ResourceMerge/CS/default.xaml#mergedxaml)]  -->
- <!-- TODO: review snippet reference [!code-xml[ResourceMerge#MergedXAML](~/samples/snippets/xaml/VS_Snippets_Wpf/ResourceMerge/xaml/default.xaml#mergedxaml)]  -->  
-  
+The following example specifies two <xref:System.Windows.ResourceDictionary> elements to be merged into the primary <xref:System.Windows.ResourceDictionary>.  
+ 
+<!-- TODO: review snippet reference [!code-xml[ResourceMerge#MergedXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ResourceMerge/CS/default.xaml#mergedxaml)]  -->
+<!-- TODO: review snippet reference [!code-xml[ResourceMerge#MergedXAML](~/samples/snippets/xaml/VS_Snippets_Wpf/ResourceMerge/xaml/default.xaml#mergedxaml)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -678,10 +678,10 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.ResourceDictionary> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.ResourceDictionary> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -704,10 +704,10 @@
           <see langword="true" /> if access to <see cref="T:System.Windows.ResourceDictionary" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.ResourceDictionary> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.ResourceDictionary> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -729,10 +729,10 @@
         <value>An object that can be used to synchronize access to <see cref="T:System.Windows.ResourceDictionary" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.ResourceDictionary> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.ResourceDictionary> instance is cast to an <xref:System.Collections.ICollection> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -755,10 +755,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.ResourceDictionary> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.ResourceDictionary> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -780,10 +780,10 @@
         <value>The base [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the current context.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.ResourceDictionary> instance is cast to an <xref:System.Windows.Markup.IUriContext> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.ResourceDictionary> instance is cast to an <xref:System.Windows.Markup.IUriContext> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -808,10 +808,10 @@
         <summary>Not supported by this Dictionary implementation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.ResourceDictionary> class does not support registering by name. It uses keys instead. Calling this method does nothing.  
-  
+The <xref:System.Windows.ResourceDictionary> class does not support registering by name. It uses keys instead. Calling this method does nothing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -833,12 +833,12 @@
         <value>The collection of all values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property exists because it is required by <xref:System.Collections.IDictionary>, but generally is not useful for most <xref:System.Windows.ResourceDictionary> scenarios.  
-  
- The returned values do not include values within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A>. Also the collection is a snapshot of the values in the base dictionary. If you subsequently make changes to this <xref:System.Windows.ResourceDictionary>, a stored <xref:System.Windows.ResourceDictionary.Values%2A> will not reflect the changes.  
-  
+This property exists because it is required by <xref:System.Collections.IDictionary>, but generally is not useful for most <xref:System.Windows.ResourceDictionary> scenarios.  
+ 
+The returned values do not include values within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A>. Also the collection is a snapshot of the values in the base dictionary. If you subsequently make changes to this <xref:System.Windows.ResourceDictionary>, a stored <xref:System.Windows.ResourceDictionary.Values%2A> will not reflect the changes.  
+ 
  ]]></format>
         </remarks>
       </Docs>

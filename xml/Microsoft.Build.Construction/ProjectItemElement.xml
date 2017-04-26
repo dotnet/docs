@@ -66,10 +66,10 @@
         <value>Returns the Exclude attribute value. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the Exclude attribute if the value to set is set to null or an empty string.  
-  
+Removes the Exclude attribute if the value to set is set to null or an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -132,10 +132,10 @@
         <value>Returns the Include attribute value. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the Include attribute if the value to set is set to null or an empty string.  
-  
+Removes the Include attribute if the value to set is set to null or an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,10 +203,10 @@
         <value>Returns the value of KeepDuplicates, or returns empty string if it is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the attribute if the value to set is empty or null.  
-  
+Removes the attribute if the value to set is empty or null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,10 +251,10 @@
         <value>Returns the value of the KeepMetadata attribute or returns an empty string if it is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the attribute if the value to set is empty or null.  
-  
+Removes the attribute if the value to set is empty or null.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -317,10 +317,10 @@
         <value>Returns the Remove attribute value. Returns an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the Remove attribute if the value to set is set to null or an empty string.  
-  
+Removes the Remove attribute if the value to set is set to null or an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -365,10 +365,10 @@
         <value>Returns the RemoveMetadata value or returns an empty string if it is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Removes the attribute if the value to set is empty or null.  
-  
+Removes the attribute if the value to set is empty or null.  
+ 
  ]]></format>
         </remarks>
       </Docs>

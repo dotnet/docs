@@ -24,31 +24,31 @@
     <summary>Represents an X509 extension.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- X509 extensions are dynamic, extended properties that can be added to an X509 certificate and changed. The <xref:System.Security.Cryptography.X509Certificates.X509Extension> class can be used to create extensions that are associated with a certificate but are not part of a certificate as issued by a certification authority (CA).  
-  
- In its most basic form, an X509 extension has an object identifier (OID), a Boolean value describing whether the extension is considered critical or not, and ASN-encoded data. Custom extensions can be registered in a <xref:System.Security.Cryptography.CryptoConfig> file.  
-  
- The.NET Framework includes implementations of several common X509 extensions:  
-  
+X509 extensions are dynamic, extended properties that can be added to an X509 certificate and changed. The <xref:System.Security.Cryptography.X509Certificates.X509Extension> class can be used to create extensions that are associated with a certificate but are not part of a certificate as issued by a certification authority (CA).  
+ 
+In its most basic form, an X509 extension has an object identifier (OID), a Boolean value describing whether the extension is considered critical or not, and ASN-encoded data. Custom extensions can be registered in a <xref:System.Security.Cryptography.CryptoConfig> file.  
+ 
+The.NET Framework includes implementations of several common X509 extensions:  
+ 
 -   <xref:System.Security.Cryptography.X509Certificates.X509KeyUsageExtension>. Describes the key usages of a certificate.  
-  
+ 
 -   <xref:System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension>. Describes the constraints for a certificate.  
-  
+ 
 -   <xref:System.Security.Cryptography.X509Certificates.X509EnhancedKeyUsageExtension>. Describes the enhanced key usages of a certificate.  
-  
+ 
 -   <xref:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension>. Describes the key identifier. For example, used with XMLDSIG.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -77,19 +77,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Extension" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates an empty <xref:System.Security.Cryptography.X509Certificates.X509Extension> object, unlike the other constructors for this class that use certificate information from either a byte array, a pointer or a certificate file to create the object.  
+This constructor creates an empty <xref:System.Security.Cryptography.X509Certificates.X509Extension> object, unlike the other constructors for this class that use certificate information from either a byte array, a pointer or a certificate file to create the object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,19 +124,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Extension" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this constructor if the information to create the extension is already in an <xref:System.Security.Cryptography.AsnEncodedData> object.  
+Use this constructor if the information to create the extension is already in an <xref:System.Security.Cryptography.AsnEncodedData> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -173,19 +173,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Extension" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses information from the `oid` parameter to provide an object identifier for the extension.  
+This constructor uses information from the `oid` parameter to provide an object identifier for the extension.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -226,19 +226,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Extension" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor uses information from the `oid` parameter to provide an object identifier for the extension.  
+This constructor uses information from the `oid` parameter to provide an object identifier for the extension.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -273,19 +273,19 @@
         <summary>Copies the extension properties of the specified <see cref="T:System.Security.Cryptography.AsnEncodedData" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to copy the extension properties of the specified <xref:System.Security.Cryptography.X509Certificates.X509Extension> and add them to the instance of the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class from which this method is called.  
+Use this method to copy the extension properties of the specified <xref:System.Security.Cryptography.X509Certificates.X509Extension> and add them to the instance of the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class from which this method is called.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -322,19 +322,19 @@
           <see langword="true" /> if the extension is critical; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to designate whether an extension is critical.  
+Use this property to designate whether an extension is critical.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
-  
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
-  
+The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
+ 
+[!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
+[!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
+[!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

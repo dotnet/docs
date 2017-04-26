@@ -46,35 +46,35 @@
     <summary>Represents a thread-safe last in-first out (LIFO) collection.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  <xref:System.Collections.Concurrent.ConcurrentStack%601> implements the <xref:System.Collections.Generic.IReadOnlyCollection%601> interface starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)]; in previous versions of the .NET Framework, the <xref:System.Collections.Concurrent.ConcurrentStack%601> class did not implement this interface.  
-  
- <xref:System.Collections.Concurrent.ConcurrentStack%601> provides a few main operations:  
-  
+ 
+<xref:System.Collections.Concurrent.ConcurrentStack%601> provides a few main operations:  
+ 
 -   <xref:System.Collections.Concurrent.ConcurrentStack%601.Push%2A> inserts an element at the top of the <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
-  
+ 
 -   <xref:System.Collections.Concurrent.ConcurrentStack%601.TryPop%2A> removes an element from the top of the <xref:System.Collections.Concurrent.ConcurrentStack%601>, or returns `false` if the item cannot be removed.  
-  
+ 
 -   <xref:System.Collections.Concurrent.ConcurrentStack%601.TryPeek%2A> returns an element that is at the top of the <xref:System.Collections.Concurrent.ConcurrentStack%601> but does not remove it from the <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
-  
+ 
 -   The <xref:System.Collections.Concurrent.ConcurrentStack%601.TryPopRange%2A> and <xref:System.Collections.Concurrent.ConcurrentStack%601.PushRange%2A> methods provide efficient pushing and popping of multiple elements in a single operation.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to use a <xref:System.Collections.Concurrent.ConcurrentStack%601> to push and pop individual items:  
-  
- [!code-csharp[System.Collections.Concurrent.ConcurrentStack#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/cs/concstack.cs#2)]
- [!code-vb[System.Collections.Concurrent.ConcurrentStack#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/vb/concstack.vb#2)]  
-  
- The following example shows how to use a <xref:System.Collections.Concurrent.ConcurrentStack%601> to push and pop ranges of items:  
-  
- [!code-csharp[System.Collections.Concurrent.ConcurrentStack#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/cs/concstack.cs#1)]
- [!code-vb[System.Collections.Concurrent.ConcurrentStack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/vb/concstack.vb#1)]  
-  
+The following example shows how to use a <xref:System.Collections.Concurrent.ConcurrentStack%601> to push and pop individual items:  
+ 
+[!code-csharp[System.Collections.Concurrent.ConcurrentStack#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/cs/concstack.cs#2)]
+[!code-vb[System.Collections.Concurrent.ConcurrentStack#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/vb/concstack.vb#2)]  
+ 
+The following example shows how to use a <xref:System.Collections.Concurrent.ConcurrentStack%601> to push and pop ranges of items:  
+ 
+[!code-csharp[System.Collections.Concurrent.ConcurrentStack#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/cs/concstack.cs#1)]
+[!code-vb[System.Collections.Concurrent.ConcurrentStack#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentstack/vb/concstack.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" /> are thread-safe and may be used concurrently from multiple threads.</threadsafe>
@@ -228,10 +228,10 @@
         <value>The number of elements contained in the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For determining whether the collection contains any items, use of the <xref:System.Collections.Concurrent.ConcurrentStack%601.IsEmpty%2A> property is recommended rather than retrieving the number of items from the <xref:System.Collections.Concurrent.ConcurrentStack%601.Count%2A> property and comparing it to 0.  
-  
+For determining whether the collection contains any items, use of the <xref:System.Collections.Concurrent.ConcurrentStack%601.IsEmpty%2A> property is recommended rather than retrieving the number of items from the <xref:System.Collections.Concurrent.ConcurrentStack%601.Count%2A> property and comparing it to 0.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -264,10 +264,10 @@
         <returns>An enumerator for the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The enumeration represents a moment-in-time snapshot of the contents of the stack. It does not reflect any updates to the collection after <xref:System.Collections.Concurrent.ConcurrentStack%601.GetEnumerator%2A> was called. The enumerator is safe to use concurrently with reads from and writes to the stack. The enumerator returns items in LIFO (last-in, first-out) order.  
-  
+The enumeration represents a moment-in-time snapshot of the contents of the stack. It does not reflect any updates to the collection after <xref:System.Collections.Concurrent.ConcurrentStack%601.GetEnumerator%2A> was called. The enumerator is safe to use concurrently with reads from and writes to the stack. The enumerator returns items in LIFO (last-in, first-out) order.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -299,12 +299,12 @@
         <value>true if the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" /> is empty; otherwise, false.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For determining whether the collection contains any items, use of this property is recommended rather than retrieving the number of items from the <xref:System.Collections.Concurrent.ConcurrentStack%601.Count%2A> property and comparing it to 0. However, as this collection is intended to be accessed concurrently, it may be the case that another thread will modify the collection after <xref:System.Collections.Concurrent.ConcurrentStack%601.IsEmpty%2A> returns, thus invalidating the result.  
-  
- For a code example, see <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
-  
+For determining whether the collection contains any items, use of this property is recommended rather than retrieving the number of items from the <xref:System.Collections.Concurrent.ConcurrentStack%601.Count%2A> property and comparing it to 0. However, as this collection is intended to be accessed concurrently, it may be the case that another thread will modify the collection after <xref:System.Collections.Concurrent.ConcurrentStack%601.IsEmpty%2A> returns, thus invalidating the result.  
+ 
+For a code example, see <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -370,12 +370,12 @@
         <summary>Inserts multiple objects at the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" /> atomically.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When adding multiple items to the stack, using PushRange is a more efficient mechanism than using <xref:System.Collections.Concurrent.ConcurrentStack%601.Push%2A> one item at a time. Additionally, PushRange guarantees that all of the elements will be added atomically, meaning that no other threads will be able to inject elements between the elements being pushed. Items at lower indices in the `items` array will be pushed before items at higher indices.  
-  
- For a code example, see <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
-  
+When adding multiple items to the stack, using PushRange is a more efficient mechanism than using <xref:System.Collections.Concurrent.ConcurrentStack%601.Push%2A> one item at a time. Additionally, PushRange guarantees that all of the elements will be added atomically, meaning that no other threads will be able to inject elements between the elements being pushed. Items at lower indices in the `items` array will be pushed before items at higher indices.  
+ 
+For a code example, see <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -416,12 +416,12 @@
         <summary>Inserts multiple objects at the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" /> atomically.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When adding multiple items to the stack, using PushRange is a more efficient mechanism than using <xref:System.Collections.Concurrent.ConcurrentStack%601.Push%2A> one item at a time. Additionally, PushRange guarantees that all of the elements will be added atomically, meaning that no other threads will be able to inject elements between the elements being pushed. Items at lower indices in the `items` array will be pushed before items at higher indices.  
-  
- For a code example, see <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
-  
+When adding multiple items to the stack, using PushRange is a more efficient mechanism than using <xref:System.Collections.Concurrent.ConcurrentStack%601.Push%2A> one item at a time. Additionally, PushRange guarantees that all of the elements will be added atomically, meaning that no other threads will be able to inject elements between the elements being pushed. Items at lower indices in the `items` array will be pushed before items at higher indices.  
+ 
+For a code example, see <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -463,10 +463,10 @@
         <returns>true if the object was added successfully; otherwise, false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For <xref:System.Collections.Concurrent.ConcurrentStack%601>, this operation will always insert the object onto the top of the <xref:System.Collections.Concurrent.ConcurrentStack%601> and return true.  
-  
+For <xref:System.Collections.Concurrent.ConcurrentStack%601>, this operation will always insert the object onto the top of the <xref:System.Collections.Concurrent.ConcurrentStack%601> and return true.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -502,10 +502,10 @@
         <returns>true if an element was removed and returned succesfully; otherwise, false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For <xref:System.Collections.Concurrent.ConcurrentStack%601>, this operation will attempt to pop the object at the top of the <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
-  
+For <xref:System.Collections.Concurrent.ConcurrentStack%601>, this operation will attempt to pop the object at the top of the <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -634,10 +634,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The enumeration represents a moment-in-time snapshot of the contents of the stack. It does not reflect any updates to the collection after <xref:System.Collections.Concurrent.ConcurrentStack%601.GetEnumerator%2A> was called. The enumerator is safe to use concurrently with reads from and writes to the stack.  
-  
+The enumeration represents a moment-in-time snapshot of the contents of the stack. It does not reflect any updates to the collection after <xref:System.Collections.Concurrent.ConcurrentStack%601.GetEnumerator%2A> was called. The enumerator is safe to use concurrently with reads from and writes to the stack.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -734,10 +734,10 @@
         <returns>true if an element was removed and returned from the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" /> successfully; otherwise, false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a code example, see <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
-  
+For a code example, see <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -773,12 +773,12 @@
         <returns>The number of objects successfully popped from the top of the <see cref="T:System.Collections.Concurrent.ConcurrentStack`1" /> and inserted in <paramref name="items" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When popping multiple items, if there is little contention on the stack, using `TryPopRange` can be more efficient than using <xref:System.Collections.Concurrent.ConcurrentStack%601.TryPop%2A> once per item to be removed. Nodes fill the `items` array with the first item to be popped at the startIndex, the second item to be popped at startIndex + 1, and so on.  
-  
- For a code example, see <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
-  
+When popping multiple items, if there is little contention on the stack, using `TryPopRange` can be more efficient than using <xref:System.Collections.Concurrent.ConcurrentStack%601.TryPop%2A> once per item to be removed. Nodes fill the `items` array with the first item to be popped at the startIndex, the second item to be popped at startIndex + 1, and so on.  
+ 
+For a code example, see <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -820,10 +820,10 @@
         <returns>The number of objects successfully popped from the top of the stack and inserted in <paramref name="items" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When popping multiple items, if there is little contention on the stack, using TryPopRange can be more efficient than using <xref:System.Collections.Concurrent.ConcurrentStack%601.TryPop%2A> once per item to be removed. Nodes fill the `items` array with the first item to be popped at the startIndex, the second item to be popped at startIndex + 1, and so on.  
-  
+When popping multiple items, if there is little contention on the stack, using TryPopRange can be more efficient than using <xref:System.Collections.Concurrent.ConcurrentStack%601.TryPop%2A> once per item to be removed. Nodes fill the `items` array with the first item to be popped at the startIndex, the second item to be popped at startIndex + 1, and so on.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

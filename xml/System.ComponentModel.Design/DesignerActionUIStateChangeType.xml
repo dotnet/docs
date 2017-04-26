@@ -13,10 +13,10 @@
     <summary>Specifies the display state of a smart tag panel.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerActionUIStateChangeType> enumeration is used in the <xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs> class and is associated with the <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event, which indicates whether the panel is being displayed or hidden.  
-  
+The <xref:System.ComponentModel.Design.DesignerActionUIStateChangeType> enumeration is used in the <xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs> class and is associated with the <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event, which indicates whether the panel is being displayed or hidden.  
+ 
  ]]></format>
     </remarks>
   </Docs>

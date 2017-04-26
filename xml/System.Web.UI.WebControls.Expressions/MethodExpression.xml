@@ -14,33 +14,33 @@
     <summary>Provides a way to specify a custom LINQ query that is defined in a method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.QueryExtender> control supports custom LINQ queries. You can define a custom LINQ query in a method and use the <xref:System.Web.UI.WebControls.Expressions.MethodExpression> filter option to invoke the query in the <xref:System.Web.UI.WebControls.QueryExtender> control.  
-  
- The method that contains the custom LINQ query must meet the following criteria:  
-  
+The <xref:System.Web.UI.WebControls.QueryExtender> control supports custom LINQ queries. You can define a custom LINQ query in a method and use the <xref:System.Web.UI.WebControls.Expressions.MethodExpression> filter option to invoke the query in the <xref:System.Web.UI.WebControls.QueryExtender> control.  
+ 
+The method that contains the custom LINQ query must meet the following criteria:  
+ 
 -   The method must be static (`Shared` in Visual Basic). The first parameter must be an <xref:System.Linq.IQueryable%601> or <xref:System.Collections.Generic.IEnumerable%601> object. The method can have more than one parameter.  
-  
+ 
 -   The return value cannot change the <xref:System.Linq.IQueryable%601> or <xref:System.Collections.Generic.IEnumerable%601> type that is queried.  
-  
- The <xref:System.Web.UI.WebControls.Expressions.MethodExpression> searches for the method that contains the query in the following order:  
-  
+ 
+The <xref:System.Web.UI.WebControls.Expressions.MethodExpression> searches for the method that contains the query in the following order:  
+ 
 1.  If a <xref:System.Web.UI.WebControls.Expressions.MethodExpression.TypeName%2A> property is specified in the <xref:System.Web.UI.WebControls.QueryExtender> control, the <xref:System.Web.UI.WebControls.Expressions.MethodExpression> object looks for the method in the specified type.  
-  
+ 
 2.  If the data source implements <xref:System.Web.DynamicData.IDynamicDataSource>, the method looks for the method on the context type (<xref:System.Data.Linq.DataContext> or <xref:System.Data.Objects.ObjectContext> object.)  
-  
+ 
 3.  The method looks for the method in a template control, in the base class for the page, or in a user control.  
+ 
+The <xref:System.Web.UI.WebControls.Expressions.MethodExpression> class is like the <xref:System.Web.UI.WebControls.Expressions.CustomExpression> class except that the method expression is executed in response to a method call, and the custom expression is executed in response to an event.  
+ 
   
- The <xref:System.Web.UI.WebControls.Expressions.MethodExpression> class is like the <xref:System.Web.UI.WebControls.Expressions.CustomExpression> class except that the method expression is executed in response to a method call, and the custom expression is executed in response to an event.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to search the ListPrice field of the Products table in the AdventureWorks database for products that have a list price of 400 or more. This example shows how to create a custom LINQ query in a method in page code and how to invoke the method in the <xref:System.Web.UI.WebControls.QueryExtender> control.  
-  
- [Visual Basic]  
-  
+The following example shows how to search the ListPrice field of the Products table in the AdventureWorks database for products that have a list price of 400 or more. This example shows how to create a custom LINQ query in a method in page code and how to invoke the method in the <xref:System.Web.UI.WebControls.QueryExtender> control.  
+ 
+[Visual Basic]  
+ 
 ```  
 Public Shared Function FilterStandardPrice(ByVal query As _  
         IQueryable(Of Product)) As IQueryable(Of Product)  
@@ -49,9 +49,9 @@ Public Shared Function FilterStandardPrice(ByVal query As _
             Select p  
     End Function  
 ```  
-  
- [C#]  
-  
+ 
+[C#]  
+ 
 ```  
 public static IQueryable<Product>   
         FilterStandardPrice(IQueryable<Product> query)  
@@ -62,9 +62,9 @@ public static IQueryable<Product>
   
     }  
 ```  
-  
- The following example shows how to call the method in the page.  
-  
+ 
+The following example shows how to call the method in the page.  
+ 
 ```  
 <html>  
 <head runat="server">  
@@ -91,7 +91,7 @@ public static IQueryable<Product>
 </body>  
 </html>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -161,10 +161,10 @@ public static IQueryable<Product>
           <see langword="true" /> if the expression is ignored; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Expressions.MethodExpression> object searches for a method that contains the query by looking in specific locations and searching in a specific order. You can set this property to `false` to throw an exception if the <xref:System.Web.UI.WebControls.Expressions.CustomExpression> object does not find a method that contains a LINQ.  
-  
+The <xref:System.Web.UI.WebControls.Expressions.MethodExpression> object searches for a method that contains the query by looking in specific locations and searching in a specific order. You can set this property to `false` to throw an exception if the <xref:System.Web.UI.WebControls.Expressions.CustomExpression> object does not find a method that contains a LINQ.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,15 +186,15 @@ public static IQueryable<Product>
         <value>The name of the method that contains the custom LINQ query.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Expressions.MethodExpression> object enables you to call a custom LINQ query that is defined in a method. You specify the method in the <xref:System.Web.UI.WebControls.QueryExtender> control in the page.  
+The <xref:System.Web.UI.WebControls.Expressions.MethodExpression> object enables you to call a custom LINQ query that is defined in a method. You specify the method in the <xref:System.Web.UI.WebControls.QueryExtender> control in the page.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to specify the `FilterStandardPrice` method in the <xref:System.Web.UI.WebControls.QueryExtender> control. The custom LINQ query is defined in a `FilterStandardPrice` method.  
-  
+The following example shows how to specify the `FilterStandardPrice` method in the <xref:System.Web.UI.WebControls.QueryExtender> control. The custom LINQ query is defined in a `FilterStandardPrice` method.  
+ 
 ```  
 <asp:QueryExtender ID="QueryExtender1" runat="server"   
     TargetControlID="LinqDataSource1">  
@@ -202,7 +202,7 @@ public static IQueryable<Product>
   </asp:MethodExpression>  
   </asp:QueryExtender>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -224,10 +224,10 @@ public static IQueryable<Product>
         <value>The class that the method is a member of.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Expressions.MethodExpression> class enables you to specify a custom expression for a data source in the <xref:System.Web.UI.WebControls.QueryExtender> control. You can use the <xref:System.Web.UI.WebControls.Expressions.MethodExpression.TypeName%2A> property to specify the class to which the method belongs.  
-  
+The <xref:System.Web.UI.WebControls.Expressions.MethodExpression> class enables you to specify a custom expression for a data source in the <xref:System.Web.UI.WebControls.QueryExtender> control. You can use the <xref:System.Web.UI.WebControls.Expressions.MethodExpression.TypeName%2A> property to specify the class to which the method belongs.  
+ 
  ]]></format>
         </remarks>
       </Docs>

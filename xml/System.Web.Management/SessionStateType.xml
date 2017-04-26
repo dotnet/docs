@@ -13,13 +13,13 @@
     <summary>Describes the session-state type used when installing a session-state database provider.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Web.Management.SessionStateType> enumeration with the <xref:System.Web.Management.SqlServices.InstallSessionState%2A> method of the <xref:System.Web.Management.SqlServices> type.  
-  
- [!code-csharp[System.Web.Management.SqlServices#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#8)]
- [!code-vb[System.Web.Management.SqlServices#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#8)]  
-  
+The following code example shows how to use the <xref:System.Web.Management.SessionStateType> enumeration with the <xref:System.Web.Management.SqlServices.InstallSessionState%2A> method of the <xref:System.Web.Management.SqlServices> type.  
+ 
+[!code-csharp[System.Web.Management.SqlServices#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#8)]
+[!code-vb[System.Web.Management.SqlServices#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#8)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

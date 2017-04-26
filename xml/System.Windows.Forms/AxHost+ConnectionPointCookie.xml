@@ -14,12 +14,12 @@
     <summary>Connects an ActiveX control to a client that handles the control’s events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- ActiveX controls communicate with clients through their COM interface. The <xref:System.Windows.Forms.AxHost.ConnectionPointCookie> class provides the link between the <xref:System.Windows.Forms.AxHost> class and the ActiveX control.  
-  
- For more information, see "Events in COM and Connectable Objects" in the MSDN library at http://msdn.microsoft.com/library.  
-  
+ActiveX controls communicate with clients through their COM interface. The <xref:System.Windows.Forms.AxHost.ConnectionPointCookie> class provides the link between the <xref:System.Windows.Forms.AxHost> class and the ActiveX control.  
+ 
+For more information, see "Events in COM and Connectable Objects" in the MSDN library at http://msdn.microsoft.com/library.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -46,10 +46,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost.ConnectionPointCookie" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.AxHost.ConnectionPointCookie.%23ctor%2A> constructor establishes a connection between the ActiveX control and the client.  
-  
+The <xref:System.Windows.Forms.AxHost.ConnectionPointCookie.%23ctor%2A> constructor establishes a connection between the ActiveX control and the client.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -100,12 +100,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.AxHost.ConnectionPointCookie" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides  <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
-  
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
-  
+This method overrides  <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
+ 
+For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

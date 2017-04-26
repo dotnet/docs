@@ -30,54 +30,54 @@
  To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/file.cs#1c7421e464f67b7e).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/file.cs#1c7421e464f67b7e). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
- Use the <xref:System.IO.File> class for typical operations such as copying, moving, renaming, creating, opening, deleting, and appending to a single file at a time. You can also use the <xref:System.IO.File> class to get and set file attributes or <xref:System.DateTime> information related to the creation, access, and writing of a file. If you want to perform operations on multiple files, see <xref:System.IO.Directory.GetFiles%2A?displayProperty=fullName> or <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=fullName>.  
-  
- Many of the <xref:System.IO.File> methods return other I/O types when you create or open files. You can use these other types to further manipulate a file. For more information, see specific <xref:System.IO.File> members such as <xref:System.IO.File.OpenText%2A>, <xref:System.IO.File.CreateText%2A>, or <xref:System.IO.File.Create%2A>.  
-  
- Because all <xref:System.IO.File> methods are static, it might be more efficient to use a <xref:System.IO.File> method rather than a corresponding <xref:System.IO.FileInfo> instance method if you want to perform only one action. All <xref:System.IO.File> methods require the path to the file that you are manipulating.  
-  
- The static methods of the <xref:System.IO.File> class perform security checks on all methods. If you are going to reuse an object several times, consider using the corresponding instance method of <xref:System.IO.FileInfo> instead, because the security check will not always be necessary.  
-  
- By default, full read/write access to new files is granted to all users.  
-  
- The following table describes the enumerations that are used to customize the behavior of various <xref:System.IO.File> methods.  
-  
+ 
+Use the <xref:System.IO.File> class for typical operations such as copying, moving, renaming, creating, opening, deleting, and appending to a single file at a time. You can also use the <xref:System.IO.File> class to get and set file attributes or <xref:System.DateTime> information related to the creation, access, and writing of a file. If you want to perform operations on multiple files, see <xref:System.IO.Directory.GetFiles%2A?displayProperty=fullName> or <xref:System.IO.DirectoryInfo.GetFiles%2A?displayProperty=fullName>.  
+ 
+Many of the <xref:System.IO.File> methods return other I/O types when you create or open files. You can use these other types to further manipulate a file. For more information, see specific <xref:System.IO.File> members such as <xref:System.IO.File.OpenText%2A>, <xref:System.IO.File.CreateText%2A>, or <xref:System.IO.File.Create%2A>.  
+ 
+Because all <xref:System.IO.File> methods are static, it might be more efficient to use a <xref:System.IO.File> method rather than a corresponding <xref:System.IO.FileInfo> instance method if you want to perform only one action. All <xref:System.IO.File> methods require the path to the file that you are manipulating.  
+ 
+The static methods of the <xref:System.IO.File> class perform security checks on all methods. If you are going to reuse an object several times, consider using the corresponding instance method of <xref:System.IO.FileInfo> instead, because the security check will not always be necessary.  
+ 
+By default, full read/write access to new files is granted to all users.  
+ 
+The following table describes the enumerations that are used to customize the behavior of various <xref:System.IO.File> methods.  
+ 
 |Enumeration|Description|  
 |-----------------|-----------------|  
 |<xref:System.IO.FileAccess>|Specifies read and write access to a file.|  
 |<xref:System.IO.FileShare>|Specifies the level of access permitted for a file that is already in use.|  
 |<xref:System.IO.FileMode>|Specifies whether the contents of an existing file are preserved or overwritten, and whether requests to create an existing file cause an exception.|  
-  
+ 
 > [!NOTE]
 >  In members that accept a path as an input string, that path must be well-formed or an exception is raised. For example, if a path is fully qualified but begins with a space, the path is not trimmed in methods of the class. Therefore, the path is malformed and an exception is raised. Similarly, a path or a combination of paths cannot be fully qualified twice. For example, "c:\temp c:\windows" also raises an exception in most cases. Ensure that your paths are well-formed when using methods that accept a path string.  
-  
- In members that accept a path, the path can refer to a file or just a directory. The specified path can also refer to a relative path or a Universal Naming Convention (UNC) path for a server and share name. For example, all the following are acceptable paths:  
-  
+ 
+In members that accept a path, the path can refer to a file or just a directory. The specified path can also refer to a relative path or a Universal Naming Convention (UNC) path for a server and share name. For example, all the following are acceptable paths:  
+ 
 -   "c:\\\MyDir\\\MyFile.txt" in C#, or "c:\MyDir\MyFile.txt" in Visual Basic.  
-  
+ 
 -   "c:\\\MyDir" in C#, or "c:\MyDir" in Visual Basic.  
-  
+ 
 -   "MyDir\\\MySubdir" in C#, or "MyDir\MySubDir" in Visual Basic.  
-  
+ 
 -   "\\\\\\\MyServer\\\MyShare" in C#, or "\\\MyServer\MyShare" in Visual Basic.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use the <xref:System.IO.File> class to check whether a file exists, and depending on the result, either create a new file and write to it, or open the existing file and read from it. Before running the code, create a `c:\temp` folder.  
-  
- [!code-cpp[File Class Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/File Class Example/CPP/file class example.cpp#1)]
- [!code-csharp[File Class Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Class Example/CS/file class example.cs#1)]
- [!code-vb[File Class Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Class Example/VB/file class example.vb#1)]  
-  
+The following example demonstrates how to use the <xref:System.IO.File> class to check whether a file exists, and depending on the result, either create a new file and write to it, or open the existing file and read from it. Before running the code, create a `c:\temp` folder.  
+ 
+[!code-cpp[File Class Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/File Class Example/CPP/file class example.cpp#1)]
+[!code-csharp[File Class Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Class Example/CS/file class example.cs#1)]
+[!code-vb[File Class Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Class Example/VB/file class example.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -113,18 +113,18 @@
         <summary>Appends lines to a file, and then closes the file. If the specified file does not exist, this method creates a file, writes the specified lines to the file, and then closes the file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method creates the file if it doesn’t exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
+The method creates the file if it doesn’t exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example writes selected lines from a sample data file to a file, and then appends more lines. The directory named `temp` on drive C must exist for the example to complete successfully.  
-  
- [!code-csharp[System.IO.File.WriteAllAppendAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.file.writeallappendall/cs/program.cs#1)]
- [!code-vb[System.IO.File.WriteAllAppendAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.file.writeallappendall/vb/program.vb#1)]  
-  
+The following example writes selected lines from a sample data file to a file, and then appends more lines. The directory named `temp` on drive C must exist for the example to complete successfully.  
+ 
+[!code-csharp[System.IO.File.WriteAllAppendAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.file.writeallappendall/cs/program.cs#1)]
+[!code-vb[System.IO.File.WriteAllAppendAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.file.writeallappendall/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -184,16 +184,16 @@
         <summary>Appends lines to a file by using a specified encoding, and then closes the file. If the specified file does not exist, this method creates a file, writes the specified lines to the file, and then closes the file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method creates the file if it doesn’t exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
-  
- You can use this method to create a file that contains the following:  
-  
+The method creates the file if it doesn’t exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
+ 
+You can use this method to create a file that contains the following:  
+ 
 -   The results of a [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) query on the lines of a file, as obtained by using the <xref:System.IO.File.ReadLines%2A> method.  
-  
+ 
 -   The contents of a collection that implements an <xref:System.Collections.Generic.IEnumerable%601> of strings.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -255,20 +255,20 @@
         <summary>Opens a file, appends the specified string to the file, and then closes the file. If the file does not exist, this method creates a file, writes the specified string to the file, then closes the file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Given a string and a file path, this method opens the specified file, appends the string to the end of the file, and then closes the file. The file handle is guaranteed to be closed by this method, even if exceptions are raised.  
+Given a string and a file path, this method opens the specified file, appends the string to the end of the file, and then closes the file. The file handle is guaranteed to be closed by this method, even if exceptions are raised.  
+ 
+The method creates the file if it doesn’t exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
+ 
   
- The method creates the file if it doesn’t exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.IO.File.AppendAllText%2A> method to add extra text to the end of a file. In this example, a file is created if it doesn't already exist, and text is added to it. However, the directory named `temp` on drive C must exist for the example to complete successfully.  
-  
- [!code-csharp[System.IO.File.AllText#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllText/cs/AllText.cs#00)]
- [!code-vb[System.IO.File.AllText#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllText/vb/AllText.vb#00)]  
-  
+The following code example demonstrates the use of the <xref:System.IO.File.AppendAllText%2A> method to add extra text to the end of a file. In this example, a file is created if it doesn't already exist, and text is added to it. However, the directory named `temp` on drive C must exist for the example to complete successfully.  
+ 
+[!code-csharp[System.IO.File.AllText#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllText/cs/AllText.cs#00)]
+[!code-vb[System.IO.File.AllText#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllText/vb/AllText.vb#00)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -331,20 +331,20 @@
         <summary>Appends the specified string to the file, creating the file if it does not already exist.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Given a string and a file path, this method opens the specified file, appends the string to the end of the file using the specified encoding, and then closes the file. The file handle is guaranteed to be closed by this method, even if exceptions are raised.  
+Given a string and a file path, this method opens the specified file, appends the string to the end of the file using the specified encoding, and then closes the file. The file handle is guaranteed to be closed by this method, even if exceptions are raised.  
+ 
+The method creates the file if it doesn’t exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
+ 
   
- The method creates the file if it doesn’t exist, but it doesn't create new directories. Therefore, the value of the `path` parameter must contain existing directories.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.IO.File.AppendAllText%2A> method to add extra text to the end of a file. In this example, a file is created if it doesn't already exist, and text is added to it. However, the directory named `temp` on drive C must exist for the example to complete successfully.  
-  
- [!code-csharp[System.IO.File.AllText_Encoding#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllText_Encoding/cs/AllText.cs#00)]
- [!code-vb[System.IO.File.AllText_Encoding#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllText_Encoding/vb/AllText.vb#00)]  
-  
+The following code example demonstrates the use of the <xref:System.IO.File.AppendAllText%2A> method to add extra text to the end of a file. In this example, a file is created if it doesn't already exist, and text is added to it. However, the directory named `temp` on drive C must exist for the example to complete successfully.  
+ 
+[!code-csharp[System.IO.File.AllText_Encoding#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllText_Encoding/cs/AllText.cs#00)]
+[!code-vb[System.IO.File.AllText_Encoding#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllText_Encoding/vb/AllText.vb#00)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -404,25 +404,25 @@
         <returns>A stream writer that appends UTF-8 encoded text to the specified file or to a new file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to the <xref:System.IO.StreamWriter.%23ctor%28System.String%2CSystem.Boolean%29> constructor overload. If the file specified by `path` does not exist, it is created. If the file does exist, write operations to the <xref:System.IO.StreamWriter> append text to the file. Additional threads are permitted to read the file while it is open.  
+This method is equivalent to the <xref:System.IO.StreamWriter.%23ctor%28System.String%2CSystem.Boolean%29> constructor overload. If the file specified by `path` does not exist, it is created. If the file does exist, write operations to the <xref:System.IO.StreamWriter> append text to the file. Additional threads are permitted to read the file while it is open.  
+ 
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+The `path` parameter is not case-sensitive.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- The `path` parameter is not case-sensitive.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example appends text to a file. The method creates a new file if the file doesn’t exist. However, the directory named `temp` on drive C must exist for the example to complete successfully.  
-  
- [!code-cpp[File_AppendText#1](~/samples/snippets/cpp/VS_Snippets_CLR/File_AppendText/CPP/file_appendtext.cpp#1)]
- [!code-csharp[File_AppendText#1](~/samples/snippets/csharp/VS_Snippets_CLR/File_AppendText/CS/file_appendtext.cs#1)]
- [!code-vb[File_AppendText#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File_AppendText/VB/file_appendtext.vb#1)]  
-  
+The following example appends text to a file. The method creates a new file if the file doesn’t exist. However, the directory named `temp` on drive C must exist for the example to complete successfully.  
+ 
+[!code-cpp[File_AppendText#1](~/samples/snippets/cpp/VS_Snippets_CLR/File_AppendText/CPP/file_appendtext.cpp#1)]
+[!code-csharp[File_AppendText#1](~/samples/snippets/csharp/VS_Snippets_CLR/File_AppendText/CS/file_appendtext.cs#1)]
+[!code-vb[File_AppendText#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File_AppendText/VB/file_appendtext.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
@@ -468,26 +468,26 @@
         <summary>Copies an existing file to a new file. Overwriting a file of the same name is not allowed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to the <xref:System.IO.File.Copy%28System.String%2CSystem.String%2CSystem.Boolean%29> method overload with the `overwrite` parameter set to `false`.  
+This method is equivalent to the <xref:System.IO.File.Copy%28System.String%2CSystem.String%2CSystem.Boolean%29> method overload with the `overwrite` parameter set to `false`.  
+ 
+The `sourceFileName` and `destFileName` parameters can specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see the <xref:System.IO.Directory.GetCurrentDirectory%2A?displayProperty=fullName> method. This method does not support wildcard characters in the parameters.  
+ 
+The attributes of the original file are retained in the copied file.  
+ 
   
- The `sourceFileName` and `destFileName` parameters can specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see the <xref:System.IO.Directory.GetCurrentDirectory%2A?displayProperty=fullName> method. This method does not support wildcard characters in the parameters.  
-  
- The attributes of the original file are retained in the copied file.  
-  
-   
-  
+ 
 ## Examples  
- The following example copies files to the C:\archives\2008 backup folder. It uses the two overloads of the <xref:System.IO.File.Copy%2A> method as follows:  
-  
+The following example copies files to the C:\archives\2008 backup folder. It uses the two overloads of the <xref:System.IO.File.Copy%2A> method as follows:  
+ 
 -   It first uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%29?displayProperty=fullName>method overload to copy text (.txt) files. The code demonstrates that this overload does not allow overwriting files that were already copied.  
-  
+ 
 -   It then uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%2CSystem.Boolean%29?displayProperty=fullName> method overload to copy pictures (.jpg files). The code demonstrates that this overload does allow overwriting files that were already copied.  
-  
- [!code-csharp[FileCopyDelete#1](~/samples/snippets/csharp/VS_Snippets_CLR/filecopydelete/cs/program.cs#1)]
- [!code-vb[FileCopyDelete#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/filecopydelete/vb/program.vb#1)]  
-  
+ 
+[!code-csharp[FileCopyDelete#1](~/samples/snippets/csharp/VS_Snippets_CLR/filecopydelete/cs/program.cs#1)]
+[!code-vb[FileCopyDelete#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/filecopydelete/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
@@ -548,26 +548,26 @@
         <summary>Copies an existing file to a new file. Overwriting a file of the same name is allowed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `sourceFileName` and `destFileName` parameters can specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. This method does not support wildcard characters in the parameters.  
+The `sourceFileName` and `destFileName` parameters can specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. This method does not support wildcard characters in the parameters.  
+ 
+The attributes of the original file are retained in the copied file.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- The attributes of the original file are retained in the copied file.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example copies files to the C:\archives\2008 backup folder. It uses the two overloads of the <xref:System.IO.File.Copy%2A> method as follows:  
-  
+The following example copies files to the C:\archives\2008 backup folder. It uses the two overloads of the <xref:System.IO.File.Copy%2A> method as follows:  
+ 
 -   It first uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%29?displayProperty=fullName> method overload to copy text (.txt) files. The code demonstrates that this overload does not allow overwriting files that were already copied.  
-  
- It then uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%2CSystem.Boolean%29?displayProperty=fullName> method overload to copy pictures (.jpg files). The code demonstrates that this overload does allow overwriting files that were already copied.  
-  
- [!code-csharp[FileCopyDelete#1](~/samples/snippets/csharp/VS_Snippets_CLR/filecopydelete/cs/program.cs#1)]
- [!code-vb[FileCopyDelete#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/filecopydelete/vb/program.vb#1)]  
-  
+ 
+It then uses the <xref:System.IO.File.Copy%28System.String%2CSystem.String%2CSystem.Boolean%29?displayProperty=fullName> method overload to copy pictures (.jpg files). The code demonstrates that this overload does allow overwriting files that were already copied.  
+ 
+[!code-csharp[FileCopyDelete#1](~/samples/snippets/csharp/VS_Snippets_CLR/filecopydelete/cs/program.cs#1)]
+[!code-vb[FileCopyDelete#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/filecopydelete/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.  
@@ -628,29 +628,29 @@
         <returns>A <see cref="T:System.IO.FileStream" /> that provides read/write access to the file specified in <paramref name="path" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.FileStream> object created by this method has a default <xref:System.IO.FileShare> value of <xref:System.IO.FileShare>; no other process or code can access the created file until the original file handle is closed.  
+The <xref:System.IO.FileStream> object created by this method has a default <xref:System.IO.FileShare> value of <xref:System.IO.FileShare>; no other process or code can access the created file until the original file handle is closed.  
+ 
+This method is equivalent to the <xref:System.IO.File.Create%28System.String%2CSystem.Int32%29> method overload using the default buffer size.  
+ 
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+If the specified file does not exist, it is created; if it does exist and it is not read-only, the contents are overwritten.  
+ 
+By default, full read/write access to new files is granted to all users. The file is opened with read/write access and must be closed before it can be opened by another application.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- This method is equivalent to the <xref:System.IO.File.Create%28System.String%2CSystem.Int32%29> method overload using the default buffer size.  
-  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- If the specified file does not exist, it is created; if it does exist and it is not read-only, the contents are overwritten.  
-  
- By default, full read/write access to new files is granted to all users. The file is opened with read/write access and must be closed before it can be opened by another application.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a file in the specified path, writes some information to the file, and reads from the file.  
-  
- [!code-cpp[File Create1#1](~/samples/snippets/cpp/VS_Snippets_CLR/File Create1/CPP/file create1.cpp#1)]
- [!code-csharp[File Create1#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Create1/CS/file create1.cs#1)]
- [!code-vb[File Create1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Create1/VB/file create1.vb#1)]  
-  
+The following example creates a file in the specified path, writes some information to the file, and reads from the file.  
+ 
+[!code-cpp[File Create1#1](~/samples/snippets/cpp/VS_Snippets_CLR/File Create1/CPP/file create1.cpp#1)]
+[!code-csharp[File Create1#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Create1/CS/file create1.cs#1)]
+[!code-vb[File Create1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Create1/VB/file create1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.  
@@ -702,27 +702,27 @@
         <returns>A <see cref="T:System.IO.FileStream" /> with the specified buffer size that provides read/write access to the file specified in <paramref name="path" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.FileStream> object created by this method has a default <xref:System.IO.FileShare> value of <xref:System.IO.FileShare>; no other process or code can access the created file until the original file handle is closed.  
+The <xref:System.IO.FileStream> object created by this method has a default <xref:System.IO.FileShare> value of <xref:System.IO.FileShare>; no other process or code can access the created file until the original file handle is closed.  
+ 
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%29> constructor overload. If the specified file does not exist, it is created; if it does exist and it is not read-only, the contents are overwritten.  
+ 
+By default, full read/write access to new files is granted to all users. The file is opened with read/write access and must be closed before it can be opened by another application.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%29> constructor overload. If the specified file does not exist, it is created; if it does exist and it is not read-only, the contents are overwritten.  
-  
- By default, full read/write access to new files is granted to all users. The file is opened with read/write access and must be closed before it can be opened by another application.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a file with the specified buffer size.  
-  
- [!code-cpp[File Create2#1](~/samples/snippets/cpp/VS_Snippets_CLR/File Create2/CPP/file create2.cpp#1)]
- [!code-csharp[File Create2#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Create2/CS/file create2.cs#1)]
- [!code-vb[File Create2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Create2/VB/file create2.vb#1)]  
-  
+The following example creates a file with the specified buffer size.  
+ 
+[!code-cpp[File Create2#1](~/samples/snippets/cpp/VS_Snippets_CLR/File Create2/CPP/file create2.cpp#1)]
+[!code-csharp[File Create2#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Create2/CS/file create2.cs#1)]
+[!code-vb[File Create2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Create2/VB/file create2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.  
@@ -776,16 +776,16 @@
         <returns>A new file with the specified buffer size.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%29> constructor overload. If the specified file does not exist, it is created; if it does exist and it is not read-only, the contents are overwritten.  
-  
- By default, full read/write access to new files is granted to all users. The file is opened with read/write access and must be closed before it can be opened by another application.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%29> constructor overload. If the specified file does not exist, it is created; if it does exist and it is not read-only, the contents are overwritten.  
+ 
+By default, full read/write access to new files is granted to all users. The file is opened with read/write access and must be closed before it can be opened by another application.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.  
@@ -833,16 +833,16 @@
         <returns>A new file with the specified buffer size, file options, and file security.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%29> constructor overload. If the specified file does not exist, it is created; if it does exist and it is not read-only, the contents are overwritten.  
-  
- By default, full read/write access to new files is granted to all users. The file is opened with read/write access and must be closed before it can be opened by another application.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%2CSystem.Int32%29> constructor overload. If the specified file does not exist, it is created; if it does exist and it is not read-only, the contents are overwritten.  
+ 
+By default, full read/write access to new files is granted to all users. The file is opened with read/write access and must be closed before it can be opened by another application.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.  
@@ -892,23 +892,23 @@
         <returns>A <see cref="T:System.IO.StreamWriter" /> that writes to the specified file using UTF-8 encoding.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to the <xref:System.IO.StreamWriter.%23ctor%28System.String%2CSystem.Boolean%29> constructor overload with the `append` parameter set to `false`. If the file specified by `path` does not exist, it is created. If the file does exist, its contents are overwritten. Additional threads are permitted to read the file while it is open.  
+This method is equivalent to the <xref:System.IO.StreamWriter.%23ctor%28System.String%2CSystem.Boolean%29> constructor overload with the `append` parameter set to `false`. If the file specified by `path` does not exist, it is created. If the file does exist, its contents are overwritten. Additional threads are permitted to read the file while it is open.  
+ 
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a file for text writing and reading.  
-  
- [!code-cpp[File CreateText#1](~/samples/snippets/cpp/VS_Snippets_CLR/File CreateText/CPP/file createtext.cpp#1)]
- [!code-csharp[File CreateText#1](~/samples/snippets/csharp/VS_Snippets_CLR/File CreateText/CS/file createtext.cs#1)]
- [!code-vb[File CreateText#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File CreateText/VB/file createtext.vb#1)]  
-  
+The following example creates a file for text writing and reading.  
+ 
+[!code-cpp[File CreateText#1](~/samples/snippets/cpp/VS_Snippets_CLR/File CreateText/CPP/file createtext.cpp#1)]
+[!code-csharp[File CreateText#1](~/samples/snippets/csharp/VS_Snippets_CLR/File CreateText/CS/file createtext.cs#1)]
+[!code-vb[File CreateText#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File CreateText/VB/file createtext.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
@@ -948,25 +948,25 @@
         <summary>Decrypts a file that was encrypted by the current account using the <see cref="M:System.IO.File.Encrypt(System.String)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.File.Decrypt%2A> method allows you to decrypt a file that was encrypted using the <xref:System.IO.File.Encrypt%2A> method.  The <xref:System.IO.File.Decrypt%2A> method can decrypt only files that were encrypted using the current user account.  
+The <xref:System.IO.File.Decrypt%2A> method allows you to decrypt a file that was encrypted using the <xref:System.IO.File.Encrypt%2A> method.  The <xref:System.IO.File.Decrypt%2A> method can decrypt only files that were encrypted using the current user account.  
+ 
+The <xref:System.IO.File.Decrypt%2A> method requires exclusive access to the file being decrypted, and will raise an exception if another process is using the file. If the file is not encrypted, <xref:System.IO.File.Decrypt%2A> will return a nonzero value, which indicates success.  
+ 
+Both the <xref:System.IO.File.Encrypt%2A> method and the <xref:System.IO.File.Decrypt%2A> method use the cryptographic service provider (CSP) installed on the computer and the file encryption keys of the process calling the method.  
+ 
+The current file system must be formatted as NTFS and the current operating system must be Windows NT or later.  
+ 
   
- The <xref:System.IO.File.Decrypt%2A> method requires exclusive access to the file being decrypted, and will raise an exception if another process is using the file. If the file is not encrypted, <xref:System.IO.File.Decrypt%2A> will return a nonzero value, which indicates success.  
-  
- Both the <xref:System.IO.File.Encrypt%2A> method and the <xref:System.IO.File.Decrypt%2A> method use the cryptographic service provider (CSP) installed on the computer and the file encryption keys of the process calling the method.  
-  
- The current file system must be formatted as NTFS and the current operating system must be Windows NT or later.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.IO.File.Encrypt%2A> method and the <xref:System.IO.File.Decrypt%2A> method to encrypt and then decrypt a file. The file must exist for the example to work.  
-  
- [!code-cpp[IO.File.Encrypt-Decrypt#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.Encrypt-Decrypt/cpp/sample.cpp#1)]
- [!code-csharp[IO.File.Encrypt-Decrypt#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.Encrypt-Decrypt/CS/sample.cs#1)]
- [!code-vb[IO.File.Encrypt-Decrypt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.Encrypt-Decrypt/VB/sample.vb#1)]  
-  
+The following code example uses the <xref:System.IO.File.Encrypt%2A> method and the <xref:System.IO.File.Decrypt%2A> method to encrypt and then decrypt a file. The file must exist for the example to work.  
+ 
+[!code-cpp[IO.File.Encrypt-Decrypt#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.Encrypt-Decrypt/cpp/sample.cpp#1)]
+[!code-csharp[IO.File.Encrypt-Decrypt#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.Encrypt-Decrypt/CS/sample.cs#1)]
+[!code-vb[IO.File.Encrypt-Decrypt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.Encrypt-Decrypt/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="path" /> parameter is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
@@ -1026,22 +1026,22 @@
         <summary>Deletes the specified file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Specify a file name with any relative or absolute path information for the `path` parameter. Wildcard characters cannot be included. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+Specify a file name with any relative or absolute path information for the `path` parameter. Wildcard characters cannot be included. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+If the file to be deleted does not exist, no exception is thrown.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- If the file to be deleted does not exist, no exception is thrown.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example copies groups of files to the C:\archives\2008 backup folder and then deletes them from the source folder.  
-  
- [!code-csharp[FileCopyDelete#1](~/samples/snippets/csharp/VS_Snippets_CLR/filecopydelete/cs/program.cs#1)]
- [!code-vb[FileCopyDelete#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/filecopydelete/vb/program.vb#1)]  
-  
+The following example copies groups of files to the C:\archives\2008 backup folder and then deletes them from the source folder.  
+ 
+[!code-csharp[FileCopyDelete#1](~/samples/snippets/csharp/VS_Snippets_CLR/filecopydelete/cs/program.cs#1)]
+[!code-vb[FileCopyDelete#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/filecopydelete/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1098,27 +1098,27 @@
         <summary>Encrypts a file so that only the account used to encrypt the file can decrypt it.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.File.Encrypt%2A> method allows you to encrypt a file so that only the account used to call this method can decrypt it. Use the <xref:System.IO.File.Decrypt%2A> method to decrypt a file encrypted by the <xref:System.IO.File.Encrypt%2A> method.  
+The <xref:System.IO.File.Encrypt%2A> method allows you to encrypt a file so that only the account used to call this method can decrypt it. Use the <xref:System.IO.File.Decrypt%2A> method to decrypt a file encrypted by the <xref:System.IO.File.Encrypt%2A> method.  
+ 
+The <xref:System.IO.File.Encrypt%2A> method requires exclusive access to the file being encrypted, and will fail if another process is using the file.  
+ 
+Both the <xref:System.IO.File.Encrypt%2A> method and the <xref:System.IO.File.Decrypt%2A> method use the cryptographic service provider (CSP) installed on the computer and the file encryption keys of the process calling the method.  
+ 
+This method is not available on all versions of Windows. For example, it is not available on Home editions.  
+ 
+The current file system must be formatted as NTFS.  
+ 
   
- The <xref:System.IO.File.Encrypt%2A> method requires exclusive access to the file being encrypted, and will fail if another process is using the file.  
-  
- Both the <xref:System.IO.File.Encrypt%2A> method and the <xref:System.IO.File.Decrypt%2A> method use the cryptographic service provider (CSP) installed on the computer and the file encryption keys of the process calling the method.  
-  
- This method is not available on all versions of Windows. For example, it is not available on Home editions.  
-  
- The current file system must be formatted as NTFS.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.IO.File.Encrypt%2A> method and the <xref:System.IO.File.Decrypt%2A> method to encrypt and then decrypt a file. The file must exist for the example to work.  
-  
- [!code-cpp[IO.File.Encrypt-Decrypt#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.Encrypt-Decrypt/cpp/sample.cpp#1)]
- [!code-csharp[IO.File.Encrypt-Decrypt#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.Encrypt-Decrypt/CS/sample.cs#1)]
- [!code-vb[IO.File.Encrypt-Decrypt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.Encrypt-Decrypt/VB/sample.vb#1)]  
-  
+The following code example uses the <xref:System.IO.File.Encrypt%2A> method and the <xref:System.IO.File.Decrypt%2A> method to encrypt and then decrypt a file. The file must exist for the example to work.  
+ 
+[!code-cpp[IO.File.Encrypt-Decrypt#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.Encrypt-Decrypt/cpp/sample.cpp#1)]
+[!code-csharp[IO.File.Encrypt-Decrypt#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.Encrypt-Decrypt/CS/sample.cs#1)]
+[!code-vb[IO.File.Encrypt-Decrypt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.Encrypt-Decrypt/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="path" /> parameter is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
@@ -1180,28 +1180,28 @@
           <see langword="true" /> if the caller has the required permissions and <paramref name="path" /> contains the name of an existing file; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="path" /> is <see langword="null" />, an invalid path, or a zero-length string. If the caller does not have sufficient permissions to read the specified file, no exception is thrown and the method returns <see langword="false" /> regardless of the existence of <paramref name="path" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.File.Exists%2A> method should not be used for path validation, this method merely checks if the file specified in `path` exists. Passing an invalid path to <xref:System.IO.File.Exists%2A> returns `false`. To check whether the path contains any invalid characters, you can call the <xref:System.IO.Path.GetInvalidPathChars%2A> method to retrieve the characters that are invalid for the file system. You can also create a regular expression to test the whether the path is valid for your environment. For examples of acceptable paths, see <xref:System.IO.File>.  
+The <xref:System.IO.File.Exists%2A> method should not be used for path validation, this method merely checks if the file specified in `path` exists. Passing an invalid path to <xref:System.IO.File.Exists%2A> returns `false`. To check whether the path contains any invalid characters, you can call the <xref:System.IO.Path.GetInvalidPathChars%2A> method to retrieve the characters that are invalid for the file system. You can also create a regular expression to test the whether the path is valid for your environment. For examples of acceptable paths, see <xref:System.IO.File>.  
+ 
+To check if a directory exists, see <xref:System.IO.Directory.Exists%2A?displayProperty=fullName>.  
+ 
+Be aware that another process can potentially do something with the file in between the time you call the <xref:System.IO.File.Exists%2A> method and perform another operation on the file, such as <xref:System.IO.File.Delete%2A>.  
+ 
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+If `path` describes a directory, this method returns `false`. Trailing spaces are removed from the `path` parameter before determining if the file exists.  
+ 
+The <xref:System.IO.File.Exists%2A> method returns `false` if any error occurs while trying to determine if the specified file exists. This can occur in situations that raise exceptions such as passing a file name with invalid characters or too many characters, a failing or missing disk, or if the caller does not have permission to read the file.  
+ 
   
- To check if a directory exists, see <xref:System.IO.Directory.Exists%2A?displayProperty=fullName>.  
-  
- Be aware that another process can potentially do something with the file in between the time you call the <xref:System.IO.File.Exists%2A> method and perform another operation on the file, such as <xref:System.IO.File.Delete%2A>.  
-  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- If `path` describes a directory, this method returns `false`. Trailing spaces are removed from the `path` parameter before determining if the file exists.  
-  
- The <xref:System.IO.File.Exists%2A> method returns `false` if any error occurs while trying to determine if the specified file exists. This can occur in situations that raise exceptions such as passing a file name with invalid characters or too many characters, a failing or missing disk, or if the caller does not have permission to read the file.  
-  
-   
-  
+ 
 ## Examples  
- The following example determines if a file exists.  
-  
- [!code-csharp[File Exists#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Exists/CS/program.cs#1)]
- [!code-vb[File Exists#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Exists/VB/program.vb#1)]  
-  
+The following example determines if a file exists.  
+ 
+[!code-csharp[File Exists#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Exists/CS/program.cs#1)]
+[!code-vb[File Exists#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Exists/VB/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
@@ -1229,23 +1229,23 @@
         <returns>A <see cref="T:System.Security.AccessControl.FileSecurity" /> object that encapsulates the access control rules for the file described by the <paramref name="path" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IO.File.GetAccessControl%2A> method to retrieve the access control list (ACL) entries for a file.  
+Use the <xref:System.IO.File.GetAccessControl%2A> method to retrieve the access control list (ACL) entries for a file.  
+ 
+An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
+ 
+In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
+ 
   
- An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
-  
- In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.IO.File.GetAccessControl%2A> and the <xref:System.IO.File.SetAccessControl%2A> methods to add and then remove an access control list (ACL) entry from a file.  You must supply a valid user or group account to run this example.  
-  
- [!code-cpp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/cpp/sample.cpp#1)]
- [!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]
- [!code-vb[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/VB/sample.vb#1)]  
-  
+The following code example uses the <xref:System.IO.File.GetAccessControl%2A> and the <xref:System.IO.File.SetAccessControl%2A> methods to add and then remove an access control list (ACL) entry from a file.  You must supply a valid user or group account to run this example.  
+ 
+[!code-cpp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/cpp/sample.cpp#1)]
+[!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]
+[!code-vb[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
@@ -1291,14 +1291,14 @@
         <returns>A <see cref="T:System.Security.AccessControl.FileSecurity" /> object that encapsulates the access control rules for the file described by the <paramref name="path" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IO.File.GetAccessControl%2A> method to retrieve the access control list (ACL) entries for a file.  
-  
- An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
-  
- In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
-  
+Use the <xref:System.IO.File.GetAccessControl%2A> method to retrieve the access control list (ACL) entries for a file.  
+ 
+An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
+ 
+In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
@@ -1350,21 +1350,21 @@
         <returns>The <see cref="T:System.IO.FileAttributes" /> of the file on the path.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the `GetAttributes` and `SetAttributes` methods by applying the `Archive` and `Hidden` attributes to a file.  
-  
- [!code-cpp[File GetAttributes#1](~/samples/snippets/cpp/VS_Snippets_CLR/File GetAttributes/CPP/file getattributes.cpp#1)]
- [!code-csharp[File GetAttributes#1](~/samples/snippets/csharp/VS_Snippets_CLR/File GetAttributes/CS/file getattributes.cs#1)]
- [!code-vb[File GetAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File GetAttributes/VB/file getattributes.vb#1)]  
-  
+The following example demonstrates the `GetAttributes` and `SetAttributes` methods by applying the `Archive` and `Hidden` attributes to a file.  
+ 
+[!code-cpp[File GetAttributes#1](~/samples/snippets/cpp/VS_Snippets_CLR/File GetAttributes/CPP/file getattributes.cpp#1)]
+[!code-csharp[File GetAttributes#1](~/samples/snippets/csharp/VS_Snippets_CLR/File GetAttributes/CS/file getattributes.cs#1)]
+[!code-vb[File GetAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File GetAttributes/VB/file getattributes.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1411,27 +1411,27 @@
         <returns>A <see cref="T:System.DateTime" /> structure set to the creation date and time for the specified file or directory. This value is expressed in local time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
+ 
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+If the file described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
+ 
+NTFS-formatted drives may cache information about a file, such as file creation time, for a short period of time. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- If the file described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
-  
- NTFS-formatted drives may cache information about a file, such as file creation time, for a short period of time. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates `GetCreationTime`.  
-  
- [!code-vb[System.IO.File.GetCreationTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.file.getcreationtime/vb/module1.vb#1)]  
-  
+The following example demonstrates `GetCreationTime`.  
+ 
+[!code-vb[System.IO.File.GetCreationTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.file.getcreationtime/vb/module1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
@@ -1475,25 +1475,25 @@
         <returns>A <see cref="T:System.DateTime" /> structure set to the creation date and time for the specified file or directory. This value is expressed in UTC time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
+ 
+If the file described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
+ 
+NTFS-formatted drives may cache information about a file, such as file creation time, for a short period of time. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- If the file described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
-  
- NTFS-formatted drives may cache information about a file, such as file creation time, for a short period of time. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.IO.File.GetCreationTimeUtc%2A> method.  
-  
- [!code-vb[System.IO.File.GetCreationTime#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.file.getcreationtime/vb/module2.vb#2)]  
-  
+The following example demonstrates the <xref:System.IO.File.GetCreationTimeUtc%2A> method.  
+ 
+[!code-vb[System.IO.File.GetCreationTime#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.file.getcreationtime/vb/module2.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
@@ -1537,27 +1537,27 @@
         <returns>A <see cref="T:System.DateTime" /> structure set to the date and time that the specified file or directory was last accessed. This value is expressed in local time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
+ 
+If the file described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
+ 
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- If the file described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
-  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates `GetLastAccessTime`.  
-  
- [!code-cpp[File GetLastAccess#1](~/samples/snippets/cpp/VS_Snippets_CLR/File GetLastAccess/CPP/file getlastaccess.cpp#1)]
- [!code-csharp[File GetLastAccess#1](~/samples/snippets/csharp/VS_Snippets_CLR/File GetLastAccess/CS/file getlastaccess.cs#1)]
- [!code-vb[File GetLastAccess#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File GetLastAccess/VB/file getlastaccess.vb#1)]  
-  
+The following example demonstrates `GetLastAccessTime`.  
+ 
+[!code-cpp[File GetLastAccess#1](~/samples/snippets/cpp/VS_Snippets_CLR/File GetLastAccess/CPP/file getlastaccess.cpp#1)]
+[!code-csharp[File GetLastAccess#1](~/samples/snippets/csharp/VS_Snippets_CLR/File GetLastAccess/CS/file getlastaccess.cs#1)]
+[!code-vb[File GetLastAccess#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File GetLastAccess/VB/file getlastaccess.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
@@ -1601,18 +1601,18 @@
         <returns>A <see cref="T:System.DateTime" /> structure set to the date and time that the specified file or directory was last accessed. This value is expressed in UTC time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system.  
-  
- If the file described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
-  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+ 
+If the file described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
+ 
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
@@ -1656,27 +1656,27 @@
         <returns>A <see cref="T:System.DateTime" /> structure set to the date and time that the specified file or directory was last written to. This value is expressed in local time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system. Each operating system manages the last write time according to its own rules. To improve performance, an operating system might not set the last write time value to the exact time of the last write operation, but might set it to a close approximation instead.  
+ 
+If the file described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
+ 
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- If the file described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC), adjusted to local time.  
-  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates `GetLastWriteTime`.  
-  
- [!code-cpp[File GetLastWrite#1](~/samples/snippets/cpp/VS_Snippets_CLR/File GetLastWrite/CPP/file getlastwrite.cpp#1)]
- [!code-csharp[File GetLastWrite#1](~/samples/snippets/csharp/VS_Snippets_CLR/File GetLastWrite/CS/file getlastwrite.cs#1)]
- [!code-vb[File GetLastWrite#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File GetLastWrite/VB/file getlastwrite.vb#1)]  
-  
+The following example demonstrates `GetLastWriteTime`.  
+ 
+[!code-cpp[File GetLastWrite#1](~/samples/snippets/cpp/VS_Snippets_CLR/File GetLastWrite/CPP/file getlastwrite.cpp#1)]
+[!code-csharp[File GetLastWrite#1](~/samples/snippets/csharp/VS_Snippets_CLR/File GetLastWrite/CS/file getlastwrite.cs#1)]
+[!code-vb[File GetLastWrite#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File GetLastWrite/VB/file getlastwrite.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
@@ -1720,18 +1720,18 @@
         <returns>A <see cref="T:System.DateTime" /> structure set to the date and time that the specified file or directory was last written to. This value is expressed in UTC time.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  This method may return an inaccurate value, because it uses native functions whose values may not be continuously updated by the operating system. Each operating system manages the last write time according to its own rules. To improve performance, an operating system might not set the last write time value to the exact time of the last write operation, but might set it to a close approximation instead.  
-  
- If the file described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
-  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+ 
+If the file described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
+ 
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
@@ -1776,25 +1776,25 @@
         <summary>Moves a specified file to a new location, providing the option to specify a new file name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method works across disk volumes, and it does not throw an exception if the source and destination are the same. Note that if you attempt to replace a file by moving a file of the same name into that directory, you get an <xref:System.IO.IOException>. You cannot use the Move method to overwrite an existing file.  
+This method works across disk volumes, and it does not throw an exception if the source and destination are the same. Note that if you attempt to replace a file by moving a file of the same name into that directory, you get an <xref:System.IO.IOException>. You cannot use the Move method to overwrite an existing file.  
+ 
+The `sourceFileName` and `destFileName` arguments can include relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+If you try to move a file across disk volumes and that file is in use, the file is copied to the destination, but it is not deleted from the source.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- The `sourceFileName` and `destFileName` arguments can include relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- If you try to move a file across disk volumes and that file is in use, the file is copied to the destination, but it is not deleted from the source.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example moves a file.  
-  
- [!code-cpp[File Move#1](~/samples/snippets/cpp/VS_Snippets_CLR/File Move/CPP/file move.cpp#1)]
- [!code-csharp[File Move#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Move/CS/file move.cs#1)]
- [!code-vb[File Move#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Move/VB/file move.vb#1)]  
-  
+The following example moves a file.  
+ 
+[!code-cpp[File Move#1](~/samples/snippets/cpp/VS_Snippets_CLR/File Move/CPP/file move.cpp#1)]
+[!code-csharp[File Move#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Move/CS/file move.cs#1)]
+[!code-vb[File Move#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Move/VB/file move.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">The destination file already exists.  
@@ -1846,21 +1846,21 @@
         <returns>A <see cref="T:System.IO.FileStream" /> opened in the specified mode and path, with read/write access and not shared.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example creates a temporary file and writes some text to it. The example then opens the file, using T:System.IO.FileMode.Open; that is, if the file did not already exist, it would not be created.  
-  
- [!code-cpp[File Open1#1](~/samples/snippets/cpp/VS_Snippets_CLR/File Open1/CPP/file open1.cpp#1)]
- [!code-csharp[File Open1#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Open1/CS/file open1.cs#1)]
- [!code-vb[File Open1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Open1/VB/file open1.vb#1)]  
-  
+The following code example creates a temporary file and writes some text to it. The example then opens the file, using T:System.IO.FileMode.Open; that is, if the file did not already exist, it would not be created.  
+ 
+[!code-cpp[File Open1#1](~/samples/snippets/cpp/VS_Snippets_CLR/File Open1/CPP/file open1.cpp#1)]
+[!code-csharp[File Open1#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Open1/CS/file open1.cs#1)]
+[!code-vb[File Open1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Open1/VB/file open1.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -1930,19 +1930,19 @@
         <returns>An unshared <see cref="T:System.IO.FileStream" /> that provides access to the specified file, with the specified mode and access.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example opens a file with read-only access.  
-  
- [!code-cpp[file open2#1](~/samples/snippets/cpp/VS_Snippets_CLR/File Open2/CPP/file open2.cpp#1)]
- [!code-csharp[file open2#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Open2/CS/file open2.cs#1)]
- [!code-vb[file open2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Open2/VB/file open2.vb#1)]  
-  
+The following example opens a file with read-only access.  
+ 
+[!code-cpp[file open2#1](~/samples/snippets/cpp/VS_Snippets_CLR/File Open2/CPP/file open2.cpp#1)]
+[!code-csharp[file open2#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Open2/CS/file open2.cs#1)]
+[!code-vb[file open2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Open2/VB/file open2.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2014,21 +2014,21 @@
         <returns>A <see cref="T:System.IO.FileStream" /> on the specified path, having the specified mode with read, write, or read/write access and the specified sharing option.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example opens a file with read-only access and with file sharing disallowed.  
-  
- [!code-cpp[file open3#1](~/samples/snippets/cpp/VS_Snippets_CLR/File Open3/CPP/file open3.cpp#1)]
- [!code-csharp[file open3#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Open3/CS/file open3.cs#1)]
- [!code-vb[file open3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Open3/VB/file open3.vb#1)]  
-  
+The following example opens a file with read-only access and with file sharing disallowed.  
+ 
+[!code-cpp[file open3#1](~/samples/snippets/cpp/VS_Snippets_CLR/File Open3/CPP/file open3.cpp#1)]
+[!code-csharp[file open3#1](~/samples/snippets/csharp/VS_Snippets_CLR/File Open3/CS/file open3.cs#1)]
+[!code-vb[file open3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File Open3/VB/file open3.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2094,23 +2094,23 @@
         <returns>A read-only <see cref="T:System.IO.FileStream" /> on the specified path.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%29> constructor overload with a <xref:System.IO.FileMode> value of <xref:System.IO.FileMode>, a <xref:System.IO.FileAccess> value of <xref:System.IO.FileAccess> and a <xref:System.IO.FileShare> value of <xref:System.IO.FileShare>.  
+This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%29> constructor overload with a <xref:System.IO.FileMode> value of <xref:System.IO.FileMode>, a <xref:System.IO.FileAccess> value of <xref:System.IO.FileAccess> and a <xref:System.IO.FileShare> value of <xref:System.IO.FileShare>.  
+ 
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example opens a file for reading.  
-  
- [!code-cpp[file openread#1](~/samples/snippets/cpp/VS_Snippets_CLR/File OpenRead/CPP/file openread.cpp#1)]
- [!code-csharp[file openread#1](~/samples/snippets/csharp/VS_Snippets_CLR/File OpenRead/CS/file openread.cs#1)]
- [!code-vb[file openread#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File OpenRead/VB/file openread.vb#1)]  
-  
+The following example opens a file for reading.  
+ 
+[!code-cpp[file openread#1](~/samples/snippets/cpp/VS_Snippets_CLR/File OpenRead/CPP/file openread.cpp#1)]
+[!code-csharp[file openread#1](~/samples/snippets/csharp/VS_Snippets_CLR/File OpenRead/CS/file openread.cs#1)]
+[!code-vb[file openread#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File OpenRead/VB/file openread.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2162,23 +2162,23 @@
         <returns>A <see cref="T:System.IO.StreamReader" /> on the specified path.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to the <xref:System.IO.StreamReader.%23ctor%28System.String%29> constructor overload.  
+This method is equivalent to the <xref:System.IO.StreamReader.%23ctor%28System.String%29> constructor overload.  
+ 
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example opens a text file for reading.  
-  
- [!code-cpp[file opentext#1](~/samples/snippets/cpp/VS_Snippets_CLR/File OpenText/CPP/file opentext.cpp#1)]
- [!code-csharp[file opentext#1](~/samples/snippets/csharp/VS_Snippets_CLR/File OpenText/CS/file opentext.cs#1)]
- [!code-vb[file opentext#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File OpenText/VB/file opentext.vb#1)]  
-  
+The following example opens a text file for reading.  
+ 
+[!code-cpp[file opentext#1](~/samples/snippets/cpp/VS_Snippets_CLR/File OpenText/CPP/file opentext.cpp#1)]
+[!code-csharp[file opentext#1](~/samples/snippets/csharp/VS_Snippets_CLR/File OpenText/CS/file opentext.cs#1)]
+[!code-vb[file opentext#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File OpenText/VB/file opentext.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
@@ -2224,25 +2224,25 @@
         <returns>An unshared <see cref="T:System.IO.FileStream" /> object on the specified path with <see cref="F:System.IO.FileAccess.Write" /> access.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%29> constructor overload with file mode set to <xref:System.IO.FileMode>, the access set to <xref:System.IO.FileAccess>, and the share mode set to <xref:System.IO.FileShare>.  
+This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%29> constructor overload with file mode set to <xref:System.IO.FileMode>, the access set to <xref:System.IO.FileAccess>, and the share mode set to <xref:System.IO.FileShare>.  
+ 
+The <xref:System.IO.File.OpenWrite%2A> method opens a file if one already exists for the file path, or creates a new file if one does not exist. For an existing file, it does not append the new text to the existing text. Instead, it overwrites the existing characters with the new characters. If you overwrite a longer string (such as “This is a test of the OpenWrite method”) with a shorter string (such as “Second run”), the file will contain a mix of the strings (“Second runtest of the OpenWrite method”).  
+ 
+The `path` parameter may specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, use the <xref:System.IO.Directory.GetCurrentDirectory%2A> method.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- The <xref:System.IO.File.OpenWrite%2A> method opens a file if one already exists for the file path, or creates a new file if one does not exist. For an existing file, it does not append the new text to the existing text. Instead, it overwrites the existing characters with the new characters. If you overwrite a longer string (such as “This is a test of the OpenWrite method”) with a shorter string (such as “Second run”), the file will contain a mix of the strings (“Second runtest of the OpenWrite method”).  
-  
- The `path` parameter may specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, use the <xref:System.IO.Directory.GetCurrentDirectory%2A> method.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example opens a file for reading and writing.  
-  
- [!code-cpp[file openwrite#1](~/samples/snippets/cpp/VS_Snippets_CLR/File OpenWrite/CPP/file openwrite.cpp#1)]
- [!code-csharp[file openwrite#1](~/samples/snippets/csharp/VS_Snippets_CLR/File OpenWrite/CS/file openwrite.cs#1)]
- [!code-vb[file openwrite#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File OpenWrite/VB/file openwrite.vb#1)]  
-  
+The following example opens a file for reading and writing.  
+ 
+[!code-cpp[file openwrite#1](~/samples/snippets/cpp/VS_Snippets_CLR/File OpenWrite/CPP/file openwrite.cpp#1)]
+[!code-csharp[file openwrite#1](~/samples/snippets/csharp/VS_Snippets_CLR/File OpenWrite/CS/file openwrite.cs#1)]
+[!code-vb[file openwrite#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File OpenWrite/VB/file openwrite.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.  
@@ -2291,10 +2291,10 @@
         <returns>A byte array containing the contents of the file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Given a file path, this method opens the file, reads the contents of the file into a byte array, and then closes the file.  
-  
+Given a file path, this method opens the file, reads the contents of the file into a byte array, and then closes the file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2350,20 +2350,20 @@
         <returns>A string array containing all lines of the file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method opens a file, reads each line of the file, then adds each line as an element of a string array. It then closes the file. A line is defined as a sequence of characters followed by a carriage return ('\r'), a line feed ('\n'), or a carriage return immediately followed by a line feed. The resulting string does not contain the terminating carriage return and/or line feed.  
+This method opens a file, reads each line of the file, then adds each line as an element of a string array. It then closes the file. A line is defined as a sequence of characters followed by a carriage return ('\r'), a line feed ('\n'), or a carriage return immediately followed by a line feed. The resulting string does not contain the terminating carriage return and/or line feed.  
+ 
+This method attempts to automatically detect the encoding of a file based on the presence of byte order marks. Encoding formats UTF-8 and UTF-32 (both big-endian and little-endian) can be detected.  
+ 
   
- This method attempts to automatically detect the encoding of a file based on the presence of byte order marks. Encoding formats UTF-8 and UTF-32 (both big-endian and little-endian) can be detected.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.IO.File.ReadAllLines%2A> method to display the contents of a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
-  
- [!code-csharp[System.IO.File.AllLines#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllLines/cs/AllText.cs#00)]
- [!code-vb[System.IO.File.AllLines#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllLines/vb/AllText.vb#00)]  
-  
+The following code example demonstrates the use of the <xref:System.IO.File.ReadAllLines%2A> method to display the contents of a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
+ 
+[!code-csharp[System.IO.File.AllLines#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllLines/cs/AllText.cs#00)]
+[!code-vb[System.IO.File.AllLines#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllLines/vb/AllText.vb#00)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2426,20 +2426,20 @@
         <returns>A string array containing all lines of the file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method opens a file, reads each line of the file, and then adds each line as an element of a string array. It then closes the file. A line is defined as a sequence of characters followed by a carriage return ('\r'), a line feed ('\n'), or a carriage return immediately followed by a line feed. The resulting string does not contain the terminating carriage return and/or line feed.  
+This method opens a file, reads each line of the file, and then adds each line as an element of a string array. It then closes the file. A line is defined as a sequence of characters followed by a carriage return ('\r'), a line feed ('\n'), or a carriage return immediately followed by a line feed. The resulting string does not contain the terminating carriage return and/or line feed.  
+ 
+This method attempts to automatically detect the encoding of a file based on the presence of byte order marks. Encoding formats UTF-8 and UTF-32 (both big-endian and little-endian) can be detected.  
+ 
   
- This method attempts to automatically detect the encoding of a file based on the presence of byte order marks. Encoding formats UTF-8 and UTF-32 (both big-endian and little-endian) can be detected.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.IO.File.ReadAllLines%2A> method to display the contents of a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
-  
- [!code-csharp[System.IO.File.AllLines_Encoding#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllLines_Encoding/cs/AllText_Encoding.cs#00)]
- [!code-vb[System.IO.File.AllLines_Encoding#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllLines_Encoding/vb/AllText_Encoding.vb#00)]  
-  
+The following code example demonstrates the use of the <xref:System.IO.File.ReadAllLines%2A> method to display the contents of a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
+ 
+[!code-csharp[System.IO.File.AllLines_Encoding#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllLines_Encoding/cs/AllText_Encoding.cs#00)]
+[!code-vb[System.IO.File.AllLines_Encoding#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllLines_Encoding/vb/AllText_Encoding.vb#00)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2500,24 +2500,24 @@
         <returns>A string containing all lines of the file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method opens a file, reads each line of the file, and then adds each line as an element of a string. It then closes the file. A line is defined as a sequence of characters followed by a carriage return ('\r'), a line feed ('\n'), or a carriage return immediately followed by a line feed. The resulting string does not contain the terminating carriage return and/or line feed.  
+This method opens a file, reads each line of the file, and then adds each line as an element of a string. It then closes the file. A line is defined as a sequence of characters followed by a carriage return ('\r'), a line feed ('\n'), or a carriage return immediately followed by a line feed. The resulting string does not contain the terminating carriage return and/or line feed.  
+ 
+This method attempts to automatically detect the encoding of a file based on the presence of byte order marks. Encoding formats UTF-8 and UTF-32 (both big-endian and little-endian) can be detected.  
+ 
+Use the <xref:System.IO.File.ReadAllText%28System.String%2CSystem.Text.Encoding%29> method overload when reading files that might contain imported text, because unrecognized characters may not be read correctly.  
+ 
+The file handle is guaranteed to be closed by this method, even if exceptions are raised.  
+ 
   
- This method attempts to automatically detect the encoding of a file based on the presence of byte order marks. Encoding formats UTF-8 and UTF-32 (both big-endian and little-endian) can be detected.  
-  
- Use the <xref:System.IO.File.ReadAllText%28System.String%2CSystem.Text.Encoding%29> method overload when reading files that might contain imported text, because unrecognized characters may not be read correctly.  
-  
- The file handle is guaranteed to be closed by this method, even if exceptions are raised.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.IO.File.ReadAllText%2A> method to display the contents of a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
-  
- [!code-csharp[System.IO.File.AllText#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllText/cs/AllText.cs#00)]
- [!code-vb[System.IO.File.AllText#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllText/vb/AllText.vb#00)]  
-  
+The following code example demonstrates the use of the <xref:System.IO.File.ReadAllText%2A> method to display the contents of a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
+ 
+[!code-csharp[System.IO.File.AllText#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllText/cs/AllText.cs#00)]
+[!code-vb[System.IO.File.AllText#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllText/vb/AllText.vb#00)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2580,24 +2580,24 @@
         <returns>A string containing all lines of the file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method opens a file, reads each line of the file, and then adds each line as an element of a string. It then closes the file. A line is defined as a sequence of characters followed by a carriage return ('\r'), a line feed ('\n'), or a carriage return immediately followed by a line feed. The resulting string does not contain the terminating carriage return and/or line feed.  
+This method opens a file, reads each line of the file, and then adds each line as an element of a string. It then closes the file. A line is defined as a sequence of characters followed by a carriage return ('\r'), a line feed ('\n'), or a carriage return immediately followed by a line feed. The resulting string does not contain the terminating carriage return and/or line feed.  
+ 
+This method attempts to automatically detect the encoding of a file based on the presence of byte order marks. Encoding formats UTF-8 and UTF-32 (both big-endian and little-endian) can be detected.  
+ 
+The file handle is guaranteed to be closed by this method, even if exceptions are raised.  
+ 
+To use the encoding settings as configured for your operating system, specify the <xref:System.Text.Encoding.Default%2A?displayProperty=fullName> property for the `encoding` parameter.  
+ 
   
- This method attempts to automatically detect the encoding of a file based on the presence of byte order marks. Encoding formats UTF-8 and UTF-32 (both big-endian and little-endian) can be detected.  
-  
- The file handle is guaranteed to be closed by this method, even if exceptions are raised.  
-  
- To use the encoding settings as configured for your operating system, specify the <xref:System.Text.Encoding.Default%2A?displayProperty=fullName> property for the `encoding` parameter.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.IO.File.ReadAllText%2A> method to display the contents of a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
-  
- [!code-csharp[System.IO.File.AllText_Encoding#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllText_Encoding/cs/AllText.cs#00)]
- [!code-vb[System.IO.File.AllText_Encoding#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllText_Encoding/vb/AllText.vb#00)]  
-  
+The following code example demonstrates the use of the <xref:System.IO.File.ReadAllText%2A> method to display the contents of a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
+ 
+[!code-csharp[System.IO.File.AllText_Encoding#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllText_Encoding/cs/AllText.cs#00)]
+[!code-vb[System.IO.File.AllText_Encoding#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllText_Encoding/vb/AllText.vb#00)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2658,33 +2658,33 @@
         <returns>All the lines of the file, or the lines that are the result of a query.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.File.ReadLines%2A> and <xref:System.IO.File.ReadAllLines%2A> methods differ as follows: When you use <xref:System.IO.File.ReadLines%2A>, you can start enumerating the collection of strings before the whole collection is returned; when you use <xref:System.IO.File.ReadAllLines%2A>, you must wait for the whole array of strings be returned before you can access the array. Therefore, when you are working with very large files, <xref:System.IO.File.ReadLines%2A> can be more efficient.  
-  
- You can use the <xref:System.IO.File.ReadLines%2A> method to do the following:  
-  
+The <xref:System.IO.File.ReadLines%2A> and <xref:System.IO.File.ReadAllLines%2A> methods differ as follows: When you use <xref:System.IO.File.ReadLines%2A>, you can start enumerating the collection of strings before the whole collection is returned; when you use <xref:System.IO.File.ReadAllLines%2A>, you must wait for the whole array of strings be returned before you can access the array. Therefore, when you are working with very large files, <xref:System.IO.File.ReadLines%2A> can be more efficient.  
+ 
+You can use the <xref:System.IO.File.ReadLines%2A> method to do the following:  
+ 
 -   Perform [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) queries on a file to obtain a filtered set of its lines.  
-  
+ 
 -   Write the returned collection of lines to a file with the <xref:System.IO.File.WriteAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%29?displayProperty=fullName> method, or append them to an existing file with the <xref:System.IO.File.AppendAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%29?displayProperty=fullName> method.  
-  
+ 
 -   Create an immediately populated instance of a collection that takes an <xref:System.Collections.Generic.IEnumerable%601> collection of strings for its constructor, such as a <xref:System.Collections.Generic.IList%601> or a <xref:System.Collections.Generic.Queue%601>.  
+ 
+This method uses <xref:System.Text.Encoding.UTF8%2A> for the encoding value.  
+ 
   
- This method uses <xref:System.Text.Encoding.UTF8%2A> for the encoding value.  
-  
-   
-  
+ 
 ## Examples  
- The following example reads the lines of a file to find lines that contain specified strings.  
-  
- [!code-csharp[System.IO.File.ReadLines#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.file.readlines/cs/program.cs#1)]
- [!code-vb[System.IO.File.ReadLines#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.file.readlines/vb/program.vb#1)]  
-  
- The following example uses the <xref:System.IO.File.ReadLines%2A> method in a LINQ query that enumerates all directories for files that have a .txt extension, reads each line of the file, and displays the line if it contains the string "Microsoft".  
-  
- [!code-csharp[System.IO.Directory.EnumerateFiles#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.directory.enumeratefiles/cs/program.cs#1)]
- [!code-vb[System.IO.Directory.EnumerateFiles#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.directory.enumeratefiles/vb/program.vb#1)]  
-  
+The following example reads the lines of a file to find lines that contain specified strings.  
+ 
+[!code-csharp[System.IO.File.ReadLines#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.file.readlines/cs/program.cs#1)]
+[!code-vb[System.IO.File.ReadLines#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.file.readlines/vb/program.vb#1)]  
+ 
+The following example uses the <xref:System.IO.File.ReadLines%2A> method in a LINQ query that enumerates all directories for files that have a .txt extension, reads each line of the file, and displays the line if it contains the string "Microsoft".  
+ 
+[!code-csharp[System.IO.Directory.EnumerateFiles#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.directory.enumeratefiles/cs/program.cs#1)]
+[!code-vb[System.IO.Directory.EnumerateFiles#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.directory.enumeratefiles/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2746,20 +2746,20 @@
         <returns>All the lines of the file, or the lines that are the result of a query.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to specify an encoding to use read the file.  
-  
- The <xref:System.IO.File.ReadLines%2A> and <xref:System.IO.File.ReadAllLines%2A> methods differ as follows: When you use <xref:System.IO.File.ReadLines%2A>, you can start enumerating the collection of strings before the whole collection is returned. When you use <xref:System.IO.File.ReadAllLines%2A>, you must wait for the whole array of strings be returned before you can access the array. Therefore, when you are working with very large files, <xref:System.IO.File.ReadLines%2A> can be more efficient.  
-  
- You can use the <xref:System.IO.File.ReadLines%2A> method to do the following:  
-  
+Use this method to specify an encoding to use read the file.  
+ 
+The <xref:System.IO.File.ReadLines%2A> and <xref:System.IO.File.ReadAllLines%2A> methods differ as follows: When you use <xref:System.IO.File.ReadLines%2A>, you can start enumerating the collection of strings before the whole collection is returned. When you use <xref:System.IO.File.ReadAllLines%2A>, you must wait for the whole array of strings be returned before you can access the array. Therefore, when you are working with very large files, <xref:System.IO.File.ReadLines%2A> can be more efficient.  
+ 
+You can use the <xref:System.IO.File.ReadLines%2A> method to do the following:  
+ 
 -   Perform [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) queries on a file to obtain a filtered set of its lines.  
-  
+ 
 -   Write the returned collection of lines to a file with the <xref:System.IO.File.WriteAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Text.Encoding%29?displayProperty=fullName> method, or append them to an existing file with the <xref:System.IO.File.AppendAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Text.Encoding%29?displayProperty=fullName> method.  
-  
+ 
 -   Create an immediately populated instance of a collection that takes an <xref:System.Collections.Generic.IEnumerable%601> collection of strings for its constructor, such as a <xref:System.Collections.Generic.IList%601> or a <xref:System.Collections.Generic.Queue%601>.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2818,23 +2818,23 @@
         <summary>Replaces the contents of a specified file with the contents of another file, deleting the original file, and creating a backup of the replaced file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.File.Replace%2A> method replaces the contents of a specified file with the contents of another file.  It also creates a backup of the file that was replaced.  
+The <xref:System.IO.File.Replace%2A> method replaces the contents of a specified file with the contents of another file.  It also creates a backup of the file that was replaced.  
+ 
+If the `sourceFileName` and `destinationFileName` are on different volumes, this method will raise an exception. If the `destinationBackupFileName` is on a different volume from the source file, the backup file will be deleted.  
+ 
+Pass `null` to the `destinationBackupFileName` parameter if you do not want to create a backup of the file being replaced.  
+ 
   
- If the `sourceFileName` and `destinationFileName` are on different volumes, this method will raise an exception. If the `destinationBackupFileName` is on a different volume from the source file, the backup file will be deleted.  
-  
- Pass `null` to the `destinationBackupFileName` parameter if you do not want to create a backup of the file being replaced.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.IO.File.Replace%2A> method to replace a file with another file and create a backup of the replaced file.  
-  
- [!code-cpp[IO.File.Replace#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.Replace/cpp/sample.cpp#1)]
- [!code-csharp[IO.File.Replace#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.Replace/CS/sample.cs#1)]
- [!code-vb[IO.File.Replace#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.Replace/VB/sample.vb#1)]  
-  
+The following code example uses the <xref:System.IO.File.Replace%2A> method to replace a file with another file and create a backup of the replaced file.  
+ 
+[!code-cpp[IO.File.Replace#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.Replace/cpp/sample.cpp#1)]
+[!code-csharp[IO.File.Replace#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.Replace/CS/sample.cs#1)]
+[!code-vb[IO.File.Replace#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.Replace/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The path described by the <paramref name="destinationFileName" /> parameter was not of a legal form.  
@@ -2904,23 +2904,23 @@
         <summary>Replaces the contents of a specified file with the contents of another file, deleting the original file, and creating a backup of the replaced file and optionally ignores merge errors.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.File.Replace%2A> method replaces the contents of a specified file with the contents of another file.  It also creates a backup of the file that was replaced.  
+The <xref:System.IO.File.Replace%2A> method replaces the contents of a specified file with the contents of another file.  It also creates a backup of the file that was replaced.  
+ 
+If the `sourceFileName` and `destinationFileName` are on different volumes, this method will raise an exception. If the `destinationBackupFileName` is on a different volume from the source file, the backup file will be deleted.  
+ 
+Pass `null` to the `destinationBackupFileName` parameter if you do not want to create a backup of the file being replaced.  
+ 
   
- If the `sourceFileName` and `destinationFileName` are on different volumes, this method will raise an exception. If the `destinationBackupFileName` is on a different volume from the source file, the backup file will be deleted.  
-  
- Pass `null` to the `destinationBackupFileName` parameter if you do not want to create a backup of the file being replaced.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.IO.File.Replace%2A> method to replace a file with another file and create a backup of the replaced file.  
-  
- [!code-cpp[IO.File.Replace#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.Replace/cpp/sample.cpp#1)]
- [!code-csharp[IO.File.Replace#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.Replace/CS/sample.cs#1)]
- [!code-vb[IO.File.Replace#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.Replace/VB/sample.vb#1)]  
-  
+The following code example uses the <xref:System.IO.File.Replace%2A> method to replace a file with another file and create a backup of the replaced file.  
+ 
+[!code-cpp[IO.File.Replace#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.Replace/cpp/sample.cpp#1)]
+[!code-csharp[IO.File.Replace#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.Replace/CS/sample.cs#1)]
+[!code-vb[IO.File.Replace#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.Replace/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The path described by the <paramref name="destinationFileName" /> parameter was not of a legal form.  
@@ -2981,40 +2981,40 @@
         <summary>Applies access control list (ACL) entries described by a <see cref="T:System.Security.AccessControl.FileSecurity" /> object to the specified file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.File.SetAccessControl%2A> method applies access control list (ACL) entries to a file that represents the noninherited ACL list.  
-  
+The <xref:System.IO.File.SetAccessControl%2A> method applies access control list (ACL) entries to a file that represents the noninherited ACL list.  
+ 
 > [!CAUTION]
 >  The ACL specified for the `fileSecurity` parameter replaces the existing ACL for the file. To add permissions for a new user, use the <xref:System.IO.File.GetAccessControl%2A> method to obtain the existing ACL, modify it, and then use <xref:System.IO.File.SetAccessControl%2A> to apply it back to the file.  
-  
- An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
-  
- The <xref:System.IO.File.SetAccessControl%2A> method persists only <xref:System.Security.AccessControl.FileSecurity> objects that have been modified after object creation.  If a <xref:System.Security.AccessControl.FileSecurity> object has not been modified, it will not be persisted to a file.  Therefore, it is not possible to retrieve a <xref:System.Security.AccessControl.FileSecurity> object from one file and reapply the same object to another file.  
-  
- To copy ACL information from one file to another:  
-  
+ 
+An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
+ 
+The <xref:System.IO.File.SetAccessControl%2A> method persists only <xref:System.Security.AccessControl.FileSecurity> objects that have been modified after object creation.  If a <xref:System.Security.AccessControl.FileSecurity> object has not been modified, it will not be persisted to a file.  Therefore, it is not possible to retrieve a <xref:System.Security.AccessControl.FileSecurity> object from one file and reapply the same object to another file.  
+ 
+To copy ACL information from one file to another:  
+ 
 1.  Use the <xref:System.IO.File.GetAccessControl%2A> method to retrieve the <xref:System.Security.AccessControl.FileSecurity> object from the source file.  
-  
+ 
 2.  Create a new <xref:System.Security.AccessControl.FileSecurity> object for the destination file.  
-  
+ 
 3.  Use the <xref:System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorBinaryForm%2A> or <xref:System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm%2A> method of the source <xref:System.Security.AccessControl.FileSecurity> object to retrieve the ACL information.  
-  
+ 
 4.  Use the <xref:System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm%2A> or <xref:System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm%2A> method to copy the information retrieved in step 3 to the destination <xref:System.Security.AccessControl.FileSecurity> object.  
-  
+ 
 5.  Set the destination <xref:System.Security.AccessControl.FileSecurity> object to the destination file using the <xref:System.IO.File.SetAccessControl%2A> method.  
+ 
+In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
+ 
   
- In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.IO.File.GetAccessControl%2A> and <xref:System.IO.File.SetAccessControl%2A> methods to add and then remove an access control list (ACL) entry from a file.  You must supply a valid user or group account to run this example.  
-  
- [!code-cpp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/cpp/sample.cpp#1)]
- [!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]
- [!code-vb[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/VB/sample.vb#1)]  
-  
+The following code example uses the <xref:System.IO.File.GetAccessControl%2A> and <xref:System.IO.File.SetAccessControl%2A> methods to add and then remove an access control list (ACL) entry from a file.  You must supply a valid user or group account to run this example.  
+ 
+[!code-cpp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/cpp/sample.cpp#1)]
+[!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]
+[!code-vb[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/VB/sample.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
@@ -3068,25 +3068,25 @@
         <summary>Sets the specified <see cref="T:System.IO.FileAttributes" /> of the file on the specified path.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+Certain file attributes, such as <xref:System.IO.FileAttributes> and <xref:System.IO.FileAttributes>, can be combined. Other attributes, such as <xref:System.IO.FileAttributes>, must be used alone.  
+ 
+It is not possible to change the compression status of a <xref:System.IO.File> object using the <xref:System.IO.File.SetAttributes%2A> method.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- Certain file attributes, such as <xref:System.IO.FileAttributes> and <xref:System.IO.FileAttributes>, can be combined. Other attributes, such as <xref:System.IO.FileAttributes>, must be used alone.  
-  
- It is not possible to change the compression status of a <xref:System.IO.File> object using the <xref:System.IO.File.SetAttributes%2A> method.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example demonstrates the `GetAttributes` and `SetAttributes` methods by applying the `Archive` and `Hidden` attributes to a file.  
-  
- [!code-cpp[File GetAttributes#1](~/samples/snippets/cpp/VS_Snippets_CLR/File GetAttributes/CPP/file getattributes.cpp#1)]
- [!code-csharp[File GetAttributes#1](~/samples/snippets/csharp/VS_Snippets_CLR/File GetAttributes/CS/file getattributes.cs#1)]
- [!code-vb[File GetAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File GetAttributes/VB/file getattributes.vb#1)]  
-  
+The following example demonstrates the `GetAttributes` and `SetAttributes` methods by applying the `Archive` and `Hidden` attributes to a file.  
+ 
+[!code-cpp[File GetAttributes#1](~/samples/snippets/cpp/VS_Snippets_CLR/File GetAttributes/CPP/file getattributes.cpp#1)]
+[!code-csharp[File GetAttributes#1](~/samples/snippets/csharp/VS_Snippets_CLR/File GetAttributes/CS/file getattributes.cs#1)]
+[!code-vb[File GetAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File GetAttributes/VB/file getattributes.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -3144,14 +3144,14 @@
         <summary>Sets the date and time the file was created.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- NTFS-formatted drives may cache file meta-info, such as file creation time, for a short period of time. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+NTFS-formatted drives may cache file meta-info, such as file creation time, for a short period of time. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.FileNotFoundException">The specified path was not found.</exception>
@@ -3200,14 +3200,14 @@
         <summary>Sets the date and time, in coordinated universal time (UTC), that the file was created.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- NTFS-formatted drives may cache file meta-info, such as file creation time, for a short period of time. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+NTFS-formatted drives may cache file meta-info, such as file creation time, for a short period of time. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.FileNotFoundException">The specified path was not found.</exception>
@@ -3256,21 +3256,21 @@
         <summary>Sets the date and time the specified file was last accessed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example checks the file system for the specified file, creating it if necessary, and then sets and gets the last access time.  
-  
- [!code-cpp[file setlastaccess#1](~/samples/snippets/cpp/VS_Snippets_CLR/File SetLastAccess/CPP/file setlastaccess.cpp#1)]
- [!code-csharp[file setlastaccess#1](~/samples/snippets/csharp/VS_Snippets_CLR/File SetLastAccess/CS/file setlastaccess.cs#1)]
- [!code-vb[file setlastaccess#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File SetLastAccess/VB/file setlastaccess.vb#1)]  
-  
+The following example checks the file system for the specified file, creating it if necessary, and then sets and gets the last access time.  
+ 
+[!code-cpp[file setlastaccess#1](~/samples/snippets/cpp/VS_Snippets_CLR/File SetLastAccess/CPP/file setlastaccess.cpp#1)]
+[!code-csharp[file setlastaccess#1](~/samples/snippets/csharp/VS_Snippets_CLR/File SetLastAccess/CS/file setlastaccess.cs#1)]
+[!code-vb[file setlastaccess#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File SetLastAccess/VB/file setlastaccess.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -3318,12 +3318,12 @@
         <summary>Sets the date and time, in coordinated universal time (UTC), that the specified file was last accessed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -3371,21 +3371,21 @@
         <summary>Sets the date and time that the specified file was last written to.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
   
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
-   
-  
+ 
 ## Examples  
- The following example checks the file system for the specified file, creating the file if necessary, and then sets and gets the last write time of the file.  
-  
- [!code-cpp[file setlastwrite#1](~/samples/snippets/cpp/VS_Snippets_CLR/File SetLastWrite/CPP/file setlastwrite.cpp#1)]
- [!code-csharp[file setlastwrite#1](~/samples/snippets/csharp/VS_Snippets_CLR/File SetLastWrite/CS/file setlastwrite.cs#1)]
- [!code-vb[file setlastwrite#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File SetLastWrite/VB/file setlastwrite.vb#1)]  
-  
+The following example checks the file system for the specified file, creating the file if necessary, and then sets and gets the last write time of the file.  
+ 
+[!code-cpp[file setlastwrite#1](~/samples/snippets/cpp/VS_Snippets_CLR/File SetLastWrite/CPP/file setlastwrite.cpp#1)]
+[!code-csharp[file setlastwrite#1](~/samples/snippets/csharp/VS_Snippets_CLR/File SetLastWrite/CS/file setlastwrite.cs#1)]
+[!code-vb[file setlastwrite#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/File SetLastWrite/VB/file setlastwrite.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -3433,12 +3433,12 @@
         <summary>Sets the date and time, in coordinated universal time (UTC), that the specified file was last written to.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
-  
- For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
-  
+The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
+ 
+For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -3486,10 +3486,10 @@
         <summary>Creates a new file, writes the specified byte array to the file, and then closes the file. If the target file already exists, it is overwritten.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Given a byte array and a file path, this method opens the specified file, writes the contents of the byte array to the file, and then closes the file.  
-  
+Given a byte array and a file path, this method opens the specified file, writes the contents of the byte array to the file, and then closes the file.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -3550,22 +3550,22 @@
         <summary>Creates a new file, writes a collection of strings to the file, and then closes the file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default behavior of the <xref:System.IO.File.WriteAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%29> method is to write out data by using UTF-8 encoding without a byte order mark (BOM). If it is necessary to include a UTF-8 identifier, such as a byte order mark, at the beginning of a file, use the <xref:System.IO.File.WriteAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Text.Encoding%29> method overload with <xref:System.Text.Encoding.UTF8%2A> encoding.  
+The default behavior of the <xref:System.IO.File.WriteAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%29> method is to write out data by using UTF-8 encoding without a byte order mark (BOM). If it is necessary to include a UTF-8 identifier, such as a byte order mark, at the beginning of a file, use the <xref:System.IO.File.WriteAllLines%28System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.Text.Encoding%29> method overload with <xref:System.Text.Encoding.UTF8%2A> encoding.  
+ 
+If the target file already exists, it is overwritten.  
+ 
+You can use this method to create the contents for a collection class that takes an <xref:System.Collections.Generic.IEnumerable%601> in its constructor, such as a <xref:System.Collections.Generic.List%601.%23ctor%2A>, <xref:System.Collections.Generic.HashSet%601.%23ctor%2A>, or a <xref:System.Collections.Generic.SortedSet%601.%23ctor%2A> class.  
+ 
   
- If the target file already exists, it is overwritten.  
-  
- You can use this method to create the contents for a collection class that takes an <xref:System.Collections.Generic.IEnumerable%601> in its constructor, such as a <xref:System.Collections.Generic.List%601.%23ctor%2A>, <xref:System.Collections.Generic.HashSet%601.%23ctor%2A>, or a <xref:System.Collections.Generic.SortedSet%601.%23ctor%2A> class.  
-  
-   
-  
+ 
 ## Examples  
- The following example writes selected lines from a sample data file to a file.  
-  
- [!code-csharp[System.IO.File.WriteAllAppendAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.file.writeallappendall/cs/program.cs#1)]
- [!code-vb[System.IO.File.WriteAllAppendAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.file.writeallappendall/vb/program.vb#1)]  
-  
+The following example writes selected lines from a sample data file to a file.  
+ 
+[!code-csharp[System.IO.File.WriteAllAppendAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.file.writeallappendall/cs/program.cs#1)]
+[!code-vb[System.IO.File.WriteAllAppendAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.file.writeallappendall/vb/program.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -3622,22 +3622,22 @@
         <summary>Creates a new file, write the specified string array to the file, and then closes the file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the target file already exists, it is overwritten.  
+If the target file already exists, it is overwritten.  
+ 
+The default behavior of the <xref:System.IO.File.WriteAllLines%2A> method is to write out data using UTF-8 encoding without a byte order mark (BOM). If it is necessary to include a UTF-8 identifier, such as a byte order mark, at the beginning of a file, use the <xref:System.IO.File.WriteAllLines%28System.String%2CSystem.String%5B%5D%2CSystem.Text.Encoding%29> method overload with <xref:System.Text.Encoding.UTF8%2A> encoding.  
+ 
+Given a string array and a file path, this method opens the specified file, writes the string array to the file, and then closes the file.  
+ 
   
- The default behavior of the <xref:System.IO.File.WriteAllLines%2A> method is to write out data using UTF-8 encoding without a byte order mark (BOM). If it is necessary to include a UTF-8 identifier, such as a byte order mark, at the beginning of a file, use the <xref:System.IO.File.WriteAllLines%28System.String%2CSystem.String%5B%5D%2CSystem.Text.Encoding%29> method overload with <xref:System.Text.Encoding.UTF8%2A> encoding.  
-  
- Given a string array and a file path, this method opens the specified file, writes the string array to the file, and then closes the file.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.IO.File.WriteAllLines%2A> method to write text to a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
-  
- [!code-csharp[System.IO.File.AllLines#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllLines/cs/AllText.cs#00)]
- [!code-vb[System.IO.File.AllLines#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllLines/vb/AllText.vb#00)]  
-  
+The following code example demonstrates the use of the <xref:System.IO.File.WriteAllLines%2A> method to write text to a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
+ 
+[!code-csharp[System.IO.File.AllLines#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllLines/cs/AllText.cs#00)]
+[!code-vb[System.IO.File.AllLines#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllLines/vb/AllText.vb#00)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -3699,16 +3699,16 @@
         <summary>Creates a new file by using the specified encoding, writes a collection of strings to the file, and then closes the file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the target file already exists, it is overwritten.  
-  
- You can use this method to create a file that contains the following:  
-  
+If the target file already exists, it is overwritten.  
+ 
+You can use this method to create a file that contains the following:  
+ 
 -   The results of a [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) query on the lines of a file, as obtained by using the <xref:System.IO.File.ReadLines%2A> method.  
-  
+ 
 -   The contents of a collection that implements an <xref:System.Collections.Generic.IEnumerable%601> of strings.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -3767,20 +3767,20 @@
         <summary>Creates a new file, writes the specified string array to the file by using the specified encoding, and then closes the file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the target file already exists, it is overwritten.  
+If the target file already exists, it is overwritten.  
+ 
+Given a string array and a file path, this method opens the specified file, writes the string array to the file using the specified encoding, and then closes the file.  
+ 
   
- Given a string array and a file path, this method opens the specified file, writes the string array to the file using the specified encoding, and then closes the file.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.IO.File.WriteAllLines%2A> method to write text to a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
-  
- [!code-csharp[System.IO.File.AllLines_Encoding#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllLines_Encoding/cs/AllText_Encoding.cs#00)]
- [!code-vb[System.IO.File.AllLines_Encoding#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllLines_Encoding/vb/AllText_Encoding.vb#00)]  
-  
+The following code example demonstrates the use of the <xref:System.IO.File.WriteAllLines%2A> method to write text to a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
+ 
+[!code-csharp[System.IO.File.AllLines_Encoding#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllLines_Encoding/cs/AllText_Encoding.cs#00)]
+[!code-vb[System.IO.File.AllLines_Encoding#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllLines_Encoding/vb/AllText_Encoding.vb#00)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -3840,20 +3840,20 @@
         <summary>Creates a new file, writes the specified string to the file, and then closes the file. If the target file already exists, it is overwritten.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method uses UTF-8 encoding without a Byte-Order Mark (BOM), so using the <xref:System.Text.Encoding.GetPreamble%2A> method will return an empty byte array. If it is necessary to include a UTF-8 identifier, such as a byte order mark, at the beginning of a file, use the <xref:System.IO.File.WriteAllText%28System.String%2CSystem.String%2CSystem.Text.Encoding%29> method overload with <xref:System.Text.Encoding.UTF8%2A> encoding.  
+This method uses UTF-8 encoding without a Byte-Order Mark (BOM), so using the <xref:System.Text.Encoding.GetPreamble%2A> method will return an empty byte array. If it is necessary to include a UTF-8 identifier, such as a byte order mark, at the beginning of a file, use the <xref:System.IO.File.WriteAllText%28System.String%2CSystem.String%2CSystem.Text.Encoding%29> method overload with <xref:System.Text.Encoding.UTF8%2A> encoding.  
+ 
+Given a string and a file path, this method opens the specified file, writes the string to the file, and then closes the file.  
+ 
   
- Given a string and a file path, this method opens the specified file, writes the string to the file, and then closes the file.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.IO.File.WriteAllText%2A> method to write text to a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
-  
- [!code-csharp[System.IO.File.AllText#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllText/cs/AllText.cs#00)]
- [!code-vb[System.IO.File.AllText#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllText/vb/AllText.vb#00)]  
-  
+The following code example demonstrates the use of the <xref:System.IO.File.WriteAllText%2A> method to write text to a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
+ 
+[!code-csharp[System.IO.File.AllText#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllText/cs/AllText.cs#00)]
+[!code-vb[System.IO.File.AllText#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllText/vb/AllText.vb#00)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -3916,18 +3916,18 @@
         <summary>Creates a new file, writes the specified string to the file using the specified encoding, and then closes the file. If the target file already exists, it is overwritten.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Given a string and a file path, this method opens the specified file, writes the string to the file using the specified encoding, and then closes the file. The file handle is guaranteed to be closed by this method, even if exceptions are raised.  
+Given a string and a file path, this method opens the specified file, writes the string to the file using the specified encoding, and then closes the file. The file handle is guaranteed to be closed by this method, even if exceptions are raised.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates the use of the <xref:System.IO.File.WriteAllText%2A> method to write text to a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
-  
- [!code-csharp[System.IO.File.AllText_Encoding#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllText_Encoding/cs/AllText.cs#00)]
- [!code-vb[System.IO.File.AllText_Encoding#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllText_Encoding/vb/AllText.vb#00)]  
-  
+The following code example demonstrates the use of the <xref:System.IO.File.WriteAllText%2A> method to write text to a file. In this example a file is created, if it doesn't already exist, and text is added to it.  
+ 
+[!code-csharp[System.IO.File.AllText_Encoding#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.File.AllText_Encoding/cs/AllText.cs#00)]
+[!code-vb[System.IO.File.AllText_Encoding#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.File.AllText_Encoding/vb/AllText.vb#00)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -3967,10 +3967,10 @@
         <summary>Replaces the contents of a specified file with the contents of another file, deleting the original file, and creating a backup of the replaced file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.IO.File.Replace%2A> methods replace the contents of a specified file with the contents of another file.  They also create a backup of the file that was replaced.  
-  
+The <xref:System.IO.File.Replace%2A> methods replace the contents of a specified file with the contents of another file.  They also create a backup of the file that was replaced.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3985,10 +3985,10 @@
         <summary>Gets a <see cref="T:System.Security.AccessControl.FileSecurity" /> object that encapsulates the access control list (ACL) entries for a specified file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.IO.FileInfo.GetAccessControl%2A> methods to retrieve the access control list (ACL) entries for a specified file.  
-  
+Use the <xref:System.IO.FileInfo.GetAccessControl%2A> methods to retrieve the access control list (ACL) entries for a specified file.  
+ 
  ]]></format>
         </remarks>
       </Docs>

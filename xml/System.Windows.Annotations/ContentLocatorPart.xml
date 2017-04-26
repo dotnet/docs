@@ -57,14 +57,14 @@
         <returns>A modifiable deep copy clone of this <see cref="T:System.Windows.Annotations.ContentLocatorPart" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.Windows.Annotations.ContentLocatorPart.Clone%2A> method creates modifiable copies of frozen <xref:System.Windows.Freezable> objects.  For convenience, this <xref:System.Windows.Annotations.ContentLocatorPart.Clone%2A> method shadows the inherited version with a strongly typed implementation.  For more details, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
-  
- The cloned <xref:System.Windows.Annotations.ContentLocatorPart>'s <xref:System.Windows.Freezable.IsFrozen%2A> property will be `false` even if this source <xref:System.Windows.Annotations.ContentLocatorPart>'s <xref:System.Windows.Freezable.IsFrozen%2A> property is `true.`  
-  
- When copying dependency properties, <xref:System.Windows.Annotations.ContentLocatorPart.Clone%2A> copies resource references and data bindings (although they might no longer resolve) but does not copy not animations or current animation values.  
-  
+This <xref:System.Windows.Annotations.ContentLocatorPart.Clone%2A> method creates modifiable copies of frozen <xref:System.Windows.Freezable> objects.  For convenience, this <xref:System.Windows.Annotations.ContentLocatorPart.Clone%2A> method shadows the inherited version with a strongly typed implementation.  For more details, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ 
+The cloned <xref:System.Windows.Annotations.ContentLocatorPart>'s <xref:System.Windows.Freezable.IsFrozen%2A> property will be `false` even if this source <xref:System.Windows.Annotations.ContentLocatorPart>'s <xref:System.Windows.Freezable.IsFrozen%2A> property is `true.`  
+ 
+When copying dependency properties, <xref:System.Windows.Annotations.ContentLocatorPart.Clone%2A> copies resource references and data bindings (although they might no longer resolve) but does not copy not animations or current animation values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,10 +146,10 @@
         <value>The type name and namespace of the part.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned type name and namespace is originally defined in the parameter to the <xref:System.Windows.Annotations.ContentLocatorPart.%23ctor%2A> constructor.  
-  
+The returned type name and namespace is originally defined in the parameter to the <xref:System.Windows.Annotations.ContentLocatorPart.%23ctor%2A> constructor.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -24,10 +24,10 @@
     <summary>Controls the ability to access files or folders through a **File** dialog box. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This permission is typically used to provide limited access to user-specified files when <xref:System.Security.Permissions.FileIOPermission> is not granted.  
-  
+This permission is typically used to provide limited access to user-specified files when <xref:System.Security.Permissions.FileIOPermission> is not granted.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -70,10 +70,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.FileDialogPermission" /> class with either restricted or unrestricted permission, as specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates either fully restricted (`None`) or `Unrestricted` access to **File** dialog boxes.  
-  
+Creates either fully restricted (`None`) or `Unrestricted` access to **File** dialog boxes.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="state" /> parameter is not a valid value of <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
@@ -118,10 +118,10 @@
         <returns>A copy of the current permission.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A copy of the permission represents the same access to resources as the original permission.  
-  
+A copy of the permission represents the same access to resources as the original permission.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -176,10 +176,10 @@
         <returns>A new permission that represents the intersection of the current permission and the specified permission. This new permission is <see langword="null" /> if the intersection is empty.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The intersection of two permissions is a permission that describes the set of operations they both describe in common. Only a demand that passes both original permissions will pass the intersection.  
-  
+The intersection of two permissions is a permission that describes the set of operations they both describe in common. Only a demand that passes both original permissions will pass the intersection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>
@@ -208,10 +208,10 @@
           <see langword="true" /> if the current permission is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current permission is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained by the specified permission. For example, a permission for <xref:System.Security.Permissions.FileDialogPermissionAccess> access is a subset of a permission for <xref:System.Security.Permissions.FileDialogPermissionAccess> access.  
-  
+The current permission is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained by the specified permission. For example, a permission for <xref:System.Security.Permissions.FileDialogPermissionAccess> access is a subset of a permission for <xref:System.Security.Permissions.FileDialogPermissionAccess> access.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>
@@ -237,10 +237,10 @@
           <see langword="true" /> if the current permission is unrestricted; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An unrestricted permission represents access to all resources protected by the permission.  
-  
+An unrestricted permission represents access to all resources protected by the permission.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -287,10 +287,10 @@
         <returns>A new permission that represents the union of the current permission and the specified permission.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The result of a call to <xref:System.Security.Permissions.FileDialogPermission.Union%2A> is a permission that represents all operations represented by both the current permission and the specified permission. Any demand that passes either permission passes their union.  
-  
+The result of a call to <xref:System.Security.Permissions.FileDialogPermission.Union%2A> is a permission that represents all operations represented by both the current permission and the specified permission. Any demand that passes either permission passes their union.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>

@@ -18,10 +18,10 @@
     <summary>Represents a collection of channel parameters.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used to cache channel properties when channels are destroyed and re-created.  
-  
+This class is used to cache channel properties when channels are destroyed and re-created.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelParameterCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This default constructor implicitly calls the constructor of the parent class.  
-  
+This default constructor implicitly calls the constructor of the parent class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -67,10 +67,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelParameterCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An instance is created with <xref:System.ServiceModel.Channels.ChannelParameterCollection.Channel%2A> set to `channel`.  
-  
+An instance is created with <xref:System.ServiceModel.Channels.ChannelParameterCollection.Channel%2A> set to `channel`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
         <value>The <see cref="T:System.ServiceModel.Channels.IChannel" /> whose parameters are in this collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is set to `channel` when <xref:System.ServiceModel.Channels.ChannelParameterCollection.%23ctor%2A> is called.  
-  
+This property is set to `channel` when <xref:System.ServiceModel.Channels.ChannelParameterCollection.%23ctor%2A> is called.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -222,10 +222,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelParameterCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set <xref:System.ServiceModel.Channels.ChannelParameterCollection.Channel%2A> to `channel` by calling <xref:System.ServiceModel.Channels.ChannelParameterCollection.%23ctor%2A>, or simply invoke the parent constructor by calling <xref:System.ServiceModel.Channels.ChannelParameterCollection.%23ctor%2A>.  
-  
+You can set <xref:System.ServiceModel.Channels.ChannelParameterCollection.Channel%2A> to `channel` by calling <xref:System.ServiceModel.Channels.ChannelParameterCollection.%23ctor%2A>, or simply invoke the parent constructor by calling <xref:System.ServiceModel.Channels.ChannelParameterCollection.%23ctor%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

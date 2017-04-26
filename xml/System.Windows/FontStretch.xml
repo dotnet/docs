@@ -26,12 +26,12 @@
     <summary>Describes the degree to which a font has been stretched compared to the normal aspect ratio of that font.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A font stretch describes the degree to which a font form is stretched from its normal aspect ratio, which is the original width to height ratio specified for the glyphs in the font.  
-  
- The <xref:System.Windows.FontStretches> values correspond to the `usWidthClass` definition in the [!INCLUDE[TLA2#tla_opentype](~/includes/tla2sharptla-opentype-md.md)] specification. The `usWidthClass` represents an integer value between 1 and 9—lower values indicate narrower widths; higher values indicate wider widths.  
-  
+A font stretch describes the degree to which a font form is stretched from its normal aspect ratio, which is the original width to height ratio specified for the glyphs in the font.  
+ 
+The <xref:System.Windows.FontStretches> values correspond to the `usWidthClass` definition in the [!INCLUDE[TLA2#tla_opentype](~/includes/tla2sharptla-opentype-md.md)] specification. The `usWidthClass` represents an integer value between 1 and 9—lower values indicate narrower widths; higher values indicate wider widths.  
+ 
 |Font stretch|usWidthClass|% of normal|  
 |------------------|------------------|-----------------|  
 |<xref:System.Windows.FontStretches.UltraCondensed%2A>|1|50.0%|  
@@ -43,21 +43,21 @@
 |<xref:System.Windows.FontStretches.Expanded%2A>|7|125.0%|  
 |<xref:System.Windows.FontStretches.ExtraExpanded%2A>|8|150.0%|  
 |<xref:System.Windows.FontStretches.UltraExpanded%2A>|9|200.0%|  
-  
- For more information on the [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] `usWidthClass` value, see the ["Font File Tables"](http://www.microsoft.com/typography/otspec/otff.htm) section of the [!INCLUDE[TLA2#tla_opentype](~/includes/tla2sharptla-opentype-md.md)] specification.  
-  
+ 
+For more information on the [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] `usWidthClass` value, see the ["Font File Tables"](http://www.microsoft.com/typography/otspec/otff.htm) section of the [!INCLUDE[TLA2#tla_opentype](~/includes/tla2sharptla-opentype-md.md)] specification.  
+ 
 <a name="xamlAttributeUsage_FontWeight"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object fontStretchesProperty="fontStretchesValue"/>  
 ```  
-  
+ 
 <a name="xamlValues_FontWeight"></a>   
 ## XAML Values  
- *fontStretchesValue*  
- A <xref:System.Windows.FontStretches> value expressed as the name string, such as "Condensed", "Normal", or "Expanded".  
-  
+*fontStretchesValue*  
+A <xref:System.Windows.FontStretches> value expressed as the name string, such as "Condensed", "Normal", or "Expanded".  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -85,10 +85,10 @@
         <returns>An <see cref="T:System.Int32" /> value that represents the relationship between the two instances of <see cref="T:System.Windows.FontStretch" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the return value is less than zero, `left` is less than `right`. When this value is zero, it indicates that both operands are equal. When the value is greater than zero, it indicates that `left` is greater than `right`.  
-  
+When the return value is less than zero, `left` is less than `right`. When this value is zero, it indicates that both operands are equal. When the value is greater than zero, it indicates that `left` is greater than `right`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

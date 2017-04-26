@@ -33,15 +33,15 @@
     <summary>Defines the details of how a method is implemented.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This enumeration is used with the <xref:System.Runtime.CompilerServices.MethodImplAttribute> attribute.  
-  
- You can specify multiple <xref:System.Runtime.CompilerServices.MethodImplOptions> values by using the bitwise OR operator.  
-  
+This enumeration is used with the <xref:System.Runtime.CompilerServices.MethodImplAttribute> attribute.  
+ 
+You can specify multiple <xref:System.Runtime.CompilerServices.MethodImplOptions> values by using the bitwise OR operator.  
+ 
 > [!NOTE]
 >  Locking on the instance or on the type, as with the Synchronized flag, is not recommended for public types, because code other than your own can take locks on public types and instances. This might cause deadlocks or other synchronization problems.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

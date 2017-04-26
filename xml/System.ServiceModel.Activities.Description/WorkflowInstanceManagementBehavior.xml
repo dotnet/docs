@@ -118,16 +118,16 @@
         <value>The binding for the workflow instance control endpoint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The binding is automatically created based on the protocols configured for the service host’s base address. Messages sent to the workflow instance control endpoint do not contain any personally identifiable information and therefore it need not be encrypted. Messages sent to the workflow control endpoint need to contain the user identity to use for authorization. When the HTTP protocol is enabled, the <xref:System.ServiceModel.WebHttpBinding> is used with the following settings.  
-  
+The binding is automatically created based on the protocols configured for the service host’s base address. Messages sent to the workflow instance control endpoint do not contain any personally identifiable information and therefore it need not be encrypted. Messages sent to the workflow control endpoint need to contain the user identity to use for authorization. When the HTTP protocol is enabled, the <xref:System.ServiceModel.WebHttpBinding> is used with the following settings.  
+ 
 1.  Transaction flow is enabled.  
-  
+ 
 2.  Security mode is set to <xref:System.ServiceModel.SecurityMode>.  
-  
+ 
 3.  Windows client credentials are used.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -149,18 +149,18 @@
         <value>The binding for the workflow instance control endpoint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The binding is automatically created based on the protocols configured for the service host’s base address. Messages sent to the workflow instance control endpoint do not contain any personally identifiable information and therefore it need not be encrypted. Messages sent to the workflow control endpoint need to contain the user identity to use for authorization. When the net.pipe protocol is enabled, the <xref:System.ServiceModel.NetNamedPipeBinding> is used with the following settings.  
-  
+The binding is automatically created based on the protocols configured for the service host’s base address. Messages sent to the workflow instance control endpoint do not contain any personally identifiable information and therefore it need not be encrypted. Messages sent to the workflow control endpoint need to contain the user identity to use for authorization. When the net.pipe protocol is enabled, the <xref:System.ServiceModel.NetNamedPipeBinding> is used with the following settings.  
+ 
 1.  Transaction flow is enabled.  
-  
+ 
 2.  Security mode is set to <xref:System.ServiceModel.NetNamedPipeSecurityMode>.  
-  
+ 
 3.  Transport security level is set to <xref:System.Net.Security.ProtectionLevel>.  
-  
+ 
 4.  Windows client credentials are used.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -205,10 +205,10 @@
         <value>The Windows group of users authorized to use the workflow instance control endpoint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Defaults to “BUILTIN\Administrators”. Valid settings are: a local Windows group or a Windows domain.  
-  
+Defaults to “BUILTIN\Administrators”. Valid settings are: a local Windows group or a Windows domain.  
+ 
  ]]></format>
         </remarks>
       </Docs>

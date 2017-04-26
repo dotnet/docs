@@ -19,21 +19,21 @@
     <summary>Describes an incoming HTTP request to an <see cref="T:System.Net.HttpListener" /> object. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When a client makes a request to a Uniform Resource Identifier (URI) handled by an <xref:System.Net.HttpListener> object, the <xref:System.Net.HttpListener> provides a <xref:System.Net.HttpListenerContext> object that contains information about the sender, the request, and the response that is sent to the client. The <xref:System.Net.HttpListenerContext.Request%2A?displayProperty=fullName> property returns the <xref:System.Net.HttpListenerRequest> object that describes the request.  
+When a client makes a request to a Uniform Resource Identifier (URI) handled by an <xref:System.Net.HttpListener> object, the <xref:System.Net.HttpListener> provides a <xref:System.Net.HttpListenerContext> object that contains information about the sender, the request, and the response that is sent to the client. The <xref:System.Net.HttpListenerContext.Request%2A?displayProperty=fullName> property returns the <xref:System.Net.HttpListenerRequest> object that describes the request.  
+ 
+The <xref:System.Net.HttpListenerRequest> object contains information about the request, such as the request <xref:System.Net.HttpListenerRequest.HttpMethod%2A> string, <xref:System.Net.HttpListenerRequest.UserAgent%2A> string, and request body data (see the <xref:System.Net.HttpListenerRequest.InputStream%2A> property).  
+ 
+To reply to the request, you must get the associated response using the <xref:System.Net.HttpListenerContext.Response%2A> property.  
+ 
   
- The <xref:System.Net.HttpListenerRequest> object contains information about the request, such as the request <xref:System.Net.HttpListenerRequest.HttpMethod%2A> string, <xref:System.Net.HttpListenerRequest.UserAgent%2A> string, and request body data (see the <xref:System.Net.HttpListenerRequest.InputStream%2A> property).  
-  
- To reply to the request, you must get the associated response using the <xref:System.Net.HttpListenerContext.Response%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to receive and respond to a <xref:System.Net.HttpListenerRequest>.  
-  
- [!code-csharp[Net_Listener_Basic#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#2)]  
-  
+The following code example demonstrates how to receive and respond to a <xref:System.Net.HttpListenerRequest>.  
+ 
+[!code-csharp[Net_Listener_Basic#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,19 +60,19 @@
         <value>A <see cref="T:System.String" /> array that contains the type names specified in the request's <see langword="Accept" /> header or <see langword="null" /> if the client request did not include an <see langword="Accept" /> header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Accept` header is a string of space-separated Multipurpose Internet Mail Extensions (MIME) type names (for example, `image/jpeg`), which indicate the MIME types that the client is prepared to accept and process in a response. The `*/*` entry indicates that the client accepts any MIME type. For a detailed description of the `Accept` header, see RFC 2616, available at [http://www.rfc-editor.org](http://www.rfc-editor.org/).  
+The `Accept` header is a string of space-separated Multipurpose Internet Mail Extensions (MIME) type names (for example, `image/jpeg`), which indicate the MIME types that the client is prepared to accept and process in a response. The `*/*` entry indicates that the client accepts any MIME type. For a detailed description of the `Accept` header, see RFC 2616, available at [http://www.rfc-editor.org](http://www.rfc-editor.org/).  
+ 
+For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
+ 
   
- For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using this property.  
-  
- [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
-  
+The following code example demonstrates using this property.  
+ 
+[!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -128,18 +128,18 @@
         <value>An <see cref="T:System.Int32" /> value that contains a Windows error code.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property contains a Windows error code returned by the Secure Channel (Schannel) Security Support Provider Interface (SSPI), which is used to validate the certificate. For more information about SSPI support for Schannel, see "Creating a Secure Connection Using Schannel" in the Security documentation at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+This property contains a Windows error code returned by the Secure Channel (Schannel) Security Support Provider Interface (SSPI), which is used to validate the certificate. For more information about SSPI support for Schannel, see "Creating a Secure Connection Using Schannel" in the Security documentation at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example checks this property to determine whether the request includes a valid client certificate.  
-  
- [!code-csharp[NCLListener#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLListener/CS/sample.cs#3)]
- [!code-vb[NCLListener#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLListener/vb/sample.vb#3)]  
-  
+The following code example checks this property to determine whether the request includes a valid client certificate.  
+ 
+[!code-csharp[NCLListener#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLListener/CS/sample.cs#3)]
+[!code-vb[NCLListener#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLListener/vb/sample.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The client certificate has not been initialized yet by a call to the <see cref="M:System.Net.HttpListenerRequest.BeginGetClientCertificate(System.AsyncCallback,System.Object)" /> or <see cref="M:System.Net.HttpListenerRequest.GetClientCertificate" /> methods  
@@ -171,17 +171,17 @@
         <value>An <see cref="T:System.Text.Encoding" /> object suitable for use with the data in the <see cref="P:System.Net.HttpListenerRequest.InputStream" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Text.Encoding> object can be used to convert byte sequences into character sets (code pages) and characters into byte sequences. This property uses the charset value from the `Content-Type` header to determine the encoding. If that information is not available, this property returns <xref:System.Text.Encoding.Default%2A?displayProperty=fullName>.  
+An <xref:System.Text.Encoding> object can be used to convert byte sequences into character sets (code pages) and characters into byte sequences. This property uses the charset value from the `Content-Type` header to determine the encoding. If that information is not available, this property returns <xref:System.Text.Encoding.Default%2A?displayProperty=fullName>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.ContentEncoding%2A> property.  
-  
- [!code-csharp[Net_Listener_Basic#16](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#16)]  
-  
+The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.ContentEncoding%2A> property.  
+ 
+[!code-csharp[Net_Listener_Basic#16](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,19 +208,19 @@
         <value>The value from the request's <see langword="Content-Length" /> header. This value is -1 if the content length is not known.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Content-Length` header expresses the length, in bytes, of the body data that accompanies the request.  
+The `Content-Length` header expresses the length, in bytes, of the body data that accompanies the request.  
+ 
+For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
+ 
   
- For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Net.HttpListenerRequest.ContentLength64%2A> property while processing body data.  
-  
- [!code-csharp[Net_Listener_Basic#16](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#16)]  
-  
+The following code example uses the <xref:System.Net.HttpListenerRequest.ContentLength64%2A> property while processing body data.  
+ 
+[!code-csharp[Net_Listener_Basic#16](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -247,21 +247,21 @@
         <value>A <see cref="T:System.String" /> that contains the text of the request's <see langword="Content-Type" /> header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a client includes body data in a request, it declares the Multipurpose Internet Mail Extensions (MIME) type of the body data in the `Content-Type` header. For example, the default MIME type of data returned from a Web form using the `POST` method is `application/x-www-form-urlencoded`.  
+If a client includes body data in a request, it declares the Multipurpose Internet Mail Extensions (MIME) type of the body data in the `Content-Type` header. For example, the default MIME type of data returned from a Web form using the `POST` method is `application/x-www-form-urlencoded`.  
+ 
+For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration and RFC 2616, available at [http://www.rfc-editor.org](http://www.rfc-editor.org/).  
+ 
+The <xref:System.Net.HttpListenerRequest.ContentType%2A> is null when there is no `Content-Type` header in the request.  
+ 
   
- For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration and RFC 2616, available at [http://www.rfc-editor.org](http://www.rfc-editor.org/).  
-  
- The <xref:System.Net.HttpListenerRequest.ContentType%2A> is null when there is no `Content-Type` header in the request.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use this property.  
-  
- [!code-csharp[Net_Listener_Basic#16](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#16)]  
-  
+The following code example demonstrates how to use this property.  
+ 
+[!code-csharp[Net_Listener_Basic#16](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -288,17 +288,17 @@
         <value>A <see cref="T:System.Net.CookieCollection" /> that contains cookies that accompany the request. This property returns an empty collection if the request does not contain cookies.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A cookie is name/value text data from a Web server that is stored on the local (client) computer.  
+A cookie is name/value text data from a Web server that is stored on the local (client) computer.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the values of cookies sent with the request.  
-  
- [!code-csharp[Net_Listener_Basic#18](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#18)]  
-  
+The following code example displays the values of cookies sent with the request.  
+ 
+[!code-csharp[Net_Listener_Basic#18](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#18)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -358,10 +358,10 @@
         <returns>A <see cref="N:System.Security.Cryptography.X509Certificates" /> object that contains the client's X.509 v.3 certificate.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method blocks until the certificate is retrieved.  
-  
+This method blocks until the certificate is retrieved.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A call to this method to retrieve the client's X.509 v.3 certificate is in progress and therefore another call to this method cannot be made.</exception>
@@ -392,12 +392,12 @@
  The task object representing the asynchronous operation. The <see cref="P:System.Threading.Tasks.Task`1.Result" /> property on the task object returns a <see cref="N:System.Security.Cryptography.X509Certificates" /> object that contains the client's X.509 v.3 certificate.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete when the certificate has been retrieved.  
-  
- If a call to this method to retrieve the client's X.509 v.3 certificate is in progress, then another call to this method cannot be made.  
-  
+This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete when the certificate has been retrieved.  
+ 
+If a call to this method to retrieve the client's X.509 v.3 certificate is in progress, then another call to this method cannot be made.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -425,17 +425,17 @@
           <see langword="true" /> if the request has associated body data; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A request that sends data to the server using the `POST` method, for example, should have an entity body.  
+A request that sends data to the server using the `POST` method, for example, should have an entity body.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using this property.  
-  
- [!code-csharp[Net_Listener_Basic#16](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#16)]  
-  
+The following code example demonstrates using this property.  
+ 
+[!code-csharp[Net_Listener_Basic#16](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#16)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -462,19 +462,19 @@
         <value>A <see cref="T:System.Net.WebHeaderCollection" /> that contains the HTTP headers included in the request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Request headers contain metadata information. For example, headers can contain the Uniform Resource Identifier (URI) of the resource that referred the client to the server, the identity of the user agent employed by the client, and the acceptable MIME types for data in the response body.  
+Request headers contain metadata information. For example, headers can contain the Uniform Resource Identifier (URI) of the resource that referred the client to the server, the identity of the user agent employed by the client, and the acceptable MIME types for data in the response body.  
+ 
+For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
+ 
   
- For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
-  
-   
-  
+ 
 ## Examples  
- The following code example displays all the information in a given <xref:System.Net.WebHeaderCollection> object.  
-  
- [!code-csharp[Net_Listener_Basic#21](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#21)]  
-  
+The following code example displays all the information in a given <xref:System.Net.WebHeaderCollection> object.  
+ 
+[!code-csharp[Net_Listener_Basic#21](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#21)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -501,17 +501,17 @@
         <value>A <see cref="T:System.String" /> that contains the method used in the request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The HTTP method is typically GET or POST, depending on the action desired by the client.  
+The HTTP method is typically GET or POST, depending on the action desired by the client.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using this property.  
-  
- [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
-  
+The following code example demonstrates using this property.  
+ 
+[!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -538,20 +538,20 @@
         <value>A readable <see cref="T:System.IO.Stream" /> object that contains the bytes sent by the client in the body of the request. This property returns <see cref="F:System.IO.Stream.Null" /> if no data is sent with the request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the client transmits data (for example, using the HTTP `POST` method), the stream returned by this method contains that data.  
-  
+If the client transmits data (for example, using the HTTP `POST` method), the stream returned by this method contains that data.  
+ 
 > [!NOTE]
 >  Closing the request does not close the stream returned by this property. When you no longer need the stream, you should close it by calling the <xref:System.IO.Stream.Close%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using this property to read the data sent with a request.  
-  
- [!code-csharp[Net_Listener_Basic#16](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#16)]  
-  
+The following code example demonstrates using this property to read the data sent with a request.  
+ 
+[!code-csharp[Net_Listener_Basic#16](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#16)]  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
@@ -587,19 +587,19 @@
           <see langword="true" /> if the client was authenticated; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Your application requests client authentication using the <xref:System.Net.HttpListener.AuthenticationSchemes%2A> or <xref:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate%2A> property.  
+Your application requests client authentication using the <xref:System.Net.HttpListener.AuthenticationSchemes%2A> or <xref:System.Net.HttpListener.AuthenticationSchemeSelectorDelegate%2A> property.  
+ 
+Your application does not receive an <xref:System.Net.HttpListenerContext> for requests from clients that are not successfully authenticated.  
+ 
   
- Your application does not receive an <xref:System.Net.HttpListenerContext> for requests from clients that are not successfully authenticated.  
-  
-   
-  
+ 
 ## Examples  
- The following code example displays the value of the <xref:System.Net.HttpListenerRequest.IsAuthenticated%2A> property.  
-  
- [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
-  
+The following code example displays the value of the <xref:System.Net.HttpListenerRequest.IsAuthenticated%2A> property.  
+ 
+[!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -627,17 +627,17 @@
           <see langword="true" /> if the request originated on the same computer as the <see cref="T:System.Net.HttpListener" /> object that provided the request; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applications can use this property to perform special processing when requests are from the local computer.  
+Applications can use this property to perform special processing when requests are from the local computer.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.IsLocal%2A> property.  
-  
- [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
-  
+The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.IsLocal%2A> property.  
+ 
+[!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -665,17 +665,17 @@
           <see langword="true" /> if the TCP connection is using SSL; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To request a secure connection, the client request uses <xref:System.Uri.UriSchemeHttps> instead of <xref:System.Uri.UriSchemeHttp>. If the connection cannot be established using SSL, the client receives a <xref:System.Net.WebException> that provides information about the error.  
+To request a secure connection, the client request uses <xref:System.Uri.UriSchemeHttps> instead of <xref:System.Uri.UriSchemeHttp>. If the connection cannot be established using SSL, the client receives a <xref:System.Net.WebException> that provides information about the error.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.IsSecureConnection%2A> property.  
-  
- [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
-  
+The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.IsSecureConnection%2A> property.  
+ 
+[!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -733,17 +733,17 @@
           <see langword="true" /> if the connection should be kept open; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an HTTP client and server expect to exchange data multiple times in a short time period, a persistent connection speeds up their communications by allowing them to avoid the overhead required to open and close a TCP connection for each message. For clients using HTTP/1.1, the default value for this property is `true`.  
+If an HTTP client and server expect to exchange data multiple times in a short time period, a persistent connection speeds up their communications by allowing them to avoid the overhead required to open and close a TCP connection for each message. For clients using HTTP/1.1, the default value for this property is `true`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using this property.  
-  
- [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
-  
+The following code example demonstrates using this property.  
+ 
+[!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -770,17 +770,17 @@
         <value>An <see cref="T:System.Net.IPEndPoint" /> that represents the IP address that the request is sent to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is useful when you want to respond to requests based on the way they are addressed.  
+This property is useful when you want to respond to requests based on the way they are addressed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using this property.  
-  
- [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
-  
+The following code example demonstrates using this property.  
+ 
+[!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -807,17 +807,17 @@
         <value>A <see cref="T:System.Version" /> that identifies the client's version of HTTP.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The capabilities of different HTTP versions are specified in the documents available at [http://www.rfc-editor.org](http://www.rfc-editor.org/).  
+The capabilities of different HTTP versions are specified in the documents available at [http://www.rfc-editor.org](http://www.rfc-editor.org/).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using this property.  
-  
- [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
-  
+The following code example demonstrates using this property.  
+ 
+[!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -844,20 +844,20 @@
         <value>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> object that contains the query data included in the request <see cref="P:System.Net.HttpListenerRequest.Url" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a URL, the query information is separated from the path information by a question mark (?). Name/value pairs are separated by an equals sign (=). To access the query data as a single string, get the <xref:System.Uri.Query%2A> property value from the <xref:System.Uri> object returned by <xref:System.Net.HttpListenerRequest.Url%2A>.  
-  
+In a URL, the query information is separated from the path information by a question mark (?). Name/value pairs are separated by an equals sign (=). To access the query data as a single string, get the <xref:System.Uri.Query%2A> property value from the <xref:System.Uri> object returned by <xref:System.Net.HttpListenerRequest.Url%2A>.  
+ 
 > [!NOTE]
 >  Queries without an equal sign (example: [http://www.contoso.com/query.htm?Name](http://www.contoso.com/query.htm?Name) ) are added to the `null` key in the <xref:System.Collections.Specialized.NameValueCollection>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.QueryString%2A> property.  
-  
- [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
-  
+The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.QueryString%2A> property.  
+ 
+[!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -884,19 +884,19 @@
         <value>A <see cref="T:System.String" /> that contains the raw URL for this request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The raw URL is defined as the part of the URL following the domain information. In the URL string `http://www.contoso.com/articles/recent.aspx`, the raw URL is `/articles/recent.aspx`. The raw URL includes the query string, if present.  
+The raw URL is defined as the part of the URL following the domain information. In the URL string `http://www.contoso.com/articles/recent.aspx`, the raw URL is `/articles/recent.aspx`. The raw URL includes the query string, if present.  
+ 
+To obtain the host and port information, use the <xref:System.Net.HttpListenerRequest.RemoteEndPoint%2A> property.  
+ 
   
- To obtain the host and port information, use the <xref:System.Net.HttpListenerRequest.RemoteEndPoint%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.RawUrl%2A> property.  
-  
- [!code-csharp[Net_Listener_Basic#11](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#11)]  
-  
+The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.RawUrl%2A> property.  
+ 
+[!code-csharp[Net_Listener_Basic#11](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -923,12 +923,12 @@
         <value>An <see cref="T:System.Net.IPEndPoint" /> that represents the IP address and port number from which the request originated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates using this property.  
-  
- [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
-  
+The following code example demonstrates using this property.  
+ 
+[!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -988,10 +988,10 @@
         <value>A <see cref="T:System.String" /> that contains the SPN the client sent on the request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An application could use the <xref:System.Net.HttpListenerRequest.ServiceName%2A> property to perform custom Service Provide Name (SPN) validation.  
-  
+An application could use the <xref:System.Net.HttpListenerRequest.ServiceName%2A> property to perform custom Service Provide Name (SPN) validation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1018,14 +1018,14 @@
         <value>A <see cref="T:System.Net.TransportContext" /> object for the client request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.TransportContext> property can be used to retrieve the channel binding token (CBT) for an <xref:System.Net.HttpListenerRequest> which was sent using HTTPS.  
-  
- An application could use the <xref:System.Net.TransportContext> property to perform custom authentication using calls to the native Win32 [AcceptSecurityContext](http://go.microsoft.com/fwlink/?LinkId=147021) function.  
-  
- If an application attempts to retrieve the channel binding token (CBT) from this <xref:System.Net.HttpListenerRequest.TransportContext%2A> property using the <xref:System.Net.TransportContext.GetChannelBinding%2A> method and the <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind> is not <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind>, then the <xref:System.Net.HttpListenerRequest> will throw <xref:System.NotSupportedException>. The <xref:System.Net.HttpListenerRequest> overrides the <xref:System.Net.TransportContext.GetChannelBinding%2A> method with an internal implementation.  
-  
+The <xref:System.Net.TransportContext> property can be used to retrieve the channel binding token (CBT) for an <xref:System.Net.HttpListenerRequest> which was sent using HTTPS.  
+ 
+An application could use the <xref:System.Net.TransportContext> property to perform custom authentication using calls to the native Win32 [AcceptSecurityContext](http://go.microsoft.com/fwlink/?LinkId=147021) function.  
+ 
+If an application attempts to retrieve the channel binding token (CBT) from this <xref:System.Net.HttpListenerRequest.TransportContext%2A> property using the <xref:System.Net.TransportContext.GetChannelBinding%2A> method and the <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind> is not <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind>, then the <xref:System.Net.HttpListenerRequest> will throw <xref:System.NotSupportedException>. The <xref:System.Net.HttpListenerRequest> overrides the <xref:System.Net.TransportContext.GetChannelBinding%2A> method with an internal implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1052,80 +1052,80 @@
         <value>A <see cref="T:System.Uri" /> object that identifies the resource requested by the client.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.HttpListenerRequest.Url%2A> property allows you to obtain all the information available from a <xref:System.Uri> object. If you need to know only the raw text of the URI request, consider using the <xref:System.Net.HttpListenerRequest.RawUrl%2A> property instead.  
-  
- The <xref:System.Net.HttpListenerRequest.Url%2A> property is null if the <xref:System.Uri> from the client could not be parsed.  
-  
- The <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A> property indicates if <xref:System.Net.HttpListener> uses the raw unescaped URI instead of the converted URI where any percent-encoded values are converted and other normalization steps are taken.  
-  
- When a <xref:System.Net.HttpListener> instance receives a request through the `http.sys` service, it creates an instance of the URI string provided by `http.sys`, and exposes it as the <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=fullName> property.  
-  
- The `http.sys` service exposes two request URI strings:  
-  
+The <xref:System.Net.HttpListenerRequest.Url%2A> property allows you to obtain all the information available from a <xref:System.Uri> object. If you need to know only the raw text of the URI request, consider using the <xref:System.Net.HttpListenerRequest.RawUrl%2A> property instead.  
+ 
+The <xref:System.Net.HttpListenerRequest.Url%2A> property is null if the <xref:System.Uri> from the client could not be parsed.  
+ 
+The <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A> property indicates if <xref:System.Net.HttpListener> uses the raw unescaped URI instead of the converted URI where any percent-encoded values are converted and other normalization steps are taken.  
+ 
+When a <xref:System.Net.HttpListener> instance receives a request through the `http.sys` service, it creates an instance of the URI string provided by `http.sys`, and exposes it as the <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=fullName> property.  
+ 
+The `http.sys` service exposes two request URI strings:  
+ 
 -   Raw URI  
-  
+ 
 -   Converted URI  
-  
- The raw URI is the <xref:System.Uri?displayProperty=fullName> provided in the request line of a HTTP request:  
-  
- `GET /path/`  
-  
- `Host: www.contoso.com`  
-  
- The raw URI provided by `http.sys` for the request mentioned above, is "/path/". This represents the string following the HTTP verb as it was sent over the network.  
-  
- The `http.sys` service creates a converted URI from the information provided in the request using the URI provided in the HTTP request line and the Host header to determine the origin server the request should be forwarded to. This is done by comparing the information from the request with a set of registered URI prefixes. In order to be able to compare those values, some normalization to the request needs to be done. For the sample above the converted URI would be as follows:  
-  
- `http://www.contoso.com/path/`  
-  
- The `http.sys` service combines the <xref:System.Uri.Host%2A?displayProperty=fullName> property value and the string in the request line to create a converted URI. In addition, `http.sys` and the <xref:System.Uri?displayProperty=fullName> class also do the following:  
-  
+ 
+The raw URI is the <xref:System.Uri?displayProperty=fullName> provided in the request line of a HTTP request:  
+ 
+`GET /path/`  
+ 
+`Host: www.contoso.com`  
+ 
+The raw URI provided by `http.sys` for the request mentioned above, is "/path/". This represents the string following the HTTP verb as it was sent over the network.  
+ 
+The `http.sys` service creates a converted URI from the information provided in the request using the URI provided in the HTTP request line and the Host header to determine the origin server the request should be forwarded to. This is done by comparing the information from the request with a set of registered URI prefixes. In order to be able to compare those values, some normalization to the request needs to be done. For the sample above the converted URI would be as follows:  
+ 
+`http://www.contoso.com/path/`  
+ 
+The `http.sys` service combines the <xref:System.Uri.Host%2A?displayProperty=fullName> property value and the string in the request line to create a converted URI. In addition, `http.sys` and the <xref:System.Uri?displayProperty=fullName> class also do the following:  
+ 
 -   Un-escapes all percent encoded values.  
-  
+ 
 -   Converts percent-encoded non-ASCII characters into a UTF-16 character representation. Note that UTF-8 and ANSI/DBCS characters are supported as well as Unicode characters (Unicode encoding using the %uXXXX format).  
-  
+ 
 -   Executes other normalization steps, like path compression.  
-  
- Since the request doesn't contain any information about the encoding used for percent-encoded values, it may not be possible to determine the correct encoding just by parsing the percent-encoded values.  
-  
- Therefore `http.sys` provides two registry keys for modifying the process:  
-  
+ 
+Since the request doesn't contain any information about the encoding used for percent-encoded values, it may not be possible to determine the correct encoding just by parsing the percent-encoded values.  
+ 
+Therefore `http.sys` provides two registry keys for modifying the process:  
+ 
 |Registry Key|Default Value|Description|  
 |------------------|-------------------|-----------------|  
 |EnableNonUTF8|1|If zero, `http.sys` accepts only UTF-8-encoded URLs.<br /><br /> If non-zero, `http.sys` also accepts ANSI-encoded or DBCS-encoded URLs in requests.|  
 |FavorUTF8|1|If non-zero, `http.sys` always tries to decode a URL as UTF-8 first; if that conversion fails and EnableNonUTF8 is non-zero, Http.sys then tries to decode it as ANSI or DBCS.<br /><br /> If zero (and EnableNonUTF8 is non-zero), `http.sys` tries to decode it as ANSI or DBCS; if that is not successful, it tries a UTF-8 conversion.|  
+ 
+When <xref:System.Net.HttpListener> receives a request, it uses the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.  
+ 
+There is a need for supporting characters besides characters and numbers in URIs. An example is the following URI, which is used to retrieve customer information for customer number "1/3812":  
+ 
+`http://www.contoso.com/Customer('1%2F3812')/`  
+ 
+Note the percent-encoded slash in the Uri (%2F). This is necessary, since in this case the slash character represents data and not a path delimiter.  
+ 
+Passing the string to Uri constructor will lead to the following URI:  
+ 
+`http://www.contoso.com/Customer('1/3812')/`  
+ 
+Splitting the path into its segments would result in the following elements:  
+ 
+`Customer('1`  
+ 
+`3812')`  
+ 
+This is not the intent of the sender of the request.  
+ 
+If the <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A> property is set to false, then when the <xref:System.Net.HttpListener> receives a request, it uses the raw URI instead of the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.  
+ 
   
- When <xref:System.Net.HttpListener> receives a request, it uses the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.  
-  
- There is a need for supporting characters besides characters and numbers in URIs. An example is the following URI, which is used to retrieve customer information for customer number "1/3812":  
-  
- `http://www.contoso.com/Customer('1%2F3812')/`  
-  
- Note the percent-encoded slash in the Uri (%2F). This is necessary, since in this case the slash character represents data and not a path delimiter.  
-  
- Passing the string to Uri constructor will lead to the following URI:  
-  
- `http://www.contoso.com/Customer('1/3812')/`  
-  
- Splitting the path into its segments would result in the following elements:  
-  
- `Customer('1`  
-  
- `3812')`  
-  
- This is not the intent of the sender of the request.  
-  
- If the <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A> property is set to false, then when the <xref:System.Net.HttpListener> receives a request, it uses the raw URI instead of the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.Url%2A> property.  
-  
- [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
-  
+The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.Url%2A> property.  
+ 
+[!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1152,23 +1152,23 @@
         <value>A <see cref="T:System.Uri" /> object that contains the text of the request's <see cref="F:System.Net.HttpRequestHeader.Referer" /> header, or <see langword="null" /> if the header was not included in the request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a client has followed a hyperlink to the requested URI, its request might contain a `Referrer` header that identifies the URI of the resource that contained the hyperlink.  
+If a client has followed a hyperlink to the requested URI, its request might contain a `Referrer` header that identifies the URI of the resource that contained the hyperlink.  
+ 
+Clients can falsify or choose not to present a <xref:System.Net.HttpRequestHeader> header. Therefore, while the <xref:System.Net.HttpListenerRequest.UrlReferrer%2A> property can be useful for identifying basic trends in Web traffic; you should not use it as part of an authorization scheme to control access to data.  
+ 
+For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
+ 
+The <xref:System.Net.HttpListenerRequest.UrlReferrer%2A> is null when there is no `Referrer` header in the request or when the `Referrer` header is present in the request but does not parse to a valid <xref:System.Uri>.  
+ 
   
- Clients can falsify or choose not to present a <xref:System.Net.HttpRequestHeader> header. Therefore, while the <xref:System.Net.HttpListenerRequest.UrlReferrer%2A> property can be useful for identifying basic trends in Web traffic; you should not use it as part of an authorization scheme to control access to data.  
-  
- For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
-  
- The <xref:System.Net.HttpListenerRequest.UrlReferrer%2A> is null when there is no `Referrer` header in the request or when the `Referrer` header is present in the request but does not parse to a valid <xref:System.Uri>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using this property.  
-  
- [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
-  
+The following code example demonstrates using this property.  
+ 
+[!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1195,21 +1195,21 @@
         <value>A <see cref="T:System.String" /> object that contains the text of the request's <see langword="User-Agent" /> header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `User-Agent` header typically contains text that identifies the name and version number of the software used to generate the request.  
+The `User-Agent` header typically contains text that identifies the name and version number of the software used to generate the request.  
+ 
+For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
+ 
+The <xref:System.Net.HttpListenerRequest.UserAgent%2A> is null when there is no `User-Agent` header in the request.  
+ 
   
- For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
-  
- The <xref:System.Net.HttpListenerRequest.UserAgent%2A> is null when there is no `User-Agent` header in the request.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using this property.  
-  
- [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
-  
+The following code example demonstrates using this property.  
+ 
+[!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1236,17 +1236,17 @@
         <value>A <see cref="T:System.String" /> that contains the host address information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The information returned by this property is also available in the <xref:System.Net.HttpListenerRequest.LocalEndPoint%2A> property value.  
+The information returned by this property is also available in the <xref:System.Net.HttpListenerRequest.LocalEndPoint%2A> property value.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example displays the value of this property.  
-  
- [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
-  
+The following code example displays the value of this property.  
+ 
+[!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1273,21 +1273,21 @@
         <value>A <see cref="T:System.String" /> value that contains the text of the request's <see langword="Host" /> header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `Host` header contains the requested server host name and port number, if specified, separated by a colon (for example, `www.contoso.com:8080`).  
+The `Host` header contains the requested server host name and port number, if specified, separated by a colon (for example, `www.contoso.com:8080`).  
+ 
+You can use this property to return different responses depending on the host name specified in the request.  
+ 
+For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
+ 
   
- You can use this property to return different responses depending on the host name specified in the request.  
-  
- For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using this property.  
-  
- [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
-  
+The following code example demonstrates using this property.  
+ 
+[!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1314,19 +1314,19 @@
         <value>A <see cref="T:System.String" /> array that contains the languages specified in the request's <see cref="F:System.Net.HttpRequestHeader.AcceptLanguage" /> header or <see langword="null" /> if the client request did not include an <see cref="F:System.Net.HttpRequestHeader.AcceptLanguage" /> header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a detailed description of the `Accept-Language` header, see RFC 2616 Section 14.4, available at [http://www.rfc-editor.org](http://www.rfc-editor.org/).  
+For a detailed description of the `Accept-Language` header, see RFC 2616 Section 14.4, available at [http://www.rfc-editor.org](http://www.rfc-editor.org/).  
+ 
+For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
+ 
   
- For a complete list of request headers, see the <xref:System.Net.HttpRequestHeader> enumeration.  
-  
-   
-  
+ 
 ## Examples  
- The following code example displays the languages from the request's `Accept-Language` header.  
-  
- [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
-  
+The following code example displays the languages from the request's `Accept-Language` header.  
+ 
+[!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

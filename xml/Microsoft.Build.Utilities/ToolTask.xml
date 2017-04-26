@@ -18,18 +18,18 @@
     <summary>When overridden in a derived form, provides functionality for a task that wraps a command line tool.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This abstract class provides default implementations for the methods and properties of a task that wraps a command line tool.  
+This abstract class provides default implementations for the methods and properties of a task that wraps a command line tool.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.Utilities.ToolTask> that runs [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md). The <xref:Microsoft.Build.Utilities.CommandLineBuilder>, <xref:Microsoft.Build.Utilities.ToolLocationHelper>, and <xref:Microsoft.Build.Utilities.TaskLoggingHelper> classes are used to generate the information needed to run the task.  
-  
- [!code-csharp[msbuild_ToolTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ToolTask/CS/ILAsm.cs#1)]
- [!code-vb[msbuild_ToolTask#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ToolTask/VB/ILAsm.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.Utilities.ToolTask> that runs [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md). The <xref:Microsoft.Build.Utilities.CommandLineBuilder>, <xref:Microsoft.Build.Utilities.ToolLocationHelper>, and <xref:Microsoft.Build.Utilities.TaskLoggingHelper> classes are used to generate the information needed to run the task.  
+ 
+[!code-csharp[msbuild_ToolTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ToolTask/CS/ILAsm.cs#1)]
+[!code-vb[msbuild_ToolTask#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ToolTask/VB/ILAsm.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -145,10 +145,10 @@
         <summary>Deletes the specified temporary file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the delete operation fails for any reason (such as if a file is locked by antivirus software), then this method logs a warning rather than throwing an exception, which would cause the build to fail.  
-  
+If the delete operation fails for any reason (such as if a file is locked by antivirus software), then this method logs a warning rather than throwing an exception, which would cause the build to fail.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
         <value>True when command line echo is off.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- MSBuild turns off command line echoing by passing /Q on the cmd.exe command line.  
-  
+MSBuild turns off command line echoing by passing /Q on the cmd.exe command line.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,14 +200,14 @@
         <value>Returns a set of environment variables. Each dictionary key is the name of the environment variable to override and the dictionary value is the value to set for that environment variable. The default implementation of EnvironmentOverride returns null.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The ExecuteTool method passes these environment variables to the StartInfo of the process in which the tool executes. Any environment variables not included in the EnvironmentOverride dictionary are inherited from the process in which the ExecuteTool method executes.  
+The ExecuteTool method passes these environment variables to the StartInfo of the process in which the tool executes. Any environment variables not included in the EnvironmentOverride dictionary are inherited from the process in which the ExecuteTool method executes.  
+ 
   
-   
-  
+ 
 ## Examples  
-  
+ 
 ```  
 using System;  
 using Microsoft.Build.Utilities;  
@@ -232,7 +232,7 @@ abstract class CustomToolTask : ToolTask
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,10 +254,10 @@ abstract class CustomToolTask : ToolTask
         <value>To be added.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Using this instead of EnvironmentOverride as that takes a StringDictionary, which cannot be set from an MSBuild project.  
-  
+Using this instead of EnvironmentOverride as that takes a StringDictionary, which cannot be set from an MSBuild project.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -349,18 +349,18 @@ abstract class CustomToolTask : ToolTask
         <returns>A string value containing the command line arguments to pass directly to the executable file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called after <xref:Microsoft.Build.Utilities.ToolTask.ValidateParameters%2A> and <xref:Microsoft.Build.Utilities.ToolTask.SkipTaskExecution%2A>.  
+This method is called after <xref:Microsoft.Build.Utilities.ToolTask.ValidateParameters%2A> and <xref:Microsoft.Build.Utilities.ToolTask.SkipTaskExecution%2A>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.Utilities.ToolTask> that runs [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md). The <xref:Microsoft.Build.Utilities.CommandLineBuilder>, <xref:Microsoft.Build.Utilities.ToolLocationHelper>, and <xref:Microsoft.Build.Utilities.TaskLoggingHelper> classes are used to generate the information needed to run the task.  
-  
- [!code-csharp[msbuild_ToolTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ToolTask/CS/ILAsm.cs#1)]
- [!code-vb[msbuild_ToolTask#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ToolTask/VB/ILAsm.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.Utilities.ToolTask> that runs [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md). The <xref:Microsoft.Build.Utilities.CommandLineBuilder>, <xref:Microsoft.Build.Utilities.ToolLocationHelper>, and <xref:Microsoft.Build.Utilities.TaskLoggingHelper> classes are used to generate the information needed to run the task.  
+ 
+[!code-csharp[msbuild_ToolTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ToolTask/CS/ILAsm.cs#1)]
+[!code-vb[msbuild_ToolTask#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ToolTask/VB/ILAsm.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -383,18 +383,18 @@ abstract class CustomToolTask : ToolTask
         <returns>The fully qualified path to the executable file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method returns the value of the <xref:Microsoft.Build.Utilities.ToolTask.ToolName%2A> property if the tool is located in the system path.  
+This method returns the value of the <xref:Microsoft.Build.Utilities.ToolTask.ToolName%2A> property if the tool is located in the system path.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.Utilities.ToolTask> that runs [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md). The <xref:Microsoft.Build.Utilities.CommandLineBuilder>, <xref:Microsoft.Build.Utilities.ToolLocationHelper>, and <xref:Microsoft.Build.Utilities.TaskLoggingHelper> classes are used to generate the information needed to run the task.  
-  
- [!code-csharp[msbuild_ToolTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ToolTask/CS/ILAsm.cs#1)]
- [!code-vb[msbuild_ToolTask#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ToolTask/VB/ILAsm.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.Utilities.ToolTask> that runs [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md). The <xref:Microsoft.Build.Utilities.CommandLineBuilder>, <xref:Microsoft.Build.Utilities.ToolLocationHelper>, and <xref:Microsoft.Build.Utilities.TaskLoggingHelper> classes are used to generate the information needed to run the task.  
+ 
+[!code-csharp[msbuild_ToolTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ToolTask/CS/ILAsm.cs#1)]
+[!code-vb[msbuild_ToolTask#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ToolTask/VB/ILAsm.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -417,10 +417,10 @@ abstract class CustomToolTask : ToolTask
         <returns>a string value containing the command line arguments to add to the response (.rsp) file before running the executable file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called after <xref:Microsoft.Build.Utilities.ToolTask.ValidateParameters%2A> and <xref:Microsoft.Build.Utilities.ToolTask.SkipTaskExecution%2A>.  
-  
+This method is called after <xref:Microsoft.Build.Utilities.ToolTask.ValidateParameters%2A> and <xref:Microsoft.Build.Utilities.ToolTask.SkipTaskExecution%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -472,12 +472,12 @@ abstract class CustomToolTask : ToolTask
         <returns>The command line switch used by the executable file to specifiy a response (.rsp) file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is only called if <xref:Microsoft.Build.Utilities.ToolTask.GenerateResponseFileCommands%2A> returns a non-empty string value.  
-  
- This method is called after <xref:Microsoft.Build.Utilities.ToolTask.ValidateParameters%2A>, <xref:Microsoft.Build.Utilities.ToolTask.SkipTaskExecution%2A> and <xref:Microsoft.Build.Utilities.ToolTask.GenerateResponseFileCommands%2A>.  
-  
+This method is only called if <xref:Microsoft.Build.Utilities.ToolTask.GenerateResponseFileCommands%2A> returns a non-empty string value.  
+ 
+This method is called after <xref:Microsoft.Build.Utilities.ToolTask.ValidateParameters%2A>, <xref:Microsoft.Build.Utilities.ToolTask.SkipTaskExecution%2A> and <xref:Microsoft.Build.Utilities.ToolTask.GenerateResponseFileCommands%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -500,10 +500,10 @@ abstract class CustomToolTask : ToolTask
         <returns>The directory in which to run the executable file, or a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) if the executable file should be run in the current directory.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is a method rather than a property so that derived classes (like Exec) can choose to expose a public WorkingDirectory property, and it would be confusing to have two properties.  
-  
+This is a method rather than a property so that derived classes (like Exec) can choose to expose a public WorkingDirectory property, and it would be confusing to have two properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -527,12 +527,12 @@ abstract class CustomToolTask : ToolTask
           <see langword="true" /> if the method runs successfully; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called only if the executable file returns a non-zero exit code.  
-  
- The return value of this method is used as the return value of the task.  
-  
+This method is called only if the executable file returns a non-zero exit code.  
+ 
+The return value of this method is used as the return value of the task.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -676,10 +676,10 @@ abstract class CustomToolTask : ToolTask
         <value>The <see cref="T:System.Text.Encoding" /> of the response file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The encoding is <xref:System.Text.Encoding.UTF8%2A> by default.  
-  
+The encoding is <xref:System.Text.Encoding.UTF8%2A> by default.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -725,10 +725,10 @@ abstract class CustomToolTask : ToolTask
           <see langword="true" /> to skip task execution; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called after <xref:Microsoft.Build.Utilities.ToolTask.ValidateParameters%2A>.  
-  
+This method is called after <xref:Microsoft.Build.Utilities.ToolTask.ValidateParameters%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -750,10 +750,10 @@ abstract class CustomToolTask : ToolTask
         <value>The <see cref="T:System.Text.Encoding" /> of the response file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Console-based output uses the current system OEM code page by default. Note that we should not use Console.OutputEncoding here since processes we run don't really have much to do with our console window (and also Console.OutputEncoding doesn't return the OEM code page if the running application that hosts MSBuild is not a console application).  
-  
+Console-based output uses the current system OEM code page by default. Note that we should not use Console.OutputEncoding here since processes we run don't really have much to do with our console window (and also Console.OutputEncoding doesn't return the OEM code page if the running application that hosts MSBuild is not a console application).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -829,10 +829,10 @@ abstract class CustomToolTask : ToolTask
         <value>The <see cref="T:System.Text.Encoding" /> of the response file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Console-based output uses the current system OEM code page by default. Note that we should not use Console.OutputEncoding here since processes we run don't really have much to do with our console window (and also Console.OutputEncoding doesn't return the OEM code page if the running application that hosts MSBuild is not a console application).  
-  
+Console-based output uses the current system OEM code page by default. Note that we should not use Console.OutputEncoding here since processes we run don't really have much to do with our console window (and also Console.OutputEncoding doesn't return the OEM code page if the running application that hosts MSBuild is not a console application).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -980,13 +980,13 @@ abstract class CustomToolTask : ToolTask
         <value>The name of the executable file to run.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a <xref:Microsoft.Build.Utilities.ToolTask> that runs [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md). The <xref:Microsoft.Build.Utilities.CommandLineBuilder>, <xref:Microsoft.Build.Utilities.ToolLocationHelper>, and <xref:Microsoft.Build.Utilities.TaskLoggingHelper> classes are used to generate the information needed to run the task.  
-  
- [!code-csharp[msbuild_ToolTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ToolTask/CS/ILAsm.cs#1)]
- [!code-vb[msbuild_ToolTask#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ToolTask/VB/ILAsm.vb#1)]  
-  
+The following example creates a <xref:Microsoft.Build.Utilities.ToolTask> that runs [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md). The <xref:Microsoft.Build.Utilities.CommandLineBuilder>, <xref:Microsoft.Build.Utilities.ToolLocationHelper>, and <xref:Microsoft.Build.Utilities.TaskLoggingHelper> classes are used to generate the information needed to run the task.  
+ 
+[!code-csharp[msbuild_ToolTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ToolTask/CS/ILAsm.cs#1)]
+[!code-vb[msbuild_ToolTask#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ToolTask/VB/ILAsm.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

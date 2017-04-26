@@ -24,10 +24,10 @@
     <summary>Specifies the name of the return value of a method in a [!INCLUDE[wrt](~/includes/wrt-md.md)] component.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a [!INCLUDE[wrt](~/includes/wrt-md.md)] component, all the parameters of a method and the return value must have names. By default, [Winmdexp.exe (Windows Runtime Metadata Export Tool)](~/docs/framework/tools/winmdexp-exe-windows-runtime-metadata-export-tool.md) gives the return value the name "value". When you use a component in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app written in JavaScript, you can use this name to retrieve the return value. For example, suppose a component defines a method that has a return value and two `out` parameters (`ByRef` parameters with the <xref:System.Runtime.InteropServices.OutAttribute> attribute in Visual Basic):  
-  
+In a [!INCLUDE[wrt](~/includes/wrt-md.md)] component, all the parameters of a method and the return value must have names. By default, [Winmdexp.exe (Windows Runtime Metadata Export Tool)](~/docs/framework/tools/winmdexp-exe-windows-runtime-metadata-export-tool.md) gives the return value the name "value". When you use a component in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app written in JavaScript, you can use this name to retrieve the return value. For example, suppose a component defines a method that has a return value and two `out` parameters (`ByRef` parameters with the <xref:System.Runtime.InteropServices.OutAttribute> attribute in Visual Basic):  
+ 
 ```csharp  
 public static int ComputeAverage([ReadOnlyArray()] int[] input,  
     out int minValue, out int maxValue)  
@@ -35,7 +35,7 @@ public static int ComputeAverage([ReadOnlyArray()] int[] input,
     …  
 }  
 ```  
-  
+ 
 ```vb  
 Public Shared Function ComputeAverage( _  
         <ReadOnlyArray()> ByVal input As Integer, _  
@@ -45,9 +45,9 @@ Public Shared Function ComputeAverage( _
 End Function  
   
 ```  
-  
- When you call the function from JavaScript, you can access the return value by its default name (`value`):  
-  
+ 
+When you call the function from JavaScript, you can access the return value by its default name (`value`):  
+ 
 ```javascript  
 var data = [5, 13, 23, 37];  
 var results = SampleComponent.TestStuff.computeAverage(data);  
@@ -55,9 +55,9 @@ var formattedResults = "Min=" + results.minValue + ", Avg=" +
     results.value + ", Max=" + results.maxValue;  
   
 ```  
-  
- You must give the return value a different name if you already have a parameter named "value". Or you might simply want to use a more meaningful name (such as "average" in this example). Apply the <xref:System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute> attribute to your method and specify a new name.  
-  
+ 
+You must give the return value a different name if you already have a parameter named "value". Or you might simply want to use a more meaningful name (such as "average" in this example). Apply the <xref:System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute> attribute to your method and specify a new name.  
+ 
 ```csharp  
 [return: ReturnValueName("average")]  
 public static int ComputeAverage([ReadOnlyArray()] int[] input,  
@@ -67,7 +67,7 @@ public static int ComputeAverage([ReadOnlyArray()] int[] input,
 }  
   
 ```  
-  
+ 
 ```vb  
 Public Shared Function ComputeAverage( _  
         <ReadOnlyArray()> ByVal input As Integer, _  
@@ -78,7 +78,7 @@ Public Shared Function ComputeAverage( _
 End Function  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

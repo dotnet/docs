@@ -26,16 +26,16 @@
     <summary>Renders the contained 3-D content within the 2-D layout bounds of the <see cref="T:System.Windows.Controls.Viewport3D" /> element.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.Viewport3D> element renders 3-D content while providing features consistent with <xref:System.Windows.FrameworkElement> objects including 2-D layout, clipping, and input events.  
-  
- When this element is included as the content of a layout element like <xref:System.Windows.Controls.Canvas>, specify the size of the <xref:System.Windows.Controls.Viewport3D> by setting its <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties (inherited from <xref:System.Windows.FrameworkElement>).  
-  
- <xref:System.Windows.Controls.Viewport3D> extends 2-D hit testing into the 3-D scene by extruding the 2-D hit test point into a 3-D ray. Call the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method to return detailed hit result information about the hit visual, model, mesh, and point of intersection.  
-  
- On [!INCLUDE[TLA#tla_whistler](~/includes/tlasharptla-whistler-md.md)], if the display color quality is not set to 32-bit or 16-bit, the <xref:System.Windows.Controls.Viewport3D> might not render as expected.  
-  
+The <xref:System.Windows.Controls.Viewport3D> element renders 3-D content while providing features consistent with <xref:System.Windows.FrameworkElement> objects including 2-D layout, clipping, and input events.  
+ 
+When this element is included as the content of a layout element like <xref:System.Windows.Controls.Canvas>, specify the size of the <xref:System.Windows.Controls.Viewport3D> by setting its <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties (inherited from <xref:System.Windows.FrameworkElement>).  
+ 
+<xref:System.Windows.Controls.Viewport3D> extends 2-D hit testing into the 3-D scene by extruding the 2-D hit test point into a 3-D ray. Call the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method to return detailed hit result information about the hit visual, model, mesh, and point of intersection.  
+ 
+On [!INCLUDE[TLA#tla_whistler](~/includes/tlasharptla-whistler-md.md)], if the display color quality is not set to 32-bit or 16-bit, the <xref:System.Windows.Controls.Viewport3D> might not render as expected.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,11 +54,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Viewport3D" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[3dgallery_procedural_snip#Basic3DShapeCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Basic3DShapeExample.cs#basic3dshapecodeexamplewholepage)]
- [!code-vb[3dgallery_procedural_snip#Basic3DShapeCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DGallery_procedural_snip/visualbasic/basic3dshapeexample.vb#basic3dshapecodeexamplewholepage)]  
-  
+[!code-csharp[3dgallery_procedural_snip#Basic3DShapeCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Basic3DShapeExample.cs#basic3dshapecodeexamplewholepage)]
+[!code-vb[3dgallery_procedural_snip#Basic3DShapeCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DGallery_procedural_snip/visualbasic/basic3dshapeexample.vb#basic3dshapecodeexamplewholepage)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,33 +102,33 @@
         <value>The camera that projects the [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] contents to the [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] surface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property represents the viewing projection of the [!INCLUDE[TLA2#tla_3d](~/includes/tla2sharptla-3d-md.md)] scene.  
-  
+This property represents the viewing projection of the [!INCLUDE[TLA2#tla_3d](~/includes/tla2sharptla-3d-md.md)] scene.  
+ 
 <a name="dependencyPropertyInfo_CameraProperty"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Viewport3D>|  
 |Metadata properties set to `true`|None|  
-  
+ 
 > [!NOTE]
 >  The metadata type on this dependency property is <xref:System.Windows.PropertyMetadata>, not <xref:System.Windows.FrameworkPropertyMetadata>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows setting the <xref:System.Windows.Controls.Viewport3D.Camera%2A> property of a <xref:System.Windows.Controls.Viewport3D> using code. To see the entirety of the code from which this excerpt was taken, see [How to: Create a 3-D Scene](~/docs/framework/wpf/graphics-multimedia/how-to-create-a-3-d-scene.md).  
-  
- [!code-csharp[3DGallery_procedural_snip#Basic3DShapeCodeExampleInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Basic3DShapeExample.cs#basic3dshapecodeexampleinline1)]
- [!code-vb[3DGallery_procedural_snip#Basic3DShapeCodeExampleInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DGallery_procedural_snip/visualbasic/basic3dshapeexample.vb#basic3dshapecodeexampleinline1)]  
-  
- The following example shows setting the <xref:System.Windows.Controls.Viewport3D.Camera%2A> property of a <xref:System.Windows.Controls.Viewport3D> using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]. To see the entirety of the code from which this excerpt was taken, see [How to: Create a 3-D Scene](~/docs/framework/wpf/graphics-multimedia/how-to-create-a-3-d-scene.md).  
-  
- [!code-xml[basic3d#Basic3DXAML3DN1](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn1)]  
-  
+The following example shows setting the <xref:System.Windows.Controls.Viewport3D.Camera%2A> property of a <xref:System.Windows.Controls.Viewport3D> using code. To see the entirety of the code from which this excerpt was taken, see [How to: Create a 3-D Scene](~/docs/framework/wpf/graphics-multimedia/how-to-create-a-3-d-scene.md).  
+ 
+[!code-csharp[3DGallery_procedural_snip#Basic3DShapeCodeExampleInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Basic3DShapeExample.cs#basic3dshapecodeexampleinline1)]
+[!code-vb[3DGallery_procedural_snip#Basic3DShapeCodeExampleInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DGallery_procedural_snip/visualbasic/basic3dshapeexample.vb#basic3dshapecodeexampleinline1)]  
+ 
+The following example shows setting the <xref:System.Windows.Controls.Viewport3D.Camera%2A> property of a <xref:System.Windows.Controls.Viewport3D> using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]. To see the entirety of the code from which this excerpt was taken, see [How to: Create a 3-D Scene](~/docs/framework/wpf/graphics-multimedia/how-to-create-a-3-d-scene.md).  
+ 
+[!code-xml[basic3d#Basic3DXAML3DN1](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,21 +172,21 @@
         <value>A collection of the <see cref="T:System.Windows.Media.Media3D.Visual3D" /> children of the <see cref="T:System.Windows.Controls.Viewport3D" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Viewport3D>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-xml[hostingwpfusercontrolinwf#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/HostingWpfUserControlInWf/ConeControl.xaml#1)]  
-  
+[!code-xml[hostingwpfusercontrolinwf#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/HostingWpfUserControlInWf/ConeControl.xaml#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

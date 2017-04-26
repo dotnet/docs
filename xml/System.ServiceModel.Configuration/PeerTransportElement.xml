@@ -19,10 +19,10 @@
     <summary>Specifies a configuration element that causes a channel to transfer messages on the peer transport when it is included in a custom binding. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This configuration element allows you to create a custom binding that implements the peer transport protocol.  
-  
+This configuration element allows you to create a custom binding that implements the peer transport protocol.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -167,10 +167,10 @@
         <value>A <see cref="T:System.Net.IPAddress" /> that contains the IP address upon which the peer transport listens.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is not set, or is set to a null reference, the associated <xref:System.ServiceModel.PeerNode> listens on all global addresses (both IPv4 and IPv6) configured for the local machine.  
-  
+If this property is not set, or is set to a null reference, the associated <xref:System.ServiceModel.PeerNode> listens on all global addresses (both IPv4 and IPv6) configured for the local machine.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,10 +200,10 @@
         <value>A <see cref="T:System.Int64" /> that specifies the maximum size of the TCP message buffer pool, in bytes. The default value is 524,288 bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you receive more data than you can buffer, the data that exceeds the buffer size remains on the underlying socket until your buffer has room for the rest of the data.  
-  
+If you receive more data than you can buffer, the data that exceeds the buffer size remains on the underlying socket until your buffer has room for the rest of the data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -259,10 +259,10 @@
         <value>A <see cref="T:System.Int32" /> value that specifies the port for the peer transport binding.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the port value is invalid, <xref:System.ArgumentException> is raised. The default value for this property is 0, which indicates that the listener port is randomly selected from all unreserved ports.  
-  
+If the port value is invalid, <xref:System.ArgumentException> is raised. The default value for this property is 0, which indicates that the listener port is randomly selected from all unreserved ports.  
+ 
  ]]></format>
         </remarks>
       </Docs>

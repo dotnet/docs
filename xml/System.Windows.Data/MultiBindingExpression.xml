@@ -14,14 +14,14 @@
     <summary>Contains instance information about a single instance of a <see cref="T:System.Windows.Data.MultiBinding" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Data.MultiBindingExpression> describes a single run-time instance of a <xref:System.Windows.Data.MultiBinding>. Therefore, it describes a collection of <xref:System.Windows.Data.BindingExpression> objects attached to a single binding target property.  
-  
- For information about binding expressions, see the Binding and BindingExpression section in the [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
-  
- With the use of a converter, the property values of the <xref:System.Windows.Data.BindingExpression> objects in a <xref:System.Windows.Data.MultiBindingExpression> produce a final value for the target property. In the reverse direction, the target property value is translated to a set of values that are fed back into the <xref:System.Windows.Data.BindingExpression> objects. For more information, see <xref:System.Windows.Data.MultiBinding>.  
-  
+<xref:System.Windows.Data.MultiBindingExpression> describes a single run-time instance of a <xref:System.Windows.Data.MultiBinding>. Therefore, it describes a collection of <xref:System.Windows.Data.BindingExpression> objects attached to a single binding target property.  
+ 
+For information about binding expressions, see the Binding and BindingExpression section in the [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ 
+With the use of a converter, the property values of the <xref:System.Windows.Data.BindingExpression> objects in a <xref:System.Windows.Data.MultiBindingExpression> produce a final value for the target property. In the reverse direction, the target property value is translated to a set of values that are fed back into the <xref:System.Windows.Data.BindingExpression> objects. For more information, see <xref:System.Windows.Data.MultiBinding>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -62,10 +62,10 @@
           <see langword="true" /> if at least one of the inner <see cref="T:System.Windows.Data.Binding" /> objects or the <see cref="T:System.Windows.Data.MultiBinding" /> itself has a failing validation rule; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set validation rules on both the <xref:System.Windows.Data.MultiBinding> object and the individual <xref:System.Windows.Data.Binding> objects in the <xref:System.Windows.Data.MultiBinding> object. The binding engine evaluates the <xref:System.Windows.Data.MultiBinding.ValidationRules%2A> on the <xref:System.Windows.Data.MultiBinding> object when a value moves from the binding target property to the <xref:System.Windows.Data.IMultiValueConverter> object (multi-value converter). After that, when a value moves from the converter to the binding source property of an individual binding, the binding engine evaluates the <xref:System.Windows.Data.Binding.ValidationRules%2A> on that <xref:System.Windows.Data.Binding> object.  
-  
+You can set validation rules on both the <xref:System.Windows.Data.MultiBinding> object and the individual <xref:System.Windows.Data.Binding> objects in the <xref:System.Windows.Data.MultiBinding> object. The binding engine evaluates the <xref:System.Windows.Data.MultiBinding.ValidationRules%2A> on the <xref:System.Windows.Data.MultiBinding> object when a value moves from the binding target property to the <xref:System.Windows.Data.IMultiValueConverter> object (multi-value converter). After that, when a value moves from the converter to the binding source property of an individual binding, the binding engine evaluates the <xref:System.Windows.Data.Binding.ValidationRules%2A> on that <xref:System.Windows.Data.Binding> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
           <see langword="true" /> if the parent binding has a failed validation rule; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is identical to the <xref:System.Windows.Data.MultiBindingExpression.HasError%2A> property.  
-  
+This property is identical to the <xref:System.Windows.Data.MultiBindingExpression.HasError%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,10 +167,10 @@
         <value>The <see cref="T:System.Windows.Controls.ValidationError" /> object that caused this instance of <see cref="T:System.Windows.Data.MultiBindingExpression" /> to be invalid.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set validation rules on both the <xref:System.Windows.Data.MultiBinding> object and the individual <xref:System.Windows.Data.Binding> objects in the <xref:System.Windows.Data.MultiBinding> object. The binding engine evaluates the <xref:System.Windows.Data.MultiBinding.ValidationRules%2A> on the <xref:System.Windows.Data.MultiBinding> object when a value moves from the binding target property to the <xref:System.Windows.Data.IMultiValueConverter> object (multi-value converter). After that, when a value moves from the converter to the binding source property of an individual binding, the binding engine evaluates the <xref:System.Windows.Data.Binding.ValidationRules%2A> on that <xref:System.Windows.Data.Binding> object.  
-  
+You can set validation rules on both the <xref:System.Windows.Data.MultiBinding> object and the individual <xref:System.Windows.Data.Binding> objects in the <xref:System.Windows.Data.MultiBinding> object. The binding engine evaluates the <xref:System.Windows.Data.MultiBinding.ValidationRules%2A> on the <xref:System.Windows.Data.MultiBinding> object when a value moves from the binding target property to the <xref:System.Windows.Data.IMultiValueConverter> object (multi-value converter). After that, when a value moves from the converter to the binding source property of an individual binding, the binding engine evaluates the <xref:System.Windows.Data.Binding.ValidationRules%2A> on that <xref:System.Windows.Data.Binding> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>

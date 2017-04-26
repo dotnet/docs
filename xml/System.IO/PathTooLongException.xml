@@ -29,29 +29,29 @@
     <summary>The exception that is thrown when a path or fully qualified file name is longer than the system-defined maximum length.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If your code does not have <xref:System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery%2A?displayProperty=fullName> permission, the error message for this exception may contain only file or directory names instead of full paths.  
-  
- In apps that run under versions of the .NET Framework prior to the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], full paths must not exceed 260 characters to maintain compatibility with Windows operating systems. Any path in excess of 260 characters automatically throws a <xref:System.IO.PathTooLongException>. For more information about this restriction, see the entry [Long Paths in .NET](http://go.microsoft.com/fwlink/?LinkID=163666) in the BCL Team blog.  
-  
+If your code does not have <xref:System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery%2A?displayProperty=fullName> permission, the error message for this exception may contain only file or directory names instead of full paths.  
+ 
+In apps that run under versions of the .NET Framework prior to the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], full paths must not exceed 260 characters to maintain compatibility with Windows operating systems. Any path in excess of 260 characters automatically throws a <xref:System.IO.PathTooLongException>. For more information about this restriction, see the entry [Long Paths in .NET](http://go.microsoft.com/fwlink/?LinkID=163666) in the BCL Team blog.  
+ 
 > [!NOTE]
 >  This exception is not included in [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement that handles an <xref:System.IO.IOException> instead.  
-  
- Starting with apps running under the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], the .NET Framework supports long paths in excess of 260 (or `MAX_PATH`) characters.  The conditions under which a <xref:System.IO.PathTooLongException> exception are thrown depend on the version of the .NET Framework that an app targets:  
-  
- **Apps that target the [!INCLUDE[net_v462](~/includes/net-v462-md.md)] and later versions**  
- Long paths are supported by default. The runtime throws a <xref:System.IO.PathTooLongException> under the following conditions:  
-  
+ 
+Starting with apps running under the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], the .NET Framework supports long paths in excess of 260 (or `MAX_PATH`) characters.  The conditions under which a <xref:System.IO.PathTooLongException> exception are thrown depend on the version of the .NET Framework that an app targets:  
+ 
+**Apps that target the [!INCLUDE[net_v462](~/includes/net-v462-md.md)] and later versions**  
+Long paths are supported by default. The runtime throws a <xref:System.IO.PathTooLongException> under the following conditions:  
+ 
 -   The operating system returns `COR_E_PATHTOOLONG` or its equivalent.  
-  
+ 
 -   The length of the path exceeds <xref:System.Int16.MaxValue?displayProperty=fullName> (32,767) characters.  
-  
- **Apps that target the [!INCLUDE[net_v461](~/includes/net-v461-md.md)] and earlier versions**  
- Long paths are disabled by default, and the legacy behavior is maintained. The runtime throws a <xref:System.IO.PathTooLongException> whenever a path exceeds 260 characters.  
-  
- If this is undesirable, apps that target the [!INCLUDE[net_v461](~/includes/net-v461-md.md)] and earlier but run under the [!INCLUDE[net_v462](~/includes/net-v462-md.md)] can enable long path support by including the following setting in the [\<runtime>](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) element of the application configuration file:  
-  
+ 
+**Apps that target the [!INCLUDE[net_v461](~/includes/net-v461-md.md)] and earlier versions**  
+Long paths are disabled by default, and the legacy behavior is maintained. The runtime throws a <xref:System.IO.PathTooLongException> whenever a path exceeds 260 characters.  
+ 
+If this is undesirable, apps that target the [!INCLUDE[net_v461](~/includes/net-v461-md.md)] and earlier but run under the [!INCLUDE[net_v462](~/includes/net-v462-md.md)] can enable long path support by including the following setting in the [\<runtime>](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) element of the application configuration file:  
+ 
 ```xml  
   
 <runtime>   
@@ -59,9 +59,9 @@
 </runtime>  
   
 ```  
-  
- <xref:System.IO.PathTooLongException> uses the HRESULT `COR_E_PATHTOOLONG`, which has the value 0x800700CE.  
-  
+ 
+<xref:System.IO.PathTooLongException> uses the HRESULT `COR_E_PATHTOOLONG`, which has the value 0x800700CE.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -90,10 +90,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.PathTooLongException" /> class with its HRESULT set to COR_E_PATHTOOLONG.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "The supplied path is too long." This message takes into account the current system culture.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "The supplied path is too long." This message takes into account the current system culture.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -125,10 +125,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.PathTooLongException" /> class with its message string set to <paramref name="message" /> and its HRESULT set to COR_E_PATHTOOLONG.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance using `message`.  
-  
+This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance using `message`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -187,19 +187,19 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.PathTooLongException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The `InnerException` property returns the same value that is passed into the constructor, or `null` if the `InnerException` property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.IO.PathTooLongException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The `InnerException` property returns the same value that is passed into the constructor, or `null` if the `InnerException` property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.IO.PathTooLongException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
- For more information on inner exceptions, see <xref:System.Exception.InnerException%2A>.  
-  
+ 
+For more information on inner exceptions, see <xref:System.Exception.InnerException%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

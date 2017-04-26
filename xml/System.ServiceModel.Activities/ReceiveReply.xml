@@ -19,10 +19,10 @@
     <summary>An activity that receives a message as part of a request/reply message exchange pattern.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use a <xref:System.ServiceModel.Activities.ReceiveReply> activity. A <xref:System.ServiceModel.Activities.Send> activity is created and added to a <xref:System.Activities.Statements.Sequence>. A <xref:System.ServiceModel.Activities.ReceiveReply> activity is then added to the <xref:System.Activities.Statements.Sequence> to receive the reply from the <xref:System.ServiceModel.Activities.Send> activity.  
-  
+The following example shows how to use a <xref:System.ServiceModel.Activities.ReceiveReply> activity. A <xref:System.ServiceModel.Activities.Send> activity is created and added to a <xref:System.Activities.Statements.Sequence>. A <xref:System.ServiceModel.Activities.ReceiveReply> activity is then added to the <xref:System.Activities.Statements.Sequence> to receive the reply from the <xref:System.ServiceModel.Activities.Send> activity.  
+ 
 ```  
 static void CreateClientWorkflow()  
 {  
@@ -85,7 +85,7 @@ static void CreateClientWorkflow()
         }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -171,10 +171,10 @@ static void CreateClientWorkflow()
         <value>The content received.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The content can be one of the following types: <xref:System.ServiceModel.Activities.ReceiveMessageContent> or <xref:System.ServiceModel.Activities.ReceiveParametersContent>. Use <xref:System.ServiceModel.Activities.ReceiveMessageContent> when receiving a message <xref:System.ServiceModel.Channels.Message> or a message contract type. Use <xref:System.ServiceModel.Activities.ReceiveParametersContent> when receiving data contract types.  
-  
+The content can be one of the following types: <xref:System.ServiceModel.Activities.ReceiveMessageContent> or <xref:System.ServiceModel.Activities.ReceiveParametersContent>. Use <xref:System.ServiceModel.Activities.ReceiveMessageContent> when receiving a message <xref:System.ServiceModel.Channels.Message> or a message contract type. Use <xref:System.ServiceModel.Activities.ReceiveParametersContent> when receiving data contract types.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,10 +196,10 @@ static void CreateClientWorkflow()
         <value>A collection of correlation initializers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] correlation see [Correlation](~/docs/framework/wcf/feature-details/correlation.md).  
-  
+[!INCLUDE[crabout](~/includes/crabout-md.md)] correlation see [Correlation](~/docs/framework/wcf/feature-details/correlation.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -226,10 +226,10 @@ static void CreateClientWorkflow()
         <value>The send activity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.Activities.Send> and <xref:System.ServiceModel.Activities.ReceiveReply> activities are used together to model a request/response message exchange pattern. This property specifies which <xref:System.ServiceModel.Activities.Send> activity the <xref:System.ServiceModel.Activities.ReceiveReply> activity is paired with.  
-  
+<xref:System.ServiceModel.Activities.Send> and <xref:System.ServiceModel.Activities.ReceiveReply> activities are used together to model a request/response message exchange pattern. This property specifies which <xref:System.ServiceModel.Activities.Send> activity the <xref:System.ServiceModel.Activities.ReceiveReply> activity is paired with.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -50,14 +50,14 @@
         <summary>Adds the specified <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object to the end of the collection</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function can throw the following exceptions:  
-  
+This function can throw the following exceptions:  
+ 
 |Exception|Description|  
 |---------------|-----------------|  
 |<xref:System.DirectoryServices.AccountManagement.PrincipalExistsException>|`computer` already exists in the collection.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,14 +87,14 @@
         <summary>Adds the specified <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object to the end of the collection</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function can throw the following exceptions:  
-  
+This function can throw the following exceptions:  
+ 
 |Exception|Description|  
 |---------------|-----------------|  
 |<xref:System.DirectoryServices.AccountManagement.PrincipalExistsException>|`group` already exists in the collection.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,14 +124,14 @@
         <summary>Adds the specified <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object to the end of the collection</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function can throw the following exceptions:  
-  
+This function can throw the following exceptions:  
+ 
 |Exception|Description|  
 |---------------|-----------------|  
 |<xref:System.DirectoryServices.AccountManagement.PrincipalExistsException>|`principal` already exists in the collection.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,14 +161,14 @@
         <summary>Adds the specified <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object to the end of the collection</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function can throw the following exceptions:  
-  
+This function can throw the following exceptions:  
+ 
 |Exception|Description|  
 |---------------|-----------------|  
 |<xref:System.DirectoryServices.AccountManagement.PrincipalExistsException>|`user` already exists in the collection.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,17 +202,17 @@
         <summary>Searches for a <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that matches the parameters, and adds it to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function can throw the following exceptions:  
-  
+This function can throw the following exceptions:  
+ 
 |Exception|Description|  
 |---------------|-----------------|  
 |<xref:System.DirectoryServices.AccountManagement.PrincipalExistsException>|The principal matching these parameters already exists in the collection.|  
 |<xref:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException>|No principal matching the specified parameters was found.|  
 |<xref:System.DirectoryServices.AccountManagement.MultipleMatchesException>|More than one principal matches the specified parameters.|  
 |<xref:System.DirectoryServices.AccountManagement.ArgumentException>|Thrown when `identityType` is an empty string|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,14 +239,14 @@
         <summary>Removes all Principals from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function can throw the following exceptions:  
-  
+This function can throw the following exceptions:  
+ 
 |Exception|Description|  
 |---------------|-----------------|  
 |<xref:System.InvalidOperation>|If this method is called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> PrincipalCollection, the  <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> property cannot be cleared because one or more of the group's members have this group as their primary group|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -389,15 +389,15 @@
         <returns>Returns a <see langword="bool" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function can throw the following exceptions:  
-  
+This function can throw the following exceptions:  
+ 
 |Exception|Description|  
 |---------------|-----------------|  
 |<xref:System.DirectoryServices.AccountManagement.MultipleMatchesException>|There are multiple principals matching these parameters.|  
 |<xref:System.DirectoryServices.AccountManagement.ArgumentException>|The `identityType` parameter cannot be empty.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -424,10 +424,10 @@
         <summary>Copies the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> objects from this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" /> into the specified array, starting at the specified position index in array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `array` must be one-dimensional.  If it is not, an <xref:System.ArgumentException> is thrown.  Further exceptions are thrown if the number of elements to copy is greater than the available space from `index` to the end of `array`, if `array` is `null`, or if `index` is less than 0.  
-  
+`array` must be one-dimensional.  If it is not, an <xref:System.ArgumentException> is thrown.  Further exceptions are thrown if the number of elements to copy is greater than the available space from `index` to the end of `array`, if `array` is `null`, or if `index` is less than 0.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -478,10 +478,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> containing the principals in the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it.  Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System.Collections.IEnumerable.GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
-  
+Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it.  Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System.Collections.IEnumerable.GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -548,14 +548,14 @@
         <returns>Returns a <see langword="bool" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function can throw the following exceptions:  
-  
+This function can throw the following exceptions:  
+ 
 |Exception|Description|  
 |---------------|-----------------|  
 |<xref:System.InvalidOperation>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -586,14 +586,14 @@
         <returns>Returns a <see langword="bool" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function can throw the following exceptions:  
-  
+This function can throw the following exceptions:  
+ 
 |Exception|Description|  
 |---------------|-----------------|  
 |<xref:System.InvalidOperation>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -624,14 +624,14 @@
         <returns>Returns a <see langword="bool" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function can throw the following exceptions:  
-  
+This function can throw the following exceptions:  
+ 
 |Exception|Description|  
 |---------------|-----------------|  
 |<xref:System.InvalidOperation>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -662,14 +662,14 @@
         <returns>Returns a <see langword="bool" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function can throw the following exceptions:  
-  
+This function can throw the following exceptions:  
+ 
 |Exception|Description|  
 |---------------|-----------------|  
 |<xref:System.InvalidOperation>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -704,17 +704,17 @@
         <returns>Returns a <see langword="bool" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This function can throw the following exceptions:  
-  
+This function can throw the following exceptions:  
+ 
 |Exception|Description|  
 |---------------|-----------------|  
 |<xref:System.InvalidOperation>|This method was called on the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members> collection for a domain group, and the domain principal to be removed is a member of the group by virtue of its `primaryGroupId` attribute.|  
 |<xref:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException>|No principal matching the specified parameters was found.|  
 |<xref:System.DirectoryServices.AccountManagement.MultipleMatchesException>|More than one principal matches the specified parameters.  In theory, this should never happen, because <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Add%2A> throws an exception when there is an attempt to add duplicate principals to the collection.  However, it is possible that another API created the duplicate.|  
 |<xref:System.DirectoryServices.AccountManagement.ArgumentException>|Thrown when `identityType` is an empty string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -764,10 +764,10 @@
         <summary>Copies the <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> objects from this <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" /> into the specified array, starting at the specified position index in array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `array` must be one-dimensional.  If it is not, an <xref:System.ArgumentException> is thrown.  Further exceptions are thrown if the number of elements to copy is greater than the available space from `index` to the end of `array`, if `array` is `null`, or if `index` is less than 0.  
-  
+`array` must be one-dimensional.  If it is not, an <xref:System.ArgumentException> is thrown.  Further exceptions are thrown if the number of elements to copy is greater than the available space from `index` to the end of `array`, if `array` is `null`, or if `index` is less than 0.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -817,10 +817,10 @@
         <value>Returns a <see langword="bool" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Always returns `false`.  
-  
+Always returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -871,10 +871,10 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> containing the principals in the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it.  Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System.Collections.IEnumerable.GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
-  
+Conceptually, each instance of <xref:System.DirectoryServices.AccountManagement.PrincipalCollection> has a single enumerator associated with it.  Although multiple calls to <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.System.Collections.IEnumerable.GetEnumerator%2A> return distinct <xref:System.Collections.IEnumerator> objects, they share the same internal state.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -888,10 +888,10 @@
         <summary>Removes the specified principal from the collection, and returns <see langword="true" /> if the specified principal object was a member of the collection, and <see langword="false" /> otherwise (in which case no operation is performed).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As with <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Add%2A>, and <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Contains%2A> there are four overloads to this function, but they all do the same thing.  The extra overloads are only implemented to improve usability, so that developers using Intellisense see overloads that take a <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal>, or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> object.  Calling any one of the User, Group, or Computer overloads is exactly equivalent to calling the <xref:System.DirectoryServices.AccountManagement.Principal> overload.  
-  
+As with <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Add%2A>, and <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Contains%2A> there are four overloads to this function, but they all do the same thing.  The extra overloads are only implemented to improve usability, so that developers using Intellisense see overloads that take a <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal>, or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> object.  Calling any one of the User, Group, or Computer overloads is exactly equivalent to calling the <xref:System.DirectoryServices.AccountManagement.Principal> overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -905,10 +905,10 @@
         <summary>Returns true if the specified Principal is a member of the PrincipalCollection, false otherwise.  The Principal can be specified in the same manner as in the <see cref="Overload:System.DirectoryServices.AccountManagement.PrincipalCollection.Add" />.methods.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As with <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Add%2A>, and <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Remove%2A> there are four overloads to this function, but they all do the same thing.  The extra overloads are only implemented to improve usability, so that developers using Intellisense see overloads that take a <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal>, or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> object.  Calling any one of the User, Group, or Computer overloads is exactly equivalent to calling the <xref:System.DirectoryServices.AccountManagement.Principal> overload.  
-  
+As with <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Add%2A>, and <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Remove%2A> there are four overloads to this function, but they all do the same thing.  The extra overloads are only implemented to improve usability, so that developers using Intellisense see overloads that take a <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal>, or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> object.  Calling any one of the User, Group, or Computer overloads is exactly equivalent to calling the <xref:System.DirectoryServices.AccountManagement.Principal> overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -922,10 +922,10 @@
         <summary>Adds the specified principal to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- As with <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Remove%2A> and <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Contains%2A>, There are four overloads to this function, but they all do the same thing.  The extra overloads are only implemented to improve usability, so that developers using Intellisense see overloads that take a <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal>, or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> object.  Calling any one of the User, Group, or Computer overloads is exactly equivalent to calling the <xref:System.DirectoryServices.AccountManagement.Principal> overload.  
-  
+As with <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Remove%2A> and <xref:System.DirectoryServices.AccountManagement.PrincipalCollection.Contains%2A>, There are four overloads to this function, but they all do the same thing.  The extra overloads are only implemented to improve usability, so that developers using Intellisense see overloads that take a <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal>, or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> object.  Calling any one of the User, Group, or Computer overloads is exactly equivalent to calling the <xref:System.DirectoryServices.AccountManagement.Principal> overload.  
+ 
  ]]></format>
         </remarks>
       </Docs>

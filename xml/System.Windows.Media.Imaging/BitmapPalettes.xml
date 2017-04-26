@@ -14,20 +14,20 @@
     <summary>Defines several color palettes that are commonly used by bitmap images.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+<xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+ 
+Only [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] and [!INCLUDE[TLA#tla_gif](~/includes/tlasharptla-gif-md.md)] image formats support palettes.  
+ 
   
- Only [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] and [!INCLUDE[TLA#tla_gif](~/includes/tlasharptla-gif-md.md)] image formats support palettes.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,13 +49,13 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class.  Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class.  Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,18 +77,18 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+<xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,13 +110,13 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -138,18 +138,18 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+<xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -171,13 +171,13 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -199,18 +199,18 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+<xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,13 +232,13 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -260,18 +260,18 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+<xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -293,13 +293,13 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -321,18 +321,18 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+<xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -354,13 +354,13 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -382,18 +382,18 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+<xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -415,13 +415,13 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -443,18 +443,18 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+<xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -476,13 +476,13 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -504,18 +504,18 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+<xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -537,13 +537,13 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -565,18 +565,18 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+<xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -598,13 +598,13 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -626,18 +626,18 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+<xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -659,13 +659,13 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -687,18 +687,18 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+<xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -720,18 +720,18 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> is identical to the <xref:System.Windows.Media.Imaging.BitmapPalettes.Halftone216%2A> palette.  
+The <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> is identical to the <xref:System.Windows.Media.Imaging.BitmapPalettes.Halftone216%2A> palette.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -753,20 +753,20 @@
         <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapPalette" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPaletteTransparent%2A> is identical to the <xref:System.Windows.Media.Imaging.BitmapPalettes.Halftone216Transparent%2A> palette.  
+The <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPaletteTransparent%2A> is identical to the <xref:System.Windows.Media.Imaging.BitmapPalettes.Halftone216Transparent%2A> palette.  
+ 
+<xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
+ 
   
- <xref:System.Windows.Media.Imaging.BitmapPalettes> properties whose names end with "Transparent" have an additional "color" that is fully transparent. In the case of palettes that already have 256 colors, the last color is replaced by the transparent color.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
-  
- [!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
- [!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
-  
+The following code example demonstrates how to construct a new <xref:System.Windows.Media.Imaging.BitmapSource> by using a member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class. Although this example shows how to use the <xref:System.Windows.Media.Imaging.BitmapPalettes.WebPalette%2A> property, you can use any member of the <xref:System.Windows.Media.Imaging.BitmapPalettes> class in a similar way.  
+ 
+[!code-csharp[bitmapframeexample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
+[!code-vb[bitmapframeexample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

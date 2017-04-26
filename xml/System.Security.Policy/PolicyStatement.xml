@@ -27,21 +27,21 @@
     <summary>Represents the statement of a <see cref="T:System.Security.Policy.CodeGroup" /> describing the permissions and other information that apply to code with a particular set of evidence. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Security.Policy.PolicyStatement> consists of a set of granted permissions, and possible special attributes for the code group.  
+A <xref:System.Security.Policy.PolicyStatement> consists of a set of granted permissions, and possible special attributes for the code group.  
+ 
+Policy statements are typically used as the return value of a <xref:System.Security.Policy.PolicyLevel.Resolve%2A> operation on a <xref:System.Security.Policy.PolicyLevel>.  
+ 
   
- Policy statements are typically used as the return value of a <xref:System.Security.Policy.PolicyLevel.Resolve%2A> operation on a <xref:System.Security.Policy.PolicyLevel>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows the use of members of the <xref:System.Security.Policy.PolicyStatement> class  
-  
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#1)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#1)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#1)]  
-  
+The following code example shows the use of members of the <xref:System.Security.Policy.PolicyStatement> class  
+ 
+[!code-cpp[System.Security.Policy.PolicyStatement_Evt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#1)]
+[!code-csharp[System.Security.Policy.PolicyStatement_Evt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#1)]
+[!code-vb[System.Security.Policy.PolicyStatement_Evt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -64,14 +64,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.PolicyStatement" /> class with the specified <see cref="T:System.Security.PermissionSet" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Policy.PolicyStatement.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#2)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#2)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#2)]  
-  
+The following code example shows the use of the <xref:System.Security.Policy.PolicyStatement.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
+ 
+[!code-cpp[System.Security.Policy.PolicyStatement_Evt#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#2)]
+[!code-csharp[System.Security.Policy.PolicyStatement_Evt#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#2)]
+[!code-vb[System.Security.Policy.PolicyStatement_Evt#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,14 +96,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.PolicyStatement" /> class with the specified <see cref="T:System.Security.PermissionSet" /> and attributes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Policy.PolicyStatement.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#3)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#3)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#3)]  
-  
+The following code example shows the use of the <xref:System.Security.Policy.PolicyStatement.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
+ 
+[!code-cpp[System.Security.Policy.PolicyStatement_Evt#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#3)]
+[!code-csharp[System.Security.Policy.PolicyStatement_Evt#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#3)]
+[!code-vb[System.Security.Policy.PolicyStatement_Evt#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,14 +126,14 @@
         <value>The attributes of the policy statement.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.Attributes%2A> property to set the <xref:System.Security.Policy.PolicyStatementAttribute> flag. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#4)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#4)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#4)]  
-  
+The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.Attributes%2A> property to set the <xref:System.Security.Policy.PolicyStatementAttribute> flag. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
+ 
+[!code-cpp[System.Security.Policy.PolicyStatement_Evt#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#4)]
+[!code-csharp[System.Security.Policy.PolicyStatement_Evt#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#4)]
+[!code-vb[System.Security.Policy.PolicyStatement_Evt#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,19 +156,19 @@
         <value>A text string representing the attributes of the policy statement.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this property to get a text string of the attributes currently set for the <xref:System.Security.Policy.PolicyStatement>.  
+Use this property to get a text string of the attributes currently set for the <xref:System.Security.Policy.PolicyStatement>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.AttributeString%2A> property to get the policy statement attributes. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#13](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#13)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#13)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#13)]  
-  
+The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.AttributeString%2A> property to get the policy statement attributes. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
+ 
+[!code-cpp[System.Security.Policy.PolicyStatement_Evt#13](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#13)]
+[!code-csharp[System.Security.Policy.PolicyStatement_Evt#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#13)]
+[!code-vb[System.Security.Policy.PolicyStatement_Evt#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,14 +192,14 @@
         <returns>A new copy of the <see cref="T:System.Security.Policy.PolicyStatement" /> with <see cref="P:System.Security.Policy.PolicyStatement.PermissionSet" /> and <see cref="P:System.Security.Policy.PolicyStatement.Attributes" /> identical to those of the current <see cref="T:System.Security.Policy.PolicyStatement" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.Copy%2A> method to make a copy of the current policy statement. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#9)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#9)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#9)]  
-  
+The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.Copy%2A> method to make a copy of the current policy statement. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
+ 
+[!code-cpp[System.Security.Policy.PolicyStatement_Evt#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#9)]
+[!code-csharp[System.Security.Policy.PolicyStatement_Evt#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#9)]
+[!code-vb[System.Security.Policy.PolicyStatement_Evt#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#9)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,19 +232,19 @@
           <see langword="true" /> if the specified <see cref="T:System.Security.Policy.PolicyStatement" /> is equal to the current <see cref="T:System.Security.Policy.PolicyStatement" /> object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see the <xref:System.Object.Equals%2A> method.  
+For more information, see the <xref:System.Object.Equals%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.Equals%2A> method to determine whether a specified <xref:System.Security.Policy.PolicyStatement> object is equivalent to the current <xref:System.Security.Policy.PolicyStatement> object. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#10)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#10)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#10)]  
-  
+The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.Equals%2A> method to determine whether a specified <xref:System.Security.Policy.PolicyStatement> object is equivalent to the current <xref:System.Security.Policy.PolicyStatement> object. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
+ 
+[!code-cpp[System.Security.Policy.PolicyStatement_Evt#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#10)]
+[!code-csharp[System.Security.Policy.PolicyStatement_Evt#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#10)]
+[!code-vb[System.Security.Policy.PolicyStatement_Evt#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#10)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -270,14 +270,14 @@
         <summary>Reconstructs a security object with a given state from an XML encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.FromXml%2A> method to reconstruct a security object from an XML encoding. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#7)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#7)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#7)]  
-  
+The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.FromXml%2A> method to reconstruct a security object from an XML encoding. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
+ 
+[!code-cpp[System.Security.Policy.PolicyStatement_Evt#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#7)]
+[!code-csharp[System.Security.Policy.PolicyStatement_Evt#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#7)]
+[!code-vb[System.Security.Policy.PolicyStatement_Evt#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#7)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="et" /> parameter is <see langword="null" />.</exception>
@@ -334,19 +334,19 @@
         <returns>A hash code for the current <see cref="T:System.Security.Policy.PolicyStatement" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The hash code for two instances of the same permission might be different, hence a hash code should not be used to compare two <xref:System.Security.Policy.PolicyStatement> objects.  
+The hash code for two instances of the same permission might be different, hence a hash code should not be used to compare two <xref:System.Security.Policy.PolicyStatement> objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.GetHashCode%2A> method to get the hash code for the current policy statement. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#12)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#12)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#12)]  
-  
+The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.GetHashCode%2A> method to get the hash code for the current policy statement. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
+ 
+[!code-cpp[System.Security.Policy.PolicyStatement_Evt#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#12)]
+[!code-csharp[System.Security.Policy.PolicyStatement_Evt#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#12)]
+[!code-vb[System.Security.Policy.PolicyStatement_Evt#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -369,14 +369,14 @@
         <value>The <see cref="T:System.Security.PermissionSet" /> of the policy statement.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.PermissionSet%2A> property to add permissions to the policy statement. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#5)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#5)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#5)]  
-  
+The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.PermissionSet%2A> property to add permissions to the policy statement. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
+ 
+[!code-cpp[System.Security.Policy.PolicyStatement_Evt#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#5)]
+[!code-csharp[System.Security.Policy.PolicyStatement_Evt#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#5)]
+[!code-vb[System.Security.Policy.PolicyStatement_Evt#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -400,14 +400,14 @@
         <returns>An XML encoding of the security object, including any state information.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.ToXml%2A> method to create an XML encoding of the security object. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
-  
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#6)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#6)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#6)]  
-  
+The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.ToXml%2A> method to create an XML encoding of the security object. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
+ 
+[!code-cpp[System.Security.Policy.PolicyStatement_Evt#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#6)]
+[!code-csharp[System.Security.Policy.PolicyStatement_Evt#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#6)]
+[!code-vb[System.Security.Policy.PolicyStatement_Evt#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

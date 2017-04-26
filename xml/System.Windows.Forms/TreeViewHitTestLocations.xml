@@ -21,18 +21,18 @@
     <summary>Defines constants that represent areas of a <see cref="T:System.Windows.Forms.TreeView" /> or <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TreeViewHitTestLocations> enumeration is used by the <xref:System.Windows.Forms.TreeViewHitTestInfo> class.  
+The <xref:System.Windows.Forms.TreeViewHitTestLocations> enumeration is used by the <xref:System.Windows.Forms.TreeViewHitTestInfo> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.TreeViewHitTestLocations> enumeration. To run this example, paste the following code into a Windows Form that contains a <xref:System.Windows.Forms.TreeView> control named `treeView1`, and populate the <xref:System.Windows.Forms.TreeView> with items. Ensure that `treeview1` and the <xref:System.Windows.Forms.Control.MouseDown> event for the form are associated with the `HandleMouseDown` method in this example.  
-  
- [!code-csharp[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/CS/Form1.cs#1)]
- [!code-vb[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/VB/Form1.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Windows.Forms.TreeViewHitTestLocations> enumeration. To run this example, paste the following code into a Windows Form that contains a <xref:System.Windows.Forms.TreeView> control named `treeView1`, and populate the <xref:System.Windows.Forms.TreeView> with items. Ensure that `treeview1` and the <xref:System.Windows.Forms.Control.MouseDown> event for the form are associated with the `HandleMouseDown` method in this example.  
+ 
+[!code-csharp[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/CS/Form1.cs#1)]
+[!code-vb[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/VB/Form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

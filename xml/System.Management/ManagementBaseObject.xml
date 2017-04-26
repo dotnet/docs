@@ -46,12 +46,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementBaseObject" /> class that is serializable.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -73,25 +73,25 @@
         <value>Returns a <see cref="T:System.Management.ManagementPath" /> that contains the class path to the management object's class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- A <xref:System.Management.ManagementPath> that represents the path to the management object's class.  
-  
+A <xref:System.Management.ManagementPath> that represents the path to the management object's class.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example code lists all the classes with their class paths in the root\CIMV2 namespace.  
-  
- For the \\\MyBox\root\cimv2:Win32_LogicalDisk= 'C:' object, the class path is \\\MyBox\root\cimv2:Win32_LogicalDisk.  
-  
- [!code-csharp[wminet_ManagementBaseObject_ClassPath#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_ClassPath/cs/ManagementBaseObject_ClassPath.cs#1)]
- [!code-vb[wminet_ManagementBaseObject_ClassPath#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_ClassPath/vb/ManagementBaseObject_ClassPath.vb#1)]  
-  
+The following example code lists all the classes with their class paths in the root\CIMV2 namespace.  
+ 
+For the \\\MyBox\root\cimv2:Win32_LogicalDisk= 'C:' object, the class path is \\\MyBox\root\cimv2:Win32_LogicalDisk.  
+ 
+[!code-csharp[wminet_ManagementBaseObject_ClassPath#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_ClassPath/cs/ManagementBaseObject_ClassPath.cs#1)]
+[!code-vb[wminet_ManagementBaseObject_ClassPath#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_ClassPath/vb/ManagementBaseObject_ClassPath.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -114,12 +114,12 @@
         <returns>The new cloned object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -148,12 +148,12 @@
           <see langword="true" /> if the objects compared are equal according to the given options; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,12 +198,12 @@
           <see langword="true" /> if this is an instance of <see cref="T:System.Management.ManagementBaseObject" /> and represents the same object as this instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -226,12 +226,12 @@
         <returns>A hash code for the current object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,12 +258,12 @@
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data necessary to deserialize the field represented by this instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,20 +291,20 @@
         <returns>The value of the specified qualifier.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Management.ManagementBaseObject.GetPropertyQualifierValue%2A> method to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
- [!code-csharp[wminet_ManagementBaseObject_GetPropertyQualifierValue#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetPropertyQualifierValue/cs/ManagementBaseObject_GetPropertyQualifierValue.cs#1)]
- [!code-vb[wminet_ManagementBaseObject_GetPropertyQualifierValue#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetPropertyQualifierValue/vb/ManagementBaseObject_GetPropertyQualifierValue.vb#1)]  
-  
+The following example uses the <xref:System.Management.ManagementBaseObject.GetPropertyQualifierValue%2A> method to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
+[!code-csharp[wminet_ManagementBaseObject_GetPropertyQualifierValue#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetPropertyQualifierValue/cs/ManagementBaseObject_GetPropertyQualifierValue.cs#1)]
+[!code-vb[wminet_ManagementBaseObject_GetPropertyQualifierValue#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetPropertyQualifierValue/vb/ManagementBaseObject_GetPropertyQualifierValue.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -330,20 +330,20 @@
         <returns>The value of the specified property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example lists all the names of the processes running on the local computer. The code uses the <xref:System.Management.ManagementBaseObject.GetPropertyValue%2A> method to get the process names.  
-  
- [!code-csharp[wminet_ManagementBaseObject_GetPropertyValue#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetPropertyValue/cs/ManagementBaseObject_GetPropertyValue.cs#1)]
- [!code-vb[wminet_ManagementBaseObject_GetPropertyValue#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetPropertyValue/vb/ManagementBaseObject_GetPropertyValue.vb#1)]  
-  
+The following example lists all the names of the processes running on the local computer. The code uses the <xref:System.Management.ManagementBaseObject.GetPropertyValue%2A> method to get the process names.  
+ 
+[!code-csharp[wminet_ManagementBaseObject_GetPropertyValue#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetPropertyValue/cs/ManagementBaseObject_GetPropertyValue.cs#1)]
+[!code-vb[wminet_ManagementBaseObject_GetPropertyValue#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetPropertyValue/vb/ManagementBaseObject_GetPropertyValue.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -369,20 +369,20 @@
         <returns>The value of the specified qualifier.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the **Win32_Process** class description by using the <xref:System.Management.ManagementBaseObject.GetQualifierValue%2A> method. For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
- [!code-csharp[wminet_ManagementBaseObject_GetQualifierValue#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetQualifierValue/cs/ManagementBaseObject_GetQualifierValue.cs#1)]
- [!code-vb[wminet_ManagementBaseObject_GetQualifierValue#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetQualifierValue/vb/ManagementBaseObject_GetQualifierValue.vb#1)]  
-  
+The following example displays the **Win32_Process** class description by using the <xref:System.Management.ManagementBaseObject.GetQualifierValue%2A> method. For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
+[!code-csharp[wminet_ManagementBaseObject_GetQualifierValue#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetQualifierValue/cs/ManagementBaseObject_GetQualifierValue.cs#1)]
+[!code-vb[wminet_ManagementBaseObject_GetQualifierValue#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetQualifierValue/vb/ManagementBaseObject_GetQualifierValue.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -408,21 +408,21 @@
         <returns>The textual representation of the object in the specified format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Currently, the only format that WMI supports is *Managed Object Format* (MOF). In the future, other formats will be supported, such as Extensible Markup Language (XML).  
-  
+Currently, the only format that WMI supports is *Managed Object Format* (MOF). In the future, other formats will be supported, such as Extensible Markup Language (XML).  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays the MOF code for the **Win32_Process** class by using the <xref:System.Management.ManagementBaseObject.GetText%2A> method. For more information about the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
- [!code-csharp[wminet_ManagementBaseObject_GetText#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetText/cs/ManagementBaseObject_GetText.cs#1)]
- [!code-vb[wminet_ManagementBaseObject_GetText#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetText/vb/ManagementBaseObject_GetText.vb#1)]  
-  
+The following example displays the MOF code for the **Win32_Process** class by using the <xref:System.Management.ManagementBaseObject.GetText%2A> method. For more information about the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
+[!code-csharp[wminet_ManagementBaseObject_GetText#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetText/cs/ManagementBaseObject_GetText.cs#1)]
+[!code-vb[wminet_ManagementBaseObject_GetText#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetText/vb/ManagementBaseObject_GetText.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -448,23 +448,23 @@
         <value>Returns an <see cref="T:System.Object" /> value that contains the management object for a specific class property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- An object instance that contains the value of the requested property.  
-  
+An object instance that contains the value of the requested property.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the instances of a WMI class.  
-  
- [!code-csharp[wminet_ManagementBaseObject_Item#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Item/cs/ManagementBaseObject_Item.cs#1)]
- [!code-vb[wminet_ManagementBaseObject_Item#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Item/vb/ManagementBaseObject_Item.vb#1)]  
-  
+The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the instances of a WMI class.  
+ 
+[!code-csharp[wminet_ManagementBaseObject_Item#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Item/cs/ManagementBaseObject_Item.cs#1)]
+[!code-vb[wminet_ManagementBaseObject_Item#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Item/vb/ManagementBaseObject_Item.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -508,23 +508,23 @@
         <value>Returns a <see cref="T:System.Management.PropertyDataCollection" /> that holds the properties for the management object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- A <xref:System.Management.PropertyDataCollection> that represents the properties of the management object.  
-  
+A <xref:System.Management.PropertyDataCollection> that represents the properties of the management object.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Management.ManagementBaseObject.Properties%2A> property to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
-  
- [!code-csharp[wminet_ManagementBaseObject_Properties#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Properties/cs/ManagementBaseObject_Properties.cs#1)]
- [!code-vb[wminet_ManagementBaseObject_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Properties/vb/ManagementBaseObject_Properties.vb#1)]  
-  
+The following example uses the <xref:System.Management.ManagementBaseObject.Properties%2A> property to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+ 
+[!code-csharp[wminet_ManagementBaseObject_Properties#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Properties/cs/ManagementBaseObject_Properties.cs#1)]
+[!code-vb[wminet_ManagementBaseObject_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Properties/vb/ManagementBaseObject_Properties.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -546,23 +546,23 @@
         <value>Returns a <see cref="T:System.Management.QualifierDataCollection" /> that holds the qualifiers for the management object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- A <xref:System.Management.QualifierDataCollection> that represents the qualifiers defined on the management object.  
-  
+A <xref:System.Management.QualifierDataCollection> that represents the qualifiers defined on the management object.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Management.ManagementBaseObject.Qualifiers%2A> property to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
- [!code-csharp[wminet_ManagementBaseObject_Qualifiers#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Qualifiers/cs/ManagementBaseObject_Qualifiers.cs#1)]
- [!code-vb[wminet_ManagementBaseObject_Qualifiers#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Qualifiers/vb/ManagementBaseObject_Qualifiers.vb#1)]  
-  
+The following example uses the <xref:System.Management.ManagementBaseObject.Qualifiers%2A> property to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
+[!code-csharp[wminet_ManagementBaseObject_Qualifiers#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Qualifiers/cs/ManagementBaseObject_Qualifiers.cs#1)]
+[!code-vb[wminet_ManagementBaseObject_Qualifiers#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Qualifiers/vb/ManagementBaseObject_Qualifiers.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -591,12 +591,12 @@
         <summary>Sets the value of the specified property qualifier.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -623,12 +623,12 @@
         <summary>Sets the value of the named property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -655,12 +655,12 @@
         <summary>Sets the value of the named qualifier.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
-  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -707,23 +707,23 @@
         <value>Returns a <see cref="T:System.Management.PropertyDataCollection" /> that contains the system properties for a management object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 ## Property Value  
- A <xref:System.Management.PropertyDataCollection> that represents the system properties of the management object.  
-  
+A <xref:System.Management.PropertyDataCollection> that represents the system properties of the management object.  
+ 
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Management.ManagementBaseObject.SystemProperties%2A> property to display the name and value of the system properties for the **Win32_Process** class. For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
-  
- [!code-csharp[wminet_ManagementBaseObject_SystemProperties#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_SystemProperties/cs/ManagementBaseObject_SystemProperties.cs#1)]
- [!code-vb[wminet_ManagementBaseObject_SystemProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_SystemProperties/vb/ManagementBaseObject_SystemProperties.vb#1)]  
-  
+The following example uses the <xref:System.Management.ManagementBaseObject.SystemProperties%2A> property to display the name and value of the system properties for the **Win32_Process** class. For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ 
+[!code-csharp[wminet_ManagementBaseObject_SystemProperties#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_SystemProperties/cs/ManagementBaseObject_SystemProperties.cs#1)]
+[!code-vb[wminet_ManagementBaseObject_SystemProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_SystemProperties/vb/ManagementBaseObject_SystemProperties.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

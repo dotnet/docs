@@ -29,10 +29,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.CharacterMetrics" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Media.CharacterMetrics> object is constructed using the default metric values.  
-  
+The <xref:System.Windows.Media.CharacterMetrics> object is constructed using the default metric values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -54,26 +54,26 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.CharacterMetrics" /> class by specifying the metrics as a string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `metrics` parameter is a comma-delimited string that specifies the <xref:System.Windows.Media.CharacterMetrics> properties in the following order:  
-  
+The `metrics` parameter is a comma-delimited string that specifies the <xref:System.Windows.Media.CharacterMetrics> properties in the following order:  
+ 
 -   <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>  
-  
+ 
 -   <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>  
-  
+ 
 -   <xref:System.Windows.Media.CharacterMetrics.Baseline%2A>  
-  
+ 
 -   <xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A>  
-  
+ 
 -   <xref:System.Windows.Media.CharacterMetrics.RightSideBearing%2A>  
-  
+ 
 -   <xref:System.Windows.Media.CharacterMetrics.TopSideBearing%2A>  
-  
+ 
 -   <xref:System.Windows.Media.CharacterMetrics.BottomSideBearing%2A>  
-  
- The first two properties, <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A> and <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, are required. However, the other five properties are optional, and will default to zero if not specified. For example, if you specify the string value of "0.75,0.75,,0.1" for the `metrics` parameter, the <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, and <xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A> properties are set—the unspecified properties are set to zero.  
-  
+ 
+The first two properties, <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A> and <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, are required. However, the other five properties are optional, and will default to zero if not specified. For example, if you specify the string value of "0.75,0.75,,0.1" for the `metrics` parameter, the <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, and <xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A> properties are set—the unspecified properties are set to zero.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -95,10 +95,10 @@
         <value>A value of type <see cref="T:System.Double" /> representing the baseline.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The return value represents the vertical offset from the bottom of the black box to the baseline. A positive value indicates the baseline is above the bottom of the black box, while a negative value indicates the baseline is below the bottom of the black box.  
-  
+The return value represents the vertical offset from the bottom of the black box to the baseline. A positive value indicates the baseline is above the bottom of the black box, while a negative value indicates the baseline is below the bottom of the black box.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -156,10 +156,10 @@
         <value>A value of type <see cref="T:System.Double" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A negative value indicates an overhang. The vertical advance for the character is the sum of the property values <xref:System.Windows.Media.CharacterMetrics.TopSideBearing%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, and <xref:System.Windows.Media.CharacterMetrics.BottomSideBearing%2A>. The vertical advance cannot be less than zero.  
-  
+A negative value indicates an overhang. The vertical advance for the character is the sum of the property values <xref:System.Windows.Media.CharacterMetrics.TopSideBearing%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, and <xref:System.Windows.Media.CharacterMetrics.BottomSideBearing%2A>. The vertical advance cannot be less than zero.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -186,22 +186,22 @@
           <see langword="true" /> if the objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.Windows.Media.CharacterMetrics> objects are equal if the following properties are equal:  
-  
- <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>  
-  
- <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>  
-  
- <xref:System.Windows.Media.CharacterMetrics.BottomSideBearing%2A>  
-  
- <xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A>  
-  
- <xref:System.Windows.Media.CharacterMetrics.RightSideBearing%2A>  
-  
- <xref:System.Windows.Media.CharacterMetrics.TopSideBearing%2A>  
-  
+Two <xref:System.Windows.Media.CharacterMetrics> objects are equal if the following properties are equal:  
+ 
+<xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>  
+ 
+<xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>  
+ 
+<xref:System.Windows.Media.CharacterMetrics.BottomSideBearing%2A>  
+ 
+<xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A>  
+ 
+<xref:System.Windows.Media.CharacterMetrics.RightSideBearing%2A>  
+ 
+<xref:System.Windows.Media.CharacterMetrics.TopSideBearing%2A>  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,12 +242,12 @@
         <value>A value of type <see cref="T:System.Double" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A negative value indicates an overhang. The horizontal advance for the character is  
-  
- the sum of the property values <xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>, and <xref:System.Windows.Media.CharacterMetrics.RightSideBearing%2A>. The horizontal advance cannot be less than zero.  
-  
+A negative value indicates an overhang. The horizontal advance for the character is  
+ 
+the sum of the property values <xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>, and <xref:System.Windows.Media.CharacterMetrics.RightSideBearing%2A>. The horizontal advance cannot be less than zero.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,26 +269,26 @@
         <value>A value of type <see cref="T:System.String" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.String> value is a comma-delimited string that specifies the <xref:System.Windows.Media.CharacterMetrics> properties in the following order:  
-  
+The <xref:System.String> value is a comma-delimited string that specifies the <xref:System.Windows.Media.CharacterMetrics> properties in the following order:  
+ 
 -   <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>  
-  
+ 
 -   <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>  
-  
+ 
 -   <xref:System.Windows.Media.CharacterMetrics.Baseline%2A>  
-  
+ 
 -   <xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A>  
-  
+ 
 -   <xref:System.Windows.Media.CharacterMetrics.RightSideBearing%2A>  
-  
+ 
 -   <xref:System.Windows.Media.CharacterMetrics.TopSideBearing%2A>  
-  
+ 
 -   <xref:System.Windows.Media.CharacterMetrics.BottomSideBearing%2A>  
-  
- The first two properties, <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A> and <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, are required. However, the other five properties are optional, and will default to zero if not specified. For example, if you specify the string value of "`0.75,0.75,,0.1`" for the `metrics` parameter, the <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, and <xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A> properties are set—the unspecified properties are set to zero.  
-  
+ 
+The first two properties, <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A> and <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, are required. However, the other five properties are optional, and will default to zero if not specified. For example, if you specify the string value of "`0.75,0.75,,0.1`" for the `metrics` parameter, the <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, and <xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A> properties are set—the unspecified properties are set to zero.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -310,12 +310,12 @@
         <value>A value of type <see cref="T:System.Double" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A negative value indicates an overhang. The horizontal advance for the character is  
-  
- the sum of the property values <xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>, and <xref:System.Windows.Media.CharacterMetrics.RightSideBearing%2A>. The horizontal advance cannot be less than zero.  
-  
+A negative value indicates an overhang. The horizontal advance for the character is  
+ 
+the sum of the property values <xref:System.Windows.Media.CharacterMetrics.LeftSideBearing%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxWidth%2A>, and <xref:System.Windows.Media.CharacterMetrics.RightSideBearing%2A>. The horizontal advance cannot be less than zero.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -337,10 +337,10 @@
         <value>A value of type <see cref="T:System.Double" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Recommended white space above the black box. The vertical advance for the character is the sum of the property values <xref:System.Windows.Media.CharacterMetrics.TopSideBearing%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, and <xref:System.Windows.Media.CharacterMetrics.BottomSideBearing%2A>. The vertical advance cannot be less than zero.  
-  
+Recommended white space above the black box. The vertical advance for the character is the sum of the property values <xref:System.Windows.Media.CharacterMetrics.TopSideBearing%2A>, <xref:System.Windows.Media.CharacterMetrics.BlackBoxHeight%2A>, and <xref:System.Windows.Media.CharacterMetrics.BottomSideBearing%2A>. The vertical advance cannot be less than zero.  
+ 
  ]]></format>
         </remarks>
       </Docs>

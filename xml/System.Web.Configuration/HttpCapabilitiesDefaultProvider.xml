@@ -68,10 +68,10 @@
         <summary>Adds an HTTP request string to use to parse browser capability information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds to the collection that is created by the `use` child element of the `browserCaps` element of the Web.config file.  
-  
+This method adds to the collection that is created by the `use` child element of the `browserCaps` element of the Web.config file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,10 +96,10 @@
         <summary>Adds a search string that modifies a browser definition.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method adds to the collection that is created by the `filter` child element of the `browserCaps` element of the Web.config file.  
-  
+This method adds to the collection that is created by the `filter` child element of the `browserCaps` element of the Web.config file.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -161,10 +161,10 @@
         <value>The type of the class that is used to hold the results from parsing the <see langword="browserCaps" /> element of the Web.config file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property corresponds to the `result` child element of the `browserCaps` element of the Web.config file.  
-  
+This property corresponds to the `result` child element of the `browserCaps` element of the Web.config file.  
+ 
  ]]></format>
         </remarks>
       </Docs>

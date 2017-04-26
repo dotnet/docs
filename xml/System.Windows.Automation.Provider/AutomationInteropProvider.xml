@@ -32,18 +32,18 @@
         <summary>Contains a value that, when returned as the first element of the array passed by the UI Automation provider to <see cref="M:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId" />, indicates that the ID is partial and should be appended to the ID provided by the base provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field is typically used in the implementation of <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId%2A> for elements in a fragment that are not directly hosted in a window.  
+This field is typically used in the implementation of <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId%2A> for elements in a fragment that are not directly hosted in a window.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is an implementation of <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId%2A?displayProperty=fullName> for a list item.  
-  
- [!code-csharp[UIAFragmentProvider_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListItemFragment.cs#101)]
- [!code-vb[UIAFragmentProvider_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListItemFragment.vb#101)]  
-  
+The following example is an implementation of <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId%2A?displayProperty=fullName> for a list item.  
+ 
+[!code-csharp[UIAFragmentProvider_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListItemFragment.cs#101)]
+[!code-vb[UIAFragmentProvider_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListItemFragment.vb#101)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -66,11 +66,11 @@
           <see langword="true" /> if a client is subscribed to events; otherwise <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[UIAFragmentProvider_snip#122](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#122)]
- [!code-vb[UIAFragmentProvider_snip#122](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#122)]  
-  
+[!code-csharp[UIAFragmentProvider_snip#122](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#122)]
+[!code-vb[UIAFragmentProvider_snip#122](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#122)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,16 +96,16 @@
         <returns>The raw element provider for the specified window.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The interface returned by this method can only be passed back to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)]. Attempting to call a method on the interface will raise an exception.  
+The interface returned by this method can only be passed back to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)]. Attempting to call a method on the interface will raise an exception.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[UIAFragmentProvider_snip#121](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#121)]
- [!code-vb[UIAFragmentProvider_snip#121](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#121)]  
-  
+[!code-csharp[UIAFragmentProvider_snip#121](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#121)]
+[!code-vb[UIAFragmentProvider_snip#121](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#121)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,10 +127,10 @@
         <summary>Specifies the maximum number of events to send before batching.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value determines whether notification is given of individual events such as <xref:System.Windows.Automation.StructureChangeType> or of bulk events such as <xref:System.Windows.Automation.StructureChangeType>.  
-  
+This value determines whether notification is given of individual events such as <xref:System.Windows.Automation.StructureChangeType> or of bulk events such as <xref:System.Windows.Automation.StructureChangeType>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -177,16 +177,16 @@
         <summary>Raises a pattern event or a custom event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Pattern events should not be raised just by a pattern implementation. For example, an <xref:System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent> should be raised whenever the control is invoked, either through <xref:System.Windows.Automation.InvokePattern.Invoke%2A> or through mouse or keyboard input. In this way, clients can be informed about system events.  
+Pattern events should not be raised just by a pattern implementation. For example, an <xref:System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent> should be raised whenever the control is invoked, either through <xref:System.Windows.Automation.InvokePattern.Invoke%2A> or through mouse or keyboard input. In this way, clients can be informed about system events.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-csharp[UIAFragmentProvider_snip#122](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#122)]
- [!code-vb[UIAFragmentProvider_snip#122](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#122)]  
-  
+[!code-csharp[UIAFragmentProvider_snip#122](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#122)]
+[!code-vb[UIAFragmentProvider_snip#122](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#122)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -213,11 +213,11 @@
         <summary>Raises an event when a [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[UIAFragmentProvider_snip#123](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#123)]
- [!code-vb[UIAFragmentProvider_snip#123](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#123)]  
-  
+[!code-csharp[UIAFragmentProvider_snip#123](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#123)]
+[!code-vb[UIAFragmentProvider_snip#123](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#123)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,22 +244,22 @@
         <summary>Raises an event when the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree has changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An example of a change in the tree structure is child elements being added to or removed from a list box, or being expanded or collapsed in a tree view.  
+An example of a change in the tree structure is child elements being added to or removed from a list box, or being expanded or collapsed in a tree view.  
+ 
+When a child element is removed, the runtime identifier of either the element, or of its container, is passed to the <xref:System.Windows.Automation.StructureChangedEventArgs> constructor. In the current version of [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)], however, there is no easy way for an instance of a provider to discover its runtime identifier. The <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId%2A> method normally returns an array that contains <xref:System.Windows.Automation.Provider.AutomationInteropProvider.AppendRuntimeId>, a magic number that instructs the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] system to create a unique identifer for every instance of the control. The raw value provided by <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId%2A> should not be used in events, because it is meaningless to clients and cannot be used to identify a specific instance.  
+ 
+Because of this limitation, events of type <xref:System.Windows.Automation.StructureChangeType> and <xref:System.Windows.Automation.StructureChangeType> are not very useful. As an alternative, always use <xref:System.Windows.Automation.StructureChangeType> and <xref:System.Windows.Automation.StructureChangeType>, passing 0 as the runtime identifer. You cannot use `null`, as this will raise an exception. Clients will be notified that a change has been made in the container (identified by the `sender` parameter passed to the <xref:System.Windows.Automation.StructureChangedEventHandler>), without specific notice of what children have been added or removed.  
+ 
   
- When a child element is removed, the runtime identifier of either the element, or of its container, is passed to the <xref:System.Windows.Automation.StructureChangedEventArgs> constructor. In the current version of [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)], however, there is no easy way for an instance of a provider to discover its runtime identifier. The <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId%2A> method normally returns an array that contains <xref:System.Windows.Automation.Provider.AutomationInteropProvider.AppendRuntimeId>, a magic number that instructs the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] system to create a unique identifer for every instance of the control. The raw value provided by <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId%2A> should not be used in events, because it is meaningless to clients and cannot be used to identify a specific instance.  
-  
- Because of this limitation, events of type <xref:System.Windows.Automation.StructureChangeType> and <xref:System.Windows.Automation.StructureChangeType> are not very useful. As an alternative, always use <xref:System.Windows.Automation.StructureChangeType> and <xref:System.Windows.Automation.StructureChangeType>, passing 0 as the runtime identifer. You cannot use `null`, as this will raise an exception. Clients will be notified that a change has been made in the container (identified by the `sender` parameter passed to the <xref:System.Windows.Automation.StructureChangedEventHandler>), without specific notice of what children have been added or removed.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows how to raise an event when children are added to, or removed from, a custom list box.  
-  
- [!code-csharp[FragmentProvider#101](~/samples/snippets/csharp/VS_Snippets_Wpf/FragmentProvider/CSharp/ListFragment.cs#101)]
- [!code-vb[FragmentProvider#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FragmentProvider/VisualBasic/ListFragment.vb#101)]  
-  
+The following example shows how to raise an event when children are added to, or removed from, a custom list box.  
+ 
+[!code-csharp[FragmentProvider#101](~/samples/snippets/csharp/VS_Snippets_Wpf/FragmentProvider/CSharp/ListFragment.cs#101)]
+[!code-vb[FragmentProvider#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FragmentProvider/VisualBasic/ListFragment.vb#101)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -291,11 +291,11 @@
         <returns>A pointer to data that should be assigned to <see cref="P:System.Windows.Forms.Message.Result" /> before passing the message to the base window procedure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[UIAFragmentProvider_snip#116](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#116)]
- [!code-vb[UIAFragmentProvider_snip#116](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#116)]  
-  
+[!code-csharp[UIAFragmentProvider_snip#116](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#116)]
+[!code-vb[UIAFragmentProvider_snip#116](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#116)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -318,10 +318,10 @@
         <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Animation.ClockCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Animation.ClockCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -344,12 +344,12 @@
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Animation.ClockCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
- Example  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Animation.ClockCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+ 
+Example  
+ 
  ]]></format>
         </remarks>
       </Docs>

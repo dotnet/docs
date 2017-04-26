@@ -18,20 +18,20 @@
     <summary>Provides a collection container that enables ASP.NET server controls to maintain a list of their child controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can access any of the properties and methods of the <xref:System.Web.UI.ControlCollection> class through the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> property. Since the <xref:System.Web.UI.Control> class is the base class for all ASP.NET server controls, all server controls inherit this property.  
+You can access any of the properties and methods of the <xref:System.Web.UI.ControlCollection> class through the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> property. Since the <xref:System.Web.UI.Control> class is the base class for all ASP.NET server controls, all server controls inherit this property.  
+ 
+For more information about collections, see [Collections and Data Structures](http://msdn.microsoft.com/library/60cc581f-1db5-445b-ba04-a173396bf872).  
+ 
   
- For more information about collections, see [Collections and Data Structures](http://msdn.microsoft.com/library/60cc581f-1db5-445b-ba04-a173396bf872).  
-  
-   
-  
+ 
 ## Examples  
- The following code example overrides the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> method to create two controls, both instances of the custom class named `ChildControl`, which has a string property named `Message`. When created, the two controls are added to the <xref:System.Web.UI.ControlCollection>. The <xref:System.Web.UI.ControlCollection.Add%2A> method is called on each of these controls to add them to the class that contains this version of <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName>. The <xref:System.Web.UI.Control.ChildControlsCreated%2A> property is set to `true` so that these controls will not be created again unnecessarily.  
-  
- [!code-csharp[Control_Sample_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Control_Sample_1/CS/control_sample.cs#1)]
- [!code-vb[Control_Sample_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Control_Sample_1/VB/control_sample.vb#1)]  
-  
+The following code example overrides the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> method to create two controls, both instances of the custom class named `ChildControl`, which has a string property named `Message`. When created, the two controls are added to the <xref:System.Web.UI.ControlCollection>. The <xref:System.Web.UI.ControlCollection.Add%2A> method is called on each of these controls to add them to the class that contains this version of <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName>. The <xref:System.Web.UI.Control.ChildControlsCreated%2A> property is set to `true` so that these controls will not be created again unnecessarily.  
+ 
+[!code-csharp[Control_Sample_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Control_Sample_1/CS/control_sample.cs#1)]
+[!code-vb[Control_Sample_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Control_Sample_1/VB/control_sample.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,13 +53,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ControlCollection" /> class for the specified parent server control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is a custom <xref:System.Web.UI.ControlCollection> class that overrides the constructor to write messages (which include the name of the <xref:System.Web.UI.ControlCollection.Owner%2A> property) to the trace log when an instance of the collection is created. You must enable tracing for the page or application for this example to work.  
-  
- [!code-csharp[System.Web.UI.ControlCollection_CTor_Owner#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_CTor_Owner/cs/controlcollection_7.cs#1)]
- [!code-vb[System.Web.UI.ControlCollection_CTor_Owner#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_CTor_Owner/VB/controlcollection_7.vb#1)]  
-  
+The following code example is a custom <xref:System.Web.UI.ControlCollection> class that overrides the constructor to write messages (which include the name of the <xref:System.Web.UI.ControlCollection.Owner%2A> property) to the trace log when an instance of the collection is created. You must enable tracing for the page or application for this example to work.  
+ 
+[!code-csharp[System.Web.UI.ControlCollection_CTor_Owner#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_CTor_Owner/cs/controlcollection_7.cs#1)]
+[!code-vb[System.Web.UI.ControlCollection_CTor_Owner#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_CTor_Owner/VB/controlcollection_7.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Occurs if the <paramref name="owner" /> parameter is <see langword="null" />.</exception>
@@ -85,20 +85,20 @@
         <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The new control is added to the end of an ordinal index array. The control can be an instance of any ASP.NET server control, a custom server control you create, or a literal control.  
+The new control is added to the end of an ordinal index array. The control can be an instance of any ASP.NET server control, a custom server control you create, or a literal control.  
+ 
+To add a control to the collection at a specific index location, use the <xref:System.Web.UI.ControlCollection.AddAt%2A> method.  
+ 
   
- To add a control to the collection at a specific index location, use the <xref:System.Web.UI.ControlCollection.AddAt%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.UI.ControlCollection.Add%2A> method to add a series of template items, the number of which are taken from the server control's view state, to a custom templated control.  
-  
- [!code-csharp[TemplatedDataBoundControl#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplatedDataBoundControl/CS/templatedataboundcontrol.cs#2)]
- [!code-vb[TemplatedDataBoundControl#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplatedDataBoundControl/VB/templatedataboundcontrol.vb#2)]  
-  
+The following code example uses the <xref:System.Web.UI.ControlCollection.Add%2A> method to add a series of template items, the number of which are taken from the server control's view state, to a custom templated control.  
+ 
+[!code-csharp[TemplatedDataBoundControl#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplatedDataBoundControl/CS/templatedataboundcontrol.cs#2)]
+[!code-vb[TemplatedDataBoundControl#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplatedDataBoundControl/VB/templatedataboundcontrol.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Thrown if the <paramref name="child" /> parameter does not specify a control.</exception>
@@ -127,18 +127,18 @@
         <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the collection at the specified index location.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The added control can be an instance of any ASP.NET server control, a custom server control you create, or a literal control.  
+The added control can be an instance of any ASP.NET server control, a custom server control you create, or a literal control.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.UI.ControlCollection.AddAt%2A> method to create a new <xref:System.Web.UI.LiteralControl> named `ChildControl2` and add it to the `myButton` control's <xref:System.Web.UI.ControlCollection> collection at the index location of 1.  
-  
- [!code-csharp[System.Web.UI.ControlCollection_NewSamples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#1)]
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#1)]  
-  
+The following code example uses the <xref:System.Web.UI.ControlCollection.AddAt%2A> method to create a new <xref:System.Web.UI.LiteralControl> named `ChildControl2` and add it to the `myButton` control's <xref:System.Web.UI.ControlCollection> collection at the index location of 1.  
+ 
+[!code-csharp[System.Web.UI.ControlCollection_NewSamples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#1)]
+[!code-vb[System.Web.UI.ControlCollection_NewSamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="child" /> parameter does not specify a control.</exception>
@@ -163,18 +163,18 @@
         <summary>Removes all controls from the current server control's <see cref="T:System.Web.UI.ControlCollection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to empty a custom control's <xref:System.Web.UI.ControlCollection> when you override the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> and <xref:System.Web.UI.Control.DataBind%2A> methods. Do this when you develop composite, templated controls or templated data-bound controls.  
+Use this method to empty a custom control's <xref:System.Web.UI.ControlCollection> when you override the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> and <xref:System.Web.UI.Control.DataBind%2A> methods. Do this when you develop composite, templated controls or templated data-bound controls.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates overriding the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> method, and using the <xref:System.Web.UI.ControlCollection.Clear%2A> method to delete all child controls previously in the <xref:System.Web.UI.ControlCollection> object. In this case, you must do this so that outdated objects in your control's <xref:System.Web.UI.ControlCollection> are not displayed inappropriately.  
-  
- [!code-csharp[TemplatedDataBoundControl#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplatedDataBoundControl/CS/templatedataboundcontrol.cs#2)]
- [!code-vb[TemplatedDataBoundControl#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplatedDataBoundControl/VB/templatedataboundcontrol.vb#2)]  
-  
+The following code example demonstrates overriding the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> method, and using the <xref:System.Web.UI.ControlCollection.Clear%2A> method to delete all child controls previously in the <xref:System.Web.UI.ControlCollection> object. In this case, you must do this so that outdated objects in your control's <xref:System.Web.UI.ControlCollection> are not displayed inappropriately.  
+ 
+[!code-csharp[TemplatedDataBoundControl#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplatedDataBoundControl/CS/templatedataboundcontrol.cs#2)]
+[!code-vb[TemplatedDataBoundControl#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplatedDataBoundControl/VB/templatedataboundcontrol.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,11 +201,11 @@
           <see langword="true" /> if the specified server control exists in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-csharp[System.Web.UI.ctrlCollection_Contains#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.CtrlCollection_Contains/CS/ctrlcollection_contains.cs.aspx#1)]
- [!code-vb[System.Web.UI.ctrlCollection_Contains#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.CtrlCollection_Contains/VB/ctrlcollection_contains.vb.aspx#1)]  
-  
+[!code-csharp[System.Web.UI.ctrlCollection_Contains#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.CtrlCollection_Contains/CS/ctrlcollection_contains.cs.aspx#1)]
+[!code-vb[System.Web.UI.ctrlCollection_Contains#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.CtrlCollection_Contains/VB/ctrlcollection_contains.vb.aspx#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -252,13 +252,13 @@
         <value>The number of server controls in the <see cref="T:System.Web.UI.ControlCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.ControlCollection.Count%2A> property to iterate through a control's <xref:System.Web.UI.ControlCollection> object. The use of the <xref:System.Web.UI.Control.HasControls%2A?displayProperty=fullName> property verifies that the control has child controls. If <xref:System.Web.UI.Control.HasControls%2A?displayProperty=fullName> returns `false`, the remaining code does not run.  
-  
- [!code-csharp[Classic Control.HasControls Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Control.HasControls Example/CS/source.cs#1)]
- [!code-vb[Classic Control.HasControls Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Control.HasControls Example/VB/source.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Web.UI.ControlCollection.Count%2A> property to iterate through a control's <xref:System.Web.UI.ControlCollection> object. The use of the <xref:System.Web.UI.Control.HasControls%2A?displayProperty=fullName> property verifies that the control has child controls. If <xref:System.Web.UI.Control.HasControls%2A?displayProperty=fullName> returns `false`, the remaining code does not run.  
+ 
+[!code-csharp[Classic Control.HasControls Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Control.HasControls Example/CS/source.cs#1)]
+[!code-vb[Classic Control.HasControls Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Control.HasControls Example/VB/source.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -281,13 +281,13 @@
         <returns>The enumerator to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a method that enumerates through the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.Button> control, `myButton`. When the enumerator is created, the <xref:System.Web.UI.ControlCollection.IsSynchronized%2A> property is checked to see if the operation is thread safe, and if it is not, the <xref:System.Web.UI.ControlCollection.SyncRoot%2A> property is used to obtain an object to make the operation thread safe. When the enumeration is completed, the value of the <xref:System.Web.UI.ControlCollection.IsReadOnly%2A> property is written as the <xref:System.Web.UI.WebControls.Label.Text%2A> property of a <xref:System.Web.UI.WebControls.Label> control on the containing page.  
-  
- [!code-csharp[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#2)]
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#2)]  
-  
+The following code example creates a method that enumerates through the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.Button> control, `myButton`. When the enumerator is created, the <xref:System.Web.UI.ControlCollection.IsSynchronized%2A> property is checked to see if the operation is thread safe, and if it is not, the <xref:System.Web.UI.ControlCollection.SyncRoot%2A> property is used to obtain an object to make the operation thread safe. When the enumeration is completed, the value of the <xref:System.Web.UI.ControlCollection.IsReadOnly%2A> property is written as the <xref:System.Web.UI.WebControls.Label.Text%2A> property of a <xref:System.Web.UI.WebControls.Label> control on the containing page.  
+ 
+[!code-csharp[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#2)]
+[!code-vb[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -313,18 +313,18 @@
         <returns>The index of the specified server control. If the server control is not currently a member of the collection, it returns -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to determine the index location of the specified server control in the <xref:System.Web.UI.ControlCollection> object.  
+Use this method to determine the index location of the specified server control in the <xref:System.Web.UI.ControlCollection> object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.UI.ControlCollection.IndexOf%2A> method to write the index location of a control, `myLiteralControl`, in the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.Button> control named `myButton`.  
-  
- [!code-csharp[System.Web.UI.ControlCollection_NewSamples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#1)]
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#1)]  
-  
+The following code example uses the <xref:System.Web.UI.ControlCollection.IndexOf%2A> method to write the index location of a control, `myLiteralControl`, in the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.Button> control named `myButton`.  
+ 
+[!code-csharp[System.Web.UI.ControlCollection_NewSamples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#1)]
+[!code-vb[System.Web.UI.ControlCollection_NewSamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -347,13 +347,13 @@
           <see langword="true" /> if the control is read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a method that enumerates through the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.Button> control, `myButton`. When the enumerator is created, the <xref:System.Web.UI.ControlCollection.IsSynchronized%2A> property is checked to see if the operation is thread safe, and if it is not, the <xref:System.Web.UI.ControlCollection.SyncRoot%2A> property is used to obtain an object to make the operation thread safe. When the enumeration is complete, the value of the <xref:System.Web.UI.ControlCollection.IsReadOnly%2A> property is written as the <xref:System.Web.UI.WebControls.Label.Text%2A> property of a <xref:System.Web.UI.WebControls.Label> control on the containing page.  
-  
- [!code-csharp[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#2)]
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#2)]  
-  
+The following code example creates a method that enumerates through the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.Button> control, `myButton`. When the enumerator is created, the <xref:System.Web.UI.ControlCollection.IsSynchronized%2A> property is checked to see if the operation is thread safe, and if it is not, the <xref:System.Web.UI.ControlCollection.SyncRoot%2A> property is used to obtain an object to make the operation thread safe. When the enumeration is complete, the value of the <xref:System.Web.UI.ControlCollection.IsReadOnly%2A> property is written as the <xref:System.Web.UI.WebControls.Label.Text%2A> property of a <xref:System.Web.UI.WebControls.Label> control on the containing page.  
+ 
+[!code-csharp[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#2)]
+[!code-vb[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -375,13 +375,13 @@
         <value>This property is always <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a method that enumerates through the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.Button> control, `myButton`. When the enumerator is created, the <xref:System.Web.UI.ControlCollection.IsSynchronized%2A> property is checked to see if the operation is thread safe, and if it is not, the <xref:System.Web.UI.ControlCollection.SyncRoot%2A> property is used to obtain an object to make the operation thread safe. When the enumeration is complete, the value of the <xref:System.Web.UI.ControlCollection.IsReadOnly%2A> property is written as the <xref:System.Web.UI.WebControls.Label.Text%2A> property of a <xref:System.Web.UI.WebControls.Label> control on the containing page.  
-  
- [!code-csharp[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#2)]
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#2)]  
-  
+The following code example creates a method that enumerates through the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.Button> control, `myButton`. When the enumerator is created, the <xref:System.Web.UI.ControlCollection.IsSynchronized%2A> property is checked to see if the operation is thread safe, and if it is not, the <xref:System.Web.UI.ControlCollection.SyncRoot%2A> property is used to obtain an object to make the operation thread safe. When the enumeration is complete, the value of the <xref:System.Web.UI.ControlCollection.IsReadOnly%2A> property is written as the <xref:System.Web.UI.WebControls.Label.Text%2A> property of a <xref:System.Web.UI.WebControls.Label> control on the containing page.  
+ 
+[!code-csharp[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#2)]
+[!code-vb[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -407,13 +407,13 @@
         <value>The reference to the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.UI.ControlCollection.Item%2A> property to specify the index location of a child control that is removed in a <xref:System.Web.UI.ControlCollection.Remove%2A> method call. This is performed by the `myButton.Controls.Remove` syntax.  
-  
- <!-- TODO: review snippet reference [!code-csharp[ControlCollection_ReSubmit_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlCollection_ReSubmit_2/CS/controlcollection_copyto.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ControlCollection_ReSubmit_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlCollection_ReSubmit_2/VB/controlcollection_copyto.vb.aspx#1)]  -->  
-  
+The following code example uses the <xref:System.Web.UI.ControlCollection.Item%2A> property to specify the index location of a child control that is removed in a <xref:System.Web.UI.ControlCollection.Remove%2A> method call. This is performed by the `myButton.Controls.Remove` syntax.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[ControlCollection_ReSubmit_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlCollection_ReSubmit_2/CS/controlcollection_copyto.cs.aspx#1)]  -->
+<!-- TODO: review snippet reference [!code-vb[ControlCollection_ReSubmit_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlCollection_ReSubmit_2/VB/controlcollection_copyto.vb.aspx#1)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to <see cref="P:System.Web.UI.ControlCollection.Count" />.</exception>
@@ -436,13 +436,13 @@
         <value>The <see cref="T:System.Web.UI.Control" /> to which the <see cref="T:System.Web.UI.ControlCollection" /> belongs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example is a custom <xref:System.Web.UI.ControlCollection> class that overrides the <xref:System.Web.UI.ControlCollection.%23ctor%2A> method to write messages (which include the name of the <xref:System.Web.UI.ControlCollection.Owner%2A> property) to the trace log when an instance of the collection is created. You must enable tracing for the page or application for this example to work.  
-  
- [!code-csharp[System.Web.UI.ControlCollection_CTor_Owner#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_CTor_Owner/cs/controlcollection_7.cs#1)]
- [!code-vb[System.Web.UI.ControlCollection_CTor_Owner#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_CTor_Owner/VB/controlcollection_7.vb#1)]  
-  
+The following code example is a custom <xref:System.Web.UI.ControlCollection> class that overrides the <xref:System.Web.UI.ControlCollection.%23ctor%2A> method to write messages (which include the name of the <xref:System.Web.UI.ControlCollection.Owner%2A> property) to the trace log when an instance of the collection is created. You must enable tracing for the page or application for this example to work.  
+ 
+[!code-csharp[System.Web.UI.ControlCollection_CTor_Owner#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_CTor_Owner/cs/controlcollection_7.cs#1)]
+[!code-vb[System.Web.UI.ControlCollection_CTor_Owner#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_CTor_Owner/VB/controlcollection_7.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -467,18 +467,18 @@
         <summary>Removes the specified server control from the parent server control's <see cref="T:System.Web.UI.ControlCollection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To remove a control from an index location, use the <xref:System.Web.UI.ControlCollection.RemoveAt%2A> method.  
+To remove a control from an index location, use the <xref:System.Web.UI.ControlCollection.RemoveAt%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.UI.ControlCollection.Remove%2A> method to delete a child control from the `myButton` server control. First the code uses the <xref:System.Web.UI.ControlCollection.Contains%2A> method to determine whether the `myChildControl` is contained in the <xref:System.Web.UI.ControlCollection> object, and, if it is, removes it.  
-  
- [!code-csharp[System.Web.UI.ControlCollection_NewSamples#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#4)]
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#4)]  
-  
+The following code example uses the <xref:System.Web.UI.ControlCollection.Remove%2A> method to delete a child control from the `myButton` server control. First the code uses the <xref:System.Web.UI.ControlCollection.Contains%2A> method to determine whether the `myChildControl` is contained in the <xref:System.Web.UI.ControlCollection> object, and, if it is, removes it.  
+ 
+[!code-csharp[System.Web.UI.ControlCollection_NewSamples#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#4)]
+[!code-vb[System.Web.UI.ControlCollection_NewSamples#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -503,18 +503,18 @@
         <summary>Removes a child control, at the specified index location, from the <see cref="T:System.Web.UI.ControlCollection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To remove a control from the collection based on its value, use the <xref:System.Web.UI.ControlCollection.Remove%2A> method.  
+To remove a control from the collection based on its value, use the <xref:System.Web.UI.ControlCollection.Remove%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example uses the <xref:System.Web.UI.ControlCollection.RemoveAt%2A> method to delete a child control from the `myButton` server control. The method call first specifies an index location of 1 from which the control is deleted. The example then writes to the containing page a text message saying that the control at that location has been deleted from the <xref:System.Web.UI.ControlCollection> collection.  
-  
- [!code-csharp[System.Web.UI.ControlCollection_NewSamples#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#5)]
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#5)]  
-  
+The following code example uses the <xref:System.Web.UI.ControlCollection.RemoveAt%2A> method to delete a child control from the `myButton` server control. The method call first specifies an index location of 1 from which the control is deleted. The example then writes to the containing page a text message saying that the control at that location has been deleted from the <xref:System.Web.UI.ControlCollection> collection.  
+ 
+[!code-csharp[System.Web.UI.ControlCollection_NewSamples#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#5)]
+[!code-vb[System.Web.UI.ControlCollection_NewSamples#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#5)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">Thrown if the <see cref="T:System.Web.UI.ControlCollection" /> is read-only.</exception>
@@ -537,13 +537,13 @@
         <value>The <see cref="T:System.Object" /> used to synchronize the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates a method that enumerates through the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.Button> control, `myButton`. When the enumerator is created, the <xref:System.Web.UI.ControlCollection.IsSynchronized%2A> property is checked to see if the operation is thread safe, and if it is not, the <xref:System.Web.UI.ControlCollection.SyncRoot%2A> property is used to obtain an object to make the operation thread safe. When the enumeration is complete, the value of the <xref:System.Web.UI.ControlCollection.IsReadOnly%2A> property is written as the <xref:System.Web.UI.WebControls.Label.Text%2A> property of a <xref:System.Web.UI.WebControls.Label> control on the containing page.  
-  
- [!code-csharp[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#2)]
- [!code-vb[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#2)]  
-  
+The following code example creates a method that enumerates through the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.Button> control, `myButton`. When the enumerator is created, the <xref:System.Web.UI.ControlCollection.IsSynchronized%2A> property is checked to see if the operation is thread safe, and if it is not, the <xref:System.Web.UI.ControlCollection.SyncRoot%2A> property is used to obtain an object to make the operation thread safe. When the enumeration is complete, the value of the <xref:System.Web.UI.ControlCollection.IsReadOnly%2A> property is written as the <xref:System.Web.UI.WebControls.Label.Text%2A> property of a <xref:System.Web.UI.WebControls.Label> control on the containing page.  
+ 
+[!code-csharp[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/CS/controlcollection1_cs.aspx#2)]
+[!code-vb[System.Web.UI.ControlCollection_NewSamples#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCollection_NewSamples/VB/controlcollection1_vb.aspx#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

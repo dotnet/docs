@@ -26,10 +26,10 @@
     <summary>Provides methods for writing to a document referenced by a symbol store.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A document is defined by a URL and a document type GUID. Optionally, the document source can be stored in the symbol store.  
-  
+A document is defined by a URL and a document type GUID. Optionally, the document source can be stored in the symbol store.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -96,10 +96,10 @@
         <summary>Called by the <see cref="M:System.Diagnostics.SymbolStore.SymDocumentWriter.Dispose" /> and <see cref="M:System.Diagnostics.SymbolStore.SymDocumentWriter.Finalize" /> methods to release the managed and unmanaged resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymBinder" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called only by the public <xref:System.Diagnostics.SymbolStore.SymDocumentWriter.Dispose%2A> and <xref:System.Diagnostics.SymbolStore.SymDocumentWriter.Finalize%2A> methods; do not call this method directly.  
-  
+This method is called only by the public <xref:System.Diagnostics.SymbolStore.SymDocumentWriter.Dispose%2A> and <xref:System.Diagnostics.SymbolStore.SymDocumentWriter.Finalize%2A> methods; do not call this method directly.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +121,10 @@
         <summary>Releases unmanaged resources and performs other cleanup operations before the <see cref="T:System.Diagnostics.SymbolStore.SymDocumentWriter" /> is reclaimed by garbage collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method overrides <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
-  
+This method overrides <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -32,25 +32,25 @@
     <summary>Defines a workflow communication activity that is used to call a method on a local service. This activity is used to send data from the workflow to the host through the local service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- A local service is a class that implements a local service interface (an interface that is marked with <xref:System.Workflow.Activities.ExternalDataExchangeAttribute>) and is added to the <xref:System.Workflow.Activities.ExternalDataExchangeService>.  
-  
+ 
+A local service is a class that implements a local service interface (an interface that is marked with <xref:System.Workflow.Activities.ExternalDataExchangeAttribute>) and is added to the <xref:System.Workflow.Activities.ExternalDataExchangeService>.  
+ 
 > [!NOTE]
 >  When the external method is called all parameters of the method are cloned. If the parameter types implement <xref:System.ICloneable> the `Clone` method is called or they are serialized and deserialized with a <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity> in a custom activity to call an external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Listen Sample](http://msdn.microsoft.com/en-us/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
-  
- [!code-csharp[wf_samples#213](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#213)]
- [!code-vb[wf_samples#213](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#213)]  
-  
+The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity> in a custom activity to call an external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Listen Sample](http://msdn.microsoft.com/en-us/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ 
+[!code-csharp[wf_samples#213](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#213)]
+[!code-vb[wf_samples#213](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#213)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,13 +69,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CallExternalMethodActivity" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how initialize a new instance of the <xref:System.Workflow.Activities.CallExternalMethodActivity>. The code also initializes new instances of the <xref:System.Workflow.Activities.ListenActivity>, <xref:System.Workflow.Activities.EventDrivenActivity>, <xref:System.Workflow.Activities.HandleExternalEventActivity>, <xref:System.Workflow.Activities.DelayActivity> and <xref:System.Workflow.Activities.CodeActivity> classes. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Listen Sample](http://msdn.microsoft.com/en-us/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
-  
- [!code-csharp[wf_samples#214](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#214)]
- [!code-vb[wf_samples#214](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#214)]  
-  
+The following code example shows how initialize a new instance of the <xref:System.Workflow.Activities.CallExternalMethodActivity>. The code also initializes new instances of the <xref:System.Workflow.Activities.ListenActivity>, <xref:System.Workflow.Activities.EventDrivenActivity>, <xref:System.Workflow.Activities.HandleExternalEventActivity>, <xref:System.Workflow.Activities.DelayActivity> and <xref:System.Workflow.Activities.CodeActivity> classes. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Listen Sample](http://msdn.microsoft.com/en-us/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ 
+[!code-csharp[wf_samples#214](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#214)]
+[!code-vb[wf_samples#214](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#214)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,20 +129,20 @@
         <value>The correlation token for the external method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property defines which specific <xref:System.Workflow.Activities.CallExternalMethodActivity> activity a given external method call comes from. This value can then be used in the payload of a local communication service event to direct that event to the correct <xref:System.Workflow.Activities.HandleExternalEventActivity> activity.  
+This property defines which specific <xref:System.Workflow.Activities.CallExternalMethodActivity> activity a given external method call comes from. This value can then be used in the payload of a local communication service event to direct that event to the correct <xref:System.Workflow.Activities.HandleExternalEventActivity> activity.  
+ 
+[!INCLUDE[crexample](~/includes/crexample-md.md)] correlation, see the [Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+ 
   
- [!INCLUDE[crexample](~/includes/crexample-md.md)] correlation, see the [Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
-  
-   
-  
+ 
 ## Examples  
- The following sample shows how to access the `CorrelationToken` property of a `CallExternalMethodActivity` object. This sample is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
-  
- [!code-csharp[wf_samples#200](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#200)]
- [!code-vb[wf_samples#200](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#200)]  
-  
+The following sample shows how to access the `CorrelationToken` property of a `CallExternalMethodActivity` object. This sample is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+ 
+[!code-csharp[wf_samples#200](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#200)]
+[!code-vb[wf_samples#200](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#200)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -163,10 +163,10 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.CallExternalMethodActivity.CorrelationToken" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -214,10 +214,10 @@
         <summary>Performs initialization on dependency properties.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method initializes the <xref:System.Workflow.Activities.CallExternalMethodActivity.CorrelationToken%2A> property, verifies the <xref:System.Workflow.Activities.CallExternalMethodActivity.InterfaceType%2A> and <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodName%2A> properties are set and verifies that the event referenced in the <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodName%2A> property can be found in the interface referenced in the <xref:System.Workflow.Activities.CallExternalMethodActivity.InterfaceType%2A> property.  
-  
+This method initializes the <xref:System.Workflow.Activities.CallExternalMethodActivity.CorrelationToken%2A> property, verifies the <xref:System.Workflow.Activities.CallExternalMethodActivity.InterfaceType%2A> and <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodName%2A> properties are set and verifies that the event referenced in the <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodName%2A> property can be found in the interface referenced in the <xref:System.Workflow.Activities.CallExternalMethodActivity.InterfaceType%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -253,13 +253,13 @@
         <value>The external method's declaring interface that has the <see cref="T:System.Workflow.Activities.ExternalDataExchangeAttribute" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to set the <xref:System.Workflow.Activities.CallExternalMethodActivity.InterfaceType%2A> property. The interface type must be attributed with the <xref:System.Workflow.Activities.ExternalDataExchangeAttribute>. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Listen Sample](http://msdn.microsoft.com/en-us/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
-  
- [!code-csharp[wf_samples#217](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#217)]
- [!code-vb[wf_samples#217](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#217)]  
-  
+The following code example shows how to set the <xref:System.Workflow.Activities.CallExternalMethodActivity.InterfaceType%2A> property. The interface type must be attributed with the <xref:System.Workflow.Activities.ExternalDataExchangeAttribute>. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Listen Sample](http://msdn.microsoft.com/en-us/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ 
+[!code-csharp[wf_samples#217](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#217)]
+[!code-vb[wf_samples#217](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#217)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -280,12 +280,12 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.CallExternalMethodActivity.InterfaceType" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.Activities.CallExternalMethodActivity.InterfaceType%2A> property corresponds to the name of the interface that was marked with the <xref:System.Workflow.Activities.ExternalDataExchangeAttribute>.  
-  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+The <xref:System.Workflow.Activities.CallExternalMethodActivity.InterfaceType%2A> property corresponds to the name of the interface that was marked with the <xref:System.Workflow.Activities.ExternalDataExchangeAttribute>.  
+ 
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -311,13 +311,13 @@
         <summary>Occurs before invoking the method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodInvoking> event to set the method to call before invoking the external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Listen Sample](http://msdn.microsoft.com/en-us/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
-  
- [!code-csharp[wf_samples#217](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#217)]
- [!code-vb[wf_samples#217](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#217)]  
-  
+The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodInvoking> event to set the method to call before invoking the external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Listen Sample](http://msdn.microsoft.com/en-us/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ 
+[!code-csharp[wf_samples#217](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#217)]
+[!code-vb[wf_samples#217](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#217)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -338,12 +338,12 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.Activities.CallExternalMethodActivity.MethodInvoking" /> event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodInvoking> event defines an event delegate that is executed before the activity invokes the external method on the local service.  
-  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+The <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodInvoking> event defines an event delegate that is executed before the activity invokes the external method on the local service.  
+ 
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -379,13 +379,13 @@
         <value>The method name of the <see cref="T:System.Workflow.Activities.ExternalDataExchangeService" /> interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodName%2A> property to set the method name of the external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Listen Sample](http://msdn.microsoft.com/en-us/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
-  
- [!code-csharp[wf_samples#217](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#217)]
- [!code-vb[wf_samples#217](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#217)]  
-  
+The following code example shows how to use the <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodName%2A> property to set the method name of the external method. This code example is part of the Listen SDK sample from the PurchaseOrderWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Listen Sample](http://msdn.microsoft.com/en-us/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+ 
+[!code-csharp[wf_samples#217](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#217)]
+[!code-vb[wf_samples#217](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#217)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -406,12 +406,12 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.CallExternalMethodActivity.MethodName" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodName%2A> property corresponds to the name of a method contained on an interface that is marked with the <xref:System.Workflow.Activities.ExternalDataExchangeAttribute>.  
-  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+The <xref:System.Workflow.Activities.CallExternalMethodActivity.MethodName%2A> property corresponds to the name of a method contained on an interface that is marked with the <xref:System.Workflow.Activities.ExternalDataExchangeAttribute>.  
+ 
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -436,13 +436,13 @@
         <summary>Provides a hook for derived classes to extract out and return values from the <see cref="P:System.Workflow.Activities.CallExternalMethodActivity.ParameterBindings" />. This method is called just after the external method is run.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows an implementation of the `OnMethodInvoked` method.  
-  
- [!code-csharp[wf_samples#1](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#1)]
- [!code-vb[wf_samples#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#1)]  
-  
+The following example shows an implementation of the `OnMethodInvoked` method.  
+ 
+[!code-csharp[wf_samples#1](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#1)]
+[!code-vb[wf_samples#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -467,13 +467,13 @@
         <summary>Provides a hook for derived classes to set <see cref="P:System.Workflow.Activities.CallExternalMethodActivity.ParameterBindings" />. This method is called just before the external method is run.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates an implementation of the `OnMethodInvoking` method. This example is from the Correlated Local Service SDK sample, from the CreateTask.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
-  
- [!code-csharp[wf_samples#207](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#207)]
- [!code-vb[wf_samples#207](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#207)]  
-  
+The following example demonstrates an implementation of the `OnMethodInvoking` method. This example is from the Correlated Local Service SDK sample, from the CreateTask.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+ 
+[!code-csharp[wf_samples#207](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#207)]
+[!code-vb[wf_samples#207](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#207)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -503,12 +503,12 @@
         <value>The <see cref="T:System.Workflow.ComponentModel.WorkflowParameterBindingCollection" /> of parameters to bind to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to add a parameter binding to the parameter bindings collection. This example is from the Host Communication SDK sample, from the VotingServiceWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Host Communication Sample](http://msdn.microsoft.com/en-us/ce4b0b8c-bfa3-4c24-b85a-5835a440ea8f).  
-  
- [!code-csharp[WF_Samples#301](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets38.cs#301)]  
-  
+The following example shows how to add a parameter binding to the parameter bindings collection. This example is from the Host Communication SDK sample, from the VotingServiceWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Host Communication Sample](http://msdn.microsoft.com/en-us/ce4b0b8c-bfa3-4c24-b85a-5835a440ea8f).  
+ 
+[!code-csharp[WF_Samples#301](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets38.cs#301)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -529,10 +529,10 @@
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.CallExternalMethodActivity.ParameterBindings" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
-  
+[!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -560,10 +560,10 @@
         <returns>An <see cref="T:System.Workflow.ComponentModel.Compiler.AccessTypes" /> enumeration value that denotes the access level of the property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used at compile time to validate whether the properties are correctly bound to one another. Without this interface this information is inferred directly from property getter/setters.  
-  
+Used at compile time to validate whether the properties are correctly bound to one another. Without this interface this information is inferred directly from property getter/setters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -591,10 +591,10 @@
         <returns>The <see cref="T:System.Type" /> for the property whose name is passed as the <paramref name="propertyName " />parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used at compile time to validate whether the properties are correctly bound to one other.  
-  
+Used at compile time to validate whether the properties are correctly bound to one other.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -608,13 +608,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CallExternalMethodActivity" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create an instance of the `CallExternalMethodActivity` class.  This example is from the PersistenceHost SDK sample, from the DocumentApprovalWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Persistence Host Sample](http://msdn.microsoft.com/en-us/8ba72a8f-eb95-410f-bb00-180f3c35f251).  
-  
- [!code-csharp[wf_samples#278](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#278)]
- [!code-vb[wf_samples#278](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#278)]  
-  
+The following example shows how to create an instance of the `CallExternalMethodActivity` class.  This example is from the PersistenceHost SDK sample, from the DocumentApprovalWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Persistence Host Sample](http://msdn.microsoft.com/en-us/8ba72a8f-eb95-410f-bb00-180f3c35f251).  
+ 
+[!code-csharp[wf_samples#278](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#278)]
+[!code-vb[wf_samples#278](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#278)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

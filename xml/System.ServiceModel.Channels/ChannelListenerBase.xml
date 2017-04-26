@@ -18,10 +18,10 @@
     <summary>Provides a common base implementation for channel listeners on the service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The channel listeners on the service wait for and then accept the channels created by factories on the client. Once the channel connection is established between client and service, messages can be exchanged and distributed applications can communicate. The processing functionality provided by the listener is layered into a stacked set of channel listeners to provide modularity when selecting the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] features to deploy. Each channel listener in the service stack corresponds to a channel factory in the client stack. The channel created by the factory is really a stack of channels that are accepted and processed by the stack of listeners on the service.  
-  
+The channel listeners on the service wait for and then accept the channels created by factories on the client. Once the channel connection is established between client and service, messages can be exchanged and distributed applications can communicate. The processing functionality provided by the listener is layered into a stacked set of channel listeners to provide modularity when selecting the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] features to deploy. Each channel listener in the service stack corresponds to a channel factory in the client stack. The channel created by the factory is really a stack of channels that are accepted and processed by the stack of listeners on the service.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -40,10 +40,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelListenerBase" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
-  
+The default constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -65,10 +65,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelListenerBase" /> class with specified default communication timeouts.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> instead of the default constructor if you want to specify custom values for the open, send, receive, and close operation timeouts instead of using the service model default values.  
-  
+Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> instead of the default constructor if you want to specify custom values for the open, send, receive, and close operation timeouts instead of using the service model default values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -117,10 +117,10 @@
         <value>The default <see cref="T:System.TimeSpan" /> that specifies how long the close operation has to complete before timing out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelListenerBase> object. The default <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelListenerBase.DefaultCloseTimeout%2A> property to a value of 1 minute. Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
-  
+This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelListenerBase> object. The default <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelListenerBase.DefaultCloseTimeout%2A> property to a value of 1 minute. Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -142,10 +142,10 @@
         <value>The default <see cref="T:System.TimeSpan" /> that specifies how long the open operation has to complete before timing out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelListenerBase> object. The default <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelListenerBase.DefaultOpenTimeout%2A> property to a value of 1 minute. Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
-  
+This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelListenerBase> object. The default <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelListenerBase.DefaultOpenTimeout%2A> property to a value of 1 minute. Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,10 +167,10 @@
         <value>The default <see cref="T:System.TimeSpan" /> that specifies how long the receive operation has to complete before timing out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelListenerBase> object. The default <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelListenerBase.DefaultReceiveTimeout%2A> property to a value of 10 minutes. Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
-  
+This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelListenerBase> object. The default <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelListenerBase.DefaultReceiveTimeout%2A> property to a value of 10 minutes. Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,10 +192,10 @@
         <value>The default <see cref="T:System.TimeSpan" /> that specifies how long the send operation has to complete before timing out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelListenerBase> object. The default <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelListenerBase.DefaultSendTimeout%2A> property to a value of 1 minute. Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
-  
+This value is set when creating a new <xref:System.ServiceModel.Channels.ChannelListenerBase> object. The default <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor> constructor sets the <xref:System.ServiceModel.Channels.ChannelListenerBase.DefaultSendTimeout%2A> property to a value of 1 minute. Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify another value for this timeout.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,10 +249,10 @@
         <returns>The typed object T requested if it is present or <see langword="null" /> if it is not.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this to request a typed object such as an interface for setting properties or getting status from the appropriate layer in the channel listener stack. If a layer supports returning the requested object, it returns it. If not, it simply delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no layer supported the requested object, then the method returns `null`.  
-  
+Use this to request a typed object such as an interface for setting properties or getting status from the appropriate layer in the channel listener stack. If a layer supports returning the requested object, it returns it. If not, it simply delegates the call down to the next layer in the stack. If it gets to the bottom of the stack and no layer supported the requested object, then the method returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -379,10 +379,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelListenerBase" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor> constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
-  
+The default <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor> constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelListenerBase.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
+ 
  ]]></format>
         </remarks>
       </Docs>

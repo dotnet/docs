@@ -19,25 +19,25 @@
     <summary>Provides a way to translate property values between [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] controls and [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Windows.Forms.Integration.PropertyMap> class to define translations between [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] properties and [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] properties in a hybrid application. The <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A?displayProperty=fullName> and <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A?displayProperty=fullName> properties on the <xref:System.Windows.Forms.Integration.ElementHost> and <xref:System.Windows.Forms.Integration.WindowsFormsHost> classes define mappings from one technology to the other.  
+Use the <xref:System.Windows.Forms.Integration.PropertyMap> class to define translations between [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] properties and [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] properties in a hybrid application. The <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A?displayProperty=fullName> and <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A?displayProperty=fullName> properties on the <xref:System.Windows.Forms.Integration.ElementHost> and <xref:System.Windows.Forms.Integration.WindowsFormsHost> classes define mappings from one technology to the other.  
+ 
+For more information, see [Walkthrough: Mapping Properties Using the ElementHost Control](https://msdn.microsoft.com/en-us/library/ms788740\(v=vs.100\).aspx) and [Walkthrough: Mapping Properties Using the WindowsFormsHost Element](https://msdn.microsoft.com/en-us/library/ms788729\(v=vs.100\).aspx).  
+ 
   
- For more information, see [Walkthrough: Mapping Properties Using the ElementHost Control](https://msdn.microsoft.com/en-us/library/ms788740\(v=vs.100\).aspx) and [Walkthrough: Mapping Properties Using the WindowsFormsHost Element](https://msdn.microsoft.com/en-us/library/ms788729\(v=vs.100\).aspx).  
-  
-   
-  
+ 
 ## Examples  
- The following code example shows how to add a mapping for the <xref:System.Windows.Forms.Control.Margin%2A> property to an <xref:System.Windows.Forms.Integration.ElementHost> control.  
-  
- [!code-csharp[PropertyMappingWithElementHost#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#12)]
- [!code-vb[PropertyMappingWithElementHost#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#12)]  
-  
- The following code example shows how to replace the default mapping for the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property on a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#12)]  -->
- <!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#12)]  -->  
-  
+The following code example shows how to add a mapping for the <xref:System.Windows.Forms.Control.Margin%2A> property to an <xref:System.Windows.Forms.Integration.ElementHost> control.  
+ 
+[!code-csharp[PropertyMappingWithElementHost#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#12)]
+[!code-vb[PropertyMappingWithElementHost#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#12)]  
+ 
+The following code example shows how to replace the default mapping for the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property on a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#12)]  -->
+<!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#12)]  -->  
+ 
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
@@ -76,12 +76,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Integration.PropertyMap" /> class with the given source object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `source` is the source of the properties which are translated by the <xref:System.Windows.Forms.Integration.PropertyMap>. The properties which are mapped in the <xref:System.Windows.Forms.Integration.PropertyMap> must exist on <xref:System.Windows.Forms.Integration.PropertyMap.SourceObject%2A>.  
-  
- <xref:System.Windows.Forms.Integration.PropertyTranslator> delegates are called using the current property values on <xref:System.Windows.Forms.Integration.PropertyMap.SourceObject%2A>.  
-  
+`source` is the source of the properties which are translated by the <xref:System.Windows.Forms.Integration.PropertyMap>. The properties which are mapped in the <xref:System.Windows.Forms.Integration.PropertyMap> must exist on <xref:System.Windows.Forms.Integration.PropertyMap.SourceObject%2A>.  
+ 
+<xref:System.Windows.Forms.Integration.PropertyTranslator> delegates are called using the current property values on <xref:System.Windows.Forms.Integration.PropertyMap.SourceObject%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,23 +108,23 @@
         <summary>Adds a <see cref="T:System.Windows.Forms.Integration.PropertyTranslator" /> delegate for the given property to the <see cref="T:System.Windows.Forms.Integration.PropertyMap" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When setting, if no <xref:System.Windows.Forms.Integration.PropertyTranslator> exists for `propertyName`, the new delegate is added to the <xref:System.Windows.Forms.Integration.PropertyMap>. If a <xref:System.Windows.Forms.Integration.PropertyTranslator> already exists for `propertyName`, an <xref:System.InvalidOperationException> is raised.  
+When setting, if no <xref:System.Windows.Forms.Integration.PropertyTranslator> exists for `propertyName`, the new delegate is added to the <xref:System.Windows.Forms.Integration.PropertyMap>. If a <xref:System.Windows.Forms.Integration.PropertyTranslator> already exists for `propertyName`, an <xref:System.InvalidOperationException> is raised.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to add a mapping for the <xref:System.Windows.Forms.Control.Margin%2A> property to an <xref:System.Windows.Forms.Integration.ElementHost> control.  
-  
- [!code-csharp[PropertyMappingWithElementHost#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#12)]
- [!code-vb[PropertyMappingWithElementHost#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#12)]  
-  
- The following code example shows how to add a mapping for the <xref:System.Windows.UIElement.Clip%2A> property to a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#14](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#14)]  -->
- <!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#14)]  -->  
-  
+The following code example shows how to add a mapping for the <xref:System.Windows.Forms.Control.Margin%2A> property to an <xref:System.Windows.Forms.Integration.ElementHost> control.  
+ 
+[!code-csharp[PropertyMappingWithElementHost#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#12)]
+[!code-vb[PropertyMappingWithElementHost#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#12)]  
+ 
+The following code example shows how to add a mapping for the <xref:System.Windows.UIElement.Clip%2A> property to a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#14](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#14)]  -->
+<!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#14)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -229,10 +229,10 @@
         <value>A <see cref="T:System.Collections.Generic.Dictionary`2" /> which maps property names to corresponding <see cref="T:System.Windows.Forms.Integration.PropertyTranslator" /> delegates.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For a list of default property mappings, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
-  
+For a list of default property mappings, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,23 +258,23 @@
         <value>The <see cref="T:System.Windows.Forms.Integration.PropertyTranslator" /> delegate corresponding to the property specified by <paramref name="propertyName" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When setting, if no <xref:System.Windows.Forms.Integration.PropertyTranslator> exists for `propertyName`, the new delegate is added to the <xref:System.Windows.Forms.Integration.PropertyMap>. If a <xref:System.Windows.Forms.Integration.PropertyTranslator> already exists for `propertyName`, it is replaced.  
+When setting, if no <xref:System.Windows.Forms.Integration.PropertyTranslator> exists for `propertyName`, the new delegate is added to the <xref:System.Windows.Forms.Integration.PropertyMap>. If a <xref:System.Windows.Forms.Integration.PropertyTranslator> already exists for `propertyName`, it is replaced.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to retrieve the <xref:System.Windows.Forms.Integration.PropertyTranslator> delegate for the <xref:System.Windows.Forms.Control.BackColor%2A> property of a <xref:System.Windows.Forms.Integration.ElementHost> control.  
-  
- [!code-csharp[PropertyMappingWithElementHost#15](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#15)]
- [!code-vb[PropertyMappingWithElementHost#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#15)]  
-  
- The following code example shows how to retrieve the <xref:System.Windows.Forms.Integration.PropertyTranslator> delegate for the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#15](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#15)]  -->
- <!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#15)]  -->  
-  
+The following code example shows how to retrieve the <xref:System.Windows.Forms.Integration.PropertyTranslator> delegate for the <xref:System.Windows.Forms.Control.BackColor%2A> property of a <xref:System.Windows.Forms.Integration.ElementHost> control.  
+ 
+[!code-csharp[PropertyMappingWithElementHost#15](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#15)]
+[!code-vb[PropertyMappingWithElementHost#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#15)]  
+ 
+The following code example shows how to retrieve the <xref:System.Windows.Forms.Integration.PropertyTranslator> delegate for the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#15](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#15)]  -->
+<!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#15)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -316,10 +316,10 @@
         <summary>Occurs when an exception is raised by a property translator.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Handlers for the <xref:System.Windows.Forms.Integration.PropertyMap.PropertyMappingError> event can optionally raise the exception by setting the <xref:System.Windows.Forms.Integration.IntegrationExceptionEventArgs.ThrowException%2A> flag on the <xref:System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs>.  
-  
+Handlers for the <xref:System.Windows.Forms.Integration.PropertyMap.PropertyMappingError> event can optionally raise the exception by setting the <xref:System.Windows.Forms.Integration.IntegrationExceptionEventArgs.ThrowException%2A> flag on the <xref:System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -344,18 +344,18 @@
         <summary>Deletes the given property from the mapping.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to remove a mapping for the <xref:System.Windows.Forms.Control.Cursor%2A> property to an <xref:System.Windows.Forms.Integration.ElementHost> control.  
-  
- [!code-csharp[PropertyMappingWithElementHost#13](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#13)]
- [!code-vb[PropertyMappingWithElementHost#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#13)]  
-  
- The following code example shows how to add a mapping for the <xref:System.Windows.FrameworkElement.Cursor%2A> property to a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
-  
- <!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#13](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#13)]  -->
- <!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#13)]  -->  
-  
+The following code example shows how to remove a mapping for the <xref:System.Windows.Forms.Control.Cursor%2A> property to an <xref:System.Windows.Forms.Integration.ElementHost> control.  
+ 
+[!code-csharp[PropertyMappingWithElementHost#13](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#13)]
+[!code-vb[PropertyMappingWithElementHost#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#13)]  
+ 
+The following code example shows how to add a mapping for the <xref:System.Windows.FrameworkElement.Cursor%2A> property to a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
+ 
+<!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#13](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#13)]  -->
+<!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#13)]  -->  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -382,16 +382,16 @@
         <summary>Restores the default property mapping for the given property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Integration.PropertyMap.Reset%2A> method has the following effects on the <xref:System.Windows.Forms.Integration.PropertyMap>.  
-  
+The <xref:System.Windows.Forms.Integration.PropertyMap.Reset%2A> method has the following effects on the <xref:System.Windows.Forms.Integration.PropertyMap>.  
+ 
 -   A default property mapping that has been removed is restored.  
-  
+ 
 -   A property mapping that has been added is removed.  
-  
+ 
 -   A default property mapping that has been overridden is restored to its default value.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -415,16 +415,16 @@
         <summary>Restores the default property mappings.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.Integration.PropertyMap.ResetAll%2A> method has the following effects on the <xref:System.Windows.Forms.Integration.PropertyMap>.  
-  
+The <xref:System.Windows.Forms.Integration.PropertyMap.ResetAll%2A> method has the following effects on the <xref:System.Windows.Forms.Integration.PropertyMap>.  
+ 
 -   Default property mappings that have been removed are restored.  
-  
+ 
 -   Property mappings that have been added are removed.  
-  
+ 
 -   Default property mappings that have been overridden are restored to their default values.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -446,10 +446,10 @@
         <value>The object which has the properties to be translated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The properties which are mapped in the <xref:System.Windows.Forms.Integration.PropertyMap> must exist on <xref:System.Windows.Forms.Integration.PropertyMap.SourceObject%2A>.  
-  
+The properties which are mapped in the <xref:System.Windows.Forms.Integration.PropertyMap> must exist on <xref:System.Windows.Forms.Integration.PropertyMap.SourceObject%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

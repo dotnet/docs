@@ -47,10 +47,10 @@
           <see langword="true" /> if the qualified name specified exists in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xml.Schema.XmlSchemaObjectTable.Contains%2A> returns `false` if a `null` value is supplied because there is not a qualified name for a null name.  
-  
+<xref:System.Xml.Schema.XmlSchemaObjectTable.Contains%2A> returns `false` if a `null` value is supplied because there is not a qualified name for a null name.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,18 +13,18 @@
     <summary>Specifies the editing mode for the <see cref="T:System.Windows.Controls.InkCanvas" /></summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> and <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> properties use the <xref:System.Windows.Controls.InkCanvasEditingMode> to specify how the <xref:System.Windows.Controls.InkCanvas> behaves when it receives input from a tablet pen.  
+The <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> and <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> properties use the <xref:System.Windows.Controls.InkCanvasEditingMode> to specify how the <xref:System.Windows.Controls.InkCanvas> behaves when it receives input from a tablet pen.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to allow users to partially erase strokes with the inverted tip of a stylus. An elliptical cursor appears on the <xref:System.Windows.Controls.InkCanvas> when the user erases ink.  
-  
- [!code-csharp[InkCanvasSamples#6](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasSamples/CSharp/Window1.xaml.cs#6)]
- [!code-vb[InkCanvasSamples#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkCanvasSamples/VisualBasic/Window1.xaml.vb#6)]  
-  
+The following example demonstrates how to allow users to partially erase strokes with the inverted tip of a stylus. An elliptical cursor appears on the <xref:System.Windows.Controls.InkCanvas> when the user erases ink.  
+ 
+[!code-csharp[InkCanvasSamples#6](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasSamples/CSharp/Window1.xaml.cs#6)]
+[!code-vb[InkCanvasSamples#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkCanvasSamples/VisualBasic/Window1.xaml.vb#6)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

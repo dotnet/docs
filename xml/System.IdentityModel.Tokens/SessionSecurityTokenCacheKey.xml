@@ -14,12 +14,12 @@
     <summary>Represents the key for an entry in a <see cref="T:System.IdentityModel.Tokens.SessionSecurityTokenCache" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When caching a <xref:System.IdentityModel.Tokens.SessionSecurityToken> there are two indexes required. One is the context ID, represented by the <xref:System.IdentityModel.Tokens.SessionSecurityToken.ContextId%2A?displayProperty=fullName> property, that is unique across all session tokens. The other is the key generation, represented by the <xref:System.IdentityModel.Tokens.SessionSecurityToken.KeyGeneration%2A?displayProperty=fullName> property, which is unique within a session token. When a session token is issued it has only a context ID. When the session token is renewed, the key generation is added. After renewal, the renewed session token is uniquely identifiable via the context ID and key generation.  
-  
- Objects of type <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey> are used as the indexes to the session token cache. An index will always have a valid <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.ContextId%2A> property specified, but the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property may be `null`, depending on whether the token has been renewed. There is also an optional <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.EndpointId%2A> which gives the endpoint to which the token is scoped.  
-  
+When caching a <xref:System.IdentityModel.Tokens.SessionSecurityToken> there are two indexes required. One is the context ID, represented by the <xref:System.IdentityModel.Tokens.SessionSecurityToken.ContextId%2A?displayProperty=fullName> property, that is unique across all session tokens. The other is the key generation, represented by the <xref:System.IdentityModel.Tokens.SessionSecurityToken.KeyGeneration%2A?displayProperty=fullName> property, which is unique within a session token. When a session token is issued it has only a context ID. When the session token is renewed, the key generation is added. After renewal, the renewed session token is uniquely identifiable via the context ID and key generation.  
+ 
+Objects of type <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey> are used as the indexes to the session token cache. An index will always have a valid <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.ContextId%2A> property specified, but the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property may be `null`, depending on whether the token has been renewed. There is also an optional <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.EndpointId%2A> which gives the endpoint to which the token is scoped.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,10 +63,10 @@
         <value>The context ID for the cache key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This corresponds to the <xref:System.IdentityModel.Tokens.SessionSecurityToken.ContextId%2A> property of the cached token.  
-  
+This corresponds to the <xref:System.IdentityModel.Tokens.SessionSecurityToken.ContextId%2A> property of the cached token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -88,10 +88,10 @@
         <value>The Endpoint ID to which this cache entry is scoped.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This corresponds to the <xref:System.IdentityModel.Tokens.SessionSecurityToken.EndpointId%2A> property of the cached token.  
-  
+This corresponds to the <xref:System.IdentityModel.Tokens.SessionSecurityToken.EndpointId%2A> property of the cached token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -118,10 +118,10 @@
           <see langword="true" /> if the specified object is the same as the current cache key; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration%2A> is `true`, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is not used in the comparison.  
-  
+If the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration%2A> is `true`, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is not used in the comparison.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -144,10 +144,10 @@
         <returns>The hash code for the current cache key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration%2A> is `true`, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is not used in generating the hash code.  
-  
+If the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration%2A> is `true`, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is not used in generating the hash code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,10 +170,10 @@
           <see langword="true" /> to ignore key generation; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property affects the manner in which the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is treated by the following methods and operators: <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.Equals%2A>, <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.GetHashCode%2A>, <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.op_Equality%2A>, <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.op_Inequality%2A>, and <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.ToString%2A>.  
-  
+This property affects the manner in which the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is treated by the following methods and operators: <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.Equals%2A>, <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.GetHashCode%2A>, <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.op_Equality%2A>, <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.op_Inequality%2A>, and <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.ToString%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,10 +195,10 @@
         <value>The key generation for the cache key</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This corresponds to the <xref:System.IdentityModel.Tokens.SessionSecurityToken.KeyGeneration%2A> property of the cached token.  
-  
+This corresponds to the <xref:System.IdentityModel.Tokens.SessionSecurityToken.KeyGeneration%2A> property of the cached token.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,10 +227,10 @@
           <see langword="true" /> if the cache keys are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration%2A> is `true`, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is not used in the comparison.  
-  
+If the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration%2A> is `true`, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is not used in the comparison.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -259,10 +259,10 @@
           <see langword="true" /> if the cache keys are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration%2A> is `true`, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is not used in the comparison.  
-  
+If the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration%2A> is `true`, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is not used in the comparison.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -285,10 +285,10 @@
         <returns>The key in string form.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration%2A> is `true`, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is not used.  
-  
+If the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.IgnoreKeyGeneration%2A> is `true`, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.KeyGeneration%2A> property is not used.  
+ 
  ]]></format>
         </remarks>
       </Docs>

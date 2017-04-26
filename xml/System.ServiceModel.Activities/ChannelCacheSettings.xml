@@ -14,12 +14,12 @@
     <summary>Represents settings that define operational characteristics of a channel cache.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.ServiceModel.Activities.ChannelCacheSettings> instance.  
-  
- [!code-csharp[ChannelCache#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelcache/cs/client.cs#0)]  
-  
+The following example shows how to create a <xref:System.ServiceModel.Activities.ChannelCacheSettings> instance.  
+ 
+[!code-csharp[ChannelCache#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelcache/cs/client.cs#0)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -38,12 +38,12 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Activities.ChannelCacheSettings" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.ServiceModel.Activities.ChannelCacheSettings> instance.  
-  
- [!code-csharp[ChannelCache#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelcache/cs/client.cs#0)]  
-  
+The following example shows how to create a <xref:System.ServiceModel.Activities.ChannelCacheSettings> instance.  
+ 
+[!code-csharp[ChannelCache#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelcache/cs/client.cs#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -65,12 +65,12 @@
         <value>An interval of time.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.ServiceModel.Activities.ChannelCacheSettings.IdleTimeout%2A> property.  
-  
- [!code-csharp[ChannelCache#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelcache/cs/client.cs#0)]  
-  
+The following example shows how to set the <xref:System.ServiceModel.Activities.ChannelCacheSettings.IdleTimeout%2A> property.  
+ 
+[!code-csharp[ChannelCache#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelcache/cs/client.cs#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -92,12 +92,12 @@
         <value>An interval of time.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.ServiceModel.Activities.ChannelCacheSettings.LeaseTimeout%2A> property.  
-  
- [!code-csharp[ChannelCache#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelcache/cs/client.cs#0)]  
-  
+The following example shows how to set the <xref:System.ServiceModel.Activities.ChannelCacheSettings.LeaseTimeout%2A> property.  
+ 
+[!code-csharp[ChannelCache#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelcache/cs/client.cs#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -119,12 +119,12 @@
         <value>A maximum number of objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to set the <xref:System.ServiceModel.Activities.ChannelCacheSettings.MaxItemsInCache%2A> property.  
-  
- [!code-csharp[ChannelCache#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelcache/cs/client.cs#0)]  
-  
+The following example shows how to set the <xref:System.ServiceModel.Activities.ChannelCacheSettings.MaxItemsInCache%2A> property.  
+ 
+[!code-csharp[ChannelCache#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelcache/cs/client.cs#0)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

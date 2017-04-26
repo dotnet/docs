@@ -22,10 +22,10 @@
     <summary>Provides for deferred loading and relationship maintenance for the singleton side of a one-to-many relationship in a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is used in combination with <xref:System.Data.Linq.EntitySet%601>.  
-  
+This class is used in combination with <xref:System.Data.Linq.EntitySet%601>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -120,10 +120,10 @@
           <see langword="True" /> if the target has been loaded or assigned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `True` is returned even if the value in the target is `null`.  
-  
+`True` is returned even if the value in the target is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

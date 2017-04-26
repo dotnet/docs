@@ -18,10 +18,10 @@
     <summary>Represents the ConfigurableForwardingLogger, a pre-fabricated forwarding logger to be used when building projects on a multi-proc or multi-core system. For more information, see [Writing Multi-Processor-Aware Loggers](http://msdn.microsoft.com/library/ff987d1b-1798-4803-9ef6-cc8fcc263516).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use the provided ConfigurableForwardingLogger, or you can create your own custom forwarding loggers.  
-  
+You can use the provided ConfigurableForwardingLogger, or you can create your own custom forwarding loggers.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -159,10 +159,10 @@
         <value>A string representing the logger parameters.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The console logger takes a single parameter to suppress the output of the errors and warnings summary at the end of a build.  
-  
+The console logger takes a single parameter to suppress the output of the errors and warnings summary at the end of a build.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -202,10 +202,10 @@
         <value>a <see cref="T:Microsoft.Build.Framework.LoggerVerbosity" /> enumeration value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The console logger takes a single parameter to suppress the output of the errors and warnings summary at the end of a build.  
-  
+The console logger takes a single parameter to suppress the output of the errors and warnings summary at the end of a build.  
+ 
  ]]></format>
         </remarks>
       </Docs>

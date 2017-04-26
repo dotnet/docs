@@ -18,20 +18,20 @@
     <summary>Represents the base class for a tabular data-bound control that is composed of other server controls.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class serves as the base class for a composite server control that binds to data from a data source. A composite server control is a control that is built from a combination of other server controls. Page developers do not use the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class directly; instead, they use controls that derive from this class. Examples of composite data-bound controls include the <xref:System.Web.UI.WebControls.DetailsView>, <xref:System.Web.UI.WebControls.FormView>, and <xref:System.Web.UI.WebControls.GridView> controls.  
+The <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class serves as the base class for a composite server control that binds to data from a data source. A composite server control is a control that is built from a combination of other server controls. Page developers do not use the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class directly; instead, they use controls that derive from this class. Examples of composite data-bound controls include the <xref:System.Web.UI.WebControls.DetailsView>, <xref:System.Web.UI.WebControls.FormView>, and <xref:System.Web.UI.WebControls.GridView> controls.  
+ 
+Classes that inherit from the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> control must override the <xref:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls%28System.Collections.IEnumerable%2CSystem.Boolean%29> method to create the control hierarchy. To access the child controls of a composite data-bound control, use the <xref:System.Web.UI.WebControls.CompositeDataBoundControl.Controls%2A> collection.  
+ 
   
- Classes that inherit from the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> control must override the <xref:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls%28System.Collections.IEnumerable%2CSystem.Boolean%29> method to create the control hierarchy. To access the child controls of a composite data-bound control, use the <xref:System.Web.UI.WebControls.CompositeDataBoundControl.Controls%2A> collection.  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a custom composite data-bound control that displays the values of a data source in a table.  
-  
- [!code-csharp[System.Web.UI.IDataItemContainer_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IDataItemContainer_1/CS/idataitemcontainersample.cs#2)]
- [!code-vb[System.Web.UI.IDataItemContainer_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IDataItemContainer_1/VB/idataitemcontainersample.vb#2)]  
-  
+The following code example demonstrates how to create a custom composite data-bound control that displays the values of a data source in a table.  
+ 
+[!code-csharp[System.Web.UI.IDataItemContainer_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IDataItemContainer_1/CS/idataitemcontainersample.cs#2)]
+[!code-vb[System.Web.UI.IDataItemContainer_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IDataItemContainer_1/VB/idataitemcontainersample.vb#2)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -53,10 +53,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CompositeDataBoundControl" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class is an abstract class. You cannot create a new instance of this class.  
-  
+The <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class is an abstract class. You cannot create a new instance of this class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -78,10 +78,10 @@
         <value>A <see cref="T:System.Web.UI.ControlCollection" /> that represents the child controls within the composite data-bound control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A composite data-bound control is a combination of one or more server controls. Use the <xref:System.Web.UI.WebControls.CompositeDataBoundControl.Controls%2A> property to manage these child controls. You can add, remove, or iterate through the server controls in the collection.  
-  
+A composite data-bound control is a combination of one or more server controls. Use the <xref:System.Web.UI.WebControls.CompositeDataBoundControl.Controls%2A> property to manage these child controls. You can add, remove, or iterate through the server controls in the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <summary>Creates the control hierarchy that is used to render a composite data-bound control based on the values that are stored in view state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls> method is a helper method that is used by classes that derive from the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class to create the control hierarchy for a composite data-bound control. This overload of the method creates the control hierarchy based on values from view state, rather than directly from the data source.  
-  
+The <xref:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls> method is a helper method that is used by classes that derive from the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class to create the control hierarchy for a composite data-bound control. This overload of the method creates the control hierarchy based on values from view state, rather than directly from the data source.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,18 +135,18 @@
         <returns>The number of items created by the <see cref="M:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls(System.Collections.IEnumerable,System.Boolean)" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls> method is a helper method that is used by classes that derive from the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class to create the control hierarchy for a composite data-bound control. When extending the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class, you must override the <xref:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls> method to create your own control hierarchy. For more information on creating a composite control, see [Developing Custom ASP.NET Server Controls](http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef).  
+The <xref:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls> method is a helper method that is used by classes that derive from the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class to create the control hierarchy for a composite data-bound control. When extending the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class, you must override the <xref:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls> method to create your own control hierarchy. For more information on creating a composite control, see [Developing Custom ASP.NET Server Controls](http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls%28System.Collections.IEnumerable%2CSystem.Boolean%29> method in a custom control to create the control hierarchy.  
-  
- [!code-csharp[System.Web.UI.IDataItemContainer_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IDataItemContainer_1/CS/idataitemcontainersample.cs#2)]
- [!code-vb[System.Web.UI.IDataItemContainer_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IDataItemContainer_1/VB/idataitemcontainersample.vb#2)]  
-  
+The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls%28System.Collections.IEnumerable%2CSystem.Boolean%29> method in a custom control to create the control hierarchy.  
+ 
+[!code-csharp[System.Web.UI.IDataItemContainer_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IDataItemContainer_1/CS/idataitemcontainersample.cs#2)]
+[!code-vb[System.Web.UI.IDataItemContainer_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IDataItemContainer_1/VB/idataitemcontainersample.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -168,12 +168,12 @@
         <value>The name of the method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property causes model binding to be used as the data-binding method.  
-  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
+Setting this property causes model binding to be used as the data-binding method.  
+ 
+For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,12 +195,12 @@
         <value>The name of the method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property causes model binding to be used as the data-binding method.  
-  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
+Setting this property causes model binding to be used as the data-binding method.  
+ 
+For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,10 +244,10 @@
         <summary>Binds the data from the data source to the composite data-bound control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding%2A> method is a helper method that is used by classes that derive from the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class to bind the data from the data source to the composite data-bound control.  
-  
+The <xref:System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding%2A> method is a helper method that is used by classes that derive from the <xref:System.Web.UI.WebControls.CompositeDataBoundControl> class to bind the data from the data source to the composite data-bound control.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -269,12 +269,12 @@
         <value>The name of the method.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Setting this property causes model binding to be used as the data-binding method.  
-  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
+Setting this property causes model binding to be used as the data-binding method.  
+ 
+For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+ 
  ]]></format>
         </remarks>
       </Docs>

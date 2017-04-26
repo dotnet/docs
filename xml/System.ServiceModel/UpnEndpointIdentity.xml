@@ -15,12 +15,12 @@
     <summary>Represents a user principal name (UPN) for an identity which is used when the binding utilizes the *SSPINegotiate* authentication mode.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A user account name (UPN) is the user name (sometimes referred to as the user logon name) and a domain name that identifies the domain in which the user account is located. This is one of the standard ways to log on to a Windows domain. The format is: someone@example.com (as for an e-mail address).  
-  
- A Down-Level Logon Name can also be used for creating a <xref:System.ServiceModel.UpnEndpointIdentity>.  
-  
+A user account name (UPN) is the user name (sometimes referred to as the user logon name) and a domain name that identifies the domain in which the user account is located. This is one of the standard ways to log on to a Windows domain. The format is: someone@example.com (as for an e-mail address).  
+ 
+A Down-Level Logon Name can also be used for creating a <xref:System.ServiceModel.UpnEndpointIdentity>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -42,10 +42,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.UpnEndpointIdentity" /> class from a claim.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls <xref:System.ServiceModel.EndpointIdentity.Initialize%2A> using `identity` as the input parameter.  
-  
+This method calls <xref:System.ServiceModel.EndpointIdentity.Initialize%2A> using `identity` as the input parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -71,10 +71,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.UpnEndpointIdentity" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a claim from `upnName` and then calls <xref:System.ServiceModel.EndpointIdentity.Initialize%2A> using that claim as the input parameter.  
-  
+This method creates a claim from `upnName` and then calls <xref:System.ServiceModel.EndpointIdentity.Initialize%2A> using that claim as the input parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

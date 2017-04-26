@@ -81,10 +81,10 @@
         <value>A Boolean value expression that represents the condition.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the expression is evaluated as false, the transition is not performed.  The state machine remains in the same state.  
-  
+If the expression is evaluated as false, the transition is not performed.  The state machine remains in the same state.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@
         <value>Returns <see cref="T:System.Activities.Activity" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The trigger value can be null. If trigger is null, the transition is evaluated as soon as the entry action of the state is complete.  
-  
+The trigger value can be null. If trigger is null, the transition is evaluated as soon as the entry action of the state is complete.  
+ 
  ]]></format>
         </remarks>
       </Docs>

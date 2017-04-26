@@ -14,10 +14,10 @@
     <summary>Contains the metadata (properties and settings) for an event that is defined in an event provider.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class cannot be instantiated. A <xref:System.Diagnostics.Eventing.Reader.ProviderMetadata> object defines a list of <xref:System.Diagnostics.Eventing.Reader.EventMetadata> objects, one for each event defined by the provider.  
-  
+This class cannot be instantiated. A <xref:System.Diagnostics.Eventing.Reader.ProviderMetadata> object defines a list of <xref:System.Diagnostics.Eventing.Reader.EventMetadata> objects, one for each event defined by the provider.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -75,12 +75,12 @@
         <value>Returns an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventKeyword" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The keywords for an event are used to group the event with other similar events based on the usage of the events. Each keyword is a bit in a 64-bit mask. Predefined bit values and reserved bits occupy the top 16 positions of this mask, leaving the manifest to use any bits between 0x0000000000000001 and 0x0000800000000000.  
-  
- The standard event keywords are defined in the <xref:System.Diagnostics.Eventing.Reader.StandardEventKeywords> enumeration.  
-  
+The keywords for an event are used to group the event with other similar events based on the usage of the events. Each keyword is a bit in a 64-bit mask. Predefined bit values and reserved bits occupy the top 16 positions of this mask, leaving the manifest to use any bits between 0x0000000000000001 and 0x0000800000000000.  
+ 
+The standard event keywords are defined in the <xref:System.Diagnostics.Eventing.Reader.StandardEventKeywords> enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,10 +102,10 @@
         <value>Returns an <see cref="T:System.Diagnostics.Eventing.Reader.EventLevel" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The standard event levels are defined in the <xref:System.Diagnostics.Eventing.Reader.StandardEventLevel> enumeration.  
-  
+The standard event levels are defined in the <xref:System.Diagnostics.Eventing.Reader.StandardEventLevel> enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -145,10 +145,10 @@
         <value>Returns a <see cref="T:System.Diagnostics.Eventing.Reader.EventOpcode" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The standard event opcodes are defined in the <xref:System.Diagnostics.Eventing.Reader.StandardEventOpcode> enumeration.  
-  
+The standard event opcodes are defined in the <xref:System.Diagnostics.Eventing.Reader.StandardEventOpcode> enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -170,12 +170,12 @@
         <value>Returns a <see cref="T:System.Diagnostics.Eventing.Reader.EventTask" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A task is a 16-bit value with 16 top values reserved. This type allows any value between 0x0000 and 0xffef to be used.  
-  
- The standard event tasks are defined in the <xref:System.Diagnostics.Eventing.Reader.StandardEventTask> enumeration.  
-  
+A task is a 16-bit value with 16 top values reserved. This type allows any value between 0x0000 and 0xffef to be used.  
+ 
+The standard event tasks are defined in the <xref:System.Diagnostics.Eventing.Reader.StandardEventTask> enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>

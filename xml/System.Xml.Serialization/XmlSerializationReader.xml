@@ -19,12 +19,12 @@
     <summary>Controls deserialization by the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization that is derived from the abstract <xref:System.Xml.Serialization.XmlSerializationReader> class. <xref:System.Xml.Serialization.XmlSerializationReader> is also implemented within the .NET Framework for deserialization of XML documents into <xref:System.Web.Services.Discovery.DiscoveryDocument> and <xref:System.Web.Services.Description.ServiceDescription> objects.  
-  
- You should not derive classes from <xref:System.Xml.Serialization.XmlSerializationReader>. Instead, call one of the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> methods.  
-  
+During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization that is derived from the abstract <xref:System.Xml.Serialization.XmlSerializationReader> class. <xref:System.Xml.Serialization.XmlSerializationReader> is also implemented within the .NET Framework for deserialization of XML documents into <xref:System.Web.Services.Discovery.DiscoveryDocument> and <xref:System.Web.Services.Description.ServiceDescription> objects.  
+ 
+You should not derive classes from <xref:System.Xml.Serialization.XmlSerializationReader>. Instead, call one of the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> methods.  
+ 
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -76,14 +76,14 @@
         <summary>Stores an object that contains a callback method that will be called, as necessary, to fill in .NET Framework collections or enumerations that map to SOAP-encoded arrays or SOAP-encoded, multi-referenced elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization that is derived from <xref:System.Xml.Serialization.XmlSerializationReader>. During this process, the infrastructure generates <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback> methods and it creates <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup> objects to store the fix-up methods and their input data. The infrastructure does so for SOAP-encoded arrays or SOAP-encoded, multi-referenced elements whose data types, in either case, map to .NET Framework collections or enumerations. Next, as necessary, the methods are invoked during deserialization to fill in array items or multi-referenced objects.  
-  
- You should not directly create an instance of the <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback> or <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup> class.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization that is derived from <xref:System.Xml.Serialization.XmlSerializationReader>. During this process, the infrastructure generates <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback> methods and it creates <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup> objects to store the fix-up methods and their input data. The infrastructure does so for SOAP-encoded arrays or SOAP-encoded, multi-referenced elements whose data types, in either case, map to .NET Framework collections or enumerations. Next, as necessary, the methods are invoked during deserialization to fill in array items or multi-referenced objects.  
+ 
+You should not directly create an instance of the <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback> or <xref:System.Xml.Serialization.XmlSerializationReader.CollectionFixup> class.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -114,16 +114,16 @@
         <summary>Stores an object that contains a callback method instance that will be called, as necessary, to fill in the objects in a SOAP-encoded array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- While deserializing XML documents into .NET Framework objects, the .NET Framework XML serialization infrastructure dynamically creates instances of fix-up methods that implement the <xref:System.Xml.Serialization.XmlSerializationFixupCallback> delegate and creates instances of the <xref:System.Xml.Serialization.XmlSerializationReader.Fixup> class to store the fix-up methods and their input data. The infrastructure does so for SOAP-encoded arrays whose data types map to .NET Framework reference types. Next, as necessary, a fix-up method is called to fill in the objects in the array.  
-  
- In addition, during initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization that derives from <xref:System.Xml.Serialization.XmlSerializationReader>. During this process, the infrastructure generates <xref:System.Xml.Serialization.XmlSerializationFixupCallback> methods and <xref:System.Xml.Serialization.XmlSerializationReader.Fixup> objects for SOAP-encoded, multi-referenced XML data. The methods are then invoked during deserialization.  
-  
- You should not directly create instances of the <xref:System.Xml.Serialization.XmlSerializationFixupCallback> or <xref:System.Xml.Serialization.XmlSerializationReader.Fixup> classes.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+While deserializing XML documents into .NET Framework objects, the .NET Framework XML serialization infrastructure dynamically creates instances of fix-up methods that implement the <xref:System.Xml.Serialization.XmlSerializationFixupCallback> delegate and creates instances of the <xref:System.Xml.Serialization.XmlSerializationReader.Fixup> class to store the fix-up methods and their input data. The infrastructure does so for SOAP-encoded arrays whose data types map to .NET Framework reference types. Next, as necessary, a fix-up method is called to fill in the objects in the array.  
+ 
+In addition, during initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization that derives from <xref:System.Xml.Serialization.XmlSerializationReader>. During this process, the infrastructure generates <xref:System.Xml.Serialization.XmlSerializationFixupCallback> methods and <xref:System.Xml.Serialization.XmlSerializationReader.Fixup> objects for SOAP-encoded, multi-referenced XML data. The methods are then invoked during deserialization.  
+ 
+You should not directly create instances of the <xref:System.Xml.Serialization.XmlSerializationFixupCallback> or <xref:System.Xml.Serialization.XmlSerializationReader.Fixup> classes.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -160,14 +160,14 @@
         <summary>Stores an implementation of the <see cref="T:System.Xml.Serialization.XmlSerializationReadCallback" /> delegate and its input data for a later invocation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization that derives from <xref:System.Xml.Serialization.XmlSerializationReader>. During this process, the .NET Framework generates read methods that implement the <xref:System.Xml.Serialization.XmlSerializationReadCallback> delegate. It does so for certain mappings between .NET Framework types and XML data types that are serialized through SOAP-encoded XML and are not root elements. Next, as necessary, a read method is called during deserialization.  
-  
- You should not directly create an instance of the <xref:System.Xml.Serialization.XmlSerializationReadCallback> class.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization that derives from <xref:System.Xml.Serialization.XmlSerializationReader>. During this process, the .NET Framework generates read methods that implement the <xref:System.Xml.Serialization.XmlSerializationReadCallback> delegate. It does so for certain mappings between .NET Framework types and XML data types that are serialized through SOAP-encoded XML and are not root elements. Next, as necessary, a read method is called during deserialization.  
+ 
+You should not directly create an instance of the <xref:System.Xml.Serialization.XmlSerializationReadCallback> class.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -200,14 +200,14 @@
         <summary>Stores an object that is being deserialized from a SOAP-encoded <see langword="multiRef" /> element for later access through the <see cref="M:System.Xml.Serialization.XmlSerializationReader.GetTarget(System.String)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times by `ref` attributes (or `href` attributes in SOAP 1.1) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times by `ref` attributes (or `href` attributes in SOAP 1.1) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -240,12 +240,12 @@
         <summary>Checks whether the deserializer has advanced.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method is used by generated classes and should not be directly invoked.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.CheckReaderCount%2A> method is used when the `checkDeserializerAdvances` attribute of the `<xmlSerializer>` configuration element is set to `true`. For more information, see [\&lt;xmlSerializer\&gt; Element](~/docs/framework/serialization/xmlserializer-element.md).  
-  
+The method is used by generated classes and should not be directly invoked.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.CheckReaderCount%2A> method is used when the `checkDeserializerAdvances` attribute of the `<xmlSerializer>` configuration element is set to `true`. For more information, see [\&lt;xmlSerializer\&gt; Element](~/docs/framework/serialization/xmlserializer-element.md).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Xml.Serialization.XmlSerializationReader.ReaderCount" /> has not advanced.</exception>
@@ -278,10 +278,10 @@
         <returns>The trimmed string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -315,10 +315,10 @@
         <returns>An <see cref="T:System.InvalidOperationException" /> exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended only for use by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended only for use by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -360,10 +360,10 @@
         <returns>An <see cref="T:System.InvalidOperationException" /> exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -395,10 +395,10 @@
         <returns>An <see cref="T:System.InvalidOperationException" /> exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -430,10 +430,10 @@
         <returns>An <see cref="T:System.InvalidOperationException" /> exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -467,10 +467,10 @@
         <returns>An <see cref="T:System.InvalidCastException" /> exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -506,10 +506,10 @@
         <returns>An <see cref="T:System.InvalidCastException" /> exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -545,10 +545,10 @@
         <returns>An <see cref="T:System.InvalidOperationException" /> exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -580,10 +580,10 @@
         <returns>An <see cref="T:System.InvalidOperationException" /> exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -617,10 +617,10 @@
         <returns>An <see cref="T:System.InvalidOperationException" /> exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -649,10 +649,10 @@
         <returns>An <see cref="T:System.InvalidOperationException" /> exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -684,10 +684,10 @@
         <returns>An <see cref="T:System.InvalidOperationException" /> exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -716,10 +716,10 @@
           <see langword="true" /> if XML strings are decoded into valid .NET Framework type names; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.XmlConvert.EncodeName%2A> method writes valid XML from invalid sources. For example, the <xref:System.Data.DataColumn.ColumnName%2A> property of the <xref:System.Data.DataColumn> class can contain spaces, which are invalid as XML. The <xref:System.Xml.XmlConvert.DecodeName%2A> reads the encoded XML and restores it to the original value. However, the <xref:System.Xml.Schema.XmlSchema.Read%2A> method of the <xref:System.Xml.Schema.XmlSchema> class cannot read such encoded XML. In that case, set the <xref:System.Xml.Serialization.XmlSerializationWriter.EscapeName%2A> property to `false` to disable the encoding of the XML.  
-  
+The <xref:System.Xml.XmlConvert.EncodeName%2A> method writes valid XML from invalid sources. For example, the <xref:System.Data.DataColumn.ColumnName%2A> property of the <xref:System.Data.DataColumn> class can contain spaces, which are invalid as XML. The <xref:System.Xml.XmlConvert.DecodeName%2A> reads the encoded XML and restores it to the original value. However, the <xref:System.Xml.Schema.XmlSchema.Read%2A> method of the <xref:System.Xml.Schema.XmlSchema> class cannot read such encoded XML. In that case, set the <xref:System.Xml.Serialization.XmlSerializationWriter.EscapeName%2A> property to `false` to disable the encoding of the XML.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -747,10 +747,10 @@
         <value>An <see cref="T:System.Xml.XmlDocument" /> that represents the deserialized <see cref="T:System.Xml.XmlDocument" /> data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -786,10 +786,10 @@
         <returns>The existing <see cref="T:System.Array" />, if it is already large enough; otherwise, a new, larger array that contains the original array's elements.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -820,16 +820,16 @@
         <summary>Fills in the values of a SOAP-encoded array whose data type maps to a .NET Framework reference type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.FixupArrayRefs%2A> method implements the <xref:System.Xml.Serialization.XmlSerializationFixupCallback> delegate for deserialization of SOAP-encoded XML data.  
-  
- While deserializing XML documents into .NET Framework objects, the .NET Framework XML serialization infrastructure dynamically creates an instance of the <xref:System.Xml.Serialization.XmlSerializationReader.FixupArrayRefs%2A> method for SOAP-encoded arrays whose data types map to .NET Framework reference types. The method then is called by <xref:System.Xml.Serialization.XmlSerializationFixupCallback> to fill in the objects in the array.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.FixupArrayRefs%2A> method implements the <xref:System.Xml.Serialization.XmlSerializationFixupCallback> delegate for deserialization of SOAP-encoded XML data.  
+ 
+While deserializing XML documents into .NET Framework objects, the .NET Framework XML serialization infrastructure dynamically creates an instance of the <xref:System.Xml.Serialization.XmlSerializationReader.FixupArrayRefs%2A> method for SOAP-encoded arrays whose data types map to .NET Framework reference types. The method then is called by <xref:System.Xml.Serialization.XmlSerializationFixupCallback> to fill in the objects in the array.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -863,12 +863,12 @@
         <returns>The length of the SOAP array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.GetArrayLength%2A> method applies to the `arrayType` attribute that is used with SOAP encoding and specified with the namespace "http://schemas.xmlsoap.org/soap/encoding/".  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.GetArrayLength%2A> method applies to the `arrayType` attribute that is used with SOAP encoding and specified with the namespace "http://schemas.xmlsoap.org/soap/encoding/".  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -898,10 +898,10 @@
           <see langword="true" /> if <see cref="T:System.Xml.XmlReader" /> is currently positioned over a null attribute with the value <see langword="true" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -933,12 +933,12 @@
         <returns>An object to be deserialized from a SOAP-encoded <see langword="multiRef" /> element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements. SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements. SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -967,12 +967,12 @@
         <returns>An XML qualified name that indicates the data type of an XML element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The `type` attribute from the instance of the XML Schema namespace explicitly specifies the data type of an XML element.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The `type` attribute from the instance of the XML Schema namespace explicitly specifies the data type of an XML element.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1000,18 +1000,18 @@
         <summary>Initializes callback methods that populate objects that map to SOAP-encoded XML data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization that is derived from <xref:System.Xml.Serialization.XmlSerializationReader>. During this process, the .NET Framework generates read methods that implement the <xref:System.Xml.Serialization.XmlSerializationReadCallback> delegate. It does so for certain mappings between .NET Framework types and XML data types that are serialized through SOAP-encoded XML and are not root elements. Next, as necessary, a read method is called during deserialization.  
-  
- The abstract <xref:System.Xml.Serialization.XmlSerializationReader.InitCallbacks%2A> method is where the temporary derived class creates an instance of and initializes read callback methods.  
-  
- You should not directly create an instance of <xref:System.Xml.Serialization.XmlSerializationReadCallback>.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization that is derived from <xref:System.Xml.Serialization.XmlSerializationReader>. During this process, the .NET Framework generates read methods that implement the <xref:System.Xml.Serialization.XmlSerializationReadCallback> delegate. It does so for certain mappings between .NET Framework types and XML data types that are serialized through SOAP-encoded XML and are not root elements. Next, as necessary, a read method is called during deserialization.  
+ 
+The abstract <xref:System.Xml.Serialization.XmlSerializationReader.InitCallbacks%2A> method is where the temporary derived class creates an instance of and initializes read callback methods.  
+ 
+You should not directly create an instance of <xref:System.Xml.Serialization.XmlSerializationReadCallback>.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1039,12 +1039,12 @@
         <summary>Stores element and attribute names in a <see cref="T:System.Xml.NameTable" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.InitIDs%2A> method is abstract.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.InitIDs%2A> method is abstract.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1073,10 +1073,10 @@
           <see langword="true" />, if the value is a return value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1109,12 +1109,12 @@
           <see langword="true " />if the XML attribute name indicates an XML namespace; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- An attribute name indicates an XML namespace if it takes the form `xmlns:``key`, where "key" is the namespace name.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+An attribute name indicates an XML namespace if it takes the form `xmlns:``key`, where "key" is the namespace name.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1145,12 +1145,12 @@
         <summary>Sets the value of the XML attribute if it is of type <see langword="arrayType" /> from the Web Services Description Language (WSDL) namespace.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- WSDL uses the namespace "http://schemas.xmlsoap.org/wsdl/".  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+WSDL uses the namespace "http://schemas.xmlsoap.org/wsdl/".  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1179,10 +1179,10 @@
         <returns>The fully qualified name of the current XML element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1210,10 +1210,10 @@
         <summary>Makes the <see cref="T:System.Xml.XmlReader" /> read an XML end tag.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1241,10 +1241,10 @@
         <value>The <see cref="T:System.Xml.XmlReader" /> that is being used by the <see cref="T:System.Xml.Serialization.XmlSerializationReader" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1272,12 +1272,12 @@
         <value>The current count of an <see cref="T:System.Xml.XmlReader" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The method is used by generated classes and should not be directly invoked.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader> uses an instance of the <xref:System.Xml.XmlReader> class to count when a read operation occurs. The count is incremented each time the reader calls an appropriate method, for example the <xref:System.Xml.XmlReader.Read%2A> method or the <xref:System.Xml.XmlReader.ReadElementString%2A> method.  
-  
+The method is used by generated classes and should not be directly invoked.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader> uses an instance of the <xref:System.Xml.XmlReader> class to count when a read operation occurs. The count is incremented each time the reader calls an appropriate method, for example the <xref:System.Xml.XmlReader.Read%2A> method or the <xref:System.Xml.XmlReader.ReadElementString%2A> method.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1307,10 +1307,10 @@
           <see langword="true" /> if the element has a **null="true"** attribute value and has been read; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1339,10 +1339,10 @@
         <returns>A <see cref="T:System.Xml.XmlQualifiedName" /> that represents the fully qualified name of the current XML element; otherwise, <see langword="null" /> if a **null="true"** attribute value is present.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1371,10 +1371,10 @@
         <returns>The string value; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1407,16 +1407,16 @@
           <see langword="true" /> if the value was read; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The opening `#` symbol is stripped from the `href` attribute value.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The opening `#` symbol is stripped from the `href` attribute value.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1445,16 +1445,16 @@
         <returns>The value of the referenced element in the document.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.ReadReferencedElement%2A> method obtains the XML Schema data type by reading the `xsi:type` attribute of the `multiRef` element. The prefix `xsi` refers to the instance of the XML Schema namespace.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.ReadReferencedElement%2A> method obtains the XML Schema data type by reading the `xsi:type` attribute of the `multiRef` element. The prefix `xsi` refers to the instance of the XML Schema namespace.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1488,16 +1488,16 @@
         <returns>The value of the referenced element in the document.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- This signature of the <xref:System.Xml.Serialization.XmlSerializationReader.ReadReferencedElement%2A> method obtains the XML Schema data type of the `multiRef` element from the method parameters rather than by reading the `xsi:type` attribute. The prefix `xsi` refers to the instance of the XML Schema namespace.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+This signature of the <xref:System.Xml.Serialization.XmlSerializationReader.ReadReferencedElement%2A> method obtains the XML Schema data type of the `multiRef` element from the method parameters rather than by reading the `xsi:type` attribute. The prefix `xsi` refers to the instance of the XML Schema namespace.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1525,14 +1525,14 @@
         <summary>Deserializes objects from the SOAP-encoded <see langword="multiRef" /> elements in a SOAP message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1564,14 +1564,14 @@
         <returns>The deserialized object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1607,14 +1607,14 @@
         <returns>The deserialized object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1653,14 +1653,14 @@
         <returns>The deserialized object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1692,10 +1692,10 @@
         <returns>An object that implements the <see cref="T:System.Xml.Serialization.IXmlSerializable" /> interface with its members populated from the location of the <see cref="T:System.Xml.XmlReader" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1757,10 +1757,10 @@
         <returns>The result of call to the <see cref="M:System.Xml.XmlReader.ReadString" /> method appended to the input value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1851,10 +1851,10 @@
         <returns>The value of the node as a .NET Framework value type, if the value is a simple XML Schema data type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1887,10 +1887,10 @@
         <returns>An <see cref="T:System.Xml.XmlDocument" /> that contains the root element that has been read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1923,10 +1923,10 @@
         <returns>An <see cref="T:System.Xml.XmlNode" /> that represents the XML node that has been read.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1957,14 +1957,14 @@
         <summary>Stores an object to be deserialized from a SOAP-encoded <see langword="multiRef" /> element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
-  
- SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+ 
+SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1996,12 +1996,12 @@
         <returns>A dynamically generated <see cref="T:System.Reflection.Assembly" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.ResolveDynamicAssembly%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.ResolveDynamicAssembly%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2040,10 +2040,10 @@
         <returns>The existing <see cref="T:System.Array" />, if it is already small enough; otherwise, a new, smaller array that contains the original array's elements up to the size of<paramref name=" length" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2076,10 +2076,10 @@
         <returns>A base-64 byte array; otherwise, <see langword="null" /> if the value of the <paramref name="isNull" /> parameter is <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2111,12 +2111,12 @@
         <returns>A base-64 byte array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.ToByteArrayBase64%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.ToByteArrayBase64%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2149,10 +2149,10 @@
         <returns>A hexadecimal byte array; otherwise, <see langword="null" /> if the value of the <paramref name="isNull" /> parameter is **true**.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2184,12 +2184,12 @@
         <returns>A hexadecimal byte array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.ToByteArrayHex%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.ToByteArrayHex%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2221,12 +2221,12 @@
         <returns>A <see cref="T:System.Char" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.ToChar%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.ToChar%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2258,12 +2258,12 @@
         <returns>A <see cref="T:System.DateTime" />object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.ToDate%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.ToDate%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2295,12 +2295,12 @@
         <returns>A <see cref="T:System.DateTime" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.ToDateTime%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.ToDateTime%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2336,12 +2336,12 @@
         <returns>A long value that consists of the enumeration value as a series of bitwise <see langword="OR" /> operations.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.ToEnum%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.ToEnum%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2373,12 +2373,12 @@
         <returns>A <see cref="T:System.DateTime" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.ToTime%2A> method is static.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.ToTime%2A> method is static.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2410,14 +2410,14 @@
         <returns>A decoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.ToXmlName%2A> method is static.  
-  
- <xref:System.Xml.Serialization.XmlSerializationReader.ToXmlName%2A> converts 4-digit hexadecimal UCS-2 codes into Unicode.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.ToXmlName%2A> method is static.  
+ 
+<xref:System.Xml.Serialization.XmlSerializationReader.ToXmlName%2A> converts 4-digit hexadecimal UCS-2 codes into Unicode.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2449,14 +2449,14 @@
         <returns>A decoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.ToXmlNCName%2A> method is static.  
-  
- <xref:System.Xml.Serialization.XmlSerializationReader.ToXmlNCName%2A> converts 4-digit hexadecimal UCS-2 codes into Unicode.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.ToXmlNCName%2A> method is static.  
+ 
+<xref:System.Xml.Serialization.XmlSerializationReader.ToXmlNCName%2A> converts 4-digit hexadecimal UCS-2 codes into Unicode.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2488,14 +2488,14 @@
         <returns>A decoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are only intended for use by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.ToXmlNmToken%2A> method is static.  
-  
- <xref:System.Xml.Serialization.XmlSerializationReader.ToXmlNmToken%2A> converts 4-digit hexadecimal UCS-2 codes into Unicode.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are only intended for use by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.ToXmlNmToken%2A> method is static.  
+ 
+<xref:System.Xml.Serialization.XmlSerializationReader.ToXmlNmToken%2A> converts 4-digit hexadecimal UCS-2 codes into Unicode.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2527,14 +2527,14 @@
         <returns>A decoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- The <xref:System.Xml.Serialization.XmlSerializationReader.ToXmlNmTokens%2A> method is static.  
-  
- <xref:System.Xml.Serialization.XmlSerializationReader.ToXmlNmTokens%2A> converts 4-digit hexadecimal UCS-2 codes into Unicode.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+The <xref:System.Xml.Serialization.XmlSerializationReader.ToXmlNmTokens%2A> method is static.  
+ 
+<xref:System.Xml.Serialization.XmlSerializationReader.ToXmlNmTokens%2A> converts 4-digit hexadecimal UCS-2 codes into Unicode.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2566,12 +2566,12 @@
         <returns>An <see cref="T:System.Xml.XmlQualifiedName" /> that represents a namespace-qualified XML name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- If a prefix is present, the <xref:System.Xml.Serialization.XmlSerializationReader.ToXmlQualifiedName%2A> method looks up the associated namespace for the current XML document and places the value in the <xref:System.Xml.XmlQualifiedName> object.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+If a prefix is present, the <xref:System.Xml.Serialization.XmlSerializationReader.ToXmlQualifiedName%2A> method looks up the associated namespace for the current XML document and places the value in the <xref:System.Xml.XmlQualifiedName> object.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2604,12 +2604,12 @@
         <summary>Raises an <see cref="E:System.Xml.Serialization.XmlSerializer.UnknownAttribute" /> event for the current position of the <see cref="T:System.Xml.XmlReader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- Add a handler method to the <xref:System.Xml.Serialization.XmlSerializationReader.UnknownAttribute%2A> method to handle unknown attributes while the <xref:System.Xml.Serialization.XmlSerializer> is executing its <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+Add a handler method to the <xref:System.Xml.Serialization.XmlSerializationReader.UnknownAttribute%2A> method to handle unknown attributes while the <xref:System.Xml.Serialization.XmlSerializer> is executing its <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2789,14 +2789,14 @@
         <summary>Raises an <see cref="E:System.Xml.Serialization.XmlSerializer.UnreferencedObject" /> event for the current position of the <see cref="T:System.Xml.XmlReader" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
- SOAP encoding, as specified in Section 5 of the SOAP 1.1 specification, allows for elements referenced multiple times in a SOAP message (or optionally, just once) to be referred by an `href` attribute in the main message. An <xref:System.Xml.Serialization.XmlSerializer.UnreferencedObject> event occurs when such an element appears, but there is no `href` reference to it.  
-  
- Add a handler method to <xref:System.Xml.Serialization.XmlSerializer.UnreferencedObject> to provide custom handling for unreferenced objects while the <xref:System.Xml.Serialization.XmlSerializer> executes its <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
+SOAP encoding, as specified in Section 5 of the SOAP 1.1 specification, allows for elements referenced multiple times in a SOAP message (or optionally, just once) to be referred by an `href` attribute in the main message. An <xref:System.Xml.Serialization.XmlSerializer.UnreferencedObject> event occurs when such an element appears, but there is no `href` reference to it.  
+ 
+Add a handler method to <xref:System.Xml.Serialization.XmlSerializer.UnreferencedObject> to provide custom handling for unreferenced objects while the <xref:System.Xml.Serialization.XmlSerializer> executes its <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -2812,10 +2812,10 @@
         <summary>Stores an object that contains a callback method to subsequently be called, as necessary, to fill in .NET Framework collections or enumerations that map to SOAP-encoded arrays or SOAP-encoded, multi-referenced elements.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2830,10 +2830,10 @@
         <summary>Deserializes an object from a SOAP-encoded <see langword="multiRef" /> element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2848,10 +2848,10 @@
         <summary>Reads the current value and returns it as a base-64 byte array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2866,10 +2866,10 @@
         <summary>Deserializes an object from an XML element in a SOAP message that contains a reference to a <see langword="multiRef" /> element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2884,10 +2884,10 @@
         <summary>Creates an <see cref="T:System.InvalidCastException" /> that indicates that an explicit reference conversion failed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
-  
+The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+ 
  ]]></format>
         </remarks>
       </Docs>

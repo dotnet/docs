@@ -14,13 +14,13 @@
     <summary>Provides a type converter that retrieves a list of property names for the current control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ControlPropertyNameConverter> class derives from the <xref:System.ComponentModel.StringConverter> class and provides a list of property names for display in a property grid control in design-time environments.  
-  
+The <xref:System.Web.UI.WebControls.ControlPropertyNameConverter> class derives from the <xref:System.ComponentModel.StringConverter> class and provides a list of property names for display in a property grid control in design-time environments.  
+ 
 > [!CAUTION]
 >  You should never access a type converter directly. Instead, call the appropriate converter by using the <xref:System.ComponentModel.TypeDescriptor?displayProperty=fullName> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ControlPropertyNameConverter" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is not intended to be called directly. You should never access a type converter directly. Instead, call the appropriate converter by using the <xref:System.ComponentModel.TypeDescriptor?displayProperty=fullName> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
-  
+This constructor is not intended to be called directly. You should never access a type converter directly. Instead, call the appropriate converter by using the <xref:System.ComponentModel.TypeDescriptor?displayProperty=fullName> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -68,12 +68,12 @@
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> that contains a set of strings representing property names for the current control. If the current control is <see langword="null" />, an empty collection is returned. If the <paramref name="context" /> parameter is <see langword="null" />, <see langword="null" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ControlPropertyNameConverter.GetStandardValues%2A> method returns a <xref:System.ComponentModel.TypeConverter.StandardValuesCollection> collection that contains a set of strings representing the names of the current control's properties.  
-  
- Use the `context` parameter to extract additional information about the design-time environment from which this converter is invoked. This parameter can be `null`, and properties on the context object can return `null`. If the `context` parameter is `null`, this method returns `null`.  
-  
+The <xref:System.Web.UI.WebControls.ControlPropertyNameConverter.GetStandardValues%2A> method returns a <xref:System.ComponentModel.TypeConverter.StandardValuesCollection> collection that contains a set of strings representing the names of the current control's properties.  
+ 
+Use the `context` parameter to extract additional information about the design-time environment from which this converter is invoked. This parameter can be `null`, and properties on the context object can return `null`. If the `context` parameter is `null`, this method returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -100,12 +100,12 @@
           <see langword="false" /> in all cases, which indicates that the list is not exclusive.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ControlPropertyNameConverter.GetStandardValuesExclusive%2A> method always returns `false` to indicate that the list of property values returned by the <xref:System.Web.UI.WebControls.ControlPropertyNameConverter.GetStandardValues%2A> method is not an exclusive list of possible values.  
-  
- Use the `context` parameter to extract additional information about the environment from which this converter is invoked. This parameter can be `null`, and properties on the context object can return `null`.  
-  
+The <xref:System.Web.UI.WebControls.ControlPropertyNameConverter.GetStandardValuesExclusive%2A> method always returns `false` to indicate that the list of property values returned by the <xref:System.Web.UI.WebControls.ControlPropertyNameConverter.GetStandardValues%2A> method is not an exclusive list of possible values.  
+ 
+Use the `context` parameter to extract additional information about the environment from which this converter is invoked. This parameter can be `null`, and properties on the context object can return `null`.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -135,12 +135,12 @@
           <see langword="true" /> if the <paramref name="context" /> parameter is not <see langword="null" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ControlPropertyNameConverter.GetStandardValuesSupported%2A> method returns a value that indicates whether this object supports a standard set of values.  
-  
- The `context` parameter extracts additional information about the design-time environment from which this converter is invoked. This parameter can be `null`, and properties on the context object can return `null`. If the `context` parameter is `null`, this method returns `false`.  
-  
+The <xref:System.Web.UI.WebControls.ControlPropertyNameConverter.GetStandardValuesSupported%2A> method returns a value that indicates whether this object supports a standard set of values.  
+ 
+The `context` parameter extracts additional information about the design-time environment from which this converter is invoked. This parameter can be `null`, and properties on the context object can return `null`. If the `context` parameter is `null`, this method returns `false`.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">

@@ -31,21 +31,21 @@
     <summary>Provides a response from a Uniform Resource Identifier (URI). This is an <see langword="abstract" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.WebResponse> class is the `abstract` base class from which protocol-specific response classes are derived. Applications can participate in request and response transactions in a protocol-agnostic manner using instances of the <xref:System.Net.WebResponse> class while protocol-specific classes derived from <xref:System.Net.WebResponse> carry out the details of the request.  
+The <xref:System.Net.WebResponse> class is the `abstract` base class from which protocol-specific response classes are derived. Applications can participate in request and response transactions in a protocol-agnostic manner using instances of the <xref:System.Net.WebResponse> class while protocol-specific classes derived from <xref:System.Net.WebResponse> carry out the details of the request.  
+ 
+Client applications do not create <xref:System.Net.WebResponse> objects directly; they are created by calling the <xref:System.Net.WebRequest.GetResponse%2A> method on a <xref:System.Net.WebRequest> instance.  
+ 
   
- Client applications do not create <xref:System.Net.WebResponse> objects directly; they are created by calling the <xref:System.Net.WebRequest.GetResponse%2A> method on a <xref:System.Net.WebRequest> instance.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Net.WebResponse> instance from a <xref:System.Net.WebRequest>.  
-  
- [!code-cpp[Classic WebRequest Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic WebRequest Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebRequest Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebRequest Example/CS/source.cs#1)]
- [!code-vb[Classic WebRequest Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebRequest Example/VB/source.vb#1)]  
-  
+The following example creates a <xref:System.Net.WebResponse> instance from a <xref:System.Net.WebRequest>.  
+ 
+[!code-cpp[Classic WebRequest Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic WebRequest Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebRequest Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebRequest Example/CS/source.cs#1)]
+[!code-vb[Classic WebRequest Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebRequest Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -76,10 +76,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.WebResponse" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applications do not call the <xref:System.Net.WebResponse> constructor directly; use the <xref:System.Net.WebRequest.GetResponse%2A> method on a <xref:System.Net.WebRequest> instance.  
-  
+Applications do not call the <xref:System.Net.WebResponse> constructor directly; use the <xref:System.Net.WebRequest.GetResponse%2A> method on a <xref:System.Net.WebRequest> instance.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -111,10 +111,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Net.WebResponse" /> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> classes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When implemented by a descendant class, this constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.WebResponse> descendant.  
-  
+When implemented by a descendant class, this constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.WebResponse> descendant.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any attempt is made to access the constructor, when the constructor is not overridden in a descendant class.</exception>
@@ -142,25 +142,25 @@
         <summary>When overridden by a descendant class, closes the response stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.WebResponse.Close%2A> method cleans up the resources used by a <xref:System.Net.WebResponse> and closes the underlying stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method.  
-  
+The <xref:System.Net.WebResponse.Close%2A> method cleans up the resources used by a <xref:System.Net.WebResponse> and closes the underlying stream by calling the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method.  
+ 
 > [!NOTE]
 >  The response must be closed to avoid running out of system resources. The response stream can be closed by calling <xref:System.IO.Stream.Close%2A?displayProperty=fullName> or <xref:System.Net.WebResponse.Close%2A>.  
-  
+ 
 > [!NOTE]
 >  The <xref:System.Net.WebResponse> class is an `abstract` class. The actual behavior of <xref:System.Net.WebResponse> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=fullName>. For more information about default values and exceptions, please see the documentation for the descendant classes, such as <xref:System.Net.HttpWebResponse> and <xref:System.Net.FileWebResponse>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Net.WebResponse.Close%2A> method to close the `WebResponse`.  
-  
- [!code-cpp[WebResponse_close#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebResponse_Close/CPP/webresponse_close.cpp#1)]
- [!code-csharp[WebResponse_close#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebResponse_Close/CS/webresponse_close.cs#1)]
- [!code-vb[WebResponse_close#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebResponse_Close/VB/webresponse_close.vb#1)]  
-  
+The following example uses the <xref:System.Net.WebResponse.Close%2A> method to close the `WebResponse`.  
+ 
+[!code-cpp[WebResponse_close#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebResponse_Close/CPP/webresponse_close.cpp#1)]
+[!code-csharp[WebResponse_close#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebResponse_Close/CS/webresponse_close.cs#1)]
+[!code-vb[WebResponse_close#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebResponse_Close/VB/webresponse_close.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
@@ -192,22 +192,22 @@
         <value>The number of bytes returned from the Internet resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.WebResponse.ContentLength%2A> property contains the length, in bytes, of the response from the Internet resource. For request methods that contain header information, the <xref:System.Net.WebResponse.ContentLength%2A> does not include the length of the header information.  
-  
+The <xref:System.Net.WebResponse.ContentLength%2A> property contains the length, in bytes, of the response from the Internet resource. For request methods that contain header information, the <xref:System.Net.WebResponse.ContentLength%2A> does not include the length of the header information.  
+ 
 > [!NOTE]
 >  The <xref:System.Net.WebResponse> class is an `abstract` class. The actual behavior of <xref:System.Net.WebResponse> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=fullName>. For more information about default values and exceptions, please see the documentation for the descendant classes, such as <xref:System.Net.HttpWebResponse> and <xref:System.Net.FileWebResponse>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Net.WebResponse.ContentLength%2A> property to obtain the Length of the resource returned.  
-  
- [!code-cpp[WebResponse_ContentLength_Type#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebResponse_ContentLength_Type/CPP/webresponse_contentlength_type.cpp#1)]
- [!code-csharp[WebResponse_ContentLength_Type#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebResponse_ContentLength_Type/CS/webresponse_contentlength_type.cs#1)]
- [!code-vb[WebResponse_ContentLength_Type#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebResponse_ContentLength_Type/VB/webresponse_contentlength_type.vb#1)]  
-  
+The following example uses the <xref:System.Net.WebResponse.ContentLength%2A> property to obtain the Length of the resource returned.  
+ 
+[!code-cpp[WebResponse_ContentLength_Type#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebResponse_ContentLength_Type/CPP/webresponse_contentlength_type.cpp#1)]
+[!code-csharp[WebResponse_ContentLength_Type#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebResponse_ContentLength_Type/CS/webresponse_contentlength_type.cs#1)]
+[!code-vb[WebResponse_ContentLength_Type#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebResponse_ContentLength_Type/VB/webresponse_contentlength_type.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any attempt is made to get or set the property, when the property is not overridden in a descendant class.</exception>
@@ -239,22 +239,22 @@
         <value>A string that contains the content type of the response.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.WebResponse.ContentType%2A> property contains the MIME content type of the response from the Internet resource, if known.  
-  
+The <xref:System.Net.WebResponse.ContentType%2A> property contains the MIME content type of the response from the Internet resource, if known.  
+ 
 > [!NOTE]
 >  The <xref:System.Net.WebResponse> class is an `abstract` class. The actual behavior of <xref:System.Net.WebResponse> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=fullName>. For more information about default values and exceptions, please see the documentation for the descendant classes, such as <xref:System.Net.HttpWebResponse> and <xref:System.Net.FileWebResponse>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Net.WebResponse.ContentType%2A> property to obtain the content type of the response.  
-  
- [!code-cpp[WebResponse_ContentLength_Type#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebResponse_ContentLength_Type/CPP/webresponse_contentlength_type.cpp#1)]
- [!code-csharp[WebResponse_ContentLength_Type#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebResponse_ContentLength_Type/CS/webresponse_contentlength_type.cs#1)]
- [!code-vb[WebResponse_ContentLength_Type#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebResponse_ContentLength_Type/VB/webresponse_contentlength_type.vb#1)]  
-  
+The following example uses the <xref:System.Net.WebResponse.ContentType%2A> property to obtain the content type of the response.  
+ 
+[!code-cpp[WebResponse_ContentLength_Type#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebResponse_ContentLength_Type/CPP/webresponse_contentlength_type.cpp#1)]
+[!code-csharp[WebResponse_ContentLength_Type#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebResponse_ContentLength_Type/CS/webresponse_contentlength_type.cs#1)]
+[!code-vb[WebResponse_ContentLength_Type#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebResponse_ContentLength_Type/VB/webresponse_contentlength_type.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any attempt is made to get or set the property, when the property is not overridden in a descendant class.</exception>
@@ -317,15 +317,15 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.WebResponse" /> object, and optionally disposes of the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Net.WebResponse> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ 
+When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Net.WebResponse> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -357,10 +357,10 @@
         <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data that is needed to serialize the target object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Any objects included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
-  
+Any objects included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -392,22 +392,22 @@
         <returns>An instance of the <see cref="T:System.IO.Stream" /> class for reading data from the Internet resource.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.WebResponse.GetResponseStream%2A> method returns the data stream from the Internet resource.  
-  
+The <xref:System.Net.WebResponse.GetResponseStream%2A> method returns the data stream from the Internet resource.  
+ 
 > [!NOTE]
 >  The response stream must be closed to avoid running out of system resources. The response stream can be closed by calling <xref:System.IO.Stream.Close%2A?displayProperty=fullName> or <xref:System.Net.WebResponse.Close%2A>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses <xref:System.Net.WebResponse.GetResponseStream%2A> to return a <xref:System.IO.StreamReader> instance. A small local buffer is used to read data from the <xref:System.IO.StreamReader> and output it to the console.  
-  
- [!code-cpp[WebResponse_GetResponseStream#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebResponse_GetResponseStream/CPP/webresponse_getresponsestream.cpp#1)]
- [!code-csharp[WebResponse_GetResponseStream#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebResponse_GetResponseStream/CS/webresponse_getresponsestream.cs#1)]
- [!code-vb[WebResponse_GetResponseStream#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebResponse_GetResponseStream/VB/webresponse_getresponsestream.vb#1)]  
-  
+The following example uses <xref:System.Net.WebResponse.GetResponseStream%2A> to return a <xref:System.IO.StreamReader> instance. A small local buffer is used to read data from the <xref:System.IO.StreamReader> and output it to the console.  
+ 
+[!code-cpp[WebResponse_GetResponseStream#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebResponse_GetResponseStream/CPP/webresponse_getresponsestream.cpp#1)]
+[!code-csharp[WebResponse_GetResponseStream#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebResponse_GetResponseStream/CS/webresponse_getresponsestream.cs#1)]
+[!code-vb[WebResponse_GetResponseStream#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebResponse_GetResponseStream/VB/webresponse_getresponsestream.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any attempt is made to access the method, when the method is not overridden in a descendant class.</exception>
@@ -439,22 +439,22 @@
         <value>An instance of the <see cref="T:System.Net.WebHeaderCollection" /> class that contains header values associated with this response.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.WebResponse.Headers%2A> property contains the name-value header pairs returned in the response.  
-  
+The <xref:System.Net.WebResponse.Headers%2A> property contains the name-value header pairs returned in the response.  
+ 
 > [!NOTE]
 >  The <xref:System.Net.WebResponse> class is an `abstract` class. The actual behavior of <xref:System.Net.WebResponse> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=fullName>. For more information about default values and exceptions, please see the documentation for the descendant classes, such as <xref:System.Net.HttpWebResponse> and <xref:System.Net.FileWebResponse>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example displays all of the header name-value pairs returned in the <xref:System.Net.WebResponse>.  
-  
- [!code-cpp[WebResponse_Headers#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebResponse_Headers/CPP/webresponse_headers.cpp#1)]
- [!code-csharp[WebResponse_Headers#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebResponse_Headers/CS/webresponse_headers.cs#1)]
- [!code-vb[WebResponse_Headers#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebResponse_Headers/VB/webresponse_headers.vb#1)]  
-  
+The following example displays all of the header name-value pairs returned in the <xref:System.Net.WebResponse>.  
+ 
+[!code-cpp[WebResponse_Headers#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebResponse_Headers/CPP/webresponse_headers.cpp#1)]
+[!code-csharp[WebResponse_Headers#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebResponse_Headers/CS/webresponse_headers.cs#1)]
+[!code-vb[WebResponse_Headers#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebResponse_Headers/VB/webresponse_headers.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any attempt is made to get or set the property, when the property is not overridden in a descendant class.</exception>
@@ -483,12 +483,12 @@
           <see langword="true" /> if the response was taken from the cache; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The current cache policy and the presence of the requested resource in the cache determine whether a response can be retrieved from the cache. Using cached responses usually improves application performance, but there is a risk that the response in the cache does not match the response on the server. Use the <xref:System.Net.WebRequest.CachePolicy%2A> property to set and the <xref:System.Net.Cache.RequestCachePolicy> class to enumerate the current caching policy.  
-  
- Note that getting this property can throw <xref:System.ObjectDisposedException>.  
-  
+The current cache policy and the presence of the requested resource in the cache determine whether a response can be retrieved from the cache. Using cached responses usually improves application performance, but there is a risk that the response in the cache does not match the response on the server. Use the <xref:System.Net.WebRequest.CachePolicy%2A> property to set and the <xref:System.Net.Cache.RequestCachePolicy> class to enumerate the current caching policy.  
+ 
+Note that getting this property can throw <xref:System.ObjectDisposedException>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -516,20 +516,20 @@
           <see langword="true" /> if both client and server were authenticated; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To request mutual authentication, set the <xref:System.Net.WebRequest.AuthenticationLevel%2A?displayProperty=fullName> property using the <xref:System.Net.Security.AuthenticationLevel> or <xref:System.Net.Security.AuthenticationLevel> enumeration value. The default value for the <xref:System.Net.WebRequest.AuthenticationLevel%2A?displayProperty=fullName> property contains <xref:System.Security.Principal.TokenImpersonationLevel> and <xref:System.Net.Security.AuthenticationLevel>.  
+To request mutual authentication, set the <xref:System.Net.WebRequest.AuthenticationLevel%2A?displayProperty=fullName> property using the <xref:System.Net.Security.AuthenticationLevel> or <xref:System.Net.Security.AuthenticationLevel> enumeration value. The default value for the <xref:System.Net.WebRequest.AuthenticationLevel%2A?displayProperty=fullName> property contains <xref:System.Security.Principal.TokenImpersonationLevel> and <xref:System.Net.Security.AuthenticationLevel>.  
+ 
+Note that getting this property can throw <xref:System.ObjectDisposedException>.  
+ 
   
- Note that getting this property can throw <xref:System.ObjectDisposedException>.  
-  
-   
-  
+ 
 ## Examples  
- The following code example checks the value of this property.  
-  
- [!code-cpp[NclCredPolicy#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCredPolicy/CPP/NCLCredPolicy.cpp#1)]
- [!code-csharp[NclCredPolicy#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCredPolicy/CS/websample.cs#1)]  
-  
+The following code example checks the value of this property.  
+ 
+[!code-cpp[NclCredPolicy#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLCredPolicy/CPP/NCLCredPolicy.cpp#1)]
+[!code-csharp[NclCredPolicy#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLCredPolicy/CS/websample.cs#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -560,22 +560,22 @@
         <value>An instance of the <see cref="T:System.Uri" /> class that contains the URI of the Internet resource that actually responded to the request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Net.WebResponse.ResponseUri%2A> property contains the URI of the Internet resource that actually provided the response data. This resource might not be the originally requested URI if the underlying protocol allows redirection of the request.  
-  
+The <xref:System.Net.WebResponse.ResponseUri%2A> property contains the URI of the Internet resource that actually provided the response data. This resource might not be the originally requested URI if the underlying protocol allows redirection of the request.  
+ 
 > [!NOTE]
 >  The <xref:System.Net.WebResponse> class is an `abstract` class. The actual behavior of <xref:System.Net.WebResponse> instances at run time is determined by the descendant class returned by <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=fullName>. For more information about default values and exceptions, please see the documentation for the descendant classes, such as <xref:System.Net.HttpWebResponse> and <xref:System.Net.FileWebResponse>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Net.WebResponse.ResponseUri%2A> property to determine the location from which the <xref:System.Net.WebResponse> originated.  
-  
- [!code-cpp[WebResponse_ResponseUri#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebResponse_ResponseUri/CPP/webresponse_responseuri.cpp#1)]
- [!code-csharp[WebResponse_ResponseUri#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebResponse_ResponseUri/CS/webresponse_responseuri.cs#1)]
- [!code-vb[WebResponse_ResponseUri#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebResponse_ResponseUri/VB/webresponse_responseuri.vb#1)]  
-  
+The following example uses the <xref:System.Net.WebResponse.ResponseUri%2A> property to determine the location from which the <xref:System.Net.WebResponse> originated.  
+ 
+[!code-cpp[WebResponse_ResponseUri#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebResponse_ResponseUri/CPP/webresponse_responseuri.cpp#1)]
+[!code-csharp[WebResponse_ResponseUri#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebResponse_ResponseUri/CS/webresponse_responseuri.cs#1)]
+[!code-vb[WebResponse_ResponseUri#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebResponse_ResponseUri/VB/webresponse_responseuri.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Any attempt is made to get or set the property, when the property is not overridden in a descendant class.</exception>
@@ -609,10 +609,10 @@
  <see langword="true" /> if headers are supported; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is always true for [!INCLUDE[net_v45](~/includes/net-v45-md.md)].  
-  
+This property is always true for [!INCLUDE[net_v45](~/includes/net-v45-md.md)].  
+ 
  ]]></format>
         </remarks>
       </Docs>

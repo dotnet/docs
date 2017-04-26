@@ -14,10 +14,10 @@
     <summary>Implements the default validator provider.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is an implementation of <xref:System.Web.ModelBinding.ModelValidatorProvider> that provides validators for attributes that derive from <xref:System.ComponentModel.DataAnnotations.ValidationAttribute>. It also provides validators for types that implement <xref:System.ComponentModel.DataAnnotations.IValidatableObject>.  
-  
+This class is an implementation of <xref:System.Web.ModelBinding.ModelValidatorProvider> that provides validators for attributes that derive from <xref:System.ComponentModel.DataAnnotations.ValidationAttribute>. It also provides validators for types that implement <xref:System.ComponentModel.DataAnnotations.IValidatableObject>.  
+ 
  ]]></format>
     </remarks>
   </Docs>

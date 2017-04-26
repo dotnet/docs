@@ -103,10 +103,10 @@
         <returns>The <see cref="T:System.Windows.Media.Color" /> created from converting <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.Media.ColorConverter.CanConvertFrom%2A> method.  
-  
+To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.Media.ColorConverter.CanConvertFrom%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -165,10 +165,10 @@
         <returns>The object created from converting this <see cref="T:System.Windows.Media.Color" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.Media.ColorConverter.CanConvertTo%2A> method.  
-  
+To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.Media.ColorConverter.CanConvertTo%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

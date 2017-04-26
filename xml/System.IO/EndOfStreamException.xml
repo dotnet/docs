@@ -30,19 +30,19 @@
     <summary>The exception that is thrown when reading is attempted past the end of a stream.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `EndOfStreamException` uses the HRESULT COR_E_ENDOFSTREAM which has the value 0x80070026.  
+`EndOfStreamException` uses the HRESULT COR_E_ENDOFSTREAM which has the value 0x80070026.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows how to read and write `Double` data to memory by using the <xref:System.IO.BinaryReader> and <xref:System.IO.BinaryWriter> classes on top of the <xref:System.IO.MemoryStream> class.  
-  
- [!code-cpp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CPP/rwdouble.cpp#1)]
- [!code-csharp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CS/rwdouble.cs#1)]
- [!code-vb[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/VB/rwdouble.vb#1)]  
-  
+The following code example shows how to read and write `Double` data to memory by using the <xref:System.IO.BinaryReader> and <xref:System.IO.BinaryWriter> classes on top of the <xref:System.IO.MemoryStream> class.  
+ 
+[!code-cpp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CPP/rwdouble.cpp#1)]
+[!code-csharp[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/CS/rwdouble.cs#1)]
+[!code-vb[System.IO.BinaryReaderWriter.RWDouble#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter.RWDouble/VB/rwdouble.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -157,17 +157,17 @@
         <summary>Initializes a new instance of the <see cref="T:System.IO.EndOfStreamException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
-  
- The following table shows the initial property values for an instance of <xref:System.IO.EndOfStreamException>.  
-  
+An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+ 
+The following table shows the initial property values for an instance of <xref:System.IO.EndOfStreamException>.  
+ 
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
 |<xref:System.Exception.Message%2A>|The error message string.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

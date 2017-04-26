@@ -13,10 +13,10 @@
     <summary>Specifies the overall quality when rendering GDI+ objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The quality level is inversely proportional to the amount of time spent rendering. This mode does not affect text. To set the text rendering quality, use the <xref:System.Drawing.Text.TextRenderingHint> enumeration.  
-  
+The quality level is inversely proportional to the amount of time spent rendering. This mode does not affect text. To set the text rendering quality, use the <xref:System.Drawing.Text.TextRenderingHint> enumeration.  
+ 
  ]]></format>
     </remarks>
   </Docs>

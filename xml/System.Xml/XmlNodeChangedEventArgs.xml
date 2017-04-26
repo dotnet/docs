@@ -23,10 +23,10 @@
     <summary>Provides data for the <see cref="E:System.Xml.XmlDocument.NodeChanged" />, <see cref="E:System.Xml.XmlDocument.NodeChanging" />, <see cref="E:System.Xml.XmlDocument.NodeInserted" />, <see cref="E:System.Xml.XmlDocument.NodeInserting" />, <see cref="E:System.Xml.XmlDocument.NodeRemoved" /> and <see cref="E:System.Xml.XmlDocument.NodeRemoving" /> events.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The following C# code shows how to use the event handler.  
-  
+The following C# code shows how to use the event handler.  
+ 
 ```  
 //Add a new event handler.  
 XmlDocument doc = new XmlDocument();  
@@ -37,10 +37,10 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
  Console.WriteLine("Node " + args.Node.Name + " inserted!!");  
 }  
 ```  
-  
+ 
 > [!NOTE]
 >  If an operation is comprised of multiple actions, it results in multiple events. For example, an <xref:System.Xml.XmlNode.AppendChild%2A> call may have to remove the node being appended from its previous parent. In this case you will see a `NodeRemoved` event followed by a `NodeInserted` event.  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

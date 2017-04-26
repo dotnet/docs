@@ -18,17 +18,17 @@
     <summary>Provides the implementation for a client formatter sink that uses the <see cref="T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The function of the formatter sink is to generate the necessary headers and serialize the message to the stream. After the formatter sink, the <xref:System.Runtime.Remoting.Messaging.IMessage> is forwarded to all sinks in the chain through the <xref:System.Runtime.Remoting.Channels.IClientChannelSink.ProcessMessage%2A> or <xref:System.Runtime.Remoting.Channels.IClientChannelSink.AsyncProcessRequest%2A> calls. At this stage the message has already been serialized and is provided as information only. Sinks that need to create or modify the message must be placed in the sink chain before the formatter. This is easily achieved by implementing the <xref:System.Runtime.Remoting.Channels.IClientFormatterSink> interface, which gives the impression of having a reference to the formatter sink. The real formatter sink can then be placed later in the sink chain.  
-  
+The function of the formatter sink is to generate the necessary headers and serialize the message to the stream. After the formatter sink, the <xref:System.Runtime.Remoting.Messaging.IMessage> is forwarded to all sinks in the chain through the <xref:System.Runtime.Remoting.Channels.IClientChannelSink.ProcessMessage%2A> or <xref:System.Runtime.Remoting.Channels.IClientChannelSink.AsyncProcessRequest%2A> calls. At this stage the message has already been serialized and is provided as information only. Sinks that need to create or modify the message must be placed in the sink chain before the formatter. This is easily achieved by implementing the <xref:System.Runtime.Remoting.Channels.IClientFormatterSink> interface, which gives the impression of having a reference to the formatter sink. The real formatter sink can then be placed later in the sink chain.  
+ 
 |Property|Description|  
 |--------------|-----------------|  
 |`includeVersions`|Specifies whether the formatter will include versioning information. Values are `true` or `false`.|  
-  
+ 
 > [!IMPORTANT]
 >  Using an instance of this object with untrusted data or across an unsecure channel is a security risk. Use this object only with trusted data and across a secure channel. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -152,10 +152,10 @@
         <returns>The <see cref="T:System.IO.Stream" /> onto which the provided message is to be serialized.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Channels.BinaryClientFormatterSink.GetRequestStream%2A> method is called by the formatter sink before it serializes the message.  
-  
+The <xref:System.Runtime.Remoting.Channels.BinaryClientFormatterSink.GetRequestStream%2A> method is called by the formatter sink before it serializes the message.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,10 +242,10 @@
         <value>A <see cref="T:System.Collections.IDictionary" /> of properties for the current channel sink.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For more information, see [&#91;\<topic://cpconchannelformatterconfigurationproperties>&#93;](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
-  
+For more information, see [&#91;\<topic://cpconchannelformatterconfigurationproperties>&#93;](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ 
  ]]></format>
         </remarks>
       </Docs>

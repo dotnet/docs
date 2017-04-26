@@ -29,10 +29,10 @@
         <summary>Creates build parameters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Constructor for use in setting all build properties programmatically.  
-  
+Constructor for use in setting all build properties programmatically.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -109,10 +109,10 @@
         <returns>Returns a clone of this build parameters object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a clone of the logger collections, but does not deeply clone the loggers within.  
-  
+This method creates a clone of the logger collections, but does not deeply clone the loggers within.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -318,10 +318,10 @@
         <value>Returns a switch that enables or disables legacy threading semantics; true if enabled, false otherwise.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Legacy threading semantics indicate that if a submission is to be built only on the in-proc node and the submission is executed synchronously, then all of its requests will be built on the thread which invoked the build rather than a thread owned by the BuildManager.  
-  
+Legacy threading semantics indicate that if a submission is to be built only on the in-proc node and the submission is executed synchronously, then all of its requests will be built on the thread which invoked the build rather than a thread owned by the BuildManager.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -487,10 +487,10 @@
         <value>Returns a switch indicating whether the operating environment should be saved and restored between project builds and task invocations; true if the environment should be saved, false otherwise.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This should be set to false for any other build managers running in the system so that we do not have two build managers trampling on each others environment.  
-  
+This should be set to false for any other build managers running in the system so that we do not have two build managers trampling on each others environment.  
+ 
  ]]></format>
         </remarks>
       </Docs>

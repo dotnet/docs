@@ -15,10 +15,10 @@
     <summary>An abstract class that when implemented provides an identity that enables the authentication of an endpoint by clients that exchange messages with it.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of the identity for an endpoint can be set with constructors of <xref:System.ServiceModel.EndpointAddress>, where its value can also be accessed as a read-only <xref:System.ServiceModel.EndpointAddress.Identity%2A> property.  
-  
+The value of the identity for an endpoint can be set with constructors of <xref:System.ServiceModel.EndpointAddress>, where its value can also be accessed as a read-only <xref:System.ServiceModel.EndpointAddress.Identity%2A> property.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -60,19 +60,19 @@
         <returns>A DNS <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="dnsName" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a DNS claim that represents this identity.  
+A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a DNS claim that represents this identity.  
+ 
+This static method creates an instance of <xref:System.ServiceModel.DnsEndpointIdentity> by calling its constructor <xref:System.ServiceModel.DnsEndpointIdentity.%23ctor%2A>.  
+ 
   
- This static method creates an instance of <xref:System.ServiceModel.DnsEndpointIdentity> by calling its constructor <xref:System.ServiceModel.DnsEndpointIdentity.%23ctor%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to call this method.  
-  
- [!code-csharp[S_UEEndpointIdentity#41](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointidentity/cs/source.cs#41)]  
-  
+The following code shows how to call this method.  
+ 
+[!code-csharp[S_UEEndpointIdentity#41](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointidentity/cs/source.cs#41)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -100,19 +100,19 @@
         <returns>An <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="identity" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the identity claim used to construct this identity.  
+A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the identity claim used to construct this identity.  
+ 
+This method can create an identity of type <xref:System.ServiceModel.DnsEndpointIdentity>, <xref:System.ServiceModel.SpnEndpointIdentity>, <xref:System.ServiceModel.UpnEndpointIdentity>, or <xref:System.ServiceModel.RsaEndpointIdentity>.  
+ 
   
- This method can create an identity of type <xref:System.ServiceModel.DnsEndpointIdentity>, <xref:System.ServiceModel.SpnEndpointIdentity>, <xref:System.ServiceModel.UpnEndpointIdentity>, or <xref:System.ServiceModel.RsaEndpointIdentity>.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to call this method.  
-  
- [!code-csharp[S_UEEndpointIdentity#42](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointidentity/cs/source.cs#42)]  
-  
+The following code shows how to call this method.  
+ 
+[!code-csharp[S_UEEndpointIdentity#42](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointidentity/cs/source.cs#42)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -140,19 +140,19 @@
         <returns>An RSA <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="certificate" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key obtained from the certificate used to construct this identity.  
+A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key obtained from the certificate used to construct this identity.  
+ 
+This static method creates an instance of <xref:System.ServiceModel.RsaEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.RsaEndpointIdentity.%23ctor%2A>.  
+ 
   
- This static method creates an instance of <xref:System.ServiceModel.RsaEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.RsaEndpointIdentity.%23ctor%2A>.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to call this method.  
-  
- [!code-csharp[S_UEEndpointIdentity#41](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointidentity/cs/source.cs#41)]  
-  
+The following code shows how to call this method.  
+ 
+[!code-csharp[S_UEEndpointIdentity#41](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointidentity/cs/source.cs#41)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -182,12 +182,12 @@
         <returns>An RSA <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="publicKey" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key used to construct this identity.  
-  
- This static method creates an instance of <xref:System.ServiceModel.RsaEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.RsaEndpointIdentity.%23ctor%2A>.  
-  
+A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key used to construct this identity.  
+ 
+This static method creates an instance of <xref:System.ServiceModel.RsaEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.RsaEndpointIdentity.%23ctor%2A>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -215,21 +215,21 @@
         <returns>An SPN <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="spnName" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity uses the SPN when performing SSPI authentication with the endpoint.  
+A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity uses the SPN when performing SSPI authentication with the endpoint.  
+ 
+This static method creates an instance of <xref:System.ServiceModel.SpnEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.SpnEndpointIdentity.%23ctor%2A>, using `spnName` as the input parameter.  
+ 
+If `spnName` is specified with an empty string, authentication falls back from Kerberos to NTLM if possible. If <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> is `false`, authentication fails.  
+ 
   
- This static method creates an instance of <xref:System.ServiceModel.SpnEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.SpnEndpointIdentity.%23ctor%2A>, using `spnName` as the input parameter.  
-  
- If `spnName` is specified with an empty string, authentication falls back from Kerberos to NTLM if possible. If <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> is `false`, authentication fails.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to call this method.  
-  
- [!code-csharp[S_UEEndpointIdentity#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointidentity/cs/source.cs#12)]  
-  
+The following code shows how to call this method.  
+ 
+[!code-csharp[S_UEEndpointIdentity#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointidentity/cs/source.cs#12)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -257,21 +257,21 @@
         <returns>A UPN <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="upnName" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity uses the UPN when performing SSPI authentication with the endpoint.  
+A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity uses the UPN when performing SSPI authentication with the endpoint.  
+ 
+This static method creates an instance of <xref:System.ServiceModel.UpnEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.UpnEndpointIdentity.%23ctor%2A>, using `upnName` as the input parameter.  
+ 
+If `upnName` is specified with an empty string, authentication falls back from Kerberos to NTLM if possible. If <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> is `false`, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] makes a best-effort to throw an exception if NTLM is used. Note that setting this property to `false` may not prevent NTLM credentials from being sent over the wire.  
+ 
   
- This static method creates an instance of <xref:System.ServiceModel.UpnEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.UpnEndpointIdentity.%23ctor%2A>, using `upnName` as the input parameter.  
-  
- If `upnName` is specified with an empty string, authentication falls back from Kerberos to NTLM if possible. If <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> is `false`, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] makes a best-effort to throw an exception if NTLM is used. Note that setting this property to `false` may not prevent NTLM credentials from being sent over the wire.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to call this method.  
-  
- [!code-csharp[S_UEEndpointIdentity#30](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointidentity/cs/source.cs#30)]  
-  
+The following code shows how to call this method.  
+ 
+[!code-csharp[S_UEEndpointIdentity#30](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointidentity/cs/source.cs#30)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -299,19 +299,19 @@
         <returns>An X509Certificate <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="certificate" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
+A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
+ 
+This `static` method creates an instance of <xref:System.ServiceModel.X509CertificateEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.X509CertificateEndpointIdentity.%23ctor%2A>, using `certificate` as the input parameter.  
+ 
   
- This `static` method creates an instance of <xref:System.ServiceModel.X509CertificateEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.X509CertificateEndpointIdentity.%23ctor%2A>, using `certificate` as the input parameter.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to call this method.  
-  
- [!code-csharp[S_UEEndpointIdentity#40](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointidentity/cs/source.cs#40)]  
-  
+The following code shows how to call this method.  
+ 
+[!code-csharp[S_UEEndpointIdentity#40](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointidentity/cs/source.cs#40)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -343,10 +343,10 @@
  An X509Certificate <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="primaryCertificate" /> and<paramref name=" supportingCertificates." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This static method creates an instance of <xref:System.ServiceModel.X509CertificateEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.X509CertificateEndpointIdentity.%23ctor%2A>, using `primaryCertificate` and `supportingCertificates` as input parameters.  
-  
+This static method creates an instance of <xref:System.ServiceModel.X509CertificateEndpointIdentity> by calling its constructor, <xref:System.ServiceModel.X509CertificateEndpointIdentity.%23ctor%2A>, using `primaryCertificate` and `supportingCertificates` as input parameters.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -412,10 +412,10 @@
         <value>The <see cref="T:System.IdentityModel.Claims.Claim" /> that represents the identity claim.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Clients that authenticate the server should verify that the claims that represent the server contain the identity claim provided by the `EndpointIdentity`.  
-  
+Clients that authenticate the server should verify that the claims that represent the server contain the identity claim provided by the `EndpointIdentity`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -440,10 +440,10 @@
         <summary>Initializes an <see cref="T:System.ServiceModel.EndpointIdentity" /> with the specified claim.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the constructors of all the classes derived from <xref:System.ServiceModel.EndpointIdentity.Initialize%2A>).  
-  
+This method is called by the constructors of all the classes derived from <xref:System.ServiceModel.EndpointIdentity.Initialize%2A>).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -499,12 +499,12 @@
         <summary>Creates an X509Certificate identity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Choose between these two constructors based on whether you have supporting certificates.  
-  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
-  
+Choose between these two constructors based on whether you have supporting certificates.  
+ 
+A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -518,12 +518,12 @@
         <summary>Creates an RSA identity.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key used to construct this identity.  
-  
- One of these static methods creates an instance of <xref:System.ServiceModel.RsaEndpointIdentity> by calling its constructor <xref:System.ServiceModel.RsaEndpointIdentity.%23ctor%2A>.  
-  
+A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key used to construct this identity.  
+ 
+One of these static methods creates an instance of <xref:System.ServiceModel.RsaEndpointIdentity> by calling its constructor <xref:System.ServiceModel.RsaEndpointIdentity.%23ctor%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

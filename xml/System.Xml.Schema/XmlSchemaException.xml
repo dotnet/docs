@@ -19,21 +19,21 @@
     <summary>Returns detailed information about the schema exception.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchemaException> class may contain sensitive information that should not be exposed in untrusted scenarios. For example, the <xref:System.Xml.Schema.XmlSchemaException.SourceUri%2A> property returns the URI path to the schema file that caused the exception. The <xref:System.Xml.Schema.XmlSchemaException.SourceUri%2A> property should not be exposed in untrusted scenarios. Exceptions should be properly handled so that this sensitive information is not exposed in untrusted scenarios.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the use of the `XmlSchemaException` class.  
-  
- [!code-cpp[Classic WebData XmlSchemaException Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaException Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlSchemaException Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaException Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlSchemaException Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaException Example/VB/source.vb#1)]  
-  
+The following example shows the use of the `XmlSchemaException` class.  
+ 
+[!code-cpp[Classic WebData XmlSchemaException Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaException Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlSchemaException Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaException Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlSchemaException Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaException Example/VB/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -279,10 +279,10 @@
         <value>A valid object instance represents a structural validation error in the XML Schema Object Model (SOM).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This can be queried for the `LineNumber`, `LinePosition`, and `SourceUri` of the XML Schema definition language (XSD) schema file. A return value of `nil` indicates a syntactic parsing validation error in the SOM.  
-  
+This can be queried for the `LineNumber`, `LinePosition`, and `SourceUri` of the XML Schema definition language (XSD) schema file. A return value of `nil` indicates a syntactic parsing validation error in the SOM.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -309,12 +309,12 @@
         <value>The URI location of the schema that caused the exception.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchemaException.SourceUri%2A> property returns the URI path to the schema file that caused the exception. The <xref:System.Xml.Schema.XmlSchemaException.SourceUri%2A> property should not be exposed in untrusted scenarios.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

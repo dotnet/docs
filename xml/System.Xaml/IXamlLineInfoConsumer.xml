@@ -11,12 +11,12 @@
     <summary>Describes a service where a XAML writer can use reported line information and then include the information in the output.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Xaml.XamlObjectWriter> implements <xref:System.Xaml.IXamlLineInfoConsumer>..NET Framework XAML Services and its XAML readers and XAML writers typically make line information available to callers, through debugging support in an IDE and through exceptions.  
-  
- Exactly how to consume line information is up to each consumer.  
-  
+<xref:System.Xaml.XamlObjectWriter> implements <xref:System.Xaml.IXamlLineInfoConsumer>..NET Framework XAML Services and its XAML readers and XAML writers typically make line information available to callers, through debugging support in an IDE and through exceptions.  
+ 
+Exactly how to consume line information is up to each consumer.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -49,10 +49,10 @@
         <value>The assembly extensions that will be considered during references resolution.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default extensions are .dll and .exe.  
-  
+The default extensions are .dll and .exe.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -75,10 +75,10 @@
         <value>The extensions that will be considered when searching for related files.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default extensions are .pdb and .xml.  
-  
+The default extensions are .pdb and .xml.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -101,10 +101,10 @@
         <value>The App.Config file path.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If this property is specified, the <xref:Microsoft.Build.Tasks.ResolveAssemblyReference.AutoUnify%2A> property must be false.  
-  
+If this property is specified, the <xref:Microsoft.Build.Tasks.ResolveAssemblyReference.AutoUnify%2A> property must be false.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -127,10 +127,10 @@
         <value>The assembly names to resolve into full paths and to find dependencies for.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The assembly names can either be simple or strong names.  
-  
+The assembly names can either be simple or strong names.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -173,12 +173,12 @@
           <see langword="true" /> if the resulting dependency graph is automatically treated as if there were an App.Config file passed in to the <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AppConfigFile" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `false`.  
-  
- For more information about this property, see [ResolveAssemblyReference Task](http://msdn.microsoft.com/library/4d56d848-b29b-4dff-86a2-0a96c9e4a170)  
-  
+The default value is `false`.  
+ 
+For more information about this property, see [ResolveAssemblyReference Task](http://msdn.microsoft.com/library/4d56d848-b29b-4dff-86a2-0a96c9e4a170)  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -201,10 +201,10 @@
         <value>The list of assemblies to use for the search and resolution process.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Assemblies in this list will be considered when the <xref:Microsoft.Build.Tasks.ResolveAssemblyReference.SearchPaths%2A> property contains {CandidateAssemblyFiles} as one of the paths to consider.  
-  
+Assemblies in this list will be considered when the <xref:Microsoft.Build.Tasks.ResolveAssemblyReference.SearchPaths%2A> property contains {CandidateAssemblyFiles} as one of the paths to consider.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -331,10 +331,10 @@
           <see langword="true" /> if dependencies will be found; <see langword="false" /> if only primary references will be found.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `true`.  
-  
+The default value is `true`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -358,10 +358,10 @@
           <see langword="true" /> if related files such as .pdb files and .xml files will be found; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `true`.  
-  
+The default value is `true`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -385,10 +385,10 @@
           <see langword="true" /> if satellite assemblies will be found; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `true.`  
-  
+The default value is `true.`  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -412,10 +412,10 @@
           <see langword="true" /> if the serialization assemblies will be found; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `true`.  
-  
+The default value is `true`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -438,12 +438,12 @@
         <value>Returns a list of items representing XML files that contain the full framework for the profile.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Normally nothing is passed in here, this is for the cases where the location of the xml file for the full framework is not under a RedistList folder.  
-  
- Format of the file is like:  etc.  
-  
+Normally nothing is passed in here, this is for the cases where the location of the xml file for the full framework is not under a RedistList folder.  
+ 
+Format of the file is like:  etc.  
+ 
 ```  
 <FileList Redist="MatchingRedistListName" >  
   <File AssemblyName="System" Version="2.0.0.0"  
@@ -453,9 +453,9 @@
 // etc.  
 </FileList>  
 ```  
-  
- Items in this list must specify the "FrameworkDirectory" metadata to associate an redist list with a particular framework directory. If the association is not made an error will be logged. The reason is, The logic in RAR assumes if a FrameworkDirectory is not set it will use the target framework directory.  
-  
+ 
+Items in this list must specify the "FrameworkDirectory" metadata to associate an redist list with a particular framework directory. If the association is not made an error will be logged. The reason is, The logic in RAR assumes if a FrameworkDirectory is not set it will use the target framework directory.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -497,10 +497,10 @@
         <value>A string value that contains subset names.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Provides a set of names that, if seen in the TargetFrameworkSubset list, causes TargetFrameworkSubsets to be ignored.  
-  
+Provides a set of names that, if seen in the TargetFrameworkSubset list, causes TargetFrameworkSubsets to be ignored.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -544,10 +544,10 @@
           <see langword="true" /> if the task should ignore the additional installed assembly tables; <see langword="false" /> if the task should search for and use the additional installed assembly tables.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `false`.  
-  
+The default value is `false`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -608,10 +608,10 @@
         <value>An <see cref="T:Microsoft.Build.Framework.ITaskItem" /> list of XML files.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is the format of the file:  
-  
+This is the format of the file:  
+ 
 ```  
 <FileList Redist="ClientSubset" >  
     <File AssemblyName="System" Version="2.0.0.0"   
@@ -621,9 +621,9 @@
     etc.  
 </FileList>  
 ```  
-  
- Items in this list may optionally specify the "FrameworkDirectory" metadata to associate an InstalledAssemblySubsetTable with a particular framework directory. If there is only a single TargetFrameworkDirectories element, then any items in this list that do not have the "FrameworkDirectory" metadata will be treated as though the metadata is set to the lone (unique) value passed to TargetFrameworkDirectories.  
-  
+ 
+Items in this list may optionally specify the "FrameworkDirectory" metadata to associate an InstalledAssemblySubsetTable with a particular framework directory. If there is only a single TargetFrameworkDirectories element, then any items in this list that do not have the "FrameworkDirectory" metadata will be treated as though the metadata is set to the lone (unique) value passed to TargetFrameworkDirectories.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -801,10 +801,10 @@
         <value>Any satellite files found.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The satellite files will have the `CopyLocal` item metadata with a value of `true` if the reference or dependency that caused this item to exist also has a `CopyLocal` item metadata set to `true`.  
-  
+The satellite files will have the `CopyLocal` item metadata with a value of `true` if the reference or dependency that caused this item to exist also has a `CopyLocal` item metadata set to `true`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -900,10 +900,10 @@
           <see langword="true" /> if no messages are logged; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is `false`.  
-  
+The default value is `false`.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -950,10 +950,10 @@
         <value>The items that correspond to distinct conflicting assembly identities.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The items include culture and PKT that were found and that did not have a suitable bindingRedirect entry in the application configuration file.  
-  
+The items include culture and PKT that were found and that did not have a suitable bindingRedirect entry in the application configuration file.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -995,12 +995,12 @@
         <value>The path to the target framework directory.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is required to determine the `CopyLocal` status for resulting items.  
-  
- If this property is not specified, no resulting items will be have a `CopyLocal` value of `true` unless they explicitly have a `Private` metadata value of `true` on their source item.  
-  
+This property is required to determine the `CopyLocal` status for resulting items.  
+ 
+If this property is not specified, no resulting items will be have a `CopyLocal` value of `true` unless they explicitly have a `Private` metadata value of `true` on their source item.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1023,10 +1023,10 @@
         <value>Returns the target framework moniker being targeted, if any. Returns an empty string by default.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is used for logging purposes.  
-  
+This is used for logging purposes.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1049,10 +1049,10 @@
         <value>Returns the display name of the target framework moniker being targeted, if any.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This is used only for logging.  
-  
+This is used only for logging.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -1094,10 +1094,10 @@
         <value>The project target framework version used for reference filtering.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is an empty string.  
-  
+The default value is an empty string.  
+ 
  ]]></format>
         </remarks>
         <forInternalUseOnly />

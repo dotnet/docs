@@ -18,27 +18,27 @@
     <summary>Represents a single touch input produced by a finger on a touchscreen.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You typically access a <xref:System.Windows.Input.TouchDevice> by using the <xref:System.Windows.Input.TouchEventArgs.TouchDevice%2A?displayProperty=fullName> property. A <xref:System.Windows.Input.TouchDevice> represents a single touch on a screen. If multiple touches are present, use the <xref:System.Windows.Input.TouchDevice.Id%2A> property to distinguish between them.  
-  
+You typically access a <xref:System.Windows.Input.TouchDevice> by using the <xref:System.Windows.Input.TouchEventArgs.TouchDevice%2A?displayProperty=fullName> property. A <xref:System.Windows.Input.TouchDevice> represents a single touch on a screen. If multiple touches are present, use the <xref:System.Windows.Input.TouchDevice.Id%2A> property to distinguish between them.  
+ 
 > [!NOTE]
 >  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For more information about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example enables you to create simple patterns on a <xref:System.Windows.Controls.Canvas> by dragging two fingers on a touchscreen. Each touch is represented by a <xref:System.Windows.Input.TouchDevice> in the <xref:System.Windows.Input.TouchEventArgs>. The pattern is created by drawing a line between the touch points that are provided by the touches. This example requires a Windows Touch–compatible screen.  
-  
- The following markup creates the user interface, which consists of a <xref:System.Windows.Controls.Canvas> that is centered in a grid, and attaches the event handlers for the touch events.  
-  
- [!code-xml[TouchEventsSample#000](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml#000)]  
-  
- The following code handles the touch events. When a touch is pressed on the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice> is captured to the <xref:System.Windows.Controls.Canvas>. When the touch is lifted, the <xref:System.Windows.Input.TouchDevice> is released. When a touch moves on the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice.Id%2A> is checked. If the move came from the first touch, its location is recorded. If the move came from the second touch, a line is drawn from the position of the first touch to the position of the second touch.  
-  
- [!code-csharp[TouchEventsSample#100](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#100)]
- [!code-vb[TouchEventsSample#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#100)]  
-  
+The following example enables you to create simple patterns on a <xref:System.Windows.Controls.Canvas> by dragging two fingers on a touchscreen. Each touch is represented by a <xref:System.Windows.Input.TouchDevice> in the <xref:System.Windows.Input.TouchEventArgs>. The pattern is created by drawing a line between the touch points that are provided by the touches. This example requires a Windows Touch–compatible screen.  
+ 
+The following markup creates the user interface, which consists of a <xref:System.Windows.Controls.Canvas> that is centered in a grid, and attaches the event handlers for the touch events.  
+ 
+[!code-xml[TouchEventsSample#000](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml#000)]  
+ 
+The following code handles the touch events. When a touch is pressed on the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice> is captured to the <xref:System.Windows.Controls.Canvas>. When the touch is lifted, the <xref:System.Windows.Input.TouchDevice> is released. When a touch moves on the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice.Id%2A> is checked. If the move came from the first touch, its location is recorded. If the move came from the second touch, a line is drawn from the position of the first touch to the position of the second touch.  
+ 
+[!code-csharp[TouchEventsSample#100](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#100)]
+[!code-vb[TouchEventsSample#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#100)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.UIPermission">for deriving from this class. Security action: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
@@ -85,10 +85,10 @@
         <summary>Adds the <see cref="T:System.Windows.Input.TouchDevice" /> to the input messaging system.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that inherit from <xref:System.Windows.Input.TouchDevice> should call this method to activate the current device.  
-  
+Classes that inherit from <xref:System.Windows.Input.TouchDevice> should call this method to activate the current device.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The device is already activated.</exception>
@@ -156,20 +156,20 @@
           <see langword="true" /> if the element was able to capture the touch; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Input.TouchDevice> cannot be captured to an element if it is already captured to another element.  
+A <xref:System.Windows.Input.TouchDevice> cannot be captured to an element if it is already captured to another element.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example handles the <xref:System.Windows.UIElement.TouchDown> events that occur on a <xref:System.Windows.Controls.Canvas>. When a touch is pressed on the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice> is captured to the <xref:System.Windows.Controls.Canvas>.  
-  
- This example is part of a larger example that is available in the <xref:System.Windows.Input.TouchDevice> class overview.  
-  
- [!code-csharp[TouchEventsSample#110](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#110)]
- [!code-vb[TouchEventsSample#110](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#110)]  
-  
+The following example handles the <xref:System.Windows.UIElement.TouchDown> events that occur on a <xref:System.Windows.Controls.Canvas>. When a touch is pressed on the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice> is captured to the <xref:System.Windows.Controls.Canvas>.  
+ 
+This example is part of a larger example that is available in the <xref:System.Windows.Input.TouchDevice> class overview.  
+ 
+[!code-csharp[TouchEventsSample#110](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#110)]
+[!code-vb[TouchEventsSample#110](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#110)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -200,10 +200,10 @@
           <see langword="true" /> if the element was able to capture the touch; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Input.TouchDevice> cannot be captured to an element if it is already captured to another element.  
-  
+A <xref:System.Windows.Input.TouchDevice> cannot be captured to an element if it is already captured to another element.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -227,15 +227,15 @@
         <value>The element that captured the <see cref="T:System.Windows.Input.TouchDevice" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example handles the <xref:System.Windows.UIElement.TouchUp> events that occur on a <xref:System.Windows.Controls.Canvas>. It checks the <xref:System.Windows.Input.TouchDevice.Captured%2A> property to verify that the device that raised the event is captured to the <xref:System.Windows.Controls.Canvas>. If it is, the <xref:System.Windows.Input.TouchDevice> is released.  
-  
- This example is part of a larger example that is available in the <xref:System.Windows.Input.TouchDevice> class overview.  
-  
- [!code-csharp[TouchEventsSample#130](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#130)]
- [!code-vb[TouchEventsSample#130](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#130)]  
-  
+The following example handles the <xref:System.Windows.UIElement.TouchUp> events that occur on a <xref:System.Windows.Controls.Canvas>. It checks the <xref:System.Windows.Input.TouchDevice.Captured%2A> property to verify that the device that raised the event is captured to the <xref:System.Windows.Controls.Canvas>. If it is, the <xref:System.Windows.Input.TouchDevice> is released.  
+ 
+This example is part of a larger example that is available in the <xref:System.Windows.Input.TouchDevice> class overview.  
+ 
+[!code-csharp[TouchEventsSample#130](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#130)]
+[!code-vb[TouchEventsSample#130](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#130)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,12 +275,12 @@
         <summary>Removes the <see cref="T:System.Windows.Input.TouchDevice" /> from the input messaging system.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that inherit from <xref:System.Windows.Input.TouchDevice> should call this method to deactivate the current device.  
-  
- A <xref:System.Windows.UIElement.TouchLeave> event is raised without the corresponding <xref:System.Windows.UIElement.TouchUp> event.  
-  
+Classes that inherit from <xref:System.Windows.Input.TouchDevice> should call this method to deactivate the current device.  
+ 
+A <xref:System.Windows.UIElement.TouchLeave> event is raised without the corresponding <xref:System.Windows.UIElement.TouchUp> event.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The device is not activated.</exception>
@@ -382,20 +382,20 @@
         <value>The unique identifier of the <see cref="T:System.Windows.Input.TouchDevice" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Input.TouchDevice> represents a single touch on a screen. If multiple touches are present, use the <xref:System.Windows.Input.TouchDevice.Id%2A> property to distinguish between them.  
+A <xref:System.Windows.Input.TouchDevice> represents a single touch on a screen. If multiple touches are present, use the <xref:System.Windows.Input.TouchDevice.Id%2A> property to distinguish between them.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example handles the <xref:System.Windows.UIElement.TouchMove> events that occur on a <xref:System.Windows.Controls.Canvas>. When a touch moves on the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice.Id%2A> is checked. If the move came from the first touch, its location is recorded. If the move came from the second touch, a line is drawn from the position of the first touch to the position of the second touch.  
-  
- This example is part of a larger example available in the <xref:System.Windows.Input.TouchDevice> class overview.  
-  
- [!code-csharp[TouchEventsSample#120](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#120)]
- [!code-vb[TouchEventsSample#120](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#120)]  
-  
+The following example handles the <xref:System.Windows.UIElement.TouchMove> events that occur on a <xref:System.Windows.Controls.Canvas>. When a touch moves on the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice.Id%2A> is checked. If the move came from the first touch, its location is recorded. If the move came from the second touch, a line is drawn from the position of the first touch to the position of the second touch.  
+ 
+This example is part of a larger example available in the <xref:System.Windows.Input.TouchDevice> class overview.  
+ 
+[!code-csharp[TouchEventsSample#120](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#120)]
+[!code-vb[TouchEventsSample#120](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#120)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -441,10 +441,10 @@
         <summary>Called when a touch is captured to an element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.TouchDevice.OnCapture%2A> method has no default implementation. It can be overridden in a derived class to perform any actions that are required when the touch input is captured.  
-  
+The <xref:System.Windows.Input.TouchDevice.OnCapture%2A> method has no default implementation. It can be overridden in a derived class to perform any actions that are required when the touch input is captured.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -493,10 +493,10 @@
         <summary>Called when a manipulation is started.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Input.TouchDevice.OnManipulationStarted%2A> method has no default implementation. It can be overridden in a derived class to perform any actions that are required when touch manipulation is started.  
-  
+The <xref:System.Windows.Input.TouchDevice.OnManipulationStarted%2A> method has no default implementation. It can be overridden in a derived class to perform any actions that are required when touch manipulation is started.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -520,10 +520,10 @@
           <see langword="true" /> if the <see cref="E:System.Windows.UIElement.TouchDown" /> event was handled; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that inherit from <xref:System.Windows.Input.TouchDevice> should call this method to raise the <xref:System.Windows.UIElement.TouchDown> event. A <xref:System.Windows.UIElement.TouchEnter> event is raised before the <xref:System.Windows.UIElement.TouchDown> event.  
-  
+Classes that inherit from <xref:System.Windows.Input.TouchDevice> should call this method to raise the <xref:System.Windows.UIElement.TouchDown> event. A <xref:System.Windows.UIElement.TouchEnter> event is raised before the <xref:System.Windows.UIElement.TouchDown> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -547,10 +547,10 @@
           <see langword="true" /> if the <see cref="E:System.Windows.UIElement.TouchMove" /> event was handled; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that inherit from <xref:System.Windows.Input.TouchDevice> should call this method to raise the <xref:System.Windows.UIElement.TouchMove> event.  
-  
+Classes that inherit from <xref:System.Windows.Input.TouchDevice> should call this method to raise the <xref:System.Windows.UIElement.TouchMove> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -574,10 +574,10 @@
           <see langword="true" /> if the <see cref="E:System.Windows.UIElement.TouchUp" /> event was handled; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Classes that inherit from <xref:System.Windows.Input.TouchDevice> should call this method to raise the <xref:System.Windows.UIElement.TouchUp> event. A <xref:System.Windows.UIElement.TouchLeave> event is raised after the <xref:System.Windows.UIElement.TouchUp> event.  
-  
+Classes that inherit from <xref:System.Windows.Input.TouchDevice> should call this method to raise the <xref:System.Windows.UIElement.TouchUp> event. A <xref:System.Windows.UIElement.TouchLeave> event is raised after the <xref:System.Windows.UIElement.TouchUp> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -630,10 +630,10 @@
         <summary>Forces the <see cref="T:System.Windows.Input.TouchDevice" /> to synchronize the user interface with underlying touch points.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Synchronizing the user interface with the underlying touch positions might cause <xref:System.Windows.UIElement.TouchMove> events to be raised.  
-  
+Synchronizing the user interface with the underlying touch positions might cause <xref:System.Windows.UIElement.TouchMove> events to be raised.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -659,10 +659,10 @@
         <returns>The position of the <see cref="T:System.Windows.Input.IManipulator" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.TouchDevice> instance is cast to an <xref:System.Windows.Input.IManipulator> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.TouchDevice> instance is cast to an <xref:System.Windows.Input.IManipulator> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -684,10 +684,10 @@
         <value>The unique identifier of the <see cref="T:System.Windows.Input.TouchDevice" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.TouchDevice> instance is cast to an <xref:System.Windows.Input.IManipulator> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.TouchDevice> instance is cast to an <xref:System.Windows.Input.IManipulator> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -718,10 +718,10 @@
         <summary>Occurs when a manipulation has ended.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.TouchDevice> instance is cast to an <xref:System.Windows.Input.IManipulator> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.TouchDevice> instance is cast to an <xref:System.Windows.Input.IManipulator> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -25,10 +25,10 @@
     <summary>Represents a control that allows a user to select items from among its child elements.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Primitives.Selector> is an <xref:System.Windows.Controls.ItemsControl>, which means it can contain a collection of objects of any type (such as string, image, or panel). For more information, see the <xref:System.Windows.Controls.ItemsControl> class.  
-  
+<xref:System.Windows.Controls.Primitives.Selector> is an <xref:System.Windows.Controls.ItemsControl>, which means it can contain a collection of objects of any type (such as string, image, or panel). For more information, see the <xref:System.Windows.Controls.ItemsControl> class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -116,10 +116,10 @@
         <summary>Returns an item container to the state it was in before <see cref="M:System.Windows.Controls.ItemsControl.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.Primitives.Selector.ClearContainerForItemOverride%2A> clears the <xref:System.Windows.Controls.Primitives.Selector.IsSelected%2A?displayProperty=fullName> attached property when the item container is removed from the visual tree.  This is done so item containers behave correctly when the <xref:System.Windows.Controls.Primitives.Selector> uses container recycling.  For more information, see <xref:System.Windows.Controls.VirtualizationMode> and "Container Recycling" in [Optimizing Performance: Controls](~/docs/framework/wpf/advanced/optimizing-performance-controls.md).  
-  
+<xref:System.Windows.Controls.Primitives.Selector.ClearContainerForItemOverride%2A> clears the <xref:System.Windows.Controls.Primitives.Selector.IsSelected%2A?displayProperty=fullName> attached property when the item container is removed from the visual tree.  This is done so item containers behave correctly when the <xref:System.Windows.Controls.Primitives.Selector> uses container recycling.  For more information, see <xref:System.Windows.Controls.VirtualizationMode> and "Container Recycling" in [Optimizing Performance: Controls](~/docs/framework/wpf/advanced/optimizing-performance-controls.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -239,36 +239,36 @@
           <see langword="true" /> if the <see cref="P:System.Windows.Controls.Primitives.Selector.SelectedItem" /> is always synchronized with the current item in the <see cref="T:System.Windows.Controls.ItemCollection" />; <see langword="false" /> if the <see cref="P:System.Windows.Controls.Primitives.Selector.SelectedItem" /> is never synchronized with the current item; <see langword="null" /> if the <see cref="P:System.Windows.Controls.Primitives.Selector.SelectedItem" /> is synchronized with the current item only if the <see cref="T:System.Windows.Controls.Primitives.Selector" /> uses a <see cref="T:System.Windows.Data.CollectionView" />.  The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can set the <xref:System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItem%2A> property to `true` to ensure that the item selected always corresponds to the <xref:System.Windows.Controls.ItemCollection.CurrentItem%2A> property in the <xref:System.Windows.Controls.ItemCollection>. For example, suppose that there are two <xref:System.Windows.Controls.ListBox> controls with their <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property set to the same source.  Set <xref:System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItem%2A> to `true` on both list boxes to ensure that the selected item in each <xref:System.Windows.Controls.ListBox> is the same.  
-  
+You can set the <xref:System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItem%2A> property to `true` to ensure that the item selected always corresponds to the <xref:System.Windows.Controls.ItemCollection.CurrentItem%2A> property in the <xref:System.Windows.Controls.ItemCollection>. For example, suppose that there are two <xref:System.Windows.Controls.ListBox> controls with their <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property set to the same source.  Set <xref:System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItem%2A> to `true` on both list boxes to ensure that the selected item in each <xref:System.Windows.Controls.ListBox> is the same.  
+ 
 <a name="xamlAttributeUsage_IsSynchronizedWithCurrentItem"></a>   
 ## XAML Attribute Usage  
- <*object* `IsSynchronizedWithCurrentItem`="<xref:System.Boolean>"/>  
-  
- \- or -  
-  
- <*object* `IsSynchronizedWithCurrentItem`="{}"/>  
-  
+<*object* `IsSynchronizedWithCurrentItem`="<xref:System.Boolean>"/>  
+ 
+\- or -  
+ 
+<*object* `IsSynchronizedWithCurrentItem`="{}"/>  
+ 
 <a name="dependencyPropertyInfo_IsSynchronizedWithCurrentItem"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItemProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example binds two <xref:System.Windows.Controls.ListBox> controls to the same <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>. Because <xref:System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItem%2A> is set to `true` on each <xref:System.Windows.Controls.ListBox>, the selected item is always the same for both controls  
-  
- [!code-xml[Selector#2](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#2)]
- <!-- TODO: review snippet reference [!code-xml[Selector#2](~/samples/snippets/xaml/VS_Snippets_Wpf/Selector/XAML/Window1.xaml#2)]  -->  
+The following example binds two <xref:System.Windows.Controls.ListBox> controls to the same <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>. Because <xref:System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItem%2A> is set to `true` on each <xref:System.Windows.Controls.ListBox>, the selected item is always the same for both controls  
+ 
+[!code-xml[Selector#2](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#2)]
+<!-- TODO: review snippet reference [!code-xml[Selector#2](~/samples/snippets/xaml/VS_Snippets_Wpf/Selector/XAML/Window1.xaml#2)]  -->  
 [!code-xml[Selector#4](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#4)]
 <!-- TODO: review snippet reference [!code-xml[Selector#4](~/samples/snippets/xaml/VS_Snippets_Wpf/Selector/XAML/Window1.xaml#4)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -514,34 +514,34 @@
         <value>The index of first item in the current selection. The default value is negative one (-1).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a <xref:System.Windows.Controls.Primitives.Selector> supports selecting a single item, the <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> property returns the index of the selected item. If a <xref:System.Windows.Controls.Primitives.Selector> supports multiple selections, <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> returns the index of the item that the user selected first.  
-  
- Setting <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> in a <xref:System.Windows.Controls.Primitives.Selector> that supports multiple selections clears existing selected items and sets the selection to the item specified by the index. <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> returns -1 if selection is empty.  
-  
- If you set <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> to a value less that -1, an <xref:System.ArgumentException> is thrown.  If you set <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> to a value equal or greater than the number of child elements, the value is ignored.  
-  
+If a <xref:System.Windows.Controls.Primitives.Selector> supports selecting a single item, the <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> property returns the index of the selected item. If a <xref:System.Windows.Controls.Primitives.Selector> supports multiple selections, <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> returns the index of the item that the user selected first.  
+ 
+Setting <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> in a <xref:System.Windows.Controls.Primitives.Selector> that supports multiple selections clears existing selected items and sets the selection to the item specified by the index. <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> returns -1 if selection is empty.  
+ 
+If you set <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> to a value less that -1, an <xref:System.ArgumentException> is thrown.  If you set <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> to a value equal or greater than the number of child elements, the value is ignored.  
+ 
 <a name="dependencyPropertyInfo_SelectedIndex"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Selector.SelectedIndexProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Journal%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.ListBox> and sets the <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> property to 1, which selects the second item in the <xref:System.Windows.Controls.ListBox>.  
-  
- [!code-xml[ListBoxItems_snip#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxItems_snip/CSharp/Window1.xaml#2)]  
-  
- The following example uses the <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> property to determine whether the item at index 0 is the first item in the selection.  
-  
- [!code-csharp[ListBoxItems_snip#SelectorSelectedIndex](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxItems_snip/CSharp/Window1.xaml.cs#selectorselectedindex)]
- [!code-vb[ListBoxItems_snip#SelectorSelectedIndex](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxItems_snip/visualbasic/window1.xaml.vb#selectorselectedindex)]  
-  
+The following example creates a <xref:System.Windows.Controls.ListBox> and sets the <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> property to 1, which selects the second item in the <xref:System.Windows.Controls.ListBox>.  
+ 
+[!code-xml[ListBoxItems_snip#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxItems_snip/CSharp/Window1.xaml#2)]  
+ 
+The following example uses the <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> property to determine whether the item at index 0 is the first item in the selection.  
+ 
+[!code-csharp[ListBoxItems_snip#SelectorSelectedIndex](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxItems_snip/CSharp/Window1.xaml.cs#selectorselectedindex)]
+[!code-vb[ListBoxItems_snip#SelectorSelectedIndex](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxItems_snip/visualbasic/window1.xaml.vb#selectorselectedindex)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -591,28 +591,28 @@
         <value>The first item in the current selection or <see langword="null" /> if the selection is empty.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If a <xref:System.Windows.Controls.Primitives.Selector> supports selecting a single item, the <xref:System.Windows.Controls.Primitives.Selector.SelectedItem%2A> property returns the selected item. If a <xref:System.Windows.Controls.Primitives.Selector> supports multiple selections, <xref:System.Windows.Controls.Primitives.Selector.SelectedItem%2A> returns the item that the user selected first.  
-  
- Setting <xref:System.Windows.Controls.Primitives.Selector.SelectedItem%2A> in a <xref:System.Windows.Controls.Primitives.Selector> that supports multiple selections clears existing selected items and sets the selection to the item specified.  
-  
+If a <xref:System.Windows.Controls.Primitives.Selector> supports selecting a single item, the <xref:System.Windows.Controls.Primitives.Selector.SelectedItem%2A> property returns the selected item. If a <xref:System.Windows.Controls.Primitives.Selector> supports multiple selections, <xref:System.Windows.Controls.Primitives.Selector.SelectedItem%2A> returns the item that the user selected first.  
+ 
+Setting <xref:System.Windows.Controls.Primitives.Selector.SelectedItem%2A> in a <xref:System.Windows.Controls.Primitives.Selector> that supports multiple selections clears existing selected items and sets the selection to the item specified.  
+ 
 <a name="dependencyPropertyInfo_SelectedItem"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Selector.SelectedItemProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Journal%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example gets the <xref:System.Windows.Controls.Primitives.Selector.SelectedItem%2A> from a <xref:System.Windows.Controls.ListBox>.  
-  
- [!code-csharp[ListBoxEvent#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#2)]
- [!code-vb[ListBoxEvent#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#2)]  
-  
+The following example gets the <xref:System.Windows.Controls.Primitives.Selector.SelectedItem%2A> from a <xref:System.Windows.Controls.ListBox>.  
+ 
+[!code-csharp[ListBoxEvent#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#2)]
+[!code-vb[ListBoxEvent#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -665,28 +665,28 @@
         <value>The value of the selected item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A> property specifies the path to the property that is used to determine the value of the <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> property. Setting <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> to a value X attempts to select an item whose value evaluates to X; if no such item can be found, the selection is cleared.  
-  
+The <xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A> property specifies the path to the property that is used to determine the value of the <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> property. Setting <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> to a value X attempts to select an item whose value evaluates to X; if no such item can be found, the selection is cleared.  
+ 
 <a name="dependencyPropertyInfo_SelectedValue"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Selector.SelectedValueProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Journal%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example binds a <xref:System.Windows.Controls.ListBox> to a collection of `Employee` objects. The example sets <xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A> to `@EmployeeNumber` and <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> to `12345`.  This selects the `Employee` that has `12345` as the value of `EmployeeNumber`.  This example also binds a <xref:System.Windows.Controls.TextBlock> to the <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> of the <xref:System.Windows.Controls.ListBox>.  When the user changes the selection in the <xref:System.Windows.Controls.ListBox>, the <xref:System.Windows.Controls.TextBlock> is updated to show the employee number of the currently selected employee.  
-  
- [!code-xml[Selector#2](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#2)]
- <!-- TODO: review snippet reference [!code-xml[Selector#2](~/samples/snippets/xaml/VS_Snippets_Wpf/Selector/XAML/Window1.xaml#2)]  -->  
+The following example binds a <xref:System.Windows.Controls.ListBox> to a collection of `Employee` objects. The example sets <xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A> to `@EmployeeNumber` and <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> to `12345`.  This selects the `Employee` that has `12345` as the value of `EmployeeNumber`.  This example also binds a <xref:System.Windows.Controls.TextBlock> to the <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> of the <xref:System.Windows.Controls.ListBox>.  When the user changes the selection in the <xref:System.Windows.Controls.ListBox>, the <xref:System.Windows.Controls.TextBlock> is updated to show the employee number of the currently selected employee.  
+ 
+[!code-xml[Selector#2](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#2)]
+<!-- TODO: review snippet reference [!code-xml[Selector#2](~/samples/snippets/xaml/VS_Snippets_Wpf/Selector/XAML/Window1.xaml#2)]  -->  
 [!code-xml[Selector#3](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#3)]
 <!-- TODO: review snippet reference [!code-xml[Selector#3](~/samples/snippets/xaml/VS_Snippets_Wpf/Selector/XAML/Window1.xaml#3)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -719,28 +719,28 @@
         <value>The path used to get the <see cref="P:System.Windows.Controls.Primitives.Selector.SelectedValue" />. The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A> property specifies the path to the property that is used to determine the value of the <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> property.  
-  
+The <xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A> property specifies the path to the property that is used to determine the value of the <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> property.  
+ 
 <a name="dependencyPropertyInfo_SelectedValuePath"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePathProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example binds a <xref:System.Windows.Controls.ListBox> to a collection of `Employee` objects. The example sets <xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A> to `@EmployeeNumber` and <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> to `12345`.  This selects the `Employee` that has `12345` as the value of `EmployeeNumber`.  This example also binds a <xref:System.Windows.Controls.TextBlock> to the <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> of the <xref:System.Windows.Controls.ListBox>.  When the user changes the selection in the <xref:System.Windows.Controls.ListBox>, the <xref:System.Windows.Controls.TextBlock> is updated to show the employee number of the currently selected employee.  
-  
- [!code-xml[Selector#2](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#2)]
- <!-- TODO: review snippet reference [!code-xml[Selector#2](~/samples/snippets/xaml/VS_Snippets_Wpf/Selector/XAML/Window1.xaml#2)]  -->  
+The following example binds a <xref:System.Windows.Controls.ListBox> to a collection of `Employee` objects. The example sets <xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A> to `@EmployeeNumber` and <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> to `12345`.  This selects the `Employee` that has `12345` as the value of `EmployeeNumber`.  This example also binds a <xref:System.Windows.Controls.TextBlock> to the <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> of the <xref:System.Windows.Controls.ListBox>.  When the user changes the selection in the <xref:System.Windows.Controls.ListBox>, the <xref:System.Windows.Controls.TextBlock> is updated to show the employee number of the currently selected employee.  
+ 
+[!code-xml[Selector#2](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#2)]
+<!-- TODO: review snippet reference [!code-xml[Selector#2](~/samples/snippets/xaml/VS_Snippets_Wpf/Selector/XAML/Window1.xaml#2)]  -->  
 [!code-xml[Selector#3](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#3)]
 <!-- TODO: review snippet reference [!code-xml[Selector#3](~/samples/snippets/xaml/VS_Snippets_Wpf/Selector/XAML/Window1.xaml#3)]  -->  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -800,31 +800,31 @@
         <summary>Occurs when the selection of a <see cref="T:System.Windows.Controls.Primitives.Selector" /> changes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This event occurs whenever there is a change to a selection. A selection can be changed not only by user interaction but also by binding as well as other set values.  
-  
+This event occurs whenever there is a change to a selection. A selection can be changed not only by user interaction but also by binding as well as other set values.  
+ 
 <a name="routedEventInfo_SelectionChanged"></a>   
 ## Routed Event Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Primitives.Selector>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.Controls.SelectionChangedEventHandler>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to attach the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event to a list box control.  
-  
- [!code-xml[ListBoxEvent#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#1)]  
-  
- The following example shows how to handle the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event.  
-  
- [!code-csharp[ListBoxEvent#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#2)]
- [!code-vb[ListBoxEvent#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#2)]  
-  
+The following example shows how to attach the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event to a list box control.  
+ 
+[!code-xml[ListBoxEvent#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#1)]  
+ 
+The following example shows how to handle the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event.  
+ 
+[!code-csharp[ListBoxEvent#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#2)]
+[!code-vb[ListBoxEvent#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

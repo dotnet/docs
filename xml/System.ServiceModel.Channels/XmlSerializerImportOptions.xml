@@ -15,10 +15,10 @@
     <summary>Contains information needed to perform schema importation using the <see cref="T:System.Xml.Serialization.XmlSerializer" /> and <see cref="T:System.Web.Services.Description.ServiceDescriptionImporter" /> infrastructure.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.XmlSerializerImportOptions> is used by the <xref:System.ServiceModel.Description.XmlSerializerMessageContractImporter>. It is also used with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) with the `/useXmlSerializer` (`/uxs)` switch.  
-  
+The <xref:System.ServiceModel.Channels.XmlSerializerImportOptions> is used by the <xref:System.ServiceModel.Description.XmlSerializerMessageContractImporter>. It is also used with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) with the `/useXmlSerializer` (`/uxs)` switch.  
+ 
  ]]></format>
     </remarks>
   </Docs>

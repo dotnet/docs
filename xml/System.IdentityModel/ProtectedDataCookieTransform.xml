@@ -14,10 +14,10 @@
     <summary>Provides cookie integrity and confidentiality by using the <see cref="T:System.Security.Cryptography.ProtectedData" /> class. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Due to the nature of the <xref:System.Security.Cryptography.ProtectedData> class, cookies which use this transform can only be read by the same computer that wrote them. As such, this transform is not appropriate for use in applications that run on a web server farm.  
-  
+Due to the nature of the <xref:System.Security.Cryptography.ProtectedData> class, cookies which use this transform can only be read by the same computer that wrote them. As such, this transform is not appropriate for use in applications that run on a web server farm.  
+ 
  ]]></format>
     </remarks>
   </Docs>

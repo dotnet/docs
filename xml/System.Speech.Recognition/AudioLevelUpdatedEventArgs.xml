@@ -14,21 +14,21 @@
     <summary>Provides data for the <see langword="AudioLevelUpdated" /> event of the <see cref="T:System.Speech.Recognition.SpeechRecognizer" /> or the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When they are raised, the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevelUpdated?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.AudioLevelUpdated?displayProperty=fullName> events pass an instance of  <xref:System.Speech.Recognition.AudioLevelUpdatedEventArgs> to  the handler for the associated event.  
+When they are raised, the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevelUpdated?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.AudioLevelUpdated?displayProperty=fullName> events pass an instance of  <xref:System.Speech.Recognition.AudioLevelUpdatedEventArgs> to  the handler for the associated event.  
+ 
+The <xref:System.Speech.Recognition.AudioLevelUpdatedEventArgs.AudioLevel%2A> property gets the new level of audio input when the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevelUpdated?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognizer.AudioLevelUpdated?displayProperty=fullName> event is raised.  
+ 
+The `AudioLevel` property of the <xref:System.Speech.Recognition.SpeechRecognizer> and <xref:System.Speech.Recognition.SpeechRecognitionEngine> classes provides the current level of the audio input to the speech recognition engine.  
+ 
   
- The <xref:System.Speech.Recognition.AudioLevelUpdatedEventArgs.AudioLevel%2A> property gets the new level of audio input when the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevelUpdated?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognizer.AudioLevelUpdated?displayProperty=fullName> event is raised.  
-  
- The `AudioLevel` property of the <xref:System.Speech.Recognition.SpeechRecognizer> and <xref:System.Speech.Recognition.SpeechRecognitionEngine> classes provides the current level of the audio input to the speech recognition engine.  
-  
-   
-  
+ 
 ## Examples  
- The following example adds an event handler to a <xref:System.Speech.Recognition.SpeechRecognitionEngine> object. The handler outputs the new audio level to the console.  
-  
- <xref:System.Speech.Recognition.AudioLevelUpdatedEventArgs> derives from <xref:System.EventArgs>.  
-  
+The following example adds an event handler to a <xref:System.Speech.Recognition.SpeechRecognitionEngine> object. The handler outputs the new audio level to the console.  
+ 
+<xref:System.Speech.Recognition.AudioLevelUpdatedEventArgs> derives from <xref:System.EventArgs>.  
+ 
 ```csharp  
   
 private SpeechRecognitionEngine sre;  
@@ -51,7 +51,7 @@ void sre_AudioLevelUpdated(object sender, AudioLevelUpdatedEventArgs e)
 }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

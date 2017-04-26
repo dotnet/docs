@@ -14,10 +14,10 @@
     <summary>Implements a type converter for <see cref="T:System.Windows.TemplateKey" /> objects, which deliberately have no type conversion pathways. The type converter enforces and reports that behavior.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.TemplateKey> type should not use a type converter pathway to convert values (should use markup extensions instead). For this reason, the <xref:System.Windows.Markup.TemplateKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.TemplateKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.TemplateKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.TemplateKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception.  
-  
+The <xref:System.Windows.TemplateKey> type should not use a type converter pathway to convert values (should use markup extensions instead). For this reason, the <xref:System.Windows.Markup.TemplateKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.TemplateKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.TemplateKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.TemplateKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception.  
+ 
 <a name="xamlTextUsage_TemplateKeyConverter"></a>   
 ## XAML Text Usage  
  ]]></format>
@@ -62,10 +62,10 @@
         <returns>Always returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See Remarks in <xref:System.Windows.Markup.TemplateKeyConverter>.  
-  
+See Remarks in <xref:System.Windows.Markup.TemplateKeyConverter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -93,10 +93,10 @@
         <returns>Always returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See Remarks in <xref:System.Windows.Markup.TemplateKeyConverter>.  
-  
+See Remarks in <xref:System.Windows.Markup.TemplateKeyConverter>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,10 +126,10 @@
         <returns>Always throws an exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See Remarks in <xref:System.Windows.Markup.TemplateKeyConverter>.  
-  
+See Remarks in <xref:System.Windows.Markup.TemplateKeyConverter>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
@@ -163,10 +163,10 @@
         <returns>Always throws an exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- See Remarks in <xref:System.Windows.Markup.TemplateKeyConverter>.  
-  
+See Remarks in <xref:System.Windows.Markup.TemplateKeyConverter>.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">

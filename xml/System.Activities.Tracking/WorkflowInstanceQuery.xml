@@ -47,12 +47,12 @@
         <value>The workflow states.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The returned records are filtered by the states in this collection.  
-  
- Possible state values are described in the following table.  
-  
+The returned records are filtered by the states in this collection.  
+ 
+Possible state values are described in the following table.  
+ 
 |State|Description|  
 |-----------|-----------------|  
 |Aborted|The workflow instance is aborted.|  
@@ -68,7 +68,7 @@
 |Suspended|The workflow instance is suspended.|  
 |Terminated|The workflow instance is terminated.|  
 |Unsuspended|The workflow instance is unsuspended.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -47,10 +47,10 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.UdpDiscoveryEndpoint" /> class with the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two versions of the WS-Discovery protocol are currently supported: WS-Discovery April 2005 and WS-Discovery V1.1, which correspond to the <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005%2A> and <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11%2A> enumeration values.  
-  
+Two versions of the WS-Discovery protocol are currently supported: WS-Discovery April 2005 and WS-Discovery V1.1, which correspond to the <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005%2A> and <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11%2A> enumeration values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -110,10 +110,10 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.UdpDiscoveryEndpoint" /> class with the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> and multicast address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two versions of the WS-Discovery protocol are currently supported: WS-Discovery April 2005 and WS-Discovery V1.1, which correspond to the <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005%2A> and <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11%2A> enumeration values.  
-  
+Two versions of the WS-Discovery protocol are currently supported: WS-Discovery April 2005 and WS-Discovery V1.1, which correspond to the <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005%2A> and <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11%2A> enumeration values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -137,10 +137,10 @@
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.UdpDiscoveryEndpoint" /> class with the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> and multicast address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two versions of the WS-Discovery protocol are currently supported: WS-Discovery April 2005 and WS-Discovery V1.1, which correspond to the <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005%2A> and <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11%2A> enumeration values.  
-  
+Two versions of the WS-Discovery protocol are currently supported: WS-Discovery April 2005 and WS-Discovery V1.1, which correspond to the <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005%2A> and <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11%2A> enumeration values.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,10 +196,10 @@
         <value>A <see cref="T:System.Uri" /> instance that contains the multicast address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value is <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint.DefaultIPv4MulticastAddress>.  
-  
+The default value is <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint.DefaultIPv4MulticastAddress>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -226,10 +226,10 @@
         <value>The UDP transport settings for the endpoint.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.ServiceModel.Discovery.UdpTransportSettings> to change UDP transport settings for the UDP endpoint.  
-  
+Use the <xref:System.ServiceModel.Discovery.UdpTransportSettings> to change UDP transport settings for the UDP endpoint.  
+ 
  ]]></format>
         </remarks>
       </Docs>

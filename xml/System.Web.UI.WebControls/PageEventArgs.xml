@@ -14,17 +14,17 @@
     <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable" /> event of a class that implements the <see cref="T:System.Web.UI.WebControls.IPageableItemContainer" /> interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ListView> object raises the <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable> event when the control has obtained the total number of records of the underlying data source object. The <xref:System.Web.UI.WebControls.DataPager> control provides an event handler for this event named <xref:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable%2A>. This event handler initializes page-related properties and creates the <xref:System.Web.UI.WebControls.DataPagerField> objects that are defined in the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=fullName> collection.  
-  
+The <xref:System.Web.UI.WebControls.ListView> object raises the <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable> event when the control has obtained the total number of records of the underlying data source object. The <xref:System.Web.UI.WebControls.DataPager> control provides an event handler for this event named <xref:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable%2A>. This event handler initializes page-related properties and creates the <xref:System.Web.UI.WebControls.DataPagerField> objects that are defined in the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=fullName> collection.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable> event is primarily used by control developers.  
-  
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.PageEventArgs> class, see the <xref:System.Web.UI.WebControls.PageEventArgs.%23ctor%2A> constructor.  
-  
+ 
+For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ 
+For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.PageEventArgs> class, see the <xref:System.Web.UI.WebControls.PageEventArgs.%23ctor%2A> constructor.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,21 +50,21 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.PageEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.PageEventArgs> class.  
-  
+You can use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.PageEventArgs> class.  
+ 
 > [!NOTE]
 >  This constructor is primarily used by control developers when raising events.  
-  
- The following table shows initial property values for an instance of the <xref:System.Web.UI.WebControls.PageEventArgs> class.  
-  
+ 
+The following table shows initial property values for an instance of the <xref:System.Web.UI.WebControls.PageEventArgs> class.  
+ 
 |Property|Initial Value|  
 |--------------|-------------------|  
 |<xref:System.Web.UI.WebControls.PageEventArgs.StartRowIndex%2A>|The value of the `startRowIndex` parameter.|  
 |<xref:System.Web.UI.WebControls.PageEventArgs.MaximumRows%2A>|The value of the `maximumRows` parameter.|  
 |<xref:System.Web.UI.WebControls.PageEventArgs.TotalRowCount%2A>|The value of the `totalRowCount` parameter.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

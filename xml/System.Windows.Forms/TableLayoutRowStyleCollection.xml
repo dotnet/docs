@@ -14,18 +14,18 @@
     <summary>A collection that stores <see cref="T:System.Windows.Forms.RowStyle" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TableLayoutRowStyleCollection> class represents the collection of all the styles used to describe the rows in an associated <xref:System.Windows.Forms.TableLayoutPanel>.  
+The <xref:System.Windows.Forms.TableLayoutRowStyleCollection> class represents the collection of all the styles used to describe the rows in an associated <xref:System.Windows.Forms.TableLayoutPanel>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to set <xref:System.Windows.Forms.RowStyle> for a <xref:System.Windows.Forms.TableLayoutRowStyleCollection>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
-  
- [!code-csharp[System.Windows.Forms.TableLayoutPanel#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#9)]
- [!code-vb[System.Windows.Forms.TableLayoutPanel#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#9)]  
-  
+The following example shows how to set <xref:System.Windows.Forms.RowStyle> for a <xref:System.Windows.Forms.TableLayoutRowStyleCollection>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+ 
+[!code-csharp[System.Windows.Forms.TableLayoutPanel#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#9)]
+[!code-vb[System.Windows.Forms.TableLayoutPanel#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#9)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -51,12 +51,12 @@
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TableLayoutRowStyleCollection.Add%2A> method reapplies the table layout to all the controls in the current <xref:System.Windows.Forms.TableLayoutPanel> container.  
-  
- The number of styles stored in a collection is limited only by available memory.  
-  
+The <xref:System.Windows.Forms.TableLayoutRowStyleCollection.Add%2A> method reapplies the table layout to all the controls in the current <xref:System.Windows.Forms.TableLayoutPanel> container.  
+ 
+The number of styles stored in a collection is limited only by available memory.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -105,10 +105,10 @@
         <returns>The index of <paramref name="rowStyle" /> if found in the <see cref="T:System.Windows.Forms.TableLayoutRowStyleCollection" />; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TableLayoutRowStyleCollection.IndexOf%2A> method begins searching at the first element of the <xref:System.Windows.Forms.TableLayoutRowStyleCollection> and ends either when it finds a match or it reaches the last element.  
-  
+The <xref:System.Windows.Forms.TableLayoutRowStyleCollection.IndexOf%2A> method begins searching at the first element of the <xref:System.Windows.Forms.TableLayoutRowStyleCollection> and ends either when it finds a match or it reaches the last element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,14 +135,14 @@
         <summary>Inserts a <see cref="T:System.Windows.Forms.RowStyle" /> into the <see cref="T:System.Windows.Forms.TableLayoutRowStyleCollection" /> at the specified position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TableLayoutRowStyleCollection.Insert%2A> method reapplies the table layout to all the controls in the current <xref:System.Windows.Forms.TableLayoutPanel> container.  
-  
- The number of styles stored in a collection is limited only by available memory.  
-  
- In collections of contiguous elements, such as the <xref:System.Windows.Forms.TableLayoutRowStyleCollection> class, the elements that follow the insertion point move down to accommodate the inserted element. The indexes of the elements that are moved are also updated.  
-  
+The <xref:System.Windows.Forms.TableLayoutRowStyleCollection.Insert%2A> method reapplies the table layout to all the controls in the current <xref:System.Windows.Forms.TableLayoutPanel> container.  
+ 
+The number of styles stored in a collection is limited only by available memory.  
+ 
+In collections of contiguous elements, such as the <xref:System.Windows.Forms.TableLayoutRowStyleCollection> class, the elements that follow the insertion point move down to accommodate the inserted element. The indexes of the elements that are moved are also updated.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,12 +189,12 @@
         <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Windows.Forms.TableLayoutRowStyleCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Forms.TableLayoutRowStyleCollection.Remove%2A> method reapplies the table layout to all the controls in the current <xref:System.Windows.Forms.TableLayoutPanel> container.  
-  
- In collections of contiguous elements, such as the <xref:System.Windows.Forms.TableLayoutRowStyleCollection> class, the elements that follow the deletion point move up to occupy the vacated spot. The indexes of the elements that are moved are also updated.  
-  
+The <xref:System.Windows.Forms.TableLayoutRowStyleCollection.Remove%2A> method reapplies the table layout to all the controls in the current <xref:System.Windows.Forms.TableLayoutPanel> container.  
+ 
+In collections of contiguous elements, such as the <xref:System.Windows.Forms.TableLayoutRowStyleCollection> class, the elements that follow the deletion point move up to occupy the vacated spot. The indexes of the elements that are moved are also updated.  
+ 
  ]]></format>
         </remarks>
       </Docs>

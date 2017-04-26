@@ -15,19 +15,19 @@
     <summary>Results returned after a call to <see cref="M:System.Data.Services.Client.DataServiceContext.SaveChanges" /> when enumerating operation responses returned by the <see cref="T:System.Data.Services.Client.DataServiceResponse" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Data.Services.Client.ChangeOperationResponse> objects are not intended to be constructed directly by a user of this library. Instead, references are returned when enumerating the operation responses returned via the enumerator on the <xref:System.Data.Services.Client.DataServiceResponse> class.  
+<xref:System.Data.Services.Client.ChangeOperationResponse> objects are not intended to be constructed directly by a user of this library. Instead, references are returned when enumerating the operation responses returned via the enumerator on the <xref:System.Data.Services.Client.DataServiceResponse> class.  
+ 
+<xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> submits pending changes to the data service collected by the <xref:System.Data.Services.Client.DataServiceContext> since the last call to <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A>. Changes are added to the context by calling <xref:System.Data.Services.Client.DataServiceContext.AddObject%2A>, <xref:System.Data.Services.Client.DataServiceContext.AddLink%2A>, <xref:System.Data.Services.Client.DataServiceContext.DeleteObject%2A>, <xref:System.Data.Services.Client.DataServiceContext.DeleteLink%2A>, <xref:System.Data.Services.Client.DataServiceContext.Detach%2A>, <xref:System.Data.Services.Client.DataServiceContext.DetachLink%2A>, and similar methods.  
+ 
+<xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> returns a <xref:System.Data.Services.Client.DataServiceResponse> that represents the response to all operations sent to the data service. The <xref:System.Data.Services.Client.DataServiceResponse> object includes a sequence of <xref:System.Data.Services.Client.ChangeOperationResponse> objects that, in turn, contain a sequence of <xref:System.Data.Services.Client.EntityDescriptor> or <xref:System.Data.Services.Client.LinkDescriptor> instances that represent the changes that were persisted or attempted.  
+ 
   
- <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> submits pending changes to the data service collected by the <xref:System.Data.Services.Client.DataServiceContext> since the last call to <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A>. Changes are added to the context by calling <xref:System.Data.Services.Client.DataServiceContext.AddObject%2A>, <xref:System.Data.Services.Client.DataServiceContext.AddLink%2A>, <xref:System.Data.Services.Client.DataServiceContext.DeleteObject%2A>, <xref:System.Data.Services.Client.DataServiceContext.DeleteLink%2A>, <xref:System.Data.Services.Client.DataServiceContext.Detach%2A>, <xref:System.Data.Services.Client.DataServiceContext.DetachLink%2A>, and similar methods.  
-  
- <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> returns a <xref:System.Data.Services.Client.DataServiceResponse> that represents the response to all operations sent to the data service. The <xref:System.Data.Services.Client.DataServiceResponse> object includes a sequence of <xref:System.Data.Services.Client.ChangeOperationResponse> objects that, in turn, contain a sequence of <xref:System.Data.Services.Client.EntityDescriptor> or <xref:System.Data.Services.Client.LinkDescriptor> instances that represent the changes that were persisted or attempted.  
-  
-   
-  
+ 
 ## Examples  
- The following code shows how to process the results of a call to <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A>.  
-  
+The following code shows how to process the results of a call to <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A>.  
+ 
 ```  
 DataServiceContext service = new DataServiceContext(new Uri("http://myserviceroot"));  
   
@@ -119,7 +119,7 @@ catch (DataServiceSaveException se)
 }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

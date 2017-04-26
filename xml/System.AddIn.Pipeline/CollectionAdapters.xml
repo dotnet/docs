@@ -14,12 +14,12 @@
     <summary>Enables collections to be passed between an add-in and its host application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class provides methods that enable an <xref:System.Collections.Generic.IList%601> collection to be converted to a <xref:System.AddIn.Contract.IListContract%601> collection. The <xref:System.AddIn.Contract.IListContract%601> collection is passed across the isolation boundary and converted back to an <xref:System.Collections.Generic.IList%601> collection that the add-in or the host application can use.  
-  
- Objects in collections must be remotable. For more information about the object types that you can pass, see [Contracts, Views, and Adapters](http://msdn.microsoft.com/en-us/a6460173-9507-4b87-8c07-d4ee245d715c).  
-  
+This class provides methods that enable an <xref:System.Collections.Generic.IList%601> collection to be converted to a <xref:System.AddIn.Contract.IListContract%601> collection. The <xref:System.AddIn.Contract.IListContract%601> collection is passed across the isolation boundary and converted back to an <xref:System.Collections.Generic.IList%601> collection that the add-in or the host application can use.  
+ 
+Objects in collections must be remotable. For more information about the object types that you can pass, see [Contracts, Views, and Adapters](http://msdn.microsoft.com/en-us/a6460173-9507-4b87-8c07-d4ee245d715c).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,20 +49,20 @@
         <returns>The converted collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The host application or add-in can use the returned <xref:System.Collections.Generic.IList%601> collection. The <xref:System.Collections.Generic.IList%601> collection will have a lifetime token for the remote <xref:System.AddIn.Contract.IListContract%601> collection.  
+The host application or add-in can use the returned <xref:System.Collections.Generic.IList%601> collection. The <xref:System.Collections.Generic.IList%601> collection will have a lifetime token for the remote <xref:System.AddIn.Contract.IListContract%601> collection.  
+ 
+You should use this method overload only when the contents of the <xref:System.AddIn.Contract.IListContract%601> are serializable types that can be passed directly to the add-in and host (rather than types that must be adapted into views).  
+ 
   
- You should use this method overload only when the contents of the <xref:System.AddIn.Contract.IListContract%601> are serializable types that can be passed directly to the add-in and host (rather than types that must be adapted into views).  
-  
-   
-  
+ 
 ## Examples  
- The following example implements a host-side adapter pipeline segment as described [Walkthrough: Passing Collections Between Hosts and Add-Ins](http://msdn.microsoft.com/en-us/b532c604-548e-4fab-b11c-377257dd0ee5). The example adapts the custom `ProcessBooks` method by taking the <xref:System.AddIn.Contract.IListContract%601> collection passed from the add-in and converting it to an <xref:System.Collections.Generic.IList%601> collection, which the host application can then use.  
-  
- [!code-csharp[AddInCollectionPipelineAddInSideAdapter#3](~/samples/snippets/csharp/VS_Snippets_CLR/AddInCollectionPipelineAddInSideAdapter/cs/LibraryManagerViewToContractAddInAdapter.cs#3)]
- [!code-vb[AddInCollectionPipelineAddInSideAdapter#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddInCollectionPipelineAddInSideAdapter/vb/LibraryManagerViewToContractAddInAdapter.vb#3)]  
-  
+The following example implements a host-side adapter pipeline segment as described [Walkthrough: Passing Collections Between Hosts and Add-Ins](http://msdn.microsoft.com/en-us/b532c604-548e-4fab-b11c-377257dd0ee5). The example adapts the custom `ProcessBooks` method by taking the <xref:System.AddIn.Contract.IListContract%601> collection passed from the add-in and converting it to an <xref:System.Collections.Generic.IList%601> collection, which the host application can then use.  
+ 
+[!code-csharp[AddInCollectionPipelineAddInSideAdapter#3](~/samples/snippets/csharp/VS_Snippets_CLR/AddInCollectionPipelineAddInSideAdapter/cs/LibraryManagerViewToContractAddInAdapter.cs#3)]
+[!code-vb[AddInCollectionPipelineAddInSideAdapter#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddInCollectionPipelineAddInSideAdapter/vb/LibraryManagerViewToContractAddInAdapter.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -98,10 +98,10 @@
         <returns>The converted collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method overload for <xref:System.AddIn.Contract.IListContract%601> collections that contain types that must be adapted before they can be passed to the add-in or host (rather than simple serializable types that can be passed directly). The host application or add-in can use the returned <xref:System.Collections.Generic.IList%601> collection. It will have a lifetime token for the remote <xref:System.AddIn.Contract.IListContract%601>.  
-  
+Use this method overload for <xref:System.AddIn.Contract.IListContract%601> collections that contain types that must be adapted before they can be passed to the add-in or host (rather than simple serializable types that can be passed directly). The host application or add-in can use the returned <xref:System.Collections.Generic.IList%601> collection. It will have a lifetime token for the remote <xref:System.AddIn.Contract.IListContract%601>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -131,20 +131,20 @@
         <returns>The converted collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.AddIn.Contract.IListContract%601> collection can be marshaled across the isolation boundary between the add-in and its host application.  
+The <xref:System.AddIn.Contract.IListContract%601> collection can be marshaled across the isolation boundary between the add-in and its host application.  
+ 
+You should use this method overload only when the contents of the <xref:System.Collections.Generic.IList%601> collection are serializable types that can be passed directly to the contract (rather than types that must be adapted into contracts).  
+ 
   
- You should use this method overload only when the contents of the <xref:System.Collections.Generic.IList%601> collection are serializable types that can be passed directly to the contract (rather than types that must be adapted into contracts).  
-  
-   
-  
+ 
 ## Examples  
- The following example implements the class that defines an add-in side adapter pipeline segment. It adapts the custom `ProcessBooks` method by taking the <xref:System.Collections.Generic.IList%601> collection passed from the add-in view segment and converting it to an <xref:System.AddIn.Contract.IListContract%601> collection that can be marshaled across the isolation boundary to the host.  
-  
- [!code-csharp[AddInCollectionPipelineHostSideAdapter#4](~/samples/snippets/csharp/VS_Snippets_CLR/AddInCollectionPipelineHostSideAdapter/cs/LibraryManagerContractToViewHostAdapter.cs#4)]
- [!code-vb[AddInCollectionPipelineHostSideAdapter#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddInCollectionPipelineHostSideAdapter/vb/LibraryManagerContractToViewHostAdapter.vb#4)]  
-  
+The following example implements the class that defines an add-in side adapter pipeline segment. It adapts the custom `ProcessBooks` method by taking the <xref:System.Collections.Generic.IList%601> collection passed from the add-in view segment and converting it to an <xref:System.AddIn.Contract.IListContract%601> collection that can be marshaled across the isolation boundary to the host.  
+ 
+[!code-csharp[AddInCollectionPipelineHostSideAdapter#4](~/samples/snippets/csharp/VS_Snippets_CLR/AddInCollectionPipelineHostSideAdapter/cs/LibraryManagerContractToViewHostAdapter.cs#4)]
+[!code-vb[AddInCollectionPipelineHostSideAdapter#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddInCollectionPipelineHostSideAdapter/vb/LibraryManagerContractToViewHostAdapter.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -180,10 +180,10 @@
         <returns>The converted collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method overload for <xref:System.Collections.Generic.IList%601> collections that contain types that must be adapted into contracts before they can be passed to the contract (rather than simple serializable types that can be passed directly). The <xref:System.AddIn.Contract.IListContract%601> collection can be marshaled across the isolation boundary between an add-in and its host application.  
-  
+Use this method overload for <xref:System.Collections.Generic.IList%601> collections that contain types that must be adapted into contracts before they can be passed to the contract (rather than simple serializable types that can be passed directly). The <xref:System.AddIn.Contract.IListContract%601> collection can be marshaled across the isolation boundary between an add-in and its host application.  
+ 
  ]]></format>
         </remarks>
       </Docs>

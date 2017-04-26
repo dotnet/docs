@@ -14,10 +14,10 @@
     <summary>Indicates the context for a manifest-activated application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The values of this enumeration specify whether an application has been loaded into the ClickOnce store.  A manifest activated application that is not installed in the ClickOnce store is classified as Loose. An example of an application not in the store is a manifest-activated application executing in Visual Studio.  
-  
+The values of this enumeration specify whether an application has been loaded into the ClickOnce store.  A manifest activated application that is not installed in the ClickOnce store is classified as Loose. An example of an application not in the store is a manifest-activated application executing in Visual Studio.  
+ 
  ]]></format>
     </remarks>
   </Docs>

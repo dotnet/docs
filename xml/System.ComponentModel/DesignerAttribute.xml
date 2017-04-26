@@ -24,29 +24,29 @@
     <summary>Specifies the class used to implement design-time services for a component.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The class you use for the design-time services must implement the <xref:System.ComponentModel.Design.IDesigner> interface.  
+The class you use for the design-time services must implement the <xref:System.ComponentModel.Design.IDesigner> interface.  
+ 
+Use the <xref:System.ComponentModel.DesignerAttribute.DesignerBaseTypeName%2A> property to find the designer's base type. Use the <xref:System.ComponentModel.DesignerAttribute.DesignerTypeName%2A> property to get the name of the type of designer associated with this member.  
+ 
+For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ 
   
- Use the <xref:System.ComponentModel.DesignerAttribute.DesignerBaseTypeName%2A> property to find the designer's base type. Use the <xref:System.ComponentModel.DesignerAttribute.DesignerTypeName%2A> property to get the name of the type of designer associated with this member.  
-  
- For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a class called `MyForm`. `MyForm` has two attributes, a <xref:System.ComponentModel.DesignerAttribute> that specifies this class uses the <xref:System.Windows.Forms.Design.DocumentDesigner>, and a <xref:System.ComponentModel.DesignerCategoryAttribute> that specifies the <xref:System.ComponentModel.DesignerCategoryAttribute.Form> category.  
-  
- [!code-cpp[Classic DesignerAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignerAttribute Example/CPP/source.cpp#1)]
- [!code-csharp[Classic DesignerAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignerAttribute Example/CS/source.cs#1)]
- [!code-vb[Classic DesignerAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignerAttribute Example/VB/source.vb#1)]  
-  
- The next example creates an instance of `MyForm`. Then it gets the attributes for the class, extracts the <xref:System.ComponentModel.DesignerAttribute>, and prints the name of the designer.  
-  
- [!code-cpp[Classic DesignerAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignerAttribute Example/CPP/source.cpp#2)]
- [!code-csharp[Classic DesignerAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignerAttribute Example/CS/source.cs#2)]
- [!code-vb[Classic DesignerAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignerAttribute Example/VB/source.vb#2)]  
-  
+The following example creates a class called `MyForm`. `MyForm` has two attributes, a <xref:System.ComponentModel.DesignerAttribute> that specifies this class uses the <xref:System.Windows.Forms.Design.DocumentDesigner>, and a <xref:System.ComponentModel.DesignerCategoryAttribute> that specifies the <xref:System.ComponentModel.DesignerCategoryAttribute.Form> category.  
+ 
+[!code-cpp[Classic DesignerAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignerAttribute Example/CPP/source.cpp#1)]
+[!code-csharp[Classic DesignerAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignerAttribute Example/CS/source.cs#1)]
+[!code-vb[Classic DesignerAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignerAttribute Example/VB/source.vb#1)]  
+ 
+The next example creates an instance of `MyForm`. Then it gets the attributes for the class, extracts the <xref:System.ComponentModel.DesignerAttribute>, and prints the name of the designer.  
+ 
+[!code-cpp[Classic DesignerAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignerAttribute Example/CPP/source.cpp#2)]
+[!code-csharp[Classic DesignerAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignerAttribute Example/CS/source.cs#2)]
+[!code-vb[Classic DesignerAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DesignerAttribute Example/VB/source.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -73,10 +73,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DesignerAttribute" /> class using the name of the type that provides design-time services.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The class you use for the design-time services must implement the <xref:System.ComponentModel.Design.IDesigner> interface.  
-  
+The class you use for the design-time services must implement the <xref:System.ComponentModel.Design.IDesigner> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -103,10 +103,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DesignerAttribute" /> class using the type that provides design-time services.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The class you use for the design-time services must implement the <xref:System.ComponentModel.Design.IDesigner> interface.  
-  
+The class you use for the design-time services must implement the <xref:System.ComponentModel.Design.IDesigner> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -135,12 +135,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DesignerAttribute" /> class using the designer type and the base class for the designer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The class you use for the design-time services must implement the <xref:System.ComponentModel.Design.IDesigner> interface.  
-  
- The `designerBaseTypeName` parameter allows you to attach more than one type of designer for a given class.  
-  
+The class you use for the design-time services must implement the <xref:System.ComponentModel.Design.IDesigner> interface.  
+ 
+The `designerBaseTypeName` parameter allows you to attach more than one type of designer for a given class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,12 +169,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DesignerAttribute" /> class, using the name of the designer class and the base class for the designer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The class you use for the design-time services must implement the <xref:System.ComponentModel.Design.IDesigner> interface.  
-  
- The `designerBaseType` parameter allows you to attach more than one type of designer for a given class.  
-  
+The class you use for the design-time services must implement the <xref:System.ComponentModel.Design.IDesigner> interface.  
+ 
+The `designerBaseType` parameter allows you to attach more than one type of designer for a given class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,12 +203,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DesignerAttribute" /> class using the types of the designer and designer base class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The class you use for the design-time services must implement the <xref:System.ComponentModel.Design.IDesigner> interface.  
-  
- The `designerBaseType` parameter allows you to attach more than one type of designer for a given class.  
-  
+The class you use for the design-time services must implement the <xref:System.ComponentModel.Design.IDesigner> interface.  
+ 
+The `designerBaseType` parameter allows you to attach more than one type of designer for a given class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,10 +333,10 @@
         <value>A unique ID for this attribute type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- It is used by filtering algorithms to identify two attributes that are the same type. For most attributes, this just returns the <xref:System.Type> instance for the attribute. <xref:System.ComponentModel.DesignerAttribute> overrides this to include the type of the designer base type.  
-  
+It is used by filtering algorithms to identify two attributes that are the same type. For most attributes, this just returns the <xref:System.Type> instance for the attribute. <xref:System.ComponentModel.DesignerAttribute> overrides this to include the type of the designer base type.  
+ 
  ]]></format>
         </remarks>
       </Docs>

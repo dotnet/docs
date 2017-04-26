@@ -25,31 +25,31 @@
     <summary>Indicates the progress of an operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Windows.Controls.ProgressBar> control consists of a window that is filled, by default from left to right, as an operation progresses. The control has a range and a current position.  
-  
- <xref:System.Windows.Controls.ProgressBar> overrides the metadata of the <xref:System.Windows.Controls.Primitives.RangeBase.Maximum%2A> property and sets its default to 100. <xref:System.Windows.Controls.ProgressBar> overrides the metadata of the <xref:System.Windows.UIElement.Focusable%2A> property and sets its default to `false`. For more information, see [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md).  
-  
+A <xref:System.Windows.Controls.ProgressBar> control consists of a window that is filled, by default from left to right, as an operation progresses. The control has a range and a current position.  
+ 
+<xref:System.Windows.Controls.ProgressBar> overrides the metadata of the <xref:System.Windows.Controls.Primitives.RangeBase.Maximum%2A> property and sets its default to 100. <xref:System.Windows.Controls.ProgressBar> overrides the metadata of the <xref:System.Windows.UIElement.Focusable%2A> property and sets its default to `false`. For more information, see [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md).  
+ 
 ## Customizing the ProgressBar Control  
- To apply the same property settings to multiple <xref:System.Windows.Controls.ProgressBar> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.ProgressBar>, see [ProgressBar Styles and Templates](~/docs/framework/wpf/controls/progressbar-styles-and-templates.md).  
-  
- Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
+To apply the same property settings to multiple <xref:System.Windows.Controls.ProgressBar> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.ProgressBar>, see [ProgressBar Styles and Templates](~/docs/framework/wpf/controls/progressbar-styles-and-templates.md).  
+ 
+Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ 
 > [!NOTE]
 >  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.ProgressBar> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+ 
   
-   
-  
+ 
 ## Examples  
- This example creates a <xref:System.Windows.Controls.ProgressBar> and uses an animation to simulate the progress of an operation.  
-  
- [!code-xml[StatusBar_Snips#1](~/samples/snippets/csharp/VS_Snippets_Wpf/StatusBar_Snips/CS/Window1.xaml#1)]
- <!-- TODO: review snippet reference [!code-xml[StatusBar_Snips#1](~/samples/snippets/xaml/VS_Snippets_Wpf/StatusBar_Snips/XAML/Window1.xaml#1)]  -->  
-  
- [!code-csharp[ProgressBar#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ProgressBar/CSharp/Window1.xaml.cs#1)]
- [!code-vb[ProgressBar#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ProgressBar/visualbasic/window1.xaml.vb#1)]  
-  
+This example creates a <xref:System.Windows.Controls.ProgressBar> and uses an animation to simulate the progress of an operation.  
+ 
+[!code-xml[StatusBar_Snips#1](~/samples/snippets/csharp/VS_Snippets_Wpf/StatusBar_Snips/CS/Window1.xaml#1)]
+<!-- TODO: review snippet reference [!code-xml[StatusBar_Snips#1](~/samples/snippets/xaml/VS_Snippets_Wpf/StatusBar_Snips/XAML/Window1.xaml#1)]  -->  
+ 
+[!code-csharp[ProgressBar#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ProgressBar/CSharp/Window1.xaml.cs#1)]
+[!code-vb[ProgressBar#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ProgressBar/visualbasic/window1.xaml.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,26 +87,26 @@
           <see langword="false" /> if the <see cref="T:System.Windows.Controls.ProgressBar" /> shows actual values; <see langword="true" /> if the <see cref="T:System.Windows.Controls.ProgressBar" /> shows generic progress. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When this property is `true`, the <xref:System.Windows.Controls.ProgressBar> animates a few bars moving across the <xref:System.Windows.Controls.ProgressBar> in a continuous manner and ignores the <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A> property.  
-  
+When this property is `true`, the <xref:System.Windows.Controls.ProgressBar> animates a few bars moving across the <xref:System.Windows.Controls.ProgressBar> in a continuous manner and ignores the <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A> property.  
+ 
 <a name="dependencyPropertyInfo_IsIndeterminate"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ProgressBar.IsIndeterminateProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example sets the <xref:System.Windows.Controls.ProgressBar.IsIndeterminate%2A> property to `true` to create a <xref:System.Windows.Controls.ProgressBar> that shows generic progress.  
-  
- [!code-csharp[ProgressBar#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ProgressBar/CSharp/Window1.xaml.cs#3)]
- [!code-vb[ProgressBar#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ProgressBar/visualbasic/window1.xaml.vb#3)]  
-  
+The following example sets the <xref:System.Windows.Controls.ProgressBar.IsIndeterminate%2A> property to `true` to create a <xref:System.Windows.Controls.ProgressBar> that shows generic progress.  
+ 
+[!code-csharp[ProgressBar#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ProgressBar/CSharp/Window1.xaml.cs#3)]
+[!code-vb[ProgressBar#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ProgressBar/visualbasic/window1.xaml.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,25 +251,25 @@
         <value>One of the <see cref="T:System.Windows.Controls.Orientation" /> values. The default is <see cref="F:System.Windows.Controls.Orientation.Horizontal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_Orientation"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ProgressBar>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example which creates a <xref:System.Windows.Controls.ProgressBar> shows how to use the <xref:System.Windows.Controls.ProgressBar.Orientation%2A> property to make a horizontal bar.  
-  
- [!code-csharp[ProgressBar#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ProgressBar/CSharp/Window1.xaml.cs#1)]
- [!code-vb[ProgressBar#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ProgressBar/visualbasic/window1.xaml.vb#1)]  
-  
+The following example which creates a <xref:System.Windows.Controls.ProgressBar> shows how to use the <xref:System.Windows.Controls.ProgressBar.Orientation%2A> property to make a horizontal bar.  
+ 
+[!code-csharp[ProgressBar#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ProgressBar/CSharp/Window1.xaml.cs#1)]
+[!code-vb[ProgressBar#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ProgressBar/visualbasic/window1.xaml.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

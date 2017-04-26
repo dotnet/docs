@@ -19,14 +19,14 @@
     <summary>Maintains a collection of <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerVerb" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection> maintains verbs belonging to the same verb group and makes certain that their identifiers are consecutive.  
-  
+ 
+The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection> maintains verbs belonging to the same verb group and makes certain that their identifiers are consecutive.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -63,10 +63,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection" /> class by using the specified generic <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection of verbs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use <xref:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection> to create and manage an <xref:System.Workflow.ComponentModel.Design.ActivityDesignerVerb> collection.  
-  
+Use <xref:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection> to create and manage an <xref:System.Workflow.ComponentModel.Design.ActivityDesignerVerb> collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>

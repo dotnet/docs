@@ -38,85 +38,85 @@
     <summary>Represents a control that can be used to present a collection of items.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Controls.ItemsControl> is a type of <xref:System.Windows.Controls.Control> that can contain multiple items, such as strings, objects, or other elements. The following illustration shows a <xref:System.Windows.Controls.ListBox> control that contains the following different types of items:  
-  
+An <xref:System.Windows.Controls.ItemsControl> is a type of <xref:System.Windows.Controls.Control> that can contain multiple items, such as strings, objects, or other elements. The following illustration shows a <xref:System.Windows.Controls.ListBox> control that contains the following different types of items:  
+ 
 -   A string.  
-  
+ 
 -   A <xref:System.DateTime> object.  
-  
+ 
 -   A <xref:System.Windows.UIElement> object.  
-  
+ 
 -   A <xref:System.Windows.Controls.Panel> control that contains an <xref:System.Windows.Shapes.Ellipse> and a <xref:System.Windows.Controls.TextBlock>.  
-  
- ![ListBox with four types of content](~/add/media/controlcontentmodellistbox2.PNG "ListBox with four types of content")  
+ 
+![ListBox with four types of content](~/add/media/controlcontentmodellistbox2.PNG "ListBox with four types of content")  
 ListBox that contains multiple types of objects  
-  
- Use either the <xref:System.Windows.Controls.ItemsControl.Items%2A> or the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property to specify the collection to use to generate the content of your <xref:System.Windows.Controls.ItemsControl>. You can set the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property to any type that implements <xref:System.Collections.IEnumerable>. <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> is typically used to display a data collection or to bind an <xref:System.Windows.Controls.ItemsControl> to a collection object.  
-  
- If you do not want to use an object that implements <xref:System.Collections.IEnumerable> to populate the <xref:System.Windows.Controls.ItemsControl>, you can add items by using the <xref:System.Windows.Controls.ItemsControl.Items%2A> property. The items in an <xref:System.Windows.Controls.ItemsControl> can have different types. For example, a <xref:System.Windows.Controls.ListBox> can contain one item that is a string and another item that is an <xref:System.Windows.Controls.Image>.  
-  
- When the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property is set, the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection is set to read-only and fixed-size. This means that you cannot add items to the collection directly. When <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> is in use, setting the property to `null` removes the collection and restores usage to <xref:System.Windows.Controls.ItemsControl.Items%2A>, which will be an empty <xref:System.Windows.Controls.ItemCollection>.  
-  
- Each <xref:System.Windows.Controls.ItemsControl> type has a corresponding item container type. The corresponding item container for each <xref:System.Windows.Controls.ItemsControl> appends `Item` to its name. For example, for <xref:System.Windows.Controls.ListBox>, the item containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls. You can explicitly create a container type for each item in the <xref:System.Windows.Controls.ItemsControl>, but it is not necessary. When you do not explicitly create the container type, one is generated that contains a data item in the item collection. For example, if you bind a collection of string objects to the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property of a <xref:System.Windows.Controls.ListBox>, you do not explicitly create <xref:System.Windows.Controls.ListBoxItem> objects, but the <xref:System.Windows.Controls.ListBox> will generate one for each string. You can access a generated item container by using the <xref:System.Windows.Controls.ItemsControl.ItemContainerGenerator%2A> property.  
-  
+ 
+Use either the <xref:System.Windows.Controls.ItemsControl.Items%2A> or the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property to specify the collection to use to generate the content of your <xref:System.Windows.Controls.ItemsControl>. You can set the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property to any type that implements <xref:System.Collections.IEnumerable>. <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> is typically used to display a data collection or to bind an <xref:System.Windows.Controls.ItemsControl> to a collection object.  
+ 
+If you do not want to use an object that implements <xref:System.Collections.IEnumerable> to populate the <xref:System.Windows.Controls.ItemsControl>, you can add items by using the <xref:System.Windows.Controls.ItemsControl.Items%2A> property. The items in an <xref:System.Windows.Controls.ItemsControl> can have different types. For example, a <xref:System.Windows.Controls.ListBox> can contain one item that is a string and another item that is an <xref:System.Windows.Controls.Image>.  
+ 
+When the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property is set, the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection is set to read-only and fixed-size. This means that you cannot add items to the collection directly. When <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> is in use, setting the property to `null` removes the collection and restores usage to <xref:System.Windows.Controls.ItemsControl.Items%2A>, which will be an empty <xref:System.Windows.Controls.ItemCollection>.  
+ 
+Each <xref:System.Windows.Controls.ItemsControl> type has a corresponding item container type. The corresponding item container for each <xref:System.Windows.Controls.ItemsControl> appends `Item` to its name. For example, for <xref:System.Windows.Controls.ListBox>, the item containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls. You can explicitly create a container type for each item in the <xref:System.Windows.Controls.ItemsControl>, but it is not necessary. When you do not explicitly create the container type, one is generated that contains a data item in the item collection. For example, if you bind a collection of string objects to the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property of a <xref:System.Windows.Controls.ListBox>, you do not explicitly create <xref:System.Windows.Controls.ListBoxItem> objects, but the <xref:System.Windows.Controls.ListBox> will generate one for each string. You can access a generated item container by using the <xref:System.Windows.Controls.ItemsControl.ItemContainerGenerator%2A> property.  
+ 
 > [!NOTE]
 >  Certain features of UI Automation do not work correctly when an <xref:System.Windows.Controls.ItemsControl> contains duplicate objects.   If an object appears multiple times, only the first instance appears in the automation tree.   (Two objects **x** and **y** are considered to be duplicates if `Object.Equals(x, y)` returns `true`.)  
 >   
 >  While an object **x** is in use by an <xref:System.Windows.Controls.ItemsControl> the value returned by **x.**`GetHashCode()` must not change.  Changes to this value are unsupported, and lead to unpredictable behavior.  
+ 
+Dependency properties for this control might be set by the control’s default style. If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running. For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+ 
   
- Dependency properties for this control might be set by the control’s default style. If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running. For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
-  
-   
-  
+ 
 ## Examples  
- The following examples demonstrate binding data to an <xref:System.Windows.Controls.ItemsControl>. The first example creates a class called `MyData` that is a simple string collection.  
-  
- [!code-csharp[ControlContentOverviewSnippets#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml.cs#8)]
- [!code-vb[ControlContentOverviewSnippets#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlContentOverviewSnippets/VisualBasic/Window1.xaml.vb#8)]  
-  
- The following example binds the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> object of an <xref:System.Windows.Controls.ItemsControl> to `MyData`.  
-  
- [!code-xml[ControlContentOverviewSnippets#7](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#7)]  
+The following examples demonstrate binding data to an <xref:System.Windows.Controls.ItemsControl>. The first example creates a class called `MyData` that is a simple string collection.  
+ 
+[!code-csharp[ControlContentOverviewSnippets#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml.cs#8)]
+[!code-vb[ControlContentOverviewSnippets#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlContentOverviewSnippets/VisualBasic/Window1.xaml.vb#8)]  
+ 
+The following example binds the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> object of an <xref:System.Windows.Controls.ItemsControl> to `MyData`.  
+ 
+[!code-xml[ControlContentOverviewSnippets#7](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#7)]  
 [!code-xml[ControlContentOverviewSnippets#6](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#6)]  
-  
- [!code-csharp[ControlContentOverviewSnippets#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml.cs#9)]
- [!code-vb[ControlContentOverviewSnippets#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlContentOverviewSnippets/VisualBasic/Window1.xaml.vb#9)]  
-  
- The following illustration shows the <xref:System.Windows.Controls.ListBox> control created in the previous example.  
-  
- ![ListBox](~/add/media/controlcontentmodellistbox1.PNG "ListBox")  
-  
- The following example demonstrates how to populate an <xref:System.Windows.Controls.ItemsControl> by using the <xref:System.Windows.Controls.ItemsControl.Items%2A> property. The example adds the following different types of items to the <xref:System.Windows.Controls.ListBox>:  
-  
+ 
+[!code-csharp[ControlContentOverviewSnippets#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml.cs#9)]
+[!code-vb[ControlContentOverviewSnippets#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlContentOverviewSnippets/VisualBasic/Window1.xaml.vb#9)]  
+ 
+The following illustration shows the <xref:System.Windows.Controls.ListBox> control created in the previous example.  
+ 
+![ListBox](~/add/media/controlcontentmodellistbox1.PNG "ListBox")  
+ 
+The following example demonstrates how to populate an <xref:System.Windows.Controls.ItemsControl> by using the <xref:System.Windows.Controls.ItemsControl.Items%2A> property. The example adds the following different types of items to the <xref:System.Windows.Controls.ListBox>:  
+ 
 -   A string.  
-  
+ 
 -   A <xref:System.DateTime> object.  
-  
+ 
 -   A <xref:System.Windows.UIElement> object.  
-  
+ 
 -   A <xref:System.Windows.Controls.Panel> control that contains other <xref:System.Windows.UIElement> objects.  
-  
- [!code-xml[ControlContentOverviewSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#3)]  
-  
- [!code-csharp[ControlContentOverviewSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml.cs#4)]
- [!code-vb[ControlContentOverviewSnippets#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlContentOverviewSnippets/VisualBasic/Window1.xaml.vb#4)]  
-  
- The following illustration shows the <xref:System.Windows.Controls.ListBox> created in the previous example.  
-  
- ![ListBox with four types of content](~/add/media/controlcontentmodellistbox2.PNG "ListBox with four types of content")  
-  
- The following example illustrates how to use the different styling and templating-related properties that are provided by the <xref:System.Windows.Controls.ItemsControl>. The <xref:System.Windows.Controls.ItemsControl> in this example is bound to a collection of `Task` objects. For demonstration purposes, the styles and templates in this example are all declared inline.  
-  
- [!code-xml[DataTemplatingIntro_snip#ItemsControlProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#itemscontrolproperties)]  
-  
- The following illustration is a screenshot of the example when it is rendered.  
-  
- ![ItemsControl example screenshot](~/add/media/databinding-itemscontrolproperties.png "ItemsControl example screenshot")  
-  
- Two other style-related properties of the <xref:System.Windows.Controls.ItemsControl> that are not shown here are <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> and <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A>.  
-  
+ 
+[!code-xml[ControlContentOverviewSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#3)]  
+ 
+[!code-csharp[ControlContentOverviewSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml.cs#4)]
+[!code-vb[ControlContentOverviewSnippets#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlContentOverviewSnippets/VisualBasic/Window1.xaml.vb#4)]  
+ 
+The following illustration shows the <xref:System.Windows.Controls.ListBox> created in the previous example.  
+ 
+![ListBox with four types of content](~/add/media/controlcontentmodellistbox2.PNG "ListBox with four types of content")  
+ 
+The following example illustrates how to use the different styling and templating-related properties that are provided by the <xref:System.Windows.Controls.ItemsControl>. The <xref:System.Windows.Controls.ItemsControl> in this example is bound to a collection of `Task` objects. For demonstration purposes, the styles and templates in this example are all declared inline.  
+ 
+[!code-xml[DataTemplatingIntro_snip#ItemsControlProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#itemscontrolproperties)]  
+ 
+The following illustration is a screenshot of the example when it is rendered.  
+ 
+![ItemsControl example screenshot](~/add/media/databinding-itemscontrolproperties.png "ItemsControl example screenshot")  
+ 
+Two other style-related properties of the <xref:System.Windows.Controls.ItemsControl> that are not shown here are <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> and <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -200,10 +200,10 @@ ListBox that contains multiple types of objects
         <value>The number of alternating item containers in the <see cref="T:System.Windows.Controls.ItemsControl" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> and <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> properties enable you to specify the appearance for two or more alternating item containers. For example, you can specify alternating background colors for every third item in an <xref:System.Windows.Controls.ItemsControl>.  The <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> is assigned to each item container in the <xref:System.Windows.Controls.ItemsControl>.  <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> begins at 0, increments until it is <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> minus 1, and then restarts at 0. For example, if <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> is 3 and there are seven items in the <xref:System.Windows.Controls.ItemsControl>, the following table lists the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> for each item.  
-  
+The <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> and <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> properties enable you to specify the appearance for two or more alternating item containers. For example, you can specify alternating background colors for every third item in an <xref:System.Windows.Controls.ItemsControl>.  The <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> is assigned to each item container in the <xref:System.Windows.Controls.ItemsControl>.  <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> begins at 0, increments until it is <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> minus 1, and then restarts at 0. For example, if <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> is 3 and there are seven items in the <xref:System.Windows.Controls.ItemsControl>, the following table lists the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> for each item.  
+ 
 |Position of Item in the <xref:System.Windows.Controls.ItemsControl>|<xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>|  
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
 |1|0|  
@@ -213,20 +213,20 @@ ListBox that contains multiple types of objects
 |5|1|  
 |6|2|  
 |7|0|  
+ 
+There are several methods you can use to specify different appearances for the alternating item containers. One method is to bind properties of the items container to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>. You can then use an <xref:System.Windows.Controls.AlternationConverter> to specify which value should be applied to the item container that has a certain <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> value. You can also use triggers to change the value of an item container's property depending on the value of its <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>.  
+ 
   
- There are several methods you can use to specify different appearances for the alternating item containers. One method is to bind properties of the items container to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>. You can then use an <xref:System.Windows.Controls.AlternationConverter> to specify which value should be applied to the item container that has a certain <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> value. You can also use triggers to change the value of an item container's property depending on the value of its <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>.  
-  
-   
-  
+ 
 ## Examples  
- The following example specifies that the <xref:System.Windows.Controls.ListBox> (which inherits from <xref:System.Windows.Controls.ItemsControl>) has alternating item containers (which are of type <xref:System.Windows.Controls.ListBoxItem>) and specifies a different background and foreground for each one.  The example binds the <xref:System.Windows.Controls.Control.Background%2A> and <xref:System.Windows.Controls.Control.Foreground%2A> properties to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> and provides an <xref:System.Windows.Controls.AlternationConverter> for each property.  
-  
- [!code-xml[AlternationIndexSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/AlternationIndexSnippets/CS/Window1.xaml#2)]  
-  
- The following example does the same as the previous example by using <xref:System.Windows.Trigger> objects.  
-  
- [!code-xml[AlternationIndexSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/AlternationIndexSnippets/CS/Window1.xaml#1)]  
-  
+The following example specifies that the <xref:System.Windows.Controls.ListBox> (which inherits from <xref:System.Windows.Controls.ItemsControl>) has alternating item containers (which are of type <xref:System.Windows.Controls.ListBoxItem>) and specifies a different background and foreground for each one.  The example binds the <xref:System.Windows.Controls.Control.Background%2A> and <xref:System.Windows.Controls.Control.Foreground%2A> properties to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> and provides an <xref:System.Windows.Controls.AlternationConverter> for each property.  
+ 
+[!code-xml[AlternationIndexSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/AlternationIndexSnippets/CS/Window1.xaml#2)]  
+ 
+The following example does the same as the previous example by using <xref:System.Windows.Trigger> objects.  
+ 
+[!code-xml[AlternationIndexSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/AlternationIndexSnippets/CS/Window1.xaml#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -305,10 +305,10 @@ ListBox that contains multiple types of objects
         <summary>When overridden in a derived class, undoes the effects of the <see cref="M:System.Windows.Controls.ItemsControl.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base implementation does nothing.  
-  
+The base implementation does nothing.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -381,31 +381,31 @@ ListBox that contains multiple types of objects
         <value>The path to a value on the source object. This can be any path, or an XPath such as "@Name". The default is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is a simple way to define a default template that describes how to display the data objects.  
-  
+This property is a simple way to define a default template that describes how to display the data objects.  
+ 
 <a name="dependencyPropertyInfo_DisplayMemberPath"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ItemsControl.DisplayMemberPathProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, the static resource named `places` is defined as a collection of `Place` objects, in which each `Place` object has a `CityName` property and a `State` property. The prefix `src` is mapped to the namespace where the data source `Places` is defined. The prefixes `scm` and `dat` are mapped to the <xref:System.ComponentModel> and <xref:System.Windows.Data> namespaces, respectively.  
-  
- The following example creates a view of the data collection that is sorted by the city name and grouped by the state.  
-  
- [!code-xml[CollectionViewSource#1](~/samples/snippets/csharp/VS_Snippets_Wpf/CollectionViewSource/CS/window1.xaml#1)]  
-  
- The view can be a binding source, as in the following example. Because of the specified <xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>, each`Place` object is shown with its `CityName` value. If <xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A> is not specified and there is no <xref:System.Windows.DataTemplate>, then the <xref:System.Windows.Controls.ListBox> displays a string representation of each object in the underlying collection (in this case, "SDKSample.Place").  
-  
- [!code-xml[CollectionViewSource#2](~/samples/snippets/csharp/VS_Snippets_Wpf/CollectionViewSource/CS/window1.xaml#2)]  
-  
+In the following example, the static resource named `places` is defined as a collection of `Place` objects, in which each `Place` object has a `CityName` property and a `State` property. The prefix `src` is mapped to the namespace where the data source `Places` is defined. The prefixes `scm` and `dat` are mapped to the <xref:System.ComponentModel> and <xref:System.Windows.Data> namespaces, respectively.  
+ 
+The following example creates a view of the data collection that is sorted by the city name and grouped by the state.  
+ 
+[!code-xml[CollectionViewSource#1](~/samples/snippets/csharp/VS_Snippets_Wpf/CollectionViewSource/CS/window1.xaml#1)]  
+ 
+The view can be a binding source, as in the following example. Because of the specified <xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>, each`Place` object is shown with its `CityName` value. If <xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A> is not specified and there is no <xref:System.Windows.DataTemplate>, then the <xref:System.Windows.Controls.ListBox> displays a string representation of each object in the underlying collection (in this case, "SDKSample.Place").  
+ 
+[!code-xml[CollectionViewSource#2](~/samples/snippets/csharp/VS_Snippets_Wpf/CollectionViewSource/CS/window1.xaml#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -507,10 +507,10 @@ ListBox that contains multiple types of objects
         <returns>The <see cref="T:System.Windows.Controls.ItemsControl" /> that the specified element hosts items for, or <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If <xref:System.Windows.Controls.Panel.IsItemsHost%2A> is set to `true` on `element` in a style or if `element` is a panel created by the <xref:System.Windows.Controls.ItemsPresenter> for an <xref:System.Windows.Controls.ItemsControl>, the <xref:System.Windows.Controls.ItemsControl> is returned; otherwise, `null`.  
-  
+If <xref:System.Windows.Controls.Panel.IsItemsHost%2A> is set to `true` on `element` in a style or if `element` is a panel created by the <xref:System.Windows.Controls.ItemsPresenter> for an <xref:System.Windows.Controls.ItemsControl>, the <xref:System.Windows.Controls.ItemsControl> is returned; otherwise, `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -537,13 +537,13 @@ ListBox that contains multiple types of objects
         <value>A collection of <see cref="T:System.Windows.Controls.GroupStyle" /> objects that define the appearance of each level of groups.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The entry at index 0 describes the top-level groups, the entry at index 1 describes the next level, and so on. If there are more levels of grouping than entries in the collection, the last entry is used for the extra levels.  
-  
+The entry at index 0 describes the top-level groups, the entry at index 1 describes the next level, and so on. If there are more levels of grouping than entries in the collection, the last entry is used for the extra levels.  
+ 
 <a name="xamlPropertyElementUsage_GroupStyle"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
   <object.GroupStyle>  
@@ -552,24 +552,24 @@ ListBox that contains multiple types of objects
 </object>  
   
 ```  
-  
+ 
 <a name="xamlValues_GroupStyle"></a>   
 ## XAML Values  
- *OneOrMoreGroupStyleObjects*  
- One or more <xref:System.Windows.Controls.GroupStyle> objects.  
+*OneOrMoreGroupStyleObjects*  
+One or more <xref:System.Windows.Controls.GroupStyle> objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following examples show an <xref:System.Windows.Controls.ItemsControl> that is bound to an <xref:System.Windows.Data.XmlDataProvider> and the code-behind content that contains the logic to add and remove grouping. When the check box is checked, the content of the <xref:System.Windows.Controls.ItemsControl> is grouped by the `Type` attribute.  
-  
- Each group is of type <xref:System.Windows.Data.CollectionViewGroup>. The <xref:System.Windows.Controls.GroupStyle> <xref:System.Windows.Controls.GroupStyle.HeaderTemplate%2A> is specified so that it appears as a <xref:System.Windows.Controls.TextBlock> that displays the <xref:System.Windows.Data.CollectionViewGroup.Name%2A> of each the group. In this case, the <xref:System.Windows.Data.CollectionViewGroup.Name%2A> is either `Work` or `Home`.  
-  
- [!code-xml[GroupingSample#XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupingSample/CSharp/Window1.xaml#xaml)]  
-  
- [!code-csharp[GroupingSample#Code](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupingSample/CSharp/Window1.xaml.cs#code)]
- [!code-vb[GroupingSample#Code](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GroupingSample/visualbasic/window1.xaml.vb#code)]  
-  
+The following examples show an <xref:System.Windows.Controls.ItemsControl> that is bound to an <xref:System.Windows.Data.XmlDataProvider> and the code-behind content that contains the logic to add and remove grouping. When the check box is checked, the content of the <xref:System.Windows.Controls.ItemsControl> is grouped by the `Type` attribute.  
+ 
+Each group is of type <xref:System.Windows.Data.CollectionViewGroup>. The <xref:System.Windows.Controls.GroupStyle> <xref:System.Windows.Controls.GroupStyle.HeaderTemplate%2A> is specified so that it appears as a <xref:System.Windows.Controls.TextBlock> that displays the <xref:System.Windows.Data.CollectionViewGroup.Name%2A> of each the group. In this case, the <xref:System.Windows.Data.CollectionViewGroup.Name%2A> is either `Work` or `Home`.  
+ 
+[!code-xml[GroupingSample#XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupingSample/CSharp/Window1.xaml#xaml)]  
+ 
+[!code-csharp[GroupingSample#Code](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupingSample/CSharp/Window1.xaml.cs#code)]
+[!code-vb[GroupingSample#Code](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GroupingSample/visualbasic/window1.xaml.vb#code)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -599,17 +599,17 @@ ListBox that contains multiple types of objects
         <value>A method that enables you to provide custom selection logic for a <see cref="T:System.Windows.Controls.GroupStyle" /> to apply to each group in a collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_GroupStyleSelector"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ItemsControl.GroupStyleSelectorProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -657,17 +657,17 @@ ListBox that contains multiple types of objects
           <see langword="true" /> if the items count is greater than 0; otherwise, <see langword="false" />.The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_HasItems"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ItemsControl>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -715,17 +715,17 @@ ListBox that contains multiple types of objects
           <see langword="true" /> if a control is using grouping; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsGrouping"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ItemsControl.IsGroupingProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -769,10 +769,10 @@ ListBox that contains multiple types of objects
           <see langword="true" /> if the item is (or is eligible to be) its own container; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method calls the <xref:System.Windows.Controls.ItemsControl.IsItemItsOwnContainerOverride%2A> method.  
-  
+This method calls the <xref:System.Windows.Controls.ItemsControl.IsItemItsOwnContainerOverride%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -818,17 +818,17 @@ ListBox that contains multiple types of objects
           <see langword="true" /> if text searches are case-sensitive; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the <xref:System.Windows.Controls.ItemsControl.IsTextSearchEnabled%2A> property is set to `true`, the <xref:System.Windows.Controls.ItemsControl.IsTextSearchCaseSensitive%2A> property specifies whether the case determines whether an item is selected in an <xref:System.Windows.Controls.ItemsControl>. For example, if an <xref:System.Windows.Controls.ItemsControl> contain two strings that differ only in case, such as "ITEM" and "item", the first string will always be selected, regardless of the case of the input.  
+When the <xref:System.Windows.Controls.ItemsControl.IsTextSearchEnabled%2A> property is set to `true`, the <xref:System.Windows.Controls.ItemsControl.IsTextSearchCaseSensitive%2A> property specifies whether the case determines whether an item is selected in an <xref:System.Windows.Controls.ItemsControl>. For example, if an <xref:System.Windows.Controls.ItemsControl> contain two strings that differ only in case, such as "ITEM" and "item", the first string will always be selected, regardless of the case of the input.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.ComboBox> that contains the strings, "DOG", "CAT", "dog", and "cat". The example binds the <xref:System.Windows.Controls.ItemsControl.IsTextSearchCaseSensitive%2A> property to the <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property of a <xref:System.Windows.Controls.CheckBox>. If the check box is selected and the user types "dog", the third item in the <xref:System.Windows.Controls.ItemsControl> is selected. If the user unselects the check box and types "dog", the first item is selected because case is not a condition of the search.  
-  
- [!code-xml[ComboBoxProps_snip#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ComboBoxProps_snip/CS/pane1.xaml#4)]  
-  
+The following example creates a <xref:System.Windows.Controls.ComboBox> that contains the strings, "DOG", "CAT", "dog", and "cat". The example binds the <xref:System.Windows.Controls.ItemsControl.IsTextSearchCaseSensitive%2A> property to the <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property of a <xref:System.Windows.Controls.CheckBox>. If the check box is selected and the user types "dog", the third item in the <xref:System.Windows.Controls.ItemsControl> is selected. If the user unselects the check box and types "dog", the first item is selected because case is not a condition of the search.  
+ 
+[!code-xml[ComboBoxProps_snip#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ComboBoxProps_snip/CS/pane1.xaml#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -868,17 +868,17 @@ ListBox that contains multiple types of objects
           <see langword="true" /> if <see cref="T:System.Windows.Controls.TextSearch" /> is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_IsTextSearchEnabled"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ItemsControl>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -922,23 +922,23 @@ ListBox that contains multiple types of objects
         <value>The <see cref="T:System.Windows.Data.BindingGroup" /> that is copied to each item in the <see cref="T:System.Windows.Controls.ItemsControl" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When you set the <xref:System.Windows.Controls.ItemsControl.ItemBindingGroup%2A> property, each item container gets a <xref:System.Windows.Data.BindingGroup> that has the same <xref:System.Windows.Controls.ValidationRule> objects as the <xref:System.Windows.Controls.ItemsControl.ItemBindingGroup%2A>, but the properties that describe the data in the bindings, such as <xref:System.Windows.Data.BindingGroup.Items%2A> and <xref:System.Windows.Data.BindingGroup.BindingExpressions%2A>, are specific to the data for each item in the <xref:System.Windows.Controls.ItemsControl>.  You must access the item container's <xref:System.Windows.FrameworkContentElement.BindingGroup%2A> to perform operations such as validate the data and check for errors on an item.  
+When you set the <xref:System.Windows.Controls.ItemsControl.ItemBindingGroup%2A> property, each item container gets a <xref:System.Windows.Data.BindingGroup> that has the same <xref:System.Windows.Controls.ValidationRule> objects as the <xref:System.Windows.Controls.ItemsControl.ItemBindingGroup%2A>, but the properties that describe the data in the bindings, such as <xref:System.Windows.Data.BindingGroup.Items%2A> and <xref:System.Windows.Data.BindingGroup.BindingExpressions%2A>, are specific to the data for each item in the <xref:System.Windows.Controls.ItemsControl>.  You must access the item container's <xref:System.Windows.FrameworkContentElement.BindingGroup%2A> to perform operations such as validate the data and check for errors on an item.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is part of an application that prompts the user to enter multiple customers and assign a sales representative to each customer, and then checks that the sales representative and the customer belong to the same region. The example sets the <xref:System.Windows.Controls.ItemsControl.ItemBindingGroup%2A> of the <xref:System.Windows.Controls.ItemsControl> so the <xref:System.Windows.Controls.ValidationRule>, `AreasMatch`, will validate each item. The example also creates a <xref:System.Windows.Controls.Label> that displays validation errors. Notice that the <xref:System.Windows.Controls.ContentControl.Content%2A> of the <xref:System.Windows.Controls.Label> is bound to a <xref:System.Windows.Controls.ValidationError> that it gets from the <xref:System.Windows.Controls.Validation.ValidationAdornerSiteFor%2A?displayProperty=fullName> property. The value of <xref:System.Windows.Controls.Validation.ValidationAdornerSiteFor%2A?displayProperty=fullName> is the item container that has the error.  
-  
- [!code-xml[BindingGroupSnippets#ItemBindingGroup](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window2.xaml#itembindinggroup)]  
+The following example is part of an application that prompts the user to enter multiple customers and assign a sales representative to each customer, and then checks that the sales representative and the customer belong to the same region. The example sets the <xref:System.Windows.Controls.ItemsControl.ItemBindingGroup%2A> of the <xref:System.Windows.Controls.ItemsControl> so the <xref:System.Windows.Controls.ValidationRule>, `AreasMatch`, will validate each item. The example also creates a <xref:System.Windows.Controls.Label> that displays validation errors. Notice that the <xref:System.Windows.Controls.ContentControl.Content%2A> of the <xref:System.Windows.Controls.Label> is bound to a <xref:System.Windows.Controls.ValidationError> that it gets from the <xref:System.Windows.Controls.Validation.ValidationAdornerSiteFor%2A?displayProperty=fullName> property. The value of <xref:System.Windows.Controls.Validation.ValidationAdornerSiteFor%2A?displayProperty=fullName> is the item container that has the error.  
+ 
+[!code-xml[BindingGroupSnippets#ItemBindingGroup](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window2.xaml#itembindinggroup)]  
 [!code-xml[BindingGroupSnippets#ValidationAdornerSiteFor](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window2.xaml#validationadornersitefor)]  
-  
- The following example gets the item container and calls <xref:System.Windows.Data.BindingGroup.UpdateSources%2A> on the container's <xref:System.Windows.Data.BindingGroup> to validate the data. You must validate the data by calling a method on the item container's <xref:System.Windows.FrameworkContentElement.BindingGroup%2A>, not on the <xref:System.Windows.Controls.ItemsControl.ItemBindingGroup%2A> of the <xref:System.Windows.Controls.ItemsControl>.  
-  
- [!code-csharp[BindingGroupSnippets#UpdateSources](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window2.xaml.cs#updatesources)]
- [!code-vb[BindingGroupSnippets#UpdateSources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BindingGroupSnippets/visualbasic/window2.xaml.vb#updatesources)]  
-  
+ 
+The following example gets the item container and calls <xref:System.Windows.Data.BindingGroup.UpdateSources%2A> on the container's <xref:System.Windows.Data.BindingGroup> to validate the data. You must validate the data by calling a method on the item container's <xref:System.Windows.FrameworkContentElement.BindingGroup%2A>, not on the <xref:System.Windows.Controls.ItemsControl.ItemBindingGroup%2A> of the <xref:System.Windows.Controls.ItemsControl>.  
+ 
+[!code-csharp[BindingGroupSnippets#UpdateSources](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window2.xaml.cs#updatesources)]
+[!code-vb[BindingGroupSnippets#UpdateSources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BindingGroupSnippets/visualbasic/window2.xaml.vb#updatesources)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -988,12 +988,12 @@ ListBox that contains multiple types of objects
         <value>The <see cref="T:System.Windows.Controls.ItemContainerGenerator" /> that is associated with the control. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Windows.Controls.ItemsControl.ItemContainerGenerator%2A> is responsible for generating the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] for its host, such as an <xref:System.Windows.Controls.ItemsControl>. It maintains the association between the items in the data view of the control and the corresponding <xref:System.Windows.UIElement> objects. Every <xref:System.Windows.Controls.ItemsControl> has an associated item container that contains a data item in the item collection. You can use the <xref:System.Windows.Controls.ItemsControl.ItemContainerGenerator%2A> property to access the item container that is associated with your <xref:System.Windows.Controls.ItemsControl>. For example, if you have a data-bound <xref:System.Windows.Controls.TreeView> control and you want to get a <xref:System.Windows.Controls.TreeViewItem> based on its index or its associated data item, you can use the <xref:System.Windows.Controls.ItemContainerGenerator.ContainerFromIndex%2A?displayProperty=fullName> or the <xref:System.Windows.Controls.ItemContainerGenerator.ContainerFromItem%2A?displayProperty=fullName> method. Alternatively, you can use the <xref:System.Windows.Controls.ItemContainerGenerator.IndexFromContainer%2A?displayProperty=fullName> or the <xref:System.Windows.Controls.ItemContainerGenerator.ItemFromContainer%2A?displayProperty=fullName> method to get the index or data item that is associated with a given generated container element.  
-  
- The <xref:System.Windows.Controls.Primitives.IItemContainerGenerator> interface is also used in advanced scenarios. Typically, advanced applications that have their own implementation of a virtualizing panel call members of the interface.  
-  
+An <xref:System.Windows.Controls.ItemsControl.ItemContainerGenerator%2A> is responsible for generating the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] for its host, such as an <xref:System.Windows.Controls.ItemsControl>. It maintains the association between the items in the data view of the control and the corresponding <xref:System.Windows.UIElement> objects. Every <xref:System.Windows.Controls.ItemsControl> has an associated item container that contains a data item in the item collection. You can use the <xref:System.Windows.Controls.ItemsControl.ItemContainerGenerator%2A> property to access the item container that is associated with your <xref:System.Windows.Controls.ItemsControl>. For example, if you have a data-bound <xref:System.Windows.Controls.TreeView> control and you want to get a <xref:System.Windows.Controls.TreeViewItem> based on its index or its associated data item, you can use the <xref:System.Windows.Controls.ItemContainerGenerator.ContainerFromIndex%2A?displayProperty=fullName> or the <xref:System.Windows.Controls.ItemContainerGenerator.ContainerFromItem%2A?displayProperty=fullName> method. Alternatively, you can use the <xref:System.Windows.Controls.ItemContainerGenerator.IndexFromContainer%2A?displayProperty=fullName> or the <xref:System.Windows.Controls.ItemContainerGenerator.ItemFromContainer%2A?displayProperty=fullName> method to get the index or data item that is associated with a given generated container element.  
+ 
+The <xref:System.Windows.Controls.Primitives.IItemContainerGenerator> interface is also used in advanced scenarios. Typically, advanced applications that have their own implementation of a virtualizing panel call members of the interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1023,71 +1023,71 @@ ListBox that contains multiple types of objects
         <value>The <see cref="T:System.Windows.Style" /> that is applied to the container element generated for each item. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use this property or the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls.  
-  
- The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. To affect the layout of the items, use the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property. To specify the visualization of data objects, use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property. For more information about when to specify an <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
-  
+You use this property or the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls.  
+ 
+The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. To affect the layout of the items, use the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property. To specify the visualization of data objects, use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property. For more information about when to specify an <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
+ 
 <a name="xamlAttributeUsage_ItemContainerStyle"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object ItemContainerStyle="ResourceExtension StyleResourceKey"/>  
 ```  
-  
+ 
 <a name="xamlValues_ItemContainerStyle"></a>   
 ## XAML Values  
- *ResourceExtension*  
- One of the following: `StaticResource`, or `DynamicResource`. Unless the styles themselves contain references to potential run-time references such as system resources or user preferences, `StaticResource` reference to a style is usually recommended for performance.  
-  
- *StyleResourceKey*  
- `x:Key` string value referring to the style being requested as a resource.  
-  
+*ResourceExtension*  
+One of the following: `StaticResource`, or `DynamicResource`. Unless the styles themselves contain references to potential run-time references such as system resources or user preferences, `StaticResource` reference to a style is usually recommended for performance.  
+ 
+*StyleResourceKey*  
+`x:Key` string value referring to the style being requested as a resource.  
+ 
 <a name="dependencyPropertyInfo_ItemContainerStyle"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ItemsControl.ItemContainerStyleProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates how to use this property. Consider the following data-bound <xref:System.Windows.Controls.ListBox>:  
-  
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#UIListBox](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample/CS/window1.xaml#uilistbox)]  -->
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#UIListBox](~/samples/snippets/xaml/VS_Snippets_Wpf/StylingIntroSample/xaml/window1.xaml#uilistbox)]  -->  
-  
- To create a style for the elements that contain the data items, create a <xref:System.Windows.Controls.ListBoxItem> style, as shown in the following example. The style is applied to all <xref:System.Windows.Controls.ListBoxItem> elements within the scope the style is defined in.  
-  
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxItemStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample/CS/window1.xaml#listboxitemstyle)]  -->
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxItemStyle](~/samples/snippets/xaml/VS_Snippets_Wpf/StylingIntroSample/xaml/window1.xaml#listboxitemstyle)]  -->  
-  
- The <xref:System.Windows.Controls.ListBoxItem> is the container element for the <xref:System.Windows.Controls.ListBox> control. Therefore, an alternative to the preceding is to set the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property of the <xref:System.Windows.Controls.ListBox> to the defined style. To do that, give the <xref:System.Windows.Controls.ListBoxItem> style an `x:Key` so it is available as a resource:  
-  
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample_snip#ContainerStyle1](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snip/CSharp/Window1.xaml#containerstyle1)]  -->  
+The following example demonstrates how to use this property. Consider the following data-bound <xref:System.Windows.Controls.ListBox>:  
+ 
+<!-- TODO: review snippet reference [!code-xml[StylingIntroSample#UIListBox](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample/CS/window1.xaml#uilistbox)]  -->
+<!-- TODO: review snippet reference [!code-xml[StylingIntroSample#UIListBox](~/samples/snippets/xaml/VS_Snippets_Wpf/StylingIntroSample/xaml/window1.xaml#uilistbox)]  -->  
+ 
+To create a style for the elements that contain the data items, create a <xref:System.Windows.Controls.ListBoxItem> style, as shown in the following example. The style is applied to all <xref:System.Windows.Controls.ListBoxItem> elements within the scope the style is defined in.  
+ 
+<!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxItemStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample/CS/window1.xaml#listboxitemstyle)]  -->
+<!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxItemStyle](~/samples/snippets/xaml/VS_Snippets_Wpf/StylingIntroSample/xaml/window1.xaml#listboxitemstyle)]  -->  
+ 
+The <xref:System.Windows.Controls.ListBoxItem> is the container element for the <xref:System.Windows.Controls.ListBox> control. Therefore, an alternative to the preceding is to set the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property of the <xref:System.Windows.Controls.ListBox> to the defined style. To do that, give the <xref:System.Windows.Controls.ListBoxItem> style an `x:Key` so it is available as a resource:  
+ 
+<!-- TODO: review snippet reference [!code-xml[StylingIntroSample_snip#ContainerStyle1](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snip/CSharp/Window1.xaml#containerstyle1)]  -->  
 <!-- TODO: review snippet reference [!code-xml[StylingIntroSample_snip#ContainerStyle2](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snip/CSharp/Window1.xaml#containerstyle2)]  -->  
-  
- Next, set the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property to the resource, as in the following example:  
-  
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample_snip#ListBox](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snip/CSharp/Window1.xaml#listbox)]  -->  
-  
- Both of the preceding scenarios produce the same result. However, one of the advantages of making the style available as a resource is that you can reuse the style. Setting the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property explicitly can also provide greater readability.  
-  
- For the complete example, see [Introduction to Styling and Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160010).  
-  
- The following example is designed to illustrate the function of the different styling and templating related properties provided by the <xref:System.Windows.Controls.ItemsControl>. The <xref:System.Windows.Controls.ItemsControl> in this example is bound to a collection of `Task` objects. For demonstration purposes, the styles and templates in this example are all declared inline.  
-  
- [!code-xml[DataTemplatingIntro_snip#ItemsControlProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#itemscontrolproperties)]  
-  
- The following is a screenshot of the example when it is rendered:  
-  
- ![ItemsControl example screenshot](~/add/media/databinding-itemscontrolproperties.png "ItemsControl example screenshot")  
-  
- Two other style-related properties of the <xref:System.Windows.Controls.ItemsControl> that are not shown here are <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> and <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A>.  
-  
+ 
+Next, set the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property to the resource, as in the following example:  
+ 
+<!-- TODO: review snippet reference [!code-xml[StylingIntroSample_snip#ListBox](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snip/CSharp/Window1.xaml#listbox)]  -->  
+ 
+Both of the preceding scenarios produce the same result. However, one of the advantages of making the style available as a resource is that you can reuse the style. Setting the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property explicitly can also provide greater readability.  
+ 
+For the complete example, see [Introduction to Styling and Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160010).  
+ 
+The following example is designed to illustrate the function of the different styling and templating related properties provided by the <xref:System.Windows.Controls.ItemsControl>. The <xref:System.Windows.Controls.ItemsControl> in this example is bound to a collection of `Task` objects. For demonstration purposes, the styles and templates in this example are all declared inline.  
+ 
+[!code-xml[DataTemplatingIntro_snip#ItemsControlProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#itemscontrolproperties)]  
+ 
+The following is a screenshot of the example when it is rendered:  
+ 
+![ItemsControl example screenshot](~/add/media/databinding-itemscontrolproperties.png "ItemsControl example screenshot")  
+ 
+Two other style-related properties of the <xref:System.Windows.Controls.ItemsControl> that are not shown here are <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> and <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1137,20 +1137,20 @@ ListBox that contains multiple types of objects
         <value>A <see cref="T:System.Windows.Controls.StyleSelector" /> object that contains logic that chooses the style to use as the <see cref="P:System.Windows.Controls.ItemsControl.ItemContainerStyle" />. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls. If you have more than one style defined and need to supply logic to choose which one to apply, then you use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property instead of the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property. Note that this property is ignored if the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property is set.  
-  
- The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. To affect the layout of the items, use the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property. To specify the visualization of data objects, use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property. For more information about when to specify an <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
-  
+You use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls. If you have more than one style defined and need to supply logic to choose which one to apply, then you use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property instead of the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property. Note that this property is ignored if the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property is set.  
+ 
+The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. To affect the layout of the items, use the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property. To specify the visualization of data objects, use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property. For more information about when to specify an <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
+ 
 <a name="dependencyPropertyInfo_ItemContainerStyleSelector"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelectorProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1197,88 +1197,88 @@ ListBox that contains multiple types of objects
         <value>The collection that is used to generate the content of the <see cref="T:System.Windows.Controls.ItemsControl" />. The default is an empty collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property may be used to add items to an <xref:System.Windows.Controls.ItemsControl>. Adding a child to an <xref:System.Windows.Controls.ItemsControl> object implicitly adds it to the <xref:System.Windows.Controls.ItemCollection> for the <xref:System.Windows.Controls.ItemsControl> object.  
-  
+This property may be used to add items to an <xref:System.Windows.Controls.ItemsControl>. Adding a child to an <xref:System.Windows.Controls.ItemsControl> object implicitly adds it to the <xref:System.Windows.Controls.ItemCollection> for the <xref:System.Windows.Controls.ItemsControl> object.  
+ 
 > [!NOTE]
 >  This property can only be set in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] via the collection syntax shown, or by accessing the collection object and using its various methods such as `Add`. The property to access the collection object itself is read-only, and the collection itself is read-write.  
-  
- Note that you use either the <xref:System.Windows.Controls.ItemsControl.Items%2A> or the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property to specify the collection that should be used to generate the content of your <xref:System.Windows.Controls.ItemsControl>. When the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property is set, the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection is made read-only and fixed-size.  
-  
- When <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> is in use, setting the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property to `null` removes the collection and restores usage to <xref:System.Windows.Controls.ItemsControl.Items%2A>, which will be an empty <xref:System.Windows.Controls.ItemCollection>.  
-  
+ 
+Note that you use either the <xref:System.Windows.Controls.ItemsControl.Items%2A> or the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property to specify the collection that should be used to generate the content of your <xref:System.Windows.Controls.ItemsControl>. When the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property is set, the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection is made read-only and fixed-size.  
+ 
+When <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> is in use, setting the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property to `null` removes the collection and restores usage to <xref:System.Windows.Controls.ItemsControl.Items%2A>, which will be an empty <xref:System.Windows.Controls.ItemCollection>.  
+ 
 <a name="xamlPropertyElementUsage_Items"></a>   
 ## XAML Property Element Usage  
-  
+ 
 ```  
 <object>  
   OneOrMoreElements  
 </object>  
 ```  
-  
+ 
 <a name="xamlValues_Items"></a>   
 ## XAML Values  
- *OneOrMoreElements*  
- One or more <xref:System.Windows.UIElement> objects.  
+*OneOrMoreElements*  
+One or more <xref:System.Windows.UIElement> objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following examples demonstrate binding data to an <xref:System.Windows.Controls.ItemsControl>. The first example creates a class called `MyData` that is a simple string collection.  
-  
- [!code-csharp[ControlContentOverviewSnippets#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml.cs#8)]
- [!code-vb[ControlContentOverviewSnippets#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlContentOverviewSnippets/VisualBasic/Window1.xaml.vb#8)]  
-  
- The following example binds the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> object of an <xref:System.Windows.Controls.ItemsControl> to `MyData`.  
-  
- [!code-xml[ControlContentOverviewSnippets#7](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#7)]  
+The following examples demonstrate binding data to an <xref:System.Windows.Controls.ItemsControl>. The first example creates a class called `MyData` that is a simple string collection.  
+ 
+[!code-csharp[ControlContentOverviewSnippets#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml.cs#8)]
+[!code-vb[ControlContentOverviewSnippets#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlContentOverviewSnippets/VisualBasic/Window1.xaml.vb#8)]  
+ 
+The following example binds the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> object of an <xref:System.Windows.Controls.ItemsControl> to `MyData`.  
+ 
+[!code-xml[ControlContentOverviewSnippets#7](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#7)]  
 [!code-xml[ControlContentOverviewSnippets#6](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#6)]  
-  
- [!code-csharp[ControlContentOverviewSnippets#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml.cs#9)]
- [!code-vb[ControlContentOverviewSnippets#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlContentOverviewSnippets/VisualBasic/Window1.xaml.vb#9)]  
-  
- The following illustration shows the <xref:System.Windows.Controls.ListBox> control created in the previous example.  
-  
- ![ListBox](~/add/media/controlcontentmodellistbox1.PNG "ListBox")  
-  
- The following example demonstrates how to populate an <xref:System.Windows.Controls.ItemsControl> by using the <xref:System.Windows.Controls.ItemsControl.Items%2A> property. The example adds the following different types of items to the <xref:System.Windows.Controls.ListBox>:  
-  
+ 
+[!code-csharp[ControlContentOverviewSnippets#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml.cs#9)]
+[!code-vb[ControlContentOverviewSnippets#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlContentOverviewSnippets/VisualBasic/Window1.xaml.vb#9)]  
+ 
+The following illustration shows the <xref:System.Windows.Controls.ListBox> control created in the previous example.  
+ 
+![ListBox](~/add/media/controlcontentmodellistbox1.PNG "ListBox")  
+ 
+The following example demonstrates how to populate an <xref:System.Windows.Controls.ItemsControl> by using the <xref:System.Windows.Controls.ItemsControl.Items%2A> property. The example adds the following different types of items to the <xref:System.Windows.Controls.ListBox>:  
+ 
 -   A string.  
-  
+ 
 -   A <xref:System.DateTime> object.  
-  
+ 
 -   A <xref:System.Windows.UIElement> object.  
-  
+ 
 -   A <xref:System.Windows.Controls.Panel> control that contains other <xref:System.Windows.UIElement> objects.  
-  
- [!code-xml[ControlContentOverviewSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#3)]  
-  
- [!code-csharp[ControlContentOverviewSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml.cs#4)]
- [!code-vb[ControlContentOverviewSnippets#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlContentOverviewSnippets/VisualBasic/Window1.xaml.vb#4)]  
-  
- The following illustration shows the <xref:System.Windows.Controls.ListBox> created in the previous example.  
-  
- ![ListBox with four types of content](~/add/media/controlcontentmodellistbox2.PNG "ListBox with four types of content")  
-  
- Note that the <xref:System.Windows.Controls.ItemCollection> is a view, so you can use the view-related functionalities such as sorting, filtering, and grouping.  
-  
- For example, if you have an instance of a <xref:System.Windows.Controls.ListBox>, `myListBox`, you can do the following to sort the content of the <xref:System.Windows.Controls.ListBox>. In this example, `Content` is the name of the property to sort by.  
-  
- [!code-csharp[ListBoxSort_snip#Sort](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxSort_snip/CSharp/Window1.xaml.cs#sort)]
- [!code-vb[ListBoxSort_snip#Sort](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxSort_snip/visualbasic/window1.xaml.vb#sort)]  
-  
- Note that when you do this, if the control is bound to a collection directly, the default collection view is used, and the sort criteria are applied to all other controls bound to the same collection directly. The view will not be the default view if  the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property is bound to a <xref:System.Windows.Data.CollectionViewSource>.  
-  
- If your <xref:System.Windows.Controls.ItemsControl> is bound directly to a collection, then you can do the following to get the default view:  
-  
- [!code-csharp[GroupingSample#MyView](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupingSample/CSharp/Window1.xaml.cs#myview)]
- [!code-vb[GroupingSample#MyView](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GroupingSample/visualbasic/window1.xaml.vb#myview)]  
+ 
+[!code-xml[ControlContentOverviewSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#3)]  
+ 
+[!code-csharp[ControlContentOverviewSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml.cs#4)]
+[!code-vb[ControlContentOverviewSnippets#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlContentOverviewSnippets/VisualBasic/Window1.xaml.vb#4)]  
+ 
+The following illustration shows the <xref:System.Windows.Controls.ListBox> created in the previous example.  
+ 
+![ListBox with four types of content](~/add/media/controlcontentmodellistbox2.PNG "ListBox with four types of content")  
+ 
+Note that the <xref:System.Windows.Controls.ItemCollection> is a view, so you can use the view-related functionalities such as sorting, filtering, and grouping.  
+ 
+For example, if you have an instance of a <xref:System.Windows.Controls.ListBox>, `myListBox`, you can do the following to sort the content of the <xref:System.Windows.Controls.ListBox>. In this example, `Content` is the name of the property to sort by.  
+ 
+[!code-csharp[ListBoxSort_snip#Sort](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxSort_snip/CSharp/Window1.xaml.cs#sort)]
+[!code-vb[ListBoxSort_snip#Sort](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxSort_snip/visualbasic/window1.xaml.vb#sort)]  
+ 
+Note that when you do this, if the control is bound to a collection directly, the default collection view is used, and the sort criteria are applied to all other controls bound to the same collection directly. The view will not be the default view if  the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property is bound to a <xref:System.Windows.Data.CollectionViewSource>.  
+ 
+If your <xref:System.Windows.Controls.ItemsControl> is bound directly to a collection, then you can do the following to get the default view:  
+ 
+[!code-csharp[GroupingSample#MyView](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupingSample/CSharp/Window1.xaml.cs#myview)]
+[!code-vb[GroupingSample#MyView](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GroupingSample/visualbasic/window1.xaml.vb#myview)]  
 [!code-csharp[GroupingSample#GetView](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupingSample/CSharp/Window1.xaml.cs#getview)]
 [!code-vb[GroupingSample#GetView](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GroupingSample/visualbasic/window1.xaml.vb#getview)]  
-  
- Alternately, you can specify filtering, sorting, and grouping criteria in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] or code by using a <xref:System.Windows.Data.CollectionViewSource>.  
-  
+ 
+Alternately, you can specify filtering, sorting, and grouping criteria in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] or code by using a <xref:System.Windows.Data.CollectionViewSource>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1327,39 +1327,39 @@ ListBox that contains multiple types of objects
         <value>An <see cref="T:System.Windows.Controls.ItemsPanelTemplate" /> that defines the panel to use for the layout of the items. The default value for the <see cref="T:System.Windows.Controls.ItemsControl" /> is an <see cref="T:System.Windows.Controls.ItemsPanelTemplate" /> that specifies a <see cref="T:System.Windows.Controls.StackPanel" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For the <xref:System.Windows.Controls.ListBox>, the default <xref:System.Windows.Controls.ItemsPanelTemplate> specifies the <xref:System.Windows.Controls.VirtualizingStackPanel>. For <xref:System.Windows.Controls.MenuItem>, the default uses <xref:System.Windows.Controls.WrapPanel>. For <xref:System.Windows.Controls.Primitives.StatusBar>, the default uses <xref:System.Windows.Controls.DockPanel>.  
-  
- To affect the layout of the items in an <xref:System.Windows.Controls.ItemsControl>, you use this property to specify a <xref:System.Windows.Controls.ItemsPanelTemplate>.  
-  
- The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. You use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property or the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property. To specify the visualization of the data objects, use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or the <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property. For more information, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
-  
+For the <xref:System.Windows.Controls.ListBox>, the default <xref:System.Windows.Controls.ItemsPanelTemplate> specifies the <xref:System.Windows.Controls.VirtualizingStackPanel>. For <xref:System.Windows.Controls.MenuItem>, the default uses <xref:System.Windows.Controls.WrapPanel>. For <xref:System.Windows.Controls.Primitives.StatusBar>, the default uses <xref:System.Windows.Controls.DockPanel>.  
+ 
+To affect the layout of the items in an <xref:System.Windows.Controls.ItemsControl>, you use this property to specify a <xref:System.Windows.Controls.ItemsPanelTemplate>.  
+ 
+The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. You use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property or the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property. To specify the visualization of the data objects, use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or the <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property. For more information, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
+ 
 <a name="dependencyPropertyInfo_ItemsPanel"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ItemsControl.ItemsPanelProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- To create a horizontal <xref:System.Windows.Controls.ListBox>, you can create a template that specifies a horizontal <xref:System.Windows.Controls.StackPanel> and set it as the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. The following example shows a <xref:System.Windows.Controls.ListBox> <xref:System.Windows.Style> that creates a horizontal <xref:System.Windows.Controls.ListBox>.  
-  
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample_snip#ItemsPanel](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snip/CSharp/Window1.xaml#itemspanel)]  -->  
-  
- The following example uses a <xref:System.Windows.Controls.ControlTemplate> to create a horizontal <xref:System.Windows.Controls.ListBox> that has rounded corners. In this example, instead of setting the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property as in previous example, the horizontal <xref:System.Windows.Controls.StackPanel> is specified within the <xref:System.Windows.Controls.ControlTemplate>. The <xref:System.Windows.Controls.Panel.IsItemsHost%2A> property is set to `true` on the <xref:System.Windows.Controls.StackPanel>, indicating that the generated items should go in the panel. When you specify it this way, the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> cannot be replaced by the user of the control without using a <xref:System.Windows.Controls.ControlTemplate>. Therefore, only do this if you know you would not want the panel to be replaced without the use of a template.  
-  
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample/CS/window1.xaml#listboxct)]  -->
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/xaml/VS_Snippets_Wpf/StylingIntroSample/xaml/window1.xaml#listboxct)]  -->  
-  
- Alternatively, you can do the following to achieve the same results. In this case, the <xref:System.Windows.Controls.ItemsPresenter> creates the panel for the layout of the items based on what is specified by the <xref:System.Windows.Controls.ItemsPanelTemplate>.  
-  
- [!code-xml[StyleOvw01#ItemsPanelTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#itemspaneltemplate)]
- <!-- TODO: review snippet reference [!code-xml[StyleOvw01#ItemsPanelTemplate](~/samples/snippets/xaml/VS_Snippets_Wpf/StyleOvw01/XAML/Page1.xaml#itemspaneltemplate)]  -->  
-  
+To create a horizontal <xref:System.Windows.Controls.ListBox>, you can create a template that specifies a horizontal <xref:System.Windows.Controls.StackPanel> and set it as the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. The following example shows a <xref:System.Windows.Controls.ListBox> <xref:System.Windows.Style> that creates a horizontal <xref:System.Windows.Controls.ListBox>.  
+ 
+<!-- TODO: review snippet reference [!code-xml[StylingIntroSample_snip#ItemsPanel](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snip/CSharp/Window1.xaml#itemspanel)]  -->  
+ 
+The following example uses a <xref:System.Windows.Controls.ControlTemplate> to create a horizontal <xref:System.Windows.Controls.ListBox> that has rounded corners. In this example, instead of setting the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property as in previous example, the horizontal <xref:System.Windows.Controls.StackPanel> is specified within the <xref:System.Windows.Controls.ControlTemplate>. The <xref:System.Windows.Controls.Panel.IsItemsHost%2A> property is set to `true` on the <xref:System.Windows.Controls.StackPanel>, indicating that the generated items should go in the panel. When you specify it this way, the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> cannot be replaced by the user of the control without using a <xref:System.Windows.Controls.ControlTemplate>. Therefore, only do this if you know you would not want the panel to be replaced without the use of a template.  
+ 
+<!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample/CS/window1.xaml#listboxct)]  -->
+<!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/xaml/VS_Snippets_Wpf/StylingIntroSample/xaml/window1.xaml#listboxct)]  -->  
+ 
+Alternatively, you can do the following to achieve the same results. In this case, the <xref:System.Windows.Controls.ItemsPresenter> creates the panel for the layout of the items based on what is specified by the <xref:System.Windows.Controls.ItemsPanelTemplate>.  
+ 
+[!code-xml[StyleOvw01#ItemsPanelTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#itemspaneltemplate)]
+<!-- TODO: review snippet reference [!code-xml[StyleOvw01#ItemsPanelTemplate](~/samples/snippets/xaml/VS_Snippets_Wpf/StyleOvw01/XAML/Page1.xaml#itemspaneltemplate)]  -->  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1406,39 +1406,39 @@ ListBox that contains multiple types of objects
         <value>A collection that is used to generate the content of the <see cref="T:System.Windows.Controls.ItemsControl" />. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- **Content Model:** This property may be used to add items to an <xref:System.Windows.Controls.ItemsControl>.  
-  
- A common scenario is to use an <xref:System.Windows.Controls.ItemsControl> such as a <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.ListView>, or <xref:System.Windows.Controls.TreeView> to display a data collection, or to bind an <xref:System.Windows.Controls.ItemsControl> to a collection object. To bind an <xref:System.Windows.Controls.ItemsControl> to a collection object, use the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property. Note that the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property supports <xref:System.Windows.Data.BindingMode> binding by default.  
-  
- When the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property is set, the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection is made read-only and fixed-size.  
-  
- When <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> is in use, setting the property to `null` removes the collection and restores usage to <xref:System.Windows.Controls.ItemsControl.Items%2A>, which will be an empty <xref:System.Windows.Controls.ItemCollection>. When <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> is not in use, the value of this property is `null`, and setting it to `null` has no effect.  
-  
+**Content Model:** This property may be used to add items to an <xref:System.Windows.Controls.ItemsControl>.  
+ 
+A common scenario is to use an <xref:System.Windows.Controls.ItemsControl> such as a <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.ListView>, or <xref:System.Windows.Controls.TreeView> to display a data collection, or to bind an <xref:System.Windows.Controls.ItemsControl> to a collection object. To bind an <xref:System.Windows.Controls.ItemsControl> to a collection object, use the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property. Note that the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property supports <xref:System.Windows.Data.BindingMode> binding by default.  
+ 
+When the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property is set, the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection is made read-only and fixed-size.  
+ 
+When <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> is in use, setting the property to `null` removes the collection and restores usage to <xref:System.Windows.Controls.ItemsControl.Items%2A>, which will be an empty <xref:System.Windows.Controls.ItemCollection>. When <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> is not in use, the value of this property is `null`, and setting it to `null` has no effect.  
+ 
 > [!NOTE]
 >  In most cases you do not need to implement your own collections. Instead, consider using <xref:System.Collections.ObjectModel.ObservableCollection%601> or other existing collections. For more information, see the "Collection Objects Used as Binding Source" in [Binding Sources Overview](~/docs/framework/wpf/data/binding-sources-overview.md).  
-  
+ 
 <a name="xamlAttributeUsage_ItemsSource"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object ItemsSource="bindingDeclaration"/>  
 ```  
-  
+ 
 <a name="xamlValues_ItemsSource"></a>   
 ## XAML Values  
- *bindingDeclaration*  
- A <xref:System.Windows.Data.Binding> declaration. See [Binding Markup Extension](~/docs/framework/wpf/advanced/binding-markup-extension.md) for more information.  
-  
+*bindingDeclaration*  
+A <xref:System.Windows.Data.Binding> declaration. See [Binding Markup Extension](~/docs/framework/wpf/advanced/binding-markup-extension.md) for more information.  
+ 
 <a name="dependencyPropertyInfo_ItemsSource"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ItemsControl.ItemsSourceProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1482,17 +1482,17 @@ ListBox that contains multiple types of objects
         <value>A composite string that specifies how to format the items in the <see cref="T:System.Windows.Controls.ItemsControl" /> if they are displayed as strings.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Windows.Controls.ItemsControl.ItemStringFormat%2A> can be a predefined, composite, or custom string format. For more information about string formats, see [Formatting Types](~/docs/standard/base-types/formatting-types.md). If you set the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> of a <xref:System.Windows.Controls.ItemsControl>, the <xref:System.Windows.Controls.ItemsControl.ItemStringFormat%2A> property is ignored.  
+<xref:System.Windows.Controls.ItemsControl.ItemStringFormat%2A> can be a predefined, composite, or custom string format. For more information about string formats, see [Formatting Types](~/docs/standard/base-types/formatting-types.md). If you set the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> of a <xref:System.Windows.Controls.ItemsControl>, the <xref:System.Windows.Controls.ItemsControl.ItemStringFormat%2A> property is ignored.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example uses the <xref:System.Windows.Controls.ItemsControl.ItemStringFormat%2A> to specify the format of a list of <xref:System.DateTime> objects.  
-  
- [!code-xml[ContentStringSnippets#ItemsControl](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentStringSnippets/CSharp/Window1.xaml#itemscontrol)]  
-  
+The following example uses the <xref:System.Windows.Controls.ItemsControl.ItemStringFormat%2A> to specify the format of a list of <xref:System.DateTime> objects.  
+ 
+[!code-xml[ContentStringSnippets#ItemsControl](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentStringSnippets/CSharp/Window1.xaml#itemscontrol)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1536,68 +1536,68 @@ ListBox that contains multiple types of objects
         <value>A <see cref="T:System.Windows.DataTemplate" /> that specifies the visualization of the data objects. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> to specify the visualization of the data objects. If your <xref:System.Windows.Controls.ItemsControl> is bound to a collection object and you do not provide specific display instructions using a <xref:System.Windows.DataTemplate>, the resulting [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] of each item is a string representation of each object in the underlying collection.  
-  
- When you set an <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> on an <xref:System.Windows.Controls.ItemsControl>, the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] is generated as follows (using the <xref:System.Windows.Controls.ListBox> as an example):  
-  
+You use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> to specify the visualization of the data objects. If your <xref:System.Windows.Controls.ItemsControl> is bound to a collection object and you do not provide specific display instructions using a <xref:System.Windows.DataTemplate>, the resulting [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] of each item is a string representation of each object in the underlying collection.  
+ 
+When you set an <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> on an <xref:System.Windows.Controls.ItemsControl>, the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] is generated as follows (using the <xref:System.Windows.Controls.ListBox> as an example):  
+ 
 1.  During content generation, the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> initiates a request for the <xref:System.Windows.Controls.ItemsControl.ItemContainerGenerator%2A> to create a container for each data item. For <xref:System.Windows.Controls.ListBox>, the container is a <xref:System.Windows.Controls.ListBoxItem>. The generator calls back into the <xref:System.Windows.Controls.ItemsControl> to prepare the container.  
-  
+ 
 2.  Part of the preparation involves the copying of the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> of the <xref:System.Windows.Controls.ListBox> to be the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> of the <xref:System.Windows.Controls.ListBoxItem>.  
-  
+ 
 3.  Similar to all <xref:System.Windows.Controls.ContentControl> types, the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.ListBoxItem> contains a <xref:System.Windows.Controls.ContentPresenter>. When the template is applied, it creates a <xref:System.Windows.Controls.ContentPresenter> whose <xref:System.Windows.Controls.ContentPresenter.ContentTemplate%2A> is bound to the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> of the <xref:System.Windows.Controls.ListBoxItem>.  
-  
+ 
 4.  Finally, the <xref:System.Windows.Controls.ContentPresenter> applies that <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> to itself, and that creates the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  
-  
- If you have more than one <xref:System.Windows.DataTemplate> defined and you want to supply logic to programmatically choose and apply a <xref:System.Windows.DataTemplate>, use the <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property.  
-  
- The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. Use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property or the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls. To affect the layout of the items, use the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property.  
-  
- For more information, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
-  
+ 
+If you have more than one <xref:System.Windows.DataTemplate> defined and you want to supply logic to programmatically choose and apply a <xref:System.Windows.DataTemplate>, use the <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property.  
+ 
+The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. Use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property or the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls. To affect the layout of the items, use the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property.  
+ 
+For more information, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
+ 
 <a name="xamlAttributeUsage_ItemTemplate"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object ItemTemplate=" ResourceExtension TemplateResourceKey"/>  
 ```  
-  
+ 
 <a name="xamlValues_ItemTemplate"></a>   
 ## XAML Values  
- *ResourceExtension*  
- One of the following: [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md), or [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md). Unless the styles themselves contain references to potential run-time references such as system resources or user preferences, [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md) reference to a style is usually recommended for performance.  
-  
- *TemplateResourceKey*  
- [x:Key Directive](~/docs/framework/xaml-services/x-key-directive.md) string value referring to the template being requested as a resource.  
-  
+*ResourceExtension*  
+One of the following: [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md), or [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md). Unless the styles themselves contain references to potential run-time references such as system resources or user preferences, [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md) reference to a style is usually recommended for performance.  
+ 
+*TemplateResourceKey*  
+[x:Key Directive](~/docs/framework/xaml-services/x-key-directive.md) string value referring to the template being requested as a resource.  
+ 
 <a name="dependencyPropertyInfo_ItemTemplate"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ItemsControl.ItemTemplateProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows how to create a <xref:System.Windows.DataTemplate> inline. The <xref:System.Windows.DataTemplate> specifies that each data item appears as three <xref:System.Windows.Controls.TextBlock> elements within a <xref:System.Windows.Controls.StackPanel>. In this example, the data object is a class called `Task`. Note that each <xref:System.Windows.Controls.TextBlock> element in this template is bound to a property of the `Task` class.  
-  
- [!code-xml[DataTemplatingIntro_snip#Inline](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#inline)]  
-  
- It is more common to define a <xref:System.Windows.DataTemplate> in the resources section so it can be a reusable object, as in the following example:  
-  
- [!code-xml[DataTemplatingIntro_snip#R1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r1)]  
+The following example shows how to create a <xref:System.Windows.DataTemplate> inline. The <xref:System.Windows.DataTemplate> specifies that each data item appears as three <xref:System.Windows.Controls.TextBlock> elements within a <xref:System.Windows.Controls.StackPanel>. In this example, the data object is a class called `Task`. Note that each <xref:System.Windows.Controls.TextBlock> element in this template is bound to a property of the `Task` class.  
+ 
+[!code-xml[DataTemplatingIntro_snip#Inline](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#inline)]  
+ 
+It is more common to define a <xref:System.Windows.DataTemplate> in the resources section so it can be a reusable object, as in the following example:  
+ 
+[!code-xml[DataTemplatingIntro_snip#R1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r1)]  
 [!code-xml[DataTemplatingIntro_snip#AsResource](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#asresource)]  
 [!code-xml[DataTemplatingIntro_snip#R2](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r2)]  
-  
- Now you can use `myTaskTemplate` as a resource, as in the following example:  
-  
- [!code-xml[DataTemplatingIntro_snip#MyTaskTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#mytasktemplate)]  
-  
- For the complete sample, see [Introduction to Data Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160009).  
-  
+ 
+Now you can use `myTaskTemplate` as a resource, as in the following example:  
+ 
+[!code-xml[DataTemplatingIntro_snip#MyTaskTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#mytasktemplate)]  
+ 
+For the complete sample, see [Introduction to Data Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160009).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1644,55 +1644,55 @@ ListBox that contains multiple types of objects
         <value>A custom <see cref="T:System.Windows.Controls.DataTemplateSelector" /> object that provides logic and returns a <see cref="T:System.Windows.DataTemplate" />. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> to specify the visualization of the data objects. If you have more than one template defined and want to supply logic to return a template to use, then you use this property. Note that this property is ignored if <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> is set.  
-  
- The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. Use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property or the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls. To affect the layout of the items, use the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property.  
-  
- For more information, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
-  
+You use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> to specify the visualization of the data objects. If you have more than one template defined and want to supply logic to return a template to use, then you use this property. Note that this property is ignored if <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> is set.  
+ 
+The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. Use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property or the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls. To affect the layout of the items, use the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property.  
+ 
+For more information, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
+ 
 <a name="xamlAttributeUsage_ItemTemplateSelector"></a>   
 ## XAML Attribute Usage  
-  
+ 
 ```  
 <object ItemTemplateSelector="ResourceExtension SelectorResourceKey"/>  
 ```  
-  
+ 
 <a name="xamlValues_ItemTemplateSelector"></a>   
 ## XAML Values  
- *ResourceExtension*  
- One of the following: `StaticResource`, or `DynamicResource`. Unless the styles themselves contain references to potential run-time references such as system resources or user preferences, `StaticResource` reference to a style is usually recommended for performance.  
-  
- *SelectorResourceKey*  
- `x:Key` string value referring to the selector being requested as a resource.  
-  
+*ResourceExtension*  
+One of the following: `StaticResource`, or `DynamicResource`. Unless the styles themselves contain references to potential run-time references such as system resources or user preferences, `StaticResource` reference to a style is usually recommended for performance.  
+ 
+*SelectorResourceKey*  
+`x:Key` string value referring to the selector being requested as a resource.  
+ 
 <a name="dependencyPropertyInfo_ItemTemplateSelector"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.ItemsControl.ItemTemplateSelectorProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, the `auctionItemDataTemplateSelector` resource name (corresponding to an `AuctionItemDataTemplateSelector` class) is assigned to the <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property of the <xref:System.Windows.Controls.ItemsControl>.  
-  
- [!code-xml[DataTemplateSelector#ItemTemplateSelector](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplateSelector/CSharp/Window1.xaml#itemtemplateselector)]  
-  
- The following example shows the implementation of the `AuctionItemDataTemplateSelector` class with an override of the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A>method:  
-  
- [!code-csharp[DataTemplateSelector#DataTemplateSelector](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplateSelector/CSharp/AuctionItemDataTemplateSelector.cs#datatemplateselector)]
- [!code-vb[DataTemplateSelector#DataTemplateSelector](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataTemplateSelector/visualbasic/auctionitemdatatemplateselector.vb#datatemplateselector)]  
-  
- In this case, within the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method of the class, there is logic to return the appropriate template based on the value of the `SpecialFeatures` property of the `item` object passed. The template to return is found in the resources of the enveloping <xref:System.Windows.Window> element.  
-  
- When you set the <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property, the <xref:System.Windows.Controls.ItemsControl> is directed to automatically call the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method of `AuctionItemDataTemplateSelector` for each of the items in the collection to which the <xref:System.Windows.Controls.ItemsControl> is bound. The call passes the data item as an object. The <xref:System.Windows.DataTemplate> that is returned by the method is then used to display that data item.  
-  
- For another example, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
-  
+In the following example, the `auctionItemDataTemplateSelector` resource name (corresponding to an `AuctionItemDataTemplateSelector` class) is assigned to the <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property of the <xref:System.Windows.Controls.ItemsControl>.  
+ 
+[!code-xml[DataTemplateSelector#ItemTemplateSelector](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplateSelector/CSharp/Window1.xaml#itemtemplateselector)]  
+ 
+The following example shows the implementation of the `AuctionItemDataTemplateSelector` class with an override of the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A>method:  
+ 
+[!code-csharp[DataTemplateSelector#DataTemplateSelector](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplateSelector/CSharp/AuctionItemDataTemplateSelector.cs#datatemplateselector)]
+[!code-vb[DataTemplateSelector#DataTemplateSelector](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataTemplateSelector/visualbasic/auctionitemdatatemplateselector.vb#datatemplateselector)]  
+ 
+In this case, within the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method of the class, there is logic to return the appropriate template based on the value of the `SpecialFeatures` property of the `item` object passed. The template to return is found in the resources of the enveloping <xref:System.Windows.Window> element.  
+ 
+When you set the <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property, the <xref:System.Windows.Controls.ItemsControl> is directed to automatically call the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method of `AuctionItemDataTemplateSelector` for each of the items in the collection to which the <xref:System.Windows.Controls.ItemsControl> is bound. The call passes the data item as an object. The <xref:System.Windows.DataTemplate> that is returned by the method is then used to display that data item.  
+ 
+For another example, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2070,10 +2070,10 @@ ListBox that contains multiple types of objects
         <summary>Prepares the specified element to display the specified item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Preparing the element may involve applying styles, setting bindings, and so on.  
-  
+Preparing the element may involve applying styles, setting bindings, and so on.  
+ 
  ]]></format>
         </remarks>
       </Docs>

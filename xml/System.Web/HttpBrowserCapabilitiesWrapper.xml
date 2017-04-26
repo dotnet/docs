@@ -19,10 +19,10 @@
     <summary>Encapsulates the HTTP intrinsic object that enables the server to gather information about the capabilities of the browser that has made the current request.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.HttpBrowserCapabilitiesWrapper> class derives from the <xref:System.Web.HttpBrowserCapabilitiesBase> class and serves as a wrapper for the <xref:System.Web.HttpBrowserCapabilities> class. This class exposes the functionality of the <xref:System.Web.HttpBrowserCapabilities> class and exposes the <xref:System.Web.HttpBrowserCapabilitiesBase> type. The <xref:System.Web.HttpBrowserCapabilitiesBase> class enables you to replace the original implementation of the <xref:System.Web.HttpBrowserCapabilities> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
-  
+The <xref:System.Web.HttpBrowserCapabilitiesWrapper> class derives from the <xref:System.Web.HttpBrowserCapabilitiesBase> class and serves as a wrapper for the <xref:System.Web.HttpBrowserCapabilities> class. This class exposes the functionality of the <xref:System.Web.HttpBrowserCapabilities> class and exposes the <xref:System.Web.HttpBrowserCapabilitiesBase> type. The <xref:System.Web.HttpBrowserCapabilitiesBase> class enables you to replace the original implementation of the <xref:System.Web.HttpBrowserCapabilities> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -922,10 +922,10 @@
         <value>The version of JScript that the browser supports.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For version number of ECMAScript supported by the browser, see <xref:System.Web.HttpBrowserCapabilitiesWrapper.EcmaScriptVersion%2A>.  
-  
+For version number of ECMAScript supported by the browser, see <xref:System.Web.HttpBrowserCapabilitiesWrapper.EcmaScriptVersion%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

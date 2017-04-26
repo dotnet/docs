@@ -18,10 +18,10 @@
     <summary>An enumeration used to define access rights to data that is deployed by [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example sets read-only access to all data deployed by the `AccountingService`.  
-  
+The following example sets read-only access to all data deployed by the `AccountingService`.  
+ 
 ```  
 namespace AccountingServiceWebApp  
 {  
@@ -35,7 +35,7 @@ namespace AccountingServiceWebApp
 }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

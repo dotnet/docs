@@ -19,14 +19,14 @@
     <summary>Implements a markup extension that enables <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> creation. A <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> does not have an embedded profile, the profile instead being based on source and destination values.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is a markup extension implementation. Markup extension classes exist mainly to provide infrastructure support for some aspect of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation, and the members exposed by a markup extension are not typically called from user code. This extension supports the [ColorConvertedBitmap Markup Extension](~/docs/framework/wpf/advanced/colorconvertedbitmap-markup-extension.md) usage from [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
-  
+This class is a markup extension implementation. Markup extension classes exist mainly to provide infrastructure support for some aspect of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation, and the members exposed by a markup extension are not typically called from user code. This extension supports the [ColorConvertedBitmap Markup Extension](~/docs/framework/wpf/advanced/colorconvertedbitmap-markup-extension.md) usage from [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ 
 <a name="xamlTextUsage_ColorConvertedBitmapExtension"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [ColorConvertedBitmap Markup Extension](~/docs/framework/wpf/advanced/colorconvertedbitmap-markup-extension.md).  
-  
+For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [ColorConvertedBitmap Markup Extension](~/docs/framework/wpf/advanced/colorconvertedbitmap-markup-extension.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -45,10 +45,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.ColorConvertedBitmapExtension" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is not used.  
-  
+This constructor is not used.  
+ 
  ]]></format>
         </remarks>
       </Docs>

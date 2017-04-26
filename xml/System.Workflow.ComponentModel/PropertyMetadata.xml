@@ -19,12 +19,12 @@
     <summary>Represents the behavior of a dependency property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -277,10 +277,10 @@
         <value>An object representing the default value for this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property can be a null reference (`Nothing` in Visual Basic).  
-  
+This property can be a null reference (`Nothing` in Visual Basic).  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Attempting to set this property when <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.IsSealed" /> is <see langword="true." /></exception>
@@ -421,18 +421,18 @@
           <see langword="true" /> if the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> is immutable; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the PropertyMetadata.IsSealed is equal to `true`, the following operations cause a <xref:System.InvalidOperationException> to be raised:  
-  
+When the PropertyMetadata.IsSealed is equal to `true`, the following operations cause a <xref:System.InvalidOperationException> to be raised:  
+ 
 -   Attempting to set the <xref:System.Workflow.ComponentModel.PropertyMetadata.DefaultValue%2A>.  
-  
+ 
 -   Attempting to set the <xref:System.Workflow.ComponentModel.PropertyMetadata.Options%2A>.  
-  
+ 
 -   Attempting to set the <xref:System.Workflow.ComponentModel.PropertyMetadata.SetValueOverride%2A>.  
-  
+ 
 -   Attempting to set the <xref:System.Workflow.ComponentModel.PropertyMetadata.GetValueOverride%2A>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -459,10 +459,10 @@
         <summary>Provides processing when this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> is applied to a dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Sends notification that this metadata has been applied to a property, and the metadata is being sealed. This routine is no-op in this implementation.  
-  
+Sends notification that this metadata has been applied to a property, and the metadata is being sealed. This routine is no-op in this implementation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -484,20 +484,20 @@
         <value>The option setting for the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> associated to this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The possible values for this property are:  
-  
- <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
-  
- <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
-  
- <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
-  
- <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
-  
- <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
-  
+The possible values for this property are:  
+ 
+<xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
+ 
+<xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
+ 
+<xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
+ 
+<xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
+ 
+<xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Attempting to set this property when <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.IsSealed" /> is <see langword="true." /></exception>

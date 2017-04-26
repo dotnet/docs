@@ -31,27 +31,27 @@
     <summary>An in-memory representation of an XML Schema, as specified in the World Wide Web Consortium (W3C) [XML Schema Part 1: Structures](http://www.w3.org/TR/xmlschema-1/) and [XML Schema Part 2: Datatypes](http://www.w3.org/TR/xmlschema-2/) specifications.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  -   Do not use schemas from unknown or untrusted sources or locations. Doing so will compromise the security of your code.  
 > -   XML schemas (including inline schemas) are inherently vulnerable to denial of service attacks; do not accept them in untrusted scenarios.  
 > -   Exceptions raised as a result of using the <xref:System.Xml.Schema.XmlSchema> class, such as the <xref:System.Xml.Schema.XmlSchemaException> class, may contain sensitive information that should not be exposed in untrusted scenarios. For example, the <xref:System.Xml.Schema.XmlSchemaException.SourceUri%2A> property of an <xref:System.Xml.Schema.XmlSchemaException> returns the URI path to the schema file that caused the exception. The <xref:System.Xml.Schema.XmlSchemaException.SourceUri%2A> property should not be exposed in untrusted scenarios. Exceptions should be properly handled so this sensitive information is not exposed in untrusted scenarios.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates a schema definition.  
-  
- [!code-cpp[Classic WebData XmlSchema Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchema Example/CPP/source.cpp#1)]
- [!code-csharp[Classic WebData XmlSchema Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchema Example/CS/source.cs#1)]
- [!code-vb[Classic WebData XmlSchema Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchema Example/VB/source.vb#1)]  
-  
- The following XML file is generated for the preceding code example.  
-  
- [!code-xml[Classic WebData XmlSchema Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchema Example/XML/source.xml#2)]  
-  
+The following example creates a schema definition.  
+ 
+[!code-cpp[Classic WebData XmlSchema Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchema Example/CPP/source.cpp#1)]
+[!code-csharp[Classic WebData XmlSchema Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchema Example/CS/source.cs#1)]
+[!code-vb[Classic WebData XmlSchema Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchema Example/VB/source.vb#1)]  
+ 
+The following XML file is generated for the preceding code example.  
+ 
+[!code-xml[Classic WebData XmlSchema Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchema Example/XML/source.xml#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -106,18 +106,18 @@
         <value>The <see cref="T:System.Xml.Schema.XmlSchemaForm" /> value that indicates if attributes from the target namespace are required to be qualified with the namespace prefix. The default is <see cref="F:System.Xml.Schema.XmlSchemaForm.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value must be one of the <xref:System.Xml.Schema.XmlSchemaForm> values shown in the following table.  
-  
+The value must be one of the <xref:System.Xml.Schema.XmlSchemaForm> values shown in the following table.  
+ 
 |<xref:System.Xml.Schema.XmlSchemaForm> Value|Description|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
 |<xref:System.Xml.Schema.XmlSchemaForm>|The attribute form is not specified in schema.|  
 |<xref:System.Xml.Schema.XmlSchemaForm>|Attributes from the target namespace must be qualified with the namespace prefix.|  
 |<xref:System.Xml.Schema.XmlSchemaForm>|Attributes from the target namespace are not required to be qualified with the namespace prefix.|  
-  
- This value is the global default for all attributes declared in the target namespace. Individual attributes can override this setting for the local scope using the `form` attribute.  
-  
+ 
+This value is the global default for all attributes declared in the target namespace. Individual attributes can override this setting for the local scope using the `form` attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -208,12 +208,12 @@
         <value>An <see cref="T:System.Xml.Schema.XmlSchemaDerivationMethod" /> value representing the different methods for preventing derivation. The default value is <see langword="XmlSchemaDerivationMethod.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `block` attribute prevents a `complexType` or element that has the specified type of derivation from being used in place of the inherited `complexType` or element. This attribute's value can either be a white space separated list of restriction, extension and substitution or the value can contain `#all` or a list that is a subset of extension, restriction, or substitution.  
-  
- The following table lists the possible values of <xref:System.Xml.Schema.XmlSchemaDerivationMethod>.  
-  
+The `block` attribute prevents a `complexType` or element that has the specified type of derivation from being used in place of the inherited `complexType` or element. This attribute's value can either be a white space separated list of restriction, extension and substitution or the value can contain `#all` or a list that is a subset of extension, restriction, or substitution.  
+ 
+The following table lists the possible values of <xref:System.Xml.Schema.XmlSchemaDerivationMethod>.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |`None`|By default, there are no restrictions on type derivations in the schema.|  
@@ -223,7 +223,7 @@
 |`Union`|By default, elements in this schema cannot be derived by Union. Applies only to simple types.|  
 |`List`|By default, elements in this schema cannot be derived by List. Applies only to simple types.|  
 |`All`|`#all`. By default, elements in this schema cannot be derived by any method.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -258,12 +258,12 @@
         <summary>Compiles the XML Schema Object Model (SOM) into schema information for validation. Used to check the syntactic and semantic structure of the programmatically built SOM. Semantic validation checking is performed during compilation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method is obsolete in the Microsoft .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A?displayProperty=fullName> method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -300,16 +300,16 @@
         <summary>Compiles the XML Schema Object Model (SOM) into schema information for validation. Used to check the syntactic and semantic structure of the programmatically built SOM. Semantic validation checking is performed during compilation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the SOM references other namespaces through the `import` or `include` elements, the `XmlResolver` is used to resolve these references. If the resolver is set to `null`, this indicates that the user does not care about resolving `import` or `include` elements. In this case, the references are not resolved. The resolver is not cached after the `Compile` method completes.  
-  
+If the SOM references other namespaces through the `import` or `include` elements, the `XmlResolver` is used to resolve these references. If the resolver is set to `null`, this indicates that the user does not care about resolving `import` or `include` elements. In this case, the references are not resolved. The resolver is not cached after the `Compile` method completes.  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method is obsolete in the Microsoft .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A?displayProperty=fullName> method.  
-  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method uses the <xref:System.Xml.XmlUrlResolver> class to resolve external schemas referenced in include, import, or redefine elements by default. You can disable resolution of external schemas by passing null as the <xref:System.Xml.XmlResolver> parameter.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -344,18 +344,18 @@
         <value>The <see cref="T:System.Xml.Schema.XmlSchemaForm" /> value that indicates if elements from the target namespace are required to be qualified with the namespace prefix. The default is <see cref="F:System.Xml.Schema.XmlSchemaForm.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value must be one of the <xref:System.Xml.Schema.XmlSchemaForm> values shown in the following table.  
-  
+The value must be one of the <xref:System.Xml.Schema.XmlSchemaForm> values shown in the following table.  
+ 
 |<xref:System.Xml.Schema.XmlSchemaForm> Value|Description|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
 |<xref:System.Xml.Schema.XmlSchemaForm>|The element form is not specified in the schema.|  
 |<xref:System.Xml.Schema.XmlSchemaForm>|Elements from the target namespace must be qualified with the namespace prefix.|  
 |<xref:System.Xml.Schema.XmlSchemaForm>|Elements from the target namespace are not required to be qualified with the namespace prefix.|  
-  
- This value is the global default for all elements declared in the target namespace. Individual elements can override this setting for the local scope by using the `form` attribute.  
-  
+ 
+This value is the global default for all elements declared in the target namespace. Individual elements can override this setting for the local scope by using the `form` attribute.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -418,12 +418,12 @@
         <value>An <see cref="T:System.Xml.Schema.XmlSchemaDerivationMethod" /> value representing the different methods for preventing derivation. The default value is <see langword="XmlSchemaDerivationMethod.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `final` attribute prevents the specified type of derivation of an element or complex type. This value can contain `#all` or a list that is a subset of extension or restriction.  
-  
- The following table lists the possible values of <xref:System.Xml.Schema.XmlSchemaDerivationMethod>.  
-  
+The `final` attribute prevents the specified type of derivation of an element or complex type. This value can contain `#all` or a list that is a subset of extension or restriction.  
+ 
+The following table lists the possible values of <xref:System.Xml.Schema.XmlSchemaDerivationMethod>.  
+ 
 |Value|Description|  
 |-----------|-----------------|  
 |`None`|By default, there are no restrictions on type derivations in the schema.|  
@@ -433,7 +433,7 @@
 |`Union`|By default, elements in this schema cannot be derived by Union. Applies only to simple types.|  
 |`List`|By default, elements in this schema cannot be derived by List. Applies only to simple types.|  
 |`All`|`#all`. By default, elements in this schema cannot be derived by any method.|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -527,10 +527,10 @@
         <value>An <see cref="T:System.Xml.Schema.XmlSchemaObjectCollection" /> of the included and imported schemas.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Schema.XmlSchemaObjectCollection.Add%2A> method expects only <xref:System.Xml.Schema.XmlSchemaExternal> and its derived types (<xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude>, and <xref:System.Xml.Schema.XmlSchemaRedefine>) as parameters. The following example illustrates adding an included schema to the <xref:System.Xml.Schema.XmlSchema.Includes%2A> collection of an existing <xref:System.Xml.Schema.XmlSchema> object.  
-  
+The <xref:System.Xml.Schema.XmlSchemaObjectCollection.Add%2A> method expects only <xref:System.Xml.Schema.XmlSchemaExternal> and its derived types (<xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude>, and <xref:System.Xml.Schema.XmlSchemaRedefine>) as parameters. The following example illustrates adding an included schema to the <xref:System.Xml.Schema.XmlSchema.Includes%2A> collection of an existing <xref:System.Xml.Schema.XmlSchema> object.  
+ 
 ```vb  
 Dim schema As XmlSchema = New XmlSchema()  
   
@@ -541,7 +541,7 @@ Dim include As XmlSchemaInclude = New XmlSchemaInclude()
 include.Schema = includeSchema;  
 schema.Includes.Add(include);  
 ```  
-  
+ 
 ```csharp  
 XmlSchema schema = new XmlSchema();  
   
@@ -552,7 +552,7 @@ XmlSchemaInclude include = new XmlSchemaInclude();
 include.Schema = includeSchema;  
 schema.Includes.Add(include);  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -656,10 +656,10 @@ schema.Includes.Add(include);
         <value>An <see cref="T:System.Xml.Schema.XmlSchemaObjectCollection" /> of schema elements in the schema.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The collection of <xref:System.Xml.Schema.XmlSchemaAnnotation>, <xref:System.Xml.Schema.XmlSchemaAttribute>, <xref:System.Xml.Schema.XmlSchemaAttributeGroup>, <xref:System.Xml.Schema.XmlSchemaComplexType>, <xref:System.Xml.Schema.XmlSchemaSimpleType>, <xref:System.Xml.Schema.XmlSchemaElement>, <xref:System.Xml.Schema.XmlSchemaGroup>, or <xref:System.Xml.Schema.XmlSchemaNotation>.  
-  
+The collection of <xref:System.Xml.Schema.XmlSchemaAnnotation>, <xref:System.Xml.Schema.XmlSchemaAttribute>, <xref:System.Xml.Schema.XmlSchemaAttributeGroup>, <xref:System.Xml.Schema.XmlSchemaComplexType>, <xref:System.Xml.Schema.XmlSchemaSimpleType>, <xref:System.Xml.Schema.XmlSchemaElement>, <xref:System.Xml.Schema.XmlSchemaGroup>, or <xref:System.Xml.Schema.XmlSchemaNotation>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -859,10 +859,10 @@ schema.Includes.Add(include);
         <value>The schema target namespace.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Xml.Schema.XmlSchema.TargetNamespace%2A> is the namespace of all schema components in this schema as well as any schema included using the `include` element. Included schemas must either have the same target namespace as the containing schema or have no target namespace specified.  
-  
+The <xref:System.Xml.Schema.XmlSchema.TargetNamespace%2A> is the namespace of all schema components in this schema as well as any schema included using the `include` element. Included schemas must either have the same target namespace as the containing schema or have no target namespace specified.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1029,12 +1029,12 @@ schema.Includes.Add(include);
         <summary>Writes the XML Schema to the supplied <see cref="T:System.IO.Stream" /> using the <see cref="T:System.Xml.XmlNamespaceManager" /> specified.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Supplying an <xref:System.Xml.XmlNamespaceManager> disables automatic namespace prefix mapping.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1066,12 +1066,12 @@ schema.Includes.Add(include);
         <summary>Writes the XML Schema to the supplied <see cref="T:System.IO.TextWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Supplying an <xref:System.Xml.XmlNamespaceManager> disables automatic namespace prefix mapping.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1103,12 +1103,12 @@ schema.Includes.Add(include);
         <summary>Writes the XML Schema to the supplied <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  Supplying an <xref:System.Xml.XmlNamespaceManager> disables automatic namespace prefix mapping.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1123,12 +1123,12 @@ schema.Includes.Add(include);
         <summary>Compiles the XML Schema Object Model (SOM) into schema information for validation. Used to check the syntactic and semantic structure of the programmatically built SOM. Semantic validation checking is performed during compilation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!IMPORTANT]
 >  The <xref:System.Xml.Schema.XmlSchema.Compile%2A> method is obsolete in the Microsoft .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A?displayProperty=fullName> method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -23,12 +23,12 @@
     <summary>Contains information on the change that occurred.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example shows how to use a <xref:System.IO.FileSystemWatcher> synchronously by having it wait for a specific file change notification to occur.  
-  
- [!code-vb[WaitForChangedResult#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/WaitForChangedResult/VB/WaitforChangedResult.vb#1)]  
-  
+This example shows how to use a <xref:System.IO.FileSystemWatcher> synchronously by having it wait for a specific file change notification to occur.  
+ 
+[!code-vb[WaitForChangedResult#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/WaitForChangedResult/VB/WaitforChangedResult.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -86,12 +86,12 @@
         <value>The name of the file or directory that changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the <xref:System.IO.WaitForChangedResult.Name%2A> property. This code example is part of a larger example provided for the <xref:System.IO.WaitForChangedResult> structure.  
-  
- [!code-vb[WaitForChangedResult#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/WaitForChangedResult/VB/WaitforChangedResult.vb#2)]  
-  
+The following example demonstrates the <xref:System.IO.WaitForChangedResult.Name%2A> property. This code example is part of a larger example provided for the <xref:System.IO.WaitForChangedResult> structure.  
+ 
+[!code-vb[WaitForChangedResult#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/WaitForChangedResult/VB/WaitforChangedResult.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

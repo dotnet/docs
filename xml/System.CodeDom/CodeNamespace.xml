@@ -22,26 +22,26 @@
     <summary>Represents a namespace declaration.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.CodeNamespace> can be used to represent a namespace declaration.  
-  
- The <xref:System.CodeDom.CodeNamespace.Name%2A> property specifies the name of the namespace. The <xref:System.CodeDom.CodeNamespace.Imports%2A> property contains the namespace import directives for the namespace. The <xref:System.CodeDom.CodeNamespace.Types%2A> property contains the type declarations for the namespace. The <xref:System.CodeDom.CodeNamespace.Comments%2A> property contains the comments that apply at the namespace level.  
-  
- In some languages, a namespace can function as a container for type declarations; all types in the same namespace are accessible without using fully-qualified type references, if the there is no conflict between type names.  
-  
+<xref:System.CodeDom.CodeNamespace> can be used to represent a namespace declaration.  
+ 
+The <xref:System.CodeDom.CodeNamespace.Name%2A> property specifies the name of the namespace. The <xref:System.CodeDom.CodeNamespace.Imports%2A> property contains the namespace import directives for the namespace. The <xref:System.CodeDom.CodeNamespace.Types%2A> property contains the type declarations for the namespace. The <xref:System.CodeDom.CodeNamespace.Comments%2A> property contains the comments that apply at the namespace level.  
+ 
+In some languages, a namespace can function as a container for type declarations; all types in the same namespace are accessible without using fully-qualified type references, if the there is no conflict between type names.  
+ 
 > [!NOTE]
 >  Use fully qualified type references to avoid potential ambiguity.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example code demonstrates use of a <xref:System.CodeDom.CodeNamespace> to declare a namespace.  
-  
- [!code-cpp[CodeNamespaceExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeNamespaceExample/CPP/codenamespaceexample.cpp#2)]
- [!code-csharp[CodeNamespaceExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeNamespaceExample/CS/codenamespaceexample.cs#2)]
- [!code-vb[CodeNamespaceExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeNamespaceExample/VB/codenamespaceexample.vb#2)]  
-  
+The following example code demonstrates use of a <xref:System.CodeDom.CodeNamespace> to declare a namespace.  
+ 
+[!code-cpp[CodeNamespaceExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeNamespaceExample/CPP/codenamespaceexample.cpp#2)]
+[!code-csharp[CodeNamespaceExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeNamespaceExample/CS/codenamespaceexample.cs#2)]
+[!code-vb[CodeNamespaceExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeNamespaceExample/VB/codenamespaceexample.vb#2)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

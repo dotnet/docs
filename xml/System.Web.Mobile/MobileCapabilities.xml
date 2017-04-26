@@ -19,17 +19,17 @@
     <summary>Provides a single source for accessing capability information about a client device and for performing queries against device capabilities. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Mobile.MobileCapabilities> class extends the <xref:System.Web.HttpBrowserCapabilities> class. The <xref:System.Web.Mobile.MobileCapabilities> class offers a large number of read-only properties that provide type-safe access to the Browser object's capabilities dictionary.  
+The <xref:System.Web.Mobile.MobileCapabilities> class extends the <xref:System.Web.HttpBrowserCapabilities> class. The <xref:System.Web.Mobile.MobileCapabilities> class offers a large number of read-only properties that provide type-safe access to the Browser object's capabilities dictionary.  
+ 
+You can use the Browser property of the <xref:System.Web.HttpRequest> object to point to an instance of a <xref:System.Web.Mobile.MobileCapabilities> object, which can then be used to read the capabilities of the requesting browser and device.  
+ 
   
- You can use the Browser property of the <xref:System.Web.HttpRequest> object to point to an instance of a <xref:System.Web.Mobile.MobileCapabilities> object, which can then be used to read the capabilities of the requesting browser and device.  
-  
-   
-  
+ 
 ## Examples  
- During the page load, the <xref:System.Web.Mobile.MobileCapabilities> object obtains the capabilities through the <xref:System.Web.Configuration.HttpCapabilitiesBase.Browser%2A> property as previously discussed. The <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingMime%2A> and the <xref:System.Web.Configuration.HttpCapabilitiesBase.ScreenCharactersWidth%2A> properties of the <xref:System.Web.Mobile.MobileCapabilities> object report back to the browser by setting properties on the <xref:System.Web.HttpResponse> object and also by programmatically setting the `Text` property of certain controls on the page.  
-  
+During the page load, the <xref:System.Web.Mobile.MobileCapabilities> object obtains the capabilities through the <xref:System.Web.Configuration.HttpCapabilitiesBase.Browser%2A> property as previously discussed. The <xref:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingMime%2A> and the <xref:System.Web.Configuration.HttpCapabilitiesBase.ScreenCharactersWidth%2A> properties of the <xref:System.Web.Mobile.MobileCapabilities> object report back to the browser by setting properties on the <xref:System.Web.HttpResponse> object and also by programmatically setting the `Text` property of certain controls on the page.  
+ 
 ```csharp  
 <%@ Page Inherits="System.Web.UI.MobileControls.MobilePage"   
     Language="c#" %>  
@@ -59,7 +59,7 @@ public void Page_Load(Object sender, EventArgs e)
       <mobile:label ID="Label2" runat="server" />  
  </Mobile:Form>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -104,10 +104,10 @@ public void Page_Load(Object sender, EventArgs e)
           <see langword="true" /> if the device has the specified capability; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applications can use the <xref:System.Web.Mobile.MobileCapabilities.HasCapability%2A> method programmatically when they gather device-specific information. If the `capabilityName` parameter specifies a device evaluation method, the `optionalArgument` parameter is passed to this method. If the `capabilityName` parameter specifies a property name or item in the capabilities dictionary, the <xref:System.Web.Mobile.MobileCapabilities.HasCapability%2A> method checks whether the property or item is equal to the `optionalArgument` parameter.  
-  
+Applications can use the <xref:System.Web.Mobile.MobileCapabilities.HasCapability%2A> method programmatically when they gather device-specific information. If the `capabilityName` parameter specifies a device evaluation method, the `optionalArgument` parameter is passed to this method. If the `capabilityName` parameter specifies a property name or item in the capabilities dictionary, the <xref:System.Web.Mobile.MobileCapabilities.HasCapability%2A> method checks whether the property or item is equal to the `optionalArgument` parameter.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">A <paramref name="capabilityName" /> parameter is not found as a device-filter name specified in the configuration file, as a <see cref="T:System.Web.Mobile.MobileCapabilities" /> property, or as an item in the <see cref="T:System.Web.Mobile.MobileCapabilities" /> Item collection.</exception>
@@ -131,10 +131,10 @@ public void Page_Load(Object sender, EventArgs e)
         <summary>Returns the source identifier to use for compact HTML 1.0. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used by an adapter to assign the rendering type for the device.  
-  
+Used by an adapter to assign the rendering type for the device.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,10 +155,10 @@ public void Page_Load(Object sender, EventArgs e)
         <summary>Returns the source identifier to use for HTML 3.2. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used by the adapter to assign the rendering type for the device.  
-  
+Used by the adapter to assign the rendering type for the device.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,10 +179,10 @@ public void Page_Load(Object sender, EventArgs e)
         <summary>Returns the source identifier to use for WML 1.1. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used by the adapter to assign the rendering type for the device.  
-  
+Used by the adapter to assign the rendering type for the device.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -203,10 +203,10 @@ public void Page_Load(Object sender, EventArgs e)
         <summary>Returns the source identifier to use for WML 1.2. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Used by the adapter to assign the rendering type for the device.  
-  
+Used by the adapter to assign the rendering type for the device.  
+ 
  ]]></format>
         </remarks>
       </Docs>

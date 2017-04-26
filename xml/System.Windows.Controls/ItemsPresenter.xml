@@ -19,12 +19,12 @@
     <summary>Used within the template of an item control to specify the place in the control’s visual tree where the <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" /> defined by the <see cref="T:System.Windows.Controls.ItemsControl" /> is to be added.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows how to use an <xref:System.Windows.Controls.ItemsPresenter> in a control template for a <xref:System.Windows.Controls.HeaderedItemsControl>.  
-  
- [!code-xml[HeaderedItemsControl#HeaderedItemsControl_Style](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_style)]  
-  
+The following example shows how to use an <xref:System.Windows.Controls.ItemsPresenter> in a control template for a <xref:System.Windows.Controls.HeaderedItemsControl>.  
+ 
+[!code-xml[HeaderedItemsControl#HeaderedItemsControl_Style](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_style)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

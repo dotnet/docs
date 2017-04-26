@@ -15,10 +15,10 @@
     <summary>The exception that is thrown when the call is to an <see cref="T:System.ServiceModel.ICommunicationObject" /> object that has aborted.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ServiceModel.CommunicationObjectAbortedException> is a derived class of <xref:System.ServiceModel.CommunicationException?displayProperty=fullName> and can occur in correct applications. Because typically the code that calls the <xref:System.ServiceModel.ICommunicationObject.Abort%2A?displayProperty=fullName> method reports the error condition that caused the call to <xref:System.ServiceModel.ICommunicationObject.Abort%2A?displayProperty=fullName>, this exception indicates that the call failed but the most useful error information is elsewhere.  
-  
+<xref:System.ServiceModel.CommunicationObjectAbortedException> is a derived class of <xref:System.ServiceModel.CommunicationException?displayProperty=fullName> and can occur in correct applications. Because typically the code that calls the <xref:System.ServiceModel.ICommunicationObject.Abort%2A?displayProperty=fullName> method reports the error condition that caused the call to <xref:System.ServiceModel.ICommunicationObject.Abort%2A?displayProperty=fullName>, this exception indicates that the call failed but the most useful error information is elsewhere.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -57,10 +57,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.CommunicationObjectAbortedException" /> class with the specified message.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new <xref:System.ServiceModel.CommunicationObjectAbortedException> using the specified `message`.  
-  
+Creates a new <xref:System.ServiceModel.CommunicationObjectAbortedException> using the specified `message`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -85,10 +85,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.CommunicationObjectAbortedException" /> class used to deserialize data into a <see cref="T:System.ServiceModel.CommunicationObjectAbortedException" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is called during deserialization to restore the exception object transmitted over a stream.  
-  
+This constructor is called during deserialization to restore the exception object transmitted over a stream.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,10 +113,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.CommunicationObjectAbortedException" /> class using the specified message and inner exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Creates a new <xref:System.ServiceModel.CommunicationObjectAbortedException> using the specified `message` and `innerException`.  
-  
+Creates a new <xref:System.ServiceModel.CommunicationObjectAbortedException> using the specified `message` and `innerException`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

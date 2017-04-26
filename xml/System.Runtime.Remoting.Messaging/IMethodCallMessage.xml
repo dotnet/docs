@@ -21,17 +21,17 @@
     <summary>Defines the method call message interface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage> is generated as a result of a method called on a remote object, and is used to transport details about the remote method call to the server side.  
+An <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage> is generated as a result of a method called on a remote object, and is used to transport details about the remote method call to the server side.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[IMethodCallMessage_GetInArg#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/CPP/imethodcallmessage.cpp#1)]
- [!code-csharp[IMethodCallMessage_GetInArg#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/CS/imethodcallmessage.cs#1)]
- [!code-vb[IMethodCallMessage_GetInArg#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/VB/imethodcallmessage.vb#1)]  
-  
+[!code-cpp[IMethodCallMessage_GetInArg#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/CPP/imethodcallmessage.cpp#1)]
+[!code-csharp[IMethodCallMessage_GetInArg#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/CS/imethodcallmessage.cs#1)]
+[!code-vb[IMethodCallMessage_GetInArg#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/VB/imethodcallmessage.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -104,14 +104,14 @@
         <value>The number of arguments in the call that are not marked as <see langword="out" /> parameters.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example code shows a custom proxy that overrides RealProxy.Invoke in order to write the call message information to the console.  
-  
- [!code-cpp[IMethodCallMessage_GetInArg#2](~/samples/snippets/cpp/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/CPP/imethodcallmessage.cpp#2)]
- [!code-csharp[IMethodCallMessage_GetInArg#2](~/samples/snippets/csharp/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/CS/imethodcallmessage.cs#2)]
- [!code-vb[IMethodCallMessage_GetInArg#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/VB/imethodcallmessage.vb#2)]  
-  
+The following example code shows a custom proxy that overrides RealProxy.Invoke in order to write the call message information to the console.  
+ 
+[!code-cpp[IMethodCallMessage_GetInArg#2](~/samples/snippets/cpp/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/CPP/imethodcallmessage.cpp#2)]
+[!code-csharp[IMethodCallMessage_GetInArg#2](~/samples/snippets/csharp/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/CS/imethodcallmessage.cs#2)]
+[!code-vb[IMethodCallMessage_GetInArg#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/VB/imethodcallmessage.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
@@ -136,17 +136,17 @@
         <value>An array of arguments that are not marked as <see langword="out" /> parameters.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage.InArgs%2A> property is redundant since the same functionality can be achieved with the <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage.InArgCount%2A> and <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage.GetInArg%2A> methods, there might be performance optimization available if the implementer understands when all the arguments will be retrieved.  
+Although the <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage.InArgs%2A> property is redundant since the same functionality can be achieved with the <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage.InArgCount%2A> and <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage.GetInArg%2A> methods, there might be performance optimization available if the implementer understands when all the arguments will be retrieved.  
+ 
   
-   
-  
+ 
 ## Examples  
- [!code-cpp[IMethodCallMessage_GetInArg#2](~/samples/snippets/cpp/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/CPP/imethodcallmessage.cpp#2)]
- [!code-csharp[IMethodCallMessage_GetInArg#2](~/samples/snippets/csharp/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/CS/imethodcallmessage.cs#2)]
- [!code-vb[IMethodCallMessage_GetInArg#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/VB/imethodcallmessage.vb#2)]  
-  
+[!code-cpp[IMethodCallMessage_GetInArg#2](~/samples/snippets/cpp/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/CPP/imethodcallmessage.cpp#2)]
+[!code-csharp[IMethodCallMessage_GetInArg#2](~/samples/snippets/csharp/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/CS/imethodcallmessage.cs#2)]
+[!code-vb[IMethodCallMessage_GetInArg#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IMethodCallMessage_GetInArg/VB/imethodcallmessage.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>

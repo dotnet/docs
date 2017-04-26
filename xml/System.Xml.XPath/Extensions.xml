@@ -23,14 +23,14 @@
     <summary>This class contains the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] extension methods that enable you to evaluate XPath expressions.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- There is some performance penalty for using these methods. Using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries yields better performance.  
-  
- Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
-  
- Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
-  
+There is some performance penalty for using these methods. Using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries yields better performance.  
+ 
+Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
+ 
+Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -65,24 +65,24 @@
         <returns>An <see cref="T:System.Xml.XPath.XPathNavigator" /> that can process XPath queries.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot edit the XML tree by using the <xref:System.Xml.XPath.XPathNavigator> that is returned by this method. The <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> property returns `false`.  
+You cannot edit the XML tree by using the <xref:System.Xml.XPath.XPathNavigator> that is returned by this method. The <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> property returns `false`.  
+ 
+You cannot create an <xref:System.Xml.XPath.XPathNavigator> for a <xref:System.Xml.Linq.XDocumentType> node. Document types do not participate in the XPath data model.  
+ 
+Namespace declarations are reported from left to right. In contrast, for <xref:System.Xml.XmlDocument> namespaces are reported from right to left. This is conformant behavior because namespace declarations are not ordered in the XPath data model.  
+ 
+The method <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A> is not supported for navigators that are returned by this method.  
+ 
+You can use this method to perform an XSLT transformation. You can create an XML tree, create an <xref:System.Xml.XPath.XPathNavigator> from the XML tree, create a new document, and create a <xref:System.Xml.XmlWriter> that will write into the new document. Then, you can invoke the XSLT transformation, passing the <xref:System.Xml.XPath.XPathNavigator> and <xref:System.Xml.XmlWriter> to the transform. After the transformation successfully completes, the new XML tree is populated with the results of the transformation.  
+ 
+To perform an XSLT transformation, you can use either an <xref:System.Xml.XmlReader> or an <xref:System.Xml.XPath.XPathNavigator>. The two approaches have different performance characteristics. Some transformations will execute faster when using an <xref:System.Xml.XmlReader>, and others will execute faster when using a <xref:System.Xml.XPath.XPathNavigator>. If performance is a concern, we recommend that you experiment with each approach to determine which will perform better in your circumstances.  
+ 
   
- You cannot create an <xref:System.Xml.XPath.XPathNavigator> for a <xref:System.Xml.Linq.XDocumentType> node. Document types do not participate in the XPath data model.  
-  
- Namespace declarations are reported from left to right. In contrast, for <xref:System.Xml.XmlDocument> namespaces are reported from right to left. This is conformant behavior because namespace declarations are not ordered in the XPath data model.  
-  
- The method <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A> is not supported for navigators that are returned by this method.  
-  
- You can use this method to perform an XSLT transformation. You can create an XML tree, create an <xref:System.Xml.XPath.XPathNavigator> from the XML tree, create a new document, and create a <xref:System.Xml.XmlWriter> that will write into the new document. Then, you can invoke the XSLT transformation, passing the <xref:System.Xml.XPath.XPathNavigator> and <xref:System.Xml.XmlWriter> to the transform. After the transformation successfully completes, the new XML tree is populated with the results of the transformation.  
-  
- To perform an XSLT transformation, you can use either an <xref:System.Xml.XmlReader> or an <xref:System.Xml.XPath.XPathNavigator>. The two approaches have different performance characteristics. Some transformations will execute faster when using an <xref:System.Xml.XmlReader>, and others will execute faster when using a <xref:System.Xml.XPath.XPathNavigator>. If performance is a concern, we recommend that you experiment with each approach to determine which will perform better in your circumstances.  
-  
-   
-  
+ 
 ## Examples  
-  
+ 
 ```csharp  
   
                 string xslMarkup = @"<?xml version='1.0'?>  
@@ -114,7 +114,7 @@ using (XmlWriter writer = newTree.CreateWriter()) {
   
 Console.WriteLine(newTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim xslMarkup As XDocument = _  
@@ -149,9 +149,9 @@ End Using
   
 Console.WriteLine(newTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -159,7 +159,7 @@ Console.WriteLine(newTree)
   <C2>Child2 data</C2>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -196,18 +196,18 @@ Console.WriteLine(newTree)
         <returns>An <see cref="T:System.Xml.XPath.XPathNavigator" /> that can process XPath queries.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot edit the XML tree using the <xref:System.Xml.XPath.XPathNavigator> that is returned by this method. The <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> property returns `false`.  
-  
- You cannot create an <xref:System.Xml.XPath.XPathNavigator> for a <xref:System.Xml.Linq.XDocumentType> node. Document types do not participate in the XPath data model.  
-  
- Namespace declarations are reported from left to right. In contrast, for <xref:System.Xml.XmlDocument> namespaces are reported from right to left. This is conformant behavior because namespace declarations are not ordered in the XPath data model.  
-  
- The method <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A> is not supported for navigators that are returned by this method.  
-  
- If you use an <xref:System.Xml.XmlNameTable> with this method to create the <xref:System.Xml.XPath.XPathNavigator>, you will get better performance when evaluating XPath expressions.  
-  
+You cannot edit the XML tree using the <xref:System.Xml.XPath.XPathNavigator> that is returned by this method. The <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> property returns `false`.  
+ 
+You cannot create an <xref:System.Xml.XPath.XPathNavigator> for a <xref:System.Xml.Linq.XDocumentType> node. Document types do not participate in the XPath data model.  
+ 
+Namespace declarations are reported from left to right. In contrast, for <xref:System.Xml.XmlDocument> namespaces are reported from right to left. This is conformant behavior because namespace declarations are not ordered in the XPath data model.  
+ 
+The method <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A> is not supported for navigators that are returned by this method.  
+ 
+If you use an <xref:System.Xml.XmlNameTable> with this method to create the <xref:System.Xml.XPath.XPathNavigator>, you will get better performance when evaluating XPath expressions.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -244,19 +244,19 @@ Console.WriteLine(newTree)
         <returns>An object that can contain a <see langword="bool" />, a <see langword="double" />, a <see langword="string" />, or an <see cref="T:System.Collections.Generic.IEnumerable`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the collection is an enumeration of elements or attributes, you can use the `Cast` operator to get a collection of <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute>.  
+If the collection is an enumeration of elements or attributes, you can use the `Cast` operator to get a collection of <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute>.  
+ 
+Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
+ 
+Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
+ 
   
- Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
-  
- Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a small XML tree with an attribute, then uses the <xref:System.Xml.XPath.Extensions.XPathEvaluate%2A> method to retrieve the attribute.  
-  
+The following example creates a small XML tree with an attribute, then uses the <xref:System.Xml.XPath.Extensions.XPathEvaluate%2A> method to retrieve the attribute.  
+ 
 ```csharp  
   
                 String xml = "<root a='value'/>";  
@@ -264,7 +264,7 @@ XDocument d = XDocument.Parse(xml);
 IEnumerable att = (IEnumerable)d.XPathEvaluate("/root/@a");  
 Console.WriteLine(att.Cast<XAttribute>().FirstOrDefault());  
 ```  
-  
+ 
 ```vb  
   
                 Dim d As XDocument = _  
@@ -273,13 +273,13 @@ Console.WriteLine(att.Cast<XAttribute>().FirstOrDefault());
 Dim att As IEnumerable = CType(d.XPathEvaluate("/root/@a"), IEnumerable)  
 Console.WriteLine(att.Cast(Of XAttribute)().FirstOrDefault())  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 a="value"  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -318,19 +318,19 @@ a="value"
         <returns>An object that contains the result of evaluating the expression. The object can be a <see langword="bool" />, a <see langword="double" />, a <see langword="string" />, or an <see cref="T:System.Collections.Generic.IEnumerable`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to evaluate XPath expressions that contain namespace prefixes.  
+You can use this method to evaluate XPath expressions that contain namespace prefixes.  
+ 
+Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
+ 
+Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
+ 
   
- Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
-  
- Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree that contains a namespace. It uses an <xref:System.Xml.XmlReader> to read the XML document. It then gets an <xref:System.Xml.XmlNameTable> from the <xref:System.Xml.XmlReader>, and an <xref:System.Xml.XmlNamespaceManager> from the <xref:System.Xml.XmlNameTable>. It uses the <xref:System.Xml.XmlNamespaceManager> when selecting an element.  
-  
+The following example creates an XML tree that contains a namespace. It uses an <xref:System.Xml.XmlReader> to read the XML document. It then gets an <xref:System.Xml.XmlNameTable> from the <xref:System.Xml.XmlReader>, and an <xref:System.Xml.XmlNamespaceManager> from the <xref:System.Xml.XmlNameTable>. It uses the <xref:System.Xml.XmlNamespaceManager> when selecting an element.  
+ 
 ```csharp  
   
                 string markup =  
@@ -347,7 +347,7 @@ IEnumerable<XAttribute> attList = atts.Cast<XAttribute>();
 XAttribute att = attList.First();  
 Console.WriteLine(att);  
 ```  
-  
+ 
 ```vb  
   
                 Dim markup As XElement = _  
@@ -363,13 +363,13 @@ Dim attList As IEnumerable(Of XAttribute) = atts.Cast(Of XAttribute)()
 Dim att As XAttribute = attList.First()  
 Console.WriteLine(att)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 aw:Att="attdata"  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -406,10 +406,10 @@ aw:Att="attdata"
         <returns>An <see cref="T:System.Xml.Linq.XElement" />, or null.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates a small XML tree and uses <xref:System.Xml.XPath.Extensions.XPathSelectElement%2A> to select a single element.  
-  
+The following example creates a small XML tree and uses <xref:System.Xml.XPath.Extensions.XPathSelectElement%2A> to select a single element.  
+ 
 ```csharp  
   
                 XElement root = new XElement("Root",  
@@ -423,7 +423,7 @@ aw:Att="attdata"
 XElement el = root.XPathSelectElement("./Child4");  
 Console.WriteLine(el);  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement = _  
@@ -438,13 +438,13 @@ Console.WriteLine(el);
 Dim el As XElement = root.XPathSelectElement("./Child4")  
 Console.WriteLine(el)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 <Child4>4</Child4>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -483,15 +483,15 @@ Console.WriteLine(el)
         <returns>An <see cref="T:System.Xml.Linq.XElement" />, or null.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to evaluate XPath expressions that contain namespace prefixes.  
+You can use this method to evaluate XPath expressions that contain namespace prefixes.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example creates an XML tree that contains a namespace. It uses an <xref:System.Xml.XmlReader> to read the XML document. It then gets an <xref:System.Xml.XmlNameTable> from the <xref:System.Xml.XmlReader>, and an <xref:System.Xml.XmlNamespaceManager> from the <xref:System.Xml.XmlNameTable>. It uses the <xref:System.Xml.XmlNamespaceManager> when selecting an element.  
-  
+The following example creates an XML tree that contains a namespace. It uses an <xref:System.Xml.XmlReader> to read the XML document. It then gets an <xref:System.Xml.XmlNameTable> from the <xref:System.Xml.XmlReader>, and an <xref:System.Xml.XmlNamespaceManager> from the <xref:System.Xml.XmlNameTable>. It uses the <xref:System.Xml.XmlNamespaceManager> when selecting an element.  
+ 
 ```csharp  
   
                 string markup = @"  
@@ -507,7 +507,7 @@ namespaceManager.AddNamespace("aw", "http://www.adventure-works.com");
 XElement child1 = root.XPathSelectElement("./aw:Child1", namespaceManager);  
 Console.WriteLine(child1);  
 ```  
-  
+ 
 ```vb  
   
                 Dim markup As XElement = _  
@@ -522,13 +522,13 @@ namespaceManager.AddNamespace("aw", "http://www.adventure-works.com")
 Dim child1 As XElement = markup.XPathSelectElement("./aw:Child1", namespaceManager)  
 Console.WriteLine(child1)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 <aw:Child1 xmlns:aw="http://www.adventure-works.com">child one data</aw:Child1>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -565,17 +565,17 @@ Console.WriteLine(child1)
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> that contains the selected elements.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
+Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
+ 
+Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
+ 
   
- Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a small XML tree and uses <xref:System.Xml.XPath.Extensions.XPathSelectElements%2A> to select a set of elements.  
-  
+The following example creates a small XML tree and uses <xref:System.Xml.XPath.Extensions.XPathSelectElements%2A> to select a set of elements.  
+ 
 ```csharp  
   
                 XElement root = new XElement("Root",  
@@ -590,7 +590,7 @@ IEnumerable<XElement> list = root.XPathSelectElements("./Child2");
 foreach (XElement el in list)  
     Console.WriteLine(el);  
 ```  
-  
+ 
 ```vb  
   
                 Dim root As XElement = _  
@@ -607,15 +607,15 @@ For Each el As XElement In list
     Console.WriteLine(el)  
 Next  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 <Child2>4</Child2>  
 <Child2>5</Child2>  
 <Child2>6</Child2>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -654,19 +654,19 @@ Next
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> that contains the selected elements.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can use this method to evaluate XPath expressions that contain namespace prefixes.  
+You can use this method to evaluate XPath expressions that contain namespace prefixes.  
+ 
+Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
+ 
+Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
+ 
   
- Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
-  
- Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
-  
-   
-  
+ 
 ## Examples  
- This example creates an XML tree that contains a namespace. It uses an <xref:System.Xml.XmlReader> to read the XML document. It then gets an <xref:System.Xml.XmlNameTable> from the <xref:System.Xml.XmlReader>, and an <xref:System.Xml.XmlNamespaceManager> from the <xref:System.Xml.XmlNameTable>. It uses the <xref:System.Xml.XmlNamespaceManager> when selecting the list of elements.  
-  
+This example creates an XML tree that contains a namespace. It uses an <xref:System.Xml.XmlReader> to read the XML document. It then gets an <xref:System.Xml.XmlNameTable> from the <xref:System.Xml.XmlReader>, and an <xref:System.Xml.XmlNamespaceManager> from the <xref:System.Xml.XmlNameTable>. It uses the <xref:System.Xml.XmlNamespaceManager> when selecting the list of elements.  
+ 
 ```csharp  
   
                 string markup = @"  
@@ -687,7 +687,7 @@ IEnumerable<XElement> elements = root.XPathSelectElements("./aw:Child1", namespa
 foreach (XElement el in elements)  
     Console.WriteLine(el);  
 ```  
-  
+ 
 ```vb  
   
                 Dim markup As XElement = _  
@@ -708,15 +708,15 @@ For Each el As XElement In elements
     Console.WriteLine(el)  
 Next  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
 <aw:Child1 xmlns:aw="http://www.adventure-works.com">child one data 1</aw:Child1>  
 <aw:Child1 xmlns:aw="http://www.adventure-works.com">child one data 2</aw:Child1>  
 <aw:Child1 xmlns:aw="http://www.adventure-works.com">child one data 3</aw:Child1>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -730,12 +730,12 @@ Next
         <summary>Evaluates an XPath expression.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
-  
- Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
-  
+Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
+ 
+Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -749,20 +749,20 @@ Next
         <summary>Creates an <see cref="T:System.Xml.XPath.XPathNavigator" /> for an <see cref="T:System.Xml.Linq.XNode" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You cannot edit the XML tree by using the <xref:System.Xml.XPath.XPathNavigator> that is returned by this method. The <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> property returns `false`.  
-  
- You cannot create an <xref:System.Xml.XPath.XPathNavigator> for a <xref:System.Xml.Linq.XDocumentType> node. Document types do not participate in the XPath data model.  
-  
- Namespace declarations are reported from left to right. In contrast, for <xref:System.Xml.XmlDocument> namespaces are reported from right to left. This is conformant behavior because namespace declarations are not ordered in the XPath data model.  
-  
- The method <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A> is not supported for navigators that are returned by this method.  
-  
- You can use this method to perform an XSLT transformation. You can create an XML tree, create an <xref:System.Xml.XPath.XPathNavigator> from the XML tree, create a new document, and create a <xref:System.Xml.XmlWriter> that will write into the new document. Then, you can invoke the XSLT transformation, passing the <xref:System.Xml.XPath.XPathNavigator> and <xref:System.Xml.XmlWriter> to the transformation. After the transformation successfully completes, the new XML tree is populated with the results of the transformation.  
-  
- To perform an XSLT transformation, you can use either an <xref:System.Xml.XmlReader> or an <xref:System.Xml.XPath.XPathNavigator>. The two approaches have different performance characteristics. Some transformations will execute faster when using an <xref:System.Xml.XmlReader>, and others will execute faster when using a <xref:System.Xml.XPath.XPathNavigator>. If performance is a concern, we recommend that you experiment with each approach to determine which will perform better in your circumstances.  
-  
+You cannot edit the XML tree by using the <xref:System.Xml.XPath.XPathNavigator> that is returned by this method. The <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> property returns `false`.  
+ 
+You cannot create an <xref:System.Xml.XPath.XPathNavigator> for a <xref:System.Xml.Linq.XDocumentType> node. Document types do not participate in the XPath data model.  
+ 
+Namespace declarations are reported from left to right. In contrast, for <xref:System.Xml.XmlDocument> namespaces are reported from right to left. This is conformant behavior because namespace declarations are not ordered in the XPath data model.  
+ 
+The method <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A> is not supported for navigators that are returned by this method.  
+ 
+You can use this method to perform an XSLT transformation. You can create an XML tree, create an <xref:System.Xml.XPath.XPathNavigator> from the XML tree, create a new document, and create a <xref:System.Xml.XmlWriter> that will write into the new document. Then, you can invoke the XSLT transformation, passing the <xref:System.Xml.XPath.XPathNavigator> and <xref:System.Xml.XmlWriter> to the transformation. After the transformation successfully completes, the new XML tree is populated with the results of the transformation.  
+ 
+To perform an XSLT transformation, you can use either an <xref:System.Xml.XmlReader> or an <xref:System.Xml.XPath.XPathNavigator>. The two approaches have different performance characteristics. Some transformations will execute faster when using an <xref:System.Xml.XmlReader>, and others will execute faster when using a <xref:System.Xml.XPath.XPathNavigator>. If performance is a concern, we recommend that you experiment with each approach to determine which will perform better in your circumstances.  
+ 
 ```csharp  
   
             string xslMarkup = @"<?xml version='1.0'?>  
@@ -794,7 +794,7 @@ using (XmlWriter writer = newTree.CreateWriter()) {
   
 Console.WriteLine(newTree);  
 ```  
-  
+ 
 ```vb  
   
             Dim xslMarkup As XDocument = <?xml version='1.0'?>  
@@ -827,9 +827,9 @@ End Using
   
 Console.WriteLine(newTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
             <Root>  
@@ -837,7 +837,7 @@ Console.WriteLine(newTree)
   <C2>Child2 data</C2>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -851,12 +851,12 @@ Console.WriteLine(newTree)
         <summary>Selects a collection of elements using an XPath expression.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
-  
- Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
-  
+Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
+ 
+Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

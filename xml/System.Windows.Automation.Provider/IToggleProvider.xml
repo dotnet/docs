@@ -22,10 +22,10 @@
     <summary>Exposes methods and properties to support UI Automation client access to controls that can cycle through a set of states and maintain a state once set.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.TogglePattern> control pattern.  
-  
+Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.TogglePattern> control pattern.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -47,18 +47,18 @@
         <summary>Cycles through the toggle states of a control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A control must cycle through its toggle states in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState>, and (if supported) <xref:System.Windows.Automation.ToggleState>.  
+A control must cycle through its toggle states in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState>, and (if supported) <xref:System.Windows.Automation.ToggleState>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows one possible implementation of this method for a custom control that can be toggled.  
-  
- [!code-csharp[UIAIToggleProvider_snip#Toggle](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAIToggleProvider_snip/CSharp/ToggleFragment.cs#toggle)]
- [!code-vb[UIAIToggleProvider_snip#Toggle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAIToggleProvider_snip/visualbasic/togglefragment.vb#toggle)]  
-  
+The following example shows one possible implementation of this method for a custom control that can be toggled.  
+ 
+[!code-csharp[UIAIToggleProvider_snip#Toggle](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAIToggleProvider_snip/CSharp/ToggleFragment.cs#toggle)]
+[!code-vb[UIAIToggleProvider_snip#Toggle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAIToggleProvider_snip/visualbasic/togglefragment.vb#toggle)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -80,18 +80,18 @@
         <value>The <see cref="T:System.Windows.Automation.ToggleState" /> of the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A control must cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState>, and (if supported) <xref:System.Windows.Automation.ToggleState>.  
+A control must cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState>, and (if supported) <xref:System.Windows.Automation.ToggleState>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows an implementation of this method for a control that can be toggled. The ToggleState returned is based on the color of the control; this is analogous to the <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property of a CheckBox control.  
-  
- [!code-csharp[UIAIToggleProvider_snip#ToggleState](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAIToggleProvider_snip/CSharp/ToggleFragment.cs#togglestate)]
- [!code-vb[UIAIToggleProvider_snip#ToggleState](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAIToggleProvider_snip/visualbasic/togglefragment.vb#togglestate)]  
-  
+The following example shows an implementation of this method for a control that can be toggled. The ToggleState returned is based on the color of the control; this is analogous to the <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property of a CheckBox control.  
+ 
+[!code-csharp[UIAIToggleProvider_snip#ToggleState](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAIToggleProvider_snip/CSharp/ToggleFragment.cs#togglestate)]
+[!code-vb[UIAIToggleProvider_snip#ToggleState](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAIToggleProvider_snip/visualbasic/togglefragment.vb#togglestate)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

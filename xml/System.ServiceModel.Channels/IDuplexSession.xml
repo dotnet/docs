@@ -19,12 +19,12 @@
     <summary>Defines the interface for the session implemented on each side of a bi-directional communication between messaging endpoints.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Channels.IDuplexSession> interface is the union of the inbound session, defined by the <xref:System.ServiceModel.Channels.IInputSession> interface, and the outbound session, defined by the <xref:System.ServiceModel.Channels.IOutputSession> interface. Either the inbound session or outbound session can be terminated independently of the other. The outbound session can be terminated synchronously by calling <xref:System.ServiceModel.Channels.IDuplexSession.CloseOutputSession%2A> or asynchronously by calling <xref:System.ServiceModel.Channels.IDuplexSession.BeginCloseOutputSession%2A>.  
-  
- The inbound session can be remotely terminated. The <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> associated with the inbound session starts returning `null` when that session is shutdown.  
-  
+The <xref:System.ServiceModel.Channels.IDuplexSession> interface is the union of the inbound session, defined by the <xref:System.ServiceModel.Channels.IInputSession> interface, and the outbound session, defined by the <xref:System.ServiceModel.Channels.IOutputSession> interface. Either the inbound session or outbound session can be terminated independently of the other. The outbound session can be terminated synchronously by calling <xref:System.ServiceModel.Channels.IDuplexSession.CloseOutputSession%2A> or asynchronously by calling <xref:System.ServiceModel.Channels.IDuplexSession.BeginCloseOutputSession%2A>.  
+ 
+The inbound session can be remotely terminated. The <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> associated with the inbound session starts returning `null` when that session is shutdown.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,10 +53,10 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous outbound session termination.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Terminating the outbound session does not affect the incoming session and so makes no statement about the ability to receive messages on the session associated with the input channel. This operation must complete within a default interval of time.  
-  
+Terminating the outbound session does not affect the incoming session and so makes no statement about the ability to receive messages on the session associated with the input channel. This operation must complete within a default interval of time.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -87,10 +87,10 @@
         <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous outbound session termination.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Terminating the outbound session does not affect the incoming session and so makes no statement about the ability to receive messages on the session associated with the input channel.  
-  
+Terminating the outbound session does not affect the incoming session and so makes no statement about the ability to receive messages on the session associated with the input channel.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -113,12 +113,12 @@
         <summary>Terminates the outbound session that indicates that no more messages will be sent from this endpoint on the channel associated with the session.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling <xref:System.ServiceModel.Channels.IDuplexSession.CloseOutputSession> signals to the other side of the session that it should return `null` from any outstanding or subsequent calls made to <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A>. <xref:System.ServiceModel.Channels.IDuplexSession.CloseOutputSession%2A> is idempotent, so calling it again has no effect.  
-  
- Terminating the outbound session does not affect the incoming session and so makes no statement about the ability to receive messages on the session associated with the input channel.  
-  
+Calling <xref:System.ServiceModel.Channels.IDuplexSession.CloseOutputSession> signals to the other side of the session that it should return `null` from any outstanding or subsequent calls made to <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A>. <xref:System.ServiceModel.Channels.IDuplexSession.CloseOutputSession%2A> is idempotent, so calling it again has no effect.  
+ 
+Terminating the outbound session does not affect the incoming session and so makes no statement about the ability to receive messages on the session associated with the input channel.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -158,12 +158,12 @@
         <summary>Terminates the outbound session that indicates that no more messages will be sent from this endpoint on the channel associated with the session within a specified interval of time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling <xref:System.ServiceModel.Channels.IDuplexSession.CloseOutputSession%28System.TimeSpan%29> signals to the other side of the session that it should return `null` from any outstanding or subsequent calls made to <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A>. <xref:System.ServiceModel.Channels.IDuplexSession.CloseOutputSession%2A> is idempotent, so calling it again has no effect.  
-  
- Terminating the outbound session does not affect the incoming session and so makes no statement about the ability to receive messages on the session associated with the input channel.  
-  
+Calling <xref:System.ServiceModel.Channels.IDuplexSession.CloseOutputSession%28System.TimeSpan%29> signals to the other side of the session that it should return `null` from any outstanding or subsequent calls made to <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A>. <xref:System.ServiceModel.Channels.IDuplexSession.CloseOutputSession%2A> is idempotent, so calling it again has no effect.  
+ 
+Terminating the outbound session does not affect the incoming session and so makes no statement about the ability to receive messages on the session associated with the input channel.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -203,10 +203,10 @@
         <summary>Completes an asynchronous operation to terminate the outbound session that indicates that no more messages will be sent from this endpoint on the channel associated with the session.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Terminating the outbound session does not affect the incoming session and so makes no statement about the ability to receive messages on the session associated with the input channel  
-  
+Terminating the outbound session does not affect the incoming session and so makes no statement about the ability to receive messages on the session associated with the input channel  
+ 
  ]]></format>
         </remarks>
       </Docs>

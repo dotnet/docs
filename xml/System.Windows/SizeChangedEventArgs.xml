@@ -33,12 +33,12 @@
           <see langword="true" /> if the <see cref="P:System.Windows.FrameworkElement.Height" /> component of the size changed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because <xref:System.Double> precision numbers process imprecisely, this property might return a value of `false` even when <xref:System.Windows.SizeChangedEventArgs.PreviousSize%2A> and <xref:System.Windows.SizeChangedEventArgs.NewSize%2A> are not equal.  
-  
- The layout system occasionally experiences this state due to minor fluctuations in the input parameters; however, the overall rendered scene is considered to be the same; therefore, no visible changes are detected. The handler for the <xref:System.Windows.FrameworkElement.SizeChanged> event should check for this state in order to avoid invalidation of layout if the dimension didn't actually change.  
-  
+Because <xref:System.Double> precision numbers process imprecisely, this property might return a value of `false` even when <xref:System.Windows.SizeChangedEventArgs.PreviousSize%2A> and <xref:System.Windows.SizeChangedEventArgs.NewSize%2A> are not equal.  
+ 
+The layout system occasionally experiences this state due to minor fluctuations in the input parameters; however, the overall rendered scene is considered to be the same; therefore, no visible changes are detected. The handler for the <xref:System.Windows.FrameworkElement.SizeChanged> event should check for this state in order to avoid invalidation of layout if the dimension didn't actually change.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -65,10 +65,10 @@
         <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation casts the generic handler as a <xref:System.Windows.SizeChangedEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
-  
+This implementation casts the generic handler as a <xref:System.Windows.SizeChangedEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -127,12 +127,12 @@
           <see langword="true" /> if the <see cref="P:System.Windows.FrameworkElement.Width" /> component of the size changed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because <xref:System.Double> precision numbers process imprecisely, this property might return a value of `false` even when <xref:System.Windows.SizeChangedEventArgs.PreviousSize%2A> and <xref:System.Windows.SizeChangedEventArgs.NewSize%2A> are not equal.  
-  
- The layout system occasionally experiences this state due to minor fluctuations in the input parameters; however, the overall rendered scene is considered to be the same; therefore, no visible changes are detected. The handler for the <xref:System.Windows.FrameworkElement.SizeChanged> event should check for this state in order to avoid invalidation of layout if the dimension didn't actually change.  
-  
+Because <xref:System.Double> precision numbers process imprecisely, this property might return a value of `false` even when <xref:System.Windows.SizeChangedEventArgs.PreviousSize%2A> and <xref:System.Windows.SizeChangedEventArgs.NewSize%2A> are not equal.  
+ 
+The layout system occasionally experiences this state due to minor fluctuations in the input parameters; however, the overall rendered scene is considered to be the same; therefore, no visible changes are detected. The handler for the <xref:System.Windows.FrameworkElement.SizeChanged> event should check for this state in order to avoid invalidation of layout if the dimension didn't actually change.  
+ 
  ]]></format>
         </remarks>
       </Docs>

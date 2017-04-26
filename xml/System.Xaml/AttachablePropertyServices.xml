@@ -14,12 +14,12 @@
     <summary>Provides static helper methods that obtain values and accessor method information from an attachable property and that work with an attached property store.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Most functionality in this class relies on an attached property store, which generally implements the <xref:System.Xaml.IAttachedPropertyStore> interface. However, parameters for passing the store into <xref:System.Xaml.AttachablePropertyServices> are not typed as the interface and are instead typed as `object`. This is because you can pass an arbitrary object, and in this case, an internal default attachable property store is used.  
-  
- Best practice for the arbitrary object is to pass the object that would otherwise be associated with the store. Do not pass `null` to indicate that you do not have an <xref:System.Xaml.IAttachedPropertyStore> to use. Passing `null` enters code paths that do nothing. Passing an object that is non-null, but evaluates as `null` on an attempted <xref:System.Xaml.IAttachedPropertyStore> cast, uses the default attachable property store.  
-  
+Most functionality in this class relies on an attached property store, which generally implements the <xref:System.Xaml.IAttachedPropertyStore> interface. However, parameters for passing the store into <xref:System.Xaml.AttachablePropertyServices> are not typed as the interface and are instead typed as `object`. This is because you can pass an arbitrary object, and in this case, an internal default attachable property store is used.  
+ 
+Best practice for the arbitrary object is to pass the object that would otherwise be associated with the store. Do not pass `null` to indicate that you do not have an <xref:System.Xaml.IAttachedPropertyStore> to use. Passing `null` enters code paths that do nothing. Passing an object that is non-null, but evaluates as `null` on an attempted <xref:System.Xaml.IAttachedPropertyStore> cast, uses the default attachable property store.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -48,10 +48,10 @@
         <summary>Copies all attachable property/value pairs from a specified attachable property store and into a destination array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Calling this method invokes an underlying <xref:System.Collections.Generic.ICollection%601.CopyTo%2A> implementation that is constrained with a key/value pair, which might be the source of exceptions that are not listed in this topic.  
-  
+Calling this method invokes an underlying <xref:System.Collections.Generic.ICollection%601.CopyTo%2A> implementation that is constrained with a key/value pair, which might be the source of exceptions that are not listed in this topic.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -102,10 +102,10 @@
           <see langword="true" /> if an attachable property entry for <paramref name="name" /> was found in the store and removed from it; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Stores are per instance; therefore, in a store, the `name` value should be unambiguous.  
-  
+Stores are per instance; therefore, in a store, the `name` value should be unambiguous.  
+ 
  ]]></format>
         </remarks>
       </Docs>

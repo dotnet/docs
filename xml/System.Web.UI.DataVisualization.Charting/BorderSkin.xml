@@ -209,10 +209,10 @@
         <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartImageAlignmentStyle" /> enumeration value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.BorderSkin.BackImageAlignment%2A> property is used by <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode> drawing mode.  
-  
+The <xref:System.Web.UI.DataVisualization.Charting.BorderSkin.BackImageAlignment%2A> property is used by <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode> drawing mode.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -324,10 +324,10 @@
         <value>A <see cref="T:System.Drawing.Color" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This color is combined with the primary background color, which is set with the <xref:System.Web.UI.DataVisualization.Charting.BorderSkin.BackColor%2A> property, when the <xref:System.Web.UI.DataVisualization.Charting.BorderSkin.BackHatchStyle%2A> and <xref:System.Web.UI.DataVisualization.Charting.BorderSkin.BackGradientStyle%2A> properties are used.  
-  
+This color is combined with the primary background color, which is set with the <xref:System.Web.UI.DataVisualization.Charting.BorderSkin.BackColor%2A> property, when the <xref:System.Web.UI.DataVisualization.Charting.BorderSkin.BackHatchStyle%2A> and <xref:System.Web.UI.DataVisualization.Charting.BorderSkin.BackGradientStyle%2A> properties are used.  
+ 
  ]]></format>
         </remarks>
       </Docs>

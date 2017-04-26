@@ -19,10 +19,10 @@
     <summary>Stores the information about instance data and metadata.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The data and metadata in the instance persistence system is organized as named values in property bags.  Each property bag is a dictionary associating <xref:System.Xml.Linq.XName> objects with <xref:System.Runtime.DurableInstancing.InstanceValue> objects.  
-  
+The data and metadata in the instance persistence system is organized as named values in property bags.  Each property bag is a dictionary associating <xref:System.Xml.Linq.XName> objects with <xref:System.Runtime.DurableInstancing.InstanceValue> objects.  
+ 
  ]]></format>
     </remarks>
   </Docs>

@@ -14,10 +14,10 @@
     <summary>Interacts with the parser to build a <see cref="T:System.Web.UI.WebControls.TableCell" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.TableCellControlBuilder> class is used primarily by control developers. To create a custom control builder for a control that is derived from the <xref:System.Web.UI.WebControls.TableCell> class, you must inherit from this class.  
-  
+The <xref:System.Web.UI.WebControls.TableCellControlBuilder> class is used primarily by control developers. To create a custom control builder for a control that is derived from the <xref:System.Web.UI.WebControls.TableCell> class, you must inherit from this class.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -56,10 +56,10 @@
           <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.TableCellControlBuilder.AllowWhitespaceLiterals%2A> method overrides the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> method to ignore white space in the <xref:System.Web.UI.WebControls.TableCell> control.  
-  
+The <xref:System.Web.UI.WebControls.TableCellControlBuilder.AllowWhitespaceLiterals%2A> method overrides the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> method to ignore white space in the <xref:System.Web.UI.WebControls.TableCell> control.  
+ 
  ]]></format>
         </remarks>
       </Docs>

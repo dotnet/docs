@@ -19,31 +19,31 @@
     <summary>Provides the information necessary to create an instance of an object. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> can store information that describes an instance of an object. This information can be used to create an instance of the object.  
-  
- Some custom serializers use <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> to represent serializable objects. Several methods of a <xref:System.ComponentModel.TypeDescriptor> use <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> to represent or instantiate objects.  
-  
- An <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> provides the following members:  
-  
+<xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> can store information that describes an instance of an object. This information can be used to create an instance of the object.  
+ 
+Some custom serializers use <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> to represent serializable objects. Several methods of a <xref:System.ComponentModel.TypeDescriptor> use <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> to represent or instantiate objects.  
+ 
+An <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> provides the following members:  
+ 
 -   A <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor.MemberInfo%2A> property that describes this object.  
-  
+ 
 -   An <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor.Arguments%2A> property that consists of the constructor arguments that can be used to instantiate this object.  
-  
+ 
 -   A Boolean <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor.IsComplete%2A> property that indicates whether the object is completely represented by the current information.  
-  
+ 
 -   An <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor.Invoke%2A> method that can be used to create an instance of the represented object.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates how to use a type converter that participates in code generation through the use of instance descriptors.  
-  
- [!code-cpp[InstanceDescriptorSample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/InstanceDescriptorSample/CPP/instancedescriptor.cpp#1)]
- [!code-csharp[InstanceDescriptorSample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/InstanceDescriptorSample/CS/instancedescriptor.cs#1)]
- [!code-vb[InstanceDescriptorSample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/InstanceDescriptorSample/VB/instancedescriptor.vb#1)]  
-  
+The following code example illustrates how to use a type converter that participates in code generation through the use of instance descriptors.  
+ 
+[!code-cpp[InstanceDescriptorSample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/InstanceDescriptorSample/CPP/instancedescriptor.cpp#1)]
+[!code-csharp[InstanceDescriptorSample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/InstanceDescriptorSample/CS/instancedescriptor.cs#1)]
+[!code-vb[InstanceDescriptorSample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/InstanceDescriptorSample/VB/instancedescriptor.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -167,10 +167,10 @@
         <returns>The object this instance descriptor describes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method creates a new instance of the object indicated by the <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor.MemberInfo%2A> property, using the specified arguments to create that particular type of instance.  
-  
+This method creates a new instance of the object indicated by the <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor.MemberInfo%2A> property, using the specified arguments to create that particular type of instance.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
           <see langword="true" /> if the instance is completely described; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Typically, an <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> completely describes a particular instance. However, some objects are too complex for a single method or constructor to represent. <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor.IsComplete%2A> indicates whether an <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> is incomplete, so a user can identify these objects and perform additional processing, if necessary, to further describe their state.  
-  
+Typically, an <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> completely describes a particular instance. However, some objects are too complex for a single method or constructor to represent. <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor.IsComplete%2A> indicates whether an <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> is incomplete, so a user can identify these objects and perform additional processing, if necessary, to further describe their state.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -228,10 +228,10 @@
         <value>A <see cref="T:System.Reflection.MemberInfo" /> that describes the instance that this object is associated with.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value of this property can be a <xref:System.Reflection.MethodInfo>, <xref:System.Reflection.ConstructorInfo>, <xref:System.Reflection.FieldInfo>, or <xref:System.Reflection.PropertyInfo>.  
-  
+The value of this property can be a <xref:System.Reflection.MethodInfo>, <xref:System.Reflection.ConstructorInfo>, <xref:System.Reflection.FieldInfo>, or <xref:System.Reflection.PropertyInfo>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

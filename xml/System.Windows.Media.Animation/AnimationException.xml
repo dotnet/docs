@@ -14,10 +14,10 @@
     <summary>The exception that is thrown when an error occurs while animating a property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class is not used for timing-related errors, such as creating an animation with a negative Duration or invalid <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> and <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> settings.  
-  
+This class is not used for timing-related errors, such as creating an animation with a negative Duration or invalid <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> and <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> settings.  
+ 
  ]]></format>
     </remarks>
   </Docs>

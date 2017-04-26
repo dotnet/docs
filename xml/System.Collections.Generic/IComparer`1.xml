@@ -31,24 +31,24 @@
     <summary>Defines a method that a type implements to compare two objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This interface is used with the <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=fullName> and <xref:System.Collections.Generic.List%601.BinarySearch%2A?displayProperty=fullName> methods. It provides a way to customize the sort order of a collection. Classes that implement this interface include the <xref:System.Collections.Generic.SortedDictionary%602> and <xref:System.Collections.Generic.SortedList%602> generic classes.  
+This interface is used with the <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=fullName> and <xref:System.Collections.Generic.List%601.BinarySearch%2A?displayProperty=fullName> methods. It provides a way to customize the sort order of a collection. Classes that implement this interface include the <xref:System.Collections.Generic.SortedDictionary%602> and <xref:System.Collections.Generic.SortedList%602> generic classes.  
+ 
+The default implementation of this interface is the <xref:System.Collections.Generic.Comparer%601> class. The <xref:System.StringComparer> class implements this interface for type <xref:System.String>.  
+ 
+This interface supports ordering comparisons. That is, when the <xref:System.Collections.Generic.Comparer%601.Compare%2A> method returns 0, it means that two objects sort the same. Implementation of exact equality comparisons is provided by the <xref:System.Collections.Generic.IEqualityComparer%601> generic interface.  
+ 
+We recommend that you derive from the <xref:System.Collections.Generic.Comparer%601> class instead of implementing the <xref:System.Collections.Generic.IComparer%601> interface, because the <xref:System.Collections.Generic.Comparer%601> class provides an explicit interface implementation of the <xref:System.Collections.Generic.Comparer%601.System%23Collections%23IComparer%23Compare%2A> method and the <xref:System.Collections.Generic.Comparer%601.Default%2A> property that gets the default comparer for the object.  
+ 
   
- The default implementation of this interface is the <xref:System.Collections.Generic.Comparer%601> class. The <xref:System.StringComparer> class implements this interface for type <xref:System.String>.  
-  
- This interface supports ordering comparisons. That is, when the <xref:System.Collections.Generic.Comparer%601.Compare%2A> method returns 0, it means that two objects sort the same. Implementation of exact equality comparisons is provided by the <xref:System.Collections.Generic.IEqualityComparer%601> generic interface.  
-  
- We recommend that you derive from the <xref:System.Collections.Generic.Comparer%601> class instead of implementing the <xref:System.Collections.Generic.IComparer%601> interface, because the <xref:System.Collections.Generic.Comparer%601> class provides an explicit interface implementation of the <xref:System.Collections.Generic.Comparer%601.System%23Collections%23IComparer%23Compare%2A> method and the <xref:System.Collections.Generic.Comparer%601.Default%2A> property that gets the default comparer for the object.  
-  
-   
-  
+ 
 ## Examples  
- The following example implements the <xref:System.Collections.Generic.IComparer%601> interface to compare objects of type `Box` according to their dimensions. This example is part of a larger example provided for the <xref:System.Collections.Generic.Comparer%601> class.  
-  
- [!code-csharp[System.Collections.Generic.BoxCompare#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#7)]
- [!code-vb[System.Collections.Generic.BoxCompare#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#7)]  
-  
+The following example implements the <xref:System.Collections.Generic.IComparer%601> interface to compare objects of type `Box` according to their dimensions. This example is part of a larger example provided for the <xref:System.Collections.Generic.Comparer%601> class.  
+ 
+[!code-csharp[System.Collections.Generic.BoxCompare#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#7)]
+[!code-vb[System.Collections.Generic.BoxCompare#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#7)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -123,20 +123,20 @@
 </list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Implement this method to provide a customized sort order comparison for type `T`.  
+Implement this method to provide a customized sort order comparison for type `T`.  
+ 
+Comparing `null` with any reference type is allowed and does not generate an exception. A null reference is considered to be less than any reference that is not null.  
+ 
   
- Comparing `null` with any reference type is allowed and does not generate an exception. A null reference is considered to be less than any reference that is not null.  
-  
-   
-  
+ 
 ## Examples  
- The following example implements the <xref:System.Collections.Generic.IComparer%601> interface to compare objects of type `Box` according to their dimensions. This example is part of a larger example provided for the <xref:System.Collections.Generic.Comparer%601> class.  
-  
- [!code-csharp[System.Collections.Generic.BoxCompare#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#7)]
- [!code-vb[System.Collections.Generic.BoxCompare#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#7)]  
-  
+The following example implements the <xref:System.Collections.Generic.IComparer%601> interface to compare objects of type `Box` according to their dimensions. This example is part of a larger example provided for the <xref:System.Collections.Generic.Comparer%601> class.  
+ 
+[!code-csharp[System.Collections.Generic.BoxCompare#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxcompare/cs/program.cs#7)]
+[!code-vb[System.Collections.Generic.BoxCompare#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxcompare/vb/program.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -13,15 +13,15 @@
     <summary>The <see cref="T:System.DirectoryServices.ExtendedDN" /> enumeration specifies the format in which to return the extended distinguished name. This enumeration is used with the <see cref="P:System.DirectoryServices.DirectorySearcher.ExtendedDN" /> property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The extended form of a distinguished name includes a string representation of the objectGUID property of an object. For security principal objects such as users, groups, and computers, the extended form also includes a string representation of the objectSID property. For more information about the objectGUID and objectSID properties, see the topics [Object-Guid](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_objectguid.asp) and [Object-Sid](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_objectguid.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+The extended form of a distinguished name includes a string representation of the objectGUID property of an object. For security principal objects such as users, groups, and computers, the extended form also includes a string representation of the objectSID property. For more information about the objectGUID and objectSID properties, see the topics [Object-Guid](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_objectguid.asp) and [Object-Sid](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_objectguid.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following C# example shows how to return a collection of distinguished names in hexadecimal format.  
-  
+The following C# example shows how to return a collection of distinguished names in hexadecimal format.  
+ 
 ```csharp  
 using System.DirectoryServices;  
 ...  
@@ -31,7 +31,7 @@ src.ExtendedDN = ExtendedDN.HexString;
 SearchResultCollection res = src.FindAll();  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>

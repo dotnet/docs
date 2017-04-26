@@ -14,12 +14,12 @@
     <summary>Provides information about a cache entry that will be removed from the cache.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The arguments in the <xref:System.Runtime.Caching.CacheEntryUpdateArguments> class contain details about an entry that the cache implementation is about to remove. The arguments include a key to the cache entry, a reference to the <xref:System.Runtime.Caching.ObjectCache> instance that the entry will be removed from, a reason for the removal, and the region name in the cache that contains the entry. The constructor of the <xref:System.Runtime.Caching.CacheEntryUpdateArguments> class uses these arguments to create a new instance of the class.  
-  
- A <xref:System.Runtime.Caching.CacheEntryUpdateArguments> object is passed to a <xref:System.Runtime.Caching.CacheEntryUpdateCallback> handler, which notifies the cache about the entry to remove.  
-  
+The arguments in the <xref:System.Runtime.Caching.CacheEntryUpdateArguments> class contain details about an entry that the cache implementation is about to remove. The arguments include a key to the cache entry, a reference to the <xref:System.Runtime.Caching.ObjectCache> instance that the entry will be removed from, a reason for the removal, and the region name in the cache that contains the entry. The constructor of the <xref:System.Runtime.Caching.CacheEntryUpdateArguments> class uses these arguments to create a new instance of the class.  
+ 
+A <xref:System.Runtime.Caching.CacheEntryUpdateArguments> object is passed to a <xref:System.Runtime.Caching.CacheEntryUpdateCallback> handler, which notifies the cache about the entry to remove.  
+ 
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -142,10 +142,10 @@
         <value>The cache entry to update in the cache object. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you want to exchange a cache entry that is about to be removed for an updated cache entry, you must assign a <xref:System.Runtime.Caching.CacheItem> object to the <xref:System.Runtime.Caching.CacheEntryUpdateArguments.UpdatedCacheItem%2A> property and assign a <xref:System.Runtime.Caching.CacheItemPolicy> object to the <xref:System.Runtime.Caching.CacheEntryUpdateArguments.UpdatedCacheItemPolicy%2A> property. The <xref:System.Runtime.Caching.CacheItem> value must be a value other than `null`. Cache implementations will interpret a `null` value for the <xref:System.Runtime.Caching.CacheEntryUpdateArguments.UpdatedCacheItem%2A> property as a notice that the current cache entry should be removed but not replaced.  
-  
+If you want to exchange a cache entry that is about to be removed for an updated cache entry, you must assign a <xref:System.Runtime.Caching.CacheItem> object to the <xref:System.Runtime.Caching.CacheEntryUpdateArguments.UpdatedCacheItem%2A> property and assign a <xref:System.Runtime.Caching.CacheItemPolicy> object to the <xref:System.Runtime.Caching.CacheEntryUpdateArguments.UpdatedCacheItemPolicy%2A> property. The <xref:System.Runtime.Caching.CacheItem> value must be a value other than `null`. Cache implementations will interpret a `null` value for the <xref:System.Runtime.Caching.CacheEntryUpdateArguments.UpdatedCacheItem%2A> property as a notice that the current cache entry should be removed but not replaced.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -167,12 +167,12 @@
         <value>The cache eviction or expiration policy of the cache item that was updated. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you want to replace a cache entry that is about to be removed with an updated cache entry, you can optionally assign a <xref:System.Runtime.Caching.CacheItemPolicy> object to the <xref:System.Runtime.Caching.CacheEntryUpdateArguments.UpdatedCacheItemPolicy%2A> property. The <xref:System.Runtime.Caching.CacheItemPolicy> object enables you to specify cache policy (such as expiration details) for the updated cache entry.  
-  
- For more information about how to replace a removed cache entry by using an updated one, see the <xref:System.Runtime.Caching.CacheEntryUpdateArguments> class overview and the <xref:System.Runtime.Caching.CacheEntryUpdateArguments.UpdatedCacheItem%2A> property.  
-  
+If you want to replace a cache entry that is about to be removed with an updated cache entry, you can optionally assign a <xref:System.Runtime.Caching.CacheItemPolicy> object to the <xref:System.Runtime.Caching.CacheEntryUpdateArguments.UpdatedCacheItemPolicy%2A> property. The <xref:System.Runtime.Caching.CacheItemPolicy> object enables you to specify cache policy (such as expiration details) for the updated cache entry.  
+ 
+For more information about how to replace a removed cache entry by using an updated one, see the <xref:System.Runtime.Caching.CacheEntryUpdateArguments> class overview and the <xref:System.Runtime.Caching.CacheEntryUpdateArguments.UpdatedCacheItem%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>

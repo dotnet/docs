@@ -14,10 +14,10 @@
     <summary>Converts instances of <see cref="T:System.Windows.Duration" /> to and from other type representations.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This converter converts either from a string representation of a <xref:System.TimeSpan> or from named constants of <xref:System.Windows.Duration>.  
-  
+This converter converts either from a string representation of a <xref:System.TimeSpan> or from named constants of <xref:System.Windows.Duration>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -145,10 +145,10 @@
         <returns>A new instance of the <paramref name="destinationType" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- `destinationType` must be <xref:System.String>.  
-  
+`destinationType` must be <xref:System.String>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

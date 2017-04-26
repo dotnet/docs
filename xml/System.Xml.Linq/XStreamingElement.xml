@@ -24,21 +24,21 @@
     <summary>Represents elements in an XML tree that supports deferred streaming output.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This class allows you to create an XML tree that supports deferred streaming output. You use this class to create an XML tree in a very similar fashion to creating an XML tree using <xref:System.Xml.Linq.XElement>. However, there is a fundamental difference. When you use a LINQ query to specify content when creating an XML tree using <xref:System.Xml.Linq.XElement>, the query variable is iterated at the time of construction of the XML tree, and the results of the query are added to the XML tree. In contrast, when you create an XML tree using <xref:System.Xml.Linq.XStreamingElement>, a reference to the query variable is stored in the XML tree without being iterated. Queries are iterated only upon serialization. This allows you to create larger XML trees while maintaining a smaller memory footprint.  
+This class allows you to create an XML tree that supports deferred streaming output. You use this class to create an XML tree in a very similar fashion to creating an XML tree using <xref:System.Xml.Linq.XElement>. However, there is a fundamental difference. When you use a LINQ query to specify content when creating an XML tree using <xref:System.Xml.Linq.XElement>, the query variable is iterated at the time of construction of the XML tree, and the results of the query are added to the XML tree. In contrast, when you create an XML tree using <xref:System.Xml.Linq.XStreamingElement>, a reference to the query variable is stored in the XML tree without being iterated. Queries are iterated only upon serialization. This allows you to create larger XML trees while maintaining a smaller memory footprint.  
+ 
+If you are streaming from an input source, such as a text file, then you can read a very large text file, and generate a very large XML document while maintaining a small memory footprint.  
+ 
+Another scenario is that you have a large XML tree that has been loaded into memory, and you want to create a transformed version of the document. If you create a new document using <xref:System.Xml.Linq.XElement>, then you will have two large XML trees in memory upon completion of the transformation. However, if you create the new XML tree using <xref:System.Xml.Linq.XStreamingElement>, then your working set will be effectively cut in half.  
+ 
+Note that when debugging a program that uses <xref:System.Xml.Linq.XStreamingElement>, displaying the value of an object causes its <xref:System.Xml.Linq.XStreamingElement.ToString%2A> method to be called. This causes the XML to be serialized. If the semantics of your streaming element query are such that the streaming element can only be streamed once, this may cause undesirable behavior in your debugging experience.  
+ 
   
- If you are streaming from an input source, such as a text file, then you can read a very large text file, and generate a very large XML document while maintaining a small memory footprint.  
-  
- Another scenario is that you have a large XML tree that has been loaded into memory, and you want to create a transformed version of the document. If you create a new document using <xref:System.Xml.Linq.XElement>, then you will have two large XML trees in memory upon completion of the transformation. However, if you create the new XML tree using <xref:System.Xml.Linq.XStreamingElement>, then your working set will be effectively cut in half.  
-  
- Note that when debugging a program that uses <xref:System.Xml.Linq.XStreamingElement>, displaying the value of an object causes its <xref:System.Xml.Linq.XStreamingElement.ToString%2A> method to be called. This causes the XML to be serialized. If the semantics of your streaming element query are such that the streaming element can only be streamed once, this may cause undesirable behavior in your debugging experience.  
-  
-   
-  
+ 
 ## Examples  
- The following example first creates a source XML tree. It then creates a transform of the source XML tree using <xref:System.Xml.Linq.XElement>. This transform creates a new tree in memory. It then creates a transform of the source XML tree using <xref:System.Xml.Linq.XStreamingElement>. This transform doesn't execute the query until the transformed tree is serialized to the console. Its memory usage is less.  
-  
+The following example first creates a source XML tree. It then creates a transform of the source XML tree using <xref:System.Xml.Linq.XElement>. This transform creates a new tree in memory. It then creates a transform of the source XML tree using <xref:System.Xml.Linq.XStreamingElement>. This transform doesn't execute the query until the transformed tree is serialized to the console. Its memory usage is less.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -65,7 +65,7 @@ Console.WriteLine(dstTree1);
 Console.WriteLine("------");  
 Console.WriteLine(dstTree2);  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _  
@@ -94,9 +94,9 @@ Console.WriteLine(dstTree1)
 Console.WriteLine("------")  
 Console.WriteLine(dstTree2)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <NewRoot>  
@@ -111,11 +111,11 @@ Console.WriteLine(dstTree2)
   <DifferentChild>5</DifferentChild>  
 </NewRoot>  
 ```  
-  
- One approach to processing a text file is to write an extension method that streams the text file a line at a time using the `yield return` construct. You then can write a LINQ query that processes the text file in a lazy deferred fashion. If you then use the <xref:System.Xml.Linq.XStreamingElement> to stream output, you then can create a transform from the text file to XML that uses a minimal amount of memory, regardless of the size of the source text file.  
-  
- The following text file, People.txt, is the source for this example.  
-  
+ 
+One approach to processing a text file is to write an extension method that streams the text file a line at a time using the `yield return` construct. You then can write a LINQ query that processes the text file in a lazy deferred fashion. If you then use the <xref:System.Xml.Linq.XStreamingElement> to stream output, you then can create a transform from the text file to XML that uses a minimal amount of memory, regardless of the size of the source text file.  
+ 
+The following text file, People.txt, is the source for this example.  
+ 
 ```  
   
                 #This is a comment  
@@ -123,9 +123,9 @@ Console.WriteLine(dstTree2)
 2,Nikolay,Grachev,Programmer  
 3,David,Wright,Inventor  
 ```  
-  
- The following code contains an extension method that streams the lines of the text file in a deferred fashion.  
-  
+ 
+The following code contains an extension method that streams the lines of the text file in a deferred fashion.  
+ 
 ```csharp  
   
                 public static class StreamReaderSequence  
@@ -164,7 +164,7 @@ class Program
     }  
 }  
 ```  
-  
+ 
 ```vb  
 Module StreamReaderSequence  
   
@@ -197,9 +197,9 @@ Module Module1
     End Sub  
 End Module  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <Root>  
@@ -220,21 +220,21 @@ End Module
   </Person>  
 </Root>  
 ```  
-  
- Sometimes you have to transform large XML files, and write your application so that the memory footprint of the application is predictable. If you try to populate an XML tree with a very large XML file, your memory usage will be proportional to the size of the file (that is, excessive). Therefore, you should use a streaming technique instead.  
-  
- Certain standard query operators, such as <xref:System.Linq.Enumerable.OrderBy%2A>, iterate their source, collect all of the data, sort it, and then finally yield the first item in the sequence. Note that if you use a query operator that materializes its source before yielding the first item, you will not retain a small memory footprint for your application.  
-  
- Even if you use the technique described in , if you try to assemble an XML tree that contains the transformed document, memory usage may be too great.  
-  
- The following example builds on the example in [How to: Stream XML Fragments with Access to Header Information](http://msdn.microsoft.com/library/01311522-9d03-4977-8641-2932c6f56092).  
-  
- This example uses the deferred execution capabilities of <xref:System.Xml.Linq.XStreamingElement> to stream the output.  
-  
- Note that the custom axis (`StreamCustomerItem`) is specifically written so that it expects a document that has `Customer`, `Name`, and `Item` elements, and that those elements will be arranged as in the following Source.xml document. A more robust implementation, however, would either validate the source document with an XSD, or would be prepared to parse an invalid document.  
-  
- The following is the source document, Source.xml:  
-  
+ 
+Sometimes you have to transform large XML files, and write your application so that the memory footprint of the application is predictable. If you try to populate an XML tree with a very large XML file, your memory usage will be proportional to the size of the file (that is, excessive). Therefore, you should use a streaming technique instead.  
+ 
+Certain standard query operators, such as <xref:System.Linq.Enumerable.OrderBy%2A>, iterate their source, collect all of the data, sort it, and then finally yield the first item in the sequence. Note that if you use a query operator that materializes its source before yielding the first item, you will not retain a small memory footprint for your application.  
+ 
+Even if you use the technique described in , if you try to assemble an XML tree that contains the transformed document, memory usage may be too great.  
+ 
+The following example builds on the example in [How to: Stream XML Fragments with Access to Header Information](http://msdn.microsoft.com/library/01311522-9d03-4977-8641-2932c6f56092).  
+ 
+This example uses the deferred execution capabilities of <xref:System.Xml.Linq.XStreamingElement> to stream the output.  
+ 
+Note that the custom axis (`StreamCustomerItem`) is specifically written so that it expects a document that has `Customer`, `Name`, and `Item` elements, and that those elements will be arranged as in the following Source.xml document. A more robust implementation, however, would either validate the source document with an XSD, or would be prepared to parse an invalid document.  
+ 
+The following is the source document, Source.xml:  
+ 
 ```xml  
   
                 <?xml version="1.0" encoding="utf-8" ?>   
@@ -280,9 +280,9 @@ End Module
   </Customer>  
 </Root>  
 ```  
-  
- The following code contains a method that uses an <xref:System.Xml.XmlReader> to stream the source XML. It uses <xref:System.Xml.Linq.XStreamingElement> to stream the new XML.  
-  
+ 
+The following code contains a method that uses an <xref:System.Xml.XmlReader> to stream the source XML. It uses <xref:System.Xml.Linq.XStreamingElement> to stream the new XML.  
+ 
 ```csharp  
   
                 static IEnumerable<XElement> StreamCustomerItem(string uri)  
@@ -351,7 +351,7 @@ static void Main(string[] args)
     Console.WriteLine(File.ReadAllText("Test.xml"));  
 }  
 ```  
-  
+ 
 ```vb  
 Iterator Function StreamCustomerItem(uri As String) As IEnumerable(Of XElement)  
   
@@ -408,9 +408,9 @@ Sub Main()
 End Sub  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <?xml version="1.0" encoding="utf-8"?>  
@@ -457,7 +457,7 @@ End Sub
   </Item>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -489,16 +489,16 @@ End Sub
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XElement" /> class from the specified <see cref="T:System.Xml.Linq.XName" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a streaming element with no content and no attributes.  
+This constructor creates a streaming element with no content and no attributes.  
+ 
+There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
+ 
   
- There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
-  
-   
-  
+ 
 ## Examples  
-  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -517,7 +517,7 @@ XStreamingElement dstTree = new XStreamingElement("NewRoot",
   
 Console.WriteLine(dstTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _  
@@ -537,9 +537,9 @@ Dim dstTree As XStreamingElement = New XStreamingElement("NewRoot", _
   
 Console.WriteLine(dstTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <NewRoot>  
@@ -548,7 +548,7 @@ Console.WriteLine(dstTree)
   <DifferentChild>5</DifferentChild>  
 </NewRoot>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -582,21 +582,21 @@ Console.WriteLine(dstTree)
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XStreamingElement" /> class with the specified name and content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a streaming element with the specified content and attributes.  
+This constructor creates a streaming element with the specified content and attributes.  
+ 
+There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
+ 
+Queries are not iterated until the <xref:System.Xml.Linq.XStreamingElement> is serialized. This is in contrast to using queries for content for an <xref:System.Xml.Linq.XElement>, where queries are iterated at the time of construction of the new <xref:System.Xml.Linq.XElement>.  
+ 
+For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
   
- There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
-  
- Queries are not iterated until the <xref:System.Xml.Linq.XStreamingElement> is serialized. This is in contrast to using queries for content for an <xref:System.Xml.Linq.XElement>, where queries are iterated at the time of construction of the new <xref:System.Xml.Linq.XElement>.  
-  
- For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
-   
-  
+ 
 ## Examples  
- This example uses the following XML file, named Source.xml:  
-  
+This example uses the following XML file, named Source.xml:  
+ 
 ```xml  
   
                 <?xml version="1.0" encoding="utf-8" ?>   
@@ -612,7 +612,7 @@ Console.WriteLine(dstTree)
   </Child>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -652,21 +652,21 @@ Console.WriteLine(dstTree)
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XStreamingElement" /> class with the specified name and content.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a streaming element with the specified content and attributes.  
+This constructor creates a streaming element with the specified content and attributes.  
+ 
+There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
+ 
+Queries are not iterated until the <xref:System.Xml.Linq.XStreamingElement> is serialized. This is in contrast to using queries for content for an <xref:System.Xml.Linq.XElement>, where queries are iterated at the time of construction of the new <xref:System.Xml.Linq.XElement>.  
+ 
+For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
   
- There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
-  
- Queries are not iterated until the <xref:System.Xml.Linq.XStreamingElement> is serialized. This is in contrast to using queries for content for an <xref:System.Xml.Linq.XElement>, where queries are iterated at the time of construction of the new <xref:System.Xml.Linq.XElement>.  
-  
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
-   
-  
+ 
 ## Examples  
- This example uses the following XML file, named Source.xml:  
-  
+This example uses the following XML file, named Source.xml:  
+ 
 ```xml  
   
                 <?xml version="1.0" encoding="utf-8" ?>   
@@ -682,7 +682,7 @@ Console.WriteLine(dstTree)
   </Child>  
 </Root>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -717,19 +717,19 @@ Console.WriteLine(dstTree)
         <summary>Adds the specified content as children to this <see cref="T:System.Xml.Linq.XStreamingElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor adds the specified content and attributes to the <xref:System.Xml.Linq.XStreamingElement>. While it is often possible to construct the <xref:System.Xml.Linq.XStreamingElement> in a single statement, it is sometimes more convenient to add content to the streaming element incrementally.  
+This constructor adds the specified content and attributes to the <xref:System.Xml.Linq.XStreamingElement>. While it is often possible to construct the <xref:System.Xml.Linq.XStreamingElement> in a single statement, it is sometimes more convenient to add content to the streaming element incrementally.  
+ 
+Queries are not iterated until the <xref:System.Xml.Linq.XStreamingElement> is serialized. This is in contrast to using queries for content for an <xref:System.Xml.Linq.XElement>, where queries are iterated at the time of construction of the new <xref:System.Xml.Linq.XElement>.  
+ 
+For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
   
- Queries are not iterated until the <xref:System.Xml.Linq.XStreamingElement> is serialized. This is in contrast to using queries for content for an <xref:System.Xml.Linq.XElement>, where queries are iterated at the time of construction of the new <xref:System.Xml.Linq.XElement>.  
-  
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a new <xref:System.Xml.Linq.XStreamingElement>. It then adds two queries to the streaming element. The queries are not iterated until the streaming element is serialized.  
-  
+The following example creates a new <xref:System.Xml.Linq.XStreamingElement>. It then adds two queries to the streaming element. The queries are not iterated until the streaming element is serialized.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -756,7 +756,7 @@ dstTree.Add(
   
 Console.WriteLine(dstTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _  
@@ -784,9 +784,9 @@ dstTree.Add( _
   
 Console.WriteLine(dstTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <NewRoot>  
@@ -796,7 +796,7 @@ Console.WriteLine(dstTree)
   <DifferentChild>5</DifferentChild>  
 </NewRoot>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -837,19 +837,19 @@ Console.WriteLine(dstTree)
         <summary>Adds the specified content as children to this <see cref="T:System.Xml.Linq.XStreamingElement" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor adds the specified content and attributes to the <xref:System.Xml.Linq.XStreamingElement>. While it is often possible to construct the <xref:System.Xml.Linq.XStreamingElement> in a single statement, it is sometimes more convenient to add content to the streaming element incrementally.  
+This constructor adds the specified content and attributes to the <xref:System.Xml.Linq.XStreamingElement>. While it is often possible to construct the <xref:System.Xml.Linq.XStreamingElement> in a single statement, it is sometimes more convenient to add content to the streaming element incrementally.  
+ 
+Queries are not iterated until the <xref:System.Xml.Linq.XStreamingElement> is serialized. This is in contrast to using queries for content for an <xref:System.Xml.Linq.XElement>, where queries are iterated at the time of construction of the new <xref:System.Xml.Linq.XElement>.  
+ 
+For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
   
- Queries are not iterated until the <xref:System.Xml.Linq.XStreamingElement> is serialized. This is in contrast to using queries for content for an <xref:System.Xml.Linq.XElement>, where queries are iterated at the time of construction of the new <xref:System.Xml.Linq.XElement>.  
-  
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a new <xref:System.Xml.Linq.XStreamingElement>. It then adds two queries to the streaming element. The queries are not iterated until the streaming element is serialized.  
-  
+The following example creates a new <xref:System.Xml.Linq.XStreamingElement>. It then adds two queries to the streaming element. The queries are not iterated until the streaming element is serialized.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -876,7 +876,7 @@ dstTree.Add(
   
 Console.WriteLine(dstTree);  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _  
@@ -904,9 +904,9 @@ dstTree.Add( _
   
 Console.WriteLine(dstTree)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <NewRoot>  
@@ -916,7 +916,7 @@ Console.WriteLine(dstTree)
   <DifferentChild>5</DifferentChild>  
 </NewRoot>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -948,10 +948,10 @@ Console.WriteLine(dstTree)
         <value>An <see cref="T:System.Xml.Linq.XName" /> that contains the name of this streaming element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- This example creates a new streaming element, and then prints the name of the element.  
-  
+This example creates a new streaming element, and then prints the name of the element.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -970,7 +970,7 @@ XStreamingElement dstTree = new XStreamingElement("NewRoot",
   
 Console.WriteLine(dstTree.Name);  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _  
@@ -990,14 +990,14 @@ Dim dstTree As XStreamingElement = New XStreamingElement("NewRoot", _
   
 Console.WriteLine(dstTree.Name)  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
 NewRoot  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1032,14 +1032,14 @@ NewRoot
         <summary>Outputs this <see cref="T:System.Xml.Linq.XStreamingElement" /> to the specified <see cref="T:System.IO.Stream" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space will not be preserved.  
-  
- If you want to control white space, use the overload of <xref:System.Xml.Linq.XStreamingElement.Save%2A> that takes <xref:System.Xml.Linq.SaveOptions> as a parameter. Use the <xref:System.Xml.Linq.SaveOptions> option to save unindented XML. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
-  
- Use <xref:System.Xml.Linq.SaveOptions> option if you want to remove duplicate namespace declarations.  
-  
+The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space will not be preserved.  
+ 
+If you want to control white space, use the overload of <xref:System.Xml.Linq.XStreamingElement.Save%2A> that takes <xref:System.Xml.Linq.SaveOptions> as a parameter. Use the <xref:System.Xml.Linq.SaveOptions> option to save unindented XML. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
+ 
+Use <xref:System.Xml.Linq.SaveOptions> option if you want to remove duplicate namespace declarations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1074,17 +1074,17 @@ NewRoot
         <summary>Serialize this streaming element to a <see cref="T:System.IO.TextWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space nodes in the XML tree will not be preserved.  
+The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space nodes in the XML tree will not be preserved.  
+ 
+If you want to control white space, use one of the overloads of <xref:System.Xml.Linq.XStreamingElement.Save%2A> that take <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ 
   
- If you want to control white space, use one of the overloads of <xref:System.Xml.Linq.XStreamingElement.Save%2A> that take <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a source XML tree, then instantiates an <xref:System.Xml.Linq.XStreamingElement> using a query on the source XML tree. It then writes the streaming element to a <xref:System.IO.StringWriter>.  
-  
+The following example creates a source XML tree, then instantiates an <xref:System.Xml.Linq.XStreamingElement> using a query on the source XML tree. It then writes the streaming element to a <xref:System.IO.StringWriter>.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -1105,7 +1105,7 @@ StringBuilder sb = new StringBuilder();
 dstTree.Save(new StringWriter(sb));  
 Console.WriteLine(sb.ToString());  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _  
@@ -1127,9 +1127,9 @@ Dim sb As StringBuilder = New StringBuilder()
 dstTree.Save(New StringWriter(sb))  
 Console.WriteLine(sb.ToString())  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <?xml version="1.0" encoding="utf-16"?>  
@@ -1139,7 +1139,7 @@ Console.WriteLine(sb.ToString())
   <DifferentChild>5</DifferentChild>  
 </NewRoot>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1169,17 +1169,17 @@ Console.WriteLine(sb.ToString())
         <summary>Serialize this streaming element to a file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space nodes in the XML tree will not be preserved.  
+The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space nodes in the XML tree will not be preserved.  
+ 
+If you want to control white space, use one of the overloads of <xref:System.Xml.Linq.XStreamingElement.Save%2A> that take <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ 
   
- If you want to control white space, use one of the overloads of <xref:System.Xml.Linq.XStreamingElement.Save%2A> that take <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a streaming XML tree. It then serializes the streaming XML tree to a file.  
-  
+The following example creates a streaming XML tree. It then serializes the streaming XML tree to a file.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -1199,7 +1199,7 @@ XStreamingElement dstTree = new XStreamingElement("NewRoot",
 dstTree.Save("Test.xml");  
 Console.WriteLine(File.ReadAllText("Test.xml"));  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _  
@@ -1220,9 +1220,9 @@ Dim dstTree As XStreamingElement = New XStreamingElement("NewRoot", _
 dstTree.Save("Test.xml")  
 Console.WriteLine(File.ReadAllText("Test.xml"))  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <?xml version="1.0" encoding="utf-8"?>  
@@ -1232,7 +1232,7 @@ Console.WriteLine(File.ReadAllText("Test.xml"))
   <DifferentChild>5</DifferentChild>  
 </NewRoot>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1267,10 +1267,10 @@ Console.WriteLine(File.ReadAllText("Test.xml"))
         <summary>Serialize this streaming element to an <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an <xref:System.Xml.Linq.XStreamingElement> and writes it to an <xref:System.Xml.XmlWriter>.  
-  
+The following example creates an <xref:System.Xml.Linq.XStreamingElement> and writes it to an <xref:System.Xml.XmlWriter>.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -1296,7 +1296,7 @@ using (XmlWriter xw = XmlWriter.Create(sb, xws))
 }  
 Console.WriteLine(sb.ToString());  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _  
@@ -1321,14 +1321,14 @@ Using xw As XmlWriter = XmlWriter.Create(sb, xws)
 End Using  
 Console.WriteLine(sb.ToString())  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
 <NewRoot><DifferentChild>5</DifferentChild></NewRoot>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1365,14 +1365,14 @@ Console.WriteLine(sb.ToString())
         <summary>Outputs this <see cref="T:System.Xml.Linq.XStreamingElement" /> to the specified <see cref="T:System.IO.Stream" />, optionally specifying formatting behavior.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- By default the `options` are set to <xref:System.Xml.Linq.SaveOptions>. This option will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented.  
-  
- If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
-  
- Use <xref:System.Xml.Linq.SaveOptions> option if you want to remove duplicate namespace declarations.  
-  
+By default the `options` are set to <xref:System.Xml.Linq.SaveOptions>. This option will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented.  
+ 
+If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white spaces exactly as represented in the XML tree.  
+ 
+Use <xref:System.Xml.Linq.SaveOptions> option if you want to remove duplicate namespace declarations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1409,19 +1409,19 @@ Console.WriteLine(sb.ToString())
         <summary>Serialize this streaming element to a <see cref="T:System.IO.TextWriter" />, optionally disabling formatting.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
+If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
+ 
+If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
+ 
+For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ 
   
- If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
-  
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows two uses of this method. The first use preserves white space. The second one serializes the <xref:System.Xml.Linq.XStreamingElement> with formatting.  
-  
+The following example shows two uses of this method. The first use preserves white space. The second one serializes the <xref:System.Xml.Linq.XStreamingElement> with formatting.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -1446,7 +1446,7 @@ sb = new StringBuilder();
 dstTree.Save(new StringWriter(sb), SaveOptions.None);  
 Console.WriteLine(sb.ToString());  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _  
@@ -1472,9 +1472,9 @@ sb = New StringBuilder()
 dstTree.Save(New StringWriter(sb), SaveOptions.None)  
 Console.WriteLine(sb.ToString())  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <?xml version="1.0" encoding="utf-16"?><NewRoot><DifferentChild>3</DifferentChild></NewRoot>  
@@ -1484,7 +1484,7 @@ Console.WriteLine(sb.ToString())
   <DifferentChild>3</DifferentChild>  
 </NewRoot>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1516,19 +1516,19 @@ Console.WriteLine(sb.ToString())
         <summary>Serialize this streaming element to a file, optionally disabling formatting.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
+If you want to save unindented XML, specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will cause the writer to write all white space exactly as represented in the XML tree.  
+ 
+If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
+ 
+For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ 
   
- If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
-  
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows two uses of this method. The first use preserves white space. The second one serializes the <xref:System.Xml.Linq.XStreamingElement> with formatting.  
-  
+The following example shows two uses of this method. The first use preserves white space. The second one serializes the <xref:System.Xml.Linq.XStreamingElement> with formatting.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -1551,7 +1551,7 @@ Console.WriteLine(File.ReadAllText("Test1.xml"));
 Console.WriteLine("------");  
 Console.WriteLine(File.ReadAllText("Test2.xml"));  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _  
@@ -1576,9 +1576,9 @@ Console.WriteLine("------")
 Console.WriteLine(File.ReadAllText("Test2.xml"))  
   
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <?xml version="1.0" encoding="utf-8"?><NewRoot><DifferentChild>3</DifferentChild></NewRoot>  
@@ -1588,7 +1588,7 @@ Console.WriteLine(File.ReadAllText("Test2.xml"))
   <DifferentChild>3</DifferentChild>  
 </NewRoot>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1621,15 +1621,15 @@ Console.WriteLine(File.ReadAllText("Test2.xml"))
         <returns>A <see cref="T:System.String" /> containing the indented XML.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that when debugging a program that uses <xref:System.Xml.Linq.XStreamingElement>, displaying the value of an object causes its <xref:System.Xml.Linq.XStreamingElement.ToString%2A> method to be called. This causes the XML to be serialized. If the semantics of your streaming element query are such that the streaming element can only be streamed once, this may cause undesirable behavior in your debugging experience.  
+Note that when debugging a program that uses <xref:System.Xml.Linq.XStreamingElement>, displaying the value of an object causes its <xref:System.Xml.Linq.XStreamingElement.ToString%2A> method to be called. This causes the XML to be serialized. If the semantics of your streaming element query are such that the streaming element can only be streamed once, this may cause undesirable behavior in your debugging experience.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows two uses of <xref:System.Xml.Linq.XStreamingElement.ToString%2A>. The first use preserves white space. The second one serializes the <xref:System.Xml.Linq.XStreamingElement> with formatting.  
-  
+The following example shows two uses of <xref:System.Xml.Linq.XStreamingElement.ToString%2A>. The first use preserves white space. The second one serializes the <xref:System.Xml.Linq.XStreamingElement> with formatting.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -1650,7 +1650,7 @@ Console.WriteLine(dstTree.ToString(SaveOptions.DisableFormatting));
 Console.WriteLine("------");  
 Console.WriteLine(dstTree.ToString());  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _  
@@ -1672,9 +1672,9 @@ Console.WriteLine(dstTree.ToString(SaveOptions.DisableFormatting))
 Console.WriteLine("------")  
 Console.WriteLine(dstTree.ToString())  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <NewRoot><DifferentChild>3</DifferentChild></NewRoot>  
@@ -1683,7 +1683,7 @@ Console.WriteLine(dstTree.ToString())
   <DifferentChild>3</DifferentChild>  
 </NewRoot>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1719,15 +1719,15 @@ Console.WriteLine(dstTree.ToString())
         <returns>A <see cref="T:System.String" /> containing the XML.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that when debugging a program that uses <xref:System.Xml.Linq.XStreamingElement>, displaying the value of an object causes its <xref:System.Xml.Linq.XStreamingElement.ToString%2A> method to be called. This causes the XML to be serialized. If the semantics of your streaming element query are such that the streaming element can only be streamed once, this may cause undesirable behavior in your debugging experience.  
+Note that when debugging a program that uses <xref:System.Xml.Linq.XStreamingElement>, displaying the value of an object causes its <xref:System.Xml.Linq.XStreamingElement.ToString%2A> method to be called. This causes the XML to be serialized. If the semantics of your streaming element query are such that the streaming element can only be streamed once, this may cause undesirable behavior in your debugging experience.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows two uses of <xref:System.Xml.Linq.XStreamingElement.ToString%2A>. The first use preserves white space. The second one serializes the <xref:System.Xml.Linq.XStreamingElement> with formatting.  
-  
+The following example shows two uses of <xref:System.Xml.Linq.XStreamingElement.ToString%2A>. The first use preserves white space. The second one serializes the <xref:System.Xml.Linq.XStreamingElement> with formatting.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -1748,7 +1748,7 @@ Console.WriteLine(dstTree.ToString(SaveOptions.DisableFormatting));
 Console.WriteLine("------");  
 Console.WriteLine(dstTree.ToString());  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _  
@@ -1770,9 +1770,9 @@ Console.WriteLine(dstTree.ToString(SaveOptions.DisableFormatting))
 Console.WriteLine("------")  
 Console.WriteLine(dstTree.ToString())  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```  
   
                 <NewRoot><DifferentChild>3</DifferentChild></NewRoot>  
@@ -1781,7 +1781,7 @@ Console.WriteLine(dstTree.ToString())
   <DifferentChild>3</DifferentChild>  
 </NewRoot>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1816,10 +1816,10 @@ Console.WriteLine(dstTree.ToString())
         <summary>Writes this streaming element to an <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example creates an XML tree using <xref:System.Xml.Linq.XStreamingElement>. It then writes the streaming element to an <xref:System.Xml.XmlWriter>.  
-  
+The following example creates an XML tree using <xref:System.Xml.Linq.XStreamingElement>. It then writes the streaming element to an <xref:System.Xml.XmlWriter>.  
+ 
 ```csharp  
   
                 XElement srcTree = new XElement("Root",  
@@ -1847,7 +1847,7 @@ using (XmlWriter xw = XmlWriter.Create(sb, xws))
 }  
 Console.WriteLine(sb.ToString());  
 ```  
-  
+ 
 ```vb  
   
                 Dim srcTree As XElement = _  
@@ -1875,16 +1875,16 @@ Using xw As XmlWriter = XmlWriter.Create(sb, xws)
 End Using  
 Console.WriteLine(sb.ToString())  
 ```  
-  
- This example produces the following output:  
-  
+ 
+This example produces the following output:  
+ 
 ```xml  
   
                 <NewRoot>  
   <DifferentChild>3</DifferentChild>  
 </NewRoot>  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1899,10 +1899,10 @@ Console.WriteLine(sb.ToString())
         <summary>Returns the XML for this streaming element, optionally disabling formatting.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Note that when debugging a program that uses <xref:System.Xml.Linq.XStreamingElement>, displaying the value of an object causes its <xref:System.Xml.Linq.XStreamingElement.ToString%2A> method to be called. This causes the XML to be serialized. If the semantics of your streaming element query are such that the streaming element can only be streamed once, this may cause undesirable behavior in your debugging experience.  
-  
+Note that when debugging a program that uses <xref:System.Xml.Linq.XStreamingElement>, displaying the value of an object causes its <xref:System.Xml.Linq.XStreamingElement.ToString%2A> method to be called. This causes the XML to be serialized. If the semantics of your streaming element query are such that the streaming element can only be streamed once, this may cause undesirable behavior in your debugging experience.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1917,12 +1917,12 @@ Console.WriteLine(sb.ToString())
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XStreamingElement" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Queries are not iterated until the <xref:System.Xml.Linq.XStreamingElement> is serialized. This is in contrast to using queries for content for an <xref:System.Xml.Linq.XElement>, where queries are iterated at the time of construction of the new <xref:System.Xml.Linq.XElement>.  
-  
- For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
+Queries are not iterated until the <xref:System.Xml.Linq.XStreamingElement> is serialized. This is in contrast to using queries for content for an <xref:System.Xml.Linq.XElement>, where queries are iterated at the time of construction of the new <xref:System.Xml.Linq.XElement>.  
+ 
+For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ 
  ]]></format>
         </remarks>
       </Docs>

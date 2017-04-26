@@ -13,17 +13,17 @@
     <summary>Specifies the placement of a <see cref="T:System.Windows.Controls.Primitives.TickBar" /> with respect to the <see cref="T:System.Windows.Controls.Primitives.Track" /> of a <see cref="T:System.Windows.Controls.Slider" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Windows.Controls.Primitives.TickBarPlacement> enumeration is used to set the <xref:System.Windows.Controls.Primitives.TickBar.Placement%2A> property of a <xref:System.Windows.Controls.Primitives.TickBar>. The actual position of a <xref:System.Windows.Controls.Primitives.TickBar> is defined by the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.Slider> control. The <xref:System.Windows.Controls.Primitives.TickBar.Placement%2A> property identifies this position so that the ticks of a <xref:System.Windows.Controls.Primitives.TickBar> are drawn correctly. The following illustration shows how <xref:System.Windows.Controls.Primitives.TickBar> controls are drawn when the <xref:System.Windows.Controls.Primitives.TickBar.Placement%2A> property is set to Top and Bottom.  
+The <xref:System.Windows.Controls.Primitives.TickBarPlacement> enumeration is used to set the <xref:System.Windows.Controls.Primitives.TickBar.Placement%2A> property of a <xref:System.Windows.Controls.Primitives.TickBar>. The actual position of a <xref:System.Windows.Controls.Primitives.TickBar> is defined by the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.Slider> control. The <xref:System.Windows.Controls.Primitives.TickBar.Placement%2A> property identifies this position so that the ticks of a <xref:System.Windows.Controls.Primitives.TickBar> are drawn correctly. The following illustration shows how <xref:System.Windows.Controls.Primitives.TickBar> controls are drawn when the <xref:System.Windows.Controls.Primitives.TickBar.Placement%2A> property is set to Top and Bottom.  
+ 
+![TickBar placement](~/add/media/tickbarplacement.png "TickBar placement")  
+ 
   
- ![TickBar placement](~/add/media/tickbarplacement.png "TickBar placement")  
-  
-   
-  
+ 
 ## Examples  
- For an example of a <xref:System.Windows.Controls.Primitives.TickBar> that is included in the <xref:System.Windows.Style> of a <xref:System.Windows.Controls.Slider>, see [Slider Styles and Templates](~/docs/framework/wpf/controls/slider-styles-and-templates.md).  
-  
+For an example of a <xref:System.Windows.Controls.Primitives.TickBar> that is included in the <xref:System.Windows.Style> of a <xref:System.Windows.Controls.Slider>, see [Slider Styles and Templates](~/docs/framework/wpf/controls/slider-styles-and-templates.md).  
+ 
  ]]></format>
     </remarks>
   </Docs>

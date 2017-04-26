@@ -20,19 +20,19 @@
     <summary>Provides an abstract definition of data passed by an XML Web service. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.Web.Services.Description.Message> can contain either document-oriented or procedure-oriented information. Procedure-oriented messages contain parameters and return values, while document-oriented messages contain documents.  
+A <xref:System.Web.Services.Description.Message> can contain either document-oriented or procedure-oriented information. Procedure-oriented messages contain parameters and return values, while document-oriented messages contain documents.  
+ 
+The <xref:System.Web.Services.Description.Message> class corresponds to a Web Services Description Language (WSDL) `message` element enclosed by the `definitions` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ 
   
- The <xref:System.Web.Services.Description.Message> class corresponds to a Web Services Description Language (WSDL) `message` element enclosed by the `definitions` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
-  
-   
-  
+ 
 ## Examples  
- [!code-cpp[DescriptionNamespaceSample1#13](~/samples/snippets/cpp/VS_Snippets_Remoting/DescriptionNamespaceSample1/CPP/descriptionnamespacesample1.cpp#13)]
- [!code-csharp[DescriptionNamespaceSample1#13](~/samples/snippets/csharp/VS_Snippets_Remoting/DescriptionNamespaceSample1/CS/descriptionnamespacesample1.cs#13)]
- [!code-vb[DescriptionNamespaceSample1#13](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DescriptionNamespaceSample1/VB/descriptionnamespacesample1.vb#13)]  
-  
+[!code-cpp[DescriptionNamespaceSample1#13](~/samples/snippets/cpp/VS_Snippets_Remoting/DescriptionNamespaceSample1/CPP/descriptionnamespacesample1.cpp#13)]
+[!code-csharp[DescriptionNamespaceSample1#13](~/samples/snippets/csharp/VS_Snippets_Remoting/DescriptionNamespaceSample1/CS/descriptionnamespacesample1.cs#13)]
+[!code-vb[DescriptionNamespaceSample1#13](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DescriptionNamespaceSample1/VB/descriptionnamespacesample1.vb#13)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -99,14 +99,14 @@
         <returns>A <see cref="T:System.Web.Services.Description.MessagePart" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the `FindPartByName` method.  
-  
- [!code-cpp[Message_Samples3#3](~/samples/snippets/cpp/VS_Snippets_Remoting/Message_Samples3/CPP/message_samples3.cpp#3)]
- [!code-csharp[Message_Samples3#3](~/samples/snippets/csharp/VS_Snippets_Remoting/Message_Samples3/CS/message_samples3.cs#3)]
- [!code-vb[Message_Samples3#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message_Samples3/VB/message_samples3.vb#3)]  
-  
+The following example demonstrates the use of the `FindPartByName` method.  
+ 
+[!code-cpp[Message_Samples3#3](~/samples/snippets/cpp/VS_Snippets_Remoting/Message_Samples3/CPP/message_samples3.cpp#3)]
+[!code-csharp[Message_Samples3#3](~/samples/snippets/csharp/VS_Snippets_Remoting/Message_Samples3/CS/message_samples3.cs#3)]
+[!code-vb[Message_Samples3#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message_Samples3/VB/message_samples3.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">No <see cref="T:System.Web.Services.Description.MessagePart" /> with the specified name exists within the collection.</exception>
@@ -134,14 +134,14 @@
         <returns>An array of type <see cref="T:System.Web.Services.Description.MessagePart" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the `FindPartsByName` method.  
-  
- [!code-cpp[Message_Samples3#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Message_Samples3/CPP/message_samples3.cpp#1)]
- [!code-csharp[Message_Samples3#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Message_Samples3/CS/message_samples3.cs#1)]
- [!code-vb[Message_Samples3#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message_Samples3/VB/message_samples3.vb#1)]  
-  
+The following example demonstrates the use of the `FindPartsByName` method.  
+ 
+[!code-cpp[Message_Samples3#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Message_Samples3/CPP/message_samples3.cpp#1)]
+[!code-csharp[Message_Samples3#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Message_Samples3/CS/message_samples3.cs#1)]
+[!code-vb[Message_Samples3#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message_Samples3/VB/message_samples3.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">No <see cref="T:System.Web.Services.Description.MessagePart" /> instances with the specified names exist within the collection.</exception>
@@ -170,14 +170,14 @@
         <value>A <see cref="T:System.Web.Services.Description.MessagePartCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates a typical use of the <xref:System.Web.Services.Description.Message.Parts%2A> property.  
-  
- [!code-cpp[DescriptionNamespaceSample1#13](~/samples/snippets/cpp/VS_Snippets_Remoting/DescriptionNamespaceSample1/CPP/descriptionnamespacesample1.cpp#13)]
- [!code-csharp[DescriptionNamespaceSample1#13](~/samples/snippets/csharp/VS_Snippets_Remoting/DescriptionNamespaceSample1/CS/descriptionnamespacesample1.cs#13)]
- [!code-vb[DescriptionNamespaceSample1#13](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DescriptionNamespaceSample1/VB/descriptionnamespacesample1.vb#13)]  
-  
+The following example demonstrates a typical use of the <xref:System.Web.Services.Description.Message.Parts%2A> property.  
+ 
+[!code-cpp[DescriptionNamespaceSample1#13](~/samples/snippets/cpp/VS_Snippets_Remoting/DescriptionNamespaceSample1/CPP/descriptionnamespacesample1.cpp#13)]
+[!code-csharp[DescriptionNamespaceSample1#13](~/samples/snippets/csharp/VS_Snippets_Remoting/DescriptionNamespaceSample1/CS/descriptionnamespacesample1.cs#13)]
+[!code-vb[DescriptionNamespaceSample1#13](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DescriptionNamespaceSample1/VB/descriptionnamespacesample1.vb#13)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -200,12 +200,12 @@
         <value>A <see cref="T:System.Web.Services.Description.ServiceDescription" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates the use of the <xref:System.Web.Services.Description.ServiceDescription> property.  
-  
- Message_Samples3#2  
-  
+The following example demonstrates the use of the <xref:System.Web.Services.Description.ServiceDescription> property.  
+ 
+Message_Samples3#2  
+ 
  ]]></format>
         </remarks>
       </Docs>

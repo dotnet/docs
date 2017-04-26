@@ -21,20 +21,20 @@
     <summary>Provides required functions and properties for client channel sinks.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Channel sinks provide a plug-in point that allows access to the underlying messages flowing through the channel as well as the stream used by the transport mechanism to send messages to a remote object. Channel sinks are linked together in a chain of channel sink providers and all channel messages flow through this chain of sinks before they are serialized and transported.  
+Channel sinks provide a plug-in point that allows access to the underlying messages flowing through the channel as well as the stream used by the transport mechanism to send messages to a remote object. Channel sinks are linked together in a chain of channel sink providers and all channel messages flow through this chain of sinks before they are serialized and transported.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates an implementation of the <xref:System.Runtime.Remoting.Channels.IClientChannelSink> interface.  
-  
- [!code-cpp[Remoting_Sinks#20](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Sinks/CPP/clientsink.cpp#20)]
- [!code-csharp[Remoting_Sinks#20](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Sinks/CS/clientsink.cs#20)]  
-  
- See the <xref:System.Runtime.Remoting.Channels.IClientChannelSinkProvider> interface documentation for an example of the corresponding client sink provider implementation.  
-  
+The following code example illustrates an implementation of the <xref:System.Runtime.Remoting.Channels.IClientChannelSink> interface.  
+ 
+[!code-cpp[Remoting_Sinks#20](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Sinks/CPP/clientsink.cpp#20)]
+[!code-csharp[Remoting_Sinks#20](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Sinks/CS/clientsink.cs#20)]  
+ 
+See the <xref:System.Runtime.Remoting.Channels.IClientChannelSinkProvider> interface documentation for an example of the corresponding client sink provider implementation.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,12 +66,12 @@
         <summary>Requests asynchronous processing of a method call on the current sink.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[SoapClientFormatterSinkProvider_BaseChannelSinkWithProperties#2](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapClientFormatterSinkProvider_BaseChannelSinkWithProperties/CPP/soapclientformattersinkprovider_customprovider.cpp#2)]
- [!code-csharp[SoapClientFormatterSinkProvider_BaseChannelSinkWithProperties#2](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapClientFormatterSinkProvider_BaseChannelSinkWithProperties/CS/soapclientformattersinkprovider_customprovider.cs#2)]
- [!code-vb[SoapClientFormatterSinkProvider_BaseChannelSinkWithProperties#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapClientFormatterSinkProvider_BaseChannelSinkWithProperties/VB/soapclientformattersinkprovider_customprovider.vb#2)]  
-  
+[!code-cpp[SoapClientFormatterSinkProvider_BaseChannelSinkWithProperties#2](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapClientFormatterSinkProvider_BaseChannelSinkWithProperties/CPP/soapclientformattersinkprovider_customprovider.cpp#2)]
+[!code-csharp[SoapClientFormatterSinkProvider_BaseChannelSinkWithProperties#2](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapClientFormatterSinkProvider_BaseChannelSinkWithProperties/CS/soapclientformattersinkprovider_customprovider.cs#2)]
+[!code-vb[SoapClientFormatterSinkProvider_BaseChannelSinkWithProperties#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapClientFormatterSinkProvider_BaseChannelSinkWithProperties/VB/soapclientformattersinkprovider_customprovider.vb#2)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -105,12 +105,12 @@
         <summary>Requests asynchronous processing of a response to a method call on the current sink.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- [!code-cpp[CommonTransportKeys#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CommonTransportKeys/CPP/commontransportkeys.cpp#1)]
- [!code-csharp[CommonTransportKeys#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CommonTransportKeys/CS/commontransportkeys.cs#1)]
- [!code-vb[CommonTransportKeys#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CommonTransportKeys/VB/commontransportkeys.vb#1)]  
-  
+[!code-cpp[CommonTransportKeys#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CommonTransportKeys/CPP/commontransportkeys.cpp#1)]
+[!code-csharp[CommonTransportKeys#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CommonTransportKeys/CS/commontransportkeys.cs#1)]
+[!code-vb[CommonTransportKeys#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CommonTransportKeys/VB/commontransportkeys.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -141,18 +141,18 @@
         <returns>The <see cref="T:System.IO.Stream" /> onto which the provided message is to be serialized.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.Remoting.Channels.IClientChannelSink.GetRequestStream%2A> method is called by the formatter sink before it serializes the message.  
+The <xref:System.Runtime.Remoting.Channels.IClientChannelSink.GetRequestStream%2A> method is called by the formatter sink before it serializes the message.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates an implementation of this method.  
-  
- [!code-cpp[Remoting_Sinks#23](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Sinks/CPP/clientsink.cpp#23)]
- [!code-csharp[Remoting_Sinks#23](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Sinks/CS/clientsink.cs#23)]  
-  
+The following code example illustrates an implementation of this method.  
+ 
+[!code-cpp[Remoting_Sinks#23](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Sinks/CPP/clientsink.cpp#23)]
+[!code-csharp[Remoting_Sinks#23](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Sinks/CS/clientsink.cs#23)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -177,18 +177,18 @@
         <value>The next client channel sink in the client sink chain.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Channel sinks are linked together in a chain of sink providers and all channel messages flow through this chain before they are serialized and transported.  
+Channel sinks are linked together in a chain of sink providers and all channel messages flow through this chain before they are serialized and transported.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example illustrates an implementation of this property.  
-  
- [!code-cpp[Remoting_Sinks#22](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Sinks/CPP/clientsink.cpp#22)]
- [!code-csharp[Remoting_Sinks#22](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Sinks/CS/clientsink.cs#22)]  
-  
+The following code example illustrates an implementation of this property.  
+ 
+[!code-cpp[Remoting_Sinks#22](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Sinks/CPP/clientsink.cpp#22)]
+[!code-csharp[Remoting_Sinks#22](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Sinks/CS/clientsink.cs#22)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
@@ -224,13 +224,13 @@
         <summary>Requests message processing from the current sink.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example illustrates an implementation of this method.  
-  
- [!code-cpp[Remoting_Sinks#24](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Sinks/CPP/clientsink.cpp#24)]
- [!code-csharp[Remoting_Sinks#24](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Sinks/CS/clientsink.cs#24)]  
-  
+The following code example illustrates an implementation of this method.  
+ 
+[!code-cpp[Remoting_Sinks#24](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Sinks/CPP/clientsink.cpp#24)]
+[!code-csharp[Remoting_Sinks#24](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Sinks/CS/clientsink.cs#24)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>

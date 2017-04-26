@@ -18,18 +18,18 @@
     <summary>Contains a collection of locked configuration objects. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In a configuration file, a configuration section contains both attributes and elements. A <xref:System.Configuration.ConfigurationLockCollection> collection exists for the locked attributes of a configuration section, and is accessed through the <xref:System.Configuration.ConfigurationElement.LockAttributes%2A> property of the <xref:System.Configuration.ConfigurationElement> class. Another <xref:System.Configuration.ConfigurationLockCollection> collection exists for the locked elements of a configuration section, and is accessed through the <xref:System.Configuration.ConfigurationElement.LockElements%2A> property of the <xref:System.Configuration.ConfigurationElement> class.  
+In a configuration file, a configuration section contains both attributes and elements. A <xref:System.Configuration.ConfigurationLockCollection> collection exists for the locked attributes of a configuration section, and is accessed through the <xref:System.Configuration.ConfigurationElement.LockAttributes%2A> property of the <xref:System.Configuration.ConfigurationElement> class. Another <xref:System.Configuration.ConfigurationLockCollection> collection exists for the locked elements of a configuration section, and is accessed through the <xref:System.Configuration.ConfigurationElement.LockElements%2A> property of the <xref:System.Configuration.ConfigurationElement> class.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection> type.  
-  
- [!code-csharp[System.Configuration.ConfigurationLockCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#1)]
- [!code-vb[System.Configuration.ConfigurationLockCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection> type.  
+ 
+[!code-csharp[System.Configuration.ConfigurationLockCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#1)]
+[!code-vb[System.Configuration.ConfigurationLockCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,18 +54,18 @@
         <summary>Locks a configuration object by adding it to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adding a configuration object to the <xref:System.Configuration.ConfigurationLockCollection> collection specifies that the configuration object is locked and cannot be modified until it has been removed from the collection.  
+Adding a configuration object to the <xref:System.Configuration.ConfigurationLockCollection> collection specifies that the configuration object is locked and cannot be modified until it has been removed from the collection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-csharp[System.Configuration.ConfigurationLockCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#3)]
- [!code-vb[System.Configuration.ConfigurationLockCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#3)]  
-  
+The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
+ 
+[!code-csharp[System.Configuration.ConfigurationLockCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#3)]
+[!code-vb[System.Configuration.ConfigurationLockCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">Occurs when the <paramref name="name" /> does not match an existing configuration object within the collection.</exception>
@@ -88,13 +88,13 @@
         <value>A comma-delimited string that lists the lock configuration objects in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.AttributeList%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-csharp[System.Configuration.ConfigurationLockCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#5)]
- [!code-vb[System.Configuration.ConfigurationLockCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#5)]  
-  
+The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.AttributeList%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
+ 
+[!code-csharp[System.Configuration.ConfigurationLockCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#5)]
+[!code-vb[System.Configuration.ConfigurationLockCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -116,13 +116,13 @@
         <summary>Clears all configuration objects from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.Clear%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-csharp[System.Configuration.ConfigurationLockCollection#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#11)]
- [!code-vb[System.Configuration.ConfigurationLockCollection#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#11)]  
-  
+The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.Clear%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
+ 
+[!code-csharp[System.Configuration.ConfigurationLockCollection#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#11)]
+[!code-vb[System.Configuration.ConfigurationLockCollection#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,13 +190,13 @@
         <value>The number of locked configuration objects contained in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.Count%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-csharp[System.Configuration.ConfigurationLockCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#4)]
- [!code-vb[System.Configuration.ConfigurationLockCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#4)]  
-  
+The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.Count%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
+ 
+[!code-csharp[System.Configuration.ConfigurationLockCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#4)]
+[!code-vb[System.Configuration.ConfigurationLockCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -238,13 +238,13 @@
           <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationLockCollection" /> collection has parent elements; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.HasParentElements%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-csharp[System.Configuration.ConfigurationLockCollection#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#7)]
- [!code-vb[System.Configuration.ConfigurationLockCollection#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#7)]  
-  
+The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.HasParentElements%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
+ 
+[!code-csharp[System.Configuration.ConfigurationLockCollection#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#7)]
+[!code-vb[System.Configuration.ConfigurationLockCollection#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,13 +267,13 @@
           <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationLockCollection" /> collection has been modified; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.IsModified%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-csharp[System.Configuration.ConfigurationLockCollection#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#8)]
- [!code-vb[System.Configuration.ConfigurationLockCollection#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#8)]  
-  
+The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.IsModified%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
+ 
+[!code-csharp[System.Configuration.ConfigurationLockCollection#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#8)]
+[!code-vb[System.Configuration.ConfigurationLockCollection#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#8)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -300,13 +300,13 @@
           <see langword="true" /> if the specified configuration object in the <see cref="T:System.Configuration.ConfigurationLockCollection" /> collection is read-only; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.IsReadOnly%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-csharp[System.Configuration.ConfigurationLockCollection#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#9)]
- [!code-vb[System.Configuration.ConfigurationLockCollection#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#9)]  
-  
+The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.IsReadOnly%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
+ 
+[!code-csharp[System.Configuration.ConfigurationLockCollection#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#9)]
+[!code-vb[System.Configuration.ConfigurationLockCollection#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The specified configuration object is not in the collection.</exception>
@@ -351,13 +351,13 @@
         <summary>Removes a configuration object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.Remove%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-csharp[System.Configuration.ConfigurationLockCollection#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#10)]
- [!code-vb[System.Configuration.ConfigurationLockCollection#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#10)]  
-  
+The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.Remove%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
+ 
+[!code-csharp[System.Configuration.ConfigurationLockCollection#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#10)]
+[!code-vb[System.Configuration.ConfigurationLockCollection#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#10)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">Occurs when the <paramref name="name" /> does not match an existing configuration object within the collection.</exception>
@@ -383,13 +383,13 @@
         <summary>Locks a set of configuration objects based on the supplied list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.SetFromList%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
-  
- [!code-csharp[System.Configuration.ConfigurationLockCollection#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#12)]
- [!code-vb[System.Configuration.ConfigurationLockCollection#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#12)]  
-  
+The following code example demonstrates how to use the <xref:System.Configuration.ConfigurationLockCollection.SetFromList%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.ConfigurationLockCollection> class.  
+ 
+[!code-csharp[System.Configuration.ConfigurationLockCollection#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/CS/ConfigurationLockCollection.cs#12)]
+[!code-vb[System.Configuration.ConfigurationLockCollection#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationLockCollection/VB/ConfigurationLockCollection.vb#12)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">Occurs when an item in the <paramref name="attributeList" /> parameter is not a valid lockable configuration attribute.</exception>

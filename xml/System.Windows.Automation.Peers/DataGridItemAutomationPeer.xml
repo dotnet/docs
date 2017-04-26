@@ -129,18 +129,18 @@
         <returns>The current <see cref="T:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer" /> object, if <paramref name="patternInterface" /> is a supported value; otherwise, <see langword="null" />. For more information, see Remarks.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If one of the following cases occurs, this method returns the current <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> object.  
-  
+If one of the following cases occurs, this method returns the current <xref:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer> object.  
+ 
 -   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName> and the <xref:System.Windows.Controls.DataGrid> that is associated with this <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> is read-only.  
-  
+ 
 -   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName> and the <xref:System.Windows.Controls.DataGridRow> that is associated with this <xref:System.Windows.Automation.Peers.DataGridCellAutomationPeer> can be selected.  
-  
+ 
 -   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName>.  
-  
+ 
 -   `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=fullName>.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -184,10 +184,10 @@
         <summary>Sends a request to activate a control and initiate its single, unambiguous action.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IInvokeProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IInvokeProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -217,10 +217,10 @@
         <returns>The first item that matches the search criterion; otherwise, <see langword="null" /> if no items match.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IItemContainerProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IItemContainerProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,10 +242,10 @@
         <summary>Scrolls the content area of a container object to display the control within the visible region (viewport) of the container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IScrollItemProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IScrollItemProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -267,10 +267,10 @@
         <summary>Adds the current element to the collection of selected items.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -293,10 +293,10 @@
           <see langword="true" /> if the element is selected; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -318,10 +318,10 @@
         <summary>Removes the current element from the collection of selected items.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -343,10 +343,10 @@
         <summary>Clears any selected items and then selects the current element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -368,10 +368,10 @@
         <value>The provider for the <see cref="T:System.Windows.Controls.DataGrid" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionItemProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -394,10 +394,10 @@
           <see langword="true" /> if multiple selection is allowed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -420,10 +420,10 @@
         <returns>A collection of UI Automation providers.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -446,10 +446,10 @@
           <see langword="false" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.DataGridItemAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -14,14 +14,14 @@
     <summary>Represents data that is sent with a <see cref="E:System.Windows.Input.Manipulations.ManipulationProcessor2D.Started" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- In the following example, an event handler for the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Started> event checks to see if inertia processing is running and if so, stops it.  
-  
- [!code-csharp[ManipulationAPI#_ManipulationItem_OnManipulationStarted](~/samples/snippets/csharp/VS_Snippets_Misc/manipulationapi/cs/manipulationitem.xaml.cs#_manipulationitem_onmanipulationstarted)]  
-  
- [!code-csharp[ManipulationAPI#_ManipulationItem_Timestamp](~/samples/snippets/csharp/VS_Snippets_Misc/manipulationapi/cs/manipulationitem.xaml.cs#_manipulationitem_timestamp)]  
-  
+In the following example, an event handler for the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Started> event checks to see if inertia processing is running and if so, stops it.  
+ 
+[!code-csharp[ManipulationAPI#_ManipulationItem_OnManipulationStarted](~/samples/snippets/csharp/VS_Snippets_Misc/manipulationapi/cs/manipulationitem.xaml.cs#_manipulationitem_onmanipulationstarted)]  
+ 
+[!code-csharp[ManipulationAPI#_ManipulationItem_Timestamp](~/samples/snippets/csharp/VS_Snippets_Misc/manipulationapi/cs/manipulationitem.xaml.cs#_manipulationitem_timestamp)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,10 +43,10 @@
         <value>The x-coordinate of the origin.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The origin point represented by the <xref:System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs.OriginX%2A> and <xref:System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs.OriginY%2A> properties is the average position of all manipulators associated with an element.  
-  
+The origin point represented by the <xref:System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs.OriginX%2A> and <xref:System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs.OriginY%2A> properties is the average position of all manipulators associated with an element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -68,10 +68,10 @@
         <value>The y-coordinate of the origin.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The origin point represented by the <xref:System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs.OriginX%2A> and <xref:System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs.OriginY%2A> properties is the average position of all manipulators associated with an element.  
-  
+The origin point represented by the <xref:System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs.OriginX%2A> and <xref:System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs.OriginY%2A> properties is the average position of all manipulators associated with an element.  
+ 
  ]]></format>
         </remarks>
       </Docs>

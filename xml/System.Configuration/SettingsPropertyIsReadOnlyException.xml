@@ -14,10 +14,10 @@
     <summary>Provides an exception for read-only <see cref="T:System.Configuration.SettingsProperty" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This exception is thrown by the <xref:System.Configuration.SettingsBase> class when attempting to change the value of a <xref:System.Configuration.SettingsPropertyValue> that was marked as being read-only.  
-  
+This exception is thrown by the <xref:System.Configuration.SettingsBase> class when attempting to change the value of a <xref:System.Configuration.SettingsPropertyValue> that was marked as being read-only.  
+ 
  ]]></format>
     </remarks>
   </Docs>

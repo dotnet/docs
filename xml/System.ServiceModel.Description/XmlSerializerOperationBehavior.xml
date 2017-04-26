@@ -22,18 +22,18 @@
     <summary>Controls run-time behavior of the <see cref="T:System.Xml.Serialization.XmlSerializer" /> associated with an operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> enables control of <xref:System.Xml.Serialization.XmlSerializer> options, such as the <xref:System.ServiceModel.XmlSerializerFormatAttribute.Style%2A> property of the <xref:System.ServiceModel.XmlSerializerFormatAttribute>.  
+The <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> enables control of <xref:System.Xml.Serialization.XmlSerializer> options, such as the <xref:System.ServiceModel.XmlSerializerFormatAttribute.Style%2A> property of the <xref:System.ServiceModel.XmlSerializerFormatAttribute>.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example finds the <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> for a specific operation, and sets the <xref:System.ServiceModel.XmlSerializerFormatAttribute.Style%2A> property of the <xref:System.ServiceModel.XmlSerializerFormatAttribute> for the serializer.  
-  
- [!code-csharp[XmlSerializerOperationBehavior#1](~/samples/snippets/csharp/VS_Snippets_CFX/xmlserializeroperationbehavior/cs/source.cs#1)]
- [!code-vb[XmlSerializerOperationBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/xmlserializeroperationbehavior/vb/source.vb#1)]  
-  
+The following example finds the <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> for a specific operation, and sets the <xref:System.ServiceModel.XmlSerializerFormatAttribute.Style%2A> property of the <xref:System.ServiceModel.XmlSerializerFormatAttribute> for the serializer.  
+ 
+[!code-csharp[XmlSerializerOperationBehavior#1](~/samples/snippets/csharp/VS_Snippets_CFX/xmlserializeroperationbehavior/cs/source.cs#1)]
+[!code-vb[XmlSerializerOperationBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/xmlserializeroperationbehavior/vb/source.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -121,10 +121,10 @@
         <summary>Adds a set of parameters to an operation description.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Adds a set of parameters to an operation description.  
-  
+Adds a set of parameters to an operation description.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -152,10 +152,10 @@
         <summary>Applies a client's behavior to the operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applies a client's behavior to the operation.  
-  
+Applies a client's behavior to the operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -183,10 +183,10 @@
         <summary>Applies a dispatch behavior to the operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applies a dispatch behavior to the operation.  
-  
+Applies a dispatch behavior to the operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -212,10 +212,10 @@
         <summary>Validates the operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Validates the operation.  
-  
+Validates the operation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -242,10 +242,10 @@
         <summary>Exports the operation data as a WSDL document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Exports the operation data as a WSDL document.  
-  
+Exports the operation data as a WSDL document.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -272,10 +272,10 @@
         <summary>Exports the endpoint data as a WSDL document.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Exports the endpoint data as a WSDL document.  
-  
+Exports the endpoint data as a WSDL document.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -23,21 +23,21 @@
     <summary>Specifies the type of value the <see cref="M:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)" /> method searches for.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Security.Cryptography.X509Certificates.X509FindType> identifies the type of value provided in the `findValue` parameter for the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A> method. You can use <xref:System.Security.Cryptography.X509Certificates.X509FindType> to search an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> collection by subject name, thumbprint, serial number, valid date range, or other value.  
+<xref:System.Security.Cryptography.X509Certificates.X509FindType> identifies the type of value provided in the `findValue` parameter for the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find%2A> method. You can use <xref:System.Security.Cryptography.X509Certificates.X509FindType> to search an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> collection by subject name, thumbprint, serial number, valid date range, or other value.  
+ 
+You can use a combination of `FindByTime` value types to find certificates that are valid in a given time range. The union of certificates returned using FindByTimeValid, FindByTimeNotYetValid, and FindByTimeExpired for a given time represents all certificates in the queried collection.  
+ 
   
- You can use a combination of `FindByTime` value types to find certificates that are valid in a given time range. The union of certificates returned using FindByTimeValid, FindByTimeNotYetValid, and FindByTimeExpired for a given time represents all certificates in the queried collection.  
-  
-   
-  
+ 
 ## Examples  
- The following example opens the current user's personal certificate store, finds only valid certificates, allows the user to select a certificate, and then writes certificate information to the console. The output depends on the certificate you select.  
-  
- [!code-cpp[certselect#1](~/samples/snippets/cpp/VS_Snippets_CLR/CertSelect/CPP/certselect.cpp#1)]
- [!code-csharp[certselect#1](~/samples/snippets/csharp/VS_Snippets_CLR/CertSelect/CS/certselect.cs#1)]
- [!code-vb[certselect#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CertSelect/VB/certselect.vb#1)]  
-  
+The following example opens the current user's personal certificate store, finds only valid certificates, allows the user to select a certificate, and then writes certificate information to the console. The output depends on the certificate you select.  
+ 
+[!code-cpp[certselect#1](~/samples/snippets/cpp/VS_Snippets_CLR/CertSelect/CPP/certselect.cpp#1)]
+[!code-csharp[certselect#1](~/samples/snippets/csharp/VS_Snippets_CLR/CertSelect/CS/certselect.cs#1)]
+[!code-vb[certselect#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CertSelect/VB/certselect.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

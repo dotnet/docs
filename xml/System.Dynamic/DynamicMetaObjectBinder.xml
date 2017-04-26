@@ -23,10 +23,10 @@
     <summary>The dynamic call site binder that participates in the <see cref="T:System.Dynamic.DynamicMetaObject" /> binding protocol.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Runtime.CompilerServices.CallSiteBinder> performs the binding of the dynamic operation using the runtime values as input. On the other hand, the <xref:System.Dynamic.DynamicMetaObjectBinder> participates in the <xref:System.Dynamic.DynamicMetaObject> binding protocol.  
-  
+The <xref:System.Runtime.CompilerServices.CallSiteBinder> performs the binding of the dynamic operation using the runtime values as input. On the other hand, the <xref:System.Dynamic.DynamicMetaObjectBinder> participates in the <xref:System.Dynamic.DynamicMetaObject> binding protocol.  
+ 
  ]]></format>
     </remarks>
   </Docs>

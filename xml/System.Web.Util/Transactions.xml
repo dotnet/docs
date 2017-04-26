@@ -79,10 +79,10 @@
         <summary>Wraps a specified transaction support around a callback method and indicates whether the transaction aborted.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The `transactionAborted` parameter indicates the result of the transacted callback that you are invoking.  
-  
+The `transactionAborted` parameter indicates the result of the transacted callback that you are invoking.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The operating system is not Windows NT or later.</exception>

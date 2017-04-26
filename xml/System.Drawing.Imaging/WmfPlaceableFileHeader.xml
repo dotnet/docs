@@ -14,10 +14,10 @@
     <summary>Defines a placeable metafile. Not inheritable.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Placeable metafiles provide a nonstandard way to specify how a metafile is mapped and scaled on an output device.  
-  
+Placeable metafiles provide a nonstandard way to specify how a metafile is mapped and scaled on an output device.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -54,10 +54,10 @@
         <value>The y-coordinate of the lower-right corner of the bounding rectangle of the metafile image on the output device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The coordinates of the bounding rectangle are measured in twips.  
-  
+The coordinates of the bounding rectangle are measured in twips.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -79,10 +79,10 @@
         <value>The x-coordinate of the upper-left corner of the bounding rectangle of the metafile image on the output device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The coordinates of the bounding rectangle are measured in twips.  
-  
+The coordinates of the bounding rectangle are measured in twips.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,10 +104,10 @@
         <value>The x-coordinate of the lower-right corner of the bounding rectangle of the metafile image on the output device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The coordinates of the bounding rectangle are measured in twips.  
-  
+The coordinates of the bounding rectangle are measured in twips.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,10 +129,10 @@
         <value>The y-coordinate of the upper-left corner of the bounding rectangle of the metafile image on the output device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The coordinates of the bounding rectangle are measured in twips.  
-  
+The coordinates of the bounding rectangle are measured in twips.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -154,10 +154,10 @@
         <value>The checksum value for the previous ten <see langword="WORD" /> s in the header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This value can be used in an attempt to detect whether the metafile has become corrupted. The checksum is calculated by joining each `WORD` value to an initial value of 0 by using the `XOR` operator.  
-  
+This value can be used in an attempt to detect whether the metafile has become corrupted. The checksum is calculated by joining each `WORD` value to an initial value of 0 by using the `XOR` operator.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -179,10 +179,10 @@
         <value>The handle of the metafile in memory.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When written to disk, this property is not used and always contains the value 0.  
-  
+When written to disk, this property is not used and always contains the value 0.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -204,10 +204,10 @@
         <value>The number of twips per inch.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Normally, there are 1440 twips per inch; however, this number can be changed to scale the image. A value of 720 indicates that the image is double its normal size, or scaled to a factor of 2:1. A value of 360 indicates a scale of 4:1. Conversely, a value of 2880 indicates that the image is scaled down in size by a factor of two. A value of 1440 indicates a 1:1 scale ratio.  
-  
+Normally, there are 1440 twips per inch; however, this number can be changed to scale the image. A value of 720 indicates that the image is double its normal size, or scaled to a factor of 2:1. A value of 360 indicates a scale of 4:1. Conversely, a value of 2880 indicates that the image is scaled down in size by a factor of two. A value of 1440 indicates a 1:1 scale ratio.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -229,10 +229,10 @@
         <value>A value indicating presence of a placeable metafile header.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This field always has a value of 0x9AC6CDD7.  
-  
+This field always has a value of 0x9AC6CDD7.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -254,10 +254,10 @@
         <value>Reserved. Do not use.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Always set this field to zero.  
-  
+Always set this field to zero.  
+ 
  ]]></format>
         </remarks>
       </Docs>

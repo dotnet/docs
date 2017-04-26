@@ -28,19 +28,19 @@
     <summary>Converts a <see cref="T:System.Security.Cryptography.CryptoStream" /> to base 64.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Base 64 Content-Transfer-Encoding represents arbitrary bit sequences in a form that is not human readable.  
+Base 64 Content-Transfer-Encoding represents arbitrary bit sequences in a form that is not human readable.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use members of the <xref:System.Security.Cryptography.ToBase64Transform> class.  
-  
- [!code-cpp[System.Security.Cryptography.ToBase64Transform#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#1)]
- [!code-csharp[System.Security.Cryptography.ToBase64Transform#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#1)]
- [!code-vb[System.Security.Cryptography.ToBase64Transform#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#1)]  
-  
+The following code example demonstrates how to use members of the <xref:System.Security.Cryptography.ToBase64Transform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.ToBase64Transform#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#1)]
+[!code-csharp[System.Security.Cryptography.ToBase64Transform#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#1)]
+[!code-vb[System.Security.Cryptography.ToBase64Transform#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -87,14 +87,14 @@
         <value>Always <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.ToBase64Transform.CanReuseTransform%2A> property to determine if the current transform can be reused. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.ToBase64Transform> class.  
-  
- [!code-cpp[System.Security.Cryptography.ToBase64Transform#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#3)]
- [!code-csharp[System.Security.Cryptography.ToBase64Transform#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#3)]
- [!code-vb[System.Security.Cryptography.ToBase64Transform#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#3)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.ToBase64Transform.CanReuseTransform%2A> property to determine if the current transform can be reused. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.ToBase64Transform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.ToBase64Transform#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#3)]
+[!code-csharp[System.Security.Cryptography.ToBase64Transform#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#3)]
+[!code-vb[System.Security.Cryptography.ToBase64Transform#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -121,19 +121,19 @@
         <value>Always <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In the current implementation, only one block can be transformed at a time, so this property is always `false`.  
+In the current implementation, only one block can be transformed at a time, so this property is always `false`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.ToBase64Transform.CanTransformMultipleBlocks%2A> method to verify that multiple blocks can be transformed. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.ToBase64Transform> class.  
-  
- [!code-cpp[System.Security.Cryptography.ToBase64Transform#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#4)]
- [!code-csharp[System.Security.Cryptography.ToBase64Transform#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#4)]
- [!code-vb[System.Security.Cryptography.ToBase64Transform#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#4)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.ToBase64Transform.CanTransformMultipleBlocks%2A> method to verify that multiple blocks can be transformed. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.ToBase64Transform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.ToBase64Transform#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#4)]
+[!code-csharp[System.Security.Cryptography.ToBase64Transform#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#4)]
+[!code-vb[System.Security.Cryptography.ToBase64Transform#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -160,21 +160,21 @@
         <summary>Releases all resources used by the <see cref="T:System.Security.Cryptography.ToBase64Transform" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is a simple call to <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>.  
+This method is a simple call to <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>.  
+ 
+Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.ToBase64Transform> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
+ 
   
- Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.ToBase64Transform> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
-  
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.ToBase64Transform.Clear%2A> method to free up unused resources by the current transform. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.ToBase64Transform> class.  
-  
- [!code-cpp[System.Security.Cryptography.ToBase64Transform#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#7)]
- [!code-csharp[System.Security.Cryptography.ToBase64Transform#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#7)]
- [!code-vb[System.Security.Cryptography.ToBase64Transform#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#7)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.ToBase64Transform.Clear%2A> method to free up unused resources by the current transform. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.ToBase64Transform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.ToBase64Transform#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#7)]
+[!code-csharp[System.Security.Cryptography.ToBase64Transform#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#7)]
+[!code-vb[System.Security.Cryptography.ToBase64Transform#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -201,15 +201,15 @@
         <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.ToBase64Transform" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Call `Dispose` when you are finished using the <xref:System.Security.Cryptography.ToBase64Transform>. The `Dispose` method leaves the <xref:System.Security.Cryptography.ToBase64Transform> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Security.Cryptography.ToBase64Transform> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.ToBase64Transform> was occupying.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
+Call `Dispose` when you are finished using the <xref:System.Security.Cryptography.ToBase64Transform>. The `Dispose` method leaves the <xref:System.Security.Cryptography.ToBase64Transform> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Security.Cryptography.ToBase64Transform> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.ToBase64Transform> was occupying.  
+ 
+For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ 
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Security.Cryptography.ToBase64Transform>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.Cryptography.ToBase64Transform> object's `Finalize` method.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -240,12 +240,12 @@
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Security.Cryptography.ToBase64Transform" /> and optionally releases the managed resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is called by the public `Dispose()` method and the `Finalize` method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the disposing parameter set to `true`. `Finalize` invokes `Dispose` with disposing set to `false`.  
-  
- When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Security.Cryptography.ToBase64Transform> references. This method invokes the `Dispose()` method of each referenced object.  
-  
+This method is called by the public `Dispose()` method and the `Finalize` method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the disposing parameter set to `true`. `Finalize` invokes `Dispose` with disposing set to `false`.  
+ 
+When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Security.Cryptography.ToBase64Transform> references. This method invokes the `Dispose()` method of each referenced object.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -301,19 +301,19 @@
         <value>The size of the input data blocks in bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The input block size for this transformation is 3 bytes.  
+The input block size for this transformation is 3 bytes.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.ToBase64Transform.InputBlockSize%2A> property to retrieve the input block size of the current transform. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.ToBase64Transform> class.  
-  
- [!code-cpp[System.Security.Cryptography.ToBase64Transform#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#5)]
- [!code-csharp[System.Security.Cryptography.ToBase64Transform#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#5)]
- [!code-vb[System.Security.Cryptography.ToBase64Transform#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#5)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.ToBase64Transform.InputBlockSize%2A> property to retrieve the input block size of the current transform. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.ToBase64Transform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.ToBase64Transform#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#5)]
+[!code-csharp[System.Security.Cryptography.ToBase64Transform#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#5)]
+[!code-vb[System.Security.Cryptography.ToBase64Transform#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -340,19 +340,19 @@
         <value>The size of the output data blocks in bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The output block size for this transformation is 4 bytes.  
+The output block size for this transformation is 4 bytes.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.ToBase64Transform.OutputBlockSize%2A> property to create a new byte array with the size of the output block size. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.ToBase64Transform> class.  
-  
- [!code-cpp[System.Security.Cryptography.ToBase64Transform#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#6)]
- [!code-csharp[System.Security.Cryptography.ToBase64Transform#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#6)]
- [!code-vb[System.Security.Cryptography.ToBase64Transform#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#6)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.ToBase64Transform.OutputBlockSize%2A> property to create a new byte array with the size of the output block size. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.ToBase64Transform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.ToBase64Transform#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#6)]
+[!code-csharp[System.Security.Cryptography.ToBase64Transform#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#6)]
+[!code-vb[System.Security.Cryptography.ToBase64Transform#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -391,19 +391,19 @@
         <returns>The number of bytes written.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.ToBase64Transform> class is a block algorithm that processes input blocks of 3 bytes and creates output blocks of 4 bytes.  The <xref:System.Security.Cryptography.ToBase64Transform.TransformBlock%2A> method transforms an input block of 24 bits into 32 bits of character data.  You must maintain 3 byte input boundaries to 4 byte output boundaries in order to match the block transform.  
+The <xref:System.Security.Cryptography.ToBase64Transform> class is a block algorithm that processes input blocks of 3 bytes and creates output blocks of 4 bytes.  The <xref:System.Security.Cryptography.ToBase64Transform.TransformBlock%2A> method transforms an input block of 24 bits into 32 bits of character data.  You must maintain 3 byte input boundaries to 4 byte output boundaries in order to match the block transform.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.ToBase64Transform.TransformBlock%2A> method to iterate through `inputBytes` transforming by `blockSize`. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.ToBase64Transform> class.  
-  
- [!code-cpp[System.Security.Cryptography.ToBase64Transform#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#8)]
- [!code-csharp[System.Security.Cryptography.ToBase64Transform#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#8)]
- [!code-vb[System.Security.Cryptography.ToBase64Transform#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#8)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.ToBase64Transform.TransformBlock%2A> method to iterate through `inputBytes` transforming by `blockSize`. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.ToBase64Transform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.ToBase64Transform#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#8)]
+[!code-csharp[System.Security.Cryptography.ToBase64Transform#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#8)]
+[!code-vb[System.Security.Cryptography.ToBase64Transform#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#8)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current <see cref="T:System.Security.Cryptography.ToBase64Transform" /> object has already been disposed.</exception>
@@ -447,14 +447,14 @@
         <returns>The computed base 64 conversion.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to call the <xref:System.Security.Cryptography.ToBase64Transform.TransformFinalBlock%2A> method to transform the final block of data. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.ToBase64Transform> class.  
-  
- [!code-cpp[System.Security.Cryptography.ToBase64Transform#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#9)]
- [!code-csharp[System.Security.Cryptography.ToBase64Transform#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#9)]
- [!code-vb[System.Security.Cryptography.ToBase64Transform#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#9)]  
-  
+The following code example demonstrates how to call the <xref:System.Security.Cryptography.ToBase64Transform.TransformFinalBlock%2A> method to transform the final block of data. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.ToBase64Transform> class.  
+ 
+[!code-cpp[System.Security.Cryptography.ToBase64Transform#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CPP/members.cpp#9)]
+[!code-csharp[System.Security.Cryptography.ToBase64Transform#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/CS/members.cs#9)]
+[!code-vb[System.Security.Cryptography.ToBase64Transform#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.ToBase64Transform/VB/members.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current <see cref="T:System.Security.Cryptography.ToBase64Transform" /> object has already been disposed.</exception>

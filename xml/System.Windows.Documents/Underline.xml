@@ -47,13 +47,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Underline" /> class, taking a specified <see cref="T:System.Windows.Documents.Inline" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.Underline" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates usage of this constructor.  
-  
- [!code-csharp[SpanSnippets#_Underline_Const1](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_underline_const1)]
- [!code-vb[SpanSnippets#_Underline_Const1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_underline_const1)]  
-  
+The following example demonstrates usage of this constructor.  
+ 
+[!code-csharp[SpanSnippets#_Underline_Const1](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_underline_const1)]
+[!code-vb[SpanSnippets#_Underline_Const1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_underline_const1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -77,13 +77,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Underline" /> class, taking a specified <see cref="T:System.Windows.Documents.Inline" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.Underline" />, and a <see cref="T:System.Windows.Documents.TextPointer" /> specifying an insertion position for the new <see cref="T:System.Windows.Documents.Inline" /> element.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example demonstrates usage of this constructor.  
-  
- [!code-csharp[SpanSnippets#_Underline_Const2](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_underline_const2)]
- [!code-vb[SpanSnippets#_Underline_Const2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_underline_const2)]  
-  
+The following example demonstrates usage of this constructor.  
+ 
+[!code-csharp[SpanSnippets#_Underline_Const2](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_underline_const2)]
+[!code-vb[SpanSnippets#_Underline_Const2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_underline_const2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -107,18 +107,18 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Underline" /> class, taking two <see cref="T:System.Windows.Documents.TextPointer" /> objects that indicate the beginning and end of a selection of content to be contained by the new <see cref="T:System.Windows.Documents.Underline" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is intended to initialize a new <xref:System.Windows.Documents.Underline> element such that it encloses a selection of pre-existing content.  
+This constructor is intended to initialize a new <xref:System.Windows.Documents.Underline> element such that it encloses a selection of pre-existing content.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example demonstrates usage of this constructor.  
-  
- [!code-csharp[SpanSnippets#_Underline_Const3](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_underline_const3)]
- [!code-vb[SpanSnippets#_Underline_Const3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_underline_const3)]  
-  
+The following example demonstrates usage of this constructor.  
+ 
+[!code-csharp[SpanSnippets#_Underline_Const3](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_underline_const3)]
+[!code-vb[SpanSnippets#_Underline_Const3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_underline_const3)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised when <paramref name="start" /> or <paramref name="end" /> is **null**.</exception>

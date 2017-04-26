@@ -14,17 +14,17 @@
     <summary>A specialized <see cref="T:System.Activities.Statements.FlowNode" /> that provides the ability to model a conditional node with two outcomes.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Activities.Statements.FlowDecision> uses a condition and defines actions to take if the condition is `true` or `false`.  
+<xref:System.Activities.Statements.FlowDecision> uses a condition and defines actions to take if the condition is `true` or `false`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
-  
- [!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
-  
+The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
+ 
+[!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -43,12 +43,12 @@
         <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.FlowDecision" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
-  
- [!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
-  
+The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
+ 
+[!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -70,12 +70,12 @@
         <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.FlowDecision" /> class with the specified condition.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
-  
- [!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
-  
+The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
+ 
+[!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -97,12 +97,12 @@
         <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.FlowDecision" /> class with the specified condition.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
-  
- [!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
-  
+The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
+ 
+[!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -129,17 +129,17 @@
         <value>A value expression that represents the condition.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the condition evaluates to `true`, the <xref:System.Activities.Statements.FlowNode> in the <xref:System.Activities.Statements.FlowDecision.True%2A> property is executed. Otherwise the <xref:System.Activities.Statements.FlowNode> in the <xref:System.Activities.Statements.FlowDecision.False%2A> property is executed.  
+If the condition evaluates to `true`, the <xref:System.Activities.Statements.FlowNode> in the <xref:System.Activities.Statements.FlowDecision.True%2A> property is executed. Otherwise the <xref:System.Activities.Statements.FlowNode> in the <xref:System.Activities.Statements.FlowDecision.False%2A> property is executed.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code sample demonstrates using the Condition property of a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
-  
- [!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
-  
+The following code sample demonstrates using the Condition property of a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
+ 
+[!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -192,12 +192,12 @@
         <value>The activity that is executed when the condition evaluates to <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates setting the False property of a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
-  
- [!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
-  
+The following code sample demonstrates setting the False property of a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
+ 
+[!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -227,12 +227,12 @@
         <value>The activity to execute when the condition evaluates to <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates setting the True property of a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
-  
- [!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
-  
+The following code sample demonstrates setting the True property of a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
+ 
+[!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -246,12 +246,12 @@
         <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.FlowDecision" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
-  
- [!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
-  
+The following code sample demonstrates creating a <xref:System.Activities.Statements.FlowDecision> node. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
+ 
+[!code-csharp[wfs_FlowChartWithFaultHandling#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

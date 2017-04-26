@@ -19,24 +19,24 @@
     <summary>Provides a text writer that can indent new lines by a tab string token.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.CodeDom.Compiler.IndentedTextWriter> extends a <xref:System.IO.TextWriter> by providing methods that insert a tab string and track the current indentation level. Text formatted with multiple indentation levels is useful for generated code, so this class is used by CodeDOM code generator implementations.  
-  
- The tab string is the string that each indentation consists of. Typically the tab string contains white space.  
-  
+<xref:System.CodeDom.Compiler.IndentedTextWriter> extends a <xref:System.IO.TextWriter> by providing methods that insert a tab string and track the current indentation level. Text formatted with multiple indentation levels is useful for generated code, so this class is used by CodeDOM code generator implementations.  
+ 
+The tab string is the string that each indentation consists of. Typically the tab string contains white space.  
+ 
 > [!NOTE]
 >  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates using an <xref:System.CodeDom.Compiler.IndentedTextWriter> to write text at different levels of indentation.  
-  
- [!code-cpp[IndentedTextWriterExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp#1)]
- [!code-csharp[IndentedTextWriterExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs#1)]
- [!code-vb[IndentedTextWriterExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb#1)]  
-  
+The following code example demonstrates using an <xref:System.CodeDom.Compiler.IndentedTextWriter> to write text at different levels of indentation.  
+ 
+[!code-cpp[IndentedTextWriterExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp#1)]
+[!code-csharp[IndentedTextWriterExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs#1)]
+[!code-vb[IndentedTextWriterExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb#1)]  
+ 
  ]]></format>
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
@@ -91,14 +91,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.IndentedTextWriter" /> class using the specified text writer and tab string.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates creating an <xref:System.CodeDom.Compiler.IndentedTextWriter> using a specified tab string.  
-  
- [!code-cpp[IndentedTextWriterExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp#3)]
- [!code-csharp[IndentedTextWriterExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs#3)]
- [!code-vb[IndentedTextWriterExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb#3)]  
-  
+The following code example demonstrates creating an <xref:System.CodeDom.Compiler.IndentedTextWriter> using a specified tab string.  
+ 
+[!code-cpp[IndentedTextWriterExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp#3)]
+[!code-csharp[IndentedTextWriterExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs#3)]
+[!code-vb[IndentedTextWriterExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
@@ -148,10 +148,10 @@
         <summary>Specifies the default tab string. This field is constant.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default tab string consists of a single white space. (" ")  
-  
+The default tab string consists of a single white space. (" ")  
+ 
  ]]></format>
         </remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
@@ -202,10 +202,10 @@
         <summary>Flushes the stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This clears the stream of any data.  
-  
+This clears the stream of any data.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -232,14 +232,14 @@
         <value>The number of spaces to indent.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates setting the indentation level of an <xref:System.CodeDom.Compiler.IndentedTextWriter>. The indentation level is the number of tab strings to prefix each line with.  
-  
- [!code-cpp[IndentedTextWriterExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp#3)]
- [!code-csharp[IndentedTextWriterExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs#3)]
- [!code-vb[IndentedTextWriterExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb#3)]  
-  
+The following code example demonstrates setting the indentation level of an <xref:System.CodeDom.Compiler.IndentedTextWriter>. The indentation level is the number of tab strings to prefix each line with.  
+ 
+[!code-cpp[IndentedTextWriterExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp#3)]
+[!code-csharp[IndentedTextWriterExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs#3)]
+[!code-vb[IndentedTextWriterExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1104,14 +1104,14 @@
         <summary>Writes the specified string to a line without tabs.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates writing a line without tab string indentations.  
-  
- [!code-cpp[IndentedTextWriterExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp#6)]
- [!code-csharp[IndentedTextWriterExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs#6)]
- [!code-vb[IndentedTextWriterExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb#6)]  
-  
+The following code example demonstrates writing a line without tab string indentations.  
+ 
+[!code-cpp[IndentedTextWriterExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/IndentedTextWriterExample/CPP/form1.cpp#6)]
+[!code-csharp[IndentedTextWriterExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/IndentedTextWriterExample/CS/form1.cs#6)]
+[!code-vb[IndentedTextWriterExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/IndentedTextWriterExample/VB/form1.vb#6)]  
+ 
  ]]></format>
         </remarks>
       </Docs>

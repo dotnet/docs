@@ -19,27 +19,27 @@
     <summary>Represents a tag that contains [ECMAScript](http://www.ecma-international.org/publications/standards/Ecma-327.htm) that is run when the rule is matched.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default semantic format for System.Speech conforms to the W3C [Semantic Interpretation for Speech Recognition (SISR) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201765), where the format for `tag` elements that contain script is `semantics/1.0`. You must specify the script for <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag> objects using this format. In the syntax of `semantics/1.0`:  
-  
+The default semantic format for System.Speech conforms to the W3C [Semantic Interpretation for Speech Recognition (SISR) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201765), where the format for `tag` elements that contain script is `semantics/1.0`. You must specify the script for <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag> objects using this format. In the syntax of `semantics/1.0`:  
+ 
 -   The Rule Variable of the containing rule element is identified by "out".  
-  
+ 
 -   The name of the object that has access to the Rule Variable of rule elements outside the containing rule element is identified by "rules".  
-  
+ 
 -   The result from the latest referenced rule that matches the utterance can be represented by "rules.latest()".  
+ 
+You can also associate a semantic value with a phrase in a grammar without using script, using the <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag> object.  
+ 
   
- You can also associate a semantic value with a phrase in a grammar without using script, using the <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag> object.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a grammar for choosing the cities for a flight. The example uses <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag> to assign a semantic value to each city, which is the code for the city's airport. The example also uses <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag> to assign a separate semantic key for each of the two references made by the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef> object named `cityRef` to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object named `cities`. The semantic keys identify a recognized city as the departure city or the arrival city for the flight. The handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event uses the keys to retrieve the semantics from the recognition result.  
-  
- In the code example, "out" refers to the Rule Variable of the containing <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule>. The expression "out.LeavingFrom" refers to the property named `LeavingFrom` of the Rule Variable on the rule named `bookFlight`.  
-  
- The expression "rules.flightCities" refers to the Rule Variable on the rule whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Id%2A> is `flightCities`, and which is the target of a rule reference. In the example, the expression "out.LeavingFrom=rules.flightCities;" assigns the value from the rule whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Id%2A> is `flightCities` to the property named `LeavingFrom` of the Rule Variable on the rule named `bookFlight`. See [Semantic Results Content](http://msdn.microsoft.com/en-us/622291af-615c-4a15-9014-2933aa3f89fe), [Grammar Rule Name Referencing](http://msdn.microsoft.com/en-us/0777e975-8665-4cc3-957b-752743cb1bb9), and [Grammar Rule Reference Referencing](http://msdn.microsoft.com/en-us/dec3a809-9aa2-4139-893f-3a549ca1e03e) for more information.  
-  
+The following example creates a grammar for choosing the cities for a flight. The example uses <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag> to assign a semantic value to each city, which is the code for the city's airport. The example also uses <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag> to assign a separate semantic key for each of the two references made by the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef> object named `cityRef` to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object named `cities`. The semantic keys identify a recognized city as the departure city or the arrival city for the flight. The handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event uses the keys to retrieve the semantics from the recognition result.  
+ 
+In the code example, "out" refers to the Rule Variable of the containing <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule>. The expression "out.LeavingFrom" refers to the property named `LeavingFrom` of the Rule Variable on the rule named `bookFlight`.  
+ 
+The expression "rules.flightCities" refers to the Rule Variable on the rule whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Id%2A> is `flightCities`, and which is the target of a rule reference. In the example, the expression "out.LeavingFrom=rules.flightCities;" assigns the value from the rule whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Id%2A> is `flightCities` to the property named `LeavingFrom` of the Rule Variable on the rule named `bookFlight`. See [Semantic Results Content](http://msdn.microsoft.com/en-us/622291af-615c-4a15-9014-2933aa3f89fe), [Grammar Rule Name Referencing](http://msdn.microsoft.com/en-us/0777e975-8665-4cc3-957b-752743cb1bb9), and [Grammar Rule Reference Referencing](http://msdn.microsoft.com/en-us/dec3a809-9aa2-4139-893f-3a549ca1e03e) for more information.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -123,9 +123,9 @@ namespace SampleRecognition
 }  
   
 ```  
-  
- The following is the XML form of the grammar generated by the code in the example above.  
-  
+ 
+The following is the XML form of the grammar generated by the code in the example above.  
+ 
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <grammar xml:lang="en-US" root="flightBooker" tag-format="semantics/1.0"   
@@ -151,7 +151,7 @@ version="1.0" xmlns="http://www.w3.org/2001/06/grammar">
   
 </grammar>  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -170,10 +170,10 @@ version="1.0" xmlns="http://www.w3.org/2001/06/grammar">
         <summary>Creates an instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a semantic interpretation tag whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.Script%2A> property contains an empty string.  
-  
+This constructor creates a semantic interpretation tag whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.Script%2A> property contains an empty string.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -195,10 +195,10 @@ version="1.0" xmlns="http://www.w3.org/2001/06/grammar">
         <summary>Creates an instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag" /> class, specifying the script contents of the tag.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates a semantic interpretation tag whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.Script%2A> property is set to the value in `script`.  
-  
+This constructor creates a semantic interpretation tag whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.Script%2A> property is set to the value in `script`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

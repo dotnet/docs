@@ -14,24 +14,24 @@
     <summary>Provides qualifying information to a callback method when a <see cref="E:System.Net.PeerToPeer.Collaboration.PeerApplication.ApplicationChanged" /> event occurs.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.Net.PeerToPeer.Collaboration.ContactManager.ApplicationChanged> event is raised when:  
-  
+An <xref:System.Net.PeerToPeer.Collaboration.ContactManager.ApplicationChanged> event is raised when:  
+ 
 -   A peer starts an application within a collaboration  
-  
+ 
 -   A peer ends an application within a collaboration  
-  
+ 
 -   The <xref:System.Net.PeerToPeer.Collaboration.PeerContact> object that represents a collaborating peer has a change in its properties, such as the associated Nickname  
-  
+ 
 -   The scope of the application is changed on that peer contact's computer  
-  
+ 
 -   A peer moves to a different IP address on the network  
-  
+ 
 -  
-  
- Every class that uses the <xref:System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs> class requires a <xref:System.Security.Permissions.PermissionState> of Unrestricted. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration> object is constructed.  
-  
+ 
+Every class that uses the <xref:System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs> class requires a <xref:System.Security.Permissions.PermissionState> of Unrestricted. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration> object is constructed.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -53,10 +53,10 @@
         <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> instance that was updated.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unless specified, the default value for this property is `null`.  
-  
+Unless specified, the default value for this property is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -78,10 +78,10 @@
         <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerChangeType" /> enumeration value that specifies the type of change that was performed on the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Unless specified, the default value for this property is `null`.  
-  
+Unless specified, the default value for this property is `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>

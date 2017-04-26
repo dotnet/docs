@@ -23,10 +23,10 @@
     <summary>Provides a page adapter for the XHTML adapter set. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter> class inherits the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter> class and implements the <xref:System.Web.UI.MobileControls.IPageAdapter> class.  
-  
+The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter> class inherits the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter> class and implements the <xref:System.Web.UI.MobileControls.IPageAdapter> class.  
+ 
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for verifying at load time that the class derived from <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" /> has this permission. Associated enumerations: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />, <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
@@ -64,10 +64,10 @@
         <value>An <see cref="T:System.Collections.IList" /> object of additional HTTP headers.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter> class inherits the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.CacheVaryByHeaders%2A> property from the <xref:System.Web.UI.MobileControls.IPageAdapter> interface and always returns `null`.  
-  
+The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter> class inherits the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.CacheVaryByHeaders%2A> property from the <xref:System.Web.UI.MobileControls.IPageAdapter> interface and always returns `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -89,10 +89,10 @@
         <value>An <see cref="T:System.Collections.IDictionary" /> containing key/value pairs for the current cookieless <see cref="P:System.Web.HttpContext.Session" /> data, if any; otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.CookielessDataDictionary%2A> property is populated when a valid <xref:System.Collections.IDictionary> interface is configured as an attribute of the <xref:System.Web.UI.MobileControls.MobileControlsSection> element.  
-  
+The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.CookielessDataDictionary%2A> property is populated when a valid <xref:System.Collections.IDictionary> interface is configured as an attribute of the <xref:System.Web.UI.MobileControls.MobileControlsSection> element.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,10 +146,10 @@
         <returns>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> object containing all query string or form parameters and values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Because some devices handle postback differently from others, the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.DeterminePostBackMode%2A> method allows the adapter to modify the collection.  
-  
+Because some devices handle postback differently from others, the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.DeterminePostBackMode%2A> method allows the adapter to modify the collection.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -194,10 +194,10 @@
         <value>A string representing the key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an inheriting adapter overrides the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.EventArgumentKey%2A> property, it must also override the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.DeterminePostBackMode%2A> method to process the postback.  
-  
+If an inheriting adapter overrides the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.EventArgumentKey%2A> property, it must also override the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.DeterminePostBackMode%2A> method to process the postback.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -219,10 +219,10 @@
         <value>A string representing the key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an inheriting adapter overrides the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.EventSourceKey%2A> property, it must also override the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.DeterminePostBackMode%2A> method to process the postback.  
-  
+If an inheriting adapter overrides the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.EventSourceKey%2A> property, it must also override the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.DeterminePostBackMode%2A> method to process the postback.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -251,10 +251,10 @@
           <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An adapter can choose to handle the error and display an error message. The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter> class does nothing and returns `false`.  
-  
+An adapter can choose to handle the error and display an error message. The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter> class does nothing and returns `false`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -283,10 +283,10 @@
           <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.HandlePagePostBackEvent%2A> method is called during postback. An adapter can choose to handle the event. The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter> class does not handle the postback event and always returns `false`.  
-  
+The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.HandlePagePostBackEvent%2A> method is called during postback. An adapter can choose to handle the event. The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter> class does not handle the postback event and always returns `false`.  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -314,16 +314,16 @@
         <summary>Configures the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" /> object for the target device. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.InitWriterState%2A> method is called before rendering the page. This method sets the following properties on `writer` for the target device:  
-  
+The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.InitWriterState%2A> method is called before rendering the page. This method sets the following properties on `writer` for the target device:  
+ 
 -   <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks%2A>  
-  
+ 
 -   <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine%2A>  
-  
+ 
 -   <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SupportsNoWrapStyle%2A>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -348,13 +348,13 @@
         <summary>Sets conditional pagination for the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.OnPreRender%2A> method checks the <xref:System.Web.UI.MobileControls.MobilePage.ActiveForm%2A> property for the page. If the <xref:System.Web.UI.MobileControls.Form.Action%2A> property is not empty, the <xref:System.Web.UI.MobileControls.Panel.Paginate%2A> property for the active form is set to `false`. The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.OnPreRender%2A> method calls the base <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter.OnPreRender%2A> method before exiting.  
-  
+The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.OnPreRender%2A> method checks the <xref:System.Web.UI.MobileControls.MobilePage.ActiveForm%2A> property for the page. If the <xref:System.Web.UI.MobileControls.Form.Action%2A> property is not empty, the <xref:System.Web.UI.MobileControls.Panel.Paginate%2A> property for the active form is set to `false`. The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.OnPreRender%2A> method calls the base <xref:System.Web.UI.MobileControls.Adapters.ControlAdapter.OnPreRender%2A> method before exiting.  
+ 
 > [!NOTE]
 >  The <xref:System.Web.UI.MobileControls.MobileControl.Form%2A?displayProperty=fullName> property inherits from the <xref:System.Web.UI.MobileControls.Panel?displayProperty=fullName> class, which provides the <xref:System.Web.UI.MobileControls.Panel.Paginate%2A> property.  
-  
+ 
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
@@ -462,10 +462,10 @@
         <summary>Creates a link on the current page to enable postback on devices that do not support postback events. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Some devices are able to execute a postback event on a link or button only. The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.RenderUrlPostBackEvent%2A> method writes a link with a URL that contains all of the information that is required to process the form and to update and display the page.  
-  
+Some devices are able to execute a postback event on a link or button only. The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.RenderUrlPostBackEvent%2A> method writes a link with a URL that contains all of the information that is required to process the form and to update and display the page.  
+ 
  ]]></format>
         </remarks>
       </Docs>

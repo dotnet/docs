@@ -34,13 +34,13 @@
     <summary>Represents indexing a property or array.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows how to create an object of the <xref:System.Linq.Expressions.IndexExpression> type and use it to change a value of an array element by using the <xref:System.Linq.Expressions.Expression.ArrayAccess%2A> method.  
-  
- [!code-csharp[System.Linq.Expressions.ExpressionDev10#20](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#20)]
- [!code-vb[System.Linq.Expressions.ExpressionDev10#20](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#20)]  
-  
+The following code example shows how to create an object of the <xref:System.Linq.Expressions.IndexExpression> type and use it to change a value of an array element by using the <xref:System.Linq.Expressions.Expression.ArrayAccess%2A> method.  
+ 
+[!code-csharp[System.Linq.Expressions.ExpressionDev10#20](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#20)]
+[!code-vb[System.Linq.Expressions.ExpressionDev10#20](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#20)]  
+ 
  ]]></format>
     </remarks>
   </Docs>

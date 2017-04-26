@@ -28,35 +28,35 @@
     <summary>Represents a UTF-7 encoding of Unicode characters.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. Decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters.  
-  
- The UTF-7 encoding represents Unicode characters as sequences of 7-bit ASCII characters. This encoding supports certain protocols for which it is required, most often e-mail or newsgroup protocols. Since UTF-7 is not particularly secure or robust, and most modern systems allow 8-bit encodings, UTF-8 should normally be preferred to UTF-7.  
-  
+Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. Decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters.  
+ 
+The UTF-7 encoding represents Unicode characters as sequences of 7-bit ASCII characters. This encoding supports certain protocols for which it is required, most often e-mail or newsgroup protocols. Since UTF-7 is not particularly secure or robust, and most modern systems allow 8-bit encodings, UTF-8 should normally be preferred to UTF-7.  
+ 
 > [!NOTE]
 >  <xref:System.Text.UTF7Encoding> does not provide error detection. For security reasons, the application should use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
-  
- For more information about the UTFs and other encodings supported by <xref:System.Text>, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
-  
- The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.UTF7Encoding.GetBytes%2A> method performs the actual encoding.  
-  
- Likewise, the <xref:System.Text.UTF7Encoding.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.UTF7Encoding.GetChars%2A> and <xref:System.Text.UTF7Encoding.GetString%2A> methods perform the actual decoding.  
-  
- <xref:System.Text.UTF7Encoding> corresponds to the Windows code page 65000.  
-  
+ 
+For more information about the UTFs and other encodings supported by <xref:System.Text>, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
+ 
+The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.UTF7Encoding.GetBytes%2A> method performs the actual encoding.  
+ 
+Likewise, the <xref:System.Text.UTF7Encoding.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.UTF7Encoding.GetChars%2A> and <xref:System.Text.UTF7Encoding.GetString%2A> methods perform the actual decoding.  
+ 
+<xref:System.Text.UTF7Encoding> corresponds to the Windows code page 65000.  
+ 
 > [!NOTE]
 >  The state of a UTF-7 encoded object is not preserved if the object is serialized and deserialized using different .NET Framework versions.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use a <xref:System.Text.UTF7Encoding> to encode a string of Unicode characters and store them in a byte array. Notice that when the byte array is decoded back to a string, no data is lost.  
-  
- [!code-cpp[System.Text.UTF7Encoding Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding Example/CPP/snippet.cpp#1)]
- [!code-csharp[System.Text.UTF7Encoding Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding Example/CS/snippet.cs#1)]
- [!code-vb[System.Text.UTF7Encoding Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding Example/VB/snippet.vb#1)]  
-  
+The following code example demonstrates how to use a <xref:System.Text.UTF7Encoding> to encode a string of Unicode characters and store them in a byte array. Notice that when the byte array is decoded back to a string, no data is lost.  
+ 
+[!code-cpp[System.Text.UTF7Encoding Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding Example/CPP/snippet.cpp#1)]
+[!code-csharp[System.Text.UTF7Encoding Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding Example/CS/snippet.cs#1)]
+[!code-vb[System.Text.UTF7Encoding Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding Example/VB/snippet.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -84,24 +84,24 @@
         <summary>Initializes a new instance of the <see cref="T:System.Text.UTF7Encoding" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor creates an instance that does not allow optional characters. Calling the <xref:System.Text.UTF7Encoding.%23ctor%2A> constructor is equivalent to calling the <xref:System.Text.UTF7Encoding.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor that takes an `allowOptionals` parameter and specifying `false` for that parameter.  
-  
- If an instance allows optional characters, Unicode code points are encoded with a corresponding optional character instead of a modified base 64 character. The optional characters are exclamation point ("!"), backward slash ("\\"), vertical line ("&#124;"), double quote ("""), number sign ("#"), dollar sign ("$"), percent sign ("%"), ampersand ("&"), asterisk ("*"), semicolon (";"), left angle bracket ("\<"), right angle bracket (">"), left curly bracket ("{"), right curly bracket ("}"), left square bracket ("["), right square bracket ("]"), equal sign ("="), at sign ("@"), circumflex accent ("^"), underscore ("_"), and grave accent ("`").  
-  
+This constructor creates an instance that does not allow optional characters. Calling the <xref:System.Text.UTF7Encoding.%23ctor%2A> constructor is equivalent to calling the <xref:System.Text.UTF7Encoding.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor that takes an `allowOptionals` parameter and specifying `false` for that parameter.  
+ 
+If an instance allows optional characters, Unicode code points are encoded with a corresponding optional character instead of a modified base 64 character. The optional characters are exclamation point ("!"), backward slash ("\\"), vertical line ("&#124;"), double quote ("""), number sign ("#"), dollar sign ("$"), percent sign ("%"), ampersand ("&"), asterisk ("*"), semicolon (";"), left angle bracket ("\<"), right angle bracket (">"), left curly bracket ("{"), right curly bracket ("}"), left square bracket ("["), right square bracket ("]"), equal sign ("="), at sign ("@"), circumflex accent ("^"), underscore ("_"), and grave accent ("`").  
+ 
 > [!NOTE]
 >  <xref:System.Text.UTF7Encoding> does not provide error detection. For security reasons, your applications are recommended to use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a new <xref:System.Text.UTF7Encoding> instance and display the name of the encoding.  
-  
- [!code-cpp[System.Text.UTF7Encoding.ctor1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.ctor1 Example/CPP/ctor.cpp#1)]
- [!code-csharp[System.Text.UTF7Encoding.ctor1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.ctor1 Example/CS/ctor.cs#1)]
- [!code-vb[System.Text.UTF7Encoding.ctor1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.ctor1 Example/VB/ctor.vb#1)]  
-  
+The following code example demonstrates how to create a new <xref:System.Text.UTF7Encoding> instance and display the name of the encoding.  
+ 
+[!code-cpp[System.Text.UTF7Encoding.ctor1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.ctor1 Example/CPP/ctor.cpp#1)]
+[!code-csharp[System.Text.UTF7Encoding.ctor1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.ctor1 Example/CS/ctor.cs#1)]
+[!code-vb[System.Text.UTF7Encoding.ctor1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.ctor1 Example/VB/ctor.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,22 +133,22 @@
         <summary>Initializes a new instance of the <see cref="T:System.Text.UTF7Encoding" /> class. A parameter specifies whether to allow optional characters.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If an instance allows optional characters, Unicode code points are encoded with a corresponding optional character instead of a modified base 64 character. The optional characters are exclamation point ("!"), backward slash ("\\"), vertical line ("&#124;"), double quote ("""), number sign ("#"), dollar sign ("$"), percent sign ("%"), ampersand ("&"), asterisk ("*"), semicolon (";"), left angle bracket ("\<"), right angle bracket (">"), left curly bracket ("{"), right curly bracket ("}"), left square bracket ("["), right square bracket ("]"), equal sign ("="), at sign ("@"), circumflex accent ("^"), underscore ("_"), and grave accent ("`").  
-  
+If an instance allows optional characters, Unicode code points are encoded with a corresponding optional character instead of a modified base 64 character. The optional characters are exclamation point ("!"), backward slash ("\\"), vertical line ("&#124;"), double quote ("""), number sign ("#"), dollar sign ("$"), percent sign ("%"), ampersand ("&"), asterisk ("*"), semicolon (";"), left angle bracket ("\<"), right angle bracket (">"), left curly bracket ("{"), right curly bracket ("}"), left square bracket ("["), right square bracket ("]"), equal sign ("="), at sign ("@"), circumflex accent ("^"), underscore ("_"), and grave accent ("`").  
+ 
 > [!NOTE]
 >  <xref:System.Text.UTF7Encoding> does not provide error detection. For security reasons, your applications are recommended to use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to create a new <xref:System.Text.UTF7Encoding> instance that allows optional characters.  
-  
- [!code-cpp[System.Text.UTF7Encoding.ctor2 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.ctor2 Example/CPP/ctor-boolean.cpp#1)]
- [!code-csharp[System.Text.UTF7Encoding.ctor2 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.ctor2 Example/CS/ctor-boolean.cs#1)]
- [!code-vb[System.Text.UTF7Encoding.ctor2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.ctor2 Example/VB/ctor-boolean.vb#1)]  
-  
+The following code example demonstrates how to create a new <xref:System.Text.UTF7Encoding> instance that allows optional characters.  
+ 
+[!code-cpp[System.Text.UTF7Encoding.ctor2 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.ctor2 Example/CPP/ctor-boolean.cpp#1)]
+[!code-csharp[System.Text.UTF7Encoding.ctor2 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.ctor2 Example/CS/ctor-boolean.cs#1)]
+[!code-vb[System.Text.UTF7Encoding.ctor2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.ctor2 Example/VB/ctor-boolean.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -189,10 +189,10 @@
           <see langword="true" /> if <paramref name="value" /> is a <see cref="T:System.Text.UTF7Encoding" /> object and is equal to the current <see cref="T:System.Text.UTF7Encoding" /> object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Two <xref:System.Text.UTF7Encoding> objects are equal if they both either allow or disallow optional characters, and if their underlying <xref:System.Text.Encoding.EncoderFallback%2A> and <xref:System.Text.Encoding.DecoderFallback%2A> properties are equal.  
-  
+Two <xref:System.Text.UTF7Encoding> objects are equal if they both either allow or disallow optional characters, and if their underlying <xref:System.Text.Encoding.EncoderFallback%2A> and <xref:System.Text.Encoding.DecoderFallback%2A> properties are equal.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -235,19 +235,19 @@
         <returns>The number of bytes produced by encoding the specified characters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To calculate the exact array size that <xref:System.Text.UTF7Encoding.GetBytes%2A> requires to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
+To calculate the exact array size that <xref:System.Text.UTF7Encoding.GetBytes%2A> requires to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetByteCount%2A> method to return the number of bytes required to encode a character array.  
-  
- [!code-cpp[System.Text.UTF7Encoding.GetByteCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetByteCount Example/CPP/getbytecount-char[]-int32-int32.cpp#1)]
- [!code-csharp[System.Text.UTF7Encoding.GetByteCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetByteCount Example/CS/getbytecount-char[]-int32-int32.cs#1)]
- [!code-vb[System.Text.UTF7Encoding.GetByteCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetByteCount Example/VB/getbytecount-char[]-int32-int32.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetByteCount%2A> method to return the number of bytes required to encode a character array.  
+ 
+[!code-cpp[System.Text.UTF7Encoding.GetByteCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetByteCount Example/CPP/getbytecount-char[]-int32-int32.cpp#1)]
+[!code-csharp[System.Text.UTF7Encoding.GetByteCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetByteCount Example/CS/getbytecount-char[]-int32-int32.cs#1)]
+[!code-vb[System.Text.UTF7Encoding.GetByteCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetByteCount Example/VB/getbytecount-char[]-int32-int32.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -303,10 +303,10 @@
         <returns>The number of bytes produced by encoding the specified characters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To calculate the exact array size that <xref:System.Text.UTF7Encoding.GetBytes%2A> requires to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
-  
+To calculate the exact array size that <xref:System.Text.UTF7Encoding.GetBytes%2A> requires to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -364,19 +364,19 @@
         <returns>The number of bytes produced by encoding the specified characters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
+To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetByteCount%2A> method to return the number of bytes required to encode an array of Unicode characters.  
-  
- [!code-cpp[System.Text.UTF7Encoding.GetByteCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetByteCount Example/CPP/getbytecount-char[]-int32-int32.cpp#1)]
- [!code-csharp[System.Text.UTF7Encoding.GetByteCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetByteCount Example/CS/getbytecount-char[]-int32-int32.cs#1)]
- [!code-vb[System.Text.UTF7Encoding.GetByteCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetByteCount Example/VB/getbytecount-char[]-int32-int32.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetByteCount%2A> method to return the number of bytes required to encode an array of Unicode characters.  
+ 
+[!code-cpp[System.Text.UTF7Encoding.GetByteCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetByteCount Example/CPP/getbytecount-char[]-int32-int32.cpp#1)]
+[!code-csharp[System.Text.UTF7Encoding.GetByteCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetByteCount Example/CS/getbytecount-char[]-int32-int32.cs#1)]
+[!code-vb[System.Text.UTF7Encoding.GetByteCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetByteCount Example/VB/getbytecount-char[]-int32-int32.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -445,15 +445,15 @@
         <returns>The actual number of bytes written at the location indicated by <paramref name="bytes" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
-  
- Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method, respectively.  
-  
+To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
+ 
+Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method, respectively.  
+ 
 > [!NOTE]
 >  <xref:System.Text.UTF7Encoding> does not provide error detection. Invalid characters are encoded as a modified base 64 character. For security reasons, your applications are recommended to use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -517,24 +517,24 @@
         <returns>The actual number of bytes written into <paramref name="bytes" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
-  
- Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method, respectively.  
-  
+To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
+ 
+Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method, respectively.  
+ 
 > [!NOTE]
 >  <xref:System.Text.UTF7Encoding> does not provide error detection. Invalid characters are encoded as a modified base 64 character. For security reasons, your applications are recommended to use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetBytes%2A> method to encode a range of characters from a <xref:System.String> and store the encoded bytes in a range of elements in a byte array.  
-  
- [!code-cpp[System.Text.UTF7Encoding.GetBytes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetBytes Example/CPP/getbytes-char[]-int32-int32-byte[]-int32.cpp#1)]
- [!code-csharp[System.Text.UTF7Encoding.GetBytes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetBytes Example/CS/getbytes-char[]-int32-int32-byte[]-int32.cs#1)]
- [!code-vb[System.Text.UTF7Encoding.GetBytes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetBytes Example/VB/getbytes-char[]-int32-int32-byte[]-int32.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetBytes%2A> method to encode a range of characters from a <xref:System.String> and store the encoded bytes in a range of elements in a byte array.  
+ 
+[!code-cpp[System.Text.UTF7Encoding.GetBytes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetBytes Example/CPP/getbytes-char[]-int32-int32-byte[]-int32.cpp#1)]
+[!code-csharp[System.Text.UTF7Encoding.GetBytes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetBytes Example/CS/getbytes-char[]-int32-int32-byte[]-int32.cs#1)]
+[!code-vb[System.Text.UTF7Encoding.GetBytes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetBytes Example/VB/getbytes-char[]-int32-int32-byte[]-int32.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -608,24 +608,24 @@
         <returns>The actual number of bytes written into <paramref name="bytes" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
-  
- Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method, respectively.  
-  
+To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
+ 
+Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method, respectively.  
+ 
 > [!NOTE]
 >  <xref:System.Text.UTF7Encoding> does not provide error detection. Invalid characters are encoded as a modified base 64 character. For security reasons, your applications are recommended to use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetBytes%2A> method to encode a range of elements from a Unicode character array, and store the encoded bytes in a range of elements in a byte array.  
-  
- [!code-cpp[System.Text.UTF7Encoding.GetBytes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetBytes Example/CPP/getbytes-char[]-int32-int32-byte[]-int32.cpp#1)]
- [!code-csharp[System.Text.UTF7Encoding.GetBytes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetBytes Example/CS/getbytes-char[]-int32-int32-byte[]-int32.cs#1)]
- [!code-vb[System.Text.UTF7Encoding.GetBytes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetBytes Example/VB/getbytes-char[]-int32-int32-byte[]-int32.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetBytes%2A> method to encode a range of elements from a Unicode character array, and store the encoded bytes in a range of elements in a byte array.  
+ 
+[!code-cpp[System.Text.UTF7Encoding.GetBytes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetBytes Example/CPP/getbytes-char[]-int32-int32-byte[]-int32.cpp#1)]
+[!code-csharp[System.Text.UTF7Encoding.GetBytes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetBytes Example/CS/getbytes-char[]-int32-int32-byte[]-int32.cs#1)]
+[!code-vb[System.Text.UTF7Encoding.GetBytes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetBytes Example/VB/getbytes-char[]-int32-int32-byte[]-int32.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -696,10 +696,10 @@
         <returns>The number of characters produced by decoding the specified sequence of bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetChars%2A> to store the resulting characters, use <xref:System.Text.UTF7Encoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>. The <xref:System.Text.UTF7Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method generally executes faster.  
-  
+To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetChars%2A> to store the resulting characters, use <xref:System.Text.UTF7Encoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>. The <xref:System.Text.UTF7Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method generally executes faster.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -757,19 +757,19 @@
         <returns>The number of characters produced by decoding the specified sequence of bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetChars%2A> to store the resulting characters, use <xref:System.Text.UTF7Encoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>. The <xref:System.Text.UTF7Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method generally executes faster.  
+To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetChars%2A> to store the resulting characters, use <xref:System.Text.UTF7Encoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>. The <xref:System.Text.UTF7Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method generally executes faster.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetCharCount%2A> method to return the number of characters produced by decoding a range of elements in a byte array.  
-  
- [!code-cpp[System.Text.UnicodeEncoding.GetCharCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UnicodeEncoding.GetCharCount Example/CPP/getcharcount-byte[]-int32-int32.cpp#1)]
- [!code-csharp[System.Text.UnicodeEncoding.GetCharCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UnicodeEncoding.GetCharCount Example/CS/getcharcount-byte[]-int32-int32.cs#1)]
- [!code-vb[System.Text.UnicodeEncoding.GetCharCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UnicodeEncoding.GetCharCount Example/VB/getcharcount-byte[]-int32-int32.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetCharCount%2A> method to return the number of characters produced by decoding a range of elements in a byte array.  
+ 
+[!code-cpp[System.Text.UnicodeEncoding.GetCharCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UnicodeEncoding.GetCharCount Example/CPP/getcharcount-byte[]-int32-int32.cpp#1)]
+[!code-csharp[System.Text.UnicodeEncoding.GetCharCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UnicodeEncoding.GetCharCount Example/CS/getcharcount-byte[]-int32-int32.cs#1)]
+[!code-vb[System.Text.UnicodeEncoding.GetCharCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UnicodeEncoding.GetCharCount Example/VB/getcharcount-byte[]-int32-int32.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -838,15 +838,15 @@
         <returns>The actual number of characters written at the location indicated by <paramref name="chars" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetChars%2A> to store the resulting characters, use <xref:System.Text.UTF7Encoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>. The <xref:System.Text.UTF7Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method generally executes faster.  
-  
- Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method, respectively.  
-  
+To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetChars%2A> to store the resulting characters, use <xref:System.Text.UTF7Encoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>. The <xref:System.Text.UTF7Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method generally executes faster.  
+ 
+Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method, respectively.  
+ 
 > [!NOTE]
 >  <xref:System.Text.UTF7Encoding> does not provide error detection. When invalid bytes are encountered, <xref:System.Text.UTF7Encoding> generally emits the invalid bytes. If a byte is larger than hexadecimal 0x7F, the byte value is zero-extended into a Unicode character, the result is stored in the `chars` array, and any shift sequence is terminated. For example, if the byte to encode is hexadecimal 0x81, the resulting character is U+0081. For security reasons, your applications are recommended to use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -910,24 +910,24 @@
         <returns>The actual number of characters written into <paramref name="chars" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetChars%2A> to store the resulting characters, use <xref:System.Text.UTF7Encoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>. The <xref:System.Text.UTF7Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method generally executes faster.  
-  
- Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method, respectively.  
-  
+To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetChars%2A> to store the resulting characters, use <xref:System.Text.UTF7Encoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>. The <xref:System.Text.UTF7Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method generally executes faster.  
+ 
+Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method, respectively.  
+ 
 > [!NOTE]
 >  <xref:System.Text.UTF7Encoding> does not provide error detection. When invalid bytes are encountered, <xref:System.Text.UTF7Encoding> generally emits the invalid bytes. If a byte is larger than hexadecimal 0x7F, the byte value is zero-extended into a Unicode character, the result is stored in the `chars` array, and any shift sequence is terminated. For example, if the byte to encode is hexadecimal 0x81, the resulting character is U+0081. For security reasons, your applications are recommended to use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetChars%2A> method to decode a range of elements in a byte array and store the result in a character array.  
-  
- [!code-cpp[System.Text.UTF7Encoding.GetChars Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetChars Example/CPP/getchars-byte[]-int32-int32-char[]-int32.cpp#1)]
- [!code-csharp[System.Text.UTF7Encoding.GetChars Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetChars Example/CS/getchars-byte[]-int32-int32-char[]-int32.cs#1)]
- [!code-vb[System.Text.UTF7Encoding.GetChars Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetChars Example/VB/getchars-byte[]-int32-int32-char[]-int32.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetChars%2A> method to decode a range of elements in a byte array and store the result in a character array.  
+ 
+[!code-cpp[System.Text.UTF7Encoding.GetChars Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetChars Example/CPP/getchars-byte[]-int32-int32-char[]-int32.cpp#1)]
+[!code-csharp[System.Text.UTF7Encoding.GetChars Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetChars Example/CS/getchars-byte[]-int32-int32-char[]-int32.cs#1)]
+[!code-vb[System.Text.UTF7Encoding.GetChars Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetChars Example/VB/getchars-byte[]-int32-int32-char[]-int32.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -982,19 +982,19 @@
         <returns>A <see cref="T:System.Text.Decoder" /> that converts a UTF-7 encoded sequence of bytes into a sequence of Unicode characters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method converts sequential blocks of bytes into sequential blocks of characters, in a manner similar to the <xref:System.Text.UTF7Encoding.GetChars%2A> method of this class. However, a <xref:System.Text.Decoder> maintains state information between calls so it can correctly decode byte sequences that span blocks. The <xref:System.Text.Decoder> also preserves trailing bytes at the end of data blocks and uses the trailing bytes in the next decoding operation. Therefore, <xref:System.Text.UTF7Encoding.GetDecoder%2A> and <xref:System.Text.UTF7Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
+The <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method converts sequential blocks of bytes into sequential blocks of characters, in a manner similar to the <xref:System.Text.UTF7Encoding.GetChars%2A> method of this class. However, a <xref:System.Text.Decoder> maintains state information between calls so it can correctly decode byte sequences that span blocks. The <xref:System.Text.Decoder> also preserves trailing bytes at the end of data blocks and uses the trailing bytes in the next decoding operation. Therefore, <xref:System.Text.UTF7Encoding.GetDecoder%2A> and <xref:System.Text.UTF7Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method to obtain a decoder to convert the UTF-7 encoded bytes into a sequence of characters.  
-  
- [!code-cpp[System.Text.UTF7Encoding.GetDecoder Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetDecoder Example/CPP/getdecoder-.cpp#1)]
- [!code-csharp[System.Text.UTF7Encoding.GetDecoder Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetDecoder Example/CS/getdecoder-.cs#1)]
- [!code-vb[System.Text.UTF7Encoding.GetDecoder Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetDecoder Example/VB/getdecoder-.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method to obtain a decoder to convert the UTF-7 encoded bytes into a sequence of characters.  
+ 
+[!code-cpp[System.Text.UTF7Encoding.GetDecoder Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetDecoder Example/CPP/getdecoder-.cpp#1)]
+[!code-csharp[System.Text.UTF7Encoding.GetDecoder Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetDecoder Example/CS/getdecoder-.cs#1)]
+[!code-vb[System.Text.UTF7Encoding.GetDecoder Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetDecoder Example/VB/getdecoder-.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1026,19 +1026,19 @@
         <returns>A <see cref="T:System.Text.Encoder" /> that converts a sequence of Unicode characters into a UTF-7 encoded sequence of bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method converts sequential blocks of bytes into sequential blocks of characters, in a manner similar to the <xref:System.Text.UTF7Encoding.GetChars%2A> method. However, a <xref:System.Text.Decoder> maintains state information between calls so it can correctly decode byte sequences that span blocks. The <xref:System.Text.Decoder> also preserves trailing bytes at the end of data blocks and uses the trailing bytes in the next decoding operation. Therefore, <xref:System.Text.UTF7Encoding.GetDecoder%2A> and <xref:System.Text.UTF7Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
+The <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method converts sequential blocks of bytes into sequential blocks of characters, in a manner similar to the <xref:System.Text.UTF7Encoding.GetChars%2A> method. However, a <xref:System.Text.Decoder> maintains state information between calls so it can correctly decode byte sequences that span blocks. The <xref:System.Text.Decoder> also preserves trailing bytes at the end of data blocks and uses the trailing bytes in the next decoding operation. Therefore, <xref:System.Text.UTF7Encoding.GetDecoder%2A> and <xref:System.Text.UTF7Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method to obtain an encoder to convert a sequence of characters into a UTF-7 encoded sequence of bytes.  
-  
- [!code-cpp[System.Text.UTF7Encoding.GetEncoder Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetEncoder Example/CPP/getencoder-.cpp#1)]
- [!code-csharp[System.Text.UTF7Encoding.GetEncoder Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetEncoder Example/CS/getencoder-.cs#1)]
- [!code-vb[System.Text.UTF7Encoding.GetEncoder Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetEncoder Example/VB/getencoder-.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method to obtain an encoder to convert a sequence of characters into a UTF-7 encoded sequence of bytes.  
+ 
+[!code-cpp[System.Text.UTF7Encoding.GetEncoder Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetEncoder Example/CPP/getencoder-.cpp#1)]
+[!code-csharp[System.Text.UTF7Encoding.GetEncoder Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetEncoder Example/CS/getencoder-.cs#1)]
+[!code-vb[System.Text.UTF7Encoding.GetEncoder Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetEncoder Example/VB/getencoder-.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1075,10 +1075,10 @@
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value returned by the <xref:System.Text.UTF7Encoding.GetHashCode%2A> method is not suitable for distinguishing one <xref:System.Text.UTF7Encoding> object from another. If your application needs a unique hash code, it should override the <xref:System.Text.UTF7Encoding.GetHashCode%2A> method.  
-  
+The value returned by the <xref:System.Text.UTF7Encoding.GetHashCode%2A> method is not suitable for distinguishing one <xref:System.Text.UTF7Encoding> object from another. If your application needs a unique hash code, it should override the <xref:System.Text.UTF7Encoding.GetHashCode%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1113,28 +1113,28 @@
         <returns>The maximum number of bytes produced by encoding the specified number of characters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
-  
- <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> is a worst-case number, including the worst case for the currently selected <xref:System.Text.EncoderFallback>. If a fallback is chosen with a potentially large string, <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> can return large values.  
-  
- In most cases, this method returns reasonable numbers for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case that a more reasonable buffer is exceeded. You might also want to consider a different approach using <xref:System.Text.UTF7Encoding.GetByteCount%2A> or <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName>. While UTF-7 is very efficient at encoding ASCII data, one byte per character, it is extremely inefficient for other data. As remarked above, <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> deals with a worst case. If the data to be encoded is largely ASCII, and especially if the ASCII characters cluster together, UTF-7 is significantly more efficient than the number returned by this method suggests.  
-  
- <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> has no relation to <xref:System.Text.UTF7Encoding.GetChars%2A>. If your application needs a similar function to use with <xref:System.Text.UTF7Encoding.GetChars%2A>, it should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>.  
-  
+To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
+ 
+<xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> is a worst-case number, including the worst case for the currently selected <xref:System.Text.EncoderFallback>. If a fallback is chosen with a potentially large string, <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> can return large values.  
+ 
+In most cases, this method returns reasonable numbers for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case that a more reasonable buffer is exceeded. You might also want to consider a different approach using <xref:System.Text.UTF7Encoding.GetByteCount%2A> or <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName>. While UTF-7 is very efficient at encoding ASCII data, one byte per character, it is extremely inefficient for other data. As remarked above, <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> deals with a worst case. If the data to be encoded is largely ASCII, and especially if the ASCII characters cluster together, UTF-7 is significantly more efficient than the number returned by this method suggests.  
+ 
+<xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> has no relation to <xref:System.Text.UTF7Encoding.GetChars%2A>. If your application needs a similar function to use with <xref:System.Text.UTF7Encoding.GetChars%2A>, it should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>.  
+ 
 > [!NOTE]
 >  `GetMaxByteCount(N)` is not necessarily the same value as `N* GetMaxByteCount(1)`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method to return the maximum number of bytes required to encode a specified number of characters.  
-  
- [!code-cpp[System.Text.UTF7Encoding.GetMaxByteCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetMaxByteCount Example/CPP/getmaxbytecount-int32.cpp#1)]
- [!code-csharp[System.Text.UTF7Encoding.GetMaxByteCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetMaxByteCount Example/CS/getmaxbytecount-int32.cs#1)]
- [!code-vb[System.Text.UTF7Encoding.GetMaxByteCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetMaxByteCount Example/VB/getmaxbytecount-int32.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method to return the maximum number of bytes required to encode a specified number of characters.  
+ 
+[!code-cpp[System.Text.UTF7Encoding.GetMaxByteCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetMaxByteCount Example/CPP/getmaxbytecount-int32.cpp#1)]
+[!code-csharp[System.Text.UTF7Encoding.GetMaxByteCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetMaxByteCount Example/CS/getmaxbytecount-int32.cs#1)]
+[!code-vb[System.Text.UTF7Encoding.GetMaxByteCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetMaxByteCount Example/VB/getmaxbytecount-int32.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1180,28 +1180,28 @@
         <returns>The maximum number of characters produced by decoding the specified number of bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetChars%2A> to store the resulting characters, the application uses <xref:System.Text.UTF7Encoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>. The <xref:System.Text.UTF7Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method generally executes faster.  
-  
- <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> is a worst-case number, including the worst case for the currently selected <xref:System.Text.DecoderFallback>. If a fallback is chosen with a potentially large string, <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> can return large values.  
-  
- In most cases, this method returns reasonable numbers for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case that a more reasonable buffer is exceeded. You might also want to consider a different approach using <xref:System.Text.UTF7Encoding.GetCharCount%2A> or <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName>.  
-  
- <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> has no relation to <xref:System.Text.UTF7Encoding.GetBytes%2A>. If your application needs a similar function to use with <xref:System.Text.UTF7Encoding.GetBytes%2A>, it should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>.  
-  
+To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetChars%2A> to store the resulting characters, the application uses <xref:System.Text.UTF7Encoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>. The <xref:System.Text.UTF7Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method generally executes faster.  
+ 
+<xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> is a worst-case number, including the worst case for the currently selected <xref:System.Text.DecoderFallback>. If a fallback is chosen with a potentially large string, <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> can return large values.  
+ 
+In most cases, this method returns reasonable numbers for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case that a more reasonable buffer is exceeded. You might also want to consider a different approach using <xref:System.Text.UTF7Encoding.GetCharCount%2A> or <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName>.  
+ 
+<xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> has no relation to <xref:System.Text.UTF7Encoding.GetBytes%2A>. If your application needs a similar function to use with <xref:System.Text.UTF7Encoding.GetBytes%2A>, it should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>.  
+ 
 > [!NOTE]
 >  `GetMaxCharCount(N)` is not necessarily the same value as `N* GetMaxCharCount(1)`.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method to return the maximum number of characters produced by decoding a specified number of bytes.  
-  
- [!code-cpp[System.Text.UTF7Encoding.GetMaxCharCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetMaxCharCount Example/CPP/getmaxcharcount-int32.cpp#1)]
- [!code-csharp[System.Text.UTF7Encoding.GetMaxCharCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetMaxCharCount Example/CS/getmaxcharcount-int32.cs#1)]
- [!code-vb[System.Text.UTF7Encoding.GetMaxCharCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetMaxCharCount Example/VB/getmaxcharcount-int32.vb#1)]  
-  
+The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method to return the maximum number of characters produced by decoding a specified number of bytes.  
+ 
+[!code-cpp[System.Text.UTF7Encoding.GetMaxCharCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetMaxCharCount Example/CPP/getmaxcharcount-int32.cpp#1)]
+[!code-csharp[System.Text.UTF7Encoding.GetMaxCharCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetMaxCharCount Example/CS/getmaxcharcount-int32.cs#1)]
+[!code-vb[System.Text.UTF7Encoding.GetMaxCharCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetMaxCharCount Example/VB/getmaxcharcount-int32.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1259,22 +1259,22 @@
         <returns>A <see cref="T:System.String" /> containing the results of decoding the specified sequence of bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method, respectively.  
-  
+Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method, respectively.  
+ 
 > [!NOTE]
 >  <xref:System.Text.UTF7Encoding> does not provide error detection. When invalid bytes are encountered, <xref:System.Text.UTF7Encoding> generally emits the invalid bytes. If a byte is larger than hexadecimal 0x7F, the byte value is zero-extended into a Unicode character, the result is stored in the `chars` array, and any shift sequence is terminated. For example, if the byte to encode is hexadecimal 0x81, the resulting character is U+0081. For security reasons, your applications are recommended to use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example encodes a string into an array of bytes, and then decodes the bytes back into a string.  
-  
- [!code-cpp[System.Text.UTF7Encoding.getstring#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.getstring/CPP/getstring.cpp#1)]
- [!code-csharp[System.Text.UTF7Encoding.getstring#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.getstring/CS/getstring.cs#1)]
- [!code-vb[System.Text.UTF7Encoding.getstring#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.getstring/VB/getstring.vb#1)]  
-  
+The following code example encodes a string into an array of bytes, and then decodes the bytes back into a string.  
+ 
+[!code-cpp[System.Text.UTF7Encoding.getstring#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.getstring/CPP/getstring.cpp#1)]
+[!code-csharp[System.Text.UTF7Encoding.getstring#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.getstring/CS/getstring.cs#1)]
+[!code-vb[System.Text.UTF7Encoding.getstring#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF7Encoding.getstring/VB/getstring.vb#1)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

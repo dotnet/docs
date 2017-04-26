@@ -22,10 +22,10 @@
     <summary>Stores an ordered pair of integers, which specify a <see cref="P:System.Drawing.Size.Height" /> and <see cref="P:System.Drawing.Size.Width" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Drawing.Size> class is used to specify a height and width through the <xref:System.Drawing.Rectangle.Size%2A> property for  <xref:System.Drawing.Rectangle>, <xref:System.Drawing.RectangleF>, <xref:System.Drawing.Image>, <xref:System.Drawing.Icon> and other graphics classes. You can perform operations on a <xref:System.Drawing.Size> by using the overloaded operators such as <xref:System.Drawing.Size.op_Addition%2A>, <xref:System.Drawing.Size.op_Subtraction%2A>, and <xref:System.Drawing.Size.op_Equality%2A>. The unit for the <xref:System.Drawing.Size.Height%2A> and <xref:System.Drawing.Size.Width%2A> of the <xref:System.Drawing.Size> structure depend on the <xref:System.Drawing.Graphics.PageUnit%2A> and <xref:System.Drawing.Graphics.PageScale%2A> settings for the <xref:System.Drawing.Graphics> object that is used to draw.  
-  
+The <xref:System.Drawing.Size> class is used to specify a height and width through the <xref:System.Drawing.Rectangle.Size%2A> property for  <xref:System.Drawing.Rectangle>, <xref:System.Drawing.RectangleF>, <xref:System.Drawing.Image>, <xref:System.Drawing.Icon> and other graphics classes. You can perform operations on a <xref:System.Drawing.Size> by using the overloaded operators such as <xref:System.Drawing.Size.op_Addition%2A>, <xref:System.Drawing.Size.op_Subtraction%2A>, and <xref:System.Drawing.Size.op_Equality%2A>. The unit for the <xref:System.Drawing.Size.Height%2A> and <xref:System.Drawing.Size.Width%2A> of the <xref:System.Drawing.Size> structure depend on the <xref:System.Drawing.Graphics.PageUnit%2A> and <xref:System.Drawing.Graphics.PageScale%2A> settings for the <xref:System.Drawing.Graphics> object that is used to draw.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -83,14 +83,14 @@
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Size" /> structure from the specified dimensions.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Point.%23ctor%2A?displayProperty=fullName> and <xref:System.Drawing.Size.%23ctor%2A> constructors and the <xref:System.Drawing.ContentAlignment?displayProperty=fullName> enumeration. To run this example, paste this code into a Windows Form that contains a label named `Label1` and call the `IntializeLabel1` method in the form's constructor.  
-  
- [!code-cpp[System.Drawing.PointsAndSizes#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CPP/form1.cpp#7)]
- [!code-csharp[System.Drawing.PointsAndSizes#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CS/form1.cs#7)]
- [!code-vb[System.Drawing.PointsAndSizes#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/VB/form1.vb#7)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Point.%23ctor%2A?displayProperty=fullName> and <xref:System.Drawing.Size.%23ctor%2A> constructors and the <xref:System.Drawing.ContentAlignment?displayProperty=fullName> enumeration. To run this example, paste this code into a Windows Form that contains a label named `Label1` and call the `IntializeLabel1` method in the form's constructor.  
+ 
+[!code-cpp[System.Drawing.PointsAndSizes#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CPP/form1.cpp#7)]
+[!code-csharp[System.Drawing.PointsAndSizes#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CS/form1.cs#7)]
+[!code-vb[System.Drawing.PointsAndSizes#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/VB/form1.vb#7)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,13 +126,13 @@
         <returns>A <see cref="T:System.Drawing.Size" /> structure that is the result of the addition operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Size.Add%2A> method. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `AddSizes` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-csharp[System.Drawing.MiscWhidbeySnippets#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/CS/Form1.cs#11)]
- [!code-vb[System.Drawing.MiscWhidbeySnippets#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/VB/Form1.vb#11)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Size.Add%2A> method. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `AddSizes` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-csharp[System.Drawing.MiscWhidbeySnippets#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/CS/Form1.cs#11)]
+[!code-vb[System.Drawing.MiscWhidbeySnippets#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/VB/Form1.vb#11)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -249,10 +249,10 @@
         <returns>An integer value that specifies a hash value for this <see cref="T:System.Drawing.Size" /> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You should avoid depending on <xref:System.Drawing.Size.GetHashCode%2A> for unique values, as two <xref:System.Drawing.Size> objects with the same values for their <xref:System.Drawing.Size.Width%2A> and <xref:System.Drawing.Size.Height%2A> properties may return the same hash code. This behavior could change in a future release.  
-  
+You should avoid depending on <xref:System.Drawing.Size.GetHashCode%2A> for unique values, as two <xref:System.Drawing.Size> objects with the same values for their <xref:System.Drawing.Size.Width%2A> and <xref:System.Drawing.Size.Height%2A> properties may return the same hash code. This behavior could change in a future release.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -282,10 +282,10 @@
         <value>The vertical component of this <see cref="T:System.Drawing.Size" /> structure, typically measured in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The unit for the <xref:System.Drawing.Size.Height%2A> and <xref:System.Drawing.Size.Width%2A> of the <xref:System.Drawing.Size> structure depend on the <xref:System.Drawing.Graphics.PageUnit%2A> and <xref:System.Drawing.Graphics.PageScale%2A> settings for the <xref:System.Drawing.Graphics> object that is used to draw.  
-  
+The unit for the <xref:System.Drawing.Size.Height%2A> and <xref:System.Drawing.Size.Width%2A> of the <xref:System.Drawing.Size> structure depend on the <xref:System.Drawing.Graphics.PageUnit%2A> and <xref:System.Drawing.Graphics.PageScale%2A> settings for the <xref:System.Drawing.Graphics> object that is used to draw.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -347,14 +347,14 @@
         <returns>A <see cref="T:System.Drawing.Size" /> structure that is the result of the addition operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Drawing.Size.op_Addition%2A> operator. The example is designed to be used with Windows Forms. To run this example, paste it into a form that contains a button named `addButton` and associate the `addButton_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cpp[System.Drawing.PointsAndSizes#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CPP/form1.cpp#4)]
- [!code-csharp[System.Drawing.PointsAndSizes#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CS/form1.cs#4)]
- [!code-vb[System.Drawing.PointsAndSizes#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/VB/form1.vb#4)]  
-  
+The following code example demonstrates the <xref:System.Drawing.Size.op_Addition%2A> operator. The example is designed to be used with Windows Forms. To run this example, paste it into a form that contains a button named `addButton` and associate the `addButton_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
+ 
+[!code-cpp[System.Drawing.PointsAndSizes#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CPP/form1.cpp#4)]
+[!code-csharp[System.Drawing.PointsAndSizes#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CS/form1.cs#4)]
+[!code-vb[System.Drawing.PointsAndSizes#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/VB/form1.vb#4)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -391,16 +391,16 @@
           <see langword="true" /> if <paramref name="sz1" /> and <paramref name="sz2" /> have equal width and height; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example creates points and sizes by using several of the overloaded operators defined for these types. It also demonstrates how to use the <xref:System.Drawing.SystemPens> class.  
-  
- This example is designed to be used with Windows Forms. Create a form that contains a <xref:System.Windows.Forms.Button> named `subtractButton`. Paste the code into the form and call the `CreatePointsAndSizes` method from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-cpp[System.Drawing.PointsAndSizes#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.PointsAndSizes#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CS/form1.cs#1)]
- [!code-vb[System.Drawing.PointsAndSizes#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/VB/form1.vb#1)]  
-  
+The following code example creates points and sizes by using several of the overloaded operators defined for these types. It also demonstrates how to use the <xref:System.Drawing.SystemPens> class.  
+ 
+This example is designed to be used with Windows Forms. Create a form that contains a <xref:System.Windows.Forms.Button> named `subtractButton`. Paste the code into the form and call the `CreatePointsAndSizes` method from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-cpp[System.Drawing.PointsAndSizes#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CPP/form1.cpp#1)]
+[!code-csharp[System.Drawing.PointsAndSizes#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CS/form1.cs#1)]
+[!code-vb[System.Drawing.PointsAndSizes#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/VB/form1.vb#1)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -529,14 +529,14 @@
         <returns>A <see cref="T:System.Drawing.Size" /> structure that is the result of the subtraction operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates the <xref:System.Drawing.Size.op_Subtraction%2A> operator. The example is designed to be used with Windows Forms. To run the example, paste it into a form that contains a button named `subtractionButton` and associate the `subtractButton_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
-  
- [!code-cpp[System.Drawing.PointsAndSizes#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CPP/form1.cpp#2)]
- [!code-csharp[System.Drawing.PointsAndSizes#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CS/form1.cs#2)]
- [!code-vb[System.Drawing.PointsAndSizes#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/VB/form1.vb#2)]  
-  
+The following code example demonstrates the <xref:System.Drawing.Size.op_Subtraction%2A> operator. The example is designed to be used with Windows Forms. To run the example, paste it into a form that contains a button named `subtractionButton` and associate the `subtractButton_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
+ 
+[!code-cpp[System.Drawing.PointsAndSizes#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CPP/form1.cpp#2)]
+[!code-csharp[System.Drawing.PointsAndSizes#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CS/form1.cs#2)]
+[!code-vb[System.Drawing.PointsAndSizes#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/VB/form1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -570,14 +570,14 @@
         <returns>The <see cref="T:System.Drawing.Size" /> structure this method converts to.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use static <xref:System.Drawing.Size.Round%2A> and <xref:System.Drawing.Size.Truncate%2A> methods to convert a <xref:System.Drawing.SizeF> to a <xref:System.Drawing.Size>. This example is designed to be used with Windows Forms. To run this example, paste it into a form that contains two <xref:System.Windows.Forms.Label> objects named `Label1` and `Label2`, and then call this method from the form's constructor.  
-  
- [!code-cpp[System.Drawing.PointsAndSizes#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CPP/form1.cpp#5)]
- [!code-csharp[System.Drawing.PointsAndSizes#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CS/form1.cs#5)]
- [!code-vb[System.Drawing.PointsAndSizes#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/VB/form1.vb#5)]  
-  
+The following code example demonstrates how to use static <xref:System.Drawing.Size.Round%2A> and <xref:System.Drawing.Size.Truncate%2A> methods to convert a <xref:System.Drawing.SizeF> to a <xref:System.Drawing.Size>. This example is designed to be used with Windows Forms. To run this example, paste it into a form that contains two <xref:System.Windows.Forms.Label> objects named `Label1` and `Label2`, and then call this method from the form's constructor.  
+ 
+[!code-cpp[System.Drawing.PointsAndSizes#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CPP/form1.cpp#5)]
+[!code-csharp[System.Drawing.PointsAndSizes#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CS/form1.cs#5)]
+[!code-vb[System.Drawing.PointsAndSizes#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/VB/form1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -613,13 +613,13 @@
         <returns>A <see cref="T:System.Drawing.Size" /> structure that is a result of the subtraction operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Drawing.Size.Subtract%2A> method. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `SubtractSizes` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
- [!code-csharp[System.Drawing.MiscWhidbeySnippets#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/CS/Form1.cs#12)]
- [!code-vb[System.Drawing.MiscWhidbeySnippets#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/VB/Form1.vb#12)]  
-  
+The following code example demonstrates how to use the <xref:System.Drawing.Size.Subtract%2A> method. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `SubtractSizes` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+ 
+[!code-csharp[System.Drawing.MiscWhidbeySnippets#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/CS/Form1.cs#12)]
+[!code-vb[System.Drawing.MiscWhidbeySnippets#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscWhidbeySnippets/VB/Form1.vb#12)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -680,14 +680,14 @@
         <returns>The <see cref="T:System.Drawing.Size" /> structure this method converts to.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example demonstrates how to use static <xref:System.Drawing.Size.Round%2A> and <xref:System.Drawing.Size.Truncate%2A> methods to convert a <xref:System.Drawing.SizeF> to a <xref:System.Drawing.Size>. This example is designed to be used with Windows Forms. To run this example, paste it into a form that contains two <xref:System.Windows.Forms.Label> objects named `Label1` and `Label2`, and then call this method from the form's constructor.  
-  
- [!code-cpp[System.Drawing.PointsAndSizes#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CPP/form1.cpp#5)]
- [!code-csharp[System.Drawing.PointsAndSizes#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CS/form1.cs#5)]
- [!code-vb[System.Drawing.PointsAndSizes#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/VB/form1.vb#5)]  
-  
+The following code example demonstrates how to use static <xref:System.Drawing.Size.Round%2A> and <xref:System.Drawing.Size.Truncate%2A> methods to convert a <xref:System.Drawing.SizeF> to a <xref:System.Drawing.Size>. This example is designed to be used with Windows Forms. To run this example, paste it into a form that contains two <xref:System.Windows.Forms.Label> objects named `Label1` and `Label2`, and then call this method from the form's constructor.  
+ 
+[!code-cpp[System.Drawing.PointsAndSizes#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CPP/form1.cpp#5)]
+[!code-csharp[System.Drawing.PointsAndSizes#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CS/form1.cs#5)]
+[!code-vb[System.Drawing.PointsAndSizes#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/VB/form1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -717,10 +717,10 @@
         <value>The horizontal component of this <see cref="T:System.Drawing.Size" /> structure, typically measured in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The unit for the <xref:System.Drawing.Size.Height%2A> and <xref:System.Drawing.Size.Width%2A> of the <xref:System.Drawing.Size> structure depend on the <xref:System.Drawing.Graphics.PageUnit%2A> and <xref:System.Drawing.Graphics.PageScale%2A> settings for the <xref:System.Drawing.Graphics> object used to draw.  
-  
+The unit for the <xref:System.Drawing.Size.Height%2A> and <xref:System.Drawing.Size.Width%2A> of the <xref:System.Drawing.Size> structure depend on the <xref:System.Drawing.Graphics.PageUnit%2A> and <xref:System.Drawing.Graphics.PageScale%2A> settings for the <xref:System.Drawing.Graphics> object used to draw.  
+ 
  ]]></format>
         </remarks>
       </Docs>

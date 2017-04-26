@@ -14,19 +14,19 @@
     <summary>Returns data from the <see cref="E:System.Speech.Recognition.SpeechRecognizer.StateChanged" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Recognition.SpeechRecognizer.StateChanged> event is raised by the <xref:System.Speech.Recognition.SpeechRecognizer> class. <xref:System.Speech.Recognition.StateChangedEventArgs> derives from <xref:System.EventArgs> and is passed to handlers for <xref:System.Speech.Recognition.SpeechRecognizer.StateChanged> events.  
+The <xref:System.Speech.Recognition.SpeechRecognizer.StateChanged> event is raised by the <xref:System.Speech.Recognition.SpeechRecognizer> class. <xref:System.Speech.Recognition.StateChangedEventArgs> derives from <xref:System.EventArgs> and is passed to handlers for <xref:System.Speech.Recognition.SpeechRecognizer.StateChanged> events.  
+ 
+<xref:System.Speech.Recognition.SpeechRecognizer.State%2A> is a read-only property. A shared speech recognizer's state cannot be changed programmatically. Users can change a shared speech recognizer's state using the Speech Recognition user interface (UI) or through the **Speech Recognition** member of the Windows **Control Panel**.  
+ 
+Both the **On** and **Sleep** settings in the Speech Recognition UI correspond to the `Listening` state. The **Off** setting in the Speech Recognition UI corresponds to <xref:System.Speech.Recognition.RecognizerState>.  
+ 
   
- <xref:System.Speech.Recognition.SpeechRecognizer.State%2A> is a read-only property. A shared speech recognizer's state cannot be changed programmatically. Users can change a shared speech recognizer's state using the Speech Recognition user interface (UI) or through the **Speech Recognition** member of the Windows **Control Panel**.  
-  
- Both the **On** and **Sleep** settings in the Speech Recognition UI correspond to the `Listening` state. The **Off** setting in the Speech Recognition UI corresponds to <xref:System.Speech.Recognition.RecognizerState>.  
-  
-   
-  
+ 
 ## Examples  
- The following example creates a shared speech recognizer, and then creates two types of grammars for recognizing specific words and for accepting free dictation. The example asynchronously loads all the created grammars to the recognizer.  A handler for the <xref:System.Speech.Recognition.SpeechRecognizer.StateChanged> event uses the <xref:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync%2A> method to put Windows Recognition in "listening" mode.  
-  
+The following example creates a shared speech recognizer, and then creates two types of grammars for recognizing specific words and for accepting free dictation. The example asynchronously loads all the created grammars to the recognizer.  A handler for the <xref:System.Speech.Recognition.SpeechRecognizer.StateChanged> event uses the <xref:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync%2A> method to put Windows Recognition in "listening" mode.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -116,7 +116,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -138,10 +138,10 @@ namespace SampleRecognition
         <value>A <see cref="T:System.Speech.Recognition.RecognizerState" /> instance that indicates whether the state of a shared speech recognition engine is <see langword="Listening" /> or <see langword="Stopped" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example updates a display based on the state information provided by a <xref:System.Speech.Recognition.RecognizerState> instance that is obtained from the <xref:System.Speech.Recognition.StateChangedEventArgs.RecognizerState%2A> property of a <xref:System.Speech.Recognition.StateChangedEventArgs> instance passed to a handler for a <xref:System.Speech.Recognition.SpeechRecognizer.StateChanged> event.  
-  
+The following example updates a display based on the state information provided by a <xref:System.Speech.Recognition.RecognizerState> instance that is obtained from the <xref:System.Speech.Recognition.StateChangedEventArgs.RecognizerState%2A> property of a <xref:System.Speech.Recognition.StateChangedEventArgs> instance passed to a handler for a <xref:System.Speech.Recognition.SpeechRecognizer.StateChanged> event.  
+ 
 ```  
   
 // Make sure that _recognizer and recognition start buttons are disabled if state is stopped.  
@@ -152,7 +152,7 @@ _recognizer.StateChanged +=
   _recognizerStateLabel.Text = "Speech Recognizer State: " + eventArgs.RecognizerState.ToString();  
 };  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>

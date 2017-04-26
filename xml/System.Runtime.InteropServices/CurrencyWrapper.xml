@@ -32,10 +32,10 @@
     <summary>Wraps objects the marshaler should marshal as a <see langword="VT_CY" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Controls how the wrapped object is marshaled when passed as a Variant. Wrap a `Decimal` in a `CurrencyWrapper` to have it marshaled as a `VT_CY`.  
-  
+Controls how the wrapped object is marshaled when passed as a Variant. Wrap a `Decimal` in a `CurrencyWrapper` to have it marshaled as a `VT_CY`.  
+ 
  ]]></format>
     </remarks>
   </Docs>

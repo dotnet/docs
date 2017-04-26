@@ -18,38 +18,38 @@
     <summary>Provides the means to access and manage an in-process speech recognition engine.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can create an instance of this class for any of the installed speech recognizers. To get information about which recognizers are installed, use the static <xref:System.Speech.Recognition.SpeechRecognitionEngine.InstalledRecognizers%2A> method.  
-  
- This class is for running speech recognition engines in-process, and provides control over various aspects of speech recognition, as follows:  
-  
+You can create an instance of this class for any of the installed speech recognizers. To get information about which recognizers are installed, use the static <xref:System.Speech.Recognition.SpeechRecognitionEngine.InstalledRecognizers%2A> method.  
+ 
+This class is for running speech recognition engines in-process, and provides control over various aspects of speech recognition, as follows:  
+ 
 -   To create an in-process speech recognizer, use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.%23ctor%2A> constructors.  
-  
+ 
 -   To manage speech recognition grammars, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.UnloadGrammar%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.UnloadAllGrammars%2A> methods, and the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Grammars%2A> property.  
-  
+ 
 -   To configure the input to the recognizer, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToAudioStream%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToDefaultAudioDevice%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveFile%2A>, or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveStream%2A> method.  
-  
+ 
 -   To perform speech recognition, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> method.  
-  
+ 
 -   To modify how recognition handles silence or unexpected input, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> properties.  
-  
+ 
 -   To change the number of alternates the recognizer returns, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.MaxAlternates%2A> property. The recognizer returns recognition results in a <xref:System.Speech.Recognition.RecognitionResult> object.  
-  
+ 
 -   To synchronize changes to the recognizer, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> method. The recognizer uses more than one thread to perform tasks.  
-  
+ 
 -   To emulate input to the recognizer, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize%2A> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> methods.  
-  
- The <xref:System.Speech.Recognition.SpeechRecognitionEngine> object is for the sole use of the process that instantiated the object. By contrast, the <xref:System.Speech.Recognition.SpeechRecognizer> shares a single recognizer with any application that wants to use it.  
-  
+ 
+The <xref:System.Speech.Recognition.SpeechRecognitionEngine> object is for the sole use of the process that instantiated the object. By contrast, the <xref:System.Speech.Recognition.SpeechRecognizer> shares a single recognizer with any application that wants to use it.  
+ 
 > [!NOTE]
 >  Always call <xref:System.Speech.Recognition.SpeechRecognitionEngine.Dispose%2A> before you release your last reference to the speech recognizer. Otherwise, the resources it is using will not be freed until the garbage collector calls the recognizer object's `Finalize` method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates basic speech recognition. Because this example uses the `Multiple` mode of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> method, it performs recognition until you close the console window or stop debugging.  
-  
+The following example shows part of a console application that demonstrates basic speech recognition. Because this example uses the `Multiple` mode of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> method, it performs recognition until you close the console window or stop debugging.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Recognition;  
@@ -97,7 +97,7 @@ namespace SpeechRecognitionApp
   }  
 }  
 ```  
-  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -116,24 +116,24 @@ namespace SpeechRecognitionApp
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> class using the default speech recognizer for the system.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Before the speech recognizer can begin speech recognition, you must load at least one recognition grammar and configure the input for the recognizer.  
-  
- To load a grammar, call the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method.  
-  
- To configure the audio input, use one of the following methods:  
-  
+Before the speech recognizer can begin speech recognition, you must load at least one recognition grammar and configure the input for the recognizer.  
+ 
+To load a grammar, call the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method.  
+ 
+To configure the audio input, use one of the following methods:  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToAudioStream%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToDefaultAudioDevice%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveFile%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveStream%2A>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,49 +155,49 @@ namespace SpeechRecognitionApp
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> class using the default speech recognizer for a specified locale.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Microsoft Windows and the System.Speech API accept all valid language-country codes. To perform speech recognition using the language specified in the `CultureInfo` argument, a speech recognition engine that supports that language-country code must be installed. The speech recognition engines that shipped with Microsoft Windows 7 work with the following language-country codes.  
-  
+Microsoft Windows and the System.Speech API accept all valid language-country codes. To perform speech recognition using the language specified in the `CultureInfo` argument, a speech recognition engine that supports that language-country code must be installed. The speech recognition engines that shipped with Microsoft Windows 7 work with the following language-country codes.  
+ 
 -   en-GB. English (United Kingdom)  
-  
+ 
 -   en-US. English (United States)  
-  
+ 
 -   de-DE. German (Germany)  
-  
+ 
 -   es-ES. Spanish (Spain)  
-  
+ 
 -   fr-FR. French (France)  
-  
+ 
 -   ja-JP. Japanese (Japan)  
-  
+ 
 -   zh-CN. Chinese (China)  
-  
+ 
 -   zh-TW. Chinese (Taiwan)  
-  
- Two-letter language codes such as "en", "fr", or "es" are also permitted.  
-  
- Before the speech recognizer can begin recognition, you must load at least one speech recognition grammar and configure the input for the recognizer.  
-  
- To load a grammar, call the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method.  
-  
- To configure the audio input, use one of the following methods:  
-  
+ 
+Two-letter language codes such as "en", "fr", or "es" are also permitted.  
+ 
+Before the speech recognizer can begin recognition, you must load at least one speech recognition grammar and configure the input for the recognizer.  
+ 
+To load a grammar, call the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method.  
+ 
+To configure the audio input, use one of the following methods:  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToAudioStream%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToDefaultAudioDevice%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveFile%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveStream%2A>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates basic speech recognition, and initializes a speech recognizer for the en-US locale.  
-  
+The following example shows part of a console application that demonstrates basic speech recognition, and initializes a speech recognizer for the en-US locale.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Recognition;  
@@ -245,7 +245,7 @@ namespace SpeechRecognitionApp
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">None of the installed speech recognizers support the specified locale, or <paramref name="culture" /> is the invariant culture.</exception>
@@ -270,31 +270,31 @@ namespace SpeechRecognitionApp
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> using the information in a <see cref="T:System.Speech.Recognition.RecognizerInfo" /> object to specify the recognizer to use.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can create an instance of this class for any of the installed speech recognizers. To get information about which recognizers are installed, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.InstalledRecognizers%2A> method.  
-  
- Before the speech recognizer can begin recognition, you must load at least one speech recognition grammar and configure the input for the recognizer.  
-  
- To load a grammar, call the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method.  
-  
- To configure the audio input, use one of the following methods:  
-  
+You can create an instance of this class for any of the installed speech recognizers. To get information about which recognizers are installed, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.InstalledRecognizers%2A> method.  
+ 
+Before the speech recognizer can begin recognition, you must load at least one speech recognition grammar and configure the input for the recognizer.  
+ 
+To load a grammar, call the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method.  
+ 
+To configure the audio input, use one of the following methods:  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToAudioStream%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToDefaultAudioDevice%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveFile%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveStream%2A>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates basic speech recognition, and initializes a speech recognizer that supports the English language.  
-  
+The following example shows part of a console application that demonstrates basic speech recognition, and initializes a speech recognizer that supports the English language.  
+ 
 ```csharp  
  using System;  
 using System.Speech.Recognition;  
@@ -352,7 +352,7 @@ namespace SpeechRecognitionApp
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -374,31 +374,31 @@ namespace SpeechRecognitionApp
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> class with a string parameter that specifies the name of the recognizer to use.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The token name of the recognizer is the value of the <xref:System.Speech.Recognition.RecognizerInfo.Id%2A> property of the <xref:System.Speech.Recognition.RecognizerInfo> object returned by the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerInfo%2A> property of the recognizer. To get a collection of all the installed recognizers, use the static <xref:System.Speech.Recognition.SpeechRecognitionEngine.InstalledRecognizers%2A> method.  
-  
- Before the speech recognizer can begin recognition, you must load at least one speech recognition grammar and configure the input for the recognizer.  
-  
- To load a grammar, call the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method.  
-  
- To configure the audio input, use one of the following methods:  
-  
+The token name of the recognizer is the value of the <xref:System.Speech.Recognition.RecognizerInfo.Id%2A> property of the <xref:System.Speech.Recognition.RecognizerInfo> object returned by the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerInfo%2A> property of the recognizer. To get a collection of all the installed recognizers, use the static <xref:System.Speech.Recognition.SpeechRecognitionEngine.InstalledRecognizers%2A> method.  
+ 
+Before the speech recognizer can begin recognition, you must load at least one speech recognition grammar and configure the input for the recognizer.  
+ 
+To load a grammar, call the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method.  
+ 
+To configure the audio input, use one of the following methods:  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToAudioStream%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToDefaultAudioDevice%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveFile%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveStream%2A>  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates basic speech recognition, and creates an instance of the Speech Recognizer 8.0 for Windows (English - US).  
-  
+The following example shows part of a console application that demonstrates basic speech recognition, and creates an instance of the Speech Recognizer 8.0 for Windows (English - US).  
+ 
 ```csharp  
 using System;  
 using System.Speech.Recognition;  
@@ -445,7 +445,7 @@ namespace SpeechRecognitionApp
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">No speech recognizer with that token name is installed, or <paramref name="recognizerId" /> is the empty string ("").</exception>
@@ -470,25 +470,25 @@ namespace SpeechRecognitionApp
         <value>The format of audio at the input to the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> instance, or <see langword="null" /> if the input is not configured or set to the null input.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To configure the audio input, use one of the following methods:  
-  
+To configure the audio input, use one of the following methods:  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToAudioStream%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToDefaultAudioDevice%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveFile%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveStream%2A>  
+ 
   
-   
-  
+ 
 ## Examples  
- The example below uses <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioFormat%2A> to obtain and display audio format data.  
-  
+The example below uses <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioFormat%2A> to obtain and display audio format data.  
+ 
 ```  
 static void DisplayAudioDeviceFormat(Label label, SpeechRecognitionEngine recognitionEngine)   
 {  
@@ -511,7 +511,7 @@ static void DisplayAudioDeviceFormat(Label label, SpeechRecognitionEngine recogn
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -533,10 +533,10 @@ static void DisplayAudioDeviceFormat(Label label, SpeechRecognitionEngine recogn
         <value>The audio level of the input to the speech recognizer, from 0 through 100.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The value 0 represents silence, and 100 represents the maximum input volume.  
-  
+The value 0 represents silence, and 100 represents the maximum input volume.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -557,19 +557,19 @@ static void DisplayAudioDeviceFormat(Label label, SpeechRecognitionEngine recogn
         <summary>Raised when the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> reports the level of its audio input.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Recognition.SpeechRecognitionEngine> raises this event multiple times per second. The frequency with which the event is raised depends on the computer on which the application is running.  
+The <xref:System.Speech.Recognition.SpeechRecognitionEngine> raises this event multiple times per second. The frequency with which the event is raised depends on the computer on which the application is running.  
+ 
+To get the audio level at the time of the event, use the <xref:System.Speech.Recognition.AudioLevelUpdatedEventArgs.AudioLevel%2A> property of the associated <xref:System.Speech.Recognition.AudioLevelUpdatedEventArgs>. To get the current audio level of the input to the recognizer, use the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevel%2A> property.  
+ 
+When you create an <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevelUpdated> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ 
   
- To get the audio level at the time of the event, use the <xref:System.Speech.Recognition.AudioLevelUpdatedEventArgs.AudioLevel%2A> property of the associated <xref:System.Speech.Recognition.AudioLevelUpdatedEventArgs>. To get the current audio level of the input to the recognizer, use the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevel%2A> property.  
-  
- When you create an <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevelUpdated> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
-  
-   
-  
+ 
 ## Examples  
- The following example adds a handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevelUpdated> event to a <xref:System.Speech.Recognition.SpeechRecognitionEngine> object. The handler outputs the new audio level to the console.  
-  
+The following example adds a handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevelUpdated> event to a <xref:System.Speech.Recognition.SpeechRecognitionEngine> object. The handler outputs the new audio level to the console.  
+ 
 ```  
 private SpeechRecognitionEngine recognizer;  
   
@@ -592,7 +592,7 @@ void recognizer_AudioLevelUpdated(object sender, AudioLevelUpdatedEventArgs e)
   Console.WriteLine("The audio level is now: {0}.", e.AudioLevel);  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -614,15 +614,15 @@ void recognizer_AudioLevelUpdated(object sender, AudioLevelUpdatedEventArgs e)
         <value>The current location in the audio stream being generated by the input device.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition%2A> property references the input device's position in its generated audio stream. By contrast, the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> property references the recognizer's position within its audio input. These positions can be different. For example, if the recognizer has received input for which it has not yet generated a recognition result then the value of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> property is less than the value of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition%2A> property.  
+The <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition%2A> property references the input device's position in its generated audio stream. By contrast, the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> property references the recognizer's position within its audio input. These positions can be different. For example, if the recognizer has received input for which it has not yet generated a recognition result then the value of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> property is less than the value of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- In the following example, the in-process speech recognizer uses a dictation grammar to match speech input. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected> event writes to the console the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A>, and  <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevel%2A> when the speech recognizer detects speech at its input.  
-  
+In the following example, the in-process speech recognizer uses a dictation grammar to match speech input. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected> event writes to the console the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A>, and  <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevel%2A> when the speech recognizer detects speech at its input.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -692,7 +692,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -713,17 +713,17 @@ namespace SampleRecognition
         <summary>Raised when the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> detects a problem in the audio signal.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get which problem occurred, use the <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioSignalProblem%2A> property of the associated <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs>.  
+To get which problem occurred, use the <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioSignalProblem%2A> property of the associated <xref:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs>.  
+ 
+When you create an <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioSignalProblemOccurred> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ 
   
- When you create an <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioSignalProblemOccurred> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
-  
-   
-  
+ 
 ## Examples  
- The following example defines an event handler that gathers information about an <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioSignalProblemOccurred> event.  
-  
+The following example defines an event handler that gathers information about an <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioSignalProblemOccurred> event.  
+ 
 ```  
 private SpeechRecognitionEngine recognizer;  
   
@@ -755,7 +755,7 @@ void recognizer_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccu
   // Insert additional event handler code here.  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -777,10 +777,10 @@ void recognizer_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccu
         <value>The state of the audio input to the speech recognizer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioState%2A> property represents the audio state with a member of the <xref:System.Speech.Recognition.AudioState> enumeration.  
-  
+The <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioState%2A> property represents the audio state with a member of the <xref:System.Speech.Recognition.AudioState> enumeration.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -801,17 +801,17 @@ void recognizer_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccu
         <summary>Raised when the state changes in the audio being received by the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get the audio state at the time of the event, use the <xref:System.Speech.Recognition.AudioStateChangedEventArgs.AudioState%2A> property of the associated <xref:System.Speech.Recognition.AudioStateChangedEventArgs>. To get the current audio state of the input to the recognizer, use the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioState%2A> property. For more information about audio state, see the <xref:System.Speech.Recognition.AudioState> enumeration.  
+To get the audio state at the time of the event, use the <xref:System.Speech.Recognition.AudioStateChangedEventArgs.AudioState%2A> property of the associated <xref:System.Speech.Recognition.AudioStateChangedEventArgs>. To get the current audio state of the input to the recognizer, use the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioState%2A> property. For more information about audio state, see the <xref:System.Speech.Recognition.AudioState> enumeration.  
+ 
+When you create an <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ 
   
- When you create an <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
-  
-   
-  
+ 
 ## Examples  
- The following example uses a handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged> event to write the recognizer's new <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioState%2A> to the console each time it changes, using a member of the <xref:System.Speech.Recognition.AudioState> enumeration.  
-  
+The following example uses a handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged> event to write the recognizer's new <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioState%2A> to the console each time it changes, using a member of the <xref:System.Speech.Recognition.AudioState> enumeration.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -890,7 +890,7 @@ namespace SampleRecognition
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -917,21 +917,21 @@ namespace SampleRecognition
         <value>The duration of the time interval.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each speech recognizer has an algorithm to distinguish between silence and speech. The recognizer classifies as background noise any non-silence input that does not match the initial rule of any of the recognizer's loaded and enabled speech recognition grammars. If the recognizer receives only background noise and silence within the babble timeout interval, then the recognizer finalizes that recognition operation.  
-  
+Each speech recognizer has an algorithm to distinguish between silence and speech. The recognizer classifies as background noise any non-silence input that does not match the initial rule of any of the recognizer's loaded and enabled speech recognition grammars. If the recognizer receives only background noise and silence within the babble timeout interval, then the recognizer finalizes that recognition operation.  
+ 
 -   For asynchronous recognition operations, the recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, where the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.BabbleTimeout%2A?displayProperty=fullName> property is `true`, and the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A?displayProperty=fullName> property is `null`.  
-  
+ 
 -   For synchronous recognition operations and emulation, the recognizer returns `null`, instead of a valid <xref:System.Speech.Recognition.RecognitionResult>.  
+ 
+If the babble timeout period is set to 0, the recognizer does not perform a babble timeout check. The timeout interval can be any non-negative value. The default is 0 seconds.  
+ 
   
- If the babble timeout period is set to 0, the recognizer does not perform a babble timeout check. The timeout interval can be any non-negative value. The default is 0 seconds.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates basic speech recognition that sets the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A> properties of a <xref:System.Speech.Recognition.SpeechRecognitionEngine> before initiating speech recognition. Handlers for the speech recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> events output event information to the console to demonstrate how the <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A> properties of a <xref:System.Speech.Recognition.SpeechRecognitionEngine> affect recognition operations.  
-  
+The following example shows part of a console application that demonstrates basic speech recognition that sets the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A> properties of a <xref:System.Speech.Recognition.SpeechRecognitionEngine> before initiating speech recognition. Handlers for the speech recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> events output event information to the console to demonstrate how the <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A> properties of a <xref:System.Speech.Recognition.SpeechRecognitionEngine> affect recognition operations.  
+ 
 ```csharp  
   
 using System;  
@@ -1038,7 +1038,7 @@ namespace SpeechRecognitionApp
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">This property is set to less than 0 seconds.</exception>
@@ -1105,17 +1105,17 @@ namespace SpeechRecognitionApp
         <returns>The result for the recognition operation, or <see langword="null" /> if the operation is not successful or the recognizer is not enabled.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated.  
+The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated.  
+ 
+The recognizers that ship with Vista and Windows 7 ignore case and character width when applying grammar rules to the input phrase. For more information about this type of comparison, see the <xref:System.Globalization.CompareOptions> enumeration values <xref:System.Globalization.CompareOptions> and <xref:System.Globalization.CompareOptions>. The recognizers also ignore new lines and extra white space and treat punctuation as literal input.  
+ 
   
- The recognizers that ship with Vista and Windows 7 ignore case and character width when applying grammar rules to the input phrase. For more information about this type of comparison, see the <xref:System.Globalization.CompareOptions> enumeration values <xref:System.Globalization.CompareOptions> and <xref:System.Globalization.CompareOptions>. The recognizers also ignore new lines and extra white space and treat punctuation as literal input.  
-  
-   
-  
+ 
 ## Examples  
- The code example below is part of a console application that demonstrates emulated input, the associated recognition results, and the associated events raised by the speech recognizer. The example generates the following output.  
-  
+The code example below is part of a console application that demonstrates emulated input, the associated recognition results, and the associated events raised by the speech recognizer. The example generates the following output.  
+ 
 ```  
 TestRecognize("Smith")...  
  SpeechDetected event raised.  
@@ -1145,7 +1145,7 @@ TestRecognize("Mister Smith")...
   
 press any key to exit...  
 ```  
-  
+ 
 ```csharp  
   
 using System;  
@@ -1292,7 +1292,7 @@ namespace Sre_EmulateRecognize
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The recognizer has no speech recognition grammars loaded.</exception>
@@ -1325,12 +1325,12 @@ namespace Sre_EmulateRecognize
         <returns>The result for the recognition operation, or <see langword="null" /> if the operation is not successful or the recognizer is not enabled.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated.  
-  
- The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizer always ignores the character width and never ignores the Kana type. The recognizer also ignores new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
-  
+The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated.  
+ 
+The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizer always ignores the character width and never ignores the Kana type. The recognizer also ignores new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The recognizer has no speech recognition grammars loaded.</exception>
@@ -1365,12 +1365,12 @@ namespace Sre_EmulateRecognize
         <returns>The result for the recognition operation, or <see langword="null" /> if the operation is not successful or the recognizer is not enabled.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated.  
-  
- The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizer always ignores the character width and never ignores the Kana type. The recognizer also ignores new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
-  
+The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated.  
+ 
+The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizer always ignores the character width and never ignores the Kana type. The recognizer also ignores new lines and extra white space and treats punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The recognizer has no speech recognition grammars loaded.</exception>
@@ -1402,17 +1402,17 @@ namespace Sre_EmulateRecognize
         <summary>Emulates input of a phrase to the speech recognizer, using text in place of audio for asynchronous speech recognition.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated. When the recognizer completes the asynchronous recognition operation, it raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event.  
+The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated. When the recognizer completes the asynchronous recognition operation, it raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event.  
+ 
+The recognizers that ship with Vista and Windows 7 ignore case and character width when applying grammar rules to the input phrase. For more information about this type of comparison, see the <xref:System.Globalization.CompareOptions> enumeration values <xref:System.Globalization.CompareOptions> and <xref:System.Globalization.CompareOptions>. The recognizers also ignore new lines and extra white space and treat punctuation as literal input.  
+ 
   
- The recognizers that ship with Vista and Windows 7 ignore case and character width when applying grammar rules to the input phrase. For more information about this type of comparison, see the <xref:System.Globalization.CompareOptions> enumeration values <xref:System.Globalization.CompareOptions> and <xref:System.Globalization.CompareOptions>. The recognizers also ignore new lines and extra white space and treat punctuation as literal input.  
-  
-   
-  
+ 
 ## Examples  
- The code example below is part of a console application that demonstrates asynchronous emulated input, the associated recognition results, and the associated events raised by the speech recognizer. The example generates the following output.  
-  
+The code example below is part of a console application that demonstrates asynchronous emulated input, the associated recognition results, and the associated events raised by the speech recognizer. The example generates the following output.  
+ 
 ```  
   
 TestRecognizeAsync("Smith")...  
@@ -1451,7 +1451,7 @@ TestRecognizeAsync("Mister Smith")...
   
 press any key to exit...  
 ```  
-  
+ 
 ```csharp  
 using System;  
 using System.Globalization;  
@@ -1630,7 +1630,7 @@ namespace SreEmulateRecognizeAsync
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The recognizer has no speech recognition grammars loaded, or the recognizer has an asynchronous recognition operation that is not yet complete.</exception>
@@ -1662,12 +1662,12 @@ namespace SreEmulateRecognizeAsync
         <summary>Emulates input of specific words to the speech recognizer, using an array of <see cref="T:System.Speech.Recognition.RecognizedWordUnit" /> objects in place of audio for asynchronous speech recognition, and specifies how the recognizer handles Unicode comparison between the words and the loaded speech recognition grammars.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated. When the recognizer completes the asynchronous recognition operation, it raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event.  
-  
- The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treat punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
-  
+The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated. When the recognizer completes the asynchronous recognition operation, it raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event.  
+ 
+The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treat punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The recognizer has no speech recognition grammars loaded, or the recognizer has an asynchronous recognition operation that is not yet complete.</exception>
@@ -1701,12 +1701,12 @@ namespace SreEmulateRecognizeAsync
         <summary>Emulates input of a phrase to the speech recognizer, using text in place of audio for asynchronous speech recognition, and specifies how the recognizer handles Unicode comparison between the phrase and the loaded speech recognition grammars.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated. When the recognizer completes the asynchronous recognition operation, it raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event.  
-  
- The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treat punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
-  
+The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated. When the recognizer completes the asynchronous recognition operation, it raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event.  
+ 
+The recognizer uses `compareOptions` when it applies grammar rules to the input phrase. The recognizers that ship with Vista and Windows 7 ignore case if the <xref:System.Globalization.CompareOptions> or <xref:System.Globalization.CompareOptions> value is present. The recognizers always ignore the character width and never ignore the Kana type. The recognizers also ignore new lines and extra white space and treat punctuation as literal input. For more information about character width and Kana type, see the <xref:System.Globalization.CompareOptions> enumeration.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The recognizer has no speech recognition grammars loaded, or the recognizer has an asynchronous recognition operation that is not yet complete.</exception>
@@ -1734,31 +1734,31 @@ namespace SreEmulateRecognizeAsync
         <summary>Raised when the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> finalizes an asynchronous recognition operation of emulated input.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> method begins an asynchronous recognition operation. The <xref:System.Speech.Recognition.SpeechRecognitionEngine> raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event when it finalizes the asynchronous operation.  
-  
- The <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> operation can raise the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events. The <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event is the last such event that the recognizer raises for a given operation.  
-  
- If emulated recognition was successful, you can access the recognition result using the either of the following:  
-  
+Each <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> method begins an asynchronous recognition operation. The <xref:System.Speech.Recognition.SpeechRecognitionEngine> raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event when it finalizes the asynchronous operation.  
+ 
+The <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> operation can raise the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events. The <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event is the last such event that the recognizer raises for a given operation.  
+ 
+If emulated recognition was successful, you can access the recognition result using the either of the following:  
+ 
 -   The <xref:System.Speech.Recognition.EmulateRecognizeCompletedEventArgs.Result%2A> property in the <xref:System.Speech.Recognition.EmulateRecognizeCompletedEventArgs> object in the handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event.  
-  
+ 
 -   <xref:System.Speech.Recognition.RecognitionEventArgs.Result%2A> property in the <xref:System.Speech.Recognition.SpeechRecognizedEventArgs> object in the handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event.  
+ 
+If emulated recognition was not successful, the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event is not raised and the <xref:System.Speech.Recognition.EmulateRecognizeCompletedEventArgs.Result%2A> will be null.  
+ 
+<xref:System.Speech.Recognition.EmulateRecognizeCompletedEventArgs> derives from <xref:System.ComponentModel.AsyncCompletedEventArgs>.  
+ 
+<xref:System.Speech.Recognition.SpeechRecognizedEventArgs> derives from <xref:System.Speech.Recognition.RecognitionEventArgs>.  
+ 
+When you create an <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ 
   
- If emulated recognition was not successful, the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event is not raised and the <xref:System.Speech.Recognition.EmulateRecognizeCompletedEventArgs.Result%2A> will be null.  
-  
- <xref:System.Speech.Recognition.EmulateRecognizeCompletedEventArgs> derives from <xref:System.ComponentModel.AsyncCompletedEventArgs>.  
-  
- <xref:System.Speech.Recognition.SpeechRecognizedEventArgs> derives from <xref:System.Speech.Recognition.RecognitionEventArgs>.  
-  
- When you create an <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
-  
-   
-  
+ 
 ## Examples  
- The following example is part of a console application that loads a speech recognition grammar and demonstrates asynchronous emulated input, the associated recognition results, and the associated events raised by the speech recognizer.  
-  
+The following example is part of a console application that loads a speech recognition grammar and demonstrates asynchronous emulated input, the associated recognition results, and the associated events raised by the speech recognizer.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -1854,7 +1854,7 @@ namespace InProcessRecognizer
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1881,14 +1881,14 @@ namespace InProcessRecognizer
         <value>The duration of the interval of silence.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The speech recognizer uses this timeout interval when the recognition input is unambiguous. For example, for a speech recognition grammar that supports recognition of either "new game please" or "new game", "new game please" is an unambiguous input, and "new game" is an ambiguous input.  
-  
- This property determines how long the speech recognition engine will wait for additional input before finalizing a recognition operation. The timeout interval can be from 0 seconds to 10 seconds, inclusive. The default is 150 milliseconds.  
-  
- To set the timeout interval for ambiguous input, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> property.  
-  
+The speech recognizer uses this timeout interval when the recognition input is unambiguous. For example, for a speech recognition grammar that supports recognition of either "new game please" or "new game", "new game please" is an unambiguous input, and "new game" is an ambiguous input.  
+ 
+This property determines how long the speech recognition engine will wait for additional input before finalizing a recognition operation. The timeout interval can be from 0 seconds to 10 seconds, inclusive. The default is 150 milliseconds.  
+ 
+To set the timeout interval for ambiguous input, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">This property is set to less than 0 seconds or greater than 10 seconds.</exception>
@@ -1916,14 +1916,14 @@ namespace InProcessRecognizer
         <value>The duration of the interval of silence.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The speech recognizer uses this timeout interval when the recognition input is ambiguous. For example, for a speech recognition grammar that supports recognition of either "new game please" or "new game", "new game please" is an unambiguous input, and "new game" is an ambiguous input.  
-  
- This property determines how long the speech recognition engine will wait for additional input before finalizing a recognition operation. The timeout interval can be from 0 seconds to 10 seconds, inclusive. The default is 500 milliseconds.  
-  
- To set the timeout interval for unambiguous input, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout%2A> property.  
-  
+The speech recognizer uses this timeout interval when the recognition input is ambiguous. For example, for a speech recognition grammar that supports recognition of either "new game please" or "new game", "new game please" is an unambiguous input, and "new game" is an ambiguous input.  
+ 
+This property determines how long the speech recognition engine will wait for additional input before finalizing a recognition operation. The timeout interval can be from 0 seconds to 10 seconds, inclusive. The default is 500 milliseconds.  
+ 
+To set the timeout interval for unambiguous input, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout%2A> property.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">This property is set to less than 0 seconds or greater than 10 seconds.</exception>
@@ -1946,13 +1946,13 @@ namespace InProcessRecognizer
         <value>The collection of <see cref="T:System.Speech.Recognition.Grammar" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example outputs information to the console for each speech recognition grammar that is currently loaded by a speech recognizer.  
-  
+The following example outputs information to the console for each speech recognition grammar that is currently loaded by a speech recognizer.  
+ 
 > [!IMPORTANT]
 >  Copy the grammar collection to avoid errors if the collection is modified while this method enumerates the elements of the collection.  
-  
+ 
 ```csharp  
   
 private static void ListGrammars(SpeechRecognitionEngine recognizer)  
@@ -1968,7 +1968,7 @@ private static void ListGrammars(SpeechRecognitionEngine recognizer)
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -1995,21 +1995,21 @@ private static void ListGrammars(SpeechRecognitionEngine recognizer)
         <value>The duration of the interval of silence.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each speech recognizer has an algorithm to distinguish between silence and speech. If the recognizer input is silence during the initial silence timeout period, then the recognizer finalizes that recognition operation.  
-  
+Each speech recognizer has an algorithm to distinguish between silence and speech. If the recognizer input is silence during the initial silence timeout period, then the recognizer finalizes that recognition operation.  
+ 
 -   For asynchronous recognition operations and emulation, the recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, where the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.InitialSilenceTimeout%2A?displayProperty=fullName> property is `true`, and the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A?displayProperty=fullName> property is `null`.  
-  
+ 
 -   For synchronous recognition operations and emulation, the recognizer returns `null`, instead of a valid <xref:System.Speech.Recognition.RecognitionResult>.  
+ 
+If the initial silence timeout interval is set to 0, the recognizer does not perform an initial silence timeout check. The timeout interval can be any non-negative value. The default is 0 seconds.  
+ 
   
- If the initial silence timeout interval is set to 0, the recognizer does not perform an initial silence timeout check. The timeout interval can be any non-negative value. The default is 0 seconds.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates basic speech recognition. The example sets the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A> properties of a <xref:System.Speech.Recognition.SpeechRecognitionEngine> before initiating speech recognition. Handlers for the speech recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> events output event information to the console to demonstrate how the <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A> properties of a <xref:System.Speech.Recognition.SpeechRecognitionEngine> properties affect recognition operations.  
-  
+The following example shows part of a console application that demonstrates basic speech recognition. The example sets the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A> properties of a <xref:System.Speech.Recognition.SpeechRecognitionEngine> before initiating speech recognition. Handlers for the speech recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> events output event information to the console to demonstrate how the <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A> properties of a <xref:System.Speech.Recognition.SpeechRecognitionEngine> properties affect recognition operations.  
+ 
 ```csharp  
   
 using System;  
@@ -2116,7 +2116,7 @@ namespace SpeechRecognitionApp
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">This property is set to less than 0 seconds.</exception>
@@ -2140,15 +2140,15 @@ namespace SpeechRecognitionApp
         <returns>A read-only collection of the <see cref="T:System.Speech.Recognition.RecognizerInfo" /> objects that describe the installed recognizers.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get information about the current recognizer, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerInfo%2A> property.  
+To get information about the current recognizer, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerInfo%2A> property.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates basic speech recognition. The example uses the collection returned by the <xref:System.Speech.Recognition.SpeechRecognitionEngine.InstalledRecognizers%2A> method to find a speech recognizer that supports the English language.  
-  
+The following example shows part of a console application that demonstrates basic speech recognition. The example uses the collection returned by the <xref:System.Speech.Recognition.SpeechRecognitionEngine.InstalledRecognizers%2A> method to find a speech recognizer that supports the English language.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Recognition;  
@@ -2206,7 +2206,7 @@ namespace SpeechRecognitionApp
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2231,21 +2231,21 @@ namespace SpeechRecognitionApp
         <summary>Synchronously loads a <see cref="T:System.Speech.Recognition.Grammar" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The recognizer throws an exception if the <xref:System.Speech.Recognition.Grammar> object is already loaded, is being asynchronously loaded, or has failed to load into any recognizer. You cannot load the same <xref:System.Speech.Recognition.Grammar> object into multiple instances of <xref:System.Speech.Recognition.SpeechRecognitionEngine>. Instead, create a new <xref:System.Speech.Recognition.Grammar> object for each <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance.  
+The recognizer throws an exception if the <xref:System.Speech.Recognition.Grammar> object is already loaded, is being asynchronously loaded, or has failed to load into any recognizer. You cannot load the same <xref:System.Speech.Recognition.Grammar> object into multiple instances of <xref:System.Speech.Recognition.SpeechRecognitionEngine>. Instead, create a new <xref:System.Speech.Recognition.Grammar> object for each <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance.  
+ 
+If the recognizer is running, applications must use <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> to pause the speech recognition engine before loading, unloading,  enabling, or disabling a grammar.  
+ 
+When you load a grammar, it is enabled by default. To disable a loaded grammar, use the <xref:System.Speech.Recognition.Grammar.Enabled%2A> property.  
+ 
+To load a <xref:System.Speech.Recognition.Grammar> object asynchronously, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method.  
+ 
   
- If the recognizer is running, applications must use <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> to pause the speech recognition engine before loading, unloading,  enabling, or disabling a grammar.  
-  
- When you load a grammar, it is enabled by default. To disable a loaded grammar, use the <xref:System.Speech.Recognition.Grammar.Enabled%2A> property.  
-  
- To load a <xref:System.Speech.Recognition.Grammar> object asynchronously, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates basic speech recognition. The example creates a <xref:System.Speech.Recognition.DictationGrammar> and loads it into a speech recognizer.  
-  
+The following example shows part of a console application that demonstrates basic speech recognition. The example creates a <xref:System.Speech.Recognition.DictationGrammar> and loads it into a speech recognizer.  
+ 
 ```csharp  
 using System;  
 using System.Speech.Recognition;  
@@ -2294,7 +2294,7 @@ namespace SpeechRecognitionApp
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2323,16 +2323,16 @@ namespace SpeechRecognitionApp
         <summary>Asynchronously loads a speech recognition grammar.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the recognizer completes loading a <xref:System.Speech.Recognition.Grammar> object, it raises a <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarCompleted> event. The recognizer throws an exception if the <xref:System.Speech.Recognition.Grammar> object is already loaded, is being asynchronously loaded, or has failed to load into any recognizer. You cannot load the same <xref:System.Speech.Recognition.Grammar> object into multiple instances of <xref:System.Speech.Recognition.SpeechRecognitionEngine>. Instead, create a new <xref:System.Speech.Recognition.Grammar> object for each <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance.  
-  
- If the recognizer is running, applications must use <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> to pause the speech recognition engine before loading, unloading,  enabling, or disabling a grammar.  
-  
- When you load a grammar, it is enabled by default. To disable a loaded grammar, use the <xref:System.Speech.Recognition.Grammar.Enabled%2A> property.  
-  
- To load a speech recognition grammar synchronously, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A> method.  
-  
+When the recognizer completes loading a <xref:System.Speech.Recognition.Grammar> object, it raises a <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarCompleted> event. The recognizer throws an exception if the <xref:System.Speech.Recognition.Grammar> object is already loaded, is being asynchronously loaded, or has failed to load into any recognizer. You cannot load the same <xref:System.Speech.Recognition.Grammar> object into multiple instances of <xref:System.Speech.Recognition.SpeechRecognitionEngine>. Instead, create a new <xref:System.Speech.Recognition.Grammar> object for each <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance.  
+ 
+If the recognizer is running, applications must use <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> to pause the speech recognition engine before loading, unloading,  enabling, or disabling a grammar.  
+ 
+When you load a grammar, it is enabled by default. To disable a loaded grammar, use the <xref:System.Speech.Recognition.Grammar.Enabled%2A> property.  
+ 
+To load a speech recognition grammar synchronously, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2358,19 +2358,19 @@ namespace SpeechRecognitionApp
         <summary>Raised when the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> finishes the asynchronous loading of a <see cref="T:System.Speech.Recognition.Grammar" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method initiates an asynchronous operation. The <xref:System.Speech.Recognition.SpeechRecognitionEngine> raises this event when it completes the operation. To get the <xref:System.Speech.Recognition.Grammar> object that the recognizer loaded, use the <xref:System.Speech.Recognition.LoadGrammarCompletedEventArgs.Grammar%2A> property of the associated <xref:System.Speech.Recognition.LoadGrammarCompletedEventArgs>. To get the current <xref:System.Speech.Recognition.Grammar> objects the recognizer has loaded, use the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.Grammars%2A> property.  
+The recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method initiates an asynchronous operation. The <xref:System.Speech.Recognition.SpeechRecognitionEngine> raises this event when it completes the operation. To get the <xref:System.Speech.Recognition.Grammar> object that the recognizer loaded, use the <xref:System.Speech.Recognition.LoadGrammarCompletedEventArgs.Grammar%2A> property of the associated <xref:System.Speech.Recognition.LoadGrammarCompletedEventArgs>. To get the current <xref:System.Speech.Recognition.Grammar> objects the recognizer has loaded, use the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.Grammars%2A> property.  
+ 
+If the recognizer is running, applications must use <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> to pause the speech recognition engine before loading, unloading,  enabling, or disabling a grammar.  
+ 
+When you create a <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarCompleted> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ 
   
- If the recognizer is running, applications must use <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> to pause the speech recognition engine before loading, unloading,  enabling, or disabling a grammar.  
-  
- When you create a <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarCompleted> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
-  
-   
-  
+ 
 ## Examples  
- The following example creates an in-process speech recognizer, and then creates two types of grammars for recognizing specific words and for accepting free dictation. The example constructs a <xref:System.Speech.Recognition.Grammar> object from each of the completed speech recognition grammars, then asynchronously loads the <xref:System.Speech.Recognition.Grammar> objects to the <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance. Handlers for the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarCompleted> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events write to the console the name of the <xref:System.Speech.Recognition.Grammar> object that was used to perform the recognition and the text of the recognition result, respectively.  
-  
+The following example creates an in-process speech recognizer, and then creates two types of grammars for recognizing specific words and for accepting free dictation. The example constructs a <xref:System.Speech.Recognition.Grammar> object from each of the completed speech recognition grammars, then asynchronously loads the <xref:System.Speech.Recognition.Grammar> objects to the <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance. Handlers for the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarCompleted> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events write to the console the name of the <xref:System.Speech.Recognition.Grammar> object that was used to perform the recognition and the text of the recognition result, respectively.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -2457,7 +2457,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2479,12 +2479,12 @@ namespace SampleRecognition
         <value>The number of alternate results to return.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Recognition.RecognitionResult.Alternates%2A> property of the <xref:System.Speech.Recognition.RecognitionResult> class contains the collection of <xref:System.Speech.Recognition.RecognizedPhrase> objects that represent possible interpretations of the input.  
-  
- The default value for <xref:System.Speech.Recognition.SpeechRecognitionEngine.MaxAlternates%2A> is 10.  
-  
+The <xref:System.Speech.Recognition.RecognitionResult.Alternates%2A> property of the <xref:System.Speech.Recognition.RecognitionResult> class contains the collection of <xref:System.Speech.Recognition.RecognizedPhrase> objects that represent possible interpretations of the input.  
+ 
+The default value for <xref:System.Speech.Recognition.SpeechRecognitionEngine.MaxAlternates%2A> is 10.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -2512,10 +2512,10 @@ namespace SampleRecognition
         <returns>The value of the setting.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Recognizer settings can contain string, 64-bit integer, or memory address data. The following table describes the settings that are defined for a Microsoft Speech API (SAPI)-compliant recognizer. The following settings must have the same range for each recognizer that supports the setting. A SAPI-compliant recognizer is not required to support these settings and can support other settings.  
-  
+Recognizer settings can contain string, 64-bit integer, or memory address data. The following table describes the settings that are defined for a Microsoft Speech API (SAPI)-compliant recognizer. The following settings must have the same range for each recognizer that supports the setting. A SAPI-compliant recognizer is not required to support these settings and can support other settings.  
+ 
 |Name|Description|  
 |----------|-----------------|  
 |`ResourceUsage`|Specifies the recognizer's CPU consumption. The range is from 0 to 100. The default value is 50.|  
@@ -2523,14 +2523,14 @@ namespace SampleRecognition
 |`ComplexResponseSpeed`|Indicates the length of silence at the end of ambiguous input before the speech recognizer completes a recognition operation. The range is from 0 to 10,000ms. This setting corresponds to the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> property. Default = 500ms.|  
 |`AdaptationOn`|Indicates whether adaptation of the acoustic model is ON (value = `1`) or OFF (value = `0`). The default value is `1` (ON).|  
 |`PersistedBackgroundAdaptation`|Indicates whether background adaptation is ON (value = `1`) or OFF (value = `0`), and persists the setting in the registry. The default value is `1` (ON).|  
+ 
+To update a setting for the recognizer, use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> methods.  
+ 
   
- To update a setting for the recognizer, use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following example is part of a console application that outputs the values for a number of the settings defined for the recognizer that supports the en-US locale. The example generates the following output.  
-  
+The following example is part of a console application that outputs the values for a number of the settings defined for the recognizer that supports the en-US locale. The example generates the following output.  
+ 
 ```  
 Settings for recognizer MS-1033-80-DESK:  
   
@@ -2542,7 +2542,7 @@ Settings for recognizer MS-1033-80-DESK:
   
 Press any key to exit...  
 ```  
-  
+ 
 ```csharp  
   
 using System;  
@@ -2593,7 +2593,7 @@ namespace RecognizerSettings
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2621,35 +2621,35 @@ namespace RecognizerSettings
         <returns>The recognition result for the input, or <see langword="null" /> if the operation is not successful or the recognizer is not enabled.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method performs a single recognition operation. The recognizer performs this operation against its loaded and enabled speech recognition grammars.  
-  
- During a call to this method, the recognizer can raise the following events:  
-  
+This method performs a single recognition operation. The recognizer performs this operation against its loaded and enabled speech recognition grammars.  
+ 
+During a call to this method, the recognizer can raise the following events:  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>.  Raised when the recognizer detects input that it can identify as speech.  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>.  Raised when input creates an ambiguous match with one of the active grammars.  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized>. Raised when the recognizer finalizes a recognition operation.  
-  
- The recognizer does not raise the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event when using this method.  
-  
- The <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize> method returns a <xref:System.Speech.Recognition.RecognitionResult> object, or `null` if the operation is not successful.  
-  
- A synchronous recognition operation can fail for the following reasons:  
-  
+ 
+The recognizer does not raise the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event when using this method.  
+ 
+The <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize> method returns a <xref:System.Speech.Recognition.RecognitionResult> object, or `null` if the operation is not successful.  
+ 
+A synchronous recognition operation can fail for the following reasons:  
+ 
 -   Speech is not detected before the timeout intervals expire for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A> properties.  
-  
+ 
 -   The recognition engine detects speech but finds no matches in any of its loaded and enabled <xref:System.Speech.Recognition.Grammar> objects.  
+ 
+To perform asynchronous recognition, use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> methods.  
+ 
   
- To perform asynchronous recognition, use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates basic speech recognition. The example creates a <xref:System.Speech.Recognition.DictationGrammar>, loads it into an in-process speech recognizer, and performs one recognition operation.  
-  
+The following example shows part of a console application that demonstrates basic speech recognition. The example creates a <xref:System.Speech.Recognition.DictationGrammar>, loads it into an in-process speech recognizer, and performs one recognition operation.  
+ 
 ```  
   
 using System;  
@@ -2696,7 +2696,7 @@ namespace SynchronousRecognition
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2722,35 +2722,35 @@ namespace SynchronousRecognition
         <returns>The recognition result for the input, or <see langword="null" /> if the operation is not successful or the recognizer is not enabled.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the speech recognition engine detects speech within the time interval specified by `initialSilenceTimeout` argument, <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%28System.TimeSpan%29> performs a single recognition operation and then terminates.  The `initialSilenceTimeout` parameter supersedes the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A> property.  
-  
- During a call to this method, the recognizer can raise the following events:  
-  
+If the speech recognition engine detects speech within the time interval specified by `initialSilenceTimeout` argument, <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%28System.TimeSpan%29> performs a single recognition operation and then terminates.  The `initialSilenceTimeout` parameter supersedes the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A> property.  
+ 
+During a call to this method, the recognizer can raise the following events:  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>.  Raised when the recognizer detects input that it can identify as speech.  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>.  Raised when input creates an ambiguous match with one of the active grammars.  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized>. Raised when the recognizer finalizes a recognition operation.  
-  
- The recognizer does not raise the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event when using this method.  
-  
- The <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize> method returns a <xref:System.Speech.Recognition.RecognitionResult> object, or `null` if the operation is not successful.  
-  
- A synchronous recognition operation can fail for the following reasons:  
-  
+ 
+The recognizer does not raise the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event when using this method.  
+ 
+The <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize> method returns a <xref:System.Speech.Recognition.RecognitionResult> object, or `null` if the operation is not successful.  
+ 
+A synchronous recognition operation can fail for the following reasons:  
+ 
 -   Speech is not detected before the timeout intervals expire for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A> or for the `initialSilenceTimeout` parameter.  
-  
+ 
 -   The recognition engine detects speech but finds no matches in any of its loaded and enabled <xref:System.Speech.Recognition.Grammar> objects.  
+ 
+To perform asynchronous recognition, use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> methods.  
+ 
   
- To perform asynchronous recognition, use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates basic speech recognition. The example creates a <xref:System.Speech.Recognition.DictationGrammar>, loads it into an in-process speech recognizer, and performs one recognition operation.  
-  
+The following example shows part of a console application that demonstrates basic speech recognition. The example creates a <xref:System.Speech.Recognition.DictationGrammar>, loads it into an in-process speech recognizer, and performs one recognition operation.  
+ 
 ```csharp  
   
 using System;  
@@ -2793,7 +2793,7 @@ namespace SynchronousRecognition
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -2815,29 +2815,29 @@ namespace SynchronousRecognition
         <summary>Performs a single, asynchronous speech recognition operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method performs a single, asynchronous recognition operation. The recognizer performs the operation against its loaded and enabled speech recognition grammars.  
-  
- During a call to this method, the recognizer can raise the following events:  
-  
+This method performs a single, asynchronous recognition operation. The recognizer performs the operation against its loaded and enabled speech recognition grammars.  
+ 
+During a call to this method, the recognizer can raise the following events:  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>.  Raised when the recognizer detects input that it can identify as speech.  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>.  Raised when input creates an ambiguous match with one of the active grammars.  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized>. Raised when the recognizer finalizes a recognition operation.  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted>. Raised when a <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> operation finishes.  
+ 
+To retrieve the result of an asynchronous recognition operation, attach an event handler to the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event. The recognizer raises this event whenever it successfully completes a synchronous or asynchronous recognition operation. If recognition was not successful, the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A> property on <xref:System.Speech.Recognition.RecognizeCompletedEventArgs> object, which you can access in the handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, will be `null`.  
+ 
+To perform synchronous recognition, use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A> methods.  
+ 
   
- To retrieve the result of an asynchronous recognition operation, attach an event handler to the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event. The recognizer raises this event whenever it successfully completes a synchronous or asynchronous recognition operation. If recognition was not successful, the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A> property on <xref:System.Speech.Recognition.RecognizeCompletedEventArgs> object, which you can access in the handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, will be `null`.  
-  
- To perform synchronous recognition, use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates basic asynchronous speech recognition. The example creates a <xref:System.Speech.Recognition.DictationGrammar>, loads it into an in-process speech recognizer, and performs one asynchronous recognition operation. Event handlers are included to demonstrate the events that the recognizer raises during the operation.  
-  
+The following example shows part of a console application that demonstrates basic asynchronous speech recognition. The example creates a <xref:System.Speech.Recognition.DictationGrammar>, loads it into an in-process speech recognizer, and performs one asynchronous recognition operation. Event handlers are included to demonstrate the events that the recognizer raises during the operation.  
+ 
 ```csharp  
 using System;  
 using System.Globalization;  
@@ -3023,7 +3023,7 @@ namespace AsynchronousRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3048,35 +3048,35 @@ namespace AsynchronousRecognition
         <summary>Performs one or more asynchronous speech recognition operations.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `mode` is <xref:System.Speech.Recognition.RecognizeMode>, the recognizer continues performing asynchronous recognition operations until the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncCancel%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncStop%2A> method is called.  
-  
- During a call to this method, the recognizer can raise the following events:  
-  
+If `mode` is <xref:System.Speech.Recognition.RecognizeMode>, the recognizer continues performing asynchronous recognition operations until the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncCancel%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncStop%2A> method is called.  
+ 
+During a call to this method, the recognizer can raise the following events:  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>.  Raised when the recognizer detects input that it can identify as speech.  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>.  Raised when input creates an ambiguous match with one of the active grammars.  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized>. Raised when the recognizer finalizes a recognition operation.  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted>. Raised when a <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> operation finishes.  
-  
- To retrieve the result of an asynchronous recognition operation, attach an event handler to the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event. The recognizer raises this event whenever it successfully completes a synchronous or asynchronous recognition operation. If recognition was not successful, the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A> property on <xref:System.Speech.Recognition.RecognizeCompletedEventArgs> object, which you can access in the handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, will be `null`.  
-  
- An asynchronous recognition operation can fail for the following reasons:  
-  
+ 
+To retrieve the result of an asynchronous recognition operation, attach an event handler to the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event. The recognizer raises this event whenever it successfully completes a synchronous or asynchronous recognition operation. If recognition was not successful, the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A> property on <xref:System.Speech.Recognition.RecognizeCompletedEventArgs> object, which you can access in the handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, will be `null`.  
+ 
+An asynchronous recognition operation can fail for the following reasons:  
+ 
 -   Speech is not detected before the timeout intervals expire for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A> properties.  
-  
+ 
 -   The recognition engine detects speech but finds no matches in any of its loaded and enabled <xref:System.Speech.Recognition.Grammar> objects.  
+ 
+To perform synchronous recognition, use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A> methods.  
+ 
   
- To perform synchronous recognition, use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A> methods.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates basic asynchronous speech recognition. The example creates a <xref:System.Speech.Recognition.DictationGrammar>, loads it into an in-process speech recognizer, and performs multiple asynchronous recognition operations. The asynchronous operations are cancelled after 30 seconds. Event handlers are included to demonstrate the events that the recognizer raises during the operation.  
-  
+The following example shows part of a console application that demonstrates basic asynchronous speech recognition. The example creates a <xref:System.Speech.Recognition.DictationGrammar>, loads it into an in-process speech recognizer, and performs multiple asynchronous recognition operations. The asynchronous operations are cancelled after 30 seconds. Event handlers are included to demonstrate the events that the recognizer raises during the operation.  
+ 
 ```csharp  
 using System;  
 using System.Globalization;  
@@ -3265,7 +3265,7 @@ namespace AsynchronousRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3287,17 +3287,17 @@ namespace AsynchronousRecognition
         <summary>Terminates asynchronous recognition without waiting for the current recognition operation to complete.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method immediately finalizes asynchronous recognition. If the current asynchronous recognition operation is receiving input, the input is truncated and the operation completes with the existing input. The recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event when an asynchronous operation is canceled, and sets the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property of the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs> to `true`. This method cancels asynchronous operations initiated by the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> methods.  
+This method immediately finalizes asynchronous recognition. If the current asynchronous recognition operation is receiving input, the input is truncated and the operation completes with the existing input. The recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event when an asynchronous operation is canceled, and sets the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property of the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs> to `true`. This method cancels asynchronous operations initiated by the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> methods.  
+ 
+To stop asynchronous recognition without truncating the input, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncStop%2A> method.  
+ 
   
- To stop asynchronous recognition without truncating the input, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncStop%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates the use of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncCancel%2A> method. The example creates and loads a speech recognition grammar, initiates a continuing asynchronous recognition operation, and then pauses 2 seconds before it cancels the operation. The recognizer receives input from the file, c:\temp\audioinput\sample.wav. Event handlers are included to demonstrate the events that the recognizer raises during the operation.  
-  
+The following example shows part of a console application that demonstrates the use of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncCancel%2A> method. The example creates and loads a speech recognition grammar, initiates a continuing asynchronous recognition operation, and then pauses 2 seconds before it cancels the operation. The recognizer receives input from the file, c:\temp\audioinput\sample.wav. Event handlers are included to demonstrate the events that the recognizer raises during the operation.  
+ 
 ```csharp  
   
 using System;  
@@ -3481,7 +3481,7 @@ namespace AsynchronousRecognition
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3503,17 +3503,17 @@ namespace AsynchronousRecognition
         <summary>Stops asynchronous recognition after the current recognition operation completes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method finalizes asynchronous recognition without truncating input. If the current asynchronous recognition operation is receiving input, the recognizer continues accepting input until the current recognition operation is completed. The recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event when an asynchronous operation is stopped, and sets the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property of the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs> to `true`. This method stops asynchronous operations initiated by the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> methods.  
+This method finalizes asynchronous recognition without truncating input. If the current asynchronous recognition operation is receiving input, the recognizer continues accepting input until the current recognition operation is completed. The recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event when an asynchronous operation is stopped, and sets the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property of the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs> to `true`. This method stops asynchronous operations initiated by the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> methods.  
+ 
+To immediately cancel asynchronous recognition with only the existing input, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncCancel%2A> method.  
+ 
   
- To immediately cancel asynchronous recognition with only the existing input, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncCancel%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates the use of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncStop%2A> method. The example creates and loads a speech recognition grammar, initiates a continuing asynchronous recognition operation, and then pauses 2 seconds before it stops the operation. The recognizer receives input from the file, c:\temp\audioinput\sample.wav. Event handlers are included to demonstrate the events that the recognizer raises during the operation.  
-  
+The following example shows part of a console application that demonstrates the use of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncStop%2A> method. The example creates and loads a speech recognition grammar, initiates a continuing asynchronous recognition operation, and then pauses 2 seconds before it stops the operation. The recognizer receives input from the file, c:\temp\audioinput\sample.wav. Event handlers are included to demonstrate the events that the recognizer raises during the operation.  
+ 
 ```csharp  
   
 using System;  
@@ -3698,7 +3698,7 @@ namespace AsynchronousRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3719,23 +3719,23 @@ namespace AsynchronousRecognition
         <summary>Raised when the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> finalizes an asynchronous recognition operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Recognition.SpeechRecognitionEngine> object's <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> method initiates an asynchronous recognition operation. When the recognizer finalizes the asynchronous operation, it raises this event.  
+The <xref:System.Speech.Recognition.SpeechRecognitionEngine> object's <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> method initiates an asynchronous recognition operation. When the recognizer finalizes the asynchronous operation, it raises this event.  
+ 
+Using the handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, you can access the <xref:System.Speech.Recognition.RecognitionResult> in the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs> object. If recognition was not successful, <xref:System.Speech.Recognition.RecognitionResult> will be `null`. To determine whether a timeout or an interruption in audio input caused recognition to fail, you can access the properties for <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.InitialSilenceTimeout%2A>, <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.BabbleTimeout%2A>, or <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.InputStreamEnded%2A>.  
+ 
+See the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs> class for more information.  
+ 
+To obtain details on the best rejected recognition candidates, attach a handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> event.  
+ 
+When you create a <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ 
   
- Using the handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, you can access the <xref:System.Speech.Recognition.RecognitionResult> in the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs> object. If recognition was not successful, <xref:System.Speech.Recognition.RecognitionResult> will be `null`. To determine whether a timeout or an interruption in audio input caused recognition to fail, you can access the properties for <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.InitialSilenceTimeout%2A>, <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.BabbleTimeout%2A>, or <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.InputStreamEnded%2A>.  
-  
- See the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs> class for more information.  
-  
- To obtain details on the best rejected recognition candidates, attach a handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> event.  
-  
- When you create a <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
-  
-   
-  
+ 
 ## Examples  
- The following example recognizes phrases such as "Display the list of artists in the jazz category" or "Display albums gospel". The example uses a handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event to display information about the results of recognition in the console.  
-  
+The following example recognizes phrases such as "Display the list of artists in the jazz category" or "Display albums gospel". The example uses a handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event to display information about the results of recognition in the console.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -3842,7 +3842,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3864,12 +3864,12 @@ namespace SampleRecognition
         <value>The position of the recognizer in the audio input that it is processing.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The audio position is specific to each speech recognizer. The zero value of an input stream is established when it is enabled.  
-  
- The <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> property references the <xref:System.Speech.Recognition.SpeechRecognitionEngine> object's position within its audio input. By contrast, the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition%2A> property references the input device's position in its generated audio stream. These positions can be different. For example, if the recognizer has received input for which it has not yet generated a recognition result then the value of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> property is less than the value of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition%2A> property.  
-  
+The audio position is specific to each speech recognizer. The zero value of an input stream is established when it is enabled.  
+ 
+The <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> property references the <xref:System.Speech.Recognition.SpeechRecognitionEngine> object's position within its audio input. By contrast, the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition%2A> property references the input device's position in its generated audio stream. These positions can be different. For example, if the recognizer has received input for which it has not yet generated a recognition result then the value of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> property is less than the value of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition%2A> property.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3891,15 +3891,15 @@ namespace SampleRecognition
         <value>Information about the current speech recognizer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To get information about all of the installed speech recognizers for the current system, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.InstalledRecognizers%2A> method.  
+To get information about all of the installed speech recognizers for the current system, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.InstalledRecognizers%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example gets a partial list of data for the current in-process speech recognition engine. For more information, see <xref:System.Speech.Recognition.RecognizerInfo>.  
-  
+The following example gets a partial list of data for the current in-process speech recognition engine. For more information, see <xref:System.Speech.Recognition.RecognizerInfo>.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -3926,7 +3926,7 @@ namespace RecognitionEngine
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3947,21 +3947,21 @@ namespace RecognitionEngine
         <summary>Raised when a running <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> pauses to accept modifications.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Applications must use <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> to pause a running instance of <xref:System.Speech.Recognition.SpeechRecognitionEngine> before modifying its settings or its <xref:System.Speech.Recognition.Grammar> objects. The <xref:System.Speech.Recognition.SpeechRecognitionEngine> raises this event when it is ready to accept modifications.  
+Applications must use <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> to pause a running instance of <xref:System.Speech.Recognition.SpeechRecognitionEngine> before modifying its settings or its <xref:System.Speech.Recognition.Grammar> objects. The <xref:System.Speech.Recognition.SpeechRecognitionEngine> raises this event when it is ready to accept modifications.  
+ 
+For example, while the <xref:System.Speech.Recognition.SpeechRecognitionEngine> is paused, you can load, unload, enable, and disable <xref:System.Speech.Recognition.Grammar> objects, and modify values for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout%2A> properties. For more information, see the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> method.  
+ 
+When you create a <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ 
   
- For example, while the <xref:System.Speech.Recognition.SpeechRecognitionEngine> is paused, you can load, unload, enable, and disable <xref:System.Speech.Recognition.Grammar> objects, and modify values for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout%2A> properties. For more information, see the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> method.  
-  
- When you create a <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
-  
-   
-  
+ 
 ## Examples  
- The following example shows a console application that loads and unloads <xref:System.Speech.Recognition.Grammar> objects. The application uses the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> method to request the speech recognition engine to pause so it can receive an update. The application then loads or unloads a <xref:System.Speech.Recognition.Grammar> object.  
-  
- At each update, a handler for <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event writes the name and status of the currently loaded <xref:System.Speech.Recognition.Grammar> objects to the console. As grammars are loaded and unloaded, the application first recognizes the names of farm animals, then the names of farm animals and the names of fruits, then only the names of fruits.  
-  
+The following example shows a console application that loads and unloads <xref:System.Speech.Recognition.Grammar> objects. The application uses the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> method to request the speech recognition engine to pause so it can receive an update. The application then loads or unloads a <xref:System.Speech.Recognition.Grammar> object.  
+ 
+At each update, a handler for <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event writes the name and status of the currently loaded <xref:System.Speech.Recognition.Grammar> objects to the console. As grammars are loaded and unloaded, the application first recognizes the names of farm animals, then the names of farm animals and the names of fruits, then only the names of fruits.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -4063,7 +4063,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4085,19 +4085,19 @@ namespace SampleRecognition
         <summary>Requests that the recognizer pauses to update its state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the recognizer generates the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event, the <xref:System.Speech.Recognition.RecognizerUpdateReachedEventArgs.UserToken%2A> property of the <xref:System.Speech.Recognition.RecognizerUpdateReachedEventArgs> is `null`.  
+When the recognizer generates the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event, the <xref:System.Speech.Recognition.RecognizerUpdateReachedEventArgs.UserToken%2A> property of the <xref:System.Speech.Recognition.RecognizerUpdateReachedEventArgs> is `null`.  
+ 
+To provide a user token, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> method. To specify an audio position offset, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> method.  
+ 
   
- To provide a user token, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> method. To specify an audio position offset, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows a console application that loads and unloads <xref:System.Speech.Recognition.Grammar> objects. The application uses the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> method to request the speech recognition engine to pause so it can receive an update. The application then loads or unloads a <xref:System.Speech.Recognition.Grammar> object.  
-  
- At each update, a handler for <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event writes the name and status of the currently loaded <xref:System.Speech.Recognition.Grammar> objects to the console. As grammars are loaded and unloaded, the application first recognizes the names of farm animals, then the names of farm animals and the names of fruits, then only the names of fruits.  
-  
+The following example shows a console application that loads and unloads <xref:System.Speech.Recognition.Grammar> objects. The application uses the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> method to request the speech recognition engine to pause so it can receive an update. The application then loads or unloads a <xref:System.Speech.Recognition.Grammar> object.  
+ 
+At each update, a handler for <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event writes the name and status of the currently loaded <xref:System.Speech.Recognition.Grammar> objects to the console. As grammars are loaded and unloaded, the application first recognizes the names of farm animals, then the names of farm animals and the names of fruits, then only the names of fruits.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -4199,7 +4199,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4224,12 +4224,12 @@ namespace SampleRecognition
         <summary>Requests that the recognizer pauses to update its state and provides a user token for the associated event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- When the recognizer generates the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event, the <xref:System.Speech.Recognition.RecognizerUpdateReachedEventArgs.UserToken%2A> property of the <xref:System.Speech.Recognition.RecognizerUpdateReachedEventArgs> contains the value of the `userToken` parameter.  
-  
- To specify an audio position offset, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> method.  
-  
+When the recognizer generates the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event, the <xref:System.Speech.Recognition.RecognizerUpdateReachedEventArgs.UserToken%2A> property of the <xref:System.Speech.Recognition.RecognizerUpdateReachedEventArgs> contains the value of the `userToken` parameter.  
+ 
+To specify an audio position offset, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4256,12 +4256,12 @@ namespace SampleRecognition
         <summary>Requests that the recognizer pauses to update its state and provides an offset and a user token for the associated event.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The recognizer does not initiate the recognizer update request until the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> equals the current <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition%2A> plus `audioPositionAheadToRaiseUpdate`.  
-  
- When the recognizer generates the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event, the <xref:System.Speech.Recognition.RecognizerUpdateReachedEventArgs.UserToken%2A> property of the <xref:System.Speech.Recognition.RecognizerUpdateReachedEventArgs> contains the value of the `userToken` parameter.  
-  
+The recognizer does not initiate the recognizer update request until the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> equals the current <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition%2A> plus `audioPositionAheadToRaiseUpdate`.  
+ 
+When the recognizer generates the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event, the <xref:System.Speech.Recognition.RecognizerUpdateReachedEventArgs.UserToken%2A> property of the <xref:System.Speech.Recognition.RecognizerUpdateReachedEventArgs> contains the value of the `userToken` parameter.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4288,15 +4288,15 @@ namespace SampleRecognition
         <summary>Configures the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> object to receive input from an audio stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the recognizer reaches the end of the input stream during a recognition operation, the recognition operation finalizes with the available input. Any subsequent recognition operations can generate an exception, unless you update the input to the recognizer.  
+If the recognizer reaches the end of the input stream during a recognition operation, the recognition operation finalizes with the available input. Any subsequent recognition operations can generate an exception, unless you update the input to the recognizer.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates basic speech recognition. The example uses input from an audio file, example.wav, that contains the phrases, "testing testing one two three" and "mister cooper", separated by a pause. The example generates the following output.  
-  
+The following example shows part of a console application that demonstrates basic speech recognition. The example uses input from an audio file, example.wav, that contains the phrases, "testing testing one two three" and "mister cooper", separated by a pause. The example generates the following output.  
+ 
 ```  
   
 Starting asynchronous recognition...  
@@ -4307,7 +4307,7 @@ Done.
   
 Press any key to exit...  
 ```  
-  
+ 
 ```csharp  
   
 using System;  
@@ -4405,7 +4405,7 @@ namespace InputExamples
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4427,10 +4427,10 @@ namespace InputExamples
         <summary>Configures the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> object to receive input from the default audio device.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates basic speech recognition. The example uses output from the default audio device, performs multiple, asynchronous recognition operations, and exits when a user utters the phrase, "exit".  
-  
+The following example shows part of a console application that demonstrates basic speech recognition. The example uses output from the default audio device, performs multiple, asynchronous recognition operations, and exits when a user utters the phrase, "exit".  
+ 
 ```csharp  
   
 using System;  
@@ -4518,7 +4518,7 @@ namespace DefaultInput
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4540,10 +4540,10 @@ namespace DefaultInput
         <summary>Disables the input to the speech recognizer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Configure the <xref:System.Speech.Recognition.SpeechRecognitionEngine> object for no input when using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize%2A> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> methods, or when taking a recognition engine temporarily off line.  
-  
+Configure the <xref:System.Speech.Recognition.SpeechRecognitionEngine> object for no input when using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize%2A> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> methods, or when taking a recognition engine temporarily off line.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4568,15 +4568,15 @@ namespace DefaultInput
         <summary>Configures the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> object to receive input from a Waveform audio format (.wav) file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the recognizer reaches the end of the input file during a recognition operation, the recognition operation finalizes with the available input. Any subsequent recognition operations can generate an exception, unless you update the input to the recognizer.  
+If the recognizer reaches the end of the input file during a recognition operation, the recognition operation finalizes with the available input. Any subsequent recognition operations can generate an exception, unless you update the input to the recognizer.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example performs recognition on the audio in a .wav file and writes the recognized text to the console.  
-  
+The following example performs recognition on the audio in a .wav file and writes the recognized text to the console.  
+ 
 ```  
 using System;  
 using System.IO;  
@@ -4665,7 +4665,7 @@ recognizer.SetInputToWaveFile(@"c:\temp\SampleWAVInput.wav");
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4690,10 +4690,10 @@ recognizer.SetInputToWaveFile(@"c:\temp\SampleWAVInput.wav");
         <summary>Configures the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> object to receive input from a stream that contains Waveform audio format (.wav) data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the recognizer reaches the end of the input stream during a recognition operation, the recognition operation finalizes with the available input. Any subsequent recognition operations can generate an exception, unless you update the input to the recognizer.  
-  
+If the recognizer reaches the end of the input stream during a recognition operation, the recognition operation finalizes with the available input. Any subsequent recognition operations can generate an exception, unless you update the input to the recognizer.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4714,19 +4714,19 @@ recognizer.SetInputToWaveFile(@"c:\temp\SampleWAVInput.wav");
         <summary>Raised when the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> detects input that it can identify as speech.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Each speech recognizer has an algorithm to distinguish between silence and speech. When the <xref:System.Speech.Recognition.SpeechRecognitionEngine> performs a speech recognition operation, it raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected> event when its algorithm identifies the input as speech. The <xref:System.Speech.Recognition.SpeechDetectedEventArgs.AudioPosition%2A> property of the associated <xref:System.Speech.Recognition.SpeechDetectedEventArgs> object indicates location in the input stream where the recognizer detected speech. The <xref:System.Speech.Recognition.SpeechRecognitionEngine> raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected> event before it raises any of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized>, or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> events.  
+Each speech recognizer has an algorithm to distinguish between silence and speech. When the <xref:System.Speech.Recognition.SpeechRecognitionEngine> performs a speech recognition operation, it raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected> event when its algorithm identifies the input as speech. The <xref:System.Speech.Recognition.SpeechDetectedEventArgs.AudioPosition%2A> property of the associated <xref:System.Speech.Recognition.SpeechDetectedEventArgs> object indicates location in the input stream where the recognizer detected speech. The <xref:System.Speech.Recognition.SpeechRecognitionEngine> raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected> event before it raises any of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized>, or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> events.  
+ 
+For more information see the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> methods.  
+ 
+When you create a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ 
   
- For more information see the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> methods.  
-  
- When you create a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
-  
-   
-  
+ 
 ## Examples  
- The following example is part of a console application for choosing origin and destination cities for a flight. The application recognizes phrases such as "I want to fly from Miami to Chicago."  The example uses the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected> event to report the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition%2A> each time speech is detected.  
-  
+The following example is part of a console application for choosing origin and destination cities for a flight. The application recognizes phrases such as "I want to fly from Miami to Chicago."  The example uses the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected> event to report the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition%2A> each time speech is detected.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -4798,7 +4798,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4819,21 +4819,21 @@ namespace SampleRecognition
         <summary>Raised when the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> has recognized a word or words that may be a component of multiple complete phrases in a grammar.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Speech.Recognition.SpeechRecognitionEngine> generates numerous <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized> events as it attempts to identify an input phrase. You can access the text of partially recognized phrases in the <xref:System.Speech.Recognition.RecognitionEventArgs.Result%2A> property of the <xref:System.Speech.Recognition.SpeechHypothesizedEventArgs> object in the handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized> event. Typically, handling these events is useful only for debugging.  
+The <xref:System.Speech.Recognition.SpeechRecognitionEngine> generates numerous <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized> events as it attempts to identify an input phrase. You can access the text of partially recognized phrases in the <xref:System.Speech.Recognition.RecognitionEventArgs.Result%2A> property of the <xref:System.Speech.Recognition.SpeechHypothesizedEventArgs> object in the handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized> event. Typically, handling these events is useful only for debugging.  
+ 
+<xref:System.Speech.Recognition.SpeechHypothesizedEventArgs> derives from <xref:System.Speech.Recognition.RecognitionEventArgs>.  
+ 
+For more information see the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> property and the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> methods.  
+ 
+When you create a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ 
   
- <xref:System.Speech.Recognition.SpeechHypothesizedEventArgs> derives from <xref:System.Speech.Recognition.RecognitionEventArgs>.  
-  
- For more information see the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> property and the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> methods.  
-  
- When you create a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
-  
-   
-  
+ 
 ## Examples  
- The following example recognizes phrases such as "Display the list of artists in the jazz category". The example uses the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized> event to display incomplete phrase fragments in the console as they are recognized.  
-  
+The following example recognizes phrases such as "Display the list of artists in the jazz category". The example uses the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized> event to display incomplete phrase fragments in the console as they are recognized.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -4912,7 +4912,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -4933,19 +4933,19 @@ namespace SampleRecognition
         <summary>Raised when the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> receives input that does not match any of its loaded and enabled <see cref="T:System.Speech.Recognition.Grammar" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The recognizer raises this event if it determines that input does not match with sufficient confidence any of its loaded and enabled <xref:System.Speech.Recognition.Grammar> objects. The <xref:System.Speech.Recognition.RecognitionEventArgs.Result%2A> property of the <xref:System.Speech.Recognition.SpeechRecognitionRejectedEventArgs> contains the rejected <xref:System.Speech.Recognition.RecognitionResult> object. You can use the handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> event to retrieve recognition <xref:System.Speech.Recognition.RecognitionResult.Alternates%2A> that were rejected and their <xref:System.Speech.Recognition.RecognizedPhrase.Confidence%2A> scores.  
+The recognizer raises this event if it determines that input does not match with sufficient confidence any of its loaded and enabled <xref:System.Speech.Recognition.Grammar> objects. The <xref:System.Speech.Recognition.RecognitionEventArgs.Result%2A> property of the <xref:System.Speech.Recognition.SpeechRecognitionRejectedEventArgs> contains the rejected <xref:System.Speech.Recognition.RecognitionResult> object. You can use the handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> event to retrieve recognition <xref:System.Speech.Recognition.RecognitionResult.Alternates%2A> that were rejected and their <xref:System.Speech.Recognition.RecognizedPhrase.Confidence%2A> scores.  
+ 
+If your application is using a <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance, you can modify the confidence level at which speech input is accepted or rejected with one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> methods. You can modify how the speech recognition responds to non-speech input using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> properties.  
+ 
+When you create a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ 
   
- If your application is using a <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance, you can modify the confidence level at which speech input is accepted or rejected with one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> methods. You can modify how the speech recognition responds to non-speech input using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> properties.  
-  
- When you create a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
-  
-   
-  
+ 
 ## Examples  
- The following example recognizes phrases such as "Display the list of artists in the jazz category" or "Display albums gospel". The example uses a handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> event to display a notification in the console when the speech input cannot be matched to the contents of the grammar with sufficient <xref:System.Speech.Recognition.RecognizedPhrase.Confidence%2A> to produce a successful recognition. The handler also displays recognition result <xref:System.Speech.Recognition.RecognitionResult.Alternates%2A> that were rejected because of low confidence scores.  
-  
+The following example recognizes phrases such as "Display the list of artists in the jazz category" or "Display albums gospel". The example uses a handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> event to display a notification in the console when the speech input cannot be matched to the contents of the grammar with sufficient <xref:System.Speech.Recognition.RecognizedPhrase.Confidence%2A> to produce a successful recognition. The handler also displays recognition result <xref:System.Speech.Recognition.RecognitionResult.Alternates%2A> that were rejected because of low confidence scores.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -5029,7 +5029,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5050,25 +5050,25 @@ namespace SampleRecognition
         <summary>Raised when the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> receives input that matches any of its loaded and enabled <see cref="T:System.Speech.Recognition.Grammar" /> objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can initiate a recognition operation using the one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> methods. The recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event if it determines that input matches one of its loaded <xref:System.Speech.Recognition.Grammar> objects with a sufficient level of confidence to constitute recognition. The <xref:System.Speech.Recognition.RecognitionEventArgs.Result%2A> property of the <xref:System.Speech.Recognition.SpeechRecognitionRejectedEventArgs> contains the accepted <xref:System.Speech.Recognition.RecognitionResult> object. Handlers of <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events can obtain the recognized phrase as well as a list of recognition <xref:System.Speech.Recognition.RecognitionResult.Alternates%2A> with lower confidence scores.  
+You can initiate a recognition operation using the one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> methods. The recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event if it determines that input matches one of its loaded <xref:System.Speech.Recognition.Grammar> objects with a sufficient level of confidence to constitute recognition. The <xref:System.Speech.Recognition.RecognitionEventArgs.Result%2A> property of the <xref:System.Speech.Recognition.SpeechRecognitionRejectedEventArgs> contains the accepted <xref:System.Speech.Recognition.RecognitionResult> object. Handlers of <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events can obtain the recognized phrase as well as a list of recognition <xref:System.Speech.Recognition.RecognitionResult.Alternates%2A> with lower confidence scores.  
+ 
+If your application is using a <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance, you can modify the confidence level at which speech input is accepted or rejected with one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> methods.  You can modify how the speech recognition responds to non-speech input using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> properties.  
+ 
+When the recognizer receives input that matches a grammar, the <xref:System.Speech.Recognition.Grammar> object can raise its <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event. The <xref:System.Speech.Recognition.Grammar> object's <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event is raised prior to the speech recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event. Any tasks specific to a particular grammar should always be performed by a handler for the <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event.  
+ 
+When you create a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
+ 
   
- If your application is using a <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance, you can modify the confidence level at which speech input is accepted or rejected with one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> methods.  You can modify how the speech recognition responds to non-speech input using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> properties.  
-  
- When the recognizer receives input that matches a grammar, the <xref:System.Speech.Recognition.Grammar> object can raise its <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event. The <xref:System.Speech.Recognition.Grammar> object's <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event is raised prior to the speech recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event. Any tasks specific to a particular grammar should always be performed by a handler for the <xref:System.Speech.Recognition.Grammar.SpeechRecognized> event.  
-  
- When you create a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events and Delegates](http://go.microsoft.com/fwlink/?LinkId=162418).  
-  
-   
-  
+ 
 ## Examples  
- The following example is part of a console application that creates speech recognition grammar, constructs a <xref:System.Speech.Recognition.Grammar> object, and loads it into the <xref:System.Speech.Recognition.SpeechRecognitionEngine> to perform recognition. The example demonstrates speech input to a <xref:System.Speech.Recognition.SpeechRecognitionEngine>, the associated recognition results, and the associated events raised by the speech recognizer.  
-  
- Spoken input such as "I want to fly from Chicago to Miami" will trigger a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event. Speaking the phrase "Fly me from Houston to Chicago " will not trigger a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event.  
-  
- The example uses a handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event to display successfully recognized phrases and the semantics they contain in the console.  
-  
+The following example is part of a console application that creates speech recognition grammar, constructs a <xref:System.Speech.Recognition.Grammar> object, and loads it into the <xref:System.Speech.Recognition.SpeechRecognitionEngine> to perform recognition. The example demonstrates speech input to a <xref:System.Speech.Recognition.SpeechRecognitionEngine>, the associated recognition results, and the associated events raised by the speech recognizer.  
+ 
+Spoken input such as "I want to fly from Chicago to Miami" will trigger a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event. Speaking the phrase "Fly me from Houston to Chicago " will not trigger a <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event.  
+ 
+The example uses a handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event to display successfully recognized phrases and the semantics they contain in the console.  
+ 
 ```  
 using System;  
 using System.Speech.Recognition;  
@@ -5148,7 +5148,7 @@ namespace SampleRecognition
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5170,17 +5170,17 @@ namespace SampleRecognition
         <summary>Unloads all <see cref="T:System.Speech.Recognition.Grammar" /> objects from the recognizer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the recognizer is currently loading a <xref:System.Speech.Recognition.Grammar> asynchronously, this method waits until the <xref:System.Speech.Recognition.Grammar> is loaded, before it unloads all of the <xref:System.Speech.Recognition.Grammar> objects from the <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance.  
+If the recognizer is currently loading a <xref:System.Speech.Recognition.Grammar> asynchronously, this method waits until the <xref:System.Speech.Recognition.Grammar> is loaded, before it unloads all of the <xref:System.Speech.Recognition.Grammar> objects from the <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance.  
+ 
+To unload a specific grammar, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UnloadGrammar%2A> method.  
+ 
   
- To unload a specific grammar, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UnloadGrammar%2A> method.  
-  
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates the synchronous loading and unloading of speech recognition grammars.  
-  
+The following example shows part of a console application that demonstrates the synchronous loading and unloading of speech recognition grammars.  
+ 
 ```  
 Loading grammars...  
 Loaded grammars:  
@@ -5198,7 +5198,7 @@ No grammars loaded.
   
 Press any key to exit...  
 ```  
-  
+ 
 ```csharp  
   
 using System;  
@@ -5270,7 +5270,7 @@ namespace UnloadGrammars
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5295,15 +5295,15 @@ namespace UnloadGrammars
         <summary>Unloads a specified <see cref="T:System.Speech.Recognition.Grammar" /> object from the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If the recognizer is running, applications must use <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> to pause the <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance before loading, unloading,  enabling, or disabling a <xref:System.Speech.Recognition.Grammar> object. To unload all <xref:System.Speech.Recognition.Grammar> objects, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UnloadAllGrammars%2A> method.  
+If the recognizer is running, applications must use <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> to pause the <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance before loading, unloading,  enabling, or disabling a <xref:System.Speech.Recognition.Grammar> object. To unload all <xref:System.Speech.Recognition.Grammar> objects, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UnloadAllGrammars%2A> method.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows part of a console application that demonstrates the synchronous loading and unloading of speech recognition grammars.  
-  
+The following example shows part of a console application that demonstrates the synchronous loading and unloading of speech recognition grammars.  
+ 
 ```  
 Loading grammars...  
 Loaded grammars:  
@@ -5321,7 +5321,7 @@ No grammars loaded.
   
 Press any key to exit...  
 ```  
-  
+ 
 ```csharp  
   
 using System;  
@@ -5393,7 +5393,7 @@ namespace UnloadGrammars
   }  
 }  
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -5423,15 +5423,15 @@ namespace UnloadGrammars
         <summary>Updates the specified setting for the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> with the specified integer value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With the exception of `PersistedBackgroundAdaptation`, property values set using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> method remain in effect only for the current instance of <xref:System.Speech.Recognition.SpeechRecognitionEngine>, after which they revert to their default settings. See <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> for descriptions of supported settings.  
+With the exception of `PersistedBackgroundAdaptation`, property values set using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> method remain in effect only for the current instance of <xref:System.Speech.Recognition.SpeechRecognitionEngine>, after which they revert to their default settings. See <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> for descriptions of supported settings.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example is part of a console application that outputs the values for a number of the settings defined for the recognizer that supports the en-US locale. The example updates the confidence level settings, and then queries the recognizer to check the updated values. The example generates the following output.  
-  
+The following example is part of a console application that outputs the values for a number of the settings defined for the recognizer that supports the en-US locale. The example updates the confidence level settings, and then queries the recognizer to check the updated values. The example generates the following output.  
+ 
 ```  
 Settings for recognizer MS-1033-80-DESK:  
   
@@ -5451,7 +5451,7 @@ Updated settings:
   
 Press any key to exit...  
 ```  
-  
+ 
 ```csharp  
 using System;  
 using System.Globalization;  
@@ -5519,7 +5519,7 @@ namespace RecognizerSettings
 }  
   
 ```  
-  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -5551,10 +5551,10 @@ namespace RecognizerSettings
         <summary>Updates the specified speech recognition engine setting with the specified string value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- With the exception of `PersistedBackgroundAdaptation`, property values set using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> method remain in effect only for the current instance of <xref:System.Speech.Recognition.SpeechRecognitionEngine>, after which they revert to their default settings. See <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> for descriptions of supported settings.  
-  
+With the exception of `PersistedBackgroundAdaptation`, property values set using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> method remain in effect only for the current instance of <xref:System.Speech.Recognition.SpeechRecognitionEngine>, after which they revert to their default settings. See <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> for descriptions of supported settings.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -5573,34 +5573,34 @@ namespace RecognizerSettings
         <summary>Starts an asynchronous speech recognition operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These methods perform single or multiple, asynchronous recognition operations. The recognizer performs each operation against its loaded and enabled speech recognition grammars.  
-  
- During a call to this method, the recognizer can raise the following events:  
-  
+These methods perform single or multiple, asynchronous recognition operations. The recognizer performs each operation against its loaded and enabled speech recognition grammars.  
+ 
+During a call to this method, the recognizer can raise the following events:  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>.  Raised when the recognizer detects input that it can identify as speech.  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>.  Raised when input creates an ambiguous match with one of the active grammars.  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized>. Raised when the recognizer finalizes a recognition operation.  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted>. Raised when a <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> operation finishes.  
-  
- To retrieve the result of an asynchronous recognition operation, attach an event handler to the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event. The recognizer raises this event whenever it successfully completes a synchronous or asynchronous recognition operation. If recognition was not successful, the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A> property on <xref:System.Speech.Recognition.RecognizeCompletedEventArgs> object, which you can access in the handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, will be `null`.  
-  
- An asynchronous recognition operation can fail for the following reasons:  
-  
+ 
+To retrieve the result of an asynchronous recognition operation, attach an event handler to the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event. The recognizer raises this event whenever it successfully completes a synchronous or asynchronous recognition operation. If recognition was not successful, the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A> property on <xref:System.Speech.Recognition.RecognizeCompletedEventArgs> object, which you can access in the handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, will be `null`.  
+ 
+An asynchronous recognition operation can fail for the following reasons:  
+ 
 -   Speech is not detected before the timeout intervals expire for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A> properties.  
-  
+ 
 -   The recognition engine detects speech but finds no matches in any of its loaded and enabled <xref:System.Speech.Recognition.Grammar> objects.  
-  
+ 
 -   The <xref:System.Speech.Recognition.SpeechRecognitionEngine> must have at least one <xref:System.Speech.Recognition.Grammar> object loaded before performing recognition. To load a speech recognition grammar, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method.  
-  
+ 
 -   To modify how the recognizer handles the timing of speech or silence with respect to recognition, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> properties.  
-  
+ 
 -   To perform synchronous recognition, use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A> methods.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5614,17 +5614,17 @@ namespace RecognizerSettings
         <summary>Emulates input to the speech recognizer, using text in place of audio for synchronous speech recognition.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These methods bypass the system audio input and provide text to the recognizer as <xref:System.String> objects or as an array of <xref:System.Speech.Recognition.RecognizedWordUnit> objects. This can be helpful when you are testing or debugging an application or grammar. For example, you can use emulation to determine whether a word is in a grammar and what semantics are returned when the word is recognized. Use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull%2A> method to disable audio input to the speech recognition engine during emulation operations.  
-  
- The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated. The recognizer ignores new lines and extra white space and treats punctuation as literal input.  
-  
+These methods bypass the system audio input and provide text to the recognizer as <xref:System.String> objects or as an array of <xref:System.Speech.Recognition.RecognizedWordUnit> objects. This can be helpful when you are testing or debugging an application or grammar. For example, you can use emulation to determine whether a word is in a grammar and what semantics are returned when the word is recognized. Use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull%2A> method to disable audio input to the speech recognition engine during emulation operations.  
+ 
+The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated. The recognizer ignores new lines and extra white space and treats punctuation as literal input.  
+ 
 > [!NOTE]
 >  The <xref:System.Speech.Recognition.RecognitionResult> object generated by the speech recognizer in response to emulated input has a value of `null` for its <xref:System.Speech.Recognition.RecognitionResult.Audio%2A> property.  
-  
- To emulate asynchronous recognition, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> method.  
-  
+ 
+To emulate asynchronous recognition, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5638,29 +5638,29 @@ namespace RecognizerSettings
         <summary>Requests that the recognizer pauses to update its state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use this method to synchronize changes to the recognizer. For example, if you load or unload a speech recognition grammar while the recognizer is processing input, use this method and the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event to synchronize your application behavior with the state of the recognizer.  
-  
- When this method is called, the recognizer pauses or completes asynchronous operations and generates a <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event. A <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event handler can then modify the state of the recognizer in between recognition operations. When handling <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> events, the recognizer pauses until the event handler returns.  
-  
+Use this method to synchronize changes to the recognizer. For example, if you load or unload a speech recognition grammar while the recognizer is processing input, use this method and the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event to synchronize your application behavior with the state of the recognizer.  
+ 
+When this method is called, the recognizer pauses or completes asynchronous operations and generates a <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event. A <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event handler can then modify the state of the recognizer in between recognition operations. When handling <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> events, the recognizer pauses until the event handler returns.  
+ 
 > [!NOTE]
 >  If the input to the recognizer is changed before the recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event, the request is discarded.  
-  
- When this method is called:  
-  
+ 
+When this method is called:  
+ 
 -   If the recognizer is not processing input, the recognizer immediately generates the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event.  
-  
+ 
 -   If the recognizer is processing input that consists of silence or background noise, the recognizer pauses the recognition operation and generates the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event.  
-  
+ 
 -   If the recognizer is processing input that does not consist of silence or background noise, the recognizer completes the recognition operation and then generates the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event.  
-  
- While the recognizer is handling the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event:  
-  
+ 
+While the recognizer is handling the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached> event:  
+ 
 -   The recognizer does not process input, and the value of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> property remains the same.  
-  
+ 
 -   The recognizer continues to collect input, and the value of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition%2A> property can change.  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5674,34 +5674,34 @@ namespace RecognizerSettings
         <summary>Starts a synchronous speech recognition operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These methods perform a single, synchronous recognition operation. The recognizer performs this operation against its loaded and enabled speech recognition grammars.  
-  
- During a call to this method, the recognizer can raise the following events:  
-  
+These methods perform a single, synchronous recognition operation. The recognizer performs this operation against its loaded and enabled speech recognition grammars.  
+ 
+During a call to this method, the recognizer can raise the following events:  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>.  Raised when the recognizer detects input that it can identify as speech.  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>.  Raised when input creates an ambiguous match with one of the active grammars.  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized>. Raised when the recognizer finalizes a recognition operation.  
-  
- The recognizer does not raise the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event when using one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A> methods.  
-  
- The <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A> methods return a <xref:System.Speech.Recognition.RecognitionResult> object, or `null` if the operation is not successful or the recognizer is not enabled.  
-  
- A synchronous recognition operation can fail for the following reasons:  
-  
+ 
+The recognizer does not raise the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event when using one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A> methods.  
+ 
+The <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A> methods return a <xref:System.Speech.Recognition.RecognitionResult> object, or `null` if the operation is not successful or the recognizer is not enabled.  
+ 
+A synchronous recognition operation can fail for the following reasons:  
+ 
 -   Speech is not detected before the timeout intervals expire for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A> properties, or for the `initialSilenceTimeout` parameter of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.Recognize%2A> method.  
-  
+ 
 -   The recognition engine detects speech but finds no matches in any of its loaded and enabled <xref:System.Speech.Recognition.Grammar> objects.  
-  
- To modify how the recognizer handles the timing of speech or silence with respect to recognition, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> properties.  
-  
- The <xref:System.Speech.Recognition.SpeechRecognitionEngine> must have at least one <xref:System.Speech.Recognition.Grammar> object loaded before performing recognition. To load a speech recognition grammar, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method.  
-  
- To perform asynchronous recognition, use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> methods.  
-  
+ 
+To modify how the recognizer handles the timing of speech or silence with respect to recognition, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> properties.  
+ 
+The <xref:System.Speech.Recognition.SpeechRecognitionEngine> must have at least one <xref:System.Speech.Recognition.Grammar> object loaded before performing recognition. To load a speech recognition grammar, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method.  
+ 
+To perform asynchronous recognition, use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A> methods.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5715,34 +5715,34 @@ namespace RecognizerSettings
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You can construct a <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance from any of the following:  
-  
+You can construct a <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance from any of the following:  
+ 
 -   The default speech recognition engine for the system  
-  
+ 
 -   A specific speech recognition engine that you specify by name  
-  
+ 
 -   The default speech recognition engine for a locale that you specify  
-  
+ 
 -   A specific recognition engine that meets the criteria that you specify in a <xref:System.Speech.Recognition.RecognizerInfo> object.  
-  
- Before the speech recognizer can begin recognition, you must load at least one speech recognition grammar and configure the input for the recognizer.  
-  
- To load a grammar, call the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method.  
-  
- To configure the audio input, use one of the following methods:  
-  
+ 
+Before the speech recognizer can begin recognition, you must load at least one speech recognition grammar and configure the input for the recognizer.  
+ 
+To load a grammar, call the <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync%2A> method.  
+ 
+To configure the audio input, use one of the following methods:  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToAudioStream%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToDefaultAudioDevice%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveFile%2A>  
-  
+ 
 -   <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveStream%2A>  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5756,17 +5756,17 @@ namespace RecognizerSettings
         <summary>Emulates input to the speech recognizer, using text in place of audio for asynchronous speech recognition.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- These methods bypass the system audio input and provide text to the recognizer as <xref:System.String> objects or as an array of <xref:System.Speech.Recognition.RecognizedWordUnit> objects. This can be helpful when you are testing or debugging an application or grammar. For example, you can use emulation to determine whether a word is in a grammar and what semantics are returned when the word is recognized. Use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull%2A> method to disable audio input to the speech recognition engine during emulation operations.  
-  
- The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated. When the recognizer completes the asynchronous recognition operation, it raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event. The recognizer ignores new lines and extra white space and treats punctuation as literal input.  
-  
+These methods bypass the system audio input and provide text to the recognizer as <xref:System.String> objects or as an array of <xref:System.Speech.Recognition.RecognizedWordUnit> objects. This can be helpful when you are testing or debugging an application or grammar. For example, you can use emulation to determine whether a word is in a grammar and what semantics are returned when the word is recognized. Use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull%2A> method to disable audio input to the speech recognition engine during emulation operations.  
+ 
+The speech recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> events as if the recognition operation is not emulated. When the recognizer completes the asynchronous recognition operation, it raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted> event. The recognizer ignores new lines and extra white space and treats punctuation as literal input.  
+ 
 > [!NOTE]
 >  The <xref:System.Speech.Recognition.RecognitionResult> object generated by the speech recognizer in response to emulated input has a value of `null` for its <xref:System.Speech.Recognition.RecognitionResult.Audio%2A> property.  
-  
- To emulate synchronous recognition, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize%2A> method.  
-  
+ 
+To emulate synchronous recognition, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -5780,10 +5780,10 @@ namespace RecognizerSettings
         <summary>Updates the value of a setting for the recognizer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Recognizer settings can contain string, 64-bit integer, or memory address data. The following table describes the settings that are defined for a Microsoft Speech API (SAPI)-compliant recognizer. The following settings must have the same range for each recognizer that supports the setting. A SAPI-compliant recognizer is not required to support these settings and can support other settings.  
-  
+Recognizer settings can contain string, 64-bit integer, or memory address data. The following table describes the settings that are defined for a Microsoft Speech API (SAPI)-compliant recognizer. The following settings must have the same range for each recognizer that supports the setting. A SAPI-compliant recognizer is not required to support these settings and can support other settings.  
+ 
 |Name|Description|  
 |----------|-----------------|  
 |`ResourceUsage`|Specifies the recognizer's CPU consumption. The range is from 0 to 100. The default value is 50.|  
@@ -5791,13 +5791,13 @@ namespace RecognizerSettings
 |`ComplexResponseSpeed`|Indicates the length of silence in milliseconds (ms) at the end of ambiguous input before the speech recognizer completes a recognition operation. The range is from 0 to 10,000ms. This setting corresponds to the recognizer's <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> property. Default = 500ms.|  
 |`AdaptationOn`|Indicates whether adaptation of the acoustic model is ON (value = `1`) or OFF (value = `0`). The default value is `1` (ON).|  
 |`PersistedBackgroundAdaptation`|Indicates whether background adaptation is ON (value = `1`) or OFF (value = `0`), and persists the setting in the registry. The default value is `1` (ON).|  
-  
- To return one of the recognizer's settings, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.QueryRecognizerSetting%2A> method.  
-  
- With the exception of `PersistedBackgroundAdaptation`, property values set using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> methods remain in effect only for the current instance of <xref:System.Speech.Recognition.SpeechRecognitionEngine>, after which they revert to their default settings.  
-  
- You can modify how the speech recognition responds to non-speech input using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> properties.  
-  
+ 
+To return one of the recognizer's settings, use the <xref:System.Speech.Recognition.SpeechRecognitionEngine.QueryRecognizerSetting%2A> method.  
+ 
+With the exception of `PersistedBackgroundAdaptation`, property values set using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> methods remain in effect only for the current instance of <xref:System.Speech.Recognition.SpeechRecognitionEngine>, after which they revert to their default settings.  
+ 
+You can modify how the speech recognition responds to non-speech input using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous%2A> properties.  
+ 
  ]]></format>
         </remarks>
       </Docs>

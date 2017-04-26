@@ -105,10 +105,10 @@
         <returns>The <see cref="T:System.Windows.Rect" /> created from converting <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.RectConverter.CanConvertFrom%2A> method.  
-  
+To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.RectConverter.CanConvertFrom%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Thrown if the specified object is NULL or is a type that cannot be converted to a <see cref="T:System.Windows.Rect" />.</exception>
@@ -141,10 +141,10 @@
         <returns>The object created from converting this <see cref="T:System.Windows.Rect" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.RectConverter.CanConvertTo%2A> method.  
-  
+To determine whether a conversion is possible without actually performing the conversion, use the <xref:System.Windows.RectConverter.CanConvertTo%2A> method.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">

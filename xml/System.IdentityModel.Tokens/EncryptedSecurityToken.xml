@@ -14,10 +14,10 @@
     <summary>A wrapping-token that handles encryption for a token that does not natively support it.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- For example, a <xref:System.IdentityModel.Tokens.SamlSecurityToken> cannot encrypt itself, so to issue an encrypted SAML11 assertion, wrap a <xref:System.IdentityModel.Tokens.SamlSecurityToken> with an <xref:System.IdentityModel.Tokens.EncryptedSecurityToken> and provide appropriate <xref:System.IdentityModel.Tokens.EncryptingCredentials>.  
-  
+For example, a <xref:System.IdentityModel.Tokens.SamlSecurityToken> cannot encrypt itself, so to issue an encrypted SAML11 assertion, wrap a <xref:System.IdentityModel.Tokens.SamlSecurityToken> with an <xref:System.IdentityModel.Tokens.EncryptedSecurityToken> and provide appropriate <xref:System.IdentityModel.Tokens.EncryptingCredentials>.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -41,10 +41,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EncryptedSecurityToken" /> class for the specified token by using the specified encrypting credentials.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Inherited from <xref:System.IdentityModel.Tokens.SecurityToken>.  
-  
+Inherited from <xref:System.IdentityModel.Tokens.SecurityToken>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -76,10 +76,10 @@
           <see langword="true" /> if the token can create a key identifier clause of the specified type; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Inherited from <xref:System.IdentityModel.Tokens.SecurityToken>.  
-  
+Inherited from <xref:System.IdentityModel.Tokens.SecurityToken>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -169,10 +169,10 @@
           <see langword="true" /> if the specified key identifier clause can be resolved by this instance; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Inherited from <xref:System.IdentityModel.Tokens.SecurityToken>.  
-  
+Inherited from <xref:System.IdentityModel.Tokens.SecurityToken>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +198,10 @@
         <returns>The key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Inherited from <xref:System.IdentityModel.Tokens.SecurityToken>.  
-  
+Inherited from <xref:System.IdentityModel.Tokens.SecurityToken>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,10 +223,10 @@
         <value>The set of keys associated with the security token.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Inherited from <xref:System.IdentityModel.Tokens.SecurityToken>.  
-  
+Inherited from <xref:System.IdentityModel.Tokens.SecurityToken>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

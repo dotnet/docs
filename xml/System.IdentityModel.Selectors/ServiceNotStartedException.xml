@@ -14,10 +14,10 @@
     <summary>The exception that is thrown when [!INCLUDE[infocard](~/includes/infocard-md.md)] has not been started on the user's computer.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A ServiceNotStartedException exception is thrown when CardSpace has not been started on the user's computer. If CardSpace has attempted to start but has been unable to for any reason, this exception is thrown. Check that the CardSpace service is installed and enabled on the computer. Try to start the CardSpace service manually by using Microsoft Management Console (MMC). CardSpace version 1 does not support FAT file systems. On FAT systems, CardSpace will not start and this exception will occur.  
-  
+A ServiceNotStartedException exception is thrown when CardSpace has not been started on the user's computer. If CardSpace has attempted to start but has been unable to for any reason, this exception is thrown. Check that the CardSpace service is installed and enabled on the computer. Try to start the CardSpace service manually by using Microsoft Management Console (MMC). CardSpace version 1 does not support FAT file systems. On FAT systems, CardSpace will not start and this exception will occur.  
+ 
  ]]></format>
     </remarks>
   </Docs>

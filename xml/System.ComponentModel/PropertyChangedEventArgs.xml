@@ -24,12 +24,12 @@
     <summary>Provides data for the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> event is raised when a property is changed on a component. A <xref:System.ComponentModel.PropertyChangedEventArgs> object specifies the name of the property that changed.  
-  
- <xref:System.ComponentModel.PropertyChangedEventArgs> provides the <xref:System.ComponentModel.PropertyChangedEventArgs.PropertyName%2A> property to get the name of the property that changed.  
-  
+A <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> event is raised when a property is changed on a component. A <xref:System.ComponentModel.PropertyChangedEventArgs> object specifies the name of the property that changed.  
+ 
+<xref:System.ComponentModel.PropertyChangedEventArgs> provides the <xref:System.ComponentModel.PropertyChangedEventArgs.PropertyName%2A> property to get the name of the property that changed.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -61,10 +61,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.PropertyChangedEventArgs" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.String> value or `null` for the `propertyName` parameter indicates that all of the properties have changed.  
-  
+An <xref:System.String> value or `null` for the `propertyName` parameter indicates that all of the properties have changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -96,10 +96,10 @@
         <value>The name of the property that changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- An <xref:System.String> value or `null` for the `propertyName` parameter indicates that all of the properties have changed.  
-  
+An <xref:System.String> value or `null` for the `propertyName` parameter indicates that all of the properties have changed.  
+ 
  ]]></format>
         </remarks>
       </Docs>

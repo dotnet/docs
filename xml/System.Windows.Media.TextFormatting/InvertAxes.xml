@@ -18,12 +18,12 @@
     <summary>Indicate the inversion of horizontal and vertical axes of the drawing surface.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Text formatter clients usually invert the horizontal axis, or X-axis, of the drawing surface when performing right-to-left layout of text content.  
-  
- In a less common case, a text formatter client may invert the vertical axis, or Y-axis, of the drawing surface to achieve the effect of having the coordinate origin at the bottom-left position of the screen. This is a useful technique when drawing certain types of graphs.  
-  
+Text formatter clients usually invert the horizontal axis, or X-axis, of the drawing surface when performing right-to-left layout of text content.  
+ 
+In a less common case, a text formatter client may invert the vertical axis, or Y-axis, of the drawing surface to achieve the effect of having the coordinate origin at the bottom-left position of the screen. This is a useful technique when drawing certain types of graphs.  
+ 
  ]]></format>
     </remarks>
   </Docs>

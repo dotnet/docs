@@ -11,14 +11,14 @@
     <summary>Defines members that a data-bound control must implement in order to have paging functionality provided by the <see cref="T:System.Web.UI.WebControls.DataPager" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.IPageableItemContainer> interface defines properties, methods, and events that must be implemented by data-bound controls in order to have paging functionality provided by the <xref:System.Web.UI.WebControls.DataPager> control. (An example of a control that implements this interface is the <xref:System.Web.UI.WebControls.ListView> control.)  
-  
- The <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable> event is raised when the <xref:System.Web.UI.WebControls.DataPager> control can bind to data. The <xref:System.Web.UI.WebControls.DataPager> control provides a handler for this event that is named <xref:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable%2A>.  
-  
- The <xref:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties%2A> method is called by the <xref:System.Web.UI.WebControls.DataPager> control every time that the control must update the page-related properties. For example, this method is called when the user navigates to another page of data.  
-  
+The <xref:System.Web.UI.WebControls.IPageableItemContainer> interface defines properties, methods, and events that must be implemented by data-bound controls in order to have paging functionality provided by the <xref:System.Web.UI.WebControls.DataPager> control. (An example of a control that implements this interface is the <xref:System.Web.UI.WebControls.ListView> control.)  
+ 
+The <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable> event is raised when the <xref:System.Web.UI.WebControls.DataPager> control can bind to data. The <xref:System.Web.UI.WebControls.DataPager> control provides a handler for this event that is named <xref:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable%2A>.  
+ 
+The <xref:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties%2A> method is called by the <xref:System.Web.UI.WebControls.DataPager> control every time that the control must update the page-related properties. For example, this method is called when the user navigates to another page of data.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -66,10 +66,10 @@
         <summary>Sets the properties of a page of data.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties%2A> method is called by the <xref:System.Web.UI.WebControls.DataPager> control every time that the control must update the page-related properties. When implemented by a class, the <xref:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties%2A> method must internally update the <xref:System.Web.UI.WebControls.IPageableItemContainer.MaximumRows%2A> and <xref:System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex%2A> properties by using the values of the `maximumRows` and `startRowIndex`parameters.  
-  
+The <xref:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties%2A> method is called by the <xref:System.Web.UI.WebControls.DataPager> control every time that the control must update the page-related properties. When implemented by a class, the <xref:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties%2A> method must internally update the <xref:System.Web.UI.WebControls.IPageableItemContainer.MaximumRows%2A> and <xref:System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex%2A> properties by using the values of the `maximumRows` and `startRowIndex`parameters.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -108,10 +108,10 @@
         <summary>Occurs when the data from the data source is made available to the control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable> event is used by the <xref:System.Web.UI.WebControls.DataPager> control, which provides a handler method for this event.  
-  
+The <xref:System.Web.UI.WebControls.IPageableItemContainer.TotalRowCountAvailable> event is used by the <xref:System.Web.UI.WebControls.DataPager> control, which provides a handler method for this event.  
+ 
  ]]></format>
         </remarks>
       </Docs>

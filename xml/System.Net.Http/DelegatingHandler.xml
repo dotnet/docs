@@ -20,12 +20,12 @@
     <summary>A type for HTTP handlers that delegate the processing of HTTP response messages to another handler, called the inner handler.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This application normally instantiate this class and then set the inner handler or provide an inner handler in the constructor.  
-  
- Note that <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property may be a delegating handler too. This approach allows the creation of handler stacks to process the HTTP response messages.  
-  
+This application normally instantiate this class and then set the inner handler or provide an inner handler in the constructor.  
+ 
+Note that <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property may be a delegating handler too. This approach allows the creation of handler stacks to process the HTTP response messages.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -50,10 +50,10 @@
         <summary>Creates a new instance of the <see cref="T:System.Net.Http.DelegatingHandler" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The inner handle can be set using the <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A>.  
-  
+The inner handle can be set using the <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -133,12 +133,12 @@
         <value>The inner handler for HTTP response messages.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property can only be set before the class is used (the <xref:System.Net.Http.DelegatingHandler.SendAsync%2A> method is called).  
-  
- Note that <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property may be a delegating handler too, although this is uncommon. This approach allows the creation of handler stacks for the HTTP response messages.  
-  
+This <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property can only be set before the class is used (the <xref:System.Net.Http.DelegatingHandler.SendAsync%2A> method is called).  
+ 
+Note that <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property may be a delegating handler too, although this is uncommon. This approach allows the creation of handler stacks for the HTTP response messages.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -172,12 +172,12 @@
         <returns>The task object representing the asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This operation does not block. This overridable implementation of <xref:System.Net.Http.HttpClientHandler.SendAsync%2A> method forwards the HTTP request to the inner handler to send to the server as an asynchronous operation.  
-  
- The <xref:System.Net.Http.DelegatingHandler.SendAsync%2A> method is mainly used by the system and not by applications. When this method is called, it calls the <xref:System.Net.Http.DelegatingHandler.SendAsync%2A> method on the inner handler.  
-  
+This operation does not block. This overridable implementation of <xref:System.Net.Http.HttpClientHandler.SendAsync%2A> method forwards the HTTP request to the inner handler to send to the server as an asynchronous operation.  
+ 
+The <xref:System.Net.Http.DelegatingHandler.SendAsync%2A> method is mainly used by the system and not by applications. When this method is called, it calls the <xref:System.Net.Http.DelegatingHandler.SendAsync%2A> method on the inner handler.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was <see langword="null" />.</exception>

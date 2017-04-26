@@ -34,41 +34,41 @@
     <summary>Represents an Application Menu that is used in a <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> control.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Every ribbon includes an Application Menu as the first tab in the ribbon. Other ribbon tabs contain controls for working with the document content. In contrast, the Application Menu presents a menu of commands for working with the file. Examples include commands that traditionally go in the File menu to create, open, save, and print files. It is also used to access program options and the Exit command.  
-  
- The following illustration shows the Application Menu for a ribbon control.  
-  
- ![Ribbon Application Menu](~/add/media/wpfribbon-appmenu.png "Ribbon Application Menu")  
-  
- The <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu> can host <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem> and <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem> objects. The Application Menu also has an *auxiliary pane* and a *footer pane* that can host additional content. The <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContent%2A> property hosts a <xref:System.Windows.Controls.Ribbon.RibbonGallery> and is typically used to display a list of recent documents. The <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContent%2A> property typically hosts buttons that enable access to program options and the Exit command.  
-  
- The following list shows the typical hierarchy of elements in an Application Menu.  
-  
+Every ribbon includes an Application Menu as the first tab in the ribbon. Other ribbon tabs contain controls for working with the document content. In contrast, the Application Menu presents a menu of commands for working with the file. Examples include commands that traditionally go in the File menu to create, open, save, and print files. It is also used to access program options and the Exit command.  
+ 
+The following illustration shows the Application Menu for a ribbon control.  
+ 
+![Ribbon Application Menu](~/add/media/wpfribbon-appmenu.png "Ribbon Application Menu")  
+ 
+The <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu> can host <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem> and <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem> objects. The Application Menu also has an *auxiliary pane* and a *footer pane* that can host additional content. The <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContent%2A> property hosts a <xref:System.Windows.Controls.Ribbon.RibbonGallery> and is typically used to display a list of recent documents. The <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContent%2A> property typically hosts buttons that enable access to program options and the Exit command.  
+ 
+The following list shows the typical hierarchy of elements in an Application Menu.  
+ 
 -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu>  
+ 
+   -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem>  
+ 
+   -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem>  
+ 
+       -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem>  
+ 
+   -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContent%2A>  
+ 
+       -   <xref:System.Windows.Controls.Ribbon.RibbonButton>  
+ 
+   -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContent%2A>  
+ 
+       -   <xref:System.Windows.Controls.Ribbon.RibbonGallery>  
+ 
   
-    -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem>  
-  
-    -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem>  
-  
-        -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem>  
-  
-    -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContent%2A>  
-  
-        -   <xref:System.Windows.Controls.Ribbon.RibbonButton>  
-  
-    -   <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContent%2A>  
-  
-        -   <xref:System.Windows.Controls.Ribbon.RibbonGallery>  
-  
-   
-  
+ 
 ## Examples  
- The following example shows the Application Menu as illustrated previously.  
-  
- [!code-xml[Ribbon_Snippets#AppMenuFull](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_snippets/cs/ribbonwindow1.xaml#appmenufull)]  
-  
+The following example shows the Application Menu as illustrated previously.  
+ 
+[!code-xml[Ribbon_Snippets#AppMenuFull](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_snippets/cs/ribbonwindow1.xaml#appmenufull)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -105,29 +105,29 @@
         <value>The content of the Application Menu auxiliary pane. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Application Menu has an *auxiliary pane* that can host additional content. The <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContent%2A> property hosts a <xref:System.Windows.Controls.Ribbon.RibbonGallery> and is typically used to display a list of recent documents.  
-  
- The following illustration shows the Application Menu for a ribbon control. The auxiliary pane hosts a list of recent documents.  
-  
- ![Ribbon Application Menu](~/add/media/wpfribbon-appmenu.png "Ribbon Application Menu")  
-  
+The Application Menu has an *auxiliary pane* that can host additional content. The <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContent%2A> property hosts a <xref:System.Windows.Controls.Ribbon.RibbonGallery> and is typically used to display a list of recent documents.  
+ 
+The following illustration shows the Application Menu for a ribbon control. The auxiliary pane hosts a list of recent documents.  
+ 
+![Ribbon Application Menu](~/add/media/wpfribbon-appmenu.png "Ribbon Application Menu")  
+ 
 <a name="dependencyPropertyInfo_AuxiliaryPaneContent"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the auxiliary pane content of the Application Menu shown previously.  
-  
- [!code-xml[Ribbon_Snippets#AppMenuAuxPane](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_snippets/cs/ribbonwindow1.xaml#appmenuauxpane)]  
-  
+The following example shows the auxiliary pane content of the Application Menu shown previously.  
+ 
+[!code-xml[Ribbon_Snippets#AppMenuAuxPane](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_snippets/cs/ribbonwindow1.xaml#appmenuauxpane)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -166,17 +166,17 @@
         <value>The template that is used to display the content of the Application Menu auxiliary pane. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_AuxiliaryPaneContentTemplate"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplateProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -215,18 +215,18 @@
         <value>A custom <see cref="T:System.Windows.Controls.DataTemplateSelector" /> object that provides logic and returns a <see cref="T:System.Windows.DataTemplate" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplate%2A> property to specify the visualization of the content. If you have more than one template defined and want to specify logic that selects a template to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplate%2A> property is set.  
-  
+You use the <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplate%2A> property to specify the visualization of the content. If you have more than one template defined and want to specify logic that selects a template to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplate%2A> property is set.  
+ 
 <a name="dependencyPropertyInfo_AuxiliaryPaneContentTemplateSelector"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.AuxiliaryPaneContentTemplateSelectorProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -265,29 +265,29 @@
         <value>The content of the Application Menu footer pane. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The Application Menu has a *footer pane* that can host additional content. The <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContent%2A> property typically hosts buttons that enable access to program options and the Exit command.  
-  
- The following illustration shows the Application Menu for a ribbon control. The footer pane hosts an **Exit** button.  
-  
- ![Ribbon Application Menu](~/add/media/wpfribbon-appmenu.png "Ribbon Application Menu")  
-  
+The Application Menu has a *footer pane* that can host additional content. The <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContent%2A> property typically hosts buttons that enable access to program options and the Exit command.  
+ 
+The following illustration shows the Application Menu for a ribbon control. The footer pane hosts an **Exit** button.  
+ 
+![Ribbon Application Menu](~/add/media/wpfribbon-appmenu.png "Ribbon Application Menu")  
+ 
 <a name="dependencyPropertyInfo_FooterPaneContent"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentProperty>|  
 |Metadata properties set to `true`|None|  
+ 
   
-   
-  
+ 
 ## Examples  
- The following example shows the footer pane content of the Application Menu shown previously.  
-  
-  
-  
+The following example shows the footer pane content of the Application Menu shown previously.  
+ 
+ 
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -326,17 +326,17 @@
         <value>The template that is used to display the content of the Application Menu footer pane. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 <a name="dependencyPropertyInfo_FooterPaneContentTemplate"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplateProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -375,18 +375,18 @@
         <value>A custom <see cref="T:System.Windows.Controls.DataTemplateSelector" /> object that provides logic and returns a <see cref="T:System.Windows.DataTemplate" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- You use the <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplate%2A> property to specify the visualization of the content. If you have more than one template defined and want to specify logic that selects a template to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplate%2A> property is set.  
-  
+You use the <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplate%2A> property to specify the visualization of the content. If you have more than one template defined and want to specify logic that selects a template to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplate%2A> property is set.  
+ 
 <a name="dependencyPropertyInfo_FooterPaneContentTemplateSelector"></a>   
 ## Dependency Property Information  
-  
+ 
 |||  
 |-|-|  
 |Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonApplicationMenu.FooterPaneContentTemplateSelectorProperty>|  
 |Metadata properties set to `true`|None|  
-  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -488,10 +488,10 @@
         <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationMenu" /> when a new template is applied.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
-  
+This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>

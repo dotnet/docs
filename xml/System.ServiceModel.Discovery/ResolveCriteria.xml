@@ -14,10 +14,10 @@
     <summary>Represents the criteria to use when resolving a service.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A resolve is performed when a service to which you already have an endpoint reference changes its endpoint address.  
-  
+A resolve is performed when a service to which you already have an endpoint reference changes its endpoint address.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -90,10 +90,10 @@
         <value>A <see cref="T:System.TimeSpan" /> instance.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The default value for <xref:System.ServiceModel.Discovery.ResolveCriteria.Duration%2A> is 20 seconds.  
-  
+The default value for <xref:System.ServiceModel.Discovery.ResolveCriteria.Duration%2A> is 20 seconds.  
+ 
  ]]></format>
         </remarks>
       </Docs>

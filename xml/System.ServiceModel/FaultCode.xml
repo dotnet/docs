@@ -15,16 +15,16 @@
     <summary>Represents a SOAP fault code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Fault code provides a machine-readable identifier that can be used to programmatically identify the error condition and respond as appropriate. The SOAP specifications define the following fault codes specific to SOAP 1.1 and 1.2.  
-  
+Fault code provides a machine-readable identifier that can be used to programmatically identify the error condition and respond as appropriate. The SOAP specifications define the following fault codes specific to SOAP 1.1 and 1.2.  
+ 
 -   SOAP 1.1. `VersionMismatch`, `MustUnderstand`, `Client`, and `Server`.  
-  
+ 
 -   SOAP 1.2. `VersionMismatch`, `MustUnderstand`, `DataEncodingUnknown`, `Sender`, and `Receiver`.  
-  
- In addition to those fault codes defined by the SOAP specifications, [!INCLUDE[indigo1](~/includes/indigo1-md.md)] uses fault codes defined by each Web services specification that it implements.  
-  
+ 
+In addition to those fault codes defined by the SOAP specifications, [!INCLUDE[indigo1](~/includes/indigo1-md.md)] uses fault codes defined by each Web services specification that it implements.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -89,10 +89,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultCode" /> class with the specified name and namespace.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A <xref:System.ServiceModel.FaultCode> object is used in conjunction with a <xref:System.ServiceModel.Channels.MessageFault> object to fully represent a SOAP fault.  
-  
+A <xref:System.ServiceModel.FaultCode> object is used in conjunction with a <xref:System.ServiceModel.Channels.MessageFault> object to fully represent a SOAP fault.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

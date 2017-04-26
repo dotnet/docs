@@ -18,10 +18,10 @@
     <summary>Verifies that the user has permission to access the file requested. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This module provides authorization services against file-system access-control lists (ACLs). When the `mode` attribute of the [authentication Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/27bc0ba9-f23a-45f3-ae42-dbe7916e3ee2) configuration element is set to `Windows` so that the <xref:System.Web.Security.WindowsAuthenticationModule> is being used for the application, the <xref:System.Web.Security.FileAuthorizationModule> module ensures that the requesting user is allowed read or write access to the resource, depending on the request verb, before executing the request. For more information, see the <xref:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser%2A> method.  
-  
+This module provides authorization services against file-system access-control lists (ACLs). When the `mode` attribute of the [authentication Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/27bc0ba9-f23a-45f3-ae42-dbe7916e3ee2) configuration element is set to `Windows` so that the <xref:System.Web.Security.WindowsAuthenticationModule> is being used for the application, the <xref:System.Web.Security.FileAuthorizationModule> module ensures that the requesting user is allowed read or write access to the resource, depending on the request verb, before executing the request. For more information, see the <xref:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser%2A> method.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -40,12 +40,12 @@
         <summary>Creates an instance of the <see cref="T:System.Web.Security.FileAuthorizationModule" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This constructor is not intended to be called from application code.  
-  
- ASP.NET calls this constructor to create an instance of the <xref:System.Web.Security.FileAuthorizationModule> class. After calling the constructor, it calls the <xref:System.Web.Security.FileAuthorizationModule.Init%2A> method to initialize the new <xref:System.Web.Security.FileAuthorizationModule> object.  
-  
+This constructor is not intended to be called from application code.  
+ 
+ASP.NET calls this constructor to create an instance of the <xref:System.Web.Security.FileAuthorizationModule> class. After calling the constructor, it calls the <xref:System.Web.Security.FileAuthorizationModule.Init%2A> method to initialize the new <xref:System.Web.Security.FileAuthorizationModule> object.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -76,14 +76,14 @@
           <see langword="true" /> if the current Windows user represented by <paramref name="token" /> has access to the file using the specified HTTP verb or if the <see cref="T:System.Web.Security.FileAuthorizationModule" /> module is not defined in the application's configuration file; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser%2A> method checks to see whether the current user, represented by a Windows access token, is granted access to the requested file in the file-system access-control lists (ACLs). The virtual path is mapped to the physical file-system path before the check is made.  
-  
- If the HTTP verb used to make the request is `GET`, `POST`, or `HEAD`, the <xref:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser%2A> method checks for read access to the file. If any other verb is used, the <xref:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser%2A> method checks for read/write permission to the file.  
-  
- **Security Note** If the <xref:System.Web.Security.FileAuthorizationModule> module is not defined in the `httpModules` configuration section for the application, the <xref:System.Web.Security.FileAuthorizationModule> module always returns `true`.  
-  
+The <xref:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser%2A> method checks to see whether the current user, represented by a Windows access token, is granted access to the requested file in the file-system access-control lists (ACLs). The virtual path is mapped to the physical file-system path before the check is made.  
+ 
+If the HTTP verb used to make the request is `GET`, `POST`, or `HEAD`, the <xref:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser%2A> method checks for read access to the file. If any other verb is used, the <xref:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser%2A> method checks for read/write permission to the file.  
+ 
+**Security Note** If the <xref:System.Web.Security.FileAuthorizationModule> module is not defined in the `httpModules` configuration section for the application, the <xref:System.Web.Security.FileAuthorizationModule> module always returns `true`.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -118,10 +118,10 @@
         <summary>Releases all resources, other than memory, used by the <see cref="T:System.Web.Security.FileAuthorizationModule" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not intended to be called from application code.  
-  
+This method is not intended to be called from application code.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -146,12 +146,12 @@
         <summary>Initializes the <see cref="T:System.Web.Security.FileAuthorizationModule" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This method is not intended to be called from application code.  
-  
- The <xref:System.Web.Security.FileAuthorizationModule.Init%2A> method ensures that the <xref:System.Web.Security.FileAuthorizationModule> is included in the processing of the <xref:System.Web.HttpApplication.AuthorizeRequest> event.  
-  
+This method is not intended to be called from application code.  
+ 
+The <xref:System.Web.Security.FileAuthorizationModule.Init%2A> method ensures that the <xref:System.Web.Security.FileAuthorizationModule> is included in the processing of the <xref:System.Web.HttpApplication.AuthorizeRequest> event.  
+ 
  ]]></format>
         </remarks>
       </Docs>

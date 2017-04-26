@@ -24,10 +24,10 @@
     <summary>Represents a builder for asynchronous methods that do not return a value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type and its members are intended for use by the compiler.  
-  
+This type and its members are intended for use by the compiler.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -159,10 +159,10 @@
         <returns>A new instance of the builder.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type and its members are intended for use by the compiler.  
-  
+This type and its members are intended for use by the compiler.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -197,10 +197,10 @@
         <summary>Binds an exception to the method builder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type and its members are intended for use by the compiler.  
-  
+This type and its members are intended for use by the compiler.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -235,10 +235,10 @@
         <summary>Marks the method builder as successfully completed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This type and its members are intended for use by the compiler.  
-  
+This type and its members are intended for use by the compiler.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The builder is not initialized.</exception>

@@ -23,14 +23,14 @@
     <summary>Represents the name of a queue associated with an event on a <see cref="T:System.Workflow.Runtime.WorkflowInstance" />. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
-  
+ 
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- This class can be associated with a <xref:System.Workflow.Runtime.WorkflowQueue> or any other queues used by the Workflow Foundation (WF).  
-  
+ 
+This class can be associated with a <xref:System.Workflow.Runtime.WorkflowQueue> or any other queues used by the Workflow Foundation (WF).  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -98,10 +98,10 @@
         <returns>A 32-bit signed integer that indicates the whether the comprarands match. -1 indicates that the current <see cref="T:System.Workflow.Activities.EventQueueName" /> and the specified object do not match; 0 indicates that the <see cref="T:System.Workflow.Activities.EventQueueName" /> and the specified object match.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `toCompare` is not of type <xref:System.Workflow.Activities.EventQueueName>, <xref:System.Workflow.Activities.EventQueueName.CompareTo%2A> returns -1.  
-  
+If `toCompare` is not of type <xref:System.Workflow.Activities.EventQueueName>, <xref:System.Workflow.Activities.EventQueueName.CompareTo%2A> returns -1.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -188,10 +188,10 @@
         <returns>An integer that represents the hash code generated for the current <see cref="T:System.Workflow.Activities.EventQueueName" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- <xref:System.Workflow.Activities.EventQueueName.GetHashCode%2A> returns a hash value based on the interface type and operation used to create the current <xref:System.Workflow.Activities.EventQueueName>.  
-  
+<xref:System.Workflow.Activities.EventQueueName.GetHashCode%2A> returns a hash value based on the interface type and operation used to create the current <xref:System.Workflow.Activities.EventQueueName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,10 +256,10 @@
           <see langword="true" /> if <paramref name="queueKey1" /> and <paramref name="queueKey2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- If `queueKey1` and `queueKey2` contain a null reference (`Nothing` in Visual Basic), <xref:System.Workflow.Activities.EventQueueName.op_Equality%2A> returns `true`.  
-  
+If `queueKey1` and `queueKey2` contain a null reference (`Nothing` in Visual Basic), <xref:System.Workflow.Activities.EventQueueName.op_Equality%2A> returns `true`.  
+ 
  The equivalent method for this operator is <xref:System.Workflow.Activities.EventQueueName.Equals%28System.Workflow.Activities.EventQueueName%2CSystem.Workflow.Activities.EventQueueName%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -288,34 +288,34 @@
           <see langword="true" /> if <paramref name="queueKey1" /> is greater than <paramref name="queueKey2" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Workflow.Activities.EventQueueName.Compare%28System.Workflow.Activities.EventQueueName%2CSystem.Workflow.Activities.EventQueueName%29?displayProperty=fullName>]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="queueKey1" /> or <paramref name="queueKey2" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Workflow.Activities.EventQueueName queueKey1, System.Workflow.Activities.EventQueueName queueKey2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Workflow.Activities.EventQueueName queueKey1, class System.Workflow.Activities.EventQueueName queueKey2) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.op_Inequality(System.Workflow.Activities.EventQueueName,System.Workflow.Activities.EventQueueName)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="queueKey1" Type="System.Workflow.Activities.EventQueueName" />
-        <Parameter Name="queueKey2" Type="System.Workflow.Activities.EventQueueName" />
-      </Parameters>
-      <Docs>
-        <param name="queueKey1">The first <see cref="T:System.Workflow.Activities.EventQueueName" /> to compare.</param>
-        <param name="queueKey2">The second <see cref="T:System.Workflow.Activities.EventQueueName" /> to compare.</param>
-        <summary>Returns a value indicating whether the two specified <see cref="T:System.Workflow.Activities.EventQueueName" /> objects are the not equal.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="queueKey1" /> and <paramref name="queueKey2" /> are not equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
+       </remarks>
+       <exception cref="T:System.ArgumentNullException">
+         <paramref name="queueKey1" /> or <paramref name="queueKey2" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+     </Docs>
+   </Member>
+   <Member MemberName="op_Inequality">
+     <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Workflow.Activities.EventQueueName queueKey1, System.Workflow.Activities.EventQueueName queueKey2);" />
+     <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Workflow.Activities.EventQueueName queueKey1, class System.Workflow.Activities.EventQueueName queueKey2) cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.op_Inequality(System.Workflow.Activities.EventQueueName,System.Workflow.Activities.EventQueueName)" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Workflow.Activities</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.Boolean</ReturnType>
+     </ReturnValue>
+     <Parameters>
+       <Parameter Name="queueKey1" Type="System.Workflow.Activities.EventQueueName" />
+       <Parameter Name="queueKey2" Type="System.Workflow.Activities.EventQueueName" />
+     </Parameters>
+     <Docs>
+       <param name="queueKey1">The first <see cref="T:System.Workflow.Activities.EventQueueName" /> to compare.</param>
+       <param name="queueKey2">The second <see cref="T:System.Workflow.Activities.EventQueueName" /> to compare.</param>
+       <summary>Returns a value indicating whether the two specified <see cref="T:System.Workflow.Activities.EventQueueName" /> objects are the not equal.</summary>
+       <returns>
+         <see langword="true" /> if <paramref name="queueKey1" /> and <paramref name="queueKey2" /> are not equal; otherwise, <see langword="false" />.</returns>
+       <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Workflow.Activities.EventQueueName.Compare%28System.Workflow.Activities.EventQueueName%2CSystem.Workflow.Activities.EventQueueName%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
@@ -344,33 +344,33 @@
           <see langword="true" /> if <paramref name="queueKey1" /> is greater than <paramref name="queueKey2" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Workflow.Activities.EventQueueName.Compare%28System.Workflow.Activities.EventQueueName%2CSystem.Workflow.Activities.EventQueueName%29?displayProperty=fullName>]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="queueKey1" /> or <paramref name="queueKey2" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="ToString">
-      <MemberSignature Language="C#" Value="public override string ToString ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.ToString" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Returns a <see cref="T:System.String" /> representation of the current <see cref="T:System.Workflow.Activities.EventQueueName" />.</summary>
-        <returns>A <see cref="T:System.String" /> representation of the current <see cref="T:System.Workflow.Activities.EventQueueName" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+       </remarks>
+       <exception cref="T:System.ArgumentNullException">
+         <paramref name="queueKey1" /> or <paramref name="queueKey2" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+     </Docs>
+   </Member>
+   <Member MemberName="ToString">
+     <MemberSignature Language="C#" Value="public override string ToString ();" />
+     <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+     <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.ToString" />
+     <MemberType>Method</MemberType>
+     <AssemblyInfo>
+       <AssemblyName>System.Workflow.Activities</AssemblyName>
+       <AssemblyVersion>4.0.0.0</AssemblyVersion>
+     </AssemblyInfo>
+     <ReturnValue>
+       <ReturnType>System.String</ReturnType>
+     </ReturnValue>
+     <Parameters />
+     <Docs>
+       <summary>Returns a <see cref="T:System.String" /> representation of the current <see cref="T:System.Workflow.Activities.EventQueueName" />.</summary>
+       <returns>A <see cref="T:System.String" /> representation of the current <see cref="T:System.Workflow.Activities.EventQueueName" />.</returns>
+       <remarks>
+         <format type="text/markdown"><![CDATA[  
+ 
 ## Remarks  
- The string that <xref:System.Workflow.Activities.EventQueueName.ToString%2A> returns includes the interface type, operation and any correlation values that are associated with the <xref:System.Workflow.Activities.EventQueueName>.  
-  
+The string that <xref:System.Workflow.Activities.EventQueueName.ToString%2A> returns includes the interface type, operation and any correlation values that are associated with the <xref:System.Workflow.Activities.EventQueueName>.  
+ 
  ]]></format>
         </remarks>
       </Docs>

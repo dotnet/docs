@@ -27,18 +27,18 @@
     <summary>Encapsulates the name of a key storage provider (KSP) for use with Cryptography Next Generation (CNG) objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Security.Cryptography.CngProvider> class is a utility class. It consists of static properties, comparison methods, and a private, internally maintained string that specifies a key storage provider.  
-  
- The static properties return <xref:System.Security.Cryptography.CngProvider> objects. Each object's internal string is initialized to the provider name that corresponds to the name of the static property.  
-  
- You can also use this class to create objects for provider types that are not covered by the static properties.  
-  
- Several CNG classes (such as <xref:System.Security.Cryptography.CngKey>) accept <xref:System.Security.Cryptography.CngProvider> objects through a `provider` parameter. When the class receives the <xref:System.Security.Cryptography.CngProvider> object, it retrieves the embedded provider name by calling the object's <xref:System.Security.Cryptography.CngProvider.Provider%2A> property.  
-  
- Therefore, <xref:System.Security.Cryptography.CngProvider> serves as an enumeration of well-known providers. It lets you identify a provider by using a strongly typed value instead of a string.  
-  
+The <xref:System.Security.Cryptography.CngProvider> class is a utility class. It consists of static properties, comparison methods, and a private, internally maintained string that specifies a key storage provider.  
+ 
+The static properties return <xref:System.Security.Cryptography.CngProvider> objects. Each object's internal string is initialized to the provider name that corresponds to the name of the static property.  
+ 
+You can also use this class to create objects for provider types that are not covered by the static properties.  
+ 
+Several CNG classes (such as <xref:System.Security.Cryptography.CngKey>) accept <xref:System.Security.Cryptography.CngProvider> objects through a `provider` parameter. When the class receives the <xref:System.Security.Cryptography.CngProvider> object, it retrieves the embedded provider name by calling the object's <xref:System.Security.Cryptography.CngProvider.Provider%2A> property.  
+ 
+Therefore, <xref:System.Security.Cryptography.CngProvider> serves as an enumeration of well-known providers. It lets you identify a provider by using a strongly typed value instead of a string.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -69,12 +69,12 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CngProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Instances of the <xref:System.Security.Cryptography.CngProvider> class internally maintain the provider name specified by the `provider` parameter.  
-  
- The primary purpose of this constructor is to provide a method for creating <xref:System.Security.Cryptography.CngProvider> objects for KSPs that are not represented by the static properties of the <xref:System.Security.Cryptography.CngProvider> class. This capacity enables future [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] releases, service packs, and third-party developers to add new providers, which can be accessed just like the providers that are currently available.  
-  
+Instances of the <xref:System.Security.Cryptography.CngProvider> class internally maintain the provider name specified by the `provider` parameter.  
+ 
+The primary purpose of this constructor is to provide a method for creating <xref:System.Security.Cryptography.CngProvider> objects for KSPs that are not represented by the static properties of the <xref:System.Security.Cryptography.CngProvider> class. This capacity enables future [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] releases, service packs, and third-party developers to add new providers, which can be accessed just like the providers that are currently available.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="provider" /> parameter is <see langword="null" />.</exception>

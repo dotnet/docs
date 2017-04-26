@@ -18,16 +18,16 @@
     <summary>Provides enumeration support for the local values of any dependency properties that exist on a <see cref="T:System.Windows.DependencyObject" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- A *local value* is a value for a dependency property that was set directly on a dependency property, by calling <xref:System.Windows.DependencyObject.SetValue%2A>, or more typically by using the set accessor of a [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] property wrapper that calls <xref:System.Windows.DependencyObject.SetValue%2A> internally. Examples of other property system determinants that are not local values are values set through styles, or dependency property default values. For details, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
-  
- A <xref:System.Windows.LocalValueEnumerator> is returned by the <xref:System.Windows.DependencyObject.GetLocalValueEnumerator%2A> method and implements the <xref:System.Collections.IEnumerator> interface. A public <xref:System.Windows.LocalValueEnumerator> constructor does not exist; therefore, you must call <xref:System.Windows.DependencyObject.GetLocalValueEnumerator%2A> to obtain an instance of this class.  
-  
- Do not modify local values (by calling <xref:System.Windows.DependencyObject.SetValue%2A> or <xref:System.Windows.DependencyObject.ClearValue%2A>) while enumerating local values. If you change or clear the property values based on properties that are returned by the enumerator, the change or clear operations do not invalidate the enumerator collection, as is the case for many <xref:System.Collections.IEnumerator> implementations. Also, the enumerator view is a snapshot. A change to the collection is not guaranteed to be thread safe, and no lock is enforced. Other threads still have free access to the local values from a context other than the enumerator.  
-  
- Use this type if you have operations in your class where it is important to know whether a property's value came from a local value. For example, use this type in an <xref:System.Windows.DependencyObject.OnPropertyChanged%2A> implementation, or where you want to query the metadata on all locally set properties.  
-  
+A *local value* is a value for a dependency property that was set directly on a dependency property, by calling <xref:System.Windows.DependencyObject.SetValue%2A>, or more typically by using the set accessor of a [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] property wrapper that calls <xref:System.Windows.DependencyObject.SetValue%2A> internally. Examples of other property system determinants that are not local values are values set through styles, or dependency property default values. For details, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
+ 
+A <xref:System.Windows.LocalValueEnumerator> is returned by the <xref:System.Windows.DependencyObject.GetLocalValueEnumerator%2A> method and implements the <xref:System.Collections.IEnumerator> interface. A public <xref:System.Windows.LocalValueEnumerator> constructor does not exist; therefore, you must call <xref:System.Windows.DependencyObject.GetLocalValueEnumerator%2A> to obtain an instance of this class.  
+ 
+Do not modify local values (by calling <xref:System.Windows.DependencyObject.SetValue%2A> or <xref:System.Windows.DependencyObject.ClearValue%2A>) while enumerating local values. If you change or clear the property values based on properties that are returned by the enumerator, the change or clear operations do not invalidate the enumerator collection, as is the case for many <xref:System.Collections.IEnumerator> implementations. Also, the enumerator view is a snapshot. A change to the collection is not guaranteed to be thread safe, and no lock is enforced. Other threads still have free access to the local values from a context other than the enumerator.  
+ 
+Use this type if you have operations in your class where it is important to know whether a property's value came from a local value. For example, use this type in an <xref:System.Windows.DependencyObject.OnPropertyChanged%2A> implementation, or where you want to query the metadata on all locally set properties.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -49,10 +49,10 @@
         <value>The number of items in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is not a defined member of <xref:System.Collections.IEnumerator> but is provided as a convenience.  
-  
+This property is not a defined member of <xref:System.Collections.IEnumerator> but is provided as a convenience.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -74,10 +74,10 @@
         <value>The current <see cref="T:System.Windows.LocalValueEntry" /> in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This generally accessible version of the property relies on a snapshot of the collection that is taken at creation.  
-  
+This generally accessible version of the property relies on a snapshot of the collection that is taken at creation.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -104,10 +104,10 @@
           <see langword="true" /> if the specified <see cref="T:System.Windows.LocalValueEnumerator" /> is equal to the current <see cref="T:System.Windows.LocalValueEnumerator" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation supports reference equality only.  
-  
+This implementation supports reference equality only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -175,10 +175,10 @@
           <see langword="true" /> if the <paramref name="obj1" /><see cref="T:System.Windows.LocalValueEnumerator" /> is equal to the <paramref name="obj2" /><see cref="T:System.Windows.LocalValueEnumerator" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation supports reference equality only.  
-  
+This implementation supports reference equality only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -207,10 +207,10 @@
           <see langword="true" /> if the instances are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation supports reference equality only.  
-  
+This implementation supports reference equality only.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -250,10 +250,10 @@
         <value>The current element in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.LocalValueEnumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
-  
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.LocalValueEnumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
+ 
  ]]></format>
         </remarks>
       </Docs>

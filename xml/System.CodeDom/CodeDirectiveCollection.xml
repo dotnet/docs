@@ -22,18 +22,18 @@
     <summary>Represents a collection of <see cref="T:System.CodeDom.CodeDirective" /> objects.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.CodeDom.CodeDirectiveCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeDirective> objects.  
+The <xref:System.CodeDom.CodeDirectiveCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeDirective> objects.  
+ 
   
-   
-  
+ 
 ## Examples  
- The following code example shows the use of the members of the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-csharp[CodeDirectiveCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#1)]
- [!code-vb[CodeDirectiveCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#1)]  
-  
+The following code example shows the use of the members of the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+ 
+[!code-csharp[CodeDirectiveCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#1)]
+[!code-vb[CodeDirectiveCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#1)]  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -52,13 +52,13 @@
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDirectiveCollection" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.%23ctor> constructor to create a new instance of the class. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-csharp[CodeDirectiveCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#2)]
- [!code-vb[CodeDirectiveCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#2)]  
-  
+The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.%23ctor> constructor to create a new instance of the class. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+ 
+[!code-csharp[CodeDirectiveCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#2)]
+[!code-vb[CodeDirectiveCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#2)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -124,13 +124,13 @@
         <returns>The index position at which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.Add%2A> method to add a <xref:System.CodeDom.CodeDirective> object to the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-csharp[CodeDirectiveCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#3)]
- [!code-vb[CodeDirectiveCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#3)]  
-  
+The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.Add%2A> method to add a <xref:System.CodeDom.CodeDirective> object to the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+ 
+[!code-csharp[CodeDirectiveCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#3)]
+[!code-vb[CodeDirectiveCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#3)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -155,13 +155,13 @@
         <summary>Adds an array of <see cref="T:System.CodeDom.CodeDirective" /> objects to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.AddRange%28System.CodeDom.CodeDirective%5B%5D%29> method to add an array of <xref:System.CodeDom.CodeDirective> objects to the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-csharp[CodeDirectiveCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#4)]
- [!code-vb[CodeDirectiveCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#4)]  
-  
+The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.AddRange%28System.CodeDom.CodeDirective%5B%5D%29> method to add an array of <xref:System.CodeDom.CodeDirective> objects to the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+ 
+[!code-csharp[CodeDirectiveCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#4)]
+[!code-vb[CodeDirectiveCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -188,13 +188,13 @@
         <summary>Adds the contents of the specified <see cref="T:System.CodeDom.CodeDirectiveCollection" /> object to the end of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.AddRange%28System.CodeDom.CodeDirectiveCollection%29> method to add the contents of a <xref:System.CodeDom.CodeDirectiveCollection> object to the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-csharp[CodeDirectiveCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#4)]
- [!code-vb[CodeDirectiveCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#4)]  
-  
+The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.AddRange%28System.CodeDom.CodeDirectiveCollection%29> method to add the contents of a <xref:System.CodeDom.CodeDirectiveCollection> object to the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+ 
+[!code-csharp[CodeDirectiveCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#4)]
+[!code-vb[CodeDirectiveCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#4)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -223,13 +223,13 @@
           <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.Contains%2A> method to determine whether the collection contains a specific <xref:System.CodeDom.CodeDirective> object. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-csharp[CodeDirectiveCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#5)]
- [!code-vb[CodeDirectiveCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#5)]  
-  
+The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.Contains%2A> method to determine whether the collection contains a specific <xref:System.CodeDom.CodeDirective> object. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+ 
+[!code-csharp[CodeDirectiveCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#5)]
+[!code-vb[CodeDirectiveCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -256,13 +256,13 @@
         <summary>Copies the contents of the collection to a one-dimensional array beginning at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.CopyTo%2A> method to copy the contents of the collection beginning at index 0 to the specified <xref:System.CodeDom.CodeDirective> array. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-csharp[CodeDirectiveCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#6)]
- [!code-vb[CodeDirectiveCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#6)]  
-  
+The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.CopyTo%2A> method to copy the contents of the collection beginning at index 0 to the specified <xref:System.CodeDom.CodeDirective> array. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+ 
+[!code-csharp[CodeDirectiveCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#6)]
+[!code-vb[CodeDirectiveCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#6)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The destination array is multidimensional.  
@@ -297,13 +297,13 @@
         <returns>The index position in the collection of the specified object, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.IndexOf%2A> method to get the index in the collection of the specified <xref:System.CodeDom.CodeDirective> object. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-csharp[CodeDirectiveCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#5)]
- [!code-vb[CodeDirectiveCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#5)]  
-  
+The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.IndexOf%2A> method to get the index in the collection of the specified <xref:System.CodeDom.CodeDirective> object. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+ 
+[!code-csharp[CodeDirectiveCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#5)]
+[!code-vb[CodeDirectiveCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#5)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -330,13 +330,13 @@
         <summary>Inserts the specified <see cref="T:System.CodeDom.CodeDirective" /> object into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.Insert%2A> method to insert a <xref:System.CodeDom.CodeDirective> object at index 0 of the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-csharp[CodeDirectiveCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#8)]
- [!code-vb[CodeDirectiveCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#8)]  
-  
+The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.Insert%2A> method to insert a <xref:System.CodeDom.CodeDirective> object at index 0 of the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+ 
+[!code-csharp[CodeDirectiveCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#8)]
+[!code-vb[CodeDirectiveCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#8)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -368,10 +368,10 @@
         <value>The <see cref="T:System.CodeDom.CodeDirective" /> at the index position.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This property is an indexer that can be used to access the collection.  
-  
+This property is an indexer that can be used to access the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -398,13 +398,13 @@
         <summary>Removes the specified <see cref="T:System.CodeDom.CodeDirective" /> object from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.Remove%2A> method to remove the specified <xref:System.CodeDom.CodeDirectiveCollection> object from the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
-  
- [!code-csharp[CodeDirectiveCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#9)]
- [!code-vb[CodeDirectiveCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#9)]  
-  
+The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.Remove%2A> method to remove the specified <xref:System.CodeDom.CodeDirectiveCollection> object from the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+ 
+[!code-csharp[CodeDirectiveCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#9)]
+[!code-vb[CodeDirectiveCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#9)]  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>

@@ -93,10 +93,10 @@
         <returns>A reference to the pending asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
-  
+Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -126,10 +126,10 @@
         <returns>A reference to the pending asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
-  
+Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -158,10 +158,10 @@
           <see langword="true" /> if the find operation should be redirected, otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
-  
+Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -190,10 +190,10 @@
           <see langword="true" /> if the resolve operation should be redirected, otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
-  
+Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -223,10 +223,10 @@
         <returns>A reference to the pending asynchronous operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Find results are returned by calling the <xref:System.ServiceModel.Discovery.FindRequestContext.AddMatchingEndpoint%2A> method one or more times.  
-  
+Find results are returned by calling the <xref:System.ServiceModel.Discovery.FindRequestContext.AddMatchingEndpoint%2A> method one or more times.  
+ 
  ]]></format>
         </remarks>
       </Docs>

@@ -43,36 +43,36 @@
     <summary>Represents a dynamic data collection that provides notifications when items get added, removed, or when the whole list is refreshed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- In many cases the data that you work with is a collection of objects. For example, a common scenario in data binding is to use an <xref:System.Windows.Controls.ItemsControl> such as a <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.ListView>, or <xref:System.Windows.Controls.TreeView> to display a collection of records.  
-  
- You can enumerate over any collection that implements the <xref:System.Collections.IEnumerable> interface. However, to set up dynamic bindings so that insertions or deletions in the collection update the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] automatically, the collection must implement the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. This interface exposes the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event, an event that should be raised whenever the underlying collection changes.  
-  
- [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides the <xref:System.Collections.ObjectModel.ObservableCollection%601> class, which is a built-in implementation of a data collection that implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface.  
-  
- Before implementing your own collection, consider using <xref:System.Collections.ObjectModel.ObservableCollection%601> or one of the existing collection classes, such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.ObjectModel.Collection%601>, and <xref:System.ComponentModel.BindingList%601>, among many others. If you have an advanced scenario and want to implement your own collection, consider using <xref:System.Collections.IList>, which provides a non-generic collection of objects that can be individually accessed by index. Implementing <xref:System.Collections.IList> provides the best performance with the data binding engine.  
-  
+In many cases the data that you work with is a collection of objects. For example, a common scenario in data binding is to use an <xref:System.Windows.Controls.ItemsControl> such as a <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.ListView>, or <xref:System.Windows.Controls.TreeView> to display a collection of records.  
+ 
+You can enumerate over any collection that implements the <xref:System.Collections.IEnumerable> interface. However, to set up dynamic bindings so that insertions or deletions in the collection update the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] automatically, the collection must implement the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. This interface exposes the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event, an event that should be raised whenever the underlying collection changes.  
+ 
+[!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides the <xref:System.Collections.ObjectModel.ObservableCollection%601> class, which is a built-in implementation of a data collection that implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface.  
+ 
+Before implementing your own collection, consider using <xref:System.Collections.ObjectModel.ObservableCollection%601> or one of the existing collection classes, such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.ObjectModel.Collection%601>, and <xref:System.ComponentModel.BindingList%601>, among many others. If you have an advanced scenario and want to implement your own collection, consider using <xref:System.Collections.IList>, which provides a non-generic collection of objects that can be individually accessed by index. Implementing <xref:System.Collections.IList> provides the best performance with the data binding engine.  
+ 
 > [!NOTE]
 >  To fully support transferring data values from binding source objects to binding targets, each object in your collection that supports bindable properties must implement an appropriate property changed notification mechanism such as the <xref:System.ComponentModel.INotifyPropertyChanged> interface.  
-  
- For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
-  
+ 
+For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ 
 ## Notes on XAML Usage  
- <xref:System.Collections.ObjectModel.ObservableCollection%601> can be used as a XAML object element in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)], in versions 3.0 and 3.5. However, the usage has substantial limitations.  
-  
+<xref:System.Collections.ObjectModel.ObservableCollection%601> can be used as a XAML object element in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)], in versions 3.0 and 3.5. However, the usage has substantial limitations.  
+ 
 -   <xref:System.Collections.ObjectModel.ObservableCollection%601> must be the root element, because the  that must be used to specify the constrained type of the generic <xref:System.Collections.ObjectModel.ObservableCollection%601> is only supported on the object element for the root element.  
-  
+ 
 -   You must declare an  (which entails that the build action for this XAML file must be `Page` or some other build action that compiles the XAML).  
-  
+ 
 -   <xref:System.Collections.ObjectModel.ObservableCollection%601> is in a namespace and assembly that are not initially mapped to the default XML namespace. You must map a prefix for the namespace and assembly, and then use that prefix on the object element tag for <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
-  
- A more straightforward way to use <xref:System.Collections.ObjectModel.ObservableCollection%601> capabilities from XAML in an application is to declare your own non-generic custom collection class that derives from <xref:System.Collections.ObjectModel.ObservableCollection%601>, and constrains it to a specific type. Then map the assembly that contains this class, and reference it as an object element in your XAML.  
-  
+ 
+A more straightforward way to use <xref:System.Collections.ObjectModel.ObservableCollection%601> capabilities from XAML in an application is to declare your own non-generic custom collection class that derives from <xref:System.Collections.ObjectModel.ObservableCollection%601>, and constrains it to a specific type. Then map the assembly that contains this class, and reference it as an object element in your XAML.  
+ 
 <a name="xamlTextUsage_ObservableCollection"></a>   
 ## XAML Text Usage  
- See Remarks.  
-  
+See Remarks.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -129,10 +129,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> class that contains elements copied from the specified collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements are copied onto the <xref:System.Collections.ObjectModel.ObservableCollection%601> in the same order they are read by the enumerator of the collection.  
-  
+The elements are copied onto the <xref:System.Collections.ObjectModel.ObservableCollection%601> in the same order they are read by the enumerator of the collection.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="collection" /> parameter cannot be <see langword="null" />.</exception>
@@ -160,10 +160,10 @@
         <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> class that contains elements copied from the specified list.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The elements are copied onto the <xref:System.Collections.ObjectModel.ObservableCollection%601> in the same order they are read by the enumerator of the list.  
-  
+The elements are copied onto the <xref:System.Collections.ObjectModel.ObservableCollection%601> in the same order they are read by the enumerator of the list.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="list" /> parameter cannot be <see langword="null" />.</exception>
@@ -197,13 +197,13 @@
         <returns>An <see cref="T:System.IDisposable" /> object that can be used to dispose of the object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Examples  
- The typical usage is to wrap an <xref:System.Collections.ObjectModel.ObservableCollection%601.OnCollectionChanged%2A> call within a `using` scope, as in the following example:  
-  
- [!code-csharp[ObservableCollection_snip#BlockReentrancy](~/samples/snippets/csharp/VS_Snippets_Wpf/ObservableCollection_snip/CSharp/DataSource.cs#blockreentrancy)]
- [!code-vb[ObservableCollection_snip#BlockReentrancy](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ObservableCollection_snip/visualbasic/datasource.vb#blockreentrancy)]  
-  
+The typical usage is to wrap an <xref:System.Collections.ObjectModel.ObservableCollection%601.OnCollectionChanged%2A> call within a `using` scope, as in the following example:  
+ 
+[!code-csharp[ObservableCollection_snip#BlockReentrancy](~/samples/snippets/csharp/VS_Snippets_Wpf/ObservableCollection_snip/CSharp/DataSource.cs#blockreentrancy)]
+[!code-vb[ObservableCollection_snip#BlockReentrancy](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ObservableCollection_snip/visualbasic/datasource.vb#blockreentrancy)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -264,12 +264,12 @@
         <summary>Removes all items from the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base class calls this method when the list is being cleared. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
-  
- For more information, see the <xref:System.Collections.ObjectModel.Collection%601.ClearItems%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
-  
+The base class calls this method when the list is being cleared. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
+ 
+For more information, see the <xref:System.Collections.ObjectModel.Collection%601.ClearItems%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -333,12 +333,12 @@
         <summary>Inserts an item into the collection at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base class calls this method when an item is added to the collection. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
-  
- For more information, see the <xref:System.Collections.ObjectModel.ObservableCollection%601.InsertItem%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
-  
+The base class calls this method when an item is added to the collection. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
+ 
+For more information, see the <xref:System.Collections.ObjectModel.ObservableCollection%601.InsertItem%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -375,10 +375,10 @@
         <summary>Moves the item at the specified index to a new location in the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Subclasses can override the <xref:System.Collections.ObjectModel.ObservableCollection%601.MoveItem%2A> method to provide custom behavior for this method.  
-  
+Subclasses can override the <xref:System.Collections.ObjectModel.ObservableCollection%601.MoveItem%2A> method to provide custom behavior for this method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -415,12 +415,12 @@
         <summary>Moves the item at the specified index to a new location in the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
-  
- Subclasses can override this protected method to provide custom behavior for the <xref:System.Collections.ObjectModel.ObservableCollection%601.Move%2A> method.  
-  
+This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
+ 
+Subclasses can override this protected method to provide custom behavior for the <xref:System.Collections.ObjectModel.ObservableCollection%601.Move%2A> method.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -455,18 +455,18 @@
         <summary>Raises the <see cref="E:System.Collections.ObjectModel.ObservableCollection`1.CollectionChanged" /> event with the provided arguments.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Properties and methods that modify this collection raise the <xref:System.Collections.ObjectModel.ObservableCollection%601.CollectionChanged> event through this `virtual` method.  
+Properties and methods that modify this collection raise the <xref:System.Collections.ObjectModel.ObservableCollection%601.CollectionChanged> event through this `virtual` method.  
+ 
   
-   
-  
+ 
 ## Examples  
- When overriding this method, either call the base implementation or use the <xref:System.Collections.ObjectModel.ObservableCollection%601.BlockReentrancy%2A> method to handle reentrant collection changes, as in the following example:  
-  
- [!code-csharp[ObservableCollection_snip#BlockReentrancy](~/samples/snippets/csharp/VS_Snippets_Wpf/ObservableCollection_snip/CSharp/DataSource.cs#blockreentrancy)]
- [!code-vb[ObservableCollection_snip#BlockReentrancy](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ObservableCollection_snip/visualbasic/datasource.vb#blockreentrancy)]  
-  
+When overriding this method, either call the base implementation or use the <xref:System.Collections.ObjectModel.ObservableCollection%601.BlockReentrancy%2A> method to handle reentrant collection changes, as in the following example:  
+ 
+[!code-csharp[ObservableCollection_snip#BlockReentrancy](~/samples/snippets/csharp/VS_Snippets_Wpf/ObservableCollection_snip/CSharp/DataSource.cs#blockreentrancy)]
+[!code-vb[ObservableCollection_snip#BlockReentrancy](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ObservableCollection_snip/visualbasic/datasource.vb#blockreentrancy)]  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -559,12 +559,12 @@
         <summary>Removes the item at the specified index of the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base class calls this method when an item is removed from the collection. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
-  
- For more information, see the <xref:System.Collections.ObjectModel.Collection%601.RemoveItem%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
-  
+The base class calls this method when an item is removed from the collection. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
+ 
+For more information, see the <xref:System.Collections.ObjectModel.Collection%601.RemoveItem%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -601,12 +601,12 @@
         <summary>Replaces the element at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The base class calls this method when an item is set in the collection. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
-  
- For more information, see the <xref:System.Collections.ObjectModel.Collection%601.SetItem%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
-  
+The base class calls this method when an item is set in the collection. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
+ 
+For more information, see the <xref:System.Collections.ObjectModel.Collection%601.SetItem%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
+ 
  ]]></format>
         </remarks>
       </Docs>

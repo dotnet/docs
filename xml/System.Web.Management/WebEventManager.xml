@@ -14,10 +14,10 @@
     <summary>Provides functionality for managing Web events in an application. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- Use the <xref:System.Web.Management.WebEventManager> class to flush currently buffered events for providers that are contained in the `healthMonitoring` section of the configuration.  
-  
+Use the <xref:System.Web.Management.WebEventManager> class to flush currently buffered events for providers that are contained in the `healthMonitoring` section of the configuration.  
+ 
  ]]></format>
     </remarks>
   </Docs>
@@ -39,10 +39,10 @@
         <summary>Flushes the event buffer for all providers that are in the <see langword="healthMonitoring" /> section.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Management.WebEventManager.Flush%2A> method flushes the event buffer for all providers that are in the `healthMonitoring` section of the configuration. If no providers exist, no events are ever buffered. However, if providers do exist, the event buffer for each provider in the `healthMonitoring` section is flushed.  
-  
+The <xref:System.Web.Management.WebEventManager.Flush%2A> method flushes the event buffer for all providers that are in the `healthMonitoring` section of the configuration. If no providers exist, no events are ever buffered. However, if providers do exist, the event buffer for each provider in the `healthMonitoring` section is flushed.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -67,10 +67,10 @@
         <summary>Flushes the event buffer for the specified provider.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+ 
 ## Remarks  
- The <xref:System.Web.Management.WebEventManager.Flush%2A> method flushes the event buffer for the specified provider. The `healthMonitoring` section of the configuration must contain the specified provider in order to flush the event buffer. If the provider name does not match any of the existing providers in the `healthMonitoring` section, an <xref:System.ArgumentException> exception is thrown.  
-  
+The <xref:System.Web.Management.WebEventManager.Flush%2A> method flushes the event buffer for the specified provider. The `healthMonitoring` section of the configuration must contain the specified provider in order to flush the event buffer. If the provider name does not match any of the existing providers in the `healthMonitoring` section, an <xref:System.ArgumentException> exception is thrown.  
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
